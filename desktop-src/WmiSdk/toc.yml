@@ -1,0 +1,3190 @@
+- name: Instrumentação de Gerenciamento do Windows
+  href: wmi-start-page.md
+  items:
+    - name: Sobre o WMI
+      href: about-wmi.md
+      items:
+        - name: O que há de novo no WMI
+          href: what-s-new-in-wmi.md
+          items:
+            - name: O que há de novo no Windows 7
+              href: what-s-new-in-windows-7.md
+            - name: Novidades no Windows Vista
+              href: what-s-new-in-windows-vista.md
+        - name: Disponibilidade do sistema operacional de componentes WMI
+          href: operating-system-availability-of-wmi-components.md
+        - name: Arquitetura do WMI
+          href: wmi-architecture.md
+          items:
+            - name: Infraestrutura WMI
+              href: wmi-infrastructure.md
+        - name: Modelo CIM
+          href: common-information-model.md
+          items:
+            - name: Compatibilidade do esquema CIM
+              href: cim-schema-compatibility.md
+        - name: Passagem de associação entre namespaces
+          href: cross-namespace-association-traversal.md
+        - name: MOF (Managed Object Format)
+          href: managed-object-format--mof-.md
+        - name: Controle de conta de usuário e WMI
+          href: user-account-control-and-wmi.md
+        - name: Acesso a objetos protegíveis do WMI
+          href: access-to-wmi-securable-objects.md
+          items:
+            - name: Acesso a namespaces WMI
+              href: access-to-wmi-namespaces.md
+        - name: Bibliotecas de desempenho e WMI
+          href: performance-libraries-and-wmi.md
+        - name: Suporte a IPv6 e IPv4 no WMI
+          href: ipv6-and-ipv4-support-in-wmi.md
+        - name: Formato de data e hora
+          href: date-and-time-format.md
+          items:
+            - name: CIM_DATETIME
+              href: cim-datetime.md
+            - name: Formato do intervalo
+              href: interval-format.md
+        - name: Script de acesso ao WMI
+          href: scripting-access-to-wmi.md
+        - name: Mais informações
+          href: further-information.md
+    - name: Usando o WMI
+      href: using-wmi.md
+      items:
+        - name: Criando clientes WMI
+          href: creating-wmi-clients.md
+          items:
+            - name: Conectando-se ao WMI em um computador remoto
+              href: connecting-to-wmi-on-a-remote-computer.md
+              items:
+                - name: Configurando uma conexão WMI remota
+                  href: connecting-to-wmi-remotely-starting-with-vista.md
+                - name: Protegendo uma conexão WMI remota
+                  href: securing-a-remote-wmi-connection.md
+                - name: Solucionando problemas de conexão WMI remota
+                  href: troubleshooting-a-remote-wmi-connection.md
+                - name: Configurando uma porta fixa para o WMI
+                  href: setting-up-a-fixed-port-for-wmi.md
+                - name: Delegando com WMI
+                  href: connecting-to-a-3rd-computer-delegation.md
+                - name: Conectando-se ao WMI remotamente com o VBScript
+                  href: connecting-to-wmi-remotely-with-vbscript.md
+                - name: Conectando-se ao WMI remotamente com o PowerShell
+                  href: connecting-to-wmi-on-a-remote-computer-by-using-powershell.md
+                - name: 'Conectando-se ao WMI remotamente com C #'
+                  href: connecting-to-wmi-remotely-with-c-.md
+                - name: Criando processos remotamente usando o WMI
+                  href: creating-processes-remotely.md
+            - name: Tarefas do WMI para scripts e aplicativos
+              href: wmi-tasks-for-scripts-and-applications.md
+              items:
+                - name: 'Tarefas do WMI: contas e domínios'
+                  href: wmi-tasks--accounts-and-domains.md
+                - name: 'Tarefas do WMI: hardware do computador'
+                  href: wmi-tasks--computer-hardware.md
+                - name: 'Tarefas do WMI: software do computador'
+                  href: wmi-tasks--computer-software.md
+                - name: 'Tarefas do WMI: conectando-se ao serviço WMI'
+                  href: wmi-tasks--connecting-to-the-wmi-service.md
+                - name: 'Tarefas do WMI: datas e horas'
+                  href: wmi-tasks--dates-and-times.md
+                - name: 'Tarefas WMI: gerenciamento de área de trabalho '
+                  href: wmi-tasks--desktop-management.md
+                - name: 'Tarefas WMI: discos e sistemas de arquivos '
+                  href: wmi-tasks--disks-and-file-systems.md
+                - name: 'Tarefas WMI: logs de eventos '
+                  href: wmi-tasks--event-logs.md
+                - name: 'Tarefas do WMI: arquivos e pastas'
+                  href: wmi-tasks--files-and-folders.md
+                - name: 'Tarefas do WMI: rede'
+                  href: wmi-tasks--networking.md
+                - name: 'Tarefas do WMI: sistemas operacionais'
+                  href: wmi-tasks--operating-systems.md
+                - name: 'Tarefas do WMI: monitoramento de desempenho'
+                  href: wmi-tasks--performance-monitoring.md
+                - name: 'Tarefas do WMI: impressoras e impressão'
+                  href: wmi-tasks--printers-and-printing.md
+                - name: 'Tarefas WMI: processos '
+                  href: wmi-tasks--processes.md
+                - name: 'Tarefas do WMI: registro'
+                  href: wmi-tasks--registry.md
+                - name: 'Tarefas do WMI: tarefas agendadas'
+                  href: wmi-tasks--scheduled-tasks.md
+                - name: 'Tarefas do WMI: serviços'
+                  href: wmi-tasks--services.md
+            - name: Criando um script ou aplicativo WMI
+              href: creating-a-wmi-application-or-script.md
+              items:
+                - name: Criando um aplicativo WMI usando C++
+                  href: creating-a-wmi-application-using-c-.md
+                  items:
+                    - name: Inicializando COM para um aplicativo WMI
+                      href: initializing-com-for-a-wmi-application.md
+                    - name: Criando uma conexão com um namespace WMI
+                      href: creating-a-connection-to-a-wmi-namespace.md
+                    - name: Definindo os níveis de segurança em uma conexão WMI
+                      href: setting-the-security-levels-on-a-wmi-connection.md
+                    - name: Limpando e desligando um aplicativo WMI
+                      href: cleaning-up-and-shutting-down-a-wmi-application.md
+                - name: Exemplos de aplicativos WMI C++
+                  href: wmi-c---application-examples.md
+                  items:
+                    - name: 'Exemplo: chamando um método de provedor'
+                      href: example--calling-a-provider-method.md
+                    - name: 'Exemplo: recebendo notificações de eventos por meio do WMI'
+                      href: example--receiving-event-notifications-through-wmi-.md
+                    - name: 'Exemplo: obtendo dados do WMI do computador local de forma assíncrona'
+                      href: example--getting-wmi-data-from-the-local-computer-asynchronously.md
+                    - name: 'Exemplo: obtendo dados WMI de um computador remoto'
+                      href: example--getting-wmi-data-from-a-remote-computer.md
+                    - name: 'Exemplo: obtendo dados WMI do computador local'
+                      href: example--getting-wmi-data-from-the-local-computer.md
+                    - name: 'Exemplo: Criando um aplicativo WMI'
+                      href: example-creating-a-wmi-application.md
+                - name: Criando um script WMI
+                  href: creating-a-wmi-script.md
+                  items:
+                    - name: Conectando-se ao WMI com o VBScript
+                      href: connecting-to-wmi-with-vbscript.md
+                    - name: Construindo uma cadeia de caracteres de moniker
+                      href: constructing-a-moniker-string.md
+                    - name: Criando scripts com SWbemObject
+                      href: scripting-with-swbemobject.md
+                    - name: Objetos auxiliares de script
+                      href: scripting-helper-objects.md
+                    - name: Usando a biblioteca de tipos de script WMI
+                      href: using-the-wmi-scripting-type-library.md
+                - name: Criando um cliente WMI gerenciado
+                  href: creating-a-managed-wmi-client.md
+            - name: Monitorando dados de desempenho
+              href: monitoring-performance-data.md
+              items:
+                - name: Acessando dados de desempenho no script
+                  href: accessing-performance-data-in-script.md
+                  items:
+                    - name: Atualizando dados do WMI em scripts
+                      href: refreshing-wmi-data-in-scripts.md
+                - name: Acessando dados de desempenho em C++
+                  href: accessing-performance-data-in-c--.md
+                  items:
+                    - name: Acessando classes de desempenho de WMI pré-instalado
+                      href: accessing-wmi-preinstalled-performance-classes.md
+                - name: Obtendo dados de desempenho estatísticos
+                  href: obtaining-statistical-performance-data.md
+                - name: O provedor de monitoramento de desempenho
+                  href: monitoring-performance-with-the-performance-monitoring-provider.md
+            - name: Recebendo um evento WMI
+              href: receiving-a-wmi-event.md
+              items:
+                - name: Determinando o tipo de evento a ser recebido
+                  href: determining-the-type-of-event-to-receive.md
+                - name: Recebendo eventos para a duração do seu aplicativo
+                  href: receiving-events-for-the-duration-of-your-application.md
+                  items:
+                    - name: Recebendo notificações de eventos assíncronos
+                      href: receiving-asynchronous-event-notifications.md
+                    - name: Recebendo notificações de eventos síncronas e Semisynchronous
+                      href: receiving-synchronous-and-semisynchronous-event-notifications.md
+                - name: Recebendo eventos em todos os momentos
+                  href: receiving-events-at-all-times.md
+                  items:
+                    - name: Implementando um consumidor físico
+                      href: implementing-a-physical-consumer.md
+                    - name: Criando uma nova classe de consumidor de evento permanente
+                      href: creating-a-new-permanent-event-consumer-class.md
+                    - name: Criando um consumidor lógico
+                      href: creating-a-logical-consumer.md
+                    - name: Criando um filtro de eventos
+                      href: creating-an-event-filter.md
+                    - name: Ligando um filtro de eventos a um consumidor lógico
+                      href: binding-an-event-filter-with-a-logical-consumer.md
+                    - name: Implementando assinaturas de eventos permanentes de namespace cruzado
+                      href: implementing-cross-namespace-permanent-event-subscriptions.md
+                - name: Monitorando e respondendo a eventos com consumidores padrão
+                  href: monitoring-and-responding-to-events-with-standard-consumers.md
+                  items:
+                    - name: Executando um script com base em um evento
+                      href: running-a-script-based-on-an-event.md
+                    - name: Enviando email com base em um evento
+                      href: sending-e-mail-based-on-an-event.md
+                    - name: Gravando em um arquivo de log baseado em um evento
+                      href: writing-to-a-log-file-based-on-an-event.md
+                    - name: Registrando no log de eventos NT com base em um evento
+                      href: logging-to-nt-event-log-based-on-an-event.md
+                    - name: Executando um programa da linha de comando com base em um evento
+                      href: running-a-program-from-the-command-line-based-on-an-event.md
+                    - name: Usando modelos de cadeia de caracteres padrão
+                      href: using-standard-string-templates.md
+                - name: Recebendo um evento cronometrado ou repetido
+                  href: receiving-a-timed-or-repeating-event.md
+                  items:
+                    - name: Criando um evento de temporizador com Win32_LocalTime ou Win32_UTCTime
+                      href: creating-a-timer-event-with-win32-localtime-or-win32-utctime.md
+                    - name: Criando um evento de temporizador com __TimerInstruction
+                      href: creating-a-timer-event-with---timerinstruction.md
+                - name: 'Exemplo: monitorando várias consultas de evento simultaneamente'
+                  href: example-monitoring-multiple-event-queries-simultaneously.md
+            - name: Monitorando eventos
+              href: monitoring-events.md
+            - name: Consultando com WQL
+              href: querying-with-wql.md
+              items:
+                - name: Solicitando dados de instância de classe
+                  href: requesting-class-instance-data.md
+                  items:
+                    - name: Instrução SELECT para consultas de dados
+                      href: select-statement-for-data-queries.md
+                    - name: Operador ISA para consultas de dados
+                      href: isa-operator-for-data-queries.md
+                - name: Recebendo notificações de eventos
+                  href: receiving-event-notifications.md
+                  items:
+                    - name: Instrução SELECT para consultas de evento
+                      href: select-statement-for-event-queries.md
+                    - name: Operador ISA para consultas de evento
+                      href: isa-operator-for-event-queries.md
+                - name: Recuperando definições de classe
+                  href: retrieving-class-definitions.md
+                  items:
+                    - name: Instrução SELECT para consultas de esquema
+                      href: select-statement-for-schema-queries.md
+                    - name: Associações de esquema
+                      href: schema-associations.md
+                    - name: Operador ISA para consultas de esquema
+                      href: isa-operator-for-schema-queries.md
+                - name: Consultando objetos inseridos
+                  href: querying-embedded-objects.md
+            - name: Consultando o status de recursos opcionais
+              href: querying-the-status-of-optional-features.md
+            - name: Descrevendo o local de um objeto WMI
+              href: describing-the-location-of-a-wmi-object.md
+              items:
+                - name: Requisitos de caminho do objeto WMI
+                  href: wmi-object-path-requirements.md
+                - name: Descrevendo um caminho de objeto de namespace do WMI
+                  href: describing-a-wmi-namespace-object-path.md
+                - name: Descrevendo um caminho de objeto de classe
+                  href: describing-a-class-object-path.md
+                - name: Descrevendo um caminho de objeto de instância
+                  href: describing-an-instance-object-path.md
+                  items:
+                    - name: Suporte de instância de classe para valores de 64 bits
+                      href: class-instance-support-for-64-bit-values.md
+            - name: Acessando outros recursos do sistema operacional com o WMI
+              href: accessing-other-operating-system-features-with-wmi.md
+              items:
+                - name: Acessando dados de drivers de dispositivo
+                  href: accessing-data-from-device-drivers.md
+                - name: Acessando Active Directory
+                  href: accessing-active-directory.md
+                  items:
+                    - name: Criando e atualizando objetos Active Directory
+                      href: creating-and-updating-active-directory-objects.md
+                    - name: Usando a sintaxe de Active Directory apropriada
+                      href: using-the-proper-active-directory-syntax.md
+                      items:
+                        - name: Descrevendo o namespace LDAP
+                          href: describing-the-ldap-namespace.md
+                        - name: Descrevendo o caminho ADSI
+                          href: describing-the-adsi-path.md
+                    - name: Mapeando Active Directory para o WMI
+                      href: mapping-active-directory-to-wmi.md
+                      items:
+                        - name: Mapeando classes de Active Directory
+                          href: mapping-active-directory-classes.md
+                        - name: Mapeando instâncias de Active Directory
+                          href: mapping-active-directory-instances.md
+                - name: Acessando dispositivos SNMP
+                  href: accessing-snmp-devices.md
+                  items:
+                    - name: Configurando o ambiente SNMP WMI
+                      href: setting-up-the-wmi-snmp-environment.md
+                    - name: Leitura e gravação em dispositivos SNMP
+                      href: reading-from-and-writing-to-snmp-devices.md
+                      items:
+                        - name: Correlação de classes SNMP WMI
+                          href: wmi-snmp-class-correlation.md
+                    - name: Recebendo interceptações SNMP como eventos WMI
+                      href: receiving-snmp-traps-as-wmi-events.md
+                      items:
+                        - name: Escolhendo entre provedores de eventos SNMP
+                          href: choosing-between-snmp-event-providers.md
+                        - name: Recebendo eventos SNMP
+                          href: receiving-snmp-events.md
+                - name: Criando páginas de Active Server para o WMI
+                  href: creating-active-server-pages-for-wmi.md
+            - name: Acessando dados no namespace Interop
+              href: accessing-data-in-the-interop-namespace.md
+            - name: Manipulando informações de classe e instância
+              href: manipulating-class-and-instance-information.md
+              items:
+                - name: Recuperando dados de instância ou classe WMI
+                  href: retrieving-class-or-instance-data.md
+                  items:
+                    - name: Recuperando uma classe WMI
+                      href: retrieving-a-class.md
+                    - name: Recuperando uma instância do WMI
+                      href: retrieving-an-instance.md
+                    - name: Recuperando parte de uma instância do WMI
+                      href: retrieving-part-of-an-instance.md
+                    - name: Acessando um qualificador WMI
+                      href: accessing-a-qualifier.md
+                - name: Recuperando um código de erro
+                  href: retrieving-an-error-code.md
+                - name: Modificando uma propriedade de instância
+                  href: modifying-an-instance-property.md
+                  items:
+                    - name: Atualizando uma instância inteira
+                      href: updating-an-entire-instance.md
+                    - name: Atualizando parte de uma instância
+                      href: updating-part-of-an-instance.md
+                - name: Alterando a herança de uma instância
+                  href: changing-the-inheritance-of-an-instance.md
+                - name: Modificando um método
+                  href: modifying-a-method.md
+                - name: Enumerando o WMI
+                  href: enumerating-wmi.md
+                  items:
+                    - name: Melhorando o desempenho da enumeração
+                      href: improving-enumeration-performance.md
+                - name: Consultando o WMI
+                  href: querying-wmi.md
+                  items:
+                    - name: Invocando uma consulta síncrona
+                      href: invoking-a-synchronous-query.md
+                    - name: Invocando uma consulta assíncrona
+                      href: invoking-an-asynchronous-query.md
+                - name: Chamando um método WMI
+                  href: calling-a-method.md
+                  items:
+                    - name: Fazendo uma chamada Semisynchronous com C++
+                      href: making-a-semisynchronous-call-with-c--.md
+                    - name: Fazendo uma chamada Semisynchronous com o VBScript
+                      href: making-a-semisynchronous-call-with-vbscript.md
+                    - name: Fazendo uma chamada assíncrona com C++
+                      href: making-an-asynchronous-call-with-c--.md
+                    - name: Fazendo uma chamada de script WMI assíncrona
+                      href: making-an-asynchronous-call-with-vbscript.md
+                    - name: Chamando um método WMI
+                      href: calling-a-wmi-method.md
+                    - name: Chamando um método de provedor
+                      href: calling-a-provider-method.md
+                    - name: Criando objetos de parâmetros em C++
+                      href: creating-parameters-objects-in-c--.md
+                    - name: Construindo objetos de inparâmetros e analisando objetos de Parameters
+                      href: constructing-inparameters-objects-and-parsing-outparameters-objects.md
+                      items:
+                        - name: Construindo objetos de inparâmetros
+                          href: constructing-inparameters-objects.md
+                        - name: Analisando objetos de Parameters
+                          href: parsing-outparameters-objects.md
+                - name: Acessando uma coleção WMI
+                  href: accessing-a-collection.md
+                  items:
+                    - name: Removendo um único item de uma coleção WMI
+                      href: removing-a-single-item-from-a-collection.md
+                    - name: Removendo vários itens de uma coleção de WMI
+                      href: removing-multiple-items-from-a-collection.md
+            - name: Vinculando classes
+              href: linking-classes-together.md
+              items:
+                - name: Registrando o provedor de exibição
+                  href: registering-the-view-provider.md
+                - name: Criando uma nova instância de propriedades antigas
+                  href: creating-a-new-instance-from-old-properties.md
+                - name: Associando instâncias entre namespaces
+                  href: associating-instances-between-namespaces.md
+                - name: Criando uma classe de exibição Union
+                  href: creating-a-union-view-class.md
+                  items:
+                    - name: Atualizando uma exibição Union
+                      href: updating-a-union-view.md
+            - name: Modificando o registro do sistema
+              href: modifying-the-system-registry.md
+              items:
+                - name: Obtendo dados do registro
+                  href: obtaining-registry-data.md
+                - name: Alterar dados de Registro
+                  href: changing-registry-data.md
+                - name: Programando com o provedor de registro do sistema
+                  href: programming-with-the-system-registry-provider.md
+                  items:
+                    - name: Definindo classes para o provedor de registro do sistema
+                      href: defining-classes-for-the-system-registry-provider.md
+                      items:
+                        - name: Mapeando um tipo de dados do registro para um tipo de dados WMI
+                          href: mapping-a-registry-data-type-to-a-wmi-data-type.md
+                        - name: Definindo uma classe de registro com qualificadores
+                          href: defining-a-registry-class-with-qualifiers.md
+                    - name: Usar o provedor de registro do sistema como um provedor de propriedades
+                      href: using-the-system-registry-provider-as-a-property-provider.md
+                    - name: Descrevendo um recurso para o registro
+                      href: describing-a-resource-for-the-registry.md
+                    - name: Acessando um valor de registro sem nome
+                      href: accessing-an-unnamed-registry-value.md
+                - name: Registrando para eventos de registro do sistema
+                  href: registering-for-system-registry-events.md
+                  items:
+                    - name: Criando uma cláusula WHERE para o provedor de registro
+                      href: creating-a-proper-where-clause-for-the-registry-provider.md
+                    - name: Recebendo eventos do registro
+                      href: receiving-registry-events.md
+                - name: Registrando o provedor de registro do sistema
+                  href: registering-the-system-registry-provider.md
+        - name: Criando provedores WMI
+          href: creating-wmi-providers.md
+          items:
+            - name: Fornecendo dados ao WMI
+              href: providing-data-to-wmi.md
+            - name: Desenvolvendo um provedor WMI
+              href: developing-a-wmi-provider.md
+              items:
+                - name: Criando classes formato MOF (MOF)
+                  href: designing-managed-object-format--mof--classes.md
+                  items:
+                    - name: Criando hierarquias dentro do WMI
+                      href: creating-hierarchies-within-wmi.md
+                      items:
+                        - name: Criando um namespace filho com código MOF
+                          href: creating-a-child-namespace-with-mof-code.md
+                        - name: Criando um namespace irmão com código MOF
+                          href: creating-a-sibling-namespace-with-mof-code.md
+                        - name: Criando um namespace com a API do WMI
+                          href: creating-a-namespace-with-the-wmi-api.md
+                    - name: Criando uma classe WMI
+                      href: creating-a-class.md
+                      items:
+                        - name: Criando uma classe base WMI
+                          href: creating-a-base-class.md
+                        - name: Criando uma classe derivada de WMI
+                          href: creating-a-derived-class.md
+                        - name: Criando um método WMI
+                          href: creating-a-method.md
+                        - name: Adicionando uma propriedade WMI
+                          href: adding-a-property.md
+                        - name: Criando um alias WMI
+                          href: creating-an-alias.md
+                    - name: Inserindo objetos em uma classe
+                      href: embedded-objects.md
+                      items:
+                        - name: Criando objetos inseridos
+                          href: creating-embedded-objects.md
+                    - name: Declarando uma classe de associação
+                      href: declaring-an-association-class.md
+                    - name: Criando uma instância
+                      href: creating-an-instance.md
+                      items:
+                        - name: Criando e declarando uma instância usando C++
+                          href: creating-and-declaring-an-instance-using-c-.md
+                        - name: Criando uma instância usando o MOF
+                          href: creating-an-instance-using-mof.md
+                        - name: Criando um objeto usando o VBScript
+                          href: creating-an-object-using-vbscript.md
+                    - name: Excluindo uma classe ou instância
+                      href: deleting-a-class-or-instance.md
+                      items:
+                        - name: Excluindo uma instância
+                          href: deleting-an-instance.md
+                        - name: Excluindo uma classe
+                          href: deleting-a-class.md
+                    - name: Criando um comentário
+                      href: creating-a-comment.md
+                    - name: Adicionando um qualificador
+                      href: adding-a-qualifier.md
+                      items:
+                        - name: Aplicando um qualificador
+                          href: applying-a-qualifier.md
+                        - name: Descrevendo um qualificador com um tipo de qualificador
+                          href: describing-a-qualifier-with-a-qualifier-flavor.md
+                - name: Fornecendo dados ao WMI escrevendo um provedor
+                  href: supplying-data-to-wmi-by-writing-a-provider.md
+                - name: Incorporando um provedor em um aplicativo
+                  href: incorporating-a-provider-in-an-application.md
+                - name: Registrando um provedor
+                  href: registering-a-provider.md
+                  items:
+                    - name: Escolhendo o registro correto
+                      href: choosing-correct-registration.md
+                - name: Inicializando um provedor
+                  href: initializing-a-provider.md
+                - name: Fazendo chamadas para o WMI
+                  href: making-calls-to-wmi.md
+                - name: Representando um cliente
+                  href: impersonating-a-client.md
+                - name: Atualizando um provedor
+                  href: updating-a-provider.md
+                - name: Descarregando um provedor
+                  href: unloading-a-provider.md
+                - name: Escrevendo um provedor de associação para interoperabilidade
+                  href: writing-an-association-provider-for-interop.md
+                - name: Gravando um provedor de instância
+                  href: writing-an-instance-provider.md
+                  items:
+                    - name: Registrando um provedor de instância
+                      href: registering-an-instance-provider.md
+                    - name: Implementando uma interface primária do provedor de instância
+                      href: implementing-the-primary-interface-for-an-instance-provider.md
+                    - name: Melhorando a eficiência de um provedor de instância
+                      href: improving-the-efficiency-of-an-instance-provider.md
+                    - name: Suporte a operações de Partial-Instance
+                      href: supporting-partial-instance-operations.md
+                - name: Escrevendo um provedor de métodos
+                  href: writing-a-method-provider.md
+                  items:
+                    - name: Registrando um provedor de métodos
+                      href: registering-a-method-provider.md
+                    - name: Implementando a interface primária para um provedor de métodos
+                      href: implementing-the-primary-interface-for-a-method-provider.md
+                - name: Escrevendo um provedor de eventos
+                  href: writing-an-event-provider.md
+                  items:
+                    - name: Registrando um provedor de eventos
+                      href: registering-an-event-provider.md
+                    - name: Implementando a interface primária para um provedor de eventos
+                      href: implementing-the-primary-interface-for-an-event-provider.md
+                    - name: Otimizando um provedor de eventos
+                      href: optimizing-an-event-provider.md
+                - name: Escrevendo um provedor de consumidor de eventos
+                  href: writing-an-event-consumer-provider.md
+                  items:
+                    - name: Registrando um provedor de consumidor de eventos
+                      href: registering-an-event-consumer-provider.md
+                - name: Escrevendo um provedor de classe
+                  href: writing-a-class-provider.md
+                  items:
+                    - name: Determinando o status de Push ou pull
+                      href: determining-push-or-pull-status.md
+                    - name: Registrando um provedor de classe
+                      href: registering-a-class-provider.md
+                    - name: Implementando a interface primária para um provedor de classe
+                      href: implementing-the-primary-interface-for-a-class-provider.md
+                - name: Gravando um provedor de propriedades
+                  href: writing-a-property-provider.md
+                  items:
+                    - name: Registrando um provedor de propriedades
+                      href: registering-a-property-provider.md
+                    - name: Implementando a interface primária para um provedor de propriedades
+                      href: implementing-the-primary-interface-for-a-property-provider.md
+                - name: Criando um provedor de instância em um provedor de High-Performance
+                  href: making-an-instance-provider-into-a-high-performance-provider.md
+                  items:
+                    - name: Registrando um provedor de High-Performance
+                      href: registering-a-high-performance-provider.md
+                    - name: Implementando a interface High-Performance
+                      href: implementing-the-high-performance-interface.md
+                    - name: Dando suporte à classe Win32_PerfRawData
+                      href: supporting-the-win32-perfrawdata-class.md
+                    - name: Dando suporte à classe Win32_PerfFormattedData
+                      href: supporting-the-win32-perfformatteddata-class.md
+        - name: Mantendo a segurança do WMI
+          href: maintaining-wmi-security.md
+          items:
+            - name: Protegendo namespaces WMI
+              href: securing-wmi-namespaces.md
+              items:
+                - name: Definindo descritores de segurança de namespace
+                  href: setting-namespace-security-descriptors.md
+                  items:
+                    - name: Definindo a segurança do namespace com o controle WMI
+                      href: setting-namespace-security-with-the-wmi-control.md
+                    - name: Definindo a segurança na criação do namespace
+                      href: setting-namespace-security-when-the-namespace-is-created.md
+                - name: Exigindo uma conexão criptografada para um namespace
+                  href: requiring-an-encrypted-connection-to-a-namespace.md
+                - name: Estabelecendo a herança da segurança do namespace
+                  href: establishing-inheritance-of-namespace-security.md
+            - name: Protegendo seu provedor
+              href: securing-your-provider.md
+              items:
+                - name: Hospedagem e segurança de provedor
+                  href: provider-hosting-and-security.md
+                - name: Chaves do registro para controlar a segurança do provedor
+                  href: registry-keys-for-controlling-provider-security-.md
+            - name: Protegendo clientes e provedores do C++
+              href: securing-c---clients-and-providers.md
+              items:
+                - name: Definindo a segurança do processo do aplicativo cliente
+                  href: setting-client-application-process-security.md
+                  items:
+                    - name: Definindo o nível de segurança do processo padrão usando C++
+                      href: setting-the-default-process-security-level-using-c-.md
+                - name: Configurando a autenticação no WMI
+                  href: setting-authentication-in-wmi.md
+                  items:
+                    - name: Configurando a autenticação usando C++
+                      href: setting-authentication-using-c-.md
+                    - name: Especificando o nome principal do servidor
+                      href: specifying-the-server-principal-name.md
+                    - name: Implementando o encobrimento
+                      href: implementing-cloaking.md
+                - name: Definindo a segurança em IWbemServices e em outros proxies
+                  href: setting-the-security-on-iwbemservices-and-other-proxies.md
+                - name: Executando operações privilegiadas
+                  href: executing-privileged-operations.md
+                  items:
+                    - name: Executando operações privilegiadas usando C++
+                      href: executing-privileged-operations-using-c-.md
+                - name: Definindo a segurança em uma chamada assíncrona
+                  href: setting-security-on-an-asynchronous-call.md
+                  items:
+                    - name: Reduzindo a segurança de um coletor em um processo separado
+                      href: lowering-the-security-for-a-sink-in-a-separate-process.md
+                - name: Executando verificações de acesso
+                  href: performing-access-checks.md
+            - name: Protegendo clientes de script
+              href: securing-scripting-clients.md
+              items:
+                - name: Definir o nível de segurança do processo padrão com o VBScript
+                  href: setting-the-default-process-security-level-using-vbscript.md
+                - name: Configurando o serviço de autenticação usando o VBScript
+                  href: setting-the-authentication-service-using-vbscript.md
+                - name: Definindo a segurança em uma chamada assíncrona no VBScript
+                  href: setting-security-on-an-asynchronous-call-in-vbscript.md
+                - name: Executando operações privilegiadas usando o VBScript
+                  href: executing-privileged-operations-using-vbscript.md
+                - name: Configurando o IIS 5 e posterior para scripts ASP WMI
+                  href: configuring-iis-5-for-wmi-asp-scripting.md
+            - name: Protegendo eventos WMI
+              href: securing-wmi-events.md
+              items:
+                - name: Fornecendo eventos com segurança
+                  href: providing-events-securely.md
+                - name: Recebendo eventos com segurança
+                  href: receiving-events-securely.md
+            - name: Alterando a segurança de acesso em objetos protegíveis
+              href: changing-access-security-on-securable-objects.md
+        - name: Obter e fornecer dados em um computador de 64 bits
+          href: getting-and-providing-data-on-a-64-bit-computer.md
+          items:
+            - name: Solicitando dados WMI em uma plataforma de 64 bits
+              href: requesting-wmi-data-on-a-64-bit-platform.md
+            - name: Fornecendo dados do WMI em uma plataforma de 64 bits
+              href: providing-wmi-data-on-a-64-bit-platform.md
+        - name: Localizando informações da classe WMI
+          href: localizing-wmi-class-information.md
+          items:
+            - name: Criando definições de classe localizadas
+              href: creating-localized-class-definitions.md
+            - name: Compilando arquivos MOF localizados
+              href: compiling-localized-mof-files.md
+            - name: Localizando valores de propriedade
+              href: localizing-property-values.md
+              items:
+                - name: Localizando propriedades estáticas
+                  href: localizing-static-properties.md
+            - name: Recuperando classes corrigidas
+              href: retrieving-amended-classes.md
+              items:
+                - name: Recuperando classes corrigidas usando a API de script para WMI
+                  href: retrieving-amended-classes-using-the-scripting-api-for-wmi.md
+                - name: Recuperando classes corrigidas usando a API COM para o WMI
+                  href: retrieving-amended-classes-using-the-com-api-for-wmi.md
+            - name: Considerações sobre a classe corrigida
+              href: amended-class-considerations.md
+        - name: Representando objetos em XML
+          href: representing-objects-in-xml.md
+        - name: Usando as ferramentas de linha de comando do WMI
+          href: using-the-wmi-command-line-tools.md
+          items:
+            - name: Iniciando e parando o serviço WMI
+              href: starting-and-stopping-the-wmi-service.md
+            - name: Compilando arquivos MOF
+              href: compiling-mof-files.md
+              items:
+                - name: Executando o compilador MOF em um arquivo
+                  href: running-the-mof-compiler-on-a-file.md
+                - name: Compilando código MOF com valores de Floating-Point
+                  href: compiling-mof-code-with-floating-point-values.md
+                - name: Tratamento de erros com o compilador MOF
+                  href: handling-errors-with-the-mof-compiler.md
+        - name: Solução de problemas do WMI
+          href: wmi-troubleshooting.md
+          items:
+            - name: Solucionando problemas de aplicativos cliente WMI
+              href: troubleshooting-wmi-client-applications.md
+            - name: Rastreando a atividade WMI
+              href: tracing-wmi-activity.md
+            - name: Provedores de depuração
+              href: debugging-providers.md
+            - name: Configuração do provedor e classes de solução de problemas
+              href: provider-configuration-and-troubleshooting-classes.md
+            - name: Registrando em log a atividade WMI
+              href: logging-wmi-activity.md
+            - name: Chave do registro para configuração do repositório
+              href: registry-key-for-repository-configuration.md
+    - name: Referência de WMI
+      href: wmi-reference.md
+      items:
+        - name: Classes WMI
+          href: wmi-classes.md
+          items:
+            - name: Win32_PrivilegesStatus
+              href: win32-privilegesstatus-wmiprov.md
+            - name: Classes do sistema WMI
+              href: wmi-system-classes.md
+              items:
+                - name: __AbsoluteTimerInstruction
+                  href: '--absolutetimerinstruction.md'
+                - name: __ACE
+                  href: '--ace.md'
+                - name: __AggregateEvent
+                  href: '--aggregateevent.md'
+                - name: __ArbitratorConfiguration
+                  href: '--arbitratorconfiguration.md'
+                - name: __CacheControl
+                  href: '--cachecontrol.md'
+                - name: __CIMOMIdentification
+                  href: '--cimomidentification.md'
+                - name: __ClassCreationEvent
+                  href: '--classcreationevent.md'
+                - name: __ClassDeletionEvent
+                  href: '--classdeletionevent.md'
+                - name: __ClassModificationEvent
+                  href: '--classmodificationevent.md'
+                - name: __ClassOperationEvent
+                  href: '--classoperationevent.md'
+                - name: __ClassProviderRegistration
+                  href: '--classproviderregistration.md'
+                - name: __ConsumerFailureEvent
+                  href: '--consumerfailureevent.md'
+                - name: __Event
+                  href: '--event.md'
+                - name: __EventConsumer
+                  href: '--eventconsumer.md'
+                - name: __EventConsumerProviderCacheControl
+                  href: '--eventconsumerprovidercachecontrol.md'
+                - name: __EventConsumerProviderRegistration
+                  href: '--eventconsumerproviderregistration.md'
+                - name: __EventDroppedEvent
+                  href: '--eventdroppedevent.md'
+                - name: __EventFilter
+                  href: '--eventfilter.md'
+                - name: __EventGenerator
+                  href: '--eventgenerator.md'
+                - name: __EventProviderCacheControl
+                  href: '--eventprovidercachecontrol.md'
+                - name: __EventProviderRegistration
+                  href: '--eventproviderregistration.md'
+                - name: __EventQueueOverflowEvent
+                  href: '--eventqueueoverflowevent.md'
+                - name: __EventSinkCacheControl
+                  href: '--eventsinkcachecontrol.md'
+                - name: __ExtendedStatus
+                  href: '--extendedstatus.md'
+                - name: __ExtrinsicEvent
+                  href: '--extrinsicevent.md'
+                - name: __FilterToConsumerBinding
+                  href: '--filtertoconsumerbinding.md'
+                - name: __IndicationRelated
+                  href: '--indicationrelated.md'
+                - name: __InstanceCreationEvent
+                  href: '--instancecreationevent.md'
+                - name: __InstanceDeletionEvent
+                  href: '--instancedeletionevent.md'
+                - name: __InstanceModificationEvent
+                  href: '--instancemodificationevent.md'
+                - name: __InstanceOperationEvent
+                  href: '--instanceoperationevent.md'
+                - name: __InstanceProviderRegistration
+                  href: '--instanceproviderregistration.md'
+                - name: __IntervalTimerInstruction
+                  href: '--intervaltimerinstruction.md'
+                - name: __MethodInvocationEvent
+                  href: '--methodinvocationevent.md'
+                - name: __MethodProviderRegistration
+                  href: '--methodproviderregistration.md'
+                - name: __Namespace
+                  href: '--namespace.md'
+                - name: __NamespaceCreationEvent
+                  href: '--namespacecreationevent.md'
+                - name: __NamespaceDeletionEvent
+                  href: '--namespacedeletionevent.md'
+                - name: __NamespaceModificationEvent
+                  href: '--namespacemodificationevent.md'
+                - name: __NamespaceOperationEvent
+                  href: '--namespaceoperationevent.md'
+                - name: __NotifyStatus
+                  href: '--notifystatus.md'
+                - name: __NTLMUser9X
+                  href: '--ntlmuser9x.md'
+                - name: __ObjectProviderCacheControl
+                  href: '--objectprovidercachecontrol.md'
+                - name: __ObjectProviderRegistration
+                  href: '--objectproviderregistration.md'
+                - name: __PARAMETERS
+                  href: '--parameters.md'
+                - name: __PropertyProviderCacheControl
+                  href: '--propertyprovidercachecontrol.md'
+                - name: __PropertyProviderRegistration
+                  href: '--propertyproviderregistration.md'
+                - name: __Provider
+                  href: '--provider.md'
+                - name: __ProviderHostQuotaConfiguration
+                  href: '--providerhostquotaconfiguration.md'
+                - name: __ProviderRegistration
+                  href: '--providerregistration.md'
+                - name: __SecurityDescriptor
+                  href: '--securitydescriptor.md'
+                - name: __SecurityRelatedClass
+                  href: '--securityrelatedclass.md'
+                - name: __SystemClass
+                  href: '--systemclass.md'
+                - name: __SystemEvent
+                  href: '--systemevent.md'
+                - name: __SystemSecurity
+                  href: '--systemsecurity.md'
+                  items:
+                    - name: Métodos de __SystemSecurity
+                      href: '--systemsecurity-methods.md'
+                      items:
+                        - name: Método Get9XUserList
+                          href: '--systemsecurity-get9xuserlist.md'
+                        - name: Método GetCallerAccessRights
+                          href: '--systemsecurity-getcalleraccessrights.md'
+                        - name: Método Obtido
+                          href: '--systemsecurity-getsd.md'
+                        - name: Método GetSecurityDescriptor
+                          href: getsecuritydescriptor-method-in-class---systemsecurity-.md
+                        - name: Método SetSecurityDescriptor
+                          href: setsecuritydescriptor-method-in-class---systemsecurity.md
+                        - name: Método Set9XUserList
+                          href: '--systemsecurity-set9xuserlist.md'
+                        - name: Método definido
+                          href: '--systemsecurity-setsd.md'
+                - name: __thisNAMESPACE
+                  href: '--thisnamespace.md'
+                - name: __TimerEvent
+                  href: '--timerevent.md'
+                - name: __TimerInstruction
+                  href: '--timerinstruction.md'
+                - name: __TimerNextFiring
+                  href: '--timernextfiring.md'
+                - name: __Trustee
+                  href: '--trustee.md'
+                - name: __Win32Provider
+                  href: '--win32provider.md'
+            - name: Classes MSFT
+              href: msft-classes.md
+              items:
+                - name: Classes de provedor de política
+                  href: policy-provider-classes.md
+                - name: Classes de solução de problemas do WMI
+                  href: wmi-troubleshooting-classes.md
+                  items:
+                    - name: Classes de solução de problemas de eventos do provedor
+                      href: provider-event-troubleshooting-classes.md
+                    - name: Classes de solução de problemas do consumidorprovider
+                      href: consumerprovider-troubleshooting-classes.md
+                    - name: Classes de solução de problemas de eventos do serviço WMI
+                      href: wmi-service-event-troubleshooting-classes.md
+            - name: Classes CIM
+              href: cimclas.md
+              items:
+                - name: CIM_LastAppliedSettingData
+                  href: cim-lastappliedsettingdata.md
+                - name: CIM_ParentChildSettingData
+                  href: cim-parentchildsettingdata.md
+                - name: CIM_PreviousSettingData
+                  href: cim-previoussettingdata.md
+                - name: CIM_ReferencedProfile
+                  href: cim-referencedprofile.md
+            - name: Classes de consumidor padrão
+              href: standard-consumer-classes.md
+              items:
+                - name: ActiveScriptEventConsumer
+                  href: activescripteventconsumer.md
+                - name: CommandLineEventConsumer
+                  href: commandlineeventconsumer.md
+                - name: LogFileEventConsumer
+                  href: logfileeventconsumer.md
+                - name: NTEventLogEventConsumer
+                  href: nteventlogeventconsumer.md
+                - name: ScriptingStandardConsumerSetting
+                  href: scriptingstandardconsumersetting.md
+                - name: SMTPEventConsumer
+                  href: smtpeventconsumer.md
+        - name: Provedores de WMI
+          href: wmi-providers.md
+          items:
+            - name: Provedor de Dados de desempenho formatado
+              href: formatted-performance-data-provider.md
+              items:
+                - name: Recuperando a documentação para objetos de dados de desempenho brutos e formatados
+                  href: retrieving-raw-and-formatted-performance-data.md
+            - name: Provedor de Contadores de Desempenho
+              href: performance-counter-provider.md
+            - name: Provedor de recursos do servidor
+              href: server-feature-provider.md
+              items:
+                - name: Win32_ServerFeature
+                  href: win32-serverfeature.md
+            - name: Exibir provedor
+              href: view-provider.md
+            - name: Provedor de WmiPerfClass
+              href: wmiperfclass-provider.md
+            - name: Provedor de WmiPerfInst
+              href: wmiperfinst-provider.md
+        - name: Classes C++ de estrutura do provedor WMI
+          href: wmi-c-classes.md
+          items:
+            - name: Classes de estrutura de provedor
+              href: provider-framework-classes.md
+              items:
+                - name: CFrameworkQuery
+                  href: /windows/desktop/api/FrQuery/nl-frquery-cframeworkquery
+                  items:
+                    - name: Métodos CFrameworkQuery
+                      href: cframeworkquery-methods.md
+                      items:
+                        - name: Método AllPropertiesAreRequired
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-allpropertiesarerequired
+                        - name: Método GetQuery
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-getquery
+                        - name: Método GetQueryClassName
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-getqueryclassname
+                        - name: Método requeridoproperties
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-getrequiredproperties
+                        - name: Métodos GetValuesForProp
+                          href: cframeworkquery-getvaluesforprop.md
+                          items:
+                            - name: 'Método GetValuesForProp (CHStringArray&, LPCWSTR)'
+                              href: /windows/desktop/api/frquery/nf-frquery-cframeworkquery-getvaluesforprop(lpcwstr_chstringarray_)
+                            - name: 'Método GetValuesForProp (LPCWSTR, std:: vector<_bstr_t>&)'
+                              href: /windows/desktop/api/frquery/nf-frquery-cframeworkquery-getvaluesforprop(lpcwstr_std-vector__bstr_t__)
+                        - name: Método IsPropertyRequired
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-ispropertyrequired
+                        - name: Método KeysOnly
+                          href: /windows/desktop/api/FrQuery/nf-frquery-cframeworkquery-keysonly
+                - name: CInstance
+                  href: /windows/desktop/api/Instance/nl-instance-cinstance
+                  items:
+                    - name: Métodos CInstance
+                      href: cinstance-methods.md
+                      items:
+                        - name: Método Commit
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-commit
+                        - name: Método getbool
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getbool
+                        - name: Método GetByte
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getbyte
+                        - name: Método GetCHString
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getchstring
+                        - name: Método GetClassObjectInterface
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getclassobjectinterface
+                        - name: Método GetDateTime
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getdatetime
+                        - name: Método getDouble
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getdouble
+                        - name: Método getdword
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getdword
+                        - name: Método getembeddedobject
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getembeddedobject
+                        - name: Método GetMethodContext
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getmethodcontext
+                        - name: Método GetStatus
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getstatus
+                        - name: Método GetStringArray
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getstringarray
+                        - name: Método gettimespan
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-gettimespan
+                        - name: Método getvariance
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getvariant
+                        - name: Método GetWBEMINT16
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getwbemint16
+                        - name: Métodos GetWBEMINT64
+                          href: cinstance-getwbemint64.md
+                          items:
+                            - name: 'Método GetWBEMINT64 (LPCWSTR, LONGLONG&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-getwbemint64(lpcwstr_longlong_)
+                            - name: 'Método GetWBEMINT64 (LPCWSTR, ULONGLONG&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-getwbemint64(lpcwstr_ulonglong_)
+                            - name: 'Método GetWBEMINT64 (LPCWSTR, WBEMINT64&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-getwbemint64(lpcwstr_ulonglong_)
+                        - name: Método getwchar
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getwchar
+                        - name: Método getword
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-getword
+                        - name: método IsNull
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-isnull
+                        - name: Método setbool
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setbool
+                        - name: Método SetByte
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setbyte
+                        - name: Métodos SetCharSplat
+                          href: cinstance-setcharsplat.md
+                          items:
+                            - name: 'Método SetCharSplat (LPCWSTR, DWORD)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setcharsplat(lpcwstr_dword)
+                            - name: 'Método SetCharSplat (LPCWSTR, LPCSTR)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setcharsplat(lpcwstr_lpcstr)
+                            - name: 'Método SetCharSplat (LPCWSTR, LPCWSTR)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setcharsplat(lpcwstr_lpcwstr)
+                        - name: Métodos SetCHString
+                          href: cinstance-setchstring.md
+                          items:
+                            - name: 'Método SetCHString (LPCWSTR, constCHString&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setchstring(lpcwstr_constchstring_)
+                            - name: 'Método SetCHString (LPCWSTR, LPCSTR)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setchstring(lpcwstr_lpcstr)
+                        - name: Método SetDateTime
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setdatetime
+                        - name: Método setDouble
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setdouble
+                        - name: Método setdword
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setdword
+                        - name: Método setembeddedobject
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setembeddedobject
+                        - name: Método setNull
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setnull
+                        - name: Método SetStringArray
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setstringarray
+                        - name: Método settimespan
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-settimespan
+                        - name: Método setvariant
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setvariant
+                        - name: Método SetWBEMINT16
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setwbemint16
+                        - name: Método SetWCHARSplat
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setwcharsplat
+                        - name: Métodos SetWBEMINT64
+                          href: cinstance--setwbemint64.md
+                          items:
+                            - name: 'Método SetWBEMINT64 (LPCWSTR, constLONGLONG&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setwbemint64(lpcwstr_constlonglong)
+                            - name: 'Método SetWBEMINT64 (LPCWSTR, constWBEMINT64&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setwbemint64(lpcwstr_constulonglong)
+                            - name: 'Método SetWBEMINT64 (LPCWSTR, constULONGLONG&)'
+                              href: /windows/desktop/api/instance/nf-instance-cinstance-setwbemint64(lpcwstr_constulonglong)
+                        - name: Método setword
+                          href: /windows/desktop/api/Instance/nf-instance-cinstance-setword
+                - name: CThreadBase
+                  href: /windows/desktop/api/ThrdBase/nl-thrdbase-cthreadbase
+                  items:
+                    - name: Enumerações CThreadBase
+                      href: cthreadbase-enumerations.md
+                      items:
+                        - name: FlagDefs
+                          href: /previous-versions/windows/desktop/legacy/mt432263(v=vs.85)
+                    - name: Métodos CThreadBase
+                      href: cthreadbase-methods.md
+                      items:
+                        - name: Método BeginRead
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-beginread
+                        - name: Método BeginWrite
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-beginwrite
+                        - name: Método CThreadBase
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-cthreadbase
+                        - name: Método EndRead
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-endread
+                        - name: Método EndWrite
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-endwrite
+                        - name: Método OnFinalRelease
+                          href: /windows/desktop/api/ThrdBase/nf-thrdbase-cthreadbase-onfinalrelease
+                - name: CWbemGlueFactory
+                  href: /windows/desktop/api/WbemGlue/nl-wbemglue-cwbemgluefactory
+                  items:
+                    - name: Métodos CWbemGlueFactory
+                      href: cwbemgluefactory-methods.md
+                      items:
+                        - name: Construtor CWbemGlueFactory
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemgluefactory-cwbemgluefactory(plong)
+                - name: CWbemProviderGlue
+                  href: /windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue
+                  items:
+                    - name: Métodos CWbemProviderGlue
+                      href: cwbemproviderglue-methods.md
+                      items:
+                        - name: Método FrameworkLoginDLL
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-frameworklogindll(lpcwstr_plong)
+                        - name: Método FrameworkLogoffDLL
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-frameworklogoffdll(lpcwstr_plong)
+                        - name: Método GetAllDerivedInstances
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getallderivedinstances(lpcwstr_trefpointercollection_cinstance__methodcontext_lpcwstr)
+                        - name: Método GetAllDerivedInstancesAsynch
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getallderivedinstancesasynch
+                        - name: Método GetAllInstances
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getallinstances
+                        - name: Método GetAllInstancesAsynch
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getallinstancesasynch
+                        - name: Métodos GetEmptyInstance
+                          href: cwbemproviderglue-getemptyinstance.md
+                          items:
+                            - name: 'Método GetEmptyInstance (LPCWSTR, CInstance * *, LPCWSTR)'
+                              href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getemptyinstance(methodcontext_lpcwstr_cinstance_lpcwstr)
+                            - name: 'Método GetEmptyInstance (MethodContext *, LPCWSTR, CInstance * *, LPCWSTR)'
+                              href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getemptyinstance(methodcontext_lpcwstr_cinstance_lpcwstr)
+                        - name: Método GetInstanceByPath
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getinstancebypath(lpcwstr_cinstance_methodcontext)
+                        - name: Método GetInstanceKeysByPath
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getinstancekeysbypath
+                        - name: Método GetInstancePropertiesByPath
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getinstancepropertiesbypath
+                        - name: Método GetInstancesByQuery
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getinstancesbyquery(lpcwstr_trefpointercollection_cinstance__methodcontext_lpcwstr)
+                        - name: Método GetInstancesByQueryAsynch
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-getinstancesbyqueryasynch
+                        - name: Método GetNameSpaceConnection
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getnamespaceconnection(lpcwstr_methodcontext)
+                        - name: Método IsDerivedFrom
+                          href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-isderivedfrom(lpcwstr_lpcwstr_methodcontext_lpcwstr)
+                        - name: Método setstatusobject
+                          href: /windows/desktop/api/WbemGlue/nf-wbemglue-cwbemproviderglue-setstatusobject
+                - name: Provedor
+                  href: /windows/desktop/api/Provider/nl-provider-provider
+                  items:
+                    - name: Métodos de provedor
+                      href: provider-methods.md
+                      items:
+                        - name: Método Commit
+                          href: /windows/desktop/api/Provider/nf-provider-provider-commit
+                        - name: Método CreateNewInstance
+                          href: /windows/desktop/api/Provider/nf-provider-provider-createnewinstance
+                        - name: Método DeleteInstance
+                          href: /windows/desktop/api/provider/nf-provider-provider-deleteinstance(parsedobjectpath_long_methodcontext)
+                        - name: Método EnumerateInstances
+                          href: /windows/desktop/api/Provider/nf-provider-provider-enumerateinstances
+                        - name: Método ExecMethod
+                          href: /windows/desktop/api/provider/nf-provider-provider-execmethod(parsedobjectpath_bstr_long_cinstance_cinstance_methodcontext)
+                        - name: Método ExecQuery
+                          href: /windows/desktop/api/Provider/nf-provider-provider-execquery
+                        - name: Método Flush
+                          href: /windows/desktop/api/Provider/nf-provider-provider-flush
+                        - name: Método GetLocalComputerName
+                          href: /windows/desktop/api/Provider/nf-provider-provider-getlocalcomputername
+                        - name: Método GetLocalInstancePath
+                          href: /windows/desktop/api/Provider/nf-provider-provider-getlocalinstancepath
+                        - name: Método GetNamespace
+                          href: /windows/desktop/api/Provider/nf-provider-provider-getnamespace
+                        - name: Método GetObject
+                          href: /windows/desktop/api/provider/nf-provider-provider-getobject(cinstance_long_cframeworkquery_)
+                        - name: Método GetProviderName
+                          href: /windows/desktop/api/Provider/nf-provider-provider-getprovidername
+                        - name: Método MakeLocalPath
+                          href: /windows/desktop/api/Provider/nf-provider-provider-makelocalpath
+                        - name: Método de provedor
+                          href: /windows/desktop/api/Provider/nf-provider-provider-provider
+                        - name: Método PutInstance
+                          href: /windows/desktop/api/provider/nf-provider-provider-putinstance(constcinstance__long)
+                        - name: Método SetCreationClassName
+                          href: /windows/desktop/api/Provider/nf-provider-provider-setcreationclassname
+                        - name: Método ValidateDeletionFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validatedeletionflags
+                        - name: Método ValidateEnumerationFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validateenumerationflags
+                        - name: Método ValidateFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validateflags
+                        - name: Método ValidateGetObjFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validategetobjflags
+                        - name: Método ValidateMethodFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validatemethodflags
+                        - name: Método ValidatePutInstanceFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validateputinstanceflags
+                        - name: Método ValidateQueryFlags
+                          href: /windows/desktop/api/Provider/nf-provider-provider-validatequeryflags
+            - name: Classes de utilitário de estrutura de provedor
+              href: provider-framework-utility-classes.md
+              items:
+                - name: CHPtrArray
+                  href: /windows/desktop/api/ChPtrArr/nl-chptrarr-chptrarray
+                  items:
+                    - name: Métodos CHPtrArray
+                      href: chptrarray-methods.md
+                      items:
+                        - name: Método CHPtrArray
+                          href: /windows/desktop/api/ChPtrArr/nf-chptrarr-chptrarray-chptrarray
+                        - name: Método GetAt
+                          href: /windows/desktop/api/ChPtrArr/nf-chptrarr-chptrarray-getat
+                        - name: Método GetSize
+                          href: /windows/desktop/api/ChPtrArr/nf-chptrarr-chptrarray-getsize
+                        - name: Método RemoveAll
+                          href: /windows/desktop/api/ChPtrArr/nf-chptrarr-chptrarray-removeall
+                        - name: operador
+                          href: /previous-versions/windows/desktop/legacy/aa384934(v=vs.85)
+                - name: CHString
+                  href: chstring.md
+                  items:
+                    - name: Métodos CHString
+                      href: chstring-methods.md
+                      items:
+                        - name: Método AllocSysString
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-allocsysstring
+                        - name: Construtores CHString
+                          href: chstring-chstring.md
+                          items:
+                            - name: Construtor CHString ()
+                              href: /windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig
+                            - name: Construtor CHString (constCHString&)
+                              href: /windows/desktop/api/chstring/nf-chstring-chstring-chstring(constchstring_)
+                            - name: Construtor CHString (constunsigned Char *)
+                              href: /windows/desktop/api/chstring/nf-chstring-chstring-chstring(constunsignedchar)
+                            - name: Construtor de CHString (LPCSTR)
+                              href: /windows/desktop/api/ChString/nf-chstring-chstring-chstring(lpcstr)
+                            - name: Construtor de CHString (LPCWSTR)
+                              href: /windows/desktop/api/ChString/nf-chstring-chstring-chstring(lpcwstr)
+                            - name: 'Construtor CHString (LPCWSTR, int)'
+                              href: /windows/desktop/api/chstring/nf-chstring-chstring-chstring(lpcwstr_int)
+                            - name: 'Construtor CHString (WCHAR, int)'
+                              href: /windows/desktop/api/chstring/nf-chstring-chstring-chstring(wchar_int)
+                        - name: Método COLLATE
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-collate
+                        - name: Método compare
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-compare
+                        - name: Método CompareNoCase
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-comparenocase
+                        - name: Método vazio
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-empty
+                        - name: Localizar métodos
+                          href: chstring-find.md
+                          items:
+                            - name: Método Find (LPCWSTR)
+                              href: /windows/win32/api/chstring/nf-chstring-chstring-format(lpcwstr_---)
+                            - name: Método Find (WCHAR)
+                              href: /windows/desktop/api/chstring/nf-chstring-chstring-find(lpcwstr)
+                        - name: Método FindOneOf
+                          href: /windows/win32/api/chstring/nf-chstring-chstring-findoneof
+                        - name: Métodos de formatação
+                          href: chstring-format.md
+                          items:
+                            - name: 'Método Format (LPCWSTR,)'
+                              href: /previous-versions/windows/desktop/legacy/aa385527(v=vs.85)
+                            - name: 'Método Format (UINT,)'
+                              href: /previous-versions/windows/desktop/legacy/aa385532(v=vs.85)
+                        - name: Métodos FormatMessageW
+                          href: chstring-formatmessagew.md
+                          items:
+                            - name: 'Método FormatMessageW (LPCWSTR,)'
+                              href: /previous-versions/windows/desktop/legacy/aa385515(v=vs.85)
+                            - name: 'Método FormatMessageW (UINT,)'
+                              href: /previous-versions/windows/desktop/legacy/aa385519(v=vs.85)
+                        - name: Método FormatV
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-formatv
+                        - name: Método FreeExtra
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-freeextra
+                        - name: Método GetAllocLength
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getalloclength
+                        - name: Método GetAt
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getat(int)
+                        - name: Método GetBuffer
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getbuffer
+                        - name: Método GetBufferSetLength
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getbuffersetlength
+                        - name: Método GetData
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getdata
+                        - name: Método GetLength
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-getlength
+                        - name: Método IsEmpty
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-isempty
+                        - name: Método esquerdo
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-left
+                        - name: Método LoadStringW
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-loadstringw(uint)
+                        - name: Método LockBuffer
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-lockbuffer
+                        - name: Método MakeLower
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-makelower
+                        - name: Método MakeReverse
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-makereverse
+                        - name: Método MakeUpper
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-makeupper
+                        - name: Métodos intermediários
+                          href: chstring-mid.md
+                          items:
+                            - name: Método mid (int)
+                              href: /windows/win32/api/chstring/nf-chstring-chstring-mid(int)
+                            - name: 'Método mid (int, int)'
+                              href: /windows/win32/api/chstring/nf-chstring-chstring-mid(int_int)
+                        - name: operador
+                          href: /previous-versions/windows/desktop/legacy/aa386162(v=vs.85)
+                        - name: 'CHString:: Operator +'
+                          href: chstring--operator-plus.md
+                        - name: 'CHString:: Operator + ='
+                          href: chstring--operator-plus-equal.md
+                        - name: 'CHString:: Operator ='
+                          href: chstring--operator-equal.md
+                        - name: 'operador = = (constCHString&, constCHString&) método'
+                          href: /previous-versions/windows/desktop/legacy/aa385641(v=vs.85)
+                        - name: 'operador = = (constCHString&, constLPCWSTR&) método'
+                          href: /previous-versions/windows/desktop/legacy/aa385645(v=vs.85)
+                        - name: 'método> (constCHString&, constCHString&) do operador'
+                          href: /previous-versions/windows/desktop/legacy/aa385665(v=vs.85)
+                        - name: 'método> (constCHString&, constLPCWSTR&) do operador'
+                          href: /previous-versions/windows/desktop/legacy/aa385672(v=vs.85)
+                        - name: 'método>= (constCHString&, constCHString&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385652(v=vs.85)
+                        - name: 'método>= (constCHString&, constLPCWSTR&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385661(v=vs.85)
+                        - name: 'método< (constCHString&, constCHString&) do operador'
+                          href: /previous-versions/windows/desktop/legacy/aa385689(v=vs.85)
+                        - name: 'método< (constCHString&, constLPCWSTR&) do operador'
+                          href: /previous-versions/windows/desktop/legacy/aa385695(v=vs.85)
+                        - name: 'método<= (constCHString&, constCHString&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385676(v=vs.85)
+                        - name: 'método<= (constCHString&, constLPCWSTR&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385683(v=vs.85)
+                        - name: 'método Operator! = (constCHString&, constCHString&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385704(v=vs.85)
+                        - name: 'método Operator! = (constCHString&, constLPCWSTR&)'
+                          href: /previous-versions/windows/desktop/legacy/aa385763(v=vs.85)
+                        - name: método LPCWSTR do operador
+                          href: /windows/desktop/api/chstring/nf-chstring-chstring-operatorlpcwstr
+                        - name: Método ReleaseBuffer
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-releasebuffer
+                        - name: Método ReverseFind
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-reversefind
+                        - name: Método à direita
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-right
+                        - name: Método SetAt
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-setat
+                        - name: Método SpanExcluding
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-spanexcluding
+                        - name: Método SpanIncluding
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-spanincluding
+                        - name: Método TrimLeft
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-trimleft
+                        - name: Método TrimRight
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-trimright
+                        - name: Método UnlockBuffer
+                          href: /windows/desktop/api/ChString/nf-chstring-chstring-unlockbuffer
+                - name: CHStringArray
+                  href: /windows/desktop/api/ChStrArr/nl-chstrarr-chstringarray
+                  items:
+                    - name: Métodos CHStringArray
+                      href: chstringarray-methods.md
+                      items:
+                        - name: Método Add
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-add
+                        - name: Método append
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-append
+                        - name: Método CHStringArray
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-chstringarray
+                        - name: Método Copy
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-copy
+                        - name: Método ElementAt
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-elementat(int)
+                        - name: Método FreeExtra
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-freeextra
+                        - name: Método GetAt
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-getat(int)
+                        - name: Método GetData
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-getdata
+                        - name: Método GetSize
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-getsize
+                        - name: Método GetUpperBound
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-getupperbound
+                        - name: Métodos InsertAt
+                          href: insertat-method-in-class-chstringarray.md
+                          items:
+                            - name: 'Método InsertAt (int, CHStringArray *)'
+                              href: /windows/desktop/api/chstrarr/nf-chstrarr-chstringarray-insertat(int_chstringarray)
+                            - name: 'Método InsertAt (int, LPCWSTR, int)'
+                              href: /previous-versions/windows/desktop/legacy/aa385383(v=vs.85)
+                        - name: 'CHStringArray:: operator [ '
+                          href: chstringarray--operator-brackets.md
+                        - name: Método RemoveAll
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-removeall
+                        - name: Método RemoveAt
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-removeat
+                        - name: Método SetAt
+                          href: /windows/desktop/api/chstrarr/nf-chstrarr-chstringarray-setat(int_lpcwstr)
+                        - name: Método SetAtGrow
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-setatgrow
+                        - name: Método setSize
+                          href: /windows/desktop/api/ChStrArr/nf-chstrarr-chstringarray-setsize
+                - name: CObjectPathParser
+                  href: /windows/desktop/api/ObjPath/nl-objpath-cobjectpathparser
+                  items:
+                    - name: Enumerações CObjectPathParser
+                      href: cobjectpathparser-enumerations.md
+                      items:
+                        - name: ObjectParserFlags
+                          href: /windows/desktop/api/Objpath/ne-objpath-objectparserflags
+                    - name: Métodos CObjectPathParser
+                      href: cobjectpathparser-methods.md
+                      items:
+                        - name: Método CObjectPathParser
+                          href: /windows/desktop/api/ObjPath/nf-objpath-cobjectpathparser-cobjectpathparser
+                        - name: Métodos gratuitos
+                          href: cobjectpathparser--free.md
+                          items:
+                            - name: Método gratuito (LPWSTR)
+                              href: /windows/desktop/api/ObjPath/nf-objpath-cobjectpathparser-free(lpwstr)
+                            - name: Método Free (ParsedObjectPath *)
+                              href: /windows/desktop/api/objpath/nf-objpath-cobjectpathparser-free(parsedobjectpath)
+                        - name: método Parse
+                          href: /windows/desktop/api/ObjPath/nf-objpath-cobjectpathparser-parse
+                        - name: Método de não análise
+                          href: /windows/desktop/api/ObjPath/nf-objpath-cobjectpathparser-unparse
+                - name: MethodContext
+                  href: /windows/desktop/api/MethodCo/nl-methodco-methodcontext
+                  items:
+                    - name: Métodos MethodContext
+                      href: methodcontext-methods.md
+                      items:
+                        - name: Método getstatusobject
+                          href: /windows/desktop/api/MethodCo/nf-methodco-methodcontext-getstatusobject
+                        - name: Método setstatusobject
+                          href: /windows/desktop/api/MethodCo/nf-methodco-methodcontext-setstatusobject
+                - name: TRefPointerCollection
+                  href: /windows/desktop/api/RefPtrCo/nl-refptrco-trefpointercollection
+                  items:
+                    - name: Métodos TRefPointerCollection
+                      href: trefpointercollection-methods.md
+                      items:
+                        - name: Método Add
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-add
+                        - name: Método BeginEnum
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-beginenum
+                        - name: Método vazio
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-empty
+                        - name: Método endenum
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-endenum
+                        - name: Método GetNext
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-getnext
+                        - name: Método GetSize
+                          href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-getsize
+                        - name: Método TRefPointerCollection
+                          href: /windows/desktop/api/refptrco/nf-refptrco-trefpointercollection-trefpointercollection(consttrefpointercollection_)
+                - name: WBEMTime
+                  href: wbemtime.md
+                  items:
+                    - name: Métodos WBEMTime
+                      href: wbemtime-methods.md
+                      items:
+                        - name: Método Clear
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-clear
+                        - name: Método GetBSTR
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getbstr
+                        - name: Método GetDMTF
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getdmtf
+                        - name: Método GetDMTFNonNtfs
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getdmtfnonntfs
+                        - name: Método GetFileTime
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getfiletime
+                        - name: Métodos GetLocalOffsetForDate
+                          href: wbemtime--getlocaloffsetfordate.md
+                          items:
+                            - name: Método GetLocalOffsetForDate (constFILETIME *)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-getlocaloffsetfordate(constfiletime)
+                            - name: Método GetLocalOffsetForDate (conststruct TM *)
+                              href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-getlocaloffsetfordate(consttm)
+                            - name: Método GetLocalOffsetForDate (constSYSTEMTIME *)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-getlocaloffsetfordate(constsystemtime)
+                            - name: Método GetLocalOffsetForDate (consttime_t&)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-getlocaloffsetfordate(consttime_t_)
+                        - name: Método GetStructtm
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getstructtm
+                        - name: Método GetSystemTime
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getsystemtime
+                        - name: Método GetTime
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-gettime
+                        - name: Método de Gettime_t
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-gettime_t
+                        - name: Método IsOk
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-isok
+                        - name: operadores operador
+                          href: wbemtime--operator-minus.md
+                          items:
+                            - name: operador-(constWBEMTime&) método
+                              href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
+                            - name: operador-(constWBEMTimeSpan&) método
+                              href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-sub(constwbemtimespan_)
+                        - name: 'Método WBEMTime:: Operator! ='
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-not-equal-to
+                        - name: 'Método WBEMTime:: Operator <'
+                          href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-less-than
+                        - name: 'Método WBEMTime:: Operator <='
+                          href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-less-than-equal-to
+                        - name: 'Método WBEMTime:: Operator = ='
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-equal-equal-to
+                        - name: 'Método WBEMTime:: Operator >'
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-greater-than
+                        - name: 'Método WBEMTime:: Operator >='
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-greater-than-equal-to
+                        - name: operador + método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-add
+                        - name: operador + = método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-add-assign
+                        - name: operador = operadores
+                          href: wbemtime--operator-equal.md
+                          items:
+                            - name: operador = (constBSTR&) método
+                              href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-assign(constbstr)
+                            - name: operador = (constFILETIME&) método
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-assign(constfiletime_)
+                            - name: operador = (conststruct TM&) método
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-assign(consttm_)
+                            - name: operador = (constSYSTEMTIME&) método
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-assign(constsystemtime_)
+                            - name: operador = (consttime_t&) método
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-assign(consttime_t_)
+                        - name: operador-= método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-sub-assign
+                        - name: Método SetDMTF
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-setdmtf
+                        - name: Construtores WBEMTime
+                          href: wbemtime-wbemtime.md
+                          items:
+                            - name: Construtor WBEMTime ()
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(constbstr)
+                            - name: Construtor WBEMTime (BSTR)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(constbstr)
+                            - name: Construtor WBEMTime (conststruct TM&)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(consttm_)
+                            - name: Construtor WBEMTime (constFILETIME&)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(constfiletime_)
+                            - name: Construtor WBEMTime (constSYSTEMTIME&)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(constsystemtime_)
+                            - name: Construtor WBEMTime (consttime_t&)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-wbemtime(consttime_t_)
+                - name: WBEMTimeSpan
+                  href: /windows/desktop/api/WbemTime/nl-wbemtime-wbemtimespan
+                  items:
+                    - name: Métodos WBEMTimeSpan
+                      href: wbemtimespan-methods.md
+                      items:
+                        - name: Construtores WbemTimeSpan
+                          href: wbemtimespan-wbemtimespan.md
+                          items:
+                            - name: Construtor WBEMTimeSpan ()
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(constbstr)
+                            - name: Construtor WBEMTimeSpan (BSTR)
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(constbstr)
+                            - name: 'Construtor WBEMTimeSpan (int, int, int, int, int, int, int)'
+                              href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(int_int_int_int_int_int_int)
+                        - name: Método Clear
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtimespan-clear
+                        - name: Método GetBSTR
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtimespan-getbstr
+                        - name: Método GetTime
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtimespan-gettime
+                        - name: Método IsOk
+                          href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtimespan-isok
+                        - name: Operador= método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-assign(constfiletime_)
+                        - name: operador + método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-add
+                        - name: operador + = método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-add-assign
+                        - name: operador-método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-sub
+                        - name: operador-= método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-sub-assign
+                        - name: operador = = método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-equal-equal-to
+                        - name: operador! = método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-not-equal-to
+                        - name: método de > de operador
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than
+                        - name: operador >= método
+                          href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than-equal-to
+                        - name: método de < de operador
+                          href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than
+                        - name: operador <= método
+                          href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than-equal-to
+        - name: API COM para WMI
+          href: com-api-for-wmi.md
+          items:
+            - name: Interfaces de automação
+              href: automation-interfaces.md
+            - name: IEnumWbemClassObject
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject
+              items:
+                - name: Métodos IEnumWbemClassObject
+                  href: ienumwbemclassobject-methods.md
+                  items:
+                    - name: Método Clone
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-clone
+                    - name: Próximo método
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next
+                    - name: Método NextAsync
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-nextasync
+                    - name: Método Reset
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-reset
+                    - name: Método Skip
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-skip
+            - name: IMofCompiler
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler
+              items:
+                - name: Métodos IMofCompiler
+                  href: imofcompiler-methods.md
+                  items:
+                    - name: Método CompileBuffer
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-imofcompiler-compilebuffer
+                    - name: Método comcompilefile
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-imofcompiler-compilefile
+                    - name: Método CreateBMOF
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-imofcompiler-createbmof
+            - name: IUnsecuredApartment
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iunsecuredapartment
+              items:
+                - name: Métodos IUnsecuredApartment
+                  href: iunsecuredapartment-methods.md
+                  items:
+                    - name: Método CreateObjectStub
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iunsecuredapartment-createobjectstub
+            - name: IWbemBackupRestore
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestore
+              items:
+                - name: Métodos IWbemBackupRestore
+                  href: iwbembackuprestore-methods.md
+                  items:
+                    - name: Método de backup
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-backup
+                    - name: Método Restore
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-restore
+            - name: IWbemBackupRestoreEx
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestoreex
+              items:
+                - name: Métodos IWbemBackupRestoreEx
+                  href: iwbembackuprestoreex-methods.md
+                  items:
+                    - name: Método de backup
+                      href: /previous-versions/windows/desktop/legacy/aa391419(v=vs.85)
+                    - name: Método Restore
+                      href: /previous-versions/windows/desktop/legacy/aa391421(v=vs.85)
+                    - name: Método Pause
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestoreex-pause
+                    - name: Método Resume
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestoreex-resume
+            - name: IWbemCallResult
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemcallresult
+              items:
+                - name: Métodos IWbemCallResult
+                  href: iwbemcallresult-methods.md
+                  items:
+                    - name: Método GetCallStatus
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemcallresult-getcallstatus
+                    - name: Método getresultobject
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemcallresult-getresultobject
+                    - name: Método getresultservices
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemcallresult-getresultservices
+                    - name: Método getresultstring
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemcallresult-getresultstring
+            - name: IWbemCausalityAccess
+              href: iwbemcausalityaccess.md
+              items:
+                - name: Métodos IWbemCausalityAccess
+                  href: iwbemcausalityaccess-methods.md
+                  items:
+                    - name: Método getsolicitid
+                      href: iwbemcausalityaccess-getrequestid.md
+                    - name: Método IsChildOf
+                      href: iwbemcausalityaccess-ischildof.md
+            - name: IWbemClassObject
+              href: /windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject
+              items:
+                - name: Métodos IWbemClassObject
+                  href: iwbemclassobject-methods.md
+                  items:
+                    - name: Método BeginEnumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-beginenumeration
+                    - name: Método BeginMethodEnumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-beginmethodenumeration
+                    - name: Método Clone
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-clone
+                    - name: Método CompareTo
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-compareto
+                    - name: Método Delete
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-delete
+                    - name: Método DeleteMethod
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-deletemethod
+                    - name: Método endenumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-endenumeration
+                    - name: Método EndMethodEnumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-endmethodenumeration
+                    - name: método Get
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get
+                    - name: Método GetMethod
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getmethod
+                    - name: Método GetMethodOrigin
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getmethodorigin
+                    - name: Método GetMethodQualifierSet
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getmethodqualifierset
+                    - name: Método GetNames
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getnames
+                    - name: Método GetObjectText
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getobjecttext
+                    - name: Método GetPropertyOrigin
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getpropertyorigin
+                    - name: Método GetPropertyQualifierSet
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getpropertyqualifierset
+                    - name: Método getqualifierset
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getqualifierset
+                    - name: Método InheritsFrom
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-inheritsfrom
+                    - name: Próximo método
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-next
+                    - name: Método NextMethod
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-nextmethod
+                    - name: Método Put
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put
+                    - name: Método PutMethod
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-putmethod
+                    - name: Método SpawnDerivedClass
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawnderivedclass
+                    - name: Método SpawnInstance
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawninstance
+            - name: IWbemConfigureRefresher
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemconfigurerefresher
+              items:
+                - name: Métodos IWbemConfigureRefresher
+                  href: iwbemconfigurerefresher-methods.md
+                  items:
+                    - name: Método AddEnum
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addenum
+                    - name: Método AddObjectByPath
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addobjectbypath
+                    - name: Método AddObjectByTemplate
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addobjectbytemplate
+                    - name: Método addrefresh
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addrefresher
+                    - name: Método remove
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-remove
+            - name: IWbemContext
+              href: /windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext
+              items:
+                - name: Métodos IWbemContext
+                  href: iwbemcontext-methods.md
+                  items:
+                    - name: Método BeginEnumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-beginenumeration
+                    - name: Método Clone
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-clone
+                    - name: Método DeleteAll
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-deleteall
+                    - name: Método DeleteValue
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-deletevalue
+                    - name: Método endenumeration
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-endenumeration
+                    - name: Método GetNames
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-getnames
+                    - name: Método GetValue
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-getvalue
+                    - name: Próximo método
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-next
+                    - name: Método SetValue
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemcontext-setvalue
+            - name: IWbemDecoupledBasicEventProvider
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledbasiceventprovider
+              items:
+                - name: Métodos IWbemDecoupledBasicEventProvider
+                  href: iwbemdecoupledbasiceventprovider-methods.md
+                  items:
+                    - name: Método GetService
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getservice
+                    - name: Método getsink
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getsink
+                    - name: Método Register
+                      href: /previous-versions/windows/desktop/legacy/aa391480(v=vs.85)
+            - name: IWbemDecoupledRegistrar
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledregistrar
+              items:
+                - name: Métodos IWbemDecoupledRegistrar
+                  href: iwbemdecoupledregistrar-methods.md
+                  items:
+                    - name: Método Register
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register
+                    - name: Cancelar registro do método
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-unregister
+            - name: IWbemEventConsumerProvider
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventconsumerprovider
+              items:
+                - name: Métodos IWbemEventConsumerProvider
+                  href: iwbemeventconsumerprovider-methods.md
+                  items:
+                    - name: Método FindConsumer
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventconsumerprovider-findconsumer
+            - name: IWbemEventProvider
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovider
+              items:
+                - name: Métodos IWbemEventProvider
+                  href: iwbemeventprovider-methods.md
+                  items:
+                    - name: Método ProvideEvents
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventprovider-provideevents
+            - name: IWbemEventProviderQuerySink
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventproviderquerysink
+              items:
+                - name: Métodos IWbemEventProviderQuerySink
+                  href: iwbemeventproviderquerysink-methods.md
+                  items:
+                    - name: Método CancelQuery
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventproviderquerysink-cancelquery
+                    - name: Método NewQuery
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventproviderquerysink-newquery
+            - name: IWbemEventProviderSecurity
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovidersecurity
+              items:
+                - name: Métodos IWbemEventProviderSecurity
+                  href: iwbemeventprovidersecurity-methods.md
+                  items:
+                    - name: Método AccessCheck
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventprovidersecurity-accesscheck
+            - name: IWbemEventSink
+              href: iwbemeventsink.md
+              items:
+                - name: Métodos IWbemEventSink
+                  href: iwbemeventsink-methods.md
+                  items:
+                    - name: Método GetRestrictedSink
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-getrestrictedsink
+                    - name: Método IsActive
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-isactive
+                    - name: Método SetBatchingParameters
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-setbatchingparameters
+                    - name: Método SetSinkSecurity
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-setsinksecurity
+            - name: IWbemHiPerfEnum
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemhiperfenum
+              items:
+                - name: Métodos IWbemHiPerfEnum
+                  href: iwbemhiperfenum-methods.md
+                  items:
+                    - name: Método addobjects
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-addobjects
+                    - name: Método GetObjects
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects
+                    - name: Método RemoveAll
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-removeall
+                    - name: Método RemoveObjects
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-removeobjects
+            - name: IWbemHiPerfProvider
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemhiperfprovider
+              items:
+                - name: Métodos IWbemHiPerfProvider
+                  href: iwbemhiperfprovider-methods.md
+                  items:
+                    - name: Método CreateRefreshableEnum
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-createrefreshableenum
+                    - name: Método CreateRefreshableObject
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-createrefreshableobject
+                    - name: Método createrefresher
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-createrefresher
+                    - name: Método GetObjects
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-getobjects
+                    - name: Método QueryInstances
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-queryinstances
+                    - name: Método StopRefreshing
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-stoprefreshing
+            - name: IWbemLocator
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator
+              items:
+                - name: Métodos IWbemLocator
+                  href: iwbemlocator-methods.md
+                  items:
+                    - name: Método ConnectServer
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver
+            - name: IWbemObjectAccess
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess
+              items:
+                - name: Métodos IWbemObjectAccess
+                  href: iwbemobjectaccess-methods.md
+                  items:
+                    - name: Método GetPropertyHandle
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle
+                    - name: Método GetPropertyInfoByHandle
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyinfobyhandle
+                    - name: Método Lock
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-lock
+                    - name: Método ReadDWORD
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-readdword
+                    - name: Método ReadPropertyValue
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-readpropertyvalue
+                    - name: Método ReadQWORD
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-readqword
+                    - name: Método Unlock
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-unlock
+                    - name: Método WriteDWORD
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-writedword
+                    - name: Método WritePropertyValue
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-writepropertyvalue
+                    - name: Método WriteQWORD
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-writeqword
+            - name: IWbemObjectSink
+              href: iwbemobjectsink.md
+              items:
+                - name: Métodos IWbemObjectSink
+                  href: iwbemobjectsink-methods.md
+                  items:
+                    - name: Indique o método
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate
+                    - name: Método SetStatus
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus
+            - name: IWbemObjectSinkEx
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectsinkex
+              items:
+                - name: Métodos IWbemObjectSinkEx
+                  href: iwbemobjectsinkex-methods.md
+                  items:
+                    - name: Método PromptUser
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsinkex-promptuser
+                    - name: Método WriteError
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsinkex-writeerror
+                    - name: Método WriteMessage
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsinkex-writemessage
+                    - name: Método WriteProgress
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsinkex-writeprogress
+                    - name: Método WriteStreamParameter
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsinkex-writestreamparameter
+            - name: IWbemObjectTextSrc
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc
+              items:
+                - name: Métodos IWbemObjectTextSrc
+                  href: iwbemobjecttextsrc-methods.md
+                  items:
+                    - name: Método GetText
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext
+            - name: IWbemPath
+              href: /windows/desktop/api/Wmiutils/nn-wmiutils-iwbempath
+              items:
+                - name: Métodos IWbemPath
+                  href: iwbempath-methods.md
+                  items:
+                    - name: Método CreateClassPart
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-createclasspart
+                    - name: Método DeleteClassPart
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-deleteclasspart
+                    - name: Método GetClassName
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getclassname
+                    - name: Método GetInfo
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getinfo
+                      items:
+                        - name: tag_WBEM_PATH_STATUS_FLAG
+                          href: /windows/desktop/api/WMIUtils/ne-wmiutils-tag_wbem_path_status_flag
+                    - name: Método GetKeyList
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getkeylist
+                    - name: Método GetNamespaceAt
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getnamespaceat
+                    - name: Método GetNamespaceCount
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getnamespacecount
+                    - name: Método GetScope
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscope
+                    - name: Método GetScopeAsText
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscopeastext
+                    - name: Método GetScopeCount
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscopecount
+                    - name: Método GetServer
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getserver
+                    - name: Método GetText
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-gettext
+                      items:
+                        - name: tag_WBEM_GET_TEXT_FLAGS
+                          href: /windows/desktop/api/WMIUtils/ne-wmiutils-tag_wbem_get_text_flags
+                    - name: Método IsLocal
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-islocal
+                    - name: Método isrelativo
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-isrelative
+                    - name: Método IsRelativeOrChild
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-isrelativeorchild
+                    - name: Método IsSameClassName
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-issameclassname
+                    - name: Método RemoveAllNamespaces
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-removeallnamespaces
+                    - name: Método RemoveAllScopes
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-removeallscopes
+                    - name: Método RemoveNamespaceAt
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-removenamespaceat
+                    - name: Método RemoveScope
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-removescope
+                    - name: Método setclassidname
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-setclassname
+                    - name: Método SetNamespaceAt
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-setnamespaceat
+                    - name: Método setscope
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-setscope
+                    - name: Método SetServer
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-setserver
+                    - name: Método SetText
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-settext
+                      items:
+                        - name: tag_WBEM_PATH_CREATE_FLAG
+                          href: /windows/desktop/api/WMIUtils/ne-wmiutils-tag_wbem_path_create_flag
+            - name: IWbemPathKeyList
+              href: /windows/desktop/api/Wmiutils/nn-wmiutils-iwbempathkeylist
+              items:
+                - name: Métodos IWbemPathKeyList
+                  href: iwbempathkeylist-methods.md
+                  items:
+                    - name: Método GetCount
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-getcount
+                    - name: Método GetInfo
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-getinfo
+                    - name: Método GetKey
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-getkey
+                    - name: Método GetKey2
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-getkey2
+                    - name: Método GetText
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-gettext
+                      items:
+                        - name: tag_WBEM_GET_KEY_FLAGS
+                          href: /windows/desktop/api/WMIUtils/ne-wmiutils-tag_wbem_get_key_flags
+                    - name: Método MakeSingleton
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-makesingleton
+                    - name: Método RemoveAllKeys
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-removeallkeys
+                    - name: Método RemoveKey
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-removekey
+                    - name: Método SetKey
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-setkey
+                    - name: Método SetKey2
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbempathkeylist-setkey2
+            - name: IWbemPropertyProvider
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbempropertyprovider
+              items:
+                - name: Métodos IWbemPropertyProvider
+                  href: iwbempropertyprovider-methods.md
+                  items:
+                    - name: Método GetProperty
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbempropertyprovider-getproperty
+                    - name: Método PutProperty
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbempropertyprovider-putproperty
+            - name: IWbemProviderIdentity
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemprovideridentity
+              items:
+                - name: Métodos IWbemProviderIdentity
+                  href: iwbemprovideridentity-methods.md
+                  items:
+                    - name: Método setregistrationobject
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemprovideridentity-setregistrationobject
+            - name: IWbemProviderInit
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit
+              items:
+                - name: Métodos IWbemProviderInit
+                  href: iwbemproviderinit-methods.md
+                  items:
+                    - name: Método Initialize
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize
+            - name: IWbemProviderInitSink
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinitsink
+              items:
+                - name: Métodos IWbemProviderInitSink
+                  href: iwbemproviderinitsink-methods.md
+                  items:
+                    - name: Método SetStatus
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinitsink-setstatus
+            - name: IWbemQualifierSet
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemqualifierset
+              items:
+                - name: Métodos IWbemQualifierSet
+                  href: iwbemqualifierset-methods.md
+                  items:
+                    - name: Método BeginEnumeration
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-beginenumeration
+                    - name: Método Delete
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-delete
+                    - name: Método endenumeration
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration
+                    - name: método Get
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-get
+                    - name: Método GetNames
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-getnames
+                    - name: Próximo método
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-next
+                    - name: Método Put
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-put
+            - name: IWbemQuery
+              href: /windows/desktop/api/Wmiutils/nn-wmiutils-iwbemquery
+              items:
+                - name: Métodos IWbemQuery
+                  href: iwbemquery-methods.md
+                  items:
+                    - name: Método vazio
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbemquery-empty
+                    - name: Método FreeMemory
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbemquery-freememory
+                    - name: Método getanalysis
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbemquery-getanalysis
+                      items:
+                        - name: SWbemAssocQueryInf
+                          href: /windows/win32/api/Wmiutils/ns-wmiutils-swbemassocqueryinf
+                          items:
+                            - name: WMIQ_ASSOCQ_FLAGS
+                              href: /windows/win32/api/WMIUtils/ne-wmiutils-wmiq_assocq_flags
+                        - name: SWbemQueryQualifiedName
+                          href: /windows/win32/api/Wmiutils/ns-wmiutils-swbemqueryqualifiedname
+                        - name: SWbemRpnEncodedQuery
+                          href: /windows/win32/api/Wmiutils/ns-wmiutils-swbemrpnencodedquery
+                        - name: SWbemRpnConst
+                          href: /windows/win32/api/Wmiutils/ns-wmiutils-swbemrpnquerytoken
+                        - name: SWbemRpnQueryToken
+                          href: /windows/win32/api/Wmiutils/ns-wmiutils-swbemrpnquerytoken
+                          items:
+                            - name: WMIQ_RPN_TOKEN_FLAGS
+                              href: /windows/win32/api/WMIUtils/ne-wmiutils-wmiq_rpn_token_flags
+                        - name: WMIQ_ANALYSIS_TYPE
+                          href: /windows/win32/api/WMIUtils/ne-wmiutils-wmiq_analysis_type
+                    - name: método Parse
+                      href: /windows/desktop/api/Wmiutils/nf-wmiutils-iwbemquery-parse
+            - name: IWbemRefresher
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher
+              items:
+                - name: Métodos IWbemRefresher
+                  href: iwbemrefresher-methods.md
+                  items:
+                    - name: Método Refresh
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh
+            - name: IWbemServices
+              href: /windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices
+              items:
+                - name: Métodos de IWbemServices
+                  href: iwbemservices-methods.md
+                  items:
+                    - name: Método CancelAsyncCall
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall
+                    - name: Método CreateClassEnum
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenum
+                    - name: Método CreateClassEnumAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync
+                    - name: Método de CreateInstanceEnum
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenum
+                    - name: Método CreateInstanceEnumAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync
+                    - name: Método DeleteClass
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclass
+                    - name: Método DeleteClassAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclassasync
+                    - name: Método DeleteInstance
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstance
+                    - name: Método DeleteInstanceAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstanceasync
+                    - name: Método ExecMethod
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethod
+                    - name: Método ExecMethodAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethodasync
+                    - name: Método ExecNotificationQuery
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery
+                    - name: Método ExecNotificationQueryAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync
+                    - name: Método ExecQuery
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery
+                    - name: Método ExecQueryAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync
+                    - name: Método GetObject
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject
+                    - name: Método GetObjectAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync
+                    - name: Método OpenNamespace
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-opennamespace
+                    - name: Método PutClass
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass
+                    - name: Método PutClassAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclassasync
+                    - name: Método PutInstance
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstance
+                    - name: Método PutInstanceAsync
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync
+                    - name: Método QueryObjectSink
+                      href: /windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-queryobjectsink
+            - name: IWbemShutdown
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemshutdown
+              items:
+                - name: Métodos IWbemShutdown
+                  href: iwbemshutdown-methods.md
+                  items:
+                    - name: Método Shutdown
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemshutdown-shutdown
+            - name: IWbemStatusCodeText
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemstatuscodetext
+              items:
+                - name: Métodos IWbemStatusCodeText
+                  href: iwbemstatuscodetext-methods.md
+                  items:
+                    - name: Método GetErrorCodeText
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemstatuscodetext-geterrorcodetext
+                    - name: Método GetFacilityCodeText
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemstatuscodetext-getfacilitycodetext
+            - name: IWbemUnboundObjectSink
+              href: /windows/desktop/api/Wbemprov/nn-wbemprov-iwbemunboundobjectsink
+              items:
+                - name: Métodos IWbemUnboundObjectSink
+                  href: iwbemunboundobjectsink-methods.md
+                  items:
+                    - name: Método IndicateToConsumer
+                      href: /windows/desktop/api/Wbemprov/nf-wbemprov-iwbemunboundobjectsink-indicatetoconsumer
+            - name: IWbemUnsecuredApartment
+              href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemunsecuredapartment
+              items:
+                - name: Métodos IWbemUnsecuredApartment
+                  href: iwbemunsecuredapartment-methods.md
+                  items:
+                    - name: Método CreateSinkStub
+                      href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemunsecuredapartment-createsinkstub
+        - name: API de script para WMI
+          href: scripting-api-for-wmi.md
+          items:
+            - name: Modelo de objeto de API de script
+              href: scripting-api-object-model.md
+            - name: Convenções de documento para a API de script
+              href: document-conventions-for-the-scripting-api.md
+            - name: Constantes de API de script
+              href: scripting-api-constants.md
+              items:
+                - name: WbemAuthenticationLevelEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemauthenticationlevelenum
+                - name: WbemChangeFlagEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemchangeflagenum
+                - name: WbemCimTypeEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemcimtypeenum
+                - name: WbemComparisonFlagEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemcomparisonflagenum
+                - name: WbemConnectOptionsEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemconnectoptionsenum
+                - name: WbemErrorEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum
+                - name: WbemFlagEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemflagenum
+                - name: WbemImpersonationLevelEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemimpersonationlevelenum
+                - name: WbemObjectTextFormatEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum
+                - name: WbemPrivilegeEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum
+                - name: WbemQueryFlagEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemqueryflagenum
+                - name: WbemTextFlagEnum
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemtextflagenum
+                - name: WbemTimeout
+                  href: /windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemtimeout
+            - name: Objetos de API de script
+              href: scripting-api-objects.md
+              items:
+                - name: SWbemDateTime
+                  href: swbemdatetime.md
+                  items:
+                    - name: Métodos SWbemDateTime
+                      href: swbemdatetime-methods.md
+                      items:
+                        - name: Método GetFileTime
+                          href: swbemdatetime-getfiletime.md
+                        - name: Método GetVarDate
+                          href: swbemdatetime-getvardate.md
+                        - name: Método SetFileTime
+                          href: swbemdatetime-setfiletime.md
+                        - name: Método SetVarDate
+                          href: swbemdatetime-setvardate.md
+                    - name: Propriedades de SWbemDateTime
+                      href: swbemdatetime-properties.md
+                      items:
+                        - name: Propriedade Day
+                          href: swbemdatetime-day.md
+                        - name: Propriedade DaySpecified
+                          href: swbemdatetime-dayspecified.md
+                        - name: Propriedade hours
+                          href: swbemdatetime-hours.md
+                        - name: Propriedade HoursSpecified
+                          href: swbemdatetime-hoursspecified.md
+                        - name: Propriedade isinterval
+                          href: swbemdatetime-isinterval.md
+                        - name: Propriedade de microssegundos
+                          href: swbemdatetime-microseconds.md
+                        - name: Propriedade MicrosecondsSpecified
+                          href: swbemdatetime-microsecondsspecified.md
+                        - name: Propriedade Minutes
+                          href: swbemdatetime-minutes.md
+                        - name: Propriedade MinutesSpecified
+                          href: swbemdatetime-minutesspecified.md
+                        - name: Propriedade month
+                          href: swbemdatetime-month.md
+                        - name: Propriedade MonthSpecified
+                          href: swbemdatetime-monthspecified.md
+                        - name: Propriedade Seconds
+                          href: swbemdatetime-seconds.md
+                        - name: Propriedade SecondsSpecified
+                          href: swbemdatetime-secondsspecified.md
+                        - name: Propriedade UTC
+                          href: swbemdatetime-utc.md
+                        - name: Propriedade UTCSpecified
+                          href: swbemdatetime-utcspecified.md
+                        - name: Propriedade Value
+                          href: swbemdatetime-value.md
+                        - name: Propriedade year
+                          href: swbemdatetime-year.md
+                        - name: Propriedade YearSpecified
+                          href: swbemdatetime-yearspecified.md
+                - name: SWbemEventSource
+                  href: swbemeventsource.md
+                  items:
+                    - name: Métodos SWbemEventSource
+                      href: swbemeventsource-methods.md
+                      items:
+                        - name: Método NextEvent
+                          href: swbemeventsource-nextevent.md
+                    - name: Propriedades de SWbemEventSource
+                      href: swbemeventsource-properties.md
+                      items:
+                        - name: Propriedade Security_
+                          href: swbemeventsource-security-.md
+                - name: SWbemLastError
+                  href: swbemlasterror.md
+                  items:
+                    - name: Métodos SWbemLastError
+                      href: swbemlasterror-methods.md
+                      items:
+                        - name: Método de Clone_
+                          href: swbemlasterror-clone-.md
+                        - name: Método de CompareTo_
+                          href: swbemlasterror-compareto-.md
+                        - name: Método de GetObjectText_
+                          href: swbemlasterror-getobjecttext-.md
+                    - name: Propriedades de SWbemLastError
+                      href: swbemlasterror-properties.md
+                      items:
+                        - name: Propriedade Path_
+                          href: swbemlasterror-path-.md
+                        - name: Propriedade Properties_
+                          href: swbemlasterror-properties-.md
+                - name: SWbemLocator
+                  href: swbemlocator.md
+                  items:
+                    - name: Métodos SWbemLocator
+                      href: swbemlocator-methods.md
+                      items:
+                        - name: Método ConnectServer
+                          href: swbemlocator-connectserver.md
+                    - name: Propriedades de SWbemLocator
+                      href: swbemlocator-properties.md
+                      items:
+                        - name: Propriedade Security_
+                          href: swbemlocator-security-.md
+                - name: SWbemMethod
+                  href: swbemmethod.md
+                  items:
+                    - name: Propriedades de SWbemMethod
+                      href: swbemmethod-properties.md
+                      items:
+                        - name: Propriedade Parameters
+                          href: swbemmethod-inparameters.md
+                        - name: Propriedade Name
+                          href: swbemmethod-name.md
+                        - name: Propriedade Origin
+                          href: swbemmethod-origin.md
+                        - name: Propriedade Parameters
+                          href: swbemmethod-outparameters.md
+                        - name: Propriedade Qualifiers_
+                          href: swbemmethod-qualifiers-.md
+                - name: SWbemMethodSet
+                  href: swbemmethodset.md
+                  items:
+                    - name: Métodos SWbemMethodSet
+                      href: swbemmethodset-methods.md
+                      items:
+                        - name: método Item
+                          href: swbemmethodset-item.md
+                    - name: Propriedades de SWbemMethodSet
+                      href: swbemmethodset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbemmethodset-count.md
+                - name: SWbemNamedValue
+                  href: swbemnamedvalue.md
+                  items:
+                    - name: Propriedades de SWbemNamedValue
+                      href: swbemnamedvalue-properties.md
+                      items:
+                        - name: Propriedade Name
+                          href: swbemnamedvalue-name.md
+                        - name: Propriedade Value
+                          href: swbemnamedvalue-value.md
+                - name: SWbemNamedValueSet
+                  href: swbemnamedvalueset.md
+                  items:
+                    - name: Métodos SWbemNamedValueSet
+                      href: swbemnamedvalueset-methods.md
+                      items:
+                        - name: Método Add
+                          href: swbemnamedvalueset-add.md
+                        - name: Método Clone
+                          href: swbemnamedvalueset-clone.md
+                        - name: Método DeleteAll
+                          href: swbemnamedvalueset-deleteall.md
+                        - name: método Item
+                          href: swbemnamedvalueset-item.md
+                        - name: Método remove
+                          href: swbemnamedvalueset-remove.md
+                    - name: Propriedades de SWbemNamedValueSet
+                      href: swbemnamedvalueset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbemnamedvalueset-count.md
+                - name: SWbemObject
+                  href: swbemobject.md
+                  items:
+                    - name: Métodos SWbemObject
+                      href: swbemobject-methods.md
+                      items:
+                        - name: Método de Associators_
+                          href: swbemobject-associators-.md
+                        - name: Método de AssociatorsAsync_
+                          href: swbemobject-associatorsasync-.md
+                        - name: Método de Clone_
+                          href: swbemobject-clone-.md
+                        - name: Método de CompareTo_
+                          href: swbemobject-compareto-.md
+                        - name: Método de Delete_
+                          href: swbemobject-delete-.md
+                        - name: Método de DeleteAsync_
+                          href: swbemobject-deleteasync-.md
+                        - name: Método de ExecMethod_
+                          href: swbemobject-execmethod-.md
+                        - name: Método de ExecMethodAsync_
+                          href: swbemobject-execmethodasync-.md
+                        - name: Método de GetObjectText_
+                          href: swbemobject-getobjecttext-.md
+                        - name: Método de Instances_
+                          href: swbemobject-instances-.md
+                        - name: Método de InstancesAsync_
+                          href: swbemobject-instancesasync-.md
+                        - name: Método de Put_
+                          href: swbemobject-put-.md
+                        - name: Método de PutAsync_
+                          href: swbemobject-putasync-.md
+                        - name: Método de References_
+                          href: swbemobject-references-.md
+                        - name: Método de ReferencesAsync_
+                          href: swbemobject-referencesasync-.md
+                        - name: Método de SpawnDerivedClass_
+                          href: swbemobject-spawnderivedclass-.md
+                        - name: Método de SpawnInstance_
+                          href: swbemobject-spawninstance-.md
+                        - name: Método de Subclasses_
+                          href: swbemobject-subclasses-.md
+                        - name: Método de SubclassesAsync_
+                          href: swbemobject-subclassesasync-.md
+                    - name: Propriedades SWbemObject
+                      href: swbemobject-properties.md
+                      items:
+                        - name: Propriedade Derivation_
+                          href: swbemobject-derivation-.md
+                        - name: Propriedade Methods_
+                          href: swbemobject-methods-.md
+                        - name: Propriedade Path_
+                          href: swbemobject-path-.md
+                        - name: Propriedade Properties_
+                          href: swbemobject-properties-.md
+                        - name: Propriedade Qualifiers_
+                          href: swbemobject-qualifiers-.md
+                        - name: Propriedade Security_
+                          href: swbemobject-security-.md
+                - name: SWbemObjectEx
+                  href: swbemobjectex.md
+                  items:
+                    - name: Métodos SWbemObjectEx
+                      href: swbemobjectex-methods.md
+                      items:
+                        - name: Método de GetText_
+                          href: swbemobjectex-gettext-.md
+                        - name: Método de Refresh_
+                          href: swbemobjectex-refresh-.md
+                    - name: Propriedades de SWbemObjectEx
+                      href: swbemobjectex-properties.md
+                      items:
+                        - name: Propriedade SystemProperties_
+                          href: swbemobjectex-systemproperties-.md
+                - name: SWbemObjectPath
+                  href: swbemobjectpath.md
+                  items:
+                    - name: Métodos SWbemObjectPath
+                      href: swbemobjectpath-methods.md
+                      items:
+                        - name: Método SetAsSingleton
+                          href: swbemobjectpath-setassingleton.md
+                    - name: Propriedades de SWbemObjectPath
+                      href: swbemobjectpath-properties.md
+                      items:
+                        - name: Propriedade Authority
+                          href: swbemobjectpath-authority.md
+                        - name: Propriedade de classe
+                          href: swbemobjectpath-class.md
+                        - name: Propriedade DisplayName
+                          href: swbemobjectpath-displayname.md
+                        - name: Propriedade IsClass
+                          href: swbemobjectpath-isclass.md
+                        - name: Propriedade IsSingleton
+                          href: swbemobjectpath-issingleton.md
+                        - name: Propriedade Keys
+                          href: swbemobjectpath-keys.md
+                        - name: Propriedade locale
+                          href: swbemobjectpath-locale.md
+                        - name: Propriedade namespace
+                          href: swbemobjectpath-namespace.md
+                        - name: Propriedade ParentNamespace
+                          href: swbemobjectpath-parentnamespace.md
+                        - name: Propriedade de caminho
+                          href: swbemobjectpath-path.md
+                        - name: Propriedade RelPath
+                          href: swbemobjectpath-relpath.md
+                        - name: Propriedade Security_
+                          href: swbemobjectpath-security-.md
+                        - name: Propriedade do servidor
+                          href: swbemobjectpath-server.md
+                        - name: Propriedade SetAsClass
+                          href: swbemobjectpath-setasclass.md
+                - name: SWbemObjectSet
+                  href: swbemobjectset.md
+                  items:
+                    - name: Métodos SWbemObjectSet
+                      href: swbemobjectset-methods.md
+                      items:
+                        - name: método Item
+                          href: swbemobjectset-item.md
+                        - name: Método ItemIndex
+                          href: swbemobjectset-itemindex.md
+                    - name: Propriedades de SWbemObjectSet
+                      href: swbemobjectset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbemobjectset-count.md
+                        - name: Propriedade Security_
+                          href: swbemobjectset-security-.md
+                - name: SWbemPrivilege
+                  href: swbemprivilege.md
+                  items:
+                    - name: Propriedades de SWbemPrivilege
+                      href: swbemprivilege-properties.md
+                      items:
+                        - name: Propriedade DisplayName
+                          href: swbemprivilege-displayname.md
+                        - name: Propriedade do identificador
+                          href: swbemprivilege-identifier.md
+                        - name: Propriedade IsEnabled
+                          href: swbemprivilege-isenabled.md
+                        - name: Propriedade Name
+                          href: swbemprivilege-name.md
+                - name: SWbemPrivilegeSet
+                  href: swbemprivilegeset.md
+                  items:
+                    - name: Métodos SWbemPrivilegeSet
+                      href: swbemprivilegeset-methods.md
+                      items:
+                        - name: Método Add
+                          href: swbemprivilegeset-add.md
+                        - name: Método AddAsString
+                          href: swbemprivilegeset-addasstring.md
+                        - name: Método DeleteAll
+                          href: swbemprivilegeset-deleteall.md
+                        - name: método Item
+                          href: swbemprivilegeset-item.md
+                        - name: Método remove
+                          href: swbemprivilegeset-remove.md
+                    - name: Propriedades de SWbemPrivilegeSet
+                      href: swbemprivilegeset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbemprivilegeset-count.md
+                - name: SWbemProperty
+                  href: swbemproperty.md
+                  items:
+                    - name: Propriedades de SWbemProperty
+                      href: swbemproperty-properties.md
+                      items:
+                        - name: Propriedade CIMType
+                          href: swbemproperty-cimtype.md
+                        - name: Propriedade IsArray
+                          href: swbemproperty-isarray.md
+                        - name: Propriedade IsLocal
+                          href: swbemproperty-islocal.md
+                        - name: Propriedade Name
+                          href: swbemproperty-name.md
+                        - name: Propriedade Origin
+                          href: swbemproperty-origin.md
+                        - name: Propriedade Qualifiers_
+                          href: swbemproperty-qualifiers-.md
+                        - name: Propriedade Value
+                          href: swbemproperty-value.md
+                - name: SWbemPropertySet
+                  href: swbempropertyset.md
+                  items:
+                    - name: Métodos SWbemPropertySet
+                      href: swbempropertyset-methods.md
+                      items:
+                        - name: Método Add
+                          href: swbempropertyset-add.md
+                        - name: método Item
+                          href: swbempropertyset-item.md
+                        - name: Método remove
+                          href: swbempropertyset-remove.md
+                    - name: Propriedades de SWbemPropertySet
+                      href: swbempropertyset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbempropertyset-count.md
+                - name: SWbemQualifier
+                  href: swbemqualifier.md
+                  items:
+                    - name: Propriedades de SWbemQualifier
+                      href: swbemqualifier-properties.md
+                      items:
+                        - name: Propriedade isemendada
+                          href: swbemqualifier-isamended.md
+                        - name: Propriedade IsLocal
+                          href: swbemqualifier-islocal.md
+                        - name: Propriedade PropagatesToInstance
+                          href: swbemqualifier-propagatestoinstance.md
+                        - name: Propriedade PropagatesToSubClass
+                          href: swbemqualifier-propagatestosubclass.md
+                        - name: Propriedade Value
+                          href: swbemqualifier-value.md
+                        - name: Propriedade Name
+                          href: swbemqualifier-name.md
+                        - name: Propriedade IsOverridable
+                          href: swbemqualifier-isoverridable.md
+                - name: SWbemQualifierSet
+                  href: swbemqualifierset.md
+                  items:
+                    - name: Métodos SWbemQualifierSet
+                      href: swbemqualifierset-methods.md
+                      items:
+                        - name: Método Add
+                          href: swbemqualifierset-add.md
+                        - name: método Item
+                          href: swbemqualifierset-item.md
+                        - name: Método remove
+                          href: swbemqualifierset-remove.md
+                    - name: Propriedades de SWbemQualifierSet
+                      href: swbemqualifierset-properties.md
+                      items:
+                        - name: Propriedade Count
+                          href: swbemqualifierset-count.md
+                - name: SWbemRefreshableItem
+                  href: swbemrefreshableitem.md
+                  items:
+                    - name: Métodos SWbemRefreshableItem
+                      href: swbemrefreshableitem-methods.md
+                      items:
+                        - name: Método remove
+                          href: swbemrefreshableitem-remove.md
+                    - name: Propriedades de SWbemRefreshableItem
+                      href: swbemrefreshableitem-properties.md
+                      items:
+                        - name: Propriedade Index
+                          href: swbemrefreshableitem-index.md
+                        - name: Propriedade IsSet
+                          href: swbemrefreshableitem-isset.md
+                        - name: Propriedade do objeto
+                          href: swbemrefreshableitem-object.md
+                        - name: Propriedade ObjectSet
+                          href: swbemrefreshableitem-objectset.md
+                        - name: Propriedade do atualizador
+                          href: swbemrefreshableitem-refresher.md
+                - name: SWbemRefresher
+                  href: swbemrefresher.md
+                  items:
+                    - name: Métodos SWbemRefresher
+                      href: swbemrefresher-methods.md
+                      items:
+                        - name: Método Add
+                          href: swbemrefresher-add.md
+                        - name: Método AddEnum
+                          href: swbemrefresher-addenum.md
+                        - name: Método DeleteAll
+                          href: swbemrefresher-deleteall.md
+                        - name: método Item
+                          href: swbemrefresher-item.md
+                        - name: Método Refresh
+                          href: swbemrefresher-refresh.md
+                        - name: Método remove
+                          href: swbemrefresher-remove.md
+                    - name: Propriedades de SWbemRefresher
+                      href: swbemrefresher-properties.md
+                      items:
+                        - name: Propriedade falha
+                          href: swbemrefresher-autoreconnect.md
+                        - name: Propriedade Count
+                          href: swbemrefresher-count.md
+                - name: SWbemSecurity
+                  href: swbemsecurity.md
+                  items:
+                    - name: Propriedades de SWbemSecurity
+                      href: swbemsecurity-properties.md
+                      items:
+                        - name: Propriedade AuthenticationLevel
+                          href: swbemsecurity-authenticationlevel.md
+                        - name: Propriedade ImpersonationLevel
+                          href: swbemsecurity-impersonationlevel.md
+                        - name: Propriedade Privileges
+                          href: swbemsecurity-privileges.md
+                - name: SWbemServices
+                  href: swbemservices.md
+                  items:
+                    - name: Métodos SWbemServices
+                      href: swbemservices-methods.md
+                      items:
+                        - name: Método AssociatorsOf
+                          href: swbemservices-associatorsof.md
+                        - name: Método AssociatorsOfAsync
+                          href: swbemservices-associatorsofasync.md
+                        - name: Método Delete
+                          href: swbemservices-delete.md
+                        - name: Método DeleteAsync
+                          href: swbemservices-deleteasync.md
+                        - name: Método ExecMethod
+                          href: swbemservices-execmethod.md
+                        - name: Método ExecMethodAsync
+                          href: swbemservices-execmethodasync.md
+                        - name: Método ExecNotificationQuery
+                          href: swbemservices-execnotificationquery.md
+                        - name: Método ExecNotificationQueryAsync
+                          href: swbemservices-execnotificationqueryasync.md
+                        - name: Método ExecQuery
+                          href: swbemservices-execquery.md
+                        - name: Método ExecQueryAsync
+                          href: swbemservices-execqueryasync.md
+                        - name: método Get
+                          href: swbemservices-get.md
+                        - name: Método getasync
+                          href: swbemservices-getasync.md
+                        - name: Método InstancesOf
+                          href: swbemservices-instancesof.md
+                        - name: Método InstancesOfAsync
+                          href: swbemservices-instancesofasync.md
+                        - name: Método References
+                          href: swbemservices-referencesto.md
+                        - name: Método ReferencesToAsync
+                          href: swbemservices-referencestoasync.md
+                        - name: Método SubclassesOf
+                          href: swbemservices-subclassesof.md
+                        - name: Método SubclassesOfAsync
+                          href: swbemservices-subclassesofasync.md
+                    - name: Propriedades de SWbemServices
+                      href: swbemservices-properties.md
+                      items:
+                        - name: Propriedade Security_
+                          href: swbemservices-security-.md
+                - name: SWbemServicesEx
+                  href: swbemservicesex.md
+                  items:
+                    - name: Métodos SWbemServicesEx
+                      href: swbemservicesex-methods.md
+                      items:
+                        - name: Método Put
+                          href: swbemservicesex-put.md
+                        - name: Método PutAsync
+                          href: swbemservicesex-putasync.md
+                - name: SWbemSink
+                  href: swbemsink.md
+                  items:
+                    - name: Eventos de SWbemSink
+                      href: swbemsink-events.md
+                      items:
+                        - name: Evento OnCompleted
+                          href: swbemsink-oncompleted.md
+                        - name: Evento OnObjectPut
+                          href: swbemsink-onobjectput.md
+                        - name: Evento OnObjectReady
+                          href: swbemsink-onobjectready.md
+                        - name: Evento OnProgress
+                          href: swbemsink-onprogress.md
+                    - name: Métodos SWbemSink
+                      href: swbemsink-methods.md
+                      items:
+                        - name: Método Cancel
+                          href: swbemsink-cancel.md
+        - name: WMI e SNMP
+          href: snmp-provider.md
+          items:
+            - name: Macro do tipo de notificação
+              href: notification-type-macro.md
+              items:
+                - name: Cláusula OBJECTs
+                  href: objects-clause.md
+                - name: SnmpExtendedNotification
+                  href: snmpextendednotification.md
+                - name: SnmpNotification
+                  href: snmpnotification.md
+            - name: Macro de tipo de objeto
+              href: object-type-macro.md
+              items:
+                - name: Propriedades do sistema CIM para objetos MIB
+                  href: cim-system-properties-for-mib-objects.md
+                - name: Qualificadores de classe CIM para objetos MIB
+                  href: cim-class-qualifiers-for-mib-objects.md
+                - name: Qualificadores de propriedade CIM para objetos MIB
+                  href: cim-property-qualifiers-for-mib-objects.md
+                - name: Coleções SNMP
+                  href: snmp-collections.md
+                - name: Cláusula de sintaxe
+                  href: syntax-clause.md
+                - name: Cláusula de índice
+                  href: index-clause.md
+                - name: Cláusulas ACCESS e MAX-ACCESS
+                  href: access-and-max-access-clauses.md
+            - name: Macro de Convenção TEXTUAL
+              href: textual-convention-macro.md
+            - name: Macro do tipo INTERCEPTAção
+              href: trap-type-macro.md
+            - name: Eventos SNMP
+              href: snmp-events.md
+            - name: Mensagens de erro do compilador SNMP
+              href: snmp-compiler-error-messages.md
+              items:
+                - name: Erros 101 a 110
+                  href: errors-101-through-110.md
+                - name: Erros 201 a 210
+                  href: errors-201-through-210.md
+                - name: Erros 211 a 220
+                  href: errors-211-through-220.md
+                - name: Erros 221 a 230
+                  href: errors-221-through-230.md
+                - name: Erros 231 a 240
+                  href: errors-231-through-240.md
+                - name: Erros 281 a 290
+                  href: errors-281-through-290.md
+                - name: Erros 1001 a 1010
+                  href: errors-1001-through-1010.md
+                - name: Erros 1011 a 1020
+                  href: errors-1011-through-1020.md
+                - name: Erros 1021 a 1030
+                  href: errors-1021-through-1030.md
+                - name: Erros 1031 a 1040
+                  href: errors-1031-through-1040.md
+                - name: Erros 1041 a 1050
+                  href: errors-1041-through-1050.md
+                - name: Erros 1051 a 1060
+                  href: errors-1051-through-1060.md
+                - name: Erros 1061 a 1070
+                  href: errors-1061-through-1070.md
+                - name: Erros 1071 a 1080
+                  href: errors-1071-through-1080.md
+                - name: Erros 1081 a 1090
+                  href: errors-1081-through-1090.md
+                - name: Erros 1091 a 1100
+                  href: errors-1091-through-1100.md
+                - name: Erros 1101 a 1110
+                  href: errors-1101-through-1110.md
+                - name: Erros 1451 a 1460
+                  href: errors-1451-through-1460.md
+                - name: Erros 1501 a 1510
+                  href: errors-1501-through-1510.md
+            - name: Mensagens de informações gerais
+              href: general-information-messages.md
+        - name: WMI e SQL
+          href: wmi-and-sql.md
+          items:
+            - name: WQL (de SQL WMI)
+              href: wql-sql-for-wmi.md
+              items:
+                - name: ASSOCIADOres de instrução
+                  href: associators-of-statement.md
+                - name: Identificador de __CLASS
+                  href: '--class-identifier.md'
+                - name: Cláusula GROUP
+                  href: group-clause.md
+                - name: Cláusula HAVING
+                  href: having-clause.md
+                - name: REFERÊNCIAS da instrução
+                  href: references-of-statement.md
+                - name: ONDE cláusula
+                  href: where-clause.md
+                  items:
+                    - name: Formatos de data WQL-Supported
+                      href: wql-supported-date-formats.md
+                    - name: Formatos de hora WQL-Supported
+                      href: wql-supported-time-formats.md
+                - name: Cláusula WITHIN
+                  href: within-clause.md
+                - name: Operadores WQL
+                  href: wql-operators.md
+                  items:
+                    - name: Operador LIKE
+                      href: like-operator.md
+        - name: Arquivos de log do WMI
+          href: wmi-log-files.md
+          items:
+            - name: Arquivos de log do provedor WMI
+              href: wmi-provider-log-files.md
+        - name: Ferramentas de linha de comando do WMI
+          href: wmi-command-line-tools.md
+          items:
+            - name: Mofcomp
+              href: mofcomp.md
+            - name: smi2smir
+              href: smi2smir.md
+            - name: winmgmt
+              href: winmgmt.md
+            - name: Wmiadap
+              href: wmiadap.md
+            - name: wmic
+              href: wmic.md
+        - name: Objetos e valores de infraestrutura do WMI
+          href: wmi-infrastructure-objects-and-values.md
+          items:
+            - name: Tipos de dados WMI
+              href: wmi-data-types.md
+            - name: Enumerações do WMI
+              href: wmi-enumerations.md
+              items:
+                - name: CIMTYPE_ENUMERATION
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-cimtype_enumeration
+                - name: WBEM_BACKUP_RESTORE_FLAGS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_backup_restore_flags
+                - name: WBEM_CHANGE_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_change_flag_type
+                - name: WBEM_COMPARISON_FLAG
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_comparison_flag
+                - name: WBEM_COMPILE_STATUS_INFO
+                  href: /windows/win32/api/Wbemcli/ns-wbemcli-wbem_compile_status_info
+                - name: WBEM_COMPILER_OPTIONS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_compiler_options
+                - name: WBEM_CONDITION_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_condition_flag_type
+                - name: WBEM_CONNECT_OPTIONS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_connect_options
+                - name: WBEM_FLAVOR_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_flavor_type
+                - name: WBEM_GENERIC_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_generic_flag_type
+                - name: WBEM_GENUS_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_genus_type
+                - name: WBEM_LIMITS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_limits
+                - name: WBEM_QUERY_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_query_flag_type
+                - name: WBEM_REFRESHER_FLAGS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_refresher_flags
+                - name: WBEM_SECURITY_FLAGS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_security_flags
+                - name: WBEM_STATUS_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_status_type
+                - name: WBEM_TEXT_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_text_flag_type
+                - name: WBEM_TIMEOUT_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_timeout_type
+                - name: WBEM_UNSECAPP_FLAG_TYPE
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbem_unsecapp_flag_type
+                - name: WBEMSTATUS
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wbemstatus
+                - name: WMI_OBJ_TEXT
+                  href: /windows/win32/api/Wbemcli/ne-wbemcli-wmi_obj_text
+            - name: Tipos de dados MOF
+              href: mof-data-types.md
+              items:
+                - name: Qualificadores BitMap e bitvalue
+                  href: bitmap-and-bitvalues.md
+                - name: booleano
+                  href: boolean.md
+                - name: DATETIME
+                  href: datetime.md
+                - name: Matrizes MOF
+                  href: mof-arrays.md
+                - name: Números
+                  href: numbers.md
+                - name: OBJECT
+                  href: object.md
+                - name: Referências
+                  href: references.md
+                - name: Cadeias de caracteres
+                  href: strings.md
+                - name: Qualificadores de valor e ValueMap
+                  href: value-map.md
+                - name: LIVRE
+                  href: void.md
+                - name: Comandos de pré-processador
+                  href: preprocessor-commands.md
+                  items:
+                    - name: '#include'
+                      href: '-include.md'
+                    - name: '#pragma'
+                      href: '-pragma.md'
+                      items:
+                        - name: alteração de pragma
+                          href: pragma-amendment.md
+                        - name: pragma AutoRecuperação
+                          href: pragma-autorecover.md
+                        - name: pragma classflags
+                          href: pragma-classflags.md
+                        - name: pragma DeleteClass
+                          href: pragma-deleteclass.md
+                        - name: pragma deleteinstance
+                          href: pragma-deleteinstance.md
+                        - name: pragma instanceflags
+                          href: pragma-instanceflags.md
+                        - name: namespace de pragma
+                          href: pragma-namespace.md
+            - name: Eventos WMI
+              href: wmi-events.md
+              items:
+                - name: Mensagens de evento WMI
+                  href: wmi-event-messages.md
+            - name: Tipos de contador de desempenho WMI
+              href: wmi-performance-counter-types.md
+              items:
+                - name: Tipos de contador base
+                  href: base-counter-types.md
+                - name: Tipos de contador de algoritmos básicos
+                  href: basic-algorithm-counter-types.md
+                - name: Tipos de contadores de algoritmo de contador
+                  href: counter-algorithm-counter-types.md
+                - name: Tipos de contadores não computacionais
+                  href: noncomputational-counter-types.md
+                - name: Tipos de contadores de algoritmo de timer de precisão
+                  href: precision-timer-algorithm-counter-types.md
+                - name: Tipos de contadores de algoritmo de comprimento de fila
+                  href: queue-length-algorithm-counter-types.md
+                - name: Tipos de contadores estatísticos
+                  href: statistical-counter-types.md
+                  items:
+                    - name: COOKER_AVERAGE
+                      href: cooker-average.md
+                    - name: COOKER_MAX
+                      href: cooker-max.md
+                    - name: COOKER_MIN
+                      href: cooker-min.md
+                    - name: COOKER_RANGE
+                      href: cooker-range.md
+                    - name: COOKER_VARIANCE
+                      href: cooker-variance.md
+                - name: Tipos de contadores de algoritmo de temporizador
+                  href: timer-algorithm-counter-types.md
+            - name: Qualificadores WMI
+              href: wmi-qualifiers.md
+              items:
+                - name: Metaqualificadores
+                  href: meta-qualifiers.md
+                - name: Qualificadores opcionais
+                  href: optional-qualifiers.md
+                - name: Tipos de qualificadores
+                  href: qualifier-flavors.md
+                - name: Qualificadores padrão
+                  href: standard-qualifiers.md
+                  items:
+                    - name: Qualificador de chave
+                      href: key-qualifier.md
+                - name: Qualificadores de WMI-Specific
+                  href: wmi-specific-qualifiers.md
+                  items:
+                    - name: Qualificadores WMI padrão
+                      href: standard-wmi-qualifiers.md
+                      items:
+                        - name: Qualificador CIMType
+                          href: cimtype-qualifier.md
+                        - name: Qualificador dinâmico
+                          href: dynamic-qualifier.md
+                    - name: Qualificadores específicos para o provedor SNMP
+                      href: qualifiers-specific-to-the-snmp-provider.md
+                    - name: Qualificadores específicos para o provedor de exibição
+                      href: qualifiers-specific-to-the-view-provider.md
+                      items:
+                        - name: Qualificador PostJoinFilter
+                          href: postjoinfilter-qualifier.md
+                        - name: Qualificador PropertySources
+                          href: propertysources-qualifier.md
+                        - name: Qualificador ViewSources
+                          href: viewsources-qualifier.md
+                        - name: Qualificador ViewSpaces
+                          href: viewspaces-qualifier.md
+                    - name: Qualificadores específicos para o provedor WDM
+                      href: qualifiers-specific-to-the-wdm-provider.md
+                    - name: Qualificadores específicos para classes de desempenho WMI
+                      href: qualifiers-specific-to-wmi-performance-classes.md
+                      items:
+                        - name: Qualificadores de classe para classes de contador de desempenho
+                          href: class-qualifiers-for-performance-counter-classes.md
+                        - name: Qualificador de tipo
+                          href: countertype-qualifier.md
+                        - name: Qualificador PerfDetail
+                          href: perfdetail-qualifier.md
+                        - name: Qualificadores de propriedade para classes de contador de desempenho
+                          href: property-qualifiers-for-performance-counter-classes.md
+            - name: Códigos de retorno do WMI
+              href: wmi-return-codes.md
+              items:
+                - name: Constantes de erro WMI
+                  href: wmi-error-constants.md
+                - name: Constantes de não erro do WMI
+                  href: wmi-non-error-constants.md
+            - name: Segurança do WMI
+              href: wmi-security.md
+              items:
+                - name: Constantes de segurança do WMI
+                  href: wmi-security-constants.md
+                  items:
+                    - name: Constantes de segurança de evento
+                      href: event-security-constants.md
+                    - name: Constantes de direitos de acesso de arquivo e diretório
+                      href: file-and-directory-access-rights-constants.md
+                    - name: Constantes de direitos de acesso de namespace
+                      href: namespace-access-rights-constants.md
+                    - name: Constantes do sinalizador ACE do namespace
+                      href: namespace-ace-flag-constants.md
+                    - name: Constantes de tipo de ACE de namespace
+                      href: namespace-ace-type-constants.md
+                    - name: Constantes de privilégio
+                      href: privilege-constants.md
+                - name: Objetos do descritor de segurança do WMI
+                  href: wmi-security-descriptor-objects.md
+            - name: Propriedades do sistema WMI
+              href: wmi-system-properties.md
+        - name: Referência gerenciada para classes de comando WMI do Windows PowerShell
+          href: managed-reference-for-wmi-powershell-command-classes.md
+    - name: Glossário do WMI
+      href: wmi-glossary.md
+      items:
+        - name: Um
+          href: gloss-a.md
+        - name: C
+          href: gloss-c.md
+        - name: D
+          href: gloss-d.md
+        - name: E
+          href: gloss-e.md
+        - name: F
+          href: gloss-f.md
+        - name: H
+          href: gloss-h.md
+        - name: I
+          href: gloss-i.md
+        - name: K
+          href: gloss-k.md
+        - name: L
+          href: gloss-l.md
+        - name: M
+          href: gloss-m.md
+        - name: 'N'
+          href: gloss-n.md
+        - name: O
+          href: gloss-o.md
+        - name: P
+          href: gloss-p.md
+        - name: Q
+          href: gloss-q.md
+        - name: R
+          href: gloss-r.md
+        - name: S
+          href: gloss-s.md
+        - name: T
+          href: gloss-t.md
+        - name: W
+          href: gloss-w.md
+    - name: API gerenciada da infraestrutura de gerenciamento
+      items:
+        - name: Método CimInstance. SetCimSessionComputerName
+          href: mi-managed-api\microsoft.management.infrastructure.ciminstance.setcimsessioncomputername.md
+        - name: Classe CimMofDeserializer
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.md
+        - name: Método CimMofDeserializer. Create ()
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.create.md
+        - name: 'Método CimMofDeserializer. Create (cadeia de caracteres, UInt32)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.create_string_uint.md
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint.md
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass))'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass.md
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass), OnClassNeeded, GetIncludedFileContent)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass2.md
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass), String, String, OnClassNeeded, GetIncludedFileContent)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass3.md
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint.md
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32, OnClassNeeded, GetIncludedFileContent)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint2.md
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32, IEnumerable (CimClass), OnClassNeeded, GetIncludedFileContent)'
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint3.md
+        - name: Propriedade CimMofDeserializer. SchemaValidationOption
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.schemavalidationoption.md
+        - name: Delegado CimMofDeserializer. GetIncludedFileContent
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.getincludedfilecontent.md
+        - name: Delegado CimMofDeserializer. OnClassNeeded
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.onclassneeded.md
+        - name: Enumeração MofDeserializerSchemaValidationOption
+          href: mi-managed-api\microsoft.management.infrastructure.serialization.mofdeserializerschemavalidationoption.md
