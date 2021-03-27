@@ -1,0 +1,1114 @@
+- name: API de mestre de imagem
+  href: portal.md
+  items:
+    - name: What's New
+      href: what-s-new.md
+    - name: Sobre o IMAPi
+      href: about-imapi.md
+      items:
+        - name: Formatos de disco
+          href: disc-formats.md
+    - name: Usando o IMAPi
+      href: using-imapi.md
+      items:
+        - name: Verificando o suporte à unidade
+          href: checking-drive-support.md
+        - name: Verificando o suporte de mídia
+          href: checking-media-support.md
+        - name: Adicionando uma imagem de inicialização
+          href: adding-a-boot-image.md
+        - name: Gravando uma imagem de disco
+          href: burning-a-disc.md
+        - name: Criando um disco de várias sessões
+          href: creating-a-multisession-disc.md
+        - name: Progresso do monitoramento com eventos
+          href: monitoring-progress-with-events.md
+        - name: Impedindo o logoff ou a suspensão durante uma gravação
+          href: preventing-logoff-or-suspend-during-a-burn.md
+        - name: Fornecendo permissões de usuário para dispositivos de gravação de mídia
+          href: providing-user-permissions-for-media-burning-devices.md
+        - name: Layout de várias sessões do IMAPi
+          href: imapi-multisession-layout.md
+    - name: Referência de IMAPi
+      href: imapi-reference.md
+      items:
+        - name: Interfaces IMAPi
+          href: imapi-interfaces.md
+          items:
+            - name: DDiscFormat2DataEvents
+              href: /windows/desktop/api/imapi2/nn-imapi2-ddiscformat2dataevents
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscformat2dataevents-update
+            - name: DDiscFormat2EraseEvents
+              href: /windows/desktop/api/imapi2/nn-imapi2-ddiscformat2eraseevents
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscformat2eraseevents-update
+            - name: DDiscFormat2RawCDEvents
+              href: /windows/desktop/api/imapi2/nn-imapi2-ddiscformat2rawcdevents
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscformat2rawcdevents-update
+            - name: DDiscFormat2TrackAtOnceEvents
+              href: /windows/desktop/api/imapi2/nn-imapi2-ddiscformat2trackatonceevents
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscformat2trackatonceevents-update
+            - name: DDiscMaster2Events
+              href: /windows/desktop/api/imapi2/nn-imapi2-ddiscmaster2events
+              items:
+                - name: Método NotifyDeviceAdded
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscmaster2events-notifydeviceadded
+                - name: Método NotifyDeviceRemoved
+                  href: /windows/desktop/api/imapi2/nf-imapi2-ddiscmaster2events-notifydeviceremoved
+            - name: DFileSystemImageEvents
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-dfilesystemimageevents
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-dfilesystemimageevents-update
+            - name: DFileSystemImageImportEvents
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-dfilesystemimageimportevents
+              items:
+                - name: Método UpdateImport
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-dfilesystemimageimportevents-updateimport
+            - name: DWriteEngine2Events
+              href: /windows/desktop/api/imapi2/nn-imapi2-dwriteengine2events
+              items:
+                - name: Método Update
+                  href: /windows/desktop/api/imapi2/nf-imapi2-dwriteengine2events-update
+            - name: IBlockRange
+              href: /windows/desktop/api/imapi2/nn-imapi2-iblockrange
+              items:
+                - name: Método de get_StartLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iblockrange-get_startlba
+                - name: Método de get_EndLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iblockrange-get_endlba
+            - name: IBlockRangeList
+              href: /windows/desktop/api/imapi2/nn-imapi2-iblockrangelist
+              items:
+                - name: Método de get_BlockRanges
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iblockrangelist-get_blockranges
+            - name: IBootOptions
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ibootoptions
+              items:
+                - name: Método AssignBootImage
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-assignbootimage
+                - name: Método de get_BootImage
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-get_bootimage
+                - name: Método de get_Emulation
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-get_emulation
+                - name: Método de get_ImageSize
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-get_imagesize
+                - name: Método de get_Manufacturer
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-get_manufacturer
+                - name: Método de get_PlatformId
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-get_platformid
+                - name: Método de put_Emulation
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-put_emulation
+                - name: Método de put_Manufacturer
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-put_manufacturer
+                - name: Método de put_PlatformId
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ibootoptions-put_platformid
+            - name: IBurnVerification
+              href: /windows/desktop/api/imapi2/nn-imapi2-iburnverification
+              items:
+                - name: Método de get_BurnVerificationLevel
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iburnverification-get_burnverificationlevel
+                - name: Método de put_BurnVerificationLevel
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iburnverification-put_burnverificationlevel
+            - name: IDiscFormat2
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2
+              items:
+                - name: Método IsCurrentMediaSupported
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2-iscurrentmediasupported
+                - name: Método IsRecorderSupported
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2-isrecordersupported
+                - name: Método de get_MediaHeuristicallyBlank
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2-get_mediaheuristicallyblank
+                - name: Método de get_MediaPhysicallyBlank
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2-get_mediaphysicallyblank
+                - name: Método de get_SupportedMediaTypes
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2-get_supportedmediatypes
+            - name: IDiscFormat2Data
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2data
+              items:
+                - name: Método CancelWrite
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-cancelwrite
+                - name: Método de get_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_bufferunderrunfreedisabled
+                - name: Método de get_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_clientname
+                - name: Método de get_CurrentMediaStatus
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_currentmediastatus
+                - name: Método de get_CurrentPhysicalMediaType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_currentphysicalmediatype
+                - name: Método de get_CurrentRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_currentrotationtypeispurecav
+                - name: Método de get_CurrentWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_currentwritespeed
+                - name: Método de get_DisableConsumerDvdCompatibilityMode
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_disableconsumerdvdcompatibilitymode
+                - name: Método de get_ForceMediaToBeClosed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_forcemediatobeclosed
+                - name: Método de get_ForceOverwrite
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_forceoverwrite
+                - name: Método de get_FreeSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_freesectorsonmedia
+                - name: Método de get_LastWrittenAddressOfPreviousSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_lastwrittenaddressofprevioussession
+                - name: Método de get_MultisessionInterfaces
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_multisessioninterfaces
+                - name: Método de get_NextWritableAddress
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_nextwritableaddress
+                - name: Método de get_PostgapAlreadyInImage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_postgapalreadyinimage
+                - name: Método de get_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_recorder
+                - name: Método de get_RequestedRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_requestedrotationtypeispurecav
+                - name: Método de get_RequestedWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_requestedwritespeed
+                - name: Método de get_StartAddressOfPreviousSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_startaddressofprevioussession
+                - name: Método de get_SupportedWriteSpeedDescriptors
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_supportedwritespeeddescriptors
+                - name: Método de get_SupportedWriteSpeeds
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_supportedwritespeeds
+                - name: Método de get_TotalSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_totalsectorsonmedia
+                - name: Método de get_WriteProtectStatus
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-get_writeprotectstatus
+                - name: Método de put_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_bufferunderrunfreedisabled
+                - name: Método de put_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_clientname
+                - name: Método de put_DisableConsumerDvdCompatibilityMode
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_disableconsumerdvdcompatibilitymode
+                - name: Método de put_ForceMediaToBeClosed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_forcemediatobeclosed
+                - name: Método de put_ForceOverwrite
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_forceoverwrite
+                - name: Método de put_PostgapAlreadyInImage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_postgapalreadyinimage
+                - name: Método de put_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_recorder
+                - name: Método SetWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-setwritespeed
+                - name: Método Write
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-write
+            - name: IDiscFormat2DataEventArgs
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2dataeventargs
+              items:
+                - name: Método de get_CurrentAction
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2dataeventargs-get_currentaction
+                - name: Método de get_ElapsedTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2dataeventargs-get_elapsedtime
+                - name: Método de get_RemainingTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2dataeventargs-get_remainingtime
+                - name: Método de get_TotalTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2dataeventargs-get_totaltime
+            - name: IDiscFormat2Erase
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2erase
+              items:
+                - name: Método EraseMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-erasemedia
+                - name: Método de get_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-get_clientname
+                - name: Método de get_CurrentPhysicalMediaType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-get_currentphysicalmediatype
+                - name: Método de get_FullErase
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-get_fullerase
+                - name: Método de get_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-get_recorder
+                - name: Método de put_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-put_clientname
+                - name: Método de put_FullErase
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-put_fullerase
+                - name: Método de put_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2erase-put_recorder
+            - name: IDiscFormat2RawCD
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2rawcd
+              items:
+                - name: Método CancelWrite
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-cancelwrite
+                - name: Método de get_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_bufferunderrunfreedisabled
+                - name: Método de get_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_clientname
+                - name: Método de get_CurrentPhysicalMediaType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_currentphysicalmediatype
+                - name: Método de get_CurrentRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_currentrotationtypeispurecav
+                - name: Método de get_CurrentWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_currentwritespeed
+                - name: Método de get_LastPossibleStartOfLeadout
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_lastpossiblestartofleadout
+                - name: Método de get_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_recorder
+                - name: Método de get_RequestedSectorType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_requestedsectortype
+                - name: Método de get_RequestedRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_requestedrotationtypeispurecav
+                - name: Método de get_RequestedWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_requestedwritespeed
+                - name: Método de get_StartOfNextSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_startofnextsession
+                - name: Método de get_SupportedSectorTypes
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_supportedsectortypes
+                - name: Método de get_SupportedWriteSpeedDescriptors
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_supportedwritespeeddescriptors
+                - name: Método de get_SupportedWriteSpeeds
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-get_supportedwritespeeds
+                - name: Método PrepareMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-preparemedia
+                - name: Método de put_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-put_bufferunderrunfreedisabled
+                - name: Método de put_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-put_clientname
+                - name: Método de put_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-put_recorder
+                - name: Método de put_RequestedSectorType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-put_requestedsectortype
+                - name: Método ReleaseMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-releasemedia
+                - name: Método SetWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-setwritespeed
+                - name: Método WriteMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-writemedia
+                - name: Método WriteMedia2
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcd-writemedia2
+            - name: IDiscFormat2RawCDEventArgs
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2rawcdeventargs
+              items:
+                - name: Método de get_CurrentAction
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcdeventargs-get_currentaction
+                - name: Método de get_ElapsedTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcdeventargs-get_elapsedtime
+                - name: Método de get_RemainingTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2rawcdeventargs-get_remainingtime
+            - name: IDiscFormat2TrackAtOnce
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2trackatonce
+              items:
+                - name: Método AddAudioTrack
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-addaudiotrack
+                - name: Método CancelAddTrack
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-canceladdtrack
+                - name: Método de get_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_bufferunderrunfreedisabled
+                - name: Método de get_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_clientname
+                - name: Método de get_CurrentPhysicalMediaType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_currentphysicalmediatype
+                - name: Método de get_CurrentRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_currentrotationtypeispurecav
+                - name: Método de get_CurrentWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_currentwritespeed
+                - name: Método de get_DoNotFinalizeMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_donotfinalizemedia
+                - name: Método de get_ExpectedTableOfContents
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_expectedtableofcontents
+                - name: Método de get_FreeSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_freesectorsonmedia
+                - name: Método de get_NumberOfExistingTracks
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_numberofexistingtracks
+                - name: Método de get_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_recorder
+                - name: Método de get_RequestedRotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_requestedrotationtypeispurecav
+                - name: Método de get_RequestedWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_requestedwritespeed
+                - name: Método de get_SupportedWriteSpeedDescriptors
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_supportedwritespeeddescriptors
+                - name: Método de get_SupportedWriteSpeeds
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_supportedwritespeeds
+                - name: Método de get_TotalSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_totalsectorsonmedia
+                - name: Método de get_UsedSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-get_usedsectorsonmedia
+                - name: Método PrepareMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-preparemedia
+                - name: Método de put_BufferUnderrunFreeDisabled
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-put_bufferunderrunfreedisabled
+                - name: Método de put_ClientName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-put_clientname
+                - name: Método de put_DoNotFinalizeMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-put_donotfinalizemedia
+                - name: Método de put_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-put_recorder
+                - name: Método ReleaseMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-releasemedia
+                - name: Método SetWriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonce-setwritespeed
+            - name: IDiscFormat2TrackAtOnceEventArgs
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscformat2trackatonceeventargs
+              items:
+                - name: Método de get_CurrentAction
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonceeventargs-get_currentaction
+                - name: Método de get_CurrentTrackNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonceeventargs-get_currenttracknumber
+                - name: Método de get_ElapsedTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonceeventargs-get_elapsedtime
+                - name: Método de get_RemainingTime
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscformat2trackatonceeventargs-get_remainingtime
+            - name: IDiscMaster2
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscmaster2
+              items:
+                - name: Método de get__NewEnum
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscmaster2-get__newenum
+                - name: Método de get_Count
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscmaster2-get_count
+                - name: Método de get_IsSupportedEnvironment
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscmaster2-get_issupportedenvironment
+                - name: Método de get_Item
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscmaster2-get_item
+            - name: IDiscRecorder2
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscrecorder2
+              items:
+                - name: Método AcquireExclusiveAccess
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-acquireexclusiveaccess
+                - name: Método CloseTray
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-closetray
+                - name: Método DisableMcn
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-disablemcn
+                - name: Método EjectMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-ejectmedia
+                - name: Método EnableMcn
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-enablemcn
+                - name: Método de get_ActiveDiscRecorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_activediscrecorder
+                - name: Método de get_CurrentFeaturePages
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_currentfeaturepages
+                - name: Método de get_CurrentProfiles
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_currentprofiles
+                - name: Método de get_DeviceCanLoadMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_devicecanloadmedia
+                - name: Método de get_ExclusiveAccessOwner
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_exclusiveaccessowner
+                - name: Método de get_LegacyDeviceNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_legacydevicenumber
+                - name: Método de get_ProductId
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_productid
+                - name: Método de get_ProductRevision
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_productrevision
+                - name: Método de get_SupportedFeaturePages
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_supportedfeaturepages
+                - name: Método de get_SupportedModePages
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_supportedmodepages
+                - name: Método de get_SupportedProfiles
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_supportedprofiles
+                - name: Método de get_VendorId
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_vendorid
+                - name: Método de get_VolumeName
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_volumename
+                - name: Método de get_VolumePathNames
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-get_volumepathnames
+                - name: Método InitializeDiscRecorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-initializediscrecorder
+                - name: Método ReleaseExclusiveAccess
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2-releaseexclusiveaccess
+            - name: IDiscRecorder2Ex
+              href: /windows/desktop/api/imapi2/nn-imapi2-idiscrecorder2ex
+              items:
+                - name: Método GetAdapterDescriptor
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getadapterdescriptor
+                - name: Método GetByteAlignmentMask
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getbytealignmentmask
+                - name: Método GetDeviceDescriptor
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getdevicedescriptor
+                - name: Método GetDiscInformation
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getdiscinformation
+                - name: Método GetFeaturePage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getfeaturepage
+                - name: Método GetMaximumNonPageAlignedTransferSize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getmaximumnonpagealignedtransfersize
+                - name: Método GetMaximumPageAlignedTransferSize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getmaximumpagealignedtransfersize
+                - name: Método GetModePage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getmodepage
+                - name: Método GetSupportedFeaturePages
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getsupportedfeaturepages
+                - name: Método GetSupportedModePages
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getsupportedmodepages
+                - name: Método GetSupportedProfiles
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-getsupportedprofiles
+                - name: Método GetTrackInformation
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-gettrackinformation
+                - name: Método ReadDvdStructure
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-readdvdstructure
+                - name: Método SendCommandGetDataFromDevice
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-sendcommandgetdatafromdevice
+                - name: Método SendCommandNoData
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-sendcommandnodata
+                - name: Método SendCommandSendDataToDevice
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-sendcommandsenddatatodevice
+                - name: Método SendDvdStructure
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-senddvdstructure
+                - name: Método SetModePage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-idiscrecorder2ex-setmodepage
+            - name: IEnumFsiItems
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ienumfsiitems
+              items:
+                - name: Método Clone
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumfsiitems-clone
+                - name: Método Next
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumfsiitems-next
+                - name: Método RemoteNext
+                  href: ienumfsiitems-remotenext.md
+                - name: Método Reset
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumfsiitems-reset
+                - name: Método Skip
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumfsiitems-skip
+            - name: IEnumProgressItems
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ienumprogressitems
+              items:
+                - name: Método Clone
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumprogressitems-clone
+                - name: Método Next
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumprogressitems-next
+                - name: Método RemoteNext
+                  href: ienumprogressitems-remotenext.md
+                - name: Método Reset
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumprogressitems-reset
+                - name: Método Skip
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ienumprogressitems-skip
+            - name: IFileSystemImage
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage
+              items:
+                - name: Método CalculateDiscIdentifier
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-calculatediscidentifier
+                - name: Método ChooseImageDefaults
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-chooseimagedefaults
+                - name: Método ChooseImageDefaultsForMediaType
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-chooseimagedefaultsformediatype
+                - name: Método CreateDirectoryItem
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createdirectoryitem
+                - name: Método CreateFileItem
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createfileitem
+                - name: Método CreateResultImage
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createresultimage
+                - name: Método Exists
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-exists
+                - name: Método de get_BootImageOptions
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_bootimageoptions
+                - name: Método de get_ChangePoint
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_changepoint
+                - name: Método de get_DirectoryCount
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_directorycount
+                - name: Método de get_FileCount
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_filecount
+                - name: Método de get_FileSystemsSupported
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_filesystemssupported
+                - name: Método de get_FileSystemsToCreate
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_filesystemstocreate
+                - name: Método de get_FreeMediaBlocks
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_freemediablocks
+                - name: Método de get_ImportedVolumeName
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_importedvolumename
+                - name: Método de get_ISO9660InterchangeLevel
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_iso9660interchangelevel
+                - name: Método de get_ISO9660InterchangeLevelsSupported
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_iso9660interchangelevelssupported
+                - name: Método de get_MultisessionInterfaces
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_multisessioninterfaces
+                - name: Método de get_Root
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_root
+                - name: Método de get_SessionStartBlock
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_sessionstartblock
+                - name: Método de get_StageFiles
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_stagefiles
+                - name: Método de get_StrictFileSystemCompliance
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_strictfilesystemcompliance
+                - name: Método de get_UDFRevision
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_udfrevision
+                - name: Método de get_UDFRevisionsSupported
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_udfrevisionssupported
+                - name: Método de get_UsedBlocks
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_usedblocks
+                - name: Método de get_UseRestrictedCharacterSet
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_userestrictedcharacterset
+                - name: Método de get_VolumeName
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_volumename
+                - name: Método de get_VolumeNameISO9660
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_volumenameiso9660
+                - name: Método de get_VolumeNameJoliet
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_volumenamejoliet
+                - name: Método de get_VolumeNameUDF
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_volumenameudf
+                - name: Método de get_WorkingDirectory
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_workingdirectory
+                - name: Método GetDefaultFileSystemForImport
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-getdefaultfilesystemforimport
+                - name: Método IdentifyFileSystemsOnDisc
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-identifyfilesystemsondisc
+                - name: Método ImportFileSystem
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importfilesystem
+                - name: Método ImportSpecificFileSystem
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importspecificfilesystem
+                - name: Método LockInChangePoint
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-lockinchangepoint
+                - name: Método de put_BootImageOptions
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_bootimageoptions
+                - name: Método de put_FileSystemsToCreate
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_filesystemstocreate
+                - name: Método de put_FreeMediaBlocks
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_freemediablocks
+                - name: Método de put_ISO9660InterchangeLevel
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_iso9660interchangelevel
+                - name: Método de put_MultisessionInterfaces
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_multisessioninterfaces
+                - name: Método de put_SessionStartBlock
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_sessionstartblock
+                - name: Método de put_StageFiles
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_stagefiles
+                - name: Método de put_StrictFileSystemCompliance
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_strictfilesystemcompliance
+                - name: Método de put_UDFRevision
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_udfrevision
+                - name: Método de put_UseRestrictedCharacterSet
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_userestrictedcharacterset
+                - name: Método de put_VolumeName
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_volumename
+                - name: Método de put_WorkingDirectory
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_workingdirectory
+                - name: Método RollbackToChangePoint
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-rollbacktochangepoint
+                - name: Método SetMaxMediaBlocksFromDevice
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-setmaxmediablocksfromdevice
+            - name: IFileSystemImage2
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage2
+              items:
+                - name: Método de get_BootImageOptionsArray
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage2-get_bootimageoptionsarray
+                - name: Método de put_BootImageOptionsArray
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage2-put_bootimageoptionsarray
+            - name: IFileSystemImage3
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage3
+              items:
+                - name: Método de get_CreateRedundantUdfMetadataFiles
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage3-get_createredundantudfmetadatafiles
+                - name: Método de put_CreateRedundantUdfMetadataFiles
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage3-put_createredundantudfmetadatafiles
+                - name: Método ProbeSpecificFileSystem
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage3-probespecificfilesystem
+            - name: IFileSystemImageResult
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimageresult
+              items:
+                - name: Método de get_BlockSize
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult-get_blocksize
+                - name: Método de get_DiscId
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult-get_discid
+                - name: Método de get_ImageStream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult-get_imagestream
+                - name: Método de get_ProgressItems
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult-get_progressitems
+                - name: Método de get_TotalBlocks
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult-get_totalblocks
+            - name: IFileSystemImageResult2
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimageresult2
+              items:
+                - name: Método de get_ModifiedBlocks
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimageresult2-get_modifiedblocks
+            - name: IFsiDirectoryItem
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem
+              items:
+                - name: Adicionar método
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-add
+                - name: Método adddirectory
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-adddirectory
+                - name: Método AddFile
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-addfile
+                - name: Método addtree
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-addtree
+                - name: Método de get__NewEnum
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-get__newenum
+                - name: Método de get_Count
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-get_count
+                - name: Método de get_EnumFsiItems
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-get_enumfsiitems
+                - name: Método de get_Item
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-get_item
+                - name: Remover método
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-remove
+                - name: Método RemoveTree
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-removetree
+            - name: IFsiDirectoryItem2
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem2
+              items:
+                - name: Método AddTreeWithNamedStreams
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem2-addtreewithnamedstreams
+            - name: IFsiFileItem
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsifileitem
+              items:
+                - name: Método de get_Data
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem-get_data
+                - name: Método de get_DataSize
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem-get_datasize
+                - name: Método de get_DataSize32BitHigh
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem-get_datasize32bithigh
+                - name: Método de get_DataSize32BitLow
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem-get_datasize32bitlow
+                - name: Método de put_Data
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem-put_data
+            - name: IFsiFileItem2
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsifileitem2
+              items:
+                - name: Método de get_FsiNamedStreams
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-get_fsinamedstreams
+                - name: Método de get_IsNamedStream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-get_isnamedstream
+                - name: Método AddStream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-addstream
+                - name: Método RemoveStream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-removestream
+                - name: Método de get_IsRealTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-get_isrealtime
+                - name: Método de put_IsRealTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsifileitem2-put_isrealtime
+            - name: IFsiItem
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsiitem
+              items:
+                - name: Método de get_FileSystemName
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-filesystemname
+                - name: Método de get_FileSystemPath
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-filesystempath
+                - name: Método de get_CreationTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_creationtime
+                - name: Método de get_FullPath
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_fullpath
+                - name: Método de get_IsHidden
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_ishidden
+                - name: Método de get_LastAccessedTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_lastaccessedtime
+                - name: Método de get_LastModifiedTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_lastmodifiedtime
+                - name: Método de get_Name
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-get_name
+                - name: Método de put_CreationTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-put_creationtime
+                - name: Método de put_IsHidden
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-put_ishidden
+                - name: Método de put_LastAccessedTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-put_lastaccessedtime
+                - name: Método de put_LastModifiedTime
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsiitem-put_lastmodifiedtime
+            - name: IFsiNamedStreams
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-ifsinamedstreams
+              items:
+                - name: Método de get_NewEnum
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsinamedstreams-get__newenum
+                - name: Método de get_Item
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsinamedstreams-get_item
+                - name: Método de get_Count
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsinamedstreams-get_count
+                - name: Método de get_EnumNamedStreams
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-ifsinamedstreams-get_enumnamedstreams
+            - name: IIsoImageManager
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-iisoimagemanager
+              items:
+                - name: Método de get_Path
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iisoimagemanager-get_path
+                - name: Método de get_Stream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iisoimagemanager-get_stream
+                - name: Método SetPath
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iisoimagemanager-setpath
+                - name: Método SetStream
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iisoimagemanager-setstream
+                - name: Método Validate
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iisoimagemanager-validate
+            - name: IMultisession
+              href: /windows/desktop/api/imapi2/nn-imapi2-imultisession
+              items:
+                - name: Método de get_ImportRecorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisession-get_importrecorder
+                - name: Método de get_InUse
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisession-get_inuse
+                - name: Método de get_IsSupportedOnCurrentMediaState
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisession-get_issupportedoncurrentmediastate
+                - name: Método de put_InUse
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisession-put_inuse
+            - name: IMultisessionRandomWrite
+              href: /windows/desktop/api/imapi2/nn-imapi2-imultisessionrandomwrite
+              items:
+                - name: Método de get_WriteUnitSize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionrandomwrite-get_writeunitsize
+                - name: Método de get_LastWrittenAddress
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionrandomwrite-get_lastwrittenaddress
+                - name: Método de get_TotalSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionrandomwrite-get_totalsectorsonmedia
+            - name: IMultisessionSequential
+              href: /windows/desktop/api/imapi2/nn-imapi2-imultisessionsequential
+              items:
+                - name: Método de get_FreeSectorsOnMedia
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential-get_freesectorsonmedia
+                - name: Método de get_IsFirstDataSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential-get_isfirstdatasession
+                - name: Método de get_LastWrittenAddressOfPreviousSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential-get_lastwrittenaddressofprevioussession
+                - name: Método de get_NextWritableAddress
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential-get_nextwritableaddress
+                - name: Método de get_StartAddressOfPreviousSession
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential-get_startaddressofprevioussession
+            - name: IMultisessionSequential2
+              href: /windows/desktop/api/imapi2/nn-imapi2-imultisessionsequential2
+              items:
+                - name: Método de get_WriteUnitSize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-imultisessionsequential2-get_writeunitsize
+            - name: IProgressItem
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-iprogressitem
+              items:
+                - name: Método de get_BlockCount
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitem-get_blockcount
+                - name: Método de get_Description
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitem-get_description
+                - name: Método de get_FirstBlock
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitem-get_firstblock
+                - name: Método de get_LastBlock
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitem-get_lastblock
+            - name: IProgressItems
+              href: /windows/desktop/api/imapi2fs/nn-imapi2fs-iprogressitems
+              items:
+                - name: Método de get__NewEnum
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-get__newenum
+                - name: Método de get_Count
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-get_count
+                - name: Método de get_EnumProgressItems
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-get_enumprogressitems
+                - name: Método de get_Item
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-get_item
+                - name: Método ProgressItemFromBlock
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-progressitemfromblock
+                - name: Método ProgressItemFromDescription
+                  href: /windows/desktop/api/imapi2fs/nf-imapi2fs-iprogressitems-progressitemfromdescription
+            - name: IRawCDImageCreator
+              href: /windows/desktop/api/imapi2/nn-imapi2-irawcdimagecreator
+              items:
+                - name: Método de get_DisableGaplessAudio
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_disablegaplessaudio
+                - name: Método de put_DisableGaplessAudio
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-put_disablegaplessaudio
+                - name: Método de get_ExpectedTableOfContents
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_expectedtableofcontents
+                - name: Método de get_LastUsedUserSectorInImage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_lastusedusersectorinimage
+                - name: Método de put_MediaCatalogNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-put_mediacatalognumber
+                - name: Método de get_MediaCatalogNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_mediacatalognumber
+                - name: Método de get_NumberOfExistingTracks
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_numberofexistingtracks
+                - name: Método de put_ResultingImageType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-put_resultingimagetype
+                - name: Método de get_ResultingImageType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_resultingimagetype
+                - name: Método de get_StartOfLeadoutLimit
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_startofleadoutlimit
+                - name: Método de get_StartOfLeadout
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_startofleadout
+                - name: Método de put_StartOfLeadoutLimit
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-put_startofleadoutlimit
+                - name: Método de get_StartingTrackNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_startingtracknumber
+                - name: Método de put_StartingTrackNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-put_startingtracknumber
+                - name: Método de get_TrackInfo
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-get_trackinfo
+                - name: Método addtrack
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-addtrack
+                - name: Método AddSubcodeRWGenerator
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-addsubcoderwgenerator
+                - name: Método AddSpecialPregap
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-addspecialpregap
+                - name: Método CreateResultImage
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagecreator-createresultimage
+            - name: IRawCDImageTrackInfo
+              href: /windows/desktop/api/imapi2/nn-imapi2-irawcdimagetrackinfo
+              items:
+                - name: Método de get_AudioHasPreemphasis
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_audiohaspreemphasis
+                - name: Método de put_AudioHasPreemphasis
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-put_audiohaspreemphasis
+                - name: Método de get_DigitalAudioCopySetting
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_digitalaudiocopysetting
+                - name: Método de put_DigitalAudioCopySetting
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-put_digitalaudiocopysetting
+                - name: Método de get_ISRC
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_isrc
+                - name: Método de put_ISRC
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-put_isrc
+                - name: Método de get_SectorType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_sectortype
+                - name: Método de get_StartingLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_startinglba
+                - name: Método de get_SectorCount
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_sectorcount
+                - name: Método de get_TrackIndexes
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_trackindexes
+                - name: Método de get_TrackNumber
+                  href: /windows/desktop/api/imapi2/nf-imapi2-irawcdimagetrackinfo-get_tracknumber
+            - name: IStreamConcatenate
+              href: /windows/desktop/api/imapi2/nn-imapi2-istreamconcatenate
+              items:
+                - name: Método Append
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreamconcatenate-append
+                - name: Método Append2
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreamconcatenate-append2
+                - name: Método Initialize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreamconcatenate-initialize
+                - name: Método Initialize2
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreamconcatenate-initialize2
+            - name: IStreamInterleave
+              href: /windows/desktop/api/imapi2/nn-imapi2-istreaminterleave
+              items:
+                - name: Método Initialize
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreaminterleave-initialize
+            - name: IStreamPseudoRandomBased
+              href: /windows/desktop/api/imapi2/nn-imapi2-istreampseudorandombased
+              items:
+                - name: Método de get_ExtendedSeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreampseudorandombased-get_extendedseed
+                - name: Método de get_Seed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreampseudorandombased-get_seed
+                - name: Método de put_ExtendedSeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreampseudorandombased-put_extendedseed
+                - name: Método de put_Seed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-istreampseudorandombased-put_seed
+            - name: IWriteEngine2
+              href: /windows/desktop/api/imapi2/nn-imapi2-iwriteengine2
+              items:
+                - name: Método CancelWrite
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-cancelwrite
+                - name: Método de get_BytesPerSector
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_bytespersector
+                - name: Método de get_EndingSectorsPerSecond
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_endingsectorspersecond
+                - name: Método de get_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_recorder
+                - name: Método de get_StartingSectorsPerSecond
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_startingsectorspersecond
+                - name: Método de get_UseStreamingWrite12
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_usestreamingwrite12
+                - name: Método de get_WriteInProgress
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-get_writeinprogress
+                - name: Método de put_BytesPerSector
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-put_bytespersector
+                - name: Método de put_EndingSectorsPerSecond
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-put_endingsectorspersecond
+                - name: Método de put_Recorder
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-put_recorder
+                - name: Método de put_StartingSectorsPerSecond
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-put_startingsectorspersecond
+                - name: Método de put_UseStreamingWrite12
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-put_usestreamingwrite12
+                - name: Método WriteSection
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2-writesection
+            - name: IWriteEngine2EventArgs
+              href: /windows/desktop/api/imapi2/nn-imapi2-iwriteengine2eventargs
+              items:
+                - name: Método de get_FreeSystemBuffer
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_freesystembuffer
+                - name: Método de get_LastReadLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_lastreadlba
+                - name: Método de get_LastWrittenLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_lastwrittenlba
+                - name: Método de get_SectorCount
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_sectorcount
+                - name: Método de get_StartLba
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_startlba
+                - name: Método de get_TotalSystemBuffer
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_totalsystembuffer
+                - name: Método de get_UsedSystemBuffer
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwriteengine2eventargs-get_usedsystembuffer
+            - name: IWriteSpeedDescriptor
+              href: /windows/desktop/api/imapi2/nn-imapi2-iwritespeeddescriptor
+              items:
+                - name: Método de get_MediaType
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwritespeeddescriptor-get_mediatype
+                - name: Método de get_RotationTypeIsPureCAV
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwritespeeddescriptor-get_rotationtypeispurecav
+                - name: Método de get_WriteSpeed
+                  href: /windows/desktop/api/imapi2/nf-imapi2-iwritespeeddescriptor-get_writespeed
+            - name: MsftStreamZero
+              href: msftstreamzero.md
+        - name: Enumerações IMAPi
+          href: imapi-enumerations.md
+          items:
+            - name: EmulationType
+              href: /windows/desktop/api/imapi2fs/ne-imapi2fs-emulationtype
+            - name: FsiFileSystems
+              href: /windows/desktop/api/imapi2fs/ne-imapi2fs-fsifilesystems
+            - name: FsiItemType
+              href: /windows/desktop/api/imapi2fs/ne-imapi2fs-fsiitemtype
+            - name: IMAPI_BURN_VERIFICATION_LEVEL
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_burn_verification_level
+            - name: IMAPI_CD_SECTOR_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_cd_sector_type
+            - name: IMAPI_CD_TRACK_DIGITAL_COPY_SETTING
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_cd_track_digital_copy_setting
+            - name: IMAPI_FEATURE_PAGE_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_feature_page_type
+            - name: IMAPI_FORMAT2_DATA_MEDIA_STATE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_format2_data_media_state
+            - name: IMAPI_FORMAT2_DATA_WRITE_ACTION
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_format2_data_write_action
+            - name: IMAPI_FORMAT2_RAW_CD_DATA_SECTOR_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_format2_raw_cd_data_sector_type
+            - name: IMAPI_FORMAT2_RAW_CD_WRITE_ACTION
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_format2_raw_cd_write_action
+            - name: IMAPI_FORMAT2_TAO_WRITE_ACTION
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_format2_tao_write_action
+            - name: IMAPI_MEDIA_PHYSICAL_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_media_physical_type
+            - name: IMAPI_MEDIA_WRITE_PROTECT_STATE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_media_write_protect_state
+            - name: IMAPI_MODE_PAGE_REQUEST_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_mode_page_request_type
+            - name: IMAPI_MODE_PAGE_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_mode_page_type
+            - name: IMAPI_PROFILE_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_profile_type
+            - name: IMAPI_READ_TRACK_ADDRESS_TYPE
+              href: /windows/win32/api/imapi2/ne-imapi2-imapi_read_track_address_type
+            - name: Plataformaid
+              href: /windows/desktop/api/imapi2fs/ne-imapi2fs-platformid
+        - name: Constantes do IMAPi
+          href: imapi-constants.md
+        - name: Valores de retorno de IMAPi
+          href: imapi-return-values.md
+        - name: Tipos de dados IMAPi
+          href: imapi-data-types.md
+        - name: Glossário
+          href: glossary.md
+    - name: Suporte do IMAPIv1
+      href: imapiv1.md
+      items:
+        - name: Sobre a API de mestre de imagem
+          href: about-the-image-mastering-api.md
+        - name: Usando a API de mestre de imagem
+          href: using-the-image-mastering-api.md
+          items:
+            - name: Interagindo com IMAPi
+              href: interacting-with-imapi.md
+            - name: Criando discos com várias sessões
+              href: creating-discs-with-multiple-sessions.md
+        - name: Referência de IMAPIv1
+          href: imapiv1-reference.md
+          items:
+            - name: Interfaces IMAPIv1
+              href: imapiv1-interfaces.md
+              items:
+                - name: IDiscMaster
+                  href: /windows/desktop/api/Imapi/nn-imapi-idiscmaster
+                  items:
+                    - name: Método ClearFormatContent
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-clearformatcontent
+                    - name: Método Close
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-close
+                    - name: Método EnumDiscMasterFormats
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-enumdiscmasterformats
+                    - name: Método EnumDiscRecorders
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-enumdiscrecorders
+                    - name: Método GetActiveDiscMasterFormat
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-getactivediscmasterformat
+                    - name: Método GetActiveDiscRecorder
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-getactivediscrecorder
+                    - name: Abrir método
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-open
+                    - name: Método ProgressAdvise
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-progressadvise
+                    - name: Método ProgressUnadvise
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-progressunadvise
+                    - name: Método RecordDisc
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-recorddisc
+                    - name: Método SetActiveDiscMasterFormat
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-setactivediscmasterformat
+                    - name: Método SetActiveDiscRecorder
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmaster-setactivediscrecorder
+                - name: IDiscMasterProgressEvents
+                  href: /windows/desktop/api/Imapi/nn-imapi-idiscmasterprogressevents
+                  items:
+                    - name: Método NotifyAddProgress
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifyaddprogress
+                    - name: Método NotifyBlockProgress
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifyblockprogress
+                    - name: Método NotifyBurnComplete
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifyburncomplete
+                    - name: Método NotifyClosingDisc
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifyclosingdisc
+                    - name: Método NotifyEraseComplete
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifyerasecomplete
+                    - name: Método NotifyPnPActivity
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifypnpactivity
+                    - name: Método NotifyPreparingBurn
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifypreparingburn
+                    - name: Método NotifyTrackProgress
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-notifytrackprogress
+                    - name: Método QueryCancel
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscmasterprogressevents-querycancel
+                - name: IDiscRecorder
+                  href: /windows/desktop/api/Imapi/nn-imapi-idiscrecorder
+                  items:
+                    - name: Método Close
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-close
+                    - name: Método EJECT
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-eject
+                    - name: Método Erase
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-erase
+                    - name: Método GetBasePnPID
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getbasepnpid
+                    - name: Método GetDisplayNames
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getdisplaynames
+                    - name: Método GetPath
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getpath
+                    - name: Método GetRecorderGUID
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getrecorderguid
+                    - name: Método getrecorderproperties
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getrecorderproperties
+                    - name: Método getgravadorstate
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getrecorderstate
+                    - name: Método getgravadortype
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-getrecordertype
+                    - name: Método OpenExclusive
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-openexclusive
+                    - name: Método QueryMediaInfo
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-querymediainfo
+                    - name: Método QueryMediaType
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-querymediatype
+                    - name: Método setrecorderproperties
+                      href: /windows/desktop/api/Imapi/nf-imapi-idiscrecorder-setrecorderproperties
+                - name: IJolietDiscMaster
+                  href: /windows/desktop/api/Imapi/nn-imapi-ijolietdiscmaster
+                  items:
+                    - name: Método AddData
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-adddata
+                    - name: Método GetDataBlockSize
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-getdatablocksize
+                    - name: Método getjolietproperties
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-getjolietproperties
+                    - name: Método GetTotalDataBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-gettotaldatablocks
+                    - name: Método GetUsedDataBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-getuseddatablocks
+                    - name: Método setjolietproperties
+                      href: /windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-setjolietproperties
+                - name: IRedbookDiscMaster
+                  href: /windows/desktop/api/Imapi/nn-imapi-iredbookdiscmaster
+                  items:
+                    - name: Método AddAudioTrackBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-addaudiotrackblocks
+                    - name: Método CloseAudioTrack
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-closeaudiotrack
+                    - name: Método CreateAudioTrack
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-createaudiotrack
+                    - name: Método GetAudioBlockSize
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-getaudioblocksize
+                    - name: Método GetAvailableAudioTrackBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-getavailableaudiotrackblocks
+                    - name: Método GetTotalAudioBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-gettotalaudioblocks
+                    - name: Método GetTotalAudioTracks
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-gettotalaudiotracks
+                    - name: Método GetUsedAudioBlocks
+                      href: /windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-getusedaudioblocks
+            - name: Códigos de resultado do IMAPIv1
+              href: imapiv1-result-codes.md

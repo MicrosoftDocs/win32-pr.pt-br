@@ -1,0 +1,17 @@
+- name: Índice de APIs
+  href: api-index-portal.md
+  items:
+    - name: Lista de API do Windows
+      href: windows-api-list.md
+    - name: Conjuntos de API do Windows
+      items:
+        - name: Visão geral
+          href: windows-apisets.md
+        - name: Operação de carregador de conjunto de API
+          href: api-set-loader-operation.md
+        - name: Detectar disponibilidade do conjunto de API
+          href: detect-api-set-availability.md
+        - name: Bibliotecas de abrangência do Windows
+          href: windows-umbrella-libraries.md
+    - name: APIs do WinRT que podem ser chamadas de um aplicativo de desktop
+      href: uwp-apis-callable-from-a-classic-desktop-app.md

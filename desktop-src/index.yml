@@ -1,0 +1,95 @@
+### YamlMime:Landing
+title: Crie aplicativos do Windows para desktop usando a API do Win32
+summary: Saiba como criar aplicativos de área de trabalho para computadores Windows usando C++ e a API do Win32.
+metadata:
+  author: mcleanbyron
+  description: Saiba como criar aplicativos de área de trabalho para computadores Windows usando C++ e a API do Win32.
+  manager: jken
+  ms.author: mcleans
+  ms.date: 09/15/2019
+  ms.topic: landing-page
+  ms.openlocfilehash: 99090d109a717c1008a11e6a9c9e6cf7a31f2b7c
+  ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 08/19/2020
+  ms.locfileid: "104007386"
+landingContent:
+- title: Introdução
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Configurar seu computador
+      url: /windows/desktop/desktop-programming
+  - linkListType: tutorial
+    links:
+    - text: Criar seu primeiro aplicativo com o Win32 e o C++
+      url: ./learnwin32/learn-to-program-for-windows.md
+  - linkListType: download
+    links:
+    - text: Ferramentas de desenvolvimento
+      url: https://developer.microsoft.com/windows/downloads
+    - text: Exemplos de código do Windows
+      url: https://developer.microsoft.com/windows/samples
+- title: Desenvolver
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Recursos e tecnologias do Windows
+      url: desktop-app-technologies.md
+    - text: Modernizar aplicativos para Windows 10
+      url: /windows/apps/desktop/modernize
+  - linkListType: reference
+    links:
+    - text: Referência de API do Win32 por recurso
+      url: ./apiindex/windows-api-list.md
+    - text: Referência da API do Win32 por cabeçalho
+      url: /windows/win32/api/
+- title: Recursos e comunidade
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Máquinas virtuais do Windows
+      url: https://developer.microsoft.com/windows/downloads/virtual-machines
+  - linkListType: overview
+    links:
+    - text: Programa de aplicativo da área de trabalho do Windows
+      url: /windows/desktop/appxpkg/windows-desktop-application-program
+    - text: Manter a compatibilidade com o Windows 10
+      url: https://developer.microsoft.com/windows/desktop/app-compatibility
+    - text: Suporte Developer do Windows
+      url: https://developer.microsoft.com/windows/support
+    - text: '@WindowsDocs no Twitter'
+      url: https://developer.microsoft.com/games
+    - text: OneDevMinute no YouTube
+      url: https://aka.ms/OneDevMinute
+- title: Docs relacionados
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Escolha sua plataforma de área de trabalho
+      url: /windows/apps/desktop/choose-your-platform
+    - text: C++/WinRT
+      url: /windows/uwp/cpp-and-winrt-apis/
+    - text: Empacotamento e implantação do MSIX
+      url: /windows/msix/desktop/desktop-to-uwp-root
+    - text: UWP
+      url: /windows/uwp/
+    - text: .NET
+      url: //docs.microsoft.com/dotnet/
+    - text: Arquivos de docs para Windows 8.x e versões anteriores
+      url: /previous-versions/windows/
+- title: Tecnologias relacionadas
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: IA do Windows
+      url: /windows/ai/
+    - text: Windows IoT
+      url: /windows/iot-core/
+    - text: Windows Mixed Reality
+      url: /windows/mixed-reality/
+    - text: Contêineres do Windows
+      url: /virtualization/#pivot=main&panel=containers
+    - text: Jogos
+      url: https://developer.microsoft.com/games
