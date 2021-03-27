@@ -1,0 +1,3162 @@
+- name: Multimídia do Windows
+  href: windows-multimedia-start-page.md
+  items:
+    - name: MCI
+      href: mci.md
+      items:
+        - name: Sobre o MCI
+          href: about-mci.md
+          items:
+            - name: Mensagens e cadeias de caracteres de comando MCI
+              href: mci-command-strings-and-messages.md
+              items:
+                - name: Cadeias de caracteres de comando
+                  href: command-strings.md
+                - name: Mensagens de comando
+                  href: command-messages.md
+            - name: Classificações de comandos MCI
+              href: classifications-of-mci-commands.md
+            - name: 'Funções, macros e mensagens MCI'
+              href: mci-functions-macros-and-messages.md
+            - name: 'Os sinalizadores de espera, notificação e teste'
+              href: the-wait-notify-and-test-flags.md
+              items:
+                - name: O sinalizador de espera
+                  href: the-wait-flag.md
+                - name: O sinalizador de notificação
+                  href: the-notify-flag.md
+                - name: O sinalizador de teste
+                  href: the-test-flag.md
+            - name: Atalhos de comando e variações
+              href: command-shortcuts-and-variations.md
+            - name: Dispositivos MCI
+              href: mci-devices.md
+              items:
+                - name: Controle de dispositivo
+                  href: device-control.md
+                - name: Reprodução e posicionamento
+                  href: playback-and-positioning.md
+                - name: Tipos de dispositivo
+                  href: device-types.md
+                - name: Nomes de dispositivo
+                  href: device-names.md
+                - name: Suporte de driver para comandos MCI
+                  href: driver-support-for-mci-commands.md
+                - name: Comportamento padrão de drivers
+                  href: default-behavior-of-drivers.md
+            - name: Trabalhando com dispositivos MCI
+              href: working-with-mci-devices.md
+              items:
+                - name: Abrindo um dispositivo
+                  href: opening-a-device.md
+                - name: Recuperando informações sobre um dispositivo
+                  href: retrieving-information-about-a-device.md
+                - name: Obtendo informações do sistema MCI
+                  href: obtaining-mci-system-information.md
+                - name: Reproduzindo um dispositivo
+                  href: playing-a-device.md
+                - name: Gravação
+                  href: recording.md
+                - name: 'Parando, pausando e retomando um dispositivo'
+                  href: stopping-pausing-and-resuming-a-device.md
+                - name: Fechando um dispositivo
+                  href: closing-a-device.md
+            - name: Implementações de MCI para dispositivos específicos
+              href: mci-implementations-for-specific-devices.md
+              items:
+                - name: MCIAVI
+                  href: mciavi.md
+                - name: Serviços de VCR
+                  href: vcr-services.md
+            - name: Conjuntos de comandos Device-Specific
+              href: device-specific-command-sets.md
+              items:
+                - name: Conjunto de comandos de CD de áudio
+                  href: cd-audio-command-set.md
+                - name: Conjunto de comandos Digital-Video
+                  href: digital-video-command-set.md
+                - name: Conjunto de comandos MIDI Sequencer
+                  href: midi-sequencer-command-set.md
+                - name: Conjunto de comandos de VCR
+                  href: vcr-command-set.md
+                - name: Conjunto de comandos VIDEODISC
+                  href: videodisc-command-set.md
+                - name: Conjunto de comandos Video-Overlay
+                  href: video-overlay-command-set.md
+                - name: Conjunto de comandos Waveform-Audio
+                  href: waveform-audio-command-set.md
+        - name: Usando cadeias de caracteres de comando MCI
+          href: using-mci-command-strings.md
+          items:
+            - name: Enviando um comando
+              href: sending-a-command.md
+            - name: Abrindo vários arquivos AVI
+              href: opening-multiple-avi-files.md
+            - name: Alterando o estado de reprodução
+              href: changing-the-playback-state.md
+            - name: converter cadeias de caracteres
+              href: converting-strings.md
+        - name: Usando mensagens de comando do MCI
+          href: using-mci-command-messages.md
+          items:
+            - name: Fechando todos os dispositivos MCI usados por um aplicativo
+              href: closing-all-mci-devices-used-by-an-application.md
+            - name: Abrindo um dispositivo simples usando o nome do dispositivo
+              href: opening-a-simple-device-by-using-the-device-name.md
+            - name: Abrindo um dispositivo simples usando a constante Device-Type
+              href: opening-a-simple-device-by-using-the-device-type-constant.md
+            - name: Abrindo um dispositivo composto usando o nome de arquivo
+              href: opening-a-compound-device-by-using-the-filename.md
+            - name: Verificando o dispositivo de saída
+              href: verifying-the-output-device.md
+            - name: Manipulando erros MCI
+              href: handling-mci-errors.md
+            - name: Executando um arquivo de Waveform-Audio
+              href: playing-a-waveform-audio-file.md
+            - name: Executando um arquivo MIDI
+              href: playing-a-midi-file.md
+            - name: Reproduzindo uma faixa de CD
+              href: playing-a-compact-disc-track.md
+            - name: Jogando um filme
+              href: playing-a-movie.md
+              items:
+                - name: Abrindo a janela de reprodução
+                  href: opening-the-playback-window.md
+                - name: Configurando a janela de reprodução
+                  href: setting-up-the-playback-window.md
+                - name: Executando o arquivo AVI
+                  href: playing-the-avi-file.md
+            - name: Alterando a posição atual
+              href: changing-the-current-position.md
+            - name: Definindo o formato de hora
+              href: setting-the-time-format.md
+            - name: Alterando a sincronização do Sequencer
+              href: changing-sequencer-synchronization.md
+            - name: Usando o sinalizador de MCI_NOTIFY
+              href: using-the-mci-notify-flag.md
+            - name: Recuperando informações sobre um filme
+              href: retrieving-information-about-a-movie.md
+            - name: Recuperando informações de Track-Specific de CD
+              href: retrieving-compact-disc-track-specific-information.md
+            - name: Gravando com um dispositivo Waveform-Audio
+              href: recording-with-a-waveform-audio-device.md
+        - name: Referência de MCI
+          href: mci-reference.md
+          items:
+            - name: Funções MCI
+              href: mci-functions.md
+            - name: Estruturas MCI
+              href: mci-structures.md
+            - name: Mensagens MCI
+              href: mci-messages.md
+            - name: Macros MCI
+              href: mci-macros.md
+            - name: Comandos MCI
+              href: mci-commands.md
+            - name: Cadeias de caracteres de comando MCI
+              href: mci-command-strings.md
+    - name: Classe de janela MCIWnd
+      href: mciwnd-window-class.md
+      items:
+        - name: Sobre a classe da janela MCIWnd
+          href: about-the-mciwnd-window-class.md
+          items:
+            - name: Interface do usuário da janela do MCIWnd
+              href: mciwnd-window-user-interface.md
+            - name: Reprodução de multimídia
+              href: multimedia-playback.md
+              items:
+                - name: Adicionando User-Controlled reprodução
+                  href: adding-user-controlled-playback.md
+                - name: Automatizando a reprodução
+                  href: automating-playback.md
+                - name: Usando estilos de janela para alterar a janela MCIWnd
+                  href: using-window-styles-to-change-the-mciwnd-window.md
+                - name: Permitindo que o usuário especifique dispositivos e arquivos
+                  href: allowing-the-user-to-specify-devices-and-files.md
+            - name: Controles de reprodução
+              href: playback-controls.md
+              items:
+                - name: Determinando e alterando a posição atual
+                  href: determining-and-changing-the-current-position.md
+                - name: 'Iniciando, pausando e retomando a reprodução'
+                  href: starting-pausing-and-resuming-playback.md
+                - name: Definindo o escopo de reprodução
+                  href: defining-playback-scope.md
+                - name: Revertendo a reprodução
+                  href: reversing-playback.md
+                - name: Reprodução de loop
+                  href: looping-playback.md
+            - name: Gravação de multimídia
+              href: multimedia-recording.md
+            - name: Salvando conteúdo gravado
+              href: saving-recorded-content.md
+            - name: Aprimoramentos de reprodução
+              href: playback-enhancements.md
+              items:
+                - name: Especificando formatos de hora
+                  href: specifying-time-formats.md
+                - name: 'Ajustando a velocidade, o volume e o zoom'
+                  href: adjusting-speed--volume--and-zoom.md
+                - name: Fornecendo controles para cortar e alongar imagens
+                  href: providing-controls-for-cropping-and-stretching-images.md
+                - name: Usando paletas do MCIWnd
+                  href: using-mciwnd-palettes.md
+                - name: Fornecendo atualizações de status
+                  href: providing-status-updates.md
+                - name: Usando uma interface de vários documentos
+                  href: using-a-multiple-document-interface.md
+            - name: Mensagens de erro e notificações
+              href: error-messages-and-notifications.md
+            - name: Comunicando-se com dispositivos MCI
+              href: communicating-with-mci-devices.md
+              items:
+                - name: Comunicação com dispositivos MCI
+                  href: communication-with-mci-devices.md
+                - name: Recursos do dispositivo MCI
+                  href: mci-device-capabilities.md
+        - name: Usando a classe de janela MCIWnd
+          href: using-the-mciwnd-window-class.md
+          items:
+            - name: Criando uma janela MCIWnd
+              href: creating-an-mciwnd-window.md
+            - name: Automatizando a reprodução para MCIWnd
+              href: automating-playback-for-mciwnd.md
+            - name: Pausando e retomando a reprodução
+              href: pausing-and-resuming-playback.md
+            - name: Limitando o escopo de reprodução
+              href: limiting-the-playback-scope.md
+            - name: Gravando com controles MCIWnd
+              href: recording-with-mciwnd-controls.md
+            - name: Personalizando o processo de gravação
+              href: customizing-the-recording-process.md
+            - name: Cortando uma imagem
+              href: cropping-an-image.md
+            - name: Alongando uma imagem
+              href: stretching-an-image.md
+            - name: Alongando uma imagem e uma janela
+              href: stretching-an-image-and-window.md
+        - name: Referência de MCIWnd
+          href: mciwnd-reference.md
+          items:
+            - name: Funções MCIWnd
+              href: mciwnd-functions.md
+            - name: Mensagens MCIWnd
+              href: mciwnd-messages.md
+            - name: MCIWnd macros
+              href: mciwnd-macros.md
+    - name: Áudio de multimídia
+      href: multimedia-audio.md
+      items:
+        - name: Gerenciador de compactação de áudio
+          href: audio-compression-manager.md
+          items:
+            - name: Sobre o Gerenciador de compactação de áudio
+              href: about-the-audio-compression-manager.md
+              items:
+                - name: Mapeando dispositivos Waveform-Audio
+                  href: mapping-waveform-audio-devices.md
+                - name: Como funciona o Gerenciador de compactação de áudio
+                  href: how-the-audio-compression-manager-works.md
+                - name: Funções e estruturas do Gerenciador de compactação de áudio
+                  href: audio-compression-manager-functions-and-structures.md
+                - name: Funções chamadas pelo sistema
+                  href: functions-called-by-the-system.md
+            - name: Usando o Gerenciador de compactação de áudio
+              href: using-the-audio-compression-manager.md
+              items:
+                - name: Recuperando uma cadeia de caracteres que descreve um filtro
+                  href: retrieving-a-string-that-describes-a-filter.md
+                - name: Produzindo uma caixa de diálogo para selecionar um filtro
+                  href: producing-a-dialog-box-for-selecting-a-filter.md
+                - name: Produzindo uma caixa de diálogo para selecionar um tipo específico de formato
+                  href: producing-a-dialog-box-for-selecting-a-specific-type-of-format.md
+                - name: Produzindo uma caixa de diálogo para selecionar formatos restritos
+                  href: producing-a-dialog-box-for-selecting-restricted-formats.md
+                - name: Produzindo uma caixa de diálogo para selecionar um formato para salvar
+                  href: producing-a-dialog-box-for-selecting-a-format-for-saving.md
+                - name: Produzindo uma caixa de diálogo para selecionar um formato para gravação
+                  href: producing-a-dialog-box-for-selecting-a-format-for-recording.md
+                - name: Convertendo dados de um formato para outro
+                  href: converting-data-from-one-format-to-another.md
+                - name: Conversão de formato de várias etapas
+                  href: multistep-format-conversion.md
+                - name: Localizando um formato específico
+                  href: finding-a-specific-format.md
+                - name: Localizando um driver específico
+                  href: finding-a-specific-driver.md
+                - name: Adicionando drivers dentro de um aplicativo
+                  href: adding-drivers-within-an-application.md
+                - name: Gerando um formato não padrão
+                  href: generating-a-nonstandard-format.md
+            - name: Referência do Gerenciador de compactação de áudio
+              href: audio-compression-manager-reference.md
+              items:
+                - name: Funções de compactação de áudio
+                  href: audio-compression-functions.md
+                - name: Estruturas de compactação de áudio
+                  href: audio-compression-structures.md
+                - name: Mensagens de compactação de áudio
+                  href: audio-compression-messages.md
+        - name: Mixers de áudio
+          href: audio-mixers.md
+          items:
+            - name: Sobre os mixers de áudio
+              href: about-audio-mixers.md
+              items:
+                - name: Arquitetura do mixer
+                  href: mixer-architecture.md
+                - name: Tipos de controle
+                  href: control-types.md
+                  items:
+                    - name: Controles personalizados do mixer de áudio
+                      href: audio-mixer-custom-controls.md
+                    - name: Esmaecimentos
+                      href: faders.md
+                    - name: Listas
+                      href: lists.md
+                    - name: Medidores
+                      href: meters.md
+                    - name: Números
+                      href: numbers.md
+                    - name: Controles deslizantes
+                      href: sliders.md
+                    - name: Comutadores
+                      href: switches.md
+                    - name: Controles de tempo
+                      href: time-controls.md
+                - name: Consultas de dispositivo do mixer
+                  href: mixer-device-queries.md
+                - name: Abrindo e fechando dispositivos do mixer
+                  href: opening-and-closing-mixer-devices.md
+                - name: Serviços de retorno de chamada de janela
+                  href: window-callback-services.md
+                - name: Consultas de linha e controle de áudio
+                  href: audio-line-and-control-queries.md
+                - name: Mixers de áudio no Windows Vista
+                  href: audio-mixers-in-windows-vista.md
+            - name: Referência do mixer de áudio
+              href: audio-mixer-reference.md
+              items:
+                - name: Funções do mixer de áudio
+                  href: audio-mixer-functions.md
+                - name: Estruturas do mixer de áudio
+                  href: audio-mixer-structures.md
+                - name: Mensagens do mixer de áudio
+                  href: audio-mixer-messages.md
+        - name: MIDI (interface digital de instrumento musical)
+          href: musical-instrument-digital-interface--midi.md
+          items:
+            - name: Sobre MIDI
+              href: about-midi.md
+              items:
+                - name: O mapeador de MIDI
+                  href: the-midi-mapper.md
+                  items:
+                    - name: O mapeador de MIDI e o Windows
+                      href: the-midi-mapper-and-windows.md
+                    - name: A arquitetura do mapeador de MIDI
+                      href: the-midi-mapper-architecture.md
+                    - name: O mapa do canal
+                      href: the-channel-map.md
+                    - name: Mapas de patch
+                      href: patch-maps.md
+                    - name: O volume escalar
+                      href: the-volume-scalar.md
+                    - name: Mapas de chaves
+                      href: key-maps.md
+                    - name: Resumo de mensagens de mapas e MIDI
+                      href: summary-of-maps-and-midi-messages.md
+                - name: MCI (interface de controle de mídia)
+                  href: media-control-interface--mci.md
+                - name: Buffers de fluxo
+                  href: stream-buffers.md
+                  items:
+                    - name: Formato de buffer de fluxo
+                      href: stream-buffer-format.md
+                    - name: Informações de tempo
+                      href: timing-information.md
+                    - name: Tipos de evento MIDI
+                      href: midi-event-types.md
+                    - name: Fluxos de MIDI
+                      href: midi-streams.md
+                - name: Serviços MIDI
+                  href: midi-services.md
+                  items:
+                    - name: Consultando dispositivos MIDI
+                      href: querying-midi-devices.md
+                    - name: Abrindo e fechando drivers de dispositivo
+                      href: opening-and-closing-device-drivers.md
+                    - name: Alocando e preparando blocos de dados MIDI
+                      href: allocating-and-preparing-midi-data-blocks.md
+                    - name: Gerenciando blocos de dados MIDI
+                      href: managing-midi-data-blocks.md
+                    - name: Solicitando formatos de hora
+                      href: requesting-time-formats.md
+                    - name: Tratamento de erros com funções MIDI
+                      href: handling-errors-with-midi-functions.md
+                - name: Executando arquivos MIDI
+                  href: playing-midi-files.md
+                  items:
+                    - name: Tipos de dados de saída de MIDI
+                      href: midi-output-data-types.md
+                    - name: Consultando dispositivos de saída de MIDI
+                      href: querying-midi-output-devices.md
+                    - name: Abrindo dispositivos de saída MIDI
+                      href: opening-midi-output-devices.md
+                    - name: Enviando mensagens MIDI com buffers de fluxo
+                      href: sending-midi-messages-with-stream-buffers.md
+                    - name: Enviando mensagens individuais de MIDI
+                      href: sending-individual-midi-messages.md
+                    - name: Enviando mensagens de System-Exclusive
+                      href: sending-system-exclusive-messages.md
+                    - name: Usando uma janela ou thread para gerenciar a reprodução em buffer
+                      href: using-a-window-or-thread-to-manage-buffered-playback.md
+                    - name: Usando uma função de retorno de chamada para gerenciar a reprodução em buffer
+                      href: using-a-callback-function-to-manage-buffered-playback.md
+                    - name: Usando um retorno de chamada de evento para gerenciar a reprodução em buffer
+                      href: using-an-callback-to-manage-buffered-playback.md
+                    - name: Redefinindo a saída de MIDI
+                      href: resetting-midi-output.md
+                    - name: Alterando o volume do sintetizador MIDI interno
+                      href: changing-internal-midi-synthesizer-volume.md
+                    - name: Precarregamento de patches com sintetizadores MIDI internos
+                      href: preloading-patches-with-internal-midi-synthesizers.md
+                - name: Gravando áudio MIDI
+                  href: recording-midi-audio.md
+                  items:
+                    - name: Tipos de dados de entrada de MIDI
+                      href: midi-input-data-types.md
+                    - name: Consultando dispositivos de entrada MIDI
+                      href: querying-midi-input-devices.md
+                    - name: Abrindo dispositivos de entrada MIDI
+                      href: opening-midi-input-devices.md
+                    - name: Gerenciando a gravação de MIDI
+                      href: managing-midi-recording.md
+                    - name: Gerenciando MIDI por
+                      href: managing-midi-thru.md
+                    - name: Recebendo Time-Stamped mensagens MIDI
+                      href: receiving-time-stamped-midi-messages.md
+                    - name: Recebendo mensagens de Running-Status
+                      href: receiving-running-status-messages.md
+                - name: Processando dados MIDI de duas fontes MIDI
+                  href: processing-midi-data-from-two-midi-sources.md
+                - name: Criando arquivos MIDI
+                  href: creating-midi-files.md
+                  items:
+                    - name: Diretrizes de criação para arquivos MIDI
+                      href: authoring-guidelines-for-midi-files.md
+                    - name: Atribuições de patch de MIDI padrão
+                      href: standard-midi-patch-assignments.md
+                    - name: Atribuições de chave MIDI padrão
+                      href: standard-midi-key-assignments.md
+            - name: Usando MIDI
+              href: using-midi.md
+              items:
+                - name: Usando o sequenciador MIDI MCI
+                  href: using-the-mci-midi-sequencer.md
+                  items:
+                    - name: Recuperando o tipo de divisão de sequência
+                      href: retrieving-the-sequence-division-type.md
+                    - name: Consultando e definindo o tempo
+                      href: querying-and-setting-the-tempo.md
+                - name: Usando midiOutShortMsg para enviar mensagens MIDI individuais
+                  href: using-midioutshortmsg-to-send-individual-midi-messages.md
+            - name: Referência de MIDI
+              href: midi-reference.md
+              items:
+                - name: Funções de MIDI
+                  href: midi-functions.md
+                - name: Estruturas MIDI
+                  href: midi-structures.md
+                - name: Mensagens MIDI
+                  href: midi-messages.md
+                - name: Macros MIDI
+                  href: midi-macros.md
+                - name: Tipos de MIDI
+                  href: midi-types.md
+        - name: Áudio de onda
+          href: waveform-audio.md
+          items:
+            - name: Sobre áudio de formato de onda
+              href: about-waveform-audio.md
+              items:
+                - name: Reprodução de áudio simples
+                  href: simple-audio-playback.md
+                  items:
+                    - name: A função PlaySound
+                      href: the-playsound-function.md
+                      items:
+                        - name: Usando o PlaySound para reproduzir arquivos de Waveform-Audio
+                          href: using-playsound-to-play-waveform-audio-files.md
+                        - name: Usando o PlaySound para repetir sons
+                          href: using-playsound-to-loop-sounds.md
+                        - name: Usando o PlaySound para reproduzir sons do sistema
+                          href: using-playsound-to-play-system-sounds.md
+                - name: Interface Waveform-Audio
+                  href: waveform-audio-interface.md
+                  items:
+                    - name: Dispositivos e tipos de dados
+                      href: devices-and-data-types.md
+                    - name: Executando Waveform-Audio arquivos
+                      href: playing-waveform-audio-files.md
+                      items:
+                        - name: Usando mensagens de janela para gerenciar Waveform-Audio reprodução
+                          href: using-window-messages-to-manage-waveform-audio-playback.md
+                        - name: Recuperando a posição de reprodução atual
+                          href: retrieving-the-current-playback-position.md
+                        - name: 'Parando, pausando e reiniciando a reprodução'
+                          href: stopping-pausing-and-restarting-playback.md
+                        - name: Reprodução de loop
+                          href: looping-playback-wav.md
+                        - name: Alterando o volume de Waveform-Audio reprodução
+                          href: changing-the-volume-of-waveform-audio-playback.md
+                        - name: Alterando a taxa de densidade e reprodução
+                          href: changing-pitch-and-playback-rate.md
+                    - name: Gravando áudio de onda
+                      href: recording-waveform-audio.md
+                      items:
+                        - name: Waveform-Audio tipos de dados de entrada
+                          href: waveform-audio-input-data-types.md
+                        - name: Consultando Waveform-Audio dispositivos de entrada
+                          href: querying-waveform-audio-input-devices.md
+                        - name: Abrindo Waveform-Audio dispositivos de entrada
+                          href: opening-waveform-audio-input-devices.md
+                        - name: Gerenciando a gravação de Waveform-Audio
+                          href: managing-waveform-audio-recording.md
+                        - name: Usando mensagens de janela para gerenciar a gravação de Waveform-Audio
+                          href: using-window-messages-to-manage-waveform-audio-recording.md
+                - name: Interface de áudio auxiliar
+                  href: auxiliary-audio-interface.md
+                  items:
+                    - name: Consultando dispositivos de áudio auxiliares
+                      href: querying-auxiliary-audio-devices.md
+                    - name: Alterando o volume de Audio-Devices auxiliares
+                      href: changing-the-volume-of-auxiliary-audio-devices.md
+                - name: Blocos de dados de áudio
+                  href: audio-data-blocks.md
+                  items:
+                    - name: Usando uma função de retorno de chamada para processar mensagens de driver
+                      href: using-a-callback-function-to-process-driver-messages.md
+                    - name: Usando um retorno de chamada de evento para processar mensagens de driver
+                      href: using-an-callback-to-process-driver-messages.md
+                    - name: Usando uma janela ou thread para processar mensagens do driver
+                      href: using-a-window-or-thread-to-process-driver-messages.md
+                    - name: Gerenciando blocos de dados por sondagem
+                      href: managing-data-blocks-by-polling.md
+                - name: Tratamento de erros com funções de áudio
+                  href: handling-errors-with-audio-functions.md
+            - name: Usando a onda e o áudio auxiliar
+              href: using-waveform-and-auxiliary-audio.md
+              items:
+                - name: Reproduzindo recursos de onda
+                  href: playing-wave-resources.md
+                - name: Usando a estrutura WAVEFORMATEX
+                  href: using-the-waveformatex-structure.md
+                - name: Determinando o suporte a formato não padrão
+                  href: determining-nonstandard-format-support.md
+                - name: Exemplo de gravação de dados de onda
+                  href: example-of-writing-waveform-data.md
+                - name: Processando a mensagem de MM_WOM_DONE
+                  href: processing-the-mm-wom-done-message.md
+            - name: Referência de áudio de onda
+              href: waveform-audio-reference.md
+              items:
+                - name: Funções de formato de onda
+                  href: waveform-functions.md
+                - name: Estruturas de formato de onda
+                  href: waveform-structures.md
+                - name: Mensagens de formato de onda
+                  href: waveform-messages.md
+    - name: Entrada de multimídia
+      href: multimedia-input.md
+      items:
+        - name: E/s de arquivo multimídia
+          href: multimedia-file-i-o.md
+          items:
+            - name: Sobre e/s de arquivo multimídia
+              href: about-multimedia-file-i-o.md
+              items:
+                - name: Serviços de e/s de arquivo de multimídia
+                  href: multimedia-file-i-o-services.md
+                  items:
+                    - name: Serviços básicos
+                      href: basic-services.md
+                    - name: Serviços em buffer
+                      href: buffered-services.md
+                    - name: Serviços de formato de arquivo de intercâmbio de recursos
+                      href: resource-interchange-file-format-services.md
+                    - name: Serviços personalizados
+                      href: custom-services.md
+            - name: Usando e/s de arquivo de multimídia
+              href: using-multimedia-file-i-o.md
+              items:
+                - name: Abrindo um arquivo com mmioOpen
+                  href: opening-a-file-with-mmioopen.md
+                - name: Criando e excluindo um arquivo
+                  href: creating-and-deleting-a-file.md
+                - name: Buscando uma nova posição em um arquivo
+                  href: seeking-to-a-new-position-in-a-file.md
+                - name: Alterando o tamanho do buffer de e/s
+                  href: changing-the-i-o-buffer-size.md
+                - name: Acessando um buffer de e/s de arquivo
+                  href: accessing-a-file-i-o-buffer.md
+                - name: Gerando códigos de Four-Character
+                  href: generating-four-character-codes.md
+                - name: Criando uma parte do RIFF
+                  href: creating-a-riff-chunk.md
+                - name: Pesquisando uma parte do RIFF
+                  href: searching-for-a-riff-chunk.md
+                - name: Pesquisando uma subparte
+                  href: searching-for-a-subchunk.md
+                - name: Executando e/s de arquivo em arquivos RIFF
+                  href: performing-file-i-o-on-riff-files.md
+                - name: Executando e/s de arquivo de memória
+                  href: performing-memory-file-i-o.md
+                - name: Instalando procedimentos de e/s personalizados
+                  href: installing-custom-i-o-procedures.md
+                - name: Compartilhando um procedimento de e/s com outros aplicativos
+                  href: sharing-an-i-o-procedure-with-other-applications.md
+            - name: Referência de e/s de arquivo de multimídia
+              href: multimedia-file-i-o-reference.md
+              items:
+                - name: Funções de e/s de arquivo multimídia
+                  href: multimedia-file-i-o-functions.md
+                - name: Estruturas de e/s de arquivo multimídia
+                  href: multimedia-file-i-o-structures.md
+                - name: Mensagens de e/s de arquivo multimídia
+                  href: multimedia-file-i-o-messages.md
+        - name: Joysticks
+          href: joysticks.md
+          items:
+            - name: Sobre os joysticks
+              href: about-joysticks.md
+              items:
+                - name: Recursos do joystick
+                  href: joystick-capabilities.md
+                - name: Posição do joystick
+                  href: joystick-position.md
+                - name: Notificações do joystick
+                  href: joystick-notifications.md
+                  items:
+                    - name: Notificações de Time-Based
+                      href: time-based-notifications.md
+                    - name: Notificações de Event-Based
+                      href: event-based-notifications.md
+                    - name: Mensagens de notificação de joystick
+                      href: joystick-notification-messages.md
+            - name: Usando joysticks
+              href: using-joysticks.md
+              items:
+                - name: Obtendo os recursos do driver
+                  href: getting-the-driver-capabilities.md
+                - name: Capturando entrada do joystick
+                  href: capturing-joystick-input.md
+                - name: Processando mensagens do joystick
+                  href: processing-joystick-messages.md
+            - name: Referência de joystick
+              href: joystick-reference.md
+              items:
+                - name: Funções de joystick de multimídia
+                  href: multimedia-joystick-functions.md
+                - name: Estruturas de joystick multimídia
+                  href: multimedia-joystick-structures.md
+                - name: Mensagens do joystick de multimídia
+                  href: multimedia-joystick-messages.md
+        - name: Temporizadores de multimídia
+          href: multimedia-timers.md
+          items:
+            - name: Sobre timers de multimídia
+              href: about-multimedia-timers.md
+              items:
+                - name: Obtendo a hora do sistema
+                  href: obtaining-the-system-time.md
+                - name: Resolução do temporizador
+                  href: timer-resolution.md
+                - name: Operações de evento de timer
+                  href: timer-operations.md
+            - name: Usando temporizadores de multimídia
+              href: using-multimedia-timers.md
+              items:
+                - name: Obtendo e definindo a resolução do temporizador
+                  href: obtaining-and-setting-timer-resolution.md
+                - name: Iniciando um único evento de temporizador
+                  href: starting-a-single-timer.md
+                - name: Escrevendo uma função de retorno de chamada do temporizador
+                  href: writing-a-timer-callback-function.md
+                - name: Cancelando um evento de timer
+                  href: canceling-a-timer-event.md
+            - name: Referência do temporizador de multimídia
+              href: multimedia-timer-reference.md
+              items:
+                - name: Funções de timer de multimídia
+                  href: multimedia-timer-functions.md
+                - name: Estruturas de timer de multimídia
+                  href: multimedia-timer-structures.md
+    - name: Vídeo para Windows
+      href: video-for-windows.md
+      items:
+        - name: Funções e macros do AVIFile
+          href: avifile-functions-and-macros.md
+          items:
+            - name: Sobre as funções e macros do AVIFile
+              href: about-avifile-functions-and-macros.md
+              items:
+                - name: Tipos de dados de função e valores de retorno
+                  href: function-data-types-and-return-values.md
+                - name: Operações de AVIFile
+                  href: avifile-operations.md
+                  items:
+                    - name: Abrindo e fechando arquivos
+                      href: opening-and-closing-files.md
+                    - name: Lendo de um arquivo
+                      href: reading-from-a-file.md
+                    - name: Gravando em um arquivo
+                      href: writing-to-a-file.md
+                    - name: Usando a área de transferência com arquivos AVI
+                      href: using-the-clipboard-with-avi-files.md
+                - name: Operações de fluxo
+                  href: stream-operations.md
+                  items:
+                    - name: Abrindo e fechando fluxos
+                      href: opening-and-closing-streams.md
+                    - name: Lendo de um fluxo
+                      href: reading-from-a-stream.md
+                    - name: Trabalhando com dados de vídeo compactados em um fluxo
+                      href: working-with-compressed-video-data-in-a-stream.md
+                    - name: Criando um arquivo de fluxos existentes
+                      href: creating-a-file-from-existing-streams.md
+                    - name: Gravando fluxos em um arquivo
+                      href: writing-streams-to-a-file.md
+                    - name: Posicionamento em fluxos
+                      href: positioning-in-streams.md
+                    - name: Criando fluxos temporários
+                      href: creating-temporary-streams.md
+                    - name: Edição de fluxos
+                      href: editing-streams.md
+            - name: Usando as funções e macros do AVIFile
+              href: using-avifile-functions-and-macros.md
+              items:
+                - name: Abrindo um arquivo AVI
+                  href: opening-an-avi-file.md
+                - name: Abrindo fluxos em um arquivo AVI e fechando o arquivo
+                  href: opening-streams-in-an-avi-file-and-closing-the-file.md
+                - name: Lendo fluxos de um arquivo AVI
+                  href: reading-streams-from-an-avi-file.md
+                - name: Lendo de um fluxo e gravando em outro
+                  href: reading-from-one-stream-and-writing-to-another.md
+                - name: Usando as funções de edição e colocando um arquivo na área de transferência
+                  href: using-the-editing-functions-and-putting-a-file-on-the-clipboard.md
+            - name: Referência de AVIFile
+              href: avifile-reference.md
+              items:
+                - name: Funções AVIFile
+                  href: avifile-functions.md
+                - name: Estruturas AVIFile
+                  href: avifile-structures.md
+                - name: AVIFile macros
+                  href: avifile-macros.md
+        - name: Gerenciador de compactação de vídeo
+          href: video-compression-manager.md
+          items:
+            - name: Sobre o Gerenciador de compactação de vídeo
+              href: about-the-video-compression-manager.md
+              items:
+                - name: Arquitetura do VCM
+                  href: vcm-architecture.md
+                - name: 'Entradas do sistema para compactadores, descompactadores e renderizadores'
+                  href: system-entries-for-compressors-decompressors-and-renderers.md
+                - name: Serviços VCMs
+                  href: vcm-services.md
+                  items:
+                    - name: Noções básicas de compressor e descompactador
+                      href: compressor-and-decompressor-basics.md
+                    - name: User-Selected compactadores
+                      href: user-selected-compressors.md
+                    - name: Instalação e remoção de compactador e descompactador
+                      href: compressor-and-decompressor-installation-and-removal.md
+                    - name: Configuração de compactador e descompactador
+                      href: compressor-and-decompressor-configuration.md
+                    - name: Obtendo informações sobre compactadores e descompactadores
+                      href: getting-information-about-compressors-and-decompressors.md
+                    - name: Compactação de Single-Image
+                      href: single-image-compression.md
+                    - name: Compactação de sequência
+                      href: sequence-compression.md
+                    - name: Compactação de Image-Data
+                      href: image-data-compression.md
+                    - name: Descompactação de Single-Image
+                      href: single-image-decompression.md
+                    - name: Descompactação de Image-Data
+                      href: image-data-decompression.md
+                    - name: Monitorando o progresso de compactadores e descompactadores
+                      href: monitoring-the-progress-of-compressors-and-decompressors.md
+                    - name: Recursos de desenho de hardware
+                      href: hardware-drawing-capabilities.md
+            - name: Usando o Gerenciador de compactação de vídeo
+              href: using-the-video-compression-manager.md
+              items:
+                - name: Localizando e abrindo compactadores e descompactadores
+                  href: locating-and-opening-compressors-and-decompressors.md
+                - name: Instalando os compactadores e os descompactadores
+                  href: installing-compressors-and-decompressors.md
+                - name: Configurando compactadores e descompactadores
+                  href: configuring-compressors-and-decompressors.md
+                - name: Obtendo informações sobre compactadores e descompactadores
+                  href: obtaining-information-about-compressors-and-decompressors.md
+                - name: Determinando o formato de saída de um compressor
+                  href: determining-a-compressors-output-format.md
+                - name: Compactando dados
+                  href: compressing-data.md
+                - name: Determinando o formato de saída de um descompactador
+                  href: determining-a-decompressors-output-format.md
+                - name: Descompactando dados
+                  href: decompressing-data.md
+                - name: Determinando se um driver pode manipular o formato de entrada
+                  href: determining-if-a-driver-can-handle-the-input-format.md
+                - name: Preparando para desenhar dados
+                  href: preparing-to-draw-data.md
+                - name: Dados de desenho
+                  href: drawing-data.md
+                - name: Progresso do monitoramento e do descompactador
+                  href: monitoring-compressor-and-decompressor-progress.md
+            - name: Referência do Gerenciador de compactação de vídeo
+              href: video-compression-manager-reference.md
+              items:
+                - name: Funções de compactação de vídeo
+                  href: video-compression-functions.md
+                - name: Estruturas de compactação de vídeo
+                  href: video-compression-structures.md
+                - name: Mensagens de compactação de vídeo
+                  href: video-compression-messages.md
+                - name: Macros de compactação de vídeo
+                  href: video-compression-macros.md
+        - name: Captura de vídeo
+          href: video-capture.md
+          items:
+            - name: Sobre a captura de vídeo
+              href: about-video-capture.md
+              items:
+                - name: 'Captura de vídeo: uma abordagem mínima'
+                  href: video-capture--a-minimal-approach.md
+                - name: Opções básicas de captura
+                  href: basic-capture-options.md
+                  items:
+                    - name: Taxa de captura
+                      href: capture-rate.md
+                    - name: Chaves que terminam captura
+                      href: keys-ending-capture.md
+                    - name: Limite de tempo
+                      href: time-limit.md
+                - name: Capturar janelas
+                  href: capture-windows.md
+                  items:
+                    - name: Criando uma janela de captura do AVICap
+                      href: creating-an-avicap-capture-window.md
+                    - name: Conectando uma janela de captura a um driver de captura
+                      href: connecting-a-capture-window-to-a-capture-driver.md
+                    - name: Parent-Child interação da janela
+                      href: parent-child-window-interaction.md
+                    - name: Status da janela de captura
+                      href: capture-window-status.md
+                - name: Drivers de áudio e captura
+                  href: capture-and-audio-drivers.md
+                  items:
+                    - name: Recursos do driver de captura
+                      href: capture-driver-capabilities.md
+                    - name: Caixas de diálogo de vídeo
+                      href: video-dialog-boxes.md
+                    - name: Modos de visualização e sobreposição
+                      href: preview-and-overlay-modes.md
+                    - name: Formato de vídeo
+                      href: video-format.md
+                    - name: Configurações de captura de vídeo
+                      href: video-capture-settings.md
+                    - name: Formato de áudio
+                      href: audio-format.md
+                - name: Arquivos de captura e buffers
+                  href: capture-file-and-buffers.md
+                  items:
+                    - name: Nome do arquivo de captura
+                      href: capture-filename.md
+                    - name: Salvando dados capturados em um novo arquivo
+                      href: saving-captured-data-to-a-new-file.md
+                    - name: Alocação de espaço em disco para o arquivo de captura
+                      href: disk-space-preallocation-for-the-capture-file.md
+                    - name: Tamanho do Índice
+                      href: index-size.md
+                    - name: Granularidade da parte de vídeo e áudio
+                      href: video-and-audio-chunk-granularity.md
+                    - name: Buffers de vídeo
+                      href: video-buffers.md
+                    - name: Buffers de áudio
+                      href: audio-buffers.md
+                - name: Capturar variações
+                  href: capture-variations.md
+                  items:
+                    - name: Captura de quadro manual
+                      href: manual-frame-capture.md
+                    - name: Captura de Still-Image
+                      href: still-image-capture.md
+                    - name: Capturar sem usar Armazenamento em Disco
+                      href: capture-without-using-disk-storage.md
+                    - name: Captura de fluxo de um dispositivo MCI
+                      href: streaming-capture-from-an-mci-device.md
+                - name: Opções avançadas de captura
+                  href: advanced-capture-options.md
+                  items:
+                    - name: Medindo a qualidade do vídeo
+                      href: measuring-video-quality.md
+                    - name: Captura de User-Initiated
+                      href: user-initiated-capture.md
+                    - name: Trabalhando com paletas
+                      href: working-with-palettes.md
+                    - name: Inserindo partes de informações em um arquivo AVI
+                      href: embedding-information-chunks-in-an-avi-file.md
+                    - name: Mensagens de dados do usuário
+                      href: user-data-messages.md
+                - name: Funções de retorno de chamada AVICap
+                  href: avicap-callback-functions.md
+                  items:
+                    - name: Controle de captura preciso
+                      href: precise-capture-control.md
+                    - name: Erro
+                      href: error.md
+                    - name: Quadro
+                      href: frame.md
+                    - name: Funções de retorno de chamada de status
+                      href: status-callback-functions.md
+                    - name: Videostream
+                      href: videostream.md
+                    - name: WaveStream
+                      href: wavestream.md
+                    - name: Gerar funções de retorno de chamada
+                      href: yield-callback-functions.md
+                    - name: Desabilitando funções de retorno de chamada
+                      href: disabling-callback-functions.md
+            - name: Usando a captura de vídeo
+              href: using-video-capture.md
+              items:
+                - name: Criando uma janela de captura
+                  href: creating-a-capture-window.md
+                - name: Conectando-se a um driver de captura
+                  href: connecting-to-a-capture-driver.md
+                - name: Enumerando os drivers de captura instalados
+                  href: enumerating-installed-capture-drivers.md
+                - name: Obtendo os recursos de um driver de captura
+                  href: obtaining-the-capabilities-of-a-capture-driver.md
+                - name: Obtendo o status de uma janela de captura
+                  href: obtaining-the-status-of-a-capture-window.md
+                - name: Exibindo caixas de diálogo para definir características de vídeo
+                  href: displaying-dialog-boxes-to-set-video-characteristics.md
+                - name: Obtendo e definindo o formato de vídeo
+                  href: obtaining-and-setting-the-video-format.md
+                - name: Visualizando vídeo
+                  href: previewing-video.md
+                - name: Habilitando a sobreposição de vídeo
+                  href: enabling-video-overlay.md
+                - name: Nomeando o arquivo de captura
+                  href: naming-the-capture-file.md
+                - name: Formatando a captura de áudio
+                  href: formatting-audio-capture.md
+                - name: Alterando uma configuração de captura de vídeo
+                  href: changing-a-video-capture-setting.md
+                - name: Capturando dados
+                  href: capturing-data.md
+                - name: Adicionando uma parte de informações
+                  href: adding-an-information-chunk.md
+                - name: Adicionando funções de retorno de chamada a um aplicativo
+                  href: adding-callback-functions-to-an-application.md
+                - name: Criando uma função de retorno de chamada de status
+                  href: creating-a-status-callback-function.md
+                - name: Criando uma função de retorno de chamada de erro
+                  href: creating-an-error-callback-function.md
+                - name: Criando uma função de retorno de chamada de quadro
+                  href: creating-a-frame-callback-function.md
+            - name: Referência de captura de vídeo
+              href: video-capture-reference.md
+              items:
+                - name: Funções de captura de vídeo
+                  href: video-capture-functions.md
+                - name: Estruturas de captura de vídeo
+                  href: video-capture-structures.md
+                - name: Mensagens de captura de vídeo
+                  href: video-capture-messages.md
+                - name: Macros de captura de vídeo
+                  href: video-capture-macros.md
+        - name: Manipuladores de arquivo e fluxo personalizados
+          href: custom-file-and-stream-handlers.md
+          items:
+            - name: Sobre manipuladores de arquivo e fluxo personalizados
+              href: about-custom-file-and-stream-handlers.md
+              items:
+                - name: Arquitetura do manipulador
+                  href: handler-architecture.md
+                - name: Conceitos de programação C++ e OLE
+                  href: c---and-ole-programming-concepts.md
+                  items:
+                    - name: 'Classes, objetos e interfaces'
+                      href: classes-objects-and-interfaces.md
+                    - name: O operador de resolução de escopo em C++
+                      href: the-scope-resolution-operator-in-c.md
+                    - name: Tabelas de funções virtuais
+                      href: virtual-function-tables.md
+                    - name: O Component Object Model OLE
+                      href: the-ole-component-object-model.md
+                - name: Interfaces IAVIStream e IAVIFile
+                  href: iavistream-and-iavifile-interfaces.md
+                - name: Instalação do manipulador de arquivos e fluxos
+                  href: file-and-stream-handler-installation.md
+            - name: Usando manipuladores de arquivo e fluxo personalizados
+              href: using-custom-file-and-stream-handlers.md
+              items:
+                - name: Criando um manipulador de arquivo ou de fluxo
+                  href: creating-a-file-or-stream-handler.md
+                - name: Criando uma tabela de função virtual para um manipulador de fluxo
+                  href: creating-a-virtual-function-table-for-a-stream-handler.md
+                - name: Criando um ponteiro de objeto
+                  href: creating-an-object-pointer.md
+                - name: Obtendo o endereço de uma tabela de funções virtuais
+                  href: obtaining-the-address-of-a-virtual-function-table.md
+                - name: Criando uma instância de File-Handler em uma DLL
+                  href: creating-a-file-handler-instance-in-a-dll.md
+                - name: Determinando a qual interface um objeto dá suporte
+                  href: determining-which-interface-an-object-supports.md
+                - name: Incrementando a contagem de referência do manipulador
+                  href: incrementing-the-handler-reference-count.md
+                - name: Excluindo um objeto
+                  href: deleting-an-object.md
+            - name: Referência de manipulador de arquivo e fluxo personalizado
+              href: custom-file-and-stream-handler-reference.md
+              items:
+                - name: Funções personalizadas de manipulador de arquivo e fluxo
+                  href: custom-file-and-stream-handler-functions.md
+                - name: Interfaces de manipulador de arquivo e fluxo personalizadas
+                  href: custom-file-and-stream-handler-interfaces.md
+        - name: DrawDib
+          href: drawdib.md
+          items:
+            - name: Sobre as funções DrawDib
+              href: about-the-drawdib-functions.md
+              items:
+                - name: Operações de DrawDib
+                  href: drawdib-operations.md
+                - name: Renderização de imagem
+                  href: image-rendering.md
+                  items:
+                    - name: Sequências de imagens
+                      href: sequences-of-images.md
+                    - name: Paletas
+                      href: palettes.md
+                    - name: Timing
+                      href: timing.md
+            - name: Usando DrawDib
+              href: using-drawdib.md
+              items:
+                - name: Adicionando manipuladores de mensagens de paleta
+                  href: adding-palette-message-handlers.md
+                - name: Desenhando um contexto de exibição
+                  href: drawing-a-display-context.md
+                - name: Animando uma paleta
+                  href: animating-a-palette.md
+            - name: Referência de DrawDib
+              href: drawdib-reference.md
+              items:
+                - name: Funções DrawDib
+                  href: drawdib-functions.md
+                - name: Estruturas DrawDib
+                  href: drawdib-structures.md
+                - name: DrawDib macros
+                  href: drawdib-macros.md
+    - name: Apêndice de multimídia
+      href: multimedia-appendix.md
+      items:
+        - name: Especificações de PC multimídia
+          href: multimedia-pc-specifications.md
+          items:
+            - name: Especificação de nível 1
+              href: level-1-specification.md
+              items:
+                - name: Recursos do sistema de nível 1
+                  href: level-1-system-resources.md
+                - name: Armazenamento óptico de nível 1
+                  href: level-1-optical-storage.md
+                - name: Requisitos de áudio de nível 1
+                  href: level-1-audio-requirements.md
+            - name: Especificação de nível 2
+              href: level-2-specification.md
+              items:
+                - name: Recursos do sistema de nível 2
+                  href: level-2-system-resources.md
+                - name: Armazenamento óptico de nível 2
+                  href: level-2-optical-storage.md
+                - name: Requisitos de áudio de nível 2
+                  href: level-2-audio-requirements.md
+        - name: Identificadores de fabricante e produto
+          href: manufacturer-and-product-identifiers.md
+          items:
+            - name: Identificadores do fabricante
+              href: manufacturer-identifiers.md
+            - name: Identificadores de produtos da Microsoft Corporation
+              href: microsoft-corporation-product-identifiers.md
+            - name: Drivers do sistema de som do Microsoft Windows
+              href: microsoft-windows-sound-system-drivers.md
+            - name: Identificadores de produtos
+              href: product-identifiers.md
+        - name: Drivers instaláveis
+          href: installable-drivers.md
+          items:
+            - name: Sobre drivers instaláveis
+              href: about-installable-drivers.md
+              items:
+                - name: Formato de driver instalável
+                  href: installable-driver-format.md
+                  items:
+                    - name: Mensagens do driver
+                      href: driver-messages.md
+                    - name: Instâncias de driver
+                      href: driver-instances.md
+                    - name: Configuração
+                      href: configuration.md
+                    - name: Instalação
+                      href: installation.md
+                    - name: Funções de retorno de chamada
+                      href: callback-functions.md
+                    - name: Arquivo de Module-Definition de unidade instalável
+                      href: installable-drive-module-definition-file.md
+                - name: Funções e mensagens de driver instaláveis
+                  href: installable-driver-functions-and-messages.md
+            - name: Usando drivers instaláveis
+              href: using-installable-drivers.md
+              items:
+                - name: Criando uma função DriverProc
+                  href: creating-a-driverproc-function.md
+                - name: Configurando um driver instalável
+                  href: configuring-an-installable-driver.md
+            - name: Referência de driver instalável
+              href: installable-driver-reference.md
+              items:
+                - name: Funções de driver instaláveis
+                  href: installable-driver-functions.md
+                  items:
+                    - name: CloseDriver
+                      href: /previous-versions//dd797785(v=vs.85)
+                    - name: DrvGetModuleHandle
+                      href: /previous-versions//dd797924(v=vs.85)
+                    - name: GetDriverModuleHandle
+                      href: /previous-versions//dd797983(v=vs.85)
+                    - name: OpenDriver
+                      href: /previous-versions//dd743639(v=vs.85)
+                    - name: SendDriverMessage
+                      href: /previous-versions//dd798653(v=vs.85)
+                - name: Funções de driver
+                  href: driver-functions.md
+                  items:
+                    - name: DefDriverProc
+                      href: /previous-versions//dd797870(v=vs.85)
+                    - name: DriverProc
+                      href: /previous-versions//dd797918(v=vs.85)
+                    - name: DriverCallback
+                      href: /previous-versions//dd797917(v=vs.85)
+                - name: Mensagens de driver instaláveis
+                  href: installable-driver-messages.md
+                  items:
+                    - name: DRV_CLOSE
+                      href: drv-close.md
+                    - name: DRV_CONFIGURE
+                      href: drv-configure.md
+                    - name: DRV_DISABLE
+                      href: drv-disable.md
+                    - name: DRV_ENABLE
+                      href: drv-enable.md
+                    - name: DRV_EXITSESSION
+                      href: drv-exitsession.md
+                    - name: DRV_FREE
+                      href: drv-free.md
+                    - name: DRV_INSTALL
+                      href: drv-install.md
+                    - name: DRV_LOAD
+                      href: drv-load.md
+                    - name: DRV_OPEN
+                      href: drv-open.md
+                    - name: DRV_POWER
+                      href: drv-power.md
+                    - name: DRV_QUERYCONFIGURE
+                      href: drv-queryconfigure.md
+                    - name: DRV_REMOVE
+                      href: drv-remove.md
+                - name: Estruturas de driver instaláveis
+                  href: installable-driver-structures.md
+                  items:
+                    - name: DRVCONFIGINFO
+                      href: /previous-versions//dd797923(v=vs.85)
+    - name: Referência de multimídia
+      href: multimedia-reference.md
+      items:
+        - name: Funções de multimídia
+          href: multimedia-functions.md
+          items:
+            - name: acmDriverAdd
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriveradd
+            - name: acmDriverClose
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverclose
+            - name: acmDriverDetails
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverdetails
+            - name: acmDriverEnum
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverenum
+            - name: ACMDRIVERENUMCB
+              href: /previous-versions//dd742891(v=vs.85)
+            - name: acmDriverID
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverid
+            - name: acmDriverMessage
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdrivermessage
+            - name: acmDriverOpen
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriveropen
+            - name: acmDriverPriority
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverpriority
+            - name: acmDriverProc
+              href: /windows/desktop/api/Msacm/nc-msacm-acmdriverproc
+            - name: acmDriverRemove
+              href: /windows/desktop/api/Msacm/nf-msacm-acmdriverremove
+            - name: acmFilterChoose
+              href: /windows/desktop/api/Msacm/nf-msacm-acmfilterchoose
+            - name: acmFilterChooseHookProc
+              href: /windows/desktop/api/Msacm/nc-msacm-acmfilterchoosehookproc
+            - name: acmFilterDetails
+              href: /windows/desktop/api/Msacm/nf-msacm-acmfilterdetails
+            - name: acmFilterEnum
+              href: /windows/desktop/api/Msacm/nf-msacm-acmfilterenum
+            - name: ACMFILTERENUMCB
+              href: /windows/desktop/api/Msacm/nc-msacm-acmfilterenumcb
+            - name: acmFilterTagDetails
+              href: /windows/desktop/api/Msacm/nf-msacm-acmfiltertagdetails
+            - name: acmFilterTagEnum
+              href: /windows/desktop/api/Msacm/nf-msacm-acmfiltertagenum
+            - name: ACMFILTERTAGENUMCB
+              href: /windows/desktop/api/Msacm/nc-msacm-acmfiltertagenumcb
+            - name: acmFormatChoose
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformatchoose
+            - name: acmFormatChooseHookProc
+              href: /windows/desktop/api/Msacm/nc-msacm-acmformatchoosehookproc
+            - name: acmFormatDetails
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformatdetails
+            - name: acmFormatEnum
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformatenum
+            - name: ACMFORMATENUMCB
+              href: /windows/desktop/api/Msacm/nc-msacm-acmformatenumcb
+            - name: acmFormatSuggest
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformatsuggest
+            - name: acmFormatTagDetails
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformattagdetails
+            - name: acmFormatTagEnum
+              href: /windows/desktop/api/Msacm/nf-msacm-acmformattagenum
+            - name: ACMFORMATTAGENUMCB
+              href: /windows/desktop/api/Msacm/nc-msacm-acmformattagenumcb
+            - name: acmGetVersion
+              href: /windows/desktop/api/Msacm/nf-msacm-acmgetversion
+            - name: acmMetrics
+              href: /windows/desktop/api/Msacm/nf-msacm-acmmetrics
+            - name: acmStreamClose
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamclose
+            - name: acmStreamConvert
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamconvert
+            - name: acmStreamMessage
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreammessage
+            - name: acmStreamOpen
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamopen
+            - name: acmStreamPrepareHeader
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamprepareheader
+            - name: acmStreamReset
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamreset
+            - name: acmStreamSize
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamsize
+            - name: acmStreamUnprepareHeader
+              href: /windows/desktop/api/Msacm/nf-msacm-acmstreamunprepareheader
+            - name: auxGetDevCaps
+              href: /previous-versions//dd756712(v=vs.85)
+            - name: auxGetNumDevs
+              href: /previous-versions//dd756713(v=vs.85)
+            - name: auxGetVolume
+              href: /previous-versions//dd756714(v=vs.85)
+            - name: auxOutMessage
+              href: /previous-versions//dd756716(v=vs.85)
+            - name: auxSetVolume
+              href: /previous-versions//dd756717(v=vs.85)
+            - name: AVIBuildFilter
+              href: /windows/desktop/api/Vfw/nf-vfw-avibuildfiltera
+            - name: AVIClearClipboard
+              href: /windows/desktop/api/Vfw/nf-vfw-aviclearclipboard
+            - name: AVIFileAddRef
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileaddref
+            - name: AVIFileCreateStream
+              href: /windows/desktop/api/Vfw/nf-vfw-avifilecreatestream
+            - name: AVIFileEndRecord
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileendrecord
+            - name: AVIFileExit
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileexit
+            - name: AVIFileGetStream
+              href: /windows/desktop/api/Vfw/nf-vfw-avifilegetstream
+            - name: AVIFileInfo
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileinfo
+            - name: AVIFileInit
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileinit
+            - name: AVIFileOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-avifileopen
+            - name: AVIFileReadData
+              href: /windows/desktop/api/Vfw/nf-vfw-avifilereaddata
+            - name: AVIFileRelease
+              href: /windows/desktop/api/Vfw/nf-vfw-avifilerelease
+            - name: AVIFileWriteData
+              href: /windows/desktop/api/Vfw/nf-vfw-avifilewritedata
+            - name: AVIGetFromClipboard
+              href: /windows/desktop/api/Vfw/nf-vfw-avigetfromclipboard
+            - name: AVIMakeCompressedStream
+              href: /windows/desktop/api/Vfw/nf-vfw-avimakecompressedstream
+            - name: AVIMakeFileFromStreams
+              href: /windows/desktop/api/Vfw/nf-vfw-avimakefilefromstreams
+            - name: AVIMakeStreamFromClipboard
+              href: /windows/desktop/api/Vfw/nf-vfw-avimakestreamfromclipboard
+            - name: AVIPutFileOnClipboard
+              href: /windows/desktop/api/Vfw/nf-vfw-aviputfileonclipboard
+            - name: AVISave
+              href: /windows/desktop/api/Vfw/nf-vfw-avisavea
+            - name: AVISaveOptions
+              href: /windows/desktop/api/Vfw/nf-vfw-avisaveoptions
+            - name: AVISaveOptionsFree
+              href: /windows/desktop/api/Vfw/nf-vfw-avisaveoptionsfree
+            - name: AVISaveV
+              href: /windows/desktop/api/Vfw/nf-vfw-avisaveva
+            - name: AVIStreamAddRef
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamaddref
+            - name: AVIStreamBeginStreaming
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreambeginstreaming
+            - name: AVIStreamCreate
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamcreate
+            - name: AVIStreamEndStreaming
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamendstreaming
+            - name: AVIStreamFindSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamfindsample
+            - name: AVIStreamGetFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamgetframe
+            - name: AVIStreamGetFrameClose
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamgetframeclose
+            - name: AVIStreamGetFrameOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamgetframeopen
+            - name: AVIStreamInfo
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreaminfoa
+            - name: AVIStreamLength
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamlength
+            - name: AVIStreamOpenFromFile
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamopenfromfilea
+            - name: AVIStreamRead
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamread
+            - name: AVIStreamReadData
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamreaddata
+            - name: AVIStreamReadFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamreadformat
+            - name: AVIStreamRelease
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamrelease
+            - name: AVIStreamSampleToTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime
+            - name: AVIStreamSetFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamsetformat
+            - name: AVIStreamStart
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamstart
+            - name: AVIStreamTimeToSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample
+            - name: AVIStreamWrite
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamwrite
+            - name: AVIStreamWriteData
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamwritedata
+            - name: capCreateCaptureWindow
+              href: /windows/desktop/api/Vfw/nf-vfw-capcreatecapturewindowa
+            - name: capControlCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-capcontrolcallback
+            - name: capGetDriverDescription
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona
+            - name: capErrorCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-caperrorcallbacka
+            - name: capStatusCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-capstatuscallbacka
+            - name: capVideoStreamCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-capvideocallback
+            - name: capWaveStreamCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-capwavecallback
+            - name: capYieldCallback
+              href: /windows/desktop/api/Vfw/nc-vfw-capyieldcallback
+            - name: CreateEditableStream
+              href: /windows/desktop/api/Vfw/nf-vfw-createeditablestream
+            - name: DllGetClassObject
+              href: /previous-versions//dd797891(v=vs.85)
+            - name: DrawDibBegin
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibbegin
+            - name: DrawDibChangePalette
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette
+            - name: DrawDibClose
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibclose
+            - name: DrawDibDraw
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibdraw
+            - name: DrawDibEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibend
+            - name: DrawDibGetBuffer
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibgetbuffer
+            - name: DrawDibGetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibgetpalette
+            - name: DrawDibOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibopen
+            - name: DrawDibProfileDisplay
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibprofiledisplay
+            - name: DrawDibRealize
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibrealize
+            - name: DrawDibSetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibsetpalette
+            - name: DrawDibStart
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibstart
+            - name: DrawDibStop
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibstop
+            - name: DrawDibTime
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibtime
+            - name: EditStreamClone
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreamclone
+            - name: EditStreamCopy
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreamcopy
+            - name: EditStreamCut
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreamcut
+            - name: EditStreamPaste
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreampaste
+            - name: EditStreamSetInfo
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreamsetinfoa
+            - name: EditStreamSetName
+              href: /windows/desktop/api/Vfw/nf-vfw-editstreamsetnamea
+            - name: GetOpenFileNamePreview
+              href: /windows/desktop/api/Vfw/nf-vfw-getopenfilenamepreviewa
+            - name: GetSaveFileNamePreview
+              href: /windows/desktop/api/Vfw/nf-vfw-getsavefilenamepreviewa
+            - name: ICClose
+              href: /windows/desktop/api/Vfw/nf-vfw-icclose
+            - name: ICCompress
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompress
+            - name: ICCompressorChoose
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressorchoose
+            - name: ICCompressorFree
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressorfree
+            - name: ICDecompress
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompress
+            - name: ICDecompressEx
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressex
+            - name: ICDecompressExBegin
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin
+            - name: ICDecompressExQuery
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressexquery
+            - name: ICDraw
+              href: /windows/desktop/api/Vfw/nf-vfw-icdraw
+            - name: ICDrawBegin
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawbegin
+            - name: ICDrawSuggestFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawsuggestformat
+            - name: ICGetDisplayFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetdisplayformat
+            - name: ICGetInfo
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetinfo
+            - name: ICImageCompress
+              href: /windows/desktop/api/Vfw/nf-vfw-icimagecompress
+            - name: ICImageDecompress
+              href: /windows/desktop/api/Vfw/nf-vfw-icimagedecompress
+            - name: ICInfo
+              href: /windows/desktop/api/Vfw/nf-vfw-icinfo
+            - name: ICInstall
+              href: /windows/desktop/api/Vfw/nf-vfw-icinstall
+            - name: ICLocate
+              href: /windows/desktop/api/Vfw/nf-vfw-iclocate
+            - name: ICOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-icopen
+            - name: ICOpenFunction
+              href: /windows/desktop/api/Vfw/nf-vfw-icopenfunction
+            - name: ICRemove
+              href: /windows/desktop/api/Vfw/nf-vfw-icremove
+            - name: ICSendMessage
+              href: /windows/desktop/api/Vfw/nf-vfw-icsendmessage
+            - name: ICSeqCompressFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-icseqcompressframe
+            - name: ICSeqCompressFrameEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-icseqcompressframeend
+            - name: ICSeqCompressFrameStart
+              href: /windows/desktop/api/Vfw/nf-vfw-icseqcompressframestart
+            - name: ICSetStatusProc
+              href: /windows/desktop/api/Vfw/nf-vfw-icsetstatusproc
+            - name: IOProc
+              href: /previous-versions//dd757098(v=vs.85)
+            - name: joyConfigChanged
+              href: /windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged
+            - name: joyGetDevCaps
+              href: /previous-versions//dd757105(v=vs.85)
+            - name: joyGetNumDevs
+              href: /previous-versions//dd757106(v=vs.85)
+            - name: joyGetPos
+              href: /previous-versions//dd757107(v=vs.85)
+            - name: joyGetPosEx
+              href: /previous-versions//dd757108(v=vs.85)
+            - name: joyGetThreshold
+              href: /previous-versions//dd757109(v=vs.85)
+            - name: joyReleaseCapture
+              href: /previous-versions//dd757113(v=vs.85)
+            - name: joySetCapture
+              href: /previous-versions//dd757114(v=vs.85)
+            - name: joySetThreshold
+              href: /previous-versions//dd757115(v=vs.85)
+            - name: LPTIMECALLBACK
+              href: /previous-versions//ff728861(v=vs.85)
+            - name: mciExecute
+              href: /previous-versions//dd757154(v=vs.85)
+            - name: mciGetCreatorTask
+              href: /previous-versions//dd757155(v=vs.85)
+            - name: mciGetDeviceID
+              href: /previous-versions//dd757156(v=vs.85)
+            - name: mciGetDeviceIDFromElementID
+              href: /previous-versions//dd757157(v=vs.85)
+            - name: mciGetErrorString
+              href: /previous-versions//dd757158(v=vs.85)
+            - name: mciGetYieldProc
+              href: /previous-versions//dd757159(v=vs.85)
+            - name: mciSendCommand
+              href: /previous-versions//dd757160(v=vs.85)
+            - name: mciSendString
+              href: /previous-versions//dd757161(v=vs.85)
+            - name: mciSetYieldProc
+              href: /previous-versions//dd757163(v=vs.85)
+            - name: MCIWndCreate
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcreatea
+            - name: MCIWndRegisterClass
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndregisterclass
+            - name: midiConnect
+              href: /previous-versions//dd798446(v=vs.85)
+            - name: midiDisconnect
+              href: /previous-versions//dd798447(v=vs.85)
+            - name: midiInAddBuffer
+              href: /previous-versions//dd798450(v=vs.85)
+            - name: midiInClose
+              href: /previous-versions//dd798452(v=vs.85)
+            - name: midiInGetDevCaps
+              href: /previous-versions//dd798453(v=vs.85)
+            - name: midiInGetErrorText
+              href: /previous-versions//dd798454(v=vs.85)
+            - name: midiInGetID
+              href: /previous-versions//dd798455(v=vs.85)
+            - name: midiInGetNumDevs
+              href: /previous-versions//dd798456(v=vs.85)
+            - name: midiInMessage
+              href: /previous-versions//dd798457(v=vs.85)
+            - name: midiInOpen
+              href: /previous-versions//dd798458(v=vs.85)
+            - name: midiInPrepareHeader
+              href: /previous-versions//dd798459(v=vs.85)
+            - name: MidiInProc
+              href: /previous-versions//dd798460(v=vs.85)
+            - name: midiInReset
+              href: /previous-versions//dd798461(v=vs.85)
+            - name: midiInStart
+              href: /previous-versions//dd798462(v=vs.85)
+            - name: midiInStop
+              href: /previous-versions//dd798463(v=vs.85)
+            - name: midiInUnprepareHeader
+              href: /previous-versions//dd798464(v=vs.85)
+            - name: midiOutCacheDrumPatches
+              href: /previous-versions//dd798465(v=vs.85)
+            - name: midiOutCachePatches
+              href: /previous-versions//dd798466(v=vs.85)
+            - name: midiOutClose
+              href: /previous-versions//dd798468(v=vs.85)
+            - name: midiOutGetDevCaps
+              href: /previous-versions//dd798469(v=vs.85)
+            - name: midiOutGetErrorText
+              href: /previous-versions//dd798470(v=vs.85)
+            - name: midiOutGetID
+              href: /previous-versions//dd798471(v=vs.85)
+            - name: midiOutGetNumDevs
+              href: /previous-versions//dd798472(v=vs.85)
+            - name: midiOutGetVolume
+              href: /previous-versions//dd798473(v=vs.85)
+            - name: midiOutLongMsg
+              href: /previous-versions//dd798474(v=vs.85)
+            - name: midiOutMessage
+              href: /previous-versions//dd798475(v=vs.85)
+            - name: midiOutOpen
+              href: /previous-versions//dd798476(v=vs.85)
+            - name: midiOutPrepareHeader
+              href: /previous-versions//dd798477(v=vs.85)
+            - name: MidiOutProc
+              href: /previous-versions//dd798478(v=vs.85)
+            - name: midiOutReset
+              href: /previous-versions//dd798479(v=vs.85)
+            - name: midiOutSetVolume
+              href: /previous-versions//dd798480(v=vs.85)
+            - name: midiOutShortMsg
+              href: /previous-versions//dd798481(v=vs.85)
+            - name: midiOutUnprepareHeader
+              href: /previous-versions//dd798482(v=vs.85)
+            - name: midiStreamClose
+              href: /previous-versions//dd798485(v=vs.85)
+            - name: midiStreamOpen
+              href: /previous-versions//dd798486(v=vs.85)
+            - name: midiStreamOut
+              href: /previous-versions//dd798487(v=vs.85)
+            - name: midiStreamPause
+              href: /previous-versions//dd798488(v=vs.85)
+            - name: midiStreamPosition
+              href: /previous-versions//dd798489(v=vs.85)
+            - name: midiStreamProperty
+              href: /previous-versions//dd798490(v=vs.85)
+            - name: midiStreamRestart
+              href: /previous-versions//dd798491(v=vs.85)
+            - name: midiStreamStop
+              href: /previous-versions//dd798492(v=vs.85)
+            - name: mixerClose
+              href: /previous-versions//dd757292(v=vs.85)
+            - name: mixerGetControlDetails
+              href: /previous-versions//dd757299(v=vs.85)
+            - name: mixerGetDevCaps
+              href: /previous-versions//dd757300(v=vs.85)
+            - name: mixerGetID
+              href: /previous-versions//dd757301(v=vs.85)
+            - name: mixerGetLineControls
+              href: /previous-versions//dd757302(v=vs.85)
+            - name: mixerGetLineInfo
+              href: /previous-versions//dd757303(v=vs.85)
+            - name: mixerGetNumDevs
+              href: /previous-versions//dd757304(v=vs.85)
+            - name: mixerMessage
+              href: /previous-versions//dd757307(v=vs.85)
+            - name: mixerOpen
+              href: /previous-versions//dd757308(v=vs.85)
+            - name: mixerSetControlDetails
+              href: /previous-versions//dd757309(v=vs.85)
+            - name: mmGetCurrentTask
+              href: /windows/desktop/api/Mmddk/nf-mmddk-mmgetcurrenttask
+            - name: mmioAdvance
+              href: /previous-versions//dd757314(v=vs.85)
+            - name: mmioAscend
+              href: /previous-versions//dd757315(v=vs.85)
+            - name: mmioClose
+              href: /previous-versions//dd757316(v=vs.85)
+            - name: mmioCreateChunk
+              href: /previous-versions//dd757317(v=vs.85)
+            - name: mmioDescend
+              href: /previous-versions//dd757318(v=vs.85)
+            - name: mmioFlush
+              href: /previous-versions//dd757319(v=vs.85)
+            - name: mmioGetInfo
+              href: /previous-versions//dd757321(v=vs.85)
+            - name: mmioInstallIOProc
+              href: /previous-versions//dd757323(v=vs.85)
+            - name: mmioOpen
+              href: /previous-versions//dd757331(v=vs.85)
+            - name: MMIOProc
+              href: /previous-versions//dd757332(v=vs.85)
+            - name: mmioRead
+              href: /previous-versions//dd757334(v=vs.85)
+            - name: mmioRename
+              href: /previous-versions//dd757335(v=vs.85)
+            - name: mmioSeek
+              href: /previous-versions//dd757336(v=vs.85)
+            - name: mmioSendMessage
+              href: /previous-versions//dd757337(v=vs.85)
+            - name: mmioSetBuffer
+              href: /previous-versions//dd757338(v=vs.85)
+            - name: mmioSetInfo
+              href: /previous-versions//dd757339(v=vs.85)
+            - name: mmioStringToFOURCC
+              href: /previous-versions//dd757340(v=vs.85)
+            - name: mmioWrite
+              href: /previous-versions//dd757341(v=vs.85)
+            - name: mmsystemGetVersion
+              href: /previous-versions//dd757342(v=vs.85)
+            - name: mmTaskBlock
+              href: /windows/desktop/api/Mmddk/nf-mmddk-mmtaskblock
+            - name: mmTaskCreate
+              href: /windows/desktop/api/Mmddk/nf-mmddk-mmtaskcreate
+            - name: mmTaskSignal
+              href: /windows/desktop/api/Mmddk/nf-mmddk-mmtasksignal
+            - name: mmTaskYield
+              href: /windows/desktop/api/Mmddk/nf-mmddk-mmtaskyield
+            - name: MyStatusProc
+              href: /previous-versions//dd743620(v=vs.85)
+            - name: PlaySound
+              href: /previous-versions//dd743680(v=vs.85)
+            - name: sndOpenSound
+              href: /windows/desktop/api/mmiscapi/nf-mmiscapi-sndopensound
+            - name: sndPlaySound
+              href: /previous-versions//dd798676(v=vs.85)
+            - name: StretchDIB
+              href: /windows/desktop/api/Vfw/nf-vfw-stretchdib
+            - name: timeBeginPeriod
+              href: /windows/desktop/api/TimeAPI/nf-timeapi-timebeginperiod
+            - name: timeEndPeriod
+              href: /windows/desktop/api/TimeAPI/nf-timeapi-timeendperiod
+            - name: timeGetDevCaps
+              href: /windows/desktop/api/TimeAPI/nf-timeapi-timegetdevcaps
+            - name: timeGetSystemTime
+              href: /windows/desktop/api/TimeAPI/nf-timeapi-timegetsystemtime
+            - name: timeGetTime
+              href: /windows/desktop/api/TimeAPI/nf-timeapi-timegettime
+            - name: timeKillEvent
+              href: /previous-versions//dd757630(v=vs.85)
+            - name: Timeproc
+              href: /previous-versions//dd757631(v=vs.85)
+            - name: timeSetEvent
+              href: /previous-versions//dd757634(v=vs.85)
+            - name: waveInAddBuffer
+              href: /previous-versions//dd743838(v=vs.85)
+            - name: waveInClose
+              href: /previous-versions//dd743840(v=vs.85)
+            - name: waveInGetDevCaps
+              href: /previous-versions//dd743841(v=vs.85)
+            - name: waveInGetErrorText
+              href: /previous-versions//dd743842(v=vs.85)
+            - name: waveInGetID
+              href: /previous-versions//dd743843(v=vs.85)
+            - name: waveInGetNumDevs
+              href: /previous-versions//dd743844(v=vs.85)
+            - name: waveInGetPosition
+              href: /previous-versions//dd743845(v=vs.85)
+            - name: waveInMessage
+              href: /previous-versions//dd743846(v=vs.85)
+            - name: waveInOpen
+              href: /previous-versions//dd743847(v=vs.85)
+            - name: waveInPrepareHeader
+              href: /previous-versions//dd743848(v=vs.85)
+            - name: waveInProc
+              href: /previous-versions//dd743849(v=vs.85)
+            - name: waveInReset
+              href: /previous-versions//dd743850(v=vs.85)
+            - name: waveInStart
+              href: /previous-versions//dd743851(v=vs.85)
+            - name: waveInStop
+              href: /previous-versions//dd743852(v=vs.85)
+            - name: waveInUnprepareHeader
+              href: /previous-versions//dd743853(v=vs.85)
+            - name: waveOutBreakLoop
+              href: /previous-versions//dd743854(v=vs.85)
+            - name: waveOutClose
+              href: /previous-versions//dd743856(v=vs.85)
+            - name: waveOutGetDevCaps
+              href: /previous-versions//dd743857(v=vs.85)
+            - name: waveOutGetErrorText
+              href: /previous-versions//dd743858(v=vs.85)
+            - name: waveOutGetID
+              href: /previous-versions//dd743859(v=vs.85)
+            - name: waveOutGetNumDevs
+              href: /previous-versions//dd743860(v=vs.85)
+            - name: waveOutGetPitch
+              href: /previous-versions//dd743861(v=vs.85)
+            - name: waveOutGetPlaybackRate
+              href: /previous-versions//dd743862(v=vs.85)
+            - name: waveOutGetPosition
+              href: /previous-versions//dd743863(v=vs.85)
+            - name: waveOutGetVolume
+              href: /previous-versions//dd743864(v=vs.85)
+            - name: waveOutMessage
+              href: /previous-versions//dd743865(v=vs.85)
+            - name: waveOutOpen
+              href: /previous-versions//dd743866(v=vs.85)
+            - name: waveOutPause
+              href: /previous-versions//dd743867(v=vs.85)
+            - name: waveOutPrepareHeader
+              href: /previous-versions//dd743868(v=vs.85)
+            - name: waveOutProc
+              href: /previous-versions//dd743869(v=vs.85)
+            - name: waveOutReset
+              href: /previous-versions//dd743870(v=vs.85)
+            - name: waveOutRestart
+              href: /previous-versions//dd743871(v=vs.85)
+            - name: waveOutSetPitch
+              href: /previous-versions//dd743872(v=vs.85)
+            - name: waveOutSetPlaybackRate
+              href: /previous-versions//dd743873(v=vs.85)
+            - name: waveOutSetVolume
+              href: /previous-versions//dd743874(v=vs.85)
+            - name: waveOutUnprepareHeader
+              href: /previous-versions//dd743875(v=vs.85)
+            - name: waveOutWrite
+              href: /previous-versions//dd743876(v=vs.85)
+        - name: Estruturas de multimídia
+          href: multimedia-structures.md
+          items:
+            - name: ACMDRIVERDETAILS
+              href: /windows/desktop/api/Msacm/ns-msacm-acmdriverdetails
+            - name: ACMFILTERCHOOSE
+              href: /windows/desktop/api/Msacm/ns-msacm-acmfilterchoose
+            - name: ACMFILTERDETAILS
+              href: /windows/desktop/api/Msacm/ns-msacm-acmfilterdetails
+            - name: ACMFILTERTAGDETAILS
+              href: /windows/desktop/api/Msacm/ns-msacm-acmfiltertagdetails
+            - name: ACMFORMATCHOOSE
+              href: /windows/desktop/api/Msacm/ns-msacm-acmformatchoose
+            - name: ACMFORMATDETAILS
+              href: /windows/desktop/api/Msacm/ns-msacm-acmformatdetails
+            - name: ACMFORMATTAGDETAILS
+              href: /windows/desktop/api/Msacm/ns-msacm-acmformattagdetails
+            - name: ACMSTREAMHEADER
+              href: /windows/desktop/api/Msacm/ns-msacm-acmstreamheader
+            - name: AUXCAPS
+              href: /previous-versions//dd756711(v=vs.85)
+            - name: AVICOMPRESSOPTIONS
+              href: /windows/desktop/api/Vfw/ns-vfw-avicompressoptions
+            - name: AVIFILEINFO
+              href: /windows/win32/api/Vfw/ns-vfw-avifileinfoa
+            - name: AVISTREAMINFO
+              href: /windows/win32/api/Vfw/ns-vfw-avistreaminfoa
+            - name: CAPDRIVERCAPS
+              href: /windows/win32/api/Vfw/ns-vfw-capdrivercaps
+            - name: CAPINFOCHUNK
+              href: /windows/win32/api/Vfw/ns-vfw-capinfochunk
+            - name: CAPSTATUS
+              href: /windows/win32/api/Vfw/ns-vfw-capstatus
+            - name: CAPTUREPARMS
+              href: /windows/win32/api/Vfw/ns-vfw-captureparms
+            - name: COMPVARS
+              href: /windows/desktop/api/Vfw/ns-vfw-compvars
+            - name: DRAWDIBTIME
+              href: /windows/desktop/api/Vfw/ns-vfw-drawdibtime
+            - name: ICCOMPRESS
+              href: /windows/desktop/api/Vfw/ns-vfw-iccompress
+            - name: ICCOMPRESSFRAMES
+              href: /windows/desktop/api/Vfw/ns-vfw-iccompressframes
+            - name: ICDECOMPRESS
+              href: /windows/desktop/api/Vfw/ns-vfw-icdecompress
+            - name: ICDECOMPRESSEX
+              href: /windows/desktop/api/Vfw/ns-vfw-icdecompressex
+            - name: ICDRAW
+              href: /windows/desktop/api/Vfw/ns-vfw-icdraw
+            - name: ICDRAWBEGIN
+              href: /windows/desktop/api/Vfw/ns-vfw-icdrawbegin
+            - name: ICDRAWSUGGEST
+              href: /windows/desktop/api/Vfw/ns-vfw-icdrawsuggest
+            - name: ICINFO
+              href: /windows/desktop/api/Vfw/ns-vfw-icinfo
+            - name: ICOPEN
+              href: /windows/desktop/api/Vfw/ns-vfw-icopen
+            - name: ICSETSTATUSPROC
+              href: /windows/desktop/api/Vfw/ns-vfw-icsetstatusproc
+            - name: JOYCAPS
+              href: /previous-versions//dd757103(v=vs.85)
+            - name: JOYINFO
+              href: /previous-versions//dd757110(v=vs.85)
+            - name: JOYINFOEX
+              href: /previous-versions//dd757112(v=vs.85)
+            - name: MCI_BREAK_PARMS
+              href: mci-break-parms.md
+            - name: MCI_DGV_CAPTURE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_capture_parmsa
+            - name: MCI_DGV_CUE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cue_parms
+            - name: MCI_DGV_COPY_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_copy_parms
+            - name: MCI_DGV_CUT_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cut_parms
+            - name: MCI_DGV_DELETE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_delete_parms
+            - name: MCI_DGV_FREEZE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_rect_parms
+            - name: MCI_DGV_INFO_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_info_parmsa
+            - name: MCI_DGV_LIST_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_list_parmsa
+            - name: MCI_DGV_LOAD_PARMS
+              href: /previous-versions//dd743391(v=vs.85)
+            - name: MCI_DGV_MONITOR_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_monitor_parms
+            - name: MCI_DGV_OPEN_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa
+            - name: MCI_DGV_PASTE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_paste_parms
+            - name: MCI_DGV_PAUSE_PARMS
+              href: /previous-versions//dd743395(v=vs.85)
+            - name: MCI_DGV_PLAY_PARMS
+              href: /previous-versions//dd743396(v=vs.85)
+            - name: MCI_DGV_PUT_PARMS
+              href: /previous-versions//dd743397(v=vs.85)
+            - name: MCI_DGV_QUALITY_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_quality_parmsa
+            - name: MCI_DGV_RECORD_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_record_parms
+            - name: MCI_DGV_RECT_PARMS
+              href: /windows/desktop/api/digitalv/ns-digitalv-mci_dgv_rect_parms
+            - name: MCI_DGV_RESERVE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_reserve_parmsa
+            - name: MCI_DGV_RESTORE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_restore_parmsa
+            - name: MCI_DGV_RESUME_PARMS
+              href: /previous-versions//dd743403(v=vs.85)
+            - name: MCI_DGV_SAVE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_save_parmsa
+            - name: MCI_DGV_SET_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_set_parms
+            - name: MCI_DGV_SETAUDIO_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setaudio_parmsa
+            - name: MCI_DGV_SETVIDEO_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setvideo_parmsa
+            - name: MCI_DGV_SIGNAL_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_signal_parms
+            - name: MCI_DGV_STATUS_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa
+            - name: MCI_DGV_STEP_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_step_parms
+            - name: MCI_DGV_STOP_PARMS
+              href: /previous-versions//dd743411(v=vs.85)
+            - name: MCI_DGV_UPDATE_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_update_parms
+            - name: MCI_DGV_WINDOW_PARMS
+              href: /windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_window_parmsa
+            - name: MCI_GENERIC_PARMS
+              href: mci-generic-parms.md
+            - name: MCI_GETDEVCAPS_PARMS
+              href: mci-getdevcaps-parms.md
+            - name: MCI_INFO_PARMS
+              href: mci-info-parms.md
+            - name: MCI_LOAD_PARMS
+              href: mci-load-parms.md
+            - name: MCI_OPEN_PARMS
+              href: mci-open-parms.md
+            - name: MCI_OVLY_LOAD_PARMS
+              href: mci-ovly-load-parms.md
+            - name: MCI_OVLY_OPEN_PARMS
+              href: mci-ovly-open-parms.md
+            - name: MCI_OVLY_RECT_PARMS
+              href: mci-ovly-rect-parms.md
+            - name: MCI_OVLY_SAVE_PARMS
+              href: /previous-versions//dd743447(v=vs.85)
+            - name: MCI_OVLY_WINDOW_PARMS
+              href: mci-ovly-window-parms.md
+            - name: MCI_PLAY_PARMS
+              href: mci-play-parms.md
+            - name: MCI_RECORD_PARMS
+              href: mci-record-parms.md
+            - name: MCI_SAVE_PARMS
+              href: mci-save-parms.md
+            - name: MCI_SEEK_PARMS
+              href: mci-seek-parms.md
+            - name: MCI_SEQ_SET_PARMS
+              href: mci-seq-set-parms.md
+            - name: MCI_SET_PARMS
+              href: mci-set-parms.md
+            - name: MCI_STATUS_PARMS
+              href: mci-status-parms.md
+            - name: MCI_SYSINFO_PARMS
+              href: mci-sysinfo-parms.md
+            - name: MCI_VCR_CUE_PARMS
+              href: mci-vcr-cue-parms.md
+            - name: MCI_VCR_LIST_PARMS
+              href: mci-vcr-list-parms.md
+            - name: MCI_VCR_PLAY_PARMS
+              href: mci-vcr-play-parms.md
+            - name: MCI_VCR_RECORD_PARMS
+              href: mci-vcr-record-parms.md
+            - name: MCI_VCR_SEEK_PARMS
+              href: mci-vcr-seek-parms.md
+            - name: MCI_VCR_SET_PARMS
+              href: mci-vcr-set-parms.md
+            - name: MCI_VCR_SETAUDIO_PARMS
+              href: mci-vcr-setaudio-parms.md
+            - name: MCI_VCR_SETTUNER_PARMS
+              href: mci-vcr-settuner-parms.md
+            - name: MCI_VCR_SETVIDEO_PARMS
+              href: mci-vcr-setvideo-parms.md
+            - name: MCI_VCR_STATUS_PARMS
+              href: mci-vcr-status-parms.md
+            - name: MCI_VCR_STEP_PARMS
+              href: mci-vcr-step-parms.md
+            - name: MCI_VD_ESCAPE_PARMS
+              href: mci-vd-escape-parms.md
+            - name: MCI_VD_PLAY_PARMS
+              href: mci-vd-play-parms.md
+            - name: MCI_VD_STEP_PARMS
+              href: mci-vd-step-parms.md
+            - name: MCI_WAVE_DELETE_PARMS
+              href: mci-wave-delete-parms.md
+            - name: MCI_WAVE_OPEN_PARMS
+              href: mci-wave-open-parms.md
+            - name: MCI_WAVE_SET_PARMS
+              href: mci-wave-set-parms.md
+            - name: MIDIEVENT
+              href: /previous-versions//dd798448(v=vs.85)
+            - name: MIDIHDR
+              href: /previous-versions//dd798449(v=vs.85)
+            - name: MIDIINCAPS
+              href: /previous-versions//dd798451(v=vs.85)
+            - name: MIDIOUTCAPS
+              href: /previous-versions//dd798467(v=vs.85)
+            - name: MIDIPROPTEMPO
+              href: /previous-versions//dd798483(v=vs.85)
+            - name: MIDIPROPTIMEDIV
+              href: /previous-versions//dd798484(v=vs.85)
+            - name: MIDISTRMBUFFVER
+              href: /previous-versions//dd798493(v=vs.85)
+            - name: MIXERCAPS
+              href: /windows/desktop/api/mmeapi/ns-mmeapi-mixercapsa
+            - name: MIXERCONTROL
+              href: /windows/desktop/api/mmeapi/ns-mmeapi-mixercontrola
+            - name: MIXERCONTROLDETAILS
+              href: /windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta
+            - name: MIXERCONTROLDETAILS_BOOLEAN
+              href: /previous-versions//dd757295(v=vs.85)
+            - name: MIXERCONTROLDETAILS_LISTTEXT
+              href: /previous-versions//dd757296(v=vs.85)
+            - name: MIXERCONTROLDETAILS_SIGNED
+              href: /previous-versions//dd757297(v=vs.85)
+            - name: MIXERCONTROLDETAILS_UNSIGNED
+              href: /previous-versions//dd757298(v=vs.85)
+            - name: MIXER
+              href: /windows/desktop/api/mmeapi/ns-mmeapi-mixerlinea
+            - name: MIXERLINECONTROLS
+              href: /windows/desktop/api/mmeapi/ns-mmeapi-mixerlinecontrolsa
+            - name: MMCKINFO
+              href: /previous-versions//dd757312(v=vs.85)
+            - name: MMIOINFO
+              href: /previous-versions//dd757322(v=vs.85)
+            - name: MMTIME
+              href: /previous-versions//dd757347(v=vs.85)
+            - name: PCMWAVEFORMAT
+              href: /previous-versions//dd743663(v=vs.85)
+            - name: Timecaps
+              href: /windows/win32/api/TimeAPI/ns-timeapi-timecaps
+            - name: VIDEOHDR
+              href: /windows/win32/api/Vfw/ns-vfw-videohdr
+            - name: WAVEFILTER
+              href: /windows/win32/api/Mmreg/ns-mmreg-wavefilter
+            - name: WAVEFORMAT
+              href: /windows/desktop/api/mmeapi/ns-mmeapi-waveformat
+            - name: WAVEFORMATEX
+              href: /previous-versions//dd757713(v=vs.85)
+            - name: WAVEFORMATEXTENSIBLE
+              href: /windows/desktop/api/mmreg/ns-mmreg-waveformatextensible
+            - name: WAVEHDR
+              href: /previous-versions//dd743837(v=vs.85)
+            - name: WAVEINCAPS
+              href: /previous-versions//dd743839(v=vs.85)
+            - name: WAVEOUTCAPS
+              href: /previous-versions//dd743855(v=vs.85)
+        - name: Macros multimídia
+          href: multimedia-macros.md
+          items:
+            - name: AVIStreamDataSize
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamdatasize
+            - name: AVIStreamEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamend
+            - name: AVIStreamEndTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamendtime
+            - name: AVIStreamFormatSize
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamformatsize
+            - name: AVIStreamIsKeyFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe
+            - name: AVIStreamLengthTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamlengthtime
+            - name: AVIStreamNearestKeyFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframe
+            - name: AVIStreamNearestKeyFrameTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframetime
+            - name: AVIStreamNearestSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnearestsample
+            - name: AVIStreamNearestSampleTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnearestsampletime
+            - name: AVIStreamNextKeyFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframe
+            - name: AVIStreamNextKeyFrameTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframetime
+            - name: AVIStreamNextSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnextsample
+            - name: AVIStreamNextSampleTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamnextsampletime
+            - name: AVIStreamPrevKeyFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamprevkeyframe
+            - name: AVIStreamPrevKeyFrameTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamprevkeyframetime
+            - name: AVIStreamPrevSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamprevsample
+            - name: AVIStreamPrevSampleTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamprevsampletime
+            - name: AVIStreamSampleSize
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamsamplesize
+            - name: AVIStreamSampleToSample
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamsampletosample
+            - name: AVIStreamStartTime
+              href: /windows/desktop/api/Vfw/nf-vfw-avistreamstarttime
+            - name: capCaptureAbort
+              href: /windows/desktop/api/Vfw/nf-vfw-capcaptureabort
+            - name: capCaptureGetSetup
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturegetsetup
+            - name: capCaptureSequence
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesequence
+            - name: capCaptureSequenceNoFile
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesequencenofile
+            - name: capCaptureSetSetup
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup
+            - name: capCaptureSingleFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesingleframe
+            - name: capCaptureSingleFrameClose
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesingleframeclose
+            - name: capCaptureSingleFrameOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturesingleframeopen
+            - name: capCaptureStop
+              href: /windows/desktop/api/Vfw/nf-vfw-capcapturestop
+            - name: capDlgVideoCompression
+              href: /windows/desktop/api/Vfw/nf-vfw-capdlgvideocompression
+            - name: capDlgVideoDisplay
+              href: /windows/desktop/api/Vfw/nf-vfw-capdlgvideodisplay
+            - name: capDlgVideoFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat
+            - name: capDlgVideoSource
+              href: /windows/desktop/api/Vfw/nf-vfw-capdlgvideosource
+            - name: capDriverConnect
+              href: /windows/desktop/api/Vfw/nf-vfw-capdriverconnect
+            - name: capDriverDisconnect
+              href: /windows/desktop/api/Vfw/nf-vfw-capdriverdisconnect
+            - name: capDriverGetCaps
+              href: /windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps
+            - name: capDriverGetName
+              href: /windows/desktop/api/Vfw/nf-vfw-capdrivergetname
+            - name: capDriverGetVersion
+              href: /windows/desktop/api/Vfw/nf-vfw-capdrivergetversion
+            - name: capEditCopy
+              href: /windows/desktop/api/Vfw/nf-vfw-capeditcopy
+            - name: capFileAlloc
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilealloc
+            - name: capFileGetCaptureFile
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilegetcapturefile
+            - name: capFileSaveAs
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilesaveas
+            - name: capFileSaveDIB
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilesavedib
+            - name: capFileSetCaptureFile
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilesetcapturefile
+            - name: capFileSetInfoChunk
+              href: /windows/desktop/api/Vfw/nf-vfw-capfilesetinfochunk
+            - name: capGetAudioFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetaudioformat
+            - name: capGetAudioFormatSize
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetaudioformatsize
+            - name: capGetMCIDeviceName
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename
+            - name: capGetStatus
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetstatus
+            - name: capGetUserData
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetuserdata
+            - name: capGetVideoFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetvideoformat
+            - name: capGetVideoFormatSize
+              href: /windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize
+            - name: capGrabFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-capgrabframe
+            - name: capGrabFrameNoStop
+              href: /windows/desktop/api/Vfw/nf-vfw-capgrabframenostop
+            - name: capOverlay
+              href: /windows/desktop/api/Vfw/nf-vfw-capoverlay
+            - name: capPaletteAuto
+              href: /windows/desktop/api/Vfw/nf-vfw-cappaletteauto
+            - name: capPaletteManual
+              href: /windows/desktop/api/Vfw/nf-vfw-cappalettemanual
+            - name: capPaletteOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-cappaletteopen
+            - name: capPalettePaste
+              href: /windows/desktop/api/Vfw/nf-vfw-cappalettepaste
+            - name: capPaletteSave
+              href: /windows/desktop/api/Vfw/nf-vfw-cappalettesave
+            - name: capPreview
+              href: /windows/desktop/api/Vfw/nf-vfw-cappreview
+            - name: capPreviewRate
+              href: /windows/desktop/api/Vfw/nf-vfw-cappreviewrate
+            - name: capPreviewScale
+              href: /windows/desktop/api/Vfw/nf-vfw-cappreviewscale
+            - name: capSetAudioFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetaudioformat
+            - name: capSetCallbackOnCapControl
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackoncapcontrol
+            - name: capSetCallbackOnError
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror
+            - name: capSetCallbackOnFrame
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe
+            - name: capSetCallbackOnStatus
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus
+            - name: capSetCallbackOnVideoStream
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonvideostream
+            - name: capSetCallbackOnWaveStream
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonwavestream
+            - name: capSetCallbackOnYield
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetcallbackonyield
+            - name: capSetMCIDeviceName
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetmcidevicename
+            - name: capSetScrollPos
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetscrollpos
+            - name: capSetUserData
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetuserdata
+            - name: capSetVideoFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-capsetvideoformat
+            - name: DrawDibUpdate
+              href: /windows/desktop/api/Vfw/nf-vfw-drawdibupdate
+            - name: ICAbout
+              href: /windows/desktop/api/Vfw/nf-vfw-icabout
+            - name: ICCompressBegin
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressbegin
+            - name: ICCompressEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressend
+            - name: ICCompressGetFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressgetformat
+            - name: ICCompressGetFormatSize
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressgetformatsize
+            - name: ICCompressGetSize
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressgetsize
+            - name: ICCompressQuery
+              href: /windows/desktop/api/Vfw/nf-vfw-iccompressquery
+            - name: ICConfigure
+              href: /windows/desktop/api/Vfw/nf-vfw-icconfigure
+            - name: ICDecompressBegin
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressbegin
+            - name: ICDecompressEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressend
+            - name: ICDecompressExEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressexend
+            - name: ICDecompressGetFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat
+            - name: ICDecompressGetFormatSize
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize
+            - name: ICDecompressGetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette
+            - name: ICDecompressOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressopen
+            - name: ICDecompressQuery
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompressquery
+            - name: ICDecompressSetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette
+            - name: ICDrawChangePalette
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette
+            - name: ICDrawEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawend
+            - name: ICDrawFlush
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawflush
+            - name: ICDrawGetTime
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawgettime
+            - name: ICDrawOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawopen
+            - name: ICDrawQuery
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawquery
+            - name: ICDrawRealize
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawrealize
+            - name: ICDrawRenderBuffer
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawrenderbuffer
+            - name: ICDrawSetTime
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawsettime
+            - name: ICDrawStart
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawstart
+            - name: ICDrawStartPlay
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawstartplay
+            - name: ICDrawStop
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawstop
+            - name: ICDrawStopPlay
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawstopplay
+            - name: ICDrawWindow
+              href: /windows/desktop/api/Vfw/nf-vfw-icdrawwindow
+            - name: ICGetBuffersWanted
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted
+            - name: ICGetDefaultKeyFrameRate
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate
+            - name: ICGetDefaultQuality
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetdefaultquality
+            - name: ICGetState
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetstate
+            - name: ICGetStateSize
+              href: /windows/desktop/api/Vfw/nf-vfw-icgetstatesize
+            - name: ICQueryAbout
+              href: /windows/desktop/api/Vfw/nf-vfw-icqueryabout
+            - name: ICQueryConfigure
+              href: /windows/desktop/api/Vfw/nf-vfw-icqueryconfigure
+            - name: ICSetState
+              href: /windows/desktop/api/Vfw/nf-vfw-icsetstate
+            - name: max
+              href: max.md
+            - name: MCI_HMS_HOUR
+              href: mci-hms-hour.md
+            - name: MCI_HMS_MINUTE
+              href: mci-hms-minute.md
+            - name: MCI_HMS_SECOND
+              href: mci-hms-second.md
+            - name: MCI_MAKE_HMS
+              href: mci-make-hms.md
+            - name: MCI_MAKE_MSF
+              href: mci-make-msf.md
+            - name: MCI_MAKE_TMSF
+              href: mci-make-tmsf.md
+            - name: MCI_MSF_FRAME
+              href: /previous-versions//dd743438(v=vs.85)
+            - name: MCI_MSF_MINUTE
+              href: mci-msf-minute.md
+            - name: MCI_MSF_SECOND
+              href: mci-msf-second.md
+            - name: MCI_TMSF_FRAME
+              href: mci-tmsf-frame.md
+            - name: MCI_TMSF_MINUTE
+              href: mci-tmsf-minute.md
+            - name: MCI_TMSF_SECOND
+              href: mci-tmsf-second.md
+            - name: MCI_TMSF_TRACK
+              href: mci-tmsf-track.md
+            - name: MCIWndCanConfig
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcanconfig
+            - name: MCIWndCanEject
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcaneject
+            - name: MCIWndCanPlay
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcanplay
+            - name: MCIWndCanRecord
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcanrecord
+            - name: MCIWndCanSave
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcansave
+            - name: MCIWndCanWindow
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndcanwindow
+            - name: MCIWndChangeStyles
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles
+            - name: MCIWndClose
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndclose
+            - name: MCIWndDestroy
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwnddestroy
+            - name: MCIWndEject
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndeject
+            - name: MCIWndEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndend
+            - name: MCIWndGetActiveTimer
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetactivetimer
+            - name: MCIWndGetAlias
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetalias
+            - name: MCIWndGetDest
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetdest
+            - name: MCIWndGetDevice
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice
+            - name: MCIWndGetDeviceID
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetdeviceid
+            - name: MCIWndGetEnd
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetend
+            - name: MCIWndGetError
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgeterror
+            - name: MCIWndGetFileName
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename
+            - name: MCIWndGetInactiveTimer
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer
+            - name: MCIWndGetLength
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetlength
+            - name: MCIWndGetMode
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetmode
+            - name: MCIWndGetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette
+            - name: MCIWndGetPosition
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetposition
+            - name: MCIWndGetPositionString
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetpositionstring
+            - name: MCIWndGetRepeat
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetrepeat
+            - name: MCIWndGetSource
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetsource
+            - name: MCIWndGetSpeed
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetspeed
+            - name: MCIWndGetStart
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetstart
+            - name: MCIWndGetStyles
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetstyles
+            - name: MCIWndGetTimeFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgettimeformat
+            - name: MCIWndGetVolume
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetvolume
+            - name: MCIWndGetZoom
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom
+            - name: MCIWndHome
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndhome
+            - name: MCIWndNew
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndnew
+            - name: MCIWndOpen
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndopen
+            - name: MCIWndOpenDialog
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndopendialog
+            - name: MCIWndOpenInterface
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface
+            - name: MCIWndPause
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndpause
+            - name: MCIWndPlay
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndplay
+            - name: MCIWndPlayFrom
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndplayfrom
+            - name: MCIWndPlayFromTo
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto
+            - name: MCIWndPlayReverse
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndplayreverse
+            - name: MCIWndPlayTo
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndplayto
+            - name: MCIWndPutDest
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndputdest
+            - name: MCIWndPutSource
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndputsource
+            - name: MCIWndRealize
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndrealize
+            - name: MCIWndRecord
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndrecord
+            - name: MCIWndResume
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndresume
+            - name: MCIWndReturnString
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring
+            - name: MCIWndSave
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsave
+            - name: MCIWndSaveDialog
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsavedialog
+            - name: MCIWndSeek
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndseek
+            - name: MCIWndSendString
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsendstring
+            - name: MCIWndSetActiveTimer
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetactivetimer
+            - name: MCIWndSetInactiveTimer
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer
+            - name: MCIWndSetOwner
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetowner
+            - name: MCIWndSetPalette
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetpalette
+            - name: MCIWndSetRepeat
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetrepeat
+            - name: MCIWndSetSpeed
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetspeed
+            - name: MCIWndSetTimeFormat
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsettimeformat
+            - name: MCIWndSetTimers
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsettimers
+            - name: MCIWndSetVolume
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetvolume
+            - name: MCIWndSetZoom
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndsetzoom
+            - name: MCIWndStep
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndstep
+            - name: MCIWndStop
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndstop
+            - name: MCIWndUseFrames
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwnduseframes
+            - name: MCIWndUseTime
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndusetime
+            - name: MCIWndValidateMedia
+              href: /windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia
+            - name: MEVT_EVENTPARM
+              href: /previous-versions//dd798441(v=vs.85)
+            - name: MEVT_EVENTTYPE
+              href: /previous-versions//dd798442(v=vs.85)
+            - name: min
+              href: min.md
+            - name: mmioFOURCC
+              href: /windows/desktop/api/vfw/nf-vfw-mmiofourcc
+            - name: sndAlias
+              href: /previous-versions//dd798675(v=vs.85)
+        - name: Mensagens de multimídia
+          href: multimedia-messages.md
+          items:
+            - name: ICM_ABOUT
+              href: icm-about.md
+            - name: ICM_COMPRESS
+              href: icm-compress.md
+            - name: ICM_COMPRESS_BEGIN
+              href: icm-compress-begin.md
+            - name: ICM_COMPRESS_END
+              href: icm-compress-end.md
+            - name: ICM_COMPRESS_FRAMES_INFO
+              href: icm-compress-frames-info.md
+            - name: ICM_COMPRESS_GET_FORMAT
+              href: icm-compress-get-format.md
+            - name: ICM_COMPRESS_GET_SIZE
+              href: icm-compress-get-size.md
+            - name: ICM_COMPRESS_QUERY
+              href: icm-compress-query.md
+            - name: ICM_CONFIGURE
+              href: icm-configure.md
+            - name: ICM_DECOMPRESS
+              href: icm-decompress.md
+            - name: ICM_DECOMPRESS_BEGIN
+              href: icm-decompress-begin.md
+            - name: ICM_DECOMPRESS_END
+              href: icm-decompress-end.md
+            - name: ICM_DECOMPRESS_GET_FORMAT
+              href: icm-decompress-get-format.md
+            - name: ICM_DECOMPRESS_GET_PALETTE
+              href: icm-decompress-get-palette.md
+            - name: ICM_DECOMPRESS_QUERY
+              href: icm-decompress-query.md
+            - name: ICM_DECOMPRESS_SET_PALETTE
+              href: icm-decompress-set-palette.md
+            - name: ICM_DECOMPRESSEX
+              href: icm-decompressex.md
+            - name: ICM_DECOMPRESSEX_BEGIN
+              href: icm-decompressex-begin.md
+            - name: ICM_DECOMPRESSEX_END
+              href: icm-decompressex-end.md
+            - name: ICM_DECOMPRESSEX_QUERY
+              href: icm-decompressex-query.md
+            - name: ICM_DRAW
+              href: icm-draw.md
+            - name: ICM_DRAW_BEGIN
+              href: icm-draw-begin.md
+            - name: ICM_DRAW_CHANGEPALETTE
+              href: icm-draw-changepalette.md
+            - name: ICM_DRAW_END
+              href: icm-draw-end.md
+            - name: ICM_DRAW_FLUSH
+              href: icm-draw-flush.md
+            - name: ICM_DRAW_GET_PALETTE
+              href: icm-draw-get-palette.md
+            - name: ICM_DRAW_GETTIME
+              href: icm-draw-gettime.md
+            - name: ICM_DRAW_QUERY
+              href: icm-draw-query.md
+            - name: ICM_DRAW_REALIZE
+              href: icm-draw-realize.md
+            - name: ICM_DRAW_RENDERBUFFER
+              href: icm-draw-renderbuffer.md
+            - name: ICM_DRAW_SETTIME
+              href: icm-draw-settime.md
+            - name: ICM_DRAW_START
+              href: icm-draw-start.md
+            - name: ICM_DRAW_START_PLAY
+              href: icm-draw-start-play.md
+            - name: ICM_DRAW_STOP
+              href: icm-draw-stop.md
+            - name: ICM_DRAW_STOP_PLAY
+              href: icm-draw-stop-play.md
+            - name: ICM_DRAW_SUGGESTFORMAT
+              href: icm-draw-suggestformat.md
+            - name: ICM_DRAW_WINDOW
+              href: icm-draw-window.md
+            - name: ICM_GET
+              href: icm-get.md
+            - name: ICM_GETBUFFERSWANTED
+              href: icm-getbufferswanted.md
+            - name: ICM_GETDEFAULTKEYFRAMERATE
+              href: icm-getdefaultkeyframerate.md
+            - name: ICM_GETDEFAULTQUALITY
+              href: icm-getdefaultquality.md
+            - name: ICM_GETINFO
+              href: icm-getinfo.md
+            - name: ICM_GETQUALITY
+              href: icm-getquality.md
+            - name: ICM_GETSTATE
+              href: icm-getstate.md
+            - name: ICM_SET_STATUS_PROC
+              href: icm-set-status-proc.md
+            - name: ICM_SETQUALITY
+              href: icm-setquality.md
+            - name: ICM_SETSTATE
+              href: icm-setstate.md
+            - name: MCIWNDM_CAN_CONFIG
+              href: mciwndm-can-config.md
+            - name: MCIWNDM_CAN_EJECT
+              href: mciwndm-can-eject.md
+            - name: MCIWNDM_CAN_PLAY
+              href: mciwndm-can-play.md
+            - name: MCIWNDM_CAN_RECORD
+              href: mciwndm-can-record.md
+            - name: MCIWNDM_CAN_SAVE
+              href: mciwndm-can-save.md
+            - name: MCIWNDM_CAN_WINDOW
+              href: mciwndm-can-window.md
+            - name: MCIWNDM_CHANGESTYLES
+              href: mciwndm-changestyles.md
+            - name: MCIWNDM_EJECT
+              href: mciwndm-eject.md
+            - name: MCIWNDM_GETACTIVETIMER
+              href: mciwndm-getactivetimer.md
+            - name: MCIWNDM_GETALIAS
+              href: mciwndm-getalias.md
+            - name: MCIWNDM_GET_DEST
+              href: mciwndm-get-dest.md
+            - name: MCIWNDM_GETDEVICE
+              href: mciwndm-getdevice.md
+            - name: MCIWNDM_GETDEVICEID
+              href: mciwndm-getdeviceid.md
+            - name: MCIWNDM_GETEND
+              href: mciwndm-getend.md
+            - name: MCIWNDM_GETERROR
+              href: mciwndm-geterror.md
+            - name: MCIWNDM_GETFILENAME
+              href: mciwndm-getfilename.md
+            - name: MCIWNDM_GETINACTIVETIMER
+              href: mciwndm-getinactivetimer.md
+            - name: MCIWNDM_GETLENGTH
+              href: mciwndm-getlength.md
+            - name: MCIWNDM_GETMODE
+              href: mciwndm-getmode.md
+            - name: MCIWNDM_GETPALETTE
+              href: mciwndm-getpalette.md
+            - name: MCIWNDM_GETPOSITION
+              href: mciwndm-getposition.md
+            - name: MCIWNDM_GETREPEAT
+              href: mciwndm-getrepeat.md
+            - name: MCIWNDM_GET_SOURCE
+              href: mciwndm-get-source.md
+            - name: MCIWNDM_GETSPEED
+              href: mciwndm-getspeed.md
+            - name: MCIWNDM_GETSTART
+              href: mciwndm-getstart.md
+            - name: MCIWNDM_GETSTYLES
+              href: mciwndm-getstyles.md
+            - name: MCIWNDM_GETTIMEFORMAT
+              href: mciwndm-gettimeformat.md
+            - name: MCIWNDM_GETVOLUME
+              href: mciwndm-getvolume.md
+            - name: MCIWNDM_GETZOOM
+              href: mciwndm-getzoom.md
+            - name: MCIWNDM_NEW
+              href: mciwndm-new.md
+            - name: MCIWNDM_NOTIFYERROR
+              href: mciwndm-notifyerror.md
+            - name: MCIWNDM_NOTIFYMEDIA
+              href: mciwndm-notifymedia.md
+            - name: MCIWNDM_NOTIFYMODE
+              href: mciwndm-notifymode.md
+            - name: MCIWNDM_NOTIFYPOS
+              href: mciwndm-notifypos.md
+            - name: MCIWNDM_NOTIFYSIZE
+              href: mciwndm-notifysize.md
+            - name: MCIWNDM_OPEN
+              href: mciwndm-open.md
+            - name: MCIWNDM_OPENINTERFACE
+              href: mciwndm-openinterface.md
+            - name: MCIWNDM_PLAYFROM
+              href: mciwndm-playfrom.md
+            - name: MCIWNDM_PLAYTO
+              href: mciwndm-playto.md
+            - name: MCIWNDM_PLAYREVERSE
+              href: mciwndm-playreverse.md
+            - name: MCIWNDM_PUT_DEST
+              href: mciwndm-put-dest.md
+            - name: MCIWNDM_PUT_SOURCE
+              href: mciwndm-put-source.md
+            - name: MCIWNDM_REALIZE
+              href: mciwndm-realize.md
+            - name: MCIWNDM_RETURNSTRING
+              href: mciwndm-returnstring.md
+            - name: MCIWNDM_SENDSTRING
+              href: mciwndm-sendstring.md
+            - name: MCIWNDM_SETACTIVETIMER
+              href: mciwndm-setactivetimer.md
+            - name: MCIWNDM_SETINACTIVETIMER
+              href: mciwndm-setinactivetimer.md
+            - name: MCIWNDM_SETOWNER
+              href: mciwndm-setowner.md
+            - name: MCIWNDM_SETPALETTE
+              href: mciwndm-setpalette.md
+            - name: MCIWNDM_SETREPEAT
+              href: mciwndm-setrepeat.md
+            - name: MCIWNDM_SETSPEED
+              href: mciwndm-setspeed.md
+            - name: MCIWNDM_SETTIMEFORMAT
+              href: mciwndm-settimeformat.md
+            - name: MCIWNDM_SETTIMERS
+              href: mciwndm-settimers.md
+            - name: MCIWNDM_SETVOLUME
+              href: mciwndm-setvolume.md
+            - name: MCIWNDM_SETZOOM
+              href: mciwndm-setzoom.md
+            - name: MCIWNDM_VALIDATEMEDIA
+              href: mciwndm-validatemedia.md
+            - name: MIM_CLOSE
+              href: mim-close.md
+            - name: MIM_DATA
+              href: mim-data.md
+            - name: MIM_ERROR
+              href: mim-error.md
+            - name: MIM_LONGDATA
+              href: mim-longdata.md
+            - name: MIM_LONGERROR
+              href: mim-longerror.md
+            - name: MIM_MOREDATA
+              href: mim-moredata.md
+            - name: MIM_OPEN
+              href: mim-open.md
+            - name: MM_ACM_FILTERCHOOSE
+              href: mm-acm-filterchoose.md
+            - name: MM_ACM_FORMATCHOOSE
+              href: mm-acm-formatchoose.md
+            - name: MM_JOY1BUTTONDOWN
+              href: mm-joy1buttondown.md
+            - name: MM_JOY1BUTTONUP
+              href: mm-joy1buttonup.md
+            - name: MM_JOY1MOVE
+              href: mm-joy1move.md
+            - name: MM_JOY1ZMOVE
+              href: mm-joy1zmove.md
+            - name: MM_JOY2BUTTONDOWN
+              href: mm-joy2buttondown.md
+            - name: MM_JOY2BUTTONUP
+              href: mm-joy2buttonup.md
+            - name: MM_JOY2MOVE
+              href: mm-joy2move.md
+            - name: MM_JOY2ZMOVE
+              href: mm-joy2zmove.md
+            - name: MM_MCINOTIFY
+              href: mm-mcinotify.md
+            - name: MM_MCISIGNAL
+              href: mm-mcisignal.md
+            - name: MM_MIM_CLOSE
+              href: mm-mim-close.md
+            - name: MM_MIM_DATA
+              href: mm-mim-data.md
+            - name: MM_MIM_ERROR
+              href: mm-mim-error.md
+            - name: MM_MIM_LONGDATA
+              href: mm-mim-longdata.md
+            - name: MM_MIM_LONGERROR
+              href: mm-mim-longerror.md
+            - name: MM_MIM_MOREDATA
+              href: mm-mim-moredata.md
+            - name: MM_MIM_OPEN
+              href: mm-mim-open.md
+            - name: MM_MIXM_CONTROL_CHANGE
+              href: mm-mixm-control-change.md
+            - name: MM_MIXM_LINE_CHANGE
+              href: mm-mixm-line-change.md
+            - name: MM_MOM_CLOSE
+              href: mm-mom-close.md
+            - name: MM_MOM_DONE
+              href: mm-mom-done.md
+            - name: MM_MOM_OPEN
+              href: mm-mom-open.md
+            - name: MM_MOM_POSITIONCB
+              href: mm-mom-positioncb.md
+            - name: MMIOM_CLOSE
+              href: mmiom-close.md
+            - name: MMIOM_OPEN
+              href: mmiom-open.md
+            - name: MMIOM_READ
+              href: mmiom-read.md
+            - name: MMIOM_RENAME
+              href: mmiom-rename.md
+            - name: MMIOM_SEEK
+              href: mmiom-seek.md
+            - name: MMIOM_WRITE
+              href: mmiom-write.md
+            - name: MMIOM_WRITEFLUSH
+              href: mmiom-writeflush.md
+            - name: MM_WIM_CLOSE
+              href: mm-wim-close.md
+            - name: MM_WIM_DATA
+              href: mm-wim-data.md
+            - name: MM_WIM_OPEN
+              href: mm-wim-open.md
+            - name: MM_WOM_CLOSE
+              href: mm-wom-close.md
+            - name: MM_WOM_DONE
+              href: mm-wom-done.md
+            - name: MM_WOM_OPEN
+              href: mm-wom-open.md
+            - name: MOM_CLOSE
+              href: mom-close.md
+            - name: MOM_DONE
+              href: mom-done.md
+            - name: MOM_OPEN
+              href: mom-open.md
+            - name: MOM_POSITIONCB
+              href: mom-positioncb.md
+            - name: WIM_CLOSE
+              href: wim-close.md
+            - name: WIM_DATA
+              href: wim-data.md
+            - name: WIM_OPEN
+              href: wim-open.md
+            - name: WM_CAP_ABORT
+              href: wm-cap-abort.md
+            - name: WM_CAP_DLG_VIDEOCOMPRESSION
+              href: wm-cap-dlg-videocompression.md
+            - name: WM_CAP_DLG_VIDEODISPLAY
+              href: wm-cap-dlg-videodisplay.md
+            - name: WM_CAP_DLG_VIDEOFORMAT
+              href: wm-cap-dlg-videoformat.md
+            - name: WM_CAP_DLG_VIDEOSOURCE
+              href: wm-cap-dlg-videosource.md
+            - name: WM_CAP_DRIVER_CONNECT
+              href: wm-cap-driver-connect.md
+            - name: WM_CAP_DRIVER_DISCONNECT
+              href: wm-cap-driver-disconnect.md
+            - name: WM_CAP_DRIVER_GET_CAPS
+              href: wm-cap-driver-get-caps.md
+            - name: WM_CAP_DRIVER_GET_NAME
+              href: wm-cap-driver-get-name.md
+            - name: WM_CAP_DRIVER_GET_VERSION
+              href: wm-cap-driver-get-version.md
+            - name: WM_CAP_EDIT_COPY
+              href: wm-cap-edit-copy.md
+            - name: WM_CAP_FILE_ALLOCATE
+              href: wm-cap-file-allocate.md
+            - name: WM_CAP_FILE_GET_CAPTURE_FILE
+              href: wm-cap-file-get-capture-file.md
+            - name: WM_CAP_FILE_SAVEAS
+              href: wm-cap-file-saveas.md
+            - name: WM_CAP_FILE_SAVEDIB
+              href: wm-cap-file-savedib.md
+            - name: WM_CAP_FILE_SET_CAPTURE_FILE
+              href: wm-cap-file-set-capture-file.md
+            - name: WM_CAP_FILE_SET_INFOCHUNK
+              href: wm-cap-file-set-infochunk.md
+            - name: WM_CAP_GET_AUDIOFORMAT
+              href: wm-cap-get-audioformat.md
+            - name: WM_CAP_GET_MCI_DEVICE
+              href: wm-cap-get-mci-device.md
+            - name: WM_CAP_GET_SEQUENCE_SETUP
+              href: wm-cap-get-sequence-setup.md
+            - name: WM_CAP_GET_STATUS
+              href: wm-cap-get-status.md
+            - name: WM_CAP_GET_USER_DATA
+              href: wm-cap-get-user-data.md
+            - name: WM_CAP_GET_VIDEOFORMAT
+              href: wm-cap-get-videoformat.md
+            - name: WM_CAP_GRAB_FRAME
+              href: wm-cap-grab-frame.md
+            - name: WM_CAP_GRAB_FRAME_NOSTOP
+              href: wm-cap-grab-frame-nostop.md
+            - name: WM_CAP_PAL_AUTOCREATE
+              href: wm-cap-pal-autocreate.md
+            - name: WM_CAP_PAL_MANUALCREATE
+              href: wm-cap-pal-manualcreate.md
+            - name: WM_CAP_PAL_OPEN
+              href: wm-cap-pal-open.md
+            - name: WM_CAP_PAL_PASTE
+              href: wm-cap-pal-paste.md
+            - name: WM_CAP_PAL_SAVE
+              href: wm-cap-pal-save.md
+            - name: WM_CAP_SEQUENCE
+              href: wm-cap-sequence.md
+            - name: WM_CAP_SEQUENCE_NOFILE
+              href: wm-cap-sequence-nofile.md
+            - name: WM_CAP_SET_AUDIOFORMAT
+              href: wm-cap-set-audioformat.md
+            - name: WM_CAP_SET_CALLBACK_CAPCONTROL
+              href: wm-cap-set-callback-capcontrol.md
+            - name: WM_CAP_SET_CALLBACK_ERROR
+              href: wm-cap-set-callback-error.md
+            - name: WM_CAP_SET_CALLBACK_FRAME
+              href: wm-cap-set-callback-frame.md
+            - name: WM_CAP_SET_CALLBACK_STATUS
+              href: wm-cap-set-callback-status.md
+            - name: WM_CAP_SET_CALLBACK_VIDEOSTREAM
+              href: wm-cap-set-callback-videostream.md
+            - name: WM_CAP_SET_CALLBACK_WAVESTREAM
+              href: wm-cap-set-callback-wavestream.md
+            - name: WM_CAP_SET_CALLBACK_YIELD
+              href: wm-cap-set-callback-yield.md
+            - name: WM_CAP_SET_MCI_DEVICE
+              href: wm-cap-set-mci-device.md
+            - name: WM_CAP_SET_OVERLAY
+              href: wm-cap-set-overlay.md
+            - name: WM_CAP_SET_PREVIEW
+              href: wm-cap-set-preview.md
+            - name: WM_CAP_SET_PREVIEWRATE
+              href: wm-cap-set-previewrate.md
+            - name: WM_CAP_SET_SCALE
+              href: wm-cap-set-scale.md
+            - name: WM_CAP_SET_SCROLL
+              href: wm-cap-set-scroll.md
+            - name: WM_CAP_SET_SEQUENCE_SETUP
+              href: wm-cap-set-sequence-setup.md
+            - name: WM_CAP_SET_USER_DATA
+              href: wm-cap-set-user-data.md
+            - name: WM_CAP_SET_VIDEOFORMAT
+              href: wm-cap-set-videoformat.md
+            - name: WM_CAP_SINGLE_FRAME
+              href: wm-cap-single-frame.md
+            - name: WM_CAP_SINGLE_FRAME_CLOSE
+              href: wm-cap-single-frame-close.md
+            - name: WM_CAP_SINGLE_FRAME_OPEN
+              href: wm-cap-single-frame-open.md
+            - name: WM_CAP_STOP
+              href: wm-cap-stop.md
+            - name: WOM_CLOSE
+              href: wom-close.md
+            - name: WOM_DONE
+              href: wom-done.md
+            - name: WOM_OPEN
+              href: wom-open.md
+        - name: Interfaces multimídia
+          href: multimedia-interfaces.md
+          items:
+            - name: IAVIEditStream
+              href: /windows/desktop/api/Vfw/nn-vfw-iavieditstream
+              items:
+                - name: 'IAVIEditStream:: clone'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-clone
+                - name: 'IAVIEditStream:: copiar'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-copy
+                - name: 'IAVIEditStream:: recortar'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-cut
+                - name: 'IAVIEditStream::P lar'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-paste
+                - name: 'IAVIEditStream:: setinfo'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-setinfo
+            - name: IAVIFile
+              href: /windows/desktop/api/Vfw/nn-vfw-iavifile
+              items:
+                - name: 'IAVIFile:: CreateStream'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-createstream
+                - name: 'IAVIFile:: endrecord'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-endrecord
+                - name: 'IAVIFile:: GetStream'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-getstream
+                - name: 'IAVIFile:: info'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-info
+                - name: 'IAVIFile::ReadData'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-readdata
+                - name: 'IAVIFile:: WriteData'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavifile-writedata
+            - name: IAVIStream
+              href: /windows/desktop/api/Vfw/nn-vfw-iavistream
+              items:
+                - name: 'IAVIStream:: criar'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-create
+                - name: 'IAVIStream::D excluir'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-delete
+                - name: 'IAVIStream:: info'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-info
+                - name: 'IAVIStream::FindSample'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-findsample
+                - name: 'IAVIStream:: ler'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-read
+                - name: 'IAVIStream::ReadData'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-readdata
+                - name: 'IAVIStream::ReadFormat'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-readformat
+                - name: 'IAVIStream:: SetFormat'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-setformat
+                - name: 'IAVIStream:: Write'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-write
+                - name: 'IAVIStream:: WriteData'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistream-writedata
+            - name: IAVIStreaming
+              href: /windows/desktop/api/Vfw/nn-vfw-iavistreaming
+              items:
+                - name: 'IAVIStreaming:: Begin'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistreaming-begin
+                - name: 'IAVIStreaming:: End'
+                  href: /windows/desktop/api/Vfw/nf-vfw-iavistreaming-end
+            - name: IGetFrame
+              href: /windows/desktop/api/Vfw/nn-vfw-igetframe
+              items:
+                - name: 'IGetFrame:: Begin'
+                  href: /windows/desktop/api/Vfw/nf-vfw-igetframe-begin
+                - name: 'IGetFrame:: End'
+                  href: /windows/desktop/api/Vfw/nf-vfw-igetframe-end
+                - name: 'IGetFrame:: GetFrame'
+                  href: /windows/desktop/api/Vfw/nf-vfw-igetframe-getframe
+                - name: 'IGetFrame:: SetFormat'
+                  href: /windows/desktop/api/Vfw/nf-vfw-igetframe-setformat
+        - name: Comandos de multimídia
+          href: multimedia-commands.md
+          items:
+            - name: MCI_BREAK
+              href: mci-break.md
+            - name: MCI_CAPTURE
+              href: mci-capture.md
+            - name: MCI_CLOSE
+              href: mci-close.md
+            - name: MCI_CONFIGURE
+              href: mci-configure.md
+            - name: MCI_COPY
+              href: mci-copy.md
+            - name: MCI_CUE
+              href: mci-cue.md
+            - name: MCI_CUT
+              href: mci-cut.md
+            - name: MCI_DELETE
+              href: mci-delete.md
+            - name: MCI_ESCAPE
+              href: mci-escape.md
+            - name: MCI_FREEZE
+              href: mci-freeze.md
+            - name: MCI_GETDEVCAPS
+              href: mci-getdevcaps.md
+            - name: MCI_INDEX
+              href: mci-index.md
+            - name: MCI_INFO
+              href: mci-info.md
+            - name: MCI_LIST
+              href: mci-list.md
+            - name: MCI_LOAD
+              href: mci-load.md
+            - name: MCI_MARK
+              href: mci-mark.md
+            - name: MCI_MONITOR
+              href: mci-monitor.md
+            - name: MCI_OPEN
+              href: mci-open.md
+            - name: MCI_PASTE
+              href: mci-paste.md
+            - name: MCI_PAUSE
+              href: mci-pause.md
+            - name: MCI_PLAY
+              href: mci-play.md
+            - name: MCI_PUT
+              href: mci-put.md
+            - name: MCI_QUALITY
+              href: mci-quality.md
+            - name: MCI_REALIZE
+              href: mci-realize.md
+            - name: MCI_RECORD
+              href: mci-record.md
+            - name: MCI_RESERVE
+              href: mci-reserve.md
+            - name: MCI_RESTORE
+              href: mci-restore.md
+            - name: MCI_RESUME
+              href: mci-resume.md
+            - name: MCI_SAVE
+              href: mci-save.md
+            - name: MCI_SEEK
+              href: mci-seek.md
+            - name: MCI_SET
+              href: mci-set.md
+            - name: MCI_SETAUDIO
+              href: mci-setaudio.md
+            - name: MCI_SETTIMECODE
+              href: mci-settimecode.md
+            - name: MCI_SETTUNER
+              href: mci-settuner.md
+            - name: MCI_SETVIDEO
+              href: mci-setvideo.md
+            - name: MCI_SIGNAL
+              href: mci-signal.md
+            - name: MCI_SPIN
+              href: mci-spin.md
+            - name: MCI_STATUS
+              href: mci-status.md
+            - name: MCI_STEP
+              href: mci-step.md
+            - name: MCI_STOP
+              href: mci-stop.md
+            - name: MCI_SYSINFO
+              href: mci-sysinfo.md
+            - name: MCI_UNDO
+              href: mci-undo.md
+            - name: MCI_UNFREEZE
+              href: mci-unfreeze.md
+            - name: MCI_UPDATE
+              href: mci-update.md
+            - name: MCI_WHERE
+              href: mci-where.md
+            - name: MCI_WINDOW
+              href: mci-window.md
+        - name: Cadeias de caracteres de comando multimídia
+          href: multimedia-command-strings.md
+          items:
+            - name: break
+              href: break.md
+            - name: capability
+              href: capability.md
+            - name: Captura
+              href: capture.md
+            - name: close
+              href: close.md
+            - name: CONFIGURAR
+              href: configure.md
+            - name: copy
+              href: copy.md
+            - name: advertência
+              href: cue.md
+            - name: recortar
+              href: cut.md
+            - name: excluir
+              href: delete.md
+            - name: escape
+              href: escape.md
+            - name: Trave
+              href: freeze.md
+            - name: índice
+              href: index-command.md
+            - name: informações
+              href: info.md
+            - name: list
+              href: list.md
+            - name: load
+              href: load.md
+            - name: marca
+              href: mark.md
+            - name: monitor
+              href: monitor.md
+            - name: Abrir
+              href: open.md
+            - name: colar
+              href: paste.md
+            - name: pause
+              href: pause.md
+            - name: jogar
+              href: play.md
+            - name: put
+              href: put.md
+            - name: qualidade
+              href: quality.md
+            - name: State
+              href: realize.md
+            - name: registro
+              href: record.md
+            - name: reserva
+              href: reserve.md
+            - name: restaurar
+              href: restore.md
+            - name: resume
+              href: resume.md
+            - name: Salvar
+              href: save.md
+            - name: Procure
+              href: seek.md
+            - name: set
+              href: set.md
+            - name: SetAudio
+              href: setaudio.md
+            - name: SetCode
+              href: settimecode.md
+            - name: setajuster
+              href: settuner.md
+            - name: setvideo
+              href: setvideo.md
+            - name: signal
+              href: signal.md
+            - name: ativa
+              href: spin.md
+            - name: status
+              href: status.md
+            - name: Etapa
+              href: step.md
+            - name: parar
+              href: stop.md
+            - name: SysInfo
+              href: sysinfo.md
+            - name: desfazer
+              href: undo.md
+            - name: descongelar
+              href: unfreeze.md
+            - name: atualizar
+              href: update.md
+            - name: onde
+              href: where.md
+            - name: janela
+              href: window.md
+        - name: Tipos de multimídia
+          href: multimedia-types.md
+          items:
+            - name: Keyarray
+              href: keyarray.md
+            - name: PATCHARRAY
+              href: patcharray.md
+        - name: Constantes de multimídia
+          href: multimedia-constants.md
+          items:
+            - name: Tipos de dispositivo MCI
+              href: mci-device-types.md
+            - name: Valores de retorno de MCIERR
+              href: mcierr-return-values.md
+              items:
+                - name: Erros gerais de MCI
+                  href: general-mci-errors.md
+                - name: Erros de mciSendString
+                  href: mcisendstring-errors.md
+                - name: Erros de Digital-Video
+                  href: digital-video-errors.md
+                - name: Erros do Sequencer
+                  href: sequencer-errors.md
+                - name: Erros de Waveform-Audio
+                  href: waveform-audio-errors.md
+    - name: Glossário de multimídia
+      href: multimedia.md

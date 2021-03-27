@@ -1,0 +1,88 @@
+---
+description: Indica que o estado de seleção de um ou mais itens na exibição foi alterado.
+title: Evento ShellFolderViewOC. SelectionChanged (shldisp. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- SelectionChanged
+api_type:
+- DllExport
+api_location:
+- Shell32.dll
+ms.assetid: 85c37f4e-229f-4383-8218-10f8c2b0b8a0
+ms.openlocfilehash: 3f88ad698b990847a9b7f2fa1b74cc5b53ec7beb
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104297233"
+---
+# <a name="shellfolderviewocselectionchanged-event"></a>Evento ShellFolderViewOC. SelectionChanged
+
+Indica que o estado de seleção de um ou mais itens na exibição foi alterado.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```JScript
+function EventHandler()
+{
+    // Code to handle the event.
+}
+
+// Set the event property to the handler.
+ShellFolderViewOC.SelectionChanged = EventHandler;
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+Este manipulador de eventos não tem parâmetros.
+
+## <a name="remarks"></a>Comentários
+
+Forneça o código de manipulação de eventos para esse evento, conforme mostrado aqui.
+
+
+```
+ 
+Private Sub object_SelectionChanged()
+    'Event handling code
+End Sub
+                
+```
+
+
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**ShellFolderViewOC**](shellfolderviewoc-object.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
