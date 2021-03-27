@@ -1,0 +1,77 @@
+---
+description: Cria uma nova lista MRU (usada mais recentemente).
+title: Função CreateMRUListW
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CreateMRUListW
+- CreateMRUListW
+api_type:
+- DllExport
+api_location:
+- Comctl32.dll
+ms.assetid: b2d9e3c7-8151-45ef-9658-bd33a87b4c9c
+ms.openlocfilehash: 572e52f1461e3d48ab9eba1aa903c7fb690636d1
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103646836"
+---
+# <a name="createmrulistw-function"></a>Função CreateMRUListW
+
+Cria uma nova lista MRU (usada mais recentemente).
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+int CreateMRUListW(
+  _In_ LPMRUINFO lpmi
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*lpmi* \[ no\]
+</dt> <dd>
+
+Tipo: **LPMRUINFO**
+
+Um ponteiro para uma estrutura [**MRUINFO**](mruinfo.md) que define a lista MRU.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Tipo: **int**
+
+Retorna um identificador para a nova lista MRU ou 0 em caso de erro.
+
+## <a name="remarks"></a>Comentários
+
+Essa função não está incluída em um cabeçalho ou biblioteca pública. Ele pode ser acessado por meio de [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) ou extraído de comctl32.dll por seu ordinal, que é 400 para **CreateMRUListW**.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                     |
+| Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
+| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **CreateMRUListW** (Unicode)<br/>                                                                        |
+
+
+
+ 
+
+ 
