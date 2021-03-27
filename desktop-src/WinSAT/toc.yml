@@ -1,0 +1,84 @@
+- name: Ferramenta de avaliação do sistema do Windows
+  href: windows-system-assessment-tool-portal.md
+  items:
+    - name: Usando o WinSAT
+      href: using-winsat.md
+    - name: Referência do WinSAT
+      href: winsat-reference.md
+      items:
+        - name: Enumerações do WinSAT
+          href: winsat-enumerations.md
+          items:
+            - name: WINSAT_ASSESSMENT_STATE
+              href: /windows/win32/api/Winsatcominterfacei/ne-winsatcominterfacei-winsat_assessment_state
+            - name: WINSAT_ASSESSMENT_TYPE
+              href: /windows/win32/api/Winsatcominterfacei/ne-winsatcominterfacei-winsat_assessment_type
+            - name: WINSAT_BITMAP_SIZE
+              href: /windows/win32/api/Winsatcominterfacei/ne-winsatcominterfacei-winsat_bitmap_size
+        - name: Interfaces do WinSAT
+          href: winsat-interfaces.md
+          items:
+            - name: IInitiateWinSATAssessment
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iinitiatewinsatassessment
+              items:
+                - name: Método CancelAssessment
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iinitiatewinsatassessment-cancelassessment
+                - name: Método InitiateAssessment
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iinitiatewinsatassessment-initiateassessment
+                - name: Método InitiateFormalAssessment
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iinitiatewinsatassessment-initiateformalassessment
+            - name: IProvideWinSATAssessmentInfo
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iprovidewinsatassessmentinfo
+              items:
+                - name: Propriedade Description
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_description
+                - name: Propriedade score
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_score
+                - name: Propriedade Title
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_title
+            - name: IProvideWinSATResultsInfo
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iprovidewinsatresultsinfo
+              items:
+                - name: Propriedade AssessmentDateTime
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_assessmentdatetime
+                - name: Propriedade assessmentstate
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_assessmentstate
+                - name: Propriedade RatingStateDesc
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_ratingstatedesc
+                - name: Propriedade SystemRating
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_systemrating
+                - name: Método GetAssessmentInfo
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-getassessmentinfo
+            - name: IProvideWinSATVisuals
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iprovidewinsatvisuals
+              items:
+                - name: Método de get_Bitmap
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatvisuals-get_bitmap
+            - name: IQueryAllWinSATAssessments
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iqueryallwinsatassessments
+              items:
+                - name: Propriedade AllXML
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml
+            - name: IQueryRecentWinSATAssessment
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iqueryrecentwinsatassessment
+              items:
+                - name: Propriedade info
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_info
+                - name: Propriedade XML
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml
+            - name: IWinSATInitiateEvents
+              href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iwinsatinitiateevents
+              items:
+                - name: Método WinSATComplete
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iwinsatinitiateevents-winsatcomplete
+                - name: Método WinSATUpdate
+                  href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iwinsatinitiateevents-winsatupdate
+        - name: Classes MOF do WinSAT
+          href: winsat-mof-classes.md
+          items:
+            - name: Win32_WinSAT
+              href: win32-winsat.md
+        - name: Exemplos do WinSAT
+          href: winsat-samples.md
+        - name: Esquema do WinSAT
+          href: winsat-schema.md

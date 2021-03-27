@@ -1,0 +1,787 @@
+- name: Monitor de Rede
+  href: network-monitor.md
+  items:
+    - name: O SDK do Monitor de Rede
+      href: the-network-monitor-sdk.md
+      items:
+        - name: Requisitos do Sistema
+          href: system-requirements.md
+        - name: 'Obtendo Monitor de Rede 2,1'
+          href: obtaining-network-monitor-2-1.md
+        - name: Instalando arquivos de Monitor de Rede
+          href: installing-network-monitor-files.md
+    - name: 'Sobre o Monitor de Rede 2,1'
+      href: about-network-monitor-2-1.md
+      items:
+        - name: Arquitetura de Monitor de Rede
+          href: network-monitor-architecture.md
+          items:
+            - name: Arquitetura de expert e parser
+              href: expert-and-parser-architecture.md
+            - name: Arquitetura do monitor
+              href: monitor-architecture.md
+        - name: Monitores
+          href: monitors.md
+          items:
+            - name: Capturas em tempo real
+              href: real-time-captures.md
+            - name: Monitorar eventos
+              href: monitor-events.md
+            - name: Monitorar páginas de referência de evento
+              href: monitor-event-reference-pages.md
+            - name: Configuração do Monitor
+              href: monitor-configuration.md
+            - name: Modos Local-Only e promíscuo
+              href: local-only-and-promiscuous-modes.md
+        - name: Especialistas
+          href: experts.md
+        - name: Analisadores
+          href: parsers.md
+          items:
+            - name: Arquitetura de DLL do analisador
+              href: parser-dll-architecture.md
+            - name: Definição de propriedade e estruturas de instância de propriedade
+              href: property-definition-and-property-instance-structures.md
+        - name: Provedores de pacotes de rede
+          href: network-packet-providers.md
+          items:
+            - name: Selecionando uma placa de interface de rede
+              href: selecting-a-network-interface-card.md
+              items:
+                - name: Selecionando uma NIC registrada
+                  href: selecting-a-registered-nic.md
+                - name: Selecionando uma NIC de uma tabela de BLOB NPP fornecida
+                  href: selecting-a-nic-from-a-supplied-npp-blob-table.md
+                - name: Selecionando uma NIC de uma tabela de BLOB NPP retornada
+                  href: selecting-a-nic-from-a-returned-npp-blob-table.md
+                - name: Especificando um BLOB de filtro
+                  href: specifying-a-filter-blob.md
+            - name: Selecionando uma interface NPP
+              href: selecting-an-npp-interface.md
+            - name: O processo de captura
+              href: the-capture-process.md
+        - name: BLOBs de Monitor de Rede
+          href: network-monitor-blobs.md
+          items:
+            - name: Tipos de BLOB
+              href: blob-types.md
+            - name: Componentes de BLOB
+              href: blob-components.md
+            - name: Entradas de BLOB especiais
+              href: special-blob-entries.md
+        - name: Página referência de evento
+          href: event-reference-page.md
+          items:
+            - name: Sobre páginas de referência de evento
+              href: about-event-reference-pages.md
+        - name: Filtros de captura
+          href: capture-filters.md
+          items:
+            - name: Sobre filtros de captura
+              href: about-capture-filters.md
+            - name: A estrutura CAPTUREFILTER
+              href: the-capturefilter-structure.md
+    - name: 'Usando o Monitor de Rede 2,1'
+      href: using-network-monitor-2-1.md
+      items:
+        - name: Monitorando Real-Time dados de rede
+          href: monitoring-real-time-network-data.md
+          items:
+            - name: Especificando informações de protocolo
+              href: specifying-protocol-information.md
+            - name: Definindo a frequência de retorno de chamada
+              href: setting-the-callback-frequency.md
+            - name: Instalando um monitor para Monitor de Rede
+              href: installing-a-monitor-to-network-monitor.md
+            - name: Criando um filtro de captura de monitor
+              href: creating-a-monitor-capture-filter.md
+              items:
+                - name: Configurando o filtro ETYPE ou SAP
+                  href: setting-the-etype-or-sap-filter.md
+                - name: Definindo uma correspondência de padrão
+                  href: setting-a-pattern-match.md
+                - name: Processando dados de quadro
+                  href: processing-frame-data.md
+            - name: Testando um monitor
+              href: testing-a-monitor.md
+            - name: Depurando um monitor
+              href: debugging-a-monitor.md
+        - name: Analisando o tráfego de rede
+          href: analyzing-network-traffic.md
+          items:
+            - name: Configurando especialistas
+              href: configuring-experts.md
+            - name: Iniciar e executar especialistas
+              href: starting-and-running-experts.md
+            - name: Programando um especialista
+              href: programming-an-expert.md
+            - name: Usando MFC
+              href: using-microsoft-foundation-classes.md
+            - name: Gerenciando memória
+              href: managing-memory.md
+            - name: Criando um especialista
+              href: building-an-expert.md
+            - name: 'Instalando um especialista para Monitor de Rede 2,1'
+              href: installing-an-expert-to-network-monitor-2-1.md
+            - name: Depurando um especialista
+              href: debugging-an-expert.md
+            - name: Exibindo Propriedades de DLL de especialistas
+              href: viewing-expert-dll-properties.md
+        - name: Gravando um analisador de protocolo
+          href: writing-a-protocol-parser.md
+          items:
+            - name: Considerações sobre programação
+              href: programming-considerations.md
+            - name: Implementando funções de exportação do parser
+              href: implementing-parser-export-functions.md
+              items:
+                - name: Implementando ParserAutoInstallInfo
+                  href: implementing-parserautoinstallinfo.md
+                - name: Implementando o analisador DllMain
+                  href: implementing-dllmain-parser.md
+                - name: Implementando o registro
+                  href: implementing-register.md
+                - name: Implementando RecognizeFrame
+                  href: implementing-recognizeframe.md
+                - name: Implementando Anexaproperties
+                  href: implementing-attachproperties.md
+                - name: Implementando Formatproperties
+                  href: implementing-formatproperties.md
+                - name: Implementando cancelamento de registro
+                  href: implementing-deregister.md
+            - name: Especificando um conjunto de entrega
+              href: specifying-a-handoff-set.md
+            - name: Especificando um conjunto de acompanhamento
+              href: specifying-a-follow-set.md
+            - name: Formatar os dados exibidos
+              href: formatting-displayed-data.md
+              items:
+                - name: Saída de formatador genérico
+                  href: generic-formatter-output.md
+        - name: Exibindo informações analisadas
+          href: viewing-parsed-information.md
+        - name: Fornecendo estatísticas de rede e informações de pacote
+          href: providing-network-statistics-and-packet-information.md
+          items:
+            - name: Selecionando uma NIC usando GetNPPBlobFromUI
+              href: selecting-a-nic-using-getnppblobfromui.md
+            - name: Usando GetNPPBlobTable
+              href: using-getnppblobtable.md
+        - name: Criando páginas de referência de evento expert e monitor
+          href: creating-expert-and-monitor-event-reference-pages.md
+          items:
+            - name: Escrevendo uma página de referência de evento
+              href: writing-an-event-reference-page.md
+            - name: Nomeando uma página de referência de evento
+              href: naming-an-event-reference-page.md
+            - name: 'Instalando o ERPs existente no Monitor de Rede 2,1'
+              href: installing-existing-erps-to-network-monitor-2-1.md
+            - name: Testando uma página de referência de evento
+              href: testing-an-event-reference-page.md
+        - name: Criando filtros de captura
+          href: creating-capture-filters.md
+          items:
+            - name: Gravando a parte do filtro ETYPE/SAP
+              href: writing-etypesap-filter-portion.md
+            - name: Gravando parte de filtro de ADDRESStable
+              href: writing-addresstable-filter-portion.md
+            - name: Gravando o filtro PATTERNMATCH
+              href: writing-the-patternmatch-filter.md
+            - name: Recortando um quadro
+              href: clipping-a-frame.md
+            - name: Implementando o código de filtro de captura
+              href: implementing-the-capture-filter-code.md
+    - name: Referência
+      href: reference.md
+      items:
+        - name: Monitorar interfaces
+          href: monitor-interfaces.md
+          items:
+            - name: IMonitor
+              href: imonitor.md
+              items:
+                - name: Método doinitialize
+                  href: imonitor-doinitialize.md
+                - name: Método doconfigure
+                  href: imonitor-doconfigure.md
+                - name: Método em quadros
+                  href: imonitor-onframes.md
+                - name: Método OnStart
+                  href: imonitor-onstart.md
+                - name: Método OnStatus
+                  href: imonitor-onstatus.md
+                - name: Método OnStop
+                  href: imonitor-onstop.md
+            - name: IMonitorEventer
+              href: imonitoreventer.md
+              items:
+                - name: Método FreeEventData
+                  href: imonitoreventer-freeeventdata.md
+                - name: Método GetEventData
+                  href: imonitoreventer-geteventdata.md
+                - name: Método SendNMEvent
+                  href: imonitoreventer-sendnmevent.md
+        - name: Funções de monitor
+          href: monitor-functions.md
+          items:
+            - name: DllGetMonitorObject
+              href: dllgetmonitorobject.md
+            - name: HTMLValueToUnicode
+              href: htmlvaluetounicode.md
+            - name: Loaddword
+              href: loaddword.md
+            - name: Loadipaddresss
+              href: loadipaddresses.md
+            - name: LoadIPXAddresses
+              href: loadipxaddresses.md
+            - name: LoadMACAddresses
+              href: loadmacaddresses.md
+            - name: LoadStringAddr
+              href: loadstringaddr.md
+            - name: LoadTCHAR
+              href: loadtchar.md
+            - name: OnLoadingDLL
+              href: onloadingdll.md
+        - name: 'Funções, estruturas e enumerações de especialistas'
+          href: expert-functions-structures-and-enumerations.md
+          items:
+            - name: Funções de exportação de DLL de especialista
+              href: expert-dll-export-functions.md
+              items:
+                - name: Especialista em DllMain
+                  href: dllmain-expert.md
+                - name: Registrar especialista
+                  href: register-expert.md
+                - name: Configurar
+                  href: configure.md
+                - name: Executar
+                  href: run.md
+            - name: Funções de especialista
+              href: expert-functions.md
+              items:
+                - name: ExpertAllocMemory
+                  href: expertallocmemory.md
+                - name: ExpertFreeMemory
+                  href: expertfreememory.md
+                - name: ExpertGetFrame
+                  href: expertgetframe.md
+                - name: ExpertGetStartupInfo
+                  href: expertgetstartupinfo.md
+                - name: ExpertIndicateStatus
+                  href: expertindicatestatus.md
+                - name: ExpertMemorySize
+                  href: expertmemorysize.md
+                - name: ExpertReallocMemory
+                  href: expertreallocmemory.md
+                - name: ExpertSubmitEvent
+                  href: expertsubmitevent.md
+            - name: Estruturas de especialistas
+              href: expert-structures.md
+              items:
+                - name: CONFIGUREDEXPERT
+                  href: configuredexpert.md
+                - name: EXPERTCONFIG
+                  href: expertconfig.md
+                - name: EXPERTENUMINFO
+                  href: expertenuminfo.md
+                - name: EXPERTFRAMEDESCRIPTOR
+                  href: expertframedescriptor.md
+                - name: EXPERTSTARTUPINFO
+                  href: expertstartupinfo.md
+                - name: EXPERTSTATUS
+                  href: expertstatus.md
+                - name: FILTERobject
+                  href: filterobject.md
+                - name: GROUPINFO
+                  href: groupinfo.md
+                - name: NMEVENTDATA
+                  href: nmeventdata.md
+                - name: NMCOLUMNINFO
+                  href: nmcolumninfo.md
+                - name: NMCOLUMNVARIANT
+                  href: nmcolumnvariant.md
+                - name: NMCOLUMNTYPE
+                  href: nmcolumntype.md
+                - name: PROTOCOLOtable
+                  href: protocoltable.md
+            - name: Enumerações de especialistas
+              href: expert-enumerations.md
+              items:
+                - name: EXPERTSTATUSENUMERATION
+                  href: expertstatusenumeration.md
+        - name: Funções e estruturas do analisador
+          href: parser-functions-and-structures.md
+          items:
+            - name: Funções de exportação de DLL do analisador
+              href: parser-dll-export-functions.md
+              items:
+                - name: Analisador DllMain
+                  href: dllmain-parser.md
+                - name: Anexarproperties
+                  href: attachproperties.md
+                - name: Cancelar registro
+                  href: deregister.md
+                - name: Formatproperties
+                  href: formatproperties.md
+                - name: RecognizeFrame
+                  href: recognizeframe.md
+                - name: Registrar analisador
+                  href: register-parser.md
+                - name: ParserAutoInstallInfo
+                  href: parserautoinstallinfo.md
+            - name: Funções do analisador
+              href: parser-functions.md
+              items:
+                - name: AddProperty
+                  href: /previous-versions/bb251873(v=msdn.10)
+                - name: AddressToString
+                  href: addresstostring.md
+                - name: AttachPropertyInstance
+                  href: attachpropertyinstance.md
+                - name: AttachPropertyInstanceEx
+                  href: attachpropertyinstanceex.md
+                - name: BERGetHeader
+                  href: bergetheader.md
+                - name: BERGetInteger
+                  href: bergetinteger.md
+                - name: BERGetString
+                  href: bergetstring.md
+                - name: BuildINIPath
+                  href: buildinipath.md
+                - name: CCHeapAlloc
+                  href: ccheapalloc.md
+                - name: CCHeapFree
+                  href: ccheapfree.md
+                - name: CCHeapReAlloc
+                  href: ccheaprealloc.md
+                - name: CCHeapSize
+                  href: ccheapsize.md
+                - name: Createentregatable
+                  href: createhandofftable.md
+                - name: CreatePropertyDatabase
+                  href: createpropertydatabase.md
+                - name: Createprotocol
+                  href: createprotocol.md
+                - name: DestroyHandoffTable
+                  href: destroyhandofftable.md
+                - name: DestroyPropertyDatabase
+                  href: destroypropertydatabase.md
+                - name: DestroyProtocol
+                  href: destroyprotocol.md
+                - name: FindNextFrame
+                  href: findnextframe.md
+                - name: FindPreviousFrame
+                  href: findpreviousframe.md
+                - name: FormatPropertyInstance
+                  href: formatpropertyinstance.md
+                - name: GetCCInstPtr
+                  href: getccinstptr.md
+                - name: GetFrameDestAddress
+                  href: getframedestaddress.md
+                - name: GetFrameSourceAddress
+                  href: getframesourceaddress.md
+                - name: GetProtocolFromTable
+                  href: getprotocolfromtable.md
+                - name: GetProtocolStartOffset
+                  href: getprotocolstartoffset.md
+                - name: LookupByteSetString
+                  href: lookupbytesetstring.md
+                - name: LookupDwordSetString
+                  href: lookupdwordsetstring.md
+                - name: LookupWordSetString
+                  href: lookupwordsetstring.md
+                - name: ParserTemporaryLockFrame
+                  href: parsertemporarylockframe.md
+                - name: SetCCInstPtr
+                  href: setccinstptr.md
+                - name: StringToAddress
+                  href: stringtoaddress.md
+                - name: VarLenSmallIntToDword
+                  href: varlensmallinttodword.md
+            - name: Estruturas do analisador
+              href: parser-structures.md
+              items:
+                - name: ENTRYPOINTS
+                  href: entrypoints.md
+                - name: HANDOFFENTRY
+                  href: handoffentry.md
+                - name: ENTREGA
+                  href: handofftable.md
+                - name: LABELED_BIT
+                  href: labeled-bit.md
+                - name: LABELED_BYTE
+                  href: labeled-byte.md
+                - name: LABELED_DWORD
+                  href: labeled-dword.md
+                - name: LABELED_LARGEINT
+                  href: labeled-largeint.md
+                - name: LABELED_SYSTEMTIME
+                  href: labeled-systemtime.md
+                - name: LABELED_WORD
+                  href: labeled-word.md
+                - name: LARGEINT
+                  href: largeint.md
+                - name: MACFRAME
+                  href: macframe.md
+                - name: PF_FOLLOWENTRY
+                  href: pf-followentry.md
+                - name: PF_FOLLOWSET
+                  href: pf-followset.md
+                - name: PF_HANDOFFENTRY
+                  href: pf-handoffentry.md
+                - name: PF_HANDOFFSET
+                  href: pf-handoffset.md
+                - name: PF_PARSERDLLINFO
+                  href: pf-parserdllinfo.md
+                - name: PF_PARSERINFO
+                  href: pf-parserinfo.md
+                - name: PROPERTYINFO
+                  href: propertyinfo.md
+                - name: PROPERTYINST
+                  href: propertyinst.md
+                - name: PROPERTYINSTEX
+                  href: propertyinstex.md
+                - name: PROTOCOLINFO
+                  href: protocolinfo.md
+                - name: RANGE
+                  href: range.md
+                - name: SET
+                  href: set.md
+        - name: Funções comuns de expert e parser
+          href: expert-and-parser-common-functions.md
+          items:
+            - name: CompareAddresses
+              href: compareaddresses.md
+            - name: CompareFrameDestAddress
+              href: compareframedestaddress.md
+            - name: CompareFrameSourceAddress
+              href: compareframesourceaddress.md
+            - name: FilterAddObject
+              href: filteraddobject.md
+            - name: FindPropertyInstance
+              href: findpropertyinstance.md
+            - name: FindPropertyInstanceRestart
+              href: findpropertyinstancerestart.md
+            - name: GetCaptureComment
+              href: getcapturecomment.md
+            - name: GetCaptureCommentFromFilename
+              href: getcapturecommentfromfilename.md
+            - name: GetCaptureMacType
+              href: getcapturemactype.md
+            - name: GetCaptureTimeStamp
+              href: getcapturetimestamp.md
+            - name: GetCaptureTotalFrames
+              href: getcapturetotalframes.md
+            - name: GetEnabledProtocols
+              href: getenabledprotocols.md
+            - name: GetFrame
+              href: getframe.md
+            - name: GetFrameCaptureHandle
+              href: getframecapturehandle.md
+            - name: GetFrameDstAddressOffset
+              href: getframedstaddressoffset.md
+            - name: GetFrameFromFrameHandle
+              href: getframefromframehandle.md
+            - name: GetFrameLength
+              href: getframelength.md
+            - name: GetFrameMacHeaderLength
+              href: getframemacheaderlength.md
+            - name: GetFrameMacType
+              href: getframemactype.md
+            - name: GetFrameNumber
+              href: getframenumber.md
+            - name: GetFrameRecognizeData
+              href: getframerecognizedata.md
+            - name: GetFrameSrcAddressOffset
+              href: getframesrcaddressoffset.md
+            - name: GetFrameStoredLength
+              href: getframestoredlength.md
+            - name: GetFrameTimeStamp
+              href: getframetimestamp.md
+            - name: GetPreviousProtocolOffsetByName
+              href: getpreviousprotocoloffsetbyname.md
+            - name: GetProperty
+              href: getproperty.md
+            - name: GetPropertyInfo
+              href: getpropertyinfo.md
+            - name: GetPropertyText
+              href: getpropertytext.md
+            - name: GetProtocolFromName
+              href: getprotocolfromname.md
+            - name: GetProtocolInfo
+              href: getprotocolinfo.md
+            - name: GetProtocolStartOffsetHandle
+              href: getprotocolstartoffsethandle.md
+            - name: MacTypeToAddressType
+              href: mactypetoaddresstype.md
+            - name: ModifyFrame
+              href: modifyframe.md
+        - name: Interfaces NPP
+          href: npp-interfaces.md
+          items:
+            - name: IDelaydC
+              href: idelaydc.md
+              items:
+                - name: Configurar método
+                  href: idelaydc-configure.md
+                - name: Método Connect
+                  href: idelaydc-connect.md
+                - name: Método de desconexão
+                  href: idelaydc-disconnect.md
+                - name: Método getcontrolstate
+                  href: idelaydc-getcontrolstate.md
+                - name: Método GetConversationStatistics
+                  href: idelaydc-getconversationstatistics.md
+                - name: Método GetTotalStatistics
+                  href: idelaydc-gettotalstatistics.md
+                - name: Método Pause
+                  href: idelaydc-pause.md
+                - name: Método QueryStations
+                  href: idelaydc-querystations.md
+                - name: Método QueryStatus
+                  href: idelaydc-querystatus.md
+                - name: Método resume
+                  href: idelaydc-resume.md
+                - name: Método Start
+                  href: idelaydc-start.md
+                - name: Método Stop
+                  href: idelaydc-stop.md
+            - name: IESP
+              href: iesp.md
+              items:
+                - name: Configurar método
+                  href: iesp-configure.md
+                - name: Método Connect
+                  href: iesp-connect.md
+                - name: Método de desconexão
+                  href: iesp-disconnect.md
+                - name: Método getcontrolstate
+                  href: iesp-getcontrolstate.md
+                - name: Método Pause
+                  href: iesp-pause.md
+                - name: Método QueryStations
+                  href: iesp-querystations.md
+                - name: Método QueryStatus
+                  href: iesp-querystatus.md
+                - name: Método resume
+                  href: iesp-resume.md
+                - name: Método Start
+                  href: iesp-start.md
+                - name: Método Stop
+                  href: iesp-stop.md
+            - name: IRTC
+              href: irtc.md
+              items:
+                - name: Configurar método
+                  href: irtc-configure.md
+                - name: Método Connect
+                  href: irtc-connect.md
+                - name: Método de desconexão
+                  href: irtc-disconnect.md
+                - name: Método getcontrolstate
+                  href: irtc-getcontrolstate.md
+                - name: Método GetConversationStatistics
+                  href: irtc-getconversationstatistics.md
+                - name: Método GetTotalStatistics
+                  href: irtc-gettotalstatistics.md
+                - name: Método Pause
+                  href: irtc-pause.md
+                - name: Método QueryStations
+                  href: irtc-querystations.md
+                - name: Método QueryStatus
+                  href: irtc-querystatus.md
+                - name: Método resume
+                  href: irtc-resume.md
+                - name: Método Start
+                  href: irtc-start.md
+                - name: Método Stop
+                  href: irtc-stop.md
+            - name: IStats
+              href: istats.md
+              items:
+                - name: Configurar método
+                  href: istats-configure.md
+                - name: Método Connect
+                  href: istats-connect.md
+                - name: Método de desconexão
+                  href: istats-disconnect.md
+                - name: Método getcontrolstate
+                  href: istats-getcontrolstate.md
+                - name: Método GetConversationStatistics
+                  href: istats-getconversationstatistics.md
+                - name: Método GetTotalStatistics
+                  href: istats-gettotalstatistics.md
+                - name: Método Pause
+                  href: istats-pause.md
+                - name: Método QueryStations
+                  href: istats-querystations.md
+                - name: Método QueryStatus
+                  href: istats-querystatus.md
+                - name: Método resume
+                  href: istats-resume.md
+                - name: Método Start
+                  href: istats-start.md
+                - name: Método Stop
+                  href: istats-stop.md
+        - name: Estruturas NPP
+          href: npp-structures.md
+          items:
+            - name: SESSIONSTATS
+              href: sessionstats.md
+            - name: STATIONSTATS
+              href: stationstats.md
+            - name: STATISTICS
+              href: statistics.md
+            - name: CONSULTA
+              href: querytable.md
+            - name: STATIONQUERY
+              href: stationquery.md
+            - name: NETWORKSTATUS
+              href: networkstatus.md
+        - name: Funções de BLOB
+          href: blob-functions.md
+          items:
+            - name: CreateBlob
+              href: createblob.md
+            - name: CreateNPPInterface
+              href: createnppinterface.md
+            - name: DestroyBlob
+              href: destroyblob.md
+            - name: DuplicateBlob
+              href: duplicateblob.md
+            - name: GetBoolFromBlob
+              href: getboolfromblob.md
+            - name: GetClassIDFromBlob
+              href: getclassidfromblob.md
+            - name: GetDwordFromBlob
+              href: getdwordfromblob.md
+            - name: GetMacAddressFromBlob
+              href: getmacaddressfromblob.md
+            - name: GetNetworkInfoFromBlob
+              href: getnetworkinfofromblob.md
+            - name: GetNPPAddressFilterFromBlob
+              href: getnppaddressfilterfromblob.md
+            - name: GetNPPBlobFromUI
+              href: getnppblobfromui.md
+            - name: GetNPPBlobTable
+              href: getnppblobtable.md
+            - name: GetNPPEtypeSapFilter
+              href: getnppetypesapfilter.md
+            - name: GetNPPMacTypeAsNumber
+              href: getnppmactypeasnumber.md
+            - name: GetNPPPatternFilterFromBlob
+              href: getnpppatternfilterfromblob.md
+            - name: GetNPPTriggerFromBlob
+              href: getnpptriggerfromblob.md
+            - name: GetStringFromBlob
+              href: getstringfromblob.md
+            - name: GetStringsFromBlob
+              href: getstringsfromblob.md
+            - name: IsRemoteNPP
+              href: isremotenpp.md
+            - name: MergeBlob
+              href: mergeblob.md
+            - name: ReadBlobFromFile
+              href: readblobfromfile.md
+            - name: RegCreateBlobKey
+              href: regcreateblobkey.md
+            - name: RegOpenBlobKey
+              href: regopenblobkey.md
+            - name: RemoveFromBlob
+              href: removefromblob.md
+            - name: SelectNPPBlobFromTable
+              href: selectnppblobfromtable.md
+            - name: SetBoolInBlob
+              href: setboolinblob.md
+            - name: SetClassIDInBlob
+              href: setclassidinblob.md
+            - name: SetDwordInBlob
+              href: setdwordinblob.md
+            - name: SetMacAddressInBlob
+              href: setmacaddressinblob.md
+            - name: SetNetworkInfoInBlob
+              href: setnetworkinfoinblob.md
+            - name: SetNPPAddressFilterInBlob
+              href: setnppaddressfilterinblob.md
+            - name: SetNPPEtypeSapFilter
+              href: setnppetypesapfilter.md
+            - name: SetNPPPatternFilterInBlob
+              href: setnpppatternfilterinblob.md
+            - name: SetNPPTriggerInBlob
+              href: setnpptriggerinblob.md
+            - name: SetStringInBlob
+              href: setstringinblob.md
+            - name: WriteBlobToFile
+              href: writeblobtofile.md
+        - name: Estruturas de BLOB
+          href: blob-structures.md
+          items:
+            - name: CORRIGIR
+              href: address.md
+            - name: ENDEREÇO2
+              href: address2.md
+            - name: ADDRESSPAIR
+              href: addresspair.md
+            - name: Endereço de endereçamento
+              href: addresstable.md
+            - name: ANDEXP
+              href: andexp.md
+            - name: BLOB_TABLE
+              href: blob-table.md
+            - name: CAPTUREFILE_HEADER_VALUES
+              href: capturefile-header-values.md
+            - name: CAPTUREFILTER
+              href: capturefilter.md
+            - name: EXPRESSÃO
+              href: expression.md
+            - name: QUADRO
+              href: frame.md
+            - name: FRAME_DESCRIPTOR
+              href: frame-descriptor.md
+            - name: Estrutura de quadros
+              href: frametable.md
+            - name: GENERIC_PORT
+              href: generic-port.md
+            - name: IPX_ADDRESS
+              href: ipx-address.md
+            - name: NETWORKINFO
+              href: networkinfo.md
+            - name: PATTERNMATCH
+              href: patternmatch.md
+            - name: TRIGGER
+              href: trigger.md
+            - name: UPDATE_EVENT
+              href: update-event.md
+            - name: VINES_IP_ADDRESS
+              href: vines-ip-address.md
+    - name: Glossário
+      href: glossary.md
+      items:
+        - name: Um
+          href: a.md
+        - name: B
+          href: b.md
+        - name: C
+          href: c.md
+        - name: D
+          href: d.md
+        - name: E
+          href: e.md
+        - name: F
+          href: f.md
+        - name: G
+          href: g.md
+        - name: H
+          href: h.md
+        - name: M
+          href: m.md
+        - name: 'N'
+          href: n.md
+        - name: P
+          href: p.md
+        - name: S
+          href: s.md
+        - name: T
+          href: t.md
+        - name: W
+          href: w.md
