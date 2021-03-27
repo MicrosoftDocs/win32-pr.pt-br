@@ -1,0 +1,99 @@
+---
+description: Essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+ms.assetid: 75596278-43cc-4040-a43d-6958d0935b68
+title: Classe Process_V2
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Process
+api_type:
+- NA
+api_location: ''
+ms.openlocfilehash: c055dc1f78da13c0dfa29bea948a8f0c94363ee4
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103922470"
+---
+# <a name="process_v2-class"></a>\_Classe Process v2
+
+Essa classe é a classe pai para eventos de processo.
+
+A sintaxe a seguir é simplificada do código MOF.
+
+## <a name="syntax"></a>Sintaxe
+
+``` syntax
+[Guid("{3d6fa8d0-fe05-11d0-9dda-00c04fd7ba7c}"), EventVersion(2)]
+class Process_V2 : MSNT_SystemTrace
+{
+};
+```
+
+## <a name="members"></a>Membros
+
+A classe **process** não define nenhum membro.
+
+## <a name="remarks"></a>Comentários
+
+Para habilitar eventos de processo em uma sessão de log do kernel NT, especifique o sinalizador de **processo do sinalizador de rastreamento de eventos \_ \_ \_** no membro **EnableFlags** de uma estrutura de [**Propriedades de \_ rastreamento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao chamar a função [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) . Você também pode especificar o seguinte sinalizador:
+
+-   **\_contadores de \_ processo de sinalizador de rastreamento de eventos \_ \_**
+
+Os consumidores de rastreamento de eventos podem implementar processamento especial para eventos de processo chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**ProcessGuid**](nt-kernel-logger-constants.md) como o parâmetro *pGuid* . Use os tipos de evento a seguir para identificar o evento de processo real ao consumir eventos.
+
+
+
+| Tipo de evento                                                      | Descrição                                                                                                                                                                                                                        |
+|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Evento \_ de Tipo de rastreamento \_ \_ end**(o valor do tipo de evento é 2)<br/>   | Encerrar o evento de processo. A classe [**process \_ TypeGroup1**](process-typegroup1.md) MOF define os dados do evento para esse evento.                                                                                                          |
+| **Evento \_ de \_ \_ Início do tipo de rastreamento**(o valor do tipo de evento é 1)<br/> | Iniciar o evento de processo. A classe [**process \_ TypeGroup1**](process-typegroup1.md) MOF define os dados do evento para esse evento.                                                                                                        |
+| Valor do tipo de evento, 3                                             | Iniciar evento de processo de coleta de dados. Enumera os processos que estão sendo executados no momento em que a sessão do kernel é iniciada. A classe [**process \_ TypeGroup1**](process-typegroup1.md) MOF define os dados do evento para esse evento. |
+| Valor do tipo de evento, 4                                             | Evento de processo de coleta de dados final. Enumera os processos que estão sendo executados no momento em que a sessão do kernel termina. A classe [**process \_ TypeGroup1**](process-typegroup1.md) MOF define os dados do evento para esse evento.     |
+| Valor do tipo de evento, 32                                            | Evento de contadores de desempenho. A classe MOF do [**processo \_ v2 \_ TypeGroup2**](process-v2-typegroup2.md) define os dados do evento para esse evento.                                                                                          |
+| Valor do tipo de evento, 33                                            | Encerramento dos contadores de desempenho no início da sessão. A classe MOF do [**processo \_ v2 \_ TypeGroup2**](process-v2-typegroup2.md) define os dados do evento para esse evento.                                                     |
+| Valor do tipo de evento, 39                                            | Evento de processo extinto. A classe [**process \_ TypeGroup1**](process-typegroup1.md) MOF define os dados do evento para esse evento.                                                                                                      |
+
+
+
+ 
+
+Eventos de início de processo e thread podem ser registrados no contexto do processo ou thread pai. Como resultado, os membros **ProcessId** e **ThreadID** do [**cabeçalho de \_ rastreamento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) podem não corresponder ao processo e ao thread que está sendo criado. É por isso que esses eventos contêm os identificadores de processo e thread nos dados de evento (além daqueles no cabeçalho do evento).
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>       |
+| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+</dt> <dt>
+
+[**Processar**](process.md)
+</dt> <dt>
+
+[**TypeGroup1 de processo \_**](process-typegroup1.md)
+</dt> <dt>
+
+[**V0 de processo \_**](process-v0.md)
+</dt> <dt>
+
+[**Processo \_ v1**](process-v1.md)
+</dt> </dl>
+
+ 
+
+ 
