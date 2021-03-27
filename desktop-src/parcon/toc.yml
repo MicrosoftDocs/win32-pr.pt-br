@@ -1,0 +1,223 @@
+- name: Controles dos pais
+  href: parental-controls-portal.md
+  items:
+    - name: O que há de novo nos controles dos pais do Windows 8
+      href: what-s-new-in-windows-8-parental-controls.md
+    - name: O que há de novo nos controles dos pais do Windows 7
+      href: what-s-new-in-windows-7-parental-controls.md
+    - name: Sobre os controles dos pais
+      href: about-parental-controls.md
+      items:
+        - name: Declaração de problema dos controles dos pais
+          href: parental-controls-problem-statement.md
+        - name: Solução de segurança da família Windows
+          href: windows-family-safety-solution.md
+        - name: Os pais controlam as principais decisões de design
+          href: parental-controls-key-design-decisions.md
+        - name: Robustez dos controles dos pais
+          href: parental-controls-robustness.md
+        - name: Conjunto de recursos de controles dos pais
+          href: parental-controls-feature-set.md
+          items:
+            - name: Controles dos pais Top-Level interface do usuário
+              href: parental-controls-top-level-user-interface.md
+            - name: Relatórios de atividade de controles dos pais
+              href: parental-controls-activity-reporting.md
+            - name: Controles dos pais In-Box restrições e interfaces do usuário
+              href: parental-controls-in-box-restrictions-and-user-interfaces.md
+            - name: Visão geral da API de controles dos pais
+              href: parental-controls-api-overview.md
+            - name: Visão geral dos recursos de extensibilidade dos controles dos pais
+              href: parental-controls-extensibility-features-overview.md
+        - name: Controle dos pais disponibilidade de SKU
+          href: parental-controls-sku-availability.md
+    - name: Usando controles dos pais
+      href: using-parental-controls.md
+      items:
+        - name: Mapeando soluções para a infraestrutura de controles dos pais
+          href: mapping-solutions-onto-the-parental-controls-infrastructure.md
+        - name: Associação de identidades de conta para controles dos pais
+          href: association-of-account-identities-for-parental-controls.md
+        - name: Controles dos pais e controle de conta de usuário
+          href: parental-controls-and-user-account-control.md
+        - name: Usando APIs de controles dos pais
+          href: using-parental-controls-apis.md
+          items:
+            - name: Usando APIs de configurações de controles pais
+              href: using-parental-controls-settings-apis.md
+            - name: Usando APIs de log para controles dos pais
+              href: using-logging-apis-for-parental-controls.md
+    - name: Referência de controles dos pais
+      href: parental-controls-reference.md
+      items:
+        - name: Log de controles pelos pais
+          href: parental-controls-logging.md
+          items:
+            - name: Enumerações de log de controles pelos pais
+              href: parental-controls-logging-enumerations.md
+              items:
+                - name: WPC_ARGS_CONVERSATIONINITEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_conversationinitevent
+                - name: WPC_ARGS_CONVERSATIONJOINEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_conversationjoinevent
+                - name: WPC_ARGS_CONVERSATIONLEAVEEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_conversationleaveevent
+                - name: WPC_ARGS_CUSTOMEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_customevent
+                - name: WPC_ARGS_EMAILCONTACTEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_emailcontactevent
+                - name: WPC_ARGS_EMAILRECEIVEDEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_emailreceievedevent
+                - name: WPC_ARGS_EMAILSENTEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_emailsentevent
+                - name: WPC_ARGS_FILEDOWNLOADEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_filedownloadevent
+                - name: WPC_ARGS_GAMESTARTEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_gamestartevent
+                - name: WPC_ARGS_IMCONTACTEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_imcontactevent
+                - name: WPC_ARGS_IMFEATUREEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_imfeatureevent
+                - name: WPC_ARGS_MEDIADOWNLOADEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_mediadownloadevent
+                - name: WPC_ARGS_MEDIAPLAYBACKEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_mediaplaybackevent
+                - name: WPC_ARGS_SAFERAPPBLOCKED
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_saferappblocked
+                - name: WPC_ARGS_SETTINGSCHANGEEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_settingschangeevent
+                - name: WPC_ARGS_URLVISITEVENT
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_args_urlvisitevent
+                - name: WPC_MEDIA_EXPLICIT_TYPE
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_media_explicit
+                - name: WPC_MEDIA_TYPE
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpc_media_type
+                - name: WPCFLAG_IM_FEATURE
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_im_feature
+                - name: WPCFLAG_IM_LEAVE_FLAG
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_im_leave
+                - name: WPCFLAG_ISBLOCKED
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_isblocked
+                - name: WPCFLAG_LOGOFF_TYPE
+                  href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_logoff_type
+            - name: Eventos de log de controles pelos pais
+              href: parental-controls-logging-events.md
+              items:
+                - name: WPCEVENT_CUSTOM evento
+                  href: wpcevent-custom-event.md
+                - name: WPCEVENT_EMAIL_CONTACT evento
+                  href: wpcevent-email-contact-event.md
+                - name: WPCEVENT_EMAIL_RECEIVED evento
+                  href: wpcevent-email-received-event.md
+                - name: WPCEVENT_EMAIL_SENT evento
+                  href: wpcevent-email-sent-event.md
+                - name: WPCEVENT_GAME_START evento
+                  href: wpcevent-game-start-event.md
+                - name: WPCEVENT_IM_CONTACT evento
+                  href: wpcevent-im-contact-event.md
+                - name: WPCEVENT_IM_FEATURE evento
+                  href: wpcevent-im-feature-event.md
+                - name: WPCEVENT_IM_INVITATION evento
+                  href: wpcevent-im-invitation-event.md
+                - name: WPCEVENT_IM_JOIN evento
+                  href: wpcevent-im-join-event.md
+                - name: WPCEVENT_IM_LEAVE evento
+                  href: wpcevent-im-leave-event.md
+                - name: WPCEVENT_MEDIA_PLAYBACK evento
+                  href: wpcevent-media-playback-event.md
+                - name: WPCEVENT_SYS_SETTINGCHANGE
+                  href: wpcevent-sys-settingchange-event.md
+                - name: WPCEVENT_SYSTEM_APPBLOCKED evento
+                  href: wpcevent-system-appblocked-event.md
+                - name: WPCEVENT_WEB_FILEDOWNLOAD evento
+                  href: wpcevent-web-filedownload-event.md
+                - name: WPCEVENT_WEB_URLVISIT evento
+                  href: wpcevent-web-urlvisit-event.md
+        - name: Controle dos pais API de conformidade mínima
+          href: parental-controls-minimum-compliance-api.md
+          items:
+            - name: IWindowsParentalControls
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwindowsparentalcontrols
+              items:
+                - name: Métodos IWindowsParentalControls
+                  href: iwindowsparentalcontrols-methods.md
+                  items:
+                    - name: Método GetGamesSettings
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwindowsparentalcontrols-getgamessettings
+                    - name: Método GetUserSettings
+                      href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getusersettings
+                    - name: Método getvisibility
+                      href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getvisibility
+                    - name: Método GetWebFilterInfo
+                      href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getwebfilterinfo
+                    - name: Método GetWebSettings
+                      href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getwebsettings
+            - name: IWPCGamesSettings
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcgamessettings
+              items:
+                - name: Métodos IWPCGamesSettings
+                  href: iwpcgamessettings-methods.md
+                  items:
+                    - name: Método IsBlocked
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcgamessettings-isblocked
+            - name: IWPCSettings
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcsettings
+              items:
+                - name: Métodos IWPCSettings
+                  href: iwpcsettings-methods.md
+                  items:
+                    - name: Método GetLastSettingsChangeTime
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getlastsettingschangetime
+                    - name: Método getrestrictions
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getrestrictions
+                    - name: Método IsLoggingRequired
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-isloggingrequired
+            - name: IWPCWebSettings
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcwebsettings
+              items:
+                - name: Métodos IWPCWebSettings
+                  href: iwpcwebsettings-methods.md
+                  items:
+                    - name: Método GetSettings
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-getsettings
+                    - name: Método RequestURLOverride
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-requesturloverride
+        - name: Controle dos pais API do provedor WMI
+          href: parental-controls-wmi-provider-api.md
+          items:
+            - name: IWPCProviderConfig
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcproviderconfig
+              items:
+                - name: Métodos IWPCProviderConfig
+                  href: iwpcproviderconfig-methods.md
+                  items:
+                    - name: Configurar método
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-configure
+                    - name: Método GetUserSummary
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-getusersummary
+                    - name: Método RequestOverride
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-requestoverride
+            - name: IWPCProviderState
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcproviderstate
+              items:
+                - name: Métodos IWPCProviderState
+                  href: iwpcproviderstate-methods.md
+                  items:
+                    - name: Desabilitar método
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-disable
+                    - name: Habilitar método
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-enable
+            - name: IWPCProviderSupport
+              href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcprovidersupport
+              items:
+                - name: Métodos IWPCProviderSupport
+                  href: iwpcprovidersupport-methods.md
+                  items:
+                    - name: Método GetCurrent
+                      href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcprovidersupport-getcurrent
+            - name: Controle dos pais esquema do provedor WMI
+              href: parental-controls-wmi-provider-schema.md
+    - name: Exemplos de controles dos pais
+      href: parental-controls-samples.md
+    - name: Glossário de controles dos pais
+      href: parental-controls-glossary.md
