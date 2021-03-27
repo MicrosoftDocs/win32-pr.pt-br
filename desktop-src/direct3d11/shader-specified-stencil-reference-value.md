@@ -1,0 +1,45 @@
+---
+title: Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 11)
+description: A habilitação de sombreadores de pixel para produzir o valor de referência do estêncil, em vez de usar o especificado pela API, permite um controle muito refinado sobre as operações de estêncil.
+ms.assetid: 6E336623-9746-4872-ADC1-C5489F53D7AE
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 65a089ec8ab56a1cf00021f97bb40cf86fe42f04
+ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "104294685"
+---
+# <a name="shader-specified-stencil-reference-value-direct3d-11-graphics"></a><span data-ttu-id="3a06d-103">Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 11)</span><span class="sxs-lookup"><span data-stu-id="3a06d-103">Shader Specified Stencil Reference Value (Direct3D 11 Graphics)</span></span>
+
+<span data-ttu-id="3a06d-104">A habilitação de sombreadores de pixel para produzir o valor de referência do estêncil, em vez de usar o especificado pela API, permite um controle muito refinado sobre as operações de estêncil.</span><span class="sxs-lookup"><span data-stu-id="3a06d-104">Enabling pixel shaders to output the Stencil Reference Value, rather than using the API-specified one, enables a very fine granular control over stencil operations.</span></span>
+
+<span data-ttu-id="3a06d-105">O valor especificado do sombreador substitui o *valor de referência de estêncil* especificado pela API para essa invocação, o que significa que a alteração afeta o teste de estêncil e quando OP OP D3D11 stencil Place \_ \_ \_ replace (um membro de [**D3D11 \_ stencil \_ op**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_stencil_op)) é usado para gravar o valor de referência no buffer de estêncil.</span><span class="sxs-lookup"><span data-stu-id="3a06d-105">The shader specified value replaces the API-specified *Stencil Reference Value* for that invocation, which means the change affects both the stencil test, and when stencil op D3D11\_STENCIL\_OP\_REPLACE (one member of [**D3D11\_STENCIL\_OP**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_stencil_op)) is used to write the reference value to the stencil buffer.</span></span>
+
+<span data-ttu-id="3a06d-106">Em versões anteriores do D3D11, o valor de referência do estêncil só pode ser especificado pelo método [**ID3D11DeviceContext:: OMSetDepthStencilState**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetdepthstencilstate) .</span><span class="sxs-lookup"><span data-stu-id="3a06d-106">In earlier versions of D3D11, the Stencil Reference Value can only be specified by the [**ID3D11DeviceContext::OMSetDepthStencilState**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetdepthstencilstate) method.</span></span> <span data-ttu-id="3a06d-107">Isso significa que esse valor só pode ser definido em uma granularidade por empate.</span><span class="sxs-lookup"><span data-stu-id="3a06d-107">This means that this value can only be defined on a per-draw granularity.</span></span> <span data-ttu-id="3a06d-108">Este recurso do D3D 11.3 permite que os desenvolvedores leiam e usem o valor de referência do estêncil ( `SV_StencilRef` ) que é a saída de um sombreador de pixel, o que significa que ele pode ser especificado em uma granularidade por pixel ou por amostra.</span><span class="sxs-lookup"><span data-stu-id="3a06d-108">This D3D11.3 feature enables developers to read and use the Stencil Reference Value (`SV_StencilRef`) that is output from a pixel shader, meaning that it can be specified on a per-pixel or per-sample granularity.</span></span>
+
+<span data-ttu-id="3a06d-109">Esse recurso é opcional no D3D 11.3.</span><span class="sxs-lookup"><span data-stu-id="3a06d-109">This feature is optional in D3D11.3.</span></span> <span data-ttu-id="3a06d-110">Para testar seu suporte, verifique o `PSSpecifiedStencilRefSupported` campo booliano do [**\_ recurso D3D11 \_ Data \_ D3D11 \_ OPTIONS2**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options2) usando [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport)</span><span class="sxs-lookup"><span data-stu-id="3a06d-110">To test for its support, check the `PSSpecifiedStencilRefSupported` boolean field of [**D3D11\_FEATURE\_DATA\_D3D11\_OPTIONS2**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options2) using [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport)</span></span>
+
+<span data-ttu-id="3a06d-111">Aqui está um exemplo do uso de `SV_StencilRef` em um sombreador de pixel:</span><span class="sxs-lookup"><span data-stu-id="3a06d-111">Here is an example of the use of `SV_StencilRef` in a pixel shader:</span></span>
+
+``` syntax
+uint main2(float4 c : COORD) : SV_StencilRef
+{
+    return uint(c.x);
+}
+```
+
+## <a name="related-topics"></a><span data-ttu-id="3a06d-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3a06d-112">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="3a06d-113">Recursos do Direct3D 11,3</span><span class="sxs-lookup"><span data-stu-id="3a06d-113">Direct3D 11.3 Features</span></span>](direct3d-11-3-features.md)
+</dt> <dt>
+
+[<span data-ttu-id="3a06d-114">Modelo do sombreador 5,1</span><span class="sxs-lookup"><span data-stu-id="3a06d-114">Shader Model 5.1</span></span>](/windows/desktop/direct3dhlsl/shader-model-5-1)
+</dt> </dl>
+
+ 
+
+ 

@@ -1,0 +1,60 @@
+- name: Desligamento do sistema
+  href: system-shutdown.md
+  items:
+    - name: Alterações de desligamento do Windows Vista
+      href: shutdown-changes-for-windows-vista.md
+    - name: Sobre o desligamento do sistema
+      href: about-system-shutdown.md
+      items:
+        - name: Fazendo logoff
+          href: logging-off.md
+        - name: Desligando
+          href: shutting-down.md
+        - name: Controlador de eventos de desligamento
+          href: shutdown-event-tracker.md
+    - name: Usando o desligamento do sistema
+      href: using-system-shutdown.md
+      items:
+        - name: Como desligar o sistema
+          href: how-to-shut-down-the-system.md
+        - name: Como fazer logoff do usuário atual
+          href: how-to-log-off-the-current-user.md
+        - name: Como bloquear a estação de trabalho
+          href: how-to-lock-the-workstation.md
+        - name: Exibindo a caixa de diálogo de desligamento
+          href: displaying-the-shutdown-dialog-box.md
+    - name: Referência de desligamento do sistema
+      href: system-shutdown-reference.md
+      items:
+        - name: Funções de desligamento do sistema
+          href: system-shutdown-functions.md
+          items:
+            - name: AbortSystemShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna
+            - name: ExitWindows
+              href: /windows/desktop/api/Winuser/nf-winuser-exitwindows
+            - name: ExitWindowsEx
+              href: /windows/desktop/api/Winuser/nf-winuser-exitwindowsex
+            - name: InitiateShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-initiateshutdowna
+            - name: InitiateSystemShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna
+            - name: InitiateSystemShutdownEx
+              href: /windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdownexa
+            - name: LockWorkStation
+              href: /windows/desktop/api/Winuser/nf-winuser-lockworkstation
+            - name: ShutdownBlockReasonCreate
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasoncreate
+            - name: ShutdownBlockReasonDestroy
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasondestroy
+            - name: ShutdownBlockReasonQuery
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasonquery
+        - name: Mensagens de desligamento do sistema
+          href: system-shutdown-messages.md
+          items:
+            - name: WM_ENDSESSION
+              href: wm-endsession.md
+            - name: WM_QUERYENDSESSION
+              href: wm-queryendsession.md
+        - name: Códigos de motivo de desligamento do sistema
+          href: system-shutdown-reason-codes.md
