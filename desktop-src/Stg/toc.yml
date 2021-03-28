@@ -1,0 +1,624 @@
+- name: Armazenamento estruturado
+  href: structured-storage-start-page.md
+  items:
+    - name: Sobre o armazenamento estruturado
+      href: about-structured-storage.md
+      items:
+        - name: Benefícios do armazenamento estruturado
+          href: benefits-of-structured-storage.md
+          items:
+            - name: A evolução dos sistemas de arquivos
+              href: the-evolution-of-file-systems.md
+            - name: Armazenamentos e fluxos
+              href: storages-and-streams.md
+            - name: arquivos compostos
+              href: compound-files.md
+        - name: Conceitos básicos de armazenamento estruturado
+          href: structured-storage-fundamentals.md
+          items:
+            - name: Objetos COM e armazenamento estruturado
+              href: com-objects-and-structured-storage.md
+            - name: Convenções de nomenclatura de objeto de armazenamento
+              href: storage-object-naming-conventions.md
+            - name: Interfaces de armazenamento estruturado
+              href: structured-storage-interfaces.md
+            - name: Funções de API de armazenamento estruturado
+              href: structured-storage-api-functions.md
+              items:
+                - name: Modos de acesso de armazenamento estruturado
+                  href: structured-storage-access-modes.md
+                  items:
+                    - name: Sinalizadores de transação
+                      href: transaction-flags.md
+                    - name: Sinalizadores de criação de armazenamento
+                      href: storage-creation-flags.md
+                    - name: Sinalizadores de criação temporários
+                      href: temporary-creation-flags.md
+                    - name: Sinalizadores de prioridade
+                      href: priority-flags.md
+                    - name: Sinalizadores de permissão de acesso
+                      href: access-permission-flags.md
+                    - name: Sinalizadores de acesso compartilhado
+                      href: shared-access-flags.md
+            - name: Propriedades e conjuntos de propriedade
+              href: properties-and-property-sets.md
+              items:
+                - name: O conjunto de propriedades de informações de resumo
+                  href: the-summary-information-property-set.md
+                - name: Identificadores de formato do conjunto de propriedades predefinido
+                  href: predefined-property-set-format-identifiers.md
+                - name: Os conjuntos de propriedades DocumentSummaryInformation e UserDefined
+                  href: the-documentsummaryinformation-and-userdefined-property-sets.md
+            - name: Formato do conjunto de propriedades serializadas de armazenamento estruturado
+              href: structured-storage-serialized-property-set-format.md
+              items:
+                - name: Cabeçalho do conjunto de propriedades
+                  href: property-set-header.md
+                  items:
+                    - name: Indicador de Byte-Order
+                      href: byte-order-indicator.md
+                    - name: Versão de formato
+                      href: format-version.md
+                    - name: Versões do sistema operacional
+                      href: operating-system-versions.md
+                    - name: Identificador de classe
+                      href: class-identifier.md
+                    - name: Reservado
+                      href: reserved.md
+                - name: Identificador de formato/par de deslocamento
+                  href: format-identifier-offset-pair.md
+                  items:
+                    - name: Identificadores de formato
+                      href: format-identifiers.md
+                    - name: Alocando identificadores de formato
+                      href: allocating-format-identifiers.md
+                - name: Seção
+                  href: section.md
+                  items:
+                    - name: Tamanho da seção
+                      href: size-of-section.md
+                    - name: Contagem de propriedades
+                      href: count-of-properties.md
+                    - name: Identificadores de propriedade/pares de deslocamento
+                      href: property-identifiers-offset-pairs.md
+                    - name: Indicadores de tipo
+                      href: type-indicators.md
+                - name: Identificadores de propriedade reservados
+                  href: reserved-property-identifiers.md
+                  items:
+                    - name: Dicionário de nome para exibição do conjunto de propriedades
+                      href: property-set-display-name-dictionary.md
+        - name: Armazenamento assíncrono
+          href: asynchronous-storage.md
+          items:
+            - name: Modos de armazenamento
+              href: storage-modes.md
+            - name: Arquivos compostos assíncronos
+              href: asynchronous-compound-files.md
+            - name: Como funciona a associação assíncrona e o armazenamento
+              href: how-asynchronous-binding-and-storage-work.md
+            - name: Otimização de arquivo composto
+              href: compound-file-optimization.md
+    - name: Usando o armazenamento estruturado
+      href: using-structured-storage.md
+      items:
+        - name: Como criar amostras
+          href: how-to-build-samples.md
+          items:
+            - name: Configuração do ambiente
+              href: environment-setup.md
+            - name: Makefiles
+              href: makefiles.md
+            - name: Como usar o Visual Studio
+              href: using-visual-studio.md
+            - name: Extraindo os exemplos de código
+              href: extracting-the-code-samples.md
+            - name: Convenções de estilo de codificação
+              href: coding-style-conventions.md
+        - name: Amostras de armazenamento estruturado
+          href: structured-storage-samples.md
+          items:
+            - name: Exemplo de cliente de armazenamento estruturado (StoClien)
+              href: structured-storage-client-sample--stoclien-.md
+              items:
+                - name: Visão geral do StoClien
+                  href: stoclien-overview.md
+                  items:
+                    - name: Operações de StoClien
+                      href: stoclien-operations.md
+                - name: Criar e executar exemplo de StoClien
+                  href: create-and-run-stoclien-sample.md
+                  items:
+                    - name: Declaração de classe CGuiPaper
+                      href: cguipaper-class-declaration.md
+                    - name: Métodos CGuiPaper
+                      href: cguipaper-methods.md
+                      items:
+                        - name: Método InkStart
+                          href: inkstart-method.md
+                        - name: Método InkDraw
+                          href: inkdraw-method.md
+                        - name: Método PaintWin
+                          href: paintwin-method.md
+                    - name: CMainWindow
+                      href: cmainwindow.md
+                    - name: Classe e métodos CPapFile
+                      href: cpapfile-class-and-methods.md
+                      items:
+                        - name: Método Init – CPapFile
+                          href: init-method---cpapfile.md
+                        - name: Método Save – CPapFile
+                          href: save-method---cpapfile.md
+                        - name: Método de carregamento-CPapFile
+                          href: load-method---cpapfile.md
+            - name: Exemplo de servidor de armazenamento estruturado (StoServe)
+              href: structured-storage-server-sample--stoserve-.md
+              items:
+                - name: Visão geral do StoServe
+                  href: stoserve-overview.md
+                - name: Usando StoServe
+                  href: using-stoserve.md
+                - name: Criar e executar exemplo de StoServe
+                  href: create-and-run-stoserve-sample.md
+                  items:
+                    - name: Métodos IPaper
+                      href: ipaper-methods.md
+                      items:
+                        - name: 'IPaper:: Load'
+                          href: ipaper--load.md
+                        - name: 'IPaper:: redesenhar'
+                          href: ipaper--redraw.md
+                        - name: 'IPaper:: salvar'
+                          href: ipaper--save.md
+                    - name: Métodos IPaperSink
+                      href: ipapersink-methods.md
+                    - name: Estruturas-StoServe
+                      href: structures---stoserve.md
+                    - name: Considerações sobre Unicode
+                      href: unicode-considerations.md
+        - name: Gerenciando Propriedades
+          href: managing-properties.md
+          items:
+            - name: Considerações de armazenamento de propriedade
+              href: property-storage-considerations.md
+        - name: Gerenciando conjuntos de propriedades
+          href: managing-property-sets.md
+          items:
+            - name: Implementações de conjunto de propriedades em COM
+              href: property-set-implementations-in-com.md
+              items:
+                - name: Considerações sobre o conjunto de propriedades
+                  href: property-set-considerations.md
+                  items:
+                    - name: Considerações sobre implementação do IPropertySetStorage
+                      href: ipropertysetstorage-implementation-considerations.md
+                      items:
+                        - name: Nomes em IStorage
+                          href: names-in-istorage.md
+                        - name: Objetos de armazenamento e de fluxo para um conjunto de propriedades
+                          href: storage-vs--stream-for-a-property-set.md
+                        - name: Definindo o identificador de classe do conjunto de propriedades
+                          href: setting-the-property-set-class-identifier.md
+                        - name: Pontos de sincronização
+                          href: synchronization-points.md
+                        - name: Páginas de código e cadeias de caracteres Unicode
+                          href: code-pages-and-unicode-strings.md
+                        - name: Dicionário
+                          href: dictionary.md
+                        - name: Extensões
+                          href: extensions.md
+                        - name: Serialização do conjunto de propriedades
+                          href: version-0-vs--version-1-property-set-serialization.md
+                - name: Armazenando conjuntos de propriedades
+                  href: storing-property-sets.md
+                - name: Características de desempenho
+                  href: performance-characteristics.md
+                - name: Implementando o conjunto de propriedades de informações de resumo
+                  href: implementing-the-summary-information-property-set.md
+    - name: Referência de armazenamento estruturado
+      href: structured-storage-reference.md
+      items:
+        - name: Interfaces
+          href: interfaces.md
+          items:
+            - name: IDirectWriterLock
+              href: /windows/desktop/api/Objidl/nn-objidl-idirectwriterlock
+              items:
+                - name: HaveWriteAccess
+                  href: /windows/desktop/api/Objidl/nf-objidl-idirectwriterlock-havewriteaccess
+                - name: ReleaseWriteAccess
+                  href: /windows/desktop/api/Objidl/nf-objidl-idirectwriterlock-releasewriteaccess
+                - name: WaitForWriteAccess
+                  href: /windows/desktop/api/Objidl/nf-objidl-idirectwriterlock-waitforwriteaccess
+                - name: IDirectWriterLock-implementação de arquivo composto
+                  href: idirectwriterlock-compound-file-implementation.md
+            - name: IEnumSTATPROPSETSTG
+              href: /windows/desktop/api/propidl/nn-propidl-ienumstatpropsetstg
+              items:
+                - name: Clone
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropsetstg-clone
+                - name: Avançar
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropsetstg-next
+                - name: RemoteNext
+                  href: /previous-versions/windows/desktop/legacy/aa379206(v=vs.85)
+                - name: Redefinir
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropsetstg-reset
+                - name: Ignorar
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropsetstg-skip
+                - name: IEnumSTATPROPSETSTG-implementação de arquivo composto
+                  href: ienumstatpropsetstg-compound-file-implementation.md
+            - name: IEnumSTATPROPSTG
+              href: /windows/desktop/api/propidl/nn-propidl-ienumstatpropstg
+              items:
+                - name: Clone
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-clone
+                - name: Avançar
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-next
+                - name: RemoteNext
+                  href: /previous-versions/windows/desktop/legacy/aa379214(v=vs.85)
+                - name: Redefinir
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-reset
+                - name: Ignorar
+                  href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-skip
+                - name: IEnumSTATPROPSTG-implementação de arquivo composto
+                  href: ienumstatpropstg-compound-file-implementation.md
+            - name: IEnumSTATSTG
+              href: /windows/desktop/api/Objidl/nn-objidl-ienumstatstg
+              items:
+                - name: Clone
+                  href: /windows/desktop/api/Objidl/nf-objidl-ienumstatstg-clone
+                - name: Avançar
+                  href: /windows/desktop/api/Objidl/nf-objidl-ienumstatstg-next
+                - name: RemoteNext
+                  href: /previous-versions/windows/desktop/legacy/aa379220(v=vs.85)
+                - name: Redefinir
+                  href: /windows/desktop/api/Objidl/nf-objidl-ienumstatstg-reset
+                - name: Ignorar
+                  href: /windows/desktop/api/Objidl/nf-objidl-ienumstatstg-skip
+            - name: IFillLockBytes
+              href: /windows/desktop/api/Objidl/nn-objidl-ifilllockbytes
+              items:
+                - name: FillAppend
+                  href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-fillappend
+                - name: FillAt
+                  href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-fillat
+                - name: RemoteFillAppend
+                  href: /previous-versions/windows/desktop/legacy/aa379228(v=vs.85)
+                - name: RemoteFillAt
+                  href: /previous-versions/windows/desktop/legacy/aa379229(v=vs.85)
+                - name: Preenchimentos
+                  href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-setfillsize
+                - name: Terminate
+                  href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-terminate
+                - name: IFillLockBytes-implementação
+                  href: ifilllockbytes-implementation.md
+            - name: ILayoutStorage
+              href: /windows/desktop/api/Objidl/nn-objidl-ilayoutstorage
+              items:
+                - name: BeginMonitor
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilayoutstorage-beginmonitor
+                - name: Endmonitor
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilayoutstorage-endmonitor
+                - name: LayoutScript
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilayoutstorage-layoutscript
+                - name: ReLayoutDocfile
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilayoutstorage-relayoutdocfile
+                - name: ReLayoutDocfileOnILockBytes
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilayoutstorage-relayoutdocfileonilockbytes
+            - name: ILockBytes
+              href: /windows/desktop/api/Objidl/nn-objidl-ilockbytes
+              items:
+                - name: Liberar
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-flush
+                - name: LockRegion
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-lockregion
+                - name: ReadAt
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-readat
+                - name: RemoteReadAt
+                  href: /previous-versions/windows/desktop/legacy/aa379245(v=vs.85)
+                - name: RemoteWriteAt
+                  href: /previous-versions/windows/desktop/legacy/aa379246(v=vs.85)
+                - name: Size
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-setsize
+                - name: Stat
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-stat
+                - name: UnlockRegion
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-unlockregion
+                - name: WriteAt
+                  href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-writeat
+                - name: ILockBytes-implementação de File-Based
+                  href: ilockbytes-file-based-implementation.md
+                - name: ILockBytes-implementação de memória global
+                  href: ilockbytes-global-memory-implementation.md
+            - name: IMemoryAllocator
+              href: imemoryallocator.md
+              items:
+                - name: Aloca
+                  href: imemoryallocator-allocate.md
+                - name: Gratuita
+                  href: imemoryallocator-free.md
+            - name: IPropertySetStorage
+              href: /windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage
+              items:
+                - name: Criar
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create
+                - name: Excluir
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-delete
+                - name: Enumeração
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-enum
+                - name: Aberto
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open
+                - name: Implementação de arquivo de IPropertySetStorage-Compound
+                  href: ipropertysetstorage-compound-file-implementation.md
+                - name: IPropertySetStorage-implementação do sistema de arquivos NTFS
+                  href: ipropertysetstorage-ntfs-file-system-implementation.md
+                - name: Implementação IPropertySetStorage-autônoma
+                  href: ipropertysetstorage-stand-alone-implementation.md
+            - name: IPropertyStorage
+              href: /windows/desktop/api/Propidl/nn-propidl-ipropertystorage
+              items:
+                - name: Commit
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-commit
+                - name: DeleteMultiple
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-deletemultiple
+                - name: DeletePropertyNames
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-deletepropertynames
+                - name: Enumeração
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-enum
+                - name: ReadMultiple
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple
+                - name: ReadPropertyNames
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readpropertynames
+                - name: RemoteDeleteMultiple
+                  href: /previous-versions/windows/desktop/legacy/aa379977(v=vs.85)
+                - name: RemoteReadMultiple
+                  href: /previous-versions/windows/desktop/legacy/aa379978(v=vs.85)
+                - name: RemoteWriteMultiple
+                  href: /previous-versions/windows/desktop/legacy/aa379979(v=vs.85)
+                - name: Reverter
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert
+                - name: SetClass
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-setclass
+                - name: Settimes
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-settimes
+                - name: Stat
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-stat
+                - name: WriteMultiple
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writemultiple
+                - name: WritePropertyNames
+                  href: /windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writepropertynames
+                - name: IPropertyStorage-implementação de arquivo composto
+                  href: ipropertystorage-compound-file-implementation.md
+                - name: IPropertyStorage-implementação do sistema de arquivos NTFS
+                  href: ipropertystorage-ntfs-file-system-implementation.md
+                - name: Implementação IPropertyStorage-autônoma
+                  href: ipropertystorage-stand-alone-implementation.md
+                - name: Diferenças entre implementações de arquivos autônomos e compostos
+                  href: differences-between-stand-alone-and-compound-file-implementations.md
+            - name: IRootStorage
+              href: /windows/desktop/api/Objidl/nn-objidl-irootstorage
+              items:
+                - name: SwitchToFile
+                  href: /windows/desktop/api/Objidl/nf-objidl-irootstorage-switchtofile
+                - name: IRootStorage-implementação de arquivo composto
+                  href: irootstorage-compound-file-implementation.md
+            - name: ISequentialStream
+              href: /windows/desktop/api/Objidl/nn-objidl-isequentialstream
+              items:
+                - name: Ler
+                  href: /windows/desktop/api/Objidl/nf-objidl-isequentialstream-read
+                - name: RemoteRead
+                  href: /previous-versions/windows/desktop/legacy/aa380012(v=vs.85)
+                - name: RemoteWrite
+                  href: /previous-versions/windows/desktop/legacy/aa380013(v=vs.85)
+                - name: Gravar
+                  href: /windows/desktop/api/Objidl/nf-objidl-isequentialstream-write
+            - name: IStorage
+              href: /windows/desktop/api/Objidl/nn-objidl-istorage
+              items:
+                - name: Commit
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-commit
+                - name: CopyTo
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-copyto
+                - name: CreateStorage
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-createstorage
+                - name: CreateStream
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-createstream
+                - name: Destruielement
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-destroyelement
+                - name: EnumElements
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-enumelements
+                - name: MoveElementTo
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-moveelementto
+                - name: OpenStorage
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-openstorage
+                - name: OpenStream
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-openstream
+                - name: RemoteEnumElements
+                  href: /previous-versions/windows/desktop/legacy/aa380026(v=vs.85)
+                - name: RemoteOpenStream
+                  href: /previous-versions/windows/desktop/legacy/aa380027(v=vs.85)
+                - name: Renomeelement
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-renameelement
+                - name: Reverter
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-revert
+                - name: SetClass
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-setclass
+                - name: SetElementTimes
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes
+                - name: SetStateBits
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-setstatebits
+                - name: Stat
+                  href: /windows/desktop/api/Objidl/nf-objidl-istorage-stat
+                - name: IStorage-implementação de arquivo composto
+                  href: istorage-compound-file-implementation.md
+            - name: IStream
+              href: /windows/desktop/api/Objidl/nn-objidl-istream
+              items:
+                - name: Clone
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-clone
+                - name: Commit
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-commit
+                - name: CopyTo
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-copyto
+                - name: LockRegion
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-lockregion
+                - name: RemoteCopyTo
+                  href: /previous-versions/windows/desktop/legacy/aa380040(v=vs.85)
+                - name: RemoteSeek
+                  href: /previous-versions/windows/desktop/legacy/aa380041(v=vs.85)
+                - name: Reverter
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-revert
+                - name: Seek
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-seek
+                - name: Size
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-setsize
+                - name: Stat
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-stat
+                - name: UnlockRegion
+                  href: /windows/desktop/api/Objidl/nf-objidl-istream-unlockregion
+                - name: IStream-implementação de arquivo composto
+                  href: istream-compound-file-implementation.md
+        - name: Funções
+          href: functions.md
+          items:
+            - name: CreateILockBytesOnHGlobal
+              href: /windows/desktop/api/coml2api/nf-coml2api-createilockbytesonhglobal
+            - name: CreateStreamOnHGlobal
+              href: /windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal
+            - name: FmtIdToPropStgName
+              href: /windows/desktop/api/coml2api/nf-coml2api-fmtidtopropstgname
+            - name: FreePropVariantArray
+              href: /windows/desktop/api/propidl/nf-propidl-freepropvariantarray
+            - name: GetConvertStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-getconvertstg
+            - name: GetHGlobalFromILockBytes
+              href: /windows/desktop/api/coml2api/nf-coml2api-gethglobalfromilockbytes
+            - name: GetHGlobalFromStream
+              href: /windows/desktop/api/combaseapi/nf-combaseapi-gethglobalfromstream
+            - name: OleConvertIStorageToOLESTREAM
+              href: /windows/desktop/api/Ole2/nf-ole2-oleconvertistoragetoolestream
+            - name: OleConvertIStorageToOLESTREAMEx
+              href: /windows/desktop/api/Ole2/nf-ole2-oleconvertistoragetoolestreamex
+            - name: OleConvertOLESTREAMToIStorage
+              href: /windows/desktop/api/Ole2/nf-ole2-oleconvertolestreamtoistorage
+            - name: OleConvertOLESTREAMToIStorageEx
+              href: /windows/desktop/api/Ole2/nf-ole2-oleconvertolestreamtoistorageex
+            - name: PropStgNameToFmtId
+              href: /windows/desktop/api/coml2api/nf-coml2api-propstgnametofmtid
+            - name: PropVariantClear
+              href: /windows/desktop/api/propidl/nf-propidl-propvariantclear
+            - name: PropVariantCopy
+              href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
+            - name: PropVariantInit
+              href: /windows/desktop/api/PropIdl/nf-propidl-propvariantinit
+            - name: ReadClassStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-readclassstg
+            - name: ReadClassStm
+              href: /windows/desktop/api/coml2api/nf-coml2api-readclassstm
+            - name: ReadFmtUserTypeStg
+              href: /windows/desktop/api/Ole2/nf-ole2-readfmtusertypestg
+            - name: StgConvertPropertyToVariant
+              href: /windows/desktop/api/Propidl/nf-propidl-stgconvertpropertytovariant
+            - name: SetConvertStg
+              href: /windows/desktop/api/Ole2/nf-ole2-setconvertstg
+            - name: StgConvertVariantToProperty
+              href: /windows/desktop/api/Propidl/nf-propidl-stgconvertvarianttoproperty
+            - name: StgCreateDocfile
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile
+            - name: StgCreateDocfileOnILockBytes
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfileonilockbytes
+            - name: StgCreatePropSetStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgcreatepropsetstg
+            - name: StgCreatePropStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgcreatepropstg
+            - name: StgCreateStorageEx
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex
+            - name: StgDeserializePropVariant
+              href: /windows/desktop/api/Propvarutil/nf-propvarutil-stgdeserializepropvariant
+            - name: StgGetIFillLockBytesOnFile
+              href: /windows/desktop/api/Objbase/nf-objbase-stggetifilllockbytesonfile
+            - name: StgGetIFillLockBytesOnILockBytes
+              href: /windows/desktop/api/Objbase/nf-objbase-stggetifilllockbytesonilockbytes
+            - name: StgIsStorageFile
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgisstoragefile
+            - name: StgIsStorageILockBytes
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgisstorageilockbytes
+            - name: StgOpenAsyncDocfileOnIFillLockBytes
+              href: /windows/desktop/api/Objbase/nf-objbase-stgopenasyncdocfileonifilllockbytes
+            - name: StgOpenLayoutDocfile
+              href: /windows/desktop/api/Objbase/nf-objbase-stgopenlayoutdocfile
+            - name: StgOpenPropStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgopenpropstg
+            - name: StgOpenStorage
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgopenstorage
+            - name: StgOpenStorageEx
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex
+            - name: StgOpenStorageOnILockBytes
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgopenstorageonilockbytes
+            - name: StgPropertyLengthAsVariant
+              href: /windows/desktop/api/Propapi/nf-propapi-stgpropertylengthasvariant
+            - name: StgSetTimes
+              href: /windows/desktop/api/coml2api/nf-coml2api-stgsettimes
+            - name: StgSerializePropVariant
+              href: /windows/desktop/api/Propvarutil/nf-propvarutil-stgserializepropvariant
+            - name: WriteClassStg
+              href: /windows/desktop/api/coml2api/nf-coml2api-writeclassstg
+            - name: WriteClassStm
+              href: /windows/desktop/api/coml2api/nf-coml2api-writeclassstm
+            - name: WriteFmtUserTypeStg
+              href: /windows/desktop/api/Ole2/nf-ole2-writefmtusertypestg
+        - name: Estruturas
+          href: structures.md
+          items:
+            - name: PROPSPEC
+              href: /windows/win32/api/propidl/ns-propidl-propspec
+            - name: PROPVARIANT
+              href: /windows/win32/api/propidl/ns-propidl-propvariant
+            - name: RemSNB
+              href: /windows/win32/api/Objidl/ns-objidl-remsnb
+            - name: SNB
+              href: snb.md
+            - name: STATPROPSETSTG
+              href: /windows/win32/api/propidl/ns-propidl-statpropsetstg
+            - name: STATPROPSTG
+              href: /windows/win32/api/propidl/ns-propidl-statpropstg
+            - name: STATSTG
+              href: /windows/win32/api/Objidl/ns-objidl-statstg
+            - name: STGOPTIONS
+              href: /windows/win32/api/coml2api/ns-coml2api-stgoptions
+            - name: StorageLayout
+              href: /windows/win32/api/Objidl/ns-objidl-storagelayout
+        - name: Enumerações
+          href: enumerations.md
+          items:
+            - name: LOCKTYPE
+              href: /windows/win32/api/Objidl/ne-objidl-locktype
+            - name: STATFLAG
+              href: /windows/win32/api/WTypes/ne-wtypes-statflag
+            - name: STGC
+              href: /windows/win32/api/WTypes/ne-wtypes-stgc
+            - name: STGFMT
+              href: /previous-versions/windows/desktop/legacy/aa380330(v=vs.85)
+            - name: STGMOVE
+              href: /windows/win32/api/WTypes/ne-wtypes-stgmove
+            - name: STGTY
+              href: /windows/win32/api/Objidl/ne-objidl-stgty
+            - name: STREAM_SEEK
+              href: /windows/win32/api/Objidl/ne-objidl-stream_seek
+        - name: Constantes
+          href: constants.md
+          items:
+            - name: Constantes PROPSETFLAG
+              href: propsetflag-constants.md
+            - name: Constantes STGM
+              href: stgm-constants.md
+        - name: Exemplos
+          href: samples.md
+          items:
+            - name: Exemplo de WriteRead
+              href: writeread-sample.md
+            - name: Exemplo de EnumAll
+              href: enumall-sample.md
+            - name: Exemplo de StgCreatePropSetStg
+              href: stgcreatepropsetstg-sample.md
