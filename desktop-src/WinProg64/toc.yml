@@ -1,0 +1,82 @@
+- name: Guia de programação para o Windows de 64 bits
+  href: programming-guide-for-64-bit-windows.md
+  items:
+    - name: Preparando-se para o Windows de 64 bits
+      href: getting-ready-for-64-bit-windows.md
+      items:
+        - name: Modelos de dados abstratos
+          href: abstract-data-models.md
+        - name: Os novos tipos de dados
+          href: the-new-data-types.md
+        - name: O ambiente
+          href: the-environment.md
+        - name: As ferramentas
+          href: the-tools.md
+        - name: Regras para usar ponteiros
+          href: rules-for-using-pointers.md
+        - name: Espaço de endereço virtual
+          href: virtual-address-space.md
+        - name: Falhas de alinhamento
+          href: fault-alignments.md
+        - name: Interoperabilidade de processo
+          href: process-interoperability.md
+        - name: Drivers
+          href: drivers.md
+    - name: Criando interfaces compatíveis com 64 bits
+      href: designing-64-bit-compatible-interfaces.md
+      items:
+        - name: Alterando uma interface existente
+          href: changing-an-existing-interface.md
+        - name: Evitando a ocultação de informações
+          href: avoiding-information-hiding.md
+        - name: Evitando o polimorfismo
+          href: avoiding-polymorphism.md
+        - name: Usando novos tipos de dados em seu arquivo IDL
+          href: using-new-data-types-in-your-idl-file.md
+        - name: Preparando seu aplicativo para o Windows de 64 bits
+          href: preparing-your-application-for-64-bit-windows.md
+    - name: Executando aplicativos de 32 bits
+      href: running-32-bit-applications.md
+      items:
+        - name: Desempenho e consumo de memória no WOW64
+          href: performance-and-memory-consumption.md
+        - name: Detalhes da implementação do WOW64
+          href: wow64-implementation-details.md
+        - name: Redirecionador de registro
+          href: registry-redirector.md
+          items:
+            - name: Reflexão do registro
+              href: registry-reflection.md
+            - name: Chaves do Registro afetadas pelo WOW64
+              href: shared-registry-keys.md
+            - name: Acessando uma exibição alternativa do registro
+              href: accessing-an-alternate-registry-view.md
+            - name: Exemplo de redirecionamento de registro no WOW64
+              href: example-of-registry-reflection-and-redirection-on-wow64.md
+            - name: Acesso remoto ao registro no Windows de 64 bits
+              href: remote-registry-access-in-64-bit-windows.md
+        - name: Redirecionador do sistema de arquivos
+          href: file-system-redirector.md
+        - name: Gerenciamento de memória no WOW64
+          href: memory-management.md
+        - name: Afinidade de processador no WOW64
+          href: processor-affinity.md
+        - name: Comunicação entre processos entre aplicativos de 32 bits e de 64 bits
+          href: interprocess-communication.md
+        - name: Instalação de aplicativos em sistemas de 64 bits
+          href: application-installation.md
+        - name: Tratamento de exceção sob WOW64
+          href: exception-handling-under-wow64.md
+        - name: Depurando WOW64
+          href: debugging-wow64.md
+    - name: Dicas de migração
+      href: migration-tips.md
+      items:
+        - name: Diretrizes gerais de portabilidade
+          href: general-porting-guidelines.md
+        - name: Armazenando um valor de 64 bits
+          href: storing-a-64-bit-value.md
+        - name: Erros comuns do compilador
+          href: common-compiler-errors.md
+        - name: Considerações adicionais
+          href: additional-considerations.md
