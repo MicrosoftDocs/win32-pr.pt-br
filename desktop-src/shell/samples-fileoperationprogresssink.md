@@ -1,0 +1,77 @@
+---
+description: Demonstra como usar os métodos de interface IFileOperationProgressSink para monitorar os detalhes das ações da interface IFileOperation.
+title: Coletor do andamento da operação de arquivo
+ms.topic: article
+ms.date: 05/31/2018
+ms.assetid: 196ABB75-1FE0-44f5-9060-59AAB4231567
+api_name: ''
+api_type: ''
+api_location: ''
+topic_type:
+- kbArticle
+ms.openlocfilehash: 60e3bde90da36a6122608b463b28df670f0d2a8e
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104011185"
+---
+# <a name="file-operation-progress-sink"></a>Coletor do andamento da operação de arquivo
+
+Demonstra como usar os métodos de interface [**IFileOperationProgressSink**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperationprogresssink) para monitorar os detalhes das ações da interface [**IFileOperation**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation) .
+
+Este tópico inclui as seções a seguir.
+
+-   [Requisitos](#requirements)
+-   [Baixando o exemplo](#downloading-the-sample)
+-   [Compilando o exemplo](#building-the-sample)
+-   [Executando o exemplo](#running-the-sample)
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Produto                                | Versão mínima do produto |
+|----------------------------------------|-------------------------|
+| Windows                                | Windows Vista           |
+| Windows Software Development Kit (SDK) | 6.1                     |
+
+
+
+ 
+
+## <a name="downloading-the-sample"></a>Baixando o exemplo
+
+| Localização      | URL do caminho                                                                                             |
+|---------------|------------------------------------------------------------------------------------------------------|
+| GitHub  | [Exemplo de FileOperationProgressSink](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/FileOperationProgressSink) |
+
+## <a name="building-the-sample"></a>Compilando o exemplo
+
+Para criar o exemplo na janela de prompt de comando:
+
+1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **FileOperationProgressSink** .
+2.  Digite `msbuild FileOperationProgressSinkSample.sln`.
+
+Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+
+1.  Abra o Windows Explorer e navegue até o diretório do projeto **FilesInUse** . Por exemplo, o caminho de instalação padrão completo é `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppPlatform\FileOperationProgressSinkSample` .
+2.  Clique duas vezes no ícone do arquivo FileOperationProgressSinkSample. sln para abrir o projeto no Visual Studio.
+    > [!Note]  
+    > A extensão de nome de arquivo. sln não é mostrada em configurações de pasta padrão. Nessa situação, ela pode ser identificada por seu ícone exclusivo ou por sua descrição de tipo, "solução de Microsoft Visual Studio".
+
+     
+
+3.  No menu **Compilar** , selecione **Compilar solução**.
+
+## <a name="running-the-sample"></a>Executando o exemplo
+
+1.  Navegue até o diretório que contém o novo executável, usando a janela de prompt de comando ou o Windows Explorer.
+2.  No prompt de comando, digite `FileOperationProgressSinkSample.exe` ou, no Windows Explorer, clique duas vezes no ícone para FileOperationProgressSinkSample.exe.
+
+ 
+
+ 
+
+
+
