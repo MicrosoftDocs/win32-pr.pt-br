@@ -1,0 +1,85 @@
+- name: Bibliotecas de Dynamic-Link
+  href: dynamic-link-libraries.md
+  items:
+    - name: Sobre bibliotecas de Dynamic-Link
+      href: about-dynamic-link-libraries.md
+      items:
+        - name: Vantagens da vinculação dinâmica
+          href: advantages-of-dynamic-linking.md
+        - name: Criação de biblioteca de Dynamic-Link
+          href: dynamic-link-library-creation.md
+        - name: Dynamic-Link Entry-Point função de biblioteca
+          href: dynamic-link-library-entry-point-function.md
+        - name: Load-Time vinculação dinâmica
+          href: load-time-dynamic-linking.md
+        - name: Run-Time vinculação dinâmica
+          href: run-time-dynamic-linking.md
+        - name: Ordem de pesquisa da biblioteca de Dynamic-Link
+          href: dynamic-link-library-search-order.md
+        - name: Dynamic-Link dados da biblioteca
+          href: dynamic-link-library-data.md
+        - name: Redirecionamento de biblioteca de Dynamic-Link
+          href: dynamic-link-library-redirection.md
+        - name: Dynamic-Link atualizações da biblioteca
+          href: dynamic-link-library-updates.md
+        - name: Segurança da biblioteca de Dynamic-Link
+          href: dynamic-link-library-security.md
+        - name: DLLs de inicialização segura e AppInit
+          href: secure-boot-and-appinit-dlls.md
+        - name: Práticas recomendadas da biblioteca de Dynamic-Link
+          href: dynamic-link-library-best-practices.md
+    - name: Usando bibliotecas de Dynamic-Link
+      href: using-dynamic-link-libraries.md
+      items:
+        - name: Criando uma biblioteca simples de Dynamic-Link
+          href: creating-a-simple-dynamic-link-library.md
+        - name: Usando Load-Time vinculação dinâmica
+          href: using-load-time-dynamic-linking.md
+        - name: Usando Run-Time vinculação dinâmica
+          href: using-run-time-dynamic-linking.md
+        - name: Usando memória compartilhada em uma biblioteca de Dynamic-Link
+          href: using-shared-memory-in-a-dynamic-link-library.md
+        - name: Usando o armazenamento local de threads em uma biblioteca de Dynamic-Link
+          href: using-thread-local-storage-in-a-dynamic-link-library.md
+    - name: Referência da biblioteca de Dynamic-Link
+      href: dynamic-link-library-reference.md
+      items:
+        - name: Dynamic-Link funções de biblioteca
+          href: dynamic-link-library-functions.md
+          items:
+            - name: AddDllDirectory
+              href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-adddlldirectory
+            - name: DisableThreadLibraryCalls
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-disablethreadlibrarycalls
+            - name: DllMain
+              href: dllmain.md
+            - name: FreeLibrary
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary
+            - name: FreeLibraryAndExitThread
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freelibraryandexitthread
+            - name: GetDllDirectory
+              href: /windows/desktop/api/WinBase/nf-winbase-getdlldirectorya
+            - name: GetModuleFileName
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea
+            - name: GetModuleHandle
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea
+            - name: GetModuleHandleEx
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandleexa
+            - name: GetProcAddress
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress
+            - name: LoadLibrary
+              href: /windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya
+            - name: LoadLibraryEx
+              href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa
+            - name: LoadModule
+              href: /windows/desktop/api/Winbase/nf-winbase-loadmodule
+            - name: LoadPackagedLibrary
+              href: /windows/desktop/api/Winbase/nf-winbase-loadpackagedlibrary
+            - name: QueryOptionalDelayLoadedAPI
+              href: /windows/desktop/api/libloaderapi2/nf-libloaderapi2-queryoptionaldelayloadedapi
+            - name: RemoveDllDirectory
+              href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-removedlldirectory
+            - name: SetDefaultDllDirectories
+              href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-setdefaultdlldirectories
+            - name: SetDllDirectory
+              href: /windows/desktop/api/Winbase/nf-winbase-setdlldirectorya
