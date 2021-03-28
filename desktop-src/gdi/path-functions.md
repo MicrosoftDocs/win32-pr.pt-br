@@ -1,0 +1,45 @@
+---
+description: As funções a seguir são usadas para criar, alterar ou desenhar caminhos.
+ms.assetid: 68390601-1542-41dc-bea0-78f6c3318806
+title: Funções de caminho (GDI do Windows)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9ab85e52392b3e600877f8f5adac08d5de77e873
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104967624"
+---
+# <a name="path-functions-windows-gdi"></a><span data-ttu-id="ab8c2-103">Funções de caminho (GDI do Windows)</span><span class="sxs-lookup"><span data-stu-id="ab8c2-103">Path Functions (Windows GDI)</span></span>
+
+<span data-ttu-id="ab8c2-104">As funções a seguir são usadas para criar, alterar ou desenhar caminhos.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-104">The following functions are used to create, alter, or draw paths.</span></span>
+
+
+
+| <span data-ttu-id="ab8c2-105">Função</span><span class="sxs-lookup"><span data-stu-id="ab8c2-105">Function</span></span>                                       | <span data-ttu-id="ab8c2-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="ab8c2-106">Description</span></span>                                                                                                                                                      |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="ab8c2-107">**AbortPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-107">**AbortPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-abortpath)                 | <span data-ttu-id="ab8c2-108">Fecha e descarta todos os caminhos no contexto do dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-108">Closes and discards any paths in the specified device context.</span></span>                                                                                                   |
+| [<span data-ttu-id="ab8c2-109">**BeginPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-109">**BeginPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-beginpath)                 | <span data-ttu-id="ab8c2-110">Abre um colchete de caminho no contexto do dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-110">Opens a path bracket in the specified device context.</span></span>                                                                                                            |
+| [<span data-ttu-id="ab8c2-111">**CloseFigure**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-111">**CloseFigure**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-closefigure)             | <span data-ttu-id="ab8c2-112">Fecha uma figura aberta em um caminho.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-112">Closes an open figure in a path.</span></span>                                                                                                                                 |
+| [<span data-ttu-id="ab8c2-113">**Caminho de fim**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-113">**EndPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-endpath)                     | <span data-ttu-id="ab8c2-114">Fecha um colchete de caminho e seleciona o caminho definido pelo colchete no contexto do dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-114">Closes a path bracket and selects the path defined by the bracket into the specified device context.</span></span>                                                             |
+| [<span data-ttu-id="ab8c2-115">**FillPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-115">**FillPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-fillpath)                   | <span data-ttu-id="ab8c2-116">Fecha as figuras abertas no caminho atual e preenche o interior do caminho usando o pincel atual e o modo de preenchimento de polígono.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-116">Closes any open figures in the current path and fills the path's interior by using the current brush and polygon-filling mode.</span></span>                                   |
+| [<span data-ttu-id="ab8c2-117">**FlattenPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-117">**FlattenPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-flattenpath)             | <span data-ttu-id="ab8c2-118">Transforma todas as curvas no caminho selecionado no contexto de dispositivo atual (DC), transformando cada curva em uma sequência de linhas.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-118">Transforms any curves in the path that is selected into the current device context (DC), turning each curve into a sequence of lines.</span></span>                            |
+| [<span data-ttu-id="ab8c2-119">**GetMiterLimit**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-119">**GetMiterLimit**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-getmiterlimit)         | <span data-ttu-id="ab8c2-120">Recupera o limite de mitra para o contexto de dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-120">Retrieves the miter limit for the specified device context.</span></span>                                                                                                      |
+| [<span data-ttu-id="ab8c2-121">**GetPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-121">**GetPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-getpath)                     | <span data-ttu-id="ab8c2-122">Recupera as coordenadas definindo os pontos de extremidade das linhas e os pontos de controle das curvas encontradas no caminho selecionado no contexto do dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-122">Retrieves the coordinates defining the endpoints of lines and the control points of curves found in the path that is selected into the specified device context.</span></span> |
+| [<span data-ttu-id="ab8c2-123">**PathToRegion**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-123">**PathToRegion**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-pathtoregion)           | <span data-ttu-id="ab8c2-124">Cria uma região a partir do caminho selecionado no contexto do dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-124">Creates a region from the path that is selected into the specified device context.</span></span>                                                                               |
+| [<span data-ttu-id="ab8c2-125">**SetMiterLimit**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-125">**SetMiterLimit**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-setmiterlimit)         | <span data-ttu-id="ab8c2-126">Define o limite para o comprimento de junções de Mitre para o contexto de dispositivo especificado.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-126">Sets the limit for the length of miter joins for the specified device context.</span></span>                                                                                   |
+| [<span data-ttu-id="ab8c2-127">**StrokeAndFillPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-127">**StrokeAndFillPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-strokeandfillpath) | <span data-ttu-id="ab8c2-128">Fecha as figuras abertas em um caminho, traça o contorno do caminho usando a caneta atual e preenche seu interior usando o pincel atual.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-128">Closes any open figures in a path, strokes the outline of the path by using the current pen, and fills its interior by using the current brush.</span></span>                  |
+| [<span data-ttu-id="ab8c2-129">**StrokePath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-129">**StrokePath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-strokepath)               | <span data-ttu-id="ab8c2-130">Renderiza o caminho especificado usando a caneta atual.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-130">Renders the specified path by using the current pen.</span></span>                                                                                                             |
+| [<span data-ttu-id="ab8c2-131">**WidenPath**</span><span class="sxs-lookup"><span data-stu-id="ab8c2-131">**WidenPath**</span></span>](/windows/desktop/api/Wingdi/nf-wingdi-widenpath)                 | <span data-ttu-id="ab8c2-132">Redefine o caminho atual como a área que será pintada se o caminho tivesse sido traçado usando a caneta selecionada no momento no contexto do dispositivo fornecido.</span><span class="sxs-lookup"><span data-stu-id="ab8c2-132">Redefines the current path as the area that would be painted if the path were stroked using the pen currently selected into the given device context.</span></span>            |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
