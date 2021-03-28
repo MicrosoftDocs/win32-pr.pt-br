@@ -1,0 +1,2305 @@
+- name: API de registro de certificado
+  href: certenroll-portal.md
+  items:
+    - name: Sobre a API de registro de certificado
+      href: about-the-certificate-enrollment-api.md
+      items:
+        - name: Infraestrutura de chave pública
+          href: public-key-infrastructure.md
+          items:
+            - name: Certificados de chave pública X. 509
+              href: about-x-509-public-key-certificates.md
+              items:
+                - name: Campos básicos
+                  href: about-basic-fields.md
+                - name: Campos da versão 2
+                  href: about-version-2-fields.md
+                - name: Extensões da versão 3
+                  href: about-version-3-extensions.md
+            - name: Elementos PKI
+              href: about-pki-components.md
+              items:
+                - name: Autoridades de certificação
+                  href: about-certification-authorities.md
+                - name: Diretório do certificado
+                  href: about-certificate-directory.md
+                - name: Servidor de recuperação de chave
+                  href: about-key-recovery-server.md
+            - name: Modelos de confiança
+              href: about-trust-models.md
+              items:
+                - name: Hierarquia de certificados
+                  href: about-certificate-hierarchy.md
+                - name: Certificação cruzada
+                  href: about-cross-certification.md
+                - name: Cadeia de certificados
+                  href: about-certificate-chain.md
+        - name: Codificação de solicitação de certificado
+          href: about-certificate-request-encoding.md
+          items:
+            - name: Introdução à sintaxe e codificação ASN. 1
+              href: about-introduction-to-asn-1-syntax-and-encoding.md
+            - name: Sistema de tipo ASN. 1
+              href: about-asn-1-type-system.md
+              items:
+                - name: Tipos Básicos
+                  href: about-basic-types.md
+                - name: Tipos de cadeia de caracteres
+                  href: about-string-types.md
+                - name: Tipos construídos
+                  href: about-constructed-types.md
+            - name: Distinguished Encoding Rules
+              href: distinguished-encoding-rules.md
+              items:
+                - name: Sintaxe de transferência de DER
+                  href: about-der-transfer-syntax.md
+                  items:
+                    - name: Bytes de marca codificados
+                      href: about-encoded-tag-bytes.md
+                    - name: Comprimento codificado e bytes de valor
+                      href: about-encoded-length-and-value-bytes.md
+                - name: Codificação DER dos tipos ASN. 1
+                  href: about-der-encoding-of-asn-1-types.md
+                  items:
+                    - name: CADEIA DE BITS
+                      href: about-bit-string.md
+                    - name: BOOLEAN
+                      href: about-boolean.md
+                    - name: INTEGER
+                      href: about-integer.md
+                    - name: NULO
+                      href: about-null.md
+                    - name: IDENTIFICADOR DE OBJETO
+                      href: about-object-identifier.md
+                    - name: CADEIA DE CARACTERES DE OCTETO
+                      href: about-octet-string.md
+                    - name: BMPString
+                      href: about-bmpstring.md
+                    - name: IA5String
+                      href: about-ia5string.md
+                    - name: Imenablestring
+                      href: about-printablestring.md
+                    - name: UTF8String
+                      href: about-utf8string.md
+                    - name: SEQUENCE
+                      href: about-sequence.md
+                    - name: SET
+                      href: about-set.md
+        - name: Solicitações de certificado
+          href: certificate-requests.md
+          items:
+            - name: Nomes de Entidades
+              href: subject-names.md
+              items:
+                - name: Criando um nome de entidade
+                  href: creating-a-subject-name.md
+                - name: Codificando um nome de entidade
+                  href: encoding-a-subject-name.md
+            - name: Atributos
+              href: attributes.md
+              items:
+                - name: Atributos com suporte
+                  href: supported-attributes.md
+                - name: Arquitetura de atributo
+                  href: attribute-architecture.md
+                - name: 'Atributos de #7 PKCS'
+                  href: pkcs--7-attributes.md
+                - name: 'Atributos de #10 PKCS'
+                  href: pkcs--10-attributes.md
+                - name: Atributos CMC
+                  href: cmc-attributes.md
+            - name: Extensões
+              href: extensions.md
+              items:
+                - name: Extensões com suporte
+                  href: supported-extensions.md
+                - name: 'Extensões de #10 PKCS'
+                  href: pkcs--10-extensions.md
+                - name: Extensões CMC
+                  href: cmc-extensions.md
+        - name: Solicitações de Amostra
+          href: sample-requests.md
+          items:
+            - name: 'Solicitação de #10 PKCS'
+              href: pkcs--10-request.md
+              items:
+                - name: 'PKCS #10 ASN codificado. 1'
+                  href: pkcs--10-encoded-asn-1.md
+            - name: Solicitação de CMC
+              href: cmc-request.md
+              items:
+                - name: ASN codificado por CMC. 1
+                  href: cmc-encoded-asn-1.md
+            - name: 'Solicitação de renovação de #7 PKCS'
+              href: pkcs--7--renewal-request.md
+              items:
+                - name: 'ASN codificado de renovação de #7 PKCS. 1'
+                  href: pkcs--7-renewal-encoded-asn-1.md
+            - name: Solicitação de renovação de CMC
+              href: cmc-renewal-request.md
+              items:
+                - name: ASN codificado para renovação de CMC. 1
+                  href: cmc--renewal-encoded-asn-1.md
+            - name: Solicitação de geração de chave
+              href: key-generation-request.md
+              items:
+                - name: ASN codificado de geração de chave. 1
+                  href: key-generation-encoded-asn-1.md
+            - name: 'Solicitação de EOBO de #7 PKCS'
+              href: pkcs--7-eobo-request.md
+              items:
+                - name: 'PKCS #7 EOBO codificado com o ASN. 1'
+                  href: pkcs--7-eobo-encoded-asn-1.md
+            - name: Solicitação EOBO de CMC
+              href: cmc-eobo-request.md
+              items:
+                - name: ASN codificado EOBO CMC. 1
+                  href: cmc-eobo-encoded-asn-1.md
+            - name: Solicitação de arquivamento de chave CMC
+              href: cmc-key-archival-request.md
+              items:
+                - name: ASN codificado para arquivamento de chave CMC. 1
+                  href: cmc-key-archival-encoded-asn-1.md
+    - name: Usando a API de registro de certificado
+      href: using-the-certificate-enrollment-api.md
+      items:
+        - name: Mapeando Xenroll.dll para CertEnroll.dll
+          href: mapping-xenroll-dll-to-certenroll-dll.md
+          items:
+            - name: Funções de solicitação de certificado
+              href: certificate-request-functions.md
+            - name: Funções de resposta de certificado
+              href: certificate-response-functions.md
+            - name: Funções de atributo
+              href: attribute-functions.md
+            - name: Funções de extensão
+              href: extension-functions.md
+            - name: Funções de propriedade externa
+              href: external-property-functions.md
+            - name: Funções de chave pública e privada
+              href: private-and-public-key-functions.md
+            - name: Funções do provedor de serviços de criptografia
+              href: cryptographic-service-provider-functions.md
+            - name: Funções de repositório de certificados
+              href: certificate-store-functions.md
+            - name: Funções de troca de informações pessoais
+              href: personal-information-exchange-functions.md
+            - name: Funções auxiliares
+              href: helper-functions.md
+        - name: Usando os exemplos incluídos
+          href: using-the-included-samples.md
+          items:
+            - name: createCNGCustomCMC
+              href: createcngcustomcmc.md
+            - name: enrollCommon
+              href: enrollcommon.md
+            - name: enrollCustomCMC
+              href: enrollcustomcmc.md
+            - name: enrollCustomPKCS10
+              href: enrollcustompkcs10.md
+            - name: enrollCustomPKCS10_2
+              href: enrollcustompkcs10-2.md
+            - name: enrollEOBOCMC
+              href: enrolleobocmc.md
+            - name: enrollFromPublicKey
+              href: enrollfrompublickey.md
+            - name: enrollKeyArchivalCMC
+              href: enrollkeyarchivalcmc.md
+            - name: enrollNestedCMC
+              href: enrollnestedcmc.md
+            - name: enrollPKCS7
+              href: enrollpkcs7.md
+            - name: enrollRenewalPKCS7
+              href: enrollrenewalpkcs7.md
+            - name: enrollSimpleMachineCert
+              href: enrollsimplemachinecert.md
+            - name: enrollSimpleUserCert
+              href: enrollsimpleusercert.md
+            - name: enrollWithIX509EnrollmentHelper
+              href: enrollwithix509enrollmenthelper.md
+            - name: installResponseFromPFX
+              href: installresponsefrompfx.md
+        - name: Noções básicas sobre provedores criptográficos
+          href: understanding-cryptographic-providers.md
+          items:
+            - name: Provedores de serviço de criptografia CryptoAPI
+              href: cryptoapi-cryptographic-service-providers.md
+            - name: Provedores de algoritmos criptográficos CNG
+              href: cng-cryptographic-algorithm-providers.md
+            - name: Provedores de armazenamento de chaves CNG
+              href: cng-key-storage-providers.md
+            - name: Enumerando provedores instalados
+              href: enumerating-installed-providers.md
+    - name: Referência da API de registro de certificado
+      href: certificate-enrollment-api-reference.md
+      items:
+        - name: Interfaces CertEnroll
+          href: certenroll-interfaces.md
+          items:
+            - name: Interfaces de solicitação de certificado
+              href: certificate-request-interfaces.md
+              items:
+                - name: IX509CertificateRequest
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequest
+                  items:
+                    - name: Métodos IX509CertificateRequest
+                      href: ix509certificaterequest-methods.md
+                      items:
+                        - name: Método de codificação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-encode
+                        - name: Método GetInnerRequest
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-getinnerrequest
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-initialize
+                        - name: Método ResetForEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-resetforencode
+                    - name: Propriedades de IX509CertificateRequest
+                      href: ix509certificaterequest-properties.md
+                      items:
+                        - name: Propriedade AlternateSignatureAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_alternatesignaturealgorithm
+                        - name: Propriedade ClientId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_clientid
+                        - name: Propriedade CspInformations
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_cspinformations
+                        - name: Propriedade EnrollmentContext
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_enrollmentcontext
+                        - name: Propriedade HashAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_hashalgorithm
+                        - name: Propriedade ParentWindow
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_parentwindow
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_rawdata
+                        - name: Propriedade RenewalCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_renewalcertificate
+                        - name: Propriedade silenciosa
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_silent
+                        - name: Propriedade SuppressDefaults
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_suppressdefaults
+                        - name: Propriedade Type
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_type
+                        - name: Propriedade UIContextMessage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_uicontextmessage
+                - name: IX509CertificateRequestCertificate
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcertificate
+                  items:
+                    - name: Métodos IX509CertificateRequestCertificate
+                      href: ix509certificaterequestcertificate-methods.md
+                      items:
+                        - name: Método CheckPublicKeySignature
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-checkpublickeysignature
+                    - name: Propriedades de IX509CertificateRequestCertificate
+                      href: ix509certificaterequestcertificate-properties.md
+                      items:
+                        - name: Propriedade do emissor
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-get_issuer
+                        - name: Propriedade não após
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-get_notafter
+                        - name: Propriedade nobefore
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-get_notbefore
+                        - name: Propriedade SerialNumber
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-get_serialnumber
+                        - name: Propriedade SignerCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcertificate-get_signercertificate
+                - name: IX509CertificateRequestCertificate2
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestcertificate2
+                  items:
+                    - name: Métodos IX509CertificateRequestCertificate2
+                      href: ix509certificaterequestcertificate2-methods.md
+                      items:
+                        - name: Método InitializeFromPrivateKeyTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcertificate2-initializefromprivatekeytemplate
+                        - name: Método InitializeFromTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcertificate2-initializefromtemplate
+                    - name: Propriedades de IX509CertificateRequestCertificate2
+                      href: ix509certificaterequestcertificate2-properties.md
+                      items:
+                        - name: Propriedade PolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcertificate2-get_policyserver
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcertificate2-get_template
+                - name: IX509CertificateRequestCmc
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc
+                  items:
+                    - name: Métodos IX509CertificateRequestCmc
+                      href: ix509certificaterequestcmc-methods.md
+                      items:
+                        - name: Método InitializeFromInnerRequestTemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-initializefrominnerrequesttemplatename
+                    - name: Propriedades de IX509CertificateRequestCmc
+                      href: ix509certificaterequestcmc-properties.md
+                      items:
+                        - name: Propriedade ArchivePrivateKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey
+                        - name: Propriedade CriticalExtensions
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_criticalextensions
+                        - name: Propriedade cript.
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_cryptattributes
+                        - name: Propriedade EncryptedKeyHash
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptedkeyhash
+                        - name: Propriedade EncryptionAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptionalgorithm
+                        - name: Propriedade EncryptionStrength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptionstrength
+                        - name: Propriedade KeyArchivalCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_keyarchivalcertificate
+                        - name: Propriedade NameValuePairs
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs
+                        - name: Propriedade NullSigned
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_nullsigned
+                        - name: Propriedade SenderNonce
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_sendernonce
+                        - name: Propriedade SignatureInformation
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signatureinformation
+                        - name: Propriedade SignerCertificates
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signercertificates
+                        - name: Propriedade SuppressOids
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_suppressoids
+                        - name: Propriedade TemplateObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_templateobjectid
+                        - name: Propriedade TransactionId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid
+                        - name: Propriedade X509Extensions
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_x509extensions
+                - name: IX509CertificateRequestCmc2
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestcmc2
+                  items:
+                    - name: Métodos IX509CertificateRequestCmc2
+                      href: ix509certificaterequestcmc2-methods.md
+                      items:
+                        - name: Método CheckCertificateSignature
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-checkcertificatesignature
+                        - name: Método CheckSignature
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-checksignature
+                        - name: Método InitializeFromInnerRequestTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-initializefrominnerrequesttemplate
+                        - name: Método InitializeFromTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-initializefromtemplate
+                    - name: Propriedades de IX509CertificateRequestCmc2
+                      href: ix509certificaterequestcmc2-properties.md
+                      items:
+                        - name: Propriedade PolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-get_policyserver
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-get_template
+                - name: IX509CertificateRequestPkcs10
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10
+                  items:
+                    - name: Métodos IX509CertificateRequestPkcs10
+                      href: ix509certificaterequestpkcs10-methods.md
+                      items:
+                        - name: Método CheckSignature
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-checksignature
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializedecode
+                        - name: Método InitializeFromCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefromcertificate
+                        - name: Método InitializeFromPrivateKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefromprivatekey
+                        - name: Método InitializeFromPublicKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefrompublickey
+                        - name: Método InitializeFromTemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefromtemplatename
+                        - name: Método iscard
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-issmartcard
+                        - name: Método GetCspStatuses
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-getcspstatuses
+                    - name: Propriedades de IX509CertificateRequestPkcs10
+                      href: ix509certificaterequestpkcs10-properties.md
+                      items:
+                        - name: Propriedade CriticalExtensions
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_criticalextensions
+                        - name: Propriedade cript.
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_cryptattributes
+                        - name: Propriedade CspStatuses
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_cspstatuses
+                        - name: Propriedade KeyContainerNamePrefix
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_keycontainernameprefix
+                        - name: Propriedade NullSigned
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_nullsigned
+                        - name: Propriedade OldCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_oldcertificate
+                        - name: Propriedade PrivateKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_privatekey
+                        - name: Propriedade PublicKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_publickey
+                        - name: Propriedade RawDataToBeSigned
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_rawdatatobesigned
+                        - name: Propriedade ReuseKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_reusekey
+                        - name: Propriedade de assinatura
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_signature
+                        - name: Propriedade SignatureInformation
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_signatureinformation
+                        - name: Propriedade SmimeCapabilities
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_smimecapabilities
+                        - name: Propriedade Subject
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_subject
+                        - name: Propriedade SuppressOids
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_suppressoids
+                        - name: Propriedade TemplateObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_templateobjectid
+                        - name: Propriedade X509Extensions
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-get_x509extensions
+                - name: IX509CertificateRequestPkcs10V2
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs10v2
+                  items:
+                    - name: Métodos IX509CertificateRequestPkcs10V2
+                      href: ix509certificaterequestpkcs10v2-methods.md
+                      items:
+                        - name: Método InitializeFromPrivateKeyTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v2-initializefromprivatekeytemplate
+                        - name: Método InitializeFromPublicKeyTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v2-initializefrompublickeytemplate
+                        - name: Método InitializeFromTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v2-initializefromtemplate
+                    - name: Propriedades de IX509CertificateRequestPkcs10V2
+                      href: ix509certificaterequestpkcs10v2-properties.md
+                      items:
+                        - name: Propriedade PolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v2-get_policyserver
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v2-get_template
+                - name: IX509CertificateRequestPkcs10V3
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs10v3
+                  items:
+                    - name: Propriedades de IX509CertificateRequestPkcs10V3
+                      href: ix509certificaterequestpkcs10v3-properties.md
+                      items:
+                        - name: Propriedade AttestationEncryptionCertificate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_attestationencryptioncertificate
+                        - name: Propriedade AttestPrivateKey
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_attestprivatekey
+                        - name: Propriedade ChallengePassword
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_challengepassword
+                        - name: Propriedade EncryptionAlgorithm
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_encryptionalgorithm
+                        - name: Propriedade EncryptionStrength
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_encryptionstrength
+                        - name: Propriedade NameValuePairs
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs10v3-get_namevaluepairs
+                - name: IX509CertificateRequestPkcs7
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs7
+                  items:
+                    - name: Métodos IX509CertificateRequestPkcs7
+                      href: ix509certificaterequestpkcs7-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializedecode
+                        - name: Método InitializeFromCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromcertificate
+                        - name: Método InitializeFromInnerRequest
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefrominnerrequest
+                        - name: Método InitializeFromTemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromtemplatename
+                    - name: Propriedades de IX509CertificateRequestPkcs7
+                      href: ix509certificaterequestpkcs7-properties.md
+                      items:
+                        - name: Propriedade RequesterName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-get_requestername
+                        - name: Propriedade SignerCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-get_signercertificate
+                - name: IX509CertificateRequestPkcs7V2
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2
+                  items:
+                    - name: Métodos IX509CertificateRequestPkcs7V2
+                      href: ix509certificaterequestpkcs7v2-methods.md
+                      items:
+                        - name: Método CheckCertificateSignature
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-checkcertificatesignature
+                        - name: Método InitializeFromTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-initializefromtemplate
+                    - name: Propriedades de IX509CertificateRequestPkcs7V2
+                      href: ix509certificaterequestpkcs7v2-properties.md
+                      items:
+                        - name: Propriedade PolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-get_policyserver
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-get_template
+            - name: Interfaces de registro de certificado
+              href: certificate-enrollment-interfaces.md
+              items:
+                - name: IX509Enrollment
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment
+                  items:
+                    - name: Métodos IX509Enrollment
+                      href: ix509enrollment-methods.md
+                      items:
+                        - name: Método CreatePFX
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createpfx
+                        - name: Método CreateRequest
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createrequest
+                        - name: Método de registro
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-enroll
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initialize
+                        - name: Método InitializeFromRequest
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromrequest
+                        - name: Método InitializeFromTemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromtemplatename
+                        - name: Método InstallResponse
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-installresponse
+                    - name: Propriedades de IX509Enrollment
+                      href: ix509enrollment-properties.md
+                      items:
+                        - name: Propriedade CAConfigString
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_caconfigstring
+                        - name: Propriedade de certificado
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_certificate
+                        - name: Propriedade CertificateDescription
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_certificatedescription
+                        - name: Propriedade CertificateFriendlyName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_certificatefriendlyname
+                        - name: Propriedade EnrollmentContext
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_enrollmentcontext
+                        - name: Propriedade NameValuePairs
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_namevaluepairs
+                        - name: Propriedade ParentWindow
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_parentwindow
+                        - name: Propriedade de solicitação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_request
+                        - name: Propriedade RequestId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_requestid
+                        - name: Propriedade de resposta
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_response
+                        - name: Propriedade silenciosa
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_silent
+                        - name: Propriedade de status
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-get_status
+                - name: IX509Enrollment2
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509enrollment2
+                  items:
+                    - name: Métodos IX509Enrollment2
+                      href: ix509enrollment2-methods.md
+                      items:
+                        - name: Método InitializeFromTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollment2-initializefromtemplate
+                        - name: Método InstallResponse2
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollment2-installresponse2
+                    - name: Propriedades de IX509Enrollment2
+                      href: ix509enrollment2-properties.md
+                      items:
+                        - name: Propriedade PolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollment2-get_policyserver
+                        - name: Propriedade RequestIdstring
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollment2-get_requestidstring
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollment2-get_template
+                - name: IX509EnrollmentHelper
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509enrollmenthelper
+                  items:
+                    - name: Métodos IX509EnrollmentHelper
+                      href: ix509enrollmenthelper-methods.md
+                      items:
+                        - name: Método AddEnrollmentServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmenthelper-addenrollmentserver
+                        - name: Método AddPolicyServer
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmenthelper-addpolicyserver
+                        - name: Método de registro
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmenthelper-enroll
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmenthelper-initialize
+                - name: IX509EnrollmentStatus
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollmentstatus
+                  items:
+                    - name: Métodos IX509EnrollmentStatus
+                      href: ix509enrollmentstatus-methods.md
+                      items:
+                        - name: Método AppendText
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-appendtext
+                    - name: Propriedades de IX509EnrollmentStatus
+                      href: ix509enrollmentstatus-properties.md
+                      items:
+                        - name: Exibir Propriedade
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_display
+                        - name: Propriedade de erro
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_error
+                        - name: Propriedade ErrorText
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_errortext
+                        - name: Propriedade selecionada
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_selected
+                        - name: Propriedade de status
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_status
+                        - name: Propriedade Text
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentstatus-get_text
+                - name: IX509SCEPEnrollment
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509scepenrollment
+                  items:
+                    - name: Métodos IX509SCEPEnrollment
+                      href: ix509scepenrollment-methods.md
+                      items:
+                        - name: Método CreateRequestMessage
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-createrequestmessage
+                        - name: Método CreateRetrieveCertificateMessage
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-createretrievecertificatemessage
+                        - name: Método CreateRetrievePendingMessage
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-createretrievependingmessage
+                        - name: Método DeleteRequest
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-deleterequest
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-initialize
+                        - name: Método InitializeForPending
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-initializeforpending
+                        - name: Método ProcessResponseMessage
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-processresponsemessage
+                    - name: Propriedades de IX509SCEPEnrollment
+                      href: ix509scepenrollment-properties.md
+                      items:
+                        - name: Propriedade de certificado
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_certificate
+                        - name: Propriedade CertificateFriendlyName
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_certificatefriendlyname
+                        - name: Propriedade FailInfo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_failinfo
+                        - name: Propriedade OldCertificate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_oldcertificate
+                        - name: Propriedade de solicitação
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_request
+                        - name: Propriedade ServerCapabilities
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-put_servercapabilities
+                        - name: Propriedade SignerCertificate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_signercertificate
+                        - name: Propriedade silenciosa
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-put_silent
+                        - name: Propriedade de status
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_status
+                        - name: Propriedade TransactionId
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509scepenrollment-get_transactionid
+            - name: Interfaces de fábrica de registro de certificado
+              href: certificate-enrollment-factory-interfaces.md
+              items:
+                - name: IX509EnrollmentWebClassFactory
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollmentwebclassfactory
+                  items:
+                    - name: Métodos IX509EnrollmentWebClassFactory
+                      href: ix509enrollmentwebclassfactory-methods.md
+                      items:
+                        - name: Método CreateObject
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollmentwebclassfactory-createobject
+                - name: IX509MachineEnrollmentFactory
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509machineenrollmentfactory
+                  items:
+                    - name: Métodos IX509MachineEnrollmentFactory
+                      href: ix509machineenrollmentfactory-methods.md
+                      items:
+                        - name: Método CreateObject
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509machineenrollmentfactory-createobject
+            - name: Interfaces de extensão de certificado
+              href: certificate-extension-interfaces.md
+              items:
+                - name: IAlternativeName
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ialternativename
+                  items:
+                    - name: Métodos IAlternativeName
+                      href: ialternativename-methods.md
+                      items:
+                        - name: Método InitializeFromOtherName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromothername
+                        - name: Método InitializeFromRawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromrawdata
+                        - name: Método InitializeFromString
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromstring
+                    - name: Propriedades de IAlternativeName
+                      href: ialternativename-properties.md
+                      items:
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-get_objectid
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-get_rawdata
+                        - name: Propriedade de bervalue
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-get_strvalue
+                        - name: Propriedade Type
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-get_type
+                - name: IAlternativeNames
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ialternativenames
+                  items:
+                    - name: Métodos IAlternativeNames
+                      href: ialternativenames-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-remove
+                    - name: Propriedades de IAlternativeNames
+                      href: ialternativenames-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ialternativenames-get_itembyindex
+                - name: ICertificatePolicy
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicy
+                  items:
+                    - name: Métodos ICertificatePolicy
+                      href: icertificatepolicy-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicy-initialize
+                    - name: Propriedades de ICertificatePolicy
+                      href: icertificatepolicy-properties.md
+                      items:
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicy-get_objectid
+                        - name: Propriedade PolicyQualifiers
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicy-get_policyqualifiers
+                - name: ICertificatePolicies
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicies
+                  items:
+                    - name: Métodos ICertificatePolicies
+                      href: icertificatepolicies-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-remove
+                    - name: Propriedades de ICertificatePolicies
+                      href: icertificatepolicies-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicies-get_itembyindex
+                - name: IPolicyQualifier
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifier
+                  items:
+                    - name: Métodos IPolicyQualifier
+                      href: ipolicyqualifier-methods.md
+                      items:
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-initializeencode
+                    - name: Propriedades de IPolicyQualifier
+                      href: ipolicyqualifier-properties.md
+                      items:
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-get_objectid
+                        - name: Propriedade Qualifier
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-get_qualifier
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-get_rawdata
+                        - name: Propriedade Type
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-get_type
+                - name: IPolicyQualifiers
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifiers
+                  items:
+                    - name: Métodos IPolicyQualifiers
+                      href: ipolicyqualifiers-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-remove
+                    - name: Propriedades de IPolicyQualifiers
+                      href: ipolicyqualifiers-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifiers-get_itembyindex
+                - name: IX509Extension
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extension
+                  items:
+                    - name: Métodos IX509Extension
+                      href: ix509extension-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extension-initialize
+                    - name: Propriedades de IX509Extension
+                      href: ix509extension-properties.md
+                      items:
+                        - name: Propriedade crítica
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extension-get_critical
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extension-get_objectid
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extension-get_rawdata
+                - name: IX509ExtensionAlternativeNames
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionalternativenames
+                  items:
+                    - name: Métodos IX509ExtensionAlternativeNames
+                      href: ix509extensionalternativenames-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionalternativenames-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionalternativenames-initializeencode
+                    - name: Propriedades de IX509ExtensionAlternativeNames
+                      href: ix509extensionalternativenames-properties.md
+                      items:
+                        - name: Propriedade alternativonames
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionalternativenames-get_alternativenames
+                - name: IX509ExtensionAuthorityKeyIdentifier
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionauthoritykeyidentifier
+                  items:
+                    - name: Métodos IX509ExtensionAuthorityKeyIdentifier
+                      href: ix509extensionauthoritykeyidentifier-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionauthoritykeyidentifier-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionauthoritykeyidentifier-initializeencode
+                    - name: Propriedades de IX509ExtensionAuthorityKeyIdentifier
+                      href: ix509extensionauthoritykeyidentifier-properties.md
+                      items:
+                        - name: Propriedade AuthorityKeyIdentifier
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionauthoritykeyidentifier-get_authoritykeyidentifier
+                - name: IX509ExtensionBasicConstraints
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionbasicconstraints
+                  items:
+                    - name: Métodos IX509ExtensionBasicConstraints
+                      href: ix509extensionbasicconstraints-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionbasicconstraints-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionbasicconstraints-initializeencode
+                    - name: Propriedades de IX509ExtensionBasicConstraints
+                      href: ix509extensionbasicconstraints-properties.md
+                      items:
+                        - name: Propriedade IsCA
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionbasicconstraints-get_isca
+                        - name: Propriedade PathLenConstraint
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionbasicconstraints-get_pathlenconstraint
+                - name: IX509ExtensionCertificatePolicies
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensioncertificatepolicies
+                  items:
+                    - name: Métodos IX509ExtensionCertificatePolicies
+                      href: ix509extensioncertificatepolicies-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensioncertificatepolicies-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensioncertificatepolicies-initializeencode
+                    - name: Propriedades de IX509ExtensionCertificatePolicies
+                      href: ix509extensioncertificatepolicies-properties.md
+                      items:
+                        - name: Propriedade Policies
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensioncertificatepolicies-get_policies
+                - name: IX509ExtensionMSApplicationPolicies
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionmsapplicationpolicies
+                  items:
+                    - name: Métodos IX509ExtensionMSApplicationPolicies
+                      href: ix509extensionmsapplicationpolicies-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionmsapplicationpolicies-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionmsapplicationpolicies-initializeencode
+                    - name: Propriedades de IX509ExtensionMSApplicationPolicies
+                      href: ix509extensionmsapplicationpolicies-properties.md
+                      items:
+                        - name: Propriedade Policies
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionmsapplicationpolicies-get_policies
+                - name: IX509ExtensionEnhancedKeyUsage
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage
+                  items:
+                    - name: Métodos IX509ExtensionEnhancedKeyUsage
+                      href: ix509extensionenhancedkeyusage-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionenhancedkeyusage-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionenhancedkeyusage-initializeencode
+                    - name: Propriedades de IX509ExtensionEnhancedKeyUsage
+                      href: ix509extensionenhancedkeyusage-properties.md
+                      items:
+                        - name: Propriedade EnhancedKeyUsage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionenhancedkeyusage-get_enhancedkeyusage
+                - name: IX509ExtensionKeyUsage
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionkeyusage
+                  items:
+                    - name: Métodos IX509ExtensionKeyUsage
+                      href: ix509extensionkeyusage-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionkeyusage-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionkeyusage-initializeencode
+                    - name: Propriedades de IX509ExtensionKeyUsage
+                      href: ix509extensionkeyusage-properties.md
+                      items:
+                        - name: Propriedade KeyUsage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionkeyusage-get_keyusage
+                - name: IX509Extensions
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensions
+                  items:
+                    - name: Métodos IX509Extensions
+                      href: ix509extensions-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-add
+                        - name: Método AddRange
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-addrange
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-remove
+                    - name: Propriedades de IX509Extensions
+                      href: ix509extensions-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_count
+                        - name: Propriedade IndexByObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_indexbyobjectid
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_itembyindex
+                - name: IX509ExtensionSmimeCapabilities
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionsmimecapabilities
+                  items:
+                    - name: Métodos IX509ExtensionSmimeCapabilities
+                      href: ix509extensionsmimecapabilities-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsmimecapabilities-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsmimecapabilities-initializeencode
+                    - name: Propriedades de IX509ExtensionSmimeCapabilities
+                      href: ix509extensionsmimecapabilities-properties.md
+                      items:
+                        - name: Propriedade SmimeCapabilities
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsmimecapabilities-get_smimecapabilities
+                - name: IX509ExtensionSubjectKeyIdentifier
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionsubjectkeyidentifier
+                  items:
+                    - name: Métodos IX509ExtensionSubjectKeyIdentifier
+                      href: ix509extensionsubjectkeyidentifier-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsubjectkeyidentifier-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsubjectkeyidentifier-initializeencode
+                    - name: Propriedades de IX509ExtensionSubjectKeyIdentifier
+                      href: ix509extensionsubjectkeyidentifier-properties.md
+                      items:
+                        - name: Propriedade SubjectKeyIdentifier
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionsubjectkeyidentifier-get_subjectkeyidentifier
+                - name: IX509ExtensionTemplate
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplate
+                  items:
+                    - name: Métodos IX509ExtensionTemplate
+                      href: ix509extensiontemplate-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplate-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplate-initializeencode
+                    - name: Propriedades de IX509ExtensionTemplate
+                      href: ix509extensiontemplate-properties.md
+                      items:
+                        - name: Propriedade MajorVersion
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplate-get_majorversion
+                        - name: Propriedade MinorVersion
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplate-get_minorversion
+                        - name: Propriedade TemplateOid
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplate-get_templateoid
+                - name: IX509ExtensionTemplateName
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename
+                  items:
+                    - name: Métodos IX509ExtensionTemplateName
+                      href: ix509extensiontemplatename-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplatename-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplatename-initializeencode
+                    - name: Propriedades de IX509ExtensionTemplateName
+                      href: ix509extensiontemplatename-properties.md
+                      items:
+                        - name: Propriedade TemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplatename-get_templatename
+                - name: ISmimeCapabilities
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ismimecapabilities
+                  items:
+                    - name: Métodos ISmimeCapabilities
+                      href: ismimecapabilities-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-add
+                        - name: Método AddAvailableSmimeCapabilities
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-addavailablesmimecapabilities
+                        - name: Método AddFromCsp
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-addfromcsp
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-remove
+                    - name: Propriedades de ISmimeCapabilities
+                      href: ismimecapabilities-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapabilities-get_itembyindex
+                - name: ISmimeCapability
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ismimecapability
+                  items:
+                    - name: Métodos ISmimeCapability
+                      href: ismimecapability-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapability-initialize
+                    - name: Propriedades de ISmimeCapability
+                      href: ismimecapability-properties.md
+                      items:
+                        - name: Propriedade BitCount
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapability-get_bitcount
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ismimecapability-get_objectid
+            - name: Interfaces de atributo de certificado
+              href: certificate-attribute-interfaces.md
+              items:
+                - name: ICryptAttribute
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute
+                  items:
+                    - name: Métodos ICryptAttribute
+                      href: icryptattribute-methods.md
+                      items:
+                        - name: Método InitializeFromObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-initializefromobjectid
+                        - name: Método InitializeFromValues
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-initializefromvalues
+                    - name: Propriedades de ICryptAttribute
+                      href: icryptattribute-properties.md
+                      items:
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-get_objectid
+                        - name: Propriedade Values
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattribute-get_values
+                - name: ICryptAttributes
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes
+                  items:
+                    - name: Métodos ICryptAttributes
+                      href: icryptattributes-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-add
+                        - name: Método AddRange
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-addrange
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-remove
+                    - name: Propriedades de ICryptAttributes
+                      href: icryptattributes-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-get_count
+                        - name: Propriedade IndexByObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-get_indexbyobjectid
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-get_itembyindex
+                - name: IX509Attribute
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute
+                  items:
+                    - name: Métodos IX509Attribute
+                      href: ix509attribute-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attribute-initialize
+                    - name: Propriedades de IX509Attribute
+                      href: ix509attribute-properties.md
+                      items:
+                        - name: Propriedade ObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attribute-get_objectid
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attribute-get_rawdata
+                - name: IX509AttributeClientId
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid
+                  items:
+                    - name: Métodos IX509AttributeClientId
+                      href: ix509attributeclientid-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializeencode
+                    - name: Propriedades de IX509AttributeClientId
+                      href: ix509attributeclientid-properties.md
+                      items:
+                        - name: Propriedade ClientId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-get_clientid
+                        - name: Propriedade MachineDnsName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-get_machinednsname
+                        - name: Propriedade ProcessName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-get_processname
+                        - name: Propriedade UserSamName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-get_usersamname
+                - name: IX509AttributeExtensions
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions
+                  items:
+                    - name: Métodos IX509AttributeExtensions
+                      href: ix509attributeextensions-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeextensions-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeextensions-initializeencode
+                    - name: Propriedades de IX509AttributeExtensions
+                      href: ix509attributeextensions-properties.md
+                      items:
+                        - name: Propriedade X509Extensions
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeextensions-get_x509extensions
+                - name: IX509AttributeArchiveKey
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey
+                  items:
+                    - name: Métodos IX509AttributeArchiveKey
+                      href: ix509attributearchivekey-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekey-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekey-initializeencode
+                    - name: Propriedades de IX509AttributeArchiveKey
+                      href: ix509attributearchivekey-properties.md
+                      items:
+                        - name: Propriedade EncryptionAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekey-get_encryptionalgorithm
+                        - name: Propriedade EncryptedKeyBlob
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekey-get_encryptedkeyblob
+                        - name: Propriedade EncryptionStrength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekey-get_encryptionstrength
+                - name: IX509AttributeArchiveKeyHash
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekeyhash
+                  items:
+                    - name: Métodos IX509AttributeArchiveKeyHash
+                      href: ix509attributearchivekeyhash-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekeyhash-initializedecode
+                        - name: Método InitializeEncodeFromEncryptedKeyBlob
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekeyhash-initializeencodefromencryptedkeyblob
+                    - name: Propriedades de IX509AttributeArchiveKeyHash
+                      href: ix509attributearchivekeyhash-properties.md
+                      items:
+                        - name: Propriedade EncryptedKeyHashBlob
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributearchivekeyhash-get_encryptedkeyhashblob
+                - name: IX509AttributeCspProvider
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider
+                  items:
+                    - name: Métodos IX509AttributeCspProvider
+                      href: ix509attributecspprovider-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributecspprovider-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributecspprovider-initializeencode
+                    - name: Propriedades de IX509AttributeCspProvider
+                      href: ix509attributecspprovider-properties.md
+                      items:
+                        - name: Propriedade KeySpec
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributecspprovider-get_keyspec
+                        - name: Propriedade ProviderName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributecspprovider-get_providername
+                        - name: Propriedade de assinatura
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributecspprovider-get_signature
+                - name: IX509AttributeOSVersion
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion
+                  items:
+                    - name: Métodos IX509AttributeOSVersion
+                      href: ix509attributeosversion-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeosversion-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeosversion-initializeencode
+                    - name: Propriedades de IX509AttributeOSVersion
+                      href: ix509attributeosversion-properties.md
+                      items:
+                        - name: Propriedade OSVersion
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeosversion-get_osversion
+                - name: IX509AttributeRenewalCertificate
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate
+                  items:
+                    - name: Métodos IX509AttributeRenewalCertificate
+                      href: ix509attributerenewalcertificate-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializedecode
+                        - name: Método InitializeEncode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializeencode
+                    - name: Propriedades de IX509AttributeRenewalCertificate
+                      href: ix509attributerenewalcertificate-properties.md
+                      items:
+                        - name: Propriedade RenewalCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-get_renewalcertificate
+                - name: IX509Attributes
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes
+                  items:
+                    - name: Métodos IX509Attributes
+                      href: ix509attributes-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-remove
+                    - name: Propriedades de IX509Attributes
+                      href: ix509attributes-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509attributes-get_itembyindex
+                - name: IX509NameValuePair
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair
+                  items:
+                    - name: Métodos IX509NameValuePair
+                      href: ix509namevaluepair-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepair-initialize
+                    - name: Propriedades de IX509NameValuePair
+                      href: ix509namevaluepair-properties.md
+                      items:
+                        - name: Propriedade Name
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepair-get_name
+                        - name: Propriedade Value
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepair-get_value
+                - name: IX509NameValuePairs
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs
+                  items:
+                    - name: Métodos IX509NameValuePairs
+                      href: ix509namevaluepairs-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-remove
+                    - name: Propriedades de IX509NameValuePairs
+                      href: ix509namevaluepairs-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-get_itembyindex
+            - name: Interfaces de propriedade de certificado
+              href: certificate-property-interfaces.md
+              items:
+                - name: ICertProperties
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertproperties
+                  items:
+                    - name: Métodos ICertProperties
+                      href: icertproperties-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-clear
+                        - name: Método InitializeFromCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-initializefromcertificate
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-remove
+                    - name: Propriedades de ICertProperties
+                      href: icertproperties-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-get_itembyindex
+                - name: ICertProperty
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertproperty
+                  items:
+                    - name: Métodos ICertProperty
+                      href: icertproperty-methods.md
+                      items:
+                        - name: Método InitializeDecode
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-initializedecode
+                        - name: Método InitializeFromCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-initializefromcertificate
+                        - name: Método RemoveFromCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-removefromcertificate
+                        - name: Método SetValueOnCertificate
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-setvalueoncertificate
+                    - name: Propriedades de ICertProperty
+                      href: icertproperty-properties.md
+                      items:
+                        - name: Propriedade PropertyId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-get_propertyid
+                        - name: Propriedade RawData
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertproperty-get_rawdata
+                - name: ICertPropertyArchived
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyarchived
+                  items:
+                    - name: Métodos ICertPropertyArchived
+                      href: icertpropertyarchived-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyarchived-initialize
+                    - name: Propriedades de ICertPropertyArchived
+                      href: icertpropertyarchived-properties.md
+                      items:
+                        - name: Propriedade arquivada
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyarchived-get_archived
+                - name: ICertPropertyArchivedKeyHash
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyarchivedkeyhash
+                  items:
+                    - name: Métodos ICertPropertyArchivedKeyHash
+                      href: icertpropertyarchivedkeyhash-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyarchivedkeyhash-initialize
+                    - name: Propriedades de ICertPropertyArchivedKeyHash
+                      href: icertpropertyarchivedkeyhash-properties.md
+                      items:
+                        - name: Propriedade ArchivedKeyHash
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyarchivedkeyhash-get_archivedkeyhash
+                - name: ICertPropertyAutoEnroll
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyautoenroll
+                  items:
+                    - name: Métodos ICertPropertyAutoEnroll
+                      href: icertpropertyautoenroll-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyautoenroll-initialize
+                    - name: Propriedades de ICertPropertyAutoEnroll
+                      href: icertpropertyautoenroll-properties.md
+                      items:
+                        - name: Propriedade TemplateName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyautoenroll-get_templatename
+                - name: ICertPropertyBackedUp
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertybackedup
+                  items:
+                    - name: Métodos ICertPropertyBackedUp
+                      href: icertpropertybackedup-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertybackedup-initialize
+                        - name: Método InitializeFromCurrentTime
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertybackedup-initializefromcurrenttime
+                    - name: Propriedades de ICertPropertyBackedUp
+                      href: icertpropertybackedup-properties.md
+                      items:
+                        - name: Propriedade BackedUpValue
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertybackedup-get_backedupvalue
+                        - name: Propriedade BackedUpTime
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertybackedup-get_backeduptime
+                - name: ICertPropertyDescription
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertydescription
+                  items:
+                    - name: Métodos ICertPropertyDescription
+                      href: icertpropertydescription-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertydescription-initialize
+                    - name: Propriedades de ICertPropertyDescription
+                      href: icertpropertydescription-properties.md
+                      items:
+                        - name: Propriedade Description
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertydescription-get_description
+                - name: ICertPropertyEnrollment
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyenrollment
+                  items:
+                    - name: Métodos ICertPropertyEnrollment
+                      href: icertpropertyenrollment-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyenrollment-initialize
+                    - name: Propriedades de ICertPropertyEnrollment
+                      href: icertpropertyenrollment-properties.md
+                      items:
+                        - name: Propriedade CADnsName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyenrollment-get_cadnsname
+                        - name: Propriedade CAName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyenrollment-get_caname
+                        - name: Propriedade FriendlyName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyenrollment-get_friendlyname
+                        - name: Propriedade RequestId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyenrollment-get_requestid
+                - name: ICertPropertyEnrollmentPolicyServer
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-icertpropertyenrollmentpolicyserver
+                  items:
+                    - name: Métodos ICertPropertyEnrollmentPolicyServer
+                      href: icertpropertyenrollmentpolicyserver-methods.md
+                      items:
+                        - name: Método getauthentication
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getauthentication
+                        - name: Método GetEnrollmentServerAuthentication
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getenrollmentserverauthentication
+                        - name: Método GetEnrollmentServerUrl
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getenrollmentserverurl
+                        - name: Método GetPolicyServerId
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getpolicyserverid
+                        - name: Método GetPolicyServerUrl
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getpolicyserverurl
+                        - name: Método GetPropertyFlags
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getpropertyflags
+                        - name: Método getrequestidstring
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-getrequestidstring
+                        - name: Método GetUrlFlags
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-geturlflags
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertpropertyenrollmentpolicyserver-initialize
+                - name: ICertPropertyFriendlyName
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyfriendlyname
+                  items:
+                    - name: Métodos ICertPropertyFriendlyName
+                      href: icertpropertyfriendlyname-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyfriendlyname-initialize
+                    - name: Propriedades de ICertPropertyFriendlyName
+                      href: icertpropertyfriendlyname-properties.md
+                      items:
+                        - name: Propriedade FriendlyName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyfriendlyname-get_friendlyname
+                - name: ICertPropertyKeyProvInfo
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo
+                  items:
+                    - name: Métodos ICertPropertyKeyProvInfo
+                      href: icertpropertykeyprovinfo-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertykeyprovinfo-initialize
+                    - name: Propriedades de ICertPropertyKeyProvInfo
+                      href: icertpropertykeyprovinfo-properties.md
+                      items:
+                        - name: Propriedade PrivateKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertykeyprovinfo-get_privatekey
+                - name: ICertPropertyRenewal
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyrenewal
+                  items:
+                    - name: Métodos ICertPropertyRenewal
+                      href: icertpropertyrenewal-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrenewal-initialize
+                        - name: Método InitializeFromCertificateHash
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrenewal-initializefromcertificatehash
+                    - name: Propriedades de ICertPropertyRenewal
+                      href: icertpropertyrenewal-properties.md
+                      items:
+                        - name: Propriedade de renovação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrenewal-get_renewal
+                - name: ICertPropertyRequestOriginator
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyrequestoriginator
+                  items:
+                    - name: Métodos ICertPropertyRequestOriginator
+                      href: icertpropertyrequestoriginator-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrequestoriginator-initialize
+                        - name: Método InitializeFromLocalRequestOriginator
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrequestoriginator-initializefromlocalrequestoriginator
+                    - name: Propriedades de ICertPropertyRequestOriginator
+                      href: icertpropertyrequestoriginator-properties.md
+                      items:
+                        - name: Propriedade RequestOriginator
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertyrequestoriginator-get_requestoriginator
+                - name: ICertPropertySHA1Hash
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icertpropertysha1hash
+                  items:
+                    - name: Métodos ICertPropertySHA1Hash
+                      href: icertpropertysha1hash-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertysha1hash-initialize
+                    - name: Propriedades de ICertPropertySHA1Hash
+                      href: icertpropertysha1hash-properties.md
+                      items:
+                        - name: Propriedade SHA1Hash
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icertpropertysha1hash-get_sha1hash
+            - name: Interfaces de modelo de certificado
+              href: certificate-template-interfaces.md
+              items:
+                - name: IX509CertificateTemplate
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificatetemplate
+                  items:
+                    - name: Propriedades de IX509CertificateTemplate
+                      href: ix509certificatetemplate-properties.md
+                      items:
+                        - name: Propriedade Property
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplate-get_property
+                - name: IX509CertificateTemplates
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificatetemplates
+                  items:
+                    - name: Métodos IX509CertificateTemplates
+                      href: ix509certificatetemplates-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-remove
+                    - name: Propriedades de IX509CertificateTemplates
+                      href: ix509certificatetemplates-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-get_count
+                        - name: Propriedade ItemByName
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-get_itembyname
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-get_itembyindex
+                        - name: Propriedade ItemByOid
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplates-get_itembyoid
+                - name: IX509CertificateTemplateWritable
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509certificatetemplatewritable
+                  items:
+                    - name: Métodos IX509CertificateTemplateWritable
+                      href: ix509certificatetemplatewritable-methods.md
+                      items:
+                        - name: Método Commit
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-commit
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-initialize
+                    - name: Propriedades de IX509CertificateTemplateWritable
+                      href: ix509certificatetemplatewritable-properties.md
+                      items:
+                        - name: Propriedade Property
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_property
+                        - name: Propriedade de modelo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_template
+            - name: Interfaces de servidor de política de certificado
+              href: certificate-policy-server-interfaces.md
+              items:
+                - name: IX509EnrollmentPolicyServer
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509enrollmentpolicyserver
+                  items:
+                    - name: Métodos IX509EnrollmentPolicyServer
+                      href: ix509enrollmentpolicyserver-methods.md
+                      items:
+                        - name: Método de exportação
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-export
+                        - name: Método GetAllowUnTrustedCA
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getallowuntrustedca
+                        - name: Método GetAuthFlags
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getauthflags
+                        - name: Método GetCacheDir
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcachedir
+                        - name: Método GetCachePath
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcachepath
+                        - name: Método GetCAs
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcas
+                        - name: Método GetCAsForTemplate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcasfortemplate
+                        - name: Método GetCustomOids
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcustomoids
+                        - name: Método getfriendlyname
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getfriendlyname
+                        - name: Método GetIsDefaultCEP
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getisdefaultcep
+                        - name: Método GetLastUpdateTime
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getlastupdatetime
+                        - name: Método GetNextUpdateTime
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getnextupdatetime
+                        - name: Método GetPolicyServerId
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getpolicyserverid
+                        - name: Método GetPolicyServerUrl
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getpolicyserverurl
+                        - name: Método gettemplates
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-gettemplates
+                        - name: Método GetUseClientId
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getuseclientid
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-initialize
+                        - name: Método InitializeImport
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-initializeimport
+                        - name: Método loadpolicy
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-loadpolicy
+                        - name: Método QueryChanges
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-querychanges
+                        - name: Método setcredential
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-setcredential
+                        - name: Método Validate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-validate
+                    - name: Propriedades de IX509EnrollmentPolicyServer
+                      href: ix509enrollmentpolicyserver-properties.md
+                      items:
+                        - name: Propriedade de custo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-get_cost
+                - name: IX509PolicyServerListManager
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509policyserverlistmanager
+                  items:
+                    - name: Métodos IX509PolicyServerListManager
+                      href: ix509policyserverlistmanager-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-clear
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-initialize
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-remove
+                    - name: Propriedades de IX509PolicyServerListManager
+                      href: ix509policyserverlistmanager-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509policyserverlistmanager-get_itembyindex
+                - name: IX509PolicyServerUrl
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509policyserverurl
+                  items:
+                    - name: Métodos IX509PolicyServerUrl
+                      href: ix509policyserverurl-methods.md
+                      items:
+                        - name: Método getstringproperty
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-getstringproperty
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-initialize
+                        - name: Método RemoveFromRegistry
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-removefromregistry
+                        - name: Método setstringproperty
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-setstringproperty
+                        - name: Método UpdateRegistry
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-updateregistry
+                    - name: Propriedades de IX509PolicyServerUrl
+                      href: ix509policyserverurl-properties.md
+                      items:
+                        - name: Propriedade AuthFlags
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-get_authflags
+                        - name: Propriedade de custo
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-get_cost
+                        - name: Propriedade padrão
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-get_default
+                        - name: Propriedade Flags
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-get_flags
+                        - name: Propriedade de URL
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-get_url
+            - name: Assinatura de certificado e interfaces de chave
+              href: certificate-signature-and-key-interfaces.md
+              items:
+                - name: ISignerCertificate
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-isignercertificate
+                  items:
+                    - name: Métodos ISignerCertificate
+                      href: isignercertificate-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-initialize
+                    - name: Propriedades de ISignerCertificate
+                      href: isignercertificate-properties.md
+                      items:
+                        - name: Propriedade de certificado
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_certificate
+                        - name: Propriedade ParentWindow
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_parentwindow
+                        - name: Propriedade PIN
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-put_pin
+                        - name: Propriedade PrivateKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_privatekey
+                        - name: Propriedade SignatureInformation
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_signatureinformation
+                        - name: Propriedade silenciosa
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_silent
+                        - name: Propriedade UIContextMessage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificate-get_uicontextmessage
+                - name: ISignerCertificates
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-isignercertificates
+                  items:
+                    - name: Métodos ISignerCertificates
+                      href: isignercertificates-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-clear
+                        - name: Método Find
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-find
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-remove
+                    - name: Propriedades de ISignerCertificates
+                      href: isignercertificates-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-isignercertificates-get_itembyindex
+                - name: IX509PrivateKey
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509privatekey
+                  items:
+                    - name: Métodos IX509PrivateKey
+                      href: ix509privatekey-methods.md
+                      items:
+                        - name: Método Close
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-close
+                        - name: Criar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-create
+                        - name: Excluir método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-delete
+                        - name: Método de exportação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-export
+                        - name: Método ExportPublicKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-exportpublickey
+                        - name: Método de importação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-import
+                        - name: Abrir método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-open
+                        - name: Verificar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-verify
+                    - name: Propriedades de IX509PrivateKey
+                      href: ix509privatekey-properties.md
+                      items:
+                        - name: Propriedade de algoritmo
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_algorithm
+                        - name: Propriedade de certificado
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_certificate
+                        - name: Propriedade ContainerName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_containername
+                        - name: Propriedade ContainerNamePrefix
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_containernameprefix
+                        - name: Propriedade CspInformations
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_cspinformations
+                        - name: Propriedade CspStatus
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_cspstatus
+                        - name: Propriedade defaultcontainer
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_defaultcontainer
+                        - name: Propriedade Description
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_description
+                        - name: Propriedade existente
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_existing
+                        - name: Propriedade ExportPolicy
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_exportpolicy
+                        - name: Propriedade FriendlyName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_friendlyname
+                        - name: Propriedade de proteção de keyprotection
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyprotection
+                        - name: Propriedade KeySpec
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyspec
+                        - name: Propriedade KeyUsage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyusage
+                        - name: Propriedade LegacyCsp
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_legacycsp
+                        - name: Propriedade Length
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_length
+                        - name: Propriedade MachineContext
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_machinecontext
+                        - name: Propriedade aberta
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_opened
+                        - name: Propriedade ParentWindow
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_parentwindow
+                        - name: Propriedade PIN
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-put_pin
+                        - name: Propriedade ProviderName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_providername
+                        - name: Propriedade ProviderType
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_providertype
+                        - name: Propriedade readername
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_readername
+                        - name: Propriedade SecurityDescriptor
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_securitydescriptor
+                        - name: Propriedade silenciosa
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_silent
+                        - name: Propriedade UIContextMessage
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_uicontextmessage
+                        - name: Propriedade UniqueContainerName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_uniquecontainername
+                - name: IX509PublicKey
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509publickey
+                  items:
+                    - name: Métodos IX509PublicKey
+                      href: ix509publickey-methods.md
+                      items:
+                        - name: Método ComputeKeyIdentifier
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-computekeyidentifier
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initialize
+                        - name: Método InitializeFromEncodedPublicKeyInfo
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initializefromencodedpublickeyinfo
+                    - name: Propriedades de IX509PublicKey
+                      href: ix509publickey-properties.md
+                      items:
+                        - name: Propriedade de algoritmo
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-get_algorithm
+                        - name: Propriedade EncodedKey
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-get_encodedkey
+                        - name: Propriedade EncodedParameters
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-get_encodedparameters
+                        - name: Propriedade Length
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-get_length
+                - name: IX509SignatureInformation
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix509signatureinformation
+                  items:
+                    - name: Métodos IX509SignatureInformation
+                      href: ix509signatureinformation-methods.md
+                      items:
+                        - name: Método GetSignatureAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-getsignaturealgorithm
+                        - name: Método setDefaultValues
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-setdefaultvalues
+                    - name: Propriedades de IX509SignatureInformation
+                      href: ix509signatureinformation-properties.md
+                      items:
+                        - name: Propriedade AlternateSignatureAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_alternatesignaturealgorithm
+                        - name: Propriedade AlternateSignatureAlgorithmSet
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_alternatesignaturealgorithmset
+                        - name: Propriedade HashAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_hashalgorithm
+                        - name: Propriedade NullSigned
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_nullsigned
+                        - name: Propriedade Parameters
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_parameters
+                        - name: Propriedade PublicKeyAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-get_publickeyalgorithm
+            - name: Interfaces de autoridade de certificação
+              href: certification-authority-interfaces.md
+              items:
+                - name: ICertificationAuthorities
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-icertificationauthorities
+                  items:
+                    - name: Métodos ICertificationAuthorities
+                      href: icertificationauthorities-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-clear
+                        - name: Método ComputeSiteCosts
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-computesitecosts
+                        - name: Remover método
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-remove
+                    - name: Propriedades de ICertificationAuthorities
+                      href: icertificationauthorities-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-get_itembyindex
+                        - name: Propriedade ItemByName
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthorities-get_itembyname
+                - name: ICertificationAuthority
+                  href: /windows/desktop/api/certenroll/nn-certenroll-icertificationauthority
+                  items:
+                    - name: Propriedades de ICertificationAuthority
+                      href: icertificationauthority-properties.md
+                      items:
+                        - name: Propriedade Property
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificationauthority-get_property
+            - name: Interfaces de provedor criptográfico
+              href: cryptographic-provider-interfaces.md
+              items:
+                - name: ICspAlgorithm
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspalgorithm
+                  items:
+                    - name: Métodos ICspAlgorithm
+                      href: icspalgorithm-methods.md
+                      items:
+                        - name: Método GetAlgorithmOid
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-getalgorithmoid
+                    - name: Propriedades de ICspAlgorithm
+                      href: icspalgorithm-properties.md
+                      items:
+                        - name: Propriedade defaultlength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_defaultlength
+                        - name: Propriedade IncrementLength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_incrementlength
+                        - name: Propriedade LongName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_longname
+                        - name: Propriedade MaxLength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_maxlength
+                        - name: Propriedade MinLength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_minlength
+                        - name: Propriedade Name
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_name
+                        - name: Propriedade de operações
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_operations
+                        - name: Propriedade Type
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_type
+                        - name: Propriedade válida
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithm-get_valid
+                - name: ICspAlgorithms
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspalgorithms
+                  items:
+                    - name: Métodos ICspAlgorithms
+                      href: icspalgorithms-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-remove
+                    - name: Propriedades de ICspAlgorithms
+                      href: icspalgorithms-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-get_count
+                        - name: Propriedade IndexByObjectId
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-get_indexbyobjectid
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-get_itembyindex
+                        - name: Propriedade ItemByName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspalgorithms-get_itembyname
+                - name: ICspInformation
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspinformation
+                  items:
+                    - name: Métodos ICspInformation
+                      href: icspinformation-methods.md
+                      items:
+                        - name: Método GetCspStatusFromOperations
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-getcspstatusfromoperations
+                        - name: Método GetDefaultSecurityDescriptor
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-getdefaultsecuritydescriptor
+                        - name: Método InitializeFromName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-initializefromname
+                        - name: Método InitializeFromType
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-initializefromtype
+                    - name: Propriedades de ICspInformation
+                      href: icspinformation-properties.md
+                      items:
+                        - name: Propriedade CspAlgorithms
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_cspalgorithms
+                        - name: Propriedade HasHardwareRandomNumberGenerator
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_hashardwarerandomnumbergenerator
+                        - name: Propriedade IsHardwareDevice
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_ishardwaredevice
+                        - name: Propriedade IsRemovable
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_isremovable
+                        - name: Propriedade issmartcard
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_issmartcard
+                        - name: Propriedade IsSoftwareDevice
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_issoftwaredevice
+                        - name: Propriedade KeySpec
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_keyspec
+                        - name: Propriedade LegacyCsp
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_legacycsp
+                        - name: Propriedade MaxKeyContainerNameLength
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_maxkeycontainernamelength
+                        - name: Propriedade Name
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_name
+                        - name: Propriedade Type
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_type
+                        - name: Propriedade válida
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_valid
+                        - name: Propriedade Version
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformation-get_version
+                - name: ICspInformations
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspinformations
+                  items:
+                    - name: Métodos ICspInformations
+                      href: icspinformations-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-add
+                        - name: Método AddAvailableCsps
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-addavailablecsps
+                        - name: Método GetCspStatusesFromOperations
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-getcspstatusesfromoperations
+                        - name: Método GetCspStatusFromProviderName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-getcspstatusfromprovidername
+                        - name: Método GetEncryptionCspAlgorithms
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-getencryptioncspalgorithms
+                        - name: Método gethashalgorithms
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-gethashalgorithms
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-remove
+                    - name: Propriedades de ICspInformations
+                      href: icspinformations-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-get_itembyindex
+                        - name: Propriedade ItemByName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspinformations-get_itembyname
+                - name: ICspStatus
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspstatus
+                  items:
+                    - name: Métodos ICspStatus
+                      href: icspstatus-methods.md
+                      items:
+                        - name: Método Initialize
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-initialize
+                    - name: Propriedades de ICspStatus
+                      href: icspstatus-properties.md
+                      items:
+                        - name: Propriedade CspAlgorithm
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-get_cspalgorithm
+                        - name: Propriedade CspInformation
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-get_cspinformation
+                        - name: Propriedade DisplayName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-get_displayname
+                        - name: Propriedade EnrollmentStatus
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-get_enrollmentstatus
+                        - name: Propriedade ordinal
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-get_ordinal
+                - name: ICspStatuses
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-icspstatuses
+                  items:
+                    - name: Métodos ICspStatuses
+                      href: icspstatuses-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-add
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-remove
+                    - name: Propriedades de ICspStatuses
+                      href: icspstatuses-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_itembyindex
+                        - name: Propriedade ItemByName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_itembyname
+                        - name: Propriedade ItemByOperations
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_itembyoperations
+                        - name: Propriedade ItemByOrdinal
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_itembyordinal
+                        - name: Propriedade ItemByProvider
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-icspstatuses-get_itembyprovider
+            - name: Interfaces auxiliares
+              href: helper-interfaces.md
+              items:
+                - name: IBinaryConverter
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ibinaryconverter
+                  items:
+                    - name: Métodos IBinaryConverter
+                      href: ibinaryconverter-methods.md
+                      items:
+                        - name: Método StringToString
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ibinaryconverter-stringtostring
+                        - name: Método StringToVariantByteArray
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ibinaryconverter-stringtovariantbytearray
+                        - name: Método VariantByteArrayToString
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ibinaryconverter-variantbytearraytostring
+                - name: ICertificateAttestationChallenge
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-icertificateattestationchallenge
+                  items:
+                    - name: Métodos ICertificateAttestationChallenge
+                      href: icertificateattestationchallenge-methods.md
+                      items:
+                        - name: Método DecryptChallenge
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificateattestationchallenge-decryptchallenge
+                        - name: Método Initialize
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificateattestationchallenge-initialize
+                    - name: Propriedades de ICertificateAttestationChallenge
+                      href: icertificateattestationchallenge-properties.md
+                      items:
+                        - name: Propriedade RequestID
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-icertificateattestationchallenge-get_requestid
+                - name: IObjectId
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-iobjectid
+                  items:
+                    - name: Métodos IObjectId
+                      href: iobjectid-methods.md
+                      items:
+                        - name: Método InitializeFromAlgorithmName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-initializefromalgorithmname
+                        - name: Método InitializeFromName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-initializefromname
+                        - name: Método InitializeFromValue
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-initializefromvalue
+                        - name: Método getalgorithmname
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-getalgorithmname
+                    - name: Propriedades de IObjectId
+                      href: iobjectid-properties.md
+                      items:
+                        - name: Propriedade FriendlyName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-get_friendlyname
+                        - name: Propriedade Name
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-get_name
+                        - name: Propriedade Value
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectid-get_value
+                - name: IObjectIds
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-iobjectids
+                  items:
+                    - name: Métodos IObjectIds
+                      href: iobjectids-methods.md
+                      items:
+                        - name: Adicionar método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-add
+                        - name: Método AddRange
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-addrange
+                        - name: Método Clear
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-clear
+                        - name: Remover método
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-remove
+                    - name: Propriedades de IObjectIds
+                      href: iobjectids-properties.md
+                      items:
+                        - name: Propriedade _NewEnum
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get__newenum
+                        - name: Propriedade Count
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_count
+                        - name: Propriedade ItemByIndex
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_itembyindex
+                - name: IX500DistinguishedName
+                  href: /windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname
+                  items:
+                    - name: Métodos IX500DistinguishedName
+                      href: ix500distinguishedname-methods.md
+                      items:
+                        - name: Método decodificar
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix500distinguishedname-decode
+                        - name: Método de codificação
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix500distinguishedname-encode
+                    - name: Propriedades de IX500DistinguishedName
+                      href: ix500distinguishedname-properties.md
+                      items:
+                        - name: Propriedade EncodedName
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix500distinguishedname-get_encodedname
+                        - name: Propriedade Name
+                          href: /windows/desktop/api/CertEnroll/nf-certenroll-ix500distinguishedname-get_name
+                - name: IX509EndorsementKey
+                  href: /windows/desktop/api/Certenroll/nn-certenroll-ix509endorsementkey
+                  items:
+                    - name: Métodos IX509EndorsementKey
+                      href: ix509endorsementkey-methods.md
+                      items:
+                        - name: Método addcertificate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-addcertificate
+                        - name: Método Close
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-close
+                        - name: Método ExportPublicKey
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-exportpublickey
+                        - name: Método GetCertificateByIndex
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-getcertificatebyindex
+                        - name: Método GetCertificateCount
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-getcertificatecount
+                        - name: Método Open
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open
+                        - name: Método RemoveCertificate
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-removecertificate
+                    - name: Propriedades de IX509EndorsementKey
+                      href: ix509endorsementkey-properties.md
+                      items:
+                        - name: Propriedade Length
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-get_length
+                        - name: Propriedade aberta
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-get_opened
+                        - name: Propriedade ProviderName
+                          href: /windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-get_providername
+        - name: Enumerações CertEnroll
+          href: certenroll-enumerations.md
+          items:
+            - name: AlgorithmFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-algorithmflags
+            - name: AlgorithmOperationFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-algorithmoperationflags
+            - name: AlgorithmType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-algorithmtype
+            - name: AlternativeNameType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-alternativenametype
+            - name: CERTENROLL_OBJECTID
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-certenroll_objectid
+            - name: CERTENROLL_PROPERTYID
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-certenroll_propertyid
+            - name: CommitTemplateFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-committemplateflags
+            - name: EncodingType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-encodingtype
+            - name: EnrollmentCAProperty
+              href: /windows/desktop/api/Certenroll/ne-certenroll-enrollmentcaproperty
+            - name: EnrollmentDisplayStatus
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-enrollmentdisplaystatus
+            - name: EnrollmentEnrollStatus
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-enrollmentenrollstatus
+            - name: EnrollmentPolicyFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-enrollmentpolicyflags
+            - name: EnrollmentPolicyServerPropertyFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-enrollmentpolicyserverpropertyflags
+            - name: EnrollmentSelectionStatus
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-enrollmentselectionstatus
+            - name: EnrollmentTemplateProperty
+              href: /windows/desktop/api/Certenroll/ne-certenroll-enrollmenttemplateproperty
+            - name: InnerRequestLevel
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-innerrequestlevel
+            - name: InstallResponseRestrictionFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-installresponserestrictionflags
+            - name: KeyIdentifierHashAlgorithm
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-keyidentifierhashalgorithm
+            - name: ObjectIdGroupId
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-objectidgroupid
+            - name: ObjectIdPublicKeyFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-objectidpublickeyflags
+            - name: PFXExportOptions
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-pfxexportoptions
+            - name: Pkcs10AllowedSignatureTypes
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-pkcs10allowedsignaturetypes
+            - name: PolicyQualifierType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-policyqualifiertype
+            - name: PolicyServerUrlFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-policyserverurlflags
+            - name: PolicyServerUrlPropertyID
+              href: /windows/desktop/api/Certenroll/ne-certenroll-policyserverurlpropertyid
+            - name: RequestClientInfoClientId
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-requestclientinfoclientid
+            - name: WebEnrollmentFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-webenrollmentflags
+            - name: WebSecurityLevel
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-websecuritylevel
+            - name: X500NameFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x500nameflags
+            - name: X509CertificateEnrollmentContext
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509certificateenrollmentcontext
+            - name: X509CertificateTemplateEnrollmentFlag
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509certificatetemplateenrollmentflag
+            - name: X509CertificateTemplateGeneralFlag
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509certificatetemplategeneralflag
+            - name: X509CertificateTemplatePrivateKeyFlag
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509certificatetemplateprivatekeyflag
+            - name: X509CertificateTemplateSubjectNameFlag
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509certificatetemplatesubjectnameflag
+            - name: X509EnrollmentPolicyExportFlags
+              href: /windows/desktop/api/Certenroll/ne-certenroll-x509enrollmentpolicyexportflags
+            - name: X509EnrollmentPolicyLoadOption
+              href: /windows/desktop/api/Certenroll/ne-certenroll-x509enrollmentpolicyloadoption
+            - name: X509KeySpec
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509keyspec
+            - name: X509KeyUsageFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509keyusageflags
+            - name: X509PrivateKeyExportFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509privatekeyexportflags
+            - name: X509PrivateKeyProtection
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509privatekeyprotection
+            - name: X509PrivateKeyUsageFlags
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509privatekeyusageflags
+            - name: X509PrivateKeyVerify
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509privatekeyverify
+            - name: X509ProviderType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509providertype
+            - name: X509RequestInheritOptions
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509requestinheritoptions
+            - name: X509RequestType
+              href: /windows/desktop/api/CertEnroll/ne-certenroll-x509requesttype
+            - name: X509SCEPDisposition
+              href: /windows/desktop/api/certpol/ne-certpol-x509scepdisposition
+            - name: X509SCEPFailInfo
+              href: /windows/desktop/api/certpol/ne-certpol-x509scepfailinfo
