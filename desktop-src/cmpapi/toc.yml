@@ -1,0 +1,47 @@
+- name: API de compactação
+  href: '-compression-portal.md'
+  items:
+    - name: Usando a API de compactação
+      href: using-the-compression-api.md
+      items:
+        - name: Usando a API de compactação no modo de buffer
+          href: using-the-compression-api-in-buffer-mode.md
+        - name: Usando a API de compactação no modo de bloco
+          href: using-the-compression-api-in-block-mode.md
+    - name: Funções de API de compactação
+      href: compression-api-functions.md
+      items:
+        - name: CloseCompressor
+          href: /windows/desktop/api/compressapi/nf-compressapi-closecompressor
+        - name: CloseDecompressor
+          href: /windows/desktop/api/compressapi/nf-compressapi-closedecompressor
+        - name: Compactar
+          href: /windows/desktop/api/compressapi/nf-compressapi-compress
+        - name: Createcompacter
+          href: /windows/desktop/api/compressapi/nf-compressapi-createcompressor
+        - name: CreateDecompressor
+          href: /windows/desktop/api/compressapi/nf-compressapi-createdecompressor
+        - name: Descompactar
+          href: /windows/desktop/api/compressapi/nf-compressapi-decompress
+        - name: QueryCompressorInformation
+          href: /windows/desktop/api/compressapi/nf-compressapi-querycompressorinformation
+        - name: QueryDecompressorInformation
+          href: /windows/desktop/api/compressapi/nf-compressapi-querydecompressorinformation
+        - name: ResetCompressor
+          href: /windows/desktop/api/compressapi/nf-compressapi-resetcompressor
+        - name: ResetDecompressor
+          href: /windows/desktop/api/compressapi/nf-compressapi-resetdecompressor
+        - name: SetCompressorInformation
+          href: /windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation
+        - name: SetDecompressorInformation
+          href: /windows/desktop/api/compressapi/nf-compressapi-setdecompressorinformation
+    - name: Estruturas de API de compactação
+      href: compression-api-structures.md
+      items:
+        - name: COMPRESS_ALLOCATION_ROUTINES
+          href: /windows/win32/api/compressapi/ns-compressapi-compress_allocation_routines
+    - name: Enumerações de API de compactação
+      href: compression-api-enumerations.md
+      items:
+        - name: COMPRESS_INFORMATION_CLASS
+          href: /windows/desktop/api/compressapi/ne-compressapi-compress_information_class
