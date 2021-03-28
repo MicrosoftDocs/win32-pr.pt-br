@@ -1,0 +1,616 @@
+- name: Aplicativos Win32 da área de trabalho
+  href: ./index.yml
+  items:
+    - name: Introdução
+      items:
+        - name: Visão geral
+          href: ./desktop-programming.md
+        - name: Novidades
+          href: ./whats-new.md
+        - name: Criar seu primeiro aplicativo Win32 do C++
+          href: ./learnwin32/learn-to-program-for-windows.md
+        - name: Crie seu primeiro aplicativo do Windows usando DirectX
+          href: ./direct3dgetstarted/building-your-first-directx-app.md
+        - name: Usando os cabeçalhos do Windows
+          href: ./winprog/using-the-windows-headers.md
+        - name: Guias de plataforma
+          items:
+            - name: Guia de programação para o Windows de 64 bits
+              href: ./winprog64/programming-guide-for-64-bit-windows.md
+            - name: Manual de compatibilidade para Windows
+              href: ./w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal.md
+            - name: Guias do Windows 7
+              href: ./windows-7.md
+              items:
+                - name: Guia de qualidade de aplicativos para Windows 7 e Windows Server 2008 R2
+                  href: ./win7appqual/windows-7-application-quality-cookbook.md
+                - name: Guia do desenvolvedor do Windows 7
+                  href: ./win7devguide/windows-7-developer-guide.md
+                - name: Atualização da plataforma para Windows Vista
+                  href: ./win7ip/platform-update-for-windows-vista-portal.md
+    - name: Design
+      href: ./uxguide/guidelines.md
+    - name: Desenvolver
+      href: null
+      items:
+        - name: Tecnologias de aplicativos de desktop
+          items:
+            - name: Visão geral
+              href: ./desktop-app-technologies.md
+            - name: Acessibilidade
+              items:
+                - name: Visão geral
+                  href: ./accessibility/accessibility.md
+                - name: Quais as novidades em termos de acessibilidade e automação do Windows
+                  href: ./accessibility/accessibility-whatsnew.md
+                - name: Desenvolvendo aplicativos Windows acessíveis
+                  href: ./accessibility/accessibility-appdev.md
+                - name: Desenvolvendo estruturas de interface do usuário acessíveis
+                  href: accessibility/accessibility-uiframeworkdev.md
+                - name: Desenvolvimento de tecnologias adaptativas para Windows
+                  href: ./accessibility/accessibility-atdev.md
+                - name: Teste de acessibilidade
+                  href: ./accessibility/accessibility-testwithuia.md
+                - name: Tecnologia de acessibilidade e automação herdada
+                  href: ./accessibility/accessibility-legacy.md
+                - name: Referência de recursos de acessibilidade e automação
+                  href: ./accessibility/accessibility-reference-old.md
+            - name: Interface do usuário do aplicativo de desktop
+              items:
+                - name: Visão geral
+                  href: ./windows-application-ui-development.md
+                - name: Introdução desenvolver interfaces de usuário para aplicativos do Windows
+                  href: ./appuistart/getting-started-developing-user-interfaces-portal.md
+                - name: Internacionalização para aplicativos do Windows
+                  href: ./intl/international-support.md
+                - name: Interação do usuário
+                  items:
+                    - name: Visão geral
+                      href: ./user-interaction.md
+                    - name: Manipulação direta
+                      href: ./directmanipulation/direct-manipulation-portal.md
+                    - name: Entrada à tinta
+                      href: ./input_ink/input-ink-portal.md
+                    - name: Configuração de comentários de entrada
+                      href: ./input_feedback/input-feedback-configuration-portal.md
+                    - name: Identificação da fonte de entrada
+                      href: ./input_sourceid/input-source-identification-portal.md
+                    - name: Contexto de interação
+                      href: ./input_intcontext/interaction-context-portal.md
+                    - name: Pilha de dispositivos do ponteiro
+                      href: ./input_pointerdevice/pointer-device-stack-portal.md
+                    - name: Notificações e mensagens de entrada do ponteiro
+                      href: ./inputmsg/messages-and-notifications-portal.md
+                    - name: Entrada do controlador radial
+                      href: ./input_radial/radialcontroller-portal.md
+                    - name: Estrutura de serviços de texto
+                      href: ./tsf/text-services-framework.md
+                    - name: Teste de colisão de entrada por toque
+                      href: ./input_touchhittest/touch-hit-testing-portal.md
+                    - name: Injeção de entrada por toque
+                      href: ./input_touchinjection/touch-injection-portal.md
+                    - name: Recursos herdados de interação do usuário
+                      items:
+                        - name: Visão geral
+                          href: ./legacy-user-interaction-features.md
+                        - name: Entrada por toque
+                          href: ./wintouch/windows-touch-portal.md
+                        - name: Entrada de teclado e mouse
+                          href: ./inputdev/user-input.md
+                        - name: Mouse do MultiPoint
+                          href: 'https://msdn.microsoft.com/library/windows/desktop/ff877472.aspx'
+                        - name: Tablet
+                          href: ./tablet/tablet-pc-development-guide.md
+                - name: Janelas e mensagens
+                  href: ./winmsg/windowing.md
+                - name: Gerenciador de Janelas da Área de Trabalho
+                  href: ./dwm/dwm-overview.md
+                - name: Caixas de diálogo
+                  href: ./dlgbox/dialog-boxes.md
+                - name: Menus e outros recursos
+                  href: ./menurc/resources.md
+                - name: Troca de Dados
+                  href: ./dataxchg/data-exchange.md
+                - name: DPI alto
+                  href: ./hidpi/high-dpi-desktop-application-development-on-windows.md
+                - name: Gerenciador de animação do Windows
+                  href: ./uianimation/-main-portal.md
+                - name: Controles do Windows
+                  href: ./controls/window-controls.md
+                - name: Estrutura da faixa de dasgem do Windows
+                  href: ./windowsribbon/-uiplat-windowsribbon-entry.md
+            - name: Ambiente de desktop
+              items:
+                - name: Visão geral
+                  href: ./user-interface.md
+                - name: O Shell do Windows
+                  href: ./shell/shell-entry.md
+                - name: Sistema de propriedades do Windows
+                  href: ./properties/windows-properties-system.md
+                - name: Windows Search
+                  href: ./search/windows-search.md
+                - name: Estações e desktops da janela
+                  href: ./winstation/window-stations-and-desktops.md
+                - name: Recursos de ambiente do Windows herdados
+                  href: /windows/win32/api/_lwef/
+            - name: Instalação e manutenção de aplicativos
+              items:
+                - name: Visão geral
+                  href: ./application-installing-and-servicing.md
+                - name: Aplicativos isolados e assemblies lado a lado
+                  href: ./sbscs/isolated-applications-and-side-by-side-assemblies-portal.md
+                - name: 'Empacotamento, implantação e consulta de aplicativos UWP'
+                  href: ./appxpkg/appx-portal.md
+                - name: Licenciamento para desenvolvedores
+                  href: ./devlic/developer-licensing-portal.md
+                - name: Gerenciador de reinicialização
+                  href: ./rstmgr/restart-manager-portal.md
+                - name: Atualizar o Orchestrator
+                  href: ./UpdateOrchestrator/index.md
+                - name: Windows Installer
+                  href: ./msi/windows-installer-portal.md
+            - name: Áudio e vídeo
+              items:
+                - name: Visão geral
+                  href: ./audio-and-video.md
+                - name: APIs de áudio de núcleo
+                  href: ./coreaudio/core-audio-apis-in-windows-vista.md
+                - name: DirectShow
+                  href: ./directshow/directshow.md
+                - name: Microsoft Media Foundation
+                  href: ./medfound/microsoft-media-foundation-sdk.md
+                - name: SDK do Windows Media Format 11
+                  href: ./wmformat/windows-media-format-11-sdk.md
+                - name: SDK do Windows Media Player
+                  href: ./wmp/windows-media-player-sdk.md
+                - name: API de streaming de mídia
+                  href: ./mediastreaming/media-streaming-api-portal.md
+                - name: Multimídia do Windows
+                  href: ./multimedia/windows-multimedia-start-page.md
+            - name: Acesso a dados e armazenamento
+              items:
+                - name: Visão geral
+                  href: ./data-access-and-storage.md
+                - name: BITS
+                  href: ./bits/background-intelligent-transfer-service-portal.md
+                - name: Backup
+                  href: ./backup/backup.md
+                - name: Mecanismos de sincronização de nuvem
+                  href: ./cfapi/cloud-files-api-portal.md
+                - name: Sistema de Arquivos Distribuído
+                  href: /windows/win32/api/_dfs/
+                - name: Mecanismo de armazenamento extensível
+                  href: ./extensible-storage-engine/extensible-storage-engine.md
+                - name: API de mestre de imagem
+                  href: ./imapi/portal.md
+                - name: API de imagens
+                  href: /previous-versions/msdn10/dd851933(v=msdn.10)
+                - name: Sistemas de arquivos locais
+                  href: ./fileio/file-systems.md
+                - name: Sistema de arquivos projetado
+                  href: ./projfs/projected-file-system.md
+                - name: Programação de memória persistente
+                  href: ./persistent-memory-programming-in-windows---nvml-integration.md
+                - name: Armazenamento virtual
+                  href: /windows/desktop/VStor/virtual-storage
+                - name: Serviço de Disco Virtual
+                  href: /windows/desktop/VDS/virtual-disk-service-portal
+                - name: Serviço de Cópias de Sombra de Volume
+                  href: ./vss/volume-shadow-copy-service-portal.md
+            - name: Dispositivos
+              items:
+                - name: Visão geral
+                  href: ./devices.md
+                - name: Recursos de comunicação
+                  href: ./devio/communications-resources.md
+                - name: Acesso ao dispositivo
+                  href: ./deviceaccess/device-access-broker-api-portal.md
+                - name: API de localização
+                  href: ./locationapi/windows-location-api-portal.md
+                - name: API do Sensor
+                  href: ./sensorsapi/portal.md
+                - name: APIs de UPnP
+                  href: ./upnp/universal-plug-and-play-start-page.md
+                - name: Serviços Web em dispositivos
+                  href: wsdapi/wsd-portal.md
+                - name: WIA
+                  href: ./wsdapi/wsd-portal.md
+            - name: SDK do Windows Media Gerenciador de Dispositivos 11
+              href: ./wmdm/windows-media-device-manager-11-sdk.md
+            - name: Dispositivos portáteis do Windows
+              items:
+                - name: Visão geral
+                  href: windows-portable-devices.md
+                - name: Interface de programação de aplicativo WPD
+                  href: ./wpd_sdk/wpd-application-programming-interface.md
+            - name: Diagnósticos
+              items:
+                - name: Visão geral
+                  href: ./diagnostics.md
+                - name: Depuração e tratamento de erros
+                  items:
+                    - name: Visão geral
+                      href: ./debugging-and-error-handling.md
+                    - name: Reinicialização e recuperação de aplicativos
+                      href: ./recovery/application-recovery-and-restart-portal.md
+                    - name: Tratamento de erros
+                      href: ./debug/error-handling.md
+                - name: Estrutura de diagnóstico de rede
+                  href: ./ndf/portal.md
+                - name: Monitor de Rede
+                  href: ./netmon2/network-monitor.md
+                - name: Contadores de desempenho
+                  href: ./perfctrs/performance-counters-portal.md
+                - name: Processar instantâneos
+                  href: /windows/win32/api/_proc_snap/
+                - name: API de status do processo
+                  href: ./psapi/process-status-helper.md
+                - name: Serviço de Notificação de Eventos do Sistema
+                  href: ./sens/system-event-notification-service-portal.md
+                - name: Monitor do Sistema
+                  href: ./sysmon/system-monitor-portal.md
+                - name: Biblioteca de ajuda da ferramenta
+                  href: ./toolhelp/tool-help-library.md
+                - name: Relatório de Erros do Windows
+                  href: ./wer/windows-error-reporting.md
+                - name: Eventos do Windows
+                  items:
+                    - name: Visão geral
+                      href: ./events/windows-events.md
+                    - name: TraceLogging
+                      href: ./tracelogging/trace-logging-portal.md
+                    - name: Rastreamento de eventos
+                      href: ./etw/event-tracing-portal.md
+                    - name: Log de eventos
+                      href: ./eventlog/event-logging.md
+                    - name: Log de eventos do Windows
+                      href: ./wes/windows-event-log.md
+                    - name: Coletor de Eventos do Windows
+                      href: ./wec/windows-event-collector.md
+            - name: 'Documentos e impressão '
+              href: ./printdocs/documents-and-printing.md
+            - name: Elementos gráficos e jogos
+              items:
+                - name: Visão geral
+                  href: ./graphics-and-multimedia.md
+                - name: Gráficos e jogos do DirectX
+                  items:
+                    - name: Visão geral
+                      href: ./directx.md
+                    - name: Introdução a elementos gráficos DirectX
+                      href: ./getting-started-with-directx-graphics.md
+                    - name: Programando DirectX com com
+                      href: ./prog-dx-with-com.md
+                    - name: Direct2D
+                      href: ./direct2d/direct2d-portal.md
+                    - name: Direct3D
+                      items:
+                        - name: Visão geral
+                          href: ./direct3d.md
+                        - name: Introdução ao Direct3D
+                          href: ./getting-started-with-direct3d.md
+                        - name: Elementos gráficos do Direct3D 12
+                          href: ./direct3d12/direct3d-12-graphics.md
+                        - name: Elementos gráficos do Direct3D 11
+                          href: ./direct3d11/atoc-dx-graphics-direct3d-11.md
+                        - name: DXGI
+                          href: ./direct3ddxgi/dx-graphics-dxgi.md
+                        - name: HLSL
+                          href: ./direct3dhlsl/dx-graphics-hlsl.md
+                        - name: DDS
+                          href: ./direct3ddds/dx-graphics-dds.md
+                    - name: DXCore
+                      href: ./dxcore/dxcore.md
+                    - name: DirectWrite
+                      href: ./directwrite/direct-write-portal.md
+                    - name: DirectXMath
+                      href: ./dxmath/directxmath-portal.md
+                    - name: APIs windowsnumerics. h
+                      href: ./numerics_h/windowsnumerics-h-apis-portal.md
+                    - name: Elementos gráficos do DirectX clássico
+                      items:
+                        - name: Visão geral
+                          href: ./directx.md
+                        - name: Gráficos do Direct3D 10
+                          href: ./direct3d10/d3d10-graphics.md
+                        - name: Gráficos do Direct3D 9
+                          href: ./direct3d9/dx9-graphics-reference.md
+                        - name: Acelera
+                          href: ./directdraw/directdraw.md
+                        - name: Artigos técnicos
+                          href: ./dxtecharts/dx9-technical-articles.md
+                        - name: Onde está o SDK do DirectX?
+                          href: ./directx-sdk--august-2009-.md
+                    - name: Ferramentas para elementos gráficos do DirectX
+                      href: /windows/desktop/direct3dtools/dx-graphics-tools
+                    - name: Artigos sobre elementos gráficos do DirectX
+                      href: ./direct3darticles/directx-graphics-articles-portal.md
+                    - name: APIs XAudio2
+                      href: ./xaudio2/xaudio2-apis-portal.md
+                    - name: APIs do XInput Game Controller
+                      href: ./xinput/xinput-game-controller-apis-portal.md
+                - name: DirectComposition
+                  href: ./directcomp/directcomposition-portal.md
+                - name: GDI+
+                  href: ./gdiplus/-gdiplus-gdi-start.md
+                - name: GDI do Windows
+                  href: ./gdi/windows-gdi.md
+                - name: Configuração do Monitor
+                  href: ./monitor/monitor-configuration.md
+                - name: OpenGL
+                  href: ./opengl/opengl.md
+                - name: Windows Imaging Component
+                  href: ./wic/-wic-lh.md
+                - name: Windows Mixed Reality
+                  href: ./mixedreality/mixed-reality-portal.md
+                - name: Sistema de cores do Windows
+                  href: ./wcs/windows-color-system.md
+            - name: Rede e Internet
+              items:
+                - name: Visão geral
+                  href: ./networking.md
+                - name: Otimização de Entrega
+                  href: delivery_optimization/delivery-optimization-portal.md
+                - name: Sistema de nomes de domínio
+                  href: ./dns/dns-start-page.md
+                - name: API do servidor HTTP
+                  href: ./http/http-api-start-page.md
+                - name: Auxiliar de IP
+                  href: ./iphlp/ip-helper-start-page.md
+                - name: Enfileiramento de Mensagens
+                  href: /previous-versions/windows/desktop/legacy/ms711472(v=vs.85)
+                - name: Interfaces de Rede
+                  href: ./network-interfaces.md
+                - name: Gerenciador de lista de rede
+                  href: ./nla/portal.md
+                - name: Gerenciamento de Rede
+                  href: ./netmgmt/network-management.md
+                - name: Gerenciamento de compartilhamento de rede
+                  href: ./netshare/network-share-management.md
+                - name: Ponto a ponto
+                  href: ./p2psdk/portal.md
+                - name: Chamada de Procedimento Remoto
+                  href: ./rpc/rpc-start-page.md
+                - name: Serviço de Roteamento e Acesso Remoto
+                  href: ./rras/portal.md
+                - name: Protocolo SNMP
+                  href: ./snmp/snmp-start-page.md
+                - name: Interfaces de programação de aplicativo de telefonia
+                  href: Tapi/telephony-application-programming-interfaces.md
+                - name: Teredo
+                  href: ./teredo/portal.md
+                - name: API de componente de protocolo WebSocket
+                  href: ./websock/web-socket-protocol-component-api-portal.md
+                - name: Plataforma de filtragem do Windows
+                  href: ./fwp/windows-filtering-platform-start-page.md
+                - name: Sistema de rede do Windows
+                  href: ./wnet/windows-networking-wnet-.md
+                - name: Windows Sockets 2
+                  href: ./winsock/windows-sockets-start-page-2.md
+                - name: Redes sem Fio
+                  items:
+                    - name: Visão geral
+                      href: ./wireless-networking.md
+                    - name: Bluetooth
+                      href: ./bluetooth/bluetooth-start-page.md
+                    - name: Banda Larga Móvel
+                      href: ./mbn/mobile-broadband-networks-portal.md
+                    - name: WiFi nativo
+                      href: ./nativewifi/portal.md
+                    - name: Windows Connect agora
+                      href: ./wcn/portal.md
+                    - name: Gerenciador de Conexão do Windows
+                      href: ./wcm/windows-connection-manager-portal.md
+                - name: WebDAV
+                  href: ./webdav/webdav-portal.md
+                - name: Serviços HTTP do Windows
+                  href: ./winhttp/winhttp-start-page.md
+                - name: Internet do Windows
+                  href: ./wininet/portal.md
+                - name: Serviços Web do Windows
+                  href: ./wsw/portal.md
+            - name: Segurança e identidade
+              items:
+                - name: Visão geral
+                  href: ./security.md
+                - name: Interface de verificação de antimalware
+                  href: ./amsi/antimalware-scan-interface-portal.md
+                - name: Autenticação
+                  href: ./secauthn/authentication-portal.md
+                - name: Autorização
+                  href: ./secauthz/authorization-portal.md
+                - name: Práticas recomendadas para as APIs de segurança
+                  href: ./secbp/best-practices-for-the-security-apis.md
+                - name: API de registro de certificado
+                  href: ./seccertenroll/certenroll-portal.md
+                - name: Criptografia
+                  href: ./seccrypto/cryptography-portal.md
+                - name: 'API de criptografia: próxima geração'
+                  href: ./seccng/cng-portal.md
+                - name: 'Serviços de diretório, identidade e acesso'
+                  href: null
+                  items:
+                    - name: Serviços de Diretório
+                      href: null
+                      items:
+                        - name: Diretórios
+                          href: null
+                          items:
+                            - name: Active Directory Domain Services
+                              href: ./ad/active-directory-domain-services.md
+                            - name: Esquema do Active Directory
+                              href: ./adschema/active-directory-schema.md
+                        - name: Tecnologias de acesso ao diretório
+                          href: null
+                          items:
+                            - name: Active Directory Service Interfaces
+                              href: ./adsi/active-directory-service-interfaces-adsi.md
+                    - name: Serviços de gerenciamento de acesso
+                      href: null
+                      items:
+                        - name: Serviços de Federação do Active Directory
+                          items:
+                            - name: Visão geral
+                              href: ./srvnodes/active-directory-federation-services.md
+                            - name: Visão geral dos Serviços de Federação do Active Directory
+                              href: /previous-versions/windows/desktop/legacy/ms674895(v=vs.85)
+                - name: Protocolo EAP (Extensible Authentication Protocol)
+                  href: ./eap/eap-start-page.md
+                - name: Host do protocolo de autenticação extensível
+                  href: ./eaphost/portal.md
+                - name: Proteção de Acesso à Rede
+                  href: ./nap/network-access-protection-start-page.md
+                - name: Servidor de Políticas de Rede
+                  href: ./nps/portal.md
+                - name: Controles dos pais
+                  href: ./parcon/parental-controls-portal.md
+                - name: Rights Management
+                  items:
+                    - name: Visão geral
+                      href: ./srvnodes/rights-management.md
+                    - name: 'Cenários, código e ferramentas do RMS'
+                      href: ./srvnodes/rms-code-samples-and-tools.md
+                - name: Gerenciamento de Segurança
+                  href: ./secmgmt/management-portal.md
+                - name: Glossário de segurança
+                  href: ./secgloss/security-glossary.md
+                - name: Serviços base do TPM
+                  href: ./tbs/tpm-base-services-portal.md
+                - name: Windows Biometric Framework
+                  href: ./secbiomet/biometric-service-api-portal.md
+            - name: Serviços do sistema
+              items:
+                - name: Visão geral
+                  href: ./system-services.md
+                - name: Component Object Model
+                  href: ./com/component-object-model--com--portal.md
+                - name: linguagem IDL da Microsoft
+                  href: ./midl/midl-start-page.md
+                - name: Armazenamento estruturado
+                  href: ./stg/structured-storage-start-page.md
+                - name: COM+
+                  href: ./cossdk/component-services-portal.md
+                - name: API de compactação
+                  href: ./cmpapi/-compression-portal.md
+                - name: Bibliotecas de Dynamic-Link
+                  href: ./dlls/dynamic-link-libraries.md
+                - name: Comunicação entre processos
+                  href: ./ipc/interprocess-communications.md
+                - name: Gerenciador de transações do kernel
+                  href: ./ktm/kernel-transaction-manager-portal.md
+                - name: Gerenciamento de memória
+                  href: ./memory/memory-management.md
+                - name: Gerenciamento de energia
+                  href: ./power/power-management-portal.md
+                - name: Processos e threads
+                  href: ./procthread/processes-and-threads.md
+                - name: Serviços de área de trabalho remota
+                  href: ./termserv/terminal-services-portal.md
+                - name: Serviços
+                  href: ./services/services.md
+                - name: API de instalação
+                  href: ./setupapi/setup-api-portal.md
+                - name: Sincronização
+                  href: ./sync/synchronization.md
+                - name: Informações do sistema Windows
+                  href: ./sysinfo/windows-system-information.md
+            - name: Windows Machine Learning
+              href: ./machinelearning/machine-learning-portal.md
+            - name: Notas do desenvolvedor
+              href: ./devnotes/developer-notes.md
+        - name: Desenvolver com tecnologias de servidor
+          items:
+            - name: Visão geral
+              href: ./server-and-system-technologies.md
+            - name: 'Serviços de diretório, identidade e acesso'
+              href: ./srvnodes/directory--identity--and-access-services.md
+              items:
+                - name: Serviços de Diretório
+                  href: ./srvnodes/directory-services.md
+                  items:
+                    - name: Diretórios
+                      href: ./srvnodes/directories.md
+                    - name: Tecnologias de acesso ao diretório
+                      href: ./srvnodes/directory-access-technologies.md
+                - name: Serviços de Identidade
+                  href: ./srvnodes/identity-services.md
+                  items:
+                    - name: Gerenciador de ciclo de vida de identidade 2007
+                      href: ./srvnodes/identity-lifecycle-manager-2007.md
+                - name: Serviços de gerenciamento de acesso
+                  href: ./srvnodes/access-management-services.md
+                  items:
+                    - name: Serviços de Federação do Active Directory
+                      href: ./srvnodes/active-directory-federation-services.md
+            - name: Rights Management
+              href: ./srvnodes/rights-management.md
+              items:
+                - name: Exemplos e ferramentas de código do RMS
+                  href: ./srvnodes/rms-code-samples-and-tools.md
+            - name: Administração do Sistema
+              href: ./srvnodes/system-administration.md
+              items:
+                - name: Política de Grupo
+                  items:
+                    - name: Visão geral
+                      href: ./srvnodes/group-policy.md
+                    - name: Referência da biblioteca de classes do GPMC
+                      href: /previous-versions/windows/desktop/wmi_v2/class-library/gpmc-class-library-reference
+                - name: Console de Gerenciamento Microsoft (MMC)
+                  href: ./srvnodes/microsoft-management-console--mmc-.md
+                  items:
+                    - name: Console de gerenciamento Microsoft 3.0
+                      href: ./srvnodes/microsoft-management-console-3-0.md
+                - name: Windows Server Update Services
+                  href: ./srvnodes/windows-server-update-services.md
+                  items:
+                    - name: 'Windows Server Update Services biblioteca de classes 2,0'
+                      href: ./srvnodes/windows-server-update-services-2-0-class-library.md
+            - name: Virtualização
+              href: ./srvnodes/virtualization.md
+            - name: Provedores WMI/MI/OMI
+              href: ./srvnodes/wmi-mi-omi-providers.md
+            - name: Windows Server
+              href: ./srvnodes/windows-server.md
+              items:
+                - name: O que há de novo no Windows Server 2012 R2 e no Windows Server 2012
+                  href: ./srvnodes/what-s-new-for-windows-server-2012-r2.md
+                - name: Registro de gerenciamento de dispositivo móvel
+                  href: ./mdmreg/mobile-device-management-registration-portal.md
+                - name: Restauração do Sistema
+                  href: ./sr/system-restore-portal.md
+                - name: Desligamento do sistema
+                  href: ./shutdown/system-shutdown.md
+                - name: Agendador de Tarefas
+                  href: ./taskschd/task-scheduler-start-page.md
+                - name: Windows Deployment Services
+                  href: ./wds/windows-deployment-services-portal.md
+                - name: Instrumentação de Gerenciamento do Windows
+                  href: ./wmisdk/wmi-start-page.md
+                - name: API gerenciada da infraestrutura de gerenciamento do Windows
+                  href: /previous-versions/windows/desktop/wmi_v2/mi-managed-api/mt738833(v=vs.85)
+                - name: Provedores de WMI
+                  href: null
+                  items:
+                    - name: Provedor WMI do coletor de eventos de inicialização
+                      href: ./bevtcolprov/boot-event-collector-wmi-provider-portal.md
+                    - name: Gerenciamento do Hyper-V
+                      href: ./hyperv_v2/hyper-v-management.md
+                    - name: Provedor WMI de ponte do MDM
+                      href: ./dmwmibridgeprov/mdm-bridge-wmi-provider-portal.md
+                    - name: Ferramenta de avaliação do sistema do Windows
+                      href: ./winsat/windows-system-assessment-tool-portal.md
+                    - name: Provedor WMI Core
+                      href: ./wmicoreprov/wmi-core-provider-.md
+                - name: Windows Remote Management
+                  href: ./winrm/portal.md
+                - name: Proteção de Recursos do Windows
+                  href: ./wfp/windows-resource-protection-portal.md
+        - name: Índice de API
+          href: ./apiindex/api-index-portal.md
+        - name: Referência do Windows Runtime C++
+          href: ./winrt/reference.md
+        - name: Certificação do Windows
+          href: ./win_cert/windows-certification-portal.md
+    - name: Exemplos de código do Win32 para desktop
+      href: ./desktop-win32-code-samples.md
