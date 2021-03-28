@@ -1,0 +1,945 @@
+- name: SDK do Windows Media Gerenciador de Dispositivos 11
+  href: windows-media-device-manager-11-sdk.md
+  items:
+    - name: Introdução
+      href: getting-started.md
+      items:
+        - name: O que está incluído no SDK
+          href: whats-included-with-the-sdk.md
+        - name: Arquitetura de Gerenciador de Dispositivos de mídia do Windows
+          href: windows-media-device-manager-architecture.md
+        - name: Ferramentas para desenvolvimento
+          href: tools-for-development.md
+        - name: Exemplos
+          href: samples.md
+          items:
+            - name: Aplicativo de desktop de exemplo
+              href: sample-desktop-application.md
+              items:
+                - name: Compilando o aplicativo de exemplo usando o Visual Studio
+                  href: compiling-the-sample-application-using-visual-studio.md
+                - name: Usando o aplicativo de desktop de exemplo
+                  href: using-the-sample-desktop-application.md
+                - name: Estrutura do aplicativo de desktop de exemplo
+                  href: structure-of-the-sample-desktop-application.md
+            - name: Provedor de serviços de exemplo
+              href: sample-service-provider.md
+              items:
+                - name: Compilando o provedor de serviços de exemplo usando o NMAKE
+                  href: compiling-the-sample-service-provider-using-nmake.md
+                - name: Compilando o provedor de serviços de exemplo usando o Visual Studio
+                  href: compiling-the-sample-service-provider-using-visual-studio.md
+                - name: Arquivos de código para o exemplo de provedor de origem
+                  href: code-files-for-the-source-provider-sample.md
+    - name: Guia de Programação
+      href: programming-guide.md
+      items:
+        - name: Tarefas comuns a aplicativos e provedores de serviços
+          href: tasks-common-to-applications-and-service-providers.md
+          items:
+            - name: Compilando os arquivos IDL fornecidos com o SDK
+              href: compiling-the-idl-files-supplied-with-the-sdk.md
+            - name: Habilitando o registro em log
+              href: enabling-logging.md
+            - name: Usando canais autenticados seguros
+              href: using-secure-authenticated-channels.md
+              items:
+                - name: Autenticação de componente
+                  href: component-authentication.md
+                - name: Criptografia e descriptografia
+                  href: encryption-and-decryption.md
+                - name: Autenticação de mensagens
+                  href: message-authentication.md
+            - name: Lidando com conteúdo protegido
+              href: handling-protected-content.md
+            - name: Obtendo e configurando metadados e atributos
+              href: getting-and-setting-metadata-and-attributes.md
+        - name: Criando um aplicativo de Gerenciador de Dispositivos de mídia do Windows
+          href: creating-a-windows-media-device-manager-application.md
+          items:
+            - name: Política de Privacidade
+              href: privacy-statement.md
+            - name: Arquivos de biblioteca e de cabeçalho necessários para um aplicativo
+              href: required-library-and-header-files-for-an-application.md
+            - name: Autenticando o aplicativo
+              href: authenticating-the-application.md
+            - name: Enumerando dispositivos
+              href: enumerating-devices.md
+            - name: Explorando um dispositivo
+              href: exploring-a-device.md
+            - name: Acessando metadados e atributos no aplicativo
+              href: getting-and-setting-metadata-and-attributes-in-the-application.md
+            - name: Lidando com conteúdo protegido no aplicativo
+              href: handling-protected-content-in-the-application.md
+            - name: Lendo arquivos do dispositivo
+              href: reading-files-from-the-device.md
+            - name: Gravando arquivos no dispositivo
+              href: writing-files-to-the-device.md
+              items:
+                - name: Descobrindo o formato de um arquivo
+                  href: discovering-a-files-format.md
+                - name: Descobrindo recursos de formato de dispositivo
+                  href: discovering-device-format-capabilities.md
+                - name: Obtendo recursos de formato por meio de IWMDMDevice3
+                  href: getting-format-capabilities-on-devices-that-support-iwmdmdevice3.md
+                - name: Obtendo recursos de formato por meio de IWMDMDevice
+                  href: getting-format-capabilities-on-devices-that-support-only-iwmdmdevice.md
+                - name: Definindo metadados em um arquivo
+                  href: setting-metadata-on-a-file.md
+                - name: Enviando o arquivo para o dispositivo
+                  href: sending-the-file-to-the-device.md
+            - name: Manipulando transferências de arquivos manualmente
+              href: handling-file-transfers-manually.md
+            - name: Criando uma lista de reprodução no dispositivo
+              href: creating-a-playlist-on-the-device.md
+            - name: Habilitando notificações
+              href: enabling-notifications.md
+            - name: Uso de conteúdo de medição
+              href: metering-content-usage.md
+            - name: Mapeando RSS feeds para propriedades do Windows Media Gerenciador de Dispositivos
+              href: mapping-rss-feeds-to-windows-media-device-manager-properties.md
+        - name: Criando um provedor de serviços
+          href: creating-a-service-provider.md
+          items:
+            - name: Bibliotecas e cabeçalhos necessários para um provedor de serviços
+              href: required-libraries-and-headers-for-a-service-provider.md
+            - name: Parâmetros do dispositivo
+              href: device-parameters.md
+            - name: Escolhendo um modelo de threading para o provedor de serviços
+              href: choosing-a-threading-model-for-the-service-provider.md
+            - name: Registrando o provedor de serviços
+              href: registering-the-service-provider.md
+            - name: Habilitando PnP para dispositivos
+              href: enabling-pnp-for-devices.md
+            - name: Enumerando dispositivos
+              href: enumerating-devices-service-provider.md
+            - name: Autenticando o provedor de serviços
+              href: authenticating-the-service-provider.md
+            - name: Interfaces obrigatórias e opcionais
+              href: mandatory-and-optional-interfaces.md
+            - name: Manipulando conteúdo protegido no provedor de serviços
+              href: handling-protected-content-in-the-service-provider.md
+            - name: Habilitando a sincronização com o Windows Media Player
+              href: enabling-synchronization-with-windows-media-player.md
+            - name: Requisitos para players de áudio portáteis aparecerem no Windows Explorer
+              href: requirements-for-portable-audio-players-to-appear-in-windows-explorer.md
+    - name: Referência de programação
+      href: programming-reference.md
+      items:
+        - name: Interfaces para aplicativos
+          href: interfaces-for-applications.md
+          items:
+            - name: Classe CSecureChannelClient
+              href: csecurechannelclient-class.md
+              items:
+                - name: 'CSecureChannelClient:: autenticar'
+                  href: /previous-versions/ms983906(v=msdn.10)
+                - name: 'CSecureChannelClient::D ecryptParam'
+                  href: /previous-versions/bb231586(v=vs.85)
+                - name: 'CSecureChannelClient::EncryptParam'
+                  href: /previous-versions/bb231587(v=vs.85)
+                - name: 'CSecureChannelClient::fIsAuthenticated'
+                  href: /previous-versions/ms868497(v=msdn.10)
+                - name: 'CSecureChannelClient::GetAppSec'
+                  href: /previous-versions/ms868498(v=msdn.10)
+                - name: 'CSecureChannelClient::GetSessionKey'
+                  href: /previous-versions/bb231590(v=vs.85)
+                - name: 'CSecureChannelClient::MACFinal'
+                  href: /previous-versions/bb231591(v=vs.85)
+                - name: 'CSecureChannelClient::MACInit'
+                  href: /previous-versions/bb231592(v=vs.85)
+                - name: 'CSecureChannelClient::MACUpdate'
+                  href: /previous-versions/bb231593(v=vs.85)
+                - name: 'CSecureChannelClient:: SetCertificate'
+                  href: /previous-versions/ms868504(v=msdn.10)
+                - name: 'CSecureChannelClient:: setinterface'
+                  href: /previous-versions/bb231595(v=vs.85)
+                - name: 'CSecureChannelClient::SetSessionKey'
+                  href: /previous-versions/ms868506(v=msdn.10)
+            - name: Interface IWMDeviceManager
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager
+              items:
+                - name: 'IWMDeviceManager::EnumDevices'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager-enumdevices
+                - name: 'IWMDeviceManager::GetDeviceCount'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager-getdevicecount
+                - name: 'IWMDeviceManager:: Revision'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager-getrevision
+            - name: Interface IWMDeviceManager2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager2
+              items:
+                - name: 'IWMDeviceManager2::GetDeviceFromCanonicalName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-getdevicefromcanonicalname
+                - name: 'IWMDeviceManager2::EnumDevices2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-enumdevices2
+                - name: 'IWMDeviceManager2:: reinicializar'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-reinitialize
+            - name: Interface IWMDeviceManager3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager3
+              items:
+                - name: 'IWMDeviceManager3::SetDeviceEnumPreference'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager3-setdeviceenumpreference
+            - name: Interface IWMDMDevice
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice
+              items:
+                - name: 'IWMDMDevice::EnumStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-enumstorage
+                - name: 'IWMDMDevice::GetDeviceIcon'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getdeviceicon
+                - name: 'IWMDMDevice::GetFormatSupport'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getformatsupport
+                - name: 'IWMDMDevice:: GetManufacturer'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getmanufacturer
+                - name: 'IWMDMDevice:: GetName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getname
+                - name: 'IWMDMDevice:: getpowerexception'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getpowersource
+                - name: 'IWMDMDevice:: GetSerialNumber'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getserialnumber
+                - name: 'IWMDMDevice:: GetStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getstatus
+                - name: 'IWMDMDevice:: GetType'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-gettype
+                - name: 'IWMDMDevice:: GetVersion'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getversion
+                - name: 'IWMDMDevice::SendOpaqueCommand'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-sendopaquecommand
+            - name: Interface IWMDMDevice2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice2
+              items:
+                - name: 'IWMDMDevice2:: getcanôniconame'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getcanonicalname
+                - name: 'IWMDMDevice2::GetFormatSupport2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getformatsupport2
+                - name: 'IWMDMDevice2::GetSpecifyPropertyPages'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getspecifypropertypages
+                - name: 'IWMDMDevice2:: getstorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getstorage
+            - name: Interface IWMDMDevice3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice3
+              items:
+                - name: 'IWMDMDevice3::D eviceIoControl'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-deviceiocontrol
+                - name: 'IWMDMDevice3::FindStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-findstorage
+                - name: 'IWMDMDevice3::GetFormatCapability'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability
+                - name: 'IWMDMDevice3:: GetProperty'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getproperty
+                - name: 'IWMDMDevice3:: SetProperty'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-setproperty
+            - name: Interface IWMDMDeviceControl
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevicecontrol
+              items:
+                - name: 'IWMDMDeviceControl:: GetCapabilities'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-getcapabilities
+                - name: 'IWMDMDeviceControl:: GetStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-getstatus
+                - name: 'IWMDMDeviceControl::P ause'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-pause
+                - name: 'IWMDMDeviceControl::P deite'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-play
+                - name: 'IWMDMDeviceControl:: Record'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-record
+                - name: 'IWMDMDeviceControl:: retomar'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-resume
+                - name: 'IWMDMDeviceControl:: Seek'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-seek
+                - name: 'IWMDMDeviceControl:: Stop'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicecontrol-stop
+            - name: Interface IWMDMDeviceSession
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevicesession
+              items:
+                - name: 'IWMDMDeviceSession:: BeginSession'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicesession-beginsession
+                - name: 'IWMDMDeviceSession:: EndSession'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevicesession-endsession
+            - name: Interface IWMDMEnumDevice
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumdevice
+              items:
+                - name: 'IWMDMEnumDevice:: clone'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-clone
+                - name: 'IWMDMEnumDevice:: Next'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-next
+                - name: 'IWMDMEnumDevice:: Reset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-reset
+                - name: 'IWMDMEnumDevice:: Skip'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-skip
+            - name: Interface IWMDMEnumStorage
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumstorage
+              items:
+                - name: 'IWMDMEnumStorage:: clone'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumstorage-clone
+                - name: 'IWMDMEnumStorage:: Next'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumstorage-next
+                - name: 'IWMDMEnumStorage:: Reset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumstorage-reset
+                - name: 'IWMDMEnumStorage:: Skip'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumstorage-skip
+            - name: Interface IWMDMMetaData
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmmetadata
+              items:
+                - name: 'IWMDMMetaData:: AddItem'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmmetadata-additem
+                - name: 'IWMDMMetaData:: GetItemCount'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmmetadata-getitemcount
+                - name: 'IWMDMMetaData::QueryByIndex'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmmetadata-querybyindex
+                - name: 'IWMDMMetaData::QueryByName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmmetadata-querybyname
+            - name: Interface IWMDMNotification
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmnotification
+              items:
+                - name: 'IWMDMNotification::WMDMMessage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmnotification-wmdmmessage
+            - name: Interface IWMDMObjectInfo
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmobjectinfo
+              items:
+                - name: 'IWMDMObjectInfo::GetLastPlayPosition'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-getlastplayposition
+                - name: 'IWMDMObjectInfo::GetLongestPlayPosition'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-getlongestplayposition
+                - name: 'IWMDMObjectInfo::GetPlayLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-getplaylength
+                - name: 'IWMDMObjectInfo::GetPlayOffset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-getplayoffset
+                - name: 'IWMDMObjectInfo::GetTotalLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-gettotallength
+                - name: 'IWMDMObjectInfo::SetPlayLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-setplaylength
+                - name: 'IWMDMObjectInfo::SetPlayOffset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmobjectinfo-setplayoffset
+            - name: Interface IWMDMOperation
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation
+              items:
+                - name: 'IWMDMOperation:: BeginRead'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginread
+                - name: 'IWMDMOperation:: BeginWrite'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginwrite
+                - name: 'IWMDMOperation:: End'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-end
+                - name: 'IWMDMOperation:: getobjectattributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-getobjectattributes
+                - name: 'IWMDMOperation:: getobjectname'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-getobjectname
+                - name: 'IWMDMOperation::GetObjectTotalSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-getobjecttotalsize
+                - name: 'IWMDMOperation:: setobjectattributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-setobjectattributes
+                - name: 'IWMDMOperation:: setobjectname'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-setobjectname
+                - name: 'IWMDMOperation::SetObjectTotalSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-setobjecttotalsize
+                - name: 'IWMDMOperation::TransferObjectData'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-transferobjectdata
+            - name: Interface IWMDMOperation2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation2
+              items:
+                - name: 'IWMDMOperation2::GetObjectAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation2-getobjectattributes2
+                - name: 'IWMDMOperation2::SetObjectAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation2-setobjectattributes2
+            - name: Interface IWMDMOperation3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation3
+              items:
+                - name: 'IWMDMOperation3::TransferObjectDataOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation3-transferobjectdataonclearchannel
+            - name: Interface IWMDMProgress
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmprogress
+              items:
+                - name: 'IWMDMProgress:: Begin'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress-begin
+                - name: 'IWMDMProgress:: End'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress-end
+                - name: 'IWMDMProgress::P rogress'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress-progress
+            - name: Interface IWMDMProgress2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmprogress2
+              items:
+                - name: 'IWMDMProgress2:: End2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress2-end2
+            - name: Interface IWMDMProgress3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmprogress3
+              items:
+                - name: 'IWMDMProgress3::Begin3'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress3-begin3
+                - name: 'IWMDMProgress3::End3'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress3-end3
+                - name: 'IWMDMProgress3::P rogress3'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmprogress3-progress3
+            - name: Interface IWMDMRevoked
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmrevoked
+              items:
+                - name: 'IWMDMRevoked::GetRevocationURL'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmrevoked-getrevocationurl
+            - name: Interface IWMDMStorage
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage
+              items:
+                - name: 'IWMDMStorage::EnumStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-enumstorage
+                - name: 'IWMDMStorage:: GetAttributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getattributes
+                - name: 'IWMDMStorage:: GetDate'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getdate
+                - name: 'IWMDMStorage:: GetName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getname
+                - name: 'IWMDMStorage:: getrights'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getrights
+                - name: 'IWMDMStorage::GetSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getsize
+                - name: 'IWMDMStorage::GetStorageGlobals'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getstorageglobals
+                - name: 'IWMDMStorage::SendOpaqueCommand'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-sendopaquecommand
+                - name: 'IWMDMStorage:: SetAttributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-setattributes
+            - name: Interface IWMDMStorage2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage2
+              items:
+                - name: 'IWMDMStorage2::GetAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage2-getattributes2
+                - name: 'IWMDMStorage2:: getstorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage2-getstorage
+                - name: 'IWMDMStorage2::SetAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage2-setattributes2
+            - name: Interface IWMDMStorage3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage3
+              items:
+                - name: 'IWMDMStorage3::CreateEmptyMetadataObject'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-createemptymetadataobject
+                - name: 'IWMDMStorage3:: GetMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-getmetadata
+                - name: 'IWMDMStorage3::SetEnumPreference'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setenumpreference
+                - name: 'IWMDMStorage3:: SetMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata
+            - name: Interface IWMDMStorage4
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage4
+              items:
+                - name: 'IWMDMStorage4::FindStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-findstorage
+                - name: 'IWMDMStorage4:: GetParent'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getparent
+                - name: 'IWMDMStorage4:: GetReferences'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getreferences
+                - name: 'IWMDMStorage4::GetRightsWithProgress'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getrightswithprogress
+                - name: 'IWMDMStorage4::GetSpecifiedMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getspecifiedmetadata
+                - name: 'IWMDMStorage4:: setreferences'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-setreferences
+            - name: Interface IWMDMStorageControl
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol
+              items:
+                - name: 'IWMDMStorageControl::D excluir'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-delete
+                - name: 'IWMDMStorageControl:: Insert'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-insert
+                - name: 'IWMDMStorageControl:: mover'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-move
+                - name: 'IWMDMStorageControl:: ler'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-read
+                - name: 'IWMDMStorageControl:: Rename'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-rename
+            - name: Interface IWMDMStorageControl2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol2
+              items:
+                - name: 'IWMDMStorageControl2::Insert2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol2-insert2
+            - name: Interface IWMDMStorageControl3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol3
+              items:
+                - name: 'IWMDMStorageControl3::Insert3'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3
+            - name: Interface IWMDMStorageGlobals
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorageglobals
+              items:
+                - name: 'IWMDMStorageGlobals:: GetCapabilities'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getcapabilities
+                - name: 'IWMDMStorageGlobals:: GetSerialNumber'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getserialnumber
+                - name: 'IWMDMStorageGlobals:: GetStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getstatus
+                - name: 'IWMDMStorageGlobals::GetTotalBad'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-gettotalbad
+                - name: 'IWMDMStorageGlobals::GetTotalFree'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-gettotalfree
+                - name: 'IWMDMStorageGlobals:: GetTotalSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-gettotalsize
+                - name: 'IWMDMStorageGlobals:: Initialize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-initialize
+            - name: Interface IWMDRMDeviceApp
+              href: iwmdrmdeviceapp.md
+              items:
+                - name: 'IWMDRMDeviceApp::AcquireDeviceData'
+                  href: iwmdrmdeviceapp-acquiredevicedata.md
+                - name: 'IWMDRMDeviceApp::GenerateMeterChallenge'
+                  href: iwmdrmdeviceapp-generatemeterchallenge.md
+                - name: 'IWMDRMDeviceApp::P rocessMeterResponse'
+                  href: iwmdrmdeviceapp-processmeterresponse.md
+                - name: 'IWMDRMDeviceApp::QueryDeviceStatus'
+                  href: iwmdrmdeviceapp-querydevicestatus.md
+                - name: 'IWMDRMDeviceApp::SynchronizeLicenses'
+                  href: iwmdrmdeviceapp-synchronizelicenses.md
+            - name: Interface IWMDRMDeviceApp2
+              href: iwmdrmdeviceapp2.md
+              items:
+                - name: 'IWMDRMDeviceApp2::QueryDeviceStatus2'
+                  href: iwmdrmdeviceapp2-querydevicestatus2.md
+        - name: Interfaces para provedores de serviços
+          href: interfaces-for-service-providers.md
+          items:
+            - name: Classe CSecureChannelServer
+              href: csecurechannelserver-class.md
+              items:
+                - name: 'CSecureChannelServer::D ecryptParam'
+                  href: /previous-versions/bb231598(v=vs.85)
+                - name: 'CSecureChannelServer::EncryptParam'
+                  href: /previous-versions/ms868509(v=msdn.10)
+                - name: 'CSecureChannelServer::fIsAuthenticated'
+                  href: /previous-versions/bb231600(v=vs.85)
+                - name: 'CSecureChannelServer::GetAppSec'
+                  href: /previous-versions/bb231601(v=vs.85)
+                - name: 'CSecureChannelServer::GetSessionKey'
+                  href: /previous-versions/bb231602(v=vs.85)
+                - name: 'CSecureChannelServer::MACFinal'
+                  href: /previous-versions/ms868513(v=msdn.10)
+                - name: 'CSecureChannelServer::MACInit'
+                  href: /previous-versions/ms868514(v=msdn.10)
+                - name: 'CSecureChannelServer::MACUpdate'
+                  href: /previous-versions/ms868515(v=msdn.10)
+                - name: 'CSecureChannelServer::SACAuth'
+                  href: /previous-versions/ms868516(v=msdn.10)
+                - name: 'CSecureChannelServer::SACGetProtocols'
+                  href: /previous-versions/ms868517(v=msdn.10)
+                - name: 'CSecureChannelServer:: SetCertificate'
+                  href: /previous-versions/ms868518(v=msdn.10)
+                - name: 'CSecureChannelServer::SetSessionKey'
+                  href: /previous-versions/ms868519(v=msdn.10)
+            - name: Interface IMDServiceProvider
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdserviceprovider
+              items:
+                - name: 'IMDServiceProvider::EnumDevices'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdserviceprovider-enumdevices
+                - name: 'IMDServiceProvider::GetDeviceCount'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdserviceprovider-getdevicecount
+            - name: Interface IMDServiceProvider2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdserviceprovider2
+              items:
+                - name: 'IMDServiceProvider2:: CreateDevice'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdserviceprovider2-createdevice
+            - name: Interface IMDServiceProvider3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdserviceprovider3
+              items:
+                - name: 'IMDServiceProvider3::SetDeviceEnumPreference'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdserviceprovider3-setdeviceenumpreference
+            - name: Interface IMDSPDevice
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspdevice
+              items:
+                - name: 'IMDSPDevice::EnumStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-enumstorage
+                - name: 'IMDSPDevice::GetDeviceIcon'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getdeviceicon
+                - name: 'IMDSPDevice::GetFormatSupport'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getformatsupport
+                - name: 'IMDSPDevice:: GetManufacturer'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getmanufacturer
+                - name: 'IMDSPDevice:: GetName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getname
+                - name: 'IMDSPDevice:: getpowerexception'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getpowersource
+                - name: 'IMDSPDevice:: GetSerialNumber'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getserialnumber
+                - name: 'IMDSPDevice:: GetStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getstatus
+                - name: 'IMDSPDevice:: GetType'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-gettype
+                - name: 'IMDSPDevice:: GetVersion'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getversion
+                - name: 'IMDSPDevice::SendOpaqueCommand'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-sendopaquecommand
+            - name: Interface IMDSPDevice2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspdevice2
+              items:
+                - name: 'IMDSPDevice2:: getcanôniconame'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice2-getcanonicalname
+                - name: 'IMDSPDevice2::GetFormatSupport2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice2-getformatsupport2
+                - name: 'IMDSPDevice2::GetSpecifyPropertyPages'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice2-getspecifypropertypages
+                - name: 'IMDSPDevice2:: getstorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice2-getstorage
+            - name: Interface IMDSPDevice3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspdevice3
+              items:
+                - name: 'IMDSPDevice3::D eviceIoControl'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice3-deviceiocontrol
+                - name: 'IMDSPDevice3::FindStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice3-findstorage
+                - name: 'IMDSPDevice3::GetFormatCapability'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice3-getformatcapability
+                - name: 'IMDSPDevice3:: GetProperty'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice3-getproperty
+                - name: 'IMDSPDevice3:: SetProperty'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice3-setproperty
+            - name: Interface IMDSPDeviceControl
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspdevicecontrol
+              items:
+                - name: 'IMDSPDeviceControl:: GetCapabilities'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-getcapabilities
+                - name: 'IMDSPDeviceControl::GetDCStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-getdcstatus
+                - name: 'IMDSPDeviceControl::P ause'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-pause
+                - name: 'IMDSPDeviceControl::P deite'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-play
+                - name: 'IMDSPDeviceControl:: Record'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-record
+                - name: 'IMDSPDeviceControl:: retomar'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-resume
+                - name: 'IMDSPDeviceControl:: Seek'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-seek
+                - name: 'IMDSPDeviceControl:: Stop'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdevicecontrol-stop
+            - name: Interface IMDSPDirectTransfer
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspdirecttransfer
+              items:
+                - name: 'IMDSPDirectTransfer::TransferToDevice'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspdirecttransfer-transfertodevice
+            - name: Interface IMDSPEnumDevice
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspenumdevice
+              items:
+                - name: 'IMDSPEnumDevice:: clone'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumdevice-clone
+                - name: 'IMDSPEnumDevice:: Next'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumdevice-next
+                - name: 'IMDSPEnumDevice:: Reset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumdevice-reset
+                - name: 'IMDSPEnumDevice:: Skip'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumdevice-skip
+            - name: Interface IMDSPEnumStorage
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspenumstorage
+              items:
+                - name: 'IMDSPEnumStorage:: clone'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumstorage-clone
+                - name: 'IMDSPEnumStorage:: Next'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumstorage-next
+                - name: 'IMDSPEnumStorage:: Reset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumstorage-reset
+                - name: 'IMDSPEnumStorage:: Skip'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspenumstorage-skip
+            - name: Interface IMDSPObject
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspobject
+              items:
+                - name: 'IMDSPObject:: fechar'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-close
+                - name: 'IMDSPObject::D excluir'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-delete
+                - name: 'IMDSPObject:: mover'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-move
+                - name: 'IMDSPObject:: abrir'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-open
+                - name: 'IMDSPObject:: ler'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-read
+                - name: 'IMDSPObject:: Rename'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-rename
+                - name: 'IMDSPObject:: Seek'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-seek
+                - name: 'IMDSPObject:: Write'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-write
+            - name: Interface IMDSPObject2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspobject2
+              items:
+                - name: 'IMDSPObject2::ReadOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-readonclearchannel
+                - name: 'IMDSPObject2::WriteOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-writeonclearchannel
+            - name: Interface IMDSPObjectInfo
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspobjectinfo
+              items:
+                - name: 'IMDSPObjectInfo::GetLastPlayPosition'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-getlastplayposition
+                - name: 'IMDSPObjectInfo::GetLongestPlayPosition'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-getlongestplayposition
+                - name: 'IMDSPObjectInfo::GetPlayLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-getplaylength
+                - name: 'IMDSPObjectInfo::GetPlayOffset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-getplayoffset
+                - name: 'IMDSPObjectInfo::GetTotalLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-gettotallength
+                - name: 'IMDSPObjectInfo::SetPlayLength'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-setplaylength
+                - name: 'IMDSPObjectInfo::SetPlayOffset'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspobjectinfo-setplayoffset
+            - name: Interface IMDSPRevoked
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdsprevoked
+              items:
+                - name: 'IMDSPRevoked::GetRevocationURL'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdsprevoked-getrevocationurl
+            - name: Interface IMDSPStorage
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspstorage
+              items:
+                - name: 'IMDSPStorage:: CreateStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-createstorage
+                - name: 'IMDSPStorage::EnumStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-enumstorage
+                - name: 'IMDSPStorage:: GetAttributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getattributes
+                - name: 'IMDSPStorage:: GetDate'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getdate
+                - name: 'IMDSPStorage:: GetName'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getname
+                - name: 'IMDSPStorage:: getrights'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getrights
+                - name: 'IMDSPStorage::GetSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getsize
+                - name: 'IMDSPStorage::GetStorageGlobals'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getstorageglobals
+                - name: 'IMDSPStorage::SendOpaqueCommands'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-sendopaquecommand
+                - name: 'IMDSPStorage:: SetAttributes'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-setattributes
+            - name: Interface IMDSPStorage2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspstorage2
+              items:
+                - name: 'IMDSPStorage2::CreateStorage2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage2-createstorage2
+                - name: 'IMDSPStorage2::GetAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage2-getattributes2
+                - name: 'IMDSPStorage2:: getstorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage2-getstorage
+                - name: 'IMDSPStorage2::SetAttributes2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage2-setattributes2
+            - name: Interface IMDSPStorage3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspstorage3
+              items:
+                - name: 'IMDSPStorage3:: GetMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage3-getmetadata
+                - name: 'IMDSPStorage3:: SetMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage3-setmetadata
+            - name: Interface IMDSPStorage4
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspstorage4
+              items:
+                - name: 'IMDSPStorage4::CreateStorageWithMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-createstoragewithmetadata
+                - name: 'IMDSPStorage4::FindStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-findstorage
+                - name: 'IMDSPStorage4:: GetParent'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-getparent
+                - name: 'IMDSPStorage4:: GetReferences'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-getreferences
+                - name: 'IMDSPStorage4::GetSpecifiedMetadata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-getspecifiedmetadata
+                - name: 'IMDSPStorage4:: setreferences'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage4-setreferences
+            - name: Interface IMDSPStorageGlobals
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-imdspstorageglobals
+              items:
+                - name: 'IMDSPStorageGlobals:: GetCapabilities'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getcapabilities
+                - name: 'IMDSPStorageGlobals:: GetDevice'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getdevice
+                - name: 'IMDSPStorageGlobals::GetRootStorage'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getrootstorage
+                - name: 'IMDSPStorageGlobals:: GetSerialNumber'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber
+                - name: 'IMDSPStorageGlobals:: GetStatus'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getstatus
+                - name: 'IMDSPStorageGlobals::GetTotalBad'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-gettotalbad
+                - name: 'IMDSPStorageGlobals::GetTotalFree'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-gettotalfree
+                - name: 'IMDSPStorageGlobals:: GetTotalSize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-gettotalsize
+                - name: 'IMDSPStorageGlobals:: Initialize'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-initialize
+        - name: Interfaces de DRM-Implemented de mídia do Windows
+          href: windows-media-drm-implemented-interfaces.md
+          items:
+            - name: Interface IWMDRMDevice
+              href: iwmdrmdevice.md
+              items:
+                - name: 'IWMDRMDevice::CleanDataStore'
+                  href: iwmdrmdevice-cleandatastore.md
+                - name: 'IWMDRMDevice::GetDeviceCertificate'
+                  href: iwmdrmdevice-getdevicecertificate.md
+                - name: 'IWMDRMDevice::GetMeterChallenge'
+                  href: iwmdrmdevice-getmeterchallenge.md
+                - name: 'IWMDRMDevice::GetSecureClock'
+                  href: iwmdrmdevice-getsecureclock.md
+                - name: 'IWMDRMDevice::GetSecureClockChallenge'
+                  href: iwmdrmdevice-getsecureclockchallenge.md
+                - name: 'IWMDRMDevice:: getsynclist'
+                  href: iwmdrmdevice-getsynclist.md
+                - name: 'IWMDRMDevice::IsWMDRMDevice'
+                  href: iwmdrmdevice-iswmdrmdevice.md
+                - name: 'IWMDRMDevice::SetLicenseResponse'
+                  href: iwmdrmdevice-setlicenseresponse.md
+                - name: 'IWMDRMDevice::SetMeterResponse'
+                  href: iwmdrmdevice-setmeterresponse.md
+                - name: 'IWMDRMDevice::SetSecureClockResponse'
+                  href: iwmdrmdevice-setsecureclockresponse.md
+            - name: Interface IWMDRMDevice2
+              href: iwmdrmdevice2.md
+              items:
+                - name: 'IWMDRMDevice2:: getlicensestate'
+                  href: iwmdrmdevice2-getlicensestate.md
+                - name: 'IWMDRMDevice2::GetPartialSyncList'
+                  href: iwmdrmdevice2-getpartialsynclist.md
+        - name: Interfaces para provedores de serviços e aplicativos
+          href: interfaces-for-service-providers-and-applications.md
+          items:
+            - name: Interface IWMDMLogger
+              href: /windows/desktop/api/wmdmlog/nn-wmdmlog-iwmdmlogger
+              items:
+                - name: 'IWMDMLogger:: habilitar'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-enable
+                - name: 'IWMDMLogger:: getlogfilename'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-getlogfilename
+                - name: 'IWMDMLogger::GetSizeParams'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-getsizeparams
+                - name: 'IWMDMLogger:: IsEnabled'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-isenabled
+                - name: 'IWMDMLogger::LogDword'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-logdword
+                - name: 'IWMDMLogger::LogString'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-logstring
+                - name: 'IWMDMLogger:: Reset'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-reset
+                - name: 'IWMDMLogger:: setlogfilename'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-setlogfilename
+                - name: 'IWMDMLogger::SetSizeParams'
+                  href: /windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-setsizeparams
+            - name: Interface IComponentAuthenticate
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate
+              items:
+                - name: 'IComponentAuthenticate::SACAuth'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacauth
+                - name: 'IComponentAuthenticate::SACGetProtocols'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacgetprotocols
+        - name: Interfaces para provedores de conteúdo seguro
+          href: interfaces-for-secure-content-providers.md
+          items:
+            - name: Interface ISCPSecureAuthenticate
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecureauthenticate
+              items:
+                - name: 'ISCPSecureAuthenticate::GetSecureQuery'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureauthenticate-getsecurequery
+            - name: Interface ISCPSecureAuthenticate2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecureauthenticate2
+              items:
+                - name: 'ISCPSecureAuthenticate2::GetSCPSession'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureauthenticate2-getscpsession
+            - name: Interface ISCPSecureExchange
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecureexchange
+              items:
+                - name: 'ISCPSecureExchange:: objectdata'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange-objectdata
+                - name: 'ISCPSecureExchange::TransferComplete'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange-transfercomplete
+                - name: 'ISCPSecureExchange::TransferContainerData'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange-transfercontainerdata
+            - name: Interface ISCPSecureExchange2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecureexchange2
+              items:
+                - name: 'ISCPSecureExchange2::TransferContainerData2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange2-transfercontainerdata2
+            - name: Interface ISCPSecureExchange3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecureexchange3
+              items:
+                - name: 'ISCPSecureExchange3::GetObjectDataOnClearChannel'
+                  href: iscpsecureexchange3--getobjectdataonclearchannel.md
+                - name: 'ISCPSecureExchange3::TransferCompleteForDevice'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange3-transfercompletefordevice
+                - name: 'ISCPSecureExchange3::TransferContainerDataOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecureexchange3-transfercontainerdataonclearchannel
+            - name: Interface ISCPSecureQuery
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecurequery
+              items:
+                - name: 'ISCPSecureQuery::ExamineData'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery-examinedata
+                - name: 'ISCPSecureQuery::GetDataDemands'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery-getdatademands
+                - name: 'ISCPSecureQuery:: getrights'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery-getrights
+                - name: 'ISCPSecureQuery::MakeDecision'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery-makedecision
+            - name: Interface ISCPSecureQuery2
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecurequery2
+              items:
+                - name: 'ISCPSecureQuery2::MakeDecision2'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery2-makedecision2
+            - name: Interface ISCPSecureQuery3
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsecurequery3
+              items:
+                - name: 'ISCPSecureQuery3::GetRightsOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery3-getrightsonclearchannel
+                - name: 'ISCPSecureQuery3::MakeDecisionOnClearChannel'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsecurequery3-makedecisiononclearchannel
+            - name: Interface ISCPSession
+              href: /windows/desktop/api/mswmdm/nn-mswmdm-iscpsession
+              items:
+                - name: 'ISCPSession:: BeginSession'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsession-beginsession
+                - name: 'ISCPSession:: EndSession'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsession-endsession
+                - name: 'ISCPSession::GetSecureQuery'
+                  href: /windows/desktop/api/mswmdm/nf-mswmdm-iscpsession-getsecurequery
+        - name: Estruturas
+          href: structures.md
+          items:
+            - name: _BITMAPINFOHEADER
+              href: '-bitmapinfoheader.md'
+            - name: MTP_COMMAND_DATA_IN
+              href: /windows/win32/api/MtpExt/ns-mtpext-mtp_command_data_in
+            - name: MTP_COMMAND_DATA_OUT
+              href: /windows/win32/api/MtpExt/ns-mtpext-mtp_command_data_out
+            - name: OPAQUECOMMAND
+              href: opaquecommand.md
+            - name: _VIDEOINFOHEADER
+              href: '-videoinfoheader.md'
+            - name: _WAVEFORMATEX
+              href: '-waveformatex.md'
+            - name: WMDM_FORMAT_CAPABILITY
+              href: wmdm-format-capability.md
+            - name: WMDM_PROP_CONFIG
+              href: wmdm-prop-config.md
+            - name: WMDM_PROP_DESC
+              href: wmdm-prop-desc.md
+            - name: WMDM_PROP_VALUES_ENUM
+              href: wmdm-prop-values-enum.md
+            - name: WMDM_PROP_VALUES_RANGE
+              href: wmdm-prop-values-range.md
+            - name: WMDMDATETIME
+              href: wmdmdatetime.md
+            - name: WMDMID
+              href: wmdmid.md
+            - name: WMDMMetadataView
+              href: wmdmmetadataview.md
+            - name: WMDMRIGHTS
+              href: wmdmrights.md
+            - name: WMFILECAPABILITIES
+              href: wmfilecapabilities.md
+        - name: Tipos de enumeração
+          href: enumeration-types.md
+          items:
+            - name: WMDM_ENUM_PROP_VALID_VALUES_FORM
+              href: wmdm-enum-prop-valid-values-form.md
+            - name: WMDM_FIND_SCOPE
+              href: wmdm-find-scope.md
+            - name: WMDM_FORMATCODE
+              href: wmdm-formatcode.md
+            - name: WMDM_SESSION_TYPE
+              href: wmdm-session-type.md
+            - name: WMDM_STORAGE_ENUM_MODE
+              href: wmdm-storage-enum-mode.md
+            - name: WMDM_TAG_DATATYPE
+              href: wmdm-tag-datatype.md
+            - name: WMDMMessage
+              href: wmdmmessage.md
+        - name: Constantes de metadados
+          href: metadata-constants.md
+        - name: Códigos de erro
+          href: error-codes.md
+    - name: Glossário
+      href: wmdm-glossary.md
