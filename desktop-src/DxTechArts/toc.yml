@@ -1,0 +1,75 @@
+- name: Artigos técnicos
+  href: dx9-technical-articles.md
+  items:
+    - name: programação de 64 bits para desenvolvedores de jogos
+      href: sixty-four-bit-programming-for-game-developers.md
+    - name: Assinatura Authenticode para desenvolvedores de jogos
+      href: authenticode-signing-for-game-developers.md
+    - name: Melhores práticas de segurança no desenvolvimento de jogos
+      href: best-security-practices-in-game-development.md
+    - name: Mapas de sombra em cascata
+      href: cascaded-shadow-maps.md
+    - name: Codificação para vários núcleos no Xbox 360 e no Windows
+      href: coding-for-multiple-cores.md
+    - name: Técnicas comuns para aprimorar os mapas de profundidade de sombra
+      href: common-techniques-to-improve-shadow-depth-maps.md
+    - name: Análise de despejo de memória
+      href: crash-dump-analysis.md
+    - name: Depurando com símbolos
+      href: debugging-with-symbols.md
+    - name: 10 perguntas frequentes sobre o Direct3D
+      href: direct3d10-frequently-asked-questions.md
+    - name: Perguntas frequentes sobre o DirectX
+      href: directx-9-frequently-asked-questions.md
+    - name: Instalação do DirectX para desenvolvedores de jogos
+      href: directx-setup-for-game-developers.md
+    - name: Desabilitando as teclas de atalho em jogos
+      href: disabling-shortcut-keys-in-games.md
+    - name: Tempo do jogo e processadores com vários núcleos
+      href: game-timing-and-multicore-processors.md
+    - name: Jogos para requisitos técnicos do Windows
+      href: games-for-windows-technical-requirements-1-1-0006.md
+    - name: Jogos para casos de teste do Windows
+      href: games-for-windows-test-requirements-1-0-0006.md
+    - name: Jogos com Least-Privileged contas de usuário
+      href: gaming-with-least-privileged-user-accounts.md
+    - name: Instale-sob demanda para jogos
+      href: install-on-demand-for-games.md
+    - name: Instalação e manutenção de jogos
+      href: installation-and-maintenance-of-games.md
+    - name: Considerações sobre programação sem bloqueio para Xbox 360 e Microsoft Windows
+      href: lockless-programming.md
+    - name: Práticas recomendadas de instalação para jogos online com vários participantes
+      href: mmo-installation-best-practices.md
+    - name: Instalar e usar editores de método de entrada
+      href: installing-and-using-input-method-editors.md
+    - name: Introdução à experiência de 10 pés para desenvolvedores de jogos do Windows
+      href: introduction-to-the-10-foot-experience-for-windows-game-developers.md
+    - name: 'Tornando os jogos de vídeo acessíveis: justificativas de negócios e considerações de design'
+      href: accessibility-best-practices.md
+    - name: Otimizando o desempenho de DVD para jogos do Windows
+      href: optimizing-dvd-performance-for-windows-games.md
+    - name: 'Aplicação de patch no software de jogos no Windows XP, no Windows Vista e no Windows 7'
+      href: patching-methods-in-windows-xp-and-vista.md
+    - name: Práticas recomendadas de gerenciamento de recursos
+      href: resource-management-best-practices.md
+    - name: Simplificando a instalação do jogo
+      href: simplifying-game-installation.md
+    - name: Aproveitando o movimento do High-Definition mouse
+      href: taking-advantage-of-high-dpi-mouse-movement.md
+    - name: O pipeline de transformação do Direct3D
+      href: the-direct3d-transformation-pipeline.md
+    - name: Principais problemas de títulos do Windows
+      href: top-issues-for-windows-titles.md
+    - name: Principais ferramentas e técnicas para fazer jogos Windows mais robustos
+      href: top-tools-and-techniques-for-making-more-robust-windows-games.md
+    - name: Controle de conta de usuário para desenvolvedores de jogos
+      href: user-account-control-for-game-developers.md
+    - name: Usando um editor de método de entrada em um jogo
+      href: using-an-input-method-editor-in-a-game.md
+    - name: Firewall do Windows para Desenvolvedores de Jogos
+      href: games-and-firewalls.md
+    - name: Explorador de jogos do Windows para desenvolvedores de jogos
+      href: windows-game-explorer-integration.md
+    - name: Windows Installer para desenvolvedores de jogos
+      href: windows-installer-for-game-developers.md
