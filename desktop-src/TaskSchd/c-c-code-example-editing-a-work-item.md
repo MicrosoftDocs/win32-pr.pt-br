@@ -1,0 +1,119 @@
+---
+title: Exemplo de código do C/C++ editando um item de trabalho
+description: Este exemplo exibe as páginas de propriedades de uma tarefa conhecida e permite que um usuário edite as propriedades do item de trabalho. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+ms.assetid: 526bc354-3585-43aa-a727-03c04e607a64
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: deec02a7b7b12f350e7ed61220c9bdeebe920fec
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104005530"
+---
+# <a name="cc-code-example-editing-a-work-item"></a>Exemplo de código do C/C++: editando um item de trabalho
+
+Este exemplo exibe as páginas de propriedades de uma tarefa conhecida e permite que um usuário edite as propriedades do item de trabalho. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+
+
+```C++
+#include <windows.h>
+#include <initguid.h>
+#include <ole2.h>
+#include <mstask.h>
+#include <msterr.h>
+#include <wchar.h>
+
+int main(int argc, char **argv)
+{
+  HRESULT hr = S_OK;
+  
+  
+  ///////////////////////////////////////////////////////////////////
+  // Call CoInitialize to initialize the COM library and then      
+  // call CoCreateInstance to get the Task Scheduler object.      
+  ///////////////////////////////////////////////////////////////////
+  ITaskScheduler *pITS;
+  hr = CoInitialize(NULL);
+  if (SUCCEEDED(hr))
+  {
+    hr = CoCreateInstance(CLSID_CTaskScheduler,
+                          NULL,
+                          CLSCTX_INPROC_SERVER,
+                          IID_ITaskScheduler,
+                          (void **) &pITS);
+    if (FAILED(hr))
+    {
+      CoUninitialize();
+      return 1;
+    }
+  }
+  else
+  {
+     return 1;
+  }
+  
+  
+  ///////////////////////////////////////////////////////////////////
+  // Call ITaskScheduler::Activate to get the Task object.
+  ///////////////////////////////////////////////////////////////////
+  ITask *pITask;
+  LPCWSTR lpcwszTaskName;
+  lpcwszTaskName = L"Test Task";
+  hr = pITS->Activate(lpcwszTaskName,
+                      IID_ITask,
+                      (IUnknown**) &pITask);
+  
+  //Release ITaskScheduler interface
+  pITS->Release();
+  
+  if (FAILED(hr))
+  {
+    wprintf(L"Failed calling ITaskScheduler::Activate, ");
+    wprintf(L"error = 0x%x\n",hr);
+    CoUninitialize();
+    return 1;
+  }
+  
+  
+  ///////////////////////////////////////////////////////////////////
+  // Call ITask::EditWorkItem. Note that this method is 
+  // inherited from IScheduledWorkItem.
+  ///////////////////////////////////////////////////////////////////
+  HWND hParent = NULL;
+  DWORD dwReserved = 0;
+  
+  hr = pITask->EditWorkItem(hParent,
+                            dwReserved);
+  // Release ITask interface
+  pITask->Release();
+  if (FAILED(hr))
+  {
+    wprintf(L"Failed calling ITask::EditWorkItem, ");
+    wprintf(L"error = 0x%x\n",hr);
+    CoUninitialize();
+    return 1;
+  }
+  
+  
+  CoUninitialize();
+  return 0;
+}
+```
+
+
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

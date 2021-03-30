@@ -1,0 +1,64 @@
+---
+title: Seção de botões
+description: Seção de botões
+ms.assetid: fa413bb4-e04a-4e3d-9754-cd4c2d82de6e
+keywords:
+- Capas do Windows Media Player Mobile, seção de botões
+- capas, seção de botões
+- Criando capas, seção de botões
+- escrevendo código para capas, seção de botões
+- botões em capas, seção de botões
+- arquivos de definição de capa, seção de botões
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f994225154e3f4cc55070351c32c654d5ad616c1
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104005738"
+---
+# <a name="buttons-section"></a>Seção de botões
+
+Em seguida, você deve definir os botões que você usará:
+
+
+```C++
+[ Buttons ]
+
+//  <Function> <Type>     <Location>     <Push Image Src>  <Dis Image Src>    <Hit R,G,B>  <Norm 2 Image Src>  <Push 2 Image Src>
+//  ---------- ------     ----------     ----------------  ---------------    -----------  ------------------  ------------------
+    PlayPause  2PushHit   100,20,110,100 Pushed @ 100,20   Disabled @ 100,20    0,255,255  Pushed @ 270,20     Pushed @ 270,130
+    Stop       PushHit    20,20,45,45    Pushed @ 20,20    Disabled @ 20,20   255,255,  0
+    Next       PushHit    20,80,45,45    Pushed @ 20,80    Disabled @ 20,80   255,  0,  0
+    Prev       PushHit    20,140,45,45   Pushed @ 20,140   Disabled @ 20,130    0,  0,255
+
+```
+
+
+
+Há quatro botões definidos nesta seção. A página que você está exibindo pode encapsular essas linhas, mas ao digitar o código, você não deve quebrar linhas automaticamente; ou seja, cada linha deve estar completa e terminar com uma marca de parágrafo.
+
+> [!Note]  
+> Os tipos de botões são preteridos nas capas do Windows Media Player 10 Mobile ou posteriores. Em vez de um tipo de botão declarado em seu arquivo de capa, digite "NA" para cada tipo.
+
+ 
+
+Para cada botão, você deve definir a função, o tipo, o local, a fonte da imagem enviada, a fonte desabilitada e a cor (para botões de tipo de clique). Além disso, para o botão PlayPause, você deve definir as fontes de imagem normais e enviadas por push para o estado pausado.
+
+Para obter mais informações sobre a seção de botões do arquivo de definição de capa, consulte [botões](buttons.md) na referência de capa.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[**Escrevendo o código**](writing-the-code.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
