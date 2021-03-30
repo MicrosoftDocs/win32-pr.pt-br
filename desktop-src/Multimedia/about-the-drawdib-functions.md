@@ -1,0 +1,49 @@
+---
+title: Sobre as funções DrawDib
+description: Sobre as funções DrawDib
+ms.assetid: 0ae993df-8393-479e-aa11-14301384715d
+keywords:
+- Vídeo para Windows (VFW), DrawDib
+- VFW (vídeo para Windows), DrawDib
+- DrawDib, sobre
+- DrawDib, tabelas de cores
+- DrawDib, modo de transferência
+- DrawDib, adaptadores de vídeo
+- DrawDib, alongamento de imagem
+- DrawDib, imagens compactadas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 238f3e9ba822e16a7568775378b24f69bbca12de
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "103640851"
+---
+# <a name="about-the-drawdib-functions"></a>Sobre as funções DrawDib
+
+Coletivamente, as funções DrawDib são semelhantes à função [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) , pois fornecem recursos de alargamento de imagem e pontilhamento. No entanto, as funções DrawDib dão suporte à descompactação de imagem, ao streaming de dados e a um número maior de adaptadores de vídeo.
+
+Você achará útil usar as funções DrawDib em algumas circunstâncias. Ainda assim, [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) é mais diversificado do que as funções DrawDib e deve ser usado quando as funções DrawDib não puderem fornecer a funcionalidade desejada. A lista a seguir descreve os fatores a serem considerados ao decidir se deve usar as funções DrawDib ou **StretchDIBits**.
+
+-   Formato de informações da tabela de cores. As funções DrawDib exibem imagens que usam o formato de **\_ \_ cores de DIB RGB** para sua tabela de cores. Se as imagens em seu aplicativo armazenarem informações da tabela de cores com o formato **DIB \_ PAL \_ Colors** ou **DIB \_ PAL \_ indics** , você deverá usar [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) para exibi-las.
+-   Modo de transferência. As funções DrawDib exigem que seu aplicativo use o modo de transferência **SRCCOPY** . Se seu aplicativo usar [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) com um modo de transferência diferente de **SRCCOPY**, você deverá continuar a usar o **StretchDIBits**. Da mesma forma, se você precisar usar outras operações de varredura em seu aplicativo, como um XOR, use **StretchDIBits**.
+-   Qualidade da reprodução de vídeo e animação. Você pode usar as funções DrawDib para aplicativos de streaming de dados, como aqueles que reproduzem clipes de vídeo e sequências animadas. As funções DrawDib superaram o [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) , pois fornecem imagens de qualidade superior e melhoram o movimento durante a reprodução.
+-   Adaptadores de vídeo. As funções DrawDib dão suporte a um número maior de adaptadores de vídeo que o [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) dá suporte. As funções DrawDib dão suporte a adaptadores de cores VGA que fornecem paletas de 16 cores usando profundidade de imagem de 4 bits, adaptadores SVGA que fornecem paletas de cor de 256 usando profundidade de imagem de 8 bits e adaptadores de exibição de cor verdadeira que fornecem milhares de cores usando profundidades de imagem de 16 bits, 24 bits e 32 bits.
+
+    As funções DrawDib também melhoram a velocidade e a qualidade da exibição de imagens em adaptadores de vídeo com recursos mais limitados. Por exemplo, ao usar um adaptador de vídeo de 8 bits, as funções DrawDib pontilham com eficiência imagens true-color para 256 cores. Eles também pontilham imagens de 8 bits ao usar adaptadores de vídeo de 4 bits.
+
+-   Alongamento de imagem. Como [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits), as funções DrawDib usam retângulos de origem e de destino para controlar a parte de uma imagem exibida. Você pode cortar partes indesejadas de uma imagem ou alongar uma imagem, variando a posição e o tamanho dos retângulos de origem e de destino. Se um driver de vídeo não oferecer suporte ao alongamento de imagem, as funções DrawDib fornecerão recursos de ampliação mais eficientes do que o **StretchDIBits**.
+-   Imagens compactadas. As funções DrawDib desenharão qualquer formato para o qual você tenha um descompactador, incluindo a RLE (codificação de comprimento de execução), Cinepak e 411 YUV. O Windows inclui descompactadores de RLE e Cinepak que podem ser instalados opcionalmente.
+-   O codec Indeo não é mais suportado no Windows.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[DrawDib](drawdib.md)
+</dt> </dl>
+
+ 
+
+ 
