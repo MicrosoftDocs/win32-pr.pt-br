@@ -1,0 +1,80 @@
+---
+title: Sobre os controles de barra de progresso
+description: Uma barra de progresso é uma janela que um aplicativo pode usar para indicar o progresso de uma operação demorada. Ele consiste em um retângulo que é animado conforme uma operação progride.
+ms.assetid: 1db7a5c9-71cd-4ebc-86b8-8159f30348fa
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f00c80b1f9e97cec1657fe979a19437f607251b8
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "103641887"
+---
+# <a name="about-progress-bar-controls"></a><span data-ttu-id="bf407-104">Sobre os controles de barra de progresso</span><span class="sxs-lookup"><span data-stu-id="bf407-104">About Progress Bar Controls</span></span>
+
+<span data-ttu-id="bf407-105">Uma barra de progresso é uma janela que um aplicativo pode usar para indicar o progresso de uma operação demorada.</span><span class="sxs-lookup"><span data-stu-id="bf407-105">A progress bar is a window that an application can use to indicate the progress of a lengthy operation.</span></span>
+
+<span data-ttu-id="bf407-106">Ele consiste em um retângulo que é animado conforme uma operação progride.</span><span class="sxs-lookup"><span data-stu-id="bf407-106">It consists of a rectangle that is animated as an operation progresses.</span></span>
+
+<span data-ttu-id="bf407-107">A ilustração a seguir mostra uma barra de progresso que não usa estilos visuais.</span><span class="sxs-lookup"><span data-stu-id="bf407-107">The following illustration shows a progress bar that does not use visual styles.</span></span>
+
+![captura de tela de uma barra de progresso que adiciona retângulos em uma linha para indicar o progresso](images/pb-oldstyle.png)
+
+<span data-ttu-id="bf407-109">A ilustração a seguir mostra uma barra de progresso usando estilos visuais.</span><span class="sxs-lookup"><span data-stu-id="bf407-109">The following illustration shows a progress bar using visual styles.</span></span> <span data-ttu-id="bf407-110">A aparência do controle irá variar dependendo do sistema operacional e do tema selecionado.</span><span class="sxs-lookup"><span data-stu-id="bf407-110">The appearance of the control will vary depending on the operating system and the selected theme.</span></span> <span data-ttu-id="bf407-111">Para obter mais informações, consulte [Visual Styles](themes-overview.md).</span><span class="sxs-lookup"><span data-stu-id="bf407-111">For more information, see [Visual Styles](themes-overview.md).</span></span>
+
+![captura de tela de uma barra de progresso que aumenta um retângulo verde animado para indicar o progresso](images/pb-newstyle.png)
+
+<span data-ttu-id="bf407-113">Mais informações estão contidas nos seguintes cabeçalhos.</span><span class="sxs-lookup"><span data-stu-id="bf407-113">More information is contained under the following headings.</span></span>
+
+-   [<span data-ttu-id="bf407-114">Usando barras de progresso</span><span class="sxs-lookup"><span data-stu-id="bf407-114">Using Progress Bars</span></span>](#using-progress-bars)
+    -   [<span data-ttu-id="bf407-115">Intervalo e posição atual</span><span class="sxs-lookup"><span data-stu-id="bf407-115">Range and Current Position</span></span>](#range-and-current-position)
+    -   [<span data-ttu-id="bf407-116">Processamento de mensagens da barra de progresso padrão</span><span class="sxs-lookup"><span data-stu-id="bf407-116">Default Progress Bar Message Processing</span></span>](#default-progress-bar-message-processing)
+    -   [<span data-ttu-id="bf407-117">Estilo do letreiro</span><span class="sxs-lookup"><span data-stu-id="bf407-117">Marquee Style</span></span>](#marquee-style)
+
+## <a name="using-progress-bars"></a><span data-ttu-id="bf407-118">Usando barras de progresso</span><span class="sxs-lookup"><span data-stu-id="bf407-118">Using Progress Bars</span></span>
+
+<span data-ttu-id="bf407-119">Você pode criar uma barra de progresso usando a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando a classe de janela de [**\_ classe Progress**](common-control-window-classes.md) .</span><span class="sxs-lookup"><span data-stu-id="bf407-119">You can create a progress bar by using the [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function, specifying the [**PROGRESS\_CLASS**](common-control-window-classes.md) window class.</span></span> <span data-ttu-id="bf407-120">Essa classe de janela é registrada quando a DLL de controles comuns é carregada.</span><span class="sxs-lookup"><span data-stu-id="bf407-120">This window class is registered when the common controls DLL is loaded.</span></span> <span data-ttu-id="bf407-121">Para obter mais informações, consulte [sobre controles comuns](common-controls-intro.md).</span><span class="sxs-lookup"><span data-stu-id="bf407-121">For more information, see [About Common Controls](common-controls-intro.md).</span></span>
+
+<span data-ttu-id="bf407-122">O controle também está disponível na caixa de ferramentas Microsoft Visual Studio, onde é chamado de controle de progresso.</span><span class="sxs-lookup"><span data-stu-id="bf407-122">The control is also available in the Microsoft Visual Studio Toolbox, where it is called Progress Control.</span></span>
+
+### <a name="range-and-current-position"></a><span data-ttu-id="bf407-123">Intervalo e posição atual</span><span class="sxs-lookup"><span data-stu-id="bf407-123">Range and Current Position</span></span>
+
+<span data-ttu-id="bf407-124">O *intervalo* de uma barra de progresso representa a duração total da operação e a *posição atual* representa o progresso que o aplicativo fez para concluir a operação.</span><span class="sxs-lookup"><span data-stu-id="bf407-124">A progress bar's *range* represents the entire duration of the operation, and the *current position* represents the progress that the application has made toward completing the operation.</span></span> <span data-ttu-id="bf407-125">O procedimento de janela usa o intervalo e a posição atual para determinar a porcentagem da barra de progresso a ser preenchida com a cor de realce.</span><span class="sxs-lookup"><span data-stu-id="bf407-125">The window procedure uses the range and the current position to determine the percentage of the progress bar to fill with the highlight color.</span></span>
+
+<span data-ttu-id="bf407-126">Se você não definir os valores de intervalo, o sistema definirá o valor mínimo como 0 e o valor máximo como 100.</span><span class="sxs-lookup"><span data-stu-id="bf407-126">If you do not set the range values, the system sets the minimum value to 0 and the maximum value to 100.</span></span> <span data-ttu-id="bf407-127">Você pode ajustar o intervalo para inteiros convenientes usando a mensagem [**\_ SETRANGE do PBM**](pbm-setrange.md) .</span><span class="sxs-lookup"><span data-stu-id="bf407-127">You can adjust the range to convenient integers by using the [**PBM\_SETRANGE**](pbm-setrange.md) message.</span></span>
+
+<span data-ttu-id="bf407-128">Uma barra de progresso fornece várias mensagens que você pode usar para definir a posição atual.</span><span class="sxs-lookup"><span data-stu-id="bf407-128">A progress bar provides several messages that you can use to set the current position.</span></span> <span data-ttu-id="bf407-129">A [**mensagem \_ SETPOS do PBM**](pbm-setpos.md) define a posição para um determinado valor.</span><span class="sxs-lookup"><span data-stu-id="bf407-129">The [**PBM\_SETPOS**](pbm-setpos.md) message sets the position to a given value.</span></span> <span data-ttu-id="bf407-130">A [**mensagem \_ DELTAPOS do PBM**](pbm-deltapos.md) avança a posição adicionando um valor especificado à posição atual.</span><span class="sxs-lookup"><span data-stu-id="bf407-130">The [**PBM\_DELTAPOS**](pbm-deltapos.md) message advances the position by adding a specified value to the current position.</span></span>
+
+<span data-ttu-id="bf407-131">A mensagem do [**PBM \_ SetStep**](pbm-setstep.md) permite especificar um incremento de etapa para uma barra de progresso.</span><span class="sxs-lookup"><span data-stu-id="bf407-131">The [**PBM\_SETSTEP**](pbm-setstep.md) message allows you to specify a step increment for a progress bar.</span></span> <span data-ttu-id="bf407-132">Subsequentemente, sempre que você enviar a mensagem [**\_ STEPIT do PBM**](pbm-stepit.md) para a barra de progresso, a posição atual avança pelo incremento especificado.</span><span class="sxs-lookup"><span data-stu-id="bf407-132">Subsequently, whenever you send the [**PBM\_STEPIT**](pbm-stepit.md) message to the progress bar, the current position advances by the specified increment.</span></span> <span data-ttu-id="bf407-133">Por padrão, o incremento Step é definido como 10.</span><span class="sxs-lookup"><span data-stu-id="bf407-133">By default, the step increment is set to 10.</span></span>
+
+### <a name="default-progress-bar-message-processing"></a><span data-ttu-id="bf407-134">Processamento de mensagens da barra de progresso padrão</span><span class="sxs-lookup"><span data-stu-id="bf407-134">Default Progress Bar Message Processing</span></span>
+
+<span data-ttu-id="bf407-135">Esta seção descreve as mensagens tratadas pelo procedimento de janela para a classe de [**\_ classe Progress**](common-control-window-classes.md) .</span><span class="sxs-lookup"><span data-stu-id="bf407-135">This section describes the messages handled by the window procedure for the [**PROGRESS\_CLASS**](common-control-window-classes.md) class.</span></span>
+
+
+
+| <span data-ttu-id="bf407-136">Mensagem</span><span class="sxs-lookup"><span data-stu-id="bf407-136">Message</span></span>            | <span data-ttu-id="bf407-137">Processamento realizado</span><span class="sxs-lookup"><span data-stu-id="bf407-137">Processing performed</span></span>                                                                                                                                                               |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="bf407-138">**criação do WM \_**</span><span class="sxs-lookup"><span data-stu-id="bf407-138">**WM\_CREATE**</span></span>     | <span data-ttu-id="bf407-139">Aloca e Inicializa uma estrutura inicial.</span><span class="sxs-lookup"><span data-stu-id="bf407-139">Allocates and initializes an initial structure.</span></span>                                                                                                                                    |
+| <span data-ttu-id="bf407-140">**destruição do WM \_**</span><span class="sxs-lookup"><span data-stu-id="bf407-140">**WM\_DESTROY**</span></span>    | <span data-ttu-id="bf407-141">Libera todos os recursos associados à barra de progresso.</span><span class="sxs-lookup"><span data-stu-id="bf407-141">Frees all resources associated with the progress bar.</span></span>                                                                                                                              |
+| <span data-ttu-id="bf407-142">**ERASEBKGND do WM \_**</span><span class="sxs-lookup"><span data-stu-id="bf407-142">**WM\_ERASEBKGND**</span></span> | <span data-ttu-id="bf407-143">Desenha o plano de fundo e as bordas da barra de progresso.</span><span class="sxs-lookup"><span data-stu-id="bf407-143">Draws the background and borders of the progress bar.</span></span>                                                                                                                              |
+| <span data-ttu-id="bf407-144">**WM \_ GETfont**</span><span class="sxs-lookup"><span data-stu-id="bf407-144">**WM\_GETFONT**</span></span>    | <span data-ttu-id="bf407-145">Retorna o identificador para a fonte atual.</span><span class="sxs-lookup"><span data-stu-id="bf407-145">Returns the handle to the current font.</span></span> <span data-ttu-id="bf407-146">No momento, a barra de progresso não Desenha texto, portanto, o envio desta mensagem não tem nenhum efeito sobre o controle.</span><span class="sxs-lookup"><span data-stu-id="bf407-146">The progress bar does not currently draw text, so sending this message has no effect on the control.</span></span>                                       |
+| <span data-ttu-id="bf407-147">**pintura do WM \_**</span><span class="sxs-lookup"><span data-stu-id="bf407-147">**WM\_PAINT**</span></span>      | <span data-ttu-id="bf407-148">Desenha a barra de progresso.</span><span class="sxs-lookup"><span data-stu-id="bf407-148">Draws the progress bar.</span></span> <span data-ttu-id="bf407-149">Se o parâmetro *wParam* for não **nulo**, o controle assumirá que o valor é um hDC e pinta usando esse contexto de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="bf407-149">If the *wParam* parameter is non-**NULL**, the control assumes that the value is an HDC and paints using that device context.</span></span>                              |
+| <span data-ttu-id="bf407-150">**WM \_ SETfont**</span><span class="sxs-lookup"><span data-stu-id="bf407-150">**WM\_SETFONT**</span></span>    | <span data-ttu-id="bf407-151">Salva o identificador para a nova fonte e retorna o identificador para a fonte anterior.</span><span class="sxs-lookup"><span data-stu-id="bf407-151">Saves the handle to the new font and returns the handle to the previous font.</span></span> <span data-ttu-id="bf407-152">No momento, a barra de progresso não Desenha texto, portanto, o envio desta mensagem não tem nenhum efeito sobre o controle.</span><span class="sxs-lookup"><span data-stu-id="bf407-152">The progress bar does not currently draw text, so sending this message has no effect on the control.</span></span> |
+
+
+
+ 
+
+### <a name="marquee-style"></a><span data-ttu-id="bf407-153">Estilo do letreiro</span><span class="sxs-lookup"><span data-stu-id="bf407-153">Marquee Style</span></span>
+
+<span data-ttu-id="bf407-154">Ao criar o controle de barra de progresso com o estilo de [**\_ letreiro do PBS**](progress-bar-control-styles.md) , você pode animá-lo de uma maneira que mostra a atividade, mas não indica a proporção da tarefa concluída.</span><span class="sxs-lookup"><span data-stu-id="bf407-154">By creating the progress bar control with the [**PBS\_MARQUEE**](progress-bar-control-styles.md) style, you can animate it in a way that shows activity but does not indicate what proportion of the task is complete.</span></span> <span data-ttu-id="bf407-155">A parte realçada da barra de progresso é movida repetidamente ao longo do comprimento da barra.</span><span class="sxs-lookup"><span data-stu-id="bf407-155">The highlighted part of the progress bar moves repeatedly along the length of the bar.</span></span> <span data-ttu-id="bf407-156">Você pode iniciar e parar a animação e controlar sua velocidade, enviando a mensagem [**\_ setmarquee do PBM**](pbm-setmarquee.md) .</span><span class="sxs-lookup"><span data-stu-id="bf407-156">You can start and stop the animation, and control its speed, by sending the [**PBM\_SETMARQUEE**](pbm-setmarquee.md) message.</span></span> <span data-ttu-id="bf407-157">As barras de progresso do letreiro não têm um intervalo ou posição.</span><span class="sxs-lookup"><span data-stu-id="bf407-157">Marquee progress bars do not have a range or position.</span></span>
+
+<span data-ttu-id="bf407-158">A ilustração a seguir mostra uma barra de progresso no modo de letreiro.</span><span class="sxs-lookup"><span data-stu-id="bf407-158">The following illustration shows a progress bar in marquee mode.</span></span> <span data-ttu-id="bf407-159">A parte realçada se move pela barra.</span><span class="sxs-lookup"><span data-stu-id="bf407-159">The highlighted part moves across the bar.</span></span>
+
+![captura de tela de uma barra de progresso que move um realce verde em um retângulo cinza para indicar o progresso](images/pb-marquee.png)
+
+ 
+
+ 

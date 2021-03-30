@@ -1,0 +1,53 @@
+---
+title: Log do NCSA
+description: O log estendido do NCSA é um tipo de registro no servidor que pode ser habilitado em um grupo de URLs.
+ms.assetid: 14a2492a-3bcf-46f3-a3a5-1ea578516865
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f04db62d5d561fb227f7a46a33c2aefcacd943b0
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103637053"
+---
+# <a name="ncsa-logging"></a><span data-ttu-id="7d36f-103">Log do NCSA</span><span class="sxs-lookup"><span data-stu-id="7d36f-103">NCSA Logging</span></span>
+
+<span data-ttu-id="7d36f-104">O log estendido do NCSA é um tipo de registro no servidor que pode ser habilitado em um grupo de URLs.</span><span class="sxs-lookup"><span data-stu-id="7d36f-104">NCSA extended logging is one type of server side logging that can be enabled on a URL group.</span></span> <span data-ttu-id="7d36f-105">O formato do arquivo de log comum do NCSA é um formato baseado em texto ASCII fixo que não pode ser personalizado.</span><span class="sxs-lookup"><span data-stu-id="7d36f-105">The NCSA Common log file format is a fixed ASCII text-based format that cannot be customized.</span></span> <span data-ttu-id="7d36f-106">O arquivo de log do NCSA contém as ocorrências de cache do modo kernel da API do servidor HTTP.</span><span class="sxs-lookup"><span data-stu-id="7d36f-106">The NCSA log file contains the HTTP Server API kernel-mode cache hits.</span></span> <span data-ttu-id="7d36f-107">Esse tipo de log só pode ser habilitado em um grupo de URLs; Ele não pode ser usado na sessão do servidor.</span><span class="sxs-lookup"><span data-stu-id="7d36f-107">This type of logging can be enabled on a URL group only; it cannot be used on the server session.</span></span>
+
+<span data-ttu-id="7d36f-108">O formato do arquivo de log comum do NCSA registra os dados a seguir.</span><span class="sxs-lookup"><span data-stu-id="7d36f-108">The NCSA Common log file format records the following data.</span></span> <span data-ttu-id="7d36f-109">Os dados na tabela estão na ordem de ocorrência no arquivo de log.</span><span class="sxs-lookup"><span data-stu-id="7d36f-109">The data in the table is in the order of occurrence in the log file.</span></span>
+
+
+
+| <span data-ttu-id="7d36f-110">Campo</span><span class="sxs-lookup"><span data-stu-id="7d36f-110">Field</span></span>                                            | <span data-ttu-id="7d36f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d36f-111">Description</span></span>                                                                                                                                                                       |
+|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="7d36f-112">Endereço de host remoto</span><span class="sxs-lookup"><span data-stu-id="7d36f-112">Remote host address</span></span>                              | <span data-ttu-id="7d36f-113">Endereço IP do cliente que fez a solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d36f-113">The IP address of the client that made the request.</span></span>                                                                                                                               |
+| <span data-ttu-id="7d36f-114">Nome do log remoto</span><span class="sxs-lookup"><span data-stu-id="7d36f-114">Remote log name</span></span>                                  | <span data-ttu-id="7d36f-115">Não usado.</span><span class="sxs-lookup"><span data-stu-id="7d36f-115">Not used.</span></span> <span data-ttu-id="7d36f-116">Esse valor é sempre um hífen.</span><span class="sxs-lookup"><span data-stu-id="7d36f-116">This value is always a hyphen.</span></span>                                                                                                                                          |
+| <span data-ttu-id="7d36f-117">Nome de usuário</span><span class="sxs-lookup"><span data-stu-id="7d36f-117">User name</span></span>                                        | <span data-ttu-id="7d36f-118">O nome do usuário autenticado que acessou o servidor.</span><span class="sxs-lookup"><span data-stu-id="7d36f-118">The name of the authenticated user that accessed the server.</span></span> <span data-ttu-id="7d36f-119">Os usuários anônimos são indicados por um hífen.</span><span class="sxs-lookup"><span data-stu-id="7d36f-119">Anonymous users are indicated by a hyphen.</span></span> <span data-ttu-id="7d36f-120">A prática recomendada é que o aplicativo sempre forneça o nome de usuário.</span><span class="sxs-lookup"><span data-stu-id="7d36f-120">The best practice is for the application always to provide the user name.</span></span> |
+| <span data-ttu-id="7d36f-121">Deslocamento de data, hora e hora de Greenwich (GMT)</span><span class="sxs-lookup"><span data-stu-id="7d36f-121">Date, time, and Greenwich mean time (GMT) offset</span></span> | <span data-ttu-id="7d36f-122">A data e a hora locais em que a atividade ocorreu.</span><span class="sxs-lookup"><span data-stu-id="7d36f-122">The local date and time at which the activity occurred.</span></span> <span data-ttu-id="7d36f-123">O deslocamento do tempo médio de Greenwich também é indicado.</span><span class="sxs-lookup"><span data-stu-id="7d36f-123">The offset from Greenwich mean time is also indicated.</span></span>                                                                    |
+| <span data-ttu-id="7d36f-124">Versão de protocolo e solicitação</span><span class="sxs-lookup"><span data-stu-id="7d36f-124">Request and Protocol version</span></span>                     | <span data-ttu-id="7d36f-125">A versão do protocolo HTTP que o cliente usou.</span><span class="sxs-lookup"><span data-stu-id="7d36f-125">The HTTP protocol version that the client used.</span></span>                                                                                                                                   |
+| <span data-ttu-id="7d36f-126">Código de status do serviço</span><span class="sxs-lookup"><span data-stu-id="7d36f-126">Service status code</span></span>                              | <span data-ttu-id="7d36f-127">O código de status HTTP.</span><span class="sxs-lookup"><span data-stu-id="7d36f-127">The HTTP status code.</span></span> <span data-ttu-id="7d36f-128">(Um valor de 200 indica que a solicitação foi concluída com êxito.)</span><span class="sxs-lookup"><span data-stu-id="7d36f-128">(A value of 200 indicates that the request completed successfully.)</span></span>                                                                                         |
+| <span data-ttu-id="7d36f-129">Bytes sent</span><span class="sxs-lookup"><span data-stu-id="7d36f-129">Bytes sent</span></span>                                       | <span data-ttu-id="7d36f-130">O número de bytes enviados pelo servidor.</span><span class="sxs-lookup"><span data-stu-id="7d36f-130">The number of bytes sent by the server.</span></span>                                                                                                                                           |
+
+
+
+ 
+
+<span data-ttu-id="7d36f-131">Nem todos os campos conterão informações.</span><span class="sxs-lookup"><span data-stu-id="7d36f-131">Not all fields will contain information.</span></span> <span data-ttu-id="7d36f-132">Para campos para os quais não há informações, um hífen (-) aparece como um espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="7d36f-132">For fields for which there is no information, a hyphen (-) appears as a placeholder.</span></span> <span data-ttu-id="7d36f-133">Se um campo contiver um caractere não imprimível, a API do servidor HTTP o substituirá por um sinal de adição (+) para preservar o formato do arquivo de log.</span><span class="sxs-lookup"><span data-stu-id="7d36f-133">If a field contains a nonprintable character, the HTTP Server API replaces it with a plus sign (+) to preserve the log file format.</span></span> <span data-ttu-id="7d36f-134">Isso normalmente ocorre com ataques de vírus, quando, por exemplo, um usuário mal-intencionado envia retornos de carro e feeds de linha que, se não forem substituídos pelo sinal de adição (+), quebraria o formato do arquivo de log.</span><span class="sxs-lookup"><span data-stu-id="7d36f-134">This typically occurs with virus attacks, when, for example, a malicious user sends carriage returns and line feeds that, if not replaced with the plus sign (+), would break the log file format.</span></span> <span data-ttu-id="7d36f-135">Os campos são separados por espaços e a hora é registrada como hora local com o deslocamento GMT.</span><span class="sxs-lookup"><span data-stu-id="7d36f-135">Fields are separated by spaces, and the time is recorded as local time with the GMT offset.</span></span>
+
+<span data-ttu-id="7d36f-136">O exemplo a seguir mostra uma entrada de arquivo de log comum do NCSA, como exibido em um editor de texto.</span><span class="sxs-lookup"><span data-stu-id="7d36f-136">The following example shows an NCSA Common log file entry, as viewed in a text editor.</span></span>
+
+``` syntax
+172.21.13.45 - Microsoft\JohnDoe [07/Apr/2004:17:39:04 -0800] 
+"GET /scripts/iisadmin/ism.dll?http/serv HTTP/1.0" 200 3401
+```
+
+<span data-ttu-id="7d36f-137">O endereço IP do cliente é 172.21.13.45 e o nome de usuário é Microsoft \\ davibarros.</span><span class="sxs-lookup"><span data-stu-id="7d36f-137">The IP address of the client is 172.21.13.45, and the user name is Microsoft\\JohnDoe.</span></span> <span data-ttu-id="7d36f-138">O log foi gravado em 7 de abril de 2005 às 17:39:04 hora local com um deslocamento de Greenwich de 8 horas.</span><span class="sxs-lookup"><span data-stu-id="7d36f-138">The log was recorded on April 7, 2005 at 17:39:04 local time with a Greenwich offset of 8 hours.</span></span> <span data-ttu-id="7d36f-139">A versão de protocolo e o verbo de solicitação foram "GET/scripts/IISADMIN/ism.dll? http/serv HTTP/1.0".</span><span class="sxs-lookup"><span data-stu-id="7d36f-139">The request verb and protocol version were "GET /scripts/iisadmin/ism.dll?http/serv HTTP/1.0".</span></span> <span data-ttu-id="7d36f-140">Os códigos de status eram 200 OK e o número de bytes enviados pelo cliente foi 3401.</span><span class="sxs-lookup"><span data-stu-id="7d36f-140">The status codes was 200 OK, and the number of bytes sent by the client was 3401.</span></span>
+
+ 
+
+ 
+
+
+
+

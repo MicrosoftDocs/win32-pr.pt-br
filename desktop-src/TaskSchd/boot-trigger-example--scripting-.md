@@ -1,0 +1,137 @@
+---
+title: Exemplo de gatilho de inicialização (script)
+description: Este exemplo de script mostra como criar uma tarefa que está agendada para executar o bloco de notas quando o sistema é inicializado.
+ms.assetid: 73ae9cc4-ef89-4390-ac05-8a773f45fa46
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 72b7735c607dfc39b848532a70e4d24b1a14d346
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104005531"
+---
+# <a name="boot-trigger-example-scripting"></a><span data-ttu-id="969e5-103">Exemplo de gatilho de inicialização (script)</span><span class="sxs-lookup"><span data-stu-id="969e5-103">Boot Trigger Example (Scripting)</span></span>
+
+<span data-ttu-id="969e5-104">Este exemplo de script mostra como criar uma tarefa que está agendada para executar o bloco de notas quando o sistema é inicializado.</span><span class="sxs-lookup"><span data-stu-id="969e5-104">This scripting example shows how to create a task that is scheduled to execute Notepad when the system is booted.</span></span> <span data-ttu-id="969e5-105">A tarefa contém um gatilho de inicialização que especifica um limite inicial e um tempo de atraso para a tarefa ser iniciada depois que o sistema é inicializado.</span><span class="sxs-lookup"><span data-stu-id="969e5-105">The task contains a boot trigger that specifies a start boundary and delay time for the task to start after the system is booted.</span></span> <span data-ttu-id="969e5-106">A tarefa também contém uma ação que especifica a tarefa para executar o bloco de notas.</span><span class="sxs-lookup"><span data-stu-id="969e5-106">The task also contains an action that specifies the task to execute Notepad.</span></span> <span data-ttu-id="969e5-107">A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.</span><span class="sxs-lookup"><span data-stu-id="969e5-107">The task is registered using the Local Service account as a security context to run the task.</span></span>
+
+<span data-ttu-id="969e5-108">O procedimento a seguir descreve como agendar um executável, como o bloco de notas, para iniciar quando o sistema for inicializado.</span><span class="sxs-lookup"><span data-stu-id="969e5-108">The following procedure describes how to schedule an executable such as Notepad to start when the system is booted.</span></span>
+
+<span data-ttu-id="969e5-109">**Para agendar o bloco de notas para iniciar quando o sistema for inicializado**</span><span class="sxs-lookup"><span data-stu-id="969e5-109">**To schedule Notepad to start when the system is booted**</span></span>
+
+1.  <span data-ttu-id="969e5-110">Crie um objeto [**TaskService**](taskservice.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-110">Create a [**TaskService**](taskservice.md) object.</span></span> <span data-ttu-id="969e5-111">Esse objeto permite que você crie a tarefa em uma pasta especificada.</span><span class="sxs-lookup"><span data-stu-id="969e5-111">This object allows you to create the task in a specified folder.</span></span>
+2.  <span data-ttu-id="969e5-112">Obter uma pasta de tarefas e criar uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="969e5-112">Get a task folder and create a task.</span></span> <span data-ttu-id="969e5-113">Use o método [**TaskService. GetFolder**](taskservice-getfolder.md) para obter a pasta onde a tarefa está armazenada e o método [**TaskService. NewTask**](taskservice-newtask.md) para criar o objeto [**TaskDefinition**](taskdefinition.md) que representa a tarefa.</span><span class="sxs-lookup"><span data-stu-id="969e5-113">Use the [**TaskService.GetFolder**](taskservice-getfolder.md) method to get the folder where the task is stored and the [**TaskService.NewTask**](taskservice-newtask.md) method to create the [**TaskDefinition**](taskdefinition.md) object that represents the task.</span></span>
+3.  <span data-ttu-id="969e5-114">Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-114">Define information about the task using the [**TaskDefinition**](taskdefinition.md) object.</span></span> <span data-ttu-id="969e5-115">Use a propriedade [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.</span><span class="sxs-lookup"><span data-stu-id="969e5-115">Use the [**TaskDefinition.Settings**](taskdefinition-settings.md) property to define the settings that determine how the Task Scheduler service performs the task and the [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) property to define the information that describes the task.</span></span>
+4.  <span data-ttu-id="969e5-116">Crie um gatilho de logon usando a propriedade [**TaskDefinition. Triggers**](taskdefinition-triggers.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-116">Create a logon trigger using the [**TaskDefinition.Triggers**](taskdefinition-triggers.md) property.</span></span> <span data-ttu-id="969e5-117">Esta propriedade fornece acesso ao objeto [**TriggerCollection**](triggercollection.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-117">This property provides access to the [**TriggerCollection**](triggercollection.md) object.</span></span> <span data-ttu-id="969e5-118">Use o método [**TriggerCollection. Create**](triggercollection-create.md) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho de inicialização.</span><span class="sxs-lookup"><span data-stu-id="969e5-118">Use the [**TriggerCollection.Create**](triggercollection-create.md) method (specifying the type of trigger that you want to create) to create a boot trigger.</span></span> <span data-ttu-id="969e5-119">Ao criar o gatilho, defina as propriedades [**StartBoundary**](trigger-startboundary.md) e [**endboundal**](trigger-endboundary.md) do gatilho para ativar e desativar o gatilho.</span><span class="sxs-lookup"><span data-stu-id="969e5-119">As you create the trigger, set the [**StartBoundary**](trigger-startboundary.md) and [**EndBoundary**](trigger-endboundary.md) properties of the trigger to activate and deactivate the trigger.</span></span> <span data-ttu-id="969e5-120">Você também pode especificar um valor para a propriedade [**Delay**](boottrigger-delay.md) do gatilho de inicialização.</span><span class="sxs-lookup"><span data-stu-id="969e5-120">You can also specify a value for the [**Delay**](boottrigger-delay.md) property of the boot trigger.</span></span>
+5.  <span data-ttu-id="969e5-121">Crie uma ação para a tarefa Executar usando a propriedade [**TaskDefinition. Actions**](taskdefinition-actions.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-121">Create an action for the task to execute by using the [**TaskDefinition.Actions**](taskdefinition-actions.md) property.</span></span> <span data-ttu-id="969e5-122">Essa propriedade fornece acesso ao objeto [**ActionCollection**](actioncollection.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-122">This property provides access to the [**ActionCollection**](actioncollection.md) object.</span></span> <span data-ttu-id="969e5-123">Use o método [**ActionCollection. Create**](actioncollection-create.md) para especificar o tipo de ação que você deseja criar.</span><span class="sxs-lookup"><span data-stu-id="969e5-123">Use the [**ActionCollection.Create**](actioncollection-create.md) method to specify the type of action that you want to create.</span></span> <span data-ttu-id="969e5-124">Este exemplo usa um objeto [**execaction**](execaction.md) , que representa uma ação que inicia um executável.</span><span class="sxs-lookup"><span data-stu-id="969e5-124">This example uses an [**ExecAction**](execaction.md) object, which represents an action that starts an executable.</span></span>
+6.  <span data-ttu-id="969e5-125">Registre a tarefa usando o método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="969e5-125">Register the task using the [**TaskFolder.RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) method.</span></span> <span data-ttu-id="969e5-126">A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.</span><span class="sxs-lookup"><span data-stu-id="969e5-126">The task is registered using the Local Service account as a security context to run the task.</span></span>
+
+<span data-ttu-id="969e5-127">O exemplo de VBScript a seguir mostra como agendar uma tarefa para executar o bloco de notas 30 segundos após a inicialização do sistema.</span><span class="sxs-lookup"><span data-stu-id="969e5-127">The following VBScript example shows how to schedule a task to execute Notepad 30 seconds after the system is booted.</span></span>
+
+
+```VB
+'---------------------------------------------------------
+' This sample schedules a task to start notepad.exe 30 seconds after
+' the system is booted.
+'---------------------------------------------------------
+
+' A constant that specifies a boot trigger.
+const TriggerTypeBoot = 8
+' A constant that specifies an executable action.
+const ActionTypeExecutable = 0   
+
+'********************************************************
+' Create the TaskService object.
+Set service = CreateObject("Schedule.Service")
+call service.Connect()
+
+'********************************************************
+' Get a folder to create a task definition in. 
+Dim rootFolder
+Set rootFolder = service.GetFolder("\")
+
+' The taskDefinition variable is the TaskDefinition object.
+Dim taskDefinition
+' The flags parameter is 0 because it is not supported.
+Set taskDefinition = service.NewTask(0) 
+
+'********************************************************
+' Define information about the task.
+
+' Set the registration info for the task by 
+' creating the RegistrationInfo object.
+Dim regInfo
+Set regInfo = taskDefinition.RegistrationInfo
+regInfo.Description = "Task will execute Notepad when " & _
+    "the computer is booted."
+regInfo.Author = "Author Name"
+
+' Set the task setting info for the Task Scheduler by
+' creating a TaskSettings object.
+Dim settings
+Set settings = taskDefinition.Settings
+settings.StartWhenAvailable = True
+
+'********************************************************
+' Create a boot trigger.
+Dim triggers
+Set triggers = taskDefinition.Triggers
+
+Dim trigger
+Set trigger = triggers.Create(TriggerTypeBoot)
+
+' Trigger variables that define when the trigger is active.
+Dim startTime, endTime
+startTime = "2006-05-02T10:49:02"
+endTime = "2006-05-02T10:52:02"
+
+WScript.Echo "startTime :" & startTime
+WScript.Echo "endTime :" & endTime
+
+trigger.StartBoundary = startTime
+trigger.EndBoundary = endTime
+trigger.ExecutionTimeLimit = "PT5M"    ' Five minutes
+trigger.Id = "BootTriggerId"
+trigger.Delay = "PT30S"                ' 30 Seconds   
+
+'***********************************************************
+' Create the action for the task to execute.
+
+' Add an action to the task. The action executes notepad.
+Dim Action
+Set Action = taskDefinition.Actions.Create( ActionTypeExecutable )
+Action.Path = "C:\Windows\System32\notepad.exe"
+
+WScript.Echo "Task definition created. About to submit the task..."
+
+'***********************************************************
+' Register (create) the task.
+const createOrUpdateTask = 6
+call rootFolder.RegisterTaskDefinition( _
+    "Test Boot Trigger", taskDefinition, createOrUpdateTask, _
+    "Local Service", , 5)
+
+WScript.Echo "Task submitted."
+```
+
+
+
+## <a name="related-topics"></a><span data-ttu-id="969e5-128">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="969e5-128">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="969e5-129">Usando o Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="969e5-129">Using the Task Scheduler</span></span>](using-the-task-scheduler.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
