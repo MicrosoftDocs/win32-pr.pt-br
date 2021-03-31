@@ -15,7 +15,7 @@ ms.locfileid: "103646856"
 
 O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são `Include` e `Exclude` . Este elemento não tem elementos filho e nenhum atributo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```

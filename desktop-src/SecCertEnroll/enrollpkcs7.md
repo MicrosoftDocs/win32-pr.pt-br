@@ -15,7 +15,7 @@ ms.locfileid: "103646779"
 
 O exemplo enrollPKCS7 cria uma \# solicitação PKCS 7 de um certificado existente herdando as chaves pública e privada e o modelo de certificado. O certificado existente é usado para assinar a solicitação. Este exemplo registra o usuário em uma hierarquia de certificado e instala a resposta do certificado. O exemplo usa um certificado existente para registrar e instalar um novo. Para obter mais informações sobre como renovar um certificado existente, consulte [enrollRenewalPKCS7](enrollrenewalpkcs7.md).
 
-## <a name="location"></a>Localização
+## <a name="location"></a>Local
 
 Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ enrollPKCS7.
 

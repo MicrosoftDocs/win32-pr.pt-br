@@ -35,7 +35,7 @@ Uma ação personalizada escrita em JScript ou VBScript requer o objeto de [**se
 
 
 
-| Nome                                                           | Descrição                                                                                                                        |
+| Name                                                           | Descrição                                                                                                                        |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [**Propriedade Mode**](session-mode.md)                          | Retorna true para MSIRUNMODE \_ somente agendado.                                                                                       |
 | [**Propriedade Property (objeto Session)**](session-session.md)  | Retorna a propriedade CustomActionData, a propriedade [**ProductCode**](productcode.md) ou a propriedade [**userid**](usersid.md) .        |

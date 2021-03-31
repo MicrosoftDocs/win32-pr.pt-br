@@ -87,7 +87,7 @@ Use qualquer um dos seguintes para recuperar uma referência ao objeto:
 
 [**TakePicture**](-wia-iwiadispatchitem-takepicture.md)
 
-[**Criada**](-wia-iwiadeviceinfo-create.md)
+[**Criar**](-wia-iwiadeviceinfo-create.md)
 
 [**Criar**](-wia-iwia-create.md)
 

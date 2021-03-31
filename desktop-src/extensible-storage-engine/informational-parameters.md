@@ -48,7 +48,7 @@ Esse parâmetro somente leitura indica o comprimento máximo de chave de índice
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -107,7 +107,7 @@ Esse parâmetro somente leitura retorna o [JET_COLTYP](./jet-coltyp.md) máximo 
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -170,7 +170,7 @@ página de 4 KB = 4014 bytes<br />
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>

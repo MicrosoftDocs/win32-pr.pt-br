@@ -17,7 +17,7 @@ ms.locfileid: "103634790"
 
 Elementos que oferecem suporte a arrastar/soltar devem ter um conjunto ' DropEffect ' válido
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

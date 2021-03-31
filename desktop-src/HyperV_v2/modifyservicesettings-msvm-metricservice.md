@@ -62,7 +62,7 @@ Esse método retorna um dos valores a seguir.
 
 | Código/valor de retorno                                                                                                                                                                | Descrição                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | Sucesso.<br/>                                |
+| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | Êxito.<br/>                                |
 | <dl> <dt>**Parâmetros de método verificados-trabalho iniciado**</dt> <dt>4096</dt> </dl> | Parâmetros de método marcados, trabalho iniciado.<br/> |
 | <dl> <dt>32768</dt> <dt>**com falha**</dt> </dl>                                 | Falhou.<br/>                                 |
 | <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                          | Acesso negado.<br/>                          |

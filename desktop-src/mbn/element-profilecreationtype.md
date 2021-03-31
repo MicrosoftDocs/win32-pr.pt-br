@@ -25,7 +25,7 @@ Para obter mais informações sobre esse elemento, consulte a documentação do 
 [<MBNProfileExt>](element-mbnprofileext.md)  
 **<ProfileCreationType>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <ProfileCreationType>
