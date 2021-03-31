@@ -1,0 +1,31 @@
+---
+title: As interfaces IADs e IDirectoryObject
+description: Os clientes ADSI gerenciam e manipulam objetos de serviço de diretório usando uma das duas interfaces COM IADs ou IDirectoryObject.
+ms.assetid: f9c486b0-3dfb-4abf-afbf-08749e04315f
+ms.tgt_platform: multiple
+keywords:
+- IADs ADSI, sobre
+- IDirectoryObject ADSI, sobre
+- Interfaces ADSI ADSI, using, IADs e IDirectoryObject
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 32dfef47fe1c66e4303725deecec14fe93d1fd92
+ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "103823989"
+---
+# <a name="the-iads-and-idirectoryobject-interfaces"></a><span data-ttu-id="fe61a-106">As interfaces IADs e IDirectoryObject</span><span class="sxs-lookup"><span data-stu-id="fe61a-106">The IADs and IDirectoryObject Interfaces</span></span>
+
+<span data-ttu-id="fe61a-107">Os clientes ADSI gerenciam e manipulam objetos de serviço de diretório usando uma das duas interfaces COM: [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) ou [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject).</span><span class="sxs-lookup"><span data-stu-id="fe61a-107">ADSI clients manage and manipulate directory service objects by using one of two COM interfaces: [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) or [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject).</span></span> <span data-ttu-id="fe61a-108">**IADs** é uma interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) destinada a uso por clientes com associação tardia, como as escritas em Microsoft Visual Basic, Java e várias linguagens de script.</span><span class="sxs-lookup"><span data-stu-id="fe61a-108">**IADs** is an [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface intended for use by late-bound clients such as those written in Microsoft Visual Basic, Java, and various scripting languages.</span></span> <span data-ttu-id="fe61a-109">**IDirectoryObject** é uma interface vtable que fornece acesso direto a objetos por clientes de ligação antecipada, como aqueles escritos em C e C++.</span><span class="sxs-lookup"><span data-stu-id="fe61a-109">**IDirectoryObject** is a vtable interface that provides direct access to objects by early bound clients such as those written in C and C++.</span></span>
+
+<span data-ttu-id="fe61a-110">Cada objeto ADSI deve implementar [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) e [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject).</span><span class="sxs-lookup"><span data-stu-id="fe61a-110">Each ADSI object must implement both [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) and [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject).</span></span> <span data-ttu-id="fe61a-111">Os clientes ADSI escritos em linguagens como C ou C++, que são capazes de acessar diretamente vtables, podem usar qualquer interface, mas não ambos no mesmo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="fe61a-111">ADSI clients written in languages such as C or C++, which are able to directly access vtables, can use either interface, but not both in the same application.</span></span> <span data-ttu-id="fe61a-112">Os clientes ADSI escritos em Visual Basic ou Java são limitados ao uso de **IADs**.</span><span class="sxs-lookup"><span data-stu-id="fe61a-112">ADSI clients written in Visual Basic or Java are limited to using **IADs**.</span></span>
+
+<span data-ttu-id="fe61a-113">A interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) permite que os clientes de ligação tardia tirem proveito dos recursos de manutenção inerentes do modelo de objeto ADSI.</span><span class="sxs-lookup"><span data-stu-id="fe61a-113">The [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) interface enables late-bound clients to take advantage of the inherent housekeeping features of the ADSI object model.</span></span> <span data-ttu-id="fe61a-114">Entre esses recursos está o cache de propriedades, que permite que os clientes leiam e gravem Propriedades sem passar pelo fio para cada chamada.</span><span class="sxs-lookup"><span data-stu-id="fe61a-114">Among these features is the property cache, which enables clients to read and write properties without going over the wire for each call.</span></span> <span data-ttu-id="fe61a-115">Além disso, os aplicativos cliente têm o uso de uma interface do usuário e de bibliotecas de controles ActiveX poderosas e um estilo mais simples de programação.</span><span class="sxs-lookup"><span data-stu-id="fe61a-115">In addition, client applications gain the use of powerful UI and ActiveX control libraries and a simpler style of programming.</span></span> <span data-ttu-id="fe61a-116">Em retorno, os clientes de ligação tardia devem usar o tipo de dados **Variant** , que impede o uso de tipos de dados nativos mais avançados fornecidos pela ADSI.</span><span class="sxs-lookup"><span data-stu-id="fe61a-116">In return, late-bound clients must use the **VARIANT** data type, which precludes using the richer native data types provided by ADSI.</span></span>
+
+<span data-ttu-id="fe61a-117">A interface [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) permite que os clientes de ligação inicial aproveitem ao máximo os tipos de dados nativos do serviço de diretório no custo de uma ligeira vantagem de desempenho de usar o cache de propriedades.</span><span class="sxs-lookup"><span data-stu-id="fe61a-117">The [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) interface enables early bound clients to take full advantage of native directory-service data types at the cost of foregoing a slight performance advantage from using the property cache.</span></span> <span data-ttu-id="fe61a-118">Em retorno, a interface **IDirectoryObject** fornece acesso direto e durante a transmissão às propriedades do objeto por meio de uma única solicitação, em vez de chamadas **Get** e **Put** individuais.</span><span class="sxs-lookup"><span data-stu-id="fe61a-118">In return, the **IDirectoryObject** interface provides direct, on-the-wire access to object properties through a single request, rather than through individual **get** and **put** calls.</span></span>
+
+ 
+
+ 
