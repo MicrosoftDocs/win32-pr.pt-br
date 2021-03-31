@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634947"
 ---
-# <a name="example-code-for-setting-read-property-rights-on-an-object"></a><span data-ttu-id="d0354-104">Código de exemplo para definir direitos de propriedade de leitura em um objeto</span><span class="sxs-lookup"><span data-stu-id="d0354-104">Example Code for Setting Read Property Rights on an Object</span></span>
+# <a name="example-code-for-setting-read-property-rights-on-an-object"></a><span data-ttu-id="93c68-104">Código de exemplo para definir direitos de propriedade de leitura em um objeto</span><span class="sxs-lookup"><span data-stu-id="93c68-104">Example Code for Setting Read Property Rights on an Object</span></span>
 
-<span data-ttu-id="d0354-105">O exemplo de código a seguir contém uma função que cria uma ACE que atribui acesso de leitura a todas as propriedades do objeto para o Trustee especificado.</span><span class="sxs-lookup"><span data-stu-id="d0354-105">The following code example contains a function that creates an ACE that assigns read access to all properties of the object to the specified trustee.</span></span>
+<span data-ttu-id="93c68-105">O exemplo de código a seguir contém uma função que cria uma ACE que atribui acesso de leitura a todas as propriedades do objeto para o Trustee especificado.</span><span class="sxs-lookup"><span data-stu-id="93c68-105">The following code example contains a function that creates an ACE that assigns read access to all properties of the object to the specified trustee.</span></span>
 
 
 ```C++

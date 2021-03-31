@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634961"
 ---
-# <a name="example-code-for-checking-for-membership-in-a-group"></a><span data-ttu-id="e154e-104">Exemplo de código para verificar a associação em um grupo</span><span class="sxs-lookup"><span data-stu-id="e154e-104">Example Code for Checking for Membership in a Group</span></span>
+# <a name="example-code-for-checking-for-membership-in-a-group"></a><span data-ttu-id="4818b-104">Exemplo de código para verificar a associação em um grupo</span><span class="sxs-lookup"><span data-stu-id="4818b-104">Example Code for Checking for Membership in a Group</span></span>
 
-<span data-ttu-id="e154e-105">O exemplo de código a seguir verifica a associação absoluta de um objeto, verificando recursivamente se um objeto é membro de um grupo ou de quaisquer grupos aninhados nesse grupo.</span><span class="sxs-lookup"><span data-stu-id="e154e-105">The following code example verifies absolute membership of an object by recursively verifying that an object is a member of a group or any groups nested in that group.</span></span>
+<span data-ttu-id="4818b-105">O exemplo de código a seguir verifica a associação absoluta de um objeto, verificando recursivamente se um objeto é membro de um grupo ou de quaisquer grupos aninhados nesse grupo.</span><span class="sxs-lookup"><span data-stu-id="4818b-105">The following code example verifies absolute membership of an object by recursively verifying that an object is a member of a group or any groups nested in that group.</span></span>
 
 
 ```C++

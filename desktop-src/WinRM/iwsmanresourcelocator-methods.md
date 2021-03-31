@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634788"
 ---
-# <a name="iwsmanresourcelocator-methods"></a><span data-ttu-id="ed3d9-103">Métodos IWSManResourceLocator</span><span class="sxs-lookup"><span data-stu-id="ed3d9-103">IWSManResourceLocator Methods</span></span>
+# <a name="iwsmanresourcelocator-methods"></a><span data-ttu-id="6237c-103">Métodos IWSManResourceLocator</span><span class="sxs-lookup"><span data-stu-id="6237c-103">IWSManResourceLocator Methods</span></span>
 
-<span data-ttu-id="ed3d9-104">A interface [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="ed3d9-104">The [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) interface exposes the following methods.</span></span>
+<span data-ttu-id="6237c-104">A interface [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6237c-104">The [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="ed3d9-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ed3d9-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6237c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6237c-105">In this section</span></span>
 
--   [<span data-ttu-id="ed3d9-106">**Método AddOption**</span><span class="sxs-lookup"><span data-stu-id="ed3d9-106">**AddOption Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addoption)
--   [<span data-ttu-id="ed3d9-107">**Método addselectr**</span><span class="sxs-lookup"><span data-stu-id="ed3d9-107">**AddSelector Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addselector)
--   [<span data-ttu-id="ed3d9-108">**Método clearoptions**</span><span class="sxs-lookup"><span data-stu-id="ed3d9-108">**ClearOptions Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearoptions)
--   [<span data-ttu-id="ed3d9-109">**Método ClearSelectors**</span><span class="sxs-lookup"><span data-stu-id="ed3d9-109">**ClearSelectors Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearselectors)
+-   [<span data-ttu-id="6237c-106">**Método AddOption**</span><span class="sxs-lookup"><span data-stu-id="6237c-106">**AddOption Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addoption)
+-   [<span data-ttu-id="6237c-107">**Método addselectr**</span><span class="sxs-lookup"><span data-stu-id="6237c-107">**AddSelector Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addselector)
+-   [<span data-ttu-id="6237c-108">**Método clearoptions**</span><span class="sxs-lookup"><span data-stu-id="6237c-108">**ClearOptions Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearoptions)
+-   [<span data-ttu-id="6237c-109">**Método ClearSelectors**</span><span class="sxs-lookup"><span data-stu-id="6237c-109">**ClearSelectors Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearselectors)
 
  
 

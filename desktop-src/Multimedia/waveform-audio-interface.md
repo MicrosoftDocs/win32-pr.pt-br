@@ -16,13 +16,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005112"
 ---
-# <a name="waveform-audio-interface"></a><span data-ttu-id="2a0c5-107">Interface Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="2a0c5-107">Waveform-Audio Interface</span></span>
+# <a name="waveform-audio-interface"></a><span data-ttu-id="36866-107">Interface Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="36866-107">Waveform-Audio Interface</span></span>
 
-<span data-ttu-id="2a0c5-108">Os tópicos a seguir descrevem a interface de Wave-Audio, que é usada por aplicativos que precisam do maior controle possível em dispositivos de áudio.</span><span class="sxs-lookup"><span data-stu-id="2a0c5-108">The following topics describe the waveform-audio interface, which is used by applications that need the greatest possible control over audio devices.</span></span> <span data-ttu-id="2a0c5-109">As funções e estruturas dessa interface são nomeadas com o prefixo "Wave".</span><span class="sxs-lookup"><span data-stu-id="2a0c5-109">The functions and structures of this interface are named with the prefix "wave".</span></span>
+<span data-ttu-id="36866-108">Os tópicos a seguir descrevem a interface de Wave-Audio, que é usada por aplicativos que precisam do maior controle possível em dispositivos de áudio.</span><span class="sxs-lookup"><span data-stu-id="36866-108">The following topics describe the waveform-audio interface, which is used by applications that need the greatest possible control over audio devices.</span></span> <span data-ttu-id="36866-109">As funções e estruturas dessa interface são nomeadas com o prefixo "Wave".</span><span class="sxs-lookup"><span data-stu-id="36866-109">The functions and structures of this interface are named with the prefix "wave".</span></span>
 
--   [<span data-ttu-id="2a0c5-110">Dispositivos e tipos de dados</span><span class="sxs-lookup"><span data-stu-id="2a0c5-110">Devices and Data Types</span></span>](devices-and-data-types.md)
--   [<span data-ttu-id="2a0c5-111">Executando Waveform-Audio arquivos</span><span class="sxs-lookup"><span data-stu-id="2a0c5-111">Playing Waveform-Audio Files</span></span>](playing-waveform-audio-files.md)
--   [<span data-ttu-id="2a0c5-112">Gravando áudio de onda</span><span class="sxs-lookup"><span data-stu-id="2a0c5-112">Recording Waveform Audio</span></span>](recording-waveform-audio.md)
+-   [<span data-ttu-id="36866-110">Dispositivos e tipos de dados</span><span class="sxs-lookup"><span data-stu-id="36866-110">Devices and Data Types</span></span>](devices-and-data-types.md)
+-   [<span data-ttu-id="36866-111">Executando Waveform-Audio arquivos</span><span class="sxs-lookup"><span data-stu-id="36866-111">Playing Waveform-Audio Files</span></span>](playing-waveform-audio-files.md)
+-   [<span data-ttu-id="36866-112">Gravando áudio de onda</span><span class="sxs-lookup"><span data-stu-id="36866-112">Recording Waveform Audio</span></span>](recording-waveform-audio.md)
 
  
 

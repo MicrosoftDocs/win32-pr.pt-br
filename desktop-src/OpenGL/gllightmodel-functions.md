@@ -20,14 +20,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635346"
 ---
-# <a name="gllightmodel-functions"></a><span data-ttu-id="ba351-111">Funções glLightModel</span><span class="sxs-lookup"><span data-stu-id="ba351-111">glLightModel Functions</span></span>
+# <a name="gllightmodel-functions"></a><span data-ttu-id="ba802-111">Funções glLightModel</span><span class="sxs-lookup"><span data-stu-id="ba802-111">glLightModel Functions</span></span>
 
-<span data-ttu-id="ba351-112">Essas funções definem os parâmetros do modelo de iluminação:</span><span class="sxs-lookup"><span data-stu-id="ba351-112">These functions set lighting model parameters:</span></span>
+<span data-ttu-id="ba802-112">Essas funções definem os parâmetros do modelo de iluminação:</span><span class="sxs-lookup"><span data-stu-id="ba802-112">These functions set lighting model parameters:</span></span>
 
--   [<span data-ttu-id="ba351-113">**glLightModelf**</span><span class="sxs-lookup"><span data-stu-id="ba351-113">**glLightModelf**</span></span>](gllightmodelf.md)
--   [<span data-ttu-id="ba351-114">**glLightModelfv**</span><span class="sxs-lookup"><span data-stu-id="ba351-114">**glLightModelfv**</span></span>](gllightmodelfv.md)
--   [<span data-ttu-id="ba351-115">**glLightModeli**</span><span class="sxs-lookup"><span data-stu-id="ba351-115">**glLightModeli**</span></span>](gllightmodeli.md)
--   [<span data-ttu-id="ba351-116">**glLightModeliv**</span><span class="sxs-lookup"><span data-stu-id="ba351-116">**glLightModeliv**</span></span>](gllightmodeliv.md)
+-   [<span data-ttu-id="ba802-113">**glLightModelf**</span><span class="sxs-lookup"><span data-stu-id="ba802-113">**glLightModelf**</span></span>](gllightmodelf.md)
+-   [<span data-ttu-id="ba802-114">**glLightModelfv**</span><span class="sxs-lookup"><span data-stu-id="ba802-114">**glLightModelfv**</span></span>](gllightmodelfv.md)
+-   [<span data-ttu-id="ba802-115">**glLightModeli**</span><span class="sxs-lookup"><span data-stu-id="ba802-115">**glLightModeli**</span></span>](gllightmodeli.md)
+-   [<span data-ttu-id="ba802-116">**glLightModeliv**</span><span class="sxs-lookup"><span data-stu-id="ba802-116">**glLightModeliv**</span></span>](gllightmodeliv.md)
 
  
 

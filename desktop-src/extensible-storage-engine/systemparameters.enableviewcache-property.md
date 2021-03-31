@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172208"
 ---
-# <a name="systemparametersenableviewcache-property"></a><span data-ttu-id="75a1e-103">Propriedade SystemParameters. EnableViewCache</span><span class="sxs-lookup"><span data-stu-id="75a1e-103">SystemParameters.EnableViewCache property</span></span>
+# <a name="systemparametersenableviewcache-property"></a><span data-ttu-id="c5d29-103">Propriedade SystemParameters. EnableViewCache</span><span class="sxs-lookup"><span data-stu-id="c5d29-103">SystemParameters.EnableViewCache property</span></span>
 
-<span data-ttu-id="75a1e-104">Obtém ou define um valor que indica se o mecanismo de banco de dados deve usar a e/s de arquivo mapeada de memória para arquivos de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="75a1e-104">Gets or sets a value indicating whether the database engine should use memory mapped file I/O for database files.</span></span>
+<span data-ttu-id="c5d29-104">Obtém ou define um valor que indica se o mecanismo de banco de dados deve usar a e/s de arquivo mapeada de memória para arquivos de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="c5d29-104">Gets or sets a value indicating whether the database engine should use memory mapped file I/O for database files.</span></span>
 
-<span data-ttu-id="75a1e-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="75a1e-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="75a1e-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="75a1e-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c5d29-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c5d29-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c5d29-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c5d29-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="75a1e-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="75a1e-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c5d29-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c5d29-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,16 +59,16 @@ SystemParameters.EnableViewCache = value
 public static bool EnableViewCache { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="75a1e-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="75a1e-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="c5d29-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="c5d29-108">Property value</span></span>
 
-<span data-ttu-id="75a1e-109">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="75a1e-109">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
+<span data-ttu-id="c5d29-109">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="c5d29-109">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="75a1e-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="75a1e-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c5d29-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="c5d29-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="75a1e-111">Referência</span><span class="sxs-lookup"><span data-stu-id="75a1e-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c5d29-111">Referência</span><span class="sxs-lookup"><span data-stu-id="c5d29-111">Reference</span></span>
 
-[<span data-ttu-id="75a1e-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="75a1e-112">SystemParameters class</span></span>](./systemparameters-class.md)
+[<span data-ttu-id="c5d29-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="c5d29-112">SystemParameters class</span></span>](./systemparameters-class.md)
 
-[<span data-ttu-id="75a1e-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="75a1e-113">SystemParameters members</span></span>](./systemparameters-members.md)
+[<span data-ttu-id="c5d29-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="c5d29-113">SystemParameters members</span></span>](./systemparameters-members.md)
 
-[<span data-ttu-id="75a1e-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="75a1e-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c5d29-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c5d29-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

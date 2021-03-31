@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005100"
 ---
-# <a name="metadataexchangesample"></a><span data-ttu-id="53a55-107">MetadataExchangeSample</span><span class="sxs-lookup"><span data-stu-id="53a55-107">MetadataExchangeSample</span></span>
+# <a name="metadataexchangesample"></a><span data-ttu-id="8edba-107">MetadataExchangeSample</span><span class="sxs-lookup"><span data-stu-id="8edba-107">MetadataExchangeSample</span></span>
 
-<span data-ttu-id="53a55-108">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder sobre TCP.</span><span class="sxs-lookup"><span data-stu-id="53a55-108">This example shows how to use service host for hosting a PurchaseOrder service over TCP.</span></span> <span data-ttu-id="53a55-109">O serviço também oferece suporte a WS-MetadataExchange.</span><span class="sxs-lookup"><span data-stu-id="53a55-109">The service also supports WS-MetadataExchange.</span></span>
+<span data-ttu-id="8edba-108">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder sobre TCP.</span><span class="sxs-lookup"><span data-stu-id="8edba-108">This example shows how to use service host for hosting a PurchaseOrder service over TCP.</span></span> <span data-ttu-id="8edba-109">O serviço também oferece suporte a WS-MetadataExchange.</span><span class="sxs-lookup"><span data-stu-id="8edba-109">The service also supports WS-MetadataExchange.</span></span>
 
--   [<span data-ttu-id="53a55-110">MexService. cpp</span><span class="sxs-lookup"><span data-stu-id="53a55-110">MexService.cpp</span></span>](#mexservicecpp)
--   [<span data-ttu-id="53a55-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="53a55-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="53a55-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="53a55-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="8edba-110">MexService. cpp</span><span class="sxs-lookup"><span data-stu-id="8edba-110">MexService.cpp</span></span>](#mexservicecpp)
+-   [<span data-ttu-id="8edba-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="8edba-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="8edba-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="8edba-112">Makefile</span></span>](#makefile)
 
-## <a name="mexservicecpp"></a><span data-ttu-id="53a55-113">MexService. cpp</span><span class="sxs-lookup"><span data-stu-id="53a55-113">MexService.cpp</span></span>
+## <a name="mexservicecpp"></a><span data-ttu-id="8edba-113">MexService. cpp</span><span class="sxs-lookup"><span data-stu-id="8edba-113">MexService.cpp</span></span>
 
 
 ```C++
@@ -512,7 +512,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="53a55-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="53a55-114">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="8edba-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="8edba-114">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -623,7 +623,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="53a55-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="53a55-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="8edba-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="8edba-115">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
