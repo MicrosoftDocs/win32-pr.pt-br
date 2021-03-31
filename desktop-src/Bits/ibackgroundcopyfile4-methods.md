@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104159359"
 ---
-# <a name="ibackgroundcopyfile4-methods"></a><span data-ttu-id="4c8d9-103">Métodos IBackgroundCopyFile4</span><span class="sxs-lookup"><span data-stu-id="4c8d9-103">IBackgroundCopyFile4 Methods</span></span>
+# <a name="ibackgroundcopyfile4-methods"></a><span data-ttu-id="f0ca6-103">Métodos IBackgroundCopyFile4</span><span class="sxs-lookup"><span data-stu-id="f0ca6-103">IBackgroundCopyFile4 Methods</span></span>
 
-<span data-ttu-id="4c8d9-104">A interface [**IBackgroundCopyFile4**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibackgroundcopyfile4) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="4c8d9-104">The [**IBackgroundCopyFile4**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibackgroundcopyfile4) interface exposes the following methods.</span></span>
+<span data-ttu-id="f0ca6-104">A interface [**IBackgroundCopyFile4**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibackgroundcopyfile4) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="f0ca6-104">The [**IBackgroundCopyFile4**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibackgroundcopyfile4) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="4c8d9-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4c8d9-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="f0ca6-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f0ca6-105">In this section</span></span>
 
--   [<span data-ttu-id="4c8d9-106">**Método GetPeerDownloadStats**</span><span class="sxs-lookup"><span data-stu-id="4c8d9-106">**GetPeerDownloadStats Method**</span></span>](/windows/desktop/api/Bits4_0/nf-bits4_0-ibackgroundcopyfile4-getpeerdownloadstats)
+-   [<span data-ttu-id="f0ca6-106">**Método GetPeerDownloadStats**</span><span class="sxs-lookup"><span data-stu-id="f0ca6-106">**GetPeerDownloadStats Method**</span></span>](/windows/desktop/api/Bits4_0/nf-bits4_0-ibackgroundcopyfile4-getpeerdownloadstats)
 
  
 

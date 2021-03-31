@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005361"
 ---
-# <a name="text-object-model-enumeration-types"></a><span data-ttu-id="7391f-103">Tipos de enumeração de modelo de objeto de texto</span><span class="sxs-lookup"><span data-stu-id="7391f-103">Text Object Model Enumeration Types</span></span>
+# <a name="text-object-model-enumeration-types"></a><span data-ttu-id="bdc76-103">Tipos de enumeração de modelo de objeto de texto</span><span class="sxs-lookup"><span data-stu-id="bdc76-103">Text Object Model Enumeration Types</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="7391f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7391f-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="bdc76-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bdc76-104">In this section</span></span>
 
--   [<span data-ttu-id="7391f-105">**MANCODE**</span><span class="sxs-lookup"><span data-stu-id="7391f-105">**MANCODE**</span></span>](/windows/win32/api/tom/ne-tom-mancode)
--   [<span data-ttu-id="7391f-106">**OBJECTTYPE**</span><span class="sxs-lookup"><span data-stu-id="7391f-106">**OBJECTTYPE**</span></span>](/windows/win32/api/tom/ne-tom-objecttype)
--   [<span data-ttu-id="7391f-107">**tomConstants**</span><span class="sxs-lookup"><span data-stu-id="7391f-107">**tomConstants**</span></span>](/windows/win32/api/tom/ne-tom-tomconstants)
+-   [<span data-ttu-id="bdc76-105">**MANCODE**</span><span class="sxs-lookup"><span data-stu-id="bdc76-105">**MANCODE**</span></span>](/windows/win32/api/tom/ne-tom-mancode)
+-   [<span data-ttu-id="bdc76-106">**OBJECTTYPE**</span><span class="sxs-lookup"><span data-stu-id="bdc76-106">**OBJECTTYPE**</span></span>](/windows/win32/api/tom/ne-tom-objecttype)
+-   [<span data-ttu-id="bdc76-107">**tomConstants**</span><span class="sxs-lookup"><span data-stu-id="bdc76-107">**tomConstants**</span></span>](/windows/win32/api/tom/ne-tom-tomconstants)
 
  
 

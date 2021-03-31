@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005328"
 ---
-# <a name="ui_pkey_commandid"></a><span data-ttu-id="670a6-103">\_CommandID PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="670a6-103">UI\_PKEY\_CommandId</span></span>
+# <a name="ui_pkey_commandid"></a><span data-ttu-id="8751c-103">\_CommandID PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="8751c-103">UI\_PKEY\_CommandId</span></span>
 
-<span data-ttu-id="670a6-104">Identifica a \_ Propriedade PKEY CommandID da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="670a6-104">Identifies the UI\_PKEY\_CommandId property.</span></span>
+<span data-ttu-id="8751c-104">Identifica a \_ Propriedade PKEY CommandID da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="8751c-104">Identifies the UI\_PKEY\_CommandId property.</span></span>
 
 ```
 propertyDescription
@@ -25,17 +25,17 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a><span data-ttu-id="670a6-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="670a6-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8751c-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="8751c-105">Remarks</span></span>
 
-<span data-ttu-id="670a6-106">A interface do usuário \_ PKEY \_ CommandID é usada por um aplicativo para consultar as IDs dos comandos em um controle de galeria.</span><span class="sxs-lookup"><span data-stu-id="670a6-106">UI\_PKEY\_CommandId is used by an application to query the IDs of the commands in a gallery control.</span></span>
+<span data-ttu-id="8751c-106">A interface do usuário \_ PKEY \_ CommandID é usada por um aplicativo para consultar as IDs dos comandos em um controle de galeria.</span><span class="sxs-lookup"><span data-stu-id="8751c-106">UI\_PKEY\_CommandId is used by an application to query the IDs of the commands in a gallery control.</span></span>
 
-<span data-ttu-id="670a6-107">O valor da propriedade é a ID de um comando.</span><span class="sxs-lookup"><span data-stu-id="670a6-107">The property value is the ID of a Command.</span></span>
+<span data-ttu-id="8751c-107">O valor da propriedade é a ID de um comando.</span><span class="sxs-lookup"><span data-stu-id="8751c-107">The property value is the ID of a Command.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="670a6-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="670a6-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8751c-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8751c-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="670a6-109">Propriedades da coleção</span><span class="sxs-lookup"><span data-stu-id="670a6-109">Collection Properties</span></span>](windowsribbon-reference-properties-collection.md)
+[<span data-ttu-id="8751c-109">Propriedades da coleção</span><span class="sxs-lookup"><span data-stu-id="8751c-109">Collection Properties</span></span>](windowsribbon-reference-properties-collection.md)
 </dt> </dl>
 
  

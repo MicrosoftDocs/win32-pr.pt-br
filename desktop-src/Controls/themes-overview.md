@@ -11,44 +11,44 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005357"
 ---
-# <a name="visual-styles"></a><span data-ttu-id="49650-103">Estilos visuais</span><span class="sxs-lookup"><span data-stu-id="49650-103">Visual Styles</span></span>
+# <a name="visual-styles"></a><span data-ttu-id="e33f9-103">Estilos visuais</span><span class="sxs-lookup"><span data-stu-id="e33f9-103">Visual Styles</span></span>
 
-## <a name="purpose"></a><span data-ttu-id="49650-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="49650-104">Purpose</span></span>
+## <a name="purpose"></a><span data-ttu-id="e33f9-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="e33f9-104">Purpose</span></span>
 
-<span data-ttu-id="49650-105">Os *estilos visuais* alteram a aparência de controles comuns com base no tema escolhido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="49650-105">*Visual styles* changes the appearance of common controls based on the theme chosen by the user.</span></span> <span data-ttu-id="49650-106">Antes do Windows 8, você deve configurar especificamente seu aplicativo para usar estilos visuais; caso contrário, os controles comuns do aplicativo sempre são renderizados no estilo associado ao tema clássico do Windows, independentemente do tema atualmente selecionado.</span><span class="sxs-lookup"><span data-stu-id="49650-106">Prior to Windows 8, you must specifically configure your application to use visual styles; otherwise, the application's common controls are always rendered in the style associated with the Windows Classic theme, regardless of the currently selected theme.</span></span> <span data-ttu-id="49650-107">No Windows 8, os estilos visuais não podem ser desativados, o modo clássico do Windows não existe mais e o modo de alto contraste foi modificado para funcionar com estilos visuais.</span><span class="sxs-lookup"><span data-stu-id="49650-107">In Windows 8, visual styles can't be turned off, Windows Classic mode no longer exists, and high contrast mode has been modified to work with visual styles.</span></span>
+<span data-ttu-id="e33f9-105">Os *estilos visuais* alteram a aparência de controles comuns com base no tema escolhido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="e33f9-105">*Visual styles* changes the appearance of common controls based on the theme chosen by the user.</span></span> <span data-ttu-id="e33f9-106">Antes do Windows 8, você deve configurar especificamente seu aplicativo para usar estilos visuais; caso contrário, os controles comuns do aplicativo sempre são renderizados no estilo associado ao tema clássico do Windows, independentemente do tema atualmente selecionado.</span><span class="sxs-lookup"><span data-stu-id="e33f9-106">Prior to Windows 8, you must specifically configure your application to use visual styles; otherwise, the application's common controls are always rendered in the style associated with the Windows Classic theme, regardless of the currently selected theme.</span></span> <span data-ttu-id="e33f9-107">No Windows 8, os estilos visuais não podem ser desativados, o modo clássico do Windows não existe mais e o modo de alto contraste foi modificado para funcionar com estilos visuais.</span><span class="sxs-lookup"><span data-stu-id="e33f9-107">In Windows 8, visual styles can't be turned off, Windows Classic mode no longer exists, and high contrast mode has been modified to work with visual styles.</span></span>
 
-<span data-ttu-id="49650-108">Esta seção fornece uma visão geral dos estilos visuais e explica como configurar seu aplicativo para usá-los.</span><span class="sxs-lookup"><span data-stu-id="49650-108">This section provides an overview of visual styles and explains how to configure your application to use them.</span></span>
+<span data-ttu-id="e33f9-108">Esta seção fornece uma visão geral dos estilos visuais e explica como configurar seu aplicativo para usá-los.</span><span class="sxs-lookup"><span data-stu-id="e33f9-108">This section provides an overview of visual styles and explains how to configure your application to use them.</span></span>
 
-## <a name="developer-audience"></a><span data-ttu-id="49650-109">Público de desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="49650-109">Developer audience</span></span>
+## <a name="developer-audience"></a><span data-ttu-id="e33f9-109">Público de desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="e33f9-109">Developer audience</span></span>
 
-<span data-ttu-id="49650-110">Os estilos visuais são projetados para uso por desenvolvedores de C/C++ e designers de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="49650-110">Visual styles are designed for use by C/C++ developers and UI designers.</span></span> <span data-ttu-id="49650-111">Em geral, os desenvolvedores precisam de um nível moderado de compreensão sobre conceitos de programação de interface do usuário, programação de API do Windows e Unicode.</span><span class="sxs-lookup"><span data-stu-id="49650-111">In general, developers need a moderate level of understanding about UI programming concepts, Windows API programming, and Unicode.</span></span>
+<span data-ttu-id="e33f9-110">Os estilos visuais são projetados para uso por desenvolvedores de C/C++ e designers de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="e33f9-110">Visual styles are designed for use by C/C++ developers and UI designers.</span></span> <span data-ttu-id="e33f9-111">Em geral, os desenvolvedores precisam de um nível moderado de compreensão sobre conceitos de programação de interface do usuário, programação de API do Windows e Unicode.</span><span class="sxs-lookup"><span data-stu-id="e33f9-111">In general, developers need a moderate level of understanding about UI programming concepts, Windows API programming, and Unicode.</span></span>
 
-## <a name="run-time-requirements"></a><span data-ttu-id="49650-112">Requisitos de tempo de execução</span><span class="sxs-lookup"><span data-stu-id="49650-112">Run-time requirements</span></span>
+## <a name="run-time-requirements"></a><span data-ttu-id="e33f9-112">Requisitos de tempo de execução</span><span class="sxs-lookup"><span data-stu-id="e33f9-112">Run-time requirements</span></span>
 
-<span data-ttu-id="49650-113">Windows Vista e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="49650-113">Windows Vista and later operating systems.</span></span>
+<span data-ttu-id="e33f9-113">Windows Vista e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="e33f9-113">Windows Vista and later operating systems.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="49650-114">Não há suporte para estilos visuais no modo de cor 256.</span><span class="sxs-lookup"><span data-stu-id="49650-114">Visual Styles are not supported in 256-color mode.</span></span>
+> <span data-ttu-id="e33f9-114">Não há suporte para estilos visuais no modo de cor 256.</span><span class="sxs-lookup"><span data-stu-id="e33f9-114">Visual Styles are not supported in 256-color mode.</span></span>
 
  
 
-## <a name="in-this-section"></a><span data-ttu-id="49650-115">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="49650-115">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e33f9-115">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e33f9-115">In this section</span></span>
 
--   [<span data-ttu-id="49650-116">Novidades</span><span class="sxs-lookup"><span data-stu-id="49650-116">What's New</span></span>](what-s-new-for-windows-8.md)
--   [<span data-ttu-id="49650-117">Visão geral dos estilos visuais</span><span class="sxs-lookup"><span data-stu-id="49650-117">Visual Styles Overview</span></span>](visual-styles-overview.md)
--   [<span data-ttu-id="49650-118">Habilitar estilos visuais</span><span class="sxs-lookup"><span data-stu-id="49650-118">Enabling Visual Styles</span></span>](cookbook-overview.md)
--   [<span data-ttu-id="49650-119">Usando estilos visuais com controles personalizados e Owner-Drawn</span><span class="sxs-lookup"><span data-stu-id="49650-119">Using Visual Styles with Custom and Owner-Drawn Controls</span></span>](using-visual-styles.md)
--   [<span data-ttu-id="49650-120">Suporte a temas de Alto Contraste</span><span class="sxs-lookup"><span data-stu-id="49650-120">Supporting High Contrast Themes</span></span>](supporting-high-contrast-themes.md)
--   [<span data-ttu-id="49650-121">Referência de estilos visuais</span><span class="sxs-lookup"><span data-stu-id="49650-121">Visual Styles Reference</span></span>](uxctl-ref.md)
+-   [<span data-ttu-id="e33f9-116">Novidades</span><span class="sxs-lookup"><span data-stu-id="e33f9-116">What's New</span></span>](what-s-new-for-windows-8.md)
+-   [<span data-ttu-id="e33f9-117">Visão geral dos estilos visuais</span><span class="sxs-lookup"><span data-stu-id="e33f9-117">Visual Styles Overview</span></span>](visual-styles-overview.md)
+-   [<span data-ttu-id="e33f9-118">Habilitar estilos visuais</span><span class="sxs-lookup"><span data-stu-id="e33f9-118">Enabling Visual Styles</span></span>](cookbook-overview.md)
+-   [<span data-ttu-id="e33f9-119">Usando estilos visuais com controles personalizados e Owner-Drawn</span><span class="sxs-lookup"><span data-stu-id="e33f9-119">Using Visual Styles with Custom and Owner-Drawn Controls</span></span>](using-visual-styles.md)
+-   [<span data-ttu-id="e33f9-120">Suporte a temas de Alto Contraste</span><span class="sxs-lookup"><span data-stu-id="e33f9-120">Supporting High Contrast Themes</span></span>](supporting-high-contrast-themes.md)
+-   [<span data-ttu-id="e33f9-121">Referência de estilos visuais</span><span class="sxs-lookup"><span data-stu-id="e33f9-121">Visual Styles Reference</span></span>](uxctl-ref.md)
 
-## <a name="related-topics"></a><span data-ttu-id="49650-122">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="49650-122">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e33f9-122">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e33f9-122">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="49650-123">Formato de arquivo de tema</span><span class="sxs-lookup"><span data-stu-id="49650-123">Theme File Format</span></span>](themesfileformat-overview.md)
+[<span data-ttu-id="e33f9-123">Formato de arquivo de tema</span><span class="sxs-lookup"><span data-stu-id="e33f9-123">Theme File Format</span></span>](themesfileformat-overview.md)
 </dt> <dt>
 
-[<span data-ttu-id="49650-124">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="49650-124">Windows Controls</span></span>](window-controls.md)
+[<span data-ttu-id="e33f9-124">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="e33f9-124">Windows Controls</span></span>](window-controls.md)
 </dt> </dl>
 
  

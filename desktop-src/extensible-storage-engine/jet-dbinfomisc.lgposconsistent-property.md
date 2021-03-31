@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089914"
 ---
-# <a name="jet_dbinfomisclgposconsistent-property"></a><span data-ttu-id="5e5da-103">Propriedade JET_DBINFOMISC. lgposConsistent</span><span class="sxs-lookup"><span data-stu-id="5e5da-103">JET_DBINFOMISC.lgposConsistent property</span></span>
+# <a name="jet_dbinfomisclgposconsistent-property"></a><span data-ttu-id="e77d8-103">Propriedade JET_DBINFOMISC. lgposConsistent</span><span class="sxs-lookup"><span data-stu-id="e77d8-103">JET_DBINFOMISC.lgposConsistent property</span></span>
 
-<span data-ttu-id="5e5da-104">Obtém o LGPOs quando o banco de dados tornou-se consistente.</span><span class="sxs-lookup"><span data-stu-id="5e5da-104">Gets the lgpos when the database was made consistent.</span></span> <span data-ttu-id="5e5da-105">Esse valor será nulo se o banco de dados estiver inconsistente.</span><span class="sxs-lookup"><span data-stu-id="5e5da-105">This value is null if the database is inconsistent.</span></span>
+<span data-ttu-id="e77d8-104">Obtém o LGPOs quando o banco de dados tornou-se consistente.</span><span class="sxs-lookup"><span data-stu-id="e77d8-104">Gets the lgpos when the database was made consistent.</span></span> <span data-ttu-id="e77d8-105">Esse valor será nulo se o banco de dados estiver inconsistente.</span><span class="sxs-lookup"><span data-stu-id="e77d8-105">This value is null if the database is inconsistent.</span></span>
 
-<span data-ttu-id="5e5da-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5e5da-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="5e5da-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5e5da-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e77d8-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e77d8-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="e77d8-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e77d8-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5e5da-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5e5da-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e77d8-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="e77d8-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.lgposConsistent
 public JET_LGPOS lgposConsistent { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="5e5da-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5e5da-109">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="e77d8-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="e77d8-109">Property value</span></span>
 
-<span data-ttu-id="5e5da-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="5e5da-110">Type: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)</span></span>  
+<span data-ttu-id="e77d8-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="e77d8-110">Type: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="5e5da-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="5e5da-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e77d8-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="e77d8-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="5e5da-112">Referência</span><span class="sxs-lookup"><span data-stu-id="5e5da-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e77d8-112">Referência</span><span class="sxs-lookup"><span data-stu-id="e77d8-112">Reference</span></span>
 
-[<span data-ttu-id="5e5da-113">Classe JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="5e5da-113">JET_DBINFOMISC class</span></span>](./jet-dbinfomisc-class.md)
+[<span data-ttu-id="e77d8-113">Classe JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="e77d8-113">JET_DBINFOMISC class</span></span>](./jet-dbinfomisc-class.md)
 
-[<span data-ttu-id="5e5da-114">Membros do JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="5e5da-114">JET_DBINFOMISC members</span></span>](./jet-dbinfomisc-members.md)
+[<span data-ttu-id="e77d8-114">Membros do JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="e77d8-114">JET_DBINFOMISC members</span></span>](./jet-dbinfomisc-members.md)
 
-[<span data-ttu-id="5e5da-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5e5da-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="e77d8-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e77d8-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

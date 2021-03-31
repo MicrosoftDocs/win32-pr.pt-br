@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005316"
 ---
-# <a name="register-with-the-routing-table-manager"></a><span data-ttu-id="3f085-103">Registrar com o Gerenciador de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="3f085-103">Register with the Routing Table Manager</span></span>
+# <a name="register-with-the-routing-table-manager"></a><span data-ttu-id="11eae-103">Registrar com o Gerenciador de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="11eae-103">Register with the Routing Table Manager</span></span>
 
-<span data-ttu-id="3f085-104">O código de exemplo a seguir mostra como registrar uma nova entidade com o Gerenciador de tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="3f085-104">The following sample code shows how to register a new entity with the routing table manager.</span></span>
+<span data-ttu-id="11eae-104">O código de exemplo a seguir mostra como registrar uma nova entidade com o Gerenciador de tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="11eae-104">The following sample code shows how to register a new entity with the routing table manager.</span></span>
 
 
 ```C++
