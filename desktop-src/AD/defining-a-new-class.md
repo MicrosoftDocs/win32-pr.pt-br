@@ -1,0 +1,68 @@
+---
+title: Definindo uma nova classe
+description: Quando você define uma nova classe, especifique as classes pai legais da nova classe, ou seja, as classes que podem conter instâncias da nova classe.
+ms.assetid: 24e346b3-2de2-41f9-a0a2-7b7d8ab5668b
+ms.tgt_platform: multiple
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 069d6c0ede945c39a00111cd43ece8257031b3aa
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103915958"
+---
+# <a name="defining-a-new-class"></a><span data-ttu-id="147fa-103">Definindo uma nova classe</span><span class="sxs-lookup"><span data-stu-id="147fa-103">Defining a New Class</span></span>
+
+<span data-ttu-id="147fa-104">Quando você define uma nova classe, especifique as classes pai legais da nova classe, ou seja, as classes que podem conter instâncias da nova classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-104">When you define a new class, specify the legal parent classes of the new class, that is, the classes that can contain instances of your new class.</span></span> <span data-ttu-id="147fa-105">As classes pai legais são especificadas nos atributos **possSuperior** e **systemPossSuperiors** da nova classe, bem como nos superiores possíveis herdados de suas superclasses, mas não de classes auxiliares.</span><span class="sxs-lookup"><span data-stu-id="147fa-105">The legal parent classes are specified in the **possSuperiors** and **systemPossSuperiors** attributes of the new class, as well as in the possible superiors inherited from its superclasses, but not from auxiliary classes.</span></span>
+
+<span data-ttu-id="147fa-106">Seja específico ao definir as classes pai legais para a nova classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-106">Be specific when defining the legal parent classes for the new class.</span></span> <span data-ttu-id="147fa-107">Decida onde você deseja que os usuários criem instâncias da sua classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-107">Decide where you want users to create instances of your class.</span></span> <span data-ttu-id="147fa-108">Por exemplo, especificar "contêiner" como um pai legal permitirá que o usuário crie instâncias em qualquer um dos contêineres padrão (**contêiner**, **OrganizationalUnit** e assim por diante), enquanto especificar "computador" permitiria que instâncias fossem criadas somente em instâncias do objeto de **computador** .</span><span class="sxs-lookup"><span data-stu-id="147fa-108">For example, specifying "container" as a legal parent will enable the user create instances under any of the standard containers (**container**, **organizationalUnit**, and so on), while specifying "computer" would enable instances to be created only under instances of the **computer** object.</span></span>
+
+<span data-ttu-id="147fa-109">**Para criar uma classe**</span><span class="sxs-lookup"><span data-stu-id="147fa-109">**To Create a Class**</span></span>
+
+1.  <span data-ttu-id="147fa-110">Escolha um nome para a classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-110">Choose a name for the class.</span></span> <span data-ttu-id="147fa-111">Para obter mais informações sobre como compor um nome de exibição de nome comum e de LDAP para uma nova classe, consulte [nomenclatura de atributos e classes](naming-attributes-and-classes.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-111">For more information about composing a common-name and an LDAP display name for a new class, see [Naming Attributes and Classes](naming-attributes-and-classes.md).</span></span>
+2.  <span data-ttu-id="147fa-112">Obtenha um OID (identificador de objeto) para a classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-112">Obtain an object identifier (OID) for the class.</span></span> <span data-ttu-id="147fa-113">Para obter mais informações, consulte [obtendo um identificador de objeto](obtaining-an-object-identifier.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-113">For more information, see [Obtaining an Object Identifier](obtaining-an-object-identifier.md).</span></span>
+3.  <span data-ttu-id="147fa-114">Escolha uma "categoria de objeto padrão" para a classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-114">Choose a "default object category" for the class.</span></span> <span data-ttu-id="147fa-115">Para obter mais informações, consulte [classe de objeto e categoria de objeto](object-class-and-object-category.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-115">For more information, see [Object Class and Object Category](object-class-and-object-category.md).</span></span>
+4.  <span data-ttu-id="147fa-116">Escolha uma "categoria de classe de objeto" para a classe.</span><span class="sxs-lookup"><span data-stu-id="147fa-116">Choose an "object class category" for the class.</span></span> <span data-ttu-id="147fa-117">Isso indica se a classe é abstrata, estrutural ou auxiliar.</span><span class="sxs-lookup"><span data-stu-id="147fa-117">This indicates whether the class is abstract, structural, or auxiliary.</span></span> <span data-ttu-id="147fa-118">Para obter mais informações, consulte [classes estruturais, abstratas e auxiliares](structural-abstract-and-auxiliary-classes.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-118">For more information, see [Structural, Abstract, and Auxiliary Classes](structural-abstract-and-auxiliary-classes.md).</span></span>
+5.  <span data-ttu-id="147fa-119">Crie um novo objeto **classSchema** .</span><span class="sxs-lookup"><span data-stu-id="147fa-119">Create a new **classSchema** object.</span></span> <span data-ttu-id="147fa-120">Muitos atributos podem ser definidos para um objeto **classSchema** .</span><span class="sxs-lookup"><span data-stu-id="147fa-120">Many attributes can be set for an **classSchema** object.</span></span> <span data-ttu-id="147fa-121">Os seguintes atributos são essenciais para a definição de uma nova classe:</span><span class="sxs-lookup"><span data-stu-id="147fa-121">The following attributes are critical to the definition of a new class:</span></span>
+
+    -   <span data-ttu-id="147fa-122">Classes das quais a nova classe herda: **listas SubClassOf**, **auxiliaryClass** e **systemAuxiliaryClass**</span><span class="sxs-lookup"><span data-stu-id="147fa-122">Classes from which the new class inherits: **subClassOf**, **auxiliaryClass**, and **systemAuxiliaryClass**</span></span>
+    -   <span data-ttu-id="147fa-123">Nomes e identificadores para a nova classe: **CN**, **lDAPDisplayName**, **adminDisplayName**, **schemaIDGUID**, **governsID**</span><span class="sxs-lookup"><span data-stu-id="147fa-123">Names and identifiers for the new class: **cn**, **lDAPDisplayName**, **adminDisplayName**, **schemaIDGUID**, **governsID**</span></span>
+    -   <span data-ttu-id="147fa-124">Possíveis atributos da nova classe: **mustContain**, **systemMustContain**, **mayContain**, **systemMayContain**</span><span class="sxs-lookup"><span data-stu-id="147fa-124">Possible attributes of the new class: **mustContain**, **systemMustContain**, **mayContain**, **systemMayContain**</span></span>
+    -   <span data-ttu-id="147fa-125">Possíveis pais da nova classe: **possSuperior**, **systemPossSuperiors**</span><span class="sxs-lookup"><span data-stu-id="147fa-125">Possible parents of the new class: **possSuperiors**, **systemPossSuperiors**</span></span>
+    -   <span data-ttu-id="147fa-126">**objectClassCategory**</span><span class="sxs-lookup"><span data-stu-id="147fa-126">**objectClassCategory**</span></span>
+    -   <span data-ttu-id="147fa-127">**defaultObjectCategory**</span><span class="sxs-lookup"><span data-stu-id="147fa-127">**defaultObjectCategory**</span></span>
+    -   <span data-ttu-id="147fa-128">**defaultocultarvalue**</span><span class="sxs-lookup"><span data-stu-id="147fa-128">**defaultHidingValue**</span></span>
+    -   <span data-ttu-id="147fa-129">**rDnAttId**</span><span class="sxs-lookup"><span data-stu-id="147fa-129">**rDnAttId**</span></span>
+    -   <span data-ttu-id="147fa-130">**defaultSecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="147fa-130">**defaultSecurityDescriptor**</span></span>
+    -   <span data-ttu-id="147fa-131">**Descrição** (opcional)</span><span class="sxs-lookup"><span data-stu-id="147fa-131">**description** (optional)</span></span>
+
+    <span data-ttu-id="147fa-132">Para obter mais informações e descrições desses atributos, consulte [características das classes de objeto](characteristics-of-object-classes.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-132">For more information, and descriptions of these attributes, see [Characteristics of Object Classes](characteristics-of-object-classes.md).</span></span>
+
+    <span data-ttu-id="147fa-133">Lembre-se de que as classes especificadas em **listas SubClassOf**, **possSuperior**, **systemPossSuperiors**, **auxiliaryClass** e **systemAuxiliaryClass** devem existir quando a nova classe for gravada no diretório; caso contrário, o objeto **classSchema** não será adicionado ao diretório.</span><span class="sxs-lookup"><span data-stu-id="147fa-133">Be aware that the classes specified in **subClassOf**, **possSuperiors**, **systemPossSuperiors**, **auxiliaryClass**, and **systemAuxiliaryClass**, must exist when the new class is written to the directory; otherwise, the **classSchema** object will fail to be added to the directory.</span></span> <span data-ttu-id="147fa-134">Da mesma forma, os atributos especificados em **mustContain**, **systemMustContain**, **mayContain** e **systemMayContain** devem existir ou a operação de criação de classe falhará.</span><span class="sxs-lookup"><span data-stu-id="147fa-134">Similarly, the attributes specified in **mustContain**, **systemMustContain**, **mayContain**, and **systemMayContain**, must exist or the class creation operation will fail.</span></span>
+
+6.  <span data-ttu-id="147fa-135">Grave o novo objeto **classSchema** no diretório.</span><span class="sxs-lookup"><span data-stu-id="147fa-135">Write the new **classSchema** object to the directory.</span></span>
+
+<span data-ttu-id="147fa-136">**Para adicionar um atributo à propriedade mayContain**</span><span class="sxs-lookup"><span data-stu-id="147fa-136">**To add an attribute to the mayContain property**</span></span>
+
+1.  <span data-ttu-id="147fa-137">Obtenha o objeto **classSchema** para a classe a ser modificada.</span><span class="sxs-lookup"><span data-stu-id="147fa-137">Obtain the **classSchema** object for the class to modify.</span></span>
+2.  <span data-ttu-id="147fa-138">Adicione o novo atributo à propriedade de valores múltiplos **mayContain** .</span><span class="sxs-lookup"><span data-stu-id="147fa-138">Add the new attribute to the **mayContain** multi-valued property.</span></span>
+3.  <span data-ttu-id="147fa-139">Grave o objeto **classSchema** alterado de volta no diretório.</span><span class="sxs-lookup"><span data-stu-id="147fa-139">Write the changed **classSchema** object back to the directory.</span></span>
+
+<span data-ttu-id="147fa-140">Novos atributos podem ser criados ao mesmo tempo que novas classes; a ordem de criação dos novos atributos e classes é importante.</span><span class="sxs-lookup"><span data-stu-id="147fa-140">New attributes can be created at the same time as new classes; the order of creating the new attributes and classes is important.</span></span> <span data-ttu-id="147fa-141">Para obter mais informações, consulte [o que a instalação deve fazer](what-the-installation-must-do.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-141">For more information, see [What the Installation Must Do](what-the-installation-must-do.md).</span></span>
+
+<span data-ttu-id="147fa-142">**Para adicionar novos atributos e novas classes ao mesmo tempo**</span><span class="sxs-lookup"><span data-stu-id="147fa-142">**To add new attributes and new classes at the same time**</span></span>
+
+1.  <span data-ttu-id="147fa-143">Defina todos os novos atributos primeiro.</span><span class="sxs-lookup"><span data-stu-id="147fa-143">Define all of the new attributes first.</span></span> <span data-ttu-id="147fa-144">Para obter mais informações, consulte [definindo um novo atributo](defining-a-new-attribute.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-144">For more information, see [Defining a New Attribute](defining-a-new-attribute.md).</span></span>
+2.  <span data-ttu-id="147fa-145">Atualize o cache de esquema antes de definir novas classes.</span><span class="sxs-lookup"><span data-stu-id="147fa-145">Update the Schema Cache before defining any new classes.</span></span> <span data-ttu-id="147fa-146">Para obter mais informações, consulte [atualizando o cache de esquema](updating-the-schema-cache.md).</span><span class="sxs-lookup"><span data-stu-id="147fa-146">For more information, see [Updating the Schema Cache](updating-the-schema-cache.md).</span></span>
+3.  <span data-ttu-id="147fa-147">Crie as novas classes.</span><span class="sxs-lookup"><span data-stu-id="147fa-147">Create the new classes.</span></span>
+4.  <span data-ttu-id="147fa-148">Adicione os atributos desejados às novas classes.</span><span class="sxs-lookup"><span data-stu-id="147fa-148">Add the desired attributes to the new classes.</span></span>
+5.  <span data-ttu-id="147fa-149">Atualize o cache de esquema novamente.</span><span class="sxs-lookup"><span data-stu-id="147fa-149">Update the Schema Cache again.</span></span>
+
+ 
+
+ 
+
+
+
+
