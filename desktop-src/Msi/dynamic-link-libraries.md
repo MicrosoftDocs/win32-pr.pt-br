@@ -1,0 +1,56 @@
+---
+description: Uma ação personalizada pode chamar uma função definida em uma DLL (biblioteca de vínculo dinâmico) escrita em C ou C++.
+ms.assetid: 605c7b97-70bd-467a-9438-47b05d8b6b5d
+title: Bibliotecas de Dynamic-Link (Windows Installer)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a5f9ff0113d97d219220a4f42030c1563f16ce7b
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104011151"
+---
+# <a name="dynamic-link-libraries-windows-installer"></a>Bibliotecas de Dynamic-Link (Windows Installer)
+
+Uma ação personalizada pode chamar uma função definida em uma DLL (biblioteca de vínculo dinâmico) escrita em C ou C++. A DLL pode existir como um arquivo instalado durante a instalação atual ou como um fluxo binário temporário proveniente da [tabela binária](binary-table.md) do banco de dados de instalação.
+
+Observe que todas as funções chamadas, incluindo ações personalizadas em DLLs, devem especificar a \_ \_ Convenção de chamada stdcall. Por exemplo, para chamar CustomAction, use o seguinte.
+
+
+```C++
+#include <windows.h>
+#include <msi.h>
+#include <Msiquery.h>
+#pragma comment(lib, "msi.lib")
+
+UINT __stdcall CustomAction(MSIHANDLE hInstall)
+```
+
+
+
+Para obter mais informações, consulte [acessando a sessão do instalador atual de dentro de uma ação personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md)
+
+Os seguintes tipos de ações personalizadas chamam uma biblioteca de vínculo dinâmico.
+
+
+
+| Tipo de ação personalizada                                 | Descrição                               |
+|----------------------------------------------------|-------------------------------------------|
+| [Tipo de ação personalizada 1](custom-action-type-1.md)   | Arquivo DLL armazenado em um fluxo de tabela binária. |
+| [Tipo de ação personalizada 17](custom-action-type-17.md) | Arquivo DLL instalado com um produto.        |
+
+
+
+ 
+
+> [!Note]  
+> Para usar COM, você precisa chamar [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) na ação personalizada. Não encerre se você achar que o thread já foi inicializado. Por exemplo, o thread é inicializado em uma instalação por máquina, mas não em uma instalação por usuário.
+
+ 
+
+Confira a [lista resumida de todos os tipos de ação personalizada](summary-list-of-all-custom-action-types.md) para obter um resumo de todos os tipos de ações personalizadas e como eles são codificados na [tabela CustomAction](customaction-table.md).
+
+ 
+
+ 
