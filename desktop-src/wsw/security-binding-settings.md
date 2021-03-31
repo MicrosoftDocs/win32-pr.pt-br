@@ -1,0 +1,61 @@
+---
+title: Configurações de associação de segurança
+description: As configurações de associação de segurança controlam a maneira como um token de segurança é obtido ou usado.
+ms.assetid: 4bc03cb4-1ac2-4ad1-a45d-eae8f50f5355
+keywords:
+- Serviços Web de configurações de associação de segurança para Windows
+- WWSAPI
+- WWS
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1c5a3d27627c3360560a38ef9cb85e3fb5ece434
+ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "103642981"
+---
+# <a name="security-binding-settings"></a><span data-ttu-id="8b97f-106">Configurações de associação de segurança</span><span class="sxs-lookup"><span data-stu-id="8b97f-106">Security Binding Settings</span></span>
+
+<span data-ttu-id="8b97f-107">As configurações de associação de segurança controlam a maneira como um token de segurança é obtido ou usado.</span><span class="sxs-lookup"><span data-stu-id="8b97f-107">Security binding settings control the way a security token is obtained or used.</span></span> <span data-ttu-id="8b97f-108">Elas são representadas como uma coleção de pares propriedade-valor, com as chaves de propriedade definidas pela [**Propriedade Enumeração WS \_ Security \_ Binding \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_binding_property).</span><span class="sxs-lookup"><span data-stu-id="8b97f-108">They are represented as a collection of property-value pairs, with the property keys defined by the enumeration [**WS\_SECURITY\_BINDING\_PROPERTY**](/windows/desktop/api/WebServices/ns-webservices-ws_security_binding_property).</span></span> <span data-ttu-id="8b97f-109">Cada propriedade na coleção tem um valor padrão razoável.</span><span class="sxs-lookup"><span data-stu-id="8b97f-109">Each property in the collection has a reasonable default value.</span></span> <span data-ttu-id="8b97f-110">Como resultado, é possível definir e usar uma descrição de segurança sem especificar nenhuma das configurações de associação de segurança.</span><span class="sxs-lookup"><span data-stu-id="8b97f-110">As a result, it is possible to define and use a security description without specifying any of the security binding settings.</span></span>
+
+
+<span data-ttu-id="8b97f-111">Para obter informações sobre configurações de segurança de todo o canal, com propriedades cujas chaves são definidas pela enumeração de ID de propriedade de segurança do WS, consulte [configurações de canal de segurança](security-channel-settings.md). [**\_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)</span><span class="sxs-lookup"><span data-stu-id="8b97f-111">For information on channel-wide security settings, with properties whose keys are defined by the [**WS\_SECURITY\_PROPERTY\_ID**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id) enumeration, see[Security Channel Settings](security-channel-settings.md).</span></span>
+
+<span data-ttu-id="8b97f-112">Os seguintes elementos de API são usados com as configurações de associação de segurança.</span><span class="sxs-lookup"><span data-stu-id="8b97f-112">The following API elements are used with security binding settings.</span></span>
+
+| <span data-ttu-id="8b97f-113">Enumeração</span><span class="sxs-lookup"><span data-stu-id="8b97f-113">Enumeration</span></span>                                                                          | <span data-ttu-id="8b97f-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b97f-114">Description</span></span>                                                                                                                                                       |
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="8b97f-115">**\_ \_ falha no WS CERT**</span><span class="sxs-lookup"><span data-stu-id="8b97f-115">**WS\_CERT\_FAILURE**</span></span>](/windows/win32/api/webservices/ne-webservices-ws_value_type)                                         | <span data-ttu-id="8b97f-116">Define falhas relacionadas à validação de certificado.</span><span class="sxs-lookup"><span data-stu-id="8b97f-116">Defines failures related to certificate validation.</span></span>                                                                                                               |
+| <span data-ttu-id="8b97f-117">[**\_esquema de \_ autenticação de cabeçalho http \_ do WS \_**](https://technet.microsoft.com/windows/dd401907(v=vs.60))</span><span class="sxs-lookup"><span data-stu-id="8b97f-117">[**WS\_HTTP\_HEADER\_AUTH\_SCHEME**](https://technet.microsoft.com/windows/dd401907(v=vs.60))</span></span>                 | <span data-ttu-id="8b97f-118">Define as opções para executar a autenticação de cliente usando cabeçalhos de autenticação HTTP.</span><span class="sxs-lookup"><span data-stu-id="8b97f-118">Defines the options for performing client authentication using HTTP authentication headers.</span></span>                                                                       |
+| [<span data-ttu-id="8b97f-119">**\_destino de \_ autenticação de cabeçalho http \_ WS \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-119">**WS\_HTTP\_HEADER\_AUTH\_TARGET**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_http_header_auth_target)                 | <span data-ttu-id="8b97f-120">Define o destino para a associação de segurança de autenticação de cabeçalho HTTP.</span><span class="sxs-lookup"><span data-stu-id="8b97f-120">Defines the target for the HTTP header authentication security binding.</span></span>                                                                                           |
+| [<span data-ttu-id="8b97f-121">**\_ação de \_ token de segurança de solicitação WS \_ \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-121">**WS\_REQUEST\_SECURITY\_TOKEN\_ACTION**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_request_security_token_action)     | <span data-ttu-id="8b97f-122">Define qual conjunto de ações usar ao negociar tokens de segurança usando WS-Trust.</span><span class="sxs-lookup"><span data-stu-id="8b97f-122">Defines which set of actions to use when negotiating security tokens using WS-Trust.</span></span>                                                                              |
+| [<span data-ttu-id="8b97f-123">**\_nome do \_ conjunto de algoritmos de segurança do \_ WS \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-123">**WS\_SECURITY\_ALGORITHM\_SUITE\_NAME**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_security_algorithm_suite_name)     | <span data-ttu-id="8b97f-124">Um conjunto de algoritmos de segurança usado para tarefas como assinatura e encryting.</span><span class="sxs-lookup"><span data-stu-id="8b97f-124">A suite of security algorithms used for tasks such as signing and encryting.</span></span>                                                                                      |
+| [<span data-ttu-id="8b97f-125">**\_ID da \_ propriedade de associação de segurança WS \_ \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-125">**WS\_SECURITY\_BINDING\_PROPERTY\_ID**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id)       | <span data-ttu-id="8b97f-126">Identifica as propriedades usadas para especificar as configurações de associação de segurança.</span><span class="sxs-lookup"><span data-stu-id="8b97f-126">Identifies the properties used to specify security binding settings.</span></span>                                                                                              |
+| [<span data-ttu-id="8b97f-127">**\_modo de \_ entropia de chave de segurança WS \_ \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-127">**WS\_SECURITY\_KEY\_ENTROPY\_MODE**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_entropy_mode)             | <span data-ttu-id="8b97f-128">Define como a aleatoriedade deve ser contribuída para a chave emitida durante uma negociação de token de segurança feita com a mensagem e a segurança de modo misto.</span><span class="sxs-lookup"><span data-stu-id="8b97f-128">Defines how randomness should be contributed to the issued key during a security token negotiation done with message and mixed-mode security.</span></span>                     |
+| [<span data-ttu-id="8b97f-129">**\_tipo de \_ chave de segurança do WS \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-129">**WS\_SECURITY\_KEY\_TYPE**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_type)                              | <span data-ttu-id="8b97f-130">O tipo de chave de um token de segurança.</span><span class="sxs-lookup"><span data-stu-id="8b97f-130">The key type of a security token.</span></span>                                                                                                                                 |
+| [<span data-ttu-id="8b97f-131">**\_modo de \_ referência de token de segurança do WS \_ \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-131">**WS\_SECURITY\_TOKEN\_REFERENCE\_MODE**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_security_token_reference_mode)     | <span data-ttu-id="8b97f-132">o mecanismo a ser usado para se referir a um token de segurança de assinaturas, itens criptografados e tokens derivados no contexto das associações de segurança de modo misto e de mensagem.</span><span class="sxs-lookup"><span data-stu-id="8b97f-132">the mechanism to use to refer to a security token from signatures, encrypted items and derived tokens in the context of message and mixed-mode security bindings.</span></span> |
+| [<span data-ttu-id="8b97f-133">**\_versão de confiança do WS \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-133">**WS\_TRUST\_VERSION**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_trust_version)                                       | <span data-ttu-id="8b97f-134">Define a versão de especificação de WS-Trust a ser usada com segurança de mensagem e segurança de modo misto.</span><span class="sxs-lookup"><span data-stu-id="8b97f-134">Defines the WS-Trust specification version to be used with message security and mixed-mode security.</span></span>                                                              |
+| [<span data-ttu-id="8b97f-135">**\_pacote de \_ \_ autenticação integrada do Windows \_ WS**</span><span class="sxs-lookup"><span data-stu-id="8b97f-135">**WS\_WINDOWS\_INTEGRATED\_AUTH\_PACKAGE**</span></span>](/windows/desktop/api/WebServices/ne-webservices-ws_windows_integrated_auth_package) | <span data-ttu-id="8b97f-136">Define o pacote SSP específico a ser usado para a autenticação integrada do Windows.</span><span class="sxs-lookup"><span data-stu-id="8b97f-136">Defines the specific SSP package to be used for Windows Integrated Authentication.</span></span>                                                                                |
+
+
+
+ 
+
+
+
+| <span data-ttu-id="8b97f-137">Estrutura</span><span class="sxs-lookup"><span data-stu-id="8b97f-137">Structure</span></span>                                                               | <span data-ttu-id="8b97f-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b97f-138">Description</span></span>                                    |
+|-------------------------------------------------------------------------|------------------------------------------------|
+| [<span data-ttu-id="8b97f-139">**\_propriedade de \_ Associação de segurança WS \_**</span><span class="sxs-lookup"><span data-stu-id="8b97f-139">**WS\_SECURITY\_BINDING\_PROPERTY**</span></span>](/windows/desktop/api/WebServices/ns-webservices-ws_security_binding_property) | <span data-ttu-id="8b97f-140">Especifica uma configuração de associação de segurança específica.</span><span class="sxs-lookup"><span data-stu-id="8b97f-140">Specifies a security binding specific setting.</span></span> |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
