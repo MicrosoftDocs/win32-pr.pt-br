@@ -102,7 +102,7 @@ Uma instalação limpa e reversível permite que os usuários gerenciem com êxi
 
 -   DisplayName
 -   InstallLocation
--   Publicador
+-   Publisher
 -   UninstallString
 -   Propriedade VersionMajor ou MajorVersion
 -   VersionMinor ou MinorVersion
@@ -204,7 +204,7 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 |              |         |                                        |                                                                              |
 |--------------|---------|----------------------------------------|------------------------------------------------------------------------------|
 | Data         | Versão | Descrição da revisão                   | Link para o documento                                                             |
-| 20 de dezembro de 2011 | 1.0     | Rascunho inicial do documento para visualização. |                                                                              |
+| 20 de dezembro de 2011 | 1,0     | Rascunho inicial do documento para visualização. |                                                                              |
 | 26 de janeiro de 2012 | 1,1     | Atualize para a seção \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md) |
 | 31 de maio de 2012 | 1.2     | Resultados de teste de resumo adicionados             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md) |
 | 29 de junho de 2012 | 3.0     | Documento final do Windows 8               | [3.0](archive--certification-requirements-for-windows-desktop-apps-v3-0.md) |
@@ -238,7 +238,7 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 
  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 -   [Programa de certificação de hardware do Windows](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
 -   [Requisitos de certificação de aplicativos da Windows Store](/legal/windows/agreements/store-policies)

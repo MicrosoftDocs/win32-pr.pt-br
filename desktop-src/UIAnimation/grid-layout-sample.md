@@ -21,7 +21,7 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Localização                               | Caminho/URL                                                                                          |
+| Local                               | Caminho/URL                                                                                          |
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
 | Windows Software Development Kit (SDK) | [Kit de desenvolvimento de software do Microsoft Windows 7,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx) |
 | Galeria de código                           | [Código de exemplo do Gerenciador de animação do Windows](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionWindowsAnimationManager)         |

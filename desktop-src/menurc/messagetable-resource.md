@@ -57,7 +57,7 @@ O exemplo a seguir define um recurso **messagetable** :
 1  MESSAGETABLE MSG00409.bin
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

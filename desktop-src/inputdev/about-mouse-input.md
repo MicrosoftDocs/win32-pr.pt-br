@@ -396,6 +396,6 @@ Ao processar o [**WM \_ MOUSEACTIVATE**](wm-mouseactivate.md), uma janela pode c
 | **\_ACTIVATEANDEAT ma**   | Ativa a janela e descarta a mensagem do mouse.                 |
 | **\_NOACTIVATEANDEAT ma** | Não ativa a janela, mas descarta a mensagem do mouse.         |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Aproveitando o movimento do High-Definition mouse](../dxtecharts/taking-advantage-of-high-dpi-mouse-movement.md)

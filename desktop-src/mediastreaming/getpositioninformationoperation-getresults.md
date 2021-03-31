@@ -54,7 +54,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-| Código de retorno                                                                          | Description                      |
+| Código de retorno                                                                          | Descrição                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 
@@ -66,7 +66,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 O método **GetResults** é normalmente chamado a partir do manipulador de eventos que foi registrado pela configuração da propriedade [**Completed**](getpositioninformationoperation-completed.md) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

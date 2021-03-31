@@ -36,7 +36,7 @@ Lista de certificados que foram revogados desde a última atualização Delta.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 2.5.4.53                                              |
 | System-ID-GUID    | 167757b5-47f3-11d1-a9c3-0000f80367c1                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

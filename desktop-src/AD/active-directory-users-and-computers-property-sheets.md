@@ -45,7 +45,7 @@ Esta documentação pressupõe que o leitor esteja familiarizado com a operaçã
 
         
 
-        | Cadeia de prefixo de atributo | Description                                              |
+        | Cadeia de prefixo de atributo | Descrição                                              |
         |-------------------------|----------------------------------------------------------------------------------------------------------------------|
         | ADM<br/>      | As páginas de propriedades são carregadas do atributo [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) .<br/> |
         | Shell<br/>      | As páginas de propriedades são carregadas do atributo [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) .<br/> |

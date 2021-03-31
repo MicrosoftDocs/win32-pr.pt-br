@@ -42,7 +42,7 @@ A tabela a seguir lista os rótulos de interface do usuário da folha de proprie
 
 | Rótulo da interface do usuário | Active Directory Domain Services atributo |
 |----------|--------------------------------------------|
-| Localização | local                                   |
+| Local | local                                   |
 
 
 

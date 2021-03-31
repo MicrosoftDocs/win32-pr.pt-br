@@ -35,7 +35,7 @@ g \_ wszWMDRM \_ DRM \_ DRMHeader
 
 Essa cadeia de caracteres pode ser usada para construir Propriedades DRMHeader personalizadas. Ele não é um atributo em si mesmo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

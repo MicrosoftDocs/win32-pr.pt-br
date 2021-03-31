@@ -36,7 +36,7 @@ TTL associado à raiz ou ao link do DFS. Para uso no momento de referência do D
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2035              |
 | System-ID-GUID    | ea944d31-864a-4349-ada5-062e2c614f5e |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

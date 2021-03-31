@@ -28,7 +28,7 @@ Obtém ou define um manipulador de eventos que é invocado quando a operação a
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,7 +47,7 @@ HRESULT get_Completed(
 
 O manipulador de eventos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

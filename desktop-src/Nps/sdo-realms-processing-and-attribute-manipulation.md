@@ -29,7 +29,7 @@ A tabela a seguir mostra um exemplo de um conjunto de atributos de manipulação
 
 
 
-| Nome                 | Type         | Valor da cadeia de caracteres     |
+| Nome                 | Tipo         | Valor da cadeia de caracteres     |
 |----------------------|--------------|------------------|
 | msManipulationRule   | **VT \_ BSTR** | "@company.com"   |
 | msManipulationRule   | **VT \_ BSTR** | "@microsoft.com" |

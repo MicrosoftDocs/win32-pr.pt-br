@@ -62,7 +62,7 @@ Onde a direção do param \_<1> campo para cada uma dessas descrições deve ser
 
 | Hex | Sinalizador                          | Significado                                                     |
 |-----|-------------------------------|-------------------------------------------------------------|
-| 4D  | FC \_ no \_ param                 | Um parâmetro in.                                            |
+| 4d  | FC \_ no \_ param                 | Um parâmetro in.                                            |
 | 50  | \_parâmetro FC em \_ saída \_            | Um parâmetro in/out.                                        |
 | 51  | \_parâmetro de saída do FC \_                | Um parâmetro out.                                           |
 | 52  | \_parâmetro de retorno de FC \_             | Um valor de retorno de procedimento.                                   |

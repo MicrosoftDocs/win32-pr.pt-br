@@ -29,7 +29,7 @@ As macros MCI são ferramentas que você pode usar para criar e desmontar valore
 
 
 
-| Macro                                        | Description                                        |
+| Macro                                        | Descrição                                        |
 |----------------------------------------------|----------------------------------------------------|
 | [**\_hora de HMS MCI \_**](mci-hms-hour.md)       | Recupera o componente de horas de um valor de HMS.   |
 | [**\_HMS \_ minutos MCI**](mci-hms-minute.md)   | Recupera o componente de minutos de um valor HMS. |

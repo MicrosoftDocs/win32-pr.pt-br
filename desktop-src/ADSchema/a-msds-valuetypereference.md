@@ -36,7 +36,7 @@ Esse atributo é usado para vincular um objeto de propriedade de recurso a seu t
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2187                 |
 | System-ID-GUID    | 78fc5d84-c1dc-3148-8984-58f792d41d3e    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

@@ -36,7 +36,7 @@ Referência ao membro primário de um conjunto de réplicas.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.878                  |
 | System-ID-GUID    | 2a132581-9373-11d1-aebc-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

@@ -94,7 +94,7 @@ FD
 
 Graus fracionários.
 
-nenhum
+none
 
 Degrees
 

@@ -48,7 +48,7 @@ O mesmo arquivo dlldata deve ser especificado ao invocar MIDL em todos os arquiv
 
 **MIDL/dlldata nomedearquivo Data. c**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

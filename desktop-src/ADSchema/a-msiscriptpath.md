@@ -36,7 +36,7 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.15                       |
 | System-ID-GUID    | bf967937-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

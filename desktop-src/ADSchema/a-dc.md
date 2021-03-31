@@ -36,7 +36,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Frequência de atualização  | Quando o domínio é criado.                 |
 | Attribute-Id      | 0.9.2342.19200300.100.1.25                  |
 | System-ID-GUID    | 19195a55-6da0-11d0-afd3-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -67,7 +67,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -88,7 +88,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -109,7 +109,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                   |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000012                            |
-| Classes usadas em        | [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -130,7 +130,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -151,7 +151,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -172,7 +172,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 
@@ -193,7 +193,7 @@ O atributo de nomenclatura para objetos de domínio e DNS. Geralmente exibido co
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domínio**](c-domain.md)<br/> |
+| Classes usadas em        | [**Nó DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Controlador**](c-domain.md)<br/> |
 
 
 

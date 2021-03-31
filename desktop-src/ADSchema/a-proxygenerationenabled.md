@@ -36,7 +36,7 @@ ms.locfileid: "104086661"
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.523               |
 | System-ID-GUID    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

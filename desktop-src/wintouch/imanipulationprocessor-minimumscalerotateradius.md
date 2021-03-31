@@ -31,7 +31,7 @@ Especifica a grande quantidade de contatos de distância em um gesto de escala o
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

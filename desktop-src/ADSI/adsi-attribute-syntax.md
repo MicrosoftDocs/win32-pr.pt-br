@@ -149,7 +149,7 @@ Syntax Type: ADSTYPE_BOOLEAN
 
 Active Directory aceita apenas um valor de 32 bits assinado para essa sintaxe. Ele manipula zero como **falso** e todos os valores diferentes de zero como **verdadeiro**.
 
-## <a name="integer"></a>Inteiro
+## <a name="integer"></a>Integer
 
 
 ```VB

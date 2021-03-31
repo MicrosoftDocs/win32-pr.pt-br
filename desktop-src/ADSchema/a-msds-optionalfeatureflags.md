@@ -36,7 +36,7 @@ Um valor inteiro que contém sinalizadores que definem o comportamento de um rec
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2063              |
 | System-ID-GUID    | 8a0560c1-97b9-4811-9db7-dc061598965b |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

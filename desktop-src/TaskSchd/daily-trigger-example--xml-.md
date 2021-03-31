@@ -94,7 +94,7 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
     Define o agendamento diário. Nesse caso, o intervalo é definido para executar a tarefa todos os dias.
 
 -   [**Principal**](taskschedulerschema-principal-principaltype-element.md): define o contexto de segurança em que uma tarefa é executada.
--   [**Settings**](taskschedulerschema-settings-tasktype-element.md)
+-   [**Configurações**](taskschedulerschema-settings-tasktype-element.md)
 
     Define as configurações de tarefa que Agendador de Tarefas usa para executar a tarefa.
 

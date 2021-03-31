@@ -43,7 +43,7 @@ HRESULT get_IpAddresses(
 
 Uma coleção enumerável de ponteiros para endereços IP.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
