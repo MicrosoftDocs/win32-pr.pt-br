@@ -13,30 +13,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103644154"
 ---
-# <a name="windows-touch-input-windows-touch-programming"></a><span data-ttu-id="bab1d-104">Entrada por toque do Windows (programação de toque do Windows)</span><span class="sxs-lookup"><span data-stu-id="bab1d-104">Windows Touch Input (Windows Touch Programming)</span></span>
+# <a name="windows-touch-input-windows-touch-programming"></a><span data-ttu-id="bd494-104">Entrada por toque do Windows (programação de toque do Windows)</span><span class="sxs-lookup"><span data-stu-id="bd494-104">Windows Touch Input (Windows Touch Programming)</span></span>
 
-<span data-ttu-id="bab1d-105">Esta seção contém referências de programação para a entrada do Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="bab1d-105">This section contains programming references for Windows Touch input.</span></span>
+<span data-ttu-id="bd494-105">Esta seção contém referências de programação para a entrada do Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="bd494-105">This section contains programming references for Windows Touch input.</span></span>
 
-<span data-ttu-id="bab1d-106">Essa referência de programação para a API de toque do Windows contém as seções a seguir.</span><span class="sxs-lookup"><span data-stu-id="bab1d-106">This programming reference for the Windows Touch API contains the following sections.</span></span>
+<span data-ttu-id="bd494-106">Essa referência de programação para a API de toque do Windows contém as seções a seguir.</span><span class="sxs-lookup"><span data-stu-id="bd494-106">This programming reference for the Windows Touch API contains the following sections.</span></span>
 
 
 
-| <span data-ttu-id="bab1d-107">Seção</span><span class="sxs-lookup"><span data-stu-id="bab1d-107">Section</span></span>                      | <span data-ttu-id="bab1d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="bab1d-108">Description</span></span>                                  |
+| <span data-ttu-id="bd494-107">Seção</span><span class="sxs-lookup"><span data-stu-id="bd494-107">Section</span></span>                      | <span data-ttu-id="bd494-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="bd494-108">Description</span></span>                                  |
 |------------------------------|----------------------------------------------|
-| [<span data-ttu-id="bab1d-109">Funções</span><span class="sxs-lookup"><span data-stu-id="bab1d-109">Functions</span></span>](mtfunctions.md) | <span data-ttu-id="bab1d-110">Contém funções para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bab1d-110">Contains functions for Windows Touch input.</span></span>  |
-| [<span data-ttu-id="bab1d-111">Macros</span><span class="sxs-lookup"><span data-stu-id="bab1d-111">Macros</span></span>](touch-macros.md)   | <span data-ttu-id="bab1d-112">Contém macros para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bab1d-112">Contains macros for Windows Touch input.</span></span>     |
-| [<span data-ttu-id="bab1d-113">Mensagens</span><span class="sxs-lookup"><span data-stu-id="bab1d-113">Messages</span></span>](messages.md)     | <span data-ttu-id="bab1d-114">Contém mensagens para entrada do Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="bab1d-114">Contains messages for Windows Touch input.</span></span>   |
-| [<span data-ttu-id="bab1d-115">Estruturas</span><span class="sxs-lookup"><span data-stu-id="bab1d-115">Structures</span></span>](structures.md) | <span data-ttu-id="bab1d-116">Contém estruturas para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bab1d-116">Contains structures for Windows Touch input.</span></span> |
+| [<span data-ttu-id="bd494-109">Funções</span><span class="sxs-lookup"><span data-stu-id="bd494-109">Functions</span></span>](mtfunctions.md) | <span data-ttu-id="bd494-110">Contém funções para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bd494-110">Contains functions for Windows Touch input.</span></span>  |
+| [<span data-ttu-id="bd494-111">Macros</span><span class="sxs-lookup"><span data-stu-id="bd494-111">Macros</span></span>](touch-macros.md)   | <span data-ttu-id="bd494-112">Contém macros para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bd494-112">Contains macros for Windows Touch input.</span></span>     |
+| [<span data-ttu-id="bd494-113">Mensagens</span><span class="sxs-lookup"><span data-stu-id="bd494-113">Messages</span></span>](messages.md)     | <span data-ttu-id="bd494-114">Contém mensagens para entrada do Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="bd494-114">Contains messages for Windows Touch input.</span></span>   |
+| [<span data-ttu-id="bd494-115">Estruturas</span><span class="sxs-lookup"><span data-stu-id="bd494-115">Structures</span></span>](structures.md) | <span data-ttu-id="bd494-116">Contém estruturas para entrada de toque do Windows.</span><span class="sxs-lookup"><span data-stu-id="bd494-116">Contains structures for Windows Touch input.</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="bab1d-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="bab1d-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bd494-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="bd494-117">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="bab1d-118">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="bab1d-118">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
+[<span data-ttu-id="bd494-118">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="bd494-118">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
 </dt> </dl>
 
  

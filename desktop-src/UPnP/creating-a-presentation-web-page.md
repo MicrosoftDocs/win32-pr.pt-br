@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635553"
 ---
-# <a name="creating-a-presentation-web-page"></a><span data-ttu-id="2cdbb-104">Criando uma página da Web de apresentação</span><span class="sxs-lookup"><span data-stu-id="2cdbb-104">Creating a Presentation Web Page</span></span>
+# <a name="creating-a-presentation-web-page"></a><span data-ttu-id="010ba-104">Criando uma página da Web de apresentação</span><span class="sxs-lookup"><span data-stu-id="010ba-104">Creating a Presentation Web Page</span></span>
 
-<span data-ttu-id="2cdbb-105">O código de exemplo nesta seção usa a API do ponto de controle com tecnologia UPnP para criar uma página da Web simples para controlar um dispositivo de player de mídia fictício baseado em UPnP.</span><span class="sxs-lookup"><span data-stu-id="2cdbb-105">The sample code in this section uses the Control Point API with UPnP technology to create a simple Web page to control a fictitious UPnP-based media player devices.</span></span> <span data-ttu-id="2cdbb-106">A página da Web é mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="2cdbb-106">The Web page is shown in the following illustration.</span></span>
+<span data-ttu-id="010ba-105">O código de exemplo nesta seção usa a API do ponto de controle com tecnologia UPnP para criar uma página da Web simples para controlar um dispositivo de player de mídia fictício baseado em UPnP.</span><span class="sxs-lookup"><span data-stu-id="010ba-105">The sample code in this section uses the Control Point API with UPnP technology to create a simple Web page to control a fictitious UPnP-based media player devices.</span></span> <span data-ttu-id="010ba-106">A página da Web é mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="010ba-106">The Web page is shown in the following illustration.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="2cdbb-107">Este código de exemplo só funciona para navegadores em execução no Windows; Ele não funciona em navegadores em execução em outros sistemas operacionais.</span><span class="sxs-lookup"><span data-stu-id="2cdbb-107">This sample code only works for browsers running under Windows; it does not work in browsers running under other operating systems.</span></span>
+> <span data-ttu-id="010ba-107">Este código de exemplo só funciona para navegadores em execução no Windows; Ele não funciona em navegadores em execução em outros sistemas operacionais.</span><span class="sxs-lookup"><span data-stu-id="010ba-107">This sample code only works for browsers running under Windows; it does not work in browsers running under other operating systems.</span></span>
 
  
 

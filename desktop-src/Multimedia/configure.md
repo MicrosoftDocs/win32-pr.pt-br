@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644234"
 ---
-# <a name="configure-command"></a><span data-ttu-id="9e910-105">Configurar comando</span><span class="sxs-lookup"><span data-stu-id="9e910-105">configure command</span></span>
+# <a name="configure-command"></a><span data-ttu-id="4b78a-105">Configurar comando</span><span class="sxs-lookup"><span data-stu-id="4b78a-105">configure command</span></span>
 
-<span data-ttu-id="9e910-106">O comando configurar exibe uma caixa de diálogo usada para configurar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9e910-106">The configure command displays a dialog box used to configure the device.</span></span> <span data-ttu-id="9e910-107">Dispositivos de vídeo digital reconhecem este comando.</span><span class="sxs-lookup"><span data-stu-id="9e910-107">Digital-video devices recognize this command.</span></span>
+<span data-ttu-id="4b78a-106">O comando configurar exibe uma caixa de diálogo usada para configurar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="4b78a-106">The configure command displays a dialog box used to configure the device.</span></span> <span data-ttu-id="4b78a-107">Dispositivos de vídeo digital reconhecem este comando.</span><span class="sxs-lookup"><span data-stu-id="4b78a-107">Digital-video devices recognize this command.</span></span>
 
-<span data-ttu-id="9e910-108">Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="9e910-108">To send this command, call the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function with the *lpszCommand* parameter set as follows.</span></span>
+<span data-ttu-id="4b78a-108">Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="4b78a-108">To send this command, call the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function with the *lpszCommand* parameter set as follows.</span></span>
 
 ``` syntax
 _stprintf_s(
@@ -34,47 +34,47 @@ _stprintf_s(
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9e910-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="9e910-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="4b78a-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4b78a-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9e910-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span><span class="sxs-lookup"><span data-stu-id="9e910-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span></span>
+<span data-ttu-id="4b78a-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span><span class="sxs-lookup"><span data-stu-id="4b78a-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="9e910-111">Identificador de um dispositivo MCI.</span><span class="sxs-lookup"><span data-stu-id="9e910-111">Identifier of an MCI device.</span></span> <span data-ttu-id="9e910-112">Esse identificador ou alias é atribuído quando o dispositivo é aberto.</span><span class="sxs-lookup"><span data-stu-id="9e910-112">This identifier or alias is assigned when the device is opened.</span></span>
+<span data-ttu-id="4b78a-111">Identificador de um dispositivo MCI.</span><span class="sxs-lookup"><span data-stu-id="4b78a-111">Identifier of an MCI device.</span></span> <span data-ttu-id="4b78a-112">Esse identificador ou alias é atribuído quando o dispositivo é aberto.</span><span class="sxs-lookup"><span data-stu-id="4b78a-112">This identifier or alias is assigned when the device is opened.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="9e910-113"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span><span class="sxs-lookup"><span data-stu-id="9e910-113"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span></span>
+<span data-ttu-id="4b78a-113"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span><span class="sxs-lookup"><span data-stu-id="4b78a-113"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="9e910-114">Pode ser "Wait", "Notify" ou "Test".</span><span class="sxs-lookup"><span data-stu-id="9e910-114">Can be "wait", "notify", or "test".</span></span> <span data-ttu-id="9e910-115">Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).</span><span class="sxs-lookup"><span data-stu-id="9e910-115">For more information about these flags, see [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).</span></span>
+<span data-ttu-id="4b78a-114">Pode ser "Wait", "Notify" ou "Test".</span><span class="sxs-lookup"><span data-stu-id="4b78a-114">Can be "wait", "notify", or "test".</span></span> <span data-ttu-id="4b78a-115">Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).</span><span class="sxs-lookup"><span data-stu-id="4b78a-115">For more information about these flags, see [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="9e910-116">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="9e910-116">Return Value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4b78a-116">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="4b78a-116">Return Value</span></span>
 
-<span data-ttu-id="9e910-117">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="9e910-117">Returns zero if successful or an error otherwise.</span></span>
+<span data-ttu-id="4b78a-117">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="4b78a-117">Returns zero if successful or an error otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="9e910-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9e910-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4b78a-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4b78a-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="9e910-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="9e910-119">Requirement</span></span> | <span data-ttu-id="9e910-120">Valor</span><span class="sxs-lookup"><span data-stu-id="9e910-120">Value</span></span> |
+| <span data-ttu-id="4b78a-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="4b78a-119">Requirement</span></span> | <span data-ttu-id="4b78a-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4b78a-120">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------|
-| <span data-ttu-id="9e910-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9e910-121">Minimum supported client</span></span><br/> | <span data-ttu-id="9e910-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="9e910-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/> |
-| <span data-ttu-id="9e910-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9e910-123">Minimum supported server</span></span><br/> | <span data-ttu-id="9e910-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="9e910-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="4b78a-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4b78a-121">Minimum supported client</span></span><br/> | <span data-ttu-id="4b78a-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4b78a-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="4b78a-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4b78a-123">Minimum supported server</span></span><br/> | <span data-ttu-id="4b78a-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4b78a-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>       |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="9e910-125">Consulte também</span><span class="sxs-lookup"><span data-stu-id="9e910-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b78a-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="4b78a-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9e910-126">MCI</span><span class="sxs-lookup"><span data-stu-id="9e910-126">MCI</span></span>](mci.md)
+[<span data-ttu-id="4b78a-126">MCI</span><span class="sxs-lookup"><span data-stu-id="4b78a-126">MCI</span></span>](mci.md)
 </dt> <dt>
 
-[<span data-ttu-id="9e910-127">Cadeias de caracteres de comando MCI</span><span class="sxs-lookup"><span data-stu-id="9e910-127">MCI Command Strings</span></span>](mci-command-strings.md)
+[<span data-ttu-id="4b78a-127">Cadeias de caracteres de comando MCI</span><span class="sxs-lookup"><span data-stu-id="4b78a-127">MCI Command Strings</span></span>](mci-command-strings.md)
 </dt> </dl>
 
  

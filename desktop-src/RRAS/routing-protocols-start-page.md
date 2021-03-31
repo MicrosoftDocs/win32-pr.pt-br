@@ -11,35 +11,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005421"
 ---
-# <a name="routing-protocols"></a><span data-ttu-id="93318-103">Protocolos de roteamento</span><span class="sxs-lookup"><span data-stu-id="93318-103">Routing Protocols</span></span>
+# <a name="routing-protocols"></a><span data-ttu-id="9d532-103">Protocolos de roteamento</span><span class="sxs-lookup"><span data-stu-id="9d532-103">Routing Protocols</span></span>
 
-## <a name="purpose"></a><span data-ttu-id="93318-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="93318-104">Purpose</span></span>
+## <a name="purpose"></a><span data-ttu-id="9d532-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="9d532-104">Purpose</span></span>
 
-<span data-ttu-id="93318-105">Os desenvolvedores podem usar as APIs do protocolo de roteamento para implementar protocolos de roteamento.</span><span class="sxs-lookup"><span data-stu-id="93318-105">Developers can use the Routing Protocol APIs to implement routing protocols.</span></span>
+<span data-ttu-id="9d532-105">Os desenvolvedores podem usar as APIs do protocolo de roteamento para implementar protocolos de roteamento.</span><span class="sxs-lookup"><span data-stu-id="9d532-105">Developers can use the Routing Protocol APIs to implement routing protocols.</span></span>
 
-## <a name="developer-audience"></a><span data-ttu-id="93318-106">Público de desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="93318-106">Developer audience</span></span>
+## <a name="developer-audience"></a><span data-ttu-id="9d532-106">Público de desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="9d532-106">Developer audience</span></span>
 
-<span data-ttu-id="93318-107">As APIs de roteamento são projetadas para uso por programadores C/C++.</span><span class="sxs-lookup"><span data-stu-id="93318-107">The Routing APIs are designed for use by C/C++ programmers.</span></span> <span data-ttu-id="93318-108">Os programadores também devem estar familiarizados com os conceitos de rede.</span><span class="sxs-lookup"><span data-stu-id="93318-108">Programmers should also be familiar with networking concepts.</span></span>
+<span data-ttu-id="9d532-107">As APIs de roteamento são projetadas para uso por programadores C/C++.</span><span class="sxs-lookup"><span data-stu-id="9d532-107">The Routing APIs are designed for use by C/C++ programmers.</span></span> <span data-ttu-id="9d532-108">Os programadores também devem estar familiarizados com os conceitos de rede.</span><span class="sxs-lookup"><span data-stu-id="9d532-108">Programmers should also be familiar with networking concepts.</span></span>
 
-## <a name="run-time-requirements"></a><span data-ttu-id="93318-109">Requisitos de tempo de execução</span><span class="sxs-lookup"><span data-stu-id="93318-109">Run-time requirements</span></span>
+## <a name="run-time-requirements"></a><span data-ttu-id="9d532-109">Requisitos de tempo de execução</span><span class="sxs-lookup"><span data-stu-id="9d532-109">Run-time requirements</span></span>
 
-<span data-ttu-id="93318-110">Os protocolos de roteamento são uma tecnologia baseada em servidor.</span><span class="sxs-lookup"><span data-stu-id="93318-110">Routing Protocols is a server-based technology.</span></span> <span data-ttu-id="93318-111">Toda a funcionalidade dos protocolos de roteamento é incorporada ao Windows Server 2008, ao Windows Server 2003 e ao Windows 2000 Server.</span><span class="sxs-lookup"><span data-stu-id="93318-111">All the functionality of Routing Protocols is incorporated into Windows Server 2008, Windows Server 2003 and Windows 2000 Server.</span></span> <span data-ttu-id="93318-112">Os aplicativos de roteamento não podem ser executados em sistemas operacionais cliente, como o Windows XP ou o Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="93318-112">Routing applications cannot run on client operating systems, such as Windows XP or Windows Vista.</span></span> <span data-ttu-id="93318-113">Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte as seções de requisitos na documentação do.</span><span class="sxs-lookup"><span data-stu-id="93318-113">For more specific information about which operating systems support a particular function, refer to the Requirements sections in the documentation.</span></span>
+<span data-ttu-id="9d532-110">Os protocolos de roteamento são uma tecnologia baseada em servidor.</span><span class="sxs-lookup"><span data-stu-id="9d532-110">Routing Protocols is a server-based technology.</span></span> <span data-ttu-id="9d532-111">Toda a funcionalidade dos protocolos de roteamento é incorporada ao Windows Server 2008, ao Windows Server 2003 e ao Windows 2000 Server.</span><span class="sxs-lookup"><span data-stu-id="9d532-111">All the functionality of Routing Protocols is incorporated into Windows Server 2008, Windows Server 2003 and Windows 2000 Server.</span></span> <span data-ttu-id="9d532-112">Os aplicativos de roteamento não podem ser executados em sistemas operacionais cliente, como o Windows XP ou o Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="9d532-112">Routing applications cannot run on client operating systems, such as Windows XP or Windows Vista.</span></span> <span data-ttu-id="9d532-113">Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte as seções de requisitos na documentação do.</span><span class="sxs-lookup"><span data-stu-id="9d532-113">For more specific information about which operating systems support a particular function, refer to the Requirements sections in the documentation.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="93318-114">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="93318-114">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9d532-114">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9d532-114">In this section</span></span>
 
--   [<span data-ttu-id="93318-115">Gerenciador de grupo multicast</span><span class="sxs-lookup"><span data-stu-id="93318-115">Multicast Group Manager</span></span>](about-multicast-group-manager.md)
--   [<span data-ttu-id="93318-116">Interface do protocolo de roteamento</span><span class="sxs-lookup"><span data-stu-id="93318-116">Routing Protocol Interface</span></span>](about-routing-protocol-interface.md)
--   [<span data-ttu-id="93318-117">Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="93318-117">Routing Table Manager Version 1</span></span>](about-routing-table-manager-version-1.md)
--   [<span data-ttu-id="93318-118">Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="93318-118">Routing Table Manager Version 2</span></span>](about-routing-table-manager-version-2.md)
+-   [<span data-ttu-id="9d532-115">Gerenciador de grupo multicast</span><span class="sxs-lookup"><span data-stu-id="9d532-115">Multicast Group Manager</span></span>](about-multicast-group-manager.md)
+-   [<span data-ttu-id="9d532-116">Interface do protocolo de roteamento</span><span class="sxs-lookup"><span data-stu-id="9d532-116">Routing Protocol Interface</span></span>](about-routing-protocol-interface.md)
+-   [<span data-ttu-id="9d532-117">Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="9d532-117">Routing Table Manager Version 1</span></span>](about-routing-table-manager-version-1.md)
+-   [<span data-ttu-id="9d532-118">Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="9d532-118">Routing Table Manager Version 2</span></span>](about-routing-table-manager-version-2.md)
 
-## <a name="related-topics"></a><span data-ttu-id="93318-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="93318-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9d532-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9d532-119">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="93318-120">Acesso remoto</span><span class="sxs-lookup"><span data-stu-id="93318-120">Remote Access</span></span>](remote-access-start-page.md)
+[<span data-ttu-id="9d532-120">Acesso remoto</span><span class="sxs-lookup"><span data-stu-id="9d532-120">Remote Access</span></span>](remote-access-start-page.md)
 </dt> <dt>
 
-[<span data-ttu-id="93318-121">Roteamento</span><span class="sxs-lookup"><span data-stu-id="93318-121">Routing</span></span>](routing-start-page.md)
+[<span data-ttu-id="9d532-121">Roteamento</span><span class="sxs-lookup"><span data-stu-id="9d532-121">Routing</span></span>](routing-start-page.md)
 </dt> </dl>
 
  

@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644308"
 ---
-# <a name="mpscan_type-enumeration"></a><span data-ttu-id="76eb6-105">\_Enumeração de tipo MPSCAN</span><span class="sxs-lookup"><span data-stu-id="76eb6-105">MPSCAN\_TYPE enumeration</span></span>
+# <a name="mpscan_type-enumeration"></a><span data-ttu-id="d1ea5-105">\_Enumeração de tipo MPSCAN</span><span class="sxs-lookup"><span data-stu-id="d1ea5-105">MPSCAN\_TYPE enumeration</span></span>
 
-<span data-ttu-id="76eb6-106">Tipo de verificação executada.</span><span class="sxs-lookup"><span data-stu-id="76eb6-106">Type of scan performed.</span></span>
+<span data-ttu-id="d1ea5-106">Tipo de verificação executada.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-106">Type of scan performed.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="76eb6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="76eb6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d1ea5-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="d1ea5-107">Syntax</span></span>
 
 
 ```C++
@@ -41,54 +41,54 @@ typedef enum tagMPSCAN_TYPE {
 
 
 
-## <a name="constants"></a><span data-ttu-id="76eb6-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="76eb6-108">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="d1ea5-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="d1ea5-108">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="76eb6-109"><span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**tipo de MPSCAN \_ \_ desconhecido**</span><span class="sxs-lookup"><span data-stu-id="76eb6-109"><span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**MPSCAN\_TYPE\_UNKNOWN**</span></span>
+<span data-ttu-id="d1ea5-109"><span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**tipo de MPSCAN \_ \_ desconhecido**</span><span class="sxs-lookup"><span data-stu-id="d1ea5-109"><span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**MPSCAN\_TYPE\_UNKNOWN**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="76eb6-110">Somente para uso interno.</span><span class="sxs-lookup"><span data-stu-id="76eb6-110">Internal use only.</span></span>
+<span data-ttu-id="d1ea5-110">Somente para uso interno.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-110">Internal use only.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="76eb6-111"><span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN \_ tipo \_ rápido**</span><span class="sxs-lookup"><span data-stu-id="76eb6-111"><span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN\_TYPE\_QUICK**</span></span>
+<span data-ttu-id="d1ea5-111"><span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN \_ tipo \_ rápido**</span><span class="sxs-lookup"><span data-stu-id="d1ea5-111"><span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN\_TYPE\_QUICK**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="76eb6-112">Verifica os processos em execução e vários pontos de ASEP no sistema em que o malware normalmente se oculta.</span><span class="sxs-lookup"><span data-stu-id="76eb6-112">Scans running processes and various ASEP points in the system where malware typically hides.</span></span>
+<span data-ttu-id="d1ea5-112">Verifica os processos em execução e vários pontos de ASEP no sistema em que o malware normalmente se oculta.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-112">Scans running processes and various ASEP points in the system where malware typically hides.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="76eb6-113"><span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**MPSCAN \_ tipo \_ completo**</span><span class="sxs-lookup"><span data-stu-id="76eb6-113"><span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**MPSCAN\_TYPE\_FULL**</span></span>
+<span data-ttu-id="d1ea5-113"><span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**MPSCAN \_ tipo \_ completo**</span><span class="sxs-lookup"><span data-stu-id="d1ea5-113"><span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**MPSCAN\_TYPE\_FULL**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="76eb6-114">Executa uma verificação rápida seguida da verificação de todas as unidades fixas do sistema.</span><span class="sxs-lookup"><span data-stu-id="76eb6-114">Performs a quick scan followed by scan of all fixed drives of the system.</span></span>
+<span data-ttu-id="d1ea5-114">Executa uma verificação rápida seguida da verificação de todas as unidades fixas do sistema.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-114">Performs a quick scan followed by scan of all fixed drives of the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="76eb6-115"><span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**\_recurso de tipo MPSCAN \_**</span><span class="sxs-lookup"><span data-stu-id="76eb6-115"><span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**MPSCAN\_TYPE\_RESOURCE**</span></span>
+<span data-ttu-id="d1ea5-115"><span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**\_recurso de tipo MPSCAN \_**</span><span class="sxs-lookup"><span data-stu-id="d1ea5-115"><span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**MPSCAN\_TYPE\_RESOURCE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="76eb6-116">Examina recursos específicos, como arquivos ou pastas.</span><span class="sxs-lookup"><span data-stu-id="76eb6-116">Scans specific resources, such as files or folders.</span></span>
+<span data-ttu-id="d1ea5-116">Examina recursos específicos, como arquivos ou pastas.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-116">Scans specific resources, such as files or folders.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="76eb6-117"><span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**tipo de MPSCAN \_ \_ MaxValue**</span><span class="sxs-lookup"><span data-stu-id="76eb6-117"><span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**MPSCAN\_TYPE\_MAXVALUE**</span></span>
+<span data-ttu-id="d1ea5-117"><span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**tipo de MPSCAN \_ \_ MaxValue**</span><span class="sxs-lookup"><span data-stu-id="d1ea5-117"><span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**MPSCAN\_TYPE\_MAXVALUE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="76eb6-118">Valor máximo possível.</span><span class="sxs-lookup"><span data-stu-id="76eb6-118">Maximum value possible.</span></span>
+<span data-ttu-id="d1ea5-118">Valor máximo possível.</span><span class="sxs-lookup"><span data-stu-id="d1ea5-118">Maximum value possible.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="76eb6-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="76eb6-119">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d1ea5-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d1ea5-119">Requirements</span></span>
 
 
 
-| <span data-ttu-id="76eb6-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="76eb6-120">Requirement</span></span> | <span data-ttu-id="76eb6-121">Valor</span><span class="sxs-lookup"><span data-stu-id="76eb6-121">Value</span></span> |
+| <span data-ttu-id="d1ea5-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="d1ea5-120">Requirement</span></span> | <span data-ttu-id="d1ea5-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d1ea5-121">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="76eb6-122">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="76eb6-122">Minimum supported client</span></span><br/> | <span data-ttu-id="76eb6-123">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="76eb6-123">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
-| <span data-ttu-id="76eb6-124">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="76eb6-124">Minimum supported server</span></span><br/> | <span data-ttu-id="76eb6-125">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="76eb6-125">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="76eb6-126">parâmetro</span><span class="sxs-lookup"><span data-stu-id="76eb6-126">Header</span></span><br/>                   | <dl> <span data-ttu-id="76eb6-127"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="76eb6-127"><dt>MpClient.h</dt></span></span> </dl> |
+| <span data-ttu-id="d1ea5-122">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1ea5-122">Minimum supported client</span></span><br/> | <span data-ttu-id="d1ea5-123">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="d1ea5-123">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
+| <span data-ttu-id="d1ea5-124">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1ea5-124">Minimum supported server</span></span><br/> | <span data-ttu-id="d1ea5-125">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="d1ea5-125">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="d1ea5-126">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d1ea5-126">Header</span></span><br/>                   | <dl> <span data-ttu-id="d1ea5-127"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="d1ea5-127"><dt>MpClient.h</dt></span></span> </dl> |
 
 
 

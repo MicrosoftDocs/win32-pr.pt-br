@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644306"
 ---
-# <a name="webviewfoldercontentspopupitemmenu-method"></a><span data-ttu-id="7e25d-106">Método WebViewFolderContents. PopupItemMenu</span><span class="sxs-lookup"><span data-stu-id="7e25d-106">WebViewFolderContents.PopupItemMenu method</span></span>
+# <a name="webviewfoldercontentspopupitemmenu-method"></a><span data-ttu-id="ddcc9-106">Método WebViewFolderContents. PopupItemMenu</span><span class="sxs-lookup"><span data-stu-id="ddcc9-106">WebViewFolderContents.PopupItemMenu method</span></span>
 
-<span data-ttu-id="7e25d-107">Cria um menu de atalho para o item especificado e retorna a cadeia de caracteres de comando selecionada.</span><span class="sxs-lookup"><span data-stu-id="7e25d-107">Creates a shortcut menu for the specified item and returns the selected command string.</span></span>
+<span data-ttu-id="ddcc9-107">Cria um menu de atalho para o item especificado e retorna a cadeia de caracteres de comando selecionada.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-107">Creates a shortcut menu for the specified item and returns the selected command string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7e25d-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7e25d-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ddcc9-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ddcc9-108">Syntax</span></span>
 
 
 ```JScript
@@ -40,46 +40,46 @@ retVal = WebViewFolderContents.PopupItemMenu(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="7e25d-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7e25d-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ddcc9-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ddcc9-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="7e25d-110">*vItem* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7e25d-110">*vItem* \[in\]</span></span>
+<span data-ttu-id="ddcc9-110">*vItem* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="ddcc9-110">*vItem* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7e25d-111">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="7e25d-111">Type: **Variant**</span></span>
+<span data-ttu-id="ddcc9-111">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="ddcc9-111">Type: **Variant**</span></span>
 
-<span data-ttu-id="7e25d-112">O objeto [**FolderItem**](../shell/folderitem.md) para o qual o menu de atalho será criado.</span><span class="sxs-lookup"><span data-stu-id="7e25d-112">The [**FolderItem**](../shell/folderitem.md) object for which the shortcut menu will be created.</span></span>
+<span data-ttu-id="ddcc9-112">O objeto [**FolderItem**](../shell/folderitem.md) para o qual o menu de atalho será criado.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-112">The [**FolderItem**](../shell/folderitem.md) object for which the shortcut menu will be created.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="7e25d-113">*VX* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="7e25d-113">*vx* \[in, optional\]</span></span>
+<span data-ttu-id="ddcc9-113">*VX* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="ddcc9-113">*vx* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7e25d-114">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="7e25d-114">Type: **Variant**</span></span>
+<span data-ttu-id="ddcc9-114">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="ddcc9-114">Type: **Variant**</span></span>
 
-<span data-ttu-id="7e25d-115">A posição horizontal do menu, em coordenadas da tela.</span><span class="sxs-lookup"><span data-stu-id="7e25d-115">The horizontal position of the menu, in screen coordinates.</span></span>
+<span data-ttu-id="ddcc9-115">A posição horizontal do menu, em coordenadas da tela.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-115">The horizontal position of the menu, in screen coordinates.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="7e25d-116">*Vy* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="7e25d-116">*vy* \[in, optional\]</span></span>
+<span data-ttu-id="ddcc9-116">*Vy* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="ddcc9-116">*vy* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7e25d-117">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="7e25d-117">Type: **Variant**</span></span>
+<span data-ttu-id="ddcc9-117">Tipo: **variante**</span><span class="sxs-lookup"><span data-stu-id="ddcc9-117">Type: **Variant**</span></span>
 
-<span data-ttu-id="7e25d-118">A posição vertical do menu, em coordenadas da tela.</span><span class="sxs-lookup"><span data-stu-id="7e25d-118">The vertical position of the menu, in screen coordinates.</span></span>
+<span data-ttu-id="ddcc9-118">A posição vertical do menu, em coordenadas da tela.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-118">The vertical position of the menu, in screen coordinates.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="7e25d-119">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7e25d-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ddcc9-119">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="ddcc9-119">Return value</span></span>
 
-<span data-ttu-id="7e25d-120">Tipo: \**[BSTR](/previous-versions/windows/desktop/automat/bstr) \** _</span><span class="sxs-lookup"><span data-stu-id="7e25d-120">Type: \**[BSTR](/previous-versions/windows/desktop/automat/bstr)\** _</span></span>
+<span data-ttu-id="ddcc9-120">Tipo: \**[BSTR](/previous-versions/windows/desktop/automat/bstr) \** _</span><span class="sxs-lookup"><span data-stu-id="ddcc9-120">Type: \**[BSTR](/previous-versions/windows/desktop/automat/bstr)\** _</span></span>
 
-<span data-ttu-id="7e25d-121">Quando esse método retorna, contém a cadeia de caracteres de comando.</span><span class="sxs-lookup"><span data-stu-id="7e25d-121">When this method returns, contains the command string.</span></span>
+<span data-ttu-id="ddcc9-121">Quando esse método retorna, contém a cadeia de caracteres de comando.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-121">When this method returns, contains the command string.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7e25d-122">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7e25d-122">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ddcc9-122">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ddcc9-122">Examples</span></span>
 
-<span data-ttu-id="7e25d-123">O exemplo a seguir mostra o uso apropriado de _ *PopupItemMenu*\* para JScript Embedded em HTML.</span><span class="sxs-lookup"><span data-stu-id="7e25d-123">The following example shows the proper use of _ *PopupItemMenu*\* for JScript embedded in HTML.</span></span>
+<span data-ttu-id="ddcc9-123">O exemplo a seguir mostra o uso apropriado de _ *PopupItemMenu*\* para JScript Embedded em HTML.</span><span class="sxs-lookup"><span data-stu-id="ddcc9-123">The following example shows the proper use of _ *PopupItemMenu*\* for JScript embedded in HTML.</span></span>
 
 
 ```HTML
@@ -115,17 +115,17 @@ retVal = WebViewFolderContents.PopupItemMenu(
 
 
 
-## <a name="requirements"></a><span data-ttu-id="7e25d-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7e25d-124">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="ddcc9-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ddcc9-124">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7e25d-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="7e25d-125">Requirement</span></span> | <span data-ttu-id="7e25d-126">Valor</span><span class="sxs-lookup"><span data-stu-id="7e25d-126">Value</span></span> |
+| <span data-ttu-id="ddcc9-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="ddcc9-125">Requirement</span></span> | <span data-ttu-id="ddcc9-126">Valor</span><span class="sxs-lookup"><span data-stu-id="ddcc9-126">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7e25d-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7e25d-127">Minimum supported client</span></span><br/> | <span data-ttu-id="7e25d-128">Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="7e25d-128">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
-| <span data-ttu-id="7e25d-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7e25d-129">Minimum supported server</span></span><br/> | <span data-ttu-id="7e25d-130">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="7e25d-130">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
-| <span data-ttu-id="7e25d-131">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7e25d-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="7e25d-132"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="7e25d-132"><dt>Shldisp.h</dt></span></span> </dl>                           |
-| <span data-ttu-id="7e25d-133">INSERI</span><span class="sxs-lookup"><span data-stu-id="7e25d-133">IDL</span></span><br/>                      | <dl> <span data-ttu-id="7e25d-134"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="7e25d-134"><dt>Shldisp.idl</dt></span></span> </dl>                         |
-| <span data-ttu-id="7e25d-135">DLL</span><span class="sxs-lookup"><span data-stu-id="7e25d-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="7e25d-136"><dt>Shell32.dll (versão 4,71 ou posterior)</dt></span><span class="sxs-lookup"><span data-stu-id="7e25d-136"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
+| <span data-ttu-id="ddcc9-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ddcc9-127">Minimum supported client</span></span><br/> | <span data-ttu-id="ddcc9-128">Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="ddcc9-128">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
+| <span data-ttu-id="ddcc9-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ddcc9-129">Minimum supported server</span></span><br/> | <span data-ttu-id="ddcc9-130">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="ddcc9-130">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
+| <span data-ttu-id="ddcc9-131">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ddcc9-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="ddcc9-132"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="ddcc9-132"><dt>Shldisp.h</dt></span></span> </dl>                           |
+| <span data-ttu-id="ddcc9-133">INSERI</span><span class="sxs-lookup"><span data-stu-id="ddcc9-133">IDL</span></span><br/>                      | <dl> <span data-ttu-id="ddcc9-134"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="ddcc9-134"><dt>Shldisp.idl</dt></span></span> </dl>                         |
+| <span data-ttu-id="ddcc9-135">DLL</span><span class="sxs-lookup"><span data-stu-id="ddcc9-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="ddcc9-136"><dt>Shell32.dll (versão 4,71 ou posterior)</dt></span><span class="sxs-lookup"><span data-stu-id="ddcc9-136"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
 
 
 

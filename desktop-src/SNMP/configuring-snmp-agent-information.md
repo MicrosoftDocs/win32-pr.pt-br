@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005509"
 ---
-# <a name="configuring-snmp-agent-information"></a><span data-ttu-id="97bfc-104">Configurando informações do agente SNMP</span><span class="sxs-lookup"><span data-stu-id="97bfc-104">Configuring SNMP Agent Information</span></span>
+# <a name="configuring-snmp-agent-information"></a><span data-ttu-id="0c318-104">Configurando informações do agente SNMP</span><span class="sxs-lookup"><span data-stu-id="0c318-104">Configuring SNMP Agent Information</span></span>
 
-<span data-ttu-id="97bfc-105">As informações do agente SNMP permitem que você especifique comentários sobre o usuário e o local físico do computador e para indicar os tipos de serviço a serem relatados.</span><span class="sxs-lookup"><span data-stu-id="97bfc-105">SNMP agent information allows you to specify comments about the user and the physical location of the computer and to indicate the types of service to report.</span></span> <span data-ttu-id="97bfc-106">Os tipos de serviço que podem ser relatados são baseados na configuração do computador.</span><span class="sxs-lookup"><span data-stu-id="97bfc-106">The types of service that can be reported are based on the computer's configuration.</span></span>
+<span data-ttu-id="0c318-105">As informações do agente SNMP permitem que você especifique comentários sobre o usuário e o local físico do computador e para indicar os tipos de serviço a serem relatados.</span><span class="sxs-lookup"><span data-stu-id="0c318-105">SNMP agent information allows you to specify comments about the user and the physical location of the computer and to indicate the types of service to report.</span></span> <span data-ttu-id="0c318-106">Os tipos de serviço que podem ser relatados são baseados na configuração do computador.</span><span class="sxs-lookup"><span data-stu-id="0c318-106">The types of service that can be reported are based on the computer's configuration.</span></span>
 
  
 

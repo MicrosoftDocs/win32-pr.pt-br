@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662835"
 ---
-# <a name="jet_commit_id-class"></a><span data-ttu-id="916d7-103">Classe JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="916d7-103">JET_COMMIT_ID class</span></span>
+# <a name="jet_commit_id-class"></a><span data-ttu-id="156a5-103">Classe JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="156a5-103">JET_COMMIT_ID class</span></span>
 
-<span data-ttu-id="916d7-104">Contexto de informações que circunda dados emitidos de JET_PFNEMITLOGDATA.</span><span class="sxs-lookup"><span data-stu-id="916d7-104">Information context surrounded data emitted from JET_PFNEMITLOGDATA.</span></span>
+<span data-ttu-id="156a5-104">Contexto de informações que circunda dados emitidos de JET_PFNEMITLOGDATA.</span><span class="sxs-lookup"><span data-stu-id="156a5-104">Information context surrounded data emitted from JET_PFNEMITLOGDATA.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="916d7-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="916d7-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="156a5-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="156a5-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="916d7-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="916d7-106">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="916d7-107">Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="916d7-107">Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID</span></span>  
+[<span data-ttu-id="156a5-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="156a5-106">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="156a5-107">Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="156a5-107">Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID</span></span>  
 
-<span data-ttu-id="916d7-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="916d7-108">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="916d7-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="916d7-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="156a5-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="156a5-108">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="156a5-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="156a5-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="916d7-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="916d7-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="156a5-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="156a5-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public class JET_COMMIT_ID : IComparable<JET_COMMIT_ID>,
     IEquatable<JET_COMMIT_ID>
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="916d7-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="916d7-111">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="156a5-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="156a5-111">Thread safety</span></span>
 
-<span data-ttu-id="916d7-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="916d7-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="916d7-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="916d7-113">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="156a5-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="156a5-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="156a5-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="156a5-113">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="916d7-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="916d7-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="156a5-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="156a5-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="916d7-115">Referência</span><span class="sxs-lookup"><span data-stu-id="916d7-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="156a5-115">Referência</span><span class="sxs-lookup"><span data-stu-id="156a5-115">Reference</span></span>
 
-[<span data-ttu-id="916d7-116">Membros do JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="916d7-116">JET_COMMIT_ID members</span></span>](./jet-commit-id-members.md)
+[<span data-ttu-id="156a5-116">Membros do JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="156a5-116">JET_COMMIT_ID members</span></span>](./jet-commit-id-members.md)
 
-[<span data-ttu-id="916d7-117">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="916d7-117">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="156a5-117">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="156a5-117">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

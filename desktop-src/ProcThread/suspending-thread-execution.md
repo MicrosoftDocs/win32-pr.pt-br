@@ -1,0 +1,28 @@
+---
+description: Um thread pode suspender e retomar a execução de outro thread. Enquanto um thread é suspenso, ele não é agendado para tempo no processador.
+ms.assetid: b76d7af7-e3ec-4663-a9e7-832c01733c8c
+title: Suspendendo a execução do thread
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3688b0327ecf5fd21f07e9be6be6ecab17d64617
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103921709"
+---
+# <a name="suspending-thread-execution"></a><span data-ttu-id="b97aa-104">Suspendendo a execução do thread</span><span class="sxs-lookup"><span data-stu-id="b97aa-104">Suspending Thread Execution</span></span>
+
+<span data-ttu-id="b97aa-105">Um thread pode suspender e retomar a execução de outro thread.</span><span class="sxs-lookup"><span data-stu-id="b97aa-105">A thread can suspend and resume the execution of another thread.</span></span> <span data-ttu-id="b97aa-106">Enquanto um thread é suspenso, ele não é agendado para tempo no processador.</span><span class="sxs-lookup"><span data-stu-id="b97aa-106">While a thread is suspended, it is not scheduled for time on the processor.</span></span>
+
+<span data-ttu-id="b97aa-107">Se um thread for criado em um estado suspenso (com o sinalizador [**Create \_ SUSPENDED**](process-creation-flags.md) ), ele não começará a ser executado até que outro thread chame a função [**ResumeThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) com um identificador para o thread suspenso.</span><span class="sxs-lookup"><span data-stu-id="b97aa-107">If a thread is created in a suspended state (with the [**CREATE\_SUSPENDED**](process-creation-flags.md) flag), it does not begin to execute until another thread calls the [**ResumeThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) function with a handle to the suspended thread.</span></span> <span data-ttu-id="b97aa-108">Isso pode ser útil para inicializar o estado do thread antes que ele comece a ser executado.</span><span class="sxs-lookup"><span data-stu-id="b97aa-108">This can be useful for initializing the thread's state before it begins to execute.</span></span> <span data-ttu-id="b97aa-109">A suspensão de um thread na criação pode ser útil para sincronização única, pois isso garante que o thread suspenso executará o ponto inicial do código quando você chamar **ResumeThread**.</span><span class="sxs-lookup"><span data-stu-id="b97aa-109">Suspending a thread at creation can be useful for one-time synchronization, because this ensures that the suspended thread will execute the starting point of its code when you call **ResumeThread**.</span></span>
+
+<span data-ttu-id="b97aa-110">A função [**SuspendThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-suspendthread) não se destina a ser usada para sincronização de threads porque não controla o ponto no código no qual a execução do thread é suspensa.</span><span class="sxs-lookup"><span data-stu-id="b97aa-110">The [**SuspendThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-suspendthread) function is not intended to be used for thread synchronization because it does not control the point in the code at which the thread's execution is suspended.</span></span> <span data-ttu-id="b97aa-111">Essa função é projetada principalmente para uso por depuradores.</span><span class="sxs-lookup"><span data-stu-id="b97aa-111">This function is primarily designed for use by debuggers.</span></span>
+
+<span data-ttu-id="b97aa-112">Um thread pode gerar temporariamente sua execução para um intervalo especificado chamando as funções [**Sleep**](/windows/win32/api/synchapi/nf-synchapi-sleep) ou [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) isso é útil principalmente nos casos em que o thread responde à interação do usuário, pois pode atrasar a execução por tempo suficiente para permitir que os usuários observem os resultados de suas ações.</span><span class="sxs-lookup"><span data-stu-id="b97aa-112">A thread can temporarily yield its execution for a specified interval by calling the [**Sleep**](/windows/win32/api/synchapi/nf-synchapi-sleep) or [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) functions This is useful particularly in cases where the thread responds to user interaction, because it can delay execution long enough to allow users to observe the results of their actions.</span></span> <span data-ttu-id="b97aa-113">Durante o intervalo de suspensão, o thread não é agendado para tempo no processador.</span><span class="sxs-lookup"><span data-stu-id="b97aa-113">During the sleep interval, the thread is not scheduled for time on the processor.</span></span>
+
+<span data-ttu-id="b97aa-114">A função [**SwitchToThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-switchtothread) é semelhante a [**Sleep**](/windows/win32/api/synchapi/nf-synchapi-sleep) e [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex), exceto que não é possível especificar o intervalo.</span><span class="sxs-lookup"><span data-stu-id="b97aa-114">The [**SwitchToThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-switchtothread) function is similar to [**Sleep**](/windows/win32/api/synchapi/nf-synchapi-sleep) and [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex), except that you cannot specify the interval.</span></span> <span data-ttu-id="b97aa-115">**SwitchToThread** permite que o thread revele sua fatia de tempo.</span><span class="sxs-lookup"><span data-stu-id="b97aa-115">**SwitchToThread** allows the thread to give up its time slice.</span></span>
+
+ 
+
+ 

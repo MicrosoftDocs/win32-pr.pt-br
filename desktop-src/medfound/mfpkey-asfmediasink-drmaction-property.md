@@ -11,53 +11,53 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/03/2021
 ms.locfileid: "103663815"
 ---
-# <a name="mfpkey_asfmediasink_drmaction-property"></a><span data-ttu-id="abd1a-103">\_Propriedade MFPKEY ASFMEDIASINK \_ DRMACTION</span><span class="sxs-lookup"><span data-stu-id="abd1a-103">MFPKEY\_ASFMEDIASINK\_DRMACTION property</span></span>
+# <a name="mfpkey_asfmediasink_drmaction-property"></a><span data-ttu-id="2efc4-103">\_Propriedade MFPKEY ASFMEDIASINK \_ DRMACTION</span><span class="sxs-lookup"><span data-stu-id="2efc4-103">MFPKEY\_ASFMEDIASINK\_DRMACTION property</span></span>
 
-<span data-ttu-id="abd1a-104">Especifica como o coletor de mídia ASF deve aplicar o DRM do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="abd1a-104">Specifies how the ASF media sink should apply Windows Media DRM.</span></span>
-
-
-
-<span data-ttu-id="abd1a-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="abd1a-105">Data type</span></span>
-
-<span data-ttu-id="abd1a-106">Tipo PROPVARIANT (VT)</span><span class="sxs-lookup"><span data-stu-id="abd1a-106">PROPVARIANT type (vt)</span></span>
-
-<span data-ttu-id="abd1a-107">Membro PROPVARIANT</span><span class="sxs-lookup"><span data-stu-id="abd1a-107">PROPVARIANT member</span></span>
-
-<span data-ttu-id="abd1a-108">**ULONG**</span><span class="sxs-lookup"><span data-stu-id="abd1a-108">**ULONG**</span></span>
-
-<span data-ttu-id="abd1a-109">\_UI4 VT</span><span class="sxs-lookup"><span data-stu-id="abd1a-109">VT\_UI4</span></span>
-
-<span data-ttu-id="abd1a-110">**ulVal**</span><span class="sxs-lookup"><span data-stu-id="abd1a-110">**ulVal**</span></span>
+<span data-ttu-id="2efc4-104">Especifica como o coletor de mídia ASF deve aplicar o DRM do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="2efc4-104">Specifies how the ASF media sink should apply Windows Media DRM.</span></span>
 
 
 
-## <a name="remarks"></a><span data-ttu-id="abd1a-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="abd1a-111">Remarks</span></span>
+<span data-ttu-id="2efc4-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="2efc4-105">Data type</span></span>
 
-<span data-ttu-id="abd1a-112">O valor dessa propriedade é um membro da enumeração [**MFSINK \_ WMDRMACTION**](/windows/win32/api/wmcontainer/ne-wmcontainer-mfsink_wmdrmaction) .</span><span class="sxs-lookup"><span data-stu-id="abd1a-112">The value of this property is a member of the [**MFSINK\_WMDRMACTION**](/windows/win32/api/wmcontainer/ne-wmcontainer-mfsink_wmdrmaction) enumeration.</span></span>
+<span data-ttu-id="2efc4-106">Tipo PROPVARIANT (VT)</span><span class="sxs-lookup"><span data-stu-id="2efc4-106">PROPVARIANT type (vt)</span></span>
 
-<span data-ttu-id="abd1a-113">Você pode usar esse atributo para configurar o coletor de mídia ASF.</span><span class="sxs-lookup"><span data-stu-id="abd1a-113">You can use this attribute to configure the ASF media sink.</span></span> <span data-ttu-id="abd1a-114">O uso depende de qual função você chama para criar o coletor de mídia ASF:</span><span class="sxs-lookup"><span data-stu-id="abd1a-114">The usage depends on which function you call to create the ASF media sink:</span></span>
+<span data-ttu-id="2efc4-107">Membro PROPVARIANT</span><span class="sxs-lookup"><span data-stu-id="2efc4-107">PROPVARIANT member</span></span>
 
--   <span data-ttu-id="abd1a-115">[**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): consulta o ponteiro [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para a interface **IPropertyStore** .</span><span class="sxs-lookup"><span data-stu-id="abd1a-115">[**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): Query the retrieved [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) pointer for the **IPropertyStore** interface.</span></span>
+<span data-ttu-id="2efc4-108">**ULONG**</span><span class="sxs-lookup"><span data-stu-id="2efc4-108">**ULONG**</span></span>
 
--   <span data-ttu-id="abd1a-116">[**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): chame [**IMFASFContentInfo:: GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) no ponteiro [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado no parâmetro *pContentInfo* .</span><span class="sxs-lookup"><span data-stu-id="abd1a-116">[**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): Call [**IMFASFContentInfo::GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) on the [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) pointer specified in the *pContentInfo* parameter.</span></span>
+<span data-ttu-id="2efc4-109">\_UI4 VT</span><span class="sxs-lookup"><span data-stu-id="2efc4-109">VT\_UI4</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="abd1a-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="abd1a-117">Requirements</span></span>
+<span data-ttu-id="2efc4-110">**ulVal**</span><span class="sxs-lookup"><span data-stu-id="2efc4-110">**ulVal**</span></span>
 
 
 
-| <span data-ttu-id="abd1a-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="abd1a-118">Requirement</span></span> | <span data-ttu-id="abd1a-119">Valor</span><span class="sxs-lookup"><span data-stu-id="abd1a-119">Value</span></span> |
+## <a name="remarks"></a><span data-ttu-id="2efc4-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="2efc4-111">Remarks</span></span>
+
+<span data-ttu-id="2efc4-112">O valor dessa propriedade é um membro da enumeração [**MFSINK \_ WMDRMACTION**](/windows/win32/api/wmcontainer/ne-wmcontainer-mfsink_wmdrmaction) .</span><span class="sxs-lookup"><span data-stu-id="2efc4-112">The value of this property is a member of the [**MFSINK\_WMDRMACTION**](/windows/win32/api/wmcontainer/ne-wmcontainer-mfsink_wmdrmaction) enumeration.</span></span>
+
+<span data-ttu-id="2efc4-113">Você pode usar esse atributo para configurar o coletor de mídia ASF.</span><span class="sxs-lookup"><span data-stu-id="2efc4-113">You can use this attribute to configure the ASF media sink.</span></span> <span data-ttu-id="2efc4-114">O uso depende de qual função você chama para criar o coletor de mídia ASF:</span><span class="sxs-lookup"><span data-stu-id="2efc4-114">The usage depends on which function you call to create the ASF media sink:</span></span>
+
+-   <span data-ttu-id="2efc4-115">[**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): consulta o ponteiro [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para a interface **IPropertyStore** .</span><span class="sxs-lookup"><span data-stu-id="2efc4-115">[**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): Query the retrieved [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) pointer for the **IPropertyStore** interface.</span></span>
+
+-   <span data-ttu-id="2efc4-116">[**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): chame [**IMFASFContentInfo:: GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) no ponteiro [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado no parâmetro *pContentInfo* .</span><span class="sxs-lookup"><span data-stu-id="2efc4-116">[**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): Call [**IMFASFContentInfo::GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) on the [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) pointer specified in the *pContentInfo* parameter.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="2efc4-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2efc4-117">Requirements</span></span>
+
+
+
+| <span data-ttu-id="2efc4-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="2efc4-118">Requirement</span></span> | <span data-ttu-id="2efc4-119">Valor</span><span class="sxs-lookup"><span data-stu-id="2efc4-119">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="abd1a-120">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="abd1a-120">Minimum supported client</span></span><br/> | <span data-ttu-id="abd1a-121">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="abd1a-121">Windows Vista \[desktop apps only\]</span></span><br/>                                     |
-| <span data-ttu-id="abd1a-122">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="abd1a-122">Minimum supported server</span></span><br/> | <span data-ttu-id="abd1a-123">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="abd1a-123">Windows Server 2008 \[desktop apps only\]</span></span><br/>                               |
-| <span data-ttu-id="abd1a-124">parâmetro</span><span class="sxs-lookup"><span data-stu-id="abd1a-124">Header</span></span><br/>                   | <dl> <span data-ttu-id="abd1a-125"><dt>Mfidl. h</dt></span><span class="sxs-lookup"><span data-stu-id="abd1a-125"><dt>Mfidl.h</dt></span></span> </dl> |
+| <span data-ttu-id="2efc4-120">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2efc4-120">Minimum supported client</span></span><br/> | <span data-ttu-id="2efc4-121">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="2efc4-121">Windows Vista \[desktop apps only\]</span></span><br/>                                     |
+| <span data-ttu-id="2efc4-122">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2efc4-122">Minimum supported server</span></span><br/> | <span data-ttu-id="2efc4-123">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="2efc4-123">Windows Server 2008 \[desktop apps only\]</span></span><br/>                               |
+| <span data-ttu-id="2efc4-124">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2efc4-124">Header</span></span><br/>                   | <dl> <span data-ttu-id="2efc4-125"><dt>Mfidl. h</dt></span><span class="sxs-lookup"><span data-stu-id="2efc4-125"><dt>Mfidl.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="abd1a-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="abd1a-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2efc4-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="2efc4-126">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="abd1a-127">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="abd1a-127">Media Foundation Properties</span></span>](media-foundation-properties.md)
+[<span data-ttu-id="2efc4-127">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="2efc4-127">Media Foundation Properties</span></span>](media-foundation-properties.md)
 </dt> </dl>
 
  

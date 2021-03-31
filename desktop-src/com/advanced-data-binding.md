@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005265"
 ---
-# <a name="advanced-data-binding"></a><span data-ttu-id="f8710-103">Ligação de dados avançada</span><span class="sxs-lookup"><span data-stu-id="f8710-103">Advanced Data Binding</span></span>
+# <a name="advanced-data-binding"></a><span data-ttu-id="f4d4a-103">Ligação de dados avançada</span><span class="sxs-lookup"><span data-stu-id="f4d4a-103">Advanced Data Binding</span></span>
 
-<span data-ttu-id="f8710-104">Há um conjunto de interfaces de ligação de dados avançadas que permitem o suporte a um cenário de vinculação DataBinding mais complexo.</span><span class="sxs-lookup"><span data-stu-id="f8710-104">There is a set of advanced data binding interfaces that allow a more complex databinding scenario to be supported.</span></span> <span data-ttu-id="f8710-105">Essa categoria de componente aborda essa área de funcionalidade.</span><span class="sxs-lookup"><span data-stu-id="f8710-105">This component category covers that area of functionality.</span></span>
+<span data-ttu-id="f4d4a-104">Há um conjunto de interfaces de ligação de dados avançadas que permitem o suporte a um cenário de vinculação DataBinding mais complexo.</span><span class="sxs-lookup"><span data-stu-id="f4d4a-104">There is a set of advanced data binding interfaces that allow a more complex databinding scenario to be supported.</span></span> <span data-ttu-id="f4d4a-105">Essa categoria de componente aborda essa área de funcionalidade.</span><span class="sxs-lookup"><span data-stu-id="f4d4a-105">This component category covers that area of functionality.</span></span>
 
-<span data-ttu-id="f8710-106">CATID-{157083E2-2368-11cf-87B9-00AA006C8166} CATID \_ VBDataBound</span><span class="sxs-lookup"><span data-stu-id="f8710-106">CATID - {157083E2-2368-11cf-87B9-00AA006C8166} CATID\_VBDataBound</span></span>
+<span data-ttu-id="f4d4a-106">CATID-{157083E2-2368-11cf-87B9-00AA006C8166} CATID \_ VBDataBound</span><span class="sxs-lookup"><span data-stu-id="f4d4a-106">CATID - {157083E2-2368-11cf-87B9-00AA006C8166} CATID\_VBDataBound</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="f8710-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f8710-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f4d4a-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f4d4a-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f8710-108">Categorias de componentes</span><span class="sxs-lookup"><span data-stu-id="f8710-108">Component Categories</span></span>](component-categories.md)
+[<span data-ttu-id="f4d4a-108">Categorias de componentes</span><span class="sxs-lookup"><span data-stu-id="f4d4a-108">Component Categories</span></span>](component-categories.md)
 </dt> </dl>
 
  

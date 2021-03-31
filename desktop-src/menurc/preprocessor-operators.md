@@ -13,17 +13,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005575"
 ---
-# <a name="preprocessor-operators"></a><span data-ttu-id="91e0e-105">Operadores de pré-processador</span><span class="sxs-lookup"><span data-stu-id="91e0e-105">Preprocessor Operators</span></span>
+# <a name="preprocessor-operators"></a><span data-ttu-id="50bd7-105">Operadores de pré-processador</span><span class="sxs-lookup"><span data-stu-id="50bd7-105">Preprocessor Operators</span></span>
 
-<span data-ttu-id="91e0e-106">O RC dá suporte ao uso dos operadores de pré-processamento padrão do C nas definições de macro.</span><span class="sxs-lookup"><span data-stu-id="91e0e-106">RC supports using the standard C preprocessing operators in macro definitions.</span></span> <span data-ttu-id="91e0e-107">Esses operadores são descritos na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="91e0e-107">These operators are described in the following table.</span></span>
+<span data-ttu-id="50bd7-106">O RC dá suporte ao uso dos operadores de pré-processamento padrão do C nas definições de macro.</span><span class="sxs-lookup"><span data-stu-id="50bd7-106">RC supports using the standard C preprocessing operators in macro definitions.</span></span> <span data-ttu-id="50bd7-107">Esses operadores são descritos na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="50bd7-107">These operators are described in the following table.</span></span>
 
 
 
-| <span data-ttu-id="91e0e-108">Operador</span><span class="sxs-lookup"><span data-stu-id="91e0e-108">Operator</span></span> | <span data-ttu-id="91e0e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="91e0e-109">Description</span></span>                                                 |
+| <span data-ttu-id="50bd7-108">Operador</span><span class="sxs-lookup"><span data-stu-id="50bd7-108">Operator</span></span> | <span data-ttu-id="50bd7-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="50bd7-109">Description</span></span>                                                 |
 |----------|-------------------------------------------------------------|
-| \#       | <span data-ttu-id="91e0e-110">Inclui o argumento entre aspas.</span><span class="sxs-lookup"><span data-stu-id="91e0e-110">Encloses the argument in quotes.</span></span>                            |
-| \#@      | <span data-ttu-id="91e0e-111">Inclui o argumento entre aspas simples.</span><span class="sxs-lookup"><span data-stu-id="91e0e-111">Encloses the argument in single quotes.</span></span>                     |
-| \#\#     | <span data-ttu-id="91e0e-112">Concatena tokens usados como argumentos para formar outros tokens.</span><span class="sxs-lookup"><span data-stu-id="91e0e-112">Concatenates tokens used as arguments to form other tokens.</span></span> |
+| \#       | <span data-ttu-id="50bd7-110">Inclui o argumento entre aspas.</span><span class="sxs-lookup"><span data-stu-id="50bd7-110">Encloses the argument in quotes.</span></span>                            |
+| \#@      | <span data-ttu-id="50bd7-111">Inclui o argumento entre aspas simples.</span><span class="sxs-lookup"><span data-stu-id="50bd7-111">Encloses the argument in single quotes.</span></span>                     |
+| \#\#     | <span data-ttu-id="50bd7-112">Concatena tokens usados como argumentos para formar outros tokens.</span><span class="sxs-lookup"><span data-stu-id="50bd7-112">Concatenates tokens used as arguments to form other tokens.</span></span> |
 
 
 

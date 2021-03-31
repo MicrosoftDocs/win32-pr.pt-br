@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635400"
 ---
-# <a name="cc-code-example-creating-an-idle-trigger"></a><span data-ttu-id="7d0e0-104">Exemplo de código C/C++: Criando um gatilho ocioso</span><span class="sxs-lookup"><span data-stu-id="7d0e0-104">C/C++ Code Example: Creating an Idle Trigger</span></span>
+# <a name="cc-code-example-creating-an-idle-trigger"></a><span data-ttu-id="d2e47-104">Exemplo de código C/C++: Criando um gatilho ocioso</span><span class="sxs-lookup"><span data-stu-id="d2e47-104">C/C++ Code Example: Creating an Idle Trigger</span></span>
 
-<span data-ttu-id="7d0e0-105">Este exemplo cria um gatilho ocioso para uma tarefa existente.</span><span class="sxs-lookup"><span data-stu-id="7d0e0-105">This example creates an idle trigger for an existing task.</span></span> <span data-ttu-id="7d0e0-106">Para obter informações sobre condições ociosas, consulte [condições de ociosidade da tarefa](task-idle-conditions.md).</span><span class="sxs-lookup"><span data-stu-id="7d0e0-106">For information about idle conditions, see [Task Idle Conditions](task-idle-conditions.md).</span></span>
+<span data-ttu-id="d2e47-105">Este exemplo cria um gatilho ocioso para uma tarefa existente.</span><span class="sxs-lookup"><span data-stu-id="d2e47-105">This example creates an idle trigger for an existing task.</span></span> <span data-ttu-id="d2e47-106">Para obter informações sobre condições ociosas, consulte [condições de ociosidade da tarefa](task-idle-conditions.md).</span><span class="sxs-lookup"><span data-stu-id="d2e47-106">For information about idle conditions, see [Task Idle Conditions](task-idle-conditions.md).</span></span>
 
 
 ```C++
@@ -190,11 +190,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="7d0e0-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7d0e0-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d2e47-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d2e47-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7d0e0-108">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="7d0e0-108">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="d2e47-108">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="d2e47-108">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

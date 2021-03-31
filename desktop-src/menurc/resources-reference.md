@@ -11,20 +11,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103644098"
 ---
-# <a name="resource-reference-menus-and-other-resources"></a><span data-ttu-id="7c00e-103">Referência de recurso (menus e outros recursos)</span><span class="sxs-lookup"><span data-stu-id="7c00e-103">Resource Reference (Menus and Other Resources)</span></span>
+# <a name="resource-reference-menus-and-other-resources"></a><span data-ttu-id="bdecd-103">Referência de recurso (menus e outros recursos)</span><span class="sxs-lookup"><span data-stu-id="bdecd-103">Resource Reference (Menus and Other Resources)</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="7c00e-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7c00e-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="bdecd-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bdecd-104">In This Section</span></span>
 
--   [<span data-ttu-id="7c00e-105">Funções de recurso</span><span class="sxs-lookup"><span data-stu-id="7c00e-105">Resource Functions</span></span>](resources-functions.md)
--   [<span data-ttu-id="7c00e-106">Macros de recurso</span><span class="sxs-lookup"><span data-stu-id="7c00e-106">Resource Macros</span></span>](resources-macros.md)
--   [<span data-ttu-id="7c00e-107">Estruturas de recursos</span><span class="sxs-lookup"><span data-stu-id="7c00e-107">Resource Structures</span></span>](resources-structures.md)
--   [<span data-ttu-id="7c00e-108">**Tipos de recurso**</span><span class="sxs-lookup"><span data-stu-id="7c00e-108">**Resource Types**</span></span>](resource-types.md)
+-   [<span data-ttu-id="bdecd-105">Funções de recurso</span><span class="sxs-lookup"><span data-stu-id="bdecd-105">Resource Functions</span></span>](resources-functions.md)
+-   [<span data-ttu-id="bdecd-106">Macros de recurso</span><span class="sxs-lookup"><span data-stu-id="bdecd-106">Resource Macros</span></span>](resources-macros.md)
+-   [<span data-ttu-id="bdecd-107">Estruturas de recursos</span><span class="sxs-lookup"><span data-stu-id="bdecd-107">Resource Structures</span></span>](resources-structures.md)
+-   [<span data-ttu-id="bdecd-108">**Tipos de recursos**</span><span class="sxs-lookup"><span data-stu-id="bdecd-108">**Resource Types**</span></span>](resource-types.md)
 
-## <a name="related-topics"></a><span data-ttu-id="7c00e-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7c00e-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bdecd-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="bdecd-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7c00e-110">Instruções de definição de recurso</span><span class="sxs-lookup"><span data-stu-id="7c00e-110">Resource-Definition Statements</span></span>](resource-definition-statements.md)
+[<span data-ttu-id="bdecd-110">Instruções de definição de recurso</span><span class="sxs-lookup"><span data-stu-id="bdecd-110">Resource-Definition Statements</span></span>](resource-definition-statements.md)
 </dt> </dl>
 
  
