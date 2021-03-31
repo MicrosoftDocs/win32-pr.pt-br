@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005614"
 ---
-# <a name="cc-code-example-retrieving-the-task-working-directory"></a><span data-ttu-id="e8cae-106">Exemplo de código do C/C++: Recuperando o diretório de trabalho da tarefa</span><span class="sxs-lookup"><span data-stu-id="e8cae-106">C/C++ Code Example: Retrieving the Task Working Directory</span></span>
+# <a name="cc-code-example-retrieving-the-task-working-directory"></a><span data-ttu-id="d8999-106">Exemplo de código do C/C++: Recuperando o diretório de trabalho da tarefa</span><span class="sxs-lookup"><span data-stu-id="d8999-106">C/C++ Code Example: Retrieving the Task Working Directory</span></span>
 
-<span data-ttu-id="e8cae-107">Este exemplo recupera o diretório de trabalho associado a uma tarefa e exibe o caminho para o diretório de trabalho na tela.</span><span class="sxs-lookup"><span data-stu-id="e8cae-107">This example retrieves the working directory associated with a task and displays the path to the working directory on the screen.</span></span> <span data-ttu-id="e8cae-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="e8cae-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="d8999-107">Este exemplo recupera o diretório de trabalho associado a uma tarefa e exibe o caminho para o diretório de trabalho na tela.</span><span class="sxs-lookup"><span data-stu-id="d8999-107">This example retrieves the working directory associated with a task and displays the path to the working directory on the screen.</span></span> <span data-ttu-id="d8999-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="d8999-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -115,11 +115,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e8cae-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e8cae-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d8999-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d8999-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e8cae-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="e8cae-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="d8999-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="d8999-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

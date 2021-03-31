@@ -20,46 +20,46 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641794"
 ---
-# <a name="d1109-draw-failure"></a><span data-ttu-id="1b850-104">D1109: falha ao desenhar</span><span class="sxs-lookup"><span data-stu-id="1b850-104">D1109: Draw Failure</span></span>
+# <a name="d1109-draw-failure"></a><span data-ttu-id="a4a75-104">D1109: falha ao desenhar</span><span class="sxs-lookup"><span data-stu-id="a4a75-104">D1109: Draw Failure</span></span>
 
-<span data-ttu-id="1b850-105">Uma chamada de empate por um recurso com falha de destino de renderização \[  \] .</span><span class="sxs-lookup"><span data-stu-id="1b850-105">A Draw call by a render target failed \[*resource*\].</span></span> <span data-ttu-id="1b850-106">Marcas \[ *da tag1*, *tag2* \] .</span><span class="sxs-lookup"><span data-stu-id="1b850-106">Tags \[*tag1*, *tag2*\].</span></span>
+<span data-ttu-id="a4a75-105">Uma chamada de empate por um recurso com falha de destino de renderização \[  \] .</span><span class="sxs-lookup"><span data-stu-id="a4a75-105">A Draw call by a render target failed \[*resource*\].</span></span> <span data-ttu-id="a4a75-106">Marcas \[ *da tag1*, *tag2* \] .</span><span class="sxs-lookup"><span data-stu-id="a4a75-106">Tags \[*tag1*, *tag2*\].</span></span>
 
-## <a name="placeholders"></a><span data-ttu-id="1b850-107">Espaços reservados</span><span class="sxs-lookup"><span data-stu-id="1b850-107">Placeholders</span></span>
+## <a name="placeholders"></a><span data-ttu-id="a4a75-107">Espaços reservados</span><span class="sxs-lookup"><span data-stu-id="a4a75-107">Placeholders</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="1b850-108"><span id="resource"></span><span id="RESOURCE"></span>*Kit*</span><span class="sxs-lookup"><span data-stu-id="1b850-108"><span id="resource"></span><span id="RESOURCE"></span>*resource*</span></span>
+<span data-ttu-id="a4a75-108"><span id="resource"></span><span id="RESOURCE"></span>*Kit*</span><span class="sxs-lookup"><span data-stu-id="a4a75-108"><span id="resource"></span><span id="RESOURCE"></span>*resource*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b850-109">O endereço do destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="1b850-109">The address of the render target.</span></span>
+<span data-ttu-id="a4a75-109">O endereço do destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="a4a75-109">The address of the render target.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b850-110"><span id="tag1"></span><span id="TAG1"></span>*da tag1*</span><span class="sxs-lookup"><span data-stu-id="1b850-110"><span id="tag1"></span><span id="TAG1"></span>*tag1*</span></span>
+<span data-ttu-id="a4a75-110"><span id="tag1"></span><span id="TAG1"></span>*da tag1*</span><span class="sxs-lookup"><span data-stu-id="a4a75-110"><span id="tag1"></span><span id="TAG1"></span>*tag1*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b850-111">O primeiro valor de marca (consulte [**settags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) para obter informações).</span><span class="sxs-lookup"><span data-stu-id="1b850-111">The first tag value (see [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) more for information).</span></span>
+<span data-ttu-id="a4a75-111">O primeiro valor de marca (consulte [**settags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) para obter informações).</span><span class="sxs-lookup"><span data-stu-id="a4a75-111">The first tag value (see [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) more for information).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b850-112"><span id="tag2"></span><span id="TAG2"></span>*tag2*</span><span class="sxs-lookup"><span data-stu-id="1b850-112"><span id="tag2"></span><span id="TAG2"></span>*tag2*</span></span>
+<span data-ttu-id="a4a75-112"><span id="tag2"></span><span id="TAG2"></span>*tag2*</span><span class="sxs-lookup"><span data-stu-id="a4a75-112"><span id="tag2"></span><span id="TAG2"></span>*tag2*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b850-113">O segundo valor de marca (consulte [**settags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) mais para obter informações).</span><span class="sxs-lookup"><span data-stu-id="1b850-113">The second tag value (see [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) more for information).</span></span>
+<span data-ttu-id="a4a75-113">O segundo valor de marca (consulte [**settags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) mais para obter informações).</span><span class="sxs-lookup"><span data-stu-id="a4a75-113">The second tag value (see [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) more for information).</span></span>
 
 </dd> </dl> 
 
 |             |         |
 |-------------|---------|
-| <span data-ttu-id="1b850-114">Nível de erro</span><span class="sxs-lookup"><span data-stu-id="1b850-114">Error Level</span></span> | <span data-ttu-id="1b850-115">Aviso</span><span class="sxs-lookup"><span data-stu-id="1b850-115">Warning</span></span> |
+| <span data-ttu-id="a4a75-114">Nível de erro</span><span class="sxs-lookup"><span data-stu-id="a4a75-114">Error Level</span></span> | <span data-ttu-id="a4a75-115">Aviso</span><span class="sxs-lookup"><span data-stu-id="a4a75-115">Warning</span></span> |
 
 
 
  
 
-## <a name="possible-causes"></a><span data-ttu-id="1b850-116">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="1b850-116">Possible Causes</span></span>
+## <a name="possible-causes"></a><span data-ttu-id="a4a75-116">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="a4a75-116">Possible Causes</span></span>
 
-<span data-ttu-id="1b850-117">Há muitas razões pelas quais uma chamada de empate pode falhar.</span><span class="sxs-lookup"><span data-stu-id="1b850-117">There are many reasons that a Draw call might fail.</span></span> <span data-ttu-id="1b850-118">Para obter mais informações, consulte a documentação do SDK do Direct2D para o método que falhou.</span><span class="sxs-lookup"><span data-stu-id="1b850-118">For more information, see the Direct2D SDK documentation for the method that failed.</span></span>
+<span data-ttu-id="a4a75-117">Há muitas razões pelas quais uma chamada de empate pode falhar.</span><span class="sxs-lookup"><span data-stu-id="a4a75-117">There are many reasons that a Draw call might fail.</span></span> <span data-ttu-id="a4a75-118">Para obter mais informações, consulte a documentação do SDK do Direct2D para o método que falhou.</span><span class="sxs-lookup"><span data-stu-id="a4a75-118">For more information, see the Direct2D SDK documentation for the method that failed.</span></span>
 
  
 

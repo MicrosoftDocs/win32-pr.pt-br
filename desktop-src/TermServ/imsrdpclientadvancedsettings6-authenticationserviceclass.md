@@ -36,13 +36,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644654"
 ---
-# <a name="imsrdpclientadvancedsettings6authenticationserviceclass-property"></a><span data-ttu-id="84740-110">Propriedade IMsRdpClientAdvancedSettings6:: AuthenticationServiceClass</span><span class="sxs-lookup"><span data-stu-id="84740-110">IMsRdpClientAdvancedSettings6::AuthenticationServiceClass property</span></span>
+# <a name="imsrdpclientadvancedsettings6authenticationserviceclass-property"></a><span data-ttu-id="3c7d5-110">Propriedade IMsRdpClientAdvancedSettings6:: AuthenticationServiceClass</span><span class="sxs-lookup"><span data-stu-id="3c7d5-110">IMsRdpClientAdvancedSettings6::AuthenticationServiceClass property</span></span>
 
-<span data-ttu-id="84740-111">Especifica o nome da entidade de serviço (SPN) a ser usado para autenticação no servidor.</span><span class="sxs-lookup"><span data-stu-id="84740-111">Specifies the service principal name (SPN) to use for authentication to the server.</span></span>
+<span data-ttu-id="3c7d5-111">Especifica o nome da entidade de serviço (SPN) a ser usado para autenticação no servidor.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-111">Specifies the service principal name (SPN) to use for authentication to the server.</span></span>
 
-<span data-ttu-id="84740-112">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="84740-112">This property is read/write.</span></span>
+<span data-ttu-id="3c7d5-112">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-112">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="84740-113">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="84740-113">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3c7d5-113">Syntax</span><span class="sxs-lookup"><span data-stu-id="3c7d5-113">Syntax</span></span>
 
 
 ```C++
@@ -57,41 +57,41 @@ HRESULT get_AuthenticationServiceClass(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="84740-114">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="84740-114">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="3c7d5-114">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="3c7d5-114">Property value</span></span>
 
-<span data-ttu-id="84740-115">Especifica o nome da entidade de serviço a ser usada.</span><span class="sxs-lookup"><span data-stu-id="84740-115">Specifies the service principal name to use.</span></span>
+<span data-ttu-id="3c7d5-115">Especifica o nome da entidade de serviço a ser usada.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-115">Specifies the service principal name to use.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="84740-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="84740-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c7d5-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="3c7d5-116">Remarks</span></span>
 
-<span data-ttu-id="84740-117">Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remota 6,1 e 7,0.</span><span class="sxs-lookup"><span data-stu-id="84740-117">This property is only supported by Remote Desktop Connection 6.1 and 7.0 clients.</span></span>
+<span data-ttu-id="3c7d5-117">Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remota 6,1 e 7,0.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-117">This property is only supported by Remote Desktop Connection 6.1 and 7.0 clients.</span></span>
 
-<span data-ttu-id="84740-118">Os SPNs (nomes da entidade de serviço) são associados à entidade de segurança (usuário ou grupos) em cujo contexto de segurança o serviço é executado.</span><span class="sxs-lookup"><span data-stu-id="84740-118">Service principal names (SPNs) are associated with the security principal (user or groups) in whose security context the service executes.</span></span> <span data-ttu-id="84740-119">Os SPNs são usados para dar suporte à autenticação mútua entre um aplicativo cliente e um serviço.</span><span class="sxs-lookup"><span data-stu-id="84740-119">SPNs are used to support mutual authentication between a client application and a service.</span></span>
+<span data-ttu-id="3c7d5-118">Os SPNs (nomes da entidade de serviço) são associados à entidade de segurança (usuário ou grupos) em cujo contexto de segurança o serviço é executado.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-118">Service principal names (SPNs) are associated with the security principal (user or groups) in whose security context the service executes.</span></span> <span data-ttu-id="3c7d5-119">Os SPNs são usados para dar suporte à autenticação mútua entre um aplicativo cliente e um serviço.</span><span class="sxs-lookup"><span data-stu-id="3c7d5-119">SPNs are used to support mutual authentication between a client application and a service.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="84740-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="84740-120">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="3c7d5-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3c7d5-120">Requirements</span></span>
 
 
 
-| <span data-ttu-id="84740-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="84740-121">Requirement</span></span> | <span data-ttu-id="84740-122">Valor</span><span class="sxs-lookup"><span data-stu-id="84740-122">Value</span></span> |
+| <span data-ttu-id="3c7d5-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="3c7d5-121">Requirement</span></span> | <span data-ttu-id="3c7d5-122">Valor</span><span class="sxs-lookup"><span data-stu-id="3c7d5-122">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="84740-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="84740-123">Minimum supported client</span></span><br/> | <span data-ttu-id="84740-124">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="84740-124">Windows Vista</span></span><br/>                                                                         |
-| <span data-ttu-id="84740-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="84740-125">Minimum supported server</span></span><br/> | <span data-ttu-id="84740-126">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="84740-126">Windows Server 2008</span></span><br/>                                                                   |
-| <span data-ttu-id="84740-127">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="84740-127">Type library</span></span><br/>             | <dl> <span data-ttu-id="84740-128"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="84740-128"><dt>MsTscAx.dll</dt></span></span> </dl>           |
-| <span data-ttu-id="84740-129">DLL</span><span class="sxs-lookup"><span data-stu-id="84740-129">DLL</span></span><br/>                      | <dl> <span data-ttu-id="84740-130"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="84740-130"><dt>MsTscAx.dll</dt></span></span> </dl>           |
-| <span data-ttu-id="84740-131">IID</span><span class="sxs-lookup"><span data-stu-id="84740-131">IID</span></span><br/>                      | <span data-ttu-id="84740-132">IID \_ IMsRdpClientAdvancedSettings6 é definido como 222c4b5d-45D9-4df0-a7c6-60cf9089d285</span><span class="sxs-lookup"><span data-stu-id="84740-132">IID\_IMsRdpClientAdvancedSettings6 is defined as 222c4b5d-45d9-4df0-a7c6-60cf9089d285</span></span><br/> |
+| <span data-ttu-id="3c7d5-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3c7d5-123">Minimum supported client</span></span><br/> | <span data-ttu-id="3c7d5-124">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="3c7d5-124">Windows Vista</span></span><br/>                                                                         |
+| <span data-ttu-id="3c7d5-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3c7d5-125">Minimum supported server</span></span><br/> | <span data-ttu-id="3c7d5-126">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="3c7d5-126">Windows Server 2008</span></span><br/>                                                                   |
+| <span data-ttu-id="3c7d5-127">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="3c7d5-127">Type library</span></span><br/>             | <dl> <span data-ttu-id="3c7d5-128"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="3c7d5-128"><dt>MsTscAx.dll</dt></span></span> </dl>           |
+| <span data-ttu-id="3c7d5-129">DLL</span><span class="sxs-lookup"><span data-stu-id="3c7d5-129">DLL</span></span><br/>                      | <dl> <span data-ttu-id="3c7d5-130"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="3c7d5-130"><dt>MsTscAx.dll</dt></span></span> </dl>           |
+| <span data-ttu-id="3c7d5-131">IID</span><span class="sxs-lookup"><span data-stu-id="3c7d5-131">IID</span></span><br/>                      | <span data-ttu-id="3c7d5-132">IID \_ IMsRdpClientAdvancedSettings6 é definido como 222c4b5d-45D9-4df0-a7c6-60cf9089d285</span><span class="sxs-lookup"><span data-stu-id="3c7d5-132">IID\_IMsRdpClientAdvancedSettings6 is defined as 222c4b5d-45d9-4df0-a7c6-60cf9089d285</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="84740-133">Consulte também</span><span class="sxs-lookup"><span data-stu-id="84740-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3c7d5-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="3c7d5-133">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="84740-134">**IMsRdpClientAdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="84740-134">**IMsRdpClientAdvancedSettings7**</span></span>](imsrdpclientadvancedsettings7.md)
+[<span data-ttu-id="3c7d5-134">**IMsRdpClientAdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="3c7d5-134">**IMsRdpClientAdvancedSettings7**</span></span>](imsrdpclientadvancedsettings7.md)
 </dt> <dt>
 
-[<span data-ttu-id="84740-135">**IMsRdpClientAdvancedSettings8**</span><span class="sxs-lookup"><span data-stu-id="84740-135">**IMsRdpClientAdvancedSettings8**</span></span>](imsrdpclientadvancedsettings8.md)
+[<span data-ttu-id="3c7d5-135">**IMsRdpClientAdvancedSettings8**</span><span class="sxs-lookup"><span data-stu-id="3c7d5-135">**IMsRdpClientAdvancedSettings8**</span></span>](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[<span data-ttu-id="84740-136">**IMsRdpClientAdvancedSettings6**</span><span class="sxs-lookup"><span data-stu-id="84740-136">**IMsRdpClientAdvancedSettings6**</span></span>](imsrdpclientadvancedsettings6.md)
+[<span data-ttu-id="3c7d5-136">**IMsRdpClientAdvancedSettings6**</span><span class="sxs-lookup"><span data-stu-id="3c7d5-136">**IMsRdpClientAdvancedSettings6**</span></span>](imsrdpclientadvancedsettings6.md)
 </dt> </dl>
 
  

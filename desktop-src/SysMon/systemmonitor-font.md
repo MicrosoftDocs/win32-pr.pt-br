@@ -23,13 +23,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644683"
 ---
-# <a name="systemmonitorfont-property"></a><span data-ttu-id="aec80-106">Propriedade SystemMonitor. Font</span><span class="sxs-lookup"><span data-stu-id="aec80-106">SystemMonitor.Font property</span></span>
+# <a name="systemmonitorfont-property"></a><span data-ttu-id="eede6-106">Propriedade SystemMonitor. Font</span><span class="sxs-lookup"><span data-stu-id="eede6-106">SystemMonitor.Font property</span></span>
 
-<span data-ttu-id="aec80-107">Recupera ou define a fonte usada no controle.</span><span class="sxs-lookup"><span data-stu-id="aec80-107">Retrieves or sets the font used in the control.</span></span>
+<span data-ttu-id="eede6-107">Recupera ou define a fonte usada no controle.</span><span class="sxs-lookup"><span data-stu-id="eede6-107">Retrieves or sets the font used in the control.</span></span>
 
-<span data-ttu-id="aec80-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="aec80-108">This property is read-only.</span></span>
+<span data-ttu-id="eede6-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="eede6-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="aec80-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="aec80-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="eede6-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="eede6-109">Syntax</span></span>
 
 
 ```VB
@@ -38,34 +38,34 @@ Property Font As stdole.IFontDisp
 
 
 
-## <a name="property-value"></a><span data-ttu-id="aec80-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="aec80-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="eede6-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="eede6-110">Property value</span></span>
 
-<span data-ttu-id="aec80-111">Fonte usada para exibir o texto no controle.</span><span class="sxs-lookup"><span data-stu-id="aec80-111">Font used to display text in the control.</span></span>
+<span data-ttu-id="eede6-111">Fonte usada para exibir o texto no controle.</span><span class="sxs-lookup"><span data-stu-id="eede6-111">Font used to display text in the control.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="aec80-112">Comentários</span><span class="sxs-lookup"><span data-stu-id="aec80-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="eede6-112">Comentários</span><span class="sxs-lookup"><span data-stu-id="eede6-112">Remarks</span></span>
 
-<span data-ttu-id="aec80-113">Essa é uma propriedade de ambiente.</span><span class="sxs-lookup"><span data-stu-id="aec80-113">This is an ambient property.</span></span> <span data-ttu-id="aec80-114">O valor dessa propriedade é determinado pelo contêiner.</span><span class="sxs-lookup"><span data-stu-id="aec80-114">The value of this property is determined by the container.</span></span> <span data-ttu-id="aec80-115">Definir o valor dessa propriedade pode afetar a ilusão do controle e do contêiner sendo um único aplicativo.</span><span class="sxs-lookup"><span data-stu-id="aec80-115">Setting the value of this property could affect the illusion of the control and container being a single application.</span></span>
+<span data-ttu-id="eede6-113">Essa é uma propriedade de ambiente.</span><span class="sxs-lookup"><span data-stu-id="eede6-113">This is an ambient property.</span></span> <span data-ttu-id="eede6-114">O valor dessa propriedade é determinado pelo contêiner.</span><span class="sxs-lookup"><span data-stu-id="eede6-114">The value of this property is determined by the container.</span></span> <span data-ttu-id="eede6-115">Definir o valor dessa propriedade pode afetar a ilusão do controle e do contêiner sendo um único aplicativo.</span><span class="sxs-lookup"><span data-stu-id="eede6-115">Setting the value of this property could affect the illusion of the control and container being a single application.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="aec80-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="aec80-116">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="eede6-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="eede6-116">Requirements</span></span>
 
 
 
-| <span data-ttu-id="aec80-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="aec80-117">Requirement</span></span> | <span data-ttu-id="aec80-118">Valor</span><span class="sxs-lookup"><span data-stu-id="aec80-118">Value</span></span> |
+| <span data-ttu-id="eede6-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="eede6-117">Requirement</span></span> | <span data-ttu-id="eede6-118">Valor</span><span class="sxs-lookup"><span data-stu-id="eede6-118">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="aec80-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="aec80-119">Minimum supported client</span></span><br/> | <span data-ttu-id="aec80-120">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="aec80-120">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
-| <span data-ttu-id="aec80-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="aec80-121">Minimum supported server</span></span><br/> | <span data-ttu-id="aec80-122">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="aec80-122">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="aec80-123">DLL</span><span class="sxs-lookup"><span data-stu-id="aec80-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="aec80-124"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="aec80-124"><dt>Sysmon.ocx</dt></span></span> </dl> |
+| <span data-ttu-id="eede6-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="eede6-119">Minimum supported client</span></span><br/> | <span data-ttu-id="eede6-120">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="eede6-120">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
+| <span data-ttu-id="eede6-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="eede6-121">Minimum supported server</span></span><br/> | <span data-ttu-id="eede6-122">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="eede6-122">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="eede6-123">DLL</span><span class="sxs-lookup"><span data-stu-id="eede6-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="eede6-124"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="eede6-124"><dt>Sysmon.ocx</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="aec80-125">Consulte também</span><span class="sxs-lookup"><span data-stu-id="aec80-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eede6-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="eede6-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="aec80-126">**SystemMonitor**</span><span class="sxs-lookup"><span data-stu-id="aec80-126">**SystemMonitor**</span></span>](systemmonitor.md)
+[<span data-ttu-id="eede6-126">**SystemMonitor**</span><span class="sxs-lookup"><span data-stu-id="eede6-126">**SystemMonitor**</span></span>](systemmonitor.md)
 </dt> <dt>
 
-[<span data-ttu-id="aec80-127">**SystemMonitor. ForeColor**</span><span class="sxs-lookup"><span data-stu-id="aec80-127">**SystemMonitor.ForeColor**</span></span>](systemmonitor-forecolor.md)
+[<span data-ttu-id="eede6-127">**SystemMonitor. ForeColor**</span><span class="sxs-lookup"><span data-stu-id="eede6-127">**SystemMonitor.ForeColor**</span></span>](systemmonitor-forecolor.md)
 </dt> </dl>
 
  

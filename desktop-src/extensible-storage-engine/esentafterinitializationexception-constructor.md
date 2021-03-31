@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089814"
 ---
-# <a name="esentafterinitializationexception-constructor"></a><span data-ttu-id="ddfba-103">Construtor EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="ddfba-103">EsentAfterInitializationException constructor</span></span>
+# <a name="esentafterinitializationexception-constructor"></a><span data-ttu-id="f2ff0-103">Construtor EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="f2ff0-103">EsentAfterInitializationException constructor</span></span>
 
-<span data-ttu-id="ddfba-104">Inicializa uma nova instância da classe EsentAfterInitializationException.</span><span class="sxs-lookup"><span data-stu-id="ddfba-104">Initializes a new instance of the EsentAfterInitializationException class.</span></span>
+<span data-ttu-id="f2ff0-104">Inicializa uma nova instância da classe EsentAfterInitializationException.</span><span class="sxs-lookup"><span data-stu-id="f2ff0-104">Initializes a new instance of the EsentAfterInitializationException class.</span></span>
 
-<span data-ttu-id="ddfba-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ddfba-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="ddfba-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ddfba-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f2ff0-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f2ff0-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f2ff0-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f2ff0-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ddfba-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ddfba-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f2ff0-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f2ff0-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentAfterInitializationException()
 public EsentAfterInitializationException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ddfba-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="ddfba-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f2ff0-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="f2ff0-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="ddfba-109">Referência</span><span class="sxs-lookup"><span data-stu-id="ddfba-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f2ff0-109">Referência</span><span class="sxs-lookup"><span data-stu-id="f2ff0-109">Reference</span></span>
 
-[<span data-ttu-id="ddfba-110">Classe EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="ddfba-110">EsentAfterInitializationException class</span></span>](./esentafterinitializationexception-class.md)
+[<span data-ttu-id="f2ff0-110">Classe EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="f2ff0-110">EsentAfterInitializationException class</span></span>](./esentafterinitializationexception-class.md)
 
-[<span data-ttu-id="ddfba-111">Membros do EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="ddfba-111">EsentAfterInitializationException members</span></span>](./esentafterinitializationexception-members.md)
+[<span data-ttu-id="f2ff0-111">Membros do EsentAfterInitializationException</span><span class="sxs-lookup"><span data-stu-id="f2ff0-111">EsentAfterInitializationException members</span></span>](./esentafterinitializationexception-members.md)
 
-[<span data-ttu-id="ddfba-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ddfba-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f2ff0-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f2ff0-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

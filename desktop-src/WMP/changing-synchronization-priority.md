@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/19/2020
 ms.locfileid: "103640173"
 ---
-# <a name="changing-synchronization-priority"></a><span data-ttu-id="c2922-115">Alterando a prioridade de sincronização</span><span class="sxs-lookup"><span data-stu-id="c2922-115">Changing Synchronization Priority</span></span>
+# <a name="changing-synchronization-priority"></a><span data-ttu-id="03242-115">Alterando a prioridade de sincronização</span><span class="sxs-lookup"><span data-stu-id="03242-115">Changing Synchronization Priority</span></span>
 
-<span data-ttu-id="c2922-116">O código de exemplo a seguir especifica um valor de prioridade para cada item no controle ListView identificado pelo IDC \_ PLVIEW.</span><span class="sxs-lookup"><span data-stu-id="c2922-116">The following example code specifies a priority value for each item in the ListView control identified by IDC\_PLVIEW.</span></span> <span data-ttu-id="c2922-117">Os itens marcados com uma marca de seleção recebem um valor de prioridade com base em sua ordem na lista.</span><span class="sxs-lookup"><span data-stu-id="c2922-117">Items that are marked with a check mark are assigned a priority value based on their order in the list.</span></span> <span data-ttu-id="c2922-118">Os itens que não são verificados recebem um valor de prioridade zero.</span><span class="sxs-lookup"><span data-stu-id="c2922-118">Items that are not checked are assigned a priority value of zero.</span></span>
+<span data-ttu-id="03242-116">O código de exemplo a seguir especifica um valor de prioridade para cada item no controle ListView identificado pelo IDC \_ PLVIEW.</span><span class="sxs-lookup"><span data-stu-id="03242-116">The following example code specifies a priority value for each item in the ListView control identified by IDC\_PLVIEW.</span></span> <span data-ttu-id="03242-117">Os itens marcados com uma marca de seleção recebem um valor de prioridade com base em sua ordem na lista.</span><span class="sxs-lookup"><span data-stu-id="03242-117">Items that are marked with a check mark are assigned a priority value based on their order in the list.</span></span> <span data-ttu-id="03242-118">Os itens que não são verificados recebem um valor de prioridade zero.</span><span class="sxs-lookup"><span data-stu-id="03242-118">Items that are not checked are assigned a priority value of zero.</span></span>
 
 
 ```C++
@@ -81,17 +81,17 @@ void CSyncSettings::SetPriorities()
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="c2922-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c2922-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="03242-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="03242-119">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c2922-120">**Interface IWMPMedia**</span><span class="sxs-lookup"><span data-stu-id="c2922-120">**IWMPMedia Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[<span data-ttu-id="03242-120">**Interface IWMPMedia**</span><span class="sxs-lookup"><span data-stu-id="03242-120">**IWMPMedia Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
-[<span data-ttu-id="c2922-121">**Interface IWMPPlaylist**</span><span class="sxs-lookup"><span data-stu-id="c2922-121">**IWMPPlaylist Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
+[<span data-ttu-id="03242-121">**Interface IWMPPlaylist**</span><span class="sxs-lookup"><span data-stu-id="03242-121">**IWMPPlaylist Interface**</span></span>](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
-[<span data-ttu-id="c2922-122">**Gerenciando listas de reprodução de sincronização**</span><span class="sxs-lookup"><span data-stu-id="c2922-122">**Managing Synchronization Playlists**</span></span>](managing-synchronization-playlists.md)
+[<span data-ttu-id="03242-122">**Gerenciando listas de reprodução de sincronização**</span><span class="sxs-lookup"><span data-stu-id="03242-122">**Managing Synchronization Playlists**</span></span>](managing-synchronization-playlists.md)
 </dt> </dl>
 
  

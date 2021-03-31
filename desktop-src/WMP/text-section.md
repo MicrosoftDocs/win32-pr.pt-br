@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005944"
 ---
-# <a name="text-section"></a><span data-ttu-id="d9b61-109">Seção de texto</span><span class="sxs-lookup"><span data-stu-id="d9b61-109">Text Section</span></span>
+# <a name="text-section"></a><span data-ttu-id="9bdf5-109">Seção de texto</span><span class="sxs-lookup"><span data-stu-id="9bdf5-109">Text Section</span></span>
 
-<span data-ttu-id="d9b61-110">Nenhuma seção de texto é usada nesta capa, mas este é um exemplo do formato que você deve usar ao implementar uma seção de texto:</span><span class="sxs-lookup"><span data-stu-id="d9b61-110">No text section is used in this skin, but the following is an example of the format you should use when implementing a text section:</span></span>
+<span data-ttu-id="9bdf5-110">Nenhuma seção de texto é usada nesta capa, mas este é um exemplo do formato que você deve usar ao implementar uma seção de texto:</span><span class="sxs-lookup"><span data-stu-id="9bdf5-110">No text section is used in this skin, but the following is an example of the format you should use when implementing a text section:</span></span>
 
 
 ```C++
@@ -33,11 +33,11 @@ ms.locfileid: "104005944"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="d9b61-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d9b61-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9bdf5-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9bdf5-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d9b61-112">**Escrevendo o código**</span><span class="sxs-lookup"><span data-stu-id="d9b61-112">**Writing the Code**</span></span>](writing-the-code.md)
+[<span data-ttu-id="9bdf5-112">**Escrevendo o código**</span><span class="sxs-lookup"><span data-stu-id="9bdf5-112">**Writing the Code**</span></span>](writing-the-code.md)
 </dt> </dl>
 
  

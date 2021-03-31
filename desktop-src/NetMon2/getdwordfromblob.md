@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089966"
 ---
-# <a name="getdwordfromblob-function"></a><span data-ttu-id="8fc95-103">Função GetDwordFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-103">GetDwordFromBlob function</span></span>
+# <a name="getdwordfromblob-function"></a><span data-ttu-id="a699a-103">Função GetDwordFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-103">GetDwordFromBlob function</span></span>
 
-<span data-ttu-id="8fc95-104">A função **GetDwordFromBlob** recupera o valor de **DWORD** nomeado de um blob.</span><span class="sxs-lookup"><span data-stu-id="8fc95-104">The **GetDwordFromBlob** function retrieves the named **DWORD** value from a BLOB.</span></span>
+<span data-ttu-id="a699a-104">A função **GetDwordFromBlob** recupera o valor de **DWORD** nomeado de um blob.</span><span class="sxs-lookup"><span data-stu-id="a699a-104">The **GetDwordFromBlob** function retrieves the named **DWORD** value from a BLOB.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8fc95-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8fc95-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a699a-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a699a-105">Syntax</span></span>
 
 
 ```C++
@@ -39,97 +39,97 @@ DWORD GetDwordFromBlob(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8fc95-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8fc95-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a699a-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a699a-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8fc95-107">*hBlob* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-107">*hBlob* \[in\]</span></span>
+<span data-ttu-id="a699a-107">*hBlob* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a699a-107">*hBlob* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fc95-108">Identificador para um BLOB.</span><span class="sxs-lookup"><span data-stu-id="8fc95-108">Handle to a BLOB.</span></span>
+<span data-ttu-id="a699a-108">Identificador para um BLOB.</span><span class="sxs-lookup"><span data-stu-id="a699a-108">Handle to a BLOB.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fc95-109">*pOwnerName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-109">*pOwnerName* \[in\]</span></span>
+<span data-ttu-id="a699a-109">*pOwnerName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a699a-109">*pOwnerName* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fc95-110">Ponteiro para o nome do proprietário do BLOB.</span><span class="sxs-lookup"><span data-stu-id="8fc95-110">Pointer to the BLOB owner name.</span></span>
+<span data-ttu-id="a699a-110">Ponteiro para o nome do proprietário do BLOB.</span><span class="sxs-lookup"><span data-stu-id="a699a-110">Pointer to the BLOB owner name.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fc95-111">*pCategoryName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-111">*pCategoryName* \[in\]</span></span>
+<span data-ttu-id="a699a-111">*pCategoryName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a699a-111">*pCategoryName* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fc95-112">Ponteiro para o nome da categoria de BLOB.</span><span class="sxs-lookup"><span data-stu-id="8fc95-112">Pointer to the BLOB category name.</span></span>
+<span data-ttu-id="a699a-112">Ponteiro para o nome da categoria de BLOB.</span><span class="sxs-lookup"><span data-stu-id="a699a-112">Pointer to the BLOB category name.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fc95-113">*pTagName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-113">*pTagName* \[in\]</span></span>
+<span data-ttu-id="a699a-113">*pTagName* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a699a-113">*pTagName* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fc95-114">Ponteiro para o nome da marca de BLOB.</span><span class="sxs-lookup"><span data-stu-id="8fc95-114">Pointer to the BLOB tag name.</span></span>
+<span data-ttu-id="a699a-114">Ponteiro para o nome da marca de BLOB.</span><span class="sxs-lookup"><span data-stu-id="a699a-114">Pointer to the BLOB tag name.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8fc95-115">*pDword* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-115">*pDword* \[out\]</span></span>
+<span data-ttu-id="a699a-115">*pDword* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="a699a-115">*pDword* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8fc95-116">Ponteiro para o valor **DWORD** do blob.</span><span class="sxs-lookup"><span data-stu-id="8fc95-116">Pointer to the **DWORD** value of the BLOB.</span></span>
+<span data-ttu-id="a699a-116">Ponteiro para o valor **DWORD** do blob.</span><span class="sxs-lookup"><span data-stu-id="a699a-116">Pointer to the **DWORD** value of the BLOB.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="8fc95-117">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="8fc95-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a699a-117">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="a699a-117">Return value</span></span>
 
-<span data-ttu-id="8fc95-118">Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.</span><span class="sxs-lookup"><span data-stu-id="8fc95-118">If the function is successful, the return value is NMERR\_SUCCESS.</span></span>
+<span data-ttu-id="a699a-118">Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.</span><span class="sxs-lookup"><span data-stu-id="a699a-118">If the function is successful, the return value is NMERR\_SUCCESS.</span></span>
 
-<span data-ttu-id="8fc95-119">Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que descreve o erro.</span><span class="sxs-lookup"><span data-stu-id="8fc95-119">If the function is unsuccessful, the return value is a NMERR value that describes the error.</span></span>
+<span data-ttu-id="a699a-119">Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que descreve o erro.</span><span class="sxs-lookup"><span data-stu-id="a699a-119">If the function is unsuccessful, the return value is a NMERR value that describes the error.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="8fc95-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8fc95-120">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a699a-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a699a-120">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8fc95-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="8fc95-121">Requirement</span></span> | <span data-ttu-id="8fc95-122">Valor</span><span class="sxs-lookup"><span data-stu-id="8fc95-122">Value</span></span> |
+| <span data-ttu-id="a699a-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="a699a-121">Requirement</span></span> | <span data-ttu-id="a699a-122">Valor</span><span class="sxs-lookup"><span data-stu-id="a699a-122">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="8fc95-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8fc95-123">Minimum supported client</span></span><br/> | <span data-ttu-id="8fc95-124">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-124">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                              |
-| <span data-ttu-id="8fc95-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8fc95-125">Minimum supported server</span></span><br/> | <span data-ttu-id="8fc95-126">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="8fc95-126">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="8fc95-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8fc95-127">Header</span></span><br/>                   | <dl> <span data-ttu-id="8fc95-128"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="8fc95-128"><dt>Netmon.h</dt></span></span> </dl>     |
-| <span data-ttu-id="8fc95-129">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="8fc95-129">Library</span></span><br/>                  | <dl> <span data-ttu-id="8fc95-130"><dt>Npptools. lib</dt></span><span class="sxs-lookup"><span data-stu-id="8fc95-130"><dt>Npptools.lib</dt></span></span> </dl> |
-| <span data-ttu-id="8fc95-131">DLL</span><span class="sxs-lookup"><span data-stu-id="8fc95-131">DLL</span></span><br/>                      | <dl> <span data-ttu-id="8fc95-132"><dt>Npptools.dll</dt></span><span class="sxs-lookup"><span data-stu-id="8fc95-132"><dt>Npptools.dll</dt></span></span> </dl> |
+| <span data-ttu-id="a699a-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a699a-123">Minimum supported client</span></span><br/> | <span data-ttu-id="a699a-124">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="a699a-124">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                              |
+| <span data-ttu-id="a699a-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a699a-125">Minimum supported server</span></span><br/> | <span data-ttu-id="a699a-126">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="a699a-126">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="a699a-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a699a-127">Header</span></span><br/>                   | <dl> <span data-ttu-id="a699a-128"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="a699a-128"><dt>Netmon.h</dt></span></span> </dl>     |
+| <span data-ttu-id="a699a-129">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="a699a-129">Library</span></span><br/>                  | <dl> <span data-ttu-id="a699a-130"><dt>Npptools. lib</dt></span><span class="sxs-lookup"><span data-stu-id="a699a-130"><dt>Npptools.lib</dt></span></span> </dl> |
+| <span data-ttu-id="a699a-131">DLL</span><span class="sxs-lookup"><span data-stu-id="a699a-131">DLL</span></span><br/>                      | <dl> <span data-ttu-id="a699a-132"><dt>Npptools.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a699a-132"><dt>Npptools.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8fc95-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="8fc95-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a699a-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="a699a-133">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8fc95-134">SetDwordInBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-134">SetDwordInBlob</span></span>](setdwordinblob.md)
+[<span data-ttu-id="a699a-134">SetDwordInBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-134">SetDwordInBlob</span></span>](setdwordinblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-135">GetBoolFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-135">GetBoolFromBlob</span></span>](getboolfromblob.md)
+[<span data-ttu-id="a699a-135">GetBoolFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-135">GetBoolFromBlob</span></span>](getboolfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-136">GetClassIDFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-136">GetClassIDFromBlob</span></span>](getclassidfromblob.md)
+[<span data-ttu-id="a699a-136">GetClassIDFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-136">GetClassIDFromBlob</span></span>](getclassidfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-137">GetMacAddressFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-137">GetMacAddressFromBlob</span></span>](getmacaddressfromblob.md)
+[<span data-ttu-id="a699a-137">GetMacAddressFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-137">GetMacAddressFromBlob</span></span>](getmacaddressfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-138">GetNetworkInfoFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-138">GetNetworkInfoFromBlob</span></span>](getnetworkinfofromblob.md)
+[<span data-ttu-id="a699a-138">GetNetworkInfoFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-138">GetNetworkInfoFromBlob</span></span>](getnetworkinfofromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-139">GetNPPAddressFilterFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-139">GetNPPAddressFilterFromBlob</span></span>](getnppaddressfilterfromblob.md)
+[<span data-ttu-id="a699a-139">GetNPPAddressFilterFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-139">GetNPPAddressFilterFromBlob</span></span>](getnppaddressfilterfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-140">GetNPPPatternFilterFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-140">GetNPPPatternFilterFromBlob</span></span>](getnpppatternfilterfromblob.md)
+[<span data-ttu-id="a699a-140">GetNPPPatternFilterFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-140">GetNPPPatternFilterFromBlob</span></span>](getnpppatternfilterfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-141">GetNPPTriggerFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-141">GetNPPTriggerFromBlob</span></span>](getnpptriggerfromblob.md)
+[<span data-ttu-id="a699a-141">GetNPPTriggerFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-141">GetNPPTriggerFromBlob</span></span>](getnpptriggerfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-142">GetStringFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-142">GetStringFromBlob</span></span>](getstringfromblob.md)
+[<span data-ttu-id="a699a-142">GetStringFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-142">GetStringFromBlob</span></span>](getstringfromblob.md)
 </dt> <dt>
 
-[<span data-ttu-id="8fc95-143">GetStringsFromBlob</span><span class="sxs-lookup"><span data-stu-id="8fc95-143">GetStringsFromBlob</span></span>](getstringsfromblob.md)
+[<span data-ttu-id="a699a-143">GetStringsFromBlob</span><span class="sxs-lookup"><span data-stu-id="a699a-143">GetStringsFromBlob</span></span>](getstringsfromblob.md)
 </dt> </dl>
 
  

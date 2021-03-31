@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005699"
 ---
-# <a name="caret-reference"></a><span data-ttu-id="2016e-103">Referência de cursor</span><span class="sxs-lookup"><span data-stu-id="2016e-103">Caret Reference</span></span>
+# <a name="caret-reference"></a><span data-ttu-id="22219-103">Referência de cursor</span><span class="sxs-lookup"><span data-stu-id="22219-103">Caret Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="2016e-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2016e-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="22219-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="22219-104">In This Section</span></span>
 
--   [<span data-ttu-id="2016e-105">Funções de cursor</span><span class="sxs-lookup"><span data-stu-id="2016e-105">Caret Functions</span></span>](caret-functions.md)
+-   [<span data-ttu-id="22219-105">Funções de cursor</span><span class="sxs-lookup"><span data-stu-id="22219-105">Caret Functions</span></span>](caret-functions.md)
 
  
 

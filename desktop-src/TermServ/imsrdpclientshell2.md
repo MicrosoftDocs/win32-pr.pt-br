@@ -23,50 +23,50 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644412"
 ---
-# <a name="imsrdpclientshell2-interface"></a><span data-ttu-id="c7811-105">Interface IMsRdpClientShell2</span><span class="sxs-lookup"><span data-stu-id="c7811-105">IMsRdpClientShell2 interface</span></span>
+# <a name="imsrdpclientshell2-interface"></a><span data-ttu-id="2d823-105">Interface IMsRdpClientShell2</span><span class="sxs-lookup"><span data-stu-id="2d823-105">IMsRdpClientShell2 interface</span></span>
 
-<span data-ttu-id="c7811-106">Expõe as propriedades que iniciam o cliente do Conexão de Área de Trabalho Remota do Acesso via Web à Área de Trabalho Remota (RD Acesso via Web) ou de outros portais da Web.</span><span class="sxs-lookup"><span data-stu-id="c7811-106">Exposes properties that launch the Remote Desktop Connection client from Remote Desktop Web Access (RD Web Access) or from other web portals.</span></span>
+<span data-ttu-id="2d823-106">Expõe as propriedades que iniciam o cliente do Conexão de Área de Trabalho Remota do Acesso via Web à Área de Trabalho Remota (RD Acesso via Web) ou de outros portais da Web.</span><span class="sxs-lookup"><span data-stu-id="2d823-106">Exposes properties that launch the Remote Desktop Connection client from Remote Desktop Web Access (RD Web Access) or from other web portals.</span></span>
 
-<span data-ttu-id="c7811-107">Essa interface é implementada pelo controle de Acesso via Web de Serviços de Área de Trabalho Remota, que é um wrapper em volta do cliente Conexão de Área de Trabalho Remota (MsTscAx.dll) e o proxy de tempo de execução de conexões do RemoteApp e da área de trabalho (Tswbprxy.exe).</span><span class="sxs-lookup"><span data-stu-id="c7811-107">This interface is implemented by the Remote Desktop Services Web Access Control, which is a wrapper around the Remote Desktop Connection client (MsTscAx.dll) and the RemoteApp and Desktop Connections runtime proxy (Tswbprxy.exe).</span></span>
+<span data-ttu-id="2d823-107">Essa interface é implementada pelo controle de Acesso via Web de Serviços de Área de Trabalho Remota, que é um wrapper em volta do cliente Conexão de Área de Trabalho Remota (MsTscAx.dll) e o proxy de tempo de execução de conexões do RemoteApp e da área de trabalho (Tswbprxy.exe).</span><span class="sxs-lookup"><span data-stu-id="2d823-107">This interface is implemented by the Remote Desktop Services Web Access Control, which is a wrapper around the Remote Desktop Connection client (MsTscAx.dll) and the RemoteApp and Desktop Connections runtime proxy (Tswbprxy.exe).</span></span>
 
-## <a name="members"></a><span data-ttu-id="c7811-108">Membros</span><span class="sxs-lookup"><span data-stu-id="c7811-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="2d823-108">Membros</span><span class="sxs-lookup"><span data-stu-id="2d823-108">Members</span></span>
 
-<span data-ttu-id="c7811-109">A interface **IMsRdpClientShell2** herda de **IMsRdpClientShell**.</span><span class="sxs-lookup"><span data-stu-id="c7811-109">The **IMsRdpClientShell2** interface inherits from **IMsRdpClientShell**.</span></span> <span data-ttu-id="c7811-110">**IMsRdpClientShell2** também tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="c7811-110">**IMsRdpClientShell2** also has these types of members:</span></span>
+<span data-ttu-id="2d823-109">A interface **IMsRdpClientShell2** herda de **IMsRdpClientShell**.</span><span class="sxs-lookup"><span data-stu-id="2d823-109">The **IMsRdpClientShell2** interface inherits from **IMsRdpClientShell**.</span></span> <span data-ttu-id="2d823-110">**IMsRdpClientShell2** também tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="2d823-110">**IMsRdpClientShell2** also has these types of members:</span></span>
 
--   [<span data-ttu-id="c7811-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c7811-111">Properties</span></span>](#properties)
+-   [<span data-ttu-id="2d823-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2d823-111">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="c7811-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c7811-112">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="2d823-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2d823-112">Properties</span></span>
 
-<span data-ttu-id="c7811-113">A interface **IMsRdpClientShell2** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="c7811-113">The **IMsRdpClientShell2** interface has these properties.</span></span>
+<span data-ttu-id="2d823-113">A interface **IMsRdpClientShell2** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="2d823-113">The **IMsRdpClientShell2** interface has these properties.</span></span>
 
 
 
-| <span data-ttu-id="c7811-114">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c7811-114">Property</span></span>                                                                               | <span data-ttu-id="c7811-115">Tipo de acesso</span><span class="sxs-lookup"><span data-stu-id="c7811-115">Access type</span></span>          | <span data-ttu-id="c7811-116">Description</span><span class="sxs-lookup"><span data-stu-id="c7811-116">Description</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="2d823-114">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2d823-114">Property</span></span>                                                                               | <span data-ttu-id="2d823-115">Tipo de acesso</span><span class="sxs-lookup"><span data-stu-id="2d823-115">Access type</span></span>          | <span data-ttu-id="2d823-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d823-116">Description</span></span>                                                                                                                                                                       |
 |:---------------------------------------------------------------------------------------|:---------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="c7811-117">**MsRdpWorkspace**</span><span class="sxs-lookup"><span data-stu-id="c7811-117">**MsRdpWorkspace**</span></span>](imsrdpclientshell2-msrdpworkspace.md)<br/>                 | <span data-ttu-id="c7811-118">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="c7811-118">Read-only</span></span><br/> | <span data-ttu-id="c7811-119">Recupera um ponteiro para a interface [**IMsRdpWorkspace**](imsrdpworkspace.md) , que é usada para gerenciar conexão de RemoteApp e área de trabalho credenciais e conexões.</span><span class="sxs-lookup"><span data-stu-id="c7811-119">Retrieves a pointer to the [**IMsRdpWorkspace**](imsrdpworkspace.md) interface, which is used to manage RemoteApp and Desktop Connection credentials and connections.</span></span><br/> |
-| [<span data-ttu-id="c7811-120">**SecuredSettingsEnabled**</span><span class="sxs-lookup"><span data-stu-id="c7811-120">**SecuredSettingsEnabled**</span></span>](imsrdpclientshell2-securedsettingsenabled.md)<br/> | <span data-ttu-id="c7811-121">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="c7811-121">Read-only</span></span><br/> | <span data-ttu-id="c7811-122">Recupera um valor que indica se a página da Web atual está em uma zona de segurança de URL confiável do Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="c7811-122">Retrieves a value that indicates whether the current webpage is in a trusted Internet Explorer URL security zone.</span></span><br/>                                                      |
+| [<span data-ttu-id="2d823-117">**MsRdpWorkspace**</span><span class="sxs-lookup"><span data-stu-id="2d823-117">**MsRdpWorkspace**</span></span>](imsrdpclientshell2-msrdpworkspace.md)<br/>                 | <span data-ttu-id="2d823-118">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="2d823-118">Read-only</span></span><br/> | <span data-ttu-id="2d823-119">Recupera um ponteiro para a interface [**IMsRdpWorkspace**](imsrdpworkspace.md) , que é usada para gerenciar conexão de RemoteApp e área de trabalho credenciais e conexões.</span><span class="sxs-lookup"><span data-stu-id="2d823-119">Retrieves a pointer to the [**IMsRdpWorkspace**](imsrdpworkspace.md) interface, which is used to manage RemoteApp and Desktop Connection credentials and connections.</span></span><br/> |
+| [<span data-ttu-id="2d823-120">**SecuredSettingsEnabled**</span><span class="sxs-lookup"><span data-stu-id="2d823-120">**SecuredSettingsEnabled**</span></span>](imsrdpclientshell2-securedsettingsenabled.md)<br/> | <span data-ttu-id="2d823-121">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="2d823-121">Read-only</span></span><br/> | <span data-ttu-id="2d823-122">Recupera um valor que indica se a página da Web atual está em uma zona de segurança de URL confiável do Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="2d823-122">Retrieves a value that indicates whether the current webpage is in a trusted Internet Explorer URL security zone.</span></span><br/>                                                      |
 
 
 
  
 
-## <a name="requirements"></a><span data-ttu-id="c7811-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c7811-123">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2d823-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2d823-123">Requirements</span></span>
 
 
 
-| <span data-ttu-id="c7811-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="c7811-124">Requirement</span></span> | <span data-ttu-id="c7811-125">Valor</span><span class="sxs-lookup"><span data-stu-id="c7811-125">Value</span></span> |
+| <span data-ttu-id="2d823-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="2d823-124">Requirement</span></span> | <span data-ttu-id="2d823-125">Valor</span><span class="sxs-lookup"><span data-stu-id="2d823-125">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c7811-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c7811-126">Minimum supported client</span></span><br/> | <span data-ttu-id="c7811-127">Windows 7</span><span class="sxs-lookup"><span data-stu-id="c7811-127">Windows 7</span></span><br/>                                                                          |
-| <span data-ttu-id="c7811-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c7811-128">Minimum supported server</span></span><br/> | <span data-ttu-id="c7811-129">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="c7811-129">Windows Server 2008 R2</span></span><br/>                                                             |
-| <span data-ttu-id="c7811-130">DLL</span><span class="sxs-lookup"><span data-stu-id="c7811-130">DLL</span></span><br/>                      | <dl> <span data-ttu-id="c7811-131"><dt>MsRdpWebAccess.dll</dt></span><span class="sxs-lookup"><span data-stu-id="c7811-131"><dt>MsRdpWebAccess.dll</dt></span></span> </dl> |
+| <span data-ttu-id="2d823-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2d823-126">Minimum supported client</span></span><br/> | <span data-ttu-id="2d823-127">Windows 7</span><span class="sxs-lookup"><span data-stu-id="2d823-127">Windows 7</span></span><br/>                                                                          |
+| <span data-ttu-id="2d823-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2d823-128">Minimum supported server</span></span><br/> | <span data-ttu-id="2d823-129">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="2d823-129">Windows Server 2008 R2</span></span><br/>                                                             |
+| <span data-ttu-id="2d823-130">DLL</span><span class="sxs-lookup"><span data-stu-id="2d823-130">DLL</span></span><br/>                      | <dl> <span data-ttu-id="2d823-131"><dt>MsRdpWebAccess.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2d823-131"><dt>MsRdpWebAccess.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="c7811-132">Consulte também</span><span class="sxs-lookup"><span data-stu-id="c7811-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2d823-132">Confira também</span><span class="sxs-lookup"><span data-stu-id="2d823-132">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c7811-133">**IMsRdpWorkspace**</span><span class="sxs-lookup"><span data-stu-id="c7811-133">**IMsRdpWorkspace**</span></span>](imsrdpworkspace.md)
+[<span data-ttu-id="2d823-133">**IMsRdpWorkspace**</span><span class="sxs-lookup"><span data-stu-id="2d823-133">**IMsRdpWorkspace**</span></span>](imsrdpworkspace.md)
 </dt> </dl>
 
  

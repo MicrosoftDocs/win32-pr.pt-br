@@ -16,17 +16,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641859"
 ---
-# <a name="eaphostconfig-schema"></a><span data-ttu-id="ad9e3-104">Esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="ad9e3-104">eaphostconfig Schema</span></span>
+# <a name="eaphostconfig-schema"></a><span data-ttu-id="f3d26-104">Esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="f3d26-104">eaphostconfig Schema</span></span>
 
-<span data-ttu-id="ad9e3-105">O esquema eaphostconfig define o esquema de configuração do EAPHost.</span><span class="sxs-lookup"><span data-stu-id="ad9e3-105">The eaphostconfig schema defines EAPHost configuration schema.</span></span>
+<span data-ttu-id="f3d26-105">O esquema eaphostconfig define o esquema de configuração do EAPHost.</span><span class="sxs-lookup"><span data-stu-id="f3d26-105">The eaphostconfig schema defines EAPHost configuration schema.</span></span>
 
--   [<span data-ttu-id="ad9e3-106">Elementos do esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="ad9e3-106">eaphostconfig Schema Elements</span></span>](eaphostconfigschema-elements.md)
+-   [<span data-ttu-id="f3d26-106">Elementos do esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="f3d26-106">eaphostconfig Schema Elements</span></span>](eaphostconfigschema-elements.md)
 
-## <a name="related-topics"></a><span data-ttu-id="ad9e3-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ad9e3-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f3d26-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f3d26-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ad9e3-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="ad9e3-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="f3d26-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="f3d26-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> </dl>
 
  

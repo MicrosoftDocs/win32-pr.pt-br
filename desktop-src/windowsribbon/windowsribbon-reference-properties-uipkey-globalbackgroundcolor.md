@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005685"
 ---
-# <a name="ui_pkey_globalbackgroundcolor"></a><span data-ttu-id="10c2b-103">\_GlobalBackgroundColor PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="10c2b-103">UI\_PKEY\_GlobalBackgroundColor</span></span>
+# <a name="ui_pkey_globalbackgroundcolor"></a><span data-ttu-id="54106-103">\_GlobalBackgroundColor PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="54106-103">UI\_PKEY\_GlobalBackgroundColor</span></span>
 
-<span data-ttu-id="10c2b-104">Identifica a \_ Propriedade PKEY GlobalBackgroundColor da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="10c2b-104">Identifies the UI\_PKEY\_GlobalBackgroundColor property.</span></span>
+<span data-ttu-id="54106-104">Identifica a \_ Propriedade PKEY GlobalBackgroundColor da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="54106-104">Identifies the UI\_PKEY\_GlobalBackgroundColor property.</span></span>
 
 ```
 propertyDescription
@@ -25,20 +25,20 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a><span data-ttu-id="10c2b-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="10c2b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="54106-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="54106-105">Remarks</span></span>
 
-<span data-ttu-id="10c2b-106">A interface do usuário \_ PKEY \_ GlobalBackgroundColor é usada por um aplicativo para consultar a cor global do plano de fundo de uma faixa de faixas personalizada.</span><span class="sxs-lookup"><span data-stu-id="10c2b-106">UI\_PKEY\_GlobalBackgroundColor is used by an application to query the global background color for a customized ribbon.</span></span>
+<span data-ttu-id="54106-106">A interface do usuário \_ PKEY \_ GlobalBackgroundColor é usada por um aplicativo para consultar a cor global do plano de fundo de uma faixa de faixas personalizada.</span><span class="sxs-lookup"><span data-stu-id="54106-106">UI\_PKEY\_GlobalBackgroundColor is used by an application to query the global background color for a customized ribbon.</span></span>
 
-<span data-ttu-id="10c2b-107">**Introduzido no Windows 8:** a  [interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) não pode ser definida independentemente da interface do usuário \_ PKEY \_ GlobalBackgroundColor.</span><span class="sxs-lookup"><span data-stu-id="10c2b-107">**Introduced in Windows 8:** [UI\_PKEY\_GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) cannot be set independently of UI\_PKEY\_GlobalBackgroundColor.</span></span>
+<span data-ttu-id="54106-107">**Introduzido no Windows 8:** a  [interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) não pode ser definida independentemente da interface do usuário \_ PKEY \_ GlobalBackgroundColor.</span><span class="sxs-lookup"><span data-stu-id="54106-107">**Introduced in Windows 8:** [UI\_PKEY\_GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) cannot be set independently of UI\_PKEY\_GlobalBackgroundColor.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="10c2b-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="10c2b-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="54106-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="54106-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="10c2b-109">Propriedades da estrutura</span><span class="sxs-lookup"><span data-stu-id="10c2b-109">Framework Properties</span></span>](windowsribbon-reference-properties-framework.md)
+[<span data-ttu-id="54106-109">Propriedades da estrutura</span><span class="sxs-lookup"><span data-stu-id="54106-109">Framework Properties</span></span>](windowsribbon-reference-properties-framework.md)
 </dt> <dt>
 
-[<span data-ttu-id="10c2b-110">Personalizando cores da faixa de das</span><span class="sxs-lookup"><span data-stu-id="10c2b-110">Customizing Ribbon Colors</span></span>](ribbon-color.md)
+[<span data-ttu-id="54106-110">Personalizando cores da faixa de das</span><span class="sxs-lookup"><span data-stu-id="54106-110">Customizing Ribbon Colors</span></span>](ribbon-color.md)
 </dt> </dl>
 
  

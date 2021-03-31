@@ -24,16 +24,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644856"
 ---
-# <a name="ipropertyfiltercollectionremoveitem-property"></a><span data-ttu-id="768d9-106">Propriedade IPropertyFilterCollection:: RemoveItem</span><span class="sxs-lookup"><span data-stu-id="768d9-106">IPropertyFilterCollection::RemoveItem property</span></span>
+# <a name="ipropertyfiltercollectionremoveitem-property"></a><span data-ttu-id="527a2-106">Propriedade IPropertyFilterCollection:: RemoveItem</span><span class="sxs-lookup"><span data-stu-id="527a2-106">IPropertyFilterCollection::RemoveItem property</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="768d9-107">O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="768d9-107">Windows Desktop Search 2.x is an obsolete technology that was originally available as an add-in for Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="768d9-108">Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso.</span><span class="sxs-lookup"><span data-stu-id="768d9-108">On later releases, use the [Windows Search API](../search/-search-reference-entry-page.md) instead.</span></span> 
+> <span data-ttu-id="527a2-107">O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="527a2-107">Windows Desktop Search 2.x is an obsolete technology that was originally available as an add-in for Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="527a2-108">Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso.</span><span class="sxs-lookup"><span data-stu-id="527a2-108">On later releases, use the [Windows Search API](../search/-search-reference-entry-page.md) instead.</span></span> 
 
-<span data-ttu-id="768d9-109">Remove um filtro específico para a coleção.</span><span class="sxs-lookup"><span data-stu-id="768d9-109">Removes a specific filter to the collection.</span></span>
+<span data-ttu-id="527a2-109">Remove um filtro específico para a coleção.</span><span class="sxs-lookup"><span data-stu-id="527a2-109">Removes a specific filter to the collection.</span></span>
 
-<span data-ttu-id="768d9-110">Essa propriedade é somente gravação.</span><span class="sxs-lookup"><span data-stu-id="768d9-110">This property is write-only.</span></span>
+<span data-ttu-id="527a2-110">Essa propriedade é somente gravação.</span><span class="sxs-lookup"><span data-stu-id="527a2-110">This property is write-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="768d9-111">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="768d9-111">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="527a2-111">Syntax</span><span class="sxs-lookup"><span data-stu-id="527a2-111">Syntax</span></span>
 
 
 ```C++
@@ -44,20 +44,20 @@ HRESULT put_RemoveItem(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="768d9-112">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="768d9-112">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="527a2-112">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="527a2-112">Property value</span></span>
 
-<span data-ttu-id="768d9-113">Aceita um ponteiro para o índice do filtro a ser removido.</span><span class="sxs-lookup"><span data-stu-id="768d9-113">Accepts a pointer to the index for the filter to be removed.</span></span>
+<span data-ttu-id="527a2-113">Aceita um ponteiro para o índice do filtro a ser removido.</span><span class="sxs-lookup"><span data-stu-id="527a2-113">Accepts a pointer to the index for the filter to be removed.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="768d9-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="768d9-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="527a2-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="527a2-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="768d9-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="768d9-115">Requirement</span></span> | <span data-ttu-id="768d9-116">Valor</span><span class="sxs-lookup"><span data-stu-id="768d9-116">Value</span></span> |
+| <span data-ttu-id="527a2-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="527a2-115">Requirement</span></span> | <span data-ttu-id="527a2-116">Valor</span><span class="sxs-lookup"><span data-stu-id="527a2-116">Value</span></span> |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| <span data-ttu-id="768d9-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="768d9-117">Minimum supported client</span></span><br/> | <span data-ttu-id="768d9-118">\[Somente aplicativos de área de trabalho do Windows XP com SP2\]</span><span class="sxs-lookup"><span data-stu-id="768d9-118">Windows XP with SP2 \[desktop apps only\]</span></span><br/>                                      |
-| <span data-ttu-id="768d9-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="768d9-119">Minimum supported server</span></span><br/> | <span data-ttu-id="768d9-120">\[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]</span><span class="sxs-lookup"><span data-stu-id="768d9-120">Windows Server 2003 with SP1 \[desktop apps only\]</span></span><br/>                             |
-| <span data-ttu-id="768d9-121">Redistribuível</span><span class="sxs-lookup"><span data-stu-id="768d9-121">Redistributable</span></span><br/>          | <span data-ttu-id="768d9-122">Windows Desktop Search (WDS) 2.6.5</span><span class="sxs-lookup"><span data-stu-id="768d9-122">Windows Desktop Search (WDS) 2.6.5</span></span><br/>                                             |
-| <span data-ttu-id="768d9-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="768d9-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="768d9-124"><dt>WdsSharedIDL. h</dt></span><span class="sxs-lookup"><span data-stu-id="768d9-124"><dt>WdsSharedIDL.h</dt></span></span> </dl> |
+| <span data-ttu-id="527a2-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="527a2-117">Minimum supported client</span></span><br/> | <span data-ttu-id="527a2-118">\[Somente aplicativos de área de trabalho do Windows XP com SP2\]</span><span class="sxs-lookup"><span data-stu-id="527a2-118">Windows XP with SP2 \[desktop apps only\]</span></span><br/>                                      |
+| <span data-ttu-id="527a2-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="527a2-119">Minimum supported server</span></span><br/> | <span data-ttu-id="527a2-120">\[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]</span><span class="sxs-lookup"><span data-stu-id="527a2-120">Windows Server 2003 with SP1 \[desktop apps only\]</span></span><br/>                             |
+| <span data-ttu-id="527a2-121">Redistribuível</span><span class="sxs-lookup"><span data-stu-id="527a2-121">Redistributable</span></span><br/>          | <span data-ttu-id="527a2-122">Windows Desktop Search (WDS) 2.6.5</span><span class="sxs-lookup"><span data-stu-id="527a2-122">Windows Desktop Search (WDS) 2.6.5</span></span><br/>                                             |
+| <span data-ttu-id="527a2-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="527a2-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="527a2-124"><dt>WdsSharedIDL. h</dt></span><span class="sxs-lookup"><span data-stu-id="527a2-124"><dt>WdsSharedIDL.h</dt></span></span> </dl> |
 
 
 

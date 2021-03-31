@@ -16,18 +16,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641872"
 ---
-# <a name="baseeapuserpropertiesv1-schema"></a><span data-ttu-id="d2e53-104">Esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="d2e53-104">baseeapuserpropertiesv1 Schema</span></span>
+# <a name="baseeapuserpropertiesv1-schema"></a><span data-ttu-id="5db67-104">Esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="5db67-104">baseeapuserpropertiesv1 Schema</span></span>
 
-<span data-ttu-id="d2e53-105">O esquema baseeapuserpropertiesv1 define elementos de esquema de credencial comuns.</span><span class="sxs-lookup"><span data-stu-id="d2e53-105">The baseeapuserpropertiesv1 schema defines common credential schema elements.</span></span>
+<span data-ttu-id="5db67-105">O esquema baseeapuserpropertiesv1 define elementos de esquema de credencial comuns.</span><span class="sxs-lookup"><span data-stu-id="5db67-105">The baseeapuserpropertiesv1 schema defines common credential schema elements.</span></span>
 
--   [<span data-ttu-id="d2e53-106">Elementos do esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="d2e53-106">baseeapuserpropertiesv1 Schema Elements</span></span>](baseeapuserpropertiesv1schema-elements.md)
--   [<span data-ttu-id="d2e53-107">Tipos complexos de esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="d2e53-107">baseeapuserpropertiesv1 Schema Complex Types</span></span>](baseeapuserpropertiesv1schema-complex-types.md)
+-   [<span data-ttu-id="5db67-106">Elementos do esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="5db67-106">baseeapuserpropertiesv1 Schema Elements</span></span>](baseeapuserpropertiesv1schema-elements.md)
+-   [<span data-ttu-id="5db67-107">Tipos complexos de esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="5db67-107">baseeapuserpropertiesv1 Schema Complex Types</span></span>](baseeapuserpropertiesv1schema-complex-types.md)
 
-## <a name="related-topics"></a><span data-ttu-id="d2e53-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d2e53-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5db67-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5db67-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d2e53-109">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="d2e53-109">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="5db67-109">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="5db67-109">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> </dl>
 
  
