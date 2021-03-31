@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635048"
 ---
-# <a name="wfp-monitoring"></a><span data-ttu-id="6625c-103">Monitoramento de WFP</span><span class="sxs-lookup"><span data-stu-id="6625c-103">WFP Monitoring</span></span>
+# <a name="wfp-monitoring"></a><span data-ttu-id="b66b3-103">Monitoramento de WFP</span><span class="sxs-lookup"><span data-stu-id="b66b3-103">WFP Monitoring</span></span>
 
-<span data-ttu-id="6625c-104">Esta seção fornece informações sobre o sistema de monitoramento da WFP (Windows Filtering Platform).</span><span class="sxs-lookup"><span data-stu-id="6625c-104">This section provides information about the Windows Filtering Platform (WFP) monitoring system.</span></span>
+<span data-ttu-id="b66b3-104">Esta seção fornece informações sobre o sistema de monitoramento da WFP (Windows Filtering Platform).</span><span class="sxs-lookup"><span data-stu-id="b66b3-104">This section provides information about the Windows Filtering Platform (WFP) monitoring system.</span></span>
 
 <dl>
 
-[<span data-ttu-id="6625c-105">Auditoria</span><span class="sxs-lookup"><span data-stu-id="6625c-105">Auditing</span></span>](auditing-and-logging.md)  
-[<span data-ttu-id="6625c-106">Logging</span><span class="sxs-lookup"><span data-stu-id="6625c-106">Logging</span></span>](logging.md)  
-[<span data-ttu-id="6625c-107">Notificações de alteração</span><span class="sxs-lookup"><span data-stu-id="6625c-107">Change Notifications</span></span>](change-notifications.md)  
+[<span data-ttu-id="b66b3-105">Auditoria</span><span class="sxs-lookup"><span data-stu-id="b66b3-105">Auditing</span></span>](auditing-and-logging.md)  
+[<span data-ttu-id="b66b3-106">Logging</span><span class="sxs-lookup"><span data-stu-id="b66b3-106">Logging</span></span>](logging.md)  
+[<span data-ttu-id="b66b3-107">Notificações de alteração</span><span class="sxs-lookup"><span data-stu-id="b66b3-107">Change Notifications</span></span>](change-notifications.md)  
 </dl>
 
  

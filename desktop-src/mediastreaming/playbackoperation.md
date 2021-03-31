@@ -21,38 +21,38 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638329"
 ---
-# <a name="playbackoperation-class"></a><span data-ttu-id="a7cf7-105">Classe PlaybackOperation</span><span class="sxs-lookup"><span data-stu-id="a7cf7-105">PlaybackOperation class</span></span>
+# <a name="playbackoperation-class"></a><span data-ttu-id="dd6c6-105">Classe PlaybackOperation</span><span class="sxs-lookup"><span data-stu-id="dd6c6-105">PlaybackOperation class</span></span>
 
-<span data-ttu-id="a7cf7-106">Registra um manipulador de eventos que é invocado quando uma operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) é concluída e fornece um método que retorna os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="a7cf7-106">Registers an event handler that is invoked when an asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods completes, and provides a method that returns the results of the operation.</span></span>
+<span data-ttu-id="dd6c6-106">Registra um manipulador de eventos que é invocado quando uma operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) é concluída e fornece um método que retorna os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="dd6c6-106">Registers an event handler that is invoked when an asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods completes, and provides a method that returns the results of the operation.</span></span>
 
-<span data-ttu-id="a7cf7-107">**PlaybackOperation** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="a7cf7-107">**PlaybackOperation** has these types of members:</span></span>
+<span data-ttu-id="dd6c6-107">**PlaybackOperation** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="dd6c6-107">**PlaybackOperation** has these types of members:</span></span>
 
--   [<span data-ttu-id="a7cf7-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="a7cf7-108">Methods</span></span>](#methods)
--   [<span data-ttu-id="a7cf7-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a7cf7-109">Properties</span></span>](#properties)
+-   [<span data-ttu-id="dd6c6-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="dd6c6-108">Methods</span></span>](#methods)
+-   [<span data-ttu-id="dd6c6-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dd6c6-109">Properties</span></span>](#properties)
 
-### <a name="methods"></a><span data-ttu-id="a7cf7-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="a7cf7-110">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="dd6c6-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="dd6c6-110">Methods</span></span>
 
-<span data-ttu-id="a7cf7-111">A classe **PlaybackOperation** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="a7cf7-111">The **PlaybackOperation** class has these methods.</span></span>
+<span data-ttu-id="dd6c6-111">A classe **PlaybackOperation** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="dd6c6-111">The **PlaybackOperation** class has these methods.</span></span>
 
 
 
-| <span data-ttu-id="a7cf7-112">Método</span><span class="sxs-lookup"><span data-stu-id="a7cf7-112">Method</span></span>                                             | <span data-ttu-id="a7cf7-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7cf7-113">Description</span></span>                                                                                                                                |
+| <span data-ttu-id="dd6c6-112">Método</span><span class="sxs-lookup"><span data-stu-id="dd6c6-112">Method</span></span>                                             | <span data-ttu-id="dd6c6-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="dd6c6-113">Description</span></span>                                                                                                                                |
 |:---------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="a7cf7-114">**GetResults**</span><span class="sxs-lookup"><span data-stu-id="a7cf7-114">**GetResults**</span></span>](playbackoperation-getresults.md) | <span data-ttu-id="a7cf7-115">Retorna os resultados de uma operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) .</span><span class="sxs-lookup"><span data-stu-id="a7cf7-115">Returns the results of an asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods.</span></span><br/> |
+| [<span data-ttu-id="dd6c6-114">**GetResults**</span><span class="sxs-lookup"><span data-stu-id="dd6c6-114">**GetResults**</span></span>](playbackoperation-getresults.md) | <span data-ttu-id="dd6c6-115">Retorna os resultados de uma operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) .</span><span class="sxs-lookup"><span data-stu-id="dd6c6-115">Returns the results of an asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods.</span></span><br/> |
 
 
 
  
 
-### <a name="properties"></a><span data-ttu-id="a7cf7-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a7cf7-116">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="dd6c6-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dd6c6-116">Properties</span></span>
 
-<span data-ttu-id="a7cf7-117">A classe **PlaybackOperation** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="a7cf7-117">The **PlaybackOperation** class has these properties.</span></span>
+<span data-ttu-id="dd6c6-117">A classe **PlaybackOperation** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="dd6c6-117">The **PlaybackOperation** class has these properties.</span></span>
 
 
 
-| <span data-ttu-id="a7cf7-118">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a7cf7-118">Property</span></span>                                                    | <span data-ttu-id="a7cf7-119">Tipo de acesso</span><span class="sxs-lookup"><span data-stu-id="a7cf7-119">Access type</span></span>           | <span data-ttu-id="a7cf7-120">Description</span><span class="sxs-lookup"><span data-stu-id="a7cf7-120">Description</span></span>                                                                                                                                                                           |
+| <span data-ttu-id="dd6c6-118">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dd6c6-118">Property</span></span>                                                    | <span data-ttu-id="dd6c6-119">Tipo de acesso</span><span class="sxs-lookup"><span data-stu-id="dd6c6-119">Access type</span></span>           | <span data-ttu-id="dd6c6-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="dd6c6-120">Description</span></span>                                                                                                                                                                           |
 |:------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="a7cf7-121">**Concluído**</span><span class="sxs-lookup"><span data-stu-id="a7cf7-121">**Completed**</span></span>](playbackoperation-completed.md)<br/> | <span data-ttu-id="a7cf7-122">Leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a7cf7-122">Read/write</span></span><br/> | <span data-ttu-id="a7cf7-123">Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) é concluída.</span><span class="sxs-lookup"><span data-stu-id="a7cf7-123">Gets or sets an event handler that is invoked when the asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods is completed.</span></span> <br/> |
+| [<span data-ttu-id="dd6c6-121">**Concluído**</span><span class="sxs-lookup"><span data-stu-id="dd6c6-121">**Completed**</span></span>](playbackoperation-completed.md)<br/> | <span data-ttu-id="dd6c6-122">Leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="dd6c6-122">Read/write</span></span><br/> | <span data-ttu-id="dd6c6-123">Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) é concluída.</span><span class="sxs-lookup"><span data-stu-id="dd6c6-123">Gets or sets an event handler that is invoked when the asynchronous operation started by one of the [**MediaRenderer**](mediarenderer.md) playback methods is completed.</span></span> <br/> |
 
 
 

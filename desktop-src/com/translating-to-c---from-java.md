@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635736"
 ---
-# <a name="translating-to-c-from-java"></a><span data-ttu-id="574b0-103">Convertendo para C++ do Java</span><span class="sxs-lookup"><span data-stu-id="574b0-103">Translating to C++ from Java</span></span>
+# <a name="translating-to-c-from-java"></a><span data-ttu-id="88f53-103">Convertendo para C++ do Java</span><span class="sxs-lookup"><span data-stu-id="88f53-103">Translating to C++ from Java</span></span>
 
-<span data-ttu-id="574b0-104">O Java manipula ponteiros e gerenciamento de memória implicitamente.</span><span class="sxs-lookup"><span data-stu-id="574b0-104">Java handles pointers and memory management implicitly.</span></span> <span data-ttu-id="574b0-105">Em C++, seu aplicativo é responsável por alocar e desalocar memória, e para executar qualquer aritmética de ponteiro necessária.</span><span class="sxs-lookup"><span data-stu-id="574b0-105">In C++, your application is responsible for allocating and deallocating memory, and for performing any necessary pointer arithmetic.</span></span>
+<span data-ttu-id="88f53-104">O Java manipula ponteiros e gerenciamento de memória implicitamente.</span><span class="sxs-lookup"><span data-stu-id="88f53-104">Java handles pointers and memory management implicitly.</span></span> <span data-ttu-id="88f53-105">Em C++, seu aplicativo é responsável por alocar e desalocar memória, e para executar qualquer aritmética de ponteiro necessária.</span><span class="sxs-lookup"><span data-stu-id="88f53-105">In C++, your application is responsible for allocating and deallocating memory, and for performing any necessary pointer arithmetic.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="574b0-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="574b0-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="88f53-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="88f53-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="574b0-107">Convertendo para C++</span><span class="sxs-lookup"><span data-stu-id="574b0-107">Translating to C++</span></span>](translating-to-c--.md)
+[<span data-ttu-id="88f53-107">Convertendo para C++</span><span class="sxs-lookup"><span data-stu-id="88f53-107">Translating to C++</span></span>](translating-to-c--.md)
 </dt> </dl>
 
  

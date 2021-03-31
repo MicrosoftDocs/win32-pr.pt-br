@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640513"
 ---
-# <a name="control-attribute"></a><span data-ttu-id="2c41b-104">atributo de controle</span><span class="sxs-lookup"><span data-stu-id="2c41b-104">control attribute</span></span>
+# <a name="control-attribute"></a><span data-ttu-id="31a35-104">atributo de controle</span><span class="sxs-lookup"><span data-stu-id="31a35-104">control attribute</span></span>
 
-<span data-ttu-id="2c41b-105">O atributo **\[ Control \]** identifica uma [**coclass**](coclass.md) ou [**biblioteca**](library.md) como um controle com, da qual um site de contêiner derivará bibliotecas de tipo adicionais ou classes de objeto de componente.</span><span class="sxs-lookup"><span data-stu-id="2c41b-105">The **\[control\]** attribute identifies a [**coclass**](coclass.md) or [**library**](library.md) as a COM control, from which a container site will derive additional type libraries or component object classes.</span></span>
+<span data-ttu-id="31a35-105">O atributo **\[ Control \]** identifica uma [**coclass**](coclass.md) ou [**biblioteca**](library.md) como um controle com, da qual um site de contêiner derivará bibliotecas de tipo adicionais ou classes de objeto de componente.</span><span class="sxs-lookup"><span data-stu-id="31a35-105">The **\[control\]** attribute identifies a [**coclass**](coclass.md) or [**library**](library.md) as a COM control, from which a container site will derive additional type libraries or component object classes.</span></span>
 
 ``` syntax
 [
@@ -35,40 +35,40 @@ library | coclass lib-or-coclassname
 }
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2c41b-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2c41b-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="31a35-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="31a35-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="2c41b-107">*lista de atributos*</span><span class="sxs-lookup"><span data-stu-id="2c41b-107">*attribute-list*</span></span> 
+<span data-ttu-id="31a35-107">*lista de atributos*</span><span class="sxs-lookup"><span data-stu-id="31a35-107">*attribute-list*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="2c41b-108">Especifica zero ou mais atributos que se aplicam à [**biblioteca**](library.md) ou à instrução [**coclass**](coclass.md) .</span><span class="sxs-lookup"><span data-stu-id="2c41b-108">Specifies zero or more attributes that apply to the [**library**](library.md) or [**coclass**](coclass.md) statement.</span></span> <span data-ttu-id="2c41b-109">Separe vários atributos com vírgulas.</span><span class="sxs-lookup"><span data-stu-id="2c41b-109">Separate multiple attributes with commas.</span></span>
+<span data-ttu-id="31a35-108">Especifica zero ou mais atributos que se aplicam à [**biblioteca**](library.md) ou à instrução [**coclass**](coclass.md) .</span><span class="sxs-lookup"><span data-stu-id="31a35-108">Specifies zero or more attributes that apply to the [**library**](library.md) or [**coclass**](coclass.md) statement.</span></span> <span data-ttu-id="31a35-109">Separe vários atributos com vírgulas.</span><span class="sxs-lookup"><span data-stu-id="31a35-109">Separate multiple attributes with commas.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2c41b-110">*lib-ou-Coclassname*</span><span class="sxs-lookup"><span data-stu-id="2c41b-110">*lib-or-coclassname*</span></span> 
+<span data-ttu-id="31a35-110">*lib-ou-Coclassname*</span><span class="sxs-lookup"><span data-stu-id="31a35-110">*lib-or-coclassname*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="2c41b-111">Especifica o nome da [**biblioteca**](library.md) ou [**coclass**](coclass.md).</span><span class="sxs-lookup"><span data-stu-id="2c41b-111">Specifies the name of the [**library**](library.md) or [**coclass**](coclass.md).</span></span>
+<span data-ttu-id="31a35-111">Especifica o nome da [**biblioteca**](library.md) ou [**coclass**](coclass.md).</span><span class="sxs-lookup"><span data-stu-id="31a35-111">Specifies the name of the [**library**](library.md) or [**coclass**](coclass.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2c41b-112">*definições*</span><span class="sxs-lookup"><span data-stu-id="2c41b-112">*definitions*</span></span> 
+<span data-ttu-id="31a35-112">*definições*</span><span class="sxs-lookup"><span data-stu-id="31a35-112">*definitions*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="2c41b-113">Instruções MIDL que especificam os membros da [**biblioteca**](library.md) ou [**coclass**](coclass.md).</span><span class="sxs-lookup"><span data-stu-id="2c41b-113">MIDL statements that specify the members of the [**library**](library.md) or [**coclass**](coclass.md).</span></span>
+<span data-ttu-id="31a35-113">Instruções MIDL que especificam os membros da [**biblioteca**](library.md) ou [**coclass**](coclass.md).</span><span class="sxs-lookup"><span data-stu-id="31a35-113">MIDL statements that specify the members of the [**library**](library.md) or [**coclass**](coclass.md).</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="2c41b-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="2c41b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="31a35-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="31a35-114">Remarks</span></span>
 
-<span data-ttu-id="2c41b-115">Esse atributo permite marcar bibliotecas de tipos que descrevem controles para que não sejam exibidas em navegadores de tipos destinados a objetos não visuais.</span><span class="sxs-lookup"><span data-stu-id="2c41b-115">This attribute allows you to mark type libraries that describe controls so they will not be displayed in type browsers intended for nonvisual objects.</span></span>
+<span data-ttu-id="31a35-115">Esse atributo permite marcar bibliotecas de tipos que descrevem controles para que não sejam exibidas em navegadores de tipos destinados a objetos não visuais.</span><span class="sxs-lookup"><span data-stu-id="31a35-115">This attribute allows you to mark type libraries that describe controls so they will not be displayed in type browsers intended for nonvisual objects.</span></span>
 
-### <a name="flags"></a><span data-ttu-id="2c41b-116">Flags</span><span class="sxs-lookup"><span data-stu-id="2c41b-116">Flags</span></span>
+### <a name="flags"></a><span data-ttu-id="31a35-116">Flags</span><span class="sxs-lookup"><span data-stu-id="31a35-116">Flags</span></span>
 
-<span data-ttu-id="2c41b-117">TYPEFLAG \_ FCONTROL, LIBFLAG \_ FCONTROL</span><span class="sxs-lookup"><span data-stu-id="2c41b-117">TYPEFLAG\_FCONTROL, LIBFLAG\_FCONTROL</span></span>
+<span data-ttu-id="31a35-117">TYPEFLAG \_ FCONTROL, LIBFLAG \_ FCONTROL</span><span class="sxs-lookup"><span data-stu-id="31a35-117">TYPEFLAG\_FCONTROL, LIBFLAG\_FCONTROL</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2c41b-118">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2c41b-118">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="31a35-118">Exemplos</span><span class="sxs-lookup"><span data-stu-id="31a35-118">Examples</span></span>
 
 ``` syntax
 [
@@ -82,26 +82,26 @@ library Hello
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2c41b-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="2c41b-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="31a35-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="31a35-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2c41b-120">Sintaxe do arquivo ODL</span><span class="sxs-lookup"><span data-stu-id="2c41b-120">ODL File Syntax</span></span>](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[<span data-ttu-id="31a35-120">Sintaxe do arquivo ODL</span><span class="sxs-lookup"><span data-stu-id="31a35-120">ODL File Syntax</span></span>](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[<span data-ttu-id="2c41b-121">Exemplo de arquivo ODL</span><span class="sxs-lookup"><span data-stu-id="2c41b-121">ODL File Example</span></span>](/previous-versions/windows/desktop/automat/odl-file-example)
+[<span data-ttu-id="31a35-121">Exemplo de arquivo ODL</span><span class="sxs-lookup"><span data-stu-id="31a35-121">ODL File Example</span></span>](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[<span data-ttu-id="2c41b-122">Gerando uma biblioteca de tipos com MIDL</span><span class="sxs-lookup"><span data-stu-id="2c41b-122">Generating a Type Library With MIDL</span></span>](generating-a-type-library-with-midl-2.md)
+[<span data-ttu-id="31a35-122">Gerando uma biblioteca de tipos com MIDL</span><span class="sxs-lookup"><span data-stu-id="31a35-122">Generating a Type Library With MIDL</span></span>](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[<span data-ttu-id="2c41b-123">TYPEFLAGS</span><span class="sxs-lookup"><span data-stu-id="2c41b-123">TYPEFLAGS</span></span>](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[<span data-ttu-id="31a35-123">TYPEFLAGS</span><span class="sxs-lookup"><span data-stu-id="31a35-123">TYPEFLAGS</span></span>](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[<span data-ttu-id="2c41b-124">**coclass**</span><span class="sxs-lookup"><span data-stu-id="2c41b-124">**coclass**</span></span>](coclass.md)
+[<span data-ttu-id="31a35-124">**coclass**</span><span class="sxs-lookup"><span data-stu-id="31a35-124">**coclass**</span></span>](coclass.md)
 </dt> <dt>
 
-[<span data-ttu-id="2c41b-125">**biblioteca**</span><span class="sxs-lookup"><span data-stu-id="2c41b-125">**library**</span></span>](library.md)
+[<span data-ttu-id="31a35-125">**biblioteca**</span><span class="sxs-lookup"><span data-stu-id="31a35-125">**library**</span></span>](library.md)
 </dt> </dl>
 
  

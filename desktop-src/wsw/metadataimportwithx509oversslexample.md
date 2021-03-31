@@ -15,11 +15,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635383"
 ---
-# <a name="metadataimportwithx509oversslexample"></a><span data-ttu-id="a8482-106">MetadataImportWithX509OverSslExample</span><span class="sxs-lookup"><span data-stu-id="a8482-106">MetadataImportWithX509OverSslExample</span></span>
+# <a name="metadataimportwithx509oversslexample"></a><span data-ttu-id="9d600-106">MetadataImportWithX509OverSslExample</span><span class="sxs-lookup"><span data-stu-id="9d600-106">MetadataImportWithX509OverSslExample</span></span>
 
-<span data-ttu-id="a8482-107">Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token X509 usando a [**Associação de segurança de \_ \_ mensagem de token \_ \_ \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) com associação de [**segurança de \_ \_ transporte \_ \_ WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).</span><span class="sxs-lookup"><span data-stu-id="a8482-107">This example illustrates importing metadata from an endpoint that supports using a X509 token using [**WS\_XML\_TOKEN\_MESSAGE\_SECURITY\_BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) with [**WS\_SSL\_TRANSPORT\_SECURITY\_BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).</span></span>
+<span data-ttu-id="9d600-107">Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token X509 usando a [**Associação de segurança de \_ \_ mensagem de token \_ \_ \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) com associação de [**segurança de \_ \_ transporte \_ \_ WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).</span><span class="sxs-lookup"><span data-stu-id="9d600-107">This example illustrates importing metadata from an endpoint that supports using a X509 token using [**WS\_XML\_TOKEN\_MESSAGE\_SECURITY\_BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) with [**WS\_SSL\_TRANSPORT\_SECURITY\_BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).</span></span>
 
-## <a name="metadataimportwithx509oversslexamplecpp"></a><span data-ttu-id="a8482-108">MetadataImportWithX509OverSslExample. cpp</span><span class="sxs-lookup"><span data-stu-id="a8482-108">MetadataImportWithX509OverSslExample.cpp</span></span>
+## <a name="metadataimportwithx509oversslexamplecpp"></a><span data-ttu-id="9d600-108">MetadataImportWithX509OverSslExample. cpp</span><span class="sxs-lookup"><span data-stu-id="9d600-108">MetadataImportWithX509OverSslExample.cpp</span></span>
 
 
 ```C++
@@ -583,14 +583,14 @@ Exit:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="a8482-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a8482-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9d600-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9d600-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a8482-110">**\_Associação de \_ \_ segurança de mensagem de token XML \_ WS \_**</span><span class="sxs-lookup"><span data-stu-id="a8482-110">**WS\_XML\_TOKEN\_MESSAGE\_SECURITY\_BINDING**</span></span>](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
+[<span data-ttu-id="9d600-110">**\_Associação de \_ \_ segurança de mensagem de token XML \_ WS \_**</span><span class="sxs-lookup"><span data-stu-id="9d600-110">**WS\_XML\_TOKEN\_MESSAGE\_SECURITY\_BINDING**</span></span>](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
 </dt> <dt>
 
-[<span data-ttu-id="a8482-111">**\_Associação de \_ segurança de transporte WS SSL \_ \_**</span><span class="sxs-lookup"><span data-stu-id="a8482-111">**WS\_SSL\_TRANSPORT\_SECURITY\_BINDING**</span></span>](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
+[<span data-ttu-id="9d600-111">**\_Associação de \_ segurança de transporte WS SSL \_ \_**</span><span class="sxs-lookup"><span data-stu-id="9d600-111">**WS\_SSL\_TRANSPORT\_SECURITY\_BINDING**</span></span>](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
 </dt> </dl>
 
  

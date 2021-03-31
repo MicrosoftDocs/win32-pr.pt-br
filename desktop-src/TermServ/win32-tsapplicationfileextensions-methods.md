@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635044"
 ---
-# <a name="win32_tsapplicationfileextensions-methods"></a><span data-ttu-id="010da-103">\_Métodos TSApplicationFileExtensions do Win32</span><span class="sxs-lookup"><span data-stu-id="010da-103">Win32\_TSApplicationFileExtensions Methods</span></span>
+# <a name="win32_tsapplicationfileextensions-methods"></a><span data-ttu-id="be7e6-103">\_Métodos TSApplicationFileExtensions do Win32</span><span class="sxs-lookup"><span data-stu-id="be7e6-103">Win32\_TSApplicationFileExtensions Methods</span></span>
 
-<span data-ttu-id="010da-104">A classe [**Win32 \_ TSApplicationFileExtensions**](win32-tsapplicationfileextensions.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="010da-104">The [**Win32\_TSApplicationFileExtensions**](win32-tsapplicationfileextensions.md) class exposes the following methods.</span></span>
+<span data-ttu-id="be7e6-104">A classe [**Win32 \_ TSApplicationFileExtensions**](win32-tsapplicationfileextensions.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="be7e6-104">The [**Win32\_TSApplicationFileExtensions**](win32-tsapplicationfileextensions.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="010da-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="010da-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="be7e6-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="be7e6-105">In this section</span></span>
 
--   [<span data-ttu-id="010da-106">**Método fileassociações**</span><span class="sxs-lookup"><span data-stu-id="010da-106">**FileAssociations method**</span></span>](fileassociations-win32-tsapplicationfileextensions.md)
--   [<span data-ttu-id="010da-107">**Método FileExtensions**</span><span class="sxs-lookup"><span data-stu-id="010da-107">**FileExtensions method**</span></span>](fileextensions-win32-tsapplicationfileextensions.md)
+-   [<span data-ttu-id="be7e6-106">**Método fileassociações**</span><span class="sxs-lookup"><span data-stu-id="be7e6-106">**FileAssociations method**</span></span>](fileassociations-win32-tsapplicationfileextensions.md)
+-   [<span data-ttu-id="be7e6-107">**Método FileExtensions**</span><span class="sxs-lookup"><span data-stu-id="be7e6-107">**FileExtensions method**</span></span>](fileextensions-win32-tsapplicationfileextensions.md)
 
  
 

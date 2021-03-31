@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641181"
 ---
-# <a name="netservicecontrol"></a><span data-ttu-id="e1afb-106">NetServiceControl</span><span class="sxs-lookup"><span data-stu-id="e1afb-106">NetServiceControl</span></span>
+# <a name="netservicecontrol"></a><span data-ttu-id="1e827-106">NetServiceControl</span><span class="sxs-lookup"><span data-stu-id="1e827-106">NetServiceControl</span></span>
 
-<span data-ttu-id="e1afb-107">A função **NetServiceControl** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="e1afb-107">The **NetServiceControl** function is obsolete.</span></span> <span data-ttu-id="e1afb-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="e1afb-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="e1afb-109">Outros aplicativos devem usar as [funções de serviço](/windows/desktop/Services/service-functions).</span><span class="sxs-lookup"><span data-stu-id="e1afb-109">Other applications should use the [service functions](/windows/desktop/Services/service-functions).</span></span>
+<span data-ttu-id="1e827-107">A função **NetServiceControl** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="1e827-107">The **NetServiceControl** function is obsolete.</span></span> <span data-ttu-id="1e827-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="1e827-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="1e827-109">Outros aplicativos devem usar as [funções de serviço](/windows/desktop/Services/service-functions).</span><span class="sxs-lookup"><span data-stu-id="1e827-109">Other applications should use the [service functions](/windows/desktop/Services/service-functions).</span></span>
 
  
 

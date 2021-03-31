@@ -21,47 +21,47 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/14/2020
 ms.locfileid: "104086921"
 ---
-# <a name="ms-ds-service-account-bl-attribute"></a><span data-ttu-id="e4112-105">atributo ms-DS-Service-Account-BL</span><span class="sxs-lookup"><span data-stu-id="e4112-105">ms-DS-Service-Account-BL attribute</span></span>
+# <a name="ms-ds-service-account-bl-attribute"></a><span data-ttu-id="1b13c-105">atributo ms-DS-Service-Account-BL</span><span class="sxs-lookup"><span data-stu-id="1b13c-105">ms-DS-Service-Account-BL attribute</span></span>
 
-<span data-ttu-id="e4112-106">Referência de vínculo retroativa para o objeto AD/AM DSA que usa essa conta de serviço.</span><span class="sxs-lookup"><span data-stu-id="e4112-106">Backward link reference to the AD/AM DSA object that uses this service account.</span></span>
+<span data-ttu-id="1b13c-106">Referência de vínculo retroativa para o objeto AD/AM DSA que usa essa conta de serviço.</span><span class="sxs-lookup"><span data-stu-id="1b13c-106">Backward link reference to the AD/AM DSA object that uses this service account.</span></span>
 
 
 
-| <span data-ttu-id="e4112-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="e4112-107">Entry</span></span> | <span data-ttu-id="e4112-108">Valor</span><span class="sxs-lookup"><span data-stu-id="e4112-108">Value</span></span> |
+| <span data-ttu-id="1b13c-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="1b13c-107">Entry</span></span> | <span data-ttu-id="1b13c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="1b13c-108">Value</span></span> |
 |-------------------|-----------------------------------------|
-| <span data-ttu-id="e4112-109">CN</span><span class="sxs-lookup"><span data-stu-id="e4112-109">CN</span></span>                | <span data-ttu-id="e4112-110">ms-DS-Service-Account-BL</span><span class="sxs-lookup"><span data-stu-id="e4112-110">ms-DS-Service-Account-BL</span></span>                |
-| <span data-ttu-id="e4112-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="e4112-111">Ldap-Display-Name</span></span> | <span data-ttu-id="e4112-112">msDS-ServiceAccountBL</span><span class="sxs-lookup"><span data-stu-id="e4112-112">msDS-ServiceAccountBL</span></span>                   |
-| <span data-ttu-id="e4112-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="e4112-113">Size</span></span>              | \-                                      |
-| <span data-ttu-id="e4112-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="e4112-114">Update Privilege</span></span>  | \-                                      |
-| <span data-ttu-id="e4112-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="e4112-115">Update Frequency</span></span>  | \-                                      |
-| <span data-ttu-id="e4112-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="e4112-116">Attribute-Id</span></span>      | <span data-ttu-id="e4112-117">1.2.840.113556.1.4.1867</span><span class="sxs-lookup"><span data-stu-id="e4112-117">1.2.840.113556.1.4.1867</span></span>                 |
-| <span data-ttu-id="e4112-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="e4112-118">System-Id-Guid</span></span>    | <span data-ttu-id="e4112-119">1322c9ff-1334-3d4a-9396-4d9284d42636</span><span class="sxs-lookup"><span data-stu-id="e4112-119">1322c9ff-1334-3d4a-9396-4d9284d42636</span></span>    |
-| <span data-ttu-id="e4112-120">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e4112-120">Syntax</span></span>            | [<span data-ttu-id="e4112-121">**Objeto (DS-DN)**</span><span class="sxs-lookup"><span data-stu-id="e4112-121">**Object(DS-DN)**</span></span>](s-object-ds-dn.md) |
+| <span data-ttu-id="1b13c-109">CN</span><span class="sxs-lookup"><span data-stu-id="1b13c-109">CN</span></span>                | <span data-ttu-id="1b13c-110">ms-DS-Service-Account-BL</span><span class="sxs-lookup"><span data-stu-id="1b13c-110">ms-DS-Service-Account-BL</span></span>                |
+| <span data-ttu-id="1b13c-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="1b13c-111">Ldap-Display-Name</span></span> | <span data-ttu-id="1b13c-112">msDS-ServiceAccountBL</span><span class="sxs-lookup"><span data-stu-id="1b13c-112">msDS-ServiceAccountBL</span></span>                   |
+| <span data-ttu-id="1b13c-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="1b13c-113">Size</span></span>              | \-                                      |
+| <span data-ttu-id="1b13c-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="1b13c-114">Update Privilege</span></span>  | \-                                      |
+| <span data-ttu-id="1b13c-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="1b13c-115">Update Frequency</span></span>  | \-                                      |
+| <span data-ttu-id="1b13c-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="1b13c-116">Attribute-Id</span></span>      | <span data-ttu-id="1b13c-117">1.2.840.113556.1.4.1867</span><span class="sxs-lookup"><span data-stu-id="1b13c-117">1.2.840.113556.1.4.1867</span></span>                 |
+| <span data-ttu-id="1b13c-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="1b13c-118">System-Id-Guid</span></span>    | <span data-ttu-id="1b13c-119">1322c9ff-1334-3d4a-9396-4d9284d42636</span><span class="sxs-lookup"><span data-stu-id="1b13c-119">1322c9ff-1334-3d4a-9396-4d9284d42636</span></span>    |
+| <span data-ttu-id="1b13c-120">Syntax</span><span class="sxs-lookup"><span data-stu-id="1b13c-120">Syntax</span></span>            | [<span data-ttu-id="1b13c-121">**Objeto (DS-DN)**</span><span class="sxs-lookup"><span data-stu-id="1b13c-121">**Object(DS-DN)**</span></span>](s-object-ds-dn.md) |
 
 
 
-## <a name="implementations"></a><span data-ttu-id="e4112-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="e4112-122">Implementations</span></span>
+## <a name="implementations"></a><span data-ttu-id="1b13c-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="1b13c-122">Implementations</span></span>
 
--   [<span data-ttu-id="e4112-123">**ADAM**</span><span class="sxs-lookup"><span data-stu-id="e4112-123">**ADAM**</span></span>](#adam)
+-   [<span data-ttu-id="1b13c-123">**ADAM**</span><span class="sxs-lookup"><span data-stu-id="1b13c-123">**ADAM**</span></span>](#adam)
 
-## <a name="adam"></a><span data-ttu-id="e4112-124">ADAM</span><span class="sxs-lookup"><span data-stu-id="e4112-124">ADAM</span></span>
+## <a name="adam"></a><span data-ttu-id="1b13c-124">ADAM</span><span class="sxs-lookup"><span data-stu-id="1b13c-124">ADAM</span></span>
 
 
 
-| <span data-ttu-id="e4112-125">Entrada</span><span class="sxs-lookup"><span data-stu-id="e4112-125">Entry</span></span> | <span data-ttu-id="e4112-126">Valor</span><span class="sxs-lookup"><span data-stu-id="e4112-126">Value</span></span> |
+| <span data-ttu-id="1b13c-125">Entrada</span><span class="sxs-lookup"><span data-stu-id="1b13c-125">Entry</span></span> | <span data-ttu-id="1b13c-126">Valor</span><span class="sxs-lookup"><span data-stu-id="1b13c-126">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="e4112-127">ID do link</span><span class="sxs-lookup"><span data-stu-id="e4112-127">Link-Id</span></span>                | <span data-ttu-id="e4112-128">2041</span><span class="sxs-lookup"><span data-stu-id="e4112-128">2041</span></span>                            |
-| <span data-ttu-id="e4112-129">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="e4112-129">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="e4112-130">System-Only</span><span class="sxs-lookup"><span data-stu-id="e4112-130">System-Only</span></span>            | <span data-ttu-id="e4112-131">True</span><span class="sxs-lookup"><span data-stu-id="e4112-131">True</span></span>                            |
-| <span data-ttu-id="e4112-132">É de valor único</span><span class="sxs-lookup"><span data-stu-id="e4112-132">Is-Single-Valued</span></span>       | <span data-ttu-id="e4112-133">Falso</span><span class="sxs-lookup"><span data-stu-id="e4112-133">False</span></span>                           |
-| <span data-ttu-id="e4112-134">É indexado</span><span class="sxs-lookup"><span data-stu-id="e4112-134">Is Indexed</span></span>             | <span data-ttu-id="e4112-135">Falso</span><span class="sxs-lookup"><span data-stu-id="e4112-135">False</span></span>                           |
-| <span data-ttu-id="e4112-136">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="e4112-136">In Global Catalog</span></span>      | <span data-ttu-id="e4112-137">Falso</span><span class="sxs-lookup"><span data-stu-id="e4112-137">False</span></span>                           |
-| <span data-ttu-id="e4112-138">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="e4112-138">NT-Security-Descriptor</span></span> | <span data-ttu-id="e4112-139">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="e4112-139">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="e4112-140">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="e4112-140">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="e4112-141">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="e4112-141">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="e4112-142">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="e4112-142">Search-Flags</span></span>           | <span data-ttu-id="e4112-143">0x00000000</span><span class="sxs-lookup"><span data-stu-id="e4112-143">0x00000000</span></span>                      |
-| <span data-ttu-id="e4112-144">System-Flags</span><span class="sxs-lookup"><span data-stu-id="e4112-144">System-Flags</span></span>           | <span data-ttu-id="e4112-145">0x00000010</span><span class="sxs-lookup"><span data-stu-id="e4112-145">0x00000010</span></span>                      |
-| <span data-ttu-id="e4112-146">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="e4112-146">Classes used in</span></span>        | [<span data-ttu-id="e4112-147">**Início**</span><span class="sxs-lookup"><span data-stu-id="e4112-147">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="1b13c-127">ID do link</span><span class="sxs-lookup"><span data-stu-id="1b13c-127">Link-Id</span></span>                | <span data-ttu-id="1b13c-128">2041</span><span class="sxs-lookup"><span data-stu-id="1b13c-128">2041</span></span>                            |
+| <span data-ttu-id="1b13c-129">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="1b13c-129">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="1b13c-130">System-Only</span><span class="sxs-lookup"><span data-stu-id="1b13c-130">System-Only</span></span>            | <span data-ttu-id="1b13c-131">True</span><span class="sxs-lookup"><span data-stu-id="1b13c-131">True</span></span>                            |
+| <span data-ttu-id="1b13c-132">É de valor único</span><span class="sxs-lookup"><span data-stu-id="1b13c-132">Is-Single-Valued</span></span>       | <span data-ttu-id="1b13c-133">Falso</span><span class="sxs-lookup"><span data-stu-id="1b13c-133">False</span></span>                           |
+| <span data-ttu-id="1b13c-134">É indexado</span><span class="sxs-lookup"><span data-stu-id="1b13c-134">Is Indexed</span></span>             | <span data-ttu-id="1b13c-135">Falso</span><span class="sxs-lookup"><span data-stu-id="1b13c-135">False</span></span>                           |
+| <span data-ttu-id="1b13c-136">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="1b13c-136">In Global Catalog</span></span>      | <span data-ttu-id="1b13c-137">Falso</span><span class="sxs-lookup"><span data-stu-id="1b13c-137">False</span></span>                           |
+| <span data-ttu-id="1b13c-138">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="1b13c-138">NT-Security-Descriptor</span></span> | <span data-ttu-id="1b13c-139">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="1b13c-139">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="1b13c-140">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="1b13c-140">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="1b13c-141">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="1b13c-141">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="1b13c-142">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="1b13c-142">Search-Flags</span></span>           | <span data-ttu-id="1b13c-143">0x00000000</span><span class="sxs-lookup"><span data-stu-id="1b13c-143">0x00000000</span></span>                      |
+| <span data-ttu-id="1b13c-144">System-Flags</span><span class="sxs-lookup"><span data-stu-id="1b13c-144">System-Flags</span></span>           | <span data-ttu-id="1b13c-145">0x00000010</span><span class="sxs-lookup"><span data-stu-id="1b13c-145">0x00000010</span></span>                      |
+| <span data-ttu-id="1b13c-146">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="1b13c-146">Classes used in</span></span>        | [<span data-ttu-id="1b13c-147">**Início**</span><span class="sxs-lookup"><span data-stu-id="1b13c-147">**Top**</span></span>](c-top.md)<br/> |
 
 
 

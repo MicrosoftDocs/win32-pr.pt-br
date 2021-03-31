@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638348"
 ---
-# <a name="cbem_setcombofocus-message"></a><span data-ttu-id="62cd5-104">\_Mensagem CBEM SETCOMBOFOCUS</span><span class="sxs-lookup"><span data-stu-id="62cd5-104">CBEM\_SETCOMBOFOCUS message</span></span>
+# <a name="cbem_setcombofocus-message"></a><span data-ttu-id="6bf7e-104">\_Mensagem CBEM SETCOMBOFOCUS</span><span class="sxs-lookup"><span data-stu-id="6bf7e-104">CBEM\_SETCOMBOFOCUS message</span></span>
 
-<span data-ttu-id="62cd5-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="62cd5-105">This message is not implemented.</span></span>
+<span data-ttu-id="6bf7e-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="6bf7e-105">This message is not implemented.</span></span>
 
  
 

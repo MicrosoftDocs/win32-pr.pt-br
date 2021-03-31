@@ -20,18 +20,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635003"
 ---
-# <a name="about-the-metadatatext-object"></a><span data-ttu-id="dbe2d-111">Sobre o objeto MetadataText</span><span class="sxs-lookup"><span data-stu-id="dbe2d-111">About the MetadataText Object</span></span>
+# <a name="about-the-metadatatext-object"></a><span data-ttu-id="3d70d-111">Sobre o objeto MetadataText</span><span class="sxs-lookup"><span data-stu-id="3d70d-111">About the MetadataText Object</span></span>
 
-<span data-ttu-id="dbe2d-112">Alguns atributos de metadados, como o **WM/música \_ sincronizado**, fornecem texto acompanhado por uma descrição do texto.</span><span class="sxs-lookup"><span data-stu-id="dbe2d-112">Some metadata attributes, such as **WM/Lyrics\_Synchronised**, provide text accompanied by a description of the text.</span></span> <span data-ttu-id="dbe2d-113">O objeto **MetadataText** fornece uma maneira de recuperar o texto e a descrição separadamente.</span><span class="sxs-lookup"><span data-stu-id="dbe2d-113">The **MetadataText** object provides a way to retrieve the text and the description separately.</span></span> <span data-ttu-id="dbe2d-114">Quando você usa *mídia*. **getItemInfoByType** para recuperar informações sobre atributos textuais complexos, você recupera um objeto **MetadataText** que tem propriedades, que contêm os dados individuais.</span><span class="sxs-lookup"><span data-stu-id="dbe2d-114">When you use *Media*.**getItemInfoByType** to retrieve information about complex textual attributes, you retrieve a **MetadataText** object that has properties, which contain the individual data.</span></span>
+<span data-ttu-id="3d70d-112">Alguns atributos de metadados, como o **WM/música \_ sincronizado**, fornecem texto acompanhado por uma descrição do texto.</span><span class="sxs-lookup"><span data-stu-id="3d70d-112">Some metadata attributes, such as **WM/Lyrics\_Synchronised**, provide text accompanied by a description of the text.</span></span> <span data-ttu-id="3d70d-113">O objeto **MetadataText** fornece uma maneira de recuperar o texto e a descrição separadamente.</span><span class="sxs-lookup"><span data-stu-id="3d70d-113">The **MetadataText** object provides a way to retrieve the text and the description separately.</span></span> <span data-ttu-id="3d70d-114">Quando você usa *mídia*. **getItemInfoByType** para recuperar informações sobre atributos textuais complexos, você recupera um objeto **MetadataText** que tem propriedades, que contêm os dados individuais.</span><span class="sxs-lookup"><span data-stu-id="3d70d-114">When you use *Media*.**getItemInfoByType** to retrieve information about complex textual attributes, you retrieve a **MetadataText** object that has properties, which contain the individual data.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="dbe2d-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="dbe2d-115">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3d70d-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3d70d-115">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="dbe2d-116">**Objeto MetadataText**</span><span class="sxs-lookup"><span data-stu-id="dbe2d-116">**MetadataText Object**</span></span>](metadatatext-object.md)
+[<span data-ttu-id="3d70d-116">**Objeto MetadataText**</span><span class="sxs-lookup"><span data-stu-id="3d70d-116">**MetadataText Object**</span></span>](metadatatext-object.md)
 </dt> <dt>
 
-[<span data-ttu-id="dbe2d-117">**Modelo de objeto do Player para linguagens de script**</span><span class="sxs-lookup"><span data-stu-id="dbe2d-117">**Player Object Model for Scripting Languages**</span></span>](player-object-model-for-scripting-languages.md)
+[<span data-ttu-id="3d70d-117">**Modelo de objeto do Player para linguagens de script**</span><span class="sxs-lookup"><span data-stu-id="3d70d-117">**Player Object Model for Scripting Languages**</span></span>](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
  

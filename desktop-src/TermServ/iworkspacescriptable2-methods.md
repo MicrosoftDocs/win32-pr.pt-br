@@ -12,25 +12,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637251"
 ---
-# <a name="iworkspacescriptable2-methods"></a><span data-ttu-id="5c442-103">Métodos IWorkspaceScriptable2</span><span class="sxs-lookup"><span data-stu-id="5c442-103">IWorkspaceScriptable2 Methods</span></span>
+# <a name="iworkspacescriptable2-methods"></a><span data-ttu-id="c3dee-103">Métodos IWorkspaceScriptable2</span><span class="sxs-lookup"><span data-stu-id="c3dee-103">IWorkspaceScriptable2 Methods</span></span>
 
-<span data-ttu-id="5c442-104">A interface [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2) dá suporte aos métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="5c442-104">The [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2) interface supports the following methods.</span></span>
+<span data-ttu-id="c3dee-104">A interface [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2) dá suporte aos métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="c3dee-104">The [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2) interface supports the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="5c442-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5c442-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c3dee-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c3dee-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5c442-106">**Método StartWorkspaceEx**</span><span class="sxs-lookup"><span data-stu-id="5c442-106">**StartWorkspaceEx method**</span></span>](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable2-startworkspaceex)
+[<span data-ttu-id="c3dee-106">**Método StartWorkspaceEx**</span><span class="sxs-lookup"><span data-stu-id="c3dee-106">**StartWorkspaceEx method**</span></span>](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable2-startworkspaceex)
 </dt> <dd>
 
-<span data-ttu-id="5c442-107">Associa credenciais de usuário e certificados com uma ID de conexão; também contém segurança adicional e elementos de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="5c442-107">Associates user credentials and certificates with a connection ID; also contains additional security and UI elements.</span></span>
+<span data-ttu-id="c3dee-107">Associa credenciais de usuário e certificados com uma ID de conexão; também contém segurança adicional e elementos de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="c3dee-107">Associates user credentials and certificates with a connection ID; also contains additional security and UI elements.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="5c442-108">**Método ResourceDismissed**</span><span class="sxs-lookup"><span data-stu-id="5c442-108">**ResourceDismissed method**</span></span>](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable2-resourcedismissed)
+[<span data-ttu-id="c3dee-108">**Método ResourceDismissed**</span><span class="sxs-lookup"><span data-stu-id="c3dee-108">**ResourceDismissed method**</span></span>](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable2-resourcedismissed)
 </dt> <dd>
 
-<span data-ttu-id="5c442-109">Alerta o usuário de que um recurso foi desabilitado ou, de outra forma, Descartado.</span><span class="sxs-lookup"><span data-stu-id="5c442-109">Alerts the user that a resource has been disabled or otherwise dismissed.</span></span>
+<span data-ttu-id="c3dee-109">Alerta o usuário de que um recurso foi desabilitado ou, de outra forma, Descartado.</span><span class="sxs-lookup"><span data-stu-id="c3dee-109">Alerts the user that a resource has been disabled or otherwise dismissed.</span></span>
 
 </dd> </dl>
 

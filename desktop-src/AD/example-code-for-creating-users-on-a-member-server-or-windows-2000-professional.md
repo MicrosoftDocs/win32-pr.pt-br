@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634955"
 ---
-# <a name="example-code-for-creating-users-on-a-member-server-or-windows-2000-professional"></a><span data-ttu-id="bd5f3-104">Código de exemplo para a criação de usuários em um servidor membro ou Windows 2000 Professional</span><span class="sxs-lookup"><span data-stu-id="bd5f3-104">Example Code for Creating Users on a Member Server or Windows 2000 Professional</span></span>
+# <a name="example-code-for-creating-users-on-a-member-server-or-windows-2000-professional"></a><span data-ttu-id="6a8a4-104">Código de exemplo para a criação de usuários em um servidor membro ou Windows 2000 Professional</span><span class="sxs-lookup"><span data-stu-id="6a8a4-104">Example Code for Creating Users on a Member Server or Windows 2000 Professional</span></span>
 
-<span data-ttu-id="bd5f3-105">O exemplo de código a seguir Visual Basic cria um usuário em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="bd5f3-105">The following Visual Basic code example creates a user on a member server or Windows 2000 Professional.</span></span>
+<span data-ttu-id="6a8a4-105">O exemplo de código a seguir Visual Basic cria um usuário em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="6a8a4-105">The following Visual Basic code example creates a user on a member server or Windows 2000 Professional.</span></span>
 
 
 ```VB

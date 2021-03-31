@@ -11,22 +11,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640569"
 ---
-# <a name="sub-layer-management"></a><span data-ttu-id="c327f-103">Gerenciamento de Sub-Layer</span><span class="sxs-lookup"><span data-stu-id="c327f-103">Sub-Layer Management</span></span>
+# <a name="sub-layer-management"></a><span data-ttu-id="8cbdf-103">Gerenciamento de Sub-Layer</span><span class="sxs-lookup"><span data-stu-id="8cbdf-103">Sub-Layer Management</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="c327f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c327f-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8cbdf-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8cbdf-104">In this section</span></span>
 
--   [<span data-ttu-id="c327f-105">**FWPM de \_ alteração de SUBcamada \_ \_ CALLBACK0**</span><span class="sxs-lookup"><span data-stu-id="c327f-105">**FWPM\_SUBLAYER\_CHANGE\_CALLBACK0**</span></span>](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
--   [<span data-ttu-id="c327f-106">**FwpmSubLayerAdd0**</span><span class="sxs-lookup"><span data-stu-id="c327f-106">**FwpmSubLayerAdd0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayeradd0)
--   [<span data-ttu-id="c327f-107">**FwpmSubLayerCreateEnumHandle0**</span><span class="sxs-lookup"><span data-stu-id="c327f-107">**FwpmSubLayerCreateEnumHandle0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayercreateenumhandle0)
--   [<span data-ttu-id="c327f-108">**FwpmSubLayerDeleteByKey0**</span><span class="sxs-lookup"><span data-stu-id="c327f-108">**FwpmSubLayerDeleteByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdeletebykey0)
--   [<span data-ttu-id="c327f-109">**FwpmSubLayerDestroyEnumHandle0**</span><span class="sxs-lookup"><span data-stu-id="c327f-109">**FwpmSubLayerDestroyEnumHandle0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdestroyenumhandle0)
--   [<span data-ttu-id="c327f-110">**FwpmSubLayerEnum0**</span><span class="sxs-lookup"><span data-stu-id="c327f-110">**FwpmSubLayerEnum0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerenum0)
--   [<span data-ttu-id="c327f-111">**FwpmSubLayerGetByKey0**</span><span class="sxs-lookup"><span data-stu-id="c327f-111">**FwpmSubLayerGetByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayergetbykey0)
--   [<span data-ttu-id="c327f-112">**FwpmSubLayerGetSecurityInfoByKey0**</span><span class="sxs-lookup"><span data-stu-id="c327f-112">**FwpmSubLayerGetSecurityInfoByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayergetsecurityinfobykey0)
--   [<span data-ttu-id="c327f-113">**FwpmSubLayerSetSecurityInfoByKey0**</span><span class="sxs-lookup"><span data-stu-id="c327f-113">**FwpmSubLayerSetSecurityInfoByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersetsecurityinfobykey0)
--   [<span data-ttu-id="c327f-114">**FwpmSubLayerSubscribeChanges0**</span><span class="sxs-lookup"><span data-stu-id="c327f-114">**FwpmSubLayerSubscribeChanges0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersubscribechanges0)
--   [<span data-ttu-id="c327f-115">**FwpmSubLayerSubscriptionsGet0**</span><span class="sxs-lookup"><span data-stu-id="c327f-115">**FwpmSubLayerSubscriptionsGet0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersubscriptionsget0)
--   [<span data-ttu-id="c327f-116">**FwpmSubLayerUnsubscribeChanges0**</span><span class="sxs-lookup"><span data-stu-id="c327f-116">**FwpmSubLayerUnsubscribeChanges0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerunsubscribechanges0)
+-   [<span data-ttu-id="8cbdf-105">**FWPM de \_ alteração de SUBcamada \_ \_ CALLBACK0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-105">**FWPM\_SUBLAYER\_CHANGE\_CALLBACK0**</span></span>](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
+-   [<span data-ttu-id="8cbdf-106">**FwpmSubLayerAdd0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-106">**FwpmSubLayerAdd0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayeradd0)
+-   [<span data-ttu-id="8cbdf-107">**FwpmSubLayerCreateEnumHandle0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-107">**FwpmSubLayerCreateEnumHandle0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayercreateenumhandle0)
+-   [<span data-ttu-id="8cbdf-108">**FwpmSubLayerDeleteByKey0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-108">**FwpmSubLayerDeleteByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdeletebykey0)
+-   [<span data-ttu-id="8cbdf-109">**FwpmSubLayerDestroyEnumHandle0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-109">**FwpmSubLayerDestroyEnumHandle0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdestroyenumhandle0)
+-   [<span data-ttu-id="8cbdf-110">**FwpmSubLayerEnum0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-110">**FwpmSubLayerEnum0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerenum0)
+-   [<span data-ttu-id="8cbdf-111">**FwpmSubLayerGetByKey0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-111">**FwpmSubLayerGetByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayergetbykey0)
+-   [<span data-ttu-id="8cbdf-112">**FwpmSubLayerGetSecurityInfoByKey0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-112">**FwpmSubLayerGetSecurityInfoByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayergetsecurityinfobykey0)
+-   [<span data-ttu-id="8cbdf-113">**FwpmSubLayerSetSecurityInfoByKey0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-113">**FwpmSubLayerSetSecurityInfoByKey0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersetsecurityinfobykey0)
+-   [<span data-ttu-id="8cbdf-114">**FwpmSubLayerSubscribeChanges0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-114">**FwpmSubLayerSubscribeChanges0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersubscribechanges0)
+-   [<span data-ttu-id="8cbdf-115">**FwpmSubLayerSubscriptionsGet0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-115">**FwpmSubLayerSubscriptionsGet0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayersubscriptionsget0)
+-   [<span data-ttu-id="8cbdf-116">**FwpmSubLayerUnsubscribeChanges0**</span><span class="sxs-lookup"><span data-stu-id="8cbdf-116">**FwpmSubLayerUnsubscribeChanges0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerunsubscribechanges0)
 
  
 

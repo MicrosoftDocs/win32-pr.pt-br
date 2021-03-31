@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635189"
 ---
-# <a name="how-to-apply-multiple-transforms-to-an-object"></a><span data-ttu-id="1bf42-103">Como aplicar várias transformações a um objeto</span><span class="sxs-lookup"><span data-stu-id="1bf42-103">How to Apply Multiple Transforms to an Object</span></span>
+# <a name="how-to-apply-multiple-transforms-to-an-object"></a><span data-ttu-id="fa46a-103">Como aplicar várias transformações a um objeto</span><span class="sxs-lookup"><span data-stu-id="fa46a-103">How to Apply Multiple Transforms to an Object</span></span>
 
-<span data-ttu-id="1bf42-104">Executar várias transformações em um objeto significa combinar várias transformações em uma.</span><span class="sxs-lookup"><span data-stu-id="1bf42-104">To perform multiple transforms on an object means to combine several transforms into one.</span></span> <span data-ttu-id="1bf42-105">Ou seja, pegar a saída de cada matriz de transformação e usá-la como entrada para a próxima, obtendo, assim, os efeitos cumulativos de todas as transformações de matriz.</span><span class="sxs-lookup"><span data-stu-id="1bf42-105">That is, taking the output from each transformation matrix and using it as the input for the next, thereby getting the cumulative effects of all the matrix transformations.</span></span>
+<span data-ttu-id="fa46a-104">Executar várias transformações em um objeto significa combinar várias transformações em uma.</span><span class="sxs-lookup"><span data-stu-id="fa46a-104">To perform multiple transforms on an object means to combine several transforms into one.</span></span> <span data-ttu-id="fa46a-105">Ou seja, pegar a saída de cada matriz de transformação e usá-la como entrada para a próxima, obtendo, assim, os efeitos cumulativos de todas as transformações de matriz.</span><span class="sxs-lookup"><span data-stu-id="fa46a-105">That is, taking the output from each transformation matrix and using it as the input for the next, thereby getting the cumulative effects of all the matrix transformations.</span></span>
 
-<span data-ttu-id="1bf42-106">Suponha que duas matrizes de transformação, rotação e translação sejam multiplicadas juntas.</span><span class="sxs-lookup"><span data-stu-id="1bf42-106">Suppose two transformation matrices, rotation and translation, are multiplied together.</span></span> <span data-ttu-id="1bf42-107">O resultado é uma nova matriz que executa as funções de rotação e translação.</span><span class="sxs-lookup"><span data-stu-id="1bf42-107">The result is a new matrix that performs the functions of both rotation and translation.</span></span> <span data-ttu-id="1bf42-108">Como a multiplicação de matriz não é comutada, uma transformação de rotação multiplicada por uma transformação de tradução é diferente da transformação de tradução multiplicada pela transformação de rotação.</span><span class="sxs-lookup"><span data-stu-id="1bf42-108">Because matrix multiplication is not commutative, a rotation transformation multiplied by a translation transformation is different from the translation transformation multiplied by the rotation transformation.</span></span>
+<span data-ttu-id="fa46a-106">Suponha que duas matrizes de transformação, rotação e translação sejam multiplicadas juntas.</span><span class="sxs-lookup"><span data-stu-id="fa46a-106">Suppose two transformation matrices, rotation and translation, are multiplied together.</span></span> <span data-ttu-id="fa46a-107">O resultado é uma nova matriz que executa as funções de rotação e translação.</span><span class="sxs-lookup"><span data-stu-id="fa46a-107">The result is a new matrix that performs the functions of both rotation and translation.</span></span> <span data-ttu-id="fa46a-108">Como a multiplicação de matriz não é comutada, uma transformação de rotação multiplicada por uma transformação de tradução é diferente da transformação de tradução multiplicada pela transformação de rotação.</span><span class="sxs-lookup"><span data-stu-id="fa46a-108">Because matrix multiplication is not commutative, a rotation transformation multiplied by a translation transformation is different from the translation transformation multiplied by the rotation transformation.</span></span>
 
-<span data-ttu-id="1bf42-109">Os exemplos de código a seguir mostram como aplicar a rotação seguida pela tradução e, em seguida, a tradução seguida por rotação.</span><span class="sxs-lookup"><span data-stu-id="1bf42-109">The following code examples show how to apply rotation followed by translation, and then translation followed by rotation.</span></span> <span data-ttu-id="1bf42-110">Observe que os resultados da renderização são diferentes.</span><span class="sxs-lookup"><span data-stu-id="1bf42-110">Notice that the rendering results are different.</span></span>
+<span data-ttu-id="fa46a-109">Os exemplos de código a seguir mostram como aplicar a rotação seguida pela tradução e, em seguida, a tradução seguida por rotação.</span><span class="sxs-lookup"><span data-stu-id="fa46a-109">The following code examples show how to apply rotation followed by translation, and then translation followed by rotation.</span></span> <span data-ttu-id="fa46a-110">Observe que os resultados da renderização são diferentes.</span><span class="sxs-lookup"><span data-stu-id="fa46a-110">Notice that the rendering results are different.</span></span>
 
 
 ```C++
@@ -85,18 +85,18 @@ m_pRenderTarget->DrawRectangle(rectangle, m_pTransformedShapeBrush);
 
 
 
-<span data-ttu-id="1bf42-111">O código produz a saída mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="1bf42-111">The code produces the output shown in the following illustration.</span></span>
+<span data-ttu-id="fa46a-111">O código produz a saída mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="fa46a-111">The code produces the output shown in the following illustration.</span></span>
 
 ![ilustração de um retângulo que foi traduzido e girado e um retângulo que foi girado e, em seguida, traduzido](images/multipletransforms.png)
 
-## <a name="related-topics"></a><span data-ttu-id="1bf42-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1bf42-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="fa46a-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="fa46a-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1bf42-114">Referência de Direct2D</span><span class="sxs-lookup"><span data-stu-id="1bf42-114">Direct2D Reference</span></span>](reference.md)
+[<span data-ttu-id="fa46a-114">Referência de Direct2D</span><span class="sxs-lookup"><span data-stu-id="fa46a-114">Direct2D Reference</span></span>](reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="1bf42-115">Visão geral das transformações do Direct2D</span><span class="sxs-lookup"><span data-stu-id="1bf42-115">Direct2D Transforms Overview</span></span>](direct2d-transforms-overview.md)
+[<span data-ttu-id="fa46a-115">Visão geral das transformações do Direct2D</span><span class="sxs-lookup"><span data-stu-id="fa46a-115">Direct2D Transforms Overview</span></span>](direct2d-transforms-overview.md)
 </dt> </dl>
 
  

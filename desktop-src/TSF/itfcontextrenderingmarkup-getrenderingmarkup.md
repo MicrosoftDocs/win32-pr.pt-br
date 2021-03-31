@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641413"
 ---
-# <a name="itfcontextrenderingmarkupgetrenderingmarkup-method"></a><span data-ttu-id="e670f-106">Método ITfContextRenderingMarkup:: GetRenderingMarkup</span><span class="sxs-lookup"><span data-stu-id="e670f-106">ITfContextRenderingMarkup::GetRenderingMarkup method</span></span>
+# <a name="itfcontextrenderingmarkupgetrenderingmarkup-method"></a><span data-ttu-id="3a07e-106">Método ITfContextRenderingMarkup:: GetRenderingMarkup</span><span class="sxs-lookup"><span data-stu-id="3a07e-106">ITfContextRenderingMarkup::GetRenderingMarkup method</span></span>
 
-<span data-ttu-id="e670f-107">O método **ITfContextRenderingMarkup:: GetRenderingMarkup** recupera um enumerador das marcações de renderização para o intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="e670f-107">The **ITfContextRenderingMarkup::GetRenderingMarkup** method retrieves an enumerator of the rendering markups for the given range.</span></span>
+<span data-ttu-id="3a07e-107">O método **ITfContextRenderingMarkup:: GetRenderingMarkup** recupera um enumerador das marcações de renderização para o intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="3a07e-107">The **ITfContextRenderingMarkup::GetRenderingMarkup** method retrieves an enumerator of the rendering markups for the given range.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e670f-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e670f-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3a07e-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="3a07e-108">Syntax</span></span>
 
 
 ```C++
@@ -40,27 +40,27 @@ HRESULT GetRenderingMarkup(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="e670f-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e670f-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3a07e-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="3a07e-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="e670f-110">*EC* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e670f-110">*ec* \[in\]</span></span>
+<span data-ttu-id="3a07e-110">*EC* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="3a07e-110">*ec* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e670f-111">\[em \] um cookie de edição somente leitura para acessar o contexto.</span><span class="sxs-lookup"><span data-stu-id="e670f-111">\[in\] A read only edit cookie to access the context.</span></span>
+<span data-ttu-id="3a07e-111">\[em \] um cookie de edição somente leitura para acessar o contexto.</span><span class="sxs-lookup"><span data-stu-id="3a07e-111">\[in\] A read only edit cookie to access the context.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e670f-112">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e670f-112">*dwFlags* \[in\]</span></span>
+<span data-ttu-id="3a07e-112">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="3a07e-112">*dwFlags* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e670f-113">\[Em\]</span><span class="sxs-lookup"><span data-stu-id="e670f-113">\[in\]</span></span>
+<span data-ttu-id="3a07e-113">\[Em\]</span><span class="sxs-lookup"><span data-stu-id="3a07e-113">\[in\]</span></span>
 
 
 
-| <span data-ttu-id="e670f-114">Valor</span><span class="sxs-lookup"><span data-stu-id="e670f-114">Value</span></span>                                                                                                                                                                                         | <span data-ttu-id="e670f-115">Significado</span><span class="sxs-lookup"><span data-stu-id="e670f-115">Meaning</span></span>                                                                                      |
+| <span data-ttu-id="3a07e-114">Valor</span><span class="sxs-lookup"><span data-stu-id="3a07e-114">Value</span></span>                                                                                                                                                                                         | <span data-ttu-id="3a07e-115">Significado</span><span class="sxs-lookup"><span data-stu-id="3a07e-115">Meaning</span></span>                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="TF_GRM_INCLUDE_PROPERTY"></span><span id="tf_grm_include_property"></span><dl> <span data-ttu-id="e670f-116"><dt>**Propriedade de inclusão de TF \_ GRM \_ \_**</dt></span><span class="sxs-lookup"><span data-stu-id="e670f-116"><dt>**TF\_GRM\_INCLUDE\_PROPERTY**</dt></span></span> </dl> | <span data-ttu-id="e670f-117">Se esse bit for 1, o enumerador incluirá a \_ propriedade de atributo de prop de GUID \_ .</span><span class="sxs-lookup"><span data-stu-id="e670f-117">If this bit is 1, the enumerator will include the GUID\_PROP\_ATTRIBUTE property.</span></span><br/> |
+| <span id="TF_GRM_INCLUDE_PROPERTY"></span><span id="tf_grm_include_property"></span><dl> <span data-ttu-id="3a07e-116"><dt>**Propriedade de inclusão de TF \_ GRM \_ \_**</dt></span><span class="sxs-lookup"><span data-stu-id="3a07e-116"><dt>**TF\_GRM\_INCLUDE\_PROPERTY**</dt></span></span> </dl> | <span data-ttu-id="3a07e-117">Se esse bit for 1, o enumerador incluirá a \_ propriedade de atributo de prop de GUID \_ .</span><span class="sxs-lookup"><span data-stu-id="3a07e-117">If this bit is 1, the enumerator will include the GUID\_PROP\_ATTRIBUTE property.</span></span><br/> |
 
 
 
@@ -68,38 +68,38 @@ HRESULT GetRenderingMarkup(
 
 </dd> <dt>
 
-<span data-ttu-id="e670f-118">*pRangeCover* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e670f-118">*pRangeCover* \[in\]</span></span>
+<span data-ttu-id="3a07e-118">*pRangeCover* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="3a07e-118">*pRangeCover* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e670f-119">\[em \] um ponteiro para uma interface [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) do intervalo para enumerar as marcações de renderização.</span><span class="sxs-lookup"><span data-stu-id="e670f-119">\[in\] A pointer to an [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) interface of the range to enumerate the rendering markups.</span></span>
+<span data-ttu-id="3a07e-119">\[em \] um ponteiro para uma interface [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) do intervalo para enumerar as marcações de renderização.</span><span class="sxs-lookup"><span data-stu-id="3a07e-119">\[in\] A pointer to an [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) interface of the range to enumerate the rendering markups.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e670f-120">*ppEnum* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="e670f-120">*ppEnum* \[out\]</span></span>
+<span data-ttu-id="3a07e-120">*ppEnum* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="3a07e-120">*ppEnum* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e670f-121">\[\]um ponteiro para recuperar o ponteiro de interface [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup) .</span><span class="sxs-lookup"><span data-stu-id="e670f-121">\[out\] A pointer to retrieve [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup) interface pointer.</span></span>
+<span data-ttu-id="3a07e-121">\[\]um ponteiro para recuperar o ponteiro de interface [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup) .</span><span class="sxs-lookup"><span data-stu-id="3a07e-121">\[out\] A pointer to retrieve [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup) interface pointer.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="e670f-122">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e670f-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3a07e-122">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="3a07e-122">Return value</span></span>
 
-<span data-ttu-id="e670f-123">Esse método pode retornar um desses valores.</span><span class="sxs-lookup"><span data-stu-id="e670f-123">This method can return one of these values.</span></span>
+<span data-ttu-id="3a07e-123">Esse método pode retornar um desses valores.</span><span class="sxs-lookup"><span data-stu-id="3a07e-123">This method can return one of these values.</span></span>
 
 
 
-| <span data-ttu-id="e670f-124">Valor</span><span class="sxs-lookup"><span data-stu-id="e670f-124">Value</span></span>                                                                                | <span data-ttu-id="e670f-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="e670f-125">Description</span></span>                           |
+| <span data-ttu-id="3a07e-124">Valor</span><span class="sxs-lookup"><span data-stu-id="3a07e-124">Value</span></span>                                                                                | <span data-ttu-id="3a07e-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a07e-125">Description</span></span>                           |
 |--------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <span data-ttu-id="e670f-126"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="e670f-126"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="e670f-127">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="e670f-127">The method was successful.</span></span><br/> |
+| <dl> <span data-ttu-id="3a07e-126"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="3a07e-126"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="3a07e-127">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="3a07e-127">The method was successful.</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="e670f-128">Comentários</span><span class="sxs-lookup"><span data-stu-id="e670f-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3a07e-128">Comentários</span><span class="sxs-lookup"><span data-stu-id="3a07e-128">Remarks</span></span>
 
 > [!Note]  
-> <span data-ttu-id="e670f-129">Esse método não está atualmente nos arquivos de cabeçalho públicos.</span><span class="sxs-lookup"><span data-stu-id="e670f-129">This method is not currently in the public header files.</span></span> <span data-ttu-id="e670f-130">Para usar essa API, você deve compilar o [protótipo](prototypes.md)em MIDL.</span><span class="sxs-lookup"><span data-stu-id="e670f-130">To use this API, you must MIDL-compile the [prototype](prototypes.md).</span></span>
+> <span data-ttu-id="3a07e-129">Esse método não está atualmente nos arquivos de cabeçalho públicos.</span><span class="sxs-lookup"><span data-stu-id="3a07e-129">This method is not currently in the public header files.</span></span> <span data-ttu-id="3a07e-130">Para usar essa API, você deve compilar o [protótipo](prototypes.md)em MIDL.</span><span class="sxs-lookup"><span data-stu-id="3a07e-130">To use this API, you must MIDL-compile the [prototype](prototypes.md).</span></span>
 
  
 

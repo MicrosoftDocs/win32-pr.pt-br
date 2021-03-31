@@ -14,15 +14,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635088"
 ---
-# <a name="remote-desktop-gateway-api-reference"></a><span data-ttu-id="5301c-104">Referência de API de gateway de Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="5301c-104">Remote Desktop Gateway API reference</span></span>
+# <a name="remote-desktop-gateway-api-reference"></a><span data-ttu-id="92cc3-104">Referência de API de gateway de Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="92cc3-104">Remote Desktop Gateway API reference</span></span>
 
-<span data-ttu-id="5301c-105">Você pode usar a API de gateway de Área de Trabalho Remota (gateway de área de trabalho remota) para implementar plug-ins que substituam os mecanismos de autenticação e autorização padrão do gateway RD.</span><span class="sxs-lookup"><span data-stu-id="5301c-105">You can use the Remote Desktop Gateway (RD Gateway) API to implement plug-ins that replace the default authentication and authorization mechanisms of RD Gateway.</span></span>
+<span data-ttu-id="92cc3-105">Você pode usar a API de gateway de Área de Trabalho Remota (gateway de área de trabalho remota) para implementar plug-ins que substituam os mecanismos de autenticação e autorização padrão do gateway RD.</span><span class="sxs-lookup"><span data-stu-id="92cc3-105">You can use the Remote Desktop Gateway (RD Gateway) API to implement plug-ins that replace the default authentication and authorization mechanisms of RD Gateway.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="5301c-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5301c-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="92cc3-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="92cc3-106">In this section</span></span>
 
--   [<span data-ttu-id="5301c-107">Tipos de enumeração de gateway Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="5301c-107">Remote Desktop Gateway Enumeration Types</span></span>](remote-desktop-gateway-enumeration-types.md)
--   [<span data-ttu-id="5301c-108">Interfaces de gateway Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="5301c-108">Remote Desktop Gateway Interfaces</span></span>](remote-desktop-gateway-interfaces.md)
--   [<span data-ttu-id="5301c-109">Estruturas Área de Trabalho Remota gateway</span><span class="sxs-lookup"><span data-stu-id="5301c-109">Remote Desktop Gateway Structures</span></span>](remote-desktop-gateway-structures.md)
+-   [<span data-ttu-id="92cc3-107">Tipos de enumeração de gateway Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="92cc3-107">Remote Desktop Gateway Enumeration Types</span></span>](remote-desktop-gateway-enumeration-types.md)
+-   [<span data-ttu-id="92cc3-108">Interfaces de gateway Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="92cc3-108">Remote Desktop Gateway Interfaces</span></span>](remote-desktop-gateway-interfaces.md)
+-   [<span data-ttu-id="92cc3-109">Estruturas Área de Trabalho Remota gateway</span><span class="sxs-lookup"><span data-stu-id="92cc3-109">Remote Desktop Gateway Structures</span></span>](remote-desktop-gateway-structures.md)
 
  
 

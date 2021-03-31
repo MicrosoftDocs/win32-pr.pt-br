@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640371"
 ---
-# <a name="using-iads-to-get-a-security-descriptor"></a><span data-ttu-id="b08eb-104">Usando IADs para obter um descritor de segurança</span><span class="sxs-lookup"><span data-stu-id="b08eb-104">Using IADs to Get a Security Descriptor</span></span>
+# <a name="using-iads-to-get-a-security-descriptor"></a><span data-ttu-id="debf4-104">Usando IADs para obter um descritor de segurança</span><span class="sxs-lookup"><span data-stu-id="debf4-104">Using IADs to Get a Security Descriptor</span></span>
 
-<span data-ttu-id="b08eb-105">Os exemplos de código a seguir usam o método [**IADs:: Get**](/windows/desktop/api/iads/nf-iads-iads-get) para recuperar um ponteiro [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para a propriedade **nTSecurityDescriptor** de um objeto em Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="b08eb-105">The following code examples use the [**IADs::Get**](/windows/desktop/api/iads/nf-iads-iads-get) method to retrieve an [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) pointer to the **nTSecurityDescriptor** property of an object in Active Directory Domain Services.</span></span>
+<span data-ttu-id="debf4-105">Os exemplos de código a seguir usam o método [**IADs:: Get**](/windows/desktop/api/iads/nf-iads-iads-get) para recuperar um ponteiro [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para a propriedade **nTSecurityDescriptor** de um objeto em Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="debf4-105">The following code examples use the [**IADs::Get**](/windows/desktop/api/iads/nf-iads-iads-get) method to retrieve an [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) pointer to the **nTSecurityDescriptor** property of an object in Active Directory Domain Services.</span></span>
 
 
 ```VB

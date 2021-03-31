@@ -19,26 +19,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641614"
 ---
-# <a name="idcompositionshadoweffectsetalpha-methods"></a><span data-ttu-id="0194f-104">Métodos IDCompositionShadowEffect:: setalpha</span><span class="sxs-lookup"><span data-stu-id="0194f-104">IDCompositionShadowEffect::SetAlpha methods</span></span>
+# <a name="idcompositionshadoweffectsetalpha-methods"></a><span data-ttu-id="4636e-104">Métodos IDCompositionShadowEffect:: setalpha</span><span class="sxs-lookup"><span data-stu-id="4636e-104">IDCompositionShadowEffect::SetAlpha methods</span></span>
 
-<span data-ttu-id="0194f-105">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="0194f-105">Sets the alpha value for the effect.</span></span>
+<span data-ttu-id="4636e-105">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="4636e-105">Sets the alpha value for the effect.</span></span>
 
-### <a name="overload-list"></a><span data-ttu-id="0194f-106">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="0194f-106">Overload list</span></span>
+### <a name="overload-list"></a><span data-ttu-id="4636e-106">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="4636e-106">Overload list</span></span>
 
 
 
-| <span data-ttu-id="0194f-107">Método</span><span class="sxs-lookup"><span data-stu-id="0194f-107">Method</span></span>                                                                               | <span data-ttu-id="0194f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0194f-108">Description</span></span>                                     |
+| <span data-ttu-id="4636e-107">Método</span><span class="sxs-lookup"><span data-stu-id="4636e-107">Method</span></span>                                                                               | <span data-ttu-id="4636e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="4636e-108">Description</span></span>                                     |
 |:-------------------------------------------------------------------------------------|:------------------------------------------------|
-| <span data-ttu-id="0194f-109">[**Setalpha (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation))</span><span class="sxs-lookup"><span data-stu-id="0194f-109">[**SetAlpha (IDCompositionAnimation \*)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation))</span></span> | <span data-ttu-id="0194f-110">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="0194f-110">Sets the alpha value for the effect.</span></span><br/> |
-| <span data-ttu-id="0194f-111">[**Setalpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))</span><span class="sxs-lookup"><span data-stu-id="0194f-111">[**SetAlpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))</span></span>                               | <span data-ttu-id="0194f-112">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="0194f-112">Sets the alpha value for the effect.</span></span><br/> |
+| <span data-ttu-id="4636e-109">[**Setalpha (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation))</span><span class="sxs-lookup"><span data-stu-id="4636e-109">[**SetAlpha (IDCompositionAnimation \*)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation))</span></span> | <span data-ttu-id="4636e-110">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="4636e-110">Sets the alpha value for the effect.</span></span><br/> |
+| <span data-ttu-id="4636e-111">[**Setalpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))</span><span class="sxs-lookup"><span data-stu-id="4636e-111">[**SetAlpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))</span></span>                               | <span data-ttu-id="4636e-112">Define o valor alfa para o efeito.</span><span class="sxs-lookup"><span data-stu-id="4636e-112">Sets the alpha value for the effect.</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="0194f-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="0194f-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4636e-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="4636e-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="0194f-114">**IDCompositionShadowEffect**</span><span class="sxs-lookup"><span data-stu-id="0194f-114">**IDCompositionShadowEffect**</span></span>](/windows/win32/api/dcomp/nn-dcomp-idcompositionshadoweffect)
+[<span data-ttu-id="4636e-114">**IDCompositionShadowEffect**</span><span class="sxs-lookup"><span data-stu-id="4636e-114">**IDCompositionShadowEffect**</span></span>](/windows/win32/api/dcomp/nn-dcomp-idcompositionshadoweffect)
 </dt> </dl>
 
  

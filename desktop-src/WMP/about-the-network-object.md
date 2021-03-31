@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635002"
 ---
-# <a name="about-the-network-object"></a><span data-ttu-id="531ce-111">Sobre o objeto de rede</span><span class="sxs-lookup"><span data-stu-id="531ce-111">About the Network Object</span></span>
+# <a name="about-the-network-object"></a><span data-ttu-id="72257-111">Sobre o objeto de rede</span><span class="sxs-lookup"><span data-stu-id="72257-111">About the Network Object</span></span>
 
-<span data-ttu-id="531ce-112">O objeto de **rede** rege as propriedades que permitem determinar o quão bem o conteúdo é transmitido pela rede.</span><span class="sxs-lookup"><span data-stu-id="531ce-112">The **Network** object governs the properties that allow you to determine how well the content is streaming through the network.</span></span> <span data-ttu-id="531ce-113">Por exemplo, você pode descobrir se os pacotes estão sendo perdidos e tomar a ação apropriada.</span><span class="sxs-lookup"><span data-stu-id="531ce-113">For example, you can find out whether packets are being lost and take appropriate action.</span></span> <span data-ttu-id="531ce-114">O objeto de **rede** é acessado somente por meio da propriedade **Network** do objeto **Player** .</span><span class="sxs-lookup"><span data-stu-id="531ce-114">The **Network** object is accessed only through the **network** property of the **Player** object.</span></span> <span data-ttu-id="531ce-115">A propriedade **Network** retorna o objeto de **rede** .</span><span class="sxs-lookup"><span data-stu-id="531ce-115">The **network** property returns the **Network** object.</span></span> <span data-ttu-id="531ce-116">Você só pode acessar as propriedades do objeto de **rede** depois de tê-lo criado.</span><span class="sxs-lookup"><span data-stu-id="531ce-116">You can only access the properties of the **Network** object after you have created it.</span></span> <span data-ttu-id="531ce-117">Por exemplo, para usar a propriedade **Bandwidth** , você deve usar o seguinte código:</span><span class="sxs-lookup"><span data-stu-id="531ce-117">For example, to use the **Bandwidth** property, you must use the following code:</span></span>
+<span data-ttu-id="72257-112">O objeto de **rede** rege as propriedades que permitem determinar o quão bem o conteúdo é transmitido pela rede.</span><span class="sxs-lookup"><span data-stu-id="72257-112">The **Network** object governs the properties that allow you to determine how well the content is streaming through the network.</span></span> <span data-ttu-id="72257-113">Por exemplo, você pode descobrir se os pacotes estão sendo perdidos e tomar a ação apropriada.</span><span class="sxs-lookup"><span data-stu-id="72257-113">For example, you can find out whether packets are being lost and take appropriate action.</span></span> <span data-ttu-id="72257-114">O objeto de **rede** é acessado somente por meio da propriedade **Network** do objeto **Player** .</span><span class="sxs-lookup"><span data-stu-id="72257-114">The **Network** object is accessed only through the **network** property of the **Player** object.</span></span> <span data-ttu-id="72257-115">A propriedade **Network** retorna o objeto de **rede** .</span><span class="sxs-lookup"><span data-stu-id="72257-115">The **network** property returns the **Network** object.</span></span> <span data-ttu-id="72257-116">Você só pode acessar as propriedades do objeto de **rede** depois de tê-lo criado.</span><span class="sxs-lookup"><span data-stu-id="72257-116">You can only access the properties of the **Network** object after you have created it.</span></span> <span data-ttu-id="72257-117">Por exemplo, para usar a propriedade **Bandwidth** , você deve usar o seguinte código:</span><span class="sxs-lookup"><span data-stu-id="72257-117">For example, to use the **Bandwidth** property, you must use the following code:</span></span>
 
 
 ```C++
@@ -32,14 +32,14 @@ mybandwidth = player.network.bandwidth;
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="531ce-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="531ce-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="72257-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="72257-118">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="531ce-119">**Objeto de rede**</span><span class="sxs-lookup"><span data-stu-id="531ce-119">**Network Object**</span></span>](network-object.md)
+[<span data-ttu-id="72257-119">**Objeto de rede**</span><span class="sxs-lookup"><span data-stu-id="72257-119">**Network Object**</span></span>](network-object.md)
 </dt> <dt>
 
-[<span data-ttu-id="531ce-120">**Modelo de objeto do Player para linguagens de script**</span><span class="sxs-lookup"><span data-stu-id="531ce-120">**Player Object Model for Scripting Languages**</span></span>](player-object-model-for-scripting-languages.md)
+[<span data-ttu-id="72257-120">**Modelo de objeto do Player para linguagens de script**</span><span class="sxs-lookup"><span data-stu-id="72257-120">**Player Object Model for Scripting Languages**</span></span>](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
  

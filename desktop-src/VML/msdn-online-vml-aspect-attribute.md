@@ -11,52 +11,52 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641358"
 ---
-# <a name="vml-aspect-attribute"></a><span data-ttu-id="7b6bb-103">Atributo de aspecto da VML</span><span class="sxs-lookup"><span data-stu-id="7b6bb-103">VML Aspect Attribute</span></span>
+# <a name="vml-aspect-attribute"></a><span data-ttu-id="d4979-103">Atributo de aspecto da VML</span><span class="sxs-lookup"><span data-stu-id="d4979-103">VML Aspect Attribute</span></span>
 
-<span data-ttu-id="7b6bb-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="7b6bb-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="d4979-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="d4979-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="d4979-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="d4979-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="7b6bb-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="7b6bb-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="7b6bb-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="7b6bb-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="7b6bb-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="7b6bb-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="d4979-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="d4979-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="d4979-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="d4979-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="d4979-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="d4979-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="d4979-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="d4979-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="7b6bb-110">Especifica como a taxa de proporção da imagem de preenchimento será preservada.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-110">Specifies how the fill image aspect ratio will be preserved.</span></span> <span data-ttu-id="7b6bb-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-111">Read/write.</span></span> <span data-ttu-id="7b6bb-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-112">**String**.</span></span>
+<span data-ttu-id="d4979-110">Especifica como a taxa de proporção da imagem de preenchimento será preservada.</span><span class="sxs-lookup"><span data-stu-id="d4979-110">Specifies how the fill image aspect ratio will be preserved.</span></span> <span data-ttu-id="d4979-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d4979-111">Read/write.</span></span> <span data-ttu-id="d4979-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="d4979-112">**String**.</span></span>
 
-<span data-ttu-id="7b6bb-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="7b6bb-113">**Applies To**</span></span>
+<span data-ttu-id="d4979-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="d4979-113">**Applies To**</span></span>
 
-[<span data-ttu-id="7b6bb-114">Preencher</span><span class="sxs-lookup"><span data-stu-id="7b6bb-114">Fill</span></span>](msdn-online-vml-fill-element.md)
+[<span data-ttu-id="d4979-114">Preencher</span><span class="sxs-lookup"><span data-stu-id="d4979-114">Fill</span></span>](msdn-online-vml-fill-element.md)
 
-<span data-ttu-id="7b6bb-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="7b6bb-115">**Tag Syntax**</span></span>
+<span data-ttu-id="d4979-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="d4979-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="7b6bb-116"><v: *Element* aspecto = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="7b6bb-116"><v: *element* aspect=" *expression* "></span></span>
+<span data-ttu-id="d4979-116"><v: *Element* aspecto = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="d4979-116"><v: *element* aspect=" *expression* "></span></span>
 
-<span data-ttu-id="7b6bb-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="7b6bb-117">**Script Syntax**</span></span>
+<span data-ttu-id="d4979-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="d4979-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="7b6bb-118">*elemento* . Aspect = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="7b6bb-118">*element* .aspect="*expression*"</span></span>
+<span data-ttu-id="d4979-118">*elemento* . Aspect = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="d4979-118">*element* .aspect="*expression*"</span></span>
 
-<span data-ttu-id="7b6bb-119">*expressão* = de *elemento*. Aspect</span><span class="sxs-lookup"><span data-stu-id="7b6bb-119">*expression*=*element*.aspect</span></span>
+<span data-ttu-id="d4979-119">*expressão* = de *elemento*. Aspect</span><span class="sxs-lookup"><span data-stu-id="d4979-119">*expression*=*element*.aspect</span></span>
 
-<span data-ttu-id="7b6bb-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="7b6bb-120">**Remarks**</span></span>
+<span data-ttu-id="d4979-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="d4979-120">**Remarks**</span></span>
 
-<span data-ttu-id="7b6bb-121">Os valores são:</span><span class="sxs-lookup"><span data-stu-id="7b6bb-121">Values include:</span></span>
+<span data-ttu-id="d4979-121">Os valores são:</span><span class="sxs-lookup"><span data-stu-id="d4979-121">Values include:</span></span>
 
 
 
-| <span data-ttu-id="7b6bb-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7b6bb-122">Value</span></span>   | <span data-ttu-id="7b6bb-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b6bb-123">Description</span></span>                           |
+| <span data-ttu-id="d4979-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d4979-122">Value</span></span>   | <span data-ttu-id="d4979-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4979-123">Description</span></span>                           |
 |---------|---------------------------------------|
-| <span data-ttu-id="7b6bb-124">ignore</span><span class="sxs-lookup"><span data-stu-id="7b6bb-124">ignore</span></span>  | <span data-ttu-id="7b6bb-125">Ignorar problemas de aspecto.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-125">Ignore aspect issues.</span></span> <span data-ttu-id="7b6bb-126">Padrão.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-126">Default.</span></span>        |
-| <span data-ttu-id="7b6bb-127">mínimo</span><span class="sxs-lookup"><span data-stu-id="7b6bb-127">atleast</span></span> | <span data-ttu-id="7b6bb-128">A imagem é pelo menos tão grande quanto o **tamanho**.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-128">Image is at least as big as **Size**.</span></span> |
-| <span data-ttu-id="7b6bb-129">atmost</span><span class="sxs-lookup"><span data-stu-id="7b6bb-129">atmost</span></span>  | <span data-ttu-id="7b6bb-130">A imagem não é maior que o **tamanho**.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-130">Image is no bigger than **Size**.</span></span>     |
+| <span data-ttu-id="d4979-124">ignore</span><span class="sxs-lookup"><span data-stu-id="d4979-124">ignore</span></span>  | <span data-ttu-id="d4979-125">Ignorar problemas de aspecto.</span><span class="sxs-lookup"><span data-stu-id="d4979-125">Ignore aspect issues.</span></span> <span data-ttu-id="d4979-126">Padrão.</span><span class="sxs-lookup"><span data-stu-id="d4979-126">Default.</span></span>        |
+| <span data-ttu-id="d4979-127">mínimo</span><span class="sxs-lookup"><span data-stu-id="d4979-127">atleast</span></span> | <span data-ttu-id="d4979-128">A imagem é pelo menos tão grande quanto o **tamanho**.</span><span class="sxs-lookup"><span data-stu-id="d4979-128">Image is at least as big as **Size**.</span></span> |
+| <span data-ttu-id="d4979-129">atmost</span><span class="sxs-lookup"><span data-stu-id="d4979-129">atmost</span></span>  | <span data-ttu-id="d4979-130">A imagem não é maior que o **tamanho**.</span><span class="sxs-lookup"><span data-stu-id="d4979-130">Image is no bigger than **Size**.</span></span>     |
 
 
 
  
 
-<span data-ttu-id="7b6bb-131">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="7b6bb-131">*VML Standard Attribute*</span></span>
+<span data-ttu-id="d4979-131">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="d4979-131">*VML Standard Attribute*</span></span>
 
-<span data-ttu-id="7b6bb-132">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="7b6bb-132">**Example**</span></span>
+<span data-ttu-id="d4979-132">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="d4979-132">**Example**</span></span>
 
-<span data-ttu-id="7b6bb-133">A imagem que compõe o preenchimento é maior ou igual a um tamanho de 10 pontos em 10 pontos.</span><span class="sxs-lookup"><span data-stu-id="7b6bb-133">The image that makes up the fill is greater than or equal to a size of 10 points by 10 points.</span></span>
+<span data-ttu-id="d4979-133">A imagem que compõe o preenchimento é maior ou igual a um tamanho de 10 pontos em 10 pontos.</span><span class="sxs-lookup"><span data-stu-id="d4979-133">The image that makes up the fill is greater than or equal to a size of 10 points by 10 points.</span></span>
 
 
 ```HTML

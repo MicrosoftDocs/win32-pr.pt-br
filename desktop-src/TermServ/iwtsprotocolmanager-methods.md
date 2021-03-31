@@ -12,19 +12,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637247"
 ---
-# <a name="iwtsprotocolmanager-methods"></a><span data-ttu-id="a6f9e-103">Métodos IWTSProtocolManager</span><span class="sxs-lookup"><span data-stu-id="a6f9e-103">IWTSProtocolManager Methods</span></span>
+# <a name="iwtsprotocolmanager-methods"></a><span data-ttu-id="e4db5-103">Métodos IWTSProtocolManager</span><span class="sxs-lookup"><span data-stu-id="e4db5-103">IWTSProtocolManager Methods</span></span>
 
-<span data-ttu-id="a6f9e-104">\[O IWTSProtocolManager não está mais disponível para uso a partir do Windows Server 2012.\]</span><span class="sxs-lookup"><span data-stu-id="a6f9e-104">\[IWTSProtocolManager is no longer available for use as of Windows Server 2012.\]</span></span>
+<span data-ttu-id="e4db5-104">\[O IWTSProtocolManager não está mais disponível para uso a partir do Windows Server 2012.\]</span><span class="sxs-lookup"><span data-stu-id="e4db5-104">\[IWTSProtocolManager is no longer available for use as of Windows Server 2012.\]</span></span>
 
-<span data-ttu-id="a6f9e-105">A interface [**IWTSProtocolManager**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocolmanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a6f9e-105">The [**IWTSProtocolManager**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocolmanager) interface exposes the following methods.</span></span>
+<span data-ttu-id="e4db5-105">A interface [**IWTSProtocolManager**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocolmanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="e4db5-105">The [**IWTSProtocolManager**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocolmanager) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a6f9e-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a6f9e-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e4db5-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e4db5-106">In this section</span></span>
 
--   [<span data-ttu-id="a6f9e-107">**Método CreateListener**</span><span class="sxs-lookup"><span data-stu-id="a6f9e-107">**CreateListener method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-createlistener)
--   [<span data-ttu-id="a6f9e-108">**Método NotifyServiceStateChange**</span><span class="sxs-lookup"><span data-stu-id="a6f9e-108">**NotifyServiceStateChange method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifyservicestatechange)
--   [<span data-ttu-id="a6f9e-109">**Método NotifySessionOfServiceStart**</span><span class="sxs-lookup"><span data-stu-id="a6f9e-109">**NotifySessionOfServiceStart method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionofservicestart)
--   [<span data-ttu-id="a6f9e-110">**Método NotifySessionOfServiceStop**</span><span class="sxs-lookup"><span data-stu-id="a6f9e-110">**NotifySessionOfServiceStop method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionofservicestop)
--   [<span data-ttu-id="a6f9e-111">**Método NotifySessionStateChange**</span><span class="sxs-lookup"><span data-stu-id="a6f9e-111">**NotifySessionStateChange method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionstatechange)
+-   [<span data-ttu-id="e4db5-107">**Método CreateListener**</span><span class="sxs-lookup"><span data-stu-id="e4db5-107">**CreateListener method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-createlistener)
+-   [<span data-ttu-id="e4db5-108">**Método NotifyServiceStateChange**</span><span class="sxs-lookup"><span data-stu-id="e4db5-108">**NotifyServiceStateChange method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifyservicestatechange)
+-   [<span data-ttu-id="e4db5-109">**Método NotifySessionOfServiceStart**</span><span class="sxs-lookup"><span data-stu-id="e4db5-109">**NotifySessionOfServiceStart method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionofservicestart)
+-   [<span data-ttu-id="e4db5-110">**Método NotifySessionOfServiceStop**</span><span class="sxs-lookup"><span data-stu-id="e4db5-110">**NotifySessionOfServiceStop method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionofservicestop)
+-   [<span data-ttu-id="e4db5-111">**Método NotifySessionStateChange**</span><span class="sxs-lookup"><span data-stu-id="e4db5-111">**NotifySessionStateChange method**</span></span>](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolmanager-notifysessionstatechange)
 
  
 

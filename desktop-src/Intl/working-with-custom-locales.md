@@ -1,0 +1,72 @@
+---
+description: Este tópico fornece algumas instruções para lidar com localidades personalizadas em seus aplicativos.
+ms.assetid: 2622e2b3-b952-4666-a440-85d73d11c5e0
+title: Trabalhando com localidades personalizadas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1ab0e59446496ae2985860c0fd6b1bd5bddde084
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103921203"
+---
+# <a name="working-with-custom-locales"></a><span data-ttu-id="d0f41-103">Trabalhando com localidades personalizadas</span><span class="sxs-lookup"><span data-stu-id="d0f41-103">Working with Custom Locales</span></span>
+
+<span data-ttu-id="d0f41-104">Este tópico fornece algumas instruções para lidar com [localidades personalizadas](custom-locales.md) em seus aplicativos.</span><span class="sxs-lookup"><span data-stu-id="d0f41-104">This topic provides some instructions for handling [custom locales](custom-locales.md) in your applications.</span></span> <span data-ttu-id="d0f41-105">É melhor preparar todo o código-fonte com essas considerações em mente, pois seu aplicativo não controla se as localidades personalizadas estão instaladas no sistema operacional.</span><span class="sxs-lookup"><span data-stu-id="d0f41-105">It is best to prepare all your source code with these considerations in mind, as your application does not control whether custom locales are installed on the operating system.</span></span>
+
+## <a name="handle-locale_stime-constant-correctly"></a><span data-ttu-id="d0f41-106">Manipular a \_ constante STIME de localidade corretamente</span><span class="sxs-lookup"><span data-stu-id="d0f41-106">Handle LOCALE\_STIME Constant Correctly</span></span>
+
+<span data-ttu-id="d0f41-107">Se você tiver um aplicativo mais antigo que usa [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) para obter o separador de tempo obsoleto indicado pela [localidade \_ STIME](locale-stime-constants.md), o aplicativo poderá falhar ao analisar o formato de hora.</span><span class="sxs-lookup"><span data-stu-id="d0f41-107">If you have an older application that uses [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) to obtain the obsolete time separator indicated by [LOCALE\_STIME](locale-stime-constants.md), the application can fail to parse the time format.</span></span> <span data-ttu-id="d0f41-108">Lembre-se de que o caractere que separa horas de minutos é diferente do caractere que separa minutos de segundos.</span><span class="sxs-lookup"><span data-stu-id="d0f41-108">Remember that the character that separates hours from minutes is distinct from the character that separates minutes from seconds.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="d0f41-109">Ao programar para localidades personalizadas, lembre-se de que elas são incomuns.</span><span class="sxs-lookup"><span data-stu-id="d0f41-109">When programming for custom locales, remember that they are unusual.</span></span> <span data-ttu-id="d0f41-110">Praticamente todos os campos disponíveis para NLS têm que lidar com comportamento incomum.</span><span class="sxs-lookup"><span data-stu-id="d0f41-110">Virtually every field available to NLS has to cope with unusual behavior.</span></span> <span data-ttu-id="d0f41-111">Por exemplo, o formato de hora 12H34 ' 12 ' é legítimo e geralmente é compreensível.</span><span class="sxs-lookup"><span data-stu-id="d0f41-111">For example, the time format 12H34'12'' is legitimate and generally understandable.</span></span> <span data-ttu-id="d0f41-112">Ainda assim, muitos aplicativos fazem suposições sobre os separadores de tempo que podem interromper comprimentos de buffer ou campos de exibição.</span><span class="sxs-lookup"><span data-stu-id="d0f41-112">Yet many applications make assumptions about the time separators that can break buffer lengths or display fields.</span></span>
+
+ 
+
+## <a name="distinguish-among-supplemental-locales"></a><span data-ttu-id="d0f41-113">Distinguir entre as localidades complementares</span><span class="sxs-lookup"><span data-stu-id="d0f41-113">Distinguish Among Supplemental Locales</span></span>
+
+<span data-ttu-id="d0f41-114">Todas as localidades complementares usam a constante [ \_ \_ não especificada de localidade personalizada](locale-custom-constants.md) para o [identificador de localidade](locale-identifiers.md).</span><span class="sxs-lookup"><span data-stu-id="d0f41-114">All supplemental locales use the [LOCALE\_CUSTOM\_UNSPECIFIED](locale-custom-constants.md) constant for the [locale identifier](locale-identifiers.md).</span></span> <span data-ttu-id="d0f41-115">Como regra, [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) não pode distinguir entre localidades complementares, mas [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) pode usar nomes de [localidade](locale-names.md) em vez de identificadores de localidade.</span><span class="sxs-lookup"><span data-stu-id="d0f41-115">As a rule, [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) cannot distinguish among supplemental locales, but [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) can because it uses [locale names](locale-names.md) instead of locale identifiers.</span></span> <span data-ttu-id="d0f41-116">Seu aplicativo pode recuperar informações sobre uma localidade complementar específica somente quando essa localidade é a localidade do usuário selecionada no momento.</span><span class="sxs-lookup"><span data-stu-id="d0f41-116">Your application can retrieve information about a particular supplemental locale only when that locale is the currently selected user locale.</span></span> <span data-ttu-id="d0f41-117">Em seguida, o aplicativo pode chamar [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) e passar o [ \_ \_ padrão de usuário de localidade](locale-user-default.md) de constante como o identificador de localidade.</span><span class="sxs-lookup"><span data-stu-id="d0f41-117">Then, the application can call [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) and pass the constant [LOCALE\_USER\_DEFAULT](locale-user-default.md) as the locale identifier.</span></span>
+
+## <a name="handle-replacement-locales"></a><span data-ttu-id="d0f41-118">Manipular localidades de substituição</span><span class="sxs-lookup"><span data-stu-id="d0f41-118">Handle Replacement Locales</span></span>
+
+<span data-ttu-id="d0f41-119">Para preservar a confiabilidade do Windows, lembre-se de que uma localidade de substituição com suporte do seu aplicativo não pode modificar o identificador de localidade da localidade substituída.</span><span class="sxs-lookup"><span data-stu-id="d0f41-119">To preserve the reliability of Windows, remember that a replacement locale supported by your application cannot modify the locale identifier of the replaced locale.</span></span> <span data-ttu-id="d0f41-120">Nenhuma localidade de substituição pode modificar as propriedades de classificação do Windows.</span><span class="sxs-lookup"><span data-stu-id="d0f41-120">Neither can a replacement locale modify the sorting properties of Windows.</span></span>
+
+<span data-ttu-id="d0f41-121">Embora uma localidade de substituição possa alterar o calendário padrão, ela deve manter o padrão original em algum lugar na lista de calendários disponíveis.</span><span class="sxs-lookup"><span data-stu-id="d0f41-121">Although a replacement locale can change the default calendar, it must retain the original default somewhere in the list of available calendars.</span></span> <span data-ttu-id="d0f41-122">Por exemplo, a localidade tailandesa (Tailândia) usa o calendário budista tailandês como padrão.</span><span class="sxs-lookup"><span data-stu-id="d0f41-122">For example, the Thai (Thailand) locale uses the Thai Buddhist calendar as the default.</span></span> <span data-ttu-id="d0f41-123">Um administrador pode criar uma localidade de substituição que usa o calendário gregoriano localizado.</span><span class="sxs-lookup"><span data-stu-id="d0f41-123">An administrator can create a replacement locale that uses the Gregorian localized calendar.</span></span> <span data-ttu-id="d0f41-124">No entanto, a lista de calendários disponíveis continua a conter uma entrada para o calendário budista tailandês.</span><span class="sxs-lookup"><span data-stu-id="d0f41-124">However, the list of available calendars continues to contain an entry for the Thai Buddhist calendar.</span></span>
+
+<span data-ttu-id="d0f41-125">Para localidades de substituição, o aplicativo geralmente deve consultar informações específicas de localidade em vez de tentar um "atalho" com base no conhecimento de uma determinada localidade.</span><span class="sxs-lookup"><span data-stu-id="d0f41-125">For replacement locales, your application should generally consult locale-specific information instead of attempting a "shortcut" based on knowledge of a certain locale.</span></span> <span data-ttu-id="d0f41-126">Por exemplo, quando [**GetThreadLocale**](/windows/desktop/api/Winnls/nf-winnls-getthreadlocale) recupera a localidade atual como inglês (Estados Unidos), ela pode, na verdade, ser uma localidade de substituição que deve ter permissão para entrar em vigor.</span><span class="sxs-lookup"><span data-stu-id="d0f41-126">For example, when [**GetThreadLocale**](/windows/desktop/api/Winnls/nf-winnls-getthreadlocale) retrieves the current locale as English (United States), it might actually be a replacement locale that should be allowed to take effect.</span></span>
+
+## <a name="customize-calendars"></a><span data-ttu-id="d0f41-127">Personalizar calendários</span><span class="sxs-lookup"><span data-stu-id="d0f41-127">Customize Calendars</span></span>
+
+<span data-ttu-id="d0f41-128">Seus aplicativos podem personalizar os nomes de dia e mês para calendários gregorianos, mas não para calendários não gregorianos.</span><span class="sxs-lookup"><span data-stu-id="d0f41-128">Your applications can customize day and month names for Gregorian calendars, but not for non-Gregorian calendars.</span></span> <span data-ttu-id="d0f41-129">Da mesma forma, o NLS não dá suporte à criação de calendários personalizados definidos pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="d0f41-129">Similarly, NLS does not support creation of user-defined custom calendars.</span></span> <span data-ttu-id="d0f41-130">Para obter mais informações, consulte [data e calendário](date-and-calendar.md).</span><span class="sxs-lookup"><span data-stu-id="d0f41-130">For more information, see [Date and Calendar](date-and-calendar.md).</span></span>
+
+## <a name="handle-sorting-sequences"></a><span data-ttu-id="d0f41-131">Processar sequências de classificação</span><span class="sxs-lookup"><span data-stu-id="d0f41-131">Handle Sorting Sequences</span></span>
+
+<span data-ttu-id="d0f41-132">Uma localidade suplementar pode usar qualquer sequência de classificação definida pela Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d0f41-132">A supplemental locale can use any Microsoft-defined sorting sequence.</span></span> <span data-ttu-id="d0f41-133">Uma localidade de substituição deve usar a mesma sequência de classificação que a localidade que ele substitui.</span><span class="sxs-lookup"><span data-stu-id="d0f41-133">A replacement locale must use the same sorting sequence as the locale it replaces.</span></span> <span data-ttu-id="d0f41-134">O NLS não oferece suporte à criação de sequências de classificação definidas pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="d0f41-134">NLS does not support the creation of user-defined sorting sequences.</span></span> <span data-ttu-id="d0f41-135">Para obter mais informações, consulte [lidando com a classificação em seus aplicativos](handling-sorting-in-your-applications.md).</span><span class="sxs-lookup"><span data-stu-id="d0f41-135">For more information, see [Handling Sorting in Your Applications](handling-sorting-in-your-applications.md).</span></span>
+
+## <a name="localize-custom-locale-information"></a><span data-ttu-id="d0f41-136">Localizar informações de localidade personalizada</span><span class="sxs-lookup"><span data-stu-id="d0f41-136">Localize Custom Locale Information</span></span>
+
+<span data-ttu-id="d0f41-137">O NLS não fornece um mecanismo para localizar informações de localidade personalizadas.</span><span class="sxs-lookup"><span data-stu-id="d0f41-137">NLS does not provide a mechanism for localizing custom locale information.</span></span> <span data-ttu-id="d0f41-138">Assim, a [localidade constante \_ SLANGUAGE](locale-slanguage.md) ou a [localidade \_ SLOCALIZEDLANGUAGENAME](locale-slocalized-constants.md) usada como um identificador de localidade para uma localidade personalizada sempre recupera valores associados à [localidade \_ SNATIVELANGNAME](locale-snative-constants.md) ou à [ \_ SNATIVELANGUAGENAME de localidade](locale-snative-constants.md).</span><span class="sxs-lookup"><span data-stu-id="d0f41-138">Thus the constant [LOCALE\_SLANGUAGE](locale-slanguage.md) or [LOCALE\_SLOCALIZEDLANGUAGENAME](locale-slocalized-constants.md) used as a locale identifier for a custom locale always retrieves values associated with [LOCALE\_SNATIVELANGNAME](locale-snative-constants.md) or [LOCALE\_SNATIVELANGUAGENAME](locale-snative-constants.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="d0f41-139">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d0f41-139">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="d0f41-140">Usando o suporte ao idioma nacional</span><span class="sxs-lookup"><span data-stu-id="d0f41-140">Using National Language Support</span></span>](using-national-language-support.md)
+</dt> <dt>
+
+[<span data-ttu-id="d0f41-141">Localidades personalizadas</span><span class="sxs-lookup"><span data-stu-id="d0f41-141">Custom Locales</span></span>](custom-locales.md)
+</dt> <dt>
+
+[<span data-ttu-id="d0f41-142">Data e calendário</span><span class="sxs-lookup"><span data-stu-id="d0f41-142">Date and Calendar</span></span>](date-and-calendar.md)
+</dt> <dt>
+
+[<span data-ttu-id="d0f41-143">Lidando com a classificação em seus aplicativos</span><span class="sxs-lookup"><span data-stu-id="d0f41-143">Handling Sorting in Your Applications</span></span>](handling-sorting-in-your-applications.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+

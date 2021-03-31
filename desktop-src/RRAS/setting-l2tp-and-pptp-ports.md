@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635142"
 ---
-# <a name="setting-l2tp-and-pptp-ports-of-local-rras-service"></a><span data-ttu-id="51844-105">Definindo portas L2TP e PPTP do serviço RRAS local</span><span class="sxs-lookup"><span data-stu-id="51844-105">Setting L2TP and PPTP ports of local RRAS service</span></span>
+# <a name="setting-l2tp-and-pptp-ports-of-local-rras-service"></a><span data-ttu-id="8d491-105">Definindo portas L2TP e PPTP do serviço RRAS local</span><span class="sxs-lookup"><span data-stu-id="8d491-105">Setting L2TP and PPTP ports of local RRAS service</span></span>
 
-<span data-ttu-id="51844-106">Este exemplo obtém e define a configuração de porta L2TP e PPTP do serviço RRAS local.</span><span class="sxs-lookup"><span data-stu-id="51844-106">This example gets and sets the L2TP and PPTP port configuration of the local RRAS service.</span></span> <span data-ttu-id="51844-107">Ele pressupõe que o processo de chamada tenha privilégios suficientes para acessar o serviço RRAS local.</span><span class="sxs-lookup"><span data-stu-id="51844-107">It assumes the calling process has sufficient privileges to access the local RRAS service.</span></span>
+<span data-ttu-id="8d491-106">Este exemplo obtém e define a configuração de porta L2TP e PPTP do serviço RRAS local.</span><span class="sxs-lookup"><span data-stu-id="8d491-106">This example gets and sets the L2TP and PPTP port configuration of the local RRAS service.</span></span> <span data-ttu-id="8d491-107">Ele pressupõe que o processo de chamada tenha privilégios suficientes para acessar o serviço RRAS local.</span><span class="sxs-lookup"><span data-stu-id="8d491-107">It assumes the calling process has sufficient privileges to access the local RRAS service.</span></span>
 
 
 ```C++

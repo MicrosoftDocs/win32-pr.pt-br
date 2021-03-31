@@ -22,13 +22,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640920"
 ---
-# <a name="basicdevicedescription-property"></a><span data-ttu-id="5e857-106">Propriedade BasicDevice. Description</span><span class="sxs-lookup"><span data-stu-id="5e857-106">BasicDevice.Description property</span></span>
+# <a name="basicdevicedescription-property"></a><span data-ttu-id="a25c2-106">Propriedade BasicDevice. Description</span><span class="sxs-lookup"><span data-stu-id="a25c2-106">BasicDevice.Description property</span></span>
 
-<span data-ttu-id="5e857-107">Obtém uma descrição do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="5e857-107">Gets a description of the device.</span></span>
+<span data-ttu-id="a25c2-107">Obtém uma descrição do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="a25c2-107">Gets a description of the device.</span></span>
 
-<span data-ttu-id="5e857-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="5e857-108">This property is read-only.</span></span>
+<span data-ttu-id="a25c2-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="a25c2-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5e857-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5e857-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a25c2-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a25c2-109">Syntax</span></span>
 
 
 ```C++
@@ -39,15 +39,15 @@ HRESULT get_Description(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="5e857-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5e857-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="a25c2-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="a25c2-110">Property value</span></span>
 
-<span data-ttu-id="5e857-111">Um ponteiro para a descrição do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="5e857-111">A pointer to the description of the device.</span></span>
+<span data-ttu-id="a25c2-111">Um ponteiro para a descrição do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="a25c2-111">A pointer to the description of the device.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5e857-112">Consulte também</span><span class="sxs-lookup"><span data-stu-id="5e857-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a25c2-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="a25c2-112">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="5e857-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="5e857-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span></span>
+<span data-ttu-id="a25c2-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="a25c2-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span></span>
 </dt> </dl>
 
  

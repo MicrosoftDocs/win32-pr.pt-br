@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635533"
 ---
-# <a name="keyboard-input-constants"></a><span data-ttu-id="1df68-103">Constantes de entrada de teclado</span><span class="sxs-lookup"><span data-stu-id="1df68-103">Keyboard Input Constants</span></span>
+# <a name="keyboard-input-constants"></a><span data-ttu-id="c5db2-103">Constantes de entrada de teclado</span><span class="sxs-lookup"><span data-stu-id="c5db2-103">Keyboard Input Constants</span></span>
 
--   [<span data-ttu-id="1df68-104">Códigos de chave virtual</span><span class="sxs-lookup"><span data-stu-id="1df68-104">Virtual-Key Codes</span></span>](virtual-key-codes.md)
+-   [<span data-ttu-id="c5db2-104">Códigos de chave virtual</span><span class="sxs-lookup"><span data-stu-id="c5db2-104">Virtual-Key Codes</span></span>](virtual-key-codes.md)
 
  
 

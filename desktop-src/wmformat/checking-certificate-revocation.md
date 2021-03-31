@@ -29,17 +29,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635813"
 ---
-# <a name="checking-certificate-revocation"></a><span data-ttu-id="24021-120">Verificando revogação de certificado</span><span class="sxs-lookup"><span data-stu-id="24021-120">Checking Certificate Revocation</span></span>
+# <a name="checking-certificate-revocation"></a><span data-ttu-id="86cad-120">Verificando revogação de certificado</span><span class="sxs-lookup"><span data-stu-id="86cad-120">Checking Certificate Revocation</span></span>
 
-<span data-ttu-id="24021-121">Ao importar o conteúdo para o Windows Media DRM, você deve garantir que nenhum certificado em uma coleção de certificados tenha sido revogado verificando se nenhum certificado na coleção está na lista de revogação.</span><span class="sxs-lookup"><span data-stu-id="24021-121">When importing content into Windows Media DRM, you must ensure that no certificate in a certificate collection has been revoked by verifying that no certificate in the collection is in the revocation list.</span></span> <span data-ttu-id="24021-122">A lista de revogação é extraída usando o método [**IWMDRMSecurity:: GetRevocationData**](iwmdrmsecurity-getrevocationdata.md) .</span><span class="sxs-lookup"><span data-stu-id="24021-122">The revocation list is extracted by using the [**IWMDRMSecurity::GetRevocationData**](iwmdrmsecurity-getrevocationdata.md) method.</span></span>
+<span data-ttu-id="86cad-121">Ao importar o conteúdo para o Windows Media DRM, você deve garantir que nenhum certificado em uma coleção de certificados tenha sido revogado verificando se nenhum certificado na coleção está na lista de revogação.</span><span class="sxs-lookup"><span data-stu-id="86cad-121">When importing content into Windows Media DRM, you must ensure that no certificate in a certificate collection has been revoked by verifying that no certificate in the collection is in the revocation list.</span></span> <span data-ttu-id="86cad-122">A lista de revogação é extraída usando o método [**IWMDRMSecurity:: GetRevocationData**](iwmdrmsecurity-getrevocationdata.md) .</span><span class="sxs-lookup"><span data-stu-id="86cad-122">The revocation list is extracted by using the [**IWMDRMSecurity::GetRevocationData**](iwmdrmsecurity-getrevocationdata.md) method.</span></span>
 
-<span data-ttu-id="24021-123">Em seguida, você usa o método [**IWMDRMSecurity:: CheckCertForRevocation**](iwmdrmsecurity-checkcertforrevocation.md) para verificar se o certificado não foi revogado.</span><span class="sxs-lookup"><span data-stu-id="24021-123">You then use the [**IWMDRMSecurity::CheckCertForRevocation**](iwmdrmsecurity-checkcertforrevocation.md) method to verify that the certificate is not revoked.</span></span>
+<span data-ttu-id="86cad-123">Em seguida, você usa o método [**IWMDRMSecurity:: CheckCertForRevocation**](iwmdrmsecurity-checkcertforrevocation.md) para verificar se o certificado não foi revogado.</span><span class="sxs-lookup"><span data-stu-id="86cad-123">You then use the [**IWMDRMSecurity::CheckCertForRevocation**](iwmdrmsecurity-checkcertforrevocation.md) method to verify that the certificate is not revoked.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="24021-124">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="24021-124">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="86cad-124">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="86cad-124">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="24021-125">**Importação de DRM**</span><span class="sxs-lookup"><span data-stu-id="24021-125">**DRM Import**</span></span>](drm-import.md)
+[<span data-ttu-id="86cad-125">**Importação de DRM**</span><span class="sxs-lookup"><span data-stu-id="86cad-125">**DRM Import**</span></span>](drm-import.md)
 </dt> </dl>
 
  

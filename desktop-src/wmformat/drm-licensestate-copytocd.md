@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641191"
 ---
-# <a name="drm_licensestate_copytocd"></a><span data-ttu-id="57555-104">CopyToCD de licença do DRM \_ \_</span><span class="sxs-lookup"><span data-stu-id="57555-104">DRM\_LicenseState\_CopyToCD</span></span>
+# <a name="drm_licensestate_copytocd"></a><span data-ttu-id="2e0f1-104">CopyToCD de licença do DRM \_ \_</span><span class="sxs-lookup"><span data-stu-id="2e0f1-104">DRM\_LicenseState\_CopyToCD</span></span>
 
-<span data-ttu-id="57555-105">A **propriedade \_ \_ CopyToCD de licença do DRM** contém uma estrutura de [**\_ \_ \_ dados de estado da licença do WM**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contém detalhes sobre como esse direito foi aplicado ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="57555-105">The **DRM\_LicenseState\_CopyToCD** property contains a [**WM\_LICENSE\_STATE\_DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) structure that contains details about how this right has been applied to the content.</span></span>
+<span data-ttu-id="2e0f1-105">A **propriedade \_ \_ CopyToCD de licença do DRM** contém uma estrutura de [**\_ \_ \_ dados de estado da licença do WM**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contém detalhes sobre como esse direito foi aplicado ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="2e0f1-105">The **DRM\_LicenseState\_CopyToCD** property contains a [**WM\_LICENSE\_STATE\_DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) structure that contains details about how this right has been applied to the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="57555-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="57555-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="2e0f1-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="2e0f1-106">Global Constant</span></span>
 
-<span data-ttu-id="57555-107">g \_ wszWMDRM \_ licensestate \_ CopyToCD</span><span class="sxs-lookup"><span data-stu-id="57555-107">g\_wszWMDRM\_LicenseState\_CopyToCD</span></span>
+<span data-ttu-id="2e0f1-107">g \_ wszWMDRM \_ licensestate \_ CopyToCD</span><span class="sxs-lookup"><span data-stu-id="2e0f1-107">g\_wszWMDRM\_LicenseState\_CopyToCD</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="57555-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="57555-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="2e0f1-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="2e0f1-108">Data Type</span></span>
 
-<span data-ttu-id="57555-109">**WMT \_ tipo \_ binário**</span><span class="sxs-lookup"><span data-stu-id="57555-109">**WMT\_TYPE\_BINARY**</span></span>
+<span data-ttu-id="2e0f1-109">**WMT \_ tipo \_ binário**</span><span class="sxs-lookup"><span data-stu-id="2e0f1-109">**WMT\_TYPE\_BINARY**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="57555-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="57555-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2e0f1-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="2e0f1-110">Remarks</span></span>
 
-<span data-ttu-id="57555-111">Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span><span class="sxs-lookup"><span data-stu-id="57555-111">This is a read-only property that is retrieved using [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span></span>
+<span data-ttu-id="2e0f1-111">Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span><span class="sxs-lookup"><span data-stu-id="2e0f1-111">This is a read-only property that is retrieved using [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="57555-112">Consulte também</span><span class="sxs-lookup"><span data-stu-id="57555-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2e0f1-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="2e0f1-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="57555-113">**Propriedades de DRM**</span><span class="sxs-lookup"><span data-stu-id="57555-113">**DRM Properties**</span></span>](drm-properties.md)
+[<span data-ttu-id="2e0f1-113">**Propriedades de DRM**</span><span class="sxs-lookup"><span data-stu-id="2e0f1-113">**DRM Properties**</span></span>](drm-properties.md)
 </dt> </dl>
 
  

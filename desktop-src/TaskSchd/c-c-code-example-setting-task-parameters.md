@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635517"
 ---
-# <a name="cc-code-example-setting-task-parameters"></a><span data-ttu-id="66b0e-105">Exemplo de código C/C++: definindo parâmetros de tarefa</span><span class="sxs-lookup"><span data-stu-id="66b0e-105">C/C++ Code Example: Setting Task Parameters</span></span>
+# <a name="cc-code-example-setting-task-parameters"></a><span data-ttu-id="e33dc-105">Exemplo de código C/C++: definindo parâmetros de tarefa</span><span class="sxs-lookup"><span data-stu-id="e33dc-105">C/C++ Code Example: Setting Task Parameters</span></span>
 
-<span data-ttu-id="66b0e-106">Este exemplo limpa todos os parâmetros de linha de comando associados a uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="66b0e-106">This example clears all command-line parameters associated with a known task.</span></span> <span data-ttu-id="66b0e-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="66b0e-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="e33dc-106">Este exemplo limpa todos os parâmetros de linha de comando associados a uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="e33dc-106">This example clears all command-line parameters associated with a known task.</span></span> <span data-ttu-id="e33dc-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="e33dc-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -132,11 +132,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="66b0e-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="66b0e-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e33dc-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e33dc-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="66b0e-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="66b0e-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="e33dc-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="e33dc-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

@@ -16,23 +16,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641869"
 ---
-# <a name="baseeapuserpropertiesv1-schema-elements"></a><span data-ttu-id="5d1c9-104">Elementos do esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="5d1c9-104">baseeapuserpropertiesv1 Schema Elements</span></span>
+# <a name="baseeapuserpropertiesv1-schema-elements"></a><span data-ttu-id="300e7-104">Elementos do esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="300e7-104">baseeapuserpropertiesv1 Schema Elements</span></span>
 
-<span data-ttu-id="5d1c9-105">O esquema [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) é composto pelos seguintes elementos de esquema.</span><span class="sxs-lookup"><span data-stu-id="5d1c9-105">The [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) schema is made up of the following schema elements.</span></span>
+<span data-ttu-id="300e7-105">O esquema [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) é composto pelos seguintes elementos de esquema.</span><span class="sxs-lookup"><span data-stu-id="300e7-105">The [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) schema is made up of the following schema elements.</span></span>
 
--   [<span data-ttu-id="5d1c9-106">**EAP**</span><span class="sxs-lookup"><span data-stu-id="5d1c9-106">**Eap**</span></span>](baseeapuserpropertiesv1schema-eap-element.md)
--   [<span data-ttu-id="5d1c9-107">**EapType**</span><span class="sxs-lookup"><span data-stu-id="5d1c9-107">**EapType**</span></span>](baseeapuserpropertiesv1schema-eaptype-element.md)
--   [<span data-ttu-id="5d1c9-108">**Identidade**</span><span class="sxs-lookup"><span data-stu-id="5d1c9-108">**Identity**</span></span>](baseeapuserpropertiesv1schema-identity-element.md)
--   [<span data-ttu-id="5d1c9-109">**Tipo (BaseEapParameters)**</span><span class="sxs-lookup"><span data-stu-id="5d1c9-109">**Type (BaseEapParameters)**</span></span>](baseeapuserpropertiesv1schema-type-baseeapparameters-element.md)
+-   [<span data-ttu-id="300e7-106">**EAP**</span><span class="sxs-lookup"><span data-stu-id="300e7-106">**Eap**</span></span>](baseeapuserpropertiesv1schema-eap-element.md)
+-   [<span data-ttu-id="300e7-107">**EapType**</span><span class="sxs-lookup"><span data-stu-id="300e7-107">**EapType**</span></span>](baseeapuserpropertiesv1schema-eaptype-element.md)
+-   [<span data-ttu-id="300e7-108">**Identidade**</span><span class="sxs-lookup"><span data-stu-id="300e7-108">**Identity**</span></span>](baseeapuserpropertiesv1schema-identity-element.md)
+-   [<span data-ttu-id="300e7-109">**Tipo (BaseEapParameters)**</span><span class="sxs-lookup"><span data-stu-id="300e7-109">**Type (BaseEapParameters)**</span></span>](baseeapuserpropertiesv1schema-type-baseeapparameters-element.md)
 
-## <a name="related-topics"></a><span data-ttu-id="5d1c9-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5d1c9-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="300e7-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="300e7-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5d1c9-111">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="5d1c9-111">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="300e7-111">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="300e7-111">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="5d1c9-112">Esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="5d1c9-112">baseeapuserpropertiesv1 Schema</span></span>](baseeapuserpropertiesv1schema-schema.md)
+[<span data-ttu-id="300e7-112">Esquema baseeapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="300e7-112">baseeapuserpropertiesv1 Schema</span></span>](baseeapuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

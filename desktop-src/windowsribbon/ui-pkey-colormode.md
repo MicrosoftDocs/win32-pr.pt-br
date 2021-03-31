@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635028"
 ---
-# <a name="ui_pkey_colormode"></a><span data-ttu-id="a121b-103">Interface do usuário \_ PKEY \_ ColorMode</span><span class="sxs-lookup"><span data-stu-id="a121b-103">UI\_PKEY\_ColorMode</span></span>
+# <a name="ui_pkey_colormode"></a><span data-ttu-id="0aea1-103">Interface do usuário \_ PKEY \_ ColorMode</span><span class="sxs-lookup"><span data-stu-id="0aea1-103">UI\_PKEY\_ColorMode</span></span>
 
-<span data-ttu-id="a121b-104">Identifica a \_ Propriedade ColorMode da interface do usuário PKEY \_ .</span><span class="sxs-lookup"><span data-stu-id="a121b-104">Identifies the UI\_PKEY\_ColorMode property.</span></span>
+<span data-ttu-id="0aea1-104">Identifica a \_ Propriedade ColorMode da interface do usuário PKEY \_ .</span><span class="sxs-lookup"><span data-stu-id="0aea1-104">Identifies the UI\_PKEY\_ColorMode property.</span></span>
 
 ```
 propertyDescription
@@ -25,15 +25,15 @@ propertyDescription
       type = UI_SWATCHCOLORMODE
 ```
 
-## <a name="remarks"></a><span data-ttu-id="a121b-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="a121b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0aea1-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="0aea1-105">Remarks</span></span>
 
-<span data-ttu-id="a121b-106">O valor da propriedade é da [**enumeração \_ SWATCHCOLORMODE da interface do usuário**](/windows/desktop/api/Uiribbon/ne-uiribbon-ui_swatchcolormode) .</span><span class="sxs-lookup"><span data-stu-id="a121b-106">The property value is from the [**UI\_SWATCHCOLORMODE**](/windows/desktop/api/Uiribbon/ne-uiribbon-ui_swatchcolormode) enumeration.</span></span>
+<span data-ttu-id="0aea1-106">O valor da propriedade é da [**enumeração \_ SWATCHCOLORMODE da interface do usuário**](/windows/desktop/api/Uiribbon/ne-uiribbon-ui_swatchcolormode) .</span><span class="sxs-lookup"><span data-stu-id="0aea1-106">The property value is from the [**UI\_SWATCHCOLORMODE**](/windows/desktop/api/Uiribbon/ne-uiribbon-ui_swatchcolormode) enumeration.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="a121b-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a121b-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="0aea1-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0aea1-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a121b-108">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="a121b-108">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
+[<span data-ttu-id="0aea1-108">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="0aea1-108">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  
