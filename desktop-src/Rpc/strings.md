@@ -1,0 +1,31 @@
+---
+title: atributo de cadeia de caracteres (RPC)
+description: O atributo \ String \ e a chamada de procedimento remoto (RPC).
+ms.assetid: 794e03f2-b1e9-42dc-8536-9ced5c0e3dad
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e413c0b3b8f5a379dc3448f07aed4a5a7a6aba07
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103917580"
+---
+# <a name="string-attribute-rpc"></a><span data-ttu-id="55133-103">atributo de cadeia de caracteres (RPC)</span><span class="sxs-lookup"><span data-stu-id="55133-103">string attribute (RPC)</span></span>
+
+<span data-ttu-id="55133-104">O \[ [](/windows/desktop/Midl/string) \] atributo String indica que o parâmetro é um ponteiro para uma matriz do tipo [Char](/windows/desktop/Midl/char-idl), [byte](/windows/desktop/Midl/byte)ou **w \_ Char**.</span><span class="sxs-lookup"><span data-stu-id="55133-104">The \[ [string](/windows/desktop/Midl/string)\] attribute indicates that the parameter is a pointer to an array of type [char](/windows/desktop/Midl/char-idl), [byte](/windows/desktop/Midl/byte), or **w\_char**.</span></span> <span data-ttu-id="55133-105">Assim como com uma matriz compatível, o tamanho de um parâmetro de **\[ cadeia de caracteres \]** é determinado em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="55133-105">As with a conformant array, the size of a **\[string\]** parameter is determined at run time.</span></span> <span data-ttu-id="55133-106">Ao contrário de uma matriz compatível, o desenvolvedor não precisa fornecer o comprimento associado à matriz – o atributo de **\[ cadeia de \] caracteres** informa ao stub para determinar o tamanho da matriz chamando **strlen**.</span><span class="sxs-lookup"><span data-stu-id="55133-106">Unlike a conformant array, the developer does not have to provide the length associated with the array—the **\[string\]** attribute tells the stub to determine the array size by calling **strlen**.</span></span> <span data-ttu-id="55133-107">Um atributo de **\[ cadeia de \] caracteres** não pode ser usado ao mesmo tempo que o \[ [comprimento \_](/windows/desktop/Midl/length-is) \] ou o \[ [último \_ são](/windows/desktop/Midl/last-is) \] atributos.</span><span class="sxs-lookup"><span data-stu-id="55133-107">A **\[string\]** attribute cannot be used at the same time as the \[ [length\_is](/windows/desktop/Midl/length-is)\] or \[ [last\_is](/windows/desktop/Midl/last-is)\] attributes.</span></span>
+
+<span data-ttu-id="55133-108">O **\[ no, \]** a combinação de atributos de cadeia de caracteres direciona o stub para passar a cadeia de caracteres do cliente para o servidor somente.</span><span class="sxs-lookup"><span data-stu-id="55133-108">The **\[in, string\]** attribute combination directs the stub to pass the string from client to server only.</span></span> <span data-ttu-id="55133-109">A quantidade de memória alocada no servidor é igual ao tamanho da cadeia de caracteres transmitida mais uma.</span><span class="sxs-lookup"><span data-stu-id="55133-109">The amount of memory allocated on the server is the same as the transmitted string size plus one.</span></span>
+
+<span data-ttu-id="55133-110">Os \[ atributos [out](/windows/desktop/Midl/out-idl), **String** \] direcionam o stub para passar a cadeia de caracteres do servidor para o cliente somente.</span><span class="sxs-lookup"><span data-stu-id="55133-110">The \[ [out](/windows/desktop/Midl/out-idl), **string**\] attributes direct the stub to pass the string from server to client only.</span></span> <span data-ttu-id="55133-111">O design de chamada por valor da linguagem C insiste que todos os parâmetros de **\[ saída \]** devem ser ponteiros.</span><span class="sxs-lookup"><span data-stu-id="55133-111">The call-by-value design of the C language insists that all **\[out\]** parameters must be pointers.</span></span>
+
+<span data-ttu-id="55133-112">O parâmetro **\[ out \]** deve ser um ponteiro e, por padrão, todos os parâmetros de ponteiro são ponteiros de referência.</span><span class="sxs-lookup"><span data-stu-id="55133-112">The **\[out\]** parameter must be a pointer and, by default, all pointer parameters are reference pointers.</span></span> <span data-ttu-id="55133-113">O ponteiro de referência não é alterado durante a chamada; ele aponta para a mesma memória que antes da chamada.</span><span class="sxs-lookup"><span data-stu-id="55133-113">The reference pointer does not change during the call—it points to the same memory as before the call.</span></span> <span data-ttu-id="55133-114">Para ponteiros de cadeia de caracteres, a restrição adicional do ponteiro de referência significa que o cliente deve alocar memória válida suficiente antes de fazer a chamada de procedimento remoto.</span><span class="sxs-lookup"><span data-stu-id="55133-114">For string pointers, the additional constraint of the reference pointer means the client must allocate sufficient valid memory before making the remote procedure call.</span></span> <span data-ttu-id="55133-115">Os stubs transmitem a cadeia de caracteres que os atributos **\[ out, String \]** indicam na memória já alocada no lado do cliente.</span><span class="sxs-lookup"><span data-stu-id="55133-115">The stubs transmit the string that the **\[out, string\]** attributes indicate into the memory already allocated on the client side.</span></span>
+
+<span data-ttu-id="55133-116">Os tópicos a seguir descrevem os protótipos de parâmetro de procedimento remoto para cadeias de caracteres:</span><span class="sxs-lookup"><span data-stu-id="55133-116">The following topics describe the remote procedure parameter prototypes for strings:</span></span>
+
+-   <span data-ttu-id="55133-117">[\[dentro, fora do protótipo de cadeia de caracteres \]](-in-out-string-prototype.md)</span><span class="sxs-lookup"><span data-stu-id="55133-117">[\[in, out, string\] Prototype](-in-out-string-prototype.md)</span></span>
+-   <span data-ttu-id="55133-118">[\[no, String \] e \[ out, protótipo de cadeia de caracteres \]](-in-string-and-out-string-prototype.md)</span><span class="sxs-lookup"><span data-stu-id="55133-118">[\[in, string\] and \[out, string\] Prototype](-in-string-and-out-string-prototype.md)</span></span>
+
+ 
+
+ 
