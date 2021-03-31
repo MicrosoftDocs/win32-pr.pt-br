@@ -1,0 +1,38 @@
+---
+title: Esquema mschapv2userpropertiesv1
+description: Define as credenciais de autenticação e as opções de credenciais usando o Microsoft Challenge Handshake Authentication Protocol versão 2 (MS-CHAPv2).
+ms.assetid: 0a8044cc-14bf-4912-9197-3a735f61380f
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: c5a94cdf23407cfc482445f32f5b371efd91802b
+ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "103638927"
+---
+# <a name="mschapv2userpropertiesv1-schema"></a>Esquema mschapv2userpropertiesv1
+
+O esquema mschapv2userpropertiesv1 define credenciais de autenticação e opções de credenciais usando o Microsoft Challenge Handshake Authentication Protocol versão 2 (MS-CHAPv2).
+
+-   [Elementos do esquema mschapv2userpropertiesv1](mschapv2userpropertiesv1schema-elements.md)
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[EAPHost e esquema herdado](eaphost-schemas.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
