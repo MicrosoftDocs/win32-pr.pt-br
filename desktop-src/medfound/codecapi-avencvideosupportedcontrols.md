@@ -39,7 +39,7 @@ Essa propriedade só é usada com [codificadores de câmera H. 264 UVC 1,5](came
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

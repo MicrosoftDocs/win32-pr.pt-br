@@ -23,7 +23,7 @@ Os campos que não estão marcados como "API do servidor HTTP gerado" devem ser 
 
 
 
-| Campo                            | Aparece como      | Description                                                                                                                                | \_Membro de \_ dados de campos de log http \_ | Constantes de campos de \_ log http \_      |
+| Campo                            | Aparece como      | Descrição                                                                                                                                | \_Membro de \_ dados de campos de log http \_ | Constantes de campos de \_ log http \_      |
 |----------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|
 | Data                             | data            | A data em que a atividade ocorreu.                                                                                                   | API do servidor HTTP gerada.     | \_data do \_ campo de log http \_           |
 | Hora                             | time            | A hora, em UTC (tempo Universal Coordenado), na qual a atividade ocorreu.                                                             | API do servidor HTTP gerada.     | \_tempo do \_ campo de log http \_           |

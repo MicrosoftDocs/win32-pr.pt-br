@@ -59,7 +59,7 @@ A tabela a seguir lista exemplos de elementos de contêiner e não contêiner.
 - DataGrid
 - Documento
 - Editar
-- Grupo
+- Agrupar
 - parâmetro
 - HeaderItem
 - Lista

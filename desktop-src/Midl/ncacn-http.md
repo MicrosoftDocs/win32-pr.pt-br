@@ -38,7 +38,7 @@ O endereço da Internet ou o nome do computador no qual o processo do servidor R
 
 </dd> <dt>
 
-*extremidade* 
+*endpoint* 
 </dt> <dd>
 
 A porta TCP/IP bem conhecida (estática) em que o processo do servidor RPC está escutando.

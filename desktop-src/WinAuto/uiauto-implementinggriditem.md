@@ -51,11 +51,11 @@ As propriedades a seguir são necessárias para implementar a interface [**IGrid
 
 | Membros necessários                                                  | Tipo de membro | Observações |
 |-------------------------------------------------------------------|-------------|-------|
-| [**Fila**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_row)                       | Propriedade    | Nenhuma  |
-| [**Pilha**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_column)                 | Propriedade    | Nenhuma  |
-| [**RowSpan**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_rowspan)               | Propriedade    | Nenhuma  |
-| [**ColumnSpan**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_columnspan)         | Propriedade    | Nenhuma  |
-| [**ContainingGrid**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_containinggrid) | Propriedade    | Nenhuma  |
+| [**Fila**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_row)                       | Propriedade    | Nenhum  |
+| [**Pilha**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_column)                 | Propriedade    | Nenhum  |
+| [**RowSpan**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_rowspan)               | Propriedade    | Nenhum  |
+| [**ColumnSpan**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_columnspan)         | Propriedade    | Nenhum  |
+| [**ContainingGrid**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_containinggrid) | Propriedade    | Nenhum  |
 
 
 

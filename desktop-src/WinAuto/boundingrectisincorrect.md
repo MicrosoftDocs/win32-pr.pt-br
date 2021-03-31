@@ -17,7 +17,7 @@ ms.locfileid: "104005415"
 
 A {0} borda do retângulo relatado é inconsistente com o teste {1} de clique no Rect no ponto {2} .
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

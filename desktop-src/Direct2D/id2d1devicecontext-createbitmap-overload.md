@@ -35,7 +35,7 @@ Cria um bitmap que pode ser usado como uma superfície de destino, para leitura 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

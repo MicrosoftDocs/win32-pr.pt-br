@@ -2176,7 +2176,7 @@ pidColumn
 
 dwOrd
 
-localidade
+locale
 
 
 
@@ -3213,7 +3213,7 @@ aProps (variável)
 
 
 
-| Valor/GUID                                                                              | Nome                                             |
+| Valor/GUID                                                                              | Name                                             |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------|
 | DBPROPSET \_ FSCIFRMWRK \_ ext<br/> {A9BD1526-6A80-11D0-8C9D-0020AF1D740E}<br/>   | Conjunto de propriedades da estrutura de índice de conteúdo do sistema de arquivos |
 | DBPROPSET \_ QUERYEXT<br/> {A7AC77ED-F8D7-11CE-A798-0020F8008025}<br/>          | Conjunto de propriedades de extensão de consulta                     |
@@ -4248,7 +4248,7 @@ Veja abaixo um diagrama que mostra o formato de cabeçalho da mensagem do protoc
 
 \_MSG
 
-\_status
+\_Estado
 
 \_ulChecksum
 
@@ -5473,7 +5473,7 @@ A mensagem CPMGetQueryStatusOut responde a uma mensagem CPMGetQueryStatusIn com 
 
 1
 
-\_Estado
+\_Status
 
 
 
@@ -5664,7 +5664,7 @@ A mensagem CPMGetQueryStatusExOut responde a uma mensagem CPMGetQueryStatusExIn 
 
 1
 
-\_Estado
+\_Status
 
 \_cFilteredDocuments
 

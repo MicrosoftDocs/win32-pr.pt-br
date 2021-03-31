@@ -24,7 +24,7 @@ ms.locfileid: "104089765"
 
 Especifica o tipo de processo que é identificado na estrutura [**de \_ \_ saída D3DAUTHENTICATEDCHANNEL QUERYRESTRICTEDSHAREDRESOURCEPROCESS**](d3dauthenticatedchannel-queryrestrictedsharedresourceprocess-output.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

@@ -70,7 +70,7 @@ O algoritmo de avaliação mantém a ação atual ("permitir" ou "bloquear") jun
 
 
 
-| Ação | Permitir substituição (a \_ gravação da ação FWPS direita \_ \_ está definida) | Description                                                                                                          |
+| Ação | Permitir substituição (a \_ gravação da ação FWPS direita \_ \_ está definida) | Descrição                                                                                                          |
 |--------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Permitir | Sim                                                | O tráfego pode ser bloqueado em outra subcamada. Isso é chamado de uma permissão flexível.<br/>                            |
 | Permitir | Não                                                 | O tráfego pode ser bloqueado em outra subcamada apenas por uma **veto** de texto explicativo. Isso é chamado de permissão rígida.<br/> |
