@@ -50,7 +50,7 @@ A classe **PlaybackOperation** tem essas propriedades.
 
 
 
-| Propriedade                                                    | Tipo de acesso           | Description                                                                                                                                                                           |
+| Propriedade                                                    | Tipo de acesso           | Descrição                                                                                                                                                                           |
 |:------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Concluído**](playbackoperation-completed.md)<br/> | Leitura/gravação<br/> | Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por um dos métodos de reprodução [**MediaRenderer**](mediarenderer.md) é concluída. <br/> |
 

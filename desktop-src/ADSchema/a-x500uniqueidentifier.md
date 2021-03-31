@@ -35,7 +35,7 @@ Usado para distinguir entre objetos quando um nome diferenciado é reutilizado. 
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 2.5.4.45                                              |
 | System-ID-GUID    | d07da11f-8a3d-42b6-b0aa-76c962be719a                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

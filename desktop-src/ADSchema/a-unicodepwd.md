@@ -36,7 +36,7 @@ A senha do usuário no formato One-Way do Windows NT (OWF). O Windows 2000 usa o
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que a senha precisa ser alterada. |
 | Attribute-Id      | 1.2.840.113556.1.4.90                                                        |
 | System-ID-GUID    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md)                        |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)                        |
 
 
 

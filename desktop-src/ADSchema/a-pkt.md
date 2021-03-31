@@ -36,7 +36,7 @@ Tabela de conhecimento da partição DFS. Descreve a estrutura de uma hierarquia
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.206                                |
 | System-ID-GUID    | 8447f9f1-1027-11d0-a05f-00aa006c33ed                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

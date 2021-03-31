@@ -29,14 +29,14 @@ A localização do usuário, como o número do escritório.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Localização                                    |
+| CN                | Local                                    |
 | LDAP-Display-Name | local                                    |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.222                      |
 | System-ID-GUID    | 09dcb79f-165f-11d0-a064-00aa006c33ed        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

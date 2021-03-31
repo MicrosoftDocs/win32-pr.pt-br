@@ -36,7 +36,7 @@ O atributo **netboot-Max-clients** é reservado para uso interno.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.851               |
 | System-ID-GUID    | 07383078-91df-11d1-aebc-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

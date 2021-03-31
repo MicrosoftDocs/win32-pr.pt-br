@@ -31,7 +31,7 @@ g \_ wszWMCodec
 
 **Cadeia de caracteres do \_ tipo WMT \_**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

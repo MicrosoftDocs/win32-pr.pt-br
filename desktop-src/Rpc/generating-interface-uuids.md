@@ -41,7 +41,7 @@ Ao executar o utilitário Uuidgen na linha de comando, você pode usar as seguin
 
 
 
-| Comutador Uuidgen           | Description                                                                |
+| Comutador Uuidgen           | Descrição                                                                |
 |--------------------------|----------------------------------------------------------------------------|
 | **/I**                   | Gera UUID para um modelo de interface IDL.                                 |
 | **/s**                   | Gera UUID como uma estrutura C inicializada.                                |

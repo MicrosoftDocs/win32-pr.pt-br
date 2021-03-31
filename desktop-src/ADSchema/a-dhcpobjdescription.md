@@ -36,7 +36,7 @@ O atributo **DHCP-obj-Description** não está sendo usado no momento.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.703                      |
 | System-ID-GUID    | 963d2744-48be-11d1-a9c3-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

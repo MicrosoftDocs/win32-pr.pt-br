@@ -36,7 +36,7 @@ Assistente para ativar ao criar objetos desta classe.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.498                      |
 | System-ID-GUID    | 4d8601ed-ac85-11d0-afe3-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

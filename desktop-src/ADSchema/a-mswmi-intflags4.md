@@ -36,7 +36,7 @@ O atributo **MS-WMI-intFlags4** é reservado para uso interno.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1681              |
 | System-ID-GUID    | bd74a7ac-c493-4c9c-bdfa-5c7b119ca6b2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -43,7 +43,7 @@ Esse método não tem parâmetros.
 
 Os resultados da operação. Um ponteiro para o objeto [**MediaRenderer**](mediarenderer.md) recém-criado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

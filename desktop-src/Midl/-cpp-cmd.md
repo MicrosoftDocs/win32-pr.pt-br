@@ -54,7 +54,7 @@ Quando a opção [**/cpp \_ opt**](-cpp-opt.md) está presente, o que deve ser u
 
 
 
-| /cpp \_ cmd presente? | a \_ opção/cpp está presente? | Description                                                                                                                                                                                                       |
+| /cpp \_ cmd presente? | a \_ opção/cpp está presente? | Descrição                                                                                                                                                                                                       |
 |--------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Não (padrão)       | Não (padrão)       | Invoca o compilador padrão do Microsoft C/C++ com as configurações obtidas nas opções MIDL [**/i**](-i.md), [**/d**](-d.md) e [**/u**](-u.md) . Adiciona os comutadores de pré-processador/E e [**/nologo**](-nologo.md). |
 | Sim                | Não                 | Invoca o binário de pré-processador indicado com os mesmos comutadores acima.                                                                                                                                        |
@@ -75,7 +75,7 @@ Quando a opção [**/cpp \_ opt**](-cpp-opt.md) está presente, o que deve ser u
 
 **MIDL/cpp \_ cmd "CL"/cpp \_ opt "/e/DFLAG = true/IC: \\ Inc" filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

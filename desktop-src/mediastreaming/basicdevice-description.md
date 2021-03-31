@@ -43,7 +43,7 @@ HRESULT get_Description(
 
 Um ponteiro para a descrição do dispositivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

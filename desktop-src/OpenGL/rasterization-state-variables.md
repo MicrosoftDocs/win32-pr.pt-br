@@ -27,7 +27,7 @@ ms.locfileid: "103638568"
 |------------------|------------------------------------|
 | Descrição:     | Tamanho do ponto                         |
 | Grupo de atributos: | point                              |
-| Valor inicial:   | 1.0                                |
+| Valor inicial:   | 1,0                                |
 | Comando Get:     | [**glGetFloatv**](glgetfloatv.md) |
 
 
@@ -53,7 +53,7 @@ ms.locfileid: "103638568"
 |------------------|--------------------------------------------------------------------------------|
 | Descrição:     | Largura da linha                                                                     |
 | Grupo de atributos: | line                                                                           |
-| Valor inicial:   | 1.0                                                                            |
+| Valor inicial:   | 1,0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 

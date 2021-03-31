@@ -36,7 +36,7 @@ Esse atributo especifica o caminho para o script de logon do usuário. A cadeia 
 | Frequência de atualização  | Quando o registro de usuário é criado e sempre que o caminho precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.62                                                  |
 | System-ID-GUID    | bf9679a8-0de6-11d0-a285-00aa003049e2                                   |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                            |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                            |
 
 
 

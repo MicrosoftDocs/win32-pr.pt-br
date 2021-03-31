@@ -68,7 +68,7 @@ A opção **/Warn** se comporta da mesma forma que a opção [**/w**](-w.md) .
 
 **MIDL/warn4 bar. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

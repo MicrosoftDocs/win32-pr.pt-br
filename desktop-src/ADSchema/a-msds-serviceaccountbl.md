@@ -36,7 +36,7 @@ Referência de vínculo retroativa para o objeto AD/AM DSA que usa essa conta de
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1867                 |
 | System-ID-GUID    | 1322c9ff-1334-3d4a-9396-4d9284d42636    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

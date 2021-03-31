@@ -36,7 +36,7 @@ O número de telefone celular primário.
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.41                                                       |
 | System-ID-GUID    | f0f8ffa3-1191-11d0-a060-00aa006c33ed                                             |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
 
 
 

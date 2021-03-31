@@ -36,7 +36,7 @@ Esse atributo será usado para dar suporte ao failover para o computador designa
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1246                 |
 | System-ID-GUID    | b7c69e5e-2cc7-11d2-854e-00a0c983f608    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

@@ -17,7 +17,7 @@ ms.locfileid: "103641154"
 
 Esse elemento parece ser tabulado, mas não está na ordem de tabulação.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

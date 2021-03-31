@@ -36,7 +36,7 @@ Tipo de ponteiro para objeto externo.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.108               |
 | System-ID-GUID    | bf967a15-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

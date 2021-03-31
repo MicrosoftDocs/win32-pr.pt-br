@@ -41,7 +41,7 @@ Se você tiver um código de aplicativo de servidor que foi escrito para uso com
 
 **MIDL/OLDNAMES filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

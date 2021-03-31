@@ -48,8 +48,8 @@ Os métodos a seguir são necessários para implementar a interface [**ITableIte
 
 | Membros necessários                                                               | Tipo de membro | Observações |
 |--------------------------------------------------------------------------------|-------------|-------|
-| [**GetColumnHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getcolumnheaderitems) | Método      | Nenhuma  |
-| [**GetRowHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getrowheaderitems)       | Método      | Nenhuma  |
+| [**GetColumnHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getcolumnheaderitems) | Método      | Nenhum  |
+| [**GetRowHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getrowheaderitems)       | Método      | Nenhum  |
 
 
 

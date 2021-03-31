@@ -35,7 +35,7 @@ O tipo de reunião que está sendo mantido.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.571                      |
 | System-ID-GUID    | 11b6cc82-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

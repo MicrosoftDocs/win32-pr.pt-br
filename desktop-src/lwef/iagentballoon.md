@@ -23,7 +23,7 @@ Os padrões iniciais para o balão de palavras de um caractere são definidos no
 
 
 
-| Métodos IAgentBalloon                                       | Description                                                                           |
+| Métodos IAgentBalloon                                       | Descrição                                                                           |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | [GetEnabled](iagentballoon--getenabled.md)                 | Retorna se o balão de palavra está habilitado.                                          |
 | [GetNumLines](iagentballoon--getnumlines.md)               | Retorna o número de linhas exibidas na palavra balão.                            |

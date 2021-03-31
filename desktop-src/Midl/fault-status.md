@@ -77,7 +77,7 @@ O parâmetro associado ao atributo **\[ \_ status \] de falha** não precisa ser
 
 É possível que os atributos **\[ \_ \] status de falha** e **\[** [**\_ status de comunicação**](comm-status.md) **\]** apareçam em uma única função, seja como atributos de função ou atributos de parâmetro. Se ambos os atributos forem atributos de função ou se se aplicarem ao mesmo parâmetro e nenhum erro ocorrer, a função ou o parâmetro terá o valor **status de erro \_ \_ OK**. Caso contrário, ele contém o valor de código de status apropriado. Como os valores retornados para o **\[ \_ status \] de falha** são diferentes dos valores retornados para o **\[ \_ status \] de comunicação**, os valores retornados são prontamente interpretados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

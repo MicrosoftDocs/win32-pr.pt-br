@@ -43,7 +43,7 @@ HRESULT get_ModelName(
 
 Um ponteiro para o nome do modelo do dispositivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ A versão atual, incluindo o número da compilação.
 | Frequência de atualização  | Na inicialização do sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1368              |
 | System-ID-GUID    | 603e94c4-ccee-11d2-9993-0000f87a57d4 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -260,7 +260,7 @@ O GDF para um provedor de jogos normalmente não contém informações de classi
 </colgroup>
 <thead>
 <tr class="header">
-<th>Sistema Operacional</th>
+<th>Sistema operacional</th>
 <th>Sistemas de classificação com suporte</th>
 </tr>
 </thead>

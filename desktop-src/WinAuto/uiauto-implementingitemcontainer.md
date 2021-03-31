@@ -87,7 +87,7 @@ O método a seguir é necessário para implementar a interface [**IItemContainer
 
 | Membros necessários                                                               | Tipo de membro | Observações |
 |--------------------------------------------------------------------------------|-------------|-------|
-| [**FindItemByProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iitemcontainerprovider-finditembyproperty) | Método      | Nenhuma  |
+| [**FindItemByProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iitemcontainerprovider-finditembyproperty) | Método      | Nenhum  |
 
 
 

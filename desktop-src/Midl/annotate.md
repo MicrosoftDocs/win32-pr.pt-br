@@ -94,7 +94,7 @@ Especifica os declaradores padrão C, como identificadores, declaradores de pont
 
 O atributo **\[ anotar \]** permite substituir anotações sal geradas por MIDL ou adicioná-las em locais onde o MIDL não gera uma anotação explicitamente. Se [**/sal**](-sal.md) não for especificado na linha de comando, esse atributo será ignorado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

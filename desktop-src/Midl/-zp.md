@@ -55,7 +55,7 @@ O nível de empacotamento padrão usado quando nem a opção **/ZP** nem [**/Pac
 
 **MIDL/Zp4 filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
