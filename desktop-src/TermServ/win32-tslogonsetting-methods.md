@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636845"
 ---
-# <a name="win32_tslogonsetting-methods"></a><span data-ttu-id="81857-103">\_Métodos TSLogonSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="81857-103">Win32\_TSLogonSetting Methods</span></span>
+# <a name="win32_tslogonsetting-methods"></a><span data-ttu-id="00f52-103">\_Métodos TSLogonSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="00f52-103">Win32\_TSLogonSetting Methods</span></span>
 
-<span data-ttu-id="81857-104">A classe [**Win32 \_ TSLogonSetting**](win32-tslogonsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="81857-104">The [**Win32\_TSLogonSetting**](win32-tslogonsetting.md) class exposes the following methods.</span></span>
+<span data-ttu-id="00f52-104">A classe [**Win32 \_ TSLogonSetting**](win32-tslogonsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="00f52-104">The [**Win32\_TSLogonSetting**](win32-tslogonsetting.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="81857-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="81857-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="00f52-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="00f52-105">In this section</span></span>
 
--   [<span data-ttu-id="81857-106">**Método ExplicitLogon**</span><span class="sxs-lookup"><span data-stu-id="81857-106">**ExplicitLogon method**</span></span>](win32-tslogonsetting-explicitlogon.md)
--   [<span data-ttu-id="81857-107">**Método SetPromptForPassword**</span><span class="sxs-lookup"><span data-stu-id="81857-107">**SetPromptForPassword method**</span></span>](win32-tslogonsetting-setpromptforpassword.md)
+-   [<span data-ttu-id="00f52-106">**Método ExplicitLogon**</span><span class="sxs-lookup"><span data-stu-id="00f52-106">**ExplicitLogon method**</span></span>](win32-tslogonsetting-explicitlogon.md)
+-   [<span data-ttu-id="00f52-107">**Método SetPromptForPassword**</span><span class="sxs-lookup"><span data-stu-id="00f52-107">**SetPromptForPassword method**</span></span>](win32-tslogonsetting-setpromptforpassword.md)
 
  
 

@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636956"
 ---
-# <a name="status-location"></a><span data-ttu-id="a456c-107">Local do status</span><span class="sxs-lookup"><span data-stu-id="a456c-107">Status Location</span></span>
+# <a name="status-location"></a><span data-ttu-id="d56a8-107">Local do status</span><span class="sxs-lookup"><span data-stu-id="d56a8-107">Status Location</span></span>
 
-<span data-ttu-id="a456c-108">Você deve definir o local da exibição de status que deseja usar.</span><span class="sxs-lookup"><span data-stu-id="a456c-108">You must define the location of the status display you wish to use.</span></span> <span data-ttu-id="a456c-109">Você deve fornecer quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da exibição de status, em pixels, em relação à imagem de plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="a456c-109">You must provide four positive integers, separated by commas, that define the left, top, width, and height of the status display, in pixels, relative to the background image.</span></span>
+<span data-ttu-id="d56a8-108">Você deve definir o local da exibição de status que deseja usar.</span><span class="sxs-lookup"><span data-stu-id="d56a8-108">You must define the location of the status display you wish to use.</span></span> <span data-ttu-id="d56a8-109">Você deve fornecer quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da exibição de status, em pixels, em relação à imagem de plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="d56a8-109">You must provide four positive integers, separated by commas, that define the left, top, width, and height of the status display, in pixels, relative to the background image.</span></span>
 
 
 ```C++
@@ -28,11 +28,11 @@ ms.locfileid: "103636956"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="a456c-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a456c-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d56a8-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d56a8-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a456c-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="a456c-111">**Status**</span></span>](status.md)
+[<span data-ttu-id="d56a8-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="d56a8-111">**Status**</span></span>](status.md)
 </dt> </dl>
 
  

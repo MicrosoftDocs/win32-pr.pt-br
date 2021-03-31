@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634815"
 ---
-# <a name="requestreplynamedpipesserverexample"></a><span data-ttu-id="e1903-103">RequestReplyNamedPipesServerExample</span><span class="sxs-lookup"><span data-stu-id="e1903-103">RequestReplyNamedPipesServerExample</span></span>
+# <a name="requestreplynamedpipesserverexample"></a><span data-ttu-id="b9bef-103">RequestReplyNamedPipesServerExample</span><span class="sxs-lookup"><span data-stu-id="b9bef-103">RequestReplyNamedPipesServerExample</span></span>
 
-<span data-ttu-id="e1903-104">Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens.</span><span class="sxs-lookup"><span data-stu-id="e1903-104">This example shows a named pipes server that accepts a channel and receives and replies to messages.</span></span>
+<span data-ttu-id="b9bef-104">Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens.</span><span class="sxs-lookup"><span data-stu-id="b9bef-104">This example shows a named pipes server that accepts a channel and receives and replies to messages.</span></span>
 
--   [<span data-ttu-id="e1903-105">RequestReplyNamedPipesServer. cpp</span><span class="sxs-lookup"><span data-stu-id="e1903-105">RequestReplyNamedPipesServer.cpp</span></span>](#requestreplynamedpipesservercpp)
--   [<span data-ttu-id="e1903-106">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="e1903-106">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="e1903-107">Makefile</span><span class="sxs-lookup"><span data-stu-id="e1903-107">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="b9bef-105">RequestReplyNamedPipesServer. cpp</span><span class="sxs-lookup"><span data-stu-id="b9bef-105">RequestReplyNamedPipesServer.cpp</span></span>](#requestreplynamedpipesservercpp)
+-   [<span data-ttu-id="b9bef-106">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="b9bef-106">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="b9bef-107">Makefile</span><span class="sxs-lookup"><span data-stu-id="b9bef-107">Makefile</span></span>](#makefile)
 
-## <a name="requestreplynamedpipesservercpp"></a><span data-ttu-id="e1903-108">RequestReplyNamedPipesServer. cpp</span><span class="sxs-lookup"><span data-stu-id="e1903-108">RequestReplyNamedPipesServer.cpp</span></span>
+## <a name="requestreplynamedpipesservercpp"></a><span data-ttu-id="b9bef-108">RequestReplyNamedPipesServer. cpp</span><span class="sxs-lookup"><span data-stu-id="b9bef-108">RequestReplyNamedPipesServer.cpp</span></span>
 
 
 ```C++
@@ -460,7 +460,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="e1903-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="e1903-109">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="b9bef-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="b9bef-109">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -571,7 +571,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="e1903-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="e1903-110">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="b9bef-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="b9bef-110">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------

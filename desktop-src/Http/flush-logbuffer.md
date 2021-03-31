@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "103638738"
 ---
-# <a name="flush-logbuffer"></a><span data-ttu-id="0c000-104">flush logbuffer</span><span class="sxs-lookup"><span data-stu-id="0c000-104">flush logbuffer</span></span>
+# <a name="flush-logbuffer"></a><span data-ttu-id="8c42d-104">flush logbuffer</span><span class="sxs-lookup"><span data-stu-id="8c42d-104">flush logbuffer</span></span>
 
-<span data-ttu-id="0c000-105">Libera os buffers internos para os arquivos de log.</span><span class="sxs-lookup"><span data-stu-id="0c000-105">Flushes the internal buffers for the log files.</span></span>
+<span data-ttu-id="8c42d-105">Libera os buffers internos para os arquivos de log.</span><span class="sxs-lookup"><span data-stu-id="8c42d-105">Flushes the internal buffers for the log files.</span></span>
 
 ``` syntax
 flush logbuffer

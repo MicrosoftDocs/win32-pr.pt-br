@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636074"
 ---
-# <a name="keyboard-accelerator-reference"></a><span data-ttu-id="99381-103">Referência do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="99381-103">Keyboard Accelerator Reference</span></span>
+# <a name="keyboard-accelerator-reference"></a><span data-ttu-id="4953f-103">Referência do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="4953f-103">Keyboard Accelerator Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="99381-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="99381-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4953f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4953f-104">In This Section</span></span>
 
--   [<span data-ttu-id="99381-105">Funções do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="99381-105">Keyboard Accelerator Functions</span></span>](keyboard-accelerator-functions.md)
--   [<span data-ttu-id="99381-106">Mensagens do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="99381-106">Keyboard Accelerator Messages</span></span>](keyboard-accelerator-messages.md)
--   [<span data-ttu-id="99381-107">Notificações do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="99381-107">Keyboard Accelerator Notifications</span></span>](keyboard-accelerator-notifications.md)
--   [<span data-ttu-id="99381-108">Estruturas do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="99381-108">Keyboard Accelerator Structures</span></span>](keyboard-accelerator-structures.md)
+-   [<span data-ttu-id="4953f-105">Funções do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="4953f-105">Keyboard Accelerator Functions</span></span>](keyboard-accelerator-functions.md)
+-   [<span data-ttu-id="4953f-106">Mensagens do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="4953f-106">Keyboard Accelerator Messages</span></span>](keyboard-accelerator-messages.md)
+-   [<span data-ttu-id="4953f-107">Notificações do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="4953f-107">Keyboard Accelerator Notifications</span></span>](keyboard-accelerator-notifications.md)
+-   [<span data-ttu-id="4953f-108">Estruturas do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="4953f-108">Keyboard Accelerator Structures</span></span>](keyboard-accelerator-structures.md)
 
  
 

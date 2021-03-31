@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634752"
 ---
-# <a name="router-information-enumerations"></a><span data-ttu-id="36bf7-103">Enumerações de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="36bf7-103">Router Information Enumerations</span></span>
+# <a name="router-information-enumerations"></a><span data-ttu-id="7149a-103">Enumerações de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="7149a-103">Router Information Enumerations</span></span>
 
-<span data-ttu-id="36bf7-104">Use os tipos de informações a seguir ao chamar funções de cabeçalho de informações.</span><span class="sxs-lookup"><span data-stu-id="36bf7-104">Use the following information types when calling information header functions.</span></span>
+<span data-ttu-id="7149a-104">Use os tipos de informações a seguir ao chamar funções de cabeçalho de informações.</span><span class="sxs-lookup"><span data-stu-id="7149a-104">Use the following information types when calling information header functions.</span></span>
 
--   [<span data-ttu-id="36bf7-105">Tipos de informações de IP para blocos de informações de roteador</span><span class="sxs-lookup"><span data-stu-id="36bf7-105">IP Information Types for Router Information Blocks</span></span>](ip-information-types-for-router-information-blocks.md)
--   [<span data-ttu-id="36bf7-106">Tipos de informações IPv6 para blocos de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="36bf7-106">IPv6 Information Types for Router Information Blocks</span></span>](ipv6-information-types-for-router-information-blocks.md)
--   [<span data-ttu-id="36bf7-107">Tipos de informações de IPX para blocos de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="36bf7-107">IPX Information Types for Router Information Blocks</span></span>](ipx-information-types-for-router-information-blocks.md)
+-   [<span data-ttu-id="7149a-105">Tipos de informações de IP para blocos de informações de roteador</span><span class="sxs-lookup"><span data-stu-id="7149a-105">IP Information Types for Router Information Blocks</span></span>](ip-information-types-for-router-information-blocks.md)
+-   [<span data-ttu-id="7149a-106">Tipos de informações IPv6 para blocos de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="7149a-106">IPv6 Information Types for Router Information Blocks</span></span>](ipv6-information-types-for-router-information-blocks.md)
+-   [<span data-ttu-id="7149a-107">Tipos de informações de IPX para blocos de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="7149a-107">IPX Information Types for Router Information Blocks</span></span>](ipx-information-types-for-router-information-blocks.md)
 
  
 

@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636933"
 ---
-# <a name="formatting-audio-capture"></a><span data-ttu-id="9a07b-104">Formatando a captura de áudio</span><span class="sxs-lookup"><span data-stu-id="9a07b-104">Formatting Audio Capture</span></span>
+# <a name="formatting-audio-capture"></a><span data-ttu-id="6f401-104">Formatando a captura de áudio</span><span class="sxs-lookup"><span data-stu-id="6f401-104">Formatting Audio Capture</span></span>
 
-<span data-ttu-id="9a07b-105">O exemplo a seguir usa [**capSetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) para definir o formato de áudio como 11-kHz PCM de 8 bits, estéreo.</span><span class="sxs-lookup"><span data-stu-id="9a07b-105">The following example uses [**capSetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) to set the audio format to 11-kHz PCM 8-bit, stereo.</span></span>
+<span data-ttu-id="6f401-105">O exemplo a seguir usa [**capSetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) para definir o formato de áudio como 11-kHz PCM de 8 bits, estéreo.</span><span class="sxs-lookup"><span data-stu-id="6f401-105">The following example uses [**capSetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) to set the audio format to 11-kHz PCM 8-bit, stereo.</span></span>
 
 
 ```C++
@@ -35,11 +35,11 @@ capSetAudioFormat(hWndC, &wfex, sizeof(WAVEFORMATEX));
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="9a07b-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9a07b-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6f401-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6f401-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9a07b-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="9a07b-107">Using Video Capture</span></span>](using-video-capture.md)
+[<span data-ttu-id="6f401-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="6f401-107">Using Video Capture</span></span>](using-video-capture.md)
 </dt> </dl>
 
  

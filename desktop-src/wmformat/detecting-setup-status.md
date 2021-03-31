@@ -20,25 +20,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637141"
 ---
-# <a name="detecting-setup-status"></a><span data-ttu-id="af6a9-111">Detectando o status da instalação</span><span class="sxs-lookup"><span data-stu-id="af6a9-111">Detecting Setup Status</span></span>
+# <a name="detecting-setup-status"></a><span data-ttu-id="810ba-111">Detectando o status da instalação</span><span class="sxs-lookup"><span data-stu-id="810ba-111">Detecting Setup Status</span></span>
 
-<span data-ttu-id="af6a9-112">Quando o executável de redistribuição é executado em um computador, ele registra seu status de instalação no registro como um valor **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="af6a9-112">When the redistribution executable runs on a computer, it records its installation status in the registry as an **HRESULT** value.</span></span> <span data-ttu-id="af6a9-113">O status da instalação é armazenado na entrada do registro **InstallResult** sob a seguinte subchave:</span><span class="sxs-lookup"><span data-stu-id="af6a9-113">The installation status is stored in the **InstallResult** registry entry under the following subkey:</span></span>
+<span data-ttu-id="810ba-112">Quando o executável de redistribuição é executado em um computador, ele registra seu status de instalação no registro como um valor **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="810ba-112">When the redistribution executable runs on a computer, it records its installation status in the registry as an **HRESULT** value.</span></span> <span data-ttu-id="810ba-113">O status da instalação é armazenado na entrada do registro **InstallResult** sob a seguinte subchave:</span><span class="sxs-lookup"><span data-stu-id="810ba-113">The installation status is stored in the **InstallResult** registry entry under the following subkey:</span></span>
 
-<span data-ttu-id="af6a9-114">**HKEY \_ Current \_ user \\ software \\ Microsoft \\ MediaPlayer \\ instalação**</span><span class="sxs-lookup"><span data-stu-id="af6a9-114">**HKEY\_CURRENT\_USER\\Software\\Microsoft\\MediaPlayer\\Setup**</span></span>
+<span data-ttu-id="810ba-114">**HKEY \_ Current \_ user \\ software \\ Microsoft \\ MediaPlayer \\ instalação**</span><span class="sxs-lookup"><span data-stu-id="810ba-114">**HKEY\_CURRENT\_USER\\Software\\Microsoft\\MediaPlayer\\Setup**</span></span>
 
-<span data-ttu-id="af6a9-115">A entrada do registro **InstallResult** tem o seguinte formato.</span><span class="sxs-lookup"><span data-stu-id="af6a9-115">The **InstallResult** registry entry has the following form.</span></span>
+<span data-ttu-id="810ba-115">A entrada do registro **InstallResult** tem o seguinte formato.</span><span class="sxs-lookup"><span data-stu-id="810ba-115">The **InstallResult** registry entry has the following form.</span></span>
 
 
 
-| <span data-ttu-id="af6a9-116">Nome</span><span class="sxs-lookup"><span data-stu-id="af6a9-116">Name</span></span>              | <span data-ttu-id="af6a9-117">Type</span><span class="sxs-lookup"><span data-stu-id="af6a9-117">Type</span></span>           | <span data-ttu-id="af6a9-118">Valor</span><span class="sxs-lookup"><span data-stu-id="af6a9-118">Value</span></span>                                                                                                                   |
+| <span data-ttu-id="810ba-116">Nome</span><span class="sxs-lookup"><span data-stu-id="810ba-116">Name</span></span>              | <span data-ttu-id="810ba-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="810ba-117">Type</span></span>           | <span data-ttu-id="810ba-118">Valor</span><span class="sxs-lookup"><span data-stu-id="810ba-118">Value</span></span>                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="af6a9-119">**InstallResult**</span><span class="sxs-lookup"><span data-stu-id="af6a9-119">**InstallResult**</span></span> | <span data-ttu-id="af6a9-120">**REG \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="af6a9-120">**REG\_DWORD**</span></span> | <span data-ttu-id="af6a9-121">Um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se uma reinicialização é necessária.</span><span class="sxs-lookup"><span data-stu-id="af6a9-121">An **HRESULT** that indicates whether Windows Media Player installation was successful and whether a restart is needed.</span></span> |
+| <span data-ttu-id="810ba-119">**InstallResult**</span><span class="sxs-lookup"><span data-stu-id="810ba-119">**InstallResult**</span></span> | <span data-ttu-id="810ba-120">**REG \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="810ba-120">**REG\_DWORD**</span></span> | <span data-ttu-id="810ba-121">Um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se uma reinicialização é necessária.</span><span class="sxs-lookup"><span data-stu-id="810ba-121">An **HRESULT** that indicates whether Windows Media Player installation was successful and whether a restart is needed.</span></span> |
 
 
 
  
 
-<span data-ttu-id="af6a9-122">O código a seguir definirá as variáveis *fSucess* e *fRebootNeeded* como **true** ou **false**, conforme apropriado, com base no valor **HRESULT** gravado pela instalação do Windows Media no pacote de redistribuição de componentes.</span><span class="sxs-lookup"><span data-stu-id="af6a9-122">The following code will set the *fSucess* and *fRebootNeeded* variables to **True** or **False**, as appropriate, based on the **HRESULT** value written by Windows Media setup in the component redistribution package.</span></span>
+<span data-ttu-id="810ba-122">O código a seguir definirá as variáveis *fSucess* e *fRebootNeeded* como **true** ou **false**, conforme apropriado, com base no valor **HRESULT** gravado pela instalação do Windows Media no pacote de redistribuição de componentes.</span><span class="sxs-lookup"><span data-stu-id="810ba-122">The following code will set the *fSucess* and *fRebootNeeded* variables to **True** or **False**, as appropriate, based on the **HRESULT** value written by Windows Media setup in the component redistribution package.</span></span>
 
 
 ```C++
@@ -115,11 +115,11 @@ int main( void )
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="af6a9-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="af6a9-123">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="810ba-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="810ba-123">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="af6a9-124">**Redistribuição de software**</span><span class="sxs-lookup"><span data-stu-id="af6a9-124">**Software Redistribution**</span></span>](software-redistribution.md)
+[<span data-ttu-id="810ba-124">**Redistribuição de software**</span><span class="sxs-lookup"><span data-stu-id="810ba-124">**Software Redistribution**</span></span>](software-redistribution.md)
 </dt> </dl>
 
  

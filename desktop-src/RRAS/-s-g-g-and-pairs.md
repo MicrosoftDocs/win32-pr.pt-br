@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636139"
 ---
-# <a name="s-g--g-and---pairs"></a><span data-ttu-id="59f65-104">(s, g), ( \* , g) e ( \* , \* ) pares</span><span class="sxs-lookup"><span data-stu-id="59f65-104">(s, g), (\*, g), and (\*, \*) Pairs</span></span>
+# <a name="s-g--g-and---pairs"></a><span data-ttu-id="f82f0-104">(s, g), ( \* , g) e ( \* , \* ) pares</span><span class="sxs-lookup"><span data-stu-id="f82f0-104">(s, g), (\*, g), and (\*, \*) Pairs</span></span>
 
-<span data-ttu-id="59f65-105">A notação (s, g) representa uma origem e um grupo específicos.</span><span class="sxs-lookup"><span data-stu-id="59f65-105">The notation (s, g) represents a specific source and group.</span></span> <span data-ttu-id="59f65-106">Somente os dados da origem, s e do grupo, g, são solicitados.</span><span class="sxs-lookup"><span data-stu-id="59f65-106">Only data from the source, s, and the group, g, is requested.</span></span>
+<span data-ttu-id="f82f0-105">A notação (s, g) representa uma origem e um grupo específicos.</span><span class="sxs-lookup"><span data-stu-id="f82f0-105">The notation (s, g) represents a specific source and group.</span></span> <span data-ttu-id="f82f0-106">Somente os dados da origem, s e do grupo, g, são solicitados.</span><span class="sxs-lookup"><span data-stu-id="f82f0-106">Only data from the source, s, and the group, g, is requested.</span></span>
 
-<span data-ttu-id="59f65-107">A notação ( \* , g) representa uma fonte curinga e um grupo específico.</span><span class="sxs-lookup"><span data-stu-id="59f65-107">The notation (\*, g) represents a wildcard source and a specific group.</span></span> <span data-ttu-id="59f65-108">Todos os dados de qualquer fonte para o grupo, g, foram solicitados.</span><span class="sxs-lookup"><span data-stu-id="59f65-108">All data from any source to the group, g, has been requested.</span></span>
+<span data-ttu-id="f82f0-107">A notação ( \* , g) representa uma fonte curinga e um grupo específico.</span><span class="sxs-lookup"><span data-stu-id="f82f0-107">The notation (\*, g) represents a wildcard source and a specific group.</span></span> <span data-ttu-id="f82f0-108">Todos os dados de qualquer fonte para o grupo, g, foram solicitados.</span><span class="sxs-lookup"><span data-stu-id="f82f0-108">All data from any source to the group, g, has been requested.</span></span>
 
-<span data-ttu-id="59f65-109">A notação ( \* , \* ) representa uma origem curinga e um grupo curinga.</span><span class="sxs-lookup"><span data-stu-id="59f65-109">The notation (\*, \*) represents a wildcard source and wildcard group.</span></span> <span data-ttu-id="59f65-110">Todos os dados de todas as fontes e todos os grupos foram solicitados.</span><span class="sxs-lookup"><span data-stu-id="59f65-110">All data from all sources and to all groups has been requested.</span></span>
+<span data-ttu-id="f82f0-109">A notação ( \* , \* ) representa uma origem curinga e um grupo curinga.</span><span class="sxs-lookup"><span data-stu-id="f82f0-109">The notation (\*, \*) represents a wildcard source and wildcard group.</span></span> <span data-ttu-id="f82f0-110">Todos os dados de todas as fontes e todos os grupos foram solicitados.</span><span class="sxs-lookup"><span data-stu-id="f82f0-110">All data from all sources and to all groups has been requested.</span></span>
 
-<span data-ttu-id="59f65-111">Essas notações são usadas para descrever a adição e a remoção de associações de grupo.</span><span class="sxs-lookup"><span data-stu-id="59f65-111">These notations are used to describe the addition and removal of group memberships.</span></span>
+<span data-ttu-id="f82f0-111">Essas notações são usadas para descrever a adição e a remoção de associações de grupo.</span><span class="sxs-lookup"><span data-stu-id="f82f0-111">These notations are used to describe the addition and removal of group memberships.</span></span>
 
  
 

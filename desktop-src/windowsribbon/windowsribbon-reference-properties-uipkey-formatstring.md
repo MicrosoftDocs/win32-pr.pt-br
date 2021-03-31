@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637220"
 ---
-# <a name="ui_pkey_formatstring"></a><span data-ttu-id="d87d5-103">Interface do usuário \_ PKEY \_ FormatString</span><span class="sxs-lookup"><span data-stu-id="d87d5-103">UI\_PKEY\_FormatString</span></span>
+# <a name="ui_pkey_formatstring"></a><span data-ttu-id="f7aa8-103">Interface do usuário \_ PKEY \_ FormatString</span><span class="sxs-lookup"><span data-stu-id="f7aa8-103">UI\_PKEY\_FormatString</span></span>
 
-<span data-ttu-id="d87d5-104">Identifica a \_ Propriedade PKEY FormatString da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="d87d5-104">Identifies the UI\_PKEY\_FormatString property.</span></span>
+<span data-ttu-id="f7aa8-104">Identifica a \_ Propriedade PKEY FormatString da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="f7aa8-104">Identifies the UI\_PKEY\_FormatString property.</span></span>
 
 ```
 propertyDescription
@@ -25,15 +25,15 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a><span data-ttu-id="d87d5-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="d87d5-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f7aa8-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="f7aa8-105">Remarks</span></span>
 
-<span data-ttu-id="d87d5-106">A interface do usuário \_ PKEY \_ FormatString é usada por um aplicativo para consultar o formato (ou unidade de medida) para o valor do controle [Spinner](windowsribbon-controls-spinner.md) .</span><span class="sxs-lookup"><span data-stu-id="d87d5-106">UI\_PKEY\_FormatString is used by an application to query the format (or unit of measurement) for the value of the [Spinner](windowsribbon-controls-spinner.md) control.</span></span>
+<span data-ttu-id="f7aa8-106">A interface do usuário \_ PKEY \_ FormatString é usada por um aplicativo para consultar o formato (ou unidade de medida) para o valor do controle [Spinner](windowsribbon-controls-spinner.md) .</span><span class="sxs-lookup"><span data-stu-id="f7aa8-106">UI\_PKEY\_FormatString is used by an application to query the format (or unit of measurement) for the value of the [Spinner](windowsribbon-controls-spinner.md) control.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d87d5-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d87d5-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f7aa8-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f7aa8-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d87d5-108">Propriedades de estado</span><span class="sxs-lookup"><span data-stu-id="d87d5-108">State Properties</span></span>](windowsribbon-reference-properties-state.md)
+[<span data-ttu-id="f7aa8-108">Propriedades de estado</span><span class="sxs-lookup"><span data-stu-id="f7aa8-108">State Properties</span></span>](windowsribbon-reference-properties-state.md)
 </dt> </dl>
 
  

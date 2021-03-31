@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636003"
 ---
-# <a name="decompressing-data"></a><span data-ttu-id="60bf1-108">Descompactando dados</span><span class="sxs-lookup"><span data-stu-id="60bf1-108">Decompressing Data</span></span>
+# <a name="decompressing-data"></a><span data-ttu-id="884e1-108">Descompactando dados</span><span class="sxs-lookup"><span data-stu-id="884e1-108">Decompressing Data</span></span>
 
-<span data-ttu-id="60bf1-109">O exemplo a seguir mostra como um aplicativo pode inicializar um descompactador usando a macro [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) , descompactar uma sequência de quadros usando a função [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e encerrar a descompactação usando a macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .</span><span class="sxs-lookup"><span data-stu-id="60bf1-109">The following example shows how an application can initialize a decompressor using the [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) macro, decompress a frame sequence using the [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) function, and terminate decompression using the [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) macro.</span></span>
+<span data-ttu-id="884e1-109">O exemplo a seguir mostra como um aplicativo pode inicializar um descompactador usando a macro [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) , descompactar uma sequência de quadros usando a função [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e encerrar a descompactação usando a macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .</span><span class="sxs-lookup"><span data-stu-id="884e1-109">The following example shows how an application can initialize a decompressor using the [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) macro, decompress a frame sequence using the [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) function, and terminate decompression using the [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) macro.</span></span>
 
 
 ```C++

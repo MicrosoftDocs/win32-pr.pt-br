@@ -15,9 +15,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634880"
 ---
-# <a name="example-code-for-ranging-with-idirectoryobject"></a><span data-ttu-id="d910f-105">Código de exemplo para variação com IDirectoryObject</span><span class="sxs-lookup"><span data-stu-id="d910f-105">Example Code for Ranging with IDirectoryObject</span></span>
+# <a name="example-code-for-ranging-with-idirectoryobject"></a><span data-ttu-id="429eb-105">Código de exemplo para variação com IDirectoryObject</span><span class="sxs-lookup"><span data-stu-id="429eb-105">Example Code for Ranging with IDirectoryObject</span></span>
 
-<span data-ttu-id="d910f-106">O exemplo de código a seguir usa a variação para recuperar os membros de um grupo usando a interface [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) .</span><span class="sxs-lookup"><span data-stu-id="d910f-106">The following code example uses ranging to retrieve the members of a group using the [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) interface.</span></span>
+<span data-ttu-id="429eb-106">O exemplo de código a seguir usa a variação para recuperar os membros de um grupo usando a interface [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) .</span><span class="sxs-lookup"><span data-stu-id="429eb-106">The following code example uses ranging to retrieve the members of a group using the [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) interface.</span></span>
 
 
 ```C++

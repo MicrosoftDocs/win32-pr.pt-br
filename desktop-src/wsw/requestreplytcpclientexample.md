@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634814"
 ---
-# <a name="requestreplytcpclientexample"></a><span data-ttu-id="5503a-106">RequestReplyTcpClientExample</span><span class="sxs-lookup"><span data-stu-id="5503a-106">RequestReplyTcpClientExample</span></span>
+# <a name="requestreplytcpclientexample"></a><span data-ttu-id="a9113-106">RequestReplyTcpClientExample</span><span class="sxs-lookup"><span data-stu-id="a9113-106">RequestReplyTcpClientExample</span></span>
 
-<span data-ttu-id="5503a-107">Este exemplo mostra um cliente TCP que envia mensagens de solicitação-resposta.</span><span class="sxs-lookup"><span data-stu-id="5503a-107">This example shows a TCP client that sends request-reply messages.</span></span>
+<span data-ttu-id="a9113-107">Este exemplo mostra um cliente TCP que envia mensagens de solicitação-resposta.</span><span class="sxs-lookup"><span data-stu-id="a9113-107">This example shows a TCP client that sends request-reply messages.</span></span>
 
--   [<span data-ttu-id="5503a-108">RequestReplyTcpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="5503a-108">RequestReplyTcpClient.cpp</span></span>](#requestreplytcpclientcpp)
--   [<span data-ttu-id="5503a-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="5503a-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="5503a-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="5503a-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="a9113-108">RequestReplyTcpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="a9113-108">RequestReplyTcpClient.cpp</span></span>](#requestreplytcpclientcpp)
+-   [<span data-ttu-id="a9113-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="a9113-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="a9113-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="a9113-110">Makefile</span></span>](#makefile)
 
-## <a name="requestreplytcpclientcpp"></a><span data-ttu-id="5503a-111">RequestReplyTcpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="5503a-111">RequestReplyTcpClient.cpp</span></span>
+## <a name="requestreplytcpclientcpp"></a><span data-ttu-id="a9113-111">RequestReplyTcpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="a9113-111">RequestReplyTcpClient.cpp</span></span>
 
 
 ```C++
@@ -440,7 +440,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="5503a-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="5503a-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="a9113-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="a9113-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -551,7 +551,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="5503a-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="5503a-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="a9113-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="a9113-113">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>

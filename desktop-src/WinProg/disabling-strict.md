@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636394"
 ---
-# <a name="disabling-strict"></a><span data-ttu-id="fc06e-104">Desabilitando estrito</span><span class="sxs-lookup"><span data-stu-id="fc06e-104">Disabling STRICT</span></span>
+# <a name="disabling-strict"></a><span data-ttu-id="cbe05-104">Desabilitando estrito</span><span class="sxs-lookup"><span data-stu-id="cbe05-104">Disabling STRICT</span></span>
 
-<span data-ttu-id="fc06e-105">Para desabilitar a verificação de tipo **estrito** , defina o nome do símbolo como **não \_ estrito**.</span><span class="sxs-lookup"><span data-stu-id="fc06e-105">To disable **STRICT** type checking, define the symbol name **NO\_STRICT**.</span></span> <span data-ttu-id="fc06e-106">No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando **/DNO \_ Strict** como uma opção de compilador.</span><span class="sxs-lookup"><span data-stu-id="fc06e-106">In Visual C/C++, you can also specify this definition on the command line or in a makefile by specifying **/DNO\_STRICT** as a compiler option.</span></span>
+<span data-ttu-id="cbe05-105">Para desabilitar a verificação de tipo **estrito** , defina o nome do símbolo como **não \_ estrito**.</span><span class="sxs-lookup"><span data-stu-id="cbe05-105">To disable **STRICT** type checking, define the symbol name **NO\_STRICT**.</span></span> <span data-ttu-id="cbe05-106">No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando **/DNO \_ Strict** como uma opção de compilador.</span><span class="sxs-lookup"><span data-stu-id="cbe05-106">In Visual C/C++, you can also specify this definition on the command line or in a makefile by specifying **/DNO\_STRICT** as a compiler option.</span></span>
 
-<span data-ttu-id="fc06e-107">Para definir **não \_ estrito** em uma base arquivo por arquivo, insira uma instrução de **\# definição** antes de incluir Windows. h:</span><span class="sxs-lookup"><span data-stu-id="fc06e-107">To define **NO\_STRICT** on a file-by-file basis, insert a **\#define** statement before including Windows.h:</span></span>
+<span data-ttu-id="cbe05-107">Para definir **não \_ estrito** em uma base arquivo por arquivo, insira uma instrução de **\# definição** antes de incluir Windows. h:</span><span class="sxs-lookup"><span data-stu-id="cbe05-107">To define **NO\_STRICT** on a file-by-file basis, insert a **\#define** statement before including Windows.h:</span></span>
 
 
 ```C++
@@ -25,16 +25,16 @@ ms.locfileid: "103636394"
 
 
 
-<span data-ttu-id="fc06e-108">Para obter melhores resultados, você também deve definir o nível de aviso para mensagens de erro para pelo menos **/w3**.</span><span class="sxs-lookup"><span data-stu-id="fc06e-108">For best results, you should also set the warning level for error messages to at least **/W3**.</span></span> <span data-ttu-id="fc06e-109">Isso é sempre aconselhável com aplicativos para Windows, pois uma prática de codificação que causa um aviso (por exemplo, passar o número incorreto de parâmetros) geralmente causa um erro fatal em tempo de execução se não for corrigida.</span><span class="sxs-lookup"><span data-stu-id="fc06e-109">This is always advisable with applications for Windows, because a coding practice that causes a warning (for example, passing the wrong number of parameters) usually causes a fatal error at run time if it is not corrected.</span></span>
+<span data-ttu-id="cbe05-108">Para obter melhores resultados, você também deve definir o nível de aviso para mensagens de erro para pelo menos **/w3**.</span><span class="sxs-lookup"><span data-stu-id="cbe05-108">For best results, you should also set the warning level for error messages to at least **/W3**.</span></span> <span data-ttu-id="cbe05-109">Isso é sempre aconselhável com aplicativos para Windows, pois uma prática de codificação que causa um aviso (por exemplo, passar o número incorreto de parâmetros) geralmente causa um erro fatal em tempo de execução se não for corrigida.</span><span class="sxs-lookup"><span data-stu-id="cbe05-109">This is always advisable with applications for Windows, because a coding practice that causes a warning (for example, passing the wrong number of parameters) usually causes a fatal error at run time if it is not corrected.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="fc06e-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="fc06e-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cbe05-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cbe05-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="fc06e-111">Habilitando STRICT</span><span class="sxs-lookup"><span data-stu-id="fc06e-111">Enabling STRICT</span></span>](enabling-strict.md)
+[<span data-ttu-id="cbe05-111">Habilitando STRICT</span><span class="sxs-lookup"><span data-stu-id="cbe05-111">Enabling STRICT</span></span>](enabling-strict.md)
 </dt> <dt>
 
-[<span data-ttu-id="fc06e-112">Conformidade estrita</span><span class="sxs-lookup"><span data-stu-id="fc06e-112">STRICT Compliance</span></span>](strict-compliance.md)
+[<span data-ttu-id="cbe05-112">Conformidade estrita</span><span class="sxs-lookup"><span data-stu-id="cbe05-112">STRICT Compliance</span></span>](strict-compliance.md)
 </dt> </dl>
 
  

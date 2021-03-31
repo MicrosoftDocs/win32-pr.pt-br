@@ -20,15 +20,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637098"
 ---
-# <a name="spdif-audio-output"></a><span data-ttu-id="f4558-111">Saída de áudio S/PDIF</span><span class="sxs-lookup"><span data-stu-id="f4558-111">S/PDIF Audio Output</span></span>
+# <a name="spdif-audio-output"></a><span data-ttu-id="8dec4-111">Saída de áudio S/PDIF</span><span class="sxs-lookup"><span data-stu-id="8dec4-111">S/PDIF Audio Output</span></span>
 
-<span data-ttu-id="f4558-112">Alguns dispositivos de áudio usam o formato de interconexão digital Sony/Philips (S/PDIF) para transportar dados de áudio.</span><span class="sxs-lookup"><span data-stu-id="f4558-112">Some audio devices use the Sony/Philips Digital Interconnect Format (S/PDIF) to transport audio data.</span></span> <span data-ttu-id="f4558-113">Agora você pode decodificar áudio para S/PDIF do áudio que foi codificado com o codec do Windows Media Professional.</span><span class="sxs-lookup"><span data-stu-id="f4558-113">You can now decode audio to S/PDIF from audio that was encoded with the Windows Media Professional codec.</span></span>
+<span data-ttu-id="8dec4-112">Alguns dispositivos de áudio usam o formato de interconexão digital Sony/Philips (S/PDIF) para transportar dados de áudio.</span><span class="sxs-lookup"><span data-stu-id="8dec4-112">Some audio devices use the Sony/Philips Digital Interconnect Format (S/PDIF) to transport audio data.</span></span> <span data-ttu-id="8dec4-113">Agora você pode decodificar áudio para S/PDIF do áudio que foi codificado com o codec do Windows Media Professional.</span><span class="sxs-lookup"><span data-stu-id="8dec4-113">You can now decode audio to S/PDIF from audio that was encoded with the Windows Media Professional codec.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="f4558-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f4558-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8dec4-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8dec4-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f4558-115">**Recursos do codec**</span><span class="sxs-lookup"><span data-stu-id="f4558-115">**Codec Features**</span></span>](codec-features.md)
+[<span data-ttu-id="8dec4-115">**Recursos do codec**</span><span class="sxs-lookup"><span data-stu-id="8dec4-115">**Codec Features**</span></span>](codec-features.md)
 </dt> </dl>
 
  

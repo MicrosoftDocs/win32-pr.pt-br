@@ -11,22 +11,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636216"
 ---
-# <a name="ras-server-administration-functions"></a><span data-ttu-id="cb440-103">Funções de administração do servidor RAS</span><span class="sxs-lookup"><span data-stu-id="cb440-103">RAS Server Administration Functions</span></span>
+# <a name="ras-server-administration-functions"></a><span data-ttu-id="1ef93-103">Funções de administração do servidor RAS</span><span class="sxs-lookup"><span data-stu-id="1ef93-103">RAS Server Administration Functions</span></span>
 
-<span data-ttu-id="cb440-104">Para o Windows NT 4,0, use as funções a seguir para implementar a funcionalidade de administração do servidor RAS. O Windows 95 não fornece suporte ao servidor RAS.</span><span class="sxs-lookup"><span data-stu-id="cb440-104">For Windows NT 4.0, use the following functions to implement RAS server administration functionality.Windows 95 does not provide RAS server support.</span></span> <span data-ttu-id="cb440-105">Para o Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a [referência de administração do serviço de acesso remoto](remote-access-service-administration-reference.md).</span><span class="sxs-lookup"><span data-stu-id="cb440-105">For Windows 2000, Windows Server 2003, and later operating systems, use the [Remote Access Service Administration Reference](remote-access-service-administration-reference.md).</span></span>
+<span data-ttu-id="1ef93-104">Para o Windows NT 4,0, use as funções a seguir para implementar a funcionalidade de administração do servidor RAS. O Windows 95 não fornece suporte ao servidor RAS.</span><span class="sxs-lookup"><span data-stu-id="1ef93-104">For Windows NT 4.0, use the following functions to implement RAS server administration functionality.Windows 95 does not provide RAS server support.</span></span> <span data-ttu-id="1ef93-105">Para o Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a [referência de administração do serviço de acesso remoto](remote-access-service-administration-reference.md).</span><span class="sxs-lookup"><span data-stu-id="1ef93-105">For Windows 2000, Windows Server 2003, and later operating systems, use the [Remote Access Service Administration Reference](remote-access-service-administration-reference.md).</span></span>
 
--   [<span data-ttu-id="cb440-106">**RasAdminFreeBuffer**</span><span class="sxs-lookup"><span data-stu-id="cb440-106">**RasAdminFreeBuffer**</span></span>](rasadminfreebuffer.md)
--   [<span data-ttu-id="cb440-107">**RasAdminGetErrorString**</span><span class="sxs-lookup"><span data-stu-id="cb440-107">**RasAdminGetErrorString**</span></span>](rasadmingeterrorstring.md)
--   [<span data-ttu-id="cb440-108">**RasAdminGetUserAccountServer**</span><span class="sxs-lookup"><span data-stu-id="cb440-108">**RasAdminGetUserAccountServer**</span></span>](rasadmingetuseraccountserver.md)
--   [<span data-ttu-id="cb440-109">**RasAdminPortClearStatistics**</span><span class="sxs-lookup"><span data-stu-id="cb440-109">**RasAdminPortClearStatistics**</span></span>](rasadminportclearstatistics.md)
--   [<span data-ttu-id="cb440-110">**RasAdminPortDisconnect**</span><span class="sxs-lookup"><span data-stu-id="cb440-110">**RasAdminPortDisconnect**</span></span>](rasadminportdisconnect.md)
--   [<span data-ttu-id="cb440-111">**RasAdminPortEnum**</span><span class="sxs-lookup"><span data-stu-id="cb440-111">**RasAdminPortEnum**</span></span>](rasadminportenum.md)
--   [<span data-ttu-id="cb440-112">**RasAdminPortGetInfo**</span><span class="sxs-lookup"><span data-stu-id="cb440-112">**RasAdminPortGetInfo**</span></span>](rasadminportgetinfo.md)
--   [<span data-ttu-id="cb440-113">**RasAdminServerGetInfo**</span><span class="sxs-lookup"><span data-stu-id="cb440-113">**RasAdminServerGetInfo**</span></span>](rasadminservergetinfo.md)
--   [<span data-ttu-id="cb440-114">**RasAdminUserGetInfo**</span><span class="sxs-lookup"><span data-stu-id="cb440-114">**RasAdminUserGetInfo**</span></span>](rasadminusergetinfo.md)
--   [<span data-ttu-id="cb440-115">**RasAdminUserSetInfo**</span><span class="sxs-lookup"><span data-stu-id="cb440-115">**RasAdminUserSetInfo**</span></span>](rasadminusersetinfo.md)
--   [<span data-ttu-id="cb440-116">Funções DLL de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="cb440-116">RAS Administration DLL Functions</span></span>](ras-administration-dll-functions.md)
--   [<span data-ttu-id="cb440-117">Funções DLL de segurança RAS</span><span class="sxs-lookup"><span data-stu-id="cb440-117">RAS Security DLL Functions</span></span>](ras-security-dll-functions.md)
+-   [<span data-ttu-id="1ef93-106">**RasAdminFreeBuffer**</span><span class="sxs-lookup"><span data-stu-id="1ef93-106">**RasAdminFreeBuffer**</span></span>](rasadminfreebuffer.md)
+-   [<span data-ttu-id="1ef93-107">**RasAdminGetErrorString**</span><span class="sxs-lookup"><span data-stu-id="1ef93-107">**RasAdminGetErrorString**</span></span>](rasadmingeterrorstring.md)
+-   [<span data-ttu-id="1ef93-108">**RasAdminGetUserAccountServer**</span><span class="sxs-lookup"><span data-stu-id="1ef93-108">**RasAdminGetUserAccountServer**</span></span>](rasadmingetuseraccountserver.md)
+-   [<span data-ttu-id="1ef93-109">**RasAdminPortClearStatistics**</span><span class="sxs-lookup"><span data-stu-id="1ef93-109">**RasAdminPortClearStatistics**</span></span>](rasadminportclearstatistics.md)
+-   [<span data-ttu-id="1ef93-110">**RasAdminPortDisconnect**</span><span class="sxs-lookup"><span data-stu-id="1ef93-110">**RasAdminPortDisconnect**</span></span>](rasadminportdisconnect.md)
+-   [<span data-ttu-id="1ef93-111">**RasAdminPortEnum**</span><span class="sxs-lookup"><span data-stu-id="1ef93-111">**RasAdminPortEnum**</span></span>](rasadminportenum.md)
+-   [<span data-ttu-id="1ef93-112">**RasAdminPortGetInfo**</span><span class="sxs-lookup"><span data-stu-id="1ef93-112">**RasAdminPortGetInfo**</span></span>](rasadminportgetinfo.md)
+-   [<span data-ttu-id="1ef93-113">**RasAdminServerGetInfo**</span><span class="sxs-lookup"><span data-stu-id="1ef93-113">**RasAdminServerGetInfo**</span></span>](rasadminservergetinfo.md)
+-   [<span data-ttu-id="1ef93-114">**RasAdminUserGetInfo**</span><span class="sxs-lookup"><span data-stu-id="1ef93-114">**RasAdminUserGetInfo**</span></span>](rasadminusergetinfo.md)
+-   [<span data-ttu-id="1ef93-115">**RasAdminUserSetInfo**</span><span class="sxs-lookup"><span data-stu-id="1ef93-115">**RasAdminUserSetInfo**</span></span>](rasadminusersetinfo.md)
+-   [<span data-ttu-id="1ef93-116">Funções DLL de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="1ef93-116">RAS Administration DLL Functions</span></span>](ras-administration-dll-functions.md)
+-   [<span data-ttu-id="1ef93-117">Funções DLL de segurança RAS</span><span class="sxs-lookup"><span data-stu-id="1ef93-117">RAS Security DLL Functions</span></span>](ras-security-dll-functions.md)
 
  
 

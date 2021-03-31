@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638459"
 ---
-# <a name="ienumtfrenderingmarkupskip-method"></a><span data-ttu-id="87655-106">Método IEnumTfRenderingMarkup:: Skip</span><span class="sxs-lookup"><span data-stu-id="87655-106">IEnumTfRenderingMarkup::Skip method</span></span>
+# <a name="ienumtfrenderingmarkupskip-method"></a><span data-ttu-id="2b7f0-106">Método IEnumTfRenderingMarkup:: Skip</span><span class="sxs-lookup"><span data-stu-id="2b7f0-106">IEnumTfRenderingMarkup::Skip method</span></span>
 
-<span data-ttu-id="87655-107">O método **IEnumTfRenderingMarkup:: Skip** Obtém, da posição atual, o número especificado de elementos na sequência de enumeração.</span><span class="sxs-lookup"><span data-stu-id="87655-107">The **IEnumTfRenderingMarkup::Skip** method obtains, from the current position, the specified number of elements in the enumeration sequence.</span></span>
+<span data-ttu-id="2b7f0-107">O método **IEnumTfRenderingMarkup:: Skip** Obtém, da posição atual, o número especificado de elementos na sequência de enumeração.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-107">The **IEnumTfRenderingMarkup::Skip** method obtains, from the current position, the specified number of elements in the enumeration sequence.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="87655-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="87655-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2b7f0-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2b7f0-108">Syntax</span></span>
 
 
 ```C++
@@ -37,36 +37,36 @@ HRESULT Skip(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="87655-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="87655-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2b7f0-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2b7f0-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="87655-110">*ulCount* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="87655-110">*ulCount* \[in\]</span></span>
+<span data-ttu-id="2b7f0-110">*ulCount* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2b7f0-110">*ulCount* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="87655-111">\[in \] especifica o número de elementos a serem ignorados.</span><span class="sxs-lookup"><span data-stu-id="87655-111">\[in\] Specifies the number of elements to skip.</span></span>
+<span data-ttu-id="2b7f0-111">\[in \] especifica o número de elementos a serem ignorados.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-111">\[in\] Specifies the number of elements to skip.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="87655-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="87655-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2b7f0-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2b7f0-112">Return value</span></span>
 
-<span data-ttu-id="87655-113">Esse método pode retornar um desses valores.</span><span class="sxs-lookup"><span data-stu-id="87655-113">This method can return one of these values.</span></span>
+<span data-ttu-id="2b7f0-113">Esse método pode retornar um desses valores.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-113">This method can return one of these values.</span></span>
 
 
 
-| <span data-ttu-id="87655-114">Valor</span><span class="sxs-lookup"><span data-stu-id="87655-114">Value</span></span>                                                                                   | <span data-ttu-id="87655-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="87655-115">Description</span></span>                                                                                                        |
+| <span data-ttu-id="2b7f0-114">Valor</span><span class="sxs-lookup"><span data-stu-id="2b7f0-114">Value</span></span>                                                                                   | <span data-ttu-id="2b7f0-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="2b7f0-115">Description</span></span>                                                                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <dl> <span data-ttu-id="87655-116"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="87655-116"><dt>**S\_OK**</dt></span></span> </dl>    | <span data-ttu-id="87655-117">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="87655-117">The method was successful.</span></span><br/>                                                                              |
-| <dl> <span data-ttu-id="87655-118"><dt>**\_falso**</dt></span><span class="sxs-lookup"><span data-stu-id="87655-118"><dt>**S\_FALSE**</dt></span></span> </dl> | <span data-ttu-id="87655-119">O método atingiu o final da enumeração antes que o número especificado de elementos pudesse ser ignorado.</span><span class="sxs-lookup"><span data-stu-id="87655-119">The method reached the end of the enumeration before the specified number of elements could be skipped.</span></span><br/> |
+| <dl> <span data-ttu-id="2b7f0-116"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="2b7f0-116"><dt>**S\_OK**</dt></span></span> </dl>    | <span data-ttu-id="2b7f0-117">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-117">The method was successful.</span></span><br/>                                                                              |
+| <dl> <span data-ttu-id="2b7f0-118"><dt>**\_falso**</dt></span><span class="sxs-lookup"><span data-stu-id="2b7f0-118"><dt>**S\_FALSE**</dt></span></span> </dl> | <span data-ttu-id="2b7f0-119">O método atingiu o final da enumeração antes que o número especificado de elementos pudesse ser ignorado.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-119">The method reached the end of the enumeration before the specified number of elements could be skipped.</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="87655-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="87655-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2b7f0-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="2b7f0-120">Remarks</span></span>
 
 > [!Note]  
-> <span data-ttu-id="87655-121">Esse método não está atualmente nos arquivos de cabeçalho públicos.</span><span class="sxs-lookup"><span data-stu-id="87655-121">This method is not currently in the public header files.</span></span> <span data-ttu-id="87655-122">Para usar essa API, você deve compilar o [protótipo](prototypes.md)em MIDL.</span><span class="sxs-lookup"><span data-stu-id="87655-122">To use this API, you must MIDL-compile the [prototype](prototypes.md).</span></span>
+> <span data-ttu-id="2b7f0-121">Esse método não está atualmente nos arquivos de cabeçalho públicos.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-121">This method is not currently in the public header files.</span></span> <span data-ttu-id="2b7f0-122">Para usar essa API, você deve compilar o [protótipo](prototypes.md)em MIDL.</span><span class="sxs-lookup"><span data-stu-id="2b7f0-122">To use this API, you must MIDL-compile the [prototype](prototypes.md).</span></span>
 
  
 

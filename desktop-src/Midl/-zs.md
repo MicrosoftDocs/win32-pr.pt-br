@@ -19,39 +19,39 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638456"
 ---
-# <a name="zs-switch"></a><span data-ttu-id="11540-104">Comutador/ZS</span><span class="sxs-lookup"><span data-stu-id="11540-104">/Zs switch</span></span>
+# <a name="zs-switch"></a><span data-ttu-id="063a3-104">Comutador/ZS</span><span class="sxs-lookup"><span data-stu-id="063a3-104">/Zs switch</span></span>
 
-<span data-ttu-id="11540-105">A opção **/ZS** indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.</span><span class="sxs-lookup"><span data-stu-id="11540-105">The **/Zs** switch indicates that the compiler only checks syntax and does not generate output files.</span></span>
+<span data-ttu-id="063a3-105">A opção **/ZS** indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.</span><span class="sxs-lookup"><span data-stu-id="063a3-105">The **/Zs** switch indicates that the compiler only checks syntax and does not generate output files.</span></span>
 
 ``` syntax
 midl /Zs
 midl /syntax_check
 ```
 
-## <a name="switch-options"></a><span data-ttu-id="11540-106">Opções de comutação</span><span class="sxs-lookup"><span data-stu-id="11540-106">Switch Options</span></span>
+## <a name="switch-options"></a><span data-ttu-id="063a3-106">Opções de comutação</span><span class="sxs-lookup"><span data-stu-id="063a3-106">Switch Options</span></span>
 
-<span data-ttu-id="11540-107">Essa opção não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="11540-107">This switch has no parameters.</span></span>
+<span data-ttu-id="063a3-107">Essa opção não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="063a3-107">This switch has no parameters.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="11540-108">Comentários</span><span class="sxs-lookup"><span data-stu-id="11540-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="063a3-108">Comentários</span><span class="sxs-lookup"><span data-stu-id="063a3-108">Remarks</span></span>
 
-<span data-ttu-id="11540-109">Essa opção substitui todas as outras opções que especificam informações sobre os arquivos de saída.</span><span class="sxs-lookup"><span data-stu-id="11540-109">This switch overrides all other switches that specify information about output files.</span></span>
+<span data-ttu-id="063a3-109">Essa opção substitui todas as outras opções que especificam informações sobre os arquivos de saída.</span><span class="sxs-lookup"><span data-stu-id="063a3-109">This switch overrides all other switches that specify information about output files.</span></span>
 
-<span data-ttu-id="11540-110">Você também pode especificar o modo de verificação de sintaxe com a [**\_ verificação/Syntax**](-syntax-check.md)do compilador MIDL.</span><span class="sxs-lookup"><span data-stu-id="11540-110">You can also specify syntax-checking mode with the MIDL compiler switch [**/syntax\_check**](-syntax-check.md).</span></span>
+<span data-ttu-id="063a3-110">Você também pode especificar o modo de verificação de sintaxe com a [**\_ verificação/Syntax**](-syntax-check.md)do compilador MIDL.</span><span class="sxs-lookup"><span data-stu-id="063a3-110">You can also specify syntax-checking mode with the MIDL compiler switch [**/syntax\_check**](-syntax-check.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="11540-111">Exemplos</span><span class="sxs-lookup"><span data-stu-id="11540-111">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="063a3-111">Exemplos</span><span class="sxs-lookup"><span data-stu-id="063a3-111">Examples</span></span>
 
-<span data-ttu-id="11540-112">**MIDL/ZS filename. idl**</span><span class="sxs-lookup"><span data-stu-id="11540-112">**midl /Zs filename.idl**</span></span>
+<span data-ttu-id="063a3-112">**MIDL/ZS filename. idl**</span><span class="sxs-lookup"><span data-stu-id="063a3-112">**midl /Zs filename.idl**</span></span>
 
-<span data-ttu-id="11540-113">**MIDL/Syntax \_ verificar filename. idl**</span><span class="sxs-lookup"><span data-stu-id="11540-113">**midl /syntax\_check filename.idl**</span></span>
+<span data-ttu-id="063a3-113">**MIDL/Syntax \_ verificar filename. idl**</span><span class="sxs-lookup"><span data-stu-id="063a3-113">**midl /syntax\_check filename.idl**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="11540-114">Consulte também</span><span class="sxs-lookup"><span data-stu-id="11540-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="063a3-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="063a3-114">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="11540-115">Sintaxe de linha de comando MIDL geral</span><span class="sxs-lookup"><span data-stu-id="11540-115">General MIDL Command-line Syntax</span></span>](general-midl-command-line-syntax.md)
+[<span data-ttu-id="063a3-115">Sintaxe de linha de comando MIDL geral</span><span class="sxs-lookup"><span data-stu-id="063a3-115">General MIDL Command-line Syntax</span></span>](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[<span data-ttu-id="11540-116">**verificação de/Syntax \_**</span><span class="sxs-lookup"><span data-stu-id="11540-116">**/syntax\_check**</span></span>](-syntax-check.md)
+[<span data-ttu-id="063a3-116">**verificação de/Syntax \_**</span><span class="sxs-lookup"><span data-stu-id="063a3-116">**/syntax\_check**</span></span>](-syntax-check.md)
 </dt> </dl>
 
  

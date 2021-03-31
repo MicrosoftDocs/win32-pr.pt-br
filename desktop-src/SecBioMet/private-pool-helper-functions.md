@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636875"
 ---
-# <a name="private-pool-helper-functions"></a><span data-ttu-id="ddddd-103">Funções auxiliares de pool privado</span><span class="sxs-lookup"><span data-stu-id="ddddd-103">Private Pool Helper Functions</span></span>
+# <a name="private-pool-helper-functions"></a><span data-ttu-id="c982e-103">Funções auxiliares de pool privado</span><span class="sxs-lookup"><span data-stu-id="c982e-103">Private Pool Helper Functions</span></span>
 
-<span data-ttu-id="ddddd-104">As seções a seguir contêm o código necessário para dar suporte aos projetos de instalação, identificação e console de registro.</span><span class="sxs-lookup"><span data-stu-id="ddddd-104">The following sections contains code necessary to support the setup, identification, and enrollment console projects.</span></span>
+<span data-ttu-id="c982e-104">As seções a seguir contêm o código necessário para dar suporte aos projetos de instalação, identificação e console de registro.</span><span class="sxs-lookup"><span data-stu-id="c982e-104">The following sections contains code necessary to support the setup, identification, and enrollment console projects.</span></span>
 
--   [<span data-ttu-id="ddddd-105">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="ddddd-105">Targetver.h</span></span>](#targetverh)
--   [<span data-ttu-id="ddddd-106">Stdafx. h</span><span class="sxs-lookup"><span data-stu-id="ddddd-106">Stdafx.h</span></span>](#stdafxh)
--   [<span data-ttu-id="ddddd-107">Bioauxiliar. h</span><span class="sxs-lookup"><span data-stu-id="ddddd-107">BioHelper.h</span></span>](#biohelperh)
--   [<span data-ttu-id="ddddd-108">Config. cpp</span><span class="sxs-lookup"><span data-stu-id="ddddd-108">Config.cpp</span></span>](#configcpp)
--   [<span data-ttu-id="ddddd-109">Display. cpp</span><span class="sxs-lookup"><span data-stu-id="ddddd-109">Display.cpp</span></span>](#displaycpp)
+-   [<span data-ttu-id="c982e-105">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="c982e-105">Targetver.h</span></span>](#targetverh)
+-   [<span data-ttu-id="c982e-106">Stdafx. h</span><span class="sxs-lookup"><span data-stu-id="c982e-106">Stdafx.h</span></span>](#stdafxh)
+-   [<span data-ttu-id="c982e-107">Bioauxiliar. h</span><span class="sxs-lookup"><span data-stu-id="c982e-107">BioHelper.h</span></span>](#biohelperh)
+-   [<span data-ttu-id="c982e-108">Config. cpp</span><span class="sxs-lookup"><span data-stu-id="c982e-108">Config.cpp</span></span>](#configcpp)
+-   [<span data-ttu-id="c982e-109">Display. cpp</span><span class="sxs-lookup"><span data-stu-id="c982e-109">Display.cpp</span></span>](#displaycpp)
 
-## <a name="targetverh"></a><span data-ttu-id="ddddd-110">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="ddddd-110">Targetver.h</span></span>
+## <a name="targetverh"></a><span data-ttu-id="c982e-110">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="c982e-110">Targetver.h</span></span>
 
-<span data-ttu-id="ddddd-111">Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="ddddd-111">This sample was created for Windows 7 and later operating systems.</span></span>
+<span data-ttu-id="c982e-111">Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="c982e-111">This sample was created for Windows 7 and later operating systems.</span></span>
 
 
 ```C++
@@ -35,7 +35,7 @@ ms.locfileid: "103636875"
 
 
 
-## <a name="stdafxh"></a><span data-ttu-id="ddddd-112">Stdafx.h</span><span class="sxs-lookup"><span data-stu-id="ddddd-112">Stdafx.h</span></span>
+## <a name="stdafxh"></a><span data-ttu-id="c982e-112">Stdafx.h</span><span class="sxs-lookup"><span data-stu-id="c982e-112">Stdafx.h</span></span>
 
 
 ```C++
@@ -78,7 +78,7 @@ typedef std::string TSTRING;
 
 
 
-## <a name="biohelperh"></a><span data-ttu-id="ddddd-113">Bioauxiliar. h</span><span class="sxs-lookup"><span data-stu-id="ddddd-113">BioHelper.h</span></span>
+## <a name="biohelperh"></a><span data-ttu-id="c982e-113">Bioauxiliar. h</span><span class="sxs-lookup"><span data-stu-id="c982e-113">BioHelper.h</span></span>
 
 
 ```C++
@@ -164,9 +164,9 @@ ConvertRejectDetailToString(
 
 
 
-## <a name="configcpp"></a><span data-ttu-id="ddddd-114">Config. cpp</span><span class="sxs-lookup"><span data-stu-id="ddddd-114">Config.cpp</span></span>
+## <a name="configcpp"></a><span data-ttu-id="c982e-114">Config. cpp</span><span class="sxs-lookup"><span data-stu-id="c982e-114">Config.cpp</span></span>
 
-<span data-ttu-id="ddddd-115">O arquivo a seguir contém rotinas de gerenciamento de configuração.</span><span class="sxs-lookup"><span data-stu-id="ddddd-115">The following file contains configuration management routines.</span></span>
+<span data-ttu-id="c982e-115">O arquivo a seguir contém rotinas de gerenciamento de configuração.</span><span class="sxs-lookup"><span data-stu-id="c982e-115">The following file contains configuration management routines.</span></span>
 
 
 ```C++
@@ -1346,9 +1346,9 @@ ConvertUuidToString(
 
 
 
-## <a name="displaycpp"></a><span data-ttu-id="ddddd-116">Display. cpp</span><span class="sxs-lookup"><span data-stu-id="ddddd-116">Display.cpp</span></span>
+## <a name="displaycpp"></a><span data-ttu-id="c982e-116">Display. cpp</span><span class="sxs-lookup"><span data-stu-id="c982e-116">Display.cpp</span></span>
 
-<span data-ttu-id="ddddd-117">O arquivo a seguir contém rotinas de formatação de saída.</span><span class="sxs-lookup"><span data-stu-id="ddddd-117">The following file contains output formatting routines.</span></span>
+<span data-ttu-id="c982e-117">O arquivo a seguir contém rotinas de formatação de saída.</span><span class="sxs-lookup"><span data-stu-id="c982e-117">The following file contains output formatting routines.</span></span>
 
 
 ```C++

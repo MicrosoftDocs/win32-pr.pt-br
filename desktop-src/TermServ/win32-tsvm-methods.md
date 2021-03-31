@@ -17,32 +17,32 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635040"
 ---
-# <a name="win32_tsvm-methods"></a><span data-ttu-id="d78dc-103">\_Métodos TSVm do Win32</span><span class="sxs-lookup"><span data-stu-id="d78dc-103">Win32\_TSVm Methods</span></span>
+# <a name="win32_tsvm-methods"></a><span data-ttu-id="a484c-103">\_Métodos TSVm do Win32</span><span class="sxs-lookup"><span data-stu-id="a484c-103">Win32\_TSVm Methods</span></span>
 
-<span data-ttu-id="d78dc-104">A classe de [**\_ métodos TSVm do Win32**](win32-tsvm.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="d78dc-104">The [**Win32\_TSVm Methods**](win32-tsvm.md) class exposes the following methods.</span></span>
+<span data-ttu-id="a484c-104">A classe de [**\_ métodos TSVm do Win32**](win32-tsvm.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a484c-104">The [**Win32\_TSVm Methods**](win32-tsvm.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="d78dc-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="d78dc-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="a484c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a484c-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d78dc-106">**Método QueryOfflineInformation**</span><span class="sxs-lookup"><span data-stu-id="d78dc-106">**QueryOfflineInformation method**</span></span>](queryofflineinformation-win32-tsvm.md)
+[<span data-ttu-id="a484c-106">**Método QueryOfflineInformation**</span><span class="sxs-lookup"><span data-stu-id="a484c-106">**QueryOfflineInformation method**</span></span>](queryofflineinformation-win32-tsvm.md)
 </dt> <dd>
 
-<span data-ttu-id="d78dc-107">Recupera as propriedades do VDS (servidor de área de trabalho virtual) atual, mas somente quando o servidor estiver offline.</span><span class="sxs-lookup"><span data-stu-id="d78dc-107">Retrieves the properties of the current virtual desktop server (VDS), but only when the server is offline.</span></span>
+<span data-ttu-id="a484c-107">Recupera as propriedades do VDS (servidor de área de trabalho virtual) atual, mas somente quando o servidor estiver offline.</span><span class="sxs-lookup"><span data-stu-id="a484c-107">Retrieves the properties of the current virtual desktop server (VDS), but only when the server is offline.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="d78dc-108">**Método DumpVmInfo**</span><span class="sxs-lookup"><span data-stu-id="d78dc-108">**DumpVmInfo method**</span></span>](dumpvminfo-win32-tsvm.md)
+[<span data-ttu-id="a484c-108">**Método DumpVmInfo**</span><span class="sxs-lookup"><span data-stu-id="a484c-108">**DumpVmInfo method**</span></span>](dumpvminfo-win32-tsvm.md)
 </dt> <dd>
 
-<span data-ttu-id="d78dc-109">Esse membro é para fins de teste interno e não deve ser usado em seu código.</span><span class="sxs-lookup"><span data-stu-id="d78dc-109">This member is for internal testing purposes, and should not be used in your code.</span></span>
+<span data-ttu-id="a484c-109">Esse membro é para fins de teste interno e não deve ser usado em seu código.</span><span class="sxs-lookup"><span data-stu-id="a484c-109">This member is for internal testing purposes, and should not be used in your code.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="d78dc-110">**Método de exportação**</span><span class="sxs-lookup"><span data-stu-id="d78dc-110">**Export method**</span></span>](export-win32-tsvm.md)
+[<span data-ttu-id="a484c-110">**Método de exportação**</span><span class="sxs-lookup"><span data-stu-id="a484c-110">**Export method**</span></span>](export-win32-tsvm.md)
 </dt> <dd>
 
-<span data-ttu-id="d78dc-111">Recupera as informações de monitoramento da sessão de máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="d78dc-111">Retrieves the virtual machine session monitoring information.</span></span>
+<span data-ttu-id="a484c-111">Recupera as informações de monitoramento da sessão de máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="a484c-111">Retrieves the virtual machine session monitoring information.</span></span>
 
 </dd> </dl>
 

@@ -19,29 +19,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638436"
 ---
-# <a name="hasimage"></a><span data-ttu-id="b214d-104">HasImage</span><span class="sxs-lookup"><span data-stu-id="b214d-104">HasImage</span></span>
+# <a name="hasimage"></a><span data-ttu-id="9ab4b-104">HasImage</span><span class="sxs-lookup"><span data-stu-id="9ab4b-104">HasImage</span></span>
 
-<span data-ttu-id="b214d-105">O atributo **HasImage** é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de imagem.</span><span class="sxs-lookup"><span data-stu-id="b214d-105">The **HasImage** attribute is a file-level attribute specifying whether the file contains any image streams.</span></span>
+<span data-ttu-id="9ab4b-105">O atributo **HasImage** é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de imagem.</span><span class="sxs-lookup"><span data-stu-id="9ab4b-105">The **HasImage** attribute is a file-level attribute specifying whether the file contains any image streams.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="b214d-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="b214d-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="9ab4b-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="9ab4b-106">Global Constant</span></span>
 
-<span data-ttu-id="b214d-107">g \_ wszWMHasImage</span><span class="sxs-lookup"><span data-stu-id="b214d-107">g\_wszWMHasImage</span></span>
+<span data-ttu-id="9ab4b-107">g \_ wszWMHasImage</span><span class="sxs-lookup"><span data-stu-id="9ab4b-107">g\_wszWMHasImage</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="b214d-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="b214d-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="9ab4b-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="9ab4b-108">Data Type</span></span>
 
-<span data-ttu-id="b214d-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="b214d-109">**WMT\_TYPE\_BOOL**</span></span>
+<span data-ttu-id="9ab4b-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="9ab4b-109">**WMT\_TYPE\_BOOL**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b214d-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="b214d-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ab4b-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="9ab4b-110">Remarks</span></span>
 
-<span data-ttu-id="b214d-111">Este é um atributo codificado.</span><span class="sxs-lookup"><span data-stu-id="b214d-111">This is a coded attribute.</span></span>
+<span data-ttu-id="9ab4b-111">Este é um atributo codificado.</span><span class="sxs-lookup"><span data-stu-id="9ab4b-111">This is a coded attribute.</span></span>
 
-<span data-ttu-id="b214d-112">Este atributo não pode ser duplicado no nível do arquivo.</span><span class="sxs-lookup"><span data-stu-id="b214d-112">This attribute cannot be duplicated at the file level.</span></span> <span data-ttu-id="b214d-113">Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.</span><span class="sxs-lookup"><span data-stu-id="b214d-113">If this attribute is used for an individual stream, it will be treated as custom metadata and will not convey its normal meaning to the objects of the Windows Media Format SDK.</span></span>
+<span data-ttu-id="9ab4b-112">Este atributo não pode ser duplicado no nível do arquivo.</span><span class="sxs-lookup"><span data-stu-id="9ab4b-112">This attribute cannot be duplicated at the file level.</span></span> <span data-ttu-id="9ab4b-113">Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.</span><span class="sxs-lookup"><span data-stu-id="9ab4b-113">If this attribute is used for an individual stream, it will be treated as custom metadata and will not convey its normal meaning to the objects of the Windows Media Format SDK.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b214d-114">Consulte também</span><span class="sxs-lookup"><span data-stu-id="b214d-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ab4b-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="9ab4b-114">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b214d-115">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="b214d-115">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="9ab4b-115">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="9ab4b-115">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

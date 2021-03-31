@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636703"
 ---
-# <a name="the-output-page"></a><span data-ttu-id="a3dba-103">A página saída</span><span class="sxs-lookup"><span data-stu-id="a3dba-103">The Output Page</span></span>
+# <a name="the-output-page"></a><span data-ttu-id="1dc20-103">A página saída</span><span class="sxs-lookup"><span data-stu-id="1dc20-103">The Output Page</span></span>
 
-<span data-ttu-id="a3dba-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="a3dba-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="1dc20-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="1dc20-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
-<span data-ttu-id="a3dba-105">Esta página inclui propriedades que controlam a saída de caracteres.</span><span class="sxs-lookup"><span data-stu-id="a3dba-105">This page includes properties that control character output.</span></span> <span data-ttu-id="a3dba-106">Por exemplo, o usuário pode determinar se deseja exibir a saída na palavra balão, determinar como a saída do balão deve aparecer, reproduzir a saída falada como áudio, reproduzir efeitos sonoros de caracteres, exibir o prompt de reinicialização e ajustar a velocidade de fala.</span><span class="sxs-lookup"><span data-stu-id="a3dba-106">For example, the user can determine whether to display output in the word balloon, determine how balloon output should appear, play spoken output as audio, play character sound effects, display the restart prompt, and adjust the speaking speed.</span></span>
+<span data-ttu-id="1dc20-105">Esta página inclui propriedades que controlam a saída de caracteres.</span><span class="sxs-lookup"><span data-stu-id="1dc20-105">This page includes properties that control character output.</span></span> <span data-ttu-id="1dc20-106">Por exemplo, o usuário pode determinar se deseja exibir a saída na palavra balão, determinar como a saída do balão deve aparecer, reproduzir a saída falada como áudio, reproduzir efeitos sonoros de caracteres, exibir o prompt de reinicialização e ajustar a velocidade de fala.</span><span class="sxs-lookup"><span data-stu-id="1dc20-106">For example, the user can determine whether to display output in the word balloon, determine how balloon output should appear, play spoken output as audio, play character sound effects, display the restart prompt, and adjust the speaking speed.</span></span>
 
 ![caixa de diálogo Opções avançadas de caractere](images/f5outpp.gif)
 

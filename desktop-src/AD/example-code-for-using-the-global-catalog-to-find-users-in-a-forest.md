@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634945"
 ---
-# <a name="example-code-for-using-the-global-catalog-to-find-users-in-a-forest"></a><span data-ttu-id="97538-104">Código de exemplo para usar o catálogo global para localizar usuários em uma floresta</span><span class="sxs-lookup"><span data-stu-id="97538-104">Example Code for Using the Global Catalog to Find Users in a Forest</span></span>
+# <a name="example-code-for-using-the-global-catalog-to-find-users-in-a-forest"></a><span data-ttu-id="e4485-104">Código de exemplo para usar o catálogo global para localizar usuários em uma floresta</span><span class="sxs-lookup"><span data-stu-id="e4485-104">Example Code for Using the Global Catalog to Find Users in a Forest</span></span>
 
-<span data-ttu-id="97538-105">Este tópico inclui exemplos de código usados para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="97538-105">This topic includes code examples used to search for users in a forest.</span></span>
+<span data-ttu-id="e4485-105">Este tópico inclui exemplos de código usados para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="e4485-105">This topic includes code examples used to search for users in a forest.</span></span>
 
-<span data-ttu-id="97538-106">O exemplo de código a seguir Visual Basic mostra como usar o ADSI para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="97538-106">The following Visual Basic code example shows how to use ADSI to search for users in a forest.</span></span>
+<span data-ttu-id="e4485-106">O exemplo de código a seguir Visual Basic mostra como usar o ADSI para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="e4485-106">The following Visual Basic code example shows how to use ADSI to search for users in a forest.</span></span>
 
 
 ```VB
@@ -81,7 +81,7 @@ End Sub
 
 
 
-<span data-ttu-id="97538-107">O exemplo de código C++ a seguir usa ADSI para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="97538-107">The following C++ code example uses ADSI to search for users in a forest.</span></span>
+<span data-ttu-id="e4485-107">O exemplo de código C++ a seguir usa ADSI para pesquisar usuários em uma floresta.</span><span class="sxs-lookup"><span data-stu-id="e4485-107">The following C++ code example uses ADSI to search for users in a forest.</span></span>
 
 
 ```C++

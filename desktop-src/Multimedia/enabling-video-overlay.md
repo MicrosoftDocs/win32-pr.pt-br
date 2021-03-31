@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636937"
 ---
-# <a name="enabling-video-overlay"></a><span data-ttu-id="0e63a-104">Habilitando a sobreposição de vídeo</span><span class="sxs-lookup"><span data-stu-id="0e63a-104">Enabling Video Overlay</span></span>
+# <a name="enabling-video-overlay"></a><span data-ttu-id="8be61-104">Habilitando a sobreposição de vídeo</span><span class="sxs-lookup"><span data-stu-id="8be61-104">Enabling Video Overlay</span></span>
 
-<span data-ttu-id="0e63a-105">O exemplo a seguir usa a macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) para determinar se um driver de captura tem recursos de sobreposição; Se tiver, a macro permitirá a sobreposição.</span><span class="sxs-lookup"><span data-stu-id="0e63a-105">The following example uses the [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) macro to determine whether a capture driver has overlay capabilities; if it does, the macro enables the overlay.</span></span>
+<span data-ttu-id="8be61-105">O exemplo a seguir usa a macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) para determinar se um driver de captura tem recursos de sobreposição; Se tiver, a macro permitirá a sobreposição.</span><span class="sxs-lookup"><span data-stu-id="8be61-105">The following example uses the [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) macro to determine whether a capture driver has overlay capabilities; if it does, the macro enables the overlay.</span></span>
 
 
 ```C++
@@ -30,11 +30,11 @@ if (CapDrvCaps.fHasOverlay)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="0e63a-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0e63a-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8be61-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8be61-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="0e63a-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="0e63a-107">Using Video Capture</span></span>](using-video-capture.md)
+[<span data-ttu-id="8be61-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="8be61-107">Using Video Capture</span></span>](using-video-capture.md)
 </dt> </dl>
 
  

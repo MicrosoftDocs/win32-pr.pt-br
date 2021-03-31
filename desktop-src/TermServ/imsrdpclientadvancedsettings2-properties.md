@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638665"
 ---
-# <a name="imsrdpclientadvancedsettings2-properties"></a><span data-ttu-id="7cd63-103">Propriedades de IMsRdpClientAdvancedSettings2</span><span class="sxs-lookup"><span data-stu-id="7cd63-103">IMsRdpClientAdvancedSettings2 Properties</span></span>
+# <a name="imsrdpclientadvancedsettings2-properties"></a><span data-ttu-id="9b5d5-103">Propriedades de IMsRdpClientAdvancedSettings2</span><span class="sxs-lookup"><span data-stu-id="9b5d5-103">IMsRdpClientAdvancedSettings2 Properties</span></span>
 
-<span data-ttu-id="7cd63-104">A interface [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="7cd63-104">The [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) interface exposes the following properties.</span></span>
+<span data-ttu-id="9b5d5-104">A interface [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="9b5d5-104">The [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="7cd63-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7cd63-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9b5d5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9b5d5-105">In this section</span></span>
 
--   [<span data-ttu-id="7cd63-106">**Propriedade CanAutoReconnect**</span><span class="sxs-lookup"><span data-stu-id="7cd63-106">**CanAutoReconnect property**</span></span>](imsrdpclientadvancedsettings2-canautoreconnect.md)
--   [<span data-ttu-id="7cd63-107">**Propriedade EnableAutoReconnect**</span><span class="sxs-lookup"><span data-stu-id="7cd63-107">**EnableAutoReconnect property**</span></span>](imsrdpclientadvancedsettings2-enableautoreconnect.md)
--   [<span data-ttu-id="7cd63-108">**Propriedade MaxReconnectAttempts**</span><span class="sxs-lookup"><span data-stu-id="7cd63-108">**MaxReconnectAttempts property**</span></span>](imsrdpclientadvancedsettings2-maxreconnectattempts.md)
+-   [<span data-ttu-id="9b5d5-106">**Propriedade CanAutoReconnect**</span><span class="sxs-lookup"><span data-stu-id="9b5d5-106">**CanAutoReconnect property**</span></span>](imsrdpclientadvancedsettings2-canautoreconnect.md)
+-   [<span data-ttu-id="9b5d5-107">**Propriedade EnableAutoReconnect**</span><span class="sxs-lookup"><span data-stu-id="9b5d5-107">**EnableAutoReconnect property**</span></span>](imsrdpclientadvancedsettings2-enableautoreconnect.md)
+-   [<span data-ttu-id="9b5d5-108">**Propriedade MaxReconnectAttempts**</span><span class="sxs-lookup"><span data-stu-id="9b5d5-108">**MaxReconnectAttempts property**</span></span>](imsrdpclientadvancedsettings2-maxreconnectattempts.md)
 
  
 

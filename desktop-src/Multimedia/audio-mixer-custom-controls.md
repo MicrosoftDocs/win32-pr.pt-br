@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637000"
 ---
-# <a name="audio-mixer-custom-controls"></a><span data-ttu-id="9d4b3-109">Controles personalizados do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="9d4b3-109">Audio Mixer Custom Controls</span></span>
+# <a name="audio-mixer-custom-controls"></a><span data-ttu-id="607f9-109">Controles personalizados do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="607f9-109">Audio Mixer Custom Controls</span></span>
 
-<span data-ttu-id="9d4b3-110">Os controles personalizados são os mais genéricos dos controles do mixer.</span><span class="sxs-lookup"><span data-stu-id="9d4b3-110">Custom controls are the most generic of the mixer controls.</span></span> <span data-ttu-id="9d4b3-111">Esses controles permitem que um driver de mixer defina as características do controle e, por implicação, a representação visual do controle.</span><span class="sxs-lookup"><span data-stu-id="9d4b3-111">These controls allow a mixer driver to define the control's characteristics, and by implication, the visual representation of the control.</span></span>
+<span data-ttu-id="607f9-110">Os controles personalizados são os mais genéricos dos controles do mixer.</span><span class="sxs-lookup"><span data-stu-id="607f9-110">Custom controls are the most generic of the mixer controls.</span></span> <span data-ttu-id="607f9-111">Esses controles permitem que um driver de mixer defina as características do controle e, por implicação, a representação visual do controle.</span><span class="sxs-lookup"><span data-stu-id="607f9-111">These controls allow a mixer driver to define the control's characteristics, and by implication, the visual representation of the control.</span></span>
 
  
 

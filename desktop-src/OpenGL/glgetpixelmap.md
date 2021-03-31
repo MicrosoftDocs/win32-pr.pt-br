@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634755"
 ---
-# <a name="glgetpixelmap-functions"></a><span data-ttu-id="dbf00-103">Funções glGetPixelMap</span><span class="sxs-lookup"><span data-stu-id="dbf00-103">glGetPixelMap Functions</span></span>
+# <a name="glgetpixelmap-functions"></a><span data-ttu-id="a3c08-103">Funções glGetPixelMap</span><span class="sxs-lookup"><span data-stu-id="a3c08-103">glGetPixelMap Functions</span></span>
 
-<span data-ttu-id="dbf00-104">Essas funções retornam o mapa de pixel especificado:</span><span class="sxs-lookup"><span data-stu-id="dbf00-104">These functions return the specified pixel map:</span></span>
+<span data-ttu-id="a3c08-104">Essas funções retornam o mapa de pixel especificado:</span><span class="sxs-lookup"><span data-stu-id="a3c08-104">These functions return the specified pixel map:</span></span>
 
--   [<span data-ttu-id="dbf00-105">**glGetPixelMapfv**</span><span class="sxs-lookup"><span data-stu-id="dbf00-105">**glGetPixelMapfv**</span></span>](glgetpixelmapfv.md)
--   [<span data-ttu-id="dbf00-106">**glGetPixelMapuiv**</span><span class="sxs-lookup"><span data-stu-id="dbf00-106">**glGetPixelMapuiv**</span></span>](glgetpixelmapuiv.md)
--   [<span data-ttu-id="dbf00-107">**glGetPixelMapusv**</span><span class="sxs-lookup"><span data-stu-id="dbf00-107">**glGetPixelMapusv**</span></span>](glgetpixelmapusv.md)
+-   [<span data-ttu-id="a3c08-105">**glGetPixelMapfv**</span><span class="sxs-lookup"><span data-stu-id="a3c08-105">**glGetPixelMapfv**</span></span>](glgetpixelmapfv.md)
+-   [<span data-ttu-id="a3c08-106">**glGetPixelMapuiv**</span><span class="sxs-lookup"><span data-stu-id="a3c08-106">**glGetPixelMapuiv**</span></span>](glgetpixelmapuiv.md)
+-   [<span data-ttu-id="a3c08-107">**glGetPixelMapusv**</span><span class="sxs-lookup"><span data-stu-id="a3c08-107">**glGetPixelMapusv**</span></span>](glgetpixelmapusv.md)
 
  
 

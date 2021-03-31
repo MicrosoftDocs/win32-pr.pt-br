@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636999"
 ---
-# <a name="determining-which-interface-an-object-supports"></a><span data-ttu-id="df331-103">Determinando a qual interface um objeto dá suporte</span><span class="sxs-lookup"><span data-stu-id="df331-103">Determining Which Interface an Object Supports</span></span>
+# <a name="determining-which-interface-an-object-supports"></a><span data-ttu-id="2318c-103">Determinando a qual interface um objeto dá suporte</span><span class="sxs-lookup"><span data-stu-id="2318c-103">Determining Which Interface an Object Supports</span></span>
 
-<span data-ttu-id="df331-104">O método **QueryInterface** permite que um aplicativo consulte um objeto para determinar quais interfaces ele suporta.</span><span class="sxs-lookup"><span data-stu-id="df331-104">The **QueryInterface** method lets an application query an object to determine which interfaces it supports.</span></span> <span data-ttu-id="df331-105">O aplicativo de exemplo define o ponteiro *PPV* para a interface atual.</span><span class="sxs-lookup"><span data-stu-id="df331-105">The sample application sets the *ppv* pointer to the current interface.</span></span>
+<span data-ttu-id="2318c-104">O método **QueryInterface** permite que um aplicativo consulte um objeto para determinar quais interfaces ele suporta.</span><span class="sxs-lookup"><span data-stu-id="2318c-104">The **QueryInterface** method lets an application query an object to determine which interfaces it supports.</span></span> <span data-ttu-id="2318c-105">O aplicativo de exemplo define o ponteiro *PPV* para a interface atual.</span><span class="sxs-lookup"><span data-stu-id="2318c-105">The sample application sets the *ppv* pointer to the current interface.</span></span>
 
 
 ```C++

@@ -16,17 +16,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "103638927"
 ---
-# <a name="mschapv2userpropertiesv1-schema"></a><span data-ttu-id="a9be5-103">Esquema mschapv2userpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="a9be5-103">mschapv2userpropertiesv1 Schema</span></span>
+# <a name="mschapv2userpropertiesv1-schema"></a><span data-ttu-id="56621-103">Esquema mschapv2userpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="56621-103">mschapv2userpropertiesv1 Schema</span></span>
 
-<span data-ttu-id="a9be5-104">O esquema mschapv2userpropertiesv1 define credenciais de autenticação e opções de credenciais usando o Microsoft Challenge Handshake Authentication Protocol versão 2 (MS-CHAPv2).</span><span class="sxs-lookup"><span data-stu-id="a9be5-104">The mschapv2userpropertiesv1 schema defines authentication credentials and credential options using Microsoft Challenge Handshake Authentication Protocol version 2 (MS-CHAPv2).</span></span>
+<span data-ttu-id="56621-104">O esquema mschapv2userpropertiesv1 define credenciais de autenticação e opções de credenciais usando o Microsoft Challenge Handshake Authentication Protocol versão 2 (MS-CHAPv2).</span><span class="sxs-lookup"><span data-stu-id="56621-104">The mschapv2userpropertiesv1 schema defines authentication credentials and credential options using Microsoft Challenge Handshake Authentication Protocol version 2 (MS-CHAPv2).</span></span>
 
--   [<span data-ttu-id="a9be5-105">Elementos do esquema mschapv2userpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="a9be5-105">mschapv2userpropertiesv1 Schema Elements</span></span>](mschapv2userpropertiesv1schema-elements.md)
+-   [<span data-ttu-id="56621-105">Elementos do esquema mschapv2userpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="56621-105">mschapv2userpropertiesv1 Schema Elements</span></span>](mschapv2userpropertiesv1schema-elements.md)
 
-## <a name="related-topics"></a><span data-ttu-id="a9be5-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a9be5-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="56621-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="56621-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a9be5-107">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="a9be5-107">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="56621-107">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="56621-107">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> </dl>
 
  

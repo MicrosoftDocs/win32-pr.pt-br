@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636996"
 ---
-# <a name="tool-help-structures"></a><span data-ttu-id="c200d-103">Estruturas de ajuda da ferramenta</span><span class="sxs-lookup"><span data-stu-id="c200d-103">Tool Help Structures</span></span>
+# <a name="tool-help-structures"></a><span data-ttu-id="19ca6-103">Estruturas de ajuda da ferramenta</span><span class="sxs-lookup"><span data-stu-id="19ca6-103">Tool Help Structures</span></span>
 
-<span data-ttu-id="c200d-104">As seguintes estruturas são usadas com a biblioteca de ajuda da ferramenta:</span><span class="sxs-lookup"><span data-stu-id="c200d-104">The following structures are used with tool help library:</span></span>
+<span data-ttu-id="19ca6-104">As seguintes estruturas são usadas com a biblioteca de ajuda da ferramenta:</span><span class="sxs-lookup"><span data-stu-id="19ca6-104">The following structures are used with tool help library:</span></span>
 
 <dl>
 
-[<span data-ttu-id="c200d-105">**HEAPENTRY32**</span><span class="sxs-lookup"><span data-stu-id="c200d-105">**HEAPENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-heapentry32)  
-[<span data-ttu-id="c200d-106">**HEAPLIST32**</span><span class="sxs-lookup"><span data-stu-id="c200d-106">**HEAPLIST32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-heaplist32)  
-[<span data-ttu-id="c200d-107">**MODULEENTRY32**</span><span class="sxs-lookup"><span data-stu-id="c200d-107">**MODULEENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-moduleentry32)  
-[<span data-ttu-id="c200d-108">**PROCESSENTRY32**</span><span class="sxs-lookup"><span data-stu-id="c200d-108">**PROCESSENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-processentry32)  
-[<span data-ttu-id="c200d-109">**THREADENTRY32**</span><span class="sxs-lookup"><span data-stu-id="c200d-109">**THREADENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32)  
+[<span data-ttu-id="19ca6-105">**HEAPENTRY32**</span><span class="sxs-lookup"><span data-stu-id="19ca6-105">**HEAPENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-heapentry32)  
+[<span data-ttu-id="19ca6-106">**HEAPLIST32**</span><span class="sxs-lookup"><span data-stu-id="19ca6-106">**HEAPLIST32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-heaplist32)  
+[<span data-ttu-id="19ca6-107">**MODULEENTRY32**</span><span class="sxs-lookup"><span data-stu-id="19ca6-107">**MODULEENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-moduleentry32)  
+[<span data-ttu-id="19ca6-108">**PROCESSENTRY32**</span><span class="sxs-lookup"><span data-stu-id="19ca6-108">**PROCESSENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-processentry32)  
+[<span data-ttu-id="19ca6-109">**THREADENTRY32**</span><span class="sxs-lookup"><span data-stu-id="19ca6-109">**THREADENTRY32**</span></span>](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32)  
 </dl>
 
  

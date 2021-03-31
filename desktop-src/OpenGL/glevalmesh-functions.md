@@ -24,12 +24,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636514"
 ---
-# <a name="glevalmesh-functions"></a><span data-ttu-id="afe39-115">Funções glEvalMesh</span><span class="sxs-lookup"><span data-stu-id="afe39-115">glEvalMesh Functions</span></span>
+# <a name="glevalmesh-functions"></a><span data-ttu-id="3b265-115">Funções glEvalMesh</span><span class="sxs-lookup"><span data-stu-id="3b265-115">glEvalMesh Functions</span></span>
 
-<span data-ttu-id="afe39-116">Essas funções computam uma grade unidimensional ou bidimensional de pontos ou linhas:</span><span class="sxs-lookup"><span data-stu-id="afe39-116">These functions compute a one-dimensional or a two-dimensional grid of points or lines:</span></span>
+<span data-ttu-id="3b265-116">Essas funções computam uma grade unidimensional ou bidimensional de pontos ou linhas:</span><span class="sxs-lookup"><span data-stu-id="3b265-116">These functions compute a one-dimensional or a two-dimensional grid of points or lines:</span></span>
 
--   [<span data-ttu-id="afe39-117">**glEvalMesh1**</span><span class="sxs-lookup"><span data-stu-id="afe39-117">**glEvalMesh1**</span></span>](glevalmesh1.md)
--   [<span data-ttu-id="afe39-118">**glEvalMesh2**</span><span class="sxs-lookup"><span data-stu-id="afe39-118">**glEvalMesh2**</span></span>](glevalmesh2.md)
+-   [<span data-ttu-id="3b265-117">**glEvalMesh1**</span><span class="sxs-lookup"><span data-stu-id="3b265-117">**glEvalMesh1**</span></span>](glevalmesh1.md)
+-   [<span data-ttu-id="3b265-118">**glEvalMesh2**</span><span class="sxs-lookup"><span data-stu-id="3b265-118">**glEvalMesh2**</span></span>](glevalmesh2.md)
 
  
 

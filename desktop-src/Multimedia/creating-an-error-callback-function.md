@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635888"
 ---
-# <a name="creating-an-error-callback-function"></a><span data-ttu-id="4b052-104">Criando uma função de retorno de chamada de erro</span><span class="sxs-lookup"><span data-stu-id="4b052-104">Creating an Error Callback Function</span></span>
+# <a name="creating-an-error-callback-function"></a><span data-ttu-id="32bce-104">Criando uma função de retorno de chamada de erro</span><span class="sxs-lookup"><span data-stu-id="32bce-104">Creating an Error Callback Function</span></span>
 
-<span data-ttu-id="4b052-105">O exemplo a seguir é uma função de retorno de chamada de erro simples.</span><span class="sxs-lookup"><span data-stu-id="4b052-105">The following example is a simple error callback function.</span></span> <span data-ttu-id="4b052-106">Registre esse retorno de chamada usando a macro [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) .</span><span class="sxs-lookup"><span data-stu-id="4b052-106">Register this callback by using the [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) macro.</span></span>
+<span data-ttu-id="32bce-105">O exemplo a seguir é uma função de retorno de chamada de erro simples.</span><span class="sxs-lookup"><span data-stu-id="32bce-105">The following example is a simple error callback function.</span></span> <span data-ttu-id="32bce-106">Registre esse retorno de chamada usando a macro [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) .</span><span class="sxs-lookup"><span data-stu-id="32bce-106">Register this callback by using the [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) macro.</span></span>
 
 
 ```
@@ -48,11 +48,11 @@ LRESULT PASCAL ErrorCallbackProc(HWND hWnd, int nErrID,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="4b052-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4b052-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="32bce-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="32bce-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4b052-108">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="4b052-108">Using Video Capture</span></span>](using-video-capture.md)
+[<span data-ttu-id="32bce-108">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="32bce-108">Using Video Capture</span></span>](using-video-capture.md)
 </dt> </dl>
 
  

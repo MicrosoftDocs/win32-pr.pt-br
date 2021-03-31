@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636221"
 ---
-# <a name="generic-implementation-and-hardware-implementations"></a><span data-ttu-id="7219e-104">Implementação genérica e implementações de hardware</span><span class="sxs-lookup"><span data-stu-id="7219e-104">Generic Implementation and Hardware Implementations</span></span>
+# <a name="generic-implementation-and-hardware-implementations"></a><span data-ttu-id="6107a-104">Implementação genérica e implementações de hardware</span><span class="sxs-lookup"><span data-stu-id="6107a-104">Generic Implementation and Hardware Implementations</span></span>
 
-<span data-ttu-id="7219e-105">Esta visão geral discute a implementação genérica atual do OpenGL no Windows.</span><span class="sxs-lookup"><span data-stu-id="7219e-105">This overview discusses the current generic implementation of OpenGL in Windows.</span></span> <span data-ttu-id="7219e-106">Os fabricantes de hardware podem aprimorar partes do OpenGL em seus drivers e podem dar suporte a alguns recursos que não têm suporte da implementação genérica.</span><span class="sxs-lookup"><span data-stu-id="7219e-106">Hardware manufacturers may enhance parts of OpenGL in their drivers and may support some features not supported by the generic implementation.</span></span>
+<span data-ttu-id="6107a-105">Esta visão geral discute a implementação genérica atual do OpenGL no Windows.</span><span class="sxs-lookup"><span data-stu-id="6107a-105">This overview discusses the current generic implementation of OpenGL in Windows.</span></span> <span data-ttu-id="6107a-106">Os fabricantes de hardware podem aprimorar partes do OpenGL em seus drivers e podem dar suporte a alguns recursos que não têm suporte da implementação genérica.</span><span class="sxs-lookup"><span data-stu-id="6107a-106">Hardware manufacturers may enhance parts of OpenGL in their drivers and may support some features not supported by the generic implementation.</span></span>
 
--   [<span data-ttu-id="7219e-107">Limitações</span><span class="sxs-lookup"><span data-stu-id="7219e-107">Limitations</span></span>](limitations.md)
+-   [<span data-ttu-id="6107a-107">Limitações</span><span class="sxs-lookup"><span data-stu-id="6107a-107">Limitations</span></span>](limitations.md)
 
  
 

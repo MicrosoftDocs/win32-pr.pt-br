@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637249"
 ---
-# <a name="iwtslistener-methods"></a><span data-ttu-id="9afa3-103">Métodos IWTSListener</span><span class="sxs-lookup"><span data-stu-id="9afa3-103">IWTSListener Methods</span></span>
+# <a name="iwtslistener-methods"></a><span data-ttu-id="50b3e-103">Métodos IWTSListener</span><span class="sxs-lookup"><span data-stu-id="50b3e-103">IWTSListener Methods</span></span>
 
-<span data-ttu-id="9afa3-104">A interface [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="9afa3-104">The [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener) interface exposes the following methods.</span></span>
+<span data-ttu-id="50b3e-104">A interface [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="50b3e-104">The [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="9afa3-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9afa3-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="50b3e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="50b3e-105">In this section</span></span>
 
--   [<span data-ttu-id="9afa3-106">**Método GetConfiguration**</span><span class="sxs-lookup"><span data-stu-id="9afa3-106">**GetConfiguration method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtslistener-getconfiguration)
+-   [<span data-ttu-id="50b3e-106">**Método GetConfiguration**</span><span class="sxs-lookup"><span data-stu-id="50b3e-106">**GetConfiguration method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtslistener-getconfiguration)
 
  
 

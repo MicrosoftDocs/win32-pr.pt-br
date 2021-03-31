@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635929"
 ---
-# <a name="using-the-cell-directory-service-cds"></a><span data-ttu-id="9b097-104">Usando o CDS (serviço de diretório de células)</span><span class="sxs-lookup"><span data-stu-id="9b097-104">Using the Cell Directory Service (CDS)</span></span>
+# <a name="using-the-cell-directory-service-cds"></a><span data-ttu-id="67478-104">Usando o CDS (serviço de diretório de células)</span><span class="sxs-lookup"><span data-stu-id="67478-104">Using the Cell Directory Service (CDS)</span></span>
 
-<span data-ttu-id="9b097-105">Se você tiver CDS, poderá usá-lo em vez do Microsoft Locator.</span><span class="sxs-lookup"><span data-stu-id="9b097-105">If you have CDS, you can use it instead of Microsoft Locator.</span></span> <span data-ttu-id="9b097-106">Altere as entradas do registro, conforme mostrado:</span><span class="sxs-lookup"><span data-stu-id="9b097-106">Change the registry entries as shown:</span></span>
+<span data-ttu-id="67478-105">Se você tiver CDS, poderá usá-lo em vez do Microsoft Locator.</span><span class="sxs-lookup"><span data-stu-id="67478-105">If you have CDS, you can use it instead of Microsoft Locator.</span></span> <span data-ttu-id="67478-106">Altere as entradas do registro, conforme mostrado:</span><span class="sxs-lookup"><span data-stu-id="67478-106">Change the registry entries as shown:</span></span>
 
 ``` syntax
 HKEY_LOCAL_MACHINE
@@ -33,7 +33,7 @@ HKEY_LOCAL_MACHINE
                     Endpoint
 ```
 
-<span data-ttu-id="9b097-107">A alteração dessas entradas apontará para um computador de gateway que esteja executando o NSID.</span><span class="sxs-lookup"><span data-stu-id="9b097-107">Changing these entries will point to a gateway computer that is running the NSID.</span></span> <span data-ttu-id="9b097-108">Isso será usado como o localizador mestre.</span><span class="sxs-lookup"><span data-stu-id="9b097-108">This will be used as the master locator.</span></span> <span data-ttu-id="9b097-109">No caso de uma falha, não haverá nenhuma pesquisa por uma substituição.</span><span class="sxs-lookup"><span data-stu-id="9b097-109">In the event of a crash, there will be no search for a replacement.</span></span>
+<span data-ttu-id="67478-107">A alteração dessas entradas apontará para um computador de gateway que esteja executando o NSID.</span><span class="sxs-lookup"><span data-stu-id="67478-107">Changing these entries will point to a gateway computer that is running the NSID.</span></span> <span data-ttu-id="67478-108">Isso será usado como o localizador mestre.</span><span class="sxs-lookup"><span data-stu-id="67478-108">This will be used as the master locator.</span></span> <span data-ttu-id="67478-109">No caso de uma falha, não haverá nenhuma pesquisa por uma substituição.</span><span class="sxs-lookup"><span data-stu-id="67478-109">In the event of a crash, there will be no search for a replacement.</span></span>
 
  
 

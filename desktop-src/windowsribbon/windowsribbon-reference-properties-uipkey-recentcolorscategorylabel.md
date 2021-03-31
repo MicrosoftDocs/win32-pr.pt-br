@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636412"
 ---
-# <a name="ui_pkey_recentcolorscategorylabel"></a><span data-ttu-id="60873-103">\_RecentColorsCategoryLabel PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="60873-103">UI\_PKEY\_RecentColorsCategoryLabel</span></span>
+# <a name="ui_pkey_recentcolorscategorylabel"></a><span data-ttu-id="d4319-103">\_RecentColorsCategoryLabel PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="d4319-103">UI\_PKEY\_RecentColorsCategoryLabel</span></span>
 
-<span data-ttu-id="60873-104">Identifica a \_ Propriedade PKEY RecentColorsCategoryLabel da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="60873-104">Identifies the UI\_PKEY\_RecentColorsCategoryLabel property.</span></span>
+<span data-ttu-id="d4319-104">Identifica a \_ Propriedade PKEY RecentColorsCategoryLabel da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="d4319-104">Identifies the UI\_PKEY\_RecentColorsCategoryLabel property.</span></span>
 
 ```
 propertyDescription
@@ -25,21 +25,21 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a><span data-ttu-id="60873-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="60873-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d4319-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="d4319-105">Remarks</span></span>
 
-<span data-ttu-id="60873-106">A interface do usuário \_ PKEY \_ RecentColorsCategoryLabel é usada por um aplicativo para consultar o valor do rótulo associado à categoria **cores recentes** de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="60873-106">UI\_PKEY\_RecentColorsCategoryLabel is used by an application to query the value of the label associated with the **Recent Colors** category of a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
+<span data-ttu-id="d4319-106">A interface do usuário \_ PKEY \_ RecentColorsCategoryLabel é usada por um aplicativo para consultar o valor do rótulo associado à categoria **cores recentes** de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="d4319-106">UI\_PKEY\_RecentColorsCategoryLabel is used by an application to query the value of the label associated with the **Recent Colors** category of a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
 
-<span data-ttu-id="60873-107">A interface do usuário \_ PKEY \_ RecentColorsCategoryLabel é válida somente para um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que `ThemeColors` é especificado como o valor do atributo **colortemplate** (esse é o único modelo que contém categorias rotuladas).</span><span class="sxs-lookup"><span data-stu-id="60873-107">UI\_PKEY\_RecentColorsCategoryLabel is valid only for a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) where `ThemeColors` is specified as the value of the **ColorTemplate** attribute (this is the only template that contains labeled categories).</span></span>
+<span data-ttu-id="d4319-107">A interface do usuário \_ PKEY \_ RecentColorsCategoryLabel é válida somente para um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que `ThemeColors` é especificado como o valor do atributo **colortemplate** (esse é o único modelo que contém categorias rotuladas).</span><span class="sxs-lookup"><span data-stu-id="d4319-107">UI\_PKEY\_RecentColorsCategoryLabel is valid only for a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) where `ThemeColors` is specified as the value of the **ColorTemplate** attribute (this is the only template that contains labeled categories).</span></span>
 
-<span data-ttu-id="60873-108">A captura de tela a seguir mostra um `ThemeColors`  [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="60873-108">The following screen shot shows a `ThemeColors` [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
+<span data-ttu-id="d4319-108">A captura de tela a seguir mostra um `ThemeColors`  [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="d4319-108">The following screen shot shows a `ThemeColors` [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
 
 ![captura de tela do elemento dropdowncolorpicker com o atributo colortemplate definido como themecolors.](images/markup/colortemplate.themedcolors.recentcolors.png)
 
-## <a name="related-topics"></a><span data-ttu-id="60873-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="60873-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d4319-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d4319-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="60873-111">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="60873-111">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
+[<span data-ttu-id="d4319-111">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="d4319-111">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  

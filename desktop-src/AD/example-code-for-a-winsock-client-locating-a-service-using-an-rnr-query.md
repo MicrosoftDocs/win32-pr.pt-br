@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634964"
 ---
-# <a name="example-code-for-locating-a-service-using-an-rnr-query"></a><span data-ttu-id="c9a09-106">Código de exemplo para localizar um serviço usando uma consulta RnR</span><span class="sxs-lookup"><span data-stu-id="c9a09-106">Example Code for Locating a Service Using an RnR Query</span></span>
+# <a name="example-code-for-locating-a-service-using-an-rnr-query"></a><span data-ttu-id="06078-106">Código de exemplo para localizar um serviço usando uma consulta RnR</span><span class="sxs-lookup"><span data-stu-id="06078-106">Example Code for Locating a Service Using an RnR Query</span></span>
 
-<span data-ttu-id="c9a09-107">O exemplo de código a seguir localiza o serviço Winsock de exemplo e se conecta a ele.</span><span class="sxs-lookup"><span data-stu-id="c9a09-107">The following code example locates the example Winsock service and connects to it.</span></span>
+<span data-ttu-id="06078-107">O exemplo de código a seguir localiza o serviço Winsock de exemplo e se conecta a ele.</span><span class="sxs-lookup"><span data-stu-id="06078-107">The following code example locates the example Winsock service and connects to it.</span></span>
 
 
 ```C++

@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636563"
 ---
-# <a name="example-serviceinfo-document-for-a-type-1-online-store"></a><span data-ttu-id="5e634-114">Documento de informações de exemplo para uma loja online tipo 1</span><span class="sxs-lookup"><span data-stu-id="5e634-114">Example ServiceInfo Document for a Type 1 Online Store</span></span>
+# <a name="example-serviceinfo-document-for-a-type-1-online-store"></a><span data-ttu-id="c3dd6-114">Documento de informações de exemplo para uma loja online tipo 1</span><span class="sxs-lookup"><span data-stu-id="c3dd6-114">Example ServiceInfo Document for a Type 1 Online Store</span></span>
 
-<span data-ttu-id="5e634-115">O exemplo de código a seguir mostra um documento de ServiceInfo.xml completo.</span><span class="sxs-lookup"><span data-stu-id="5e634-115">The following code example shows a complete ServiceInfo.xml document.</span></span> <span data-ttu-id="5e634-116">Você pode usar esse XML como um ponto de partida para seu próprio documento do serviceInfo.</span><span class="sxs-lookup"><span data-stu-id="5e634-116">You can use this XML as a starting point for your own ServiceInfo document.</span></span>
+<span data-ttu-id="c3dd6-115">O exemplo de código a seguir mostra um documento de ServiceInfo.xml completo.</span><span class="sxs-lookup"><span data-stu-id="c3dd6-115">The following code example shows a complete ServiceInfo.xml document.</span></span> <span data-ttu-id="c3dd6-116">Você pode usar esse XML como um ponto de partida para seu próprio documento do serviceInfo.</span><span class="sxs-lookup"><span data-stu-id="c3dd6-116">You can use this XML as a starting point for your own ServiceInfo document.</span></span>
 
 
 ```C++
@@ -87,17 +87,17 @@ ms.locfileid: "103636563"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="5e634-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5e634-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c3dd6-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c3dd6-117">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5e634-118">**Guia de programação para lojas online do tipo 1**</span><span class="sxs-lookup"><span data-stu-id="5e634-118">**Programming Guide for Type 1 Online Stores**</span></span>](programming-guide-for-type-1-online-stores.md)
+[<span data-ttu-id="c3dd6-118">**Guia de programação para lojas online do tipo 1**</span><span class="sxs-lookup"><span data-stu-id="c3dd6-118">**Programming Guide for Type 1 Online Stores**</span></span>](programming-guide-for-type-1-online-stores.md)
 </dt> <dt>
 
-[<span data-ttu-id="5e634-119">**Documento do serviceInfo para uma loja online tipo 1**</span><span class="sxs-lookup"><span data-stu-id="5e634-119">**ServiceInfo Document for a Type 1 Online Store**</span></span>](serviceinfo-document-for-a-type-1-online-store.md)
+[<span data-ttu-id="c3dd6-119">**Documento do serviceInfo para uma loja online tipo 1**</span><span class="sxs-lookup"><span data-stu-id="c3dd6-119">**ServiceInfo Document for a Type 1 Online Store**</span></span>](serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[<span data-ttu-id="5e634-120">**Documento do serviceInfo**</span><span class="sxs-lookup"><span data-stu-id="5e634-120">**ServiceInfo Document**</span></span>](serviceinfo-document.md)
+[<span data-ttu-id="c3dd6-120">**Documento do serviceInfo**</span><span class="sxs-lookup"><span data-stu-id="c3dd6-120">**ServiceInfo Document**</span></span>](serviceinfo-document.md)
 </dt> </dl>
 
  

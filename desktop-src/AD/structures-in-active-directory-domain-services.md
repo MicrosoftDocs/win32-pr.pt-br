@@ -16,17 +16,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634912"
 ---
-# <a name="structures-in-active-directory-domain-services"></a><span data-ttu-id="096a9-106">Estruturas no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="096a9-106">Structures in Active Directory Domain Services</span></span>
+# <a name="structures-in-active-directory-domain-services"></a><span data-ttu-id="a3fb1-106">Estruturas no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="a3fb1-106">Structures in Active Directory Domain Services</span></span>
 
-<span data-ttu-id="096a9-107">A seguir estão as categorias de estruturas no Active Directory Domain Services:</span><span class="sxs-lookup"><span data-stu-id="096a9-107">The following are categories of structures in Active Directory Domain Services:</span></span>
+<span data-ttu-id="a3fb1-107">A seguir estão as categorias de estruturas no Active Directory Domain Services:</span><span class="sxs-lookup"><span data-stu-id="a3fb1-107">The following are categories of structures in Active Directory Domain Services:</span></span>
 
--   [<span data-ttu-id="096a9-108">Estruturas de administrador no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="096a9-108">Admin Structures in Active Directory Domain Services</span></span>](admin-structures-in-active-directory-domain-services.md)
--   [<span data-ttu-id="096a9-109">Exibir estruturas no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="096a9-109">Display Structures in Active Directory Domain Services</span></span>](display-structures-in-active-directory-domain-services.md)
--   [<span data-ttu-id="096a9-110">Estruturas de página de propriedades do MMC no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="096a9-110">MMC Property Page Structures in Active Directory Domain Services</span></span>](mmc-property-page-structures-in-active-directory-domain-services.md)
--   [<span data-ttu-id="096a9-111">Estruturas de gerenciamento de replicação e controlador de domínio</span><span class="sxs-lookup"><span data-stu-id="096a9-111">Domain Controller and Replication Management Structures</span></span>](domain-controller-and-replication-management-structures.md)
--   [<span data-ttu-id="096a9-112">Estruturas de serviço de diretório</span><span class="sxs-lookup"><span data-stu-id="096a9-112">Directory Service Structures</span></span>](directory-service-structures.md)
--   [<span data-ttu-id="096a9-113">Estruturas de backup de diretório</span><span class="sxs-lookup"><span data-stu-id="096a9-113">Directory Backup Structures</span></span>](directory-backup-structures.md)
--   [<span data-ttu-id="096a9-114">Estruturas da caixa de diálogo do seletor de objetos</span><span class="sxs-lookup"><span data-stu-id="096a9-114">Object Picker Dialog Box Structures</span></span>](object-picker-dialog-box-structures.md)
+-   [<span data-ttu-id="a3fb1-108">Estruturas de administrador no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="a3fb1-108">Admin Structures in Active Directory Domain Services</span></span>](admin-structures-in-active-directory-domain-services.md)
+-   [<span data-ttu-id="a3fb1-109">Exibir estruturas no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="a3fb1-109">Display Structures in Active Directory Domain Services</span></span>](display-structures-in-active-directory-domain-services.md)
+-   [<span data-ttu-id="a3fb1-110">Estruturas de página de propriedades do MMC no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="a3fb1-110">MMC Property Page Structures in Active Directory Domain Services</span></span>](mmc-property-page-structures-in-active-directory-domain-services.md)
+-   [<span data-ttu-id="a3fb1-111">Estruturas de gerenciamento de replicação e controlador de domínio</span><span class="sxs-lookup"><span data-stu-id="a3fb1-111">Domain Controller and Replication Management Structures</span></span>](domain-controller-and-replication-management-structures.md)
+-   [<span data-ttu-id="a3fb1-112">Estruturas de serviço de diretório</span><span class="sxs-lookup"><span data-stu-id="a3fb1-112">Directory Service Structures</span></span>](directory-service-structures.md)
+-   [<span data-ttu-id="a3fb1-113">Estruturas de backup de diretório</span><span class="sxs-lookup"><span data-stu-id="a3fb1-113">Directory Backup Structures</span></span>](directory-backup-structures.md)
+-   [<span data-ttu-id="a3fb1-114">Estruturas da caixa de diálogo do seletor de objetos</span><span class="sxs-lookup"><span data-stu-id="a3fb1-114">Object Picker Dialog Box Structures</span></span>](object-picker-dialog-box-structures.md)
 
  
 

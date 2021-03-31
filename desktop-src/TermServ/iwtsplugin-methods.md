@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637248"
 ---
-# <a name="iwtsplugin-methods"></a><span data-ttu-id="16a49-103">Métodos IWTSPlugin</span><span class="sxs-lookup"><span data-stu-id="16a49-103">IWTSPlugin Methods</span></span>
+# <a name="iwtsplugin-methods"></a><span data-ttu-id="6553d-103">Métodos IWTSPlugin</span><span class="sxs-lookup"><span data-stu-id="6553d-103">IWTSPlugin Methods</span></span>
 
-<span data-ttu-id="16a49-104">A interface [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="16a49-104">The [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) interface exposes the following methods.</span></span>
+<span data-ttu-id="6553d-104">A interface [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6553d-104">The [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="16a49-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="16a49-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6553d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6553d-105">In this section</span></span>
 
--   [<span data-ttu-id="16a49-106">**Método conectado**</span><span class="sxs-lookup"><span data-stu-id="16a49-106">**Connected method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-connected)
--   [<span data-ttu-id="16a49-107">**Método desconectado**</span><span class="sxs-lookup"><span data-stu-id="16a49-107">**Disconnected method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-disconnected)
--   [<span data-ttu-id="16a49-108">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="16a49-108">**Initialize method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-initialize)
--   [<span data-ttu-id="16a49-109">**Método finalizado**</span><span class="sxs-lookup"><span data-stu-id="16a49-109">**Terminated method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-terminated)
+-   [<span data-ttu-id="6553d-106">**Método conectado**</span><span class="sxs-lookup"><span data-stu-id="6553d-106">**Connected method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-connected)
+-   [<span data-ttu-id="6553d-107">**Método desconectado**</span><span class="sxs-lookup"><span data-stu-id="6553d-107">**Disconnected method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-disconnected)
+-   [<span data-ttu-id="6553d-108">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="6553d-108">**Initialize method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-initialize)
+-   [<span data-ttu-id="6553d-109">**Método finalizado**</span><span class="sxs-lookup"><span data-stu-id="6553d-109">**Terminated method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsplugin-terminated)
 
  
 

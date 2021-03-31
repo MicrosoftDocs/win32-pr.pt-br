@@ -16,11 +16,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636344"
 ---
-# <a name="logfileitem-properties"></a><span data-ttu-id="1481a-103">Propriedades de LogFileItem</span><span class="sxs-lookup"><span data-stu-id="1481a-103">LogFileItem Properties</span></span>
+# <a name="logfileitem-properties"></a><span data-ttu-id="d73dd-103">Propriedades de LogFileItem</span><span class="sxs-lookup"><span data-stu-id="d73dd-103">LogFileItem Properties</span></span>
 
-<span data-ttu-id="1481a-104">A classe [**LogFileItem**](logfileitem.md) tem a seguinte propriedade:</span><span class="sxs-lookup"><span data-stu-id="1481a-104">The [**LogFileItem**](logfileitem.md) class has the following property:</span></span>
+<span data-ttu-id="d73dd-104">A classe [**LogFileItem**](logfileitem.md) tem a seguinte propriedade:</span><span class="sxs-lookup"><span data-stu-id="d73dd-104">The [**LogFileItem**](logfileitem.md) class has the following property:</span></span>
 
--   [<span data-ttu-id="1481a-105">**Caminho**</span><span class="sxs-lookup"><span data-stu-id="1481a-105">**Path**</span></span>](logfileitem-path.md)
+-   [<span data-ttu-id="d73dd-105">**Caminho**</span><span class="sxs-lookup"><span data-stu-id="d73dd-105">**Path**</span></span>](logfileitem-path.md)
 
  
 

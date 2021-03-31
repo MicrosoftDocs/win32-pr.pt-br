@@ -14,16 +14,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005062"
 ---
-# <a name="single-instance-store-and-sis-backup"></a><span data-ttu-id="c629a-106">Backup do Single-Instance Store e do SIS</span><span class="sxs-lookup"><span data-stu-id="c629a-106">Single-Instance Store and SIS Backup</span></span>
+# <a name="single-instance-store-and-sis-backup"></a><span data-ttu-id="10fea-106">Backup do Single-Instance Store e do SIS</span><span class="sxs-lookup"><span data-stu-id="10fea-106">Single-Instance Store and SIS Backup</span></span>
 
-<span data-ttu-id="c629a-107">O *repositório de instância única*, ou SIS, é uma arquitetura projetada para manter arquivos duplicados com um mínimo de disco, cache e sobrecarga de mídia de backup.</span><span class="sxs-lookup"><span data-stu-id="c629a-107">*Single-instance store*, or SIS, is an architecture designed to maintain duplicate files with a minimum of disk, cache, and backup media overhead.</span></span> <span data-ttu-id="c629a-108">O backup do *repositório de instância única* ou o backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.</span><span class="sxs-lookup"><span data-stu-id="c629a-108">*Single-instance store backup*, or SIS backup, is an API that backup applications call to access the SIS architecture.</span></span>
+<span data-ttu-id="10fea-107">O *repositório de instância única*, ou SIS, é uma arquitetura projetada para manter arquivos duplicados com um mínimo de disco, cache e sobrecarga de mídia de backup.</span><span class="sxs-lookup"><span data-stu-id="10fea-107">*Single-instance store*, or SIS, is an architecture designed to maintain duplicate files with a minimum of disk, cache, and backup media overhead.</span></span> <span data-ttu-id="10fea-108">O backup do *repositório de instância única* ou o backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.</span><span class="sxs-lookup"><span data-stu-id="10fea-108">*Single-instance store backup*, or SIS backup, is an API that backup applications call to access the SIS architecture.</span></span>
 
-<span data-ttu-id="c629a-109">Para mais informações, consulte os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="c629a-109">For more information, see the following topics:</span></span>
+<span data-ttu-id="10fea-109">Para mais informações, consulte os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="10fea-109">For more information, see the following topics:</span></span>
 
--   [<span data-ttu-id="c629a-110">Links do SIS e pontos de nova análise</span><span class="sxs-lookup"><span data-stu-id="c629a-110">SIS Links and Reparse Points</span></span>](sis-links-and-reparse-points.md)
--   [<span data-ttu-id="c629a-111">Os arquivos de armazenamento e Common-Store comuns do SIS</span><span class="sxs-lookup"><span data-stu-id="c629a-111">The SIS Common Store and Common-Store Files</span></span>](the-sis-common-store-and-common-store-files.md)
--   [<span data-ttu-id="c629a-112">Vantagens do uso do SIS</span><span class="sxs-lookup"><span data-stu-id="c629a-112">Advantages of Using SIS</span></span>](advantages-of-using-sis.md)
--   [<span data-ttu-id="c629a-113">Referência de backup</span><span class="sxs-lookup"><span data-stu-id="c629a-113">Backup Reference</span></span>](backup-reference.md)
+-   [<span data-ttu-id="10fea-110">Links do SIS e pontos de nova análise</span><span class="sxs-lookup"><span data-stu-id="10fea-110">SIS Links and Reparse Points</span></span>](sis-links-and-reparse-points.md)
+-   [<span data-ttu-id="10fea-111">Os arquivos de armazenamento e Common-Store comuns do SIS</span><span class="sxs-lookup"><span data-stu-id="10fea-111">The SIS Common Store and Common-Store Files</span></span>](the-sis-common-store-and-common-store-files.md)
+-   [<span data-ttu-id="10fea-112">Vantagens do uso do SIS</span><span class="sxs-lookup"><span data-stu-id="10fea-112">Advantages of Using SIS</span></span>](advantages-of-using-sis.md)
+-   [<span data-ttu-id="10fea-113">Referência de backup</span><span class="sxs-lookup"><span data-stu-id="10fea-113">Backup Reference</span></span>](backup-reference.md)
 
  
 

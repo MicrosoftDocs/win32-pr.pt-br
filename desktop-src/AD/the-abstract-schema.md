@@ -1,0 +1,46 @@
+---
+title: O esquema abstrato
+description: O contêiner de esquema contém todos os objetos classSchema e attributeSchema que definem as classes e os atributos que podem existir em uma floresta de diretório.
+ms.assetid: 688fccf7-37ce-4eea-b4ff-b0b3223a964e
+ms.tgt_platform: multiple
+keywords:
+- O AD do esquema abstrato
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a9123c72cc4cc38eafa77e0ad0c6384940667e54
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104004892"
+---
+# <a name="the-abstract-schema"></a><span data-ttu-id="3a5fd-104">O esquema abstrato</span><span class="sxs-lookup"><span data-stu-id="3a5fd-104">The Abstract Schema</span></span>
+
+<span data-ttu-id="3a5fd-105">O contêiner de esquema contém todos os objetos **classSchema** e **attributeSchema** que definem as classes e os atributos que podem existir em uma floresta de diretório.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-105">The schema container contains all of the **classSchema** and **attributeSchema** objects that define the classes and attributes that can exist in a directory forest.</span></span> <span data-ttu-id="3a5fd-106">O contêiner de esquema também contém um objeto chamado agregação de **subesquema** de classe.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-106">The schema container also contains an object named Aggregate of class **subSchema**.</span></span> <span data-ttu-id="3a5fd-107">Esse objeto de **subesquema** é conhecido como esquema abstrato.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-107">This **subSchema** object is known as the abstract schema.</span></span>
+
+<span data-ttu-id="3a5fd-108">O esquema abstrato contém um subconjunto dos dados armazenados nos objetos **classSchema** e **attributeSchema** .</span><span class="sxs-lookup"><span data-stu-id="3a5fd-108">The abstract schema contains a subset of the data stored in the **classSchema** and **attributeSchema** objects.</span></span> <span data-ttu-id="3a5fd-109">Seu objetivo é fornecer um mecanismo simples e eficiente para recuperar os elementos usados com frequência das definições de classe e de atributo.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-109">Its purpose is to provide a simple and efficient mechanism for retrieving the frequently used elements of the class and attribute definitions.</span></span> <span data-ttu-id="3a5fd-110">Por exemplo, para recuperar os atributos opcionais e obrigatórios de uma classe de objeto, associe-se a vários objetos para coletar os valores **mayContain**, **mustContain**, **systemMayContain** e **systemMustContain** da classe e de todas as suas superclasses, bem como de quaisquer classes auxiliares da classe e suas superclasses.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-110">For example, to retrieve the optional and mandatory attributes of an object class, bind to multiple objects to collect the **mayContain**, **mustContain**, **systemMayContain**, and **systemMustContain** values from the class and all its superclasses, as well as from any auxiliary classes of the class and its superclasses.</span></span> <span data-ttu-id="3a5fd-111">O esquema abstrato coleta convenientemente todos esses dados em um único objeto.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-111">The abstract schema conveniently collects all this data in a single object.</span></span>
+
+<span data-ttu-id="3a5fd-112">Assim como ocorre com qualquer objeto no Active Directory Domain Services, você pode associar ao objeto de **subesquema** e ler seus atributos, analisando os valores da cadeia de caracteres para recuperar os dados desejados.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-112">As with any object in Active Directory Domain Services, you can bind to the **subSchema** object and read its attributes, parsing the string values to retrieve the desired data.</span></span> <span data-ttu-id="3a5fd-113">No entanto, a ADSI fornece um conjunto de interfaces que tornam muito mais fácil ler o esquema abstrato.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-113">However, ADSI provides a set of interfaces that make it much easier to read the abstract schema.</span></span> <span data-ttu-id="3a5fd-114">Para obter mais informações, consulte [lendo o esquema abstrato](reading-the-abstract-schema.md).</span><span class="sxs-lookup"><span data-stu-id="3a5fd-114">For more information, see [Reading the Abstract Schema](reading-the-abstract-schema.md).</span></span>
+
+<span data-ttu-id="3a5fd-115">A tabela a seguir lista os principais atributos de um objeto de **subesquema** .</span><span class="sxs-lookup"><span data-stu-id="3a5fd-115">The following table lists key attributes of a **subSchema** object.</span></span>
+
+
+
+| <span data-ttu-id="3a5fd-116">Atributo</span><span class="sxs-lookup"><span data-stu-id="3a5fd-116">Attribute</span></span>                 | <span data-ttu-id="3a5fd-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a5fd-117">Description</span></span>                                                                                                                                                                                                                                                                               |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="3a5fd-118">**attributeTypes**</span><span class="sxs-lookup"><span data-stu-id="3a5fd-118">**attributeTypes**</span></span>        | <span data-ttu-id="3a5fd-119">Um atributo com valores múltiplos que contém cadeias de caracteres que representam cada atributo no esquema.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-119">A multi-valued attribute that contains strings that represent each attribute in the schema.</span></span> <span data-ttu-id="3a5fd-120">Cada valor contém **AttributeID**, **lDAPDisplayName**, **attributeSyntax**, **RangeLower**, **rangeUpper** e um item que indica se o atributo pode ter vários valores.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-120">Each value contains the **attributeID**, **lDAPDisplayName**, **attributeSyntax**, **rangeLower**, **rangeUpper**, and an item that indicates whether the attribute can have multiple values.</span></span> |
+| <span data-ttu-id="3a5fd-121">**extendedAttributeInfo**</span><span class="sxs-lookup"><span data-stu-id="3a5fd-121">**extendedAttributeInfo**</span></span> | <span data-ttu-id="3a5fd-122">Um atributo com valores múltiplos que contém cadeias de caracteres que representam dados adicionais para cada atributo.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-122">A multi-valued attribute that contains strings that represent additional data for each attribute.</span></span> <span data-ttu-id="3a5fd-123">Cada valor contém **AttributeID**, **lDAPDisplayName**, **schemaIDGUID** e **attributeSecurityGUID**.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-123">Each value contains the **attributeID**, **lDAPDisplayName**, **schemaIDGUID**, and **attributeSecurityGUID**.</span></span>                                                                          |
+| <span data-ttu-id="3a5fd-124">**extendedClassInfo**</span><span class="sxs-lookup"><span data-stu-id="3a5fd-124">**extendedClassInfo**</span></span>     | <span data-ttu-id="3a5fd-125">Um atributo com valores múltiplos que contém cadeias de caracteres que representam dados adicionais para cada classe.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-125">A multi-valued attribute that contains strings that represent additional data for each class.</span></span> <span data-ttu-id="3a5fd-126">Cada valor contém o **governsID**, **lDAPDisplayName** e **schemaIDGUID** da classe.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-126">Each value contains the **governsID**, **lDAPDisplayName**, and **schemaIDGUID** of the class.</span></span>                                                                                              |
+| <span data-ttu-id="3a5fd-127">**objectclasss**</span><span class="sxs-lookup"><span data-stu-id="3a5fd-127">**objectClasses**</span></span>         | <span data-ttu-id="3a5fd-128">Um atributo com valores múltiplos que contém cadeias de caracteres que representam cada classe no esquema.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-128">A multi-valued attribute that contains strings that represent each class in the schema.</span></span> <span data-ttu-id="3a5fd-129">Cada valor contém **governsID**, **lDAPDisplayName**, **mustContain**, **mayContain** e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="3a5fd-129">Each value contains the **governsID**, **lDAPDisplayName**, **mustContain**, **mayContain**, and so on.</span></span>                                                                                           |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+

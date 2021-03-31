@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636582"
 ---
-# <a name="forcing-filter-deletion"></a><span data-ttu-id="fe1c9-103">Forçando a exclusão do filtro</span><span class="sxs-lookup"><span data-stu-id="fe1c9-103">Forcing Filter Deletion</span></span>
+# <a name="forcing-filter-deletion"></a><span data-ttu-id="a295b-103">Forçando a exclusão do filtro</span><span class="sxs-lookup"><span data-stu-id="a295b-103">Forcing Filter Deletion</span></span>
 
-<span data-ttu-id="fe1c9-104">O código de exemplo a seguir demonstra como tornar um usuário com o privilégio TakeOwnership capaz de excluir um filtro.</span><span class="sxs-lookup"><span data-stu-id="fe1c9-104">The following sample code demonstrates how to make a user with the TakeOwnership privilege capable of deleting a filter.</span></span>
+<span data-ttu-id="a295b-104">O código de exemplo a seguir demonstra como tornar um usuário com o privilégio TakeOwnership capaz de excluir um filtro.</span><span class="sxs-lookup"><span data-stu-id="a295b-104">The following sample code demonstrates how to make a user with the TakeOwnership privilege capable of deleting a filter.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="fe1c9-105">Um aplicativo de instalação pode usar esse recurso durante uma desinstalação para garantir que todos os objetos sejam excluídos com êxito.</span><span class="sxs-lookup"><span data-stu-id="fe1c9-105">A setup application might use this feature during an uninstall to ensure that all objects are successfully deleted.</span></span>
+> <span data-ttu-id="a295b-105">Um aplicativo de instalação pode usar esse recurso durante uma desinstalação para garantir que todos os objetos sejam excluídos com êxito.</span><span class="sxs-lookup"><span data-stu-id="a295b-105">A setup application might use this feature during an uninstall to ensure that all objects are successfully deleted.</span></span>
 
  
 

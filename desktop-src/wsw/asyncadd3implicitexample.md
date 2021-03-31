@@ -15,13 +15,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636265"
 ---
-# <a name="asyncadd3implicitexample"></a><span data-ttu-id="01ca6-106">AsyncAdd3ImplicitExample</span><span class="sxs-lookup"><span data-stu-id="01ca6-106">AsyncAdd3ImplicitExample</span></span>
+# <a name="asyncadd3implicitexample"></a><span data-ttu-id="eedd5-106">AsyncAdd3ImplicitExample</span><span class="sxs-lookup"><span data-stu-id="eedd5-106">AsyncAdd3ImplicitExample</span></span>
 
-<span data-ttu-id="01ca6-107">Este exemplo ilustra a implementação de uma função assíncrona complexa usando [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).</span><span class="sxs-lookup"><span data-stu-id="01ca6-107">This example illustrates implementing a complex asynchronous function using [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).</span></span>
+<span data-ttu-id="eedd5-107">Este exemplo ilustra a implementação de uma função assíncrona complexa usando [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).</span><span class="sxs-lookup"><span data-stu-id="eedd5-107">This example illustrates implementing a complex asynchronous function using [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).</span></span>
 
-<span data-ttu-id="01ca6-108">O exemplo implementa uma função assíncrona "addtrês", que adiciona três inteiros juntos, criando uma função de adição existente que pode adicionar dois inteiros de forma assíncrona.</span><span class="sxs-lookup"><span data-stu-id="01ca6-108">The example implements an asynchronous function 'AddThree' which adds three integers together by building upon an existing Add function which can add two integers asynchronously.</span></span>
+<span data-ttu-id="eedd5-108">O exemplo implementa uma função assíncrona "addtrês", que adiciona três inteiros juntos, criando uma função de adição existente que pode adicionar dois inteiros de forma assíncrona.</span><span class="sxs-lookup"><span data-stu-id="eedd5-108">The example implements an asynchronous function 'AddThree' which adds three integers together by building upon an existing Add function which can add two integers asynchronously.</span></span>
 
-## <a name="asyncadd3implicitcpp"></a><span data-ttu-id="01ca6-109">AsyncAdd3Implicit. cpp</span><span class="sxs-lookup"><span data-stu-id="01ca6-109">AsyncAdd3Implicit.cpp</span></span>
+## <a name="asyncadd3implicitcpp"></a><span data-ttu-id="eedd5-109">AsyncAdd3Implicit. cpp</span><span class="sxs-lookup"><span data-stu-id="eedd5-109">AsyncAdd3Implicit.cpp</span></span>
 
 
 ```C++

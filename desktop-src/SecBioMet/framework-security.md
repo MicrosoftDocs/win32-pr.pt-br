@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636877"
 ---
-# <a name="framework-security"></a><span data-ttu-id="ffc4b-103">Segurança da estrutura</span><span class="sxs-lookup"><span data-stu-id="ffc4b-103">Framework security</span></span>
+# <a name="framework-security"></a><span data-ttu-id="54bc9-103">Segurança da estrutura</span><span class="sxs-lookup"><span data-stu-id="54bc9-103">Framework security</span></span>
 
-<span data-ttu-id="ffc4b-104">O serviço de biometria do Windows permite que aplicativos cliente não privilegiados executem operações biométricas sem fornecer acesso direto a amostras ou hardware biométrico.</span><span class="sxs-lookup"><span data-stu-id="ffc4b-104">The Windows Biometric Service enables non-privileged client applications to perform biometric operations without providing them direct access to biometric samples or hardware.</span></span> <span data-ttu-id="ffc4b-105">O serviço cria um limite de segurança entre os clientes e os componentes biométricos, conforme mostrado na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="ffc4b-105">The service creates a security boundary between the clients and the biometric components as shown in the following illustration.</span></span>
+<span data-ttu-id="54bc9-104">O serviço de biometria do Windows permite que aplicativos cliente não privilegiados executem operações biométricas sem fornecer acesso direto a amostras ou hardware biométrico.</span><span class="sxs-lookup"><span data-stu-id="54bc9-104">The Windows Biometric Service enables non-privileged client applications to perform biometric operations without providing them direct access to biometric samples or hardware.</span></span> <span data-ttu-id="54bc9-105">O serviço cria um limite de segurança entre os clientes e os componentes biométricos, conforme mostrado na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="54bc9-105">The service creates a security boundary between the clients and the biometric components as shown in the following illustration.</span></span>
 
 ![limite de segurança entre os clientes e os componentes biométricos](images/bioframework-security.png)
 

@@ -16,17 +16,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634871"
 ---
-# <a name="modifying-an-adsi-object-from-ado"></a><span data-ttu-id="7279f-107">Modificando um objeto ADSI do ADO</span><span class="sxs-lookup"><span data-stu-id="7279f-107">Modifying an ADSI Object from ADO</span></span>
+# <a name="modifying-an-adsi-object-from-ado"></a><span data-ttu-id="4db6a-107">Modificando um objeto ADSI do ADO</span><span class="sxs-lookup"><span data-stu-id="4db6a-107">Modifying an ADSI Object from ADO</span></span>
 
-<span data-ttu-id="7279f-108">O ADSI para o Windows 2000 e o DS Client inclui um provedor de OLE DB somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7279f-108">ADSI for Windows 2000 and DS Client includes a read-only OLE DB provider.</span></span> <span data-ttu-id="7279f-109">Isso significa que você não pode, no momento, emitir a instrução UPDATE no dialeto SQL.</span><span class="sxs-lookup"><span data-stu-id="7279f-109">This means that you cannot, at present, issue the UPDATE statement in the SQL dialect.</span></span>
+<span data-ttu-id="4db6a-108">O ADSI para o Windows 2000 e o DS Client inclui um provedor de OLE DB somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4db6a-108">ADSI for Windows 2000 and DS Client includes a read-only OLE DB provider.</span></span> <span data-ttu-id="4db6a-109">Isso significa que você não pode, no momento, emitir a instrução UPDATE no dialeto SQL.</span><span class="sxs-lookup"><span data-stu-id="4db6a-109">This means that you cannot, at present, issue the UPDATE statement in the SQL dialect.</span></span>
 
-<span data-ttu-id="7279f-110">**Para modificar um objeto retornado de uma consulta ADO**</span><span class="sxs-lookup"><span data-stu-id="7279f-110">**To modify an object returned from an ADO query**</span></span>
+<span data-ttu-id="4db6a-110">**Para modificar um objeto retornado de uma consulta ADO**</span><span class="sxs-lookup"><span data-stu-id="4db6a-110">**To modify an object returned from an ADO query**</span></span>
 
-1.  <span data-ttu-id="7279f-111">Solicite o **ADsPath** ao especificar um nome de atributo, como em "Select ADsPath,..."</span><span class="sxs-lookup"><span data-stu-id="7279f-111">Request the **ADsPath** when specifying an attribute name, as in "SELECT ADsPath, ..."</span></span>
-2.  <span data-ttu-id="7279f-112">Execute a consulta e obtenha o atributo **ADsPath** .</span><span class="sxs-lookup"><span data-stu-id="7279f-112">Execute the query and get the **ADsPath** attribute.</span></span>
-3.  <span data-ttu-id="7279f-113">Associe-se ao conjunto de registros usando **ADsPath** e modifique os atributos.</span><span class="sxs-lookup"><span data-stu-id="7279f-113">Bind to the record set using **ADsPath**, and modify the attributes.</span></span>
+1.  <span data-ttu-id="4db6a-111">Solicite o **ADsPath** ao especificar um nome de atributo, como em "Select ADsPath,..."</span><span class="sxs-lookup"><span data-stu-id="4db6a-111">Request the **ADsPath** when specifying an attribute name, as in "SELECT ADsPath, ..."</span></span>
+2.  <span data-ttu-id="4db6a-112">Execute a consulta e obtenha o atributo **ADsPath** .</span><span class="sxs-lookup"><span data-stu-id="4db6a-112">Execute the query and get the **ADsPath** attribute.</span></span>
+3.  <span data-ttu-id="4db6a-113">Associe-se ao conjunto de registros usando **ADsPath** e modifique os atributos.</span><span class="sxs-lookup"><span data-stu-id="4db6a-113">Bind to the record set using **ADsPath**, and modify the attributes.</span></span>
 
-<span data-ttu-id="7279f-114">O exemplo de código a seguir mostra como modificar um objeto ADSI depois de executar as etapas descritas no exemplo anterior.</span><span class="sxs-lookup"><span data-stu-id="7279f-114">The following code example shows how to modify an ADSI object after performing the steps outlined in the preceding example.</span></span>
+<span data-ttu-id="4db6a-114">O exemplo de código a seguir mostra como modificar um objeto ADSI depois de executar as etapas descritas no exemplo anterior.</span><span class="sxs-lookup"><span data-stu-id="4db6a-114">The following code example shows how to modify an ADSI object after performing the steps outlined in the preceding example.</span></span>
 
 
 ```VB

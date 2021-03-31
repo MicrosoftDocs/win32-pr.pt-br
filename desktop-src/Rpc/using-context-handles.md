@@ -13,14 +13,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635931"
 ---
-# <a name="using-context-handles"></a><span data-ttu-id="b1f86-104">Usando identificadores de contexto</span><span class="sxs-lookup"><span data-stu-id="b1f86-104">Using Context Handles</span></span>
+# <a name="using-context-handles"></a><span data-ttu-id="824d1-104">Usando identificadores de contexto</span><span class="sxs-lookup"><span data-stu-id="824d1-104">Using Context Handles</span></span>
 
-<span data-ttu-id="b1f86-105">Esta seção refere-se ao Windows 2000 e ao Windows XP.</span><span class="sxs-lookup"><span data-stu-id="b1f86-105">This section refers to Windows 2000 and Windows XP.</span></span> <span data-ttu-id="b1f86-106">Em alguns casos, as informações são apenas para o Windows XP; esses casos são indicados como tal.</span><span class="sxs-lookup"><span data-stu-id="b1f86-106">In some cases the information is Windows XP only; those cases are noted as such.</span></span> <span data-ttu-id="b1f86-107">As informações contidas nesta seção são divididas nos seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="b1f86-107">Information in this section is divided into the following topics:</span></span>
+<span data-ttu-id="824d1-105">Esta seção refere-se ao Windows 2000 e ao Windows XP.</span><span class="sxs-lookup"><span data-stu-id="824d1-105">This section refers to Windows 2000 and Windows XP.</span></span> <span data-ttu-id="824d1-106">Em alguns casos, as informações são apenas para o Windows XP; esses casos são indicados como tal.</span><span class="sxs-lookup"><span data-stu-id="824d1-106">In some cases the information is Windows XP only; those cases are noted as such.</span></span> <span data-ttu-id="824d1-107">As informações contidas nesta seção são divididas nos seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="824d1-107">Information in this section is divided into the following topics:</span></span>
 
--   [<span data-ttu-id="b1f86-108">Mantendo o estado no servidor entre as chamadas</span><span class="sxs-lookup"><span data-stu-id="b1f86-108">Maintaining State on the Server Between Calls</span></span>](maintaining-state-on-the-server-between-calls.md)
--   [<span data-ttu-id="b1f86-109">Descarregando um servidor com identificadores de contexto pendentes</span><span class="sxs-lookup"><span data-stu-id="b1f86-109">Unloading a Server with Outstanding Context Handles</span></span>](unloading-a-server-with-outstanding-context-handles.md)
--   [<span data-ttu-id="b1f86-110">Usando mais de um identificador de contexto por chamada</span><span class="sxs-lookup"><span data-stu-id="b1f86-110">Using More Than One Context Handle Per Call</span></span>](using-more-than-one-context-handle-per-call.md)
--   [<span data-ttu-id="b1f86-111">Semântica de falha para identificadores de contexto</span><span class="sxs-lookup"><span data-stu-id="b1f86-111">Failure Semantics for Context Handles</span></span>](failure-semantics-for-context-handles.md)
+-   [<span data-ttu-id="824d1-108">Mantendo o estado no servidor entre as chamadas</span><span class="sxs-lookup"><span data-stu-id="824d1-108">Maintaining State on the Server Between Calls</span></span>](maintaining-state-on-the-server-between-calls.md)
+-   [<span data-ttu-id="824d1-109">Descarregando um servidor com identificadores de contexto pendentes</span><span class="sxs-lookup"><span data-stu-id="824d1-109">Unloading a Server with Outstanding Context Handles</span></span>](unloading-a-server-with-outstanding-context-handles.md)
+-   [<span data-ttu-id="824d1-110">Usando mais de um identificador de contexto por chamada</span><span class="sxs-lookup"><span data-stu-id="824d1-110">Using More Than One Context Handle Per Call</span></span>](using-more-than-one-context-handle-per-call.md)
+-   [<span data-ttu-id="824d1-111">Semântica de falha para identificadores de contexto</span><span class="sxs-lookup"><span data-stu-id="824d1-111">Failure Semantics for Context Handles</span></span>](failure-semantics-for-context-handles.md)
 
  
 

@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634946"
 ---
-# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a><span data-ttu-id="2aee5-104">Código de exemplo para definir direitos para tipos específicos de objetos</span><span class="sxs-lookup"><span data-stu-id="2aee5-104">Example Code for Setting Rights to Specific Types of Objects</span></span>
+# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a><span data-ttu-id="bd4c1-104">Código de exemplo para definir direitos para tipos específicos de objetos</span><span class="sxs-lookup"><span data-stu-id="bd4c1-104">Example Code for Setting Rights to Specific Types of Objects</span></span>
 
-<span data-ttu-id="2aee5-105">O exemplo de código C/C++ a seguir cria uma ACE que atribui direitos herdados pelo tipo de objeto especificado, mas que não são eficazes no objeto atual.</span><span class="sxs-lookup"><span data-stu-id="2aee5-105">The following C/C++ code example creates an ACE that assigns rights that are inherited by the specified type of object, but are not effective on the current object.</span></span>
+<span data-ttu-id="bd4c1-105">O exemplo de código C/C++ a seguir cria uma ACE que atribui direitos herdados pelo tipo de objeto especificado, mas que não são eficazes no objeto atual.</span><span class="sxs-lookup"><span data-stu-id="bd4c1-105">The following C/C++ code example creates an ACE that assigns rights that are inherited by the specified type of object, but are not effective on the current object.</span></span>
 
 
 ```C++

@@ -17,12 +17,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636380"
 ---
-# <a name="multimedia-types"></a><span data-ttu-id="5886e-108">Tipos de multimídia</span><span class="sxs-lookup"><span data-stu-id="5886e-108">Multimedia Types</span></span>
+# <a name="multimedia-types"></a><span data-ttu-id="23bc9-108">Tipos de multimídia</span><span class="sxs-lookup"><span data-stu-id="23bc9-108">Multimedia Types</span></span>
 
-<span data-ttu-id="5886e-109">Os tipos a seguir são usados com multimídia.</span><span class="sxs-lookup"><span data-stu-id="5886e-109">The following types are used with multimedia.</span></span>
+<span data-ttu-id="23bc9-109">Os tipos a seguir são usados com multimídia.</span><span class="sxs-lookup"><span data-stu-id="23bc9-109">The following types are used with multimedia.</span></span>
 
--   [<span data-ttu-id="5886e-110">Keyarray</span><span class="sxs-lookup"><span data-stu-id="5886e-110">KEYARRAY</span></span>](keyarray.md)
--   [<span data-ttu-id="5886e-111">PATCHARRAY</span><span class="sxs-lookup"><span data-stu-id="5886e-111">PATCHARRAY</span></span>](patcharray.md)
+-   [<span data-ttu-id="23bc9-110">Keyarray</span><span class="sxs-lookup"><span data-stu-id="23bc9-110">KEYARRAY</span></span>](keyarray.md)
+-   [<span data-ttu-id="23bc9-111">PATCHARRAY</span><span class="sxs-lookup"><span data-stu-id="23bc9-111">PATCHARRAY</span></span>](patcharray.md)
 
  
 

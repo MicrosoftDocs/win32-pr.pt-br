@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637115"
 ---
-# <a name="glrotate-functions"></a><span data-ttu-id="c5f94-103">Funções glRotate</span><span class="sxs-lookup"><span data-stu-id="c5f94-103">glRotate Functions</span></span>
+# <a name="glrotate-functions"></a><span data-ttu-id="12847-103">Funções glRotate</span><span class="sxs-lookup"><span data-stu-id="12847-103">glRotate Functions</span></span>
 
-<span data-ttu-id="c5f94-104">Essas funções multiplicam a matriz atual por uma matriz de rotação:</span><span class="sxs-lookup"><span data-stu-id="c5f94-104">These functions multiply the current matrix by a rotation matrix:</span></span>
+<span data-ttu-id="12847-104">Essas funções multiplicam a matriz atual por uma matriz de rotação:</span><span class="sxs-lookup"><span data-stu-id="12847-104">These functions multiply the current matrix by a rotation matrix:</span></span>
 
--   [<span data-ttu-id="c5f94-105">**glRotated**</span><span class="sxs-lookup"><span data-stu-id="c5f94-105">**glRotated**</span></span>](glrotated.md)
--   [<span data-ttu-id="c5f94-106">**glRotatef**</span><span class="sxs-lookup"><span data-stu-id="c5f94-106">**glRotatef**</span></span>](glrotatef.md)
+-   [<span data-ttu-id="12847-105">**glRotated**</span><span class="sxs-lookup"><span data-stu-id="12847-105">**glRotated**</span></span>](glrotated.md)
+-   [<span data-ttu-id="12847-106">**glRotatef**</span><span class="sxs-lookup"><span data-stu-id="12847-106">**glRotatef**</span></span>](glrotatef.md)
 
  
 

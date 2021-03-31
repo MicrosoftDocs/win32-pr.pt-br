@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634745"
 ---
-# <a name="baseinterface"></a><span data-ttu-id="cc806-104">BaseInterface</span><span class="sxs-lookup"><span data-stu-id="cc806-104">BaseInterface</span></span>
+# <a name="baseinterface"></a><span data-ttu-id="7271e-104">BaseInterface</span><span class="sxs-lookup"><span data-stu-id="7271e-104">BaseInterface</span></span>
 
-<span data-ttu-id="cc806-105">Identifica a interface da qual a interface atual é derivada.</span><span class="sxs-lookup"><span data-stu-id="cc806-105">Identifies the interface from which the current interface is derived.</span></span>
+<span data-ttu-id="7271e-105">Identifica a interface da qual a interface atual é derivada.</span><span class="sxs-lookup"><span data-stu-id="7271e-105">Identifies the interface from which the current interface is derived.</span></span>
 
-## <a name="registry-entry"></a><span data-ttu-id="cc806-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="cc806-106">Registry Entry</span></span>
+## <a name="registry-entry"></a><span data-ttu-id="7271e-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="7271e-106">Registry Entry</span></span>
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
@@ -25,15 +25,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
       BaseInterface = name
 ```
 
-## <a name="remarks"></a><span data-ttu-id="cc806-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="cc806-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7271e-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="7271e-107">Remarks</span></span>
 
-<span data-ttu-id="cc806-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="cc806-108">This is a **REG\_SZ** value.</span></span>
+<span data-ttu-id="7271e-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="7271e-108">This is a **REG\_SZ** value.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="cc806-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cc806-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7271e-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7271e-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="cc806-110">**Interface**</span><span class="sxs-lookup"><span data-stu-id="cc806-110">**Interface**</span></span>](interface-key.md)
+[<span data-ttu-id="7271e-110">**Interface**</span><span class="sxs-lookup"><span data-stu-id="7271e-110">**Interface**</span></span>](interface-key.md)
 </dt> </dl>
 
  

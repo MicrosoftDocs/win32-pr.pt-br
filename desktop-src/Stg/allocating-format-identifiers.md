@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636001"
 ---
-# <a name="allocating-format-identifiers"></a><span data-ttu-id="8069a-104">Alocando identificadores de formato</span><span class="sxs-lookup"><span data-stu-id="8069a-104">Allocating Format Identifiers</span></span>
+# <a name="allocating-format-identifiers"></a><span data-ttu-id="920dd-104">Alocando identificadores de formato</span><span class="sxs-lookup"><span data-stu-id="920dd-104">Allocating Format Identifiers</span></span>
 
-<span data-ttu-id="8069a-105">FMTIDs são criados e representados da mesma maneira que os CLSIDs COM e identificadores de interface.</span><span class="sxs-lookup"><span data-stu-id="8069a-105">FMTIDs are created and represented in the same way as COM CLSIDs and interface identifiers.</span></span> <span data-ttu-id="8069a-106">Para criar um FMTID exclusivo, use o programa UUIDGEN.EXE incluído na API de® do Win32.</span><span class="sxs-lookup"><span data-stu-id="8069a-106">To create a unique FMTID, use the UUIDGEN.EXE program included in the Win32® API.</span></span>
+<span data-ttu-id="920dd-105">FMTIDs são criados e representados da mesma maneira que os CLSIDs COM e identificadores de interface.</span><span class="sxs-lookup"><span data-stu-id="920dd-105">FMTIDs are created and represented in the same way as COM CLSIDs and interface identifiers.</span></span> <span data-ttu-id="920dd-106">Para criar um FMTID exclusivo, use o programa UUIDGEN.EXE incluído na API de® do Win32.</span><span class="sxs-lookup"><span data-stu-id="920dd-106">To create a unique FMTID, use the UUIDGEN.EXE program included in the Win32® API.</span></span>
 
  
 

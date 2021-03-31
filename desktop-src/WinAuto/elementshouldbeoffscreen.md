@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637237"
 ---
-# <a name="elementshouldbeoffscreen"></a><span data-ttu-id="03bef-103">ElementShouldBeOffScreen</span><span class="sxs-lookup"><span data-stu-id="03bef-103">ElementShouldBeOffScreen</span></span>
+# <a name="elementshouldbeoffscreen"></a><span data-ttu-id="6c43f-103">ElementShouldBeOffScreen</span><span class="sxs-lookup"><span data-stu-id="6c43f-103">ElementShouldBeOffScreen</span></span>
 
-## <a name="text"></a><span data-ttu-id="03bef-104">Texto</span><span class="sxs-lookup"><span data-stu-id="03bef-104">Text</span></span>
+## <a name="text"></a><span data-ttu-id="6c43f-104">Texto</span><span class="sxs-lookup"><span data-stu-id="6c43f-104">Text</span></span>
 
-<span data-ttu-id="03bef-105">O elemento deve estar fora da tela</span><span class="sxs-lookup"><span data-stu-id="03bef-105">Element should be offscreen</span></span>
+<span data-ttu-id="6c43f-105">O elemento deve estar fora da tela</span><span class="sxs-lookup"><span data-stu-id="6c43f-105">Element should be offscreen</span></span>
 
-## <a name="type"></a><span data-ttu-id="03bef-106">Type</span><span class="sxs-lookup"><span data-stu-id="03bef-106">Type</span></span>
+## <a name="type"></a><span data-ttu-id="6c43f-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="6c43f-106">Type</span></span>
 
-<span data-ttu-id="03bef-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="03bef-107">Warning</span></span>
+<span data-ttu-id="6c43f-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="6c43f-107">Warning</span></span>
 
-## <a name="description"></a><span data-ttu-id="03bef-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="03bef-108">Description</span></span>
+## <a name="description"></a><span data-ttu-id="6c43f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c43f-108">Description</span></span>
 
-<span data-ttu-id="03bef-109">O retângulo delimitador do elemento é recortado pelo retângulo delimitador de seu elemento pai.</span><span class="sxs-lookup"><span data-stu-id="03bef-109">The bounding rectangle of the element is clipped by the bounding rectangle of its parent element.</span></span> <span data-ttu-id="03bef-110">O elemento deve ser ignorado e considerado fora dos limites da área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="03bef-110">The element should be ignored and considered outside the bounds of the desktop.</span></span>
+<span data-ttu-id="6c43f-109">O retângulo delimitador do elemento é recortado pelo retângulo delimitador de seu elemento pai.</span><span class="sxs-lookup"><span data-stu-id="6c43f-109">The bounding rectangle of the element is clipped by the bounding rectangle of its parent element.</span></span> <span data-ttu-id="6c43f-110">O elemento deve ser ignorado e considerado fora dos limites da área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="6c43f-110">The element should be ignored and considered outside the bounds of the desktop.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="03bef-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="03bef-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6c43f-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6c43f-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="03bef-112">**IAccessible:: obter \_ accName**</span><span class="sxs-lookup"><span data-stu-id="03bef-112">**IAccessible::get\_accName**</span></span>](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)
+[<span data-ttu-id="6c43f-112">**IAccessible:: obter \_ accName**</span><span class="sxs-lookup"><span data-stu-id="6c43f-112">**IAccessible::get\_accName**</span></span>](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)
 </dt> <dt>
 
-[<span data-ttu-id="03bef-113">Propriedade Name</span><span class="sxs-lookup"><span data-stu-id="03bef-113">Name Property</span></span>](name-property.md)
+[<span data-ttu-id="6c43f-113">Propriedade Name</span><span class="sxs-lookup"><span data-stu-id="6c43f-113">Name Property</span></span>](name-property.md)
 </dt> </dl>
 
  

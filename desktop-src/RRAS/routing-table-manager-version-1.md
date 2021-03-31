@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636433"
 ---
-# <a name="routing-table-manager-version-1"></a><span data-ttu-id="ead4b-103">Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="ead4b-103">Routing Table Manager Version 1</span></span>
+# <a name="routing-table-manager-version-1"></a><span data-ttu-id="5c22e-103">Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="5c22e-103">Routing Table Manager Version 1</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="ead4b-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ead4b-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5c22e-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5c22e-104">In this section</span></span>
 
--   [<span data-ttu-id="ead4b-105">Sobre o Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="ead4b-105">About Routing Table Manager Version 1</span></span>](about-routing-table-manager-version-1.md)
--   [<span data-ttu-id="ead4b-106">Referência da versão 1 do Gerenciador de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="ead4b-106">Routing Table Manager Version 1 Reference</span></span>](routing-table-manager-version-1-reference.md)
+-   [<span data-ttu-id="5c22e-105">Sobre o Gerenciador de tabela de roteamento versão 1</span><span class="sxs-lookup"><span data-stu-id="5c22e-105">About Routing Table Manager Version 1</span></span>](about-routing-table-manager-version-1.md)
+-   [<span data-ttu-id="5c22e-106">Referência da versão 1 do Gerenciador de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="5c22e-106">Routing Table Manager Version 1 Reference</span></span>](routing-table-manager-version-1-reference.md)
 
  
 

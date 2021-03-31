@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636954"
 ---
-# <a name="submitting-your-skin"></a><span data-ttu-id="7fa35-109">Enviando sua capa</span><span class="sxs-lookup"><span data-stu-id="7fa35-109">Submitting Your Skin</span></span>
+# <a name="submitting-your-skin"></a><span data-ttu-id="b9940-109">Enviando sua capa</span><span class="sxs-lookup"><span data-stu-id="b9940-109">Submitting Your Skin</span></span>
 
-<span data-ttu-id="7fa35-110">Não há mais suporte para a distribuição de sua capa por meio do site WMPlugins.</span><span class="sxs-lookup"><span data-stu-id="7fa35-110">Distributing your skin through the WMPlugins website is no longer supported.</span></span> <span data-ttu-id="7fa35-111">Em vez disso, você pode distribuir sua capa de um site da sua escolha.</span><span class="sxs-lookup"><span data-stu-id="7fa35-111">You can instead distribute your skin from a website of your choosing.</span></span>
+<span data-ttu-id="b9940-110">Não há mais suporte para a distribuição de sua capa por meio do site WMPlugins.</span><span class="sxs-lookup"><span data-stu-id="b9940-110">Distributing your skin through the WMPlugins website is no longer supported.</span></span> <span data-ttu-id="b9940-111">Em vez disso, você pode distribuir sua capa de um site da sua escolha.</span><span class="sxs-lookup"><span data-stu-id="b9940-111">You can instead distribute your skin from a website of your choosing.</span></span>
 
  
 

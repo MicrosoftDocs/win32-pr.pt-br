@@ -14,13 +14,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637040"
 ---
-# <a name="using-the-multicast-group-manager"></a><span data-ttu-id="e33cf-105">Usando o Gerenciador de grupo multicast</span><span class="sxs-lookup"><span data-stu-id="e33cf-105">Using the Multicast Group Manager</span></span>
+# <a name="using-the-multicast-group-manager"></a><span data-ttu-id="226e3-105">Usando o Gerenciador de grupo multicast</span><span class="sxs-lookup"><span data-stu-id="226e3-105">Using the Multicast Group Manager</span></span>
 
-<span data-ttu-id="e33cf-106">Esta seção aborda os seguintes tópicos do Gerenciador de grupos multicast.</span><span class="sxs-lookup"><span data-stu-id="e33cf-106">This section discusses the following Multicast Group Manager topics.</span></span>
+<span data-ttu-id="226e3-106">Esta seção aborda os seguintes tópicos do Gerenciador de grupos multicast.</span><span class="sxs-lookup"><span data-stu-id="226e3-106">This section discusses the following Multicast Group Manager topics.</span></span>
 
--   [<span data-ttu-id="e33cf-107">Considerações sobre programação MGM</span><span class="sxs-lookup"><span data-stu-id="e33cf-107">MGM Programming Considerations</span></span>](mgm-programming-considerations.md)
--   [<span data-ttu-id="e33cf-108">Cenário do protocolo de roteamento multicast</span><span class="sxs-lookup"><span data-stu-id="e33cf-108">Multicast Routing Protocol Scenario</span></span>](multicast-routing-protocol-scenario.md)
--   [<span data-ttu-id="e33cf-109">Cenário de aplicativo administrativo</span><span class="sxs-lookup"><span data-stu-id="e33cf-109">Administrative Application Scenario</span></span>](administrative-application-scenario.md)
+-   [<span data-ttu-id="226e3-107">Considerações sobre programação MGM</span><span class="sxs-lookup"><span data-stu-id="226e3-107">MGM Programming Considerations</span></span>](mgm-programming-considerations.md)
+-   [<span data-ttu-id="226e3-108">Cenário do protocolo de roteamento multicast</span><span class="sxs-lookup"><span data-stu-id="226e3-108">Multicast Routing Protocol Scenario</span></span>](multicast-routing-protocol-scenario.md)
+-   [<span data-ttu-id="226e3-109">Cenário de aplicativo administrativo</span><span class="sxs-lookup"><span data-stu-id="226e3-109">Administrative Application Scenario</span></span>](administrative-application-scenario.md)
 
  
 
