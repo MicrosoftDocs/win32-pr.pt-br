@@ -36,7 +36,7 @@ O identificador exclusivo de um atributo.
 | Frequência de atualização  | Esse valor é definido quando o objeto é criado e não pode ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.148                                              |
 | System-ID-GUID    | bf967923-0de6-11d0-a285-00aa003049e2                                |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md)               |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)               |
 
 
 

@@ -17,7 +17,7 @@ As subchaves e os valores de registro associados à chave **HKEY \_ local \_ Mac
 
 
 
-| Subchave                                                                         | Description                                                                                                       |
+| Subchave                                                                         | Descrição                                                                                                       |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | [**AppID**](appid-key.md)                                                     | Opções de configuração para aplicativos baseados em COM.                                                                 |
 | [**CLSID**](clsid-key-hklm.md)                                                | Opções de configuração para classes COM.                                                                            |

@@ -36,7 +36,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | Frequência de atualização  | Quando o intervalo de replicação precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.1336                        |
 | System-ID-GUID    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)           |
+| Syntax            | [**Enumeração**](s-enumeration.md)           |
 
 
 

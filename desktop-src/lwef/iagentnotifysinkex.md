@@ -21,7 +21,7 @@ ms.locfileid: "103636488"
 
 
 
-| Métodos IAgentNotifySinkEx                                                   | Description                                                        |
+| Métodos IAgentNotifySinkEx                                                   | Descrição                                                        |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | [**HelpComplete**](iagentnotifysinkex--helpcomplete.md)                     | Ocorre quando o usuário seleciona um menu ou o caractere no modo de ajuda. |
 | [**Ouvible**](iagentnotifysinkex--listeningstate.md)                 | Ocorre quando o estado de escuta do caractere é alterado.               |

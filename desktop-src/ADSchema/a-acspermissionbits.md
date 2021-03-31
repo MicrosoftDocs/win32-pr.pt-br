@@ -36,7 +36,7 @@ Permite a origem do fluxo de multicast para um determinado usuário.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.765               |
 | System-ID-GUID    | 7f561282-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

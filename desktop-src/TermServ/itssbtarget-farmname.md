@@ -37,7 +37,7 @@ Recupera ou especifica o nome do farm ao qual esse destino está associado.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -91,7 +91,7 @@ Uma variável **BSTR** que contém o nome do farm.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

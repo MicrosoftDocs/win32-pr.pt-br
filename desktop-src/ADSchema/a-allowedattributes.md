@@ -36,7 +36,7 @@ Atributos que terão permissão para serem atribuídos a uma classe.
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.913                                          |
 | System-ID-GUID    | 9a7ad940-ca53-11d1-bbd0-0080c76670c0                            |
-| Sintaxe            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
 
 
 

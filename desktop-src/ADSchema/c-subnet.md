@@ -105,7 +105,7 @@ Essa classe contém os seguintes atributos para o Windows 2000 Server:
 | [**Is-member-of-DL**](a-memberof.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                            | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                            | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                            | Falso     | [**Início**](c-top.md)<br/> |
@@ -215,7 +215,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2003:
 | [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                              | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                              | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
@@ -337,7 +337,7 @@ Essa classe contém os seguintes atributos para ADAM:
 | [**É excluído**](a-isdeleted.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
 | [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                              | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                              | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
@@ -453,7 +453,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2003 R2:
 | [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                              | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                              | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
@@ -584,7 +584,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2008:
 | [**Is-member-of-DL**](a-memberof.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                                 | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                                 | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
@@ -727,7 +727,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2008 R2:
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**É reciclado**](a-isrecycled.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                                   | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                                   | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
@@ -876,7 +876,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**É com proprietário de privilégio**](a-isprivilegeholder.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
 | [**É reciclado**](a-isrecycled.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
-| [**Localização**](a-location.md)                                                               | Falso     | **Sub-rede**                      |
+| [**Local**](a-location.md)                                                               | Falso     | **Sub-rede**                      |
 | [**Objetos gerenciados**](a-managedobjects.md)                                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |

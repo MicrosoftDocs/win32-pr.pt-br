@@ -63,10 +63,10 @@ As caixas de combinação dão suporte às seguintes propriedades de [**IAccessi
 
     | Parte da caixa de combinação   | DefaultAction                                                  |
     |------------------|----------------------------------------------------------------|
-    | Janela de caixa de combinação | Nenhuma                                                           |
-    | Controle de edição     | Nenhuma                                                           |
+    | Janela de caixa de combinação | Nenhum                                                           |
+    | Controle de edição     | Nenhum                                                           |
     | Seta suspensa  | "Open" ou "Close" dependendo do estado da lista suspensa |
-    | Caixa de listagem         | Nenhuma                                                           |
+    | Caixa de listagem         | Nenhum                                                           |
     | Item de lista        | "Clique duplo"                                                 |
 
     
@@ -82,10 +82,10 @@ As caixas de combinação dão suporte às seguintes propriedades de [**IAccessi
     | Parte da caixa de combinação   | KeyboardShortcut               |
     |------------------|--------------------------------|
     | Janela de caixa de combinação | Chave de acesso do rótulo associado |
-    | Controle de edição     | Nenhuma                           |
+    | Controle de edição     | Nenhum                           |
     | Seta suspensa  | "Alt + seta para baixo"               |
-    | Caixa de listagem         | Nenhuma                           |
-    | Item de lista        | Nenhuma                           |
+    | Caixa de listagem         | Nenhum                           |
+    | Item de lista        | Nenhum                           |
 
     
 
@@ -158,9 +158,9 @@ As caixas de combinação dão suporte às seguintes propriedades de [**IAccessi
     |------------------|--------------------------------------|
     | Janela de caixa de combinação | Texto do item de lista selecionado no momento |
     | Controle de edição     | Texto do item de lista selecionado no momento |
-    | Seta suspensa  | Nenhuma                                 |
-    | Caixa de listagem         | Nenhuma                                 |
-    | Item de lista        | Nenhuma                                 |
+    | Seta suspensa  | Nenhum                                 |
+    | Caixa de listagem         | Nenhum                                 |
+    | Item de lista        | Nenhum                                 |
 
     
 

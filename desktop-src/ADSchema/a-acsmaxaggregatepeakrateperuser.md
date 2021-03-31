@@ -36,7 +36,7 @@ A taxa máxima de pico que qualquer usuário pode ter para todos os fluxos.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.897               |
 | System-ID-GUID    | f072230c-aef5-11d1-bdcf-0000f80367c1 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

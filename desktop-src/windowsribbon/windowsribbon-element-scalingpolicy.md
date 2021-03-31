@@ -42,7 +42,7 @@ Não há atributos.
 
 | Elemento                                                                                       | Descrição                                        |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Escala**](windowsribbon-element-scale.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Escalonáve**](windowsribbon-element-scale.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
 
 

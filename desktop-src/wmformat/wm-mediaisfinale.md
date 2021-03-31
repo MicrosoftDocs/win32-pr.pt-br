@@ -35,7 +35,7 @@ g \_ wszWMMediaIsFinale
 
 Esse atributo é usado para difusão de televisão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

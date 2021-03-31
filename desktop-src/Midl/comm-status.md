@@ -76,7 +76,7 @@ Quando o **\[ \_ status \] de comunicação** é usado como um atributo de parâ
 
 É possível que os atributos **\[ \_ \] status de comunicação** e **\[** [**\_ status de falha**](fault-status.md) sejam **\]** exibidos em uma única função, como atributos de função ou atributos de parâmetro. Se ambos os atributos forem atributos de função ou se se aplicarem ao mesmo parâmetro e nenhum erro ocorrer, a função ou o parâmetro terá o valor **status de erro \_ \_ OK**. Caso contrário, ele conterá o valor de status de **\[ comunicação \_ \]** ou de **\[ \_ estado \] de falha** apropriado. Como os valores retornados para o **\[ \_ status \] de comunicação** são diferentes dos valores retornados para o **\[ \_ status \] de falha**, os valores retornados são prontamente interpretados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

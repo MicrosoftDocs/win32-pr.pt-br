@@ -91,7 +91,7 @@ Essa propriedade está disponível no Windows Server 2012 R2 com [KB3091411](htt
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

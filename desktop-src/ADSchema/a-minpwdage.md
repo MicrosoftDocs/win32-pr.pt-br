@@ -36,7 +36,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.78                |
 | System-ID-GUID    | bf9679c2-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

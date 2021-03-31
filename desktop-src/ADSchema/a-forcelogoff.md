@@ -36,7 +36,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.39                |
 | System-ID-GUID    | bf967977-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

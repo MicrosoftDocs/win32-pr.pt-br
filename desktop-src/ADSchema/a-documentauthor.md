@@ -35,7 +35,7 @@ O tipo de atributo documentAuthor especifica o nome distinto do autor de um docu
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 0.9.2342.19200300.100.1.14              |
 | System-ID-GUID    | f18a8e19-af5f-4478-b096-6f35c27eb83f    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

@@ -35,7 +35,7 @@ O tipo de atributo Audio permite o armazenamento de sons no diretório.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 0.9.2342.19200300.100.1.55                            |
 | System-ID-GUID    | d0e1d224-e1a0-42ce-a2da-793ba5244f35                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

@@ -36,7 +36,7 @@ O valor mínimo ou o comprimento de um atributo.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.34                |
 | System-ID-GUID    | bf967a0c-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

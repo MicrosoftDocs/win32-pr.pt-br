@@ -17,7 +17,7 @@ ms.locfileid: "103635311"
 
 Um controle tem Estados/propriedades que são inconsistentes {0} e {1}
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

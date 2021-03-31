@@ -26,7 +26,7 @@ Os atributos a seguir especificam as características dos ponteiros.
 | [**diferente**](unique.md)                    | Permite que um ponteiro seja nulo, mas não oferece suporte a aliases.                                                                                                                                               |
 | [**padrão de ponteiro \_**](pointer-default.md) | Aplicado a uma interface para especificar o tipo de ponteiro padrão para todos os ponteiros nessa interface, exceto para ponteiros de parâmetro de nível superior, que são automaticamente padronizados para ponteiros de [**referência**](ref.md) . |
 | [**IID \_ é**](iid-is.md)                   | Fornece o identificador de interface da interface COM que é o objeto do ponteiro.                                                                                                            |
-| [**Strings**](string.md)                    | Especifica que o ponteiro aponta para uma cadeia de caracteres.                                                                                                                                                       |
+| [**string**](string.md)                    | Especifica que o ponteiro aponta para uma cadeia de caracteres.                                                                                                                                                       |
 
 
 

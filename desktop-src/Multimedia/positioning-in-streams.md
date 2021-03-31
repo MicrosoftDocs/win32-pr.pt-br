@@ -42,7 +42,7 @@ Várias macros que usam funções AVIFile complementam os recursos de pesquisa d
 
 
 
-| Macro                                                                | Description                                                                                                                 |
+| Macro                                                                | Descrição                                                                                                                 |
 |----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | [**AVIStreamIsKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe)                   | Indica se um exemplo em um fluxo especificado é um quadro-chave.                                                            |
 | [**AVIStreamNearestKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframe)         | Localiza o quadro-chave em uma posição especificada ou anterior em um fluxo.                                                     |

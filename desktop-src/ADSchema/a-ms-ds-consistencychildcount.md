@@ -36,7 +36,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1361              |
 | System-ID-GUID    | 178b7bc2-b63a-11d2-90e1-00c04fd91ab1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -36,7 +36,7 @@ O atributo **ACS-non-reservative-Rate** é somente para uso interno. Com base em
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1318              |
 | System-ID-GUID    | a331a73f-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

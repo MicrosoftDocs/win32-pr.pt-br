@@ -17,7 +17,7 @@ As enumerações de gerenciamento de rede incluem o seguinte:
 
 
 
-| Enumerações                                 | Description                                                                                  |
+| Enumerações                                 | Descrição                                                                                  |
 |----------------------------------------------|----------------------------------------------------------------------------------------------|
 | [**\_tipo de junção DSREG \_**](/windows/desktop/api/lmjoin/ne-lmjoin-dsreg_join_type) | Especifica as maneiras possíveis pelas quais um dispositivo pode ser Unido Microsoft Azure Active Directory. |
 

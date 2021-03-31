@@ -17,7 +17,7 @@ A estrutura de um objeto de recurso é restrita à implementação do Microsoft 
 
 A implementação pode alocar um dos seguintes tipos de identificadores de recursos para um aplicativo WinSNMP.
 
-| Tipo de identificador        | Description                       |
+| Tipo de identificador        | Descrição                       |
 |--------------------|-----------------------------------|
 | **\_sessão HSNMP** | Tratar de uma sessão WinSNMP       |
 | **\_entidade HSNMP**  | Identificador para uma entidade SNMP          |

@@ -20,7 +20,7 @@ O sistema usa entradas no registro para localizar drivers VCM. Essas entradas es
 
 
 
-| Código de quatro caracteres | Description                               |
+| Código de quatro caracteres | Descrição                               |
 |---------------------|-------------------------------------------|
 | VIDC              | Identifica os compactadores e os descompactadores. |
 | "VIDS"              | Identifica renderizadores de fluxo de vídeo.        |

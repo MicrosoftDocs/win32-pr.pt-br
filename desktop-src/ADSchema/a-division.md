@@ -36,7 +36,7 @@ A divisão do usuário.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.261                      |
 | System-ID-GUID    | fe6136a0-2073-11d0-a9c2-00aa006c33ed        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

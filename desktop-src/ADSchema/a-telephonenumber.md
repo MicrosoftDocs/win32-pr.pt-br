@@ -36,7 +36,7 @@ O número de telefone principal.
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 2.5.4.20                                                                         |
 | System-ID-GUID    | bf967a49-0de6-11d0-a285-00aa003049e2                                             |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
 
 
 

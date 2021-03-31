@@ -36,7 +36,7 @@ GUID de extensões do assistente para criar objeto associado.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.812                      |
 | System-ID-GUID    | 2b09958b-8931-11d1-aebc-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

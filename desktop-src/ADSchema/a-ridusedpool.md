@@ -36,7 +36,7 @@ Os pools RID que foram usados por um controlador de domínio.
 | Frequência de atualização  | Sempre que um pool RID é esvaziado.      |
 | Attribute-Id      | 1.2.840.113556.1.4.373               |
 | System-ID-GUID    | 6617188b-8f3c-11d0-afda-00c04fd930c9 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

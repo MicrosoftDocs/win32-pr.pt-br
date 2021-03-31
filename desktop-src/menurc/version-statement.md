@@ -38,7 +38,7 @@ Um valor **DWORD** definido pelo usuário.
 
 </dd> </dl>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
@@ -48,7 +48,7 @@ Um valor **DWORD** definido pelo usuário.
 [**CARACTERÍSTICAS**](characteristics-statement.md)
 </dt> <dt>
 
-[**LANGUAGE**](language-statement.md)
+[**IDIOMA**](language-statement.md)
 </dt> <dt>
 
 [**ADICIONARMENU**](menu-resource.md)

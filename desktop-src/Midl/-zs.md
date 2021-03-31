@@ -44,7 +44,7 @@ Você também pode especificar o modo de verificação de sintaxe com a [**\_ ve
 
 **MIDL/Syntax \_ verificar filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

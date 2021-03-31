@@ -36,7 +36,7 @@ Esse atributo contém o DSBMDeadInterval (intervalo de tempo inativo de eleiçã
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.778               |
 | System-ID-GUID    | 1cb355a0-56d0-11d1-a9c6-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

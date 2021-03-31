@@ -35,7 +35,7 @@ Contém o caminho absoluto para o diretório base.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.3                      |
 | System-ID-GUID    | bc2dba12-000f-464d-bf1d-0808465d8843 |
-| Sintaxe            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
 
 
 
@@ -130,7 +130,7 @@ Contém o caminho absoluto para o diretório base.
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -17,7 +17,7 @@ ms.locfileid: "103637134"
 
 AccessibleObjectFromPoint ( {0} , {1} ) retornou um childID nulo
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

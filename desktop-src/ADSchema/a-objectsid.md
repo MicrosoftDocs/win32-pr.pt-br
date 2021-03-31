@@ -36,7 +36,7 @@ Um valor binário que especifica o identificador de segurança (SID) do usuário
 | Frequência de atualização  | Esse valor é definido pelo sistema quando a conta é criada. |
 | Attribute-Id      | 1.2.840.113556.1.4.146                                       |
 | System-ID-GUID    | bf9679e8-0de6-11d0-a285-00aa003049e2                         |
-| Sintaxe            | [**Cadeia de caracteres (SID)**](s-string-sid.md)                          |
+| Syntax            | [**Cadeia de caracteres (SID)**](s-string-sid.md)                          |
 
 
 

@@ -36,7 +36,7 @@ Um link usado para associar um particionador COM+ com suas partições COM+ de c
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1423                 |
 | System-ID-GUID    | 09abac62-043f-4702-ac2b-6ca15eee5754    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

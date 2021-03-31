@@ -35,7 +35,7 @@ Essa opção não tem parâmetros.
 
 A opção **/Win32** é equivalente a definir a opção [**/env**](-env.md) como Win32.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

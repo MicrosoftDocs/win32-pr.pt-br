@@ -39,7 +39,7 @@ Com o MIDL versão 6.0.359 e posterior, o compilador MIDL define [**/robust**](-
 
 **MIDL/ \_ robusto filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -31,7 +31,7 @@ g \_ wszWMLyrics \_ sincronizadas
 
 [**WM \_ letras de \_ música sincronizadas**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_synchronised_lyrics) (**\_ tipo \_ binário WMT**)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

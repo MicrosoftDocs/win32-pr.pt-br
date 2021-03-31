@@ -17,7 +17,7 @@ ms.locfileid: "103637239"
 
 O nome irmão duplicado + role "" causará \\ {0} \\ ambiguidade entre os elementos.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

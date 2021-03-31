@@ -36,7 +36,7 @@ O caminho para o banco de dados de replicação de arquivo.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.486                      |
 | System-ID-GUID    | 1be8f173-a9ff-11d0-afe2-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

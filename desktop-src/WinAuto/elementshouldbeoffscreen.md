@@ -17,7 +17,7 @@ ms.locfileid: "103637237"
 
 O elemento deve estar fora da tela
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 

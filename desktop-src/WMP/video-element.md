@@ -45,7 +45,7 @@ O elemento **Video** pode implementar os manipuladores de eventos a seguir.
 
 
 
-| Manipulador de eventos                          | Description                                                                  |
+| Manipulador de eventos                          | Descrição                                                                  |
 |----------------------------------------|------------------------------------------------------------------------------|
 | [onvideoend](video-onvideoend.md)     | Manipula um evento que ocorre quando o vídeo para de renderizar e é descarregado. |
 | [onvideostart](video-onvideostart.md) | Manipula um evento que ocorre quando o vídeo é carregado e começa a ser renderizado.  |
@@ -60,7 +60,7 @@ Elementos de vídeo predefinidos são elementos de **vídeo** normais com vária
 
 
 
-| VÍDEO predefinido         | Description                                                |
+| VÍDEO predefinido         | Descrição                                                |
 |--------------------------|------------------------------------------------------------|
 | [WMPVIDEO](wmpvideo.md) | Um elemento de **vídeo** que amplia o vídeo quando redimensionado. |
 

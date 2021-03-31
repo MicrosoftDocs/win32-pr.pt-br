@@ -59,7 +59,7 @@ Efeitos predefinidos são elementos de **efeitos** normais com várias configura
 
 
 
-| BOTÃO predefinidoelement         | Description                                                                                               |
+| BOTÃO predefinidoelement         | Descrição                                                                                               |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [FFWDELEMENT](ffwdelement.md)   | Um **buttonelement** com um manipulador de eventos interno **onclick** que chama **Player. Controls. Fastforward**. |
 | [PRÓXIMOelement](nextelement.md)   | Um **buttonelement** com um manipulador de eventos interno **onclick** que chama **Player. Controls. Next**.        |

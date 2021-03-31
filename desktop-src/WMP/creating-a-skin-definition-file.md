@@ -44,7 +44,7 @@ O número de versão 9.0.1 é para capas criadas especificamente para o Windows 
 
 O arquivo de definição de capa consiste em várias seções. Cada seção define uma área específica da capa. As seções devem ser colocadas na seguinte ordem:
 
-1.  Description
+1.  Descrição
 2.  Bitmaps
 3.  Vídeo
 4.  Botões

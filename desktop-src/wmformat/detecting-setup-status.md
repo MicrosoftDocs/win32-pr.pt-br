@@ -30,7 +30,7 @@ A entrada do registro **InstallResult** tem o seguinte formato.
 
 
 
-| Nome              | Type           | Valor                                                                                                                   |
+| Nome              | Tipo           | Valor                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
 | **InstallResult** | **REG \_ DWORD** | Um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se uma reinicialização é necessária. |
 

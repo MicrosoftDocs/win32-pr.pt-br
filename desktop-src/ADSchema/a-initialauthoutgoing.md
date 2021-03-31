@@ -36,7 +36,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.540                      |
 | System-ID-GUID    | 52458024-ca6a-11D0-afff-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

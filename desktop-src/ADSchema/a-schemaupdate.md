@@ -36,7 +36,7 @@ O atributo **Schema-Update** não está sendo usado no momento.
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.481                                        |
 | System-ID-GUID    | 1e2d06b4-ac8f-11d0-afe3-00c04fd930c9                          |
-| Sintaxe            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 

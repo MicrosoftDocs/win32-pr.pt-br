@@ -111,11 +111,11 @@ Para obter mais informações relacionadas ao **/Char**, consulte [**Small**](sm
 
 **MIDL/Char ascii7 filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**º**](char-idl.md)
+[**char**](char-idl.md)
 </dt> <dt>
 
 [Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)

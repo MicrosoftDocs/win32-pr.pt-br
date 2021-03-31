@@ -27,7 +27,7 @@ Embora os objetos desse SDK não verifiquem ou validem dados em fluxos arbitrár
 
 
 
-| Tipo arbitrário                   | Description                                                       |
+| Tipo arbitrário                   | Descrição                                                       |
 |----------------------------------|-------------------------------------------------------------------|
 | [Fluxos de texto](text-streams.md) | Conter cadeias de caracteres de texto.                                             |
 | [Fluxos de arquivos](file-streams.md) | Conter um ou mais arquivos de dados.                                   |

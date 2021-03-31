@@ -35,7 +35,7 @@ Identifica um departamento em uma organização.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.2                     |
 | System-ID-GUID    | be9ef6ee-cbc7-4f22-b27b-96967e7ee585        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

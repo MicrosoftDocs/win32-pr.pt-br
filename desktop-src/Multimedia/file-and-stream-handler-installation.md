@@ -94,7 +94,7 @@ Essas entradas consistem nas seguintes partes.
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
 | \_raiz de classes hKey \_                    | Identifica a entrada raiz do registro.                                                        |
 | AVIFile                                | Identifica essa entrada como uma entrada usada pelo AVIFile.                                                |
-| Extensões do                             | Especifica a extensão de arquivo (neste exemplo,. WAV) que um manipulador de arquivo pode processar.             |
+| Extensões                             | Especifica a extensão de arquivo (neste exemplo,. WAV) que um manipulador de arquivo pode processar.             |
 | RIFFHandlers                           | Especifica o código de quatro caracteres (neste exemplo, "WAVE") que um arquivo ou manipulador de fluxo pode processar. |
 | {00010023-0000-0000-C000-000000000046} | Especifica um identificador de interface (IID) ou identificador de classe.                                      |
 

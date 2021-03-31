@@ -36,7 +36,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | Frequência de atualização  | Quase nunca                                |
 | Attribute-Id      | 1.2.840.113556.1.4.786                      |
 | System-ID-GUID    | 26d9736f-6070-11d1-a9c6-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

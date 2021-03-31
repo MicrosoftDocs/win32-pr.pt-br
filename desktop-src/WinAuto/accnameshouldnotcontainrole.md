@@ -17,7 +17,7 @@ ms.locfileid: "103637133"
 
 O nome do elemento ( {0} ) não deve conter o texto da função do elemento ( {1} )
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 
