@@ -49,7 +49,7 @@ O elemento **prazo** é definido pelo tipo complexo [**maintenanceSettingsType**
 
 
 
-| Elemento                                                                                                                          | Derivado de                                                                               | Description                                                                                                    |
+| Elemento                                                                                                                          | Derivado de                                                                               | Descrição                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [**MaintenanceSettings (maintenanceSettingsType)**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) | Especifica as configurações de tarefa que o Agendador de tarefas usará para iniciar a tarefa durante a manutenção automática.<br/> |
 
@@ -84,7 +84,7 @@ O XML a seguir define um calendário de meses que executa a tarefa em março.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

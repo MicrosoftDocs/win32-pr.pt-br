@@ -36,7 +36,7 @@ O elemento **janeiro** é definido pelo tipo complexo [**monthtype**](taskschedu
 
 
 
-| Elemento                                                                                                          | Derivado de                                                     | Description                                                                                                |
+| Elemento                                                                                                          | Derivado de                                                     | Descrição                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [**Meses (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada para uma agenda mensal de dia da semana.<br/> |
 | [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada por um agendamento mensal.<br/>             |
@@ -67,7 +67,7 @@ O XML a seguir define um calendário de meses que executa a tarefa em Janeiro.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

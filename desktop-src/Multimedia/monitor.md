@@ -91,7 +91,7 @@ A origem da apresentação alterna automaticamente para o espaço de trabalho ap
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

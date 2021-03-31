@@ -17,7 +17,7 @@ ms.locfileid: "104005866"
 
 Ocorreu uma exceção \\ " {0} \\ "
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

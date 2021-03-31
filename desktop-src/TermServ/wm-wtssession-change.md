@@ -215,7 +215,7 @@ Exemplos de como os aplicativos podem responder a essa mensagem incluem lançar 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

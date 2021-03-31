@@ -75,7 +75,7 @@ O nome do aplicativo do Windows Virtual PC.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

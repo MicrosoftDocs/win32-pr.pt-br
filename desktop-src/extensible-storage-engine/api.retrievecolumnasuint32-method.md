@@ -32,7 +32,7 @@ Incluir membros herdados
 <thead>
 <tr class="header">
 <th> </th>
-<th>Nome</th>
+<th>Name</th>
 <th>Descrição</th>
 </tr>
 </thead>

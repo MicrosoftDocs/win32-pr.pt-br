@@ -42,7 +42,7 @@ Os valores são:
 
 
 
-| Type           | Description                                                             |
+| Tipo           | Descrição                                                             |
 |----------------|-------------------------------------------------------------------------|
 | consolidou          | O padrão de preenchimento é sólido. Padrão.                                     |
 | gradiente       | As cores de preenchimento se misturam em um gradiente linear de baixo para cima. |

@@ -36,7 +36,7 @@ O elemento de **dados** é definido pelo tipo complexo [**TaskType**](taskschedu
 
 
 
-| Elemento                                          | Derivado de                                                 | Description                                                                  |
+| Elemento                                          | Derivado de                                                 | Descrição                                                                  |
 |--------------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------|
 | [**Tarefa**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Define a tarefa que é executada pelo serviço de Agendador de Tarefas.<br/> |
 
@@ -61,7 +61,7 @@ No desenvolvimento de scripts, os dados de uma tarefa são especificados usando 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

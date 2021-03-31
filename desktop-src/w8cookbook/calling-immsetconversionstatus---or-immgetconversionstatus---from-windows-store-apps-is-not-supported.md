@@ -19,7 +19,7 @@ ms.locfileid: "103641198"
 Servidores-Windows Server 2012 R2  
 </dl>
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Não há suporte para a chamada de ImmSetConversionStatus () ou ImmGetConversionStatus () de um aplicativo da Windows Store e isso pode causar resultados inesperados.
 

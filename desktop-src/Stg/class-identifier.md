@@ -1,0 +1,24 @@
+---
+title: Identificador de classe
+description: O identificador de classe (CLSID) é o de uma classe que pode exibir e/ou fornecer acesso programático aos valores de propriedade.
+ms.assetid: 16baff7e-090f-44bc-a802-c22d7892f51c
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4791ad0b9d5d546522cf3287018baefdc2809d03
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104159430"
+---
+# <a name="class-identifier"></a>Identificador de classe
+
+O identificador de classe (CLSID) é o de uma classe que pode exibir e/ou fornecer acesso programático aos valores de propriedade. Se não houver nenhuma classe, é recomendável que você defina esse valor como o FMTID (veja abaixo). Como alternativa, você pode definir esse valor como todos os zeros; no entanto, usar o FMTID permite mais flexibilidade no futuro.
+
+ 
+
+ 
+
+
+
+

@@ -19,7 +19,7 @@ A tabela UIText tem as colunas a seguir.
 
 
 
-| Coluna | Type                         | Chave | Nullable |
+| Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
 | Chave    | [Identificador](identifier.md) | S   | N        |
 | Texto   | [Text](text.md)             | N   | S        |

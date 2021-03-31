@@ -23,7 +23,7 @@ Alguns *gestos de aplicativo* podem entrar em conflito com caracteres do leste a
 | Direita<br/>        | X<br/>         | X<br/>          | X<br/> | X<br/> |
 | DownRight<br/>    | -<br/>         | X<br/>          | -<br/> | X<br/> |
 | RightDown<br/>    | -<br/>         | -<br/>          | X<br/> | X<br/> |
-| Circle<br/>       | -<br/>         | -<br/>          | -<br/> | X<br/> |
+| Círculo<br/>       | -<br/>         | -<br/>          | -<br/> | X<br/> |
 | ChevronRight<br/> | -<br/>         | -<br/>          | -<br/> | X<br/> |
 
 

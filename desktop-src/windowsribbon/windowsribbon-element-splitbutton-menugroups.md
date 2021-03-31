@@ -151,7 +151,7 @@ Esta seção de código mostra as declarações de controle [**SplitButton**](wi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ ms.locfileid: "103644468"
 
 Para scripts, obtém o gatilho especificado da coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -59,7 +59,7 @@ As coleções são baseadas em 1. Em outras palavras, o índice do primeiro item
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

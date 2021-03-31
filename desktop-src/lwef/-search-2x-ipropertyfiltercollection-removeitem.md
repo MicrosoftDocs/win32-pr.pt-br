@@ -33,7 +33,7 @@ Remove um filtro específico para a coleção.
 
 Essa propriedade é somente gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

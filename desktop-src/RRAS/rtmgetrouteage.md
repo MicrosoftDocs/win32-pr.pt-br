@@ -83,7 +83,7 @@ A idade da rota é computada do \_ membro de carimbo de data/hora RR da estrutur
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

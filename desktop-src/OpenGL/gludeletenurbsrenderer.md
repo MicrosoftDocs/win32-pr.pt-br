@@ -69,7 +69,7 @@ A função **gluDeleteNurbsRenderer** destrói o objeto NURBS e libera qualquer 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

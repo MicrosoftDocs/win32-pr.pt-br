@@ -48,7 +48,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                          | Description                                                                            |
+| Código/valor de retorno                                                                                                                                                          | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                | A operação foi bem-sucedida.<br/>                                               |
 | <dl> <dt>**VM \_ E 0xA0040207 de \_ VM \_ desconhecido**</dt> <dt></dt> </dl>          | A configuração desta máquina virtual não é válida ou não foi encontrada.<br/> |
@@ -75,7 +75,7 @@ Esse método pode retornar um desses valores.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

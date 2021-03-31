@@ -35,7 +35,7 @@ O caminho e o nome do arquivo do programa RemoteApp.
 
 Essa propriedade é somente gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -63,7 +63,7 @@ O caminho e o nome do arquivo do programa RemoteApp.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

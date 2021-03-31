@@ -72,7 +72,7 @@ O endereço de um ponteiro de interface [**IMsRdpClientTransportSettings3**](ims
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

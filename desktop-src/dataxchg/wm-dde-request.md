@@ -78,7 +78,7 @@ Ao responder com uma mensagem do [**WM DDE \_ \_ Data**](wm-dde-data.md) ou do [
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

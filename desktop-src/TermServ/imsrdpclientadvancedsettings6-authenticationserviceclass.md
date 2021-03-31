@@ -42,7 +42,7 @@ Especifica o nome da entidade de serviço (SPN) a ser usado para autenticação 
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -81,7 +81,7 @@ Os SPNs (nomes da entidade de serviço) são associados à entidade de seguranç
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

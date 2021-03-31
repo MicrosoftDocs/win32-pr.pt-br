@@ -145,7 +145,7 @@ O driver MCIWAVE requer um dispositivo de áudio de onda assíncrono.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

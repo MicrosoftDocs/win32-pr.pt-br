@@ -70,7 +70,7 @@ Retorna um número inteiro. O **LRESULT** é convertido em um inteiro que indica
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

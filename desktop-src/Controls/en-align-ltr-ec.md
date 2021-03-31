@@ -71,7 +71,7 @@ Se houver uma linguagem bidirecional instalada em seu sistema, por exemplo, ára
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

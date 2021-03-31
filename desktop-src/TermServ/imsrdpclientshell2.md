@@ -41,7 +41,7 @@ A interface **IMsRdpClientShell2** tem essas propriedades.
 
 
 
-| Propriedade                                                                               | Tipo de acesso          | Description                                                                                                                                                                       |
+| Propriedade                                                                               | Tipo de acesso          | Descrição                                                                                                                                                                       |
 |:---------------------------------------------------------------------------------------|:---------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsRdpWorkspace**](imsrdpclientshell2-msrdpworkspace.md)<br/>                 | Somente leitura<br/> | Recupera um ponteiro para a interface [**IMsRdpWorkspace**](imsrdpworkspace.md) , que é usada para gerenciar conexão de RemoteApp e área de trabalho credenciais e conexões.<br/> |
 | [**SecuredSettingsEnabled**](imsrdpclientshell2-securedsettingsenabled.md)<br/> | Somente leitura<br/> | Recupera um valor que indica se a página da Web atual está em uma zona de segurança de URL confiável do Internet Explorer.<br/>                                                      |
@@ -62,7 +62,7 @@ A interface **IMsRdpClientShell2** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,0 +1,23 @@
+---
+description: Durante a instalação, geralmente há a necessidade de Pesquisar um arquivo específico.
+ms.assetid: cfcd7cdb-7547-45f4-bf11-c9f0edc4f7bf
+title: Pesquisa de arquivos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7fb0a21d6da77e49a8f29306cee16045adf1b643
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103827607"
+---
+# <a name="file-searching"></a>Pesquisa de arquivos
+
+Durante a instalação, geralmente há a necessidade de Pesquisar um arquivo específico. O instalador tem quatro ações de pesquisa padrão para atender a essa finalidade. A [ação AppSearch](appsearch-action.md) usa a [tabela AppSearch](appsearch-table.md) para determinar se um arquivo existe no sistema de um usuário. Durante uma instalação de atualização, a [ação CCPSearch](ccpsearch-action.md) e a [ação RMCCPSearch](rmccpsearch-action.md) podem usar suas tabelas correspondentes para verificar o sistema do usuário em busca de uma versão anterior de um produto.
+
+ 
+
+ 
+
+
+

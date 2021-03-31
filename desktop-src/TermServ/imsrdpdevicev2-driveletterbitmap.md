@@ -60,7 +60,7 @@ Um mapa de letras de unidade contidas no dispositivo. Cada bit no valor represen
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

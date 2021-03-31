@@ -42,7 +42,7 @@ Se você não especificar um estilo, o estilo padrão será `BS_AUTOCHECKBOX | W
 
 Para obter mais informações sobre a sintaxe geral de uma instrução de controle, consulte [parâmetros de controle comuns](common-control-parameters.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

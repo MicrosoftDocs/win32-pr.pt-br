@@ -95,17 +95,17 @@ Define os elementos filho e as informações de sequenciamento dos elementos [**
 
 
 
-| Elemento                                                               | Type | Description                                            |
+| Elemento                                                               | Type | Descrição                                            |
 |-----------------------------------------------------------------------|------|--------------------------------------------------------|
 | [**Amanda**](taskschedulerschema-april-monthstype-element.md)         | N/D  | Especifica que a tarefa é executada em abril. <br/>     |
-| [**01**](taskschedulerschema-august-monthstype-element.md)       | N/D  | Especifica que a tarefa é executada em agosto. <br/>    |
-| [**Desde**](taskschedulerschema-december-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em dezembro. <br/>  |
+| [**Agosto**](taskschedulerschema-august-monthstype-element.md)       | N/D  | Especifica que a tarefa é executada em agosto. <br/>    |
+| [**Dezembro**](taskschedulerschema-december-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em dezembro. <br/>  |
 | [**Fevereiro**](taskschedulerschema-february-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em fevereiro. <br/>  |
-| [**1o**](taskschedulerschema-january-monthstype-element.md)     | N/D  | Especifica que a tarefa é executada em Janeiro. <br/>   |
-| [**1º**](taskschedulerschema-july-monthstype-element.md)           | N/D  | Especifica que a tarefa é executada em julho. <br/>      |
+| [**Janeiro**](taskschedulerschema-january-monthstype-element.md)     | N/D  | Especifica que a tarefa é executada em Janeiro. <br/>   |
+| [**Julho**](taskschedulerschema-july-monthstype-element.md)           | N/D  | Especifica que a tarefa é executada em julho. <br/>      |
 | [**Junho**](taskschedulerschema-june-monthstype-element.md)           | N/D  | Especifica que a tarefa é executada em junho. <br/>      |
 | [**Março**](taskschedulerschema-march-monthstype-element.md)         | N/D  | Especifica que a tarefa é executada em março. <br/>     |
-| [**Talvez**](taskschedulerschema-may-monthstype-element.md)             | N/D  | Especifica que a tarefa é executada em maio. <br/>       |
+| [**Mai**](taskschedulerschema-may-monthstype-element.md)             | N/D  | Especifica que a tarefa é executada em maio. <br/>       |
 | [**Novembro**](taskschedulerschema-november-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em novembro. <br/>  |
 | [**Outubro**](taskschedulerschema-october-monthstype-element.md)     | N/D  | Especifica que a tarefa é executada em outubro. <br/>   |
 | [**Setembro**](taskschedulerschema-september-monthstype-element.md) | N/D  | Especifica que a tarefa é executada em setembro. <br/> |
@@ -123,7 +123,7 @@ Define os elementos filho e as informações de sequenciamento dos elementos [**
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

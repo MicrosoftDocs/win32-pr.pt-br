@@ -27,7 +27,7 @@ ms.locfileid: "103644472"
 
 Para scripts, obtém o tipo do gatilho. O tipo de gatilho é definido quando o gatilho é criado e não pode ser alterado posteriormente. Para obter informações sobre como criar um gatilho, consulte [**Disparecollection. Create**](triggercollection-create.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -73,7 +73,7 @@ Uma das tarefas a [**seguir \_ disparam \_**](/windows/desktop/api/taskschd/ne-t
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

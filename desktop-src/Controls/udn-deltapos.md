@@ -65,7 +65,7 @@ O \_ código de notificação UDN DELTAPOS é enviado antes da mensagem do [**WM
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

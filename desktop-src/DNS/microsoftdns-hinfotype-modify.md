@@ -94,7 +94,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

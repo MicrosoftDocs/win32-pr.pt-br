@@ -76,7 +76,7 @@ A macro do **\_ \_ quadro MCI TMSF** é definida da seguinte maneira:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

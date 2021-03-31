@@ -60,7 +60,7 @@ Somente uma cópia pode existir na área de transferência.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -305,7 +305,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

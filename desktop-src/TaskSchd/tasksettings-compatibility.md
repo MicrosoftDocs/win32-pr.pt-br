@@ -29,7 +29,7 @@ Para scripts, Obtém ou define um valor inteiro que indica a qual versão do Age
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -75,7 +75,7 @@ Para obter mais informações sobre a compatibilidade de tarefas, consulte [What
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

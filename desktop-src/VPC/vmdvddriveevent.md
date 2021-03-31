@@ -27,7 +27,7 @@ ms.locfileid: "103644623"
 
 Especifica os eventos da unidade de DVD.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -71,7 +71,7 @@ A mídia foi ejetada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

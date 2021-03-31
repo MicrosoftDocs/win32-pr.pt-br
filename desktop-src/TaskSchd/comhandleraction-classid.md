@@ -27,7 +27,7 @@ ms.locfileid: "103644491"
 
 Para scripts, Obtém ou define o identificador da classe do manipulador.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -57,7 +57,7 @@ Ao ler ou gravar XML, a classe de um manipulador COM é especificada no elemento
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
