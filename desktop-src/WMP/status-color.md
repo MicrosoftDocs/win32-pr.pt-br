@@ -17,15 +17,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005082"
 ---
-# <a name="status-color"></a><span data-ttu-id="9ff86-108">Cor do status</span><span class="sxs-lookup"><span data-stu-id="9ff86-108">Status Color</span></span>
+# <a name="status-color"></a><span data-ttu-id="e3a7a-108">Cor do status</span><span class="sxs-lookup"><span data-stu-id="e3a7a-108">Status Color</span></span>
 
-<span data-ttu-id="9ff86-109">O valor de cor do texto de exibição do status deve ser especificado.</span><span class="sxs-lookup"><span data-stu-id="9ff86-109">The color value of the status display text must be specified.</span></span> <span data-ttu-id="9ff86-110">O valor deve ser de três inteiros positivos separados por vírgulas.</span><span class="sxs-lookup"><span data-stu-id="9ff86-110">The value must be three positive integers separated by commas.</span></span> <span data-ttu-id="9ff86-111">Os valores representam a quantidade de vermelho, verde e azul para uma cor de texto e variam de 0 a 255.</span><span class="sxs-lookup"><span data-stu-id="9ff86-111">The values represent the amount of red, green, and blue for a text color, and range from 0 to 255.</span></span>
+<span data-ttu-id="e3a7a-109">O valor de cor do texto de exibição do status deve ser especificado.</span><span class="sxs-lookup"><span data-stu-id="e3a7a-109">The color value of the status display text must be specified.</span></span> <span data-ttu-id="e3a7a-110">O valor deve ser de três inteiros positivos separados por vírgulas.</span><span class="sxs-lookup"><span data-stu-id="e3a7a-110">The value must be three positive integers separated by commas.</span></span> <span data-ttu-id="e3a7a-111">Os valores representam a quantidade de vermelho, verde e azul para uma cor de texto e variam de 0 a 255.</span><span class="sxs-lookup"><span data-stu-id="e3a7a-111">The values represent the amount of red, green, and blue for a text color, and range from 0 to 255.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="9ff86-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9ff86-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e3a7a-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e3a7a-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9ff86-113">**Estado**</span><span class="sxs-lookup"><span data-stu-id="9ff86-113">**Status**</span></span>](status.md)
+[<span data-ttu-id="e3a7a-113">**Estado**</span><span class="sxs-lookup"><span data-stu-id="e3a7a-113">**Status**</span></span>](status.md)
 </dt> </dl>
 
  

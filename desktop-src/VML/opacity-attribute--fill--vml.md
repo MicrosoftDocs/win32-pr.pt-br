@@ -11,40 +11,40 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641808"
 ---
-# <a name="opacity-attribute-fillvml"></a><span data-ttu-id="a7752-103">Atributo de opacidade (Fill) (VML)</span><span class="sxs-lookup"><span data-stu-id="a7752-103">Opacity Attribute (Fill)(VML)</span></span>
+# <a name="opacity-attribute-fillvml"></a><span data-ttu-id="3a721-103">Atributo de opacidade (Fill) (VML)</span><span class="sxs-lookup"><span data-stu-id="3a721-103">Opacity Attribute (Fill)(VML)</span></span>
 
-<span data-ttu-id="a7752-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="a7752-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="a7752-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="a7752-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="3a721-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="3a721-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="3a721-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="3a721-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="a7752-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="a7752-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="a7752-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="a7752-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="a7752-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="a7752-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="a7752-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="a7752-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="3a721-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="3a721-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="3a721-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="3a721-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="3a721-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="3a721-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="3a721-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="3a721-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="a7752-110">Define a transparência de um preenchimento.</span><span class="sxs-lookup"><span data-stu-id="a7752-110">Defines the transparency of a fill.</span></span> <span data-ttu-id="a7752-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="a7752-111">Read/write.</span></span> <span data-ttu-id="a7752-112">[VgFraction](msdn-online-vml-vgfraction-data-type.md).</span><span class="sxs-lookup"><span data-stu-id="a7752-112">[VgFraction](msdn-online-vml-vgfraction-data-type.md).</span></span>
+<span data-ttu-id="3a721-110">Define a transparência de um preenchimento.</span><span class="sxs-lookup"><span data-stu-id="3a721-110">Defines the transparency of a fill.</span></span> <span data-ttu-id="3a721-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="3a721-111">Read/write.</span></span> <span data-ttu-id="3a721-112">[VgFraction](msdn-online-vml-vgfraction-data-type.md).</span><span class="sxs-lookup"><span data-stu-id="3a721-112">[VgFraction](msdn-online-vml-vgfraction-data-type.md).</span></span>
 
-<span data-ttu-id="a7752-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="a7752-113">**Applies To**</span></span>
+<span data-ttu-id="3a721-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="3a721-113">**Applies To**</span></span>
 
-[<span data-ttu-id="a7752-114">Preencher</span><span class="sxs-lookup"><span data-stu-id="a7752-114">Fill</span></span>](msdn-online-vml-fill-element.md)
+[<span data-ttu-id="3a721-114">Preencher</span><span class="sxs-lookup"><span data-stu-id="3a721-114">Fill</span></span>](msdn-online-vml-fill-element.md)
 
-<span data-ttu-id="a7752-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="a7752-115">**Tag Syntax**</span></span>
+<span data-ttu-id="3a721-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="3a721-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="a7752-116"><v: *elemento* Opacity = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="a7752-116"><v: *element* opacity=" *expression* "></span></span>
+<span data-ttu-id="3a721-116"><v: *elemento* Opacity = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="3a721-116"><v: *element* opacity=" *expression* "></span></span>
 
-<span data-ttu-id="a7752-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="a7752-117">**Script Syntax**</span></span>
+<span data-ttu-id="3a721-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="3a721-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="a7752-118">*elemento* . Opacity = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="a7752-118">*element* .opacity="*expression*"</span></span>
+<span data-ttu-id="3a721-118">*elemento* . Opacity = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="3a721-118">*element* .opacity="*expression*"</span></span>
 
-<span data-ttu-id="a7752-119">*expressão* = de *elemento*. Opacity</span><span class="sxs-lookup"><span data-stu-id="a7752-119">*expression*=*element*.opacity</span></span>
+<span data-ttu-id="3a721-119">*expressão* = de *elemento*. Opacity</span><span class="sxs-lookup"><span data-stu-id="3a721-119">*expression*=*element*.opacity</span></span>
 
-<span data-ttu-id="a7752-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="a7752-120">**Remarks**</span></span>
+<span data-ttu-id="3a721-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="3a721-120">**Remarks**</span></span>
 
-<span data-ttu-id="a7752-121">O valor padrão é 1.0.</span><span class="sxs-lookup"><span data-stu-id="a7752-121">The default value is 1.0.</span></span>
+<span data-ttu-id="3a721-121">O valor padrão é 1.0.</span><span class="sxs-lookup"><span data-stu-id="3a721-121">The default value is 1.0.</span></span>
 
-<span data-ttu-id="a7752-122">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="a7752-122">*VML Standard Attribute*</span></span>
+<span data-ttu-id="3a721-122">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="3a721-122">*VML Standard Attribute*</span></span>
 
-<span data-ttu-id="a7752-123">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="a7752-123">**Example**</span></span>
+<span data-ttu-id="3a721-123">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="3a721-123">**Example**</span></span>
 
-<span data-ttu-id="a7752-124">O preenchimento da forma será de 50% transparente.</span><span class="sxs-lookup"><span data-stu-id="a7752-124">The fill of the shape will be 50% transparent.</span></span>
+<span data-ttu-id="3a721-124">O preenchimento da forma será de 50% transparente.</span><span class="sxs-lookup"><span data-stu-id="3a721-124">The fill of the shape will be 50% transparent.</span></span>
 
 
 ```HTML

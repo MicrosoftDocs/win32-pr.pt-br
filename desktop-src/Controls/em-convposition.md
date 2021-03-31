@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638346"
 ---
-# <a name="em_convposition-message"></a><span data-ttu-id="3b1d4-104">\_Mensagem em CONVPOSITION</span><span class="sxs-lookup"><span data-stu-id="3b1d4-104">EM\_CONVPOSITION message</span></span>
+# <a name="em_convposition-message"></a><span data-ttu-id="2f877-104">\_Mensagem em CONVPOSITION</span><span class="sxs-lookup"><span data-stu-id="2f877-104">EM\_CONVPOSITION message</span></span>
 
-<span data-ttu-id="3b1d4-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="3b1d4-105">This message is not implemented.</span></span>
+<span data-ttu-id="2f877-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="2f877-105">This message is not implemented.</span></span>
 
  
 

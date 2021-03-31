@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634959"
 ---
-# <a name="example-code-for-creating-a-local-group"></a><span data-ttu-id="94026-104">Exemplo de código para criar um grupo local</span><span class="sxs-lookup"><span data-stu-id="94026-104">Example Code for Creating a Local Group</span></span>
+# <a name="example-code-for-creating-a-local-group"></a><span data-ttu-id="3b6ec-104">Exemplo de código para criar um grupo local</span><span class="sxs-lookup"><span data-stu-id="3b6ec-104">Example Code for Creating a Local Group</span></span>
 
-<span data-ttu-id="94026-105">O exemplo de código C++ a seguir cria um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="94026-105">The following C++ code example creates a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
+<span data-ttu-id="3b6ec-105">O exemplo de código C++ a seguir cria um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="3b6ec-105">The following C++ code example creates a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT CreateMachineLocalGroup(
 
 
 
-<span data-ttu-id="94026-106">O exemplo de código a seguir Visual Basic cria um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="94026-106">The following Visual Basic code example creates a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
+<span data-ttu-id="3b6ec-106">O exemplo de código a seguir Visual Basic cria um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="3b6ec-106">The following Visual Basic code example creates a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
 
 
 ```VB

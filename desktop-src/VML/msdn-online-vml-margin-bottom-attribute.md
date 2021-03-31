@@ -11,60 +11,60 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641480"
 ---
-# <a name="vml-margin-bottom-attribute"></a><span data-ttu-id="b2cab-103">Atributo Margin-Bottom de VML</span><span class="sxs-lookup"><span data-stu-id="b2cab-103">VML Margin-Bottom Attribute</span></span>
+# <a name="vml-margin-bottom-attribute"></a><span data-ttu-id="187f4-103">Atributo Margin-Bottom de VML</span><span class="sxs-lookup"><span data-stu-id="187f4-103">VML Margin-Bottom Attribute</span></span>
 
-<span data-ttu-id="b2cab-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="b2cab-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="b2cab-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="b2cab-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="187f4-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="187f4-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="187f4-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="187f4-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="b2cab-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="b2cab-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="b2cab-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="b2cab-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="b2cab-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="b2cab-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="b2cab-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="b2cab-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="187f4-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="187f4-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="187f4-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="187f4-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="187f4-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="187f4-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="187f4-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="187f4-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="b2cab-110">Especifica a borda inferior da forma que contém o retângulo em relação à âncora de forma.</span><span class="sxs-lookup"><span data-stu-id="b2cab-110">Specifies the bottom edge of the shape's containing rectangle relative to the shape anchor.</span></span> <span data-ttu-id="b2cab-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="b2cab-111">Read/write.</span></span> <span data-ttu-id="b2cab-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="b2cab-112">**String**.</span></span>
+<span data-ttu-id="187f4-110">Especifica a borda inferior da forma que contém o retângulo em relação à âncora de forma.</span><span class="sxs-lookup"><span data-stu-id="187f4-110">Specifies the bottom edge of the shape's containing rectangle relative to the shape anchor.</span></span> <span data-ttu-id="187f4-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="187f4-111">Read/write.</span></span> <span data-ttu-id="187f4-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="187f4-112">**String**.</span></span>
 
-<span data-ttu-id="b2cab-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="b2cab-113">**Applies To**</span></span>
+<span data-ttu-id="187f4-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="187f4-113">**Applies To**</span></span>
 
-[<span data-ttu-id="b2cab-114">Forma</span><span class="sxs-lookup"><span data-stu-id="b2cab-114">Shape</span></span>](shape-element--vml.md)
+[<span data-ttu-id="187f4-114">Forma</span><span class="sxs-lookup"><span data-stu-id="187f4-114">Shape</span></span>](shape-element--vml.md)
 
-<span data-ttu-id="b2cab-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="b2cab-115">**Tag Syntax**</span></span>
+<span data-ttu-id="187f4-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="187f4-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="b2cab-116"><v: *elemento* Margin-Bottom = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="b2cab-116"><v: *element* margin-bottom=" *expression* "></span></span>
+<span data-ttu-id="187f4-116"><v: *elemento* Margin-Bottom = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="187f4-116"><v: *element* margin-bottom=" *expression* "></span></span>
 
-<span data-ttu-id="b2cab-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="b2cab-117">**Script Syntax**</span></span>
+<span data-ttu-id="187f4-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="187f4-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="b2cab-118">*Element* . MarginBottom = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="b2cab-118">*element* .marginbottom="*expression*"</span></span>
+<span data-ttu-id="187f4-118">*Element* . MarginBottom = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="187f4-118">*element* .marginbottom="*expression*"</span></span>
 
-<span data-ttu-id="b2cab-119">*expressão* = de *elemento*. MarginBottom</span><span class="sxs-lookup"><span data-stu-id="b2cab-119">*expression*=*element*.marginbottom</span></span>
+<span data-ttu-id="187f4-119">*expressão* = de *elemento*. MarginBottom</span><span class="sxs-lookup"><span data-stu-id="187f4-119">*expression*=*element*.marginbottom</span></span>
 
-<span data-ttu-id="b2cab-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="b2cab-120">**Remarks**</span></span>
+<span data-ttu-id="187f4-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="187f4-120">**Remarks**</span></span>
 
-<span data-ttu-id="b2cab-121">O atributo **Margin-Bottom** é semelhante ao atributo padrão **de margem HTML-inferior** usado com folhas de estilo.</span><span class="sxs-lookup"><span data-stu-id="b2cab-121">The **Margin-Bottom** attribute is similar to the standard HTML **Margin-Bottom** attribute used with style sheets.</span></span>
+<span data-ttu-id="187f4-121">O atributo **Margin-Bottom** é semelhante ao atributo padrão **de margem HTML-inferior** usado com folhas de estilo.</span><span class="sxs-lookup"><span data-stu-id="187f4-121">The **Margin-Bottom** attribute is similar to the standard HTML **Margin-Bottom** attribute used with style sheets.</span></span>
 
-<span data-ttu-id="b2cab-122">Observe que **MarginBottom** é usado em vez de **Margin-Bottom** para scripts.</span><span class="sxs-lookup"><span data-stu-id="b2cab-122">Note that **marginbottom** is used instead of **margin-bottom** for scripting.</span></span> <span data-ttu-id="b2cab-123">Observe também que, se a **posição** for **absoluta**, a margem não parecerá ser alterada.</span><span class="sxs-lookup"><span data-stu-id="b2cab-123">Also note that if the **position** is **absolute**, the margin will not appear to change.</span></span>
+<span data-ttu-id="187f4-122">Observe que **MarginBottom** é usado em vez de **Margin-Bottom** para scripts.</span><span class="sxs-lookup"><span data-stu-id="187f4-122">Note that **marginbottom** is used instead of **margin-bottom** for scripting.</span></span> <span data-ttu-id="187f4-123">Observe também que, se a **posição** for **absoluta**, a margem não parecerá ser alterada.</span><span class="sxs-lookup"><span data-stu-id="187f4-123">Also note that if the **position** is **absolute**, the margin will not appear to change.</span></span>
 
-<span data-ttu-id="b2cab-124">Os valores são:</span><span class="sxs-lookup"><span data-stu-id="b2cab-124">Values include:</span></span>
+<span data-ttu-id="187f4-124">Os valores são:</span><span class="sxs-lookup"><span data-stu-id="187f4-124">Values include:</span></span>
 
 
 
-| <span data-ttu-id="b2cab-125">Valor</span><span class="sxs-lookup"><span data-stu-id="b2cab-125">Value</span></span>      | <span data-ttu-id="b2cab-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2cab-126">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="187f4-125">Valor</span><span class="sxs-lookup"><span data-stu-id="187f4-125">Value</span></span>      | <span data-ttu-id="187f4-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="187f4-126">Description</span></span>                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b2cab-127">Automático</span><span class="sxs-lookup"><span data-stu-id="b2cab-127">Auto</span></span>       | <span data-ttu-id="b2cab-128">Posição padrão de um elemento no fluxo da página.</span><span class="sxs-lookup"><span data-stu-id="b2cab-128">Default position of an element in the flow of the page.</span></span>                                                                                                                                           |
-| <span data-ttu-id="b2cab-129">units</span><span class="sxs-lookup"><span data-stu-id="b2cab-129">units</span></span>      | <span data-ttu-id="b2cab-130">Padrão.</span><span class="sxs-lookup"><span data-stu-id="b2cab-130">Default.</span></span> <span data-ttu-id="b2cab-131">Um número com um designador de unidades absolutas (cm, mm, em, pt, PC ou px) ou um designador de unidades relativas (em ou ex).</span><span class="sxs-lookup"><span data-stu-id="b2cab-131">A number with an absolute units designator (cm, mm, in, pt, pc, or px) or a relative units designator (em or ex).</span></span> <span data-ttu-id="b2cab-132">Se nenhuma unidade for fornecida, serão assumidos pixels (px).</span><span class="sxs-lookup"><span data-stu-id="b2cab-132">If no units are given, pixels (px) is assumed.</span></span> <span data-ttu-id="b2cab-133">O valor padrão é 0.</span><span class="sxs-lookup"><span data-stu-id="b2cab-133">The default value is 0.</span></span> |
-| <span data-ttu-id="b2cab-134">percentage</span><span class="sxs-lookup"><span data-stu-id="b2cab-134">percentage</span></span> | <span data-ttu-id="b2cab-135">Valor expresso como uma porcentagem da altura do objeto pai.</span><span class="sxs-lookup"><span data-stu-id="b2cab-135">Value expressed as a percentage of the parent object's height.</span></span>                                                                                                                                    |
+| <span data-ttu-id="187f4-127">Automático</span><span class="sxs-lookup"><span data-stu-id="187f4-127">Auto</span></span>       | <span data-ttu-id="187f4-128">Posição padrão de um elemento no fluxo da página.</span><span class="sxs-lookup"><span data-stu-id="187f4-128">Default position of an element in the flow of the page.</span></span>                                                                                                                                           |
+| <span data-ttu-id="187f4-129">units</span><span class="sxs-lookup"><span data-stu-id="187f4-129">units</span></span>      | <span data-ttu-id="187f4-130">Padrão.</span><span class="sxs-lookup"><span data-stu-id="187f4-130">Default.</span></span> <span data-ttu-id="187f4-131">Um número com um designador de unidades absolutas (cm, mm, em, pt, PC ou px) ou um designador de unidades relativas (em ou ex).</span><span class="sxs-lookup"><span data-stu-id="187f4-131">A number with an absolute units designator (cm, mm, in, pt, pc, or px) or a relative units designator (em or ex).</span></span> <span data-ttu-id="187f4-132">Se nenhuma unidade for fornecida, serão assumidos pixels (px).</span><span class="sxs-lookup"><span data-stu-id="187f4-132">If no units are given, pixels (px) is assumed.</span></span> <span data-ttu-id="187f4-133">O valor padrão é 0.</span><span class="sxs-lookup"><span data-stu-id="187f4-133">The default value is 0.</span></span> |
+| <span data-ttu-id="187f4-134">percentage</span><span class="sxs-lookup"><span data-stu-id="187f4-134">percentage</span></span> | <span data-ttu-id="187f4-135">Valor expresso como uma porcentagem da altura do objeto pai.</span><span class="sxs-lookup"><span data-stu-id="187f4-135">Value expressed as a percentage of the parent object's height.</span></span>                                                                                                                                    |
 
 
 
  
 
-<span data-ttu-id="b2cab-136">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="b2cab-136">*VML Standard Attribute*</span></span>
+<span data-ttu-id="187f4-136">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="187f4-136">*VML Standard Attribute*</span></span>
 
-<span data-ttu-id="b2cab-137">**Consulte também**</span><span class="sxs-lookup"><span data-stu-id="b2cab-137">**See Also**</span></span>
+<span data-ttu-id="187f4-137">**Consulte também**</span><span class="sxs-lookup"><span data-stu-id="187f4-137">**See Also**</span></span>
 
-[<span data-ttu-id="b2cab-138">Unidades</span><span class="sxs-lookup"><span data-stu-id="b2cab-138">Units</span></span>](msdn-online-vml-units.md)
+[<span data-ttu-id="187f4-138">Unidades</span><span class="sxs-lookup"><span data-stu-id="187f4-138">Units</span></span>](msdn-online-vml-units.md)
 
-<span data-ttu-id="b2cab-139">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="b2cab-139">**Example**</span></span>
+<span data-ttu-id="187f4-139">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="187f4-139">**Example**</span></span>
 
-<span data-ttu-id="b2cab-140">A margem inferior é definida como 25 pixels.</span><span class="sxs-lookup"><span data-stu-id="b2cab-140">The bottom margin is set to 25 pixels.</span></span>
+<span data-ttu-id="187f4-140">A margem inferior é definida como 25 pixels.</span><span class="sxs-lookup"><span data-stu-id="187f4-140">The bottom margin is set to 25 pixels.</span></span>
 
 
 ```HTML
@@ -75,7 +75,7 @@ ms.locfileid: "103641480"
 
 
 
-<span data-ttu-id="b2cab-141">[Exemplo de atributo Margin-Bottom](/previous-versions/bb229675(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="b2cab-141">[Margin-Bottom Attribute Example](/previous-versions/bb229675(v=vs.85)).</span></span> <span data-ttu-id="b2cab-142">(Requer o Microsoft Internet Explorer 5 ou superior.)</span><span class="sxs-lookup"><span data-stu-id="b2cab-142">(Requires Microsoft Internet Explorer 5 or greater.)</span></span>
+<span data-ttu-id="187f4-141">[Exemplo de atributo Margin-Bottom](/previous-versions/bb229675(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="187f4-141">[Margin-Bottom Attribute Example](/previous-versions/bb229675(v=vs.85)).</span></span> <span data-ttu-id="187f4-142">(Requer o Microsoft Internet Explorer 5 ou superior.)</span><span class="sxs-lookup"><span data-stu-id="187f4-142">(Requires Microsoft Internet Explorer 5 or greater.)</span></span>
 
  
 

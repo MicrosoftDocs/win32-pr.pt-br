@@ -12,18 +12,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638565"
 ---
-# <a name="graphics-virtual-channels-enumerations"></a><span data-ttu-id="861f7-103">Enumerações de canais virtuais de gráficos</span><span class="sxs-lookup"><span data-stu-id="861f7-103">Graphics virtual channels enumerations</span></span>
+# <a name="graphics-virtual-channels-enumerations"></a><span data-ttu-id="8ce56-103">Enumerações de canais virtuais de gráficos</span><span class="sxs-lookup"><span data-stu-id="8ce56-103">Graphics virtual channels enumerations</span></span>
 
-<span data-ttu-id="861f7-104">A API de canais virtuais de gráficos define as seguintes enumerações.</span><span class="sxs-lookup"><span data-stu-id="861f7-104">The graphics virtual channels API defines the following enumerations.</span></span>
+<span data-ttu-id="8ce56-104">A API de canais virtuais de gráficos define as seguintes enumerações.</span><span class="sxs-lookup"><span data-stu-id="8ce56-104">The graphics virtual channels API defines the following enumerations.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="861f7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="861f7-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8ce56-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8ce56-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="861f7-106">**WRdsGraphicsChannelType**</span><span class="sxs-lookup"><span data-stu-id="861f7-106">**WRdsGraphicsChannelType**</span></span>](/windows/win32/api/wrdsgraphicschannels/ne-wrdsgraphicschannels-wrdsgraphicschanneltype)
+[<span data-ttu-id="8ce56-106">**WRdsGraphicsChannelType**</span><span class="sxs-lookup"><span data-stu-id="8ce56-106">**WRdsGraphicsChannelType**</span></span>](/windows/win32/api/wrdsgraphicschannels/ne-wrdsgraphicschannels-wrdsgraphicschanneltype)
 </dt> <dd>
 
-<span data-ttu-id="861f7-107">Usado para especificar o tipo de canal virtual de gráficos a ser criado no método [**IWRdsGraphicsChannelManager:: CreateChannel**](/windows/desktop/api/wrdsgraphicschannels/nf-wrdsgraphicschannels-iwrdsgraphicschannelmanager-createchannel) .</span><span class="sxs-lookup"><span data-stu-id="861f7-107">Used to specify the type of graphics virtual channel to create in the [**IWRdsGraphicsChannelManager::CreateChannel**](/windows/desktop/api/wrdsgraphicschannels/nf-wrdsgraphicschannels-iwrdsgraphicschannelmanager-createchannel) method.</span></span>
+<span data-ttu-id="8ce56-107">Usado para especificar o tipo de canal virtual de gráficos a ser criado no método [**IWRdsGraphicsChannelManager:: CreateChannel**](/windows/desktop/api/wrdsgraphicschannels/nf-wrdsgraphicschannels-iwrdsgraphicschannelmanager-createchannel) .</span><span class="sxs-lookup"><span data-stu-id="8ce56-107">Used to specify the type of graphics virtual channel to create in the [**IWRdsGraphicsChannelManager::CreateChannel**](/windows/desktop/api/wrdsgraphicschannels/nf-wrdsgraphicschannels-iwrdsgraphicschannelmanager-createchannel) method.</span></span>
 
 </dd> </dl>
 

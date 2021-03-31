@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634935"
 ---
-# <a name="mmc-property-page-structures-in-active-directory-domain-services"></a><span data-ttu-id="828ff-104">Estruturas de página de propriedades do MMC no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="828ff-104">MMC Property Page Structures in Active Directory Domain Services</span></span>
+# <a name="mmc-property-page-structures-in-active-directory-domain-services"></a><span data-ttu-id="96884-104">Estruturas de página de propriedades do MMC no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="96884-104">MMC Property Page Structures in Active Directory Domain Services</span></span>
 
-<span data-ttu-id="828ff-105">O snap-in do MMC do Active Directory Manager usa folhas de propriedades para exibir os atributos de objetos no Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="828ff-105">The Active Directory Manager MMC snap-in uses property sheets to display the attributes of objects in Active Directory Domain Services.</span></span> <span data-ttu-id="828ff-106">As estruturas a seguir ajudam a fornecer a infraestrutura para controlar as operações executadas nas páginas dessas folhas de propriedades:</span><span class="sxs-lookup"><span data-stu-id="828ff-106">The following structures help provide the infrastructure to control the operations performed on the pages of these property sheets:</span></span>
+<span data-ttu-id="96884-105">O snap-in do MMC do Active Directory Manager usa folhas de propriedades para exibir os atributos de objetos no Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="96884-105">The Active Directory Manager MMC snap-in uses property sheets to display the attributes of objects in Active Directory Domain Services.</span></span> <span data-ttu-id="96884-106">As estruturas a seguir ajudam a fornecer a infraestrutura para controlar as operações executadas nas páginas dessas folhas de propriedades:</span><span class="sxs-lookup"><span data-stu-id="96884-106">The following structures help provide the infrastructure to control the operations performed on the pages of these property sheets:</span></span>
 
--   [<span data-ttu-id="828ff-107">**ADSPROPERROR**</span><span class="sxs-lookup"><span data-stu-id="828ff-107">**ADSPROPERROR**</span></span>](/windows/desktop/api/Adsprop/ns-adsprop-adsproperror)
--   [<span data-ttu-id="828ff-108">**ADSPROPINITPARAMS**</span><span class="sxs-lookup"><span data-stu-id="828ff-108">**ADSPROPINITPARAMS**</span></span>](/windows/desktop/api/Adsprop/ns-adsprop-adspropinitparams)
+-   [<span data-ttu-id="96884-107">**ADSPROPERROR**</span><span class="sxs-lookup"><span data-stu-id="96884-107">**ADSPROPERROR**</span></span>](/windows/desktop/api/Adsprop/ns-adsprop-adsproperror)
+-   [<span data-ttu-id="96884-108">**ADSPROPINITPARAMS**</span><span class="sxs-lookup"><span data-stu-id="96884-108">**ADSPROPINITPARAMS**</span></span>](/windows/desktop/api/Adsprop/ns-adsprop-adspropinitparams)
 
  
 

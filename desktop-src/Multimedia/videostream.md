@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635260"
 ---
-# <a name="videostream"></a><span data-ttu-id="b803a-104">Videostream</span><span class="sxs-lookup"><span data-stu-id="b803a-104">Videostream</span></span>
+# <a name="videostream"></a><span data-ttu-id="9f91b-104">Videostream</span><span class="sxs-lookup"><span data-stu-id="9f91b-104">Videostream</span></span>
 
-<span data-ttu-id="b803a-105">Os aplicativos podem usar funções de retorno de chamada videostream durante a captura de fluxo para processar um quadro de vídeo capturado.</span><span class="sxs-lookup"><span data-stu-id="b803a-105">Applications can use videostream callback functions during streaming capture to process a captured video frame.</span></span> <span data-ttu-id="b803a-106">A janela de captura chama uma função de retorno de chamada videostream logo antes de gravar cada quadro capturado no disco.</span><span class="sxs-lookup"><span data-stu-id="b803a-106">The capture window calls a videostream callback function just before writing each captured frame to the disk.</span></span>
+<span data-ttu-id="9f91b-105">Os aplicativos podem usar funções de retorno de chamada videostream durante a captura de fluxo para processar um quadro de vídeo capturado.</span><span class="sxs-lookup"><span data-stu-id="9f91b-105">Applications can use videostream callback functions during streaming capture to process a captured video frame.</span></span> <span data-ttu-id="9f91b-106">A janela de captura chama uma função de retorno de chamada videostream logo antes de gravar cada quadro capturado no disco.</span><span class="sxs-lookup"><span data-stu-id="9f91b-106">The capture window calls a videostream callback function just before writing each captured frame to the disk.</span></span>
 
  
 

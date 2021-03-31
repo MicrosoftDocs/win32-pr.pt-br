@@ -16,29 +16,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005158"
 ---
-# <a name="inertia-and-manipulation-reference"></a><span data-ttu-id="6dd0c-107">Inércia e referência de manipulação</span><span class="sxs-lookup"><span data-stu-id="6dd0c-107">Inertia and Manipulation Reference</span></span>
+# <a name="inertia-and-manipulation-reference"></a><span data-ttu-id="84ed7-107">Inércia e referência de manipulação</span><span class="sxs-lookup"><span data-stu-id="84ed7-107">Inertia and Manipulation Reference</span></span>
 
-<span data-ttu-id="6dd0c-108">Esta seção contém referências para Intertia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="6dd0c-108">This section contains references for intertia and manipulation.</span></span>
+<span data-ttu-id="84ed7-108">Esta seção contém referências para Intertia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="84ed7-108">This section contains references for intertia and manipulation.</span></span>
 
-<span data-ttu-id="6dd0c-109">As seções a seguir compõem as APIs de inércia e manipulação para o Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="6dd0c-109">The following sections make up the inertia and manipulation APIs for Windows Touch.</span></span>
+<span data-ttu-id="84ed7-109">As seções a seguir compõem as APIs de inércia e manipulação para o Windows Touch.</span><span class="sxs-lookup"><span data-stu-id="84ed7-109">The following sections make up the inertia and manipulation APIs for Windows Touch.</span></span>
 
 
 
-| <span data-ttu-id="6dd0c-110">Seção</span><span class="sxs-lookup"><span data-stu-id="6dd0c-110">Section</span></span>                                                          | <span data-ttu-id="6dd0c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6dd0c-111">Description</span></span>                                                       |
+| <span data-ttu-id="84ed7-110">Seção</span><span class="sxs-lookup"><span data-stu-id="84ed7-110">Section</span></span>                                                          | <span data-ttu-id="84ed7-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="84ed7-111">Description</span></span>                                                       |
 |------------------------------------------------------------------|-------------------------------------------------------------------|
-| [<span data-ttu-id="6dd0c-112">Classes e interfaces</span><span class="sxs-lookup"><span data-stu-id="6dd0c-112">Classes and Interfaces</span></span>](intertmanip-classes-and-interfaces.md) | <span data-ttu-id="6dd0c-113">Contém as classes e interfaces para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="6dd0c-113">Contains the classes and interfaces for inertia and manipulation.</span></span> |
-| [<span data-ttu-id="6dd0c-114">Constantes</span><span class="sxs-lookup"><span data-stu-id="6dd0c-114">Constants</span></span>](imanipulationprocessor-constants.md)                | <span data-ttu-id="6dd0c-115">Contém as constantes para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="6dd0c-115">Contains the constants for inertia and manipulation.</span></span>              |
-| [<span data-ttu-id="6dd0c-116">Enumerações</span><span class="sxs-lookup"><span data-stu-id="6dd0c-116">Enumerations</span></span>](rts-functions.md)                                | <span data-ttu-id="6dd0c-117">Contém as enumerações para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="6dd0c-117">Contains the enumerations for inertia and manipulation.</span></span>           |
+| [<span data-ttu-id="84ed7-112">Classes e interfaces</span><span class="sxs-lookup"><span data-stu-id="84ed7-112">Classes and Interfaces</span></span>](intertmanip-classes-and-interfaces.md) | <span data-ttu-id="84ed7-113">Contém as classes e interfaces para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="84ed7-113">Contains the classes and interfaces for inertia and manipulation.</span></span> |
+| [<span data-ttu-id="84ed7-114">Constantes</span><span class="sxs-lookup"><span data-stu-id="84ed7-114">Constants</span></span>](imanipulationprocessor-constants.md)                | <span data-ttu-id="84ed7-115">Contém as constantes para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="84ed7-115">Contains the constants for inertia and manipulation.</span></span>              |
+| [<span data-ttu-id="84ed7-116">Enumerações</span><span class="sxs-lookup"><span data-stu-id="84ed7-116">Enumerations</span></span>](rts-functions.md)                                | <span data-ttu-id="84ed7-117">Contém as enumerações para inércia e manipulação.</span><span class="sxs-lookup"><span data-stu-id="84ed7-117">Contains the enumerations for inertia and manipulation.</span></span>           |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="6dd0c-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6dd0c-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="84ed7-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="84ed7-118">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6dd0c-119">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="6dd0c-119">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
+[<span data-ttu-id="84ed7-119">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="84ed7-119">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
 </dt> </dl>
 
  

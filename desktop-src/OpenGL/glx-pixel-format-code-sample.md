@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635007"
 ---
-# <a name="glx-pixel-format-code-sample"></a><span data-ttu-id="365d3-108">Exemplo de código de formato de pixel GLX</span><span class="sxs-lookup"><span data-stu-id="365d3-108">GLX Pixel Format Code Sample</span></span>
+# <a name="glx-pixel-format-code-sample"></a><span data-ttu-id="605db-108">Exemplo de código de formato de pixel GLX</span><span class="sxs-lookup"><span data-stu-id="605db-108">GLX Pixel Format Code Sample</span></span>
 
-<span data-ttu-id="365d3-109">O exemplo de código a seguir mostra como um programa OpenGL do sistema de janelas X usa funções de formatação visual/pixel GLX.</span><span class="sxs-lookup"><span data-stu-id="365d3-109">The code sample below shows how an X Window System OpenGL program uses GLX visual/pixel formatting functions.</span></span>
+<span data-ttu-id="605db-109">O exemplo de código a seguir mostra como um programa OpenGL do sistema de janelas X usa funções de formatação visual/pixel GLX.</span><span class="sxs-lookup"><span data-stu-id="605db-109">The code sample below shows how an X Window System OpenGL program uses GLX visual/pixel formatting functions.</span></span>
 
 
 ```C++
@@ -38,7 +38,7 @@ static int attributes[] = {GLX_DEPTH_SIZE, 16, GLX_DOUBLEBUFFER, None};
 
 
 
-<span data-ttu-id="365d3-110">O Visual pode ser usado para criar uma janela e um contexto de renderização.</span><span class="sxs-lookup"><span data-stu-id="365d3-110">The Visual can be used to create a window and a rendering context.</span></span>
+<span data-ttu-id="605db-110">O Visual pode ser usado para criar uma janela e um contexto de renderização.</span><span class="sxs-lookup"><span data-stu-id="605db-110">The Visual can be used to create a window and a rendering context.</span></span>
 
  
 

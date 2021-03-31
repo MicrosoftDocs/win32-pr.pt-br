@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005046"
 ---
-# <a name="application-identity"></a><span data-ttu-id="c9f20-103">Identidade do Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9f20-103">Application Identity</span></span>
+# <a name="application-identity"></a><span data-ttu-id="38b42-103">Identidade do Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38b42-103">Application Identity</span></span>
 
-<span data-ttu-id="c9f20-104">A identidade de um aplicativo é a conta usada para executar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c9f20-104">An application's identity is the account that is used to run the application.</span></span> <span data-ttu-id="c9f20-105">A identidade pode ser a do usuário que está conectado no momento (o usuário interativo), o usuário que iniciou o servidor, um usuário especificado ou um serviço.</span><span class="sxs-lookup"><span data-stu-id="c9f20-105">The identity can be that of the user that is currently logged on (the interactive user), the user that launched the server, a specified user, or a service.</span></span> <span data-ttu-id="c9f20-106">Para saber como definir a identidade do aplicativo usando Dcomcnfg.exe, consulte [definindo a segurança do processwide usando DCOMCNFG](setting-processwide-security-using-dcomcnfg.md).</span><span class="sxs-lookup"><span data-stu-id="c9f20-106">To learn how to set application identity using Dcomcnfg.exe, see [Setting Processwide Security Using DCOMCNFG](setting-processwide-security-using-dcomcnfg.md).</span></span>
+<span data-ttu-id="38b42-104">A identidade de um aplicativo é a conta usada para executar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="38b42-104">An application's identity is the account that is used to run the application.</span></span> <span data-ttu-id="38b42-105">A identidade pode ser a do usuário que está conectado no momento (o usuário interativo), o usuário que iniciou o servidor, um usuário especificado ou um serviço.</span><span class="sxs-lookup"><span data-stu-id="38b42-105">The identity can be that of the user that is currently logged on (the interactive user), the user that launched the server, a specified user, or a service.</span></span> <span data-ttu-id="38b42-106">Para saber como definir a identidade do aplicativo usando Dcomcnfg.exe, consulte [definindo a segurança do processwide usando DCOMCNFG](setting-processwide-security-using-dcomcnfg.md).</span><span class="sxs-lookup"><span data-stu-id="38b42-106">To learn how to set application identity using Dcomcnfg.exe, see [Setting Processwide Security Using DCOMCNFG](setting-processwide-security-using-dcomcnfg.md).</span></span>
 
-<span data-ttu-id="c9f20-107">Os tópicos a seguir descrevem cada um dos quatro tipos de identidade do aplicativo e explicam as limitações de cada tipo:</span><span class="sxs-lookup"><span data-stu-id="c9f20-107">The following topics describe each of the four types of application identity and explain the limitations of each type:</span></span>
+<span data-ttu-id="38b42-107">Os tópicos a seguir descrevem cada um dos quatro tipos de identidade do aplicativo e explicam as limitações de cada tipo:</span><span class="sxs-lookup"><span data-stu-id="38b42-107">The following topics describe each of the four types of application identity and explain the limitations of each type:</span></span>
 
--   [<span data-ttu-id="c9f20-108">Usuário interativo</span><span class="sxs-lookup"><span data-stu-id="c9f20-108">Interactive User</span></span>](interactive-user.md)
--   [<span data-ttu-id="c9f20-109">Iniciando usuário</span><span class="sxs-lookup"><span data-stu-id="c9f20-109">Launching User</span></span>](launching-user.md)
--   [<span data-ttu-id="c9f20-110">Usuário especificado</span><span class="sxs-lookup"><span data-stu-id="c9f20-110">Specified User</span></span>](specified-user.md)
--   [<span data-ttu-id="c9f20-111">Identidade do serviço</span><span class="sxs-lookup"><span data-stu-id="c9f20-111">Service Identity</span></span>](service-identity.md)
+-   [<span data-ttu-id="38b42-108">Usuário interativo</span><span class="sxs-lookup"><span data-stu-id="38b42-108">Interactive User</span></span>](interactive-user.md)
+-   [<span data-ttu-id="38b42-109">Iniciando usuário</span><span class="sxs-lookup"><span data-stu-id="38b42-109">Launching User</span></span>](launching-user.md)
+-   [<span data-ttu-id="38b42-110">Usuário especificado</span><span class="sxs-lookup"><span data-stu-id="38b42-110">Specified User</span></span>](specified-user.md)
+-   [<span data-ttu-id="38b42-111">Identidade do serviço</span><span class="sxs-lookup"><span data-stu-id="38b42-111">Service Identity</span></span>](service-identity.md)
 
  
 

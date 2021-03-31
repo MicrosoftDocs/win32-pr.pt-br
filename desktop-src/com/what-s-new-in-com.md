@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637207"
 ---
-# <a name="whats-new-in-com"></a><span data-ttu-id="3ac23-103">O que há de novo no COM</span><span class="sxs-lookup"><span data-stu-id="3ac23-103">What's New in COM</span></span>
+# <a name="whats-new-in-com"></a><span data-ttu-id="330fd-103">O que há de novo no COM</span><span class="sxs-lookup"><span data-stu-id="330fd-103">What's New in COM</span></span>
 
-<span data-ttu-id="3ac23-104">Os tópicos a seguir descrevem as alterações recentes feitas em COM:</span><span class="sxs-lookup"><span data-stu-id="3ac23-104">The following topics describe recent changes to COM:</span></span>
+<span data-ttu-id="330fd-104">Os tópicos a seguir descrevem as alterações recentes feitas em COM:</span><span class="sxs-lookup"><span data-stu-id="330fd-104">The following topics describe recent changes to COM:</span></span>
 
--   [<span data-ttu-id="3ac23-105">Alterações no COM no Windows 7</span><span class="sxs-lookup"><span data-stu-id="3ac23-105">Changes to COM in Windows 7</span></span>](changes-to-com-in-windows-7.md)
--   [<span data-ttu-id="3ac23-106">Alterações no COM no Windows Vista</span><span class="sxs-lookup"><span data-stu-id="3ac23-106">Changes to COM in Windows Vista</span></span>](changes-to-com-in-windows-vista.md)
+-   [<span data-ttu-id="330fd-105">Alterações no COM no Windows 7</span><span class="sxs-lookup"><span data-stu-id="330fd-105">Changes to COM in Windows 7</span></span>](changes-to-com-in-windows-7.md)
+-   [<span data-ttu-id="330fd-106">Alterações no COM no Windows Vista</span><span class="sxs-lookup"><span data-stu-id="330fd-106">Changes to COM in Windows Vista</span></span>](changes-to-com-in-windows-vista.md)
 
  
 

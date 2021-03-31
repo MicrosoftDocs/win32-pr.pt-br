@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640388"
 ---
-# <a name="reading-an-objects-objectguid-and-creating-a-string-representation-of-the-guid"></a><span data-ttu-id="a55f8-103">Lendo o objectGUID de um objeto e criando uma representação de cadeia de caracteres do GUID</span><span class="sxs-lookup"><span data-stu-id="a55f8-103">Reading an Object's objectGUID and Creating a String Representation of the GUID</span></span>
+# <a name="reading-an-objects-objectguid-and-creating-a-string-representation-of-the-guid"></a><span data-ttu-id="08227-103">Lendo o objectGUID de um objeto e criando uma representação de cadeia de caracteres do GUID</span><span class="sxs-lookup"><span data-stu-id="08227-103">Reading an Object's objectGUID and Creating a String Representation of the GUID</span></span>
 
-<span data-ttu-id="a55f8-104">A propriedade **objectGUID** de cada objeto em Active Directory Domain Services é armazenada no diretório como uma cadeia de caracteres de octeto.</span><span class="sxs-lookup"><span data-stu-id="a55f8-104">The **objectGUID** property of each object in Active Directory Domain Services is stored in the directory as an octet string.</span></span> <span data-ttu-id="a55f8-105">Uma cadeia de caracteres de octeto é uma matriz de caracteres de um byte.</span><span class="sxs-lookup"><span data-stu-id="a55f8-105">An octet string is an array of one-byte characters.</span></span> <span data-ttu-id="a55f8-106">Use o método [**IADs:: get \_ GUID**](/windows/desktop/ADSI/iads-property-methods) para recuperar a forma de cadeia de caracteres vinculável do **objectGUID** de um objeto de diretório.</span><span class="sxs-lookup"><span data-stu-id="a55f8-106">Use the [**IADs::get\_GUID**](/windows/desktop/ADSI/iads-property-methods) method to retrieve the bindable string form of a directory object's **objectGUID**.</span></span>
+<span data-ttu-id="08227-104">A propriedade **objectGUID** de cada objeto em Active Directory Domain Services é armazenada no diretório como uma cadeia de caracteres de octeto.</span><span class="sxs-lookup"><span data-stu-id="08227-104">The **objectGUID** property of each object in Active Directory Domain Services is stored in the directory as an octet string.</span></span> <span data-ttu-id="08227-105">Uma cadeia de caracteres de octeto é uma matriz de caracteres de um byte.</span><span class="sxs-lookup"><span data-stu-id="08227-105">An octet string is an array of one-byte characters.</span></span> <span data-ttu-id="08227-106">Use o método [**IADs:: get \_ GUID**](/windows/desktop/ADSI/iads-property-methods) para recuperar a forma de cadeia de caracteres vinculável do **objectGUID** de um objeto de diretório.</span><span class="sxs-lookup"><span data-stu-id="08227-106">Use the [**IADs::get\_GUID**](/windows/desktop/ADSI/iads-property-methods) method to retrieve the bindable string form of a directory object's **objectGUID**.</span></span>
 
-<span data-ttu-id="a55f8-107">Os exemplos de código a seguir mostram uma função que lê o atributo **objectGUID** e retorna uma representação de cadeia de caracteres do GUID usado para associar ao objeto.</span><span class="sxs-lookup"><span data-stu-id="a55f8-107">The following code examples show a function that reads the **objectGUID** attribute and returns a string representation of the GUID used to bind to the object.</span></span>
+<span data-ttu-id="08227-107">Os exemplos de código a seguir mostram uma função que lê o atributo **objectGUID** e retorna uma representação de cadeia de caracteres do GUID usado para associar ao objeto.</span><span class="sxs-lookup"><span data-stu-id="08227-107">The following code examples show a function that reads the **objectGUID** attribute and returns a string representation of the GUID used to bind to the object.</span></span>
 
--   [<span data-ttu-id="a55f8-108">Exemplo de Visual Basic</span><span class="sxs-lookup"><span data-stu-id="a55f8-108">Visual Basic Example</span></span>](#visual-basic-example)
--   [<span data-ttu-id="a55f8-109">Exemplo de C++</span><span class="sxs-lookup"><span data-stu-id="a55f8-109">C++ Example</span></span>](#c-example)
+-   [<span data-ttu-id="08227-108">Exemplo de Visual Basic</span><span class="sxs-lookup"><span data-stu-id="08227-108">Visual Basic Example</span></span>](#visual-basic-example)
+-   [<span data-ttu-id="08227-109">Exemplo de C++</span><span class="sxs-lookup"><span data-stu-id="08227-109">C++ Example</span></span>](#c-example)
 
-## <a name="visual-basic-example"></a><span data-ttu-id="a55f8-110">Exemplo de Visual Basic</span><span class="sxs-lookup"><span data-stu-id="a55f8-110">Visual Basic Example</span></span>
+## <a name="visual-basic-example"></a><span data-ttu-id="08227-110">Exemplo de Visual Basic</span><span class="sxs-lookup"><span data-stu-id="08227-110">Visual Basic Example</span></span>
 
 
 ```VB
@@ -81,7 +81,7 @@ CleanUp:
 
 
 
-## <a name="c-example"></a><span data-ttu-id="a55f8-111">Exemplo de C++</span><span class="sxs-lookup"><span data-stu-id="a55f8-111">C++ Example</span></span>
+## <a name="c-example"></a><span data-ttu-id="08227-111">Exemplo de C++</span><span class="sxs-lookup"><span data-stu-id="08227-111">C++ Example</span></span>
 
 
 ```C++

@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635110"
 ---
-# <a name="ibitspeer-methods"></a><span data-ttu-id="8d87a-103">Métodos IBitsPeer</span><span class="sxs-lookup"><span data-stu-id="8d87a-103">IBitsPeer Methods</span></span>
+# <a name="ibitspeer-methods"></a><span data-ttu-id="09d7e-103">Métodos IBitsPeer</span><span class="sxs-lookup"><span data-stu-id="09d7e-103">IBitsPeer Methods</span></span>
 
-<span data-ttu-id="8d87a-104">A interface [**IBitsPeer**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibitspeer) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8d87a-104">The [**IBitsPeer**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibitspeer) interface exposes the following methods.</span></span>
+<span data-ttu-id="09d7e-104">A interface [**IBitsPeer**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibitspeer) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="09d7e-104">The [**IBitsPeer**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibitspeer) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="8d87a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8d87a-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="09d7e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="09d7e-105">In this section</span></span>
 
--   [<span data-ttu-id="8d87a-106">**Método getpeername**</span><span class="sxs-lookup"><span data-stu-id="8d87a-106">**GetPeerName Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-getpeername)
--   [<span data-ttu-id="8d87a-107">**Método IsAuthenticated**</span><span class="sxs-lookup"><span data-stu-id="8d87a-107">**IsAuthenticated Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-isauthenticated)
--   [<span data-ttu-id="8d87a-108">**Método IsAvailable**</span><span class="sxs-lookup"><span data-stu-id="8d87a-108">**IsAvailable Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-isavailable)
+-   [<span data-ttu-id="09d7e-106">**Método getpeername**</span><span class="sxs-lookup"><span data-stu-id="09d7e-106">**GetPeerName Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-getpeername)
+-   [<span data-ttu-id="09d7e-107">**Método IsAuthenticated**</span><span class="sxs-lookup"><span data-stu-id="09d7e-107">**IsAuthenticated Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-isauthenticated)
+-   [<span data-ttu-id="09d7e-108">**Método IsAvailable**</span><span class="sxs-lookup"><span data-stu-id="09d7e-108">**IsAvailable Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeer-isavailable)
 
  
 

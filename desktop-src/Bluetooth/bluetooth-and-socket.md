@@ -15,26 +15,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641187"
 ---
-# <a name="bluetooth-and-socket"></a><span data-ttu-id="14e2c-106">Bluetooth e soquete</span><span class="sxs-lookup"><span data-stu-id="14e2c-106">Bluetooth and socket</span></span>
+# <a name="bluetooth-and-socket"></a><span data-ttu-id="8c503-106">Bluetooth e soquete</span><span class="sxs-lookup"><span data-stu-id="8c503-106">Bluetooth and socket</span></span>
 
-<span data-ttu-id="14e2c-107">A função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) cria um soquete para conexões de entrada ou saída.:</span><span class="sxs-lookup"><span data-stu-id="14e2c-107">The [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function creates a socket for incoming or outgoing connections.:</span></span>
+<span data-ttu-id="8c503-107">A função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) cria um soquete para conexões de entrada ou saída.:</span><span class="sxs-lookup"><span data-stu-id="8c503-107">The [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function creates a socket for incoming or outgoing connections.:</span></span>
 
-<span data-ttu-id="14e2c-108">Para criar um soquete usando Bluetooth, use as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="14e2c-108">To create a socket using Bluetooth, use the following settings:</span></span>
+<span data-ttu-id="8c503-108">Para criar um soquete usando Bluetooth, use as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="8c503-108">To create a socket using Bluetooth, use the following settings:</span></span>
 
--   <span data-ttu-id="14e2c-109">O parâmetro *AF* da função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) é sempre definido como **AF \_ BTH** para soquetes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="14e2c-109">The *af* parameter of the [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function is always set to **AF\_BTH** for Bluetooth sockets.</span></span>
--   <span data-ttu-id="14e2c-110">O parâmetro de *tipo* da função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) é sempre **Sock \_ Stream**; **Sock \_** Os soquetes DGRAM não têm suporte do Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="14e2c-110">The *type* parameter of the [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function is always **SOCK\_STREAM**; **SOCK\_DGRAM** sockets are not supported by Bluetooth.</span></span>
--   <span data-ttu-id="14e2c-111">Para o parâmetro de *protocolo* , **BTHPROTO \_ RFCOMM** é o protocolo com suporte.</span><span class="sxs-lookup"><span data-stu-id="14e2c-111">For the *protocol* parameter, **BTHPROTO\_RFCOMM** is the supported protocol.</span></span>
+-   <span data-ttu-id="8c503-109">O parâmetro *AF* da função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) é sempre definido como **AF \_ BTH** para soquetes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="8c503-109">The *af* parameter of the [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function is always set to **AF\_BTH** for Bluetooth sockets.</span></span>
+-   <span data-ttu-id="8c503-110">O parâmetro de *tipo* da função [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) é sempre **Sock \_ Stream**; **Sock \_** Os soquetes DGRAM não têm suporte do Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="8c503-110">The *type* parameter of the [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) function is always **SOCK\_STREAM**; **SOCK\_DGRAM** sockets are not supported by Bluetooth.</span></span>
+-   <span data-ttu-id="8c503-111">Para o parâmetro de *protocolo* , **BTHPROTO \_ RFCOMM** é o protocolo com suporte.</span><span class="sxs-lookup"><span data-stu-id="8c503-111">For the *protocol* parameter, **BTHPROTO\_RFCOMM** is the supported protocol.</span></span>
 
-<span data-ttu-id="14e2c-112">Para obter mais informações, consulte [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).</span><span class="sxs-lookup"><span data-stu-id="14e2c-112">For more information, see [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).</span></span>
+<span data-ttu-id="8c503-112">Para obter mais informações, consulte [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).</span><span class="sxs-lookup"><span data-stu-id="8c503-112">For more information, see [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="14e2c-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="14e2c-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8c503-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8c503-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="14e2c-114">Windows Sockets</span><span class="sxs-lookup"><span data-stu-id="14e2c-114">Windows Sockets</span></span>](/windows/desktop/WinSock/windows-sockets-start-page-2)
+[<span data-ttu-id="8c503-114">Windows Sockets</span><span class="sxs-lookup"><span data-stu-id="8c503-114">Windows Sockets</span></span>](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
-[<span data-ttu-id="14e2c-115">**SSA**</span><span class="sxs-lookup"><span data-stu-id="14e2c-115">**socket**</span></span>](/windows/desktop/api/winsock2/nf-winsock2-socket)
+[<span data-ttu-id="8c503-115">**SSA**</span><span class="sxs-lookup"><span data-stu-id="8c503-115">**socket**</span></span>](/windows/desktop/api/winsock2/nf-winsock2-socket)
 </dt> </dl>
 
  

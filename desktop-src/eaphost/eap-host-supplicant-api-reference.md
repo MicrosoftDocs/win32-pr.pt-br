@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641845"
 ---
-# <a name="eaphost-supplicant-api-reference"></a><span data-ttu-id="1f08d-103">Referência de API do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-103">EAPHost Supplicant API Reference</span></span>
+# <a name="eaphost-supplicant-api-reference"></a><span data-ttu-id="cd931-103">Referência de API do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-103">EAPHost Supplicant API Reference</span></span>
 
-<span data-ttu-id="1f08d-104">A documentação da API suplicante do EAPHost consiste nas seções a seguir.</span><span class="sxs-lookup"><span data-stu-id="1f08d-104">The EAPHost Supplicant API documentation consists of the following sections.</span></span>
+<span data-ttu-id="cd931-104">A documentação da API suplicante do EAPHost consiste nas seções a seguir.</span><span class="sxs-lookup"><span data-stu-id="cd931-104">The EAPHost Supplicant API documentation consists of the following sections.</span></span>
 
--   [<span data-ttu-id="1f08d-105">Funções de configuração do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-105">EAPHost Supplicant Configuration Functions</span></span>](eap-host-supplicant-configuration-functions.md)
--   [<span data-ttu-id="1f08d-106">Funções de tempo de execução do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-106">EAPHost Supplicant Run-time Functions</span></span>](eap-host-supplicant-run-time-functions.md)
--   [<span data-ttu-id="1f08d-107">Retornos de chamada do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-107">EAPHost Supplicant Callbacks</span></span>](eap-host-supplicant-callbacks.md)
--   [<span data-ttu-id="1f08d-108">Enumerações do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-108">EAPHost Supplicant Enumerations</span></span>](eap-host-supplicant-enumerations.md)
--   [<span data-ttu-id="1f08d-109">Estruturas do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="1f08d-109">EAPHost Supplicant Structures</span></span>](eap-host-supplicant-structures.md)
+-   [<span data-ttu-id="cd931-105">Funções de configuração do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-105">EAPHost Supplicant Configuration Functions</span></span>](eap-host-supplicant-configuration-functions.md)
+-   [<span data-ttu-id="cd931-106">Funções de tempo de execução do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-106">EAPHost Supplicant Run-time Functions</span></span>](eap-host-supplicant-run-time-functions.md)
+-   [<span data-ttu-id="cd931-107">Retornos de chamada do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-107">EAPHost Supplicant Callbacks</span></span>](eap-host-supplicant-callbacks.md)
+-   [<span data-ttu-id="cd931-108">Enumerações do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-108">EAPHost Supplicant Enumerations</span></span>](eap-host-supplicant-enumerations.md)
+-   [<span data-ttu-id="cd931-109">Estruturas do suplicante EAPHost</span><span class="sxs-lookup"><span data-stu-id="cd931-109">EAPHost Supplicant Structures</span></span>](eap-host-supplicant-structures.md)
 
  
 

@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634963"
 ---
-# <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a><span data-ttu-id="9b234-104">Código de exemplo para adicionar um usuário ou grupo de domínio a um grupo local</span><span class="sxs-lookup"><span data-stu-id="9b234-104">Example Code for Adding a Domain User or Group to a Local Group</span></span>
+# <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a><span data-ttu-id="4ee74-104">Código de exemplo para adicionar um usuário ou grupo de domínio a um grupo local</span><span class="sxs-lookup"><span data-stu-id="4ee74-104">Example Code for Adding a Domain User or Group to a Local Group</span></span>
 
-<span data-ttu-id="9b234-105">O exemplo de código C++ a seguir adiciona um usuário ou grupo de domínio a um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="9b234-105">The following C++ code example adds a domain user or group to a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
+<span data-ttu-id="4ee74-105">O exemplo de código C++ a seguir adiciona um usuário ou grupo de domínio a um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="4ee74-105">The following C++ code example adds a domain user or group to a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
 
 
 ```C++
@@ -106,7 +106,7 @@ HRESULT AddDomainUserToLocalGroup(LPCWSTR pwszComputerName,
 
 
 
-<span data-ttu-id="9b234-106">O exemplo de código a seguir Visual Basic adiciona um usuário ou grupo de domínio a um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="9b234-106">The following Visual Basic code example adds a domain user or group to a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
+<span data-ttu-id="4ee74-106">O exemplo de código a seguir Visual Basic adiciona um usuário ou grupo de domínio a um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="4ee74-106">The following Visual Basic code example adds a domain user or group to a local group on a member server or a computer running on Windows NT Workstation or Windows 2000 Professional.</span></span>
 
 
 ```VB

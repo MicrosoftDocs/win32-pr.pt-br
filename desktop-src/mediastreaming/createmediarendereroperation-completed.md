@@ -22,13 +22,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638541"
 ---
-# <a name="createmediarendereroperationcompleted-property"></a><span data-ttu-id="d7f48-106">Propriedade CreateMediaRendererOperation. Completed</span><span class="sxs-lookup"><span data-stu-id="d7f48-106">CreateMediaRendererOperation.Completed property</span></span>
+# <a name="createmediarendereroperationcompleted-property"></a><span data-ttu-id="47160-106">Propriedade CreateMediaRendererOperation. Completed</span><span class="sxs-lookup"><span data-stu-id="47160-106">CreateMediaRendererOperation.Completed property</span></span>
 
-<span data-ttu-id="d7f48-107">Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) ou [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) é concluída.</span><span class="sxs-lookup"><span data-stu-id="d7f48-107">Gets or sets an event handler that is invoked when the asynchronous operation started by [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) or [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) is completed.</span></span>
+<span data-ttu-id="47160-107">Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) ou [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) é concluída.</span><span class="sxs-lookup"><span data-stu-id="47160-107">Gets or sets an event handler that is invoked when the asynchronous operation started by [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) or [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) is completed.</span></span>
 
-<span data-ttu-id="d7f48-108">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="d7f48-108">This property is read/write.</span></span>
+<span data-ttu-id="47160-108">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="47160-108">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d7f48-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d7f48-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="47160-109">Syntax</span><span class="sxs-lookup"><span data-stu-id="47160-109">Syntax</span></span>
 
 
 ```C++
@@ -43,15 +43,15 @@ HRESULT get_Completed(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="d7f48-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="d7f48-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="47160-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="47160-110">Property value</span></span>
 
-<span data-ttu-id="d7f48-111">O manipulador de eventos.</span><span class="sxs-lookup"><span data-stu-id="d7f48-111">The event handler.</span></span>
+<span data-ttu-id="47160-111">O manipulador de eventos.</span><span class="sxs-lookup"><span data-stu-id="47160-111">The event handler.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d7f48-112">Consulte também</span><span class="sxs-lookup"><span data-stu-id="d7f48-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="47160-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="47160-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d7f48-113">**CreateMediaRendererOperation**</span><span class="sxs-lookup"><span data-stu-id="d7f48-113">**CreateMediaRendererOperation**</span></span>](createmediarendereroperation.md)
+[<span data-ttu-id="47160-113">**CreateMediaRendererOperation**</span><span class="sxs-lookup"><span data-stu-id="47160-113">**CreateMediaRendererOperation**</span></span>](createmediarendereroperation.md)
 </dt> </dl>
 
  

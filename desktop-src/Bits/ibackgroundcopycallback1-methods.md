@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635112"
 ---
-# <a name="ibackgroundcopycallback1-methods"></a><span data-ttu-id="68c9b-103">Métodos IBackgroundCopyCallback1</span><span class="sxs-lookup"><span data-stu-id="68c9b-103">IBackgroundCopyCallback1 Methods</span></span>
+# <a name="ibackgroundcopycallback1-methods"></a><span data-ttu-id="f09ff-103">Métodos IBackgroundCopyCallback1</span><span class="sxs-lookup"><span data-stu-id="f09ff-103">IBackgroundCopyCallback1 Methods</span></span>
 
-<span data-ttu-id="68c9b-104">A interface [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="68c9b-104">The [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1) interface exposes the following methods.</span></span>
+<span data-ttu-id="f09ff-104">A interface [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="f09ff-104">The [**IBackgroundCopyCallback1**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopycallback1) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="68c9b-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="68c9b-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="f09ff-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f09ff-105">In this section</span></span>
 
--   [<span data-ttu-id="68c9b-106">**Método OnStatus**</span><span class="sxs-lookup"><span data-stu-id="68c9b-106">**OnStatus Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopycallback1-onstatus)
+-   [<span data-ttu-id="f09ff-106">**Método OnStatus**</span><span class="sxs-lookup"><span data-stu-id="f09ff-106">**OnStatus Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopycallback1-onstatus)
 
  
 

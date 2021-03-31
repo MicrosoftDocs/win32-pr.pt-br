@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640617"
 ---
-# <a name="creating-and-deleting-a-file"></a><span data-ttu-id="73dc9-114">Criando e excluindo um arquivo</span><span class="sxs-lookup"><span data-stu-id="73dc9-114">Creating and Deleting a File</span></span>
+# <a name="creating-and-deleting-a-file"></a><span data-ttu-id="ea87f-114">Criando e excluindo um arquivo</span><span class="sxs-lookup"><span data-stu-id="ea87f-114">Creating and Deleting a File</span></span>
 
-<span data-ttu-id="73dc9-115">Para criar um arquivo, defina o parâmetro *dwOpenFlags* da função [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) como MMIO \_ Create.</span><span class="sxs-lookup"><span data-stu-id="73dc9-115">To create a file, set the *dwOpenFlags* parameter of the [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) function to MMIO\_CREATE.</span></span> <span data-ttu-id="73dc9-116">O exemplo a seguir cria um arquivo e o abre para leitura e gravação.</span><span class="sxs-lookup"><span data-stu-id="73dc9-116">The following example creates a file and opens it for reading and writing.</span></span>
+<span data-ttu-id="ea87f-115">Para criar um arquivo, defina o parâmetro *dwOpenFlags* da função [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) como MMIO \_ Create.</span><span class="sxs-lookup"><span data-stu-id="ea87f-115">To create a file, set the *dwOpenFlags* parameter of the [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) function to MMIO\_CREATE.</span></span> <span data-ttu-id="ea87f-116">O exemplo a seguir cria um arquivo e o abre para leitura e gravação.</span><span class="sxs-lookup"><span data-stu-id="ea87f-116">The following example creates a file and opens it for reading and writing.</span></span>
 
 
 ```C++
@@ -40,9 +40,9 @@ else
 
 
 
-<span data-ttu-id="73dc9-117">Se o arquivo que você está criando já existir, ele será truncado para comprimento zero.</span><span class="sxs-lookup"><span data-stu-id="73dc9-117">If the file you are creating already exists, it will be truncated to zero length.</span></span>
+<span data-ttu-id="ea87f-117">Se o arquivo que você está criando já existir, ele será truncado para comprimento zero.</span><span class="sxs-lookup"><span data-stu-id="ea87f-117">If the file you are creating already exists, it will be truncated to zero length.</span></span>
 
-<span data-ttu-id="73dc9-118">Para excluir um arquivo, defina o parâmetro *dwOpenFlags* da função **mmioOpen** como MMIO \_ Delete.</span><span class="sxs-lookup"><span data-stu-id="73dc9-118">To delete a file, set the *dwOpenFlags* parameter of the **mmioOpen** function to MMIO\_DELETE.</span></span> <span data-ttu-id="73dc9-119">Depois de excluir um arquivo, ele não pode ser recuperado por nenhum meio padrão.</span><span class="sxs-lookup"><span data-stu-id="73dc9-119">After you delete a file, it cannot be recovered by any standard means.</span></span> <span data-ttu-id="73dc9-120">Se seu aplicativo estiver excluindo um arquivo na solicitação de um usuário, consulte o usuário antes de excluir o arquivo para certificar-se de que o usuário deseja excluí-lo.</span><span class="sxs-lookup"><span data-stu-id="73dc9-120">If your application is deleting a file at the request of a user, query the user before deleting the file to make sure the user wants to delete it.</span></span>
+<span data-ttu-id="ea87f-118">Para excluir um arquivo, defina o parâmetro *dwOpenFlags* da função **mmioOpen** como MMIO \_ Delete.</span><span class="sxs-lookup"><span data-stu-id="ea87f-118">To delete a file, set the *dwOpenFlags* parameter of the **mmioOpen** function to MMIO\_DELETE.</span></span> <span data-ttu-id="ea87f-119">Depois de excluir um arquivo, ele não pode ser recuperado por nenhum meio padrão.</span><span class="sxs-lookup"><span data-stu-id="ea87f-119">After you delete a file, it cannot be recovered by any standard means.</span></span> <span data-ttu-id="ea87f-120">Se seu aplicativo estiver excluindo um arquivo na solicitação de um usuário, consulte o usuário antes de excluir o arquivo para certificar-se de que o usuário deseja excluí-lo.</span><span class="sxs-lookup"><span data-stu-id="ea87f-120">If your application is deleting a file at the request of a user, query the user before deleting the file to make sure the user wants to delete it.</span></span>
 
  
 
