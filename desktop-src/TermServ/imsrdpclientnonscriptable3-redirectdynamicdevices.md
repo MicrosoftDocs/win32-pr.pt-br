@@ -57,7 +57,7 @@ Especifica ou recupera se os dispositivos PnP (Plug and Play dinamicamente anexa
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -90,7 +90,7 @@ Especifica se dispositivos PnP dinamicamente anexados que são enumerados enquan
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

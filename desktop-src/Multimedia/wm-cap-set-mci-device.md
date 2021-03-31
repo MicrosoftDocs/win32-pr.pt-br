@@ -65,7 +65,7 @@ Essa mensagem armazena o nome do dispositivo MCI em uma estrutura interna. Ele n
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

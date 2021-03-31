@@ -63,7 +63,7 @@ Retorna a largura da margem esquerda no LOWORD e a largura da margem direita no 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -47,7 +47,7 @@ Não usado. Define as expressões regulares usadas para localizar uma cadeia de 
 
 
 
-| Nome  | Type   | Descrição                                                                                               |
+| Nome  | Tipo   | Descrição                                                                                               |
 |-------|--------|-----------------------------------------------------------------------------------------------------------|
 | name  | string | A expressão regular usada para localizar uma cadeia de caracteres correspondente na cadeia de caracteres da mensagem.<br/>                   |
 | value | string | A expressão regular usada para alterar a cadeia de caracteres correspondente encontrada na cadeia de caracteres da mensagem.<br/> |

@@ -19,7 +19,7 @@ ms.locfileid: "103642921"
 
 A tabela usada para layout não deve ter informações de cabeçalho, nome acessível ou resumo definidas (**th**, **Summary**, **Aria-DescribedBy**, **Aria-labelledby**, **Aria-Label**, **title**, atributos de **legenda** ).
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

@@ -76,7 +76,7 @@ Hora em que o trabalho entrou no estado de BG_JOB_STATE_TRANSFERRED. A hora é e
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -43,7 +43,7 @@ O objeto **SWbemProperty** tem essas propriedades.
 | [**CIMType**](swbemproperty-cimtype.md)<br/>          | Somente leitura<br/>  | Tipo desta propriedade.<br/>                                                                                             |
 | [**IsArray**](swbemproperty-isarray.md)<br/>          | Somente leitura<br/>  | Valor booliano que indica se essa propriedade tem um tipo de matriz.<br/>                                                   |
 | [**IsLocal**](swbemproperty-islocal.md)<br/>          | Somente leitura<br/>  | Valor booliano que indica se essa propriedade é local.<br/>                                                            |
-| [**Name**](swbemproperty-name.md)<br/>                | Somente leitura<br/>  | Nome dessa propriedade WMI.<br/>                                                                                         |
+| [**Nome**](swbemproperty-name.md)<br/>                | Somente leitura<br/>  | Nome dessa propriedade WMI.<br/>                                                                                         |
 | [**Ter**](swbemproperty-origin.md)<br/>            | Somente leitura<br/>  | Contém a classe de origem desta propriedade.<br/>                                                                   |
 | [**Qualificadores\_**](swbemproperty-qualifiers-.md)<br/> | Somente leitura<br/>  | Um objeto [**SWbemQualifierSet**](swbemqualifierset.md) , que é a coleção de qualificadores para essa propriedade.<br/> |
 | [**Valor**](swbemproperty-value.md)<br/>              | Leitura/gravação<br/> | Valor real dessa propriedade. Esta é a propriedade de automação padrão deste objeto.<br/>                             |

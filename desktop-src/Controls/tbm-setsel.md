@@ -65,7 +65,7 @@ Essa mensagem será ignorada se o TrackBar não tiver o [**estilo \_ ENABLESELRA
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

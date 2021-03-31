@@ -65,7 +65,7 @@ O elemento **Execution** é definido pelo tipo complexo [**SystemPropertiesType*
 
 
 
-| Nome          | Type         | Description                                                                                               |
+| Nome          | Tipo         | Descrição                                                                                               |
 |---------------|--------------|-----------------------------------------------------------------------------------------------------------|
 | Kerneltime    | unsignedInt  | Tempo de execução decorrido para instruções do modo kernel, em unidades de tempo de CPU.<br/>                        |
 | ProcessID     | unsignedInt  | Identifica o processo que gerou o evento.<br/>                                               |
@@ -88,7 +88,7 @@ O elemento **Execution** é definido pelo tipo complexo [**SystemPropertiesType*
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

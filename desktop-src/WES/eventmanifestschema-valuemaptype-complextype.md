@@ -47,7 +47,7 @@ Define uma lista de mapeamentos de nome/valor entre valores inteiros e valores d
 
 
 
-| Elemento                                                     | Type                                                                           | Description                                                                 |
+| Elemento                                                     | Type                                                                           | Descrição                                                                 |
 |-------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | [**mapeada**](eventmanifestschema-map-valuemaptype-element.md) | [**ValueMapValueType**](eventmanifestschema-valuemapvaluetype-complextype.md) | Define o mapeamento entre um valor inteiro e um valor de cadeia de caracteres.<br/> |
 
@@ -57,7 +57,7 @@ Define uma lista de mapeamentos de nome/valor entre valores inteiros e valores d
 
 
 
-| Nome   | Type                                                              | Descrição                                                                                                                                                                                                                                                                                                         |
+| Nome   | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | string                                                            | O nome do mapa de valor. Use o nome em um elemento de dados para fazer referência aos mapeamentos.<br/>                                                                                                                                                                                                                     |
 | símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O símbolo a ser usado para fazer referência aos mapeamentos em seu aplicativo. O [**compilador de mensagem (MC.exe)**](message-compiler--mc-exe-.md) usa o símbolo para criar uma constante para o mapa no arquivo de cabeçalho que o compilador gera. Se você não especificar um símbolo, o compilador gerará um para você.<br/> |

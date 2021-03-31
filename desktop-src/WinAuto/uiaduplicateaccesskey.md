@@ -17,7 +17,7 @@ ms.locfileid: "104005464"
 
 Há um elemento de automação irmão que tem a mesma chave de acesso/chave de aceleração
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

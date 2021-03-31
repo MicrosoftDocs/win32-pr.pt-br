@@ -26,7 +26,7 @@ ms.locfileid: "103644308"
 
 Tipo de verificação executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

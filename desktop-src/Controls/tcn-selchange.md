@@ -65,7 +65,7 @@ Para determinar a guia selecionada no momento, use a macro [**\_ getcurseal TabC
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

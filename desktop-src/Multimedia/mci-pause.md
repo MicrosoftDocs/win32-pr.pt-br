@@ -86,7 +86,7 @@ Para dispositivos de vídeo digital, o parâmetro *lpPause* aponta para uma estr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

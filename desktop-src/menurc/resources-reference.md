@@ -18,7 +18,7 @@ ms.locfileid: "103644098"
 -   [Funções de recurso](resources-functions.md)
 -   [Macros de recurso](resources-macros.md)
 -   [Estruturas de recursos](resources-structures.md)
--   [**Tipos de recurso**](resource-types.md)
+-   [**Tipos de recursos**](resource-types.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

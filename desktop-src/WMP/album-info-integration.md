@@ -1,0 +1,56 @@
+---
+title: Integração de informações de álbum
+description: Integração de informações de álbum
+ms.assetid: c59c0c1b-eddc-4061-87cc-a5c44ae0c15d
+keywords:
+- Repositórios online do Windows Media Player, integração de informações de álbum
+- lojas online, integração de informações de álbum
+- tipo 2 lojas online, integração de informações de álbum
+- Lojas online do Windows Media Player, integrando informações de álbum
+- lojas online, integrando informações de álbum
+- Digite 2 lojas online, integrando informações do álbum
+- Windows Media Player, integrando informações de álbum
+- Windows Media Player, integração de informações de álbum
+- integração de informações de álbum
+- Integrando informações do álbum
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b03586217ec0a0eebd9abd0a9acae62790f838f3
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104005437"
+---
+# <a name="album-info-integration"></a>Integração de informações de álbum
+
+O Windows Media Player permite que os usuários solicitem informações detalhadas sobre o CD ou DVD do qual o conteúdo de mídia digital foi originado clicando em um botão, como **mais informações**. Quando o usuário clica no botão, o Windows Media Player 10 ou posterior chama o repositório de música atual para exibir os detalhes do álbum. Quando isso acontece, o Player abre o painel de informações do álbum e exibe a página da Web especificada pelo atributo **URL** do elemento **AlbumInfo** do documento serviceInfo.
+
+O Windows Media Player acrescenta uma cadeia de caracteres de consulta à URL para fornecer informações à loja online sobre o conteúdo solicitado pelo usuário. A cadeia de caracteres de consulta inclui atributos como **título**, **álbum** e **artista**, que o repositório online pode usar para determinar o álbum correto a ser exibido. A documentação de referência para o elemento **AlbumInfo** fornece a lista completa de atributos de cadeia de caracteres de consulta e suas descrições.
+
+## <a name="guidelines-for-album-info"></a>Diretrizes para informações de álbum
+
+Ao criar a página da Web informações do álbum, use as seguintes diretrizes:
+
+-   A página deve identificar claramente a loja online que fornece as informações. Você pode fazer isso exibindo de forma proeminente seu logotipo, por exemplo.
+-   A página deve incluir um link para a política de privacidade da sua empresa.
+-   Evite a navegação de página dentro do recurso de informações do álbum sempre que possível. Você deve navegar até sua loja online para a maioria das atividades.
+-   Recomendamos que você forneça informações valiosas sem exigir que o usuário instale programas ou faça logon em sua loja online.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[**Sobre as lojas online do tipo 2**](about-type-2-online-stores.md)
+</dt> <dt>
+
+[**Elemento AlbumInfo**](albuminfo-element.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

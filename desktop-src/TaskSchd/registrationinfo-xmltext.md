@@ -27,7 +27,7 @@ ms.locfileid: "103644390"
 
 Para scripts, Obtém ou define uma versão formatada em XML das informações de registro da tarefa.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -53,7 +53,7 @@ Uma versão formatada em XML das informações de registro da tarefa.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
