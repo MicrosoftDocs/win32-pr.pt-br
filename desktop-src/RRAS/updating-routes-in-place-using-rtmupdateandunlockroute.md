@@ -1,0 +1,26 @@
+---
+title: Atualizando rotas no local usando RtmUpdateAndUnlockRoute
+description: A atualização in-loco geralmente é mais eficiente do que atualizar a tabela de roteamento com um método indireto, como o usado pela função RtmAddRouteToDest.
+ms.assetid: d4b0b14e-957a-43d5-bacc-8eee4512e2ab
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 77d76d2af5d60172b890eefa1041a08d47a5221b
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104005677"
+---
+# <a name="updating-routes-in-place-using-rtmupdateandunlockroute"></a>Atualizando rotas no local usando RtmUpdateAndUnlockRoute
+
+A atualização in-loco geralmente é mais eficiente do que atualizar a tabela de roteamento com um método indireto, como o usado pela função [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) . Esse método é mais eficiente, pois o cliente não precisa obter um identificador nem passar a estrutura de [**informações da \_ rota \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) de e para o Gerenciador de tabela de roteamento. Esse método também leva menos tempo. No entanto, a atualização direta da tabela de roteamento pode ser arriscada, pois o Gerenciador da tabela de roteamento não está funcionando como um intermediário.
+
+Para obter um exemplo de código que mostra como usar essas funções, consulte [atualizar uma rota no local usando RtmUpdateAndUnlockRoute](update-a-route-in-place-using-rtmupdateandunlockroute.md).
+
+ 
+
+ 
+
+
+
+
