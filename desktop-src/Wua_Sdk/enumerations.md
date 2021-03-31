@@ -1,0 +1,55 @@
+---
+description: Enumerações (páginas de controles e propriedades)
+ms.assetid: 2ac80d0f-94c2-4d70-a48a-1b0060f91902
+title: Enumerações
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a2dd179b02d1d141876296c9942a253b225266bf
+ms.sourcegitcommit: aab10824ee4883c70e1afba428b679a17915a5aa
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "104012068"
+---
+# <a name="enumerations"></a>Enumerações
+
+O Windows Update Agent (WUA) usa as enumerações listadas na tabela a seguir para representar o status das operações.
+
+
+
+| Enumeração                                                                                  | Descrição                                                                                                                                                                                                                                                                           |
+|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**AddServiceFlag**](/windows/win32/api/wuapi/ne-wuapi-addserviceflag)                                                     | Define as possíveis maneiras em que o registro de serviço pode ser processado.                                                                                                                                                                                                         |
+| [**Autodownloadmode**](/windows/win32/api/wuapi/ne-wuapi-autodownloadmode)                                                 | Define a lógica que é usada para determinar se Atualizações Automáticas baixará automaticamente uma atualização depois que ela for determinada para ser aplicável ao computador.                                                                                                                  |
+| [**AutomaticUpdatesNotificationLevel**](/windows/win32/api/wuapi/ne-wuapi-automaticupdatesnotificationlevel)               | Define as maneiras possíveis pelas quais os usuários elevados são notificados sobre Atualizações Automáticas eventos.                                                                                                                                                                                        |
+| [**AutomaticUpdatesPermissionType**](/windows/win32/api/wuapi/ne-wuapi-automaticupdatespermissiontype)                     | Define as maneiras possíveis de definir a propriedade [**IAutomaticUpdatesSettings:: notificationLevel**](/windows/win32/api/wuapi/ne-wuapi-automaticupdatesnotificationlevel) ou a propriedade [**IAutomaticUpdatesSettings2:: IncludeRecommendedUpdates**](/windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings2-get_includerecommendedupdates) . |
+| [**AutomaticUpdatesScheduledInstallationDay**](/windows/win32/api/wuapi/ne-wuapi-automaticupdatesscheduledinstallationday) | Define os dias da semana em que Atualizações Automáticas instala ou desinstala atualizações.                                                                                                                                                                                                   |
+| [**AutomaticUpdatesUserType**](/windows/win32/api/wuapi/ne-wuapi-automaticupdatesusertype)                                 | Descreve o tipo de usuário.                                                                                                                                                                                                                                                           |
+| [**Autoseleçãomode**](/windows/win32/api/wuapi/ne-wuapi-autoselectionmode)                                               | Define a lógica usada para determinar se uma determinada atualização será selecionada automaticamente quando o usuário exibir as atualizações disponíveis na interface do usuário do Windows Update.                                                                                                        |
+| [**Deploymentaction**](/windows/win32/api/wuapi/ne-wuapi-deploymentaction)                                                 | Define a ação para a qual uma atualização é implantada explicitamente.                                                                                                                                                                                                                        |
+| [**DownloadPhase**](/windows/win32/api/wuapi/ne-wuapi-downloadphase)                                                       | Define o progresso do download de uma atualização atual que é retornada pela propriedade [**IDownloadProgress:: CurrentUpdateDownloadPhase**](/windows/desktop/api/Wuapi/nf-wuapi-idownloadprogress-get_currentupdatedownloadphase) .                                                                                      |
+| [**DownloadPriority**](/windows/win32/api/wuapi/ne-wuapi-downloadpriority)                                                 | Define as possíveis prioridades para uma operação de download.                                                                                                                                                                                                                             |
+| [**InstallationImpact**](/windows/win32/api/wuapi/ne-wuapi-installationimpact)                                             | Define os níveis possíveis de impacto que podem ser causados pela instalação ou desinstalação de uma atualização.                                                                                                                                                                                     |
+| [**InstallationRebootBehavior**](/windows/win32/api/wuapi/ne-wuapi-installationrebootbehavior)                             | Define os comportamentos de reinicialização possíveis para uma atualização.                                                                                                                                                                                                                                 |
+| [**OperationResultCode**](/windows/win32/api/wuapi/ne-wuapi-operationresultcode)                                           | Define os possíveis resultados de uma operação de download, instalação, desinstalação ou verificação em uma atualização.                                                                                                                                                                               |
+| [**SearchScope**](/windows/win32/api/wuapi/ne-wuapi-searchscope)                                                           | Especifica a variedade de atualizações que devem ser retornadas pela pesquisa: atualizações por computador, atualizações por usuário ou ambas. Atualizações por usuário são atualizações criadas para afetar apenas o ambiente de um único usuário. Para obter mais informações, consulte [**IUpdate4::P eruser**](/windows/desktop/api/Wuapi/nf-wuapi-iupdate4-get_peruser).    |
+| [**ServerSelection**](/openspecs/windows_protocols/ms-uamg/07e2bfa4-6795-4189-b007-cc50b476181a)                                                   | Define os serviços de atualização que Windows Update podem operar. .                                                                                                                                                                                                                |
+| [**UpdateEndpointAuthTokenType**](updateendpointauthtokentype.md)                           | Define o tipo de tokens que podem ser usados para autenticação com um ponto de extremidade.                                                                                                                                                                                                      |
+| [**UpdateEndpointType**](updateendpointtype.md)                                             | Define o tipo de pontos de extremidade que podem ser usados para se conectar a um serviço.                                                                                                                                                                                                               |
+| [**UpdateExceptionContext**](/windows/win32/api/wuapi/ne-wuapi-updateexceptioncontext)                                     | Define o contexto no qual um objeto [**IUpdateException**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateexception) pode ser fornecido.                                                                                                                                                                                  |
+| [**UpdateLockdownOption**](/windows/win32/api/wuapi/ne-wuapi-updatelockdownoption)                                         | Define a funcionalidade que o objeto do Windows Update Agent (WUA) pode acessar de Windows Update.                                                                                                                                                                                  |
+| [**Houver**](/windows/win32/api/wuapi/ne-wuapi-updateoperation)                                                   | Define as operações que podem ser tentadas em uma atualização.                                                                                                                                                                                                                            |
+| [**UpdateServiceOption**](/windows/win32/api/wuapi/ne-wuapi-updateserviceoption)                                           | Define as opções para remover o registro de serviço para um serviço de pacote de verificação.                                                                                                                                                                                                    |
+| [**UpdateServiceRegistrationState**](/windows/win32/api/wuapi/ne-wuapi-updateserviceregistrationstate)                     | Define os Estados possíveis para um serviço de atualização.                                                                                                                                                                                                                                    |
+| [**UpdateType**](/windows/win32/api/wuapi/ne-wuapi-updatetype)                                                             | Indica se uma atualização é uma atualização de software ou uma atualização de driver.                                                                                                                                                                                                                  |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
