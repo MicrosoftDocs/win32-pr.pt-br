@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647023"
 ---
-# <a name="locale_snan"></a><span data-ttu-id="c2e75-103">SNAN de localidade \_</span><span class="sxs-lookup"><span data-stu-id="c2e75-103">LOCALE\_SNAN</span></span>
+# <a name="locale_snan"></a><span data-ttu-id="b9859-103">SNAN de localidade \_</span><span class="sxs-lookup"><span data-stu-id="b9859-103">LOCALE\_SNAN</span></span>
 
-<span data-ttu-id="c2e75-104">**Windows Vista e posterior:** Valor da cadeia de caracteres de "não é um número", por exemplo, "Nan" para a localidade em inglês (Estados Unidos).</span><span class="sxs-lookup"><span data-stu-id="c2e75-104">**Windows Vista and later:** String value for "Not a number", for example, "Nan" for the English (United States) locale.</span></span> <span data-ttu-id="c2e75-105">Não há nenhum limite para o número de caracteres permitido para essa cadeia.</span><span class="sxs-lookup"><span data-stu-id="c2e75-105">There is no limit on the number of characters allowed for this string.</span></span>
+<span data-ttu-id="b9859-104">**Windows Vista e posterior:** Valor da cadeia de caracteres de "não é um número", por exemplo, "Nan" para a localidade em inglês (Estados Unidos).</span><span class="sxs-lookup"><span data-stu-id="b9859-104">**Windows Vista and later:** String value for "Not a number", for example, "Nan" for the English (United States) locale.</span></span> <span data-ttu-id="b9859-105">Não há nenhum limite para o número de caracteres permitido para essa cadeia.</span><span class="sxs-lookup"><span data-stu-id="b9859-105">There is no limit on the number of characters allowed for this string.</span></span>
 
  
 

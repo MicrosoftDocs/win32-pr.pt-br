@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646722"
 ---
-# <a name="jet_snprog-constructor"></a><span data-ttu-id="2592d-103">Construtor de JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="2592d-103">JET_SNPROG constructor</span></span>
+# <a name="jet_snprog-constructor"></a><span data-ttu-id="f8d52-103">Construtor de JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="f8d52-103">JET_SNPROG constructor</span></span>
 
-<span data-ttu-id="2592d-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="2592d-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="2592d-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="2592d-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f8d52-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f8d52-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f8d52-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f8d52-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2592d-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2592d-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f8d52-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f8d52-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New JET_SNPROG()
 public JET_SNPROG()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2592d-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="2592d-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f8d52-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="f8d52-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="2592d-108">Referência</span><span class="sxs-lookup"><span data-stu-id="2592d-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f8d52-108">Referência</span><span class="sxs-lookup"><span data-stu-id="f8d52-108">Reference</span></span>
 
-[<span data-ttu-id="2592d-109">Classe JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="2592d-109">JET_SNPROG class</span></span>](./jet-snprog-class.md)
+[<span data-ttu-id="f8d52-109">Classe JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="f8d52-109">JET_SNPROG class</span></span>](./jet-snprog-class.md)
 
-[<span data-ttu-id="2592d-110">Membros do JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="2592d-110">JET_SNPROG members</span></span>](./jet-snprog-members.md)
+[<span data-ttu-id="f8d52-110">Membros do JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="f8d52-110">JET_SNPROG members</span></span>](./jet-snprog-members.md)
 
-[<span data-ttu-id="2592d-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="2592d-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f8d52-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f8d52-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634737"
 ---
-# <a name="iagentspeechinputpropertiesgetenabled"></a><span data-ttu-id="47c46-103">IAgentSpeechInputProperties:: getabilited</span><span class="sxs-lookup"><span data-stu-id="47c46-103">IAgentSpeechInputProperties::GetEnabled</span></span>
+# <a name="iagentspeechinputpropertiesgetenabled"></a><span data-ttu-id="1e1cf-103">IAgentSpeechInputProperties:: getabilited</span><span class="sxs-lookup"><span data-stu-id="1e1cf-103">IAgentSpeechInputProperties::GetEnabled</span></span>
 
-<span data-ttu-id="47c46-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="47c46-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="1e1cf-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="1e1cf-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 ``` syntax
 HRESULT GetEnabled(
@@ -21,16 +21,16 @@ HRESULT GetEnabled(
 );                   // Enabled setting
 ```
 
-<span data-ttu-id="47c46-105">Recupera um valor que indica se o mecanismo de reconhecimento de fala instalado está habilitado.</span><span class="sxs-lookup"><span data-stu-id="47c46-105">Retrieves a value indicating whether the installed speech recognition engine is enabled.</span></span>
+<span data-ttu-id="1e1cf-105">Recupera um valor que indica se o mecanismo de reconhecimento de fala instalado está habilitado.</span><span class="sxs-lookup"><span data-stu-id="1e1cf-105">Retrieves a value indicating whether the installed speech recognition engine is enabled.</span></span>
 
--   <span data-ttu-id="47c46-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="47c46-106">Returns S\_OK to indicate the operation was successful.</span></span>
+-   <span data-ttu-id="1e1cf-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="1e1cf-106">Returns S\_OK to indicate the operation was successful.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="47c46-107"><span id="pbEnabled"></span><span id="pbenabled"></span><span id="PBENABLED"></span>*pbEnabled*</span><span class="sxs-lookup"><span data-stu-id="47c46-107"><span id="pbEnabled"></span><span id="pbenabled"></span><span id="PBENABLED"></span>*pbEnabled*</span></span>
+<span data-ttu-id="1e1cf-107"><span id="pbEnabled"></span><span id="pbenabled"></span><span id="PBENABLED"></span>*pbEnabled*</span><span class="sxs-lookup"><span data-stu-id="1e1cf-107"><span id="pbEnabled"></span><span id="pbenabled"></span><span id="PBENABLED"></span>*pbEnabled*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="47c46-108">Endereço de uma variável que recebe **true** se o mecanismo de fala estiver habilitado no momento e **false** se estiver desabilitado.</span><span class="sxs-lookup"><span data-stu-id="47c46-108">Address of a variable that receives **True** if the speech engine is currently enabled and **False** if disabled.</span></span>
+<span data-ttu-id="1e1cf-108">Endereço de uma variável que recebe **true** se o mecanismo de fala estiver habilitado no momento e **false** se estiver desabilitado.</span><span class="sxs-lookup"><span data-stu-id="1e1cf-108">Address of a variable that receives **True** if the speech engine is currently enabled and **False** if disabled.</span></span>
 
 </dd> </dl>
 

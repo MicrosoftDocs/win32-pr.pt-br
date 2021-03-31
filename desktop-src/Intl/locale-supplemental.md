@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647660"
 ---
-# <a name="locale_supplemental"></a><span data-ttu-id="c5a1e-103">\_suplementar de localidade</span><span class="sxs-lookup"><span data-stu-id="c5a1e-103">LOCALE\_SUPPLEMENTAL</span></span>
+# <a name="locale_supplemental"></a><span data-ttu-id="a245b-103">\_suplementar de localidade</span><span class="sxs-lookup"><span data-stu-id="a245b-103">LOCALE\_SUPPLEMENTAL</span></span>
 
-<span data-ttu-id="c5a1e-104">**Windows Vista e posterior:** Enumerar [localidades complementares](custom-locales.md).</span><span class="sxs-lookup"><span data-stu-id="c5a1e-104">**Windows Vista and later:** Enumerate [supplemental locales](custom-locales.md).</span></span>
+<span data-ttu-id="a245b-104">**Windows Vista e posterior:** Enumerar [localidades complementares](custom-locales.md).</span><span class="sxs-lookup"><span data-stu-id="a245b-104">**Windows Vista and later:** Enumerate [supplemental locales](custom-locales.md).</span></span>
 
  
 

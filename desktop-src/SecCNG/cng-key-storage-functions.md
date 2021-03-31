@@ -11,34 +11,34 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646672"
 ---
-# <a name="cng-key-storage-functions"></a><span data-ttu-id="5eba4-103">Funções de armazenamento de chaves CNG</span><span class="sxs-lookup"><span data-stu-id="5eba4-103">CNG Key Storage Functions</span></span>
+# <a name="cng-key-storage-functions"></a><span data-ttu-id="be231-103">Funções de armazenamento de chaves CNG</span><span class="sxs-lookup"><span data-stu-id="be231-103">CNG Key Storage Functions</span></span>
 
-<span data-ttu-id="5eba4-104">Cryptography API: próxima geração (CNG) define as funções a seguir que são usadas para executar operações de armazenamento de chaves CNG.</span><span class="sxs-lookup"><span data-stu-id="5eba4-104">Cryptography API: Next Generation (CNG) defines the following functions which are used to perform CNG key storage operations.</span></span>
+<span data-ttu-id="be231-104">Cryptography API: próxima geração (CNG) define as funções a seguir que são usadas para executar operações de armazenamento de chaves CNG.</span><span class="sxs-lookup"><span data-stu-id="be231-104">Cryptography API: Next Generation (CNG) defines the following functions which are used to perform CNG key storage operations.</span></span>
 
--   [<span data-ttu-id="5eba4-105">**NCryptCreatePersistedKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-105">**NCryptCreatePersistedKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptcreatepersistedkey)
--   [<span data-ttu-id="5eba4-106">**NCryptDecrypt**</span><span class="sxs-lookup"><span data-stu-id="5eba4-106">**NCryptDecrypt**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptdecrypt)
--   [<span data-ttu-id="5eba4-107">**NCryptDeleteKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-107">**NCryptDeleteKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptdeletekey)
--   [<span data-ttu-id="5eba4-108">**NCryptDeriveKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-108">**NCryptDeriveKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptderivekey)
--   [<span data-ttu-id="5eba4-109">**NCryptEncrypt**</span><span class="sxs-lookup"><span data-stu-id="5eba4-109">**NCryptEncrypt**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptencrypt)
--   [<span data-ttu-id="5eba4-110">**NCryptEnumAlgorithms**</span><span class="sxs-lookup"><span data-stu-id="5eba4-110">**NCryptEnumAlgorithms**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumalgorithms)
--   [<span data-ttu-id="5eba4-111">**NCryptEnumKeys**</span><span class="sxs-lookup"><span data-stu-id="5eba4-111">**NCryptEnumKeys**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumkeys)
--   [<span data-ttu-id="5eba4-112">**NCryptEnumStorageProviders**</span><span class="sxs-lookup"><span data-stu-id="5eba4-112">**NCryptEnumStorageProviders**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumstorageproviders)
--   [<span data-ttu-id="5eba4-113">**NCryptExportKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-113">**NCryptExportKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptexportkey)
--   [<span data-ttu-id="5eba4-114">**NCryptFinalizeKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-114">**NCryptFinalizeKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey)
--   [<span data-ttu-id="5eba4-115">**NCryptFreeBuffer**</span><span class="sxs-lookup"><span data-stu-id="5eba4-115">**NCryptFreeBuffer**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreebuffer)
--   [<span data-ttu-id="5eba4-116">**NCryptFreeObject**</span><span class="sxs-lookup"><span data-stu-id="5eba4-116">**NCryptFreeObject**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreeobject)
--   [<span data-ttu-id="5eba4-117">**NCryptGetProperty**</span><span class="sxs-lookup"><span data-stu-id="5eba4-117">**NCryptGetProperty**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty)
--   [<span data-ttu-id="5eba4-118">**NCryptImportKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-118">**NCryptImportKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey)
--   [<span data-ttu-id="5eba4-119">**NCryptIsAlgSupported**</span><span class="sxs-lookup"><span data-stu-id="5eba4-119">**NCryptIsAlgSupported**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptisalgsupported)
--   [<span data-ttu-id="5eba4-120">**NCryptIsKeyHandle**</span><span class="sxs-lookup"><span data-stu-id="5eba4-120">**NCryptIsKeyHandle**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptiskeyhandle)
--   [<span data-ttu-id="5eba4-121">**NCryptNotifyChangeKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-121">**NCryptNotifyChangeKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptnotifychangekey)
--   [<span data-ttu-id="5eba4-122">**NCryptOpenKey**</span><span class="sxs-lookup"><span data-stu-id="5eba4-122">**NCryptOpenKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey)
--   [<span data-ttu-id="5eba4-123">**NCryptOpenStorageProvider**</span><span class="sxs-lookup"><span data-stu-id="5eba4-123">**NCryptOpenStorageProvider**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenstorageprovider)
--   [<span data-ttu-id="5eba4-124">**NCryptSecretAgreement**</span><span class="sxs-lookup"><span data-stu-id="5eba4-124">**NCryptSecretAgreement**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsecretagreement)
--   [<span data-ttu-id="5eba4-125">**NCryptSetProperty**</span><span class="sxs-lookup"><span data-stu-id="5eba4-125">**NCryptSetProperty**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty)
--   [<span data-ttu-id="5eba4-126">**NCryptSignHash**</span><span class="sxs-lookup"><span data-stu-id="5eba4-126">**NCryptSignHash**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash)
--   [<span data-ttu-id="5eba4-127">**NCryptTranslateHandle**</span><span class="sxs-lookup"><span data-stu-id="5eba4-127">**NCryptTranslateHandle**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncrypttranslatehandle)
--   [<span data-ttu-id="5eba4-128">**NCryptVerifySignature**</span><span class="sxs-lookup"><span data-stu-id="5eba4-128">**NCryptVerifySignature**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature)
+-   [<span data-ttu-id="be231-105">**NCryptCreatePersistedKey**</span><span class="sxs-lookup"><span data-stu-id="be231-105">**NCryptCreatePersistedKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptcreatepersistedkey)
+-   [<span data-ttu-id="be231-106">**NCryptDecrypt**</span><span class="sxs-lookup"><span data-stu-id="be231-106">**NCryptDecrypt**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptdecrypt)
+-   [<span data-ttu-id="be231-107">**NCryptDeleteKey**</span><span class="sxs-lookup"><span data-stu-id="be231-107">**NCryptDeleteKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptdeletekey)
+-   [<span data-ttu-id="be231-108">**NCryptDeriveKey**</span><span class="sxs-lookup"><span data-stu-id="be231-108">**NCryptDeriveKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptderivekey)
+-   [<span data-ttu-id="be231-109">**NCryptEncrypt**</span><span class="sxs-lookup"><span data-stu-id="be231-109">**NCryptEncrypt**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptencrypt)
+-   [<span data-ttu-id="be231-110">**NCryptEnumAlgorithms**</span><span class="sxs-lookup"><span data-stu-id="be231-110">**NCryptEnumAlgorithms**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumalgorithms)
+-   [<span data-ttu-id="be231-111">**NCryptEnumKeys**</span><span class="sxs-lookup"><span data-stu-id="be231-111">**NCryptEnumKeys**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumkeys)
+-   [<span data-ttu-id="be231-112">**NCryptEnumStorageProviders**</span><span class="sxs-lookup"><span data-stu-id="be231-112">**NCryptEnumStorageProviders**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptenumstorageproviders)
+-   [<span data-ttu-id="be231-113">**NCryptExportKey**</span><span class="sxs-lookup"><span data-stu-id="be231-113">**NCryptExportKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptexportkey)
+-   [<span data-ttu-id="be231-114">**NCryptFinalizeKey**</span><span class="sxs-lookup"><span data-stu-id="be231-114">**NCryptFinalizeKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey)
+-   [<span data-ttu-id="be231-115">**NCryptFreeBuffer**</span><span class="sxs-lookup"><span data-stu-id="be231-115">**NCryptFreeBuffer**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreebuffer)
+-   [<span data-ttu-id="be231-116">**NCryptFreeObject**</span><span class="sxs-lookup"><span data-stu-id="be231-116">**NCryptFreeObject**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreeobject)
+-   [<span data-ttu-id="be231-117">**NCryptGetProperty**</span><span class="sxs-lookup"><span data-stu-id="be231-117">**NCryptGetProperty**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty)
+-   [<span data-ttu-id="be231-118">**NCryptImportKey**</span><span class="sxs-lookup"><span data-stu-id="be231-118">**NCryptImportKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey)
+-   [<span data-ttu-id="be231-119">**NCryptIsAlgSupported**</span><span class="sxs-lookup"><span data-stu-id="be231-119">**NCryptIsAlgSupported**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptisalgsupported)
+-   [<span data-ttu-id="be231-120">**NCryptIsKeyHandle**</span><span class="sxs-lookup"><span data-stu-id="be231-120">**NCryptIsKeyHandle**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptiskeyhandle)
+-   [<span data-ttu-id="be231-121">**NCryptNotifyChangeKey**</span><span class="sxs-lookup"><span data-stu-id="be231-121">**NCryptNotifyChangeKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptnotifychangekey)
+-   [<span data-ttu-id="be231-122">**NCryptOpenKey**</span><span class="sxs-lookup"><span data-stu-id="be231-122">**NCryptOpenKey**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey)
+-   [<span data-ttu-id="be231-123">**NCryptOpenStorageProvider**</span><span class="sxs-lookup"><span data-stu-id="be231-123">**NCryptOpenStorageProvider**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenstorageprovider)
+-   [<span data-ttu-id="be231-124">**NCryptSecretAgreement**</span><span class="sxs-lookup"><span data-stu-id="be231-124">**NCryptSecretAgreement**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsecretagreement)
+-   [<span data-ttu-id="be231-125">**NCryptSetProperty**</span><span class="sxs-lookup"><span data-stu-id="be231-125">**NCryptSetProperty**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty)
+-   [<span data-ttu-id="be231-126">**NCryptSignHash**</span><span class="sxs-lookup"><span data-stu-id="be231-126">**NCryptSignHash**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash)
+-   [<span data-ttu-id="be231-127">**NCryptTranslateHandle**</span><span class="sxs-lookup"><span data-stu-id="be231-127">**NCryptTranslateHandle**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncrypttranslatehandle)
+-   [<span data-ttu-id="be231-128">**NCryptVerifySignature**</span><span class="sxs-lookup"><span data-stu-id="be231-128">**NCryptVerifySignature**</span></span>](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature)
 
  
 

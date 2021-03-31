@@ -15,16 +15,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634811"
 ---
-# <a name="active-directory-domain-services-architecture"></a><span data-ttu-id="4fe92-105">Arquitetura de Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="4fe92-105">Active Directory Domain Services Architecture</span></span>
+# <a name="active-directory-domain-services-architecture"></a><span data-ttu-id="5f48a-105">Arquitetura de Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="5f48a-105">Active Directory Domain Services Architecture</span></span>
 
-<span data-ttu-id="4fe92-106">Esta seção apresenta os principais componentes de arquitetura do Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="4fe92-106">This section introduces the primary architectural components of Active Directory Domain Services.</span></span>
+<span data-ttu-id="5f48a-106">Esta seção apresenta os principais componentes de arquitetura do Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="5f48a-106">This section introduces the primary architectural components of Active Directory Domain Services.</span></span>
 
--   [<span data-ttu-id="4fe92-107">Agente do sistema de diretório</span><span class="sxs-lookup"><span data-stu-id="4fe92-107">Directory System Agent</span></span>](directory-system-agent.md)
--   [<span data-ttu-id="4fe92-108">Modelo de dados</span><span class="sxs-lookup"><span data-stu-id="4fe92-108">Data Model</span></span>](data-model.md)
--   [<span data-ttu-id="4fe92-109">Esquema</span><span class="sxs-lookup"><span data-stu-id="4fe92-109">Schema</span></span>](schema.md)
--   [<span data-ttu-id="4fe92-110">Modelo de administração</span><span class="sxs-lookup"><span data-stu-id="4fe92-110">Administration Model</span></span>](administration-model.md)
--   [<span data-ttu-id="4fe92-111">Catálogo global</span><span class="sxs-lookup"><span data-stu-id="4fe92-111">Global Catalog</span></span>](global-catalog.md)
--   [<span data-ttu-id="4fe92-112">Segurança de Active Directory</span><span class="sxs-lookup"><span data-stu-id="4fe92-112">Active Directory Security</span></span>](security-in-active-directory-domain-services.md)
+-   [<span data-ttu-id="5f48a-107">Agente do sistema de diretório</span><span class="sxs-lookup"><span data-stu-id="5f48a-107">Directory System Agent</span></span>](directory-system-agent.md)
+-   [<span data-ttu-id="5f48a-108">Modelo de dados</span><span class="sxs-lookup"><span data-stu-id="5f48a-108">Data Model</span></span>](data-model.md)
+-   [<span data-ttu-id="5f48a-109">Esquema</span><span class="sxs-lookup"><span data-stu-id="5f48a-109">Schema</span></span>](schema.md)
+-   [<span data-ttu-id="5f48a-110">Modelo de administração</span><span class="sxs-lookup"><span data-stu-id="5f48a-110">Administration Model</span></span>](administration-model.md)
+-   [<span data-ttu-id="5f48a-111">Catálogo global</span><span class="sxs-lookup"><span data-stu-id="5f48a-111">Global Catalog</span></span>](global-catalog.md)
+-   [<span data-ttu-id="5f48a-112">Segurança de Active Directory</span><span class="sxs-lookup"><span data-stu-id="5f48a-112">Active Directory Security</span></span>](security-in-active-directory-domain-services.md)
 
  
 

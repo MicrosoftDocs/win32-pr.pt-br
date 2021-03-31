@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647260"
 ---
-# <a name="mobile-broadband-profile-schema-v1"></a><span data-ttu-id="7c158-103">Esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="7c158-103">Mobile Broadband Profile Schema v1</span></span>
+# <a name="mobile-broadband-profile-schema-v1"></a><span data-ttu-id="90f4b-103">Esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="90f4b-103">Mobile Broadband Profile Schema v1</span></span>
 
-<span data-ttu-id="7c158-104">O esquema de perfil de banda larga 7Mobile do Windows v1 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .</span><span class="sxs-lookup"><span data-stu-id="7c158-104">The Windows 7Mobile Broadband Profile Schema v1 is available in the namespace `https://www.microsoft.com/networking/WWAN/profile/v1`.</span></span>
+<span data-ttu-id="90f4b-104">O esquema de perfil de banda larga 7Mobile do Windows v1 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .</span><span class="sxs-lookup"><span data-stu-id="90f4b-104">The Windows 7Mobile Broadband Profile Schema v1 is available in the namespace `https://www.microsoft.com/networking/WWAN/profile/v1`.</span></span>
 
--   [<span data-ttu-id="7c158-105">Elementos do esquema do perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="7c158-105">Mobile Broadband Profile Schema v1 Elements</span></span>](schema-elements.md)
--   [<span data-ttu-id="7c158-106">Tipos simples de esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="7c158-106">Mobile Broadband Profile Schema v1 Simple Types</span></span>](schema-simple-types.md)
--   [<span data-ttu-id="7c158-107">Tipos complexos do esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="7c158-107">Mobile Broadband Profile Schema v1 Complex Types</span></span>](schema-complex-types.md)
+-   [<span data-ttu-id="90f4b-105">Elementos do esquema do perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="90f4b-105">Mobile Broadband Profile Schema v1 Elements</span></span>](schema-elements.md)
+-   [<span data-ttu-id="90f4b-106">Tipos simples de esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="90f4b-106">Mobile Broadband Profile Schema v1 Simple Types</span></span>](schema-simple-types.md)
+-   [<span data-ttu-id="90f4b-107">Tipos complexos do esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="90f4b-107">Mobile Broadband Profile Schema v1 Complex Types</span></span>](schema-complex-types.md)
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" ?>

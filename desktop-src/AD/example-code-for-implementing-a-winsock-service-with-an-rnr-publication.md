@@ -15,11 +15,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634951"
 ---
-# <a name="example-code-for-implementing-a-winsock-service-with-an-rnr-publication"></a><span data-ttu-id="9bc4a-105">Exemplo de código para implementar um serviço Winsock com uma publicação RnR</span><span class="sxs-lookup"><span data-stu-id="9bc4a-105">Example Code for Implementing a Winsock Service with an RnR Publication</span></span>
+# <a name="example-code-for-implementing-a-winsock-service-with-an-rnr-publication"></a><span data-ttu-id="b211e-105">Exemplo de código para implementar um serviço Winsock com uma publicação RnR</span><span class="sxs-lookup"><span data-stu-id="b211e-105">Example Code for Implementing a Winsock Service with an RnR Publication</span></span>
 
-<span data-ttu-id="9bc4a-106">O exemplo de código a seguir implementa o serviço Winsock de exemplo com a publicação RnR.</span><span class="sxs-lookup"><span data-stu-id="9bc4a-106">The following code example implements the example Winsock service with RnR publication.</span></span>
+<span data-ttu-id="b211e-106">O exemplo de código a seguir implementa o serviço Winsock de exemplo com a publicação RnR.</span><span class="sxs-lookup"><span data-stu-id="b211e-106">The following code example implements the example Winsock service with RnR publication.</span></span>
 
-<span data-ttu-id="9bc4a-107">Este exemplo usa a função **serverRegister** definida no [código de exemplo para publicar o tópico do ponto de conexão do RnR](example-code-for-publishing-the-rnr-connection-point.md) e a função **ServerUnregister** definida no [código de exemplo para remover o tópico do ponto de conexão do RnR](example-code-for-removing-the-rnr-connection-point.md) .</span><span class="sxs-lookup"><span data-stu-id="9bc4a-107">This sample uses the **serverRegister** function defined in the [Example Code for Publishing the RnR Connection Point](example-code-for-publishing-the-rnr-connection-point.md) topic and the **serverUnregister** function defined in the [Example Code for Removing the RnR Connection Point](example-code-for-removing-the-rnr-connection-point.md) topic.</span></span>
+<span data-ttu-id="b211e-107">Este exemplo usa a função **serverRegister** definida no [código de exemplo para publicar o tópico do ponto de conexão do RnR](example-code-for-publishing-the-rnr-connection-point.md) e a função **ServerUnregister** definida no [código de exemplo para remover o tópico do ponto de conexão do RnR](example-code-for-removing-the-rnr-connection-point.md) .</span><span class="sxs-lookup"><span data-stu-id="b211e-107">This sample uses the **serverRegister** function defined in the [Example Code for Publishing the RnR Connection Point](example-code-for-publishing-the-rnr-connection-point.md) topic and the **serverUnregister** function defined in the [Example Code for Removing the RnR Connection Point](example-code-for-removing-the-rnr-connection-point.md) topic.</span></span>
 
 
 ```C++

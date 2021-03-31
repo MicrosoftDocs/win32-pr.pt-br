@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646728"
 ---
-# <a name="jet_recsizecblongvalueoverhead-property"></a><span data-ttu-id="a5caf-103">Propriedade JET_RECSIZE. cbLongValueOverhead</span><span class="sxs-lookup"><span data-stu-id="a5caf-103">JET_RECSIZE.cbLongValueOverhead property</span></span>
+# <a name="jet_recsizecblongvalueoverhead-property"></a><span data-ttu-id="b3f26-103">Propriedade JET_RECSIZE. cbLongValueOverhead</span><span class="sxs-lookup"><span data-stu-id="b3f26-103">JET_RECSIZE.cbLongValueOverhead property</span></span>
 
-<span data-ttu-id="a5caf-104">Obtém a sobrecarga dos dados de valor longo.</span><span class="sxs-lookup"><span data-stu-id="a5caf-104">Gets the overhead of the long-value data.</span></span>
+<span data-ttu-id="b3f26-104">Obtém a sobrecarga dos dados de valor longo.</span><span class="sxs-lookup"><span data-stu-id="b3f26-104">Gets the overhead of the long-value data.</span></span>
 
-<span data-ttu-id="a5caf-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a5caf-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="a5caf-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a5caf-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="b3f26-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b3f26-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="b3f26-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b3f26-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a5caf-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a5caf-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b3f26-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="b3f26-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.cbLongValueOverhead
 public long cbLongValueOverhead { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="a5caf-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="a5caf-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="b3f26-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="b3f26-108">Property value</span></span>
 
-<span data-ttu-id="a5caf-109">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="a5caf-109">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
+<span data-ttu-id="b3f26-109">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="b3f26-109">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="a5caf-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="a5caf-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b3f26-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="b3f26-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a5caf-111">Referência</span><span class="sxs-lookup"><span data-stu-id="a5caf-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="b3f26-111">Referência</span><span class="sxs-lookup"><span data-stu-id="b3f26-111">Reference</span></span>
 
-[<span data-ttu-id="a5caf-112">Estrutura de JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="a5caf-112">JET_RECSIZE structure</span></span>](./jet-recsize-structure2.md)
+[<span data-ttu-id="b3f26-112">Estrutura de JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="b3f26-112">JET_RECSIZE structure</span></span>](./jet-recsize-structure2.md)
 
-[<span data-ttu-id="a5caf-113">Membros do JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="a5caf-113">JET_RECSIZE members</span></span>](./jet-recsize-members.md)
+[<span data-ttu-id="b3f26-113">Membros do JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="b3f26-113">JET_RECSIZE members</span></span>](./jet-recsize-members.md)
 
-[<span data-ttu-id="a5caf-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="a5caf-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="b3f26-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="b3f26-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

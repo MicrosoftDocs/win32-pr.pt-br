@@ -22,26 +22,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647582"
 ---
-# <a name="jet_dateserial"></a><span data-ttu-id="1503c-103">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="1503c-103">JET_DATESERIAL</span></span>
+# <a name="jet_dateserial"></a><span data-ttu-id="d3e24-103">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="d3e24-103">JET_DATESERIAL</span></span>
 
 
-<span data-ttu-id="1503c-104">_**Aplica-se a:** Windows | Windows Server_</span><span class="sxs-lookup"><span data-stu-id="1503c-104">_**Applies to:** Windows | Windows Server_</span></span>
+<span data-ttu-id="d3e24-104">_**Aplica-se a:** Windows | Windows Server_</span><span class="sxs-lookup"><span data-stu-id="d3e24-104">_**Applies to:** Windows | Windows Server_</span></span>
 
-## <a name="jet_dateserial"></a><span data-ttu-id="1503c-105">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="1503c-105">JET_DATESERIAL</span></span>
+## <a name="jet_dateserial"></a><span data-ttu-id="d3e24-105">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="d3e24-105">JET_DATESERIAL</span></span>
 
-<span data-ttu-id="1503c-106">O tipo de dados **JET_DATESERIAL** representa uma data em dias fracionários desde o ano 100.</span><span class="sxs-lookup"><span data-stu-id="1503c-106">The **JET_DATESERIAL** data type represents a date in fractional days since the year 100.</span></span>
+<span data-ttu-id="d3e24-106">O tipo de dados **JET_DATESERIAL** representa uma data em dias fracionários desde o ano 100.</span><span class="sxs-lookup"><span data-stu-id="d3e24-106">The **JET_DATESERIAL** data type represents a date in fractional days since the year 100.</span></span>
 
 ```cpp
     typedef double JET_DATESERIAL;
 ```
 
-### <a name="data-types"></a><span data-ttu-id="1503c-107">Tipos de dados</span><span class="sxs-lookup"><span data-stu-id="1503c-107">Data Types</span></span>
+### <a name="data-types"></a><span data-ttu-id="d3e24-107">Tipos de dados</span><span class="sxs-lookup"><span data-stu-id="d3e24-107">Data Types</span></span>
 
-<span data-ttu-id="1503c-108">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="1503c-108">JET_DATESERIAL</span></span>
+<span data-ttu-id="d3e24-108">JET_DATESERIAL</span><span class="sxs-lookup"><span data-stu-id="d3e24-108">JET_DATESERIAL</span></span>
 
-<span data-ttu-id="1503c-109">Mantém um número de ponto flutuante de precisão dupla (8 bytes).</span><span class="sxs-lookup"><span data-stu-id="1503c-109">Holds a double-precision (8-byte) floating point number.</span></span> <span data-ttu-id="1503c-110">Isso é o mesmo que o tipo de [Data](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) do C++.</span><span class="sxs-lookup"><span data-stu-id="1503c-110">This is the same as the C++ [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) type.</span></span>
+<span data-ttu-id="d3e24-109">Mantém um número de ponto flutuante de precisão dupla (8 bytes).</span><span class="sxs-lookup"><span data-stu-id="d3e24-109">Holds a double-precision (8-byte) floating point number.</span></span> <span data-ttu-id="d3e24-110">Isso é o mesmo que o tipo de [Data](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) do C++.</span><span class="sxs-lookup"><span data-stu-id="d3e24-110">This is the same as the C++ [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) type.</span></span>
 
-### <a name="requirements"></a><span data-ttu-id="1503c-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1503c-111">Requirements</span></span>
+### <a name="requirements"></a><span data-ttu-id="d3e24-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d3e24-111">Requirements</span></span>
 
 <table>
 <colgroup>
@@ -50,22 +50,22 @@ ms.locfileid: "103647582"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1503c-112"><strong>Cliente</strong></span><span class="sxs-lookup"><span data-stu-id="1503c-112"><strong>Client</strong></span></span></p></td>
-<td><p><span data-ttu-id="1503c-113">Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="1503c-113">Requires Windows Vista, Windows XP, or Windows 2000 Professional.</span></span></p></td>
+<td><p><span data-ttu-id="d3e24-112"><strong>Cliente</strong></span><span class="sxs-lookup"><span data-stu-id="d3e24-112"><strong>Client</strong></span></span></p></td>
+<td><p><span data-ttu-id="d3e24-113">Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="d3e24-113">Requires Windows Vista, Windows XP, or Windows 2000 Professional.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1503c-114"><strong>Servidor</strong></span><span class="sxs-lookup"><span data-stu-id="1503c-114"><strong>Server</strong></span></span></p></td>
-<td><p><span data-ttu-id="1503c-115">Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</span><span class="sxs-lookup"><span data-stu-id="1503c-115">Requires Windows Server 2008, Windows Server 2003, or Windows 2000 Server.</span></span></p></td>
+<td><p><span data-ttu-id="d3e24-114"><strong>Servidor</strong></span><span class="sxs-lookup"><span data-stu-id="d3e24-114"><strong>Server</strong></span></span></p></td>
+<td><p><span data-ttu-id="d3e24-115">Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</span><span class="sxs-lookup"><span data-stu-id="d3e24-115">Requires Windows Server 2008, Windows Server 2003, or Windows 2000 Server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1503c-116"><strong>Cabeçalho</strong></span><span class="sxs-lookup"><span data-stu-id="1503c-116"><strong>Header</strong></span></span></p></td>
-<td><p><span data-ttu-id="1503c-117">Declarado em ESENT. h.</span><span class="sxs-lookup"><span data-stu-id="1503c-117">Declared in Esent.h.</span></span></p></td>
+<td><p><span data-ttu-id="d3e24-116"><strong>Cabeçalho</strong></span><span class="sxs-lookup"><span data-stu-id="d3e24-116"><strong>Header</strong></span></span></p></td>
+<td><p><span data-ttu-id="d3e24-117">Declarado em ESENT. h.</span><span class="sxs-lookup"><span data-stu-id="d3e24-117">Declared in Esent.h.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="see-also"></a><span data-ttu-id="1503c-118">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="1503c-118">See Also</span></span>
+### <a name="see-also"></a><span data-ttu-id="d3e24-118">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="d3e24-118">See Also</span></span>
 
-<span data-ttu-id="1503c-119">[DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx)</span><span class="sxs-lookup"><span data-stu-id="1503c-119">[DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx)</span></span>
+<span data-ttu-id="d3e24-119">[DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx)</span><span class="sxs-lookup"><span data-stu-id="d3e24-119">[DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx)</span></span>
 
