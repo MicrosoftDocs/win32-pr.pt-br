@@ -36,7 +36,7 @@ O atributo **MS-WMI-intFlags1** é reservado para uso interno.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1678              |
 | System-ID-GUID    | 18e006b9-6445-48e3-9dcf-b5ecfbc4df8e |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

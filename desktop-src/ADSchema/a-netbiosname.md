@@ -36,7 +36,7 @@ O nome do objeto a ser usado no NetBIOS.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.87                       |
 | System-ID-GUID    | bf9679d8-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

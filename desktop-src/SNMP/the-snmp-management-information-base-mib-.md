@@ -21,7 +21,7 @@ A tabela a seguir contém uma lista parcial das MIBs que acompanham o sistema. E
 
 
 
-| MIB         | Description                                                                                                                                      |
+| MIB         | Descrição                                                                                                                                      |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | DHCP. MIB    | MIB definida pela Microsoft que contém tipos de objeto para monitorar o tráfego de rede entre hosts remotos e servidores DHCP                        |
 | HOSTMIB. MIB | Contém tipos de objeto para monitorar e gerenciar recursos de host                                                                                 |

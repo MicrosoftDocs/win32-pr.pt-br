@@ -36,7 +36,7 @@ A organização de negócios que inicialmente criou um objeto de política.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1644                     |
 | System-ID-GUID    | 34f7ed6c-615d-418d-aa00-549a7d7be03e        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

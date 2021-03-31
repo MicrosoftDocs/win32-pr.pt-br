@@ -17,7 +17,7 @@ Estruturas usadas por aplicativos ao chamar para solicitar verificações, atual
 
 
 
-| Estrutura                                                      | Description                                                                             |
+| Estrutura                                                      | Descrição                                                                             |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [**dados do MPCALLBACK \_**](mpcallback-data.md)                    | Dados passados para a função de retorno de chamada.<br/>                                        |
 | [**dados do MPCLEAN \_**](mpclean-data.md)                          | Dados de notificação passados para a função de retorno de chamada limpa.<br/>                         |
