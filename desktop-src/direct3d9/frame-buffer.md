@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645760"
 ---
-# <a name="frame-buffer-direct3d-9"></a><span data-ttu-id="e4f02-103">Buffer de quadros (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="e4f02-103">Frame Buffer (Direct3D 9)</span></span>
+# <a name="frame-buffer-direct3d-9"></a><span data-ttu-id="10622-103">Buffer de quadros (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="10622-103">Frame Buffer (Direct3D 9)</span></span>
 
--   [<span data-ttu-id="e4f02-104">Tipos de neblina</span><span class="sxs-lookup"><span data-stu-id="e4f02-104">Fog Types</span></span>](fog-types.md)
--   [<span data-ttu-id="e4f02-105">Exemplos alfa</span><span class="sxs-lookup"><span data-stu-id="e4f02-105">Alpha Examples</span></span>](alpha-examples.md)
--   [<span data-ttu-id="e4f02-106">Gama</span><span class="sxs-lookup"><span data-stu-id="e4f02-106">Gamma</span></span>](gamma.md)
+-   [<span data-ttu-id="10622-104">Tipos de neblina</span><span class="sxs-lookup"><span data-stu-id="10622-104">Fog Types</span></span>](fog-types.md)
+-   [<span data-ttu-id="10622-105">Exemplos alfa</span><span class="sxs-lookup"><span data-stu-id="10622-105">Alpha Examples</span></span>](alpha-examples.md)
+-   [<span data-ttu-id="10622-106">Gama</span><span class="sxs-lookup"><span data-stu-id="10622-106">Gamma</span></span>](gamma.md)
 
-## <a name="related-topics"></a><span data-ttu-id="e4f02-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e4f02-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="10622-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="10622-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e4f02-108">Tópicos avançados</span><span class="sxs-lookup"><span data-stu-id="e4f02-108">Advanced Topics</span></span>](advanced-topics.md)
+[<span data-ttu-id="10622-108">Tópicos avançados</span><span class="sxs-lookup"><span data-stu-id="10622-108">Advanced Topics</span></span>](advanced-topics.md)
 </dt> </dl>
 
  

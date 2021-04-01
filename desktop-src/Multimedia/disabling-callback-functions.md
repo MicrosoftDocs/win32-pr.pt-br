@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635694"
 ---
-# <a name="disabling-callback-functions"></a><span data-ttu-id="7154c-105">Desabilitando funções de retorno de chamada</span><span class="sxs-lookup"><span data-stu-id="7154c-105">Disabling Callback Functions</span></span>
+# <a name="disabling-callback-functions"></a><span data-ttu-id="2126b-105">Desabilitando funções de retorno de chamada</span><span class="sxs-lookup"><span data-stu-id="2126b-105">Disabling Callback Functions</span></span>
 
-<span data-ttu-id="7154c-106">Você pode desabilitar permanentemente ou temporariamente qualquer uma das funções de retorno de chamada especificando **NULL** no lugar da função de retorno de chamada ao enviar a mensagem apropriada para definir uma função de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="7154c-106">You can permanently or temporarily disable any of the callback functions by specifying **NULL** in place of the callback function when sending the appropriate message to set a callback function.</span></span>
+<span data-ttu-id="2126b-106">Você pode desabilitar permanentemente ou temporariamente qualquer uma das funções de retorno de chamada especificando **NULL** no lugar da função de retorno de chamada ao enviar a mensagem apropriada para definir uma função de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="2126b-106">You can permanently or temporarily disable any of the callback functions by specifying **NULL** in place of the callback function when sending the appropriate message to set a callback function.</span></span>
 
  
 
