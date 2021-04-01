@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829550"
 ---
-# <a name="iazapplication3-properties"></a><span data-ttu-id="83f88-103">Propriedades de IAzApplication3</span><span class="sxs-lookup"><span data-stu-id="83f88-103">IAzApplication3 Properties</span></span>
+# <a name="iazapplication3-properties"></a><span data-ttu-id="5383d-103">Propriedades de IAzApplication3</span><span class="sxs-lookup"><span data-stu-id="5383d-103">IAzApplication3 Properties</span></span>
 
-<span data-ttu-id="83f88-104">A interface [**IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapplication3) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="83f88-104">The [**IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapplication3) interface exposes the following properties.</span></span>
+<span data-ttu-id="5383d-104">A interface [**IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapplication3) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="5383d-104">The [**IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapplication3) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="83f88-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="83f88-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5383d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5383d-105">In this section</span></span>
 
--   [<span data-ttu-id="83f88-106">**Propriedade BizRulesEnabled**</span><span class="sxs-lookup"><span data-stu-id="83f88-106">**BizRulesEnabled Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_bizrulesenabled)
--   [<span data-ttu-id="83f88-107">**Propriedade RoleAssignments**</span><span class="sxs-lookup"><span data-stu-id="83f88-107">**RoleAssignments Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_roleassignments)
--   [<span data-ttu-id="83f88-108">**Propriedade RoleDefinitions**</span><span class="sxs-lookup"><span data-stu-id="83f88-108">**RoleDefinitions Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_roledefinitions)
+-   [<span data-ttu-id="5383d-106">**Propriedade BizRulesEnabled**</span><span class="sxs-lookup"><span data-stu-id="5383d-106">**BizRulesEnabled Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_bizrulesenabled)
+-   [<span data-ttu-id="5383d-107">**Propriedade RoleAssignments**</span><span class="sxs-lookup"><span data-stu-id="5383d-107">**RoleAssignments Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_roleassignments)
+-   [<span data-ttu-id="5383d-108">**Propriedade RoleDefinitions**</span><span class="sxs-lookup"><span data-stu-id="5383d-108">**RoleDefinitions Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-get_roledefinitions)
 
  
 

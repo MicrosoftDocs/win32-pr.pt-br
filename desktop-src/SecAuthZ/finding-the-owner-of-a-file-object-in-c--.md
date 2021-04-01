@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829438"
 ---
-# <a name="finding-the-owner-of-a-file-object-in-c"></a><span data-ttu-id="8faf7-103">Localizando o proprietário de um objeto de arquivo em C++</span><span class="sxs-lookup"><span data-stu-id="8faf7-103">Finding the Owner of a File Object in C++</span></span>
+# <a name="finding-the-owner-of-a-file-object-in-c"></a><span data-ttu-id="12ae5-103">Localizando o proprietário de um objeto de arquivo em C++</span><span class="sxs-lookup"><span data-stu-id="12ae5-103">Finding the Owner of a File Object in C++</span></span>
 
-<span data-ttu-id="8faf7-104">O exemplo a seguir usa as funções [**GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) e [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) para localizar e imprimir o nome do proprietário de um arquivo.</span><span class="sxs-lookup"><span data-stu-id="8faf7-104">The following example uses the [**GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) and [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) functions to find and print the name of the owner of a file.</span></span> <span data-ttu-id="8faf7-105">O arquivo existe no diretório de trabalho atual no servidor local.</span><span class="sxs-lookup"><span data-stu-id="8faf7-105">The file exists in the current working directory on the local server.</span></span>
+<span data-ttu-id="12ae5-104">O exemplo a seguir usa as funções [**GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) e [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) para localizar e imprimir o nome do proprietário de um arquivo.</span><span class="sxs-lookup"><span data-stu-id="12ae5-104">The following example uses the [**GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) and [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) functions to find and print the name of the owner of a file.</span></span> <span data-ttu-id="12ae5-105">O arquivo existe no diretório de trabalho atual no servidor local.</span><span class="sxs-lookup"><span data-stu-id="12ae5-105">The file exists in the current working directory on the local server.</span></span>
 
 
 ```C++

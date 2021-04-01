@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829308"
 ---
-# <a name="issrkauthcompatible-method-of-the-win32_tpm-class"></a><span data-ttu-id="49827-103">Método IsSrkAuthCompatible da classe Win32 \_ TPM</span><span class="sxs-lookup"><span data-stu-id="49827-103">IsSrkAuthCompatible method of the Win32\_Tpm class</span></span>
+# <a name="issrkauthcompatible-method-of-the-win32_tpm-class"></a><span data-ttu-id="de165-103">Método IsSrkAuthCompatible da classe Win32 \_ TPM</span><span class="sxs-lookup"><span data-stu-id="de165-103">IsSrkAuthCompatible method of the Win32\_Tpm class</span></span>
 
-<span data-ttu-id="49827-104">O método **IsSrkAuthCompatible** da classe [**Win32 \_ TPM**](win32-tpm.md) indica se a autorização da chave de raiz de armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="49827-104">The **IsSrkAuthCompatible** method of the [**Win32\_Tpm**](win32-tpm.md) class indicates whether the Storage Root Key (SRK) authorization is compatible with the value expected by Windows Vista.</span></span>
+<span data-ttu-id="de165-104">O método **IsSrkAuthCompatible** da classe [**Win32 \_ TPM**](win32-tpm.md) indica se a autorização da chave de raiz de armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="de165-104">The **IsSrkAuthCompatible** method of the [**Win32\_Tpm**](win32-tpm.md) class indicates whether the Storage Root Key (SRK) authorization is compatible with the value expected by Windows Vista.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="49827-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="49827-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="de165-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="de165-105">Syntax</span></span>
 
 
 ```mof
@@ -35,60 +35,60 @@ uint32 IsSrkAuthCompatible(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="49827-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="49827-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="de165-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="de165-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="49827-107">*IsSrkAuthCompatible* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="49827-107">*IsSrkAuthCompatible* \[out\]</span></span>
+<span data-ttu-id="de165-107">*IsSrkAuthCompatible* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="de165-107">*IsSrkAuthCompatible* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="49827-108">Tipo: **booliano**</span><span class="sxs-lookup"><span data-stu-id="49827-108">Type: **boolean**</span></span>
+<span data-ttu-id="de165-108">Tipo: **booliano**</span><span class="sxs-lookup"><span data-stu-id="de165-108">Type: **boolean**</span></span>
 
-<span data-ttu-id="49827-109">Se **for true**, o valor de autorização de SRK terá um valor igual a zero.</span><span class="sxs-lookup"><span data-stu-id="49827-109">If **true**, the SRK authorization value has a value of zero.</span></span>
+<span data-ttu-id="de165-109">Se **for true**, o valor de autorização de SRK terá um valor igual a zero.</span><span class="sxs-lookup"><span data-stu-id="de165-109">If **true**, the SRK authorization value has a value of zero.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="49827-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="49827-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="de165-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="de165-110">Return value</span></span>
 
-<span data-ttu-id="49827-111">Tipo: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="49827-111">Type: **uint32**</span></span>
+<span data-ttu-id="de165-111">Tipo: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="de165-111">Type: **uint32**</span></span>
 
-<span data-ttu-id="49827-112">Todos os erros do TPM, bem como erros específicos para os serviços base do TPM, podem ser retornados.</span><span class="sxs-lookup"><span data-stu-id="49827-112">All TPM errors as well as errors specific to TPM Base Services can be returned.</span></span>
+<span data-ttu-id="de165-112">Todos os erros do TPM, bem como erros específicos para os serviços base do TPM, podem ser retornados.</span><span class="sxs-lookup"><span data-stu-id="de165-112">All TPM errors as well as errors specific to TPM Base Services can be returned.</span></span>
 
-<span data-ttu-id="49827-113">Os códigos de retorno comuns são listados abaixo.</span><span class="sxs-lookup"><span data-stu-id="49827-113">Common return codes are listed below.</span></span>
+<span data-ttu-id="de165-113">Os códigos de retorno comuns são listados abaixo.</span><span class="sxs-lookup"><span data-stu-id="de165-113">Common return codes are listed below.</span></span>
 
 
 
-| <span data-ttu-id="49827-114">Código/valor de retorno</span><span class="sxs-lookup"><span data-stu-id="49827-114">Return code/value</span></span>                                                                                                                                 | <span data-ttu-id="49827-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="49827-115">Description</span></span>                           |
+| <span data-ttu-id="de165-114">Código/valor de retorno</span><span class="sxs-lookup"><span data-stu-id="de165-114">Return code/value</span></span>                                                                                                                                 | <span data-ttu-id="de165-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="de165-115">Description</span></span>                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <span data-ttu-id="49827-116"><dt>**S \_ OK**</dt> <dt>0 (0x0)</dt></span><span class="sxs-lookup"><span data-stu-id="49827-116"><dt>**S\_OK**</dt> <dt>0 (0x0)</dt></span></span> </dl> | <span data-ttu-id="49827-117">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="49827-117">The method was successful.</span></span><br/> |
+| <dl> <span data-ttu-id="de165-116"><dt>**S \_ OK**</dt> <dt>0 (0x0)</dt></span><span class="sxs-lookup"><span data-stu-id="de165-116"><dt>**S\_OK**</dt> <dt>0 (0x0)</dt></span></span> </dl> | <span data-ttu-id="de165-117">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="de165-117">The method was successful.</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="49827-118">Comentários</span><span class="sxs-lookup"><span data-stu-id="49827-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="de165-118">Comentários</span><span class="sxs-lookup"><span data-stu-id="de165-118">Remarks</span></span>
 
-<span data-ttu-id="49827-119">Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="49827-119">Managed Object Format (MOF) files contain the definitions for Windows Management Instrumentation (WMI) classes.</span></span> <span data-ttu-id="49827-120">Os arquivos MOF não são instalados como parte do SDK do Windows.</span><span class="sxs-lookup"><span data-stu-id="49827-120">MOF files are not installed as part of the Windows SDK.</span></span> <span data-ttu-id="49827-121">Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor.</span><span class="sxs-lookup"><span data-stu-id="49827-121">They are installed on the server when you add the associated role by using the Server Manager.</span></span> <span data-ttu-id="49827-122">Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).</span><span class="sxs-lookup"><span data-stu-id="49827-122">For more information about MOF files, see [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).</span></span>
+<span data-ttu-id="de165-119">Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="de165-119">Managed Object Format (MOF) files contain the definitions for Windows Management Instrumentation (WMI) classes.</span></span> <span data-ttu-id="de165-120">Os arquivos MOF não são instalados como parte do SDK do Windows.</span><span class="sxs-lookup"><span data-stu-id="de165-120">MOF files are not installed as part of the Windows SDK.</span></span> <span data-ttu-id="de165-121">Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor.</span><span class="sxs-lookup"><span data-stu-id="de165-121">They are installed on the server when you add the associated role by using the Server Manager.</span></span> <span data-ttu-id="de165-122">Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).</span><span class="sxs-lookup"><span data-stu-id="de165-122">For more information about MOF files, see [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="49827-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="49827-123">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="de165-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="de165-123">Requirements</span></span>
 
 
 
-| <span data-ttu-id="49827-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="49827-124">Requirement</span></span> | <span data-ttu-id="49827-125">Valor</span><span class="sxs-lookup"><span data-stu-id="49827-125">Value</span></span> |
+| <span data-ttu-id="de165-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="de165-124">Requirement</span></span> | <span data-ttu-id="de165-125">Valor</span><span class="sxs-lookup"><span data-stu-id="de165-125">Value</span></span> |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| <span data-ttu-id="49827-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49827-126">Minimum supported client</span></span><br/> | <span data-ttu-id="49827-127">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="49827-127">Windows Vista \[desktop apps only\]</span></span><br/>                                            |
-| <span data-ttu-id="49827-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49827-128">Minimum supported server</span></span><br/> | <span data-ttu-id="49827-129">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="49827-129">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                      |
-| <span data-ttu-id="49827-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="49827-130">Namespace</span></span><br/>                | <span data-ttu-id="49827-131">\\MicrosoftTpm de \\ segurança \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="49827-131">Root\\CIMV2\\Security\\MicrosoftTpm</span></span><br/>                                            |
-| <span data-ttu-id="49827-132">MOF</span><span class="sxs-lookup"><span data-stu-id="49827-132">MOF</span></span><br/>                      | <dl> <span data-ttu-id="49827-133"><dt>\_TPM. mof do Win32</dt></span><span class="sxs-lookup"><span data-stu-id="49827-133"><dt>Win32\_tpm.mof</dt></span></span> </dl> |
-| <span data-ttu-id="49827-134">DLL</span><span class="sxs-lookup"><span data-stu-id="49827-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="49827-135"><dt>\_tpm.dllWin32</dt></span><span class="sxs-lookup"><span data-stu-id="49827-135"><dt>Win32\_tpm.dll</dt></span></span> </dl> |
+| <span data-ttu-id="de165-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="de165-126">Minimum supported client</span></span><br/> | <span data-ttu-id="de165-127">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="de165-127">Windows Vista \[desktop apps only\]</span></span><br/>                                            |
+| <span data-ttu-id="de165-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="de165-128">Minimum supported server</span></span><br/> | <span data-ttu-id="de165-129">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="de165-129">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                      |
+| <span data-ttu-id="de165-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="de165-130">Namespace</span></span><br/>                | <span data-ttu-id="de165-131">\\MicrosoftTpm de \\ segurança \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="de165-131">Root\\CIMV2\\Security\\MicrosoftTpm</span></span><br/>                                            |
+| <span data-ttu-id="de165-132">MOF</span><span class="sxs-lookup"><span data-stu-id="de165-132">MOF</span></span><br/>                      | <dl> <span data-ttu-id="de165-133"><dt>\_TPM. mof do Win32</dt></span><span class="sxs-lookup"><span data-stu-id="de165-133"><dt>Win32\_tpm.mof</dt></span></span> </dl> |
+| <span data-ttu-id="de165-134">DLL</span><span class="sxs-lookup"><span data-stu-id="de165-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="de165-135"><dt>\_tpm.dllWin32</dt></span><span class="sxs-lookup"><span data-stu-id="de165-135"><dt>Win32\_tpm.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="49827-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="49827-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de165-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="de165-136">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="49827-137">**TPM do Win32 \_**</span><span class="sxs-lookup"><span data-stu-id="49827-137">**Win32\_Tpm**</span></span>](win32-tpm.md)
+[<span data-ttu-id="de165-137">**TPM do Win32 \_**</span><span class="sxs-lookup"><span data-stu-id="de165-137">**Win32\_Tpm**</span></span>](win32-tpm.md)
 </dt> </dl>
 
  

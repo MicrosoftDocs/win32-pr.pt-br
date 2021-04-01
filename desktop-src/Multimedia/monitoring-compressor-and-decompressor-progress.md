@@ -15,9 +15,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005397"
 ---
-# <a name="monitoring-compressor-and-decompressor-progress"></a><span data-ttu-id="e317a-106">Progresso do monitoramento e do descompactador</span><span class="sxs-lookup"><span data-stu-id="e317a-106">Monitoring Compressor and Decompressor Progress</span></span>
+# <a name="monitoring-compressor-and-decompressor-progress"></a><span data-ttu-id="32db9-106">Progresso do monitoramento e do descompactador</span><span class="sxs-lookup"><span data-stu-id="32db9-106">Monitoring Compressor and Decompressor Progress</span></span>
 
-<span data-ttu-id="e317a-107">O exemplo a seguir mostra como a função [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) é usada para informar o compressor ou o descompactador do endereço da função de retorno de chamada:</span><span class="sxs-lookup"><span data-stu-id="e317a-107">The following example shows how the [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) function is used to inform the compressor or decompressor of the callback function address:</span></span>
+<span data-ttu-id="32db9-107">O exemplo a seguir mostra como a função [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) é usada para informar o compressor ou o descompactador do endereço da função de retorno de chamada:</span><span class="sxs-lookup"><span data-stu-id="32db9-107">The following example shows how the [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) function is used to inform the compressor or decompressor of the callback function address:</span></span>
 
 
 ```C++
@@ -28,7 +28,7 @@ ICSetStatusProc(compvars.hic, 0, (LPARAM) (UINT) hwndApp,
 
 
 
-<span data-ttu-id="e317a-108">O exemplo a seguir mostra a função de retorno de chamada instalada pelo fragmento anterior:</span><span class="sxs-lookup"><span data-stu-id="e317a-108">The following example shows the callback function installed by the previous fragment:</span></span>
+<span data-ttu-id="32db9-108">O exemplo a seguir mostra a função de retorno de chamada instalada pelo fragmento anterior:</span><span class="sxs-lookup"><span data-stu-id="32db9-108">The following example shows the callback function installed by the previous fragment:</span></span>
 
 
 ```C++

@@ -11,21 +11,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829548"
 ---
-# <a name="iazrole-properties"></a><span data-ttu-id="49856-103">Propriedades de IAzRole</span><span class="sxs-lookup"><span data-stu-id="49856-103">IAzRole Properties</span></span>
+# <a name="iazrole-properties"></a><span data-ttu-id="e5659-103">Propriedades de IAzRole</span><span class="sxs-lookup"><span data-stu-id="e5659-103">IAzRole Properties</span></span>
 
-<span data-ttu-id="49856-104">A interface [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="49856-104">The [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) interface exposes the following properties.</span></span>
+<span data-ttu-id="e5659-104">A interface [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e5659-104">The [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="49856-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="49856-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e5659-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e5659-105">In this section</span></span>
 
--   [<span data-ttu-id="49856-106">**Propriedade ApplicationData**</span><span class="sxs-lookup"><span data-stu-id="49856-106">**ApplicationData Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_applicationdata)
--   [<span data-ttu-id="49856-107">**Propriedade AppMembers**</span><span class="sxs-lookup"><span data-stu-id="49856-107">**AppMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_appmembers)
--   [<span data-ttu-id="49856-108">**Propriedade Description**</span><span class="sxs-lookup"><span data-stu-id="49856-108">**Description Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_description)
--   [<span data-ttu-id="49856-109">**Propriedade Members**</span><span class="sxs-lookup"><span data-stu-id="49856-109">**Members Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_members)
--   [<span data-ttu-id="49856-110">**Propriedade MemberName**</span><span class="sxs-lookup"><span data-stu-id="49856-110">**MembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_membersname)
--   [<span data-ttu-id="49856-111">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="49856-111">**Name Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_name)
--   [<span data-ttu-id="49856-112">**Propriedade de operações**</span><span class="sxs-lookup"><span data-stu-id="49856-112">**Operations Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_operations)
--   [<span data-ttu-id="49856-113">**Propriedade Tasks**</span><span class="sxs-lookup"><span data-stu-id="49856-113">**Tasks Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_tasks)
--   [<span data-ttu-id="49856-114">**Propriedade gravável**</span><span class="sxs-lookup"><span data-stu-id="49856-114">**Writable Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_writable)
+-   [<span data-ttu-id="e5659-106">**Propriedade ApplicationData**</span><span class="sxs-lookup"><span data-stu-id="e5659-106">**ApplicationData Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_applicationdata)
+-   [<span data-ttu-id="e5659-107">**Propriedade AppMembers**</span><span class="sxs-lookup"><span data-stu-id="e5659-107">**AppMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_appmembers)
+-   [<span data-ttu-id="e5659-108">**Propriedade Description**</span><span class="sxs-lookup"><span data-stu-id="e5659-108">**Description Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_description)
+-   [<span data-ttu-id="e5659-109">**Propriedade Members**</span><span class="sxs-lookup"><span data-stu-id="e5659-109">**Members Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_members)
+-   [<span data-ttu-id="e5659-110">**Propriedade MemberName**</span><span class="sxs-lookup"><span data-stu-id="e5659-110">**MembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_membersname)
+-   [<span data-ttu-id="e5659-111">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="e5659-111">**Name Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_name)
+-   [<span data-ttu-id="e5659-112">**Propriedade de operações**</span><span class="sxs-lookup"><span data-stu-id="e5659-112">**Operations Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_operations)
+-   [<span data-ttu-id="e5659-113">**Propriedade Tasks**</span><span class="sxs-lookup"><span data-stu-id="e5659-113">**Tasks Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_tasks)
+-   [<span data-ttu-id="e5659-114">**Propriedade gravável**</span><span class="sxs-lookup"><span data-stu-id="e5659-114">**Writable Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_writable)
 
  
 

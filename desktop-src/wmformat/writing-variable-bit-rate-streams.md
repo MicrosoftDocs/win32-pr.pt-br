@@ -17,20 +17,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/19/2020
 ms.locfileid: "103640119"
 ---
-# <a name="writing-variable-bit-rate-streams"></a><span data-ttu-id="24f4b-108">Gravando fluxos de taxa de bits variáveis</span><span class="sxs-lookup"><span data-stu-id="24f4b-108">Writing Variable Bit Rate Streams</span></span>
+# <a name="writing-variable-bit-rate-streams"></a><span data-ttu-id="6feb1-108">Gravando fluxos de taxa de bits variáveis</span><span class="sxs-lookup"><span data-stu-id="6feb1-108">Writing Variable Bit Rate Streams</span></span>
 
-<span data-ttu-id="24f4b-109">Os fluxos de taxa de bits variável (VBR) são gravados da mesma forma que os fluxos de taxa de bits constante (CBR).</span><span class="sxs-lookup"><span data-stu-id="24f4b-109">Variable bit rate (VBR) streams are written the same way as constant bit rate (CBR) streams.</span></span> <span data-ttu-id="24f4b-110">A única diferença está no processamento realizado internamente pelo gravador e pelos codecs.</span><span class="sxs-lookup"><span data-stu-id="24f4b-110">The only difference is in the processing performed internally by the writer and the codecs.</span></span> <span data-ttu-id="24f4b-111">No entanto, a taxa de bits (restrita e irrestrita) baseada em taxas de bit requer uma passagem de pré-processamento no gravador.</span><span class="sxs-lookup"><span data-stu-id="24f4b-111">However, bit rate based VBR (both constrained and unconstrained) requires a preprocessing pass in the writer.</span></span>
+<span data-ttu-id="6feb1-109">Os fluxos de taxa de bits variável (VBR) são gravados da mesma forma que os fluxos de taxa de bits constante (CBR).</span><span class="sxs-lookup"><span data-stu-id="6feb1-109">Variable bit rate (VBR) streams are written the same way as constant bit rate (CBR) streams.</span></span> <span data-ttu-id="6feb1-110">A única diferença está no processamento realizado internamente pelo gravador e pelos codecs.</span><span class="sxs-lookup"><span data-stu-id="6feb1-110">The only difference is in the processing performed internally by the writer and the codecs.</span></span> <span data-ttu-id="6feb1-111">No entanto, a taxa de bits (restrita e irrestrita) baseada em taxas de bit requer uma passagem de pré-processamento no gravador.</span><span class="sxs-lookup"><span data-stu-id="6feb1-111">However, bit rate based VBR (both constrained and unconstrained) requires a preprocessing pass in the writer.</span></span>
 
-<span data-ttu-id="24f4b-112">Você deve verificar o valor de retorno para a primeira chamada feita para [**IWMWriter:: WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) para cada fluxo.</span><span class="sxs-lookup"><span data-stu-id="24f4b-112">You should check the return value for the first call you make to [**IWMWriter::WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) for each stream.</span></span> <span data-ttu-id="24f4b-113">Se o código de erro retornado for \_ um número inválido de e/s do NS \_ \_ \_ , o fluxo exigirá uma passagem de pré-processamento.</span><span class="sxs-lookup"><span data-stu-id="24f4b-113">If the error code returned is NS\_E\_INVALID\_NUM\_PASSES, the stream requires a preprocessing pass.</span></span>
+<span data-ttu-id="6feb1-112">Você deve verificar o valor de retorno para a primeira chamada feita para [**IWMWriter:: WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) para cada fluxo.</span><span class="sxs-lookup"><span data-stu-id="6feb1-112">You should check the return value for the first call you make to [**IWMWriter::WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) for each stream.</span></span> <span data-ttu-id="6feb1-113">Se o código de erro retornado for \_ um número inválido de e/s do NS \_ \_ \_ , o fluxo exigirá uma passagem de pré-processamento.</span><span class="sxs-lookup"><span data-stu-id="6feb1-113">If the error code returned is NS\_E\_INVALID\_NUM\_PASSES, the stream requires a preprocessing pass.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="24f4b-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="24f4b-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6feb1-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6feb1-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="24f4b-115">**Usando a codificação Two-Pass**</span><span class="sxs-lookup"><span data-stu-id="24f4b-115">**Using Two-Pass Encoding**</span></span>](using-two-pass-encoding.md)
+[<span data-ttu-id="6feb1-115">**Usando a codificação Two-Pass**</span><span class="sxs-lookup"><span data-stu-id="6feb1-115">**Using Two-Pass Encoding**</span></span>](using-two-pass-encoding.md)
 </dt> <dt>
 
-[<span data-ttu-id="24f4b-116">**Gravando arquivos ASF**</span><span class="sxs-lookup"><span data-stu-id="24f4b-116">**Writing ASF Files**</span></span>](writing-asf-files.md)
+[<span data-ttu-id="6feb1-116">**Gravando arquivos ASF**</span><span class="sxs-lookup"><span data-stu-id="6feb1-116">**Writing ASF Files**</span></span>](writing-asf-files.md)
 </dt> </dl>
 
  

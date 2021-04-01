@@ -11,24 +11,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641742"
 ---
-# <a name="tracelogging-functions"></a><span data-ttu-id="e644e-103">Funções TraceLogging</span><span class="sxs-lookup"><span data-stu-id="e644e-103">TraceLogging Functions</span></span>
+# <a name="tracelogging-functions"></a><span data-ttu-id="b1867-103">Funções TraceLogging</span><span class="sxs-lookup"><span data-stu-id="b1867-103">TraceLogging Functions</span></span>
 
-<span data-ttu-id="e644e-104">O TraceLogging fornece as seguintes funções que permitem que você trabalhe com provedores de ETW (rastreamento de eventos para Windows):</span><span class="sxs-lookup"><span data-stu-id="e644e-104">TraceLogging provides the following functions that allow you to work with Event Tracing for Windows (ETW) providers:</span></span>
+<span data-ttu-id="b1867-104">O TraceLogging fornece as seguintes funções que permitem que você trabalhe com provedores de ETW (rastreamento de eventos para Windows):</span><span class="sxs-lookup"><span data-stu-id="b1867-104">TraceLogging provides the following functions that allow you to work with Event Tracing for Windows (ETW) providers:</span></span>
 
--   [<span data-ttu-id="e644e-105">**TraceLoggingProviderEnabled**</span><span class="sxs-lookup"><span data-stu-id="e644e-105">**TraceLoggingProviderEnabled**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderenabled)
--   [<span data-ttu-id="e644e-106">**TraceLoggingProviderId**</span><span class="sxs-lookup"><span data-stu-id="e644e-106">**TraceLoggingProviderId**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderid)
--   [<span data-ttu-id="e644e-107">**TraceLoggingRegister**</span><span class="sxs-lookup"><span data-stu-id="e644e-107">**TraceLoggingRegister**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingregister)
--   [<span data-ttu-id="e644e-108">**TraceLoggingSetInformation**</span><span class="sxs-lookup"><span data-stu-id="e644e-108">**TraceLoggingSetInformation**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsetinformation)
--   [<span data-ttu-id="e644e-109">**TraceLoggingUnregister**</span><span class="sxs-lookup"><span data-stu-id="e644e-109">**TraceLoggingUnregister**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingunregister)
+-   [<span data-ttu-id="b1867-105">**TraceLoggingProviderEnabled**</span><span class="sxs-lookup"><span data-stu-id="b1867-105">**TraceLoggingProviderEnabled**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderenabled)
+-   [<span data-ttu-id="b1867-106">**TraceLoggingProviderId**</span><span class="sxs-lookup"><span data-stu-id="b1867-106">**TraceLoggingProviderId**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderid)
+-   [<span data-ttu-id="b1867-107">**TraceLoggingRegister**</span><span class="sxs-lookup"><span data-stu-id="b1867-107">**TraceLoggingRegister**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingregister)
+-   [<span data-ttu-id="b1867-108">**TraceLoggingSetInformation**</span><span class="sxs-lookup"><span data-stu-id="b1867-108">**TraceLoggingSetInformation**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsetinformation)
+-   [<span data-ttu-id="b1867-109">**TraceLoggingUnregister**</span><span class="sxs-lookup"><span data-stu-id="b1867-109">**TraceLoggingUnregister**</span></span>](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingunregister)
 
-## <a name="related-topics"></a><span data-ttu-id="e644e-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e644e-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b1867-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b1867-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e644e-111">Sobre o rastreamento de eventos</span><span class="sxs-lookup"><span data-stu-id="e644e-111">About Event Tracing</span></span>](/windows/desktop/ETW/about-event-tracing)
+[<span data-ttu-id="b1867-111">Sobre o rastreamento de eventos</span><span class="sxs-lookup"><span data-stu-id="b1867-111">About Event Tracing</span></span>](/windows/desktop/ETW/about-event-tracing)
 </dt> <dt>
 
-[<span data-ttu-id="e644e-112">TraceLogging</span><span class="sxs-lookup"><span data-stu-id="e644e-112">TraceLogging</span></span>](trace-logging-portal.md)
+[<span data-ttu-id="b1867-112">TraceLogging</span><span class="sxs-lookup"><span data-stu-id="b1867-112">TraceLogging</span></span>](trace-logging-portal.md)
 </dt> </dl>
 
  

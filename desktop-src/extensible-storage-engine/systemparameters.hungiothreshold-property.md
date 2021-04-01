@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663180"
 ---
-# <a name="systemparametershungiothreshold-property"></a><span data-ttu-id="95cc9-103">Propriedade SystemParameters. HungIOThreshold</span><span class="sxs-lookup"><span data-stu-id="95cc9-103">SystemParameters.HungIOThreshold property</span></span>
+# <a name="systemparametershungiothreshold-property"></a><span data-ttu-id="bf8e9-103">Propriedade SystemParameters. HungIOThreshold</span><span class="sxs-lookup"><span data-stu-id="bf8e9-103">SystemParameters.HungIOThreshold property</span></span>
 
-<span data-ttu-id="95cc9-104">Obtém ou define o limite para o que é considerado uma e/s suspensa que deve ser tratada.</span><span class="sxs-lookup"><span data-stu-id="95cc9-104">Gets or sets the threshold for what is considered a hung IO that should be acted upon.</span></span>
+<span data-ttu-id="bf8e9-104">Obtém ou define o limite para o que é considerado uma e/s suspensa que deve ser tratada.</span><span class="sxs-lookup"><span data-stu-id="bf8e9-104">Gets or sets the threshold for what is considered a hung IO that should be acted upon.</span></span>
 
-<span data-ttu-id="95cc9-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="95cc9-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="95cc9-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="95cc9-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="bf8e9-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bf8e9-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="bf8e9-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bf8e9-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="95cc9-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="95cc9-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bf8e9-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="bf8e9-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,16 +59,16 @@ SystemParameters.HungIOThreshold = value
 public static int HungIOThreshold { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="95cc9-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="95cc9-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="bf8e9-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="bf8e9-108">Property value</span></span>
 
-<span data-ttu-id="95cc9-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="95cc9-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="bf8e9-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="bf8e9-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="95cc9-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="95cc9-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf8e9-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="bf8e9-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="95cc9-111">Referência</span><span class="sxs-lookup"><span data-stu-id="95cc9-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="bf8e9-111">Referência</span><span class="sxs-lookup"><span data-stu-id="bf8e9-111">Reference</span></span>
 
-[<span data-ttu-id="95cc9-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="95cc9-112">SystemParameters class</span></span>](./systemparameters-class.md)
+[<span data-ttu-id="bf8e9-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="bf8e9-112">SystemParameters class</span></span>](./systemparameters-class.md)
 
-[<span data-ttu-id="95cc9-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="95cc9-113">SystemParameters members</span></span>](./systemparameters-members.md)
+[<span data-ttu-id="bf8e9-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="bf8e9-113">SystemParameters members</span></span>](./systemparameters-members.md)
 
-[<span data-ttu-id="95cc9-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="95cc9-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="bf8e9-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bf8e9-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

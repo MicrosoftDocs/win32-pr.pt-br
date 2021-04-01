@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829332"
 ---
-# <a name="resolving-a-peer-name"></a><span data-ttu-id="d24e4-103">Resolvendo um nome de par</span><span class="sxs-lookup"><span data-stu-id="d24e4-103">Resolving a Peer Name</span></span>
+# <a name="resolving-a-peer-name"></a><span data-ttu-id="5c905-103">Resolvendo um nome de par</span><span class="sxs-lookup"><span data-stu-id="5c905-103">Resolving a Peer Name</span></span>
 
-<span data-ttu-id="d24e4-104">Este tópico discute métodos para resolver um nome de par usando as APIs do provedor de namespace do PNRP.</span><span class="sxs-lookup"><span data-stu-id="d24e4-104">This topic discusses methods for resolving a peer name using the PNRP Namespace Provider APIs.</span></span>
+<span data-ttu-id="5c905-104">Este tópico discute métodos para resolver um nome de par usando as APIs do provedor de namespace do PNRP.</span><span class="sxs-lookup"><span data-stu-id="5c905-104">This topic discusses methods for resolving a peer name using the PNRP Namespace Provider APIs.</span></span>
 
-<span data-ttu-id="d24e4-105">Ao resolver um nome de par, você deve fornecer as seguintes informações:</span><span class="sxs-lookup"><span data-stu-id="d24e4-105">When you resolve a peer name, you must provide the following information:</span></span>
+<span data-ttu-id="5c905-105">Ao resolver um nome de par, você deve fornecer as seguintes informações:</span><span class="sxs-lookup"><span data-stu-id="5c905-105">When you resolve a peer name, you must provide the following information:</span></span>
 
--   [<span data-ttu-id="d24e4-106">Nome do par</span><span class="sxs-lookup"><span data-stu-id="d24e4-106">Peer name</span></span>](peer-names.md)
--   [<span data-ttu-id="d24e4-107">Resolver critérios</span><span class="sxs-lookup"><span data-stu-id="d24e4-107">Resolve criteria</span></span>](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
--   <span data-ttu-id="d24e4-108">Nome da nuvem para resolver o nome do par</span><span class="sxs-lookup"><span data-stu-id="d24e4-108">Cloud name in which to resolve the peer name</span></span>
--   <span data-ttu-id="d24e4-109">Endereço IP, que é opcional e é usado como uma dica</span><span class="sxs-lookup"><span data-stu-id="d24e4-109">IP address, which is optional and is used as a hint</span></span>
+-   [<span data-ttu-id="5c905-106">Nome do par</span><span class="sxs-lookup"><span data-stu-id="5c905-106">Peer name</span></span>](peer-names.md)
+-   [<span data-ttu-id="5c905-107">Resolver critérios</span><span class="sxs-lookup"><span data-stu-id="5c905-107">Resolve criteria</span></span>](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
+-   <span data-ttu-id="5c905-108">Nome da nuvem para resolver o nome do par</span><span class="sxs-lookup"><span data-stu-id="5c905-108">Cloud name in which to resolve the peer name</span></span>
+-   <span data-ttu-id="5c905-109">Endereço IP, que é opcional e é usado como uma dica</span><span class="sxs-lookup"><span data-stu-id="5c905-109">IP address, which is optional and is used as a hint</span></span>
 
-## <a name="resolving-a-peer-name"></a><span data-ttu-id="d24e4-110">Resolvendo um nome de par</span><span class="sxs-lookup"><span data-stu-id="d24e4-110">Resolving a Peer Name</span></span>
+## <a name="resolving-a-peer-name"></a><span data-ttu-id="5c905-110">Resolvendo um nome de par</span><span class="sxs-lookup"><span data-stu-id="5c905-110">Resolving a Peer Name</span></span>
 
-<span data-ttu-id="d24e4-111">Depois de fornecer um nome de par, resolver critérios, nome de nuvem e o endereço IP opcional, as etapas a seguir devem ser seguidas para concluir a resolução de um nome de par:</span><span class="sxs-lookup"><span data-stu-id="d24e4-111">After you provide a peer name, resolve criteria, cloud name, and the optional IP address, the following steps must be taken to complete the resolution of a peer name:</span></span>
+<span data-ttu-id="5c905-111">Depois de fornecer um nome de par, resolver critérios, nome de nuvem e o endereço IP opcional, as etapas a seguir devem ser seguidas para concluir a resolução de um nome de par:</span><span class="sxs-lookup"><span data-stu-id="5c905-111">After you provide a peer name, resolve criteria, cloud name, and the optional IP address, the following steps must be taken to complete the resolution of a peer name:</span></span>
 
--   <span data-ttu-id="d24e4-112">Chame [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para iniciar o processo e retornar um identificador.</span><span class="sxs-lookup"><span data-stu-id="d24e4-112">Call [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) to begin the process and return a handle.</span></span>
--   <span data-ttu-id="d24e4-113">Chame [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) para resolver o nome do par.</span><span class="sxs-lookup"><span data-stu-id="d24e4-113">Call [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) to resolve the peer name.</span></span>
--   <span data-ttu-id="d24e4-114">Chame [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) para concluir o processo.</span><span class="sxs-lookup"><span data-stu-id="d24e4-114">Call [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) to complete the process.</span></span>
+-   <span data-ttu-id="5c905-112">Chame [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para iniciar o processo e retornar um identificador.</span><span class="sxs-lookup"><span data-stu-id="5c905-112">Call [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) to begin the process and return a handle.</span></span>
+-   <span data-ttu-id="5c905-113">Chame [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) para resolver o nome do par.</span><span class="sxs-lookup"><span data-stu-id="5c905-113">Call [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) to resolve the peer name.</span></span>
+-   <span data-ttu-id="5c905-114">Chame [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) para concluir o processo.</span><span class="sxs-lookup"><span data-stu-id="5c905-114">Call [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) to complete the process.</span></span>
 
-## <a name="an-example-of-resolving-a-peer-name"></a><span data-ttu-id="d24e4-115">Um exemplo de resolução de um nome de par</span><span class="sxs-lookup"><span data-stu-id="d24e4-115">An Example of Resolving a Peer Name</span></span>
+## <a name="an-example-of-resolving-a-peer-name"></a><span data-ttu-id="5c905-115">Um exemplo de resolução de um nome de par</span><span class="sxs-lookup"><span data-stu-id="5c905-115">An Example of Resolving a Peer Name</span></span>
 
-<span data-ttu-id="d24e4-116">O trecho de código a seguir mostra como resolver um nome de par.</span><span class="sxs-lookup"><span data-stu-id="d24e4-116">The following code snippet shows you how to resolve a peer name.</span></span> <span data-ttu-id="d24e4-117">Há uma suposição na amostra de que um endereço TCP/IP será retornado.</span><span class="sxs-lookup"><span data-stu-id="d24e4-117">There is an assumption in the sample that a TCP/IP address will be returned.</span></span>
+<span data-ttu-id="5c905-116">O trecho de código a seguir mostra como resolver um nome de par.</span><span class="sxs-lookup"><span data-stu-id="5c905-116">The following code snippet shows you how to resolve a peer name.</span></span> <span data-ttu-id="5c905-117">Há uma suposição na amostra de que um endereço TCP/IP será retornado.</span><span class="sxs-lookup"><span data-stu-id="5c905-117">There is an assumption in the sample that a TCP/IP address will be returned.</span></span>
 
 
 ```C++

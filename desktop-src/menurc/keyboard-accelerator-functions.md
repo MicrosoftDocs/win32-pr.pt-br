@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005536"
 ---
-# <a name="keyboard-accelerator-functions"></a><span data-ttu-id="503fd-103">Funções do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="503fd-103">Keyboard Accelerator Functions</span></span>
+# <a name="keyboard-accelerator-functions"></a><span data-ttu-id="0936a-103">Funções do acelerador de teclado</span><span class="sxs-lookup"><span data-stu-id="0936a-103">Keyboard Accelerator Functions</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="503fd-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="503fd-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0936a-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0936a-104">In This Section</span></span>
 
--   [<span data-ttu-id="503fd-105">**CopyAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="503fd-105">**CopyAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-copyacceleratortablea)
--   [<span data-ttu-id="503fd-106">**CreateAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="503fd-106">**CreateAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea)
--   [<span data-ttu-id="503fd-107">**DestroyAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="503fd-107">**DestroyAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable)
--   [<span data-ttu-id="503fd-108">**LoadAccelerators**</span><span class="sxs-lookup"><span data-stu-id="503fd-108">**LoadAccelerators**</span></span>](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa)
--   [<span data-ttu-id="503fd-109">**TranslateAccelerator**</span><span class="sxs-lookup"><span data-stu-id="503fd-109">**TranslateAccelerator**</span></span>](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora)
+-   [<span data-ttu-id="0936a-105">**CopyAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="0936a-105">**CopyAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-copyacceleratortablea)
+-   [<span data-ttu-id="0936a-106">**CreateAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="0936a-106">**CreateAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea)
+-   [<span data-ttu-id="0936a-107">**DestroyAcceleratorTable**</span><span class="sxs-lookup"><span data-stu-id="0936a-107">**DestroyAcceleratorTable**</span></span>](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable)
+-   [<span data-ttu-id="0936a-108">**LoadAccelerators**</span><span class="sxs-lookup"><span data-stu-id="0936a-108">**LoadAccelerators**</span></span>](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa)
+-   [<span data-ttu-id="0936a-109">**TranslateAccelerator**</span><span class="sxs-lookup"><span data-stu-id="0936a-109">**TranslateAccelerator**</span></span>](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora)
 
  
 

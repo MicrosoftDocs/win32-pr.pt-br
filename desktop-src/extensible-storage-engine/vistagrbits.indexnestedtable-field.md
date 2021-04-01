@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663499"
 ---
-# <a name="vistagrbitsindexnestedtable-field"></a><span data-ttu-id="9ba09-103">Campo VistaGrbits. IndexNestedTable</span><span class="sxs-lookup"><span data-stu-id="9ba09-103">VistaGrbits.IndexNestedTable field</span></span>
+# <a name="vistagrbitsindexnestedtable-field"></a><span data-ttu-id="e5b7d-103">Campo VistaGrbits. IndexNestedTable</span><span class="sxs-lookup"><span data-stu-id="e5b7d-103">VistaGrbits.IndexNestedTable field</span></span>
 
-<span data-ttu-id="9ba09-104">Indexar várias colunas com vários valores, mas apenas com valores do mesmo itagSequence.</span><span class="sxs-lookup"><span data-stu-id="9ba09-104">Index over multiple multi-valued columns but only with values of same itagSequence.</span></span>
+<span data-ttu-id="e5b7d-104">Indexar várias colunas com vários valores, mas apenas com valores do mesmo itagSequence.</span><span class="sxs-lookup"><span data-stu-id="e5b7d-104">Index over multiple multi-valued columns but only with values of same itagSequence.</span></span>
 
-<span data-ttu-id="9ba09-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9ba09-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="9ba09-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9ba09-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e5b7d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e5b7d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="e5b7d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e5b7d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9ba09-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9ba09-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e5b7d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e5b7d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = VistaGrbits.IndexNestedTable
 public const CreateIndexGrbit IndexNestedTable
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9ba09-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="9ba09-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e5b7d-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="e5b7d-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="9ba09-109">Referência</span><span class="sxs-lookup"><span data-stu-id="9ba09-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e5b7d-109">Referência</span><span class="sxs-lookup"><span data-stu-id="e5b7d-109">Reference</span></span>
 
-[<span data-ttu-id="9ba09-110">Classe VistaGrbits</span><span class="sxs-lookup"><span data-stu-id="9ba09-110">VistaGrbits class</span></span>](./vistagrbits-class.md)
+[<span data-ttu-id="e5b7d-110">Classe VistaGrbits</span><span class="sxs-lookup"><span data-stu-id="e5b7d-110">VistaGrbits class</span></span>](./vistagrbits-class.md)
 
-[<span data-ttu-id="9ba09-111">Membros do VistaGrbits</span><span class="sxs-lookup"><span data-stu-id="9ba09-111">VistaGrbits members</span></span>](./vistagrbits-members.md)
+[<span data-ttu-id="e5b7d-111">Membros do VistaGrbits</span><span class="sxs-lookup"><span data-stu-id="e5b7d-111">VistaGrbits members</span></span>](./vistagrbits-members.md)
 
-[<span data-ttu-id="9ba09-112">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="9ba09-112">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="e5b7d-112">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="e5b7d-112">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005585"
 ---
-# <a name="messageencodingexample"></a><span data-ttu-id="feced-106">MessageEncodingExample</span><span class="sxs-lookup"><span data-stu-id="feced-106">MessageEncodingExample</span></span>
+# <a name="messageencodingexample"></a><span data-ttu-id="97923-106">MessageEncodingExample</span><span class="sxs-lookup"><span data-stu-id="97923-106">MessageEncodingExample</span></span>
 
-<span data-ttu-id="feced-107">Este exemplo codifica e decodifica uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="feced-107">This example encodes and decodes a message.</span></span>
+<span data-ttu-id="97923-107">Este exemplo codifica e decodifica uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="97923-107">This example encodes and decodes a message.</span></span>
 
--   [<span data-ttu-id="feced-108">MessageEncoding. cpp</span><span class="sxs-lookup"><span data-stu-id="feced-108">MessageEncoding.cpp</span></span>](#messageencodingcpp)
--   [<span data-ttu-id="feced-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="feced-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="feced-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="feced-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="97923-108">MessageEncoding. cpp</span><span class="sxs-lookup"><span data-stu-id="97923-108">MessageEncoding.cpp</span></span>](#messageencodingcpp)
+-   [<span data-ttu-id="97923-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="97923-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="97923-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="97923-110">Makefile</span></span>](#makefile)
 
-## <a name="messageencodingcpp"></a><span data-ttu-id="feced-111">MessageEncoding. cpp</span><span class="sxs-lookup"><span data-stu-id="feced-111">MessageEncoding.cpp</span></span>
+## <a name="messageencodingcpp"></a><span data-ttu-id="97923-111">MessageEncoding. cpp</span><span class="sxs-lookup"><span data-stu-id="97923-111">MessageEncoding.cpp</span></span>
 
 
 ```C++
@@ -336,7 +336,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="feced-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="feced-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="97923-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="97923-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -447,7 +447,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="feced-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="feced-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="97923-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="97923-113">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>

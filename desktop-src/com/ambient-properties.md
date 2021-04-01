@@ -11,27 +11,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005658"
 ---
-# <a name="ambient-properties"></a><span data-ttu-id="5a854-103">Propriedades de ambiente</span><span class="sxs-lookup"><span data-stu-id="5a854-103">Ambient Properties</span></span>
+# <a name="ambient-properties"></a><span data-ttu-id="f6583-103">Propriedades de ambiente</span><span class="sxs-lookup"><span data-stu-id="f6583-103">Ambient Properties</span></span>
 
-<span data-ttu-id="5a854-104">No mínimo, os contêineres de controle ActiveX devem dar suporte às seguintes propriedades de ambiente usando os DISPIDs padrão.</span><span class="sxs-lookup"><span data-stu-id="5a854-104">At a minimum, ActiveX Control containers must support the following ambient properties using the standard dispids.</span></span>
+<span data-ttu-id="f6583-104">No mínimo, os contêineres de controle ActiveX devem dar suporte às seguintes propriedades de ambiente usando os DISPIDs padrão.</span><span class="sxs-lookup"><span data-stu-id="f6583-104">At a minimum, ActiveX Control containers must support the following ambient properties using the standard dispids.</span></span>
 
 
 
-| <span data-ttu-id="5a854-105">Propriedade de ambiente</span><span class="sxs-lookup"><span data-stu-id="5a854-105">Ambient Property</span></span>             | <span data-ttu-id="5a854-106">DISPID</span><span class="sxs-lookup"><span data-stu-id="5a854-106">Dispid</span></span>          | <span data-ttu-id="5a854-107">Comentários/condições</span><span class="sxs-lookup"><span data-stu-id="5a854-107">Comments/Conditions</span></span>                                                      |
+| <span data-ttu-id="f6583-105">Propriedade de ambiente</span><span class="sxs-lookup"><span data-stu-id="f6583-105">Ambient Property</span></span>             | <span data-ttu-id="f6583-106">DISPID</span><span class="sxs-lookup"><span data-stu-id="f6583-106">Dispid</span></span>          | <span data-ttu-id="f6583-107">Comentários/condições</span><span class="sxs-lookup"><span data-stu-id="f6583-107">Comments/Conditions</span></span>                                                      |
 |------------------------------|-----------------|--------------------------------------------------------------------------|
-| <span data-ttu-id="5a854-108">LocaleID</span><span class="sxs-lookup"><span data-stu-id="5a854-108">LocaleID</span></span><br/>          | <span data-ttu-id="5a854-109">-705</span><span class="sxs-lookup"><span data-stu-id="5a854-109">-705</span></span><br/> |   <br/>                                                          |
-| <span data-ttu-id="5a854-110">Modo</span><span class="sxs-lookup"><span data-stu-id="5a854-110">UserMode</span></span><br/>          | <span data-ttu-id="5a854-111">-709</span><span class="sxs-lookup"><span data-stu-id="5a854-111">-709</span></span><br/> | <span data-ttu-id="5a854-112">Para contêineres que têm ambientes diferentes de usuário e de execução.</span><span class="sxs-lookup"><span data-stu-id="5a854-112">For containers that have different user and run environments.</span></span><br/> |
-| <span data-ttu-id="5a854-113">DisplayAsDefault</span><span class="sxs-lookup"><span data-stu-id="5a854-113">DisplayAsDefault</span></span> <br/> | <span data-ttu-id="5a854-114">-713</span><span class="sxs-lookup"><span data-stu-id="5a854-114">-713</span></span><br/> | <span data-ttu-id="5a854-115">Para os contêineres onde um botão padrão é relevante.</span><span class="sxs-lookup"><span data-stu-id="5a854-115">For those containers where a default button is relevant.</span></span><br/>      |
+| <span data-ttu-id="f6583-108">LocaleID</span><span class="sxs-lookup"><span data-stu-id="f6583-108">LocaleID</span></span><br/>          | <span data-ttu-id="f6583-109">-705</span><span class="sxs-lookup"><span data-stu-id="f6583-109">-705</span></span><br/> |   <br/>                                                          |
+| <span data-ttu-id="f6583-110">Modo</span><span class="sxs-lookup"><span data-stu-id="f6583-110">UserMode</span></span><br/>          | <span data-ttu-id="f6583-111">-709</span><span class="sxs-lookup"><span data-stu-id="f6583-111">-709</span></span><br/> | <span data-ttu-id="f6583-112">Para contêineres que têm ambientes diferentes de usuário e de execução.</span><span class="sxs-lookup"><span data-stu-id="f6583-112">For containers that have different user and run environments.</span></span><br/> |
+| <span data-ttu-id="f6583-113">DisplayAsDefault</span><span class="sxs-lookup"><span data-stu-id="f6583-113">DisplayAsDefault</span></span> <br/> | <span data-ttu-id="f6583-114">-713</span><span class="sxs-lookup"><span data-stu-id="f6583-114">-713</span></span><br/> | <span data-ttu-id="f6583-115">Para os contêineres onde um botão padrão é relevante.</span><span class="sxs-lookup"><span data-stu-id="f6583-115">For those containers where a default button is relevant.</span></span><br/>      |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="5a854-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5a854-116">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f6583-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f6583-116">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5a854-117">Contêineres</span><span class="sxs-lookup"><span data-stu-id="5a854-117">Containers</span></span>](containers.md)
+[<span data-ttu-id="f6583-117">Contêineres</span><span class="sxs-lookup"><span data-stu-id="f6583-117">Containers</span></span>](containers.md)
 </dt> </dl>
 
  
