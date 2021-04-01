@@ -164,7 +164,7 @@ Não há elementos filho.
 | [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>             |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>         |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
-| [**Group**](windowsribbon-element-group.md)<br/>                           |
+| [**Grupo**](windowsribbon-element-group.md)<br/>                           |
 | [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                   |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>               |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |

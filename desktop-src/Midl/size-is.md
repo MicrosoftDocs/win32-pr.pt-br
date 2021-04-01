@@ -139,7 +139,7 @@ HRESULT Proc6(
 [**fora**](out-idl.md)
 </dt> <dt>
 
-[**Strings**](string.md)
+[**string**](string.md)
 </dt> </dl>
 
  

@@ -60,7 +60,7 @@ Como as propriedades do elemento de automação da interface do usuário a segui
 | IsKeyboardFocusable    | accState, [ **sistema de estado \_ \_ focado**](object-state-constants.md)                                                                                   |
 | IsPassword             | accState, [ **sistema de estado \_ \_ protegido**](object-state-constants.md)                                                                                   |
 | HelpText               | accHelp                                                                                                                                                                       |
-| Name                   | accName                                                                                                                                                                       |
+| Nome                   | accName                                                                                                                                                                       |
 | NativeWindowHandle     | [**WindowFromAccessibleObject**](/windows/desktop/api/Oleacc/nf-oleacc-windowfromaccessibleobject)                                                                                                              |
 | IsOffscreen            | accState, estado do sistema de estado [**\_ \_ invisível do sistema**](object-state-constants.md) / [**fora da \_ \_ tela**](object-state-constants.md) |
 | ProcessId              | Fornecido pelo núcleo de automação da interface do usuário                                                                                                                                                |
