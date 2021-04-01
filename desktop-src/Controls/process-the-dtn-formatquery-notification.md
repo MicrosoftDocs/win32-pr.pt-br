@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "103917815"
 ---
-# <a name="how-to-process-the-dtn_formatquery-notification"></a><span data-ttu-id="123b2-103">Como processar a notificação DTN \_ FORMATQUERY</span><span class="sxs-lookup"><span data-stu-id="123b2-103">How to Process the DTN\_FORMATQUERY Notification</span></span>
+# <a name="how-to-process-the-dtn_formatquery-notification"></a><span data-ttu-id="a35d7-103">Como processar a notificação DTN \_ FORMATQUERY</span><span class="sxs-lookup"><span data-stu-id="a35d7-103">How to Process the DTN\_FORMATQUERY Notification</span></span>
 
-<span data-ttu-id="123b2-104">Este tópico demonstra como processar uma notificação de consulta de formato que é enviada pelo controle do seletor de data e hora (DTP).</span><span class="sxs-lookup"><span data-stu-id="123b2-104">This topic demonstrates how to process a Format Query notification that is sent by the date and time picker (DTP) control.</span></span>
+<span data-ttu-id="a35d7-104">Este tópico demonstra como processar uma notificação de consulta de formato que é enviada pelo controle do seletor de data e hora (DTP).</span><span class="sxs-lookup"><span data-stu-id="a35d7-104">This topic demonstrates how to process a Format Query notification that is sent by the date and time picker (DTP) control.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="123b2-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="123b2-105">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="a35d7-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="a35d7-105">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="123b2-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="123b2-106">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="a35d7-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="a35d7-106">Technologies</span></span>
 
--   [<span data-ttu-id="123b2-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="123b2-107">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="a35d7-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="a35d7-107">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="123b2-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="123b2-108">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="a35d7-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="a35d7-108">Prerequisites</span></span>
 
--   <span data-ttu-id="123b2-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="123b2-109">C/C++</span></span>
--   <span data-ttu-id="123b2-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="123b2-110">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="a35d7-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="a35d7-109">C/C++</span></span>
+-   <span data-ttu-id="a35d7-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="a35d7-110">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="123b2-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="123b2-111">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="a35d7-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="a35d7-111">Instructions</span></span>
 
 
-<span data-ttu-id="123b2-112">Um controle DTP envia um código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) para solicitar informações sobre o tamanho máximo possível de um campo de retorno de chamada dentro do controle.</span><span class="sxs-lookup"><span data-stu-id="123b2-112">A DTP control sends a [DTN\_FORMATQUERY](dtn-formatquery.md) notification code to request information about the maximum possible size of a callback field within the control.</span></span> <span data-ttu-id="123b2-113">Seu aplicativo deve lidar com essa mensagem para garantir que todos os campos sejam exibidos corretamente.</span><span class="sxs-lookup"><span data-stu-id="123b2-113">Your application must handle this message to ensure that all fields are displayed properly.</span></span>
+<span data-ttu-id="a35d7-112">Um controle DTP envia um código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) para solicitar informações sobre o tamanho máximo possível de um campo de retorno de chamada dentro do controle.</span><span class="sxs-lookup"><span data-stu-id="a35d7-112">A DTP control sends a [DTN\_FORMATQUERY](dtn-formatquery.md) notification code to request information about the maximum possible size of a callback field within the control.</span></span> <span data-ttu-id="a35d7-113">Seu aplicativo deve lidar com essa mensagem para garantir que todos os campos sejam exibidos corretamente.</span><span class="sxs-lookup"><span data-stu-id="a35d7-113">Your application must handle this message to ensure that all fields are displayed properly.</span></span>
 
-<span data-ttu-id="123b2-114">O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa o código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) calculando a largura da cadeia de caracteres mais larga possível para um determinado campo de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="123b2-114">The following C++ code example is an application-defined function that processes the [DTN\_FORMATQUERY](dtn-formatquery.md) notification code by calculating the width of the widest possible string for a given callback field.</span></span>
+<span data-ttu-id="a35d7-114">O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa o código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) calculando a largura da cadeia de caracteres mais larga possível para um determinado campo de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="a35d7-114">The following C++ code example is an application-defined function that processes the [DTN\_FORMATQUERY](dtn-formatquery.md) notification code by calculating the width of the widest possible string for a given callback field.</span></span>
 
-<span data-ttu-id="123b2-115">**Aviso de segurança:** O uso incorreto do **lstrcmp** pode comprometer a segurança do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="123b2-115">**Security Warning:** Using **lstrcmp** incorrectly can compromise the security of your application.</span></span> <span data-ttu-id="123b2-116">Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve verificar se as duas cadeias de caracteres são terminadas em nulo.</span><span class="sxs-lookup"><span data-stu-id="123b2-116">For example, before calling **lstrcmp** in the following code example you should make sure the two strings are null-terminated.</span></span> <span data-ttu-id="123b2-117">Você deve examinar as [considerações de segurança: controles do Microsoft Windows](sec-comctls.md) antes de continuar.</span><span class="sxs-lookup"><span data-stu-id="123b2-117">You should review [Security Considerations: Microsoft Windows Controls](sec-comctls.md) before continuing.</span></span>
+<span data-ttu-id="a35d7-115">**Aviso de segurança:** O uso incorreto do **lstrcmp** pode comprometer a segurança do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a35d7-115">**Security Warning:** Using **lstrcmp** incorrectly can compromise the security of your application.</span></span> <span data-ttu-id="a35d7-116">Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve verificar se as duas cadeias de caracteres são terminadas em nulo.</span><span class="sxs-lookup"><span data-stu-id="a35d7-116">For example, before calling **lstrcmp** in the following code example you should make sure the two strings are null-terminated.</span></span> <span data-ttu-id="a35d7-117">Você deve examinar as [considerações de segurança: controles do Microsoft Windows](sec-comctls.md) antes de continuar.</span><span class="sxs-lookup"><span data-stu-id="a35d7-117">You should review [Security Considerations: Microsoft Windows Controls](sec-comctls.md) before continuing.</span></span>
 
 
 
@@ -77,17 +77,17 @@ void WINAPI DoFormatQuery(
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="123b2-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="123b2-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a35d7-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a35d7-118">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="123b2-119">Usando controles de seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="123b2-119">Using Date and Time Picker Controls</span></span>](using-date-and-time-picker.md)
+[<span data-ttu-id="a35d7-119">Usando controles de seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="a35d7-119">Using Date and Time Picker Controls</span></span>](using-date-and-time-picker.md)
 </dt> <dt>
 
-[<span data-ttu-id="123b2-120">Referência de controle do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="123b2-120">Date and Time Picker Control Reference</span></span>](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[<span data-ttu-id="a35d7-120">Referência de controle do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="a35d7-120">Date and Time Picker Control Reference</span></span>](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="123b2-121">Seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="123b2-121">Date and Time Picker</span></span>](date-and-time-picker-control-reference.md)
+[<span data-ttu-id="a35d7-121">Seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="a35d7-121">Date and Time Picker</span></span>](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

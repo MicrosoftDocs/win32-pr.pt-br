@@ -11,10 +11,10 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647188"
 ---
-# <a name="using-cng"></a><span data-ttu-id="905b8-103">Usando o CNG</span><span class="sxs-lookup"><span data-stu-id="905b8-103">Using CNG</span></span>
+# <a name="using-cng"></a><span data-ttu-id="c3064-103">Usando o CNG</span><span class="sxs-lookup"><span data-stu-id="c3064-103">Using CNG</span></span>
 
--   [<span data-ttu-id="905b8-104">Usando os recursos de configuração de criptografia da CNG</span><span class="sxs-lookup"><span data-stu-id="905b8-104">Using the Cryptography Configuration Features of CNG</span></span>](using-the-cryptography-configuration-features-of-cng.md)
--   [<span data-ttu-id="905b8-105">Programação CNG típica</span><span class="sxs-lookup"><span data-stu-id="905b8-105">Typical CNG Programming</span></span>](typical-cng-programming.md)
+-   [<span data-ttu-id="c3064-104">Usando os recursos de configuração de criptografia da CNG</span><span class="sxs-lookup"><span data-stu-id="c3064-104">Using the Cryptography Configuration Features of CNG</span></span>](using-the-cryptography-configuration-features-of-cng.md)
+-   [<span data-ttu-id="c3064-105">Programação CNG típica</span><span class="sxs-lookup"><span data-stu-id="c3064-105">Typical CNG Programming</span></span>](typical-cng-programming.md)
 
  
 

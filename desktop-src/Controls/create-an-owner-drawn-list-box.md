@@ -11,31 +11,31 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "103917817"
 ---
-# <a name="how-to-create-an-owner-drawn-list-box"></a><span data-ttu-id="75d6c-103">Como criar uma caixa de listagem de Owner-Drawn</span><span class="sxs-lookup"><span data-stu-id="75d6c-103">How to Create an Owner-Drawn List Box</span></span>
+# <a name="how-to-create-an-owner-drawn-list-box"></a><span data-ttu-id="4a8c5-103">Como criar uma caixa de listagem de Owner-Drawn</span><span class="sxs-lookup"><span data-stu-id="4a8c5-103">How to Create an Owner-Drawn List Box</span></span>
 
-<span data-ttu-id="75d6c-104">Este tópico demonstra como implementar uma caixa de listagem de desenho proprietário.</span><span class="sxs-lookup"><span data-stu-id="75d6c-104">This topic demonstrates how to implement an owner-drawn list box.</span></span>
+<span data-ttu-id="4a8c5-104">Este tópico demonstra como implementar uma caixa de listagem de desenho proprietário.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-104">This topic demonstrates how to implement an owner-drawn list box.</span></span>
 
-<span data-ttu-id="75d6c-105">O exemplo de código C++ neste tópico mostra como desenhar uma caixa de listagem que contém cinco itens desenhados pelo proprietário: quatro implementações de desenho e uma bifurcação.</span><span class="sxs-lookup"><span data-stu-id="75d6c-105">The C++ code example in this topic shows how to draw a list box that contains five owner-drawn items: four drawing implements and a fork.</span></span> <span data-ttu-id="75d6c-106">Cada item de lista aparece como um bitmap seguido pelo nome do objeto.</span><span class="sxs-lookup"><span data-stu-id="75d6c-106">Each list item appears as a bitmap followed by the name of the object.</span></span> <span data-ttu-id="75d6c-107">Um botão solicita que o usuário selecione um item que não seja como os outros.</span><span class="sxs-lookup"><span data-stu-id="75d6c-107">A button prompts the user to select one item that is not like the others.</span></span> <span data-ttu-id="75d6c-108">Escolher o botão com a bifurcação selecionada exibe um "você está certo!"</span><span class="sxs-lookup"><span data-stu-id="75d6c-108">Choosing the button with the fork selected displays a "You're right!"</span></span> <span data-ttu-id="75d6c-109">e fecha a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="75d6c-109">message and closes the dialog box.</span></span> <span data-ttu-id="75d6c-110">Escolher o botão com qualquer outro item de lista selecionado exibe um "tentar novamente!"</span><span class="sxs-lookup"><span data-stu-id="75d6c-110">Choosing the button with any other list item selected displays a "Try again!"</span></span> <span data-ttu-id="75d6c-111">.</span><span class="sxs-lookup"><span data-stu-id="75d6c-111">message.</span></span>
+<span data-ttu-id="4a8c5-105">O exemplo de código C++ neste tópico mostra como desenhar uma caixa de listagem que contém cinco itens desenhados pelo proprietário: quatro implementações de desenho e uma bifurcação.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-105">The C++ code example in this topic shows how to draw a list box that contains five owner-drawn items: four drawing implements and a fork.</span></span> <span data-ttu-id="4a8c5-106">Cada item de lista aparece como um bitmap seguido pelo nome do objeto.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-106">Each list item appears as a bitmap followed by the name of the object.</span></span> <span data-ttu-id="4a8c5-107">Um botão solicita que o usuário selecione um item que não seja como os outros.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-107">A button prompts the user to select one item that is not like the others.</span></span> <span data-ttu-id="4a8c5-108">Escolher o botão com a bifurcação selecionada exibe um "você está certo!"</span><span class="sxs-lookup"><span data-stu-id="4a8c5-108">Choosing the button with the fork selected displays a "You're right!"</span></span> <span data-ttu-id="4a8c5-109">e fecha a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-109">message and closes the dialog box.</span></span> <span data-ttu-id="4a8c5-110">Escolher o botão com qualquer outro item de lista selecionado exibe um "tentar novamente!"</span><span class="sxs-lookup"><span data-stu-id="4a8c5-110">Choosing the button with any other list item selected displays a "Try again!"</span></span> <span data-ttu-id="4a8c5-111">.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-111">message.</span></span>
 
-<span data-ttu-id="75d6c-112">A caixa de listagem tem os estilos de [**lbs \_ OwnerDrawFixed**](list-box-styles.md) e [**lbs \_ HASSTRINGS**](list-box-styles.md) , além dos estilos de caixa de listagem padrão.</span><span class="sxs-lookup"><span data-stu-id="75d6c-112">The list box has the [**LBS\_OWNERDRAWFIXED**](list-box-styles.md) and [**LBS\_HASSTRINGS**](list-box-styles.md) styles, in addition to the standard list box styles.</span></span>
+<span data-ttu-id="4a8c5-112">A caixa de listagem tem os estilos de [**lbs \_ OwnerDrawFixed**](list-box-styles.md) e [**lbs \_ HASSTRINGS**](list-box-styles.md) , além dos estilos de caixa de listagem padrão.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-112">The list box has the [**LBS\_OWNERDRAWFIXED**](list-box-styles.md) and [**LBS\_HASSTRINGS**](list-box-styles.md) styles, in addition to the standard list box styles.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="75d6c-113">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="75d6c-113">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="4a8c5-113">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="4a8c5-113">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="75d6c-114">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="75d6c-114">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="4a8c5-114">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="4a8c5-114">Technologies</span></span>
 
--   [<span data-ttu-id="75d6c-115">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="75d6c-115">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="4a8c5-115">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="4a8c5-115">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="75d6c-116">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="75d6c-116">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="4a8c5-116">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4a8c5-116">Prerequisites</span></span>
 
--   <span data-ttu-id="75d6c-117">C/C++</span><span class="sxs-lookup"><span data-stu-id="75d6c-117">C/C++</span></span>
--   <span data-ttu-id="75d6c-118">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="75d6c-118">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="4a8c5-117">C/C++</span><span class="sxs-lookup"><span data-stu-id="4a8c5-117">C/C++</span></span>
+-   <span data-ttu-id="4a8c5-118">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="4a8c5-118">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="75d6c-119">Instruções</span><span class="sxs-lookup"><span data-stu-id="75d6c-119">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="4a8c5-119">Instruções</span><span class="sxs-lookup"><span data-stu-id="4a8c5-119">Instructions</span></span>
 
 
-<span data-ttu-id="75d6c-120">Para inicializar uma caixa de listagem desenhada pelo proprietário, seu aplicativo deve carregar a cadeia de texto e o bitmap associado para cada item da caixa de listagem.</span><span class="sxs-lookup"><span data-stu-id="75d6c-120">To initialize an owner-drawn list box, your application must load the text string and associated bitmap for each list box item.</span></span>
+<span data-ttu-id="4a8c5-120">Para inicializar uma caixa de listagem desenhada pelo proprietário, seu aplicativo deve carregar a cadeia de texto e o bitmap associado para cada item da caixa de listagem.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-120">To initialize an owner-drawn list box, your application must load the text string and associated bitmap for each list box item.</span></span>
 
-<span data-ttu-id="75d6c-121">No exemplo de código C++ a seguir, o procedimento da caixa de diálogo Inicializa a caixa de listagem, **\_ listar \_ itens da IDC**, enviando a mensagem de [**\_ AddString do lb**](lb-addstring.md) para definir o texto e, em seguida, envia a mensagem [**\_ SETITEMDATA do lb**](lb-setitemdata.md) para associar um bitmap a cada item da caixa de listagem.</span><span class="sxs-lookup"><span data-stu-id="75d6c-121">In the following C++ code example, the dialog box procedure initializes the list box, **IDC\_LIST\_STUFF**, by sending the [**LB\_ADDSTRING**](lb-addstring.md) message to set the text, and then sends the [**LB\_SETITEMDATA**](lb-setitemdata.md) message to associate a bitmap with each list box item.</span></span> <span data-ttu-id="75d6c-122">O código também define a altura de cada item da caixa de listagem processando a mensagem do [**WM \_ MEASUREITEM**](wm-measureitem.md) e desenha o texto e o bitmap para cada item processando a mensagem do [**WM \_ DRAWITEM**](wm-drawitem.md) .</span><span class="sxs-lookup"><span data-stu-id="75d6c-122">The code also sets the height of each list box item by processing the [**WM\_MEASUREITEM**](wm-measureitem.md) message and draws the text and bitmap for each item by processing the [**WM\_DRAWITEM**](wm-drawitem.md) message.</span></span>
+<span data-ttu-id="4a8c5-121">No exemplo de código C++ a seguir, o procedimento da caixa de diálogo Inicializa a caixa de listagem, **\_ listar \_ itens da IDC**, enviando a mensagem de [**\_ AddString do lb**](lb-addstring.md) para definir o texto e, em seguida, envia a mensagem [**\_ SETITEMDATA do lb**](lb-setitemdata.md) para associar um bitmap a cada item da caixa de listagem.</span><span class="sxs-lookup"><span data-stu-id="4a8c5-121">In the following C++ code example, the dialog box procedure initializes the list box, **IDC\_LIST\_STUFF**, by sending the [**LB\_ADDSTRING**](lb-addstring.md) message to set the text, and then sends the [**LB\_SETITEMDATA**](lb-setitemdata.md) message to associate a bitmap with each list box item.</span></span> <span data-ttu-id="4a8c5-122">O código também define a altura de cada item da caixa de listagem processando a mensagem do [**WM \_ MEASUREITEM**](wm-measureitem.md) e desenha o texto e o bitmap para cada item processando a mensagem do [**WM \_ DRAWITEM**](wm-drawitem.md) .</span><span class="sxs-lookup"><span data-stu-id="4a8c5-122">The code also sets the height of each list box item by processing the [**WM\_MEASUREITEM**](wm-measureitem.md) message and draws the text and bitmap for each item by processing the [**WM\_DRAWITEM**](wm-drawitem.md) message.</span></span>
 
 
 
@@ -264,17 +264,17 @@ INT_PTR CALLBACK DlgDrawProc(HWND hDlg, UINT message,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="75d6c-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="75d6c-123">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4a8c5-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4a8c5-123">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="75d6c-124">Referência de controle de caixa de listagem</span><span class="sxs-lookup"><span data-stu-id="75d6c-124">List Box Control Reference</span></span>](bumper-list-box-list-box-control-reference.md)
+[<span data-ttu-id="4a8c5-124">Referência de controle de caixa de listagem</span><span class="sxs-lookup"><span data-stu-id="4a8c5-124">List Box Control Reference</span></span>](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="75d6c-125">Sobre as caixas de listagem</span><span class="sxs-lookup"><span data-stu-id="75d6c-125">About List Boxes</span></span>](about-list-boxes.md)
+[<span data-ttu-id="4a8c5-125">Sobre as caixas de listagem</span><span class="sxs-lookup"><span data-stu-id="4a8c5-125">About List Boxes</span></span>](about-list-boxes.md)
 </dt> <dt>
 
-[<span data-ttu-id="75d6c-126">Usando caixas de listagem</span><span class="sxs-lookup"><span data-stu-id="75d6c-126">Using List Boxes</span></span>](using-list-boxes.md)
+[<span data-ttu-id="4a8c5-126">Usando caixas de listagem</span><span class="sxs-lookup"><span data-stu-id="4a8c5-126">Using List Boxes</span></span>](using-list-boxes.md)
 </dt> </dl>
 
  

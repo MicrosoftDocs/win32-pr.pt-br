@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646698"
 ---
-# <a name="vistaparamconfiguration-field"></a><span data-ttu-id="dfdb4-103">VistaParam.Configcampo uração</span><span class="sxs-lookup"><span data-stu-id="dfdb4-103">VistaParam.Configuration field</span></span>
+# <a name="vistaparamconfiguration-field"></a><span data-ttu-id="b5cde-103">VistaParam.Configcampo uração</span><span class="sxs-lookup"><span data-stu-id="b5cde-103">VistaParam.Configuration field</span></span>
 
-<span data-ttu-id="dfdb4-104">Esse parâmetro expõe vários conjuntos de valores padrão para todo o conjunto de parâmetros do sistema.</span><span class="sxs-lookup"><span data-stu-id="dfdb4-104">This parameter exposes multiple sets of default values for the entire set of system parameters.</span></span> <span data-ttu-id="dfdb4-105">Quando esse parâmetro é definido como uma configuração específica, todos os valores de parâmetro do sistema são redefinidos para seus valores padrão para essa configuração.</span><span class="sxs-lookup"><span data-stu-id="dfdb4-105">When this parameter is set to a specific configuration, all system parameter values are reset to their default values for that configuration.</span></span> <span data-ttu-id="dfdb4-106">Se a configuração for definida para uma instância específica, os parâmetros do sistema global não serão redefinidos para seus valores padrão.</span><span class="sxs-lookup"><span data-stu-id="dfdb4-106">If the configuration is set for a specific instance then global system parameters will not be reset to their default values.</span></span> <span data-ttu-id="dfdb4-107">Configuração pequena (0): o mecanismo de banco de dados é otimizado para uso de memória.</span><span class="sxs-lookup"><span data-stu-id="dfdb4-107">Small Configuration (0): The database engine is optimized for memory use.</span></span> <span data-ttu-id="dfdb4-108">Configuração herdada (1): o mecanismo de banco de dados tem seus padrões tradicionais.</span><span class="sxs-lookup"><span data-stu-id="dfdb4-108">Legacy Configuration (1): The database engine has its traditional defaults.</span></span>
+<span data-ttu-id="b5cde-104">Esse parâmetro expõe vários conjuntos de valores padrão para todo o conjunto de parâmetros do sistema.</span><span class="sxs-lookup"><span data-stu-id="b5cde-104">This parameter exposes multiple sets of default values for the entire set of system parameters.</span></span> <span data-ttu-id="b5cde-105">Quando esse parâmetro é definido como uma configuração específica, todos os valores de parâmetro do sistema são redefinidos para seus valores padrão para essa configuração.</span><span class="sxs-lookup"><span data-stu-id="b5cde-105">When this parameter is set to a specific configuration, all system parameter values are reset to their default values for that configuration.</span></span> <span data-ttu-id="b5cde-106">Se a configuração for definida para uma instância específica, os parâmetros do sistema global não serão redefinidos para seus valores padrão.</span><span class="sxs-lookup"><span data-stu-id="b5cde-106">If the configuration is set for a specific instance then global system parameters will not be reset to their default values.</span></span> <span data-ttu-id="b5cde-107">Configuração pequena (0): o mecanismo de banco de dados é otimizado para uso de memória.</span><span class="sxs-lookup"><span data-stu-id="b5cde-107">Small Configuration (0): The database engine is optimized for memory use.</span></span> <span data-ttu-id="b5cde-108">Configuração herdada (1): o mecanismo de banco de dados tem seus padrões tradicionais.</span><span class="sxs-lookup"><span data-stu-id="b5cde-108">Legacy Configuration (1): The database engine has its traditional defaults.</span></span>
 
-<span data-ttu-id="dfdb4-109">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="dfdb4-109">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="dfdb4-110">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="dfdb4-110">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="b5cde-109">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b5cde-109">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="b5cde-110">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b5cde-110">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="dfdb4-111">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="dfdb4-111">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b5cde-111">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b5cde-111">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = VistaParam.Configuration
 public const JET_param Configuration
 ```
 
-## <a name="see-also"></a><span data-ttu-id="dfdb4-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="dfdb4-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b5cde-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="b5cde-112">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="dfdb4-113">Referência</span><span class="sxs-lookup"><span data-stu-id="dfdb4-113">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="b5cde-113">Referência</span><span class="sxs-lookup"><span data-stu-id="b5cde-113">Reference</span></span>
 
-[<span data-ttu-id="dfdb4-114">Classe VistaParam</span><span class="sxs-lookup"><span data-stu-id="dfdb4-114">VistaParam class</span></span>](./vistaparam-class.md)
+[<span data-ttu-id="b5cde-114">Classe VistaParam</span><span class="sxs-lookup"><span data-stu-id="b5cde-114">VistaParam class</span></span>](./vistaparam-class.md)
 
-[<span data-ttu-id="dfdb4-115">Membros do VistaParam</span><span class="sxs-lookup"><span data-stu-id="dfdb4-115">VistaParam members</span></span>](./vistaparam-members.md)
+[<span data-ttu-id="b5cde-115">Membros do VistaParam</span><span class="sxs-lookup"><span data-stu-id="b5cde-115">VistaParam members</span></span>](./vistaparam-members.md)
 
-[<span data-ttu-id="dfdb4-116">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="dfdb4-116">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="b5cde-116">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="b5cde-116">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
