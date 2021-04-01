@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635878"
 ---
-# <a name="assembling-primitives"></a><span data-ttu-id="9038c-105">Montando primitivos</span><span class="sxs-lookup"><span data-stu-id="9038c-105">Assembling Primitives</span></span>
+# <a name="assembling-primitives"></a><span data-ttu-id="7f177-105">Montando primitivos</span><span class="sxs-lookup"><span data-stu-id="7f177-105">Assembling Primitives</span></span>
 
-<span data-ttu-id="9038c-106">Depois que todos os cálculos necessários forem realizados, os vértices serão montados em pontos [primitivos](primitives.md) , segmentos de linha ou polígonos junto com as informações relevantes de sinalizador de borda, cor e textura para cada vértice.</span><span class="sxs-lookup"><span data-stu-id="9038c-106">Once all necessary calculations have been performed, vertices are assembled into [primitives](primitives.md) points, line segments, or polygons together with the relevant edge flag, color, and texture information for each vertex.</span></span>
+<span data-ttu-id="7f177-106">Depois que todos os cálculos necessários forem realizados, os vértices serão montados em pontos [primitivos](primitives.md) , segmentos de linha ou polígonos junto com as informações relevantes de sinalizador de borda, cor e textura para cada vértice.</span><span class="sxs-lookup"><span data-stu-id="7f177-106">Once all necessary calculations have been performed, vertices are assembled into [primitives](primitives.md) points, line segments, or polygons together with the relevant edge flag, color, and texture information for each vertex.</span></span>
 
  
 

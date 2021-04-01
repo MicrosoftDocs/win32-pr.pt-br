@@ -12,12 +12,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634895"
 ---
-# <a name="binding-programmatically-using-an-adsi-interface"></a><span data-ttu-id="38cf6-103">Ligando programaticamente usando uma interface ADSI</span><span class="sxs-lookup"><span data-stu-id="38cf6-103">Binding Programmatically Using an ADSI Interface</span></span>
+# <a name="binding-programmatically-using-an-adsi-interface"></a><span data-ttu-id="c9676-103">Ligando programaticamente usando uma interface ADSI</span><span class="sxs-lookup"><span data-stu-id="c9676-103">Binding Programmatically Using an ADSI Interface</span></span>
 
-<span data-ttu-id="38cf6-104">A ADSI fornece duas maneiras básicas de associar a um objeto:</span><span class="sxs-lookup"><span data-stu-id="38cf6-104">ADSI provides two basic ways to bind to an object:</span></span>
+<span data-ttu-id="c9676-104">A ADSI fornece duas maneiras básicas de associar a um objeto:</span><span class="sxs-lookup"><span data-stu-id="c9676-104">ADSI provides two basic ways to bind to an object:</span></span>
 
--   [<span data-ttu-id="38cf6-105">Usando funções ADSI para associar diretamente a um objeto</span><span class="sxs-lookup"><span data-stu-id="38cf6-105">Using ADSI functions to bind directly to an object</span></span>](using-adsi-functions-to-bind-directly-to-an-object.md)
--   [<span data-ttu-id="38cf6-106">Usando um objeto de dados ActiveX</span><span class="sxs-lookup"><span data-stu-id="38cf6-106">Using an ActiveX Data Object</span></span>](using-an-activex-data-object-to-bind-to-adsi-providers.md)
+-   [<span data-ttu-id="c9676-105">Usando funções ADSI para associar diretamente a um objeto</span><span class="sxs-lookup"><span data-stu-id="c9676-105">Using ADSI functions to bind directly to an object</span></span>](using-adsi-functions-to-bind-directly-to-an-object.md)
+-   [<span data-ttu-id="c9676-106">Usando um objeto de dados ActiveX</span><span class="sxs-lookup"><span data-stu-id="c9676-106">Using an ActiveX Data Object</span></span>](using-an-activex-data-object-to-bind-to-adsi-providers.md)
 
  
 

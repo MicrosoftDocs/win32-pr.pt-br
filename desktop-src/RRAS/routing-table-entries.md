@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635843"
 ---
-# <a name="routing-table-entries"></a><span data-ttu-id="99820-103">Entradas da tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="99820-103">Routing Table Entries</span></span>
+# <a name="routing-table-entries"></a><span data-ttu-id="2d75b-103">Entradas da tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="2d75b-103">Routing Table Entries</span></span>
 
-<span data-ttu-id="99820-104">A tabela de roteamento consiste em três tipos de entradas: [destinos](destinations.md), [rotas](routes-and-the-best-route.md)e [próximos saltos](next-hops.md).</span><span class="sxs-lookup"><span data-stu-id="99820-104">The routing table consists of three types of entries: [destinations](destinations.md), [routes](routes-and-the-best-route.md), and [next hops](next-hops.md).</span></span>
+<span data-ttu-id="2d75b-104">A tabela de roteamento consiste em três tipos de entradas: [destinos](destinations.md), [rotas](routes-and-the-best-route.md)e [próximos saltos](next-hops.md).</span><span class="sxs-lookup"><span data-stu-id="2d75b-104">The routing table consists of three types of entries: [destinations](destinations.md), [routes](routes-and-the-best-route.md), and [next hops](next-hops.md).</span></span>
 
  
 

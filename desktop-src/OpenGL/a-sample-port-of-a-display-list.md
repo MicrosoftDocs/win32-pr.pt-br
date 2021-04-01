@@ -17,11 +17,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635879"
 ---
-# <a name="a-sample-port-of-a-display-list"></a><span data-ttu-id="34f9b-109">Uma porta de exemplo de uma lista de exibição</span><span class="sxs-lookup"><span data-stu-id="34f9b-109">A Sample Port of a Display List</span></span>
+# <a name="a-sample-port-of-a-display-list"></a><span data-ttu-id="d99c2-109">Uma porta de exemplo de uma lista de exibição</span><span class="sxs-lookup"><span data-stu-id="d99c2-109">A Sample Port of a Display List</span></span>
 
-<span data-ttu-id="34f9b-110">Este tópico fornece um exemplo de código do íris GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição.</span><span class="sxs-lookup"><span data-stu-id="34f9b-110">This topic gives an IRIS GL sample of code that defines three display lists; one of the display lists refers to the others in its definition.</span></span> <span data-ttu-id="34f9b-111">Seguindo o exemplo do íris GL há um exemplo de como o código é semelhante ao portado para OpenGL.</span><span class="sxs-lookup"><span data-stu-id="34f9b-111">Following the IRIS GL sample is a sample of what the code looks like when ported to OpenGL.</span></span>
+<span data-ttu-id="d99c2-110">Este tópico fornece um exemplo de código do íris GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição.</span><span class="sxs-lookup"><span data-stu-id="d99c2-110">This topic gives an IRIS GL sample of code that defines three display lists; one of the display lists refers to the others in its definition.</span></span> <span data-ttu-id="d99c2-111">Seguindo o exemplo do íris GL há um exemplo de como o código é semelhante ao portado para OpenGL.</span><span class="sxs-lookup"><span data-stu-id="d99c2-111">Following the IRIS GL sample is a sample of what the code looks like when ported to OpenGL.</span></span>
 
-## <a name="iris-gl-sample-display-list-code"></a><span data-ttu-id="34f9b-112">Código da lista de exibição de exemplo do íris GL</span><span class="sxs-lookup"><span data-stu-id="34f9b-112">IRIS GL Sample Display List Code</span></span>
+## <a name="iris-gl-sample-display-list-code"></a><span data-ttu-id="d99c2-112">Código da lista de exibição de exemplo do íris GL</span><span class="sxs-lookup"><span data-stu-id="d99c2-112">IRIS GL Sample Display List Code</span></span>
 
 
 ```C++
@@ -49,9 +49,9 @@ call(30);
 
 
 
-## <a name="opengl-sample-display-list-code"></a><span data-ttu-id="34f9b-113">Exemplo de código de lista de exibição do OpenGL</span><span class="sxs-lookup"><span data-stu-id="34f9b-113">OpenGL Sample Display List Code</span></span>
+## <a name="opengl-sample-display-list-code"></a><span data-ttu-id="d99c2-113">Exemplo de código de lista de exibição do OpenGL</span><span class="sxs-lookup"><span data-stu-id="d99c2-113">OpenGL Sample Display List Code</span></span>
 
-<span data-ttu-id="34f9b-114">Aqui está o código do íris GL anterior convertido em OpenGL:</span><span class="sxs-lookup"><span data-stu-id="34f9b-114">Here is the preceding IRIS GL code translated to OpenGL:</span></span>
+<span data-ttu-id="d99c2-114">Aqui está o código do íris GL anterior convertido em OpenGL:</span><span class="sxs-lookup"><span data-stu-id="d99c2-114">Here is the preceding IRIS GL code translated to OpenGL:</span></span>
 
 
 ```C++

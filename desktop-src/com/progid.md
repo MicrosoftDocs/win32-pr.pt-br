@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635851"
 ---
-# <a name="progid"></a><span data-ttu-id="cfe9c-104">ProgID</span><span class="sxs-lookup"><span data-stu-id="cfe9c-104">ProgID</span></span>
+# <a name="progid"></a><span data-ttu-id="43fe9-104">ProgID</span><span class="sxs-lookup"><span data-stu-id="43fe9-104">ProgID</span></span>
 
-<span data-ttu-id="cfe9c-105">Associa um ProgID a um CLSID.</span><span class="sxs-lookup"><span data-stu-id="cfe9c-105">Associates a ProgID with a CLSID.</span></span>
+<span data-ttu-id="43fe9-105">Associa um ProgID a um CLSID.</span><span class="sxs-lookup"><span data-stu-id="43fe9-105">Associates a ProgID with a CLSID.</span></span>
 
-## <a name="registry-entry"></a><span data-ttu-id="cfe9c-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="cfe9c-106">Registry Entry</span></span>
+## <a name="registry-entry"></a><span data-ttu-id="43fe9-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="43fe9-106">Registry Entry</span></span>
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
@@ -25,18 +25,18 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       ProgID = value
 ```
 
-## <a name="remarks"></a><span data-ttu-id="cfe9c-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="cfe9c-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="43fe9-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="43fe9-107">Remarks</span></span>
 
-<span data-ttu-id="cfe9c-108">Cada classe de objeto insertável tem um ProgID.</span><span class="sxs-lookup"><span data-stu-id="cfe9c-108">Every insertable object class has a ProgID.</span></span> <span data-ttu-id="cfe9c-109">Para obter informações sobre como criar um ProgID, consulte a [ <ProgID> chave](-progid--key.md).</span><span class="sxs-lookup"><span data-stu-id="cfe9c-109">For information on creating a ProgID, see the [<ProgID> key](-progid--key.md).</span></span>
+<span data-ttu-id="43fe9-108">Cada classe de objeto insertável tem um ProgID.</span><span class="sxs-lookup"><span data-stu-id="43fe9-108">Every insertable object class has a ProgID.</span></span> <span data-ttu-id="43fe9-109">Para obter informações sobre como criar um ProgID, consulte a [ <ProgID> chave](-progid--key.md).</span><span class="sxs-lookup"><span data-stu-id="43fe9-109">For information on creating a ProgID, see the [<ProgID> key](-progid--key.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="cfe9c-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cfe9c-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="43fe9-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="43fe9-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="cfe9c-111"><ProgID> chaves</span><span class="sxs-lookup"><span data-stu-id="cfe9c-111"><ProgID> key</span></span>](-progid--key.md)
+[<span data-ttu-id="43fe9-111"><ProgID> chaves</span><span class="sxs-lookup"><span data-stu-id="43fe9-111"><ProgID> key</span></span>](-progid--key.md)
 </dt> <dt>
 
-[<span data-ttu-id="cfe9c-112">**VersionIndependentProgID**</span><span class="sxs-lookup"><span data-stu-id="cfe9c-112">**VersionIndependentProgID**</span></span>](versionindependentprogid.md)
+[<span data-ttu-id="43fe9-112">**VersionIndependentProgID**</span><span class="sxs-lookup"><span data-stu-id="43fe9-112">**VersionIndependentProgID**</span></span>](versionindependentprogid.md)
 </dt> </dl>
 
  

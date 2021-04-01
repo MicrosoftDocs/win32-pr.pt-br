@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004993"
 ---
-# <a name="how-to-enable-navigation-in-a-ui-automation-fragment-provider"></a><span data-ttu-id="706de-103">Como habilitar a navegação em um provedor de fragmento de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="706de-103">How to Enable Navigation in a UI Automation Fragment Provider</span></span>
+# <a name="how-to-enable-navigation-in-a-ui-automation-fragment-provider"></a><span data-ttu-id="41e81-103">Como habilitar a navegação em um provedor de fragmento de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="41e81-103">How to Enable Navigation in a UI Automation Fragment Provider</span></span>
 
-<span data-ttu-id="706de-104">Este tópico contém um código de exemplo que mostra como habilitar a navegação em um provedor de automação da interface do usuário da Microsoft para um elemento em um fragmento.</span><span class="sxs-lookup"><span data-stu-id="706de-104">This topic contains example code that shows how to enable navigation in a Microsoft UI Automation provider for an element in a fragment.</span></span>
+<span data-ttu-id="41e81-104">Este tópico contém um código de exemplo que mostra como habilitar a navegação em um provedor de automação da interface do usuário da Microsoft para um elemento em um fragmento.</span><span class="sxs-lookup"><span data-stu-id="41e81-104">This topic contains example code that shows how to enable navigation in a Microsoft UI Automation provider for an element in a fragment.</span></span>
 
-<span data-ttu-id="706de-105">O código de exemplo a seguir implementa o método [**IRawElementProviderFragment:: Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) para um item de lista em um controle de lista personalizado.</span><span class="sxs-lookup"><span data-stu-id="706de-105">The following example code implements the [**IRawElementProviderFragment::Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) method for a list item in a custom list control.</span></span> <span data-ttu-id="706de-106">O elemento pai é o controle de lista personalizado e os elementos irmãos são outros itens na lista.</span><span class="sxs-lookup"><span data-stu-id="706de-106">The parent element is the custom list control, and the sibling elements are other items in the list.</span></span> <span data-ttu-id="706de-107">O método define o parâmetro *pRetVal* como **NULL** se não houver nenhum elemento na direção especificada.</span><span class="sxs-lookup"><span data-stu-id="706de-107">The method sets the *pRetVal* parameter to **NULL** if there is no element in the specified direction.</span></span>
+<span data-ttu-id="41e81-105">O código de exemplo a seguir implementa o método [**IRawElementProviderFragment:: Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) para um item de lista em um controle de lista personalizado.</span><span class="sxs-lookup"><span data-stu-id="41e81-105">The following example code implements the [**IRawElementProviderFragment::Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) method for a list item in a custom list control.</span></span> <span data-ttu-id="41e81-106">O elemento pai é o controle de lista personalizado e os elementos irmãos são outros itens na lista.</span><span class="sxs-lookup"><span data-stu-id="41e81-106">The parent element is the custom list control, and the sibling elements are other items in the list.</span></span> <span data-ttu-id="41e81-107">O método define o parâmetro *pRetVal* como **NULL** se não houver nenhum elemento na direção especificada.</span><span class="sxs-lookup"><span data-stu-id="41e81-107">The method sets the *pRetVal* parameter to **NULL** if there is no element in the specified direction.</span></span>
 
 
 ```C++
@@ -54,17 +54,17 @@ HRESULT STDMETHODCALLTYPE ListItemProvider::Navigate(NavigateDirection direction
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="706de-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="706de-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="41e81-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="41e81-108">Related topics</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="706de-109">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="706de-109">**Conceptual**</span></span>
+<span data-ttu-id="41e81-109">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="41e81-109">**Conceptual**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="706de-110">Implementando um provedor de automação de interface do usuário Server-Side</span><span class="sxs-lookup"><span data-stu-id="706de-110">Implementing a Server-Side UI Automation Provider</span></span>](uiauto-serversideprovider.md)
+[<span data-ttu-id="41e81-110">Implementando um provedor de automação de interface do usuário Server-Side</span><span class="sxs-lookup"><span data-stu-id="41e81-110">Implementing a Server-Side UI Automation Provider</span></span>](uiauto-serversideprovider.md)
 </dt> <dt>
 
-[<span data-ttu-id="706de-111">Tópicos de instruções para provedores de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="706de-111">How-To Topics for UI Automation Providers</span></span>](uiauto-howto-topics-for-uiautomation-providers.md)
+[<span data-ttu-id="41e81-111">Tópicos de instruções para provedores de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="41e81-111">How-To Topics for UI Automation Providers</span></span>](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
  

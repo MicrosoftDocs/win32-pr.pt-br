@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634756"
 ---
-# <a name="glgetlight-functions"></a><span data-ttu-id="95346-103">Funções glGetLight</span><span class="sxs-lookup"><span data-stu-id="95346-103">glGetLight Functions</span></span>
+# <a name="glgetlight-functions"></a><span data-ttu-id="62982-103">Funções glGetLight</span><span class="sxs-lookup"><span data-stu-id="62982-103">glGetLight Functions</span></span>
 
-<span data-ttu-id="95346-104">Essas funções retornam valores de parâmetro de fonte de luz:</span><span class="sxs-lookup"><span data-stu-id="95346-104">These functions return light source parameter values:</span></span>
+<span data-ttu-id="62982-104">Essas funções retornam valores de parâmetro de fonte de luz:</span><span class="sxs-lookup"><span data-stu-id="62982-104">These functions return light source parameter values:</span></span>
 
--   [<span data-ttu-id="95346-105">**glGetLightfv**</span><span class="sxs-lookup"><span data-stu-id="95346-105">**glGetLightfv**</span></span>](glgetlightfv.md)
--   [<span data-ttu-id="95346-106">**glGetLightiv**</span><span class="sxs-lookup"><span data-stu-id="95346-106">**glGetLightiv**</span></span>](glgetlightiv.md)
+-   [<span data-ttu-id="62982-105">**glGetLightfv**</span><span class="sxs-lookup"><span data-stu-id="62982-105">**glGetLightfv**</span></span>](glgetlightfv.md)
+-   [<span data-ttu-id="62982-106">**glGetLightiv**</span><span class="sxs-lookup"><span data-stu-id="62982-106">**glGetLightiv**</span></span>](glgetlightiv.md)
 
  
 

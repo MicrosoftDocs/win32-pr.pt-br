@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921224"
 ---
-# <a name="instanceparameterseventsourcekey-property"></a><span data-ttu-id="89aa4-103">Propriedade instanceparameters. EventSourceKey</span><span class="sxs-lookup"><span data-stu-id="89aa4-103">InstanceParameters.EventSourceKey property</span></span>
+# <a name="instanceparameterseventsourcekey-property"></a><span data-ttu-id="00470-103">Propriedade instanceparameters. EventSourceKey</span><span class="sxs-lookup"><span data-stu-id="00470-103">InstanceParameters.EventSourceKey property</span></span>
 
-<span data-ttu-id="89aa4-104">Obtém ou define o nome do log de eventos que o mecanismo de banco de dados usa para suas mensagens de log de eventos.</span><span class="sxs-lookup"><span data-stu-id="89aa4-104">Gets or sets the name of the event log the database engine uses for its event log messages.</span></span> <span data-ttu-id="89aa4-105">Por padrão, todas as mensagens de log de eventos vão para o log de eventos do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="89aa4-105">By default, all event log messages will go to the Application event log.</span></span> <span data-ttu-id="89aa4-106">Se o nome da chave do registro para outro log de eventos estiver configurado, as mensagens do log de eventos entrarão em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="89aa4-106">If the registry key name for another event log is configured then the event log messages will go there instead.</span></span>
+<span data-ttu-id="00470-104">Obtém ou define o nome do log de eventos que o mecanismo de banco de dados usa para suas mensagens de log de eventos.</span><span class="sxs-lookup"><span data-stu-id="00470-104">Gets or sets the name of the event log the database engine uses for its event log messages.</span></span> <span data-ttu-id="00470-105">Por padrão, todas as mensagens de log de eventos vão para o log de eventos do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="00470-105">By default, all event log messages will go to the Application event log.</span></span> <span data-ttu-id="00470-106">Se o nome da chave do registro para outro log de eventos estiver configurado, as mensagens do log de eventos entrarão em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="00470-106">If the registry key name for another event log is configured then the event log messages will go there instead.</span></span>
 
-<span data-ttu-id="89aa4-107">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="89aa4-107">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="89aa4-108">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="89aa4-108">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="00470-107">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="00470-107">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="00470-108">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="00470-108">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="89aa4-109">Syntax</span><span class="sxs-lookup"><span data-stu-id="89aa4-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="00470-109">Syntax</span><span class="sxs-lookup"><span data-stu-id="00470-109">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.EventSourceKey = value
 public string EventSourceKey { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="89aa4-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="89aa4-110">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="00470-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="00470-110">Property value</span></span>
 
-<span data-ttu-id="89aa4-111">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="89aa4-111">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="00470-111">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="00470-111">Type: [System.String](/dotnet/api/system.string)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="89aa4-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="89aa4-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="00470-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="00470-112">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="89aa4-113">Referência</span><span class="sxs-lookup"><span data-stu-id="89aa4-113">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="00470-113">Referência</span><span class="sxs-lookup"><span data-stu-id="00470-113">Reference</span></span>
 
-[<span data-ttu-id="89aa4-114">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="89aa4-114">InstanceParameters class</span></span>](./instanceparameters-class.md)
+[<span data-ttu-id="00470-114">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="00470-114">InstanceParameters class</span></span>](./instanceparameters-class.md)
 
-[<span data-ttu-id="89aa4-115">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="89aa4-115">InstanceParameters members</span></span>](./instanceparameters-members.md)
+[<span data-ttu-id="00470-115">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="00470-115">InstanceParameters members</span></span>](./instanceparameters-members.md)
 
-[<span data-ttu-id="89aa4-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="89aa4-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="00470-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="00470-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

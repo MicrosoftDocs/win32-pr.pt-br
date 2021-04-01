@@ -26,13 +26,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663136"
 ---
-# <a name="__namespacemodificationevent-class"></a><span data-ttu-id="4aa5a-103">\_\_Classe NamespaceModificationEvent</span><span class="sxs-lookup"><span data-stu-id="4aa5a-103">\_\_NamespaceModificationEvent class</span></span>
+# <a name="__namespacemodificationevent-class"></a><span data-ttu-id="784d1-103">\_\_Classe NamespaceModificationEvent</span><span class="sxs-lookup"><span data-stu-id="784d1-103">\_\_NamespaceModificationEvent class</span></span>
 
-<span data-ttu-id="4aa5a-104">A classe de sistema **\_ \_ NamespaceModificationEvent** relata um evento de modificação de namespace, que é um tipo de [evento intrínseco](determining-the-type-of-event-to-receive.md) que é gerado quando um namespace é modificado.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-104">The **\_\_NamespaceModificationEvent** system class reports a namespace modification event, which is a type of [intrinsic event](determining-the-type-of-event-to-receive.md) that is generated when a namespace is modified.</span></span>
+<span data-ttu-id="784d1-104">A classe de sistema **\_ \_ NamespaceModificationEvent** relata um evento de modificação de namespace, que é um tipo de [evento intrínseco](determining-the-type-of-event-to-receive.md) que é gerado quando um namespace é modificado.</span><span class="sxs-lookup"><span data-stu-id="784d1-104">The **\_\_NamespaceModificationEvent** system class reports a namespace modification event, which is a type of [intrinsic event](determining-the-type-of-event-to-receive.md) that is generated when a namespace is modified.</span></span>
 
-<span data-ttu-id="4aa5a-105">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-105">The following syntax is simplified from Managed Object Format (MOF) code and includes all inherited properties.</span></span> <span data-ttu-id="4aa5a-106">As propriedades são listadas em ordem alfabética, não em ordem MOF.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-106">Properties are listed in alphabetic order, not MOF order.</span></span>
+<span data-ttu-id="784d1-105">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="784d1-105">The following syntax is simplified from Managed Object Format (MOF) code and includes all inherited properties.</span></span> <span data-ttu-id="784d1-106">As propriedades são listadas em ordem alfabética, não em ordem MOF.</span><span class="sxs-lookup"><span data-stu-id="784d1-106">Properties are listed in alphabetic order, not MOF order.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4aa5a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4aa5a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="784d1-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="784d1-107">Syntax</span></span>
 
 ``` syntax
 class __NamespaceModificationEvent : __NamespaceOperationEvent
@@ -45,118 +45,118 @@ class __NamespaceModificationEvent : __NamespaceOperationEvent
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="4aa5a-108">Membros</span><span class="sxs-lookup"><span data-stu-id="4aa5a-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="784d1-108">Membros</span><span class="sxs-lookup"><span data-stu-id="784d1-108">Members</span></span>
 
-<span data-ttu-id="4aa5a-109">A classe **\_ \_ NamespaceModificationEvent** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="4aa5a-109">The **\_\_NamespaceModificationEvent** class has these types of members:</span></span>
+<span data-ttu-id="784d1-109">A classe **\_ \_ NamespaceModificationEvent** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="784d1-109">The **\_\_NamespaceModificationEvent** class has these types of members:</span></span>
 
--   [<span data-ttu-id="4aa5a-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4aa5a-110">Properties</span></span>](#properties)
+-   [<span data-ttu-id="784d1-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="784d1-110">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="4aa5a-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4aa5a-111">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="784d1-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="784d1-111">Properties</span></span>
 
-<span data-ttu-id="4aa5a-112">A classe **\_ \_ NamespaceModificationEvent** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-112">The **\_\_NamespaceModificationEvent** class has these properties.</span></span>
+<span data-ttu-id="784d1-112">A classe **\_ \_ NamespaceModificationEvent** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="784d1-112">The **\_\_NamespaceModificationEvent** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4aa5a-113">**PreviousNamespace**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-113">**PreviousNamespace**</span></span>
+<span data-ttu-id="784d1-113">**PreviousNamespace**</span><span class="sxs-lookup"><span data-stu-id="784d1-113">**PreviousNamespace**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4aa5a-114">Tipo de dados: **\_ \_ namespace**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-114">Data type: **\_\_Namespace**</span></span>
+<span data-ttu-id="784d1-114">Tipo de dados: **\_ \_ namespace**</span><span class="sxs-lookup"><span data-stu-id="784d1-114">Data type: **\_\_Namespace**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4aa5a-115">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4aa5a-115">Access type: Read-only</span></span>
+<span data-ttu-id="784d1-115">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="784d1-115">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4aa5a-116">Cópia da versão original de uma instância de [**\_ \_ namespace**](--namespace.md) .</span><span class="sxs-lookup"><span data-stu-id="4aa5a-116">Copy of the original version of a [**\_\_Namespace**](--namespace.md) instance.</span></span> <span data-ttu-id="4aa5a-117">A propriedade **Name** dessa instância identifica o namespace que é modificado.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-117">The **Name** property of this instance identifies the namespace that is modified.</span></span>
+<span data-ttu-id="784d1-116">Cópia da versão original de uma instância de [**\_ \_ namespace**](--namespace.md) .</span><span class="sxs-lookup"><span data-stu-id="784d1-116">Copy of the original version of a [**\_\_Namespace**](--namespace.md) instance.</span></span> <span data-ttu-id="784d1-117">A propriedade **Name** dessa instância identifica o namespace que é modificado.</span><span class="sxs-lookup"><span data-stu-id="784d1-117">The **Name** property of this instance identifies the namespace that is modified.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4aa5a-118">**\_descritor de segurança**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-118">**SECURITY\_DESCRIPTOR**</span></span>
+<span data-ttu-id="784d1-118">**\_descritor de segurança**</span><span class="sxs-lookup"><span data-stu-id="784d1-118">**SECURITY\_DESCRIPTOR**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4aa5a-119">Tipo de dados: matriz **uint8**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-119">Data type: **uint8** array</span></span>
+<span data-ttu-id="784d1-119">Tipo de dados: matriz **uint8**</span><span class="sxs-lookup"><span data-stu-id="784d1-119">Data type: **uint8** array</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4aa5a-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4aa5a-120">Access type: Read-only</span></span>
+<span data-ttu-id="784d1-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="784d1-120">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4aa5a-121">Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-121">Descriptor used by the event provider to determine which users can receive the event.</span></span> <span data-ttu-id="4aa5a-122">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-122">This property is inherited from [**\_\_Event**](--event.md).</span></span>
+<span data-ttu-id="784d1-121">Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento.</span><span class="sxs-lookup"><span data-stu-id="784d1-121">Descriptor used by the event provider to determine which users can receive the event.</span></span> <span data-ttu-id="784d1-122">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-122">This property is inherited from [**\_\_Event**](--event.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4aa5a-123">**\_descritor de segurança**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-123">**SECURITY\_DESCRIPTOR**</span></span> 
+<span data-ttu-id="784d1-123">**\_descritor de segurança**</span><span class="sxs-lookup"><span data-stu-id="784d1-123">**SECURITY\_DESCRIPTOR**</span></span> 
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4aa5a-124">Tipo de dados: matriz **uint8**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-124">Data type: **uint8** array</span></span>
+<span data-ttu-id="784d1-124">Tipo de dados: matriz **uint8**</span><span class="sxs-lookup"><span data-stu-id="784d1-124">Data type: **uint8** array</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4aa5a-125">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4aa5a-125">Access type: Read-only</span></span>
+<span data-ttu-id="784d1-125">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="784d1-125">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4aa5a-126">Descritor que o provedor de eventos usa para determinar os usuários que podem receber um evento.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-126">Descriptor that the event provider uses to determine the users that can receive an event.</span></span> <span data-ttu-id="4aa5a-127">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-127">This property is inherited from [**\_\_Event**](--event.md).</span></span>
+<span data-ttu-id="784d1-126">Descritor que o provedor de eventos usa para determinar os usuários que podem receber um evento.</span><span class="sxs-lookup"><span data-stu-id="784d1-126">Descriptor that the event provider uses to determine the users that can receive an event.</span></span> <span data-ttu-id="784d1-127">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-127">This property is inherited from [**\_\_Event**](--event.md).</span></span>
 
 > [!Note]  
-> <span data-ttu-id="4aa5a-128">Uma  ACL (lista de controle de acesso) nula [**no \_ descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acesso ilimitado a todas as pessoas o tempo todo.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-128">A **NULL** access control list (ACL) in the [**SECURITY\_DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) grants unlimited access to everyone all the time.</span></span> <span data-ttu-id="4aa5a-129">Para obter mais informações, consulte [criando um descritor de segurança para um novo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-129">For more information, see [Creating a Security Descriptor for a New Object](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).</span></span>
+> <span data-ttu-id="784d1-128">Uma  ACL (lista de controle de acesso) nula [**no \_ descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acesso ilimitado a todas as pessoas o tempo todo.</span><span class="sxs-lookup"><span data-stu-id="784d1-128">A **NULL** access control list (ACL) in the [**SECURITY\_DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) grants unlimited access to everyone all the time.</span></span> <span data-ttu-id="784d1-129">Para obter mais informações, consulte [criando um descritor de segurança para um novo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).</span><span class="sxs-lookup"><span data-stu-id="784d1-129">For more information, see [Creating a Security Descriptor for a New Object](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).</span></span>
 
  
 
 </dd> <dt>
 
-<span data-ttu-id="4aa5a-130">**TargetNamespace**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-130">**TargetNamespace**</span></span>
+<span data-ttu-id="784d1-130">**TargetNamespace**</span><span class="sxs-lookup"><span data-stu-id="784d1-130">**TargetNamespace**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4aa5a-131">Tipo de dados: **\_ \_ namespace**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-131">Data type: **\_\_Namespace**</span></span>
+<span data-ttu-id="784d1-131">Tipo de dados: **\_ \_ namespace**</span><span class="sxs-lookup"><span data-stu-id="784d1-131">Data type: **\_\_Namespace**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4aa5a-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4aa5a-132">Access type: Read-only</span></span>
+<span data-ttu-id="784d1-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="784d1-132">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4aa5a-133">Cópia da instância de [**\_ \_ namespace**](--namespace.md) que é modificada.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-133">Copy of the [**\_\_Namespace**](--namespace.md) instance that is modified.</span></span> <span data-ttu-id="4aa5a-134">A propriedade **Name** da instância do **\_ \_ namespace** indica o namespace que é modificado.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-134">The **Name** property of the **\_\_Namespace** instance indicates the namespace that is modified.</span></span> <span data-ttu-id="4aa5a-135">Essa propriedade é herdada da classe [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-135">This property is inherited from class [**\_\_NamespaceOperationEvent**](--namespaceoperationevent.md).</span></span>
+<span data-ttu-id="784d1-133">Cópia da instância de [**\_ \_ namespace**](--namespace.md) que é modificada.</span><span class="sxs-lookup"><span data-stu-id="784d1-133">Copy of the [**\_\_Namespace**](--namespace.md) instance that is modified.</span></span> <span data-ttu-id="784d1-134">A propriedade **Name** da instância do **\_ \_ namespace** indica o namespace que é modificado.</span><span class="sxs-lookup"><span data-stu-id="784d1-134">The **Name** property of the **\_\_Namespace** instance indicates the namespace that is modified.</span></span> <span data-ttu-id="784d1-135">Essa propriedade é herdada da classe [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-135">This property is inherited from class [**\_\_NamespaceOperationEvent**](--namespaceoperationevent.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4aa5a-136">**HORA da \_ criação**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-136">**TIME\_CREATED**</span></span>
+<span data-ttu-id="784d1-136">**HORA da \_ criação**</span><span class="sxs-lookup"><span data-stu-id="784d1-136">**TIME\_CREATED**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4aa5a-137">Tipo de dados: **UInt64**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-137">Data type: **uint64**</span></span>
+<span data-ttu-id="784d1-137">Tipo de dados: **UInt64**</span><span class="sxs-lookup"><span data-stu-id="784d1-137">Data type: **uint64**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4aa5a-138">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4aa5a-138">Access type: Read-only</span></span>
+<span data-ttu-id="784d1-138">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="784d1-138">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4aa5a-139">Valor exclusivo que indica a hora em que um evento é gerado.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-139">Unique value that indicates the time that an event is generated.</span></span> <span data-ttu-id="4aa5a-140">Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-140">This is a 64-bit value that represents the number of 100-nanosecond intervals after January 1, 1601.</span></span> <span data-ttu-id="4aa5a-141">As informações estão no formato UTC (tempo Universal Coordenado).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-141">The information is in the Coordinated Universal Time (UTC) format.</span></span> <span data-ttu-id="4aa5a-142">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-142">This property is inherited from [**\_\_Event**](--event.md).</span></span>
+<span data-ttu-id="784d1-139">Valor exclusivo que indica a hora em que um evento é gerado.</span><span class="sxs-lookup"><span data-stu-id="784d1-139">Unique value that indicates the time that an event is generated.</span></span> <span data-ttu-id="784d1-140">Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601.</span><span class="sxs-lookup"><span data-stu-id="784d1-140">This is a 64-bit value that represents the number of 100-nanosecond intervals after January 1, 1601.</span></span> <span data-ttu-id="784d1-141">As informações estão no formato UTC (tempo Universal Coordenado).</span><span class="sxs-lookup"><span data-stu-id="784d1-141">The information is in the Coordinated Universal Time (UTC) format.</span></span> <span data-ttu-id="784d1-142">Esta propriedade é herdada do [**\_ \_ evento**](--event.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-142">This property is inherited from [**\_\_Event**](--event.md).</span></span>
 
-<span data-ttu-id="4aa5a-143">Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-143">For more information about using **uint64** values in scripts, see [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).</span></span>
+<span data-ttu-id="784d1-143">Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).</span><span class="sxs-lookup"><span data-stu-id="784d1-143">For more information about using **uint64** values in scripts, see [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="4aa5a-144">Comentários</span><span class="sxs-lookup"><span data-stu-id="4aa5a-144">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="784d1-144">Comentários</span><span class="sxs-lookup"><span data-stu-id="784d1-144">Remarks</span></span>
 
-<span data-ttu-id="4aa5a-145">A classe **\_ \_ NamespaceModificationEvent** é derivada de [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-145">The **\_\_NamespaceModificationEvent** class is derived from [**\_\_NamespaceOperationEvent**](--namespaceoperationevent.md).</span></span>
+<span data-ttu-id="784d1-145">A classe **\_ \_ NamespaceModificationEvent** é derivada de [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-145">The **\_\_NamespaceModificationEvent** class is derived from [**\_\_NamespaceOperationEvent**](--namespaceoperationevent.md).</span></span>
 
-<span data-ttu-id="4aa5a-146">As únicas diferenças entre o namespace de destino e o namespace anterior são os qualificadores e propriedades, exceto [**Name**](--namespace.md).</span><span class="sxs-lookup"><span data-stu-id="4aa5a-146">The only differences between the target namespace and the previous namespace is the qualifiers and properties except [**Name**](--namespace.md).</span></span>
+<span data-ttu-id="784d1-146">As únicas diferenças entre o namespace de destino e o namespace anterior são os qualificadores e propriedades, exceto [**Name**](--namespace.md).</span><span class="sxs-lookup"><span data-stu-id="784d1-146">The only differences between the target namespace and the previous namespace is the qualifiers and properties except [**Name**](--namespace.md).</span></span>
 
-<span data-ttu-id="4aa5a-147">Observe que a propriedade [**Name**](--namespace.md) de uma instância de **\_ \_ namespace** não pode ser alterada porque namespaces não podem ser renomeados.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-147">Note that the [**Name**](--namespace.md) property of a **\_\_Namespace** instance cannot change because namespaces cannot be renamed.</span></span> <span data-ttu-id="4aa5a-148">Para modificar o nome de um namespace, a instância do **\_ \_ namespace** deve ser excluída e recriada com um novo nome.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-148">To modify the name of a namespace, the **\_\_Namespace** instance must be deleted and re-created with a new name.</span></span> <span data-ttu-id="4aa5a-149">Portanto, os eventos de modificação de namespace são gerados quando uma alteração ocorre em qualificadores e propriedades diferentes de **Name**.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-149">Therefore, namespace modification events are generated when a change occurs to qualifiers and properties other than **Name**.</span></span> <span data-ttu-id="4aa5a-150">Um evento de modificação de namespace não é gerado quando ocorre algum tipo de alteração no namespace.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-150">A namespace modification event is not generated when any kind of change occurs within the namespace.</span></span> <span data-ttu-id="4aa5a-151">Um evento de modificação de namespace é gerado somente quando uma instância de namespace é modificada.</span><span class="sxs-lookup"><span data-stu-id="4aa5a-151">A namespace modification event is generated only when a namespace instance is modified.</span></span>
+<span data-ttu-id="784d1-147">Observe que a propriedade [**Name**](--namespace.md) de uma instância de **\_ \_ namespace** não pode ser alterada porque namespaces não podem ser renomeados.</span><span class="sxs-lookup"><span data-stu-id="784d1-147">Note that the [**Name**](--namespace.md) property of a **\_\_Namespace** instance cannot change because namespaces cannot be renamed.</span></span> <span data-ttu-id="784d1-148">Para modificar o nome de um namespace, a instância do **\_ \_ namespace** deve ser excluída e recriada com um novo nome.</span><span class="sxs-lookup"><span data-stu-id="784d1-148">To modify the name of a namespace, the **\_\_Namespace** instance must be deleted and re-created with a new name.</span></span> <span data-ttu-id="784d1-149">Portanto, os eventos de modificação de namespace são gerados quando uma alteração ocorre em qualificadores e propriedades diferentes de **Name**.</span><span class="sxs-lookup"><span data-stu-id="784d1-149">Therefore, namespace modification events are generated when a change occurs to qualifiers and properties other than **Name**.</span></span> <span data-ttu-id="784d1-150">Um evento de modificação de namespace não é gerado quando ocorre algum tipo de alteração no namespace.</span><span class="sxs-lookup"><span data-stu-id="784d1-150">A namespace modification event is not generated when any kind of change occurs within the namespace.</span></span> <span data-ttu-id="784d1-151">Um evento de modificação de namespace é gerado somente quando uma instância de namespace é modificada.</span><span class="sxs-lookup"><span data-stu-id="784d1-151">A namespace modification event is generated only when a namespace instance is modified.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4aa5a-152">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4aa5a-152">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="784d1-152">Requisitos</span><span class="sxs-lookup"><span data-stu-id="784d1-152">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4aa5a-153">Requisito</span><span class="sxs-lookup"><span data-stu-id="4aa5a-153">Requirement</span></span> | <span data-ttu-id="4aa5a-154">Valor</span><span class="sxs-lookup"><span data-stu-id="4aa5a-154">Value</span></span> |
+| <span data-ttu-id="784d1-153">Requisito</span><span class="sxs-lookup"><span data-stu-id="784d1-153">Requirement</span></span> | <span data-ttu-id="784d1-154">Valor</span><span class="sxs-lookup"><span data-stu-id="784d1-154">Value</span></span> |
 |-------------------------------------|--------------------------------|
-| <span data-ttu-id="4aa5a-155">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4aa5a-155">Minimum supported client</span></span><br/> | <span data-ttu-id="4aa5a-156">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="4aa5a-156">Windows Vista</span></span><br/>       |
-| <span data-ttu-id="4aa5a-157">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4aa5a-157">Minimum supported server</span></span><br/> | <span data-ttu-id="4aa5a-158">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="4aa5a-158">Windows Server 2008</span></span><br/> |
-| <span data-ttu-id="4aa5a-159">Namespace</span><span class="sxs-lookup"><span data-stu-id="4aa5a-159">Namespace</span></span><br/>                | <span data-ttu-id="4aa5a-160">Todos os namespaces do WMI</span><span class="sxs-lookup"><span data-stu-id="4aa5a-160">All WMI namespaces</span></span><br/>  |
+| <span data-ttu-id="784d1-155">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="784d1-155">Minimum supported client</span></span><br/> | <span data-ttu-id="784d1-156">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="784d1-156">Windows Vista</span></span><br/>       |
+| <span data-ttu-id="784d1-157">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="784d1-157">Minimum supported server</span></span><br/> | <span data-ttu-id="784d1-158">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="784d1-158">Windows Server 2008</span></span><br/> |
+| <span data-ttu-id="784d1-159">Namespace</span><span class="sxs-lookup"><span data-stu-id="784d1-159">Namespace</span></span><br/>                | <span data-ttu-id="784d1-160">Todos os namespaces do WMI</span><span class="sxs-lookup"><span data-stu-id="784d1-160">All WMI namespaces</span></span><br/>  |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4aa5a-161">Confira também</span><span class="sxs-lookup"><span data-stu-id="4aa5a-161">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="784d1-161">Confira também</span><span class="sxs-lookup"><span data-stu-id="784d1-161">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4aa5a-162">**\_\_NamespaceOperationEvent**</span><span class="sxs-lookup"><span data-stu-id="4aa5a-162">**\_\_NamespaceOperationEvent**</span></span>](/windows/desktop/WmiSdk/--namespaceoperationevent)
+[<span data-ttu-id="784d1-162">**\_\_NamespaceOperationEvent**</span><span class="sxs-lookup"><span data-stu-id="784d1-162">**\_\_NamespaceOperationEvent**</span></span>](/windows/desktop/WmiSdk/--namespaceoperationevent)
 </dt> <dt>
 
-[<span data-ttu-id="4aa5a-163">Classes do sistema WMI</span><span class="sxs-lookup"><span data-stu-id="4aa5a-163">WMI System Classes</span></span>](wmi-system-classes.md)
+[<span data-ttu-id="784d1-163">Classes do sistema WMI</span><span class="sxs-lookup"><span data-stu-id="784d1-163">WMI System Classes</span></span>](wmi-system-classes.md)
 </dt> </dl>
 
  

@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635782"
 ---
-# <a name="itssbplacement-methods"></a><span data-ttu-id="8641c-103">Métodos ITsSbPlacement</span><span class="sxs-lookup"><span data-stu-id="8641c-103">ITsSbPlacement Methods</span></span>
+# <a name="itssbplacement-methods"></a><span data-ttu-id="7d3e0-103">Métodos ITsSbPlacement</span><span class="sxs-lookup"><span data-stu-id="7d3e0-103">ITsSbPlacement Methods</span></span>
 
-<span data-ttu-id="8641c-104">A interface [**ITsSbPlacement**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacement) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8641c-104">The [**ITsSbPlacement**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacement) interface exposes the following methods.</span></span>
+<span data-ttu-id="7d3e0-104">A interface [**ITsSbPlacement**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacement) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="7d3e0-104">The [**ITsSbPlacement**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacement) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="8641c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8641c-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7d3e0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7d3e0-105">In this section</span></span>
 
--   [<span data-ttu-id="8641c-106">**Método QueryEnvironmentForTarget**</span><span class="sxs-lookup"><span data-stu-id="8641c-106">**QueryEnvironmentForTarget method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplacement-queryenvironmentfortarget)
+-   [<span data-ttu-id="7d3e0-106">**Método QueryEnvironmentForTarget**</span><span class="sxs-lookup"><span data-stu-id="7d3e0-106">**QueryEnvironmentForTarget method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplacement-queryenvironmentfortarget)
 
  
 

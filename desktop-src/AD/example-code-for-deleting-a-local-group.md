@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103634954"
 ---
-# <a name="example-code-for-deleting-a-local-group"></a><span data-ttu-id="1a6f6-104">Exemplo de código para excluir um grupo local</span><span class="sxs-lookup"><span data-stu-id="1a6f6-104">Example Code for Deleting a Local Group</span></span>
+# <a name="example-code-for-deleting-a-local-group"></a><span data-ttu-id="2ce46-104">Exemplo de código para excluir um grupo local</span><span class="sxs-lookup"><span data-stu-id="2ce46-104">Example Code for Deleting a Local Group</span></span>
 
-<span data-ttu-id="1a6f6-105">O exemplo de código C++ a seguir exclui um grupo local em um servidor membro ou um computador executando Windows 2000 Professional ou Windows NT Workstation.</span><span class="sxs-lookup"><span data-stu-id="1a6f6-105">The following C++ code example deletes a local group on a member server or a computer running Windows 2000 Professional or Windows NT Workstation.</span></span>
+<span data-ttu-id="2ce46-105">O exemplo de código C++ a seguir exclui um grupo local em um servidor membro ou um computador executando Windows 2000 Professional ou Windows NT Workstation.</span><span class="sxs-lookup"><span data-stu-id="2ce46-105">The following C++ code example deletes a local group on a member server or a computer running Windows 2000 Professional or Windows NT Workstation.</span></span>
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT DeleteADObject(LPOLESTR pwszAdsPath,
 
 
 
-<span data-ttu-id="1a6f6-106">O exemplo de código a seguir Visual Basic Scripting Edition exclui um grupo local em um servidor membro ou um computador que esteja executando o Windows 2000 Professional ou Windows NT Workstation.</span><span class="sxs-lookup"><span data-stu-id="1a6f6-106">The following Visual Basic Scripting Edition code example deletes a local group on a member server or a computer running Windows 2000 Professional or Windows NT Workstation.</span></span>
+<span data-ttu-id="2ce46-106">O exemplo de código a seguir Visual Basic Scripting Edition exclui um grupo local em um servidor membro ou um computador que esteja executando o Windows 2000 Professional ou Windows NT Workstation.</span><span class="sxs-lookup"><span data-stu-id="2ce46-106">The following Visual Basic Scripting Edition code example deletes a local group on a member server or a computer running Windows 2000 Professional or Windows NT Workstation.</span></span>
 
 
 ```VB
