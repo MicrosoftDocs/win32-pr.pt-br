@@ -56,7 +56,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
-| Código de retorno                                                                              | Description                                                 |
+| Código de retorno                                                                              | Descrição                                                 |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | <dl> <dt>S_OK * * * *</dt> </dl> | O estado do trabalho foi recuperado com êxito.<br/> |
 
@@ -84,7 +84,7 @@ Se você quiser saber quando um trabalho está com erro ou transferiu todos os a
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

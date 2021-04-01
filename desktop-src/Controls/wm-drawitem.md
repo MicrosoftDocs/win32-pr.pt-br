@@ -79,7 +79,7 @@ Antes de retornar do processamento dessa mensagem, um aplicativo deve garantir q
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

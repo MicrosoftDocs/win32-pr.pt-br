@@ -75,7 +75,7 @@ O XML a seguir define um elemento Settings que não permite que a tarefa seja ex
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

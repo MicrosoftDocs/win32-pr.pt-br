@@ -36,7 +36,7 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.135                                |
 | System-ID-GUID    | bf967a5f-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

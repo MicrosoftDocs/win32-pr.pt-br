@@ -36,7 +36,7 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.24                                           |
 | System-ID-GUID    | bf9679d3-0de6-11d0-a285-00aa003049e2                            |
-| Sintaxe            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
 
 
 

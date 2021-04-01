@@ -36,7 +36,7 @@ Contém o tempo de vida de um objeto proxy.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.103               |
 | System-ID-GUID    | bf967a07-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

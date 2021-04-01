@@ -36,7 +36,7 @@ Um atributo usado para definir os algoritmos usados ao gravar o arquivo dsset du
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2134              |
 | System-ID-GUID    | 5c5b7ad2-20fa-44bb-beb3-34b9c0f65579 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

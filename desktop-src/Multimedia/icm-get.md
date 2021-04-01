@@ -72,7 +72,7 @@ A estrutura usada para representar informações de estado é específica do dri
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

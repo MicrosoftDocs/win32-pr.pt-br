@@ -36,7 +36,7 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.459                      |
 | System-ID-GUID    | bf9679d9-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
+| Syntax            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
 
 
 

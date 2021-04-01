@@ -33,7 +33,7 @@ Recupera e define o diretório padrão a ser procurado por arquivos de configura
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -89,7 +89,7 @@ Por padrão, esse valor de propriedade é definido como o seguinte diretório: "
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

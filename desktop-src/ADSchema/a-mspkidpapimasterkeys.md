@@ -36,7 +36,7 @@ Armazenamento de chaves mestras DPAPI criptografadas para o usuário.
 | Frequência de atualização  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1893                         |
 | System-ID-GUID    | b3f93023-9239-4f7c-b99c-6745d87adbc2            |
-| Sintaxe            | [**Objeto (DN-binário)**](s-object-dn-binary.md) |
+| Syntax            | [**Objeto (DN-binário)**](s-object-dn-binary.md) |
 
 
 

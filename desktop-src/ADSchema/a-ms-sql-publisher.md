@@ -36,7 +36,7 @@ O nome do banco de dados Publicador para replicação.
 | Frequência de atualização  | Quando a replicação é configurada.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1402                     |
 | System-ID-GUID    | c1676858-d34b-11d2-999a-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

@@ -98,7 +98,7 @@ A máscara do pacote. Há suporte para os valores de cadeia de caracteres a segu
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

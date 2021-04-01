@@ -36,7 +36,7 @@ Contém o destino do link para a assinatura.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.24                  |
 | System-ID-GUID    | f7b85ba9-3bf9-428f-aab4-2eee6d56f063        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

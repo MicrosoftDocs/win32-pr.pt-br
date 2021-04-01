@@ -36,7 +36,7 @@ Identifica entidades de segurança cujas senhas de conta do computador atual for
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1940                               |
 | System-ID-GUID    | cbdad11c-7fec-387b-6219-3a0627d9af81                  |
-| Sintaxe            | [**Objeto (ponto de acesso)**](s-object-access-point.md) |
+| Syntax            | [**Objeto (ponto de acesso)**](s-object-access-point.md) |
 
 
 

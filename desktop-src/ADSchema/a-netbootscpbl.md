@@ -36,7 +36,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.864                  |
 | System-ID-GUID    | 07383082-91df-11d1-aebc-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

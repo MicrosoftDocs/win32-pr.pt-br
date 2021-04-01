@@ -36,7 +36,7 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 | Frequência de atualização  | Quando o objeto é alterado.          |
 | Attribute-Id      | 1.2.840.113556.1.2.120               |
 | System-ID-GUID    | bf967a6f-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

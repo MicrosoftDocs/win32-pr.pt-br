@@ -27,7 +27,7 @@ ms.locfileid: "103644473"
 
 Para scripts, Obtém ou define a data e a hora em que o gatilho é ativado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -57,7 +57,7 @@ Ao ler ou gravar XML para uma tarefa, o limite de início do gatilho é especifi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

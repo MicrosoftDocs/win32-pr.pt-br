@@ -36,7 +36,7 @@ Para um tipo de declaração, esse atributo indica a origem do tipo de declaraç
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2157                     |
 | System-ID-GUID    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

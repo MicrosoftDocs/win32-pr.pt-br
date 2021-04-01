@@ -36,7 +36,7 @@ Status de complexidade de senha para contas de usuário.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2015              |
 | System-ID-GUID    | db68054b-c9c3-4bf0-b15b-0fb52552a610 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

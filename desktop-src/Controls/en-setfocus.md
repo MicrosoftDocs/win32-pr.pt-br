@@ -71,7 +71,7 @@ A janela pai sempre recebe uma mensagem de [**\_ comando do WM**](/windows/deskt
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

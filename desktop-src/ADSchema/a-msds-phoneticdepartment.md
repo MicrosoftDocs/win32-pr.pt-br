@@ -36,7 +36,7 @@ Contém o nome do departamento fonético em que a pessoa trabalha.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1944                     |
 | System-ID-GUID    | 6cd53daf-003e-49e7-a702-6fa896e7a6ef        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

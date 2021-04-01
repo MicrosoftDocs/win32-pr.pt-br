@@ -36,7 +36,7 @@ Chave raiz.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2175                               |
 | System-ID-GUID    | 26627c27-08a2-0a40-a1b1-8dce85b42993                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

@@ -80,7 +80,7 @@ Se você quiser que o driver Descompacte dados em um buffer, envie a mensagem de
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

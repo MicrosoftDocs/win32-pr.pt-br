@@ -36,7 +36,7 @@ O diretório base da conta. Se [**homeDrive**](a-homedrive.md) for definido e es
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o diretório base precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.44                                                              |
 | System-ID-GUID    | bf967985-0de6-11d0-a285-00aa003049e2                                               |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                        |
 
 
 

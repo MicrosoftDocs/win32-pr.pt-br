@@ -58,7 +58,7 @@ Um ponteiro para um valor **BSTR** que recebe o GUID.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

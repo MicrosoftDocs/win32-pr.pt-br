@@ -60,7 +60,7 @@ Esta propriedade não é mais suportada.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -99,7 +99,7 @@ Retorna **E \_ NOTIMPL**.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

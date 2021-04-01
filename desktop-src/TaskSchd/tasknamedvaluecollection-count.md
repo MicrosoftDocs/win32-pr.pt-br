@@ -27,7 +27,7 @@ ms.locfileid: "103645003"
 
 Para scripts, obtém o número de pares de nome-valor na coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

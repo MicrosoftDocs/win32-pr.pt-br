@@ -31,7 +31,7 @@ Para scripts, Obtém ou define uma matriz de anexos que é enviada com a mensage
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -63,7 +63,7 @@ Um máximo de oito anexos pode estar na matriz de anexos.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

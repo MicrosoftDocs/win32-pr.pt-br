@@ -88,7 +88,7 @@ Somente o NapServer pode interpretar o blob de dados.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

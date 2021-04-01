@@ -102,7 +102,7 @@ Um campo de bits que especifica os sinalizadores a seguir.
 
 
 
-| Código de retorno                                                                         | Description                               |
+| Código de retorno                                                                         | Descrição                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**TRUE**</dt> </dl> | A função foi bem-sucedida.<br/>   |
 | <dl> <dt>**FASE**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
