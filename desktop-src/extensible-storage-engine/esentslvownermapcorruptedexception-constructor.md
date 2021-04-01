@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103828932"
 ---
-# <a name="esentslvownermapcorruptedexception-constructor"></a><span data-ttu-id="0f18a-103">Construtor EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0f18a-103">EsentSLVOwnerMapCorruptedException constructor</span></span>
+# <a name="esentslvownermapcorruptedexception-constructor"></a><span data-ttu-id="0b603-103">Construtor EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0b603-103">EsentSLVOwnerMapCorruptedException constructor</span></span>
 
-<span data-ttu-id="0f18a-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0f18a-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="0f18a-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0f18a-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="0b603-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0b603-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="0b603-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0b603-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0f18a-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0f18a-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0b603-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0b603-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New EsentSLVOwnerMapCorruptedException()
 public EsentSLVOwnerMapCorruptedException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="0f18a-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="0f18a-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0b603-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="0b603-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="0f18a-108">Referência</span><span class="sxs-lookup"><span data-stu-id="0f18a-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="0b603-108">Referência</span><span class="sxs-lookup"><span data-stu-id="0b603-108">Reference</span></span>
 
-[<span data-ttu-id="0f18a-109">Classe EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0f18a-109">EsentSLVOwnerMapCorruptedException class</span></span>](./esentslvownermapcorruptedexception-class.md)
+[<span data-ttu-id="0b603-109">Classe EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0b603-109">EsentSLVOwnerMapCorruptedException class</span></span>](./esentslvownermapcorruptedexception-class.md)
 
-[<span data-ttu-id="0f18a-110">Membros do EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0f18a-110">EsentSLVOwnerMapCorruptedException members</span></span>](./esentslvownermapcorruptedexception-members.md)
+[<span data-ttu-id="0b603-110">Membros do EsentSLVOwnerMapCorruptedException</span><span class="sxs-lookup"><span data-stu-id="0b603-110">EsentSLVOwnerMapCorruptedException members</span></span>](./esentslvownermapcorruptedexception-members.md)
 
-[<span data-ttu-id="0f18a-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="0f18a-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="0b603-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="0b603-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

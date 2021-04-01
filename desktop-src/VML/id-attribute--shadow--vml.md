@@ -11,40 +11,40 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641360"
 ---
-# <a name="id-attribute-shadowvml"></a><span data-ttu-id="1bcf5-103">Atributo de ID (sombra) (VML)</span><span class="sxs-lookup"><span data-stu-id="1bcf5-103">ID Attribute (Shadow)(VML)</span></span>
+# <a name="id-attribute-shadowvml"></a><span data-ttu-id="c54f7-103">Atributo de ID (sombra) (VML)</span><span class="sxs-lookup"><span data-stu-id="c54f7-103">ID Attribute (Shadow)(VML)</span></span>
 
-<span data-ttu-id="1bcf5-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="1bcf5-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="c54f7-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="c54f7-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="c54f7-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="c54f7-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="1bcf5-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="1bcf5-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="1bcf5-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="1bcf5-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="1bcf5-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="1bcf5-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="c54f7-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="c54f7-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="c54f7-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="c54f7-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="c54f7-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="c54f7-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="c54f7-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="c54f7-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="1bcf5-110">Especifica um nome que fornece um identificador exclusivo para uma sombra.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-110">Specifies a name that provides a unique identifier for a shadow.</span></span> <span data-ttu-id="1bcf5-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-111">Read/write.</span></span> <span data-ttu-id="1bcf5-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-112">**String**.</span></span>
+<span data-ttu-id="c54f7-110">Especifica um nome que fornece um identificador exclusivo para uma sombra.</span><span class="sxs-lookup"><span data-stu-id="c54f7-110">Specifies a name that provides a unique identifier for a shadow.</span></span> <span data-ttu-id="c54f7-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c54f7-111">Read/write.</span></span> <span data-ttu-id="c54f7-112">**Cadeia de caracteres**.</span><span class="sxs-lookup"><span data-stu-id="c54f7-112">**String**.</span></span>
 
-<span data-ttu-id="1bcf5-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="1bcf5-113">**Applies To**</span></span>
+<span data-ttu-id="c54f7-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="c54f7-113">**Applies To**</span></span>
 
-[<span data-ttu-id="1bcf5-114">Shadow</span><span class="sxs-lookup"><span data-stu-id="1bcf5-114">Shadow</span></span>](msdn-online-vml-shadow-element.md)
+[<span data-ttu-id="c54f7-114">Shadow</span><span class="sxs-lookup"><span data-stu-id="c54f7-114">Shadow</span></span>](msdn-online-vml-shadow-element.md)
 
-<span data-ttu-id="1bcf5-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="1bcf5-115">**Tag Syntax**</span></span>
+<span data-ttu-id="c54f7-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="c54f7-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="1bcf5-116"><v: *Element* ID = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="1bcf5-116"><v: *element* id=" *expression* "></span></span>
+<span data-ttu-id="c54f7-116"><v: *Element* ID = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="c54f7-116"><v: *element* id=" *expression* "></span></span>
 
-<span data-ttu-id="1bcf5-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="1bcf5-117">**Script Syntax**</span></span>
+<span data-ttu-id="c54f7-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="c54f7-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="1bcf5-118">*Element* . ID = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="1bcf5-118">*element* .id="*expression*"</span></span>
+<span data-ttu-id="c54f7-118">*Element* . ID = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="c54f7-118">*element* .id="*expression*"</span></span>
 
-<span data-ttu-id="1bcf5-119">*expressão* = de *elemento*. ID</span><span class="sxs-lookup"><span data-stu-id="1bcf5-119">*expression*=*element*.id</span></span>
+<span data-ttu-id="c54f7-119">*expressão* = de *elemento*. ID</span><span class="sxs-lookup"><span data-stu-id="c54f7-119">*expression*=*element*.id</span></span>
 
-<span data-ttu-id="1bcf5-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="1bcf5-120">**Remarks**</span></span>
+<span data-ttu-id="c54f7-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="c54f7-120">**Remarks**</span></span>
 
-<span data-ttu-id="1bcf5-121">Use **ID** para fazer referência a uma sombra específica.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-121">Use **ID** to refer to a specific shadow.</span></span> <span data-ttu-id="1bcf5-122">Depois de criar uma sombra e dada a ela uma ID, você pode usar o nome da ID quando desejar manipular a sombra.</span><span class="sxs-lookup"><span data-stu-id="1bcf5-122">Once you have created a shadow and given it an ID, you can use the ID name when you want to manipulate the shadow.</span></span>
+<span data-ttu-id="c54f7-121">Use **ID** para fazer referência a uma sombra específica.</span><span class="sxs-lookup"><span data-stu-id="c54f7-121">Use **ID** to refer to a specific shadow.</span></span> <span data-ttu-id="c54f7-122">Depois de criar uma sombra e dada a ela uma ID, você pode usar o nome da ID quando desejar manipular a sombra.</span><span class="sxs-lookup"><span data-stu-id="c54f7-122">Once you have created a shadow and given it an ID, you can use the ID name when you want to manipulate the shadow.</span></span>
 
-<span data-ttu-id="1bcf5-123">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="1bcf5-123">*VML Standard Attribute*</span></span>
+<span data-ttu-id="c54f7-123">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="c54f7-123">*VML Standard Attribute*</span></span>
 
-<span data-ttu-id="1bcf5-124">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="1bcf5-124">**Example**</span></span>
+<span data-ttu-id="c54f7-124">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="c54f7-124">**Example**</span></span>
 
-<span data-ttu-id="1bcf5-125">A forma tem uma ID de sombra chamada "MyShadow".</span><span class="sxs-lookup"><span data-stu-id="1bcf5-125">The shape has a shadow ID called "myshadow".</span></span>
+<span data-ttu-id="c54f7-125">A forma tem uma ID de sombra chamada "MyShadow".</span><span class="sxs-lookup"><span data-stu-id="c54f7-125">The shape has a shadow ID called "myshadow".</span></span>
 
 
 ```HTML

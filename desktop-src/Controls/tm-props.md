@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638405"
 ---
-# <a name="tm_props-enumeration"></a><span data-ttu-id="c129b-105">Enumeração de propriedades de TM \_</span><span class="sxs-lookup"><span data-stu-id="c129b-105">TM\_PROPS enumeration</span></span>
+# <a name="tm_props-enumeration"></a><span data-ttu-id="8c4ce-105">Enumeração de propriedades de TM \_</span><span class="sxs-lookup"><span data-stu-id="8c4ce-105">TM\_PROPS enumeration</span></span>
 
-<span data-ttu-id="c129b-106">Não há suporte para essa enumeração.</span><span class="sxs-lookup"><span data-stu-id="c129b-106">This enumeration is not supported.</span></span>
+<span data-ttu-id="8c4ce-106">Não há suporte para essa enumeração.</span><span class="sxs-lookup"><span data-stu-id="8c4ce-106">This enumeration is not supported.</span></span>
 
  
 

@@ -11,30 +11,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641343"
 ---
-# <a name="vml-hr-attribute"></a><span data-ttu-id="4fdd9-103">Atributo de HR de VML</span><span class="sxs-lookup"><span data-stu-id="4fdd9-103">VML HR Attribute</span></span>
+# <a name="vml-hr-attribute"></a><span data-ttu-id="c583b-103">Atributo de HR de VML</span><span class="sxs-lookup"><span data-stu-id="c583b-103">VML HR Attribute</span></span>
 
-<span data-ttu-id="4fdd9-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="4fdd9-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="c583b-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="c583b-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="c583b-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="c583b-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="4fdd9-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="4fdd9-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="4fdd9-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="4fdd9-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="4fdd9-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="4fdd9-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="c583b-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="c583b-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="c583b-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="c583b-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="c583b-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="c583b-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="c583b-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="c583b-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="4fdd9-110">Especifica que uma forma é uma regra horizontal.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-110">Specifies that a shape is a horizontal rule.</span></span> <span data-ttu-id="4fdd9-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-111">Read/write.</span></span> <span data-ttu-id="4fdd9-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-112">**VgTriState**.</span></span>
+<span data-ttu-id="c583b-110">Especifica que uma forma é uma regra horizontal.</span><span class="sxs-lookup"><span data-stu-id="c583b-110">Specifies that a shape is a horizontal rule.</span></span> <span data-ttu-id="c583b-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c583b-111">Read/write.</span></span> <span data-ttu-id="c583b-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="c583b-112">**VgTriState**.</span></span>
 
-<span data-ttu-id="4fdd9-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="4fdd9-113">**Applies To**</span></span>
+<span data-ttu-id="c583b-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="c583b-113">**Applies To**</span></span>
 
-[<span data-ttu-id="4fdd9-114">Forma</span><span class="sxs-lookup"><span data-stu-id="4fdd9-114">Shape</span></span>](shape-element--vml.md)
+[<span data-ttu-id="c583b-114">Forma</span><span class="sxs-lookup"><span data-stu-id="c583b-114">Shape</span></span>](shape-element--vml.md)
 
-<span data-ttu-id="4fdd9-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="4fdd9-115">**Tag Syntax**</span></span>
+<span data-ttu-id="c583b-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="c583b-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="4fdd9-116"><v: *Element* o:HR = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="4fdd9-116"><v: *element* o:hr=" *expression* "></span></span>
+<span data-ttu-id="c583b-116"><v: *Element* o:HR = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="c583b-116"><v: *element* o:hr=" *expression* "></span></span>
 
-<span data-ttu-id="4fdd9-117">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="4fdd9-117">**Remarks**</span></span>
+<span data-ttu-id="c583b-117">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="c583b-117">**Remarks**</span></span>
 
-<span data-ttu-id="4fdd9-118">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-118">Default is **False**.</span></span> <span data-ttu-id="4fdd9-119">Se for **true**, a forma será uma regra horizontal.</span><span class="sxs-lookup"><span data-stu-id="4fdd9-119">If **True**, the shape is a horizontal rule.</span></span>
+<span data-ttu-id="c583b-118">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="c583b-118">Default is **False**.</span></span> <span data-ttu-id="c583b-119">Se for **true**, a forma será uma regra horizontal.</span><span class="sxs-lookup"><span data-stu-id="c583b-119">If **True**, the shape is a horizontal rule.</span></span>
 
-<span data-ttu-id="4fdd9-120">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="4fdd9-120">*Microsoft Office Extensions Attribute*</span></span>
+<span data-ttu-id="c583b-120">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="c583b-120">*Microsoft Office Extensions Attribute*</span></span>
 
  
 

@@ -12,110 +12,110 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636540"
 ---
-# <a name="remote-desktop-management-services-provider"></a><span data-ttu-id="08f98-103">Provedor de serviços de gerenciamento de Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="08f98-103">Remote Desktop Management Services Provider</span></span>
+# <a name="remote-desktop-management-services-provider"></a><span data-ttu-id="3b427-103">Provedor de serviços de gerenciamento de Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="3b427-103">Remote Desktop Management Services Provider</span></span>
 
-<span data-ttu-id="08f98-104">O provedor de serviços de gerenciamento de Área de Trabalho Remota (RDMS) gerencia ambientes de VDI (Virtual Desktop Infrastructure).</span><span class="sxs-lookup"><span data-stu-id="08f98-104">The Remote Desktop Management Services (RDMS) Provider manages virtual desktop infrastructure (VDI) environments.</span></span>
+<span data-ttu-id="3b427-104">O provedor de serviços de gerenciamento de Área de Trabalho Remota (RDMS) gerencia ambientes de VDI (Virtual Desktop Infrastructure).</span><span class="sxs-lookup"><span data-stu-id="3b427-104">The Remote Desktop Management Services (RDMS) Provider manages virtual desktop infrastructure (VDI) environments.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="08f98-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="08f98-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3b427-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3b427-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="08f98-106">**\_RDMSCollectionProperties Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-106">**Win32\_RDMSCollectionProperties**</span></span>](win32-rdmscollectionproperties.md)
+[<span data-ttu-id="3b427-106">**\_RDMSCollectionProperties Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-106">**Win32\_RDMSCollectionProperties**</span></span>](win32-rdmscollectionproperties.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-107">Gerencia as propriedades de uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="08f98-107">Manages the properties of a virtual desktop collection.</span></span>
+<span data-ttu-id="3b427-107">Gerencia as propriedades de uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="3b427-107">Manages the properties of a virtual desktop collection.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-108">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-108">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
+[<span data-ttu-id="3b427-108">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-108">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-109">Gerencia configurações de implantação para uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="08f98-109">Manages deployment settings for a virtual desktop collection.</span></span>
+<span data-ttu-id="3b427-109">Gerencia configurações de implantação para uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="3b427-109">Manages deployment settings for a virtual desktop collection.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-110">**\_RDMSDesktopAssignment Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-110">**Win32\_RDMSDesktopAssignment**</span></span>](win32-rdmsdesktopassignment.md)
+[<span data-ttu-id="3b427-110">**\_RDMSDesktopAssignment Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-110">**Win32\_RDMSDesktopAssignment**</span></span>](win32-rdmsdesktopassignment.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-111">Descreve a atribuição da área de trabalho do usuário da coleção RD.</span><span class="sxs-lookup"><span data-stu-id="08f98-111">Describes the RD collection User Desktop assignment.</span></span>
+<span data-ttu-id="3b427-111">Descreve a atribuição da área de trabalho do usuário da coleção RD.</span><span class="sxs-lookup"><span data-stu-id="3b427-111">Describes the RD collection User Desktop assignment.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-112">**\_RDMSEnvironment Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-112">**Win32\_RDMSEnvironment**</span></span>](win32-rdmsenvironment.md)
+[<span data-ttu-id="3b427-112">**\_RDMSEnvironment Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-112">**Win32\_RDMSEnvironment**</span></span>](win32-rdmsenvironment.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-113">Gerencia um ambiente de serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="08f98-113">Manages a Remote Desktop Management Services (RDMS) environment.</span></span>
+<span data-ttu-id="3b427-113">Gerencia um ambiente de serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="3b427-113">Manages a Remote Desktop Management Services (RDMS) environment.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-114">**\_RDMSFileTypeAssociation Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-114">**Win32\_RDMSFileTypeAssociation**</span></span>](win32-rdmsfiletypeassociation.md)
+[<span data-ttu-id="3b427-114">**\_RDMSFileTypeAssociation Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-114">**Win32\_RDMSFileTypeAssociation**</span></span>](win32-rdmsfiletypeassociation.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-115">Gerencia uma associação de tipo de arquivo para um aplicativo publicado.</span><span class="sxs-lookup"><span data-stu-id="08f98-115">Manages a file type association for a published application.</span></span>
+<span data-ttu-id="3b427-115">Gerencia uma associação de tipo de arquivo para um aplicativo publicado.</span><span class="sxs-lookup"><span data-stu-id="3b427-115">Manages a file type association for a published application.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-116">**\_RDMSJoinedNode Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-116">**Win32\_RDMSJoinedNode**</span></span>](win32-rdmsjoinednode.md)
+[<span data-ttu-id="3b427-116">**\_RDMSJoinedNode Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-116">**Win32\_RDMSJoinedNode**</span></span>](win32-rdmsjoinednode.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-117">Representa um nó de servidor gerenciado por serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="08f98-117">Represents a server node that is managed by Remote Desktop Management Services (RDMS).</span></span>
+<span data-ttu-id="3b427-117">Representa um nó de servidor gerenciado por serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="3b427-117">Represents a server node that is managed by Remote Desktop Management Services (RDMS).</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-118">**\_RDMSManagementData Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-118">**Win32\_RDMSManagementData**</span></span>](win32-rdmsmanagementdata.md)
+[<span data-ttu-id="3b427-118">**\_RDMSManagementData Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-118">**Win32\_RDMSManagementData**</span></span>](win32-rdmsmanagementdata.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-119">Sincroniza dados de publicação para serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="08f98-119">Synchronizes publishing data for Remote Desktop Management Services (RDMS).</span></span>
+<span data-ttu-id="3b427-119">Sincroniza dados de publicação para serviços de gerenciamento de Área de Trabalho Remota (RDMS).</span><span class="sxs-lookup"><span data-stu-id="3b427-119">Synchronizes publishing data for Remote Desktop Management Services (RDMS).</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-120">**\_RDMSPublishedApplication Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-120">**Win32\_RDMSPublishedApplication**</span></span>](win32-rdmspublishedapplication.md)
+[<span data-ttu-id="3b427-120">**\_RDMSPublishedApplication Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-120">**Win32\_RDMSPublishedApplication**</span></span>](win32-rdmspublishedapplication.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-121">Gerencia um aplicativo publicado.</span><span class="sxs-lookup"><span data-stu-id="08f98-121">Manages a published application.</span></span>
+<span data-ttu-id="3b427-121">Gerencia um aplicativo publicado.</span><span class="sxs-lookup"><span data-stu-id="3b427-121">Manages a published application.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-122">**\_RDMSVirtualDesktop Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-122">**Win32\_RDMSVirtualDesktop**</span></span>](win32-rdmsvirtualdesktop.md)
+[<span data-ttu-id="3b427-122">**\_RDMSVirtualDesktop Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-122">**Win32\_RDMSVirtualDesktop**</span></span>](win32-rdmsvirtualdesktop.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-123">Representa uma área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="08f98-123">Represents a virtual desktop.</span></span>
+<span data-ttu-id="3b427-123">Representa uma área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="3b427-123">Represents a virtual desktop.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-124">**\_RDMSVirtualDesktopCollection Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-124">**Win32\_RDMSVirtualDesktopCollection**</span></span>](win32-rdmsvirtualdesktopcollection.md)
+[<span data-ttu-id="3b427-124">**\_RDMSVirtualDesktopCollection Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-124">**Win32\_RDMSVirtualDesktopCollection**</span></span>](win32-rdmsvirtualdesktopcollection.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-125">Cria e gerencia uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="08f98-125">Creates and manages a virtual desktop collection.</span></span>
+<span data-ttu-id="3b427-125">Cria e gerencia uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="3b427-125">Creates and manages a virtual desktop collection.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-126">**\_RDSHCollection Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-126">**Win32\_RDSHCollection**</span></span>](win32-rdshcollection.md)
+[<span data-ttu-id="3b427-126">**\_RDSHCollection Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-126">**Win32\_RDSHCollection**</span></span>](win32-rdshcollection.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-127">Gerencia uma coleção de hosts de sessão de Área de Trabalho Remota.</span><span class="sxs-lookup"><span data-stu-id="08f98-127">Manages a collection of Remote Desktop Session Hosts.</span></span>
+<span data-ttu-id="3b427-127">Gerencia uma coleção de hosts de sessão de Área de Trabalho Remota.</span><span class="sxs-lookup"><span data-stu-id="3b427-127">Manages a collection of Remote Desktop Session Hosts.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-128">**\_RDSHServer Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-128">**Win32\_RDSHServer**</span></span>](win32-rdshserver.md)
+[<span data-ttu-id="3b427-128">**\_RDSHServer Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-128">**Win32\_RDSHServer**</span></span>](win32-rdshserver.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-129">Gerencia um servidor de Host da Sessão da Área de Trabalho Remota (RDSH).</span><span class="sxs-lookup"><span data-stu-id="08f98-129">Manages a Remote Desktop Session Host (RDSH) server.</span></span>
+<span data-ttu-id="3b427-129">Gerencia um servidor de Host da Sessão da Área de Trabalho Remota (RDSH).</span><span class="sxs-lookup"><span data-stu-id="3b427-129">Manages a Remote Desktop Session Host (RDSH) server.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="08f98-130">**\_VirtualDesktopSession Win32**</span><span class="sxs-lookup"><span data-stu-id="08f98-130">**Win32\_VirtualDesktopSession**</span></span>](win32-virtualdesktopsession.md)
+[<span data-ttu-id="3b427-130">**\_VirtualDesktopSession Win32**</span><span class="sxs-lookup"><span data-stu-id="3b427-130">**Win32\_VirtualDesktopSession**</span></span>](win32-virtualdesktopsession.md)
 </dt> <dd>
 
-<span data-ttu-id="08f98-131">Gerencia uma sessão de área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="08f98-131">Manages a virtual desktop session.</span></span>
+<span data-ttu-id="3b427-131">Gerencia uma sessão de área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="3b427-131">Manages a virtual desktop session.</span></span>
 
 </dd> </dl>
 
-## <a name="related-topics"></a><span data-ttu-id="08f98-132">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="08f98-132">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3b427-132">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3b427-132">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="08f98-133">Serviços de área de trabalho remota</span><span class="sxs-lookup"><span data-stu-id="08f98-133">Remote Desktop Services</span></span>](terminal-services-portal.md)
+[<span data-ttu-id="3b427-133">Serviços de área de trabalho remota</span><span class="sxs-lookup"><span data-stu-id="3b427-133">Remote Desktop Services</span></span>](terminal-services-portal.md)
 </dt> </dl>
 
  

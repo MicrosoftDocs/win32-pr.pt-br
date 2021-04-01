@@ -13,16 +13,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635740"
 ---
-# <a name="structured-storage-reference"></a><span data-ttu-id="2e779-104">Referência de armazenamento estruturado</span><span class="sxs-lookup"><span data-stu-id="2e779-104">Structured Storage Reference</span></span>
+# <a name="structured-storage-reference"></a><span data-ttu-id="e2cca-104">Referência de armazenamento estruturado</span><span class="sxs-lookup"><span data-stu-id="e2cca-104">Structured Storage Reference</span></span>
 
-<span data-ttu-id="2e779-105">Esta seção fornece material de referência para os elementos de programação do armazenamento estruturado.</span><span class="sxs-lookup"><span data-stu-id="2e779-105">This section provides reference material for the programming elements of Structured Storage.</span></span>
+<span data-ttu-id="e2cca-105">Esta seção fornece material de referência para os elementos de programação do armazenamento estruturado.</span><span class="sxs-lookup"><span data-stu-id="e2cca-105">This section provides reference material for the programming elements of Structured Storage.</span></span>
 
--   [<span data-ttu-id="2e779-106">Interfaces</span><span class="sxs-lookup"><span data-stu-id="2e779-106">Interfaces</span></span>](interfaces.md)
--   [<span data-ttu-id="2e779-107">Funções</span><span class="sxs-lookup"><span data-stu-id="2e779-107">Functions</span></span>](functions.md)
--   [<span data-ttu-id="2e779-108">Estruturas</span><span class="sxs-lookup"><span data-stu-id="2e779-108">Structures</span></span>](structures.md)
--   [<span data-ttu-id="2e779-109">Enumerações</span><span class="sxs-lookup"><span data-stu-id="2e779-109">Enumerations</span></span>](enumerations.md)
--   [<span data-ttu-id="2e779-110">Constantes</span><span class="sxs-lookup"><span data-stu-id="2e779-110">Constants</span></span>](constants.md)
--   [<span data-ttu-id="2e779-111">Amostras</span><span class="sxs-lookup"><span data-stu-id="2e779-111">Samples</span></span>](samples.md)
+-   [<span data-ttu-id="e2cca-106">Interfaces</span><span class="sxs-lookup"><span data-stu-id="e2cca-106">Interfaces</span></span>](interfaces.md)
+-   [<span data-ttu-id="e2cca-107">Funções</span><span class="sxs-lookup"><span data-stu-id="e2cca-107">Functions</span></span>](functions.md)
+-   [<span data-ttu-id="e2cca-108">Estruturas</span><span class="sxs-lookup"><span data-stu-id="e2cca-108">Structures</span></span>](structures.md)
+-   [<span data-ttu-id="e2cca-109">Enumerações</span><span class="sxs-lookup"><span data-stu-id="e2cca-109">Enumerations</span></span>](enumerations.md)
+-   [<span data-ttu-id="e2cca-110">Constantes</span><span class="sxs-lookup"><span data-stu-id="e2cca-110">Constants</span></span>](constants.md)
+-   [<span data-ttu-id="e2cca-111">Amostras</span><span class="sxs-lookup"><span data-stu-id="e2cca-111">Samples</span></span>](samples.md)
 
  
 

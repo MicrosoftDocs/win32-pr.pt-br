@@ -15,11 +15,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/24/2020
 ms.locfileid: "103639059"
 ---
-# <a name="calculatorwsdl"></a><span data-ttu-id="409f9-106">CalculatorWsdl</span><span class="sxs-lookup"><span data-stu-id="409f9-106">CalculatorWsdl</span></span>
+# <a name="calculatorwsdl"></a><span data-ttu-id="76a58-106">CalculatorWsdl</span><span class="sxs-lookup"><span data-stu-id="76a58-106">CalculatorWsdl</span></span>
 
-<span data-ttu-id="409f9-107">Este é um exemplo de WSDL/esquema para os exemplos de serviço da calculadora.</span><span class="sxs-lookup"><span data-stu-id="409f9-107">This is an example wsdl/schema for the calculator service samples.</span></span>
+<span data-ttu-id="76a58-107">Este é um exemplo de WSDL/esquema para os exemplos de serviço da calculadora.</span><span class="sxs-lookup"><span data-stu-id="76a58-107">This is an example wsdl/schema for the calculator service samples.</span></span>
 
-## <a name="calculatorwsdl"></a><span data-ttu-id="409f9-108">Calculator. WSDL</span><span class="sxs-lookup"><span data-stu-id="409f9-108">Calculator.wsdl</span></span>
+## <a name="calculatorwsdl"></a><span data-ttu-id="76a58-108">Calculator. WSDL</span><span class="sxs-lookup"><span data-stu-id="76a58-108">Calculator.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 

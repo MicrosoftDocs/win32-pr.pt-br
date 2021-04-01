@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636726"
 ---
-# <a name="uninstalling-a-provider"></a><span data-ttu-id="397b7-103">Desinstalando um provedor</span><span class="sxs-lookup"><span data-stu-id="397b7-103">Uninstalling a Provider</span></span>
+# <a name="uninstalling-a-provider"></a><span data-ttu-id="f7462-103">Desinstalando um provedor</span><span class="sxs-lookup"><span data-stu-id="f7462-103">Uninstalling a Provider</span></span>
 
-<span data-ttu-id="397b7-104">O código de exemplo a seguir demonstra o processo necessário para remover uma instalação do provedor.</span><span class="sxs-lookup"><span data-stu-id="397b7-104">The following sample code demonstrates the process required to remove a provider installation.</span></span>
+<span data-ttu-id="f7462-104">O código de exemplo a seguir demonstra o processo necessário para remover uma instalação do provedor.</span><span class="sxs-lookup"><span data-stu-id="f7462-104">The following sample code demonstrates the process required to remove a provider installation.</span></span>
 
 
 ```C++

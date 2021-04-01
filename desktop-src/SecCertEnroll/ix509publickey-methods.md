@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829162"
 ---
-# <a name="ix509publickey-methods"></a><span data-ttu-id="1e0c7-103">Métodos IX509PublicKey</span><span class="sxs-lookup"><span data-stu-id="1e0c7-103">IX509PublicKey Methods</span></span>
+# <a name="ix509publickey-methods"></a><span data-ttu-id="2d592-103">Métodos IX509PublicKey</span><span class="sxs-lookup"><span data-stu-id="2d592-103">IX509PublicKey Methods</span></span>
 
-<span data-ttu-id="1e0c7-104">A interface [**IX509PublicKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509publickey) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="1e0c7-104">The [**IX509PublicKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509publickey) interface exposes the following methods.</span></span>
+<span data-ttu-id="2d592-104">A interface [**IX509PublicKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509publickey) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="2d592-104">The [**IX509PublicKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509publickey) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="1e0c7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1e0c7-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2d592-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2d592-105">In this section</span></span>
 
--   [<span data-ttu-id="1e0c7-106">**Método ComputeKeyIdentifier**</span><span class="sxs-lookup"><span data-stu-id="1e0c7-106">**ComputeKeyIdentifier Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-computekeyidentifier)
--   [<span data-ttu-id="1e0c7-107">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="1e0c7-107">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initialize)
--   [<span data-ttu-id="1e0c7-108">**Método InitializeFromEncodedPublicKeyInfo**</span><span class="sxs-lookup"><span data-stu-id="1e0c7-108">**InitializeFromEncodedPublicKeyInfo Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initializefromencodedpublickeyinfo)
+-   [<span data-ttu-id="2d592-106">**Método ComputeKeyIdentifier**</span><span class="sxs-lookup"><span data-stu-id="2d592-106">**ComputeKeyIdentifier Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-computekeyidentifier)
+-   [<span data-ttu-id="2d592-107">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="2d592-107">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initialize)
+-   [<span data-ttu-id="2d592-108">**Método InitializeFromEncodedPublicKeyInfo**</span><span class="sxs-lookup"><span data-stu-id="2d592-108">**InitializeFromEncodedPublicKeyInfo Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509publickey-initializefromencodedpublickeyinfo)
 
  
 

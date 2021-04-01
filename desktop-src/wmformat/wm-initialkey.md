@@ -19,35 +19,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638713"
 ---
-# <a name="wminitialkey"></a><span data-ttu-id="43316-104">WM/InitialKey</span><span class="sxs-lookup"><span data-stu-id="43316-104">WM/InitialKey</span></span>
+# <a name="wminitialkey"></a><span data-ttu-id="a53a8-104">WM/InitialKey</span><span class="sxs-lookup"><span data-stu-id="a53a8-104">WM/InitialKey</span></span>
 
-<span data-ttu-id="43316-105">O atributo **WM/InitialKey** contém a chave inicial da música no arquivo.</span><span class="sxs-lookup"><span data-stu-id="43316-105">The **WM/InitialKey** attribute contains the initial key of the music in the file.</span></span>
+<span data-ttu-id="a53a8-105">O atributo **WM/InitialKey** contém a chave inicial da música no arquivo.</span><span class="sxs-lookup"><span data-stu-id="a53a8-105">The **WM/InitialKey** attribute contains the initial key of the music in the file.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="43316-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="43316-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="a53a8-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="a53a8-106">Global Constant</span></span>
 
-<span data-ttu-id="43316-107">g \_ wszWMInitialKey</span><span class="sxs-lookup"><span data-stu-id="43316-107">g\_wszWMInitialKey</span></span>
+<span data-ttu-id="a53a8-107">g \_ wszWMInitialKey</span><span class="sxs-lookup"><span data-stu-id="a53a8-107">g\_wszWMInitialKey</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="43316-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="43316-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="a53a8-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="a53a8-108">Data Type</span></span>
 
-<span data-ttu-id="43316-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="43316-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="a53a8-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="a53a8-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="example"></a><span data-ttu-id="43316-110">Exemplo</span><span class="sxs-lookup"><span data-stu-id="43316-110">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a53a8-110">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a53a8-110">Example</span></span>
 
 
 
-| <span data-ttu-id="43316-111">Tipo de arquivo</span><span class="sxs-lookup"><span data-stu-id="43316-111">File type</span></span> | <span data-ttu-id="43316-112">Valor de exemplo</span><span class="sxs-lookup"><span data-stu-id="43316-112">Example value</span></span> |
+| <span data-ttu-id="a53a8-111">Tipo de arquivo</span><span class="sxs-lookup"><span data-stu-id="a53a8-111">File type</span></span> | <span data-ttu-id="a53a8-112">Valor de exemplo</span><span class="sxs-lookup"><span data-stu-id="a53a8-112">Example value</span></span> |
 |-----------|---------------|
-| <span data-ttu-id="43316-113">Áudio</span><span class="sxs-lookup"><span data-stu-id="43316-113">Audio</span></span>     | <span data-ttu-id="43316-114">"Um secundário"</span><span class="sxs-lookup"><span data-stu-id="43316-114">"A Minor"</span></span>     |
+| <span data-ttu-id="a53a8-113">Áudio</span><span class="sxs-lookup"><span data-stu-id="a53a8-113">Audio</span></span>     | <span data-ttu-id="a53a8-114">"Um secundário"</span><span class="sxs-lookup"><span data-stu-id="a53a8-114">"A Minor"</span></span>     |
 
 
 
  
 
-## <a name="see-also"></a><span data-ttu-id="43316-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="43316-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a53a8-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="a53a8-115">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="43316-116">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="43316-116">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="a53a8-116">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="a53a8-116">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

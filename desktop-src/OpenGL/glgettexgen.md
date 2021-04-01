@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005428"
 ---
-# <a name="glgettexgen-functions"></a><span data-ttu-id="0471b-103">Funções glGetTexGen</span><span class="sxs-lookup"><span data-stu-id="0471b-103">glGetTexGen Functions</span></span>
+# <a name="glgettexgen-functions"></a><span data-ttu-id="7b3cb-103">Funções glGetTexGen</span><span class="sxs-lookup"><span data-stu-id="7b3cb-103">glGetTexGen Functions</span></span>
 
-<span data-ttu-id="0471b-104">Essas funções retornam parâmetros de geração de coordenadas de textura:</span><span class="sxs-lookup"><span data-stu-id="0471b-104">These functions return texture coordinate generation parameters:</span></span>
+<span data-ttu-id="7b3cb-104">Essas funções retornam parâmetros de geração de coordenadas de textura:</span><span class="sxs-lookup"><span data-stu-id="7b3cb-104">These functions return texture coordinate generation parameters:</span></span>
 
--   [<span data-ttu-id="0471b-105">**glGetTexGendv**</span><span class="sxs-lookup"><span data-stu-id="0471b-105">**glGetTexGendv**</span></span>](glgettexgendv.md)
--   [<span data-ttu-id="0471b-106">**glGetTexGenfv**</span><span class="sxs-lookup"><span data-stu-id="0471b-106">**glGetTexGenfv**</span></span>](glgettexgenfv.md)
--   [<span data-ttu-id="0471b-107">**glGetTexGeniv**</span><span class="sxs-lookup"><span data-stu-id="0471b-107">**glGetTexGeniv**</span></span>](glgettexgeniv.md)
+-   [<span data-ttu-id="7b3cb-105">**glGetTexGendv**</span><span class="sxs-lookup"><span data-stu-id="7b3cb-105">**glGetTexGendv**</span></span>](glgettexgendv.md)
+-   [<span data-ttu-id="7b3cb-106">**glGetTexGenfv**</span><span class="sxs-lookup"><span data-stu-id="7b3cb-106">**glGetTexGenfv**</span></span>](glgettexgenfv.md)
+-   [<span data-ttu-id="7b3cb-107">**glGetTexGeniv**</span><span class="sxs-lookup"><span data-stu-id="7b3cb-107">**glGetTexGeniv**</span></span>](glgettexgeniv.md)
 
  
 

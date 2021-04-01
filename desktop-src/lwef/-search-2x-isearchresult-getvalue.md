@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638543"
 ---
-# <a name="isearchresultgetvalue-method"></a><span data-ttu-id="61365-106">Método ISearchResult:: GetValue</span><span class="sxs-lookup"><span data-stu-id="61365-106">ISearchResult::GetValue method</span></span>
+# <a name="isearchresultgetvalue-method"></a><span data-ttu-id="c79ab-106">Método ISearchResult:: GetValue</span><span class="sxs-lookup"><span data-stu-id="c79ab-106">ISearchResult::GetValue method</span></span>
 
-<span data-ttu-id="61365-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="61365-107">This method is not implemented.</span></span>
+<span data-ttu-id="c79ab-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="c79ab-107">This method is not implemented.</span></span>
 
  
 

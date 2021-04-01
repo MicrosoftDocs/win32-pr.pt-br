@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638607"
 ---
-# <a name="createmediarendereroperationgetresults-method"></a><span data-ttu-id="138bd-106">Método CreateMediaRendererOperation:: GetResults</span><span class="sxs-lookup"><span data-stu-id="138bd-106">CreateMediaRendererOperation::GetResults method</span></span>
+# <a name="createmediarendereroperationgetresults-method"></a><span data-ttu-id="043dc-106">Método CreateMediaRendererOperation:: GetResults</span><span class="sxs-lookup"><span data-stu-id="043dc-106">CreateMediaRendererOperation::GetResults method</span></span>
 
-<span data-ttu-id="138bd-107">Obtém os resultados da operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="138bd-107">Gets the results of the asynchronous operation.</span></span>
+<span data-ttu-id="043dc-107">Obtém os resultados da operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="043dc-107">Gets the results of the asynchronous operation.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="138bd-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="138bd-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="043dc-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="043dc-108">Syntax</span></span>
 
 
 ```C++
@@ -35,19 +35,19 @@ MediaRenderer* GetResults();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="138bd-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="138bd-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="043dc-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="043dc-109">Parameters</span></span>
 
-<span data-ttu-id="138bd-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="138bd-110">This method has no parameters.</span></span>
+<span data-ttu-id="043dc-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="043dc-110">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="138bd-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="138bd-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="043dc-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="043dc-111">Return value</span></span>
 
-<span data-ttu-id="138bd-112">Os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="138bd-112">The results of the operation.</span></span> <span data-ttu-id="138bd-113">Um ponteiro para o objeto [**MediaRenderer**](mediarenderer.md) recém-criado.</span><span class="sxs-lookup"><span data-stu-id="138bd-113">A pointer to the newly created [**MediaRenderer**](mediarenderer.md) object.</span></span>
+<span data-ttu-id="043dc-112">Os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="043dc-112">The results of the operation.</span></span> <span data-ttu-id="043dc-113">Um ponteiro para o objeto [**MediaRenderer**](mediarenderer.md) recém-criado.</span><span class="sxs-lookup"><span data-stu-id="043dc-113">A pointer to the newly created [**MediaRenderer**](mediarenderer.md) object.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="138bd-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="138bd-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="043dc-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="043dc-114">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="138bd-115">**CreateMediaRendererOperation**</span><span class="sxs-lookup"><span data-stu-id="138bd-115">**CreateMediaRendererOperation**</span></span>](createmediarendereroperation.md)
+[<span data-ttu-id="043dc-115">**CreateMediaRendererOperation**</span><span class="sxs-lookup"><span data-stu-id="043dc-115">**CreateMediaRendererOperation**</span></span>](createmediarendereroperation.md)
 </dt> </dl>
 
  

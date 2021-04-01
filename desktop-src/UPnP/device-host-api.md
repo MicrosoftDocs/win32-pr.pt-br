@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636786"
 ---
-# <a name="device-host-api"></a><span data-ttu-id="a94de-104">API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="a94de-104">Device Host API</span></span>
+# <a name="device-host-api"></a><span data-ttu-id="f3576-104">API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f3576-104">Device Host API</span></span>
 
-<span data-ttu-id="a94de-105">Este documento define os objetos COM e as interfaces que compõem a API de host do dispositivo com a tecnologia de™ UPnP.</span><span class="sxs-lookup"><span data-stu-id="a94de-105">This document defines the COM objects and interfaces that comprise the Device Host API with UPnP™ technology.</span></span> <span data-ttu-id="a94de-106">Ele também descreve os objetos e as interfaces que um dispositivo gravado nessa API deve implementar.</span><span class="sxs-lookup"><span data-stu-id="a94de-106">It also describes the objects and interfaces that a device written to this API must implement.</span></span>
+<span data-ttu-id="f3576-105">Este documento define os objetos COM e as interfaces que compõem a API de host do dispositivo com a tecnologia de™ UPnP.</span><span class="sxs-lookup"><span data-stu-id="f3576-105">This document defines the COM objects and interfaces that comprise the Device Host API with UPnP™ technology.</span></span> <span data-ttu-id="f3576-106">Ele também descreve os objetos e as interfaces que um dispositivo gravado nessa API deve implementar.</span><span class="sxs-lookup"><span data-stu-id="f3576-106">It also describes the objects and interfaces that a device written to this API must implement.</span></span>
 
--   [<span data-ttu-id="a94de-107">Sobre a API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="a94de-107">About the Device Host API</span></span>](about-the-device-host-api-with-upnp-technology.md)
--   [<span data-ttu-id="a94de-108">Usando a API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="a94de-108">Using the Device Host API</span></span>](using-the-device-host-api-with-upnp-technology.md)
--   [<span data-ttu-id="a94de-109">Referência da API do host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="a94de-109">Device Host API Reference</span></span>](device-host-api-with-upnp-technology-reference.md)
+-   [<span data-ttu-id="f3576-107">Sobre a API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f3576-107">About the Device Host API</span></span>](about-the-device-host-api-with-upnp-technology.md)
+-   [<span data-ttu-id="f3576-108">Usando a API de host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f3576-108">Using the Device Host API</span></span>](using-the-device-host-api-with-upnp-technology.md)
+-   [<span data-ttu-id="f3576-109">Referência da API do host do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f3576-109">Device Host API Reference</span></span>](device-host-api-with-upnp-technology-reference.md)
 
  
 

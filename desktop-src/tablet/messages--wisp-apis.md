@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663162"
 ---
-# <a name="messages-used-by-wpf"></a><span data-ttu-id="0f3f2-103">Mensagens usadas pelo WPF</span><span class="sxs-lookup"><span data-stu-id="0f3f2-103">Messages Used by WPF</span></span>
+# <a name="messages-used-by-wpf"></a><span data-ttu-id="385f8-103">Mensagens usadas pelo WPF</span><span class="sxs-lookup"><span data-stu-id="385f8-103">Messages Used by WPF</span></span>
 
-<span data-ttu-id="0f3f2-104">Essas mensagens são usadas pelo Windows Presentation Foundation para implementar o suporte a tinta.</span><span class="sxs-lookup"><span data-stu-id="0f3f2-104">These messages are used by the Windows Presentation Foundation to implement ink support.</span></span>
+<span data-ttu-id="385f8-104">Essas mensagens são usadas pelo Windows Presentation Foundation para implementar o suporte a tinta.</span><span class="sxs-lookup"><span data-stu-id="385f8-104">These messages are used by the Windows Presentation Foundation to implement ink support.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="0f3f2-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0f3f2-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="385f8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="385f8-105">In This Section</span></span>
 
--   [<span data-ttu-id="0f3f2-106">**Mensagem do WM \_ Tablet \_ adicionado**</span><span class="sxs-lookup"><span data-stu-id="0f3f2-106">**WM\_TABLET\_ADDED Message**</span></span>](wm-tablet-added.md)
--   [<span data-ttu-id="0f3f2-107">**\_ \_ Mensagem excluída do WM Tablet**</span><span class="sxs-lookup"><span data-stu-id="0f3f2-107">**WM\_TABLET\_DELETED Message**</span></span>](wm-tablet-deleted.md)
+-   [<span data-ttu-id="385f8-106">**Mensagem do WM \_ Tablet \_ adicionado**</span><span class="sxs-lookup"><span data-stu-id="385f8-106">**WM\_TABLET\_ADDED Message**</span></span>](wm-tablet-added.md)
+-   [<span data-ttu-id="385f8-107">**\_ \_ Mensagem excluída do WM Tablet**</span><span class="sxs-lookup"><span data-stu-id="385f8-107">**WM\_TABLET\_DELETED Message**</span></span>](wm-tablet-deleted.md)
 
  
 

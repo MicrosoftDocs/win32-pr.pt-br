@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663907"
 ---
-# <a name="button-control-structures"></a><span data-ttu-id="c414d-103">Estruturas de controle de botão</span><span class="sxs-lookup"><span data-stu-id="c414d-103">Button Control Structures</span></span>
+# <a name="button-control-structures"></a><span data-ttu-id="75d0f-103">Estruturas de controle de botão</span><span class="sxs-lookup"><span data-stu-id="75d0f-103">Button Control Structures</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="c414d-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c414d-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="75d0f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="75d0f-104">In This Section</span></span>
 
--   [<span data-ttu-id="c414d-105">**BOTÃO \_ IMAGELIST**</span><span class="sxs-lookup"><span data-stu-id="c414d-105">**BUTTON\_IMAGELIST**</span></span>](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist)
--   [<span data-ttu-id="c414d-106">**BOTÃO \_ SPLITINFO**</span><span class="sxs-lookup"><span data-stu-id="c414d-106">**BUTTON\_SPLITINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo)
--   [<span data-ttu-id="c414d-107">**NMBCDROPDOWN**</span><span class="sxs-lookup"><span data-stu-id="c414d-107">**NMBCDROPDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown)
--   [<span data-ttu-id="c414d-108">**NMBCHOTITEM**</span><span class="sxs-lookup"><span data-stu-id="c414d-108">**NMBCHOTITEM**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmbchotitem)
+-   [<span data-ttu-id="75d0f-105">**BOTÃO \_ IMAGELIST**</span><span class="sxs-lookup"><span data-stu-id="75d0f-105">**BUTTON\_IMAGELIST**</span></span>](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist)
+-   [<span data-ttu-id="75d0f-106">**BOTÃO \_ SPLITINFO**</span><span class="sxs-lookup"><span data-stu-id="75d0f-106">**BUTTON\_SPLITINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo)
+-   [<span data-ttu-id="75d0f-107">**NMBCDROPDOWN**</span><span class="sxs-lookup"><span data-stu-id="75d0f-107">**NMBCDROPDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown)
+-   [<span data-ttu-id="75d0f-108">**NMBCHOTITEM**</span><span class="sxs-lookup"><span data-stu-id="75d0f-108">**NMBCHOTITEM**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmbchotitem)
 
  
 

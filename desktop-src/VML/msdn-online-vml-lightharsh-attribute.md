@@ -11,36 +11,36 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641173"
 ---
-# <a name="vml-lightharsh-attribute"></a><span data-ttu-id="5bd0d-103">Atributo LightHarsh de VML</span><span class="sxs-lookup"><span data-stu-id="5bd0d-103">VML LightHarsh Attribute</span></span>
+# <a name="vml-lightharsh-attribute"></a><span data-ttu-id="99f7d-103">Atributo LightHarsh de VML</span><span class="sxs-lookup"><span data-stu-id="99f7d-103">VML LightHarsh Attribute</span></span>
 
-<span data-ttu-id="5bd0d-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="5bd0d-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="99f7d-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="99f7d-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="99f7d-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="99f7d-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="5bd0d-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="5bd0d-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="5bd0d-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="5bd0d-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="5bd0d-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="5bd0d-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="99f7d-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="99f7d-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="99f7d-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="99f7d-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="99f7d-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="99f7d-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="99f7d-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="99f7d-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="5bd0d-110">Determina se a fonte de luz primária será dura.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-110">Determines whether the primary light source will be harsh.</span></span> <span data-ttu-id="5bd0d-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-111">Read/write.</span></span> <span data-ttu-id="5bd0d-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-112">**VgTriState**.</span></span>
+<span data-ttu-id="99f7d-110">Determina se a fonte de luz primária será dura.</span><span class="sxs-lookup"><span data-stu-id="99f7d-110">Determines whether the primary light source will be harsh.</span></span> <span data-ttu-id="99f7d-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="99f7d-111">Read/write.</span></span> <span data-ttu-id="99f7d-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="99f7d-112">**VgTriState**.</span></span>
 
-<span data-ttu-id="5bd0d-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="5bd0d-113">**Applies To**</span></span>
+<span data-ttu-id="99f7d-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="99f7d-113">**Applies To**</span></span>
 
-[<span data-ttu-id="5bd0d-114">Extrusão</span><span class="sxs-lookup"><span data-stu-id="5bd0d-114">Extrusion</span></span>](msdn-online-vml-extrusion-element.md)
+[<span data-ttu-id="99f7d-114">Extrusão</span><span class="sxs-lookup"><span data-stu-id="99f7d-114">Extrusion</span></span>](msdn-online-vml-extrusion-element.md)
 
-<span data-ttu-id="5bd0d-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="5bd0d-115">**Tag Syntax**</span></span>
+<span data-ttu-id="99f7d-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="99f7d-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="5bd0d-116"><o: *Element* lightharsh = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="5bd0d-116"><o: *element* lightharsh=" *expression* "></span></span>
+<span data-ttu-id="99f7d-116"><o: *Element* lightharsh = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="99f7d-116"><o: *element* lightharsh=" *expression* "></span></span>
 
-<span data-ttu-id="5bd0d-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="5bd0d-117">**Script Syntax**</span></span>
+<span data-ttu-id="99f7d-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="99f7d-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="5bd0d-118">*Element* . lightharsh = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="5bd0d-118">*element* .lightharsh="*expression*"</span></span>
+<span data-ttu-id="99f7d-118">*Element* . lightharsh = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="99f7d-118">*element* .lightharsh="*expression*"</span></span>
 
-<span data-ttu-id="5bd0d-119">*expressão* = de *elemento*. lightharsh</span><span class="sxs-lookup"><span data-stu-id="5bd0d-119">*expression*=*element*.lightharsh</span></span>
+<span data-ttu-id="99f7d-119">*expressão* = de *elemento*. lightharsh</span><span class="sxs-lookup"><span data-stu-id="99f7d-119">*expression*=*element*.lightharsh</span></span>
 
-<span data-ttu-id="5bd0d-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="5bd0d-120">**Remarks**</span></span>
+<span data-ttu-id="99f7d-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="99f7d-120">**Remarks**</span></span>
 
-<span data-ttu-id="5bd0d-121">Se **for false**, os limites de sombra serão difusos.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-121">If **False**, the shadow boundaries are diffused.</span></span> <span data-ttu-id="5bd0d-122">O valor padrão é **True**.</span><span class="sxs-lookup"><span data-stu-id="5bd0d-122">The default value is **True**.</span></span>
+<span data-ttu-id="99f7d-121">Se **for false**, os limites de sombra serão difusos.</span><span class="sxs-lookup"><span data-stu-id="99f7d-121">If **False**, the shadow boundaries are diffused.</span></span> <span data-ttu-id="99f7d-122">O valor padrão é **True**.</span><span class="sxs-lookup"><span data-stu-id="99f7d-122">The default value is **True**.</span></span>
 
-<span data-ttu-id="5bd0d-123">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="5bd0d-123">*Microsoft Office Extensions Attribute*</span></span>
+<span data-ttu-id="99f7d-123">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="99f7d-123">*Microsoft Office Extensions Attribute*</span></span>
 
  
 

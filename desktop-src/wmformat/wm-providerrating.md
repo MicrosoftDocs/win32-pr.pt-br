@@ -19,23 +19,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638476"
 ---
-# <a name="wmproviderrating"></a><span data-ttu-id="4b0b8-104">WM/ProviderRating</span><span class="sxs-lookup"><span data-stu-id="4b0b8-104">WM/ProviderRating</span></span>
+# <a name="wmproviderrating"></a><span data-ttu-id="149b7-104">WM/ProviderRating</span><span class="sxs-lookup"><span data-stu-id="149b7-104">WM/ProviderRating</span></span>
 
-<span data-ttu-id="4b0b8-105">O atributo **WM/ProviderRating** contém a classificação do arquivo, conforme atribuído pelo provedor de conteúdo de metadados.</span><span class="sxs-lookup"><span data-stu-id="4b0b8-105">The **WM/ProviderRating** attribute contains the rating of the file as assigned by the metadata content provider.</span></span>
+<span data-ttu-id="149b7-105">O atributo **WM/ProviderRating** contém a classificação do arquivo, conforme atribuído pelo provedor de conteúdo de metadados.</span><span class="sxs-lookup"><span data-stu-id="149b7-105">The **WM/ProviderRating** attribute contains the rating of the file as assigned by the metadata content provider.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="4b0b8-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="4b0b8-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="149b7-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="149b7-106">Global Constant</span></span>
 
-<span data-ttu-id="4b0b8-107">g \_ wszWMProviderRating</span><span class="sxs-lookup"><span data-stu-id="4b0b8-107">g\_wszWMProviderRating</span></span>
+<span data-ttu-id="149b7-107">g \_ wszWMProviderRating</span><span class="sxs-lookup"><span data-stu-id="149b7-107">g\_wszWMProviderRating</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="4b0b8-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="4b0b8-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="149b7-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="149b7-108">Data Type</span></span>
 
-<span data-ttu-id="4b0b8-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="4b0b8-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="149b7-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="149b7-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4b0b8-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="4b0b8-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="149b7-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="149b7-110">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4b0b8-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="4b0b8-111">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="149b7-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="149b7-111">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

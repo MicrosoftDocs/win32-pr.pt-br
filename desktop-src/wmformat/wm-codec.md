@@ -19,23 +19,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638678"
 ---
-# <a name="wmcodec"></a><span data-ttu-id="e7ced-104">WM/codec</span><span class="sxs-lookup"><span data-stu-id="e7ced-104">WM/Codec</span></span>
+# <a name="wmcodec"></a><span data-ttu-id="b8449-104">WM/codec</span><span class="sxs-lookup"><span data-stu-id="b8449-104">WM/Codec</span></span>
 
-<span data-ttu-id="e7ced-105">O atributo **WM/codec** contém o nome do codec usado para codificar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="e7ced-105">The **WM/Codec** attribute contains the name of the codec used to encode the content.</span></span>
+<span data-ttu-id="b8449-105">O atributo **WM/codec** contém o nome do codec usado para codificar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="b8449-105">The **WM/Codec** attribute contains the name of the codec used to encode the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="e7ced-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="e7ced-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="b8449-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="b8449-106">Global Constant</span></span>
 
-<span data-ttu-id="e7ced-107">g \_ wszWMCodec</span><span class="sxs-lookup"><span data-stu-id="e7ced-107">g\_wszWMCodec</span></span>
+<span data-ttu-id="b8449-107">g \_ wszWMCodec</span><span class="sxs-lookup"><span data-stu-id="b8449-107">g\_wszWMCodec</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="e7ced-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="e7ced-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="b8449-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="b8449-108">Data Type</span></span>
 
-<span data-ttu-id="e7ced-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="e7ced-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="b8449-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="b8449-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e7ced-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="e7ced-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8449-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="b8449-110">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e7ced-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="e7ced-111">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="b8449-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="b8449-111">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  
