@@ -19,10 +19,10 @@ A tabela CustomAction tem as colunas a seguir.
 
 
 
-| Coluna       | Type                               | Chave | Nullable |
+| Coluna       | Tipo                               | Chave | Nullable |
 |--------------|------------------------------------|-----|----------|
 | Ação       | [Identificador](identifier.md)       | S   | N        |
-| Type         | [Inteiro](integer.md)             | N   | N        |
+| Tipo         | [Inteiro](integer.md)             | N   | N        |
 | Fonte       | [CustomSource](customsource.md)   | N   | S        |
 | Destino       | [Binário](formatted.md)         | N   | S        |
 | ExtendedType | [DoubleInteger](doubleinteger.md) | N   | S        |

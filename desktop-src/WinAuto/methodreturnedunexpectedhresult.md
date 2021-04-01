@@ -17,7 +17,7 @@ ms.locfileid: "103636784"
 
 {0} retornado {1} , mas o valor de retorno esperado deveria ter sido {2}
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 

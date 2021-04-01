@@ -43,7 +43,7 @@ O [mais seguro](safer.md) usa os seguintes tipos enumerados.
 
 
 
-| Name                                                               | Descrição                                                                                                                                                                                      |
+| Nome                                                               | Descrição                                                                                                                                                                                      |
 |--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**tipos de \_ identificação mais seguros \_**](/windows/desktop/api/WinSafer/ne-winsafer-safer_identification_types) | Tipo de enumeração que define os possíveis tipos de estruturas de regra de identificação que podem ser identificadas pela estrutura de [**\_ \_ cabeçalho de identificação mais segura**](/windows/desktop/api/WinSafer/ns-winsafer-safer_identification_header) . |
 | [**classe de \_ informações de objeto mais seguro \_ \_**](/windows/desktop/api/WinSafer/ne-winsafer-safer_object_info_class)      | Tipo de enumeração que define o tipo de informações solicitadas sobre um objeto mais seguro.                                                                                                            |

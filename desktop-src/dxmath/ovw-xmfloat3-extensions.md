@@ -1,0 +1,48 @@
+---
+description: XMFLOAT3 descreve uma estrutura que contém um vetor 3D que consiste em três valores de ponto flutuante de precisão simples.
+ms.assetid: 43627e12-f997-431f-87c3-750ee68912fe
+title: Extensões XMFLOAT3
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 895322d93f6471b01dcab0f2f3cf8dcaffab9bb3
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103661535"
+---
+# <a name="xmfloat3-extensions"></a>Extensões XMFLOAT3
+
+[**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) descreve uma estrutura que contém um vetor 3D que consiste em três valores de ponto flutuante de precisão simples.
+
+> [!Note]  
+> Os recursos listados aqui só estão disponíveis ao desenvolver com C++.
+
+ 
+
+## <a name="in-this-section"></a>Nesta seção
+
+
+
+| Tópico                                                       | Descrição                                    |
+|-------------------------------------------------------------|------------------------------------------------|
+| [**Construtores XMFLOAT3**](/windows/win32/api/directxmath/nf-directxmath-xmfloat3-xmfloat3(constfloat))<br/>   | Construtores expostos por `XMFLOAT3` .<br/> |
+| [Operadores XMFLOAT3](ovw-xmfloat3-operators.md)<br/> | Operadores expostos por `XMFLOAT3` .<br/>    |
+
+
+
+ 
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+**Referência**
+</dt> <dt>
+
+[**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3)
+</dt> </dl>
+
+ 
+
+ 

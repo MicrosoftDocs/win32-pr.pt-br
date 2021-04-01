@@ -19,7 +19,7 @@ Cada sistema de arquivos consiste em um ou mais drivers e bibliotecas de víncul
 Todos os sistemas de arquivos com suporte do Windows têm os seguintes componentes de armazenamento:
 
 -   Volumes. Um *volume* é uma coleção de diretórios e arquivos.
--   Listas. Um *diretório* é uma coleção hierárquica de diretórios e arquivos.
+-   Diretórios. Um *diretório* é uma coleção hierárquica de diretórios e arquivos.
 -   Arquivos. Um *arquivo* é um agrupamento lógico de dados relacionados.
 
 ## <a name="in-this-section"></a>Nesta seção

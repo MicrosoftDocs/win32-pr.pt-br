@@ -17,7 +17,7 @@ ms.locfileid: "103661774"
 ---
 # <a name="sio_ideal_send_backlog_change-control-code"></a>SIO_IDEAL_SEND_BACKLOG_CHANGE código de controle
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 O código de controle de **alteração da pendência de envio do sio \_ ideal \_ \_ \_** notifica um aplicativo quando o valor da pendência de envio ideal (ISB) é alterado para a conexão.
 
