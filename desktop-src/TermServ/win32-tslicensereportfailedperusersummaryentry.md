@@ -97,7 +97,7 @@ O número de emissões com falha.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

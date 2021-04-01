@@ -17,7 +17,7 @@ A tabela a seguir lista os valores de retorno de confiança do certificado e do 
 
 
 
-| Nome                            | Descrição                                                                                                                    | Valor      |
+| Name                            | Descrição                                                                                                                    | Valor      |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|------------|
 | CERTIFICADO \_ E \_ crítico               | Um certificado contém uma extensão desconhecida que está marcada como "crítica".                                                         | 0x800B0105 |
 | \_ \_ nome inválido do certificado E \_          | O certificado tem um nome que não é válido. O nome não está incluído na lista de permissão ou foi excluído explicitamente. | 0x800B0114 |

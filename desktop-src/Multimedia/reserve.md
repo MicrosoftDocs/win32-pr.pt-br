@@ -90,7 +90,7 @@ Se necessário, os comandos [gravar](record.md) ou [salvar](save.md) subsequente
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
