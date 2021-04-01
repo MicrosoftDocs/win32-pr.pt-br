@@ -15,9 +15,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640410"
 ---
-# <a name="example-code-for-creating-an-application-directory-partition"></a><span data-ttu-id="7fdc9-105">Exemplo de código para criar uma partição de diretório de aplicativo</span><span class="sxs-lookup"><span data-stu-id="7fdc9-105">Example Code for Creating an Application Directory Partition</span></span>
+# <a name="example-code-for-creating-an-application-directory-partition"></a><span data-ttu-id="6f31a-105">Exemplo de código para criar uma partição de diretório de aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f31a-105">Example Code for Creating an Application Directory Partition</span></span>
 
-<span data-ttu-id="7fdc9-106">O exemplo de código C++ a seguir cria uma nova partição de diretório de aplicativo usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="7fdc9-106">The following C++ code example creates a new application directory partition using ADSI.</span></span>
+<span data-ttu-id="6f31a-106">O exemplo de código C++ a seguir cria uma nova partição de diretório de aplicativo usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="6f31a-106">The following C++ code example creates a new application directory partition using ADSI.</span></span>
 
 
 ```C++
@@ -128,7 +128,7 @@ HRESULT CreateApplicationPartitionIADs(LPCWSTR pwszDCADsPath,
 
 
 
-<span data-ttu-id="7fdc9-107">O exemplo de código a seguir Visual Basic Scripting Edition mostra como criar uma nova partição de diretório de aplicativo usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="7fdc9-107">The following Visual Basic Scripting Edition code example shows how to create a new application directory partition using ADSI.</span></span>
+<span data-ttu-id="6f31a-107">O exemplo de código a seguir Visual Basic Scripting Edition mostra como criar uma nova partição de diretório de aplicativo usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="6f31a-107">The following Visual Basic Scripting Edition code example shows how to create a new application directory partition using ADSI.</span></span>
 
 
 ```VB
@@ -215,7 +215,7 @@ End Sub
 
 
 
-<span data-ttu-id="7fdc9-108">O exemplo de código .NET a seguir Visual Basic mostra como criar uma nova partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices).</span><span class="sxs-lookup"><span data-stu-id="7fdc9-108">The following Visual Basic .NET code example shows how to create a new application directory partition using [System.DirectoryServices](/dotnet/api/system.directoryservices).</span></span>
+<span data-ttu-id="6f31a-108">O exemplo de código .NET a seguir Visual Basic mostra como criar uma nova partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices).</span><span class="sxs-lookup"><span data-stu-id="6f31a-108">The following Visual Basic .NET code example shows how to create a new application directory partition using [System.DirectoryServices](/dotnet/api/system.directoryservices).</span></span>
 
 
 ```VB
@@ -283,7 +283,7 @@ End Sub
 
 
 
-<span data-ttu-id="7fdc9-109">O exemplo de código C# a seguir mostra como criar uma nova partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices).</span><span class="sxs-lookup"><span data-stu-id="7fdc9-109">The following C# code example shows how to create a new application directory partition using [System.DirectoryServices](/dotnet/api/system.directoryservices).</span></span>
+<span data-ttu-id="6f31a-109">O exemplo de código C# a seguir mostra como criar uma nova partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices).</span><span class="sxs-lookup"><span data-stu-id="6f31a-109">The following C# code example shows how to create a new application directory partition using [System.DirectoryServices](/dotnet/api/system.directoryservices).</span></span>
 
 
 ```CSharp

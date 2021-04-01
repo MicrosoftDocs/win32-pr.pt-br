@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636219"
 ---
-# <a name="glgetmaterial-functions"></a><span data-ttu-id="654a7-103">Funções glGetMaterial</span><span class="sxs-lookup"><span data-stu-id="654a7-103">glGetMaterial Functions</span></span>
+# <a name="glgetmaterial-functions"></a><span data-ttu-id="60d1d-103">Funções glGetMaterial</span><span class="sxs-lookup"><span data-stu-id="60d1d-103">glGetMaterial Functions</span></span>
 
-<span data-ttu-id="654a7-104">Essas funções retornam parâmetros materiais:</span><span class="sxs-lookup"><span data-stu-id="654a7-104">These functions return material parameters:</span></span>
+<span data-ttu-id="60d1d-104">Essas funções retornam parâmetros materiais:</span><span class="sxs-lookup"><span data-stu-id="60d1d-104">These functions return material parameters:</span></span>
 
--   [<span data-ttu-id="654a7-105">**glGetMaterialfv**</span><span class="sxs-lookup"><span data-stu-id="654a7-105">**glGetMaterialfv**</span></span>](glgetmaterialfv.md)
--   [<span data-ttu-id="654a7-106">**glGetMaterialiv**</span><span class="sxs-lookup"><span data-stu-id="654a7-106">**glGetMaterialiv**</span></span>](glgetmaterialiv.md)
+-   [<span data-ttu-id="60d1d-105">**glGetMaterialfv**</span><span class="sxs-lookup"><span data-stu-id="60d1d-105">**glGetMaterialfv**</span></span>](glgetmaterialfv.md)
+-   [<span data-ttu-id="60d1d-106">**glGetMaterialiv**</span><span class="sxs-lookup"><span data-stu-id="60d1d-106">**glGetMaterialiv**</span></span>](glgetmaterialiv.md)
 
  
 

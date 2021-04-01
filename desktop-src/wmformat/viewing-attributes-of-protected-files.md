@@ -27,26 +27,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/19/2020
 ms.locfileid: "103640120"
 ---
-# <a name="viewing-attributes-of-protected-files"></a><span data-ttu-id="5ce2a-118">Exibindo atributos de arquivos protegidos</span><span class="sxs-lookup"><span data-stu-id="5ce2a-118">Viewing Attributes of Protected Files</span></span>
+# <a name="viewing-attributes-of-protected-files"></a><span data-ttu-id="4e9c1-118">Exibindo atributos de arquivos protegidos</span><span class="sxs-lookup"><span data-stu-id="4e9c1-118">Viewing Attributes of Protected Files</span></span>
 
-<span data-ttu-id="5ce2a-119">Em alguns cenários, talvez seja necessário recuperar determinados atributos DRM em um arquivo sem realmente acessar o conteúdo do arquivo.</span><span class="sxs-lookup"><span data-stu-id="5ce2a-119">In some scenarios, you may need to retrieve certain DRM attributes in a file without actually accessing the contents of the file.</span></span> <span data-ttu-id="5ce2a-120">Esse recurso é útil, por exemplo, em aplicativos que processam lotes de arquivos de maneiras diferentes com base nas informações no cabeçalho do arquivo.</span><span class="sxs-lookup"><span data-stu-id="5ce2a-120">This capability is useful, for example, in applications that process batches of files in different ways based on information in the file header.</span></span> <span data-ttu-id="5ce2a-121">Nas versões anteriores do Windows Media Format SDK, eram necessários aplicativos para vincular à biblioteca estática do DRM a fim de abrir qualquer arquivo protegido.</span><span class="sxs-lookup"><span data-stu-id="5ce2a-121">In previous versions of the Windows Media Format SDK, applications were required to link to the DRM static library in order to open any protected file.</span></span> <span data-ttu-id="5ce2a-122">Os aplicativos que não têm a biblioteca DRM podem usar a interface [**IWMDRMEditor:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) no objeto editor de metadados para examinar determinados atributos DRM.</span><span class="sxs-lookup"><span data-stu-id="5ce2a-122">Applications that do not have the DRM library can use the [**IWMDRMEditor::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) interface on the metadata editor object to examine certain DRM attributes.</span></span>
+<span data-ttu-id="4e9c1-119">Em alguns cenários, talvez seja necessário recuperar determinados atributos DRM em um arquivo sem realmente acessar o conteúdo do arquivo.</span><span class="sxs-lookup"><span data-stu-id="4e9c1-119">In some scenarios, you may need to retrieve certain DRM attributes in a file without actually accessing the contents of the file.</span></span> <span data-ttu-id="4e9c1-120">Esse recurso é útil, por exemplo, em aplicativos que processam lotes de arquivos de maneiras diferentes com base nas informações no cabeçalho do arquivo.</span><span class="sxs-lookup"><span data-stu-id="4e9c1-120">This capability is useful, for example, in applications that process batches of files in different ways based on information in the file header.</span></span> <span data-ttu-id="4e9c1-121">Nas versões anteriores do Windows Media Format SDK, eram necessários aplicativos para vincular à biblioteca estática do DRM a fim de abrir qualquer arquivo protegido.</span><span class="sxs-lookup"><span data-stu-id="4e9c1-121">In previous versions of the Windows Media Format SDK, applications were required to link to the DRM static library in order to open any protected file.</span></span> <span data-ttu-id="4e9c1-122">Os aplicativos que não têm a biblioteca DRM podem usar a interface [**IWMDRMEditor:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) no objeto editor de metadados para examinar determinados atributos DRM.</span><span class="sxs-lookup"><span data-stu-id="4e9c1-122">Applications that do not have the DRM library can use the [**IWMDRMEditor::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) interface on the metadata editor object to examine certain DRM attributes.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="5ce2a-123">O DRM não é compatível com a versão baseada em x64 deste SDK.</span><span class="sxs-lookup"><span data-stu-id="5ce2a-123">DRM is not supported by the x64-based version of this SDK.</span></span>
+> <span data-ttu-id="4e9c1-123">O DRM não é compatível com a versão baseada em x64 deste SDK.</span><span class="sxs-lookup"><span data-stu-id="4e9c1-123">DRM is not supported by the x64-based version of this SDK.</span></span>
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="5ce2a-124">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5ce2a-124">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4e9c1-124">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4e9c1-124">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5ce2a-125">**Lista de atributos DRM**</span><span class="sxs-lookup"><span data-stu-id="5ce2a-125">**DRM Attribute List**</span></span>](drm-attribute-list.md)
+[<span data-ttu-id="4e9c1-125">**Lista de atributos DRM**</span><span class="sxs-lookup"><span data-stu-id="4e9c1-125">**DRM Attribute List**</span></span>](drm-attribute-list.md)
 </dt> <dt>
 
-[<span data-ttu-id="5ce2a-126">**Habilitando o suporte a DRM**</span><span class="sxs-lookup"><span data-stu-id="5ce2a-126">**Enabling DRM Support**</span></span>](enabling-drm-support.md)
+[<span data-ttu-id="4e9c1-126">**Habilitando o suporte a DRM**</span><span class="sxs-lookup"><span data-stu-id="4e9c1-126">**Enabling DRM Support**</span></span>](enabling-drm-support.md)
 </dt> <dt>
 
-[<span data-ttu-id="5ce2a-127">**Interface IWMDRMEditor**</span><span class="sxs-lookup"><span data-stu-id="5ce2a-127">**IWMDRMEditor Interface**</span></span>](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmeditor)
+[<span data-ttu-id="4e9c1-127">**Interface IWMDRMEditor**</span><span class="sxs-lookup"><span data-stu-id="4e9c1-127">**IWMDRMEditor Interface**</span></span>](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmeditor)
 </dt> </dl>
 
  

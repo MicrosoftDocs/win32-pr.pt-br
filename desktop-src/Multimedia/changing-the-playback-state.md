@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103641106"
 ---
-# <a name="changing-the-playback-state"></a><span data-ttu-id="c98e5-103">Alterando o estado de reprodução</span><span class="sxs-lookup"><span data-stu-id="c98e5-103">Changing the Playback State</span></span>
+# <a name="changing-the-playback-state"></a><span data-ttu-id="f223c-103">Alterando o estado de reprodução</span><span class="sxs-lookup"><span data-stu-id="f223c-103">Changing the Playback State</span></span>
 
-<span data-ttu-id="c98e5-104">Os exemplos a seguir mostram como usar os comandos [**Pause**](pause.md), [**resume**](resume.md), [**Stop**](stop.md)e [**Seek**](seek.md) na função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="c98e5-104">The following examples show how to use the [**pause**](pause.md), [**resume**](resume.md), [**stop**](stop.md), and [**seek**](seek.md) commands in the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function.</span></span>
+<span data-ttu-id="f223c-104">Os exemplos a seguir mostram como usar os comandos [**Pause**](pause.md), [**resume**](resume.md), [**Stop**](stop.md)e [**Seek**](seek.md) na função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="f223c-104">The following examples show how to use the [**pause**](pause.md), [**resume**](resume.md), [**stop**](stop.md), and [**seek**](seek.md) commands in the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function.</span></span>
 
 
 ```C++
@@ -35,7 +35,7 @@ mciSendString("seek movie to start", NULL, 0, NULL);
 
 
 
-<span data-ttu-id="c98e5-105">O exemplo a seguir mostra como alterar o modo de busca:</span><span class="sxs-lookup"><span data-stu-id="c98e5-105">The following example shows how to change the seek mode:</span></span>
+<span data-ttu-id="f223c-105">O exemplo a seguir mostra como alterar o modo de busca:</span><span class="sxs-lookup"><span data-stu-id="f223c-105">The following example shows how to change the seek mode:</span></span>
 
 
 ```C++

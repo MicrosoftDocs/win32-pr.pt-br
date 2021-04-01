@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090071"
 ---
-# <a name="dateadd-function"></a><span data-ttu-id="78efd-104">Função DATEADD</span><span class="sxs-lookup"><span data-stu-id="78efd-104">DATEADD Function</span></span>
+# <a name="dateadd-function"></a><span data-ttu-id="02c43-104">Função DATEADD</span><span class="sxs-lookup"><span data-stu-id="02c43-104">DATEADD Function</span></span>
 
-<span data-ttu-id="78efd-105">A função DATEADD executa cálculos de data e hora para propriedades correspondentes com tipos de data.</span><span class="sxs-lookup"><span data-stu-id="78efd-105">The DATEADD function performs time and date calculations for matching properties having date types.</span></span> <span data-ttu-id="78efd-106">Use a função DATEADD para obter datas e horas em um período de tempo especificado antes da apresentação.</span><span class="sxs-lookup"><span data-stu-id="78efd-106">Use the DATEADD function to obtain dates and times in a specified amount of time before the present.</span></span>
+<span data-ttu-id="02c43-105">A função DATEADD executa cálculos de data e hora para propriedades correspondentes com tipos de data.</span><span class="sxs-lookup"><span data-stu-id="02c43-105">The DATEADD function performs time and date calculations for matching properties having date types.</span></span> <span data-ttu-id="02c43-106">Use a função DATEADD para obter datas e horas em um período de tempo especificado antes da apresentação.</span><span class="sxs-lookup"><span data-stu-id="02c43-106">Use the DATEADD function to obtain dates and times in a specified amount of time before the present.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="78efd-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="78efd-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="02c43-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="02c43-107">Syntax</span></span>
 
 
 ```
@@ -24,33 +24,33 @@ DATEADD (DateTimeUnits, OffsetValue, DateTime)
 
 
 
-## <a name="arguments"></a><span data-ttu-id="78efd-108">Argumentos</span><span class="sxs-lookup"><span data-stu-id="78efd-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="02c43-108">Argumentos</span><span class="sxs-lookup"><span data-stu-id="02c43-108">Arguments</span></span>
 
-<span data-ttu-id="78efd-109">*DateTimeUnits*</span><span class="sxs-lookup"><span data-stu-id="78efd-109">*DateTimeUnits*</span></span>
+<span data-ttu-id="02c43-109">*DateTimeUnits*</span><span class="sxs-lookup"><span data-stu-id="02c43-109">*DateTimeUnits*</span></span>
 
-<span data-ttu-id="78efd-110">Especifica as unidades do parâmetro de *data e hora* : ano, trimestre, mês, semana, dia, hora, minuto ou segundo.</span><span class="sxs-lookup"><span data-stu-id="78efd-110">Specifies the units of the *DateTime* parameter: YEAR, QUARTER, MONTH, WEEK, DAY, HOUR, MINUTE, or SECOND.</span></span> <span data-ttu-id="78efd-111">Esse valor diferencia maiúsculas de minúsculas e aspas não são necessárias em todo o parâmetro.</span><span class="sxs-lookup"><span data-stu-id="78efd-111">This value is case-sensitive, and quotation marks are not required around the parameter.</span></span>
+<span data-ttu-id="02c43-110">Especifica as unidades do parâmetro de *data e hora* : ano, trimestre, mês, semana, dia, hora, minuto ou segundo.</span><span class="sxs-lookup"><span data-stu-id="02c43-110">Specifies the units of the *DateTime* parameter: YEAR, QUARTER, MONTH, WEEK, DAY, HOUR, MINUTE, or SECOND.</span></span> <span data-ttu-id="02c43-111">Esse valor diferencia maiúsculas de minúsculas e aspas não são necessárias em todo o parâmetro.</span><span class="sxs-lookup"><span data-stu-id="02c43-111">This value is case-sensitive, and quotation marks are not required around the parameter.</span></span>
 
-<span data-ttu-id="78efd-112">*Deslocamento*</span><span class="sxs-lookup"><span data-stu-id="78efd-112">*OffsetValue*</span></span>
+<span data-ttu-id="02c43-112">*Deslocamento*</span><span class="sxs-lookup"><span data-stu-id="02c43-112">*OffsetValue*</span></span>
 
-<span data-ttu-id="78efd-113">Especifica o deslocamento de tempo, nas unidades especificadas pelo parâmetro *DateTimeUnits* .</span><span class="sxs-lookup"><span data-stu-id="78efd-113">Specifies the time offset, in the units specified by the *DateTimeUnits* parameter.</span></span> <span data-ttu-id="78efd-114">**OffsetValue** deve ser um número inteiro negativo.</span><span class="sxs-lookup"><span data-stu-id="78efd-114">**OffsetValue** must be a negative integer.</span></span> <span data-ttu-id="78efd-115">Não há suporte para valores positivos.</span><span class="sxs-lookup"><span data-stu-id="78efd-115">Positive values are not supported.</span></span>
+<span data-ttu-id="02c43-113">Especifica o deslocamento de tempo, nas unidades especificadas pelo parâmetro *DateTimeUnits* .</span><span class="sxs-lookup"><span data-stu-id="02c43-113">Specifies the time offset, in the units specified by the *DateTimeUnits* parameter.</span></span> <span data-ttu-id="02c43-114">**OffsetValue** deve ser um número inteiro negativo.</span><span class="sxs-lookup"><span data-stu-id="02c43-114">**OffsetValue** must be a negative integer.</span></span> <span data-ttu-id="02c43-115">Não há suporte para valores positivos.</span><span class="sxs-lookup"><span data-stu-id="02c43-115">Positive values are not supported.</span></span>
 
-<span data-ttu-id="78efd-116">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="78efd-116">*DateTime*</span></span>
+<span data-ttu-id="02c43-116">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="02c43-116">*DateTime*</span></span>
 
-<span data-ttu-id="78efd-117">Especifica um carimbo de data/hora do qual calcular o deslocamento.</span><span class="sxs-lookup"><span data-stu-id="78efd-117">Specifies a time stamp from which to calculate the offset.</span></span> <span data-ttu-id="78efd-118">Isso não pode ser um literal de data.</span><span class="sxs-lookup"><span data-stu-id="78efd-118">This cannot be a date literal.</span></span> <span data-ttu-id="78efd-119">Ele deve ser GETGMTDATE ou o resultado de outra função DATEADD.</span><span class="sxs-lookup"><span data-stu-id="78efd-119">It must be either GETGMTDATE or the result of another DATEADD function.</span></span>
+<span data-ttu-id="02c43-117">Especifica um carimbo de data/hora do qual calcular o deslocamento.</span><span class="sxs-lookup"><span data-stu-id="02c43-117">Specifies a time stamp from which to calculate the offset.</span></span> <span data-ttu-id="02c43-118">Isso não pode ser um literal de data.</span><span class="sxs-lookup"><span data-stu-id="02c43-118">This cannot be a date literal.</span></span> <span data-ttu-id="02c43-119">Ele deve ser GETGMTDATE ou o resultado de outra função DATEADD.</span><span class="sxs-lookup"><span data-stu-id="02c43-119">It must be either GETGMTDATE or the result of another DATEADD function.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="78efd-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="78efd-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="02c43-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="02c43-120">Remarks</span></span>
 
-<span data-ttu-id="78efd-121">A função DATEADD pode ser usada somente em comparações de valor literal e somente no lado direito do operador de comparação.</span><span class="sxs-lookup"><span data-stu-id="78efd-121">The DATEADD function can be used only in literal value comparisons and only on the right side of the comparison operator.</span></span>
+<span data-ttu-id="02c43-121">A função DATEADD pode ser usada somente em comparações de valor literal e somente no lado direito do operador de comparação.</span><span class="sxs-lookup"><span data-stu-id="02c43-121">The DATEADD function can be used only in literal value comparisons and only on the right side of the comparison operator.</span></span>
 
-<span data-ttu-id="78efd-122">A função GETGMTDATE retorna a data e a hora atuais no Greenwich Mean Time (GMT).</span><span class="sxs-lookup"><span data-stu-id="78efd-122">The GETGMTDATE function returns the current date and time in Greenwich Mean Time (GMT).</span></span> <span data-ttu-id="78efd-123">Lembre-se de que esse valor pode não ser o mesmo que o horário local do computador.</span><span class="sxs-lookup"><span data-stu-id="78efd-123">Remember that this value may not be the same as the local time of your computer.</span></span>
+<span data-ttu-id="02c43-122">A função GETGMTDATE retorna a data e a hora atuais no Greenwich Mean Time (GMT).</span><span class="sxs-lookup"><span data-stu-id="02c43-122">The GETGMTDATE function returns the current date and time in Greenwich Mean Time (GMT).</span></span> <span data-ttu-id="02c43-123">Lembre-se de que esse valor pode não ser o mesmo que o horário local do computador.</span><span class="sxs-lookup"><span data-stu-id="02c43-123">Remember that this value may not be the same as the local time of your computer.</span></span>
 
-<span data-ttu-id="78efd-124">Não use o operador de comparação Equals (=) porque a representação de tempo interna pode produzir erros de arredondamento que resultam em resultados de correspondência inesperados.</span><span class="sxs-lookup"><span data-stu-id="78efd-124">Do not use the equals (=) comparison operator because the internal time representation can produce rounding errors that result in unexpected matching results.</span></span>
+<span data-ttu-id="02c43-124">Não use o operador de comparação Equals (=) porque a representação de tempo interna pode produzir erros de arredondamento que resultam em resultados de correspondência inesperados.</span><span class="sxs-lookup"><span data-stu-id="02c43-124">Do not use the equals (=) comparison operator because the internal time representation can produce rounding errors that result in unexpected matching results.</span></span>
 
-<span data-ttu-id="78efd-125">Você pode usar várias funções de DATEADD para combinar unidades de deslocamento.</span><span class="sxs-lookup"><span data-stu-id="78efd-125">You can use multiple DATEADD functions to combine offset units.</span></span>
+<span data-ttu-id="02c43-125">Você pode usar várias funções de DATEADD para combinar unidades de deslocamento.</span><span class="sxs-lookup"><span data-stu-id="02c43-125">You can use multiple DATEADD functions to combine offset units.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="78efd-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="78efd-126">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="02c43-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="02c43-126">Examples</span></span>
 
-<span data-ttu-id="78efd-127">A cláusula WHERE de exemplo a seguir corresponde aos documentos que foram modificados nos últimos cinco dias:</span><span class="sxs-lookup"><span data-stu-id="78efd-127">The following example WHERE clause matches documents that were modified within the last five days:</span></span>
+<span data-ttu-id="02c43-127">A cláusula WHERE de exemplo a seguir corresponde aos documentos que foram modificados nos últimos cinco dias:</span><span class="sxs-lookup"><span data-stu-id="02c43-127">The following example WHERE clause matches documents that were modified within the last five days:</span></span>
 
 
 ```
@@ -59,7 +59,7 @@ DATEADD (DateTimeUnits, OffsetValue, DateTime)
 
 
 
-<span data-ttu-id="78efd-128">A cláusula WHERE de exemplo a seguir corresponde aos documentos que foram modificados nos últimos dois dias e quatro horas:</span><span class="sxs-lookup"><span data-stu-id="78efd-128">The following example WHERE clause matches documents that were modified within the last two days and four hours:</span></span>
+<span data-ttu-id="02c43-128">A cláusula WHERE de exemplo a seguir corresponde aos documentos que foram modificados nos últimos dois dias e quatro horas:</span><span class="sxs-lookup"><span data-stu-id="02c43-128">The following example WHERE clause matches documents that were modified within the last two days and four hours:</span></span>
 
 
 ```
@@ -68,26 +68,26 @@ DATEADD (DateTimeUnits, OffsetValue, DateTime)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="78efd-129">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="78efd-129">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="02c43-129">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="02c43-129">Related topics</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="78efd-130">**Referência**</span><span class="sxs-lookup"><span data-stu-id="78efd-130">**Reference**</span></span>
+<span data-ttu-id="02c43-130">**Referência**</span><span class="sxs-lookup"><span data-stu-id="02c43-130">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="78efd-131">Comparação de valor literal</span><span class="sxs-lookup"><span data-stu-id="78efd-131">Literal Value Comparison</span></span>](-search-sql-literalvaluecomparison.md)
+[<span data-ttu-id="02c43-131">Comparação de valor literal</span><span class="sxs-lookup"><span data-stu-id="02c43-131">Literal Value Comparison</span></span>](-search-sql-literalvaluecomparison.md)
 </dt> <dt>
 
-[<span data-ttu-id="78efd-132">Comparações de vários valores (matriz)</span><span class="sxs-lookup"><span data-stu-id="78efd-132">Multi-Valued (ARRAY) Comparisons</span></span>](-search-sql-multivaluedcomparisons.md)
+[<span data-ttu-id="02c43-132">Comparações de vários valores (matriz)</span><span class="sxs-lookup"><span data-stu-id="02c43-132">Multi-Valued (ARRAY) Comparisons</span></span>](-search-sql-multivaluedcomparisons.md)
 </dt> <dt>
 
-<span data-ttu-id="78efd-133">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="78efd-133">**Conceptual**</span></span>
+<span data-ttu-id="02c43-133">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="02c43-133">**Conceptual**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="78efd-134">Predicados de texto completo</span><span class="sxs-lookup"><span data-stu-id="78efd-134">Full-Text Predicates</span></span>](-search-sql-fulltextpredicates.md)
+[<span data-ttu-id="02c43-134">Predicados de texto completo</span><span class="sxs-lookup"><span data-stu-id="02c43-134">Full-Text Predicates</span></span>](-search-sql-fulltextpredicates.md)
 </dt> <dt>
 
-[<span data-ttu-id="78efd-135">Predicados de texto não completo</span><span class="sxs-lookup"><span data-stu-id="78efd-135">Non-Full-Text Predicates</span></span>](-search-sql-nonfulltextpredicates.md)
+[<span data-ttu-id="02c43-135">Predicados de texto não completo</span><span class="sxs-lookup"><span data-stu-id="02c43-135">Non-Full-Text Predicates</span></span>](-search-sql-nonfulltextpredicates.md)
 </dt> </dl>
 
  

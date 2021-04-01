@@ -51,13 +51,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644374"
 ---
-# <a name="imsrdpclientnonscriptable3redirectdynamicdevices-property"></a><span data-ttu-id="25a68-120">Propriedade IMsRdpClientNonScriptable3:: RedirectDynamicDevices</span><span class="sxs-lookup"><span data-stu-id="25a68-120">IMsRdpClientNonScriptable3::RedirectDynamicDevices property</span></span>
+# <a name="imsrdpclientnonscriptable3redirectdynamicdevices-property"></a><span data-ttu-id="94933-120">Propriedade IMsRdpClientNonScriptable3:: RedirectDynamicDevices</span><span class="sxs-lookup"><span data-stu-id="94933-120">IMsRdpClientNonScriptable3::RedirectDynamicDevices property</span></span>
 
-<span data-ttu-id="25a68-121">Especifica ou recupera se os dispositivos PnP (Plug and Play dinamicamente anexados) que são enumerados enquanto estão em uma sessão estão disponíveis para redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="25a68-121">Specifies or retrieves whether dynamically attached Plug and Play (PnP) devices that are enumerated while in a session are available for redirection.</span></span>
+<span data-ttu-id="94933-121">Especifica ou recupera se os dispositivos PnP (Plug and Play dinamicamente anexados) que são enumerados enquanto estão em uma sessão estão disponíveis para redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="94933-121">Specifies or retrieves whether dynamically attached Plug and Play (PnP) devices that are enumerated while in a session are available for redirection.</span></span>
 
-<span data-ttu-id="25a68-122">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="25a68-122">This property is read/write.</span></span>
+<span data-ttu-id="94933-122">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="94933-122">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="25a68-123">Syntax</span><span class="sxs-lookup"><span data-stu-id="25a68-123">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="94933-123">Syntax</span><span class="sxs-lookup"><span data-stu-id="94933-123">Syntax</span></span>
 
 
 ```C++
@@ -72,35 +72,35 @@ HRESULT get_RedirectDynamicDevices(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="25a68-124">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="25a68-124">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="94933-124">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="94933-124">Property value</span></span>
 
-<span data-ttu-id="25a68-125">Especifica se dispositivos PnP dinamicamente anexados que são enumerados enquanto estão em uma sessão estão disponíveis para redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="25a68-125">Specifies whether dynamically attached PnP devices that are enumerated while in a session are available for redirection.</span></span>
+<span data-ttu-id="94933-125">Especifica se dispositivos PnP dinamicamente anexados que são enumerados enquanto estão em uma sessão estão disponíveis para redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="94933-125">Specifies whether dynamically attached PnP devices that are enumerated while in a session are available for redirection.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="25a68-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="25a68-126">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="94933-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="94933-126">Requirements</span></span>
 
 
 
-| <span data-ttu-id="25a68-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="25a68-127">Requirement</span></span> | <span data-ttu-id="25a68-128">Valor</span><span class="sxs-lookup"><span data-stu-id="25a68-128">Value</span></span> |
+| <span data-ttu-id="94933-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="94933-127">Requirement</span></span> | <span data-ttu-id="94933-128">Valor</span><span class="sxs-lookup"><span data-stu-id="94933-128">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="25a68-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="25a68-129">Minimum supported client</span></span><br/> | <span data-ttu-id="25a68-130">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="25a68-130">Windows Vista</span></span><br/>                                                                      |
-| <span data-ttu-id="25a68-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="25a68-131">Minimum supported server</span></span><br/> | <span data-ttu-id="25a68-132">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="25a68-132">Windows Server 2008</span></span><br/>                                                                |
-| <span data-ttu-id="25a68-133">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="25a68-133">Type library</span></span><br/>             | <dl> <span data-ttu-id="25a68-134"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="25a68-134"><dt>MsTscAx.dll</dt></span></span> </dl>        |
-| <span data-ttu-id="25a68-135">DLL</span><span class="sxs-lookup"><span data-stu-id="25a68-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="25a68-136"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="25a68-136"><dt>MsTscAx.dll</dt></span></span> </dl>        |
-| <span data-ttu-id="25a68-137">IID</span><span class="sxs-lookup"><span data-stu-id="25a68-137">IID</span></span><br/>                      | <span data-ttu-id="25a68-138">IID \_ IMsRdpClientNonScriptable3 é definido como b3378d90-0728-45c7-8ed7-b6159fb92219</span><span class="sxs-lookup"><span data-stu-id="25a68-138">IID\_IMsRdpClientNonScriptable3 is defined as b3378d90-0728-45c7-8ed7-b6159fb92219</span></span><br/> |
+| <span data-ttu-id="94933-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="94933-129">Minimum supported client</span></span><br/> | <span data-ttu-id="94933-130">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="94933-130">Windows Vista</span></span><br/>                                                                      |
+| <span data-ttu-id="94933-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="94933-131">Minimum supported server</span></span><br/> | <span data-ttu-id="94933-132">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="94933-132">Windows Server 2008</span></span><br/>                                                                |
+| <span data-ttu-id="94933-133">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="94933-133">Type library</span></span><br/>             | <dl> <span data-ttu-id="94933-134"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="94933-134"><dt>MsTscAx.dll</dt></span></span> </dl>        |
+| <span data-ttu-id="94933-135">DLL</span><span class="sxs-lookup"><span data-stu-id="94933-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="94933-136"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="94933-136"><dt>MsTscAx.dll</dt></span></span> </dl>        |
+| <span data-ttu-id="94933-137">IID</span><span class="sxs-lookup"><span data-stu-id="94933-137">IID</span></span><br/>                      | <span data-ttu-id="94933-138">IID \_ IMsRdpClientNonScriptable3 é definido como b3378d90-0728-45c7-8ed7-b6159fb92219</span><span class="sxs-lookup"><span data-stu-id="94933-138">IID\_IMsRdpClientNonScriptable3 is defined as b3378d90-0728-45c7-8ed7-b6159fb92219</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="25a68-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="25a68-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="94933-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="94933-139">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="25a68-140">**IMsRdpClientNonScriptable4**</span><span class="sxs-lookup"><span data-stu-id="25a68-140">**IMsRdpClientNonScriptable4**</span></span>](imsrdpclientnonscriptable4.md)
+[<span data-ttu-id="94933-140">**IMsRdpClientNonScriptable4**</span><span class="sxs-lookup"><span data-stu-id="94933-140">**IMsRdpClientNonScriptable4**</span></span>](imsrdpclientnonscriptable4.md)
 </dt> <dt>
 
-[<span data-ttu-id="25a68-141">**IMsRdpClientNonScriptable5**</span><span class="sxs-lookup"><span data-stu-id="25a68-141">**IMsRdpClientNonScriptable5**</span></span>](imsrdpclientnonscriptable5.md)
+[<span data-ttu-id="94933-141">**IMsRdpClientNonScriptable5**</span><span class="sxs-lookup"><span data-stu-id="94933-141">**IMsRdpClientNonScriptable5**</span></span>](imsrdpclientnonscriptable5.md)
 </dt> <dt>
 
-[<span data-ttu-id="25a68-142">**IMsRdpClientNonScriptable3**</span><span class="sxs-lookup"><span data-stu-id="25a68-142">**IMsRdpClientNonScriptable3**</span></span>](imsrdpclientnonscriptable3.md)
+[<span data-ttu-id="94933-142">**IMsRdpClientNonScriptable3**</span><span class="sxs-lookup"><span data-stu-id="94933-142">**IMsRdpClientNonScriptable3**</span></span>](imsrdpclientnonscriptable3.md)
 </dt> </dl>
 
  

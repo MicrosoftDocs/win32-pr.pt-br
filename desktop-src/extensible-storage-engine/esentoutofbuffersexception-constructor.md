@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921455"
 ---
-# <a name="esentoutofbuffersexception-constructor"></a><span data-ttu-id="ef60a-103">Construtor EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="ef60a-103">EsentOutOfBuffersException constructor</span></span>
+# <a name="esentoutofbuffersexception-constructor"></a><span data-ttu-id="03438-103">Construtor EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="03438-103">EsentOutOfBuffersException constructor</span></span>
 
-<span data-ttu-id="ef60a-104">Inicializa uma nova instância da classe EsentOutOfBuffersException.</span><span class="sxs-lookup"><span data-stu-id="ef60a-104">Initializes a new instance of the EsentOutOfBuffersException class.</span></span>
+<span data-ttu-id="03438-104">Inicializa uma nova instância da classe EsentOutOfBuffersException.</span><span class="sxs-lookup"><span data-stu-id="03438-104">Initializes a new instance of the EsentOutOfBuffersException class.</span></span>
 
-<span data-ttu-id="ef60a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ef60a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="ef60a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ef60a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="03438-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="03438-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="03438-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="03438-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ef60a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ef60a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="03438-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="03438-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentOutOfBuffersException()
 public EsentOutOfBuffersException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ef60a-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="ef60a-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03438-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="03438-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="ef60a-109">Referência</span><span class="sxs-lookup"><span data-stu-id="ef60a-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="03438-109">Referência</span><span class="sxs-lookup"><span data-stu-id="03438-109">Reference</span></span>
 
-[<span data-ttu-id="ef60a-110">Classe EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="ef60a-110">EsentOutOfBuffersException class</span></span>](./esentoutofbuffersexception-class.md)
+[<span data-ttu-id="03438-110">Classe EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="03438-110">EsentOutOfBuffersException class</span></span>](./esentoutofbuffersexception-class.md)
 
-[<span data-ttu-id="ef60a-111">Membros do EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="ef60a-111">EsentOutOfBuffersException members</span></span>](./esentoutofbuffersexception-members.md)
+[<span data-ttu-id="03438-111">Membros do EsentOutOfBuffersException</span><span class="sxs-lookup"><span data-stu-id="03438-111">EsentOutOfBuffersException members</span></span>](./esentoutofbuffersexception-members.md)
 
-[<span data-ttu-id="ef60a-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ef60a-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="03438-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="03438-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

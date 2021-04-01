@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644604"
 ---
-# <a name="iremotedesktopclienteventsonremotedesktopsizechanged-method"></a><span data-ttu-id="9643d-106">Método IRemoteDesktopClientEvents:: OnRemoteDesktopSizeChanged</span><span class="sxs-lookup"><span data-stu-id="9643d-106">IRemoteDesktopClientEvents::OnRemoteDesktopSizeChanged method</span></span>
+# <a name="iremotedesktopclienteventsonremotedesktopsizechanged-method"></a><span data-ttu-id="e62f2-106">Método IRemoteDesktopClientEvents:: OnRemoteDesktopSizeChanged</span><span class="sxs-lookup"><span data-stu-id="e62f2-106">IRemoteDesktopClientEvents::OnRemoteDesktopSizeChanged method</span></span>
 
-<span data-ttu-id="9643d-107">Chamado quando o tamanho da área de trabalho remota é alterado.</span><span class="sxs-lookup"><span data-stu-id="9643d-107">Called when the remote desktop size has changed.</span></span>
+<span data-ttu-id="e62f2-107">Chamado quando o tamanho da área de trabalho remota é alterado.</span><span class="sxs-lookup"><span data-stu-id="e62f2-107">Called when the remote desktop size has changed.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9643d-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9643d-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e62f2-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e62f2-108">Syntax</span></span>
 
 
 ```C++
@@ -40,39 +40,39 @@ void OnRemoteDesktopSizeChanged(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="9643d-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="9643d-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e62f2-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e62f2-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9643d-110">*largura* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="9643d-110">*width* \[in\]</span></span>
+<span data-ttu-id="e62f2-110">*largura* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e62f2-110">*width* \[in\]</span></span>
 </dt> <dd></dd> <dt>
 
-<span data-ttu-id="9643d-111">*altura* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="9643d-111">*height* \[in\]</span></span>
-<span data-ttu-id="9643d-112"></dt> <dd></dd> </dl></span><span class="sxs-lookup"><span data-stu-id="9643d-112"></dt> <dd></dd> </dl></span></span>
+<span data-ttu-id="e62f2-111">*altura* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e62f2-111">*height* \[in\]</span></span>
+<span data-ttu-id="e62f2-112"></dt> <dd></dd> </dl></span><span class="sxs-lookup"><span data-stu-id="e62f2-112"></dt> <dd></dd> </dl></span></span>
 
-## <a name="return-value"></a><span data-ttu-id="9643d-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="9643d-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e62f2-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e62f2-113">Return value</span></span>
 
-<span data-ttu-id="9643d-114">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="9643d-114">This method does not return a value.</span></span>
+<span data-ttu-id="e62f2-114">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="e62f2-114">This method does not return a value.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="9643d-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9643d-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e62f2-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e62f2-115">Requirements</span></span>
 
 
 
-| <span data-ttu-id="9643d-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="9643d-116">Requirement</span></span> | <span data-ttu-id="9643d-117">Valor</span><span class="sxs-lookup"><span data-stu-id="9643d-117">Value</span></span> |
+| <span data-ttu-id="e62f2-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="e62f2-116">Requirement</span></span> | <span data-ttu-id="e62f2-117">Valor</span><span class="sxs-lookup"><span data-stu-id="e62f2-117">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="9643d-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9643d-118">Minimum supported client</span></span><br/> | <span data-ttu-id="9643d-119">Windows 8</span><span class="sxs-lookup"><span data-stu-id="9643d-119">Windows 8</span></span><br/>                                                                           |
-| <span data-ttu-id="9643d-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9643d-120">Minimum supported server</span></span><br/> | <span data-ttu-id="9643d-121">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="9643d-121">Windows Server 2012</span></span><br/>                                                                 |
-| <span data-ttu-id="9643d-122">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="9643d-122">Type library</span></span><br/>             | <dl> <span data-ttu-id="9643d-123"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="9643d-123"><dt>MsTscAx.dll</dt></span></span> </dl>         |
-| <span data-ttu-id="9643d-124">DLL</span><span class="sxs-lookup"><span data-stu-id="9643d-124">DLL</span></span><br/>                      | <dl> <span data-ttu-id="9643d-125"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="9643d-125"><dt>MsTscAx.dll</dt></span></span> </dl>         |
-| <span data-ttu-id="9643d-126">IID</span><span class="sxs-lookup"><span data-stu-id="9643d-126">IID</span></span><br/>                      | <span data-ttu-id="9643d-127">DIID \_ IRemoteDesktopClientEvents é definido como 079863B7-6D47-4105-8BFE-0CDCB360E67D</span><span class="sxs-lookup"><span data-stu-id="9643d-127">DIID\_IRemoteDesktopClientEvents is defined as 079863B7-6D47-4105-8BFE-0CDCB360E67D</span></span><br/> |
+| <span data-ttu-id="e62f2-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e62f2-118">Minimum supported client</span></span><br/> | <span data-ttu-id="e62f2-119">Windows 8</span><span class="sxs-lookup"><span data-stu-id="e62f2-119">Windows 8</span></span><br/>                                                                           |
+| <span data-ttu-id="e62f2-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e62f2-120">Minimum supported server</span></span><br/> | <span data-ttu-id="e62f2-121">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="e62f2-121">Windows Server 2012</span></span><br/>                                                                 |
+| <span data-ttu-id="e62f2-122">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="e62f2-122">Type library</span></span><br/>             | <dl> <span data-ttu-id="e62f2-123"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="e62f2-123"><dt>MsTscAx.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="e62f2-124">DLL</span><span class="sxs-lookup"><span data-stu-id="e62f2-124">DLL</span></span><br/>                      | <dl> <span data-ttu-id="e62f2-125"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="e62f2-125"><dt>MsTscAx.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="e62f2-126">IID</span><span class="sxs-lookup"><span data-stu-id="e62f2-126">IID</span></span><br/>                      | <span data-ttu-id="e62f2-127">DIID \_ IRemoteDesktopClientEvents é definido como 079863B7-6D47-4105-8BFE-0CDCB360E67D</span><span class="sxs-lookup"><span data-stu-id="e62f2-127">DIID\_IRemoteDesktopClientEvents is defined as 079863B7-6D47-4105-8BFE-0CDCB360E67D</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="9643d-128">Consulte também</span><span class="sxs-lookup"><span data-stu-id="9643d-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e62f2-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="e62f2-128">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9643d-129">**IRemoteDesktopClientEvents**</span><span class="sxs-lookup"><span data-stu-id="9643d-129">**IRemoteDesktopClientEvents**</span></span>](iremotedesktopclientevents.md)
+[<span data-ttu-id="e62f2-129">**IRemoteDesktopClientEvents**</span><span class="sxs-lookup"><span data-stu-id="e62f2-129">**IRemoteDesktopClientEvents**</span></span>](iremotedesktopclientevents.md)
 </dt> </dl>
 
  

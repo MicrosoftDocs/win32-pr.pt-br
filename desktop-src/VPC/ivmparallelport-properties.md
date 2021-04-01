@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641388"
 ---
-# <a name="ivmparallelport-properties"></a><span data-ttu-id="18b93-103">Propriedades de IVMParallelPort</span><span class="sxs-lookup"><span data-stu-id="18b93-103">IVMParallelPort Properties</span></span>
+# <a name="ivmparallelport-properties"></a><span data-ttu-id="5c064-103">Propriedades de IVMParallelPort</span><span class="sxs-lookup"><span data-stu-id="5c064-103">IVMParallelPort Properties</span></span>
 
-<span data-ttu-id="18b93-104">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="18b93-104">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="18b93-105">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="18b93-105">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
+<span data-ttu-id="5c064-104">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="5c064-104">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="5c064-105">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="5c064-105">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
 
-<span data-ttu-id="18b93-106">A interface [**IVMParallelPort**](ivmparallelport.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="18b93-106">The [**IVMParallelPort**](ivmparallelport.md) interface exposes the following properties.</span></span>
+<span data-ttu-id="5c064-106">A interface [**IVMParallelPort**](ivmparallelport.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="5c064-106">The [**IVMParallelPort**](ivmparallelport.md) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="18b93-107">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="18b93-107">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5c064-107">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5c064-107">In this section</span></span>
 
--   [<span data-ttu-id="18b93-108">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="18b93-108">**Name Property**</span></span>](ivmparallelport-name.md)
+-   [<span data-ttu-id="5c064-108">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="5c064-108">**Name Property**</span></span>](ivmparallelport-name.md)
 
  
 

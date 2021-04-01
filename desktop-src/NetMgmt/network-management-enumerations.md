@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636222"
 ---
-# <a name="network-management-enumerations"></a><span data-ttu-id="c4fcb-103">Enumerações de gerenciamento de rede</span><span class="sxs-lookup"><span data-stu-id="c4fcb-103">Network Management Enumerations</span></span>
+# <a name="network-management-enumerations"></a><span data-ttu-id="387f9-103">Enumerações de gerenciamento de rede</span><span class="sxs-lookup"><span data-stu-id="387f9-103">Network Management Enumerations</span></span>
 
-<span data-ttu-id="c4fcb-104">As enumerações de gerenciamento de rede incluem o seguinte:</span><span class="sxs-lookup"><span data-stu-id="c4fcb-104">The network management enumerations include the following:</span></span>
+<span data-ttu-id="387f9-104">As enumerações de gerenciamento de rede incluem o seguinte:</span><span class="sxs-lookup"><span data-stu-id="387f9-104">The network management enumerations include the following:</span></span>
 
 
 
-| <span data-ttu-id="c4fcb-105">Enumerações</span><span class="sxs-lookup"><span data-stu-id="c4fcb-105">Enumerations</span></span>                                 | <span data-ttu-id="c4fcb-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="c4fcb-106">Description</span></span>                                                                                  |
+| <span data-ttu-id="387f9-105">Enumerações</span><span class="sxs-lookup"><span data-stu-id="387f9-105">Enumerations</span></span>                                 | <span data-ttu-id="387f9-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="387f9-106">Description</span></span>                                                                                  |
 |----------------------------------------------|----------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="c4fcb-107">**\_tipo de junção DSREG \_**</span><span class="sxs-lookup"><span data-stu-id="c4fcb-107">**DSREG\_JOIN\_TYPE**</span></span>](/windows/desktop/api/lmjoin/ne-lmjoin-dsreg_join_type) | <span data-ttu-id="c4fcb-108">Especifica as maneiras possíveis pelas quais um dispositivo pode ser Unido Microsoft Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c4fcb-108">Specifies the possible ways that a device can be joined to Microsoft Azure Active Directory.</span></span> |
+| [<span data-ttu-id="387f9-107">**\_tipo de junção DSREG \_**</span><span class="sxs-lookup"><span data-stu-id="387f9-107">**DSREG\_JOIN\_TYPE**</span></span>](/windows/desktop/api/lmjoin/ne-lmjoin-dsreg_join_type) | <span data-ttu-id="387f9-108">Especifica as maneiras possíveis pelas quais um dispositivo pode ser Unido Microsoft Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="387f9-108">Specifies the possible ways that a device can be joined to Microsoft Azure Active Directory.</span></span> |
 
 
 

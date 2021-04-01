@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "103642924"
 ---
-# <a name="sdk-connection-properties"></a><span data-ttu-id="5d3ce-104">Propriedades de conexão do SDK</span><span class="sxs-lookup"><span data-stu-id="5d3ce-104">SDK Connection Properties</span></span>
+# <a name="sdk-connection-properties"></a><span data-ttu-id="def68-104">Propriedades de conexão do SDK</span><span class="sxs-lookup"><span data-stu-id="def68-104">SDK Connection Properties</span></span>
 
-<span data-ttu-id="5d3ce-105">Este exemplo é uma instância do esquema nativo do [eaphostconfig](eaphostconfigschema-schema.md) .</span><span class="sxs-lookup"><span data-stu-id="5d3ce-105">This sample is an instance of the [eaphostconfig](eaphostconfigschema-schema.md) native schema.</span></span>
+<span data-ttu-id="def68-105">Este exemplo é uma instância do esquema nativo do [eaphostconfig](eaphostconfigschema-schema.md) .</span><span class="sxs-lookup"><span data-stu-id="def68-105">This sample is an instance of the [eaphostconfig](eaphostconfigschema-schema.md) native schema.</span></span>
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -31,14 +31,14 @@ ms.locfileid: "103642924"
   </EapHostConfig>
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="5d3ce-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5d3ce-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="def68-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="def68-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5d3ce-107">Propriedades da conexão</span><span class="sxs-lookup"><span data-stu-id="5d3ce-107">Connection Properties</span></span>](connection-profiles.md)
+[<span data-ttu-id="def68-107">Propriedades da conexão</span><span class="sxs-lookup"><span data-stu-id="def68-107">Connection Properties</span></span>](connection-profiles.md)
 </dt> <dt>
 
-[<span data-ttu-id="5d3ce-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="5d3ce-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="def68-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="def68-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> </dl>
 
  

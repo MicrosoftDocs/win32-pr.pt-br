@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640484"
 ---
-# <a name="commands-object-methods"></a><span data-ttu-id="278a7-103">Métodos de objeto Commands</span><span class="sxs-lookup"><span data-stu-id="278a7-103">Commands Object Methods</span></span>
+# <a name="commands-object-methods"></a><span data-ttu-id="d11ee-103">Métodos de objeto Commands</span><span class="sxs-lookup"><span data-stu-id="d11ee-103">Commands Object Methods</span></span>
 
-<span data-ttu-id="278a7-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="278a7-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="d11ee-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="d11ee-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
-<span data-ttu-id="278a7-105">O servidor oferece suporte aos seguintes métodos para o objeto de coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) :</span><span class="sxs-lookup"><span data-stu-id="278a7-105">The server supports the following methods for the [**Commands**](/windows/desktop/lwef/the-commands-collection-object) collection object:</span></span>
+<span data-ttu-id="d11ee-105">O servidor oferece suporte aos seguintes métodos para o objeto de coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) :</span><span class="sxs-lookup"><span data-stu-id="d11ee-105">The server supports the following methods for the [**Commands**](/windows/desktop/lwef/the-commands-collection-object) collection object:</span></span>
 
--   [<span data-ttu-id="278a7-106">**Adicionar**</span><span class="sxs-lookup"><span data-stu-id="278a7-106">**Add**</span></span>](add-method.md)
--   [<span data-ttu-id="278a7-107">**Comando**</span><span class="sxs-lookup"><span data-stu-id="278a7-107">**Command**</span></span>](command-method.md)
--   [<span data-ttu-id="278a7-108">**Inserido**</span><span class="sxs-lookup"><span data-stu-id="278a7-108">**Insert**</span></span>](insert-method.md)
--   [<span data-ttu-id="278a7-109">**Remover**</span><span class="sxs-lookup"><span data-stu-id="278a7-109">**Remove**</span></span>](remove-method.md)
--   [<span data-ttu-id="278a7-110">**RemoveAll**</span><span class="sxs-lookup"><span data-stu-id="278a7-110">**RemoveAll**</span></span>](removeall-method.md)
+-   [<span data-ttu-id="d11ee-106">**Adicionar**</span><span class="sxs-lookup"><span data-stu-id="d11ee-106">**Add**</span></span>](add-method.md)
+-   [<span data-ttu-id="d11ee-107">**Comando**</span><span class="sxs-lookup"><span data-stu-id="d11ee-107">**Command**</span></span>](command-method.md)
+-   [<span data-ttu-id="d11ee-108">**Inserido**</span><span class="sxs-lookup"><span data-stu-id="d11ee-108">**Insert**</span></span>](insert-method.md)
+-   [<span data-ttu-id="d11ee-109">**Remover**</span><span class="sxs-lookup"><span data-stu-id="d11ee-109">**Remove**</span></span>](remove-method.md)
+-   [<span data-ttu-id="d11ee-110">**RemoveAll**</span><span class="sxs-lookup"><span data-stu-id="d11ee-110">**RemoveAll**</span></span>](removeall-method.md)
 
  
 

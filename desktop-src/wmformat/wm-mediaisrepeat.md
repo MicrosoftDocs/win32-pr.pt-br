@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638652"
 ---
-# <a name="wmmediaisrepeat"></a><span data-ttu-id="0ff23-104">WM/MediaIsRepeat</span><span class="sxs-lookup"><span data-stu-id="0ff23-104">WM/MediaIsRepeat</span></span>
+# <a name="wmmediaisrepeat"></a><span data-ttu-id="a36cf-104">WM/MediaIsRepeat</span><span class="sxs-lookup"><span data-stu-id="a36cf-104">WM/MediaIsRepeat</span></span>
 
-<span data-ttu-id="0ff23-105">O atributo **WM/MediaIsRepeat** indica se o conteúdo é um episódio repetido de uma série.</span><span class="sxs-lookup"><span data-stu-id="0ff23-105">The **WM/MediaIsRepeat** attribute indicates whether the content is a repeated episode of a series.</span></span>
+<span data-ttu-id="a36cf-105">O atributo **WM/MediaIsRepeat** indica se o conteúdo é um episódio repetido de uma série.</span><span class="sxs-lookup"><span data-stu-id="a36cf-105">The **WM/MediaIsRepeat** attribute indicates whether the content is a repeated episode of a series.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="0ff23-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="0ff23-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="a36cf-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="a36cf-106">Global Constant</span></span>
 
-<span data-ttu-id="0ff23-107">g \_ wszWMMediaIsRepeat</span><span class="sxs-lookup"><span data-stu-id="0ff23-107">g\_wszWMMediaIsRepeat</span></span>
+<span data-ttu-id="a36cf-107">g \_ wszWMMediaIsRepeat</span><span class="sxs-lookup"><span data-stu-id="a36cf-107">g\_wszWMMediaIsRepeat</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="0ff23-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="0ff23-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="a36cf-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="a36cf-108">Data Type</span></span>
 
-<span data-ttu-id="0ff23-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="0ff23-109">**WMT\_TYPE\_BOOL**</span></span>
+<span data-ttu-id="a36cf-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="a36cf-109">**WMT\_TYPE\_BOOL**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0ff23-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="0ff23-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a36cf-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="a36cf-110">Remarks</span></span>
 
-<span data-ttu-id="0ff23-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="0ff23-111">This attribute is used for broadcast television.</span></span>
+<span data-ttu-id="a36cf-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="a36cf-111">This attribute is used for broadcast television.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="0ff23-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="0ff23-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a36cf-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="a36cf-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="0ff23-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="0ff23-113">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="a36cf-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="a36cf-113">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635936"
 ---
-# <a name="opengl-glossary"></a><span data-ttu-id="fec33-104">Glossário do OpenGL</span><span class="sxs-lookup"><span data-stu-id="fec33-104">OpenGL Glossary</span></span>
+# <a name="opengl-glossary"></a><span data-ttu-id="c6300-104">Glossário do OpenGL</span><span class="sxs-lookup"><span data-stu-id="c6300-104">OpenGL Glossary</span></span>
 
-<span data-ttu-id="fec33-105">Os tópicos a seguir fornecem um glossário dos termos do OpenGL.</span><span class="sxs-lookup"><span data-stu-id="fec33-105">The following topics provide a glossary of OpenGL terms.</span></span>
+<span data-ttu-id="c6300-105">Os tópicos a seguir fornecem um glossário dos termos do OpenGL.</span><span class="sxs-lookup"><span data-stu-id="c6300-105">The following topics provide a glossary of OpenGL terms.</span></span>
 
-<span data-ttu-id="fec33-106">[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [i](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)</span><span class="sxs-lookup"><span data-stu-id="fec33-106">[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)</span></span>
+<span data-ttu-id="c6300-106">[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [i](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)</span><span class="sxs-lookup"><span data-stu-id="c6300-106">[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)</span></span>
 
  
 

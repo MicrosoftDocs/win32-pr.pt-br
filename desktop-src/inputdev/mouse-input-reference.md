@@ -11,20 +11,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104159919"
 ---
-# <a name="mouse-input-reference"></a><span data-ttu-id="2b2c8-103">Referência de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2b2c8-103">Mouse Input Reference</span></span>
+# <a name="mouse-input-reference"></a><span data-ttu-id="2882a-103">Referência de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2882a-103">Mouse Input Reference</span></span>
 
-<span data-ttu-id="2b2c8-104">Os tópicos contidos nesta seção fornecem as especificações de referência para entrada do mouse.</span><span class="sxs-lookup"><span data-stu-id="2b2c8-104">The topics contained in this section provide the reference specifications for mouse input.</span></span>
+<span data-ttu-id="2882a-104">Os tópicos contidos nesta seção fornecem as especificações de referência para entrada do mouse.</span><span class="sxs-lookup"><span data-stu-id="2882a-104">The topics contained in this section provide the reference specifications for mouse input.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="2b2c8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2b2c8-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2882a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2882a-105">In this section</span></span>
 
 
 
-| <span data-ttu-id="2b2c8-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="2b2c8-106">Topic</span></span>                                                                 | <span data-ttu-id="2b2c8-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="2b2c8-107">Description</span></span> |
+| <span data-ttu-id="2882a-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="2882a-106">Topic</span></span>                                                                 | <span data-ttu-id="2882a-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="2882a-107">Description</span></span> |
 |-----------------------------------------------------------------------|-------------|
-| [<span data-ttu-id="2b2c8-108">Funções de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2b2c8-108">Mouse Input Functions</span></span>](mouse-input-functions.md)<br/>         |             |
-| [<span data-ttu-id="2b2c8-109">Macros de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2b2c8-109">Mouse Input Macros</span></span>](mouse-input-macros.md)<br/>               |             |
-| [<span data-ttu-id="2b2c8-110">Notificações de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2b2c8-110">Mouse Input Notifications</span></span>](mouse-input-notifications.md)<br/> |             |
-| [<span data-ttu-id="2b2c8-111">Estruturas de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2b2c8-111">Mouse Input Structures</span></span>](mouse-input-structures.md)<br/>       |             |
+| [<span data-ttu-id="2882a-108">Funções de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2882a-108">Mouse Input Functions</span></span>](mouse-input-functions.md)<br/>         |             |
+| [<span data-ttu-id="2882a-109">Macros de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2882a-109">Mouse Input Macros</span></span>](mouse-input-macros.md)<br/>               |             |
+| [<span data-ttu-id="2882a-110">Notificações de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2882a-110">Mouse Input Notifications</span></span>](mouse-input-notifications.md)<br/> |             |
+| [<span data-ttu-id="2882a-111">Estruturas de entrada do mouse</span><span class="sxs-lookup"><span data-stu-id="2882a-111">Mouse Input Structures</span></span>](mouse-input-structures.md)<br/>       |             |
 
 
 

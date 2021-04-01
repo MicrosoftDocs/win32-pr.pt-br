@@ -16,20 +16,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641847"
 ---
-# <a name="baseeapmethodconfig-schema-complex-types"></a><span data-ttu-id="f5d27-104">Tipos complexos de esquema baseeapmethodconfig</span><span class="sxs-lookup"><span data-stu-id="f5d27-104">baseeapmethodconfig Schema Complex Types</span></span>
+# <a name="baseeapmethodconfig-schema-complex-types"></a><span data-ttu-id="0f0f6-104">Tipos complexos de esquema baseeapmethodconfig</span><span class="sxs-lookup"><span data-stu-id="0f0f6-104">baseeapmethodconfig Schema Complex Types</span></span>
 
-<span data-ttu-id="f5d27-105">O esquema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) define o tipo complexo a seguir.</span><span class="sxs-lookup"><span data-stu-id="f5d27-105">The [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) schema defines the following complex type.</span></span>
+<span data-ttu-id="0f0f6-105">O esquema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) define o tipo complexo a seguir.</span><span class="sxs-lookup"><span data-stu-id="0f0f6-105">The [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) schema defines the following complex type.</span></span>
 
--   [<span data-ttu-id="f5d27-106">**BaseEapMethodConfig**</span><span class="sxs-lookup"><span data-stu-id="f5d27-106">**BaseEapMethodConfig**</span></span>](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md)
+-   [<span data-ttu-id="0f0f6-106">**BaseEapMethodConfig**</span><span class="sxs-lookup"><span data-stu-id="0f0f6-106">**BaseEapMethodConfig**</span></span>](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md)
 
-## <a name="related-topics"></a><span data-ttu-id="f5d27-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f5d27-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="0f0f6-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0f0f6-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f5d27-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="f5d27-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="0f0f6-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="0f0f6-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="f5d27-109">Esquema baseeapmethodconfig</span><span class="sxs-lookup"><span data-stu-id="f5d27-109">baseeapmethodconfig Schema</span></span>](baseeapmethodconfigschema-schema.md)
+[<span data-ttu-id="0f0f6-109">Esquema baseeapmethodconfig</span><span class="sxs-lookup"><span data-stu-id="0f0f6-109">baseeapmethodconfig Schema</span></span>](baseeapmethodconfigschema-schema.md)
 </dt> </dl>
 
  

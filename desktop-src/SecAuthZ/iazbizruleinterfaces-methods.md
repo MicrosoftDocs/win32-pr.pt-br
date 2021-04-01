@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829172"
 ---
-# <a name="iazbizruleinterfaces-methods"></a><span data-ttu-id="fae31-103">Métodos IAzBizRuleInterfaces</span><span class="sxs-lookup"><span data-stu-id="fae31-103">IAzBizRuleInterfaces Methods</span></span>
+# <a name="iazbizruleinterfaces-methods"></a><span data-ttu-id="6adfa-103">Métodos IAzBizRuleInterfaces</span><span class="sxs-lookup"><span data-stu-id="6adfa-103">IAzBizRuleInterfaces Methods</span></span>
 
-<span data-ttu-id="fae31-104">A interface [**IAzBizRuleInterfaces**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleinterfaces) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="fae31-104">The [**IAzBizRuleInterfaces**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleinterfaces) interface exposes the following methods.</span></span>
+<span data-ttu-id="6adfa-104">A interface [**IAzBizRuleInterfaces**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleinterfaces) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6adfa-104">The [**IAzBizRuleInterfaces**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleinterfaces) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="fae31-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fae31-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6adfa-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6adfa-105">In this section</span></span>
 
--   [<span data-ttu-id="fae31-106">**Método AddInterface**</span><span class="sxs-lookup"><span data-stu-id="fae31-106">**AddInterface Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterface)
--   [<span data-ttu-id="fae31-107">**Método addinterfaces**</span><span class="sxs-lookup"><span data-stu-id="fae31-107">**AddInterfaces Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterfaces)
--   [<span data-ttu-id="fae31-108">**Método getinterfacesvalue**</span><span class="sxs-lookup"><span data-stu-id="fae31-108">**GetInterfaceValue Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-getinterfacevalue)
--   [<span data-ttu-id="fae31-109">**Remover método**</span><span class="sxs-lookup"><span data-stu-id="fae31-109">**Remove Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-remove)
--   [<span data-ttu-id="fae31-110">**Método RemoveAll**</span><span class="sxs-lookup"><span data-stu-id="fae31-110">**RemoveAll Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-removeall)
+-   [<span data-ttu-id="6adfa-106">**Método AddInterface**</span><span class="sxs-lookup"><span data-stu-id="6adfa-106">**AddInterface Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterface)
+-   [<span data-ttu-id="6adfa-107">**Método addinterfaces**</span><span class="sxs-lookup"><span data-stu-id="6adfa-107">**AddInterfaces Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterfaces)
+-   [<span data-ttu-id="6adfa-108">**Método getinterfacesvalue**</span><span class="sxs-lookup"><span data-stu-id="6adfa-108">**GetInterfaceValue Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-getinterfacevalue)
+-   [<span data-ttu-id="6adfa-109">**Remover método**</span><span class="sxs-lookup"><span data-stu-id="6adfa-109">**Remove Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-remove)
+-   [<span data-ttu-id="6adfa-110">**Método RemoveAll**</span><span class="sxs-lookup"><span data-stu-id="6adfa-110">**RemoveAll Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-removeall)
 
  
 

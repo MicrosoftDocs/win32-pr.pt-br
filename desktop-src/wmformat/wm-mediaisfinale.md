@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638640"
 ---
-# <a name="wmmediaisfinale"></a><span data-ttu-id="80ab9-104">WM/MediaIsFinale</span><span class="sxs-lookup"><span data-stu-id="80ab9-104">WM/MediaIsFinale</span></span>
+# <a name="wmmediaisfinale"></a><span data-ttu-id="7f34d-104">WM/MediaIsFinale</span><span class="sxs-lookup"><span data-stu-id="7f34d-104">WM/MediaIsFinale</span></span>
 
-<span data-ttu-id="80ab9-105">O atributo **WM/MediaIsFinale** indica se o conteúdo é o último de uma série.</span><span class="sxs-lookup"><span data-stu-id="80ab9-105">The **WM/MediaIsFinale** attribute indicates whether the content is the last of a series.</span></span>
+<span data-ttu-id="7f34d-105">O atributo **WM/MediaIsFinale** indica se o conteúdo é o último de uma série.</span><span class="sxs-lookup"><span data-stu-id="7f34d-105">The **WM/MediaIsFinale** attribute indicates whether the content is the last of a series.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="80ab9-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="80ab9-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="7f34d-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="7f34d-106">Global Constant</span></span>
 
-<span data-ttu-id="80ab9-107">g \_ wszWMMediaIsFinale</span><span class="sxs-lookup"><span data-stu-id="80ab9-107">g\_wszWMMediaIsFinale</span></span>
+<span data-ttu-id="7f34d-107">g \_ wszWMMediaIsFinale</span><span class="sxs-lookup"><span data-stu-id="7f34d-107">g\_wszWMMediaIsFinale</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="80ab9-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="80ab9-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="7f34d-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="7f34d-108">Data Type</span></span>
 
-<span data-ttu-id="80ab9-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="80ab9-109">**WMT\_TYPE\_BOOL**</span></span>
+<span data-ttu-id="7f34d-109">**WMT \_ tipo \_ bool**</span><span class="sxs-lookup"><span data-stu-id="7f34d-109">**WMT\_TYPE\_BOOL**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="80ab9-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="80ab9-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7f34d-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="7f34d-110">Remarks</span></span>
 
-<span data-ttu-id="80ab9-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="80ab9-111">This attribute is used for broadcast television.</span></span>
+<span data-ttu-id="7f34d-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="7f34d-111">This attribute is used for broadcast television.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="80ab9-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="80ab9-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7f34d-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="7f34d-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="80ab9-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="80ab9-113">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="7f34d-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="7f34d-113">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

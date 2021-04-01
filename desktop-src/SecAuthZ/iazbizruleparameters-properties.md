@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829171"
 ---
-# <a name="iazbizruleparameters-properties"></a><span data-ttu-id="26914-103">Propriedades de IAzBizRuleParameters</span><span class="sxs-lookup"><span data-stu-id="26914-103">IAzBizRuleParameters Properties</span></span>
+# <a name="iazbizruleparameters-properties"></a><span data-ttu-id="7351a-103">Propriedades de IAzBizRuleParameters</span><span class="sxs-lookup"><span data-stu-id="7351a-103">IAzBizRuleParameters Properties</span></span>
 
-<span data-ttu-id="26914-104">A interface [**IAzBizRuleParameters**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleparameters) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="26914-104">The [**IAzBizRuleParameters**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleparameters) interface exposes the following properties.</span></span>
+<span data-ttu-id="7351a-104">A interface [**IAzBizRuleParameters**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleparameters) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="7351a-104">The [**IAzBizRuleParameters**](/windows/desktop/api/Azroles/nn-azroles-iazbizruleparameters) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="26914-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="26914-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7351a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7351a-105">In this section</span></span>
 
--   [<span data-ttu-id="26914-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="26914-106">**Count Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-get_count)
+-   [<span data-ttu-id="7351a-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="7351a-106">**Count Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-get_count)
 
  
 

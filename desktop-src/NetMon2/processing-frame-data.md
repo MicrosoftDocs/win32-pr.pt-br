@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921470"
 ---
-# <a name="processing-frame-data"></a><span data-ttu-id="76d6c-103">Processando dados de quadro</span><span class="sxs-lookup"><span data-stu-id="76d6c-103">Processing Frame Data</span></span>
+# <a name="processing-frame-data"></a><span data-ttu-id="8a0c6-103">Processando dados de quadro</span><span class="sxs-lookup"><span data-stu-id="8a0c6-103">Processing Frame Data</span></span>
 
-<span data-ttu-id="76d6c-104">No código de exemplo a seguir, o monitor define um filtro de captura que especifica **somente IP** e os dados de protocolo solicitados.</span><span class="sxs-lookup"><span data-stu-id="76d6c-104">In the following example code, the monitor sets a capture filter that specifies **IP only** and requested protocol data.</span></span>
+<span data-ttu-id="8a0c6-104">No código de exemplo a seguir, o monitor define um filtro de captura que especifica **somente IP** e os dados de protocolo solicitados.</span><span class="sxs-lookup"><span data-stu-id="8a0c6-104">In the following example code, the monitor sets a capture filter that specifies **IP only** and requested protocol data.</span></span>
 
 
 ```C++

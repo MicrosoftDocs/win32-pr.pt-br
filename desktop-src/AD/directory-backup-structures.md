@@ -12,17 +12,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004938"
 ---
-# <a name="directory-backup-structures"></a><span data-ttu-id="d44cb-103">Estruturas de backup de diretório</span><span class="sxs-lookup"><span data-stu-id="d44cb-103">Directory Backup Structures</span></span>
+# <a name="directory-backup-structures"></a><span data-ttu-id="fa12f-103">Estruturas de backup de diretório</span><span class="sxs-lookup"><span data-stu-id="fa12f-103">Directory Backup Structures</span></span>
 
-<span data-ttu-id="d44cb-104">As funções de backup de diretório usam a seguinte estrutura:</span><span class="sxs-lookup"><span data-stu-id="d44cb-104">The directory backup functions use the following structure:</span></span>
+<span data-ttu-id="fa12f-104">As funções de backup de diretório usam a seguinte estrutura:</span><span class="sxs-lookup"><span data-stu-id="fa12f-104">The directory backup functions use the following structure:</span></span>
 
--   [<span data-ttu-id="d44cb-105">**\_RSTMAP EDB**</span><span class="sxs-lookup"><span data-stu-id="d44cb-105">**EDB\_RSTMAP**</span></span>](edb-rstmap.md)
+-   [<span data-ttu-id="fa12f-105">**\_RSTMAP EDB**</span><span class="sxs-lookup"><span data-stu-id="fa12f-105">**EDB\_RSTMAP**</span></span>](edb-rstmap.md)
 
-## <a name="related-topics"></a><span data-ttu-id="d44cb-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d44cb-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="fa12f-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="fa12f-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d44cb-107">Estruturas de Active Directory</span><span class="sxs-lookup"><span data-stu-id="d44cb-107">Active Directory Structures</span></span>](structures-in-active-directory-domain-services.md)
+[<span data-ttu-id="fa12f-107">Estruturas de Active Directory</span><span class="sxs-lookup"><span data-stu-id="fa12f-107">Active Directory Structures</span></span>](structures-in-active-directory-domain-services.md)
 </dt> </dl>
 
  

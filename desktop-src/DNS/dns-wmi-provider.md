@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160117"
 ---
-# <a name="dns-wmi-provider"></a><span data-ttu-id="e9667-104">Provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="e9667-104">DNS WMI Provider</span></span>
+# <a name="dns-wmi-provider"></a><span data-ttu-id="abb99-104">Provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="abb99-104">DNS WMI Provider</span></span>
 
-<span data-ttu-id="e9667-105">O provedor WMI de DNS permite que administradores e programadores configurem registros de recursos (RRs) do sistema de nomes de domínio (DNS) e servidores DNS usando Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="e9667-105">The DNS WMI Provider enables administrators and programmers to configure Domain Name System (DNS) resource records (RRs) and DNS Servers using Windows Management Instrumentation (WMI).</span></span>
+<span data-ttu-id="abb99-105">O provedor WMI de DNS permite que administradores e programadores configurem registros de recursos (RRs) do sistema de nomes de domínio (DNS) e servidores DNS usando Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="abb99-105">The DNS WMI Provider enables administrators and programmers to configure Domain Name System (DNS) resource records (RRs) and DNS Servers using Windows Management Instrumentation (WMI).</span></span>
 
  
 

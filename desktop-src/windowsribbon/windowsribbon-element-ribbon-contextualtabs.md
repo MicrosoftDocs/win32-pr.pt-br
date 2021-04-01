@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644408"
 ---
-# <a name="ribboncontextualtabs-property"></a><span data-ttu-id="8a712-104">Propriedade Ribbon. ContextualTabs</span><span class="sxs-lookup"><span data-stu-id="8a712-104">Ribbon.ContextualTabs property</span></span>
+# <a name="ribboncontextualtabs-property"></a><span data-ttu-id="74dc2-104">Propriedade Ribbon. ContextualTabs</span><span class="sxs-lookup"><span data-stu-id="74dc2-104">Ribbon.ContextualTabs property</span></span>
 
-<span data-ttu-id="8a712-105">Representa um contêiner para guias contextuais.</span><span class="sxs-lookup"><span data-stu-id="8a712-105">Represents a container for contextual tabs.</span></span>
+<span data-ttu-id="74dc2-105">Representa um contêiner para guias contextuais.</span><span class="sxs-lookup"><span data-stu-id="74dc2-105">Represents a container for contextual tabs.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="8a712-106">Uso</span><span class="sxs-lookup"><span data-stu-id="8a712-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="74dc2-106">Uso</span><span class="sxs-lookup"><span data-stu-id="74dc2-106">Usage</span></span>
 
 ``` syntax
 <Ribbon.ContextualTabs>
@@ -31,45 +31,45 @@ ms.locfileid: "103644408"
 </Ribbon.ContextualTabs>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="8a712-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="8a712-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="74dc2-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="74dc2-107">Attributes</span></span>
 
-<span data-ttu-id="8a712-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="8a712-108">There are no attributes.</span></span>
+<span data-ttu-id="74dc2-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="74dc2-108">There are no attributes.</span></span>
 
-## <a name="child-elements"></a><span data-ttu-id="8a712-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="8a712-109">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="74dc2-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="74dc2-109">Child elements</span></span>
 
 
 
-| <span data-ttu-id="8a712-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="8a712-110">Element</span></span>                                                       | <span data-ttu-id="8a712-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a712-111">Description</span></span>                                     |
+| <span data-ttu-id="74dc2-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="74dc2-110">Element</span></span>                                                       | <span data-ttu-id="74dc2-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="74dc2-111">Description</span></span>                                     |
 |---------------------------------------------------------------|-------------------------------------------------|
-| [<span data-ttu-id="8a712-112">**TabGroup**</span><span class="sxs-lookup"><span data-stu-id="8a712-112">**TabGroup**</span></span>](windowsribbon-element-tabgroup.md)<br/> | <span data-ttu-id="8a712-113">Deve ocorrer pelo menos uma vez</span><span class="sxs-lookup"><span data-stu-id="8a712-113">Must occur at least once</span></span><br/> <br/> |
+| [<span data-ttu-id="74dc2-112">**TabGroup**</span><span class="sxs-lookup"><span data-stu-id="74dc2-112">**TabGroup**</span></span>](windowsribbon-element-tabgroup.md)<br/> | <span data-ttu-id="74dc2-113">Deve ocorrer pelo menos uma vez</span><span class="sxs-lookup"><span data-stu-id="74dc2-113">Must occur at least once</span></span><br/> <br/> |
 
 
 
-## <a name="parent-elements"></a><span data-ttu-id="8a712-114">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="8a712-114">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="74dc2-114">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="74dc2-114">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="8a712-115">Elemento</span><span class="sxs-lookup"><span data-stu-id="8a712-115">Element</span></span>                                                   |
+| <span data-ttu-id="74dc2-115">Elemento</span><span class="sxs-lookup"><span data-stu-id="74dc2-115">Element</span></span>                                                   |
 |-----------------------------------------------------------|
-| [<span data-ttu-id="8a712-116">**Faixa de opções**</span><span class="sxs-lookup"><span data-stu-id="8a712-116">**Ribbon**</span></span>](windowsribbon-element-ribbon.md)<br/> |
+| [<span data-ttu-id="74dc2-116">**Faixa de opções**</span><span class="sxs-lookup"><span data-stu-id="74dc2-116">**Ribbon**</span></span>](windowsribbon-element-ribbon.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="8a712-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="8a712-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="74dc2-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="74dc2-117">Remarks</span></span>
 
-<span data-ttu-id="8a712-118">Opcional.</span><span class="sxs-lookup"><span data-stu-id="8a712-118">Optional.</span></span>
+<span data-ttu-id="74dc2-118">Opcional.</span><span class="sxs-lookup"><span data-stu-id="74dc2-118">Optional.</span></span>
 
-<span data-ttu-id="8a712-119">Pode ocorrer no máximo uma vez para cada [**faixa de faixas**](windowsribbon-element-ribbon.md).</span><span class="sxs-lookup"><span data-stu-id="8a712-119">May occur at most once for each [**Ribbon**](windowsribbon-element-ribbon.md).</span></span>
+<span data-ttu-id="74dc2-119">Pode ocorrer no máximo uma vez para cada [**faixa de faixas**](windowsribbon-element-ribbon.md).</span><span class="sxs-lookup"><span data-stu-id="74dc2-119">May occur at most once for each [**Ribbon**](windowsribbon-element-ribbon.md).</span></span>
 
-<span data-ttu-id="8a712-120">As guias contextuais são úteis para exibir a funcionalidade que é relevante apenas para um contexto de aplicativo específico, como uma guia de formatação de imagem em um editor de texto que é exibido somente quando uma imagem é realçada.</span><span class="sxs-lookup"><span data-stu-id="8a712-120">Contextual tabs are useful for displaying functionality that is relevant only to a specific application context, such as an image formatting tab in a text editor that is displayed only when an image is highlighted.</span></span> <span data-ttu-id="8a712-121">Normalmente, as guias contextuais não são visíveis até que um contexto de aplicativo específico ocorra e o aplicativo notifique a estrutura da faixa de faixas.</span><span class="sxs-lookup"><span data-stu-id="8a712-121">Typically, contextual tabs are not visible until a specific application context occurs, and the application notifies the Ribbon framework.</span></span>
+<span data-ttu-id="74dc2-120">As guias contextuais são úteis para exibir a funcionalidade que é relevante apenas para um contexto de aplicativo específico, como uma guia de formatação de imagem em um editor de texto que é exibido somente quando uma imagem é realçada.</span><span class="sxs-lookup"><span data-stu-id="74dc2-120">Contextual tabs are useful for displaying functionality that is relevant only to a specific application context, such as an image formatting tab in a text editor that is displayed only when an image is highlighted.</span></span> <span data-ttu-id="74dc2-121">Normalmente, as guias contextuais não são visíveis até que um contexto de aplicativo específico ocorra e o aplicativo notifique a estrutura da faixa de faixas.</span><span class="sxs-lookup"><span data-stu-id="74dc2-121">Typically, contextual tabs are not visible until a specific application context occurs, and the application notifies the Ribbon framework.</span></span>
 
-<span data-ttu-id="8a712-122">Quando exibidas, as guias contextuais são codificadas por cores para diferenciá-las das guias regulares.</span><span class="sxs-lookup"><span data-stu-id="8a712-122">When displayed, contextual tabs are color coded to differentiate them from regular tabs.</span></span>
+<span data-ttu-id="74dc2-122">Quando exibidas, as guias contextuais são codificadas por cores para diferenciá-las das guias regulares.</span><span class="sxs-lookup"><span data-stu-id="74dc2-122">When displayed, contextual tabs are color coded to differentiate them from regular tabs.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8a712-123">Exemplos</span><span class="sxs-lookup"><span data-stu-id="8a712-123">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="74dc2-123">Exemplos</span><span class="sxs-lookup"><span data-stu-id="74dc2-123">Examples</span></span>
 
-<span data-ttu-id="8a712-124">O exemplo a seguir demonstra a marcação básica para o elemento **Ribbon. ContextualTabs** .</span><span class="sxs-lookup"><span data-stu-id="8a712-124">The following example demonstrates the basic markup for the **Ribbon.ContextualTabs** element.</span></span>
+<span data-ttu-id="74dc2-124">O exemplo a seguir demonstra a marcação básica para o elemento **Ribbon. ContextualTabs** .</span><span class="sxs-lookup"><span data-stu-id="74dc2-124">The following example demonstrates the basic markup for the **Ribbon.ContextualTabs** element.</span></span>
 
-<span data-ttu-id="8a712-125">Esta seção de código mostra uma declaração de comando [**TabGroup**](windowsribbon-element-tabgroup.md) e duas declarações de comando de [**guia**](windowsribbon-element-tab.md) contextual.</span><span class="sxs-lookup"><span data-stu-id="8a712-125">This section of code shows a [**TabGroup**](windowsribbon-element-tabgroup.md) Command declaration and two contextual [**Tab**](windowsribbon-element-tab.md) Command declarations.</span></span>
+<span data-ttu-id="74dc2-125">Esta seção de código mostra uma declaração de comando [**TabGroup**](windowsribbon-element-tabgroup.md) e duas declarações de comando de [**guia**](windowsribbon-element-tab.md) contextual.</span><span class="sxs-lookup"><span data-stu-id="74dc2-125">This section of code shows a [**TabGroup**](windowsribbon-element-tabgroup.md) Command declaration and two contextual [**Tab**](windowsribbon-element-tab.md) Command declarations.</span></span>
 
 
 ```XML
@@ -87,7 +87,7 @@ ms.locfileid: "103644408"
 
 
 
-<span data-ttu-id="8a712-126">Esta seção de código mostra a declaração de controle **Ribbon. ContextualTabs** com um [**TabGroup**](windowsribbon-element-tabgroup.md) e dois controles de [**guia**](windowsribbon-element-tab.md) contextuais.</span><span class="sxs-lookup"><span data-stu-id="8a712-126">This section of code shows the **Ribbon.ContextualTabs** control declaration with a [**TabGroup**](windowsribbon-element-tabgroup.md) and two contextual [**Tab**](windowsribbon-element-tab.md) controls.</span></span>
+<span data-ttu-id="74dc2-126">Esta seção de código mostra a declaração de controle **Ribbon. ContextualTabs** com um [**TabGroup**](windowsribbon-element-tabgroup.md) e dois controles de [**guia**](windowsribbon-element-tab.md) contextuais.</span><span class="sxs-lookup"><span data-stu-id="74dc2-126">This section of code shows the **Ribbon.ContextualTabs** control declaration with a [**TabGroup**](windowsribbon-element-tabgroup.md) and two contextual [**Tab**](windowsribbon-element-tab.md) controls.</span></span>
 
 
 ```XML
@@ -129,22 +129,22 @@ ms.locfileid: "103644408"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="8a712-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8a712-127">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="74dc2-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="74dc2-127">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8a712-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="8a712-128">Requirement</span></span> | <span data-ttu-id="8a712-129">Valor</span><span class="sxs-lookup"><span data-stu-id="8a712-129">Value</span></span> |
+| <span data-ttu-id="74dc2-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="74dc2-128">Requirement</span></span> | <span data-ttu-id="74dc2-129">Valor</span><span class="sxs-lookup"><span data-stu-id="74dc2-129">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="8a712-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8a712-130">Minimum supported client</span></span><br/> | <span data-ttu-id="8a712-131">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="8a712-131">Windows 7 \[desktop apps only\]</span></span><br/>              |
-| <span data-ttu-id="8a712-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8a712-132">Minimum supported server</span></span><br/> | <span data-ttu-id="8a712-133">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="8a712-133">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="74dc2-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="74dc2-130">Minimum supported client</span></span><br/> | <span data-ttu-id="74dc2-131">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="74dc2-131">Windows 7 \[desktop apps only\]</span></span><br/>              |
+| <span data-ttu-id="74dc2-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="74dc2-132">Minimum supported server</span></span><br/> | <span data-ttu-id="74dc2-133">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="74dc2-133">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8a712-134">Consulte também</span><span class="sxs-lookup"><span data-stu-id="8a712-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74dc2-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="74dc2-134">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8a712-135">**Faixa de guia. guias**</span><span class="sxs-lookup"><span data-stu-id="8a712-135">**Ribbon.Tabs**</span></span>](windowsribbon-element-ribbon-tabs.md)
+[<span data-ttu-id="74dc2-135">**Faixa de guia. guias**</span><span class="sxs-lookup"><span data-stu-id="74dc2-135">**Ribbon.Tabs**</span></span>](windowsribbon-element-ribbon-tabs.md)
 </dt> </dl>
 
  

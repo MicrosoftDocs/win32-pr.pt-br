@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663126"
 ---
-# <a name="durablecommitcallback-constructor"></a><span data-ttu-id="4fa4a-103">Construtor DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="4fa4a-103">DurableCommitCallback constructor</span></span>
+# <a name="durablecommitcallback-constructor"></a><span data-ttu-id="35b4a-103">Construtor DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="35b4a-103">DurableCommitCallback constructor</span></span>
 
-<span data-ttu-id="4fa4a-104">Inicializa uma nova instância da classe [DurableCommitCallback](./durablecommitcallback-class.md) .</span><span class="sxs-lookup"><span data-stu-id="4fa4a-104">Initializes a new instance of the [DurableCommitCallback](./durablecommitcallback-class.md) class.</span></span>
+<span data-ttu-id="35b4a-104">Inicializa uma nova instância da classe [DurableCommitCallback](./durablecommitcallback-class.md) .</span><span class="sxs-lookup"><span data-stu-id="35b4a-104">Initializes a new instance of the [DurableCommitCallback](./durablecommitcallback-class.md) class.</span></span>
 
-<span data-ttu-id="4fa4a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="4fa4a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="4fa4a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="4fa4a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="35b4a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="35b4a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="35b4a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="35b4a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4fa4a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4fa4a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="35b4a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="35b4a-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -61,26 +61,26 @@ public DurableCommitCallback(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="4fa4a-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4fa4a-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="35b4a-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="35b4a-108">Parameters</span></span>
 
-  - <span data-ttu-id="4fa4a-109">instance</span><span class="sxs-lookup"><span data-stu-id="4fa4a-109">instance</span></span>  
-    <span data-ttu-id="4fa4a-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="4fa4a-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
+  - <span data-ttu-id="35b4a-109">instance</span><span class="sxs-lookup"><span data-stu-id="35b4a-109">instance</span></span>  
+    <span data-ttu-id="35b4a-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="35b4a-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
     
-    <span data-ttu-id="4fa4a-111">A instância com a qual associar o retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="4fa4a-111">The instance with which to associate the callback.</span></span>
+    <span data-ttu-id="35b4a-111">A instância com a qual associar o retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="35b4a-111">The instance with which to associate the callback.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="4fa4a-112">wrappedCallback</span><span class="sxs-lookup"><span data-stu-id="4fa4a-112">wrappedCallback</span></span>  
-    <span data-ttu-id="4fa4a-113">Tipo: [Microsoft.ISAM.ESENT.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)</span><span class="sxs-lookup"><span data-stu-id="4fa4a-113">Type: [Microsoft.Isam.Esent.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)</span></span>  
+  - <span data-ttu-id="35b4a-112">wrappedCallback</span><span class="sxs-lookup"><span data-stu-id="35b4a-112">wrappedCallback</span></span>  
+    <span data-ttu-id="35b4a-113">Tipo: [Microsoft.ISAM.ESENT.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)</span><span class="sxs-lookup"><span data-stu-id="35b4a-113">Type: [Microsoft.Isam.Esent.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)</span></span>  
     
-    <span data-ttu-id="4fa4a-114">O retorno de chamada de código gerenciado a ser chamado.</span><span class="sxs-lookup"><span data-stu-id="4fa4a-114">The managed code callback to call.</span></span>
+    <span data-ttu-id="35b4a-114">O retorno de chamada de código gerenciado a ser chamado.</span><span class="sxs-lookup"><span data-stu-id="35b4a-114">The managed code callback to call.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4fa4a-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="4fa4a-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="35b4a-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="35b4a-115">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="4fa4a-116">Referência</span><span class="sxs-lookup"><span data-stu-id="4fa4a-116">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="35b4a-116">Referência</span><span class="sxs-lookup"><span data-stu-id="35b4a-116">Reference</span></span>
 
-[<span data-ttu-id="4fa4a-117">Classe DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="4fa4a-117">DurableCommitCallback class</span></span>](./durablecommitcallback-class.md)
+[<span data-ttu-id="35b4a-117">Classe DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="35b4a-117">DurableCommitCallback class</span></span>](./durablecommitcallback-class.md)
 
-[<span data-ttu-id="4fa4a-118">Membros do DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="4fa4a-118">DurableCommitCallback members</span></span>](./durablecommitcallback-members.md)
+[<span data-ttu-id="35b4a-118">Membros do DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="35b4a-118">DurableCommitCallback members</span></span>](./durablecommitcallback-members.md)
 
-[<span data-ttu-id="4fa4a-119">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="4fa4a-119">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="35b4a-119">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="35b4a-119">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

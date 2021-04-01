@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829327"
 ---
-# <a name="iazroleassignment-methods"></a><span data-ttu-id="bae27-103">Métodos IAzRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="bae27-103">IAzRoleAssignment Methods</span></span>
+# <a name="iazroleassignment-methods"></a><span data-ttu-id="d243e-103">Métodos IAzRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="d243e-103">IAzRoleAssignment Methods</span></span>
 
-<span data-ttu-id="bae27-104">A interface [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="bae27-104">The [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) interface exposes the following methods.</span></span>
+<span data-ttu-id="d243e-104">A interface [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="d243e-104">The [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="bae27-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bae27-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="d243e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="d243e-105">In this section</span></span>
 
--   [<span data-ttu-id="bae27-106">**Método AddRoleDefinition**</span><span class="sxs-lookup"><span data-stu-id="bae27-106">**AddRoleDefinition Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-addroledefinition)
--   [<span data-ttu-id="bae27-107">**Método DeleteRoleDefinition**</span><span class="sxs-lookup"><span data-stu-id="bae27-107">**DeleteRoleDefinition Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-deleteroledefinition)
+-   [<span data-ttu-id="d243e-106">**Método AddRoleDefinition**</span><span class="sxs-lookup"><span data-stu-id="d243e-106">**AddRoleDefinition Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-addroledefinition)
+-   [<span data-ttu-id="d243e-107">**Método DeleteRoleDefinition**</span><span class="sxs-lookup"><span data-stu-id="d243e-107">**DeleteRoleDefinition Method**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-deleteroledefinition)
 
  
 

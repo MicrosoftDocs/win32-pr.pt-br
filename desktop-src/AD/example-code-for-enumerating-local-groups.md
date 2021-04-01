@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640407"
 ---
-# <a name="example-code-for-enumerating-local-groups"></a><span data-ttu-id="1a711-104">Exemplo de código para enumeração de grupos locais</span><span class="sxs-lookup"><span data-stu-id="1a711-104">Example Code for Enumerating Local Groups</span></span>
+# <a name="example-code-for-enumerating-local-groups"></a><span data-ttu-id="50bdc-104">Exemplo de código para enumeração de grupos locais</span><span class="sxs-lookup"><span data-stu-id="50bdc-104">Example Code for Enumerating Local Groups</span></span>
 
-<span data-ttu-id="1a711-105">Este tópico inclui um exemplo de código que enumera todos os objetos de uma classe especificada.</span><span class="sxs-lookup"><span data-stu-id="1a711-105">This topic includes a code example that enumerates all objects of a specified class.</span></span>
+<span data-ttu-id="50bdc-105">Este tópico inclui um exemplo de código que enumera todos os objetos de uma classe especificada.</span><span class="sxs-lookup"><span data-stu-id="50bdc-105">This topic includes a code example that enumerates all objects of a specified class.</span></span>
 
-<span data-ttu-id="1a711-106">O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="1a711-106">The following C++ code example enumerates all objects of a specified class using ADSI.</span></span>
+<span data-ttu-id="50bdc-106">O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada usando ADSI.</span><span class="sxs-lookup"><span data-stu-id="50bdc-106">The following C++ code example enumerates all objects of a specified class using ADSI.</span></span>
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT ListMembersWithWinNtProvider(LPWSTR pwszComputer,LPWSTR pwszClass, LPWST
 
 
 
-<span data-ttu-id="1a711-107">O exemplo de código a seguir Visual Basic enumera os grupos locais usando as interfaces [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) e [**IADs**](/windows/desktop/api/iads/nn-iads-iadsgroup) .</span><span class="sxs-lookup"><span data-stu-id="1a711-107">The following Visual Basic code example enumerates local groups using the [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) and [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) interfaces.</span></span>
+<span data-ttu-id="50bdc-107">O exemplo de código a seguir Visual Basic enumera os grupos locais usando as interfaces [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) e [**IADs**](/windows/desktop/api/iads/nn-iads-iadsgroup) .</span><span class="sxs-lookup"><span data-stu-id="50bdc-107">The following Visual Basic code example enumerates local groups using the [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) and [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) interfaces.</span></span>
 
 
 ```VB

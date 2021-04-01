@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104159794"
 ---
-# <a name="itssbplugin-methods"></a><span data-ttu-id="0f0c0-103">Métodos ITsSbPlugin</span><span class="sxs-lookup"><span data-stu-id="0f0c0-103">ITsSbPlugin Methods</span></span>
+# <a name="itssbplugin-methods"></a><span data-ttu-id="0b787-103">Métodos ITsSbPlugin</span><span class="sxs-lookup"><span data-stu-id="0b787-103">ITsSbPlugin Methods</span></span>
 
-<span data-ttu-id="0f0c0-104">A interface [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0f0c0-104">The [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin) interface exposes the following methods.</span></span>
+<span data-ttu-id="0b787-104">A interface [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0b787-104">The [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="0f0c0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0f0c0-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0b787-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0b787-105">In this section</span></span>
 
--   [<span data-ttu-id="0f0c0-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="0f0c0-106">**Initialize method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplugin-initialize)
--   [<span data-ttu-id="0f0c0-107">**Método Terminate**</span><span class="sxs-lookup"><span data-stu-id="0f0c0-107">**Terminate method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplugin-terminate)
+-   [<span data-ttu-id="0b787-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="0b787-106">**Initialize method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplugin-initialize)
+-   [<span data-ttu-id="0b787-107">**Método Terminate**</span><span class="sxs-lookup"><span data-stu-id="0b787-107">**Terminate method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplugin-terminate)
 
  
 

@@ -11,30 +11,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641345"
 ---
-# <a name="vml-grouping-attribute"></a><span data-ttu-id="4617e-103">Atributo de agrupamento de VML</span><span class="sxs-lookup"><span data-stu-id="4617e-103">VML Grouping Attribute</span></span>
+# <a name="vml-grouping-attribute"></a><span data-ttu-id="af337-103">Atributo de agrupamento de VML</span><span class="sxs-lookup"><span data-stu-id="af337-103">VML Grouping Attribute</span></span>
 
-<span data-ttu-id="4617e-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="4617e-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="4617e-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="4617e-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="af337-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="af337-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="af337-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="af337-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="4617e-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="4617e-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="4617e-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="4617e-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="4617e-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="4617e-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="4617e-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="4617e-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="af337-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="af337-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="af337-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="af337-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="af337-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="af337-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="af337-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="af337-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="4617e-110">Determina se as formas podem ser agrupadas em um editor.</span><span class="sxs-lookup"><span data-stu-id="4617e-110">Determines whether shapes can be grouped in an editor.</span></span> <span data-ttu-id="4617e-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="4617e-111">Read/write.</span></span> <span data-ttu-id="4617e-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="4617e-112">**VgTriState**.</span></span>
+<span data-ttu-id="af337-110">Determina se as formas podem ser agrupadas em um editor.</span><span class="sxs-lookup"><span data-stu-id="af337-110">Determines whether shapes can be grouped in an editor.</span></span> <span data-ttu-id="af337-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="af337-111">Read/write.</span></span> <span data-ttu-id="af337-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="af337-112">**VgTriState**.</span></span>
 
-<span data-ttu-id="4617e-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="4617e-113">**Applies To**</span></span>
+<span data-ttu-id="af337-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="af337-113">**Applies To**</span></span>
 
-[<span data-ttu-id="4617e-114">Bloqueios</span><span class="sxs-lookup"><span data-stu-id="4617e-114">Locks</span></span>](msdn-online-vml-locks-element.md)
+[<span data-ttu-id="af337-114">Bloqueios</span><span class="sxs-lookup"><span data-stu-id="af337-114">Locks</span></span>](msdn-online-vml-locks-element.md)
 
-<span data-ttu-id="4617e-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="4617e-115">**Tag Syntax**</span></span>
+<span data-ttu-id="af337-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="af337-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="4617e-116"><o: agrupamento de *elementos* = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="4617e-116"><o: *element* grouping=" *expression* "></span></span>
+<span data-ttu-id="af337-116"><o: agrupamento de *elementos* = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="af337-116"><o: *element* grouping=" *expression* "></span></span>
 
-<span data-ttu-id="4617e-117">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="4617e-117">**Remarks**</span></span>
+<span data-ttu-id="af337-117">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="af337-117">**Remarks**</span></span>
 
-<span data-ttu-id="4617e-118">Se **for true**, a opção de agrupamento em um editor ficará esmaecida, indicando que as formas não podem ser agrupadas.</span><span class="sxs-lookup"><span data-stu-id="4617e-118">If **True**, the grouping option in an editor will be dimmed, indicating that shapes may not be grouped.</span></span> <span data-ttu-id="4617e-119">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="4617e-119">The default is **False**.</span></span>
+<span data-ttu-id="af337-118">Se **for true**, a opção de agrupamento em um editor ficará esmaecida, indicando que as formas não podem ser agrupadas.</span><span class="sxs-lookup"><span data-stu-id="af337-118">If **True**, the grouping option in an editor will be dimmed, indicating that shapes may not be grouped.</span></span> <span data-ttu-id="af337-119">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="af337-119">The default is **False**.</span></span>
 
-<span data-ttu-id="4617e-120">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="4617e-120">*Microsoft Office Extensions Attribute*</span></span>
+<span data-ttu-id="af337-120">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="af337-120">*Microsoft Office Extensions Attribute*</span></span>
 
  
 

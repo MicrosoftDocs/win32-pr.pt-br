@@ -12,18 +12,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638594"
 ---
-# <a name="remotefx-media-redirection-api-structures"></a><span data-ttu-id="e721b-103">Estruturas de API de redirecionamento de mídia do RemoteFX</span><span class="sxs-lookup"><span data-stu-id="e721b-103">RemoteFX Media Redirection API structures</span></span>
+# <a name="remotefx-media-redirection-api-structures"></a><span data-ttu-id="7ef80-103">Estruturas de API de redirecionamento de mídia do RemoteFX</span><span class="sxs-lookup"><span data-stu-id="7ef80-103">RemoteFX Media Redirection API structures</span></span>
 
-<span data-ttu-id="e721b-104">A API de redirecionamento de mídia do RemoteFX define as estruturas a seguir.</span><span class="sxs-lookup"><span data-stu-id="e721b-104">The RemoteFX media redirection API defines the following structures.</span></span>
+<span data-ttu-id="7ef80-104">A API de redirecionamento de mídia do RemoteFX define as estruturas a seguir.</span><span class="sxs-lookup"><span data-stu-id="7ef80-104">The RemoteFX media redirection API defines the following structures.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e721b-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e721b-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7ef80-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7ef80-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e721b-106">**\_estatísticas do renderizador de bitmap \_**</span><span class="sxs-lookup"><span data-stu-id="e721b-106">**BITMAP\_RENDERER\_STATISTICS**</span></span>](/windows/desktop/api/tsvirtualchannels/ns-tsvirtualchannels-bitmap_renderer_statistics)
+[<span data-ttu-id="7ef80-106">**\_estatísticas do renderizador de bitmap \_**</span><span class="sxs-lookup"><span data-stu-id="7ef80-106">**BITMAP\_RENDERER\_STATISTICS**</span></span>](/windows/desktop/api/tsvirtualchannels/ns-tsvirtualchannels-bitmap_renderer_statistics)
 </dt> <dd>
 
-<span data-ttu-id="e721b-107">Contém estatísticas para o renderizador de bitmap de redirecionamento de mídia do RemoteFX.</span><span class="sxs-lookup"><span data-stu-id="e721b-107">Contains statistics for the RemoteFX media redirection bitmap renderer.</span></span>
+<span data-ttu-id="7ef80-107">Contém estatísticas para o renderizador de bitmap de redirecionamento de mídia do RemoteFX.</span><span class="sxs-lookup"><span data-stu-id="7ef80-107">Contains statistics for the RemoteFX media redirection bitmap renderer.</span></span>
 
 </dd> </dl>
 

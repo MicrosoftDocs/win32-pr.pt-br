@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641193"
 ---
-# <a name="ui_pkey_fontproperties_backgroundcolor"></a><span data-ttu-id="091b2-103">Interface do usuário \_ PKEY \_ fontproperties \_ BackgroundColor</span><span class="sxs-lookup"><span data-stu-id="091b2-103">UI\_PKEY\_FontProperties\_BackgroundColor</span></span>
+# <a name="ui_pkey_fontproperties_backgroundcolor"></a><span data-ttu-id="e77c3-103">Interface do usuário \_ PKEY \_ fontproperties \_ BackgroundColor</span><span class="sxs-lookup"><span data-stu-id="e77c3-103">UI\_PKEY\_FontProperties\_BackgroundColor</span></span>
 
-<span data-ttu-id="091b2-104">Identifica a \_ \_ \_ Propriedade PropertyProperties PKEY de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="091b2-104">Identifies the UI\_PKEY\_FontProperties\_BackgroundColor property.</span></span>
+<span data-ttu-id="e77c3-104">Identifica a \_ \_ \_ Propriedade PropertyProperties PKEY de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="e77c3-104">Identifies the UI\_PKEY\_FontProperties\_BackgroundColor property.</span></span>
 
 ```
 propertyDescription
@@ -25,23 +25,23 @@ propertyDescription
       type = COLORREF
 ```
 
-## <a name="remarks"></a><span data-ttu-id="091b2-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="091b2-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e77c3-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="e77c3-105">Remarks</span></span>
 
-<span data-ttu-id="091b2-106">A interface do usuário \_ PKEY \_ fontproperties \_ backgroundColor é usada por um aplicativo, em conjunto com a [interface do usuário \_ PKEY \_ FontProperty \_ backgroundcolortype](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md), para consultar as configurações da Galeria de **cores de realce de texto** .</span><span class="sxs-lookup"><span data-stu-id="091b2-106">UI\_PKEY\_FontProperties\_BackgroundColor is used by an application, in conjunction with [UI\_PKEY\_FontProperties\_BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md), to query **Text highlight color** gallery settings.</span></span>
+<span data-ttu-id="e77c3-106">A interface do usuário \_ PKEY \_ fontproperties \_ backgroundColor é usada por um aplicativo, em conjunto com a [interface do usuário \_ PKEY \_ FontProperty \_ backgroundcolortype](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md), para consultar as configurações da Galeria de **cores de realce de texto** .</span><span class="sxs-lookup"><span data-stu-id="e77c3-106">UI\_PKEY\_FontProperties\_BackgroundColor is used by an application, in conjunction with [UI\_PKEY\_FontProperties\_BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md), to query **Text highlight color** gallery settings.</span></span>
 
-<span data-ttu-id="091b2-107">O valor padrão é `0x00000000`.</span><span class="sxs-lookup"><span data-stu-id="091b2-107">The default value is `0x00000000`.</span></span>
+<span data-ttu-id="e77c3-107">O valor padrão é `0x00000000`.</span><span class="sxs-lookup"><span data-stu-id="e77c3-107">The default value is `0x00000000`.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="091b2-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="091b2-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e77c3-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e77c3-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="091b2-109">Propriedades de controle de fonte</span><span class="sxs-lookup"><span data-stu-id="091b2-109">Font Control Properties</span></span>](windowsribbon-reference-properties-fontcontrol.md)
+[<span data-ttu-id="e77c3-109">Propriedades de controle de fonte</span><span class="sxs-lookup"><span data-stu-id="e77c3-109">Font Control Properties</span></span>](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="091b2-110">COLORREF</span><span class="sxs-lookup"><span data-stu-id="091b2-110">COLORREF</span></span>](../gdi/colorref.md)
+[<span data-ttu-id="e77c3-110">COLORREF</span><span class="sxs-lookup"><span data-stu-id="e77c3-110">COLORREF</span></span>](../gdi/colorref.md)
 </dt> <dt>
 
-[<span data-ttu-id="091b2-111">Controle de fonte</span><span class="sxs-lookup"><span data-stu-id="091b2-111">Font Control</span></span>](windowsribbon-controls-fontcontrol.md)
+[<span data-ttu-id="e77c3-111">Controle de fonte</span><span class="sxs-lookup"><span data-stu-id="e77c3-111">Font Control</span></span>](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
  

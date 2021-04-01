@@ -11,35 +11,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641407"
 ---
-# <a name="treetoodeep"></a><span data-ttu-id="3fa02-103">TreeTooDeep</span><span class="sxs-lookup"><span data-stu-id="3fa02-103">TreeTooDeep</span></span>
+# <a name="treetoodeep"></a><span data-ttu-id="0bf3e-103">TreeTooDeep</span><span class="sxs-lookup"><span data-stu-id="0bf3e-103">TreeTooDeep</span></span>
 
-## <a name="text"></a><span data-ttu-id="3fa02-104">Texto</span><span class="sxs-lookup"><span data-stu-id="3fa02-104">Text</span></span>
+## <a name="text"></a><span data-ttu-id="0bf3e-104">Texto</span><span class="sxs-lookup"><span data-stu-id="0bf3e-104">Text</span></span>
 
-<span data-ttu-id="3fa02-105">A árvore tem {0} níveis de profundidade.</span><span class="sxs-lookup"><span data-stu-id="3fa02-105">Tree is {0} levels deep.</span></span>
+<span data-ttu-id="0bf3e-105">A árvore tem {0} níveis de profundidade.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-105">Tree is {0} levels deep.</span></span>
 
-## <a name="type"></a><span data-ttu-id="3fa02-106">Type</span><span class="sxs-lookup"><span data-stu-id="3fa02-106">Type</span></span>
+## <a name="type"></a><span data-ttu-id="0bf3e-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="0bf3e-106">Type</span></span>
 
-<span data-ttu-id="3fa02-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="3fa02-107">Warning</span></span>
+<span data-ttu-id="0bf3e-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="0bf3e-107">Warning</span></span>
 
-## <a name="description"></a><span data-ttu-id="3fa02-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="3fa02-108">Description</span></span>
+## <a name="description"></a><span data-ttu-id="0bf3e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0bf3e-108">Description</span></span>
 
-<span data-ttu-id="3fa02-109">A árvore de elementos pode ser muito profunda.</span><span class="sxs-lookup"><span data-stu-id="3fa02-109">The element tree might be too deep.</span></span>
+<span data-ttu-id="0bf3e-109">A árvore de elementos pode ser muito profunda.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-109">The element tree might be too deep.</span></span>
 
-<span data-ttu-id="3fa02-110">Esse problema causa problemas para as pessoas que contam com um leitor de tela e um teclado para navegação porque a passagem de elementos parecerá ser demorada e pode parecer cíclica.</span><span class="sxs-lookup"><span data-stu-id="3fa02-110">This issue causes problems for people who rely on a screen-reader and keyboard for navigation because traversing elements will seem to take a long time and may appear cyclic.</span></span>
+<span data-ttu-id="0bf3e-110">Esse problema causa problemas para as pessoas que contam com um leitor de tela e um teclado para navegação porque a passagem de elementos parecerá ser demorada e pode parecer cíclica.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-110">This issue causes problems for people who rely on a screen-reader and keyboard for navigation because traversing elements will seem to take a long time and may appear cyclic.</span></span>
 
-## <a name="possible-causes"></a><span data-ttu-id="3fa02-111">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="3fa02-111">Possible causes</span></span>
+## <a name="possible-causes"></a><span data-ttu-id="0bf3e-111">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="0bf3e-111">Possible causes</span></span>
 
--   <span data-ttu-id="3fa02-112">Vários elementos ou seus pais são controles personalizados que não implementam a Tabulação corretamente.</span><span class="sxs-lookup"><span data-stu-id="3fa02-112">Multiple elements or their parents are custom controls that do not implement tabbing correctly.</span></span> <span data-ttu-id="3fa02-113">Por exemplo, a propriedade de estado MSAA não é atualizada corretamente.</span><span class="sxs-lookup"><span data-stu-id="3fa02-113">For example, the MSAA State property is not updated correctly.</span></span>
--   <span data-ttu-id="3fa02-114">A interface do usuário do aplicativo é excessivamente complexa.</span><span class="sxs-lookup"><span data-stu-id="3fa02-114">The application UI is overly complex.</span></span>
+-   <span data-ttu-id="0bf3e-112">Vários elementos ou seus pais são controles personalizados que não implementam a Tabulação corretamente.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-112">Multiple elements or their parents are custom controls that do not implement tabbing correctly.</span></span> <span data-ttu-id="0bf3e-113">Por exemplo, a propriedade de estado MSAA não é atualizada corretamente.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-113">For example, the MSAA State property is not updated correctly.</span></span>
+-   <span data-ttu-id="0bf3e-114">A interface do usuário do aplicativo é excessivamente complexa.</span><span class="sxs-lookup"><span data-stu-id="0bf3e-114">The application UI is overly complex.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="3fa02-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3fa02-115">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="0bf3e-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0bf3e-115">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3fa02-116">Diretrizes para design de interface de usuário de teclado</span><span class="sxs-lookup"><span data-stu-id="3fa02-116">Guidelines for Keyboard User Interface Design</span></span>](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+[<span data-ttu-id="0bf3e-116">Diretrizes para design de interface de usuário de teclado</span><span class="sxs-lookup"><span data-stu-id="0bf3e-116">Guidelines for Keyboard User Interface Design</span></span>](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
 </dt> <dt>
 
-[<span data-ttu-id="3fa02-117">Diretrizes de interação da experiência do usuário do Windows – teclado</span><span class="sxs-lookup"><span data-stu-id="3fa02-117">Windows User Experience Interaction Guidelines - Keyboard</span></span>](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)
+[<span data-ttu-id="0bf3e-117">Diretrizes de interação da experiência do usuário do Windows – teclado</span><span class="sxs-lookup"><span data-stu-id="0bf3e-117">Windows User Experience Interaction Guidelines - Keyboard</span></span>](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)
 </dt> </dl>
 
  
