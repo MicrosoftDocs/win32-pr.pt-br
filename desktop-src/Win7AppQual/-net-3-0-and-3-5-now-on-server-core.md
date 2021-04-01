@@ -28,7 +28,7 @@ ms.locfileid: "103829511"
 
 
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 A opção de instalação Server Core para o Windows Server 2008 R2 agora inclui um subconjunto do .NET Framework 3,0 e 3,5, especificamente WCF, WF, LINQ.
 

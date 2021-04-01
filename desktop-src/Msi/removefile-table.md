@@ -70,7 +70,7 @@ Deve ser um dos valores a seguir.
 
 
 
-| Constante                                | Hexadecimal | Decimal | Descrição                                                                                                   |
+| Constante                                | Hexadecimal | Decimal | Description                                                                                                   |
 |-----------------------------------------|-------------|---------|---------------------------------------------------------------------------------------------------------------|
 | **msidbRemoveFileInstallModeOnInstall** | 0x001       | 1       | Remover somente quando o componente associado estiver sendo instalado (msiInstallStateLocal ou msiInstallStateSource). |
 | **msidbRemoveFileInstallModeOnRemove**  | 0x002       | 2       | Remover somente quando o componente associado estiver sendo removido (msiInstallStateAbsent).                           |

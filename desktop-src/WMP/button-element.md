@@ -50,7 +50,7 @@ Botões predefinidos são elementos de **botão** normal com várias configuraç
 
 
 
-| BOTÃO predefinido                    | Descrição                                                                        |
+| BOTÃO predefinido                    | Description                                                                        |
 |--------------------------------------|------------------------------------------------------------------------------------|
 | [BOTÃOFECHAR](closebutton.md)       | Um **botão** usado para fechar o Player.                                             |
 | [FFWDBUTTON](ffwdbutton.md)         | Um **botão** com uma chamada interna para **Player. Controls. Fastforward** quando clicado. |

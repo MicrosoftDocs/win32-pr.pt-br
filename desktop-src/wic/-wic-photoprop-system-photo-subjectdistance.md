@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Sim
+Yes
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
