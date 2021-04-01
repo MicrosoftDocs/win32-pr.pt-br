@@ -31,7 +31,7 @@ typedef struct _ODJ_POLICY_DNS_DOMAIN_INFO
 
 ## <a name="members"></a>Membros
 
-### <a name="name"></a>Name
+### <a name="name"></a>Nome
 
 Deve ser definido como um nome de domínio NetBIOS.
 
@@ -51,7 +51,7 @@ Deve ser definido como o GUID de domínio.
 
 Deve ser definido como o SID do domínio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [**Definições de IDL de ingresso no domínio offline**](odj-idl.md)
 

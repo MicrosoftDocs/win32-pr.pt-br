@@ -95,7 +95,7 @@ As caixas de combinação dão suporte às seguintes propriedades de [**IAccessi
 
 -   [**obter \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)– a tabela a seguir mostra a propriedade **Name** para diferentes partes de uma caixa de combinação. 
 
-    | Parte da caixa de combinação   | Name                                                           |
+    | Parte da caixa de combinação   | Nome                                                           |
     |------------------|----------------------------------------------------------------|
     | Janela de caixa de combinação | Controle de texto estático usado como um rótulo                            |
     | Controle de edição     | Controle de texto estático usado como um rótulo                            |

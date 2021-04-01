@@ -65,7 +65,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | o *tamanho* era negativo.<br/>                                                                                                       |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada enquanto o modo de renderização era GL \_ Select.<br/>                                                              |

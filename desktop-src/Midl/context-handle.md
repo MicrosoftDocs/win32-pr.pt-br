@@ -200,7 +200,7 @@ void __RPC_USER PCONTEXT_HANDLE_TYPE_rundown (PCONTEXT_HANDLE_TYPE);
 [Rotina de execução de contexto de servidor](/windows/desktop/Rpc/server-context-run-down-routine)
 </dt> <dt>
 
-[**Strings**](string.md)
+[**string**](string.md)
 </dt> <dt>
 
 [**transmitir \_ como**](transmit-as.md)

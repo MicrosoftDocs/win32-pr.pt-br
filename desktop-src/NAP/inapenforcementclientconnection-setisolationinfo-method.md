@@ -60,7 +60,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 
 
-| Código de retorno                                                                                     | Description                                                        |
+| Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
@@ -88,7 +88,7 @@ Essas informações são definidas pelo NapAgent após o processamento de um SoH
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

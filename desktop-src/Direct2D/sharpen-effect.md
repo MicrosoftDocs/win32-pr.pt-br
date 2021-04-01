@@ -20,7 +20,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Sharpen.
 -   [Imagem de exemplo](#example-image)
 -   [Código de exemplo](#sample-code)
 -   [Propriedades do efeito](#effect-properties)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagem de exemplo

@@ -71,7 +71,7 @@ Observe que não é seguro pressupor que isso apenas desaloque memória. Por exe
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

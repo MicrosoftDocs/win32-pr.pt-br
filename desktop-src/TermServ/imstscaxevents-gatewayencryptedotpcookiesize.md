@@ -32,7 +32,7 @@ Especifica ou recupera o tamanho do cookie de senha de uso único (OTP) criptogr
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -65,7 +65,7 @@ Especifica ou recupera o tamanho do cookie de senha de uso único (OTP) criptogr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

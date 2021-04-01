@@ -3213,7 +3213,7 @@ aProps (variável)
 
 
 
-| Valor/GUID                                                                              | Name                                             |
+| Valor/GUID                                                                              | Nome                                             |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------|
 | DBPROPSET \_ FSCIFRMWRK \_ ext<br/> {A9BD1526-6A80-11D0-8C9D-0020AF1D740E}<br/>   | Conjunto de propriedades da estrutura de índice de conteúdo do sistema de arquivos |
 | DBPROPSET \_ QUERYEXT<br/> {A7AC77ED-F8D7-11CE-A798-0020F8008025}<br/>          | Conjunto de propriedades de extensão de consulta                     |

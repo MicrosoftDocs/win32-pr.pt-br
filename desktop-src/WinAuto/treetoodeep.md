@@ -17,7 +17,7 @@ ms.locfileid: "103641407"
 
 A árvore tem {0} níveis de profundidade.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 

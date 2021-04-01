@@ -23,7 +23,7 @@ Esta seção descreve as funções de cadeia de caracteres e explica como usá-l
 
 
 
-| Name                                     | Descrição                                             |
+| Nome                                     | Descrição                                             |
 |------------------------------------------|---------------------------------------------------------|
 | [Sobre cadeias de caracteres](about-strings.md)       | Discute as funções de cadeia de caracteres.<br/>              |
 | [Sobre o strsafe. h](strsafe-ovw.md)       | Discute as funções de cadeia de caracteres no strsafe. h.<br/> |
@@ -44,7 +44,7 @@ Esta seção descreve as funções de cadeia de caracteres e explica como usá-l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>
@@ -189,7 +189,7 @@ Para compatibilidade com Unicode, use <a href="/windows/desktop/api/stringapiset
 
 
 
-| Name                                             | Descrição                                                                                      |
+| Nome                                             | Descrição                                                                                      |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [**StringCbCat**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbcata)               | Concatena uma cadeia de caracteres a outra cadeia de caracteres.<br/>                                            |
 | [**StringCbCatEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbcatexa)           | Concatena uma cadeia de caracteres a outra cadeia de caracteres.<br/>                                            |

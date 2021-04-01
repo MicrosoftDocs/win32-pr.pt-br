@@ -48,7 +48,7 @@ Os elementos [**config**](eaphostconfigschema-config-eaphostconfig-element.md) e
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

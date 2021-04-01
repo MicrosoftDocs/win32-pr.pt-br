@@ -140,7 +140,7 @@ Esta seção de código mostra a declaração de controle **Ribbon. ContextualTa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

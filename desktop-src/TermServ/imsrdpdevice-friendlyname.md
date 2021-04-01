@@ -64,7 +64,7 @@ Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

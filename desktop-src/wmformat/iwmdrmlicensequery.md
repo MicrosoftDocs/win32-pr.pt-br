@@ -53,7 +53,7 @@ A interface **IWMDRMLicenseQuery** tem esses métodos.
 
 Os métodos de **IWMDRMLicenseQuery** não fornecem informações sobre licenças individuais. Em vez disso, os dados de licença são agregados pelo subsistema DRM antes que os resultados da consulta sejam retornados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

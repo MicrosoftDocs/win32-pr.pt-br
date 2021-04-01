@@ -48,7 +48,7 @@ Altera ou anima o valor de um elemento da matriz dessa transformação 2D.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

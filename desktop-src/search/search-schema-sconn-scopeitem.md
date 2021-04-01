@@ -15,7 +15,7 @@ ms.locfileid: "104090042"
 
 O <scopeItem> elemento representa uma única entrada na tabela de escopo de exclusão/inclusão. <scopeItem> estende o tipo de shellLinkType padrão adicionando três novos elementos que controlam a inclusão e a exclusão de pastas, controlam a profundidade dos resultados e especificam o local do escopo. Se o <scope> elemento existir, esse elemento será necessário. Ele tem três elementos filho e nenhum atributo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```

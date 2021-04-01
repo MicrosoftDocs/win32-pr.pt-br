@@ -27,7 +27,7 @@ ms.locfileid: "103644428"
 
 Para scripts, Obtém ou define o tipo de Terminal Server alteração de sessão que dispararia um lançamento de tarefa.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

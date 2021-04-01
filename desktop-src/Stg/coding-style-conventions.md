@@ -32,7 +32,7 @@ A tabela a seguir lista os prefixos comuns.
 | fn     | Função                            |
 | m\_    | Global                              |
 | h      | Handle                              |
-| i      | Inteiro                             |
+| i      | Integer                             |
 | l      | long                                |
 | lp     | Ponteiro longo                        |
 | d\_    | Membro de dados de uma classe              |

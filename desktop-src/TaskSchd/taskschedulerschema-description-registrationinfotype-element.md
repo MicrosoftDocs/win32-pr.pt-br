@@ -37,7 +37,7 @@ O elemento **Description** é definido pelo tipo complexo [**registrationInfoTyp
 
 
 
-| Elemento                                                                           | Derivado de                                                                         | Description                                                                                                                         |
+| Elemento                                                                           | Derivado de                                                                         | Descrição                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica informações administrativas sobre a tarefa, como o autor da tarefa e a data em que a tarefa é registrada.<br/> |
 
@@ -60,7 +60,7 @@ Para desenvolvimento em C++, a descrição de uma tarefa é especificada usando 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
