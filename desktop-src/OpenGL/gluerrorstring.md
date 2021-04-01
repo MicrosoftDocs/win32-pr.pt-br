@@ -69,7 +69,7 @@ A função **gluErrorString** produz cadeias de caracteres de erro somente em AN
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

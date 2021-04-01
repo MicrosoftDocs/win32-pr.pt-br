@@ -56,7 +56,7 @@ O driver deve liberar todos os recursos alocados para a mensagem de [**\_ \_ in�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

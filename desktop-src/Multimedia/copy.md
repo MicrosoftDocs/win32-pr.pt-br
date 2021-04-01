@@ -89,7 +89,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

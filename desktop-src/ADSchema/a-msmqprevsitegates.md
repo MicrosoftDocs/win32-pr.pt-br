@@ -36,7 +36,7 @@ O atributo **MSMQ-anterior-site-Gates** contém informações de modo misto do M
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1225                 |
 | System-ID-GUID    | 2df90d75-009f-11d2-aa4c-00c04fd7d83a    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

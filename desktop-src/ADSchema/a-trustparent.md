@@ -36,7 +36,7 @@ O pai na hierarquia de confiança KERBEROS.
 | Frequência de atualização  | Quando um domínio filho é criado.         |
 | Attribute-Id      | 1.2.840.113556.1.4.471                  |
 | System-ID-GUID    | b000ea7a-a086-11d0-afdd-00c04fd930c9    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

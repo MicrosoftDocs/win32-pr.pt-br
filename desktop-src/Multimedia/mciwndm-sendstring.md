@@ -67,7 +67,7 @@ Para obter a cadeia de caracteres de retorno, que contém o resultado do comando
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

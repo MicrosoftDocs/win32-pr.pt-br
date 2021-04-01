@@ -60,7 +60,7 @@ Para desenvolvimento em C++, o URI da tarefa é especificado usando a propriedad
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

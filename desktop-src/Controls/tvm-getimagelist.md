@@ -66,7 +66,7 @@ Retorna um identificador HIMAGELIST para a lista de imagens especificada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -103,7 +103,7 @@ O XML a seguir define um calendário mensal de dia da semana que inicia a tarefa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ ms.locfileid: "103644885"
 
 Para scripts, Obtém ou define de onde a tarefa foi originada. Por exemplo, uma tarefa pode se originar de um componente, serviço, aplicativo ou usuário.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -59,7 +59,7 @@ Ao definir esse valor de propriedade, o valor pode ser um texto que é recuperad
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

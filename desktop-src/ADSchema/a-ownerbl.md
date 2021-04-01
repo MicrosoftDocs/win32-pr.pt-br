@@ -36,7 +36,7 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.104                  |
 | System-ID-GUID    | bf9679f4-0de6-11d0-a285-00aa003049e2    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

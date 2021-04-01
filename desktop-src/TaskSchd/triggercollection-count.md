@@ -27,7 +27,7 @@ ms.locfileid: "103644469"
 
 Para scripts, obtém o número de gatilhos na coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -53,7 +53,7 @@ O número de gatilhos na coleção.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

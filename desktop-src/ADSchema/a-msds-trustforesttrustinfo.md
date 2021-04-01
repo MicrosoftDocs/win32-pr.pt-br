@@ -36,7 +36,7 @@ Contém informações de confiança de floresta (um BLOB binário) que é usada 
 | Frequência de atualização  | Somente quando a relação de confiança entre as florestas é alterada. Isso pode acontecer se a topologia de uma floresta confiável for alterada. |
 | Attribute-Id      | 1.2.840.113556.1.4.1702                                                                                            |
 | System-ID-GUID    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md)                                                              |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)                                                              |
 
 
 

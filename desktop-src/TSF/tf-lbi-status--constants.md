@@ -49,7 +49,7 @@ As constantes ** \_ TF \_ bin \_ \* status* _ indicam o status de um item da bar
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -30,7 +30,7 @@ ms.locfileid: "103644853"
 
 Executa o verbo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ## <a name="property-value"></a>Valor da propriedade
 

@@ -48,7 +48,7 @@ Altera ou anima o valor da propriedade OffsetY desse visual, alterando a posiç�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

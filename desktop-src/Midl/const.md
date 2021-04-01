@@ -206,7 +206,7 @@ HRESULT GetName([out] wchar_t * const pszName );
 [**menores**](small.md)
 </dt> <dt>
 
-[**Strings**](string.md)
+[**string**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)

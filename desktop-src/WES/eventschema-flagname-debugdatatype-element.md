@@ -43,7 +43,7 @@ O elemento **flagName** é definido pelo tipo complexo [**DebugDataType**](event
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

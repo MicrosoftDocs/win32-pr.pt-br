@@ -36,7 +36,7 @@ O nome de exibição de um objeto. Normalmente, essa é a combinação dos usuá
 | Frequência de atualização  | Quando o registro do usuário é criado e quando o nome de exibição precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.2.13                                                        |
 | System-ID-GUID    | bf967953-0de6-11d0-a285-00aa003049e2                                         |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                  |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                  |
 
 
 

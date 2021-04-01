@@ -36,7 +36,7 @@ Caminho de inicialização padrão para inicialização em disco.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.358                      |
 | System-ID-GUID    | 3e978920-8c01-11d0-afda-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

@@ -36,7 +36,7 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.518               |
 | System-ID-GUID    | b7b13116-b82e-11d0-afee-0000f80367c1 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

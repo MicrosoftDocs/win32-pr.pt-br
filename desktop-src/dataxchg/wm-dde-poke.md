@@ -89,7 +89,7 @@ Para liberar o objeto, o servidor deve chamar a função [**FreeDDElParam**](/wi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -77,7 +77,7 @@ O XML a seguir define um atraso de gatilho de registro que permite um atraso de 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

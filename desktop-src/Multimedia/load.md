@@ -87,7 +87,7 @@ load vidboard c:\vid\fish.vid notify
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

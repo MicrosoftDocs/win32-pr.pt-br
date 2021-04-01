@@ -36,7 +36,7 @@ ID da chave de produto CSVLK usada para criar o objeto de ativação
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2105                     |
 | System-ID-GUID    | b47f510d-6b50-47e1-b556-772c79e4ffc4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

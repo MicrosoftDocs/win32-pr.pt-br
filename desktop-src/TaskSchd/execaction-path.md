@@ -27,7 +27,7 @@ ms.locfileid: "103644489"
 
 Para scripts, Obtém ou define o caminho para um arquivo executável.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -61,7 +61,7 @@ O caminho é verificado para certificar-se de que ele é válido quando a tarefa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

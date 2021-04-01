@@ -53,7 +53,7 @@ Essas constantes são usadas por métodos da interface [**IClientSecurity**](/wi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ Irmão para tem-Master-NCs. O-partial-Replica-NCs reflete o nome distinto para t
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.15                   |
 | System-ID-GUID    | bf967981-0de6-11d0-a285-00aa003049e2    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

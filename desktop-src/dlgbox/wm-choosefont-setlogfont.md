@@ -73,7 +73,7 @@ Normalmente, você enviaria a mensagem de **\_ \_ SETLOGFONT do WM ChooseFont** 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

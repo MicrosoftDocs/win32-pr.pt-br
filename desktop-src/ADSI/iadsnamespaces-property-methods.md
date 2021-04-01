@@ -91,7 +91,7 @@ Os provedores devem fornecer essa propriedade de acordo com o usuário. O contê
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

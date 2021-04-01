@@ -60,7 +60,7 @@ Para a programação C++, essa configuração ociosa é especificada usando a pr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

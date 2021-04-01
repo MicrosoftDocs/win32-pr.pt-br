@@ -36,7 +36,7 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.77                |
 | System-ID-GUID    | bf9679be-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

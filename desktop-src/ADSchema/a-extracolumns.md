@@ -36,7 +36,7 @@ Este é um atributo com vários valores, cujo valor consiste em uma tupla de 5: 
 | Frequência de atualização  | Isso só será atualizado se um serviço como o Exchange estiver instalado.                                                                                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1687                                                                                                                                              |
 | System-ID-GUID    | d24e2846-1dd9-4bcf-99d7-a6227cc86da7                                                                                                                                 |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                                                          |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                                                          |
 
 
 

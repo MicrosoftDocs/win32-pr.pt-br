@@ -36,7 +36,7 @@ Um atributo que define uma cadeia de caracteres de Salt de NSEC3 especificada pe
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2148                     |
 | System-ID-GUID    | aff16770-9622-4fbc-a128-3088777605b9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

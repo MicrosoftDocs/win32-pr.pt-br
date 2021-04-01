@@ -45,7 +45,7 @@ Define o tipo base para o elemento [**IdleTrigger**](taskschedulerschema-idletri
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

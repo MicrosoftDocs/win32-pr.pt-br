@@ -117,7 +117,7 @@ A função a seguir recupera a prioridade de uma textura atualmente associada re
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

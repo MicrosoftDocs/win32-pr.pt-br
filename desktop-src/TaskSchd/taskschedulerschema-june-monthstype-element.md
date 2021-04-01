@@ -67,7 +67,7 @@ O XML a seguir define um calendário de meses que executa a tarefa em junho.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Frequência de atualização  | Quando o DBCC CHECKDB é executado.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1399                     |
 | System-ID-GUID    | f6d6dd88-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

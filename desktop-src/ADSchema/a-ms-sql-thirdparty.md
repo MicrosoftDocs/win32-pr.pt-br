@@ -36,7 +36,7 @@ Esse atributo indica se os dados de publicação são de uma fonte de dados dife
 | Frequência de atualização  | Quando a replicação é configurada.           |
 | Attribute-Id      | 1.2.840.113556.1.4.1407              |
 | System-ID-GUID    | c4e311fc-d34b-11d2-999a-0000f87a57d4 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

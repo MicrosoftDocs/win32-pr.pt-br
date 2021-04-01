@@ -80,7 +80,7 @@ Todos os discos de usuário criados usando esse modelo terão o mesmo tamanho m�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

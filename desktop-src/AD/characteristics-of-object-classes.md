@@ -35,7 +35,7 @@ A tabela a seguir lista o **lDAPDisplayName** e a descrição dos principais atr
 <thead>
 <tr class="header">
 <th>lDAPDisplayName</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>

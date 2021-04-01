@@ -36,7 +36,7 @@ O conjunto de cadeias de caracteres que pertencem a um objeto de parâmetro de c
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1637                     |
 | System-ID-GUID    | 37609d31-a2bf-4b58-8f53-2b64e57a076d        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

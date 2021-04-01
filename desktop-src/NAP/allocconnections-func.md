@@ -97,7 +97,7 @@ Todas as funções NAP para liberar memória também liberam todos os ponteiros 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

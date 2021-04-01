@@ -65,7 +65,7 @@ A mensagem retornará **true** se a mensagem for processada, que será se *wPara
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

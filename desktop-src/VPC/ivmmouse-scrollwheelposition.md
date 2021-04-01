@@ -32,7 +32,7 @@ Ajusta a coordenada z do mouse (somente relativo).
 
 Essa propriedade é somente gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -76,7 +76,7 @@ A coordenada z que indica o número de pixels que o mouse deve ser movido ao lon
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

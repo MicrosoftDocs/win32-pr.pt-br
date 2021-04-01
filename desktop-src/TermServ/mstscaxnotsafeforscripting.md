@@ -49,7 +49,7 @@ A classe **MsTscAxNotSafeForScripting** tem esses métodos.
 
 | Método                                                                                      | Descrição                                                                                                                                                                                                                                                                                   |
 |:--------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Conectar**](imstscax-connect.md)                                                         | Inicia uma conexão usando as propriedades atualmente definidas no controle.<br/>                                                                                                                                                                                                          |
+| [**Connect**](imstscax-connect.md)                                                         | Inicia uma conexão usando as propriedades atualmente definidas no controle.<br/>                                                                                                                                                                                                          |
 | [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)                             | Cria um objeto de canal virtual do lado do cliente para cada nome de canal virtual especificado.<br/>                                                                                                                                                                                              |
 | [**Desconectar**](imstscax-disconnect.md)                                                   | Desconecta a conexão ativa.<br/>                                                                                                                                                                                                                                                 |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md)                   | Recupera as opções definidas para um canal virtual.<br/>                                                                                                                                                                                                                                   |
@@ -102,7 +102,7 @@ A classe **MsTscAxNotSafeForScripting** tem essas propriedades.
 
 
 
-| Propriedade                                                                             | Tipo de acesso           | Description                                                                                                                                                               |
+| Propriedade                                                                             | Tipo de acesso           | Descrição                                                                                                                                                               |
 |:-------------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings**](imstscax-advancedsettings.md)<br/>                     | Somente leitura<br/>  | Um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .<br/>                                                                       |
 | [**AdvancedSettings2**](imsrdpclient-advancedsettings2.md)<br/>               | Somente leitura<br/>  | Ponteiro para a interface [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md) , usado para definir configurações avançadas para o controle de cliente.<br/> |
@@ -116,7 +116,7 @@ A classe **MsTscAxNotSafeForScripting** tem essas propriedades.
 | [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Leitura/gravação<br/> | A altura do controle atual, em pixels, na área de trabalho remota inicial.<br/>                                                                                        |
 | [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Leitura/gravação<br/> | A largura do controle atual, em pixels, na área de trabalho remota inicial.<br/>                                                                                         |
 | [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Leitura/gravação<br/> | O texto que aparece centralizado no controle antes que uma conexão seja encerrada.<br/>                                                                               |
-| [**Domínio**](imstscax-domain.md)<br/>                                         | Leitura/gravação<br/> | O domínio no qual o usuário atual faz logon.<br/>                                                                                                                  |
+| [**Controlador**](imstscax-domain.md)<br/>                                         | Leitura/gravação<br/> | O domínio no qual o usuário atual faz logon.<br/>                                                                                                                  |
 | [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md)<br/> | Somente leitura<br/>  | Informações estendidas sobre o motivo do controle de cliente para desconexão.<br/>                                                                                      |
 | [**FullScreen**](imsrdpclient-fullscreen.md)<br/>                             | Leitura/gravação<br/> | Indica se o controle está no modo de tela inteira.<br/>                                                                                                          |
 | [**FullScreenTitle**](imstscax-fullscreentitle.md)<br/>                       | Somente gravação<br/> | O título da janela exibido quando o controle está no modo de tela inteira.<br/>                                                                                            |
@@ -150,7 +150,7 @@ A classe **MsTscAxNotSafeForScripting** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

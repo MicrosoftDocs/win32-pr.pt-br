@@ -93,7 +93,7 @@ Se o aplicativo não processar essa mensagem, o [**DefWindowProc**](/windows/win
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

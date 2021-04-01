@@ -108,7 +108,7 @@ HRESULT put_AddressType(
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -100,7 +100,7 @@ Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar**
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

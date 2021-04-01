@@ -43,7 +43,7 @@ Define uma lista de pares de nome/valor.
 
 
 
-| Elemento                                                          | Type                                                                 | Description                                                                              |
+| Elemento                                                          | Type                                                                 | Descrição                                                                              |
 |------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | [**bitMap**](eventmanifestschema-bitmap-maptype-element.md)     | [**BitMaptype**](eventmanifestschema-bitmaptype-complextype.md)     | Define uma lista de pares de nome/valor que mapeia valores de bits e valores de cadeia de caracteres.<br/>     |
 | [**valueMap**](eventmanifestschema-valuemap-maptype-element.md) | [**ValueMapType**](eventmanifestschema-valuemaptype-complextype.md) | Define uma lista de pares de nome/valor que mapeia valores inteiros e valores de cadeia de caracteres.<br/> |

@@ -1,0 +1,108 @@
+---
+title: Método SetProperty IBackgroundCopyJob5 (Deliveryoptimization. h)
+description: Um método genérico para definir propriedades de trabalho de otimização de entrega (DO).
+ms.assetid: 9A8CCE04-B3EB-43CC-A135-7054EC40ABEC
+keywords:
+- Método SetProperty
+- Método SetProperty, interface IBackgroundCopyJob5
+- Interface IBackgroundCopyJob5, método SetProperty
+topic_type:
+- apiref
+api_name:
+- IBackgroundCopyJob5.SetProperty
+api_location:
+- dosvc.dll
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ROBOTS: INDEX,FOLLOW
+ms.openlocfilehash: a3dbd1e7c66592ea959c9b1ff4f4864340c504d8
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "103644989"
+---
+# <a name="ibackgroundcopyjob5setproperty-method"></a>Método IBackgroundCopyJob5:: SetProperty
+
+Um método genérico para definir propriedades de trabalho de otimização de entrega (DO).
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT SetProperty(
+  [in] BITS_JOB_PROPERTY_ID    PropertyId,
+  [in] BITS_JOB_PROPERTY_VALUE PropertyValue
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*PropertyId* \[ no\]
+</dt> <dd>
+
+A ID da propriedade que está sendo definida como um [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) valor de enumeração.
+
+</dd> <dt>
+
+*PropertyValue* \[ no\]
+</dt> <dd>
+
+O valor da propriedade que está sendo definida. Para manter um valor cujo tipo é apropriado para a propriedade, esse valor é especificado por meio da União de [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) que é composta por todos os tipos de propriedade conhecidos.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+O método retorna os valores de retorno a seguir.
+
+
+
+| Código de retorno                                                                          | Descrição        |
+|--------------------------------------------------------------------------------------|--------------------|
+| <dl> <dt>**S_OK**</dt> </dl> | Sucesso<br/> |
+
+
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
+| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
+| IID<br/>                      | IID_IBackgroundCopyJob5 é definido como E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**IBackgroundCopyJob5**](ibackgroundcopyjob5.md)
+</dt> <dt>
+
+[**IBackgroundCopyJob5:: GetProperty**](ibackgroundcopyjob5-getproperty.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+

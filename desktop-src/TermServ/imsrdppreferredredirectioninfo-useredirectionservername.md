@@ -32,7 +32,7 @@ Obtém e define se deve ser usado o nome do servidor de redirecionamento.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -65,7 +65,7 @@ Se deve ser usado o nome do servidor de redirecionamento.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

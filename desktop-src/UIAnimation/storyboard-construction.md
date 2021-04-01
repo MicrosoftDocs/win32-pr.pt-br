@@ -50,7 +50,7 @@ As transições a seguir são atualmente fornecidas pela biblioteca de transiç�
 
 
 
-| Nome da transição                        | Description                                                                                                                                                                                          |
+| Nome da transição                        | Descrição                                                                                                                                                                                          |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | acelerar-desacelerar<br/>       | A variável de animação acelera e diminui a velocidade de uma determinada duração.<br/>                                                                                                               |
 | constante<br/>                    | A variável de animação permanece em seu valor inicial durante toda a transição.<br/>                                                                                                            |

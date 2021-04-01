@@ -13,7 +13,7 @@ ms.locfileid: "103641284"
 ---
 # <a name="idxcoreadapterlistisadapterpreferencesupported-method"></a>Método IDXCoreAdapterList:: IsAdapterPreferenceSupported
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Determina se um valor de [DXCoreAdapterPreference](./ne-dxcore_interface-dxcoreadapterpreference.md) especificado é compreendido pelo sistema operacional atual (SO). Você pode chamar **IsAdapterPreferenceSupported** antes de chamar [IDXCoreAdapterList:: Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md).
 
@@ -39,6 +39,6 @@ Tipo: **bool**
 
 Retorna `true` se o tipo de classificação é compreendido pelo sistema operacional atual. Caso contrário, retorna `false`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
