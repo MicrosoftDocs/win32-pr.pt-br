@@ -12,32 +12,32 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636400"
 ---
-# <a name="itssbresourcenotificationex-methods"></a><span data-ttu-id="9a81c-103">Métodos ITsSbResourceNotificationEx</span><span class="sxs-lookup"><span data-stu-id="9a81c-103">ITsSbResourceNotificationEx Methods</span></span>
+# <a name="itssbresourcenotificationex-methods"></a><span data-ttu-id="53bce-103">Métodos ITsSbResourceNotificationEx</span><span class="sxs-lookup"><span data-stu-id="53bce-103">ITsSbResourceNotificationEx Methods</span></span>
 
-<span data-ttu-id="9a81c-104">As interfaces [**ITsSbResourceNotificationEx**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotificationex) expõem os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="9a81c-104">The [**ITsSbResourceNotificationEx**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotificationex) interfaces exposes the following methods.</span></span>
+<span data-ttu-id="53bce-104">As interfaces [**ITsSbResourceNotificationEx**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotificationex) expõem os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="53bce-104">The [**ITsSbResourceNotificationEx**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotificationex) interfaces exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="9a81c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9a81c-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="53bce-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="53bce-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9a81c-106">**Método NotifyClientConnectionStateChangeEx**</span><span class="sxs-lookup"><span data-stu-id="9a81c-106">**NotifyClientConnectionStateChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifyclientconnectionstatechangeex)
+[<span data-ttu-id="53bce-106">**Método NotifyClientConnectionStateChangeEx**</span><span class="sxs-lookup"><span data-stu-id="53bce-106">**NotifyClientConnectionStateChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifyclientconnectionstatechangeex)
 </dt> <dd>
 
-<span data-ttu-id="9a81c-107">Notifica os plug-ins registrados sobre alterações de estado em uma conexão de cliente.</span><span class="sxs-lookup"><span data-stu-id="9a81c-107">Notifies registered plug-ins about state changes in a client connection.</span></span>
+<span data-ttu-id="53bce-107">Notifica os plug-ins registrados sobre alterações de estado em uma conexão de cliente.</span><span class="sxs-lookup"><span data-stu-id="53bce-107">Notifies registered plug-ins about state changes in a client connection.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="9a81c-108">**Método NotifySessionChangeEx**</span><span class="sxs-lookup"><span data-stu-id="9a81c-108">**NotifySessionChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifysessionchangeex)
+[<span data-ttu-id="53bce-108">**Método NotifySessionChangeEx**</span><span class="sxs-lookup"><span data-stu-id="53bce-108">**NotifySessionChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifysessionchangeex)
 </dt> <dd>
 
-<span data-ttu-id="9a81c-109">Notifica os plug-ins registrados sobre alterações de estado em um objeto de sessão.</span><span class="sxs-lookup"><span data-stu-id="9a81c-109">Notifies registered plug-ins about state changes in a session object.</span></span>
+<span data-ttu-id="53bce-109">Notifica os plug-ins registrados sobre alterações de estado em um objeto de sessão.</span><span class="sxs-lookup"><span data-stu-id="53bce-109">Notifies registered plug-ins about state changes in a session object.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="9a81c-110">**Método NotifyTargetChangeEx**</span><span class="sxs-lookup"><span data-stu-id="9a81c-110">**NotifyTargetChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifytargetchangeex)
+[<span data-ttu-id="53bce-110">**Método NotifyTargetChangeEx**</span><span class="sxs-lookup"><span data-stu-id="53bce-110">**NotifyTargetChangeEx method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcenotificationex-notifytargetchangeex)
 </dt> <dd>
 
-<span data-ttu-id="9a81c-111">Notifica os plug-ins registrados sobre alterações de estado em um objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="9a81c-111">Notifies registered plug-ins about state changes in a target object.</span></span>
+<span data-ttu-id="53bce-111">Notifica os plug-ins registrados sobre alterações de estado em um objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="53bce-111">Notifies registered plug-ins about state changes in a target object.</span></span>
 
 </dd> </dl>
 

@@ -20,14 +20,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636761"
 ---
-# <a name="gltexenv-functions"></a><span data-ttu-id="90e94-111">Funções glTexEnv</span><span class="sxs-lookup"><span data-stu-id="90e94-111">glTexEnv Functions</span></span>
+# <a name="gltexenv-functions"></a><span data-ttu-id="553a1-111">Funções glTexEnv</span><span class="sxs-lookup"><span data-stu-id="553a1-111">glTexEnv Functions</span></span>
 
-<span data-ttu-id="90e94-112">Essas funções definem um parâmetro de ambiente de textura:</span><span class="sxs-lookup"><span data-stu-id="90e94-112">These functions set a texture environment parameter:</span></span>
+<span data-ttu-id="553a1-112">Essas funções definem um parâmetro de ambiente de textura:</span><span class="sxs-lookup"><span data-stu-id="553a1-112">These functions set a texture environment parameter:</span></span>
 
--   [<span data-ttu-id="90e94-113">**glTexEnvf**</span><span class="sxs-lookup"><span data-stu-id="90e94-113">**glTexEnvf**</span></span>](gltexenvf.md)
--   [<span data-ttu-id="90e94-114">**glTexEnvi**</span><span class="sxs-lookup"><span data-stu-id="90e94-114">**glTexEnvi**</span></span>](gltexenvi.md)
--   [<span data-ttu-id="90e94-115">**glTexEnvfv**</span><span class="sxs-lookup"><span data-stu-id="90e94-115">**glTexEnvfv**</span></span>](gltexenvfv.md)
--   [<span data-ttu-id="90e94-116">**glTexEnviv**</span><span class="sxs-lookup"><span data-stu-id="90e94-116">**glTexEnviv**</span></span>](gltexenviv.md)
+-   [<span data-ttu-id="553a1-113">**glTexEnvf**</span><span class="sxs-lookup"><span data-stu-id="553a1-113">**glTexEnvf**</span></span>](gltexenvf.md)
+-   [<span data-ttu-id="553a1-114">**glTexEnvi**</span><span class="sxs-lookup"><span data-stu-id="553a1-114">**glTexEnvi**</span></span>](gltexenvi.md)
+-   [<span data-ttu-id="553a1-115">**glTexEnvfv**</span><span class="sxs-lookup"><span data-stu-id="553a1-115">**glTexEnvfv**</span></span>](gltexenvfv.md)
+-   [<span data-ttu-id="553a1-116">**glTexEnviv**</span><span class="sxs-lookup"><span data-stu-id="553a1-116">**glTexEnviv**</span></span>](gltexenviv.md)
 
  
 

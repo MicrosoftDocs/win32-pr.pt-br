@@ -11,25 +11,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103825763"
 ---
-# <a name="effect-structures"></a><span data-ttu-id="b9bd2-103">Estruturas de efeito</span><span class="sxs-lookup"><span data-stu-id="b9bd2-103">Effect Structures</span></span>
+# <a name="effect-structures"></a><span data-ttu-id="9ac39-103">Estruturas de efeito</span><span class="sxs-lookup"><span data-stu-id="9ac39-103">Effect Structures</span></span>
 
-<span data-ttu-id="b9bd2-104">Esta seção contém informações sobre as estruturas usadas por efeitos.</span><span class="sxs-lookup"><span data-stu-id="b9bd2-104">This section contains information about the structures used by effects.</span></span>
+<span data-ttu-id="9ac39-104">Esta seção contém informações sobre as estruturas usadas por efeitos.</span><span class="sxs-lookup"><span data-stu-id="9ac39-104">This section contains information about the structures used by effects.</span></span>
 
--   [<span data-ttu-id="b9bd2-105">**D3DXEFFECT \_ desc**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-105">**D3DXEFFECT\_DESC**</span></span>](d3dxeffect-desc.md)
--   [<span data-ttu-id="b9bd2-106">**D3DXEFFECTDEFAULT**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-106">**D3DXEFFECTDEFAULT**</span></span>](d3dxeffectdefault.md)
--   [<span data-ttu-id="b9bd2-107">**D3DXEFFECTINSTANCE**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-107">**D3DXEFFECTINSTANCE**</span></span>](d3dxeffectinstance.md)
--   [<span data-ttu-id="b9bd2-108">**D3DXFUNCTION \_ desc**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-108">**D3DXFUNCTION\_DESC**</span></span>](d3dxfunction-desc.md)
--   [<span data-ttu-id="b9bd2-109">**D3DXMACRO**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-109">**D3DXMACRO**</span></span>](d3dxmacro.md)
--   [<span data-ttu-id="b9bd2-110">**D3DXPARAMETER \_ desc**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-110">**D3DXPARAMETER\_DESC**</span></span>](d3dxparameter-desc.md)
--   [<span data-ttu-id="b9bd2-111">**D3DXPASS \_ desc**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-111">**D3DXPASS\_DESC**</span></span>](d3dxpass-desc.md)
--   [<span data-ttu-id="b9bd2-112">**D3DXSEMANTIC**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-112">**D3DXSEMANTIC**</span></span>](d3dxsemantic.md)
--   [<span data-ttu-id="b9bd2-113">**D3DXTECHNIQUE \_ desc**</span><span class="sxs-lookup"><span data-stu-id="b9bd2-113">**D3DXTECHNIQUE\_DESC**</span></span>](d3dxtechnique-desc.md)
+-   [<span data-ttu-id="9ac39-105">**D3DXEFFECT \_ desc**</span><span class="sxs-lookup"><span data-stu-id="9ac39-105">**D3DXEFFECT\_DESC**</span></span>](d3dxeffect-desc.md)
+-   [<span data-ttu-id="9ac39-106">**D3DXEFFECTDEFAULT**</span><span class="sxs-lookup"><span data-stu-id="9ac39-106">**D3DXEFFECTDEFAULT**</span></span>](d3dxeffectdefault.md)
+-   [<span data-ttu-id="9ac39-107">**D3DXEFFECTINSTANCE**</span><span class="sxs-lookup"><span data-stu-id="9ac39-107">**D3DXEFFECTINSTANCE**</span></span>](d3dxeffectinstance.md)
+-   [<span data-ttu-id="9ac39-108">**D3DXFUNCTION \_ desc**</span><span class="sxs-lookup"><span data-stu-id="9ac39-108">**D3DXFUNCTION\_DESC**</span></span>](d3dxfunction-desc.md)
+-   [<span data-ttu-id="9ac39-109">**D3DXMACRO**</span><span class="sxs-lookup"><span data-stu-id="9ac39-109">**D3DXMACRO**</span></span>](d3dxmacro.md)
+-   [<span data-ttu-id="9ac39-110">**D3DXPARAMETER \_ desc**</span><span class="sxs-lookup"><span data-stu-id="9ac39-110">**D3DXPARAMETER\_DESC**</span></span>](d3dxparameter-desc.md)
+-   [<span data-ttu-id="9ac39-111">**D3DXPASS \_ desc**</span><span class="sxs-lookup"><span data-stu-id="9ac39-111">**D3DXPASS\_DESC**</span></span>](d3dxpass-desc.md)
+-   [<span data-ttu-id="9ac39-112">**D3DXSEMANTIC**</span><span class="sxs-lookup"><span data-stu-id="9ac39-112">**D3DXSEMANTIC**</span></span>](d3dxsemantic.md)
+-   [<span data-ttu-id="9ac39-113">**D3DXTECHNIQUE \_ desc**</span><span class="sxs-lookup"><span data-stu-id="9ac39-113">**D3DXTECHNIQUE\_DESC**</span></span>](d3dxtechnique-desc.md)
 
-## <a name="related-topics"></a><span data-ttu-id="b9bd2-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b9bd2-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9ac39-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9ac39-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b9bd2-115">Referência de efeito</span><span class="sxs-lookup"><span data-stu-id="b9bd2-115">Effect Reference</span></span>](dx9-graphics-reference-effects.md)
+[<span data-ttu-id="9ac39-115">Referência de efeito</span><span class="sxs-lookup"><span data-stu-id="9ac39-115">Effect Reference</span></span>](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647595"
 ---
-# <a name="int32columnvaluegetvaluefrombytes-method"></a><span data-ttu-id="d5fc4-103">Método Int32ColumnValue. GetValueFromBytes</span><span class="sxs-lookup"><span data-stu-id="d5fc4-103">Int32ColumnValue.GetValueFromBytes method</span></span>
+# <a name="int32columnvaluegetvaluefrombytes-method"></a><span data-ttu-id="815b6-103">Método Int32ColumnValue. GetValueFromBytes</span><span class="sxs-lookup"><span data-stu-id="815b6-103">Int32ColumnValue.GetValueFromBytes method</span></span>
 
-<span data-ttu-id="d5fc4-104">Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="d5fc4-104">Given data retrieved from ESENT, decode the data and set the value in the ColumnValue object.</span></span>
+<span data-ttu-id="815b6-104">Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="815b6-104">Given data retrieved from ESENT, decode the data and set the value in the ColumnValue object.</span></span>
 
-<span data-ttu-id="d5fc4-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d5fc4-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="d5fc4-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d5fc4-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="815b6-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="815b6-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="815b6-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="815b6-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d5fc4-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d5fc4-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="815b6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="815b6-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -67,40 +67,40 @@ protected override void GetValueFromBytes(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="d5fc4-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d5fc4-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="815b6-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="815b6-108">Parameters</span></span>
 
-  - <span data-ttu-id="d5fc4-109">value</span><span class="sxs-lookup"><span data-stu-id="d5fc4-109">value</span></span>  
-    <span data-ttu-id="d5fc4-110">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="d5fc4-110">Type: \[\]</span></span>  
+  - <span data-ttu-id="815b6-109">value</span><span class="sxs-lookup"><span data-stu-id="815b6-109">value</span></span>  
+    <span data-ttu-id="815b6-110">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="815b6-110">Type: \[\]</span></span>  
     
-    <span data-ttu-id="d5fc4-111">Uma matriz de bytes.</span><span class="sxs-lookup"><span data-stu-id="d5fc4-111">An array of bytes.</span></span>
+    <span data-ttu-id="815b6-111">Uma matriz de bytes.</span><span class="sxs-lookup"><span data-stu-id="815b6-111">An array of bytes.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="d5fc4-112">startIndex</span><span class="sxs-lookup"><span data-stu-id="d5fc4-112">startIndex</span></span>  
-    <span data-ttu-id="d5fc4-113">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="d5fc4-113">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+  - <span data-ttu-id="815b6-112">startIndex</span><span class="sxs-lookup"><span data-stu-id="815b6-112">startIndex</span></span>  
+    <span data-ttu-id="815b6-113">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="815b6-113">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
     
-    <span data-ttu-id="d5fc4-114">A posição inicial dentro dos bytes.</span><span class="sxs-lookup"><span data-stu-id="d5fc4-114">The starting position within the bytes.</span></span>
+    <span data-ttu-id="815b6-114">A posição inicial dentro dos bytes.</span><span class="sxs-lookup"><span data-stu-id="815b6-114">The starting position within the bytes.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="d5fc4-115">count</span><span class="sxs-lookup"><span data-stu-id="d5fc4-115">count</span></span>  
-    <span data-ttu-id="d5fc4-116">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="d5fc4-116">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+  - <span data-ttu-id="815b6-115">count</span><span class="sxs-lookup"><span data-stu-id="815b6-115">count</span></span>  
+    <span data-ttu-id="815b6-116">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="815b6-116">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
     
-    <span data-ttu-id="d5fc4-117">O número de bytes a serem decodificados.</span><span class="sxs-lookup"><span data-stu-id="d5fc4-117">The number of bytes to decode.</span></span>
+    <span data-ttu-id="815b6-117">O número de bytes a serem decodificados.</span><span class="sxs-lookup"><span data-stu-id="815b6-117">The number of bytes to decode.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="d5fc4-118">erra</span><span class="sxs-lookup"><span data-stu-id="d5fc4-118">err</span></span>  
-    <span data-ttu-id="d5fc4-119">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="d5fc4-119">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+  - <span data-ttu-id="815b6-118">erra</span><span class="sxs-lookup"><span data-stu-id="815b6-118">err</span></span>  
+    <span data-ttu-id="815b6-119">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="815b6-119">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
     
-    <span data-ttu-id="d5fc4-120">O erro retornado de ESENT.</span><span class="sxs-lookup"><span data-stu-id="d5fc4-120">The error returned from ESENT.</span></span>
+    <span data-ttu-id="815b6-120">O erro retornado de ESENT.</span><span class="sxs-lookup"><span data-stu-id="815b6-120">The error returned from ESENT.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d5fc4-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="d5fc4-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="815b6-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="815b6-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d5fc4-122">Referência</span><span class="sxs-lookup"><span data-stu-id="d5fc4-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="815b6-122">Referência</span><span class="sxs-lookup"><span data-stu-id="815b6-122">Reference</span></span>
 
-[<span data-ttu-id="d5fc4-123">Classe Int32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="d5fc4-123">Int32ColumnValue class</span></span>](./int32columnvalue-class.md)
+[<span data-ttu-id="815b6-123">Classe Int32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="815b6-123">Int32ColumnValue class</span></span>](./int32columnvalue-class.md)
 
-[<span data-ttu-id="d5fc4-124">Membros do Int32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="d5fc4-124">Int32ColumnValue members</span></span>](./int32columnvalue-members.md)
+[<span data-ttu-id="815b6-124">Membros do Int32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="815b6-124">Int32ColumnValue members</span></span>](./int32columnvalue-members.md)
 
-[<span data-ttu-id="d5fc4-125">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d5fc4-125">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="815b6-125">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="815b6-125">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -14,33 +14,33 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636664"
 ---
-# <a name="dynamic-virtual-channels-reference"></a><span data-ttu-id="2da32-104">Referência de canais virtuais dinâmicos</span><span class="sxs-lookup"><span data-stu-id="2da32-104">Dynamic virtual channels reference</span></span>
+# <a name="dynamic-virtual-channels-reference"></a><span data-ttu-id="5b055-104">Referência de canais virtuais dinâmicos</span><span class="sxs-lookup"><span data-stu-id="5b055-104">Dynamic virtual channels reference</span></span>
 
-<span data-ttu-id="2da32-105">As interfaces de cliente do DVC (canal virtual dinâmico) a seguir têm suporte pelo Serviços de Área de Trabalho Remota (anteriormente conhecido como serviços de terminal).</span><span class="sxs-lookup"><span data-stu-id="2da32-105">The following dynamic virtual channel (DVC) client interfaces are supported by Remote Desktop Services (formerly known as Terminal Services).</span></span>
+<span data-ttu-id="5b055-105">As interfaces de cliente do DVC (canal virtual dinâmico) a seguir têm suporte pelo Serviços de Área de Trabalho Remota (anteriormente conhecido como serviços de terminal).</span><span class="sxs-lookup"><span data-stu-id="5b055-105">The following dynamic virtual channel (DVC) client interfaces are supported by Remote Desktop Services (formerly known as Terminal Services).</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="2da32-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2da32-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5b055-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5b055-106">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2da32-107">APIs de cliente do DVC</span><span class="sxs-lookup"><span data-stu-id="2da32-107">DVC Client APIs</span></span>](dvc-client-apis.md)
+[<span data-ttu-id="5b055-107">APIs de cliente do DVC</span><span class="sxs-lookup"><span data-stu-id="5b055-107">DVC Client APIs</span></span>](dvc-client-apis.md)
 </dt> <dd>
 
-<span data-ttu-id="2da32-108">As APIs de cliente de canal virtual dinâmico (DVC) são implementadas especificamente para o cliente de Conexão de Área de Trabalho Remota (RDC) da conexão.</span><span class="sxs-lookup"><span data-stu-id="2da32-108">The dynamic virtual channel (DVC) client APIs are implemented specifically for the Remote Desktop Connection (RDC) client of the connection.</span></span>
+<span data-ttu-id="5b055-108">As APIs de cliente de canal virtual dinâmico (DVC) são implementadas especificamente para o cliente de Conexão de Área de Trabalho Remota (RDC) da conexão.</span><span class="sxs-lookup"><span data-stu-id="5b055-108">The dynamic virtual channel (DVC) client APIs are implemented specifically for the Remote Desktop Connection (RDC) client of the connection.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="2da32-109">APIs de servidor DVC</span><span class="sxs-lookup"><span data-stu-id="2da32-109">DVC Server APIs</span></span>](dvc-server-apis.md)
+[<span data-ttu-id="5b055-109">APIs de servidor DVC</span><span class="sxs-lookup"><span data-stu-id="5b055-109">DVC Server APIs</span></span>](dvc-server-apis.md)
 </dt> <dd>
 
-<span data-ttu-id="2da32-110">As APIs de servidor de canal virtual dinâmico (DVC) são implementadas pelo servidor de Conexão de Área de Trabalho Remota (RDC) da conexão.</span><span class="sxs-lookup"><span data-stu-id="2da32-110">The dynamic virtual channel (DVC) server APIs are implemented by the Remote Desktop Connection (RDC) server of the connection.</span></span>
+<span data-ttu-id="5b055-110">As APIs de servidor de canal virtual dinâmico (DVC) são implementadas pelo servidor de Conexão de Área de Trabalho Remota (RDC) da conexão.</span><span class="sxs-lookup"><span data-stu-id="5b055-110">The dynamic virtual channel (DVC) server APIs are implemented by the Remote Desktop Connection (RDC) server of the connection.</span></span>
 
 </dd> </dl>
 
-## <a name="related-topics"></a><span data-ttu-id="2da32-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="2da32-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5b055-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5b055-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2da32-112">**Canais virtuais dinâmicos**</span><span class="sxs-lookup"><span data-stu-id="2da32-112">**Dynamic Virtual Channels**</span></span>](dynamic-virtual-channels.md)
+[<span data-ttu-id="5b055-112">**Canais virtuais dinâmicos**</span><span class="sxs-lookup"><span data-stu-id="5b055-112">**Dynamic Virtual Channels**</span></span>](dynamic-virtual-channels.md)
 </dt> </dl>
 
  

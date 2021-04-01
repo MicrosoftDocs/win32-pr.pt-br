@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647318"
 ---
-# <a name="special-blob-entries"></a><span data-ttu-id="0aea3-103">Entradas de BLOB especiais</span><span class="sxs-lookup"><span data-stu-id="0aea3-103">Special BLOB Entries</span></span>
+# <a name="special-blob-entries"></a><span data-ttu-id="ae2da-103">Entradas de BLOB especiais</span><span class="sxs-lookup"><span data-stu-id="ae2da-103">Special BLOB Entries</span></span>
 
-<span data-ttu-id="0aea3-104">Os exemplos a seguir usam a função [**SetStringInBlob**](setstringinblob.md) para criar entradas de blob especiais.</span><span class="sxs-lookup"><span data-stu-id="0aea3-104">The following examples use the [**SetStringInBlob**](setstringinblob.md) function to create special BLOB entries.</span></span>
+<span data-ttu-id="ae2da-104">Os exemplos a seguir usam a função [**SetStringInBlob**](setstringinblob.md) para criar entradas de blob especiais.</span><span class="sxs-lookup"><span data-stu-id="ae2da-104">The following examples use the [**SetStringInBlob**](setstringinblob.md) function to create special BLOB entries.</span></span>
 
-## <a name="npp-name"></a><span data-ttu-id="0aea3-105">Nome do NPP</span><span class="sxs-lookup"><span data-stu-id="0aea3-105">NPP Name</span></span>
+## <a name="npp-name"></a><span data-ttu-id="ae2da-105">Nome do NPP</span><span class="sxs-lookup"><span data-stu-id="ae2da-105">NPP Name</span></span>
 
 ``` syntax
 SetStringInBlob(
@@ -26,7 +26,7 @@ SetStringInBlob(
    "My NPP Name"); 
 ```
 
-## <a name="npp-class-identifier"></a><span data-ttu-id="0aea3-106">Identificador de classe NPP</span><span class="sxs-lookup"><span data-stu-id="0aea3-106">NPP Class Identifier</span></span>
+## <a name="npp-class-identifier"></a><span data-ttu-id="ae2da-106">Identificador de classe NPP</span><span class="sxs-lookup"><span data-stu-id="ae2da-106">NPP Class Identifier</span></span>
 
 ``` syntax
 SetClassIDInBlob(
@@ -37,7 +37,7 @@ SetClassIDInBlob(
    &CLSID_ThisNPP);
 ```
 
-## <a name="cfgproc-procedure-name"></a><span data-ttu-id="0aea3-107">Nome do procedimento CFGPROC</span><span class="sxs-lookup"><span data-stu-id="0aea3-107">CFGPROC Procedure Name</span></span>
+## <a name="cfgproc-procedure-name"></a><span data-ttu-id="ae2da-107">Nome do procedimento CFGPROC</span><span class="sxs-lookup"><span data-stu-id="ae2da-107">CFGPROC Procedure Name</span></span>
 
 ``` syntax
 SetStringInBlob(
@@ -48,7 +48,7 @@ SetStringInBlob(
    "MyGetNPPBlobs");
 ```
 
-## <a name="tree-root-name-for-finder-ui"></a><span data-ttu-id="0aea3-108">Nome raiz da árvore para a interface do usuário do localizador</span><span class="sxs-lookup"><span data-stu-id="0aea3-108">Tree Root Name for Finder UI</span></span>
+## <a name="tree-root-name-for-finder-ui"></a><span data-ttu-id="ae2da-108">Nome raiz da árvore para a interface do usuário do localizador</span><span class="sxs-lookup"><span data-stu-id="ae2da-108">Tree Root Name for Finder UI</span></span>
 
 ``` syntax
 SetStringInBlob(
@@ -59,7 +59,7 @@ SetStringInBlob(
    "My Tree Root name");
 ```
 
-## <a name="display-string-for-finder-ui"></a><span data-ttu-id="0aea3-109">Exibir cadeia de caracteres para a interface do usuário do Finder</span><span class="sxs-lookup"><span data-stu-id="0aea3-109">Display String for Finder UI</span></span>
+## <a name="display-string-for-finder-ui"></a><span data-ttu-id="ae2da-109">Exibir cadeia de caracteres para a interface do usuário do Finder</span><span class="sxs-lookup"><span data-stu-id="ae2da-109">Display String for Finder UI</span></span>
 
 ``` syntax
 SetStringInBlob(
@@ -70,9 +70,9 @@ SetStringInBlob(
    "Double click to select my UI");
 ```
 
-## <a name="interface-tags"></a><span data-ttu-id="0aea3-110">Marcas de interface</span><span class="sxs-lookup"><span data-stu-id="0aea3-110">Interface Tags</span></span>
+## <a name="interface-tags"></a><span data-ttu-id="ae2da-110">Marcas de interface</span><span class="sxs-lookup"><span data-stu-id="ae2da-110">Interface Tags</span></span>
 
-<span data-ttu-id="0aea3-111">Este exemplo inclui todas as interfaces suportadas pelo NPP.</span><span class="sxs-lookup"><span data-stu-id="0aea3-111">This example includes every interface supported by the NPP.</span></span>
+<span data-ttu-id="ae2da-111">Este exemplo inclui todas as interfaces suportadas pelo NPP.</span><span class="sxs-lookup"><span data-stu-id="ae2da-111">This example includes every interface supported by the NPP.</span></span>
 
 ``` syntax
 SetBoolInBlob(  

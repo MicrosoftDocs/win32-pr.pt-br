@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661847"
 ---
-# <a name="socket-group-operations"></a><span data-ttu-id="8ed2c-103">Operações de grupo de soquete</span><span class="sxs-lookup"><span data-stu-id="8ed2c-103">Socket Group Operations</span></span>
+# <a name="socket-group-operations"></a><span data-ttu-id="49e97-103">Operações de grupo de soquete</span><span class="sxs-lookup"><span data-stu-id="49e97-103">Socket Group Operations</span></span>
 
-<span data-ttu-id="8ed2c-104">Todo o uso de grupos de soquetes é reservado.</span><span class="sxs-lookup"><span data-stu-id="8ed2c-104">All use of socket groups is reserved.</span></span>
+<span data-ttu-id="49e97-104">Todo o uso de grupos de soquetes é reservado.</span><span class="sxs-lookup"><span data-stu-id="49e97-104">All use of socket groups is reserved.</span></span>
 
  
 

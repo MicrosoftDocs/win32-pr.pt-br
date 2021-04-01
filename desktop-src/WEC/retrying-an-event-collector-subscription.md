@@ -12,36 +12,36 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636467"
 ---
-# <a name="retrying-an-event-collector-subscription"></a><span data-ttu-id="e8fa8-103">Repetindo uma assinatura do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="e8fa8-103">Retrying an Event Collector Subscription</span></span>
+# <a name="retrying-an-event-collector-subscription"></a><span data-ttu-id="ce287-103">Repetindo uma assinatura do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="ce287-103">Retrying an Event Collector Subscription</span></span>
 
-<span data-ttu-id="e8fa8-104">Se ocorrer um problema com uma origem de evento associada a uma assinatura do coletor de eventos, você poderá repetir a assinatura depois que o problema tiver sido resolvido.</span><span class="sxs-lookup"><span data-stu-id="e8fa8-104">If a problem occurs with an event source that is associated to an Event Collector subscription, you can retry the subscription after the problem has been solved.</span></span>
+<span data-ttu-id="ce287-104">Se ocorrer um problema com uma origem de evento associada a uma assinatura do coletor de eventos, você poderá repetir a assinatura depois que o problema tiver sido resolvido.</span><span class="sxs-lookup"><span data-stu-id="ce287-104">If a problem occurs with an event source that is associated to an Event Collector subscription, you can retry the subscription after the problem has been solved.</span></span>
 
 > [!Note]
 >
-> <span data-ttu-id="e8fa8-105">Você pode usar este exemplo para repetir uma assinatura ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="e8fa8-105">You can use this example to retry a subscription or you can type the following command at the command prompt:</span></span>
+> <span data-ttu-id="ce287-105">Você pode usar este exemplo para repetir uma assinatura ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="ce287-105">You can use this example to retry a subscription or you can type the following command at the command prompt:</span></span>
 >
-> <span data-ttu-id="e8fa8-106">*inscrições* de **wecutil RS**</span><span class="sxs-lookup"><span data-stu-id="e8fa8-106">**wecutil rs** *SubscriptionName*</span></span>
+> <span data-ttu-id="ce287-106">*inscrições* de **wecutil RS**</span><span class="sxs-lookup"><span data-stu-id="ce287-106">**wecutil rs** *SubscriptionName*</span></span>
 
  
 
-<span data-ttu-id="e8fa8-107">Você precisará do nome de uma assinatura para tentar novamente.</span><span class="sxs-lookup"><span data-stu-id="e8fa8-107">You will need the name of a subscription to retry it.</span></span> <span data-ttu-id="e8fa8-108">Para listar os nomes das assinaturas atuais em um computador local, você pode usar o exemplo de código C++ mostrado em [listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="e8fa8-108">To list the names of current subscriptions on a local computer, you can use the C++ code example shown in [Listing Event Collector Subscriptions](listing-event-collector-subscriptions.md), or you can type the following command at the command prompt:</span></span>
+<span data-ttu-id="ce287-107">Você precisará do nome de uma assinatura para tentar novamente.</span><span class="sxs-lookup"><span data-stu-id="ce287-107">You will need the name of a subscription to retry it.</span></span> <span data-ttu-id="ce287-108">Para listar os nomes das assinaturas atuais em um computador local, você pode usar o exemplo de código C++ mostrado em [listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="ce287-108">To list the names of current subscriptions on a local computer, you can use the C++ code example shown in [Listing Event Collector Subscriptions](listing-event-collector-subscriptions.md), or you can type the following command at the command prompt:</span></span>
 
-<span data-ttu-id="e8fa8-109">**wecutil es**</span><span class="sxs-lookup"><span data-stu-id="e8fa8-109">**wecutil es**</span></span>
+<span data-ttu-id="ce287-109">**wecutil es**</span><span class="sxs-lookup"><span data-stu-id="ce287-109">**wecutil es**</span></span>
 
 > [!Note]  
-> <span data-ttu-id="e8fa8-110">Este exemplo mostra como repetir individualmente cada origem de evento de uma assinatura iniciada pelo coletor e como repetir uma assinatura iniciada pela fonte.</span><span class="sxs-lookup"><span data-stu-id="e8fa8-110">This example shows how to individually retry each event source of a collector initiated subscription and how to retry a source initiated subscription.</span></span>
+> <span data-ttu-id="ce287-110">Este exemplo mostra como repetir individualmente cada origem de evento de uma assinatura iniciada pelo coletor e como repetir uma assinatura iniciada pela fonte.</span><span class="sxs-lookup"><span data-stu-id="ce287-110">This example shows how to individually retry each event source of a collector initiated subscription and how to retry a source initiated subscription.</span></span>
 
  
 
-<span data-ttu-id="e8fa8-111">O exemplo de código a seguir segue um procedimento para repetir todas as fontes de eventos de uma assinatura do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="e8fa8-111">The following code example follows a procedure to retry all of the event sources of an Event Collector subscription.</span></span>
+<span data-ttu-id="ce287-111">O exemplo de código a seguir segue um procedimento para repetir todas as fontes de eventos de uma assinatura do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="ce287-111">The following code example follows a procedure to retry all of the event sources of an Event Collector subscription.</span></span>
 
-<span data-ttu-id="e8fa8-112">**Para repetir uma assinatura do coletor de eventos**</span><span class="sxs-lookup"><span data-stu-id="e8fa8-112">**To retry an Event Collector subscription**</span></span>
+<span data-ttu-id="ce287-112">**Para repetir uma assinatura do coletor de eventos**</span><span class="sxs-lookup"><span data-stu-id="ce287-112">**To retry an Event Collector subscription**</span></span>
 
-1.  <span data-ttu-id="e8fa8-113">Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) .</span><span class="sxs-lookup"><span data-stu-id="e8fa8-113">Open the subscription by providing the subscription name and access rights as parameters to the [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) function.</span></span> <span data-ttu-id="e8fa8-114">Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).</span><span class="sxs-lookup"><span data-stu-id="e8fa8-114">For more information about access rights, see [**Windows Event Collector Constants**](windows-event-collector-constants.md).</span></span>
-2.  <span data-ttu-id="e8fa8-115">Repita a origem do evento chamando a função **EcRetrySubscription** .</span><span class="sxs-lookup"><span data-stu-id="e8fa8-115">Retry the event source by calling the **EcRetrySubscription** function.</span></span>
-3.  <span data-ttu-id="e8fa8-116">Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .</span><span class="sxs-lookup"><span data-stu-id="e8fa8-116">Close the subscription by calling the [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) function.</span></span>
+1.  <span data-ttu-id="ce287-113">Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) .</span><span class="sxs-lookup"><span data-stu-id="ce287-113">Open the subscription by providing the subscription name and access rights as parameters to the [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) function.</span></span> <span data-ttu-id="ce287-114">Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).</span><span class="sxs-lookup"><span data-stu-id="ce287-114">For more information about access rights, see [**Windows Event Collector Constants**](windows-event-collector-constants.md).</span></span>
+2.  <span data-ttu-id="ce287-115">Repita a origem do evento chamando a função **EcRetrySubscription** .</span><span class="sxs-lookup"><span data-stu-id="ce287-115">Retry the event source by calling the **EcRetrySubscription** function.</span></span>
+3.  <span data-ttu-id="ce287-116">Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .</span><span class="sxs-lookup"><span data-stu-id="ce287-116">Close the subscription by calling the [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) function.</span></span>
 
-<span data-ttu-id="e8fa8-117">O exemplo de código C++ a seguir mostra como repetir uma assinatura do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="e8fa8-117">The following C++ code example shows how to retry an Event Collector subscription.</span></span>
+<span data-ttu-id="ce287-117">O exemplo de código C++ a seguir mostra como repetir uma assinatura do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="ce287-117">The following C++ code example shows how to retry an Event Collector subscription.</span></span>
 
 
 ```C++
@@ -286,14 +286,14 @@ DWORD GetStatus(LPCWSTR subscriptionName,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e8fa8-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e8fa8-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ce287-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ce287-118">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e8fa8-119">Listando assinaturas do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="e8fa8-119">Listing Event Collector Subscriptions</span></span>](listing-event-collector-subscriptions.md)
+[<span data-ttu-id="ce287-119">Listando assinaturas do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="ce287-119">Listing Event Collector Subscriptions</span></span>](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[<span data-ttu-id="e8fa8-120">Referência do coletor de eventos do Windows</span><span class="sxs-lookup"><span data-stu-id="e8fa8-120">Windows Event Collector Reference</span></span>](windows-event-collector-reference.md)
+[<span data-ttu-id="ce287-120">Referência do coletor de eventos do Windows</span><span class="sxs-lookup"><span data-stu-id="ce287-120">Windows Event Collector Reference</span></span>](windows-event-collector-reference.md)
 </dt> </dl>
 
  

@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636177"
 ---
-# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a><span data-ttu-id="0e989-103">Como criar um provedor de automação de interface do usuário Client-Side (proxy)</span><span class="sxs-lookup"><span data-stu-id="0e989-103">How to Create a Client-Side (Proxy) UI Automation Provider</span></span>
+# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a><span data-ttu-id="13893-103">Como criar um provedor de automação de interface do usuário Client-Side (proxy)</span><span class="sxs-lookup"><span data-stu-id="13893-103">How to Create a Client-Side (Proxy) UI Automation Provider</span></span>
 
-<span data-ttu-id="0e989-104">Este tópico contém um código de exemplo que mostra como implementar um provedor de automação da interface do usuário ou proxy do lado do cliente.</span><span class="sxs-lookup"><span data-stu-id="0e989-104">This topic contains example code that shows how to implement a client-side, or proxy, Microsoft UI Automation provider.</span></span>
+<span data-ttu-id="13893-104">Este tópico contém um código de exemplo que mostra como implementar um provedor de automação da interface do usuário ou proxy do lado do cliente.</span><span class="sxs-lookup"><span data-stu-id="13893-104">This topic contains example code that shows how to implement a client-side, or proxy, Microsoft UI Automation provider.</span></span>
 
--   [<span data-ttu-id="0e989-105">Exemplo 1: enumerando a tabela de fábrica de proxy</span><span class="sxs-lookup"><span data-stu-id="0e989-105">Example 1: Enumerating the Proxy Factory Table</span></span>](#example-1-enumerating-the-proxy-factory-table)
--   [<span data-ttu-id="0e989-106">Exemplo 2: Implementando um proxy simples para controles de botão</span><span class="sxs-lookup"><span data-stu-id="0e989-106">Example 2: Implementing a Simple Proxy for Button Controls</span></span>](#example-2-implementing-a-simple-proxy-for-button-controls)
--   [<span data-ttu-id="0e989-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0e989-107">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="13893-105">Exemplo 1: enumerando a tabela de fábrica de proxy</span><span class="sxs-lookup"><span data-stu-id="13893-105">Example 1: Enumerating the Proxy Factory Table</span></span>](#example-1-enumerating-the-proxy-factory-table)
+-   [<span data-ttu-id="13893-106">Exemplo 2: Implementando um proxy simples para controles de botão</span><span class="sxs-lookup"><span data-stu-id="13893-106">Example 2: Implementing a Simple Proxy for Button Controls</span></span>](#example-2-implementing-a-simple-proxy-for-button-controls)
+-   [<span data-ttu-id="13893-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="13893-107">Related topics</span></span>](#related-topics)
 
-## <a name="example-1-enumerating-the-proxy-factory-table"></a><span data-ttu-id="0e989-108">Exemplo 1: enumerando a tabela de fábrica de proxy</span><span class="sxs-lookup"><span data-stu-id="0e989-108">Example 1: Enumerating the Proxy Factory Table</span></span>
+## <a name="example-1-enumerating-the-proxy-factory-table"></a><span data-ttu-id="13893-108">Exemplo 1: enumerando a tabela de fábrica de proxy</span><span class="sxs-lookup"><span data-stu-id="13893-108">Example 1: Enumerating the Proxy Factory Table</span></span>
 
-<span data-ttu-id="0e989-109">O código de exemplo a seguir enumera as entradas na tabela de fábrica de proxy e exibe o nome de classe do controle com suporte.</span><span class="sxs-lookup"><span data-stu-id="0e989-109">The following example code enumerates the entries in the proxy factory table and displays the class name of the supported control.</span></span> <span data-ttu-id="0e989-110">Para proxies que não são fornecidos com o sistema operacional, o nome da imagem é exibido.</span><span class="sxs-lookup"><span data-stu-id="0e989-110">For proxies that are not supplied with the operating system, the image name is displayed.</span></span>
+<span data-ttu-id="13893-109">O código de exemplo a seguir enumera as entradas na tabela de fábrica de proxy e exibe o nome de classe do controle com suporte.</span><span class="sxs-lookup"><span data-stu-id="13893-109">The following example code enumerates the entries in the proxy factory table and displays the class name of the supported control.</span></span> <span data-ttu-id="13893-110">Para proxies que não são fornecidos com o sistema operacional, o nome da imagem é exibido.</span><span class="sxs-lookup"><span data-stu-id="13893-110">For proxies that are not supplied with the operating system, the image name is displayed.</span></span>
 
 
 ```C++
@@ -70,9 +70,9 @@ HRESULT GetProxyTable()
 
 
 
-## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a><span data-ttu-id="0e989-111">Exemplo 2: Implementando um proxy simples para controles de botão</span><span class="sxs-lookup"><span data-stu-id="0e989-111">Example 2: Implementing a Simple Proxy for Button Controls</span></span>
+## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a><span data-ttu-id="13893-111">Exemplo 2: Implementando um proxy simples para controles de botão</span><span class="sxs-lookup"><span data-stu-id="13893-111">Example 2: Implementing a Simple Proxy for Button Controls</span></span>
 
-<span data-ttu-id="0e989-112">O código de exemplo a seguir implementa um proxy simples para controles que têm o nome de classe "Button" e adiciona uma entrada para o proxy à tabela de fábrica de proxy.</span><span class="sxs-lookup"><span data-stu-id="0e989-112">The following example code implements a simple proxy for controls that have the "Button" class name, and adds an entry for the proxy to the proxy factory table.</span></span> <span data-ttu-id="0e989-113">Este exemplo usa a caixa de diálogo fonte do bloco de notas para demonstrar o proxy.</span><span class="sxs-lookup"><span data-stu-id="0e989-113">This example uses the Font dialog box of Notepad to demonstrate the proxy.</span></span>
+<span data-ttu-id="13893-112">O código de exemplo a seguir implementa um proxy simples para controles que têm o nome de classe "Button" e adiciona uma entrada para o proxy à tabela de fábrica de proxy.</span><span class="sxs-lookup"><span data-stu-id="13893-112">The following example code implements a simple proxy for controls that have the "Button" class name, and adds an entry for the proxy to the proxy factory table.</span></span> <span data-ttu-id="13893-113">Este exemplo usa a caixa de diálogo fonte do bloco de notas para demonstrar o proxy.</span><span class="sxs-lookup"><span data-stu-id="13893-113">This example uses the Font dialog box of Notepad to demonstrate the proxy.</span></span>
 
 
 ```C++
@@ -362,17 +362,17 @@ cleanup:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="0e989-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0e989-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="13893-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="13893-114">Related topics</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="0e989-115">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="0e989-115">**Conceptual**</span></span>
+<span data-ttu-id="13893-115">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="13893-115">**Conceptual**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="0e989-116">Implementando um provedor de automação de interface do usuário Client-Side</span><span class="sxs-lookup"><span data-stu-id="0e989-116">Implementing a Client-Side UI Automation Provider</span></span>](uiauto-serversideprovider.md)
+[<span data-ttu-id="13893-116">Implementando um provedor de automação de interface do usuário Client-Side</span><span class="sxs-lookup"><span data-stu-id="13893-116">Implementing a Client-Side UI Automation Provider</span></span>](uiauto-serversideprovider.md)
 </dt> <dt>
 
-[<span data-ttu-id="0e989-117">Tópicos de instruções para provedores de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="0e989-117">How-To Topics for UI Automation Providers</span></span>](uiauto-howto-topics-for-uiautomation-providers.md)
+[<span data-ttu-id="13893-117">Tópicos de instruções para provedores de automação de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="13893-117">How-To Topics for UI Automation Providers</span></span>](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
  

@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636788"
 ---
-# <a name="iwtsvirtualchannel-methods"></a><span data-ttu-id="8ca28-103">Métodos IWTSVirtualChannel</span><span class="sxs-lookup"><span data-stu-id="8ca28-103">IWTSVirtualChannel Methods</span></span>
+# <a name="iwtsvirtualchannel-methods"></a><span data-ttu-id="7d918-103">Métodos IWTSVirtualChannel</span><span class="sxs-lookup"><span data-stu-id="7d918-103">IWTSVirtualChannel Methods</span></span>
 
-<span data-ttu-id="8ca28-104">A interface [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8ca28-104">The [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager) interface exposes the following methods.</span></span>
+<span data-ttu-id="7d918-104">A interface [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="7d918-104">The [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="8ca28-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8ca28-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7d918-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7d918-105">In this section</span></span>
 
--   [<span data-ttu-id="8ca28-106">**Método Close**</span><span class="sxs-lookup"><span data-stu-id="8ca28-106">**Close method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsvirtualchannel-close)
--   [<span data-ttu-id="8ca28-107">**Método de gravação**</span><span class="sxs-lookup"><span data-stu-id="8ca28-107">**Write method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsvirtualchannel-write)
+-   [<span data-ttu-id="7d918-106">**Método Close**</span><span class="sxs-lookup"><span data-stu-id="7d918-106">**Close method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsvirtualchannel-close)
+-   [<span data-ttu-id="7d918-107">**Método de gravação**</span><span class="sxs-lookup"><span data-stu-id="7d918-107">**Write method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtsvirtualchannel-write)
 
  
 

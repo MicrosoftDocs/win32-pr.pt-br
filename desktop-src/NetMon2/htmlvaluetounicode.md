@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646791"
 ---
-# <a name="htmlvaluetounicode-function"></a><span data-ttu-id="93975-103">Função HTMLValueToUnicode</span><span class="sxs-lookup"><span data-stu-id="93975-103">HTMLValueToUnicode function</span></span>
+# <a name="htmlvaluetounicode-function"></a><span data-ttu-id="b9cd7-103">Função HTMLValueToUnicode</span><span class="sxs-lookup"><span data-stu-id="b9cd7-103">HTMLValueToUnicode function</span></span>
 
-<span data-ttu-id="93975-104">A função **HTMLValueToUnicode** converte uma \_ cadeia de caracteres HTML CP UTF8 em uma cadeia de caracteres Unicode.</span><span class="sxs-lookup"><span data-stu-id="93975-104">The **HTMLValueToUnicode** function converts an HTML CP\_UTF8 string to a Unicode string.</span></span>
+<span data-ttu-id="b9cd7-104">A função **HTMLValueToUnicode** converte uma \_ cadeia de caracteres HTML CP UTF8 em uma cadeia de caracteres Unicode.</span><span class="sxs-lookup"><span data-stu-id="b9cd7-104">The **HTMLValueToUnicode** function converts an HTML CP\_UTF8 string to a Unicode string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="93975-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="93975-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b9cd7-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b9cd7-105">Syntax</span></span>
 
 
 ```C++
@@ -35,34 +35,34 @@ WCHAR* HTMLValueToUnicode(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="93975-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="93975-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b9cd7-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b9cd7-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="93975-107">*valores* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="93975-107">*pValue* \[in, out\]</span></span>
+<span data-ttu-id="b9cd7-107">*valores* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="b9cd7-107">*pValue* \[in, out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="93975-108">Na entrada, ponteiro para a cadeia de caracteres HTML fornecida pelo MCSVC.</span><span class="sxs-lookup"><span data-stu-id="93975-108">On input, pointer to the HTML string supplied by the MCSVC.</span></span>
+<span data-ttu-id="b9cd7-108">Na entrada, ponteiro para a cadeia de caracteres HTML fornecida pelo MCSVC.</span><span class="sxs-lookup"><span data-stu-id="b9cd7-108">On input, pointer to the HTML string supplied by the MCSVC.</span></span>
 
-<span data-ttu-id="93975-109">Na saída, ponteiro para a cadeia de caracteres Unicode convertida.</span><span class="sxs-lookup"><span data-stu-id="93975-109">On output, pointer to the converted Unicode string.</span></span>
+<span data-ttu-id="b9cd7-109">Na saída, ponteiro para a cadeia de caracteres Unicode convertida.</span><span class="sxs-lookup"><span data-stu-id="b9cd7-109">On output, pointer to the converted Unicode string.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="93975-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="93975-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b9cd7-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b9cd7-110">Return value</span></span>
 
-<span data-ttu-id="93975-111">A função retorna o equivalente Unicode da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="93975-111">The function returns the Unicode equivalent of the string.</span></span>
+<span data-ttu-id="b9cd7-111">A função retorna o equivalente Unicode da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="b9cd7-111">The function returns the Unicode equivalent of the string.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="93975-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="93975-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="b9cd7-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b9cd7-112">Requirements</span></span>
 
 
 
-| <span data-ttu-id="93975-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="93975-113">Requirement</span></span> | <span data-ttu-id="93975-114">Valor</span><span class="sxs-lookup"><span data-stu-id="93975-114">Value</span></span> |
+| <span data-ttu-id="b9cd7-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="b9cd7-113">Requirement</span></span> | <span data-ttu-id="b9cd7-114">Valor</span><span class="sxs-lookup"><span data-stu-id="b9cd7-114">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="93975-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="93975-115">Minimum supported client</span></span><br/> | <span data-ttu-id="93975-116">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="93975-116">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                           |
-| <span data-ttu-id="93975-117">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="93975-117">Minimum supported server</span></span><br/> | <span data-ttu-id="93975-118">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="93975-118">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                 |
-| <span data-ttu-id="93975-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="93975-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="93975-120"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="93975-120"><dt>Netmon.h</dt></span></span> </dl>  |
-| <span data-ttu-id="93975-121">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="93975-121">Library</span></span><br/>                  | <dl> <span data-ttu-id="93975-122"><dt>Nmapi. lib</dt></span><span class="sxs-lookup"><span data-stu-id="93975-122"><dt>Nmapi.lib</dt></span></span> </dl> |
-| <span data-ttu-id="93975-123">DLL</span><span class="sxs-lookup"><span data-stu-id="93975-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="93975-124"><dt>Nmapi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="93975-124"><dt>Nmapi.dll</dt></span></span> </dl> |
+| <span data-ttu-id="b9cd7-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b9cd7-115">Minimum supported client</span></span><br/> | <span data-ttu-id="b9cd7-116">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="b9cd7-116">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                           |
+| <span data-ttu-id="b9cd7-117">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b9cd7-117">Minimum supported server</span></span><br/> | <span data-ttu-id="b9cd7-118">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="b9cd7-118">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                 |
+| <span data-ttu-id="b9cd7-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b9cd7-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="b9cd7-120"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="b9cd7-120"><dt>Netmon.h</dt></span></span> </dl>  |
+| <span data-ttu-id="b9cd7-121">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="b9cd7-121">Library</span></span><br/>                  | <dl> <span data-ttu-id="b9cd7-122"><dt>Nmapi. lib</dt></span><span class="sxs-lookup"><span data-stu-id="b9cd7-122"><dt>Nmapi.lib</dt></span></span> </dl> |
+| <span data-ttu-id="b9cd7-123">DLL</span><span class="sxs-lookup"><span data-stu-id="b9cd7-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b9cd7-124"><dt>Nmapi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b9cd7-124"><dt>Nmapi.dll</dt></span></span> </dl> |
 
 
 

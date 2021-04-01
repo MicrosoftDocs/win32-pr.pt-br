@@ -19,30 +19,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638521"
 ---
-# <a name="aspectratioy"></a><span data-ttu-id="2df35-104">AspectRatioY</span><span class="sxs-lookup"><span data-stu-id="2df35-104">AspectRatioY</span></span>
+# <a name="aspectratioy"></a><span data-ttu-id="e881c-104">AspectRatioY</span><span class="sxs-lookup"><span data-stu-id="e881c-104">AspectRatioY</span></span>
 
-<span data-ttu-id="2df35-105">O atributo **AspectRatioY** contém o componente de altura da taxa de proporção de pixel para um fluxo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="2df35-105">The **AspectRatioY** attribute contains the height component of the pixel aspect ratio for a video stream.</span></span>
+<span data-ttu-id="e881c-105">O atributo **AspectRatioY** contém o componente de altura da taxa de proporção de pixel para um fluxo de vídeo.</span><span class="sxs-lookup"><span data-stu-id="e881c-105">The **AspectRatioY** attribute contains the height component of the pixel aspect ratio for a video stream.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="2df35-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="2df35-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="e881c-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="e881c-106">Global Constant</span></span>
 
-<span data-ttu-id="2df35-107">g \_ wszWMAspectRatioY</span><span class="sxs-lookup"><span data-stu-id="2df35-107">g\_wszWMAspectRatioY</span></span>
+<span data-ttu-id="e881c-107">g \_ wszWMAspectRatioY</span><span class="sxs-lookup"><span data-stu-id="e881c-107">g\_wszWMAspectRatioY</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="2df35-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="2df35-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="e881c-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="e881c-108">Data Type</span></span>
 
-<span data-ttu-id="2df35-109">**WMT \_ tipo \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="2df35-109">**WMT\_TYPE\_DWORD**</span></span>
+<span data-ttu-id="e881c-109">**WMT \_ tipo \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="e881c-109">**WMT\_TYPE\_DWORD**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2df35-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="2df35-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e881c-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="e881c-110">Remarks</span></span>
 
-<span data-ttu-id="2df35-111">Ao acessar a interface **IWMHeaderInfo3** do objeto gravador, você pode adicionar ou alterar esse valor.</span><span class="sxs-lookup"><span data-stu-id="2df35-111">When accessing the **IWMHeaderInfo3** interface of the writer object, you can add or change this value.</span></span> <span data-ttu-id="2df35-112">Em outros objetos (editor de metadados, leitor e leitor síncrono), esse valor é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2df35-112">In other objects (metadata editor, reader, and synchronous reader), this value is read-only.</span></span>
+<span data-ttu-id="e881c-111">Ao acessar a interface **IWMHeaderInfo3** do objeto gravador, você pode adicionar ou alterar esse valor.</span><span class="sxs-lookup"><span data-stu-id="e881c-111">When accessing the **IWMHeaderInfo3** interface of the writer object, you can add or change this value.</span></span> <span data-ttu-id="e881c-112">Em outros objetos (editor de metadados, leitor e leitor síncrono), esse valor é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e881c-112">In other objects (metadata editor, reader, and synchronous reader), this value is read-only.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2df35-113">Consulte também</span><span class="sxs-lookup"><span data-stu-id="2df35-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e881c-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="e881c-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2df35-114">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="2df35-114">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="e881c-114">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="e881c-114">**Attribute List**</span></span>](attribute-list.md)
 </dt> <dt>
 
-[<span data-ttu-id="2df35-115">**Para ler e gravar fluxos de vídeo com pixels não quadrados**</span><span class="sxs-lookup"><span data-stu-id="2df35-115">**To Read and Write Video Streams with Non-Square Pixels**</span></span>](to-read-and-write-video-streams-with-non-square-pixels.md)
+[<span data-ttu-id="e881c-115">**Para ler e gravar fluxos de vídeo com pixels não quadrados**</span><span class="sxs-lookup"><span data-stu-id="e881c-115">**To Read and Write Video Streams with Non-Square Pixels**</span></span>](to-read-and-write-video-streams-with-non-square-pixels.md)
 </dt> </dl>
 
  

@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636485"
 ---
-# <a name="httppurchaseorderwithusernameoversslserviceexample"></a><span data-ttu-id="59f65-106">HttpPurchaseOrderWithUserNameOverSslServiceExample</span><span class="sxs-lookup"><span data-stu-id="59f65-106">HttpPurchaseOrderWithUserNameOverSslServiceExample</span></span>
+# <a name="httppurchaseorderwithusernameoversslserviceexample"></a><span data-ttu-id="81fa1-106">HttpPurchaseOrderWithUserNameOverSslServiceExample</span><span class="sxs-lookup"><span data-stu-id="81fa1-106">HttpPurchaseOrderWithUserNameOverSslServiceExample</span></span>
 
-<span data-ttu-id="59f65-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com o nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="59f65-107">This example shows how to use service host for hosting a PurchaseOrder service over HTTP, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="59f65-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="59f65-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="59f65-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="59f65-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
+<span data-ttu-id="81fa1-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com o nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="81fa1-107">This example shows how to use service host for hosting a PurchaseOrder service over HTTP, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="81fa1-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="81fa1-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="81fa1-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="81fa1-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
 
--   [<span data-ttu-id="59f65-110">PurchaseOrderServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="59f65-110">PurchaseOrderServiceUserNameOverSsl.cpp</span></span>](#purchaseorderserviceusernameoversslcpp)
--   [<span data-ttu-id="59f65-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="59f65-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="59f65-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="59f65-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="81fa1-110">PurchaseOrderServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="81fa1-110">PurchaseOrderServiceUserNameOverSsl.cpp</span></span>](#purchaseorderserviceusernameoversslcpp)
+-   [<span data-ttu-id="81fa1-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="81fa1-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="81fa1-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="81fa1-112">Makefile</span></span>](#makefile)
 
-## <a name="purchaseorderserviceusernameoversslcpp"></a><span data-ttu-id="59f65-113">PurchaseOrderServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="59f65-113">PurchaseOrderServiceUserNameOverSsl.cpp</span></span>
+## <a name="purchaseorderserviceusernameoversslcpp"></a><span data-ttu-id="81fa1-113">PurchaseOrderServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="81fa1-113">PurchaseOrderServiceUserNameOverSsl.cpp</span></span>
 
 
 ```C++
@@ -470,7 +470,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="59f65-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="59f65-114">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="81fa1-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="81fa1-114">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -581,7 +581,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="59f65-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="59f65-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="81fa1-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="81fa1-115">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>

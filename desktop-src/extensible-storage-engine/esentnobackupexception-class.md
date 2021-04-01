@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646959"
 ---
-# <a name="esentnobackupexception-class"></a><span data-ttu-id="1caa9-103">Classe EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="1caa9-103">EsentNoBackupException class</span></span>
+# <a name="esentnobackupexception-class"></a><span data-ttu-id="d121e-103">Classe EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="d121e-103">EsentNoBackupException class</span></span>
 
-<span data-ttu-id="1caa9-104">Classe base para JET_err. Exceções nobackup.</span><span class="sxs-lookup"><span data-stu-id="1caa9-104">Base class for JET_err.NoBackup exceptions.</span></span>
+<span data-ttu-id="d121e-104">Classe base para JET_err. Exceções nobackup.</span><span class="sxs-lookup"><span data-stu-id="d121e-104">Base class for JET_err.NoBackup exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="1caa9-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="1caa9-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="d121e-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="d121e-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="1caa9-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="1caa9-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="1caa9-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="1caa9-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="1caa9-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="1caa9-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="1caa9-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="1caa9-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="1caa9-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="1caa9-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="1caa9-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="1caa9-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
-            <span data-ttu-id="1caa9-112">Microsoft. ISAM. ESENT. Interop. EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="1caa9-112">Microsoft.Isam.Esent.Interop.EsentNoBackupException</span></span>  
+[<span data-ttu-id="d121e-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="d121e-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="d121e-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="d121e-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="d121e-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="d121e-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="d121e-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="d121e-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="d121e-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="d121e-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="d121e-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="d121e-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
+            <span data-ttu-id="d121e-112">Microsoft. ISAM. ESENT. Interop. EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="d121e-112">Microsoft.Isam.Esent.Interop.EsentNoBackupException</span></span>  
 
-<span data-ttu-id="1caa9-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1caa9-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="1caa9-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1caa9-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="d121e-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d121e-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="d121e-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d121e-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1caa9-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="1caa9-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d121e-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="d121e-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentNoBackupException
 public sealed class EsentNoBackupException : EsentStateException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="1caa9-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="1caa9-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="d121e-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="d121e-116">Thread safety</span></span>
 
-<span data-ttu-id="1caa9-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="1caa9-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="1caa9-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="1caa9-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="d121e-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="d121e-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="d121e-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="d121e-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1caa9-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="1caa9-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d121e-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="d121e-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="1caa9-120">Referência</span><span class="sxs-lookup"><span data-stu-id="1caa9-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="d121e-120">Referência</span><span class="sxs-lookup"><span data-stu-id="d121e-120">Reference</span></span>
 
-[<span data-ttu-id="1caa9-121">Membros do EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="1caa9-121">EsentNoBackupException members</span></span>](./esentnobackupexception-members.md)
+[<span data-ttu-id="d121e-121">Membros do EsentNoBackupException</span><span class="sxs-lookup"><span data-stu-id="d121e-121">EsentNoBackupException members</span></span>](./esentnobackupexception-members.md)
 
-[<span data-ttu-id="1caa9-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1caa9-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="d121e-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d121e-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

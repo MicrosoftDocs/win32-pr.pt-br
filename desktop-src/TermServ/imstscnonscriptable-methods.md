@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636960"
 ---
-# <a name="imstscnonscriptable-methods"></a><span data-ttu-id="e5087-103">Métodos IMsTscNonScriptable</span><span class="sxs-lookup"><span data-stu-id="e5087-103">IMsTscNonScriptable Methods</span></span>
+# <a name="imstscnonscriptable-methods"></a><span data-ttu-id="faa29-103">Métodos IMsTscNonScriptable</span><span class="sxs-lookup"><span data-stu-id="faa29-103">IMsTscNonScriptable Methods</span></span>
 
-<span data-ttu-id="e5087-104">A interface [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="e5087-104">The [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="faa29-104">A interface [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="faa29-104">The [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e5087-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e5087-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="faa29-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="faa29-105">In this section</span></span>
 
--   [<span data-ttu-id="e5087-106">**Método ResetPassword**</span><span class="sxs-lookup"><span data-stu-id="e5087-106">**ResetPassword method**</span></span>](imstscnonscriptable-resetpassword.md)
+-   [<span data-ttu-id="faa29-106">**Método ResetPassword**</span><span class="sxs-lookup"><span data-stu-id="faa29-106">**ResetPassword method**</span></span>](imstscnonscriptable-resetpassword.md)
 
  
 

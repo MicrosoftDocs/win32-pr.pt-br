@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661755"
 ---
-# <a name="swbemobjectpath-methods"></a><span data-ttu-id="773fa-103">Métodos SWbemObjectPath</span><span class="sxs-lookup"><span data-stu-id="773fa-103">SWbemObjectPath Methods</span></span>
+# <a name="swbemobjectpath-methods"></a><span data-ttu-id="67da4-103">Métodos SWbemObjectPath</span><span class="sxs-lookup"><span data-stu-id="67da4-103">SWbemObjectPath Methods</span></span>
 
-<span data-ttu-id="773fa-104">O objeto [**SWbemObjectPath**](swbemobjectpath.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="773fa-104">The [**SWbemObjectPath**](swbemobjectpath.md) object exposes the following methods.</span></span>
+<span data-ttu-id="67da4-104">O objeto [**SWbemObjectPath**](swbemobjectpath.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="67da4-104">The [**SWbemObjectPath**](swbemobjectpath.md) object exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="773fa-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="773fa-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="67da4-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="67da4-105">In this section</span></span>
 
--   [<span data-ttu-id="773fa-106">**Método SetAsSingleton**</span><span class="sxs-lookup"><span data-stu-id="773fa-106">**SetAsSingleton method**</span></span>](swbemobjectpath-setassingleton.md)
+-   [<span data-ttu-id="67da4-106">**Método SetAsSingleton**</span><span class="sxs-lookup"><span data-stu-id="67da4-106">**SetAsSingleton method**</span></span>](swbemobjectpath-setassingleton.md)
 
  
 

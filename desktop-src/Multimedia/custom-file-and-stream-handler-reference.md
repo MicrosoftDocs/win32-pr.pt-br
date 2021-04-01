@@ -20,12 +20,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636004"
 ---
-# <a name="custom-file-and-stream-handler-reference"></a><span data-ttu-id="af532-111">Referência de manipulador de arquivo e fluxo personalizado</span><span class="sxs-lookup"><span data-stu-id="af532-111">Custom File and Stream Handler Reference</span></span>
+# <a name="custom-file-and-stream-handler-reference"></a><span data-ttu-id="5dd0e-111">Referência de manipulador de arquivo e fluxo personalizado</span><span class="sxs-lookup"><span data-stu-id="5dd0e-111">Custom File and Stream Handler Reference</span></span>
 
-<span data-ttu-id="af532-112">Os elementos a seguir são usados com manipuladores de arquivo e fluxo personalizados.</span><span class="sxs-lookup"><span data-stu-id="af532-112">The following elements are used with custom file and stream handlers.</span></span>
+<span data-ttu-id="5dd0e-112">Os elementos a seguir são usados com manipuladores de arquivo e fluxo personalizados.</span><span class="sxs-lookup"><span data-stu-id="5dd0e-112">The following elements are used with custom file and stream handlers.</span></span>
 
--   [<span data-ttu-id="af532-113">Funções personalizadas de manipulador de arquivo e fluxo</span><span class="sxs-lookup"><span data-stu-id="af532-113">Custom File and Stream Handler Functions</span></span>](custom-file-and-stream-handler-functions.md)
--   [<span data-ttu-id="af532-114">Interfaces de manipulador de arquivo e fluxo personalizadas</span><span class="sxs-lookup"><span data-stu-id="af532-114">Custom File and Stream Handler Interfaces</span></span>](custom-file-and-stream-handler-interfaces.md)
+-   [<span data-ttu-id="5dd0e-113">Funções personalizadas de manipulador de arquivo e fluxo</span><span class="sxs-lookup"><span data-stu-id="5dd0e-113">Custom File and Stream Handler Functions</span></span>](custom-file-and-stream-handler-functions.md)
+-   [<span data-ttu-id="5dd0e-114">Interfaces de manipulador de arquivo e fluxo personalizadas</span><span class="sxs-lookup"><span data-stu-id="5dd0e-114">Custom File and Stream Handler Interfaces</span></span>](custom-file-and-stream-handler-interfaces.md)
 
  
 

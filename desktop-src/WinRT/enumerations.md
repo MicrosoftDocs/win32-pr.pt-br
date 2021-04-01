@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647150"
 ---
-# <a name="enumerations"></a><span data-ttu-id="540c2-103">Enumerações</span><span class="sxs-lookup"><span data-stu-id="540c2-103">Enumerations</span></span>
+# <a name="enumerations"></a><span data-ttu-id="58b74-103">Enumerações</span><span class="sxs-lookup"><span data-stu-id="58b74-103">Enumerations</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="540c2-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="540c2-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="58b74-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="58b74-104">In this section</span></span>
 
--   [<span data-ttu-id="540c2-105">**MANIPULAR \_ Opções de acesso \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-105">**HANDLE\_ACCESS\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_access_options)
--   [<span data-ttu-id="540c2-106">**\_Opções de criação de identificador \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-106">**HANDLE\_CREATION\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_creation_options)
--   [<span data-ttu-id="540c2-107">**opções de identificador \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-107">**HANDLE\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_options)
--   [<span data-ttu-id="540c2-108">**MANIPULAR \_ Opções de compartilhamento \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-108">**HANDLE\_SHARING\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_sharing_options)
--   [<span data-ttu-id="540c2-109">**ActivationType**</span><span class="sxs-lookup"><span data-stu-id="540c2-109">**ActivationType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-activationtype)
--   [<span data-ttu-id="540c2-110">**AgileReferenceOptions**</span><span class="sxs-lookup"><span data-stu-id="540c2-110">**AgileReferenceOptions**</span></span>](/windows/desktop/api/combaseapi/ne-combaseapi-agilereferenceoptions)
--   [<span data-ttu-id="540c2-111">**opções de BSOS \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-111">**BSOS\_OPTIONS**</span></span>](/windows/win32/api/shcore/ne-shcore-bsos_options)
--   [<span data-ttu-id="540c2-112">**AsyncStatus**</span><span class="sxs-lookup"><span data-stu-id="540c2-112">**AsyncStatus**</span></span>](/windows/win32/api/asyncinfo/ne-asyncinfo-asyncstatus)
--   <span data-ttu-id="540c2-113">[**Errooptions**](/previous-versions//hh438361(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="540c2-113">[**ErrorOptions**](/previous-versions//hh438361(v=vs.85))</span></span>
--   [<span data-ttu-id="540c2-114">**IdentityType**</span><span class="sxs-lookup"><span data-stu-id="540c2-114">**IdentityType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-identitytype)
--   <span data-ttu-id="540c2-115">[**InputStreamOptions**](/previous-versions//hh438389(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="540c2-115">[**InputStreamOptions**](/previous-versions//hh438389(v=vs.85))</span></span>
--   [<span data-ttu-id="540c2-116">**InstancingType**</span><span class="sxs-lookup"><span data-stu-id="540c2-116">**InstancingType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-instancingtype)
--   [<span data-ttu-id="540c2-117">**PropertyType**</span><span class="sxs-lookup"><span data-stu-id="540c2-117">**PropertyType**</span></span>](/windows/win32/api/windows.foundation/ne-windows-foundation-propertytype)
--   <span data-ttu-id="540c2-118">[**RegisteredTrustLevel**](/previous-versions//dn408470(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="540c2-118">[**RegisteredTrustLevel**](/previous-versions//dn408470(v=vs.85))</span></span>
--   [<span data-ttu-id="540c2-119">**RegistrationScope**</span><span class="sxs-lookup"><span data-stu-id="540c2-119">**RegistrationScope**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_registrationscope)
--   [<span data-ttu-id="540c2-120">**ThreadingType**</span><span class="sxs-lookup"><span data-stu-id="540c2-120">**ThreadingType**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-idllserveractivatableclassregistration-get_threadingtype)
--   [<span data-ttu-id="540c2-121">**TrustLevel**</span><span class="sxs-lookup"><span data-stu-id="540c2-121">**TrustLevel**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_registeredtrustlevel)
--   [<span data-ttu-id="540c2-122">**\_tipo de init ro \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-122">**RO\_INIT\_TYPE**</span></span>](/windows/win32/api/roapi/ne-roapi-ro_init_type)
--   [<span data-ttu-id="540c2-123">**\_sinalizadores de \_ relatório de erros ro \_**</span><span class="sxs-lookup"><span data-stu-id="540c2-123">**RO\_ERROR\_REPORTING\_FLAGS**</span></span>](/windows/win32/api/roerrorapi/ne-roerrorapi-roerrorreportingflags)
+-   [<span data-ttu-id="58b74-105">**MANIPULAR \_ Opções de acesso \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-105">**HANDLE\_ACCESS\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_access_options)
+-   [<span data-ttu-id="58b74-106">**\_Opções de criação de identificador \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-106">**HANDLE\_CREATION\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_creation_options)
+-   [<span data-ttu-id="58b74-107">**opções de identificador \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-107">**HANDLE\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_options)
+-   [<span data-ttu-id="58b74-108">**MANIPULAR \_ Opções de compartilhamento \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-108">**HANDLE\_SHARING\_OPTIONS**</span></span>](/windows/desktop/api/windowsstoragecom/ne-windowsstoragecom-handle_sharing_options)
+-   [<span data-ttu-id="58b74-109">**ActivationType**</span><span class="sxs-lookup"><span data-stu-id="58b74-109">**ActivationType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-activationtype)
+-   [<span data-ttu-id="58b74-110">**AgileReferenceOptions**</span><span class="sxs-lookup"><span data-stu-id="58b74-110">**AgileReferenceOptions**</span></span>](/windows/desktop/api/combaseapi/ne-combaseapi-agilereferenceoptions)
+-   [<span data-ttu-id="58b74-111">**opções de BSOS \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-111">**BSOS\_OPTIONS**</span></span>](/windows/win32/api/shcore/ne-shcore-bsos_options)
+-   [<span data-ttu-id="58b74-112">**AsyncStatus**</span><span class="sxs-lookup"><span data-stu-id="58b74-112">**AsyncStatus**</span></span>](/windows/win32/api/asyncinfo/ne-asyncinfo-asyncstatus)
+-   <span data-ttu-id="58b74-113">[**Errooptions**](/previous-versions//hh438361(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="58b74-113">[**ErrorOptions**](/previous-versions//hh438361(v=vs.85))</span></span>
+-   [<span data-ttu-id="58b74-114">**IdentityType**</span><span class="sxs-lookup"><span data-stu-id="58b74-114">**IdentityType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-identitytype)
+-   <span data-ttu-id="58b74-115">[**InputStreamOptions**](/previous-versions//hh438389(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="58b74-115">[**InputStreamOptions**](/previous-versions//hh438389(v=vs.85))</span></span>
+-   [<span data-ttu-id="58b74-116">**InstancingType**</span><span class="sxs-lookup"><span data-stu-id="58b74-116">**InstancingType**</span></span>](/windows/win32/api/activationregistration/ne-activationregistration-instancingtype)
+-   [<span data-ttu-id="58b74-117">**PropertyType**</span><span class="sxs-lookup"><span data-stu-id="58b74-117">**PropertyType**</span></span>](/windows/win32/api/windows.foundation/ne-windows-foundation-propertytype)
+-   <span data-ttu-id="58b74-118">[**RegisteredTrustLevel**](/previous-versions//dn408470(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="58b74-118">[**RegisteredTrustLevel**](/previous-versions//dn408470(v=vs.85))</span></span>
+-   [<span data-ttu-id="58b74-119">**RegistrationScope**</span><span class="sxs-lookup"><span data-stu-id="58b74-119">**RegistrationScope**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_registrationscope)
+-   [<span data-ttu-id="58b74-120">**ThreadingType**</span><span class="sxs-lookup"><span data-stu-id="58b74-120">**ThreadingType**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-idllserveractivatableclassregistration-get_threadingtype)
+-   [<span data-ttu-id="58b74-121">**TrustLevel**</span><span class="sxs-lookup"><span data-stu-id="58b74-121">**TrustLevel**</span></span>](/windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_registeredtrustlevel)
+-   [<span data-ttu-id="58b74-122">**\_tipo de init ro \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-122">**RO\_INIT\_TYPE**</span></span>](/windows/win32/api/roapi/ne-roapi-ro_init_type)
+-   [<span data-ttu-id="58b74-123">**\_sinalizadores de \_ relatório de erros ro \_**</span><span class="sxs-lookup"><span data-stu-id="58b74-123">**RO\_ERROR\_REPORTING\_FLAGS**</span></span>](/windows/win32/api/roerrorapi/ne-roerrorapi-roerrorreportingflags)
 
  
 
