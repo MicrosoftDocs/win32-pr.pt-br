@@ -36,7 +36,7 @@ A data em que este objeto foi criado. Esse valor é replicado.
 | Frequência de atualização  | Quando o objeto é criado.                                   |
 | Attribute-Id      | 2.5.18.1                                                      |
 | System-ID-GUID    | 2df90d73-009f-11d2-aa4c-00c04fd7d83a                          |
-| Sintaxe            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 

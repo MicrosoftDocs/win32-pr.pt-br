@@ -36,7 +36,7 @@ O tamanho máximo, em bytes, de um arquivo de conta RSVP.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.902               |
 | System-ID-GUID    | f0722311-aef5-11d1-bdcf-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

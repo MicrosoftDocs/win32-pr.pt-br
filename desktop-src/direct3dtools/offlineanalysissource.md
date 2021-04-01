@@ -28,7 +28,7 @@ ms.locfileid: "103645854"
 
 Uma enumeração usada para indicar a fonte de informações gráficas para análise de quadros.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

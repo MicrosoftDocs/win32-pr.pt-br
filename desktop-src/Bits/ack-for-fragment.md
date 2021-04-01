@@ -120,7 +120,7 @@ Substitua o contexto de erro por um número hexadecimal que represente o context
 
 Se a sessão for para um trabalho de resposta de upload, pode haver um atraso antes que o cliente receba a **confirmação final para** a resposta do fragmento. O comprimento do atraso depende da quantidade de tempo que o aplicativo de servidor (aplicativo no qual o servidor posta o arquivo de upload) leva para gerar a resposta.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

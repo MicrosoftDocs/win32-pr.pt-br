@@ -56,7 +56,7 @@ Defina essa propriedade se o codificador estiver executando um telecineon invers
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

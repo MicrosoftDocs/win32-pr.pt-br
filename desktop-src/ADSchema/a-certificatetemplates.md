@@ -36,7 +36,7 @@ Contém informações para um certificado emitido por um servidor de certificado
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.823                      |
 | System-ID-GUID    | 2a39c5b1-8960-11d1-aebc-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

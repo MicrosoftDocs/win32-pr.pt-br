@@ -30,7 +30,7 @@ Vários subtipos de mídia na tabela a seguir fornecem menos cores do que o sist
 
 
 
-| Subtipo de mídia descompactada | Description                                                                                                                                                                                                              |
+| Subtipo de mídia descompactada | Descrição                                                                                                                                                                                                              |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WMMEDIASUBTYPE \_ RGB1       | Vídeo RGB palettized com 1 bit de cor representando 2 cores. Geralmente usado para imagens monocromáticas.                                                                                                                         |
 | WMMEDIASUBTYPE \_ RGB4       | Vídeo RGB palettized com 4 bits de cor representando 16 cores.                                                                                                                                                           |

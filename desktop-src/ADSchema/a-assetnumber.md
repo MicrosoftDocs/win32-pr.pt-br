@@ -36,7 +36,7 @@ O número de rastreamento do objeto.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.283                      |
 | System-ID-GUID    | ba305f75-47e3-11d0-a1a6-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

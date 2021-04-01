@@ -36,7 +36,7 @@ Para um RODC (controlador de domínio Read-Only), identifica se os segredos do u
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2025              |
 | System-ID-GUID    | fe01245a-341f-4556-951f-48c033a89050 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

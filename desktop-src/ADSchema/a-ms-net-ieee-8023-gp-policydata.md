@@ -35,7 +35,7 @@ Contém todas as configurações e dados que compõem uma configuração Políti
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1955                     |
 | System-ID-GUID    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

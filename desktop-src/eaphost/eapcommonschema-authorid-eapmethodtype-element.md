@@ -50,7 +50,7 @@ Os elementos **AuthorId** e [**VendorID**](eapcommonschema-vendorid-eapmethodtyp
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

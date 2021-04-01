@@ -64,7 +64,7 @@ Esse atributo pode ser zero ou uma combinação de um ou mais dos valores a segu
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.327               |
 | System-ID-GUID    | 7d6c0e99-7e20-11d0-afd6-00c04fd930c9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -64,7 +64,7 @@ Essa propriedade também é usada com [codificadores de câmera H. 264 UVC 1,5](
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

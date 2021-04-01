@@ -28,13 +28,13 @@ ms.locfileid: "103645855"
 
 Uma função de retorno de chamada usada para notificar o host quando uma textura foi liberada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
 ```
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IPixEngine5Callbacks**](/windows/desktop/direct3dtools/ipixengine5callbacks)
 

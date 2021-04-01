@@ -60,7 +60,7 @@ Os valores de registro do método de autenticador restantes são opcionais.
 
 | Valor Constante | AuthenticatorDllPath                                                                                          |
 |----------------|---------------------------------------------------------------------------------------------------------------|
-| Type           | REG \_ expande \_ sz                                                                                               |
+| Tipo           | REG \_ expande \_ sz                                                                                               |
 | Descrição    | O caminho para a DLL do método de autenticador EAP. Por exemplo,% SystemRoot% \\ System32 \\ &lt; nome \_ de \_ dll &gt; . dll. |
 
 
@@ -73,7 +73,7 @@ Os valores de registro do método de autenticador restantes são opcionais.
 
 | Valor Constante | AuthenticatorFriendlyName                                                          |
 |----------------|------------------------------------------------------------------------------------|
-| Type           | REG \_ sz                                                                            |
+| Tipo           | REG \_ sz                                                                            |
 | Descrição    | Cadeia de caracteres que contém o nome amigável (exibição) para o método de autenticador EAP. |
 
 
@@ -86,7 +86,7 @@ Os valores de registro do método de autenticador restantes são opcionais.
 
 | Valor Constante | ConfigCLSID                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Type           | REG \_ sz                                                                                                                               |
+| Tipo           | REG \_ sz                                                                                                                               |
 | Descrição    | Cadeia de caracteres que contém o GUID de classe de configuração para esse método autenticador, no formato {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} |
 
 
@@ -99,7 +99,7 @@ Os valores de registro do método de autenticador restantes são opcionais.
 
 | Valor Constante | Propriedades                                                                                                                                                  |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Type           | REG \_ DWORD                                                                                                                                                  |
+| Tipo           | REG \_ DWORD                                                                                                                                                  |
 | Descrição    | Os bits no DWORD são definidos para indicar suporte para a propriedade. Para obter uma lista de valores com suporte, consulte [**Propriedades do método EAP**](eap-method-properties.md). |
 
 
@@ -112,7 +112,7 @@ Os valores de registro do método de autenticador restantes são opcionais.
 
 | Valor Constante | StandaloneSupported                                             |
 |----------------|-----------------------------------------------------------------|
-| Type           | REG \_ DWORD                                                      |
+| Tipo           | REG \_ DWORD                                                      |
 | Descrição    | 0 se esse for um método de autenticador autônomo; 1 se não for. |
 
 

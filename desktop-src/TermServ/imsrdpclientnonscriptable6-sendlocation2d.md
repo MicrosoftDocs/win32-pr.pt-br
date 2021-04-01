@@ -59,7 +59,7 @@ Retornar **S \_ OK** se for bem-sucedido.
 | DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpClientNonScriptable6 é definido como 05293249-B28B-4DB8-BE64-1B2F496B910E            |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
