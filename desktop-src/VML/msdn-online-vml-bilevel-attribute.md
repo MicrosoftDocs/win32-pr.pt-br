@@ -11,40 +11,40 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641352"
 ---
-# <a name="vml-bilevel-attribute"></a><span data-ttu-id="48123-103">Atributo biníveis da VML</span><span class="sxs-lookup"><span data-stu-id="48123-103">VML Bilevel Attribute</span></span>
+# <a name="vml-bilevel-attribute"></a><span data-ttu-id="c97d5-103">Atributo biníveis da VML</span><span class="sxs-lookup"><span data-stu-id="c97d5-103">VML Bilevel Attribute</span></span>
 
-<span data-ttu-id="48123-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="48123-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="48123-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="48123-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="c97d5-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="c97d5-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="c97d5-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="c97d5-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="48123-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="48123-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="48123-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="48123-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="48123-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="48123-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="48123-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="48123-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="c97d5-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="c97d5-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="c97d5-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="c97d5-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="c97d5-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="c97d5-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="c97d5-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="c97d5-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
  
 
-<span data-ttu-id="48123-110">Determina se uma imagem será exibida em preto e branco.</span><span class="sxs-lookup"><span data-stu-id="48123-110">Determines whether an image will be displayed in black and white.</span></span> <span data-ttu-id="48123-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="48123-111">Read/write.</span></span> <span data-ttu-id="48123-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="48123-112">**VgTriState**.</span></span>
+<span data-ttu-id="c97d5-110">Determina se uma imagem será exibida em preto e branco.</span><span class="sxs-lookup"><span data-stu-id="c97d5-110">Determines whether an image will be displayed in black and white.</span></span> <span data-ttu-id="c97d5-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c97d5-111">Read/write.</span></span> <span data-ttu-id="c97d5-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="c97d5-112">**VgTriState**.</span></span>
 
-<span data-ttu-id="48123-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="48123-113">**Applies To**</span></span>
+<span data-ttu-id="c97d5-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="c97d5-113">**Applies To**</span></span>
 
-[<span data-ttu-id="48123-114">ImageData</span><span class="sxs-lookup"><span data-stu-id="48123-114">ImageData</span></span>](msdn-online-vml-imagedata-element.md)
+[<span data-ttu-id="c97d5-114">ImageData</span><span class="sxs-lookup"><span data-stu-id="c97d5-114">ImageData</span></span>](msdn-online-vml-imagedata-element.md)
 
-<span data-ttu-id="48123-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="48123-115">**Tag Syntax**</span></span>
+<span data-ttu-id="c97d5-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="c97d5-115">**Tag Syntax**</span></span>
 
-<span data-ttu-id="48123-116"><v: *Element* bilevement = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="48123-116"><v: *element* bilevel=" *expression* "></span></span>
+<span data-ttu-id="c97d5-116"><v: *Element* bilevement = " *expression* " ></span><span class="sxs-lookup"><span data-stu-id="c97d5-116"><v: *element* bilevel=" *expression* "></span></span>
 
-<span data-ttu-id="48123-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="48123-117">**Script Syntax**</span></span>
+<span data-ttu-id="c97d5-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="c97d5-117">**Script Syntax**</span></span>
 
-<span data-ttu-id="48123-118">*elemento* . bilevel = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="48123-118">*element* .bilevel="*expression*"</span></span>
+<span data-ttu-id="c97d5-118">*elemento* . bilevel = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="c97d5-118">*element* .bilevel="*expression*"</span></span>
 
-<span data-ttu-id="48123-119">*expressão* = de *elemento*. binível</span><span class="sxs-lookup"><span data-stu-id="48123-119">*expression*=*element*.bilevel</span></span>
+<span data-ttu-id="c97d5-119">*expressão* = de *elemento*. binível</span><span class="sxs-lookup"><span data-stu-id="c97d5-119">*expression*=*element*.bilevel</span></span>
 
-<span data-ttu-id="48123-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="48123-120">**Remarks**</span></span>
+<span data-ttu-id="c97d5-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="c97d5-120">**Remarks**</span></span>
 
-<span data-ttu-id="48123-121">Se **for true**, a imagem será exibida usando duas cores (preto e branco).</span><span class="sxs-lookup"><span data-stu-id="48123-121">If **True**, the image will be displayed using two colors (black and white).</span></span> <span data-ttu-id="48123-122">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="48123-122">The default is **False**.</span></span> <span data-ttu-id="48123-123">Isso cria um efeito semelhante à Posterização.</span><span class="sxs-lookup"><span data-stu-id="48123-123">This creates an effect similar to posterization.</span></span>
+<span data-ttu-id="c97d5-121">Se **for true**, a imagem será exibida usando duas cores (preto e branco).</span><span class="sxs-lookup"><span data-stu-id="c97d5-121">If **True**, the image will be displayed using two colors (black and white).</span></span> <span data-ttu-id="c97d5-122">O padrão é **False**.</span><span class="sxs-lookup"><span data-stu-id="c97d5-122">The default is **False**.</span></span> <span data-ttu-id="c97d5-123">Isso cria um efeito semelhante à Posterização.</span><span class="sxs-lookup"><span data-stu-id="c97d5-123">This creates an effect similar to posterization.</span></span>
 
-<span data-ttu-id="48123-124">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="48123-124">*VML Standard Attribute*</span></span>
+<span data-ttu-id="c97d5-124">*Atributo padrão da VML*</span><span class="sxs-lookup"><span data-stu-id="c97d5-124">*VML Standard Attribute*</span></span>
 
-<span data-ttu-id="48123-125">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="48123-125">**Example**</span></span>
+<span data-ttu-id="c97d5-125">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="c97d5-125">**Example**</span></span>
 
-<span data-ttu-id="48123-126">A imagem será exibida somente em preto e branco.</span><span class="sxs-lookup"><span data-stu-id="48123-126">The image will be displayed in black and white only.</span></span>
+<span data-ttu-id="c97d5-126">A imagem será exibida somente em preto e branco.</span><span class="sxs-lookup"><span data-stu-id="c97d5-126">The image will be displayed in black and white only.</span></span>
 
 
 ```HTML

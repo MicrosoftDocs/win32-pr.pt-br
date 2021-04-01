@@ -13,16 +13,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829275"
 ---
-# <a name="f-wmi"></a><span data-ttu-id="6339a-103">F (WMI)</span><span class="sxs-lookup"><span data-stu-id="6339a-103">F (WMI)</span></span>
+# <a name="f-wmi"></a><span data-ttu-id="ee77a-103">F (WMI)</span><span class="sxs-lookup"><span data-stu-id="ee77a-103">F (WMI)</span></span>
 
-<span data-ttu-id="6339a-104">[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) F G [H](gloss-h.md) [i](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z</span><span class="sxs-lookup"><span data-stu-id="6339a-104">[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) F G [H](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z</span></span>
+<span data-ttu-id="ee77a-104">[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) F G [H](gloss-h.md) [i](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z</span><span class="sxs-lookup"><span data-stu-id="ee77a-104">[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) F G [H](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="6339a-105"><span id="wmi.gloss_flavor"></span><span id="WMI.GLOSS_FLAVOR"></span>**tipo**</span><span class="sxs-lookup"><span data-stu-id="6339a-105"><span id="wmi.gloss_flavor"></span><span id="WMI.GLOSS_FLAVOR"></span>**flavor**</span></span>
+<span data-ttu-id="ee77a-105"><span id="wmi.gloss_flavor"></span><span id="WMI.GLOSS_FLAVOR"></span>**tipo**</span><span class="sxs-lookup"><span data-stu-id="ee77a-105"><span id="wmi.gloss_flavor"></span><span id="WMI.GLOSS_FLAVOR"></span>**flavor**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="6339a-106">Um sinalizador definido pelo WMI que descreve o comportamento de um [*qualificador*](gloss-q.md).</span><span class="sxs-lookup"><span data-stu-id="6339a-106">A WMI-defined flag that describes the behavior of a [*qualifier*](gloss-q.md).</span></span> <span data-ttu-id="6339a-107">Os tipos WMI descrevem as regras que especificam se um qualificador pode ser propagado para classes derivadas e instâncias e se uma classe ou instância derivada pode substituir o valor original do qualificador.</span><span class="sxs-lookup"><span data-stu-id="6339a-107">WMI flavors describe rules that specify whether a qualifier can be propagated to derived classes and instances and whether a derived class or instance can override the qualifier's original value.</span></span>
+<span data-ttu-id="ee77a-106">Um sinalizador definido pelo WMI que descreve o comportamento de um [*qualificador*](gloss-q.md).</span><span class="sxs-lookup"><span data-stu-id="ee77a-106">A WMI-defined flag that describes the behavior of a [*qualifier*](gloss-q.md).</span></span> <span data-ttu-id="ee77a-107">Os tipos WMI descrevem as regras que especificam se um qualificador pode ser propagado para classes derivadas e instâncias e se uma classe ou instância derivada pode substituir o valor original do qualificador.</span><span class="sxs-lookup"><span data-stu-id="ee77a-107">WMI flavors describe rules that specify whether a qualifier can be propagated to derived classes and instances and whether a derived class or instance can override the qualifier's original value.</span></span>
 
 </dd> </dl>
 

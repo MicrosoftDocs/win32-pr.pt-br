@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641857"
 ---
-# <a name="tlsextensionstype-complex-type"></a><span data-ttu-id="40c5d-104">Tipo complexo TLSExtensionsType</span><span class="sxs-lookup"><span data-stu-id="40c5d-104">TLSExtensionsType Complex Type</span></span>
+# <a name="tlsextensionstype-complex-type"></a><span data-ttu-id="aef9a-104">Tipo complexo TLSExtensionsType</span><span class="sxs-lookup"><span data-stu-id="aef9a-104">TLSExtensionsType Complex Type</span></span>
 
-<span data-ttu-id="40c5d-105">O tipo complexo **TLSExtensionsType** permite aprimoramentos futuros no esquema.</span><span class="sxs-lookup"><span data-stu-id="40c5d-105">The **TLSExtensionsType** complex type enables future enhancements to the schema.</span></span>
+<span data-ttu-id="aef9a-105">O tipo complexo **TLSExtensionsType** permite aprimoramentos futuros no esquema.</span><span class="sxs-lookup"><span data-stu-id="aef9a-105">The **TLSExtensionsType** complex type enables future enhancements to the schema.</span></span>
 
 
 ```XML
@@ -31,30 +31,30 @@ ms.locfileid: "103641857"
 
 
 
-## <a name="remarks"></a><span data-ttu-id="40c5d-106">Comentários</span><span class="sxs-lookup"><span data-stu-id="40c5d-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aef9a-106">Comentários</span><span class="sxs-lookup"><span data-stu-id="aef9a-106">Remarks</span></span>
 
-<span data-ttu-id="40c5d-107">O elemento **TLSExtensionsType** é opcional.</span><span class="sxs-lookup"><span data-stu-id="40c5d-107">The **TLSExtensionsType** element is optional.</span></span>
+<span data-ttu-id="aef9a-107">O elemento **TLSExtensionsType** é opcional.</span><span class="sxs-lookup"><span data-stu-id="aef9a-107">The **TLSExtensionsType** element is optional.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="40c5d-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="40c5d-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="aef9a-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="aef9a-108">Related topics</span></span>
 
-<dl> <span data-ttu-id="40c5d-109"><dt>
+<dl> <span data-ttu-id="aef9a-109"><dt>
 
 
-</dt> <dt></span><span class="sxs-lookup"><span data-stu-id="40c5d-109"><dt>
+</dt> <dt></span><span class="sxs-lookup"><span data-stu-id="aef9a-109"><dt>
 
 
 </dt> <dt></span></span>
 
-[<span data-ttu-id="40c5d-110">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="40c5d-110">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="aef9a-110">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="aef9a-110">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="40c5d-111">eaptlsconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="40c5d-111">eaptlsconnectionpropertiesv2</span></span>](eaptlsconnectionpropertiesv2schema-schema.md)
+[<span data-ttu-id="aef9a-111">eaptlsconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="aef9a-111">eaptlsconnectionpropertiesv2</span></span>](eaptlsconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
-[<span data-ttu-id="40c5d-112">Tipos complexos eaptlsconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="40c5d-112">eaptlsconnectionpropertiesv2 Complex Types</span></span>](eaptlsconnectionpropertiesv2schema-complex-types.md)
+[<span data-ttu-id="aef9a-112">Tipos complexos eaptlsconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="aef9a-112">eaptlsconnectionpropertiesv2 Complex Types</span></span>](eaptlsconnectionpropertiesv2schema-complex-types.md)
 </dt> <dt>
 
-[<span data-ttu-id="40c5d-113">**TLSExtensions (TLSExtensionsType)**</span><span class="sxs-lookup"><span data-stu-id="40c5d-113">**TLSExtensions (TLSExtensionsType)**</span></span>](eaptlsconnectionpropertiesv2schema-performservervalidation-eaptype-element.md)
+[<span data-ttu-id="aef9a-113">**TLSExtensions (TLSExtensionsType)**</span><span class="sxs-lookup"><span data-stu-id="aef9a-113">**TLSExtensions (TLSExtensionsType)**</span></span>](eaptlsconnectionpropertiesv2schema-performservervalidation-eaptype-element.md)
 </dt> </dl>
 
  

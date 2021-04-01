@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663902"
 ---
-# <a name="month-calendar-notifications"></a><span data-ttu-id="a4576-103">Notificações do calendário mensal</span><span class="sxs-lookup"><span data-stu-id="a4576-103">Month Calendar Notifications</span></span>
+# <a name="month-calendar-notifications"></a><span data-ttu-id="1daa3-103">Notificações do calendário mensal</span><span class="sxs-lookup"><span data-stu-id="1daa3-103">Month Calendar Notifications</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a4576-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a4576-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1daa3-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1daa3-104">In This Section</span></span>
 
--   [<span data-ttu-id="a4576-105">MCN \_ GETDAYSTATE</span><span class="sxs-lookup"><span data-stu-id="a4576-105">MCN\_GETDAYSTATE</span></span>](mcn-getdaystate.md)
--   [<span data-ttu-id="a4576-106">MCN \_ SELCHANGE</span><span class="sxs-lookup"><span data-stu-id="a4576-106">MCN\_SELCHANGE</span></span>](mcn-selchange.md)
--   [<span data-ttu-id="a4576-107">MCN \_ selecionar</span><span class="sxs-lookup"><span data-stu-id="a4576-107">MCN\_SELECT</span></span>](mcn-select.md)
--   [<span data-ttu-id="a4576-108">MCN \_ VIEWCHANGE</span><span class="sxs-lookup"><span data-stu-id="a4576-108">MCN\_VIEWCHANGE</span></span>](mcn-viewchange.md)
--   [<span data-ttu-id="a4576-109">NM \_ RELEASEDCAPTURE (calendário mensal)</span><span class="sxs-lookup"><span data-stu-id="a4576-109">NM\_RELEASEDCAPTURE (monthcal)</span></span>](nm-releasedcapture-monthcal-.md)
+-   [<span data-ttu-id="1daa3-105">MCN \_ GETDAYSTATE</span><span class="sxs-lookup"><span data-stu-id="1daa3-105">MCN\_GETDAYSTATE</span></span>](mcn-getdaystate.md)
+-   [<span data-ttu-id="1daa3-106">MCN \_ SELCHANGE</span><span class="sxs-lookup"><span data-stu-id="1daa3-106">MCN\_SELCHANGE</span></span>](mcn-selchange.md)
+-   [<span data-ttu-id="1daa3-107">MCN \_ selecionar</span><span class="sxs-lookup"><span data-stu-id="1daa3-107">MCN\_SELECT</span></span>](mcn-select.md)
+-   [<span data-ttu-id="1daa3-108">MCN \_ VIEWCHANGE</span><span class="sxs-lookup"><span data-stu-id="1daa3-108">MCN\_VIEWCHANGE</span></span>](mcn-viewchange.md)
+-   [<span data-ttu-id="1daa3-109">NM \_ RELEASEDCAPTURE (calendário mensal)</span><span class="sxs-lookup"><span data-stu-id="1daa3-109">NM\_RELEASEDCAPTURE (monthcal)</span></span>](nm-releasedcapture-monthcal-.md)
 
  
 

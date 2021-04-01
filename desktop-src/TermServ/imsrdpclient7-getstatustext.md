@@ -33,11 +33,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644810"
 ---
-# <a name="imsrdpclient7getstatustext-method"></a><span data-ttu-id="4f5b1-112">Método IMsRdpClient7:: GetStatusText</span><span class="sxs-lookup"><span data-stu-id="4f5b1-112">IMsRdpClient7::GetStatusText method</span></span>
+# <a name="imsrdpclient7getstatustext-method"></a><span data-ttu-id="b910d-112">Método IMsRdpClient7:: GetStatusText</span><span class="sxs-lookup"><span data-stu-id="b910d-112">IMsRdpClient7::GetStatusText method</span></span>
 
-<span data-ttu-id="4f5b1-113">Recupera o texto de status do código de status especificado.</span><span class="sxs-lookup"><span data-stu-id="4f5b1-113">Retrieves the status text for the specified status code.</span></span>
+<span data-ttu-id="b910d-113">Recupera o texto de status do código de status especificado.</span><span class="sxs-lookup"><span data-stu-id="b910d-113">Retrieves the status text for the specified status code.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4f5b1-114">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4f5b1-114">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b910d-114">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b910d-114">Syntax</span></span>
 
 
 ```C++
@@ -49,57 +49,57 @@ HRESULT GetStatusText(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="4f5b1-115">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4f5b1-115">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b910d-115">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b910d-115">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4f5b1-116">*StatusCode* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="4f5b1-116">*statusCode* \[in\]</span></span>
+<span data-ttu-id="b910d-116">*StatusCode* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="b910d-116">*statusCode* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4f5b1-117">Um **uint** que especifica o código de status para o qual recuperar o texto.</span><span class="sxs-lookup"><span data-stu-id="4f5b1-117">A **UINT** that specifies the status code to retrieve the text for.</span></span>
+<span data-ttu-id="b910d-117">Um **uint** que especifica o código de status para o qual recuperar o texto.</span><span class="sxs-lookup"><span data-stu-id="b910d-117">A **UINT** that specifies the status code to retrieve the text for.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4f5b1-118">*pBstrStatusText* \[ out, retval\]</span><span class="sxs-lookup"><span data-stu-id="4f5b1-118">*pBstrStatusText* \[out, retval\]</span></span>
+<span data-ttu-id="b910d-118">*pBstrStatusText* \[ out, retval\]</span><span class="sxs-lookup"><span data-stu-id="b910d-118">*pBstrStatusText* \[out, retval\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4f5b1-119">O endereço de um **BSTR** que recebe o texto de status.</span><span class="sxs-lookup"><span data-stu-id="4f5b1-119">The address of a **BSTR** that receives the status text.</span></span>
+<span data-ttu-id="b910d-119">O endereço de um **BSTR** que recebe o texto de status.</span><span class="sxs-lookup"><span data-stu-id="b910d-119">The address of a **BSTR** that receives the status text.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4f5b1-120">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4f5b1-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b910d-120">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b910d-120">Return value</span></span>
 
-<span data-ttu-id="4f5b1-121">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="4f5b1-121">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="4f5b1-122">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="4f5b1-122">Otherwise, it returns an **HRESULT** error code.</span></span>
+<span data-ttu-id="b910d-121">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="b910d-121">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="b910d-122">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="b910d-122">Otherwise, it returns an **HRESULT** error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4f5b1-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4f5b1-123">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="b910d-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b910d-123">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4f5b1-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="4f5b1-124">Requirement</span></span> | <span data-ttu-id="4f5b1-125">Valor</span><span class="sxs-lookup"><span data-stu-id="4f5b1-125">Value</span></span> |
+| <span data-ttu-id="b910d-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="b910d-124">Requirement</span></span> | <span data-ttu-id="b910d-125">Valor</span><span class="sxs-lookup"><span data-stu-id="b910d-125">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4f5b1-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4f5b1-126">Minimum supported client</span></span><br/> | <span data-ttu-id="4f5b1-127">Windows 7</span><span class="sxs-lookup"><span data-stu-id="4f5b1-127">Windows 7</span></span><br/>                                                                     |
-| <span data-ttu-id="4f5b1-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4f5b1-128">Minimum supported server</span></span><br/> | <span data-ttu-id="4f5b1-129">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="4f5b1-129">Windows Server 2008 R2</span></span><br/>                                                        |
-| <span data-ttu-id="4f5b1-130">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4f5b1-130">Header</span></span><br/>                   | <dl> <span data-ttu-id="4f5b1-131"><dt>OpenService. h</dt></span><span class="sxs-lookup"><span data-stu-id="4f5b1-131"><dt>Openservice.h</dt></span></span> </dl> |
-| <span data-ttu-id="4f5b1-132">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="4f5b1-132">Type library</span></span><br/>             | <dl> <span data-ttu-id="4f5b1-133"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4f5b1-133"><dt>MsTscAx.dll</dt></span></span> </dl>   |
-| <span data-ttu-id="4f5b1-134">DLL</span><span class="sxs-lookup"><span data-stu-id="4f5b1-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4f5b1-135"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4f5b1-135"><dt>MsTscAx.dll</dt></span></span> </dl>   |
-| <span data-ttu-id="4f5b1-136">IID</span><span class="sxs-lookup"><span data-stu-id="4f5b1-136">IID</span></span><br/>                      | <span data-ttu-id="4f5b1-137">IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444A-91D4-add26d070638</span><span class="sxs-lookup"><span data-stu-id="4f5b1-137">IID\_IMsRdpClient7 is defined as b2a5b5ce-3461-444a-91d4-add26d070638</span></span><br/>         |
+| <span data-ttu-id="b910d-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b910d-126">Minimum supported client</span></span><br/> | <span data-ttu-id="b910d-127">Windows 7</span><span class="sxs-lookup"><span data-stu-id="b910d-127">Windows 7</span></span><br/>                                                                     |
+| <span data-ttu-id="b910d-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b910d-128">Minimum supported server</span></span><br/> | <span data-ttu-id="b910d-129">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="b910d-129">Windows Server 2008 R2</span></span><br/>                                                        |
+| <span data-ttu-id="b910d-130">parâmetro</span><span class="sxs-lookup"><span data-stu-id="b910d-130">Header</span></span><br/>                   | <dl> <span data-ttu-id="b910d-131"><dt>OpenService. h</dt></span><span class="sxs-lookup"><span data-stu-id="b910d-131"><dt>Openservice.h</dt></span></span> </dl> |
+| <span data-ttu-id="b910d-132">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="b910d-132">Type library</span></span><br/>             | <dl> <span data-ttu-id="b910d-133"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b910d-133"><dt>MsTscAx.dll</dt></span></span> </dl>   |
+| <span data-ttu-id="b910d-134">DLL</span><span class="sxs-lookup"><span data-stu-id="b910d-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b910d-135"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b910d-135"><dt>MsTscAx.dll</dt></span></span> </dl>   |
+| <span data-ttu-id="b910d-136">IID</span><span class="sxs-lookup"><span data-stu-id="b910d-136">IID</span></span><br/>                      | <span data-ttu-id="b910d-137">IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444A-91D4-add26d070638</span><span class="sxs-lookup"><span data-stu-id="b910d-137">IID\_IMsRdpClient7 is defined as b2a5b5ce-3461-444a-91d4-add26d070638</span></span><br/>         |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4f5b1-138">Consulte também</span><span class="sxs-lookup"><span data-stu-id="4f5b1-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b910d-138">Confira também</span><span class="sxs-lookup"><span data-stu-id="b910d-138">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4f5b1-139">**IMsRdpClient7**</span><span class="sxs-lookup"><span data-stu-id="4f5b1-139">**IMsRdpClient7**</span></span>](imsrdpclient7.md)
+[<span data-ttu-id="b910d-139">**IMsRdpClient7**</span><span class="sxs-lookup"><span data-stu-id="b910d-139">**IMsRdpClient7**</span></span>](imsrdpclient7.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f5b1-140">**IMsRdpClient8**</span><span class="sxs-lookup"><span data-stu-id="4f5b1-140">**IMsRdpClient8**</span></span>](imsrdpclient8.md)
+[<span data-ttu-id="b910d-140">**IMsRdpClient8**</span><span class="sxs-lookup"><span data-stu-id="b910d-140">**IMsRdpClient8**</span></span>](imsrdpclient8.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f5b1-141">**IMsRdpClient9**</span><span class="sxs-lookup"><span data-stu-id="4f5b1-141">**IMsRdpClient9**</span></span>](imsrdpclient9.md)
+[<span data-ttu-id="b910d-141">**IMsRdpClient9**</span><span class="sxs-lookup"><span data-stu-id="b910d-141">**IMsRdpClient9**</span></span>](imsrdpclient9.md)
 </dt> <dt>
 
-[<span data-ttu-id="4f5b1-142">**IMsRdpClient10**</span><span class="sxs-lookup"><span data-stu-id="4f5b1-142">**IMsRdpClient10**</span></span>](imsrdpclient10.md)
+[<span data-ttu-id="b910d-142">**IMsRdpClient10**</span><span class="sxs-lookup"><span data-stu-id="b910d-142">**IMsRdpClient10**</span></span>](imsrdpclient10.md)
 </dt> </dl>
 
  

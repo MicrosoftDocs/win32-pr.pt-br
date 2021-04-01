@@ -24,21 +24,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644290"
 ---
-# <a name="mdm_reporting_securityauditing01_retrievebytimerange02-class"></a><span data-ttu-id="8384a-105">\_Classe RetrieveByTimeRange02 de relatórios MDM \_ SecurityAuditing01 \_</span><span class="sxs-lookup"><span data-stu-id="8384a-105">MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02 class</span></span>
+# <a name="mdm_reporting_securityauditing01_retrievebytimerange02-class"></a><span data-ttu-id="3c8a1-105">\_Classe RetrieveByTimeRange02 de relatórios MDM \_ SecurityAuditing01 \_</span><span class="sxs-lookup"><span data-stu-id="3c8a1-105">MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02 class</span></span>
 
-<span data-ttu-id="8384a-106">\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente.</span><span class="sxs-lookup"><span data-stu-id="8384a-106">\[Some information relates to pre-released product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="8384a-107">A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]</span><span class="sxs-lookup"><span data-stu-id="8384a-107">Microsoft makes no warranties, express or implied, with respect to the information provided here.\]</span></span>
+<span data-ttu-id="3c8a1-106">\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-106">\[Some information relates to pre-released product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="3c8a1-107">A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]</span><span class="sxs-lookup"><span data-stu-id="3c8a1-107">Microsoft makes no warranties, express or implied, with respect to the information provided here.\]</span></span>
 
-<span data-ttu-id="8384a-108">A **classe \_ \_ SecurityAuditing01 \_ RetrieveByTimeRange02 de relatórios do MDM** é usada para recuperar os logs que existem dentro de StartTime e StopTime. os StartTime e StopTime são expressos no formato ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="8384a-108">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class is used to retrieve the logs that exist within the StartTime and StopTime.The StartTime and StopTime are expressed in ISO 8601 format.</span></span> <span data-ttu-id="8384a-109">Se StartTime e StopTime não forem especificados, os valores serão interpretados como a primeira hora existente ou a última.</span><span class="sxs-lookup"><span data-stu-id="8384a-109">If the StartTime and StopTime are not specified, then the values are interpreted as either first existing or last existing time.</span></span>
+<span data-ttu-id="3c8a1-108">A **classe \_ \_ SecurityAuditing01 \_ RetrieveByTimeRange02 de relatórios do MDM** é usada para recuperar os logs que existem dentro de StartTime e StopTime. os StartTime e StopTime são expressos no formato ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-108">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class is used to retrieve the logs that exist within the StartTime and StopTime.The StartTime and StopTime are expressed in ISO 8601 format.</span></span> <span data-ttu-id="3c8a1-109">Se StartTime e StopTime não forem especificados, os valores serão interpretados como a primeira hora existente ou a última.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-109">If the StartTime and StopTime are not specified, then the values are interpreted as either first existing or last existing time.</span></span>
 
-<span data-ttu-id="8384a-110">Estes são os outros cenários possíveis:</span><span class="sxs-lookup"><span data-stu-id="8384a-110">Here are the other possible scenarios:</span></span>
+<span data-ttu-id="3c8a1-110">Estes são os outros cenários possíveis:</span><span class="sxs-lookup"><span data-stu-id="3c8a1-110">Here are the other possible scenarios:</span></span>
 
--   <span data-ttu-id="8384a-111">Se StartTime e StopTime não forem especificados, ele retornará todos os logs existentes.</span><span class="sxs-lookup"><span data-stu-id="8384a-111">If the StartTime and StopTime are not specified, then it returns all existing logs.</span></span>
--   <span data-ttu-id="8384a-112">Se o StopTime for especificado, mas o StartTime não for especificado, todos os logs existentes antes de StopTime serão retornados.</span><span class="sxs-lookup"><span data-stu-id="8384a-112">If the StopTime is specified, but the StartTime is not specified, then all logs that exist before the StopTime are returned.</span></span>
--   <span data-ttu-id="8384a-113">Se StartTime for especificado, mas o StopTime não for especificado, todos os logs que existirem de StartTime serão retornados.</span><span class="sxs-lookup"><span data-stu-id="8384a-113">If the StartTime is specified, but the StopTime is not specified, then all that logs that exist from the StartTime are returned.</span></span>
+-   <span data-ttu-id="3c8a1-111">Se StartTime e StopTime não forem especificados, ele retornará todos os logs existentes.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-111">If the StartTime and StopTime are not specified, then it returns all existing logs.</span></span>
+-   <span data-ttu-id="3c8a1-112">Se o StopTime for especificado, mas o StartTime não for especificado, todos os logs existentes antes de StopTime serão retornados.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-112">If the StopTime is specified, but the StartTime is not specified, then all logs that exist before the StopTime are returned.</span></span>
+-   <span data-ttu-id="3c8a1-113">Se StartTime for especificado, mas o StopTime não for especificado, todos os logs que existirem de StartTime serão retornados.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-113">If the StartTime is specified, but the StopTime is not specified, then all that logs that exist from the StartTime are returned.</span></span>
 
-<span data-ttu-id="8384a-114">A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="8384a-114">The following syntax is simplified from MOF code and includes all inherited properties.</span></span>
+<span data-ttu-id="3c8a1-114">A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-114">The following syntax is simplified from MOF code and includes all inherited properties.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8384a-115">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8384a-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3c8a1-115">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="3c8a1-115">Syntax</span></span>
 
 ``` syntax
 [InPartition("local-system"), dynamic, provider("DMWmiBridgeProv1")]
@@ -52,94 +52,94 @@ class MDM_Reporting_SecurityAuditing01_RetrieveByTimeRange02
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="8384a-116">Membros</span><span class="sxs-lookup"><span data-stu-id="8384a-116">Members</span></span>
+## <a name="members"></a><span data-ttu-id="3c8a1-116">Membros</span><span class="sxs-lookup"><span data-stu-id="3c8a1-116">Members</span></span>
 
-<span data-ttu-id="8384a-117">A **classe \_ RetrieveByTimeRange02 de relatórios do MDM \_ SecurityAuditing01 \_** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="8384a-117">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class has these types of members:</span></span>
+<span data-ttu-id="3c8a1-117">A **classe \_ RetrieveByTimeRange02 de relatórios do MDM \_ SecurityAuditing01 \_** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="3c8a1-117">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class has these types of members:</span></span>
 
--   [<span data-ttu-id="8384a-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8384a-118">Properties</span></span>](#properties)
+-   [<span data-ttu-id="3c8a1-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3c8a1-118">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="8384a-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8384a-119">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="3c8a1-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3c8a1-119">Properties</span></span>
 
-<span data-ttu-id="8384a-120">A **classe \_ RetrieveByTimeRange02 de relatório do MDM \_ SecurityAuditing01 \_** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="8384a-120">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class has these properties.</span></span>
+<span data-ttu-id="3c8a1-120">A **classe \_ RetrieveByTimeRange02 de relatório do MDM \_ SecurityAuditing01 \_** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-120">The **MDM\_Reporting\_SecurityAuditing01\_RetrieveByTimeRange02** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8384a-121">**InstanceID**</span><span class="sxs-lookup"><span data-stu-id="8384a-121">**InstanceID**</span></span>
+<span data-ttu-id="3c8a1-121">**InstanceID**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-121">**InstanceID**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="8384a-122">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="8384a-122">Data type: **string**</span></span>
+<span data-ttu-id="3c8a1-122">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-122">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8384a-123">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="8384a-123">Access type: Read-only</span></span>
+<span data-ttu-id="3c8a1-123">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="3c8a1-123">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8384a-124">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="8384a-124">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
+<span data-ttu-id="3c8a1-124">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="3c8a1-124">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="8384a-125">Identifica o nome do nó pai.</span><span class="sxs-lookup"><span data-stu-id="8384a-125">Identifies the name of the parent node.</span></span> <span data-ttu-id="8384a-126">Para essa classe, a cadeia de caracteres é "RetrieveByTimeRange".</span><span class="sxs-lookup"><span data-stu-id="8384a-126">For this class, the string is "RetrieveByTimeRange".</span></span>
+<span data-ttu-id="3c8a1-125">Identifica o nome do nó pai.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-125">Identifies the name of the parent node.</span></span> <span data-ttu-id="3c8a1-126">Para essa classe, a cadeia de caracteres é "RetrieveByTimeRange".</span><span class="sxs-lookup"><span data-stu-id="3c8a1-126">For this class, the string is "RetrieveByTimeRange".</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="8384a-127">Logs</span><span class="sxs-lookup"><span data-stu-id="8384a-127">Logs</span></span>](/windows/client-management/mdm/reporting-csp#logs)
+[<span data-ttu-id="3c8a1-127">Logs</span><span class="sxs-lookup"><span data-stu-id="3c8a1-127">Logs</span></span>](/windows/client-management/mdm/reporting-csp#logs)
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="8384a-128">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="8384a-128">Data type: **string**</span></span>
+<span data-ttu-id="3c8a1-128">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-128">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8384a-129">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="8384a-129">Access type: Read/write</span></span>
-</dt> </dl>
-
-</dd> <dt>
-
-<span data-ttu-id="8384a-130">**ParentID**</span><span class="sxs-lookup"><span data-stu-id="8384a-130">**ParentID**</span></span>
-</dt> <dd> <dl> <dt>
-
-<span data-ttu-id="8384a-131">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="8384a-131">Data type: **string**</span></span>
-</dt> <dt>
-
-<span data-ttu-id="8384a-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="8384a-132">Access type: Read-only</span></span>
-</dt> <dt>
-
-<span data-ttu-id="8384a-133">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="8384a-133">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
-</dt> </dl>
-
-<span data-ttu-id="8384a-134">Descreve o caminho completo para o nó pai.</span><span class="sxs-lookup"><span data-stu-id="8384a-134">Describes the full path to the parent node.</span></span> <span data-ttu-id="8384a-135">Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/SecurityAuditing"</span><span class="sxs-lookup"><span data-stu-id="8384a-135">For this class, the string is "./Vendor/MSFT/SecurityAuditing"</span></span>
-
-</dd> <dt>
-
-[<span data-ttu-id="8384a-136">StartTime</span><span class="sxs-lookup"><span data-stu-id="8384a-136">StartTime</span></span>](/windows/client-management/mdm/reporting-csp#starttime)
-</dt> <dd> <dl> <dt>
-
-<span data-ttu-id="8384a-137">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="8384a-137">Data type: **string**</span></span>
-</dt> <dt>
-
-<span data-ttu-id="8384a-138">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="8384a-138">Access type: Read/write</span></span>
+<span data-ttu-id="3c8a1-129">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="3c8a1-129">Access type: Read/write</span></span>
 </dt> </dl>
 
 </dd> <dt>
 
-[<span data-ttu-id="8384a-139">StopTime</span><span class="sxs-lookup"><span data-stu-id="8384a-139">StopTime</span></span>](/windows/client-management/mdm/reporting-csp#stoptime)
+<span data-ttu-id="3c8a1-130">**ParentID**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-130">**ParentID**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="8384a-140">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="8384a-140">Data type: **string**</span></span>
+<span data-ttu-id="3c8a1-131">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-131">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8384a-141">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="8384a-141">Access type: Read/write</span></span>
+<span data-ttu-id="3c8a1-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="3c8a1-132">Access type: Read-only</span></span>
+</dt> <dt>
+
+<span data-ttu-id="3c8a1-133">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="3c8a1-133">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
+</dt> </dl>
+
+<span data-ttu-id="3c8a1-134">Descreve o caminho completo para o nó pai.</span><span class="sxs-lookup"><span data-stu-id="3c8a1-134">Describes the full path to the parent node.</span></span> <span data-ttu-id="3c8a1-135">Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/SecurityAuditing"</span><span class="sxs-lookup"><span data-stu-id="3c8a1-135">For this class, the string is "./Vendor/MSFT/SecurityAuditing"</span></span>
+
+</dd> <dt>
+
+[<span data-ttu-id="3c8a1-136">StartTime</span><span class="sxs-lookup"><span data-stu-id="3c8a1-136">StartTime</span></span>](/windows/client-management/mdm/reporting-csp#starttime)
+</dt> <dd> <dl> <dt>
+
+<span data-ttu-id="3c8a1-137">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-137">Data type: **string**</span></span>
+</dt> <dt>
+
+<span data-ttu-id="3c8a1-138">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="3c8a1-138">Access type: Read/write</span></span>
+</dt> </dl>
+
+</dd> <dt>
+
+[<span data-ttu-id="3c8a1-139">StopTime</span><span class="sxs-lookup"><span data-stu-id="3c8a1-139">StopTime</span></span>](/windows/client-management/mdm/reporting-csp#stoptime)
+</dt> <dd> <dl> <dt>
+
+<span data-ttu-id="3c8a1-140">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="3c8a1-140">Data type: **string**</span></span>
+</dt> <dt>
+
+<span data-ttu-id="3c8a1-141">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="3c8a1-141">Access type: Read/write</span></span>
 </dt> </dl>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="8384a-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8384a-142">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="3c8a1-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3c8a1-142">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8384a-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="8384a-143">Requirement</span></span> | <span data-ttu-id="8384a-144">Valor</span><span class="sxs-lookup"><span data-stu-id="8384a-144">Value</span></span> |
+| <span data-ttu-id="3c8a1-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="3c8a1-143">Requirement</span></span> | <span data-ttu-id="3c8a1-144">Valor</span><span class="sxs-lookup"><span data-stu-id="3c8a1-144">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8384a-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8384a-145">Minimum supported client</span></span><br/> | <span data-ttu-id="8384a-146">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="8384a-146">Windows 10 \[desktop apps only\]</span></span><br/>                                                          |
-| <span data-ttu-id="8384a-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8384a-147">Minimum supported server</span></span><br/> | <span data-ttu-id="8384a-148">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="8384a-148">None supported</span></span><br/>                                                                            |
-| <span data-ttu-id="8384a-149">Namespace</span><span class="sxs-lookup"><span data-stu-id="8384a-149">Namespace</span></span><br/>                | <span data-ttu-id="8384a-150">\\Dmmap de \\ MDM \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="8384a-150">Root\\cimv2\\mdm\\dmmap</span></span><br/>                                                                   |
-| <span data-ttu-id="8384a-151">MOF</span><span class="sxs-lookup"><span data-stu-id="8384a-151">MOF</span></span><br/>                      | <dl> <span data-ttu-id="8384a-152"><dt>DMWmiBridgeProv1. mof</dt></span><span class="sxs-lookup"><span data-stu-id="8384a-152"><dt>DMWmiBridgeProv1.mof</dt></span></span> </dl>      |
-| <span data-ttu-id="8384a-153">DLL</span><span class="sxs-lookup"><span data-stu-id="8384a-153">DLL</span></span><br/>                      | <dl> <span data-ttu-id="8384a-154"><dt>\\DMWmiBridgeProv.dllMOFs</dt></span><span class="sxs-lookup"><span data-stu-id="8384a-154"><dt>Mofs\\DMWmiBridgeProv.dll</dt></span></span> </dl> |
+| <span data-ttu-id="3c8a1-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3c8a1-145">Minimum supported client</span></span><br/> | <span data-ttu-id="3c8a1-146">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="3c8a1-146">Windows 10 \[desktop apps only\]</span></span><br/>                                                          |
+| <span data-ttu-id="3c8a1-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3c8a1-147">Minimum supported server</span></span><br/> | <span data-ttu-id="3c8a1-148">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="3c8a1-148">None supported</span></span><br/>                                                                            |
+| <span data-ttu-id="3c8a1-149">Namespace</span><span class="sxs-lookup"><span data-stu-id="3c8a1-149">Namespace</span></span><br/>                | <span data-ttu-id="3c8a1-150">\\Dmmap de \\ MDM \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="3c8a1-150">Root\\cimv2\\mdm\\dmmap</span></span><br/>                                                                   |
+| <span data-ttu-id="3c8a1-151">MOF</span><span class="sxs-lookup"><span data-stu-id="3c8a1-151">MOF</span></span><br/>                      | <dl> <span data-ttu-id="3c8a1-152"><dt>DMWmiBridgeProv1. mof</dt></span><span class="sxs-lookup"><span data-stu-id="3c8a1-152"><dt>DMWmiBridgeProv1.mof</dt></span></span> </dl>      |
+| <span data-ttu-id="3c8a1-153">DLL</span><span class="sxs-lookup"><span data-stu-id="3c8a1-153">DLL</span></span><br/>                      | <dl> <span data-ttu-id="3c8a1-154"><dt>\\DMWmiBridgeProv.dllMOFs</dt></span><span class="sxs-lookup"><span data-stu-id="3c8a1-154"><dt>Mofs\\DMWmiBridgeProv.dll</dt></span></span> </dl> |
 
 
 

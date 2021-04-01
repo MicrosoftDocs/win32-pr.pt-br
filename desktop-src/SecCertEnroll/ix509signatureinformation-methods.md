@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829161"
 ---
-# <a name="ix509signatureinformation-methods"></a><span data-ttu-id="beec3-103">Métodos IX509SignatureInformation</span><span class="sxs-lookup"><span data-stu-id="beec3-103">IX509SignatureInformation Methods</span></span>
+# <a name="ix509signatureinformation-methods"></a><span data-ttu-id="bfdf7-103">Métodos IX509SignatureInformation</span><span class="sxs-lookup"><span data-stu-id="bfdf7-103">IX509SignatureInformation Methods</span></span>
 
-<span data-ttu-id="beec3-104">A interface [**IX509SignatureInformation**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509signatureinformation) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="beec3-104">The [**IX509SignatureInformation**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509signatureinformation) interface exposes the following methods.</span></span>
+<span data-ttu-id="bfdf7-104">A interface [**IX509SignatureInformation**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509signatureinformation) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="bfdf7-104">The [**IX509SignatureInformation**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509signatureinformation) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="beec3-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="beec3-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="bfdf7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bfdf7-105">In this section</span></span>
 
--   [<span data-ttu-id="beec3-106">**Método GetSignatureAlgorithm**</span><span class="sxs-lookup"><span data-stu-id="beec3-106">**GetSignatureAlgorithm Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-getsignaturealgorithm)
--   [<span data-ttu-id="beec3-107">**Método setDefaultValues**</span><span class="sxs-lookup"><span data-stu-id="beec3-107">**SetDefaultValues Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-setdefaultvalues)
+-   [<span data-ttu-id="bfdf7-106">**Método GetSignatureAlgorithm**</span><span class="sxs-lookup"><span data-stu-id="bfdf7-106">**GetSignatureAlgorithm Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-getsignaturealgorithm)
+-   [<span data-ttu-id="bfdf7-107">**Método setDefaultValues**</span><span class="sxs-lookup"><span data-stu-id="bfdf7-107">**SetDefaultValues Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-setdefaultvalues)
 
  
 

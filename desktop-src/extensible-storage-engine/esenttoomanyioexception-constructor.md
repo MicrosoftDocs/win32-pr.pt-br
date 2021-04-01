@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836918"
 ---
-# <a name="esenttoomanyioexception-constructor"></a><span data-ttu-id="90efd-103">Construtor EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="90efd-103">EsentTooManyIOException constructor</span></span>
+# <a name="esenttoomanyioexception-constructor"></a><span data-ttu-id="91e89-103">Construtor EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="91e89-103">EsentTooManyIOException constructor</span></span>
 
-<span data-ttu-id="90efd-104">Inicializa uma nova instância da classe EsentTooManyIOException.</span><span class="sxs-lookup"><span data-stu-id="90efd-104">Initializes a new instance of the EsentTooManyIOException class.</span></span>
+<span data-ttu-id="91e89-104">Inicializa uma nova instância da classe EsentTooManyIOException.</span><span class="sxs-lookup"><span data-stu-id="91e89-104">Initializes a new instance of the EsentTooManyIOException class.</span></span>
 
-<span data-ttu-id="90efd-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="90efd-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="90efd-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="90efd-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="91e89-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="91e89-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="91e89-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="91e89-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="90efd-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="90efd-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="91e89-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="91e89-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTooManyIOException()
 public EsentTooManyIOException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="90efd-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="90efd-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="91e89-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="91e89-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="90efd-109">Referência</span><span class="sxs-lookup"><span data-stu-id="90efd-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="91e89-109">Referência</span><span class="sxs-lookup"><span data-stu-id="91e89-109">Reference</span></span>
 
-[<span data-ttu-id="90efd-110">Classe EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="90efd-110">EsentTooManyIOException class</span></span>](./esenttoomanyioexception-class.md)
+[<span data-ttu-id="91e89-110">Classe EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="91e89-110">EsentTooManyIOException class</span></span>](./esenttoomanyioexception-class.md)
 
-[<span data-ttu-id="90efd-111">Membros do EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="90efd-111">EsentTooManyIOException members</span></span>](./esenttoomanyioexception-members.md)
+[<span data-ttu-id="91e89-111">Membros do EsentTooManyIOException</span><span class="sxs-lookup"><span data-stu-id="91e89-111">EsentTooManyIOException members</span></span>](./esenttoomanyioexception-members.md)
 
-[<span data-ttu-id="90efd-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="90efd-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="91e89-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="91e89-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

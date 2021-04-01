@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644469"
 ---
-# <a name="triggercollectioncount-property"></a><span data-ttu-id="9dbbe-106">Propriedade Triggers. Count</span><span class="sxs-lookup"><span data-stu-id="9dbbe-106">TriggerCollection.Count property</span></span>
+# <a name="triggercollectioncount-property"></a><span data-ttu-id="6859e-106">Propriedade Triggers. Count</span><span class="sxs-lookup"><span data-stu-id="6859e-106">TriggerCollection.Count property</span></span>
 
-<span data-ttu-id="9dbbe-107">Para scripts, obtém o número de gatilhos na coleção.</span><span class="sxs-lookup"><span data-stu-id="9dbbe-107">For scripting, gets the number of triggers in the collection.</span></span>
+<span data-ttu-id="6859e-107">Para scripts, obtém o número de gatilhos na coleção.</span><span class="sxs-lookup"><span data-stu-id="6859e-107">For scripting, gets the number of triggers in the collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9dbbe-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9dbbe-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6859e-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="6859e-108">Syntax</span></span>
 
 
 ```VB
@@ -36,28 +36,28 @@ TriggerCollection.Count As long
 
 
 
-## <a name="property-value"></a><span data-ttu-id="9dbbe-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="9dbbe-109">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="6859e-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="6859e-109">Property value</span></span>
 
-<span data-ttu-id="9dbbe-110">O número de gatilhos na coleção.</span><span class="sxs-lookup"><span data-stu-id="9dbbe-110">The number of triggers in the collection.</span></span>
+<span data-ttu-id="6859e-110">O número de gatilhos na coleção.</span><span class="sxs-lookup"><span data-stu-id="6859e-110">The number of triggers in the collection.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="9dbbe-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9dbbe-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="6859e-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="6859e-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="9dbbe-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="9dbbe-112">Requirement</span></span> | <span data-ttu-id="9dbbe-113">Valor</span><span class="sxs-lookup"><span data-stu-id="9dbbe-113">Value</span></span> |
+| <span data-ttu-id="6859e-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="6859e-112">Requirement</span></span> | <span data-ttu-id="6859e-113">Valor</span><span class="sxs-lookup"><span data-stu-id="6859e-113">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="9dbbe-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9dbbe-114">Minimum supported client</span></span><br/> | <span data-ttu-id="9dbbe-115">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="9dbbe-115">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
-| <span data-ttu-id="9dbbe-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9dbbe-116">Minimum supported server</span></span><br/> | <span data-ttu-id="9dbbe-117">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="9dbbe-117">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="9dbbe-118">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="9dbbe-118">Type library</span></span><br/>             | <dl> <span data-ttu-id="9dbbe-119"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="9dbbe-119"><dt>Taskschd.tlb</dt></span></span> </dl> |
-| <span data-ttu-id="9dbbe-120">DLL</span><span class="sxs-lookup"><span data-stu-id="9dbbe-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="9dbbe-121"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="9dbbe-121"><dt>Taskschd.dll</dt></span></span> </dl> |
+| <span data-ttu-id="6859e-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6859e-114">Minimum supported client</span></span><br/> | <span data-ttu-id="6859e-115">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="6859e-115">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
+| <span data-ttu-id="6859e-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6859e-116">Minimum supported server</span></span><br/> | <span data-ttu-id="6859e-117">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="6859e-117">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="6859e-118">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="6859e-118">Type library</span></span><br/>             | <dl> <span data-ttu-id="6859e-119"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="6859e-119"><dt>Taskschd.tlb</dt></span></span> </dl> |
+| <span data-ttu-id="6859e-120">DLL</span><span class="sxs-lookup"><span data-stu-id="6859e-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="6859e-121"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="6859e-121"><dt>Taskschd.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="9dbbe-122">Consulte também</span><span class="sxs-lookup"><span data-stu-id="9dbbe-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6859e-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="6859e-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9dbbe-123">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="9dbbe-123">Task Scheduler</span></span>](task-scheduler-start-page.md)
+[<span data-ttu-id="6859e-123">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="6859e-123">Task Scheduler</span></span>](task-scheduler-start-page.md)
 </dt> </dl>
 
  

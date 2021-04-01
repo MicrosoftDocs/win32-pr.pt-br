@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663271"
 ---
-# <a name="esenttestinjectionnotsupportedexception-constructor"></a><span data-ttu-id="194be-103">Construtor EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="194be-103">EsentTestInjectionNotSupportedException constructor</span></span>
+# <a name="esenttestinjectionnotsupportedexception-constructor"></a><span data-ttu-id="e9a7f-103">Construtor EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="e9a7f-103">EsentTestInjectionNotSupportedException constructor</span></span>
 
-<span data-ttu-id="194be-104">Inicializa uma nova instância da classe EsentTestInjectionNotSupportedException.</span><span class="sxs-lookup"><span data-stu-id="194be-104">Initializes a new instance of the EsentTestInjectionNotSupportedException class.</span></span>
+<span data-ttu-id="e9a7f-104">Inicializa uma nova instância da classe EsentTestInjectionNotSupportedException.</span><span class="sxs-lookup"><span data-stu-id="e9a7f-104">Initializes a new instance of the EsentTestInjectionNotSupportedException class.</span></span>
 
-<span data-ttu-id="194be-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="194be-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="194be-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="194be-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e9a7f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e9a7f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="e9a7f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e9a7f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="194be-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="194be-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e9a7f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e9a7f-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTestInjectionNotSupportedException()
 public EsentTestInjectionNotSupportedException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="194be-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="194be-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e9a7f-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="e9a7f-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="194be-109">Referência</span><span class="sxs-lookup"><span data-stu-id="194be-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e9a7f-109">Referência</span><span class="sxs-lookup"><span data-stu-id="e9a7f-109">Reference</span></span>
 
-[<span data-ttu-id="194be-110">Classe EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="194be-110">EsentTestInjectionNotSupportedException class</span></span>](./esenttestinjectionnotsupportedexception-class.md)
+[<span data-ttu-id="e9a7f-110">Classe EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="e9a7f-110">EsentTestInjectionNotSupportedException class</span></span>](./esenttestinjectionnotsupportedexception-class.md)
 
-[<span data-ttu-id="194be-111">Membros do EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="194be-111">EsentTestInjectionNotSupportedException members</span></span>](./esenttestinjectionnotsupportedexception-members.md)
+[<span data-ttu-id="e9a7f-111">Membros do EsentTestInjectionNotSupportedException</span><span class="sxs-lookup"><span data-stu-id="e9a7f-111">EsentTestInjectionNotSupportedException members</span></span>](./esenttestinjectionnotsupportedexception-members.md)
 
-[<span data-ttu-id="194be-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="194be-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="e9a7f-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e9a7f-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

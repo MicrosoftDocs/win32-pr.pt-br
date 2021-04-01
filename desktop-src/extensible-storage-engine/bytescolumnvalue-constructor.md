@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663128"
 ---
-# <a name="bytescolumnvalue-constructor"></a><span data-ttu-id="122a9-103">Construtor BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="122a9-103">BytesColumnValue constructor</span></span>
+# <a name="bytescolumnvalue-constructor"></a><span data-ttu-id="6590c-103">Construtor BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="6590c-103">BytesColumnValue constructor</span></span>
 
-<span data-ttu-id="122a9-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="122a9-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="122a9-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="122a9-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6590c-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6590c-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="6590c-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6590c-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="122a9-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="122a9-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6590c-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6590c-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New BytesColumnValue()
 public BytesColumnValue()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="122a9-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="122a9-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6590c-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="6590c-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="122a9-108">Referência</span><span class="sxs-lookup"><span data-stu-id="122a9-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6590c-108">Referência</span><span class="sxs-lookup"><span data-stu-id="6590c-108">Reference</span></span>
 
-[<span data-ttu-id="122a9-109">Classe BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="122a9-109">BytesColumnValue class</span></span>](./bytescolumnvalue-class.md)
+[<span data-ttu-id="6590c-109">Classe BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="6590c-109">BytesColumnValue class</span></span>](./bytescolumnvalue-class.md)
 
-[<span data-ttu-id="122a9-110">Membros do BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="122a9-110">BytesColumnValue members</span></span>](./bytescolumnvalue-members.md)
+[<span data-ttu-id="6590c-110">Membros do BytesColumnValue</span><span class="sxs-lookup"><span data-stu-id="6590c-110">BytesColumnValue members</span></span>](./bytescolumnvalue-members.md)
 
-[<span data-ttu-id="122a9-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="122a9-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="6590c-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6590c-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

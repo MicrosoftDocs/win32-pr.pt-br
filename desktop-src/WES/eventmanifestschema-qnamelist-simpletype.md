@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644206"
 ---
-# <a name="qnamelist-simple-type"></a><span data-ttu-id="0a800-104">Tipo simples de QNamelist</span><span class="sxs-lookup"><span data-stu-id="0a800-104">QNameList Simple Type</span></span>
+# <a name="qnamelist-simple-type"></a><span data-ttu-id="49381-104">Tipo simples de QNamelist</span><span class="sxs-lookup"><span data-stu-id="49381-104">QNameList Simple Type</span></span>
 
-<span data-ttu-id="0a800-105">Define uma lista de nomes qualificados.</span><span class="sxs-lookup"><span data-stu-id="0a800-105">Defines a list of qualified names.</span></span>
+<span data-ttu-id="49381-105">Define uma lista de nomes qualificados.</span><span class="sxs-lookup"><span data-stu-id="49381-105">Defines a list of qualified names.</span></span>
 
 ``` syntax
 <xs:simpleType name="QNameList">
@@ -32,14 +32,14 @@ ms.locfileid: "103644206"
 </xs:simpleType>
 ```
 
-## <a name="requirements"></a><span data-ttu-id="0a800-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="0a800-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="49381-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="49381-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="0a800-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="0a800-107">Requirement</span></span> | <span data-ttu-id="0a800-108">Valor</span><span class="sxs-lookup"><span data-stu-id="0a800-108">Value</span></span> |
+| <span data-ttu-id="49381-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="49381-107">Requirement</span></span> | <span data-ttu-id="49381-108">Valor</span><span class="sxs-lookup"><span data-stu-id="49381-108">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="0a800-109">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0a800-109">Minimum supported client</span></span><br/> | <span data-ttu-id="0a800-110">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="0a800-110">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="0a800-111">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0a800-111">Minimum supported server</span></span><br/> | <span data-ttu-id="0a800-112">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="0a800-112">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="49381-109">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49381-109">Minimum supported client</span></span><br/> | <span data-ttu-id="49381-110">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="49381-110">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="49381-111">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49381-111">Minimum supported server</span></span><br/> | <span data-ttu-id="49381-112">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="49381-112">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 

@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663870"
 ---
-# <a name="spdif-dmo-properties"></a><span data-ttu-id="37411-105">Propriedades de S/PDIF DMO</span><span class="sxs-lookup"><span data-stu-id="37411-105">S/PDIF DMO Properties</span></span>
+# <a name="spdif-dmo-properties"></a><span data-ttu-id="6bb7b-105">Propriedades de S/PDIF DMO</span><span class="sxs-lookup"><span data-stu-id="6bb7b-105">S/PDIF DMO Properties</span></span>
 
-<span data-ttu-id="37411-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="37411-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="6bb7b-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="6bb7b-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

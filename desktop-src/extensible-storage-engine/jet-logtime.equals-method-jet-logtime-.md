@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663396"
 ---
-# <a name="jet_logtimeequals-method-jet_logtime"></a><span data-ttu-id="c70ab-103">JET_LOGTIME. Método Equals (JET_LOGTIME)</span><span class="sxs-lookup"><span data-stu-id="c70ab-103">JET_LOGTIME.Equals method (JET_LOGTIME)</span></span>
+# <a name="jet_logtimeequals-method-jet_logtime"></a><span data-ttu-id="2c23b-103">JET_LOGTIME. Método Equals (JET_LOGTIME)</span><span class="sxs-lookup"><span data-stu-id="2c23b-103">JET_LOGTIME.Equals method (JET_LOGTIME)</span></span>
 
-<span data-ttu-id="c70ab-104">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="c70ab-104">Returns a value indicating whether this instance is equal to another instance.</span></span>
+<span data-ttu-id="2c23b-104">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="2c23b-104">Returns a value indicating whether this instance is equal to another instance.</span></span>
 
-<span data-ttu-id="c70ab-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c70ab-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="c70ab-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c70ab-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="2c23b-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="2c23b-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="2c23b-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="2c23b-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c70ab-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c70ab-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2c23b-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2c23b-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -55,30 +55,30 @@ public bool Equals(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="c70ab-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c70ab-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="2c23b-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2c23b-108">Parameters</span></span>
 
-  - <span data-ttu-id="c70ab-109">outros</span><span class="sxs-lookup"><span data-stu-id="c70ab-109">other</span></span>  
-    <span data-ttu-id="c70ab-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LOGTIME](./jet-logtime-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="c70ab-110">Type: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)</span></span>  
+  - <span data-ttu-id="2c23b-109">outros</span><span class="sxs-lookup"><span data-stu-id="2c23b-109">other</span></span>  
+    <span data-ttu-id="2c23b-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LOGTIME](./jet-logtime-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="2c23b-110">Type: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)</span></span>  
     
-    <span data-ttu-id="c70ab-111">Uma instância para comparar com esta instância.</span><span class="sxs-lookup"><span data-stu-id="c70ab-111">An instance to compare with this instance.</span></span>
+    <span data-ttu-id="2c23b-111">Uma instância para comparar com esta instância.</span><span class="sxs-lookup"><span data-stu-id="2c23b-111">An instance to compare with this instance.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="c70ab-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c70ab-112">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="2c23b-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2c23b-112">Return value</span></span>
 
-<span data-ttu-id="c70ab-113">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="c70ab-113">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
-<span data-ttu-id="c70ab-114">True se as duas instâncias forem iguais.</span><span class="sxs-lookup"><span data-stu-id="c70ab-114">True if the two instances are equal.</span></span>  
+<span data-ttu-id="2c23b-113">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="2c23b-113">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
+<span data-ttu-id="2c23b-114">True se as duas instâncias forem iguais.</span><span class="sxs-lookup"><span data-stu-id="2c23b-114">True if the two instances are equal.</span></span>  
 
-#### <a name="implements"></a><span data-ttu-id="c70ab-115">Implementações</span><span class="sxs-lookup"><span data-stu-id="c70ab-115">Implements</span></span>
+#### <a name="implements"></a><span data-ttu-id="2c23b-115">Implementações</span><span class="sxs-lookup"><span data-stu-id="2c23b-115">Implements</span></span>
 
-[<span data-ttu-id="c70ab-116">IEquatable \<T\> . Equals (T)</span><span class="sxs-lookup"><span data-stu-id="c70ab-116">IEquatable\<T\>.Equals(T)</span></span>](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[<span data-ttu-id="2c23b-116">IEquatable \<T\> . Equals (T)</span><span class="sxs-lookup"><span data-stu-id="2c23b-116">IEquatable\<T\>.Equals(T)</span></span>](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a><span data-ttu-id="c70ab-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="c70ab-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c23b-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="2c23b-117">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="c70ab-118">Referência</span><span class="sxs-lookup"><span data-stu-id="c70ab-118">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="2c23b-118">Referência</span><span class="sxs-lookup"><span data-stu-id="2c23b-118">Reference</span></span>
 
-[<span data-ttu-id="c70ab-119">Estrutura de JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="c70ab-119">JET_LOGTIME structure</span></span>](./jet-logtime-structure2.md)
+[<span data-ttu-id="2c23b-119">Estrutura de JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="2c23b-119">JET_LOGTIME structure</span></span>](./jet-logtime-structure2.md)
 
-[<span data-ttu-id="c70ab-120">Membros do JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="c70ab-120">JET_LOGTIME members</span></span>](./jet-logtime-members.md)
+[<span data-ttu-id="2c23b-120">Membros do JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="2c23b-120">JET_LOGTIME members</span></span>](./jet-logtime-members.md)
 
-[<span data-ttu-id="c70ab-121">Sobrecarga de Equals</span><span class="sxs-lookup"><span data-stu-id="c70ab-121">Equals overload</span></span>](./jet-logtime.equals-method.md)
+[<span data-ttu-id="2c23b-121">Sobrecarga de Equals</span><span class="sxs-lookup"><span data-stu-id="2c23b-121">Equals overload</span></span>](./jet-logtime.equals-method.md)
 
-[<span data-ttu-id="c70ab-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c70ab-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="2c23b-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="2c23b-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

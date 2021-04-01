@@ -11,31 +11,31 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829117"
 ---
-# <a name="mf_event_stream_metadata_content_keyids-attribute"></a><span data-ttu-id="bfc53-103">\_Atributo de conteúdo de metadados de fluxo de eventos MF \_ \_ \_ \_ KEYIDS</span><span class="sxs-lookup"><span data-stu-id="bfc53-103">MF\_EVENT\_STREAM\_METADATA\_CONTENT\_KEYIDS attribute</span></span>
+# <a name="mf_event_stream_metadata_content_keyids-attribute"></a><span data-ttu-id="a60f4-103">\_Atributo de conteúdo de metadados de fluxo de eventos MF \_ \_ \_ \_ KEYIDS</span><span class="sxs-lookup"><span data-stu-id="a60f4-103">MF\_EVENT\_STREAM\_METADATA\_CONTENT\_KEYIDS attribute</span></span>
 
-<span data-ttu-id="bfc53-104">Especifica as IDs de chave de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="bfc53-104">Specifies the content key IDs.</span></span>
+<span data-ttu-id="a60f4-104">Especifica as IDs de chave de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="a60f4-104">Specifies the content key IDs.</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="bfc53-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="bfc53-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="a60f4-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="a60f4-105">Data type</span></span>
 
-<span data-ttu-id="bfc53-106">**BLOB**</span><span class="sxs-lookup"><span data-stu-id="bfc53-106">**BLOB**</span></span>
+<span data-ttu-id="a60f4-106">**BLOB**</span><span class="sxs-lookup"><span data-stu-id="a60f4-106">**BLOB**</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="bfc53-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bfc53-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a60f4-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a60f4-107">Requirements</span></span>
 
 
 
-| <span data-ttu-id="bfc53-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="bfc53-108">Requirement</span></span> | <span data-ttu-id="bfc53-109">Valor</span><span class="sxs-lookup"><span data-stu-id="bfc53-109">Value</span></span> |
+| <span data-ttu-id="a60f4-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="a60f4-108">Requirement</span></span> | <span data-ttu-id="a60f4-109">Valor</span><span class="sxs-lookup"><span data-stu-id="a60f4-109">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="bfc53-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bfc53-110">Minimum supported client</span></span><br/> | <span data-ttu-id="bfc53-111">Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="bfc53-111">Windows 8.1 \[desktop apps \| UWP apps\]</span></span><br/>                                |
-| <span data-ttu-id="bfc53-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bfc53-112">Minimum supported server</span></span><br/> | <span data-ttu-id="bfc53-113">\[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]</span><span class="sxs-lookup"><span data-stu-id="bfc53-113">Windows Server 2012 R2 \[desktop apps \| UWP apps\]</span></span><br/>                     |
-| <span data-ttu-id="bfc53-114">parâmetro</span><span class="sxs-lookup"><span data-stu-id="bfc53-114">Header</span></span><br/>                   | <dl> <span data-ttu-id="bfc53-115"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="bfc53-115"><dt>Mfapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="a60f4-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a60f4-110">Minimum supported client</span></span><br/> | <span data-ttu-id="a60f4-111">Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="a60f4-111">Windows 8.1 \[desktop apps \| UWP apps\]</span></span><br/>                                |
+| <span data-ttu-id="a60f4-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a60f4-112">Minimum supported server</span></span><br/> | <span data-ttu-id="a60f4-113">\[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]</span><span class="sxs-lookup"><span data-stu-id="a60f4-113">Windows Server 2012 R2 \[desktop apps \| UWP apps\]</span></span><br/>                     |
+| <span data-ttu-id="a60f4-114">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a60f4-114">Header</span></span><br/>                   | <dl> <span data-ttu-id="a60f4-115"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="a60f4-115"><dt>Mfapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="bfc53-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="bfc53-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a60f4-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="a60f4-116">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="bfc53-117">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="bfc53-117">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+[<span data-ttu-id="a60f4-117">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="a60f4-117">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

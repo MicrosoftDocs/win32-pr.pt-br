@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635435"
 ---
-# <a name="using-the-router-management-mib-api"></a><span data-ttu-id="38fbd-105">Usando a API MIB de gerenciamento do roteador</span><span class="sxs-lookup"><span data-stu-id="38fbd-105">Using the Router Management MIB API</span></span>
+# <a name="using-the-router-management-mib-api"></a><span data-ttu-id="b5235-105">Usando a API MIB de gerenciamento do roteador</span><span class="sxs-lookup"><span data-stu-id="b5235-105">Using the Router Management MIB API</span></span>
 
-<span data-ttu-id="38fbd-106">Esta seção contém exemplos que mostram como usar a API MIB de gerenciamento de roteador para consultar e definir variáveis.</span><span class="sxs-lookup"><span data-stu-id="38fbd-106">This section contains examples that show how to use the Router Management MIB API to query and set variables.</span></span>
+<span data-ttu-id="b5235-106">Esta seção contém exemplos que mostram como usar a API MIB de gerenciamento de roteador para consultar e definir variáveis.</span><span class="sxs-lookup"><span data-stu-id="b5235-106">This section contains examples that show how to use the Router Management MIB API to query and set variables.</span></span>
 
--   [<span data-ttu-id="38fbd-107">Obtendo a tabela de interfaces MIB II</span><span class="sxs-lookup"><span data-stu-id="38fbd-107">Obtaining the MIB II Interfaces Table</span></span>](obtaining-the-mib-ii-interfaces-table.md)
+-   [<span data-ttu-id="b5235-107">Obtendo a tabela de interfaces MIB II</span><span class="sxs-lookup"><span data-stu-id="b5235-107">Obtaining the MIB II Interfaces Table</span></span>](obtaining-the-mib-ii-interfaces-table.md)
 
  
 

@@ -19,34 +19,34 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644953"
 ---
-# <a name="keyword-constant"></a><span data-ttu-id="b76f7-103">Constante de palavra-chave</span><span class="sxs-lookup"><span data-stu-id="b76f7-103">Keyword constant</span></span>
+# <a name="keyword-constant"></a><span data-ttu-id="cd5c2-103">Constante de palavra-chave</span><span class="sxs-lookup"><span data-stu-id="cd5c2-103">Keyword constant</span></span>
 
-<span data-ttu-id="b76f7-104">Contém o valor da palavra-chave que será usado nos eventos iniciar e parar da atividade.</span><span class="sxs-lookup"><span data-stu-id="b76f7-104">Contains the value of the keyword that will be used in the activity s start and stop events.</span></span>
+<span data-ttu-id="cd5c2-104">Contém o valor da palavra-chave que será usado nos eventos iniciar e parar da atividade.</span><span class="sxs-lookup"><span data-stu-id="cd5c2-104">Contains the value of the keyword that will be used in the activity s start and stop events.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b76f7-105"><span id="Keyword"></span><span id="keyword"></span><span id="KEYWORD"></span>**Chaves**</span><span class="sxs-lookup"><span data-stu-id="b76f7-105"><span id="Keyword"></span><span id="keyword"></span><span id="KEYWORD"></span>**Keyword**</span></span>
+<span data-ttu-id="cd5c2-105"><span id="Keyword"></span><span id="keyword"></span><span id="KEYWORD"></span>**Chaves**</span><span class="sxs-lookup"><span data-stu-id="cd5c2-105"><span id="Keyword"></span><span id="keyword"></span><span id="KEYWORD"></span>**Keyword**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="b76f7-106">UINT64</span><span class="sxs-lookup"><span data-stu-id="b76f7-106">UINT64</span></span>
+<span data-ttu-id="cd5c2-106">UINT64</span><span class="sxs-lookup"><span data-stu-id="cd5c2-106">UINT64</span></span>
 </dt> <dt>
 
 
 
-<span data-ttu-id="b76f7-107">O valor da palavra-chave que será usado nos eventos iniciar e parar da atividade.</span><span class="sxs-lookup"><span data-stu-id="b76f7-107">The value of the keyword that will be used in the activity s start and stop events.</span></span>
+<span data-ttu-id="cd5c2-107">O valor da palavra-chave que será usado nos eventos iniciar e parar da atividade.</span><span class="sxs-lookup"><span data-stu-id="cd5c2-107">The value of the keyword that will be used in the activity s start and stop events.</span></span>
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="b76f7-108">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b76f7-108">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="cd5c2-108">Requisitos</span><span class="sxs-lookup"><span data-stu-id="cd5c2-108">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b76f7-109">Requisito</span><span class="sxs-lookup"><span data-stu-id="b76f7-109">Requirement</span></span> | <span data-ttu-id="b76f7-110">Valor</span><span class="sxs-lookup"><span data-stu-id="b76f7-110">Value</span></span> |
+| <span data-ttu-id="cd5c2-109">Requisito</span><span class="sxs-lookup"><span data-stu-id="cd5c2-109">Requirement</span></span> | <span data-ttu-id="cd5c2-110">Valor</span><span class="sxs-lookup"><span data-stu-id="cd5c2-110">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b76f7-111">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b76f7-111">Minimum supported client</span></span><br/> | <span data-ttu-id="b76f7-112">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="b76f7-112">Windows Vista</span></span><br/>                                                                          |
-| <span data-ttu-id="b76f7-113">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b76f7-113">Minimum supported server</span></span><br/> | <span data-ttu-id="b76f7-114">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="b76f7-114">Windows Server 2012 R2</span></span><br/>                                                                 |
-| <span data-ttu-id="b76f7-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="b76f7-115">Header</span></span><br/>                   | <dl> <span data-ttu-id="b76f7-116"><dt>Traceloggingactivity. h</dt></span><span class="sxs-lookup"><span data-stu-id="b76f7-116"><dt>Traceloggingactivity.h</dt></span></span> </dl> |
+| <span data-ttu-id="cd5c2-111">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="cd5c2-111">Minimum supported client</span></span><br/> | <span data-ttu-id="cd5c2-112">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="cd5c2-112">Windows Vista</span></span><br/>                                                                          |
+| <span data-ttu-id="cd5c2-113">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="cd5c2-113">Minimum supported server</span></span><br/> | <span data-ttu-id="cd5c2-114">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="cd5c2-114">Windows Server 2012 R2</span></span><br/>                                                                 |
+| <span data-ttu-id="cd5c2-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="cd5c2-115">Header</span></span><br/>                   | <dl> <span data-ttu-id="cd5c2-116"><dt>Traceloggingactivity. h</dt></span><span class="sxs-lookup"><span data-stu-id="cd5c2-116"><dt>Traceloggingactivity.h</dt></span></span> </dl> |
 
 
 
