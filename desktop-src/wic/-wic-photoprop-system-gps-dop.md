@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Sim
+Yes
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -43,8 +43,8 @@ Se o arquivo estiver no formato JPEG, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                          | Formato de disco   | Obrigatório |
 |-------|-------------------------------|---------------|----------|
-| 1     | /xmp/exif:GPSDOP              | Racional de XMP  | Sim      |
-| 2     | /App1/IFD/GPS/ \\ {UShort = 11 \\ } | Racional de EXIF | Não       |
+| 1     | /xmp/exif:GPSDOP              | Racional de XMP  | Yes      |
+| 2     | /App1/IFD/GPS/ \\ {UShort = 11 \\ } | Racional de EXIF | No       |
 
 
 
@@ -58,7 +58,7 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                     | Formato de disco   | Obrigatório |
 |-------|--------------------------|---------------|----------|
-| 1     | /ifd/xmp/exif:GPSDop     | Racional de XMP  | Sim      |
+| 1     | /ifd/xmp/exif:GPSDop     | Racional de XMP  | Yes      |
 | 2     | /IFD/GPS/ \\ {UShort = 11 \\ } | Racional de EXIF | Não       |
 
 

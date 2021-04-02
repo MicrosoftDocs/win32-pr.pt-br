@@ -59,7 +59,7 @@ A *marca de seleção* é o índice de item do qual uma seleção múltipla é i
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -48,7 +48,7 @@ Se for TRUE, o EAP MS-CHAPv2 obterá as credenciais do Winlogon. Se for FALSE, o
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

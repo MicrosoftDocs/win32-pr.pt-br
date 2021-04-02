@@ -27,7 +27,7 @@ ms.locfileid: "103644381"
 
 Para scripts, Obtém ou define o objeto de configurações de rede que contém um nome e identificador de perfil de rede. Se a propriedade [**RunOnlyIfNetworkAvailable**](tasksettings-runonlyifnetworkavailable.md) de [**TaskSettings**](tasksettings.md) for **true** e um propfile de rede for especificado na propriedade **NetworkSettings** , a tarefa será executada somente se o perfil de rede especificado estiver disponível.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -53,7 +53,7 @@ Um objeto [**NetworkSettings**](networksettings.md) que contém um identificador
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

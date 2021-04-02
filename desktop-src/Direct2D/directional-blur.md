@@ -24,7 +24,7 @@ O CLSID para esse efeito é CLSID \_ D2D1DirectionalBlur.
 -   [Modos de otimização](#optimization-modes)
 -   [Modos de borda](#border-modes)
 -   [Bitmap de saída](#output-bitmap)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagem de exemplo
@@ -60,7 +60,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Nome de exibição e enumeração de índice                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                        |
+| Nome de exibição e enumeração de índice                                                       | Descrição                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I<br/> \_ \_ Desvio padrão da prop d2d1 DIRECTIONALBLUR \_ \_<br/> | A quantidade de desfoque a ser aplicada à imagem. Você pode calcular o raio de desfoque do kernel multiplicando o desvio padrão por 3. As unidades do desvio padrão e do raio de desfoque são DIPs. Um valor de 0 DIPs desabilita esse efeito. O tipo é FLOAT.<br/> O valor padrão é 3.0 f.<br/>                                                                            |
 | Ângulo<br/> \_Ângulo de \_ prop d2d1 DIRECTIONALBLUR \_<br/>                           | O ângulo do Desfoque relativo ao eixo x, na direção no sentido anti-horário. As unidades são especificadas em graus.<br/> O kernel de desfoque é gerado pela primeira vez usando o mesmo processo para o efeito de [Desfoque Gaussiano](gaussian-blur.md) . Os valores de kernel são então transformados de acordo com o ângulo de desfoque.<br/> O tipo é FLOAT.<br/> O valor padrão é 0,0 f.<br/> |
@@ -75,7 +75,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Name                                          | Descrição                                                                                                                           |
+| Nome                                          | Descrição                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Velocidade de otimização do D2D1 \_ DIRECTIONALBLUR \_ \_    | Aplica otimizações internas, como o dimensionamento prévio em raios relativamente pequenos. Usa filtragem linear.                                  |
 | D2D1 \_ DIRECTIONALBLUR de \_ otimização \_ balanceada | Usa os mesmos limites de otimização que o modo de velocidade, mas usa filtragem triline.                                                    |
@@ -89,7 +89,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Name                     | Descrição                                                                                                                                                                                                              |
+| Nome                     | Descrição                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_Modo de borda d2d1 \_ \_ Soft | O efeito preenche a imagem com pixels pretos transparentes à medida que aplica o kernel de desfoque, resultando em uma borda suave. <br/>                                                                                             |
 | \_Modo de borda d2d1 \_ \_ Hard | O efeito coloca a saída para o tamanho da imagem de entrada. Quando o efeito aplica o kernel de desfoque, ele estende a imagem de entrada com uma transformação de borda de tipo espelho para exemplos fora dos limites de entrada.<br/> |
