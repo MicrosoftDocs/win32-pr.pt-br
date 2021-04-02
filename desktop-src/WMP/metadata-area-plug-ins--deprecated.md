@@ -17,19 +17,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005342"
 ---
-# <a name="metadata-area-plug-ins-deprecated"></a><span data-ttu-id="34d4c-108">Plug-ins de área de metadados (preteridos)</span><span class="sxs-lookup"><span data-stu-id="34d4c-108">Metadata Area Plug-ins (deprecated)</span></span>
+# <a name="metadata-area-plug-ins-deprecated"></a><span data-ttu-id="6550e-108">Plug-ins de área de metadados (preteridos)</span><span class="sxs-lookup"><span data-stu-id="6550e-108">Metadata Area Plug-ins (deprecated)</span></span>
 
-<span data-ttu-id="34d4c-109">Esta página documenta um recurso que pode não estar disponível em versões futuras do Windows Media Player e no SDK do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="34d4c-109">This page documents a feature that may be unavailable in future versions of Windows Media Player and the Windows Media Player SDK.</span></span>
+<span data-ttu-id="6550e-109">Esta página documenta um recurso que pode não estar disponível em versões futuras do Windows Media Player e no SDK do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="6550e-109">This page documents a feature that may be unavailable in future versions of Windows Media Player and the Windows Media Player SDK.</span></span>
 
-<span data-ttu-id="34d4c-110">Os plug-ins de interface do usuário da área de metadados são mostrados na área de metadados do painel **agora em execução** à direita da área Visual principal e do painel de ferramentas e abaixo da exibição de playlist (se estiver habilitada).</span><span class="sxs-lookup"><span data-stu-id="34d4c-110">Metadata area UI plug-ins are shown in the metadata area of the **Now Playing** pane to the right of the main visual area and the Tools pane, and below the playlist view (if it is enabled).</span></span> <span data-ttu-id="34d4c-111">Somente um plug-in de área de metadados pode ser habilitado por vez.</span><span class="sxs-lookup"><span data-stu-id="34d4c-111">Only one metadata area plug-in can be enabled at a time.</span></span>
+<span data-ttu-id="6550e-110">Os plug-ins de interface do usuário da área de metadados são mostrados na área de metadados do painel **agora em execução** à direita da área Visual principal e do painel de ferramentas e abaixo da exibição de playlist (se estiver habilitada).</span><span class="sxs-lookup"><span data-stu-id="6550e-110">Metadata area UI plug-ins are shown in the metadata area of the **Now Playing** pane to the right of the main visual area and the Tools pane, and below the playlist view (if it is enabled).</span></span> <span data-ttu-id="6550e-111">Somente um plug-in de área de metadados pode ser habilitado por vez.</span><span class="sxs-lookup"><span data-stu-id="6550e-111">Only one metadata area plug-in can be enabled at a time.</span></span>
 
-<span data-ttu-id="34d4c-112">Plug-ins de área de metadados são úteis para exibir informações concisas sobre o item de mídia em execução no momento, controles simples ou hiperlinks para informações adicionais.</span><span class="sxs-lookup"><span data-stu-id="34d4c-112">Metadata area plug-ins are useful for displaying concise information about the currently playing media item, simple controls, or hyperlinks to additional information.</span></span>
+<span data-ttu-id="6550e-112">Plug-ins de área de metadados são úteis para exibir informações concisas sobre o item de mídia em execução no momento, controles simples ou hiperlinks para informações adicionais.</span><span class="sxs-lookup"><span data-stu-id="6550e-112">Metadata area plug-ins are useful for displaying concise information about the currently playing media item, simple controls, or hyperlinks to additional information.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="34d4c-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="34d4c-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6550e-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6550e-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="34d4c-114">**Visão geral do plug-in da interface do usuário**</span><span class="sxs-lookup"><span data-stu-id="34d4c-114">**UI Plug-in Overview**</span></span>](ui-plug-in-overview.md)
+[<span data-ttu-id="6550e-114">**Visão geral do plug-in da interface do usuário**</span><span class="sxs-lookup"><span data-stu-id="6550e-114">**UI Plug-in Overview**</span></span>](ui-plug-in-overview.md)
 </dt> </dl>
 
  

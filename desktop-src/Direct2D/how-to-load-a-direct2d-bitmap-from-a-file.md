@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641499"
 ---
-# <a name="how-to-load-a-bitmap-from-a-file"></a><span data-ttu-id="29f89-103">Como carregar um bitmap de um arquivo</span><span class="sxs-lookup"><span data-stu-id="29f89-103">How to Load a Bitmap from a File</span></span>
+# <a name="how-to-load-a-bitmap-from-a-file"></a><span data-ttu-id="c51a0-103">Como carregar um bitmap de um arquivo</span><span class="sxs-lookup"><span data-stu-id="c51a0-103">How to Load a Bitmap from a File</span></span>
 
-<span data-ttu-id="29f89-104">O Direct2D usa o Windows Imaging Component (WIC) para carregar bitmaps.</span><span class="sxs-lookup"><span data-stu-id="29f89-104">Direct2D uses the Windows Imaging Component (WIC) to load bitmaps.</span></span> <span data-ttu-id="29f89-105">Para carregar um bitmap de um arquivo, primeiro use os objetos do WIC para carregar a imagem e convertê-la em um formato compatível com Direct2D e, em seguida, use o método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para criar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap).</span><span class="sxs-lookup"><span data-stu-id="29f89-105">To load a bitmap from a file, first use WIC objects to load the image and to convert it to a Direct2D-compatible format, then use the [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) method to create an [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap).</span></span>
+<span data-ttu-id="c51a0-104">O Direct2D usa o Windows Imaging Component (WIC) para carregar bitmaps.</span><span class="sxs-lookup"><span data-stu-id="c51a0-104">Direct2D uses the Windows Imaging Component (WIC) to load bitmaps.</span></span> <span data-ttu-id="c51a0-105">Para carregar um bitmap de um arquivo, primeiro use os objetos do WIC para carregar a imagem e convertê-la em um formato compatível com Direct2D e, em seguida, use o método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para criar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap).</span><span class="sxs-lookup"><span data-stu-id="c51a0-105">To load a bitmap from a file, first use WIC objects to load the image and to convert it to a Direct2D-compatible format, then use the [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) method to create an [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap).</span></span>
 
-1.  <span data-ttu-id="29f89-106">Crie um [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder) usando o método [**IWICImagingFactory:: CreateDecoderFromFileName**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) .</span><span class="sxs-lookup"><span data-stu-id="29f89-106">Create an [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder) by using the [**IWICImagingFactory::CreateDecoderFromFileName**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) method.</span></span>
+1.  <span data-ttu-id="c51a0-106">Crie um [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder) usando o método [**IWICImagingFactory:: CreateDecoderFromFileName**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) .</span><span class="sxs-lookup"><span data-stu-id="c51a0-106">Create an [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder) by using the [**IWICImagingFactory::CreateDecoderFromFileName**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) method.</span></span>
 
     ```C++
     HRESULT DemoApp::LoadBitmapFromFile(
@@ -45,7 +45,7 @@ ms.locfileid: "103641499"
 
     
 
-2.  <span data-ttu-id="29f89-107">Recupere um quadro da imagem e armazene o quadro em um objeto [**IWICBitmapFrameDecode**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode) .</span><span class="sxs-lookup"><span data-stu-id="29f89-107">Retrieve a frame from the image and store the frame in an [**IWICBitmapFrameDecode**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode) object.</span></span>
+2.  <span data-ttu-id="c51a0-107">Recupere um quadro da imagem e armazene o quadro em um objeto [**IWICBitmapFrameDecode**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode) .</span><span class="sxs-lookup"><span data-stu-id="c51a0-107">Retrieve a frame from the image and store the frame in an [**IWICBitmapFrameDecode**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode) object.</span></span>
 
     ```C++
         if (SUCCEEDED(hr))
@@ -57,7 +57,7 @@ ms.locfileid: "103641499"
 
     
 
-3.  <span data-ttu-id="29f89-108">O bitmap deve ser convertido em um formato que Direct2D possa usar, portanto, converta o formato de pixel da imagem em 32bppPBGRA.</span><span class="sxs-lookup"><span data-stu-id="29f89-108">The bitmap must be converted to a format that Direct2D can use, so convert the image's pixel format to 32bppPBGRA.</span></span> <span data-ttu-id="29f89-109">(Para obter uma lista de formatos com suporte, consulte [formatos de pixel e modos alfa](supported-pixel-formats-and-alpha-modes.md).).</span><span class="sxs-lookup"><span data-stu-id="29f89-109">(For a list of supported formats, see [Pixel Formats and Alpha Modes](supported-pixel-formats-and-alpha-modes.md).).</span></span> <span data-ttu-id="29f89-110">Chame o método [**IWICImagingFactory:: Createformaconverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para criar um objeto [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) e, em seguida, chame o método [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) do objeto **IWICFormatConverter** para executar a conversão.</span><span class="sxs-lookup"><span data-stu-id="29f89-110">Call the [**IWICImagingFactory::CreateFormatConverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) method to create an [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) object, then call the **IWICFormatConverter** object's [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) method to perform the conversion.</span></span>
+3.  <span data-ttu-id="c51a0-108">O bitmap deve ser convertido em um formato que Direct2D possa usar, portanto, converta o formato de pixel da imagem em 32bppPBGRA.</span><span class="sxs-lookup"><span data-stu-id="c51a0-108">The bitmap must be converted to a format that Direct2D can use, so convert the image's pixel format to 32bppPBGRA.</span></span> <span data-ttu-id="c51a0-109">(Para obter uma lista de formatos com suporte, consulte [formatos de pixel e modos alfa](supported-pixel-formats-and-alpha-modes.md).).</span><span class="sxs-lookup"><span data-stu-id="c51a0-109">(For a list of supported formats, see [Pixel Formats and Alpha Modes](supported-pixel-formats-and-alpha-modes.md).).</span></span> <span data-ttu-id="c51a0-110">Chame o método [**IWICImagingFactory:: Createformaconverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para criar um objeto [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) e, em seguida, chame o método [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) do objeto **IWICFormatConverter** para executar a conversão.</span><span class="sxs-lookup"><span data-stu-id="c51a0-110">Call the [**IWICImagingFactory::CreateFormatConverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) method to create an [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) object, then call the **IWICFormatConverter** object's [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) method to perform the conversion.</span></span>
     ```C++
         if (SUCCEEDED(hr))
         {
@@ -83,7 +83,7 @@ ms.locfileid: "103641499"
 
     
 
-4.  <span data-ttu-id="29f89-111">Chame o método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para criar um objeto [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) que pode ser desenhado por um destino de renderização e usado com outros objetos Direct2D.</span><span class="sxs-lookup"><span data-stu-id="29f89-111">Call the [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) method to create an [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) object that can be drawn by a render target and used with other Direct2D objects.</span></span>
+4.  <span data-ttu-id="c51a0-111">Chame o método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para criar um objeto [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) que pode ser desenhado por um destino de renderização e usado com outros objetos Direct2D.</span><span class="sxs-lookup"><span data-stu-id="c51a0-111">Call the [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) method to create an [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) object that can be drawn by a render target and used with other Direct2D objects.</span></span>
     ```C++
         if (SUCCEEDED(hr))
         {
@@ -108,19 +108,19 @@ ms.locfileid: "103641499"
 
     
 
-<span data-ttu-id="29f89-112">Algum código foi omitido deste exemplo.</span><span class="sxs-lookup"><span data-stu-id="29f89-112">Some code has been omitted from this example.</span></span>
+<span data-ttu-id="c51a0-112">Algum código foi omitido deste exemplo.</span><span class="sxs-lookup"><span data-stu-id="c51a0-112">Some code has been omitted from this example.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="29f89-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="29f89-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c51a0-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c51a0-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="29f89-114">**ID2D1Bitmap**</span><span class="sxs-lookup"><span data-stu-id="29f89-114">**ID2D1Bitmap**</span></span>](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
+[<span data-ttu-id="c51a0-114">**ID2D1Bitmap**</span><span class="sxs-lookup"><span data-stu-id="c51a0-114">**ID2D1Bitmap**</span></span>](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
 </dt> <dt>
 
-[<span data-ttu-id="29f89-115">**CreateBitmapFromWicBitmap**</span><span class="sxs-lookup"><span data-stu-id="29f89-115">**CreateBitmapFromWicBitmap**</span></span>](id2d1rendertarget-createbitmapfromwicbitmap.md)
+[<span data-ttu-id="c51a0-115">**CreateBitmapFromWicBitmap**</span><span class="sxs-lookup"><span data-stu-id="c51a0-115">**CreateBitmapFromWicBitmap**</span></span>](id2d1rendertarget-createbitmapfromwicbitmap.md)
 </dt> <dt>
 
-[<span data-ttu-id="29f89-116">Como carregar um bitmap de um recurso</span><span class="sxs-lookup"><span data-stu-id="29f89-116">How to Load a Bitmap from a Resource</span></span>](how-to-load-a-bitmap-from-a-resource.md)
+[<span data-ttu-id="c51a0-116">Como carregar um bitmap de um recurso</span><span class="sxs-lookup"><span data-stu-id="c51a0-116">How to Load a Bitmap from a Resource</span></span>](how-to-load-a-bitmap-from-a-resource.md)
 </dt> </dl>
 
  

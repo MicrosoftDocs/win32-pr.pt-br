@@ -39,16 +39,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104164933"
 ---
-# <a name="idlegrbit-enumeration"></a><span data-ttu-id="fe0a8-103">Enumeração IdleGrbit</span><span class="sxs-lookup"><span data-stu-id="fe0a8-103">IdleGrbit enumeration</span></span>
+# <a name="idlegrbit-enumeration"></a><span data-ttu-id="f29db-103">Enumeração IdleGrbit</span><span class="sxs-lookup"><span data-stu-id="f29db-103">IdleGrbit enumeration</span></span>
 
-<span data-ttu-id="fe0a8-104">Opções para [JetIdle (JET_SESID, IdleGrbit)](./api.jetidle-method.md).</span><span class="sxs-lookup"><span data-stu-id="fe0a8-104">Options for [JetIdle(JET_SESID, IdleGrbit)](./api.jetidle-method.md).</span></span>
+<span data-ttu-id="f29db-104">Opções para [JetIdle (JET_SESID, IdleGrbit)](./api.jetidle-method.md).</span><span class="sxs-lookup"><span data-stu-id="f29db-104">Options for [JetIdle(JET_SESID, IdleGrbit)](./api.jetidle-method.md).</span></span>
 
-<span data-ttu-id="fe0a8-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
+<span data-ttu-id="f29db-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="f29db-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
 
-<span data-ttu-id="fe0a8-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="fe0a8-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="fe0a8-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="fe0a8-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f29db-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f29db-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f29db-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f29db-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fe0a8-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="fe0a8-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f29db-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f29db-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -63,43 +63,43 @@ Dim instance As IdleGrbit
 public enum IdleGrbit
 ```
 
-## <a name="members"></a><span data-ttu-id="fe0a8-109">Membros</span><span class="sxs-lookup"><span data-stu-id="fe0a8-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="f29db-109">Membros</span><span class="sxs-lookup"><span data-stu-id="f29db-109">Members</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th></th>
-<th><span data-ttu-id="fe0a8-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="fe0a8-110">Member name</span></span></th>
-<th><span data-ttu-id="fe0a8-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe0a8-111">Description</span></span></th>
+<th><span data-ttu-id="f29db-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="f29db-110">Member name</span></span></th>
+<th><span data-ttu-id="f29db-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="f29db-111">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="fe0a8-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fe0a8-112">None</span></span></td>
-<td><span data-ttu-id="fe0a8-113">Opções padrão.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-113">Default options.</span></span></td>
+<td><span data-ttu-id="f29db-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f29db-112">None</span></span></td>
+<td><span data-ttu-id="f29db-113">Opções padrão.</span><span class="sxs-lookup"><span data-stu-id="f29db-113">Default options.</span></span></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><span data-ttu-id="fe0a8-114">FlushBuffers</span><span class="sxs-lookup"><span data-stu-id="fe0a8-114">FlushBuffers</span></span></td>
-<td><span data-ttu-id="fe0a8-115">Dispara a limpeza do repositório de versão.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-115">Triggers cleanup of the version store.</span></span></td>
+<td><span data-ttu-id="f29db-114">FlushBuffers</span><span class="sxs-lookup"><span data-stu-id="f29db-114">FlushBuffers</span></span></td>
+<td><span data-ttu-id="f29db-115">Dispara a limpeza do repositório de versão.</span><span class="sxs-lookup"><span data-stu-id="f29db-115">Triggers cleanup of the version store.</span></span></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="fe0a8-116">Compacto</span><span class="sxs-lookup"><span data-stu-id="fe0a8-116">Compact</span></span></td>
-<td><span data-ttu-id="fe0a8-117">Reservado para uso futuro.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-117">Reserved for future use.</span></span> <span data-ttu-id="fe0a8-118">Se esse sinalizador for especificado, a API retornará <a href="hh564840(v=exchg.10).md">InvalidGrbit</a>.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-118">If this flag is specified, the API will return <a href="hh564840(v=exchg.10).md">InvalidGrbit</a>.</span></span></td>
+<td><span data-ttu-id="f29db-116">Compacto</span><span class="sxs-lookup"><span data-stu-id="f29db-116">Compact</span></span></td>
+<td><span data-ttu-id="f29db-117">Reservado para uso futuro.</span><span class="sxs-lookup"><span data-stu-id="f29db-117">Reserved for future use.</span></span> <span data-ttu-id="f29db-118">Se esse sinalizador for especificado, a API retornará <a href="hh564840(v=exchg.10).md">InvalidGrbit</a>.</span><span class="sxs-lookup"><span data-stu-id="f29db-118">If this flag is specified, the API will return <a href="hh564840(v=exchg.10).md">InvalidGrbit</a>.</span></span></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><span data-ttu-id="fe0a8-119">GetStatus</span><span class="sxs-lookup"><span data-stu-id="fe0a8-119">GetStatus</span></span></td>
-<td><span data-ttu-id="fe0a8-120">Retorna <a href="hh557250(v=exchg.10).md">IdleFull</a> se o repositório de versão for maior que metade cheio.</span><span class="sxs-lookup"><span data-stu-id="fe0a8-120">Returns <a href="hh557250(v=exchg.10).md">IdleFull</a> if version store is more than half full.</span></span></td>
+<td><span data-ttu-id="f29db-119">GetStatus</span><span class="sxs-lookup"><span data-stu-id="f29db-119">GetStatus</span></span></td>
+<td><span data-ttu-id="f29db-120">Retorna <a href="hh557250(v=exchg.10).md">IdleFull</a> se o repositório de versão for maior que metade cheio.</span><span class="sxs-lookup"><span data-stu-id="f29db-120">Returns <a href="hh557250(v=exchg.10).md">IdleFull</a> if version store is more than half full.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a><span data-ttu-id="fe0a8-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="fe0a8-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f29db-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="f29db-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="fe0a8-122">Referência</span><span class="sxs-lookup"><span data-stu-id="fe0a8-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f29db-122">Referência</span><span class="sxs-lookup"><span data-stu-id="f29db-122">Reference</span></span>
 
-[<span data-ttu-id="fe0a8-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="fe0a8-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f29db-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f29db-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

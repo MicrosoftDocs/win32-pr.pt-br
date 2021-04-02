@@ -11,36 +11,36 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104164977"
 ---
-# <a name="xmcolor-extensions"></a><span data-ttu-id="7fdc4-103">Extensões XMCOLOR</span><span class="sxs-lookup"><span data-stu-id="7fdc4-103">XMCOLOR extensions</span></span>
+# <a name="xmcolor-extensions"></a><span data-ttu-id="e50ce-103">Extensões XMCOLOR</span><span class="sxs-lookup"><span data-stu-id="e50ce-103">XMCOLOR extensions</span></span>
 
-<span data-ttu-id="7fdc4-104">[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) descreve um vetor de cor azul vermelho verde (ARGB) de 32 bits, em que cada canal de cor é especificado por 8 bits.</span><span class="sxs-lookup"><span data-stu-id="7fdc4-104">[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) describes a 32-bit Alpha Red Green Blue (ARGB) color vector, where each color channel is specified by 8 bits.</span></span>
+<span data-ttu-id="e50ce-104">[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) descreve um vetor de cor azul vermelho verde (ARGB) de 32 bits, em que cada canal de cor é especificado por 8 bits.</span><span class="sxs-lookup"><span data-stu-id="e50ce-104">[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) describes a 32-bit Alpha Red Green Blue (ARGB) color vector, where each color channel is specified by 8 bits.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="7fdc4-105">Os recursos listados aqui só estão disponíveis ao desenvolver com C++.</span><span class="sxs-lookup"><span data-stu-id="7fdc4-105">The features listed here are only available when developing with C++.</span></span>
+> <span data-ttu-id="e50ce-105">Os recursos listados aqui só estão disponíveis ao desenvolver com C++.</span><span class="sxs-lookup"><span data-stu-id="e50ce-105">The features listed here are only available when developing with C++.</span></span>
 
  
 
-## <a name="in-this-section"></a><span data-ttu-id="7fdc4-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7fdc4-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e50ce-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e50ce-106">In this section</span></span>
 
 
 
-| <span data-ttu-id="7fdc4-107">Tópico</span><span class="sxs-lookup"><span data-stu-id="7fdc4-107">Topic</span></span>                                                     | <span data-ttu-id="7fdc4-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7fdc4-108">Description</span></span>                                   |
+| <span data-ttu-id="e50ce-107">Tópico</span><span class="sxs-lookup"><span data-stu-id="e50ce-107">Topic</span></span>                                                     | <span data-ttu-id="e50ce-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e50ce-108">Description</span></span>                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [<span data-ttu-id="7fdc4-109">**Construtores XMCOLOR**</span><span class="sxs-lookup"><span data-stu-id="7fdc4-109">**XMCOLOR Constructors**</span></span>](xmcolor-ctor.md)<br/>   | <span data-ttu-id="7fdc4-110">Construtores expostos por `XMCOLOR` .</span><span class="sxs-lookup"><span data-stu-id="7fdc4-110">Constructors exposed by `XMCOLOR`.</span></span><br/> |
-| [<span data-ttu-id="7fdc4-111">Operadores XMCOLOR</span><span class="sxs-lookup"><span data-stu-id="7fdc4-111">XMCOLOR Operators</span></span>](ovw-xmcolor-operators.md)<br/> | <span data-ttu-id="7fdc4-112">Operadores expostos por `XMCOLOR` .</span><span class="sxs-lookup"><span data-stu-id="7fdc4-112">Operators exposed by `XMCOLOR`.</span></span><br/>    |
+| [<span data-ttu-id="e50ce-109">**Construtores XMCOLOR**</span><span class="sxs-lookup"><span data-stu-id="e50ce-109">**XMCOLOR Constructors**</span></span>](xmcolor-ctor.md)<br/>   | <span data-ttu-id="e50ce-110">Construtores expostos por `XMCOLOR` .</span><span class="sxs-lookup"><span data-stu-id="e50ce-110">Constructors exposed by `XMCOLOR`.</span></span><br/> |
+| [<span data-ttu-id="e50ce-111">Operadores XMCOLOR</span><span class="sxs-lookup"><span data-stu-id="e50ce-111">XMCOLOR Operators</span></span>](ovw-xmcolor-operators.md)<br/> | <span data-ttu-id="e50ce-112">Operadores expostos por `XMCOLOR` .</span><span class="sxs-lookup"><span data-stu-id="e50ce-112">Operators exposed by `XMCOLOR`.</span></span><br/>    |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="7fdc4-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7fdc4-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e50ce-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e50ce-113">Related topics</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="7fdc4-114">**Referência**</span><span class="sxs-lookup"><span data-stu-id="7fdc4-114">**Reference**</span></span>
+<span data-ttu-id="e50ce-114">**Referência**</span><span class="sxs-lookup"><span data-stu-id="e50ce-114">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="7fdc4-115">**XMCOLOR**</span><span class="sxs-lookup"><span data-stu-id="7fdc4-115">**XMCOLOR**</span></span>](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor)
+[<span data-ttu-id="e50ce-115">**XMCOLOR**</span><span class="sxs-lookup"><span data-stu-id="e50ce-115">**XMCOLOR**</span></span>](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor)
 </dt> </dl>
 
  

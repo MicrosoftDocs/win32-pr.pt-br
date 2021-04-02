@@ -16,20 +16,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641863"
 ---
-# <a name="baseeapmethodusercredentials-schema-complex-types"></a><span data-ttu-id="fa2e9-104">Tipos complexos de esquema baseeapmethodusercredentials</span><span class="sxs-lookup"><span data-stu-id="fa2e9-104">baseeapmethodusercredentials Schema Complex Types</span></span>
+# <a name="baseeapmethodusercredentials-schema-complex-types"></a><span data-ttu-id="3bdc6-104">Tipos complexos de esquema baseeapmethodusercredentials</span><span class="sxs-lookup"><span data-stu-id="3bdc6-104">baseeapmethodusercredentials Schema Complex Types</span></span>
 
-<span data-ttu-id="fa2e9-105">O esquema [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md) define o tipo complexo a seguir.</span><span class="sxs-lookup"><span data-stu-id="fa2e9-105">The [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md) schema defines the following complex type.</span></span>
+<span data-ttu-id="3bdc6-105">O esquema [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md) define o tipo complexo a seguir.</span><span class="sxs-lookup"><span data-stu-id="3bdc6-105">The [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md) schema defines the following complex type.</span></span>
 
--   [<span data-ttu-id="fa2e9-106">**BaseEapMethodUserCredentials**</span><span class="sxs-lookup"><span data-stu-id="fa2e9-106">**BaseEapMethodUserCredentials**</span></span>](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md)
+-   [<span data-ttu-id="3bdc6-106">**BaseEapMethodUserCredentials**</span><span class="sxs-lookup"><span data-stu-id="3bdc6-106">**BaseEapMethodUserCredentials**</span></span>](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md)
 
-## <a name="related-topics"></a><span data-ttu-id="fa2e9-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="fa2e9-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3bdc6-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3bdc6-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="fa2e9-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="fa2e9-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="3bdc6-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="3bdc6-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="fa2e9-109">Esquema baseeapmethodusercredentials</span><span class="sxs-lookup"><span data-stu-id="fa2e9-109">baseeapmethodusercredentials Schema</span></span>](baseeapmethodusercredentialsschema-schema.md)
+[<span data-ttu-id="3bdc6-109">Esquema baseeapmethodusercredentials</span><span class="sxs-lookup"><span data-stu-id="3bdc6-109">baseeapmethodusercredentials Schema</span></span>](baseeapmethodusercredentialsschema-schema.md)
 </dt> </dl>
 
  

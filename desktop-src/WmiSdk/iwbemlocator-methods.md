@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103922594"
 ---
-# <a name="iwbemlocator-methods"></a><span data-ttu-id="bc300-103">Métodos IWbemLocator</span><span class="sxs-lookup"><span data-stu-id="bc300-103">IWbemLocator Methods</span></span>
+# <a name="iwbemlocator-methods"></a><span data-ttu-id="b7191-103">Métodos IWbemLocator</span><span class="sxs-lookup"><span data-stu-id="b7191-103">IWbemLocator Methods</span></span>
 
-<span data-ttu-id="bc300-104">A interface [**IWbemLocator**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="bc300-104">The [**IWbemLocator**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator) interface exposes the following methods.</span></span>
+<span data-ttu-id="b7191-104">A interface [**IWbemLocator**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b7191-104">The [**IWbemLocator**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="bc300-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bc300-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b7191-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b7191-105">In this section</span></span>
 
--   [<span data-ttu-id="bc300-106">**Método ConnectServer**</span><span class="sxs-lookup"><span data-stu-id="bc300-106">**ConnectServer method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)
+-   [<span data-ttu-id="b7191-106">**Método ConnectServer**</span><span class="sxs-lookup"><span data-stu-id="b7191-106">**ConnectServer method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)
 
  
 

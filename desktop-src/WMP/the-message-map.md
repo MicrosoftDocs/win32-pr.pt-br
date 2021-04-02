@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005628"
 ---
-# <a name="the-message-map"></a><span data-ttu-id="2a149-107">O mapa de mensagens</span><span class="sxs-lookup"><span data-stu-id="2a149-107">The Message Map</span></span>
+# <a name="the-message-map"></a><span data-ttu-id="93466-107">O mapa de mensagens</span><span class="sxs-lookup"><span data-stu-id="93466-107">The Message Map</span></span>
 
-<span data-ttu-id="2a149-108">A janela de plug-in responde a vários eventos chamando métodos mapeados para as mensagens de evento correspondentes.</span><span class="sxs-lookup"><span data-stu-id="2a149-108">The plug-in window responds to various events by calling methods that are mapped to corresponding event messages.</span></span> <span data-ttu-id="2a149-109">O assistente fornece um mapeamento para que OnPaint e OnEraseBackground sejam chamados nos horários apropriados.</span><span class="sxs-lookup"><span data-stu-id="2a149-109">The wizard provides a mapping so that OnPaint and OnEraseBackground will be called at the appropriate times.</span></span> <span data-ttu-id="2a149-110">Para criar o botão de **pesquisa** e para responder a cliques dele, a seção mapa de mensagens é modificada da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="2a149-110">To create the **Search** button and to respond to clicks from it, the message map section is modified as follows:</span></span>
+<span data-ttu-id="93466-108">A janela de plug-in responde a vários eventos chamando métodos mapeados para as mensagens de evento correspondentes.</span><span class="sxs-lookup"><span data-stu-id="93466-108">The plug-in window responds to various events by calling methods that are mapped to corresponding event messages.</span></span> <span data-ttu-id="93466-109">O assistente fornece um mapeamento para que OnPaint e OnEraseBackground sejam chamados nos horários apropriados.</span><span class="sxs-lookup"><span data-stu-id="93466-109">The wizard provides a mapping so that OnPaint and OnEraseBackground will be called at the appropriate times.</span></span> <span data-ttu-id="93466-110">Para criar o botão de **pesquisa** e para responder a cliques dele, a seção mapa de mensagens é modificada da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="93466-110">To create the **Search** button and to respond to clicks from it, the message map section is modified as follows:</span></span>
 
 
 ```C++
@@ -33,11 +33,11 @@ END_MSG_MAP()
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="2a149-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="2a149-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="93466-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="93466-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2a149-112">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="2a149-112">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
+[<span data-ttu-id="93466-112">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="93466-112">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
 </dt> </dl>
 
  

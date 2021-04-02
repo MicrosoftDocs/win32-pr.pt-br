@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829437"
 ---
-# <a name="getmultipletrusteeoperation-function"></a><span data-ttu-id="2c5be-103">Função GetMultipleTrusteeOperation</span><span class="sxs-lookup"><span data-stu-id="2c5be-103">GetMultipleTrusteeOperation function</span></span>
+# <a name="getmultipletrusteeoperation-function"></a><span data-ttu-id="fe37a-103">Função GetMultipleTrusteeOperation</span><span class="sxs-lookup"><span data-stu-id="fe37a-103">GetMultipleTrusteeOperation function</span></span>
 
-<span data-ttu-id="2c5be-104">Não há suporte para essa função.</span><span class="sxs-lookup"><span data-stu-id="2c5be-104">This function is not supported.</span></span>
+<span data-ttu-id="fe37a-104">Não há suporte para essa função.</span><span class="sxs-lookup"><span data-stu-id="fe37a-104">This function is not supported.</span></span>
 
  
 

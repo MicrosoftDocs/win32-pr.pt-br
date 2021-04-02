@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005331"
 ---
-# <a name="iagentcharacterexgetversion"></a><span data-ttu-id="d83ad-103">IAgentCharacterEx:: GetVersion</span><span class="sxs-lookup"><span data-stu-id="d83ad-103">IAgentCharacterEx::GetVersion</span></span>
+# <a name="iagentcharacterexgetversion"></a><span data-ttu-id="10857-103">IAgentCharacterEx:: GetVersion</span><span class="sxs-lookup"><span data-stu-id="10857-103">IAgentCharacterEx::GetVersion</span></span>
 
-<span data-ttu-id="d83ad-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="d83ad-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="10857-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="10857-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 ``` syntax
 HRESULT GetVersion(
@@ -22,27 +22,27 @@ HRESULT GetVersion(
 );
 ```
 
-<span data-ttu-id="d83ad-105">Recupera o número de versão do conjunto de animações padrão de caracteres.</span><span class="sxs-lookup"><span data-stu-id="d83ad-105">Retrieves the version number of the character standard animation set.</span></span>
+<span data-ttu-id="10857-105">Recupera o número de versão do conjunto de animações padrão de caracteres.</span><span class="sxs-lookup"><span data-stu-id="10857-105">Retrieves the version number of the character standard animation set.</span></span>
 
--   <span data-ttu-id="d83ad-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="d83ad-106">Returns S\_OK to indicate the operation was successful.</span></span>
+-   <span data-ttu-id="10857-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="10857-106">Returns S\_OK to indicate the operation was successful.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d83ad-107"><span id="psMajor"></span><span id="psmajor"></span><span id="PSMAJOR"></span>*psMajor*</span><span class="sxs-lookup"><span data-stu-id="d83ad-107"><span id="psMajor"></span><span id="psmajor"></span><span id="PSMAJOR"></span>*psMajor*</span></span>
+<span data-ttu-id="10857-107"><span id="psMajor"></span><span id="psmajor"></span><span id="PSMAJOR"></span>*psMajor*</span><span class="sxs-lookup"><span data-stu-id="10857-107"><span id="psMajor"></span><span id="psmajor"></span><span id="PSMAJOR"></span>*psMajor*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d83ad-108">Endereço de uma variável que recebe a versão principal.</span><span class="sxs-lookup"><span data-stu-id="d83ad-108">Address of a variable that receives the major version.</span></span>
+<span data-ttu-id="10857-108">Endereço de uma variável que recebe a versão principal.</span><span class="sxs-lookup"><span data-stu-id="10857-108">Address of a variable that receives the major version.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="d83ad-109"><span id="psMinor"></span><span id="psminor"></span><span id="PSMINOR"></span>*psMinor*</span><span class="sxs-lookup"><span data-stu-id="d83ad-109"><span id="psMinor"></span><span id="psminor"></span><span id="PSMINOR"></span>*psMinor*</span></span>
+<span data-ttu-id="10857-109"><span id="psMinor"></span><span id="psminor"></span><span id="PSMINOR"></span>*psMinor*</span><span class="sxs-lookup"><span data-stu-id="10857-109"><span id="psMinor"></span><span id="psminor"></span><span id="PSMINOR"></span>*psMinor*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d83ad-110">Endereço de uma variável que recebe a versão secundária.</span><span class="sxs-lookup"><span data-stu-id="d83ad-110">Address of a variable that receives the minor version.</span></span>
+<span data-ttu-id="10857-110">Endereço de uma variável que recebe a versão secundária.</span><span class="sxs-lookup"><span data-stu-id="10857-110">Address of a variable that receives the minor version.</span></span>
 
 </dd> </dl>
 
-<span data-ttu-id="d83ad-111">O número de versão do conjunto de animações padrão é definido automaticamente quando você o cria com o editor de caracteres do Microsoft Agent.</span><span class="sxs-lookup"><span data-stu-id="d83ad-111">The standard animation set version number is automatically set when you build it with the Microsoft Agent Character Editor.</span></span>
+<span data-ttu-id="10857-111">O número de versão do conjunto de animações padrão é definido automaticamente quando você o cria com o editor de caracteres do Microsoft Agent.</span><span class="sxs-lookup"><span data-stu-id="10857-111">The standard animation set version number is automatically set when you build it with the Microsoft Agent Character Editor.</span></span>
 
  
 

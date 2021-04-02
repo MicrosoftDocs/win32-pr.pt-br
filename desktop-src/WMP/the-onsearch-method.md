@@ -17,11 +17,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005627"
 ---
-# <a name="the-onsearch-method"></a><span data-ttu-id="e54e9-108">O método onsearch</span><span class="sxs-lookup"><span data-stu-id="e54e9-108">The OnSearch Method</span></span>
+# <a name="the-onsearch-method"></a><span data-ttu-id="eb8cc-108">O método onsearch</span><span class="sxs-lookup"><span data-stu-id="eb8cc-108">The OnSearch Method</span></span>
 
-<span data-ttu-id="e54e9-109">O método onsearch é chamado pelo Windows Media Player quando o botão **Pesquisar** é clicado.</span><span class="sxs-lookup"><span data-stu-id="e54e9-109">The OnSearch method is called by Windows Media Player when the **Search** button is clicked.</span></span> <span data-ttu-id="e54e9-110">Esse método recupera o objeto de **mídia** atual e o passa para o método LaunchPage.</span><span class="sxs-lookup"><span data-stu-id="e54e9-110">This method retrieves the current **Media** object and passes it to the LaunchPage method.</span></span>
+<span data-ttu-id="eb8cc-109">O método onsearch é chamado pelo Windows Media Player quando o botão **Pesquisar** é clicado.</span><span class="sxs-lookup"><span data-stu-id="eb8cc-109">The OnSearch method is called by Windows Media Player when the **Search** button is clicked.</span></span> <span data-ttu-id="eb8cc-110">Esse método recupera o objeto de **mídia** atual e o passa para o método LaunchPage.</span><span class="sxs-lookup"><span data-stu-id="eb8cc-110">This method retrieves the current **Media** object and passes it to the LaunchPage method.</span></span>
 
-<span data-ttu-id="e54e9-111">O código a seguir é usado para implementar esse método:</span><span class="sxs-lookup"><span data-stu-id="e54e9-111">The following code is used to implement this method:</span></span>
+<span data-ttu-id="eb8cc-111">O código a seguir é usado para implementar esse método:</span><span class="sxs-lookup"><span data-stu-id="eb8cc-111">The following code is used to implement this method:</span></span>
 
 
 ```C++
@@ -50,11 +50,11 @@ LRESULT OnSearch(WORD wNotifyCode, WORD wID, HWND hwndCtl, BOOL& fHandled)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e54e9-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e54e9-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="eb8cc-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="eb8cc-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e54e9-113">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="e54e9-113">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
+[<span data-ttu-id="eb8cc-113">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="eb8cc-113">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
 </dt> </dl>
 
  

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005514"
 ---
-# <a name="the-standalone-application"></a><span data-ttu-id="70094-103">O aplicativo autônomo</span><span class="sxs-lookup"><span data-stu-id="70094-103">The Standalone Application</span></span>
+# <a name="the-standalone-application"></a><span data-ttu-id="a7c6d-103">O aplicativo autônomo</span><span class="sxs-lookup"><span data-stu-id="a7c6d-103">The Standalone Application</span></span>
 
-<span data-ttu-id="70094-104">Esse aplicativo autônomo, que consiste em uma chamada para uma única função, constitui a base de nosso aplicativo distribuído.</span><span class="sxs-lookup"><span data-stu-id="70094-104">This standalone application, which consists of a call to a single function, forms the basis of our distributed application.</span></span> <span data-ttu-id="70094-105">A função, **HelloProc**, é definida em seu próprio arquivo de origem para que possa ser compilada e vinculada a um aplicativo autônomo ou a um aplicativo distribuído.</span><span class="sxs-lookup"><span data-stu-id="70094-105">The function, **HelloProc**, is defined in its own source file so that it can be compiled and linked with either a standalone application or a distributed application.</span></span>
+<span data-ttu-id="a7c6d-104">Esse aplicativo autônomo, que consiste em uma chamada para uma única função, constitui a base de nosso aplicativo distribuído.</span><span class="sxs-lookup"><span data-stu-id="a7c6d-104">This standalone application, which consists of a call to a single function, forms the basis of our distributed application.</span></span> <span data-ttu-id="a7c6d-105">A função, **HelloProc**, é definida em seu próprio arquivo de origem para que possa ser compilada e vinculada a um aplicativo autônomo ou a um aplicativo distribuído.</span><span class="sxs-lookup"><span data-stu-id="a7c6d-105">The function, **HelloProc**, is defined in its own source file so that it can be compiled and linked with either a standalone application or a distributed application.</span></span>
 
 
 ```C++

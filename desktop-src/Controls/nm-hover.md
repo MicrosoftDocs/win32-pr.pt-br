@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644256"
 ---
-# <a name="nm_hover-notification-code"></a><span data-ttu-id="397ea-105">Código de notificação de foco de NM \_</span><span class="sxs-lookup"><span data-stu-id="397ea-105">NM\_HOVER notification code</span></span>
+# <a name="nm_hover-notification-code"></a><span data-ttu-id="2ddb2-105">Código de notificação de foco de NM \_</span><span class="sxs-lookup"><span data-stu-id="2ddb2-105">NM\_HOVER notification code</span></span>
 
-<span data-ttu-id="397ea-106">Enviado por um controle quando o mouse passa sobre um item.</span><span class="sxs-lookup"><span data-stu-id="397ea-106">Sent by a control when the mouse hovers over an item.</span></span> <span data-ttu-id="397ea-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="397ea-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
+<span data-ttu-id="2ddb2-106">Enviado por um controle quando o mouse passa sobre um item.</span><span class="sxs-lookup"><span data-stu-id="2ddb2-106">Sent by a control when the mouse hovers over an item.</span></span> <span data-ttu-id="2ddb2-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="2ddb2-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
 
 
 ```C++
@@ -34,30 +34,30 @@ NM_HOVER
 
 
 
-## <a name="parameters"></a><span data-ttu-id="397ea-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="397ea-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2ddb2-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2ddb2-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="397ea-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="397ea-109">*lParam*</span></span> 
+<span data-ttu-id="2ddb2-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="2ddb2-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="397ea-110">Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="397ea-110">A pointer to an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
+<span data-ttu-id="2ddb2-110">Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="2ddb2-110">A pointer to an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="397ea-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="397ea-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2ddb2-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2ddb2-111">Return value</span></span>
 
-<span data-ttu-id="397ea-112">A menos que especificado de outra forma, retorna zero para permitir que o controle processe o foco normalmente ou seja diferente de zero para impedir que o foco seja processado.</span><span class="sxs-lookup"><span data-stu-id="397ea-112">Unless otherwise specified, return zero to allow the control to process the hover normally, or nonzero to prevent the hover from being processed.</span></span>
+<span data-ttu-id="2ddb2-112">A menos que especificado de outra forma, retorna zero para permitir que o controle processe o foco normalmente ou seja diferente de zero para impedir que o foco seja processado.</span><span class="sxs-lookup"><span data-stu-id="2ddb2-112">Unless otherwise specified, return zero to allow the control to process the hover normally, or nonzero to prevent the hover from being processed.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="397ea-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="397ea-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2ddb2-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2ddb2-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="397ea-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="397ea-114">Requirement</span></span> | <span data-ttu-id="397ea-115">Valor</span><span class="sxs-lookup"><span data-stu-id="397ea-115">Value</span></span> |
+| <span data-ttu-id="2ddb2-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="2ddb2-114">Requirement</span></span> | <span data-ttu-id="2ddb2-115">Valor</span><span class="sxs-lookup"><span data-stu-id="2ddb2-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="397ea-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="397ea-116">Minimum supported client</span></span><br/> | <span data-ttu-id="397ea-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="397ea-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="397ea-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="397ea-118">Minimum supported server</span></span><br/> | <span data-ttu-id="397ea-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="397ea-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="397ea-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="397ea-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="397ea-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="397ea-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="2ddb2-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2ddb2-116">Minimum supported client</span></span><br/> | <span data-ttu-id="2ddb2-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="2ddb2-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="2ddb2-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2ddb2-118">Minimum supported server</span></span><br/> | <span data-ttu-id="2ddb2-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="2ddb2-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="2ddb2-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2ddb2-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="2ddb2-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="2ddb2-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

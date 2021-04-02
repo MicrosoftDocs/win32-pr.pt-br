@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103644186"
 ---
-# <a name="reference-ole-and-data-transfer"></a><span data-ttu-id="ee33b-103">Referência (OLE e Transferência de Dados)</span><span class="sxs-lookup"><span data-stu-id="ee33b-103">Reference (OLE and Data Transfer)</span></span>
+# <a name="reference-ole-and-data-transfer"></a><span data-ttu-id="bfd6b-103">Referência (OLE e Transferência de Dados)</span><span class="sxs-lookup"><span data-stu-id="bfd6b-103">Reference (OLE and Data Transfer)</span></span>
 
-<span data-ttu-id="ee33b-104">Os seguintes elementos de programação são usados para implementar documentos compostos e realizar a transferência de dados entre aplicativos.</span><span class="sxs-lookup"><span data-stu-id="ee33b-104">The following programming elements are used to implement compound documents and perform data transfer between applications.</span></span>
+<span data-ttu-id="bfd6b-104">Os seguintes elementos de programação são usados para implementar documentos compostos e realizar a transferência de dados entre aplicativos.</span><span class="sxs-lookup"><span data-stu-id="bfd6b-104">The following programming elements are used to implement compound documents and perform data transfer between applications.</span></span>
 
--   [<span data-ttu-id="ee33b-105">Constantes</span><span class="sxs-lookup"><span data-stu-id="ee33b-105">Constants</span></span>](constants-odt.md)
--   [<span data-ttu-id="ee33b-106">Enumerações</span><span class="sxs-lookup"><span data-stu-id="ee33b-106">Enumerations</span></span>](enumerations-odt.md)
--   [<span data-ttu-id="ee33b-107">Funções</span><span class="sxs-lookup"><span data-stu-id="ee33b-107">Functions</span></span>](functions-odt.md)
--   [<span data-ttu-id="ee33b-108">Interfaces</span><span class="sxs-lookup"><span data-stu-id="ee33b-108">Interfaces</span></span>](interfaces-odt.md)
--   [<span data-ttu-id="ee33b-109">Estruturas</span><span class="sxs-lookup"><span data-stu-id="ee33b-109">Structures</span></span>](structures-odt.md)
+-   [<span data-ttu-id="bfd6b-105">Constantes</span><span class="sxs-lookup"><span data-stu-id="bfd6b-105">Constants</span></span>](constants-odt.md)
+-   [<span data-ttu-id="bfd6b-106">Enumerações</span><span class="sxs-lookup"><span data-stu-id="bfd6b-106">Enumerations</span></span>](enumerations-odt.md)
+-   [<span data-ttu-id="bfd6b-107">Funções</span><span class="sxs-lookup"><span data-stu-id="bfd6b-107">Functions</span></span>](functions-odt.md)
+-   [<span data-ttu-id="bfd6b-108">Interfaces</span><span class="sxs-lookup"><span data-stu-id="bfd6b-108">Interfaces</span></span>](interfaces-odt.md)
+-   [<span data-ttu-id="bfd6b-109">Estruturas</span><span class="sxs-lookup"><span data-stu-id="bfd6b-109">Structures</span></span>](structures-odt.md)
 
  
 

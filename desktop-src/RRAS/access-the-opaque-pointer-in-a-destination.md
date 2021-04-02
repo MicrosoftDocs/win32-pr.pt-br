@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005639"
 ---
-# <a name="access-the-opaque-pointer-in-a-destination"></a><span data-ttu-id="3aa50-103">Acessar o ponteiro opaco em um destino</span><span class="sxs-lookup"><span data-stu-id="3aa50-103">Access the Opaque Pointer in a Destination</span></span>
+# <a name="access-the-opaque-pointer-in-a-destination"></a><span data-ttu-id="a0ab5-103">Acessar o ponteiro opaco em um destino</span><span class="sxs-lookup"><span data-stu-id="a0ab5-103">Access the Opaque Pointer in a Destination</span></span>
 
-<span data-ttu-id="3aa50-104">O código de exemplo a seguir mostra como acessar o ponteiro opaco em um destino.</span><span class="sxs-lookup"><span data-stu-id="3aa50-104">The following sample code shows how to access the opaque pointer in a destination.</span></span>
+<span data-ttu-id="a0ab5-104">O código de exemplo a seguir mostra como acessar o ponteiro opaco em um destino.</span><span class="sxs-lookup"><span data-stu-id="a0ab5-104">The following sample code shows how to access the opaque pointer in a destination.</span></span>
 
 
 ```C++
