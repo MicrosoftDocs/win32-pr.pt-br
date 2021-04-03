@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930451"
 ---
-# <a name="image-list-structures"></a><span data-ttu-id="f1fbe-103">Estruturas da lista de imagens</span><span class="sxs-lookup"><span data-stu-id="f1fbe-103">Image List Structures</span></span>
+# <a name="image-list-structures"></a><span data-ttu-id="44608-103">Estruturas da lista de imagens</span><span class="sxs-lookup"><span data-stu-id="44608-103">Image List Structures</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="f1fbe-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f1fbe-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="44608-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="44608-104">In This Section</span></span>
 
--   [<span data-ttu-id="f1fbe-105">**IMAGEINFO**</span><span class="sxs-lookup"><span data-stu-id="f1fbe-105">**IMAGEINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-imageinfo)
--   [<span data-ttu-id="f1fbe-106">**IMAGELISTDRAWPARAMS**</span><span class="sxs-lookup"><span data-stu-id="f1fbe-106">**IMAGELISTDRAWPARAMS**</span></span>](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams)
+-   [<span data-ttu-id="44608-105">**IMAGEINFO**</span><span class="sxs-lookup"><span data-stu-id="44608-105">**IMAGEINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-imageinfo)
+-   [<span data-ttu-id="44608-106">**IMAGELISTDRAWPARAMS**</span><span class="sxs-lookup"><span data-stu-id="44608-106">**IMAGELISTDRAWPARAMS**</span></span>](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams)
 
  
 

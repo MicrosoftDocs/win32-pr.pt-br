@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930377"
 ---
-# <a name="dmo-basics-windows-media-format-11-sdk"></a><span data-ttu-id="31263-105">Noções básicas do DMO (SDK do Windows Media Format 11)</span><span class="sxs-lookup"><span data-stu-id="31263-105">DMO Basics (Windows Media Format 11 SDK)</span></span>
+# <a name="dmo-basics-windows-media-format-11-sdk"></a><span data-ttu-id="2dfbc-105">Noções básicas do DMO (SDK do Windows Media Format 11)</span><span class="sxs-lookup"><span data-stu-id="2dfbc-105">DMO Basics (Windows Media Format 11 SDK)</span></span>
 
-<span data-ttu-id="31263-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="31263-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="2dfbc-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="2dfbc-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

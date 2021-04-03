@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103664031"
 ---
-# <a name="id3dxprtenginesetsamplinginfo-method"></a><span data-ttu-id="20307-103">Método ID3DXPRTEngine:: SetSamplingInfo</span><span class="sxs-lookup"><span data-stu-id="20307-103">ID3DXPRTEngine::SetSamplingInfo method</span></span>
+# <a name="id3dxprtenginesetsamplinginfo-method"></a><span data-ttu-id="7dae2-103">Método ID3DXPRTEngine:: SetSamplingInfo</span><span class="sxs-lookup"><span data-stu-id="7dae2-103">ID3DXPRTEngine::SetSamplingInfo method</span></span>
 
-<span data-ttu-id="20307-104">Define as propriedades de amostragem usadas pelo simulador de transferência de radiante (PRT) precomputado.</span><span class="sxs-lookup"><span data-stu-id="20307-104">Sets sampling properties used by the precomputed radiance transfer (PRT) simulator.</span></span>
+<span data-ttu-id="7dae2-104">Define as propriedades de amostragem usadas pelo simulador de transferência de radiante (PRT) precomputado.</span><span class="sxs-lookup"><span data-stu-id="7dae2-104">Sets sampling properties used by the precomputed radiance transfer (PRT) simulator.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="20307-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="20307-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7dae2-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7dae2-105">Syntax</span></span>
 
 
 ```C++
@@ -40,77 +40,77 @@ HRESULT SetSamplingInfo(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="20307-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="20307-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7dae2-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7dae2-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="20307-107">*NumRays* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="20307-107">*NumRays* \[in\]</span></span>
+<span data-ttu-id="7dae2-107">*NumRays* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dae2-107">*NumRays* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="20307-108">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="20307-108">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="7dae2-108">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-108">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="20307-109">Número de raios claros para direcionar a cada amostra.</span><span class="sxs-lookup"><span data-stu-id="20307-109">Number of light rays to direct at each sample.</span></span> <span data-ttu-id="20307-110">Deve ser maior que zero.</span><span class="sxs-lookup"><span data-stu-id="20307-110">Must be greater than zero.</span></span>
+<span data-ttu-id="7dae2-109">Número de raios claros para direcionar a cada amostra.</span><span class="sxs-lookup"><span data-stu-id="7dae2-109">Number of light rays to direct at each sample.</span></span> <span data-ttu-id="7dae2-110">Deve ser maior que zero.</span><span class="sxs-lookup"><span data-stu-id="7dae2-110">Must be greater than zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20307-111">*UseSphere* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="20307-111">*UseSphere* \[in\]</span></span>
+<span data-ttu-id="7dae2-111">*UseSphere* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dae2-111">*UseSphere* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="20307-112">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="20307-112">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="7dae2-112">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-112">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="20307-113">Se **for true**, os exemplos serão computados em uma esfera completa.</span><span class="sxs-lookup"><span data-stu-id="20307-113">If **TRUE**, samples will be computed over a full sphere.</span></span> <span data-ttu-id="20307-114">Se **for falso**, os exemplos serão computados em um hemisfério.</span><span class="sxs-lookup"><span data-stu-id="20307-114">If **FALSE**, samples will be computed over a hemisphere.</span></span>
+<span data-ttu-id="7dae2-113">Se **for true**, os exemplos serão computados em uma esfera completa.</span><span class="sxs-lookup"><span data-stu-id="7dae2-113">If **TRUE**, samples will be computed over a full sphere.</span></span> <span data-ttu-id="7dae2-114">Se **for falso**, os exemplos serão computados em um hemisfério.</span><span class="sxs-lookup"><span data-stu-id="7dae2-114">If **FALSE**, samples will be computed over a hemisphere.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20307-115">*UseCosine* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="20307-115">*UseCosine* \[in\]</span></span>
+<span data-ttu-id="7dae2-115">*UseCosine* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dae2-115">*UseCosine* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="20307-116">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="20307-116">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="7dae2-116">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-116">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="20307-117">Se **for true**, use um peso cosseno de exemplos.</span><span class="sxs-lookup"><span data-stu-id="20307-117">If **TRUE**, use a cosine weighting of samples.</span></span> <span data-ttu-id="20307-118">Se UseCosine e UseSphere forem **true**, o método falhará e um erro será retornado.</span><span class="sxs-lookup"><span data-stu-id="20307-118">If both UseCosine and UseSphere are **TRUE**, the method will fail and an error will be returned.</span></span>
+<span data-ttu-id="7dae2-117">Se **for true**, use um peso cosseno de exemplos.</span><span class="sxs-lookup"><span data-stu-id="7dae2-117">If **TRUE**, use a cosine weighting of samples.</span></span> <span data-ttu-id="7dae2-118">Se UseCosine e UseSphere forem **true**, o método falhará e um erro será retornado.</span><span class="sxs-lookup"><span data-stu-id="7dae2-118">If both UseCosine and UseSphere are **TRUE**, the method will fail and an error will be returned.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20307-119">*Adaptável* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="20307-119">*Adaptive* \[in\]</span></span>
+<span data-ttu-id="7dae2-119">*Adaptável* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dae2-119">*Adaptive* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="20307-120">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="20307-120">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="7dae2-120">Tipo: **[ **bool**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-120">Type: **[**BOOL**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="20307-121">Deve ser **false**.</span><span class="sxs-lookup"><span data-stu-id="20307-121">Must be **FALSE**.</span></span> <span data-ttu-id="20307-122">A amostragem adaptável não está implementada no momento.</span><span class="sxs-lookup"><span data-stu-id="20307-122">Adaptive sampling is currently not implemented.</span></span>
+<span data-ttu-id="7dae2-121">Deve ser **false**.</span><span class="sxs-lookup"><span data-stu-id="7dae2-121">Must be **FALSE**.</span></span> <span data-ttu-id="7dae2-122">A amostragem adaptável não está implementada no momento.</span><span class="sxs-lookup"><span data-stu-id="7dae2-122">Adaptive sampling is currently not implemented.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="20307-123">*AdaptiveThresh* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="20307-123">*AdaptiveThresh* \[in\]</span></span>
+<span data-ttu-id="7dae2-123">*AdaptiveThresh* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dae2-123">*AdaptiveThresh* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="20307-124">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="20307-124">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="7dae2-124">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-124">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="20307-125">Ignorado.</span><span class="sxs-lookup"><span data-stu-id="20307-125">Ignored.</span></span>
+<span data-ttu-id="7dae2-125">Ignorado.</span><span class="sxs-lookup"><span data-stu-id="7dae2-125">Ignored.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="20307-126">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="20307-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7dae2-126">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7dae2-126">Return value</span></span>
 
-<span data-ttu-id="20307-127">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="20307-127">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="7dae2-127">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="7dae2-127">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="20307-128">Se o método for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="20307-128">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="20307-129">Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, e \_ NOTIMPL, e \_ OUTOFMEMORY.</span><span class="sxs-lookup"><span data-stu-id="20307-129">If the method fails, the return value can be one of the following: D3DERR\_INVALIDCALL, E\_NOTIMPL, E\_OUTOFMEMORY.</span></span>
+<span data-ttu-id="7dae2-128">Se o método for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="7dae2-128">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="7dae2-129">Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, e \_ NOTIMPL, e \_ OUTOFMEMORY.</span><span class="sxs-lookup"><span data-stu-id="7dae2-129">If the method fails, the return value can be one of the following: D3DERR\_INVALIDCALL, E\_NOTIMPL, E\_OUTOFMEMORY.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="20307-130">Requisitos</span><span class="sxs-lookup"><span data-stu-id="20307-130">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="7dae2-130">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7dae2-130">Requirements</span></span>
 
 
 
-| <span data-ttu-id="20307-131">Requisito</span><span class="sxs-lookup"><span data-stu-id="20307-131">Requirement</span></span> | <span data-ttu-id="20307-132">Valor</span><span class="sxs-lookup"><span data-stu-id="20307-132">Value</span></span> |
+| <span data-ttu-id="7dae2-131">Requisito</span><span class="sxs-lookup"><span data-stu-id="7dae2-131">Requirement</span></span> | <span data-ttu-id="7dae2-132">Valor</span><span class="sxs-lookup"><span data-stu-id="7dae2-132">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="20307-133">parâmetro</span><span class="sxs-lookup"><span data-stu-id="20307-133">Header</span></span><br/>  | <dl> <span data-ttu-id="20307-134"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="20307-134"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
-| <span data-ttu-id="20307-135">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="20307-135">Library</span></span><br/> | <dl> <span data-ttu-id="20307-136"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="20307-136"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="7dae2-133">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7dae2-133">Header</span></span><br/>  | <dl> <span data-ttu-id="7dae2-134"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="7dae2-134"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
+| <span data-ttu-id="7dae2-135">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="7dae2-135">Library</span></span><br/> | <dl> <span data-ttu-id="7dae2-136"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="7dae2-136"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="20307-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="20307-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7dae2-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="7dae2-137">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="20307-138">ID3DXPRTEngine</span><span class="sxs-lookup"><span data-stu-id="20307-138">ID3DXPRTEngine</span></span>](id3dxprtengine.md)
+[<span data-ttu-id="7dae2-138">ID3DXPRTEngine</span><span class="sxs-lookup"><span data-stu-id="7dae2-138">ID3DXPRTEngine</span></span>](id3dxprtengine.md)
 </dt> </dl>
 
  

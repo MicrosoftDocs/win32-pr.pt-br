@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640521"
 ---
-# <a name="ibasicdeviceicons-method"></a><span data-ttu-id="1c043-106">Método IBasicDevice:: ícones</span><span class="sxs-lookup"><span data-stu-id="1c043-106">IBasicDevice::Icons method</span></span>
+# <a name="ibasicdeviceicons-method"></a><span data-ttu-id="470dc-106">Método IBasicDevice:: ícones</span><span class="sxs-lookup"><span data-stu-id="470dc-106">IBasicDevice::Icons method</span></span>
 
-<span data-ttu-id="1c043-107">Retorna um vetor de interfaces [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .</span><span class="sxs-lookup"><span data-stu-id="1c043-107">Returns a vector of [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) interfaces.</span></span>
+<span data-ttu-id="470dc-107">Retorna um vetor de interfaces [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .</span><span class="sxs-lookup"><span data-stu-id="470dc-107">Returns a vector of [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) interfaces.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1c043-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1c043-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="470dc-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="470dc-108">Syntax</span></span>
 
 
 ```C++
@@ -37,36 +37,36 @@ HRESULT Icons(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="1c043-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="1c043-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="470dc-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="470dc-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="1c043-110">*valor* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="1c043-110">*value* \[out\]</span></span>
+<span data-ttu-id="470dc-110">*valor* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="470dc-110">*value* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1c043-111">Recebe uma coleção enumerável de ponteiros de interface [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .</span><span class="sxs-lookup"><span data-stu-id="1c043-111">Receives an enumerable collection of [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) interface pointers.</span></span>
+<span data-ttu-id="470dc-111">Recebe uma coleção enumerável de ponteiros de interface [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .</span><span class="sxs-lookup"><span data-stu-id="470dc-111">Receives an enumerable collection of [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) interface pointers.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="1c043-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="1c043-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="470dc-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="470dc-112">Return value</span></span>
 
-<span data-ttu-id="1c043-113">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="1c043-113">The method returns an **HRESULT**.</span></span> <span data-ttu-id="1c043-114">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="1c043-114">Possible values include, but are not limited to, those in the following table.</span></span>
+<span data-ttu-id="470dc-113">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="470dc-113">The method returns an **HRESULT**.</span></span> <span data-ttu-id="470dc-114">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="470dc-114">Possible values include, but are not limited to, those in the following table.</span></span>
 
 
 
-| <span data-ttu-id="1c043-115">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="1c043-115">Return code</span></span>                                                                          | <span data-ttu-id="1c043-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c043-116">Description</span></span>                      |
+| <span data-ttu-id="470dc-115">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="470dc-115">Return code</span></span>                                                                          | <span data-ttu-id="470dc-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="470dc-116">Description</span></span>                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <span data-ttu-id="1c043-117"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="1c043-117"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="1c043-118">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="1c043-118">The method succeeded.</span></span><br/> |
+| <dl> <span data-ttu-id="470dc-117"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="470dc-117"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="470dc-118">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="470dc-118">The method succeeded.</span></span><br/> |
 
 
 
  
 
-## <a name="see-also"></a><span data-ttu-id="1c043-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="1c043-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="470dc-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="470dc-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1c043-120">**IBasicDevice**</span><span class="sxs-lookup"><span data-stu-id="1c043-120">**IBasicDevice**</span></span>](ibasicdevice.md)
+[<span data-ttu-id="470dc-120">**IBasicDevice**</span><span class="sxs-lookup"><span data-stu-id="470dc-120">**IBasicDevice**</span></span>](ibasicdevice.md)
 </dt> </dl>
 
  

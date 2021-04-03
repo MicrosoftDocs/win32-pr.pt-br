@@ -14,21 +14,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636432"
 ---
-# <a name="routing-table-manager-version-2-constants"></a><span data-ttu-id="a9c6b-105">Constantes do Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="a9c6b-105">Routing Table Manager Version 2 Constants</span></span>
+# <a name="routing-table-manager-version-2-constants"></a><span data-ttu-id="3a740-105">Constantes do Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="3a740-105">Routing Table Manager Version 2 Constants</span></span>
 
-<span data-ttu-id="a9c6b-106">As funções RTMv2 usam as constantes a seguir.</span><span class="sxs-lookup"><span data-stu-id="a9c6b-106">The RTMv2 functions use the following constants.</span></span>
+<span data-ttu-id="3a740-106">As funções RTMv2 usam as constantes a seguir.</span><span class="sxs-lookup"><span data-stu-id="3a740-106">The RTMv2 functions use the following constants.</span></span>
 
-[<span data-ttu-id="a9c6b-107">Sinalizadores de notificação de alteração</span><span class="sxs-lookup"><span data-stu-id="a9c6b-107">Change Notification Flags</span></span>](change-notification-flags.md)
+[<span data-ttu-id="3a740-107">Sinalizadores de notificação de alteração</span><span class="sxs-lookup"><span data-stu-id="3a740-107">Change Notification Flags</span></span>](change-notification-flags.md)
 
-[<span data-ttu-id="a9c6b-108">Sinalizadores de enumeração</span><span class="sxs-lookup"><span data-stu-id="a9c6b-108">Enumeration Flags</span></span>](enumeration-flags.md)
+[<span data-ttu-id="3a740-108">Sinalizadores de enumeração</span><span class="sxs-lookup"><span data-stu-id="3a740-108">Enumeration Flags</span></span>](enumeration-flags.md)
 
-[<span data-ttu-id="a9c6b-109">Sinalizadores do próximo salto</span><span class="sxs-lookup"><span data-stu-id="a9c6b-109">Next Hop Flags</span></span>](next-hop-flags.md)
+[<span data-ttu-id="3a740-109">Sinalizadores do próximo salto</span><span class="sxs-lookup"><span data-stu-id="3a740-109">Next Hop Flags</span></span>](next-hop-flags.md)
 
-[<span data-ttu-id="a9c6b-110">Sinalizadores de rota</span><span class="sxs-lookup"><span data-stu-id="a9c6b-110">Route Flags</span></span>](route-flags.md)
+[<span data-ttu-id="3a740-110">Sinalizadores de rota</span><span class="sxs-lookup"><span data-stu-id="3a740-110">Route Flags</span></span>](route-flags.md)
 
-[<span data-ttu-id="a9c6b-111">Sinalizadores de consulta de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="a9c6b-111">Routing Table Query Flags</span></span>](routing-table-query-flags.md)
+[<span data-ttu-id="3a740-111">Sinalizadores de consulta de tabela de roteamento</span><span class="sxs-lookup"><span data-stu-id="3a740-111">Routing Table Query Flags</span></span>](routing-table-query-flags.md)
 
-[<span data-ttu-id="a9c6b-112">Exibir sinalizadores</span><span class="sxs-lookup"><span data-stu-id="a9c6b-112">View Flags</span></span>](view-flags.md)
+[<span data-ttu-id="3a740-112">Exibir sinalizadores</span><span class="sxs-lookup"><span data-stu-id="3a740-112">View Flags</span></span>](view-flags.md)
 
  
 

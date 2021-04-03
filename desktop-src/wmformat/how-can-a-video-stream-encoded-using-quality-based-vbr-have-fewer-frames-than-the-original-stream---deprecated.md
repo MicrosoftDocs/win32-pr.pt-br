@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663882"
 ---
-# <a name="how-can-a-video-stream-encoded-using-quality-based-vbr-have-fewer-frames-than-the-original-stream"></a><span data-ttu-id="33881-105">Como um fluxo de vídeo codificado usando a taxa de bits baseada em qualidade tem menos quadros do que o fluxo original</span><span class="sxs-lookup"><span data-stu-id="33881-105">How can a video stream encoded using quality-based VBR have fewer frames than the original stream</span></span>
+# <a name="how-can-a-video-stream-encoded-using-quality-based-vbr-have-fewer-frames-than-the-original-stream"></a><span data-ttu-id="d7141-105">Como um fluxo de vídeo codificado usando a taxa de bits baseada em qualidade tem menos quadros do que o fluxo original</span><span class="sxs-lookup"><span data-stu-id="d7141-105">How can a video stream encoded using quality-based VBR have fewer frames than the original stream</span></span>
 
-<span data-ttu-id="33881-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="33881-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="d7141-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="d7141-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

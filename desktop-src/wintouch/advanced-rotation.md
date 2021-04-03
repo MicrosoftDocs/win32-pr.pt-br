@@ -18,15 +18,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103915989"
 ---
-# <a name="advanced-rotation"></a><span data-ttu-id="6e126-109">Rotação avançada</span><span class="sxs-lookup"><span data-stu-id="6e126-109">Advanced Rotation</span></span>
+# <a name="advanced-rotation"></a><span data-ttu-id="f4d67-109">Rotação avançada</span><span class="sxs-lookup"><span data-stu-id="f4d67-109">Advanced Rotation</span></span>
 
-<span data-ttu-id="6e126-110">Esta seção explica como girar um objeto com base em onde o usuário está executando a manipulação de rotação.</span><span class="sxs-lookup"><span data-stu-id="6e126-110">This section explains how to rotate an object based on where the user is performing the rotation manipulation.</span></span>
+<span data-ttu-id="f4d67-110">Esta seção explica como girar um objeto com base em onde o usuário está executando a manipulação de rotação.</span><span class="sxs-lookup"><span data-stu-id="f4d67-110">This section explains how to rotate an object based on where the user is performing the rotation manipulation.</span></span>
 
-<span data-ttu-id="6e126-111">A imagem a seguir ilustra duas maneiras diferentes que um objeto pode ser girado.</span><span class="sxs-lookup"><span data-stu-id="6e126-111">The following image illustrates two different ways that an object can be rotated.</span></span>
+<span data-ttu-id="f4d67-111">A imagem a seguir ilustra duas maneiras diferentes que um objeto pode ser girado.</span><span class="sxs-lookup"><span data-stu-id="f4d67-111">The following image illustrates two different ways that an object can be rotated.</span></span>
 
 ![ilustração mostrando dois tipos de rotação de dedo único: ao lado do centro ou ao lado da borda, com a borda que envolve a rotação e a translação](images/rotation.png)
 
-<span data-ttu-id="6e126-113">No exemplo A, o objeto é manipulado em volta do ponto central do objeto.</span><span class="sxs-lookup"><span data-stu-id="6e126-113">In example A, the object is manipulated around the center point of the object.</span></span> <span data-ttu-id="6e126-114">No exemplo B, o objeto é girado em volta do ponto central da manipulação.</span><span class="sxs-lookup"><span data-stu-id="6e126-114">In example B, the object is rotated around the center point of the manipulation.</span></span> <span data-ttu-id="6e126-115">Para dar suporte à manipulação em um ponto diferente do ponto central do objeto, você deve executar uma manipulação composta que executa a rotação e a conversão.</span><span class="sxs-lookup"><span data-stu-id="6e126-115">To support manipulation around a point other than the center point of the object, you must perform a compound manipulation that performs both rotation and translation.</span></span> <span data-ttu-id="6e126-116">O código a seguir mostra como essa manipulação é executada e calculada.</span><span class="sxs-lookup"><span data-stu-id="6e126-116">The following code shows how this manipulation is performed and calculated.</span></span>
+<span data-ttu-id="f4d67-113">No exemplo A, o objeto é manipulado em volta do ponto central do objeto.</span><span class="sxs-lookup"><span data-stu-id="f4d67-113">In example A, the object is manipulated around the center point of the object.</span></span> <span data-ttu-id="f4d67-114">No exemplo B, o objeto é girado em volta do ponto central da manipulação.</span><span class="sxs-lookup"><span data-stu-id="f4d67-114">In example B, the object is rotated around the center point of the manipulation.</span></span> <span data-ttu-id="f4d67-115">Para dar suporte à manipulação em um ponto diferente do ponto central do objeto, você deve executar uma manipulação composta que executa a rotação e a conversão.</span><span class="sxs-lookup"><span data-stu-id="f4d67-115">To support manipulation around a point other than the center point of the object, you must perform a compound manipulation that performs both rotation and translation.</span></span> <span data-ttu-id="f4d67-116">O código a seguir mostra como essa manipulação é executada e calculada.</span><span class="sxs-lookup"><span data-stu-id="f4d67-116">The following code shows how this manipulation is performed and calculated.</span></span>
 
 
 ```C++
@@ -46,14 +46,14 @@ RotateVector(FLOAT *vector, FLOAT *tVector, FLOAT fAngle) {
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="6e126-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6e126-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f4d67-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f4d67-117">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6e126-118">Manipulações avançadas</span><span class="sxs-lookup"><span data-stu-id="6e126-118">Advanced Manipulations</span></span>](advanced-manipulations.md)
+[<span data-ttu-id="f4d67-118">Manipulações avançadas</span><span class="sxs-lookup"><span data-stu-id="f4d67-118">Advanced Manipulations</span></span>](advanced-manipulations.md)
 </dt> <dt>
 
-[<span data-ttu-id="6e126-119">Manipulações</span><span class="sxs-lookup"><span data-stu-id="6e126-119">Manipulations</span></span>](getting-started-with-manipulations.md)
+[<span data-ttu-id="f4d67-119">Manipulações</span><span class="sxs-lookup"><span data-stu-id="f4d67-119">Manipulations</span></span>](getting-started-with-manipulations.md)
 </dt> </dl>
 
  

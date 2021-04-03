@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663948"
 ---
-# <a name="encoding-methods-windows-media-format-11-sdk"></a><span data-ttu-id="16e0d-105">Métodos de codificação (Windows Media Format 11 SDK)</span><span class="sxs-lookup"><span data-stu-id="16e0d-105">Encoding Methods (Windows Media Format 11 SDK)</span></span>
+# <a name="encoding-methods-windows-media-format-11-sdk"></a><span data-ttu-id="4c275-105">Métodos de codificação (Windows Media Format 11 SDK)</span><span class="sxs-lookup"><span data-stu-id="4c275-105">Encoding Methods (Windows Media Format 11 SDK)</span></span>
 
-<span data-ttu-id="16e0d-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="16e0d-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="4c275-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="4c275-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103828956"
 ---
-# <a name="ix509certificaterequestpkcs7v2-methods"></a><span data-ttu-id="54adf-103">Métodos IX509CertificateRequestPkcs7V2</span><span class="sxs-lookup"><span data-stu-id="54adf-103">IX509CertificateRequestPkcs7V2 Methods</span></span>
+# <a name="ix509certificaterequestpkcs7v2-methods"></a><span data-ttu-id="fb4a1-103">Métodos IX509CertificateRequestPkcs7V2</span><span class="sxs-lookup"><span data-stu-id="fb4a1-103">IX509CertificateRequestPkcs7V2 Methods</span></span>
 
-<span data-ttu-id="54adf-104">A interface [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="54adf-104">The [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) interface exposes the following methods.</span></span>
+<span data-ttu-id="fb4a1-104">A interface [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="fb4a1-104">The [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="54adf-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="54adf-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fb4a1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fb4a1-105">In this section</span></span>
 
--   [<span data-ttu-id="54adf-106">**Método CheckCertificateSignature**</span><span class="sxs-lookup"><span data-stu-id="54adf-106">**CheckCertificateSignature Method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-checkcertificatesignature)
--   [<span data-ttu-id="54adf-107">**Método InitializeFromTemplate**</span><span class="sxs-lookup"><span data-stu-id="54adf-107">**InitializeFromTemplate Method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-initializefromtemplate)
+-   [<span data-ttu-id="fb4a1-106">**Método CheckCertificateSignature**</span><span class="sxs-lookup"><span data-stu-id="fb4a1-106">**CheckCertificateSignature Method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-checkcertificatesignature)
+-   [<span data-ttu-id="fb4a1-107">**Método InitializeFromTemplate**</span><span class="sxs-lookup"><span data-stu-id="fb4a1-107">**InitializeFromTemplate Method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-initializefromtemplate)
 
  
 

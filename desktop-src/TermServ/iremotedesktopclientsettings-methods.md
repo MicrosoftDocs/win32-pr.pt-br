@@ -12,39 +12,39 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641392"
 ---
-# <a name="iremotedesktopclientsettings-methods"></a><span data-ttu-id="3c171-103">Métodos IRemoteDesktopClientSettings</span><span class="sxs-lookup"><span data-stu-id="3c171-103">IRemoteDesktopClientSettings methods</span></span>
+# <a name="iremotedesktopclientsettings-methods"></a><span data-ttu-id="5802d-103">Métodos IRemoteDesktopClientSettings</span><span class="sxs-lookup"><span data-stu-id="5802d-103">IRemoteDesktopClientSettings methods</span></span>
 
-<span data-ttu-id="3c171-104">A interface [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3c171-104">The [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) interface exposes the following methods.</span></span>
+<span data-ttu-id="5802d-104">A interface [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="5802d-104">The [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3c171-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3c171-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5802d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5802d-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3c171-106">**Método ApplySettings**</span><span class="sxs-lookup"><span data-stu-id="3c171-106">**ApplySettings method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-applysettings)
+[<span data-ttu-id="5802d-106">**Método ApplySettings**</span><span class="sxs-lookup"><span data-stu-id="5802d-106">**ApplySettings method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-applysettings)
 </dt> <dd>
 
-<span data-ttu-id="3c171-107">Armazena o conteúdo especificado no arquivo RDP.</span><span class="sxs-lookup"><span data-stu-id="3c171-107">Stores the specified contents in the RDP file.</span></span>
+<span data-ttu-id="5802d-107">Armazena o conteúdo especificado no arquivo RDP.</span><span class="sxs-lookup"><span data-stu-id="5802d-107">Stores the specified contents in the RDP file.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="3c171-108">**Método GetRdpProperty**</span><span class="sxs-lookup"><span data-stu-id="3c171-108">**GetRdpProperty method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-getrdpproperty)
+[<span data-ttu-id="5802d-108">**Método GetRdpProperty**</span><span class="sxs-lookup"><span data-stu-id="5802d-108">**GetRdpProperty method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-getrdpproperty)
 </dt> <dd>
 
-<span data-ttu-id="3c171-109">Recupera um único valor de propriedade nomeada de RDP.</span><span class="sxs-lookup"><span data-stu-id="3c171-109">Retrieves a single named RDP property value.</span></span>
+<span data-ttu-id="5802d-109">Recupera um único valor de propriedade nomeada de RDP.</span><span class="sxs-lookup"><span data-stu-id="5802d-109">Retrieves a single named RDP property value.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="3c171-110">**Método RetrieveSettings**</span><span class="sxs-lookup"><span data-stu-id="3c171-110">**RetrieveSettings method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-retrievesettings)
+[<span data-ttu-id="5802d-110">**Método RetrieveSettings**</span><span class="sxs-lookup"><span data-stu-id="5802d-110">**RetrieveSettings method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-retrievesettings)
 </dt> <dd>
 
-<span data-ttu-id="3c171-111">Recupera o arquivo RDP inteiro como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="3c171-111">Retrieves the entire RDP file as a string.</span></span>
+<span data-ttu-id="5802d-111">Recupera o arquivo RDP inteiro como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="5802d-111">Retrieves the entire RDP file as a string.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="3c171-112">**Método SetRdpProperty**</span><span class="sxs-lookup"><span data-stu-id="3c171-112">**SetRdpProperty method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-setrdpproperty)
+[<span data-ttu-id="5802d-112">**Método SetRdpProperty**</span><span class="sxs-lookup"><span data-stu-id="5802d-112">**SetRdpProperty method**</span></span>](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-setrdpproperty)
 </dt> <dd>
 
-<span data-ttu-id="3c171-113">Define o valor de uma única propriedade nomeada de RDP.</span><span class="sxs-lookup"><span data-stu-id="3c171-113">Sets the value of a single named RDP property.</span></span>
+<span data-ttu-id="5802d-113">Define o valor de uma única propriedade nomeada de RDP.</span><span class="sxs-lookup"><span data-stu-id="5802d-113">Sets the value of a single named RDP property.</span></span>
 
 </dd> </dl>
 

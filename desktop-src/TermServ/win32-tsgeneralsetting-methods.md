@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005774"
 ---
-# <a name="win32_tsgeneralsetting-methods"></a><span data-ttu-id="9af81-103">\_Métodos TSGeneralSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="9af81-103">Win32\_TSGeneralSetting Methods</span></span>
+# <a name="win32_tsgeneralsetting-methods"></a><span data-ttu-id="3d5f0-103">\_Métodos TSGeneralSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="3d5f0-103">Win32\_TSGeneralSetting Methods</span></span>
 
-<span data-ttu-id="9af81-104">A classe [**Win32 \_ TSGeneralSetting**](win32-tsgeneralsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="9af81-104">The [**Win32\_TSGeneralSetting**](win32-tsgeneralsetting.md) class exposes the following methods.</span></span>
+<span data-ttu-id="3d5f0-104">A classe [**Win32 \_ TSGeneralSetting**](win32-tsgeneralsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3d5f0-104">The [**Win32\_TSGeneralSetting**](win32-tsgeneralsetting.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="9af81-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9af81-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3d5f0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3d5f0-105">In this section</span></span>
 
--   [<span data-ttu-id="9af81-106">**Método SetEncryptionLevel**</span><span class="sxs-lookup"><span data-stu-id="9af81-106">**SetEncryptionLevel method**</span></span>](win32-tsgeneralsetting-setencryptionlevel.md)
--   [<span data-ttu-id="9af81-107">**Método SetSecurityLayer**</span><span class="sxs-lookup"><span data-stu-id="9af81-107">**SetSecurityLayer method**</span></span>](win32-tsgeneralsetting-setsecuritylayer.md)
--   [<span data-ttu-id="9af81-108">**Método SetUserAuthenticationRequired**</span><span class="sxs-lookup"><span data-stu-id="9af81-108">**SetUserAuthenticationRequired method**</span></span>](setuserauthenticationrequired-win32-tsgeneralsetting.md)
+-   [<span data-ttu-id="3d5f0-106">**Método SetEncryptionLevel**</span><span class="sxs-lookup"><span data-stu-id="3d5f0-106">**SetEncryptionLevel method**</span></span>](win32-tsgeneralsetting-setencryptionlevel.md)
+-   [<span data-ttu-id="3d5f0-107">**Método SetSecurityLayer**</span><span class="sxs-lookup"><span data-stu-id="3d5f0-107">**SetSecurityLayer method**</span></span>](win32-tsgeneralsetting-setsecuritylayer.md)
+-   [<span data-ttu-id="3d5f0-108">**Método SetUserAuthenticationRequired**</span><span class="sxs-lookup"><span data-stu-id="3d5f0-108">**SetUserAuthenticationRequired method**</span></span>](setuserauthenticationrequired-win32-tsgeneralsetting.md)
 
  
 

@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103664072"
 ---
-# <a name="idirectxfilecreateenumobject-method"></a><span data-ttu-id="a50aa-104">Método IDirectXFile:: createenumobject</span><span class="sxs-lookup"><span data-stu-id="a50aa-104">IDirectXFile::CreateEnumObject method</span></span>
+# <a name="idirectxfilecreateenumobject-method"></a><span data-ttu-id="cd10d-104">Método IDirectXFile:: createenumobject</span><span class="sxs-lookup"><span data-stu-id="cd10d-104">IDirectXFile::CreateEnumObject method</span></span>
 
-<span data-ttu-id="a50aa-105">Cria um objeto enumerador.</span><span class="sxs-lookup"><span data-stu-id="a50aa-105">Creates an enumerator object.</span></span> <span data-ttu-id="a50aa-106">Preterido.</span><span class="sxs-lookup"><span data-stu-id="a50aa-106">Deprecated.</span></span>
+<span data-ttu-id="cd10d-105">Cria um objeto enumerador.</span><span class="sxs-lookup"><span data-stu-id="cd10d-105">Creates an enumerator object.</span></span> <span data-ttu-id="cd10d-106">Preterido.</span><span class="sxs-lookup"><span data-stu-id="cd10d-106">Deprecated.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a50aa-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a50aa-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cd10d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="cd10d-107">Syntax</span></span>
 
 
 ```C++
@@ -38,63 +38,63 @@ HRESULT CreateEnumObject(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="a50aa-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a50aa-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cd10d-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="cd10d-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="a50aa-109">*pvSource* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a50aa-109">*pvSource* \[in\]</span></span>
+<span data-ttu-id="cd10d-109">*pvSource* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="cd10d-109">*pvSource* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="a50aa-110">Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="a50aa-110">Type: **[**LPVOID**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="cd10d-110">Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="cd10d-110">Type: **[**LPVOID**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="a50aa-111">Ponteiro para dados cujos conteúdos dependem do valor de dwLoadOptions</span><span class="sxs-lookup"><span data-stu-id="a50aa-111">Pointer to data whose contents depend on the value of dwLoadOptions</span></span>
+<span data-ttu-id="cd10d-111">Ponteiro para dados cujos conteúdos dependem do valor de dwLoadOptions</span><span class="sxs-lookup"><span data-stu-id="cd10d-111">Pointer to data whose contents depend on the value of dwLoadOptions</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="a50aa-112">*dwLoadOptions* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a50aa-112">*dwLoadOptions* \[in\]</span></span>
+<span data-ttu-id="cd10d-112">*dwLoadOptions* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="cd10d-112">*dwLoadOptions* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="a50aa-113">Tipo: **[ **DXFILELOADOPTIONS**](dxfile.md)**</span><span class="sxs-lookup"><span data-stu-id="a50aa-113">Type: **[**DXFILELOADOPTIONS**](dxfile.md)**</span></span>
+<span data-ttu-id="cd10d-113">Tipo: **[ **DXFILELOADOPTIONS**](dxfile.md)**</span><span class="sxs-lookup"><span data-stu-id="cd10d-113">Type: **[**DXFILELOADOPTIONS**](dxfile.md)**</span></span>
 
-<span data-ttu-id="a50aa-114">Valor que especifica a origem dos dados.</span><span class="sxs-lookup"><span data-stu-id="a50aa-114">Value that specifies the source of the data.</span></span> <span data-ttu-id="a50aa-115">Esse valor pode ser um dos sinalizadores DXFILELOAD \_ XXX em [constantes DXFILE](dxfile.md).</span><span class="sxs-lookup"><span data-stu-id="a50aa-115">This value can be one of the DXFILELOAD\_xxx flags in [DXFILE Constants](dxfile.md).</span></span>
+<span data-ttu-id="cd10d-114">Valor que especifica a origem dos dados.</span><span class="sxs-lookup"><span data-stu-id="cd10d-114">Value that specifies the source of the data.</span></span> <span data-ttu-id="cd10d-115">Esse valor pode ser um dos sinalizadores DXFILELOAD \_ XXX em [constantes DXFILE](dxfile.md).</span><span class="sxs-lookup"><span data-stu-id="cd10d-115">This value can be one of the DXFILELOAD\_xxx flags in [DXFILE Constants](dxfile.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="a50aa-116">*ppEnumObj* \[ out, retval\]</span><span class="sxs-lookup"><span data-stu-id="a50aa-116">*ppEnumObj* \[out, retval\]</span></span>
+<span data-ttu-id="cd10d-116">*ppEnumObj* \[ out, retval\]</span><span class="sxs-lookup"><span data-stu-id="cd10d-116">*ppEnumObj* \[out, retval\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="a50aa-117">Tipo: **[ **LPDIRECTXFILEENUMOBJECT**](idirectxfileenumobject.md)\***</span><span class="sxs-lookup"><span data-stu-id="a50aa-117">Type: **[**LPDIRECTXFILEENUMOBJECT**](idirectxfileenumobject.md)\***</span></span>
+<span data-ttu-id="cd10d-117">Tipo: **[ **LPDIRECTXFILEENUMOBJECT**](idirectxfileenumobject.md)\***</span><span class="sxs-lookup"><span data-stu-id="cd10d-117">Type: **[**LPDIRECTXFILEENUMOBJECT**](idirectxfileenumobject.md)\***</span></span>
 
-<span data-ttu-id="a50aa-118">Endereço de um ponteiro para uma interface [**IDirectXFileEnumObject**](idirectxfileenumobject.md) , que representa o objeto enumerador criado.</span><span class="sxs-lookup"><span data-stu-id="a50aa-118">Address of a pointer to an [**IDirectXFileEnumObject**](idirectxfileenumobject.md) interface, representing the created enumerator object.</span></span>
+<span data-ttu-id="cd10d-118">Endereço de um ponteiro para uma interface [**IDirectXFileEnumObject**](idirectxfileenumobject.md) , que representa o objeto enumerador criado.</span><span class="sxs-lookup"><span data-stu-id="cd10d-118">Address of a pointer to an [**IDirectXFileEnumObject**](idirectxfileenumobject.md) interface, representing the created enumerator object.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="a50aa-119">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="a50aa-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cd10d-119">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="cd10d-119">Return value</span></span>
 
-<span data-ttu-id="a50aa-120">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="a50aa-120">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="cd10d-120">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="cd10d-120">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="a50aa-121">Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK.</span><span class="sxs-lookup"><span data-stu-id="a50aa-121">If the method succeeds, the return value is DXFILE\_OK.</span></span> <span data-ttu-id="a50aa-122">Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADRESOURCE, DXFILEERR \_ BADVALUE, DXFILEERR \_ FILENOTFOUND, DXFILEERR \_ RESOURCENOTFOUND, DXFILEERR \_ URLNOTFOUND.</span><span class="sxs-lookup"><span data-stu-id="a50aa-122">If the method fails, the return value can be one of the following: DXFILEERR\_BADALLOC, DXFILEERR\_BADFILEFLOATSIZE, DXFILEERR\_BADFILETYPE, DXFILEERR\_BADFILEVERSION, DXFILEERR\_BADRESOURCE, DXFILEERR\_BADVALUE, DXFILEERR\_FILENOTFOUND, DXFILEERR\_RESOURCENOTFOUND, DXFILEERR\_URLNOTFOUND.</span></span>
+<span data-ttu-id="cd10d-121">Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK.</span><span class="sxs-lookup"><span data-stu-id="cd10d-121">If the method succeeds, the return value is DXFILE\_OK.</span></span> <span data-ttu-id="cd10d-122">Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADRESOURCE, DXFILEERR \_ BADVALUE, DXFILEERR \_ FILENOTFOUND, DXFILEERR \_ RESOURCENOTFOUND, DXFILEERR \_ URLNOTFOUND.</span><span class="sxs-lookup"><span data-stu-id="cd10d-122">If the method fails, the return value can be one of the following: DXFILEERR\_BADALLOC, DXFILEERR\_BADFILEFLOATSIZE, DXFILEERR\_BADFILETYPE, DXFILEERR\_BADFILEVERSION, DXFILEERR\_BADRESOURCE, DXFILEERR\_BADVALUE, DXFILEERR\_FILENOTFOUND, DXFILEERR\_RESOURCENOTFOUND, DXFILEERR\_URLNOTFOUND.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a50aa-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="a50aa-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cd10d-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="cd10d-123">Remarks</span></span>
 
-<span data-ttu-id="a50aa-124">Depois de usar esse método, use um dos métodos IDirectXFileEnumObject para recuperar um objeto de dados.</span><span class="sxs-lookup"><span data-stu-id="a50aa-124">After using this method, use one of the IDirectXFileEnumObject methods to retrieve a data object.</span></span>
+<span data-ttu-id="cd10d-124">Depois de usar esse método, use um dos métodos IDirectXFileEnumObject para recuperar um objeto de dados.</span><span class="sxs-lookup"><span data-stu-id="cd10d-124">After using this method, use one of the IDirectXFileEnumObject methods to retrieve a data object.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="a50aa-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a50aa-125">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="cd10d-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="cd10d-125">Requirements</span></span>
 
 
 
-| <span data-ttu-id="a50aa-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="a50aa-126">Requirement</span></span> | <span data-ttu-id="a50aa-127">Valor</span><span class="sxs-lookup"><span data-stu-id="a50aa-127">Value</span></span> |
+| <span data-ttu-id="cd10d-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="cd10d-126">Requirement</span></span> | <span data-ttu-id="cd10d-127">Valor</span><span class="sxs-lookup"><span data-stu-id="cd10d-127">Value</span></span> |
 |--------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="a50aa-128">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a50aa-128">Header</span></span><br/>  | <dl> <span data-ttu-id="a50aa-129"><dt>DXFile. h</dt></span><span class="sxs-lookup"><span data-stu-id="a50aa-129"><dt>DXFile.h</dt></span></span> </dl>   |
-| <span data-ttu-id="a50aa-130">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="a50aa-130">Library</span></span><br/> | <dl> <span data-ttu-id="a50aa-131"><dt>D3dxof. lib</dt></span><span class="sxs-lookup"><span data-stu-id="a50aa-131"><dt>D3dxof.lib</dt></span></span> </dl> |
+| <span data-ttu-id="cd10d-128">parâmetro</span><span class="sxs-lookup"><span data-stu-id="cd10d-128">Header</span></span><br/>  | <dl> <span data-ttu-id="cd10d-129"><dt>DXFile. h</dt></span><span class="sxs-lookup"><span data-stu-id="cd10d-129"><dt>DXFile.h</dt></span></span> </dl>   |
+| <span data-ttu-id="cd10d-130">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="cd10d-130">Library</span></span><br/> | <dl> <span data-ttu-id="cd10d-131"><dt>D3dxof. lib</dt></span><span class="sxs-lookup"><span data-stu-id="cd10d-131"><dt>D3dxof.lib</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="a50aa-132">Confira também</span><span class="sxs-lookup"><span data-stu-id="a50aa-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cd10d-132">Confira também</span><span class="sxs-lookup"><span data-stu-id="cd10d-132">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a50aa-133">IDirectXFile</span><span class="sxs-lookup"><span data-stu-id="a50aa-133">IDirectXFile</span></span>](idirectxfile.md)
+[<span data-ttu-id="cd10d-133">IDirectXFile</span><span class="sxs-lookup"><span data-stu-id="cd10d-133">IDirectXFile</span></span>](idirectxfile.md)
 </dt> </dl>
 
  

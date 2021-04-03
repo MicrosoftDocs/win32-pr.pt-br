@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005985"
 ---
-# <a name="iworkspaceclientext-methods"></a><span data-ttu-id="36c14-103">Métodos IWorkspaceClientExt</span><span class="sxs-lookup"><span data-stu-id="36c14-103">IWorkspaceClientExt Methods</span></span>
+# <a name="iworkspaceclientext-methods"></a><span data-ttu-id="0f3d9-103">Métodos IWorkspaceClientExt</span><span class="sxs-lookup"><span data-stu-id="0f3d9-103">IWorkspaceClientExt Methods</span></span>
 
-<span data-ttu-id="36c14-104">A interface [**IWorkspaceClientExt**](/windows/desktop/api/Workspaceruntimeclientext/nn-workspaceruntimeclientext-iworkspaceclientext) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="36c14-104">The [**IWorkspaceClientExt**](/windows/desktop/api/Workspaceruntimeclientext/nn-workspaceruntimeclientext-iworkspaceclientext) interface exposes the following methods.</span></span>
+<span data-ttu-id="0f3d9-104">A interface [**IWorkspaceClientExt**](/windows/desktop/api/Workspaceruntimeclientext/nn-workspaceruntimeclientext-iworkspaceclientext) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0f3d9-104">The [**IWorkspaceClientExt**](/windows/desktop/api/Workspaceruntimeclientext/nn-workspaceruntimeclientext-iworkspaceclientext) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="36c14-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="36c14-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0f3d9-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0f3d9-105">In this section</span></span>
 
--   [<span data-ttu-id="36c14-106">**Método GetResourceDisplayName**</span><span class="sxs-lookup"><span data-stu-id="36c14-106">**GetResourceDisplayName method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourcedisplayname)
--   [<span data-ttu-id="36c14-107">**Método getresourceid**</span><span class="sxs-lookup"><span data-stu-id="36c14-107">**GetResourceId method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourceid)
--   [<span data-ttu-id="36c14-108">**Método IssueDisconnect**</span><span class="sxs-lookup"><span data-stu-id="36c14-108">**IssueDisconnect method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-issuedisconnect)
+-   [<span data-ttu-id="0f3d9-106">**Método GetResourceDisplayName**</span><span class="sxs-lookup"><span data-stu-id="0f3d9-106">**GetResourceDisplayName method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourcedisplayname)
+-   [<span data-ttu-id="0f3d9-107">**Método getresourceid**</span><span class="sxs-lookup"><span data-stu-id="0f3d9-107">**GetResourceId method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourceid)
+-   [<span data-ttu-id="0f3d9-108">**Método IssueDisconnect**</span><span class="sxs-lookup"><span data-stu-id="0f3d9-108">**IssueDisconnect method**</span></span>](/windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-issuedisconnect)
 
  
 

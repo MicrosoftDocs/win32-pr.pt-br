@@ -19,23 +19,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104006438"
 ---
-# <a name="wmpromotionurl"></a><span data-ttu-id="6c269-104">WM/PromotionURL</span><span class="sxs-lookup"><span data-stu-id="6c269-104">WM/PromotionURL</span></span>
+# <a name="wmpromotionurl"></a><span data-ttu-id="dee2f-104">WM/PromotionURL</span><span class="sxs-lookup"><span data-stu-id="dee2f-104">WM/PromotionURL</span></span>
 
-<span data-ttu-id="6c269-105">O atributo **WM/PromotionURL** contém o endereço de um site da Web que oferece uma promoção relacionada ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="6c269-105">The **WM/PromotionURL** attribute contains the address of a Web site offering a promotion related to the content.</span></span>
+<span data-ttu-id="dee2f-105">O atributo **WM/PromotionURL** contém o endereço de um site da Web que oferece uma promoção relacionada ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="dee2f-105">The **WM/PromotionURL** attribute contains the address of a Web site offering a promotion related to the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="6c269-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="6c269-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="dee2f-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="dee2f-106">Global Constant</span></span>
 
-<span data-ttu-id="6c269-107">g \_ wszWMPromotionURL</span><span class="sxs-lookup"><span data-stu-id="6c269-107">g\_wszWMPromotionURL</span></span>
+<span data-ttu-id="dee2f-107">g \_ wszWMPromotionURL</span><span class="sxs-lookup"><span data-stu-id="dee2f-107">g\_wszWMPromotionURL</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="6c269-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="6c269-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="dee2f-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="dee2f-108">Data Type</span></span>
 
-<span data-ttu-id="6c269-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="6c269-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="dee2f-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="dee2f-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6c269-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="6c269-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dee2f-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="dee2f-110">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6c269-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="6c269-111">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="dee2f-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="dee2f-111">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

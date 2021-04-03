@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663510"
 ---
-# <a name="esentversion-class"></a><span data-ttu-id="f762b-103">Classe EsentVersion</span><span class="sxs-lookup"><span data-stu-id="f762b-103">EsentVersion class</span></span>
+# <a name="esentversion-class"></a><span data-ttu-id="e0733-103">Classe EsentVersion</span><span class="sxs-lookup"><span data-stu-id="e0733-103">EsentVersion class</span></span>
 
-<span data-ttu-id="f762b-104">Fornece informações sobre a versão do ESENT que está sendo usada.</span><span class="sxs-lookup"><span data-stu-id="f762b-104">Gives information about the version of ESENT being used.</span></span>
+<span data-ttu-id="e0733-104">Fornece informações sobre a versão do ESENT que está sendo usada.</span><span class="sxs-lookup"><span data-stu-id="e0733-104">Gives information about the version of ESENT being used.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="f762b-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="f762b-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="e0733-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="e0733-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="f762b-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="f762b-106">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="f762b-107">Microsoft. ISAM. ESENT. Interop. EsentVersion</span><span class="sxs-lookup"><span data-stu-id="f762b-107">Microsoft.Isam.Esent.Interop.EsentVersion</span></span>  
+[<span data-ttu-id="e0733-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="e0733-106">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="e0733-107">Microsoft. ISAM. ESENT. Interop. EsentVersion</span><span class="sxs-lookup"><span data-stu-id="e0733-107">Microsoft.Isam.Esent.Interop.EsentVersion</span></span>  
 
-<span data-ttu-id="f762b-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f762b-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f762b-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f762b-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e0733-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e0733-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="e0733-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e0733-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f762b-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="f762b-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e0733-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="e0733-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -56,14 +56,14 @@ You do not need to declare an instance of a static class in order to access its 
 public static class EsentVersion
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="f762b-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="f762b-111">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="e0733-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="e0733-111">Thread safety</span></span>
 
-<span data-ttu-id="f762b-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="f762b-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="f762b-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="f762b-113">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="e0733-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="e0733-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="e0733-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="e0733-113">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f762b-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="f762b-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e0733-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="e0733-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f762b-115">Referência</span><span class="sxs-lookup"><span data-stu-id="f762b-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e0733-115">Referência</span><span class="sxs-lookup"><span data-stu-id="e0733-115">Reference</span></span>
 
-[<span data-ttu-id="f762b-116">Membros do EsentVersion</span><span class="sxs-lookup"><span data-stu-id="f762b-116">EsentVersion members</span></span>](./esentversion-members.md)
+[<span data-ttu-id="e0733-116">Membros do EsentVersion</span><span class="sxs-lookup"><span data-stu-id="e0733-116">EsentVersion members</span></span>](./esentversion-members.md)
 
-[<span data-ttu-id="f762b-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f762b-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="e0733-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e0733-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

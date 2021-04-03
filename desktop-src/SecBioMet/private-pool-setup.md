@@ -11,18 +11,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005948"
 ---
-# <a name="private-pool-setup"></a><span data-ttu-id="d2817-103">Configuração do pool privado</span><span class="sxs-lookup"><span data-stu-id="d2817-103">Private Pool Setup</span></span>
+# <a name="private-pool-setup"></a><span data-ttu-id="ed4a4-103">Configuração do pool privado</span><span class="sxs-lookup"><span data-stu-id="ed4a4-103">Private Pool Setup</span></span>
 
-<span data-ttu-id="d2817-104">As seções a seguir contêm o código necessário para configurar um pool de sensor privado.</span><span class="sxs-lookup"><span data-stu-id="d2817-104">The following sections contain the code necessary to setup a private sensor pool.</span></span>
+<span data-ttu-id="ed4a4-104">As seções a seguir contêm o código necessário para configurar um pool de sensor privado.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-104">The following sections contain the code necessary to setup a private sensor pool.</span></span>
 
--   [<span data-ttu-id="d2817-105">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="d2817-105">Targetver.h</span></span>](#targetverh)
--   [<span data-ttu-id="d2817-106">Stdafx. h</span><span class="sxs-lookup"><span data-stu-id="d2817-106">Stdafx.h</span></span>](#stdafxh)
--   [<span data-ttu-id="d2817-107">PrivatePoolCommonDefs. h</span><span class="sxs-lookup"><span data-stu-id="d2817-107">PrivatePoolCommonDefs.h</span></span>](#privatepoolcommondefsh)
--   [<span data-ttu-id="d2817-108">PrivatePoolSetup. cpp</span><span class="sxs-lookup"><span data-stu-id="d2817-108">PrivatePoolSetup.cpp</span></span>](#privatepoolsetupcpp)
+-   [<span data-ttu-id="ed4a4-105">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-105">Targetver.h</span></span>](#targetverh)
+-   [<span data-ttu-id="ed4a4-106">Stdafx. h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-106">Stdafx.h</span></span>](#stdafxh)
+-   [<span data-ttu-id="ed4a4-107">PrivatePoolCommonDefs. h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-107">PrivatePoolCommonDefs.h</span></span>](#privatepoolcommondefsh)
+-   [<span data-ttu-id="ed4a4-108">PrivatePoolSetup. cpp</span><span class="sxs-lookup"><span data-stu-id="ed4a4-108">PrivatePoolSetup.cpp</span></span>](#privatepoolsetupcpp)
 
-## <a name="targetverh"></a><span data-ttu-id="d2817-109">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="d2817-109">Targetver.h</span></span>
+## <a name="targetverh"></a><span data-ttu-id="ed4a4-109">Targetver. h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-109">Targetver.h</span></span>
 
-<span data-ttu-id="d2817-110">Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="d2817-110">This sample was created for Windows 7 and later operating systems.</span></span>
+<span data-ttu-id="ed4a4-110">Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-110">This sample was created for Windows 7 and later operating systems.</span></span>
 
 
 ```C++
@@ -34,7 +34,7 @@ ms.locfileid: "104005948"
 
 
 
-## <a name="stdafxh"></a><span data-ttu-id="d2817-111">Stdafx.h</span><span class="sxs-lookup"><span data-stu-id="d2817-111">Stdafx.h</span></span>
+## <a name="stdafxh"></a><span data-ttu-id="ed4a4-111">Stdafx.h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-111">Stdafx.h</span></span>
 
 
 ```C++
@@ -65,9 +65,9 @@ ms.locfileid: "104005948"
 
 
 
-## <a name="privatepoolcommondefsh"></a><span data-ttu-id="d2817-112">PrivatePoolCommonDefs. h</span><span class="sxs-lookup"><span data-stu-id="d2817-112">PrivatePoolCommonDefs.h</span></span>
+## <a name="privatepoolcommondefsh"></a><span data-ttu-id="ed4a4-112">PrivatePoolCommonDefs. h</span><span class="sxs-lookup"><span data-stu-id="ed4a4-112">PrivatePoolCommonDefs.h</span></span>
 
-<span data-ttu-id="d2817-113">Inclua o cabeçalho a seguir.</span><span class="sxs-lookup"><span data-stu-id="d2817-113">Include the following header.</span></span> <span data-ttu-id="d2817-114">Observe que você deve gerar uma ID de banco de dados exclusiva.</span><span class="sxs-lookup"><span data-stu-id="d2817-114">Note that you must generate a unique database ID.</span></span> <span data-ttu-id="d2817-115">Não use o GUID fornecido em um aplicativo liberado.</span><span class="sxs-lookup"><span data-stu-id="d2817-115">Do not use the provided GUID in a released application.</span></span>
+<span data-ttu-id="ed4a4-113">Inclua o cabeçalho a seguir.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-113">Include the following header.</span></span> <span data-ttu-id="ed4a4-114">Observe que você deve gerar uma ID de banco de dados exclusiva.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-114">Note that you must generate a unique database ID.</span></span> <span data-ttu-id="ed4a4-115">Não use o GUID fornecido em um aplicativo liberado.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-115">Do not use the provided GUID in a released application.</span></span>
 
 
 ```C++
@@ -99,9 +99,9 @@ static const GUID PRIVATE_POOL_DATABASE_ID =
 
 
 
-## <a name="privatepoolsetupcpp"></a><span data-ttu-id="d2817-116">PrivatePoolSetup. cpp</span><span class="sxs-lookup"><span data-stu-id="d2817-116">PrivatePoolSetup.cpp</span></span>
+## <a name="privatepoolsetupcpp"></a><span data-ttu-id="ed4a4-116">PrivatePoolSetup. cpp</span><span class="sxs-lookup"><span data-stu-id="ed4a4-116">PrivatePoolSetup.cpp</span></span>
 
-<span data-ttu-id="d2817-117">O código-fonte a seguir exibe o ponto de entrada para um aplicativo de pool de sensores privado.</span><span class="sxs-lookup"><span data-stu-id="d2817-117">The following source code displays the entry point for a private sensor pool application.</span></span>
+<span data-ttu-id="ed4a4-117">O código-fonte a seguir exibe o ponto de entrada para um aplicativo de pool de sensores privado.</span><span class="sxs-lookup"><span data-stu-id="ed4a4-117">The following source code displays the entry point for a private sensor pool application.</span></span>
 
 
 ```C++

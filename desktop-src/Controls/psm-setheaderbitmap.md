@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104006331"
 ---
-# <a name="psm_setheaderbitmap-message"></a><span data-ttu-id="4c94a-105">Mensagem de PSM \_ SETHEADERBITMAP</span><span class="sxs-lookup"><span data-stu-id="4c94a-105">PSM\_SETHEADERBITMAP message</span></span>
+# <a name="psm_setheaderbitmap-message"></a><span data-ttu-id="f208e-105">Mensagem de PSM \_ SETHEADERBITMAP</span><span class="sxs-lookup"><span data-stu-id="f208e-105">PSM\_SETHEADERBITMAP message</span></span>
 
-<span data-ttu-id="4c94a-106">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="4c94a-106">This message is not implemented.</span></span>
+<span data-ttu-id="f208e-106">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="f208e-106">This message is not implemented.</span></span>
 
  
 

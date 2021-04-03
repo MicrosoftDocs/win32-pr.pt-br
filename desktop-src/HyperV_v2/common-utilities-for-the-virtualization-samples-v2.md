@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829038"
 ---
-# <a name="common-utilities-for-the-virtualization-samples-v2"></a><span data-ttu-id="cec93-103">Utilitários comuns para exemplos de virtualização (v2)</span><span class="sxs-lookup"><span data-stu-id="cec93-103">Common utilities for the virtualization samples (V2)</span></span>
+# <a name="common-utilities-for-the-virtualization-samples-v2"></a><span data-ttu-id="d2e2e-103">Utilitários comuns para exemplos de virtualização (v2)</span><span class="sxs-lookup"><span data-stu-id="d2e2e-103">Common utilities for the virtualization samples (V2)</span></span>
 
-<span data-ttu-id="cec93-104">Os utilitários a seguir são usados por alguns dos exemplos de virtualização do C#.</span><span class="sxs-lookup"><span data-stu-id="cec93-104">The following utilities are used by some of the C# virtualization samples.</span></span>
+<span data-ttu-id="d2e2e-104">Os utilitários a seguir são usados por alguns dos exemplos de virtualização do C#.</span><span class="sxs-lookup"><span data-stu-id="d2e2e-104">The following utilities are used by some of the C# virtualization samples.</span></span>
 
 
 ```CSharp

@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663913"
 ---
-# <a name="up-down-constants"></a><span data-ttu-id="52e28-103">Up-Down constantes</span><span class="sxs-lookup"><span data-stu-id="52e28-103">Up-Down Constants</span></span>
+# <a name="up-down-constants"></a><span data-ttu-id="29cde-103">Up-Down constantes</span><span class="sxs-lookup"><span data-stu-id="29cde-103">Up-Down Constants</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="52e28-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="52e28-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="29cde-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="29cde-104">In This Section</span></span>
 
--   [<span data-ttu-id="52e28-105">Estilos de controle de cima para baixo</span><span class="sxs-lookup"><span data-stu-id="52e28-105">Up-Down Control Styles</span></span>](up-down-control-styles.md)
+-   [<span data-ttu-id="29cde-105">Estilos de controle de cima para baixo</span><span class="sxs-lookup"><span data-stu-id="29cde-105">Up-Down Control Styles</span></span>](up-down-control-styles.md)
 
  
 

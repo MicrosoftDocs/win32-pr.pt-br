@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104091779"
 ---
-# <a name="jet_indexlistcolumnidindexname-property"></a><span data-ttu-id="f495e-103">Propriedade JET_INDEXLIST. columnidindexname</span><span class="sxs-lookup"><span data-stu-id="f495e-103">JET_INDEXLIST.columnidindexname property</span></span>
+# <a name="jet_indexlistcolumnidindexname-property"></a><span data-ttu-id="f528f-103">Propriedade JET_INDEXLIST. columnidindexname</span><span class="sxs-lookup"><span data-stu-id="f528f-103">JET_INDEXLIST.columnidindexname property</span></span>
 
-<span data-ttu-id="f495e-104">Obtém o columnid da coluna na tabela temporária que armazena o nome do índice.</span><span class="sxs-lookup"><span data-stu-id="f495e-104">Gets the columnid of the column in the temporary table which stores the name of the index.</span></span> <span data-ttu-id="f495e-105">A coluna é do tipo [texto](./jet-coltyp-enumeration.md).</span><span class="sxs-lookup"><span data-stu-id="f495e-105">The column is of type [Text](./jet-coltyp-enumeration.md).</span></span>
+<span data-ttu-id="f528f-104">Obtém o columnid da coluna na tabela temporária que armazena o nome do índice.</span><span class="sxs-lookup"><span data-stu-id="f528f-104">Gets the columnid of the column in the temporary table which stores the name of the index.</span></span> <span data-ttu-id="f528f-105">A coluna é do tipo [texto](./jet-coltyp-enumeration.md).</span><span class="sxs-lookup"><span data-stu-id="f528f-105">The column is of type [Text](./jet-coltyp-enumeration.md).</span></span>
 
-<span data-ttu-id="f495e-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f495e-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f495e-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f495e-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f528f-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f528f-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f528f-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f528f-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f495e-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="f495e-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f528f-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="f528f-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.columnidindexname
 public JET_COLUMNID columnidindexname { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="f495e-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f495e-109">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="f528f-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f528f-109">Property value</span></span>
 
-<span data-ttu-id="f495e-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="f495e-110">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
+<span data-ttu-id="f528f-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="f528f-110">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="f495e-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="f495e-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f528f-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="f528f-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f495e-112">Referência</span><span class="sxs-lookup"><span data-stu-id="f495e-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f528f-112">Referência</span><span class="sxs-lookup"><span data-stu-id="f528f-112">Reference</span></span>
 
-[<span data-ttu-id="f495e-113">Classe JET_INDEXLIST</span><span class="sxs-lookup"><span data-stu-id="f495e-113">JET_INDEXLIST class</span></span>](./jet-indexlist-class.md)
+[<span data-ttu-id="f528f-113">Classe JET_INDEXLIST</span><span class="sxs-lookup"><span data-stu-id="f528f-113">JET_INDEXLIST class</span></span>](./jet-indexlist-class.md)
 
-[<span data-ttu-id="f495e-114">Membros do JET_INDEXLIST</span><span class="sxs-lookup"><span data-stu-id="f495e-114">JET_INDEXLIST members</span></span>](./jet-indexlist-members.md)
+[<span data-ttu-id="f528f-114">Membros do JET_INDEXLIST</span><span class="sxs-lookup"><span data-stu-id="f528f-114">JET_INDEXLIST members</span></span>](./jet-indexlist-members.md)
 
-[<span data-ttu-id="f495e-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f495e-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f528f-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f528f-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

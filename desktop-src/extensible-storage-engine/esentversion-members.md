@@ -14,66 +14,66 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663509"
 ---
-# <a name="esentversion-members"></a><span data-ttu-id="8a30d-103">Membros do EsentVersion</span><span class="sxs-lookup"><span data-stu-id="8a30d-103">EsentVersion members</span></span>
+# <a name="esentversion-members"></a><span data-ttu-id="1616d-103">Membros do EsentVersion</span><span class="sxs-lookup"><span data-stu-id="1616d-103">EsentVersion members</span></span>
 
-<span data-ttu-id="8a30d-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="8a30d-104">Include protected members</span></span>  
-<span data-ttu-id="8a30d-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="8a30d-105">Include inherited members</span></span>  
+<span data-ttu-id="1616d-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="1616d-104">Include protected members</span></span>  
+<span data-ttu-id="1616d-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="1616d-105">Include inherited members</span></span>  
 
-<span data-ttu-id="8a30d-106">Fornece informações sobre a versão do ESENT que está sendo usada.</span><span class="sxs-lookup"><span data-stu-id="8a30d-106">Gives information about the version of ESENT being used.</span></span>
+<span data-ttu-id="1616d-106">Fornece informações sobre a versão do ESENT que está sendo usada.</span><span class="sxs-lookup"><span data-stu-id="1616d-106">Gives information about the version of ESENT being used.</span></span>
 
-<span data-ttu-id="8a30d-107">O tipo [EsentVersion](./esentversion-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="8a30d-107">The [EsentVersion](./esentversion-class.md) type exposes the following members.</span></span>
+<span data-ttu-id="1616d-107">O tipo [EsentVersion](./esentversion-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="1616d-107">The [EsentVersion](./esentversion-class.md) type exposes the following members.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8a30d-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8a30d-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1616d-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1616d-108">Properties</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="8a30d-109">Nome</span><span class="sxs-lookup"><span data-stu-id="8a30d-109">Name</span></span></th>
-<th><span data-ttu-id="8a30d-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a30d-110">Description</span></span></th>
+<th><span data-ttu-id="1616d-109">Nome</span><span class="sxs-lookup"><span data-stu-id="1616d-109">Name</span></span></th>
+<th><span data-ttu-id="1616d-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1616d-110">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-113"><a href="dn350858(v=exchg.10).md">SupportsLargeKeys</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-113"><a href="dn350858(v=exchg.10).md">SupportsLargeKeys</a></span></span></td>
-<td><span data-ttu-id="8a30d-114">Obtém um valor que indica se &gt; há suporte para chaves grandes (255 bytes).</span><span class="sxs-lookup"><span data-stu-id="8a30d-114">Gets a value that indicates whether large (&gt; 255 byte) keys are supported.</span></span> <span data-ttu-id="8a30d-115">O tamanho da chave para um índice pode ser especificado no objeto <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> .</span><span class="sxs-lookup"><span data-stu-id="8a30d-115">The key size for an index can be specified in the <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> object.</span></span></td>
+<td><span data-ttu-id="1616d-113"><a href="dn350858(v=exchg.10).md">SupportsLargeKeys</a></span><span class="sxs-lookup"><span data-stu-id="1616d-113"><a href="dn350858(v=exchg.10).md">SupportsLargeKeys</a></span></span></td>
+<td><span data-ttu-id="1616d-114">Obtém um valor que indica se &gt; há suporte para chaves grandes (255 bytes).</span><span class="sxs-lookup"><span data-stu-id="1616d-114">Gets a value that indicates whether large (&gt; 255 byte) keys are supported.</span></span> <span data-ttu-id="1616d-115">O tamanho da chave para um índice pode ser especificado no objeto <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> .</span><span class="sxs-lookup"><span data-stu-id="1616d-115">The key size for an index can be specified in the <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> object.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-118"><a href="dn350871(v=exchg.10).md">SupportsServer2003Features</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-118"><a href="dn350871(v=exchg.10).md">SupportsServer2003Features</a></span></span></td>
-<td><span data-ttu-id="8a30d-119">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão 2003 do Windows Server do ESENT.</span><span class="sxs-lookup"><span data-stu-id="8a30d-119">Gets a value that indicates whether the current version of ESENT supports features available in the Windows Server 2003 version of ESENT.</span></span></td>
+<td><span data-ttu-id="1616d-118"><a href="dn350871(v=exchg.10).md">SupportsServer2003Features</a></span><span class="sxs-lookup"><span data-stu-id="1616d-118"><a href="dn350871(v=exchg.10).md">SupportsServer2003Features</a></span></span></td>
+<td><span data-ttu-id="1616d-119">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão 2003 do Windows Server do ESENT.</span><span class="sxs-lookup"><span data-stu-id="1616d-119">Gets a value that indicates whether the current version of ESENT supports features available in the Windows Server 2003 version of ESENT.</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-122"><a href="dn350856(v=exchg.10).md">SupportsUnicodePaths</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-122"><a href="dn350856(v=exchg.10).md">SupportsUnicodePaths</a></span></span></td>
-<td><span data-ttu-id="8a30d-123">Obtém um valor que indica se a versão atual do ESENT pode usar caminhos não ASCII para acessar bancos de dados.</span><span class="sxs-lookup"><span data-stu-id="8a30d-123">Gets a value that indicates whether the current version of ESENT can use non-ASCII paths to access databases.</span></span></td>
+<td><span data-ttu-id="1616d-122"><a href="dn350856(v=exchg.10).md">SupportsUnicodePaths</a></span><span class="sxs-lookup"><span data-stu-id="1616d-122"><a href="dn350856(v=exchg.10).md">SupportsUnicodePaths</a></span></span></td>
+<td><span data-ttu-id="1616d-123">Obtém um valor que indica se a versão atual do ESENT pode usar caminhos não ASCII para acessar bancos de dados.</span><span class="sxs-lookup"><span data-stu-id="1616d-123">Gets a value that indicates whether the current version of ESENT can use non-ASCII paths to access databases.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-126"><a href="dn350861(v=exchg.10).md">SupportsVistaFeatures</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-126"><a href="dn350861(v=exchg.10).md">SupportsVistaFeatures</a></span></span></td>
-<td><span data-ttu-id="8a30d-127">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão Windows Vista do ESENT.</span><span class="sxs-lookup"><span data-stu-id="8a30d-127">Gets a value that indicates whether the current version of ESENT supports features available in the Windows Vista version of ESENT.</span></span></td>
+<td><span data-ttu-id="1616d-126"><a href="dn350861(v=exchg.10).md">SupportsVistaFeatures</a></span><span class="sxs-lookup"><span data-stu-id="1616d-126"><a href="dn350861(v=exchg.10).md">SupportsVistaFeatures</a></span></span></td>
+<td><span data-ttu-id="1616d-127">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão Windows Vista do ESENT.</span><span class="sxs-lookup"><span data-stu-id="1616d-127">Gets a value that indicates whether the current version of ESENT supports features available in the Windows Vista version of ESENT.</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-130"><a href="dn350860(v=exchg.10).md">SupportsWindows7Features</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-130"><a href="dn350860(v=exchg.10).md">SupportsWindows7Features</a></span></span></td>
-<td><span data-ttu-id="8a30d-131">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão do Windows 7 do ESENT.</span><span class="sxs-lookup"><span data-stu-id="8a30d-131">Gets a value that indicates whether the current version of ESENT supports features available in the Windows 7 version of ESENT.</span></span></td>
+<td><span data-ttu-id="1616d-130"><a href="dn350860(v=exchg.10).md">SupportsWindows7Features</a></span><span class="sxs-lookup"><span data-stu-id="1616d-130"><a href="dn350860(v=exchg.10).md">SupportsWindows7Features</a></span></span></td>
+<td><span data-ttu-id="1616d-131">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão do Windows 7 do ESENT.</span><span class="sxs-lookup"><span data-stu-id="1616d-131">Gets a value that indicates whether the current version of ESENT supports features available in the Windows 7 version of ESENT.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="8a30d-134"><a href="dn350863(v=exchg.10).md">SupportsWindows8Features</a></span><span class="sxs-lookup"><span data-stu-id="8a30d-134"><a href="dn350863(v=exchg.10).md">SupportsWindows8Features</a></span></span></td>
-<td><span data-ttu-id="8a30d-135">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão do Windows 8 do ESENT.</span><span class="sxs-lookup"><span data-stu-id="8a30d-135">Gets a value that indicates whether the current version of ESENT supports features available in the Windows 8 version of ESENT.</span></span></td>
+<td><span data-ttu-id="1616d-134"><a href="dn350863(v=exchg.10).md">SupportsWindows8Features</a></span><span class="sxs-lookup"><span data-stu-id="1616d-134"><a href="dn350863(v=exchg.10).md">SupportsWindows8Features</a></span></span></td>
+<td><span data-ttu-id="1616d-135">Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão do Windows 8 do ESENT.</span><span class="sxs-lookup"><span data-stu-id="1616d-135">Gets a value that indicates whether the current version of ESENT supports features available in the Windows 8 version of ESENT.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="8a30d-136">Parte superior</span><span class="sxs-lookup"><span data-stu-id="8a30d-136">Top</span></span>
+<span data-ttu-id="1616d-136">Parte superior</span><span class="sxs-lookup"><span data-stu-id="1616d-136">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8a30d-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="8a30d-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1616d-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="1616d-137">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="8a30d-138">Referência</span><span class="sxs-lookup"><span data-stu-id="8a30d-138">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="1616d-138">Referência</span><span class="sxs-lookup"><span data-stu-id="1616d-138">Reference</span></span>
 
-[<span data-ttu-id="8a30d-139">Classe EsentVersion</span><span class="sxs-lookup"><span data-stu-id="8a30d-139">EsentVersion class</span></span>](./esentversion-class.md)
+[<span data-ttu-id="1616d-139">Classe EsentVersion</span><span class="sxs-lookup"><span data-stu-id="1616d-139">EsentVersion class</span></span>](./esentversion-class.md)
 
-[<span data-ttu-id="8a30d-140">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8a30d-140">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="1616d-140">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1616d-140">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

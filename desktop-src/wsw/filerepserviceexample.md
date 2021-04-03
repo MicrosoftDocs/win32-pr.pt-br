@@ -15,107 +15,107 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005696"
 ---
-# <a name="filerepserviceexample"></a><span data-ttu-id="70b44-106">FileRepServiceExample</span><span class="sxs-lookup"><span data-stu-id="70b44-106">FileRepServiceExample</span></span>
+# <a name="filerepserviceexample"></a><span data-ttu-id="80d32-106">FileRepServiceExample</span><span class="sxs-lookup"><span data-stu-id="80d32-106">FileRepServiceExample</span></span>
 
-<span data-ttu-id="70b44-107">FileRep recupera arquivos de um servidor e os copia para um cliente.</span><span class="sxs-lookup"><span data-stu-id="70b44-107">FileRep retrieves files from a server and copies them to a client.</span></span> <span data-ttu-id="70b44-108">Para fazer isso, ele emprega três componentes: o serviço do servidor em execução no computador com o arquivo de origem, o serviço do cliente em execução no computador onde o arquivo de destino será armazenado e uma ferramenta de linha de comando para controlar a cópia.</span><span class="sxs-lookup"><span data-stu-id="70b44-108">To do so it employs three components - the server service running on the machine with the source file, the client service running on the machine where the destination file will be stored and a command line tool to control the copying.</span></span> <span data-ttu-id="70b44-109">Os serviços de cliente e servidor estão constantemente executando serviços da Web enquanto a ferramenta de linha de comando é iniciada pelo usuário e é encerrada após uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="70b44-109">The client and server services are constantly running web services while the command line tool is started by the user and exits after one request.</span></span>
+<span data-ttu-id="80d32-107">FileRep recupera arquivos de um servidor e os copia para um cliente.</span><span class="sxs-lookup"><span data-stu-id="80d32-107">FileRep retrieves files from a server and copies them to a client.</span></span> <span data-ttu-id="80d32-108">Para fazer isso, ele emprega três componentes: o serviço do servidor em execução no computador com o arquivo de origem, o serviço do cliente em execução no computador onde o arquivo de destino será armazenado e uma ferramenta de linha de comando para controlar a cópia.</span><span class="sxs-lookup"><span data-stu-id="80d32-108">To do so it employs three components - the server service running on the machine with the source file, the client service running on the machine where the destination file will be stored and a command line tool to control the copying.</span></span> <span data-ttu-id="80d32-109">Os serviços de cliente e servidor estão constantemente executando serviços da Web enquanto a ferramenta de linha de comando é iniciada pelo usuário e é encerrada após uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="80d32-109">The client and server services are constantly running web services while the command line tool is started by the user and exits after one request.</span></span>
 
-<span data-ttu-id="70b44-110">Este exemplo ilustra o uso da camada de canal e de serialização.</span><span class="sxs-lookup"><span data-stu-id="70b44-110">This sample illustrates the use of the channel and serialization layer.</span></span>
+<span data-ttu-id="80d32-110">Este exemplo ilustra o uso da camada de canal e de serialização.</span><span class="sxs-lookup"><span data-stu-id="80d32-110">This sample illustrates the use of the channel and serialization layer.</span></span>
 
-<span data-ttu-id="70b44-111">Este é o serviço.</span><span class="sxs-lookup"><span data-stu-id="70b44-111">This is the service.</span></span> <span data-ttu-id="70b44-112">A ferramenta de linha de comando pode ser encontrada [aqui](filereptoolexample.md). O serviço tem um cliente e um modo de servidor, onde o servidor envia arquivos e o cliente recebe arquivos.</span><span class="sxs-lookup"><span data-stu-id="70b44-112">The command line tool can be found [here](filereptoolexample.md).The service has a client and a server mode, where the server sends files and the client receives files.</span></span>
+<span data-ttu-id="80d32-111">Este é o serviço.</span><span class="sxs-lookup"><span data-stu-id="80d32-111">This is the service.</span></span> <span data-ttu-id="80d32-112">A ferramenta de linha de comando pode ser encontrada [aqui](filereptoolexample.md). O serviço tem um cliente e um modo de servidor, onde o servidor envia arquivos e o cliente recebe arquivos.</span><span class="sxs-lookup"><span data-stu-id="80d32-112">The command line tool can be found [here](filereptoolexample.md).The service has a client and a server mode, where the server sends files and the client receives files.</span></span>
 
-<span data-ttu-id="70b44-113">Os parâmetros de linha de comando para o modo de cliente são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="70b44-113">The command line parameters for the client mode are as follows:</span></span>
+<span data-ttu-id="80d32-113">Os parâmetros de linha de comando para o modo de cliente são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="80d32-113">The command line parameters for the client mode are as follows:</span></span>
 
-<span data-ttu-id="70b44-114">**WsFileRepService.exe cliente** *<Service Url>* **\[ /reporting: <Error/info/verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections ***<number of connections>*** \] :**</span><span class="sxs-lookup"><span data-stu-id="70b44-114">**WsFileRepService.exe client** *<Service Url>* **\[/reporting:<error/info/verbose>\] \[/encoding:<text/binary/MTOM>\] \[/connections:***<number of connections>***\]**</span></span>
-
-<dl> <dt>
-
-<span data-ttu-id="70b44-115"><span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Cliente</span><span class="sxs-lookup"><span data-stu-id="70b44-115"><span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Client</span></span>
-</dt> <dd>
-
-<span data-ttu-id="70b44-116">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="70b44-116">Required.</span></span> <span data-ttu-id="70b44-117">Indica que o serviço é executado como cliente.</span><span class="sxs-lookup"><span data-stu-id="70b44-117">Denotes that the service runs as client.</span></span>
-
-</dd> <dt>
-
-<span data-ttu-id="70b44-118"><span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>URL do serviço</span><span class="sxs-lookup"><span data-stu-id="70b44-118"><span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>Service Url</span></span>
-</dt> <dd>
-
-<span data-ttu-id="70b44-119">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="70b44-119">Required.</span></span> <span data-ttu-id="70b44-120">Denota a URL em que o serviço escuta.</span><span class="sxs-lookup"><span data-stu-id="70b44-120">Denotes the URL the service listens on.</span></span>
-
-</dd> <dt>
-
-<span data-ttu-id="70b44-121"><span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Mecanismo</span><span class="sxs-lookup"><span data-stu-id="70b44-121"><span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Encoding</span></span>
-</dt> <dd>
-
-<span data-ttu-id="70b44-122">Opcional.</span><span class="sxs-lookup"><span data-stu-id="70b44-122">Optional.</span></span> <span data-ttu-id="70b44-123">Especifica a codificação usada ao se comunicar com a ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="70b44-123">Specifies the encoding used when communicating with the command line tool.</span></span> <span data-ttu-id="70b44-124">Observe que a ferramenta atual não dá suporte à especificação de uma codificação para essa transferência, portanto, alterar essa configuração provavelmente produzirá um erro.</span><span class="sxs-lookup"><span data-stu-id="70b44-124">Note that the current tool does not support specifying an encoding for this transfer, so changing this setting will likely produce an error.</span></span> <span data-ttu-id="70b44-125">A configuração existe para que a ferramenta possa ser alterada e estendida independentemente do servidor.</span><span class="sxs-lookup"><span data-stu-id="70b44-125">The setting is there so that the tool can be changed and extended independently of the server.</span></span>
-
-</dd> <dt>
-
-<span data-ttu-id="70b44-126"><span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Gerar</span><span class="sxs-lookup"><span data-stu-id="70b44-126"><span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Reporting</span></span>
-</dt> <dd>
-
-<span data-ttu-id="70b44-127">Opcional.</span><span class="sxs-lookup"><span data-stu-id="70b44-127">Optional.</span></span> <span data-ttu-id="70b44-128">Habilita o relatório de erro, informações ou nível detalhado.</span><span class="sxs-lookup"><span data-stu-id="70b44-128">Enables error, information or verbose level reporting.</span></span> <span data-ttu-id="70b44-129">O padrão é Error.</span><span class="sxs-lookup"><span data-stu-id="70b44-129">The default is error.</span></span> <span data-ttu-id="70b44-130">As mensagens são impressas no console.</span><span class="sxs-lookup"><span data-stu-id="70b44-130">Messages are printed to the console.</span></span>
-
-</dd> <dt>
-
-<span data-ttu-id="70b44-131"><span id="Connections"></span><span id="connections"></span><span id="CONNECTIONS"></span>Conexões</span><span class="sxs-lookup"><span data-stu-id="70b44-131"><span id="Connections"></span><span id="connections"></span><span id="CONNECTIONS"></span>Connections</span></span>
-</dt> <dd>
-
-<span data-ttu-id="70b44-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="70b44-132">Optional.</span></span> <span data-ttu-id="70b44-133">Especifica o número máximo de solicitações simultâneas que serão processadas.</span><span class="sxs-lookup"><span data-stu-id="70b44-133">Specifies the maximum number of concurrent requests that will be processed.</span></span> <span data-ttu-id="70b44-134">Se omitido, o padrão será 100.</span><span class="sxs-lookup"><span data-stu-id="70b44-134">If omitted the default is 100.</span></span>
-
-</dd> </dl>
-
-<span data-ttu-id="70b44-135">Os parâmetros de linha de comando para o modo de servidor são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="70b44-135">The command line parameters for the server mode are as follows:</span></span>
-
-<span data-ttu-id="70b44-136">**Servidor** *<Service Url>* deWsFileRepService.exe **\[ /Reporting: <Error/info/Verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections: ***<number of connections>*** \] \[ /Chunk ***<size of the payload per message in bytes>*** \] :**</span><span class="sxs-lookup"><span data-stu-id="70b44-136">**WsFileRepService.exe server** *<Service Url>* **\[/reporting:<error/info/verbose>\] \[/encoding:<text/binary/MTOM>\] \[/connections:***<number of connections>***\] \[/chunk:***<size of the payload per message in bytes>***\]**</span></span>
+<span data-ttu-id="80d32-114">**WsFileRepService.exe cliente** *<Service Url>* **\[ /reporting: <Error/info/verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections ***<number of connections>*** \] :**</span><span class="sxs-lookup"><span data-stu-id="80d32-114">**WsFileRepService.exe client** *<Service Url>* **\[/reporting:<error/info/verbose>\] \[/encoding:<text/binary/MTOM>\] \[/connections:***<number of connections>***\]**</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="70b44-137"><span id="Server"></span><span id="server"></span><span id="SERVER"></span>Servidor</span><span class="sxs-lookup"><span data-stu-id="70b44-137"><span id="Server"></span><span id="server"></span><span id="SERVER"></span>Server</span></span>
+<span data-ttu-id="80d32-115"><span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Cliente</span><span class="sxs-lookup"><span data-stu-id="80d32-115"><span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Client</span></span>
 </dt> <dd>
 
-<span data-ttu-id="70b44-138">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="70b44-138">Required.</span></span> <span data-ttu-id="70b44-139">Indica que o serviço é executado como servidor de arquivos.</span><span class="sxs-lookup"><span data-stu-id="70b44-139">Denotes that the service runs as file server.</span></span>
+<span data-ttu-id="80d32-116">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="80d32-116">Required.</span></span> <span data-ttu-id="80d32-117">Indica que o serviço é executado como cliente.</span><span class="sxs-lookup"><span data-stu-id="80d32-117">Denotes that the service runs as client.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="70b44-140"><span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Codificação</span><span class="sxs-lookup"><span data-stu-id="70b44-140"><span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Chunk</span></span>
+<span data-ttu-id="80d32-118"><span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>URL do serviço</span><span class="sxs-lookup"><span data-stu-id="80d32-118"><span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>Service Url</span></span>
 </dt> <dd>
 
-<span data-ttu-id="70b44-141">Opcional.</span><span class="sxs-lookup"><span data-stu-id="70b44-141">Optional.</span></span> <span data-ttu-id="70b44-142">Os arquivos transferidos são divididos em partes do tamanho especificado.</span><span class="sxs-lookup"><span data-stu-id="70b44-142">The transferred files are broken into chunks of the specified size.</span></span> <span data-ttu-id="70b44-143">Cada mensagem contém uma parte.</span><span class="sxs-lookup"><span data-stu-id="70b44-143">Each message contains one chunk.</span></span> <span data-ttu-id="70b44-144">O padrão é 32768 bytes.</span><span class="sxs-lookup"><span data-stu-id="70b44-144">The default is 32768 bytes.</span></span>
+<span data-ttu-id="80d32-119">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="80d32-119">Required.</span></span> <span data-ttu-id="80d32-120">Denota a URL em que o serviço escuta.</span><span class="sxs-lookup"><span data-stu-id="80d32-120">Denotes the URL the service listens on.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="80d32-121"><span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Mecanismo</span><span class="sxs-lookup"><span data-stu-id="80d32-121"><span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Encoding</span></span>
+</dt> <dd>
+
+<span data-ttu-id="80d32-122">Opcional.</span><span class="sxs-lookup"><span data-stu-id="80d32-122">Optional.</span></span> <span data-ttu-id="80d32-123">Especifica a codificação usada ao se comunicar com a ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="80d32-123">Specifies the encoding used when communicating with the command line tool.</span></span> <span data-ttu-id="80d32-124">Observe que a ferramenta atual não dá suporte à especificação de uma codificação para essa transferência, portanto, alterar essa configuração provavelmente produzirá um erro.</span><span class="sxs-lookup"><span data-stu-id="80d32-124">Note that the current tool does not support specifying an encoding for this transfer, so changing this setting will likely produce an error.</span></span> <span data-ttu-id="80d32-125">A configuração existe para que a ferramenta possa ser alterada e estendida independentemente do servidor.</span><span class="sxs-lookup"><span data-stu-id="80d32-125">The setting is there so that the tool can be changed and extended independently of the server.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="80d32-126"><span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Gerar</span><span class="sxs-lookup"><span data-stu-id="80d32-126"><span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Reporting</span></span>
+</dt> <dd>
+
+<span data-ttu-id="80d32-127">Opcional.</span><span class="sxs-lookup"><span data-stu-id="80d32-127">Optional.</span></span> <span data-ttu-id="80d32-128">Habilita o relatório de erro, informações ou nível detalhado.</span><span class="sxs-lookup"><span data-stu-id="80d32-128">Enables error, information or verbose level reporting.</span></span> <span data-ttu-id="80d32-129">O padrão é Error.</span><span class="sxs-lookup"><span data-stu-id="80d32-129">The default is error.</span></span> <span data-ttu-id="80d32-130">As mensagens são impressas no console.</span><span class="sxs-lookup"><span data-stu-id="80d32-130">Messages are printed to the console.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="80d32-131"><span id="Connections"></span><span id="connections"></span><span id="CONNECTIONS"></span>Conexões</span><span class="sxs-lookup"><span data-stu-id="80d32-131"><span id="Connections"></span><span id="connections"></span><span id="CONNECTIONS"></span>Connections</span></span>
+</dt> <dd>
+
+<span data-ttu-id="80d32-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="80d32-132">Optional.</span></span> <span data-ttu-id="80d32-133">Especifica o número máximo de solicitações simultâneas que serão processadas.</span><span class="sxs-lookup"><span data-stu-id="80d32-133">Specifies the maximum number of concurrent requests that will be processed.</span></span> <span data-ttu-id="80d32-134">Se omitido, o padrão será 100.</span><span class="sxs-lookup"><span data-stu-id="80d32-134">If omitted the default is 100.</span></span>
 
 </dd> </dl>
 
-<span data-ttu-id="70b44-145">Detalhes da implementação.</span><span class="sxs-lookup"><span data-stu-id="70b44-145">Implementation details.</span></span> <span data-ttu-id="70b44-146">Como este exemplo é escrito na camada de canal, ele precisa executar manualmente determinadas tarefas que a camada de modelo de serviço pode fazer automaticamente.</span><span class="sxs-lookup"><span data-stu-id="70b44-146">As this sample is written against the channel layer, it has to manually perform certain tasks that the service model layer could do automatically.</span></span> <span data-ttu-id="70b44-147">Uma dessas tarefas é o gerenciamento de canal.</span><span class="sxs-lookup"><span data-stu-id="70b44-147">One such task is channel management.</span></span> <span data-ttu-id="70b44-148">Para fornecer uma resposta rápida às solicitações, há sempre (até um limite) vários canais prontos para aceitar solicitações.</span><span class="sxs-lookup"><span data-stu-id="70b44-148">In order to provide a fast response to requests, there are always (up to a limit) several channels ready to accept requests.</span></span> <span data-ttu-id="70b44-149">Ter vários canais prontos é mais eficaz no caso de várias solicitações do que ter apenas um canal à medida que a criação de um canal leva tempo.</span><span class="sxs-lookup"><span data-stu-id="70b44-149">Having multiple channels ready is more performant in the case of multiple requests than having only one channel as the creation of a channel takes time.</span></span> <span data-ttu-id="70b44-150">Além disso, a reutilização do estado também melhora o desempenho.</span><span class="sxs-lookup"><span data-stu-id="70b44-150">Further, reuse of state also improves performance.</span></span> <span data-ttu-id="70b44-151">O Sapphire fornece APIs para redefinir a maior parte do estado para evitar ter que liberá-la e recriá-la.</span><span class="sxs-lookup"><span data-stu-id="70b44-151">Sapphire provides APIs to reset most state to avoid having to free and recreate it.</span></span> <span data-ttu-id="70b44-152">Este exemplo aproveita isso reutilizando o canal e o estado de solicitação sempre que possível e apenas criando ou destruindo o estado quando determinados limites são passados.</span><span class="sxs-lookup"><span data-stu-id="70b44-152">This sample takes advantage of that by reusing channel and request state wherever possible and only creating or destroying state when certain thresholds are passed.</span></span> <span data-ttu-id="70b44-153">O código relacionado ao gerenciamento de canal pode ser encontrado em CChannelManager.</span><span class="sxs-lookup"><span data-stu-id="70b44-153">The code related to channel management can be found in CChannelManager.</span></span>
+<span data-ttu-id="80d32-135">Os parâmetros de linha de comando para o modo de servidor são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="80d32-135">The command line parameters for the server mode are as follows:</span></span>
 
-<span data-ttu-id="70b44-154">O loop de processamento de mensagens principal está em CRequest.</span><span class="sxs-lookup"><span data-stu-id="70b44-154">The main message processing loop is in CRequest.</span></span> <span data-ttu-id="70b44-155">Essa classe contém o estado independente do aplicativo e os métodos necessários para um loop de processamento de mensagens do Sapphire assíncrono.</span><span class="sxs-lookup"><span data-stu-id="70b44-155">That class contains the application-independent state and methods needed for an asynchronous Sapphire messaging processing loop.</span></span> <span data-ttu-id="70b44-156">O código específico do aplicativo está em CFileRepClient (serviço de cliente) e CFileRepServer (serviço de servidor).</span><span class="sxs-lookup"><span data-stu-id="70b44-156">The application-specific code is in CFileRepClient (client service) and CFileRepServer (server service).</span></span> <span data-ttu-id="70b44-157">Ambas as classes herdam de CFileRep, que contém código genérico relacionado ao serviço.</span><span class="sxs-lookup"><span data-stu-id="70b44-157">Both those classes inherit from CFileRep, which contains generic service-related code.</span></span>
+<span data-ttu-id="80d32-136">**Servidor** *<Service Url>* deWsFileRepService.exe **\[ /Reporting: <Error/info/Verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections: ***<number of connections>*** \] \[ /Chunk ***<size of the payload per message in bytes>*** \] :**</span><span class="sxs-lookup"><span data-stu-id="80d32-136">**WsFileRepService.exe server** *<Service Url>* **\[/reporting:<error/info/verbose>\] \[/encoding:<text/binary/MTOM>\] \[/connections:***<number of connections>***\] \[/chunk:***<size of the payload per message in bytes>***\]**</span></span>
 
-<span data-ttu-id="70b44-158">O exemplo usa o serializador e executa a serialização personalizada.</span><span class="sxs-lookup"><span data-stu-id="70b44-158">The sample both uses the serializer and performs custom serialization.</span></span> <span data-ttu-id="70b44-159">A serialização personalizada é usada ao lidar com grandes partes de dados para minimizar o consumo de memória, otimizando manualmente a alocação de memória para a finalidade específica.</span><span class="sxs-lookup"><span data-stu-id="70b44-159">Custom serialization is used when dealing with large chunks of data to minimize memory consumption by manually optimizing memory allocation for the specific purpose.</span></span> <span data-ttu-id="70b44-160">Como isso leva a um código complexo e de baixo nível, fazer a serialização manual só deve ser feito quando absolutamente necessário.</span><span class="sxs-lookup"><span data-stu-id="70b44-160">As this leads to complex, low-level code doing manual serialization should only be done when absolutely necessary.</span></span>
+<dl> <dt>
 
-<span data-ttu-id="70b44-161">Padrão de troca de mensagens:</span><span class="sxs-lookup"><span data-stu-id="70b44-161">Message exchange pattern:</span></span>
+<span data-ttu-id="80d32-137"><span id="Server"></span><span id="server"></span><span id="SERVER"></span>Servidor</span><span class="sxs-lookup"><span data-stu-id="80d32-137"><span id="Server"></span><span id="server"></span><span id="SERVER"></span>Server</span></span>
+</dt> <dd>
 
--   <span data-ttu-id="70b44-162">O serviço cliente obtém uma mensagem de solicitação da ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="70b44-162">The client service gets a request message from the command line tool.</span></span>
--   <span data-ttu-id="70b44-163">Se a solicitação for assíncrona, envie novamente uma confirmação imediatamente.</span><span class="sxs-lookup"><span data-stu-id="70b44-163">If the request is asynchronous send back a confirmation immediately.</span></span>
--   <span data-ttu-id="70b44-164">O serviço de cliente envia uma solicitação de informações de arquivo para o serviço do servidor.</span><span class="sxs-lookup"><span data-stu-id="70b44-164">The client service sends a request for file information to the server service.</span></span> <span data-ttu-id="70b44-165">Uma solicitação de descoberta é indicada por uma posição de parte de-1.</span><span class="sxs-lookup"><span data-stu-id="70b44-165">A discovery request is denoted by a chunk position of -1.</span></span>
--   <span data-ttu-id="70b44-166">O serviço servidor retorna as informações do arquivo.</span><span class="sxs-lookup"><span data-stu-id="70b44-166">The server service returns the file information.</span></span>
--   <span data-ttu-id="70b44-167">O serviço cliente solicita as partes individuais sequencialmente uma por uma do servidor.</span><span class="sxs-lookup"><span data-stu-id="70b44-167">The client service requests the individual chunks sequentially one by one from the server.</span></span> <span data-ttu-id="70b44-168">As partes são identificadas pela sua posição dentro do arquivo.</span><span class="sxs-lookup"><span data-stu-id="70b44-168">Chunks are identified by their position within the file.</span></span>
--   <span data-ttu-id="70b44-169">Repita até que a transferência de arquivo seja concluída ou uma falha tenha ocorrido.</span><span class="sxs-lookup"><span data-stu-id="70b44-169">Repeat until the file transfer is completed or a failure occurred.</span></span>
--   <span data-ttu-id="70b44-170">Se a solicitação estiver síncrona, envie uma mensagem de êxito ou falha para a ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="70b44-170">If the request is synchronous send success or failure message to the command line tool.</span></span>
+<span data-ttu-id="80d32-138">Obrigatórios.</span><span class="sxs-lookup"><span data-stu-id="80d32-138">Required.</span></span> <span data-ttu-id="80d32-139">Indica que o serviço é executado como servidor de arquivos.</span><span class="sxs-lookup"><span data-stu-id="80d32-139">Denotes that the service runs as file server.</span></span>
 
-<span data-ttu-id="70b44-171">Para as estruturas de dados individuais associadas a cada mensagem, consulte Common. h.</span><span class="sxs-lookup"><span data-stu-id="70b44-171">For the individual data structures associated with each message, see common.h.</span></span>
+</dd> <dt>
 
--   [<span data-ttu-id="70b44-172">Service. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-172">Service.cpp</span></span>](#servicecpp)
--   [<span data-ttu-id="70b44-173">Serviço. h</span><span class="sxs-lookup"><span data-stu-id="70b44-173">Service.h</span></span>](#serviceh)
--   [<span data-ttu-id="70b44-174">CChannelManager. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-174">CChannelManager.cpp</span></span>](#cchannelmanagercpp)
--   [<span data-ttu-id="70b44-175">CFileRep. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-175">CFileRep.cpp</span></span>](#cfilerepcpp)
--   [<span data-ttu-id="70b44-176">CRequest. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-176">CRequest.cpp</span></span>](#crequestcpp)
--   [<span data-ttu-id="70b44-177">CFileRepClient. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-177">CFileRepClient.cpp</span></span>](#cfilerepclientcpp)
--   [<span data-ttu-id="70b44-178">CFileRepServer. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-178">CFileRepServer.cpp</span></span>](#cfilerepservercpp)
--   [<span data-ttu-id="70b44-179">Common. h</span><span class="sxs-lookup"><span data-stu-id="70b44-179">common.h</span></span>](#commonh)
--   [<span data-ttu-id="70b44-180">FileRep.mc</span><span class="sxs-lookup"><span data-stu-id="70b44-180">FileRep.mc</span></span>](#filerepmc)
--   [<span data-ttu-id="70b44-181">FileRep. rc</span><span class="sxs-lookup"><span data-stu-id="70b44-181">FileRep.rc</span></span>](#filereprc)
--   [<span data-ttu-id="70b44-182">Makefile</span><span class="sxs-lookup"><span data-stu-id="70b44-182">Makefile</span></span>](#makefile)
--   [<span data-ttu-id="70b44-183">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="70b44-183">Related topics</span></span>](#related-topics)
+<span data-ttu-id="80d32-140"><span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Codificação</span><span class="sxs-lookup"><span data-stu-id="80d32-140"><span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Chunk</span></span>
+</dt> <dd>
 
-## <a name="servicecpp"></a><span data-ttu-id="70b44-184">Service. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-184">Service.cpp</span></span>
+<span data-ttu-id="80d32-141">Opcional.</span><span class="sxs-lookup"><span data-stu-id="80d32-141">Optional.</span></span> <span data-ttu-id="80d32-142">Os arquivos transferidos são divididos em partes do tamanho especificado.</span><span class="sxs-lookup"><span data-stu-id="80d32-142">The transferred files are broken into chunks of the specified size.</span></span> <span data-ttu-id="80d32-143">Cada mensagem contém uma parte.</span><span class="sxs-lookup"><span data-stu-id="80d32-143">Each message contains one chunk.</span></span> <span data-ttu-id="80d32-144">O padrão é 32768 bytes.</span><span class="sxs-lookup"><span data-stu-id="80d32-144">The default is 32768 bytes.</span></span>
+
+</dd> </dl>
+
+<span data-ttu-id="80d32-145">Detalhes da implementação.</span><span class="sxs-lookup"><span data-stu-id="80d32-145">Implementation details.</span></span> <span data-ttu-id="80d32-146">Como este exemplo é escrito na camada de canal, ele precisa executar manualmente determinadas tarefas que a camada de modelo de serviço pode fazer automaticamente.</span><span class="sxs-lookup"><span data-stu-id="80d32-146">As this sample is written against the channel layer, it has to manually perform certain tasks that the service model layer could do automatically.</span></span> <span data-ttu-id="80d32-147">Uma dessas tarefas é o gerenciamento de canal.</span><span class="sxs-lookup"><span data-stu-id="80d32-147">One such task is channel management.</span></span> <span data-ttu-id="80d32-148">Para fornecer uma resposta rápida às solicitações, há sempre (até um limite) vários canais prontos para aceitar solicitações.</span><span class="sxs-lookup"><span data-stu-id="80d32-148">In order to provide a fast response to requests, there are always (up to a limit) several channels ready to accept requests.</span></span> <span data-ttu-id="80d32-149">Ter vários canais prontos é mais eficaz no caso de várias solicitações do que ter apenas um canal à medida que a criação de um canal leva tempo.</span><span class="sxs-lookup"><span data-stu-id="80d32-149">Having multiple channels ready is more performant in the case of multiple requests than having only one channel as the creation of a channel takes time.</span></span> <span data-ttu-id="80d32-150">Além disso, a reutilização do estado também melhora o desempenho.</span><span class="sxs-lookup"><span data-stu-id="80d32-150">Further, reuse of state also improves performance.</span></span> <span data-ttu-id="80d32-151">O Sapphire fornece APIs para redefinir a maior parte do estado para evitar ter que liberá-la e recriá-la.</span><span class="sxs-lookup"><span data-stu-id="80d32-151">Sapphire provides APIs to reset most state to avoid having to free and recreate it.</span></span> <span data-ttu-id="80d32-152">Este exemplo aproveita isso reutilizando o canal e o estado de solicitação sempre que possível e apenas criando ou destruindo o estado quando determinados limites são passados.</span><span class="sxs-lookup"><span data-stu-id="80d32-152">This sample takes advantage of that by reusing channel and request state wherever possible and only creating or destroying state when certain thresholds are passed.</span></span> <span data-ttu-id="80d32-153">O código relacionado ao gerenciamento de canal pode ser encontrado em CChannelManager.</span><span class="sxs-lookup"><span data-stu-id="80d32-153">The code related to channel management can be found in CChannelManager.</span></span>
+
+<span data-ttu-id="80d32-154">O loop de processamento de mensagens principal está em CRequest.</span><span class="sxs-lookup"><span data-stu-id="80d32-154">The main message processing loop is in CRequest.</span></span> <span data-ttu-id="80d32-155">Essa classe contém o estado independente do aplicativo e os métodos necessários para um loop de processamento de mensagens do Sapphire assíncrono.</span><span class="sxs-lookup"><span data-stu-id="80d32-155">That class contains the application-independent state and methods needed for an asynchronous Sapphire messaging processing loop.</span></span> <span data-ttu-id="80d32-156">O código específico do aplicativo está em CFileRepClient (serviço de cliente) e CFileRepServer (serviço de servidor).</span><span class="sxs-lookup"><span data-stu-id="80d32-156">The application-specific code is in CFileRepClient (client service) and CFileRepServer (server service).</span></span> <span data-ttu-id="80d32-157">Ambas as classes herdam de CFileRep, que contém código genérico relacionado ao serviço.</span><span class="sxs-lookup"><span data-stu-id="80d32-157">Both those classes inherit from CFileRep, which contains generic service-related code.</span></span>
+
+<span data-ttu-id="80d32-158">O exemplo usa o serializador e executa a serialização personalizada.</span><span class="sxs-lookup"><span data-stu-id="80d32-158">The sample both uses the serializer and performs custom serialization.</span></span> <span data-ttu-id="80d32-159">A serialização personalizada é usada ao lidar com grandes partes de dados para minimizar o consumo de memória, otimizando manualmente a alocação de memória para a finalidade específica.</span><span class="sxs-lookup"><span data-stu-id="80d32-159">Custom serialization is used when dealing with large chunks of data to minimize memory consumption by manually optimizing memory allocation for the specific purpose.</span></span> <span data-ttu-id="80d32-160">Como isso leva a um código complexo e de baixo nível, fazer a serialização manual só deve ser feito quando absolutamente necessário.</span><span class="sxs-lookup"><span data-stu-id="80d32-160">As this leads to complex, low-level code doing manual serialization should only be done when absolutely necessary.</span></span>
+
+<span data-ttu-id="80d32-161">Padrão de troca de mensagens:</span><span class="sxs-lookup"><span data-stu-id="80d32-161">Message exchange pattern:</span></span>
+
+-   <span data-ttu-id="80d32-162">O serviço cliente obtém uma mensagem de solicitação da ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="80d32-162">The client service gets a request message from the command line tool.</span></span>
+-   <span data-ttu-id="80d32-163">Se a solicitação for assíncrona, envie novamente uma confirmação imediatamente.</span><span class="sxs-lookup"><span data-stu-id="80d32-163">If the request is asynchronous send back a confirmation immediately.</span></span>
+-   <span data-ttu-id="80d32-164">O serviço de cliente envia uma solicitação de informações de arquivo para o serviço do servidor.</span><span class="sxs-lookup"><span data-stu-id="80d32-164">The client service sends a request for file information to the server service.</span></span> <span data-ttu-id="80d32-165">Uma solicitação de descoberta é indicada por uma posição de parte de-1.</span><span class="sxs-lookup"><span data-stu-id="80d32-165">A discovery request is denoted by a chunk position of -1.</span></span>
+-   <span data-ttu-id="80d32-166">O serviço servidor retorna as informações do arquivo.</span><span class="sxs-lookup"><span data-stu-id="80d32-166">The server service returns the file information.</span></span>
+-   <span data-ttu-id="80d32-167">O serviço cliente solicita as partes individuais sequencialmente uma por uma do servidor.</span><span class="sxs-lookup"><span data-stu-id="80d32-167">The client service requests the individual chunks sequentially one by one from the server.</span></span> <span data-ttu-id="80d32-168">As partes são identificadas pela sua posição dentro do arquivo.</span><span class="sxs-lookup"><span data-stu-id="80d32-168">Chunks are identified by their position within the file.</span></span>
+-   <span data-ttu-id="80d32-169">Repita até que a transferência de arquivo seja concluída ou uma falha tenha ocorrido.</span><span class="sxs-lookup"><span data-stu-id="80d32-169">Repeat until the file transfer is completed or a failure occurred.</span></span>
+-   <span data-ttu-id="80d32-170">Se a solicitação estiver síncrona, envie uma mensagem de êxito ou falha para a ferramenta de linha de comando.</span><span class="sxs-lookup"><span data-stu-id="80d32-170">If the request is synchronous send success or failure message to the command line tool.</span></span>
+
+<span data-ttu-id="80d32-171">Para as estruturas de dados individuais associadas a cada mensagem, consulte Common. h.</span><span class="sxs-lookup"><span data-stu-id="80d32-171">For the individual data structures associated with each message, see common.h.</span></span>
+
+-   [<span data-ttu-id="80d32-172">Service. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-172">Service.cpp</span></span>](#servicecpp)
+-   [<span data-ttu-id="80d32-173">Serviço. h</span><span class="sxs-lookup"><span data-stu-id="80d32-173">Service.h</span></span>](#serviceh)
+-   [<span data-ttu-id="80d32-174">CChannelManager. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-174">CChannelManager.cpp</span></span>](#cchannelmanagercpp)
+-   [<span data-ttu-id="80d32-175">CFileRep. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-175">CFileRep.cpp</span></span>](#cfilerepcpp)
+-   [<span data-ttu-id="80d32-176">CRequest. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-176">CRequest.cpp</span></span>](#crequestcpp)
+-   [<span data-ttu-id="80d32-177">CFileRepClient. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-177">CFileRepClient.cpp</span></span>](#cfilerepclientcpp)
+-   [<span data-ttu-id="80d32-178">CFileRepServer. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-178">CFileRepServer.cpp</span></span>](#cfilerepservercpp)
+-   [<span data-ttu-id="80d32-179">Common. h</span><span class="sxs-lookup"><span data-stu-id="80d32-179">common.h</span></span>](#commonh)
+-   [<span data-ttu-id="80d32-180">FileRep.mc</span><span class="sxs-lookup"><span data-stu-id="80d32-180">FileRep.mc</span></span>](#filerepmc)
+-   [<span data-ttu-id="80d32-181">FileRep. rc</span><span class="sxs-lookup"><span data-stu-id="80d32-181">FileRep.rc</span></span>](#filereprc)
+-   [<span data-ttu-id="80d32-182">Makefile</span><span class="sxs-lookup"><span data-stu-id="80d32-182">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="80d32-183">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="80d32-183">Related topics</span></span>](#related-topics)
+
+## <a name="servicecpp"></a><span data-ttu-id="80d32-184">Service. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-184">Service.cpp</span></span>
 
 
 ```C++
@@ -345,7 +345,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
-## <a name="serviceh"></a><span data-ttu-id="70b44-185">Serviço. h</span><span class="sxs-lookup"><span data-stu-id="70b44-185">Service.h</span></span>
+## <a name="serviceh"></a><span data-ttu-id="80d32-185">Serviço. h</span><span class="sxs-lookup"><span data-stu-id="80d32-185">Service.h</span></span>
 
 
 ```C++
@@ -695,7 +695,7 @@ void CleanupChannel(WS_CHANNEL* channel);
 
 
 
-## <a name="cchannelmanagercpp"></a><span data-ttu-id="70b44-186">CChannelManager. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-186">CChannelManager.cpp</span></span>
+## <a name="cchannelmanagercpp"></a><span data-ttu-id="80d32-186">CChannelManager. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-186">CChannelManager.cpp</span></span>
 
 
 ```C++
@@ -971,7 +971,7 @@ void CChannelManager::WaitForCleanup()
 
 
 
-## <a name="cfilerepcpp"></a><span data-ttu-id="70b44-187">CFileRep. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-187">CFileRep.cpp</span></span>
+## <a name="cfilerepcpp"></a><span data-ttu-id="80d32-187">CFileRep. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-187">CFileRep.cpp</span></span>
 
 
 ```C++
@@ -1340,7 +1340,7 @@ HRESULT CFileRep::InitializeListener()
 
 
 
-## <a name="crequestcpp"></a><span data-ttu-id="70b44-188">CRequest. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-188">CRequest.cpp</span></span>
+## <a name="crequestcpp"></a><span data-ttu-id="80d32-188">CRequest. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-188">CRequest.cpp</span></span>
 
 
 ```C++
@@ -1906,7 +1906,7 @@ CRequest::~CRequest()
 
 
 
-## <a name="cfilerepclientcpp"></a><span data-ttu-id="70b44-189">CFileRepClient. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-189">CFileRepClient.cpp</span></span>
+## <a name="cfilerepclientcpp"></a><span data-ttu-id="80d32-189">CFileRepClient. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-189">CFileRepClient.cpp</span></span>
 
 
 ```C++
@@ -2574,7 +2574,7 @@ HRESULT CFileRepClient::SendUserResponse(CRequest* request, TRANSFER_RESULTS res
 
 
 
-## <a name="cfilerepservercpp"></a><span data-ttu-id="70b44-190">CFileRepServer. cpp</span><span class="sxs-lookup"><span data-stu-id="70b44-190">CFileRepServer.cpp</span></span>
+## <a name="cfilerepservercpp"></a><span data-ttu-id="80d32-190">CFileRepServer. cpp</span><span class="sxs-lookup"><span data-stu-id="80d32-190">CFileRepServer.cpp</span></span>
 
 
 ```C++
@@ -2968,7 +2968,7 @@ HRESULT CFileRepServer::SendError(CRequest* request, __in const WCHAR errorMessa
 
 
 
-## <a name="commonh"></a><span data-ttu-id="70b44-191">common.h</span><span class="sxs-lookup"><span data-stu-id="70b44-191">common.h</span></span>
+## <a name="commonh"></a><span data-ttu-id="80d32-191">common.h</span><span class="sxs-lookup"><span data-stu-id="80d32-191">common.h</span></span>
 
 
 ```C++
@@ -3559,7 +3559,7 @@ static WS_XML_STRING faultAction = WS_XML_STRING_VALUE("https://tempuri.org/File
 
 
 
-## <a name="filerepmc"></a><span data-ttu-id="70b44-192">FileRep.mc</span><span class="sxs-lookup"><span data-stu-id="70b44-192">FileRep.mc</span></span>
+## <a name="filerepmc"></a><span data-ttu-id="80d32-192">FileRep.mc</span><span class="sxs-lookup"><span data-stu-id="80d32-192">FileRep.mc</span></span>
 
 ``` syntax
 MessageIdTypedef=ULONG
@@ -3602,14 +3602,14 @@ Failed to create file.
 .
 ```
 
-## <a name="filereprc"></a><span data-ttu-id="70b44-193">FileRep. rc</span><span class="sxs-lookup"><span data-stu-id="70b44-193">FileRep.rc</span></span>
+## <a name="filereprc"></a><span data-ttu-id="80d32-193">FileRep. rc</span><span class="sxs-lookup"><span data-stu-id="80d32-193">FileRep.rc</span></span>
 
 ``` syntax
 LANGUAGE 0x9,0x1
 1 11 "MSG00409.bin"
 ```
 
-## <a name="makefile"></a><span data-ttu-id="70b44-194">Makefile</span><span class="sxs-lookup"><span data-stu-id="70b44-194">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="80d32-194">Makefile</span><span class="sxs-lookup"><span data-stu-id="80d32-194">Makefile</span></span>
 
 ``` syntax
 all: WsFileRepService.exe
@@ -3642,11 +3642,11 @@ WsFileRepService.exe: Service.obj CFileRep.obj CFileRepServer.obj CFileRepClient
     link -release -incremental:no -nologo -subsystem:console,6.01 -out:WsFileRepService.exe Service.obj CFileRep.obj CFileRepServer.obj CFileRepClient.obj CChannelManager.obj CRequest.obj FileRep.res
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="70b44-195">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="70b44-195">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="80d32-195">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="80d32-195">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="70b44-196">FileRepToolExample</span><span class="sxs-lookup"><span data-stu-id="70b44-196">FileRepToolExample</span></span>](filereptoolexample.md)
+[<span data-ttu-id="80d32-196">FileRepToolExample</span><span class="sxs-lookup"><span data-stu-id="80d32-196">FileRepToolExample</span></span>](filereptoolexample.md)
 </dt> </dl>
 
  

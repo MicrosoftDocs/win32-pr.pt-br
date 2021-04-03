@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930514"
 ---
-# <a name="instantiating-the-codec-dmos"></a><span data-ttu-id="998a4-105">Instanciando o codec DMOs</span><span class="sxs-lookup"><span data-stu-id="998a4-105">Instantiating the Codec DMOs</span></span>
+# <a name="instantiating-the-codec-dmos"></a><span data-ttu-id="20389-105">Instanciando o codec DMOs</span><span class="sxs-lookup"><span data-stu-id="20389-105">Instantiating the Codec DMOs</span></span>
 
-<span data-ttu-id="998a4-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="998a4-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="20389-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="20389-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

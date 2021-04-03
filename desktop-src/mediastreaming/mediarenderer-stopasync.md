@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104091927"
 ---
-# <a name="mediarendererstopasync-method"></a><span data-ttu-id="99ae2-107">Método MediaRenderer. StopAsync</span><span class="sxs-lookup"><span data-stu-id="99ae2-107">MediaRenderer.StopAsync method</span></span>
+# <a name="mediarendererstopasync-method"></a><span data-ttu-id="c7176-107">Método MediaRenderer. StopAsync</span><span class="sxs-lookup"><span data-stu-id="c7176-107">MediaRenderer.StopAsync method</span></span>
 
-<span data-ttu-id="99ae2-108">Instrui o DMR de forma assíncrona a interromper a reprodução do conteúdo atual.</span><span class="sxs-lookup"><span data-stu-id="99ae2-108">Instructs the DMR asynchronously to stop playing the current content.</span></span>
+<span data-ttu-id="c7176-108">Instrui o DMR de forma assíncrona a interromper a reprodução do conteúdo atual.</span><span class="sxs-lookup"><span data-stu-id="c7176-108">Instructs the DMR asynchronously to stop playing the current content.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="99ae2-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="99ae2-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c7176-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c7176-109">Syntax</span></span>
 
 
 ```C++
@@ -37,36 +37,36 @@ HRESULT StopAsync(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="99ae2-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="99ae2-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c7176-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c7176-110">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="99ae2-111">*valor* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="99ae2-111">*value* \[out\]</span></span>
+<span data-ttu-id="c7176-111">*valor* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="c7176-111">*value* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="99ae2-112">Recebe uma referência a um objeto [**PlaybackOperation**](playbackoperation.md) que é usado para obter resultados da operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="99ae2-112">Receives a reference to a [**PlaybackOperation**](playbackoperation.md) object that is used to get results from the asynchronous operation.</span></span>
+<span data-ttu-id="c7176-112">Recebe uma referência a um objeto [**PlaybackOperation**](playbackoperation.md) que é usado para obter resultados da operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="c7176-112">Receives a reference to a [**PlaybackOperation**](playbackoperation.md) object that is used to get results from the asynchronous operation.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="99ae2-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="99ae2-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c7176-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c7176-113">Return value</span></span>
 
-<span data-ttu-id="99ae2-114">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="99ae2-114">The method returns an **HRESULT**.</span></span> <span data-ttu-id="99ae2-115">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="99ae2-115">Possible values include, but are not limited to, those in the following table.</span></span>
+<span data-ttu-id="c7176-114">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="c7176-114">The method returns an **HRESULT**.</span></span> <span data-ttu-id="c7176-115">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="c7176-115">Possible values include, but are not limited to, those in the following table.</span></span>
 
 
 
-| <span data-ttu-id="99ae2-116">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="99ae2-116">Return code</span></span>                                                                          | <span data-ttu-id="99ae2-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="99ae2-117">Description</span></span>                      |
+| <span data-ttu-id="c7176-116">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="c7176-116">Return code</span></span>                                                                          | <span data-ttu-id="c7176-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7176-117">Description</span></span>                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <span data-ttu-id="99ae2-118"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="99ae2-118"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="99ae2-119">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="99ae2-119">The method succeeded.</span></span><br/> |
+| <dl> <span data-ttu-id="c7176-118"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="c7176-118"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="c7176-119">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="c7176-119">The method succeeded.</span></span><br/> |
 
 
 
  
 
-## <a name="see-also"></a><span data-ttu-id="99ae2-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="99ae2-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c7176-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="c7176-120">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="99ae2-121">**MediaRenderer**</span><span class="sxs-lookup"><span data-stu-id="99ae2-121">**MediaRenderer**</span></span>](mediarenderer.md)
+[<span data-ttu-id="c7176-121">**MediaRenderer**</span><span class="sxs-lookup"><span data-stu-id="c7176-121">**MediaRenderer**</span></span>](mediarenderer.md)
 </dt> </dl>
 
  
