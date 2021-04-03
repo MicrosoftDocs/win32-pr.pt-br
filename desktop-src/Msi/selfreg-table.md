@@ -22,7 +22,7 @@ A tabela SelfReg tem as colunas a seguir.
 | Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
 | Arquivo\_ | [Identificador](identifier.md) | S   | N        |
-| Cost   | [Inteiro](integer.md)       | N   | S        |
+| Custo   | [Inteiro](integer.md)       | N   | S        |
 
 
 

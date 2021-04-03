@@ -100,7 +100,7 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                       | Descrição                                                              |
+| Código/valor de retorno                                                                                                                                                       | Description                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | <dl> <dt>**Nte \_ SEM \_**</dt> <dt>0x8009000EL</dt> de memória </dl>         | Não há memória suficiente disponível para alocar os buffers necessários.<br/> |
 | <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl>    | O identificador *hSslProvider* não é válido.<br/>                       |
