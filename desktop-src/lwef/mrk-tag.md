@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635905"
 ---
-# <a name="mrk-tag"></a><span data-ttu-id="97a1b-103">Marca de mrk</span><span class="sxs-lookup"><span data-stu-id="97a1b-103">Mrk Tag</span></span>
+# <a name="mrk-tag"></a><span data-ttu-id="d01a4-103">Marca de mrk</span><span class="sxs-lookup"><span data-stu-id="d01a4-103">Mrk Tag</span></span>
 
-<span data-ttu-id="97a1b-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="97a1b-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="d01a4-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="d01a4-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="97a1b-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="97a1b-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
+<span data-ttu-id="d01a4-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="d01a4-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="97a1b-106">Define um indicador no texto falado.</span><span class="sxs-lookup"><span data-stu-id="97a1b-106">Defines a bookmark in the spoken text.</span></span>
+<span data-ttu-id="d01a4-106">Define um indicador no texto falado.</span><span class="sxs-lookup"><span data-stu-id="d01a4-106">Defines a bookmark in the spoken text.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="97a1b-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="97a1b-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
+<span data-ttu-id="d01a4-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="d01a4-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="97a1b-108">**\\Mrk =***número***\\**</span><span class="sxs-lookup"><span data-stu-id="97a1b-108">**\\Mrk=***number***\\**</span></span>
+<span data-ttu-id="d01a4-108">**\\Mrk =***número***\\**</span><span class="sxs-lookup"><span data-stu-id="d01a4-108">**\\Mrk=***number***\\**</span></span>
 
 
 
-| <span data-ttu-id="97a1b-109">Parte</span><span class="sxs-lookup"><span data-stu-id="97a1b-109">Part</span></span>     | <span data-ttu-id="97a1b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="97a1b-110">Description</span></span>                                        |
+| <span data-ttu-id="d01a4-109">Parte</span><span class="sxs-lookup"><span data-stu-id="d01a4-109">Part</span></span>     | <span data-ttu-id="d01a4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d01a4-110">Description</span></span>                                        |
 |----------|----------------------------------------------------|
-| <span data-ttu-id="97a1b-111">*number*</span><span class="sxs-lookup"><span data-stu-id="97a1b-111">*number*</span></span> | <span data-ttu-id="97a1b-112">Um valor inteiro longo que identifica o indicador.</span><span class="sxs-lookup"><span data-stu-id="97a1b-112">A Long integer value that identifies the bookmark.</span></span> |
+| <span data-ttu-id="d01a4-111">*number*</span><span class="sxs-lookup"><span data-stu-id="d01a4-111">*number*</span></span> | <span data-ttu-id="d01a4-112">Um valor inteiro longo que identifica o indicador.</span><span class="sxs-lookup"><span data-stu-id="d01a4-112">A Long integer value that identifies the bookmark.</span></span> |
 
 
 
@@ -41,9 +41,9 @@ ms.locfileid: "103635905"
 
 </dd> </dl>
 
-### <a name="remarks"></a><span data-ttu-id="97a1b-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="97a1b-113">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="d01a4-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="d01a4-113">Remarks</span></span>
 
-<span data-ttu-id="97a1b-114">Quando o servidor processa um indicador, ele gera um evento de indicador.</span><span class="sxs-lookup"><span data-stu-id="97a1b-114">When the server processes a bookmark, it generates a bookmark event.</span></span> <span data-ttu-id="97a1b-115">Você deve especificar um número maior que zero (0) e não igual a 2147483647 ou 2147483646.</span><span class="sxs-lookup"><span data-stu-id="97a1b-115">You must specify a number greater than zero (0) and not equal to 2147483647 or 2147483646.</span></span>
+<span data-ttu-id="d01a4-114">Quando o servidor processa um indicador, ele gera um evento de indicador.</span><span class="sxs-lookup"><span data-stu-id="d01a4-114">When the server processes a bookmark, it generates a bookmark event.</span></span> <span data-ttu-id="d01a4-115">Você deve especificar um número maior que zero (0) e não igual a 2147483647 ou 2147483646.</span><span class="sxs-lookup"><span data-stu-id="d01a4-115">You must specify a number greater than zero (0) and not equal to 2147483647 or 2147483646.</span></span>
 
  
 

@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641396"
 ---
-# <a name="window-station-and-desktop-structures"></a><span data-ttu-id="3df16-103">Estruturas de área de trabalho e estação de janela</span><span class="sxs-lookup"><span data-stu-id="3df16-103">Window Station and Desktop Structures</span></span>
+# <a name="window-station-and-desktop-structures"></a><span data-ttu-id="bcf9f-103">Estruturas de área de trabalho e estação de janela</span><span class="sxs-lookup"><span data-stu-id="bcf9f-103">Window Station and Desktop Structures</span></span>
 
-<span data-ttu-id="3df16-104">A seguinte estrutura é usada com estações de janela e áreas de trabalho:</span><span class="sxs-lookup"><span data-stu-id="3df16-104">The following structure is used with window stations and desktops:</span></span>
+<span data-ttu-id="bcf9f-104">A seguinte estrutura é usada com estações de janela e áreas de trabalho:</span><span class="sxs-lookup"><span data-stu-id="bcf9f-104">The following structure is used with window stations and desktops:</span></span>
 
--   [<span data-ttu-id="3df16-105">**USEROBJECTFLAGS**</span><span class="sxs-lookup"><span data-stu-id="3df16-105">**USEROBJECTFLAGS**</span></span>](/windows/win32/api/winuser/ns-winuser-userobjectflags)
+-   [<span data-ttu-id="bcf9f-105">**USEROBJECTFLAGS**</span><span class="sxs-lookup"><span data-stu-id="bcf9f-105">**USEROBJECTFLAGS**</span></span>](/windows/win32/api/winuser/ns-winuser-userobjectflags)
 
  
 

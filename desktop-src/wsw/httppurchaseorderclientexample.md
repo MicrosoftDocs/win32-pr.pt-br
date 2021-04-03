@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005708"
 ---
-# <a name="httppurchaseorderclientexample"></a><span data-ttu-id="f77c9-106">HttpPurchaseOrderClientExample</span><span class="sxs-lookup"><span data-stu-id="f77c9-106">HttpPurchaseOrderClientExample</span></span>
+# <a name="httppurchaseorderclientexample"></a><span data-ttu-id="66b37-106">HttpPurchaseOrderClientExample</span><span class="sxs-lookup"><span data-stu-id="66b37-106">HttpPurchaseOrderClientExample</span></span>
 
-<span data-ttu-id="f77c9-107">Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço PurchaseOrder baseado em HTTP.</span><span class="sxs-lookup"><span data-stu-id="f77c9-107">This example show how to use the service proxy to talk to an HTTP based PurchaseOrder service.</span></span>
+<span data-ttu-id="66b37-107">Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço PurchaseOrder baseado em HTTP.</span><span class="sxs-lookup"><span data-stu-id="66b37-107">This example show how to use the service proxy to talk to an HTTP based PurchaseOrder service.</span></span>
 
--   [<span data-ttu-id="f77c9-108">HttpPurchaseOrderClient. cpp</span><span class="sxs-lookup"><span data-stu-id="f77c9-108">HttpPurchaseOrderClient.cpp</span></span>](#httppurchaseorderclientcpp)
--   [<span data-ttu-id="f77c9-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f77c9-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="f77c9-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="f77c9-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="66b37-108">HttpPurchaseOrderClient. cpp</span><span class="sxs-lookup"><span data-stu-id="66b37-108">HttpPurchaseOrderClient.cpp</span></span>](#httppurchaseorderclientcpp)
+-   [<span data-ttu-id="66b37-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="66b37-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="66b37-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="66b37-110">Makefile</span></span>](#makefile)
 
-## <a name="httppurchaseorderclientcpp"></a><span data-ttu-id="f77c9-111">HttpPurchaseOrderClient. cpp</span><span class="sxs-lookup"><span data-stu-id="f77c9-111">HttpPurchaseOrderClient.cpp</span></span>
+## <a name="httppurchaseorderclientcpp"></a><span data-ttu-id="66b37-111">HttpPurchaseOrderClient. cpp</span><span class="sxs-lookup"><span data-stu-id="66b37-111">HttpPurchaseOrderClient.cpp</span></span>
 
 
 ```C++
@@ -300,7 +300,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="f77c9-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f77c9-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="66b37-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="66b37-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -411,7 +411,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="f77c9-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="f77c9-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="66b37-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="66b37-113">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>

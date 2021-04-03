@@ -23,46 +23,46 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644264"
 ---
-# <a name="lvm_getbkimage-message"></a><span data-ttu-id="36c40-105">\_Mensagem GETBKIMAGE LVM</span><span class="sxs-lookup"><span data-stu-id="36c40-105">LVM\_GETBKIMAGE message</span></span>
+# <a name="lvm_getbkimage-message"></a><span data-ttu-id="9f5f0-105">\_Mensagem GETBKIMAGE LVM</span><span class="sxs-lookup"><span data-stu-id="9f5f0-105">LVM\_GETBKIMAGE message</span></span>
 
-<span data-ttu-id="36c40-106">Obtém a imagem de plano de fundo em um controle de exibição de lista.</span><span class="sxs-lookup"><span data-stu-id="36c40-106">Gets the background image in a list-view control.</span></span> <span data-ttu-id="36c40-107">Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetBkImage do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getbkimage) .</span><span class="sxs-lookup"><span data-stu-id="36c40-107">You can send this message explicitly or by using the [**ListView\_GetBkImage**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getbkimage) macro.</span></span>
+<span data-ttu-id="9f5f0-106">Obtém a imagem de plano de fundo em um controle de exibição de lista.</span><span class="sxs-lookup"><span data-stu-id="9f5f0-106">Gets the background image in a list-view control.</span></span> <span data-ttu-id="9f5f0-107">Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetBkImage do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getbkimage) .</span><span class="sxs-lookup"><span data-stu-id="9f5f0-107">You can send this message explicitly or by using the [**ListView\_GetBkImage**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getbkimage) macro.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="36c40-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="36c40-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9f5f0-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="9f5f0-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="36c40-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="36c40-109">*wParam*</span></span> 
-</dt> <dd><span data-ttu-id="36c40-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="36c40-110">Must be zero.</span></span></dd> <dt>
+<span data-ttu-id="9f5f0-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="9f5f0-109">*wParam*</span></span> 
+</dt> <dd><span data-ttu-id="9f5f0-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="9f5f0-110">Must be zero.</span></span></dd> <dt>
 
-<span data-ttu-id="36c40-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="36c40-111">*lParam*</span></span> 
+<span data-ttu-id="9f5f0-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="9f5f0-111">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="36c40-112">Um ponteiro para uma estrutura [**LVBKIMAGE**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea) que receberá as informações da imagem de plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="36c40-112">A pointer to an [**LVBKIMAGE**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea) structure that will receive the background image information.</span></span>
+<span data-ttu-id="9f5f0-112">Um ponteiro para uma estrutura [**LVBKIMAGE**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea) que receberá as informações da imagem de plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="9f5f0-112">A pointer to an [**LVBKIMAGE**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea) structure that will receive the background image information.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="36c40-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="36c40-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9f5f0-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="9f5f0-113">Return value</span></span>
 
-<span data-ttu-id="36c40-114">Retornará zero se for bem-sucedido ou nenhum outro.</span><span class="sxs-lookup"><span data-stu-id="36c40-114">Returns nonzero if successful, or zero otherwise.</span></span>
+<span data-ttu-id="9f5f0-114">Retornará zero se for bem-sucedido ou nenhum outro.</span><span class="sxs-lookup"><span data-stu-id="9f5f0-114">Returns nonzero if successful, or zero otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="36c40-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="36c40-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="9f5f0-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9f5f0-115">Requirements</span></span>
 
 
 
-| <span data-ttu-id="36c40-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="36c40-116">Requirement</span></span> | <span data-ttu-id="36c40-117">Valor</span><span class="sxs-lookup"><span data-stu-id="36c40-117">Value</span></span> |
+| <span data-ttu-id="9f5f0-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="9f5f0-116">Requirement</span></span> | <span data-ttu-id="9f5f0-117">Valor</span><span class="sxs-lookup"><span data-stu-id="9f5f0-117">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="36c40-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="36c40-118">Minimum supported client</span></span><br/> | <span data-ttu-id="36c40-119">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="36c40-119">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="36c40-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="36c40-120">Minimum supported server</span></span><br/> | <span data-ttu-id="36c40-121">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="36c40-121">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="36c40-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="36c40-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="36c40-123"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="36c40-123"><dt>Commctrl.h</dt></span></span> </dl> |
-| <span data-ttu-id="36c40-124">Nomes Unicode e ANSI</span><span class="sxs-lookup"><span data-stu-id="36c40-124">Unicode and ANSI names</span></span><br/>   | <span data-ttu-id="36c40-125">**LVM \_ GETBKIMAGEW** (Unicode) e **LVM \_ GETBKIMAGEA** (ANSI)</span><span class="sxs-lookup"><span data-stu-id="36c40-125">**LVM\_GETBKIMAGEW** (Unicode) and **LVM\_GETBKIMAGEA** (ANSI)</span></span><br/>             |
+| <span data-ttu-id="9f5f0-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9f5f0-118">Minimum supported client</span></span><br/> | <span data-ttu-id="9f5f0-119">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="9f5f0-119">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="9f5f0-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9f5f0-120">Minimum supported server</span></span><br/> | <span data-ttu-id="9f5f0-121">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="9f5f0-121">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="9f5f0-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="9f5f0-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="9f5f0-123"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="9f5f0-123"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="9f5f0-124">Nomes Unicode e ANSI</span><span class="sxs-lookup"><span data-stu-id="9f5f0-124">Unicode and ANSI names</span></span><br/>   | <span data-ttu-id="9f5f0-125">**LVM \_ GETBKIMAGEW** (Unicode) e **LVM \_ GETBKIMAGEA** (ANSI)</span><span class="sxs-lookup"><span data-stu-id="9f5f0-125">**LVM\_GETBKIMAGEW** (Unicode) and **LVM\_GETBKIMAGEA** (ANSI)</span></span><br/>             |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="36c40-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="36c40-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f5f0-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="9f5f0-126">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="36c40-127">**\_SETBKIMAGE LVM**</span><span class="sxs-lookup"><span data-stu-id="36c40-127">**LVM\_SETBKIMAGE**</span></span>](lvm-setbkimage.md)
+[<span data-ttu-id="9f5f0-127">**\_SETBKIMAGE LVM**</span><span class="sxs-lookup"><span data-stu-id="9f5f0-127">**LVM\_SETBKIMAGE**</span></span>](lvm-setbkimage.md)
 </dt> </dl>
 
  

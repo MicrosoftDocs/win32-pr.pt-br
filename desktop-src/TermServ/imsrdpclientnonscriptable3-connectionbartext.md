@@ -51,13 +51,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645098"
 ---
-# <a name="imsrdpclientnonscriptable3connectionbartext-property"></a><span data-ttu-id="15b2c-120">Propriedade IMsRdpClientNonScriptable3:: ConnectionBarText</span><span class="sxs-lookup"><span data-stu-id="15b2c-120">IMsRdpClientNonScriptable3::ConnectionBarText property</span></span>
+# <a name="imsrdpclientnonscriptable3connectionbartext-property"></a><span data-ttu-id="4a73e-120">Propriedade IMsRdpClientNonScriptable3:: ConnectionBarText</span><span class="sxs-lookup"><span data-stu-id="4a73e-120">IMsRdpClientNonScriptable3::ConnectionBarText property</span></span>
 
-<span data-ttu-id="15b2c-121">Define ou recupera o texto para atualizar a barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="15b2c-121">Sets or retrieves the text to update the connection bar.</span></span>
+<span data-ttu-id="4a73e-121">Define ou recupera o texto para atualizar a barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="4a73e-121">Sets or retrieves the text to update the connection bar.</span></span>
 
-<span data-ttu-id="15b2c-122">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="15b2c-122">This property is read/write.</span></span>
+<span data-ttu-id="4a73e-122">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="4a73e-122">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="15b2c-123">Syntax</span><span class="sxs-lookup"><span data-stu-id="15b2c-123">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4a73e-123">Syntax</span><span class="sxs-lookup"><span data-stu-id="4a73e-123">Syntax</span></span>
 
 
 ```C++
@@ -72,39 +72,39 @@ HRESULT get_ConnectionBarText(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="15b2c-124">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="15b2c-124">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="4a73e-124">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="4a73e-124">Property value</span></span>
 
-<span data-ttu-id="15b2c-125">Define a cadeia de texto a ser exibida na barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="15b2c-125">Sets the text string to display on the connection bar.</span></span>
+<span data-ttu-id="4a73e-125">Define a cadeia de texto a ser exibida na barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="4a73e-125">Sets the text string to display on the connection bar.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="15b2c-126">Comentários</span><span class="sxs-lookup"><span data-stu-id="15b2c-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4a73e-126">Comentários</span><span class="sxs-lookup"><span data-stu-id="4a73e-126">Remarks</span></span>
 
-<span data-ttu-id="15b2c-127">Você deve chamar o método **IMsRdpClientNonScriptable3::p UT \_ ConnectionBarText** antes de chamar o método [**IMsTscSecuredSettings::p UT \_ fullscreen**](imstscsecuredsettings-fullscreen.md) ou o método [**IMsRdpClient::p UT \_ fullscreen**](imsrdpclient-fullscreen.md) .</span><span class="sxs-lookup"><span data-stu-id="15b2c-127">You must call the **IMsRdpClientNonScriptable3::put\_ConnectionBarText** method before you call the [**IMsTscSecuredSettings::put\_Fullscreen**](imstscsecuredsettings-fullscreen.md) method or the [**IMsRdpClient::put\_Fullscreen**](imsrdpclient-fullscreen.md) method.</span></span>
+<span data-ttu-id="4a73e-127">Você deve chamar o método **IMsRdpClientNonScriptable3::p UT \_ ConnectionBarText** antes de chamar o método [**IMsTscSecuredSettings::p UT \_ fullscreen**](imstscsecuredsettings-fullscreen.md) ou o método [**IMsRdpClient::p UT \_ fullscreen**](imsrdpclient-fullscreen.md) .</span><span class="sxs-lookup"><span data-stu-id="4a73e-127">You must call the **IMsRdpClientNonScriptable3::put\_ConnectionBarText** method before you call the [**IMsTscSecuredSettings::put\_Fullscreen**](imstscsecuredsettings-fullscreen.md) method or the [**IMsRdpClient::put\_Fullscreen**](imsrdpclient-fullscreen.md) method.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="15b2c-128">Requisitos</span><span class="sxs-lookup"><span data-stu-id="15b2c-128">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4a73e-128">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4a73e-128">Requirements</span></span>
 
 
 
-| <span data-ttu-id="15b2c-129">Requisito</span><span class="sxs-lookup"><span data-stu-id="15b2c-129">Requirement</span></span> | <span data-ttu-id="15b2c-130">Valor</span><span class="sxs-lookup"><span data-stu-id="15b2c-130">Value</span></span> |
+| <span data-ttu-id="4a73e-129">Requisito</span><span class="sxs-lookup"><span data-stu-id="4a73e-129">Requirement</span></span> | <span data-ttu-id="4a73e-130">Valor</span><span class="sxs-lookup"><span data-stu-id="4a73e-130">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="15b2c-131">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="15b2c-131">Minimum supported client</span></span><br/> | <span data-ttu-id="15b2c-132">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="15b2c-132">Windows Vista</span></span><br/>                                                                      |
-| <span data-ttu-id="15b2c-133">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="15b2c-133">Minimum supported server</span></span><br/> | <span data-ttu-id="15b2c-134">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="15b2c-134">Windows Server 2008</span></span><br/>                                                                |
-| <span data-ttu-id="15b2c-135">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="15b2c-135">Type library</span></span><br/>             | <dl> <span data-ttu-id="15b2c-136"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="15b2c-136"><dt>MsTscAx.dll</dt></span></span> </dl>        |
-| <span data-ttu-id="15b2c-137">DLL</span><span class="sxs-lookup"><span data-stu-id="15b2c-137">DLL</span></span><br/>                      | <dl> <span data-ttu-id="15b2c-138"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="15b2c-138"><dt>MsTscAx.dll</dt></span></span> </dl>        |
-| <span data-ttu-id="15b2c-139">IID</span><span class="sxs-lookup"><span data-stu-id="15b2c-139">IID</span></span><br/>                      | <span data-ttu-id="15b2c-140">IID \_ IMsRdpClientNonScriptable3 é definido como b3378d90-0728-45c7-8ed7-b6159fb92219</span><span class="sxs-lookup"><span data-stu-id="15b2c-140">IID\_IMsRdpClientNonScriptable3 is defined as b3378d90-0728-45c7-8ed7-b6159fb92219</span></span><br/> |
+| <span data-ttu-id="4a73e-131">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4a73e-131">Minimum supported client</span></span><br/> | <span data-ttu-id="4a73e-132">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="4a73e-132">Windows Vista</span></span><br/>                                                                      |
+| <span data-ttu-id="4a73e-133">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4a73e-133">Minimum supported server</span></span><br/> | <span data-ttu-id="4a73e-134">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="4a73e-134">Windows Server 2008</span></span><br/>                                                                |
+| <span data-ttu-id="4a73e-135">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="4a73e-135">Type library</span></span><br/>             | <dl> <span data-ttu-id="4a73e-136"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4a73e-136"><dt>MsTscAx.dll</dt></span></span> </dl>        |
+| <span data-ttu-id="4a73e-137">DLL</span><span class="sxs-lookup"><span data-stu-id="4a73e-137">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4a73e-138"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4a73e-138"><dt>MsTscAx.dll</dt></span></span> </dl>        |
+| <span data-ttu-id="4a73e-139">IID</span><span class="sxs-lookup"><span data-stu-id="4a73e-139">IID</span></span><br/>                      | <span data-ttu-id="4a73e-140">IID \_ IMsRdpClientNonScriptable3 é definido como b3378d90-0728-45c7-8ed7-b6159fb92219</span><span class="sxs-lookup"><span data-stu-id="4a73e-140">IID\_IMsRdpClientNonScriptable3 is defined as b3378d90-0728-45c7-8ed7-b6159fb92219</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="15b2c-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="15b2c-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4a73e-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="4a73e-141">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="15b2c-142">**IMsRdpClientNonScriptable4**</span><span class="sxs-lookup"><span data-stu-id="15b2c-142">**IMsRdpClientNonScriptable4**</span></span>](imsrdpclientnonscriptable4.md)
+[<span data-ttu-id="4a73e-142">**IMsRdpClientNonScriptable4**</span><span class="sxs-lookup"><span data-stu-id="4a73e-142">**IMsRdpClientNonScriptable4**</span></span>](imsrdpclientnonscriptable4.md)
 </dt> <dt>
 
-[<span data-ttu-id="15b2c-143">**IMsRdpClientNonScriptable5**</span><span class="sxs-lookup"><span data-stu-id="15b2c-143">**IMsRdpClientNonScriptable5**</span></span>](imsrdpclientnonscriptable5.md)
+[<span data-ttu-id="4a73e-143">**IMsRdpClientNonScriptable5**</span><span class="sxs-lookup"><span data-stu-id="4a73e-143">**IMsRdpClientNonScriptable5**</span></span>](imsrdpclientnonscriptable5.md)
 </dt> <dt>
 
-[<span data-ttu-id="15b2c-144">**IMsRdpClientNonScriptable3**</span><span class="sxs-lookup"><span data-stu-id="15b2c-144">**IMsRdpClientNonScriptable3**</span></span>](imsrdpclientnonscriptable3.md)
+[<span data-ttu-id="4a73e-144">**IMsRdpClientNonScriptable3**</span><span class="sxs-lookup"><span data-stu-id="4a73e-144">**IMsRdpClientNonScriptable3**</span></span>](imsrdpclientnonscriptable3.md)
 </dt> </dl>
 
  

@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645206"
 ---
-# <a name="task-renderinginfotype-element"></a><span data-ttu-id="b84fb-104">Elemento Task (RenderingInfoType)</span><span class="sxs-lookup"><span data-stu-id="b84fb-104">Task (RenderingInfoType) Element</span></span>
+# <a name="task-renderinginfotype-element"></a><span data-ttu-id="2edf0-104">Elemento Task (RenderingInfoType)</span><span class="sxs-lookup"><span data-stu-id="2edf0-104">Task (RenderingInfoType) Element</span></span>
 
-<span data-ttu-id="b84fb-105">A cadeia de caracteres de mensagem renderizada da tarefa especificada no evento.</span><span class="sxs-lookup"><span data-stu-id="b84fb-105">The rendered message string of the task specified in the event.</span></span>
+<span data-ttu-id="2edf0-105">A cadeia de caracteres de mensagem renderizada da tarefa especificada no evento.</span><span class="sxs-lookup"><span data-stu-id="2edf0-105">The rendered message string of the task specified in the event.</span></span>
 
 ``` syntax
 <xs:element name="Task"
@@ -30,27 +30,27 @@ ms.locfileid: "103645206"
  />
 ```
 
-<span data-ttu-id="b84fb-106">O elemento **Task** é definido pelo tipo complexo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="b84fb-106">The **Task** element is defined by the [**RenderingInfoType**](eventschema-renderingtype-complextype.md) complex type.</span></span>
+<span data-ttu-id="2edf0-106">O elemento **Task** é definido pelo tipo complexo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="2edf0-106">The **Task** element is defined by the [**RenderingInfoType**](eventschema-renderingtype-complextype.md) complex type.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b84fb-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b84fb-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2edf0-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2edf0-107">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b84fb-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="b84fb-108">Requirement</span></span> | <span data-ttu-id="b84fb-109">Valor</span><span class="sxs-lookup"><span data-stu-id="b84fb-109">Value</span></span> |
+| <span data-ttu-id="2edf0-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="2edf0-108">Requirement</span></span> | <span data-ttu-id="2edf0-109">Valor</span><span class="sxs-lookup"><span data-stu-id="2edf0-109">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="b84fb-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b84fb-110">Minimum supported client</span></span><br/> | <span data-ttu-id="b84fb-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="b84fb-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="b84fb-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b84fb-112">Minimum supported server</span></span><br/> | <span data-ttu-id="b84fb-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="b84fb-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="2edf0-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2edf0-110">Minimum supported client</span></span><br/> | <span data-ttu-id="2edf0-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="2edf0-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="2edf0-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2edf0-112">Minimum supported server</span></span><br/> | <span data-ttu-id="2edf0-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="2edf0-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b84fb-114">Consulte também</span><span class="sxs-lookup"><span data-stu-id="b84fb-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2edf0-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="2edf0-114">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b84fb-115">**Elemento pai**</span><span class="sxs-lookup"><span data-stu-id="b84fb-115">**Parent element**</span></span>
+<span data-ttu-id="2edf0-115">**Elemento pai**</span><span class="sxs-lookup"><span data-stu-id="2edf0-115">**Parent element**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="b84fb-116">**RenderingInfo (EventType)**</span><span class="sxs-lookup"><span data-stu-id="b84fb-116">**RenderingInfo (EventType)**</span></span>](eventschema-renderinginfo-eventtype-element.md)
+[<span data-ttu-id="2edf0-116">**RenderingInfo (EventType)**</span><span class="sxs-lookup"><span data-stu-id="2edf0-116">**RenderingInfo (EventType)**</span></span>](eventschema-renderinginfo-eventtype-element.md)
 </dt> </dl>
 
  

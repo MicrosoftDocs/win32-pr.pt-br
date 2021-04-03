@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644531"
 ---
-# <a name="mpclean_data-structure"></a><span data-ttu-id="03d64-105">\_Estrutura de dados MPCLEAN</span><span class="sxs-lookup"><span data-stu-id="03d64-105">MPCLEAN\_DATA structure</span></span>
+# <a name="mpclean_data-structure"></a><span data-ttu-id="0f116-105">\_Estrutura de dados MPCLEAN</span><span class="sxs-lookup"><span data-stu-id="0f116-105">MPCLEAN\_DATA structure</span></span>
 
-<span data-ttu-id="03d64-106">Dados de notificação passados para a função de retorno de chamada limpa.</span><span class="sxs-lookup"><span data-stu-id="03d64-106">Notification data passed to clean callback function.</span></span>
+<span data-ttu-id="0f116-106">Dados de notificação passados para a função de retorno de chamada limpa.</span><span class="sxs-lookup"><span data-stu-id="0f116-106">Notification data passed to clean callback function.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="03d64-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="03d64-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0f116-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0f116-107">Syntax</span></span>
 
 
 ```C++
@@ -40,77 +40,77 @@ typedef struct tagMPCLEAN_DATA {
 
 
 
-## <a name="members"></a><span data-ttu-id="03d64-108">Membros</span><span class="sxs-lookup"><span data-stu-id="03d64-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="0f116-108">Membros</span><span class="sxs-lookup"><span data-stu-id="0f116-108">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="03d64-109">**Threatid**</span><span class="sxs-lookup"><span data-stu-id="03d64-109">**ThreatID**</span></span>
+<span data-ttu-id="0f116-109">**Threatid**</span><span class="sxs-lookup"><span data-stu-id="0f116-109">**ThreatID**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="03d64-110">Tipo: **\_ ID de MPTHREAT**</span><span class="sxs-lookup"><span data-stu-id="03d64-110">Type: **MPTHREAT\_ID**</span></span>
+<span data-ttu-id="0f116-110">Tipo: **\_ ID de MPTHREAT**</span><span class="sxs-lookup"><span data-stu-id="0f116-110">Type: **MPTHREAT\_ID**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="03d64-111">Identificador de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="03d64-111">Threat identifier for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="03d64-112">O bit superior é definido para identificar ameaças relacionadas ao antivírus.</span><span class="sxs-lookup"><span data-stu-id="03d64-112">Upper bit is set to identify antivirus-related threats.</span></span>
+<span data-ttu-id="0f116-111">Identificador de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="0f116-111">Threat identifier for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="0f116-112">O bit superior é definido para identificar ameaças relacionadas ao antivírus.</span><span class="sxs-lookup"><span data-stu-id="0f116-112">Upper bit is set to identify antivirus-related threats.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="03d64-113">**Threataction**</span><span class="sxs-lookup"><span data-stu-id="03d64-113">**ThreatAction**</span></span>
+<span data-ttu-id="0f116-113">**Threataction**</span><span class="sxs-lookup"><span data-stu-id="0f116-113">**ThreatAction**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="03d64-114">Tipo: **[ **\_ ação MPTHREAT**](mpthreat-action.md)**</span><span class="sxs-lookup"><span data-stu-id="03d64-114">Type: **[**MPTHREAT\_ACTION**](mpthreat-action.md)**</span></span>
+<span data-ttu-id="0f116-114">Tipo: **[ **\_ ação MPTHREAT**](mpthreat-action.md)**</span><span class="sxs-lookup"><span data-stu-id="0f116-114">Type: **[**MPTHREAT\_ACTION**](mpthreat-action.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="03d64-115">Ação de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="03d64-115">Threat action for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="03d64-116">Consulte [**a \_ ação MPTHREAT**](mpthreat-action.md).</span><span class="sxs-lookup"><span data-stu-id="03d64-116">See [**MPTHREAT\_ACTION**](mpthreat-action.md).</span></span>
+<span data-ttu-id="0f116-115">Ação de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="0f116-115">Threat action for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="0f116-116">Consulte [**a \_ ação MPTHREAT**](mpthreat-action.md).</span><span class="sxs-lookup"><span data-stu-id="0f116-116">See [**MPTHREAT\_ACTION**](mpthreat-action.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="03d64-117">**dwStatus**</span><span class="sxs-lookup"><span data-stu-id="03d64-117">**dwStatus**</span></span>
+<span data-ttu-id="0f116-117">**dwStatus**</span><span class="sxs-lookup"><span data-stu-id="0f116-117">**dwStatus**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="03d64-118">Tipo: **DWORD**</span><span class="sxs-lookup"><span data-stu-id="03d64-118">Type: **DWORD**</span></span>
+<span data-ttu-id="0f116-118">Tipo: **DWORD**</span><span class="sxs-lookup"><span data-stu-id="0f116-118">Type: **DWORD**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="03d64-119">Status ou ações adicionais associadas à ação executada.</span><span class="sxs-lookup"><span data-stu-id="03d64-119">Additional status or actions associated with the action taken.</span></span> <span data-ttu-id="03d64-120">Essa é uma combinação de sinalizadores de bit [**do \_ sinalizador MPSTATUS**](mpstatus-flag.md).</span><span class="sxs-lookup"><span data-stu-id="03d64-120">This is a combination of bit flags from [**MPSTATUS\_FLAG**](mpstatus-flag.md).</span></span>
+<span data-ttu-id="0f116-119">Status ou ações adicionais associadas à ação executada.</span><span class="sxs-lookup"><span data-stu-id="0f116-119">Additional status or actions associated with the action taken.</span></span> <span data-ttu-id="0f116-120">Essa é uma combinação de sinalizadores de bit [**do \_ sinalizador MPSTATUS**](mpstatus-flag.md).</span><span class="sxs-lookup"><span data-stu-id="0f116-120">This is a combination of bit flags from [**MPSTATUS\_FLAG**](mpstatus-flag.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="03d64-121">**ResourceInfo**</span><span class="sxs-lookup"><span data-stu-id="03d64-121">**ResourceInfo**</span></span>
+<span data-ttu-id="0f116-121">**ResourceInfo**</span><span class="sxs-lookup"><span data-stu-id="0f116-121">**ResourceInfo**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="03d64-122">Tipo: **\_ informações de PMPRESOURCE**</span><span class="sxs-lookup"><span data-stu-id="03d64-122">Type: **PMPRESOURCE\_INFO**</span></span>
+<span data-ttu-id="0f116-122">Tipo: **\_ informações de PMPRESOURCE**</span><span class="sxs-lookup"><span data-stu-id="0f116-122">Type: **PMPRESOURCE\_INFO**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="03d64-123">Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="03d64-123">Resource information for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="03d64-124">Consulte [**MPRESOURCE \_ info**](mpresource-info.md).</span><span class="sxs-lookup"><span data-stu-id="03d64-124">See [**MPRESOURCE\_INFO**](mpresource-info.md).</span></span>
+<span data-ttu-id="0f116-123">Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** .</span><span class="sxs-lookup"><span data-stu-id="0f116-123">Resource information for the **MPNOTIFY\_CLEAN\_THREAT\_START**/**MPNOTIFY\_CLEAN\_THREAT\_SUCCEEDED**/**MPNOTIFY\_CLEAN\_THREAT\_FAILED** events.</span></span> <span data-ttu-id="0f116-124">Consulte [**MPRESOURCE \_ info**](mpresource-info.md).</span><span class="sxs-lookup"><span data-stu-id="0f116-124">See [**MPRESOURCE\_INFO**](mpresource-info.md).</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="03d64-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="03d64-125">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="0f116-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="0f116-125">Requirements</span></span>
 
 
 
-| <span data-ttu-id="03d64-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="03d64-126">Requirement</span></span> | <span data-ttu-id="03d64-127">Valor</span><span class="sxs-lookup"><span data-stu-id="03d64-127">Value</span></span> |
+| <span data-ttu-id="0f116-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="0f116-126">Requirement</span></span> | <span data-ttu-id="0f116-127">Valor</span><span class="sxs-lookup"><span data-stu-id="0f116-127">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="03d64-128">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="03d64-128">Minimum supported client</span></span><br/> | <span data-ttu-id="03d64-129">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="03d64-129">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
-| <span data-ttu-id="03d64-130">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="03d64-130">Minimum supported server</span></span><br/> | <span data-ttu-id="03d64-131">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="03d64-131">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="03d64-132">parâmetro</span><span class="sxs-lookup"><span data-stu-id="03d64-132">Header</span></span><br/>                   | <dl> <span data-ttu-id="03d64-133"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="03d64-133"><dt>MpClient.h</dt></span></span> </dl> |
+| <span data-ttu-id="0f116-128">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0f116-128">Minimum supported client</span></span><br/> | <span data-ttu-id="0f116-129">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="0f116-129">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
+| <span data-ttu-id="0f116-130">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0f116-130">Minimum supported server</span></span><br/> | <span data-ttu-id="0f116-131">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="0f116-131">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="0f116-132">parâmetro</span><span class="sxs-lookup"><span data-stu-id="0f116-132">Header</span></span><br/>                   | <dl> <span data-ttu-id="0f116-133"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="0f116-133"><dt>MpClient.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="03d64-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="03d64-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0f116-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="0f116-134">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="03d64-135">**informações de MPRESOURCE \_**</span><span class="sxs-lookup"><span data-stu-id="03d64-135">**MPRESOURCE\_INFO**</span></span>](mpresource-info.md)
+[<span data-ttu-id="0f116-135">**informações de MPRESOURCE \_**</span><span class="sxs-lookup"><span data-stu-id="0f116-135">**MPRESOURCE\_INFO**</span></span>](mpresource-info.md)
 </dt> <dt>
 
-[<span data-ttu-id="03d64-136">**\_sinalizador MPSTATUS**</span><span class="sxs-lookup"><span data-stu-id="03d64-136">**MPSTATUS\_FLAG**</span></span>](mpstatus-flag.md)
+[<span data-ttu-id="0f116-136">**\_sinalizador MPSTATUS**</span><span class="sxs-lookup"><span data-stu-id="0f116-136">**MPSTATUS\_FLAG**</span></span>](mpstatus-flag.md)
 </dt> <dt>
 
-[<span data-ttu-id="03d64-137">**\_ação MPTHREAT**</span><span class="sxs-lookup"><span data-stu-id="03d64-137">**MPTHREAT\_ACTION**</span></span>](mpthreat-action.md)
+[<span data-ttu-id="0f116-137">**\_ação MPTHREAT**</span><span class="sxs-lookup"><span data-stu-id="0f116-137">**MPTHREAT\_ACTION**</span></span>](mpthreat-action.md)
 </dt> </dl>
 
  

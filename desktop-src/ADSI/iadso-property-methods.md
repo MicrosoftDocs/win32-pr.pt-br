@@ -40,25 +40,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644946"
 ---
-# <a name="iadso-property-methods"></a><span data-ttu-id="b720c-105">Métodos de propriedade IADso</span><span class="sxs-lookup"><span data-stu-id="b720c-105">IADsO Property Methods</span></span>
+# <a name="iadso-property-methods"></a><span data-ttu-id="35d35-105">Métodos de propriedade IADso</span><span class="sxs-lookup"><span data-stu-id="35d35-105">IADsO Property Methods</span></span>
 
-<span data-ttu-id="b720c-106">Os métodos de propriedade da interface [**iadso**](/windows/desktop/api/Iads/nn-iads-iadso) obtêm ou definem as propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="b720c-106">The property methods of the [**IADsO**](/windows/desktop/api/Iads/nn-iads-iadso) interface get or set the properties described in the following table.</span></span> <span data-ttu-id="b720c-107">Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="b720c-107">For more information, see [Interface Property Methods](interface-property-methods.md).</span></span>
+<span data-ttu-id="35d35-106">Os métodos de propriedade da interface [**iadso**](/windows/desktop/api/Iads/nn-iads-iadso) obtêm ou definem as propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="35d35-106">The property methods of the [**IADsO**](/windows/desktop/api/Iads/nn-iads-iadso) interface get or set the properties described in the following table.</span></span> <span data-ttu-id="35d35-107">Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="35d35-107">For more information, see [Interface Property Methods](interface-property-methods.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b720c-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b720c-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="35d35-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35d35-108">Properties</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b720c-109">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="b720c-109">**Description**</span></span>
-<span data-ttu-id="b720c-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-110"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-109">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="35d35-109">**Description**</span></span>
+<span data-ttu-id="35d35-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-110"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-111">A descrição da organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-111">The description of the organization.</span></span>
+<span data-ttu-id="35d35-111">A descrição da organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-111">The description of the organization.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-112">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-112">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-112">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-112">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-113">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="b720c-113">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="35d35-113">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="35d35-113">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -76,17 +76,17 @@ HRESULT put_Description(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="b720c-114">**FaxNumber**</span><span class="sxs-lookup"><span data-stu-id="b720c-114">**FaxNumber**</span></span>
-<span data-ttu-id="b720c-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-115"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-114">**FaxNumber**</span><span class="sxs-lookup"><span data-stu-id="35d35-114">**FaxNumber**</span></span>
+<span data-ttu-id="35d35-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-115"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-116">O número de faxes (fax) da organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-116">The facsimile (fax) number of the organization.</span></span>
+<span data-ttu-id="35d35-116">O número de faxes (fax) da organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-116">The facsimile (fax) number of the organization.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-117">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-117">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-117">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-117">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-118">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="b720c-118">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="35d35-118">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="35d35-118">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -104,17 +104,17 @@ HRESULT put_FaxNumber(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="b720c-119">**LocalityName**</span><span class="sxs-lookup"><span data-stu-id="b720c-119">**LocalityName**</span></span>
-<span data-ttu-id="b720c-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-120"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-119">**LocalityName**</span><span class="sxs-lookup"><span data-stu-id="35d35-119">**LocalityName**</span></span>
+<span data-ttu-id="35d35-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-120"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-121">O nome do local em que a organização está localizada.</span><span class="sxs-lookup"><span data-stu-id="b720c-121">The name of the place in which the organization is located.</span></span>
+<span data-ttu-id="35d35-121">O nome do local em que a organização está localizada.</span><span class="sxs-lookup"><span data-stu-id="35d35-121">The name of the place in which the organization is located.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-122">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-122">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-122">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-122">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-123">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="b720c-123">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="35d35-123">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="35d35-123">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -132,17 +132,17 @@ HRESULT put_LocalityName(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="b720c-124">**PostalAddress**</span><span class="sxs-lookup"><span data-stu-id="b720c-124">**PostalAddress**</span></span>
-<span data-ttu-id="b720c-125"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-125"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-124">**PostalAddress**</span><span class="sxs-lookup"><span data-stu-id="35d35-124">**PostalAddress**</span></span>
+<span data-ttu-id="35d35-125"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-125"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-126">O endereço postal da organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-126">The postal address of the organization.</span></span>
+<span data-ttu-id="35d35-126">O endereço postal da organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-126">The postal address of the organization.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-127">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-127">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-127">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-127">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-128">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="b720c-128">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="35d35-128">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="35d35-128">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -160,17 +160,17 @@ HRESULT put_PostalAddress(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="b720c-129">**SeeAlso**</span><span class="sxs-lookup"><span data-stu-id="b720c-129">**SeeAlso**</span></span>
-<span data-ttu-id="b720c-130"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-130"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-129">**SeeAlso**</span><span class="sxs-lookup"><span data-stu-id="35d35-129">**SeeAlso**</span></span>
+<span data-ttu-id="35d35-130"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-130"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-131">Uma matriz de nomes ADsPath de outros objetos ADSI que podem ser relevantes para esse objeto.</span><span class="sxs-lookup"><span data-stu-id="b720c-131">An array of ADsPath names of other ADSI objects which may be relevant to this object.</span></span>
+<span data-ttu-id="35d35-131">Uma matriz de nomes ADsPath de outros objetos ADSI que podem ser relevantes para esse objeto.</span><span class="sxs-lookup"><span data-stu-id="35d35-131">An array of ADsPath names of other ADSI objects which may be relevant to this object.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-132">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-132">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-132">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-132">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-133">Tipo de dados de script: **Variant**</span><span class="sxs-lookup"><span data-stu-id="b720c-133">Scripting data type: **VARIANT**</span></span>
+<span data-ttu-id="35d35-133">Tipo de dados de script: **Variant**</span><span class="sxs-lookup"><span data-stu-id="35d35-133">Scripting data type: **VARIANT**</span></span>
 </dt> <dt>
 
 
@@ -188,17 +188,17 @@ HRESULT put_SeeAlso(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="b720c-134">**TelephoneNumber**</span><span class="sxs-lookup"><span data-stu-id="b720c-134">**TelephoneNumber**</span></span>
-<span data-ttu-id="b720c-135"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="b720c-135"></dt> <dd> <dl></span></span>
+<span data-ttu-id="35d35-134">**TelephoneNumber**</span><span class="sxs-lookup"><span data-stu-id="35d35-134">**TelephoneNumber**</span></span>
+<span data-ttu-id="35d35-135"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="35d35-135"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="b720c-136">O número de telefone da organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-136">The telephone number of the organization.</span></span>
+<span data-ttu-id="35d35-136">O número de telefone da organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-136">The telephone number of the organization.</span></span>
 
 <dt>
 
-<span data-ttu-id="b720c-137">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="b720c-137">Access type: Read/write</span></span>
+<span data-ttu-id="35d35-137">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="35d35-137">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="b720c-138">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="b720c-138">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="35d35-138">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="35d35-138">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -218,9 +218,9 @@ HRESULT put_TelephoneNumber(
 
  
 
-## <a name="examples"></a><span data-ttu-id="b720c-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b720c-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="35d35-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="35d35-139">Examples</span></span>
 
-<span data-ttu-id="b720c-140">O exemplo de código a seguir exibe a descrição de uma determinada organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-140">The following code example displays the description of a given organization.</span></span> <span data-ttu-id="b720c-141">Ele assume que o serviço de diretório subjacente dá suporte ao agrupamento de objetos de diretório por organização.</span><span class="sxs-lookup"><span data-stu-id="b720c-141">It assumes the underlying directory service supports grouping directory objects by organization.</span></span>
+<span data-ttu-id="35d35-140">O exemplo de código a seguir exibe a descrição de uma determinada organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-140">The following code example displays the description of a given organization.</span></span> <span data-ttu-id="35d35-141">Ele assume que o serviço de diretório subjacente dá suporte ao agrupamento de objetos de diretório por organização.</span><span class="sxs-lookup"><span data-stu-id="35d35-141">It assumes the underlying directory service supports grouping directory objects by organization.</span></span>
 
 
 ```VB
@@ -251,28 +251,28 @@ Cleanup:
 
 
 
-## <a name="requirements"></a><span data-ttu-id="b720c-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b720c-142">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="35d35-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="35d35-142">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b720c-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="b720c-143">Requirement</span></span> | <span data-ttu-id="b720c-144">Valor</span><span class="sxs-lookup"><span data-stu-id="b720c-144">Value</span></span> |
+| <span data-ttu-id="35d35-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="35d35-143">Requirement</span></span> | <span data-ttu-id="35d35-144">Valor</span><span class="sxs-lookup"><span data-stu-id="35d35-144">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="b720c-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b720c-145">Minimum supported client</span></span><br/> | <span data-ttu-id="b720c-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="b720c-146">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="b720c-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b720c-147">Minimum supported server</span></span><br/> | <span data-ttu-id="b720c-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="b720c-148">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="b720c-149">parâmetro</span><span class="sxs-lookup"><span data-stu-id="b720c-149">Header</span></span><br/>                   | <dl> <span data-ttu-id="b720c-150"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="b720c-150"><dt>Iads.h</dt></span></span> </dl>       |
-| <span data-ttu-id="b720c-151">DLL</span><span class="sxs-lookup"><span data-stu-id="b720c-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b720c-152"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b720c-152"><dt>Activeds.dll</dt></span></span> </dl> |
-| <span data-ttu-id="b720c-153">IID</span><span class="sxs-lookup"><span data-stu-id="b720c-153">IID</span></span><br/>                      | <span data-ttu-id="b720c-154">IID \_ iadso é definido como A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503</span><span class="sxs-lookup"><span data-stu-id="b720c-154">IID\_IADsO is defined as A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503</span></span><br/>                |
+| <span data-ttu-id="35d35-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="35d35-145">Minimum supported client</span></span><br/> | <span data-ttu-id="35d35-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="35d35-146">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="35d35-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="35d35-147">Minimum supported server</span></span><br/> | <span data-ttu-id="35d35-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="35d35-148">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="35d35-149">parâmetro</span><span class="sxs-lookup"><span data-stu-id="35d35-149">Header</span></span><br/>                   | <dl> <span data-ttu-id="35d35-150"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="35d35-150"><dt>Iads.h</dt></span></span> </dl>       |
+| <span data-ttu-id="35d35-151">DLL</span><span class="sxs-lookup"><span data-stu-id="35d35-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="35d35-152"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="35d35-152"><dt>Activeds.dll</dt></span></span> </dl> |
+| <span data-ttu-id="35d35-153">IID</span><span class="sxs-lookup"><span data-stu-id="35d35-153">IID</span></span><br/>                      | <span data-ttu-id="35d35-154">IID \_ iadso é definido como A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503</span><span class="sxs-lookup"><span data-stu-id="35d35-154">IID\_IADsO is defined as A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503</span></span><br/>                |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b720c-155">Consulte também</span><span class="sxs-lookup"><span data-stu-id="b720c-155">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="35d35-155">Confira também</span><span class="sxs-lookup"><span data-stu-id="35d35-155">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b720c-156">**IADso**</span><span class="sxs-lookup"><span data-stu-id="b720c-156">**IADsO**</span></span>](/windows/desktop/api/Iads/nn-iads-iadso)
+[<span data-ttu-id="35d35-156">**IADso**</span><span class="sxs-lookup"><span data-stu-id="35d35-156">**IADsO**</span></span>](/windows/desktop/api/Iads/nn-iads-iadso)
 </dt> <dt>
 
-[<span data-ttu-id="b720c-157">Métodos de propriedade de interface</span><span class="sxs-lookup"><span data-stu-id="b720c-157">Interface Property Methods</span></span>](interface-property-methods.md)
+[<span data-ttu-id="35d35-157">Métodos de propriedade de interface</span><span class="sxs-lookup"><span data-stu-id="35d35-157">Interface Property Methods</span></span>](interface-property-methods.md)
 </dt> </dl>
 
  

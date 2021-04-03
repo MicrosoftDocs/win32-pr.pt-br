@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641487"
 ---
-# <a name="using-binding-handles-and-making-rpc-calls"></a><span data-ttu-id="d6c6d-103">Usando identificadores de associação e fazendo chamadas RPC</span><span class="sxs-lookup"><span data-stu-id="d6c6d-103">Using Binding Handles and Making RPC Calls</span></span>
+# <a name="using-binding-handles-and-making-rpc-calls"></a><span data-ttu-id="b3d45-103">Usando identificadores de associação e fazendo chamadas RPC</span><span class="sxs-lookup"><span data-stu-id="b3d45-103">Using Binding Handles and Making RPC Calls</span></span>
 
-<span data-ttu-id="d6c6d-104">Um erro comum entre os programadores de RPC é A manipulação de todas as exceções.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-104">A common mistake among RPC programmers is handling all exceptions.</span></span> <span data-ttu-id="d6c6d-105">Muitos programadores estruturam seus identificadores de exceção como o seguinte:</span><span class="sxs-lookup"><span data-stu-id="d6c6d-105">Many programmers structure their exception handles like the following:</span></span>
+<span data-ttu-id="b3d45-104">Um erro comum entre os programadores de RPC é A manipulação de todas as exceções.</span><span class="sxs-lookup"><span data-stu-id="b3d45-104">A common mistake among RPC programmers is handling all exceptions.</span></span> <span data-ttu-id="b3d45-105">Muitos programadores estruturam seus identificadores de exceção como o seguinte:</span><span class="sxs-lookup"><span data-stu-id="b3d45-105">Many programmers structure their exception handles like the following:</span></span>
 
 ``` syntax
     RpcTryExcept
@@ -27,7 +27,7 @@ ms.locfileid: "103641487"
     RpcEndExcept
 ```
 
-<span data-ttu-id="d6c6d-106">O problema com esse manipulador é que ele captura todos os erros, incluindo erros no programa cliente.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-106">The problem with this handler is that it catches all errors, including errors in the client program.</span></span> <span data-ttu-id="d6c6d-107">A captura de erros no programa cliente torna a depuração mais difícil.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-107">Catching errors in the client program makes debugging more difficult.</span></span> <span data-ttu-id="d6c6d-108">A maneira apropriada de estruturar um manipulador de exceção é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="d6c6d-108">The proper way to structure an exception handler is the following:</span></span>
+<span data-ttu-id="b3d45-106">O problema com esse manipulador é que ele captura todos os erros, incluindo erros no programa cliente.</span><span class="sxs-lookup"><span data-stu-id="b3d45-106">The problem with this handler is that it catches all errors, including errors in the client program.</span></span> <span data-ttu-id="b3d45-107">A captura de erros no programa cliente torna a depuração mais difícil.</span><span class="sxs-lookup"><span data-stu-id="b3d45-107">Catching errors in the client program makes debugging more difficult.</span></span> <span data-ttu-id="b3d45-108">A maneira apropriada de estruturar um manipulador de exceção é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="b3d45-108">The proper way to structure an exception handler is the following:</span></span>
 
 ``` syntax
     RpcTryExcept
@@ -57,18 +57,18 @@ ms.locfileid: "103641487"
     RpcEndExcept
 ```
 
-<span data-ttu-id="d6c6d-109">Esse manipulador de exceção tem a vantagem de permitir um determinado intervalo de erros por meio do.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-109">This exception handler has the advantage of letting a certain range of errors through.</span></span> <span data-ttu-id="d6c6d-110">Esses erros nunca serão retornados pelo servidor, pois eles indicam um problema no lado do cliente.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-110">These errors will never be returned by the server, because they indicate a client side problem.</span></span>
+<span data-ttu-id="b3d45-109">Esse manipulador de exceção tem a vantagem de permitir um determinado intervalo de erros por meio do.</span><span class="sxs-lookup"><span data-stu-id="b3d45-109">This exception handler has the advantage of letting a certain range of errors through.</span></span> <span data-ttu-id="b3d45-110">Esses erros nunca serão retornados pelo servidor, pois eles indicam um problema no lado do cliente.</span><span class="sxs-lookup"><span data-stu-id="b3d45-110">These errors will never be returned by the server, because they indicate a client side problem.</span></span>
 
-<span data-ttu-id="d6c6d-111">Além disso, o uso do **\[** [ \_ \_ identificador de contexto estrito](/windows/desktop/Midl/strict-context-handle) **\]** e o tipo de atributos de **\[** [ \_ \_ \_ identificador de contexto estrito](/windows/desktop/Midl/type-strict-context-handle) **\]** são recomendados para garantir que o tempo de execução de RPC crie um identificador de contexto em uma interface que possa ser passada como um argumento somente para métodos dessa interface.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-111">Additionally, the use of the **\[**[strict\_context\_handle](/windows/desktop/Midl/strict-context-handle)**\]** and **\[**[type\_strict\_context\_handle](/windows/desktop/Midl/type-strict-context-handle)**\]** attributes are recommended to ensure the RPC run time creates a context handle on one interface that can be passed as an argument only to methods of that interface.</span></span> <span data-ttu-id="d6c6d-112">Isso impedirá falhas de servidor que ocorrem quando os identificadores de contexto são abertos e passados entre diferentes interfaces que existem dentro do mesmo processo.</span><span class="sxs-lookup"><span data-stu-id="d6c6d-112">Doing so will prevent server failures that occur when context handles are opened and passed between different interfaces that exist within the same process.</span></span>
+<span data-ttu-id="b3d45-111">Além disso, o uso do **\[** [ \_ \_ identificador de contexto estrito](/windows/desktop/Midl/strict-context-handle) **\]** e o tipo de atributos de **\[** [ \_ \_ \_ identificador de contexto estrito](/windows/desktop/Midl/type-strict-context-handle) **\]** são recomendados para garantir que o tempo de execução de RPC crie um identificador de contexto em uma interface que possa ser passada como um argumento somente para métodos dessa interface.</span><span class="sxs-lookup"><span data-stu-id="b3d45-111">Additionally, the use of the **\[**[strict\_context\_handle](/windows/desktop/Midl/strict-context-handle)**\]** and **\[**[type\_strict\_context\_handle](/windows/desktop/Midl/type-strict-context-handle)**\]** attributes are recommended to ensure the RPC run time creates a context handle on one interface that can be passed as an argument only to methods of that interface.</span></span> <span data-ttu-id="b3d45-112">Isso impedirá falhas de servidor que ocorrem quando os identificadores de contexto são abertos e passados entre diferentes interfaces que existem dentro do mesmo processo.</span><span class="sxs-lookup"><span data-stu-id="b3d45-112">Doing so will prevent server failures that occur when context handles are opened and passed between different interfaces that exist within the same process.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d6c6d-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d6c6d-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b3d45-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b3d45-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d6c6d-114">\_identificador de contexto estrito \_</span><span class="sxs-lookup"><span data-stu-id="d6c6d-114">strict\_context\_handle</span></span>](/windows/desktop/Midl/strict-context-handle)
+[<span data-ttu-id="b3d45-114">\_identificador de contexto estrito \_</span><span class="sxs-lookup"><span data-stu-id="b3d45-114">strict\_context\_handle</span></span>](/windows/desktop/Midl/strict-context-handle)
 </dt> <dt>
 
-[<span data-ttu-id="d6c6d-115">tipo \_ de \_ identificador de contexto estrito \_</span><span class="sxs-lookup"><span data-stu-id="d6c6d-115">type\_strict\_context\_handle</span></span>](/windows/desktop/Midl/type-strict-context-handle)
+[<span data-ttu-id="b3d45-115">tipo \_ de \_ identificador de contexto estrito \_</span><span class="sxs-lookup"><span data-stu-id="b3d45-115">type\_strict\_context\_handle</span></span>](/windows/desktop/Midl/type-strict-context-handle)
 </dt> </dl>
 
  

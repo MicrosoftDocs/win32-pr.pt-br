@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644890"
 ---
-# <a name="actioncollectionremove-method"></a><span data-ttu-id="f643d-106">Método ActionCollection. Remove</span><span class="sxs-lookup"><span data-stu-id="f643d-106">ActionCollection.Remove method</span></span>
+# <a name="actioncollectionremove-method"></a><span data-ttu-id="1b3e8-106">Método ActionCollection. Remove</span><span class="sxs-lookup"><span data-stu-id="1b3e8-106">ActionCollection.Remove method</span></span>
 
-<span data-ttu-id="f643d-107">Para scripts, remove a ação especificada da coleção.</span><span class="sxs-lookup"><span data-stu-id="f643d-107">For scripting, removes the specified action from the collection.</span></span>
+<span data-ttu-id="1b3e8-107">Para scripts, remove a ação especificada da coleção.</span><span class="sxs-lookup"><span data-stu-id="1b3e8-107">For scripting, removes the specified action from the collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f643d-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f643d-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1b3e8-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1b3e8-108">Syntax</span></span>
 
 
 ```VB
@@ -38,46 +38,46 @@ ActionCollection.Remove( _
 
 
 
-## <a name="parameters"></a><span data-ttu-id="f643d-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f643d-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1b3e8-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="1b3e8-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="f643d-110">*índice* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="f643d-110">*index* \[in\]</span></span>
+<span data-ttu-id="1b3e8-110">*índice* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="1b3e8-110">*index* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f643d-111">O índice da ação a ser removida.</span><span class="sxs-lookup"><span data-stu-id="f643d-111">The index of the action to be removed.</span></span>
+<span data-ttu-id="1b3e8-111">O índice da ação a ser removida.</span><span class="sxs-lookup"><span data-stu-id="1b3e8-111">The index of the action to be removed.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="f643d-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="f643d-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1b3e8-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="1b3e8-112">Return value</span></span>
 
-<span data-ttu-id="f643d-113">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="f643d-113">This method does not return a value.</span></span>
+<span data-ttu-id="1b3e8-113">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="1b3e8-113">This method does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f643d-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="f643d-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1b3e8-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="1b3e8-114">Remarks</span></span>
 
-<span data-ttu-id="f643d-115">Ao remover itens, observe que o índice do primeiro item na coleção é 1 e o índice do último item é o valor da propriedade [**ActionCollection. Count**](actioncollection-count.md) .</span><span class="sxs-lookup"><span data-stu-id="f643d-115">When removing items, note that the index for the first item in the collection is 1 and the index for the last item is the value of the [**ActionCollection.Count**](actioncollection-count.md) property.</span></span>
+<span data-ttu-id="1b3e8-115">Ao remover itens, observe que o índice do primeiro item na coleção é 1 e o índice do último item é o valor da propriedade [**ActionCollection. Count**](actioncollection-count.md) .</span><span class="sxs-lookup"><span data-stu-id="1b3e8-115">When removing items, note that the index for the first item in the collection is 1 and the index for the last item is the value of the [**ActionCollection.Count**](actioncollection-count.md) property.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f643d-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f643d-116">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="1b3e8-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1b3e8-116">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f643d-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="f643d-117">Requirement</span></span> | <span data-ttu-id="f643d-118">Valor</span><span class="sxs-lookup"><span data-stu-id="f643d-118">Value</span></span> |
+| <span data-ttu-id="1b3e8-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="1b3e8-117">Requirement</span></span> | <span data-ttu-id="1b3e8-118">Valor</span><span class="sxs-lookup"><span data-stu-id="1b3e8-118">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="f643d-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f643d-119">Minimum supported client</span></span><br/> | <span data-ttu-id="f643d-120">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="f643d-120">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
-| <span data-ttu-id="f643d-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f643d-121">Minimum supported server</span></span><br/> | <span data-ttu-id="f643d-122">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="f643d-122">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="f643d-123">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="f643d-123">Type library</span></span><br/>             | <dl> <span data-ttu-id="f643d-124"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="f643d-124"><dt>Taskschd.tlb</dt></span></span> </dl> |
-| <span data-ttu-id="f643d-125">DLL</span><span class="sxs-lookup"><span data-stu-id="f643d-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="f643d-126"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="f643d-126"><dt>Taskschd.dll</dt></span></span> </dl> |
+| <span data-ttu-id="1b3e8-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b3e8-119">Minimum supported client</span></span><br/> | <span data-ttu-id="1b3e8-120">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="1b3e8-120">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
+| <span data-ttu-id="1b3e8-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b3e8-121">Minimum supported server</span></span><br/> | <span data-ttu-id="1b3e8-122">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="1b3e8-122">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="1b3e8-123">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="1b3e8-123">Type library</span></span><br/>             | <dl> <span data-ttu-id="1b3e8-124"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="1b3e8-124"><dt>Taskschd.tlb</dt></span></span> </dl> |
+| <span data-ttu-id="1b3e8-125">DLL</span><span class="sxs-lookup"><span data-stu-id="1b3e8-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="1b3e8-126"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="1b3e8-126"><dt>Taskschd.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f643d-127">Consulte também</span><span class="sxs-lookup"><span data-stu-id="f643d-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1b3e8-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="1b3e8-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f643d-128">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="f643d-128">Task Scheduler</span></span>](task-scheduler-start-page.md)
+[<span data-ttu-id="1b3e8-128">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="1b3e8-128">Task Scheduler</span></span>](task-scheduler-start-page.md)
 </dt> <dt>
 
-[<span data-ttu-id="f643d-129">**Açãocollection**</span><span class="sxs-lookup"><span data-stu-id="f643d-129">**ActionCollection**</span></span>](actioncollection.md)
+[<span data-ttu-id="1b3e8-129">**Açãocollection**</span><span class="sxs-lookup"><span data-stu-id="1b3e8-129">**ActionCollection**</span></span>](actioncollection.md)
 </dt> </dl>
 
  

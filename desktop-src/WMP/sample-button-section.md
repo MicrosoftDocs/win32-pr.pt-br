@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005761"
 ---
-# <a name="sample-button-section"></a><span data-ttu-id="d28de-108">Seção de botão de exemplo</span><span class="sxs-lookup"><span data-stu-id="d28de-108">Sample Button Section</span></span>
+# <a name="sample-button-section"></a><span data-ttu-id="6a5bd-108">Seção de botão de exemplo</span><span class="sxs-lookup"><span data-stu-id="6a5bd-108">Sample Button Section</span></span>
 
-<span data-ttu-id="d28de-109">As linhas a seguir mostram uma seção de botões típicos de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="d28de-109">The following lines show a typical Buttons section of a skin definition file:</span></span>
+<span data-ttu-id="6a5bd-109">As linhas a seguir mostram uma seção de botões típicos de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="6a5bd-109">The following lines show a typical Buttons section of a skin definition file:</span></span>
 
 
 ```C++
@@ -40,24 +40,24 @@ ms.locfileid: "104005761"
 
 
 
-<span data-ttu-id="d28de-110">Esse código define oito botões que são usados para fornecer todas as seguintes funções em uma capa:</span><span class="sxs-lookup"><span data-stu-id="d28de-110">This code defines eight buttons that are used to provide all of the following functions in a skin:</span></span>
+<span data-ttu-id="6a5bd-110">Esse código define oito botões que são usados para fornecer todas as seguintes funções em uma capa:</span><span class="sxs-lookup"><span data-stu-id="6a5bd-110">This code defines eight buttons that are used to provide all of the following functions in a skin:</span></span>
 
--   <span data-ttu-id="d28de-111">Reproduzir, pausar e parar itens de mídia.</span><span class="sxs-lookup"><span data-stu-id="d28de-111">Play, pause, and stop media items.</span></span>
--   <span data-ttu-id="d28de-112">Embaralhar, repetir e percorrer a lista de reprodução.</span><span class="sxs-lookup"><span data-stu-id="d28de-112">Shuffle, repeat, and move through the playlist.</span></span>
--   <span data-ttu-id="d28de-113">Ativar mudo do volume.</span><span class="sxs-lookup"><span data-stu-id="d28de-113">Mute the volume.</span></span>
+-   <span data-ttu-id="6a5bd-111">Reproduzir, pausar e parar itens de mídia.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-111">Play, pause, and stop media items.</span></span>
+-   <span data-ttu-id="6a5bd-112">Embaralhar, repetir e percorrer a lista de reprodução.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-112">Shuffle, repeat, and move through the playlist.</span></span>
+-   <span data-ttu-id="6a5bd-113">Ativar mudo do volume.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-113">Mute the volume.</span></span>
 
-<span data-ttu-id="d28de-114">Todos os botões, exceto o botão sem som, são botões de região.</span><span class="sxs-lookup"><span data-stu-id="d28de-114">All the buttons except the mute button are region buttons.</span></span> <span data-ttu-id="d28de-115">O botão mudo obtém suas imagens enviadas por push e desabilitadas do super bitmap para sua conveniência.</span><span class="sxs-lookup"><span data-stu-id="d28de-115">The mute button gets its Pushed and Disabled images from the Super bitmap for convenience.</span></span>
+<span data-ttu-id="6a5bd-114">Todos os botões, exceto o botão sem som, são botões de região.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-114">All the buttons except the mute button are region buttons.</span></span> <span data-ttu-id="6a5bd-115">O botão mudo obtém suas imagens enviadas por push e desabilitadas do super bitmap para sua conveniência.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-115">The mute button gets its Pushed and Disabled images from the Super bitmap for convenience.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="d28de-116">Os tipos de botões são preteridos em capas para Windows Media Player 10 Mobile ou posterior.</span><span class="sxs-lookup"><span data-stu-id="d28de-116">Buttons types are deprecated in skins for Windows Media Player 10 Mobile or later.</span></span> <span data-ttu-id="d28de-117">Em vez de um tipo de botão declarado em seu arquivo de capa, digite "NA" para cada tipo.</span><span class="sxs-lookup"><span data-stu-id="d28de-117">Instead of a button type declared in your skin file, enter "NA" for each type.</span></span>
+> <span data-ttu-id="6a5bd-116">Os tipos de botões são preteridos em capas para Windows Media Player 10 Mobile ou posterior.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-116">Buttons types are deprecated in skins for Windows Media Player 10 Mobile or later.</span></span> <span data-ttu-id="6a5bd-117">Em vez de um tipo de botão declarado em seu arquivo de capa, digite "NA" para cada tipo.</span><span class="sxs-lookup"><span data-stu-id="6a5bd-117">Instead of a button type declared in your skin file, enter "NA" for each type.</span></span>
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="d28de-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d28de-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6a5bd-118">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6a5bd-118">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d28de-119">**Botões**</span><span class="sxs-lookup"><span data-stu-id="d28de-119">**Buttons**</span></span>](buttons.md)
+[<span data-ttu-id="6a5bd-119">**Botões**</span><span class="sxs-lookup"><span data-stu-id="6a5bd-119">**Buttons**</span></span>](buttons.md)
 </dt> </dl>
 
  
