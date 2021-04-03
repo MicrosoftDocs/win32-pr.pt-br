@@ -27,7 +27,7 @@ ms.locfileid: "103644889"
 
 Para scripts, Obtém ou define uma versão formatada em XML da coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -53,7 +53,7 @@ Uma versão formatada em XML da coleção.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

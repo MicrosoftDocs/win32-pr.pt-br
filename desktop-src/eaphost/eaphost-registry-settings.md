@@ -17,7 +17,7 @@ Os valores do registro nas chaves do registro a seguir controlam aspectos da fun
 
 
 
-| Subchave                                                                 | Descrição                                                                                                                                                              |
+| Subchave                                                                 | Description                                                                                                                                                              |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [BypassNegotiation](bypassnegotiation.md)                             | Determina se a negociação de recursos entre o servidor RAS e o cliente ocorre.<br/>                                                                              |
 | [AssumePhase2Fragmentation](assumephase2fragmentation.md)             | Determina se o servidor RAS e o cliente pressupõem a fragmentação da fase 2.<br/>                                                                                         |

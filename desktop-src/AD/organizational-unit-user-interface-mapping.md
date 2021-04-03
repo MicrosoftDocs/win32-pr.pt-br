@@ -24,7 +24,7 @@ A tabela a seguir mostra os rótulos de interface do usuário da folha de propri
 
 | Rótulo da interface do usuário        | Atributo no Active Directory Domain Services |
 |-----------------|-----------------------------------------------|
-| Description     | [**Descrição**](/windows/desktop/ADSchema/a-description)     |
+| Descrição     | [**Descrição**](/windows/desktop/ADSchema/a-description)     |
 | Street          | [**Endereço da rua**](/windows/desktop/ADSchema/a-street)       |
 | City            | [**Localidade-nome**](/windows/desktop/ADSchema/a-l)             |
 | Estado/Província  | [**Estado-ou-província-nome**](/windows/desktop/ADSchema/a-st)   |
@@ -43,7 +43,7 @@ A tabela a seguir mostra os rótulos de interface do usuário da folha de propri
 
 | Rótulo da interface do usuário         | Atributo no Active Directory Domain Services                                                                                   |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Name             | [**Gerenciado por**](/windows/desktop/ADSchema/a-managedby)                                                                                          |
+| Nome             | [**Gerenciado por**](/windows/desktop/ADSchema/a-managedby)                                                                                          |
 | Office           | O atributo [**físico-Delivery-Office-Name**](/windows/desktop/ADSchema/a-physicaldeliveryofficename) da conta identificada por **nome**. |
 | Street           | O atributo de [**endereço de rua**](/windows/desktop/ADSchema/a-street) da conta identificada por **nome**.                                    |
 | City             | O atributo de [**nome de localidade**](/windows/desktop/ADSchema/a-l) da conta identificada por **nome**.                                          |

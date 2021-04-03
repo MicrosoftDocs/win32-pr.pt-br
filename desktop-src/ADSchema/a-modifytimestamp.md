@@ -36,7 +36,7 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 2.5.18.2                                                      |
 | System-ID-GUID    | 9a7ad94a-ca53-11d1-bbd0-0080c76670c0                          |
-| Sintaxe            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 

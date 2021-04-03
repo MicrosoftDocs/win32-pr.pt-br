@@ -36,7 +36,7 @@ Usado para indexar no arquivo Extrts.mc para obter o displayName localizado para
 | Frequência de atualização  | Uma ID nunca deve ser alterada.       |
 | Attribute-Id      | 1.2.840.113556.1.4.1353              |
 | System-ID-GUID    | a746f0d1-78d0-11d2-9916-0000f87a57d4 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

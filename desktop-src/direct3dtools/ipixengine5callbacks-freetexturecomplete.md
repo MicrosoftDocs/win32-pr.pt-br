@@ -34,7 +34,7 @@ Uma função de retorno de chamada usada para notificar o host quando uma textur
 ```C++
 ```
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
 
 [**IPixEngine5Callbacks**](/windows/desktop/direct3dtools/ipixengine5callbacks)
 

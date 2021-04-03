@@ -48,7 +48,7 @@ Define a propriedade Clip deste visual como a região retangular ou o objeto de 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

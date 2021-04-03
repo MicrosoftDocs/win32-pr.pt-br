@@ -96,7 +96,7 @@ Os caminhos de pesquisa usados para recuperar a matriz de arquivos incluirão aq
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

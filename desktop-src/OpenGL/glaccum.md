@@ -79,7 +79,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *op* não era um valor aceito.<br/>                                                                                                                                            |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | Não havia um buffer de acumulação ou a função **glAccum** foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |

@@ -34,7 +34,7 @@ A interface **ICallStackCallback** herda da interface [**IUnknown**](/windows/de
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **ICallStackCallback** tem esses métodos.
 

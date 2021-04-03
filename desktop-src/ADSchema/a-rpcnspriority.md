@@ -36,7 +36,7 @@ A prioridade de uma determinada entrada de perfil RPC.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.117               |
 | System-ID-GUID    | bf967a27-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -72,7 +72,7 @@ O proprietário da área de transferência deve usar a função [**GlobalLock**]
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

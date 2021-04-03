@@ -36,7 +36,7 @@ O atributo **is-efêmero** não está sendo usado no momento.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1212              |
 | System-ID-GUID    | f4c453f0-c5f1-11d1-bbcb-0080c76670c0 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

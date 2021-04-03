@@ -61,7 +61,7 @@ O valor de retorno contém o índice do item mais próximo no [**LOWORD**](/prev
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
