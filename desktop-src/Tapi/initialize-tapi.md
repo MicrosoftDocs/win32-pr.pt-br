@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836959"
 ---
-# <a name="initialize-tapi"></a><span data-ttu-id="82a10-103">Inicializar a TAPI</span><span class="sxs-lookup"><span data-stu-id="82a10-103">Initialize TAPI</span></span>
+# <a name="initialize-tapi"></a><span data-ttu-id="5e5e9-103">Inicializar a TAPI</span><span class="sxs-lookup"><span data-stu-id="5e5e9-103">Initialize TAPI</span></span>
 
-<span data-ttu-id="82a10-104">O exemplo de código a seguir demonstra a criação do objeto TAPI.</span><span class="sxs-lookup"><span data-stu-id="82a10-104">The following code example demonstrates creation of the TAPI object.</span></span>
+<span data-ttu-id="5e5e9-104">O exemplo de código a seguir demonstra a criação do objeto TAPI.</span><span class="sxs-lookup"><span data-stu-id="5e5e9-104">The following code example demonstrates creation of the TAPI object.</span></span>
 
 ```cpp
 const auto result = ITTAPI::Initialize();
@@ -36,7 +36,7 @@ if (result != S_OK) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="82a10-105">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="82a10-105">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5e5e9-105">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="5e5e9-105">See Also</span></span>
 
-- [<span data-ttu-id="82a10-106">ITTAPI:: Initialize</span><span class="sxs-lookup"><span data-stu-id="82a10-106">ITTAPI::Initialize</span></span>](/windows/win32/api/tapi3if/nf-tapi3if-ittapi-initialize)
-- [<span data-ttu-id="82a10-107">Valores de HRESULT comuns</span><span class="sxs-lookup"><span data-stu-id="82a10-107">Common HRESULT Values</span></span>](../seccrypto/common-hresult-values.md)
+- [<span data-ttu-id="5e5e9-106">ITTAPI:: Initialize</span><span class="sxs-lookup"><span data-stu-id="5e5e9-106">ITTAPI::Initialize</span></span>](/windows/win32/api/tapi3if/nf-tapi3if-ittapi-initialize)
+- [<span data-ttu-id="5e5e9-107">Valores de HRESULT comuns</span><span class="sxs-lookup"><span data-stu-id="5e5e9-107">Common HRESULT Values</span></span>](../seccrypto/common-hresult-values.md)

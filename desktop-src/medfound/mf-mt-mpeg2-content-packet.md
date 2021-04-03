@@ -11,42 +11,42 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829116"
 ---
-# <a name="mf_mt_mpeg2_content_packet-attribute"></a><span data-ttu-id="f9815-103">Atributo de pacote de conteúdo do MF \_ MT \_ MPEG2 \_ \_</span><span class="sxs-lookup"><span data-stu-id="f9815-103">MF\_MT\_MPEG2\_CONTENT\_PACKET attribute</span></span>
+# <a name="mf_mt_mpeg2_content_packet-attribute"></a><span data-ttu-id="2fb58-103">Atributo de pacote de conteúdo do MF \_ MT \_ MPEG2 \_ \_</span><span class="sxs-lookup"><span data-stu-id="2fb58-103">MF\_MT\_MPEG2\_CONTENT\_PACKET attribute</span></span>
 
-<span data-ttu-id="f9815-104">Para um tipo de mídia que descreve um fluxo de transporte MPEG-2 (TS), especifica se os pacotes de transporte contêm cabeçalhos de pacote de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="f9815-104">For a media type that describes an MPEG-2 transport stream (TS), specifies whether the transport packets contain Content Packet headers.</span></span>
+<span data-ttu-id="2fb58-104">Para um tipo de mídia que descreve um fluxo de transporte MPEG-2 (TS), especifica se os pacotes de transporte contêm cabeçalhos de pacote de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="2fb58-104">For a media type that describes an MPEG-2 transport stream (TS), specifies whether the transport packets contain Content Packet headers.</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="f9815-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="f9815-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="2fb58-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="2fb58-105">Data type</span></span>
 
-<span data-ttu-id="f9815-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="f9815-106">**UINT32**</span></span>
+<span data-ttu-id="2fb58-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="2fb58-106">**UINT32**</span></span>
 
 
 
-| <span data-ttu-id="f9815-107">Valor</span><span class="sxs-lookup"><span data-stu-id="f9815-107">Value</span></span>                                                                                                | <span data-ttu-id="f9815-108">Significado</span><span class="sxs-lookup"><span data-stu-id="f9815-108">Meaning</span></span>                                                                                                                                                                                                            |
+| <span data-ttu-id="2fb58-107">Valor</span><span class="sxs-lookup"><span data-stu-id="2fb58-107">Value</span></span>                                                                                                | <span data-ttu-id="2fb58-108">Significado</span><span class="sxs-lookup"><span data-stu-id="2fb58-108">Meaning</span></span>                                                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="0"></span><dl> <span data-ttu-id="f9815-109"><dt>**0**</dt></span><span class="sxs-lookup"><span data-stu-id="f9815-109"><dt>**0**</dt></span></span> </dl> | <span data-ttu-id="f9815-110">Nenhum cabeçalho de pacote de conteúdo é adicionado.</span><span class="sxs-lookup"><span data-stu-id="f9815-110">No Content Packet headers are added.</span></span><br/>                                                                                                                                                                    |
-| <span id="1"></span><dl> <span data-ttu-id="f9815-111"><dt>**1**</dt></span><span class="sxs-lookup"><span data-stu-id="f9815-111"><dt>**1**</dt></span></span> </dl> | <span data-ttu-id="f9815-112">A 200 a 1.000 intervalos de milissegundos, um cabeçalho de pacote de conteúdo de 14 bytes é adicionado ao início do pacote de transporte, conforme definido pela Associação de ARIB (setores de rádio e empresas) padrão.</span><span class="sxs-lookup"><span data-stu-id="f9815-112">At 200–1000 millisecond intervals, a 14-byte Content Packet header is added to the beginning of the transport packet, as defined by the Association of Radio Industries and Businesses (ARIB) standard.</span></span><br/> |
+| <span id="0"></span><dl> <span data-ttu-id="2fb58-109"><dt>**0**</dt></span><span class="sxs-lookup"><span data-stu-id="2fb58-109"><dt>**0**</dt></span></span> </dl> | <span data-ttu-id="2fb58-110">Nenhum cabeçalho de pacote de conteúdo é adicionado.</span><span class="sxs-lookup"><span data-stu-id="2fb58-110">No Content Packet headers are added.</span></span><br/>                                                                                                                                                                    |
+| <span id="1"></span><dl> <span data-ttu-id="2fb58-111"><dt>**1**</dt></span><span class="sxs-lookup"><span data-stu-id="2fb58-111"><dt>**1**</dt></span></span> </dl> | <span data-ttu-id="2fb58-112">A 200 a 1.000 intervalos de milissegundos, um cabeçalho de pacote de conteúdo de 14 bytes é adicionado ao início do pacote de transporte, conforme definido pela Associação de ARIB (setores de rádio e empresas) padrão.</span><span class="sxs-lookup"><span data-stu-id="2fb58-112">At 200–1000 millisecond intervals, a 14-byte Content Packet header is added to the beginning of the transport packet, as defined by the Association of Radio Industries and Businesses (ARIB) standard.</span></span><br/> |
 
 
 
  
 
-## <a name="requirements"></a><span data-ttu-id="f9815-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f9815-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2fb58-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2fb58-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f9815-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="f9815-114">Requirement</span></span> | <span data-ttu-id="f9815-115">Valor</span><span class="sxs-lookup"><span data-stu-id="f9815-115">Value</span></span> |
+| <span data-ttu-id="2fb58-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="2fb58-114">Requirement</span></span> | <span data-ttu-id="2fb58-115">Valor</span><span class="sxs-lookup"><span data-stu-id="2fb58-115">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="f9815-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f9815-116">Minimum supported client</span></span><br/> | <span data-ttu-id="f9815-117">Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="f9815-117">Windows 8 \[desktop apps \| UWP apps\]</span></span><br/>                                  |
-| <span data-ttu-id="f9815-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f9815-118">Minimum supported server</span></span><br/> | <span data-ttu-id="f9815-119">Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="f9815-119">Windows Server 2012 \[desktop apps \| UWP apps\]</span></span><br/>                        |
-| <span data-ttu-id="f9815-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f9815-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="f9815-121"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="f9815-121"><dt>Mfapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="2fb58-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2fb58-116">Minimum supported client</span></span><br/> | <span data-ttu-id="2fb58-117">Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="2fb58-117">Windows 8 \[desktop apps \| UWP apps\]</span></span><br/>                                  |
+| <span data-ttu-id="2fb58-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2fb58-118">Minimum supported server</span></span><br/> | <span data-ttu-id="2fb58-119">Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="2fb58-119">Windows Server 2012 \[desktop apps \| UWP apps\]</span></span><br/>                        |
+| <span data-ttu-id="2fb58-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2fb58-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="2fb58-121"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="2fb58-121"><dt>Mfapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f9815-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="f9815-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2fb58-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="2fb58-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f9815-123">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="f9815-123">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+[<span data-ttu-id="2fb58-123">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="2fb58-123">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

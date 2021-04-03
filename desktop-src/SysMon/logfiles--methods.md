@@ -16,12 +16,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916299"
 ---
-# <a name="logfiles-methods"></a><span data-ttu-id="6b97e-103">Métodos de LogFiles</span><span class="sxs-lookup"><span data-stu-id="6b97e-103">LogFiles Methods</span></span>
+# <a name="logfiles-methods"></a><span data-ttu-id="f867b-103">Métodos de LogFiles</span><span class="sxs-lookup"><span data-stu-id="f867b-103">LogFiles Methods</span></span>
 
-<span data-ttu-id="6b97e-104">A classe [**LogFiles**](logfiles.md) tem os seguintes métodos:</span><span class="sxs-lookup"><span data-stu-id="6b97e-104">The [**LogFiles**](logfiles.md) class has the following methods:</span></span>
+<span data-ttu-id="f867b-104">A classe [**LogFiles**](logfiles.md) tem os seguintes métodos:</span><span class="sxs-lookup"><span data-stu-id="f867b-104">The [**LogFiles**](logfiles.md) class has the following methods:</span></span>
 
--   [<span data-ttu-id="6b97e-105">**Adicionar**</span><span class="sxs-lookup"><span data-stu-id="6b97e-105">**Add**</span></span>](systemmonitor-logfiles-add.md)
--   [<span data-ttu-id="6b97e-106">**Remover**</span><span class="sxs-lookup"><span data-stu-id="6b97e-106">**Remove**</span></span>](systemmonitor-logfiles-remove.md)
+-   [<span data-ttu-id="f867b-105">**Adicionar**</span><span class="sxs-lookup"><span data-stu-id="f867b-105">**Add**</span></span>](systemmonitor-logfiles-add.md)
+-   [<span data-ttu-id="f867b-106">**Remover**</span><span class="sxs-lookup"><span data-stu-id="f867b-106">**Remove**</span></span>](systemmonitor-logfiles-remove.md)
 
  
 

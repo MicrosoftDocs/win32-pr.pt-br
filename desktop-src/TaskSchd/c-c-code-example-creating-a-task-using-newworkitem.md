@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916189"
 ---
-# <a name="cc-code-example-creating-a-task-using-newworkitem"></a><span data-ttu-id="3c6aa-103">Exemplo de código C/C++: criando uma tarefa usando NewWorkItem</span><span class="sxs-lookup"><span data-stu-id="3c6aa-103">C/C++ Code Example: Creating a Task Using NewWorkItem</span></span>
+# <a name="cc-code-example-creating-a-task-using-newworkitem"></a><span data-ttu-id="7dbe2-103">Exemplo de código C/C++: criando uma tarefa usando NewWorkItem</span><span class="sxs-lookup"><span data-stu-id="7dbe2-103">C/C++ Code Example: Creating a Task Using NewWorkItem</span></span>
 
-<span data-ttu-id="3c6aa-104">Este exemplo cria uma única tarefa.</span><span class="sxs-lookup"><span data-stu-id="3c6aa-104">This example creates a single task.</span></span>
+<span data-ttu-id="7dbe2-104">Este exemplo cria uma única tarefa.</span><span class="sxs-lookup"><span data-stu-id="7dbe2-104">This example creates a single task.</span></span>
 
 
 ```C++
@@ -118,11 +118,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="3c6aa-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3c6aa-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7dbe2-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7dbe2-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3c6aa-106">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="3c6aa-106">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="7dbe2-106">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="7dbe2-106">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

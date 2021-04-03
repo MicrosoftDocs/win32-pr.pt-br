@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836943"
 ---
-# <a name="doublecolumnvalue-constructor"></a><span data-ttu-id="e4d25-103">Construtor DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="e4d25-103">DoubleColumnValue constructor</span></span>
+# <a name="doublecolumnvalue-constructor"></a><span data-ttu-id="a9b9d-103">Construtor DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="a9b9d-103">DoubleColumnValue constructor</span></span>
 
-<span data-ttu-id="e4d25-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e4d25-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="e4d25-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e4d25-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="a9b9d-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a9b9d-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="a9b9d-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a9b9d-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e4d25-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e4d25-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a9b9d-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a9b9d-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New DoubleColumnValue()
 public DoubleColumnValue()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e4d25-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="e4d25-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a9b9d-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="a9b9d-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="e4d25-108">Referência</span><span class="sxs-lookup"><span data-stu-id="e4d25-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="a9b9d-108">Referência</span><span class="sxs-lookup"><span data-stu-id="a9b9d-108">Reference</span></span>
 
-[<span data-ttu-id="e4d25-109">Classe DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="e4d25-109">DoubleColumnValue class</span></span>](./doublecolumnvalue-class.md)
+[<span data-ttu-id="a9b9d-109">Classe DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="a9b9d-109">DoubleColumnValue class</span></span>](./doublecolumnvalue-class.md)
 
-[<span data-ttu-id="e4d25-110">Membros do DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="e4d25-110">DoubleColumnValue members</span></span>](./doublecolumnvalue-members.md)
+[<span data-ttu-id="a9b9d-110">Membros do DoubleColumnValue</span><span class="sxs-lookup"><span data-stu-id="a9b9d-110">DoubleColumnValue members</span></span>](./doublecolumnvalue-members.md)
 
-[<span data-ttu-id="e4d25-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e4d25-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="a9b9d-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="a9b9d-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

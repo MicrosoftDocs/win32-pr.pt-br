@@ -23,16 +23,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644509"
 ---
-# <a name="inapcomponentconfig3getconfigfromid-method"></a><span data-ttu-id="ae1e0-106">Método INapComponentConfig3:: GetConfigFromID</span><span class="sxs-lookup"><span data-stu-id="ae1e0-106">INapComponentConfig3::GetConfigFromID method</span></span>
+# <a name="inapcomponentconfig3getconfigfromid-method"></a><span data-ttu-id="d4db1-106">Método INapComponentConfig3:: GetConfigFromID</span><span class="sxs-lookup"><span data-stu-id="d4db1-106">INapComponentConfig3::GetConfigFromID method</span></span>
 
 > [!Note]  
-> <span data-ttu-id="ae1e0-107">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="ae1e0-107">The Network Access Protection platform is not available starting with Windows 10</span></span>
+> <span data-ttu-id="d4db1-107">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="d4db1-107">The Network Access Protection platform is not available starting with Windows 10</span></span>
 
  
 
-<span data-ttu-id="ae1e0-108">O método **GetConfigFromID** é implementado por SHVs (validadores da integridade do sistema) para fornecer uma maneira de obter dados de configuração para uma ID de configuração específica.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-108">The **GetConfigFromID** method is implemented by system health validators (SHVs) to provide a way to obtain configuration data for a specific configuration ID.</span></span>
+<span data-ttu-id="d4db1-108">O método **GetConfigFromID** é implementado por SHVs (validadores da integridade do sistema) para fornecer uma maneira de obter dados de configuração para uma ID de configuração específica.</span><span class="sxs-lookup"><span data-stu-id="d4db1-108">The **GetConfigFromID** method is implemented by system health validators (SHVs) to provide a way to obtain configuration data for a specific configuration ID.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ae1e0-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ae1e0-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d4db1-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d4db1-109">Syntax</span></span>
 
 
 ```C++
@@ -45,68 +45,68 @@ HRESULT GetConfigFromID(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="ae1e0-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ae1e0-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d4db1-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d4db1-110">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="ae1e0-111">*configid* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="ae1e0-111">*configID* \[in\]</span></span>
+<span data-ttu-id="d4db1-111">*configid* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="d4db1-111">*configID* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="ae1e0-112">Um valor que representa a configuração.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-112">A value that represents the configuration.</span></span> <span data-ttu-id="ae1e0-113">Se *configid* for **0**, o SHV deverá retornar os dados de configuração padrão em *OutData*.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-113">If *ConfigID* is **0**, the SHV should return the default configuration data in *outdata*.</span></span>
+<span data-ttu-id="d4db1-112">Um valor que representa a configuração.</span><span class="sxs-lookup"><span data-stu-id="d4db1-112">A value that represents the configuration.</span></span> <span data-ttu-id="d4db1-113">Se *configid* for **0**, o SHV deverá retornar os dados de configuração padrão em *OutData*.</span><span class="sxs-lookup"><span data-stu-id="d4db1-113">If *ConfigID* is **0**, the SHV should return the default configuration data in *outdata*.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="ae1e0-114">*contagem* \[ de fora\]</span><span class="sxs-lookup"><span data-stu-id="ae1e0-114">*count* \[out\]</span></span>
+<span data-ttu-id="d4db1-114">*contagem* \[ de fora\]</span><span class="sxs-lookup"><span data-stu-id="d4db1-114">*count* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="ae1e0-115">O tamanho, em bytes, dos dados de configuração retornados em *OutData*.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-115">The size, in bytes, of the configuration data returned in *outdata*.</span></span>
+<span data-ttu-id="d4db1-115">O tamanho, em bytes, dos dados de configuração retornados em *OutData*.</span><span class="sxs-lookup"><span data-stu-id="d4db1-115">The size, in bytes, of the configuration data returned in *outdata*.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="ae1e0-116">*OutData* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="ae1e0-116">*outdata* \[out\]</span></span>
+<span data-ttu-id="d4db1-116">*OutData* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="d4db1-116">*outdata* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="ae1e0-117">No retorno, uma matriz de bytes que contém os dados de configuração representados por *configid*.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-117">On return, a BYTE array that contains the configuration data represented by *ConfigID*.</span></span>
+<span data-ttu-id="d4db1-117">No retorno, uma matriz de bytes que contém os dados de configuração representados por *configid*.</span><span class="sxs-lookup"><span data-stu-id="d4db1-117">On return, a BYTE array that contains the configuration data represented by *ConfigID*.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="ae1e0-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="ae1e0-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d4db1-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d4db1-118">Return value</span></span>
 
-<span data-ttu-id="ae1e0-119">Retorna um dos seguintes códigos de erro com base no resultado dessa operação.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-119">Returns one of the following error codes based on the result of this operation.</span></span>
+<span data-ttu-id="d4db1-119">Retorna um dos seguintes códigos de erro com base no resultado dessa operação.</span><span class="sxs-lookup"><span data-stu-id="d4db1-119">Returns one of the following error codes based on the result of this operation.</span></span>
 
 
 
-| <span data-ttu-id="ae1e0-120">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="ae1e0-120">Return code</span></span>                                                                                                    | <span data-ttu-id="ae1e0-121">Description</span><span class="sxs-lookup"><span data-stu-id="ae1e0-121">Description</span></span>                             |
+| <span data-ttu-id="d4db1-120">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="d4db1-120">Return code</span></span>                                                                                                    | <span data-ttu-id="d4db1-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4db1-121">Description</span></span>                             |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <span data-ttu-id="ae1e0-122"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="ae1e0-122"><dt>**S\_OK** </dt></span></span> </dl>                          | <span data-ttu-id="ae1e0-123">A operação teve êxito.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-123">The operation is successful.</span></span><br/> |
-| <dl> <span data-ttu-id="ae1e0-124"><dt>**configuração de NAP \_ E \_ SHV \_ \_ não \_ encontrada**</dt></span><span class="sxs-lookup"><span data-stu-id="ae1e0-124"><dt>**NAP\_E\_SHV\_CONFIG\_NOT\_FOUND**</dt></span></span> </dl> | <span data-ttu-id="ae1e0-125">Não foi possível encontrar *configid* .</span><span class="sxs-lookup"><span data-stu-id="ae1e0-125">*ConfigID* cannot be found.</span></span><br/>  |
+| <dl> <span data-ttu-id="d4db1-122"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="d4db1-122"><dt>**S\_OK** </dt></span></span> </dl>                          | <span data-ttu-id="d4db1-123">A operação teve êxito.</span><span class="sxs-lookup"><span data-stu-id="d4db1-123">The operation is successful.</span></span><br/> |
+| <dl> <span data-ttu-id="d4db1-124"><dt>**configuração de NAP \_ E \_ SHV \_ \_ não \_ encontrada**</dt></span><span class="sxs-lookup"><span data-stu-id="d4db1-124"><dt>**NAP\_E\_SHV\_CONFIG\_NOT\_FOUND**</dt></span></span> </dl> | <span data-ttu-id="d4db1-125">Não foi possível encontrar *configid* .</span><span class="sxs-lookup"><span data-stu-id="d4db1-125">*ConfigID* cannot be found.</span></span><br/>  |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="ae1e0-126">Comentários</span><span class="sxs-lookup"><span data-stu-id="ae1e0-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d4db1-126">Comentários</span><span class="sxs-lookup"><span data-stu-id="d4db1-126">Remarks</span></span>
 
-<span data-ttu-id="ae1e0-127">O método [**newconfig**](inapcomponentconfig3-newconfig.md) deve ser usado para alocar dados de configuração para *configid* antes que este método possa ser chamado.</span><span class="sxs-lookup"><span data-stu-id="ae1e0-127">The [**NewConfig**](inapcomponentconfig3-newconfig.md) method must be used to allocate configuration data for *ConfigID* before this method can be called.</span></span>
+<span data-ttu-id="d4db1-127">O método [**newconfig**](inapcomponentconfig3-newconfig.md) deve ser usado para alocar dados de configuração para *configid* antes que este método possa ser chamado.</span><span class="sxs-lookup"><span data-stu-id="d4db1-127">The [**NewConfig**](inapcomponentconfig3-newconfig.md) method must be used to allocate configuration data for *ConfigID* before this method can be called.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="ae1e0-128">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ae1e0-128">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d4db1-128">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d4db1-128">Requirements</span></span>
 
 
 
-| <span data-ttu-id="ae1e0-129">Requisito</span><span class="sxs-lookup"><span data-stu-id="ae1e0-129">Requirement</span></span> | <span data-ttu-id="ae1e0-130">Valor</span><span class="sxs-lookup"><span data-stu-id="ae1e0-130">Value</span></span> |
+| <span data-ttu-id="d4db1-129">Requisito</span><span class="sxs-lookup"><span data-stu-id="d4db1-129">Requirement</span></span> | <span data-ttu-id="d4db1-130">Valor</span><span class="sxs-lookup"><span data-stu-id="d4db1-130">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ae1e0-131">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ae1e0-131">Minimum supported client</span></span><br/> | <span data-ttu-id="ae1e0-132">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="ae1e0-132">None supported</span></span><br/>                                                                |
-| <span data-ttu-id="ae1e0-133">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ae1e0-133">Minimum supported server</span></span><br/> | <span data-ttu-id="ae1e0-134">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="ae1e0-134">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="ae1e0-135">parâmetro</span><span class="sxs-lookup"><span data-stu-id="ae1e0-135">Header</span></span><br/>                   | <dl> <span data-ttu-id="ae1e0-136"><dt>NapCommon. h</dt></span><span class="sxs-lookup"><span data-stu-id="ae1e0-136"><dt>NapCommon.h</dt></span></span> </dl>   |
-| <span data-ttu-id="ae1e0-137">INSERI</span><span class="sxs-lookup"><span data-stu-id="ae1e0-137">IDL</span></span><br/>                      | <dl> <span data-ttu-id="ae1e0-138"><dt>NapCommon. idl</dt></span><span class="sxs-lookup"><span data-stu-id="ae1e0-138"><dt>NapCommon.idl</dt></span></span> </dl> |
+| <span data-ttu-id="d4db1-131">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d4db1-131">Minimum supported client</span></span><br/> | <span data-ttu-id="d4db1-132">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="d4db1-132">None supported</span></span><br/>                                                                |
+| <span data-ttu-id="d4db1-133">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d4db1-133">Minimum supported server</span></span><br/> | <span data-ttu-id="d4db1-134">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="d4db1-134">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="d4db1-135">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d4db1-135">Header</span></span><br/>                   | <dl> <span data-ttu-id="d4db1-136"><dt>NapCommon. h</dt></span><span class="sxs-lookup"><span data-stu-id="d4db1-136"><dt>NapCommon.h</dt></span></span> </dl>   |
+| <span data-ttu-id="d4db1-137">INSERI</span><span class="sxs-lookup"><span data-stu-id="d4db1-137">IDL</span></span><br/>                      | <dl> <span data-ttu-id="d4db1-138"><dt>NapCommon. idl</dt></span><span class="sxs-lookup"><span data-stu-id="d4db1-138"><dt>NapCommon.idl</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="ae1e0-139">Consulte também</span><span class="sxs-lookup"><span data-stu-id="ae1e0-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d4db1-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="d4db1-139">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ae1e0-140">**INapComponentConfig3**</span><span class="sxs-lookup"><span data-stu-id="ae1e0-140">**INapComponentConfig3**</span></span>](inapcomponentconfig3.md)
+[<span data-ttu-id="d4db1-140">**INapComponentConfig3**</span><span class="sxs-lookup"><span data-stu-id="d4db1-140">**INapComponentConfig3**</span></span>](inapcomponentconfig3.md)
 </dt> </dl>
 
  

@@ -11,31 +11,31 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635499"
 ---
-# <a name="uiaelementdoesnotparenttoroot"></a><span data-ttu-id="6eeef-103">UiaElementDoesNotParentToRoot</span><span class="sxs-lookup"><span data-stu-id="6eeef-103">UiaElementDoesNotParentToRoot</span></span>
+# <a name="uiaelementdoesnotparenttoroot"></a><span data-ttu-id="d5c84-103">UiaElementDoesNotParentToRoot</span><span class="sxs-lookup"><span data-stu-id="d5c84-103">UiaElementDoesNotParentToRoot</span></span>
 
-## <a name="text"></a><span data-ttu-id="6eeef-104">Texto</span><span class="sxs-lookup"><span data-stu-id="6eeef-104">Text</span></span>
+## <a name="text"></a><span data-ttu-id="d5c84-104">Texto</span><span class="sxs-lookup"><span data-stu-id="d5c84-104">Text</span></span>
 
-<span data-ttu-id="6eeef-105">A cadeia pai do elemento não vai para o elemento raiz</span><span class="sxs-lookup"><span data-stu-id="6eeef-105">Element's parent chain does not go to the Root Element</span></span>
+<span data-ttu-id="d5c84-105">A cadeia pai do elemento não vai para o elemento raiz</span><span class="sxs-lookup"><span data-stu-id="d5c84-105">Element's parent chain does not go to the Root Element</span></span>
 
-## <a name="type"></a><span data-ttu-id="6eeef-106">Type</span><span class="sxs-lookup"><span data-stu-id="6eeef-106">Type</span></span>
+## <a name="type"></a><span data-ttu-id="d5c84-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="d5c84-106">Type</span></span>
 
-<span data-ttu-id="6eeef-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="6eeef-107">Warning</span></span>
+<span data-ttu-id="d5c84-107">Aviso</span><span class="sxs-lookup"><span data-stu-id="d5c84-107">Warning</span></span>
 
-## <a name="description"></a><span data-ttu-id="6eeef-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="6eeef-108">Description</span></span>
+## <a name="description"></a><span data-ttu-id="d5c84-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5c84-108">Description</span></span>
 
-<span data-ttu-id="6eeef-109">A navegação do elemento fornecido para a raiz da árvore de interface do usuário está quebrada.</span><span class="sxs-lookup"><span data-stu-id="6eeef-109">The navigation from the given element to the UI tree root is broken.</span></span>
+<span data-ttu-id="d5c84-109">A navegação do elemento fornecido para a raiz da árvore de interface do usuário está quebrada.</span><span class="sxs-lookup"><span data-stu-id="d5c84-109">The navigation from the given element to the UI tree root is broken.</span></span>
 
-<span data-ttu-id="6eeef-110">Esse problema pode causar resultados imprevisíveis para um aplicativo que tenta navegar na árvore de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="6eeef-110">This issue can cause unpredictable results for an application that tries to navigate the UI tree.</span></span>
+<span data-ttu-id="d5c84-110">Esse problema pode causar resultados imprevisíveis para um aplicativo que tenta navegar na árvore de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="d5c84-110">This issue can cause unpredictable results for an application that tries to navigate the UI tree.</span></span>
 
-## <a name="possible-causes"></a><span data-ttu-id="6eeef-111">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="6eeef-111">Possible causes</span></span>
+## <a name="possible-causes"></a><span data-ttu-id="d5c84-111">Possíveis causas</span><span class="sxs-lookup"><span data-stu-id="d5c84-111">Possible causes</span></span>
 
-<span data-ttu-id="6eeef-112">Implementação incorreta da hierarquia pai filho da árvore de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="6eeef-112">Incorrect implementation of the UI tree parent child hierarchy.</span></span>
+<span data-ttu-id="d5c84-112">Implementação incorreta da hierarquia pai filho da árvore de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="d5c84-112">Incorrect implementation of the UI tree parent child hierarchy.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="6eeef-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6eeef-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d5c84-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d5c84-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6eeef-114">**IUIAutomationTreeWalker**</span><span class="sxs-lookup"><span data-stu-id="6eeef-114">**IUIAutomationTreeWalker**</span></span>](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker)
+[<span data-ttu-id="d5c84-114">**IUIAutomationTreeWalker**</span><span class="sxs-lookup"><span data-stu-id="d5c84-114">**IUIAutomationTreeWalker**</span></span>](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker)
 </dt> </dl>
 
  

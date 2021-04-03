@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916256"
 ---
-# <a name="http-server-api-version-20-reference"></a><span data-ttu-id="f6d10-103">Referência da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="f6d10-103">HTTP Server API Version 2.0 Reference</span></span>
+# <a name="http-server-api-version-20-reference"></a><span data-ttu-id="18153-103">Referência da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="18153-103">HTTP Server API Version 2.0 Reference</span></span>
 
-<span data-ttu-id="f6d10-104">As seguintes funções, estruturas e enumerações são usadas para implementar aplicativos que usam a API HTTP versão 2,0.</span><span class="sxs-lookup"><span data-stu-id="f6d10-104">The following functions, structures, and enumerations are used to implement applications that use the HTTP version 2.0 API.</span></span>
+<span data-ttu-id="18153-104">As seguintes funções, estruturas e enumerações são usadas para implementar aplicativos que usam a API HTTP versão 2,0.</span><span class="sxs-lookup"><span data-stu-id="18153-104">The following functions, structures, and enumerations are used to implement applications that use the HTTP version 2.0 API.</span></span>
 
--   [<span data-ttu-id="f6d10-105">Tipos de dados da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="f6d10-105">HTTP Server API Version 2.0 Data Types</span></span>](http-server-api-version-2-0-data-types.md)
--   [<span data-ttu-id="f6d10-106">Funções da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="f6d10-106">HTTP Server API Version 2.0 Functions</span></span>](http-server-api-version-2-0-functions.md)
--   [<span data-ttu-id="f6d10-107">Estruturas da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="f6d10-107">HTTP Server API Version 2.0 Structures</span></span>](http-server-api-version-2-0-structures.md)
--   [<span data-ttu-id="f6d10-108">Macros da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="f6d10-108">HTTP Server API Version 2.0 Macros</span></span>](http-server-api-version-2-0-macros.md)
--   [<span data-ttu-id="f6d10-109">Tipos de enumeração da API do servidor HTTP versão 2,0 \_</span><span class="sxs-lookup"><span data-stu-id="f6d10-109">HTTP Server API Version 2.0\_Enumeration Types</span></span>](http-server-api-version-2-0-enumeration-types.md)
+-   [<span data-ttu-id="18153-105">Tipos de dados da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="18153-105">HTTP Server API Version 2.0 Data Types</span></span>](http-server-api-version-2-0-data-types.md)
+-   [<span data-ttu-id="18153-106">Funções da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="18153-106">HTTP Server API Version 2.0 Functions</span></span>](http-server-api-version-2-0-functions.md)
+-   [<span data-ttu-id="18153-107">Estruturas da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="18153-107">HTTP Server API Version 2.0 Structures</span></span>](http-server-api-version-2-0-structures.md)
+-   [<span data-ttu-id="18153-108">Macros da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="18153-108">HTTP Server API Version 2.0 Macros</span></span>](http-server-api-version-2-0-macros.md)
+-   [<span data-ttu-id="18153-109">Tipos de enumeração da API do servidor HTTP versão 2,0 \_</span><span class="sxs-lookup"><span data-stu-id="18153-109">HTTP Server API Version 2.0\_Enumeration Types</span></span>](http-server-api-version-2-0-enumeration-types.md)
 
  
 

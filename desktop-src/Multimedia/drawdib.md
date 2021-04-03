@@ -20,15 +20,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916231"
 ---
-# <a name="drawdib"></a><span data-ttu-id="a6bfa-111">DrawDib</span><span class="sxs-lookup"><span data-stu-id="a6bfa-111">DrawDib</span></span>
+# <a name="drawdib"></a><span data-ttu-id="cf162-111">DrawDib</span><span class="sxs-lookup"><span data-stu-id="cf162-111">DrawDib</span></span>
 
-<span data-ttu-id="a6bfa-112">As funções DrawDib fornecem recursos de alto desempenho de desenho de imagem para bitmaps independentes de dispositivo (DIBs).</span><span class="sxs-lookup"><span data-stu-id="a6bfa-112">The DrawDib functions provide high performance image-drawing capabilities for device-independent bitmaps (DIBs).</span></span> <span data-ttu-id="a6bfa-113">As funções DrawDib dão suporte a DIBs de profundidades de imagem de 8 bits, de 16 bits, de 24 bits e de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="a6bfa-113">DrawDib functions support DIBs of 8-bit, 16-bit, 24-bit, and 32-bit image depths.</span></span>
+<span data-ttu-id="cf162-112">As funções DrawDib fornecem recursos de alto desempenho de desenho de imagem para bitmaps independentes de dispositivo (DIBs).</span><span class="sxs-lookup"><span data-stu-id="cf162-112">The DrawDib functions provide high performance image-drawing capabilities for device-independent bitmaps (DIBs).</span></span> <span data-ttu-id="cf162-113">As funções DrawDib dão suporte a DIBs de profundidades de imagem de 8 bits, de 16 bits, de 24 bits e de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="cf162-113">DrawDib functions support DIBs of 8-bit, 16-bit, 24-bit, and 32-bit image depths.</span></span>
 
-<span data-ttu-id="a6bfa-114">As funções DrawDib gravam diretamente na memória de vídeo.</span><span class="sxs-lookup"><span data-stu-id="a6bfa-114">DrawDib functions write directly to video memory.</span></span> <span data-ttu-id="a6bfa-115">Eles não dependem de funções da interface gráfica do dispositivo (GDI).</span><span class="sxs-lookup"><span data-stu-id="a6bfa-115">They do not rely on functions of the graphics device interface (GDI).</span></span>
+<span data-ttu-id="cf162-114">As funções DrawDib gravam diretamente na memória de vídeo.</span><span class="sxs-lookup"><span data-stu-id="cf162-114">DrawDib functions write directly to video memory.</span></span> <span data-ttu-id="cf162-115">Eles não dependem de funções da interface gráfica do dispositivo (GDI).</span><span class="sxs-lookup"><span data-stu-id="cf162-115">They do not rely on functions of the graphics device interface (GDI).</span></span>
 
--   [<span data-ttu-id="a6bfa-116">Sobre as funções DrawDib</span><span class="sxs-lookup"><span data-stu-id="a6bfa-116">About the DrawDib Functions</span></span>](about-the-drawdib-functions.md)
--   [<span data-ttu-id="a6bfa-117">Usando DrawDib</span><span class="sxs-lookup"><span data-stu-id="a6bfa-117">Using DrawDib</span></span>](using-drawdib.md)
--   [<span data-ttu-id="a6bfa-118">Referência de DrawDib</span><span class="sxs-lookup"><span data-stu-id="a6bfa-118">DrawDib Reference</span></span>](drawdib-reference.md)
+-   [<span data-ttu-id="cf162-116">Sobre as funções DrawDib</span><span class="sxs-lookup"><span data-stu-id="cf162-116">About the DrawDib Functions</span></span>](about-the-drawdib-functions.md)
+-   [<span data-ttu-id="cf162-117">Usando DrawDib</span><span class="sxs-lookup"><span data-stu-id="cf162-117">Using DrawDib</span></span>](using-drawdib.md)
+-   [<span data-ttu-id="cf162-118">Referência de DrawDib</span><span class="sxs-lookup"><span data-stu-id="cf162-118">DrawDib Reference</span></span>](drawdib-reference.md)
 
  
 

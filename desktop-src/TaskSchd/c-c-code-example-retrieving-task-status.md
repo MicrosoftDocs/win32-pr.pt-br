@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916239"
 ---
-# <a name="cc-code-example-retrieving-task-status"></a><span data-ttu-id="b18e6-106">Exemplo de código do C/C++: Recuperando o status da tarefa</span><span class="sxs-lookup"><span data-stu-id="b18e6-106">C/C++ Code Example: Retrieving Task Status</span></span>
+# <a name="cc-code-example-retrieving-task-status"></a><span data-ttu-id="63005-106">Exemplo de código do C/C++: Recuperando o status da tarefa</span><span class="sxs-lookup"><span data-stu-id="63005-106">C/C++ Code Example: Retrieving Task Status</span></span>
 
-<span data-ttu-id="b18e6-107">Este exemplo recupera o status atual da tarefa e o exibe na tela.</span><span class="sxs-lookup"><span data-stu-id="b18e6-107">This example retrieves the current status of the task and displays it on the screen.</span></span> <span data-ttu-id="b18e6-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="b18e6-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="63005-107">Este exemplo recupera o status atual da tarefa e o exibe na tela.</span><span class="sxs-lookup"><span data-stu-id="63005-107">This example retrieves the current status of the task and displays it on the screen.</span></span> <span data-ttu-id="63005-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="63005-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -136,11 +136,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="b18e6-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b18e6-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="63005-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="63005-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b18e6-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="b18e6-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="63005-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="63005-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

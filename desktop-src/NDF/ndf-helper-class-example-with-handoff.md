@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916264"
 ---
-# <a name="ndf-helper-class-extension-with-handoff"></a><span data-ttu-id="eabe6-103">Extensão de classe auxiliar NDF com entrega</span><span class="sxs-lookup"><span data-stu-id="eabe6-103">NDF Helper Class Extension with Handoff</span></span>
+# <a name="ndf-helper-class-extension-with-handoff"></a><span data-ttu-id="96048-103">Extensão de classe auxiliar NDF com entrega</span><span class="sxs-lookup"><span data-stu-id="96048-103">NDF Helper Class Extension with Handoff</span></span>
 
-<span data-ttu-id="eabe6-104">Essa classe auxiliar tem uma dependência de baixa integridade no SimpleFileHelperClass codificado no primeiro exemplo.</span><span class="sxs-lookup"><span data-stu-id="eabe6-104">This Helper Class has a low-health dependency on the SimpleFileHelperClass coded in the first example.</span></span>
+<span data-ttu-id="96048-104">Essa classe auxiliar tem uma dependência de baixa integridade no SimpleFileHelperClass codificado no primeiro exemplo.</span><span class="sxs-lookup"><span data-stu-id="96048-104">This Helper Class has a low-health dependency on the SimpleFileHelperClass coded in the first example.</span></span>
 
-<span data-ttu-id="eabe6-105">A segunda classe auxiliar de entrega é uma classe auxiliar de passagem simples que não executa nenhum diagnóstico em si.</span><span class="sxs-lookup"><span data-stu-id="eabe6-105">The second handoff helper class is a simple pass-through helper class which does not perform any diagnosis itself.</span></span> <span data-ttu-id="eabe6-106">Em vez disso, ele sempre gera uma hipótese de integridade inferior para o SimpleFileHelperClass.</span><span class="sxs-lookup"><span data-stu-id="eabe6-106">Instead, it always generates lower health hypothesis for the SimpleFileHelperClass.</span></span> <span data-ttu-id="eabe6-107">Isso é útil para servir como um espaço reservado para adição futura da funcionalidade de diagnóstico nessa classe auxiliar.</span><span class="sxs-lookup"><span data-stu-id="eabe6-107">This is useful in serving as a placeholder for future addition of diagnostics capability in this helper class.</span></span> <span data-ttu-id="eabe6-108">A classe auxiliar de entrega implementa dois métodos.</span><span class="sxs-lookup"><span data-stu-id="eabe6-108">The handoff helper class implements two methods.</span></span>
+<span data-ttu-id="96048-105">A segunda classe auxiliar de entrega é uma classe auxiliar de passagem simples que não executa nenhum diagnóstico em si.</span><span class="sxs-lookup"><span data-stu-id="96048-105">The second handoff helper class is a simple pass-through helper class which does not perform any diagnosis itself.</span></span> <span data-ttu-id="96048-106">Em vez disso, ele sempre gera uma hipótese de integridade inferior para o SimpleFileHelperClass.</span><span class="sxs-lookup"><span data-stu-id="96048-106">Instead, it always generates lower health hypothesis for the SimpleFileHelperClass.</span></span> <span data-ttu-id="96048-107">Isso é útil para servir como um espaço reservado para adição futura da funcionalidade de diagnóstico nessa classe auxiliar.</span><span class="sxs-lookup"><span data-stu-id="96048-107">This is useful in serving as a placeholder for future addition of diagnostics capability in this helper class.</span></span> <span data-ttu-id="96048-108">A classe auxiliar de entrega implementa dois métodos.</span><span class="sxs-lookup"><span data-stu-id="96048-108">The handoff helper class implements two methods.</span></span>
 
-<span data-ttu-id="eabe6-109">O método LowHealth é usado para definir o status do diagnóstico como DS \_ indeterminado.</span><span class="sxs-lookup"><span data-stu-id="eabe6-109">The LowHealth method is used to set the Diagnosis Status to DS\_INDETERMINATE.</span></span> <span data-ttu-id="eabe6-110">Isso torna o NDF Call GetLowerHypotheses.</span><span class="sxs-lookup"><span data-stu-id="eabe6-110">This makes NDF call GetLowerHypotheses.</span></span>
+<span data-ttu-id="96048-109">O método LowHealth é usado para definir o status do diagnóstico como DS \_ indeterminado.</span><span class="sxs-lookup"><span data-stu-id="96048-109">The LowHealth method is used to set the Diagnosis Status to DS\_INDETERMINATE.</span></span> <span data-ttu-id="96048-110">Isso torna o NDF Call GetLowerHypotheses.</span><span class="sxs-lookup"><span data-stu-id="96048-110">This makes NDF call GetLowerHypotheses.</span></span>
 
 
 ```C++
@@ -38,7 +38,7 @@ HRESULT HandOffTestHelperClass::LowHealth(
 
 
 
-<span data-ttu-id="eabe6-111">Em seguida, GetLowerHypotheses é implementado para informar ao NDF qual classe auxiliar deve ser diagnosticada.</span><span class="sxs-lookup"><span data-stu-id="eabe6-111">Next, GetLowerHypotheses is implemented to tell NDF which Helper Class to diagnose.</span></span>
+<span data-ttu-id="96048-111">Em seguida, GetLowerHypotheses é implementado para informar ao NDF qual classe auxiliar deve ser diagnosticada.</span><span class="sxs-lookup"><span data-stu-id="96048-111">Next, GetLowerHypotheses is implemented to tell NDF which Helper Class to diagnose.</span></span>
 
 
 ```C++

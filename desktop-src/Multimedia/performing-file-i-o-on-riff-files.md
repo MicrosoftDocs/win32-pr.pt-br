@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916161"
 ---
-# <a name="performing-file-io-on-riff-files"></a><span data-ttu-id="cc468-112">Executando e/s de arquivo em arquivos RIFF</span><span class="sxs-lookup"><span data-stu-id="cc468-112">Performing File I/O on RIFF Files</span></span>
+# <a name="performing-file-io-on-riff-files"></a><span data-ttu-id="2217d-112">Executando e/s de arquivo em arquivos RIFF</span><span class="sxs-lookup"><span data-stu-id="2217d-112">Performing File I/O on RIFF Files</span></span>
 
-<span data-ttu-id="cc468-113">O exemplo a seguir mostra como abrir um arquivo RIFF para e/s armazenada em buffer, bem como como descender, Ascend e ler partes "RIFF".</span><span class="sxs-lookup"><span data-stu-id="cc468-113">The following example shows how to open a RIFF file for buffered I/O, as well as how to descend, ascend, and read "RIFF" chunks.</span></span>
+<span data-ttu-id="2217d-113">O exemplo a seguir mostra como abrir um arquivo RIFF para e/s armazenada em buffer, bem como como descender, Ascend e ler partes "RIFF".</span><span class="sxs-lookup"><span data-stu-id="2217d-113">The following example shows how to open a RIFF file for buffered I/O, as well as how to descend, ascend, and read "RIFF" chunks.</span></span>
 
 
 ```C++

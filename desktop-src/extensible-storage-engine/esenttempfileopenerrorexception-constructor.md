@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836920"
 ---
-# <a name="esenttempfileopenerrorexception-constructor"></a><span data-ttu-id="16fe1-103">Construtor EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="16fe1-103">EsentTempFileOpenErrorException constructor</span></span>
+# <a name="esenttempfileopenerrorexception-constructor"></a><span data-ttu-id="81ad6-103">Construtor EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="81ad6-103">EsentTempFileOpenErrorException constructor</span></span>
 
-<span data-ttu-id="16fe1-104">Inicializa uma nova instância da classe EsentTempFileOpenErrorException.</span><span class="sxs-lookup"><span data-stu-id="16fe1-104">Initializes a new instance of the EsentTempFileOpenErrorException class.</span></span>
+<span data-ttu-id="81ad6-104">Inicializa uma nova instância da classe EsentTempFileOpenErrorException.</span><span class="sxs-lookup"><span data-stu-id="81ad6-104">Initializes a new instance of the EsentTempFileOpenErrorException class.</span></span>
 
-<span data-ttu-id="16fe1-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="16fe1-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="16fe1-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="16fe1-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="81ad6-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="81ad6-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="81ad6-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="81ad6-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="16fe1-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="16fe1-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="81ad6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="81ad6-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTempFileOpenErrorException()
 public EsentTempFileOpenErrorException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="16fe1-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="16fe1-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="81ad6-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="81ad6-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="16fe1-109">Referência</span><span class="sxs-lookup"><span data-stu-id="16fe1-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="81ad6-109">Referência</span><span class="sxs-lookup"><span data-stu-id="81ad6-109">Reference</span></span>
 
-[<span data-ttu-id="16fe1-110">Classe EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="16fe1-110">EsentTempFileOpenErrorException class</span></span>](./esenttempfileopenerrorexception-class.md)
+[<span data-ttu-id="81ad6-110">Classe EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="81ad6-110">EsentTempFileOpenErrorException class</span></span>](./esenttempfileopenerrorexception-class.md)
 
-[<span data-ttu-id="16fe1-111">Membros do EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="16fe1-111">EsentTempFileOpenErrorException members</span></span>](./esenttempfileopenerrorexception-members.md)
+[<span data-ttu-id="81ad6-111">Membros do EsentTempFileOpenErrorException</span><span class="sxs-lookup"><span data-stu-id="81ad6-111">EsentTempFileOpenErrorException members</span></span>](./esenttempfileopenerrorexception-members.md)
 
-[<span data-ttu-id="16fe1-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="16fe1-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="81ad6-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="81ad6-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

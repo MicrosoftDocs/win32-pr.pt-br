@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103664022"
 ---
-# <a name="d3drect-structure"></a><span data-ttu-id="1f389-103">Estrutura D3DRECT</span><span class="sxs-lookup"><span data-stu-id="1f389-103">D3DRECT structure</span></span>
+# <a name="d3drect-structure"></a><span data-ttu-id="1763d-103">Estrutura D3DRECT</span><span class="sxs-lookup"><span data-stu-id="1763d-103">D3DRECT structure</span></span>
 
-<span data-ttu-id="1f389-104">Define um retângulo.</span><span class="sxs-lookup"><span data-stu-id="1f389-104">Defines a rectangle.</span></span>
+<span data-ttu-id="1763d-104">Define um retângulo.</span><span class="sxs-lookup"><span data-stu-id="1763d-104">Defines a rectangle.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1f389-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1f389-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1763d-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1763d-105">Syntax</span></span>
 
 
 ```C++
@@ -38,72 +38,72 @@ typedef struct D3DRECT {
 
 
 
-## <a name="members"></a><span data-ttu-id="1f389-106">Membros</span><span class="sxs-lookup"><span data-stu-id="1f389-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="1763d-106">Membros</span><span class="sxs-lookup"><span data-stu-id="1763d-106">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="1f389-107">**X1**</span><span class="sxs-lookup"><span data-stu-id="1f389-107">**x1**</span></span>
+<span data-ttu-id="1763d-107">**X1**</span><span class="sxs-lookup"><span data-stu-id="1763d-107">**x1**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1f389-108">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1f389-108">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="1763d-108">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1763d-108">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="1f389-109">A coordenada X do canto superior esquerdo do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1f389-109">The x-coordinate of the upper-left corner of the rectangle.</span></span>
+<span data-ttu-id="1763d-109">A coordenada X do canto superior esquerdo do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1763d-109">The x-coordinate of the upper-left corner of the rectangle.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1f389-110">**Y1**</span><span class="sxs-lookup"><span data-stu-id="1f389-110">**y1**</span></span>
+<span data-ttu-id="1763d-110">**Y1**</span><span class="sxs-lookup"><span data-stu-id="1763d-110">**y1**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1f389-111">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1f389-111">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="1763d-111">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1763d-111">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="1f389-112">A coordenada y do canto superior esquerdo do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1f389-112">The y-coordinate of the upper-left corner of the rectangle.</span></span>
+<span data-ttu-id="1763d-112">A coordenada y do canto superior esquerdo do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1763d-112">The y-coordinate of the upper-left corner of the rectangle.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1f389-113">**X2**</span><span class="sxs-lookup"><span data-stu-id="1f389-113">**x2**</span></span>
+<span data-ttu-id="1763d-113">**X2**</span><span class="sxs-lookup"><span data-stu-id="1763d-113">**x2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1f389-114">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1f389-114">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="1763d-114">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1763d-114">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="1f389-115">A coordenada x do canto inferior direito do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1f389-115">The x-coordinate of the lower-right corner of the rectangle.</span></span>
+<span data-ttu-id="1763d-115">A coordenada x do canto inferior direito do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1763d-115">The x-coordinate of the lower-right corner of the rectangle.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1f389-116">**Y2**</span><span class="sxs-lookup"><span data-stu-id="1f389-116">**y2**</span></span>
+<span data-ttu-id="1763d-116">**Y2**</span><span class="sxs-lookup"><span data-stu-id="1763d-116">**y2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1f389-117">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1f389-117">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="1763d-117">Tipo: **[ **longo**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="1763d-117">Type: **[**LONG**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="1f389-118">A coordenada y do canto inferior direito do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1f389-118">The y-coordinate of the lower-right corner of the rectangle.</span></span>
+<span data-ttu-id="1763d-118">A coordenada y do canto inferior direito do retângulo.</span><span class="sxs-lookup"><span data-stu-id="1763d-118">The y-coordinate of the lower-right corner of the rectangle.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="1f389-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1f389-119">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="1763d-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1763d-119">Requirements</span></span>
 
 
 
-| <span data-ttu-id="1f389-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="1f389-120">Requirement</span></span> | <span data-ttu-id="1f389-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1f389-121">Value</span></span> |
+| <span data-ttu-id="1763d-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="1763d-120">Requirement</span></span> | <span data-ttu-id="1763d-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1763d-121">Value</span></span> |
 |-------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="1f389-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="1f389-122">Header</span></span><br/> | <dl> <span data-ttu-id="1f389-123"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="1f389-123"><dt>D3D9Types.h</dt></span></span> </dl> |
+| <span data-ttu-id="1763d-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="1763d-122">Header</span></span><br/> | <dl> <span data-ttu-id="1763d-123"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="1763d-123"><dt>D3D9Types.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="1f389-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="1f389-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1763d-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="1763d-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1f389-125">Estruturas do Direct3D</span><span class="sxs-lookup"><span data-stu-id="1f389-125">Direct3D Structures</span></span>](dx9-graphics-reference-d3d-structures.md)
+[<span data-ttu-id="1763d-125">Estruturas do Direct3D</span><span class="sxs-lookup"><span data-stu-id="1763d-125">Direct3D Structures</span></span>](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
-[<span data-ttu-id="1f389-126">**Formatação**</span><span class="sxs-lookup"><span data-stu-id="1f389-126">**Clear**</span></span>](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear)
+[<span data-ttu-id="1763d-126">**Formatação**</span><span class="sxs-lookup"><span data-stu-id="1763d-126">**Clear**</span></span>](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear)
 </dt> </dl>
 
  

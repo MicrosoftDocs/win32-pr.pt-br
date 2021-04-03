@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644798"
 ---
-# <a name="imstscaxeventsonrequestleavefullscreen-method"></a><span data-ttu-id="7a6c7-106">Método IMsTscAxEvents:: OnRequestLeaveFullScreen</span><span class="sxs-lookup"><span data-stu-id="7a6c7-106">IMsTscAxEvents::OnRequestLeaveFullScreen method</span></span>
+# <a name="imstscaxeventsonrequestleavefullscreen-method"></a><span data-ttu-id="2f1bc-106">Método IMsTscAxEvents:: OnRequestLeaveFullScreen</span><span class="sxs-lookup"><span data-stu-id="2f1bc-106">IMsTscAxEvents::OnRequestLeaveFullScreen method</span></span>
 
-<span data-ttu-id="7a6c7-107">Chamado quando o cliente solicita a saída do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.</span><span class="sxs-lookup"><span data-stu-id="7a6c7-107">Called when the client requests to leave full-screen mode and the [**IMsTscAdvancedSettings::put\_ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) property has been set to a nonzero value.</span></span>
+<span data-ttu-id="2f1bc-107">Chamado quando o cliente solicita a saída do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.</span><span class="sxs-lookup"><span data-stu-id="2f1bc-107">Called when the client requests to leave full-screen mode and the [**IMsTscAdvancedSettings::put\_ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) property has been set to a nonzero value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7a6c7-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7a6c7-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2f1bc-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2f1bc-108">Syntax</span></span>
 
 
 ```C++
@@ -37,39 +37,39 @@ void OnRequestLeaveFullScreen();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="7a6c7-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7a6c7-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2f1bc-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2f1bc-109">Parameters</span></span>
 
-<span data-ttu-id="7a6c7-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="7a6c7-110">This method has no parameters.</span></span>
+<span data-ttu-id="2f1bc-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="2f1bc-110">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="7a6c7-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7a6c7-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2f1bc-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2f1bc-111">Return value</span></span>
 
-<span data-ttu-id="7a6c7-112">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="7a6c7-112">This method does not return a value.</span></span>
+<span data-ttu-id="2f1bc-112">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="2f1bc-112">This method does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="7a6c7-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="7a6c7-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2f1bc-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="2f1bc-113">Remarks</span></span>
 
-<span data-ttu-id="7a6c7-114">No modo de tela inteira manipulado por contêiner, o contêiner deve deixar o modo de tela inteira padrão em resposta a esse evento.</span><span class="sxs-lookup"><span data-stu-id="7a6c7-114">In container-handled full-screen mode, the container should leave standard full-screen mode in response to this event.</span></span>
+<span data-ttu-id="2f1bc-114">No modo de tela inteira manipulado por contêiner, o contêiner deve deixar o modo de tela inteira padrão em resposta a esse evento.</span><span class="sxs-lookup"><span data-stu-id="2f1bc-114">In container-handled full-screen mode, the container should leave standard full-screen mode in response to this event.</span></span>
 
-<span data-ttu-id="7a6c7-115">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="7a6c7-115">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
+<span data-ttu-id="2f1bc-115">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="2f1bc-115">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7a6c7-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7a6c7-116">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2f1bc-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2f1bc-116">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7a6c7-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="7a6c7-117">Requirement</span></span> | <span data-ttu-id="7a6c7-118">Valor</span><span class="sxs-lookup"><span data-stu-id="7a6c7-118">Value</span></span> |
+| <span data-ttu-id="2f1bc-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="2f1bc-117">Requirement</span></span> | <span data-ttu-id="2f1bc-118">Valor</span><span class="sxs-lookup"><span data-stu-id="2f1bc-118">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="7a6c7-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7a6c7-119">Minimum supported client</span></span><br/> | <span data-ttu-id="7a6c7-120">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="7a6c7-120">Windows Vista</span></span><br/>                                                               |
-| <span data-ttu-id="7a6c7-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7a6c7-121">Minimum supported server</span></span><br/> | <span data-ttu-id="7a6c7-122">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="7a6c7-122">Windows Server 2008</span></span><br/>                                                         |
-| <span data-ttu-id="7a6c7-123">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="7a6c7-123">Type library</span></span><br/>             | <dl> <span data-ttu-id="7a6c7-124"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7a6c7-124"><dt>MsTscAx.dll</dt></span></span> </dl> |
-| <span data-ttu-id="7a6c7-125">DLL</span><span class="sxs-lookup"><span data-stu-id="7a6c7-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="7a6c7-126"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7a6c7-126"><dt>MsTscAx.dll</dt></span></span> </dl> |
-| <span data-ttu-id="7a6c7-127">IID</span><span class="sxs-lookup"><span data-stu-id="7a6c7-127">IID</span></span><br/>                      | <span data-ttu-id="7a6c7-128">IMsTscAxEvents é definido como 336d5562-efa8-482e-8cb3-c5c0fc7a7db6</span><span class="sxs-lookup"><span data-stu-id="7a6c7-128">IMsTscAxEvents is defined as 336d5562-efa8-482e-8cb3-c5c0fc7a7db6</span></span><br/>           |
+| <span data-ttu-id="2f1bc-119">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2f1bc-119">Minimum supported client</span></span><br/> | <span data-ttu-id="2f1bc-120">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="2f1bc-120">Windows Vista</span></span><br/>                                                               |
+| <span data-ttu-id="2f1bc-121">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2f1bc-121">Minimum supported server</span></span><br/> | <span data-ttu-id="2f1bc-122">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="2f1bc-122">Windows Server 2008</span></span><br/>                                                         |
+| <span data-ttu-id="2f1bc-123">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="2f1bc-123">Type library</span></span><br/>             | <dl> <span data-ttu-id="2f1bc-124"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2f1bc-124"><dt>MsTscAx.dll</dt></span></span> </dl> |
+| <span data-ttu-id="2f1bc-125">DLL</span><span class="sxs-lookup"><span data-stu-id="2f1bc-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="2f1bc-126"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2f1bc-126"><dt>MsTscAx.dll</dt></span></span> </dl> |
+| <span data-ttu-id="2f1bc-127">IID</span><span class="sxs-lookup"><span data-stu-id="2f1bc-127">IID</span></span><br/>                      | <span data-ttu-id="2f1bc-128">IMsTscAxEvents é definido como 336d5562-efa8-482e-8cb3-c5c0fc7a7db6</span><span class="sxs-lookup"><span data-stu-id="2f1bc-128">IMsTscAxEvents is defined as 336d5562-efa8-482e-8cb3-c5c0fc7a7db6</span></span><br/>           |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7a6c7-129">Consulte também</span><span class="sxs-lookup"><span data-stu-id="7a6c7-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2f1bc-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="2f1bc-129">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7a6c7-130">**IMsTscAxEvents**</span><span class="sxs-lookup"><span data-stu-id="7a6c7-130">**IMsTscAxEvents**</span></span>](imstscaxevents-interface.md)
+[<span data-ttu-id="2f1bc-130">**IMsTscAxEvents**</span><span class="sxs-lookup"><span data-stu-id="2f1bc-130">**IMsTscAxEvents**</span></span>](imstscaxevents-interface.md)
 </dt> </dl>
 
  

@@ -19,18 +19,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916196"
 ---
-# <a name="control-types"></a><span data-ttu-id="b915d-110">Tipos de controle</span><span class="sxs-lookup"><span data-stu-id="b915d-110">Control Types</span></span>
+# <a name="control-types"></a><span data-ttu-id="07583-110">Tipos de controle</span><span class="sxs-lookup"><span data-stu-id="07583-110">Control Types</span></span>
 
-<span data-ttu-id="b915d-111">Os serviços de mixer incluem as seguintes classes de controles padrão para associar a linhas de áudio:</span><span class="sxs-lookup"><span data-stu-id="b915d-111">The mixer services include the following classes of standard controls to associate with audio lines:</span></span>
+<span data-ttu-id="07583-111">Os serviços de mixer incluem as seguintes classes de controles padrão para associar a linhas de áudio:</span><span class="sxs-lookup"><span data-stu-id="07583-111">The mixer services include the following classes of standard controls to associate with audio lines:</span></span>
 
--   [<span data-ttu-id="b915d-112">Controles personalizados do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="b915d-112">Audio Mixer Custom Controls</span></span>](audio-mixer-custom-controls.md)
--   [<span data-ttu-id="b915d-113">Esmaecimentos</span><span class="sxs-lookup"><span data-stu-id="b915d-113">Faders</span></span>](faders.md)
--   [<span data-ttu-id="b915d-114">Listas</span><span class="sxs-lookup"><span data-stu-id="b915d-114">Lists</span></span>](lists.md)
--   [<span data-ttu-id="b915d-115">Medidores</span><span class="sxs-lookup"><span data-stu-id="b915d-115">Meters</span></span>](meters.md)
--   [<span data-ttu-id="b915d-116">Números</span><span class="sxs-lookup"><span data-stu-id="b915d-116">Numbers</span></span>](numbers.md)
--   [<span data-ttu-id="b915d-117">Controles deslizantes</span><span class="sxs-lookup"><span data-stu-id="b915d-117">Sliders</span></span>](sliders.md)
--   [<span data-ttu-id="b915d-118">Comutadores</span><span class="sxs-lookup"><span data-stu-id="b915d-118">Switches</span></span>](switches.md)
--   [<span data-ttu-id="b915d-119">Controles de tempo</span><span class="sxs-lookup"><span data-stu-id="b915d-119">Time Controls</span></span>](time-controls.md)
+-   [<span data-ttu-id="07583-112">Controles personalizados do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="07583-112">Audio Mixer Custom Controls</span></span>](audio-mixer-custom-controls.md)
+-   [<span data-ttu-id="07583-113">Esmaecimentos</span><span class="sxs-lookup"><span data-stu-id="07583-113">Faders</span></span>](faders.md)
+-   [<span data-ttu-id="07583-114">Listas</span><span class="sxs-lookup"><span data-stu-id="07583-114">Lists</span></span>](lists.md)
+-   [<span data-ttu-id="07583-115">Medidores</span><span class="sxs-lookup"><span data-stu-id="07583-115">Meters</span></span>](meters.md)
+-   [<span data-ttu-id="07583-116">Números</span><span class="sxs-lookup"><span data-stu-id="07583-116">Numbers</span></span>](numbers.md)
+-   [<span data-ttu-id="07583-117">Controles deslizantes</span><span class="sxs-lookup"><span data-stu-id="07583-117">Sliders</span></span>](sliders.md)
+-   [<span data-ttu-id="07583-118">Comutadores</span><span class="sxs-lookup"><span data-stu-id="07583-118">Switches</span></span>](switches.md)
+-   [<span data-ttu-id="07583-119">Controles de tempo</span><span class="sxs-lookup"><span data-stu-id="07583-119">Time Controls</span></span>](time-controls.md)
 
  
 

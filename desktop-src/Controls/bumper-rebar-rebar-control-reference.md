@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930405"
 ---
-# <a name="rebar-control-reference"></a><span data-ttu-id="fdef5-103">Referência de controle rebar</span><span class="sxs-lookup"><span data-stu-id="fdef5-103">Rebar Control Reference</span></span>
+# <a name="rebar-control-reference"></a><span data-ttu-id="0b59a-103">Referência de controle rebar</span><span class="sxs-lookup"><span data-stu-id="0b59a-103">Rebar Control Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="fdef5-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fdef5-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0b59a-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0b59a-104">In This Section</span></span>
 
--   [<span data-ttu-id="fdef5-105">Mensagens de controle de rebar</span><span class="sxs-lookup"><span data-stu-id="fdef5-105">Rebar Control Messages</span></span>](bumper-rebar-control-reference-messages.md)
--   [<span data-ttu-id="fdef5-106">Notificações de controle rebar</span><span class="sxs-lookup"><span data-stu-id="fdef5-106">Rebar Control Notifications</span></span>](bumper-rebar-control-reference-notifications.md)
--   [<span data-ttu-id="fdef5-107">Estruturas de controle rebar</span><span class="sxs-lookup"><span data-stu-id="fdef5-107">Rebar Control Structures</span></span>](bumper-rebar-control-reference-structures.md)
--   [<span data-ttu-id="fdef5-108">Constantes de controle rebar</span><span class="sxs-lookup"><span data-stu-id="fdef5-108">Rebar Control Constants</span></span>](bumper-rebar-control-reference-constants.md)
+-   [<span data-ttu-id="0b59a-105">Mensagens de controle de rebar</span><span class="sxs-lookup"><span data-stu-id="0b59a-105">Rebar Control Messages</span></span>](bumper-rebar-control-reference-messages.md)
+-   [<span data-ttu-id="0b59a-106">Notificações de controle rebar</span><span class="sxs-lookup"><span data-stu-id="0b59a-106">Rebar Control Notifications</span></span>](bumper-rebar-control-reference-notifications.md)
+-   [<span data-ttu-id="0b59a-107">Estruturas de controle rebar</span><span class="sxs-lookup"><span data-stu-id="0b59a-107">Rebar Control Structures</span></span>](bumper-rebar-control-reference-structures.md)
+-   [<span data-ttu-id="0b59a-108">Constantes de controle rebar</span><span class="sxs-lookup"><span data-stu-id="0b59a-108">Rebar Control Constants</span></span>](bumper-rebar-control-reference-constants.md)
 
  
 

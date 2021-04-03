@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635518"
 ---
-# <a name="cc-code-example-setting-maxruntime"></a><span data-ttu-id="0e373-105">Exemplo de código C/C++: Configurando MaxRunTime</span><span class="sxs-lookup"><span data-stu-id="0e373-105">C/C++ Code Example: Setting MaxRunTime</span></span>
+# <a name="cc-code-example-setting-maxruntime"></a><span data-ttu-id="2468f-105">Exemplo de código C/C++: Configurando MaxRunTime</span><span class="sxs-lookup"><span data-stu-id="2468f-105">C/C++ Code Example: Setting MaxRunTime</span></span>
 
-<span data-ttu-id="0e373-106">Este exemplo define o tempo de execução máximo (definido em milissegundos) de uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="0e373-106">This example sets the maximum run time (set in milliseconds) of a known task.</span></span> <span data-ttu-id="0e373-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="0e373-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="2468f-106">Este exemplo define o tempo de execução máximo (definido em milissegundos) de uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="2468f-106">This example sets the maximum run time (set in milliseconds) of a known task.</span></span> <span data-ttu-id="2468f-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="2468f-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -134,11 +134,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="0e373-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0e373-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2468f-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="2468f-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="0e373-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="0e373-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="2468f-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="2468f-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

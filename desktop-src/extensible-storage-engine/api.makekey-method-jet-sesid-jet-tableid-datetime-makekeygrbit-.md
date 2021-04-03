@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829722"
 ---
-# <a name="apimakekey-method-jet_sesid-jet_tableid-datetime-makekeygrbit"></a><span data-ttu-id="c27dd-103">Método API. MakeKey (JET_SESID, JET_TABLEID, DateTime, MakeKeyGrbit)</span><span class="sxs-lookup"><span data-stu-id="c27dd-103">Api.MakeKey method (JET_SESID, JET_TABLEID, DateTime, MakeKeyGrbit)</span></span>
+# <a name="apimakekey-method-jet_sesid-jet_tableid-datetime-makekeygrbit"></a><span data-ttu-id="fb518-103">Método API. MakeKey (JET_SESID, JET_TABLEID, DateTime, MakeKeyGrbit)</span><span class="sxs-lookup"><span data-stu-id="fb518-103">Api.MakeKey method (JET_SESID, JET_TABLEID, DateTime, MakeKeyGrbit)</span></span>
 
-<span data-ttu-id="c27dd-104">Constrói uma chave de pesquisa que pode ser usada por [JetSeek (JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).</span><span class="sxs-lookup"><span data-stu-id="c27dd-104">Constructs a search key that may then be used by [JetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) and [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).</span></span>
+<span data-ttu-id="fb518-104">Constrói uma chave de pesquisa que pode ser usada por [JetSeek (JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).</span><span class="sxs-lookup"><span data-stu-id="fb518-104">Constructs a search key that may then be used by [JetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) and [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).</span></span>
 
-<span data-ttu-id="c27dd-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c27dd-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="c27dd-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c27dd-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="fb518-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="fb518-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="fb518-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="fb518-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c27dd-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c27dd-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fb518-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="fb518-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -61,42 +61,42 @@ public static void MakeKey(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="c27dd-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c27dd-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="fb518-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="fb518-108">Parameters</span></span>
 
-  - <span data-ttu-id="c27dd-109">sesid</span><span class="sxs-lookup"><span data-stu-id="c27dd-109">sesid</span></span>  
-    <span data-ttu-id="c27dd-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="c27dd-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="fb518-109">sesid</span><span class="sxs-lookup"><span data-stu-id="fb518-109">sesid</span></span>  
+    <span data-ttu-id="fb518-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="fb518-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="c27dd-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="c27dd-111">The session to use.</span></span>
+    <span data-ttu-id="fb518-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="fb518-111">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="c27dd-112">TableID</span><span class="sxs-lookup"><span data-stu-id="c27dd-112">tableid</span></span>  
-    <span data-ttu-id="c27dd-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="c27dd-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="fb518-112">TableID</span><span class="sxs-lookup"><span data-stu-id="fb518-112">tableid</span></span>  
+    <span data-ttu-id="fb518-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="fb518-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="c27dd-114">O cursor no qual criar a chave.</span><span class="sxs-lookup"><span data-stu-id="c27dd-114">The cursor to create the key on.</span></span>
+    <span data-ttu-id="fb518-114">O cursor no qual criar a chave.</span><span class="sxs-lookup"><span data-stu-id="fb518-114">The cursor to create the key on.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="c27dd-115">data</span><span class="sxs-lookup"><span data-stu-id="c27dd-115">data</span></span>  
-    <span data-ttu-id="c27dd-116">Tipo: [System. DateTime](/dotnet/api/system.datetime)</span><span class="sxs-lookup"><span data-stu-id="c27dd-116">Type: [System.DateTime](/dotnet/api/system.datetime)</span></span>  
+  - <span data-ttu-id="fb518-115">data</span><span class="sxs-lookup"><span data-stu-id="fb518-115">data</span></span>  
+    <span data-ttu-id="fb518-116">Tipo: [System. DateTime](/dotnet/api/system.datetime)</span><span class="sxs-lookup"><span data-stu-id="fb518-116">Type: [System.DateTime](/dotnet/api/system.datetime)</span></span>  
     
-    <span data-ttu-id="c27dd-117">Dados da coluna para a coluna de chave atual do índice atual.</span><span class="sxs-lookup"><span data-stu-id="c27dd-117">Column data for the current key column of the current index.</span></span>
+    <span data-ttu-id="fb518-117">Dados da coluna para a coluna de chave atual do índice atual.</span><span class="sxs-lookup"><span data-stu-id="fb518-117">Column data for the current key column of the current index.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="c27dd-118">grbit</span><span class="sxs-lookup"><span data-stu-id="c27dd-118">grbit</span></span>  
-    <span data-ttu-id="c27dd-119">Tipo: [Microsoft. ISAM. ESENT. Interop. MakeKeyGrbit](./makekeygrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="c27dd-119">Type: [Microsoft.Isam.Esent.Interop.MakeKeyGrbit](./makekeygrbit-enumeration.md)</span></span>  
+  - <span data-ttu-id="fb518-118">grbit</span><span class="sxs-lookup"><span data-stu-id="fb518-118">grbit</span></span>  
+    <span data-ttu-id="fb518-119">Tipo: [Microsoft. ISAM. ESENT. Interop. MakeKeyGrbit](./makekeygrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="fb518-119">Type: [Microsoft.Isam.Esent.Interop.MakeKeyGrbit](./makekeygrbit-enumeration.md)</span></span>  
     
-    <span data-ttu-id="c27dd-120">Opções de chave.</span><span class="sxs-lookup"><span data-stu-id="c27dd-120">Key options.</span></span>
+    <span data-ttu-id="fb518-120">Opções de chave.</span><span class="sxs-lookup"><span data-stu-id="fb518-120">Key options.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c27dd-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="c27dd-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb518-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="fb518-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="c27dd-122">Referência</span><span class="sxs-lookup"><span data-stu-id="c27dd-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="fb518-122">Referência</span><span class="sxs-lookup"><span data-stu-id="fb518-122">Reference</span></span>
 
-[<span data-ttu-id="c27dd-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="c27dd-123">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="fb518-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="fb518-123">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="c27dd-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="c27dd-124">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="fb518-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="fb518-124">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="c27dd-125">Sobrecarga de MakeKey</span><span class="sxs-lookup"><span data-stu-id="c27dd-125">MakeKey overload</span></span>](./api.makekey-method.md)
+[<span data-ttu-id="fb518-125">Sobrecarga de MakeKey</span><span class="sxs-lookup"><span data-stu-id="fb518-125">MakeKey overload</span></span>](./api.makekey-method.md)
 
-[<span data-ttu-id="c27dd-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c27dd-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="fb518-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="fb518-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

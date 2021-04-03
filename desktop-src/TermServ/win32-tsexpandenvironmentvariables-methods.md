@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916252"
 ---
-# <a name="win32_tsexpandenvironmentvariables-methods"></a><span data-ttu-id="6a7fd-103">\_Métodos TSExpandEnvironmentVariables do Win32</span><span class="sxs-lookup"><span data-stu-id="6a7fd-103">Win32\_TSExpandEnvironmentVariables Methods</span></span>
+# <a name="win32_tsexpandenvironmentvariables-methods"></a><span data-ttu-id="1ff0a-103">\_Métodos TSExpandEnvironmentVariables do Win32</span><span class="sxs-lookup"><span data-stu-id="1ff0a-103">Win32\_TSExpandEnvironmentVariables Methods</span></span>
 
-<span data-ttu-id="6a7fd-104">A classe [**Win32 \_ TSExpandEnvironmentVariables**](win32-tsexpandenvironmentvariables.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6a7fd-104">The [**Win32\_TSExpandEnvironmentVariables**](win32-tsexpandenvironmentvariables.md) class exposes the following methods.</span></span>
+<span data-ttu-id="1ff0a-104">A classe [**Win32 \_ TSExpandEnvironmentVariables**](win32-tsexpandenvironmentvariables.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="1ff0a-104">The [**Win32\_TSExpandEnvironmentVariables**](win32-tsexpandenvironmentvariables.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="6a7fd-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6a7fd-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1ff0a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1ff0a-105">In this section</span></span>
 
--   [<span data-ttu-id="6a7fd-106">**Método EnvironmentVariables**</span><span class="sxs-lookup"><span data-stu-id="6a7fd-106">**EnvironmentVariables method**</span></span>](environmentvariables-win32-tsexpandenvironmentvariables.md)
+-   [<span data-ttu-id="1ff0a-106">**Método EnvironmentVariables**</span><span class="sxs-lookup"><span data-stu-id="1ff0a-106">**EnvironmentVariables method**</span></span>](environmentvariables-win32-tsexpandenvironmentvariables.md)
 
  
 

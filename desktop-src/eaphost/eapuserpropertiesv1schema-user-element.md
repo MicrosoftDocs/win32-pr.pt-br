@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641865"
 ---
-# <a name="user-element"></a><span data-ttu-id="175eb-105">Elemento User</span><span class="sxs-lookup"><span data-stu-id="175eb-105">User Element</span></span>
+# <a name="user-element"></a><span data-ttu-id="67e19-105">Elemento User</span><span class="sxs-lookup"><span data-stu-id="67e19-105">User Element</span></span>
 
-<span data-ttu-id="175eb-106">O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAPHost.</span><span class="sxs-lookup"><span data-stu-id="175eb-106">The **User** element is not used when using legacy methods via the EAPHost APIs.</span></span>
+<span data-ttu-id="67e19-106">O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAPHost.</span><span class="sxs-lookup"><span data-stu-id="67e19-106">The **User** element is not used when using legacy methods via the EAPHost APIs.</span></span>
 
 ``` syntax
 <xs:element name="User">
@@ -38,35 +38,35 @@ ms.locfileid: "103641865"
 </xs:element>
 ```
 
-## <a name="child-elements"></a><span data-ttu-id="175eb-107">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="175eb-107">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="67e19-107">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="67e19-107">Child elements</span></span>
 
 
 
-| <span data-ttu-id="175eb-108">Elemento</span><span class="sxs-lookup"><span data-stu-id="175eb-108">Element</span></span>                                                  | <span data-ttu-id="175eb-109">Type</span><span class="sxs-lookup"><span data-stu-id="175eb-109">Type</span></span> | <span data-ttu-id="175eb-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="175eb-110">Description</span></span>                                                                     |
+| <span data-ttu-id="67e19-108">Elemento</span><span class="sxs-lookup"><span data-stu-id="67e19-108">Element</span></span>                                                  | <span data-ttu-id="67e19-109">Type</span><span class="sxs-lookup"><span data-stu-id="67e19-109">Type</span></span> | <span data-ttu-id="67e19-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="67e19-110">Description</span></span>                                                                     |
 |----------------------------------------------------------|------|---------------------------------------------------------------------------------|
-| [<span data-ttu-id="175eb-111">**EAP**</span><span class="sxs-lookup"><span data-stu-id="175eb-111">**Eap**</span></span>](baseeapuserpropertiesv1schema-eap-element.md) |      | <span data-ttu-id="175eb-112">Captura o tipo de método e as informações de credencial específicas do método.</span><span class="sxs-lookup"><span data-stu-id="175eb-112">Captures the method type and method specific credential information.</span></span><br/> |
+| [<span data-ttu-id="67e19-111">**EAP**</span><span class="sxs-lookup"><span data-stu-id="67e19-111">**Eap**</span></span>](baseeapuserpropertiesv1schema-eap-element.md) |      | <span data-ttu-id="67e19-112">Captura o tipo de método e as informações de credencial específicas do método.</span><span class="sxs-lookup"><span data-stu-id="67e19-112">Captures the method type and method specific credential information.</span></span><br/> |
 
 
 
-## <a name="requirements"></a><span data-ttu-id="175eb-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="175eb-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="67e19-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="67e19-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="175eb-114">Função</span><span class="sxs-lookup"><span data-stu-id="175eb-114">Role</span></span> | <span data-ttu-id="175eb-115">Versão mínima do sistema operacional com suporte</span><span class="sxs-lookup"><span data-stu-id="175eb-115">Minimum supported OS version</span></span> |
+| <span data-ttu-id="67e19-114">Função</span><span class="sxs-lookup"><span data-stu-id="67e19-114">Role</span></span> | <span data-ttu-id="67e19-115">Versão mínima do sistema operacional com suporte</span><span class="sxs-lookup"><span data-stu-id="67e19-115">Minimum supported OS version</span></span> |
 |------|------------------------------|
-| <span data-ttu-id="175eb-116">Cliente</span><span class="sxs-lookup"><span data-stu-id="175eb-116">Client</span></span><br/> | <span data-ttu-id="175eb-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="175eb-117">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="175eb-118">Servidor</span><span class="sxs-lookup"><span data-stu-id="175eb-118">Server</span></span><br/> | <span data-ttu-id="175eb-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="175eb-119">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="67e19-116">Cliente</span><span class="sxs-lookup"><span data-stu-id="67e19-116">Client</span></span><br/> | <span data-ttu-id="67e19-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="67e19-117">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="67e19-118">Servidor</span><span class="sxs-lookup"><span data-stu-id="67e19-118">Server</span></span><br/> | <span data-ttu-id="67e19-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="67e19-119">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="175eb-120">Consulte também</span><span class="sxs-lookup"><span data-stu-id="175eb-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="67e19-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="67e19-120">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="175eb-121">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="175eb-121">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="67e19-121">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="67e19-121">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="175eb-122">Esquema eapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="175eb-122">eapuserpropertiesv1 Schema</span></span>](eapuserpropertiesv1schema-schema.md)
+[<span data-ttu-id="67e19-122">Esquema eapuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="67e19-122">eapuserpropertiesv1 Schema</span></span>](eapuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
  
