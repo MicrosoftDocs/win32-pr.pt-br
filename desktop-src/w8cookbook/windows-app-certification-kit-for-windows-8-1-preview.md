@@ -18,7 +18,7 @@ ms.locfileid: "103642933"
 **Clientes-** Windows 8.1 Windows 8 do Windows 7 \| \|  
 
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 O kit de certificação de aplicativos para Windows 3,1 está incluído com o SDK do Windows para Windows 8.1. O kit pode ser usado para pré-certificar aplicativos da Windows Store para Windows 8 e Windows 8.1 antes da integração, bem como para os programas de certificação de aplicativos de desktop do Windows 7, Windows 8 e Windows 8.1 e Windows 8.1 aplicativos de telefone.
 
