@@ -31,7 +31,7 @@ O Windows Media Format SDK fornece suporte para os seguintes codecs que são inc
 <thead>
 <tr class="header">
 <th>Codec</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>

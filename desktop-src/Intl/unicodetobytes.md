@@ -43,7 +43,7 @@ ms.locfileid: "103639053"
 ---
 # <a name="unicodetobytes-function"></a>Função UnicodeToBytes
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 Preterido. Converte caracteres Unicode em bytes GB18030.
 

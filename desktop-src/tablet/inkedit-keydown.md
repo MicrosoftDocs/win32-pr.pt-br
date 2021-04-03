@@ -1,0 +1,98 @@
+---
+description: Ocorre quando o usuário pressiona uma tecla enquanto o controle InkEdit tem foco.
+ms.assetid: 14b05b72-ae5d-416a-8ea5-9d9716c0967f
+title: Evento InkEdit. KeyDown (Inked. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 07cee260d4c902534b9b234e0e30d0b60645c579
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103922653"
+---
+# <a name="inkeditkeydown-event"></a>Evento InkEdit. KeyDown
+
+Ocorre quando o usuário pressiona uma tecla enquanto o controle [InkEdit](inkedit-control-reference.md) tem foco.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT KeyDown(
+   Long  *pKey,
+   short ShiftKey
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*pKey* 
+</dt> <dd>
+
+O código de chave virtual da chave pressionada pelo usuário.
+
+</dd> <dt>
+
+*ShiftKey* 
+</dt> <dd>
+
+Um membro da enumeração [**InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) , que indica quais teclas modificadoras são pressionadas no momento do evento.
+
+
+
+| Valor                                                                                                                                                                                     | Significado                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**IKM \_ Shift**</dt> </dl>             | Especifica que a tecla SHIFT foi usada como um modificador. <br/> |
+| <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Controle** do</dt> </dl> | Especifica que a tecla CTRL foi usada como um modificador. <br/>  |
+| <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ Alt**</dt> </dl>                 | Especifica que a tecla ALT foi usada como um modificador. <br/>   |
+
+
+
+ 
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+
+## <a name="remarks"></a>Comentários
+
+Esse método de evento é definido na interface **\_ IInkEditEvents** . A interface **\_ IInkEditEvents** implementa a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) com um identificador de \_ IeeKeyDown DISPID.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[InkEdit](inkedit-control-reference.md)
+</dt> <dt>
+
+[**Enumeração InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
+</dt> <dt>
+
+[**Controle de evento InkEdit de KeyPress \[\]**](inkedit-keypress.md)
+</dt> <dt>
+
+[**Controle de evento InkEdit de KeyUp \[\]**](inkedit-keyup.md)
+</dt> </dl>
+
+ 
+
