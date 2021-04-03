@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645659"
 ---
-# <a name="meshtexturecoords"></a><span data-ttu-id="9d8e8-103">MeshTextureCoords</span><span class="sxs-lookup"><span data-stu-id="9d8e8-103">MeshTextureCoords</span></span>
+# <a name="meshtexturecoords"></a><span data-ttu-id="71737-103">MeshTextureCoords</span><span class="sxs-lookup"><span data-stu-id="71737-103">MeshTextureCoords</span></span>
 
-<span data-ttu-id="9d8e8-104">Define as coordenadas de textura de uma malha.</span><span class="sxs-lookup"><span data-stu-id="9d8e8-104">Defines a mesh's texture coordinates.</span></span>
+<span data-ttu-id="71737-104">Define as coordenadas de textura de uma malha.</span><span class="sxs-lookup"><span data-stu-id="71737-104">Defines a mesh's texture coordinates.</span></span>
 
 ``` syntax
 template MeshTextureCoords
@@ -24,16 +24,16 @@ template MeshTextureCoords
 } 
 ```
 
-<span data-ttu-id="9d8e8-105">Em que:</span><span class="sxs-lookup"><span data-stu-id="9d8e8-105">Where:</span></span>
+<span data-ttu-id="71737-105">Em que:</span><span class="sxs-lookup"><span data-stu-id="71737-105">Where:</span></span>
 
--   <span data-ttu-id="9d8e8-106">nTextureCoords-número de coordenadas de textura.</span><span class="sxs-lookup"><span data-stu-id="9d8e8-106">nTextureCoords - Number of texture coordinates.</span></span>
--   <span data-ttu-id="9d8e8-107">array Coords2d textureCoords \[ nTextureCoords \] -matriz de coordenadas 2D.</span><span class="sxs-lookup"><span data-stu-id="9d8e8-107">array Coords2d textureCoords\[nTextureCoords\] - Array of 2D texture coordinates.</span></span> <span data-ttu-id="9d8e8-108">Consulte [**Coords2d**](coords2d.md).</span><span class="sxs-lookup"><span data-stu-id="9d8e8-108">See [**Coords2d**](coords2d.md).</span></span>
+-   <span data-ttu-id="71737-106">nTextureCoords-número de coordenadas de textura.</span><span class="sxs-lookup"><span data-stu-id="71737-106">nTextureCoords - Number of texture coordinates.</span></span>
+-   <span data-ttu-id="71737-107">array Coords2d textureCoords \[ nTextureCoords \] -matriz de coordenadas 2D.</span><span class="sxs-lookup"><span data-stu-id="71737-107">array Coords2d textureCoords\[nTextureCoords\] - Array of 2D texture coordinates.</span></span> <span data-ttu-id="71737-108">Consulte [**Coords2d**](coords2d.md).</span><span class="sxs-lookup"><span data-stu-id="71737-108">See [**Coords2d**](coords2d.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9d8e8-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="9d8e8-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="71737-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="71737-109">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9d8e8-110">Modelos</span><span class="sxs-lookup"><span data-stu-id="9d8e8-110">Templates</span></span>](dx9-graphics-reference-x-file-format-templates.md)
+[<span data-ttu-id="71737-110">Modelos</span><span class="sxs-lookup"><span data-stu-id="71737-110">Templates</span></span>](dx9-graphics-reference-x-file-format-templates.md)
 </dt> </dl>
 
  

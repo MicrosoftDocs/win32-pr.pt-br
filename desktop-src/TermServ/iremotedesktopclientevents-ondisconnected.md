@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644870"
 ---
-# <a name="iremotedesktopclienteventsondisconnected-method"></a><span data-ttu-id="2f1c6-106">Método IRemoteDesktopClientEvents:: OnDisconnect</span><span class="sxs-lookup"><span data-stu-id="2f1c6-106">IRemoteDesktopClientEvents::OnDisconnected method</span></span>
+# <a name="iremotedesktopclienteventsondisconnected-method"></a><span data-ttu-id="7d885-106">Método IRemoteDesktopClientEvents:: OnDisconnect</span><span class="sxs-lookup"><span data-stu-id="7d885-106">IRemoteDesktopClientEvents::OnDisconnected method</span></span>
 
-<span data-ttu-id="2f1c6-107">Chamado quando o controle de cliente foi desconectado de uma sessão remota.</span><span class="sxs-lookup"><span data-stu-id="2f1c6-107">Called when the client control has been disconnected from a remote session.</span></span>
+<span data-ttu-id="7d885-107">Chamado quando o controle de cliente foi desconectado de uma sessão remota.</span><span class="sxs-lookup"><span data-stu-id="7d885-107">Called when the client control has been disconnected from a remote session.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2f1c6-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2f1c6-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7d885-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7d885-108">Syntax</span></span>
 
 
 ```C++
@@ -41,54 +41,54 @@ void OnDisconnected(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="2f1c6-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2f1c6-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7d885-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7d885-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="2f1c6-110">*disconnectReason* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2f1c6-110">*disconnectReason* \[in\]</span></span>
+<span data-ttu-id="7d885-110">*disconnectReason* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7d885-110">*disconnectReason* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f1c6-111">O motivo para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="2f1c6-111">The reason for the disconnect event.</span></span>
+<span data-ttu-id="7d885-111">O motivo para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="7d885-111">The reason for the disconnect event.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f1c6-112">*ExtendedDisconnectReason* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2f1c6-112">*ExtendedDisconnectReason* \[in\]</span></span>
+<span data-ttu-id="7d885-112">*ExtendedDisconnectReason* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7d885-112">*ExtendedDisconnectReason* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f1c6-113">Informações estendidas para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="2f1c6-113">Extended information for the disconnect event.</span></span>
+<span data-ttu-id="7d885-113">Informações estendidas para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="7d885-113">Extended information for the disconnect event.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f1c6-114">*disconnectErrorMessage* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2f1c6-114">*disconnectErrorMessage* \[in\]</span></span>
+<span data-ttu-id="7d885-114">*disconnectErrorMessage* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7d885-114">*disconnectErrorMessage* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f1c6-115">A mensagem de erro para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="2f1c6-115">The error message for the disconnect event.</span></span>
+<span data-ttu-id="7d885-115">A mensagem de erro para o evento de desconexão.</span><span class="sxs-lookup"><span data-stu-id="7d885-115">The error message for the disconnect event.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="2f1c6-116">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2f1c6-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7d885-116">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7d885-116">Return value</span></span>
 
-<span data-ttu-id="2f1c6-117">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="2f1c6-117">This method does not return a value.</span></span>
+<span data-ttu-id="7d885-117">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="7d885-117">This method does not return a value.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="2f1c6-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2f1c6-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="7d885-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7d885-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="2f1c6-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="2f1c6-119">Requirement</span></span> | <span data-ttu-id="2f1c6-120">Valor</span><span class="sxs-lookup"><span data-stu-id="2f1c6-120">Value</span></span> |
+| <span data-ttu-id="7d885-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="7d885-119">Requirement</span></span> | <span data-ttu-id="7d885-120">Valor</span><span class="sxs-lookup"><span data-stu-id="7d885-120">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2f1c6-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2f1c6-121">Minimum supported client</span></span><br/> | <span data-ttu-id="2f1c6-122">Windows 8</span><span class="sxs-lookup"><span data-stu-id="2f1c6-122">Windows 8</span></span><br/>                                                                           |
-| <span data-ttu-id="2f1c6-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2f1c6-123">Minimum supported server</span></span><br/> | <span data-ttu-id="2f1c6-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="2f1c6-124">Windows Server 2012</span></span><br/>                                                                 |
-| <span data-ttu-id="2f1c6-125">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="2f1c6-125">Type library</span></span><br/>             | <dl> <span data-ttu-id="2f1c6-126"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2f1c6-126"><dt>MsTscAx.dll</dt></span></span> </dl>         |
-| <span data-ttu-id="2f1c6-127">DLL</span><span class="sxs-lookup"><span data-stu-id="2f1c6-127">DLL</span></span><br/>                      | <dl> <span data-ttu-id="2f1c6-128"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="2f1c6-128"><dt>MsTscAx.dll</dt></span></span> </dl>         |
-| <span data-ttu-id="2f1c6-129">IID</span><span class="sxs-lookup"><span data-stu-id="2f1c6-129">IID</span></span><br/>                      | <span data-ttu-id="2f1c6-130">DIID \_ IRemoteDesktopClientEvents é definido como 079863B7-6D47-4105-8BFE-0CDCB360E67D</span><span class="sxs-lookup"><span data-stu-id="2f1c6-130">DIID\_IRemoteDesktopClientEvents is defined as 079863B7-6D47-4105-8BFE-0CDCB360E67D</span></span><br/> |
+| <span data-ttu-id="7d885-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7d885-121">Minimum supported client</span></span><br/> | <span data-ttu-id="7d885-122">Windows 8</span><span class="sxs-lookup"><span data-stu-id="7d885-122">Windows 8</span></span><br/>                                                                           |
+| <span data-ttu-id="7d885-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7d885-123">Minimum supported server</span></span><br/> | <span data-ttu-id="7d885-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="7d885-124">Windows Server 2012</span></span><br/>                                                                 |
+| <span data-ttu-id="7d885-125">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="7d885-125">Type library</span></span><br/>             | <dl> <span data-ttu-id="7d885-126"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7d885-126"><dt>MsTscAx.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="7d885-127">DLL</span><span class="sxs-lookup"><span data-stu-id="7d885-127">DLL</span></span><br/>                      | <dl> <span data-ttu-id="7d885-128"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7d885-128"><dt>MsTscAx.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="7d885-129">IID</span><span class="sxs-lookup"><span data-stu-id="7d885-129">IID</span></span><br/>                      | <span data-ttu-id="7d885-130">DIID \_ IRemoteDesktopClientEvents é definido como 079863B7-6D47-4105-8BFE-0CDCB360E67D</span><span class="sxs-lookup"><span data-stu-id="7d885-130">DIID\_IRemoteDesktopClientEvents is defined as 079863B7-6D47-4105-8BFE-0CDCB360E67D</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="2f1c6-131">Confira também</span><span class="sxs-lookup"><span data-stu-id="2f1c6-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7d885-131">Confira também</span><span class="sxs-lookup"><span data-stu-id="7d885-131">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2f1c6-132">**IRemoteDesktopClientEvents**</span><span class="sxs-lookup"><span data-stu-id="2f1c6-132">**IRemoteDesktopClientEvents**</span></span>](iremotedesktopclientevents.md)
+[<span data-ttu-id="7d885-132">**IRemoteDesktopClientEvents**</span><span class="sxs-lookup"><span data-stu-id="7d885-132">**IRemoteDesktopClientEvents**</span></span>](iremotedesktopclientevents.md)
 </dt> </dl>
 
  

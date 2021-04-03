@@ -21,33 +21,33 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824845"
 ---
-# <a name="tb_getbuttonsize-message"></a><span data-ttu-id="80eb8-104">A \_ mensagem de TB GETbuttons</span><span class="sxs-lookup"><span data-stu-id="80eb8-104">TB\_GETBUTTONSIZE message</span></span>
+# <a name="tb_getbuttonsize-message"></a><span data-ttu-id="5a1d1-104">A \_ mensagem de TB GETbuttons</span><span class="sxs-lookup"><span data-stu-id="5a1d1-104">TB\_GETBUTTONSIZE message</span></span>
 
-<span data-ttu-id="80eb8-105">Recupera a largura e a altura atuais dos botões da barra de ferramentas, em pixels.</span><span class="sxs-lookup"><span data-stu-id="80eb8-105">Retrieves the current width and height of toolbar buttons, in pixels.</span></span>
+<span data-ttu-id="5a1d1-105">Recupera a largura e a altura atuais dos botões da barra de ferramentas, em pixels.</span><span class="sxs-lookup"><span data-stu-id="5a1d1-105">Retrieves the current width and height of toolbar buttons, in pixels.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="80eb8-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="80eb8-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5a1d1-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5a1d1-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="80eb8-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="80eb8-107">*wParam*</span></span> 
-</dt> <dd><span data-ttu-id="80eb8-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="80eb8-108">Must be zero.</span></span></dd> <dt>
+<span data-ttu-id="5a1d1-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="5a1d1-107">*wParam*</span></span> 
+</dt> <dd><span data-ttu-id="5a1d1-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="5a1d1-108">Must be zero.</span></span></dd> <dt>
 
-<span data-ttu-id="80eb8-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="80eb8-109">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="80eb8-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="80eb8-110">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="5a1d1-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="5a1d1-109">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="5a1d1-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="5a1d1-110">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="80eb8-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="80eb8-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5a1d1-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="5a1d1-111">Return value</span></span>
 
-<span data-ttu-id="80eb8-112">Retorna um valor **DWORD** que contém os valores de largura e altura na palavra inferior e na palavra alta, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="80eb8-112">Returns a **DWORD** value that contains the width and height values in the low word and high word, respectively.</span></span>
+<span data-ttu-id="5a1d1-112">Retorna um valor **DWORD** que contém os valores de largura e altura na palavra inferior e na palavra alta, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="5a1d1-112">Returns a **DWORD** value that contains the width and height values in the low word and high word, respectively.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="80eb8-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="80eb8-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5a1d1-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5a1d1-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="80eb8-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="80eb8-114">Requirement</span></span> | <span data-ttu-id="80eb8-115">Valor</span><span class="sxs-lookup"><span data-stu-id="80eb8-115">Value</span></span> |
+| <span data-ttu-id="5a1d1-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="5a1d1-114">Requirement</span></span> | <span data-ttu-id="5a1d1-115">Valor</span><span class="sxs-lookup"><span data-stu-id="5a1d1-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="80eb8-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="80eb8-116">Minimum supported client</span></span><br/> | <span data-ttu-id="80eb8-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="80eb8-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="80eb8-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="80eb8-118">Minimum supported server</span></span><br/> | <span data-ttu-id="80eb8-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="80eb8-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="80eb8-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="80eb8-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="80eb8-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="80eb8-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="5a1d1-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5a1d1-116">Minimum supported client</span></span><br/> | <span data-ttu-id="5a1d1-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="5a1d1-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="5a1d1-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5a1d1-118">Minimum supported server</span></span><br/> | <span data-ttu-id="5a1d1-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="5a1d1-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="5a1d1-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="5a1d1-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="5a1d1-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="5a1d1-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

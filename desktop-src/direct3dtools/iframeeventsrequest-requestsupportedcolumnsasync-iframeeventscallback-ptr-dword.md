@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645957"
 ---
-# <a name="span-idvspixengineiframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dwordspaniframeeventsrequestrequestsupportedcolumnsasync-method"></a><span data-ttu-id="b8d03-103"><span id="vspixengine.iframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>Método IFrameEventsRequest:: RequestSupportedColumnsAsync</span><span class="sxs-lookup"><span data-stu-id="b8d03-103"><span id="vspixengine.iframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>IFrameEventsRequest::RequestSupportedColumnsAsync method</span></span>
+# <a name="span-idvspixengineiframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dwordspaniframeeventsrequestrequestsupportedcolumnsasync-method"></a><span data-ttu-id="4d2fe-103"><span id="vspixengine.iframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>Método IFrameEventsRequest:: RequestSupportedColumnsAsync</span><span class="sxs-lookup"><span data-stu-id="4d2fe-103"><span id="vspixengine.iframeeventsrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>IFrameEventsRequest::RequestSupportedColumnsAsync method</span></span>
 
-<span data-ttu-id="b8d03-104">Uma solicitação assíncrona para obter informações sobre quais colunas (campos) esse tipo de solicitação de eventos de quadro dá suporte.</span><span class="sxs-lookup"><span data-stu-id="b8d03-104">An asynchronous request to get information about what columns (fields) this frame events request type supports.</span></span>
+<span data-ttu-id="4d2fe-104">Uma solicitação assíncrona para obter informações sobre quais colunas (campos) esse tipo de solicitação de eventos de quadro dá suporte.</span><span class="sxs-lookup"><span data-stu-id="4d2fe-104">An asynchronous request to get information about what columns (fields) this frame events request type supports.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b8d03-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b8d03-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4d2fe-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4d2fe-105">Syntax</span></span>
 
 
 ```C++
@@ -38,25 +38,25 @@ HRESULT RequestSupportedColumnsAsync(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="b8d03-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b8d03-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="4d2fe-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4d2fe-106">Parameters</span></span>
 
-<span data-ttu-id="b8d03-107">*requestCallback* </span><span class="sxs-lookup"><span data-stu-id="b8d03-107">*requestCallback* </span></span>  
-<span data-ttu-id="b8d03-108">O endereço do retorno de chamada usado para notificar o host dos resultados.</span><span class="sxs-lookup"><span data-stu-id="b8d03-108">The address of callback used to notify the host of results.</span></span>
+<span data-ttu-id="4d2fe-107">*requestCallback* </span><span class="sxs-lookup"><span data-stu-id="4d2fe-107">*requestCallback* </span></span>  
+<span data-ttu-id="4d2fe-108">O endereço do retorno de chamada usado para notificar o host dos resultados.</span><span class="sxs-lookup"><span data-stu-id="4d2fe-108">The address of callback used to notify the host of results.</span></span>
 
-<span data-ttu-id="b8d03-109">*progressIntervalMsecs* </span><span class="sxs-lookup"><span data-stu-id="b8d03-109">*progressIntervalMsecs* </span></span>  
-<span data-ttu-id="b8d03-110">Não usado.</span><span class="sxs-lookup"><span data-stu-id="b8d03-110">Not used.</span></span>
+<span data-ttu-id="4d2fe-109">*progressIntervalMsecs* </span><span class="sxs-lookup"><span data-stu-id="4d2fe-109">*progressIntervalMsecs* </span></span>  
+<span data-ttu-id="4d2fe-110">Não usado.</span><span class="sxs-lookup"><span data-stu-id="4d2fe-110">Not used.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="b8d03-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b8d03-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4d2fe-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4d2fe-111">Return value</span></span>
 
-<span data-ttu-id="b8d03-112">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="b8d03-112">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="b8d03-113">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="b8d03-113">Otherwise, it returns an **HRESULT** error code.</span></span>
+<span data-ttu-id="4d2fe-112">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="4d2fe-112">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="4d2fe-113">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="4d2fe-113">Otherwise, it returns an **HRESULT** error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b8d03-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b8d03-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4d2fe-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4d2fe-114">Requirements</span></span>
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="b8d03-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="b8d03-115">Header</span></span></p></td><td><span data-ttu-id="b8d03-116">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="b8d03-116">Vspixengine.h</span></span></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="4d2fe-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4d2fe-115">Header</span></span></p></td><td><span data-ttu-id="4d2fe-116">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="4d2fe-116">Vspixengine.h</span></span></td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="b8d03-117"><span id="see_also"></span>Confira também</span><span class="sxs-lookup"><span data-stu-id="b8d03-117"><span id="see_also"></span>See also</span></span>
+## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="4d2fe-117"><span id="see_also"></span>Consulte também</span><span class="sxs-lookup"><span data-stu-id="4d2fe-117"><span id="see_also"></span>See also</span></span>
 
-[<span data-ttu-id="b8d03-118">**IFrameEventsRequest**</span><span class="sxs-lookup"><span data-stu-id="b8d03-118">**IFrameEventsRequest**</span></span>](/windows/desktop/direct3dtools/iframeeventsrequest)
+[<span data-ttu-id="4d2fe-118">**IFrameEventsRequest**</span><span class="sxs-lookup"><span data-stu-id="4d2fe-118">**IFrameEventsRequest**</span></span>](/windows/desktop/direct3dtools/iframeeventsrequest)
 
  
 

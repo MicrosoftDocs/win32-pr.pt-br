@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824555"
 ---
-# <a name="modify-method-of-the-microsoftdns_winstype-class"></a><span data-ttu-id="c6fcb-106">Método Modify da \_ classe winstype MicrosoftDNS</span><span class="sxs-lookup"><span data-stu-id="c6fcb-106">Modify method of the MicrosoftDNS\_WINSType class</span></span>
+# <a name="modify-method-of-the-microsoftdns_winstype-class"></a><span data-ttu-id="340a8-106">Método Modify da \_ classe winstype MicrosoftDNS</span><span class="sxs-lookup"><span data-stu-id="340a8-106">Modify method of the MicrosoftDNS\_WINSType class</span></span>
 
-<span data-ttu-id="c6fcb-107">O método **Modify** atualiza um registro de recurso WINS (serviço de cadastramento na Internet do Windows).</span><span class="sxs-lookup"><span data-stu-id="c6fcb-107">The **Modify** method updates a Windows Internet Name Service (WINS) Resource Record.</span></span>
+<span data-ttu-id="340a8-107">O método **Modify** atualiza um registro de recurso WINS (serviço de cadastramento na Internet do Windows).</span><span class="sxs-lookup"><span data-stu-id="340a8-107">The **Modify** method updates a Windows Internet Name Service (WINS) Resource Record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c6fcb-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c6fcb-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="340a8-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="340a8-108">Syntax</span></span>
 
 
 ```mof
@@ -43,28 +43,28 @@ void Modify(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="c6fcb-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c6fcb-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="340a8-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="340a8-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="c6fcb-110">*TTL* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-110">*TTL* \[in, optional\]</span></span>
+<span data-ttu-id="340a8-110">*TTL* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="340a8-110">*TTL* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-111">Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-111">Time, in seconds, that the RR can be cached by a DNS resolver.</span></span>
+<span data-ttu-id="340a8-111">Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.</span><span class="sxs-lookup"><span data-stu-id="340a8-111">Time, in seconds, that the RR can be cached by a DNS resolver.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c6fcb-112">*MappingFlag* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-112">*MappingFlag* \[in, optional\]</span></span>
+<span data-ttu-id="340a8-112">*MappingFlag* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="340a8-112">*MappingFlag* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-113">Sinalizador de mapeamento WINS que especifica se o registro deve ser incluído na replicação de zona.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-113">WINS mapping flag that specifies whether the record must be included into the zone replication.</span></span> <span data-ttu-id="c6fcb-114">Ele pode ter apenas dois valores: 0x80000000 e 0x00010000 correspondentes aos sinalizadores de replicação e sem replicação (registro local), respectivamente.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-114">It may have only two values: 0x80000000 and 0x00010000 corresponding to the replication and no-replication (local record) flags, respectively.</span></span> <span data-ttu-id="c6fcb-115">Os valores a seguir são válidos.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-115">The following values are valid.</span></span>
+<span data-ttu-id="340a8-113">Sinalizador de mapeamento WINS que especifica se o registro deve ser incluído na replicação de zona.</span><span class="sxs-lookup"><span data-stu-id="340a8-113">WINS mapping flag that specifies whether the record must be included into the zone replication.</span></span> <span data-ttu-id="340a8-114">Ele pode ter apenas dois valores: 0x80000000 e 0x00010000 correspondentes aos sinalizadores de replicação e sem replicação (registro local), respectivamente.</span><span class="sxs-lookup"><span data-stu-id="340a8-114">It may have only two values: 0x80000000 and 0x00010000 corresponding to the replication and no-replication (local record) flags, respectively.</span></span> <span data-ttu-id="340a8-115">Os valores a seguir são válidos.</span><span class="sxs-lookup"><span data-stu-id="340a8-115">The following values are valid.</span></span>
 
 
 
-| <span data-ttu-id="c6fcb-116">Valor</span><span class="sxs-lookup"><span data-stu-id="c6fcb-116">Value</span></span>                                                                                                                                               | <span data-ttu-id="c6fcb-117">Significado</span><span class="sxs-lookup"><span data-stu-id="c6fcb-117">Meaning</span></span>                                       |
+| <span data-ttu-id="340a8-116">Valor</span><span class="sxs-lookup"><span data-stu-id="340a8-116">Value</span></span>                                                                                                                                               | <span data-ttu-id="340a8-117">Significado</span><span class="sxs-lookup"><span data-stu-id="340a8-117">Meaning</span></span>                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <span id="0x80000000"></span><span id="0X80000000"></span><dl> <span data-ttu-id="c6fcb-118"><dt>**0x80000000**</dt></span><span class="sxs-lookup"><span data-stu-id="c6fcb-118"><dt>**0x80000000**</dt></span></span> </dl> | <span data-ttu-id="c6fcb-119">Sinalizador de replicação</span><span class="sxs-lookup"><span data-stu-id="c6fcb-119">Replication flag</span></span><br/>                   |
-| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <span data-ttu-id="c6fcb-120"><dt>**0x00010000**</dt></span><span class="sxs-lookup"><span data-stu-id="c6fcb-120"><dt>**0x00010000**</dt></span></span> </dl> | <span data-ttu-id="c6fcb-121">Sinalizador sem replicação (registro local)</span><span class="sxs-lookup"><span data-stu-id="c6fcb-121">No-replication (local record) flag</span></span><br/> |
+| <span id="0x80000000"></span><span id="0X80000000"></span><dl> <span data-ttu-id="340a8-118"><dt>**0x80000000**</dt></span><span class="sxs-lookup"><span data-stu-id="340a8-118"><dt>**0x80000000**</dt></span></span> </dl> | <span data-ttu-id="340a8-119">Sinalizador de replicação</span><span class="sxs-lookup"><span data-stu-id="340a8-119">Replication flag</span></span><br/>                   |
+| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <span data-ttu-id="340a8-120"><dt>**0x00010000**</dt></span><span class="sxs-lookup"><span data-stu-id="340a8-120"><dt>**0x00010000**</dt></span></span> </dl> | <span data-ttu-id="340a8-121">Sinalizador sem replicação (registro local)</span><span class="sxs-lookup"><span data-stu-id="340a8-121">No-replication (local record) flag</span></span><br/> |
 
 
 
@@ -72,66 +72,66 @@ void Modify(
 
 </dd> <dt>
 
-<span data-ttu-id="c6fcb-122">*LookupTimeout* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-122">*LookupTimeout* \[in, optional\]</span></span>
+<span data-ttu-id="340a8-122">*LookupTimeout* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="340a8-122">*LookupTimeout* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-123">Tempo, em segundos, que um servidor DNS tenta resolução usando a pesquisa WINS.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-123">Time, in seconds, that a DNS Server attempts resolution using WINS Look up.</span></span>
+<span data-ttu-id="340a8-123">Tempo, em segundos, que um servidor DNS tenta resolução usando a pesquisa WINS.</span><span class="sxs-lookup"><span data-stu-id="340a8-123">Time, in seconds, that a DNS Server attempts resolution using WINS Look up.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c6fcb-124">*CacheTimeout* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-124">*CacheTimeout* \[in, optional\]</span></span>
+<span data-ttu-id="340a8-124">*CacheTimeout* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="340a8-124">*CacheTimeout* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-125">Tempo, em segundos, que um servidor DNS que usa a pesquisa WINS pode armazenar em cache a resposta do servidor WINS.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-125">Time, in seconds, that a DNS Server using WINS Look up may cache the WINS server's response.</span></span>
+<span data-ttu-id="340a8-125">Tempo, em segundos, que um servidor DNS que usa a pesquisa WINS pode armazenar em cache a resposta do servidor WINS.</span><span class="sxs-lookup"><span data-stu-id="340a8-125">Time, in seconds, that a DNS Server using WINS Look up may cache the WINS server's response.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c6fcb-126">*WinsServers* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-126">*WinsServers* \[in, optional\]</span></span>
+<span data-ttu-id="340a8-126">*WinsServers* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="340a8-126">*WinsServers* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-127">Lista de endereços IP separados por vírgulas de servidores WINS usados na pesquisa WINS.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-127">List of comma-separated IP addresses of WINS servers used in WINS Look ups.</span></span>
+<span data-ttu-id="340a8-127">Lista de endereços IP separados por vírgulas de servidores WINS usados na pesquisa WINS.</span><span class="sxs-lookup"><span data-stu-id="340a8-127">List of comma-separated IP addresses of WINS servers used in WINS Look ups.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c6fcb-128">*RR* \[ out, ref\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-128">*RR* \[out, ref\]</span></span>
+<span data-ttu-id="340a8-128">*RR* \[ out, ref\]</span><span class="sxs-lookup"><span data-stu-id="340a8-128">*RR* \[out, ref\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c6fcb-129">Referência ao novo objeto.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-129">Reference to the new object.</span></span>
+<span data-ttu-id="340a8-129">Referência ao novo objeto.</span><span class="sxs-lookup"><span data-stu-id="340a8-129">Reference to the new object.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="c6fcb-130">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c6fcb-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="340a8-130">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="340a8-130">Return value</span></span>
 
-<span data-ttu-id="c6fcb-131">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-131">This method does not return a value.</span></span>
+<span data-ttu-id="340a8-131">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="340a8-131">This method does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c6fcb-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="c6fcb-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="340a8-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="340a8-132">Remarks</span></span>
 
-<span data-ttu-id="c6fcb-133">Qualquer parâmetro não especificado permanece inalterado no registro modificado.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-133">Any parameter not specified is left unchanged in the modified record.</span></span>
+<span data-ttu-id="340a8-133">Qualquer parâmetro não especificado permanece inalterado no registro modificado.</span><span class="sxs-lookup"><span data-stu-id="340a8-133">Any parameter not specified is left unchanged in the modified record.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="c6fcb-134">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c6fcb-134">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="340a8-134">Requisitos</span><span class="sxs-lookup"><span data-stu-id="340a8-134">Requirements</span></span>
 
 
 
-| <span data-ttu-id="c6fcb-135">Requisito</span><span class="sxs-lookup"><span data-stu-id="c6fcb-135">Requirement</span></span> | <span data-ttu-id="c6fcb-136">Valor</span><span class="sxs-lookup"><span data-stu-id="c6fcb-136">Value</span></span> |
+| <span data-ttu-id="340a8-135">Requisito</span><span class="sxs-lookup"><span data-stu-id="340a8-135">Requirement</span></span> | <span data-ttu-id="340a8-136">Valor</span><span class="sxs-lookup"><span data-stu-id="340a8-136">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="c6fcb-137">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c6fcb-137">Minimum supported client</span></span><br/> | <span data-ttu-id="c6fcb-138">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="c6fcb-138">None supported</span></span><br/>                                                              |
-| <span data-ttu-id="c6fcb-139">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c6fcb-139">Minimum supported server</span></span><br/> | <span data-ttu-id="c6fcb-140">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="c6fcb-140">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                   |
-| <span data-ttu-id="c6fcb-141">Namespace</span><span class="sxs-lookup"><span data-stu-id="c6fcb-141">Namespace</span></span><br/>                | <span data-ttu-id="c6fcb-142">\\MicrosoftDNS raiz</span><span class="sxs-lookup"><span data-stu-id="c6fcb-142">Root\\MicrosoftDNS</span></span><br/>                                                          |
-| <span data-ttu-id="c6fcb-143">MOF</span><span class="sxs-lookup"><span data-stu-id="c6fcb-143">MOF</span></span><br/>                      | <dl> <span data-ttu-id="c6fcb-144"><dt>Dnsprov. mof</dt></span><span class="sxs-lookup"><span data-stu-id="c6fcb-144"><dt>Dnsprov.mof</dt></span></span> </dl> |
+| <span data-ttu-id="340a8-137">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="340a8-137">Minimum supported client</span></span><br/> | <span data-ttu-id="340a8-138">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="340a8-138">None supported</span></span><br/>                                                              |
+| <span data-ttu-id="340a8-139">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="340a8-139">Minimum supported server</span></span><br/> | <span data-ttu-id="340a8-140">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="340a8-140">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                   |
+| <span data-ttu-id="340a8-141">Namespace</span><span class="sxs-lookup"><span data-stu-id="340a8-141">Namespace</span></span><br/>                | <span data-ttu-id="340a8-142">\\MicrosoftDNS raiz</span><span class="sxs-lookup"><span data-stu-id="340a8-142">Root\\MicrosoftDNS</span></span><br/>                                                          |
+| <span data-ttu-id="340a8-143">MOF</span><span class="sxs-lookup"><span data-stu-id="340a8-143">MOF</span></span><br/>                      | <dl> <span data-ttu-id="340a8-144"><dt>Dnsprov. mof</dt></span><span class="sxs-lookup"><span data-stu-id="340a8-144"><dt>Dnsprov.mof</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="c6fcb-145">Consulte também</span><span class="sxs-lookup"><span data-stu-id="c6fcb-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="340a8-145">Confira também</span><span class="sxs-lookup"><span data-stu-id="340a8-145">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c6fcb-146">**MicrosoftDNS \_ winstype**</span><span class="sxs-lookup"><span data-stu-id="c6fcb-146">**MicrosoftDNS\_WINSType**</span></span>](microsoftdns-winstype.md)
+[<span data-ttu-id="340a8-146">**MicrosoftDNS \_ winstype**</span><span class="sxs-lookup"><span data-stu-id="340a8-146">**MicrosoftDNS\_WINSType**</span></span>](microsoftdns-winstype.md)
 </dt> <dt>
 
-[<span data-ttu-id="c6fcb-147">**Método CreateInstanceFromPropertyData da \_ classe winstype MicrosoftDNS**</span><span class="sxs-lookup"><span data-stu-id="c6fcb-147">**CreateInstanceFromPropertyData Method of the MicrosoftDNS\_WINSType Class**</span></span>](microsoftdns-winstype-createinstancefrompropertydata.md)
+[<span data-ttu-id="340a8-147">**Método CreateInstanceFromPropertyData da \_ classe winstype MicrosoftDNS**</span><span class="sxs-lookup"><span data-stu-id="340a8-147">**CreateInstanceFromPropertyData Method of the MicrosoftDNS\_WINSType Class**</span></span>](microsoftdns-winstype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[<span data-ttu-id="c6fcb-148">**MicrosoftDNS \_ ResourceRecord**</span><span class="sxs-lookup"><span data-stu-id="c6fcb-148">**MicrosoftDNS\_ResourceRecord**</span></span>](microsoftdns-resourcerecord.md)
+[<span data-ttu-id="340a8-148">**MicrosoftDNS \_ ResourceRecord**</span><span class="sxs-lookup"><span data-stu-id="340a8-148">**MicrosoftDNS\_ResourceRecord**</span></span>](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645843"
 ---
-# <a name="cbaserenderercbaserenderer-destructor"></a><span data-ttu-id="c4acd-103">Destruidor CBaseRenderer. ~ CBaseRenderer</span><span class="sxs-lookup"><span data-stu-id="c4acd-103">CBaseRenderer.~CBaseRenderer destructor</span></span>
+# <a name="cbaserenderercbaserenderer-destructor"></a><span data-ttu-id="9fa48-103">Destruidor CBaseRenderer. ~ CBaseRenderer</span><span class="sxs-lookup"><span data-stu-id="9fa48-103">CBaseRenderer.~CBaseRenderer destructor</span></span>
 
-<span data-ttu-id="c4acd-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="c4acd-104">Destructor method.</span></span>
+<span data-ttu-id="9fa48-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="9fa48-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c4acd-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c4acd-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9fa48-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9fa48-105">Syntax</span></span>
 
 
 ```C++
@@ -32,11 +32,11 @@ ms.locfileid: "103645843"
 
 
 
-## <a name="see-also"></a><span data-ttu-id="c4acd-106">Confira também</span><span class="sxs-lookup"><span data-stu-id="c4acd-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9fa48-106">Confira também</span><span class="sxs-lookup"><span data-stu-id="9fa48-106">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c4acd-107">**Classe CBaseRenderer**</span><span class="sxs-lookup"><span data-stu-id="c4acd-107">**CBaseRenderer Class**</span></span>](cbaserenderer.md)
+[<span data-ttu-id="9fa48-107">**Classe CBaseRenderer**</span><span class="sxs-lookup"><span data-stu-id="9fa48-107">**CBaseRenderer Class**</span></span>](cbaserenderer.md)
 </dt> </dl>
 
  

@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644770"
 ---
-# <a name="writebackroothintdatafile-method-of-the-microsoftdns_roothints-class"></a><span data-ttu-id="dc214-106">Método WriteBackRootHintDatafile da \_ classe RootHints MicrosoftDNS</span><span class="sxs-lookup"><span data-stu-id="dc214-106">WriteBackRootHintDatafile method of the MicrosoftDNS\_RootHints class</span></span>
+# <a name="writebackroothintdatafile-method-of-the-microsoftdns_roothints-class"></a><span data-ttu-id="17f38-106">Método WriteBackRootHintDatafile da \_ classe RootHints MicrosoftDNS</span><span class="sxs-lookup"><span data-stu-id="17f38-106">WriteBackRootHintDatafile method of the MicrosoftDNS\_RootHints class</span></span>
 
-<span data-ttu-id="dc214-107">O método **WriteBackRootHintDatafile** grava o RootHints de volta no arquivo de cache DNS.</span><span class="sxs-lookup"><span data-stu-id="dc214-107">The **WriteBackRootHintDatafile** method writes the RootHints back to the DNS Cache file.</span></span>
+<span data-ttu-id="17f38-107">O método **WriteBackRootHintDatafile** grava o RootHints de volta no arquivo de cache DNS.</span><span class="sxs-lookup"><span data-stu-id="17f38-107">The **WriteBackRootHintDatafile** method writes the RootHints back to the DNS Cache file.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="dc214-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="dc214-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="17f38-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="17f38-108">Syntax</span></span>
 
 
 ```mof
@@ -36,35 +36,35 @@ void WriteBackRootHintDatafile();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="dc214-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="dc214-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="17f38-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="17f38-109">Parameters</span></span>
 
-<span data-ttu-id="dc214-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="dc214-110">This method has no parameters.</span></span>
+<span data-ttu-id="17f38-110">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="17f38-110">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="dc214-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="dc214-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="17f38-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="17f38-111">Return value</span></span>
 
-<span data-ttu-id="dc214-112">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="dc214-112">This method does not return a value.</span></span>
+<span data-ttu-id="17f38-112">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="17f38-112">This method does not return a value.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="dc214-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="dc214-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="17f38-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="17f38-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="dc214-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="dc214-114">Requirement</span></span> | <span data-ttu-id="dc214-115">Valor</span><span class="sxs-lookup"><span data-stu-id="dc214-115">Value</span></span> |
+| <span data-ttu-id="17f38-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="17f38-114">Requirement</span></span> | <span data-ttu-id="17f38-115">Valor</span><span class="sxs-lookup"><span data-stu-id="17f38-115">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc214-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc214-116">Minimum supported client</span></span><br/> | <span data-ttu-id="dc214-117">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="dc214-117">None supported</span></span><br/>                                                              |
-| <span data-ttu-id="dc214-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc214-118">Minimum supported server</span></span><br/> | <span data-ttu-id="dc214-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="dc214-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                   |
-| <span data-ttu-id="dc214-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="dc214-120">Namespace</span></span><br/>                | <span data-ttu-id="dc214-121">\\MicrosoftDNS raiz</span><span class="sxs-lookup"><span data-stu-id="dc214-121">Root\\MicrosoftDNS</span></span><br/>                                                          |
-| <span data-ttu-id="dc214-122">MOF</span><span class="sxs-lookup"><span data-stu-id="dc214-122">MOF</span></span><br/>                      | <dl> <span data-ttu-id="dc214-123"><dt>Dnsprov. mof</dt></span><span class="sxs-lookup"><span data-stu-id="dc214-123"><dt>Dnsprov.mof</dt></span></span> </dl> |
+| <span data-ttu-id="17f38-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="17f38-116">Minimum supported client</span></span><br/> | <span data-ttu-id="17f38-117">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="17f38-117">None supported</span></span><br/>                                                              |
+| <span data-ttu-id="17f38-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="17f38-118">Minimum supported server</span></span><br/> | <span data-ttu-id="17f38-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="17f38-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                   |
+| <span data-ttu-id="17f38-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="17f38-120">Namespace</span></span><br/>                | <span data-ttu-id="17f38-121">\\MicrosoftDNS raiz</span><span class="sxs-lookup"><span data-stu-id="17f38-121">Root\\MicrosoftDNS</span></span><br/>                                                          |
+| <span data-ttu-id="17f38-122">MOF</span><span class="sxs-lookup"><span data-stu-id="17f38-122">MOF</span></span><br/>                      | <dl> <span data-ttu-id="17f38-123"><dt>Dnsprov. mof</dt></span><span class="sxs-lookup"><span data-stu-id="17f38-123"><dt>Dnsprov.mof</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="dc214-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="dc214-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="17f38-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="17f38-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="dc214-125">**MicrosoftDNS \_ RootHints**</span><span class="sxs-lookup"><span data-stu-id="dc214-125">**MicrosoftDNS\_RootHints**</span></span>](microsoftdns-roothints.md)
+[<span data-ttu-id="17f38-125">**MicrosoftDNS \_ RootHints**</span><span class="sxs-lookup"><span data-stu-id="17f38-125">**MicrosoftDNS\_RootHints**</span></span>](microsoftdns-roothints.md)
 </dt> <dt>
 
-[<span data-ttu-id="dc214-126">**Método getdistinguiname da classe MicrosoftDNS \_ RootHints**</span><span class="sxs-lookup"><span data-stu-id="dc214-126">**GetDistinguishedName Method of the MicrosoftDNS\_RootHints Class**</span></span>](microsoftdns-roothints-getdistinguishedname.md)
+[<span data-ttu-id="17f38-126">**Método getdistinguiname da classe MicrosoftDNS \_ RootHints**</span><span class="sxs-lookup"><span data-stu-id="17f38-126">**GetDistinguishedName Method of the MicrosoftDNS\_RootHints Class**</span></span>](microsoftdns-roothints-getdistinguishedname.md)
 </dt> </dl>
 
  

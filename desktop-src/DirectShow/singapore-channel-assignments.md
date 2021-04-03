@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645835"
 ---
-# <a name="singapore-channel-assignments"></a><span data-ttu-id="13f1f-103">Atribuições de canal de Cingapura</span><span class="sxs-lookup"><span data-stu-id="13f1f-103">Singapore Channel Assignments</span></span>
+# <a name="singapore-channel-assignments"></a><span data-ttu-id="5c0eb-103">Atribuições de canal de Cingapura</span><span class="sxs-lookup"><span data-stu-id="5c0eb-103">Singapore Channel Assignments</span></span>
 
-<span data-ttu-id="13f1f-104">Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Cingapura.</span><span class="sxs-lookup"><span data-stu-id="13f1f-104">This topic lists the frequency tables used for analog TV tuning for Singapore.</span></span>
+<span data-ttu-id="5c0eb-104">Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Cingapura.</span><span class="sxs-lookup"><span data-stu-id="5c0eb-104">This topic lists the frequency tables used for analog TV tuning for Singapore.</span></span>
 
-<span data-ttu-id="13f1f-105">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="13f1f-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="5c0eb-105">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="5c0eb-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="13f1f-106">As seguintes atribuições de canal foram introduzidas no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="13f1f-106">The following channel assignments were introduced in Windows 7.</span></span> <span data-ttu-id="13f1f-107">Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.</span><span class="sxs-lookup"><span data-stu-id="13f1f-107">Previously, the [Unicable Frequency Table](unicable-frequency-table.md) was used.</span></span>
+<span data-ttu-id="5c0eb-106">As seguintes atribuições de canal foram introduzidas no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="5c0eb-106">The following channel assignments were introduced in Windows 7.</span></span> <span data-ttu-id="5c0eb-107">Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.</span><span class="sxs-lookup"><span data-stu-id="5c0eb-107">Previously, the [Unicable Frequency Table](unicable-frequency-table.md) was used.</span></span>
 
--   [<span data-ttu-id="13f1f-108">Atribuições de difusão</span><span class="sxs-lookup"><span data-stu-id="13f1f-108">Broadcast Assignments</span></span>](#broadcast-assignments)
--   [<span data-ttu-id="13f1f-109">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="13f1f-109">Cable Assignments</span></span>](#cable-assignments)
--   [<span data-ttu-id="13f1f-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="13f1f-110">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="5c0eb-108">Atribuições de difusão</span><span class="sxs-lookup"><span data-stu-id="5c0eb-108">Broadcast Assignments</span></span>](#broadcast-assignments)
+-   [<span data-ttu-id="5c0eb-109">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="5c0eb-109">Cable Assignments</span></span>](#cable-assignments)
+-   [<span data-ttu-id="5c0eb-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5c0eb-110">Related topics</span></span>](#related-topics)
 
-## <a name="broadcast-assignments"></a><span data-ttu-id="13f1f-111">Atribuições de difusão</span><span class="sxs-lookup"><span data-stu-id="13f1f-111">Broadcast Assignments</span></span>
+## <a name="broadcast-assignments"></a><span data-ttu-id="5c0eb-111">Atribuições de difusão</span><span class="sxs-lookup"><span data-stu-id="5c0eb-111">Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -102,7 +102,7 @@ ms.locfileid: "103645835"
        855250000L,      // 69
 ```
 
-## <a name="cable-assignments"></a><span data-ttu-id="13f1f-112">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="13f1f-112">Cable Assignments</span></span>
+## <a name="cable-assignments"></a><span data-ttu-id="5c0eb-112">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="5c0eb-112">Cable Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -179,11 +179,11 @@ ms.locfileid: "103645835"
        855250000L,      // 69 TV69
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="13f1f-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="13f1f-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5c0eb-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5c0eb-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="13f1f-114">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="13f1f-114">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="5c0eb-114">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="5c0eb-114">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  
