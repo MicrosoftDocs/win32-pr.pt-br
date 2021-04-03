@@ -18,7 +18,7 @@ A tabela a seguir fornece uma visão geral das funções não principais para a 
 
 
 
-| Funções adicionais                                                   | Description                       |
+| Funções adicionais                                                   | Descrição                       |
 |------------------------------------------------------------------------|-----------------------------------|
 | [**WSManGetErrorMessage**](/windows/desktop/api/Wsman/nf-wsman-wsmangeterrormessage)                   | Obtém mensagens de erro.              |
 | [**WSManGetSessionOptionAsDword**](/windows/desktop/api/Wsman/nf-wsman-wsmangetsessionoptionasdword)   | Obtém as opções de sessão como um DWORD.  |

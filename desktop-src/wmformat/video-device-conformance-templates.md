@@ -39,7 +39,7 @@ As tabelas a seguir listam os modelos de conformidade do dispositivo e os parâm
 | Taxa máxima de quadros                       | 15 fps                                                                                |
 | Taxa de bits máxima                         | 96 kbps                                                                               |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 20 (cerca de 3,4 segundos a taxa de bits máxima)                                            |
-| Codificação entrelaçada                      | Não                                                                                    |
+| Codificação entrelaçada                      | No                                                                                    |
 
 
 
@@ -57,7 +57,7 @@ As tabelas a seguir listam os modelos de conformidade do dispositivo e os parâm
 | Taxa máxima de quadros                       | 15 fps @ 352 x 28824 de FPS @ 320 x 240<br/>                                      |
 | Taxa de bits máxima                         | 384 kbps                                                                             |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 77 (cerca de 3,3 segundos a taxa máxima de bits)                                           |
-| Codificação entrelaçada                      | Não                                                                                   |
+| Codificação entrelaçada                      | No                                                                                   |
 
 
 
@@ -79,7 +79,7 @@ Um fluxo que está em conformidade com as limitações de algoritmos do perfil s
 | Taxa máxima de quadros                       | 30 fps                                      |
 | Taxa de bits máxima                         | 2 Mbps                                      |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 306 (cerca de 2,5 segundos a taxa máxima de bits) |
-| Codificação entrelaçada                      | Não                                          |
+| Codificação entrelaçada                      | No                                          |
 
 
 
@@ -97,7 +97,7 @@ Um fluxo que está em conformidade com as limitações de algoritmos do perfil s
 | Taxa máxima de quadros                       | 30 fps @ 720 x 48025 de FPS @ 720 x 576<br/>                                                                        |
 | Taxa de bits máxima                         | 10 Mbps                                                                                                                |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 611 (cerca de 1 segundo na taxa de bits máxima)                                                                               |
-| Codificação entrelaçada                      | Sim                                                                                                                    |
+| Codificação entrelaçada                      | Yes                                                                                                                    |
 
 
 
@@ -115,7 +115,7 @@ Um fluxo que está em conformidade com as limitações de algoritmos do perfil s
 | Taxa máxima de quadros                       | 30 fps @ 1920 x 108060 de FPS @ 1280 x 720<br/>                                                                                                                    |
 | Taxa de bits máxima                         | 20 Mbps                                                                                                                                                               |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 2442 (cerca de 2,66 segundos a taxa máxima de bits)                                                                                                                         |
-| Codificação entrelaçada                      | Sim                                                                                                                                                                   |
+| Codificação entrelaçada                      | Yes                                                                                                                                                                   |
 
 
 
@@ -151,7 +151,7 @@ As tabelas a seguir listam os parâmetros dos modelos de conformidade do disposi
 | Taxa máxima de quadros                       | 30 fps                                      |
 | Taxa de bits máxima                         | 192Kbps                                    |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 39 (cerca de 3,26 segundos a taxa máxima de bits) |
-| Codificação entrelaçada                      | Não                                          |
+| Codificação entrelaçada                      | No                                          |
 
 
 
@@ -168,7 +168,7 @@ As tabelas a seguir listam os parâmetros dos modelos de conformidade do disposi
 | Taxa máxima de quadros                       | 30 fps                                      |
 | Taxa de bits máxima                         | 384 kbps                                    |
 | Tamanho máximo do buffer (em unidades de 16384 bits) | 77 (cerca de 3,26 segundos a taxa máxima de bits) |
-| Codificação entrelaçada                      | Não                                          |
+| Codificação entrelaçada                      | No                                          |
 
 
 

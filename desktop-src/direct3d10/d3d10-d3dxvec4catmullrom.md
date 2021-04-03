@@ -130,7 +130,7 @@ t2 = (p4 - p2) / 2
 
 
 
-em que:
+onde:
 
 v1 é o conteúdo de pV0.
 

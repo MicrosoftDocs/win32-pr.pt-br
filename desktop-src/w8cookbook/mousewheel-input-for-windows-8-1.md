@@ -19,7 +19,7 @@ ms.locfileid: "103822465"
 Servidores-Windows Server 2012 R2  
 </dl>
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Em Windows 8.1, os eventos MouseWheel não são mais entregues com base no foco do teclado como nas versões anteriores do Windows. Em Windows 8.1, se o mouse estiver focalizando um aplicativo da loja, o MouseWheel será entregue a esse aplicativo; para fins de compatibilidade, no entanto, se o mouse estiver focalizando um aplicativo de área de trabalho, o MouseWheel continuará a ser entregue com base no foco do teclado.
 

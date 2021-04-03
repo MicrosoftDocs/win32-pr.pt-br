@@ -19,7 +19,7 @@ ms.locfileid: "103916580"
 
 O elemento com o **descendente** definido como ativo não tem uma função de contêiner (**ComboBox**, **Grid**, **ListBox**, **menu**, **MenuBar** **, Radiogroup,** **Tree**, **árvore**, **tablist**, **Row**).
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

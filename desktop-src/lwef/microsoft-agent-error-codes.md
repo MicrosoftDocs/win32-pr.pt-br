@@ -19,7 +19,7 @@ O Microsoft Agent retorna as seguintes informações de erro:
 
 
 
-| Número do erro | Valor hex  | Description                                                                                                                                                                                                                                                                |
+| Número do erro | Valor hex  | Descrição                                                                                                                                                                                                                                                                |
 |--------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -2147213311  | 0x80042001 | O cliente do Microsoft Agent especificado não foi encontrado.                                                                                                                                                                                                                        |
 | -2147213310  | 0x80042002 | A ID do caractere não é válida. Verifique se a ID foi definida e se está grafada corretamente. <br/>                                                                                                                                                                   |
