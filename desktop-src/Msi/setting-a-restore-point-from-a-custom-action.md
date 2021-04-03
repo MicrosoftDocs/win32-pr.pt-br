@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104091767"
 ---
-# <a name="setting-a-restore-point-from-a-custom-action"></a><span data-ttu-id="ffb5f-103">Definindo um ponto de restauração de uma ação personalizada</span><span class="sxs-lookup"><span data-stu-id="ffb5f-103">Setting a Restore Point from a Custom Action</span></span>
+# <a name="setting-a-restore-point-from-a-custom-action"></a><span data-ttu-id="484f7-103">Definindo um ponto de restauração de uma ação personalizada</span><span class="sxs-lookup"><span data-stu-id="484f7-103">Setting a Restore Point from a Custom Action</span></span>
 
-<span data-ttu-id="ffb5f-104">As ações personalizadas não devem chamar a função [**SRSetRestorePoint**](/windows/win32/api/srrestoreptapi/nf-srrestoreptapi-srsetrestorepointa) porque isso pode fazer com que um ponto de entrada de restauração seja gravado no meio de uma instalação de Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="ffb5f-104">Custom actions must not call the [**SRSetRestorePoint**](/windows/win32/api/srrestoreptapi/nf-srrestoreptapi-srsetrestorepointa) function because this may result in a restore entry point being written into the middle of a Windows Installer installation.</span></span>
+<span data-ttu-id="484f7-104">As ações personalizadas não devem chamar a função [**SRSetRestorePoint**](/windows/win32/api/srrestoreptapi/nf-srrestoreptapi-srsetrestorepointa) porque isso pode fazer com que um ponto de entrada de restauração seja gravado no meio de uma instalação de Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="484f7-104">Custom actions must not call the [**SRSetRestorePoint**](/windows/win32/api/srrestoreptapi/nf-srrestoreptapi-srsetrestorepointa) function because this may result in a restore entry point being written into the middle of a Windows Installer installation.</span></span>
 
-<span data-ttu-id="ffb5f-105">Para obter mais informações, consulte [pontos de restauração do sistema e o Windows Installer](system-restore-points-and-the-windows-installer.md).</span><span class="sxs-lookup"><span data-stu-id="ffb5f-105">For more information, see [System Restore Points and the Windows Installer](system-restore-points-and-the-windows-installer.md).</span></span>
+<span data-ttu-id="484f7-105">Para obter mais informações, consulte [pontos de restauração do sistema e o Windows Installer](system-restore-points-and-the-windows-installer.md).</span><span class="sxs-lookup"><span data-stu-id="484f7-105">For more information, see [System Restore Points and the Windows Installer](system-restore-points-and-the-windows-installer.md).</span></span>
 
  
 

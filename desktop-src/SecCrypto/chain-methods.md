@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829410"
 ---
-# <a name="chain-methods"></a><span data-ttu-id="cd344-103">Métodos de cadeia</span><span class="sxs-lookup"><span data-stu-id="cd344-103">Chain Methods</span></span>
+# <a name="chain-methods"></a><span data-ttu-id="881a5-103">Métodos de cadeia</span><span class="sxs-lookup"><span data-stu-id="881a5-103">Chain Methods</span></span>
 
-<span data-ttu-id="cd344-104">O objeto [**Chain**](chain.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="cd344-104">The [**Chain**](chain.md) object exposes the following methods.</span></span>
+<span data-ttu-id="881a5-104">O objeto [**Chain**](chain.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="881a5-104">The [**Chain**](chain.md) object exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="cd344-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="cd344-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="881a5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="881a5-105">In this section</span></span>
 
--   [<span data-ttu-id="cd344-106">**Método ApplicationPolicies**</span><span class="sxs-lookup"><span data-stu-id="cd344-106">**ApplicationPolicies Method**</span></span>](chain-applicationpolicies.md)
--   [<span data-ttu-id="cd344-107">**Método de build**</span><span class="sxs-lookup"><span data-stu-id="cd344-107">**Build Method**</span></span>](chain-build.md)
--   [<span data-ttu-id="cd344-108">**Método CertificatePolicies**</span><span class="sxs-lookup"><span data-stu-id="cd344-108">**CertificatePolicies Method**</span></span>](chain-certificatepolicies.md)
--   [<span data-ttu-id="cd344-109">**Método ExtendedErrorInfo**</span><span class="sxs-lookup"><span data-stu-id="cd344-109">**ExtendedErrorInfo Method**</span></span>](chain-extendederrorinfo.md)
+-   [<span data-ttu-id="881a5-106">**Método ApplicationPolicies**</span><span class="sxs-lookup"><span data-stu-id="881a5-106">**ApplicationPolicies Method**</span></span>](chain-applicationpolicies.md)
+-   [<span data-ttu-id="881a5-107">**Método de build**</span><span class="sxs-lookup"><span data-stu-id="881a5-107">**Build Method**</span></span>](chain-build.md)
+-   [<span data-ttu-id="881a5-108">**Método CertificatePolicies**</span><span class="sxs-lookup"><span data-stu-id="881a5-108">**CertificatePolicies Method**</span></span>](chain-certificatepolicies.md)
+-   [<span data-ttu-id="881a5-109">**Método ExtendedErrorInfo**</span><span class="sxs-lookup"><span data-stu-id="881a5-109">**ExtendedErrorInfo Method**</span></span>](chain-extendederrorinfo.md)
 
  
 

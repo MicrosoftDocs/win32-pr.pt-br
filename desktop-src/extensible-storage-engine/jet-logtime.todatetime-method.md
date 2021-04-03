@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663503"
 ---
-# <a name="jet_logtimetodatetime-method"></a><span data-ttu-id="8f819-103">JET_LOGTIME. Método ToDateTime</span><span class="sxs-lookup"><span data-stu-id="8f819-103">JET_LOGTIME.ToDateTime method</span></span>
+# <a name="jet_logtimetodatetime-method"></a><span data-ttu-id="c2da4-103">JET_LOGTIME. Método ToDateTime</span><span class="sxs-lookup"><span data-stu-id="c2da4-103">JET_LOGTIME.ToDateTime method</span></span>
 
-<span data-ttu-id="8f819-104">Gere uma representação DateTime desta JET_LOGTIME.</span><span class="sxs-lookup"><span data-stu-id="8f819-104">Generate a DateTime representation of this JET_LOGTIME.</span></span>
+<span data-ttu-id="c2da4-104">Gere uma representação DateTime desta JET_LOGTIME.</span><span class="sxs-lookup"><span data-stu-id="c2da4-104">Generate a DateTime representation of this JET_LOGTIME.</span></span>
 
-<span data-ttu-id="8f819-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8f819-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="8f819-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8f819-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c2da4-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c2da4-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c2da4-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c2da4-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8f819-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8f819-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c2da4-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c2da4-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -54,21 +54,21 @@ returnValue = instance.ToDateTime()
 public Nullable<DateTime> ToDateTime()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="8f819-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="8f819-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="c2da4-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c2da4-108">Return value</span></span>
 
-<span data-ttu-id="8f819-109">Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\></span><span class="sxs-lookup"><span data-stu-id="8f819-109">Type: [System.Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\></span></span>  
-<span data-ttu-id="8f819-110">Um DateTime que representa o JET_LOGTIME.</span><span class="sxs-lookup"><span data-stu-id="8f819-110">A DateTime representing the JET_LOGTIME.</span></span> <span data-ttu-id="8f819-111">Se o JET_LOGTIME for NULL, NULL será retornado.</span><span class="sxs-lookup"><span data-stu-id="8f819-111">If the JET_LOGTIME is null then null is returned.</span></span>  
+<span data-ttu-id="c2da4-109">Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\></span><span class="sxs-lookup"><span data-stu-id="c2da4-109">Type: [System.Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\></span></span>  
+<span data-ttu-id="c2da4-110">Um DateTime que representa o JET_LOGTIME.</span><span class="sxs-lookup"><span data-stu-id="c2da4-110">A DateTime representing the JET_LOGTIME.</span></span> <span data-ttu-id="c2da4-111">Se o JET_LOGTIME for NULL, NULL será retornado.</span><span class="sxs-lookup"><span data-stu-id="c2da4-111">If the JET_LOGTIME is null then null is returned.</span></span>  
 
-#### <a name="implements"></a><span data-ttu-id="8f819-112">Implementações</span><span class="sxs-lookup"><span data-stu-id="8f819-112">Implements</span></span>
+#### <a name="implements"></a><span data-ttu-id="c2da4-112">Implementações</span><span class="sxs-lookup"><span data-stu-id="c2da4-112">Implements</span></span>
 
-[<span data-ttu-id="8f819-113">IJET_LOGTIME. ToDateTime ()</span><span class="sxs-lookup"><span data-stu-id="8f819-113">IJET_LOGTIME.ToDateTime()</span></span>](./ijet-logtime.todatetime-method.md)  
+[<span data-ttu-id="c2da4-113">IJET_LOGTIME. ToDateTime ()</span><span class="sxs-lookup"><span data-stu-id="c2da4-113">IJET_LOGTIME.ToDateTime()</span></span>](./ijet-logtime.todatetime-method.md)  
 
-## <a name="see-also"></a><span data-ttu-id="8f819-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="8f819-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c2da4-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="c2da4-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="8f819-115">Referência</span><span class="sxs-lookup"><span data-stu-id="8f819-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c2da4-115">Referência</span><span class="sxs-lookup"><span data-stu-id="c2da4-115">Reference</span></span>
 
-[<span data-ttu-id="8f819-116">Estrutura de JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="8f819-116">JET_LOGTIME structure</span></span>](./jet-logtime-structure2.md)
+[<span data-ttu-id="c2da4-116">Estrutura de JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="c2da4-116">JET_LOGTIME structure</span></span>](./jet-logtime-structure2.md)
 
-[<span data-ttu-id="8f819-117">Membros do JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="8f819-117">JET_LOGTIME members</span></span>](./jet-logtime-members.md)
+[<span data-ttu-id="c2da4-117">Membros do JET_LOGTIME</span><span class="sxs-lookup"><span data-stu-id="c2da4-117">JET_LOGTIME members</span></span>](./jet-logtime-members.md)
 
-[<span data-ttu-id="8f819-118">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8f819-118">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c2da4-118">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c2da4-118">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

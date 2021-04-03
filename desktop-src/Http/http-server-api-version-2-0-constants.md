@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005857"
 ---
-# <a name="http-server-api-version-20-constants"></a><span data-ttu-id="b877c-103">Constantes da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="b877c-103">HTTP Server API Version 2.0 Constants</span></span>
+# <a name="http-server-api-version-20-constants"></a><span data-ttu-id="5c684-103">Constantes da API do servidor HTTP versão 2,0</span><span class="sxs-lookup"><span data-stu-id="5c684-103">HTTP Server API Version 2.0 Constants</span></span>
 
-<span data-ttu-id="b877c-104">As funções da API do servidor HTTP versão 2,0 e estruturas podem usar as seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="b877c-104">The HTTP Server API version 2.0 functions, and structures may use the following constants:</span></span>
+<span data-ttu-id="5c684-104">As funções da API do servidor HTTP versão 2,0 e estruturas podem usar as seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="5c684-104">The HTTP Server API version 2.0 functions, and structures may use the following constants:</span></span>
 
--   [<span data-ttu-id="b877c-105">**\_Constantes http auth \_ Enable \_**</span><span class="sxs-lookup"><span data-stu-id="b877c-105">**HTTP\_AUTH\_ENABLE\_ Constants**</span></span>](http-auth-enable--constants.md)
--   [<span data-ttu-id="b877c-106">**\_Constantes de \_ campo de log http \_**</span><span class="sxs-lookup"><span data-stu-id="b877c-106">**HTTP\_LOG\_FIELD\_Constants**</span></span>](http-log-field--constants.md)
--   [<span data-ttu-id="b877c-107">**\_Constantes de \_ sinalizador de log http \_**</span><span class="sxs-lookup"><span data-stu-id="b877c-107">**HTTP\_LOGGING\_FLAG\_Constants**</span></span>](http-logging-flag--constants.md)
--   [<span data-ttu-id="b877c-108">**\_Constantes de \_ sinalizador de resposta http \_**</span><span class="sxs-lookup"><span data-stu-id="b877c-108">**HTTP\_RESPONSE\_FLAG\_ Constants**</span></span>](http-response-flag--constants.md)
+-   [<span data-ttu-id="5c684-105">**\_Constantes http auth \_ Enable \_**</span><span class="sxs-lookup"><span data-stu-id="5c684-105">**HTTP\_AUTH\_ENABLE\_ Constants**</span></span>](http-auth-enable--constants.md)
+-   [<span data-ttu-id="5c684-106">**\_Constantes de \_ campo de log http \_**</span><span class="sxs-lookup"><span data-stu-id="5c684-106">**HTTP\_LOG\_FIELD\_Constants**</span></span>](http-log-field--constants.md)
+-   [<span data-ttu-id="5c684-107">**\_Constantes de \_ sinalizador de log http \_**</span><span class="sxs-lookup"><span data-stu-id="5c684-107">**HTTP\_LOGGING\_FLAG\_Constants**</span></span>](http-logging-flag--constants.md)
+-   [<span data-ttu-id="5c684-108">**\_Constantes de \_ sinalizador de resposta http \_**</span><span class="sxs-lookup"><span data-stu-id="5c684-108">**HTTP\_RESPONSE\_FLAG\_ Constants**</span></span>](http-response-flag--constants.md)
 
  
 

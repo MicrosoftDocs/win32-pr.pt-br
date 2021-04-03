@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640406"
 ---
-# <a name="example-code-for-searching-a-forest"></a><span data-ttu-id="2727c-104">Exemplo de código para pesquisar uma floresta</span><span class="sxs-lookup"><span data-stu-id="2727c-104">Example Code for Searching a Forest</span></span>
+# <a name="example-code-for-searching-a-forest"></a><span data-ttu-id="36b3c-104">Exemplo de código para pesquisar uma floresta</span><span class="sxs-lookup"><span data-stu-id="36b3c-104">Example Code for Searching a Forest</span></span>
 
-<span data-ttu-id="2727c-105">Este tópico contém um código de exemplo que pesquisa uma floresta.</span><span class="sxs-lookup"><span data-stu-id="2727c-105">This topic contains example code that searches a forest.</span></span>
+<span data-ttu-id="36b3c-105">Este tópico contém um código de exemplo que pesquisa uma floresta.</span><span class="sxs-lookup"><span data-stu-id="36b3c-105">This topic contains example code that searches a forest.</span></span>
 
-<span data-ttu-id="2727c-106">O exemplo de código C/C++ a seguir é associado à raiz do catálogo global e enumera o objeto único, que é a raiz da floresta, para que ele possa ser usado para Pesquisar toda a floresta.</span><span class="sxs-lookup"><span data-stu-id="2727c-106">The following C/C++ code example binds to the root of the Global Catalog and enumerates the single object, which is the root of the forest, so that it can be used to search the entire forest.</span></span>
+<span data-ttu-id="36b3c-106">O exemplo de código C/C++ a seguir é associado à raiz do catálogo global e enumera o objeto único, que é a raiz da floresta, para que ele possa ser usado para Pesquisar toda a floresta.</span><span class="sxs-lookup"><span data-stu-id="36b3c-106">The following C/C++ code example binds to the root of the Global Catalog and enumerates the single object, which is the root of the forest, so that it can be used to search the entire forest.</span></span>
 
 
 ```C++
@@ -32,9 +32,9 @@ Next
 
 
 
-<span data-ttu-id="2727c-107">O exemplo de código C/C++ a seguir contém uma função que retorna um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) usado para Pesquisar toda a floresta.</span><span class="sxs-lookup"><span data-stu-id="2727c-107">The following C/C++ code example contains a function that returns an [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) pointer used to search the entire forest.</span></span>
+<span data-ttu-id="36b3c-107">O exemplo de código C/C++ a seguir contém uma função que retorna um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) usado para Pesquisar toda a floresta.</span><span class="sxs-lookup"><span data-stu-id="36b3c-107">The following C/C++ code example contains a function that returns an [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) pointer used to search the entire forest.</span></span>
 
-<span data-ttu-id="2727c-108">A função executa uma ligação sem servidor com a raiz do catálogo global, enumera o único item, que é a raiz da floresta e pode ser usado para Pesquisar toda a floresta, chama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para o objeto e retorna esse ponteiro para ser usado pelo chamador para pesquisar a floresta.</span><span class="sxs-lookup"><span data-stu-id="2727c-108">The function performs a serverless bind to the root of the Global Catalog, enumerates the single item, which is the root of the forest and can be used to search the entire forest, calls [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) to get an [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) pointer to the object, and returns that pointer for use by the caller to search the forest.</span></span>
+<span data-ttu-id="36b3c-108">A função executa uma ligação sem servidor com a raiz do catálogo global, enumera o único item, que é a raiz da floresta e pode ser usado para Pesquisar toda a floresta, chama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para o objeto e retorna esse ponteiro para ser usado pelo chamador para pesquisar a floresta.</span><span class="sxs-lookup"><span data-stu-id="36b3c-108">The function performs a serverless bind to the root of the Global Catalog, enumerates the single item, which is the root of the forest and can be used to search the entire forest, calls [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) to get an [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) pointer to the object, and returns that pointer for use by the caller to search the forest.</span></span>
 
 
 ```C++

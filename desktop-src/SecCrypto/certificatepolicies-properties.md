@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829424"
 ---
-# <a name="certificatepolicies-properties"></a><span data-ttu-id="1db20-103">Propriedades de CertificatePolicies</span><span class="sxs-lookup"><span data-stu-id="1db20-103">CertificatePolicies Properties</span></span>
+# <a name="certificatepolicies-properties"></a><span data-ttu-id="270f4-103">Propriedades de CertificatePolicies</span><span class="sxs-lookup"><span data-stu-id="270f4-103">CertificatePolicies Properties</span></span>
 
-<span data-ttu-id="1db20-104">O objeto [**CertificatePolicies**](certificatepolicies.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="1db20-104">The [**CertificatePolicies**](certificatepolicies.md) object exposes the following properties.</span></span>
+<span data-ttu-id="270f4-104">O objeto [**CertificatePolicies**](certificatepolicies.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="270f4-104">The [**CertificatePolicies**](certificatepolicies.md) object exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="1db20-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1db20-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="270f4-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="270f4-105">In this section</span></span>
 
--   [<span data-ttu-id="1db20-106">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="1db20-106">**\_NewEnum Property**</span></span>](certificatepolicies-newenum.md)
--   [<span data-ttu-id="1db20-107">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="1db20-107">**Count Property**</span></span>](certificatepolicies-count.md)
--   [<span data-ttu-id="1db20-108">**Propriedade do item**</span><span class="sxs-lookup"><span data-stu-id="1db20-108">**Item Property**</span></span>](certificatepolicies-item.md)
+-   [<span data-ttu-id="270f4-106">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="270f4-106">**\_NewEnum Property**</span></span>](certificatepolicies-newenum.md)
+-   [<span data-ttu-id="270f4-107">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="270f4-107">**Count Property**</span></span>](certificatepolicies-count.md)
+-   [<span data-ttu-id="270f4-108">**Propriedade do item**</span><span class="sxs-lookup"><span data-stu-id="270f4-108">**Item Property**</span></span>](certificatepolicies-item.md)
 
  
 

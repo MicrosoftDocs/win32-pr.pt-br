@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103922606"
 ---
-# <a name="using-secure-socket-extensions"></a><span data-ttu-id="01709-103">Usando extensões de soquete seguro</span><span class="sxs-lookup"><span data-stu-id="01709-103">Using Secure Socket Extensions</span></span>
+# <a name="using-secure-socket-extensions"></a><span data-ttu-id="3eefe-103">Usando extensões de soquete seguro</span><span class="sxs-lookup"><span data-stu-id="3eefe-103">Using Secure Socket Extensions</span></span>
 
-<span data-ttu-id="01709-104">O código de exemplo a seguir demonstra o uso das funções de extensão de soquete de segurança do Winsock.</span><span class="sxs-lookup"><span data-stu-id="01709-104">The following example code demonstrates the usage of the Winsock secure socket extension functions.</span></span>
+<span data-ttu-id="3eefe-104">O código de exemplo a seguir demonstra o uso das funções de extensão de soquete de segurança do Winsock.</span><span class="sxs-lookup"><span data-stu-id="3eefe-104">The following example code demonstrates the usage of the Winsock secure socket extension functions.</span></span>
 
-## <a name="securing-a-socket"></a><span data-ttu-id="01709-105">Protegendo um soquete</span><span class="sxs-lookup"><span data-stu-id="01709-105">Securing a Socket</span></span>
+## <a name="securing-a-socket"></a><span data-ttu-id="3eefe-105">Protegendo um soquete</span><span class="sxs-lookup"><span data-stu-id="3eefe-105">Securing a Socket</span></span>
 
 
 ```C++
@@ -194,7 +194,7 @@ Return Value:
 
 
 
-## <a name="querying-the-security-on-a-socket"></a><span data-ttu-id="01709-106">Consultando a segurança em um soquete</span><span class="sxs-lookup"><span data-stu-id="01709-106">Querying the Security on a Socket</span></span>
+## <a name="querying-the-security-on-a-socket"></a><span data-ttu-id="3eefe-106">Consultando a segurança em um soquete</span><span class="sxs-lookup"><span data-stu-id="3eefe-106">Querying the Security on a Socket</span></span>
 
 
 ```C++
@@ -278,35 +278,35 @@ int QueryTcpSocketSecurity(IN SOCKET sock)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="01709-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="01709-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3eefe-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3eefe-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="01709-108">Sobre a plataforma de filtragem do Windows</span><span class="sxs-lookup"><span data-stu-id="01709-108">About Windows Filtering Platform</span></span>](../fwp/about-windows-filtering-platform.md)
+[<span data-ttu-id="3eefe-108">Sobre a plataforma de filtragem do Windows</span><span class="sxs-lookup"><span data-stu-id="3eefe-108">About Windows Filtering Platform</span></span>](../fwp/about-windows-filtering-platform.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-109">Exemplos de Winsock avançados usando extensões de soquete seguro</span><span class="sxs-lookup"><span data-stu-id="01709-109">Advanced Winsock Samples Using Secure Socket Extensions</span></span>](advanced-winsock-samples-using-secure-socket-extensions.md)
+[<span data-ttu-id="3eefe-109">Exemplos de Winsock avançados usando extensões de soquete seguro</span><span class="sxs-lookup"><span data-stu-id="3eefe-109">Advanced Winsock Samples Using Secure Socket Extensions</span></span>](advanced-winsock-samples-using-secure-socket-extensions.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-110">Aplicação da camada de aplicativo (EPA)</span><span class="sxs-lookup"><span data-stu-id="01709-110">Application Layer Enforcement (ALE)</span></span>](../fwp/application-layer-enforcement--ale-.md)
+[<span data-ttu-id="3eefe-110">Aplicação da camada de aplicativo (EPA)</span><span class="sxs-lookup"><span data-stu-id="3eefe-110">Application Layer Enforcement (ALE)</span></span>](../fwp/application-layer-enforcement--ale-.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-111">Configuração de IPsec</span><span class="sxs-lookup"><span data-stu-id="01709-111">IPsec Configuration</span></span>](../fwp/ipsec-configuration.md)
+[<span data-ttu-id="3eefe-111">Configuração de IPsec</span><span class="sxs-lookup"><span data-stu-id="3eefe-111">IPsec Configuration</span></span>](../fwp/ipsec-configuration.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-112">Funções IPsec</span><span class="sxs-lookup"><span data-stu-id="01709-112">IPsec Functions</span></span>](../fwp/fwp-ipsec-functions.md)
+[<span data-ttu-id="3eefe-112">Funções IPsec</span><span class="sxs-lookup"><span data-stu-id="3eefe-112">IPsec Functions</span></span>](../fwp/fwp-ipsec-functions.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-113">SSPI (interface do provedor de suporte de segurança)</span><span class="sxs-lookup"><span data-stu-id="01709-113">Security Support Provider Interface (SSPI)</span></span>](../rpc/security-support-provider-interface-sspi-.md)
+[<span data-ttu-id="3eefe-113">SSPI (interface do provedor de suporte de segurança)</span><span class="sxs-lookup"><span data-stu-id="3eefe-113">Security Support Provider Interface (SSPI)</span></span>](../rpc/security-support-provider-interface-sspi-.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-114">Plataforma de filtragem do Windows</span><span class="sxs-lookup"><span data-stu-id="01709-114">Windows Filtering Platform</span></span>](../fwp/windows-filtering-platform-start-page.md)
+[<span data-ttu-id="3eefe-114">Plataforma de filtragem do Windows</span><span class="sxs-lookup"><span data-stu-id="3eefe-114">Windows Filtering Platform</span></span>](../fwp/windows-filtering-platform-start-page.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-115">Funções da API da Windows Filtering Platform</span><span class="sxs-lookup"><span data-stu-id="01709-115">Windows Filtering Platform API Functions</span></span>](../fwp/fwp-functions.md)
+[<span data-ttu-id="3eefe-115">Funções da API da Windows Filtering Platform</span><span class="sxs-lookup"><span data-stu-id="3eefe-115">Windows Filtering Platform API Functions</span></span>](../fwp/fwp-functions.md)
 </dt> <dt>
 
-[<span data-ttu-id="01709-116">Extensões do Winsock Secure Socket</span><span class="sxs-lookup"><span data-stu-id="01709-116">Winsock Secure Socket Extensions</span></span>](winsock-secure-socket-extensions.md)
+[<span data-ttu-id="3eefe-116">Extensões do Winsock Secure Socket</span><span class="sxs-lookup"><span data-stu-id="3eefe-116">Winsock Secure Socket Extensions</span></span>](winsock-secure-socket-extensions.md)
 </dt> </dl>
 
  

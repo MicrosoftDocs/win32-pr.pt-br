@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636654"
 ---
-# <a name="ittsattributesw"></a><span data-ttu-id="c208b-103">ITTSAttributesW</span><span class="sxs-lookup"><span data-stu-id="c208b-103">ITTSAttributesW</span></span>
+# <a name="ittsattributesw"></a><span data-ttu-id="07962-103">ITTSAttributesW</span><span class="sxs-lookup"><span data-stu-id="07962-103">ITTSAttributesW</span></span>
 
-<span data-ttu-id="c208b-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="c208b-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="07962-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="07962-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
-<span data-ttu-id="c208b-105">O mecanismo deve oferecer suporte a [**atributos de densidade**](https://www.bing.com/search?q=**PitchSet**)e velocidade por meio dos métodos [**poPitchGet**](https://www.bing.com/search?q=**PitchGet**), [**speedset**](https://www.bing.com/search?q=**SpeedSet**)e [**SpeedGet**](https://www.bing.com/search?q=**SpeedGet**) .</span><span class="sxs-lookup"><span data-stu-id="c208b-105">The engine must support pitch and speed attributes through the [**PitchSet**](https://www.bing.com/search?q=**PitchSet**), [**PitchGet**](https://www.bing.com/search?q=**PitchGet**), [**SpeedSet**](https://www.bing.com/search?q=**SpeedSet**), and [**SpeedGet**](https://www.bing.com/search?q=**SpeedGet**) methods.</span></span>
+<span data-ttu-id="07962-105">O mecanismo deve oferecer suporte a [**atributos de densidade**](https://www.bing.com/search?q=**PitchSet**)e velocidade por meio dos métodos [**poPitchGet**](https://www.bing.com/search?q=**PitchGet**), [**speedset**](https://www.bing.com/search?q=**SpeedSet**)e [**SpeedGet**](https://www.bing.com/search?q=**SpeedGet**) .</span><span class="sxs-lookup"><span data-stu-id="07962-105">The engine must support pitch and speed attributes through the [**PitchSet**](https://www.bing.com/search?q=**PitchSet**), [**PitchGet**](https://www.bing.com/search?q=**PitchGet**), [**SpeedSet**](https://www.bing.com/search?q=**SpeedSet**), and [**SpeedGet**](https://www.bing.com/search?q=**SpeedGet**) methods.</span></span>
 
  
 

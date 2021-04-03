@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663131"
 ---
-# <a name="apijetindexrecordcount-method"></a><span data-ttu-id="6e3c6-103">Método API. JetIndexRecordCount</span><span class="sxs-lookup"><span data-stu-id="6e3c6-103">Api.JetIndexRecordCount method</span></span>
+# <a name="apijetindexrecordcount-method"></a><span data-ttu-id="8bfec-103">Método API. JetIndexRecordCount</span><span class="sxs-lookup"><span data-stu-id="8bfec-103">Api.JetIndexRecordCount method</span></span>
 
-<span data-ttu-id="6e3c6-104">Conta o número de entradas no índice atual a partir da posição atual para frente.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-104">Counts the number of entries in the current index from the current position forward.</span></span> <span data-ttu-id="6e3c6-105">A posição atual é incluída na contagem.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-105">The current position is included in the count.</span></span> <span data-ttu-id="6e3c6-106">A contagem pode ser maior que o número total de registros na tabela se o índice atual estiver sobre uma coluna de valores múltiplos e as instâncias da coluna tiverem vários valores.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-106">The count can be greater than the total number of records in the table if the current index is over a multi-valued column and instances of the column have multiple-values.</span></span> <span data-ttu-id="6e3c6-107">Se a tabela estiver vazia, 0 será retornado para a contagem.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-107">If the table is empty, then 0 will be returned for the count.</span></span>
+<span data-ttu-id="8bfec-104">Conta o número de entradas no índice atual a partir da posição atual para frente.</span><span class="sxs-lookup"><span data-stu-id="8bfec-104">Counts the number of entries in the current index from the current position forward.</span></span> <span data-ttu-id="8bfec-105">A posição atual é incluída na contagem.</span><span class="sxs-lookup"><span data-stu-id="8bfec-105">The current position is included in the count.</span></span> <span data-ttu-id="8bfec-106">A contagem pode ser maior que o número total de registros na tabela se o índice atual estiver sobre uma coluna de valores múltiplos e as instâncias da coluna tiverem vários valores.</span><span class="sxs-lookup"><span data-stu-id="8bfec-106">The count can be greater than the total number of records in the table if the current index is over a multi-valued column and instances of the column have multiple-values.</span></span> <span data-ttu-id="8bfec-107">Se a tabela estiver vazia, 0 será retornado para a contagem.</span><span class="sxs-lookup"><span data-stu-id="8bfec-107">If the table is empty, then 0 will be returned for the count.</span></span>
 
-<span data-ttu-id="6e3c6-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="6e3c6-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="8bfec-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8bfec-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="8bfec-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8bfec-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6e3c6-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6e3c6-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8bfec-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8bfec-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -65,40 +65,40 @@ public static void JetIndexRecordCount(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="6e3c6-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="6e3c6-111">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="8bfec-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8bfec-111">Parameters</span></span>
 
-  - <span data-ttu-id="6e3c6-112">sesid</span><span class="sxs-lookup"><span data-stu-id="6e3c6-112">sesid</span></span>  
-    <span data-ttu-id="6e3c6-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="8bfec-112">sesid</span><span class="sxs-lookup"><span data-stu-id="8bfec-112">sesid</span></span>  
+    <span data-ttu-id="8bfec-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="8bfec-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="6e3c6-114">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-114">The session to use.</span></span>
+    <span data-ttu-id="8bfec-114">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="8bfec-114">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="6e3c6-115">TableID</span><span class="sxs-lookup"><span data-stu-id="6e3c6-115">tableid</span></span>  
-    <span data-ttu-id="6e3c6-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-116">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="8bfec-115">TableID</span><span class="sxs-lookup"><span data-stu-id="8bfec-115">tableid</span></span>  
+    <span data-ttu-id="8bfec-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="8bfec-116">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="6e3c6-117">O cursor para contar os registros.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-117">The cursor to count the records in.</span></span>
+    <span data-ttu-id="8bfec-117">O cursor para contar os registros.</span><span class="sxs-lookup"><span data-stu-id="8bfec-117">The cursor to count the records in.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="6e3c6-118">numRecords</span><span class="sxs-lookup"><span data-stu-id="6e3c6-118">numRecords</span></span>  
-    <span data-ttu-id="6e3c6-119">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-119">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+  - <span data-ttu-id="8bfec-118">numRecords</span><span class="sxs-lookup"><span data-stu-id="8bfec-118">numRecords</span></span>  
+    <span data-ttu-id="8bfec-119">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="8bfec-119">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
     
-    <span data-ttu-id="6e3c6-120">Retorna o número de registros.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-120">Returns the number of records.</span></span>
+    <span data-ttu-id="8bfec-120">Retorna o número de registros.</span><span class="sxs-lookup"><span data-stu-id="8bfec-120">Returns the number of records.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="6e3c6-121">maxRecordsToCount</span><span class="sxs-lookup"><span data-stu-id="6e3c6-121">maxRecordsToCount</span></span>  
-    <span data-ttu-id="6e3c6-122">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="6e3c6-122">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+  - <span data-ttu-id="8bfec-121">maxRecordsToCount</span><span class="sxs-lookup"><span data-stu-id="8bfec-121">maxRecordsToCount</span></span>  
+    <span data-ttu-id="8bfec-122">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="8bfec-122">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
     
-    <span data-ttu-id="6e3c6-123">O número máximo de registros a serem contados.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-123">The maximum number of records to count.</span></span> <span data-ttu-id="6e3c6-124">Um valor de 0 indica que a contagem é ilimitada.</span><span class="sxs-lookup"><span data-stu-id="6e3c6-124">A value of 0 indicates that the count is unlimited.</span></span>
+    <span data-ttu-id="8bfec-123">O número máximo de registros a serem contados.</span><span class="sxs-lookup"><span data-stu-id="8bfec-123">The maximum number of records to count.</span></span> <span data-ttu-id="8bfec-124">Um valor de 0 indica que a contagem é ilimitada.</span><span class="sxs-lookup"><span data-stu-id="8bfec-124">A value of 0 indicates that the count is unlimited.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6e3c6-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="6e3c6-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8bfec-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="8bfec-125">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="6e3c6-126">Referência</span><span class="sxs-lookup"><span data-stu-id="6e3c6-126">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="8bfec-126">Referência</span><span class="sxs-lookup"><span data-stu-id="8bfec-126">Reference</span></span>
 
-[<span data-ttu-id="6e3c6-127">Classe de API</span><span class="sxs-lookup"><span data-stu-id="6e3c6-127">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="8bfec-127">Classe de API</span><span class="sxs-lookup"><span data-stu-id="8bfec-127">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="6e3c6-128">Membros da API</span><span class="sxs-lookup"><span data-stu-id="6e3c6-128">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="8bfec-128">Membros da API</span><span class="sxs-lookup"><span data-stu-id="8bfec-128">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="6e3c6-129">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6e3c6-129">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="8bfec-129">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8bfec-129">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

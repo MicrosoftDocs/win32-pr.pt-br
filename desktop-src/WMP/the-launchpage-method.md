@@ -17,13 +17,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005729"
 ---
-# <a name="the-launchpage-method"></a><span data-ttu-id="72a65-108">O método LaunchPage</span><span class="sxs-lookup"><span data-stu-id="72a65-108">The LaunchPage Method</span></span>
+# <a name="the-launchpage-method"></a><span data-ttu-id="e6820-108">O método LaunchPage</span><span class="sxs-lookup"><span data-stu-id="e6820-108">The LaunchPage Method</span></span>
 
-<span data-ttu-id="72a65-109">O método LaunchPage fornece a principal funcionalidade do plug-in, que é para iniciar uma página de pesquisa que contém informações sobre o artista do item de mídia passado para o método.</span><span class="sxs-lookup"><span data-stu-id="72a65-109">The LaunchPage method provides the primary functionality of the plug-in, which is to launch a search page containing information about the artist of the media item passed to the method.</span></span>
+<span data-ttu-id="e6820-109">O método LaunchPage fornece a principal funcionalidade do plug-in, que é para iniciar uma página de pesquisa que contém informações sobre o artista do item de mídia passado para o método.</span><span class="sxs-lookup"><span data-stu-id="e6820-109">The LaunchPage method provides the primary functionality of the plug-in, which is to launch a search page containing information about the artist of the media item passed to the method.</span></span>
 
-<span data-ttu-id="72a65-110">Esse método é chamado pelo método onsearch usando o objeto de **mídia** atual.</span><span class="sxs-lookup"><span data-stu-id="72a65-110">This method is called by the OnSearch method using the current **Media** object.</span></span>
+<span data-ttu-id="e6820-110">Esse método é chamado pelo método onsearch usando o objeto de **mídia** atual.</span><span class="sxs-lookup"><span data-stu-id="e6820-110">This method is called by the OnSearch method using the current **Media** object.</span></span>
 
-<span data-ttu-id="72a65-111">O código a seguir é usado para implementar esse método:</span><span class="sxs-lookup"><span data-stu-id="72a65-111">The following code is used to implement this method:</span></span>
+<span data-ttu-id="e6820-111">O código a seguir é usado para implementar esse método:</span><span class="sxs-lookup"><span data-stu-id="e6820-111">The following code is used to implement this method:</span></span>
 
 
 ```C++
@@ -58,11 +58,11 @@ void LaunchPage(IWMPMedia *pMedia)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="72a65-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="72a65-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e6820-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e6820-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="72a65-113">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="72a65-113">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
+[<span data-ttu-id="e6820-113">**Implementando CPluginWindow**</span><span class="sxs-lookup"><span data-stu-id="e6820-113">**Implementing CPluginWindow**</span></span>](implementing-cpluginwindow.md)
 </dt> </dl>
 
  

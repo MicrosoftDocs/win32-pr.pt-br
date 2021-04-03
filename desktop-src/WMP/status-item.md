@@ -16,15 +16,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005823"
 ---
-# <a name="status-item"></a><span data-ttu-id="f8bd4-107">Item de status</span><span class="sxs-lookup"><span data-stu-id="f8bd4-107">Status Item</span></span>
+# <a name="status-item"></a><span data-ttu-id="3fed7-107">Item de status</span><span class="sxs-lookup"><span data-stu-id="3fed7-107">Status Item</span></span>
 
-<span data-ttu-id="f8bd4-108">Você deve definir o item de status para conter o valor "on".</span><span class="sxs-lookup"><span data-stu-id="f8bd4-108">You must define the status item to contain the value "On".</span></span> <span data-ttu-id="f8bd4-109">Nenhum outro valor tem suporte para o item de status.</span><span class="sxs-lookup"><span data-stu-id="f8bd4-109">No other values are supported for the status item.</span></span>
+<span data-ttu-id="3fed7-108">Você deve definir o item de status para conter o valor "on".</span><span class="sxs-lookup"><span data-stu-id="3fed7-108">You must define the status item to contain the value "On".</span></span> <span data-ttu-id="3fed7-109">Nenhum outro valor tem suporte para o item de status.</span><span class="sxs-lookup"><span data-stu-id="3fed7-109">No other values are supported for the status item.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="f8bd4-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f8bd4-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3fed7-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3fed7-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f8bd4-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="f8bd4-111">**Status**</span></span>](status.md)
+[<span data-ttu-id="3fed7-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="3fed7-111">**Status**</span></span>](status.md)
 </dt> </dl>
 
  

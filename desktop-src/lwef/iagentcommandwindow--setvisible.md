@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005714"
 ---
-# <a name="iagentcommandwindowsetvisible"></a><span data-ttu-id="035ed-103">IAgentCommandWindow:: setVisible</span><span class="sxs-lookup"><span data-stu-id="035ed-103">IAgentCommandWindow::SetVisible</span></span>
+# <a name="iagentcommandwindowsetvisible"></a><span data-ttu-id="3cb82-103">IAgentCommandWindow:: setVisible</span><span class="sxs-lookup"><span data-stu-id="3cb82-103">IAgentCommandWindow::SetVisible</span></span>
 
-<span data-ttu-id="035ed-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="035ed-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="3cb82-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="3cb82-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 ``` syntax
 HRESULT SetVisible(
@@ -21,24 +21,24 @@ HRESULT SetVisible(
 );
 ```
 
-<span data-ttu-id="035ed-105">Defina a propriedade [**Visible**](visible-property.md) para a janela de comandos de voz.</span><span class="sxs-lookup"><span data-stu-id="035ed-105">Set the [**Visible**](visible-property.md) property for the Voice Commands Window.</span></span>
+<span data-ttu-id="3cb82-105">Defina a propriedade [**Visible**](visible-property.md) para a janela de comandos de voz.</span><span class="sxs-lookup"><span data-stu-id="3cb82-105">Set the [**Visible**](visible-property.md) property for the Voice Commands Window.</span></span>
 
--   <span data-ttu-id="035ed-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="035ed-106">Returns S\_OK to indicate the operation was successful.</span></span>
+-   <span data-ttu-id="3cb82-106">Retorna S \_ OK para indicar que a operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="3cb82-106">Returns S\_OK to indicate the operation was successful.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="035ed-107"><span id="bVisible"></span><span id="bvisible"></span><span id="BVISIBLE"></span>*bVisible*</span><span class="sxs-lookup"><span data-stu-id="035ed-107"><span id="bVisible"></span><span id="bvisible"></span><span id="BVISIBLE"></span>*bVisible*</span></span>
+<span data-ttu-id="3cb82-107"><span id="bVisible"></span><span id="bvisible"></span><span id="BVISIBLE"></span>*bVisible*</span><span class="sxs-lookup"><span data-stu-id="3cb82-107"><span id="bVisible"></span><span id="bvisible"></span><span id="BVISIBLE"></span>*bVisible*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="035ed-108">Configuração da propriedade [**visível**](visible-property.md) .</span><span class="sxs-lookup"><span data-stu-id="035ed-108">[**Visible**](visible-property.md) property setting.</span></span> <span data-ttu-id="035ed-109">Um valor **true** exibe a janela de comandos de voz; **False** oculta-o.</span><span class="sxs-lookup"><span data-stu-id="035ed-109">A value of **True** displays the Voice Commands Window; **False** hides it.</span></span>
+<span data-ttu-id="3cb82-108">Configuração da propriedade [**visível**](visible-property.md) .</span><span class="sxs-lookup"><span data-stu-id="3cb82-108">[**Visible**](visible-property.md) property setting.</span></span> <span data-ttu-id="3cb82-109">Um valor **true** exibe a janela de comandos de voz; **False** oculta-o.</span><span class="sxs-lookup"><span data-stu-id="3cb82-109">A value of **True** displays the Voice Commands Window; **False** hides it.</span></span>
 
 </dd> </dl>
 
-<span data-ttu-id="035ed-110">O usuário pode substituir essa propriedade.</span><span class="sxs-lookup"><span data-stu-id="035ed-110">The user can override this property.</span></span>
+<span data-ttu-id="3cb82-110">O usuário pode substituir essa propriedade.</span><span class="sxs-lookup"><span data-stu-id="3cb82-110">The user can override this property.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="035ed-111">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="035ed-111">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3cb82-111">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="3cb82-111">See Also</span></span>
 
-[<span data-ttu-id="035ed-112">**IAgentCommandWindow:: getVisible**</span><span class="sxs-lookup"><span data-stu-id="035ed-112">**IAgentCommandWindow::GetVisible**</span></span>](iagentcommandwindow--getvisible.md)
+[<span data-ttu-id="3cb82-112">**IAgentCommandWindow:: getVisible**</span><span class="sxs-lookup"><span data-stu-id="3cb82-112">**IAgentCommandWindow::GetVisible**</span></span>](iagentcommandwindow--getvisible.md)
 
 
  

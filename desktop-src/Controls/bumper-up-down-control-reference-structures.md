@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104091921"
 ---
-# <a name="up-down-structures"></a><span data-ttu-id="92be3-103">Estruturas de Up-Down</span><span class="sxs-lookup"><span data-stu-id="92be3-103">Up-Down Structures</span></span>
+# <a name="up-down-structures"></a><span data-ttu-id="8e471-103">Estruturas de Up-Down</span><span class="sxs-lookup"><span data-stu-id="8e471-103">Up-Down Structures</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="92be3-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="92be3-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8e471-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8e471-104">In This Section</span></span>
 
--   [<span data-ttu-id="92be3-105">**NMUPDOWN**</span><span class="sxs-lookup"><span data-stu-id="92be3-105">**NMUPDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmupdown)
--   [<span data-ttu-id="92be3-106">**UDACCEL**</span><span class="sxs-lookup"><span data-stu-id="92be3-106">**UDACCEL**</span></span>](/windows/desktop/api/Commctrl/ns-commctrl-udaccel)
+-   [<span data-ttu-id="8e471-105">**NMUPDOWN**</span><span class="sxs-lookup"><span data-stu-id="8e471-105">**NMUPDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmupdown)
+-   [<span data-ttu-id="8e471-106">**UDACCEL**</span><span class="sxs-lookup"><span data-stu-id="8e471-106">**UDACCEL**</span></span>](/windows/desktop/api/Commctrl/ns-commctrl-udaccel)
 
  
 

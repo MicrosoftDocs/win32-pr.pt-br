@@ -24,15 +24,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103922712"
 ---
-# <a name="swbemprivilegeidentifier-property"></a><span data-ttu-id="54c12-104">Propriedade SWbemPrivilege. Identifier</span><span class="sxs-lookup"><span data-stu-id="54c12-104">SWbemPrivilege.Identifier property</span></span>
+# <a name="swbemprivilegeidentifier-property"></a><span data-ttu-id="797c4-104">Propriedade SWbemPrivilege. Identifier</span><span class="sxs-lookup"><span data-stu-id="797c4-104">SWbemPrivilege.Identifier property</span></span>
 
-<span data-ttu-id="54c12-105">A propriedade **Identifier** de um objeto [**SWbemPrivilege**](swbemprivilege.md) é um inteiro [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) que representa o privilégio que está sendo definido ou recuperado.</span><span class="sxs-lookup"><span data-stu-id="54c12-105">The **Identifier** property of an [**SWbemPrivilege**](swbemprivilege.md) object is an [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) integer that represents the privilege that is being set or retrieved.</span></span> <span data-ttu-id="54c12-106">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="54c12-106">This property is read-only.</span></span>
+<span data-ttu-id="797c4-105">A propriedade **Identifier** de um objeto [**SWbemPrivilege**](swbemprivilege.md) é um inteiro [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) que representa o privilégio que está sendo definido ou recuperado.</span><span class="sxs-lookup"><span data-stu-id="797c4-105">The **Identifier** property of an [**SWbemPrivilege**](swbemprivilege.md) object is an [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) integer that represents the privilege that is being set or retrieved.</span></span> <span data-ttu-id="797c4-106">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="797c4-106">This property is read-only.</span></span>
 
-<span data-ttu-id="54c12-107">Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).</span><span class="sxs-lookup"><span data-stu-id="54c12-107">For an explanation of this syntax, see [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).</span></span>
+<span data-ttu-id="797c4-107">Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).</span><span class="sxs-lookup"><span data-stu-id="797c4-107">For an explanation of this syntax, see [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).</span></span>
 
-<span data-ttu-id="54c12-108">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="54c12-108">This property is read/write.</span></span>
+<span data-ttu-id="797c4-108">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="797c4-108">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="54c12-109">Syntax</span><span class="sxs-lookup"><span data-stu-id="54c12-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="797c4-109">Syntax</span><span class="sxs-lookup"><span data-stu-id="797c4-109">Syntax</span></span>
 
 
 ```VB
@@ -41,32 +41,32 @@ SWbemPrivilege.Identifier As Integer
 
 
 
-## <a name="property-value"></a><span data-ttu-id="54c12-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="54c12-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="797c4-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="797c4-110">Property value</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="54c12-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="54c12-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="797c4-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="797c4-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="54c12-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="54c12-112">Requirement</span></span> | <span data-ttu-id="54c12-113">Valor</span><span class="sxs-lookup"><span data-stu-id="54c12-113">Value</span></span> |
+| <span data-ttu-id="797c4-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="797c4-112">Requirement</span></span> | <span data-ttu-id="797c4-113">Valor</span><span class="sxs-lookup"><span data-stu-id="797c4-113">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="54c12-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="54c12-114">Minimum supported client</span></span><br/> | <span data-ttu-id="54c12-115">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="54c12-115">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="54c12-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="54c12-116">Minimum supported server</span></span><br/> | <span data-ttu-id="54c12-117">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="54c12-117">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="54c12-118">parâmetro</span><span class="sxs-lookup"><span data-stu-id="54c12-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="54c12-119"><dt>Wbemdisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="54c12-119"><dt>Wbemdisp.h</dt></span></span> </dl>   |
-| <span data-ttu-id="54c12-120">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="54c12-120">Type library</span></span><br/>             | <dl> <span data-ttu-id="54c12-121"><dt>Wbemdisp. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="54c12-121"><dt>Wbemdisp.tlb</dt></span></span> </dl> |
-| <span data-ttu-id="54c12-122">DLL</span><span class="sxs-lookup"><span data-stu-id="54c12-122">DLL</span></span><br/>                      | <dl> <span data-ttu-id="54c12-123"><dt>Wbemdisp.dll</dt></span><span class="sxs-lookup"><span data-stu-id="54c12-123"><dt>Wbemdisp.dll</dt></span></span> </dl> |
-| <span data-ttu-id="54c12-124">CLSID</span><span class="sxs-lookup"><span data-stu-id="54c12-124">CLSID</span></span><br/>                    | <span data-ttu-id="54c12-125">\_SWBEMPRIVILEGE CLSID</span><span class="sxs-lookup"><span data-stu-id="54c12-125">CLSID\_SWbemPrivilege</span></span><br/>                                                        |
-| <span data-ttu-id="54c12-126">IID</span><span class="sxs-lookup"><span data-stu-id="54c12-126">IID</span></span><br/>                      | <span data-ttu-id="54c12-127">ISWbemPrivilege de IID \_</span><span class="sxs-lookup"><span data-stu-id="54c12-127">IID\_ISWbemPrivilege</span></span><br/>                                                         |
+| <span data-ttu-id="797c4-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="797c4-114">Minimum supported client</span></span><br/> | <span data-ttu-id="797c4-115">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="797c4-115">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="797c4-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="797c4-116">Minimum supported server</span></span><br/> | <span data-ttu-id="797c4-117">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="797c4-117">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="797c4-118">parâmetro</span><span class="sxs-lookup"><span data-stu-id="797c4-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="797c4-119"><dt>Wbemdisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="797c4-119"><dt>Wbemdisp.h</dt></span></span> </dl>   |
+| <span data-ttu-id="797c4-120">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="797c4-120">Type library</span></span><br/>             | <dl> <span data-ttu-id="797c4-121"><dt>Wbemdisp. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="797c4-121"><dt>Wbemdisp.tlb</dt></span></span> </dl> |
+| <span data-ttu-id="797c4-122">DLL</span><span class="sxs-lookup"><span data-stu-id="797c4-122">DLL</span></span><br/>                      | <dl> <span data-ttu-id="797c4-123"><dt>Wbemdisp.dll</dt></span><span class="sxs-lookup"><span data-stu-id="797c4-123"><dt>Wbemdisp.dll</dt></span></span> </dl> |
+| <span data-ttu-id="797c4-124">CLSID</span><span class="sxs-lookup"><span data-stu-id="797c4-124">CLSID</span></span><br/>                    | <span data-ttu-id="797c4-125">\_SWBEMPRIVILEGE CLSID</span><span class="sxs-lookup"><span data-stu-id="797c4-125">CLSID\_SWbemPrivilege</span></span><br/>                                                        |
+| <span data-ttu-id="797c4-126">IID</span><span class="sxs-lookup"><span data-stu-id="797c4-126">IID</span></span><br/>                      | <span data-ttu-id="797c4-127">ISWbemPrivilege de IID \_</span><span class="sxs-lookup"><span data-stu-id="797c4-127">IID\_ISWbemPrivilege</span></span><br/>                                                         |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="54c12-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="54c12-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="797c4-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="797c4-128">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="54c12-129">**SWbemPrivilege**</span><span class="sxs-lookup"><span data-stu-id="54c12-129">**SWbemPrivilege**</span></span>](swbemprivilege.md)
+[<span data-ttu-id="797c4-129">**SWbemPrivilege**</span><span class="sxs-lookup"><span data-stu-id="797c4-129">**SWbemPrivilege**</span></span>](swbemprivilege.md)
 </dt> <dt>
 
-[<span data-ttu-id="54c12-130">WbemPrivilegeEnum</span><span class="sxs-lookup"><span data-stu-id="54c12-130">WbemPrivilegeEnum</span></span>](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)
+[<span data-ttu-id="797c4-130">WbemPrivilegeEnum</span><span class="sxs-lookup"><span data-stu-id="797c4-130">WbemPrivilegeEnum</span></span>](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)
 </dt> </dl>
 
  

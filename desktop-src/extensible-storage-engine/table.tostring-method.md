@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829239"
 ---
-# <a name="tabletostring-method"></a><span data-ttu-id="7b82d-103">Método Table. ToString</span><span class="sxs-lookup"><span data-stu-id="7b82d-103">Table.ToString method</span></span>
+# <a name="tabletostring-method"></a><span data-ttu-id="aef9e-103">Método Table. ToString</span><span class="sxs-lookup"><span data-stu-id="aef9e-103">Table.ToString method</span></span>
 
-<span data-ttu-id="7b82d-104">Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [tabela](./table-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="7b82d-104">Returns a [String](/dotnet/api/system.string) that represents the current [Table](./table-class.md).</span></span>
+<span data-ttu-id="aef9e-104">Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [tabela](./table-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="aef9e-104">Returns a [String](/dotnet/api/system.string) that represents the current [Table](./table-class.md).</span></span>
 
-<span data-ttu-id="7b82d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="7b82d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="7b82d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="7b82d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="aef9e-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="aef9e-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="aef9e-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="aef9e-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7b82d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7b82d-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aef9e-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="aef9e-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="7b82d-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7b82d-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="aef9e-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="aef9e-108">Return value</span></span>
 
-<span data-ttu-id="7b82d-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="7b82d-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
-<span data-ttu-id="7b82d-110">Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [tabela](./table-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="7b82d-110">A [String](/dotnet/api/system.string) that represents the current [Table](./table-class.md).</span></span>  
+<span data-ttu-id="aef9e-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="aef9e-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="aef9e-110">Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [tabela](./table-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="aef9e-110">A [String](/dotnet/api/system.string) that represents the current [Table](./table-class.md).</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="7b82d-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="7b82d-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aef9e-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="aef9e-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="7b82d-112">Referência</span><span class="sxs-lookup"><span data-stu-id="7b82d-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="aef9e-112">Referência</span><span class="sxs-lookup"><span data-stu-id="aef9e-112">Reference</span></span>
 
-[<span data-ttu-id="7b82d-113">Classe de tabela</span><span class="sxs-lookup"><span data-stu-id="7b82d-113">Table class</span></span>](./table-class.md)
+[<span data-ttu-id="aef9e-113">Classe de tabela</span><span class="sxs-lookup"><span data-stu-id="aef9e-113">Table class</span></span>](./table-class.md)
 
-[<span data-ttu-id="7b82d-114">Membros da tabela</span><span class="sxs-lookup"><span data-stu-id="7b82d-114">Table members</span></span>](./table-members.md)
+[<span data-ttu-id="aef9e-114">Membros da tabela</span><span class="sxs-lookup"><span data-stu-id="aef9e-114">Table members</span></span>](./table-members.md)
 
-[<span data-ttu-id="7b82d-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="7b82d-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="aef9e-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="aef9e-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
