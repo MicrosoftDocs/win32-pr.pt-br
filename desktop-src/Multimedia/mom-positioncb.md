@@ -65,7 +65,7 @@ Se os retornos de chamada de posição estiverem sendo gerados mais rapidamente 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

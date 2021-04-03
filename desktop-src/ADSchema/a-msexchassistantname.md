@@ -36,7 +36,7 @@ Contém o nome do assistente para uma conta.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.444                      |
 | System-ID-GUID    | a8df7394-c5ea-11d1-bbcb-0080c76670c0        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

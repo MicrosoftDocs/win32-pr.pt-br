@@ -62,7 +62,7 @@ Se a seleção "hoje" for definida como qualquer data diferente do padrão, as s
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

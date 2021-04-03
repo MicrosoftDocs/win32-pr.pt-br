@@ -59,7 +59,7 @@ Para desenvolvimento em C++, a assinatura de evento é especificada pela proprie
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

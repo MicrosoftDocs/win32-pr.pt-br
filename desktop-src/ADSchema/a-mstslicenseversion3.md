@@ -36,7 +36,7 @@ Versão do terceiro servidor de terminal por CAL de usuário.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2004                     |
 | System-ID-GUID    | f8ba8f81-4cab-4973-a3c8-3a6da62a5e31        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

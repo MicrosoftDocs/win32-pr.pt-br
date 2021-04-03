@@ -36,7 +36,7 @@ Especifica um caminho UNC para a pasta de documentos compartilhados adicional do
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que a pasta compartilhada precisa ser alterada. |
 | Attribute-Id      | 1.2.840.113556.1.4.752                                                            |
 | System-ID-GUID    | 9a9a0220-4a5b-11d1-a9c3-0000f80367c1                                              |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                       |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                       |
 
 
 

@@ -51,7 +51,7 @@ Os valores a seguir são usados na função [**SensorAdapterSetMode**](/windows/
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ ID de instalação (IID) usada para ativação por telefone da floresta Active D
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2083                     |
 | System-ID-GUID    | 69bfb114-407B-4739-A213-c663802b3e37        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

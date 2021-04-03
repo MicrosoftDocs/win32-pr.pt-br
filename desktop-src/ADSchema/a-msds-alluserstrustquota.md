@@ -36,7 +36,7 @@ Usado para impor uma cota de usuários combinados no número total de objetos Tr
 | Frequência de atualização  | Na criação da floresta e raramente depois disso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1789                   |
 | System-ID-GUID    | d3aa4a5c-4e03-4810-97aa-2b339e7a434b      |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)      |
+| Syntax            | [**Enumeração**](s-enumeration.md)      |
 
 
 

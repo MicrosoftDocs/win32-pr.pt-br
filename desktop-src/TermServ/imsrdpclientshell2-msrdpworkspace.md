@@ -62,7 +62,7 @@ A interface [**IMsRdpWorkspace**](imsrdpworkspace.md) não é exposta como uma i
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

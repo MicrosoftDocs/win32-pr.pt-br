@@ -70,7 +70,7 @@ Ao remover itens, observe que o índice do primeiro item na coleção é 1 e o �
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

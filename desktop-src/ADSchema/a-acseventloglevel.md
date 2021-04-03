@@ -36,7 +36,7 @@ Nível de log RSVP.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.769                  |
 | System-ID-GUID    | 7f561286-5301-11d1-a9c5-0000f80367c1    |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)    |
+| Syntax            | [**Enumeração**](s-enumeration.md)    |
 
 
 

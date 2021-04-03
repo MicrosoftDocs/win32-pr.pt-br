@@ -69,7 +69,7 @@ Em uma caixa de combinação com o estilo [**\_ simples do CBS**](combo-box-styl
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

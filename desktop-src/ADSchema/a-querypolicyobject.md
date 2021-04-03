@@ -36,7 +36,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.607                  |
 | System-ID-GUID    | e1aea403-cd5b-11d0-afff-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

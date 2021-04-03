@@ -36,7 +36,7 @@ O atributo **ACS-Maximum-SDU-size** é somente para uso interno. Com base em RFC
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1314              |
 | System-ID-GUID    | 87a2d8f9-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

@@ -27,7 +27,7 @@ ms.locfileid: "103645108"
 
 Para scripts, obtém o caminho para onde a tarefa é armazenada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -53,7 +53,7 @@ O caminho para onde a tarefa é armazenada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

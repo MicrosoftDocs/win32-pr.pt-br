@@ -48,7 +48,7 @@ Altera ou anima o valor da propriedade CenterY de uma transformação de escala 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -135,7 +135,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

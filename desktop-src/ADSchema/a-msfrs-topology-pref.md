@@ -49,7 +49,7 @@ Os valores válidos para esse atributo são os seguintes.
 | Frequência de atualização  | Quando o conjunto de réplicas é criado ou a topologia preferida é alterada. |
 | Attribute-Id      | 1.2.840.113556.1.4.1692                                            |
 | System-ID-GUID    | 92aa27e0-5c50-402d-9ec1-ee847def9788                               |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                        |
 
 
 

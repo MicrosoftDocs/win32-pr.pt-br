@@ -109,7 +109,7 @@ unfreeze vboard at 10 20 90 165
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

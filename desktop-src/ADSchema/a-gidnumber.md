@@ -35,7 +35,7 @@ Contém um valor inteiro que identifica exclusivamente um grupo em um domínio a
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.1                      |
 | System-ID-GUID    | c5b95f0c-ec9e-41c4-849c-b46597ed6696 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

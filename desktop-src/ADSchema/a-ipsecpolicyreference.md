@@ -36,7 +36,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.517                  |
 | System-ID-GUID    | b7b13118-b82e-11d0-afee-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

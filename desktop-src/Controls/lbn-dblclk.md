@@ -69,7 +69,7 @@ Este código de notificação é enviado somente por uma caixa de listagem que t
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ ms.locfileid: "103644884"
 
 Para scripts, Obtém ou define um valor booliano que indica se uma instância em execução da tarefa é interrompida no final da duração do padrão de repetição.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -57,7 +57,7 @@ Ao ler ou gravar XML para uma tarefa, essas informações são especificadas no 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

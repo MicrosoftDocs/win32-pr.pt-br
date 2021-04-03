@@ -36,7 +36,7 @@ Tamanho do histórico de senha para contas de usuário.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2014              |
 | System-ID-GUID    | fed81bb7-768c-4c2f-9641-2245de34794d |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

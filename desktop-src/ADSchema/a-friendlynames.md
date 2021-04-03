@@ -36,7 +36,7 @@ Lista de definições de nome de exibição padrão com suporte por um catálogo
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.682                      |
 | System-ID-GUID    | 7bfdcb88-4807-11d1-a9c3-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

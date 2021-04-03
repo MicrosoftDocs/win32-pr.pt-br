@@ -65,7 +65,7 @@ O aplicativo receberá esse código de notificação uma vez no início do proce
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

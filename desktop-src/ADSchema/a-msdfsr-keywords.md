@@ -36,7 +36,7 @@ Contém as palavras-chave definidas pelo usuário.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.15                  |
 | System-ID-GUID    | 048b4692-6227-4b67-a074-c4437083e14b        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

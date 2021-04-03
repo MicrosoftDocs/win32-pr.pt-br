@@ -36,7 +36,7 @@ Isso é para que a política extensível do usuário seja replicada para os clie
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.421                                |
 | System-ID-GUID    | 80a67e29-9f22-11d0-afdd-00c04fd930c9                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

@@ -63,7 +63,7 @@ Define a Área de Trabalho Remota senha do controle ActiveX em formato de texto 
 
 Essa propriedade é somente gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

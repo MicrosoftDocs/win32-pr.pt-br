@@ -36,7 +36,7 @@ Atributo backlink para msDS-IsPrimaryComputer.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2168                 |
 | System-ID-GUID    | 998c06ac-3f87-444e-a5df-11b03dc8a50c    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

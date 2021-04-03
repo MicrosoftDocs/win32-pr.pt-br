@@ -167,7 +167,7 @@ HRESULT GetName([out] wchar_t * const pszName );
 [**retorno de chamada**](callback.md)
 </dt> <dt>
 
-[**º**](char-idl.md)
+[**char**](char-idl.md)
 </dt> <dt>
 
 [**identificador de contexto \_**](context-handle.md)

@@ -269,7 +269,7 @@ Quando uma nova SACL é **nula** em uma chamada desse método, a SACL do descrit
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

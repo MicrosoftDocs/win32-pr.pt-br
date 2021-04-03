@@ -66,7 +66,7 @@ O método retorna os valores de retorno a seguir.
 
 | Código de retorno                                                                          | Descrição        |
 |--------------------------------------------------------------------------------------|--------------------|
-| <dl> <dt>**S_OK**</dt> </dl> | Sucesso<br/> |
+| <dl> <dt>**S_OK**</dt> </dl> | Êxito<br/> |
 
 
 

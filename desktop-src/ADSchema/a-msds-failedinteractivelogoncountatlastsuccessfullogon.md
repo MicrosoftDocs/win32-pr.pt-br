@@ -36,7 +36,7 @@ O número total de logons interativos com falha até o último logon do C-A-D be
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1973                                       |
 | System-ID-GUID    | c5d234e5-644a-4403-A665-e26e0aef5e98                          |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)                          |
+| Syntax            | [**Enumeração**](s-enumeration.md)                          |
 
 
 

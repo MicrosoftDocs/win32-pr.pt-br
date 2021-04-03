@@ -36,7 +36,7 @@ Nome distinto do objeto que está sendo sincronizado para a sincronização de d
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.664                  |
 | System-ID-GUID    | 037651e2-441d-11d1-a9c3-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
