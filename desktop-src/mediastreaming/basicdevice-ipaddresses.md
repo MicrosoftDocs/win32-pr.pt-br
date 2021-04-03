@@ -22,13 +22,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640624"
 ---
-# <a name="basicdeviceipaddresses-property"></a><span data-ttu-id="9dbaf-106">Propriedade BasicDevice. IpAddresss</span><span class="sxs-lookup"><span data-stu-id="9dbaf-106">BasicDevice.IpAddresses property</span></span>
+# <a name="basicdeviceipaddresses-property"></a><span data-ttu-id="2367b-106">Propriedade BasicDevice. IpAddresss</span><span class="sxs-lookup"><span data-stu-id="2367b-106">BasicDevice.IpAddresses property</span></span>
 
-<span data-ttu-id="9dbaf-107">Obtém um vetor de endereços IP.</span><span class="sxs-lookup"><span data-stu-id="9dbaf-107">Gets a vector of IP addresses.</span></span>
+<span data-ttu-id="2367b-107">Obtém um vetor de endereços IP.</span><span class="sxs-lookup"><span data-stu-id="2367b-107">Gets a vector of IP addresses.</span></span>
 
-<span data-ttu-id="9dbaf-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="9dbaf-108">This property is read-only.</span></span>
+<span data-ttu-id="2367b-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="2367b-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9dbaf-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9dbaf-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2367b-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2367b-109">Syntax</span></span>
 
 
 ```C++
@@ -39,15 +39,15 @@ HRESULT get_IpAddresses(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="9dbaf-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="9dbaf-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="2367b-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="2367b-110">Property value</span></span>
 
-<span data-ttu-id="9dbaf-111">Uma coleção enumerável de ponteiros para endereços IP.</span><span class="sxs-lookup"><span data-stu-id="9dbaf-111">An enumerable collection of pointers to IP addresses.</span></span>
+<span data-ttu-id="2367b-111">Uma coleção enumerável de ponteiros para endereços IP.</span><span class="sxs-lookup"><span data-stu-id="2367b-111">An enumerable collection of pointers to IP addresses.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9dbaf-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="9dbaf-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2367b-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="2367b-112">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9dbaf-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="9dbaf-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span></span>
+<span data-ttu-id="2367b-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="2367b-113">[**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))</span></span>
 </dt> </dl>
 
  

@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640964"
 ---
-# <a name="getpositioninformationoperationgetresults-method"></a><span data-ttu-id="5aabb-106">Método GetPositionInformationOperation. GetResults</span><span class="sxs-lookup"><span data-stu-id="5aabb-106">GetPositionInformationOperation.GetResults method</span></span>
+# <a name="getpositioninformationoperationgetresults-method"></a><span data-ttu-id="7c242-106">Método GetPositionInformationOperation. GetResults</span><span class="sxs-lookup"><span data-stu-id="7c242-106">GetPositionInformationOperation.GetResults method</span></span>
 
-<span data-ttu-id="5aabb-107">Retorna os resultados da operação assíncrona iniciada pelo [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync).</span><span class="sxs-lookup"><span data-stu-id="5aabb-107">Returns the results of the asynchronous operation started by [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync).</span></span>
+<span data-ttu-id="7c242-107">Retorna os resultados da operação assíncrona iniciada pelo [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync).</span><span class="sxs-lookup"><span data-stu-id="7c242-107">Returns the results of the asynchronous operation started by [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5aabb-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5aabb-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7c242-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7c242-108">Syntax</span></span>
 
 
 ```C++
@@ -37,40 +37,40 @@ HRESULT GetResults(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="5aabb-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5aabb-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7c242-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7c242-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="5aabb-110">*valor* \[ do out, retval\]</span><span class="sxs-lookup"><span data-stu-id="5aabb-110">*value* \[out, retval\]</span></span>
+<span data-ttu-id="7c242-110">*valor* \[ do out, retval\]</span><span class="sxs-lookup"><span data-stu-id="7c242-110">*value* \[out, retval\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5aabb-111">Uma referência a uma estrutura [**PositionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-positioninformation) que contém os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="5aabb-111">A reference to a [**PositionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-positioninformation) structure that contains the results of the operation.</span></span>
+<span data-ttu-id="7c242-111">Uma referência a uma estrutura [**PositionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-positioninformation) que contém os resultados da operação.</span><span class="sxs-lookup"><span data-stu-id="7c242-111">A reference to a [**PositionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-positioninformation) structure that contains the results of the operation.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="5aabb-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="5aabb-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7c242-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7c242-112">Return value</span></span>
 
-<span data-ttu-id="5aabb-113">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="5aabb-113">The method returns an **HRESULT**.</span></span> <span data-ttu-id="5aabb-114">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="5aabb-114">Possible values include, but are not limited to, those in the following table.</span></span>
+<span data-ttu-id="7c242-113">O método retorna um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="7c242-113">The method returns an **HRESULT**.</span></span> <span data-ttu-id="7c242-114">Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="7c242-114">Possible values include, but are not limited to, those in the following table.</span></span>
 
 
 
-| <span data-ttu-id="5aabb-115">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="5aabb-115">Return code</span></span>                                                                          | <span data-ttu-id="5aabb-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="5aabb-116">Description</span></span>                      |
+| <span data-ttu-id="7c242-115">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="7c242-115">Return code</span></span>                                                                          | <span data-ttu-id="7c242-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c242-116">Description</span></span>                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <span data-ttu-id="5aabb-117"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="5aabb-117"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="5aabb-118">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="5aabb-118">The method succeeded.</span></span><br/> |
+| <dl> <span data-ttu-id="7c242-117"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="7c242-117"><dt>**S\_OK**</dt></span></span> </dl> | <span data-ttu-id="7c242-118">O método foi bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="7c242-118">The method succeeded.</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="5aabb-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="5aabb-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7c242-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="7c242-119">Remarks</span></span>
 
-<span data-ttu-id="5aabb-120">O método **GetResults** é normalmente chamado a partir do manipulador de eventos que foi registrado pela configuração da propriedade [**Completed**](getpositioninformationoperation-completed.md) .</span><span class="sxs-lookup"><span data-stu-id="5aabb-120">The **GetResults** method is typically called from the event handler that was registered by setting the [**Completed**](getpositioninformationoperation-completed.md) property.</span></span>
+<span data-ttu-id="7c242-120">O método **GetResults** é normalmente chamado a partir do manipulador de eventos que foi registrado pela configuração da propriedade [**Completed**](getpositioninformationoperation-completed.md) .</span><span class="sxs-lookup"><span data-stu-id="7c242-120">The **GetResults** method is typically called from the event handler that was registered by setting the [**Completed**](getpositioninformationoperation-completed.md) property.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5aabb-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="5aabb-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7c242-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="7c242-121">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5aabb-122">**GetPositionInformationOperation**</span><span class="sxs-lookup"><span data-stu-id="5aabb-122">**GetPositionInformationOperation**</span></span>](getpositioninformationoperation.md)
+[<span data-ttu-id="7c242-122">**GetPositionInformationOperation**</span><span class="sxs-lookup"><span data-stu-id="7c242-122">**GetPositionInformationOperation**</span></span>](getpositioninformationoperation.md)
 </dt> </dl>
 
  

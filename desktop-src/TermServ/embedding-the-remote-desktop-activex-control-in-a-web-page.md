@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/20/2020
 ms.locfileid: "103640234"
 ---
-# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a><span data-ttu-id="d5f0f-103">Inserindo o controle ActiveX Área de Trabalho Remota em uma página da Web</span><span class="sxs-lookup"><span data-stu-id="d5f0f-103">Embedding the Remote Desktop ActiveX control in a webpage</span></span>
+# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a><span data-ttu-id="b8ee4-103">Inserindo o controle ActiveX Área de Trabalho Remota em uma página da Web</span><span class="sxs-lookup"><span data-stu-id="b8ee4-103">Embedding the Remote Desktop ActiveX control in a webpage</span></span>
 
-<span data-ttu-id="d5f0f-104">Você pode inserir o controle ActiveX Área de Trabalho Remota em uma página da Web usando um código semelhante ao seguinte.</span><span class="sxs-lookup"><span data-stu-id="d5f0f-104">You can embed the Remote Desktop ActiveX control in a web page by using code that is similar to the following.</span></span>
+<span data-ttu-id="b8ee4-104">Você pode inserir o controle ActiveX Área de Trabalho Remota em uma página da Web usando um código semelhante ao seguinte.</span><span class="sxs-lookup"><span data-stu-id="b8ee4-104">You can embed the Remote Desktop ActiveX control in a web page by using code that is similar to the following.</span></span>
 
 
 ```HTML
@@ -466,13 +466,13 @@ end sub
 
 
 
-<span data-ttu-id="d5f0f-105">O CLSID é para o controle ActiveX hospedado pelo Conexão de Área de Trabalho Remota (RDP) 6,0.</span><span class="sxs-lookup"><span data-stu-id="d5f0f-105">The CLSID is for the ActiveX control that is hosted by Remote Desktop Connection (RDP) 6.0.</span></span> <span data-ttu-id="d5f0f-106">Esse controle ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).</span><span class="sxs-lookup"><span data-stu-id="d5f0f-106">This ActiveX control implements [**IMsRdpClient**](imsrdpclient-interface.md).</span></span>
+<span data-ttu-id="b8ee4-105">O CLSID é para o controle ActiveX hospedado pelo Conexão de Área de Trabalho Remota (RDP) 6,0.</span><span class="sxs-lookup"><span data-stu-id="b8ee4-105">The CLSID is for the ActiveX control that is hosted by Remote Desktop Connection (RDP) 6.0.</span></span> <span data-ttu-id="b8ee4-106">Esse controle ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).</span><span class="sxs-lookup"><span data-stu-id="b8ee4-106">This ActiveX control implements [**IMsRdpClient**](imsrdpclient-interface.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d5f0f-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d5f0f-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b8ee4-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b8ee4-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d5f0f-108">Usando o controle ActiveX Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="d5f0f-108">Using the Remote Desktop ActiveX control</span></span>](using-remote-desktop-web-connection.md)
+[<span data-ttu-id="b8ee4-108">Usando o controle ActiveX Área de Trabalho Remota</span><span class="sxs-lookup"><span data-stu-id="b8ee4-108">Using the Remote Desktop ActiveX control</span></span>](using-remote-desktop-web-connection.md)
 </dt> </dl>
 
  

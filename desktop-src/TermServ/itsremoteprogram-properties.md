@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103638526"
 ---
-# <a name="itsremoteprogram-properties"></a><span data-ttu-id="e294e-103">Propriedades de ITSRemoteProgram</span><span class="sxs-lookup"><span data-stu-id="e294e-103">ITSRemoteProgram Properties</span></span>
+# <a name="itsremoteprogram-properties"></a><span data-ttu-id="fb412-103">Propriedades de ITSRemoteProgram</span><span class="sxs-lookup"><span data-stu-id="fb412-103">ITSRemoteProgram Properties</span></span>
 
-<span data-ttu-id="e294e-104">A interface [**ITSRemoteProgram**](itsremoteprogram.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e294e-104">The [**ITSRemoteProgram**](itsremoteprogram.md) interface exposes the following properties.</span></span>
+<span data-ttu-id="fb412-104">A interface [**ITSRemoteProgram**](itsremoteprogram.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="fb412-104">The [**ITSRemoteProgram**](itsremoteprogram.md) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e294e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e294e-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fb412-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fb412-105">In this section</span></span>
 
--   [<span data-ttu-id="e294e-106">**Propriedade RemoteProgramMode**</span><span class="sxs-lookup"><span data-stu-id="e294e-106">**RemoteProgramMode property**</span></span>](itsremoteprogram-remoteprogrammode.md)
+-   [<span data-ttu-id="fb412-106">**Propriedade RemoteProgramMode**</span><span class="sxs-lookup"><span data-stu-id="fb412-106">**RemoteProgramMode property**</span></span>](itsremoteprogram-remoteprogrammode.md)
 
  
 

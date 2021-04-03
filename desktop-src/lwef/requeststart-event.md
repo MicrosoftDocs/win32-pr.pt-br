@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103641031"
 ---
-# <a name="requeststart-event"></a><span data-ttu-id="07238-103">Evento RequestStart</span><span class="sxs-lookup"><span data-stu-id="07238-103">RequestStart Event</span></span>
+# <a name="requeststart-event"></a><span data-ttu-id="e2333-103">Evento RequestStart</span><span class="sxs-lookup"><span data-stu-id="e2333-103">RequestStart Event</span></span>
 
-<span data-ttu-id="07238-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="07238-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="e2333-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="e2333-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="07238-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="07238-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
+<span data-ttu-id="e2333-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="e2333-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="07238-106">Ocorre quando o servidor inicia uma solicitação em fila.</span><span class="sxs-lookup"><span data-stu-id="07238-106">Occurs when the server begins a queued request.</span></span>
+<span data-ttu-id="e2333-106">Ocorre quando o servidor inicia uma solicitação em fila.</span><span class="sxs-lookup"><span data-stu-id="e2333-106">Occurs when the server begins a queued request.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="07238-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="07238-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
+<span data-ttu-id="e2333-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="e2333-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="07238-108">**Sub** *Agent \* \* \* \_ RequestStart* \*  **(solicitação ByVal** \*\* \* *)*\*</span><span class="sxs-lookup"><span data-stu-id="07238-108">**Sub** *agent\*\*\*\_RequestStart*\* **(ByVal** *Request\*\*\*)*\*</span></span>
+<span data-ttu-id="e2333-108">**Sub** *Agent \* \* \* \_ RequestStart* \*  **(solicitação ByVal** \*\* \* *)*\*</span><span class="sxs-lookup"><span data-stu-id="e2333-108">**Sub** *agent\*\*\*\_RequestStart*\* **(ByVal** *Request\*\*\*)*\*</span></span>
 
 
 
-| <span data-ttu-id="07238-109">Parte</span><span class="sxs-lookup"><span data-stu-id="07238-109">Part</span></span>      | <span data-ttu-id="07238-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="07238-110">Description</span></span>                                            |
+| <span data-ttu-id="e2333-109">Parte</span><span class="sxs-lookup"><span data-stu-id="e2333-109">Part</span></span>      | <span data-ttu-id="e2333-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2333-110">Description</span></span>                                            |
 |-----------|--------------------------------------------------------|
-| <span data-ttu-id="07238-111">*Solicitação*</span><span class="sxs-lookup"><span data-stu-id="07238-111">*Request*</span></span> | <span data-ttu-id="07238-112">Retorna o objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="07238-112">Returns the [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> |
+| <span data-ttu-id="e2333-111">*Solicitação*</span><span class="sxs-lookup"><span data-stu-id="e2333-111">*Request*</span></span> | <span data-ttu-id="e2333-112">Retorna o objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="e2333-112">Returns the [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> |
 
 
 
@@ -41,9 +41,9 @@ ms.locfileid: "103641031"
 
 </dd> </dl>
 
-### <a name="remarks"></a><span data-ttu-id="07238-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="07238-113">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="e2333-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="e2333-113">Remarks</span></span>
 
-<span data-ttu-id="07238-114">O evento retorna um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="07238-114">The event returns a [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> <span data-ttu-id="07238-115">Como as solicitações são processadas de forma assíncrona, você pode usar esse evento para determinar quando o servidor começa a processar uma solicitação (como um método [**Get**](get-method.md), [**Play**](play-method.md)ou [**Speak**](speak-method.md) ) e, assim, sincronizá-la com outras ações geradas pelo seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="07238-115">Because requests are processed asynchronously, you can use this event to determine when the server begins processing a request (such as a [**Get**](get-method.md), [**Play**](play-method.md), or [**Speak**](speak-method.md) method) and thereby synchronize this with other actions generated by your application.</span></span> <span data-ttu-id="07238-116">O evento é enviado somente para o cliente que criou a referência ao objeto de **solicitação** e somente se você definiu uma variável global para a referência de solicitação:</span><span class="sxs-lookup"><span data-stu-id="07238-116">The event is sent only to the client that created the reference to the **Request** object and only if you defined a global variable for the request reference:</span></span>
+<span data-ttu-id="e2333-114">O evento retorna um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="e2333-114">The event returns a [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> <span data-ttu-id="e2333-115">Como as solicitações são processadas de forma assíncrona, você pode usar esse evento para determinar quando o servidor começa a processar uma solicitação (como um método [**Get**](get-method.md), [**Play**](play-method.md)ou [**Speak**](speak-method.md) ) e, assim, sincronizá-la com outras ações geradas pelo seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e2333-115">Because requests are processed asynchronously, you can use this event to determine when the server begins processing a request (such as a [**Get**](get-method.md), [**Play**](play-method.md), or [**Speak**](speak-method.md) method) and thereby synchronize this with other actions generated by your application.</span></span> <span data-ttu-id="e2333-116">O evento é enviado somente para o cliente que criou a referência ao objeto de **solicitação** e somente se você definiu uma variável global para a referência de solicitação:</span><span class="sxs-lookup"><span data-stu-id="e2333-116">The event is sent only to the client that created the reference to the **Request** object and only if you defined a global variable for the request reference:</span></span>
 
 
 ```
@@ -75,9 +75,9 @@ ms.locfileid: "103641031"
 
 
 
-<span data-ttu-id="07238-117">O [**status**](status-property.md) retorna 4 (solicitação em andamento) para o objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) retornado.</span><span class="sxs-lookup"><span data-stu-id="07238-117">The [**Status**](status-property.md) returns 4 (request in progress) for the [**Request**](/windows/desktop/lwef/the-request-object) object returned.</span></span>
+<span data-ttu-id="e2333-117">O [**status**](status-property.md) retorna 4 (solicitação em andamento) para o objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) retornado.</span><span class="sxs-lookup"><span data-stu-id="e2333-117">The [**Status**](status-property.md) returns 4 (request in progress) for the [**Request**](/windows/desktop/lwef/the-request-object) object returned.</span></span>
 
-<span data-ttu-id="07238-118">Como os objetos de [**solicitação**](/windows/desktop/lwef/the-request-object) de animação não são atribuídos até que o servidor processe a solicitação, verifique se o objeto de **solicitação** existe antes de tentar avaliá-lo.</span><span class="sxs-lookup"><span data-stu-id="07238-118">Because animation [**Request**](/windows/desktop/lwef/the-request-object) objects don't get assigned until the server processes the request, make sure that the **Request** object exists before you attempt to evaluate it.</span></span> <span data-ttu-id="07238-119">Por exemplo, em Visual Basic, se você usar uma condicional para testar se uma solicitação específica foi concluída, você pode usar a palavra-chave **Nothing** :</span><span class="sxs-lookup"><span data-stu-id="07238-119">For example, in Visual Basic, if you use a conditional to test whether a specific request was completed, you can use the **Nothing** keyword:</span></span>
+<span data-ttu-id="e2333-118">Como os objetos de [**solicitação**](/windows/desktop/lwef/the-request-object) de animação não são atribuídos até que o servidor processe a solicitação, verifique se o objeto de **solicitação** existe antes de tentar avaliá-lo.</span><span class="sxs-lookup"><span data-stu-id="e2333-118">Because animation [**Request**](/windows/desktop/lwef/the-request-object) objects don't get assigned until the server processes the request, make sure that the **Request** object exists before you attempt to evaluate it.</span></span> <span data-ttu-id="e2333-119">Por exemplo, em Visual Basic, se você usar uma condicional para testar se uma solicitação específica foi concluída, você pode usar a palavra-chave **Nothing** :</span><span class="sxs-lookup"><span data-stu-id="e2333-119">For example, in Visual Basic, if you use a conditional to test whether a specific request was completed, you can use the **Nothing** keyword:</span></span>
 
 
 ```
@@ -95,13 +95,13 @@ ms.locfileid: "103641031"
 
 
 > [!Note]  
-> <span data-ttu-id="07238-120">No VBScript 1,0, esse evento é acionado mesmo se você não definir referências a um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="07238-120">In VBScript 1.0, this event fires even if you don't define references to a [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> <span data-ttu-id="07238-121">Isso foi corrigido no VBScript 2,0, que pode ser baixado de <https://microsoft.com/msdownload/vbscript/scripting.asp> .</span><span class="sxs-lookup"><span data-stu-id="07238-121">This has been fixed in VBScript 2.0, which can be downloaded from <https://microsoft.com/msdownload/vbscript/scripting.asp>.</span></span>
+> <span data-ttu-id="e2333-120">No VBScript 1,0, esse evento é acionado mesmo se você não definir referências a um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) .</span><span class="sxs-lookup"><span data-stu-id="e2333-120">In VBScript 1.0, this event fires even if you don't define references to a [**Request**](/windows/desktop/lwef/the-request-object) object.</span></span> <span data-ttu-id="e2333-121">Isso foi corrigido no VBScript 2,0, que pode ser baixado de <https://microsoft.com/msdownload/vbscript/scripting.asp> .</span><span class="sxs-lookup"><span data-stu-id="e2333-121">This has been fixed in VBScript 2.0, which can be downloaded from <https://microsoft.com/msdownload/vbscript/scripting.asp>.</span></span>
 
  
 
-### <a name="see-also"></a><span data-ttu-id="07238-122">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="07238-122">See Also</span></span>
+### <a name="see-also"></a><span data-ttu-id="e2333-122">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="e2333-122">See Also</span></span>
 
-[<span data-ttu-id="07238-123">**Evento RequestComplete**</span><span class="sxs-lookup"><span data-stu-id="07238-123">**RequestComplete event**</span></span>](requestcomplete-event.md)
+[<span data-ttu-id="e2333-123">**Evento RequestComplete**</span><span class="sxs-lookup"><span data-stu-id="e2333-123">**RequestComplete event**</span></span>](requestcomplete-event.md)
 
 
  
