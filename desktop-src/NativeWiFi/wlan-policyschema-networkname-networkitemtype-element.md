@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829784"
 ---
-# <a name="networkname-networkitemtype-element"></a><span data-ttu-id="8ce2b-103">Elemento NetworkName (networkitemtype)</span><span class="sxs-lookup"><span data-stu-id="8ce2b-103">networkName (networkItemType) Element</span></span>
+# <a name="networkname-networkitemtype-element"></a><span data-ttu-id="d3fec-103">Elemento NetworkName (networkitemtype)</span><span class="sxs-lookup"><span data-stu-id="d3fec-103">networkName (networkItemType) Element</span></span>
 
-<span data-ttu-id="8ce2b-104">O elemento NetworkName (networkitemtype) especifica o SSID (identificador de conjunto de serviços) de uma rede sem fio.</span><span class="sxs-lookup"><span data-stu-id="8ce2b-104">The networkName (networkItemType) element specifies the service set identifier (SSID) of a wireless network.</span></span>
+<span data-ttu-id="d3fec-104">O elemento NetworkName (networkitemtype) especifica o SSID (identificador de conjunto de serviços) de uma rede sem fio.</span><span class="sxs-lookup"><span data-stu-id="d3fec-104">The networkName (networkItemType) element specifies the service set identifier (SSID) of a wireless network.</span></span>
 
 ``` syntax
 <xs:element name="networkName"
@@ -29,36 +29,36 @@ ms.locfileid: "103829784"
  />
 ```
 
-<span data-ttu-id="8ce2b-105">O elemento **NetworkName** é definido pelo tipo complexo [**networkitemtype**](wlan-policyschema-networkitemtype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="8ce2b-105">The **networkName** element is defined by the [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) complex type.</span></span>
+<span data-ttu-id="d3fec-105">O elemento **NetworkName** é definido pelo tipo complexo [**networkitemtype**](wlan-policyschema-networkitemtype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="d3fec-105">The **networkName** element is defined by the [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) complex type.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="8ce2b-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8ce2b-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d3fec-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d3fec-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8ce2b-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="8ce2b-107">Requirement</span></span> | <span data-ttu-id="8ce2b-108">Valor</span><span class="sxs-lookup"><span data-stu-id="8ce2b-108">Value</span></span> |
+| <span data-ttu-id="d3fec-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="d3fec-107">Requirement</span></span> | <span data-ttu-id="d3fec-108">Valor</span><span class="sxs-lookup"><span data-stu-id="d3fec-108">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="8ce2b-109">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8ce2b-109">Minimum supported client</span></span><br/> | <span data-ttu-id="8ce2b-110">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="8ce2b-110">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="8ce2b-111">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8ce2b-111">Minimum supported server</span></span><br/> | <span data-ttu-id="8ce2b-112">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="8ce2b-112">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="d3fec-109">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d3fec-109">Minimum supported client</span></span><br/> | <span data-ttu-id="d3fec-110">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="d3fec-110">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="d3fec-111">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d3fec-111">Minimum supported server</span></span><br/> | <span data-ttu-id="d3fec-112">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="d3fec-112">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8ce2b-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="8ce2b-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d3fec-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="d3fec-113">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8ce2b-114">**Contexto de definição do elemento no esquema**</span><span class="sxs-lookup"><span data-stu-id="8ce2b-114">**Definition context of element in schema**</span></span>
+<span data-ttu-id="d3fec-114">**Contexto de definição do elemento no esquema**</span><span class="sxs-lookup"><span data-stu-id="d3fec-114">**Definition context of element in schema**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="8ce2b-115">**networkitemtype**</span><span class="sxs-lookup"><span data-stu-id="8ce2b-115">**networkItemType**</span></span>](wlan-policyschema-networkitemtype-complextype.md)
+[<span data-ttu-id="d3fec-115">**networkitemtype**</span><span class="sxs-lookup"><span data-stu-id="d3fec-115">**networkItemType**</span></span>](wlan-policyschema-networkitemtype-complextype.md)
 </dt> <dt>
 
-<span data-ttu-id="8ce2b-116">**Possíveis elementos pai imediatos na instância de esquema**</span><span class="sxs-lookup"><span data-stu-id="8ce2b-116">**Possible immediate parent elements in schema instance**</span></span>
+<span data-ttu-id="d3fec-116">**Possíveis elementos pai imediatos na instância de esquema**</span><span class="sxs-lookup"><span data-stu-id="d3fec-116">**Possible immediate parent elements in schema instance**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="8ce2b-117">**rede (permitirlist)**</span><span class="sxs-lookup"><span data-stu-id="8ce2b-117">**network (allowList)**</span></span>](wlan-policyschema-network-allowlist-element.md)
+[<span data-ttu-id="d3fec-117">**rede (permitirlist)**</span><span class="sxs-lookup"><span data-stu-id="d3fec-117">**network (allowList)**</span></span>](wlan-policyschema-network-allowlist-element.md)
 </dt> <dt>
 
-[<span data-ttu-id="8ce2b-118">**rede (bloquearlist)**</span><span class="sxs-lookup"><span data-stu-id="8ce2b-118">**network (blockList)**</span></span>](wlan-policyschema-network-blocklist-element.md)
+[<span data-ttu-id="d3fec-118">**rede (bloquearlist)**</span><span class="sxs-lookup"><span data-stu-id="d3fec-118">**network (blockList)**</span></span>](wlan-policyschema-network-blocklist-element.md)
 </dt> </dl>
 
  

@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104006312"
 ---
-# <a name="em_gethilite-message"></a><span data-ttu-id="86cb1-104">\_Mensagem em GETHILITE</span><span class="sxs-lookup"><span data-stu-id="86cb1-104">EM\_GETHILITE message</span></span>
+# <a name="em_gethilite-message"></a><span data-ttu-id="deb21-104">\_Mensagem em GETHILITE</span><span class="sxs-lookup"><span data-stu-id="deb21-104">EM\_GETHILITE message</span></span>
 
-<span data-ttu-id="86cb1-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="86cb1-105">This message is not implemented.</span></span>
+<span data-ttu-id="deb21-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="deb21-105">This message is not implemented.</span></span>
 
  
 

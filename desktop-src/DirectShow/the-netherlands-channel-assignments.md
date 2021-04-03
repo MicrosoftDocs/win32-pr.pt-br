@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829574"
 ---
-# <a name="the-netherlands-channel-assignments"></a><span data-ttu-id="b65d5-103">As atribuições de canal Holanda</span><span class="sxs-lookup"><span data-stu-id="b65d5-103">The Netherlands Channel Assignments</span></span>
+# <a name="the-netherlands-channel-assignments"></a><span data-ttu-id="f40e0-103">As atribuições de canal Holanda</span><span class="sxs-lookup"><span data-stu-id="f40e0-103">The Netherlands Channel Assignments</span></span>
 
-<span data-ttu-id="b65d5-104">Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para os Países Baixos.</span><span class="sxs-lookup"><span data-stu-id="b65d5-104">This topic lists the frequency tables used for analog TV tuning for the Netherlands.</span></span>
+<span data-ttu-id="f40e0-104">Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para os Países Baixos.</span><span class="sxs-lookup"><span data-stu-id="f40e0-104">This topic lists the frequency tables used for analog TV tuning for the Netherlands.</span></span>
 
-<span data-ttu-id="b65d5-105">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="b65d5-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="f40e0-105">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="f40e0-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="b65d5-106">As seguintes atribuições de canal foram introduzidas no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="b65d5-106">The following channel assignments were introduced in Windows 7.</span></span> <span data-ttu-id="b65d5-107">Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.</span><span class="sxs-lookup"><span data-stu-id="b65d5-107">Previously, the [Unicable Frequency Table](unicable-frequency-table.md) was used.</span></span>
+<span data-ttu-id="f40e0-106">As seguintes atribuições de canal foram introduzidas no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="f40e0-106">The following channel assignments were introduced in Windows 7.</span></span> <span data-ttu-id="f40e0-107">Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.</span><span class="sxs-lookup"><span data-stu-id="f40e0-107">Previously, the [Unicable Frequency Table](unicable-frequency-table.md) was used.</span></span>
 
-## <a name="cable-assignments"></a><span data-ttu-id="b65d5-108">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="b65d5-108">Cable Assignments</span></span>
+## <a name="cable-assignments"></a><span data-ttu-id="f40e0-108">Atribuições de cabo</span><span class="sxs-lookup"><span data-stu-id="f40e0-108">Cable Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -518,11 +518,11 @@ ms.locfileid: "103829574"
        376000000L,      // 491 TV491
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="b65d5-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b65d5-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f40e0-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f40e0-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b65d5-110">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="b65d5-110">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="f40e0-110">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="f40e0-110">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

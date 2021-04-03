@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641799"
 ---
-# <a name="drm_licensestate_collaborativeplay"></a><span data-ttu-id="098ee-104">CollaborativePlay de licença do DRM \_ \_</span><span class="sxs-lookup"><span data-stu-id="098ee-104">DRM\_LicenseState\_CollaborativePlay</span></span>
+# <a name="drm_licensestate_collaborativeplay"></a><span data-ttu-id="5bf94-104">CollaborativePlay de licença do DRM \_ \_</span><span class="sxs-lookup"><span data-stu-id="5bf94-104">DRM\_LicenseState\_CollaborativePlay</span></span>
 
-<span data-ttu-id="098ee-105">A **propriedade \_ \_ CollaborativePlay de licença do DRM** contém uma estrutura de [**\_ \_ \_ dados de estado da licença do WM**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contém detalhes sobre como esse direito foi aplicado ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="098ee-105">The **DRM\_LicenseState\_CollaborativePlay** property contains a [**WM\_LICENSE\_STATE\_DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) structure that contains details about how this right has been applied to the content.</span></span>
+<span data-ttu-id="5bf94-105">A **propriedade \_ \_ CollaborativePlay de licença do DRM** contém uma estrutura de [**\_ \_ \_ dados de estado da licença do WM**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contém detalhes sobre como esse direito foi aplicado ao conteúdo.</span><span class="sxs-lookup"><span data-stu-id="5bf94-105">The **DRM\_LicenseState\_CollaborativePlay** property contains a [**WM\_LICENSE\_STATE\_DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) structure that contains details about how this right has been applied to the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="098ee-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="098ee-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="5bf94-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="5bf94-106">Global Constant</span></span>
 
-<span data-ttu-id="098ee-107">g \_ wszWMDRM \_ licensestate \_ CollaborativePlay</span><span class="sxs-lookup"><span data-stu-id="098ee-107">g\_wszWMDRM\_LicenseState\_CollaborativePlay</span></span>
+<span data-ttu-id="5bf94-107">g \_ wszWMDRM \_ licensestate \_ CollaborativePlay</span><span class="sxs-lookup"><span data-stu-id="5bf94-107">g\_wszWMDRM\_LicenseState\_CollaborativePlay</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="098ee-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="098ee-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="5bf94-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="5bf94-108">Data Type</span></span>
 
-<span data-ttu-id="098ee-109">**WMT \_ tipo \_ binário**</span><span class="sxs-lookup"><span data-stu-id="098ee-109">**WMT\_TYPE\_BINARY**</span></span>
+<span data-ttu-id="5bf94-109">**WMT \_ tipo \_ binário**</span><span class="sxs-lookup"><span data-stu-id="5bf94-109">**WMT\_TYPE\_BINARY**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="098ee-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="098ee-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5bf94-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="5bf94-110">Remarks</span></span>
 
-<span data-ttu-id="098ee-111">Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span><span class="sxs-lookup"><span data-stu-id="098ee-111">This is a read-only property that is retrieved using [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span></span>
+<span data-ttu-id="5bf94-111">Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span><span class="sxs-lookup"><span data-stu-id="5bf94-111">This is a read-only property that is retrieved using [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="098ee-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="098ee-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5bf94-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="5bf94-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="098ee-113">**Propriedades de DRM**</span><span class="sxs-lookup"><span data-stu-id="098ee-113">**DRM Properties**</span></span>](drm-properties.md)
+[<span data-ttu-id="5bf94-113">**Propriedades de DRM**</span><span class="sxs-lookup"><span data-stu-id="5bf94-113">**DRM Properties**</span></span>](drm-properties.md)
 </dt> </dl>
 
  

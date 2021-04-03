@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930442"
 ---
-# <a name="task-dialogs-overview"></a><span data-ttu-id="ac38f-103">Visão geral das caixas de diálogo de tarefas</span><span class="sxs-lookup"><span data-stu-id="ac38f-103">Task Dialogs Overview</span></span>
+# <a name="task-dialogs-overview"></a><span data-ttu-id="42fec-103">Visão geral das caixas de diálogo de tarefas</span><span class="sxs-lookup"><span data-stu-id="42fec-103">Task Dialogs Overview</span></span>
 
--   [<span data-ttu-id="ac38f-104">Sobre caixas de diálogo de tarefas</span><span class="sxs-lookup"><span data-stu-id="ac38f-104">About Task Dialogs</span></span>](task-dialogs-overview.md)
+-   [<span data-ttu-id="42fec-104">Sobre caixas de diálogo de tarefas</span><span class="sxs-lookup"><span data-stu-id="42fec-104">About Task Dialogs</span></span>](task-dialogs-overview.md)
 
  
 

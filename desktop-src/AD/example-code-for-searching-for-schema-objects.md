@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103915943"
 ---
-# <a name="example-code-for-searching-for-schema-objects"></a><span data-ttu-id="4d374-104">Exemplo de código para pesquisar objetos de esquema</span><span class="sxs-lookup"><span data-stu-id="4d374-104">Example Code for Searching for Schema Objects</span></span>
+# <a name="example-code-for-searching-for-schema-objects"></a><span data-ttu-id="da144-104">Exemplo de código para pesquisar objetos de esquema</span><span class="sxs-lookup"><span data-stu-id="da144-104">Example Code for Searching for Schema Objects</span></span>
 
-<span data-ttu-id="4d374-105">Este tópico inclui um exemplo de código usado para pesquisar objetos de esquema.</span><span class="sxs-lookup"><span data-stu-id="4d374-105">This topic includes a code example used to search for schema objects.</span></span>
+<span data-ttu-id="da144-105">Este tópico inclui um exemplo de código usado para pesquisar objetos de esquema.</span><span class="sxs-lookup"><span data-stu-id="da144-105">This topic includes a code example used to search for schema objects.</span></span>
 
-<span data-ttu-id="4d374-106">O exemplo de código C++ a seguir mostra como Pesquisar objetos de esquema que têm bits definidos no atributo **systemFlags** .</span><span class="sxs-lookup"><span data-stu-id="4d374-106">The following C++ code example shows how to search for schema objects that have bits set in the **systemFlags** attribute.</span></span>
+<span data-ttu-id="da144-106">O exemplo de código C++ a seguir mostra como Pesquisar objetos de esquema que têm bits definidos no atributo **systemFlags** .</span><span class="sxs-lookup"><span data-stu-id="da144-106">The following C++ code example shows how to search for schema objects that have bits set in the **systemFlags** attribute.</span></span>
 
 
 ```C++
@@ -152,7 +152,7 @@ HRESULT PrintAttributesByType(IDirectorySearch *pSchemaNC,
 
 
 
-<span data-ttu-id="4d374-107">O exemplo de código C e C++ a seguir mostra como procurar objetos de esquema replicados para o catálogo global.</span><span class="sxs-lookup"><span data-stu-id="4d374-107">The following C and C++ code example shows how to search for schema objects replicated to the global catalog.</span></span>
+<span data-ttu-id="da144-107">O exemplo de código C e C++ a seguir mostra como procurar objetos de esquema replicados para o catálogo global.</span><span class="sxs-lookup"><span data-stu-id="da144-107">The following C and C++ code example shows how to search for schema objects replicated to the global catalog.</span></span>
 
 
 ```C++
@@ -260,7 +260,7 @@ HRESULT PrintGCAttributes(IDirectorySearch *pSchemaNC)
 
 
 
-<span data-ttu-id="4d374-108">O exemplo de código C e C++ a seguir mostra como Pesquisar objetos de esquema indexados.</span><span class="sxs-lookup"><span data-stu-id="4d374-108">The following C and C++ code example shows how to search for indexed schema objects.</span></span>
+<span data-ttu-id="da144-108">O exemplo de código C e C++ a seguir mostra como Pesquisar objetos de esquema indexados.</span><span class="sxs-lookup"><span data-stu-id="da144-108">The following C and C++ code example shows how to search for indexed schema objects.</span></span>
 
 
 ```C++

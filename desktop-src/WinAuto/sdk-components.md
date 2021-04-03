@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916069"
 ---
-# <a name="active-accessibility-components"></a><span data-ttu-id="86dee-103">Componentes do Acessibilidade Ativa</span><span class="sxs-lookup"><span data-stu-id="86dee-103">Active Accessibility Components</span></span>
+# <a name="active-accessibility-components"></a><span data-ttu-id="9164d-103">Componentes do Acessibilidade Ativa</span><span class="sxs-lookup"><span data-stu-id="9164d-103">Active Accessibility Components</span></span>
 
-<span data-ttu-id="86dee-104">Esta seção descreve os componentes de programação do Microsoft Acessibilidade Ativa.</span><span class="sxs-lookup"><span data-stu-id="86dee-104">This section describes Microsoft Active Accessibility programming components.</span></span>
+<span data-ttu-id="9164d-104">Esta seção descreve os componentes de programação do Microsoft Acessibilidade Ativa.</span><span class="sxs-lookup"><span data-stu-id="9164d-104">This section describes Microsoft Active Accessibility programming components.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="86dee-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="86dee-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9164d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9164d-105">In this section</span></span>
 
--   [<span data-ttu-id="86dee-106">Arquivos de cabeçalho e lib</span><span class="sxs-lookup"><span data-stu-id="86dee-106">Header and Lib Files</span></span>](header-and-lib-files.md)
--   [<span data-ttu-id="86dee-107">Ferramentas</span><span class="sxs-lookup"><span data-stu-id="86dee-107">Tools</span></span>](tools.md)
+-   [<span data-ttu-id="9164d-106">Arquivos de cabeçalho e lib</span><span class="sxs-lookup"><span data-stu-id="9164d-106">Header and Lib Files</span></span>](header-and-lib-files.md)
+-   [<span data-ttu-id="9164d-107">Ferramentas</span><span class="sxs-lookup"><span data-stu-id="9164d-107">Tools</span></span>](tools.md)
 
  
 

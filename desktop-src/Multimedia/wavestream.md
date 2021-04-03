@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916058"
 ---
-# <a name="wavestream"></a><span data-ttu-id="ac20b-104">WaveStream</span><span class="sxs-lookup"><span data-stu-id="ac20b-104">Wavestream</span></span>
+# <a name="wavestream"></a><span data-ttu-id="5d3d8-104">WaveStream</span><span class="sxs-lookup"><span data-stu-id="5d3d8-104">Wavestream</span></span>
 
-<span data-ttu-id="ac20b-105">Os aplicativos usam as funções de retorno de chamada do WaveStream durante a captura de streaming para processar buffers de áudio.</span><span class="sxs-lookup"><span data-stu-id="ac20b-105">Applications use the wavestream callback functions during streaming capture to process audio buffers.</span></span> <span data-ttu-id="ac20b-106">A janela de captura chama uma função de retorno de chamada de WaveStream logo antes de gravar cada buffer de áudio no disco.</span><span class="sxs-lookup"><span data-stu-id="ac20b-106">The capture window calls a wavestream callback function just before writing each audio buffer to the disk.</span></span>
+<span data-ttu-id="5d3d8-105">Os aplicativos usam as funções de retorno de chamada do WaveStream durante a captura de streaming para processar buffers de áudio.</span><span class="sxs-lookup"><span data-stu-id="5d3d8-105">Applications use the wavestream callback functions during streaming capture to process audio buffers.</span></span> <span data-ttu-id="5d3d8-106">A janela de captura chama uma função de retorno de chamada de WaveStream logo antes de gravar cada buffer de áudio no disco.</span><span class="sxs-lookup"><span data-stu-id="5d3d8-106">The capture window calls a wavestream callback function just before writing each audio buffer to the disk.</span></span>
 
  
 

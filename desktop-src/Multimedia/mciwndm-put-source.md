@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644228"
 ---
-# <a name="mciwndm_put_source-message"></a><span data-ttu-id="63588-105">MCIWNDM \_ colocar \_ mensagem de origem</span><span class="sxs-lookup"><span data-stu-id="63588-105">MCIWNDM\_PUT\_SOURCE message</span></span>
+# <a name="mciwndm_put_source-message"></a><span data-ttu-id="86a45-105">MCIWNDM \_ colocar \_ mensagem de origem</span><span class="sxs-lookup"><span data-stu-id="86a45-105">MCIWNDM\_PUT\_SOURCE message</span></span>
 
-<span data-ttu-id="63588-106">A mensagem de **\_ \_ origem MCIWNDM Put** define as coordenadas do retângulo de origem usado para cortar as imagens de um arquivo AVI durante a reprodução.</span><span class="sxs-lookup"><span data-stu-id="63588-106">The **MCIWNDM\_PUT\_SOURCE** message redefines the coordinates of the source rectangle used for cropping the images of an AVI file during playback.</span></span> <span data-ttu-id="63588-107">Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) .</span><span class="sxs-lookup"><span data-stu-id="63588-107">You can send this message explicitly or by using the [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) macro.</span></span>
+<span data-ttu-id="86a45-106">A mensagem de **\_ \_ origem MCIWNDM Put** define as coordenadas do retângulo de origem usado para cortar as imagens de um arquivo AVI durante a reprodução.</span><span class="sxs-lookup"><span data-stu-id="86a45-106">The **MCIWNDM\_PUT\_SOURCE** message redefines the coordinates of the source rectangle used for cropping the images of an AVI file during playback.</span></span> <span data-ttu-id="86a45-107">Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) .</span><span class="sxs-lookup"><span data-stu-id="86a45-107">You can send this message explicitly or by using the [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) macro.</span></span>
 
 
 ```C++
@@ -34,30 +34,30 @@ lParam = (LPARAM) (LPRECT) prc;
 
 
 
-## <a name="parameters"></a><span data-ttu-id="63588-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="63588-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="86a45-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="86a45-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="63588-109"><span id="prc"></span><span id="PRC"></span>*popular*</span><span class="sxs-lookup"><span data-stu-id="63588-109"><span id="prc"></span><span id="PRC"></span>*prc*</span></span>
+<span data-ttu-id="86a45-109"><span id="prc"></span><span id="PRC"></span>*popular*</span><span class="sxs-lookup"><span data-stu-id="86a45-109"><span id="prc"></span><span id="PRC"></span>*prc*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="63588-110">Ponteiro para uma estrutura [Rect](/previous-versions//ms536136(v=vs.85)) que contém as coordenadas do retângulo de origem.</span><span class="sxs-lookup"><span data-stu-id="63588-110">Pointer to a [RECT](/previous-versions//ms536136(v=vs.85)) structure containing the coordinates of the source rectangle.</span></span>
+<span data-ttu-id="86a45-110">Ponteiro para uma estrutura [Rect](/previous-versions//ms536136(v=vs.85)) que contém as coordenadas do retângulo de origem.</span><span class="sxs-lookup"><span data-stu-id="86a45-110">Pointer to a [RECT](/previous-versions//ms536136(v=vs.85)) structure containing the coordinates of the source rectangle.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="63588-111">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="63588-111">Return Value</span></span>
+## <a name="return-value"></a><span data-ttu-id="86a45-111">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="86a45-111">Return Value</span></span>
 
-<span data-ttu-id="63588-112">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="63588-112">Returns zero if successful or an error otherwise.</span></span>
+<span data-ttu-id="86a45-112">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="86a45-112">Returns zero if successful or an error otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="63588-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="63588-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="86a45-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="86a45-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="63588-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="63588-114">Requirement</span></span> | <span data-ttu-id="63588-115">Valor</span><span class="sxs-lookup"><span data-stu-id="63588-115">Value</span></span> |
+| <span data-ttu-id="86a45-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="86a45-114">Requirement</span></span> | <span data-ttu-id="86a45-115">Valor</span><span class="sxs-lookup"><span data-stu-id="86a45-115">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="63588-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="63588-116">Minimum supported client</span></span><br/> | <span data-ttu-id="63588-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="63588-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                       |
-| <span data-ttu-id="63588-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="63588-118">Minimum supported server</span></span><br/> | <span data-ttu-id="63588-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="63588-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                             |
-| <span data-ttu-id="63588-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="63588-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="63588-121"><dt>VFW. h</dt></span><span class="sxs-lookup"><span data-stu-id="63588-121"><dt>Vfw.h</dt></span></span> </dl> |
+| <span data-ttu-id="86a45-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="86a45-116">Minimum supported client</span></span><br/> | <span data-ttu-id="86a45-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="86a45-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                       |
+| <span data-ttu-id="86a45-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="86a45-118">Minimum supported server</span></span><br/> | <span data-ttu-id="86a45-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="86a45-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                             |
+| <span data-ttu-id="86a45-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="86a45-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="86a45-121"><dt>VFW. h</dt></span><span class="sxs-lookup"><span data-stu-id="86a45-121"><dt>Vfw.h</dt></span></span> </dl> |
 
 
 

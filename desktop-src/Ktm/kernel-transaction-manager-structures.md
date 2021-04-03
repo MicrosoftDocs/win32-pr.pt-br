@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829790"
 ---
-# <a name="kernel-transaction-manager-structures"></a><span data-ttu-id="69be8-103">Estruturas do Gerenciador de transações do kernel</span><span class="sxs-lookup"><span data-stu-id="69be8-103">Kernel Transaction Manager Structures</span></span>
+# <a name="kernel-transaction-manager-structures"></a><span data-ttu-id="cbf98-103">Estruturas do Gerenciador de transações do kernel</span><span class="sxs-lookup"><span data-stu-id="cbf98-103">Kernel Transaction Manager Structures</span></span>
 
-<span data-ttu-id="69be8-104">As seguintes estruturas fazem parte da API do KTM (kernel Transaction Manager):</span><span class="sxs-lookup"><span data-stu-id="69be8-104">The following structures are part of the Kernel Transaction Manager (KTM) API:</span></span>
+<span data-ttu-id="cbf98-104">As seguintes estruturas fazem parte da API do KTM (kernel Transaction Manager):</span><span class="sxs-lookup"><span data-stu-id="cbf98-104">The following structures are part of the Kernel Transaction Manager (KTM) API:</span></span>
 
 <dl>
 
-[<span data-ttu-id="69be8-105">**notificação de transação \_**</span><span class="sxs-lookup"><span data-stu-id="69be8-105">**TRANSACTION\_NOTIFICATION**</span></span>](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification)  
-[<span data-ttu-id="69be8-106">**\_argumento de \_ recuperação de notificação de transação \_**</span><span class="sxs-lookup"><span data-stu-id="69be8-106">**TRANSACTION\_NOTIFICATION\_RECOVERY\_ARGUMENT**</span></span>](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification_recovery_argument)  
+[<span data-ttu-id="cbf98-105">**notificação de transação \_**</span><span class="sxs-lookup"><span data-stu-id="cbf98-105">**TRANSACTION\_NOTIFICATION**</span></span>](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification)  
+[<span data-ttu-id="cbf98-106">**\_argumento de \_ recuperação de notificação de transação \_**</span><span class="sxs-lookup"><span data-stu-id="cbf98-106">**TRANSACTION\_NOTIFICATION\_RECOVERY\_ARGUMENT**</span></span>](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification_recovery_argument)  
 </dl>
 
  

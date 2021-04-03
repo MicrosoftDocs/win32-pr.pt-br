@@ -18,17 +18,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640856"
 ---
-# <a name="midi-output-data-types"></a><span data-ttu-id="058d2-109">Tipos de dados de saída de MIDI</span><span class="sxs-lookup"><span data-stu-id="058d2-109">MIDI Output Data Types</span></span>
+# <a name="midi-output-data-types"></a><span data-ttu-id="a527c-109">Tipos de dados de saída de MIDI</span><span class="sxs-lookup"><span data-stu-id="a527c-109">MIDI Output Data Types</span></span>
 
-<span data-ttu-id="058d2-110">O Windows define os seguintes tipos de dados para funções de saída de MIDI.</span><span class="sxs-lookup"><span data-stu-id="058d2-110">Windows defines the following data types for MIDI output functions.</span></span>
+<span data-ttu-id="a527c-110">O Windows define os seguintes tipos de dados para funções de saída de MIDI.</span><span class="sxs-lookup"><span data-stu-id="a527c-110">Windows defines the following data types for MIDI output functions.</span></span>
 
 
 
-| <span data-ttu-id="058d2-111">Valor</span><span class="sxs-lookup"><span data-stu-id="058d2-111">Value</span></span>                              | <span data-ttu-id="058d2-112">Significado</span><span class="sxs-lookup"><span data-stu-id="058d2-112">Meaning</span></span>                                                                              |
+| <span data-ttu-id="a527c-111">Valor</span><span class="sxs-lookup"><span data-stu-id="a527c-111">Value</span></span>                              | <span data-ttu-id="a527c-112">Significado</span><span class="sxs-lookup"><span data-stu-id="a527c-112">Meaning</span></span>                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="058d2-113">**HMIDIOUT**</span><span class="sxs-lookup"><span data-stu-id="058d2-113">**HMIDIOUT**</span></span>                       | <span data-ttu-id="058d2-114">Identificador de um dispositivo de saída MIDI.</span><span class="sxs-lookup"><span data-stu-id="058d2-114">Handle of a MIDI output device.</span></span>                                                      |
-| [<span data-ttu-id="058d2-115">**MIDIHDR**</span><span class="sxs-lookup"><span data-stu-id="058d2-115">**MIDIHDR**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)         | <span data-ttu-id="058d2-116">Cabeçalho de um bloco de dados do sistema MIDI exclusivo ou de fluxo.</span><span class="sxs-lookup"><span data-stu-id="058d2-116">Header for a block of MIDI system-exclusive or stream data.</span></span>                          |
-| [<span data-ttu-id="058d2-117">**MIDIOUTCAPS**</span><span class="sxs-lookup"><span data-stu-id="058d2-117">**MIDIOUTCAPS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) | <span data-ttu-id="058d2-118">Estrutura usada para consultar os recursos de um dispositivo de saída de MIDI específico.</span><span class="sxs-lookup"><span data-stu-id="058d2-118">Structure used to inquire about the capabilities of a particular MIDI output device.</span></span> |
+| <span data-ttu-id="a527c-113">**HMIDIOUT**</span><span class="sxs-lookup"><span data-stu-id="a527c-113">**HMIDIOUT**</span></span>                       | <span data-ttu-id="a527c-114">Identificador de um dispositivo de saída MIDI.</span><span class="sxs-lookup"><span data-stu-id="a527c-114">Handle of a MIDI output device.</span></span>                                                      |
+| [<span data-ttu-id="a527c-115">**MIDIHDR**</span><span class="sxs-lookup"><span data-stu-id="a527c-115">**MIDIHDR**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)         | <span data-ttu-id="a527c-116">Cabeçalho de um bloco de dados do sistema MIDI exclusivo ou de fluxo.</span><span class="sxs-lookup"><span data-stu-id="a527c-116">Header for a block of MIDI system-exclusive or stream data.</span></span>                          |
+| [<span data-ttu-id="a527c-117">**MIDIOUTCAPS**</span><span class="sxs-lookup"><span data-stu-id="a527c-117">**MIDIOUTCAPS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) | <span data-ttu-id="a527c-118">Estrutura usada para consultar os recursos de um dispositivo de saída de MIDI específico.</span><span class="sxs-lookup"><span data-stu-id="a527c-118">Structure used to inquire about the capabilities of a particular MIDI output device.</span></span> |
 
 
 

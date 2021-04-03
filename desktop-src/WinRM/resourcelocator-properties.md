@@ -12,17 +12,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104006410"
 ---
-# <a name="resourcelocator-properties"></a><span data-ttu-id="b4b7e-103">Propriedades de ResourceLocator</span><span class="sxs-lookup"><span data-stu-id="b4b7e-103">ResourceLocator Properties</span></span>
+# <a name="resourcelocator-properties"></a><span data-ttu-id="635ca-103">Propriedades de ResourceLocator</span><span class="sxs-lookup"><span data-stu-id="635ca-103">ResourceLocator Properties</span></span>
 
-<span data-ttu-id="b4b7e-104">O objeto [**ResourceLocator**](resourcelocator.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="b4b7e-104">The [**ResourceLocator**](resourcelocator.md) object exposes the following properties.</span></span>
+<span data-ttu-id="635ca-104">O objeto [**ResourceLocator**](resourcelocator.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="635ca-104">The [**ResourceLocator**](resourcelocator.md) object exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b4b7e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b4b7e-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="635ca-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="635ca-105">In this section</span></span>
 
--   [<span data-ttu-id="b4b7e-106">**Propriedade de erro**</span><span class="sxs-lookup"><span data-stu-id="b4b7e-106">**Error Property**</span></span>](resourcelocator-error.md)
--   [<span data-ttu-id="b4b7e-107">**Propriedade FragmentDialect**</span><span class="sxs-lookup"><span data-stu-id="b4b7e-107">**FragmentDialect Property**</span></span>](resourcelocator-fragmentdialect.md)
--   [<span data-ttu-id="b4b7e-108">**Propriedade FragmentPath**</span><span class="sxs-lookup"><span data-stu-id="b4b7e-108">**FragmentPath Property**</span></span>](resourcelocator-fragmentpath.md)
--   [<span data-ttu-id="b4b7e-109">**Propriedade MustUnderstandoptions**</span><span class="sxs-lookup"><span data-stu-id="b4b7e-109">**MustUnderstandOptions Property**</span></span>](resourcelocator-mustunderstandoptions.md)
--   [<span data-ttu-id="b4b7e-110">**Propriedade ResourceURI**</span><span class="sxs-lookup"><span data-stu-id="b4b7e-110">**ResourceURI Property**</span></span>](resourcelocator-resourceuri.md)
+-   [<span data-ttu-id="635ca-106">**Propriedade de erro**</span><span class="sxs-lookup"><span data-stu-id="635ca-106">**Error Property**</span></span>](resourcelocator-error.md)
+-   [<span data-ttu-id="635ca-107">**Propriedade FragmentDialect**</span><span class="sxs-lookup"><span data-stu-id="635ca-107">**FragmentDialect Property**</span></span>](resourcelocator-fragmentdialect.md)
+-   [<span data-ttu-id="635ca-108">**Propriedade FragmentPath**</span><span class="sxs-lookup"><span data-stu-id="635ca-108">**FragmentPath Property**</span></span>](resourcelocator-fragmentpath.md)
+-   [<span data-ttu-id="635ca-109">**Propriedade MustUnderstandoptions**</span><span class="sxs-lookup"><span data-stu-id="635ca-109">**MustUnderstandOptions Property**</span></span>](resourcelocator-mustunderstandoptions.md)
+-   [<span data-ttu-id="635ca-110">**Propriedade ResourceURI**</span><span class="sxs-lookup"><span data-stu-id="635ca-110">**ResourceURI Property**</span></span>](resourcelocator-resourceuri.md)
 
  
 

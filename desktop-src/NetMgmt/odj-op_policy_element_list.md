@@ -12,11 +12,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/14/2020
 ms.locfileid: "103642949"
 ---
-# <a name="op_policy_element_list-structure"></a><span data-ttu-id="db024-103">Estrutura de OP_POLICY_ELEMENT_LIST</span><span class="sxs-lookup"><span data-stu-id="db024-103">OP_POLICY_ELEMENT_LIST structure</span></span>
+# <a name="op_policy_element_list-structure"></a><span data-ttu-id="36a2f-103">Estrutura de OP_POLICY_ELEMENT_LIST</span><span class="sxs-lookup"><span data-stu-id="36a2f-103">OP_POLICY_ELEMENT_LIST structure</span></span>
 
-<span data-ttu-id="db024-104">Define uma chave de registro raiz e uma matriz de elementos de chave do registro a serem configurados sob essa chave.</span><span class="sxs-lookup"><span data-stu-id="db024-104">Defines  a root registry key and an array of registry key elements to be configured under that key.</span></span>
+<span data-ttu-id="36a2f-104">Define uma chave de registro raiz e uma matriz de elementos de chave do registro a serem configurados sob essa chave.</span><span class="sxs-lookup"><span data-stu-id="36a2f-104">Defines  a root registry key and an array of registry key elements to be configured under that key.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="db024-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="db024-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="36a2f-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="36a2f-105">Syntax</span></span>
 
 ```C++
 typedef struct _OP_POLICY_ELEMENT_LIST
@@ -28,26 +28,26 @@ typedef struct _OP_POLICY_ELEMENT_LIST
 } OP_POLICY_ELEMENT_LIST, *POP_POLICY_ELEMENT_LIST;
 ```
 
-## <a name="members"></a><span data-ttu-id="db024-106">Membros</span><span class="sxs-lookup"><span data-stu-id="db024-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="36a2f-106">Membros</span><span class="sxs-lookup"><span data-stu-id="36a2f-106">Members</span></span>
 
-### <a name="psource"></a><span data-ttu-id="db024-107">pSource</span><span class="sxs-lookup"><span data-stu-id="db024-107">pSource</span></span>
+### <a name="psource"></a><span data-ttu-id="36a2f-107">pSource</span><span class="sxs-lookup"><span data-stu-id="36a2f-107">pSource</span></span>
 
-<span data-ttu-id="db024-108">Contém o caminho do arquivo de Política de Grupo do qual os elementos contidos foram originados.</span><span class="sxs-lookup"><span data-stu-id="db024-108">Contains the path of the Group Policy file that the contained elements were sourced from.</span></span>
+<span data-ttu-id="36a2f-108">Contém o caminho do arquivo de Política de Grupo do qual os elementos contidos foram originados.</span><span class="sxs-lookup"><span data-stu-id="36a2f-108">Contains the path of the Group Policy file that the contained elements were sourced from.</span></span>
 
-### <a name="ulrootkeyid"></a><span data-ttu-id="db024-109">ulRootKeyId</span><span class="sxs-lookup"><span data-stu-id="db024-109">ulRootKeyId</span></span>
+### <a name="ulrootkeyid"></a><span data-ttu-id="36a2f-109">ulRootKeyId</span><span class="sxs-lookup"><span data-stu-id="36a2f-109">ulRootKeyId</span></span>
 
-<span data-ttu-id="db024-110">Contém o identificador da chave do registro raiz; no momento, deve ser definido como HKEY_LOCAL_MACHINE.</span><span class="sxs-lookup"><span data-stu-id="db024-110">Contains the identifier of the root registry key; currently must be set to HKEY_LOCAL_MACHINE.</span></span>
+<span data-ttu-id="36a2f-110">Contém o identificador da chave do registro raiz; no momento, deve ser definido como HKEY_LOCAL_MACHINE.</span><span class="sxs-lookup"><span data-stu-id="36a2f-110">Contains the identifier of the root registry key; currently must be set to HKEY_LOCAL_MACHINE.</span></span>
 
-### <a name="celements"></a><span data-ttu-id="db024-111">cElements</span><span class="sxs-lookup"><span data-stu-id="db024-111">cElements</span></span>
+### <a name="celements"></a><span data-ttu-id="36a2f-111">cElements</span><span class="sxs-lookup"><span data-stu-id="36a2f-111">cElements</span></span>
 
-<span data-ttu-id="db024-112">Contém o número de elementos em pElements.</span><span class="sxs-lookup"><span data-stu-id="db024-112">Contains the number of elements in pElements.</span></span>
+<span data-ttu-id="36a2f-112">Contém o número de elementos em pElements.</span><span class="sxs-lookup"><span data-stu-id="36a2f-112">Contains the number of elements in pElements.</span></span>
 
-### <a name="pelements"></a><span data-ttu-id="db024-113">pElements</span><span class="sxs-lookup"><span data-stu-id="db024-113">pElements</span></span>
+### <a name="pelements"></a><span data-ttu-id="36a2f-113">pElements</span><span class="sxs-lookup"><span data-stu-id="36a2f-113">pElements</span></span>
 
-<span data-ttu-id="db024-114">Contém uma matriz de elementos de OP_POLICY_ELEMENT.</span><span class="sxs-lookup"><span data-stu-id="db024-114">Contains an array of OP_POLICY_ELEMENT elements.</span></span>
+<span data-ttu-id="36a2f-114">Contém uma matriz de elementos de OP_POLICY_ELEMENT.</span><span class="sxs-lookup"><span data-stu-id="36a2f-114">Contains an array of OP_POLICY_ELEMENT elements.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="db024-115">Consulte também</span><span class="sxs-lookup"><span data-stu-id="db024-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="36a2f-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="36a2f-115">See also</span></span>
 
-[<span data-ttu-id="db024-116">**Definições de IDL de ingresso no domínio offline**</span><span class="sxs-lookup"><span data-stu-id="db024-116">**Offline Domain Join IDL Definitions**</span></span>](odj-idl.md)
+[<span data-ttu-id="36a2f-116">**Definições de IDL de ingresso no domínio offline**</span><span class="sxs-lookup"><span data-stu-id="36a2f-116">**Offline Domain Join IDL Definitions**</span></span>](odj-idl.md)
 
-[<span data-ttu-id="db024-117">**\_elemento de política op \_**</span><span class="sxs-lookup"><span data-stu-id="db024-117">**OP\_POLICY\_ELEMENT**</span></span>](odj-op_policy_element.md)
+[<span data-ttu-id="36a2f-117">**\_elemento de política op \_**</span><span class="sxs-lookup"><span data-stu-id="36a2f-117">**OP\_POLICY\_ELEMENT**</span></span>](odj-op_policy_element.md)

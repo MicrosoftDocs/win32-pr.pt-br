@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104006006"
 ---
-# <a name="incrementing-the-handler-reference-count"></a><span data-ttu-id="ffbb3-103">Incrementando a contagem de referência do manipulador</span><span class="sxs-lookup"><span data-stu-id="ffbb3-103">Incrementing the Handler Reference Count</span></span>
+# <a name="incrementing-the-handler-reference-count"></a><span data-ttu-id="86b93-103">Incrementando a contagem de referência do manipulador</span><span class="sxs-lookup"><span data-stu-id="86b93-103">Incrementing the Handler Reference Count</span></span>
 
-<span data-ttu-id="ffbb3-104">O método **AddRef** incrementa a contagem de referência de fluxo ou de controle de arquivo.</span><span class="sxs-lookup"><span data-stu-id="ffbb3-104">The **AddRef** method increments the stream-hander or file-handler reference count.</span></span>
+<span data-ttu-id="86b93-104">O método **AddRef** incrementa a contagem de referência de fluxo ou de controle de arquivo.</span><span class="sxs-lookup"><span data-stu-id="86b93-104">The **AddRef** method increments the stream-hander or file-handler reference count.</span></span>
 
 
 ```C++

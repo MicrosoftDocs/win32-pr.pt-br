@@ -23,16 +23,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644511"
 ---
-# <a name="inapcomponentconfig3deleteconfig-method"></a><span data-ttu-id="36a8c-106">INapComponentConfig3: método eleteConfig de:D</span><span class="sxs-lookup"><span data-stu-id="36a8c-106">INapComponentConfig3::DeleteConfig method</span></span>
+# <a name="inapcomponentconfig3deleteconfig-method"></a><span data-ttu-id="2ba98-106">INapComponentConfig3: método eleteConfig de:D</span><span class="sxs-lookup"><span data-stu-id="2ba98-106">INapComponentConfig3::DeleteConfig method</span></span>
 
 > [!Note]  
-> <span data-ttu-id="36a8c-107">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="36a8c-107">The Network Access Protection platform is not available starting with Windows 10</span></span>
+> <span data-ttu-id="2ba98-107">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="2ba98-107">The Network Access Protection platform is not available starting with Windows 10</span></span>
 
  
 
-<span data-ttu-id="36a8c-108">O método **DeleteConfig** é implementado por SHVs (validadores da integridade do sistema) para fornecer uma maneira de excluir dados de configuração para uma ID de configuração específica.</span><span class="sxs-lookup"><span data-stu-id="36a8c-108">The **DeleteConfig** method is implemented by system health validators (SHVs) to provide a way to delete configuration data for a specific configuration ID.</span></span> <span data-ttu-id="36a8c-109">A ID pode ser reutilizada depois que os dados de configuração forem excluídos.</span><span class="sxs-lookup"><span data-stu-id="36a8c-109">The ID may be reused after the configuration data has been deleted.</span></span>
+<span data-ttu-id="2ba98-108">O método **DeleteConfig** é implementado por SHVs (validadores da integridade do sistema) para fornecer uma maneira de excluir dados de configuração para uma ID de configuração específica.</span><span class="sxs-lookup"><span data-stu-id="2ba98-108">The **DeleteConfig** method is implemented by system health validators (SHVs) to provide a way to delete configuration data for a specific configuration ID.</span></span> <span data-ttu-id="2ba98-109">A ID pode ser reutilizada depois que os dados de configuração forem excluídos.</span><span class="sxs-lookup"><span data-stu-id="2ba98-109">The ID may be reused after the configuration data has been deleted.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="36a8c-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="36a8c-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2ba98-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2ba98-110">Syntax</span></span>
 
 
 ```C++
@@ -43,51 +43,51 @@ HRESULT DeleteConfig(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="36a8c-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="36a8c-111">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2ba98-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2ba98-111">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="36a8c-112">*configid*</span><span class="sxs-lookup"><span data-stu-id="36a8c-112">*configID*</span></span> 
+<span data-ttu-id="2ba98-112">*configid*</span><span class="sxs-lookup"><span data-stu-id="2ba98-112">*configID*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="36a8c-113">Um valor que representa os dados de configuração a serem excluídos.</span><span class="sxs-lookup"><span data-stu-id="36a8c-113">A value that represents the configuration data to delete.</span></span>
+<span data-ttu-id="2ba98-113">Um valor que representa os dados de configuração a serem excluídos.</span><span class="sxs-lookup"><span data-stu-id="2ba98-113">A value that represents the configuration data to delete.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="36a8c-114">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="36a8c-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2ba98-114">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2ba98-114">Return value</span></span>
 
-<span data-ttu-id="36a8c-115">Retorna um dos seguintes códigos de erro com base no resultado dessa operação.</span><span class="sxs-lookup"><span data-stu-id="36a8c-115">Returns one of the following error codes based on the result of this operation.</span></span>
+<span data-ttu-id="2ba98-115">Retorna um dos seguintes códigos de erro com base no resultado dessa operação.</span><span class="sxs-lookup"><span data-stu-id="2ba98-115">Returns one of the following error codes based on the result of this operation.</span></span>
 
 
 
-| <span data-ttu-id="36a8c-116">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="36a8c-116">Return code</span></span>                                                                                                    | <span data-ttu-id="36a8c-117">Description</span><span class="sxs-lookup"><span data-stu-id="36a8c-117">Description</span></span>                                                                  |
+| <span data-ttu-id="2ba98-116">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="2ba98-116">Return code</span></span>                                                                                                    | <span data-ttu-id="2ba98-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="2ba98-117">Description</span></span>                                                                  |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <span data-ttu-id="36a8c-118"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="36a8c-118"><dt>**S\_OK** </dt></span></span> </dl>                          | <span data-ttu-id="36a8c-119">A operação teve êxito.</span><span class="sxs-lookup"><span data-stu-id="36a8c-119">The operation is successful.</span></span><br/>                                      |
-| <dl> <span data-ttu-id="36a8c-120"><dt>**E \_ INVALIDARG**</dt></span><span class="sxs-lookup"><span data-stu-id="36a8c-120"><dt>**E\_INVALIDARG**</dt></span></span> </dl>                   | <span data-ttu-id="36a8c-121">*Configid* é 0 (um valor reservado para a configuração padrão).</span><span class="sxs-lookup"><span data-stu-id="36a8c-121">*ConfigID* is 0 (a value reserved for the default configuration).</span></span><br/> |
-| <dl> <span data-ttu-id="36a8c-122"><dt>**configuração de NAP \_ E \_ SHV \_ \_ não \_ encontrada**</dt></span><span class="sxs-lookup"><span data-stu-id="36a8c-122"><dt>**NAP\_E\_SHV\_CONFIG\_NOT\_FOUND**</dt></span></span> </dl> | <span data-ttu-id="36a8c-123">Não foi possível encontrar *configid* .</span><span class="sxs-lookup"><span data-stu-id="36a8c-123">*ConfigID* cannot be found.</span></span><br/>                                       |
+| <dl> <span data-ttu-id="2ba98-118"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="2ba98-118"><dt>**S\_OK** </dt></span></span> </dl>                          | <span data-ttu-id="2ba98-119">A operação teve êxito.</span><span class="sxs-lookup"><span data-stu-id="2ba98-119">The operation is successful.</span></span><br/>                                      |
+| <dl> <span data-ttu-id="2ba98-120"><dt>**E \_ INVALIDARG**</dt></span><span class="sxs-lookup"><span data-stu-id="2ba98-120"><dt>**E\_INVALIDARG**</dt></span></span> </dl>                   | <span data-ttu-id="2ba98-121">*Configid* é 0 (um valor reservado para a configuração padrão).</span><span class="sxs-lookup"><span data-stu-id="2ba98-121">*ConfigID* is 0 (a value reserved for the default configuration).</span></span><br/> |
+| <dl> <span data-ttu-id="2ba98-122"><dt>**configuração de NAP \_ E \_ SHV \_ \_ não \_ encontrada**</dt></span><span class="sxs-lookup"><span data-stu-id="2ba98-122"><dt>**NAP\_E\_SHV\_CONFIG\_NOT\_FOUND**</dt></span></span> </dl> | <span data-ttu-id="2ba98-123">Não foi possível encontrar *configid* .</span><span class="sxs-lookup"><span data-stu-id="2ba98-123">*ConfigID* cannot be found.</span></span><br/>                                       |
 
 
 
  
 
-## <a name="requirements"></a><span data-ttu-id="36a8c-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="36a8c-124">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2ba98-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2ba98-124">Requirements</span></span>
 
 
 
-| <span data-ttu-id="36a8c-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="36a8c-125">Requirement</span></span> | <span data-ttu-id="36a8c-126">Valor</span><span class="sxs-lookup"><span data-stu-id="36a8c-126">Value</span></span> |
+| <span data-ttu-id="2ba98-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="2ba98-125">Requirement</span></span> | <span data-ttu-id="2ba98-126">Valor</span><span class="sxs-lookup"><span data-stu-id="2ba98-126">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="36a8c-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="36a8c-127">Minimum supported client</span></span><br/> | <span data-ttu-id="36a8c-128">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="36a8c-128">None supported</span></span><br/>                                                                |
-| <span data-ttu-id="36a8c-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="36a8c-129">Minimum supported server</span></span><br/> | <span data-ttu-id="36a8c-130">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="36a8c-130">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="36a8c-131">parâmetro</span><span class="sxs-lookup"><span data-stu-id="36a8c-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="36a8c-132"><dt>NapCommon. h</dt></span><span class="sxs-lookup"><span data-stu-id="36a8c-132"><dt>NapCommon.h</dt></span></span> </dl>   |
-| <span data-ttu-id="36a8c-133">INSERI</span><span class="sxs-lookup"><span data-stu-id="36a8c-133">IDL</span></span><br/>                      | <dl> <span data-ttu-id="36a8c-134"><dt>NapCommon. idl</dt></span><span class="sxs-lookup"><span data-stu-id="36a8c-134"><dt>NapCommon.idl</dt></span></span> </dl> |
+| <span data-ttu-id="2ba98-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2ba98-127">Minimum supported client</span></span><br/> | <span data-ttu-id="2ba98-128">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="2ba98-128">None supported</span></span><br/>                                                                |
+| <span data-ttu-id="2ba98-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2ba98-129">Minimum supported server</span></span><br/> | <span data-ttu-id="2ba98-130">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="2ba98-130">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="2ba98-131">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2ba98-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="2ba98-132"><dt>NapCommon. h</dt></span><span class="sxs-lookup"><span data-stu-id="2ba98-132"><dt>NapCommon.h</dt></span></span> </dl>   |
+| <span data-ttu-id="2ba98-133">INSERI</span><span class="sxs-lookup"><span data-stu-id="2ba98-133">IDL</span></span><br/>                      | <dl> <span data-ttu-id="2ba98-134"><dt>NapCommon. idl</dt></span><span class="sxs-lookup"><span data-stu-id="2ba98-134"><dt>NapCommon.idl</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="36a8c-135">Consulte também</span><span class="sxs-lookup"><span data-stu-id="36a8c-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ba98-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="2ba98-135">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="36a8c-136">**INapComponentConfig3**</span><span class="sxs-lookup"><span data-stu-id="36a8c-136">**INapComponentConfig3**</span></span>](inapcomponentconfig3.md)
+[<span data-ttu-id="2ba98-136">**INapComponentConfig3**</span><span class="sxs-lookup"><span data-stu-id="2ba98-136">**INapComponentConfig3**</span></span>](inapcomponentconfig3.md)
 </dt> </dl>
 
  
