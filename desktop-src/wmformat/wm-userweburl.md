@@ -19,23 +19,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823189"
 ---
-# <a name="wmuserweburl"></a><span data-ttu-id="a5ee2-104">WM/UserWebURL</span><span class="sxs-lookup"><span data-stu-id="a5ee2-104">WM/UserWebURL</span></span>
+# <a name="wmuserweburl"></a><span data-ttu-id="fff32-104">WM/UserWebURL</span><span class="sxs-lookup"><span data-stu-id="fff32-104">WM/UserWebURL</span></span>
 
-<span data-ttu-id="a5ee2-105">O atributo **WM/UserWebURL** contém o endereço de um site da Web e uma descrição do site.</span><span class="sxs-lookup"><span data-stu-id="a5ee2-105">The **WM/UserWebURL** attribute contains the address of a Web site and a description of the site.</span></span>
+<span data-ttu-id="fff32-105">O atributo **WM/UserWebURL** contém o endereço de um site da Web e uma descrição do site.</span><span class="sxs-lookup"><span data-stu-id="fff32-105">The **WM/UserWebURL** attribute contains the address of a Web site and a description of the site.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="a5ee2-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="a5ee2-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="fff32-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="fff32-106">Global Constant</span></span>
 
-<span data-ttu-id="a5ee2-107">g \_ wszWMUserWebURL</span><span class="sxs-lookup"><span data-stu-id="a5ee2-107">g\_wszWMUserWebURL</span></span>
+<span data-ttu-id="fff32-107">g \_ wszWMUserWebURL</span><span class="sxs-lookup"><span data-stu-id="fff32-107">g\_wszWMUserWebURL</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="a5ee2-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="a5ee2-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="fff32-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="fff32-108">Data Type</span></span>
 
-<span data-ttu-id="a5ee2-109">[**WM \_ \_ \_ URL da Web do usuário**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**\_ tipo WMT \_ Binary**)</span><span class="sxs-lookup"><span data-stu-id="a5ee2-109">[**WM\_USER\_WEB\_URL**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**WMT\_TYPE\_BINARY**)</span></span>
+<span data-ttu-id="fff32-109">[**WM \_ \_ \_ URL da Web do usuário**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**\_ tipo WMT \_ Binary**)</span><span class="sxs-lookup"><span data-stu-id="fff32-109">[**WM\_USER\_WEB\_URL**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**WMT\_TYPE\_BINARY**)</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a5ee2-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="a5ee2-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fff32-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="fff32-110">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a5ee2-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="a5ee2-111">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="fff32-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="fff32-111">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

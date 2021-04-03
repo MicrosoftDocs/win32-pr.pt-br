@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103823079"
 ---
-# <a name="streaminghttpserverexample"></a><span data-ttu-id="f5600-106">StreamingHttpServerExample</span><span class="sxs-lookup"><span data-stu-id="f5600-106">StreamingHttpServerExample</span></span>
+# <a name="streaminghttpserverexample"></a><span data-ttu-id="ace06-106">StreamingHttpServerExample</span><span class="sxs-lookup"><span data-stu-id="ace06-106">StreamingHttpServerExample</span></span>
 
-<span data-ttu-id="f5600-107">Este exemplo mostra um servidor HTTP que aceita um canal e o processamento de solicitação-resposta de forma contínua.</span><span class="sxs-lookup"><span data-stu-id="f5600-107">This example shows an HTTP server that accepts a channel, and does request-reply processing in a streaming fashion.</span></span>
+<span data-ttu-id="ace06-107">Este exemplo mostra um servidor HTTP que aceita um canal e o processamento de solicitação-resposta de forma contínua.</span><span class="sxs-lookup"><span data-stu-id="ace06-107">This example shows an HTTP server that accepts a channel, and does request-reply processing in a streaming fashion.</span></span>
 
--   [<span data-ttu-id="f5600-108">StreamingHttpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="f5600-108">StreamingHttpServer.cpp</span></span>](#streaminghttpservercpp)
--   [<span data-ttu-id="f5600-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f5600-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="f5600-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="f5600-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="ace06-108">StreamingHttpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="ace06-108">StreamingHttpServer.cpp</span></span>](#streaminghttpservercpp)
+-   [<span data-ttu-id="ace06-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ace06-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="ace06-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="ace06-110">Makefile</span></span>](#makefile)
 
-## <a name="streaminghttpservercpp"></a><span data-ttu-id="f5600-111">StreamingHttpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="f5600-111">StreamingHttpServer.cpp</span></span>
+## <a name="streaminghttpservercpp"></a><span data-ttu-id="ace06-111">StreamingHttpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="ace06-111">StreamingHttpServer.cpp</span></span>
 
 
 ```C++
@@ -472,7 +472,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="f5600-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f5600-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="ace06-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ace06-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -583,7 +583,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="f5600-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="f5600-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="ace06-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="ace06-113">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------

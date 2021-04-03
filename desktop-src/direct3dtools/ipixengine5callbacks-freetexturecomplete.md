@@ -24,19 +24,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645855"
 ---
-# <a name="span-idvspixengineipixengine5callbacks_freetexturecompletespanipixengine5callbacksfreetexturecomplete-method"></a><span data-ttu-id="00db4-103"><span id="vspixengine.ipixengine5callbacks_freetexturecomplete"></span>Método IPixEngine5Callbacks:: FreeTextureComplete</span><span class="sxs-lookup"><span data-stu-id="00db4-103"><span id="vspixengine.ipixengine5callbacks_freetexturecomplete"></span>IPixEngine5Callbacks::FreeTextureComplete method</span></span>
+# <a name="span-idvspixengineipixengine5callbacks_freetexturecompletespanipixengine5callbacksfreetexturecomplete-method"></a><span data-ttu-id="f01c3-103"><span id="vspixengine.ipixengine5callbacks_freetexturecomplete"></span>Método IPixEngine5Callbacks:: FreeTextureComplete</span><span class="sxs-lookup"><span data-stu-id="f01c3-103"><span id="vspixengine.ipixengine5callbacks_freetexturecomplete"></span>IPixEngine5Callbacks::FreeTextureComplete method</span></span>
 
-<span data-ttu-id="00db4-104">Uma função de retorno de chamada usada para notificar o host quando uma textura foi liberada.</span><span class="sxs-lookup"><span data-stu-id="00db4-104">A callback function used to notify the host when a texture has been freed.</span></span>
+<span data-ttu-id="f01c3-104">Uma função de retorno de chamada usada para notificar o host quando uma textura foi liberada.</span><span class="sxs-lookup"><span data-stu-id="f01c3-104">A callback function used to notify the host when a texture has been freed.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="00db4-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="00db4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f01c3-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f01c3-105">Syntax</span></span>
 
 
 ```C++
 ```
 
-## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="00db4-106"><span id="see_also"></span>Confira também</span><span class="sxs-lookup"><span data-stu-id="00db4-106"><span id="see_also"></span>See also</span></span>
+## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="f01c3-106"><span id="see_also"></span>Consulte também</span><span class="sxs-lookup"><span data-stu-id="f01c3-106"><span id="see_also"></span>See also</span></span>
 
-[<span data-ttu-id="00db4-107">**IPixEngine5Callbacks**</span><span class="sxs-lookup"><span data-stu-id="00db4-107">**IPixEngine5Callbacks**</span></span>](/windows/desktop/direct3dtools/ipixengine5callbacks)
+[<span data-ttu-id="f01c3-107">**IPixEngine5Callbacks**</span><span class="sxs-lookup"><span data-stu-id="f01c3-107">**IPixEngine5Callbacks**</span></span>](/windows/desktop/direct3dtools/ipixengine5callbacks)
 
  
 

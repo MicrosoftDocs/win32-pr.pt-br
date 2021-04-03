@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916176"
 ---
-# <a name="using-pager-controls"></a><span data-ttu-id="1a3dc-103">Usando controles de pager</span><span class="sxs-lookup"><span data-stu-id="1a3dc-103">Using Pager Controls</span></span>
+# <a name="using-pager-controls"></a><span data-ttu-id="f466c-103">Usando controles de pager</span><span class="sxs-lookup"><span data-stu-id="f466c-103">Using Pager Controls</span></span>
 
-<span data-ttu-id="1a3dc-104">Esta seção fornece código de exemplo e informações sobre como criar e usar controles de pager.</span><span class="sxs-lookup"><span data-stu-id="1a3dc-104">This section provides example code and information about how to create and use pager controls.</span></span>
+<span data-ttu-id="f466c-104">Esta seção fornece código de exemplo e informações sobre como criar e usar controles de pager.</span><span class="sxs-lookup"><span data-stu-id="f466c-104">This section provides example code and information about how to create and use pager controls.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="1a3dc-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1a3dc-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="f466c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f466c-105">In this section</span></span>
 
 
 
-| <span data-ttu-id="1a3dc-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="1a3dc-106">Topic</span></span>                                                          | <span data-ttu-id="1a3dc-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a3dc-107">Description</span></span>                                                                                |
+| <span data-ttu-id="f466c-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="f466c-106">Topic</span></span>                                                          | <span data-ttu-id="f466c-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="f466c-107">Description</span></span>                                                                                |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="1a3dc-108">Como usar controles de pager</span><span class="sxs-lookup"><span data-stu-id="1a3dc-108">How to Use Pager Controls</span></span>](use-pager-controls.md)<br/> | <span data-ttu-id="1a3dc-109">Esta seção descreve como implementar o controle de pager em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1a3dc-109">This section describes how to implement the pager control in your application.</span></span> <br/> |
+| [<span data-ttu-id="f466c-108">Como usar controles de pager</span><span class="sxs-lookup"><span data-stu-id="f466c-108">How to Use Pager Controls</span></span>](use-pager-controls.md)<br/> | <span data-ttu-id="f466c-109">Esta seção descreve como implementar o controle de pager em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f466c-109">This section describes how to implement the pager control in your application.</span></span> <br/> |
 
 
 

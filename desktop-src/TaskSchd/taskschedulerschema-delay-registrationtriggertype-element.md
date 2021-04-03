@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645219"
 ---
-# <a name="delay-registrationtriggertype-element"></a><span data-ttu-id="dc4dc-104">Elemento Delay (registrationTriggerType)</span><span class="sxs-lookup"><span data-stu-id="dc4dc-104">Delay (registrationTriggerType) Element</span></span>
+# <a name="delay-registrationtriggertype-element"></a><span data-ttu-id="431fc-104">Elemento Delay (registrationTriggerType)</span><span class="sxs-lookup"><span data-stu-id="431fc-104">Delay (registrationTriggerType) Element</span></span>
 
-<span data-ttu-id="dc4dc-105">Especifica a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada.</span><span class="sxs-lookup"><span data-stu-id="dc4dc-105">Specifies the amount of time between when the task is registered and when the task is started.</span></span> <span data-ttu-id="dc4dc-106">O formato dessa cadeia de caracteres é PnYnMnDTnHnMnS, onde nY é o número de anos, o nM é o número de meses, nD é o número de dias, ' T' é o separador de data/hora, nH é o número de horas, nM é o número de minutos e nS é o número de segundos (por exemplo, PT5M especifica 5 minutos e P1M4DT2H5M especifica um mês, quatro dias, duas horas e cinco minutos).</span><span class="sxs-lookup"><span data-stu-id="dc4dc-106">The format for this string is PnYnMnDTnHnMnS, where nY is the number of years, nM is the number of months, nD is the number of days, 'T' is the date/time separator, nH is the number of hours, nM is the number of minutes, and nS is the number of seconds (for example, PT5M specifies 5 minutes and P1M4DT2H5M specifies one month, four days, two hours, and five minutes).</span></span> <span data-ttu-id="dc4dc-107">Para obter mais informações sobre o tipo de duração, consulte <https://go.microsoft.com/fwlink/p/?linkid=106886> .</span><span class="sxs-lookup"><span data-stu-id="dc4dc-107">For more information about the duration type, see <https://go.microsoft.com/fwlink/p/?linkid=106886>.</span></span>
+<span data-ttu-id="431fc-105">Especifica a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada.</span><span class="sxs-lookup"><span data-stu-id="431fc-105">Specifies the amount of time between when the task is registered and when the task is started.</span></span> <span data-ttu-id="431fc-106">O formato dessa cadeia de caracteres é PnYnMnDTnHnMnS, onde nY é o número de anos, o nM é o número de meses, nD é o número de dias, ' T' é o separador de data/hora, nH é o número de horas, nM é o número de minutos e nS é o número de segundos (por exemplo, PT5M especifica 5 minutos e P1M4DT2H5M especifica um mês, quatro dias, duas horas e cinco minutos).</span><span class="sxs-lookup"><span data-stu-id="431fc-106">The format for this string is PnYnMnDTnHnMnS, where nY is the number of years, nM is the number of months, nD is the number of days, 'T' is the date/time separator, nH is the number of hours, nM is the number of minutes, and nS is the number of seconds (for example, PT5M specifies 5 minutes and P1M4DT2H5M specifies one month, four days, two hours, and five minutes).</span></span> <span data-ttu-id="431fc-107">Para obter mais informações sobre o tipo de duração, consulte <https://go.microsoft.com/fwlink/p/?linkid=106886> .</span><span class="sxs-lookup"><span data-stu-id="431fc-107">For more information about the duration type, see <https://go.microsoft.com/fwlink/p/?linkid=106886>.</span></span>
 
 ``` syntax
 <xs:element name="Delay"
@@ -30,27 +30,27 @@ ms.locfileid: "103645219"
  />
 ```
 
-<span data-ttu-id="dc4dc-108">O elemento **Delay** é definido pelo tipo complexo [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="dc4dc-108">The **Delay** element is defined by the [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) complex type.</span></span>
+<span data-ttu-id="431fc-108">O elemento **Delay** é definido pelo tipo complexo [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="431fc-108">The **Delay** element is defined by the [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) complex type.</span></span>
 
-## <a name="parent-element"></a><span data-ttu-id="dc4dc-109">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="dc4dc-109">Parent element</span></span>
+## <a name="parent-element"></a><span data-ttu-id="431fc-109">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="431fc-109">Parent element</span></span>
 
 
 
-| <span data-ttu-id="dc4dc-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="dc4dc-110">Element</span></span>                                                                                     | <span data-ttu-id="dc4dc-111">Derivado de</span><span class="sxs-lookup"><span data-stu-id="dc4dc-111">Derived from</span></span>                                                                               | <span data-ttu-id="dc4dc-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc4dc-112">Description</span></span>                                                                    |
+| <span data-ttu-id="431fc-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="431fc-110">Element</span></span>                                                                                     | <span data-ttu-id="431fc-111">Derivado de</span><span class="sxs-lookup"><span data-stu-id="431fc-111">Derived from</span></span>                                                                               | <span data-ttu-id="431fc-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="431fc-112">Description</span></span>                                                                    |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [<span data-ttu-id="dc4dc-113">**RegistrationTrigger**</span><span class="sxs-lookup"><span data-stu-id="dc4dc-113">**RegistrationTrigger**</span></span>](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [<span data-ttu-id="dc4dc-114">**registrationTriggerType**</span><span class="sxs-lookup"><span data-stu-id="dc4dc-114">**registrationTriggerType**</span></span>](taskschedulerschema-registrationtriggertype-complextype.md) | <span data-ttu-id="dc4dc-115">Especifica um gatilho que inicia uma tarefa quando a tarefa é registrada.</span><span class="sxs-lookup"><span data-stu-id="dc4dc-115">Specifies a trigger that starts a task when the task is registered.</span></span><br/> |
+| [<span data-ttu-id="431fc-113">**RegistrationTrigger**</span><span class="sxs-lookup"><span data-stu-id="431fc-113">**RegistrationTrigger**</span></span>](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [<span data-ttu-id="431fc-114">**registrationTriggerType**</span><span class="sxs-lookup"><span data-stu-id="431fc-114">**registrationTriggerType**</span></span>](taskschedulerschema-registrationtriggertype-complextype.md) | <span data-ttu-id="431fc-115">Especifica um gatilho que inicia uma tarefa quando a tarefa é registrada.</span><span class="sxs-lookup"><span data-stu-id="431fc-115">Specifies a trigger that starts a task when the task is registered.</span></span><br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="dc4dc-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="dc4dc-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="431fc-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="431fc-116">Remarks</span></span>
 
-<span data-ttu-id="dc4dc-117">Para o desenvolvimento de scripts, o atraso do gatilho de registro é especificado usando a propriedade [**RegistrationTrigger. Delay**](registrationtrigger-delay.md) .</span><span class="sxs-lookup"><span data-stu-id="dc4dc-117">For scripting development, the registration trigger delay is specified using the [**RegistrationTrigger.Delay**](registrationtrigger-delay.md) property.</span></span>
+<span data-ttu-id="431fc-117">Para o desenvolvimento de scripts, o atraso do gatilho de registro é especificado usando a propriedade [**RegistrationTrigger. Delay**](registrationtrigger-delay.md) .</span><span class="sxs-lookup"><span data-stu-id="431fc-117">For scripting development, the registration trigger delay is specified using the [**RegistrationTrigger.Delay**](registrationtrigger-delay.md) property.</span></span>
 
-<span data-ttu-id="dc4dc-118">Para desenvolvimento em C++, o atraso do gatilho de registro é especificado usando a propriedade [**IRegistrationTrigger::D epetição**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay) .</span><span class="sxs-lookup"><span data-stu-id="dc4dc-118">For C++ development, the registration trigger delay is specified using the [**IRegistrationTrigger::Delay**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay) property.</span></span>
+<span data-ttu-id="431fc-118">Para desenvolvimento em C++, o atraso do gatilho de registro é especificado usando a propriedade [**IRegistrationTrigger::D epetição**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay) .</span><span class="sxs-lookup"><span data-stu-id="431fc-118">For C++ development, the registration trigger delay is specified using the [**IRegistrationTrigger::Delay**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay) property.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="dc4dc-119">Exemplos</span><span class="sxs-lookup"><span data-stu-id="dc4dc-119">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="431fc-119">Exemplos</span><span class="sxs-lookup"><span data-stu-id="431fc-119">Examples</span></span>
 
-<span data-ttu-id="dc4dc-120">O XML a seguir define um atraso de gatilho de registro que permite um atraso de 5 minutos entre o momento em que a tarefa é registrada e quando a tarefa é iniciada.</span><span class="sxs-lookup"><span data-stu-id="dc4dc-120">The following XML defines a registration trigger delay that allows a 5 minute delay between when the task is registered and when the task is started.</span></span>
+<span data-ttu-id="431fc-120">O XML a seguir define um atraso de gatilho de registro que permite um atraso de 5 minutos entre o momento em que a tarefa é registrada e quando a tarefa é iniciada.</span><span class="sxs-lookup"><span data-stu-id="431fc-120">The following XML defines a registration trigger delay that allows a 5 minute delay between when the task is registered and when the task is started.</span></span>
 
 
 ```XML
@@ -66,25 +66,25 @@ ms.locfileid: "103645219"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="dc4dc-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="dc4dc-121">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="431fc-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="431fc-121">Requirements</span></span>
 
 
 
-| <span data-ttu-id="dc4dc-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="dc4dc-122">Requirement</span></span> | <span data-ttu-id="dc4dc-123">Valor</span><span class="sxs-lookup"><span data-stu-id="dc4dc-123">Value</span></span> |
+| <span data-ttu-id="431fc-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="431fc-122">Requirement</span></span> | <span data-ttu-id="431fc-123">Valor</span><span class="sxs-lookup"><span data-stu-id="431fc-123">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="dc4dc-124">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc4dc-124">Minimum supported client</span></span><br/> | <span data-ttu-id="dc4dc-125">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="dc4dc-125">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="dc4dc-126">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc4dc-126">Minimum supported server</span></span><br/> | <span data-ttu-id="dc4dc-127">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="dc4dc-127">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="431fc-124">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="431fc-124">Minimum supported client</span></span><br/> | <span data-ttu-id="431fc-125">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="431fc-125">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="431fc-126">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="431fc-126">Minimum supported server</span></span><br/> | <span data-ttu-id="431fc-127">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="431fc-127">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="dc4dc-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="dc4dc-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="431fc-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="431fc-128">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="dc4dc-129">Elementos do esquema de Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="dc4dc-129">Task Scheduler Schema Elements</span></span>](task-scheduler-schema-elements.md)
+[<span data-ttu-id="431fc-129">Elementos do esquema de Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="431fc-129">Task Scheduler Schema Elements</span></span>](task-scheduler-schema-elements.md)
 </dt> <dt>
 
-[<span data-ttu-id="dc4dc-130">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="dc4dc-130">Task Scheduler</span></span>](task-scheduler-start-page.md)
+[<span data-ttu-id="431fc-130">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="431fc-130">Task Scheduler</span></span>](task-scheduler-start-page.md)
 </dt> </dl>
 
  

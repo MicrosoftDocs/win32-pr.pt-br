@@ -23,13 +23,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646528"
 ---
-# <a name="win32_implementedcategory-class"></a><span data-ttu-id="4ac05-103">\_Classe Win32 ImplementedCategory</span><span class="sxs-lookup"><span data-stu-id="4ac05-103">Win32\_ImplementedCategory class</span></span>
+# <a name="win32_implementedcategory-class"></a><span data-ttu-id="f39e9-103">\_Classe Win32 ImplementedCategory</span><span class="sxs-lookup"><span data-stu-id="f39e9-103">Win32\_ImplementedCategory class</span></span>
 
-<span data-ttu-id="4ac05-104">A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) de associação **\_ ImplementedCategory do Win32** relaciona uma categoria de componente e a classe com (Component Object Model) usando suas interfaces.</span><span class="sxs-lookup"><span data-stu-id="4ac05-104">The **Win32\_ImplementedCategory** association [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) relates a component category and the Component Object Model (COM) class using its interfaces.</span></span>
+<span data-ttu-id="f39e9-104">A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) de associação **\_ ImplementedCategory do Win32** relaciona uma categoria de componente e a classe com (Component Object Model) usando suas interfaces.</span><span class="sxs-lookup"><span data-stu-id="f39e9-104">The **Win32\_ImplementedCategory** association [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) relates a component category and the Component Object Model (COM) class using its interfaces.</span></span>
 
-<span data-ttu-id="4ac05-105">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="4ac05-105">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span> <span data-ttu-id="4ac05-106">As propriedades são listadas em ordem alfabética, não em ordem MOF.</span><span class="sxs-lookup"><span data-stu-id="4ac05-106">Properties are listed in alphabetic order, not MOF order.</span></span>
+<span data-ttu-id="f39e9-105">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="f39e9-105">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span> <span data-ttu-id="f39e9-106">As propriedades são listadas em ordem alfabética, não em ordem MOF.</span><span class="sxs-lookup"><span data-stu-id="f39e9-106">Properties are listed in alphabetic order, not MOF order.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4ac05-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4ac05-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f39e9-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f39e9-107">Syntax</span></span>
 
 ``` syntax
 [Association, Dynamic, Provider("CIMWin32"), UUID("{0F73ED5B-8ED9-11d2-B340-00105A1F8569}"), AMENDMENT]
@@ -40,69 +40,69 @@ class Win32_ImplementedCategory
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="4ac05-108">Membros</span><span class="sxs-lookup"><span data-stu-id="4ac05-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="f39e9-108">Membros</span><span class="sxs-lookup"><span data-stu-id="f39e9-108">Members</span></span>
 
-<span data-ttu-id="4ac05-109">A classe **Win32 \_ ImplementedCategory** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="4ac05-109">The **Win32\_ImplementedCategory** class has these types of members:</span></span>
+<span data-ttu-id="f39e9-109">A classe **Win32 \_ ImplementedCategory** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="f39e9-109">The **Win32\_ImplementedCategory** class has these types of members:</span></span>
 
--   [<span data-ttu-id="4ac05-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4ac05-110">Properties</span></span>](#properties)
+-   [<span data-ttu-id="f39e9-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f39e9-110">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="4ac05-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4ac05-111">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="f39e9-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f39e9-111">Properties</span></span>
 
-<span data-ttu-id="4ac05-112">A classe **Win32 \_ ImplementedCategory** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="4ac05-112">The **Win32\_ImplementedCategory** class has these properties.</span></span>
+<span data-ttu-id="f39e9-112">A classe **Win32 \_ ImplementedCategory** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="f39e9-112">The **Win32\_ImplementedCategory** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4ac05-113">**Categoria**</span><span class="sxs-lookup"><span data-stu-id="4ac05-113">**Category**</span></span>
+<span data-ttu-id="f39e9-113">**Categoria**</span><span class="sxs-lookup"><span data-stu-id="f39e9-113">**Category**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4ac05-114">Tipo de dados: **Win32 \_ ComponentCategory**</span><span class="sxs-lookup"><span data-stu-id="4ac05-114">Data type: **Win32\_ComponentCategory**</span></span>
+<span data-ttu-id="f39e9-114">Tipo de dados: **Win32 \_ ComponentCategory**</span><span class="sxs-lookup"><span data-stu-id="f39e9-114">Data type: **Win32\_ComponentCategory**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4ac05-115">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4ac05-115">Access type: Read-only</span></span>
+<span data-ttu-id="f39e9-115">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="f39e9-115">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4ac05-116">Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ComponentCategory")</span><span class="sxs-lookup"><span data-stu-id="4ac05-116">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI\|Win32\_ComponentCategory")</span></span>
+<span data-ttu-id="f39e9-116">Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ComponentCategory")</span><span class="sxs-lookup"><span data-stu-id="f39e9-116">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI\|Win32\_ComponentCategory")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4ac05-117">Referência à instância que representa a categoria de componente que está sendo usada pela classe COM.</span><span class="sxs-lookup"><span data-stu-id="4ac05-117">Reference to the instance representing the component category being used by the COM class.</span></span>
+<span data-ttu-id="f39e9-117">Referência à instância que representa a categoria de componente que está sendo usada pela classe COM.</span><span class="sxs-lookup"><span data-stu-id="f39e9-117">Reference to the instance representing the component category being used by the COM class.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4ac05-118">**Componente**</span><span class="sxs-lookup"><span data-stu-id="4ac05-118">**Component**</span></span>
+<span data-ttu-id="f39e9-118">**Componente**</span><span class="sxs-lookup"><span data-stu-id="f39e9-118">**Component**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="4ac05-119">Tipo de dados: **Win32 \_ ClassicCOMClass**</span><span class="sxs-lookup"><span data-stu-id="4ac05-119">Data type: **Win32\_ClassicCOMClass**</span></span>
+<span data-ttu-id="f39e9-119">Tipo de dados: **Win32 \_ ClassicCOMClass**</span><span class="sxs-lookup"><span data-stu-id="f39e9-119">Data type: **Win32\_ClassicCOMClass**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4ac05-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="4ac05-120">Access type: Read-only</span></span>
+<span data-ttu-id="f39e9-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="f39e9-120">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="4ac05-121">Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")</span><span class="sxs-lookup"><span data-stu-id="4ac05-121">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI\|Win32\_ClassicCOMClass")</span></span>
+<span data-ttu-id="f39e9-121">Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")</span><span class="sxs-lookup"><span data-stu-id="f39e9-121">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI\|Win32\_ClassicCOMClass")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="4ac05-122">Referência à instância que representa a classe COM usando a categoria associada.</span><span class="sxs-lookup"><span data-stu-id="4ac05-122">Reference to the instance representing the COM class using the associated category.</span></span>
+<span data-ttu-id="f39e9-122">Referência à instância que representa a classe COM usando a categoria associada.</span><span class="sxs-lookup"><span data-stu-id="f39e9-122">Reference to the instance representing the COM class using the associated category.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="4ac05-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4ac05-123">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="f39e9-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f39e9-123">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4ac05-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="4ac05-124">Requirement</span></span> | <span data-ttu-id="4ac05-125">Valor</span><span class="sxs-lookup"><span data-stu-id="4ac05-125">Value</span></span> |
+| <span data-ttu-id="f39e9-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="f39e9-124">Requirement</span></span> | <span data-ttu-id="f39e9-125">Valor</span><span class="sxs-lookup"><span data-stu-id="f39e9-125">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="4ac05-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4ac05-126">Minimum supported client</span></span><br/> | <span data-ttu-id="4ac05-127">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="4ac05-127">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="4ac05-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4ac05-128">Minimum supported server</span></span><br/> | <span data-ttu-id="4ac05-129">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="4ac05-129">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="4ac05-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="4ac05-130">Namespace</span></span><br/>                | <span data-ttu-id="4ac05-131">Raiz \\ cimv2</span><span class="sxs-lookup"><span data-stu-id="4ac05-131">Root\\CIMV2</span></span><br/>                                                                  |
-| <span data-ttu-id="4ac05-132">MOF</span><span class="sxs-lookup"><span data-stu-id="4ac05-132">MOF</span></span><br/>                      | <dl> <span data-ttu-id="4ac05-133"><dt>CIMWin32. mof</dt></span><span class="sxs-lookup"><span data-stu-id="4ac05-133"><dt>CIMWin32.mof</dt></span></span> </dl> |
-| <span data-ttu-id="4ac05-134">DLL</span><span class="sxs-lookup"><span data-stu-id="4ac05-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4ac05-135"><dt>CIMWin32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4ac05-135"><dt>CIMWin32.dll</dt></span></span> </dl> |
+| <span data-ttu-id="f39e9-126">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f39e9-126">Minimum supported client</span></span><br/> | <span data-ttu-id="f39e9-127">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="f39e9-127">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="f39e9-128">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f39e9-128">Minimum supported server</span></span><br/> | <span data-ttu-id="f39e9-129">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="f39e9-129">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="f39e9-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="f39e9-130">Namespace</span></span><br/>                | <span data-ttu-id="f39e9-131">Raiz \\ cimv2</span><span class="sxs-lookup"><span data-stu-id="f39e9-131">Root\\CIMV2</span></span><br/>                                                                  |
+| <span data-ttu-id="f39e9-132">MOF</span><span class="sxs-lookup"><span data-stu-id="f39e9-132">MOF</span></span><br/>                      | <dl> <span data-ttu-id="f39e9-133"><dt>CIMWin32. mof</dt></span><span class="sxs-lookup"><span data-stu-id="f39e9-133"><dt>CIMWin32.mof</dt></span></span> </dl> |
+| <span data-ttu-id="f39e9-134">DLL</span><span class="sxs-lookup"><span data-stu-id="f39e9-134">DLL</span></span><br/>                      | <dl> <span data-ttu-id="f39e9-135"><dt>CIMWin32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="f39e9-135"><dt>CIMWin32.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4ac05-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="4ac05-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f39e9-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="f39e9-136">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4ac05-137">[Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="4ac05-137">[Operating System Classes](/previous-versions//aa392727(v=vs.85))</span></span>
+<span data-ttu-id="f39e9-137">[Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="f39e9-137">[Operating System Classes](/previous-versions//aa392727(v=vs.85))</span></span>
 </dt> </dl>
 
  

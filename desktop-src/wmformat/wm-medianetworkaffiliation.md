@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823245"
 ---
-# <a name="wmmedianetworkaffiliation"></a><span data-ttu-id="97ffa-104">WM/MediaNetworkAffiliation</span><span class="sxs-lookup"><span data-stu-id="97ffa-104">WM/MediaNetworkAffiliation</span></span>
+# <a name="wmmedianetworkaffiliation"></a><span data-ttu-id="b75a3-104">WM/MediaNetworkAffiliation</span><span class="sxs-lookup"><span data-stu-id="b75a3-104">WM/MediaNetworkAffiliation</span></span>
 
-<span data-ttu-id="97ffa-105">O atributo **WM/MediaNetworkAffiliation** contém a afiliação de rede do canal que transmite o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="97ffa-105">The **WM/MediaNetworkAffiliation** attribute contains the network affiliation of the channel that broadcast the content.</span></span>
+<span data-ttu-id="b75a3-105">O atributo **WM/MediaNetworkAffiliation** contém a afiliação de rede do canal que transmite o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="b75a3-105">The **WM/MediaNetworkAffiliation** attribute contains the network affiliation of the channel that broadcast the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="97ffa-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="97ffa-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="b75a3-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="b75a3-106">Global Constant</span></span>
 
-<span data-ttu-id="97ffa-107">g \_ wszWMMediaNetworkAffiliation</span><span class="sxs-lookup"><span data-stu-id="97ffa-107">g\_wszWMMediaNetworkAffiliation</span></span>
+<span data-ttu-id="b75a3-107">g \_ wszWMMediaNetworkAffiliation</span><span class="sxs-lookup"><span data-stu-id="b75a3-107">g\_wszWMMediaNetworkAffiliation</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="97ffa-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="97ffa-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="b75a3-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="b75a3-108">Data Type</span></span>
 
-<span data-ttu-id="97ffa-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="97ffa-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="b75a3-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="b75a3-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="97ffa-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="97ffa-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b75a3-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="b75a3-110">Remarks</span></span>
 
-<span data-ttu-id="97ffa-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="97ffa-111">This attribute is used for broadcast television.</span></span>
+<span data-ttu-id="b75a3-111">Esse atributo é usado para difusão de televisão.</span><span class="sxs-lookup"><span data-stu-id="b75a3-111">This attribute is used for broadcast television.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="97ffa-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="97ffa-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b75a3-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="b75a3-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="97ffa-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="97ffa-113">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="b75a3-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="b75a3-113">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

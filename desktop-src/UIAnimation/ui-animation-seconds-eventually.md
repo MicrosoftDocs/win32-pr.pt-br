@@ -19,42 +19,42 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645088"
 ---
-# <a name="ui_animation_seconds_eventually"></a><span data-ttu-id="ea0d9-103">segundos de animação da interface do usuário \_ \_ \_ eventualmente</span><span class="sxs-lookup"><span data-stu-id="ea0d9-103">UI\_ANIMATION\_SECONDS\_EVENTUALLY</span></span>
+# <a name="ui_animation_seconds_eventually"></a><span data-ttu-id="f8144-103">segundos de animação da interface do usuário \_ \_ \_ eventualmente</span><span class="sxs-lookup"><span data-stu-id="f8144-103">UI\_ANIMATION\_SECONDS\_EVENTUALLY</span></span>
 
-<span data-ttu-id="ea0d9-104">Indica que a animação do Windows pode atrasar o início agendado de um storyboard por tanto tempo quanto necessário para evitar conflitos de agendamento.</span><span class="sxs-lookup"><span data-stu-id="ea0d9-104">Indicates that Windows Animation can delay the scheduled start of a storyboard for as much time as necessary to avoid scheduling conflicts.</span></span>
+<span data-ttu-id="f8144-104">Indica que a animação do Windows pode atrasar o início agendado de um storyboard por tanto tempo quanto necessário para evitar conflitos de agendamento.</span><span class="sxs-lookup"><span data-stu-id="f8144-104">Indicates that Windows Animation can delay the scheduled start of a storyboard for as much time as necessary to avoid scheduling conflicts.</span></span>
 
 
 
-| <span data-ttu-id="ea0d9-105">Constante/valor</span><span class="sxs-lookup"><span data-stu-id="ea0d9-105">Constant/value</span></span>                                                                                                                                                                                                                                                                  | <span data-ttu-id="ea0d9-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea0d9-106">Description</span></span>                       |
+| <span data-ttu-id="f8144-105">Constante/valor</span><span class="sxs-lookup"><span data-stu-id="f8144-105">Constant/value</span></span>                                                                                                                                                                                                                                                                  | <span data-ttu-id="f8144-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="f8144-106">Description</span></span>                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <span data-ttu-id="ea0d9-107"><dt>**Interface do usuário \_ Segundos de animação \_ \_ eventualmente**</dt> <dt>-1,0</dt></span><span class="sxs-lookup"><span data-stu-id="ea0d9-107"><dt>**UI\_ANIMATION\_SECONDS\_EVENTUALLY**</dt> <dt>-1.0</dt></span></span> </dl> | <span data-ttu-id="ea0d9-108">\_segundos de animação da interface do usuário \_</span><span class="sxs-lookup"><span data-stu-id="ea0d9-108">UI\_ANIMATION\_SECONDS</span></span><br/> |
+| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <span data-ttu-id="f8144-107"><dt>**Interface do usuário \_ Segundos de animação \_ \_ eventualmente**</dt> <dt>-1,0</dt></span><span class="sxs-lookup"><span data-stu-id="f8144-107"><dt>**UI\_ANIMATION\_SECONDS\_EVENTUALLY**</dt> <dt>-1.0</dt></span></span> </dl> | <span data-ttu-id="f8144-108">\_segundos de animação da interface do usuário \_</span><span class="sxs-lookup"><span data-stu-id="f8144-108">UI\_ANIMATION\_SECONDS</span></span><br/> |
 
 
 
-## <a name="requirements"></a><span data-ttu-id="ea0d9-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ea0d9-109">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="f8144-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f8144-109">Requirements</span></span>
 
 
 
-| <span data-ttu-id="ea0d9-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="ea0d9-110">Requirement</span></span> | <span data-ttu-id="ea0d9-111">Valor</span><span class="sxs-lookup"><span data-stu-id="ea0d9-111">Value</span></span> |
+| <span data-ttu-id="f8144-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="f8144-110">Requirement</span></span> | <span data-ttu-id="f8144-111">Valor</span><span class="sxs-lookup"><span data-stu-id="f8144-111">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ea0d9-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ea0d9-112">Minimum supported client</span></span><br/> | <span data-ttu-id="ea0d9-113">Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]</span><span class="sxs-lookup"><span data-stu-id="ea0d9-113">Windows 8, Windows 7 and Platform Update for Windows 7 \[desktop apps only\]</span></span><br/>    |
-| <span data-ttu-id="ea0d9-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ea0d9-114">Minimum supported server</span></span><br/> | <span data-ttu-id="ea0d9-115">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="ea0d9-115">None supported</span></span><br/>                                                                  |
-| <span data-ttu-id="ea0d9-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="ea0d9-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="ea0d9-117"><dt>UIAnimation. h</dt></span><span class="sxs-lookup"><span data-stu-id="ea0d9-117"><dt>UIAnimation.h</dt></span></span> </dl>   |
-| <span data-ttu-id="ea0d9-118">INSERI</span><span class="sxs-lookup"><span data-stu-id="ea0d9-118">IDL</span></span><br/>                      | <dl> <span data-ttu-id="ea0d9-119"><dt>UIAnimation. idl</dt></span><span class="sxs-lookup"><span data-stu-id="ea0d9-119"><dt>UIAnimation.idl</dt></span></span> </dl> |
+| <span data-ttu-id="f8144-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f8144-112">Minimum supported client</span></span><br/> | <span data-ttu-id="f8144-113">Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]</span><span class="sxs-lookup"><span data-stu-id="f8144-113">Windows 8, Windows 7 and Platform Update for Windows 7 \[desktop apps only\]</span></span><br/>    |
+| <span data-ttu-id="f8144-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f8144-114">Minimum supported server</span></span><br/> | <span data-ttu-id="f8144-115">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="f8144-115">None supported</span></span><br/>                                                                  |
+| <span data-ttu-id="f8144-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f8144-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="f8144-117"><dt>UIAnimation. h</dt></span><span class="sxs-lookup"><span data-stu-id="f8144-117"><dt>UIAnimation.h</dt></span></span> </dl>   |
+| <span data-ttu-id="f8144-118">INSERI</span><span class="sxs-lookup"><span data-stu-id="f8144-118">IDL</span></span><br/>                      | <dl> <span data-ttu-id="f8144-119"><dt>UIAnimation. idl</dt></span><span class="sxs-lookup"><span data-stu-id="f8144-119"><dt>UIAnimation.idl</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="ea0d9-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="ea0d9-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f8144-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="f8144-120">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ea0d9-121">Constantes</span><span class="sxs-lookup"><span data-stu-id="ea0d9-121">Constants</span></span>](constants.md)
+[<span data-ttu-id="f8144-121">Constantes</span><span class="sxs-lookup"><span data-stu-id="f8144-121">Constants</span></span>](constants.md)
 </dt> <dt>
 
-[<span data-ttu-id="ea0d9-122">**IUIAnimationStoryboard::SetLongestAcceptableDelay**</span><span class="sxs-lookup"><span data-stu-id="ea0d9-122">**IUIAnimationStoryboard::SetLongestAcceptableDelay**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay)
+[<span data-ttu-id="f8144-122">**IUIAnimationStoryboard::SetLongestAcceptableDelay**</span><span class="sxs-lookup"><span data-stu-id="f8144-122">**IUIAnimationStoryboard::SetLongestAcceptableDelay**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay)
 </dt> <dt>
 
-[<span data-ttu-id="ea0d9-123">**IUIAnimationManager::SetDefaultLongestAcceptableDelay**</span><span class="sxs-lookup"><span data-stu-id="ea0d9-123">**IUIAnimationManager::SetDefaultLongestAcceptableDelay**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setdefaultlongestacceptabledelay)
+[<span data-ttu-id="f8144-123">**IUIAnimationManager::SetDefaultLongestAcceptableDelay**</span><span class="sxs-lookup"><span data-stu-id="f8144-123">**IUIAnimationManager::SetDefaultLongestAcceptableDelay**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setdefaultlongestacceptabledelay)
 </dt> </dl>
 
  

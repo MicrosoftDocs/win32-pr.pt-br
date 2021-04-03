@@ -26,13 +26,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645091"
 ---
-# <a name="win32_tsvirtualdesktopserversettings-class"></a><span data-ttu-id="70b6a-105">\_Classe Win32 TSVirtualDesktopServerSettings</span><span class="sxs-lookup"><span data-stu-id="70b6a-105">Win32\_TSVirtualDesktopServerSettings class</span></span>
+# <a name="win32_tsvirtualdesktopserversettings-class"></a><span data-ttu-id="da3bc-105">\_Classe Win32 TSVirtualDesktopServerSettings</span><span class="sxs-lookup"><span data-stu-id="da3bc-105">Win32\_TSVirtualDesktopServerSettings class</span></span>
 
-<span data-ttu-id="70b6a-106">Contém informações de configuração para um servidor de Host de Virtualização de Área de Trabalho Remota (host de Virtualização RD).</span><span class="sxs-lookup"><span data-stu-id="70b6a-106">Contains configuration information for a Remote Desktop Virtualization Host (RD Virtualization Host) server.</span></span>
+<span data-ttu-id="da3bc-106">Contém informações de configuração para um servidor de Host de Virtualização de Área de Trabalho Remota (host de Virtualização RD).</span><span class="sxs-lookup"><span data-stu-id="da3bc-106">Contains configuration information for a Remote Desktop Virtualization Host (RD Virtualization Host) server.</span></span>
 
-<span data-ttu-id="70b6a-107">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="70b6a-107">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
+<span data-ttu-id="da3bc-107">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="da3bc-107">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="70b6a-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="70b6a-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="da3bc-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="da3bc-108">Syntax</span></span>
 
 ``` syntax
 [singleton, dynamic, provider("Win32_TSVmHost_Prov"), AMENDMENT]
@@ -44,68 +44,68 @@ class Win32_TSVirtualDesktopServerSettings
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="70b6a-109">Membros</span><span class="sxs-lookup"><span data-stu-id="70b6a-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="da3bc-109">Membros</span><span class="sxs-lookup"><span data-stu-id="da3bc-109">Members</span></span>
 
-<span data-ttu-id="70b6a-110">A classe **Win32 \_ TSVirtualDesktopServerSettings** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="70b6a-110">The **Win32\_TSVirtualDesktopServerSettings** class has these types of members:</span></span>
+<span data-ttu-id="da3bc-110">A classe **Win32 \_ TSVirtualDesktopServerSettings** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="da3bc-110">The **Win32\_TSVirtualDesktopServerSettings** class has these types of members:</span></span>
 
--   [<span data-ttu-id="70b6a-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="70b6a-111">Properties</span></span>](#properties)
+-   [<span data-ttu-id="da3bc-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="da3bc-111">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="70b6a-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="70b6a-112">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="da3bc-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="da3bc-112">Properties</span></span>
 
-<span data-ttu-id="70b6a-113">A classe **Win32 \_ TSVirtualDesktopServerSettings** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="70b6a-113">The **Win32\_TSVirtualDesktopServerSettings** class has these properties.</span></span>
+<span data-ttu-id="da3bc-113">A classe **Win32 \_ TSVirtualDesktopServerSettings** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="da3bc-113">The **Win32\_TSVirtualDesktopServerSettings** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="70b6a-114">**Simultaneidade**</span><span class="sxs-lookup"><span data-stu-id="70b6a-114">**Concurrency**</span></span>
+<span data-ttu-id="da3bc-114">**Simultaneidade**</span><span class="sxs-lookup"><span data-stu-id="da3bc-114">**Concurrency**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="70b6a-115">Tipo de dados: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="70b6a-115">Data type: **uint32**</span></span>
+<span data-ttu-id="da3bc-115">Tipo de dados: **UInt32**</span><span class="sxs-lookup"><span data-stu-id="da3bc-115">Data type: **uint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="70b6a-116">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="70b6a-116">Access type: Read/write</span></span>
+<span data-ttu-id="da3bc-116">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="da3bc-116">Access type: Read/write</span></span>
 </dt> </dl>
 
-<span data-ttu-id="70b6a-117">O máximo permitido de solicitações simultâneas de provisionamento para este servidor de área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="70b6a-117">The maximum allowed concurrent provisioning requests for this Virtual Desktop Server.</span></span>
+<span data-ttu-id="da3bc-117">O máximo permitido de solicitações simultâneas de provisionamento para este servidor de área de trabalho virtual.</span><span class="sxs-lookup"><span data-stu-id="da3bc-117">The maximum allowed concurrent provisioning requests for this Virtual Desktop Server.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="70b6a-118">**PolicySourceSessionBrokerName**</span><span class="sxs-lookup"><span data-stu-id="70b6a-118">**PolicySourceSessionBrokerName**</span></span>
+<span data-ttu-id="da3bc-118">**PolicySourceSessionBrokerName**</span><span class="sxs-lookup"><span data-stu-id="da3bc-118">**PolicySourceSessionBrokerName**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="70b6a-119">Tipo de dados: **sint32**</span><span class="sxs-lookup"><span data-stu-id="70b6a-119">Data type: **sint32**</span></span>
+<span data-ttu-id="da3bc-119">Tipo de dados: **sint32**</span><span class="sxs-lookup"><span data-stu-id="da3bc-119">Data type: **sint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="70b6a-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="70b6a-120">Access type: Read-only</span></span>
+<span data-ttu-id="da3bc-120">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="da3bc-120">Access type: Read-only</span></span>
 </dt> </dl>
 
-<span data-ttu-id="70b6a-121">Se definido como 0, indica que a propriedade **SessionBrokerName** está configurada pelo servidor; Se definido como 1, indica que a propriedade **SessionBrokerName** é configurada por uma política de grupo.</span><span class="sxs-lookup"><span data-stu-id="70b6a-121">If set to 0, indicates that the **SessionBrokerName** property is configured by the server; if set to 1, indicates the **SessionBrokerName** property is configured by a group policy.</span></span>
+<span data-ttu-id="da3bc-121">Se definido como 0, indica que a propriedade **SessionBrokerName** está configurada pelo servidor; Se definido como 1, indica que a propriedade **SessionBrokerName** é configurada por uma política de grupo.</span><span class="sxs-lookup"><span data-stu-id="da3bc-121">If set to 0, indicates that the **SessionBrokerName** property is configured by the server; if set to 1, indicates the **SessionBrokerName** property is configured by a group policy.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="70b6a-122">**SessionBrokerName**</span><span class="sxs-lookup"><span data-stu-id="70b6a-122">**SessionBrokerName**</span></span>
+<span data-ttu-id="da3bc-122">**SessionBrokerName**</span><span class="sxs-lookup"><span data-stu-id="da3bc-122">**SessionBrokerName**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="70b6a-123">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="70b6a-123">Data type: **string**</span></span>
+<span data-ttu-id="da3bc-123">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="da3bc-123">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="70b6a-124">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="70b6a-124">Access type: Read/write</span></span>
+<span data-ttu-id="da3bc-124">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="da3bc-124">Access type: Read/write</span></span>
 </dt> </dl>
 
-<span data-ttu-id="70b6a-125">O nome distinto totalmente qualificado do agente de sessão para o servidor de host de virtualização de área de trabalho remota.</span><span class="sxs-lookup"><span data-stu-id="70b6a-125">The fully qualified distinguished name of the session broker for the RD Virtualization Host server.</span></span>
+<span data-ttu-id="da3bc-125">O nome distinto totalmente qualificado do agente de sessão para o servidor de host de virtualização de área de trabalho remota.</span><span class="sxs-lookup"><span data-stu-id="da3bc-125">The fully qualified distinguished name of the session broker for the RD Virtualization Host server.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="70b6a-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="70b6a-126">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="da3bc-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="da3bc-126">Requirements</span></span>
 
 
 
-| <span data-ttu-id="70b6a-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="70b6a-127">Requirement</span></span> | <span data-ttu-id="70b6a-128">Valor</span><span class="sxs-lookup"><span data-stu-id="70b6a-128">Value</span></span> |
+| <span data-ttu-id="da3bc-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="da3bc-127">Requirement</span></span> | <span data-ttu-id="da3bc-128">Valor</span><span class="sxs-lookup"><span data-stu-id="da3bc-128">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| <span data-ttu-id="70b6a-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="70b6a-129">Minimum supported client</span></span><br/> | <span data-ttu-id="70b6a-130">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="70b6a-130">None supported</span></span><br/>                                                                  |
-| <span data-ttu-id="70b6a-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="70b6a-131">Minimum supported server</span></span><br/> | <span data-ttu-id="70b6a-132">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="70b6a-132">Windows Server 2012</span></span><br/>                                                             |
-| <span data-ttu-id="70b6a-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="70b6a-133">Namespace</span></span><br/>                | <span data-ttu-id="70b6a-134">\\TerminalServices da cimv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="70b6a-134">Root\\CIMV2\\TerminalServices</span></span><br/>                                                   |
-| <span data-ttu-id="70b6a-135">MOF</span><span class="sxs-lookup"><span data-stu-id="70b6a-135">MOF</span></span><br/>                      | <dl> <span data-ttu-id="70b6a-136"><dt>TSVmHost. mof</dt></span><span class="sxs-lookup"><span data-stu-id="70b6a-136"><dt>TSVmHost.mof</dt></span></span> </dl>    |
-| <span data-ttu-id="70b6a-137">DLL</span><span class="sxs-lookup"><span data-stu-id="70b6a-137">DLL</span></span><br/>                      | <dl> <span data-ttu-id="70b6a-138"><dt>TSVmHostWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="70b6a-138"><dt>TSVmHostWmi.dll</dt></span></span> </dl> |
+| <span data-ttu-id="da3bc-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="da3bc-129">Minimum supported client</span></span><br/> | <span data-ttu-id="da3bc-130">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="da3bc-130">None supported</span></span><br/>                                                                  |
+| <span data-ttu-id="da3bc-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="da3bc-131">Minimum supported server</span></span><br/> | <span data-ttu-id="da3bc-132">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="da3bc-132">Windows Server 2012</span></span><br/>                                                             |
+| <span data-ttu-id="da3bc-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="da3bc-133">Namespace</span></span><br/>                | <span data-ttu-id="da3bc-134">\\TerminalServices da cimv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="da3bc-134">Root\\CIMV2\\TerminalServices</span></span><br/>                                                   |
+| <span data-ttu-id="da3bc-135">MOF</span><span class="sxs-lookup"><span data-stu-id="da3bc-135">MOF</span></span><br/>                      | <dl> <span data-ttu-id="da3bc-136"><dt>TSVmHost. mof</dt></span><span class="sxs-lookup"><span data-stu-id="da3bc-136"><dt>TSVmHost.mof</dt></span></span> </dl>    |
+| <span data-ttu-id="da3bc-137">DLL</span><span class="sxs-lookup"><span data-stu-id="da3bc-137">DLL</span></span><br/>                      | <dl> <span data-ttu-id="da3bc-138"><dt>TSVmHostWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="da3bc-138"><dt>TSVmHostWmi.dll</dt></span></span> </dl> |
 
 
 

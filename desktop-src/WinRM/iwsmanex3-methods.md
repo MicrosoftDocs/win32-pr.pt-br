@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916109"
 ---
-# <a name="iwsmanex3-methods"></a><span data-ttu-id="b6666-103">Métodos IWSManEx3</span><span class="sxs-lookup"><span data-stu-id="b6666-103">IWSManEx3 Methods</span></span>
+# <a name="iwsmanex3-methods"></a><span data-ttu-id="99a40-103">Métodos IWSManEx3</span><span class="sxs-lookup"><span data-stu-id="99a40-103">IWSManEx3 Methods</span></span>
 
-<span data-ttu-id="b6666-104">A interface [**IWSManEx3**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex3) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b6666-104">The [**IWSManEx3**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex3) interface exposes the following methods.</span></span>
+<span data-ttu-id="99a40-104">A interface [**IWSManEx3**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex3) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="99a40-104">The [**IWSManEx3**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex3) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b6666-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b6666-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="99a40-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="99a40-105">In this section</span></span>
 
--   [<span data-ttu-id="b6666-106">**Método SessionFlagUseCredSsp**</span><span class="sxs-lookup"><span data-stu-id="b6666-106">**SessionFlagUseCredSsp Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex3-sessionflagusecredssp)
+-   [<span data-ttu-id="99a40-106">**Método SessionFlagUseCredSsp**</span><span class="sxs-lookup"><span data-stu-id="99a40-106">**SessionFlagUseCredSsp Method**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex3-sessionflagusecredssp)
 
  
 

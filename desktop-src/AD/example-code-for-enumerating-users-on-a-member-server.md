@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103915947"
 ---
-# <a name="example-code-for-enumerating-users-on-a-member-server"></a><span data-ttu-id="35558-104">Código de exemplo para enumerar usuários em um servidor membro</span><span class="sxs-lookup"><span data-stu-id="35558-104">Example Code for Enumerating Users on a Member Server</span></span>
+# <a name="example-code-for-enumerating-users-on-a-member-server"></a><span data-ttu-id="37604-104">Código de exemplo para enumerar usuários em um servidor membro</span><span class="sxs-lookup"><span data-stu-id="37604-104">Example Code for Enumerating Users on a Member Server</span></span>
 
-<span data-ttu-id="35558-105">O exemplo de código a seguir Visual Basic enumera todos os usuários em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="35558-105">The following Visual Basic code example enumerates all users on a member server or Windows 2000 Professional.</span></span>
+<span data-ttu-id="37604-105">O exemplo de código a seguir Visual Basic enumera todos os usuários em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="37604-105">The following Visual Basic code example enumerates all users on a member server or Windows 2000 Professional.</span></span>
 
 
 ```VB
@@ -73,7 +73,7 @@ End Sub
 
 
 
-<span data-ttu-id="35558-106">O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="35558-106">The following C++ code example enumerates all objects of a specified class, such as a user, and displays the members contained in each object on a member server or Windows 2000 Professional.</span></span>
+<span data-ttu-id="37604-106">O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.</span><span class="sxs-lookup"><span data-stu-id="37604-106">The following C++ code example enumerates all objects of a specified class, such as a user, and displays the members contained in each object on a member server or Windows 2000 Professional.</span></span>
 
 
 ```C++

@@ -11,39 +11,39 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646473"
 ---
-# <a name="d3dadapter_default"></a><span data-ttu-id="21794-103">D3DADAPTER \_ padrão</span><span class="sxs-lookup"><span data-stu-id="21794-103">D3DADAPTER\_DEFAULT</span></span>
+# <a name="d3dadapter_default"></a><span data-ttu-id="75b0d-103">D3DADAPTER \_ padrão</span><span class="sxs-lookup"><span data-stu-id="75b0d-103">D3DADAPTER\_DEFAULT</span></span>
 
-<span data-ttu-id="21794-104">Especifica o adaptador de vídeo primário.</span><span class="sxs-lookup"><span data-stu-id="21794-104">Specifies the primary display adapter.</span></span>
+<span data-ttu-id="75b0d-104">Especifica o adaptador de vídeo primário.</span><span class="sxs-lookup"><span data-stu-id="75b0d-104">Specifies the primary display adapter.</span></span>
 
 
 
 |                     |       |                                              |
 |---------------------|-------|----------------------------------------------|
-| <span data-ttu-id="21794-105">\#definir</span><span class="sxs-lookup"><span data-stu-id="21794-105">\#define</span></span>            | <span data-ttu-id="21794-106">Valor</span><span class="sxs-lookup"><span data-stu-id="21794-106">Value</span></span> | <span data-ttu-id="21794-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="21794-107">Description</span></span>                                  |
-| <span data-ttu-id="21794-108">D3DADAPTER \_ padrão</span><span class="sxs-lookup"><span data-stu-id="21794-108">D3DADAPTER\_DEFAULT</span></span> | <span data-ttu-id="21794-109">0</span><span class="sxs-lookup"><span data-stu-id="21794-109">0</span></span>     | <span data-ttu-id="21794-110">Usado para especificar o adaptador de vídeo primário.</span><span class="sxs-lookup"><span data-stu-id="21794-110">Used to specify the primary display adapter.</span></span> |
+| <span data-ttu-id="75b0d-105">\#definir</span><span class="sxs-lookup"><span data-stu-id="75b0d-105">\#define</span></span>            | <span data-ttu-id="75b0d-106">Valor</span><span class="sxs-lookup"><span data-stu-id="75b0d-106">Value</span></span> | <span data-ttu-id="75b0d-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="75b0d-107">Description</span></span>                                  |
+| <span data-ttu-id="75b0d-108">D3DADAPTER \_ padrão</span><span class="sxs-lookup"><span data-stu-id="75b0d-108">D3DADAPTER\_DEFAULT</span></span> | <span data-ttu-id="75b0d-109">0</span><span class="sxs-lookup"><span data-stu-id="75b0d-109">0</span></span>     | <span data-ttu-id="75b0d-110">Usado para especificar o adaptador de vídeo primário.</span><span class="sxs-lookup"><span data-stu-id="75b0d-110">Used to specify the primary display adapter.</span></span> |
 
 
 
  
 
-## <a name="constant-information"></a><span data-ttu-id="21794-111">Informações constantes</span><span class="sxs-lookup"><span data-stu-id="21794-111">Constant Information</span></span>
+## <a name="constant-information"></a><span data-ttu-id="75b0d-111">Informações constantes</span><span class="sxs-lookup"><span data-stu-id="75b0d-111">Constant Information</span></span>
 
 
 
 |                          |            |
 |--------------------------|------------|
-| <span data-ttu-id="21794-112">parâmetro</span><span class="sxs-lookup"><span data-stu-id="21794-112">Header</span></span>                   | <span data-ttu-id="21794-113">d3d9. h</span><span class="sxs-lookup"><span data-stu-id="21794-113">d3d9.h</span></span>     |
-| <span data-ttu-id="21794-114">Sistema operacional mínimo</span><span class="sxs-lookup"><span data-stu-id="21794-114">Minimum operating system</span></span> | <span data-ttu-id="21794-115">Windows 98</span><span class="sxs-lookup"><span data-stu-id="21794-115">Windows 98</span></span> |
+| <span data-ttu-id="75b0d-112">parâmetro</span><span class="sxs-lookup"><span data-stu-id="75b0d-112">Header</span></span>                   | <span data-ttu-id="75b0d-113">d3d9. h</span><span class="sxs-lookup"><span data-stu-id="75b0d-113">d3d9.h</span></span>     |
+| <span data-ttu-id="75b0d-114">Sistema operacional mínimo</span><span class="sxs-lookup"><span data-stu-id="75b0d-114">Minimum operating system</span></span> | <span data-ttu-id="75b0d-115">Windows 98</span><span class="sxs-lookup"><span data-stu-id="75b0d-115">Windows 98</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="21794-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="21794-116">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="75b0d-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="75b0d-116">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="21794-117">Constantes do Direct3D</span><span class="sxs-lookup"><span data-stu-id="21794-117">Direct3D Constants</span></span>](dx9-graphics-reference-d3d-constants.md)
+[<span data-ttu-id="75b0d-117">Constantes do Direct3D</span><span class="sxs-lookup"><span data-stu-id="75b0d-117">Direct3D Constants</span></span>](dx9-graphics-reference-d3d-constants.md)
 </dt> </dl>
 
  

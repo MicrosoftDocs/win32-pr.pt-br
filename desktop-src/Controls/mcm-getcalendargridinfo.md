@@ -21,41 +21,41 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645273"
 ---
-# <a name="mcm_getcalendargridinfo-message"></a><span data-ttu-id="d7f01-104">\_Mensagem MCM GETCALENDARGRIDINFO</span><span class="sxs-lookup"><span data-stu-id="d7f01-104">MCM\_GETCALENDARGRIDINFO message</span></span>
+# <a name="mcm_getcalendargridinfo-message"></a><span data-ttu-id="ea0e3-104">\_Mensagem MCM GETCALENDARGRIDINFO</span><span class="sxs-lookup"><span data-stu-id="ea0e3-104">MCM\_GETCALENDARGRIDINFO message</span></span>
 
-<span data-ttu-id="d7f01-105">Obtém informações sobre uma grade de calendário.</span><span class="sxs-lookup"><span data-stu-id="d7f01-105">Gets information about a calendar grid.</span></span>
+<span data-ttu-id="ea0e3-105">Obtém informações sobre uma grade de calendário.</span><span class="sxs-lookup"><span data-stu-id="ea0e3-105">Gets information about a calendar grid.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="d7f01-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d7f01-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ea0e3-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ea0e3-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d7f01-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="d7f01-107">*wParam*</span></span> 
+<span data-ttu-id="ea0e3-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="ea0e3-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="d7f01-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="d7f01-108">Must be zero.</span></span>
+<span data-ttu-id="ea0e3-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="ea0e3-108">Must be zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="d7f01-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="d7f01-109">*lParam*</span></span> 
+<span data-ttu-id="ea0e3-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="ea0e3-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="d7f01-110">Ponteiro para uma estrutura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) que contém informações sobre a grade de calendário.</span><span class="sxs-lookup"><span data-stu-id="d7f01-110">Pointer to an [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that contains information about the calendar grid.</span></span>
+<span data-ttu-id="ea0e3-110">Ponteiro para uma estrutura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) que contém informações sobre a grade de calendário.</span><span class="sxs-lookup"><span data-stu-id="ea0e3-110">Pointer to an [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that contains information about the calendar grid.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="d7f01-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d7f01-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ea0e3-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="ea0e3-111">Return value</span></span>
 
-<span data-ttu-id="d7f01-112">**True** se for bem-sucedido; caso contrário, **false**.</span><span class="sxs-lookup"><span data-stu-id="d7f01-112">**TRUE** if successful, otherwise **FALSE**.</span></span>
+<span data-ttu-id="ea0e3-112">**True** se for bem-sucedido; caso contrário, **false**.</span><span class="sxs-lookup"><span data-stu-id="ea0e3-112">**TRUE** if successful, otherwise **FALSE**.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="d7f01-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d7f01-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="ea0e3-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ea0e3-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="d7f01-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="d7f01-114">Requirement</span></span> | <span data-ttu-id="d7f01-115">Valor</span><span class="sxs-lookup"><span data-stu-id="d7f01-115">Value</span></span> |
+| <span data-ttu-id="ea0e3-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="ea0e3-114">Requirement</span></span> | <span data-ttu-id="ea0e3-115">Valor</span><span class="sxs-lookup"><span data-stu-id="ea0e3-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="d7f01-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d7f01-116">Minimum supported client</span></span><br/> | <span data-ttu-id="d7f01-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="d7f01-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="d7f01-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d7f01-118">Minimum supported server</span></span><br/> | <span data-ttu-id="d7f01-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="d7f01-119">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="d7f01-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d7f01-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="d7f01-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="d7f01-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="ea0e3-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ea0e3-116">Minimum supported client</span></span><br/> | <span data-ttu-id="ea0e3-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="ea0e3-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="ea0e3-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ea0e3-118">Minimum supported server</span></span><br/> | <span data-ttu-id="ea0e3-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="ea0e3-119">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="ea0e3-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="ea0e3-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="ea0e3-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="ea0e3-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

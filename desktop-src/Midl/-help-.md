@@ -19,35 +19,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823339"
 ---
-# <a name="help--switch"></a><span data-ttu-id="ec3ea-104">opção/help (/?)</span><span class="sxs-lookup"><span data-stu-id="ec3ea-104">/help (/?) switch</span></span>
+# <a name="help--switch"></a><span data-ttu-id="6444f-104">opção/help (/?)</span><span class="sxs-lookup"><span data-stu-id="6444f-104">/help (/?) switch</span></span>
 
-<span data-ttu-id="ec3ea-105">A opção **/Help** (**/?**) instrui o compilador a exibir uma mensagem de uso detalhando todas as opções de linha de comando MIDL disponíveis.</span><span class="sxs-lookup"><span data-stu-id="ec3ea-105">The **/help** (**/?**) switch instructs the compiler to display a usage message detailing all available MIDL command-line switches and options.</span></span>
+<span data-ttu-id="6444f-105">A opção **/Help** (**/?**) instrui o compilador a exibir uma mensagem de uso detalhando todas as opções de linha de comando MIDL disponíveis.</span><span class="sxs-lookup"><span data-stu-id="6444f-105">The **/help** (**/?**) switch instructs the compiler to display a usage message detailing all available MIDL command-line switches and options.</span></span>
 
-<span data-ttu-id="ec3ea-106">A opção [**/Confirm**](-confirm.md) exibe as configurações de opção do compilador MIDL selecionadas pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="ec3ea-106">The [**/confirm**](-confirm.md) switch displays the MIDL compiler switch settings selected by the user.</span></span>
+<span data-ttu-id="6444f-106">A opção [**/Confirm**](-confirm.md) exibe as configurações de opção do compilador MIDL selecionadas pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="6444f-106">The [**/confirm**](-confirm.md) switch displays the MIDL compiler switch settings selected by the user.</span></span>
 
 ``` syntax
 midl /help
 midl /?
 ```
 
-## <a name="switch-options"></a><span data-ttu-id="ec3ea-107">Opções de comutação</span><span class="sxs-lookup"><span data-stu-id="ec3ea-107">Switch Options</span></span>
+## <a name="switch-options"></a><span data-ttu-id="6444f-107">Opções de comutação</span><span class="sxs-lookup"><span data-stu-id="6444f-107">Switch Options</span></span>
 
-<span data-ttu-id="ec3ea-108">Essa opção não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="ec3ea-108">This switch has no parameters.</span></span>
+<span data-ttu-id="6444f-108">Essa opção não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="6444f-108">This switch has no parameters.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ec3ea-109">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ec3ea-109">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6444f-109">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6444f-109">Examples</span></span>
 
-<span data-ttu-id="ec3ea-110">**MIDL/Help**</span><span class="sxs-lookup"><span data-stu-id="ec3ea-110">**midl /help**</span></span>
+<span data-ttu-id="6444f-110">**MIDL/Help**</span><span class="sxs-lookup"><span data-stu-id="6444f-110">**midl /help**</span></span>
 
-<span data-ttu-id="ec3ea-111">**MIDL/?**</span><span class="sxs-lookup"><span data-stu-id="ec3ea-111">**midl /?**</span></span>
+<span data-ttu-id="6444f-111">**MIDL/?**</span><span class="sxs-lookup"><span data-stu-id="6444f-111">**midl /?**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ec3ea-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="ec3ea-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6444f-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="6444f-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ec3ea-113">Sintaxe de linha de comando MIDL geral</span><span class="sxs-lookup"><span data-stu-id="ec3ea-113">General MIDL Command-line Syntax</span></span>](general-midl-command-line-syntax.md)
+[<span data-ttu-id="6444f-113">Sintaxe de linha de comando MIDL geral</span><span class="sxs-lookup"><span data-stu-id="6444f-113">General MIDL Command-line Syntax</span></span>](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[<span data-ttu-id="ec3ea-114">**/confirm**</span><span class="sxs-lookup"><span data-stu-id="ec3ea-114">**/confirm**</span></span>](-confirm.md)
+[<span data-ttu-id="6444f-114">**/confirm**</span><span class="sxs-lookup"><span data-stu-id="6444f-114">**/confirm**</span></span>](-confirm.md)
 </dt> </dl>
 
  
