@@ -15,17 +15,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916440"
 ---
-# <a name="device-specific-command-sets"></a><span data-ttu-id="6cca2-106">Conjuntos de comandos Device-Specific</span><span class="sxs-lookup"><span data-stu-id="6cca2-106">Device-Specific Command Sets</span></span>
+# <a name="device-specific-command-sets"></a><span data-ttu-id="1ab60-106">Conjuntos de comandos Device-Specific</span><span class="sxs-lookup"><span data-stu-id="1ab60-106">Device-Specific Command Sets</span></span>
 
-<span data-ttu-id="6cca2-107">Os tópicos a seguir listam os comandos com suporte de cada tipo de dispositivo:</span><span class="sxs-lookup"><span data-stu-id="6cca2-107">The following topics list the commands supported by each device type:</span></span>
+<span data-ttu-id="1ab60-107">Os tópicos a seguir listam os comandos com suporte de cada tipo de dispositivo:</span><span class="sxs-lookup"><span data-stu-id="1ab60-107">The following topics list the commands supported by each device type:</span></span>
 
--   [<span data-ttu-id="6cca2-108">Conjunto de comandos de CD de áudio</span><span class="sxs-lookup"><span data-stu-id="6cca2-108">CD Audio Command Set</span></span>](cd-audio-command-set.md)
--   [<span data-ttu-id="6cca2-109">Conjunto de comandos de vídeo digital</span><span class="sxs-lookup"><span data-stu-id="6cca2-109">Digital-Video Command Set</span></span>](digital-video-command-set.md)
--   [<span data-ttu-id="6cca2-110">Conjunto de comandos MIDI Sequencer</span><span class="sxs-lookup"><span data-stu-id="6cca2-110">MIDI Sequencer Command Set</span></span>](midi-sequencer-command-set.md)
--   [<span data-ttu-id="6cca2-111">Conjunto de comandos de VCR</span><span class="sxs-lookup"><span data-stu-id="6cca2-111">VCR Command Set</span></span>](vcr-command-set.md)
--   [<span data-ttu-id="6cca2-112">Conjunto de comandos VIDEODISC</span><span class="sxs-lookup"><span data-stu-id="6cca2-112">Videodisc Command Set</span></span>](videodisc-command-set.md)
--   [<span data-ttu-id="6cca2-113">Conjunto de comandos de sobreposição de vídeo</span><span class="sxs-lookup"><span data-stu-id="6cca2-113">Video-Overlay Command Set</span></span>](video-overlay-command-set.md)
--   [<span data-ttu-id="6cca2-114">Formato de onda-conjunto de comandos de áudio</span><span class="sxs-lookup"><span data-stu-id="6cca2-114">Waveform-Audio Command Set</span></span>](waveform-audio-command-set.md)
+-   [<span data-ttu-id="1ab60-108">Conjunto de comandos de CD de áudio</span><span class="sxs-lookup"><span data-stu-id="1ab60-108">CD Audio Command Set</span></span>](cd-audio-command-set.md)
+-   [<span data-ttu-id="1ab60-109">Conjunto de comandos de vídeo digital</span><span class="sxs-lookup"><span data-stu-id="1ab60-109">Digital-Video Command Set</span></span>](digital-video-command-set.md)
+-   [<span data-ttu-id="1ab60-110">Conjunto de comandos MIDI Sequencer</span><span class="sxs-lookup"><span data-stu-id="1ab60-110">MIDI Sequencer Command Set</span></span>](midi-sequencer-command-set.md)
+-   [<span data-ttu-id="1ab60-111">Conjunto de comandos de VCR</span><span class="sxs-lookup"><span data-stu-id="1ab60-111">VCR Command Set</span></span>](vcr-command-set.md)
+-   [<span data-ttu-id="1ab60-112">Conjunto de comandos VIDEODISC</span><span class="sxs-lookup"><span data-stu-id="1ab60-112">Videodisc Command Set</span></span>](videodisc-command-set.md)
+-   [<span data-ttu-id="1ab60-113">Conjunto de comandos de sobreposição de vídeo</span><span class="sxs-lookup"><span data-stu-id="1ab60-113">Video-Overlay Command Set</span></span>](video-overlay-command-set.md)
+-   [<span data-ttu-id="1ab60-114">Formato de onda-conjunto de comandos de áudio</span><span class="sxs-lookup"><span data-stu-id="1ab60-114">Waveform-Audio Command Set</span></span>](waveform-audio-command-set.md)
 
  
 

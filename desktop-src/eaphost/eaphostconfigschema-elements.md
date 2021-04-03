@@ -16,23 +16,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641860"
 ---
-# <a name="eaphostconfig-schema-elements"></a><span data-ttu-id="9457c-104">Elementos do esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="9457c-104">eaphostconfig Schema Elements</span></span>
+# <a name="eaphostconfig-schema-elements"></a><span data-ttu-id="c3daa-104">Elementos do esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="c3daa-104">eaphostconfig Schema Elements</span></span>
 
-<span data-ttu-id="9457c-105">O esquema [eaphostconfig](eaphostconfigschema-schema.md) é composto pelos seguintes elementos de esquema.</span><span class="sxs-lookup"><span data-stu-id="9457c-105">The [eaphostconfig](eaphostconfigschema-schema.md) schema is made up of the following schema elements.</span></span>
+<span data-ttu-id="c3daa-105">O esquema [eaphostconfig](eaphostconfigschema-schema.md) é composto pelos seguintes elementos de esquema.</span><span class="sxs-lookup"><span data-stu-id="c3daa-105">The [eaphostconfig](eaphostconfigschema-schema.md) schema is made up of the following schema elements.</span></span>
 
--   [<span data-ttu-id="9457c-106">**ConfigBlob (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="9457c-106">**ConfigBlob (EapHostConfig)**</span></span>](eaphostconfigschema-configblob-eaphostconfig-element.md)
--   [<span data-ttu-id="9457c-107">**Configuração (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="9457c-107">**Config (EapHostConfig)**</span></span>](eaphostconfigschema-config-eaphostconfig-element.md)
--   [<span data-ttu-id="9457c-108">**EapHostConfig**</span><span class="sxs-lookup"><span data-stu-id="9457c-108">**EapHostConfig**</span></span>](eaphostconfigschema-eaphostconfig-element.md)
--   [<span data-ttu-id="9457c-109">**EapMethod (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="9457c-109">**EapMethod (EapHostConfig)**</span></span>](eaphostconfigschema-eapmethod-eaphostconfig-element.md)
+-   [<span data-ttu-id="c3daa-106">**ConfigBlob (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="c3daa-106">**ConfigBlob (EapHostConfig)**</span></span>](eaphostconfigschema-configblob-eaphostconfig-element.md)
+-   [<span data-ttu-id="c3daa-107">**Configuração (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="c3daa-107">**Config (EapHostConfig)**</span></span>](eaphostconfigschema-config-eaphostconfig-element.md)
+-   [<span data-ttu-id="c3daa-108">**EapHostConfig**</span><span class="sxs-lookup"><span data-stu-id="c3daa-108">**EapHostConfig**</span></span>](eaphostconfigschema-eaphostconfig-element.md)
+-   [<span data-ttu-id="c3daa-109">**EapMethod (EapHostConfig)**</span><span class="sxs-lookup"><span data-stu-id="c3daa-109">**EapMethod (EapHostConfig)**</span></span>](eaphostconfigschema-eapmethod-eaphostconfig-element.md)
 
-## <a name="related-topics"></a><span data-ttu-id="9457c-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9457c-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c3daa-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c3daa-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9457c-111">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="9457c-111">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="c3daa-111">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="c3daa-111">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="9457c-112">Esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="9457c-112">eaphostconfig Schema</span></span>](eaphostconfigschema-schema.md)
+[<span data-ttu-id="c3daa-112">Esquema eaphostconfig</span><span class="sxs-lookup"><span data-stu-id="c3daa-112">eaphostconfig Schema</span></span>](eaphostconfigschema-schema.md)
 </dt> </dl>
 
  

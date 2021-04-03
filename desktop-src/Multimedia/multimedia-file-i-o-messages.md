@@ -22,23 +22,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636516"
 ---
-# <a name="multimedia-file-io-messages"></a><span data-ttu-id="290f1-113">Mensagens de e/s de arquivo multimídia</span><span class="sxs-lookup"><span data-stu-id="290f1-113">Multimedia File I/O Messages</span></span>
+# <a name="multimedia-file-io-messages"></a><span data-ttu-id="f003c-113">Mensagens de e/s de arquivo multimídia</span><span class="sxs-lookup"><span data-stu-id="f003c-113">Multimedia File I/O Messages</span></span>
 
-<span data-ttu-id="290f1-114">As mensagens a seguir são usadas com e/s de arquivo de multimídia.</span><span class="sxs-lookup"><span data-stu-id="290f1-114">The following messages are used with multimedia file I/O.</span></span>
+<span data-ttu-id="f003c-114">As mensagens a seguir são usadas com e/s de arquivo de multimídia.</span><span class="sxs-lookup"><span data-stu-id="f003c-114">The following messages are used with multimedia file I/O.</span></span>
 
--   [<span data-ttu-id="290f1-115">**MMIOM \_ fechar**</span><span class="sxs-lookup"><span data-stu-id="290f1-115">**MMIOM\_CLOSE**</span></span>](mmiom-close.md)
--   [<span data-ttu-id="290f1-116">**MMIOM \_ abrir**</span><span class="sxs-lookup"><span data-stu-id="290f1-116">**MMIOM\_OPEN**</span></span>](mmiom-open.md)
--   [<span data-ttu-id="290f1-117">**MMIOM \_ leitura**</span><span class="sxs-lookup"><span data-stu-id="290f1-117">**MMIOM\_READ**</span></span>](mmiom-read.md)
--   [<span data-ttu-id="290f1-118">**\_renomear MMIOM**</span><span class="sxs-lookup"><span data-stu-id="290f1-118">**MMIOM\_RENAME**</span></span>](mmiom-rename.md)
--   [<span data-ttu-id="290f1-119">**MMIOM \_ Seek**</span><span class="sxs-lookup"><span data-stu-id="290f1-119">**MMIOM\_SEEK**</span></span>](mmiom-seek.md)
--   [<span data-ttu-id="290f1-120">**MMIOM \_ gravação**</span><span class="sxs-lookup"><span data-stu-id="290f1-120">**MMIOM\_WRITE**</span></span>](mmiom-write.md)
--   [<span data-ttu-id="290f1-121">**MMIOM \_ WRITEFLUSH**</span><span class="sxs-lookup"><span data-stu-id="290f1-121">**MMIOM\_WRITEFLUSH**</span></span>](mmiom-writeflush.md)
+-   [<span data-ttu-id="f003c-115">**MMIOM \_ fechar**</span><span class="sxs-lookup"><span data-stu-id="f003c-115">**MMIOM\_CLOSE**</span></span>](mmiom-close.md)
+-   [<span data-ttu-id="f003c-116">**MMIOM \_ abrir**</span><span class="sxs-lookup"><span data-stu-id="f003c-116">**MMIOM\_OPEN**</span></span>](mmiom-open.md)
+-   [<span data-ttu-id="f003c-117">**MMIOM \_ leitura**</span><span class="sxs-lookup"><span data-stu-id="f003c-117">**MMIOM\_READ**</span></span>](mmiom-read.md)
+-   [<span data-ttu-id="f003c-118">**\_renomear MMIOM**</span><span class="sxs-lookup"><span data-stu-id="f003c-118">**MMIOM\_RENAME**</span></span>](mmiom-rename.md)
+-   [<span data-ttu-id="f003c-119">**MMIOM \_ Seek**</span><span class="sxs-lookup"><span data-stu-id="f003c-119">**MMIOM\_SEEK**</span></span>](mmiom-seek.md)
+-   [<span data-ttu-id="f003c-120">**MMIOM \_ gravação**</span><span class="sxs-lookup"><span data-stu-id="f003c-120">**MMIOM\_WRITE**</span></span>](mmiom-write.md)
+-   [<span data-ttu-id="f003c-121">**MMIOM \_ WRITEFLUSH**</span><span class="sxs-lookup"><span data-stu-id="f003c-121">**MMIOM\_WRITEFLUSH**</span></span>](mmiom-writeflush.md)
 
-## <a name="related-topics"></a><span data-ttu-id="290f1-122">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="290f1-122">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f003c-122">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f003c-122">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="290f1-123">Referência de e/s de arquivo de multimídia</span><span class="sxs-lookup"><span data-stu-id="290f1-123">Multimedia File I/O Reference</span></span>](multimedia-file-i-o-reference.md)
+[<span data-ttu-id="f003c-123">Referência de e/s de arquivo de multimídia</span><span class="sxs-lookup"><span data-stu-id="f003c-123">Multimedia File I/O Reference</span></span>](multimedia-file-i-o-reference.md)
 </dt> </dl>
 
  

@@ -21,47 +21,47 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/14/2020
 ms.locfileid: "103645547"
 ---
-# <a name="ms-kds-rootkeydata-attribute"></a><span data-ttu-id="aef35-105">atributo ms-KDS-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="aef35-105">ms-Kds-RootKeyData attribute</span></span>
+# <a name="ms-kds-rootkeydata-attribute"></a><span data-ttu-id="d12b7-105">atributo ms-KDS-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="d12b7-105">ms-Kds-RootKeyData attribute</span></span>
 
-<span data-ttu-id="aef35-106">Chave raiz.</span><span class="sxs-lookup"><span data-stu-id="aef35-106">Root key.</span></span>
+<span data-ttu-id="d12b7-106">Chave raiz.</span><span class="sxs-lookup"><span data-stu-id="d12b7-106">Root key.</span></span>
 
 
 
-| <span data-ttu-id="aef35-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="aef35-107">Entry</span></span> | <span data-ttu-id="aef35-108">Valor</span><span class="sxs-lookup"><span data-stu-id="aef35-108">Value</span></span> |
+| <span data-ttu-id="d12b7-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="d12b7-107">Entry</span></span> | <span data-ttu-id="d12b7-108">Valor</span><span class="sxs-lookup"><span data-stu-id="d12b7-108">Value</span></span> |
 |-------------------|-------------------------------------------------------|
-| <span data-ttu-id="aef35-109">CN</span><span class="sxs-lookup"><span data-stu-id="aef35-109">CN</span></span>                | <span data-ttu-id="aef35-110">MS-KDS-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="aef35-110">ms-Kds-RootKeyData</span></span>                                    |
-| <span data-ttu-id="aef35-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="aef35-111">Ldap-Display-Name</span></span> | <span data-ttu-id="aef35-112">msKds-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="aef35-112">msKds-RootKeyData</span></span>                                     |
-| <span data-ttu-id="aef35-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="aef35-113">Size</span></span>              | \-                                                    |
-| <span data-ttu-id="aef35-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="aef35-114">Update Privilege</span></span>  | \-                                                    |
-| <span data-ttu-id="aef35-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="aef35-115">Update Frequency</span></span>  | \-                                                    |
-| <span data-ttu-id="aef35-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="aef35-116">Attribute-Id</span></span>      | <span data-ttu-id="aef35-117">1.2.840.113556.1.4.2175</span><span class="sxs-lookup"><span data-stu-id="aef35-117">1.2.840.113556.1.4.2175</span></span>                               |
-| <span data-ttu-id="aef35-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="aef35-118">System-Id-Guid</span></span>    | <span data-ttu-id="aef35-119">26627c27-08a2-0a40-a1b1-8dce85b42993</span><span class="sxs-lookup"><span data-stu-id="aef35-119">26627c27-08a2-0a40-a1b1-8dce85b42993</span></span>                  |
-| <span data-ttu-id="aef35-120">Syntax</span><span class="sxs-lookup"><span data-stu-id="aef35-120">Syntax</span></span>            | [<span data-ttu-id="aef35-121">**Objeto (link de réplica)**</span><span class="sxs-lookup"><span data-stu-id="aef35-121">**Object(Replica-Link)**</span></span>](s-object-replica-link.md) |
+| <span data-ttu-id="d12b7-109">CN</span><span class="sxs-lookup"><span data-stu-id="d12b7-109">CN</span></span>                | <span data-ttu-id="d12b7-110">MS-KDS-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="d12b7-110">ms-Kds-RootKeyData</span></span>                                    |
+| <span data-ttu-id="d12b7-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="d12b7-111">Ldap-Display-Name</span></span> | <span data-ttu-id="d12b7-112">msKds-RootKeyData</span><span class="sxs-lookup"><span data-stu-id="d12b7-112">msKds-RootKeyData</span></span>                                     |
+| <span data-ttu-id="d12b7-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="d12b7-113">Size</span></span>              | \-                                                    |
+| <span data-ttu-id="d12b7-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="d12b7-114">Update Privilege</span></span>  | \-                                                    |
+| <span data-ttu-id="d12b7-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="d12b7-115">Update Frequency</span></span>  | \-                                                    |
+| <span data-ttu-id="d12b7-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="d12b7-116">Attribute-Id</span></span>      | <span data-ttu-id="d12b7-117">1.2.840.113556.1.4.2175</span><span class="sxs-lookup"><span data-stu-id="d12b7-117">1.2.840.113556.1.4.2175</span></span>                               |
+| <span data-ttu-id="d12b7-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="d12b7-118">System-Id-Guid</span></span>    | <span data-ttu-id="d12b7-119">26627c27-08a2-0a40-a1b1-8dce85b42993</span><span class="sxs-lookup"><span data-stu-id="d12b7-119">26627c27-08a2-0a40-a1b1-8dce85b42993</span></span>                  |
+| <span data-ttu-id="d12b7-120">Syntax</span><span class="sxs-lookup"><span data-stu-id="d12b7-120">Syntax</span></span>            | [<span data-ttu-id="d12b7-121">**Objeto (link de réplica)**</span><span class="sxs-lookup"><span data-stu-id="d12b7-121">**Object(Replica-Link)**</span></span>](s-object-replica-link.md) |
 
 
 
-## <a name="implementations"></a><span data-ttu-id="aef35-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="aef35-122">Implementations</span></span>
+## <a name="implementations"></a><span data-ttu-id="d12b7-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="d12b7-122">Implementations</span></span>
 
--   [<span data-ttu-id="aef35-123">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="aef35-123">**Windows Server 2012**</span></span>](#windows-server-2012)
+-   [<span data-ttu-id="d12b7-123">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="d12b7-123">**Windows Server 2012**</span></span>](#windows-server-2012)
 
-## <a name="windows-server-2012"></a><span data-ttu-id="aef35-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="aef35-124">Windows Server 2012</span></span>
+## <a name="windows-server-2012"></a><span data-ttu-id="d12b7-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="d12b7-124">Windows Server 2012</span></span>
 
 
 
-| <span data-ttu-id="aef35-125">Entrada</span><span class="sxs-lookup"><span data-stu-id="aef35-125">Entry</span></span> | <span data-ttu-id="aef35-126">Valor</span><span class="sxs-lookup"><span data-stu-id="aef35-126">Value</span></span> |
+| <span data-ttu-id="d12b7-125">Entrada</span><span class="sxs-lookup"><span data-stu-id="d12b7-125">Entry</span></span> | <span data-ttu-id="d12b7-126">Valor</span><span class="sxs-lookup"><span data-stu-id="d12b7-126">Value</span></span> |
 |------------------------|---------------------------------------------------------------|
-| <span data-ttu-id="aef35-127">ID do link</span><span class="sxs-lookup"><span data-stu-id="aef35-127">Link-Id</span></span>                | \-                                                            |
-| <span data-ttu-id="aef35-128">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="aef35-128">MAPI-Id</span></span>                | \-                                                            |
-| <span data-ttu-id="aef35-129">System-Only</span><span class="sxs-lookup"><span data-stu-id="aef35-129">System-Only</span></span>            | <span data-ttu-id="aef35-130">Falso</span><span class="sxs-lookup"><span data-stu-id="aef35-130">False</span></span>                                                         |
-| <span data-ttu-id="aef35-131">É de valor único</span><span class="sxs-lookup"><span data-stu-id="aef35-131">Is-Single-Valued</span></span>       | <span data-ttu-id="aef35-132">True</span><span class="sxs-lookup"><span data-stu-id="aef35-132">True</span></span>                                                          |
-| <span data-ttu-id="aef35-133">É indexado</span><span class="sxs-lookup"><span data-stu-id="aef35-133">Is Indexed</span></span>             | <span data-ttu-id="aef35-134">Falso</span><span class="sxs-lookup"><span data-stu-id="aef35-134">False</span></span>                                                         |
-| <span data-ttu-id="aef35-135">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="aef35-135">In Global Catalog</span></span>      | <span data-ttu-id="aef35-136">Falso</span><span class="sxs-lookup"><span data-stu-id="aef35-136">False</span></span>                                                         |
-| <span data-ttu-id="aef35-137">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="aef35-137">NT-Security-Descriptor</span></span> | <span data-ttu-id="aef35-138">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="aef35-138">O:BAG:BAD:S:</span></span>                                                  |
-| <span data-ttu-id="aef35-139">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="aef35-139">Range-Lower</span></span>            | \-                                                            |
-| <span data-ttu-id="aef35-140">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="aef35-140">Range-Upper</span></span>            | \-                                                            |
-| <span data-ttu-id="aef35-141">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="aef35-141">Search-Flags</span></span>           | <span data-ttu-id="aef35-142">0x00000280</span><span class="sxs-lookup"><span data-stu-id="aef35-142">0x00000280</span></span>                                                    |
-| <span data-ttu-id="aef35-143">System-Flags</span><span class="sxs-lookup"><span data-stu-id="aef35-143">System-Flags</span></span>           | <span data-ttu-id="aef35-144">0x00000010</span><span class="sxs-lookup"><span data-stu-id="aef35-144">0x00000010</span></span>                                                    |
-| <span data-ttu-id="aef35-145">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="aef35-145">Classes used in</span></span>        | [<span data-ttu-id="aef35-146">**MS-KDS-Prov-RootKey**</span><span class="sxs-lookup"><span data-stu-id="aef35-146">**ms-Kds-Prov-RootKey**</span></span>](c-mskds-provrootkey.md)<br/> |
+| <span data-ttu-id="d12b7-127">ID do link</span><span class="sxs-lookup"><span data-stu-id="d12b7-127">Link-Id</span></span>                | \-                                                            |
+| <span data-ttu-id="d12b7-128">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="d12b7-128">MAPI-Id</span></span>                | \-                                                            |
+| <span data-ttu-id="d12b7-129">System-Only</span><span class="sxs-lookup"><span data-stu-id="d12b7-129">System-Only</span></span>            | <span data-ttu-id="d12b7-130">Falso</span><span class="sxs-lookup"><span data-stu-id="d12b7-130">False</span></span>                                                         |
+| <span data-ttu-id="d12b7-131">É de valor único</span><span class="sxs-lookup"><span data-stu-id="d12b7-131">Is-Single-Valued</span></span>       | <span data-ttu-id="d12b7-132">True</span><span class="sxs-lookup"><span data-stu-id="d12b7-132">True</span></span>                                                          |
+| <span data-ttu-id="d12b7-133">É indexado</span><span class="sxs-lookup"><span data-stu-id="d12b7-133">Is Indexed</span></span>             | <span data-ttu-id="d12b7-134">Falso</span><span class="sxs-lookup"><span data-stu-id="d12b7-134">False</span></span>                                                         |
+| <span data-ttu-id="d12b7-135">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="d12b7-135">In Global Catalog</span></span>      | <span data-ttu-id="d12b7-136">Falso</span><span class="sxs-lookup"><span data-stu-id="d12b7-136">False</span></span>                                                         |
+| <span data-ttu-id="d12b7-137">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="d12b7-137">NT-Security-Descriptor</span></span> | <span data-ttu-id="d12b7-138">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="d12b7-138">O:BAG:BAD:S:</span></span>                                                  |
+| <span data-ttu-id="d12b7-139">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="d12b7-139">Range-Lower</span></span>            | \-                                                            |
+| <span data-ttu-id="d12b7-140">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="d12b7-140">Range-Upper</span></span>            | \-                                                            |
+| <span data-ttu-id="d12b7-141">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="d12b7-141">Search-Flags</span></span>           | <span data-ttu-id="d12b7-142">0x00000280</span><span class="sxs-lookup"><span data-stu-id="d12b7-142">0x00000280</span></span>                                                    |
+| <span data-ttu-id="d12b7-143">System-Flags</span><span class="sxs-lookup"><span data-stu-id="d12b7-143">System-Flags</span></span>           | <span data-ttu-id="d12b7-144">0x00000010</span><span class="sxs-lookup"><span data-stu-id="d12b7-144">0x00000010</span></span>                                                    |
+| <span data-ttu-id="d12b7-145">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="d12b7-145">Classes used in</span></span>        | [<span data-ttu-id="d12b7-146">**MS-KDS-Prov-RootKey**</span><span class="sxs-lookup"><span data-stu-id="d12b7-146">**ms-Kds-Prov-RootKey**</span></span>](c-mskds-provrootkey.md)<br/> |
 
 
 

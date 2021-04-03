@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829505"
 ---
-# <a name="iwbemeventprovidersecurity-methods"></a><span data-ttu-id="0bcab-103">Métodos IWbemEventProviderSecurity</span><span class="sxs-lookup"><span data-stu-id="0bcab-103">IWbemEventProviderSecurity Methods</span></span>
+# <a name="iwbemeventprovidersecurity-methods"></a><span data-ttu-id="eeb27-103">Métodos IWbemEventProviderSecurity</span><span class="sxs-lookup"><span data-stu-id="eeb27-103">IWbemEventProviderSecurity Methods</span></span>
 
-<span data-ttu-id="0bcab-104">A interface [**IWbemEventProviderSecurity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovidersecurity) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0bcab-104">The [**IWbemEventProviderSecurity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovidersecurity) interface exposes the following methods.</span></span>
+<span data-ttu-id="eeb27-104">A interface [**IWbemEventProviderSecurity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovidersecurity) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="eeb27-104">The [**IWbemEventProviderSecurity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovidersecurity) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="0bcab-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0bcab-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="eeb27-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="eeb27-105">In this section</span></span>
 
--   [<span data-ttu-id="0bcab-106">**Método AccessCheck**</span><span class="sxs-lookup"><span data-stu-id="0bcab-106">**AccessCheck method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventprovidersecurity-accesscheck)
+-   [<span data-ttu-id="eeb27-106">**Método AccessCheck**</span><span class="sxs-lookup"><span data-stu-id="eeb27-106">**AccessCheck method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventprovidersecurity-accesscheck)
 
  
 

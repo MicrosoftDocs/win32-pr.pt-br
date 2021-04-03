@@ -12,19 +12,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641417"
 ---
-# <a name="order-in-which-to-use-the-sdo-api"></a><span data-ttu-id="1a225-103">Ordem na qual usar a API SDO</span><span class="sxs-lookup"><span data-stu-id="1a225-103">Order in Which to Use the SDO API</span></span>
+# <a name="order-in-which-to-use-the-sdo-api"></a><span data-ttu-id="bdffa-103">Ordem na qual usar a API SDO</span><span class="sxs-lookup"><span data-stu-id="bdffa-103">Order in Which to Use the SDO API</span></span>
 
-<span data-ttu-id="1a225-104">As seções a seguir descrevem a ordem na qual chamar as várias interfaces SDO.</span><span class="sxs-lookup"><span data-stu-id="1a225-104">The following sections describe the order in which to call the various SDO interfaces.</span></span>
+<span data-ttu-id="bdffa-104">As seções a seguir descrevem a ordem na qual chamar as várias interfaces SDO.</span><span class="sxs-lookup"><span data-stu-id="bdffa-104">The following sections describe the order in which to call the various SDO interfaces.</span></span>
 
--   [<span data-ttu-id="1a225-105">Obtendo um SDO de máquina</span><span class="sxs-lookup"><span data-stu-id="1a225-105">Obtaining a Machine SDO</span></span>](/windows/desktop/Nps/sdo-obtaining-a-machine-sdo)
--   [<span data-ttu-id="1a225-106">Anexando ao computador SDO</span><span class="sxs-lookup"><span data-stu-id="1a225-106">Attaching to the SDO Computer</span></span>](/windows/desktop/Nps/sdo-attaching-to-the-sdo-computer)
--   [<span data-ttu-id="1a225-107">Obtendo SDOs de serviço e usuário</span><span class="sxs-lookup"><span data-stu-id="1a225-107">Obtaining Service and User SDOs</span></span>](/windows/desktop/Nps/sdo-obtaining-service-and-user-sdos)
+-   [<span data-ttu-id="bdffa-105">Obtendo um SDO de máquina</span><span class="sxs-lookup"><span data-stu-id="bdffa-105">Obtaining a Machine SDO</span></span>](/windows/desktop/Nps/sdo-obtaining-a-machine-sdo)
+-   [<span data-ttu-id="bdffa-106">Anexando ao computador SDO</span><span class="sxs-lookup"><span data-stu-id="bdffa-106">Attaching to the SDO Computer</span></span>](/windows/desktop/Nps/sdo-attaching-to-the-sdo-computer)
+-   [<span data-ttu-id="bdffa-107">Obtendo SDOs de serviço e usuário</span><span class="sxs-lookup"><span data-stu-id="bdffa-107">Obtaining Service and User SDOs</span></span>](/windows/desktop/Nps/sdo-obtaining-service-and-user-sdos)
 
-## <a name="related-topics"></a><span data-ttu-id="1a225-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1a225-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bdffa-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="bdffa-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1a225-109">Elementos da API de SDO</span><span class="sxs-lookup"><span data-stu-id="1a225-109">Elements of the SDO API</span></span>](/windows/desktop/Nps/sdo-elements-of-the-sdo-api)
+[<span data-ttu-id="bdffa-109">Elementos da API de SDO</span><span class="sxs-lookup"><span data-stu-id="bdffa-109">Elements of the SDO API</span></span>](/windows/desktop/Nps/sdo-elements-of-the-sdo-api)
 </dt> </dl>
 
  

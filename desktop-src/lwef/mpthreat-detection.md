@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644526"
 ---
-# <a name="mpthreat_detection-enumeration"></a><span data-ttu-id="5ff23-105">Enumeração de detecção de MPTHREAT \_</span><span class="sxs-lookup"><span data-stu-id="5ff23-105">MPTHREAT\_DETECTION enumeration</span></span>
+# <a name="mpthreat_detection-enumeration"></a><span data-ttu-id="7be83-105">Enumeração de detecção de MPTHREAT \_</span><span class="sxs-lookup"><span data-stu-id="7be83-105">MPTHREAT\_DETECTION enumeration</span></span>
 
-<span data-ttu-id="5ff23-106">Possíveis tipos conhecidos de detecção de ameaças inválidas.</span><span class="sxs-lookup"><span data-stu-id="5ff23-106">Possible known bad threat detection types.</span></span>
+<span data-ttu-id="7be83-106">Possíveis tipos conhecidos de detecção de ameaças inválidas.</span><span class="sxs-lookup"><span data-stu-id="7be83-106">Possible known bad threat detection types.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5ff23-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5ff23-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7be83-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="7be83-107">Syntax</span></span>
 
 
 ```C++
@@ -41,54 +41,54 @@ typedef enum tagMPTHREAT_DETECTION {
 
 
 
-## <a name="constants"></a><span data-ttu-id="5ff23-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="5ff23-108">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="7be83-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="7be83-108">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="5ff23-109"><span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**\_ \_ concreta detecção de ameaças do MP \_**</span><span class="sxs-lookup"><span data-stu-id="5ff23-109"><span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**MP\_THREAT\_DETECTION\_CONCRETE**</span></span>
+<span data-ttu-id="7be83-109"><span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**\_ \_ concreta detecção de ameaças do MP \_**</span><span class="sxs-lookup"><span data-stu-id="7be83-109"><span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**MP\_THREAT\_DETECTION\_CONCRETE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5ff23-110">A ameaça foi detectada por meio de assinaturas concretas.</span><span class="sxs-lookup"><span data-stu-id="5ff23-110">Threat was detected via concrete signatures.</span></span>
+<span data-ttu-id="7be83-110">A ameaça foi detectada por meio de assinaturas concretas.</span><span class="sxs-lookup"><span data-stu-id="7be83-110">Threat was detected via concrete signatures.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="5ff23-111"><span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_heurística de \_ detecção de ameaças MP \_**</span><span class="sxs-lookup"><span data-stu-id="5ff23-111"><span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**MP\_THREAT\_DETECTION\_HEURISTIC**</span></span>
+<span data-ttu-id="7be83-111"><span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_heurística de \_ detecção de ameaças MP \_**</span><span class="sxs-lookup"><span data-stu-id="7be83-111"><span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**MP\_THREAT\_DETECTION\_HEURISTIC**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5ff23-112">A ameaça foi detectada por meio de heurística.</span><span class="sxs-lookup"><span data-stu-id="5ff23-112">Threat was detected via heuristic.</span></span>
+<span data-ttu-id="7be83-112">A ameaça foi detectada por meio de heurística.</span><span class="sxs-lookup"><span data-stu-id="7be83-112">Threat was detected via heuristic.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="5ff23-113"><span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**detecção de ameaças do MP \_ \_ \_ genérica**</span><span class="sxs-lookup"><span data-stu-id="5ff23-113"><span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**MP\_THREAT\_DETECTION\_GENERIC**</span></span>
+<span data-ttu-id="7be83-113"><span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**detecção de ameaças do MP \_ \_ \_ genérica**</span><span class="sxs-lookup"><span data-stu-id="7be83-113"><span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**MP\_THREAT\_DETECTION\_GENERIC**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5ff23-114">A ameaça foi detectada por meio de assinaturas genéricas.</span><span class="sxs-lookup"><span data-stu-id="5ff23-114">Threat was detected via generic signatures.</span></span>
+<span data-ttu-id="7be83-114">A ameaça foi detectada por meio de assinaturas genéricas.</span><span class="sxs-lookup"><span data-stu-id="7be83-114">Threat was detected via generic signatures.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="5ff23-115"><span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**detecção de ameaças do MP \_ \_ \_ suspeita**</span><span class="sxs-lookup"><span data-stu-id="5ff23-115"><span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**MP\_THREAT\_DETECTION\_SUSPICIOUS**</span></span>
+<span data-ttu-id="7be83-115"><span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**detecção de ameaças do MP \_ \_ \_ suspeita**</span><span class="sxs-lookup"><span data-stu-id="7be83-115"><span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**MP\_THREAT\_DETECTION\_SUSPICIOUS**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5ff23-116">A ameaça foi detectada por meio do monitoramento de comportamento.</span><span class="sxs-lookup"><span data-stu-id="5ff23-116">Threat was detected via behavior monitoring.</span></span>
+<span data-ttu-id="7be83-116">A ameaça foi detectada por meio do monitoramento de comportamento.</span><span class="sxs-lookup"><span data-stu-id="7be83-116">Threat was detected via behavior monitoring.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="5ff23-117"><span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**\_FASTPATH de \_ detecção de ameaças MP \_**</span><span class="sxs-lookup"><span data-stu-id="5ff23-117"><span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**MP\_THREAT\_DETECTION\_FASTPATH**</span></span>
+<span data-ttu-id="7be83-117"><span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**\_FASTPATH de \_ detecção de ameaças MP \_**</span><span class="sxs-lookup"><span data-stu-id="7be83-117"><span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**MP\_THREAT\_DETECTION\_FASTPATH**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="5ff23-118">A ameaça foi detectada via FastPath.</span><span class="sxs-lookup"><span data-stu-id="5ff23-118">Threat was detected via fastpath.</span></span>
+<span data-ttu-id="7be83-118">A ameaça foi detectada via FastPath.</span><span class="sxs-lookup"><span data-stu-id="7be83-118">Threat was detected via fastpath.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="5ff23-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5ff23-119">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="7be83-119">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7be83-119">Requirements</span></span>
 
 
 
-| <span data-ttu-id="5ff23-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="5ff23-120">Requirement</span></span> | <span data-ttu-id="5ff23-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5ff23-121">Value</span></span> |
+| <span data-ttu-id="7be83-120">Requisito</span><span class="sxs-lookup"><span data-stu-id="7be83-120">Requirement</span></span> | <span data-ttu-id="7be83-121">Valor</span><span class="sxs-lookup"><span data-stu-id="7be83-121">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="5ff23-122">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5ff23-122">Minimum supported client</span></span><br/> | <span data-ttu-id="5ff23-123">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="5ff23-123">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
-| <span data-ttu-id="5ff23-124">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5ff23-124">Minimum supported server</span></span><br/> | <span data-ttu-id="5ff23-125">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="5ff23-125">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="5ff23-126">parâmetro</span><span class="sxs-lookup"><span data-stu-id="5ff23-126">Header</span></span><br/>                   | <dl> <span data-ttu-id="5ff23-127"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="5ff23-127"><dt>MpClient.h</dt></span></span> </dl> |
+| <span data-ttu-id="7be83-122">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7be83-122">Minimum supported client</span></span><br/> | <span data-ttu-id="7be83-123">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="7be83-123">Windows 8 \[desktop apps only\]</span></span><br/>                                            |
+| <span data-ttu-id="7be83-124">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7be83-124">Minimum supported server</span></span><br/> | <span data-ttu-id="7be83-125">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="7be83-125">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="7be83-126">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7be83-126">Header</span></span><br/>                   | <dl> <span data-ttu-id="7be83-127"><dt>MpClient. h</dt></span><span class="sxs-lookup"><span data-stu-id="7be83-127"><dt>MpClient.h</dt></span></span> </dl> |
 
 
 

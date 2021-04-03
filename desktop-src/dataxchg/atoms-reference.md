@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930449"
 ---
-# <a name="atom-reference"></a><span data-ttu-id="ab08b-104">Referência Atom</span><span class="sxs-lookup"><span data-stu-id="ab08b-104">Atom Reference</span></span>
+# <a name="atom-reference"></a><span data-ttu-id="2c8e7-104">Referência Atom</span><span class="sxs-lookup"><span data-stu-id="2c8e7-104">Atom Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="ab08b-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ab08b-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2c8e7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2c8e7-105">In this section</span></span>
 
--   [<span data-ttu-id="ab08b-106">Funções Atom</span><span class="sxs-lookup"><span data-stu-id="ab08b-106">Atom Functions</span></span>](atoms-functions.md)
--   [<span data-ttu-id="ab08b-107">Macros Atom</span><span class="sxs-lookup"><span data-stu-id="ab08b-107">Atom Macros</span></span>](atoms-macros.md)
+-   [<span data-ttu-id="2c8e7-106">Funções Atom</span><span class="sxs-lookup"><span data-stu-id="2c8e7-106">Atom Functions</span></span>](atoms-functions.md)
+-   [<span data-ttu-id="2c8e7-107">Macros Atom</span><span class="sxs-lookup"><span data-stu-id="2c8e7-107">Atom Macros</span></span>](atoms-macros.md)
 
  
 

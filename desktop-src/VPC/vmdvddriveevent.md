@@ -21,13 +21,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644623"
 ---
-# <a name="vmdvddriveevent-enumeration"></a><span data-ttu-id="01101-104">Enumeração VMDVDDriveEvent</span><span class="sxs-lookup"><span data-stu-id="01101-104">VMDVDDriveEvent enumeration</span></span>
+# <a name="vmdvddriveevent-enumeration"></a><span data-ttu-id="5f058-104">Enumeração VMDVDDriveEvent</span><span class="sxs-lookup"><span data-stu-id="5f058-104">VMDVDDriveEvent enumeration</span></span>
 
-<span data-ttu-id="01101-105">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="01101-105">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="01101-106">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="01101-106">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
+<span data-ttu-id="5f058-105">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="5f058-105">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="5f058-106">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="5f058-106">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
 
-<span data-ttu-id="01101-107">Especifica os eventos da unidade de DVD.</span><span class="sxs-lookup"><span data-stu-id="01101-107">Specifies the DVD drive events.</span></span>
+<span data-ttu-id="5f058-107">Especifica os eventos da unidade de DVD.</span><span class="sxs-lookup"><span data-stu-id="5f058-107">Specifies the DVD drive events.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="01101-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="01101-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5f058-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="5f058-108">Syntax</span></span>
 
 
 ```C++
@@ -39,43 +39,43 @@ typedef enum  {
 
 
 
-## <a name="constants"></a><span data-ttu-id="01101-109">Constantes</span><span class="sxs-lookup"><span data-stu-id="01101-109">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="5f058-109">Constantes</span><span class="sxs-lookup"><span data-stu-id="5f058-109">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="01101-110"><span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent \_ OnInsert**</span><span class="sxs-lookup"><span data-stu-id="01101-110"><span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent\_OnInsert**</span></span>
+<span data-ttu-id="5f058-110"><span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent \_ OnInsert**</span><span class="sxs-lookup"><span data-stu-id="5f058-110"><span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent\_OnInsert**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="01101-111">Uma imagem ISO é anexada ou a mídia real é inserida em uma unidade do host.</span><span class="sxs-lookup"><span data-stu-id="01101-111">An ISO image is attached or real media is inserted into a host drive.</span></span>
+<span data-ttu-id="5f058-111">Uma imagem ISO é anexada ou a mídia real é inserida em uma unidade do host.</span><span class="sxs-lookup"><span data-stu-id="5f058-111">An ISO image is attached or real media is inserted into a host drive.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="01101-112"><span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent \_ Onejeção**</span><span class="sxs-lookup"><span data-stu-id="01101-112"><span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent\_OnEject**</span></span>
+<span data-ttu-id="5f058-112"><span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent \_ Onejeção**</span><span class="sxs-lookup"><span data-stu-id="5f058-112"><span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent\_OnEject**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="01101-113">A mídia foi ejetada.</span><span class="sxs-lookup"><span data-stu-id="01101-113">The media has been ejected.</span></span>
+<span data-ttu-id="5f058-113">A mídia foi ejetada.</span><span class="sxs-lookup"><span data-stu-id="5f058-113">The media has been ejected.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="01101-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="01101-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5f058-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5f058-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="01101-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="01101-115">Requirement</span></span> | <span data-ttu-id="01101-116">Valor</span><span class="sxs-lookup"><span data-stu-id="01101-116">Value</span></span> |
+| <span data-ttu-id="5f058-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="5f058-115">Requirement</span></span> | <span data-ttu-id="5f058-116">Valor</span><span class="sxs-lookup"><span data-stu-id="5f058-116">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="01101-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="01101-117">Minimum supported client</span></span><br/> | <span data-ttu-id="01101-118">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="01101-118">Windows 7 \[desktop apps only\]</span></span><br/>                                                    |
-| <span data-ttu-id="01101-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="01101-119">Minimum supported server</span></span><br/> | <span data-ttu-id="01101-120">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="01101-120">None supported</span></span><br/>                                                                     |
-| <span data-ttu-id="01101-121">Fim do suporte do cliente</span><span class="sxs-lookup"><span data-stu-id="01101-121">End of client support</span></span><br/>    | <span data-ttu-id="01101-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="01101-122">Windows 7</span></span><br/>                                                                          |
-| <span data-ttu-id="01101-123">Produto</span><span class="sxs-lookup"><span data-stu-id="01101-123">Product</span></span><br/>                  | <span data-ttu-id="01101-124">Windows Virtual PC</span><span class="sxs-lookup"><span data-stu-id="01101-124">Windows Virtual PC</span></span><br/>                                                                 |
-| <span data-ttu-id="01101-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="01101-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="01101-126"><dt>VPCCOMInterfaces. h</dt></span><span class="sxs-lookup"><span data-stu-id="01101-126"><dt>VPCCOMInterfaces.h</dt></span></span> </dl> |
+| <span data-ttu-id="5f058-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5f058-117">Minimum supported client</span></span><br/> | <span data-ttu-id="5f058-118">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="5f058-118">Windows 7 \[desktop apps only\]</span></span><br/>                                                    |
+| <span data-ttu-id="5f058-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5f058-119">Minimum supported server</span></span><br/> | <span data-ttu-id="5f058-120">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="5f058-120">None supported</span></span><br/>                                                                     |
+| <span data-ttu-id="5f058-121">Fim do suporte do cliente</span><span class="sxs-lookup"><span data-stu-id="5f058-121">End of client support</span></span><br/>    | <span data-ttu-id="5f058-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="5f058-122">Windows 7</span></span><br/>                                                                          |
+| <span data-ttu-id="5f058-123">Produto</span><span class="sxs-lookup"><span data-stu-id="5f058-123">Product</span></span><br/>                  | <span data-ttu-id="5f058-124">Windows Virtual PC</span><span class="sxs-lookup"><span data-stu-id="5f058-124">Windows Virtual PC</span></span><br/>                                                                 |
+| <span data-ttu-id="5f058-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="5f058-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="5f058-126"><dt>VPCCOMInterfaces. h</dt></span><span class="sxs-lookup"><span data-stu-id="5f058-126"><dt>VPCCOMInterfaces.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="01101-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="01101-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f058-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="5f058-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="01101-128">**IVMDVDDriveEvents**</span><span class="sxs-lookup"><span data-stu-id="01101-128">**IVMDVDDriveEvents**</span></span>](ivmdvddriveevents.md)
+[<span data-ttu-id="5f058-128">**IVMDVDDriveEvents**</span><span class="sxs-lookup"><span data-stu-id="5f058-128">**IVMDVDDriveEvents**</span></span>](ivmdvddriveevents.md)
 </dt> </dl>
 
  

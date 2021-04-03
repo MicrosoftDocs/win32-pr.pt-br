@@ -12,12 +12,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641415"
 ---
-# <a name="server-data-objects-enumerations"></a><span data-ttu-id="a5169-103">Enumerações de objetos de dados do servidor</span><span class="sxs-lookup"><span data-stu-id="a5169-103">Server Data Objects Enumerations</span></span>
+# <a name="server-data-objects-enumerations"></a><span data-ttu-id="e7ec5-103">Enumerações de objetos de dados do servidor</span><span class="sxs-lookup"><span data-stu-id="e7ec5-103">Server Data Objects Enumerations</span></span>
 
-<span data-ttu-id="a5169-104">Os tipos de enumeração a seguir enumeram as propriedades e os valores usados por objetos de dados do servidor.</span><span class="sxs-lookup"><span data-stu-id="a5169-104">The following enumeration types enumerate the properties and values used by server data objects.</span></span>
+<span data-ttu-id="e7ec5-104">Os tipos de enumeração a seguir enumeram as propriedades e os valores usados por objetos de dados do servidor.</span><span class="sxs-lookup"><span data-stu-id="e7ec5-104">The following enumeration types enumerate the properties and values used by server data objects.</span></span>
 
--   [<span data-ttu-id="a5169-105">Listando por categoria</span><span class="sxs-lookup"><span data-stu-id="a5169-105">Listing by Category</span></span>](/windows/desktop/Nps/sdo-listing-by-category)
--   [<span data-ttu-id="a5169-106">Lista alfabética</span><span class="sxs-lookup"><span data-stu-id="a5169-106">Alphabetical Listing</span></span>](/windows/desktop/Nps/sdo-alphabetical-listing)
+-   [<span data-ttu-id="e7ec5-105">Listando por categoria</span><span class="sxs-lookup"><span data-stu-id="e7ec5-105">Listing by Category</span></span>](/windows/desktop/Nps/sdo-listing-by-category)
+-   [<span data-ttu-id="e7ec5-106">Lista alfabética</span><span class="sxs-lookup"><span data-stu-id="e7ec5-106">Alphabetical Listing</span></span>](/windows/desktop/Nps/sdo-alphabetical-listing)
 
  
 

@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644985"
 ---
-# <a name="peapextensionstype-complex-type"></a><span data-ttu-id="4c4d7-105">Tipo complexo PeapExtensionsType</span><span class="sxs-lookup"><span data-stu-id="4c4d7-105">PeapExtensionsType Complex Type</span></span>
+# <a name="peapextensionstype-complex-type"></a><span data-ttu-id="3d066-105">Tipo complexo PeapExtensionsType</span><span class="sxs-lookup"><span data-stu-id="3d066-105">PeapExtensionsType Complex Type</span></span>
 
-<span data-ttu-id="4c4d7-106">O tipo complexo **PeapExtensionsType** contém aprimoramentos de esquema feitos no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-106">The **PeapExtensionsType** complex type contains schema enhancements made in Windows 7.</span></span> <span data-ttu-id="4c4d7-107">Futuros aprimoramentos de esquema serão tratados pelo [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).</span><span class="sxs-lookup"><span data-stu-id="4c4d7-107">Future schema enhancements will be handled by [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).</span></span>
+<span data-ttu-id="3d066-106">O tipo complexo **PeapExtensionsType** contém aprimoramentos de esquema feitos no Windows 7.</span><span class="sxs-lookup"><span data-stu-id="3d066-106">The **PeapExtensionsType** complex type contains schema enhancements made in Windows 7.</span></span> <span data-ttu-id="3d066-107">Futuros aprimoramentos de esquema serão tratados pelo [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).</span><span class="sxs-lookup"><span data-stu-id="3d066-107">Future schema enhancements will be handled by [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).</span></span>
 
 ``` syntax
 <xs:complexType name="PeapExtensionsType">
@@ -48,45 +48,45 @@ ms.locfileid: "103644985"
 </xs:complexType>
 ```
 
-## <a name="child-elements"></a><span data-ttu-id="4c4d7-108">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="4c4d7-108">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="3d066-108">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="3d066-108">Child elements</span></span>
 
 
 
-| <span data-ttu-id="4c4d7-109">Elemento</span><span class="sxs-lookup"><span data-stu-id="4c4d7-109">Element</span></span>                                                                                                                               | <span data-ttu-id="4c4d7-110">Type</span><span class="sxs-lookup"><span data-stu-id="4c4d7-110">Type</span></span> | <span data-ttu-id="4c4d7-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c4d7-111">Description</span></span>                                                                                                |
+| <span data-ttu-id="3d066-109">Elemento</span><span class="sxs-lookup"><span data-stu-id="3d066-109">Element</span></span>                                                                                                                               | <span data-ttu-id="3d066-110">Type</span><span class="sxs-lookup"><span data-stu-id="3d066-110">Type</span></span> | <span data-ttu-id="3d066-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3d066-111">Description</span></span>                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="4c4d7-112">**extendedPeap:PerformServerValidation**</span><span class="sxs-lookup"><span data-stu-id="4c4d7-112">**extendedPeap:PerformServerValidation**</span></span>](mspeapconnectionpropertiesv1schema-performservervalidation-peapextensionstype-element.md) |      | <span data-ttu-id="4c4d7-113">Windows 7 e posterior: indica se a validação do servidor é executada.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-113">Windows 7 and later: indicates whether server validation is performed.</span></span><br/>                          |
-| [<span data-ttu-id="4c4d7-114">**extendedPeap:AcceptServerName**</span><span class="sxs-lookup"><span data-stu-id="4c4d7-114">**extendedPeap:AcceptServerName**</span></span>](mspeapconnectionpropertiesv1schema-acceptservername-peapextensionstype-element.md)               |      | <span data-ttu-id="4c4d7-115">Windows 7 e posterior: indica se o nome de um servidor é lido.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-115">Windows 7 and later: indicates whether the name of a server is read.</span></span><br/>                            |
-| [<span data-ttu-id="4c4d7-116">**extendedPeap:IdentityPrivacy**</span><span class="sxs-lookup"><span data-stu-id="4c4d7-116">**extendedPeap:IdentityPrivacy**</span></span>](mspeapconnectionpropertiesv1schema-identityprivacy-peapextensionstype-element.md)                 |      | <span data-ttu-id="4c4d7-117">Windows 7 e posterior: indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-117">Windows 7 and later: indicates whether a user's true identity or an anonymous identity is sent.</span></span><br/> |
-| [<span data-ttu-id="4c4d7-118">**extendedPeap:PeapExtensionsV2**</span><span class="sxs-lookup"><span data-stu-id="4c4d7-118">**extendedPeap:PeapExtensionsV2**</span></span>](mspeapconnectionpropertiesv1-peapextensionsv2-peapextensionstype-element.md)                     |      | <span data-ttu-id="4c4d7-119">Windows 7 e posterior: permite aprimoramentos futuros no esquema.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-119">Windows 7 and later: enables future enhancements to the schema.</span></span><br/>                                 |
+| [<span data-ttu-id="3d066-112">**extendedPeap:PerformServerValidation**</span><span class="sxs-lookup"><span data-stu-id="3d066-112">**extendedPeap:PerformServerValidation**</span></span>](mspeapconnectionpropertiesv1schema-performservervalidation-peapextensionstype-element.md) |      | <span data-ttu-id="3d066-113">Windows 7 e posterior: indica se a validação do servidor é executada.</span><span class="sxs-lookup"><span data-stu-id="3d066-113">Windows 7 and later: indicates whether server validation is performed.</span></span><br/>                          |
+| [<span data-ttu-id="3d066-114">**extendedPeap:AcceptServerName**</span><span class="sxs-lookup"><span data-stu-id="3d066-114">**extendedPeap:AcceptServerName**</span></span>](mspeapconnectionpropertiesv1schema-acceptservername-peapextensionstype-element.md)               |      | <span data-ttu-id="3d066-115">Windows 7 e posterior: indica se o nome de um servidor é lido.</span><span class="sxs-lookup"><span data-stu-id="3d066-115">Windows 7 and later: indicates whether the name of a server is read.</span></span><br/>                            |
+| [<span data-ttu-id="3d066-116">**extendedPeap:IdentityPrivacy**</span><span class="sxs-lookup"><span data-stu-id="3d066-116">**extendedPeap:IdentityPrivacy**</span></span>](mspeapconnectionpropertiesv1schema-identityprivacy-peapextensionstype-element.md)                 |      | <span data-ttu-id="3d066-117">Windows 7 e posterior: indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada.</span><span class="sxs-lookup"><span data-stu-id="3d066-117">Windows 7 and later: indicates whether a user's true identity or an anonymous identity is sent.</span></span><br/> |
+| [<span data-ttu-id="3d066-118">**extendedPeap:PeapExtensionsV2**</span><span class="sxs-lookup"><span data-stu-id="3d066-118">**extendedPeap:PeapExtensionsV2**</span></span>](mspeapconnectionpropertiesv1-peapextensionsv2-peapextensionstype-element.md)                     |      | <span data-ttu-id="3d066-119">Windows 7 e posterior: permite aprimoramentos futuros no esquema.</span><span class="sxs-lookup"><span data-stu-id="3d066-119">Windows 7 and later: enables future enhancements to the schema.</span></span><br/>                                 |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="4c4d7-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="4c4d7-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3d066-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="3d066-120">Remarks</span></span>
 
-<span data-ttu-id="4c4d7-121">O elemento **PeapExtensionsType** é opcional.</span><span class="sxs-lookup"><span data-stu-id="4c4d7-121">The **PeapExtensionsType** element is optional.</span></span>
+<span data-ttu-id="3d066-121">O elemento **PeapExtensionsType** é opcional.</span><span class="sxs-lookup"><span data-stu-id="3d066-121">The **PeapExtensionsType** element is optional.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4c4d7-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4c4d7-122">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="3d066-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3d066-122">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4c4d7-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="4c4d7-123">Requirement</span></span> | <span data-ttu-id="4c4d7-124">Valor</span><span class="sxs-lookup"><span data-stu-id="4c4d7-124">Value</span></span> |
+| <span data-ttu-id="3d066-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="3d066-123">Requirement</span></span> | <span data-ttu-id="3d066-124">Valor</span><span class="sxs-lookup"><span data-stu-id="3d066-124">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="4c4d7-125">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4c4d7-125">Minimum supported client</span></span><br/> | <span data-ttu-id="4c4d7-126">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="4c4d7-126">Windows 7 \[desktop apps only\]</span></span><br/>              |
-| <span data-ttu-id="4c4d7-127">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4c4d7-127">Minimum supported server</span></span><br/> | <span data-ttu-id="4c4d7-128">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="4c4d7-128">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="3d066-125">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3d066-125">Minimum supported client</span></span><br/> | <span data-ttu-id="3d066-126">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="3d066-126">Windows 7 \[desktop apps only\]</span></span><br/>              |
+| <span data-ttu-id="3d066-127">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3d066-127">Minimum supported server</span></span><br/> | <span data-ttu-id="3d066-128">\[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]</span><span class="sxs-lookup"><span data-stu-id="3d066-128">Windows Server 2008 R2 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4c4d7-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="4c4d7-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3d066-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="3d066-129">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4c4d7-130">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="4c4d7-130">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="3d066-130">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="3d066-130">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="4c4d7-131">Esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="4c4d7-131">mspeapconnectionpropertiesv1 Schema</span></span>](mspeapconnectionpropertiesv1schema-schema.md)
+[<span data-ttu-id="3d066-131">Esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="3d066-131">mspeapconnectionpropertiesv1 Schema</span></span>](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[<span data-ttu-id="4c4d7-132">Tipos complexos de esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="4c4d7-132">mspeapconnectionpropertiesv1 Schema Complex Types</span></span>](mspeapconnectionpropertiesv1schema-complex-types.md)
+[<span data-ttu-id="3d066-132">Tipos complexos de esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="3d066-132">mspeapconnectionpropertiesv1 Schema Complex Types</span></span>](mspeapconnectionpropertiesv1schema-complex-types.md)
 </dt> </dl>
 
  

@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103644088"
 ---
-# <a name="p-dns"></a><span data-ttu-id="9faf1-103">P (DNS)</span><span class="sxs-lookup"><span data-stu-id="9faf1-103">P (DNS)</span></span>
+# <a name="p-dns"></a><span data-ttu-id="ca319-103">P (DNS)</span><span class="sxs-lookup"><span data-stu-id="ca319-103">P (DNS)</span></span>
 
-<span data-ttu-id="9faf1-104">A B [C](c-gly.md) D E [F](f-gly.md) G [H](h-gly.md) i J K [L](l-gly.md) M N O P Q [R](r-gly.md) [S](s-gly.md) T U V W X Y [Z](z-gly.md)</span><span class="sxs-lookup"><span data-stu-id="9faf1-104">A B [C](c-gly.md) D E [F](f-gly.md) G [H](h-gly.md) I J K [L](l-gly.md) M N O P Q [R](r-gly.md) [S](s-gly.md) T U V W X Y [Z](z-gly.md)</span></span>
+<span data-ttu-id="ca319-104">A B [C](c-gly.md) D E [F](f-gly.md) G [H](h-gly.md) i J K [L](l-gly.md) M N O P Q [R](r-gly.md) [S](s-gly.md) T U V W X Y [Z](z-gly.md)</span><span class="sxs-lookup"><span data-stu-id="ca319-104">A B [C](c-gly.md) D E [F](f-gly.md) G [H](h-gly.md) I J K [L](l-gly.md) M N O P Q [R](r-gly.md) [S](s-gly.md) T U V W X Y [Z](z-gly.md)</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9faf1-105"><span id="_dns_pointer_record_gly"></span><span id="_DNS_POINTER_RECORD_GLY"></span>**registro de ponteiro**</span><span class="sxs-lookup"><span data-stu-id="9faf1-105"><span id="_dns_pointer_record_gly"></span><span id="_DNS_POINTER_RECORD_GLY"></span>**pointer record**</span></span>
+<span data-ttu-id="ca319-105"><span id="_dns_pointer_record_gly"></span><span id="_DNS_POINTER_RECORD_GLY"></span>**registro de ponteiro**</span><span class="sxs-lookup"><span data-stu-id="ca319-105"><span id="_dns_pointer_record_gly"></span><span id="_DNS_POINTER_RECORD_GLY"></span>**pointer record**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="9faf1-106">Tipo de registro de recurso de DNS.</span><span class="sxs-lookup"><span data-stu-id="9faf1-106">Type of DNS Resource Record.</span></span>
+<span data-ttu-id="ca319-106">Tipo de registro de recurso de DNS.</span><span class="sxs-lookup"><span data-stu-id="ca319-106">Type of DNS Resource Record.</span></span>
 
 </dd> </dl>
 

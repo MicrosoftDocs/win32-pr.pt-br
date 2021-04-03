@@ -12,19 +12,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636469"
 ---
-# <a name="listing-event-collector-subscriptions"></a><span data-ttu-id="32574-103">Listando assinaturas do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="32574-103">Listing Event Collector Subscriptions</span></span>
+# <a name="listing-event-collector-subscriptions"></a><span data-ttu-id="ef215-103">Listando assinaturas do coletor de eventos</span><span class="sxs-lookup"><span data-stu-id="ef215-103">Listing Event Collector Subscriptions</span></span>
 
-<span data-ttu-id="32574-104">Você pode recuperar uma lista de nomes de assinaturas do coletor de eventos que estão habilitadas em um computador local.</span><span class="sxs-lookup"><span data-stu-id="32574-104">You can retrieve a list of names of Event Collector subscriptions that are enabled on a local computer.</span></span> <span data-ttu-id="32574-105">Usando a função [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) , você pode obter um identificador para um enumerador de assinatura.</span><span class="sxs-lookup"><span data-stu-id="32574-105">Using the [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) function, you can obtain a handle to a subscription enumerator.</span></span> <span data-ttu-id="32574-106">Depois que o identificador é criado, a função [**EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) é usada para listar as assinaturas no computador local.</span><span class="sxs-lookup"><span data-stu-id="32574-106">After the handle is created, the [**EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) function is used to list the subscriptions on the local computer.</span></span>
+<span data-ttu-id="ef215-104">Você pode recuperar uma lista de nomes de assinaturas do coletor de eventos que estão habilitadas em um computador local.</span><span class="sxs-lookup"><span data-stu-id="ef215-104">You can retrieve a list of names of Event Collector subscriptions that are enabled on a local computer.</span></span> <span data-ttu-id="ef215-105">Usando a função [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) , você pode obter um identificador para um enumerador de assinatura.</span><span class="sxs-lookup"><span data-stu-id="ef215-105">Using the [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) function, you can obtain a handle to a subscription enumerator.</span></span> <span data-ttu-id="ef215-106">Depois que o identificador é criado, a função [**EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) é usada para listar as assinaturas no computador local.</span><span class="sxs-lookup"><span data-stu-id="ef215-106">After the handle is created, the [**EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) function is used to list the subscriptions on the local computer.</span></span>
 
 > [!Note]
 >
-> <span data-ttu-id="32574-107">Você pode usar o exemplo de código a seguir para recuperar uma lista de assinaturas ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="32574-107">You can use the following code example to retrieve a list of subscriptions or you can type the following command at the command prompt:</span></span>
+> <span data-ttu-id="ef215-107">Você pode usar o exemplo de código a seguir para recuperar uma lista de assinaturas ou pode digitar o seguinte comando no prompt de comando:</span><span class="sxs-lookup"><span data-stu-id="ef215-107">You can use the following code example to retrieve a list of subscriptions or you can type the following command at the command prompt:</span></span>
 >
-> <span data-ttu-id="32574-108">**wecutil es**</span><span class="sxs-lookup"><span data-stu-id="32574-108">**wecutil es**</span></span>
+> <span data-ttu-id="ef215-108">**wecutil es**</span><span class="sxs-lookup"><span data-stu-id="ef215-108">**wecutil es**</span></span>
 
  
 
-<span data-ttu-id="32574-109">O exemplo de código C++ a seguir mostra como listar as assinaturas do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="32574-109">The following C++ code example shows how to list the Event Collector subscriptions.</span></span>
+<span data-ttu-id="ef215-109">O exemplo de código C++ a seguir mostra como listar as assinaturas do coletor de eventos.</span><span class="sxs-lookup"><span data-stu-id="ef215-109">The following C++ code example shows how to list the Event Collector subscriptions.</span></span>
 
 
 ```C++
@@ -118,11 +118,11 @@ void __cdecl wmain()
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="32574-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="32574-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ef215-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ef215-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="32574-111">Referência do coletor de eventos do Windows</span><span class="sxs-lookup"><span data-stu-id="32574-111">Windows Event Collector Reference</span></span>](windows-event-collector-reference.md)
+[<span data-ttu-id="ef215-111">Referência do coletor de eventos do Windows</span><span class="sxs-lookup"><span data-stu-id="ef215-111">Windows Event Collector Reference</span></span>](windows-event-collector-reference.md)
 </dt> </dl>
 
  

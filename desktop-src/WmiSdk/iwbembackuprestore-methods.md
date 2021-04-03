@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829269"
 ---
-# <a name="iwbembackuprestore-methods"></a><span data-ttu-id="a9ebd-103">Métodos IWbemBackupRestore</span><span class="sxs-lookup"><span data-stu-id="a9ebd-103">IWbemBackupRestore Methods</span></span>
+# <a name="iwbembackuprestore-methods"></a><span data-ttu-id="41ea0-103">Métodos IWbemBackupRestore</span><span class="sxs-lookup"><span data-stu-id="41ea0-103">IWbemBackupRestore Methods</span></span>
 
-<span data-ttu-id="a9ebd-104">A interface [**IWbemBackupRestore**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestore) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a9ebd-104">The [**IWbemBackupRestore**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestore) interface exposes the following methods.</span></span>
+<span data-ttu-id="41ea0-104">A interface [**IWbemBackupRestore**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestore) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="41ea0-104">The [**IWbemBackupRestore**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbembackuprestore) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a9ebd-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a9ebd-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="41ea0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="41ea0-105">In this section</span></span>
 
--   [<span data-ttu-id="a9ebd-106">**Método de backup**</span><span class="sxs-lookup"><span data-stu-id="a9ebd-106">**Backup method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-backup)
--   [<span data-ttu-id="a9ebd-107">**Método Restore**</span><span class="sxs-lookup"><span data-stu-id="a9ebd-107">**Restore method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-restore)
+-   [<span data-ttu-id="41ea0-106">**Método de backup**</span><span class="sxs-lookup"><span data-stu-id="41ea0-106">**Backup method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-backup)
+-   [<span data-ttu-id="41ea0-107">**Método Restore**</span><span class="sxs-lookup"><span data-stu-id="41ea0-107">**Restore method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbembackuprestore-restore)
 
  
 

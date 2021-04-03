@@ -34,9 +34,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104006139"
 ---
-# <a name="create-session-key-example"></a><span data-ttu-id="52929-125">Criar exemplo de chave de sessão</span><span class="sxs-lookup"><span data-stu-id="52929-125">Create Session Key Example</span></span>
+# <a name="create-session-key-example"></a><span data-ttu-id="17f14-125">Criar exemplo de chave de sessão</span><span class="sxs-lookup"><span data-stu-id="17f14-125">Create Session Key Example</span></span>
 
-<span data-ttu-id="52929-126">A chave de sessão é usada para proteger a chave de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="52929-126">The session key is used to protect the content key.</span></span> <span data-ttu-id="52929-127">O código a seguir demonstra como criar uma chave de sessão, mas deixa os detalhes da geração de chave aleatória.</span><span class="sxs-lookup"><span data-stu-id="52929-127">The following code demonstrates how to create a session key, but leaves out the details of random key generation.</span></span>
+<span data-ttu-id="17f14-126">A chave de sessão é usada para proteger a chave de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="17f14-126">The session key is used to protect the content key.</span></span> <span data-ttu-id="17f14-127">O código a seguir demonstra como criar uma chave de sessão, mas deixa os detalhes da geração de chave aleatória.</span><span class="sxs-lookup"><span data-stu-id="17f14-127">The following code demonstrates how to create a session key, but leaves out the details of random key generation.</span></span>
 
 
 ```C++
@@ -94,11 +94,11 @@ EXIT:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="52929-128">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="52929-128">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="17f14-128">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="17f14-128">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="52929-129">**Exemplos de importação de DRM**</span><span class="sxs-lookup"><span data-stu-id="52929-129">**DRM Import Examples**</span></span>](drm-import-examples.md)
+[<span data-ttu-id="17f14-129">**Exemplos de importação de DRM**</span><span class="sxs-lookup"><span data-stu-id="17f14-129">**DRM Import Examples**</span></span>](drm-import-examples.md)
 </dt> </dl>
 
  

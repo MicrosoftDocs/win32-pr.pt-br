@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636650"
 ---
-# <a name="simple-types"></a><span data-ttu-id="afdea-103">Tipos simples</span><span class="sxs-lookup"><span data-stu-id="afdea-103">Simple Types</span></span>
+# <a name="simple-types"></a><span data-ttu-id="cf35f-103">Tipos simples</span><span class="sxs-lookup"><span data-stu-id="cf35f-103">Simple Types</span></span>
 
-<span data-ttu-id="afdea-104">Todos os tipos simples são representados por um único caractere de formato que indica o tipo por seu nome.</span><span class="sxs-lookup"><span data-stu-id="afdea-104">All simple types are represented by a single format character indicating the type by its name.</span></span> <span data-ttu-id="afdea-105">Isso inclui todos os tipos numéricos e outros tipos de IDL especiais.</span><span class="sxs-lookup"><span data-stu-id="afdea-105">This includes all the numerical types and some other special IDL types.</span></span> <span data-ttu-id="afdea-106">A lista é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="afdea-106">The list is as follows:</span></span>
+<span data-ttu-id="cf35f-104">Todos os tipos simples são representados por um único caractere de formato que indica o tipo por seu nome.</span><span class="sxs-lookup"><span data-stu-id="cf35f-104">All simple types are represented by a single format character indicating the type by its name.</span></span> <span data-ttu-id="cf35f-105">Isso inclui todos os tipos numéricos e outros tipos de IDL especiais.</span><span class="sxs-lookup"><span data-stu-id="cf35f-105">This includes all the numerical types and some other special IDL types.</span></span> <span data-ttu-id="cf35f-106">A lista é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="cf35f-106">The list is as follows:</span></span>
 
 ``` syntax
 FC_BYTE,                    // 0x01
@@ -35,9 +35,9 @@ FC_INT3264,                 // 0xb8
 FC_UINT3264,                // 0xb9
 ```
 
-<span data-ttu-id="afdea-107">Os tipos SMALL, WCHAR, HYPER, \_ status \_ de erro T, \_ \_ INT3264 são intrínsecos a MIDL com interpretações de RPC especiais.</span><span class="sxs-lookup"><span data-stu-id="afdea-107">The SMALL, WCHAR, HYPER, ERROR\_STATUS\_T, \_\_INT3264 types are MIDL intrinsics with special RPC interpretations.</span></span> <span data-ttu-id="afdea-108">Os tipos INT e \_ \_ Int32 mapeiam para FC \_ longo, não assinados int e não assinados para o mapa \_ \_ INT32 para o FC \_ ULong, \_ \_ Int64 e \_ \_ para o mapa Int64 não assinado para FC \_ Hyper.</span><span class="sxs-lookup"><span data-stu-id="afdea-108">The INT and \_\_INT32 types map to FC\_LONG, unsigned INT and unsigned \_\_INT32 map to FC\_ULONG, \_\_INT64 and unsigned \_\_INT64 map to FC\_HYPER.</span></span>
+<span data-ttu-id="cf35f-107">Os tipos SMALL, WCHAR, HYPER, \_ status \_ de erro T, \_ \_ INT3264 são intrínsecos a MIDL com interpretações de RPC especiais.</span><span class="sxs-lookup"><span data-stu-id="cf35f-107">The SMALL, WCHAR, HYPER, ERROR\_STATUS\_T, \_\_INT3264 types are MIDL intrinsics with special RPC interpretations.</span></span> <span data-ttu-id="cf35f-108">Os tipos INT e \_ \_ Int32 mapeiam para FC \_ longo, não assinados int e não assinados para o mapa \_ \_ INT32 para o FC \_ ULong, \_ \_ Int64 e \_ \_ para o mapa Int64 não assinado para FC \_ Hyper.</span><span class="sxs-lookup"><span data-stu-id="cf35f-108">The INT and \_\_INT32 types map to FC\_LONG, unsigned INT and unsigned \_\_INT32 map to FC\_ULONG, \_\_INT64 and unsigned \_\_INT64 map to FC\_HYPER.</span></span>
 
-<span data-ttu-id="afdea-109">Os \_ \_ tipos INT128, FLOAT128 e FLOAT80 não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="afdea-109">The \_\_INT128, FLOAT128, and FLOAT80 types are not supported.</span></span>
+<span data-ttu-id="cf35f-109">Os \_ \_ tipos INT128, FLOAT128 e FLOAT80 não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="cf35f-109">The \_\_INT128, FLOAT128, and FLOAT80 types are not supported.</span></span>
 
  
 

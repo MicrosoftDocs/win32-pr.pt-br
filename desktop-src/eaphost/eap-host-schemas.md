@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "104006944"
 ---
-# <a name="eaphost-and-legacy-schema-samples"></a><span data-ttu-id="6232a-103">EAPHost e exemplos de esquema herdados</span><span class="sxs-lookup"><span data-stu-id="6232a-103">EAPHost and Legacy Schema Samples</span></span>
+# <a name="eaphost-and-legacy-schema-samples"></a><span data-ttu-id="4644f-103">EAPHost e exemplos de esquema herdados</span><span class="sxs-lookup"><span data-stu-id="4644f-103">EAPHost and Legacy Schema Samples</span></span>
 
-<span data-ttu-id="6232a-104">O esquema XML é usado ao escrever aplicativos que chamam ou implementam elementos da API do EAPHost.</span><span class="sxs-lookup"><span data-stu-id="6232a-104">XML schema are used when writing applications that call or implement EAPHost API elements.</span></span>
+<span data-ttu-id="4644f-104">O esquema XML é usado ao escrever aplicativos que chamam ou implementam elementos da API do EAPHost.</span><span class="sxs-lookup"><span data-stu-id="4644f-104">XML schema are used when writing applications that call or implement EAPHost API elements.</span></span>
 
-<span data-ttu-id="6232a-105">Há dois grupos diferentes de exemplos de esquema fornecidos aqui.</span><span class="sxs-lookup"><span data-stu-id="6232a-105">There are two different groups of schema samples provided here.</span></span>
+<span data-ttu-id="4644f-105">Há dois grupos diferentes de exemplos de esquema fornecidos aqui.</span><span class="sxs-lookup"><span data-stu-id="4644f-105">There are two different groups of schema samples provided here.</span></span>
 
--   [<span data-ttu-id="6232a-106">Propriedades da conexão</span><span class="sxs-lookup"><span data-stu-id="6232a-106">Connection Properties</span></span>](connection-profiles.md)
--   [<span data-ttu-id="6232a-107">Propriedades do usuário</span><span class="sxs-lookup"><span data-stu-id="6232a-107">User Properties</span></span>](user-profiles.md)
+-   [<span data-ttu-id="4644f-106">Propriedades da conexão</span><span class="sxs-lookup"><span data-stu-id="4644f-106">Connection Properties</span></span>](connection-profiles.md)
+-   [<span data-ttu-id="4644f-107">Propriedades do Usuário</span><span class="sxs-lookup"><span data-stu-id="4644f-107">User Properties</span></span>](user-profiles.md)
 
  
 
