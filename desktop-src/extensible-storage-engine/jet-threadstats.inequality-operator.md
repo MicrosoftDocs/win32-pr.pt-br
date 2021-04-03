@@ -32,14 +32,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829608"
 ---
-# <a name="jet_threadstatsinequality-operator"></a><span data-ttu-id="0ab70-103">JET_THREADSTATS. Operador de desigualdade</span><span class="sxs-lookup"><span data-stu-id="0ab70-103">JET_THREADSTATS.Inequality operator</span></span>
+# <a name="jet_threadstatsinequality-operator"></a><span data-ttu-id="d9529-103">JET_THREADSTATS. Operador de desigualdade</span><span class="sxs-lookup"><span data-stu-id="d9529-103">JET_THREADSTATS.Inequality operator</span></span>
 
-<span data-ttu-id="0ab70-104">Determina se duas instâncias especificadas do JET_THREADSTATS não são iguais.</span><span class="sxs-lookup"><span data-stu-id="0ab70-104">Determines whether two specified instances of JET_THREADSTATS are not equal.</span></span>
+<span data-ttu-id="d9529-104">Determina se duas instâncias especificadas do JET_THREADSTATS não são iguais.</span><span class="sxs-lookup"><span data-stu-id="d9529-104">Determines whether two specified instances of JET_THREADSTATS are not equal.</span></span>
 
-<span data-ttu-id="0ab70-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0ab70-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="0ab70-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0ab70-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="d9529-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d9529-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="d9529-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d9529-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0ab70-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0ab70-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d9529-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d9529-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -62,31 +62,31 @@ public static bool operator !=(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="0ab70-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="0ab70-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="d9529-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d9529-108">Parameters</span></span>
 
-  - <span data-ttu-id="0ab70-109">lhs</span><span class="sxs-lookup"><span data-stu-id="0ab70-109">lhs</span></span>  
-    <span data-ttu-id="0ab70-110">Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="0ab70-110">Type: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span></span>  
+  - <span data-ttu-id="d9529-109">lhs</span><span class="sxs-lookup"><span data-stu-id="d9529-109">lhs</span></span>  
+    <span data-ttu-id="d9529-110">Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="d9529-110">Type: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span></span>  
     
-    <span data-ttu-id="0ab70-111">A primeira instância a ser comparada.</span><span class="sxs-lookup"><span data-stu-id="0ab70-111">The first instance to compare.</span></span>
+    <span data-ttu-id="d9529-111">A primeira instância a ser comparada.</span><span class="sxs-lookup"><span data-stu-id="d9529-111">The first instance to compare.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="0ab70-112">rhs</span><span class="sxs-lookup"><span data-stu-id="0ab70-112">rhs</span></span>  
-    <span data-ttu-id="0ab70-113">Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="0ab70-113">Type: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span></span>  
+  - <span data-ttu-id="d9529-112">rhs</span><span class="sxs-lookup"><span data-stu-id="d9529-112">rhs</span></span>  
+    <span data-ttu-id="d9529-113">Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span><span class="sxs-lookup"><span data-stu-id="d9529-113">Type: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)</span></span>  
     
-    <span data-ttu-id="0ab70-114">A segunda instância a ser comparada.</span><span class="sxs-lookup"><span data-stu-id="0ab70-114">The second instance to compare.</span></span>
+    <span data-ttu-id="d9529-114">A segunda instância a ser comparada.</span><span class="sxs-lookup"><span data-stu-id="d9529-114">The second instance to compare.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="0ab70-115">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="0ab70-115">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="d9529-115">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d9529-115">Return value</span></span>
 
-<span data-ttu-id="0ab70-116">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="0ab70-116">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
-<span data-ttu-id="0ab70-117">True se as duas instâncias não forem iguais.</span><span class="sxs-lookup"><span data-stu-id="0ab70-117">True if the two instances are not equal.</span></span>  
+<span data-ttu-id="d9529-116">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="d9529-116">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
+<span data-ttu-id="d9529-117">True se as duas instâncias não forem iguais.</span><span class="sxs-lookup"><span data-stu-id="d9529-117">True if the two instances are not equal.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="0ab70-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="0ab70-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d9529-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="d9529-118">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="0ab70-119">Referência</span><span class="sxs-lookup"><span data-stu-id="0ab70-119">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="d9529-119">Referência</span><span class="sxs-lookup"><span data-stu-id="d9529-119">Reference</span></span>
 
-[<span data-ttu-id="0ab70-120">Estrutura de JET_THREADSTATS</span><span class="sxs-lookup"><span data-stu-id="0ab70-120">JET_THREADSTATS structure</span></span>](./jet-threadstats-structure2.md)
+[<span data-ttu-id="d9529-120">Estrutura de JET_THREADSTATS</span><span class="sxs-lookup"><span data-stu-id="d9529-120">JET_THREADSTATS structure</span></span>](./jet-threadstats-structure2.md)
 
-[<span data-ttu-id="0ab70-121">Membros do JET_THREADSTATS</span><span class="sxs-lookup"><span data-stu-id="0ab70-121">JET_THREADSTATS members</span></span>](./jet-threadstats-members.md)
+[<span data-ttu-id="d9529-121">Membros do JET_THREADSTATS</span><span class="sxs-lookup"><span data-stu-id="d9529-121">JET_THREADSTATS members</span></span>](./jet-threadstats-members.md)
 
-[<span data-ttu-id="0ab70-122">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="0ab70-122">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="d9529-122">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="d9529-122">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

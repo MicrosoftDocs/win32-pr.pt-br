@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636312"
 ---
-# <a name="cc-code-example-retrieving-trigger-strings"></a><span data-ttu-id="405df-103">Exemplo de código C/C++: Recuperando cadeias de caracteres de gatilho</span><span class="sxs-lookup"><span data-stu-id="405df-103">C/C++ Code Example: Retrieving Trigger Strings</span></span>
+# <a name="cc-code-example-retrieving-trigger-strings"></a><span data-ttu-id="44c43-103">Exemplo de código C/C++: Recuperando cadeias de caracteres de gatilho</span><span class="sxs-lookup"><span data-stu-id="44c43-103">C/C++ Code Example: Retrieving Trigger Strings</span></span>
 
-<span data-ttu-id="405df-104">Este exemplo recupera uma cadeia de caracteres de gatilho para todos os gatilhos associados a uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="405df-104">This example retrieves a trigger string for all the triggers associated with a known task.</span></span>
+<span data-ttu-id="44c43-104">Este exemplo recupera uma cadeia de caracteres de gatilho para todos os gatilhos associados a uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="44c43-104">This example retrieves a trigger string for all the triggers associated with a known task.</span></span>
 
 
 ```C++
@@ -134,11 +134,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="405df-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="405df-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="44c43-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="44c43-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="405df-106">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="405df-106">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="44c43-106">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="44c43-106">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

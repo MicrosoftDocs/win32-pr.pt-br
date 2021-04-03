@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104091763"
 ---
-# <a name="iscardauth-methods"></a><span data-ttu-id="24895-103">Métodos ISCardAuth</span><span class="sxs-lookup"><span data-stu-id="24895-103">ISCardAuth Methods</span></span>
+# <a name="iscardauth-methods"></a><span data-ttu-id="32f0e-103">Métodos ISCardAuth</span><span class="sxs-lookup"><span data-stu-id="32f0e-103">ISCardAuth Methods</span></span>
 
-<span data-ttu-id="24895-104">A interface [**ISCardAuth**](iscardauth.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="24895-104">The [**ISCardAuth**](iscardauth.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="32f0e-104">A interface [**ISCardAuth**](iscardauth.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="32f0e-104">The [**ISCardAuth**](iscardauth.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="24895-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="24895-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="32f0e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="32f0e-105">In this section</span></span>
 
--   [<span data-ttu-id="24895-106">**Método de autenticação de aplicativo \_**</span><span class="sxs-lookup"><span data-stu-id="24895-106">**APP\_Auth Method**</span></span>](iscardauth-app-auth.md)
--   [<span data-ttu-id="24895-107">**Método getchallenge**</span><span class="sxs-lookup"><span data-stu-id="24895-107">**GetChallenge Method**</span></span>](iscardauth-getchallenge.md)
--   [<span data-ttu-id="24895-108">**\_Método de autenticação ICC**</span><span class="sxs-lookup"><span data-stu-id="24895-108">**ICC\_Auth Method**</span></span>](iscardauth-icc-auth.md)
--   [<span data-ttu-id="24895-109">**Método de autenticação do usuário \_**</span><span class="sxs-lookup"><span data-stu-id="24895-109">**User\_Auth Method**</span></span>](iscardauth-user-auth.md)
+-   [<span data-ttu-id="32f0e-106">**Método de autenticação de aplicativo \_**</span><span class="sxs-lookup"><span data-stu-id="32f0e-106">**APP\_Auth Method**</span></span>](iscardauth-app-auth.md)
+-   [<span data-ttu-id="32f0e-107">**Método getchallenge**</span><span class="sxs-lookup"><span data-stu-id="32f0e-107">**GetChallenge Method**</span></span>](iscardauth-getchallenge.md)
+-   [<span data-ttu-id="32f0e-108">**\_Método de autenticação ICC**</span><span class="sxs-lookup"><span data-stu-id="32f0e-108">**ICC\_Auth Method**</span></span>](iscardauth-icc-auth.md)
+-   [<span data-ttu-id="32f0e-109">**Método de autenticação do usuário \_**</span><span class="sxs-lookup"><span data-stu-id="32f0e-109">**User\_Auth Method**</span></span>](iscardauth-user-auth.md)
 
  
 

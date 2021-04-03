@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103663987"
 ---
-# <a name="id3dxrendertosurfaceendscene-method"></a><span data-ttu-id="7b425-103">Método ID3DXRenderToSurface:: EndScene</span><span class="sxs-lookup"><span data-stu-id="7b425-103">ID3DXRenderToSurface::EndScene method</span></span>
+# <a name="id3dxrendertosurfaceendscene-method"></a><span data-ttu-id="f68e0-103">Método ID3DXRenderToSurface:: EndScene</span><span class="sxs-lookup"><span data-stu-id="f68e0-103">ID3DXRenderToSurface::EndScene method</span></span>
 
-<span data-ttu-id="7b425-104">Encerra uma cena.</span><span class="sxs-lookup"><span data-stu-id="7b425-104">Ends a scene.</span></span>
+<span data-ttu-id="f68e0-104">Encerra uma cena.</span><span class="sxs-lookup"><span data-stu-id="f68e0-104">Ends a scene.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7b425-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7b425-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f68e0-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f68e0-105">Syntax</span></span>
 
 
 ```C++
@@ -36,44 +36,44 @@ HRESULT EndScene(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="7b425-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7b425-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f68e0-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f68e0-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="7b425-107">*MipFilter* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7b425-107">*MipFilter* \[in\]</span></span>
+<span data-ttu-id="f68e0-107">*MipFilter* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="f68e0-107">*MipFilter* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7b425-108">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7b425-108">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="f68e0-108">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="f68e0-108">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="7b425-109">Opções de filtro, enumeradas [no \_ filtro D3DX](d3dx-filter.md).</span><span class="sxs-lookup"><span data-stu-id="7b425-109">Filter options, enumerated in [D3DX\_FILTER](d3dx-filter.md).</span></span>
+<span data-ttu-id="f68e0-109">Opções de filtro, enumeradas [no \_ filtro D3DX](d3dx-filter.md).</span><span class="sxs-lookup"><span data-stu-id="f68e0-109">Filter options, enumerated in [D3DX\_FILTER](d3dx-filter.md).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="7b425-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7b425-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f68e0-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="f68e0-110">Return value</span></span>
 
-<span data-ttu-id="7b425-111">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="7b425-111">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="f68e0-111">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="f68e0-111">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="7b425-112">Se o método for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="7b425-112">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="7b425-113">Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.</span><span class="sxs-lookup"><span data-stu-id="7b425-113">If the method fails, the return value can be one of the following: D3DERR\_INVALIDCALL, D3DXERR\_INVALIDDATA.</span></span>
+<span data-ttu-id="f68e0-112">Se o método for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="f68e0-112">If the method succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="f68e0-113">Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.</span><span class="sxs-lookup"><span data-stu-id="f68e0-113">If the method fails, the return value can be one of the following: D3DERR\_INVALIDCALL, D3DXERR\_INVALIDDATA.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7b425-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7b425-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="f68e0-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f68e0-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7b425-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="7b425-115">Requirement</span></span> | <span data-ttu-id="7b425-116">Valor</span><span class="sxs-lookup"><span data-stu-id="7b425-116">Value</span></span> |
+| <span data-ttu-id="f68e0-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="f68e0-115">Requirement</span></span> | <span data-ttu-id="f68e0-116">Valor</span><span class="sxs-lookup"><span data-stu-id="f68e0-116">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="7b425-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7b425-117">Header</span></span><br/>  | <dl> <span data-ttu-id="7b425-118"><dt>D3dx9core. h</dt></span><span class="sxs-lookup"><span data-stu-id="7b425-118"><dt>D3dx9core.h</dt></span></span> </dl> |
-| <span data-ttu-id="7b425-119">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="7b425-119">Library</span></span><br/> | <dl> <span data-ttu-id="7b425-120"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="7b425-120"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="f68e0-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f68e0-117">Header</span></span><br/>  | <dl> <span data-ttu-id="f68e0-118"><dt>D3dx9core. h</dt></span><span class="sxs-lookup"><span data-stu-id="f68e0-118"><dt>D3dx9core.h</dt></span></span> </dl> |
+| <span data-ttu-id="f68e0-119">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="f68e0-119">Library</span></span><br/> | <dl> <span data-ttu-id="f68e0-120"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="f68e0-120"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7b425-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="7b425-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f68e0-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="f68e0-121">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7b425-122">ID3DXRenderToSurface</span><span class="sxs-lookup"><span data-stu-id="7b425-122">ID3DXRenderToSurface</span></span>](id3dxrendertosurface.md)
+[<span data-ttu-id="f68e0-122">ID3DXRenderToSurface</span><span class="sxs-lookup"><span data-stu-id="f68e0-122">ID3DXRenderToSurface</span></span>](id3dxrendertosurface.md)
 </dt> <dt>
 
-[<span data-ttu-id="7b425-123">**ID3DXRenderToSurface::BeginScene**</span><span class="sxs-lookup"><span data-stu-id="7b425-123">**ID3DXRenderToSurface::BeginScene**</span></span>](id3dxrendertosurface--beginscene.md)
+[<span data-ttu-id="f68e0-123">**ID3DXRenderToSurface::BeginScene**</span><span class="sxs-lookup"><span data-stu-id="f68e0-123">**ID3DXRenderToSurface::BeginScene**</span></span>](id3dxrendertosurface--beginscene.md)
 </dt> </dl>
 
  

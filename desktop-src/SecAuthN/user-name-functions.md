@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829449"
 ---
-# <a name="user-name-functions"></a><span data-ttu-id="849c6-104">Funções de nome de usuário</span><span class="sxs-lookup"><span data-stu-id="849c6-104">User Name Functions</span></span>
+# <a name="user-name-functions"></a><span data-ttu-id="493e7-104">Funções de nome de usuário</span><span class="sxs-lookup"><span data-stu-id="493e7-104">User Name Functions</span></span>
 
-<span data-ttu-id="849c6-105">As funções de nome de usuário incluem uma única função, [**NPGetUser**](/windows/desktop/api/Npapi/nf-npapi-npgetuser).</span><span class="sxs-lookup"><span data-stu-id="849c6-105">User name functions include a single function, [**NPGetUser**](/windows/desktop/api/Npapi/nf-npapi-npgetuser).</span></span> <span data-ttu-id="849c6-106">Essa função recupera o nome de usuário padrão atual ou o nome de usuário usado para estabelecer a conexão de rede.</span><span class="sxs-lookup"><span data-stu-id="849c6-106">This function retrieves either the current default user name or the user name used to establish the network connection.</span></span>
+<span data-ttu-id="493e7-105">As funções de nome de usuário incluem uma única função, [**NPGetUser**](/windows/desktop/api/Npapi/nf-npapi-npgetuser).</span><span class="sxs-lookup"><span data-stu-id="493e7-105">User name functions include a single function, [**NPGetUser**](/windows/desktop/api/Npapi/nf-npapi-npgetuser).</span></span> <span data-ttu-id="493e7-106">Essa função recupera o nome de usuário padrão atual ou o nome de usuário usado para estabelecer a conexão de rede.</span><span class="sxs-lookup"><span data-stu-id="493e7-106">This function retrieves either the current default user name or the user name used to establish the network connection.</span></span>
 
  
 

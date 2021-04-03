@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829663"
 ---
-# <a name="sslgetproviderproperty-function"></a><span data-ttu-id="b24ec-103">Função SslGetProviderProperty</span><span class="sxs-lookup"><span data-stu-id="b24ec-103">SslGetProviderProperty function</span></span>
+# <a name="sslgetproviderproperty-function"></a><span data-ttu-id="a2cea-103">Função SslGetProviderProperty</span><span class="sxs-lookup"><span data-stu-id="a2cea-103">SslGetProviderProperty function</span></span>
 
-<span data-ttu-id="b24ec-104">A função **SslGetProviderProperty** recupera o valor de uma propriedade de provedor especificada.</span><span class="sxs-lookup"><span data-stu-id="b24ec-104">The **SslGetProviderProperty** function retrieves the value of a specified provider property.</span></span>
+<span data-ttu-id="a2cea-104">A função **SslGetProviderProperty** recupera o valor de uma propriedade de provedor especificada.</span><span class="sxs-lookup"><span data-stu-id="a2cea-104">The **SslGetProviderProperty** function retrieves the value of a specified provider property.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b24ec-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b24ec-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a2cea-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a2cea-105">Syntax</span></span>
 
 
 ```C++
@@ -40,86 +40,86 @@ SECURITY_STATUS WINAPI SslGetProviderProperty(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="b24ec-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b24ec-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a2cea-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a2cea-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b24ec-107">*hSslProvider* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-107">*hSslProvider* \[in\]</span></span>
+<span data-ttu-id="a2cea-107">*hSslProvider* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-107">*hSslProvider* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-108">O identificador do provedor de [*protocolo de protocolo SSL*](/windows/desktop/SecGloss/s-gly) (SSL) para o qual recuperar a propriedade.</span><span class="sxs-lookup"><span data-stu-id="b24ec-108">The handle of the [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL) provider for which to retrieve the property.</span></span>
+<span data-ttu-id="a2cea-108">O identificador do provedor de [*protocolo de protocolo SSL*](/windows/desktop/SecGloss/s-gly) (SSL) para o qual recuperar a propriedade.</span><span class="sxs-lookup"><span data-stu-id="a2cea-108">The handle of the [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL) provider for which to retrieve the property.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b24ec-109">*pszProperty* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-109">*pszProperty* \[in\]</span></span>
+<span data-ttu-id="a2cea-109">*pszProperty* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-109">*pszProperty* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-110">Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome da propriedade a ser recuperada.</span><span class="sxs-lookup"><span data-stu-id="b24ec-110">A pointer to a null-terminated Unicode string that contains the name of the property to retrieve.</span></span>
+<span data-ttu-id="a2cea-110">Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome da propriedade a ser recuperada.</span><span class="sxs-lookup"><span data-stu-id="a2cea-110">A pointer to a null-terminated Unicode string that contains the name of the property to retrieve.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b24ec-111">*ppbOutput* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-111">*ppbOutput* \[out\]</span></span>
+<span data-ttu-id="a2cea-111">*ppbOutput* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-111">*ppbOutput* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-112">O endereço de um buffer que recebe o valor da propriedade.</span><span class="sxs-lookup"><span data-stu-id="b24ec-112">The address of a buffer that receives the property value.</span></span>
+<span data-ttu-id="a2cea-112">O endereço de um buffer que recebe o valor da propriedade.</span><span class="sxs-lookup"><span data-stu-id="a2cea-112">The address of a buffer that receives the property value.</span></span>
 
-<span data-ttu-id="b24ec-113">O chamador da função deve liberar esse buffer chamando a função [**SslFreeBuffer**](sslfreebuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="b24ec-113">The caller of the function must free this buffer by calling the [**SslFreeBuffer**](sslfreebuffer.md) function.</span></span>
+<span data-ttu-id="a2cea-113">O chamador da função deve liberar esse buffer chamando a função [**SslFreeBuffer**](sslfreebuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="a2cea-113">The caller of the function must free this buffer by calling the [**SslFreeBuffer**](sslfreebuffer.md) function.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b24ec-114">*pcbOutput* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-114">*pcbOutput* \[out\]</span></span>
+<span data-ttu-id="a2cea-114">*pcbOutput* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-114">*pcbOutput* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-115">O tamanho, em bytes, do buffer *pbOutput* .</span><span class="sxs-lookup"><span data-stu-id="b24ec-115">The size, in bytes, of the *pbOutput* buffer.</span></span>
+<span data-ttu-id="a2cea-115">O tamanho, em bytes, do buffer *pbOutput* .</span><span class="sxs-lookup"><span data-stu-id="a2cea-115">The size, in bytes, of the *pbOutput* buffer.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b24ec-116">*ppEnumState* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-116">*ppEnumState* \[in, out\]</span></span>
+<span data-ttu-id="a2cea-116">*ppEnumState* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-116">*ppEnumState* \[in, out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-117">O endereço de um ponteiro **void** que recebe informações de estado de enumeração que são usadas em chamadas subsequentes para essa função.</span><span class="sxs-lookup"><span data-stu-id="b24ec-117">The address of a **VOID** pointer that receives enumeration state information that is used in subsequent calls to this function.</span></span> <span data-ttu-id="b24ec-118">Essas informações só têm significado para o provedor SSL e são opacas para o chamador.</span><span class="sxs-lookup"><span data-stu-id="b24ec-118">This information only has meaning to the SSL provider and is opaque to the caller.</span></span> <span data-ttu-id="b24ec-119">O provedor SSL usa essas informações para determinar qual item está em seguida na enumeração.</span><span class="sxs-lookup"><span data-stu-id="b24ec-119">The SSL provider uses this information to determine which item is next in the enumeration.</span></span> <span data-ttu-id="b24ec-120">Se a variável apontada por esse parâmetro contiver **NULL**, a enumeração será iniciada desde o início.</span><span class="sxs-lookup"><span data-stu-id="b24ec-120">If the variable pointed to by this parameter contains **NULL**, the enumeration is started from the beginning.</span></span>
+<span data-ttu-id="a2cea-117">O endereço de um ponteiro **void** que recebe informações de estado de enumeração que são usadas em chamadas subsequentes para essa função.</span><span class="sxs-lookup"><span data-stu-id="a2cea-117">The address of a **VOID** pointer that receives enumeration state information that is used in subsequent calls to this function.</span></span> <span data-ttu-id="a2cea-118">Essas informações só têm significado para o provedor SSL e são opacas para o chamador.</span><span class="sxs-lookup"><span data-stu-id="a2cea-118">This information only has meaning to the SSL provider and is opaque to the caller.</span></span> <span data-ttu-id="a2cea-119">O provedor SSL usa essas informações para determinar qual item está em seguida na enumeração.</span><span class="sxs-lookup"><span data-stu-id="a2cea-119">The SSL provider uses this information to determine which item is next in the enumeration.</span></span> <span data-ttu-id="a2cea-120">Se a variável apontada por esse parâmetro contiver **NULL**, a enumeração será iniciada desde o início.</span><span class="sxs-lookup"><span data-stu-id="a2cea-120">If the variable pointed to by this parameter contains **NULL**, the enumeration is started from the beginning.</span></span>
 
-<span data-ttu-id="b24ec-121">O chamador da função deve liberar essa memória chamando a função [**SslFreeBuffer**](sslfreebuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="b24ec-121">The caller of the function must free this memory by calling the [**SslFreeBuffer**](sslfreebuffer.md) function.</span></span>
+<span data-ttu-id="a2cea-121">O chamador da função deve liberar essa memória chamando a função [**SslFreeBuffer**](sslfreebuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="a2cea-121">The caller of the function must free this memory by calling the [**SslFreeBuffer**](sslfreebuffer.md) function.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b24ec-122">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-122">*dwFlags* \[in\]</span></span>
+<span data-ttu-id="a2cea-122">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-122">*dwFlags* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b24ec-123">Esse parâmetro é reservado para uso futuro.</span><span class="sxs-lookup"><span data-stu-id="b24ec-123">This parameter is reserved for future use.</span></span>
+<span data-ttu-id="a2cea-123">Esse parâmetro é reservado para uso futuro.</span><span class="sxs-lookup"><span data-stu-id="a2cea-123">This parameter is reserved for future use.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="b24ec-124">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b24ec-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a2cea-124">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="a2cea-124">Return value</span></span>
 
-<span data-ttu-id="b24ec-125">Se a função for realizada com sucesso, ela retornará zero.</span><span class="sxs-lookup"><span data-stu-id="b24ec-125">If the function succeeds, it returns zero.</span></span>
+<span data-ttu-id="a2cea-125">Se a função for realizada com sucesso, ela retornará zero.</span><span class="sxs-lookup"><span data-stu-id="a2cea-125">If the function succeeds, it returns zero.</span></span>
 
-<span data-ttu-id="b24ec-126">Se a função falhar, ela retornará um valor de erro diferente de zero.</span><span class="sxs-lookup"><span data-stu-id="b24ec-126">If the function fails, it returns a nonzero error value.</span></span>
+<span data-ttu-id="a2cea-126">Se a função falhar, ela retornará um valor de erro diferente de zero.</span><span class="sxs-lookup"><span data-stu-id="a2cea-126">If the function fails, it returns a nonzero error value.</span></span>
 
-<span data-ttu-id="b24ec-127">Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.</span><span class="sxs-lookup"><span data-stu-id="b24ec-127">Possible return codes include, but are not limited to, the following.</span></span>
+<span data-ttu-id="a2cea-127">Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.</span><span class="sxs-lookup"><span data-stu-id="a2cea-127">Possible return codes include, but are not limited to, the following.</span></span>
 
 
 
-| <span data-ttu-id="b24ec-128">Código/valor de retorno</span><span class="sxs-lookup"><span data-stu-id="b24ec-128">Return code/value</span></span>                                                                                                                                                       | <span data-ttu-id="b24ec-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="b24ec-129">Description</span></span>                                                              |
+| <span data-ttu-id="a2cea-128">Código/valor de retorno</span><span class="sxs-lookup"><span data-stu-id="a2cea-128">Return code/value</span></span>                                                                                                                                                       | <span data-ttu-id="a2cea-129">Description</span><span class="sxs-lookup"><span data-stu-id="a2cea-129">Description</span></span>                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <span data-ttu-id="b24ec-130"><dt>**Nte \_ SEM \_**</dt> <dt>0x8009000EL</dt> de memória</span><span class="sxs-lookup"><span data-stu-id="b24ec-130"><dt>**NTE\_NO\_MEMORY**</dt> <dt>0x8009000EL</dt></span></span> </dl>         | <span data-ttu-id="b24ec-131">Não há memória suficiente disponível para alocar os buffers necessários.</span><span class="sxs-lookup"><span data-stu-id="b24ec-131">Not enough memory is available to allocate necessary buffers.</span></span><br/> |
-| <dl> <span data-ttu-id="b24ec-132"><dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt></span><span class="sxs-lookup"><span data-stu-id="b24ec-132"><dt>**NTE\_INVALID\_HANDLE**</dt> <dt>0x80090026L</dt></span></span> </dl>    | <span data-ttu-id="b24ec-133">O identificador *hSslProvider* não é válido.</span><span class="sxs-lookup"><span data-stu-id="b24ec-133">The *hSslProvider* handle is not valid.</span></span><br/>                       |
-| <dl> <span data-ttu-id="b24ec-134"><dt>**Nte \_ \_Parâmetro inválido**</dt> <dt>0x80090027L</dt></span><span class="sxs-lookup"><span data-stu-id="b24ec-134"><dt>**NTE\_INVALID\_PARAMETER**</dt> <dt>0x80090027L</dt></span></span> </dl> | <span data-ttu-id="b24ec-135">Um dos parâmetros fornecidos não é válido.</span><span class="sxs-lookup"><span data-stu-id="b24ec-135">One of the supplied parameters is not valid.</span></span><br/>                  |
+| <dl> <span data-ttu-id="a2cea-130"><dt>**Nte \_ SEM \_**</dt> <dt>0x8009000EL</dt> de memória</span><span class="sxs-lookup"><span data-stu-id="a2cea-130"><dt>**NTE\_NO\_MEMORY**</dt> <dt>0x8009000EL</dt></span></span> </dl>         | <span data-ttu-id="a2cea-131">Não há memória suficiente disponível para alocar os buffers necessários.</span><span class="sxs-lookup"><span data-stu-id="a2cea-131">Not enough memory is available to allocate necessary buffers.</span></span><br/> |
+| <dl> <span data-ttu-id="a2cea-132"><dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt></span><span class="sxs-lookup"><span data-stu-id="a2cea-132"><dt>**NTE\_INVALID\_HANDLE**</dt> <dt>0x80090026L</dt></span></span> </dl>    | <span data-ttu-id="a2cea-133">O identificador *hSslProvider* não é válido.</span><span class="sxs-lookup"><span data-stu-id="a2cea-133">The *hSslProvider* handle is not valid.</span></span><br/>                       |
+| <dl> <span data-ttu-id="a2cea-134"><dt>**Nte \_ \_Parâmetro inválido**</dt> <dt>0x80090027L</dt></span><span class="sxs-lookup"><span data-stu-id="a2cea-134"><dt>**NTE\_INVALID\_PARAMETER**</dt> <dt>0x80090027L</dt></span></span> </dl> | <span data-ttu-id="a2cea-135">Um dos parâmetros fornecidos não é válido.</span><span class="sxs-lookup"><span data-stu-id="a2cea-135">One of the supplied parameters is not valid.</span></span><br/>                  |
 
 
 
  
 
-## <a name="requirements"></a><span data-ttu-id="b24ec-136">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b24ec-136">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a2cea-136">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a2cea-136">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b24ec-137">Requisito</span><span class="sxs-lookup"><span data-stu-id="b24ec-137">Requirement</span></span> | <span data-ttu-id="b24ec-138">Valor</span><span class="sxs-lookup"><span data-stu-id="b24ec-138">Value</span></span> |
+| <span data-ttu-id="a2cea-137">Requisito</span><span class="sxs-lookup"><span data-stu-id="a2cea-137">Requirement</span></span> | <span data-ttu-id="a2cea-138">Valor</span><span class="sxs-lookup"><span data-stu-id="a2cea-138">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b24ec-139">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b24ec-139">Minimum supported client</span></span><br/> | <span data-ttu-id="b24ec-140">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-140">Windows Vista \[desktop apps only\]</span></span><br/>                                           |
-| <span data-ttu-id="b24ec-141">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b24ec-141">Minimum supported server</span></span><br/> | <span data-ttu-id="b24ec-142">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="b24ec-142">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                     |
-| <span data-ttu-id="b24ec-143">parâmetro</span><span class="sxs-lookup"><span data-stu-id="b24ec-143">Header</span></span><br/>                   | <dl> <span data-ttu-id="b24ec-144"><dt>Sslprovider. h</dt></span><span class="sxs-lookup"><span data-stu-id="b24ec-144"><dt>Sslprovider.h</dt></span></span> </dl> |
-| <span data-ttu-id="b24ec-145">DLL</span><span class="sxs-lookup"><span data-stu-id="b24ec-145">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b24ec-146"><dt>Ncrypt.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b24ec-146"><dt>Ncrypt.dll</dt></span></span> </dl>    |
+| <span data-ttu-id="a2cea-139">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a2cea-139">Minimum supported client</span></span><br/> | <span data-ttu-id="a2cea-140">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-140">Windows Vista \[desktop apps only\]</span></span><br/>                                           |
+| <span data-ttu-id="a2cea-141">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a2cea-141">Minimum supported server</span></span><br/> | <span data-ttu-id="a2cea-142">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="a2cea-142">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                     |
+| <span data-ttu-id="a2cea-143">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a2cea-143">Header</span></span><br/>                   | <dl> <span data-ttu-id="a2cea-144"><dt>Sslprovider. h</dt></span><span class="sxs-lookup"><span data-stu-id="a2cea-144"><dt>Sslprovider.h</dt></span></span> </dl> |
+| <span data-ttu-id="a2cea-145">DLL</span><span class="sxs-lookup"><span data-stu-id="a2cea-145">DLL</span></span><br/>                      | <dl> <span data-ttu-id="a2cea-146"><dt>Ncrypt.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a2cea-146"><dt>Ncrypt.dll</dt></span></span> </dl>    |
 
 
 

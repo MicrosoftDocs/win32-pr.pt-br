@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663488"
 ---
-# <a name="addmember-method-of-the-msvm_collectionmanagementservice-class"></a><span data-ttu-id="8ee80-103">Método AddMember da classe Msvm \_ CollectionManagementService</span><span class="sxs-lookup"><span data-stu-id="8ee80-103">AddMember method of the Msvm\_CollectionManagementService class</span></span>
+# <a name="addmember-method-of-the-msvm_collectionmanagementservice-class"></a><span data-ttu-id="bd8f8-103">Método AddMember da classe Msvm \_ CollectionManagementService</span><span class="sxs-lookup"><span data-stu-id="bd8f8-103">AddMember method of the Msvm\_CollectionManagementService class</span></span>
 
-<span data-ttu-id="8ee80-104">Adiciona o elemento gerenciado especificado como um membro do objeto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) fornecido.</span><span class="sxs-lookup"><span data-stu-id="8ee80-104">Adds the specified managed element as a member of the given [**CIM\_CollectionOfMSEs**](cim-collectionofmses.md) object.</span></span>
+<span data-ttu-id="bd8f8-104">Adiciona o elemento gerenciado especificado como um membro do objeto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) fornecido.</span><span class="sxs-lookup"><span data-stu-id="bd8f8-104">Adds the specified managed element as a member of the given [**CIM\_CollectionOfMSEs**](cim-collectionofmses.md) object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8ee80-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8ee80-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bd8f8-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bd8f8-105">Syntax</span></span>
 
 
 ```mof
@@ -37,98 +37,98 @@ uint32 AddMember(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8ee80-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8ee80-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bd8f8-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="bd8f8-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8ee80-107">*Membro* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="8ee80-107">*Member* \[in\]</span></span>
+<span data-ttu-id="bd8f8-107">*Membro* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="bd8f8-107">*Member* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8ee80-108">O membro a ser adicionado à coleção.</span><span class="sxs-lookup"><span data-stu-id="8ee80-108">The member to add to the collection.</span></span>
+<span data-ttu-id="bd8f8-108">O membro a ser adicionado à coleção.</span><span class="sxs-lookup"><span data-stu-id="bd8f8-108">The member to add to the collection.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8ee80-109">*Coleção* \[ de no\]</span><span class="sxs-lookup"><span data-stu-id="8ee80-109">*Collection* \[in\]</span></span>
+<span data-ttu-id="bd8f8-109">*Coleção* \[ de no\]</span><span class="sxs-lookup"><span data-stu-id="bd8f8-109">*Collection* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8ee80-110">A coleção à qual adicionar o membro.</span><span class="sxs-lookup"><span data-stu-id="8ee80-110">The collection to add the member to.</span></span>
+<span data-ttu-id="bd8f8-110">A coleção à qual adicionar o membro.</span><span class="sxs-lookup"><span data-stu-id="bd8f8-110">The collection to add the member to.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8ee80-111">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="8ee80-111">*Job* \[out\]</span></span>
+<span data-ttu-id="bd8f8-111">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="bd8f8-111">*Job* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8ee80-112">Uma referência ao trabalho (pode ser NULL se a tarefa for concluída).</span><span class="sxs-lookup"><span data-stu-id="8ee80-112">A reference to the job (can be null if the task is completed).</span></span>
+<span data-ttu-id="bd8f8-112">Uma referência ao trabalho (pode ser NULL se a tarefa for concluída).</span><span class="sxs-lookup"><span data-stu-id="bd8f8-112">A reference to the job (can be null if the task is completed).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="8ee80-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="8ee80-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bd8f8-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="bd8f8-113">Return value</span></span>
 
-<span data-ttu-id="8ee80-114">Retornará 0 se for bem-sucedido ou 4096 se o trabalho for iniciado; caso contrário, retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="8ee80-114">Returns 0 if successful, or 4096 if the job started; otherwise, returns an error.</span></span>
+<span data-ttu-id="bd8f8-114">Retornará 0 se for bem-sucedido ou 4096 se o trabalho for iniciado; caso contrário, retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="bd8f8-114">Returns 0 if successful, or 4096 if the job started; otherwise, returns an error.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8ee80-115">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="8ee80-115">**Completed with No Error** (0)</span></span>
+<span data-ttu-id="bd8f8-115">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-115">**Completed with No Error** (0)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-116">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="8ee80-116">**Method Parameters Checked - Job Started** (4096)</span></span>
+<span data-ttu-id="bd8f8-116">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-116">**Method Parameters Checked - Job Started** (4096)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-117">**Falha** (32768)</span><span class="sxs-lookup"><span data-stu-id="8ee80-117">**Failed** (32768)</span></span>
+<span data-ttu-id="bd8f8-117">**Falha** (32768)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-117">**Failed** (32768)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-118">**Acesso negado** (32769)</span><span class="sxs-lookup"><span data-stu-id="8ee80-118">**Access Denied** (32769)</span></span>
+<span data-ttu-id="bd8f8-118">**Acesso negado** (32769)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-118">**Access Denied** (32769)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-119">**Sem suporte** (32770)</span><span class="sxs-lookup"><span data-stu-id="8ee80-119">**Not Supported** (32770)</span></span>
+<span data-ttu-id="bd8f8-119">**Sem suporte** (32770)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-119">**Not Supported** (32770)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-120">O **status é desconhecido** (32771)</span><span class="sxs-lookup"><span data-stu-id="8ee80-120">**Status is unknown** (32771)</span></span>
+<span data-ttu-id="bd8f8-120">O **status é desconhecido** (32771)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-120">**Status is unknown** (32771)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-121">**Tempo limite** (32772)</span><span class="sxs-lookup"><span data-stu-id="8ee80-121">**Timeout** (32772)</span></span>
+<span data-ttu-id="bd8f8-121">**Tempo limite** (32772)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-121">**Timeout** (32772)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-122">**Parâmetro inválido** (32773)</span><span class="sxs-lookup"><span data-stu-id="8ee80-122">**Invalid parameter** (32773)</span></span>
+<span data-ttu-id="bd8f8-122">**Parâmetro inválido** (32773)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-122">**Invalid parameter** (32773)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-123">O **sistema está em uso** (32774)</span><span class="sxs-lookup"><span data-stu-id="8ee80-123">**System is in use** (32774)</span></span>
+<span data-ttu-id="bd8f8-123">O **sistema está em uso** (32774)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-123">**System is in use** (32774)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-124">**Estado inválido para esta operação** (32775)</span><span class="sxs-lookup"><span data-stu-id="8ee80-124">**Invalid state for this operation** (32775)</span></span>
+<span data-ttu-id="bd8f8-124">**Estado inválido para esta operação** (32775)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-124">**Invalid state for this operation** (32775)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-125">**Tipo de dados incorreto** (32776)</span><span class="sxs-lookup"><span data-stu-id="8ee80-125">**Incorrect data type** (32776)</span></span>
+<span data-ttu-id="bd8f8-125">**Tipo de dados incorreto** (32776)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-125">**Incorrect data type** (32776)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-126">O **sistema não está disponível** (32777)</span><span class="sxs-lookup"><span data-stu-id="8ee80-126">**System is not available** (32777)</span></span>
+<span data-ttu-id="bd8f8-126">O **sistema não está disponível** (32777)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-126">**System is not available** (32777)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-127">**Memória insuficiente** (32778)</span><span class="sxs-lookup"><span data-stu-id="8ee80-127">**Out of memory** (32778)</span></span>
+<span data-ttu-id="bd8f8-127">**Memória insuficiente** (32778)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-127">**Out of memory** (32778)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8ee80-128">**Arquivo não encontrado** (32779)</span><span class="sxs-lookup"><span data-stu-id="8ee80-128">**File not found** (32779)</span></span>
+<span data-ttu-id="bd8f8-128">**Arquivo não encontrado** (32779)</span><span class="sxs-lookup"><span data-stu-id="bd8f8-128">**File not found** (32779)</span></span>
 </dt> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="8ee80-129">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8ee80-129">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="bd8f8-129">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bd8f8-129">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8ee80-130">Requisito</span><span class="sxs-lookup"><span data-stu-id="8ee80-130">Requirement</span></span> | <span data-ttu-id="8ee80-131">Valor</span><span class="sxs-lookup"><span data-stu-id="8ee80-131">Value</span></span> |
+| <span data-ttu-id="bd8f8-130">Requisito</span><span class="sxs-lookup"><span data-stu-id="bd8f8-130">Requirement</span></span> | <span data-ttu-id="bd8f8-131">Valor</span><span class="sxs-lookup"><span data-stu-id="bd8f8-131">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8ee80-132">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8ee80-132">Minimum supported client</span></span><br/> | <span data-ttu-id="8ee80-133">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="8ee80-133">Windows 10 \[desktop apps only\]</span></span><br/>                                                             |
-| <span data-ttu-id="8ee80-134">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8ee80-134">Minimum supported server</span></span><br/> | <span data-ttu-id="8ee80-135">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="8ee80-135">Windows Server 2016</span></span><br/>                                                                          |
-| <span data-ttu-id="8ee80-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="8ee80-136">Namespace</span></span><br/>                | <span data-ttu-id="8ee80-137">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="8ee80-137">Root\\virtualization\\v2</span></span><br/>                                                                     |
-| <span data-ttu-id="8ee80-138">MOF</span><span class="sxs-lookup"><span data-stu-id="8ee80-138">MOF</span></span><br/>                      | <dl> <span data-ttu-id="8ee80-139"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="8ee80-139"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="8ee80-140">DLL</span><span class="sxs-lookup"><span data-stu-id="8ee80-140">DLL</span></span><br/>                      | <dl> <span data-ttu-id="8ee80-141"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="8ee80-141"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="bd8f8-132">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bd8f8-132">Minimum supported client</span></span><br/> | <span data-ttu-id="bd8f8-133">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="bd8f8-133">Windows 10 \[desktop apps only\]</span></span><br/>                                                             |
+| <span data-ttu-id="bd8f8-134">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bd8f8-134">Minimum supported server</span></span><br/> | <span data-ttu-id="bd8f8-135">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="bd8f8-135">Windows Server 2016</span></span><br/>                                                                          |
+| <span data-ttu-id="bd8f8-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="bd8f8-136">Namespace</span></span><br/>                | <span data-ttu-id="bd8f8-137">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="bd8f8-137">Root\\virtualization\\v2</span></span><br/>                                                                     |
+| <span data-ttu-id="bd8f8-138">MOF</span><span class="sxs-lookup"><span data-stu-id="bd8f8-138">MOF</span></span><br/>                      | <dl> <span data-ttu-id="bd8f8-139"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="bd8f8-139"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="bd8f8-140">DLL</span><span class="sxs-lookup"><span data-stu-id="bd8f8-140">DLL</span></span><br/>                      | <dl> <span data-ttu-id="bd8f8-141"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="bd8f8-141"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8ee80-142">Confira também</span><span class="sxs-lookup"><span data-stu-id="8ee80-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd8f8-142">Confira também</span><span class="sxs-lookup"><span data-stu-id="bd8f8-142">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8ee80-143">**Msvm \_ CollectionManagementService**</span><span class="sxs-lookup"><span data-stu-id="8ee80-143">**Msvm\_CollectionManagementService**</span></span>](msvm-collectionmanagementservice.md)
+[<span data-ttu-id="bd8f8-143">**Msvm \_ CollectionManagementService**</span><span class="sxs-lookup"><span data-stu-id="bd8f8-143">**Msvm\_CollectionManagementService**</span></span>](msvm-collectionmanagementservice.md)
 </dt> </dl>
 
  

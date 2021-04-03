@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663207"
 ---
-# <a name="monitor_info_2-structure"></a><span data-ttu-id="e0957-103">Estrutura de informações de MONITOR \_ \_ 2</span><span class="sxs-lookup"><span data-stu-id="e0957-103">MONITOR\_INFO\_2 structure</span></span>
+# <a name="monitor_info_2-structure"></a><span data-ttu-id="88211-103">Estrutura de informações de MONITOR \_ \_ 2</span><span class="sxs-lookup"><span data-stu-id="88211-103">MONITOR\_INFO\_2 structure</span></span>
 
-<span data-ttu-id="e0957-104">A **estrutura \_ informações \_ do monitor 2** identifica um monitor.</span><span class="sxs-lookup"><span data-stu-id="e0957-104">The **MONITOR\_INFO\_2** structure identifies a monitor.</span></span>
+<span data-ttu-id="88211-104">A **estrutura \_ informações \_ do monitor 2** identifica um monitor.</span><span class="sxs-lookup"><span data-stu-id="88211-104">The **MONITOR\_INFO\_2** structure identifies a monitor.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e0957-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e0957-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="88211-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="88211-105">Syntax</span></span>
 
 
 ```C++
@@ -39,61 +39,61 @@ typedef struct _MONITOR_INFO_2 {
 
 
 
-## <a name="members"></a><span data-ttu-id="e0957-106">Membros</span><span class="sxs-lookup"><span data-stu-id="e0957-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="88211-106">Membros</span><span class="sxs-lookup"><span data-stu-id="88211-106">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="e0957-107">**pName**</span><span class="sxs-lookup"><span data-stu-id="e0957-107">**pName**</span></span>
+<span data-ttu-id="88211-107">**pName**</span><span class="sxs-lookup"><span data-stu-id="88211-107">**pName**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e0957-108">Um ponteiro para uma cadeia de caracteres terminada em nulo que é o nome do monitor.</span><span class="sxs-lookup"><span data-stu-id="e0957-108">A pointer to a null-terminated string that is the name of the monitor.</span></span>
+<span data-ttu-id="88211-108">Um ponteiro para uma cadeia de caracteres terminada em nulo que é o nome do monitor.</span><span class="sxs-lookup"><span data-stu-id="88211-108">A pointer to a null-terminated string that is the name of the monitor.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e0957-109">**pEnvironment**</span><span class="sxs-lookup"><span data-stu-id="e0957-109">**pEnvironment**</span></span>
+<span data-ttu-id="88211-109">**pEnvironment**</span><span class="sxs-lookup"><span data-stu-id="88211-109">**pEnvironment**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e0957-110">Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o monitor foi gravado (por exemplo, Windows NT x86, Windows IA64, Windows x64).</span><span class="sxs-lookup"><span data-stu-id="e0957-110">A pointer to a null-terminated string that specifies the environment for which the monitor was written (for example, Windows NT x86, Windows IA64, Windows x64).</span></span>
+<span data-ttu-id="88211-110">Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o monitor foi gravado (por exemplo, Windows NT x86, Windows IA64, Windows x64).</span><span class="sxs-lookup"><span data-stu-id="88211-110">A pointer to a null-terminated string that specifies the environment for which the monitor was written (for example, Windows NT x86, Windows IA64, Windows x64).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e0957-111">**pDLLName**</span><span class="sxs-lookup"><span data-stu-id="e0957-111">**pDLLName**</span></span>
+<span data-ttu-id="88211-111">**pDLLName**</span><span class="sxs-lookup"><span data-stu-id="88211-111">**pDLLName**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e0957-112">Um ponteiro para uma cadeia de caracteres terminada em nulo que é o nome da DLL do monitor.</span><span class="sxs-lookup"><span data-stu-id="e0957-112">A pointer to a null-terminated string that is the name of the monitor DLL.</span></span>
+<span data-ttu-id="88211-112">Um ponteiro para uma cadeia de caracteres terminada em nulo que é o nome da DLL do monitor.</span><span class="sxs-lookup"><span data-stu-id="88211-112">A pointer to a null-terminated string that is the name of the monitor DLL.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="e0957-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e0957-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="88211-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="88211-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="e0957-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="e0957-114">Requirement</span></span> | <span data-ttu-id="e0957-115">Valor</span><span class="sxs-lookup"><span data-stu-id="e0957-115">Value</span></span> |
+| <span data-ttu-id="88211-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="88211-114">Requirement</span></span> | <span data-ttu-id="88211-115">Valor</span><span class="sxs-lookup"><span data-stu-id="88211-115">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="e0957-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e0957-116">Minimum supported client</span></span><br/> | <span data-ttu-id="e0957-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="e0957-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                                |
-| <span data-ttu-id="e0957-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e0957-118">Minimum supported server</span></span><br/> | <span data-ttu-id="e0957-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="e0957-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                      |
-| <span data-ttu-id="e0957-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e0957-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="e0957-121"><dt>Winspool. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="e0957-121"><dt>Winspool.h (include Windows.h)</dt></span></span> </dl> |
-| <span data-ttu-id="e0957-122">Nomes Unicode e ANSI</span><span class="sxs-lookup"><span data-stu-id="e0957-122">Unicode and ANSI names</span></span><br/>   | <span data-ttu-id="e0957-123">**\_ Monitor de \_ informações \_ 2W** (Unicode) e **\_ informações de monitor \_ \_ 2a** (ANSI)</span><span class="sxs-lookup"><span data-stu-id="e0957-123">**\_MONITOR\_INFO\_2W** (Unicode) and **\_MONITOR\_INFO\_2A** (ANSI)</span></span><br/>                           |
+| <span data-ttu-id="88211-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="88211-116">Minimum supported client</span></span><br/> | <span data-ttu-id="88211-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="88211-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                                |
+| <span data-ttu-id="88211-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="88211-118">Minimum supported server</span></span><br/> | <span data-ttu-id="88211-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="88211-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                      |
+| <span data-ttu-id="88211-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="88211-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="88211-121"><dt>Winspool. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="88211-121"><dt>Winspool.h (include Windows.h)</dt></span></span> </dl> |
+| <span data-ttu-id="88211-122">Nomes Unicode e ANSI</span><span class="sxs-lookup"><span data-stu-id="88211-122">Unicode and ANSI names</span></span><br/>   | <span data-ttu-id="88211-123">**\_ Monitor de \_ informações \_ 2W** (Unicode) e **\_ informações de monitor \_ \_ 2a** (ANSI)</span><span class="sxs-lookup"><span data-stu-id="88211-123">**\_MONITOR\_INFO\_2W** (Unicode) and **\_MONITOR\_INFO\_2A** (ANSI)</span></span><br/>                           |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="e0957-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="e0957-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88211-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="88211-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e0957-125">Impressão</span><span class="sxs-lookup"><span data-stu-id="e0957-125">Printing</span></span>](printdocs-printing.md)
+[<span data-ttu-id="88211-125">Impressão</span><span class="sxs-lookup"><span data-stu-id="88211-125">Printing</span></span>](printdocs-printing.md)
 </dt> <dt>
 
-[<span data-ttu-id="e0957-126">Estruturas de API do spooler de impressão</span><span class="sxs-lookup"><span data-stu-id="e0957-126">Print Spooler API Structures</span></span>](printing-and-print-spooler-structures.md)
+[<span data-ttu-id="88211-126">Estruturas de API do spooler de impressão</span><span class="sxs-lookup"><span data-stu-id="88211-126">Print Spooler API Structures</span></span>](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[<span data-ttu-id="e0957-127">**Addmonitor**</span><span class="sxs-lookup"><span data-stu-id="e0957-127">**AddMonitor**</span></span>](addmonitor.md)
+[<span data-ttu-id="88211-127">**Addmonitor**</span><span class="sxs-lookup"><span data-stu-id="88211-127">**AddMonitor**</span></span>](addmonitor.md)
 </dt> <dt>
 
-[<span data-ttu-id="e0957-128">**EnumMonitors**</span><span class="sxs-lookup"><span data-stu-id="e0957-128">**EnumMonitors**</span></span>](enummonitors.md)
+[<span data-ttu-id="88211-128">**EnumMonitors**</span><span class="sxs-lookup"><span data-stu-id="88211-128">**EnumMonitors**</span></span>](enummonitors.md)
 </dt> <dt>
 
-[<span data-ttu-id="e0957-129">**Informações do MONITOR \_ \_ 1**</span><span class="sxs-lookup"><span data-stu-id="e0957-129">**MONITOR\_INFO\_1**</span></span>](monitor-info-1.md)
+[<span data-ttu-id="88211-129">**Informações do MONITOR \_ \_ 1**</span><span class="sxs-lookup"><span data-stu-id="88211-129">**MONITOR\_INFO\_1**</span></span>](monitor-info-1.md)
 </dt> </dl>
 
  

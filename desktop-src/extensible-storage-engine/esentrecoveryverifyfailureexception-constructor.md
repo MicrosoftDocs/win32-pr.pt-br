@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829624"
 ---
-# <a name="esentrecoveryverifyfailureexception-constructor"></a><span data-ttu-id="6e697-103">Construtor EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="6e697-103">EsentRecoveryVerifyFailureException constructor</span></span>
+# <a name="esentrecoveryverifyfailureexception-constructor"></a><span data-ttu-id="89e4d-103">Construtor EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="89e4d-103">EsentRecoveryVerifyFailureException constructor</span></span>
 
-<span data-ttu-id="6e697-104">Inicializa uma nova instância da classe EsentRecoveryVerifyFailureException.</span><span class="sxs-lookup"><span data-stu-id="6e697-104">Initializes a new instance of the EsentRecoveryVerifyFailureException class.</span></span>
+<span data-ttu-id="89e4d-104">Inicializa uma nova instância da classe EsentRecoveryVerifyFailureException.</span><span class="sxs-lookup"><span data-stu-id="89e4d-104">Initializes a new instance of the EsentRecoveryVerifyFailureException class.</span></span>
 
-<span data-ttu-id="6e697-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6e697-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="6e697-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6e697-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="89e4d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="89e4d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="89e4d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="89e4d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6e697-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6e697-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="89e4d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="89e4d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentRecoveryVerifyFailureException()
 public EsentRecoveryVerifyFailureException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6e697-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6e697-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89e4d-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="89e4d-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="6e697-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6e697-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="89e4d-109">Referência</span><span class="sxs-lookup"><span data-stu-id="89e4d-109">Reference</span></span>
 
-[<span data-ttu-id="6e697-110">Classe EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="6e697-110">EsentRecoveryVerifyFailureException class</span></span>](./esentrecoveryverifyfailureexception-class.md)
+[<span data-ttu-id="89e4d-110">Classe EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="89e4d-110">EsentRecoveryVerifyFailureException class</span></span>](./esentrecoveryverifyfailureexception-class.md)
 
-[<span data-ttu-id="6e697-111">Membros do EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="6e697-111">EsentRecoveryVerifyFailureException members</span></span>](./esentrecoveryverifyfailureexception-members.md)
+[<span data-ttu-id="89e4d-111">Membros do EsentRecoveryVerifyFailureException</span><span class="sxs-lookup"><span data-stu-id="89e4d-111">EsentRecoveryVerifyFailureException members</span></span>](./esentrecoveryverifyfailureexception-members.md)
 
-[<span data-ttu-id="6e697-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6e697-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="89e4d-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="89e4d-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636314"
 ---
-# <a name="duplicating-a-pdu"></a><span data-ttu-id="dd27e-104">Duplicando uma PDU</span><span class="sxs-lookup"><span data-stu-id="dd27e-104">Duplicating a PDU</span></span>
+# <a name="duplicating-a-pdu"></a><span data-ttu-id="cf9de-104">Duplicando uma PDU</span><span class="sxs-lookup"><span data-stu-id="cf9de-104">Duplicating a PDU</span></span>
 
-<span data-ttu-id="dd27e-105">A função [**SnmpDuplicatePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu) duplica uma PDU, alocando qualquer memória necessária.</span><span class="sxs-lookup"><span data-stu-id="dd27e-105">The [**SnmpDuplicatePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu) function duplicates a PDU, allocating any necessary memory.</span></span> <span data-ttu-id="dd27e-106">Para liberar recursos alocados pelo **SnmpDuplicatePdu** para uma nova PDU, um aplicativo WinSNMP deve chamar a função [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) .</span><span class="sxs-lookup"><span data-stu-id="dd27e-106">To release resources allocated by **SnmpDuplicatePdu** for a new PDU, a WinSNMP application must call the [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) function.</span></span>
+<span data-ttu-id="cf9de-105">A função [**SnmpDuplicatePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu) duplica uma PDU, alocando qualquer memória necessária.</span><span class="sxs-lookup"><span data-stu-id="cf9de-105">The [**SnmpDuplicatePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu) function duplicates a PDU, allocating any necessary memory.</span></span> <span data-ttu-id="cf9de-106">Para liberar recursos alocados pelo **SnmpDuplicatePdu** para uma nova PDU, um aplicativo WinSNMP deve chamar a função [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) .</span><span class="sxs-lookup"><span data-stu-id="cf9de-106">To release resources allocated by **SnmpDuplicatePdu** for a new PDU, a WinSNMP application must call the [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) function.</span></span>
 
  
 

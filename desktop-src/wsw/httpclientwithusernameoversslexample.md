@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005709"
 ---
-# <a name="httpclientwithusernameoversslexample"></a><span data-ttu-id="ac7c1-106">HttpClientWithUsernameOverSslExample</span><span class="sxs-lookup"><span data-stu-id="ac7c1-106">HttpClientWithUsernameOverSslExample</span></span>
+# <a name="httpclientwithusernameoversslexample"></a><span data-ttu-id="a6d35-106">HttpClientWithUsernameOverSslExample</span><span class="sxs-lookup"><span data-stu-id="a6d35-106">HttpClientWithUsernameOverSslExample</span></span>
 
-<span data-ttu-id="ac7c1-107">Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta, com nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="ac7c1-107">This example shows a HTTP client that sends request-reply messages, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="ac7c1-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="ac7c1-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="ac7c1-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="ac7c1-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
+<span data-ttu-id="a6d35-107">Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta, com nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="a6d35-107">This example shows a HTTP client that sends request-reply messages, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="a6d35-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="a6d35-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="a6d35-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="a6d35-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
 
--   [<span data-ttu-id="ac7c1-110">HttpClientWithUsernameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="ac7c1-110">HttpClientWithUsernameOverSsl.cpp</span></span>](#httpclientwithusernameoversslcpp)
--   [<span data-ttu-id="ac7c1-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ac7c1-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="ac7c1-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="ac7c1-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="a6d35-110">HttpClientWithUsernameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="a6d35-110">HttpClientWithUsernameOverSsl.cpp</span></span>](#httpclientwithusernameoversslcpp)
+-   [<span data-ttu-id="a6d35-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="a6d35-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="a6d35-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="a6d35-112">Makefile</span></span>](#makefile)
 
-## <a name="httpclientwithusernameoversslcpp"></a><span data-ttu-id="ac7c1-113">HttpClientWithUsernameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="ac7c1-113">HttpClientWithUsernameOverSsl.cpp</span></span>
+## <a name="httpclientwithusernameoversslcpp"></a><span data-ttu-id="a6d35-113">HttpClientWithUsernameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="a6d35-113">HttpClientWithUsernameOverSsl.cpp</span></span>
 
 
 ```C++
@@ -436,7 +436,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="ac7c1-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ac7c1-114">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="a6d35-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="a6d35-114">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -547,7 +547,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="ac7c1-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="ac7c1-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="a6d35-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="a6d35-115">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------

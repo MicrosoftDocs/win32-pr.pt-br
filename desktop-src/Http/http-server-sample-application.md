@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636071"
 ---
-# <a name="http-server-sample-application"></a><span data-ttu-id="72151-103">Aplicativo de exemplo do servidor HTTP</span><span class="sxs-lookup"><span data-stu-id="72151-103">HTTP Server Sample Application</span></span>
+# <a name="http-server-sample-application"></a><span data-ttu-id="9025d-103">Aplicativo de exemplo do servidor HTTP</span><span class="sxs-lookup"><span data-stu-id="9025d-103">HTTP Server Sample Application</span></span>
 
-<span data-ttu-id="72151-104">O aplicativo de exemplo a seguir mostra como usar a API do servidor HTTP para executar tarefas do lado do servidor.</span><span class="sxs-lookup"><span data-stu-id="72151-104">The following sample application shows how to use the HTTP Server API to perform server-side tasks.</span></span> <span data-ttu-id="72151-105">O arquivo "precomp. h" incluído no primeiro exemplo inclui todos os cabeçalhos necessários para executar os exemplos, por exemplo:</span><span class="sxs-lookup"><span data-stu-id="72151-105">The "precomp.h" file included in the first example includes all the headers necessary to run the samples, for example:</span></span>
+<span data-ttu-id="9025d-104">O aplicativo de exemplo a seguir mostra como usar a API do servidor HTTP para executar tarefas do lado do servidor.</span><span class="sxs-lookup"><span data-stu-id="9025d-104">The following sample application shows how to use the HTTP Server API to perform server-side tasks.</span></span> <span data-ttu-id="9025d-105">O arquivo "precomp. h" incluído no primeiro exemplo inclui todos os cabeçalhos necessários para executar os exemplos, por exemplo:</span><span class="sxs-lookup"><span data-stu-id="9025d-105">The "precomp.h" file included in the first example includes all the headers necessary to run the samples, for example:</span></span>
 
 
 ```C++
@@ -38,7 +38,7 @@ ms.locfileid: "103636071"
 
 
 
-## <a name="main-and-preliminaries"></a><span data-ttu-id="72151-106">Principal e etapas preliminares</span><span class="sxs-lookup"><span data-stu-id="72151-106">Main and Preliminaries</span></span>
+## <a name="main-and-preliminaries"></a><span data-ttu-id="9025d-106">Principal e etapas preliminares</span><span class="sxs-lookup"><span data-stu-id="9025d-106">Main and Preliminaries</span></span>
 
 
 ```C++
@@ -122,7 +122,7 @@ int __cdecl wmain(
 
 
 
-## <a name="initialize-the-http-service"></a><span data-ttu-id="72151-107">Inicializar o serviço HTTP</span><span class="sxs-lookup"><span data-stu-id="72151-107">Initialize the HTTP Service</span></span>
+## <a name="initialize-the-http-service"></a><span data-ttu-id="9025d-107">Inicializar o serviço HTTP</span><span class="sxs-lookup"><span data-stu-id="9025d-107">Initialize the HTTP Service</span></span>
 
 
 ```C++
@@ -158,7 +158,7 @@ int __cdecl wmain(
 
 
 
-## <a name="register-the-urls-to-listen-on"></a><span data-ttu-id="72151-108">Registrar as URLs para escuta em</span><span class="sxs-lookup"><span data-stu-id="72151-108">Register the URLs to Listen On</span></span>
+## <a name="register-the-urls-to-listen-on"></a><span data-ttu-id="9025d-108">Registrar as URLs para escuta em</span><span class="sxs-lookup"><span data-stu-id="9025d-108">Register the URLs to Listen On</span></span>
 
 
 ```C++
@@ -196,7 +196,7 @@ int __cdecl wmain(
 
 
 
-## <a name="call-the-routine-to-receive-a-request"></a><span data-ttu-id="72151-109">Chamar a rotina para receber uma solicitação</span><span class="sxs-lookup"><span data-stu-id="72151-109">Call the Routine to Receive a Request</span></span>
+## <a name="call-the-routine-to-receive-a-request"></a><span data-ttu-id="9025d-109">Chamar a rotina para receber uma solicitação</span><span class="sxs-lookup"><span data-stu-id="9025d-109">Call the Routine to Receive a Request</span></span>
 
 
 ```C++
@@ -206,7 +206,7 @@ int __cdecl wmain(
 
 
 
-## <a name="cleanup-the-http-server-api"></a><span data-ttu-id="72151-110">Limpar a API do servidor HTTP</span><span class="sxs-lookup"><span data-stu-id="72151-110">Cleanup the HTTP Server API</span></span>
+## <a name="cleanup-the-http-server-api"></a><span data-ttu-id="9025d-110">Limpar a API do servidor HTTP</span><span class="sxs-lookup"><span data-stu-id="9025d-110">Cleanup the HTTP Server API</span></span>
 
 
 ```C++
@@ -241,7 +241,7 @@ CleanUp:
 
 
 
-## <a name="receive-a-request"></a><span data-ttu-id="72151-111">Receber uma solicitação</span><span class="sxs-lookup"><span data-stu-id="72151-111">Receive a Request</span></span>
+## <a name="receive-a-request"></a><span data-ttu-id="9025d-111">Receber uma solicitação</span><span class="sxs-lookup"><span data-stu-id="9025d-111">Receive a Request</span></span>
 
 
 ```C++
@@ -309,7 +309,7 @@ DWORD DoReceiveRequests(
 
 
 
-## <a name="handle-the-http-request"></a><span data-ttu-id="72151-112">Manipular a solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="72151-112">Handle the HTTP Request</span></span>
+## <a name="handle-the-http-request"></a><span data-ttu-id="9025d-112">Manipular a solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9025d-112">Handle the HTTP Request</span></span>
 
 
 ```C++
@@ -422,7 +422,7 @@ DWORD DoReceiveRequests(
 
 
 
-## <a name="send-an-http-response"></a><span data-ttu-id="72151-113">Enviar uma resposta HTTP</span><span class="sxs-lookup"><span data-stu-id="72151-113">Send an HTTP Response</span></span>
+## <a name="send-an-http-response"></a><span data-ttu-id="9025d-113">Enviar uma resposta HTTP</span><span class="sxs-lookup"><span data-stu-id="9025d-113">Send an HTTP Response</span></span>
 
 
 ```C++
@@ -508,7 +508,7 @@ DWORD SendHttpResponse(
 
 
 
-## <a name="send-an-http-post-response"></a><span data-ttu-id="72151-114">Enviar uma resposta HTTP POST</span><span class="sxs-lookup"><span data-stu-id="72151-114">Send an HTTP POST Response</span></span>
+## <a name="send-an-http-post-response"></a><span data-ttu-id="9025d-114">Enviar uma resposta HTTP POST</span><span class="sxs-lookup"><span data-stu-id="9025d-114">Send an HTTP POST Response</span></span>
 
 
 ```C++
