@@ -94,7 +94,7 @@ Um dispositivo MCI pode dar suporte a um ou mais dos seguintes formatos de hora.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

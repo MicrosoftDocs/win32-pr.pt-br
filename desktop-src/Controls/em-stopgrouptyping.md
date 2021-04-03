@@ -71,7 +71,7 @@ Você pode enviar a mensagem em **\_ STOPGROUPTYPING** para interromper as açõ
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

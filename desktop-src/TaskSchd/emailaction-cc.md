@@ -31,7 +31,7 @@ Para scripts, Obtém ou define o endereço de email ou endereços que você dese
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -59,7 +59,7 @@ O endereço de email ou endereços que você deseja CC na mensagem de email.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

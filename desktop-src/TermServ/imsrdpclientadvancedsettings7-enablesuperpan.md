@@ -37,7 +37,7 @@ Especifica ou recupera um valor booliano que indica se SuperPan está habilitado
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -70,7 +70,7 @@ Um **valor \_ bool de variante** que especifica se SuperPan está habilitado. Um
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

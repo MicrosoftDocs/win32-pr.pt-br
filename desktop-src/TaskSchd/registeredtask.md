@@ -44,7 +44,7 @@ O objeto **RegisteredTask** tem esses métodos.
 | [**GetInstances**](registeredtask-getinstances.md)                   | Retorna todas as instâncias da tarefa registrada que estão em execução no momento.<br/>             |
 | [**Getruntimes**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtask-getruntimes)                    | Obtém os horários em que a tarefa registrada está agendada para ser executada durante um período especificado.<br/> |
 | [**GetSecurityDescriptor**](registeredtask-getsecuritydescriptor.md) | Obtém o descritor de segurança que é usado como credenciais para a tarefa registrada.<br/>    |
-| [**Funcionam**](registeredtask-run.md)                                     | Executa a tarefa registrada imediatamente.<br/>                                                |
+| [**Executar**](registeredtask-run.md)                                     | Executa a tarefa registrada imediatamente.<br/>                                                |
 | [**RunEx**](registeredtask-runex.md)                                 | Executa a tarefa registrada imediatamente usando sinalizadores especificados e um identificador de sessão.<br/> |
 | [**SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md) | Define o descritor de segurança que é usado como credenciais para a tarefa registrada.<br/>    |
 | [**Stop**](registeredtask-stop.md)                                   | Interrompe a tarefa registrada imediatamente.<br/>                                               |
@@ -59,17 +59,17 @@ O objeto **RegisteredTask** tem essas propriedades.
 
 
 
-| Propriedade                                                                   | Tipo de acesso           | Description                                                                               |
+| Propriedade                                                                   | Tipo de acesso           | Descrição                                                                               |
 |:---------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------|
 | [**Definição**](registeredtask-definition.md)<br/>                 | Somente leitura<br/>  | Obtém a definição da tarefa.<br/>                                               |
 | [**habilitado**](registeredtask-enabled.md)<br/>                       | Leitura/gravação<br/> | Obtém ou define um valor booliano que indica se a tarefa registrada está habilitada.<br/>  |
 | [**LastRunTime**](registeredtask-lastruntime.md)<br/>               | Somente leitura<br/>  | Obtém a hora da última execução da tarefa registrada.<br/>                                |
 | [**LastTaskResult**](registeredtask-lasttaskresult.md)<br/>         | Somente leitura<br/>  | Obtém os resultados que foram retornados na última vez em que a tarefa registrada foi executada.<br/> |
-| [**Nomes**](registeredtask-name.md)<br/>                             | Somente leitura<br/>  | Obtém o nome da tarefa registrada.<br/>                                          |
+| [**Nome**](registeredtask-name.md)<br/>                             | Somente leitura<br/>  | Obtém o nome da tarefa registrada.<br/>                                          |
 | [**NextRunTime**](registeredtask-nextruntime.md)<br/>               | Somente leitura<br/>  | Obtém a hora em que a tarefa registrada está próxima agendada para ser executada.<br/>               |
 | [**NumberOfMissedRuns**](registeredtask-numberofmissedruns.md)<br/> | Somente leitura<br/>  | Obtém o número de vezes que a tarefa registrada perdeu uma execução agendada.<br/>       |
 | [**Caminho**](registeredtask-path.md)<br/>                             | Somente leitura<br/>  | Obtém o caminho para onde a tarefa registrada é armazenada.<br/>                          |
-| [**Estado**](registeredtask-state.md)<br/>                           | Somente leitura<br/>  | Obtém o estado operacional da tarefa registrada.<br/>                             |
+| [**Status**](registeredtask-state.md)<br/>                           | Somente leitura<br/>  | Obtém o estado operacional da tarefa registrada.<br/>                             |
 | [**XML**](registeredtask-xml.md)<br/>                               | Somente leitura<br/>  | Obtém as informações de registro formatadas em XML para a tarefa registrada.<br/>       |
 
 

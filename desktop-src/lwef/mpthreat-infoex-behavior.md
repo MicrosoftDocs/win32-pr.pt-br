@@ -160,7 +160,7 @@ O hash do arquivo de destino.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

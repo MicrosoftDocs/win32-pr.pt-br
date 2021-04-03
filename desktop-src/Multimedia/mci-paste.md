@@ -128,7 +128,7 @@ Um valor de posição é incluído no membro **dwTo** da estrutura identificada 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

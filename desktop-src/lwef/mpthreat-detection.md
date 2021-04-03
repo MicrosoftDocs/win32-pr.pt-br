@@ -26,7 +26,7 @@ ms.locfileid: "103644526"
 
 Possíveis tipos conhecidos de detecção de ameaças inválidas.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

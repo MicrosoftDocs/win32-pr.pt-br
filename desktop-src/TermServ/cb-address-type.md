@@ -26,7 +26,7 @@ ms.locfileid: "103644421"
 
 Especifica o tipo de endereço.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

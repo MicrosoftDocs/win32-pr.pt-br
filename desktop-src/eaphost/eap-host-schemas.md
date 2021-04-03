@@ -18,7 +18,7 @@ O esquema XML é usado ao escrever aplicativos que chamam ou implementam element
 Há dois grupos diferentes de exemplos de esquema fornecidos aqui.
 
 -   [Propriedades da conexão](connection-profiles.md)
--   [Propriedades do usuário](user-profiles.md)
+-   [Propriedades do Usuário](user-profiles.md)
 
  
 

@@ -43,7 +43,7 @@ O elemento **Tasks** é definido pelo tipo complexo [**ProviderType**](eventmani
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

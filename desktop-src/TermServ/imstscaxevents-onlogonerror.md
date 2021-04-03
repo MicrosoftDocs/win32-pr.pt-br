@@ -228,7 +228,7 @@ Esta lista de códigos não é exaustiva.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

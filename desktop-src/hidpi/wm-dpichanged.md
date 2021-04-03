@@ -138,7 +138,7 @@ Uma maneira alternativa de dimensionar um valor é converter o valor de DPI em u
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

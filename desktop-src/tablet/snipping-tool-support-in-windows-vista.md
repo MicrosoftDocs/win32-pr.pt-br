@@ -36,8 +36,8 @@ Na chave de classe da janela, os valores apropriados devem ser definidos para in
 | VALOR                        | TYPE                  | MASCARA            | INFORMAÇÕES ARMAZENADAS                                          |
 |------------------------------|-----------------------|-----------------|-------------------------------------------------------------|
 | Mask<br/>              | REG \_ DWORD<br/> |                 | Indica quais dos campos a seguir verificar<br/> |
-| Nome<br/>              | REG \_ sz<br/>    | 0x02<br/> | Nome de acessibilidade<br/>                               |
-| Descrição<br/>       | REG \_ sz<br/>    | 0x04<br/> | Descrição da acessibilidade<br/>                        |
+| Name<br/>              | REG \_ sz<br/>    | 0x02<br/> | Nome de acessibilidade<br/>                               |
+| Description<br/>       | REG \_ sz<br/>    | 0x04<br/> | Descrição da acessibilidade<br/>                        |
 | Função<br/>              | REG \_ DWORD<br/> | 0x08<br/> | Função de acessibilidade<br/>                               |
 | ParentName<br/>        | REG \_ sz<br/>    | 0x10<br/> | Nome de acessibilidade do pai<br/>                     |
 | Paivalue<br/>       | REG \_ sz<br/>    | 0x20<br/> | Valor de acessibilidade do pai<br/>                    |

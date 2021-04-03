@@ -27,7 +27,7 @@ ms.locfileid: "103644624"
 
 Especifica o tipo de unidade anexada a um local de barramento.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -79,7 +79,7 @@ Há uma unidade de CD ou DVD anexada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
