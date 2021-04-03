@@ -51,7 +51,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                          | Description                   |
+| Código de retorno                                                                          | Descrição                   |
 |--------------------------------------------------------------------------------------|-------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | Indica êxito.<br/> |
 
@@ -78,7 +78,7 @@ O agente de integridade pode consultar o estado NAP do sistema usando [**INapSys
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

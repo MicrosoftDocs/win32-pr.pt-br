@@ -27,7 +27,7 @@ ms.locfileid: "103644888"
 
 Para scripts, Obtém ou define um valor que indica a quantidade de tempo que o computador deve estar em um estado ocioso antes que a tarefa seja executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -57,7 +57,7 @@ Ao ler ou gravar XML para uma tarefa, essa configuração é especificada no ele
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

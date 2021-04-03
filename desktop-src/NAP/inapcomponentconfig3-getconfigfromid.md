@@ -76,7 +76,7 @@ Retorna um dos seguintes códigos de erro com base no resultado dessa operação
 
 
 
-| Código de retorno                                                                                                    | Description                             |
+| Código de retorno                                                                                                    | Descrição                             |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                          | A operação teve êxito.<br/> |
 | <dl> <dt>**configuração de NAP \_ E \_ SHV \_ \_ não \_ encontrada**</dt> </dl> | Não foi possível encontrar *configid* .<br/>  |
@@ -102,7 +102,7 @@ O método [**newconfig**](inapcomponentconfig3-newconfig.md) deve ser usado para
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

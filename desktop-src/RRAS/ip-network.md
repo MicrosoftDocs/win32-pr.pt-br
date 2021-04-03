@@ -71,7 +71,7 @@ Especifica a máscara de rede. Aplique essa máscara ao endereço IP para extrai
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

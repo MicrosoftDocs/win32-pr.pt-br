@@ -59,7 +59,7 @@ O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAP
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

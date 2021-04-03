@@ -54,10 +54,10 @@ O tipo complexo **EapMethodType** define os elementos que identificam exclusivam
 
 
 
-| Elemento                                                                | Type         | Description                                                                                                                                                                                                                                              |
+| Elemento                                                                | Type         | Descrição                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AuthorId**](eapcommonschema-authorid-eapmethodtype-element.md)     | unsignedInt  | Refere-se ao autor do método. <br/>                                                                                                                                                                                                                 |
-| [**Escreva**](eapcommonschema-type-eapmethodtype-element.md)             | unsignedByte | Refere-se ao tipo de método EAP. <br/>                                                                                                                                                                                                               |
+| [**Tipo**](eapcommonschema-type-eapmethodtype-element.md)             | unsignedByte | Refere-se ao tipo de método EAP. <br/>                                                                                                                                                                                                               |
 | [**VendorId**](eapcommonschema-vendorid-eapmethodtype-element.md)     | unsignedInt  | Refere-se ao fornecedor que definiu o método – se o elemento [**Type**](eapcommonschema-type-eapmethodtype-element.md) for 254 (um método EAP expandido). O [**VendorID**](eapcommonschema-vendorid-eapmethodtype-element.md) é opcional. <br/> |
 | [**Nome_do_Fornecedor**](eapcommonschema-vendortype-eapmethodtype-element.md) | unsignedInt  | É o tipo definido pelo fornecedor para o método. O [**VendorName**](eapcommonschema-vendortype-eapmethodtype-element.md) é opcional. <br/>                                                                                                           |
 
@@ -80,7 +80,7 @@ Os elementos [**AuthorId**](eapcommonschema-authorid-eapmethodtype-element.md), 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

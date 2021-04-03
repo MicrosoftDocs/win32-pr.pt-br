@@ -105,7 +105,7 @@ Um pacote de recursos sem esquema é aquele criado com o argumento [**MrmPackagi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -76,7 +76,7 @@ O MMCSS determina a prioridade de um thread usando os seguintes fatores:
 
 O MMCSS define a prioridade dos threads de cliente, dependendo de sua categoria de agendamento.
 
-| Categoria | Prioridade | Descrição                                                                                                                               |
+| Category | Prioridade | Descrição                                                                                                                               |
 |----------|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Alto     | 23-26    | Esses threads são executados em uma prioridade de thread inferior a apenas determinadas tarefas em nível de sistema. Essa categoria foi projetada para tarefas de Pro Audio. |
 | Médio   | 16-22    | Esses threads fazem parte do aplicativo que está em primeiro plano.                                                                      |

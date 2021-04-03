@@ -340,7 +340,7 @@ XBUTTON1 e XBUTTON2 são botões adicionais usados em vários dispositivos de mo
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

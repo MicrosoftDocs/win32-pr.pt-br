@@ -39,7 +39,7 @@ O objeto **MonthlyTrigger** tem essas propriedades.
 
 
 
-| Propriedade                                                                     | Tipo de acesso           | Description                                                                                                                                                                                 |
+| Propriedade                                                                     | Tipo de acesso           | Descrição                                                                                                                                                                                 |
 |:-----------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**DaysOfMonth**](monthlytrigger-daysofmonth.md)<br/>                 | Leitura/gravação<br/> | Obtém ou define os dias do mês durante os quais a tarefa é executada.<br/>                                                                                                                   |
 | [**habilitado**](trigger-enabled.md)<br/>                                | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define um valor booliano que indica se o gatilho está habilitado.<br/>                                                |
@@ -51,7 +51,7 @@ O objeto **MonthlyTrigger** tem essas propriedades.
 | [**Repetição**](trigger-repetition.md)<br/>                          | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define com que frequência a tarefa é executada e por quanto tempo o padrão de repetição é repetido depois que a tarefa é iniciada.<br/>          |
 | [**RunOnLastDayOfMonth**](monthlytrigger-runonlastdayofmonth.md)<br/> | Leitura/gravação<br/> | Obtém ou define um valor booliano que indica que a tarefa é executada no último dia do mês.<br/>                                                                                     |
 | [**StartBoundary**](trigger-startboundary.md)<br/>                    | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define a data e a hora em que o gatilho é ativado.<br/>                                                              |
-| [**Escreva**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_type)<br/>                                     | Somente leitura<br/>  | Herdado do objeto de [**gatilho**](trigger.md) . Obtém o tipo do gatilho.<br/>                                                                                              |
+| [**Tipo**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_type)<br/>                                     | Somente leitura<br/>  | Herdado do objeto de [**gatilho**](trigger.md) . Obtém o tipo do gatilho.<br/>                                                                                              |
 
 
 
@@ -76,7 +76,7 @@ Ao ler ou gravar seu próprio XML para uma tarefa, um gatilho mensal é especifi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

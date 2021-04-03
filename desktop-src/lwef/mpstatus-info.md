@@ -136,7 +136,7 @@ Carimbo de data/hora de validade do produto em UNC. Isso será válido somente s
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

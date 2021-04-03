@@ -83,7 +83,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -55,7 +55,7 @@ A interface **ISearchResult** tem esses métodos.
 | [**Pré-visualizador**](-search-2x-isearchresult-previewer.md)           | Não implementado.<br/> |
 | [**PutValue**](-search-2x-isearchresult-putvalue.md)             | Não implementado.<br/> |
 | [**Miniaturastate**](-search-2x-isearchresult-thumbnailstate.md) | Não implementado.<br/> |
-| [**Escreva**](-search-2x-isearchresult-type.md)                     | Não implementado.<br/> |
+| [**Tipo**](-search-2x-isearchresult-type.md)                     | Não implementado.<br/> |
 | [**VerbCount**](-search-2x-isearchresult-verbcount.md)           | Não implementado.<br/> |
 
 

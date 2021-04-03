@@ -27,7 +27,7 @@ O tipo de [JET_INSTANCE](./jet-instance-structure.md) expõe os membros a seguir
 <thead>
 <tr class="header">
 <th> </th>
-<th>Name</th>
+<th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>

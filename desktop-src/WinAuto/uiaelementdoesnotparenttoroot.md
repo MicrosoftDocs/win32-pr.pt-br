@@ -17,7 +17,7 @@ ms.locfileid: "103635499"
 
 A cadeia pai do elemento não vai para o elemento raiz
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 

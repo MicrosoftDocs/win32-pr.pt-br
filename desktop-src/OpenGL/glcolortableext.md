@@ -198,7 +198,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | a *largura* era um número inteiro inválido.<br/>                                                                                            |
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *target*, *internalFormat*, *Format* ou *Type* não era um valor aceito.<br/>                                                 |

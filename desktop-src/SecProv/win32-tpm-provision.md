@@ -105,7 +105,7 @@ Os códigos de retorno comuns são listados abaixo.
 
 
 
-| Código/valor de retorno                                                                                                                                 | Descrição                           |
+| Código/valor de retorno                                                                                                                                 | Description                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl> | O método foi bem-sucedido.<br/> |
 

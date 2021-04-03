@@ -42,7 +42,7 @@ Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determi
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -79,7 +79,7 @@ Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remo
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -114,7 +114,7 @@ Um aplicativo não pode bloquear esse tipo de transação; o código de retorno 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

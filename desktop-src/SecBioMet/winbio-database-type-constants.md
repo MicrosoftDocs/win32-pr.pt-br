@@ -32,7 +32,7 @@ Os sinalizadores a seguir podem ser usados para o membro **Attributes** da estru
 
 
 
-| Constante/valor                                                                                                                                                                                                                                                                     | Description                                                                                                                  |
+| Constante/valor                                                                                                                                                                                                                                                                     | Descrição                                                                                                                  |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | <span id="WINBIO_DATABASE_TYPE_MASK"></span><span id="winbio_database_type_mask"></span><dl> <dt>**WINBIO \_ \_ \_ Máscara de tipo de banco de dados**</dt> <dt>0x0000FFFF</dt> </dl>                | Representa uma máscara para todos os \_ bits de tipo \_ .<br/>                                                                   |
 | <span id="WINBIO_DATABASE_TYPE_FILE"></span><span id="winbio_database_type_file"></span><dl> <dt>**WINBIO \_ \_ \_ Arquivo de tipo de banco de dados**</dt> <dt>0x00000001</dt> </dl>                | O banco de dados está contido em um arquivo.<br/>                                                                              |
@@ -57,7 +57,7 @@ Os sinalizadores a seguir podem ser usados para o membro **Attributes** da estru
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
