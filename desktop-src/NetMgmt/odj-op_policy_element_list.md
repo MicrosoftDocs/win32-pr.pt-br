@@ -46,7 +46,7 @@ Contém o número de elementos em pElements.
 
 Contém uma matriz de elementos de OP_POLICY_ELEMENT.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [**Definições de IDL de ingresso no domínio offline**](odj-idl.md)
 

@@ -58,7 +58,7 @@ Um valor de enumeração de [**\_ \_ status da tarefa RDV**](/windows/desktop/ap
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

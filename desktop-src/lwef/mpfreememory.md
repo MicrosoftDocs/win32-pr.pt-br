@@ -59,7 +59,7 @@ Para facilitar o gerenciamento de memória para clientes, o Malware Protection M
 
 
 
-| Name                            | Descrição                                                                      |
+| Nome                            | Descrição                                                                      |
 |---------------------------------|----------------------------------------------------------------------------------|
 | \_informações \_ gratuitas do MPRESOURCE          | Libera uma [**\_ informação MPRESOURCE**](mpresource-info.md)alocada.                  |
 | \_informações \_ gratuitas do MPTHREAT            | Libera uma [**\_ informação MPTHREAT**](mpthreat-info.md)alocada.                      |
@@ -82,7 +82,7 @@ Para facilitar o gerenciamento de memória para clientes, o Malware Protection M
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

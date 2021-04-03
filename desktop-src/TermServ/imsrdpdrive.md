@@ -39,9 +39,9 @@ A interface **IMsRdpDrive** tem essas propriedades.
 
 
 
-| Propriedade                                                            | Tipo de acesso           | Description                                              |
+| Propriedade                                                            | Tipo de acesso           | Descrição                                              |
 |:--------------------------------------------------------------------|:----------------------|:---------------------------------------------------------|
-| [**Name**](imsrdpdrive-name.md)<br/>                         | Somente leitura<br/>  | Recupera o nome da unidade.<br/>              |
+| [**Nome**](imsrdpdrive-name.md)<br/>                         | Somente leitura<br/>  | Recupera o nome da unidade.<br/>              |
 | [**De redirecionamento**](imsrdpdrive-redirectionstate.md)<br/> | Leitura/gravação<br/> | Indica o estado de redirecionamento da unidade.<br/> |
 
 
@@ -62,7 +62,7 @@ A interface **IMsRdpDrive** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ ms.locfileid: "103644468"
 
 Para scripts, obtém o gatilho especificado da coleção.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB

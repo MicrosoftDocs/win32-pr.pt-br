@@ -30,7 +30,7 @@ Gera declarações IDL para funções de proxy de assinatura/cancelamento de ass
 
 | Atributo                 | Type               | Obrigatório      | Descrição                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **ampliá**<br/> | booleano<br/> | Não<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
+| **ampliá**<br/> | booleano<br/> | No<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
 
 
 

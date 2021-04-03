@@ -26,7 +26,7 @@ ms.locfileid: "103644420"
 
 Especifica o tipo de recurso ao qual a conexão de entrada está se conectando. Essa enumeração é usada com a estrutura de [**\_ \_ informações de conexão CB**](cb-connection-info.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -76,7 +76,7 @@ O recurso é uma máquina virtual.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

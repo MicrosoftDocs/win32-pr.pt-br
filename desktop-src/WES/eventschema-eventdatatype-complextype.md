@@ -54,7 +54,7 @@ Define os itens de dados do evento e as estruturas que contêm os dados do event
 
 
 
-| Elemento                                                              | Type                                                               | Description                                                                                          |
+| Elemento                                                              | Type                                                               | Descrição                                                                                          |
 |----------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | [**Binário**](eventschema-binary-eventdatatype-element.md)           | hexBinary                                                          | Um blob de dados binários para eventos que são gravados usando o [log de eventos](/windows/desktop/EventLog/event-logging).<br/> |
 | [**ComplexData**](eventschema-complexdata-eventdatatype-element.md) | [**ComplexDataType**](eventschema-complexdatatype-complextype.md) | Uma estrutura que é definida no modelo para o evento.<br/>                                |
@@ -66,7 +66,7 @@ Define os itens de dados do evento e as estruturas que contêm os dados do event
 
 
 
-| Nome | Type   | Descrição                                                       |
+| Nome | Tipo   | Descrição                                                       |
 |------|--------|-------------------------------------------------------------------|
 | Nome | cadeia de caracteres | O nome do modelo que contém os itens de dados.<br/> |
 

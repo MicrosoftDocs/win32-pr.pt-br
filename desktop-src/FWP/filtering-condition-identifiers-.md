@@ -166,7 +166,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 <thead>
 <tr class="header">
 <th style="text-align: left;">Condições disponíveis para o Windows 8 e o Windows Server 2012</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -346,7 +346,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 
 
 
-| Condições disponíveis para o Windows 7, o Windows Server 2008 R2 e posterior                                                                                                                                                                                                    | Description                                                                                                                                                                                                                                                                               |
+| Condições disponíveis para o Windows 7, o Windows Server 2008 R2 e posterior                                                                                                                                                                                                    | Descrição                                                                                                                                                                                                                                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="FWPM_CONDITION_IP_NEXTHOP_ADDRESS"></span><span id="fwpm_condition_ip_nexthop_address"></span><dl> <dt>**\_ \_ \_ endereço IP NEXTHOP \_ da condição FWPM**</dt> </dl>                                             | O endereço IP da interface de próximo salto.<br/> **Tipo de dados:** \_Máscara de \_ endereço \_ v4 de fwp<br/>                                                                                                                                                                                        |
 | <span id="FWPM_CONDITION_IP_NEXTHOP_INTERFACE"></span><span id="fwpm_condition_ip_nexthop_interface"></span><dl> <dt>**\_ \_ interface NEXTHOP de IP de condição FWPM \_ \_**</dt> </dl>                                       | A interface de próximo salto da qual o pacote será desparte. <br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                         |
@@ -371,7 +371,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 
 
 
-| Constantes disponíveis para o Windows Vista com SP1, Windows Server 2008 e posterior                                                                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Constantes disponíveis para o Windows Vista com SP1, Windows Server 2008 e posterior                                                                                                                                                                           | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="FWPM_CONDITION_IP_ARRIVAL_INTERFACE"></span><span id="fwpm_condition_ip_arrival_interface"></span><dl> <dt>**\_interface de \_ chegada de IP da condição FWPM \_ \_**</dt> </dl>                       | O LUID para a interface de rede associada ao endereço IP de chegada. <br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                                                                                                                                                                                                          |
 | <span id="FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE"></span><span id="fwpm_condition_arrival_interface_type"></span><dl> <dt>**\_tipo de \_ interface de chegada da condição FWPM \_ \_**</dt> </dl>                 | O tipo de interface de rede de chegada, conforme definido pela IANA (Internet Assigned Names Authority). Para obter mais informações, confira [https://www.iana.org/assignments/ianaiftype-mib](https://www.iana.org/assignments/ianaiftype-mib). <br/> **Valores possíveis:** Os valores do tipo de interface listados no arquivo de cabeçalho Ipifcons. h.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                   |
@@ -394,7 +394,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 <thead>
 <tr class="header">
 <th style="text-align: left;">Constantes disponíveis para o Windows Vista e posterior</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -632,7 +632,7 @@ As constantes a seguir estão disponíveis somente para o modo de usuário.
 
 
 
-| Condições de modo de usuário disponíveis para o Windows 8 e o Windows Server 2012                                                                                                                       | Description                                                                                                                                                               |
+| Condições de modo de usuário disponíveis para o Windows 8 e o Windows Server 2012                                                                                                                       | Descrição                                                                                                                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="FWPM_CONDITION_QM_MODE"></span><span id="fwpm_condition_qm_mode"></span><dl> <dt>**\_ \_ modo QM da condição FWPM \_**</dt> </dl> | O modo do filtro de modo rápido (QM). Consulte [**\_ \_ tipo de tráfego IPSec**](/windows/desktop/api/Ipsectypes/ne-ipsectypes-ipsec_traffic_type) para obter os valores possíveis.<br/> **Tipo de dados:** FWP \_ UINT32<br/> |
 
@@ -648,7 +648,7 @@ As constantes a seguir estão disponíveis somente para o modo de usuário.
 <thead>
 <tr class="header">
 <th style="text-align: left;">Condições de modo de usuário disponíveis para o Windows 7, o Windows Server 2008 R2 e posterior</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -704,7 +704,7 @@ Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
 <thead>
 <tr class="header">
 <th style="text-align: left;">Constantes disponíveis para o Windows Vista e posterior</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>

@@ -48,7 +48,7 @@ Valor **DWORD** definido pelo usuário.
 [**'**](dialog-resource.md)
 </dt> <dt>
 
-[**IDIOMA**](language-statement.md)
+[**LANGUAGE**](language-statement.md)
 </dt> <dt>
 
 [**ADICIONARMENU**](menu-resource.md)

@@ -21,20 +21,20 @@ Os arquivos de configuração do Publicador têm os seguintes elementos e atribu
 
 | Elemento               | Atributos                | Obrigatório |
 |-----------------------|---------------------------|----------|
-| **)**          |                           | Sim      |
-|                       | **manifestVersion**       | Sim      |
-| **assemblyIdentity**  |                           | Sim      |
+| **)**          |                           | Yes      |
+|                       | **manifestVersion**       | Yes      |
+| **assemblyIdentity**  |                           | Yes      |
 |                       | **tipo**                  | Sim      |
 |                       | **name**                  | Sim      |
-|                       | **linguagem**              | Não       |
-|                       | **processorArchitecture** | Não       |
-|                       | **version**               | Sim      |
-|                       | **publicKeyToken**        | Não       |
-| **Estados**        |                           | Não       |
-| **dependentAssembly** |                           | Não       |
-| **bindingRedirect**   |                           | Sim      |
-|                       | **oldVersion**            | Sim      |
-|                       | **newVersion**            | Sim      |
+|                       | **linguagem**              | No       |
+|                       | **processorArchitecture** | No       |
+|                       | **version**               | Yes      |
+|                       | **publicKeyToken**        | No       |
+| **Estados**        |                           | No       |
+| **dependentAssembly** |                           | No       |
+| **bindingRedirect**   |                           | Yes      |
+|                       | **oldVersion**            | Yes      |
+|                       | **newVersion**            | Yes      |
 
 
 

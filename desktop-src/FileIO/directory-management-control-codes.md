@@ -32,7 +32,7 @@ Os códigos de controle a seguir são usados com [pontos de nova análise](repar
 
 
 
-| Código de controle                                                                   | Descrição                                                                                                           |
+| Código de controle                                                                   | Description                                                                                                           |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [**FSCTL \_ excluir \_ ponto de nova análise \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_delete_reparse_point)<br/> | Exclui um ponto de nova análise do arquivo ou diretório especificado.<br/>                                              |
 | [**FSCTL \_ obter \_ ponto de nova análise \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_reparse_point)<br/>       | Recupera os dados do ponto de nova análise associados ao arquivo ou diretório identificado pelo identificador especificado.<br/> |

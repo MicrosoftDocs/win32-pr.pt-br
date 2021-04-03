@@ -60,7 +60,7 @@ Retorna um dos seguintes códigos de erro com base no resultado dessa operação
 
 
 
-| Código de retorno                                                                                                    | Description                                                                  |
+| Código de retorno                                                                                                    | Descrição                                                                  |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                          | A operação teve êxito.<br/>                                      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                   | *Configid* é 0 (um valor reservado para a configuração padrão).<br/> |
@@ -83,7 +83,7 @@ Retorna um dos seguintes códigos de erro com base no resultado dessa operação
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

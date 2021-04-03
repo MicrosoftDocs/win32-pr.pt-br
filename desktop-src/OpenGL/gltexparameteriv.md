@@ -116,7 +116,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                          |
+| Nome                                                                                                  | Significado                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ \_Enumeração INválida**</dt> </dl>     | *target* ou *pname* não era um dos valores definidos aceitos, ou quando *param* deveria ter um valor constante definido (com base no valor de *pname*) e não.<br/> |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/>                                            |

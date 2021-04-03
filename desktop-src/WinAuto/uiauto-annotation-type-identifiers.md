@@ -48,7 +48,7 @@ Este tópico descreve as constantes nomeadas que são usadas para identificar ti
 
 
 
-| Constante/valor                                                                                                                                                                                                                                                                                                                                           | Description                                                                                        |
+| Constante/valor                                                                                                                                                                                                                                                                                                                                           | Descrição                                                                                        |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | <span id="AnnotationType_AdvancedProofingIssue"></span><span id="annotationtype_advancedproofingissue"></span><span id="ANNOTATIONTYPE_ADVANCEDPROOFINGISSUE"></span><dl> <dt>**\_ AnnotationType AdvancedProofingIssue**</dt> <dt>60020</dt> </dl>     | Um problema de prova avançada.<br/>                                                             |
 | <span id="AnnotationType_Author"></span><span id="annotationtype_author"></span><span id="ANNOTATIONTYPE_AUTHOR"></span><dl> <dt>**\_ AnnotationType Autor**</dt> <dt>60019</dt> </dl>                                                                 | O autor do documento.<br/>                                                             |
@@ -89,7 +89,7 @@ Este tópico descreve as constantes nomeadas que são usadas para identificar ti
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

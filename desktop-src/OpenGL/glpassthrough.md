@@ -67,7 +67,7 @@ O código de erro a seguir pode ser recuperado pela função [**glGetError**](gl
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
 
@@ -99,7 +99,7 @@ A função a seguir recupera informações relacionadas a **glPassThrough**:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

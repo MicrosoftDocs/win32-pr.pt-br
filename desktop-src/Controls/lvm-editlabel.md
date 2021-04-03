@@ -66,7 +66,7 @@ Se *wParam* for-1, um código de notificação [LVN \_ ENDLABELEDIT](lvn-endlabe
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

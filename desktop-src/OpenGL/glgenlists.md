@@ -53,7 +53,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | o *intervalo* era negativo.<br/>                                                                                                      |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |

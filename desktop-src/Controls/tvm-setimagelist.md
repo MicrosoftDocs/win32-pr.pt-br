@@ -74,7 +74,7 @@ O controle de exibição de árvore não destruirá a lista de imagens especific
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
