@@ -36,7 +36,7 @@ A hora em que a senha correta foi apresentada durante um logon Ctrl + Alt + Dele
 | Frequência de atualização  | \-                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.1970                      |
 | System-ID-GUID    | 011929e6-8B5D-4258-b64a-00b0b4949747         |
-| Sintaxe            | [**Intervalo**](s-interval.md)               |
+| Syntax            | [**Intervalo**](s-interval.md)               |
 
 
 

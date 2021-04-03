@@ -77,7 +77,7 @@ O tipo de mídia anexado. Para obter uma lista de valores, consulte [**VMDVDDriv
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -35,7 +35,7 @@ Especifica um computador host.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.9                   |
 | System-ID-GUID    | 6043df71-fa48-46cf-ab7c-cbd54644b22d        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

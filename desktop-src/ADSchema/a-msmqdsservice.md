@@ -36,7 +36,7 @@ Indica se este servidor fornece serviços DS.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1238              |
 | System-ID-GUID    | 2df90d82-009f-11d2-aa4c-00c04fd7d83a |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

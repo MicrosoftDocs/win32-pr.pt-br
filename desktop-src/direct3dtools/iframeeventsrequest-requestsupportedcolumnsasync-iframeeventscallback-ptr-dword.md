@@ -54,7 +54,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
 
 [**IFrameEventsRequest**](/windows/desktop/direct3dtools/iframeeventsrequest)
 

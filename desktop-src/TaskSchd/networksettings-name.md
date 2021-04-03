@@ -29,7 +29,7 @@ Para scripts, Obtém ou define o nome de um perfil de rede. O nome é usado para
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -55,7 +55,7 @@ O nome de um perfil de rede.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

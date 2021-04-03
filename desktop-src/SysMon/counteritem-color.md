@@ -29,7 +29,7 @@ Recupera ou define a cor usada para grafar o valor do contador.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -60,7 +60,7 @@ Se você não especificar a cor a ser usada, o SYSMON selecionará as cores dos 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

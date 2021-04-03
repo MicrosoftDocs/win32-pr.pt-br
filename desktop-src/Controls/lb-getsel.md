@@ -61,7 +61,7 @@ Se um item for selecionado, o valor de retorno será maior que zero; caso contr�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

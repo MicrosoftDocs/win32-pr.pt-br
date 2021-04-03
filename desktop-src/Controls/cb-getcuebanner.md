@@ -61,7 +61,7 @@ Se não houver nenhum texto de faixa de indicação a ser obtido, o valor de ret
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

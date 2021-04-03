@@ -58,7 +58,7 @@ O nome de exibição do agente de tarefa.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

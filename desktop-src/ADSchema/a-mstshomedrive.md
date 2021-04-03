@@ -36,7 +36,7 @@ A unidade base dos serviços de terminal especifica uma unidade inicial para o u
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1978                     |
 | System-ID-GUID    | 5f0a24d9-dffa-4cd9-acbf-a0680c03731e        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

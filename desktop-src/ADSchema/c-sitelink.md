@@ -87,7 +87,7 @@ Essa classe contém os seguintes atributos para o Windows 2000 Server:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                    | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                    | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
@@ -199,7 +199,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2003:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                      | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                      | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
@@ -329,7 +329,7 @@ Essa classe contém os seguintes atributos para ADAM:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                      | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                      | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
@@ -442,7 +442,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2003 R2:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                      | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                      | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
@@ -575,7 +575,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2008:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                         | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                         | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
@@ -719,7 +719,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2008 R2:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                           | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                           | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
@@ -870,7 +870,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome comum**](a-cn.md)                                                                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                                       | Falso     | **Link de site**                   |
+| [**Custo**](a-cost.md)                                                                       | Falso     | **Link de site**                   |
 | [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |

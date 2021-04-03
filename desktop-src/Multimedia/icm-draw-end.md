@@ -54,7 +54,7 @@ As mensagens de final [**ICM \_ draw \_ begin**](icm-draw-begin.md) e **ICM \_ d
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

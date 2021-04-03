@@ -36,7 +36,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Frequência de atualização  | Quando um objeto é adicionado a um grupo administrativo. |
 | Attribute-Id      | 1.2.840.113556.1.4.150                              |
 | System-ID-GUID    | bf967918-0de6-11d0-a285-00aa003049e2                |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)                |
+| Syntax            | [**Enumeração**](s-enumeration.md)                |
 
 
 
@@ -66,7 +66,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

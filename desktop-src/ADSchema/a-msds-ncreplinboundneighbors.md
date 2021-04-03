@@ -36,7 +36,7 @@ Parceiros de replicação para esta partição. Esse servidor obtém dados de re
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1705                     |
 | System-ID-GUID    | 9edba85a-3e9e-431b-9b1a-a5b6e9eda796        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

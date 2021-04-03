@@ -40,7 +40,7 @@ A interface **IVMSerialPortCollection** tem essas propriedades.
 
 
 
-| Propriedade                                                         | Tipo de acesso          | Description                                                                |
+| Propriedade                                                         | Tipo de acesso          | Descrição                                                                |
 |:-----------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------|
 | [**\_NewEnum**](ivmserialportcollection--newenum.md)<br/> | Somente leitura<br/> | Um enumerador para a coleção.<br/>                               |
 | [**Contar**](ivmserialportcollection-count.md)<br/>        | Somente leitura<br/> | O número de portas seriais nesta coleção.<br/>                  |
@@ -65,7 +65,7 @@ A interface **IVMSerialPortCollection** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

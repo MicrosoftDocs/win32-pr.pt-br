@@ -17,7 +17,7 @@ Os protótipos de função a seguir são usados na rede do Windows.
 
 
 
-| Protótipo da função                                 | Descrição                                                                                                           |
+| Protótipo da função                                 | Description                                                                                                           |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [**PFNGETPROFILEPATH**](/previous-versions/windows/desktop/legacy/aa385358(v=vs.85))     | Protótipo para uma função que obtém um caminho de perfil de usuário.                                                            |
 | [**PFNPROCESSPOLICIES**](/previous-versions/windows/desktop/legacy/aa385360(v=vs.85))   | Protótipo para uma função que retorna as informações de política de conta de usuário associadas a um processo específico do Windows. |

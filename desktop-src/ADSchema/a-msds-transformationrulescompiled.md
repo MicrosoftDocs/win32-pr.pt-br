@@ -36,7 +36,7 @@ BLOB que contém regras de transformação compiladas.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2190                               |
 | System-ID-GUID    | 0bb49a10-536b-bc4d-a273-0bab0dd4bd10                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

@@ -36,7 +36,7 @@ A lista de nomes distintos de entidades de segurança concedeu esse privilégio.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.637                  |
 | System-ID-GUID    | 19405b9b-3cfa-11d1-a9c0-0000f80367c1    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
