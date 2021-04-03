@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822244"
 ---
-# <a name="ado-ldap-ranging-dialect"></a><span data-ttu-id="74de5-104">Dialeto de intervalo de LDAP do ADO</span><span class="sxs-lookup"><span data-stu-id="74de5-104">ADO LDAP Ranging Dialect</span></span>
+# <a name="ado-ldap-ranging-dialect"></a><span data-ttu-id="50c86-104">Dialeto de intervalo de LDAP do ADO</span><span class="sxs-lookup"><span data-stu-id="50c86-104">ADO LDAP Ranging Dialect</span></span>
 
-<span data-ttu-id="74de5-105">Ao usar ADO (ActiveX Directory Objects) com o dialeto LDAP, o atributo e o especificador de intervalo não exigem aspas.</span><span class="sxs-lookup"><span data-stu-id="74de5-105">When using ActiveX Directory Objects (ADO) with the LDAP dialect, the attribute and range specifier do not require quotation marks.</span></span>
+<span data-ttu-id="50c86-105">Ao usar ADO (ActiveX Directory Objects) com o dialeto LDAP, o atributo e o especificador de intervalo não exigem aspas.</span><span class="sxs-lookup"><span data-stu-id="50c86-105">When using ActiveX Directory Objects (ADO) with the LDAP dialect, the attribute and range specifier do not require quotation marks.</span></span>
 
-<span data-ttu-id="74de5-106">Veja a seguir um exemplo do dialeto ADO LDAP.</span><span class="sxs-lookup"><span data-stu-id="74de5-106">The following is an example of the ADO LDAP dialect.</span></span>
+<span data-ttu-id="50c86-106">Veja a seguir um exemplo do dialeto ADO LDAP.</span><span class="sxs-lookup"><span data-stu-id="50c86-106">The following is an example of the ADO LDAP dialect.</span></span>
 
 
 ```C++

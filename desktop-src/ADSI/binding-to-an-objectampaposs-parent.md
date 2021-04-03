@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822234"
 ---
-# <a name="binding-to-an-objects-parent"></a><span data-ttu-id="f83fa-104">Associando ao pai de um objeto</span><span class="sxs-lookup"><span data-stu-id="f83fa-104">Binding to an Object's Parent</span></span>
+# <a name="binding-to-an-objects-parent"></a><span data-ttu-id="b4638-104">Associando ao pai de um objeto</span><span class="sxs-lookup"><span data-stu-id="b4638-104">Binding to an Object's Parent</span></span>
 
-<span data-ttu-id="f83fa-105">Na ADSI, cada objeto de diretório é representado por um objeto COM ADSI que expõe a interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) .</span><span class="sxs-lookup"><span data-stu-id="f83fa-105">In ADSI, every directory object is represented by an ADSI COM object that exposes the [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) interface.</span></span> <span data-ttu-id="f83fa-106">Para obter o contêiner pai de um objeto, use o método [**IADs:: get \_ pai**](iads-property-methods.md) para obter o ADsPath do objeto pai e, em seguida, associe ao ADsPath do pai.</span><span class="sxs-lookup"><span data-stu-id="f83fa-106">To obtain the parent container of an object, use the [**IADs::get\_Parent**](iads-property-methods.md) method to obtain the ADsPath of the parent object, then bind to the ADsPath of the parent.</span></span>
+<span data-ttu-id="b4638-105">Na ADSI, cada objeto de diretório é representado por um objeto COM ADSI que expõe a interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) .</span><span class="sxs-lookup"><span data-stu-id="b4638-105">In ADSI, every directory object is represented by an ADSI COM object that exposes the [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) interface.</span></span> <span data-ttu-id="b4638-106">Para obter o contêiner pai de um objeto, use o método [**IADs:: get \_ pai**](iads-property-methods.md) para obter o ADsPath do objeto pai e, em seguida, associe ao ADsPath do pai.</span><span class="sxs-lookup"><span data-stu-id="b4638-106">To obtain the parent container of an object, use the [**IADs::get\_Parent**](iads-property-methods.md) method to obtain the ADsPath of the parent object, then bind to the ADsPath of the parent.</span></span>
 
-<span data-ttu-id="f83fa-107">O exemplo de código C++ a seguir mostra como obter o pai de um objeto.</span><span class="sxs-lookup"><span data-stu-id="f83fa-107">The following C++ code example shows how to obtain the parent of an object .</span></span>
+<span data-ttu-id="b4638-107">O exemplo de código C++ a seguir mostra como obter o pai de um objeto.</span><span class="sxs-lookup"><span data-stu-id="b4638-107">The following C++ code example shows how to obtain the parent of an object .</span></span>
 
 
 ```C++

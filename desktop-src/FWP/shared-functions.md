@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916444"
 ---
-# <a name="shared-functions"></a><span data-ttu-id="3568c-103">Funções compartilhadas</span><span class="sxs-lookup"><span data-stu-id="3568c-103">Shared Functions</span></span>
+# <a name="shared-functions"></a><span data-ttu-id="ba996-103">Funções compartilhadas</span><span class="sxs-lookup"><span data-stu-id="ba996-103">Shared Functions</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3568c-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3568c-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="ba996-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ba996-104">In this section</span></span>
 
--   [<span data-ttu-id="3568c-105">**FwpmFreeMemory0**</span><span class="sxs-lookup"><span data-stu-id="3568c-105">**FwpmFreeMemory0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfreememory0)
+-   [<span data-ttu-id="ba996-105">**FwpmFreeMemory0**</span><span class="sxs-lookup"><span data-stu-id="ba996-105">**FwpmFreeMemory0**</span></span>](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfreememory0)
 
  
 

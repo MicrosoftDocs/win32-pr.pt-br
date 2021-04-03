@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916570"
 ---
-# <a name="onewayudpclientexample"></a><span data-ttu-id="04865-106">OneWayUdpClientExample</span><span class="sxs-lookup"><span data-stu-id="04865-106">OneWayUdpClientExample</span></span>
+# <a name="onewayudpclientexample"></a><span data-ttu-id="1057b-106">OneWayUdpClientExample</span><span class="sxs-lookup"><span data-stu-id="1057b-106">OneWayUdpClientExample</span></span>
 
-<span data-ttu-id="04865-107">Este exemplo mostra um cliente UDP que envia uma mensagem unidirecional.</span><span class="sxs-lookup"><span data-stu-id="04865-107">This example shows a UDP client that sends a one-way messages.</span></span>
+<span data-ttu-id="1057b-107">Este exemplo mostra um cliente UDP que envia uma mensagem unidirecional.</span><span class="sxs-lookup"><span data-stu-id="1057b-107">This example shows a UDP client that sends a one-way messages.</span></span>
 
--   [<span data-ttu-id="04865-108">OneWayUdpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="04865-108">OneWayUdpClient.cpp</span></span>](#onewayudpclientcpp)
--   [<span data-ttu-id="04865-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="04865-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="04865-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="04865-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="1057b-108">OneWayUdpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="1057b-108">OneWayUdpClient.cpp</span></span>](#onewayudpclientcpp)
+-   [<span data-ttu-id="1057b-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="1057b-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="1057b-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="1057b-110">Makefile</span></span>](#makefile)
 
-## <a name="onewayudpclientcpp"></a><span data-ttu-id="04865-111">OneWayUdpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="04865-111">OneWayUdpClient.cpp</span></span>
+## <a name="onewayudpclientcpp"></a><span data-ttu-id="1057b-111">OneWayUdpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="1057b-111">OneWayUdpClient.cpp</span></span>
 
 
 ```C++
@@ -247,7 +247,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="04865-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="04865-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="1057b-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="1057b-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -358,7 +358,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="04865-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="04865-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="1057b-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="1057b-113">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------

@@ -18,13 +18,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822752"
 ---
-# <a name="musical-instrument-digital-interface-midi"></a><span data-ttu-id="0ae3d-109">MIDI (interface digital de instrumento musical)</span><span class="sxs-lookup"><span data-stu-id="0ae3d-109">Musical Instrument Digital Interface (MIDI)</span></span>
+# <a name="musical-instrument-digital-interface-midi"></a><span data-ttu-id="c6d05-109">MIDI (interface digital de instrumento musical)</span><span class="sxs-lookup"><span data-stu-id="c6d05-109">Musical Instrument Digital Interface (MIDI)</span></span>
 
-<span data-ttu-id="0ae3d-110">A MIDI (interface digital de instrumentos musicais) é um protocolo e um conjunto de comandos para armazenar e transmitir informações sobre música.</span><span class="sxs-lookup"><span data-stu-id="0ae3d-110">The Musical Instrument Digital Interface (MIDI) is a protocol and set of commands for storing and transmitting information about music.</span></span> <span data-ttu-id="0ae3d-111">Os dispositivos de saída de MIDI interpretam essas informações e as usam para sintetizar música.</span><span class="sxs-lookup"><span data-stu-id="0ae3d-111">MIDI output devices interpret this information and use it to synthesize music.</span></span>
+<span data-ttu-id="c6d05-110">A MIDI (interface digital de instrumentos musicais) é um protocolo e um conjunto de comandos para armazenar e transmitir informações sobre música.</span><span class="sxs-lookup"><span data-stu-id="c6d05-110">The Musical Instrument Digital Interface (MIDI) is a protocol and set of commands for storing and transmitting information about music.</span></span> <span data-ttu-id="c6d05-111">Os dispositivos de saída de MIDI interpretam essas informações e as usam para sintetizar música.</span><span class="sxs-lookup"><span data-stu-id="c6d05-111">MIDI output devices interpret this information and use it to synthesize music.</span></span>
 
--   [<span data-ttu-id="0ae3d-112">Sobre MIDI</span><span class="sxs-lookup"><span data-stu-id="0ae3d-112">About MIDI</span></span>](about-midi.md)
--   [<span data-ttu-id="0ae3d-113">Usando MIDI</span><span class="sxs-lookup"><span data-stu-id="0ae3d-113">Using MIDI</span></span>](using-midi.md)
--   [<span data-ttu-id="0ae3d-114">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="0ae3d-114">MIDI Reference</span></span>](midi-reference.md)
+-   [<span data-ttu-id="c6d05-112">Sobre MIDI</span><span class="sxs-lookup"><span data-stu-id="c6d05-112">About MIDI</span></span>](about-midi.md)
+-   [<span data-ttu-id="c6d05-113">Usando MIDI</span><span class="sxs-lookup"><span data-stu-id="c6d05-113">Using MIDI</span></span>](using-midi.md)
+-   [<span data-ttu-id="c6d05-114">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="c6d05-114">MIDI Reference</span></span>](midi-reference.md)
 
  
 

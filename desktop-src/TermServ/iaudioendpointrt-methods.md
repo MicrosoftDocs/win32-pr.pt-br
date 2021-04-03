@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822737"
 ---
-# <a name="iaudioendpointrt-methods"></a><span data-ttu-id="066b0-103">Métodos IAudioEndpointRT</span><span class="sxs-lookup"><span data-stu-id="066b0-103">IAudioEndpointRT Methods</span></span>
+# <a name="iaudioendpointrt-methods"></a><span data-ttu-id="11c98-103">Métodos IAudioEndpointRT</span><span class="sxs-lookup"><span data-stu-id="11c98-103">IAudioEndpointRT Methods</span></span>
 
-<span data-ttu-id="066b0-104">A interface [**IAudioEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointrt) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="066b0-104">The [**IAudioEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointrt) interface exposes the following methods.</span></span>
+<span data-ttu-id="11c98-104">A interface [**IAudioEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointrt) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="11c98-104">The [**IAudioEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointrt) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="066b0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="066b0-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="11c98-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="11c98-105">In this section</span></span>
 
--   [<span data-ttu-id="066b0-106">**Método GetCurrentPadding**</span><span class="sxs-lookup"><span data-stu-id="066b0-106">**GetCurrentPadding method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-getcurrentpadding)
--   [<span data-ttu-id="066b0-107">**Método ProcessingComplete**</span><span class="sxs-lookup"><span data-stu-id="066b0-107">**ProcessingComplete method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-processingcomplete)
--   [<span data-ttu-id="066b0-108">**Método SetPinActive**</span><span class="sxs-lookup"><span data-stu-id="066b0-108">**SetPinActive method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-setpinactive)
--   [<span data-ttu-id="066b0-109">**Método SetPinInactive**</span><span class="sxs-lookup"><span data-stu-id="066b0-109">**SetPinInactive method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-setpininactive)
+-   [<span data-ttu-id="11c98-106">**Método GetCurrentPadding**</span><span class="sxs-lookup"><span data-stu-id="11c98-106">**GetCurrentPadding method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-getcurrentpadding)
+-   [<span data-ttu-id="11c98-107">**Método ProcessingComplete**</span><span class="sxs-lookup"><span data-stu-id="11c98-107">**ProcessingComplete method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-processingcomplete)
+-   [<span data-ttu-id="11c98-108">**Método SetPinActive**</span><span class="sxs-lookup"><span data-stu-id="11c98-108">**SetPinActive method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-setpinactive)
+-   [<span data-ttu-id="11c98-109">**Método SetPinInactive**</span><span class="sxs-lookup"><span data-stu-id="11c98-109">**SetPinInactive method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointrt-setpininactive)
 
  
 

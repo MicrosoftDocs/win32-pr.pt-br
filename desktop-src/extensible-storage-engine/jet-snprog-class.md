@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646723"
 ---
-# <a name="jet_snprog-class"></a><span data-ttu-id="39002-103">Classe JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="39002-103">JET_SNPROG class</span></span>
+# <a name="jet_snprog-class"></a><span data-ttu-id="bae8a-103">Classe JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="bae8a-103">JET_SNPROG class</span></span>
 
-<span data-ttu-id="39002-104">Contém informações sobre o progresso de uma operação de execução longa.</span><span class="sxs-lookup"><span data-stu-id="39002-104">Contains information about the progress of a long-running operation.</span></span>
+<span data-ttu-id="bae8a-104">Contém informações sobre o progresso de uma operação de execução longa.</span><span class="sxs-lookup"><span data-stu-id="bae8a-104">Contains information about the progress of a long-running operation.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="39002-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="39002-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="bae8a-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="bae8a-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="39002-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="39002-106">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="39002-107">Microsoft.Isam.Esent.Interop.JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="39002-107">Microsoft.Isam.Esent.Interop.JET_SNPROG</span></span>  
+[<span data-ttu-id="bae8a-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="bae8a-106">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="bae8a-107">Microsoft.Isam.Esent.Interop.JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="bae8a-107">Microsoft.Isam.Esent.Interop.JET_SNPROG</span></span>  
 
-<span data-ttu-id="39002-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="39002-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="39002-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="39002-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="bae8a-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bae8a-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="bae8a-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bae8a-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="39002-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="39002-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bae8a-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="bae8a-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,14 +59,14 @@ Dim instance As JET_SNPROG
 public class JET_SNPROG : IEquatable<JET_SNPROG>
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="39002-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="39002-111">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="bae8a-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="bae8a-111">Thread safety</span></span>
 
-<span data-ttu-id="39002-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="39002-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="39002-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="39002-113">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="bae8a-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bae8a-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="bae8a-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bae8a-113">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="39002-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="39002-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bae8a-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="bae8a-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="39002-115">Referência</span><span class="sxs-lookup"><span data-stu-id="39002-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="bae8a-115">Referência</span><span class="sxs-lookup"><span data-stu-id="bae8a-115">Reference</span></span>
 
-[<span data-ttu-id="39002-116">Membros do JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="39002-116">JET_SNPROG members</span></span>](./jet-snprog-members.md)
+[<span data-ttu-id="bae8a-116">Membros do JET_SNPROG</span><span class="sxs-lookup"><span data-stu-id="bae8a-116">JET_SNPROG members</span></span>](./jet-snprog-members.md)
 
-[<span data-ttu-id="39002-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="39002-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="bae8a-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bae8a-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

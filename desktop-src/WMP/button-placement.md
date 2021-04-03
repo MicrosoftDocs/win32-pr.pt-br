@@ -19,15 +19,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822870"
 ---
-# <a name="button-placement"></a><span data-ttu-id="8e5c7-110">Posicionamento do botão</span><span class="sxs-lookup"><span data-stu-id="8e5c7-110">Button Placement</span></span>
+# <a name="button-placement"></a><span data-ttu-id="e07f2-110">Posicionamento do botão</span><span class="sxs-lookup"><span data-stu-id="e07f2-110">Button Placement</span></span>
 
-<span data-ttu-id="8e5c7-111">Embora você possa desenhar botões para qualquer forma, eles são tratados internamente como tendo um limite externo retangular.</span><span class="sxs-lookup"><span data-stu-id="8e5c7-111">Even though you can draw buttons to be any shape, they are treated internally as having a rectangular outer boundary.</span></span> <span data-ttu-id="8e5c7-112">Por esse motivo, evite sobreposição de coordenadas de botão porque podem ocorrer resultados inesperados.</span><span class="sxs-lookup"><span data-stu-id="8e5c7-112">For this reason, avoid overlapping button coordinates because unexpected results may occur.</span></span>
+<span data-ttu-id="e07f2-111">Embora você possa desenhar botões para qualquer forma, eles são tratados internamente como tendo um limite externo retangular.</span><span class="sxs-lookup"><span data-stu-id="e07f2-111">Even though you can draw buttons to be any shape, they are treated internally as having a rectangular outer boundary.</span></span> <span data-ttu-id="e07f2-112">Por esse motivo, evite sobreposição de coordenadas de botão porque podem ocorrer resultados inesperados.</span><span class="sxs-lookup"><span data-stu-id="e07f2-112">For this reason, avoid overlapping button coordinates because unexpected results may occur.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="8e5c7-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8e5c7-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e07f2-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e07f2-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8e5c7-114">**Arquivos de arte**</span><span class="sxs-lookup"><span data-stu-id="8e5c7-114">**Art Files**</span></span>](art-files.md)
+[<span data-ttu-id="e07f2-114">**Arquivos de arte**</span><span class="sxs-lookup"><span data-stu-id="e07f2-114">**Art Files**</span></span>](art-files.md)
 </dt> </dl>
 
  

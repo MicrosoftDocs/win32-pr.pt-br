@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916728"
 ---
-# <a name="rasadminconnectionhangupnotification-callback-function"></a><span data-ttu-id="ed3f9-105">Função de retorno de chamada RasAdminConnectionHangupNotification</span><span class="sxs-lookup"><span data-stu-id="ed3f9-105">RasAdminConnectionHangupNotification callback function</span></span>
+# <a name="rasadminconnectionhangupnotification-callback-function"></a><span data-ttu-id="a4e54-105">Função de retorno de chamada RasAdminConnectionHangupNotification</span><span class="sxs-lookup"><span data-stu-id="a4e54-105">RasAdminConnectionHangupNotification callback function</span></span>
 
-<span data-ttu-id="ed3f9-106">Não há suporte para essa função de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="ed3f9-106">This callback function is not supported.</span></span>
+<span data-ttu-id="a4e54-106">Não há suporte para essa função de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="a4e54-106">This callback function is not supported.</span></span>
 
  
 

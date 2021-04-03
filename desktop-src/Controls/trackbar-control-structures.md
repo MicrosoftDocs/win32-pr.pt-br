@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822575"
 ---
-# <a name="trackbar-control-structures"></a><span data-ttu-id="6a6ae-103">Estruturas de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="6a6ae-103">Trackbar Control Structures</span></span>
+# <a name="trackbar-control-structures"></a><span data-ttu-id="4e723-103">Estruturas de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="4e723-103">Trackbar Control Structures</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="6a6ae-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6a6ae-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4e723-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4e723-104">In This Section</span></span>
 
--   [<span data-ttu-id="6a6ae-105">**NMTRBTHUMBPOSCHANGING**</span><span class="sxs-lookup"><span data-stu-id="6a6ae-105">**NMTRBTHUMBPOSCHANGING**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmtrbthumbposchanging)
+-   [<span data-ttu-id="4e723-105">**NMTRBTHUMBPOSCHANGING**</span><span class="sxs-lookup"><span data-stu-id="4e723-105">**NMTRBTHUMBPOSCHANGING**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmtrbthumbposchanging)
 
  
 

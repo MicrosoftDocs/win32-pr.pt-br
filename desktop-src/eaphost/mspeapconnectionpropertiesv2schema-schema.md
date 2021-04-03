@@ -16,21 +16,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "103823486"
 ---
-# <a name="mspeapconnectionpropertiesv2-schema"></a><span data-ttu-id="80d3d-103">Esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="80d3d-103">mspeapconnectionpropertiesv2 Schema</span></span>
+# <a name="mspeapconnectionpropertiesv2-schema"></a><span data-ttu-id="7be13-103">Esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="7be13-103">mspeapconnectionpropertiesv2 Schema</span></span>
 
-<span data-ttu-id="80d3d-104">O esquema mspeapconnectionpropertiesv2 define os dados de configuração de autenticação usando o protocolo PEAP no Windows 7 e versões posteriores do Windows.</span><span class="sxs-lookup"><span data-stu-id="80d3d-104">The mspeapconnectionpropertiesv2 schema defines authentication configuration data using Protected Extensible Authentication Protocol (PEAP) in Windows 7 and later versions of Windows.</span></span>
+<span data-ttu-id="7be13-104">O esquema mspeapconnectionpropertiesv2 define os dados de configuração de autenticação usando o protocolo PEAP no Windows 7 e versões posteriores do Windows.</span><span class="sxs-lookup"><span data-stu-id="7be13-104">The mspeapconnectionpropertiesv2 schema defines authentication configuration data using Protected Extensible Authentication Protocol (PEAP) in Windows 7 and later versions of Windows.</span></span>
 
--   [<span data-ttu-id="80d3d-105">Elementos do esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="80d3d-105">mspeapconnectionpropertiesv2 Schema Elements</span></span>](mspeapconnectionpropertiesv2schema-elements.md)
--   [<span data-ttu-id="80d3d-106">Tipos complexos de esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="80d3d-106">mspeapconnectionpropertiesv2 Schema Complex Types</span></span>](mspeapconnectionpropertiesv2schema-complex-types.md)
+-   [<span data-ttu-id="7be13-105">Elementos do esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="7be13-105">mspeapconnectionpropertiesv2 Schema Elements</span></span>](mspeapconnectionpropertiesv2schema-elements.md)
+-   [<span data-ttu-id="7be13-106">Tipos complexos de esquema mspeapconnectionpropertiesv2</span><span class="sxs-lookup"><span data-stu-id="7be13-106">mspeapconnectionpropertiesv2 Schema Complex Types</span></span>](mspeapconnectionpropertiesv2schema-complex-types.md)
 
-## <a name="related-topics"></a><span data-ttu-id="80d3d-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="80d3d-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7be13-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7be13-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="80d3d-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="80d3d-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="7be13-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="7be13-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="80d3d-109">Esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="80d3d-109">mspeapconnectionpropertiesv1 Schema</span></span>](mspeapconnectionpropertiesv1schema-schema.md)
+[<span data-ttu-id="7be13-109">Esquema mspeapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="7be13-109">mspeapconnectionpropertiesv1 Schema</span></span>](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

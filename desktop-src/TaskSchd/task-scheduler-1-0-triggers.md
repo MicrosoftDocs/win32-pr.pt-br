@@ -11,21 +11,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822513"
 ---
-# <a name="task-scheduler-10-triggers"></a><span data-ttu-id="9b9be-104">Agendador de Tarefas gatilhos 1,0</span><span class="sxs-lookup"><span data-stu-id="9b9be-104">Task Scheduler 1.0 Triggers</span></span>
+# <a name="task-scheduler-10-triggers"></a><span data-ttu-id="05e30-104">Agendador de Tarefas gatilhos 1,0</span><span class="sxs-lookup"><span data-stu-id="05e30-104">Task Scheduler 1.0 Triggers</span></span>
 
-<span data-ttu-id="9b9be-105">Os tópicos a seguir se referem a gatilhos usados por Agendador de Tarefas tarefas 1,0.</span><span class="sxs-lookup"><span data-stu-id="9b9be-105">The following topics refer to triggers used by Task Scheduler 1.0 tasks.</span></span> <span data-ttu-id="9b9be-106">Eles estão incluídos aqui para os desenvolvedores que estão olhando para o código existente.</span><span class="sxs-lookup"><span data-stu-id="9b9be-106">They are included here for developers who are looking at existing code.</span></span>
+<span data-ttu-id="05e30-105">Os tópicos a seguir se referem a gatilhos usados por Agendador de Tarefas tarefas 1,0.</span><span class="sxs-lookup"><span data-stu-id="05e30-105">The following topics refer to triggers used by Task Scheduler 1.0 tasks.</span></span> <span data-ttu-id="05e30-106">Eles estão incluídos aqui para os desenvolvedores que estão olhando para o código existente.</span><span class="sxs-lookup"><span data-stu-id="05e30-106">They are included here for developers who are looking at existing code.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="9b9be-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9b9be-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="05e30-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="05e30-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9b9be-108">Estruturas de gatilho</span><span class="sxs-lookup"><span data-stu-id="9b9be-108">Trigger Structures</span></span>](trigger-structures.md)
+[<span data-ttu-id="05e30-108">Estruturas de gatilho</span><span class="sxs-lookup"><span data-stu-id="05e30-108">Trigger Structures</span></span>](trigger-structures.md)
 </dt> <dt>
 
-[<span data-ttu-id="9b9be-109">Gatilhos ociosos</span><span class="sxs-lookup"><span data-stu-id="9b9be-109">Idle Triggers</span></span>](idle-triggers.md)
+[<span data-ttu-id="05e30-109">Gatilhos ociosos</span><span class="sxs-lookup"><span data-stu-id="05e30-109">Idle Triggers</span></span>](idle-triggers.md)
 </dt> <dt>
 
-[<span data-ttu-id="9b9be-110">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="9b9be-110">Task Scheduler</span></span>](task-scheduler-start-page.md)
+[<span data-ttu-id="05e30-110">Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="05e30-110">Task Scheduler</span></span>](task-scheduler-start-page.md)
 </dt> </dl>
 
  

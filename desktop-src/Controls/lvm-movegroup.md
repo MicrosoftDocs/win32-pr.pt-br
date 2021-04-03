@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916692"
 ---
-# <a name="lvm_movegroup-message"></a><span data-ttu-id="1011d-104">Mensagem de movimentação do LVM \_</span><span class="sxs-lookup"><span data-stu-id="1011d-104">LVM\_MOVEGROUP message</span></span>
+# <a name="lvm_movegroup-message"></a><span data-ttu-id="b5b46-104">Mensagem de movimentação do LVM \_</span><span class="sxs-lookup"><span data-stu-id="b5b46-104">LVM\_MOVEGROUP message</span></span>
 
-<span data-ttu-id="1011d-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="1011d-105">This message is not implemented.</span></span>
+<span data-ttu-id="b5b46-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="b5b46-105">This message is not implemented.</span></span>
 
  
 

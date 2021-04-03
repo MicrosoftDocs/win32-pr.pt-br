@@ -15,17 +15,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822204"
 ---
-# <a name="ldap-dialect"></a><span data-ttu-id="7d3b6-105">Dialeto LDAP</span><span class="sxs-lookup"><span data-stu-id="7d3b6-105">LDAP Dialect</span></span>
+# <a name="ldap-dialect"></a><span data-ttu-id="2a9cc-105">Dialeto LDAP</span><span class="sxs-lookup"><span data-stu-id="2a9cc-105">LDAP Dialect</span></span>
 
-<span data-ttu-id="7d3b6-106">O dialeto LDAP é um formato para instruções de consulta que usam a [sintaxe de filtro de pesquisa LDAP](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="7d3b6-106">The LDAP dialect is a format for query statements that use the [LDAP search filter syntax](search-filter-syntax.md).</span></span> <span data-ttu-id="7d3b6-107">Use uma instrução de consulta LDAP com as seguintes interfaces de pesquisa ADSI:</span><span class="sxs-lookup"><span data-stu-id="7d3b6-107">Use an LDAP query statement with the following ADSI search interfaces:</span></span>
+<span data-ttu-id="2a9cc-106">O dialeto LDAP é um formato para instruções de consulta que usam a [sintaxe de filtro de pesquisa LDAP](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="2a9cc-106">The LDAP dialect is a format for query statements that use the [LDAP search filter syntax](search-filter-syntax.md).</span></span> <span data-ttu-id="2a9cc-107">Use uma instrução de consulta LDAP com as seguintes interfaces de pesquisa ADSI:</span><span class="sxs-lookup"><span data-stu-id="2a9cc-107">Use an LDAP query statement with the following ADSI search interfaces:</span></span>
 
--   <span data-ttu-id="7d3b6-108">As interfaces [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , que são interfaces de automação que usam OLE DB.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-108">The [ActiveX Data Object (ADO)](searching-with-activex-data-objects-ado.md) interfaces, which are Automation interfaces that use OLE DB.</span></span>
--   <span data-ttu-id="7d3b6-109">[OLE DB](searching-with-ole-db.md), que é um conjunto de interfaces C/C++ para consultar bancos de dados.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-109">[OLE DB](searching-with-ole-db.md), which is a set of C/C++ interfaces for querying databases.</span></span>
--   <span data-ttu-id="7d3b6-110">[**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), que é a interface C/C++ para Active Directory.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-110">[**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), which is the C/C++ interface for Active Directory.</span></span>
+-   <span data-ttu-id="2a9cc-108">As interfaces [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , que são interfaces de automação que usam OLE DB.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-108">The [ActiveX Data Object (ADO)](searching-with-activex-data-objects-ado.md) interfaces, which are Automation interfaces that use OLE DB.</span></span>
+-   <span data-ttu-id="2a9cc-109">[OLE DB](searching-with-ole-db.md), que é um conjunto de interfaces C/C++ para consultar bancos de dados.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-109">[OLE DB](searching-with-ole-db.md), which is a set of C/C++ interfaces for querying databases.</span></span>
+-   <span data-ttu-id="2a9cc-110">[**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), que é a interface C/C++ para Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-110">[**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), which is the C/C++ interface for Active Directory.</span></span>
 
-<span data-ttu-id="7d3b6-111">Uma cadeia de caracteres de dialeto LDAP consiste em quatro partes separadas por ponto e vírgula (;).</span><span class="sxs-lookup"><span data-stu-id="7d3b6-111">An LDAP dialect string consists of four parts separated by semicolons (;).</span></span>
+<span data-ttu-id="2a9cc-111">Uma cadeia de caracteres de dialeto LDAP consiste em quatro partes separadas por ponto e vírgula (;).</span><span class="sxs-lookup"><span data-stu-id="2a9cc-111">An LDAP dialect string consists of four parts separated by semicolons (;).</span></span>
 
--   <span data-ttu-id="7d3b6-112">Nome distinto base.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-112">Base distinguished name.</span></span> <span data-ttu-id="7d3b6-113">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="7d3b6-113">For example:</span></span>
+-   <span data-ttu-id="2a9cc-112">Nome distinto base.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-112">Base distinguished name.</span></span> <span data-ttu-id="2a9cc-113">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="2a9cc-113">For example:</span></span>
 
     ```VB
     <LDAP://DC=Fabrikam,DC=COM>
@@ -33,11 +33,11 @@ ms.locfileid: "103822204"
 
     
 
--   <span data-ttu-id="7d3b6-114">Filtros de pesquisa LDAP.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-114">LDAP search filters.</span></span> <span data-ttu-id="7d3b6-115">Para obter mais informações sobre filtros de pesquisa, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="7d3b6-115">For more information about search filters, see [Search Filter Syntax](search-filter-syntax.md).</span></span>
--   <span data-ttu-id="7d3b6-116">O nome de exibição LDAP dos atributos a serem recuperados.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-116">The LDAP display name of the attributes to retrieve.</span></span> <span data-ttu-id="7d3b6-117">Vários atributos são separados por uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-117">Multiple attributes are separated by a comma.</span></span>
--   <span data-ttu-id="7d3b6-118">Especifica o escopo da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-118">Specifies the scope of the search.</span></span> <span data-ttu-id="7d3b6-119">Os valores válidos são "base", "OneLevel" e "Subtree".</span><span class="sxs-lookup"><span data-stu-id="7d3b6-119">Valid values are "base", "onelevel", and "subtree".</span></span> <span data-ttu-id="7d3b6-120">O escopo especificado em uma cadeia de caracteres de consulta LDAP substitui qualquer escopo de pesquisa especificado pela propriedade "SearchScope" do objeto de comando ADO.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-120">The scope specified in an LDAP query string overrides any search scope specified with the "SearchScope" property of the ADO Command object.</span></span>
+-   <span data-ttu-id="2a9cc-114">Filtros de pesquisa LDAP.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-114">LDAP search filters.</span></span> <span data-ttu-id="2a9cc-115">Para obter mais informações sobre filtros de pesquisa, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="2a9cc-115">For more information about search filters, see [Search Filter Syntax](search-filter-syntax.md).</span></span>
+-   <span data-ttu-id="2a9cc-116">O nome de exibição LDAP dos atributos a serem recuperados.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-116">The LDAP display name of the attributes to retrieve.</span></span> <span data-ttu-id="2a9cc-117">Vários atributos são separados por uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-117">Multiple attributes are separated by a comma.</span></span>
+-   <span data-ttu-id="2a9cc-118">Especifica o escopo da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-118">Specifies the scope of the search.</span></span> <span data-ttu-id="2a9cc-119">Os valores válidos são "base", "OneLevel" e "Subtree".</span><span class="sxs-lookup"><span data-stu-id="2a9cc-119">Valid values are "base", "onelevel", and "subtree".</span></span> <span data-ttu-id="2a9cc-120">O escopo especificado em uma cadeia de caracteres de consulta LDAP substitui qualquer escopo de pesquisa especificado pela propriedade "SearchScope" do objeto de comando ADO.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-120">The scope specified in an LDAP query string overrides any search scope specified with the "SearchScope" property of the ADO Command object.</span></span>
 
-<span data-ttu-id="7d3b6-121">Veja a seguir um exemplo de código do dialeto LDAP no ADSI que pesquisa todos os objetos na subárvore.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-121">The following is a code example of the LDAP dialect in ADSI that searches all the objects in the subtree.</span></span>
+<span data-ttu-id="2a9cc-121">Veja a seguir um exemplo de código do dialeto LDAP no ADSI que pesquisa todos os objetos na subárvore.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-121">The following is a code example of the LDAP dialect in ADSI that searches all the objects in the subtree.</span></span>
 
 
 ```VB
@@ -46,11 +46,11 @@ ms.locfileid: "103822204"
 
 
 
-<span data-ttu-id="7d3b6-122">Nem todas as opções de pesquisa (o tamanho da página de pesquisa, por exemplo) podem ser expressas no dialeto LDAP, portanto, você deve definir as opções antes que a execução real da consulta seja iniciada.</span><span class="sxs-lookup"><span data-stu-id="7d3b6-122">Not all search options (search page size, for example) can be expressed in the LDAP dialect, so you must set the options before the actual query execution starts.</span></span>
+<span data-ttu-id="2a9cc-122">Nem todas as opções de pesquisa (o tamanho da página de pesquisa, por exemplo) podem ser expressas no dialeto LDAP, portanto, você deve definir as opções antes que a execução real da consulta seja iniciada.</span><span class="sxs-lookup"><span data-stu-id="2a9cc-122">Not all search options (search page size, for example) can be expressed in the LDAP dialect, so you must set the options before the actual query execution starts.</span></span>
 
-## <a name="example-code-for-performing-an-ldap-query"></a><span data-ttu-id="7d3b6-123">Exemplo de código para executar uma consulta LDAP</span><span class="sxs-lookup"><span data-stu-id="7d3b6-123">Example Code for Performing an LDAP Query</span></span>
+## <a name="example-code-for-performing-an-ldap-query"></a><span data-ttu-id="2a9cc-123">Exemplo de código para executar uma consulta LDAP</span><span class="sxs-lookup"><span data-stu-id="2a9cc-123">Example Code for Performing an LDAP Query</span></span>
 
-<span data-ttu-id="7d3b6-124">O exemplo de código a seguir mostra como usar uma consulta LDAP</span><span class="sxs-lookup"><span data-stu-id="7d3b6-124">The following code example shows how to use an LDAP query</span></span>
+<span data-ttu-id="2a9cc-124">O exemplo de código a seguir mostra como usar uma consulta LDAP</span><span class="sxs-lookup"><span data-stu-id="2a9cc-124">The following code example shows how to use an LDAP query</span></span>
 
 
 ```VB
@@ -106,25 +106,25 @@ Debug.Print "No. of rows = ", rs.RecordCount
 
 
 
-<span data-ttu-id="7d3b6-125">Para obter detalhes sobre a sintaxe de consulta, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="7d3b6-125">For details about the query syntax, see [Search Filter Syntax](search-filter-syntax.md).</span></span>
+<span data-ttu-id="2a9cc-125">Para obter detalhes sobre a sintaxe de consulta, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).</span><span class="sxs-lookup"><span data-stu-id="2a9cc-125">For details about the query syntax, see [Search Filter Syntax](search-filter-syntax.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="7d3b6-126">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7d3b6-126">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2a9cc-126">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="2a9cc-126">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7d3b6-127">Sintaxe do filtro de pesquisa</span><span class="sxs-lookup"><span data-stu-id="7d3b6-127">Search Filter Syntax</span></span>](search-filter-syntax.md)
+[<span data-ttu-id="2a9cc-127">Sintaxe do filtro de pesquisa</span><span class="sxs-lookup"><span data-stu-id="2a9cc-127">Search Filter Syntax</span></span>](search-filter-syntax.md)
 </dt> <dt>
 
-[<span data-ttu-id="7d3b6-128">Dialeto SQL</span><span class="sxs-lookup"><span data-stu-id="7d3b6-128">SQL dialect</span></span>](sql-dialect.md)
+[<span data-ttu-id="2a9cc-128">Dialeto SQL</span><span class="sxs-lookup"><span data-stu-id="2a9cc-128">SQL dialect</span></span>](sql-dialect.md)
 </dt> <dt>
 
-[<span data-ttu-id="7d3b6-129">Pesquisando com a interface IDirectorySearch</span><span class="sxs-lookup"><span data-stu-id="7d3b6-129">Searching with the IDirectorySearch Interface</span></span>](searching-with-idirectorysearch.md)
+[<span data-ttu-id="2a9cc-129">Pesquisando com a interface IDirectorySearch</span><span class="sxs-lookup"><span data-stu-id="2a9cc-129">Searching with the IDirectorySearch Interface</span></span>](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[<span data-ttu-id="7d3b6-130">Pesquisando com ActiveX Data Objects</span><span class="sxs-lookup"><span data-stu-id="7d3b6-130">Searching with ActiveX Data Objects</span></span>](searching-with-activex-data-objects-ado.md)
+[<span data-ttu-id="2a9cc-130">Pesquisando com ActiveX Data Objects</span><span class="sxs-lookup"><span data-stu-id="2a9cc-130">Searching with ActiveX Data Objects</span></span>](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
-[<span data-ttu-id="7d3b6-131">Pesquisando com OLE DB</span><span class="sxs-lookup"><span data-stu-id="7d3b6-131">Searching with OLE DB</span></span>](searching-with-ole-db.md)
+[<span data-ttu-id="2a9cc-131">Pesquisando com OLE DB</span><span class="sxs-lookup"><span data-stu-id="2a9cc-131">Searching with OLE DB</span></span>](searching-with-ole-db.md)
 </dt> </dl>
 
  

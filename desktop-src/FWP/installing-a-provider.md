@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822485"
 ---
-# <a name="installing-a-provider"></a><span data-ttu-id="1ae21-103">Instalando um provedor</span><span class="sxs-lookup"><span data-stu-id="1ae21-103">Installing a Provider</span></span>
+# <a name="installing-a-provider"></a><span data-ttu-id="b3577-103">Instalando um provedor</span><span class="sxs-lookup"><span data-stu-id="b3577-103">Installing a Provider</span></span>
 
-<span data-ttu-id="1ae21-104">O código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem do Windows.</span><span class="sxs-lookup"><span data-stu-id="1ae21-104">The following sample code demonstrates the provider installation operation of the Windows Filtering Platform.</span></span>
+<span data-ttu-id="b3577-104">O código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem do Windows.</span><span class="sxs-lookup"><span data-stu-id="b3577-104">The following sample code demonstrates the provider installation operation of the Windows Filtering Platform.</span></span>
 
 
 ```C++

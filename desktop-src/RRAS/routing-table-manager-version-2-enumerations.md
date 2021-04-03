@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822606"
 ---
-# <a name="routing-table-manager-version-2-enumerations"></a><span data-ttu-id="8167b-105">Enumerações do Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="8167b-105">Routing Table Manager Version 2 Enumerations</span></span>
+# <a name="routing-table-manager-version-2-enumerations"></a><span data-ttu-id="22662-105">Enumerações do Gerenciador de tabela de roteamento versão 2</span><span class="sxs-lookup"><span data-stu-id="22662-105">Routing Table Manager Version 2 Enumerations</span></span>
 
-<span data-ttu-id="8167b-106">As funções RTMv2 usam a seguinte enumeração:</span><span class="sxs-lookup"><span data-stu-id="8167b-106">The RTMv2 functions use the following enumeration:</span></span>
+<span data-ttu-id="22662-106">As funções RTMv2 usam a seguinte enumeração:</span><span class="sxs-lookup"><span data-stu-id="22662-106">The RTMv2 functions use the following enumeration:</span></span>
 
-[<span data-ttu-id="8167b-107">**\_tipo de evento RTM \_**</span><span class="sxs-lookup"><span data-stu-id="8167b-107">**RTM\_EVENT\_TYPE**</span></span>](/windows/desktop/api/Rtmv2/ne-rtmv2-rtm_event_type)
+[<span data-ttu-id="22662-107">**\_tipo de evento RTM \_**</span><span class="sxs-lookup"><span data-stu-id="22662-107">**RTM\_EVENT\_TYPE**</span></span>](/windows/desktop/api/Rtmv2/ne-rtmv2-rtm_event_type)
 
  
 

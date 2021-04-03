@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822840"
 ---
-# <a name="sample-video-section"></a><span data-ttu-id="1a57d-108">Exemplo de seção de vídeo</span><span class="sxs-lookup"><span data-stu-id="1a57d-108">Sample Video Section</span></span>
+# <a name="sample-video-section"></a><span data-ttu-id="18e1d-108">Exemplo de seção de vídeo</span><span class="sxs-lookup"><span data-stu-id="18e1d-108">Sample Video Section</span></span>
 
-<span data-ttu-id="1a57d-109">As linhas a seguir mostram uma seção de vídeo típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="1a57d-109">The following lines show a typical Video section of a skin definition file:</span></span>
+<span data-ttu-id="18e1d-109">As linhas a seguir mostram uma seção de vídeo típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="18e1d-109">The following lines show a typical Video section of a skin definition file:</span></span>
 
 
 ```C++
@@ -33,11 +33,11 @@ ms.locfileid: "103822840"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="1a57d-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1a57d-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="18e1d-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="18e1d-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1a57d-111">**Vídeo**</span><span class="sxs-lookup"><span data-stu-id="1a57d-111">**Video**</span></span>](video.md)
+[<span data-ttu-id="18e1d-111">**Vídeo**</span><span class="sxs-lookup"><span data-stu-id="18e1d-111">**Video**</span></span>](video.md)
 </dt> </dl>
 
  

@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916818"
 ---
-# <a name="itssbloadbalanceresult-properties"></a><span data-ttu-id="49b50-103">Propriedades de ITsSbLoadBalanceResult</span><span class="sxs-lookup"><span data-stu-id="49b50-103">ITsSbLoadBalanceResult Properties</span></span>
+# <a name="itssbloadbalanceresult-properties"></a><span data-ttu-id="e9f3f-103">Propriedades de ITsSbLoadBalanceResult</span><span class="sxs-lookup"><span data-stu-id="e9f3f-103">ITsSbLoadBalanceResult Properties</span></span>
 
-<span data-ttu-id="49b50-104">A interface [**ITsSbLoadBalanceResult**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalanceresult) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="49b50-104">The [**ITsSbLoadBalanceResult**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalanceresult) interface exposes the following properties.</span></span>
+<span data-ttu-id="e9f3f-104">A interface [**ITsSbLoadBalanceResult**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalanceresult) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e9f3f-104">The [**ITsSbLoadBalanceResult**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalanceresult) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="49b50-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="49b50-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e9f3f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e9f3f-105">In this section</span></span>
 
--   [<span data-ttu-id="49b50-106">**Propriedade TargetName**</span><span class="sxs-lookup"><span data-stu-id="49b50-106">**TargetName property**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbloadbalanceresult-get_targetname)
+-   [<span data-ttu-id="e9f3f-106">**Propriedade TargetName**</span><span class="sxs-lookup"><span data-stu-id="e9f3f-106">**TargetName property**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbloadbalanceresult-get_targetname)
 
  
 

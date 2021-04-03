@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823128"
 ---
-# <a name="rb_getextendedstyle-message"></a><span data-ttu-id="3d5c4-104">\_Mensagem RB Extended</span><span class="sxs-lookup"><span data-stu-id="3d5c4-104">RB\_GETEXTENDEDSTYLE message</span></span>
+# <a name="rb_getextendedstyle-message"></a><span data-ttu-id="a3b33-104">\_Mensagem RB Extended</span><span class="sxs-lookup"><span data-stu-id="a3b33-104">RB\_GETEXTENDEDSTYLE message</span></span>
 
-<span data-ttu-id="3d5c4-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="3d5c4-105">This message is not implemented.</span></span>
+<span data-ttu-id="a3b33-105">Esta mensagem não está implementada.</span><span class="sxs-lookup"><span data-stu-id="a3b33-105">This message is not implemented.</span></span>
 
  
 

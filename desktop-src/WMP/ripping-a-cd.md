@@ -21,20 +21,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822846"
 ---
-# <a name="ripping-a-cd"></a><span data-ttu-id="27bde-112">Copiando um CD</span><span class="sxs-lookup"><span data-stu-id="27bde-112">Ripping a CD</span></span>
+# <a name="ripping-a-cd"></a><span data-ttu-id="92b96-112">Copiando um CD</span><span class="sxs-lookup"><span data-stu-id="92b96-112">Ripping a CD</span></span>
 
-<span data-ttu-id="27bde-113">Há duas maneiras de copiar um CD usando o controle do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="27bde-113">There are two ways to rip a CD by using the Windows Media Player control.</span></span> <span data-ttu-id="27bde-114">O Windows Media Player 9 pode copiar CDs usando **IWMPPlayerServices:: setTaskPane**.</span><span class="sxs-lookup"><span data-stu-id="27bde-114">Windows Media Player 9 can rip CDs by using **IWMPPlayerServices::setTaskPane**.</span></span> <span data-ttu-id="27bde-115">O Windows Media Player 11 apresenta a interface **IWMPCdromRip** para copiar CDs.</span><span class="sxs-lookup"><span data-stu-id="27bde-115">Windows Media Player 11 introduces the **IWMPCdromRip** interface for ripping CDs.</span></span> <span data-ttu-id="27bde-116">Essa interface fornece mais funcionalidade do que **IWMPPlayerServices:: setTaskPane**, e é recomendável que você use o **IWMPCdromRip** se ele estiver disponível.</span><span class="sxs-lookup"><span data-stu-id="27bde-116">This interface provides more functionality than **IWMPPlayerServices::setTaskPane**, and it is recommended that you use **IWMPCdromRip** if it is available.</span></span>
+<span data-ttu-id="92b96-113">Há duas maneiras de copiar um CD usando o controle do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="92b96-113">There are two ways to rip a CD by using the Windows Media Player control.</span></span> <span data-ttu-id="92b96-114">O Windows Media Player 9 pode copiar CDs usando **IWMPPlayerServices:: setTaskPane**.</span><span class="sxs-lookup"><span data-stu-id="92b96-114">Windows Media Player 9 can rip CDs by using **IWMPPlayerServices::setTaskPane**.</span></span> <span data-ttu-id="92b96-115">O Windows Media Player 11 apresenta a interface **IWMPCdromRip** para copiar CDs.</span><span class="sxs-lookup"><span data-stu-id="92b96-115">Windows Media Player 11 introduces the **IWMPCdromRip** interface for ripping CDs.</span></span> <span data-ttu-id="92b96-116">Essa interface fornece mais funcionalidade do que **IWMPPlayerServices:: setTaskPane**, e é recomendável que você use o **IWMPCdromRip** se ele estiver disponível.</span><span class="sxs-lookup"><span data-stu-id="92b96-116">This interface provides more functionality than **IWMPPlayerServices::setTaskPane**, and it is recommended that you use **IWMPCdromRip** if it is available.</span></span>
 
-<span data-ttu-id="27bde-117">As seções a seguir descrevem como copiar um CD usando o Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="27bde-117">The following sections describe how to rip a CD by using Windows Media Player.</span></span>
+<span data-ttu-id="92b96-117">As seções a seguir descrevem como copiar um CD usando o Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="92b96-117">The following sections describe how to rip a CD by using Windows Media Player.</span></span>
 
--   [<span data-ttu-id="27bde-118">Copiando usando a interface IWMPCdromRip</span><span class="sxs-lookup"><span data-stu-id="27bde-118">Ripping by Using the IWMPCdromRip Interface</span></span>](ripping-by-using-the-iwmpcdromrip-interface.md)
--   [<span data-ttu-id="27bde-119">Copiando por meio de IWMPPlayerServices:: setTaskPane</span><span class="sxs-lookup"><span data-stu-id="27bde-119">Ripping by Using IWMPPlayerServices::setTaskPane</span></span>](ripping-by-using-iwmpplayerservices--settaskpane.md)
+-   [<span data-ttu-id="92b96-118">Copiando usando a interface IWMPCdromRip</span><span class="sxs-lookup"><span data-stu-id="92b96-118">Ripping by Using the IWMPCdromRip Interface</span></span>](ripping-by-using-the-iwmpcdromrip-interface.md)
+-   [<span data-ttu-id="92b96-119">Copiando por meio de IWMPPlayerServices:: setTaskPane</span><span class="sxs-lookup"><span data-stu-id="92b96-119">Ripping by Using IWMPPlayerServices::setTaskPane</span></span>](ripping-by-using-iwmpplayerservices--settaskpane.md)
 
-## <a name="related-topics"></a><span data-ttu-id="27bde-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="27bde-120">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="92b96-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="92b96-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="27bde-121">**Guia de controle do Player**</span><span class="sxs-lookup"><span data-stu-id="27bde-121">**Player Control Guide**</span></span>](player-control-guide.md)
+[<span data-ttu-id="92b96-121">**Guia de controle do Player**</span><span class="sxs-lookup"><span data-stu-id="92b96-121">**Player Control Guide**</span></span>](player-control-guide.md)
 </dt> </dl>
 
  

@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916237"
 ---
-# <a name="itspubplugin-methods"></a><span data-ttu-id="9230e-103">Métodos ItsPubPlugin</span><span class="sxs-lookup"><span data-stu-id="9230e-103">ItsPubPlugin Methods</span></span>
+# <a name="itspubplugin-methods"></a><span data-ttu-id="5cddb-103">Métodos ItsPubPlugin</span><span class="sxs-lookup"><span data-stu-id="5cddb-103">ItsPubPlugin Methods</span></span>
 
-<span data-ttu-id="9230e-104">A interface [**ItsPubPlugin**](/windows/desktop/api/tspubplugincom/nn-tspubplugincom-itspubplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="9230e-104">The [**ItsPubPlugin**](/windows/desktop/api/tspubplugincom/nn-tspubplugincom-itspubplugin) interface exposes the following methods.</span></span>
+<span data-ttu-id="5cddb-104">A interface [**ItsPubPlugin**](/windows/desktop/api/tspubplugincom/nn-tspubplugincom-itspubplugin) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="5cddb-104">The [**ItsPubPlugin**](/windows/desktop/api/tspubplugincom/nn-tspubplugincom-itspubplugin) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="9230e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9230e-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5cddb-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5cddb-105">In this section</span></span>
 
--   [<span data-ttu-id="9230e-106">**Método GetCacheLastUpdateTime**</span><span class="sxs-lookup"><span data-stu-id="9230e-106">**GetCacheLastUpdateTime method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getcachelastupdatetime)
--   [<span data-ttu-id="9230e-107">**Método getResource**</span><span class="sxs-lookup"><span data-stu-id="9230e-107">**GetResource method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getresource)
--   [<span data-ttu-id="9230e-108">**Método getresourcelist**</span><span class="sxs-lookup"><span data-stu-id="9230e-108">**GetResourceList method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getresourcelist)
--   [<span data-ttu-id="9230e-109">**Método ResolveResource**</span><span class="sxs-lookup"><span data-stu-id="9230e-109">**ResolveResource method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-resolveresource)
+-   [<span data-ttu-id="5cddb-106">**Método GetCacheLastUpdateTime**</span><span class="sxs-lookup"><span data-stu-id="5cddb-106">**GetCacheLastUpdateTime method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getcachelastupdatetime)
+-   [<span data-ttu-id="5cddb-107">**Método getResource**</span><span class="sxs-lookup"><span data-stu-id="5cddb-107">**GetResource method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getresource)
+-   [<span data-ttu-id="5cddb-108">**Método getresourcelist**</span><span class="sxs-lookup"><span data-stu-id="5cddb-108">**GetResourceList method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-getresourcelist)
+-   [<span data-ttu-id="5cddb-109">**Método ResolveResource**</span><span class="sxs-lookup"><span data-stu-id="5cddb-109">**ResolveResource method**</span></span>](/windows/desktop/api/tspubplugincom/nf-tspubplugincom-itspubplugin-resolveresource)
 
  
 

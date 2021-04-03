@@ -31,23 +31,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836902"
 ---
-# <a name="uint32columnvalue-class"></a><span data-ttu-id="894bb-103">Classe UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="894bb-103">UInt32ColumnValue class</span></span>
+# <a name="uint32columnvalue-class"></a><span data-ttu-id="af2bd-103">Classe UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="af2bd-103">UInt32ColumnValue class</span></span>
 
-<span data-ttu-id="894bb-104">Um valor de coluna [UInt32](/dotnet/api/system.uint32) .</span><span class="sxs-lookup"><span data-stu-id="894bb-104">A [UInt32](/dotnet/api/system.uint32) column value.</span></span>
+<span data-ttu-id="af2bd-104">Um valor de coluna [UInt32](/dotnet/api/system.uint32) .</span><span class="sxs-lookup"><span data-stu-id="af2bd-104">A [UInt32](/dotnet/api/system.uint32) column value.</span></span>
 
-<span data-ttu-id="894bb-105">Esta API não está em conformidade com CLS.</span><span class="sxs-lookup"><span data-stu-id="894bb-105">This API is not CLS-compliant.</span></span> 
+<span data-ttu-id="af2bd-105">Esta API não está em conformidade com CLS.</span><span class="sxs-lookup"><span data-stu-id="af2bd-105">This API is not CLS-compliant.</span></span> 
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="894bb-106">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="894bb-106">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="af2bd-106">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="af2bd-106">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="894bb-107">System.Object</span><span class="sxs-lookup"><span data-stu-id="894bb-107">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="894bb-108">Microsoft. ISAM. ESENT. Interop. Columnvalue</span><span class="sxs-lookup"><span data-stu-id="894bb-108">Microsoft.Isam.Esent.Interop.ColumnValue</span></span>](./columnvalue-class.md)  
-    <span data-ttu-id="894bb-109">[Microsoft. ISAM. ESENT. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\></span><span class="sxs-lookup"><span data-stu-id="894bb-109">[Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\></span></span>  
-      <span data-ttu-id="894bb-110">Microsoft. ISAM. ESENT. Interop. UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="894bb-110">Microsoft.Isam.Esent.Interop.UInt32ColumnValue</span></span>  
+[<span data-ttu-id="af2bd-107">System.Object</span><span class="sxs-lookup"><span data-stu-id="af2bd-107">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="af2bd-108">Microsoft. ISAM. ESENT. Interop. Columnvalue</span><span class="sxs-lookup"><span data-stu-id="af2bd-108">Microsoft.Isam.Esent.Interop.ColumnValue</span></span>](./columnvalue-class.md)  
+    <span data-ttu-id="af2bd-109">[Microsoft. ISAM. ESENT. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\></span><span class="sxs-lookup"><span data-stu-id="af2bd-109">[Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\></span></span>  
+      <span data-ttu-id="af2bd-110">Microsoft. ISAM. ESENT. Interop. UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="af2bd-110">Microsoft.Isam.Esent.Interop.UInt32ColumnValue</span></span>  
 
-<span data-ttu-id="894bb-111">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="894bb-111">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="894bb-112">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="894bb-112">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="af2bd-111">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="af2bd-111">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="af2bd-112">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="af2bd-112">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="894bb-113">Syntax</span><span class="sxs-lookup"><span data-stu-id="894bb-113">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="af2bd-113">Syntax</span><span class="sxs-lookup"><span data-stu-id="af2bd-113">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -63,14 +63,14 @@ Dim instance As UInt32ColumnValue
 public class UInt32ColumnValue : ColumnValueOfStruct<uint>
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="894bb-114">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="894bb-114">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="af2bd-114">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="af2bd-114">Thread safety</span></span>
 
-<span data-ttu-id="894bb-115">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="894bb-115">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="894bb-116">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="894bb-116">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="af2bd-115">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="af2bd-115">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="af2bd-116">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="af2bd-116">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="894bb-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="894bb-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af2bd-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="af2bd-117">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="894bb-118">Referência</span><span class="sxs-lookup"><span data-stu-id="894bb-118">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="af2bd-118">Referência</span><span class="sxs-lookup"><span data-stu-id="af2bd-118">Reference</span></span>
 
-[<span data-ttu-id="894bb-119">Membros do UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="894bb-119">UInt32ColumnValue members</span></span>](./uint32columnvalue-members.md)
+[<span data-ttu-id="af2bd-119">Membros do UInt32ColumnValue</span><span class="sxs-lookup"><span data-stu-id="af2bd-119">UInt32ColumnValue members</span></span>](./uint32columnvalue-members.md)
 
-[<span data-ttu-id="894bb-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="894bb-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="af2bd-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="af2bd-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

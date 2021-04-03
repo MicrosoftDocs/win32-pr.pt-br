@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822216"
 ---
-# <a name="enumerator-objects"></a><span data-ttu-id="14ca8-103">Objetos do enumerador</span><span class="sxs-lookup"><span data-stu-id="14ca8-103">Enumerator Objects</span></span>
+# <a name="enumerator-objects"></a><span data-ttu-id="fb47c-103">Objetos do enumerador</span><span class="sxs-lookup"><span data-stu-id="fb47c-103">Enumerator Objects</span></span>
 
-<span data-ttu-id="14ca8-104">O código de componente de provedor de exemplo fornece a implementação da criação de objetos enumeradores para o objeto de namespace ADs (cenumns. cpp), objetos de contêiner ADSI genéricos (cenumobj. cpp), objetos de contêiner de esquema ADSI (cenumsch. cpp).</span><span class="sxs-lookup"><span data-stu-id="14ca8-104">The example provider component code supplies the implementation of creating enumerator objects for the ADs namespace object (cenumns.cpp), generic ADSI container objects (cenumobj.cpp), ADSI schema container objects (cenumsch.cpp).</span></span>
+<span data-ttu-id="fb47c-104">O código de componente de provedor de exemplo fornece a implementação da criação de objetos enumeradores para o objeto de namespace ADs (cenumns. cpp), objetos de contêiner ADSI genéricos (cenumobj. cpp), objetos de contêiner de esquema ADSI (cenumsch. cpp).</span><span class="sxs-lookup"><span data-stu-id="fb47c-104">The example provider component code supplies the implementation of creating enumerator objects for the ADs namespace object (cenumns.cpp), generic ADSI container objects (cenumobj.cpp), ADSI schema container objects (cenumsch.cpp).</span></span>
 
  
 

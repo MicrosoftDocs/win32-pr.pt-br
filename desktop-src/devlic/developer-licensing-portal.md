@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822476"
 ---
-# <a name="developer-licensing"></a><span data-ttu-id="8618c-103">Licenciamento para desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="8618c-103">Developer licensing</span></span>
+# <a name="developer-licensing"></a><span data-ttu-id="f7774-103">Licenciamento para desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="f7774-103">Developer licensing</span></span>
 
-## <a name="purpose"></a><span data-ttu-id="8618c-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="8618c-104">Purpose</span></span>
+## <a name="purpose"></a><span data-ttu-id="f7774-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="f7774-104">Purpose</span></span>
 
-<span data-ttu-id="8618c-105">O licenciamento para desenvolvedores permite que você obtenha, verifique ou remova uma licença de desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="8618c-105">Developer licensing enables you to get, check, or remove a developer license.</span></span>
+<span data-ttu-id="f7774-105">O licenciamento para desenvolvedores permite que você obtenha, verifique ou remova uma licença de desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="f7774-105">Developer licensing enables you to get, check, or remove a developer license.</span></span>
 
  
 

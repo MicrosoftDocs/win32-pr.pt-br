@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663905"
 ---
-# <a name="ibackgroundcopyfile5-methods-do"></a><span data-ttu-id="70329-104">Métodos IBackgroundCopyFile5 (DO)</span><span class="sxs-lookup"><span data-stu-id="70329-104">IBackgroundCopyFile5 Methods (DO)</span></span>
+# <a name="ibackgroundcopyfile5-methods-do"></a><span data-ttu-id="ed941-104">Métodos IBackgroundCopyFile5 (DO)</span><span class="sxs-lookup"><span data-stu-id="ed941-104">IBackgroundCopyFile5 Methods (DO)</span></span>
 
-<span data-ttu-id="70329-105">A interface [**IBackgroundCopyFile5**](ibackgroundcopyfile5.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="70329-105">The [**IBackgroundCopyFile5**](ibackgroundcopyfile5.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="ed941-105">A interface [**IBackgroundCopyFile5**](ibackgroundcopyfile5.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="ed941-105">The [**IBackgroundCopyFile5**](ibackgroundcopyfile5.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="70329-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="70329-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="ed941-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ed941-106">In this section</span></span>
 
--   [<span data-ttu-id="70329-107">**Método GetProperty**</span><span class="sxs-lookup"><span data-stu-id="70329-107">**GetProperty method**</span></span>](ibackgroundcopyfile5-getproperty.md)
--   [<span data-ttu-id="70329-108">**Método SetProperty**</span><span class="sxs-lookup"><span data-stu-id="70329-108">**SetProperty method**</span></span>](ibackgroundcopyfile5-setproperty.md)
+-   [<span data-ttu-id="ed941-107">**Método GetProperty**</span><span class="sxs-lookup"><span data-stu-id="ed941-107">**GetProperty method**</span></span>](ibackgroundcopyfile5-getproperty.md)
+-   [<span data-ttu-id="ed941-108">**Método SetProperty**</span><span class="sxs-lookup"><span data-stu-id="ed941-108">**SetProperty method**</span></span>](ibackgroundcopyfile5-setproperty.md)
 
  
 

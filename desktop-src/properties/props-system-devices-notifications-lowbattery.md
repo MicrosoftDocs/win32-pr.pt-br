@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837044"
 ---
-# <a name="systemdevicesnotificationslowbattery"></a><span data-ttu-id="c7c0a-103">System. Devices. Notifications. LowBattery</span><span class="sxs-lookup"><span data-stu-id="c7c0a-103">System.Devices.Notifications.LowBattery</span></span>
+# <a name="systemdevicesnotificationslowbattery"></a><span data-ttu-id="351f9-103">System. Devices. Notifications. LowBattery</span><span class="sxs-lookup"><span data-stu-id="351f9-103">System.Devices.Notifications.LowBattery</span></span>
 
-<span data-ttu-id="c7c0a-104">Notificação de bateria fraca do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="c7c0a-104">Device low battery notification.</span></span>
+<span data-ttu-id="351f9-104">Notificação de bateria fraca do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="351f9-104">Device low battery notification.</span></span>
 
-## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a><span data-ttu-id="c7c0a-105">Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8</span><span class="sxs-lookup"><span data-stu-id="c7c0a-105">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8</span></span>
+## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a><span data-ttu-id="351f9-105">Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8</span><span class="sxs-lookup"><span data-stu-id="351f9-105">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8</span></span>
 
 ```
 propertyDescription
@@ -38,7 +38,7 @@ propertyDescription
             text = Charge your device or it may disconnect.
 ```
 
-## <a name="windows-7"></a><span data-ttu-id="c7c0a-106">Windows 7</span><span class="sxs-lookup"><span data-stu-id="c7c0a-106">Windows 7</span></span>
+## <a name="windows-7"></a><span data-ttu-id="351f9-106">Windows 7</span><span class="sxs-lookup"><span data-stu-id="351f9-106">Windows 7</span></span>
 
 ```
 propertyDescription
@@ -61,54 +61,54 @@ propertyDescription
             text = Charge your device or it may disconnect.
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c7c0a-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="c7c0a-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="351f9-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="351f9-107">Remarks</span></span>
 
-<span data-ttu-id="c7c0a-108">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="c7c0a-108">PKEY values are defined in Propkey.h.</span></span>
+<span data-ttu-id="351f9-108">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="351f9-108">PKEY values are defined in Propkey.h.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="c7c0a-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c7c0a-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="351f9-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="351f9-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c7c0a-110">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="c7c0a-110">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
+[<span data-ttu-id="351f9-110">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="351f9-110">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-111">searchInfo</span><span class="sxs-lookup"><span data-stu-id="c7c0a-111">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
+[<span data-ttu-id="351f9-111">searchInfo</span><span class="sxs-lookup"><span data-stu-id="351f9-111">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-112">labelInfo</span><span class="sxs-lookup"><span data-stu-id="c7c0a-112">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
+[<span data-ttu-id="351f9-112">labelInfo</span><span class="sxs-lookup"><span data-stu-id="351f9-112">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-113">typeInfo</span><span class="sxs-lookup"><span data-stu-id="c7c0a-113">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
+[<span data-ttu-id="351f9-113">typeInfo</span><span class="sxs-lookup"><span data-stu-id="351f9-113">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-114">displayInfo</span><span class="sxs-lookup"><span data-stu-id="c7c0a-114">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
+[<span data-ttu-id="351f9-114">displayInfo</span><span class="sxs-lookup"><span data-stu-id="351f9-114">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-115">stringFormat</span><span class="sxs-lookup"><span data-stu-id="c7c0a-115">stringFormat</span></span>](./propdesc-schema-stringformat.md)
+[<span data-ttu-id="351f9-115">stringFormat</span><span class="sxs-lookup"><span data-stu-id="351f9-115">stringFormat</span></span>](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-116">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="c7c0a-116">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
+[<span data-ttu-id="351f9-116">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="351f9-116">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-117">numberFormat</span><span class="sxs-lookup"><span data-stu-id="c7c0a-117">numberFormat</span></span>](./propdesc-schema-numberformat.md)
+[<span data-ttu-id="351f9-117">numberFormat</span><span class="sxs-lookup"><span data-stu-id="351f9-117">numberFormat</span></span>](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-118">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="c7c0a-118">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
+[<span data-ttu-id="351f9-118">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="351f9-118">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-119">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="c7c0a-119">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
+[<span data-ttu-id="351f9-119">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="351f9-119">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-120">drawControl</span><span class="sxs-lookup"><span data-stu-id="c7c0a-120">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
+[<span data-ttu-id="351f9-120">drawControl</span><span class="sxs-lookup"><span data-stu-id="351f9-120">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-121">editControl</span><span class="sxs-lookup"><span data-stu-id="c7c0a-121">editControl</span></span>](./propdesc-schema-editcontrol.md)
+[<span data-ttu-id="351f9-121">editControl</span><span class="sxs-lookup"><span data-stu-id="351f9-121">editControl</span></span>](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-122">filterControl</span><span class="sxs-lookup"><span data-stu-id="c7c0a-122">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
+[<span data-ttu-id="351f9-122">filterControl</span><span class="sxs-lookup"><span data-stu-id="351f9-122">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c7c0a-123">queryControl</span><span class="sxs-lookup"><span data-stu-id="c7c0a-123">queryControl</span></span>](./propdesc-schema-querycontrol.md)
+[<span data-ttu-id="351f9-123">queryControl</span><span class="sxs-lookup"><span data-stu-id="351f9-123">queryControl</span></span>](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

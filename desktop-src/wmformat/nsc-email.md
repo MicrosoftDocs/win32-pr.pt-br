@@ -19,26 +19,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823299"
 ---
-# <a name="nsc_email"></a><span data-ttu-id="42d20-104">\_Email NSC</span><span class="sxs-lookup"><span data-stu-id="42d20-104">NSC\_Email</span></span>
+# <a name="nsc_email"></a><span data-ttu-id="ff03d-104">\_Email NSC</span><span class="sxs-lookup"><span data-stu-id="ff03d-104">NSC\_Email</span></span>
 
-<span data-ttu-id="42d20-105">O **atributo \_ email NSC** contém o endereço de email da estação multicast.</span><span class="sxs-lookup"><span data-stu-id="42d20-105">The **NSC\_Email** attribute contains the e-mail address of the multicast station.</span></span>
+<span data-ttu-id="ff03d-105">O **atributo \_ email NSC** contém o endereço de email da estação multicast.</span><span class="sxs-lookup"><span data-stu-id="ff03d-105">The **NSC\_Email** attribute contains the e-mail address of the multicast station.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="42d20-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="42d20-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="ff03d-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="ff03d-106">Global Constant</span></span>
 
-<span data-ttu-id="42d20-107">g \_ wszWMNSCEmail</span><span class="sxs-lookup"><span data-stu-id="42d20-107">g\_wszWMNSCEmail</span></span>
+<span data-ttu-id="ff03d-107">g \_ wszWMNSCEmail</span><span class="sxs-lookup"><span data-stu-id="ff03d-107">g\_wszWMNSCEmail</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="42d20-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="42d20-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="ff03d-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="ff03d-108">Data Type</span></span>
 
-<span data-ttu-id="42d20-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="42d20-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="ff03d-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="ff03d-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="42d20-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="42d20-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ff03d-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="ff03d-110">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="42d20-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="42d20-111">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="ff03d-111">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="ff03d-111">**Attribute List**</span></span>](attribute-list.md)
 </dt> <dt>
 
-[<span data-ttu-id="42d20-112">**Atributos de estação multicast**</span><span class="sxs-lookup"><span data-stu-id="42d20-112">**Multicast Station Attributes**</span></span>](multicast-station-attributes.md)
+[<span data-ttu-id="ff03d-112">**Atributos de estação multicast**</span><span class="sxs-lookup"><span data-stu-id="ff03d-112">**Multicast Station Attributes**</span></span>](multicast-station-attributes.md)
 </dt> </dl>
 
  

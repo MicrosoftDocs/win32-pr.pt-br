@@ -12,32 +12,32 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916306"
 ---
-# <a name="itssbfilterpluginstore-methods"></a><span data-ttu-id="edd66-103">Métodos ITsSbFilterPluginStore</span><span class="sxs-lookup"><span data-stu-id="edd66-103">ITsSbFilterPluginStore Methods</span></span>
+# <a name="itssbfilterpluginstore-methods"></a><span data-ttu-id="4478c-103">Métodos ITsSbFilterPluginStore</span><span class="sxs-lookup"><span data-stu-id="4478c-103">ITsSbFilterPluginStore Methods</span></span>
 
-<span data-ttu-id="edd66-104">As interfaces [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore) expõem os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="edd66-104">The [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore) interfaces exposes the following methods.</span></span>
+<span data-ttu-id="4478c-104">As interfaces [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore) expõem os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="4478c-104">The [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore) interfaces exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="edd66-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="edd66-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4478c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4478c-105">In this section</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="edd66-106">**Excluir métodoproperties**</span><span class="sxs-lookup"><span data-stu-id="edd66-106">**DeleteProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-deleteproperties)
+[<span data-ttu-id="4478c-106">**Excluir métodoproperties**</span><span class="sxs-lookup"><span data-stu-id="4478c-106">**DeleteProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-deleteproperties)
 </dt> <dd>
 
-<span data-ttu-id="edd66-107">Exclui uma propriedade.</span><span class="sxs-lookup"><span data-stu-id="edd66-107">Deletes a property.</span></span>
+<span data-ttu-id="4478c-107">Exclui uma propriedade.</span><span class="sxs-lookup"><span data-stu-id="4478c-107">Deletes a property.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="edd66-108">**Método enumeraproperties**</span><span class="sxs-lookup"><span data-stu-id="edd66-108">**EnumerateProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-enumerateproperties)
+[<span data-ttu-id="4478c-108">**Método enumeraproperties**</span><span class="sxs-lookup"><span data-stu-id="4478c-108">**EnumerateProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-enumerateproperties)
 </dt> <dd>
 
-<span data-ttu-id="edd66-109">Enumera um conjunto de propriedades.</span><span class="sxs-lookup"><span data-stu-id="edd66-109">Enumerates a property set.</span></span>
+<span data-ttu-id="4478c-109">Enumera um conjunto de propriedades.</span><span class="sxs-lookup"><span data-stu-id="4478c-109">Enumerates a property set.</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="edd66-110">**Método SaveProperties**</span><span class="sxs-lookup"><span data-stu-id="edd66-110">**SaveProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-saveproperties)
+[<span data-ttu-id="4478c-110">**Método SaveProperties**</span><span class="sxs-lookup"><span data-stu-id="4478c-110">**SaveProperties method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbfilterpluginstore-saveproperties)
 </dt> <dd>
 
-<span data-ttu-id="edd66-111">Salva um conjunto de propriedades.</span><span class="sxs-lookup"><span data-stu-id="edd66-111">Saves a property set.</span></span>
+<span data-ttu-id="4478c-111">Salva um conjunto de propriedades.</span><span class="sxs-lookup"><span data-stu-id="4478c-111">Saves a property set.</span></span>
 
 </dd> </dl>
 

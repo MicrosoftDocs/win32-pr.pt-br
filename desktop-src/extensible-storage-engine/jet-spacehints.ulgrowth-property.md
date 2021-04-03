@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646715"
 ---
-# <a name="jet_spacehintsulgrowth-property"></a><span data-ttu-id="1df80-103">Propriedade JET_SPACEHINTS. ulGrowth</span><span class="sxs-lookup"><span data-stu-id="1df80-103">JET_SPACEHINTS.ulGrowth property</span></span>
+# <a name="jet_spacehintsulgrowth-property"></a><span data-ttu-id="f4674-103">Propriedade JET_SPACEHINTS. ulGrowth</span><span class="sxs-lookup"><span data-stu-id="f4674-103">JET_SPACEHINTS.ulGrowth property</span></span>
 
-<span data-ttu-id="1df80-104">Obtém ou define o crescimento percentual do último crescimento ou do tamanho inicial (possivelmente arredondado para o tamanho de alocação mais próximo do JET nativo).</span><span class="sxs-lookup"><span data-stu-id="1df80-104">Gets or sets the percent growth from last growth or initial size (possibly rounded to nearest native JET allocation size).</span></span> <span data-ttu-id="1df80-105">Os valores válidos são 0 e \[ 100, 50000).</span><span class="sxs-lookup"><span data-stu-id="1df80-105">Valid values are 0, and \[100, 50000).</span></span>
+<span data-ttu-id="f4674-104">Obtém ou define o crescimento percentual do último crescimento ou do tamanho inicial (possivelmente arredondado para o tamanho de alocação mais próximo do JET nativo).</span><span class="sxs-lookup"><span data-stu-id="f4674-104">Gets or sets the percent growth from last growth or initial size (possibly rounded to nearest native JET allocation size).</span></span> <span data-ttu-id="f4674-105">Os valores válidos são 0 e \[ 100, 50000).</span><span class="sxs-lookup"><span data-stu-id="f4674-105">Valid values are 0, and \[100, 50000).</span></span>
 
-<span data-ttu-id="1df80-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1df80-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="1df80-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1df80-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f4674-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f4674-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f4674-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f4674-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1df80-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="1df80-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f4674-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="f4674-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.ulGrowth = value
 public int ulGrowth { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="1df80-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="1df80-109">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="f4674-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f4674-109">Property value</span></span>
 
-<span data-ttu-id="1df80-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="1df80-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="f4674-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="f4674-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="1df80-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="1df80-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f4674-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="f4674-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="1df80-112">Referência</span><span class="sxs-lookup"><span data-stu-id="1df80-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f4674-112">Referência</span><span class="sxs-lookup"><span data-stu-id="f4674-112">Reference</span></span>
 
-[<span data-ttu-id="1df80-113">Classe JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="1df80-113">JET_SPACEHINTS class</span></span>](./jet-spacehints-class.md)
+[<span data-ttu-id="f4674-113">Classe JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="f4674-113">JET_SPACEHINTS class</span></span>](./jet-spacehints-class.md)
 
-[<span data-ttu-id="1df80-114">Membros do JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="1df80-114">JET_SPACEHINTS members</span></span>](./jet-spacehints-members.md)
+[<span data-ttu-id="f4674-114">Membros do JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="f4674-114">JET_SPACEHINTS members</span></span>](./jet-spacehints-members.md)
 
-[<span data-ttu-id="1df80-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1df80-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f4674-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f4674-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

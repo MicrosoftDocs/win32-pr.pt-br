@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916137"
 ---
-# <a name="dvc-client-plug-in-example"></a><span data-ttu-id="e1984-103">Exemplo de plug-in de cliente DVC</span><span class="sxs-lookup"><span data-stu-id="e1984-103">DVC Client Plug-in Example</span></span>
+# <a name="dvc-client-plug-in-example"></a><span data-ttu-id="02bc3-103">Exemplo de plug-in de cliente DVC</span><span class="sxs-lookup"><span data-stu-id="02bc3-103">DVC Client Plug-in Example</span></span>
 
-<span data-ttu-id="e1984-104">O exemplo de código C++ a seguir fornece um exemplo de como criar um plug-in de Conexão de Área de Trabalho Remota (RDC) cliente Dynamic virtual Channel (DVC).</span><span class="sxs-lookup"><span data-stu-id="e1984-104">The following C++ code sample provides an example of how to create a Remote Desktop Connection (RDC) client dynamic virtual channel (DVC) plug-in.</span></span>
+<span data-ttu-id="02bc3-104">O exemplo de código C++ a seguir fornece um exemplo de como criar um plug-in de Conexão de Área de Trabalho Remota (RDC) cliente Dynamic virtual Channel (DVC).</span><span class="sxs-lookup"><span data-stu-id="02bc3-104">The following C++ code sample provides an example of how to create a Remote Desktop Connection (RDC) client dynamic virtual channel (DVC) plug-in.</span></span>
 
 
 ```C++

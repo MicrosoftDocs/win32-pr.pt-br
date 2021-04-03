@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837391"
 ---
-# <a name="ieaxisysteminstaller-methods"></a><span data-ttu-id="cb5a3-103">Métodos IeAxiSystemInstaller</span><span class="sxs-lookup"><span data-stu-id="cb5a3-103">IeAxiSystemInstaller Methods</span></span>
+# <a name="ieaxisysteminstaller-methods"></a><span data-ttu-id="8511f-103">Métodos IeAxiSystemInstaller</span><span class="sxs-lookup"><span data-stu-id="8511f-103">IeAxiSystemInstaller Methods</span></span>
 
-<span data-ttu-id="cb5a3-104">A interface [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="cb5a3-104">The [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="8511f-104">A interface [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8511f-104">The [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="cb5a3-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="cb5a3-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8511f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8511f-105">In this section</span></span>
 
--   [<span data-ttu-id="cb5a3-106">**Método InitializeSystemInstaller**</span><span class="sxs-lookup"><span data-stu-id="cb5a3-106">**InitializeSystemInstaller Method**</span></span>](ieaxisysteminstaller-initializesysteminstaller.md)
+-   [<span data-ttu-id="8511f-106">**Método InitializeSystemInstaller**</span><span class="sxs-lookup"><span data-stu-id="8511f-106">**InitializeSystemInstaller Method**</span></span>](ieaxisysteminstaller-initializesysteminstaller.md)
 
  
 

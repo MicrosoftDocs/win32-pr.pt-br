@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822179"
 ---
-# <a name="the-put-method"></a><span data-ttu-id="f12f9-106">O método Put</span><span class="sxs-lookup"><span data-stu-id="f12f9-106">The Put Method</span></span>
+# <a name="the-put-method"></a><span data-ttu-id="1ec47-106">O método Put</span><span class="sxs-lookup"><span data-stu-id="1ec47-106">The Put Method</span></span>
 
-<span data-ttu-id="f12f9-107">O método [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) salva o valor de uma propriedade para um objeto Active Directory pelo nome no cache de propriedades.</span><span class="sxs-lookup"><span data-stu-id="f12f9-107">The [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) method saves the value for a property for an Active Directory object by name into the property cache.</span></span> <span data-ttu-id="f12f9-108">Use [**IADs::P utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) para salvar propriedades de valores múltiplos no cache de propriedades ou para remover uma propriedade de um objeto.</span><span class="sxs-lookup"><span data-stu-id="f12f9-108">Use [**IADs::PutEx**](/windows/desktop/api/Iads/nf-iads-iads-putex) to save multi-valued properties to the property cache, or to remove a property from an object.</span></span> <span data-ttu-id="f12f9-109">Esses valores não são persistidos no serviço de diretório subjacente até que [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) seja chamado.</span><span class="sxs-lookup"><span data-stu-id="f12f9-109">These values are not persisted to the underlying directory service until [**IADs::SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) is called.</span></span>
+<span data-ttu-id="1ec47-107">O método [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) salva o valor de uma propriedade para um objeto Active Directory pelo nome no cache de propriedades.</span><span class="sxs-lookup"><span data-stu-id="1ec47-107">The [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) method saves the value for a property for an Active Directory object by name into the property cache.</span></span> <span data-ttu-id="1ec47-108">Use [**IADs::P utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) para salvar propriedades de valores múltiplos no cache de propriedades ou para remover uma propriedade de um objeto.</span><span class="sxs-lookup"><span data-stu-id="1ec47-108">Use [**IADs::PutEx**](/windows/desktop/api/Iads/nf-iads-iads-putex) to save multi-valued properties to the property cache, or to remove a property from an object.</span></span> <span data-ttu-id="1ec47-109">Esses valores não são persistidos no serviço de diretório subjacente até que [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) seja chamado.</span><span class="sxs-lookup"><span data-stu-id="1ec47-109">These values are not persisted to the underlying directory service until [**IADs::SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) is called.</span></span>
 
 
 ```VB
@@ -53,7 +53,7 @@ End Sub
 
 
 
-<span data-ttu-id="f12f9-110">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com um único valor:</span><span class="sxs-lookup"><span data-stu-id="f12f9-110">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with a single value:</span></span>
+<span data-ttu-id="1ec47-110">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com um único valor:</span><span class="sxs-lookup"><span data-stu-id="1ec47-110">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with a single value:</span></span>
 
 
 ```VB
@@ -82,7 +82,7 @@ CleanUp:
 
 
 
-<span data-ttu-id="f12f9-111">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com vários valores:</span><span class="sxs-lookup"><span data-stu-id="f12f9-111">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with multiple values:</span></span>
+<span data-ttu-id="1ec47-111">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com vários valores:</span><span class="sxs-lookup"><span data-stu-id="1ec47-111">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with multiple values:</span></span>
 
 
 ```VB
@@ -115,7 +115,7 @@ CleanUp:
 
 
 
-<span data-ttu-id="f12f9-112">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com valores múltiplos e únicos:</span><span class="sxs-lookup"><span data-stu-id="f12f9-112">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with both multiple and single values:</span></span>
+<span data-ttu-id="1ec47-112">O exemplo de código a seguir mostra como usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) com valores múltiplos e únicos:</span><span class="sxs-lookup"><span data-stu-id="1ec47-112">The following code example shows how to use [**IADs::Put**](/windows/desktop/api/Iads/nf-iads-iads-put) with both multiple and single values:</span></span>
 
 
 ```C++
