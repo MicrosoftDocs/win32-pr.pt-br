@@ -36,7 +36,7 @@ Contém os nomes de exibição dos grupos aos quais este usuário pertence.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.347             |
 | System-ID-GUID    | 7bd76b92-3244-438a-ada6-24f5ea34381e    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

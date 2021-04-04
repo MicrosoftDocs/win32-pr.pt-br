@@ -1,0 +1,40 @@
+---
+description: A versão de depuração do mecanismo XAudio2 valida parâmetros e fornece avisos detalhados e mensagens de erro.
+ms.assetid: a7aaebf9-98d4-e96c-993d-b0d0b7074788
+title: Instalações de depuração XAudio2
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: cc50e710f30969e024078eeaf2660545e1da45c8
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103647377"
+---
+# <a name="xaudio2-debugging-facilities"></a>Instalações de depuração XAudio2
+
+A versão de depuração do mecanismo XAudio2 valida parâmetros e fornece avisos detalhados e mensagens de erro.
+
+## <a name="setting-the-debug-logging-level-at-run-time"></a>Configurando o nível de log de depuração em tempo de execução
+
+Você pode definir o nível de informações de depuração mostradas por XAudio2 a qualquer momento preenchendo uma estrutura de [**\_ \_ configuração de depuração XAudio2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_debug_configuration) com os sinalizadores para o nível de log desejado e, em seguida, passando a estrutura para o método [**IXAudio2:: SetDebugConfiguration**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-setdebugconfiguration) . Os valores passados para o método **IXAudio2:: SetDebugConfiguration** sempre substituem todos os valores padrão que foram definidos no registro do Windows.
+
+## <a name="debug-support"></a>Suporte de depuração
+
+Os recursos de depuração estão sempre disponíveis para XAUDIO2 no Windows 8.
+
+Para as versões do SDK do DirectX do XAUDIO2, você deve usar o **\_ \_ mecanismo de depuração do XAudio2** ao criar o objeto XAudio2 com o [**XAudio2Create**](/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create) e o sistema deve ter o tempo de execução do desenvolvedor do SDK do DirectX instalado para que a depuração tenha suporte.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Depuração de instalações](debugging-facilities.md)
+</dt> <dt>
+
+[Referência de programação em XAudio2](programming-reference.md)
+</dt> </dl>
+
+ 
+
+ 

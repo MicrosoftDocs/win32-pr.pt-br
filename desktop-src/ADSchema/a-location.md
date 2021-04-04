@@ -67,7 +67,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                       |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -88,7 +88,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -109,7 +109,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                    |
 | Search-Flags           | 0x00000001                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -130,7 +130,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -151,7 +151,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -172,7 +172,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 
@@ -193,7 +193,7 @@ A localização do usuário, como o número do escritório.
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
 
 
 

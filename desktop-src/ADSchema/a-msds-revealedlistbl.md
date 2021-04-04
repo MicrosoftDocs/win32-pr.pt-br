@@ -36,7 +36,7 @@ Atributo de link para trás para o [**MS-DS-Revelate-List**](a-msds-revealedlist
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1975                 |
 | System-ID-GUID    | aa1c88fd-b0f6-429f-b2ca-9d902266e808    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

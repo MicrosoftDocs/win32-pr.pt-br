@@ -35,7 +35,7 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1130              |
 | System-ID-GUID    | db0c908e-c1f2-11d1-bbc5-0080c76670c0 |
-| Sintaxe            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
 
 
 
