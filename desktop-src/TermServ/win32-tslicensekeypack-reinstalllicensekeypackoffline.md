@@ -76,7 +76,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

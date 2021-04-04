@@ -98,7 +98,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

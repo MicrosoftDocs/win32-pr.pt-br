@@ -27,7 +27,7 @@ ms.locfileid: "103824376"
 
 Especifica o tipo de ponto de extremidade.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -71,7 +71,7 @@ O lado do convidado.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

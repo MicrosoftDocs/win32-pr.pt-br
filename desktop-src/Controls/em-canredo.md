@@ -65,7 +65,7 @@ Para refazer a operação de desfazer mais recente, envie a mensagem em [**\_ re
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -113,7 +113,7 @@ Retorna o tipo de história, que pode ser um valor personalizado definido pelo c
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
