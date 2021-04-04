@@ -121,7 +121,7 @@ Essa função calcula a matriz de transformação com a seguinte fórmula, com c
 
 M<sub>out</sub> = (m<sub>SC</sub>) ⁻ ¹ \* (m<sub>Sr</sub>) ⁻ ¹ \* MS \* m<sub>Sr</sub> \* m<sub>SC</sub> \* (m<sub>RC</sub>) ⁻ ¹ \* m<sub>r</sub> \* m<sub>RC</sub> \* MT
 
-em que:
+onde:
 
 M<sub>out</sub> = matriz de saída (pout)
 

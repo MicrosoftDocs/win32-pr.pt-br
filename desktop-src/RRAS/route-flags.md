@@ -80,7 +80,7 @@ ms.locfileid: "103916003"
 
 
 
-| Grupo                            | Membros                                                                                                                                                                  | Description                                              |
+| Agrupar                            | Membros                                                                                                                                                                  | Descrição                                              |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | \_ \_ encaminhamento de sinalizadores de rota RTM \_    | \_ \_ sinalizadores de rota RTM \_ MARTIAN, \_ sinalizadores de rota RTM \_ \_ BLACKHOLE \_ , \_ \_ descartar sinalizadores de rota RTM, \_ sinalizadores de rota RTM \_ \_ inativos                                                        | Especifica os sinalizadores de encaminhamento.                          |
 | sinalizadores de rota da RTM \_ \_ \_ qualquer \_ unicast  | \_ \_ sinalizadores de rota RTM \_ local, \_ sinalizadores de rota RTM \_ \_ REMOTOs, sinalizadores de rota RTM para \_ \_ \_ mim mesmo                                                                                           | Especifica qualquer sinalizador de unicast.                             |

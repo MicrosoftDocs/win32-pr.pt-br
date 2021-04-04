@@ -37,8 +37,8 @@ Module ModuleB@1033 v1.0 is excluded.
 
 | ModuleID | Idioma | Versão |
 |----------|----------|---------|
-| Móduloa  | 0        | 1,0     |
-| ModuleB  | 1046     | 1,0     |
+| Móduloa  | 0        | 1.0     |
+| ModuleB  | 1046     | 1.0     |
 
 
 

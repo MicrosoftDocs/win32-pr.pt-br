@@ -72,7 +72,7 @@ Use o atributo **\[ helpstringdll \]** em uma instrução de biblioteca para esp
 
 Use as funções **GetDocumentation2** nas interfaces **ITypeLib2** e **ITypeInfo2** para recuperar a cadeia de caracteres de ajuda.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

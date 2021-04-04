@@ -1,0 +1,39 @@
+---
+title: Fornecendo informações de classe
+description: Fornecendo informações de classe
+ms.assetid: 808d9a39-4511-4aba-a23f-3c929970503b
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: fc4505a12d4a7f50a605cbd04cae33805db2b19b
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104084072"
+---
+# <a name="providing-class-information"></a>Fornecendo informações de classe
+
+Geralmente, é útil para um cliente de um objeto examinar as informações de tipo do objeto. Dado o CLSID do objeto, um cliente pode localizar a biblioteca de tipos do objeto usando entradas do registro e, em seguida, pode verificar a biblioteca de tipos para a entrada coclasse na biblioteca que corresponde ao CLSID.
+
+No entanto, nem todos os objetos têm um CLSID, embora ainda precisem fornecer informações de tipo. Além disso, é conveniente que um cliente tenha uma maneira de simplesmente pedir a um objeto suas informações de tipo em vez de passar por todos os tédio para extrair as mesmas informações das entradas do registro. Esse recurso é importante ao lidar com interfaces de saída em objetos conectáveis. (Consulte [usando o IProvideClassInfo](using-iprovideclassinfo.md) para obter mais informações sobre como os objetos conectáveis fornecem esse recurso.)
+
+Nesses casos, um cliente pode consultar o objeto para [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) ou [**IProvideClassInfo2**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo2). Se essas interfaces existirem, o cliente chamará o método [**GetClassInfo**](/windows/desktop/api/OCIdl/nf-ocidl-iprovideclassinfo-getclassinfo) para obter as informações de tipo da interface.
+
+Ao implementar [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) ou [**IProvideClassInfo2**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo2), um objeto especifica que ele pode fornecer informações de tipo para sua classe inteira; ou seja, o que descreveria em sua seção coclass de sua biblioteca de tipos, se ela tiver uma. [**GetClassInfo**](/windows/desktop/api/OCIdl/nf-ocidl-iprovideclassinfo-getclassinfo) retorna um ponteiro **ITypeInfo** correspondente às informações de coclasse do objeto. Por meio desse ponteiro **ITypeInfo** , o cliente pode examinar todas as definições de interface de entrada e saída do objeto.
+
+O objeto também pode fornecer [**IProvideClassInfo2**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo2). A interface **IProvideClassInfo2** é uma extensão simples para [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) que torna rápido e fácil recuperar os identificadores de interface de saída de um objeto para seu conjunto de eventos padrão. **IProvideClassInfo2** é derivado de **IProvideClassInfo**.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Clientes e servidores COM](com-clients-and-servers.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

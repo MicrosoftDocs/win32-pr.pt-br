@@ -1,39 +1,39 @@
 ---
-description: 'Saiba mais sobre: classe EsentDTCCallbackUnexpectedErrorException'
-title: Classe EsentDTCCallbackUnexpectedErrorException
-TOCTitle: EsentDTCCallbackUnexpectedErrorException class
-ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentDTCCallbackUnexpectedErrorException
-ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdtccallbackunexpectederrorexception(v=EXCHG.10)
-ms:contentKeyID: 55107266
+description: 'Saiba mais sobre: classe EsentTooManyTestInjectionsException'
+title: Classe EsentTooManyTestInjectionsException
+TOCTitle: EsentTooManyTestInjectionsException class
+ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanytestinjectionsexception(v=EXCHG.10)
+ms:contentKeyID: 55107367
 ms.date: 07/30/2014
 ms.topic: reference
 f1_keywords:
-- Microsoft.Isam.Esent.Interop.EsentDTCCallbackUnexpectedErrorException
+- Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException
 dev_langs:
 - CSharp
 - JScript
 - VB
 - other
 api_name:
-- Microsoft.Isam.Esent.Interop.EsentDTCCallbackUnexpectedErrorException
+- Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException
 topic_type:
-- apiref
 - kbSyntax
+- apiref
 api_type:
 - Managed
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7ec2d5c2e204d0babeaf1e671d6096b8c52a9b78
+ms.openlocfilehash: 9dbf35aebeace7c4384dc254211f5ed061029449
 ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836935"
+ms.locfileid: "103922856"
 ---
-# <a name="esentdtccallbackunexpectederrorexception-class"></a>Classe EsentDTCCallbackUnexpectedErrorException
+# <a name="esenttoomanytestinjectionsexception-class"></a>Classe EsentTooManyTestInjectionsException
 
-Classe base para JET_err. DTCCallbackUnexpectedError exceções.
+Classe base para JET_err. TooManyTestInjections exceções.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
@@ -42,26 +42,26 @@ Classe base para JET_err. DTCCallbackUnexpectedError exceções.
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentDTCCallbackUnexpectedErrorException  
+          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentTooManyTestInjectionsException  
 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
 <SerializableAttribute> _
-Public NotInheritable Class EsentDTCCallbackUnexpectedErrorException _
-    Inherits EsentObsoleteException
+Public NotInheritable Class EsentTooManyTestInjectionsException _
+    Inherits EsentUsageException
 'Usage
-Dim instance As EsentDTCCallbackUnexpectedErrorException
+Dim instance As EsentTooManyTestInjectionsException
 ```
 
 ``` csharp
 [SerializableAttribute]
-public sealed class EsentDTCCallbackUnexpectedErrorException : EsentObsoleteException
+public sealed class EsentTooManyTestInjectionsException : EsentUsageException
 ```
 
 ## <a name="thread-safety"></a>Acesso thread-safe
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentDTCCallbackUnexpectedErrorException](./esentdtccallbackunexpectederrorexception-members.md)
+[Membros do EsentTooManyTestInjectionsException](./esenttoomanytestinjectionsexception-members.md)
 
 [Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

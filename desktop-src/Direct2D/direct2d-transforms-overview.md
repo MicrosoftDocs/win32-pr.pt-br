@@ -45,7 +45,7 @@ Uma transformação especifica como mapear os pontos de um objeto de um espaço 
 |-----------------|-----------------|-----|
 | M11Default: 1,0 | M12Default: 0,0 | 0.0 |
 | M21Default: 0,0 | M22Default: 1,0 | 0.0 |
-| M31OffsetX: 0,0 | M32OffsetY: 0,0 | 1.0 |
+| M31OffsetX: 0,0 | M32OffsetY: 0,0 | 1,0 |
 
 
 
