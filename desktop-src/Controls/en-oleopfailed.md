@@ -65,7 +65,7 @@ A janela pai sempre obterá uma mensagem de [**\_ notificação do WM**](wm-noti
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

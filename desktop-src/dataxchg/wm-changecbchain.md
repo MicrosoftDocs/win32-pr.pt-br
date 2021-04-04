@@ -74,7 +74,7 @@ Quando uma janela do Visualizador da área de transferência recebe a mensagem *
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

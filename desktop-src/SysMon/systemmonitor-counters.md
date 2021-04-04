@@ -58,7 +58,7 @@ Essa é a propriedade padrão do objeto [**SystemMonitor**](systemmonitor.md) .
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -72,7 +72,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Name                           | Descrição                                                    |
+| Nome                           | Descrição                                                    |
 |--------------------------------|----------------------------------------------------------------|
 | \_Modo d2d1 \_ MORPHOLOGY \_ Erode  | O valor máximo de cada canal RGB no kernel é usado. |
 | D2D1 \_ \_ modo MORPHOLOGY \_ | O valor mínimo de cada canal RGB no kernel é usado. |

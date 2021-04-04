@@ -40,7 +40,7 @@ Os seguintes subtipos de sensor de impressão digital são valores de **\_ recur
 <thead>
 <tr class="header">
 <th style="text-align: left;">Constante/valor</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -98,7 +98,7 @@ Essa constante se aplica somente ao Windows 10 e posterior.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

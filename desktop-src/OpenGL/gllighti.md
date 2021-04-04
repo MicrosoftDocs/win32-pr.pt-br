@@ -85,7 +85,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                                                                   |
+| Nome                                                                                                  | Significado                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *Light* ou *pname* não era um valor aceito.<br/>                                                                                                                                                                  |
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | Um valor de expoente de spot foi especificado fora do intervalo \[ 0, 128 \] ou o corte de spot foi especificado fora do intervalo \[ 0, 90 \] (exceto pelo valor especial 180) ou um fator atenuante negativo foi especificado.<br/> |
@@ -123,7 +123,7 @@ As funções a seguir recuperam informações relacionadas à função **glLight
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

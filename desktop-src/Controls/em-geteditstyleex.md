@@ -56,7 +56,7 @@ Retorna os sinalizadores de estilo de edição estendida, que podem incluir um o
 
 
 
-| Código de retorno                                                                                                | Description                                                                                                                                                                                                                                                  |
+| Código de retorno                                                                                                | Descrição                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**HANDLEFRIENDLYURL de SES \_ ex \_**</dt> </dl>  | Exibir links de nome amigável com a mesma cor de texto e sublinhado como links automáticos, desde que a formatação temporária não seja usada ou use a cor automática do texto (padrão: 0).<br/>                                                                       |
 | <dl> <dt>**multitoque de SES \_ ex \_**</dt> </dl>         | Habilite o suporte ao toque em rich edit. Isso inclui seleção, posicionamento de cursor e invocação de menu de contexto. Quando esse sinalizador não é definido, o toque é emulado por comandos do mouse, que não usam as especificidades do modo Touch em conta (padrão: 0). <br/>      |
@@ -83,7 +83,7 @@ Retorna os sinalizadores de estilo de edição estendida, que podem incluir um o
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

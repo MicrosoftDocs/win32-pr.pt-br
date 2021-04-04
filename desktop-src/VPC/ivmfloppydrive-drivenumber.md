@@ -74,7 +74,7 @@ O índice de base zero do controlador.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

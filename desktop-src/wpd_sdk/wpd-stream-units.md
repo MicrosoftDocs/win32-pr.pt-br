@@ -24,7 +24,7 @@ ms.locfileid: "103662934"
 
 A enumeração de **\_ \_ unidades de fluxo WPD** especifica os tipos de unidade a serem usados para operações [**IPortableDeviceUnitsStream**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceunitsstream) .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

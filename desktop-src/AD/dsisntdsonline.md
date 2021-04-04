@@ -108,7 +108,7 @@ Essa função só pode ser chamada de um controlador de domínio que também sej
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

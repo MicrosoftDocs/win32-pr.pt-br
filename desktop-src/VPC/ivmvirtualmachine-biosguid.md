@@ -33,7 +33,7 @@ Recupera e define o GUID do BIOS.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,7 +86,7 @@ Essa propriedade não conterá informações válidas até que a máquina virtua
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

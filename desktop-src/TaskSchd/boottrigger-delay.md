@@ -27,7 +27,7 @@ ms.locfileid: "104085885"
 
 Para scripts, Obtém ou define um valor que indica a quantidade de tempo entre o momento em que o sistema é inicializado e quando a tarefa é iniciada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

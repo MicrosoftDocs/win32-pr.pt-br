@@ -91,8 +91,8 @@ Algoritmo usado com a chave especificada no registro de recurso. Os valores atri
 |------------------------------------------------------------------------------------------------------|----------------------------------------|
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | RSA/MD5 (RFC 2537)<br/>          |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Diffie-Hellman (RFC 2539)<br/>   |
-| <span id="3"></span><dl> <dt>**Beta**</dt> </dl> | DSA (RFC 2536)<br/>              |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Criptografia de curva elíptica<br/> |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | DSA (RFC 2536)<br/>              |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Criptografia de curva elíptica<br/> |
 
 
 
@@ -130,8 +130,8 @@ Protocolo para o qual a chave especificada no registro de recurso pode ser usada
 |----------------------------------------------------------------------------------------------------------|--------------------------|
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>     | TLS<br/>           |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl>     | Email<br/>        |
-| <span id="3"></span><dl> <dt>**Beta**</dt> </dl>     | DNSSEC<br/>        |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl>     | IPsec<br/>         |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl>     | DNSSEC<br/>        |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl>     | IPsec<br/>         |
 | <span id="255"></span><dl> <dt>**255**</dt> </dl> | Todos os protocolos<br/> |
 
 
@@ -166,7 +166,7 @@ Chave pública, representada na base 64, conforme descrito no apêndice A de RFC
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

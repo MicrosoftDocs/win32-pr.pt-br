@@ -33,7 +33,7 @@ Recupera e define o nome da configuração da máquina virtual.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -92,7 +92,7 @@ Se VPC.exe estiver em execução e a VM for salva, a definição da propriedade 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

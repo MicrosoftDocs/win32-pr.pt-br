@@ -93,7 +93,7 @@ A classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem esses métodos.
 |:----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Adiciona os nomes de grupo de computadores especificados à propriedade **ComputerGroupNames** .<br/>                                                                                      |
 | [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Adiciona os nomes de grupos de usuários especificados à propriedade **Usergroupnames** .<br/>                                                                                              |
-| [**Criada**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Cria um RD CAP.<br/>                                                                                                                                                   |
+| [**Criar**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Cria um RD CAP.<br/>                                                                                                                                                   |
 | [**Apagar**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Exclui o RD CAP atual.<br/>                                                                                                                                          |
 | [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Define a propriedade **ClipboardDisabled** .<br/>                                                                                                                             |
 | [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define a propriedade **DiskDrivesDisabled** .<br/>                                                                                                                            |
@@ -464,7 +464,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -197,7 +197,7 @@ Quando um indivíduo que o adaptador do mecanismo associa a um determinado ident
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

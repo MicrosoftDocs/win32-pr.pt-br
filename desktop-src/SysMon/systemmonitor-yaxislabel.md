@@ -56,7 +56,7 @@ Rótulo do eixo vertical (Y) do grafo. O comprimento máximo do título é de 12
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
