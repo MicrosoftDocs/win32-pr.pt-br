@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160220"
 ---
-# <a name="publishing-codecs-for-windows-media-player"></a><span data-ttu-id="61739-109">Codecs de publicação do Windows Media Player</span><span class="sxs-lookup"><span data-stu-id="61739-109">Publishing Codecs for Windows Media Player</span></span>
+# <a name="publishing-codecs-for-windows-media-player"></a><span data-ttu-id="39a3f-109">Codecs de publicação do Windows Media Player</span><span class="sxs-lookup"><span data-stu-id="39a3f-109">Publishing Codecs for Windows Media Player</span></span>
 
-<span data-ttu-id="61739-110">Não há mais suporte para o site WMPlugins para publicar seu codec e torná-lo detectável pelos usuários do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="61739-110">The WMPlugins website is no longer supported for publishing your codec and making it discoverable by Windows Media Player users.</span></span> <span data-ttu-id="61739-111">Em vez disso, você pode publicar seu codec em um site de sua escolha.</span><span class="sxs-lookup"><span data-stu-id="61739-111">You can instead publish your codec on a website of your choosing.</span></span>
+<span data-ttu-id="39a3f-110">Não há mais suporte para o site WMPlugins para publicar seu codec e torná-lo detectável pelos usuários do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="39a3f-110">The WMPlugins website is no longer supported for publishing your codec and making it discoverable by Windows Media Player users.</span></span> <span data-ttu-id="39a3f-111">Em vez disso, você pode publicar seu codec em um site de sua escolha.</span><span class="sxs-lookup"><span data-stu-id="39a3f-111">You can instead publish your codec on a website of your choosing.</span></span>
 
  
 

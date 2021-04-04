@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647216"
 ---
-# <a name="wia-application-programming-interface"></a><span data-ttu-id="ef84d-103">Interface de programação de aplicativo WIA</span><span class="sxs-lookup"><span data-stu-id="ef84d-103">WIA Application Programming Interface</span></span>
+# <a name="wia-application-programming-interface"></a><span data-ttu-id="947c4-103">Interface de programação de aplicativo WIA</span><span class="sxs-lookup"><span data-stu-id="947c4-103">WIA Application Programming Interface</span></span>
 
-<span data-ttu-id="ef84d-104">Esta seção contém informações de referência para os elementos de API que são fornecidos pela aquisição de imagens do Windows (WIA).</span><span class="sxs-lookup"><span data-stu-id="ef84d-104">This section contains reference information for the API elements that are provided by Windows Image Acquisition (WIA).</span></span> <span data-ttu-id="ef84d-105">O material de referência é dividido nas seguintes categorias:</span><span class="sxs-lookup"><span data-stu-id="ef84d-105">The reference material is divided into the following categories:</span></span>
+<span data-ttu-id="947c4-104">Esta seção contém informações de referência para os elementos de API que são fornecidos pela aquisição de imagens do Windows (WIA).</span><span class="sxs-lookup"><span data-stu-id="947c4-104">This section contains reference information for the API elements that are provided by Windows Image Acquisition (WIA).</span></span> <span data-ttu-id="947c4-105">O material de referência é dividido nas seguintes categorias:</span><span class="sxs-lookup"><span data-stu-id="947c4-105">The reference material is divided into the following categories:</span></span>
 
--   [<span data-ttu-id="ef84d-106">Interfaces</span><span class="sxs-lookup"><span data-stu-id="ef84d-106">Interfaces</span></span>](-wia-interfaces.md)
--   [<span data-ttu-id="ef84d-107">Funções</span><span class="sxs-lookup"><span data-stu-id="ef84d-107">Functions</span></span>](-wia-functions.md)
--   [<span data-ttu-id="ef84d-108">Estruturas</span><span class="sxs-lookup"><span data-stu-id="ef84d-108">Structures</span></span>](-wia-structures.md)
--   [<span data-ttu-id="ef84d-109">Enumerações</span><span class="sxs-lookup"><span data-stu-id="ef84d-109">Enumerations</span></span>](-wia-enumerations.md)
--   [<span data-ttu-id="ef84d-110">Constantes</span><span class="sxs-lookup"><span data-stu-id="ef84d-110">Constants</span></span>](-wia-constants.md)
+-   [<span data-ttu-id="947c4-106">Interfaces</span><span class="sxs-lookup"><span data-stu-id="947c4-106">Interfaces</span></span>](-wia-interfaces.md)
+-   [<span data-ttu-id="947c4-107">Funções</span><span class="sxs-lookup"><span data-stu-id="947c4-107">Functions</span></span>](-wia-functions.md)
+-   [<span data-ttu-id="947c4-108">Estruturas</span><span class="sxs-lookup"><span data-stu-id="947c4-108">Structures</span></span>](-wia-structures.md)
+-   [<span data-ttu-id="947c4-109">Enumerações</span><span class="sxs-lookup"><span data-stu-id="947c4-109">Enumerations</span></span>](-wia-enumerations.md)
+-   [<span data-ttu-id="947c4-110">Constantes</span><span class="sxs-lookup"><span data-stu-id="947c4-110">Constants</span></span>](-wia-constants.md)
 
  
 

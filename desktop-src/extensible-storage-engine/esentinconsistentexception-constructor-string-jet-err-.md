@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647435"
 ---
-# <a name="esentinconsistentexception-constructor-string-jet_err"></a><span data-ttu-id="610a5-103">Construtor EsentInconsistentException (cadeia de caracteres, JET_err)</span><span class="sxs-lookup"><span data-stu-id="610a5-103">EsentInconsistentException constructor (String, JET_err)</span></span>
+# <a name="esentinconsistentexception-constructor-string-jet_err"></a><span data-ttu-id="ef259-103">Construtor EsentInconsistentException (cadeia de caracteres, JET_err)</span><span class="sxs-lookup"><span data-stu-id="ef259-103">EsentInconsistentException constructor (String, JET_err)</span></span>
 
-<span data-ttu-id="610a5-104">Inicializa uma nova instância da classe EsentInconsistentException.</span><span class="sxs-lookup"><span data-stu-id="610a5-104">Initializes a new instance of the EsentInconsistentException class.</span></span>
+<span data-ttu-id="ef259-104">Inicializa uma nova instância da classe EsentInconsistentException.</span><span class="sxs-lookup"><span data-stu-id="ef259-104">Initializes a new instance of the EsentInconsistentException class.</span></span>
 
-<span data-ttu-id="610a5-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="610a5-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="610a5-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="610a5-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="ef259-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ef259-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="ef259-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ef259-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="610a5-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="610a5-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ef259-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ef259-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -57,28 +57,28 @@ protected EsentInconsistentException(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="610a5-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="610a5-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="ef259-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ef259-108">Parameters</span></span>
 
-  - <span data-ttu-id="610a5-109">descrição</span><span class="sxs-lookup"><span data-stu-id="610a5-109">description</span></span>  
-    <span data-ttu-id="610a5-110">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="610a5-110">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="ef259-109">descrição</span><span class="sxs-lookup"><span data-stu-id="ef259-109">description</span></span>  
+    <span data-ttu-id="ef259-110">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="ef259-110">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="610a5-111">A descrição do erro.</span><span class="sxs-lookup"><span data-stu-id="610a5-111">The description of the error.</span></span>
+    <span data-ttu-id="ef259-111">A descrição do erro.</span><span class="sxs-lookup"><span data-stu-id="ef259-111">The description of the error.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="610a5-112">erra</span><span class="sxs-lookup"><span data-stu-id="610a5-112">err</span></span>  
-    <span data-ttu-id="610a5-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="610a5-113">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
+  - <span data-ttu-id="ef259-112">erra</span><span class="sxs-lookup"><span data-stu-id="ef259-112">err</span></span>  
+    <span data-ttu-id="ef259-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="ef259-113">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
     
-    <span data-ttu-id="610a5-114">O código de erro da exceção.</span><span class="sxs-lookup"><span data-stu-id="610a5-114">The error code of the exception.</span></span>
+    <span data-ttu-id="ef259-114">O código de erro da exceção.</span><span class="sxs-lookup"><span data-stu-id="ef259-114">The error code of the exception.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="610a5-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="610a5-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ef259-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="ef259-115">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="610a5-116">Referência</span><span class="sxs-lookup"><span data-stu-id="610a5-116">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ef259-116">Referência</span><span class="sxs-lookup"><span data-stu-id="ef259-116">Reference</span></span>
 
-[<span data-ttu-id="610a5-117">Classe EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="610a5-117">EsentInconsistentException class</span></span>](./esentinconsistentexception-class.md)
+[<span data-ttu-id="ef259-117">Classe EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="ef259-117">EsentInconsistentException class</span></span>](./esentinconsistentexception-class.md)
 
-[<span data-ttu-id="610a5-118">Membros do EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="610a5-118">EsentInconsistentException members</span></span>](./esentinconsistentexception-members.md)
+[<span data-ttu-id="ef259-118">Membros do EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="ef259-118">EsentInconsistentException members</span></span>](./esentinconsistentexception-members.md)
 
-[<span data-ttu-id="610a5-119">Sobrecarga de EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="610a5-119">EsentInconsistentException overload</span></span>](./esentinconsistentexception-constructor.md)
+[<span data-ttu-id="ef259-119">Sobrecarga de EsentInconsistentException</span><span class="sxs-lookup"><span data-stu-id="ef259-119">EsentInconsistentException overload</span></span>](./esentinconsistentexception-constructor.md)
 
-[<span data-ttu-id="610a5-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="610a5-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="ef259-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ef259-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

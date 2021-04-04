@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646773"
 ---
-# <a name="structures-windows-update-agent-api"></a><span data-ttu-id="14a9f-103">Estruturas (Windows Update API do agente)</span><span class="sxs-lookup"><span data-stu-id="14a9f-103">Structures (Windows Update Agent API)</span></span>
+# <a name="structures-windows-update-agent-api"></a><span data-ttu-id="ee4ff-103">Estruturas (Windows Update API do agente)</span><span class="sxs-lookup"><span data-stu-id="ee4ff-103">Structures (Windows Update Agent API)</span></span>
 
-<span data-ttu-id="14a9f-104">O Windows Update Agent (WUA) usa as estruturas listadas na tabela a seguir para fornecer dados.</span><span class="sxs-lookup"><span data-stu-id="14a9f-104">Windows Update Agent (WUA) uses the structures that are listed in the following table to provide data.</span></span>
+<span data-ttu-id="ee4ff-104">O Windows Update Agent (WUA) usa as estruturas listadas na tabela a seguir para fornecer dados.</span><span class="sxs-lookup"><span data-stu-id="ee4ff-104">Windows Update Agent (WUA) uses the structures that are listed in the following table to provide data.</span></span>
 
 
 
-| <span data-ttu-id="14a9f-105">Estrutura</span><span class="sxs-lookup"><span data-stu-id="14a9f-105">Structure</span></span>                                                          | <span data-ttu-id="14a9f-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="14a9f-106">Description</span></span>                                                        |
+| <span data-ttu-id="ee4ff-105">Estrutura</span><span class="sxs-lookup"><span data-stu-id="ee4ff-105">Structure</span></span>                                                          | <span data-ttu-id="ee4ff-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="ee4ff-106">Description</span></span>                                                        |
 |--------------------------------------------------------------------|--------------------------------------------------------------------|
-| [<span data-ttu-id="14a9f-107">**UpdateEndpointProxySettings**</span><span class="sxs-lookup"><span data-stu-id="14a9f-107">**UpdateEndpointProxySettings**</span></span>](updateendpointproxysettings.md) | <span data-ttu-id="14a9f-108">Define as configurações de proxy usadas ao solicitar um token de ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="14a9f-108">Defines the proxy settings used when requesting an endpoint token.</span></span> |
+| [<span data-ttu-id="ee4ff-107">**UpdateEndpointProxySettings**</span><span class="sxs-lookup"><span data-stu-id="ee4ff-107">**UpdateEndpointProxySettings**</span></span>](updateendpointproxysettings.md) | <span data-ttu-id="ee4ff-108">Define as configurações de proxy usadas ao solicitar um token de ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="ee4ff-108">Defines the proxy settings used when requesting an endpoint token.</span></span> |
 
 
 

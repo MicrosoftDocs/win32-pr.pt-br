@@ -19,41 +19,41 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823388"
 ---
-# <a name="copyright"></a><span data-ttu-id="21666-104">Direitos autorais</span><span class="sxs-lookup"><span data-stu-id="21666-104">Copyright</span></span>
+# <a name="copyright"></a><span data-ttu-id="ea9f8-104">Direitos autorais</span><span class="sxs-lookup"><span data-stu-id="ea9f8-104">Copyright</span></span>
 
-<span data-ttu-id="21666-105">O atributo de **direitos autorais** contém uma mensagem de direitos autorais para o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="21666-105">The **Copyright** attribute contains a copyright message for the content.</span></span>
+<span data-ttu-id="ea9f8-105">O atributo de **direitos autorais** contém uma mensagem de direitos autorais para o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="ea9f8-105">The **Copyright** attribute contains a copyright message for the content.</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="21666-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="21666-106">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="ea9f8-106">Constante global</span><span class="sxs-lookup"><span data-stu-id="ea9f8-106">Global Constant</span></span>
 
-<span data-ttu-id="21666-107">g \_ wszWMCopyright</span><span class="sxs-lookup"><span data-stu-id="21666-107">g\_wszWMCopyright</span></span>
+<span data-ttu-id="ea9f8-107">g \_ wszWMCopyright</span><span class="sxs-lookup"><span data-stu-id="ea9f8-107">g\_wszWMCopyright</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="21666-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="21666-108">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="ea9f8-108">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="ea9f8-108">Data Type</span></span>
 
-<span data-ttu-id="21666-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="21666-109">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="ea9f8-109">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="ea9f8-109">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="example"></a><span data-ttu-id="21666-110">Exemplo</span><span class="sxs-lookup"><span data-stu-id="21666-110">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ea9f8-110">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea9f8-110">Example</span></span>
 
 
 
-| <span data-ttu-id="21666-111">Tipo de arquivo</span><span class="sxs-lookup"><span data-stu-id="21666-111">File type</span></span> | <span data-ttu-id="21666-112">Valor de exemplo</span><span class="sxs-lookup"><span data-stu-id="21666-112">Example value</span></span>                          |
+| <span data-ttu-id="ea9f8-111">Tipo de arquivo</span><span class="sxs-lookup"><span data-stu-id="ea9f8-111">File type</span></span> | <span data-ttu-id="ea9f8-112">Valor de exemplo</span><span class="sxs-lookup"><span data-stu-id="ea9f8-112">Example value</span></span>                          |
 |-----------|----------------------------------------|
-| <span data-ttu-id="21666-113">Qualquer</span><span class="sxs-lookup"><span data-stu-id="21666-113">Any</span></span>       | <span data-ttu-id="21666-114">"Copyright (C) Microsoft Corporation".</span><span class="sxs-lookup"><span data-stu-id="21666-114">"Copyright (C) Microsoft Corporation."</span></span> |
+| <span data-ttu-id="ea9f8-113">Qualquer</span><span class="sxs-lookup"><span data-stu-id="ea9f8-113">Any</span></span>       | <span data-ttu-id="ea9f8-114">"Copyright (C) Microsoft Corporation".</span><span class="sxs-lookup"><span data-stu-id="ea9f8-114">"Copyright (C) Microsoft Corporation."</span></span> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="21666-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="21666-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ea9f8-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="ea9f8-115">Remarks</span></span>
 
-<span data-ttu-id="21666-116">O texto de uma mensagem de direitos autorais não está em conformidade com nenhum padrão.</span><span class="sxs-lookup"><span data-stu-id="21666-116">The text of a copyright message does not conform to any standard.</span></span> <span data-ttu-id="21666-117">Empresas individuais podem usar qualquer formato apropriado.</span><span class="sxs-lookup"><span data-stu-id="21666-117">Individual companies can use whatever format is appropriate.</span></span>
+<span data-ttu-id="ea9f8-116">O texto de uma mensagem de direitos autorais não está em conformidade com nenhum padrão.</span><span class="sxs-lookup"><span data-stu-id="ea9f8-116">The text of a copyright message does not conform to any standard.</span></span> <span data-ttu-id="ea9f8-117">Empresas individuais podem usar qualquer formato apropriado.</span><span class="sxs-lookup"><span data-stu-id="ea9f8-117">Individual companies can use whatever format is appropriate.</span></span>
 
-<span data-ttu-id="21666-118">Esse atributo se aplica a todo o arquivo.</span><span class="sxs-lookup"><span data-stu-id="21666-118">This attribute applies to the entire file.</span></span>
+<span data-ttu-id="ea9f8-118">Esse atributo se aplica a todo o arquivo.</span><span class="sxs-lookup"><span data-stu-id="ea9f8-118">This attribute applies to the entire file.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="21666-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="21666-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea9f8-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="ea9f8-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="21666-120">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="21666-120">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="ea9f8-120">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="ea9f8-120">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

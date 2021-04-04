@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647301"
 ---
-# <a name="idownloadprogress-methods"></a><span data-ttu-id="13976-103">Métodos IDownloadProgress</span><span class="sxs-lookup"><span data-stu-id="13976-103">IDownloadProgress Methods</span></span>
+# <a name="idownloadprogress-methods"></a><span data-ttu-id="4fefc-103">Métodos IDownloadProgress</span><span class="sxs-lookup"><span data-stu-id="4fefc-103">IDownloadProgress Methods</span></span>
 
-<span data-ttu-id="13976-104">A interface [**IDownloadProgress**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadprogress) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="13976-104">The [**IDownloadProgress**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadprogress) interface defines the following method.</span></span>
+<span data-ttu-id="4fefc-104">A interface [**IDownloadProgress**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadprogress) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="4fefc-104">The [**IDownloadProgress**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadprogress) interface defines the following method.</span></span>
 
 
 
-| <span data-ttu-id="13976-105">Método</span><span class="sxs-lookup"><span data-stu-id="13976-105">Method</span></span>                                                       | <span data-ttu-id="13976-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="13976-106">Description</span></span>                                               |
+| <span data-ttu-id="4fefc-105">Método</span><span class="sxs-lookup"><span data-stu-id="4fefc-105">Method</span></span>                                                       | <span data-ttu-id="4fefc-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="4fefc-106">Description</span></span>                                               |
 |--------------------------------------------------------------|-----------------------------------------------------------|
-| [<span data-ttu-id="13976-107">**GetUpdateResult**</span><span class="sxs-lookup"><span data-stu-id="13976-107">**GetUpdateResult**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-idownloadprogress-getupdateresult) | <span data-ttu-id="13976-108">Retorna o resultado do download de uma atualização especificada.</span><span class="sxs-lookup"><span data-stu-id="13976-108">Returns the result of the download of a specified update.</span></span> |
+| [<span data-ttu-id="4fefc-107">**GetUpdateResult**</span><span class="sxs-lookup"><span data-stu-id="4fefc-107">**GetUpdateResult**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-idownloadprogress-getupdateresult) | <span data-ttu-id="4fefc-108">Retorna o resultado do download de uma atualização especificada.</span><span class="sxs-lookup"><span data-stu-id="4fefc-108">Returns the result of the download of a specified update.</span></span> |
 
 
 

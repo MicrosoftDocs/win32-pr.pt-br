@@ -1,0 +1,31 @@
+---
+description: Consulta de serviço de nome no Windows Sockets (Winsock).
+ms.assetid: 94d77f7b-824a-4686-b270-9c662976bbc0
+title: Consulta de serviço
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 951ad1950c0f1d97ab0ca6d06f79ed6ff0180d96
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104010822"
+---
+# <a name="service-query"></a><span data-ttu-id="04df6-103">Consulta de serviço</span><span class="sxs-lookup"><span data-stu-id="04df6-103">Service Query</span></span>
+
+-   [<span data-ttu-id="04df6-104">**NSPLookupServiceBegin**</span><span class="sxs-lookup"><span data-stu-id="04df6-104">**NSPLookupServiceBegin**</span></span>](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicebegin)
+-   [<span data-ttu-id="04df6-105">**NSPLookupServiceNext**</span><span class="sxs-lookup"><span data-stu-id="04df6-105">**NSPLookupServiceNext**</span></span>](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicenext)
+-   [<span data-ttu-id="04df6-106">**NSPLookupServiceEnd**</span><span class="sxs-lookup"><span data-stu-id="04df6-106">**NSPLookupServiceEnd**</span></span>](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupserviceend)
+
+<span data-ttu-id="04df6-107">Uma consulta de serviço de nome envolve uma série de chamadas: [**NSPLookupServiceBegin**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicebegin), seguida por uma ou mais chamadas para [**NSPLookupServiceNext**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicenext) e terminando com uma chamada para [**NSPLookupServiceEnd**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupserviceend).</span><span class="sxs-lookup"><span data-stu-id="04df6-107">A name service query involves a series of calls: [**NSPLookupServiceBegin**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicebegin), followed by one or more calls to [**NSPLookupServiceNext**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicenext) and ending with a call to [**NSPLookupServiceEnd**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupserviceend).</span></span> <span data-ttu-id="04df6-108">[**NSPLookupServiceBegin**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicebegin) usa uma estrutura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) como entrada para definir os parâmetros de consulta junto com um conjunto de sinalizadores para fornecer controle adicional sobre a operação de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="04df6-108">[**NSPLookupServiceBegin**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicebegin) takes a [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) structure as input in order to define the query parameters along with a set of flags to provide additional control over the search operation.</span></span> <span data-ttu-id="04df6-109">Ele retorna um identificador de consulta que é usado nas chamadas subsequentes para **NSPLookupServiceNext** e **NSPLookupServiceEnd**.</span><span class="sxs-lookup"><span data-stu-id="04df6-109">It returns a query handle which is used in the subsequent calls to **NSPLookupServiceNext** and **NSPLookupServiceEnd**.</span></span>
+
+<span data-ttu-id="04df6-110">O cliente SPI do namespace invoca [**NSPLookupServiceNext**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicenext) para obter os resultados da consulta, com os resultados fornecidos em um buffer [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) fornecido pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="04df6-110">The namespace SPI client invokes [**NSPLookupServiceNext**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupservicenext) to obtain query results, with results supplied in an client-supplied [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) buffer.</span></span> <span data-ttu-id="04df6-111">O cliente continua a chamar **NSPLookupServiceNext** até que o código de erro WSA \_ E \_ não \_ mais seja retornado, indicando que todos os resultados foram recuperados.</span><span class="sxs-lookup"><span data-stu-id="04df6-111">The client continues to call **NSPLookupServiceNext** until the error code WSA\_E\_NO\_MORE is returned indicating that all results have been retrieved.</span></span> <span data-ttu-id="04df6-112">Em seguida, a pesquisa é encerrada por uma chamada para [**NSPLookupServiceEnd**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupserviceend).</span><span class="sxs-lookup"><span data-stu-id="04df6-112">The search is then terminated by a call to [**NSPLookupServiceEnd**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpnsplookupserviceend).</span></span> <span data-ttu-id="04df6-113">A função **NSPLookupServiceEnd** também pode ser usada para cancelar um **NSPLookupServiceNext** pendente no momento quando chamado de outro thread.</span><span class="sxs-lookup"><span data-stu-id="04df6-113">The **NSPLookupServiceEnd** function can also be used to cancel a currently pending **NSPLookupServiceNext** when called from another thread.</span></span>
+
+<span data-ttu-id="04df6-114">No Windows Sockets 2, códigos de erro conflitantes são definidos para WSAENOMORE (10102) e WSA \_ e \_ não \_ mais (10110).</span><span class="sxs-lookup"><span data-stu-id="04df6-114">In Windows Sockets 2, conflicting error codes are defined for WSAENOMORE (10102) and WSA\_E\_NO\_MORE (10110).</span></span> <span data-ttu-id="04df6-115">O código de erro WSAENOMORE será removido em uma versão futura e somente o WSA \_ e \_ não \_ será mais mantido.</span><span class="sxs-lookup"><span data-stu-id="04df6-115">The error code WSAENOMORE will be removed in a future version and only WSA\_E\_NO\_MORE will remain.</span></span> <span data-ttu-id="04df6-116">Provedores de namespace devem alternar para o uso do WSA \_ E \_ não \_ mais código de erro assim que possível para manter a compatibilidade com a maior variedade possível de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="04df6-116">Namespace providers should switch to using the WSA\_E\_NO\_MORE error code as soon as possible to maintain compatibility with the widest possible range of applications.</span></span>
+
+ 
+
+ 
+
+
+

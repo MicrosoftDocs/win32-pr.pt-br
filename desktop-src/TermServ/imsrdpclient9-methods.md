@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917470"
 ---
-# <a name="imsrdpclient9-methods"></a><span data-ttu-id="367d1-103">Métodos IMsRdpClient9</span><span class="sxs-lookup"><span data-stu-id="367d1-103">IMsRdpClient9 methods</span></span>
+# <a name="imsrdpclient9-methods"></a><span data-ttu-id="2be79-103">Métodos IMsRdpClient9</span><span class="sxs-lookup"><span data-stu-id="2be79-103">IMsRdpClient9 methods</span></span>
 
-<span data-ttu-id="367d1-104">A interface [**IMsRdpClient9**](imsrdpclient9.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="367d1-104">The [**IMsRdpClient9**](imsrdpclient9.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="2be79-104">A interface [**IMsRdpClient9**](imsrdpclient9.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="2be79-104">The [**IMsRdpClient9**](imsrdpclient9.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="367d1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="367d1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2be79-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2be79-105">In this section</span></span>
 
--   [<span data-ttu-id="367d1-106">**método attachEvent**</span><span class="sxs-lookup"><span data-stu-id="367d1-106">**attachEvent method**</span></span>](imsrdpclient9-attachevent.md)
--   [<span data-ttu-id="367d1-107">**método detachEvent**</span><span class="sxs-lookup"><span data-stu-id="367d1-107">**detachEvent method**</span></span>](imsrdpclient9-detachevent.md)
--   [<span data-ttu-id="367d1-108">**Método SyncSessionDisplaySettings**</span><span class="sxs-lookup"><span data-stu-id="367d1-108">**SyncSessionDisplaySettings method**</span></span>](imsrdpclient9-syncsessiondisplaysettings.md)
--   <span data-ttu-id="367d1-109">[**Método UpdateSessionDisplaySettings**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="367d1-109">[**UpdateSessionDisplaySettings method**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85))</span></span>
+-   [<span data-ttu-id="2be79-106">**método attachEvent**</span><span class="sxs-lookup"><span data-stu-id="2be79-106">**attachEvent method**</span></span>](imsrdpclient9-attachevent.md)
+-   [<span data-ttu-id="2be79-107">**método detachEvent**</span><span class="sxs-lookup"><span data-stu-id="2be79-107">**detachEvent method**</span></span>](imsrdpclient9-detachevent.md)
+-   [<span data-ttu-id="2be79-108">**Método SyncSessionDisplaySettings**</span><span class="sxs-lookup"><span data-stu-id="2be79-108">**SyncSessionDisplaySettings method**</span></span>](imsrdpclient9-syncsessiondisplaysettings.md)
+-   <span data-ttu-id="2be79-109">[**Método UpdateSessionDisplaySettings**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="2be79-109">[**UpdateSessionDisplaySettings method**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85))</span></span>
 
  
 

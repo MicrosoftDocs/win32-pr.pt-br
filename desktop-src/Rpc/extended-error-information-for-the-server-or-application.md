@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/27/2019
 ms.locfileid: "103823497"
 ---
-# <a name="extended-error-information-for-server-or-app"></a><span data-ttu-id="6f021-103">Informações de erro estendidas para o servidor ou aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f021-103">Extended error information for server or app</span></span>
+# <a name="extended-error-information-for-server-or-app"></a><span data-ttu-id="d0dd4-103">Informações de erro estendidas para o servidor ou aplicativo</span><span class="sxs-lookup"><span data-stu-id="d0dd4-103">Extended error information for server or app</span></span>
 
-<span data-ttu-id="6f021-104">Esta seção descreve o que um servidor RPC ou um aplicativo que usa RPC deve fazer para permitir que o usuário se beneficie totalmente das informações de erro estendidas.</span><span class="sxs-lookup"><span data-stu-id="6f021-104">This section describes what an RPC server or an application using RPC must do to enable the user to fully benefit from extended error information.</span></span>
+<span data-ttu-id="d0dd4-104">Esta seção descreve o que um servidor RPC ou um aplicativo que usa RPC deve fazer para permitir que o usuário se beneficie totalmente das informações de erro estendidas.</span><span class="sxs-lookup"><span data-stu-id="d0dd4-104">This section describes what an RPC server or an application using RPC must do to enable the user to fully benefit from extended error information.</span></span>
 
  
 

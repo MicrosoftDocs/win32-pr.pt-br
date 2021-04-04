@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917483"
 ---
-# <a name="retrieving-a-user-sdo"></a><span data-ttu-id="ec303-103">Recuperando um SDO de usuário</span><span class="sxs-lookup"><span data-stu-id="ec303-103">Retrieving a User SDO</span></span>
+# <a name="retrieving-a-user-sdo"></a><span data-ttu-id="26b69-103">Recuperando um SDO de usuário</span><span class="sxs-lookup"><span data-stu-id="26b69-103">Retrieving a User SDO</span></span>
 
-<span data-ttu-id="ec303-104">O código a seguir recupera um SDO (objeto de dados do servidor) para o administrador.</span><span class="sxs-lookup"><span data-stu-id="ec303-104">The following code retrieves a Server Data Object (SDO) for the Administrator.</span></span>
+<span data-ttu-id="26b69-104">O código a seguir recupera um SDO (objeto de dados do servidor) para o administrador.</span><span class="sxs-lookup"><span data-stu-id="26b69-104">The following code retrieves a Server Data Object (SDO) for the Administrator.</span></span>
 
 
 ```C++
@@ -45,26 +45,26 @@ ms.locfileid: "103917483"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="ec303-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ec303-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="26b69-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="26b69-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ec303-106">Anexando a um computador SDO-Enabled</span><span class="sxs-lookup"><span data-stu-id="ec303-106">Attaching to an SDO-Enabled Computer</span></span>](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
+[<span data-ttu-id="26b69-106">Anexando a um computador SDO-Enabled</span><span class="sxs-lookup"><span data-stu-id="26b69-106">Attaching to an SDO-Enabled Computer</span></span>](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
 </dt> <dt>
 
-[<span data-ttu-id="ec303-107">**ISdo**</span><span class="sxs-lookup"><span data-stu-id="ec303-107">**ISdo**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdo)
+[<span data-ttu-id="26b69-107">**ISdo**</span><span class="sxs-lookup"><span data-stu-id="26b69-107">**ISdo**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdo)
 </dt> <dt>
 
-[<span data-ttu-id="ec303-108">**ISdoMachine**</span><span class="sxs-lookup"><span data-stu-id="ec303-108">**ISdoMachine**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
+[<span data-ttu-id="26b69-108">**ISdoMachine**</span><span class="sxs-lookup"><span data-stu-id="26b69-108">**ISdoMachine**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
 </dt> <dt>
 
-[<span data-ttu-id="ec303-109">**ISdoMachine::GetUserSDO**</span><span class="sxs-lookup"><span data-stu-id="ec303-109">**ISdoMachine::GetUserSDO**</span></span>](/windows/desktop/api/sdoias/nf-sdoias-isdomachine-getusersdo)
+[<span data-ttu-id="26b69-109">**ISdoMachine::GetUserSDO**</span><span class="sxs-lookup"><span data-stu-id="26b69-109">**ISdoMachine::GetUserSDO**</span></span>](/windows/desktop/api/sdoias/nf-sdoias-isdomachine-getusersdo)
 </dt> <dt>
 
-[<span data-ttu-id="ec303-110">**SysAllocString**</span><span class="sxs-lookup"><span data-stu-id="ec303-110">**SysAllocString**</span></span>](/windows/win32/api/oleauto/nf-oleauto-sysallocstring)
+[<span data-ttu-id="26b69-110">**SysAllocString**</span><span class="sxs-lookup"><span data-stu-id="26b69-110">**SysAllocString**</span></span>](/windows/win32/api/oleauto/nf-oleauto-sysallocstring)
 </dt> <dt>
 
-[<span data-ttu-id="ec303-111">**SysFreeString**</span><span class="sxs-lookup"><span data-stu-id="ec303-111">**SysFreeString**</span></span>](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
+[<span data-ttu-id="26b69-111">**SysFreeString**</span><span class="sxs-lookup"><span data-stu-id="26b69-111">**SysFreeString**</span></span>](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
 </dt> </dl>
 
  

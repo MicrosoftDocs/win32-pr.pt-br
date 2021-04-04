@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822956"
 ---
-# <a name="legacy-shell-features"></a><span data-ttu-id="cea96-104">Recursos de shell herdados</span><span class="sxs-lookup"><span data-stu-id="cea96-104">Legacy Shell Features</span></span>
+# <a name="legacy-shell-features"></a><span data-ttu-id="65786-104">Recursos de shell herdados</span><span class="sxs-lookup"><span data-stu-id="65786-104">Legacy Shell Features</span></span>
 
-<span data-ttu-id="cea96-105">Esta seção descreve os recursos de desenvolvedor herdados do shell do Windows.</span><span class="sxs-lookup"><span data-stu-id="cea96-105">This section describes legacy developer features of Windows Shell.</span></span> <span data-ttu-id="cea96-106">Alguns desses recursos foram substituídos por novos recursos do Windows.</span><span class="sxs-lookup"><span data-stu-id="cea96-106">Some of these features have been superceded by new features in Windows.</span></span>
+<span data-ttu-id="65786-105">Esta seção descreve os recursos de desenvolvedor herdados do shell do Windows.</span><span class="sxs-lookup"><span data-stu-id="65786-105">This section describes legacy developer features of Windows Shell.</span></span> <span data-ttu-id="65786-106">Alguns desses recursos foram substituídos por novos recursos do Windows.</span><span class="sxs-lookup"><span data-stu-id="65786-106">Some of these features have been superceded by new features in Windows.</span></span>
 
  
 

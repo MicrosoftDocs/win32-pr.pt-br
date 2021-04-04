@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647299"
 ---
-# <a name="idownloadresult-methods"></a><span data-ttu-id="9afc5-103">Métodos IDownloadResult</span><span class="sxs-lookup"><span data-stu-id="9afc5-103">IDownloadResult Methods</span></span>
+# <a name="idownloadresult-methods"></a><span data-ttu-id="0b2f5-103">Métodos IDownloadResult</span><span class="sxs-lookup"><span data-stu-id="0b2f5-103">IDownloadResult Methods</span></span>
 
-<span data-ttu-id="9afc5-104">A interface [**IDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadresult) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="9afc5-104">The [**IDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadresult) interface defines the following method.</span></span>
+<span data-ttu-id="0b2f5-104">A interface [**IDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadresult) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="0b2f5-104">The [**IDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-idownloadresult) interface defines the following method.</span></span>
 
 
 
-| <span data-ttu-id="9afc5-105">Método</span><span class="sxs-lookup"><span data-stu-id="9afc5-105">Method</span></span>                                                     | <span data-ttu-id="9afc5-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="9afc5-106">Description</span></span>                                                                                                                              |
+| <span data-ttu-id="0b2f5-105">Método</span><span class="sxs-lookup"><span data-stu-id="0b2f5-105">Method</span></span>                                                     | <span data-ttu-id="0b2f5-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b2f5-106">Description</span></span>                                                                                                                              |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="9afc5-107">**GetUpdateResult**</span><span class="sxs-lookup"><span data-stu-id="9afc5-107">**GetUpdateResult**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-idownloadresult-getupdateresult) | <span data-ttu-id="9afc5-108">Retorna uma interface [**IUpdateDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadresult) que contém informações de download para a atualização especificada.</span><span class="sxs-lookup"><span data-stu-id="9afc5-108">Returns an [**IUpdateDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadresult) interface that contains download information for the specified update.</span></span> |
+| [<span data-ttu-id="0b2f5-107">**GetUpdateResult**</span><span class="sxs-lookup"><span data-stu-id="0b2f5-107">**GetUpdateResult**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-idownloadresult-getupdateresult) | <span data-ttu-id="0b2f5-108">Retorna uma interface [**IUpdateDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadresult) que contém informações de download para a atualização especificada.</span><span class="sxs-lookup"><span data-stu-id="0b2f5-108">Returns an [**IUpdateDownloadResult**](/windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadresult) interface that contains download information for the specified update.</span></span> |
 
 
 

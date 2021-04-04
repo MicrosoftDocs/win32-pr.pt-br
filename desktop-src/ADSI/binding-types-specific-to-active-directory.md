@@ -12,12 +12,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103917667"
 ---
-# <a name="binding-types-specific-to-active-directory"></a><span data-ttu-id="3921e-103">Tipos de associação específicos para Active Directory</span><span class="sxs-lookup"><span data-stu-id="3921e-103">Binding Types Specific to Active Directory</span></span>
+# <a name="binding-types-specific-to-active-directory"></a><span data-ttu-id="72055-103">Tipos de associação específicos para Active Directory</span><span class="sxs-lookup"><span data-stu-id="72055-103">Binding Types Specific to Active Directory</span></span>
 
-<span data-ttu-id="3921e-104">Além das associações LDAP discutidas anteriormente, Active Directory apresenta vários novos conceitos para associação a um objeto.</span><span class="sxs-lookup"><span data-stu-id="3921e-104">In addition to the LDAP bindings discussed previously, Active Directory introduces several new concepts for binding to an object.</span></span> <span data-ttu-id="3921e-105">Consulte os seguintes tópicos na documentação do [Active Directory Domain Services](/windows/desktop/AD/active-directory-domain-services) :</span><span class="sxs-lookup"><span data-stu-id="3921e-105">See the following topics in the [Active Directory Domain Services](/windows/desktop/AD/active-directory-domain-services) documentation:</span></span>
+<span data-ttu-id="72055-104">Além das associações LDAP discutidas anteriormente, Active Directory apresenta vários novos conceitos para associação a um objeto.</span><span class="sxs-lookup"><span data-stu-id="72055-104">In addition to the LDAP bindings discussed previously, Active Directory introduces several new concepts for binding to an object.</span></span> <span data-ttu-id="72055-105">Consulte os seguintes tópicos na documentação do [Active Directory Domain Services](/windows/desktop/AD/active-directory-domain-services) :</span><span class="sxs-lookup"><span data-stu-id="72055-105">See the following topics in the [Active Directory Domain Services](/windows/desktop/AD/active-directory-domain-services) documentation:</span></span>
 
--   [<span data-ttu-id="3921e-106">Associação sem servidor e RootDSE</span><span class="sxs-lookup"><span data-stu-id="3921e-106">Serverless Binding and RootDSE</span></span>](/windows/desktop/AD/serverless-binding-and-rootdse)
--   [<span data-ttu-id="3921e-107">Associação ao catálogo global</span><span class="sxs-lookup"><span data-stu-id="3921e-107">Binding to the Global Catalog</span></span>](/windows/desktop/AD/binding-to-the-global-catalog)
+-   [<span data-ttu-id="72055-106">Associação sem servidor e RootDSE</span><span class="sxs-lookup"><span data-stu-id="72055-106">Serverless Binding and RootDSE</span></span>](/windows/desktop/AD/serverless-binding-and-rootdse)
+-   [<span data-ttu-id="72055-107">Associação ao catálogo global</span><span class="sxs-lookup"><span data-stu-id="72055-107">Binding to the Global Catalog</span></span>](/windows/desktop/AD/binding-to-the-global-catalog)
 
  
 

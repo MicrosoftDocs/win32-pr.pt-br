@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917376"
 ---
-# <a name="auth-provider-name"></a><span data-ttu-id="dcd05-103">Nome do provedor de autenticação</span><span class="sxs-lookup"><span data-stu-id="dcd05-103">Auth-Provider-Name</span></span>
+# <a name="auth-provider-name"></a><span data-ttu-id="86602-103">Nome do provedor de autenticação</span><span class="sxs-lookup"><span data-stu-id="86602-103">Auth-Provider-Name</span></span>
 
-<span data-ttu-id="dcd05-104">O nome do servidor RADIUS ou grupo de servidores que fornece autenticação.</span><span class="sxs-lookup"><span data-stu-id="dcd05-104">The name of the RADIUS server or server group that provides authentication.</span></span>
+<span data-ttu-id="86602-104">O nome do servidor RADIUS ou grupo de servidores que fornece autenticação.</span><span class="sxs-lookup"><span data-stu-id="86602-104">The name of the RADIUS server or server group that provides authentication.</span></span>
 
-<span data-ttu-id="dcd05-105">**Nome LDAP:** msAuthProviderName</span><span class="sxs-lookup"><span data-stu-id="dcd05-105">**LDAP Name:** msAuthProviderName</span></span>
+<span data-ttu-id="86602-105">**Nome LDAP:** msAuthProviderName</span><span class="sxs-lookup"><span data-stu-id="86602-105">**LDAP Name:** msAuthProviderName</span></span>
 
-<span data-ttu-id="dcd05-106">**ID:** 4137 = [ **\_ nome do \_ \_ provedor de \_ autenticação de atributo do IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)</span><span class="sxs-lookup"><span data-stu-id="dcd05-106">**ID:** 4137 = [**IAS\_ATTRIBUTE\_AUTH\_PROVIDER\_NAME**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)</span></span>
+<span data-ttu-id="86602-106">**ID:** 4137 = [ **\_ nome do \_ \_ provedor de \_ autenticação de atributo do IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)</span><span class="sxs-lookup"><span data-stu-id="86602-106">**ID:** 4137 = [**IAS\_ATTRIBUTE\_AUTH\_PROVIDER\_NAME**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)</span></span>
 
-<span data-ttu-id="dcd05-107">**Sintaxe:** Strings</span><span class="sxs-lookup"><span data-stu-id="dcd05-107">**Syntax:** String</span></span>
+<span data-ttu-id="86602-107">**Sintaxe:** Strings</span><span class="sxs-lookup"><span data-stu-id="86602-107">**Syntax:** String</span></span>
 
  
 

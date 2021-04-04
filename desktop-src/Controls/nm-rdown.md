@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823130"
 ---
-# <a name="nm_rdown-notification-code"></a><span data-ttu-id="155ea-104">\_Código de notificação nm RDOWN</span><span class="sxs-lookup"><span data-stu-id="155ea-104">NM\_RDOWN notification code</span></span>
+# <a name="nm_rdown-notification-code"></a><span data-ttu-id="d4cac-104">\_Código de notificação nm RDOWN</span><span class="sxs-lookup"><span data-stu-id="d4cac-104">NM\_RDOWN notification code</span></span>
 
-<span data-ttu-id="155ea-105">Não há suporte para este código de notificação.</span><span class="sxs-lookup"><span data-stu-id="155ea-105">This notification code is not supported.</span></span>
+<span data-ttu-id="d4cac-105">Não há suporte para este código de notificação.</span><span class="sxs-lookup"><span data-stu-id="d4cac-105">This notification code is not supported.</span></span>
 
  
 

@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160477"
 ---
-# <a name="directdraw-functions"></a><span data-ttu-id="b9156-103">Funções do DirectDraw</span><span class="sxs-lookup"><span data-stu-id="b9156-103">DirectDraw Functions</span></span>
+# <a name="directdraw-functions"></a><span data-ttu-id="6e45f-103">Funções do DirectDraw</span><span class="sxs-lookup"><span data-stu-id="6e45f-103">DirectDraw Functions</span></span>
 
-<span data-ttu-id="b9156-104">Esta seção contém informações sobre as seguintes funções globais do DirectDraw:</span><span class="sxs-lookup"><span data-stu-id="b9156-104">This section contains information about the following DirectDraw global functions:</span></span>
+<span data-ttu-id="6e45f-104">Esta seção contém informações sobre as seguintes funções globais do DirectDraw:</span><span class="sxs-lookup"><span data-stu-id="6e45f-104">This section contains information about the following DirectDraw global functions:</span></span>
 
--   [<span data-ttu-id="b9156-105">**DirectDrawCreate**</span><span class="sxs-lookup"><span data-stu-id="b9156-105">**DirectDrawCreate**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate)
--   [<span data-ttu-id="b9156-106">**DirectDrawCreateClipper**</span><span class="sxs-lookup"><span data-stu-id="b9156-106">**DirectDrawCreateClipper**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreateclipper)
--   [<span data-ttu-id="b9156-107">**DirectDrawCreateEx**</span><span class="sxs-lookup"><span data-stu-id="b9156-107">**DirectDrawCreateEx**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreateex)
--   [<span data-ttu-id="b9156-108">**DirectDrawEnumerate**</span><span class="sxs-lookup"><span data-stu-id="b9156-108">**DirectDrawEnumerate**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawenumeratew)
--   [<span data-ttu-id="b9156-109">**DirectDrawEnumerateEx**</span><span class="sxs-lookup"><span data-stu-id="b9156-109">**DirectDrawEnumerateEx**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawenumerateexa)
+-   [<span data-ttu-id="6e45f-105">**DirectDrawCreate**</span><span class="sxs-lookup"><span data-stu-id="6e45f-105">**DirectDrawCreate**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate)
+-   [<span data-ttu-id="6e45f-106">**DirectDrawCreateClipper**</span><span class="sxs-lookup"><span data-stu-id="6e45f-106">**DirectDrawCreateClipper**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreateclipper)
+-   [<span data-ttu-id="6e45f-107">**DirectDrawCreateEx**</span><span class="sxs-lookup"><span data-stu-id="6e45f-107">**DirectDrawCreateEx**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreateex)
+-   [<span data-ttu-id="6e45f-108">**DirectDrawEnumerate**</span><span class="sxs-lookup"><span data-stu-id="6e45f-108">**DirectDrawEnumerate**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawenumeratew)
+-   [<span data-ttu-id="6e45f-109">**DirectDrawEnumerateEx**</span><span class="sxs-lookup"><span data-stu-id="6e45f-109">**DirectDrawEnumerateEx**</span></span>](/windows/desktop/api/Ddraw/nf-ddraw-directdrawenumerateexa)
 
  
 
