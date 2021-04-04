@@ -37,7 +37,7 @@ O elemento **ExecutionTimeLimit** é definido pelo tipo complexo [**settingstype
 
 
 
-| Elemento                                                           | Derivado de                                                         | Description                                                                        |
+| Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingstype**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
@@ -60,7 +60,7 @@ Para o desenvolvimento de scripts, consulte [**TaskSettings.ExecutionTimeLimit**
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

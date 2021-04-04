@@ -72,7 +72,7 @@ Se *LP* for um ponteiro válido, uma cadeia de caracteres terminada em nulo corr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

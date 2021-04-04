@@ -38,7 +38,7 @@ O objeto **principal** tem essas propriedades.
 
 
 
-| Propriedade                                                | Tipo de acesso           | Description                                                                                                                                                  |
+| Propriedade                                                | Tipo de acesso           | Descrição                                                                                                                                                  |
 |:--------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**DisplayName**](principal-displayname.md)<br/> | Leitura/gravação<br/> | Obtém ou define o nome da entidade de segurança que é exibido na interface do usuário do Agendador de Tarefas.<br/>                                                                |
 | [**GroupId**](principal-groupid.md)<br/>         | Leitura/gravação<br/> | Obtém ou define o identificador do grupo de usuários que é necessário para executar as tarefas associadas à entidade de segurança.<br/>                           |

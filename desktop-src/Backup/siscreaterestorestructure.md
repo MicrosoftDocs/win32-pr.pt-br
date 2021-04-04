@@ -107,7 +107,7 @@ Depois que a operação de restauração for concluída, Desaloque a memória us
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

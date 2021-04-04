@@ -71,7 +71,7 @@ Por padrão, com cada evento de rolagem, o controle de pager rola um valor igual
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
