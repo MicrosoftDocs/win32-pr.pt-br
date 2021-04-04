@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647677"
 ---
-# <a name="windows8paramdurablecommitcallback-field"></a><span data-ttu-id="a6016-103">Campo Windows8Param. DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="a6016-103">Windows8Param.DurableCommitCallback field</span></span>
+# <a name="windows8paramdurablecommitcallback-field"></a><span data-ttu-id="37623-103">Campo Windows8Param. DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="37623-103">Windows8Param.DurableCommitCallback field</span></span>
 
-<span data-ttu-id="a6016-104">Retorno de chamada para quando o log é liberado.</span><span class="sxs-lookup"><span data-stu-id="a6016-104">Callback for when log is flushed.</span></span>
+<span data-ttu-id="37623-104">Retorno de chamada para quando o log é liberado.</span><span class="sxs-lookup"><span data-stu-id="37623-104">Callback for when log is flushed.</span></span>
 
-<span data-ttu-id="a6016-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a6016-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="a6016-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a6016-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="37623-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="37623-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="37623-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="37623-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a6016-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a6016-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="37623-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="37623-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = Windows8Param.DurableCommitCallback
 public const JET_param DurableCommitCallback
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a6016-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="a6016-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="37623-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="37623-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a6016-109">Referência</span><span class="sxs-lookup"><span data-stu-id="a6016-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="37623-109">Referência</span><span class="sxs-lookup"><span data-stu-id="37623-109">Reference</span></span>
 
-[<span data-ttu-id="a6016-110">Classe Windows8Param</span><span class="sxs-lookup"><span data-stu-id="a6016-110">Windows8Param class</span></span>](./windows8param-class.md)
+[<span data-ttu-id="37623-110">Classe Windows8Param</span><span class="sxs-lookup"><span data-stu-id="37623-110">Windows8Param class</span></span>](./windows8param-class.md)
 
-[<span data-ttu-id="a6016-111">Membros do Windows8Param</span><span class="sxs-lookup"><span data-stu-id="a6016-111">Windows8Param members</span></span>](./windows8param-members.md)
+[<span data-ttu-id="37623-111">Membros do Windows8Param</span><span class="sxs-lookup"><span data-stu-id="37623-111">Windows8Param members</span></span>](./windows8param-members.md)
 
-[<span data-ttu-id="a6016-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="a6016-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="37623-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="37623-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

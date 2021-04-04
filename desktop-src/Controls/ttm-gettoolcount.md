@@ -21,33 +21,33 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104085574"
 ---
-# <a name="ttm_gettoolcount-message"></a><span data-ttu-id="214ed-104">\_Mensagem TTM GETTOOLCOUNT</span><span class="sxs-lookup"><span data-stu-id="214ed-104">TTM\_GETTOOLCOUNT message</span></span>
+# <a name="ttm_gettoolcount-message"></a><span data-ttu-id="92a26-104">\_Mensagem TTM GETTOOLCOUNT</span><span class="sxs-lookup"><span data-stu-id="92a26-104">TTM\_GETTOOLCOUNT message</span></span>
 
-<span data-ttu-id="214ed-105">Recupera uma contagem das ferramentas mantidas por um controle ToolTip.</span><span class="sxs-lookup"><span data-stu-id="214ed-105">Retrieves a count of the tools maintained by a tooltip control.</span></span>
+<span data-ttu-id="92a26-105">Recupera uma contagem das ferramentas mantidas por um controle ToolTip.</span><span class="sxs-lookup"><span data-stu-id="92a26-105">Retrieves a count of the tools maintained by a tooltip control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="214ed-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="214ed-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="92a26-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="92a26-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="214ed-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="214ed-107">*wParam*</span></span> 
-</dt> <dd><span data-ttu-id="214ed-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="214ed-108">Must be zero.</span></span></dd> <dt>
+<span data-ttu-id="92a26-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="92a26-107">*wParam*</span></span> 
+</dt> <dd><span data-ttu-id="92a26-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="92a26-108">Must be zero.</span></span></dd> <dt>
 
-<span data-ttu-id="214ed-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="214ed-109">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="214ed-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="214ed-110">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="92a26-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="92a26-109">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="92a26-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="92a26-110">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="214ed-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="214ed-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="92a26-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="92a26-111">Return value</span></span>
 
-<span data-ttu-id="214ed-112">Retorna uma contagem de ferramentas.</span><span class="sxs-lookup"><span data-stu-id="214ed-112">Returns a count of tools.</span></span>
+<span data-ttu-id="92a26-112">Retorna uma contagem de ferramentas.</span><span class="sxs-lookup"><span data-stu-id="92a26-112">Returns a count of tools.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="214ed-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="214ed-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="92a26-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="92a26-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="214ed-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="214ed-114">Requirement</span></span> | <span data-ttu-id="214ed-115">Valor</span><span class="sxs-lookup"><span data-stu-id="214ed-115">Value</span></span> |
+| <span data-ttu-id="92a26-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="92a26-114">Requirement</span></span> | <span data-ttu-id="92a26-115">Valor</span><span class="sxs-lookup"><span data-stu-id="92a26-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="214ed-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="214ed-116">Minimum supported client</span></span><br/> | <span data-ttu-id="214ed-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="214ed-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="214ed-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="214ed-118">Minimum supported server</span></span><br/> | <span data-ttu-id="214ed-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="214ed-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="214ed-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="214ed-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="214ed-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="214ed-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="92a26-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="92a26-116">Minimum supported client</span></span><br/> | <span data-ttu-id="92a26-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="92a26-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="92a26-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="92a26-118">Minimum supported server</span></span><br/> | <span data-ttu-id="92a26-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="92a26-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="92a26-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="92a26-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="92a26-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="92a26-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

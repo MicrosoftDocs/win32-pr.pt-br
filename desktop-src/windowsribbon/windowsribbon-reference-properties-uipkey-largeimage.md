@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "104008015"
 ---
-# <a name="ui_pkey_largeimage"></a><span data-ttu-id="31a0c-103">\_LargeImage PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="31a0c-103">UI\_PKEY\_LargeImage</span></span>
+# <a name="ui_pkey_largeimage"></a><span data-ttu-id="fa3d5-103">\_LargeImage PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="fa3d5-103">UI\_PKEY\_LargeImage</span></span>
 
-<span data-ttu-id="31a0c-104">Identifica a \_ Propriedade PKEY LargeImage da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="31a0c-104">Identifies the UI\_PKEY\_LargeImage property.</span></span>
+<span data-ttu-id="fa3d5-104">Identifica a \_ Propriedade PKEY LargeImage da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="fa3d5-104">Identifies the UI\_PKEY\_LargeImage property.</span></span>
 
 ```
 propertyDescription
@@ -25,20 +25,20 @@ propertyDescription
       type = IUIImage
 ```
 
-## <a name="remarks"></a><span data-ttu-id="31a0c-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="31a0c-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fa3d5-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="fa3d5-105">Remarks</span></span>
 
-<span data-ttu-id="31a0c-106">A interface do usuário \_ PKEY \_ LargeImage é usada por um aplicativo para consultar a imagem grande associada a um controle Ribbon.</span><span class="sxs-lookup"><span data-stu-id="31a0c-106">UI\_PKEY\_LargeImage is used by an application to query the large image associated with a ribbon control.</span></span>
+<span data-ttu-id="fa3d5-106">A interface do usuário \_ PKEY \_ LargeImage é usada por um aplicativo para consultar a imagem grande associada a um controle Ribbon.</span><span class="sxs-lookup"><span data-stu-id="fa3d5-106">UI\_PKEY\_LargeImage is used by an application to query the large image associated with a ribbon control.</span></span>
 
-<span data-ttu-id="31a0c-107">O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) .</span><span class="sxs-lookup"><span data-stu-id="31a0c-107">The property value is an [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) object.</span></span>
+<span data-ttu-id="fa3d5-107">O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) .</span><span class="sxs-lookup"><span data-stu-id="fa3d5-107">The property value is an [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) object.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="31a0c-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="31a0c-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="fa3d5-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="fa3d5-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="31a0c-109">Propriedades do recurso</span><span class="sxs-lookup"><span data-stu-id="31a0c-109">Resource Properties</span></span>](windowsribbon-reference-properties-resource.md)
+[<span data-ttu-id="fa3d5-109">Propriedades do recurso</span><span class="sxs-lookup"><span data-stu-id="fa3d5-109">Resource Properties</span></span>](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
-[<span data-ttu-id="31a0c-110">Especificando recursos de imagem da faixa de uma</span><span class="sxs-lookup"><span data-stu-id="31a0c-110">Specifying Ribbon Image Resources</span></span>](windowsribbon-imageformats.md)
+[<span data-ttu-id="fa3d5-110">Especificando recursos de imagem da faixa de uma</span><span class="sxs-lookup"><span data-stu-id="fa3d5-110">Specifying Ribbon Image Resources</span></span>](windowsribbon-imageformats.md)
 </dt> </dl>
 
  

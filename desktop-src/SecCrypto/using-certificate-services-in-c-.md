@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647639"
 ---
-# <a name="using-certificate-services-in-c"></a><span data-ttu-id="e7254-103">Usando os serviços de certificados em C++</span><span class="sxs-lookup"><span data-stu-id="e7254-103">Using Certificate Services in C++</span></span>
+# <a name="using-certificate-services-in-c"></a><span data-ttu-id="071b5-103">Usando os serviços de certificados em C++</span><span class="sxs-lookup"><span data-stu-id="071b5-103">Using Certificate Services in C++</span></span>
 
-<span data-ttu-id="e7254-104">Os elementos da API dos serviços de certificados podem ser usados em C++, C, Visual Basic ou em outras linguagens em conformidade COM.</span><span class="sxs-lookup"><span data-stu-id="e7254-104">The Certificate Services API elements can be used in C++, C, Visual Basic, or other COM-compliant languages.</span></span> <span data-ttu-id="e7254-105">Essas seções destinam-se a ajudar um programador de conhecimento em C++ a usar os serviços de certificados.</span><span class="sxs-lookup"><span data-stu-id="e7254-105">These sections are intended to help a programmer knowledgeable in C++ use Certificate Services.</span></span>
+<span data-ttu-id="071b5-104">Os elementos da API dos serviços de certificados podem ser usados em C++, C, Visual Basic ou em outras linguagens em conformidade COM.</span><span class="sxs-lookup"><span data-stu-id="071b5-104">The Certificate Services API elements can be used in C++, C, Visual Basic, or other COM-compliant languages.</span></span> <span data-ttu-id="071b5-105">Essas seções destinam-se a ajudar um programador de conhecimento em C++ a usar os serviços de certificados.</span><span class="sxs-lookup"><span data-stu-id="071b5-105">These sections are intended to help a programmer knowledgeable in C++ use Certificate Services.</span></span>
 
 
 
-| <span data-ttu-id="e7254-106">Seção</span><span class="sxs-lookup"><span data-stu-id="e7254-106">Section</span></span>                                           | <span data-ttu-id="e7254-107">Conteúdo</span><span class="sxs-lookup"><span data-stu-id="e7254-107">Content</span></span>                                                          |
+| <span data-ttu-id="071b5-106">Seção</span><span class="sxs-lookup"><span data-stu-id="071b5-106">Section</span></span>                                           | <span data-ttu-id="071b5-107">Conteúdo</span><span class="sxs-lookup"><span data-stu-id="071b5-107">Content</span></span>                                                          |
 |---------------------------------------------------|------------------------------------------------------------------|
-| [<span data-ttu-id="e7254-108">Valores de retorno em C++</span><span class="sxs-lookup"><span data-stu-id="e7254-108">Return Values in C++</span></span>](return-values-in-c-.md)   | <span data-ttu-id="e7254-109">Trabalhando com valores de retorno de C++ dos métodos de serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="e7254-109">Working with C++ return values from Certificate Services methods</span></span> |
-| [<span data-ttu-id="e7254-110">Verificação de erros em C++</span><span class="sxs-lookup"><span data-stu-id="e7254-110">Error Checking in C++</span></span>](error-checking-in-c-.md) | <span data-ttu-id="e7254-111">Recuperando informações de erro em C++</span><span class="sxs-lookup"><span data-stu-id="e7254-111">Retrieving error information in C++</span></span>                              |
+| [<span data-ttu-id="071b5-108">Valores de retorno em C++</span><span class="sxs-lookup"><span data-stu-id="071b5-108">Return Values in C++</span></span>](return-values-in-c-.md)   | <span data-ttu-id="071b5-109">Trabalhando com valores de retorno de C++ dos métodos de serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="071b5-109">Working with C++ return values from Certificate Services methods</span></span> |
+| [<span data-ttu-id="071b5-110">Verificação de erros em C++</span><span class="sxs-lookup"><span data-stu-id="071b5-110">Error Checking in C++</span></span>](error-checking-in-c-.md) | <span data-ttu-id="071b5-111">Recuperando informações de erro em C++</span><span class="sxs-lookup"><span data-stu-id="071b5-111">Retrieving error information in C++</span></span>                              |
 
 
 

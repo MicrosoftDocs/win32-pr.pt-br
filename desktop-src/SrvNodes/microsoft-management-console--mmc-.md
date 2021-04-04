@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647631"
 ---
-# <a name="microsoft-management-console-mmc"></a><span data-ttu-id="016e4-103">Console de Gerenciamento Microsoft (MMC)</span><span class="sxs-lookup"><span data-stu-id="016e4-103">Microsoft Management Console (MMC)</span></span>
+# <a name="microsoft-management-console-mmc"></a><span data-ttu-id="6ff22-103">Console de Gerenciamento Microsoft (MMC)</span><span class="sxs-lookup"><span data-stu-id="6ff22-103">Microsoft Management Console (MMC)</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="016e4-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="016e4-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6ff22-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6ff22-104">In this section</span></span>
 
--   [<span data-ttu-id="016e4-105">Console de gerenciamento Microsoft 3.0</span><span class="sxs-lookup"><span data-stu-id="016e4-105">Microsoft Management Console 3.0</span></span>](microsoft-management-console-3-0.md)
--   [<span data-ttu-id="016e4-106">Console de gerenciamento Microsoft 2,0</span><span class="sxs-lookup"><span data-stu-id="016e4-106">Microsoft Management Console 2.0</span></span>](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page)
+-   [<span data-ttu-id="6ff22-105">Console de gerenciamento Microsoft 3.0</span><span class="sxs-lookup"><span data-stu-id="6ff22-105">Microsoft Management Console 3.0</span></span>](microsoft-management-console-3-0.md)
+-   [<span data-ttu-id="6ff22-106">Console de gerenciamento Microsoft 2,0</span><span class="sxs-lookup"><span data-stu-id="6ff22-106">Microsoft Management Console 2.0</span></span>](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page)
 
  
 

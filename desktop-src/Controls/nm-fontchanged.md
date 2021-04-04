@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824161"
 ---
-# <a name="nm_fontchanged-notification-code"></a><span data-ttu-id="c2bcf-105">\_Código de notificação nm FONTCHANGED</span><span class="sxs-lookup"><span data-stu-id="c2bcf-105">NM\_FONTCHANGED notification code</span></span>
+# <a name="nm_fontchanged-notification-code"></a><span data-ttu-id="3fd20-105">\_Código de notificação nm FONTCHANGED</span><span class="sxs-lookup"><span data-stu-id="3fd20-105">NM\_FONTCHANGED notification code</span></span>
 
-<span data-ttu-id="c2bcf-106">Enviado por um controle de exibição de lista quando o controle alterou uma fonte.</span><span class="sxs-lookup"><span data-stu-id="c2bcf-106">Sent by a list-view control when the control has changed a font.</span></span> <span data-ttu-id="c2bcf-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="c2bcf-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
+<span data-ttu-id="3fd20-106">Enviado por um controle de exibição de lista quando o controle alterou uma fonte.</span><span class="sxs-lookup"><span data-stu-id="3fd20-106">Sent by a list-view control when the control has changed a font.</span></span> <span data-ttu-id="3fd20-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="3fd20-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
 
 
 ```C++
@@ -34,30 +34,30 @@ NM_FONTCHANGED
 
 
 
-## <a name="parameters"></a><span data-ttu-id="c2bcf-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c2bcf-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3fd20-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="3fd20-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="c2bcf-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="c2bcf-109">*lParam*</span></span> 
+<span data-ttu-id="3fd20-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="3fd20-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="c2bcf-110">Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="c2bcf-110">A pointer to an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
+<span data-ttu-id="3fd20-110">Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="3fd20-110">A pointer to an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="c2bcf-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c2bcf-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3fd20-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="3fd20-111">Return value</span></span>
 
-<span data-ttu-id="c2bcf-112">O valor de retorno é ignorado pelo controle.</span><span class="sxs-lookup"><span data-stu-id="c2bcf-112">The return value is ignored by the control.</span></span>
+<span data-ttu-id="3fd20-112">O valor de retorno é ignorado pelo controle.</span><span class="sxs-lookup"><span data-stu-id="3fd20-112">The return value is ignored by the control.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="c2bcf-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c2bcf-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="3fd20-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3fd20-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="c2bcf-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="c2bcf-114">Requirement</span></span> | <span data-ttu-id="c2bcf-115">Valor</span><span class="sxs-lookup"><span data-stu-id="c2bcf-115">Value</span></span> |
+| <span data-ttu-id="3fd20-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="3fd20-114">Requirement</span></span> | <span data-ttu-id="3fd20-115">Valor</span><span class="sxs-lookup"><span data-stu-id="3fd20-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="c2bcf-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c2bcf-116">Minimum supported client</span></span><br/> | <span data-ttu-id="c2bcf-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="c2bcf-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="c2bcf-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c2bcf-118">Minimum supported server</span></span><br/> | <span data-ttu-id="c2bcf-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="c2bcf-119">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="c2bcf-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="c2bcf-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="c2bcf-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="c2bcf-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="3fd20-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3fd20-116">Minimum supported client</span></span><br/> | <span data-ttu-id="3fd20-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="3fd20-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="3fd20-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3fd20-118">Minimum supported server</span></span><br/> | <span data-ttu-id="3fd20-119">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="3fd20-119">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="3fd20-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="3fd20-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="3fd20-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="3fd20-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

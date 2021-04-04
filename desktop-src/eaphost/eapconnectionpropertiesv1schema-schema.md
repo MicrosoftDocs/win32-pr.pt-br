@@ -16,17 +16,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "104008371"
 ---
-# <a name="eapconnectionpropertiesv1-schema"></a><span data-ttu-id="68be9-104">Esquema eapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="68be9-104">eapconnectionpropertiesv1 Schema</span></span>
+# <a name="eapconnectionpropertiesv1-schema"></a><span data-ttu-id="c20a6-104">Esquema eapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="c20a6-104">eapconnectionpropertiesv1 Schema</span></span>
 
-<span data-ttu-id="68be9-105">O esquema eapconnectionpropertiesv1 define elementos de esquema de configuração comuns.</span><span class="sxs-lookup"><span data-stu-id="68be9-105">The eapconnectionpropertiesv1 schema defines common configuration schema elements.</span></span>
+<span data-ttu-id="c20a6-105">O esquema eapconnectionpropertiesv1 define elementos de esquema de configuração comuns.</span><span class="sxs-lookup"><span data-stu-id="c20a6-105">The eapconnectionpropertiesv1 schema defines common configuration schema elements.</span></span>
 
--   [<span data-ttu-id="68be9-106">Elementos do esquema eapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="68be9-106">eapconnectionpropertiesv1 Schema Elements</span></span>](eapconnectionpropertiesv1schema-elements.md)
+-   [<span data-ttu-id="c20a6-106">Elementos do esquema eapconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="c20a6-106">eapconnectionpropertiesv1 Schema Elements</span></span>](eapconnectionpropertiesv1schema-elements.md)
 
-## <a name="related-topics"></a><span data-ttu-id="68be9-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="68be9-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c20a6-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c20a6-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="68be9-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="68be9-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="c20a6-108">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="c20a6-108">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> </dl>
 
  
