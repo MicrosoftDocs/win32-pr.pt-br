@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822279"
 ---
-# <a name="example-code-for-setting-permissions-on-child-object-operations"></a><span data-ttu-id="b5a70-104">Código de exemplo para definir permissões em operações de objeto filho</span><span class="sxs-lookup"><span data-stu-id="b5a70-104">Example Code for Setting Permissions on Child Object Operations</span></span>
+# <a name="example-code-for-setting-permissions-on-child-object-operations"></a><span data-ttu-id="46462-104">Código de exemplo para definir permissões em operações de objeto filho</span><span class="sxs-lookup"><span data-stu-id="46462-104">Example Code for Setting Permissions on Child Object Operations</span></span>
 
-<span data-ttu-id="b5a70-105">O exemplo de código C e C++ a seguir cria uma ACE que atribui direitos de criação para objetos de usuário ao objeto de confiança especificado.</span><span class="sxs-lookup"><span data-stu-id="b5a70-105">The following C and C++ code example creates an ACE that assigns creation rights for user objects to the specified trustee.</span></span>
+<span data-ttu-id="46462-105">O exemplo de código C e C++ a seguir cria uma ACE que atribui direitos de criação para objetos de usuário ao objeto de confiança especificado.</span><span class="sxs-lookup"><span data-stu-id="46462-105">The following C and C++ code example creates an ACE that assigns creation rights for user objects to the specified trustee.</span></span>
 
 
 ```C++

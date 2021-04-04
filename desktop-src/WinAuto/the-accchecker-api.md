@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822339"
 ---
-# <a name="the-accchecker-api"></a><span data-ttu-id="e0815-104">A API AccChecker</span><span class="sxs-lookup"><span data-stu-id="e0815-104">The AccChecker API</span></span>
+# <a name="the-accchecker-api"></a><span data-ttu-id="195eb-104">A API AccChecker</span><span class="sxs-lookup"><span data-stu-id="195eb-104">The AccChecker API</span></span>
 
-<span data-ttu-id="e0815-105">A API AccChecker dá suporte ao teste automatizado.</span><span class="sxs-lookup"><span data-stu-id="e0815-105">The AccChecker API supports automated testing.</span></span> <span data-ttu-id="e0815-106">Após a triagem de um aplicativo usando o teste manual com a GUI AccChecker, você pode escrever testes automatizados que incorporam a mensagem e os logs de supressão criados com a ferramenta GUI.</span><span class="sxs-lookup"><span data-stu-id="e0815-106">After screening an application by using manual testing with the AccChecker GUI, you can write automated tests that incorporate the message and suppression logs created with the GUI tool.</span></span>
+<span data-ttu-id="195eb-105">A API AccChecker dá suporte ao teste automatizado.</span><span class="sxs-lookup"><span data-stu-id="195eb-105">The AccChecker API supports automated testing.</span></span> <span data-ttu-id="195eb-106">Após a triagem de um aplicativo usando o teste manual com a GUI AccChecker, você pode escrever testes automatizados que incorporam a mensagem e os logs de supressão criados com a ferramenta GUI.</span><span class="sxs-lookup"><span data-stu-id="195eb-106">After screening an application by using manual testing with the AccChecker GUI, you can write automated tests that incorporate the message and suppression logs created with the GUI tool.</span></span>
 
-<span data-ttu-id="e0815-107">O exemplo de código a seguir demonstra como usar a API AccChecker para testar a funcionalidade de tabulação no aplicativo do painel de controle do firewall do Windows.</span><span class="sxs-lookup"><span data-stu-id="e0815-107">The following code example demonstrates how to use the AccChecker API to test tabbing functionality in the Windows Firewall control panel application.</span></span>
+<span data-ttu-id="195eb-107">O exemplo de código a seguir demonstra como usar a API AccChecker para testar a funcionalidade de tabulação no aplicativo do painel de controle do firewall do Windows.</span><span class="sxs-lookup"><span data-stu-id="195eb-107">The following code example demonstrates how to use the AccChecker API to test tabbing functionality in the Windows Firewall control panel application.</span></span>
 
 
 ```CSharp
@@ -65,11 +65,11 @@ public class TestCases : TestBase
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e0815-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e0815-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="195eb-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="195eb-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e0815-109">UI Accessibility Checker</span><span class="sxs-lookup"><span data-stu-id="e0815-109">UI Accessibility Checker</span></span>](ui-accessibility-checker.md)
+[<span data-ttu-id="195eb-109">UI Accessibility Checker</span><span class="sxs-lookup"><span data-stu-id="195eb-109">UI Accessibility Checker</span></span>](ui-accessibility-checker.md)
 </dt> </dl>
 
  

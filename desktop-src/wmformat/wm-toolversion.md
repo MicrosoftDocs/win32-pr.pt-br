@@ -19,23 +19,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916677"
 ---
-# <a name="wmtoolversion"></a><span data-ttu-id="29fe0-105">WM/ToolVersion</span><span class="sxs-lookup"><span data-stu-id="29fe0-105">WM/ToolVersion</span></span>
+# <a name="wmtoolversion"></a><span data-ttu-id="9c647-105">WM/ToolVersion</span><span class="sxs-lookup"><span data-stu-id="9c647-105">WM/ToolVersion</span></span>
 
-<span data-ttu-id="29fe0-106">O atributo **WM/ToolVersion** contém o número de versão do aplicativo usado para criar o arquivo.</span><span class="sxs-lookup"><span data-stu-id="29fe0-106">The **WM/ToolVersion** attribute contains the version number of the application used to create the file.</span></span> <span data-ttu-id="29fe0-107">Se você usar esse atributo, também deverá incluir o nome do aplicativo usando o [**WM/ToolName**](wm-toolname.md).</span><span class="sxs-lookup"><span data-stu-id="29fe0-107">If you use this attribute, you should also include the name of the application using [**WM/ToolName**](wm-toolname.md).</span></span>
+<span data-ttu-id="9c647-106">O atributo **WM/ToolVersion** contém o número de versão do aplicativo usado para criar o arquivo.</span><span class="sxs-lookup"><span data-stu-id="9c647-106">The **WM/ToolVersion** attribute contains the version number of the application used to create the file.</span></span> <span data-ttu-id="9c647-107">Se você usar esse atributo, também deverá incluir o nome do aplicativo usando o [**WM/ToolName**](wm-toolname.md).</span><span class="sxs-lookup"><span data-stu-id="9c647-107">If you use this attribute, you should also include the name of the application using [**WM/ToolName**](wm-toolname.md).</span></span>
 
-## <a name="global-constant"></a><span data-ttu-id="29fe0-108">Constante global</span><span class="sxs-lookup"><span data-stu-id="29fe0-108">Global Constant</span></span>
+## <a name="global-constant"></a><span data-ttu-id="9c647-108">Constante global</span><span class="sxs-lookup"><span data-stu-id="9c647-108">Global Constant</span></span>
 
-<span data-ttu-id="29fe0-109">g \_ wszWMToolVersion</span><span class="sxs-lookup"><span data-stu-id="29fe0-109">g\_wszWMToolVersion</span></span>
+<span data-ttu-id="9c647-109">g \_ wszWMToolVersion</span><span class="sxs-lookup"><span data-stu-id="9c647-109">g\_wszWMToolVersion</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="29fe0-110">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="29fe0-110">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="9c647-110">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="9c647-110">Data Type</span></span>
 
-<span data-ttu-id="29fe0-111">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="29fe0-111">**WMT\_TYPE\_STRING**</span></span>
+<span data-ttu-id="9c647-111">**Cadeia de caracteres do \_ tipo WMT \_**</span><span class="sxs-lookup"><span data-stu-id="9c647-111">**WMT\_TYPE\_STRING**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="29fe0-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="29fe0-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9c647-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="9c647-112">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="29fe0-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="29fe0-113">**Attribute List**</span></span>](attribute-list.md)
+[<span data-ttu-id="9c647-113">**Lista de Atributos**</span><span class="sxs-lookup"><span data-stu-id="9c647-113">**Attribute List**</span></span>](attribute-list.md)
 </dt> </dl>
 
  

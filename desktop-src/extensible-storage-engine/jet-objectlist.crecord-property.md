@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837452"
 ---
-# <a name="jet_objectlistcrecord-property"></a><span data-ttu-id="06242-103">Propriedade JET_OBJECTLIST. cRecord</span><span class="sxs-lookup"><span data-stu-id="06242-103">JET_OBJECTLIST.cRecord property</span></span>
+# <a name="jet_objectlistcrecord-property"></a><span data-ttu-id="5880c-103">Propriedade JET_OBJECTLIST. cRecord</span><span class="sxs-lookup"><span data-stu-id="5880c-103">JET_OBJECTLIST.cRecord property</span></span>
 
-<span data-ttu-id="06242-104">Obtém o número de registros na tabela temporária.</span><span class="sxs-lookup"><span data-stu-id="06242-104">Gets the number of records in the temporary table.</span></span>
+<span data-ttu-id="5880c-104">Obtém o número de registros na tabela temporária.</span><span class="sxs-lookup"><span data-stu-id="5880c-104">Gets the number of records in the temporary table.</span></span>
 
-<span data-ttu-id="06242-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="06242-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="06242-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="06242-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5880c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5880c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5880c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5880c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="06242-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="06242-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5880c-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="5880c-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.cRecord
 public int cRecord { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="06242-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="06242-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="5880c-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5880c-108">Property value</span></span>
 
-<span data-ttu-id="06242-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="06242-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="5880c-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="5880c-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="06242-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="06242-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5880c-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="5880c-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="06242-111">Referência</span><span class="sxs-lookup"><span data-stu-id="06242-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5880c-111">Referência</span><span class="sxs-lookup"><span data-stu-id="5880c-111">Reference</span></span>
 
-[<span data-ttu-id="06242-112">Classe JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="06242-112">JET_OBJECTLIST class</span></span>](./jet-objectlist-class.md)
+[<span data-ttu-id="5880c-112">Classe JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="5880c-112">JET_OBJECTLIST class</span></span>](./jet-objectlist-class.md)
 
-[<span data-ttu-id="06242-113">Membros do JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="06242-113">JET_OBJECTLIST members</span></span>](./jet-objectlist-members.md)
+[<span data-ttu-id="5880c-113">Membros do JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="5880c-113">JET_OBJECTLIST members</span></span>](./jet-objectlist-members.md)
 
-[<span data-ttu-id="06242-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="06242-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5880c-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5880c-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

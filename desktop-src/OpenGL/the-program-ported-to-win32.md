@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916567"
 ---
-# <a name="the-program-ported-to-windows"></a><span data-ttu-id="64f7b-106">O programa portado para o Windows</span><span class="sxs-lookup"><span data-stu-id="64f7b-106">The Program Ported to Windows</span></span>
+# <a name="the-program-ported-to-windows"></a><span data-ttu-id="3b1df-106">O programa portado para o Windows</span><span class="sxs-lookup"><span data-stu-id="3b1df-106">The Program Ported to Windows</span></span>
 
-<span data-ttu-id="64f7b-107">O programa a seguir é um programa OpenGL do Windows com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da plataforma.</span><span class="sxs-lookup"><span data-stu-id="64f7b-107">The following program is a Windows OpenGL program with the same OpenGL code used in the AUXDEMO.C sample program supplied with the Platform SDK.</span></span> <span data-ttu-id="64f7b-108">Compare este programa com o programa de sistema de janela X OpenGL em [um programa OpenGL de sistema de janelas x](an-x-window-system-opengl-program.md).</span><span class="sxs-lookup"><span data-stu-id="64f7b-108">Compare this program with the X Window System OpenGL program in [An X Window System OpenGL Program](an-x-window-system-opengl-program.md).</span></span>
+<span data-ttu-id="3b1df-107">O programa a seguir é um programa OpenGL do Windows com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da plataforma.</span><span class="sxs-lookup"><span data-stu-id="3b1df-107">The following program is a Windows OpenGL program with the same OpenGL code used in the AUXDEMO.C sample program supplied with the Platform SDK.</span></span> <span data-ttu-id="3b1df-108">Compare este programa com o programa de sistema de janela X OpenGL em [um programa OpenGL de sistema de janelas x](an-x-window-system-opengl-program.md).</span><span class="sxs-lookup"><span data-stu-id="3b1df-108">Compare this program with the X Window System OpenGL program in [An X Window System OpenGL Program](an-x-window-system-opengl-program.md).</span></span>
 
 
 ```C++

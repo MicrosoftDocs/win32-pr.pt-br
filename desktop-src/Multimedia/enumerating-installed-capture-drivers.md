@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916371"
 ---
-# <a name="enumerating-installed-capture-drivers"></a><span data-ttu-id="e4760-104">Enumerando os drivers de captura instalados</span><span class="sxs-lookup"><span data-stu-id="e4760-104">Enumerating Installed Capture Drivers</span></span>
+# <a name="enumerating-installed-capture-drivers"></a><span data-ttu-id="be48a-104">Enumerando os drivers de captura instalados</span><span class="sxs-lookup"><span data-stu-id="be48a-104">Enumerating Installed Capture Drivers</span></span>
 
-<span data-ttu-id="e4760-105">O exemplo a seguir usa a função [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona) para obter os nomes e as versões dos drivers de captura instalados.</span><span class="sxs-lookup"><span data-stu-id="e4760-105">The following example uses the [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona) function to obtain the names and versions of the installed capture drivers.</span></span>
+<span data-ttu-id="be48a-105">O exemplo a seguir usa a função [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona) para obter os nomes e as versões dos drivers de captura instalados.</span><span class="sxs-lookup"><span data-stu-id="be48a-105">The following example uses the [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona) function to obtain the names and versions of the installed capture drivers.</span></span>
 
 
 ```C++
@@ -40,11 +40,11 @@ for (wIndex = 0; wIndex < 10; wIndex++)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e4760-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e4760-106">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="be48a-106">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="be48a-106">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e4760-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="e4760-107">Using Video Capture</span></span>](using-video-capture.md)
+[<span data-ttu-id="be48a-107">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="be48a-107">Using Video Capture</span></span>](using-video-capture.md)
 </dt> </dl>
 
  

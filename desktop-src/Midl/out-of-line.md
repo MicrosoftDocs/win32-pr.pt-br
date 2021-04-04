@@ -19,15 +19,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104006516"
 ---
-# <a name="out_of_line-attribute"></a><span data-ttu-id="d7e1a-104">\_atributo fora de \_ linha</span><span class="sxs-lookup"><span data-stu-id="d7e1a-104">out\_of\_line attribute</span></span>
+# <a name="out_of_line-attribute"></a><span data-ttu-id="73dcc-104">\_atributo fora de \_ linha</span><span class="sxs-lookup"><span data-stu-id="73dcc-104">out\_of\_line attribute</span></span>
 
-<span data-ttu-id="d7e1a-105">Não há suporte para a palavra-chave de IDL do DCE **fora \_ da \_ linha** no Microsoft RPC.</span><span class="sxs-lookup"><span data-stu-id="d7e1a-105">The DCE IDL keyword **out\_of\_line** is not supported in Microsoft RPC.</span></span>
+<span data-ttu-id="73dcc-105">Não há suporte para a palavra-chave de IDL do DCE **fora \_ da \_ linha** no Microsoft RPC.</span><span class="sxs-lookup"><span data-stu-id="73dcc-105">The DCE IDL keyword **out\_of\_line** is not supported in Microsoft RPC.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d7e1a-106">Confira também</span><span class="sxs-lookup"><span data-stu-id="d7e1a-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="73dcc-106">Confira também</span><span class="sxs-lookup"><span data-stu-id="73dcc-106">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d7e1a-107">Arquivo de definição de interface (IDL)</span><span class="sxs-lookup"><span data-stu-id="d7e1a-107">Interface Definition (IDL) File</span></span>](interface-definition-idl-file.md)
+[<span data-ttu-id="73dcc-107">Arquivo de definição de interface (IDL)</span><span class="sxs-lookup"><span data-stu-id="73dcc-107">Interface Definition (IDL) File</span></span>](interface-definition-idl-file.md)
 </dt> </dl>
 
  

@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822169"
 ---
-# <a name="registry-information"></a><span data-ttu-id="c4032-104">Informações do registro</span><span class="sxs-lookup"><span data-stu-id="c4032-104">Registry Information</span></span>
+# <a name="registry-information"></a><span data-ttu-id="6570d-104">Informações do registro</span><span class="sxs-lookup"><span data-stu-id="6570d-104">Registry Information</span></span>
 
-<span data-ttu-id="c4032-105">Esta seção contém uma discussão sobre as entradas do registro que são relevantes para o RPC.</span><span class="sxs-lookup"><span data-stu-id="c4032-105">This section contains a discussion of the registry entries that are relevant to RPC.</span></span> <span data-ttu-id="c4032-106">Ele apresenta as informações na seção a seguir:</span><span class="sxs-lookup"><span data-stu-id="c4032-106">It presents the information in the following section:</span></span>
+<span data-ttu-id="6570d-105">Esta seção contém uma discussão sobre as entradas do registro que são relevantes para o RPC.</span><span class="sxs-lookup"><span data-stu-id="6570d-105">This section contains a discussion of the registry entries that are relevant to RPC.</span></span> <span data-ttu-id="6570d-106">Ele apresenta as informações na seção a seguir:</span><span class="sxs-lookup"><span data-stu-id="6570d-106">It presents the information in the following section:</span></span>
 
--   <span data-ttu-id="c4032-107">[Configuração do registro para alocações de porta e Associação seletiva](configuring-the-windows-xp-2000-nt-registry-for-port-allocations-and-selective-binding.md).</span><span class="sxs-lookup"><span data-stu-id="c4032-107">[Configuring the Registry for Port Allocations and Selective Binding](configuring-the-windows-xp-2000-nt-registry-for-port-allocations-and-selective-binding.md).</span></span>
+-   <span data-ttu-id="6570d-107">[Configuração do registro para alocações de porta e Associação seletiva](configuring-the-windows-xp-2000-nt-registry-for-port-allocations-and-selective-binding.md).</span><span class="sxs-lookup"><span data-stu-id="6570d-107">[Configuring the Registry for Port Allocations and Selective Binding](configuring-the-windows-xp-2000-nt-registry-for-port-allocations-and-selective-binding.md).</span></span>
 
  
 

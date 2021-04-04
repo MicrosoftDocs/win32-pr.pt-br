@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103915974"
 ---
-# <a name="ibackgroundcopyqmgr-methods"></a><span data-ttu-id="98121-103">Métodos IBackgroundCopyQMgr</span><span class="sxs-lookup"><span data-stu-id="98121-103">IBackgroundCopyQMgr Methods</span></span>
+# <a name="ibackgroundcopyqmgr-methods"></a><span data-ttu-id="3d7bf-103">Métodos IBackgroundCopyQMgr</span><span class="sxs-lookup"><span data-stu-id="3d7bf-103">IBackgroundCopyQMgr Methods</span></span>
 
-<span data-ttu-id="98121-104">A interface [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="98121-104">The [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr) interface exposes the following methods.</span></span>
+<span data-ttu-id="3d7bf-104">A interface [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3d7bf-104">The [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="98121-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="98121-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3d7bf-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3d7bf-105">In this section</span></span>
 
--   [<span data-ttu-id="98121-106">**Método CreateObject**</span><span class="sxs-lookup"><span data-stu-id="98121-106">**CreateGroup Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-creategroup)
--   [<span data-ttu-id="98121-107">**Método EnumGroups**</span><span class="sxs-lookup"><span data-stu-id="98121-107">**EnumGroups Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-enumgroups)
--   [<span data-ttu-id="98121-108">**Método getgroup**</span><span class="sxs-lookup"><span data-stu-id="98121-108">**GetGroup Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-getgroup)
+-   [<span data-ttu-id="3d7bf-106">**Método CreateObject**</span><span class="sxs-lookup"><span data-stu-id="3d7bf-106">**CreateGroup Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-creategroup)
+-   [<span data-ttu-id="3d7bf-107">**Método EnumGroups**</span><span class="sxs-lookup"><span data-stu-id="3d7bf-107">**EnumGroups Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-enumgroups)
+-   [<span data-ttu-id="3d7bf-108">**Método getgroup**</span><span class="sxs-lookup"><span data-stu-id="3d7bf-108">**GetGroup Method**</span></span>](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-getgroup)
 
  
 

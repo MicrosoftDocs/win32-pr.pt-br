@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822348"
 ---
-# <a name="search-for-routes-using-a-prefix-tree"></a><span data-ttu-id="feb0e-103">Pesquisar rotas usando uma árvore de prefixo</span><span class="sxs-lookup"><span data-stu-id="feb0e-103">Search for Routes Using a Prefix Tree</span></span>
+# <a name="search-for-routes-using-a-prefix-tree"></a><span data-ttu-id="a1e16-103">Pesquisar rotas usando uma árvore de prefixo</span><span class="sxs-lookup"><span data-stu-id="a1e16-103">Search for Routes Using a Prefix Tree</span></span>
 
-<span data-ttu-id="feb0e-104">O código de exemplo a seguir mostra como usar [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) e [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) para acompanhar a árvore de prefixo na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="feb0e-104">The following sample code shows how to use [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) and [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) to walk up the prefix tree in the routing table.</span></span>
+<span data-ttu-id="a1e16-104">O código de exemplo a seguir mostra como usar [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) e [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) para acompanhar a árvore de prefixo na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="a1e16-104">The following sample code shows how to use [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) and [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) to walk up the prefix tree in the routing table.</span></span>
 
 
 ```C++

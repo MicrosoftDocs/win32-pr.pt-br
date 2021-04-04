@@ -14,14 +14,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822191"
 ---
-# <a name="property-cache-interfaces"></a><span data-ttu-id="e3eaf-104">Interfaces de cache de propriedades</span><span class="sxs-lookup"><span data-stu-id="e3eaf-104">Property Cache Interfaces</span></span>
+# <a name="property-cache-interfaces"></a><span data-ttu-id="24859-104">Interfaces de cache de propriedades</span><span class="sxs-lookup"><span data-stu-id="24859-104">Property Cache Interfaces</span></span>
 
-<span data-ttu-id="e3eaf-105">As interfaces de cache de propriedade são projetadas para trabalhar com propriedades no cache.</span><span class="sxs-lookup"><span data-stu-id="e3eaf-105">The property cache interfaces are designed to work with properties in cache.</span></span> <span data-ttu-id="e3eaf-106">Eles consistem nas seguintes interfaces:</span><span class="sxs-lookup"><span data-stu-id="e3eaf-106">They consist of the following interfaces:</span></span>
+<span data-ttu-id="24859-105">As interfaces de cache de propriedade são projetadas para trabalhar com propriedades no cache.</span><span class="sxs-lookup"><span data-stu-id="24859-105">The property cache interfaces are designed to work with properties in cache.</span></span> <span data-ttu-id="24859-106">Eles consistem nas seguintes interfaces:</span><span class="sxs-lookup"><span data-stu-id="24859-106">They consist of the following interfaces:</span></span>
 
--   [<span data-ttu-id="e3eaf-107">**IADsPropertyEntry**</span><span class="sxs-lookup"><span data-stu-id="e3eaf-107">**IADsPropertyEntry**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)
--   [<span data-ttu-id="e3eaf-108">**IADsPropertyList**</span><span class="sxs-lookup"><span data-stu-id="e3eaf-108">**IADsPropertyList**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertylist)
--   [<span data-ttu-id="e3eaf-109">**IADsPropertyValue**</span><span class="sxs-lookup"><span data-stu-id="e3eaf-109">**IADsPropertyValue**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)
--   [<span data-ttu-id="e3eaf-110">**IADsPropertyValue2**</span><span class="sxs-lookup"><span data-stu-id="e3eaf-110">**IADsPropertyValue2**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2)
+-   [<span data-ttu-id="24859-107">**IADsPropertyEntry**</span><span class="sxs-lookup"><span data-stu-id="24859-107">**IADsPropertyEntry**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)
+-   [<span data-ttu-id="24859-108">**IADsPropertyList**</span><span class="sxs-lookup"><span data-stu-id="24859-108">**IADsPropertyList**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertylist)
+-   [<span data-ttu-id="24859-109">**IADsPropertyValue**</span><span class="sxs-lookup"><span data-stu-id="24859-109">**IADsPropertyValue**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)
+-   [<span data-ttu-id="24859-110">**IADsPropertyValue2**</span><span class="sxs-lookup"><span data-stu-id="24859-110">**IADsPropertyValue2**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2)
 
  
 

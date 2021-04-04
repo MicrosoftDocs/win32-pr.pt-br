@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916277"
 ---
-# <a name="multiple-annotations-on-a-single-accessible-element"></a><span data-ttu-id="2d9a8-104">Várias anotações em um único elemento acessível</span><span class="sxs-lookup"><span data-stu-id="2d9a8-104">Multiple Annotations on a Single Accessible Element</span></span>
+# <a name="multiple-annotations-on-a-single-accessible-element"></a><span data-ttu-id="1e1e3-104">Várias anotações em um único elemento acessível</span><span class="sxs-lookup"><span data-stu-id="1e1e3-104">Multiple Annotations on a Single Accessible Element</span></span>
 
-<span data-ttu-id="2d9a8-105">Atualmente, um elemento acessível dá suporte a apenas uma anotação por propriedade.</span><span class="sxs-lookup"><span data-stu-id="2d9a8-105">Currently an accessible element supports only one annotation per property.</span></span> <span data-ttu-id="2d9a8-106">Anotações sucessivas em uma propriedade substituem e substituem as anotações anteriores dessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="2d9a8-106">Successive annotations on a property replace and override earlier annotations of that property.</span></span>
+<span data-ttu-id="1e1e3-105">Atualmente, um elemento acessível dá suporte a apenas uma anotação por propriedade.</span><span class="sxs-lookup"><span data-stu-id="1e1e3-105">Currently an accessible element supports only one annotation per property.</span></span> <span data-ttu-id="1e1e3-106">Anotações sucessivas em uma propriedade substituem e substituem as anotações anteriores dessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="1e1e3-106">Successive annotations on a property replace and override earlier annotations of that property.</span></span>
 
  
 

@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645940"
 ---
-# <a name="eastern-europe"></a><span data-ttu-id="80d59-103">Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="80d59-103">Eastern Europe</span></span>
+# <a name="eastern-europe"></a><span data-ttu-id="63384-103">Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="63384-103">Eastern Europe</span></span>
 
-<span data-ttu-id="80d59-104">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="80d59-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="63384-104">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="63384-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="80d59-105">Os índices de frequência nas tabelas da Europa Oriental não são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="80d59-105">The frequency indexes in the Eastern Europe tables are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="63384-105">Os índices de frequência nas tabelas da Europa Oriental não são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="63384-105">The frequency indexes in the Eastern Europe tables are not suitable for use as channel numbers.</span></span>
 
-### <a name="eastern-europe-broadcast-assignments"></a><span data-ttu-id="80d59-106">Atribuições de difusão da Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="80d59-106">Eastern Europe Broadcast Assignments</span></span>
+### <a name="eastern-europe-broadcast-assignments"></a><span data-ttu-id="63384-106">Atribuições de difusão da Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="63384-106">Eastern Europe Broadcast Assignments</span></span>
 
 
 ```C++
@@ -99,7 +99,7 @@ ms.locfileid: "103645940"
 
 
 
-### <a name="eastern-europe-cable-assignments"></a><span data-ttu-id="80d59-107">Atribuições de cabo da Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="80d59-107">Eastern Europe Cable Assignments</span></span>
+### <a name="eastern-europe-cable-assignments"></a><span data-ttu-id="63384-107">Atribuições de cabo da Europa Oriental</span><span class="sxs-lookup"><span data-stu-id="63384-107">Eastern Europe Cable Assignments</span></span>
 
 
 ```C++
@@ -168,11 +168,11 @@ ms.locfileid: "103645940"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="80d59-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="80d59-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="63384-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="63384-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="80d59-109">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="80d59-109">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="63384-109">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="63384-109">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

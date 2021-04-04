@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822237"
 ---
-# <a name="adsi-object-model-for-winnt-providers"></a><span data-ttu-id="b7fe6-103">Modelo de objeto ADSI para provedores de WinNT</span><span class="sxs-lookup"><span data-stu-id="b7fe6-103">ADSI Object Model for WinNT Providers</span></span>
+# <a name="adsi-object-model-for-winnt-providers"></a><span data-ttu-id="d2764-103">Modelo de objeto ADSI para provedores de WinNT</span><span class="sxs-lookup"><span data-stu-id="d2764-103">ADSI Object Model for WinNT Providers</span></span>
 
-<span data-ttu-id="b7fe6-104">A ilustração a seguir mostra os objetos ADSI usados para o provedor WinNT e as interfaces usadas para acessar os objetos ADSI.</span><span class="sxs-lookup"><span data-stu-id="b7fe6-104">The following illustration shows the ADSI objects used for the WinNT provider and the interfaces used to access the ADSI objects.</span></span>
+<span data-ttu-id="d2764-104">A ilustração a seguir mostra os objetos ADSI usados para o provedor WinNT e as interfaces usadas para acessar os objetos ADSI.</span><span class="sxs-lookup"><span data-stu-id="d2764-104">The following illustration shows the ADSI objects used for the WinNT provider and the interfaces used to access the ADSI objects.</span></span>
 
 ![modelo de objeto para o provedor Winnt](images/adsiobjmodwinnt-gif-1.png)
 

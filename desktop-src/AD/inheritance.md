@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640394"
 ---
-# <a name="inheritance-ad-ds"></a><span data-ttu-id="31178-104">Herança (AD DS)</span><span class="sxs-lookup"><span data-stu-id="31178-104">Inheritance (AD DS)</span></span>
+# <a name="inheritance-ad-ds"></a><span data-ttu-id="759f9-104">Herança (AD DS)</span><span class="sxs-lookup"><span data-stu-id="759f9-104">Inheritance (AD DS)</span></span>
 
-<span data-ttu-id="31178-105">A [*herança*](/previous-versions/windows/desktop/legacy/ms681910(v=vs.85)) permite que uma determinada Ace seja propagada do contêiner onde ela foi aplicada a todos os filhos do contêiner.</span><span class="sxs-lookup"><span data-stu-id="31178-105">[*Inheritance*](/previous-versions/windows/desktop/legacy/ms681910(v=vs.85)) allows a given ACE to be propagated from the container where it was applied to all children of the container.</span></span> <span data-ttu-id="31178-106">A herança pode ser combinada com a delegação para conceder direitos administrativos a uma subárvore inteira do diretório em uma única operação.</span><span class="sxs-lookup"><span data-stu-id="31178-106">Inheritance can be combined with delegation to grant administrative rights to a whole subtree of the directory in a single operation.</span></span>
+<span data-ttu-id="759f9-105">A [*herança*](/previous-versions/windows/desktop/legacy/ms681910(v=vs.85)) permite que uma determinada Ace seja propagada do contêiner onde ela foi aplicada a todos os filhos do contêiner.</span><span class="sxs-lookup"><span data-stu-id="759f9-105">[*Inheritance*](/previous-versions/windows/desktop/legacy/ms681910(v=vs.85)) allows a given ACE to be propagated from the container where it was applied to all children of the container.</span></span> <span data-ttu-id="759f9-106">A herança pode ser combinada com a delegação para conceder direitos administrativos a uma subárvore inteira do diretório em uma única operação.</span><span class="sxs-lookup"><span data-stu-id="759f9-106">Inheritance can be combined with delegation to grant administrative rights to a whole subtree of the directory in a single operation.</span></span>
 
  
 

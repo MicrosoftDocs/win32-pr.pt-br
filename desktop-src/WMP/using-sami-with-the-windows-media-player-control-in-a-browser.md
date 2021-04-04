@@ -23,13 +23,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916609"
 ---
-# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a><span data-ttu-id="a3670-114">Usando SAMI com o controle do Windows Media Player em um navegador</span><span class="sxs-lookup"><span data-stu-id="a3670-114">Using SAMI with the Windows Media Player Control in a Browser</span></span>
+# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a><span data-ttu-id="67eb3-114">Usando SAMI com o controle do Windows Media Player em um navegador</span><span class="sxs-lookup"><span data-stu-id="67eb3-114">Using SAMI with the Windows Media Player Control in a Browser</span></span>
 
-<span data-ttu-id="a3670-115">Em vez de criar um arquivo SAMI para cada estilo de fonte ou linguagem, você pode declarar classes de estilo diferentes em um arquivo usando scripts básicos e o modelo de objeto de controle do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="a3670-115">Instead of creating a SAMI file for each font style or language, you can declare different style classes in one file by using basic scripting and the Windows Media Player control object model.</span></span> <span data-ttu-id="a3670-116">Você pode criar controles personalizados que permitem que o usuário escolha entre as diferentes opções de estilo e idioma.</span><span class="sxs-lookup"><span data-stu-id="a3670-116">You can create custom controls that enable the user to choose between the different style and language options.</span></span> <span data-ttu-id="a3670-117">Além disso, você tem controle total sobre o design da interface do Player e a personalização de cada função.</span><span class="sxs-lookup"><span data-stu-id="a3670-117">Furthermore, you have complete control over the design of the Player interface and the customization of each function.</span></span>
+<span data-ttu-id="67eb3-115">Em vez de criar um arquivo SAMI para cada estilo de fonte ou linguagem, você pode declarar classes de estilo diferentes em um arquivo usando scripts básicos e o modelo de objeto de controle do Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="67eb3-115">Instead of creating a SAMI file for each font style or language, you can declare different style classes in one file by using basic scripting and the Windows Media Player control object model.</span></span> <span data-ttu-id="67eb3-116">Você pode criar controles personalizados que permitem que o usuário escolha entre as diferentes opções de estilo e idioma.</span><span class="sxs-lookup"><span data-stu-id="67eb3-116">You can create custom controls that enable the user to choose between the different style and language options.</span></span> <span data-ttu-id="67eb3-117">Além disso, você tem controle total sobre o design da interface do Player e a personalização de cada função.</span><span class="sxs-lookup"><span data-stu-id="67eb3-117">Furthermore, you have complete control over the design of the Player interface and the customization of each function.</span></span>
 
-<span data-ttu-id="a3670-118">Para obter informações detalhadas sobre como inserir o controle do Windows Media Player em uma página [da Web, consulte um exemplo simples de script em uma página da Web](simple-example-of-scripting-in-a-web-page.md).</span><span class="sxs-lookup"><span data-stu-id="a3670-118">For detailed information about embedding the Windows Media Player control in a webpage, see [Simple Example of Scripting in a Web Page](simple-example-of-scripting-in-a-web-page.md).</span></span>
+<span data-ttu-id="67eb3-118">Para obter informações detalhadas sobre como inserir o controle do Windows Media Player em uma página [da Web, consulte um exemplo simples de script em uma página da Web](simple-example-of-scripting-in-a-web-page.md).</span><span class="sxs-lookup"><span data-stu-id="67eb3-118">For detailed information about embedding the Windows Media Player control in a webpage, see [Simple Example of Scripting in a Web Page](simple-example-of-scripting-in-a-web-page.md).</span></span>
 
-<span data-ttu-id="a3670-119">O código de exemplo a seguir demonstra como usar legendas codificadas com o controle do Windows Media Player incorporado em uma página da Web.</span><span class="sxs-lookup"><span data-stu-id="a3670-119">The following example code demonstrates how to use closed captions with the Windows Media Player control embedded in a webpage.</span></span> <span data-ttu-id="a3670-120">Ele inclui controles para permitir que o usuário selecione estilo de fonte e idioma.</span><span class="sxs-lookup"><span data-stu-id="a3670-120">It includes controls to allow the user to select font style and language.</span></span>
+<span data-ttu-id="67eb3-119">O código de exemplo a seguir demonstra como usar legendas codificadas com o controle do Windows Media Player incorporado em uma página da Web.</span><span class="sxs-lookup"><span data-stu-id="67eb3-119">The following example code demonstrates how to use closed captions with the Windows Media Player control embedded in a webpage.</span></span> <span data-ttu-id="67eb3-120">Ele inclui controles para permitir que o usuário selecione estilo de fonte e idioma.</span><span class="sxs-lookup"><span data-stu-id="67eb3-120">It includes controls to allow the user to select font style and language.</span></span>
 
 
 ```C++
@@ -112,11 +112,11 @@ ms.locfileid: "103916609"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="a3670-121">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a3670-121">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="67eb3-121">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="67eb3-121">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a3670-122">**Adicionando legendas ocultas à mídia digital**</span><span class="sxs-lookup"><span data-stu-id="a3670-122">**Adding Closed Captions to Digital Media**</span></span>](adding-closed-captions-to-digital-media.md)
+[<span data-ttu-id="67eb3-122">**Adicionando legendas ocultas à mídia digital**</span><span class="sxs-lookup"><span data-stu-id="67eb3-122">**Adding Closed Captions to Digital Media**</span></span>](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
  

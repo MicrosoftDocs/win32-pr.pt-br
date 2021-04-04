@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645634"
 ---
-# <a name="playbackh"></a><span data-ttu-id="cc743-103">reprodução. h</span><span class="sxs-lookup"><span data-stu-id="cc743-103">playback.h</span></span>
+# <a name="playbackh"></a><span data-ttu-id="62e5e-103">reprodução. h</span><span class="sxs-lookup"><span data-stu-id="62e5e-103">playback.h</span></span>
 
-<span data-ttu-id="cc743-104">Este tópico contém código para o tutorial de [reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md).</span><span class="sxs-lookup"><span data-stu-id="cc743-104">This topic contains code for the tutorial [Audio/Video Playback in DirectShow](audio-video-playback-in-directshow.md).</span></span>
+<span data-ttu-id="62e5e-104">Este tópico contém código para o tutorial de [reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md).</span><span class="sxs-lookup"><span data-stu-id="62e5e-104">This topic contains code for the tutorial [Audio/Video Playback in DirectShow](audio-video-playback-in-directshow.md).</span></span>
 
 
 ```C++
@@ -80,14 +80,14 @@ private:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="cc743-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cc743-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="62e5e-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="62e5e-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="cc743-106">Reprodução de áudio/vídeo no DirectShow</span><span class="sxs-lookup"><span data-stu-id="cc743-106">Audio/Video Playback in DirectShow</span></span>](audio-video-playback-in-directshow.md)
+[<span data-ttu-id="62e5e-106">Reprodução de áudio/vídeo no DirectShow</span><span class="sxs-lookup"><span data-stu-id="62e5e-106">Audio/Video Playback in DirectShow</span></span>](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[<span data-ttu-id="cc743-107">Exemplo de reprodução do DirectShow</span><span class="sxs-lookup"><span data-stu-id="cc743-107">DirectShow Playback Example</span></span>](directshow-playback-example.md)
+[<span data-ttu-id="62e5e-107">Exemplo de reprodução do DirectShow</span><span class="sxs-lookup"><span data-stu-id="62e5e-107">DirectShow Playback Example</span></span>](directshow-playback-example.md)
 </dt> </dl>
 
  

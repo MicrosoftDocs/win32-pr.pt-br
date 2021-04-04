@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645774"
 ---
-# <a name="japan"></a><span data-ttu-id="9d3e8-103">Japão</span><span class="sxs-lookup"><span data-stu-id="9d3e8-103">Japan</span></span>
+# <a name="japan"></a><span data-ttu-id="ab59c-103">Japão</span><span class="sxs-lookup"><span data-stu-id="ab59c-103">Japan</span></span>
 
-<span data-ttu-id="9d3e8-104">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="9d3e8-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="ab59c-104">Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="ab59c-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="9d3e8-105">Os índices de frequência nas tabelas do Japão são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="9d3e8-105">The frequency indexes in the Japan tables are suitable for use as channel numbers.</span></span>
+<span data-ttu-id="ab59c-105">Os índices de frequência nas tabelas do Japão são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="ab59c-105">The frequency indexes in the Japan tables are suitable for use as channel numbers.</span></span>
 
-### <a name="japan-broadcast-assignments"></a><span data-ttu-id="9d3e8-106">Atribuições de difusão do Japão</span><span class="sxs-lookup"><span data-stu-id="9d3e8-106">Japan Broadcast Assignments</span></span>
+### <a name="japan-broadcast-assignments"></a><span data-ttu-id="ab59c-106">Atribuições de difusão do Japão</span><span class="sxs-lookup"><span data-stu-id="ab59c-106">Japan Broadcast Assignments</span></span>
 
 
 ```C++
@@ -91,7 +91,7 @@ ms.locfileid: "103645774"
 
 
 
-### <a name="japan-cable-assignments"></a><span data-ttu-id="9d3e8-107">Atribuições de cabo do Japão</span><span class="sxs-lookup"><span data-stu-id="9d3e8-107">Japan Cable Assignments</span></span>
+### <a name="japan-cable-assignments"></a><span data-ttu-id="ab59c-107">Atribuições de cabo do Japão</span><span class="sxs-lookup"><span data-stu-id="ab59c-107">Japan Cable Assignments</span></span>
 
 
 ```C++
@@ -214,13 +214,13 @@ ms.locfileid: "103645774"
 
 
 
-## <a name="revised-channel-assignments"></a><span data-ttu-id="9d3e8-108">Atribuições de canal revisadas</span><span class="sxs-lookup"><span data-stu-id="9d3e8-108">Revised Channel Assignments</span></span>
+## <a name="revised-channel-assignments"></a><span data-ttu-id="ab59c-108">Atribuições de canal revisadas</span><span class="sxs-lookup"><span data-stu-id="ab59c-108">Revised Channel Assignments</span></span>
 
-<span data-ttu-id="9d3e8-109">A tabela a seguir lista as atribuições de canal de cabo que exigem o Windows XP Media Center Edition 1,1 e posterior.</span><span class="sxs-lookup"><span data-stu-id="9d3e8-109">The following table lists cable channel assignments that require Windows XP Media Center Edition 1.1 and later.</span></span>
+<span data-ttu-id="ab59c-109">A tabela a seguir lista as atribuições de canal de cabo que exigem o Windows XP Media Center Edition 1,1 e posterior.</span><span class="sxs-lookup"><span data-stu-id="ab59c-109">The following table lists cable channel assignments that require Windows XP Media Center Edition 1.1 and later.</span></span>
 
-<span data-ttu-id="9d3e8-110">Os índices de frequência nesta tabela do Japão são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="9d3e8-110">The frequency indexes in this Japan table are suitable for use as channel numbers.</span></span>
+<span data-ttu-id="ab59c-110">Os índices de frequência nesta tabela do Japão são adequados para uso como números de canal.</span><span class="sxs-lookup"><span data-stu-id="ab59c-110">The frequency indexes in this Japan table are suitable for use as channel numbers.</span></span>
 
-### <a name="japan-broadcast-assignments"></a><span data-ttu-id="9d3e8-111">Atribuições de difusão do Japão</span><span class="sxs-lookup"><span data-stu-id="9d3e8-111">Japan Broadcast Assignments</span></span>
+### <a name="japan-broadcast-assignments"></a><span data-ttu-id="ab59c-111">Atribuições de difusão do Japão</span><span class="sxs-lookup"><span data-stu-id="ab59c-111">Japan Broadcast Assignments</span></span>
 
 
 ```C++
@@ -294,11 +294,11 @@ ms.locfileid: "103645774"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="9d3e8-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9d3e8-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ab59c-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ab59c-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9d3e8-113">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="9d3e8-113">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="ab59c-113">Ajuste de TV analógica internacional</span><span class="sxs-lookup"><span data-stu-id="ab59c-113">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

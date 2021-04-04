@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916665"
 ---
-# <a name="iresultsviewerresultsstyle-property"></a><span data-ttu-id="a6ec3-106">Propriedade IResultsViewer:: Resultstyle</span><span class="sxs-lookup"><span data-stu-id="a6ec3-106">IResultsViewer::ResultsStyle property</span></span>
+# <a name="iresultsviewerresultsstyle-property"></a><span data-ttu-id="a79d8-106">Propriedade IResultsViewer:: Resultstyle</span><span class="sxs-lookup"><span data-stu-id="a79d8-106">IResultsViewer::ResultsStyle property</span></span>
 
-<span data-ttu-id="a6ec3-107">Esta propriedade não é implementada.</span><span class="sxs-lookup"><span data-stu-id="a6ec3-107">This property is not implemented.</span></span>
+<span data-ttu-id="a79d8-107">Esta propriedade não é implementada.</span><span class="sxs-lookup"><span data-stu-id="a79d8-107">This property is not implemented.</span></span>
 
  
 

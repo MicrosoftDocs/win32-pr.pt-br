@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916388"
 ---
-# <a name="verifying-the-output-device"></a><span data-ttu-id="780c2-104">Verificando o dispositivo de saída</span><span class="sxs-lookup"><span data-stu-id="780c2-104">Verifying the Output Device</span></span>
+# <a name="verifying-the-output-device"></a><span data-ttu-id="eeb0f-104">Verificando o dispositivo de saída</span><span class="sxs-lookup"><span data-stu-id="eeb0f-104">Verifying the Output Device</span></span>
 
-<span data-ttu-id="780c2-105">Depois de abrir o Sequencer, você deve verificar se o mapeador de MIDI estava disponível e selecionado como o dispositivo de saída.</span><span class="sxs-lookup"><span data-stu-id="780c2-105">After opening the sequencer, you should check whether the MIDI mapper was available and selected as the output device.</span></span> <span data-ttu-id="780c2-106">O exemplo a seguir usa o comando de [**\_ status MCI**](mci-status.md) para verificar se o mapeador de Midi é o dispositivo de saída para o sequenciador MCI.</span><span class="sxs-lookup"><span data-stu-id="780c2-106">The following example uses the [**MCI\_ STATUS**](mci-status.md) command to verify that the MIDI mapper is the output device for the MCI sequencer.</span></span>
+<span data-ttu-id="eeb0f-105">Depois de abrir o Sequencer, você deve verificar se o mapeador de MIDI estava disponível e selecionado como o dispositivo de saída.</span><span class="sxs-lookup"><span data-stu-id="eeb0f-105">After opening the sequencer, you should check whether the MIDI mapper was available and selected as the output device.</span></span> <span data-ttu-id="eeb0f-106">O exemplo a seguir usa o comando de [**\_ status MCI**](mci-status.md) para verificar se o mapeador de Midi é o dispositivo de saída para o sequenciador MCI.</span><span class="sxs-lookup"><span data-stu-id="eeb0f-106">The following example uses the [**MCI\_ STATUS**](mci-status.md) command to verify that the MIDI mapper is the output device for the MCI sequencer.</span></span>
 
 
 ```C++

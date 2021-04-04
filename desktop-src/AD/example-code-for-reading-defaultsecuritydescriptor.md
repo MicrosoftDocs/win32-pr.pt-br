@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822281"
 ---
-# <a name="example-code-for-reading-defaultsecuritydescriptor"></a><span data-ttu-id="f1f61-104">Exemplo de código para leitura de defaultSecurityDescriptor</span><span class="sxs-lookup"><span data-stu-id="f1f61-104">Example Code for Reading defaultSecurityDescriptor</span></span>
+# <a name="example-code-for-reading-defaultsecuritydescriptor"></a><span data-ttu-id="1b2f0-104">Exemplo de código para leitura de defaultSecurityDescriptor</span><span class="sxs-lookup"><span data-stu-id="1b2f0-104">Example Code for Reading defaultSecurityDescriptor</span></span>
 
-<span data-ttu-id="f1f61-105">O exemplo de código a seguir lê o **defaultSecurityDescriptor** para uma classe de objeto especificada.</span><span class="sxs-lookup"><span data-stu-id="f1f61-105">The following code example reads the **defaultSecurityDescriptor** for a specified object class.</span></span>
+<span data-ttu-id="1b2f0-105">O exemplo de código a seguir lê o **defaultSecurityDescriptor** para uma classe de objeto especificada.</span><span class="sxs-lookup"><span data-stu-id="1b2f0-105">The following code example reads the **defaultSecurityDescriptor** for a specified object class.</span></span>
 
 
 ```C++
