@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646776"
 ---
-# <a name="iwindowsdriverupdate2-methods"></a><span data-ttu-id="9cf11-103">Métodos IWindowsDriverUpdate2</span><span class="sxs-lookup"><span data-stu-id="9cf11-103">IWindowsDriverUpdate2 Methods</span></span>
+# <a name="iwindowsdriverupdate2-methods"></a><span data-ttu-id="40871-103">Métodos IWindowsDriverUpdate2</span><span class="sxs-lookup"><span data-stu-id="40871-103">IWindowsDriverUpdate2 Methods</span></span>
 
-<span data-ttu-id="9cf11-104">A interface [**IWindowsDriverUpdate2**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="9cf11-104">The [**IWindowsDriverUpdate2**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate) interface defines the following method.</span></span>
+<span data-ttu-id="40871-104">A interface [**IWindowsDriverUpdate2**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate) define o método a seguir.</span><span class="sxs-lookup"><span data-stu-id="40871-104">The [**IWindowsDriverUpdate2**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate) interface defines the following method.</span></span>
 
 
 
-| <span data-ttu-id="9cf11-105">Método</span><span class="sxs-lookup"><span data-stu-id="9cf11-105">Method</span></span>                                                   | <span data-ttu-id="9cf11-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="9cf11-106">Description</span></span>                                       |
+| <span data-ttu-id="40871-105">Método</span><span class="sxs-lookup"><span data-stu-id="40871-105">Method</span></span>                                                   | <span data-ttu-id="40871-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="40871-106">Description</span></span>                                       |
 |----------------------------------------------------------|---------------------------------------------------|
-| [<span data-ttu-id="9cf11-107">**CopyToCache**</span><span class="sxs-lookup"><span data-stu-id="9cf11-107">**CopyToCache**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate2-copytocache) | <span data-ttu-id="9cf11-108">Copia os binários de atualização externa para uma atualização.</span><span class="sxs-lookup"><span data-stu-id="9cf11-108">Copies the external update binaries to an update.</span></span> |
+| [<span data-ttu-id="40871-107">**CopyToCache**</span><span class="sxs-lookup"><span data-stu-id="40871-107">**CopyToCache**</span></span>](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate2-copytocache) | <span data-ttu-id="40871-108">Copia os binários de atualização externa para uma atualização.</span><span class="sxs-lookup"><span data-stu-id="40871-108">Copies the external update binaries to an update.</span></span> |
 
 
 
  
 
-<span data-ttu-id="9cf11-109">Para obter informações sobre os membros herdados por essa interface, consulte a interface a seguir.</span><span class="sxs-lookup"><span data-stu-id="9cf11-109">For information about the members inherited by this interface, see the following interface.</span></span>
+<span data-ttu-id="40871-109">Para obter informações sobre os membros herdados por essa interface, consulte a interface a seguir.</span><span class="sxs-lookup"><span data-stu-id="40871-109">For information about the members inherited by this interface, see the following interface.</span></span>
 
--   [<span data-ttu-id="9cf11-110">**IWindowsDriverUpdate**</span><span class="sxs-lookup"><span data-stu-id="9cf11-110">**IWindowsDriverUpdate**</span></span>](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate)
+-   [<span data-ttu-id="40871-110">**IWindowsDriverUpdate**</span><span class="sxs-lookup"><span data-stu-id="40871-110">**IWindowsDriverUpdate**</span></span>](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate)
 
  
 

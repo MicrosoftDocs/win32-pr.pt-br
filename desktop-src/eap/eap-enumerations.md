@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "103916893"
 ---
-# <a name="eap-enumerations"></a><span data-ttu-id="64542-103">Enumerações EAP</span><span class="sxs-lookup"><span data-stu-id="64542-103">EAP Enumerations</span></span>
+# <a name="eap-enumerations"></a><span data-ttu-id="bed80-103">Enumerações EAP</span><span class="sxs-lookup"><span data-stu-id="bed80-103">EAP Enumerations</span></span>
 
-<span data-ttu-id="64542-104">Use os seguintes tipos enumerados para protocolos de autenticação e provedores de autenticação.</span><span class="sxs-lookup"><span data-stu-id="64542-104">Use the following enumerated types for authentication protocols and authentication providers.</span></span>
+<span data-ttu-id="bed80-104">Use os seguintes tipos enumerados para protocolos de autenticação e provedores de autenticação.</span><span class="sxs-lookup"><span data-stu-id="bed80-104">Use the following enumerated types for authentication protocols and authentication providers.</span></span>
 
--   [<span data-ttu-id="64542-105">**\_ação EAP \_ PPP**</span><span class="sxs-lookup"><span data-stu-id="64542-105">**PPP\_EAP\_ACTION**</span></span>](/windows/desktop/api/Raseapif/ne-raseapif-ppp_eap_action)
--   [<span data-ttu-id="64542-106">**\_tipo de \_ atributo de autenticação RAS \_**</span><span class="sxs-lookup"><span data-stu-id="64542-106">**RAS\_AUTH\_ATTRIBUTE\_TYPE**</span></span>](/windows/win32/api/raseapif/ne-raseapif-ras_auth_attribute_type)
+-   [<span data-ttu-id="bed80-105">**\_ação EAP \_ PPP**</span><span class="sxs-lookup"><span data-stu-id="bed80-105">**PPP\_EAP\_ACTION**</span></span>](/windows/desktop/api/Raseapif/ne-raseapif-ppp_eap_action)
+-   [<span data-ttu-id="bed80-106">**\_tipo de \_ atributo de autenticação RAS \_**</span><span class="sxs-lookup"><span data-stu-id="bed80-106">**RAS\_AUTH\_ATTRIBUTE\_TYPE**</span></span>](/windows/win32/api/raseapif/ne-raseapif-ras_auth_attribute_type)
 
  
 

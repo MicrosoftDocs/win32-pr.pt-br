@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930491"
 ---
-# <a name="trackbar-control-constants"></a><span data-ttu-id="27f58-103">Constantes de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="27f58-103">Trackbar Control Constants</span></span>
+# <a name="trackbar-control-constants"></a><span data-ttu-id="5c3ba-103">Constantes de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="5c3ba-103">Trackbar Control Constants</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="27f58-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="27f58-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5c3ba-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5c3ba-104">In This Section</span></span>
 
--   [<span data-ttu-id="27f58-105">Valores de desenho personalizados</span><span class="sxs-lookup"><span data-stu-id="27f58-105">Custom Draw Values</span></span>](custom-draw-values.md)
--   [<span data-ttu-id="27f58-106">Estilos de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="27f58-106">Trackbar Control Styles</span></span>](trackbar-control-styles.md)
+-   [<span data-ttu-id="5c3ba-105">Valores de desenho personalizados</span><span class="sxs-lookup"><span data-stu-id="5c3ba-105">Custom Draw Values</span></span>](custom-draw-values.md)
+-   [<span data-ttu-id="5c3ba-106">Estilos de controle TrackBar</span><span class="sxs-lookup"><span data-stu-id="5c3ba-106">Trackbar Control Styles</span></span>](trackbar-control-styles.md)
 
  
 

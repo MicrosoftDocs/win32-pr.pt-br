@@ -13,13 +13,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916395"
 ---
-# <a name="creating-characters-for-microsoft-agent"></a><span data-ttu-id="604d5-104">Criando caracteres para o Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="604d5-104">Creating Characters for Microsoft Agent</span></span>
+# <a name="creating-characters-for-microsoft-agent"></a><span data-ttu-id="75555-104">Criando caracteres para o Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="75555-104">Creating Characters for Microsoft Agent</span></span>
 
-<span data-ttu-id="604d5-105">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="604d5-105">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="75555-105">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="75555-105">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
--   [<span data-ttu-id="604d5-106">Criando caracteres para o Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="604d5-106">Designing Characters for Microsoft Agent</span></span>](designing-characters-for-microsoft-agent.md)
--   [<span data-ttu-id="604d5-107">Usando o editor de caracteres do Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="604d5-107">Using the Microsoft Agent Character Editor</span></span>](using-the-microsoft-agent-character-editor.md)
--   [<span data-ttu-id="604d5-108">Criando caracteres para Microsoft Office</span><span class="sxs-lookup"><span data-stu-id="604d5-108">Designing Characters for Microsoft Office</span></span>](designing-characters-for-microsoft-office.md)
+-   [<span data-ttu-id="75555-106">Criando caracteres para o Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="75555-106">Designing Characters for Microsoft Agent</span></span>](designing-characters-for-microsoft-agent.md)
+-   [<span data-ttu-id="75555-107">Usando o editor de caracteres do Microsoft Agent</span><span class="sxs-lookup"><span data-stu-id="75555-107">Using the Microsoft Agent Character Editor</span></span>](using-the-microsoft-agent-character-editor.md)
+-   [<span data-ttu-id="75555-108">Criando caracteres para Microsoft Office</span><span class="sxs-lookup"><span data-stu-id="75555-108">Designing Characters for Microsoft Office</span></span>](designing-characters-for-microsoft-office.md)
 
  
 

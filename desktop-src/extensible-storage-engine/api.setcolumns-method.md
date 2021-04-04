@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646643"
 ---
-# <a name="apisetcolumns-method"></a><span data-ttu-id="090c3-103">Método API. SetColumns</span><span class="sxs-lookup"><span data-stu-id="090c3-103">Api.SetColumns method</span></span>
+# <a name="apisetcolumns-method"></a><span data-ttu-id="32ad0-103">Método API. SetColumns</span><span class="sxs-lookup"><span data-stu-id="32ad0-103">Api.SetColumns method</span></span>
 
-<span data-ttu-id="090c3-104">Define colunas de objetos Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="090c3-104">Sets columns from ColumnValue objects.</span></span>
+<span data-ttu-id="32ad0-104">Define colunas de objetos Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="32ad0-104">Sets columns from ColumnValue objects.</span></span>
 
-<span data-ttu-id="090c3-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="090c3-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="090c3-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="090c3-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="32ad0-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="32ad0-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="32ad0-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="32ad0-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="090c3-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="090c3-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="32ad0-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="32ad0-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -63,33 +63,33 @@ public static void SetColumns(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="090c3-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="090c3-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="32ad0-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="32ad0-108">Parameters</span></span>
 
-  - <span data-ttu-id="090c3-109">sesid</span><span class="sxs-lookup"><span data-stu-id="090c3-109">sesid</span></span>  
-    <span data-ttu-id="090c3-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="090c3-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="32ad0-109">sesid</span><span class="sxs-lookup"><span data-stu-id="32ad0-109">sesid</span></span>  
+    <span data-ttu-id="32ad0-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="32ad0-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="090c3-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="090c3-111">The session to use.</span></span>
+    <span data-ttu-id="32ad0-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="32ad0-111">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="090c3-112">TableID</span><span class="sxs-lookup"><span data-stu-id="090c3-112">tableid</span></span>  
-    <span data-ttu-id="090c3-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="090c3-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="32ad0-112">TableID</span><span class="sxs-lookup"><span data-stu-id="32ad0-112">tableid</span></span>  
+    <span data-ttu-id="32ad0-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="32ad0-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="090c3-114">O cursor a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="090c3-114">The cursor to update.</span></span> <span data-ttu-id="090c3-115">Uma atualização deve ser preparada.</span><span class="sxs-lookup"><span data-stu-id="090c3-115">An update should be prepared.</span></span>
+    <span data-ttu-id="32ad0-114">O cursor a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="32ad0-114">The cursor to update.</span></span> <span data-ttu-id="32ad0-115">Uma atualização deve ser preparada.</span><span class="sxs-lookup"><span data-stu-id="32ad0-115">An update should be prepared.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="090c3-116">valores</span><span class="sxs-lookup"><span data-stu-id="090c3-116">values</span></span>  
-    <span data-ttu-id="090c3-117">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="090c3-117">Type: \[\]</span></span>  
+  - <span data-ttu-id="32ad0-116">valores</span><span class="sxs-lookup"><span data-stu-id="32ad0-116">values</span></span>  
+    <span data-ttu-id="32ad0-117">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="32ad0-117">Type: \[\]</span></span>  
     
-    <span data-ttu-id="090c3-118">Os valores a serem definidos.</span><span class="sxs-lookup"><span data-stu-id="090c3-118">The values to set.</span></span>
+    <span data-ttu-id="32ad0-118">Os valores a serem definidos.</span><span class="sxs-lookup"><span data-stu-id="32ad0-118">The values to set.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="090c3-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="090c3-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32ad0-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="32ad0-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="090c3-120">Referência</span><span class="sxs-lookup"><span data-stu-id="090c3-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="32ad0-120">Referência</span><span class="sxs-lookup"><span data-stu-id="32ad0-120">Reference</span></span>
 
-[<span data-ttu-id="090c3-121">Classe de API</span><span class="sxs-lookup"><span data-stu-id="090c3-121">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="32ad0-121">Classe de API</span><span class="sxs-lookup"><span data-stu-id="32ad0-121">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="090c3-122">Membros da API</span><span class="sxs-lookup"><span data-stu-id="090c3-122">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="32ad0-122">Membros da API</span><span class="sxs-lookup"><span data-stu-id="32ad0-122">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="090c3-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="090c3-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="32ad0-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="32ad0-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -19,18 +19,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103823743"
 ---
-# <a name="midi-macros"></a><span data-ttu-id="b72b3-110">Macros MIDI</span><span class="sxs-lookup"><span data-stu-id="b72b3-110">MIDI Macros</span></span>
+# <a name="midi-macros"></a><span data-ttu-id="70ca6-110">Macros MIDI</span><span class="sxs-lookup"><span data-stu-id="70ca6-110">MIDI Macros</span></span>
 
-<span data-ttu-id="b72b3-111">As macros a seguir são usadas com MIDI.</span><span class="sxs-lookup"><span data-stu-id="b72b3-111">The following macros are used with MIDI.</span></span>
+<span data-ttu-id="70ca6-111">As macros a seguir são usadas com MIDI.</span><span class="sxs-lookup"><span data-stu-id="70ca6-111">The following macros are used with MIDI.</span></span>
 
--   [<span data-ttu-id="b72b3-112">**MEVT \_ EVENTPARM**</span><span class="sxs-lookup"><span data-stu-id="b72b3-112">**MEVT\_EVENTPARM**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
--   [<span data-ttu-id="b72b3-113">**\_EVENTTYPE MEVT**</span><span class="sxs-lookup"><span data-stu-id="b72b3-113">**MEVT\_EVENTTYPE**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
+-   [<span data-ttu-id="70ca6-112">**MEVT \_ EVENTPARM**</span><span class="sxs-lookup"><span data-stu-id="70ca6-112">**MEVT\_EVENTPARM**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
+-   [<span data-ttu-id="70ca6-113">**\_EVENTTYPE MEVT**</span><span class="sxs-lookup"><span data-stu-id="70ca6-113">**MEVT\_EVENTTYPE**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
 
-## <a name="related-topics"></a><span data-ttu-id="b72b3-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b72b3-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="70ca6-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="70ca6-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b72b3-115">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="b72b3-115">MIDI Reference</span></span>](midi-reference.md)
+[<span data-ttu-id="70ca6-115">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="70ca6-115">MIDI Reference</span></span>](midi-reference.md)
 </dt> </dl>
 
  

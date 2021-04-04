@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822403"
 ---
-# <a name="using-the-mci_notify-flag"></a><span data-ttu-id="f7d06-105">Usando o \_ sinalizador de notificação MCI</span><span class="sxs-lookup"><span data-stu-id="f7d06-105">Using the MCI\_NOTIFY Flag</span></span>
+# <a name="using-the-mci_notify-flag"></a><span data-ttu-id="dd5ac-105">Usando o \_ sinalizador de notificação MCI</span><span class="sxs-lookup"><span data-stu-id="dd5ac-105">Using the MCI\_NOTIFY Flag</span></span>
 
-<span data-ttu-id="f7d06-106">O exemplo a seguir mostra como o \_ sinalizador de notificação MCI é usado com o comando [**MCI \_ Play**](mci-play.md) .</span><span class="sxs-lookup"><span data-stu-id="f7d06-106">The following example shows how the MCI\_NOTIFY flag is used with the [**MCI\_PLAY**](mci-play.md) command.</span></span> <span data-ttu-id="f7d06-107">O identificador para o procedimento de janela que processará a mensagem [**mm \_ MCINOTIFY**](mm-mcinotify.md) é especificado em *hWnd*.</span><span class="sxs-lookup"><span data-stu-id="f7d06-107">The handle to the window procedure that will process the [**MM\_MCINOTIFY**](mm-mcinotify.md) message is specified in *hwnd*.</span></span>
+<span data-ttu-id="dd5ac-106">O exemplo a seguir mostra como o \_ sinalizador de notificação MCI é usado com o comando [**MCI \_ Play**](mci-play.md) .</span><span class="sxs-lookup"><span data-stu-id="dd5ac-106">The following example shows how the MCI\_NOTIFY flag is used with the [**MCI\_PLAY**](mci-play.md) command.</span></span> <span data-ttu-id="dd5ac-107">O identificador para o procedimento de janela que processará a mensagem [**mm \_ MCINOTIFY**](mm-mcinotify.md) é especificado em *hWnd*.</span><span class="sxs-lookup"><span data-stu-id="dd5ac-107">The handle to the window procedure that will process the [**MM\_MCINOTIFY**](mm-mcinotify.md) message is specified in *hwnd*.</span></span>
 
 
 ```C++

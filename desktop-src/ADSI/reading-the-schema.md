@@ -12,11 +12,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822188"
 ---
-# <a name="reading-the-schema"></a><span data-ttu-id="e1703-103">Lendo o esquema</span><span class="sxs-lookup"><span data-stu-id="e1703-103">Reading the Schema</span></span>
+# <a name="reading-the-schema"></a><span data-ttu-id="eb0bb-103">Lendo o esquema</span><span class="sxs-lookup"><span data-stu-id="eb0bb-103">Reading the Schema</span></span>
 
-<span data-ttu-id="e1703-104">A maioria dos provedores oferece suporte ao esquema fornecido com o Active Directory.</span><span class="sxs-lookup"><span data-stu-id="e1703-104">Most providers support the schema that is shipped with Active Directory.</span></span> <span data-ttu-id="e1703-105">O esquema contém definições de classe e de atributo.</span><span class="sxs-lookup"><span data-stu-id="e1703-105">The schema contains class and attribute definitions.</span></span> <span data-ttu-id="e1703-106">A ADSI abstrai o esquema em "Provider://schema".</span><span class="sxs-lookup"><span data-stu-id="e1703-106">ADSI abstracts the schema in "Provider://schema".</span></span> <span data-ttu-id="e1703-107">Cada objeto transporta o local do esquema no qual sua classe é definida.</span><span class="sxs-lookup"><span data-stu-id="e1703-107">Each object carries the schema location in which its class is defined.</span></span> <span data-ttu-id="e1703-108">Você pode usar o método [**IADs:: get \_ Class**](iads-property-methods.md) Property para obter essas informações.</span><span class="sxs-lookup"><span data-stu-id="e1703-108">You can use the [**IADs::get\_Class**](iads-property-methods.md) property method to obtain this information.</span></span>
+<span data-ttu-id="eb0bb-104">A maioria dos provedores oferece suporte ao esquema fornecido com o Active Directory.</span><span class="sxs-lookup"><span data-stu-id="eb0bb-104">Most providers support the schema that is shipped with Active Directory.</span></span> <span data-ttu-id="eb0bb-105">O esquema contém definições de classe e de atributo.</span><span class="sxs-lookup"><span data-stu-id="eb0bb-105">The schema contains class and attribute definitions.</span></span> <span data-ttu-id="eb0bb-106">A ADSI abstrai o esquema em "Provider://schema".</span><span class="sxs-lookup"><span data-stu-id="eb0bb-106">ADSI abstracts the schema in "Provider://schema".</span></span> <span data-ttu-id="eb0bb-107">Cada objeto transporta o local do esquema no qual sua classe é definida.</span><span class="sxs-lookup"><span data-stu-id="eb0bb-107">Each object carries the schema location in which its class is defined.</span></span> <span data-ttu-id="eb0bb-108">Você pode usar o método [**IADs:: get \_ Class**](iads-property-methods.md) Property para obter essas informações.</span><span class="sxs-lookup"><span data-stu-id="eb0bb-108">You can use the [**IADs::get\_Class**](iads-property-methods.md) property method to obtain this information.</span></span>
 
-<span data-ttu-id="e1703-109">Para associar ao contêiner de esquema em um domínio específico, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="e1703-109">To bind to the schema container on a particular domain, do the following:</span></span>
+<span data-ttu-id="eb0bb-109">Para associar ao contêiner de esquema em um domínio específico, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="eb0bb-109">To bind to the schema container on a particular domain, do the following:</span></span>
 
 
 ```VB
@@ -34,7 +34,7 @@ hr = ADsGetObject(L&quot;LDAP://Fabrikam/Schema&quot;, IID_IADsContainer, (void*
 
 
 
-<span data-ttu-id="e1703-110">Para listar informações no contêiner de esquema, associe-se ao contêiner e enumere cada objeto no contêiner, conforme mostrado a seguir:</span><span class="sxs-lookup"><span data-stu-id="e1703-110">To list information in the schema container, bind to the container and enumerate each object in the container as shown in the following:</span></span>
+<span data-ttu-id="eb0bb-110">Para listar informações no contêiner de esquema, associe-se ao contêiner e enumere cada objeto no contêiner, conforme mostrado a seguir:</span><span class="sxs-lookup"><span data-stu-id="eb0bb-110">To list information in the schema container, bind to the container and enumerate each object in the container as shown in the following:</span></span>
 
 
 ```VB
@@ -113,7 +113,7 @@ IADsContainer *pSchema=NULL;
 
 
 
-<span data-ttu-id="e1703-111">Você também pode associar a um objeto e obter o local do esquema, conforme mostrado a seguir:</span><span class="sxs-lookup"><span data-stu-id="e1703-111">You can also bind to an object and get the schema location, as shown in the following:</span></span>
+<span data-ttu-id="eb0bb-111">Você também pode associar a um objeto e obter o local do esquema, conforme mostrado a seguir:</span><span class="sxs-lookup"><span data-stu-id="eb0bb-111">You can also bind to an object and get the schema location, as shown in the following:</span></span>
 
 
 ```VB

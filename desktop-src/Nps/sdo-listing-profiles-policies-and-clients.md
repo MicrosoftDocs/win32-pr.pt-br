@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917429"
 ---
-# <a name="listing-profiles-policies-and-clients"></a><span data-ttu-id="6d3c0-103">Listando perfis, políticas e clientes</span><span class="sxs-lookup"><span data-stu-id="6d3c0-103">Listing Profiles, Policies, and Clients</span></span>
+# <a name="listing-profiles-policies-and-clients"></a><span data-ttu-id="28db6-103">Listando perfis, políticas e clientes</span><span class="sxs-lookup"><span data-stu-id="28db6-103">Listing Profiles, Policies, and Clients</span></span>
 
-<span data-ttu-id="6d3c0-104">O código VBScript a seguir enumera os perfis, as políticas e os clientes no computador local.</span><span class="sxs-lookup"><span data-stu-id="6d3c0-104">The following VBScript code enumerates the profiles, policies, and clients on the local computer.</span></span>
+<span data-ttu-id="28db6-104">O código VBScript a seguir enumera os perfis, as políticas e os clientes no computador local.</span><span class="sxs-lookup"><span data-stu-id="28db6-104">The following VBScript code enumerates the profiles, policies, and clients on the local computer.</span></span>
 
 
 ```VB
@@ -116,29 +116,29 @@ Next 'vtClient
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="6d3c0-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6d3c0-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="28db6-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="28db6-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6d3c0-106">**CLIENTproperties**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-106">**CLIENTPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
+[<span data-ttu-id="28db6-106">**CLIENTproperties**</span><span class="sxs-lookup"><span data-stu-id="28db6-106">**CLIENTPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-107">Enumerando objetos em uma coleção</span><span class="sxs-lookup"><span data-stu-id="6d3c0-107">Enumerating Objects in a Collection</span></span>](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
+[<span data-ttu-id="28db6-107">Enumerando objetos em uma coleção</span><span class="sxs-lookup"><span data-stu-id="28db6-107">Enumerating Objects in a Collection</span></span>](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-108">**IASCOMMONPROPERTIES**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-108">**IASCOMMONPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-iascommonproperties)
+[<span data-ttu-id="28db6-108">**IASCOMMONPROPERTIES**</span><span class="sxs-lookup"><span data-stu-id="28db6-108">**IASCOMMONPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-iascommonproperties)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-109">**IASPROPERTIES**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-109">**IASPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
+[<span data-ttu-id="28db6-109">**IASPROPERTIES**</span><span class="sxs-lookup"><span data-stu-id="28db6-109">**IASPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-110">**ISdo**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-110">**ISdo**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdo)
+[<span data-ttu-id="28db6-110">**ISdo**</span><span class="sxs-lookup"><span data-stu-id="28db6-110">**ISdo**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdo)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-111">**ISdoMachine**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-111">**ISdoMachine**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
+[<span data-ttu-id="28db6-111">**ISdoMachine**</span><span class="sxs-lookup"><span data-stu-id="28db6-111">**ISdoMachine**</span></span>](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
 </dt> <dt>
 
-[<span data-ttu-id="6d3c0-112">**RADIUSproperties**</span><span class="sxs-lookup"><span data-stu-id="6d3c0-112">**RADIUSPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
+[<span data-ttu-id="28db6-112">**RADIUSproperties**</span><span class="sxs-lookup"><span data-stu-id="28db6-112">**RADIUSPROPERTIES**</span></span>](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
 </dt> </dl>
 
  

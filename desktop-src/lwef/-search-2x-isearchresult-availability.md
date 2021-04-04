@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823253"
 ---
-# <a name="isearchresultavailability-method"></a><span data-ttu-id="17e16-106">Método ISearchResult:: Availability</span><span class="sxs-lookup"><span data-stu-id="17e16-106">ISearchResult::Availability method</span></span>
+# <a name="isearchresultavailability-method"></a><span data-ttu-id="7a609-106">Método ISearchResult:: Availability</span><span class="sxs-lookup"><span data-stu-id="7a609-106">ISearchResult::Availability method</span></span>
 
-<span data-ttu-id="17e16-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="17e16-107">This method is not implemented.</span></span>
+<span data-ttu-id="7a609-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="7a609-107">This method is not implemented.</span></span>
 
  
 

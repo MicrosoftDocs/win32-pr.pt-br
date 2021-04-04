@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103823237"
 ---
-# <a name="iwsmansession-properties"></a><span data-ttu-id="47e31-103">Propriedades de IWSManSession</span><span class="sxs-lookup"><span data-stu-id="47e31-103">IWSManSession Properties</span></span>
+# <a name="iwsmansession-properties"></a><span data-ttu-id="3a672-103">Propriedades de IWSManSession</span><span class="sxs-lookup"><span data-stu-id="3a672-103">IWSManSession Properties</span></span>
 
-<span data-ttu-id="47e31-104">A interface [**IWSManSession**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmansession) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="47e31-104">The [**IWSManSession**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmansession) interface exposes the following properties.</span></span>
+<span data-ttu-id="3a672-104">A interface [**IWSManSession**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmansession) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="3a672-104">The [**IWSManSession**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmansession) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="47e31-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="47e31-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3a672-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3a672-105">In this section</span></span>
 
--   [<span data-ttu-id="47e31-106">**Propriedade BatchItems**</span><span class="sxs-lookup"><span data-stu-id="47e31-106">**BatchItems Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_batchitems)
--   [<span data-ttu-id="47e31-107">**Propriedade de erro**</span><span class="sxs-lookup"><span data-stu-id="47e31-107">**Error Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_error)
--   [<span data-ttu-id="47e31-108">**Propriedade Timeout**</span><span class="sxs-lookup"><span data-stu-id="47e31-108">**Timeout Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_timeout)
+-   [<span data-ttu-id="3a672-106">**Propriedade BatchItems**</span><span class="sxs-lookup"><span data-stu-id="3a672-106">**BatchItems Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_batchitems)
+-   [<span data-ttu-id="3a672-107">**Propriedade de erro**</span><span class="sxs-lookup"><span data-stu-id="3a672-107">**Error Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_error)
+-   [<span data-ttu-id="3a672-108">**Propriedade Timeout**</span><span class="sxs-lookup"><span data-stu-id="3a672-108">**Timeout Property**</span></span>](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-get_timeout)
 
  
 

@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103917928"
 ---
-# <a name="d-rras"></a><span data-ttu-id="0b4ee-103">D (RRAS)</span><span class="sxs-lookup"><span data-stu-id="0b4ee-103">D (RRAS)</span></span>
+# <a name="d-rras"></a><span data-ttu-id="8e200-103">D (RRAS)</span><span class="sxs-lookup"><span data-stu-id="8e200-103">D (RRAS)</span></span>
 
-<span data-ttu-id="0b4ee-104">[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) D [E](e-gly.md) F G H [i](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z</span><span class="sxs-lookup"><span data-stu-id="0b4ee-104">[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) D [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z</span></span>
+<span data-ttu-id="8e200-104">[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) D [E](e-gly.md) F G H [i](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z</span><span class="sxs-lookup"><span data-stu-id="8e200-104">[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) D [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="0b4ee-105"><span id="_mpr_dictionary_attack"></span><span id="_MPR_DICTIONARY_ATTACK"></span>**ataque de dicionário**</span><span class="sxs-lookup"><span data-stu-id="0b4ee-105"><span id="_mpr_dictionary_attack"></span><span id="_MPR_DICTIONARY_ATTACK"></span>**dictionary attack**</span></span>
+<span data-ttu-id="8e200-105"><span id="_mpr_dictionary_attack"></span><span id="_MPR_DICTIONARY_ATTACK"></span>**ataque de dicionário**</span><span class="sxs-lookup"><span data-stu-id="8e200-105"><span id="_mpr_dictionary_attack"></span><span id="_MPR_DICTIONARY_ATTACK"></span>**dictionary attack**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="0b4ee-106">Um tipo de ataque de força bruta em que o invasor tenta adivinhar uma senha, experimentando cada senha em um dicionário.</span><span class="sxs-lookup"><span data-stu-id="0b4ee-106">A type of brute-force attack in which the attacker attempts to guess a password by trying every password in a dictionary.</span></span>
+<span data-ttu-id="8e200-106">Um tipo de ataque de força bruta em que o invasor tenta adivinhar uma senha, experimentando cada senha em um dicionário.</span><span class="sxs-lookup"><span data-stu-id="8e200-106">A type of brute-force attack in which the attacker attempts to guess a password by trying every password in a dictionary.</span></span>
 
 </dd> </dl>
 
