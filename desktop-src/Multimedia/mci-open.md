@@ -214,7 +214,7 @@ Para dispositivos de formato de onda-áudio, o parâmetro *lpOpen* aponta para u
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

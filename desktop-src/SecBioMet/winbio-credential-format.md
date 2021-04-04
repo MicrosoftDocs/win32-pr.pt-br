@@ -25,7 +25,7 @@ ms.locfileid: "104085561"
 
 Define sinalizadores que podem ser usados para especificar o formato de credencial do usuário final. Essa enumeração é usada pela função [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -75,7 +75,7 @@ A credencial de senha foi encapsulada com [**CredProtect**](/windows/desktop/api
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

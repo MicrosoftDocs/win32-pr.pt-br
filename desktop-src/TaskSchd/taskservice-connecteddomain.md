@@ -27,7 +27,7 @@ ms.locfileid: "103824282"
 
 Para scripts, obtém o nome do domínio ao qual o computador [**TargetServer**](taskservice-targetserver.md) está conectado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

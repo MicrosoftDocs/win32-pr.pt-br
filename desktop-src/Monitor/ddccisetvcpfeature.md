@@ -90,7 +90,7 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

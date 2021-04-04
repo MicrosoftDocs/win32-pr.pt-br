@@ -78,7 +78,7 @@ Se wParam for 0 e lParam não for NULL, o valor de retorno será igual a TRUE; c
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

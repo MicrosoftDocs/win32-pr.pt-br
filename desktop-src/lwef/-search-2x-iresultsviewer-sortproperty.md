@@ -34,7 +34,7 @@ Essa propriedade irá definir ou retornar o IndexColumn da propriedade para clas
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
