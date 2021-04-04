@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916200"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a><span data-ttu-id="3c70e-103">Exemplos de provedor WMI de DNS – Gerenciando registros de recursos de DNS</span><span class="sxs-lookup"><span data-stu-id="3c70e-103">DNS WMI Provider Samples—Managing DNS Resource Records</span></span>
+# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a><span data-ttu-id="0ec31-103">Exemplos de provedor WMI de DNS – Gerenciando registros de recursos de DNS</span><span class="sxs-lookup"><span data-stu-id="0ec31-103">DNS WMI Provider Samples—Managing DNS Resource Records</span></span>
 
-<span data-ttu-id="3c70e-104">Esta seção demonstra as tarefas de script associadas ao gerenciamento de registros de recursos DNS.</span><span class="sxs-lookup"><span data-stu-id="3c70e-104">This section demonstrates scripting tasks associated with managing DNS resource records.</span></span> <span data-ttu-id="3c70e-105">Os links abaixo saltam para as sub-rotinas no arquivo de script.</span><span class="sxs-lookup"><span data-stu-id="3c70e-105">The links below jump to subroutines in the script file.</span></span>
+<span data-ttu-id="0ec31-104">Esta seção demonstra as tarefas de script associadas ao gerenciamento de registros de recursos DNS.</span><span class="sxs-lookup"><span data-stu-id="0ec31-104">This section demonstrates scripting tasks associated with managing DNS resource records.</span></span> <span data-ttu-id="0ec31-105">Os links abaixo saltam para as sub-rotinas no arquivo de script.</span><span class="sxs-lookup"><span data-stu-id="0ec31-105">The links below jump to subroutines in the script file.</span></span>
 
--   [<span data-ttu-id="3c70e-106">Listar registros de recursos</span><span class="sxs-lookup"><span data-stu-id="3c70e-106">List resource records</span></span>](#list-resource-records)
--   [<span data-ttu-id="3c70e-107">Adicionar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-107">Add a resource record</span></span>](#add-a-resource-record)
--   [<span data-ttu-id="3c70e-108">Excluir um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-108">Delete a resource record</span></span>](#delete-a-resource-record)
--   [<span data-ttu-id="3c70e-109">Modificar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-109">Modify a resource record</span></span>](#modify-a-resource-record)
--   [<span data-ttu-id="3c70e-110">Conectar-se ao provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="3c70e-110">Connect to the DNS WMI Provider</span></span>](#connect-to-the-dns-wmi-provider)
+-   [<span data-ttu-id="0ec31-106">Listar registros de recursos</span><span class="sxs-lookup"><span data-stu-id="0ec31-106">List resource records</span></span>](#list-resource-records)
+-   [<span data-ttu-id="0ec31-107">Adicionar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-107">Add a resource record</span></span>](#add-a-resource-record)
+-   [<span data-ttu-id="0ec31-108">Excluir um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-108">Delete a resource record</span></span>](#delete-a-resource-record)
+-   [<span data-ttu-id="0ec31-109">Modificar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-109">Modify a resource record</span></span>](#modify-a-resource-record)
+-   [<span data-ttu-id="0ec31-110">Conectar-se ao provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="0ec31-110">Connect to the DNS WMI Provider</span></span>](#connect-to-the-dns-wmi-provider)
 
-<span data-ttu-id="3c70e-111">A implementação geral do script é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="3c70e-111">The general implementation of the script is as follows:</span></span>
+<span data-ttu-id="0ec31-111">A implementação geral do script é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="0ec31-111">The general implementation of the script is as follows:</span></span>
 
-1.  <span data-ttu-id="3c70e-112">Uma classe é criada para cada tipo de registro de recurso.</span><span class="sxs-lookup"><span data-stu-id="3c70e-112">A class is created for each resource record type.</span></span>
-2.  <span data-ttu-id="3c70e-113">Os dados de registro de recurso são fornecidos por meio de entradas de linha de comando de usuário e informações de provedor WMI de DNS para cada classe de tipo de registro.</span><span class="sxs-lookup"><span data-stu-id="3c70e-113">Resource record data is provided through user command-line inputs and DNS WMI Provider information for each record type class.</span></span>
-3.  <span data-ttu-id="3c70e-114">Funções comuns como lista, exclusão e modificação são criadas e podem ser usadas em classes de tipo de registro de recurso individual.</span><span class="sxs-lookup"><span data-stu-id="3c70e-114">Common functions such as list, delete, and modify are created and can be used on individual resource record type classes.</span></span>
+1.  <span data-ttu-id="0ec31-112">Uma classe é criada para cada tipo de registro de recurso.</span><span class="sxs-lookup"><span data-stu-id="0ec31-112">A class is created for each resource record type.</span></span>
+2.  <span data-ttu-id="0ec31-113">Os dados de registro de recurso são fornecidos por meio de entradas de linha de comando de usuário e informações de provedor WMI de DNS para cada classe de tipo de registro.</span><span class="sxs-lookup"><span data-stu-id="0ec31-113">Resource record data is provided through user command-line inputs and DNS WMI Provider information for each record type class.</span></span>
+3.  <span data-ttu-id="0ec31-114">Funções comuns como lista, exclusão e modificação são criadas e podem ser usadas em classes de tipo de registro de recurso individual.</span><span class="sxs-lookup"><span data-stu-id="0ec31-114">Common functions such as list, delete, and modify are created and can be used on individual resource record type classes.</span></span>
 
-<span data-ttu-id="3c70e-115">Este exemplo de código mostra tarefas associadas ao gerenciamento de registros de recursos DNS.</span><span class="sxs-lookup"><span data-stu-id="3c70e-115">This code example shows tasks associated with Managing DNS resource records.</span></span>
+<span data-ttu-id="0ec31-115">Este exemplo de código mostra tarefas associadas ao gerenciamento de registros de recursos DNS.</span><span class="sxs-lookup"><span data-stu-id="0ec31-115">This code example shows tasks associated with Managing DNS resource records.</span></span>
 
 
 ```VB
@@ -4192,9 +4192,9 @@ End Class
 
 
 
-## <a name="list-resource-records"></a><span data-ttu-id="3c70e-116">Listar registros de recursos</span><span class="sxs-lookup"><span data-stu-id="3c70e-116">List Resource Records</span></span>
+## <a name="list-resource-records"></a><span data-ttu-id="0ec31-116">Listar registros de recursos</span><span class="sxs-lookup"><span data-stu-id="0ec31-116">List Resource Records</span></span>
 
-<span data-ttu-id="3c70e-117">Este exemplo de código mostra as tarefas associadas à listagem de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="3c70e-117">This code example shows tasks associated with listing resource records.</span></span>
+<span data-ttu-id="0ec31-117">Este exemplo de código mostra as tarefas associadas à listagem de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="0ec31-117">This code example shows tasks associated with listing resource records.</span></span>
 
 
 ```VB
@@ -4316,9 +4316,9 @@ End Sub
 
 
 
-## <a name="add-a-resource-record"></a><span data-ttu-id="3c70e-118">Adicionar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-118">Add a Resource Record</span></span>
+## <a name="add-a-resource-record"></a><span data-ttu-id="0ec31-118">Adicionar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-118">Add a Resource Record</span></span>
 
-<span data-ttu-id="3c70e-119">Este exemplo de código mostra as tarefas associadas à adição de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="3c70e-119">This code example shows tasks associated with adding resource records.</span></span>
+<span data-ttu-id="0ec31-119">Este exemplo de código mostra as tarefas associadas à adição de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="0ec31-119">This code example shows tasks associated with adding resource records.</span></span>
 
 
 ```VB
@@ -4406,9 +4406,9 @@ End Sub
 
 
 
-## <a name="delete-a-resource-record"></a><span data-ttu-id="3c70e-120">Excluir um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-120">Delete a Resource Record</span></span>
+## <a name="delete-a-resource-record"></a><span data-ttu-id="0ec31-120">Excluir um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-120">Delete a Resource Record</span></span>
 
-<span data-ttu-id="3c70e-121">Este exemplo de código mostra as tarefas associadas à exclusão de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="3c70e-121">This code example shows tasks associated with deleting resource records.</span></span>
+<span data-ttu-id="0ec31-121">Este exemplo de código mostra as tarefas associadas à exclusão de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="0ec31-121">This code example shows tasks associated with deleting resource records.</span></span>
 
 
 ```VB
@@ -4490,9 +4490,9 @@ End Sub
 
 
 
-## <a name="modify-a-resource-record"></a><span data-ttu-id="3c70e-122">Modificar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="3c70e-122">Modify a Resource Record</span></span>
+## <a name="modify-a-resource-record"></a><span data-ttu-id="0ec31-122">Modificar um registro de recurso</span><span class="sxs-lookup"><span data-stu-id="0ec31-122">Modify a Resource Record</span></span>
 
-<span data-ttu-id="3c70e-123">Este exemplo de código mostra as tarefas associadas à alteração de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="3c70e-123">This code example shows tasks associated with changing resource records.</span></span>
+<span data-ttu-id="0ec31-123">Este exemplo de código mostra as tarefas associadas à alteração de registros de recursos.</span><span class="sxs-lookup"><span data-stu-id="0ec31-123">This code example shows tasks associated with changing resource records.</span></span>
 
 
 ```VB
@@ -5183,9 +5183,9 @@ End Function
 
 
 
-## <a name="connect-to-the-dns-wmi-provider"></a><span data-ttu-id="3c70e-124">Conectar-se ao provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="3c70e-124">Connect to the DNS WMI Provider</span></span>
+## <a name="connect-to-the-dns-wmi-provider"></a><span data-ttu-id="0ec31-124">Conectar-se ao provedor WMI de DNS</span><span class="sxs-lookup"><span data-stu-id="0ec31-124">Connect to the DNS WMI Provider</span></span>
 
-<span data-ttu-id="3c70e-125">Este exemplo de código mostra as tarefas associadas à conexão a um provedor WMI de DNS.</span><span class="sxs-lookup"><span data-stu-id="3c70e-125">This code example shows tasks associated with connecting to a DNS WMI Provider.</span></span>
+<span data-ttu-id="0ec31-125">Este exemplo de código mostra as tarefas associadas à conexão a um provedor WMI de DNS.</span><span class="sxs-lookup"><span data-stu-id="0ec31-125">This code example shows tasks associated with connecting to a DNS WMI Provider.</span></span>
 
 
 ```VB

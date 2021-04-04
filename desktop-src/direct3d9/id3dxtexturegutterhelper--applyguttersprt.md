@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103664029"
 ---
-# <a name="id3dxtexturegutterhelperapplyguttersprt-method"></a><span data-ttu-id="fa3a7-103">Método ID3DXTextureGutterHelper:: ApplyGuttersPRT</span><span class="sxs-lookup"><span data-stu-id="fa3a7-103">ID3DXTextureGutterHelper::ApplyGuttersPRT method</span></span>
+# <a name="id3dxtexturegutterhelperapplyguttersprt-method"></a><span data-ttu-id="7272f-103">Método ID3DXTextureGutterHelper:: ApplyGuttersPRT</span><span class="sxs-lookup"><span data-stu-id="7272f-103">ID3DXTextureGutterHelper::ApplyGuttersPRT method</span></span>
 
-<span data-ttu-id="fa3a7-104">Aplica medianizes a um objeto de buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="fa3a7-104">Applies gutters to an [**ID3DXPRTBuffer**](id3dxprtbuffer.md) buffer object.</span></span>
+<span data-ttu-id="7272f-104">Aplica medianizes a um objeto de buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="7272f-104">Applies gutters to an [**ID3DXPRTBuffer**](id3dxprtbuffer.md) buffer object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fa3a7-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="fa3a7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7272f-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7272f-105">Syntax</span></span>
 
 
 ```C++
@@ -36,47 +36,47 @@ HRESULT ApplyGuttersPRT(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="fa3a7-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="fa3a7-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7272f-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7272f-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="fa3a7-107">*pBuffer* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="fa3a7-107">*pBuffer* \[in\]</span></span>
+<span data-ttu-id="7272f-107">*pBuffer* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7272f-107">*pBuffer* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="fa3a7-108">Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**</span><span class="sxs-lookup"><span data-stu-id="fa3a7-108">Type: **[**LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**</span></span>
+<span data-ttu-id="7272f-108">Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**</span><span class="sxs-lookup"><span data-stu-id="7272f-108">Type: **[**LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**</span></span>
 
-<span data-ttu-id="fa3a7-109">Ponteiro para um objeto de buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="fa3a7-109">Pointer to an [**ID3DXPRTBuffer**](id3dxprtbuffer.md) buffer object.</span></span>
+<span data-ttu-id="7272f-109">Ponteiro para um objeto de buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .</span><span class="sxs-lookup"><span data-stu-id="7272f-109">Pointer to an [**ID3DXPRTBuffer**](id3dxprtbuffer.md) buffer object.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="fa3a7-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="fa3a7-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7272f-110">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7272f-110">Return value</span></span>
 
-<span data-ttu-id="fa3a7-111">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="fa3a7-111">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="7272f-111">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="7272f-111">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="fa3a7-112">Se o método for bem sucedido, o valor de retorno será S \_ OK.</span><span class="sxs-lookup"><span data-stu-id="fa3a7-112">If the method succeeds, the return value is S\_OK.</span></span> <span data-ttu-id="fa3a7-113">Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL</span><span class="sxs-lookup"><span data-stu-id="fa3a7-113">If the method fails, the following value will be returned.D3DERR\_INVALIDCALL</span></span>
+<span data-ttu-id="7272f-112">Se o método for bem sucedido, o valor de retorno será S \_ OK.</span><span class="sxs-lookup"><span data-stu-id="7272f-112">If the method succeeds, the return value is S\_OK.</span></span> <span data-ttu-id="7272f-113">Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL</span><span class="sxs-lookup"><span data-stu-id="7272f-113">If the method fails, the following value will be returned.D3DERR\_INVALIDCALL</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="fa3a7-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="fa3a7-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7272f-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="7272f-114">Remarks</span></span>
 
-<span data-ttu-id="fa3a7-115">A [**classe 2 texels**](id3dxtexturegutterhelper.md) são geradas pela reamostração da classe 1 e 4 texels.</span><span class="sxs-lookup"><span data-stu-id="fa3a7-115">[**Class 2 texels**](id3dxtexturegutterhelper.md) are generated by resampling class 1 and 4 texels.</span></span>
+<span data-ttu-id="7272f-115">A [**classe 2 texels**](id3dxtexturegutterhelper.md) são geradas pela reamostração da classe 1 e 4 texels.</span><span class="sxs-lookup"><span data-stu-id="7272f-115">[**Class 2 texels**](id3dxtexturegutterhelper.md) are generated by resampling class 1 and 4 texels.</span></span>
 
-<span data-ttu-id="fa3a7-116">A largura e a altura da textura devem ser as mesmas que as retornadas por [**ID3DXTextureGutterHelper:: GetWidth**](id3dxtexturegutterhelper--getwidth.md) e [**ID3DXTextureGutterHelper:: GetHeight**](id3dxtexturegutterhelper--getheight.md).</span><span class="sxs-lookup"><span data-stu-id="fa3a7-116">The width and height of the texture must be the same as those returned by [**ID3DXTextureGutterHelper::GetWidth**](id3dxtexturegutterhelper--getwidth.md) and [**ID3DXTextureGutterHelper::GetHeight**](id3dxtexturegutterhelper--getheight.md).</span></span>
+<span data-ttu-id="7272f-116">A largura e a altura da textura devem ser as mesmas que as retornadas por [**ID3DXTextureGutterHelper:: GetWidth**](id3dxtexturegutterhelper--getwidth.md) e [**ID3DXTextureGutterHelper:: GetHeight**](id3dxtexturegutterhelper--getheight.md).</span><span class="sxs-lookup"><span data-stu-id="7272f-116">The width and height of the texture must be the same as those returned by [**ID3DXTextureGutterHelper::GetWidth**](id3dxtexturegutterhelper--getwidth.md) and [**ID3DXTextureGutterHelper::GetHeight**](id3dxtexturegutterhelper--getheight.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="fa3a7-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="fa3a7-117">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="7272f-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7272f-117">Requirements</span></span>
 
 
 
-| <span data-ttu-id="fa3a7-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="fa3a7-118">Requirement</span></span> | <span data-ttu-id="fa3a7-119">Valor</span><span class="sxs-lookup"><span data-stu-id="fa3a7-119">Value</span></span> |
+| <span data-ttu-id="7272f-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="7272f-118">Requirement</span></span> | <span data-ttu-id="7272f-119">Valor</span><span class="sxs-lookup"><span data-stu-id="7272f-119">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="fa3a7-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="fa3a7-120">Header</span></span><br/>  | <dl> <span data-ttu-id="fa3a7-121"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="fa3a7-121"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
-| <span data-ttu-id="fa3a7-122">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="fa3a7-122">Library</span></span><br/> | <dl> <span data-ttu-id="fa3a7-123"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="fa3a7-123"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="7272f-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7272f-120">Header</span></span><br/>  | <dl> <span data-ttu-id="7272f-121"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="7272f-121"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
+| <span data-ttu-id="7272f-122">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="7272f-122">Library</span></span><br/> | <dl> <span data-ttu-id="7272f-123"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="7272f-123"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="fa3a7-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="fa3a7-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7272f-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="7272f-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="fa3a7-125">ID3DXTextureGutterHelper</span><span class="sxs-lookup"><span data-stu-id="fa3a7-125">ID3DXTextureGutterHelper</span></span>](id3dxtexturegutterhelper.md)
+[<span data-ttu-id="7272f-125">ID3DXTextureGutterHelper</span><span class="sxs-lookup"><span data-stu-id="7272f-125">ID3DXTextureGutterHelper</span></span>](id3dxtexturegutterhelper.md)
 </dt> </dl>
 
  

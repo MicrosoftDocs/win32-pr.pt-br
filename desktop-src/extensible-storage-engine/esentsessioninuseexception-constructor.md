@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104091806"
 ---
-# <a name="esentsessioninuseexception-constructor"></a><span data-ttu-id="cc882-103">Construtor EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="cc882-103">EsentSessionInUseException constructor</span></span>
+# <a name="esentsessioninuseexception-constructor"></a><span data-ttu-id="c57e7-103">Construtor EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="c57e7-103">EsentSessionInUseException constructor</span></span>
 
-<span data-ttu-id="cc882-104">Inicializa uma nova instância da classe EsentSessionInUseException.</span><span class="sxs-lookup"><span data-stu-id="cc882-104">Initializes a new instance of the EsentSessionInUseException class.</span></span>
+<span data-ttu-id="c57e7-104">Inicializa uma nova instância da classe EsentSessionInUseException.</span><span class="sxs-lookup"><span data-stu-id="c57e7-104">Initializes a new instance of the EsentSessionInUseException class.</span></span>
 
-<span data-ttu-id="cc882-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="cc882-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="cc882-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="cc882-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c57e7-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c57e7-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c57e7-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c57e7-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cc882-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="cc882-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c57e7-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c57e7-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentSessionInUseException()
 public EsentSessionInUseException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cc882-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="cc882-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c57e7-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="c57e7-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="cc882-109">Referência</span><span class="sxs-lookup"><span data-stu-id="cc882-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c57e7-109">Referência</span><span class="sxs-lookup"><span data-stu-id="c57e7-109">Reference</span></span>
 
-[<span data-ttu-id="cc882-110">Classe EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="cc882-110">EsentSessionInUseException class</span></span>](./esentsessioninuseexception-class.md)
+[<span data-ttu-id="c57e7-110">Classe EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="c57e7-110">EsentSessionInUseException class</span></span>](./esentsessioninuseexception-class.md)
 
-[<span data-ttu-id="cc882-111">Membros do EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="cc882-111">EsentSessionInUseException members</span></span>](./esentsessioninuseexception-members.md)
+[<span data-ttu-id="c57e7-111">Membros do EsentSessionInUseException</span><span class="sxs-lookup"><span data-stu-id="c57e7-111">EsentSessionInUseException members</span></span>](./esentsessioninuseexception-members.md)
 
-[<span data-ttu-id="cc882-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="cc882-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c57e7-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c57e7-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

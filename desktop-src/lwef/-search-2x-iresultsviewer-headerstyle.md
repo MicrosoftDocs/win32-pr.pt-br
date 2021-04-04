@@ -25,16 +25,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644673"
 ---
-# <a name="iresultsviewerheaderstyle-property"></a><span data-ttu-id="f3bd4-106">Propriedade IResultsViewer:: HeaderStyle</span><span class="sxs-lookup"><span data-stu-id="f3bd4-106">IResultsViewer::HeaderStyle property</span></span>
+# <a name="iresultsviewerheaderstyle-property"></a><span data-ttu-id="5da3f-106">Propriedade IResultsViewer:: HeaderStyle</span><span class="sxs-lookup"><span data-stu-id="5da3f-106">IResultsViewer::HeaderStyle property</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f3bd4-107">O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="f3bd4-107">Windows Desktop Search 2.x is an obsolete technology that was originally available as an add-in for Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="f3bd4-108">Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso.</span><span class="sxs-lookup"><span data-stu-id="f3bd4-108">On later releases, use the [Windows Search API](../search/-search-reference-entry-page.md) instead.</span></span> 
+> <span data-ttu-id="5da3f-107">O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="5da3f-107">Windows Desktop Search 2.x is an obsolete technology that was originally available as an add-in for Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="5da3f-108">Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso.</span><span class="sxs-lookup"><span data-stu-id="5da3f-108">On later releases, use the [Windows Search API](../search/-search-reference-entry-page.md) instead.</span></span> 
 
-<span data-ttu-id="f3bd4-109">O estilo do cabeçalho exibido na exibição.</span><span class="sxs-lookup"><span data-stu-id="f3bd4-109">The style of header displayed in the view.</span></span>
+<span data-ttu-id="5da3f-109">O estilo do cabeçalho exibido na exibição.</span><span class="sxs-lookup"><span data-stu-id="5da3f-109">The style of header displayed in the view.</span></span>
 
-<span data-ttu-id="f3bd4-110">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="f3bd4-110">This property is read/write.</span></span>
+<span data-ttu-id="5da3f-110">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5da3f-110">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f3bd4-111">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f3bd4-111">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5da3f-111">Syntax</span><span class="sxs-lookup"><span data-stu-id="5da3f-111">Syntax</span></span>
 
 
 ```C++
@@ -49,20 +49,20 @@ HRESULT get_HeaderStyle(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="f3bd4-112">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f3bd4-112">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="5da3f-112">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5da3f-112">Property value</span></span>
 
-<span data-ttu-id="f3bd4-113">Define o estilo do cabeçalho exibido.</span><span class="sxs-lookup"><span data-stu-id="f3bd4-113">Sets the style of the header displayed.</span></span>
+<span data-ttu-id="5da3f-113">Define o estilo do cabeçalho exibido.</span><span class="sxs-lookup"><span data-stu-id="5da3f-113">Sets the style of the header displayed.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f3bd4-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f3bd4-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5da3f-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5da3f-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f3bd4-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="f3bd4-115">Requirement</span></span> | <span data-ttu-id="f3bd4-116">Valor</span><span class="sxs-lookup"><span data-stu-id="f3bd4-116">Value</span></span> |
+| <span data-ttu-id="5da3f-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="5da3f-115">Requirement</span></span> | <span data-ttu-id="5da3f-116">Valor</span><span class="sxs-lookup"><span data-stu-id="5da3f-116">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="f3bd4-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f3bd4-117">Minimum supported client</span></span><br/> | <span data-ttu-id="f3bd4-118">\[Somente aplicativos de área de trabalho do Windows XP com SP2\]</span><span class="sxs-lookup"><span data-stu-id="f3bd4-118">Windows XP with SP2 \[desktop apps only\]</span></span><br/>                                 |
-| <span data-ttu-id="f3bd4-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f3bd4-119">Minimum supported server</span></span><br/> | <span data-ttu-id="f3bd4-120">\[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]</span><span class="sxs-lookup"><span data-stu-id="f3bd4-120">Windows Server 2003 with SP1 \[desktop apps only\]</span></span><br/>                        |
-| <span data-ttu-id="f3bd4-121">Redistribuível</span><span class="sxs-lookup"><span data-stu-id="f3bd4-121">Redistributable</span></span><br/>          | <span data-ttu-id="f3bd4-122">Windows Desktop Search (WDS) 2.6.5</span><span class="sxs-lookup"><span data-stu-id="f3bd4-122">Windows Desktop Search (WDS) 2.6.5</span></span><br/>                                        |
-| <span data-ttu-id="f3bd4-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f3bd4-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="f3bd4-124"><dt>WdsView. h</dt></span><span class="sxs-lookup"><span data-stu-id="f3bd4-124"><dt>WdsView.h</dt></span></span> </dl> |
+| <span data-ttu-id="5da3f-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5da3f-117">Minimum supported client</span></span><br/> | <span data-ttu-id="5da3f-118">\[Somente aplicativos de área de trabalho do Windows XP com SP2\]</span><span class="sxs-lookup"><span data-stu-id="5da3f-118">Windows XP with SP2 \[desktop apps only\]</span></span><br/>                                 |
+| <span data-ttu-id="5da3f-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5da3f-119">Minimum supported server</span></span><br/> | <span data-ttu-id="5da3f-120">\[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]</span><span class="sxs-lookup"><span data-stu-id="5da3f-120">Windows Server 2003 with SP1 \[desktop apps only\]</span></span><br/>                        |
+| <span data-ttu-id="5da3f-121">Redistribuível</span><span class="sxs-lookup"><span data-stu-id="5da3f-121">Redistributable</span></span><br/>          | <span data-ttu-id="5da3f-122">Windows Desktop Search (WDS) 2.6.5</span><span class="sxs-lookup"><span data-stu-id="5da3f-122">Windows Desktop Search (WDS) 2.6.5</span></span><br/>                                        |
+| <span data-ttu-id="5da3f-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="5da3f-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="5da3f-124"><dt>WdsView. h</dt></span><span class="sxs-lookup"><span data-stu-id="5da3f-124"><dt>WdsView.h</dt></span></span> </dl> |
 
 
 

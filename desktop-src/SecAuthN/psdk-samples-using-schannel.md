@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829748"
 ---
-# <a name="psdk-samples-using-schannel"></a><span data-ttu-id="a8add-103">Exemplos de PSDK usando Schannel</span><span class="sxs-lookup"><span data-stu-id="a8add-103">PSDK Samples Using Schannel</span></span>
+# <a name="psdk-samples-using-schannel"></a><span data-ttu-id="62c74-103">Exemplos de PSDK usando Schannel</span><span class="sxs-lookup"><span data-stu-id="62c74-103">PSDK Samples Using Schannel</span></span>
 
-<span data-ttu-id="a8add-104">O exemplo de SSL fornecido com o SDK (Software Development Kit) da plataforma contém um cliente Web de exemplo e um servidor Web que usam o [*pacote de segurança*](../secgloss/s-gly.md)Schannel.</span><span class="sxs-lookup"><span data-stu-id="a8add-104">The SSL sample shipped with the Platform Software Development Kit (SDK) contains a sample web client and web server that use the Schannel [*security package*](../secgloss/s-gly.md).</span></span>
+<span data-ttu-id="62c74-104">O exemplo de SSL fornecido com o SDK (Software Development Kit) da plataforma contém um cliente Web de exemplo e um servidor Web que usam o [*pacote de segurança*](../secgloss/s-gly.md)Schannel.</span><span class="sxs-lookup"><span data-stu-id="62c74-104">The SSL sample shipped with the Platform Software Development Kit (SDK) contains a sample web client and web server that use the Schannel [*security package*](../secgloss/s-gly.md).</span></span>
 
  
 

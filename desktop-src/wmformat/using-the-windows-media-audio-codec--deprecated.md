@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663923"
 ---
-# <a name="using-the-windows-media-audio-codec"></a><span data-ttu-id="fd8fb-105">Usando o codec de áudio do Windows Media</span><span class="sxs-lookup"><span data-stu-id="fd8fb-105">Using the Windows Media Audio Codec</span></span>
+# <a name="using-the-windows-media-audio-codec"></a><span data-ttu-id="c6bff-105">Usando o codec de áudio do Windows Media</span><span class="sxs-lookup"><span data-stu-id="c6bff-105">Using the Windows Media Audio Codec</span></span>
 
-<span data-ttu-id="fd8fb-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="fd8fb-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="c6bff-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="c6bff-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005702"
 ---
-# <a name="preventing-port-scanning"></a><span data-ttu-id="5bf5c-103">Impedindo a verificação de porta</span><span class="sxs-lookup"><span data-stu-id="5bf5c-103">Preventing Port Scanning</span></span>
+# <a name="preventing-port-scanning"></a><span data-ttu-id="73a7b-103">Impedindo a verificação de porta</span><span class="sxs-lookup"><span data-stu-id="73a7b-103">Preventing Port Scanning</span></span>
 
-<span data-ttu-id="5bf5c-104">O código de exemplo a seguir demonstra como impedir a verificação de porta usando Descartes e quedas silenciosas.</span><span class="sxs-lookup"><span data-stu-id="5bf5c-104">The following sample code demonstrates how to prevent port scanning using stealth discards and silent drops.</span></span>
+<span data-ttu-id="73a7b-104">O código de exemplo a seguir demonstra como impedir a verificação de porta usando Descartes e quedas silenciosas.</span><span class="sxs-lookup"><span data-stu-id="73a7b-104">The following sample code demonstrates how to prevent port scanning using stealth discards and silent drops.</span></span>
 
 
 ```C++
@@ -131,11 +131,11 @@ CLEANUP:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="5bf5c-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5bf5c-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="73a7b-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="73a7b-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5bf5c-106">**Condições de filtragem disponíveis em cada camada de filtragem**</span><span class="sxs-lookup"><span data-stu-id="5bf5c-106">**Filtering Conditions Available at Each Filtering Layer**</span></span>](filtering-conditions-available-at-each-filtering-layer.md)
+[<span data-ttu-id="73a7b-106">**Condições de filtragem disponíveis em cada camada de filtragem**</span><span class="sxs-lookup"><span data-stu-id="73a7b-106">**Filtering Conditions Available at Each Filtering Layer**</span></span>](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
  

@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "103916896"
 ---
-# <a name="ideliveryoptimizationjob-methods"></a><span data-ttu-id="cbe13-103">Métodos IDeliveryOptimizationJob</span><span class="sxs-lookup"><span data-stu-id="cbe13-103">IDeliveryOptimizationJob Methods</span></span>
+# <a name="ideliveryoptimizationjob-methods"></a><span data-ttu-id="cff61-103">Métodos IDeliveryOptimizationJob</span><span class="sxs-lookup"><span data-stu-id="cff61-103">IDeliveryOptimizationJob Methods</span></span>
 
-<span data-ttu-id="cbe13-104">A interface [**IDeliveryOptimizationJob**](ideliveryoptimizationjob.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="cbe13-104">The [**IDeliveryOptimizationJob**](ideliveryoptimizationjob.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="cff61-104">A interface [**IDeliveryOptimizationJob**](ideliveryoptimizationjob.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="cff61-104">The [**IDeliveryOptimizationJob**](ideliveryoptimizationjob.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="cbe13-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="cbe13-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="cff61-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="cff61-105">In this section</span></span>
 
 
 
-| <span data-ttu-id="cbe13-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="cbe13-106">Topic</span></span>                                                                                     | <span data-ttu-id="cbe13-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="cbe13-107">Description</span></span>                                                                                         |
+| <span data-ttu-id="cff61-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="cff61-106">Topic</span></span>                                                                                     | <span data-ttu-id="cff61-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="cff61-107">Description</span></span>                                                                                         |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="cbe13-108">**Método AddFileWithRanges**</span><span class="sxs-lookup"><span data-stu-id="cbe13-108">**AddFileWithRanges method**</span></span>](ideliveryoptimizationjob-addfilewithranges.md)<br/> | <span data-ttu-id="cbe13-109">Adiciona um arquivo a um trabalho de download e especifica os intervalos do arquivo que você deseja baixar.</span><span class="sxs-lookup"><span data-stu-id="cbe13-109">Adds a file to a download job and specifies the ranges of the file you want to download.</span></span><br/> |
+| [<span data-ttu-id="cff61-108">**Método AddFileWithRanges**</span><span class="sxs-lookup"><span data-stu-id="cff61-108">**AddFileWithRanges method**</span></span>](ideliveryoptimizationjob-addfilewithranges.md)<br/> | <span data-ttu-id="cff61-109">Adiciona um arquivo a um trabalho de download e especifica os intervalos do arquivo que você deseja baixar.</span><span class="sxs-lookup"><span data-stu-id="cff61-109">Adds a file to a download job and specifies the ranges of the file you want to download.</span></span><br/> |
 
 
 

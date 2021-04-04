@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829579"
 ---
-# <a name="stopping"></a><span data-ttu-id="ea1d5-103">Parando</span><span class="sxs-lookup"><span data-stu-id="ea1d5-103">Stopping</span></span>
+# <a name="stopping"></a><span data-ttu-id="61571-103">Parando</span><span class="sxs-lookup"><span data-stu-id="61571-103">Stopping</span></span>
 
-<span data-ttu-id="ea1d5-104">O método **Stop** deve desbloquear o método **Receive** e desconfirmar os alocadores do filtro.</span><span class="sxs-lookup"><span data-stu-id="ea1d5-104">The **Stop** method must unblock the **Receive** method and decommit the filter's allocators.</span></span> <span data-ttu-id="ea1d5-105">A desconfirmação de um alocador força todas as chamadas **GetBuffer** pendentes a serem retornadas, o que desbloqueia os filtros upstream que estão aguardando exemplos.</span><span class="sxs-lookup"><span data-stu-id="ea1d5-105">Decommitting an allocator forces any pending **GetBuffer** calls to return, which unblocks upstream filters that are waiting for samples.</span></span> <span data-ttu-id="ea1d5-106">O método **Stop** mantém o bloqueio de filtro e, em seguida, chama o método [**CBaseFilter:: Stop**](cbasefilter-stop.md) , que chama [**CBasePin:: Inactive**](cbasepin-inactive.md) em todos os Pins do filtro:</span><span class="sxs-lookup"><span data-stu-id="ea1d5-106">The **Stop** method holds the filter lock and then calls the [**CBaseFilter::Stop**](cbasefilter-stop.md) method, which calls [**CBasePin::Inactive**](cbasepin-inactive.md) on all of the filter's pins:</span></span>
+<span data-ttu-id="61571-104">O método **Stop** deve desbloquear o método **Receive** e desconfirmar os alocadores do filtro.</span><span class="sxs-lookup"><span data-stu-id="61571-104">The **Stop** method must unblock the **Receive** method and decommit the filter's allocators.</span></span> <span data-ttu-id="61571-105">A desconfirmação de um alocador força todas as chamadas **GetBuffer** pendentes a serem retornadas, o que desbloqueia os filtros upstream que estão aguardando exemplos.</span><span class="sxs-lookup"><span data-stu-id="61571-105">Decommitting an allocator forces any pending **GetBuffer** calls to return, which unblocks upstream filters that are waiting for samples.</span></span> <span data-ttu-id="61571-106">O método **Stop** mantém o bloqueio de filtro e, em seguida, chama o método [**CBaseFilter:: Stop**](cbasefilter-stop.md) , que chama [**CBasePin:: Inactive**](cbasepin-inactive.md) em todos os Pins do filtro:</span><span class="sxs-lookup"><span data-stu-id="61571-106">The **Stop** method holds the filter lock and then calls the [**CBaseFilter::Stop**](cbasefilter-stop.md) method, which calls [**CBasePin::Inactive**](cbasepin-inactive.md) on all of the filter's pins:</span></span>
 
 
 ```C++
@@ -31,7 +31,7 @@ HRESULT CMyFilter::Stop()
 
 
 
-<span data-ttu-id="ea1d5-107">Substitua o método **inativo** do pino de entrada da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="ea1d5-107">Override the input pin's **Inactive** method as follows:</span></span>
+<span data-ttu-id="61571-107">Substitua o método **inativo** do pino de entrada da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="61571-107">Override the input pin's **Inactive** method as follows:</span></span>
 
 
 ```C++

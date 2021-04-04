@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647144"
 ---
-# <a name="broadband-lower-layer-information"></a><span data-ttu-id="cb559-103">Informações da camada inferior de banda larga</span><span class="sxs-lookup"><span data-stu-id="cb559-103">Broadband Lower Layer Information</span></span>
+# <a name="broadband-lower-layer-information"></a><span data-ttu-id="b85d9-103">Informações da camada inferior de banda larga</span><span class="sxs-lookup"><span data-stu-id="b85d9-103">Broadband Lower Layer Information</span></span>
 
-<span data-ttu-id="cb559-104">Esta seção lista a definição de tipo para as informações de camada inferior de banda larga.</span><span class="sxs-lookup"><span data-stu-id="cb559-104">This section lists the type definition for the broadband lower-layer information.</span></span>
+<span data-ttu-id="b85d9-104">Esta seção lista a definição de tipo para as informações de camada inferior de banda larga.</span><span class="sxs-lookup"><span data-stu-id="b85d9-104">This section lists the type definition for the broadband lower-layer information.</span></span>
 
 ``` syntax
 #include <windows.h>

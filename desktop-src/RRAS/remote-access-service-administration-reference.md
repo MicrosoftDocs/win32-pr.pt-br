@@ -14,13 +14,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822545"
 ---
-# <a name="remote-access-service-administration-reference"></a><span data-ttu-id="c74ff-105">Referência de administração do serviço de acesso remoto</span><span class="sxs-lookup"><span data-stu-id="c74ff-105">Remote Access Service Administration Reference</span></span>
+# <a name="remote-access-service-administration-reference"></a><span data-ttu-id="7c0d3-105">Referência de administração do serviço de acesso remoto</span><span class="sxs-lookup"><span data-stu-id="7c0d3-105">Remote Access Service Administration Reference</span></span>
 
-<span data-ttu-id="c74ff-106">Use as seguintes funções, estruturas e tipos enumerados ao desenvolver aplicativos de administração para o serviço de acesso remoto.</span><span class="sxs-lookup"><span data-stu-id="c74ff-106">Use the following functions, structures, and enumerated types when developing administration applications for the Remote Access Service.</span></span>
+<span data-ttu-id="7c0d3-106">Use as seguintes funções, estruturas e tipos enumerados ao desenvolver aplicativos de administração para o serviço de acesso remoto.</span><span class="sxs-lookup"><span data-stu-id="7c0d3-106">Use the following functions, structures, and enumerated types when developing administration applications for the Remote Access Service.</span></span>
 
--   [<span data-ttu-id="c74ff-107">Funções de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="c74ff-107">RAS Administration Functions</span></span>](ras-administration-functions.md)
--   [<span data-ttu-id="c74ff-108">Estruturas de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="c74ff-108">RAS Administration Structures</span></span>](ras-administration-structures.md)
--   [<span data-ttu-id="c74ff-109">Enumerações de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="c74ff-109">RAS Administration Enumerations</span></span>](ras-administration-enumerations.md)
+-   [<span data-ttu-id="7c0d3-107">Funções de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="7c0d3-107">RAS Administration Functions</span></span>](ras-administration-functions.md)
+-   [<span data-ttu-id="7c0d3-108">Estruturas de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="7c0d3-108">RAS Administration Structures</span></span>](ras-administration-structures.md)
+-   [<span data-ttu-id="7c0d3-109">Enumerações de administração de RAS</span><span class="sxs-lookup"><span data-stu-id="7c0d3-109">RAS Administration Enumerations</span></span>](ras-administration-enumerations.md)
 
  
 

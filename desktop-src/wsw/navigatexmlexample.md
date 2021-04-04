@@ -15,11 +15,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916572"
 ---
-# <a name="navigatexmlexample"></a><span data-ttu-id="e1df8-106">NavigateXmlExample</span><span class="sxs-lookup"><span data-stu-id="e1df8-106">NavigateXmlExample</span></span>
+# <a name="navigatexmlexample"></a><span data-ttu-id="a9eec-106">NavigateXmlExample</span><span class="sxs-lookup"><span data-stu-id="a9eec-106">NavigateXmlExample</span></span>
 
-<span data-ttu-id="e1df8-107">Este exemplo grava XML em um buffer XML e, em seguida, lê-o de volta.</span><span class="sxs-lookup"><span data-stu-id="e1df8-107">This example writes XML to an XML buffer, and then reads it back out.</span></span>
+<span data-ttu-id="a9eec-107">Este exemplo grava XML em um buffer XML e, em seguida, lê-o de volta.</span><span class="sxs-lookup"><span data-stu-id="a9eec-107">This example writes XML to an XML buffer, and then reads it back out.</span></span>
 
-## <a name="navigatexmlcpp"></a><span data-ttu-id="e1df8-108">NavigateXml. cpp</span><span class="sxs-lookup"><span data-stu-id="e1df8-108">NavigateXml.cpp</span></span>
+## <a name="navigatexmlcpp"></a><span data-ttu-id="a9eec-108">NavigateXml. cpp</span><span class="sxs-lookup"><span data-stu-id="a9eec-108">NavigateXml.cpp</span></span>
 
 
 ```C++

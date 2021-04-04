@@ -14,13 +14,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822200"
 ---
-# <a name="non-automation-interfaces"></a><span data-ttu-id="1a6e4-104">Interfaces que não são de automação</span><span class="sxs-lookup"><span data-stu-id="1a6e4-104">Non-Automation Interfaces</span></span>
+# <a name="non-automation-interfaces"></a><span data-ttu-id="d22c4-104">Interfaces que não são de automação</span><span class="sxs-lookup"><span data-stu-id="d22c4-104">Non-Automation Interfaces</span></span>
 
-<span data-ttu-id="1a6e4-105">Esta seção descreve as seguintes interfaces ADSI que não são de automação:</span><span class="sxs-lookup"><span data-stu-id="1a6e4-105">This section describes the following non-Automation ADSI interfaces:</span></span>
+<span data-ttu-id="d22c4-105">Esta seção descreve as seguintes interfaces ADSI que não são de automação:</span><span class="sxs-lookup"><span data-stu-id="d22c4-105">This section describes the following non-Automation ADSI interfaces:</span></span>
 
--   [<span data-ttu-id="1a6e4-106">**IDirectoryObject**</span><span class="sxs-lookup"><span data-stu-id="1a6e4-106">**IDirectoryObject**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectoryobject)
--   [<span data-ttu-id="1a6e4-107">**IDirectorySchemaMgmt**</span><span class="sxs-lookup"><span data-stu-id="1a6e4-107">**IDirectorySchemaMgmt**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectoryschemamgmt)
--   [<span data-ttu-id="1a6e4-108">**IDirectorySearch**</span><span class="sxs-lookup"><span data-stu-id="1a6e4-108">**IDirectorySearch**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
+-   [<span data-ttu-id="d22c4-106">**IDirectoryObject**</span><span class="sxs-lookup"><span data-stu-id="d22c4-106">**IDirectoryObject**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectoryobject)
+-   [<span data-ttu-id="d22c4-107">**IDirectorySchemaMgmt**</span><span class="sxs-lookup"><span data-stu-id="d22c4-107">**IDirectorySchemaMgmt**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectoryschemamgmt)
+-   [<span data-ttu-id="d22c4-108">**IDirectorySearch**</span><span class="sxs-lookup"><span data-stu-id="d22c4-108">**IDirectorySearch**</span></span>](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
  
 

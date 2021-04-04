@@ -13,16 +13,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005704"
 ---
-# <a name="dns-reference"></a><span data-ttu-id="258ff-104">Referência de DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-104">DNS Reference</span></span>
+# <a name="dns-reference"></a><span data-ttu-id="c6ce7-104">Referência de DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-104">DNS Reference</span></span>
 
-<span data-ttu-id="258ff-105">Esta seção define os elementos programáticos na API do sistema de nomes de domínio.</span><span class="sxs-lookup"><span data-stu-id="258ff-105">This section defines the programmatic elements in the Domain Name System API.</span></span> <span data-ttu-id="258ff-106">A referência DNS consiste em:</span><span class="sxs-lookup"><span data-stu-id="258ff-106">The DNS Reference consists of:</span></span>
+<span data-ttu-id="c6ce7-105">Esta seção define os elementos programáticos na API do sistema de nomes de domínio.</span><span class="sxs-lookup"><span data-stu-id="c6ce7-105">This section defines the programmatic elements in the Domain Name System API.</span></span> <span data-ttu-id="c6ce7-106">A referência DNS consiste em:</span><span class="sxs-lookup"><span data-stu-id="c6ce7-106">The DNS Reference consists of:</span></span>
 
--   [<span data-ttu-id="258ff-107">Retornos de chamada DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-107">DNS Callbacks</span></span>](dns-callbacks.md)
--   [<span data-ttu-id="258ff-108">Constantes de DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-108">DNS Constants</span></span>](dns-constants.md)
--   [<span data-ttu-id="258ff-109">Tipos de dados DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-109">DNS Data Types</span></span>](dns-data-types.md)
--   [<span data-ttu-id="258ff-110">Enumerações de DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-110">DNS Enumerations</span></span>](dns-enumerations.md)
--   [<span data-ttu-id="258ff-111">Funções de DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-111">DNS Functions</span></span>](dns-functions.md)
--   [<span data-ttu-id="258ff-112">Estruturas de DNS</span><span class="sxs-lookup"><span data-stu-id="258ff-112">DNS Structures</span></span>](dns-structures.md)
+-   [<span data-ttu-id="c6ce7-107">Retornos de chamada DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-107">DNS Callbacks</span></span>](dns-callbacks.md)
+-   [<span data-ttu-id="c6ce7-108">Constantes de DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-108">DNS Constants</span></span>](dns-constants.md)
+-   [<span data-ttu-id="c6ce7-109">Tipos de dados DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-109">DNS Data Types</span></span>](dns-data-types.md)
+-   [<span data-ttu-id="c6ce7-110">Enumerações de DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-110">DNS Enumerations</span></span>](dns-enumerations.md)
+-   [<span data-ttu-id="c6ce7-111">Funções de DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-111">DNS Functions</span></span>](dns-functions.md)
+-   [<span data-ttu-id="c6ce7-112">Estruturas de DNS</span><span class="sxs-lookup"><span data-stu-id="c6ce7-112">DNS Structures</span></span>](dns-structures.md)
 
  
 

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103917226"
 ---
-# <a name="playing-a-midi-file"></a><span data-ttu-id="00ec6-103">Executando um arquivo MIDI</span><span class="sxs-lookup"><span data-stu-id="00ec6-103">Playing a MIDI File</span></span>
+# <a name="playing-a-midi-file"></a><span data-ttu-id="d6b74-103">Executando um arquivo MIDI</span><span class="sxs-lookup"><span data-stu-id="d6b74-103">Playing a MIDI File</span></span>
 
-<span data-ttu-id="00ec6-104">O exemplo a seguir abre um dispositivo de sequenciador MIDI, verifica se o Mapeador MIDI foi selecionado como a porta de saída, reproduz o arquivo MIDI especificado pelo parâmetro *lpszMIDIFileName* e fecha o dispositivo após a reprodução ser concluída.</span><span class="sxs-lookup"><span data-stu-id="00ec6-104">The following example opens a MIDI sequencer device, verifies that the MIDI mapper was selected as the output port, plays the MIDI file specified by the *lpszMIDIFileName* parameter, and closes the device after playback is complete.</span></span> <span data-ttu-id="00ec6-105">Ele usa a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="00ec6-105">It uses the [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) function.</span></span>
+<span data-ttu-id="d6b74-104">O exemplo a seguir abre um dispositivo de sequenciador MIDI, verifica se o Mapeador MIDI foi selecionado como a porta de saída, reproduz o arquivo MIDI especificado pelo parâmetro *lpszMIDIFileName* e fecha o dispositivo após a reprodução ser concluída.</span><span class="sxs-lookup"><span data-stu-id="d6b74-104">The following example opens a MIDI sequencer device, verifies that the MIDI mapper was selected as the output port, plays the MIDI file specified by the *lpszMIDIFileName* parameter, and closes the device after playback is complete.</span></span> <span data-ttu-id="d6b74-105">Ele usa a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="d6b74-105">It uses the [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) function.</span></span>
 
 
 ```C++

@@ -31,22 +31,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663414"
 ---
-# <a name="esentslvpagesnotdeletedexception-class"></a><span data-ttu-id="bcbd9-103">Classe EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-103">EsentSLVPagesNotDeletedException class</span></span>
+# <a name="esentslvpagesnotdeletedexception-class"></a><span data-ttu-id="0b22d-103">Classe EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="0b22d-103">EsentSLVPagesNotDeletedException class</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="bcbd9-104">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="bcbd9-104">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="0b22d-104">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="0b22d-104">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="bcbd9-105">System.Object</span><span class="sxs-lookup"><span data-stu-id="bcbd9-105">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="bcbd9-106">System. Exception</span><span class="sxs-lookup"><span data-stu-id="bcbd9-106">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="bcbd9-107">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-107">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="bcbd9-108">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-108">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="bcbd9-109">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-109">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="bcbd9-110">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-110">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
-            <span data-ttu-id="bcbd9-111">Microsoft. ISAM. ESENT. Interop. EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-111">Microsoft.Isam.Esent.Interop.EsentSLVPagesNotDeletedException</span></span>  
+[<span data-ttu-id="0b22d-105">System.Object</span><span class="sxs-lookup"><span data-stu-id="0b22d-105">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="0b22d-106">System. Exception</span><span class="sxs-lookup"><span data-stu-id="0b22d-106">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="0b22d-107">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="0b22d-107">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="0b22d-108">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="0b22d-108">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="0b22d-109">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="0b22d-109">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="0b22d-110">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="0b22d-110">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
+            <span data-ttu-id="0b22d-111">Microsoft. ISAM. ESENT. Interop. EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="0b22d-111">Microsoft.Isam.Esent.Interop.EsentSLVPagesNotDeletedException</span></span>  
 
-<span data-ttu-id="bcbd9-112">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bcbd9-112">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="bcbd9-113">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bcbd9-113">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="0b22d-112">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0b22d-112">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="0b22d-113">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0b22d-113">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bcbd9-114">Syntax</span><span class="sxs-lookup"><span data-stu-id="bcbd9-114">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0b22d-114">Syntax</span><span class="sxs-lookup"><span data-stu-id="0b22d-114">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ Dim instance As EsentSLVPagesNotDeletedException
 public sealed class EsentSLVPagesNotDeletedException : EsentObsoleteException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="bcbd9-115">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="bcbd9-115">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="0b22d-115">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="0b22d-115">Thread safety</span></span>
 
-<span data-ttu-id="bcbd9-116">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bcbd9-116">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="bcbd9-117">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bcbd9-117">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="0b22d-116">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="0b22d-116">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="0b22d-117">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="0b22d-117">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="bcbd9-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="bcbd9-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0b22d-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="0b22d-118">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="bcbd9-119">Referência</span><span class="sxs-lookup"><span data-stu-id="bcbd9-119">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="0b22d-119">Referência</span><span class="sxs-lookup"><span data-stu-id="0b22d-119">Reference</span></span>
 
-[<span data-ttu-id="bcbd9-120">Membros do EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="bcbd9-120">EsentSLVPagesNotDeletedException members</span></span>](./esentslvpagesnotdeletedexception-members.md)
+[<span data-ttu-id="0b22d-120">Membros do EsentSLVPagesNotDeletedException</span><span class="sxs-lookup"><span data-stu-id="0b22d-120">EsentSLVPagesNotDeletedException members</span></span>](./esentslvpagesnotdeletedexception-members.md)
 
-[<span data-ttu-id="bcbd9-121">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bcbd9-121">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="0b22d-121">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="0b22d-121">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
