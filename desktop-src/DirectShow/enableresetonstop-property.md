@@ -11,35 +11,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103645936"
 ---
-# <a name="enableresetonstop-property"></a><span data-ttu-id="01770-103">Propriedade EnableResetOnStop</span><span class="sxs-lookup"><span data-stu-id="01770-103">EnableResetOnStop Property</span></span>
+# <a name="enableresetonstop-property"></a><span data-ttu-id="73344-103">Propriedade EnableResetOnStop</span><span class="sxs-lookup"><span data-stu-id="73344-103">EnableResetOnStop Property</span></span>
 
 > [!Note]  
-> <span data-ttu-id="01770-104">Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="01770-104">This component is available for use in the Microsoft Windows 2000, Windows XP, and Windows Server 2003 operating systems.</span></span> <span data-ttu-id="01770-105">Ele poderá ser alterado ou ficar indisponível em versões subsequentes.</span><span class="sxs-lookup"><span data-stu-id="01770-105">It may be altered or unavailable in subsequent versions.</span></span>
+> <span data-ttu-id="73344-104">Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="73344-104">This component is available for use in the Microsoft Windows 2000, Windows XP, and Windows Server 2003 operating systems.</span></span> <span data-ttu-id="73344-105">Ele poderá ser alterado ou ficar indisponível em versões subsequentes.</span><span class="sxs-lookup"><span data-stu-id="73344-105">It may be altered or unavailable in subsequent versions.</span></span>
 
  
 
-<span data-ttu-id="01770-106">A `EnableResetOnStop` propriedade define ou recupera um valor que determina como a reprodução será retomada quando o grafo de filtro fizer uma transição de um estado parado.</span><span class="sxs-lookup"><span data-stu-id="01770-106">The `EnableResetOnStop` property sets or retrieves a value that determines how play will resume when the filter graph makes a transition from a stopped state.</span></span>
+<span data-ttu-id="73344-106">A `EnableResetOnStop` propriedade define ou recupera um valor que determina como a reprodução será retomada quando o grafo de filtro fizer uma transição de um estado parado.</span><span class="sxs-lookup"><span data-stu-id="73344-106">The `EnableResetOnStop` property sets or retrieves a value that determines how play will resume when the filter graph makes a transition from a stopped state.</span></span>
 
 ``` syntax
 [ bEnableReset = ] MSWebDVD.EnableResetOnStop
 ```
 
-## <a name="return-value"></a><span data-ttu-id="01770-107">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="01770-107">Return Value</span></span>
+## <a name="return-value"></a><span data-ttu-id="73344-107">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="73344-107">Return Value</span></span>
 
-<span data-ttu-id="01770-108">Retorna um valor booliano que indica onde o objeto MSWebDVD começará a ser reproduzido depois que o grafo de filtro for interrompido.</span><span class="sxs-lookup"><span data-stu-id="01770-108">Returns a Boolean value indicating where the MSWebDVD object will start playing again after the filter graph is stopped.</span></span>
+<span data-ttu-id="73344-108">Retorna um valor booliano que indica onde o objeto MSWebDVD começará a ser reproduzido depois que o grafo de filtro for interrompido.</span><span class="sxs-lookup"><span data-stu-id="73344-108">Returns a Boolean value indicating where the MSWebDVD object will start playing again after the filter graph is stopped.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="01770-109">Comentários</span><span class="sxs-lookup"><span data-stu-id="01770-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="73344-109">Comentários</span><span class="sxs-lookup"><span data-stu-id="73344-109">Remarks</span></span>
 
-<span data-ttu-id="01770-110">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="01770-110">This property is read/write.</span></span>
+<span data-ttu-id="73344-110">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="73344-110">This property is read/write.</span></span>
 
-<span data-ttu-id="01770-111">Os valores possíveis dessa propriedade são: com um valor padrão de true.</span><span class="sxs-lookup"><span data-stu-id="01770-111">The possible values of this property are: with a default value of true.</span></span>
+<span data-ttu-id="73344-111">Os valores possíveis dessa propriedade são: com um valor padrão de true.</span><span class="sxs-lookup"><span data-stu-id="73344-111">The possible values of this property are: with a default value of true.</span></span>
 
 
 
-| <span data-ttu-id="01770-112">Valor</span><span class="sxs-lookup"><span data-stu-id="01770-112">Value</span></span> | <span data-ttu-id="01770-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="01770-113">Description</span></span>                                                                                       |
+| <span data-ttu-id="73344-112">Valor</span><span class="sxs-lookup"><span data-stu-id="73344-112">Value</span></span> | <span data-ttu-id="73344-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="73344-113">Description</span></span>                                                                                       |
 |-------|---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="01770-114">true</span><span class="sxs-lookup"><span data-stu-id="01770-114">true</span></span>  | <span data-ttu-id="01770-115">O navegador de DVD será reiniciado e começará a tocar desde o início do disco. Esse é o valor padrão</span><span class="sxs-lookup"><span data-stu-id="01770-115">DVD Navigator will reset and start play from the beginning of the disc. This is the default value</span></span> |
-| <span data-ttu-id="01770-116">false</span><span class="sxs-lookup"><span data-stu-id="01770-116">false</span></span> | <span data-ttu-id="01770-117">O navegador de DVD retomará a reprodução de onde parou.</span><span class="sxs-lookup"><span data-stu-id="01770-117">DVD Navigator will resume play where it left off.</span></span>                                                 |
+| <span data-ttu-id="73344-114">true</span><span class="sxs-lookup"><span data-stu-id="73344-114">true</span></span>  | <span data-ttu-id="73344-115">O navegador de DVD será reiniciado e começará a tocar desde o início do disco. Esse é o valor padrão</span><span class="sxs-lookup"><span data-stu-id="73344-115">DVD Navigator will reset and start play from the beginning of the disc. This is the default value</span></span> |
+| <span data-ttu-id="73344-116">false</span><span class="sxs-lookup"><span data-stu-id="73344-116">false</span></span> | <span data-ttu-id="73344-117">O navegador de DVD retomará a reprodução de onde parou.</span><span class="sxs-lookup"><span data-stu-id="73344-117">DVD Navigator will resume play where it left off.</span></span>                                                 |
 
 
 

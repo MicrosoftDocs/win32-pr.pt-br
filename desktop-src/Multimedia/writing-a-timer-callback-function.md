@@ -17,14 +17,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103917212"
 ---
-# <a name="writing-a-timer-callback-function"></a><span data-ttu-id="a2421-108">Escrevendo uma função de retorno de chamada do temporizador</span><span class="sxs-lookup"><span data-stu-id="a2421-108">Writing a Timer Callback Function</span></span>
+# <a name="writing-a-timer-callback-function"></a><span data-ttu-id="93874-108">Escrevendo uma função de retorno de chamada do temporizador</span><span class="sxs-lookup"><span data-stu-id="93874-108">Writing a Timer Callback Function</span></span>
 
 > [!Note]  
-> <span data-ttu-id="a2421-109">Este tópico descreve uma função obsoleta.</span><span class="sxs-lookup"><span data-stu-id="a2421-109">This topic describes an obsolete function.</span></span> <span data-ttu-id="a2421-110">Os novos aplicativos devem usar a função [**CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) para criar temporizadores.</span><span class="sxs-lookup"><span data-stu-id="a2421-110">New applications should use the [**CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) function to create timers.</span></span>
+> <span data-ttu-id="93874-109">Este tópico descreve uma função obsoleta.</span><span class="sxs-lookup"><span data-stu-id="93874-109">This topic describes an obsolete function.</span></span> <span data-ttu-id="93874-110">Os novos aplicativos devem usar a função [**CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) para criar temporizadores.</span><span class="sxs-lookup"><span data-stu-id="93874-110">New applications should use the [**CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) function to create timers.</span></span>
 
  
 
-<span data-ttu-id="a2421-111">A seguinte função de retorno de chamada, OneShotTimer, invalida o identificador para o evento de temporizador único e chama uma rotina de temporizador para manipular as tarefas específicas do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a2421-111">The following callback function, OneShotTimer, invalidates the identifier for the single timer event and calls a timer routine to handle the application-specific tasks.</span></span> <span data-ttu-id="a2421-112">Para obter mais informações, consulte [**timeproc**](/previous-versions//dd757631(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="a2421-112">For more information, see [**TimeProc**](/previous-versions//dd757631(v=vs.85)).</span></span>
+<span data-ttu-id="93874-111">A seguinte função de retorno de chamada, OneShotTimer, invalida o identificador para o evento de temporizador único e chama uma rotina de temporizador para manipular as tarefas específicas do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="93874-111">The following callback function, OneShotTimer, invalidates the identifier for the single timer event and calls a timer routine to handle the application-specific tasks.</span></span> <span data-ttu-id="93874-112">Para obter mais informações, consulte [**timeproc**](/previous-versions//dd757631(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="93874-112">For more information, see [**TimeProc**](/previous-versions//dd757631(v=vs.85)).</span></span>
 
 
 ```C++
@@ -40,11 +40,11 @@ void CALLBACK OneShotTimer(UINT wTimerID, UINT msg,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="a2421-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a2421-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="93874-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="93874-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a2421-114">Usando temporizadores de multimídia</span><span class="sxs-lookup"><span data-stu-id="a2421-114">Using Multimedia Timers</span></span>](using-multimedia-timers.md)
+[<span data-ttu-id="93874-114">Usando temporizadores de multimídia</span><span class="sxs-lookup"><span data-stu-id="93874-114">Using Multimedia Timers</span></span>](using-multimedia-timers.md)
 </dt> </dl>
 
  

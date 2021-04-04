@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663262"
 ---
-# <a name="jet_columnbaseszbasetablename-property"></a><span data-ttu-id="306e0-103">Propriedade JET_COLUMNBASE. szBaseTableName</span><span class="sxs-lookup"><span data-stu-id="306e0-103">JET_COLUMNBASE.szBaseTableName property</span></span>
+# <a name="jet_columnbaseszbasetablename-property"></a><span data-ttu-id="3254c-103">Propriedade JET_COLUMNBASE. szBaseTableName</span><span class="sxs-lookup"><span data-stu-id="3254c-103">JET_COLUMNBASE.szBaseTableName property</span></span>
 
-<span data-ttu-id="306e0-104">Obtém a tabela da qual a tabela atual herda seu DDL.</span><span class="sxs-lookup"><span data-stu-id="306e0-104">Gets the table from which the current table inherits its DDL.</span></span>
+<span data-ttu-id="3254c-104">Obtém a tabela da qual a tabela atual herda seu DDL.</span><span class="sxs-lookup"><span data-stu-id="3254c-104">Gets the table from which the current table inherits its DDL.</span></span>
 
-<span data-ttu-id="306e0-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="306e0-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="306e0-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="306e0-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="3254c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="3254c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="3254c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="3254c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="306e0-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="306e0-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3254c-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="3254c-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.szBaseTableName
 public string szBaseTableName { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="306e0-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="306e0-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="3254c-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="3254c-108">Property value</span></span>
 
-<span data-ttu-id="306e0-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="306e0-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="3254c-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="3254c-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="306e0-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="306e0-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3254c-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="3254c-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="306e0-111">Referência</span><span class="sxs-lookup"><span data-stu-id="306e0-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="3254c-111">Referência</span><span class="sxs-lookup"><span data-stu-id="3254c-111">Reference</span></span>
 
-[<span data-ttu-id="306e0-112">Classe JET_COLUMNBASE</span><span class="sxs-lookup"><span data-stu-id="306e0-112">JET_COLUMNBASE class</span></span>](./jet-columnbase-class.md)
+[<span data-ttu-id="3254c-112">Classe JET_COLUMNBASE</span><span class="sxs-lookup"><span data-stu-id="3254c-112">JET_COLUMNBASE class</span></span>](./jet-columnbase-class.md)
 
-[<span data-ttu-id="306e0-113">Membros do JET_COLUMNBASE</span><span class="sxs-lookup"><span data-stu-id="306e0-113">JET_COLUMNBASE members</span></span>](./jet-columnbase-members.md)
+[<span data-ttu-id="3254c-113">Membros do JET_COLUMNBASE</span><span class="sxs-lookup"><span data-stu-id="3254c-113">JET_COLUMNBASE members</span></span>](./jet-columnbase-members.md)
 
-[<span data-ttu-id="306e0-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="306e0-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="3254c-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3254c-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

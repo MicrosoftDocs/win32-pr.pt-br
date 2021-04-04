@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644681"
 ---
-# <a name="installlayoutortipuserreg-function"></a><span data-ttu-id="1b85a-104">Função InstallLayoutOrTipUserReg</span><span class="sxs-lookup"><span data-stu-id="1b85a-104">InstallLayoutOrTipUserReg function</span></span>
+# <a name="installlayoutortipuserreg-function"></a><span data-ttu-id="491ce-104">Função InstallLayoutOrTipUserReg</span><span class="sxs-lookup"><span data-stu-id="491ce-104">InstallLayoutOrTipUserReg function</span></span>
 
-<span data-ttu-id="1b85a-105">Habilita os layouts de teclado ou os serviços de texto especificados para o usuário especificado.</span><span class="sxs-lookup"><span data-stu-id="1b85a-105">Enables the specified keyboard layouts or text services for the specified user.</span></span>
+<span data-ttu-id="491ce-105">Habilita os layouts de teclado ou os serviços de texto especificados para o usuário especificado.</span><span class="sxs-lookup"><span data-stu-id="491ce-105">Enables the specified keyboard layouts or text services for the specified user.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1b85a-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1b85a-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="491ce-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="491ce-106">Syntax</span></span>
 
 
 ```C++
@@ -40,57 +40,57 @@ BOOL CALLBACK InstallLayoutOrTipUserReg(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="1b85a-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="1b85a-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="491ce-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="491ce-107">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="1b85a-108">*pszUserReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-108">*pszUserReg* \[in, optional\]</span></span>
+<span data-ttu-id="491ce-108">*pszUserReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="491ce-108">*pszUserReg* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b85a-109">O caminho do registro do usuário.</span><span class="sxs-lookup"><span data-stu-id="1b85a-109">The registry path of the user.</span></span> <span data-ttu-id="1b85a-110">Se esse parâmetro for **NULL**, hKey \_ Current \_ User será usado.</span><span class="sxs-lookup"><span data-stu-id="1b85a-110">If this parameter is **NULL**, HKEY\_CURRENT\_USER is used.</span></span>
+<span data-ttu-id="491ce-109">O caminho do registro do usuário.</span><span class="sxs-lookup"><span data-stu-id="491ce-109">The registry path of the user.</span></span> <span data-ttu-id="491ce-110">Se esse parâmetro for **NULL**, hKey \_ Current \_ User será usado.</span><span class="sxs-lookup"><span data-stu-id="491ce-110">If this parameter is **NULL**, HKEY\_CURRENT\_USER is used.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b85a-111">*pszSystemReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-111">*pszSystemReg* \[in, optional\]</span></span>
+<span data-ttu-id="491ce-111">*pszSystemReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="491ce-111">*pszSystemReg* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b85a-112">O caminho do registro do sistema.</span><span class="sxs-lookup"><span data-stu-id="1b85a-112">The registry path of the system.</span></span> <span data-ttu-id="1b85a-113">Se esse parâmetro for **NULL**, hKey \_ local \_ Machine \\ System será usado.</span><span class="sxs-lookup"><span data-stu-id="1b85a-113">If this parameter is **NULL**, HKEY\_LOCAL\_MACHINE\\System is used.</span></span>
+<span data-ttu-id="491ce-112">O caminho do registro do sistema.</span><span class="sxs-lookup"><span data-stu-id="491ce-112">The registry path of the system.</span></span> <span data-ttu-id="491ce-113">Se esse parâmetro for **NULL**, hKey \_ local \_ Machine \\ System será usado.</span><span class="sxs-lookup"><span data-stu-id="491ce-113">If this parameter is **NULL**, HKEY\_LOCAL\_MACHINE\\System is used.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b85a-114">*pszSoftwareReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-114">*pszSoftwareReg* \[in, optional\]</span></span>
+<span data-ttu-id="491ce-114">*pszSoftwareReg* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="491ce-114">*pszSoftwareReg* \[in, optional\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b85a-115">O caminho do registro do software.</span><span class="sxs-lookup"><span data-stu-id="1b85a-115">The registry path of the software.</span></span> <span data-ttu-id="1b85a-116">Se esse parâmetro for **NULL**, hKey \_ local \_ Machine \\ software será usado.</span><span class="sxs-lookup"><span data-stu-id="1b85a-116">If this parameter is **NULL**, HKEY\_LOCAL\_MACHINE\\Software is used.</span></span>
+<span data-ttu-id="491ce-115">O caminho do registro do software.</span><span class="sxs-lookup"><span data-stu-id="491ce-115">The registry path of the software.</span></span> <span data-ttu-id="491ce-116">Se esse parâmetro for **NULL**, hKey \_ local \_ Machine \\ software será usado.</span><span class="sxs-lookup"><span data-stu-id="491ce-116">If this parameter is **NULL**, HKEY\_LOCAL\_MACHINE\\Software is used.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b85a-117">*psz* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-117">*psz* \[in\]</span></span>
+<span data-ttu-id="491ce-117">*psz* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="491ce-117">*psz* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b85a-118">Uma cadeia de caracteres que representa a lista de layout do teclado ou a lista de perfis de serviços de texto.</span><span class="sxs-lookup"><span data-stu-id="1b85a-118">A string that represents the keyboard layout list or text services profile list.</span></span>
+<span data-ttu-id="491ce-118">Uma cadeia de caracteres que representa a lista de layout do teclado ou a lista de perfis de serviços de texto.</span><span class="sxs-lookup"><span data-stu-id="491ce-118">A string that represents the keyboard layout list or text services profile list.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="1b85a-119">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-119">*dwFlags* \[in\]</span></span>
+<span data-ttu-id="491ce-119">*dwFlags* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="491ce-119">*dwFlags* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="1b85a-120">Um campo de bits que especifica os sinalizadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="1b85a-120">A bitfield that specifies the following flags.</span></span>
+<span data-ttu-id="491ce-120">Um campo de bits que especifica os sinalizadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="491ce-120">A bitfield that specifies the following flags.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="1b85a-121">Os identificadores a seguir não estão definidos em um arquivo de cabeçalho público.</span><span class="sxs-lookup"><span data-stu-id="1b85a-121">The following identifiers are not defined in a public header file.</span></span> <span data-ttu-id="1b85a-122">Você deve usar o valor hexadecimal ou \# definir os identificadores.</span><span class="sxs-lookup"><span data-stu-id="1b85a-122">You must either use the hexadecimal value or \#define the identifiers.</span></span> <span data-ttu-id="1b85a-123">Por exemplo, para usar **a \_ desinstalação do ILOT** , você deve incluir `#define ILOT_UNINSTALL 0x00000001` em seu código.</span><span class="sxs-lookup"><span data-stu-id="1b85a-123">For example, to use **ILOT\_UNINSTALL** you must include `#define ILOT_UNINSTALL 0x00000001` in your code.</span></span>
+> <span data-ttu-id="491ce-121">Os identificadores a seguir não estão definidos em um arquivo de cabeçalho público.</span><span class="sxs-lookup"><span data-stu-id="491ce-121">The following identifiers are not defined in a public header file.</span></span> <span data-ttu-id="491ce-122">Você deve usar o valor hexadecimal ou \# definir os identificadores.</span><span class="sxs-lookup"><span data-stu-id="491ce-122">You must either use the hexadecimal value or \#define the identifiers.</span></span> <span data-ttu-id="491ce-123">Por exemplo, para usar **a \_ desinstalação do ILOT** , você deve incluir `#define ILOT_UNINSTALL 0x00000001` em seu código.</span><span class="sxs-lookup"><span data-stu-id="491ce-123">For example, to use **ILOT\_UNINSTALL** you must include `#define ILOT_UNINSTALL 0x00000001` in your code.</span></span>
 
  
 
 
 
-| <span data-ttu-id="1b85a-124">Valor</span><span class="sxs-lookup"><span data-stu-id="1b85a-124">Value</span></span>                                                                                                                                                                                                                                                                      | <span data-ttu-id="1b85a-125">Significado</span><span class="sxs-lookup"><span data-stu-id="1b85a-125">Meaning</span></span>                                                                    |
+| <span data-ttu-id="491ce-124">Valor</span><span class="sxs-lookup"><span data-stu-id="491ce-124">Value</span></span>                                                                                                                                                                                                                                                                      | <span data-ttu-id="491ce-125">Significado</span><span class="sxs-lookup"><span data-stu-id="491ce-125">Meaning</span></span>                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span id="ILOT_UNINSTALL"></span><span id="ilot_uninstall"></span><dl> <span data-ttu-id="1b85a-126"><dt>**ILOT \_ DESINSTALAR**</dt> <dt>0x00000001</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-126"><dt>**ILOT\_UNINSTALL**</dt> <dt>0x00000001</dt></span></span> </dl>                                           | <span data-ttu-id="1b85a-127">O mesmo que **ILOT \_ desabilitado**.</span><span class="sxs-lookup"><span data-stu-id="1b85a-127">Same as **ILOT\_DISABLED**.</span></span><br/>                                     |
-| <span id="ILOT_DEFPROFILE"></span><span id="ilot_defprofile"></span><dl> <span data-ttu-id="1b85a-128"><dt>**ILOT \_ DEFPROFILE**</dt> <dt>0x00000002</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-128"><dt>**ILOT\_DEFPROFILE**</dt> <dt>0x00000002</dt></span></span> </dl>                                        | <span data-ttu-id="1b85a-129">Define o layout ou a dica especificado como um item padrão.</span><span class="sxs-lookup"><span data-stu-id="1b85a-129">Sets the specified layout or tip as a default item.</span></span><br/>             |
-| <span id="ILOT_NOAPPLYTOCURRENTSESSION"></span><span id="ilot_noapplytocurrentsession"></span><dl> <span data-ttu-id="1b85a-130"><dt>**ILOT \_ NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-130"><dt>**ILOT\_NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt></span></span> </dl> | <span data-ttu-id="1b85a-131">A configuração é salva, mas não é aplicada à sessão atual.</span><span class="sxs-lookup"><span data-stu-id="1b85a-131">The setting is saved but is not applied to the current session.</span></span><br/> |
-| <span id="ILOT_CLEANINSTALL"></span><span id="ilot_cleaninstall"></span><dl> <span data-ttu-id="1b85a-132"><dt>**ILOT \_ CLEANINSTALL**</dt> <dt>0x00000040</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-132"><dt>**ILOT\_CLEANINSTALL**</dt> <dt>0x00000040</dt></span></span> </dl>                                  | <span data-ttu-id="1b85a-133">Desabilita todos os layouts de teclado e serviços de texto atuais.</span><span class="sxs-lookup"><span data-stu-id="1b85a-133">Disables all of the current keyboard layouts and text services.</span></span><br/> |
-| <span id="ILOT_DISABLED"></span><span id="ilot_disabled"></span><dl> <span data-ttu-id="1b85a-134"><dt>**ILOT \_ 0x00000080 DESABILITAdo**</dt> <dt></dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-134"><dt>**ILOT\_DISABLED**</dt> <dt>0x00000080</dt></span></span> </dl>                                              | <span data-ttu-id="1b85a-135">Desabilita o layout de teclado e o serviço de texto especificados.</span><span class="sxs-lookup"><span data-stu-id="1b85a-135">Disables the specified keyboard layout and text service.</span></span><br/>        |
+| <span id="ILOT_UNINSTALL"></span><span id="ilot_uninstall"></span><dl> <span data-ttu-id="491ce-126"><dt>**ILOT \_ DESINSTALAR**</dt> <dt>0x00000001</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-126"><dt>**ILOT\_UNINSTALL**</dt> <dt>0x00000001</dt></span></span> </dl>                                           | <span data-ttu-id="491ce-127">O mesmo que **ILOT \_ desabilitado**.</span><span class="sxs-lookup"><span data-stu-id="491ce-127">Same as **ILOT\_DISABLED**.</span></span><br/>                                     |
+| <span id="ILOT_DEFPROFILE"></span><span id="ilot_defprofile"></span><dl> <span data-ttu-id="491ce-128"><dt>**ILOT \_ DEFPROFILE**</dt> <dt>0x00000002</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-128"><dt>**ILOT\_DEFPROFILE**</dt> <dt>0x00000002</dt></span></span> </dl>                                        | <span data-ttu-id="491ce-129">Define o layout ou a dica especificado como um item padrão.</span><span class="sxs-lookup"><span data-stu-id="491ce-129">Sets the specified layout or tip as a default item.</span></span><br/>             |
+| <span id="ILOT_NOAPPLYTOCURRENTSESSION"></span><span id="ilot_noapplytocurrentsession"></span><dl> <span data-ttu-id="491ce-130"><dt>**ILOT \_ NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-130"><dt>**ILOT\_NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt></span></span> </dl> | <span data-ttu-id="491ce-131">A configuração é salva, mas não é aplicada à sessão atual.</span><span class="sxs-lookup"><span data-stu-id="491ce-131">The setting is saved but is not applied to the current session.</span></span><br/> |
+| <span id="ILOT_CLEANINSTALL"></span><span id="ilot_cleaninstall"></span><dl> <span data-ttu-id="491ce-132"><dt>**ILOT \_ CLEANINSTALL**</dt> <dt>0x00000040</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-132"><dt>**ILOT\_CLEANINSTALL**</dt> <dt>0x00000040</dt></span></span> </dl>                                  | <span data-ttu-id="491ce-133">Desabilita todos os layouts de teclado e serviços de texto atuais.</span><span class="sxs-lookup"><span data-stu-id="491ce-133">Disables all of the current keyboard layouts and text services.</span></span><br/> |
+| <span id="ILOT_DISABLED"></span><span id="ilot_disabled"></span><dl> <span data-ttu-id="491ce-134"><dt>**ILOT \_ 0x00000080 DESABILITAdo**</dt> <dt></dt></span><span class="sxs-lookup"><span data-stu-id="491ce-134"><dt>**ILOT\_DISABLED**</dt> <dt>0x00000080</dt></span></span> </dl>                                              | <span data-ttu-id="491ce-135">Desabilita o layout de teclado e o serviço de texto especificados.</span><span class="sxs-lookup"><span data-stu-id="491ce-135">Disables the specified keyboard layout and text service.</span></span><br/>        |
 
 
 
@@ -98,30 +98,30 @@ BOOL CALLBACK InstallLayoutOrTipUserReg(
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="1b85a-136">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="1b85a-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="491ce-136">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="491ce-136">Return value</span></span>
 
 
 
-| <span data-ttu-id="1b85a-137">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="1b85a-137">Return code</span></span>                                                                         | <span data-ttu-id="1b85a-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="1b85a-138">Description</span></span>                               |
+| <span data-ttu-id="491ce-137">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="491ce-137">Return code</span></span>                                                                         | <span data-ttu-id="491ce-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="491ce-138">Description</span></span>                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <span data-ttu-id="1b85a-139"><dt>**TRUE**</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-139"><dt>**TRUE**</dt></span></span> </dl> | <span data-ttu-id="1b85a-140">A função foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="1b85a-140">The function was successful.</span></span><br/>   |
-| <dl> <span data-ttu-id="1b85a-141"><dt>**FASE**</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-141"><dt>**FASE**</dt></span></span> </dl> | <span data-ttu-id="1b85a-142">Ocorreu um erro não especificado.</span><span class="sxs-lookup"><span data-stu-id="1b85a-142">An unspecified error occurred.</span></span><br/> |
+| <dl> <span data-ttu-id="491ce-139"><dt>**TRUE**</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-139"><dt>**TRUE**</dt></span></span> </dl> | <span data-ttu-id="491ce-140">A função foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="491ce-140">The function was successful.</span></span><br/>   |
+| <dl> <span data-ttu-id="491ce-141"><dt>**FASE**</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-141"><dt>**FASE**</dt></span></span> </dl> | <span data-ttu-id="491ce-142">Ocorreu um erro não especificado.</span><span class="sxs-lookup"><span data-stu-id="491ce-142">An unspecified error occurred.</span></span><br/> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="1b85a-143">Comentários</span><span class="sxs-lookup"><span data-stu-id="1b85a-143">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="491ce-143">Comentários</span><span class="sxs-lookup"><span data-stu-id="491ce-143">Remarks</span></span>
 
-<span data-ttu-id="1b85a-144">O formato da cadeia de caracteres da lista de layouts é:</span><span class="sxs-lookup"><span data-stu-id="1b85a-144">The string format of the layout list is:</span></span>
+<span data-ttu-id="491ce-144">O formato da cadeia de caracteres da lista de layouts é:</span><span class="sxs-lookup"><span data-stu-id="491ce-144">The string format of the layout list is:</span></span>
 
-<span data-ttu-id="1b85a-145"><LangID 1>: <KLID 1>; \[ ...<LangID N>:<KLID N></span><span class="sxs-lookup"><span data-stu-id="1b85a-145"><LangID 1>:<KLID 1>;\[...<LangID N>:<KLID N></span></span>
+<span data-ttu-id="491ce-145"><LangID 1>: <KLID 1>; \[ ...<LangID N>:<KLID N></span><span class="sxs-lookup"><span data-stu-id="491ce-145"><LangID 1>:<KLID 1>;\[...<LangID N>:<KLID N></span></span>
 
-<span data-ttu-id="1b85a-146">O formato de cadeia de caracteres da lista de perfis de serviço de texto é:</span><span class="sxs-lookup"><span data-stu-id="1b85a-146">The string format of the text service profile list is:</span></span>
+<span data-ttu-id="491ce-146">O formato de cadeia de caracteres da lista de perfis de serviço de texto é:</span><span class="sxs-lookup"><span data-stu-id="491ce-146">The string format of the text service profile list is:</span></span>
 
-<span data-ttu-id="1b85a-147"><LangID 1>: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};</span><span class="sxs-lookup"><span data-stu-id="1b85a-147"><LangID 1>:{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};</span></span>
+<span data-ttu-id="491ce-147"><LangID 1>: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};</span><span class="sxs-lookup"><span data-stu-id="491ce-147"><LangID 1>:{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};</span></span>
 
-<span data-ttu-id="1b85a-148">Veja a seguir um exemplo de um valor para o parâmetro *psz* :</span><span class="sxs-lookup"><span data-stu-id="1b85a-148">The following is an example of a value for the *psz* parameter:</span></span>
+<span data-ttu-id="491ce-148">Veja a seguir um exemplo de um valor para o parâmetro *psz* :</span><span class="sxs-lookup"><span data-stu-id="491ce-148">The following is an example of a value for the *psz* parameter:</span></span>
 
 
 ```C++
@@ -132,12 +132,12 @@ BOOL CALLBACK InstallLayoutOrTipUserReg(
 
 
 
-## <a name="examples"></a><span data-ttu-id="1b85a-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1b85a-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="491ce-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="491ce-149">Examples</span></span>
 
-<span data-ttu-id="1b85a-150">Não há biblioteca de importação disponível que defina essa função, portanto, é necessário obter um ponteiro para essa função usando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).</span><span class="sxs-lookup"><span data-stu-id="1b85a-150">There is no import library available that defines this function, so it is necessary to obtain a pointer to this function using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) and [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).</span></span> <span data-ttu-id="1b85a-151">O exemplo a seguir demonstra como obter um ponteiro para essa função.</span><span class="sxs-lookup"><span data-stu-id="1b85a-151">The following example demonstrates how to obtain a pointer to this function.</span></span>
+<span data-ttu-id="491ce-150">Não há biblioteca de importação disponível que defina essa função, portanto, é necessário obter um ponteiro para essa função usando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).</span><span class="sxs-lookup"><span data-stu-id="491ce-150">There is no import library available that defines this function, so it is necessary to obtain a pointer to this function using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) and [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).</span></span> <span data-ttu-id="491ce-151">O exemplo a seguir demonstra como obter um ponteiro para essa função.</span><span class="sxs-lookup"><span data-stu-id="491ce-151">The following example demonstrates how to obtain a pointer to this function.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="1b85a-152">O uso incorreto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode comprometer a segurança do seu aplicativo carregando a dll errada.</span><span class="sxs-lookup"><span data-stu-id="1b85a-152">Using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorrectly can compromise the security of your application by loading the wrong DLL.</span></span> <span data-ttu-id="1b85a-153">Consulte a [ordem de pesquisa da biblioteca de vínculo dinâmico](/windows/desktop/Dlls/dynamic-link-library-search-order) para obter informações sobre como carregar corretamente DLLs com versões diferentes do Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="1b85a-153">Refer to [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order) for information on how to correctly load DLLs with different versions of Microsoft Windows.</span></span>
+> <span data-ttu-id="491ce-152">O uso incorreto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode comprometer a segurança do seu aplicativo carregando a dll errada.</span><span class="sxs-lookup"><span data-stu-id="491ce-152">Using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorrectly can compromise the security of your application by loading the wrong DLL.</span></span> <span data-ttu-id="491ce-153">Consulte a [ordem de pesquisa da biblioteca de vínculo dinâmico](/windows/desktop/Dlls/dynamic-link-library-search-order) para obter informações sobre como carregar corretamente DLLs com versões diferentes do Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="491ce-153">Refer to [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order) for information on how to correctly load DLLs with different versions of Microsoft Windows.</span></span>
 
  
 
@@ -175,15 +175,15 @@ else
 
 
 
-## <a name="requirements"></a><span data-ttu-id="1b85a-154">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1b85a-154">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="491ce-154">Requisitos</span><span class="sxs-lookup"><span data-stu-id="491ce-154">Requirements</span></span>
 
 
 
-| <span data-ttu-id="1b85a-155">Requisito</span><span class="sxs-lookup"><span data-stu-id="1b85a-155">Requirement</span></span> | <span data-ttu-id="1b85a-156">Valor</span><span class="sxs-lookup"><span data-stu-id="1b85a-156">Value</span></span> |
+| <span data-ttu-id="491ce-155">Requisito</span><span class="sxs-lookup"><span data-stu-id="491ce-155">Requirement</span></span> | <span data-ttu-id="491ce-156">Valor</span><span class="sxs-lookup"><span data-stu-id="491ce-156">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="1b85a-157">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b85a-157">Minimum supported client</span></span><br/> | <span data-ttu-id="1b85a-158">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-158">Windows Vista \[desktop apps only\]</span></span><br/>                                       |
-| <span data-ttu-id="1b85a-159">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b85a-159">Minimum supported server</span></span><br/> | <span data-ttu-id="1b85a-160">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="1b85a-160">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                 |
-| <span data-ttu-id="1b85a-161">DLL</span><span class="sxs-lookup"><span data-stu-id="1b85a-161">DLL</span></span><br/>                      | <dl> <span data-ttu-id="1b85a-162"><dt>Input.dll</dt></span><span class="sxs-lookup"><span data-stu-id="1b85a-162"><dt>Input.dll</dt></span></span> </dl> |
+| <span data-ttu-id="491ce-157">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="491ce-157">Minimum supported client</span></span><br/> | <span data-ttu-id="491ce-158">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="491ce-158">Windows Vista \[desktop apps only\]</span></span><br/>                                       |
+| <span data-ttu-id="491ce-159">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="491ce-159">Minimum supported server</span></span><br/> | <span data-ttu-id="491ce-160">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="491ce-160">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                 |
+| <span data-ttu-id="491ce-161">DLL</span><span class="sxs-lookup"><span data-stu-id="491ce-161">DLL</span></span><br/>                      | <dl> <span data-ttu-id="491ce-162"><dt>Input.dll</dt></span><span class="sxs-lookup"><span data-stu-id="491ce-162"><dt>Input.dll</dt></span></span> </dl> |
 
 
 

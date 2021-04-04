@@ -11,26 +11,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 06/17/2020
 ms.locfileid: "103917086"
 ---
-# <a name="how-to-create-vertical-toolbars"></a><span data-ttu-id="3e626-103">Como criar barras de ferramentas verticais</span><span class="sxs-lookup"><span data-stu-id="3e626-103">How to Create Vertical Toolbars</span></span>
+# <a name="how-to-create-vertical-toolbars"></a><span data-ttu-id="1d437-103">Como criar barras de ferramentas verticais</span><span class="sxs-lookup"><span data-stu-id="1d437-103">How to Create Vertical Toolbars</span></span>
 
-<span data-ttu-id="3e626-104">A chave para criar uma barra de ferramentas vertical é incluir [**ccs \_ Vert**](common-control-styles.md) no estilo da janela e definir o estilo [**de \_ quebra automática de TBSTATE**](toolbar-button-states.md) para cada botão.</span><span class="sxs-lookup"><span data-stu-id="3e626-104">The key to creating a vertical toolbar is to include [**CCS\_VERT**](common-control-styles.md) in the window style, and to set the [**TBSTATE\_WRAP**](toolbar-button-states.md) style for each button.</span></span>
+<span data-ttu-id="1d437-104">A chave para criar uma barra de ferramentas vertical é incluir [**ccs \_ Vert**](common-control-styles.md) no estilo da janela e definir o estilo [**de \_ quebra automática de TBSTATE**](toolbar-button-states.md) para cada botão.</span><span class="sxs-lookup"><span data-stu-id="1d437-104">The key to creating a vertical toolbar is to include [**CCS\_VERT**](common-control-styles.md) in the window style, and to set the [**TBSTATE\_WRAP**](toolbar-button-states.md) style for each button.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="3e626-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="3e626-105">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="1d437-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="1d437-105">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="3e626-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="3e626-106">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="1d437-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="1d437-106">Technologies</span></span>
 
--   [<span data-ttu-id="3e626-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="3e626-107">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="1d437-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="1d437-107">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="3e626-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3e626-108">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="1d437-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1d437-108">Prerequisites</span></span>
 
--   <span data-ttu-id="3e626-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="3e626-109">C/C++</span></span>
--   <span data-ttu-id="3e626-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="3e626-110">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="1d437-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="1d437-109">C/C++</span></span>
+-   <span data-ttu-id="1d437-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="1d437-110">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="3e626-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="3e626-111">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="1d437-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="1d437-111">Instructions</span></span>
 
-### <a name="create-a-vertical-toolbar"></a><span data-ttu-id="3e626-112">Criar uma barra de ferramentas vertical</span><span class="sxs-lookup"><span data-stu-id="3e626-112">Create a Vertical Toolbar</span></span>
+### <a name="create-a-vertical-toolbar"></a><span data-ttu-id="1d437-112">Criar uma barra de ferramentas vertical</span><span class="sxs-lookup"><span data-stu-id="1d437-112">Create a Vertical Toolbar</span></span>
 
-<span data-ttu-id="3e626-113">O código de exemplo a seguir cria a barra de ferramentas vertical mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="3e626-113">The following example code creates the vertical toolbar shown in the following illustration.</span></span>
+<span data-ttu-id="1d437-113">O código de exemplo a seguir cria a barra de ferramentas vertical mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="1d437-113">The following example code creates the vertical toolbar shown in the following illustration.</span></span>
 
 ![captura de tela mostrando uma caixa de diálogo com três itens da barra de ferramentas organizados verticalmente, cada um dos quais tem apenas um ícone](images/tb-vertical.png)
 
@@ -76,14 +76,14 @@ HWND CreateVerticalToolbar(HWND hWndParent)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="3e626-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3e626-115">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="1d437-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1d437-115">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3e626-116">Usando controles da barra de ferramentas</span><span class="sxs-lookup"><span data-stu-id="3e626-116">Using Toolbar Controls</span></span>](using-toolbar-controls.md)
+[<span data-ttu-id="1d437-116">Usando controles da barra de ferramentas</span><span class="sxs-lookup"><span data-stu-id="1d437-116">Using Toolbar Controls</span></span>](using-toolbar-controls.md)
 </dt> <dt>
 
-<span data-ttu-id="3e626-117">[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span><span class="sxs-lookup"><span data-stu-id="3e626-117">[Windows common controls demo (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span></span>
+<span data-ttu-id="1d437-117">[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span><span class="sxs-lookup"><span data-stu-id="1d437-117">[Windows common controls demo (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)</span></span>
 </dt> </dl>
 
  

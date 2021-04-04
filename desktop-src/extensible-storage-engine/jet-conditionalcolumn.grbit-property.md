@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837454"
 ---
-# <a name="jet_conditionalcolumngrbit-property"></a><span data-ttu-id="3c026-103">Propriedade JET_CONDITIONALCOLUMN. grbit</span><span class="sxs-lookup"><span data-stu-id="3c026-103">JET_CONDITIONALCOLUMN.grbit property</span></span>
+# <a name="jet_conditionalcolumngrbit-property"></a><span data-ttu-id="40702-103">Propriedade JET_CONDITIONALCOLUMN. grbit</span><span class="sxs-lookup"><span data-stu-id="40702-103">JET_CONDITIONALCOLUMN.grbit property</span></span>
 
-<span data-ttu-id="3c026-104">Obtém ou define as opções para o índice condicional.</span><span class="sxs-lookup"><span data-stu-id="3c026-104">Gets or sets the options for the conditional index.</span></span>
+<span data-ttu-id="40702-104">Obtém ou define as opções para o índice condicional.</span><span class="sxs-lookup"><span data-stu-id="40702-104">Gets or sets the options for the conditional index.</span></span>
 
-<span data-ttu-id="3c026-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="3c026-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="3c026-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="3c026-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="40702-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="40702-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="40702-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="40702-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3c026-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="3c026-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="40702-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="40702-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.grbit = value
 public ConditionalColumnGrbit grbit { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="3c026-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="3c026-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="40702-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="40702-108">Property value</span></span>
 
-<span data-ttu-id="3c026-109">Tipo: [Microsoft. ISAM. ESENT. Interop. ConditionalColumnGrbit](./conditionalcolumngrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="3c026-109">Type: [Microsoft.Isam.Esent.Interop.ConditionalColumnGrbit](./conditionalcolumngrbit-enumeration.md)</span></span>  
+<span data-ttu-id="40702-109">Tipo: [Microsoft. ISAM. ESENT. Interop. ConditionalColumnGrbit](./conditionalcolumngrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="40702-109">Type: [Microsoft.Isam.Esent.Interop.ConditionalColumnGrbit](./conditionalcolumngrbit-enumeration.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="3c026-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="3c026-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="40702-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="40702-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="3c026-111">Referência</span><span class="sxs-lookup"><span data-stu-id="3c026-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="40702-111">Referência</span><span class="sxs-lookup"><span data-stu-id="40702-111">Reference</span></span>
 
-[<span data-ttu-id="3c026-112">Classe JET_CONDITIONALCOLUMN</span><span class="sxs-lookup"><span data-stu-id="3c026-112">JET_CONDITIONALCOLUMN class</span></span>](./jet-conditionalcolumn-class.md)
+[<span data-ttu-id="40702-112">Classe JET_CONDITIONALCOLUMN</span><span class="sxs-lookup"><span data-stu-id="40702-112">JET_CONDITIONALCOLUMN class</span></span>](./jet-conditionalcolumn-class.md)
 
-[<span data-ttu-id="3c026-113">Membros do JET_CONDITIONALCOLUMN</span><span class="sxs-lookup"><span data-stu-id="3c026-113">JET_CONDITIONALCOLUMN members</span></span>](./jet-conditionalcolumn-members.md)
+[<span data-ttu-id="40702-113">Membros do JET_CONDITIONALCOLUMN</span><span class="sxs-lookup"><span data-stu-id="40702-113">JET_CONDITIONALCOLUMN members</span></span>](./jet-conditionalcolumn-members.md)
 
-[<span data-ttu-id="3c026-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3c026-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="40702-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="40702-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

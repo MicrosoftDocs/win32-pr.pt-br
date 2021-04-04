@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645003"
 ---
-# <a name="tasknamedvaluecollectioncount-property"></a><span data-ttu-id="7035e-106">Propriedade TaskNamedValueCollection. Count</span><span class="sxs-lookup"><span data-stu-id="7035e-106">TaskNamedValueCollection.Count property</span></span>
+# <a name="tasknamedvaluecollectioncount-property"></a><span data-ttu-id="66eb2-106">Propriedade TaskNamedValueCollection. Count</span><span class="sxs-lookup"><span data-stu-id="66eb2-106">TaskNamedValueCollection.Count property</span></span>
 
-<span data-ttu-id="7035e-107">Para scripts, obtém o número de pares de nome-valor na coleção.</span><span class="sxs-lookup"><span data-stu-id="7035e-107">For scripting, gets the number of name-value pairs in the collection.</span></span>
+<span data-ttu-id="66eb2-107">Para scripts, obtém o número de pares de nome-valor na coleção.</span><span class="sxs-lookup"><span data-stu-id="66eb2-107">For scripting, gets the number of name-value pairs in the collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7035e-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="7035e-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="66eb2-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="66eb2-108">Syntax</span></span>
 
 
 ```VB
@@ -36,20 +36,20 @@ TaskNamedValueCollection.Count As long
 
 
 
-## <a name="property-value"></a><span data-ttu-id="7035e-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="7035e-109">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="66eb2-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="66eb2-109">Property value</span></span>
 
-<span data-ttu-id="7035e-110">O número de pares de nome-valor na coleção.</span><span class="sxs-lookup"><span data-stu-id="7035e-110">The number of name-value pairs in the collection.</span></span>
+<span data-ttu-id="66eb2-110">O número de pares de nome-valor na coleção.</span><span class="sxs-lookup"><span data-stu-id="66eb2-110">The number of name-value pairs in the collection.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7035e-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7035e-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="66eb2-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="66eb2-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7035e-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="7035e-112">Requirement</span></span> | <span data-ttu-id="7035e-113">Valor</span><span class="sxs-lookup"><span data-stu-id="7035e-113">Value</span></span> |
+| <span data-ttu-id="66eb2-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="66eb2-112">Requirement</span></span> | <span data-ttu-id="66eb2-113">Valor</span><span class="sxs-lookup"><span data-stu-id="66eb2-113">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="7035e-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7035e-114">Minimum supported client</span></span><br/> | <span data-ttu-id="7035e-115">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="7035e-115">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
-| <span data-ttu-id="7035e-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7035e-116">Minimum supported server</span></span><br/> | <span data-ttu-id="7035e-117">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="7035e-117">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="7035e-118">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="7035e-118">Type library</span></span><br/>             | <dl> <span data-ttu-id="7035e-119"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="7035e-119"><dt>Taskschd.tlb</dt></span></span> </dl> |
-| <span data-ttu-id="7035e-120">DLL</span><span class="sxs-lookup"><span data-stu-id="7035e-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="7035e-121"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7035e-121"><dt>Taskschd.dll</dt></span></span> </dl> |
+| <span data-ttu-id="66eb2-114">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="66eb2-114">Minimum supported client</span></span><br/> | <span data-ttu-id="66eb2-115">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="66eb2-115">Windows Vista \[desktop apps only\]</span></span><br/>                                          |
+| <span data-ttu-id="66eb2-116">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="66eb2-116">Minimum supported server</span></span><br/> | <span data-ttu-id="66eb2-117">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="66eb2-117">Windows Server 2008 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="66eb2-118">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="66eb2-118">Type library</span></span><br/>             | <dl> <span data-ttu-id="66eb2-119"><dt>Taskschd. tlb</dt></span><span class="sxs-lookup"><span data-stu-id="66eb2-119"><dt>Taskschd.tlb</dt></span></span> </dl> |
+| <span data-ttu-id="66eb2-120">DLL</span><span class="sxs-lookup"><span data-stu-id="66eb2-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="66eb2-121"><dt>Taskschd.dll</dt></span><span class="sxs-lookup"><span data-stu-id="66eb2-121"><dt>Taskschd.dll</dt></span></span> </dl> |
 
 
 

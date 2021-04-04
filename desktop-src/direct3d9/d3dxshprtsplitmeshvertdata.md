@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103663997"
 ---
-# <a name="d3dxshprtsplitmeshvertdata-structure"></a><span data-ttu-id="f0575-103">Estrutura D3DXSHPRTSPLITMESHVERTDATA</span><span class="sxs-lookup"><span data-stu-id="f0575-103">D3DXSHPRTSPLITMESHVERTDATA structure</span></span>
+# <a name="d3dxshprtsplitmeshvertdata-structure"></a><span data-ttu-id="053a6-103">Estrutura D3DXSHPRTSPLITMESHVERTDATA</span><span class="sxs-lookup"><span data-stu-id="053a6-103">D3DXSHPRTSPLITMESHVERTDATA structure</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f0575-104">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f0575-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="053a6-104">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="053a6-104">Syntax</span></span>
 
 
 ```C++
@@ -35,62 +35,62 @@ typedef struct D3DXSHPRTSPLITMESHVERTDATA {
 
 
 
-## <a name="members"></a><span data-ttu-id="f0575-105">Membros</span><span class="sxs-lookup"><span data-stu-id="f0575-105">Members</span></span>
+## <a name="members"></a><span data-ttu-id="053a6-105">Membros</span><span class="sxs-lookup"><span data-stu-id="053a6-105">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="f0575-106">**uVertRemap**</span><span class="sxs-lookup"><span data-stu-id="f0575-106">**uVertRemap**</span></span>
+<span data-ttu-id="053a6-106">**uVertRemap**</span><span class="sxs-lookup"><span data-stu-id="053a6-106">**uVertRemap**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f0575-107">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="f0575-107">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="053a6-107">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="053a6-107">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="f0575-108">Vértice na malha original que corresponde a.</span><span class="sxs-lookup"><span data-stu-id="f0575-108">Vertex in original mesh this corresponds to.</span></span>
+<span data-ttu-id="053a6-108">Vértice na malha original que corresponde a.</span><span class="sxs-lookup"><span data-stu-id="053a6-108">Vertex in original mesh this corresponds to.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="f0575-109">**uSubCluster**</span><span class="sxs-lookup"><span data-stu-id="f0575-109">**uSubCluster**</span></span>
+<span data-ttu-id="053a6-109">**uSubCluster**</span><span class="sxs-lookup"><span data-stu-id="053a6-109">**uSubCluster**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f0575-110">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="f0575-110">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="053a6-110">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="053a6-110">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="f0575-111">Índice de cluster, relativo ao supercluster.</span><span class="sxs-lookup"><span data-stu-id="f0575-111">Cluster index, relative to the supercluster.</span></span>
+<span data-ttu-id="053a6-111">Índice de cluster, relativo ao supercluster.</span><span class="sxs-lookup"><span data-stu-id="053a6-111">Cluster index, relative to the supercluster.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="f0575-112">**ucVertStatus**</span><span class="sxs-lookup"><span data-stu-id="f0575-112">**ucVertStatus**</span></span>
+<span data-ttu-id="053a6-112">**ucVertStatus**</span><span class="sxs-lookup"><span data-stu-id="053a6-112">**ucVertStatus**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f0575-113">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="f0575-113">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="053a6-113">Tipo: **[ **uint**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="053a6-113">Type: **[**UINT**](../winprog/windows-data-types.md)**</span></span>
 
 </dd> <dd>
 
-<span data-ttu-id="f0575-114">1 se o vértice tiver dados válidos, 0 se for "Full".</span><span class="sxs-lookup"><span data-stu-id="f0575-114">1 if vertex has valid data, 0 if it is "full".</span></span>
+<span data-ttu-id="053a6-114">1 se o vértice tiver dados válidos, 0 se for "Full".</span><span class="sxs-lookup"><span data-stu-id="053a6-114">1 if vertex has valid data, 0 if it is "full".</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="f0575-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="f0575-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="053a6-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="053a6-115">Remarks</span></span>
 
-<span data-ttu-id="f0575-116">Alocado em [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md).</span><span class="sxs-lookup"><span data-stu-id="f0575-116">Allocated in [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md).</span></span>
+<span data-ttu-id="053a6-116">Alocado em [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md).</span><span class="sxs-lookup"><span data-stu-id="053a6-116">Allocated in [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f0575-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f0575-117">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="053a6-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="053a6-117">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f0575-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="f0575-118">Requirement</span></span> | <span data-ttu-id="f0575-119">Valor</span><span class="sxs-lookup"><span data-stu-id="f0575-119">Value</span></span> |
+| <span data-ttu-id="053a6-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="053a6-118">Requirement</span></span> | <span data-ttu-id="053a6-119">Valor</span><span class="sxs-lookup"><span data-stu-id="053a6-119">Value</span></span> |
 |-------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="f0575-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f0575-120">Header</span></span><br/> | <dl> <span data-ttu-id="f0575-121"><dt>D3dx9mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="f0575-121"><dt>D3dx9mesh.h</dt></span></span> </dl> |
+| <span data-ttu-id="053a6-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="053a6-120">Header</span></span><br/> | <dl> <span data-ttu-id="053a6-121"><dt>D3dx9mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="053a6-121"><dt>D3dx9mesh.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f0575-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="f0575-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="053a6-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="053a6-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f0575-123">Estruturas D3DX</span><span class="sxs-lookup"><span data-stu-id="f0575-123">D3DX Structures</span></span>](dx9-graphics-reference-d3dx-structures.md)
+[<span data-ttu-id="053a6-123">Estruturas D3DX</span><span class="sxs-lookup"><span data-stu-id="053a6-123">D3DX Structures</span></span>](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103917169"
 ---
-# <a name="character-object-methods"></a><span data-ttu-id="daa13-103">Métodos de objeto de caractere</span><span class="sxs-lookup"><span data-stu-id="daa13-103">Character Object Methods</span></span>
+# <a name="character-object-methods"></a><span data-ttu-id="72249-103">Métodos de objeto de caractere</span><span class="sxs-lookup"><span data-stu-id="72249-103">Character Object Methods</span></span>
 
-<span data-ttu-id="daa13-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="daa13-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="72249-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="72249-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
-<span data-ttu-id="daa13-105">O servidor também expõe métodos para cada caractere em uma coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) .</span><span class="sxs-lookup"><span data-stu-id="daa13-105">The server also exposes methods for each character in a [**Characters**](/windows/desktop/lwef/the-characters-object) collection.</span></span> <span data-ttu-id="daa13-106">Os métodos a seguir têm suporte:</span><span class="sxs-lookup"><span data-stu-id="daa13-106">The following methods are supported:</span></span>
+<span data-ttu-id="72249-105">O servidor também expõe métodos para cada caractere em uma coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) .</span><span class="sxs-lookup"><span data-stu-id="72249-105">The server also exposes methods for each character in a [**Characters**](/windows/desktop/lwef/the-characters-object) collection.</span></span> <span data-ttu-id="72249-106">Os métodos a seguir têm suporte:</span><span class="sxs-lookup"><span data-stu-id="72249-106">The following methods are supported:</span></span>
 
--   [<span data-ttu-id="daa13-107">**Activate**</span><span class="sxs-lookup"><span data-stu-id="daa13-107">**Activate**</span></span>](activate-method.md)
--   [<span data-ttu-id="daa13-108">**GestureAt**</span><span class="sxs-lookup"><span data-stu-id="daa13-108">**GestureAt**</span></span>](gestureat-method.md)
--   [<span data-ttu-id="daa13-109">**Obter**</span><span class="sxs-lookup"><span data-stu-id="daa13-109">**Get**</span></span>](get-method.md)
--   [<span data-ttu-id="daa13-110">**Ocultar**</span><span class="sxs-lookup"><span data-stu-id="daa13-110">**Hide**</span></span>](hide-method.md)
--   [<span data-ttu-id="daa13-111">**Atividades**</span><span class="sxs-lookup"><span data-stu-id="daa13-111">**Interrupt**</span></span>](interrupt-method.md)
--   [<span data-ttu-id="daa13-112">**Escutar**</span><span class="sxs-lookup"><span data-stu-id="daa13-112">**Listen**</span></span>](listen-method.md)
--   [<span data-ttu-id="daa13-113">**Mover**</span><span class="sxs-lookup"><span data-stu-id="daa13-113">**MoveTo**</span></span>](moveto-method.md)
--   [<span data-ttu-id="daa13-114">**Reproduzir**</span><span class="sxs-lookup"><span data-stu-id="daa13-114">**Play**</span></span>](play-method.md)
--   [<span data-ttu-id="daa13-115">**programa**</span><span class="sxs-lookup"><span data-stu-id="daa13-115">**Show**</span></span>](show-method.md)
--   [<span data-ttu-id="daa13-116">**ShowPopupMenu**</span><span class="sxs-lookup"><span data-stu-id="daa13-116">**ShowPopupMenu**</span></span>](showpopupmenu-method.md)
--   [<span data-ttu-id="daa13-117">**Speak**</span><span class="sxs-lookup"><span data-stu-id="daa13-117">**Speak**</span></span>](speak-method.md)
--   [<span data-ttu-id="daa13-118">**Stop**</span><span class="sxs-lookup"><span data-stu-id="daa13-118">**Stop**</span></span>](stop-method.md)
--   [<span data-ttu-id="daa13-119">**Do opAll**</span><span class="sxs-lookup"><span data-stu-id="daa13-119">**StopAll**</span></span>](stopall-method.md)
--   [<span data-ttu-id="daa13-120">**Pensar**</span><span class="sxs-lookup"><span data-stu-id="daa13-120">**Think**</span></span>](think-method.md)
--   [<span data-ttu-id="daa13-121">**Aguarde**</span><span class="sxs-lookup"><span data-stu-id="daa13-121">**Wait**</span></span>](wait-method.md)
+-   [<span data-ttu-id="72249-107">**Activate**</span><span class="sxs-lookup"><span data-stu-id="72249-107">**Activate**</span></span>](activate-method.md)
+-   [<span data-ttu-id="72249-108">**GestureAt**</span><span class="sxs-lookup"><span data-stu-id="72249-108">**GestureAt**</span></span>](gestureat-method.md)
+-   [<span data-ttu-id="72249-109">**Obter**</span><span class="sxs-lookup"><span data-stu-id="72249-109">**Get**</span></span>](get-method.md)
+-   [<span data-ttu-id="72249-110">**Ocultar**</span><span class="sxs-lookup"><span data-stu-id="72249-110">**Hide**</span></span>](hide-method.md)
+-   [<span data-ttu-id="72249-111">**Atividades**</span><span class="sxs-lookup"><span data-stu-id="72249-111">**Interrupt**</span></span>](interrupt-method.md)
+-   [<span data-ttu-id="72249-112">**Escutar**</span><span class="sxs-lookup"><span data-stu-id="72249-112">**Listen**</span></span>](listen-method.md)
+-   [<span data-ttu-id="72249-113">**Mover**</span><span class="sxs-lookup"><span data-stu-id="72249-113">**MoveTo**</span></span>](moveto-method.md)
+-   [<span data-ttu-id="72249-114">**Reproduzir**</span><span class="sxs-lookup"><span data-stu-id="72249-114">**Play**</span></span>](play-method.md)
+-   [<span data-ttu-id="72249-115">**programa**</span><span class="sxs-lookup"><span data-stu-id="72249-115">**Show**</span></span>](show-method.md)
+-   [<span data-ttu-id="72249-116">**ShowPopupMenu**</span><span class="sxs-lookup"><span data-stu-id="72249-116">**ShowPopupMenu**</span></span>](showpopupmenu-method.md)
+-   [<span data-ttu-id="72249-117">**Speak**</span><span class="sxs-lookup"><span data-stu-id="72249-117">**Speak**</span></span>](speak-method.md)
+-   [<span data-ttu-id="72249-118">**Stop**</span><span class="sxs-lookup"><span data-stu-id="72249-118">**Stop**</span></span>](stop-method.md)
+-   [<span data-ttu-id="72249-119">**Do opAll**</span><span class="sxs-lookup"><span data-stu-id="72249-119">**StopAll**</span></span>](stopall-method.md)
+-   [<span data-ttu-id="72249-120">**Pensar**</span><span class="sxs-lookup"><span data-stu-id="72249-120">**Think**</span></span>](think-method.md)
+-   [<span data-ttu-id="72249-121">**Aguarde**</span><span class="sxs-lookup"><span data-stu-id="72249-121">**Wait**</span></span>](wait-method.md)
 
-<span data-ttu-id="daa13-122">Para usar um método, referencie o caractere na coleção.</span><span class="sxs-lookup"><span data-stu-id="daa13-122">To use a method, reference the character in the collection.</span></span> <span data-ttu-id="daa13-123">No VBScript e Visual Basic, você faz isso especificando a ID de um caractere:</span><span class="sxs-lookup"><span data-stu-id="daa13-123">In VBScript and Visual Basic, you do this by specifying the ID for a character:</span></span>
+<span data-ttu-id="72249-122">Para usar um método, referencie o caractere na coleção.</span><span class="sxs-lookup"><span data-stu-id="72249-122">To use a method, reference the character in the collection.</span></span> <span data-ttu-id="72249-123">No VBScript e Visual Basic, você faz isso especificando a ID de um caractere:</span><span class="sxs-lookup"><span data-stu-id="72249-123">In VBScript and Visual Basic, you do this by specifying the ID for a character:</span></span>
 
 
 ```
@@ -52,7 +52,7 @@ ms.locfileid: "103917169"
 
 
 
-<span data-ttu-id="daa13-124">Para simplificar a sintaxe do seu código, você pode definir uma variável de objeto e defini-la para fazer referência a um objeto de caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) ; em seguida, você pode usar a variável para referenciar métodos ou propriedades do caractere.</span><span class="sxs-lookup"><span data-stu-id="daa13-124">To simplify the syntax of your code, you can define an object variable and set it to reference a character object in the [**Characters**](/windows/desktop/lwef/the-characters-object) collection; then you can use your variable to reference methods or properties of the character.</span></span> <span data-ttu-id="daa13-125">O exemplo a seguir demonstra como você pode fazer isso usando a instrução Visual Basic set:</span><span class="sxs-lookup"><span data-stu-id="daa13-125">The following example demonstrates how you can do this using the Visual Basic Set statement:</span></span>
+<span data-ttu-id="72249-124">Para simplificar a sintaxe do seu código, você pode definir uma variável de objeto e defini-la para fazer referência a um objeto de caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) ; em seguida, você pode usar a variável para referenciar métodos ou propriedades do caractere.</span><span class="sxs-lookup"><span data-stu-id="72249-124">To simplify the syntax of your code, you can define an object variable and set it to reference a character object in the [**Characters**](/windows/desktop/lwef/the-characters-object) collection; then you can use your variable to reference methods or properties of the character.</span></span> <span data-ttu-id="72249-125">O exemplo a seguir demonstra como você pode fazer isso usando a instrução Visual Basic set:</span><span class="sxs-lookup"><span data-stu-id="72249-125">The following example demonstrates how you can do this using the Visual Basic Set statement:</span></span>
 
 
 ```
@@ -81,7 +81,7 @@ ms.locfileid: "103917169"
 
 
 
-<span data-ttu-id="daa13-126">No Visual Basic 5,0, você também pode criar sua referência declarando sua variável como um objeto de [**caractere**](/windows/desktop/lwef/the-characters-object):</span><span class="sxs-lookup"><span data-stu-id="daa13-126">In Visual Basic 5.0, you can also create your reference by declaring your variable as a [**Character**](/windows/desktop/lwef/the-characters-object)object:</span></span>
+<span data-ttu-id="72249-126">No Visual Basic 5,0, você também pode criar sua referência declarando sua variável como um objeto de [**caractere**](/windows/desktop/lwef/the-characters-object):</span><span class="sxs-lookup"><span data-stu-id="72249-126">In Visual Basic 5.0, you can also create your reference by declaring your variable as a [**Character**](/windows/desktop/lwef/the-characters-object)object:</span></span>
 
 
 ```
@@ -103,9 +103,9 @@ ms.locfileid: "103917169"
 
 
 
-<span data-ttu-id="daa13-127">Declarar o objeto do tipo IAgentCtlCharacterEx habilita a ligação antecipada no objeto, o que resulta em um melhor desempenho.</span><span class="sxs-lookup"><span data-stu-id="daa13-127">Declaring your object of type IAgentCtlCharacterEx enables early binding on the object, which results in better performance.</span></span>
+<span data-ttu-id="72249-127">Declarar o objeto do tipo IAgentCtlCharacterEx habilita a ligação antecipada no objeto, o que resulta em um melhor desempenho.</span><span class="sxs-lookup"><span data-stu-id="72249-127">Declaring your object of type IAgentCtlCharacterEx enables early binding on the object, which results in better performance.</span></span>
 
-<span data-ttu-id="daa13-128">No VBScript, você não pode declarar uma referência como um tipo específico.</span><span class="sxs-lookup"><span data-stu-id="daa13-128">In VBScript, you cannot declare a reference as a particular type.</span></span> <span data-ttu-id="daa13-129">No entanto, você pode simplesmente declarar a referência de variável:</span><span class="sxs-lookup"><span data-stu-id="daa13-129">However, you can simply declare the variable reference:</span></span>
+<span data-ttu-id="72249-128">No VBScript, você não pode declarar uma referência como um tipo específico.</span><span class="sxs-lookup"><span data-stu-id="72249-128">In VBScript, you cannot declare a reference as a particular type.</span></span> <span data-ttu-id="72249-129">No entanto, você pode simplesmente declarar a referência de variável:</span><span class="sxs-lookup"><span data-stu-id="72249-129">However, you can simply declare the variable reference:</span></span>
 
 
 ```
@@ -136,7 +136,7 @@ ms.locfileid: "103917169"
 
 
 
-<span data-ttu-id="daa13-130">Algumas linguagens de programação não dão suporte a coleções.</span><span class="sxs-lookup"><span data-stu-id="daa13-130">Some programming languages do not support collections.</span></span> <span data-ttu-id="daa13-131">No entanto, você pode acessar os métodos de um objeto [**Character**](/windows/desktop/lwef/the-characters-object) com o método [**Character**](character-method.md) :</span><span class="sxs-lookup"><span data-stu-id="daa13-131">However, you can access a [**Character**](/windows/desktop/lwef/the-characters-object) object's methods with the [**Character**](character-method.md) method:</span></span>
+<span data-ttu-id="72249-130">Algumas linguagens de programação não dão suporte a coleções.</span><span class="sxs-lookup"><span data-stu-id="72249-130">Some programming languages do not support collections.</span></span> <span data-ttu-id="72249-131">No entanto, você pode acessar os métodos de um objeto [**Character**](/windows/desktop/lwef/the-characters-object) com o método [**Character**](character-method.md) :</span><span class="sxs-lookup"><span data-stu-id="72249-131">However, you can access a [**Character**](/windows/desktop/lwef/the-characters-object) object's methods with the [**Character**](character-method.md) method:</span></span>
 
 
 ```
@@ -145,7 +145,7 @@ ms.locfileid: "103917169"
 
 
 
-<span data-ttu-id="daa13-132">Além disso, você também pode criar uma referência ao objeto [**Character**](/windows/desktop/lwef/the-characters-object) para tornar o código de script mais fácil de seguir:</span><span class="sxs-lookup"><span data-stu-id="daa13-132">In addition, you can also create a reference to the [**Character**](/windows/desktop/lwef/the-characters-object) object to make your script code easier to follow:</span></span>
+<span data-ttu-id="72249-132">Além disso, você também pode criar uma referência ao objeto [**Character**](/windows/desktop/lwef/the-characters-object) para tornar o código de script mais fácil de seguir:</span><span class="sxs-lookup"><span data-stu-id="72249-132">In addition, you can also create a reference to the [**Character**](/windows/desktop/lwef/the-characters-object) object to make your script code easier to follow:</span></span>
 
 
 ```

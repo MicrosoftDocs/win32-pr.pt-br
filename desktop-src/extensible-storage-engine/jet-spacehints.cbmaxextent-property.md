@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646717"
 ---
-# <a name="jet_spacehintscbmaxextent-property"></a><span data-ttu-id="4fe00-103">Propriedade JET_SPACEHINTS. cbMaxExtent</span><span class="sxs-lookup"><span data-stu-id="4fe00-103">JET_SPACEHINTS.cbMaxExtent property</span></span>
+# <a name="jet_spacehintscbmaxextent-property"></a><span data-ttu-id="49057-103">Propriedade JET_SPACEHINTS. cbMaxExtent</span><span class="sxs-lookup"><span data-stu-id="49057-103">JET_SPACEHINTS.cbMaxExtent property</span></span>
 
-<span data-ttu-id="4fe00-104">Obtém ou define o valor que define o teto de ulGrowth.</span><span class="sxs-lookup"><span data-stu-id="4fe00-104">Gets or sets the value that sets the ceiling of ulGrowth.</span></span> <span data-ttu-id="4fe00-105">Esse valor está em bytes.</span><span class="sxs-lookup"><span data-stu-id="4fe00-105">This value is in bytes.</span></span>
+<span data-ttu-id="49057-104">Obtém ou define o valor que define o teto de ulGrowth.</span><span class="sxs-lookup"><span data-stu-id="49057-104">Gets or sets the value that sets the ceiling of ulGrowth.</span></span> <span data-ttu-id="49057-105">Esse valor está em bytes.</span><span class="sxs-lookup"><span data-stu-id="49057-105">This value is in bytes.</span></span>
 
-<span data-ttu-id="4fe00-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="4fe00-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="4fe00-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="4fe00-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="49057-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="49057-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="49057-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="49057-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4fe00-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="4fe00-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="49057-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="49057-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.cbMaxExtent = value
 public int cbMaxExtent { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="4fe00-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="4fe00-109">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="49057-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="49057-109">Property value</span></span>
 
-<span data-ttu-id="4fe00-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="4fe00-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="49057-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="49057-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="4fe00-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="4fe00-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49057-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="49057-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="4fe00-112">Referência</span><span class="sxs-lookup"><span data-stu-id="4fe00-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="49057-112">Referência</span><span class="sxs-lookup"><span data-stu-id="49057-112">Reference</span></span>
 
-[<span data-ttu-id="4fe00-113">Classe JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="4fe00-113">JET_SPACEHINTS class</span></span>](./jet-spacehints-class.md)
+[<span data-ttu-id="49057-113">Classe JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="49057-113">JET_SPACEHINTS class</span></span>](./jet-spacehints-class.md)
 
-[<span data-ttu-id="4fe00-114">Membros do JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="4fe00-114">JET_SPACEHINTS members</span></span>](./jet-spacehints-members.md)
+[<span data-ttu-id="49057-114">Membros do JET_SPACEHINTS</span><span class="sxs-lookup"><span data-stu-id="49057-114">JET_SPACEHINTS members</span></span>](./jet-spacehints-members.md)
 
-[<span data-ttu-id="4fe00-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="4fe00-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="49057-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="49057-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

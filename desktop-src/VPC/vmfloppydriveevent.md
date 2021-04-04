@@ -21,13 +21,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645044"
 ---
-# <a name="vmfloppydriveevent-enumeration"></a><span data-ttu-id="58a95-104">Enumeração vmFloppyDriveEvent</span><span class="sxs-lookup"><span data-stu-id="58a95-104">vmFloppyDriveEvent enumeration</span></span>
+# <a name="vmfloppydriveevent-enumeration"></a><span data-ttu-id="09fa6-104">Enumeração vmFloppyDriveEvent</span><span class="sxs-lookup"><span data-stu-id="09fa6-104">vmFloppyDriveEvent enumeration</span></span>
 
-<span data-ttu-id="58a95-105">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="58a95-105">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="58a95-106">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="58a95-106">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
+<span data-ttu-id="09fa6-105">\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8.</span><span class="sxs-lookup"><span data-stu-id="09fa6-105">\[Windows Virtual PC is no longer available for use as of Windows 8.</span></span> <span data-ttu-id="09fa6-106">Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span><span class="sxs-lookup"><span data-stu-id="09fa6-106">Instead, use the [Hyper-V WMI provider (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]</span></span>
 
-<span data-ttu-id="58a95-107">Especifica os eventos da unidade de disquete.</span><span class="sxs-lookup"><span data-stu-id="58a95-107">Specifies the floppy drive events.</span></span>
+<span data-ttu-id="09fa6-107">Especifica os eventos da unidade de disquete.</span><span class="sxs-lookup"><span data-stu-id="09fa6-107">Specifies the floppy drive events.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="58a95-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="58a95-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="09fa6-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="09fa6-108">Syntax</span></span>
 
 
 ```C++
@@ -39,43 +39,43 @@ typedef enum  {
 
 
 
-## <a name="constants"></a><span data-ttu-id="58a95-109">Constantes</span><span class="sxs-lookup"><span data-stu-id="58a95-109">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="09fa6-109">Constantes</span><span class="sxs-lookup"><span data-stu-id="09fa6-109">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="58a95-110"><span id="vmFloppyDriveEvent_OnInsert"></span><span id="vmfloppydriveevent_oninsert"></span><span id="VMFLOPPYDRIVEEVENT_ONINSERT"></span>**vmFloppyDriveEvent \_ OnInsert**</span><span class="sxs-lookup"><span data-stu-id="58a95-110"><span id="vmFloppyDriveEvent_OnInsert"></span><span id="vmfloppydriveevent_oninsert"></span><span id="VMFLOPPYDRIVEEVENT_ONINSERT"></span>**vmFloppyDriveEvent\_OnInsert**</span></span>
+<span data-ttu-id="09fa6-110"><span id="vmFloppyDriveEvent_OnInsert"></span><span id="vmfloppydriveevent_oninsert"></span><span id="VMFLOPPYDRIVEEVENT_ONINSERT"></span>**vmFloppyDriveEvent \_ OnInsert**</span><span class="sxs-lookup"><span data-stu-id="09fa6-110"><span id="vmFloppyDriveEvent_OnInsert"></span><span id="vmfloppydriveevent_oninsert"></span><span id="VMFLOPPYDRIVEEVENT_ONINSERT"></span>**vmFloppyDriveEvent\_OnInsert**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="58a95-111">Uma imagem de disquete é anexada ou a mídia real é inserida em uma unidade de host.</span><span class="sxs-lookup"><span data-stu-id="58a95-111">A floppy disk image is attached or real media is inserted into a host drive.</span></span>
+<span data-ttu-id="09fa6-111">Uma imagem de disquete é anexada ou a mídia real é inserida em uma unidade de host.</span><span class="sxs-lookup"><span data-stu-id="09fa6-111">A floppy disk image is attached or real media is inserted into a host drive.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="58a95-112"><span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent \_ Onejeção**</span><span class="sxs-lookup"><span data-stu-id="58a95-112"><span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent\_OnEject**</span></span>
+<span data-ttu-id="09fa6-112"><span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent \_ Onejeção**</span><span class="sxs-lookup"><span data-stu-id="09fa6-112"><span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent\_OnEject**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="58a95-113">A mídia foi ejetada.</span><span class="sxs-lookup"><span data-stu-id="58a95-113">Media has been ejected.</span></span>
+<span data-ttu-id="09fa6-113">A mídia foi ejetada.</span><span class="sxs-lookup"><span data-stu-id="09fa6-113">Media has been ejected.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="58a95-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="58a95-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="09fa6-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="09fa6-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="58a95-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="58a95-115">Requirement</span></span> | <span data-ttu-id="58a95-116">Valor</span><span class="sxs-lookup"><span data-stu-id="58a95-116">Value</span></span> |
+| <span data-ttu-id="09fa6-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="09fa6-115">Requirement</span></span> | <span data-ttu-id="09fa6-116">Valor</span><span class="sxs-lookup"><span data-stu-id="09fa6-116">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="58a95-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58a95-117">Minimum supported client</span></span><br/> | <span data-ttu-id="58a95-118">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="58a95-118">Windows 7 \[desktop apps only\]</span></span><br/>                                                    |
-| <span data-ttu-id="58a95-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58a95-119">Minimum supported server</span></span><br/> | <span data-ttu-id="58a95-120">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="58a95-120">None supported</span></span><br/>                                                                     |
-| <span data-ttu-id="58a95-121">Fim do suporte do cliente</span><span class="sxs-lookup"><span data-stu-id="58a95-121">End of client support</span></span><br/>    | <span data-ttu-id="58a95-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="58a95-122">Windows 7</span></span><br/>                                                                          |
-| <span data-ttu-id="58a95-123">Produto</span><span class="sxs-lookup"><span data-stu-id="58a95-123">Product</span></span><br/>                  | <span data-ttu-id="58a95-124">Windows Virtual PC</span><span class="sxs-lookup"><span data-stu-id="58a95-124">Windows Virtual PC</span></span><br/>                                                                 |
-| <span data-ttu-id="58a95-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="58a95-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="58a95-126"><dt>VPCCOMInterfaces. h</dt></span><span class="sxs-lookup"><span data-stu-id="58a95-126"><dt>VPCCOMInterfaces.h</dt></span></span> </dl> |
+| <span data-ttu-id="09fa6-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="09fa6-117">Minimum supported client</span></span><br/> | <span data-ttu-id="09fa6-118">\[Somente aplicativos de área de trabalho do Windows 7\]</span><span class="sxs-lookup"><span data-stu-id="09fa6-118">Windows 7 \[desktop apps only\]</span></span><br/>                                                    |
+| <span data-ttu-id="09fa6-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="09fa6-119">Minimum supported server</span></span><br/> | <span data-ttu-id="09fa6-120">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="09fa6-120">None supported</span></span><br/>                                                                     |
+| <span data-ttu-id="09fa6-121">Fim do suporte do cliente</span><span class="sxs-lookup"><span data-stu-id="09fa6-121">End of client support</span></span><br/>    | <span data-ttu-id="09fa6-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="09fa6-122">Windows 7</span></span><br/>                                                                          |
+| <span data-ttu-id="09fa6-123">Produto</span><span class="sxs-lookup"><span data-stu-id="09fa6-123">Product</span></span><br/>                  | <span data-ttu-id="09fa6-124">Windows Virtual PC</span><span class="sxs-lookup"><span data-stu-id="09fa6-124">Windows Virtual PC</span></span><br/>                                                                 |
+| <span data-ttu-id="09fa6-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="09fa6-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="09fa6-126"><dt>VPCCOMInterfaces. h</dt></span><span class="sxs-lookup"><span data-stu-id="09fa6-126"><dt>VPCCOMInterfaces.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="58a95-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="58a95-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="09fa6-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="09fa6-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="58a95-128">**IVMFloppyDriveEvents**</span><span class="sxs-lookup"><span data-stu-id="58a95-128">**IVMFloppyDriveEvents**</span></span>](ivmfloppydriveevents.md)
+[<span data-ttu-id="09fa6-128">**IVMFloppyDriveEvents**</span><span class="sxs-lookup"><span data-stu-id="09fa6-128">**IVMFloppyDriveEvents**</span></span>](ivmfloppydriveevents.md)
 </dt> </dl>
 
  

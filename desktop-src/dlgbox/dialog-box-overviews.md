@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103663872"
 ---
-# <a name="dialog-box-overviews"></a><span data-ttu-id="e9f6d-104">Visões gerais da caixa de diálogo</span><span class="sxs-lookup"><span data-stu-id="e9f6d-104">Dialog Box Overviews</span></span>
+# <a name="dialog-box-overviews"></a><span data-ttu-id="131f4-104">Visões gerais da caixa de diálogo</span><span class="sxs-lookup"><span data-stu-id="131f4-104">Dialog Box Overviews</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e9f6d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e9f6d-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="131f4-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="131f4-105">In this section</span></span>
 
--   [<span data-ttu-id="e9f6d-106">Sobre caixas de diálogo</span><span class="sxs-lookup"><span data-stu-id="e9f6d-106">About Dialog Boxes</span></span>](about-dialog-boxes.md)
--   [<span data-ttu-id="e9f6d-107">Considerações sobre programação de caixa de diálogo</span><span class="sxs-lookup"><span data-stu-id="e9f6d-107">Dialog Box Programming Considerations</span></span>](dlgbox-programming-considerations.md)
--   [<span data-ttu-id="e9f6d-108">Usando caixas de diálogo</span><span class="sxs-lookup"><span data-stu-id="e9f6d-108">Using Dialog Boxes</span></span>](using-dialog-boxes.md)
+-   [<span data-ttu-id="131f4-106">Sobre caixas de diálogo</span><span class="sxs-lookup"><span data-stu-id="131f4-106">About Dialog Boxes</span></span>](about-dialog-boxes.md)
+-   [<span data-ttu-id="131f4-107">Considerações sobre programação de caixa de diálogo</span><span class="sxs-lookup"><span data-stu-id="131f4-107">Dialog Box Programming Considerations</span></span>](dlgbox-programming-considerations.md)
+-   [<span data-ttu-id="131f4-108">Usando caixas de diálogo</span><span class="sxs-lookup"><span data-stu-id="131f4-108">Using Dialog Boxes</span></span>](using-dialog-boxes.md)
 
  
 

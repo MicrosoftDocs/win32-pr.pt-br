@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103930558"
 ---
-# <a name="d3ddebugmonitortokens-enumeration"></a><span data-ttu-id="366a6-103">Enumeração D3DDEBUGMONITORTOKENS</span><span class="sxs-lookup"><span data-stu-id="366a6-103">D3DDEBUGMONITORTOKENS enumeration</span></span>
+# <a name="d3ddebugmonitortokens-enumeration"></a><span data-ttu-id="34e4d-103">Enumeração D3DDEBUGMONITORTOKENS</span><span class="sxs-lookup"><span data-stu-id="34e4d-103">D3DDEBUGMONITORTOKENS enumeration</span></span>
 
-<span data-ttu-id="366a6-104">Define os tokens do monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="366a6-104">Defines the debug monitor tokens.</span></span>
+<span data-ttu-id="34e4d-104">Define os tokens do monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="34e4d-104">Defines the debug monitor tokens.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="366a6-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="366a6-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="34e4d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="34e4d-105">Syntax</span></span>
 
 
 ```C++
@@ -37,53 +37,53 @@ typedef enum D3DDEBUGMONITORTOKENS {
 
 
 
-## <a name="constants"></a><span data-ttu-id="366a6-106">Constantes</span><span class="sxs-lookup"><span data-stu-id="366a6-106">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="34e4d-106">Constantes</span><span class="sxs-lookup"><span data-stu-id="34e4d-106">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="366a6-107"><span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT \_ habilitar**</span><span class="sxs-lookup"><span data-stu-id="366a6-107"><span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT\_ENABLE**</span></span>
+<span data-ttu-id="34e4d-107"><span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT \_ habilitar**</span><span class="sxs-lookup"><span data-stu-id="34e4d-107"><span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT\_ENABLE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="366a6-108">Habilite o monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="366a6-108">Enable the debug monitor.</span></span>
+<span data-ttu-id="34e4d-108">Habilite o monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="34e4d-108">Enable the debug monitor.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="366a6-109"><span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT \_ desabilitar**</span><span class="sxs-lookup"><span data-stu-id="366a6-109"><span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT\_DISABLE**</span></span>
+<span data-ttu-id="34e4d-109"><span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT \_ desabilitar**</span><span class="sxs-lookup"><span data-stu-id="34e4d-109"><span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT\_DISABLE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="366a6-110">Desabilite o monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="366a6-110">Disable the debug monitor.</span></span>
+<span data-ttu-id="34e4d-110">Desabilite o monitor de depuração.</span><span class="sxs-lookup"><span data-stu-id="34e4d-110">Disable the debug monitor.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="366a6-111"><span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ forçar \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="366a6-111"><span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT\_FORCE\_DWORD**</span></span>
+<span data-ttu-id="34e4d-111"><span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ forçar \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="34e4d-111"><span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT\_FORCE\_DWORD**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="366a6-112">Força essa enumeração a compilar a 32 bits de tamanho.</span><span class="sxs-lookup"><span data-stu-id="366a6-112">Forces this enumeration to compile to 32 bits in size.</span></span> <span data-ttu-id="366a6-113">Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="366a6-113">Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits.</span></span> <span data-ttu-id="366a6-114">Este valor não é usado.</span><span class="sxs-lookup"><span data-stu-id="366a6-114">This value is not used.</span></span>
+<span data-ttu-id="34e4d-112">Força essa enumeração a compilar a 32 bits de tamanho.</span><span class="sxs-lookup"><span data-stu-id="34e4d-112">Forces this enumeration to compile to 32 bits in size.</span></span> <span data-ttu-id="34e4d-113">Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="34e4d-113">Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits.</span></span> <span data-ttu-id="34e4d-114">Este valor não é usado.</span><span class="sxs-lookup"><span data-stu-id="34e4d-114">This value is not used.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="366a6-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="366a6-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="34e4d-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="34e4d-115">Remarks</span></span>
 
-<span data-ttu-id="366a6-116">Os valores nesse tipo enumerado são usados pelo \_ estado de RENDERIZAÇÃO D3DRS DEBUGMONITORTOKEN e são relevantes apenas para compilações de depuração.</span><span class="sxs-lookup"><span data-stu-id="366a6-116">The values in this enumerated type are used by the D3DRS\_DEBUGMONITORTOKEN render state and are only relevant for debug builds.</span></span>
+<span data-ttu-id="34e4d-116">Os valores nesse tipo enumerado são usados pelo \_ estado de RENDERIZAÇÃO D3DRS DEBUGMONITORTOKEN e são relevantes apenas para compilações de depuração.</span><span class="sxs-lookup"><span data-stu-id="34e4d-116">The values in this enumerated type are used by the D3DRS\_DEBUGMONITORTOKEN render state and are only relevant for debug builds.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="366a6-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="366a6-117">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="34e4d-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="34e4d-117">Requirements</span></span>
 
 
 
-| <span data-ttu-id="366a6-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="366a6-118">Requirement</span></span> | <span data-ttu-id="366a6-119">Valor</span><span class="sxs-lookup"><span data-stu-id="366a6-119">Value</span></span> |
+| <span data-ttu-id="34e4d-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="34e4d-118">Requirement</span></span> | <span data-ttu-id="34e4d-119">Valor</span><span class="sxs-lookup"><span data-stu-id="34e4d-119">Value</span></span> |
 |-------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="366a6-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="366a6-120">Header</span></span><br/> | <dl> <span data-ttu-id="366a6-121"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="366a6-121"><dt>D3D9Types.h</dt></span></span> </dl> |
+| <span data-ttu-id="34e4d-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="34e4d-120">Header</span></span><br/> | <dl> <span data-ttu-id="34e4d-121"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="34e4d-121"><dt>D3D9Types.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="366a6-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="366a6-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="34e4d-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="34e4d-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="366a6-123">Enumerações do Direct3D</span><span class="sxs-lookup"><span data-stu-id="366a6-123">Direct3D Enumerations</span></span>](dx9-graphics-reference-d3d-enums.md)
+[<span data-ttu-id="34e4d-123">Enumerações do Direct3D</span><span class="sxs-lookup"><span data-stu-id="34e4d-123">Direct3D Enumerations</span></span>](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
-[<span data-ttu-id="366a6-124">**D3DRENDERSTATETYPE**</span><span class="sxs-lookup"><span data-stu-id="366a6-124">**D3DRENDERSTATETYPE**</span></span>](./d3drenderstatetype.md)
+[<span data-ttu-id="34e4d-124">**D3DRENDERSTATETYPE**</span><span class="sxs-lookup"><span data-stu-id="34e4d-124">**D3DRENDERSTATETYPE**</span></span>](./d3drenderstatetype.md)
 </dt> </dl>
 
  

@@ -19,27 +19,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/19/2020
 ms.locfileid: "103916981"
 ---
-# <a name="user-interface-plug-ins-programming-reference"></a><span data-ttu-id="8d81b-110">Referência de programação de plug-ins de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="8d81b-110">User Interface Plug-ins Programming Reference</span></span>
+# <a name="user-interface-plug-ins-programming-reference"></a><span data-ttu-id="2bfff-110">Referência de programação de plug-ins de interface do usuário</span><span class="sxs-lookup"><span data-stu-id="2bfff-110">User Interface Plug-ins Programming Reference</span></span>
 
-<span data-ttu-id="8d81b-111">O SDK (Software Development Kit) do Microsoft Windows Media Player oferece suporte a uma interface para plug-ins de interface do usuário. A seção a seguir documenta isso em detalhes.</span><span class="sxs-lookup"><span data-stu-id="8d81b-111">The Microsoft Windows Media Player Software Development Kit (SDK) supports one interface for UI plug-ins. The following section documents this in detail.</span></span>
+<span data-ttu-id="2bfff-111">O SDK (Software Development Kit) do Microsoft Windows Media Player oferece suporte a uma interface para plug-ins de interface do usuário. A seção a seguir documenta isso em detalhes.</span><span class="sxs-lookup"><span data-stu-id="2bfff-111">The Microsoft Windows Media Player Software Development Kit (SDK) supports one interface for UI plug-ins. The following section documents this in detail.</span></span>
 
 
 
-| <span data-ttu-id="8d81b-112">Seção</span><span class="sxs-lookup"><span data-stu-id="8d81b-112">Section</span></span>                                                  | <span data-ttu-id="8d81b-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d81b-113">Description</span></span>                                                                                                   |
+| <span data-ttu-id="2bfff-112">Seção</span><span class="sxs-lookup"><span data-stu-id="2bfff-112">Section</span></span>                                                  | <span data-ttu-id="2bfff-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="2bfff-113">Description</span></span>                                                                                                   |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="8d81b-114">WMPNotifyPluginAddRemove</span><span class="sxs-lookup"><span data-stu-id="8d81b-114">WMPNotifyPluginAddRemove</span></span>](/previous-versions/windows/desktop/api/wmpplug/nf-wmpplug-wmpnotifypluginaddremove) | <span data-ttu-id="8d81b-115">Uma função independente usada para notificar o Windows Media Player de que um plug-in foi instalado ou desinstalado.</span><span class="sxs-lookup"><span data-stu-id="8d81b-115">An independent function used to notify Windows Media Player that a plug-in has been installed or uninstalled.</span></span> |
-| [<span data-ttu-id="8d81b-116">Interface IWMPPluginUI</span><span class="sxs-lookup"><span data-stu-id="8d81b-116">IWMPPluginUI Interface</span></span>](/previous-versions/windows/desktop/api/wmpplug/nn-wmpplug-iwmppluginui)               | <span data-ttu-id="8d81b-117">Uma interface para plug-ins de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="8d81b-117">An interface to UI plug-ins.</span></span>                                                                                  |
-| [<span data-ttu-id="8d81b-118">Sinalizadores de registro</span><span class="sxs-lookup"><span data-stu-id="8d81b-118">Registration Flags</span></span>](registration-flags.md)             | <span data-ttu-id="8d81b-119">Uma lista de sinalizadores de configurações que afetam o comportamento dos plug-ins de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="8d81b-119">A list of settings flags that affect the behavior of UI plug-ins.</span></span>                                             |
+| [<span data-ttu-id="2bfff-114">WMPNotifyPluginAddRemove</span><span class="sxs-lookup"><span data-stu-id="2bfff-114">WMPNotifyPluginAddRemove</span></span>](/previous-versions/windows/desktop/api/wmpplug/nf-wmpplug-wmpnotifypluginaddremove) | <span data-ttu-id="2bfff-115">Uma função independente usada para notificar o Windows Media Player de que um plug-in foi instalado ou desinstalado.</span><span class="sxs-lookup"><span data-stu-id="2bfff-115">An independent function used to notify Windows Media Player that a plug-in has been installed or uninstalled.</span></span> |
+| [<span data-ttu-id="2bfff-116">Interface IWMPPluginUI</span><span class="sxs-lookup"><span data-stu-id="2bfff-116">IWMPPluginUI Interface</span></span>](/previous-versions/windows/desktop/api/wmpplug/nn-wmpplug-iwmppluginui)               | <span data-ttu-id="2bfff-117">Uma interface para plug-ins de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="2bfff-117">An interface to UI plug-ins.</span></span>                                                                                  |
+| [<span data-ttu-id="2bfff-118">Sinalizadores de registro</span><span class="sxs-lookup"><span data-stu-id="2bfff-118">Registration Flags</span></span>](registration-flags.md)             | <span data-ttu-id="2bfff-119">Uma lista de sinalizadores de configurações que afetam o comportamento dos plug-ins de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="2bfff-119">A list of settings flags that affect the behavior of UI plug-ins.</span></span>                                             |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="8d81b-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8d81b-120">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2bfff-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="2bfff-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8d81b-121">**Plug-ins de interface do usuário do Windows Media Player**</span><span class="sxs-lookup"><span data-stu-id="8d81b-121">**Windows Media Player User Interface Plug-ins**</span></span>](windows-media-player-user-interface-plug-ins.md)
+[<span data-ttu-id="2bfff-121">**Plug-ins de interface do usuário do Windows Media Player**</span><span class="sxs-lookup"><span data-stu-id="2bfff-121">**Windows Media Player User Interface Plug-ins**</span></span>](windows-media-player-user-interface-plug-ins.md)
 </dt> </dl>
 
  

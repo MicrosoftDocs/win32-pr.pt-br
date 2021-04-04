@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103917130"
 ---
-# <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a><span data-ttu-id="1933d-104">Código de exemplo para definir permissões em um grupo de propriedades</span><span class="sxs-lookup"><span data-stu-id="1933d-104">Example Code for Setting Permissions on a Group of Properties</span></span>
+# <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a><span data-ttu-id="0afcb-104">Código de exemplo para definir permissões em um grupo de propriedades</span><span class="sxs-lookup"><span data-stu-id="0afcb-104">Example Code for Setting Permissions on a Group of Properties</span></span>
 
-<span data-ttu-id="1933d-105">Os exemplos de código C e C++ a seguir criam uma ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades de [**informações pessoais**](/windows/desktop/ADSchema/r-personal-information) de objetos de usuário para o objeto de confiança especificado.</span><span class="sxs-lookup"><span data-stu-id="1933d-105">The following C and C++ code examples create an ACE that assigns read and write access to the attributes of the [**Personal Information**](/windows/desktop/ADSchema/r-personal-information) property set of user objects to the specified trustee.</span></span>
+<span data-ttu-id="0afcb-105">Os exemplos de código C e C++ a seguir criam uma ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades de [**informações pessoais**](/windows/desktop/ADSchema/r-personal-information) de objetos de usuário para o objeto de confiança especificado.</span><span class="sxs-lookup"><span data-stu-id="0afcb-105">The following C and C++ code examples create an ACE that assigns read and write access to the attributes of the [**Personal Information**](/windows/desktop/ADSchema/r-personal-information) property set of user objects to the specified trustee.</span></span>
 
 
 ```C++

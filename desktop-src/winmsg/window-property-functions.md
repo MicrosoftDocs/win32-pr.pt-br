@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663155"
 ---
-# <a name="window-property-functions"></a><span data-ttu-id="16835-103">Funções de propriedade de janela</span><span class="sxs-lookup"><span data-stu-id="16835-103">Window Property Functions</span></span>
+# <a name="window-property-functions"></a><span data-ttu-id="0e0a4-103">Funções de propriedade de janela</span><span class="sxs-lookup"><span data-stu-id="0e0a4-103">Window Property Functions</span></span>
 
--   [<span data-ttu-id="16835-104">**EnumProps**</span><span class="sxs-lookup"><span data-stu-id="16835-104">**EnumProps**</span></span>](/windows/win32/api/winuser/nf-winuser-enumpropsa)
--   [<span data-ttu-id="16835-105">**EnumPropsEx**</span><span class="sxs-lookup"><span data-stu-id="16835-105">**EnumPropsEx**</span></span>](/windows/win32/api/winuser/nf-winuser-enumpropsexa)
--   [<span data-ttu-id="16835-106">**GetProp**</span><span class="sxs-lookup"><span data-stu-id="16835-106">**GetProp**</span></span>](/windows/win32/api/winuser/nf-winuser-getpropa)
--   [<span data-ttu-id="16835-107">*PropEnumProc*</span><span class="sxs-lookup"><span data-stu-id="16835-107">*PropEnumProc*</span></span>](/windows/win32/api/winuser/nc-winuser-propenumproca)
--   [<span data-ttu-id="16835-108">*PropEnumProcEx*</span><span class="sxs-lookup"><span data-stu-id="16835-108">*PropEnumProcEx*</span></span>](/windows/win32/api/winuser/nc-winuser-propenumprocexa)
--   [<span data-ttu-id="16835-109">**RemoveProp**</span><span class="sxs-lookup"><span data-stu-id="16835-109">**RemoveProp**</span></span>](/windows/win32/api/winuser/nf-winuser-removepropa)
--   [<span data-ttu-id="16835-110">**SetProp**</span><span class="sxs-lookup"><span data-stu-id="16835-110">**SetProp**</span></span>](/windows/win32/api/winuser/nf-winuser-setpropa)
+-   [<span data-ttu-id="0e0a4-104">**EnumProps**</span><span class="sxs-lookup"><span data-stu-id="0e0a4-104">**EnumProps**</span></span>](/windows/win32/api/winuser/nf-winuser-enumpropsa)
+-   [<span data-ttu-id="0e0a4-105">**EnumPropsEx**</span><span class="sxs-lookup"><span data-stu-id="0e0a4-105">**EnumPropsEx**</span></span>](/windows/win32/api/winuser/nf-winuser-enumpropsexa)
+-   [<span data-ttu-id="0e0a4-106">**GetProp**</span><span class="sxs-lookup"><span data-stu-id="0e0a4-106">**GetProp**</span></span>](/windows/win32/api/winuser/nf-winuser-getpropa)
+-   [<span data-ttu-id="0e0a4-107">*PropEnumProc*</span><span class="sxs-lookup"><span data-stu-id="0e0a4-107">*PropEnumProc*</span></span>](/windows/win32/api/winuser/nc-winuser-propenumproca)
+-   [<span data-ttu-id="0e0a4-108">*PropEnumProcEx*</span><span class="sxs-lookup"><span data-stu-id="0e0a4-108">*PropEnumProcEx*</span></span>](/windows/win32/api/winuser/nc-winuser-propenumprocexa)
+-   [<span data-ttu-id="0e0a4-109">**RemoveProp**</span><span class="sxs-lookup"><span data-stu-id="0e0a4-109">**RemoveProp**</span></span>](/windows/win32/api/winuser/nf-winuser-removepropa)
+-   [<span data-ttu-id="0e0a4-110">**SetProp**</span><span class="sxs-lookup"><span data-stu-id="0e0a4-110">**SetProp**</span></span>](/windows/win32/api/winuser/nf-winuser-setpropa)
 
  
 

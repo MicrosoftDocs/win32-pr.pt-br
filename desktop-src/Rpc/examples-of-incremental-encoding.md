@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916619"
 ---
-# <a name="examples-of-incremental-encoding"></a><span data-ttu-id="797a4-104">Exemplos de codificação incremental</span><span class="sxs-lookup"><span data-stu-id="797a4-104">Examples of Incremental Encoding</span></span>
+# <a name="examples-of-incremental-encoding"></a><span data-ttu-id="80532-104">Exemplos de codificação incremental</span><span class="sxs-lookup"><span data-stu-id="80532-104">Examples of Incremental Encoding</span></span>
 
-<span data-ttu-id="797a4-105">A seção a seguir fornece um exemplo de como usar o identificador de serialização de estilo incremental para codificação de tipo.</span><span class="sxs-lookup"><span data-stu-id="797a4-105">The following section provides an example of how to use the incremental style serializing handle for type encoding.</span></span>
+<span data-ttu-id="80532-105">A seção a seguir fornece um exemplo de como usar o identificador de serialização de estilo incremental para codificação de tipo.</span><span class="sxs-lookup"><span data-stu-id="80532-105">The following section provides an example of how to use the incremental style serializing handle for type encoding.</span></span>
 
 ``` syntax
 /* This is an acf file. MooType is defined in the idl file */
@@ -28,7 +28,7 @@ typedef [ encode,decode ] MooType;
 }
 ```
 
-<span data-ttu-id="797a4-106">O trecho a seguir representa os fragmentos de aplicativo relevantes.</span><span class="sxs-lookup"><span data-stu-id="797a4-106">The following excerpt represents the relevant application fragments.</span></span>
+<span data-ttu-id="80532-106">O trecho a seguir representa os fragmentos de aplicativo relevantes.</span><span class="sxs-lookup"><span data-stu-id="80532-106">The following excerpt represents the relevant application fragments.</span></span>
 
 
 ```C++

@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646625"
 ---
-# <a name="esentcannotdisableversioningexception-class"></a><span data-ttu-id="3e78b-103">Classe EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="3e78b-103">EsentCannotDisableVersioningException class</span></span>
+# <a name="esentcannotdisableversioningexception-class"></a><span data-ttu-id="412d0-103">Classe EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="412d0-103">EsentCannotDisableVersioningException class</span></span>
 
-<span data-ttu-id="3e78b-104">Classe base para JET_err. CannotDisableVersioning exceções.</span><span class="sxs-lookup"><span data-stu-id="3e78b-104">Base class for JET_err.CannotDisableVersioning exceptions.</span></span>
+<span data-ttu-id="412d0-104">Classe base para JET_err. CannotDisableVersioning exceções.</span><span class="sxs-lookup"><span data-stu-id="412d0-104">Base class for JET_err.CannotDisableVersioning exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="3e78b-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="3e78b-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="412d0-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="412d0-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="3e78b-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="3e78b-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="3e78b-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="3e78b-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="3e78b-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="3e78b-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="3e78b-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="3e78b-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="3e78b-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="3e78b-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="3e78b-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="3e78b-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
-            <span data-ttu-id="3e78b-112">Microsoft. ISAM. ESENT. Interop. EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="3e78b-112">Microsoft.Isam.Esent.Interop.EsentCannotDisableVersioningException</span></span>  
+[<span data-ttu-id="412d0-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="412d0-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="412d0-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="412d0-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="412d0-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="412d0-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="412d0-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="412d0-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="412d0-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="412d0-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="412d0-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="412d0-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
+            <span data-ttu-id="412d0-112">Microsoft. ISAM. ESENT. Interop. EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="412d0-112">Microsoft.Isam.Esent.Interop.EsentCannotDisableVersioningException</span></span>  
 
-<span data-ttu-id="3e78b-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="3e78b-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="3e78b-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="3e78b-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="412d0-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="412d0-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="412d0-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="412d0-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3e78b-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="3e78b-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="412d0-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="412d0-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentCannotDisableVersioningException
 public sealed class EsentCannotDisableVersioningException : EsentUsageException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="3e78b-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="3e78b-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="412d0-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="412d0-116">Thread safety</span></span>
 
-<span data-ttu-id="3e78b-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="3e78b-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="3e78b-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="3e78b-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="412d0-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="412d0-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="412d0-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="412d0-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3e78b-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="3e78b-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="412d0-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="412d0-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="3e78b-120">Referência</span><span class="sxs-lookup"><span data-stu-id="3e78b-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="412d0-120">Referência</span><span class="sxs-lookup"><span data-stu-id="412d0-120">Reference</span></span>
 
-[<span data-ttu-id="3e78b-121">Membros do EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="3e78b-121">EsentCannotDisableVersioningException members</span></span>](./esentcannotdisableversioningexception-members.md)
+[<span data-ttu-id="412d0-121">Membros do EsentCannotDisableVersioningException</span><span class="sxs-lookup"><span data-stu-id="412d0-121">EsentCannotDisableVersioningException members</span></span>](./esentcannotdisableversioningexception-members.md)
 
-[<span data-ttu-id="3e78b-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3e78b-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="412d0-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="412d0-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
