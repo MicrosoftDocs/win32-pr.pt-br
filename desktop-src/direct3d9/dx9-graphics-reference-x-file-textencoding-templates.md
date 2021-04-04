@@ -42,7 +42,7 @@ Os membros do modelo consistem em um tipo de dados nomeado seguido por um nome o
 
 
 
-| Type    | Tamanho                               |
+| Tipo    | Tamanho                               |
 |---------|------------------------------------|
 | WORD    | 16 bits                            |
 | DWORD   | 32 bits                            |

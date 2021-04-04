@@ -36,7 +36,7 @@ Um atributo que contém o conjunto de registros DNSKEY para a raiz da zona DNS e
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2145                               |
 | System-ID-GUID    | 28c458f5-602d-4ac9-a77c-b3f1be503a7e                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

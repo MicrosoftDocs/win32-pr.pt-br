@@ -36,7 +36,7 @@ O GUID do escopo no qual a codificação associada está localizada.
 | Frequência de atualização  | Sempre que uma classe que contém o atributo é adicionada ou modificada. |
 | Attribute-Id      | 1.2.840.113556.1.4.1686                                         |
 | System-ID-GUID    | 87b78d51-405f-4b7f-80ed-2bd28786f48d                            |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                     |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                     |
 
 
 

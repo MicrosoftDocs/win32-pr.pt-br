@@ -36,7 +36,7 @@ O número total de logons interativos com falha desde que esse recurso foi ativa
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1972              |
 | System-ID-GUID    | dc3ca86f-70AD-4960-8425-a4d6313d93dd |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

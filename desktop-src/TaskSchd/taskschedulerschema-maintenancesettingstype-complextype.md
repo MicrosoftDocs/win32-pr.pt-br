@@ -87,7 +87,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

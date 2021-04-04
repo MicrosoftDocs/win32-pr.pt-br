@@ -36,7 +36,7 @@ O atributo **DNS-Notify-secundários** não está sendo usado no momento.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.381               |
 | System-ID-GUID    | e0fa1e68-9b45-11d0-afdd-00c04fd930c9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

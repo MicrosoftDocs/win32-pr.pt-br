@@ -36,7 +36,7 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.233               |
 | System-ID-GUID    | 281416c9-1968-11d0-a28f-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

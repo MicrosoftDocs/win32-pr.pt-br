@@ -51,7 +51,7 @@ Esse atributo pode ser zero ou uma combinação de um ou mais dos valores a segu
 | Frequência de atualização  | Quando o objeto é criado.                    |
 | Attribute-Id      | 1.2.840.113556.1.2.1                           |
 | System-ID-GUID    | bf96798c-0de6-11d0-a285-00aa003049e2           |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)           |
+| Syntax            | [**Enumeração**](s-enumeration.md)           |
 
 
 

@@ -36,7 +36,7 @@ O objeto é reciclado. Para uso com a lixeira do AD.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2058              |
 | System-ID-GUID    | 8fb59256-55f1-444b-aacb-f5b482fe3459 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

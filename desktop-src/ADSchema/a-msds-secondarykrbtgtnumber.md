@@ -36,7 +36,7 @@ Identifica o número de identificação de protocolo associado ao domínio secun
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1929              |
 | System-ID-GUID    | aa156612-2396-467e-ad6a-28d23fdb1865 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

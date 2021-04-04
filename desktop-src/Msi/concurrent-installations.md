@@ -21,7 +21,7 @@ O tipo de ação de instalação simultânea é especificado no campo tipo da ta
 
 
 
-| Tipo de ação personalizada                                 | Descrição                                                                     |
+| Tipo de ação personalizada                                 | Description                                                                     |
 |----------------------------------------------------|---------------------------------------------------------------------------------|
 | [Tipo de ação personalizada 7](custom-action-type-7.md)   | Instalação simultânea de um produto que reside no pacote de instalação.      |
 | [Tipo de ação personalizada 23](custom-action-type-23.md) | Instalação simultânea de um pacote do instalador na árvore de origem atual. |

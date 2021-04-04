@@ -36,7 +36,7 @@ O país/região em que o usuário está localizado.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.131                      |
 | System-ID-GUID    | f0f8ffa7-1191-11d0-a060-00aa006c33ed        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

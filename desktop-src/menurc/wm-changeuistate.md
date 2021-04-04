@@ -94,7 +94,7 @@ Se a palavra de ordem inferior de *wParam* for \_ inicializada por UIS, o sistem
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ Um atributo que define quantas iterações de hash NSEC3 executar ao assinar a z
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2138              |
 | System-ID-GUID    | 80b70aab-8959-4ec0-8e93-126e76df3aca |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

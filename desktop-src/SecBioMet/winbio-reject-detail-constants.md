@@ -125,7 +125,7 @@ As constantes a seguir podem ser usadas para especificar o motivo pelo qual um p
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

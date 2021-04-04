@@ -36,7 +36,7 @@ Usado para armazenar o alias de domínio.
 | Frequência de atualização  | Somente durante a reestruturação do domínio.             |
 | Attribute-Id      | 1.2.840.113556.1.4.1719                     |
 | System-ID-GUID    | 2143acca-eead-4d29-b591-85fa49ce9173        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
