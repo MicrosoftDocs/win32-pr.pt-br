@@ -17,7 +17,7 @@ ms.locfileid: "103822479"
 
 O nome do elemento ( {0} ) não deve conter o texto do ControlType ( {1} )
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Aviso
 

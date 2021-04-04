@@ -32,7 +32,7 @@ Tipo: **[DXCoreNotificationType](./ne-dxcore_interface-dxcorenotificationtype.md
 
 O tipo de notificação que representa esta invocação. Consulte a tabela em [DXCoreNotificationType](./ne-dxcore_interface-dxcorenotificationtype.md) para obter informações sobre quais tipos são válidos com quais tipos de objetos.
 
-### <a name="object"></a>object
+### <a name="object"></a>objeto
 
 Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
@@ -44,6 +44,6 @@ Tipo: **void \***
 
 Um ponteiro, que pode ser `nullptr` , para um objeto que contém informações de contexto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
