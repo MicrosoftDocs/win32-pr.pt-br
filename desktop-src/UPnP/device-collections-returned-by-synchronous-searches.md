@@ -1,0 +1,89 @@
+---
+title: Coleções de dispositivos retornadas por pesquisas síncronas
+description: Coleções de dispositivos são objetos que contêm um ou mais objetos de dispositivo. Uma coleção de dispositivos expõe a interface IUPnPDevices que fornece métodos e propriedades para percorrer a coleção e extrair objetos de dispositivo individuais.
+ms.assetid: 45455c3f-7281-4f96-a609-2efd2cf36aa2
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6fd581b7c79fe67a825e411d53e8c44c0f3d4326
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104084749"
+---
+# <a name="device-collections-returned-by-synchronous-searches"></a>Coleções de dispositivos retornadas por pesquisas síncronas
+
+Coleções de dispositivos são objetos que contêm um ou mais objetos de dispositivo. Uma coleção de dispositivos expõe a interface [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) que fornece métodos e propriedades para percorrer a coleção e extrair objetos de dispositivo individuais.
+
+## <a name="vbscript-example"></a>Exemplo de VBScript
+
+Os aplicativos VBScript podem acessar os objetos na coleção de duas maneiras. Primeiro, eles podem atravessar os elementos sequencialmente usando um para... cada... Next, conforme mostrado no exemplo a seguir:
+
+
+```VB
+for each deviceObj in devices
+    MsgBox(deviceObj.FriendlyName)
+next
+```
+
+
+
+Neste exemplo, presume-se que a variável de dispositivos tenha sido inicializada com o resultado de uma pesquisa anterior. O loop percorre os objetos de dispositivo na coleção, atribuindo a variável deviceObj o valor de cada objeto de dispositivo por vez. O corpo do loop pode conter código que processa o objeto do dispositivo.
+
+## <a name="c-example"></a>Exemplo de C++
+
+O exemplo a seguir mostra o código C++ necessário para acessar os objetos em uma coleção de objetos de dispositivo. A função mostrada, **TraverseCollection**, recebe um ponteiro para a interface [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) como um parâmetro de entrada. Esse ponteiro de interface pode ser retornado pelo método [**FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype) , ou outros métodos **Find** , do objeto localizador de dispositivos.
+
+
+```C++
+#include <windows.h>
+#include <upnp.h>
+
+#pragma comment(lib, "oleaut32.lib")
+
+HRESULT TraverseCollection(IUPnPDevices * pDevices)
+{
+    IUnknown * pUnk = NULL;
+    HRESULT hr = pDevices->get__NewEnum(&pUnk);
+    if (SUCCEEDED(hr))
+    {
+        IEnumVARIANT * pEnumVar = NULL;
+        hr = pUnk->QueryInterface(IID_IEnumVARIANT, (void **) &pEnumVar);
+        if (SUCCEEDED(hr))
+        {
+            VARIANT varCurDevice;
+            VariantInit(&varCurDevice);
+            pEnumVar->Reset();
+            // Loop through each device in the collection
+            while (S_OK == pEnumVar->Next(1, &varCurDevice, NULL))
+            {
+                IUPnPDevice * pDevice = NULL;
+                IDispatch * pdispDevice = V_DISPATCH(&varCurDevice);
+                if (SUCCEEDED(pdispDevice->QueryInterface(IID_IUPnPDevice, (void **) &pDevice)))
+                {
+                    // Do something interesting with pDevice
+                    BSTR bstrName = NULL;
+                    if (SUCCEEDED(pDevice->get_FriendlyName(&bstrName)))
+                    {
+                        OutputDebugStringW(bstrName);
+                        SysFreeString(bstrName);
+                    }
+                }
+                VariantClear(&varCurDevice);
+                pDevice->Release();
+            }
+            pEnumVar->Release();
+        }
+        pUnk->Release();
+    }
+    return hr;
+}
+```
+
+
+
+A primeira etapa é solicitar um novo enumerador para a coleção usando a propriedade [**\_ NewEnum**](/windows/win32/api/upnp/nf-upnp-iupnpdevices-get__newenum) . Isso retorna um enumerador como a interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . O código de exemplo chama [**IUnknown:: QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter a interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) . Em seguida, o código de exemplo define o enumerador como o início da coleção invocando o método [**IEnumVARIANT:: Reset**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-reset) . Por fim, o código de exemplo invoca o método [**IEnumVARIANT:: Next**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-next) para atravessar a coleção. Os objetos de dispositivo na coleção estão contidos em estruturas de **variante** . Essas estruturas contêm ponteiros para interfaces [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) nos objetos do dispositivo. Para obter a interface [**IUPnPDevice**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevice) , o código de exemplo invoca **QueryInterface** na interface **IDispatch** .
+
+ 
+
+ 

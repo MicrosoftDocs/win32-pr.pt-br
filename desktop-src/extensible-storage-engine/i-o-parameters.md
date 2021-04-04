@@ -50,7 +50,7 @@ Este tópico contém parâmetros que são usados para entrada e saída (e/s).
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -145,7 +145,7 @@ Quando esse parâmetro for definido como true, qualquer pasta que estiver ausent
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
+<td><p>Todos</p></td>
 </tr>
 </tbody>
 </table>
@@ -231,7 +231,7 @@ Esse parâmetro controla como o ESE lida com as operações de e/s. Os valores p
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -295,7 +295,7 @@ Um valor maior para esse parâmetro pode ajudar significativamente o desempenho 
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -332,7 +332,7 @@ Um valor maior para esse parâmetro pode ajudar significativamente o desempenho 
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
+<td><p>Todos</p></td>
 </tr>
 </tbody>
 </table>
@@ -355,7 +355,7 @@ Número máximo de bytes que podem ser agrupados para uma operação de leitura 
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -414,7 +414,7 @@ Número máximo de bytes que podem ser agrupados para uma operação de gravaç�
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -473,7 +473,7 @@ Número máximo de bytes que podem ser gappeddos para uma operação de e/s de g
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
@@ -532,7 +532,7 @@ Número máximo de bytes que podem ser gapped para uma operação de e/s de leit
 </tr>
 <tr class="even">
 <td><p>Tipo:</p></td>
-<td><p>Inteiro</p></td>
+<td><p>Integer</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>

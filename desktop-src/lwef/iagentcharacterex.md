@@ -21,7 +21,7 @@ ms.locfileid: "103822798"
 
 
 
-| Métodos IAgentCharacterEx                                         | Description                                                                    |
+| Métodos IAgentCharacterEx                                         | Descrição                                                                    |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [**ShowPopupMenu**](iagentcharacterex--showpopupmenu.md)         | Exibe o menu pop-up do caractere.                                    |
 | [**SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md)   | Define se o servidor exibe automaticamente o menu pop-up do caractere.    |

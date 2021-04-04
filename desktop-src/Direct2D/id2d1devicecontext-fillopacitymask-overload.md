@@ -35,7 +35,7 @@ Preencha usando o canal alfa do bitmap de máscara de opacidade fornecido. A opa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

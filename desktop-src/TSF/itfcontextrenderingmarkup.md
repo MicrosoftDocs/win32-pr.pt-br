@@ -27,7 +27,7 @@ A interface **ITfContextRenderingMarkup** é implementada pelo Gerenciador do TS
 
 
 
-| Métodos ITfContextRenderingMarkup                                                | Description                                                           |
+| Métodos ITfContextRenderingMarkup                                                | Descrição                                                           |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | [GetRenderingMarkup](itfcontextrenderingmarkup-getrenderingmarkup.md)           | Recupera um enumerador das marcações de renderização para o intervalo especificado. |
 | [FindNextRenderingMarkup](itfcontextrenderingmarkup-findnextrenderingmarkup.md) | Esta função não está implementada. Ele sempre retorna E \_ NOTIMPL.       |
