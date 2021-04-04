@@ -23,7 +23,7 @@ A linguagem MOF dá suporte aos seguintes tipos de dados e categorias de tipos d
 -   [HORÁRIO](date-and-time-format.md)
 -   [Matrizes MOF](mof-arrays.md)
 -   [Números](numbers.md)
--   [OBJETO](object.md)
+-   [OBJECT](object.md)
 -   [Referências](references.md)
 -   [Cadeias de caracteres](strings.md)
 -   [Mapa de valor](value-map.md)
