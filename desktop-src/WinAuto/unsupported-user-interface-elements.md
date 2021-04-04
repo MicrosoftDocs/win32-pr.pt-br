@@ -31,7 +31,7 @@ O Microsoft Acessibilidade Ativa não oferece suporte aos controles predefinidos
 
 
 
-| Nome da classe de janela | Description                                                 |
+| Nome da classe de janela | Descrição                                                 |
 |-------------------|-------------------------------------------------------------|
 | DDEMLEvent        | Windows NT: a classe para eventos DDEML                      |
 | Mensagem           | Windows 2000 e posterior: a classe para uma janela somente mensagem |

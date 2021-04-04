@@ -31,7 +31,7 @@ O Sequencer MIDI dá suporte ao seguinte conjunto de comandos.
 | [**Guarde**](save.md)             | [**\_salvar MCI**](mci-save.md)             |
 | [**Procure**](seek.md)             | [**busca de MCI \_**](mci-seek.md)             |
 | [**Definição**](set.md)               | [**conjunto de MCI \_**](mci-set.md)               |
-| [**status**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         |
+| [**Estado**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         |
 | [**deixar**](stop.md)             | [**parada do MCI \_**](mci-stop.md)             |
 | [SysInfo](sysinfo.md)           | [**SysInfo do MCI \_**](mci-sysinfo.md)       |
 

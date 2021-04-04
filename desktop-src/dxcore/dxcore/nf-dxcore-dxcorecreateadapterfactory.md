@@ -13,7 +13,7 @@ ms.locfileid: "103917557"
 ---
 # <a name="dxcorecreateadapterfactory-function"></a>Função DXCoreCreateAdapterFactory
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Cria uma fábrica de adaptador DXCore, que pode ser usada para gerar outros objetos DXCore. Para obter diretrizes de programação e exemplos de código, consulte [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
 
@@ -46,6 +46,6 @@ Se a função for realizada com sucesso, ela retornará **S_OK**. Caso contrári
 
 Durante o tempo em que uma referência existe em uma interface [IDXCoreAdapterFactory](../dxcore_interface/nn-dxcore_interface-idxcoreadapterfactory.md) , uma interface [IDXCoreAdapterList](../dxcore_interface/nn-dxcore_interface-idxcoreadapterlist.md) ou uma interface [IDXCoreAdapter](../dxcore_interface/nn-dxcore_interface-idxcoreadapter.md) , chamadas adicionais para **DXCoreCreateAdapterFactory**, [IDXCoreAdapterList:: GetFactory](../dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getfactory.md)ou [IDXCoreAdapter:: GetFactory](../dxcore_interface/nf-dxcore_interface-idxcoreadapter-getfactory.md) retornarão ponteiros para o mesmo objeto, aumentando a contagem de referência da interface **IDXCoreAdapterFactory** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

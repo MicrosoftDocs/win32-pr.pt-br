@@ -27,7 +27,7 @@ ms.locfileid: "103644969"
 
 Para scripts, obtém a hora em que a tarefa registrada está agendada para ser executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

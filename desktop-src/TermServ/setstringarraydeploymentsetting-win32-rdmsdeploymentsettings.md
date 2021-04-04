@@ -72,7 +72,7 @@ Uma matriz de cadeias de caracteres que contém as novas configurações de impl
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1386                     |
 | System-ID-GUID    | b7577c94-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

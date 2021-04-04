@@ -36,7 +36,7 @@ Uma cadeia de caracteres que identifica o local de um repositório externo, como
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1834                     |
 | System-ID-GUID    | 604877cd-9cdb-47c7-b03d-3daadb044910        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

@@ -71,7 +71,7 @@ Um objeto [**RunningTaskCollection**](runningtaskcollection.md) que contém as t
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

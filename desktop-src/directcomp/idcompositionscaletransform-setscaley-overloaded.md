@@ -48,7 +48,7 @@ Altera ou anima o valor da propriedade ScaleY de uma transformação de escala 2
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
