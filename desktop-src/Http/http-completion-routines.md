@@ -45,7 +45,7 @@ A tabela a seguir resume o comportamento de conclusão para a conclusão síncro
 
 
 
-| pBytesReceived\* | pOverlapped  | Description                                                                             |
+| pBytesReceived\* | pOverlapped  | Descrição                                                                             |
 |------------------|--------------|-----------------------------------------------------------------------------------------|
 | **NULL**         | **NULL**     | O aplicativo não recebe informações sobre o número de bytes retornados.           |
 | **NULL**         | Não **nulo** | Operação assíncrona, o *pBytesReceived* não faz sentido.                                |

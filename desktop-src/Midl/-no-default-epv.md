@@ -39,7 +39,7 @@ Nesse caso, o aplicativo deve registrar um EPV com a chamada [**RpcServerRegiste
 
 **MIDL/ \_ Default \_ EPV filename. idl**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

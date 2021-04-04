@@ -34,7 +34,7 @@ O estilo do cabeçalho exibido na exibição.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

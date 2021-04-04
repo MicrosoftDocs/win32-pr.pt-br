@@ -68,7 +68,7 @@ Especifica o nome do arquivo que contém os dados de ícone que serão acessados
 
 Essa propriedade é somente gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -107,7 +107,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -41,7 +41,7 @@ A interface **IMsRdpClientAdvancedSettings3** tem essas propriedades.
 
 
 
-| Propriedade                                                                                                            | Tipo de acesso           | Description                                                                            |
+| Propriedade                                                                                                            | Tipo de acesso           | Descrição                                                                            |
 |:--------------------------------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------|
 | [**ConnectionBarShowMinimizeButton**](imsrdpclientadvancedsettings3-connectionbarshowminimizebutton.md)<br/> | Leitura/gravação<br/> | Especifica se o botão de **minimização** deve ser exibido na barra de conexão.<br/> |
 | [**ConnectionBarShowRestoreButton**](imsrdpclientadvancedsettings3-connectionbarshowrestorebutton.md)<br/>   | Leitura/gravação<br/> | Especifica se o botão de **restauração** deve ser exibido na barra de conexão.<br/>  |
@@ -76,7 +76,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -63,7 +63,7 @@ Uma ou mais instruções MIDL que definem os elementos da [**interface**](interf
 
 Normalmente, quando uma chamada para um método de interface gera um identificador de contexto, esse identificador se torna livremente disponível para qualquer outra interface. Ao usar o atributo de **\[ \_ \_ identificador \] de contexto estrito** , você garante que os métodos nessa interface só aceitarão identificadores de contexto que foram criados por um método da mesma interface. Interfaces compiladas sem **\[ \_ \_ identificador \] de contexto estrito** não podem aceitar identificadores de contexto criados em interfaces compiladas com **\[ \_ \_ \] identificador de contexto estrito**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

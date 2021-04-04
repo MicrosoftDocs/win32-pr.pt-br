@@ -26,7 +26,7 @@ O número de Identifcation do SIM para dispositivos GSM. Para obter mais detalhe
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<SimIccID\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <SimIccID>

@@ -64,7 +64,7 @@ O objeto **externo** expõe os seguintes métodos para lojas online do tipo 1.
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | [addToBasket](external-addtobasket.md)                           | Adiciona itens de mídia ao painel de lista (também chamado de cesta) no Windows Media Player.                                          |
 | [attemptLogin](external-attemptlogin.md)                         | Exibe uma caixa de diálogo para que o usuário possa tentar fazer logon na loja online.                                                 |
-| [authenticate](external-authenticate.md)                         | Inicia uma tentativa de autenticar o usuário.                                                                               |
+| [autenticação](external-authenticate.md)                         | Inicia uma tentativa de autenticar o usuário.                                                                               |
 | [comprar](external-buy.md)                                           | Inicia a compra de um conjunto de itens de mídia.                                                                              |
 | [cancelNavigate](external-cancelnavigate.md)                     | Informa ao Windows Media Player que ele não deve exibir uma nova página de descoberta, embora a exibição tenha sido alterada no Player. |
 | [changeView](external-changeview.md)                             | Altera a exibição no Windows Media Player.                                                                                    |
