@@ -1,0 +1,39 @@
+---
+title: Usar QueryService para recuperar uma interface nativa para um objeto IAccessible
+description: Os desenvolvedores de servidor podem usar essa técnica para expor um ponteiro para um nó de documento personalizado para um objeto IAccessible. Isso pressupõe que você já exponha objetos IAccessible. Essa técnica permite que os clientes obtenham um objeto personalizado de um objeto IAccessible.
+ms.assetid: aaa0e840-f8c2-4f3d-9d97-1910f00c1041
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 29d971462154eb12789a74e8cc6edb5aed68c84b
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104007844"
+---
+# <a name="use-queryservice-to-retrieve-a-native-interface-for-an-iaccessible-object"></a><span data-ttu-id="14eb8-105">Usar QueryService para recuperar uma interface nativa para um objeto IAccessible</span><span class="sxs-lookup"><span data-stu-id="14eb8-105">Use QueryService to retrieve a native interface for an IAccessible object</span></span>
+
+<span data-ttu-id="14eb8-106">Os desenvolvedores de servidor podem usar essa técnica para expor um ponteiro para um nó de documento personalizado para um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .</span><span class="sxs-lookup"><span data-stu-id="14eb8-106">Server developers can use this technique to expose a pointer to a custom document node for an [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) object.</span></span> <span data-ttu-id="14eb8-107">Isso pressupõe que você já exponha objetos **IAccessible** .</span><span class="sxs-lookup"><span data-stu-id="14eb8-107">This assumes that you already expose **IAccessible** objects.</span></span> <span data-ttu-id="14eb8-108">Essa técnica permite que os clientes obtenham um objeto personalizado de um objeto **IAccessible** .</span><span class="sxs-lookup"><span data-stu-id="14eb8-108">This technique allows clients to get a custom object from an **IAccessible** object.</span></span>
+
+<span data-ttu-id="14eb8-109">**Para expor um modelo de objeto nativo para um IAccessible (servidores)**</span><span class="sxs-lookup"><span data-stu-id="14eb8-109">**To expose a native object model for an IAccessible (servers)**</span></span>
+
+1.  <span data-ttu-id="14eb8-110">Adicione suporte para a interface **IServiceProvider** em seu objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .</span><span class="sxs-lookup"><span data-stu-id="14eb8-110">Add support for the **IServiceProvider** interface on your [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) object.</span></span>
+2.  <span data-ttu-id="14eb8-111">Defina um GUID que represente a funcionalidade de obter a interface personalizada de um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .</span><span class="sxs-lookup"><span data-stu-id="14eb8-111">Define a GUID that represents the functionality of obtaining the custom interface from an [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) objects.</span></span> <span data-ttu-id="14eb8-112">Isso é chamado de ID de serviço.</span><span class="sxs-lookup"><span data-stu-id="14eb8-112">This is called a service ID.</span></span> <span data-ttu-id="14eb8-113">Você pode usar GUIDGEN.EXE para gerar uma ID de serviço ou reutilizar a ID de interface se tiver uma interface personalizada.</span><span class="sxs-lookup"><span data-stu-id="14eb8-113">You can use GUIDGEN.EXE to generate a service ID, or reuse the interface ID if you have a custom interface.</span></span>
+3.  <span data-ttu-id="14eb8-114">Implemente o método **IServiceProvider:: QueryService** para que ele retorne um ponteiro para a interface personalizada quando chamado com a ID de serviço definida anteriormente neste procedimento.</span><span class="sxs-lookup"><span data-stu-id="14eb8-114">Implement the **IServiceProvider::QueryService** method so that it returns a pointer to the custom interface when called with the service ID defined earlier in this procedure.</span></span> <span data-ttu-id="14eb8-115">**QueryService** deve retornar **NULL** para todos os outros valores de ID de serviço.</span><span class="sxs-lookup"><span data-stu-id="14eb8-115">**QueryService** should return **NULL** for all other service ID values.</span></span>
+4.  <span data-ttu-id="14eb8-116">Publique a ID do serviço para que os clientes possam usá-lo.</span><span class="sxs-lookup"><span data-stu-id="14eb8-116">Publish the service ID so that clients can use it.</span></span>
+
+<span data-ttu-id="14eb8-117">Os clientes podem usar essa funcionalidade para obter um ponteiro para o objeto personalizado de um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .</span><span class="sxs-lookup"><span data-stu-id="14eb8-117">Clients can use this functionality to obtain a pointer to the custom object from an [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) object.</span></span>
+
+<span data-ttu-id="14eb8-118">**Para obter um ponteiro para um objeto personalizado de um IAccessible (clientes)**</span><span class="sxs-lookup"><span data-stu-id="14eb8-118">**To obtain a pointer to a custom object from an IAccessible (clients)**</span></span>
+
+1.  <span data-ttu-id="14eb8-119">Chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q))(IID \_ IServiceProvider) em um ponteiro de interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para obter um ponteiro de interface **IServiceProvider** .</span><span class="sxs-lookup"><span data-stu-id="14eb8-119">Call [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q))(IID\_IServiceProvider) on an [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface pointer to obtain an **IServiceProvider** interface pointer.</span></span>
+2.  <span data-ttu-id="14eb8-120">Chame **IServiceProvider:: QueryService** com a ID de serviço publicada para obter um ponteiro para o objeto personalizado para o [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible).</span><span class="sxs-lookup"><span data-stu-id="14eb8-120">Call **IServiceProvider::QueryService** with the published service ID to obtain a pointer to the custom object for the [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible).</span></span>
+3.  <span data-ttu-id="14eb8-121">Libere a interface **IServiceProvider** se ela não for mais necessária.</span><span class="sxs-lookup"><span data-stu-id="14eb8-121">Release the **IServiceProvider** interface if it is no longer needed.</span></span>
+
+<span data-ttu-id="14eb8-122">Para ser utilizável entre processos, os servidores podem precisar registrar a interface retornada com Component Object Model (COM).</span><span class="sxs-lookup"><span data-stu-id="14eb8-122">To be usable across processes, servers might need to register the returned interface with Component Object Model (COM).</span></span>
+
+<span data-ttu-id="14eb8-123">Essa técnica é usada pelo Microsoft Internet Explorer 4,0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="14eb8-123">This technique is used by Microsoft Internet Explorer 4.0 and later.</span></span> <span data-ttu-id="14eb8-124">Ele permite que os clientes obtenham um ponteiro de interface **IHTMLElement2** que corresponde a um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .</span><span class="sxs-lookup"><span data-stu-id="14eb8-124">It allows clients to obtain an **IHTMLElement2** interface pointer that corresponds to an [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) object.</span></span>
+
+ 
+
+ 

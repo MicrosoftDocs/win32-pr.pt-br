@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917567"
 ---
-# <a name="netauditread"></a><span data-ttu-id="9595e-106">NetAuditRead</span><span class="sxs-lookup"><span data-stu-id="9595e-106">NetAuditRead</span></span>
+# <a name="netauditread"></a><span data-ttu-id="65b90-106">NetAuditRead</span><span class="sxs-lookup"><span data-stu-id="65b90-106">NetAuditRead</span></span>
 
-<span data-ttu-id="9595e-107">A função **NetAuditRead** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="9595e-107">The **NetAuditRead** function is obsolete.</span></span> <span data-ttu-id="9595e-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="9595e-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="9595e-109">Outros aplicativos devem usar o [log de eventos](/windows/desktop/EventLog/event-logging).</span><span class="sxs-lookup"><span data-stu-id="9595e-109">Other applications should use [event logging](/windows/desktop/EventLog/event-logging).</span></span>
+<span data-ttu-id="65b90-107">A função **NetAuditRead** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="65b90-107">The **NetAuditRead** function is obsolete.</span></span> <span data-ttu-id="65b90-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="65b90-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="65b90-109">Outros aplicativos devem usar o [log de eventos](/windows/desktop/EventLog/event-logging).</span><span class="sxs-lookup"><span data-stu-id="65b90-109">Other applications should use [event logging](/windows/desktop/EventLog/event-logging).</span></span>
 
  
 

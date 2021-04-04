@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930469"
 ---
-# <a name="frequently-asked-questions"></a><span data-ttu-id="79dec-105">Perguntas frequentes</span><span class="sxs-lookup"><span data-stu-id="79dec-105">Frequently Asked Questions</span></span>
+# <a name="frequently-asked-questions"></a><span data-ttu-id="74940-105">Perguntas frequentes</span><span class="sxs-lookup"><span data-stu-id="74940-105">Frequently Asked Questions</span></span>
 
-<span data-ttu-id="79dec-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="79dec-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
+<span data-ttu-id="74940-106">Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="74940-106">For current documentation on Windows Media codecs and digital signal processors, see [Windows Media Audio and Video Codec and DSP APIs.](/previous-versions//dd464626(v=vs.85))</span></span>
 
  
 

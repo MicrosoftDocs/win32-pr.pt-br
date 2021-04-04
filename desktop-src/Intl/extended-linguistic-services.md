@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663201"
 ---
-# <a name="extended-linguistic-services"></a><span data-ttu-id="eea3e-103">Serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="eea3e-103">Extended Linguistic Services</span></span>
+# <a name="extended-linguistic-services"></a><span data-ttu-id="b6345-103">Serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="b6345-103">Extended Linguistic Services</span></span>
 
-<span data-ttu-id="eea3e-104">Os ELS (serviços lingüísticos estendidos) oferecem suporte a serviços baseados em texto, incluindo detecção de idioma, detecção de script e serviços de transliteração.</span><span class="sxs-lookup"><span data-stu-id="eea3e-104">Extended Linguistic Services (ELS) supports text-based services, including language detection, script detection, and transliteration services.</span></span> <span data-ttu-id="eea3e-105">A documentação do ELS inclui as seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="eea3e-105">The ELS documentation includes the following sections:</span></span>
+<span data-ttu-id="b6345-104">Os ELS (serviços lingüísticos estendidos) oferecem suporte a serviços baseados em texto, incluindo detecção de idioma, detecção de script e serviços de transliteração.</span><span class="sxs-lookup"><span data-stu-id="b6345-104">Extended Linguistic Services (ELS) supports text-based services, including language detection, script detection, and transliteration services.</span></span> <span data-ttu-id="b6345-105">A documentação do ELS inclui as seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="b6345-105">The ELS documentation includes the following sections:</span></span>
 
--   [<span data-ttu-id="eea3e-106">Sobre os serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="eea3e-106">About Extended Linguistic Services</span></span>](about-extended-linguistic-services.md)
--   [<span data-ttu-id="eea3e-107">Usando serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="eea3e-107">Using Extended Linguistic Services</span></span>](using-extended-linguistic-services.md)
--   [<span data-ttu-id="eea3e-108">Referência de serviços linguísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="eea3e-108">Extended Linguistic Services Reference</span></span>](extended-linguistic-services-reference.md)
+-   [<span data-ttu-id="b6345-106">Sobre os serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="b6345-106">About Extended Linguistic Services</span></span>](about-extended-linguistic-services.md)
+-   [<span data-ttu-id="b6345-107">Usando serviços lingüísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="b6345-107">Using Extended Linguistic Services</span></span>](using-extended-linguistic-services.md)
+-   [<span data-ttu-id="b6345-108">Referência de serviços linguísticos estendidos</span><span class="sxs-lookup"><span data-stu-id="b6345-108">Extended Linguistic Services Reference</span></span>](extended-linguistic-services-reference.md)
 
  
 

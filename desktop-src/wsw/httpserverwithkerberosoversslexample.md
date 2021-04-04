@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916621"
 ---
-# <a name="httpserverwithkerberosoversslexample"></a><span data-ttu-id="d4302-106">HttpServerWithKerberosOverSslExample</span><span class="sxs-lookup"><span data-stu-id="d4302-106">HttpServerWithKerberosOverSslExample</span></span>
+# <a name="httpserverwithkerberosoversslexample"></a><span data-ttu-id="6e728-106">HttpServerWithKerberosOverSslExample</span><span class="sxs-lookup"><span data-stu-id="6e728-106">HttpServerWithKerberosOverSslExample</span></span>
 
-<span data-ttu-id="d4302-107">Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens, com segurança de modo misto Kerberos sobre SSL.</span><span class="sxs-lookup"><span data-stu-id="d4302-107">This example shows a TCP server that accepts a channel and receives and replies to messages, with kerberos over SSL mixed-mode security.</span></span> <span data-ttu-id="d4302-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="d4302-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="d4302-109">A autenticação de cliente é fornecida por um tíquete APREQ do Kerberos em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="d4302-109">Client authentication is provided by a kerberos APREQ ticket in a WS-Security header in the message.</span></span>
+<span data-ttu-id="6e728-107">Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens, com segurança de modo misto Kerberos sobre SSL.</span><span class="sxs-lookup"><span data-stu-id="6e728-107">This example shows a TCP server that accepts a channel and receives and replies to messages, with kerberos over SSL mixed-mode security.</span></span> <span data-ttu-id="6e728-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="6e728-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="6e728-109">A autenticação de cliente é fornecida por um tíquete APREQ do Kerberos em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="6e728-109">Client authentication is provided by a kerberos APREQ ticket in a WS-Security header in the message.</span></span>
 
--   [<span data-ttu-id="d4302-110">HttpServerWithKerberosOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="d4302-110">HttpServerWithKerberosOverSsl.cpp</span></span>](#httpserverwithkerberosoversslcpp)
--   [<span data-ttu-id="d4302-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="d4302-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="d4302-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="d4302-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="6e728-110">HttpServerWithKerberosOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="6e728-110">HttpServerWithKerberosOverSsl.cpp</span></span>](#httpserverwithkerberosoversslcpp)
+-   [<span data-ttu-id="6e728-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="6e728-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="6e728-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="6e728-112">Makefile</span></span>](#makefile)
 
-## <a name="httpserverwithkerberosoversslcpp"></a><span data-ttu-id="d4302-113">HttpServerWithKerberosOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="d4302-113">HttpServerWithKerberosOverSsl.cpp</span></span>
+## <a name="httpserverwithkerberosoversslcpp"></a><span data-ttu-id="6e728-113">HttpServerWithKerberosOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="6e728-113">HttpServerWithKerberosOverSsl.cpp</span></span>
 
 
 ```C++
@@ -488,7 +488,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="d4302-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="d4302-114">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="6e728-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="6e728-114">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -599,7 +599,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="d4302-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="d4302-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="6e728-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="6e728-115">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>

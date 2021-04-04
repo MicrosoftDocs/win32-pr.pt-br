@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916062"
 ---
-# <a name="deleting-a-reservation"></a><span data-ttu-id="49dd2-104">Excluindo uma reserva</span><span class="sxs-lookup"><span data-stu-id="49dd2-104">Deleting a Reservation</span></span>
+# <a name="deleting-a-reservation"></a><span data-ttu-id="3402d-104">Excluindo uma reserva</span><span class="sxs-lookup"><span data-stu-id="3402d-104">Deleting a Reservation</span></span>
 
-<span data-ttu-id="49dd2-105">O processo para remover uma reserva começa com uma verificação de acesso que é idêntica à descrita acima.</span><span class="sxs-lookup"><span data-stu-id="49dd2-105">The process to remove a reservation starts with an access check that is identical to the one described above.</span></span> <span data-ttu-id="49dd2-106">A ID de usuário do processo de chamada deve ter direitos de acesso ao *nó pai* da entrada de reserva que está sendo excluída.</span><span class="sxs-lookup"><span data-stu-id="49dd2-106">The User ID of the calling process must have access rights to the *parent node* of the reservation entry being deleted.</span></span>
+<span data-ttu-id="3402d-105">O processo para remover uma reserva começa com uma verificação de acesso que é idêntica à descrita acima.</span><span class="sxs-lookup"><span data-stu-id="3402d-105">The process to remove a reservation starts with an access check that is identical to the one described above.</span></span> <span data-ttu-id="3402d-106">A ID de usuário do processo de chamada deve ter direitos de acesso ao *nó pai* da entrada de reserva que está sendo excluída.</span><span class="sxs-lookup"><span data-stu-id="3402d-106">The User ID of the calling process must have access rights to the *parent node* of the reservation entry being deleted.</span></span>
 
  
 

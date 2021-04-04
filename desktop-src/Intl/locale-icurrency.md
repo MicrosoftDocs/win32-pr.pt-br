@@ -11,18 +11,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646682"
 ---
-# <a name="locale_icurrency"></a><span data-ttu-id="75e64-103">ICURRENCY de localidade \_</span><span class="sxs-lookup"><span data-stu-id="75e64-103">LOCALE\_ICURRENCY</span></span>
+# <a name="locale_icurrency"></a><span data-ttu-id="a3a14-103">ICURRENCY de localidade \_</span><span class="sxs-lookup"><span data-stu-id="a3a14-103">LOCALE\_ICURRENCY</span></span>
 
-<span data-ttu-id="75e64-104">Posição do símbolo monetário no modo de moeda positivo.</span><span class="sxs-lookup"><span data-stu-id="75e64-104">Position of the monetary symbol in the positive currency mode.</span></span>
+<span data-ttu-id="a3a14-104">Posição do símbolo monetário no modo de moeda positivo.</span><span class="sxs-lookup"><span data-stu-id="a3a14-104">Position of the monetary symbol in the positive currency mode.</span></span>
 
 
 
-| <span data-ttu-id="75e64-105">Valor</span><span class="sxs-lookup"><span data-stu-id="75e64-105">Value</span></span> | <span data-ttu-id="75e64-106">Significado</span><span class="sxs-lookup"><span data-stu-id="75e64-106">Meaning</span></span>                                            |
+| <span data-ttu-id="a3a14-105">Valor</span><span class="sxs-lookup"><span data-stu-id="a3a14-105">Value</span></span> | <span data-ttu-id="a3a14-106">Significado</span><span class="sxs-lookup"><span data-stu-id="a3a14-106">Meaning</span></span>                                            |
 |-------|----------------------------------------------------|
-| <span data-ttu-id="75e64-107">0</span><span class="sxs-lookup"><span data-stu-id="75e64-107">0</span></span>     | <span data-ttu-id="75e64-108">Prefixo, sem separação, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="75e64-108">Prefix, no separation, for example, $1.1</span></span>           |
-| <span data-ttu-id="75e64-109">1</span><span class="sxs-lookup"><span data-stu-id="75e64-109">1</span></span>     | <span data-ttu-id="75e64-110">Sufixo, sem separação, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="75e64-110">Suffix, no separation, for example, 1.1$</span></span>           |
-| <span data-ttu-id="75e64-111">2</span><span class="sxs-lookup"><span data-stu-id="75e64-111">2</span></span>     | <span data-ttu-id="75e64-112">Prefixo, separação de 1 caractere, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="75e64-112">Prefix, 1-character separation, for example, $ 1.1</span></span> |
-| <span data-ttu-id="75e64-113">3</span><span class="sxs-lookup"><span data-stu-id="75e64-113">3</span></span>     | <span data-ttu-id="75e64-114">Sufixo, separação de 1 caractere, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="75e64-114">Suffix, 1-character separation, for example, 1.1 $</span></span> |
+| <span data-ttu-id="a3a14-107">0</span><span class="sxs-lookup"><span data-stu-id="a3a14-107">0</span></span>     | <span data-ttu-id="a3a14-108">Prefixo, sem separação, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="a3a14-108">Prefix, no separation, for example, $1.1</span></span>           |
+| <span data-ttu-id="a3a14-109">1</span><span class="sxs-lookup"><span data-stu-id="a3a14-109">1</span></span>     | <span data-ttu-id="a3a14-110">Sufixo, sem separação, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="a3a14-110">Suffix, no separation, for example, 1.1$</span></span>           |
+| <span data-ttu-id="a3a14-111">2</span><span class="sxs-lookup"><span data-stu-id="a3a14-111">2</span></span>     | <span data-ttu-id="a3a14-112">Prefixo, separação de 1 caractere, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="a3a14-112">Prefix, 1-character separation, for example, $ 1.1</span></span> |
+| <span data-ttu-id="a3a14-113">3</span><span class="sxs-lookup"><span data-stu-id="a3a14-113">3</span></span>     | <span data-ttu-id="a3a14-114">Sufixo, separação de 1 caractere, por exemplo, $1.01</span><span class="sxs-lookup"><span data-stu-id="a3a14-114">Suffix, 1-character separation, for example, 1.1 $</span></span> |
 
 
 

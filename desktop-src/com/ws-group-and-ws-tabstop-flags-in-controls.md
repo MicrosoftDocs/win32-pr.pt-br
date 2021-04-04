@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916633"
 ---
-# <a name="ws_group-and-ws_tabstop-flags-in-controls"></a><span data-ttu-id="eb9ef-103">\_Sinalizadores WS Group e WS \_ TabStop nos controles</span><span class="sxs-lookup"><span data-stu-id="eb9ef-103">WS\_GROUP and WS\_TABSTOP Flags in Controls</span></span>
+# <a name="ws_group-and-ws_tabstop-flags-in-controls"></a><span data-ttu-id="e3375-103">\_Sinalizadores WS Group e WS \_ TabStop nos controles</span><span class="sxs-lookup"><span data-stu-id="e3375-103">WS\_GROUP and WS\_TABSTOP Flags in Controls</span></span>
 
-<span data-ttu-id="eb9ef-104">Um controle não deve usar os \_ sinalizadores WS Group e WS \_ TabStop internamente; alguns contêineres dependem desses sinalizadores para gerenciar o manuseio de teclado.</span><span class="sxs-lookup"><span data-stu-id="eb9ef-104">A control should not use the WS\_GROUP and WS\_TABSTOP flags internally; some containers rely on these flags to manage keyboard handling.</span></span>
+<span data-ttu-id="e3375-104">Um controle não deve usar os \_ sinalizadores WS Group e WS \_ TabStop internamente; alguns contêineres dependem desses sinalizadores para gerenciar o manuseio de teclado.</span><span class="sxs-lookup"><span data-stu-id="e3375-104">A control should not use the WS\_GROUP and WS\_TABSTOP flags internally; some containers rely on these flags to manage keyboard handling.</span></span>
 
  
 

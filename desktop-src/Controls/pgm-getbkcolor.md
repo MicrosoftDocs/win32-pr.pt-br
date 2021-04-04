@@ -21,37 +21,37 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644906"
 ---
-# <a name="pgm_getbkcolor-message"></a><span data-ttu-id="4e2bc-105">\_Mensagem GETBKCOLOR do PGM</span><span class="sxs-lookup"><span data-stu-id="4e2bc-105">PGM\_GETBKCOLOR message</span></span>
+# <a name="pgm_getbkcolor-message"></a><span data-ttu-id="e501e-105">\_Mensagem GETBKCOLOR do PGM</span><span class="sxs-lookup"><span data-stu-id="e501e-105">PGM\_GETBKCOLOR message</span></span>
 
-<span data-ttu-id="4e2bc-106">Recupera a cor do plano de fundo atual para o controle de pager.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-106">Retrieves the current background color for the pager control.</span></span> <span data-ttu-id="4e2bc-107">Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetBkColor do pager**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor) .</span><span class="sxs-lookup"><span data-stu-id="4e2bc-107">You can send this message explicitly or use the [**Pager\_GetBkColor**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor) macro.</span></span>
+<span data-ttu-id="e501e-106">Recupera a cor do plano de fundo atual para o controle de pager.</span><span class="sxs-lookup"><span data-stu-id="e501e-106">Retrieves the current background color for the pager control.</span></span> <span data-ttu-id="e501e-107">Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetBkColor do pager**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor) .</span><span class="sxs-lookup"><span data-stu-id="e501e-107">You can send this message explicitly or use the [**Pager\_GetBkColor**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor) macro.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="4e2bc-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4e2bc-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e501e-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e501e-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4e2bc-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="4e2bc-109">*wParam*</span></span> 
-</dt> <dd><span data-ttu-id="4e2bc-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-110">Must be zero.</span></span></dd> <dt>
+<span data-ttu-id="e501e-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="e501e-109">*wParam*</span></span> 
+</dt> <dd><span data-ttu-id="e501e-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="e501e-110">Must be zero.</span></span></dd> <dt>
 
-<span data-ttu-id="4e2bc-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="4e2bc-111">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="4e2bc-112">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-112">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="e501e-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="e501e-111">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="e501e-112">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="e501e-112">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4e2bc-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4e2bc-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e501e-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e501e-113">Return value</span></span>
 
-<span data-ttu-id="4e2bc-114">Retorna um valor **COLORREF** que contém a cor do plano de fundo atual.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-114">Returns a **COLORREF** value that contains the current background color.</span></span>
+<span data-ttu-id="e501e-114">Retorna um valor **COLORREF** que contém a cor do plano de fundo atual.</span><span class="sxs-lookup"><span data-stu-id="e501e-114">Returns a **COLORREF** value that contains the current background color.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4e2bc-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="4e2bc-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e501e-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="e501e-115">Remarks</span></span>
 
-<span data-ttu-id="4e2bc-116">Por padrão, o controle de pager usará a cor de face do botão do sistema como a cor do plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-116">By default, the pager control will use the system button face color as the background color.</span></span> <span data-ttu-id="4e2bc-117">Essa é a mesma cor que pode ser recuperada chamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) com Color \_ btnface.</span><span class="sxs-lookup"><span data-stu-id="4e2bc-117">This is the same color that can be retrieved by calling [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) with COLOR\_BTNFACE.</span></span>
+<span data-ttu-id="e501e-116">Por padrão, o controle de pager usará a cor de face do botão do sistema como a cor do plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="e501e-116">By default, the pager control will use the system button face color as the background color.</span></span> <span data-ttu-id="e501e-117">Essa é a mesma cor que pode ser recuperada chamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) com Color \_ btnface.</span><span class="sxs-lookup"><span data-stu-id="e501e-117">This is the same color that can be retrieved by calling [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) with COLOR\_BTNFACE.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4e2bc-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4e2bc-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e501e-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e501e-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4e2bc-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="4e2bc-119">Requirement</span></span> | <span data-ttu-id="4e2bc-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4e2bc-120">Value</span></span> |
+| <span data-ttu-id="e501e-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="e501e-119">Requirement</span></span> | <span data-ttu-id="e501e-120">Valor</span><span class="sxs-lookup"><span data-stu-id="e501e-120">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e2bc-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4e2bc-121">Minimum supported client</span></span><br/> | <span data-ttu-id="4e2bc-122">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="4e2bc-122">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="4e2bc-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4e2bc-123">Minimum supported server</span></span><br/> | <span data-ttu-id="4e2bc-124">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="4e2bc-124">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="4e2bc-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4e2bc-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="4e2bc-126"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="4e2bc-126"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="e501e-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e501e-121">Minimum supported client</span></span><br/> | <span data-ttu-id="e501e-122">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="e501e-122">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="e501e-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e501e-123">Minimum supported server</span></span><br/> | <span data-ttu-id="e501e-124">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="e501e-124">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="e501e-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="e501e-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="e501e-126"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="e501e-126"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

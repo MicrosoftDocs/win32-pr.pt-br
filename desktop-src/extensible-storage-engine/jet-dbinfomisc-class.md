@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647116"
 ---
-# <a name="jet_dbinfomisc-class"></a><span data-ttu-id="58ed2-103">Classe JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="58ed2-103">JET_DBINFOMISC class</span></span>
+# <a name="jet_dbinfomisc-class"></a><span data-ttu-id="c61ac-103">Classe JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="c61ac-103">JET_DBINFOMISC class</span></span>
 
-<span data-ttu-id="58ed2-104">Contém diversas informações sobre um banco de dados.</span><span class="sxs-lookup"><span data-stu-id="58ed2-104">Holds miscellaneous information about a database.</span></span> <span data-ttu-id="58ed2-105">Essas são as informações contidas no cabeçalho do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="58ed2-105">This is the information that is contained in the database header.</span></span>
+<span data-ttu-id="c61ac-104">Contém diversas informações sobre um banco de dados.</span><span class="sxs-lookup"><span data-stu-id="c61ac-104">Holds miscellaneous information about a database.</span></span> <span data-ttu-id="c61ac-105">Essas são as informações contidas no cabeçalho do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="c61ac-105">This is the information that is contained in the database header.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="58ed2-106">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="58ed2-106">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="c61ac-106">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="c61ac-106">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="58ed2-107">System.Object</span><span class="sxs-lookup"><span data-stu-id="58ed2-107">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="58ed2-108">Microsoft.Isam.Esent.Interop.JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="58ed2-108">Microsoft.Isam.Esent.Interop.JET_DBINFOMISC</span></span>  
+[<span data-ttu-id="c61ac-107">System.Object</span><span class="sxs-lookup"><span data-stu-id="c61ac-107">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="c61ac-108">Microsoft.Isam.Esent.Interop.JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="c61ac-108">Microsoft.Isam.Esent.Interop.JET_DBINFOMISC</span></span>  
 
-<span data-ttu-id="58ed2-109">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="58ed2-109">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="58ed2-110">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="58ed2-110">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c61ac-109">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c61ac-109">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c61ac-110">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c61ac-110">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="58ed2-111">Syntax</span><span class="sxs-lookup"><span data-stu-id="58ed2-111">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c61ac-111">Syntax</span><span class="sxs-lookup"><span data-stu-id="c61ac-111">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,14 +59,14 @@ Dim instance As JET_DBINFOMISC
 public sealed class JET_DBINFOMISC : IEquatable<JET_DBINFOMISC>
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="58ed2-112">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="58ed2-112">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="c61ac-112">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="c61ac-112">Thread safety</span></span>
 
-<span data-ttu-id="58ed2-113">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="58ed2-113">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="58ed2-114">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="58ed2-114">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="c61ac-113">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="c61ac-113">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="c61ac-114">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="c61ac-114">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="58ed2-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="58ed2-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c61ac-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="c61ac-115">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="58ed2-116">Referência</span><span class="sxs-lookup"><span data-stu-id="58ed2-116">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c61ac-116">Referência</span><span class="sxs-lookup"><span data-stu-id="c61ac-116">Reference</span></span>
 
-[<span data-ttu-id="58ed2-117">Membros do JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="58ed2-117">JET_DBINFOMISC members</span></span>](./jet-dbinfomisc-members.md)
+[<span data-ttu-id="c61ac-117">Membros do JET_DBINFOMISC</span><span class="sxs-lookup"><span data-stu-id="c61ac-117">JET_DBINFOMISC members</span></span>](./jet-dbinfomisc-members.md)
 
-[<span data-ttu-id="58ed2-118">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="58ed2-118">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c61ac-118">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c61ac-118">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916351"
 ---
-# <a name="cc-code-example-retrieving-task-account-information"></a><span data-ttu-id="646a3-106">Exemplo de código do C/C++: Recuperando Informações da conta da tarefa</span><span class="sxs-lookup"><span data-stu-id="646a3-106">C/C++ Code Example: Retrieving Task Account Information</span></span>
+# <a name="cc-code-example-retrieving-task-account-information"></a><span data-ttu-id="f95c1-106">Exemplo de código do C/C++: Recuperando Informações da conta da tarefa</span><span class="sxs-lookup"><span data-stu-id="f95c1-106">C/C++ Code Example: Retrieving Task Account Information</span></span>
 
-<span data-ttu-id="646a3-107">Este exemplo de código recupera as informações da conta de uma tarefa conhecida e exibe o nome da conta na tela.</span><span class="sxs-lookup"><span data-stu-id="646a3-107">This code example retrieves the account information of a known task and displays the account name on the screen.</span></span> <span data-ttu-id="646a3-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local e que o Agendador de Tarefas está em execução.</span><span class="sxs-lookup"><span data-stu-id="646a3-108">This example assumes that the task and the test task already exist on the local computer and that the Task Scheduler is running.</span></span>
+<span data-ttu-id="f95c1-107">Este exemplo de código recupera as informações da conta de uma tarefa conhecida e exibe o nome da conta na tela.</span><span class="sxs-lookup"><span data-stu-id="f95c1-107">This code example retrieves the account information of a known task and displays the account name on the screen.</span></span> <span data-ttu-id="f95c1-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local e que o Agendador de Tarefas está em execução.</span><span class="sxs-lookup"><span data-stu-id="f95c1-108">This example assumes that the task and the test task already exist on the local computer and that the Task Scheduler is running.</span></span>
 
 
 ```C++
@@ -120,11 +120,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="646a3-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="646a3-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f95c1-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f95c1-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="646a3-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="646a3-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="f95c1-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="f95c1-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

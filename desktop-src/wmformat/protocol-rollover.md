@@ -1,0 +1,57 @@
+---
+title: Substituição de protocolo
+description: Substituição de protocolo
+ms.assetid: 61db5e2b-4858-446e-9a27-e0305b46683d
+keywords:
+- SDK do Windows Media Format, substituição de protocolo
+- ASF (Advanced Systems Format), substituição de protocolo
+- ASF (formato de sistemas avançados), substituição de protocolo
+- substituição de protocolo
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b2de8d0496467535f5740a10082f82e285c11ef6
+ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "104007116"
+---
+# <a name="protocol-rollover"></a><span data-ttu-id="f1a66-107">Substituição de protocolo</span><span class="sxs-lookup"><span data-stu-id="f1a66-107">Protocol Rollover</span></span>
+
+<span data-ttu-id="f1a66-108">A substituição de protocolo é um processo pelo qual o objeto leitor descobre o melhor protocolo de streaming disponível de um servidor.</span><span class="sxs-lookup"><span data-stu-id="f1a66-108">Protocol rollover is a process whereby the reader object discovers the best streaming protocol available from a server.</span></span> <span data-ttu-id="f1a66-109">O leitor usa a substituição de protocolo sempre que abre uma URL que contém um esquema "MMS".</span><span class="sxs-lookup"><span data-stu-id="f1a66-109">The reader uses protocol rollover whenever it opens a URL that contains an "mms" scheme.</span></span>
+
+<span data-ttu-id="f1a66-110">O leitor dá suporte a vários protocolos:</span><span class="sxs-lookup"><span data-stu-id="f1a66-110">The reader supports several protocols:</span></span>
+
+-   <span data-ttu-id="f1a66-111">Protocolo RTSP (real time streaming)</span><span class="sxs-lookup"><span data-stu-id="f1a66-111">Real Time Streaming Protocol (RTSP)</span></span>
+-   <span data-ttu-id="f1a66-112">Protocolo HTTP</span><span class="sxs-lookup"><span data-stu-id="f1a66-112">Hypertext Transfer Protocol (HTTP)</span></span>
+-   <span data-ttu-id="f1a66-113">Microsoft Media Server (MMS)</span><span class="sxs-lookup"><span data-stu-id="f1a66-113">Microsoft Media Server (MMS)</span></span>
+
+<span data-ttu-id="f1a66-114">Os protocolos RTSP e MMS são fornecidos em dois tipos, um usando o [*UDP*](wmformat-glossary.md) como o protocolo de entrega subjacente e o outro usando TCP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-114">The RTSP and MMS protocols both come in two flavors, one using [*UDP*](wmformat-glossary.md) as the underlying delivery protocol, and the other using TCP.</span></span>
+
+<span data-ttu-id="f1a66-115">O objeto leitor sempre usa TCP para comandos de controle de reprodução, mas pode usar TCP ou UDP para distribuição do conteúdo transmitido.</span><span class="sxs-lookup"><span data-stu-id="f1a66-115">The reader object always uses TCP for playback control commands, but it can use either TCP or UDP for delivery of the streamed content.</span></span> <span data-ttu-id="f1a66-116">O UDP é preferencial para a entrega de conteúdo, pois impõe menos sobrecarga de largura de banda do que o TCP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-116">UDP is preferred for content delivery, because it imposes less bandwidth overhead than TCP.</span></span> <span data-ttu-id="f1a66-117">O protocolo TCP garante um transporte confiável por meio do uso de "circuitos virtuais", mas o custo de fazer isso significa que o TCP não é tão adequado para fluxos de mídia digital, em que o uso eficiente da largura de banda é mais importante que os pacotes perdidos ocasionais.</span><span class="sxs-lookup"><span data-stu-id="f1a66-117">The TCP protocol ensures reliable transport through the use of "virtual circuits," but the cost of doing so means that TCP is not as well suited for digital media streams, where efficient use of bandwidth is more important that occasional lost packets.</span></span>
+
+<span data-ttu-id="f1a66-118">Quando uma URL especifica "mms://", o leitor tenta usar os seguintes protocolos para entrega de dados, na seguinte ordem:</span><span class="sxs-lookup"><span data-stu-id="f1a66-118">When a URL specifies "mms://", the reader attempts to use the following protocols for data delivery, in the following order:</span></span>
+
+1.  <span data-ttu-id="f1a66-119">RTSPu (RTSP usando UDP)</span><span class="sxs-lookup"><span data-stu-id="f1a66-119">RTSPU (RTSP using UDP)</span></span>
+2.  <span data-ttu-id="f1a66-120">RTSPt (RTSP usando TCP)</span><span class="sxs-lookup"><span data-stu-id="f1a66-120">RTSPT (RTSP using TCP)</span></span>
+3.  <span data-ttu-id="f1a66-121">MMSU (MMS usando UDP)</span><span class="sxs-lookup"><span data-stu-id="f1a66-121">MMSU (MMS using UDP)</span></span>
+4.  <span data-ttu-id="f1a66-122">MMST (MMS usando TCP)</span><span class="sxs-lookup"><span data-stu-id="f1a66-122">MMST (MMS using TCP)</span></span>
+5.  <span data-ttu-id="f1a66-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="f1a66-123">HTTP</span></span>
+
+<span data-ttu-id="f1a66-124">HTTP é um protocolo unidirecional baseado em TCP e é o protocolo usado por servidores Web.</span><span class="sxs-lookup"><span data-stu-id="f1a66-124">HTTP is a one-way protocol based on TCP, and is the protocol used by Web servers.</span></span> <span data-ttu-id="f1a66-125">O streaming com HTTP é menos eficiente que usar RTSP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-125">Streaming with HTTP is less efficient that using RTSP.</span></span> <span data-ttu-id="f1a66-126">No entanto, a maioria dos firewalls é configurada para aceitar solicitações HTTP, enquanto elas normalmente rejeitam outros protocolos de streaming.</span><span class="sxs-lookup"><span data-stu-id="f1a66-126">However, most firewalls are configured to accept HTTP requests, whereas they typically reject other streaming protocols.</span></span>
+
+<span data-ttu-id="f1a66-127">O Windows Media Services 9 Series no Microsoft Windows Server 2003 rejeitará todas as solicitações de MMSU ou MMST de um leitor do SDK de formato de mídia do Windows, porque o RTSP é o protocolo de streaming preferencial.</span><span class="sxs-lookup"><span data-stu-id="f1a66-127">Windows Media Services 9 Series in Microsoft Windows Server 2003 will reject any MMSU or MMST requests from a Windows Media Format SDK reader, because RTSP is the preferred streaming protocol.</span></span> <span data-ttu-id="f1a66-128">O Windows Media Services versão 4,1 e anteriores não dão suporte a RTSP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-128">Windows Media Services version 4.1 and earlier do not support RTSP.</span></span> <span data-ttu-id="f1a66-129">Nesse caso, o objeto leitor volta para MMSU ou HTTP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-129">In this case the reader object falls back to MMSU or HTTP.</span></span>
+
+<span data-ttu-id="f1a66-130">A substituição de protocolo não se aplicará se o esquema de URL fornecer um protocolo específico, como "rtspu://" para RTSPu ou "https://" para HTTP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-130">Protocol rollover does not apply if the URL scheme gives a specific protocol, such as "rtspu://" for RTSPU or "https://" for HTTP.</span></span> <span data-ttu-id="f1a66-131">Se o esquema de URL for "rtsp://", o leitor tentará RTSPu e RTSPt, mas não outros.</span><span class="sxs-lookup"><span data-stu-id="f1a66-131">If the URL scheme is "rtsp://", the reader tries RTSPU and RTSPT, but no others.</span></span>
+
+<span data-ttu-id="f1a66-132">Depois que o leitor abrir um arquivo, você poderá consultar o protocolo que ele está usando chamando o método [**IWMReaderAdvanced2:: Getprotocolname**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getprotocolname) no leitor.</span><span class="sxs-lookup"><span data-stu-id="f1a66-132">After the reader opens a file, you can query which protocol it is using by calling the [**IWMReaderAdvanced2::GetProtocolName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getprotocolname) method on the reader.</span></span> <span data-ttu-id="f1a66-133">Enquanto o conteúdo está sendo transmitido ou baixado, esse método retorna o nome assim que o conteúdo é completamente armazenado em cache, o método **Getprotocolname** retorna a cadeia de caracteres "cache".</span><span class="sxs-lookup"><span data-stu-id="f1a66-133">While the content is being streamed or downloaded, this method returns the name as soon as the content is completely cached, the **GetProtocolName** method returns the string "Cache."</span></span>
+
+<span data-ttu-id="f1a66-134">Para obter os nomes de todos os protocolos do Windows Media Server aos quais o leitor dá suporte, chame o método [**IWMReaderNetworkConfig:: GetSupportedProtocolName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-getsupportedprotocolname) no leitor.</span><span class="sxs-lookup"><span data-stu-id="f1a66-134">To get the names of all the Windows Media server protocols that the reader supports, call the [**IWMReaderNetworkConfig::GetSupportedProtocolName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-getsupportedprotocolname) method on the reader.</span></span> <span data-ttu-id="f1a66-135">Você pode desabilitar um ou mais dos protocolos na lista de sobreposição de protocolo do leitor, usando a interface **IWMReaderNetworkConfig** .</span><span class="sxs-lookup"><span data-stu-id="f1a66-135">You can disable one or more of the protocols in the reader's protocol rollover list, using **IWMReaderNetworkConfig** interface.</span></span> <span data-ttu-id="f1a66-136">Por exemplo, o método [**IWMReaderNetworkConfig:: SetEnableTCP**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-setenabletcp) habilita ou desabilita os protocolos baseados em TCP, e [**IWMReaderNetworkConfig:: SetEnableUDP**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-setenableudp) habilita ou desabilita os protocolos baseados em UDP.</span><span class="sxs-lookup"><span data-stu-id="f1a66-136">For example, the [**IWMReaderNetworkConfig::SetEnableTCP**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-setenabletcp) method enables or disables the TCP-based protocols, and [**IWMReaderNetworkConfig::SetEnableUDP**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadernetworkconfig-setenableudp) enables or disables the UDP-based protocols.</span></span> <span data-ttu-id="f1a66-137">Esses métodos se aplicam somente à substituição de protocolo; os protocolos ainda estarão disponíveis se o esquema de URL contiver um protocolo específico.</span><span class="sxs-lookup"><span data-stu-id="f1a66-137">These methods apply only to protocol rollover; the protocols are still available if the URL scheme contains a specific protocol.</span></span> <span data-ttu-id="f1a66-138">Normalmente, não há motivo para desabilitar qualquer um dos protocolos usados na substituição de protocolo; Isso pode prejudicar o desempenho.</span><span class="sxs-lookup"><span data-stu-id="f1a66-138">There is usually no reason to disable any of the protocols used in protocol rollover; doing so can degrade performance.</span></span> <span data-ttu-id="f1a66-139">No entanto, pode ser útil para teste.</span><span class="sxs-lookup"><span data-stu-id="f1a66-139">However, it might be useful for testing.</span></span>
+
+ 
+
+ 
+
+
+
+

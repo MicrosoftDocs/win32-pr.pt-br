@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930463"
 ---
-# <a name="date-and-time-picker-structures"></a><span data-ttu-id="4aabf-103">Estruturas do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="4aabf-103">Date and Time Picker Structures</span></span>
+# <a name="date-and-time-picker-structures"></a><span data-ttu-id="11922-103">Estruturas do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="11922-103">Date and Time Picker Structures</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="4aabf-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4aabf-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="11922-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="11922-104">In This Section</span></span>
 
--   [<span data-ttu-id="4aabf-105">**DATETIMEPICKERINFO**</span><span class="sxs-lookup"><span data-stu-id="4aabf-105">**DATETIMEPICKERINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo)
--   [<span data-ttu-id="4aabf-106">**NMDATETIMECHANGE**</span><span class="sxs-lookup"><span data-stu-id="4aabf-106">**NMDATETIMECHANGE**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange)
--   [<span data-ttu-id="4aabf-107">**NMDATETIMEFORMAT**</span><span class="sxs-lookup"><span data-stu-id="4aabf-107">**NMDATETIMEFORMAT**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimeformata)
--   [<span data-ttu-id="4aabf-108">**NMDATETIMEFORMATQUERY**</span><span class="sxs-lookup"><span data-stu-id="4aabf-108">**NMDATETIMEFORMATQUERY**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimeformatquerya)
--   [<span data-ttu-id="4aabf-109">**NMDATETIMESTRING**</span><span class="sxs-lookup"><span data-stu-id="4aabf-109">**NMDATETIMESTRING**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa)
--   [<span data-ttu-id="4aabf-110">**NMDATETIMEWMKEYDOWN**</span><span class="sxs-lookup"><span data-stu-id="4aabf-110">**NMDATETIMEWMKEYDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimewmkeydowna)
+-   [<span data-ttu-id="11922-105">**DATETIMEPICKERINFO**</span><span class="sxs-lookup"><span data-stu-id="11922-105">**DATETIMEPICKERINFO**</span></span>](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo)
+-   [<span data-ttu-id="11922-106">**NMDATETIMECHANGE**</span><span class="sxs-lookup"><span data-stu-id="11922-106">**NMDATETIMECHANGE**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange)
+-   [<span data-ttu-id="11922-107">**NMDATETIMEFORMAT**</span><span class="sxs-lookup"><span data-stu-id="11922-107">**NMDATETIMEFORMAT**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimeformata)
+-   [<span data-ttu-id="11922-108">**NMDATETIMEFORMATQUERY**</span><span class="sxs-lookup"><span data-stu-id="11922-108">**NMDATETIMEFORMATQUERY**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimeformatquerya)
+-   [<span data-ttu-id="11922-109">**NMDATETIMESTRING**</span><span class="sxs-lookup"><span data-stu-id="11922-109">**NMDATETIMESTRING**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa)
+-   [<span data-ttu-id="11922-110">**NMDATETIMEWMKEYDOWN**</span><span class="sxs-lookup"><span data-stu-id="11922-110">**NMDATETIMEWMKEYDOWN**</span></span>](/windows/win32/api/commctrl/ns-commctrl-nmdatetimewmkeydowna)
 
  
 
