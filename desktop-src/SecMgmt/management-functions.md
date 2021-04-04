@@ -33,7 +33,7 @@ As funções de suporte a seguir são fornecidas pelo conjunto de ferramentas de
 
 
 
-| Função de retorno de chamada                                         | Descrição                                                                                 |
+| Função de retorno de chamada                                         | Description                                                                                 |
 |-----------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | [**\_informações gratuitas do PFSCE \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_free_info)<br/>   | Usado para liberar memória alocada por essas funções de suporte.<br/>                        |
 | [**\_informações de log do PFSCE \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_log_info)<br/>     | Usado para registrar a mensagem no arquivo de log de configuração ou no arquivo de log de análise.<br/>          |

@@ -34,7 +34,7 @@ Obtém o nome da propriedade que corresponde ao índice fornecido.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

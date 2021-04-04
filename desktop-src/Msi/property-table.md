@@ -19,7 +19,7 @@ A tabela de propriedades tem as colunas a seguir.
 
 
 
-| Coluna   | Type                         | Chave | Nullable |
+| Coluna   | Tipo                         | Chave | Nullable |
 |----------|------------------------------|-----|----------|
 | Propriedade | [Identificador](identifier.md) | S   | N        |
 | Valor    | [Text](text.md)             | N   | N        |

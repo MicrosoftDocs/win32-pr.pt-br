@@ -40,7 +40,7 @@ As etapas para a consulta do dispositivo e a descoberta de serviço no Bluetooth
 [**\_serviço de consulta do BTH \_**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service)
 </dt> <dt>
 
-[**Connect**](/windows/desktop/api/winsock2/nf-winsock2-connect)
+[**conectar**](/windows/desktop/api/winsock2/nf-winsock2-connect)
 </dt> <dt>
 
 [**SOCKADDR \_ BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-sockaddr_bth)

@@ -53,7 +53,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                            | Descrição                               |
+| Código de retorno                                                                            | Description                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
 | <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
