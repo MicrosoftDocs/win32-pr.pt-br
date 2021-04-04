@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/08/2020
 ms.locfileid: "103917752"
 ---
-# <a name="declaring-asynchronous-functions"></a><span data-ttu-id="ca734-104">Declarando funções assíncronas</span><span class="sxs-lookup"><span data-stu-id="ca734-104">Declaring Asynchronous Functions</span></span>
+# <a name="declaring-asynchronous-functions"></a><span data-ttu-id="cf4b3-104">Declarando funções assíncronas</span><span class="sxs-lookup"><span data-stu-id="cf4b3-104">Declaring Asynchronous Functions</span></span>
 
-<span data-ttu-id="ca734-105">Para declarar uma função RPC como assíncrona, primeiro declare a função como parte de uma definição de interface em um arquivo IDL (Interface Definition Language).</span><span class="sxs-lookup"><span data-stu-id="ca734-105">To declare an RPC function as asynchronous, first declare the function as part of an interface definition in an Interface Definition Language (IDL) file.</span></span> <span data-ttu-id="ca734-106">O uso de funções RPC assíncronas não exige nenhuma alteração especial no arquivo IDL.</span><span class="sxs-lookup"><span data-stu-id="ca734-106">The use of asynchronous RPC functions does not require any special alterations to your IDL file.</span></span> <span data-ttu-id="ca734-107">O exemplo a seguir mostra um arquivo IDL para um aplicativo que usa uma função assíncrona.</span><span class="sxs-lookup"><span data-stu-id="ca734-107">The following example shows an IDL file for an application that uses one asynchronous function.</span></span>
+<span data-ttu-id="cf4b3-105">Para declarar uma função RPC como assíncrona, primeiro declare a função como parte de uma definição de interface em um arquivo IDL (Interface Definition Language).</span><span class="sxs-lookup"><span data-stu-id="cf4b3-105">To declare an RPC function as asynchronous, first declare the function as part of an interface definition in an Interface Definition Language (IDL) file.</span></span> <span data-ttu-id="cf4b3-106">O uso de funções RPC assíncronas não exige nenhuma alteração especial no arquivo IDL.</span><span class="sxs-lookup"><span data-stu-id="cf4b3-106">The use of asynchronous RPC functions does not require any special alterations to your IDL file.</span></span> <span data-ttu-id="cf4b3-107">O exemplo a seguir mostra um arquivo IDL para um aplicativo que usa uma função assíncrona.</span><span class="sxs-lookup"><span data-stu-id="cf4b3-107">The following example shows an IDL file for an application that uses one asynchronous function.</span></span>
 
 ``` syntax
 [ 
@@ -40,7 +40,7 @@ interface AsyncRPC
 }
 ```
 
-<span data-ttu-id="ca734-108">Para todas as funções RPC assíncronas que seu aplicativo usa, você precisará modificar a declaração das funções assíncronas no arquivo ACF do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="ca734-108">For all asynchronous RPC functions that your application uses, you will need to modify the declaration of the asynchronous functions within your application's ACF file.</span></span> <span data-ttu-id="ca734-109">Aplique o atributo [**\[ Async \]**](../midl/async.md) a cada nome de função assíncrona, conforme mostrado no exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="ca734-109">Apply the [**\[async\]**](../midl/async.md) attribute to each asynchronous function name, as shown in the following example:</span></span>
+<span data-ttu-id="cf4b3-108">Para todas as funções RPC assíncronas que seu aplicativo usa, você precisará modificar a declaração das funções assíncronas no arquivo ACF do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="cf4b3-108">For all asynchronous RPC functions that your application uses, you will need to modify the declaration of the asynchronous functions within your application's ACF file.</span></span> <span data-ttu-id="cf4b3-109">Aplique o atributo [**\[ Async \]**](../midl/async.md) a cada nome de função assíncrona, conforme mostrado no exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="cf4b3-109">Apply the [**\[async\]**](../midl/async.md) attribute to each asynchronous function name, as shown in the following example:</span></span>
 
 ``` syntax
 interface AsyncRPC
@@ -49,7 +49,7 @@ interface AsyncRPC
 }
 ```
 
-<span data-ttu-id="ca734-110">Quando você aplica o atributo **\[ Async \]** no arquivo ACF, o compilador MIDL gera automaticamente um parâmetro de identificador assíncrono adicional no código de stub.</span><span class="sxs-lookup"><span data-stu-id="ca734-110">When you apply the **\[async\]** attribute in the ACF file, the MIDL compiler automatically generates an additional asynchronous handle parameter in the stub code.</span></span>
+<span data-ttu-id="cf4b3-110">Quando você aplica o atributo **\[ Async \]** no arquivo ACF, o compilador MIDL gera automaticamente um parâmetro de identificador assíncrono adicional no código de stub.</span><span class="sxs-lookup"><span data-stu-id="cf4b3-110">When you apply the **\[async\]** attribute in the ACF file, the MIDL compiler automatically generates an additional asynchronous handle parameter in the stub code.</span></span>
 
  
 

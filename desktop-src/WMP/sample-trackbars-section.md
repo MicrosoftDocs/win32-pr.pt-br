@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822841"
 ---
-# <a name="sample-trackbars-section"></a><span data-ttu-id="63c8b-108">Exemplo de seção trackbars</span><span class="sxs-lookup"><span data-stu-id="63c8b-108">Sample Trackbars Section</span></span>
+# <a name="sample-trackbars-section"></a><span data-ttu-id="b9bbd-108">Exemplo de seção trackbars</span><span class="sxs-lookup"><span data-stu-id="b9bbd-108">Sample Trackbars Section</span></span>
 
-<span data-ttu-id="63c8b-109">As linhas a seguir mostram uma seção trackbars típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="63c8b-109">The following lines show a typical Trackbars section of a skin definition file:</span></span>
+<span data-ttu-id="b9bbd-109">As linhas a seguir mostram uma seção trackbars típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="b9bbd-109">The following lines show a typical Trackbars section of a skin definition file:</span></span>
 
 
 ```C++
@@ -33,13 +33,13 @@ ms.locfileid: "103822841"
 
 
 
-<span data-ttu-id="63c8b-110">O exemplo anterior define um TrackBar que permite ao usuário buscar por meio de um item de mídia tocando e arrastando a imagem SeekThumb.</span><span class="sxs-lookup"><span data-stu-id="63c8b-110">The preceding example defines a trackbar that allows the user to seek through a media item by tapping and dragging the SeekThumb image.</span></span>
+<span data-ttu-id="b9bbd-110">O exemplo anterior define um TrackBar que permite ao usuário buscar por meio de um item de mídia tocando e arrastando a imagem SeekThumb.</span><span class="sxs-lookup"><span data-stu-id="b9bbd-110">The preceding example defines a trackbar that allows the user to seek through a media item by tapping and dragging the SeekThumb image.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="63c8b-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="63c8b-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b9bbd-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b9bbd-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="63c8b-112">**Trackbars**</span><span class="sxs-lookup"><span data-stu-id="63c8b-112">**Trackbars**</span></span>](trackbars.md)
+[<span data-ttu-id="b9bbd-112">**Trackbars**</span><span class="sxs-lookup"><span data-stu-id="b9bbd-112">**Trackbars**</span></span>](trackbars.md)
 </dt> </dl>
 
  

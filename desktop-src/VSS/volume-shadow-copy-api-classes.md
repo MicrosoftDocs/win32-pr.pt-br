@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647171"
 ---
-# <a name="volume-shadow-copy-api-classes"></a><span data-ttu-id="ea991-103">Classes de API de cópia de sombra de volume</span><span class="sxs-lookup"><span data-stu-id="ea991-103">Volume Shadow Copy API Classes</span></span>
+# <a name="volume-shadow-copy-api-classes"></a><span data-ttu-id="dec8e-103">Classes de API de cópia de sombra de volume</span><span class="sxs-lookup"><span data-stu-id="dec8e-103">Volume Shadow Copy API Classes</span></span>
 
-<span data-ttu-id="ea991-104">A seguir estão as classes públicas da API de cópia de sombra de volume:</span><span class="sxs-lookup"><span data-stu-id="ea991-104">The following are the Volume Shadow Copy API public classes:</span></span>
+<span data-ttu-id="dec8e-104">A seguir estão as classes públicas da API de cópia de sombra de volume:</span><span class="sxs-lookup"><span data-stu-id="dec8e-104">The following are the Volume Shadow Copy API public classes:</span></span>
 
--   [<span data-ttu-id="ea991-105">**CVssWriter**</span><span class="sxs-lookup"><span data-stu-id="ea991-105">**CVssWriter**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriter)
--   [<span data-ttu-id="ea991-106">**CVssWriterEx**</span><span class="sxs-lookup"><span data-stu-id="ea991-106">**CVssWriterEx**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex)
--   [<span data-ttu-id="ea991-107">**CVssWriterEx2**</span><span class="sxs-lookup"><span data-stu-id="ea991-107">**CVssWriterEx2**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex2)
+-   [<span data-ttu-id="dec8e-105">**CVssWriter**</span><span class="sxs-lookup"><span data-stu-id="dec8e-105">**CVssWriter**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriter)
+-   [<span data-ttu-id="dec8e-106">**CVssWriterEx**</span><span class="sxs-lookup"><span data-stu-id="dec8e-106">**CVssWriterEx**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex)
+-   [<span data-ttu-id="dec8e-107">**CVssWriterEx2**</span><span class="sxs-lookup"><span data-stu-id="dec8e-107">**CVssWriterEx2**</span></span>](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex2)
 
  
 

@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822830"
 ---
-# <a name="filtering-traffic"></a><span data-ttu-id="c12c9-103">Filtrando o tráfego</span><span class="sxs-lookup"><span data-stu-id="c12c9-103">Filtering Traffic</span></span>
+# <a name="filtering-traffic"></a><span data-ttu-id="0462f-103">Filtrando o tráfego</span><span class="sxs-lookup"><span data-stu-id="0462f-103">Filtering Traffic</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="c12c9-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c12c9-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0462f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0462f-104">In this section</span></span>
 
--   [<span data-ttu-id="c12c9-105">Permitindo e bloqueando aplicativos e usuários</span><span class="sxs-lookup"><span data-stu-id="c12c9-105">Permitting and Blocking Applications and Users</span></span>](permitting-and-blocking-applications-and-users.md)
--   [<span data-ttu-id="c12c9-106">Reservando portas</span><span class="sxs-lookup"><span data-stu-id="c12c9-106">Reserving Ports</span></span>](reserving-ports.md)
--   [<span data-ttu-id="c12c9-107">Usando opções de classificação</span><span class="sxs-lookup"><span data-stu-id="c12c9-107">Using Classify Options</span></span>](using-classify-options.md)
--   [<span data-ttu-id="c12c9-108">Impedindo a verificação de porta</span><span class="sxs-lookup"><span data-stu-id="c12c9-108">Preventing Port Scanning</span></span>](preventing-port-scanning.md)
+-   [<span data-ttu-id="0462f-105">Permitindo e bloqueando aplicativos e usuários</span><span class="sxs-lookup"><span data-stu-id="0462f-105">Permitting and Blocking Applications and Users</span></span>](permitting-and-blocking-applications-and-users.md)
+-   [<span data-ttu-id="0462f-106">Reservando portas</span><span class="sxs-lookup"><span data-stu-id="0462f-106">Reserving Ports</span></span>](reserving-ports.md)
+-   [<span data-ttu-id="0462f-107">Usando opções de classificação</span><span class="sxs-lookup"><span data-stu-id="0462f-107">Using Classify Options</span></span>](using-classify-options.md)
+-   [<span data-ttu-id="0462f-108">Impedindo a verificação de porta</span><span class="sxs-lookup"><span data-stu-id="0462f-108">Preventing Port Scanning</span></span>](preventing-port-scanning.md)
 
  
 

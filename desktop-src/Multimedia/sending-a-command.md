@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103823708"
 ---
-# <a name="sending-a-command"></a><span data-ttu-id="df185-104">Enviando um comando</span><span class="sxs-lookup"><span data-stu-id="df185-104">Sending a Command</span></span>
+# <a name="sending-a-command"></a><span data-ttu-id="8abc0-104">Enviando um comando</span><span class="sxs-lookup"><span data-stu-id="8abc0-104">Sending a Command</span></span>
 
-<span data-ttu-id="df185-105">A função de exemplo a seguir envia o comando [**Play**](play.md) com os sinalizadores "from" e "to" usando a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="df185-105">The following example function sends the [**play**](play.md) command with the "from" and "to" flags using the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function.</span></span>
+<span data-ttu-id="8abc0-105">A função de exemplo a seguir envia o comando [**Play**](play.md) com os sinalizadores "from" e "to" usando a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="8abc0-105">The following example function sends the [**play**](play.md) command with the "from" and "to" flags using the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function.</span></span>
 
 
 ```C++

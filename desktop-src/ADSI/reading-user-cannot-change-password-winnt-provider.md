@@ -16,13 +16,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/27/2020
 ms.locfileid: "103917035"
 ---
-# <a name="reading-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="dbf96-106">A leitura do usuário não pode alterar a senha (provedor WinNT)</span><span class="sxs-lookup"><span data-stu-id="dbf96-106">Reading User Cannot Change Password (WinNT Provider)</span></span>
+# <a name="reading-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="ce3fb-106">A leitura do usuário não pode alterar a senha (provedor WinNT)</span><span class="sxs-lookup"><span data-stu-id="ce3fb-106">Reading User Cannot Change Password (WinNT Provider)</span></span>
 
-<span data-ttu-id="dbf96-107">A capacidade de um usuário alterar sua própria senha é uma permissão que pode ser concedida ou negada.</span><span class="sxs-lookup"><span data-stu-id="dbf96-107">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="dbf96-108">Para determinar se o usuário recebeu essa permissão com o provedor de WinNT, leia o sinalizador da UF do ADS passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** do objeto user.</span><span class="sxs-lookup"><span data-stu-id="dbf96-108">To determine if the user has been granted this permission with the WinNT provider, read the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of the user object.</span></span> <span data-ttu-id="dbf96-109">O sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** é definido na enumeração enum do [**\_ \_ sinalizador \_ do usuário ADS**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) .</span><span class="sxs-lookup"><span data-stu-id="dbf96-109">The **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag is defined in the [**ADS\_USER\_FLAG\_ENUM**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) enumeration.</span></span>
+<span data-ttu-id="ce3fb-107">A capacidade de um usuário alterar sua própria senha é uma permissão que pode ser concedida ou negada.</span><span class="sxs-lookup"><span data-stu-id="ce3fb-107">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="ce3fb-108">Para determinar se o usuário recebeu essa permissão com o provedor de WinNT, leia o sinalizador da UF do ADS passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** do objeto user.</span><span class="sxs-lookup"><span data-stu-id="ce3fb-108">To determine if the user has been granted this permission with the WinNT provider, read the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of the user object.</span></span> <span data-ttu-id="ce3fb-109">O sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** é definido na enumeração enum do [**\_ \_ sinalizador \_ do usuário ADS**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) .</span><span class="sxs-lookup"><span data-stu-id="ce3fb-109">The **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag is defined in the [**ADS\_USER\_FLAG\_ENUM**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) enumeration.</span></span>
 
-## <a name="example-code"></a><span data-ttu-id="dbf96-110">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="dbf96-110">Example Code</span></span>
+## <a name="example-code"></a><span data-ttu-id="ce3fb-110">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="ce3fb-110">Example Code</span></span>
 
-<span data-ttu-id="dbf96-111">O exemplo de código a seguir mostra como obter o sinalizador da UF de anúncios passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="dbf96-111">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="ce3fb-111">O exemplo de código a seguir mostra como obter o sinalizador da UF de anúncios passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="ce3fb-111">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```VB
@@ -56,7 +56,7 @@ End Function
 
 
 
-<span data-ttu-id="dbf96-112">O exemplo de código a seguir mostra como obter o sinalizador da UF de anúncios passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="dbf96-112">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="ce3fb-112">O exemplo de código a seguir mostra como obter o sinalizador da UF de anúncios passwd não é possível **\_ \_ \_ \_ alterar** a propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="ce3fb-112">The following code example shows how to obtain the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```C++

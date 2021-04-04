@@ -11,71 +11,71 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917635"
 ---
-# <a name="routing-protocol-interface-functions"></a><span data-ttu-id="f2641-103">Funções da interface do protocolo de roteamento</span><span class="sxs-lookup"><span data-stu-id="f2641-103">Routing Protocol Interface Functions</span></span>
+# <a name="routing-protocol-interface-functions"></a><span data-ttu-id="cdcef-103">Funções da interface do protocolo de roteamento</span><span class="sxs-lookup"><span data-stu-id="cdcef-103">Routing Protocol Interface Functions</span></span>
 
-<span data-ttu-id="f2641-104">Implemente as seguintes funções para uma DLL de protocolo de roteamento:</span><span class="sxs-lookup"><span data-stu-id="f2641-104">Implement the following functions for a routing protocol DLL:</span></span>
+<span data-ttu-id="cdcef-104">Implemente as seguintes funções para uma DLL de protocolo de roteamento:</span><span class="sxs-lookup"><span data-stu-id="cdcef-104">Implement the following functions for a routing protocol DLL:</span></span>
 
-[<span data-ttu-id="f2641-105">**AddInterface**</span><span class="sxs-lookup"><span data-stu-id="f2641-105">**AddInterface**</span></span>](/windows/desktop/api/Routprot/nc-routprot-padd_interface)
+[<span data-ttu-id="cdcef-105">**AddInterface**</span><span class="sxs-lookup"><span data-stu-id="cdcef-105">**AddInterface**</span></span>](/windows/desktop/api/Routprot/nc-routprot-padd_interface)
 
-[<span data-ttu-id="f2641-106">**ConnectClient**</span><span class="sxs-lookup"><span data-stu-id="f2641-106">**ConnectClient**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pconnect_client)
+[<span data-ttu-id="cdcef-106">**ConnectClient**</span><span class="sxs-lookup"><span data-stu-id="cdcef-106">**ConnectClient**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pconnect_client)
 
-[<span data-ttu-id="f2641-107">**DeleteInterface**</span><span class="sxs-lookup"><span data-stu-id="f2641-107">**DeleteInterface**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdelete_interface)
+[<span data-ttu-id="cdcef-107">**DeleteInterface**</span><span class="sxs-lookup"><span data-stu-id="cdcef-107">**DeleteInterface**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdelete_interface)
 
-[<span data-ttu-id="f2641-108">**DisconnectClient**</span><span class="sxs-lookup"><span data-stu-id="f2641-108">**DisconnectClient**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdisconnect_client)
+[<span data-ttu-id="cdcef-108">**DisconnectClient**</span><span class="sxs-lookup"><span data-stu-id="cdcef-108">**DisconnectClient**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdisconnect_client)
 
-[<span data-ttu-id="f2641-109">**DoUpdateRoutes**</span><span class="sxs-lookup"><span data-stu-id="f2641-109">**DoUpdateRoutes**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdo_update_routes)
+[<span data-ttu-id="cdcef-109">**DoUpdateRoutes**</span><span class="sxs-lookup"><span data-stu-id="cdcef-109">**DoUpdateRoutes**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pdo_update_routes)
 
-<span data-ttu-id="f2641-110">[*Doupdateservices*](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="f2641-110">[*DoUpdateServices*](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span></span>
+<span data-ttu-id="cdcef-110">[*Doupdateservices*](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="cdcef-110">[*DoUpdateServices*](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span></span>
 
-[<span data-ttu-id="f2641-111">**GetEventMessage**</span><span class="sxs-lookup"><span data-stu-id="f2641-111">**GetEventMessage**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_event_message)
+[<span data-ttu-id="cdcef-111">**GetEventMessage**</span><span class="sxs-lookup"><span data-stu-id="cdcef-111">**GetEventMessage**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_event_message)
 
-[<span data-ttu-id="f2641-112">**GetGlobalInfo**</span><span class="sxs-lookup"><span data-stu-id="f2641-112">**GetGlobalInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_global_info)
+[<span data-ttu-id="cdcef-112">**GetGlobalInfo**</span><span class="sxs-lookup"><span data-stu-id="cdcef-112">**GetGlobalInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_global_info)
 
-[<span data-ttu-id="f2641-113">**GetInterfaceInfo**</span><span class="sxs-lookup"><span data-stu-id="f2641-113">**GetInterfaceInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_interface_info)
+[<span data-ttu-id="cdcef-113">**GetInterfaceInfo**</span><span class="sxs-lookup"><span data-stu-id="cdcef-113">**GetInterfaceInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_interface_info)
 
-[<span data-ttu-id="f2641-114">**GetMfeStatus**</span><span class="sxs-lookup"><span data-stu-id="f2641-114">**GetMfeStatus**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_mfe_status)
+[<span data-ttu-id="cdcef-114">**GetMfeStatus**</span><span class="sxs-lookup"><span data-stu-id="cdcef-114">**GetMfeStatus**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_mfe_status)
 
-[<span data-ttu-id="f2641-115">**Getneighbors**</span><span class="sxs-lookup"><span data-stu-id="f2641-115">**GetNeighbors**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_neighbors)
+[<span data-ttu-id="cdcef-115">**Getneighbors**</span><span class="sxs-lookup"><span data-stu-id="cdcef-115">**GetNeighbors**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pget_neighbors)
 
-[<span data-ttu-id="f2641-116">**InterfaceStatus**</span><span class="sxs-lookup"><span data-stu-id="f2641-116">**InterfaceStatus**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pinterface_status)
+[<span data-ttu-id="cdcef-116">**InterfaceStatus**</span><span class="sxs-lookup"><span data-stu-id="cdcef-116">**InterfaceStatus**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pinterface_status)
 
-[<span data-ttu-id="f2641-117">**MibCreate**</span><span class="sxs-lookup"><span data-stu-id="f2641-117">**MibCreate**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_create)
+[<span data-ttu-id="cdcef-117">**MibCreate**</span><span class="sxs-lookup"><span data-stu-id="cdcef-117">**MibCreate**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_create)
 
-[<span data-ttu-id="f2641-118">**MibDelete**</span><span class="sxs-lookup"><span data-stu-id="f2641-118">**MibDelete**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_delete)
+[<span data-ttu-id="cdcef-118">**MibDelete**</span><span class="sxs-lookup"><span data-stu-id="cdcef-118">**MibDelete**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_delete)
 
-[<span data-ttu-id="f2641-119">**MibGet**</span><span class="sxs-lookup"><span data-stu-id="f2641-119">**MibGet**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get)
+[<span data-ttu-id="cdcef-119">**MibGet**</span><span class="sxs-lookup"><span data-stu-id="cdcef-119">**MibGet**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get)
 
-[<span data-ttu-id="f2641-120">**MibGetFirst**</span><span class="sxs-lookup"><span data-stu-id="f2641-120">**MibGetFirst**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_first)
+[<span data-ttu-id="cdcef-120">**MibGetFirst**</span><span class="sxs-lookup"><span data-stu-id="cdcef-120">**MibGetFirst**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_first)
 
-[<span data-ttu-id="f2641-121">**MibGetNext**</span><span class="sxs-lookup"><span data-stu-id="f2641-121">**MibGetNext**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_next)
+[<span data-ttu-id="cdcef-121">**MibGetNext**</span><span class="sxs-lookup"><span data-stu-id="cdcef-121">**MibGetNext**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_next)
 
-[<span data-ttu-id="f2641-122">*MibGetTrapInfo*</span><span class="sxs-lookup"><span data-stu-id="f2641-122">*MibGetTrapInfo*</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_trap_info)
+[<span data-ttu-id="cdcef-122">*MibGetTrapInfo*</span><span class="sxs-lookup"><span data-stu-id="cdcef-122">*MibGetTrapInfo*</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_get_trap_info)
 
-[<span data-ttu-id="f2641-123">**MibSet**</span><span class="sxs-lookup"><span data-stu-id="f2641-123">**MibSet**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_set)
+[<span data-ttu-id="cdcef-123">**MibSet**</span><span class="sxs-lookup"><span data-stu-id="cdcef-123">**MibSet**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_set)
 
-[<span data-ttu-id="f2641-124">**MibSetTrapInfo**</span><span class="sxs-lookup"><span data-stu-id="f2641-124">**MibSetTrapInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_set_trap_info)
+[<span data-ttu-id="cdcef-124">**MibSetTrapInfo**</span><span class="sxs-lookup"><span data-stu-id="cdcef-124">**MibSetTrapInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pmib_set_trap_info)
 
-[<span data-ttu-id="f2641-125">**QueryPower**</span><span class="sxs-lookup"><span data-stu-id="f2641-125">**QueryPower**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pquery_power)
+[<span data-ttu-id="cdcef-125">**QueryPower**</span><span class="sxs-lookup"><span data-stu-id="cdcef-125">**QueryPower**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pquery_power)
 
-[<span data-ttu-id="f2641-126">**RegisterProtocol**</span><span class="sxs-lookup"><span data-stu-id="f2641-126">**RegisterProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pregister_protocol)
+[<span data-ttu-id="cdcef-126">**RegisterProtocol**</span><span class="sxs-lookup"><span data-stu-id="cdcef-126">**RegisterProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pregister_protocol)
 
-[<span data-ttu-id="f2641-127">**SetGlobalInfo**</span><span class="sxs-lookup"><span data-stu-id="f2641-127">**SetGlobalInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_global_info)
+[<span data-ttu-id="cdcef-127">**SetGlobalInfo**</span><span class="sxs-lookup"><span data-stu-id="cdcef-127">**SetGlobalInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_global_info)
 
-[<span data-ttu-id="f2641-128">**SetInterfaceInfo**</span><span class="sxs-lookup"><span data-stu-id="f2641-128">**SetInterfaceInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_interface_info)
+[<span data-ttu-id="cdcef-128">**SetInterfaceInfo**</span><span class="sxs-lookup"><span data-stu-id="cdcef-128">**SetInterfaceInfo**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_interface_info)
 
-[<span data-ttu-id="f2641-129">**SetPower**</span><span class="sxs-lookup"><span data-stu-id="f2641-129">**SetPower**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_power)
+[<span data-ttu-id="cdcef-129">**SetPower**</span><span class="sxs-lookup"><span data-stu-id="cdcef-129">**SetPower**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pset_power)
 
-[<span data-ttu-id="f2641-130">**StartComplete**</span><span class="sxs-lookup"><span data-stu-id="f2641-130">**StartComplete**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstart_complete)
+[<span data-ttu-id="cdcef-130">**StartComplete**</span><span class="sxs-lookup"><span data-stu-id="cdcef-130">**StartComplete**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstart_complete)
 
-[<span data-ttu-id="f2641-131">**StartProtocol**</span><span class="sxs-lookup"><span data-stu-id="f2641-131">**StartProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol)
+[<span data-ttu-id="cdcef-131">**StartProtocol**</span><span class="sxs-lookup"><span data-stu-id="cdcef-131">**StartProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol)
 
-[<span data-ttu-id="f2641-132">**StopProtocol**</span><span class="sxs-lookup"><span data-stu-id="f2641-132">**StopProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstop_protocol)
+[<span data-ttu-id="cdcef-132">**StopProtocol**</span><span class="sxs-lookup"><span data-stu-id="cdcef-132">**StopProtocol**</span></span>](/windows/desktop/api/Routprot/nc-routprot-pstop_protocol)
 
-<span data-ttu-id="f2641-133">[**UnbindInterface**](/previous-versions/windows/desktop/legacy/aa382296(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="f2641-133">[**UnbindInterface**](/previous-versions/windows/desktop/legacy/aa382296(v=vs.85))</span></span>
+<span data-ttu-id="cdcef-133">[**UnbindInterface**](/previous-versions/windows/desktop/legacy/aa382296(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="cdcef-133">[**UnbindInterface**](/previous-versions/windows/desktop/legacy/aa382296(v=vs.85))</span></span>
 
-<span data-ttu-id="f2641-134">Se o protocolo de roteamento oferecer suporte ao tratamento de serviços, implemente a seguinte função além daquelas listadas anteriormente:</span><span class="sxs-lookup"><span data-stu-id="f2641-134">If the routing protocol supports service handling, implement the following function in addition to those listed preceding:</span></span>
+<span data-ttu-id="cdcef-134">Se o protocolo de roteamento oferecer suporte ao tratamento de serviços, implemente a seguinte função além daquelas listadas anteriormente:</span><span class="sxs-lookup"><span data-stu-id="cdcef-134">If the routing protocol supports service handling, implement the following function in addition to those listed preceding:</span></span>
 
-<span data-ttu-id="f2641-135">[**Doupdateservices**](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="f2641-135">[**DoUpdateServices**](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span></span>
+<span data-ttu-id="cdcef-135">[**Doupdateservices**](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="cdcef-135">[**DoUpdateServices**](/previous-versions/windows/desktop/legacy/aa374005(v=vs.85))</span></span>
 
  
 

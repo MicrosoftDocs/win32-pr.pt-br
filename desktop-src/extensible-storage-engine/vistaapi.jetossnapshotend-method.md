@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647338"
 ---
-# <a name="vistaapijetossnapshotend-method"></a><span data-ttu-id="b0693-103">Método VistaApi. JetOSSnapshotEnd</span><span class="sxs-lookup"><span data-stu-id="b0693-103">VistaApi.JetOSSnapshotEnd method</span></span>
+# <a name="vistaapijetossnapshotend-method"></a><span data-ttu-id="bd086-103">Método VistaApi. JetOSSnapshotEnd</span><span class="sxs-lookup"><span data-stu-id="bd086-103">VistaApi.JetOSSnapshotEnd method</span></span>
 
-<span data-ttu-id="b0693-104">Notifica o mecanismo de que a sessão de instantâneo foi concluída.</span><span class="sxs-lookup"><span data-stu-id="b0693-104">Notifies the engine that the snapshot session finished.</span></span>
+<span data-ttu-id="bd086-104">Notifica o mecanismo de que a sessão de instantâneo foi concluída.</span><span class="sxs-lookup"><span data-stu-id="bd086-104">Notifies the engine that the snapshot session finished.</span></span>
 
-<span data-ttu-id="b0693-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b0693-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="b0693-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b0693-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="bd086-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bd086-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="bd086-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bd086-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b0693-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b0693-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bd086-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bd086-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,26 +59,26 @@ public static void JetOSSnapshotEnd(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="b0693-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b0693-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="bd086-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="bd086-108">Parameters</span></span>
 
-  - <span data-ttu-id="b0693-109">instantâneo</span><span class="sxs-lookup"><span data-stu-id="b0693-109">snapshot</span></span>  
-    <span data-ttu-id="b0693-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b0693-110">Type: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)</span></span>  
+  - <span data-ttu-id="bd086-109">instantâneo</span><span class="sxs-lookup"><span data-stu-id="bd086-109">snapshot</span></span>  
+    <span data-ttu-id="bd086-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="bd086-110">Type: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)</span></span>  
     
-    <span data-ttu-id="b0693-111">O identificador da sessão de instantâneo.</span><span class="sxs-lookup"><span data-stu-id="b0693-111">The identifier of the snapshot session.</span></span>
+    <span data-ttu-id="bd086-111">O identificador da sessão de instantâneo.</span><span class="sxs-lookup"><span data-stu-id="bd086-111">The identifier of the snapshot session.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b0693-112">grbit</span><span class="sxs-lookup"><span data-stu-id="b0693-112">grbit</span></span>  
-    <span data-ttu-id="b0693-113">Tipo: [Microsoft. ISAM. ESENT. Interop. vista. SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="b0693-113">Type: [Microsoft.Isam.Esent.Interop.Vista.SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)</span></span>  
+  - <span data-ttu-id="bd086-112">grbit</span><span class="sxs-lookup"><span data-stu-id="bd086-112">grbit</span></span>  
+    <span data-ttu-id="bd086-113">Tipo: [Microsoft. ISAM. ESENT. Interop. vista. SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="bd086-113">Type: [Microsoft.Isam.Esent.Interop.Vista.SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)</span></span>  
     
-    <span data-ttu-id="b0693-114">Opções de fim do instantâneo.</span><span class="sxs-lookup"><span data-stu-id="b0693-114">Snapshot end options.</span></span>
+    <span data-ttu-id="bd086-114">Opções de fim do instantâneo.</span><span class="sxs-lookup"><span data-stu-id="bd086-114">Snapshot end options.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b0693-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="b0693-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd086-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="bd086-115">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="b0693-116">Referência</span><span class="sxs-lookup"><span data-stu-id="b0693-116">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="bd086-116">Referência</span><span class="sxs-lookup"><span data-stu-id="bd086-116">Reference</span></span>
 
-[<span data-ttu-id="b0693-117">Classe VistaApi</span><span class="sxs-lookup"><span data-stu-id="b0693-117">VistaApi class</span></span>](./vistaapi-class.md)
+[<span data-ttu-id="bd086-117">Classe VistaApi</span><span class="sxs-lookup"><span data-stu-id="bd086-117">VistaApi class</span></span>](./vistaapi-class.md)
 
-[<span data-ttu-id="b0693-118">Membros do VistaApi</span><span class="sxs-lookup"><span data-stu-id="b0693-118">VistaApi members</span></span>](./vistaapi-members.md)
+[<span data-ttu-id="bd086-118">Membros do VistaApi</span><span class="sxs-lookup"><span data-stu-id="bd086-118">VistaApi members</span></span>](./vistaapi-members.md)
 
-[<span data-ttu-id="b0693-119">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="b0693-119">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="bd086-119">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="bd086-119">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

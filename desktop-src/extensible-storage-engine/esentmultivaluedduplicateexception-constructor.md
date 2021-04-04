@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647498"
 ---
-# <a name="esentmultivaluedduplicateexception-constructor"></a><span data-ttu-id="36172-103">Construtor EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="36172-103">EsentMultiValuedDuplicateException constructor</span></span>
+# <a name="esentmultivaluedduplicateexception-constructor"></a><span data-ttu-id="6af0b-103">Construtor EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="6af0b-103">EsentMultiValuedDuplicateException constructor</span></span>
 
-<span data-ttu-id="36172-104">Inicializa uma nova instância da classe EsentMultiValuedDuplicateException.</span><span class="sxs-lookup"><span data-stu-id="36172-104">Initializes a new instance of the EsentMultiValuedDuplicateException class.</span></span>
+<span data-ttu-id="6af0b-104">Inicializa uma nova instância da classe EsentMultiValuedDuplicateException.</span><span class="sxs-lookup"><span data-stu-id="6af0b-104">Initializes a new instance of the EsentMultiValuedDuplicateException class.</span></span>
 
-<span data-ttu-id="36172-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="36172-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="36172-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="36172-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6af0b-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6af0b-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="6af0b-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6af0b-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="36172-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="36172-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6af0b-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6af0b-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentMultiValuedDuplicateException()
 public EsentMultiValuedDuplicateException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="36172-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="36172-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6af0b-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6af0b-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="36172-109">Referência</span><span class="sxs-lookup"><span data-stu-id="36172-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6af0b-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6af0b-109">Reference</span></span>
 
-[<span data-ttu-id="36172-110">Classe EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="36172-110">EsentMultiValuedDuplicateException class</span></span>](./esentmultivaluedduplicateexception-class.md)
+[<span data-ttu-id="6af0b-110">Classe EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="6af0b-110">EsentMultiValuedDuplicateException class</span></span>](./esentmultivaluedduplicateexception-class.md)
 
-[<span data-ttu-id="36172-111">Membros do EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="36172-111">EsentMultiValuedDuplicateException members</span></span>](./esentmultivaluedduplicateexception-members.md)
+[<span data-ttu-id="6af0b-111">Membros do EsentMultiValuedDuplicateException</span><span class="sxs-lookup"><span data-stu-id="6af0b-111">EsentMultiValuedDuplicateException members</span></span>](./esentmultivaluedduplicateexception-members.md)
 
-[<span data-ttu-id="36172-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="36172-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="6af0b-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6af0b-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

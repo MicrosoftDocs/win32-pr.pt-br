@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 02/04/2020
 ms.locfileid: "103823543"
 ---
-# <a name="enumerations"></a><span data-ttu-id="a0a48-103">Enumerações</span><span class="sxs-lookup"><span data-stu-id="a0a48-103">Enumerations</span></span>
+# <a name="enumerations"></a><span data-ttu-id="3daef-103">Enumerações</span><span class="sxs-lookup"><span data-stu-id="3daef-103">Enumerations</span></span>
 
-<span data-ttu-id="a0a48-104">Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) enumerações de notificações.</span><span class="sxs-lookup"><span data-stu-id="a0a48-104">The topics in this section provide the reference specifications for [Pointer Input Messages and Notifications](messages-and-notifications-portal.md) enumerations.</span></span>
+<span data-ttu-id="3daef-104">Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) enumerações de notificações.</span><span class="sxs-lookup"><span data-stu-id="3daef-104">The topics in this section provide the reference specifications for [Pointer Input Messages and Notifications](messages-and-notifications-portal.md) enumerations.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a0a48-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a0a48-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3daef-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3daef-105">In this section</span></span>
 
 
 
-| <span data-ttu-id="a0a48-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="a0a48-106">Topic</span></span>                                                                          | <span data-ttu-id="a0a48-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0a48-107">Description</span></span>                                                                        |
+| <span data-ttu-id="3daef-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="3daef-106">Topic</span></span>                                                                          | <span data-ttu-id="3daef-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="3daef-107">Description</span></span>                                                                        |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [<span data-ttu-id="a0a48-108">**POINTER_BUTTON_CHANGE_TYPE**</span><span class="sxs-lookup"><span data-stu-id="a0a48-108">**POINTER_BUTTON_CHANGE_TYPE**</span></span>](/previous-versions/windows/desktop/api)<br/> | <span data-ttu-id="a0a48-109">Identifica uma alteração no estado de um botão associado a um ponteiro.</span><span class="sxs-lookup"><span data-stu-id="a0a48-109">Identifies a change in the state of a button associated with a pointer.</span></span><br/> |
-| [<span data-ttu-id="a0a48-110">**POINTER_INPUT_TYPE**</span><span class="sxs-lookup"><span data-stu-id="a0a48-110">**POINTER_INPUT_TYPE**</span></span>](/previous-versions/windows/desktop/api)<br/>             | <span data-ttu-id="a0a48-111">Lista os tipos de entrada do ponteiro.</span><span class="sxs-lookup"><span data-stu-id="a0a48-111">Lists the pointer input types.</span></span><br/>                                          |
+| [<span data-ttu-id="3daef-108">**POINTER_BUTTON_CHANGE_TYPE**</span><span class="sxs-lookup"><span data-stu-id="3daef-108">**POINTER_BUTTON_CHANGE_TYPE**</span></span>](/previous-versions/windows/desktop/api)<br/> | <span data-ttu-id="3daef-109">Identifica uma alteração no estado de um botão associado a um ponteiro.</span><span class="sxs-lookup"><span data-stu-id="3daef-109">Identifies a change in the state of a button associated with a pointer.</span></span><br/> |
+| [<span data-ttu-id="3daef-110">**POINTER_INPUT_TYPE**</span><span class="sxs-lookup"><span data-stu-id="3daef-110">**POINTER_INPUT_TYPE**</span></span>](/previous-versions/windows/desktop/api)<br/>             | <span data-ttu-id="3daef-111">Lista os tipos de entrada do ponteiro.</span><span class="sxs-lookup"><span data-stu-id="3daef-111">Lists the pointer input types.</span></span><br/>                                          |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="a0a48-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a0a48-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3daef-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3daef-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a0a48-113">Referência de mensagem de entrada do ponteiro</span><span class="sxs-lookup"><span data-stu-id="a0a48-113">Pointer Input Message Reference</span></span>](wmpointer-reference.md)
+[<span data-ttu-id="3daef-113">Referência de mensagem de entrada do ponteiro</span><span class="sxs-lookup"><span data-stu-id="3daef-113">Pointer Input Message Reference</span></span>](wmpointer-reference.md)
 </dt> </dl>
 
  

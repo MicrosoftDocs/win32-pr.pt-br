@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822794"
 ---
-# <a name="cursor-notifications"></a><span data-ttu-id="7e8ce-103">Notificações do cursor</span><span class="sxs-lookup"><span data-stu-id="7e8ce-103">Cursor Notifications</span></span>
+# <a name="cursor-notifications"></a><span data-ttu-id="3f09d-103">Notificações do cursor</span><span class="sxs-lookup"><span data-stu-id="3f09d-103">Cursor Notifications</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="7e8ce-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7e8ce-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3f09d-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3f09d-104">In This Section</span></span>
 
--   [<span data-ttu-id="7e8ce-105">**WM \_ SETcursor**</span><span class="sxs-lookup"><span data-stu-id="7e8ce-105">**WM\_SETCURSOR**</span></span>](wm-setcursor.md)
+-   [<span data-ttu-id="3f09d-105">**WM \_ SETcursor**</span><span class="sxs-lookup"><span data-stu-id="3f09d-105">**WM\_SETCURSOR**</span></span>](wm-setcursor.md)
 
  
 

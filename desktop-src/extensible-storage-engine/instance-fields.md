@@ -14,39 +14,39 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647599"
 ---
-# <a name="instance-fields"></a><span data-ttu-id="19df8-103">Campos de instância</span><span class="sxs-lookup"><span data-stu-id="19df8-103">Instance fields</span></span>
+# <a name="instance-fields"></a><span data-ttu-id="3eb35-103">Campos de instância</span><span class="sxs-lookup"><span data-stu-id="3eb35-103">Instance fields</span></span>
 
-<span data-ttu-id="19df8-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="19df8-104">Include protected members</span></span>  
-<span data-ttu-id="19df8-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="19df8-105">Include inherited members</span></span>  
+<span data-ttu-id="3eb35-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="3eb35-104">Include protected members</span></span>  
+<span data-ttu-id="3eb35-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="3eb35-105">Include inherited members</span></span>  
 
-<span data-ttu-id="19df8-106">O tipo de [instância](./instance-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="19df8-106">The [Instance](./instance-class.md) type exposes the following members.</span></span>
+<span data-ttu-id="3eb35-106">O tipo de [instância](./instance-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="3eb35-106">The [Instance](./instance-class.md) type exposes the following members.</span></span>
 
-## <a name="fields"></a><span data-ttu-id="19df8-107">Campos</span><span class="sxs-lookup"><span data-stu-id="19df8-107">Fields</span></span>
+## <a name="fields"></a><span data-ttu-id="3eb35-107">Campos</span><span class="sxs-lookup"><span data-stu-id="3eb35-107">Fields</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="19df8-108">Nome</span><span class="sxs-lookup"><span data-stu-id="19df8-108">Name</span></span></th>
-<th><span data-ttu-id="19df8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="19df8-109">Description</span></span></th>
+<th><span data-ttu-id="3eb35-108">Nome</span><span class="sxs-lookup"><span data-stu-id="3eb35-108">Name</span></span></th>
+<th><span data-ttu-id="3eb35-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="3eb35-109">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.protfield(exchg.10).gif" title="Campo protegido" alt="Protected field" /></td>
-<td><span data-ttu-id="19df8-111"><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">processamento</a></span><span class="sxs-lookup"><span data-stu-id="19df8-111"><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">handle</a></span></span></td>
-<td><span data-ttu-id="19df8-112">(Herdado de <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.)</span><span class="sxs-lookup"><span data-stu-id="19df8-112">(Inherited from <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.)</span></span></td>
+<td><span data-ttu-id="3eb35-111"><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">processamento</a></span><span class="sxs-lookup"><span data-stu-id="3eb35-111"><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">handle</a></span></span></td>
+<td><span data-ttu-id="3eb35-112">(Herdado de <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.)</span><span class="sxs-lookup"><span data-stu-id="3eb35-112">(Inherited from <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.)</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="19df8-113">Parte superior</span><span class="sxs-lookup"><span data-stu-id="19df8-113">Top</span></span>
+<span data-ttu-id="3eb35-113">Parte superior</span><span class="sxs-lookup"><span data-stu-id="3eb35-113">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="19df8-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="19df8-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3eb35-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="3eb35-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="19df8-115">Referência</span><span class="sxs-lookup"><span data-stu-id="19df8-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="3eb35-115">Referência</span><span class="sxs-lookup"><span data-stu-id="3eb35-115">Reference</span></span>
 
-[<span data-ttu-id="19df8-116">Classe de instância</span><span class="sxs-lookup"><span data-stu-id="19df8-116">Instance class</span></span>](./instance-class.md)
+[<span data-ttu-id="3eb35-116">Classe de instância</span><span class="sxs-lookup"><span data-stu-id="3eb35-116">Instance class</span></span>](./instance-class.md)
 
-[<span data-ttu-id="19df8-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="19df8-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="3eb35-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3eb35-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

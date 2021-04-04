@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647680"
 ---
-# <a name="windows8grbitsindexdotnetguid-field"></a><span data-ttu-id="802e4-103">Campo Windows8Grbits. IndexDotNetGuid</span><span class="sxs-lookup"><span data-stu-id="802e4-103">Windows8Grbits.IndexDotNetGuid field</span></span>
+# <a name="windows8grbitsindexdotnetguid-field"></a><span data-ttu-id="9dae2-103">Campo Windows8Grbits. IndexDotNetGuid</span><span class="sxs-lookup"><span data-stu-id="9dae2-103">Windows8Grbits.IndexDotNetGuid field</span></span>
 
-<span data-ttu-id="802e4-104">A especificação desse sinalizador irá alterar a ordem de classificação GUID para .NET Framework padrão.</span><span class="sxs-lookup"><span data-stu-id="802e4-104">Specifying this flag will change GUID sort order to .NET Framework standard.</span></span>
+<span data-ttu-id="9dae2-104">A especificação desse sinalizador irá alterar a ordem de classificação GUID para .NET Framework padrão.</span><span class="sxs-lookup"><span data-stu-id="9dae2-104">Specifying this flag will change GUID sort order to .NET Framework standard.</span></span>
 
-<span data-ttu-id="802e4-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="802e4-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="802e4-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="802e4-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="9dae2-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9dae2-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="9dae2-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9dae2-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="802e4-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="802e4-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9dae2-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9dae2-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = Windows8Grbits.IndexDotNetGuid
 public const CreateIndexGrbit IndexDotNetGuid
 ```
 
-## <a name="see-also"></a><span data-ttu-id="802e4-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="802e4-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9dae2-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="9dae2-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="802e4-109">Referência</span><span class="sxs-lookup"><span data-stu-id="802e4-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="9dae2-109">Referência</span><span class="sxs-lookup"><span data-stu-id="9dae2-109">Reference</span></span>
 
-[<span data-ttu-id="802e4-110">Classe Windows8Grbits</span><span class="sxs-lookup"><span data-stu-id="802e4-110">Windows8Grbits class</span></span>](./windows8grbits-class.md)
+[<span data-ttu-id="9dae2-110">Classe Windows8Grbits</span><span class="sxs-lookup"><span data-stu-id="9dae2-110">Windows8Grbits class</span></span>](./windows8grbits-class.md)
 
-[<span data-ttu-id="802e4-111">Membros do Windows8Grbits</span><span class="sxs-lookup"><span data-stu-id="802e4-111">Windows8Grbits members</span></span>](./windows8grbits-members.md)
+[<span data-ttu-id="9dae2-111">Membros do Windows8Grbits</span><span class="sxs-lookup"><span data-stu-id="9dae2-111">Windows8Grbits members</span></span>](./windows8grbits-members.md)
 
-[<span data-ttu-id="802e4-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="802e4-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="9dae2-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="9dae2-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

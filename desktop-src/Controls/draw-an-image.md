@@ -11,27 +11,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "103917813"
 ---
-# <a name="how-to-draw-an-image"></a><span data-ttu-id="1c9fa-103">Como desenhar uma imagem</span><span class="sxs-lookup"><span data-stu-id="1c9fa-103">How to Draw an Image</span></span>
+# <a name="how-to-draw-an-image"></a><span data-ttu-id="b4409-103">Como desenhar uma imagem</span><span class="sxs-lookup"><span data-stu-id="b4409-103">How to Draw an Image</span></span>
 
-<span data-ttu-id="1c9fa-104">Este tópico demonstra como usar a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) para desenhar uma imagem.</span><span class="sxs-lookup"><span data-stu-id="1c9fa-104">This topic demonstrates how to use the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) function to draw an image.</span></span>
+<span data-ttu-id="b4409-104">Este tópico demonstra como usar a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) para desenhar uma imagem.</span><span class="sxs-lookup"><span data-stu-id="b4409-104">This topic demonstrates how to use the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) function to draw an image.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="1c9fa-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="1c9fa-105">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="b4409-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="b4409-105">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="1c9fa-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="1c9fa-106">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="b4409-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="b4409-106">Technologies</span></span>
 
--   [<span data-ttu-id="1c9fa-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="1c9fa-107">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="b4409-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="b4409-107">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="1c9fa-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1c9fa-108">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="b4409-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="b4409-108">Prerequisites</span></span>
 
--   <span data-ttu-id="1c9fa-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="1c9fa-109">C/C++</span></span>
--   <span data-ttu-id="1c9fa-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="1c9fa-110">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="b4409-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="b4409-109">C/C++</span></span>
+-   <span data-ttu-id="b4409-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="b4409-110">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="1c9fa-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="1c9fa-111">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="b4409-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="b4409-111">Instructions</span></span>
 
 
-<span data-ttu-id="1c9fa-112">Para desenhar uma imagem, use a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) ou [**ImageList \_ DrawEx**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) .</span><span class="sxs-lookup"><span data-stu-id="1c9fa-112">To draw an image, you use the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) or [**ImageList\_DrawEx**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) function.</span></span> <span data-ttu-id="1c9fa-113">Você especifica o identificador para uma lista de imagens, o índice da imagem a ser desenhada, o identificador para o contexto do dispositivo de destino, um local dentro do contexto do dispositivo e um ou mais estilos de desenho.</span><span class="sxs-lookup"><span data-stu-id="1c9fa-113">You specify the handle to an image list, the index of the image to draw, the handle to the destination device context, a location within the device context, and one or more drawing styles.</span></span>
+<span data-ttu-id="b4409-112">Para desenhar uma imagem, use a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) ou [**ImageList \_ DrawEx**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) .</span><span class="sxs-lookup"><span data-stu-id="b4409-112">To draw an image, you use the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) or [**ImageList\_DrawEx**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) function.</span></span> <span data-ttu-id="b4409-113">Você especifica o identificador para uma lista de imagens, o índice da imagem a ser desenhada, o identificador para o contexto do dispositivo de destino, um local dentro do contexto do dispositivo e um ou mais estilos de desenho.</span><span class="sxs-lookup"><span data-stu-id="b4409-113">You specify the handle to an image list, the index of the image to draw, the handle to the destination device context, a location within the device context, and one or more drawing styles.</span></span>
 
-<span data-ttu-id="1c9fa-114">A função definida pelo usuário no exemplo de código C++ a seguir usa a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) para desenhar uma imagem e salva as coordenadas do cliente do retângulo delimitador da imagem.</span><span class="sxs-lookup"><span data-stu-id="1c9fa-114">The user-defined function in the following C++ code example uses the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) function to draw an image and saves the client coordinates of the image's bounding rectangle.</span></span> <span data-ttu-id="1c9fa-115">Uma função subsequente usa o retângulo delimitador para determinar se o usuário clicou na imagem.</span><span class="sxs-lookup"><span data-stu-id="1c9fa-115">A subsequent function uses the bounding rectangle to determine whether the user has clicked on the image.</span></span>
+<span data-ttu-id="b4409-114">A função definida pelo usuário no exemplo de código C++ a seguir usa a função [**ImageList \_ draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) para desenhar uma imagem e salva as coordenadas do cliente do retângulo delimitador da imagem.</span><span class="sxs-lookup"><span data-stu-id="b4409-114">The user-defined function in the following C++ code example uses the [**ImageList\_Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) function to draw an image and saves the client coordinates of the image's bounding rectangle.</span></span> <span data-ttu-id="b4409-115">Uma função subsequente usa o retângulo delimitador para determinar se o usuário clicou na imagem.</span><span class="sxs-lookup"><span data-stu-id="b4409-115">A subsequent function uses the bounding rectangle to determine whether the user has clicked on the image.</span></span>
 
 
 
@@ -71,17 +71,17 @@ BOOL DrawTheImage(HWND hwnd, HIMAGELIST himl, int cx, int cy)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="1c9fa-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1c9fa-116">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b4409-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b4409-116">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1c9fa-117">Referência de listas de imagens</span><span class="sxs-lookup"><span data-stu-id="1c9fa-117">Image Lists Reference</span></span>](bumper-image-lists-image-lists-reference.md)
+[<span data-ttu-id="b4409-117">Referência de listas de imagens</span><span class="sxs-lookup"><span data-stu-id="b4409-117">Image Lists Reference</span></span>](bumper-image-lists-image-lists-reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="1c9fa-118">Sobre as listas de imagens</span><span class="sxs-lookup"><span data-stu-id="1c9fa-118">About Image Lists</span></span>](image-lists.md)
+[<span data-ttu-id="b4409-118">Sobre as listas de imagens</span><span class="sxs-lookup"><span data-stu-id="b4409-118">About Image Lists</span></span>](image-lists.md)
 </dt> <dt>
 
-[<span data-ttu-id="1c9fa-119">Usando listas de imagens</span><span class="sxs-lookup"><span data-stu-id="1c9fa-119">Using Image Lists</span></span>](using-image-lists.md)
+[<span data-ttu-id="b4409-119">Usando listas de imagens</span><span class="sxs-lookup"><span data-stu-id="b4409-119">Using Image Lists</span></span>](using-image-lists.md)
 </dt> </dl>
 
  

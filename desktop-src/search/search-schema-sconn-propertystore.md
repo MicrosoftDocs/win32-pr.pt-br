@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103646857"
 ---
-# <a name="propertystore-element-search-connector-schema"></a><span data-ttu-id="c2d99-104">Elemento propertyStore (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="c2d99-104">propertyStore Element (Search Connector Schema)</span></span>
+# <a name="propertystore-element-search-connector-schema"></a><span data-ttu-id="ce2d1-104">Elemento propertyStore (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="ce2d1-104">propertyStore Element (Search Connector Schema)</span></span>
 
-<span data-ttu-id="c2d99-105">O <propertyStore> elemento opcional especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="c2d99-105">The optional <propertyStore> element specifies the location of an XML-based IPropertyStore to store open metadata for this search connector.</span></span> <span data-ttu-id="c2d99-106">Este elemento não tem atributos e apenas um elemento filho.</span><span class="sxs-lookup"><span data-stu-id="c2d99-106">This element has no attributes and only one child element.</span></span>
+<span data-ttu-id="ce2d1-105">O <propertyStore> elemento opcional especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="ce2d1-105">The optional <propertyStore> element specifies the location of an XML-based IPropertyStore to store open metadata for this search connector.</span></span> <span data-ttu-id="ce2d1-106">Este elemento não tem atributos e apenas um elemento filho.</span><span class="sxs-lookup"><span data-stu-id="ce2d1-106">This element has no attributes and only one child element.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c2d99-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c2d99-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ce2d1-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="ce2d1-107">Syntax</span></span>
 
 
 ```
@@ -35,21 +35,21 @@ ms.locfileid: "103646857"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="c2d99-108">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="c2d99-108">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ce2d1-108">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="ce2d1-108">Element Information</span></span>
 
 
 
-| <span data-ttu-id="c2d99-109">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="c2d99-109">Parent Element</span></span>                                                                                                   | <span data-ttu-id="c2d99-110">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="c2d99-110">Child Elements</span></span>                                                                                            |
+| <span data-ttu-id="ce2d1-109">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="ce2d1-109">Parent Element</span></span>                                                                                                   | <span data-ttu-id="ce2d1-110">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="ce2d1-110">Child Elements</span></span>                                                                                            |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="c2d99-111">Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="c2d99-111">searchConnectorDescriptionType Element (Search Connector Schema)</span></span>](search-schema-searchconnectordescription.md) | [<span data-ttu-id="c2d99-112">Elemento Property de propertyStore (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="c2d99-112">property Element of propertyStore (Search Connector Schema)</span></span>](search-schema-sconn-propstore-property.md) |
+| [<span data-ttu-id="ce2d1-111">Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="ce2d1-111">searchConnectorDescriptionType Element (Search Connector Schema)</span></span>](search-schema-searchconnectordescription.md) | [<span data-ttu-id="ce2d1-112">Elemento Property de propertyStore (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="ce2d1-112">property Element of propertyStore (Search Connector Schema)</span></span>](search-schema-sconn-propstore-property.md) |
 
 
 
  
 
-## <a name="example"></a><span data-ttu-id="c2d99-113">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c2d99-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ce2d1-113">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ce2d1-113">Example</span></span>
 
-<span data-ttu-id="c2d99-114">O exemplo a seguir mostra um <propertyStore> elemento com dois <property> elementos.</span><span class="sxs-lookup"><span data-stu-id="c2d99-114">The following example shows a <propertyStore> element with two <property> elements.</span></span>
+<span data-ttu-id="ce2d1-114">O exemplo a seguir mostra um <propertyStore> elemento com dois <property> elementos.</span><span class="sxs-lookup"><span data-stu-id="ce2d1-114">The following example shows a <propertyStore> element with two <property> elements.</span></span>
 
 
 ```

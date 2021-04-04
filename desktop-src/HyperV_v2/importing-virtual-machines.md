@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661567"
 ---
-# <a name="migrating-virtual-machines"></a><span data-ttu-id="949bf-103">Migrando máquinas virtuais</span><span class="sxs-lookup"><span data-stu-id="949bf-103">Migrating virtual machines</span></span>
+# <a name="migrating-virtual-machines"></a><span data-ttu-id="77595-103">Migrando máquinas virtuais</span><span class="sxs-lookup"><span data-stu-id="77595-103">Migrating virtual machines</span></span>
 
-<span data-ttu-id="949bf-104">O exemplo de C# a seguir demonstra como usar o método [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) para executar uma migração simples de uma máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="949bf-104">The following C# sample demonstrates how to use the [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) method to perform a simple migration of a virtual machine.</span></span> <span data-ttu-id="949bf-105">Este exemplo usa pools de recursos para obter os caminhos VHD corretos.</span><span class="sxs-lookup"><span data-stu-id="949bf-105">This example uses resource pools to obtain the correct VHD paths.</span></span> <span data-ttu-id="949bf-106">Esse código é obtido do [exemplo de migração de máquina virtual do Hyper-V](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample).</span><span class="sxs-lookup"><span data-stu-id="949bf-106">This code is taken from the [Hyper-V virtual machine migration sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample).</span></span>
+<span data-ttu-id="77595-104">O exemplo de C# a seguir demonstra como usar o método [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) para executar uma migração simples de uma máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="77595-104">The following C# sample demonstrates how to use the [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) method to perform a simple migration of a virtual machine.</span></span> <span data-ttu-id="77595-105">Este exemplo usa pools de recursos para obter os caminhos VHD corretos.</span><span class="sxs-lookup"><span data-stu-id="77595-105">This example uses resource pools to obtain the correct VHD paths.</span></span> <span data-ttu-id="77595-106">Esse código é obtido do [exemplo de migração de máquina virtual do Hyper-V](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample).</span><span class="sxs-lookup"><span data-stu-id="77595-106">This code is taken from the [Hyper-V virtual machine migration sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample).</span></span>
 
-<span data-ttu-id="949bf-107">A sintaxe de linha de comando para executar este exemplo é:</span><span class="sxs-lookup"><span data-stu-id="949bf-107">The command-line syntax to run this sample is:</span></span>
+<span data-ttu-id="77595-107">A sintaxe de linha de comando para executar este exemplo é:</span><span class="sxs-lookup"><span data-stu-id="77595-107">The command-line syntax to run this sample is:</span></span>
 
-<span data-ttu-id="949bf-108">**MigrationSamples.exe VM-and-Storage** - *SourceHost* *DestinationHost* *VmName*</span><span class="sxs-lookup"><span data-stu-id="949bf-108">**MigrationSamples.exe vm-and-storage-simple** *SourceHost* *DestinationHost* *VmName*</span></span>
+<span data-ttu-id="77595-108">**MigrationSamples.exe VM-and-Storage** - *SourceHost* *DestinationHost* *VmName*</span><span class="sxs-lookup"><span data-stu-id="77595-108">**MigrationSamples.exe vm-and-storage-simple** *SourceHost* *DestinationHost* *VmName*</span></span>
 
-<span data-ttu-id="949bf-109">onde os parâmetros são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="949bf-109">where the parameters are as follows:</span></span>
+<span data-ttu-id="77595-109">onde os parâmetros são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="77595-109">where the parameters are as follows:</span></span>
 
--   <span data-ttu-id="949bf-110">*SourceHost* é o nome do host atual da máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="949bf-110">*SourceHost* is the name of the current host of the virtual machine.</span></span>
--   <span data-ttu-id="949bf-111">*DestinationHost* é o nome do host de destino.</span><span class="sxs-lookup"><span data-stu-id="949bf-111">*DestinationHost* is the name of the destination host.</span></span>
--   <span data-ttu-id="949bf-112">*VmName* é o nome da máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="949bf-112">*VmName* is the name of the virtual machine.</span></span>
+-   <span data-ttu-id="77595-110">*SourceHost* é o nome do host atual da máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="77595-110">*SourceHost* is the name of the current host of the virtual machine.</span></span>
+-   <span data-ttu-id="77595-111">*DestinationHost* é o nome do host de destino.</span><span class="sxs-lookup"><span data-stu-id="77595-111">*DestinationHost* is the name of the destination host.</span></span>
+-   <span data-ttu-id="77595-112">*VmName* é o nome da máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="77595-112">*VmName* is the name of the virtual machine.</span></span>
 
 
 ```CSharp
@@ -93,7 +93,7 @@ VmAndStorageMigrationSimple(
 
 
 
-<span data-ttu-id="949bf-113">O código C# a seguir contém a implementação da maioria dos métodos de utilitário chamados do exemplo acima.</span><span class="sxs-lookup"><span data-stu-id="949bf-113">The following C# code contains the implementation of most of the utility methods called from the example above.</span></span>
+<span data-ttu-id="77595-113">O código C# a seguir contém a implementação da maioria dos métodos de utilitário chamados do exemplo acima.</span><span class="sxs-lookup"><span data-stu-id="77595-113">The following C# code contains the implementation of most of the utility methods called from the example above.</span></span>
 
 
 ```CSharp

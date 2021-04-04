@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661661"
 ---
-# <a name="esentmustbeseparatelongvalueexception-constructor"></a><span data-ttu-id="6b46f-103">Construtor EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="6b46f-103">EsentMustBeSeparateLongValueException constructor</span></span>
+# <a name="esentmustbeseparatelongvalueexception-constructor"></a><span data-ttu-id="8f690-103">Construtor EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="8f690-103">EsentMustBeSeparateLongValueException constructor</span></span>
 
-<span data-ttu-id="6b46f-104">Inicializa uma nova instância da classe EsentMustBeSeparateLongValueException.</span><span class="sxs-lookup"><span data-stu-id="6b46f-104">Initializes a new instance of the EsentMustBeSeparateLongValueException class.</span></span>
+<span data-ttu-id="8f690-104">Inicializa uma nova instância da classe EsentMustBeSeparateLongValueException.</span><span class="sxs-lookup"><span data-stu-id="8f690-104">Initializes a new instance of the EsentMustBeSeparateLongValueException class.</span></span>
 
-<span data-ttu-id="6b46f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6b46f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="6b46f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6b46f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="8f690-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8f690-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="8f690-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8f690-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6b46f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6b46f-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8f690-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8f690-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentMustBeSeparateLongValueException()
 public EsentMustBeSeparateLongValueException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6b46f-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6b46f-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f690-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="8f690-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="6b46f-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6b46f-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="8f690-109">Referência</span><span class="sxs-lookup"><span data-stu-id="8f690-109">Reference</span></span>
 
-[<span data-ttu-id="6b46f-110">Classe EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="6b46f-110">EsentMustBeSeparateLongValueException class</span></span>](./esentmustbeseparatelongvalueexception-class.md)
+[<span data-ttu-id="8f690-110">Classe EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="8f690-110">EsentMustBeSeparateLongValueException class</span></span>](./esentmustbeseparatelongvalueexception-class.md)
 
-[<span data-ttu-id="6b46f-111">Membros do EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="6b46f-111">EsentMustBeSeparateLongValueException members</span></span>](./esentmustbeseparatelongvalueexception-members.md)
+[<span data-ttu-id="8f690-111">Membros do EsentMustBeSeparateLongValueException</span><span class="sxs-lookup"><span data-stu-id="8f690-111">EsentMustBeSeparateLongValueException members</span></span>](./esentmustbeseparatelongvalueexception-members.md)
 
-[<span data-ttu-id="6b46f-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6b46f-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="8f690-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8f690-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

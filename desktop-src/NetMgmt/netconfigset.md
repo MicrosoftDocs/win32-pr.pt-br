@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103917659"
 ---
-# <a name="netconfigset"></a><span data-ttu-id="5ae59-106">Netconfigset</span><span class="sxs-lookup"><span data-stu-id="5ae59-106">NetConfigSet</span></span>
+# <a name="netconfigset"></a><span data-ttu-id="08f08-106">Netconfigset</span><span class="sxs-lookup"><span data-stu-id="08f08-106">NetConfigSet</span></span>
 
-<span data-ttu-id="5ae59-107">A função **Netconfigset** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="5ae59-107">The **NetConfigSet** function is obsolete.</span></span> <span data-ttu-id="5ae59-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="5ae59-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="5ae59-109">Outros aplicativos devem usar o [registro](/windows/desktop/SysInfo/registry).</span><span class="sxs-lookup"><span data-stu-id="5ae59-109">Other applications should use the [registry](/windows/desktop/SysInfo/registry).</span></span>
+<span data-ttu-id="08f08-107">A função **Netconfigset** está obsoleta.</span><span class="sxs-lookup"><span data-stu-id="08f08-107">The **NetConfigSet** function is obsolete.</span></span> <span data-ttu-id="08f08-108">Ele é incluído para compatibilidade com versões de 16 bits do Windows.</span><span class="sxs-lookup"><span data-stu-id="08f08-108">It is included for compatibility with 16-bit versions of Windows.</span></span> <span data-ttu-id="08f08-109">Outros aplicativos devem usar o [registro](/windows/desktop/SysInfo/registry).</span><span class="sxs-lookup"><span data-stu-id="08f08-109">Other applications should use the [registry](/windows/desktop/SysInfo/registry).</span></span>
 
  
 
