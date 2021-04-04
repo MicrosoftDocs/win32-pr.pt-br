@@ -1,0 +1,44 @@
+---
+description: Todos os recursos compartilham as propriedades a seguir.
+ms.assetid: 6ef6ce68-44fa-4964-8b61-2a37382eda1c
+title: Propriedades do recurso (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3e7b53a23e489b5f53495c5d2626da1e2633c9cf
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "103646066"
+---
+# <a name="resource-properties-direct3d-9"></a><span data-ttu-id="e5a62-103">Propriedades do recurso (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="e5a62-103">Resource Properties (Direct3D 9)</span></span>
+
+<span data-ttu-id="e5a62-104">Todos os recursos compartilham as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e5a62-104">All resources share the following properties.</span></span>
+
+-   <span data-ttu-id="e5a62-105">Uso.</span><span class="sxs-lookup"><span data-stu-id="e5a62-105">Usage.</span></span> <span data-ttu-id="e5a62-106">A maneira como um recurso é usado, por exemplo, como uma textura ou um destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="e5a62-106">The way a resource is used, for example, as a texture or a render target.</span></span>
+-   <span data-ttu-id="e5a62-107">Formato.</span><span class="sxs-lookup"><span data-stu-id="e5a62-107">Format.</span></span> <span data-ttu-id="e5a62-108">O formato dos dados, por exemplo, o formato de pixel de uma superfície 2D.</span><span class="sxs-lookup"><span data-stu-id="e5a62-108">The format of the data, for example, the pixel format of a 2D surface.</span></span>
+-   <span data-ttu-id="e5a62-109">Pool.</span><span class="sxs-lookup"><span data-stu-id="e5a62-109">Pool.</span></span> <span data-ttu-id="e5a62-110">O tipo de memória em que o recurso está alocado.</span><span class="sxs-lookup"><span data-stu-id="e5a62-110">The type of memory where the resource is allocated.</span></span>
+-   <span data-ttu-id="e5a62-111">Digite.</span><span class="sxs-lookup"><span data-stu-id="e5a62-111">Type.</span></span> <span data-ttu-id="e5a62-112">O tipo de recurso, por exemplo, um buffer de vértice ou destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="e5a62-112">The type of resource, for example, a vertex buffer or render target.</span></span>
+
+<span data-ttu-id="e5a62-113">Os usos de recursos são impostos.</span><span class="sxs-lookup"><span data-stu-id="e5a62-113">Resource uses are enforced.</span></span> <span data-ttu-id="e5a62-114">Um aplicativo que usará um recurso em uma determinada operação deve especificar essa operação no momento da criação do recurso.</span><span class="sxs-lookup"><span data-stu-id="e5a62-114">An application that will use a resource in a certain operation must specify that operation at resource-creation time.</span></span> <span data-ttu-id="e5a62-115">Para obter uma lista das constantes de uso definidas para recursos, consulte [**D3DUSAGE**](d3dusage.md).</span><span class="sxs-lookup"><span data-stu-id="e5a62-115">For a list of the usage constants defined for resources, see [**D3DUSAGE**](d3dusage.md).</span></span>
+
+<span data-ttu-id="e5a62-116">As \_ constantes D3DUSAGE RTPATCHES, D3DUSAGE \_ NPATCHES e D3DUSAGE \_ Point indicam ao driver que os dados nesses buffers provavelmente serão usados para patches triangulares ou de grade, N-patches ou sprites, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="e5a62-116">The D3DUSAGE\_RTPATCHES, D3DUSAGE\_NPATCHES, and D3DUSAGE\_POINTS constants indicate to the driver that the data in these buffers is likely to be used for triangular or grid patches, N-patches, or point sprites, respectively.</span></span> <span data-ttu-id="e5a62-117">Esses sinalizadores são fornecidos caso o hardware não possa executar essas operações sem processamento de host.</span><span class="sxs-lookup"><span data-stu-id="e5a62-117">These flags are provided in case the hardware cannot perform these operations without host processing.</span></span> <span data-ttu-id="e5a62-118">Portanto, o driver desejará alocar essas superfícies na memória do sistema para que a CPU possa acessá-las.</span><span class="sxs-lookup"><span data-stu-id="e5a62-118">Therefore, the driver will want to allocate these surfaces in system memory so that the CPU can access them.</span></span> <span data-ttu-id="e5a62-119">Se o driver puder executar essas operações inteiramente no hardware, ele poderá alocar essas superfícies na memória de vídeo ou AGP para evitar uma cópia do host e melhorar o desempenho pelo menos duplo.</span><span class="sxs-lookup"><span data-stu-id="e5a62-119">If the driver can perform these operations entirely in hardware, it can allocate these surfaces in video or AGP memory to avoid a host copy and improve performance at least twofold.</span></span> <span data-ttu-id="e5a62-120">Observe que as informações fornecidas por esses sinalizadores não são absolutamente necessárias.</span><span class="sxs-lookup"><span data-stu-id="e5a62-120">Note that the information provided by these flags is not absolutely required.</span></span> <span data-ttu-id="e5a62-121">Um driver pode detectar que essas operações estão sendo executadas nos dados e moverá o buffer de volta para a memória do sistema para quadros subsequentes.</span><span class="sxs-lookup"><span data-stu-id="e5a62-121">A driver can detect that such operations are being performed on the data, and it will move the buffer back to system memory for subsequent frames.</span></span>
+
+<span data-ttu-id="e5a62-122">Para obter detalhes sobre os sinalizadores de uso e como eles se relacionam com recursos específicos, consulte as páginas de referência nos métodos de criação de recursos individuais.</span><span class="sxs-lookup"><span data-stu-id="e5a62-122">For details about the usage flags and how they relate to specific resources, see the reference pages on the individual resource creation methods.</span></span>
+
+<span data-ttu-id="e5a62-123">Para obter informações sobre o formato de superfície de recursos, consulte o tipo enumerado [D3DFORMAT](d3dformat.md) .</span><span class="sxs-lookup"><span data-stu-id="e5a62-123">For information about the surface format of resources, see the [D3DFORMAT](d3dformat.md) enumerated type.</span></span>
+
+<span data-ttu-id="e5a62-124">A classe de memória que contém os buffers de um recurso é chamada de pool.</span><span class="sxs-lookup"><span data-stu-id="e5a62-124">The class of memory that holds a resource's buffers is called a pool.</span></span> <span data-ttu-id="e5a62-125">Os valores de pool são definidos pelo tipo enumerado [**D3DPOOL**](./d3dpool.md) .</span><span class="sxs-lookup"><span data-stu-id="e5a62-125">Pool values are defined by the [**D3DPOOL**](./d3dpool.md) enumerated type.</span></span> <span data-ttu-id="e5a62-126">Um pool não pode ser misturado para objetos diferentes contidos em um único recurso, ou seja, níveis de MIP em um mipmap-e, quando um pool é escolhido para um recurso, o pool não pode ser alterado.</span><span class="sxs-lookup"><span data-stu-id="e5a62-126">A pool cannot be mixed for different objects contained in a single resource - that is, mip levels in a mipmap - and, when a pool is chosen for a resource, the pool cannot be changed.</span></span>
+
+<span data-ttu-id="e5a62-127">Os tipos de recursos são definidos implicitamente em tempo de execução quando o aplicativo chama um método de criação de recursos, como [**IDirect3DDevice9:: CreateCubeTexture**](/windows/desktop/api).</span><span class="sxs-lookup"><span data-stu-id="e5a62-127">The resources types are set implicitly at run time when the application calls a resource creation method such as [**IDirect3DDevice9::CreateCubeTexture**](/windows/desktop/api).</span></span> <span data-ttu-id="e5a62-128">Os tipos de recurso são definidos pelo tipo enumerado [**D3DRESOURCETYPE**](./d3dresourcetype.md) .</span><span class="sxs-lookup"><span data-stu-id="e5a62-128">Resource types are defined by the [**D3DRESOURCETYPE**](./d3dresourcetype.md) enumerated type.</span></span> <span data-ttu-id="e5a62-129">Os aplicativos podem consultar esses tipos em tempo de execução; no entanto, espera-se que a maioria dos cenários não exija a verificação do tipo em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="e5a62-129">Applications can query these types at run time; however, it is expected that most scenarios will not require run-time type checking.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="e5a62-130">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e5a62-130">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="e5a62-131">Recursos do Direct3D</span><span class="sxs-lookup"><span data-stu-id="e5a62-131">Direct3D Resources</span></span>](direct3d-resources.md)
+</dt> </dl>
+
+ 
+
+ 
