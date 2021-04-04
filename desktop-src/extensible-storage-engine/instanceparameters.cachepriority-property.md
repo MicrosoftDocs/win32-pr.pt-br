@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171055"
 ---
-# <a name="instanceparameterscachepriority-property"></a><span data-ttu-id="0e2ed-103">Propriedade instanceparameters. CachePriority</span><span class="sxs-lookup"><span data-stu-id="0e2ed-103">InstanceParameters.CachePriority property</span></span>
+# <a name="instanceparameterscachepriority-property"></a><span data-ttu-id="7c954-103">Propriedade instanceparameters. CachePriority</span><span class="sxs-lookup"><span data-stu-id="7c954-103">InstanceParameters.CachePriority property</span></span>
 
-<span data-ttu-id="0e2ed-104">Obtém ou define a propriedade por instância para prioridades de cache relativas (padrão = 100).</span><span class="sxs-lookup"><span data-stu-id="0e2ed-104">Gets or sets the per-instance property for relative cache priorities (default = 100).</span></span>
+<span data-ttu-id="7c954-104">Obtém ou define a propriedade por instância para prioridades de cache relativas (padrão = 100).</span><span class="sxs-lookup"><span data-stu-id="7c954-104">Gets or sets the per-instance property for relative cache priorities (default = 100).</span></span>
 
-<span data-ttu-id="0e2ed-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0e2ed-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="0e2ed-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0e2ed-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="7c954-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="7c954-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="7c954-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="7c954-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0e2ed-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="0e2ed-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7c954-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7c954-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.CachePriority = value
 public int CachePriority { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="0e2ed-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="0e2ed-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="7c954-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="7c954-108">Property value</span></span>
 
-<span data-ttu-id="0e2ed-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="0e2ed-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="7c954-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="7c954-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="0e2ed-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="0e2ed-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7c954-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="7c954-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="0e2ed-111">Referência</span><span class="sxs-lookup"><span data-stu-id="0e2ed-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="7c954-111">Referência</span><span class="sxs-lookup"><span data-stu-id="7c954-111">Reference</span></span>
 
-[<span data-ttu-id="0e2ed-112">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="0e2ed-112">InstanceParameters class</span></span>](./instanceparameters-class.md)
+[<span data-ttu-id="7c954-112">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="7c954-112">InstanceParameters class</span></span>](./instanceparameters-class.md)
 
-[<span data-ttu-id="0e2ed-113">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="0e2ed-113">InstanceParameters members</span></span>](./instanceparameters-members.md)
+[<span data-ttu-id="7c954-113">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="7c954-113">InstanceParameters members</span></span>](./instanceparameters-members.md)
 
-[<span data-ttu-id="0e2ed-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="0e2ed-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="7c954-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="7c954-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

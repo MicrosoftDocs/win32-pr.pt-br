@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171215"
 ---
-# <a name="esentcannotbetaggedexception-class"></a><span data-ttu-id="fa5e2-103">Classe EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-103">EsentCannotBeTaggedException class</span></span>
+# <a name="esentcannotbetaggedexception-class"></a><span data-ttu-id="44918-103">Classe EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="44918-103">EsentCannotBeTaggedException class</span></span>
 
-<span data-ttu-id="fa5e2-104">Classe base para JET_err. CannotBeTagged exceções.</span><span class="sxs-lookup"><span data-stu-id="fa5e2-104">Base class for JET_err.CannotBeTagged exceptions.</span></span>
+<span data-ttu-id="44918-104">Classe base para JET_err. CannotBeTagged exceções.</span><span class="sxs-lookup"><span data-stu-id="44918-104">Base class for JET_err.CannotBeTagged exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="fa5e2-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="fa5e2-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="44918-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="44918-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="fa5e2-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="fa5e2-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="fa5e2-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="fa5e2-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="fa5e2-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="fa5e2-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="fa5e2-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="fa5e2-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
-            <span data-ttu-id="fa5e2-112">Microsoft. ISAM. ESENT. Interop. EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-112">Microsoft.Isam.Esent.Interop.EsentCannotBeTaggedException</span></span>  
+[<span data-ttu-id="44918-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="44918-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="44918-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="44918-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="44918-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="44918-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="44918-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="44918-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="44918-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="44918-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="44918-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="44918-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
+            <span data-ttu-id="44918-112">Microsoft. ISAM. ESENT. Interop. EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="44918-112">Microsoft.Isam.Esent.Interop.EsentCannotBeTaggedException</span></span>  
 
-<span data-ttu-id="fa5e2-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="fa5e2-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="fa5e2-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="fa5e2-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="44918-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="44918-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="44918-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="44918-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fa5e2-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="fa5e2-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="44918-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="44918-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentCannotBeTaggedException
 public sealed class EsentCannotBeTaggedException : EsentUsageException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="fa5e2-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="fa5e2-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="44918-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="44918-116">Thread safety</span></span>
 
-<span data-ttu-id="fa5e2-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="fa5e2-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="fa5e2-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="fa5e2-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="44918-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="44918-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="44918-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="44918-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="fa5e2-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="fa5e2-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="44918-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="44918-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="fa5e2-120">Referência</span><span class="sxs-lookup"><span data-stu-id="fa5e2-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="44918-120">Referência</span><span class="sxs-lookup"><span data-stu-id="44918-120">Reference</span></span>
 
-[<span data-ttu-id="fa5e2-121">Membros do EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="fa5e2-121">EsentCannotBeTaggedException members</span></span>](./esentcannotbetaggedexception-members.md)
+[<span data-ttu-id="44918-121">Membros do EsentCannotBeTaggedException</span><span class="sxs-lookup"><span data-stu-id="44918-121">EsentCannotBeTaggedException members</span></span>](./esentcannotbetaggedexception-members.md)
 
-[<span data-ttu-id="fa5e2-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="fa5e2-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="44918-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="44918-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

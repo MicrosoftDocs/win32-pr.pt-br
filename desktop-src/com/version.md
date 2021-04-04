@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103824124"
 ---
-# <a name="version-com"></a><span data-ttu-id="8890a-104">Versão (COM)</span><span class="sxs-lookup"><span data-stu-id="8890a-104">Version (COM)</span></span>
+# <a name="version-com"></a><span data-ttu-id="5435e-104">Versão (COM)</span><span class="sxs-lookup"><span data-stu-id="5435e-104">Version (COM)</span></span>
 
-<span data-ttu-id="8890a-105">Especifica o número de versão do controle.</span><span class="sxs-lookup"><span data-stu-id="8890a-105">Specifies the version number of the control.</span></span>
+<span data-ttu-id="5435e-105">Especifica o número de versão do controle.</span><span class="sxs-lookup"><span data-stu-id="5435e-105">Specifies the version number of the control.</span></span>
 
-## <a name="registry-entry"></a><span data-ttu-id="8890a-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="8890a-106">Registry Entry</span></span>
+## <a name="registry-entry"></a><span data-ttu-id="5435e-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="5435e-106">Registry Entry</span></span>
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
@@ -25,11 +25,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       Version = value
 ```
 
-## <a name="remarks"></a><span data-ttu-id="8890a-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="8890a-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5435e-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="5435e-107">Remarks</span></span>
 
-<span data-ttu-id="8890a-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="8890a-108">This is a **REG\_SZ** value.</span></span>
+<span data-ttu-id="5435e-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="5435e-108">This is a **REG\_SZ** value.</span></span>
 
-<span data-ttu-id="8890a-109">O número de versão deve corresponder à versão da biblioteca de tipos associada ao controle.</span><span class="sxs-lookup"><span data-stu-id="8890a-109">The version number should match the version of the type library associated with the control.</span></span>
+<span data-ttu-id="5435e-109">O número de versão deve corresponder à versão da biblioteca de tipos associada ao controle.</span><span class="sxs-lookup"><span data-stu-id="5435e-109">The version number should match the version of the type library associated with the control.</span></span>
 
  
 

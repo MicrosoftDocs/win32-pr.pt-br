@@ -35,16 +35,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662303"
 ---
-# <a name="jetindexcolumngrbit-enumeration"></a><span data-ttu-id="50440-103">Enumeração JetIndexColumnGrbit</span><span class="sxs-lookup"><span data-stu-id="50440-103">JetIndexColumnGrbit enumeration</span></span>
+# <a name="jetindexcolumngrbit-enumeration"></a><span data-ttu-id="9cb57-103">Enumeração JetIndexColumnGrbit</span><span class="sxs-lookup"><span data-stu-id="9cb57-103">JetIndexColumnGrbit enumeration</span></span>
 
-<span data-ttu-id="50440-104">Opções para [JET_INDEX_COLUMN](./jet-index-column-class.md).</span><span class="sxs-lookup"><span data-stu-id="50440-104">Options for [JET_INDEX_COLUMN](./jet-index-column-class.md).</span></span>
+<span data-ttu-id="9cb57-104">Opções para [JET_INDEX_COLUMN](./jet-index-column-class.md).</span><span class="sxs-lookup"><span data-stu-id="9cb57-104">Options for [JET_INDEX_COLUMN](./jet-index-column-class.md).</span></span>
 
-<span data-ttu-id="50440-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="50440-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
+<span data-ttu-id="9cb57-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="9cb57-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
 
-<span data-ttu-id="50440-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="50440-106">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="50440-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="50440-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="9cb57-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9cb57-106">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="9cb57-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9cb57-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="50440-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="50440-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9cb57-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9cb57-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,33 +59,33 @@ Dim instance As JetIndexColumnGrbit
 public enum JetIndexColumnGrbit
 ```
 
-## <a name="members"></a><span data-ttu-id="50440-109">Membros</span><span class="sxs-lookup"><span data-stu-id="50440-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="9cb57-109">Membros</span><span class="sxs-lookup"><span data-stu-id="9cb57-109">Members</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th></th>
-<th><span data-ttu-id="50440-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="50440-110">Member name</span></span></th>
-<th><span data-ttu-id="50440-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="50440-111">Description</span></span></th>
+<th><span data-ttu-id="9cb57-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="9cb57-110">Member name</span></span></th>
+<th><span data-ttu-id="9cb57-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="9cb57-111">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="50440-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="50440-112">None</span></span></td>
-<td><span data-ttu-id="50440-113">Opções padrão.</span><span class="sxs-lookup"><span data-stu-id="50440-113">Default options.</span></span></td>
+<td><span data-ttu-id="9cb57-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="9cb57-112">None</span></span></td>
+<td><span data-ttu-id="9cb57-113">Opções padrão.</span><span class="sxs-lookup"><span data-stu-id="9cb57-113">Default options.</span></span></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><span data-ttu-id="50440-114">ZeroLength</span><span class="sxs-lookup"><span data-stu-id="50440-114">ZeroLength</span></span></td>
-<td><span data-ttu-id="50440-115">Valor de comprimento zero (não nulo).</span><span class="sxs-lookup"><span data-stu-id="50440-115">Zero-length value (non-null).</span></span></td>
+<td><span data-ttu-id="9cb57-114">ZeroLength</span><span class="sxs-lookup"><span data-stu-id="9cb57-114">ZeroLength</span></span></td>
+<td><span data-ttu-id="9cb57-115">Valor de comprimento zero (não nulo).</span><span class="sxs-lookup"><span data-stu-id="9cb57-115">Zero-length value (non-null).</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a><span data-ttu-id="50440-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="50440-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9cb57-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="9cb57-116">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="50440-117">Referência</span><span class="sxs-lookup"><span data-stu-id="50440-117">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="9cb57-117">Referência</span><span class="sxs-lookup"><span data-stu-id="9cb57-117">Reference</span></span>
 
-[<span data-ttu-id="50440-118">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="50440-118">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="9cb57-118">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="9cb57-118">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

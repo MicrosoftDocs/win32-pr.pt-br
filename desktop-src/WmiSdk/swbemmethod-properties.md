@@ -12,17 +12,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661762"
 ---
-# <a name="swbemmethod-properties"></a><span data-ttu-id="9a1b7-103">Propriedades de SWbemMethod</span><span class="sxs-lookup"><span data-stu-id="9a1b7-103">SWbemMethod Properties</span></span>
+# <a name="swbemmethod-properties"></a><span data-ttu-id="aca5a-103">Propriedades de SWbemMethod</span><span class="sxs-lookup"><span data-stu-id="aca5a-103">SWbemMethod Properties</span></span>
 
-<span data-ttu-id="9a1b7-104">O objeto [**SWbemMethod**](swbemmethod.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="9a1b7-104">The [**SWbemMethod**](swbemmethod.md) object exposes the following properties.</span></span>
+<span data-ttu-id="aca5a-104">O objeto [**SWbemMethod**](swbemmethod.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="aca5a-104">The [**SWbemMethod**](swbemmethod.md) object exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="9a1b7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9a1b7-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="aca5a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="aca5a-105">In this section</span></span>
 
--   [<span data-ttu-id="9a1b7-106">**Propriedade Parameters**</span><span class="sxs-lookup"><span data-stu-id="9a1b7-106">**InParameters property**</span></span>](swbemmethod-inparameters.md)
--   [<span data-ttu-id="9a1b7-107">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="9a1b7-107">**Name property**</span></span>](swbemmethod-name.md)
--   [<span data-ttu-id="9a1b7-108">**Propriedade Origin**</span><span class="sxs-lookup"><span data-stu-id="9a1b7-108">**Origin property**</span></span>](swbemmethod-origin.md)
--   [<span data-ttu-id="9a1b7-109">**Propriedade Parameters**</span><span class="sxs-lookup"><span data-stu-id="9a1b7-109">**OutParameters property**</span></span>](swbemmethod-outparameters.md)
--   [<span data-ttu-id="9a1b7-110">**Propriedade Qualifiers \_**</span><span class="sxs-lookup"><span data-stu-id="9a1b7-110">**Qualifiers\_ property**</span></span>](swbemmethod-qualifiers-.md)
+-   [<span data-ttu-id="aca5a-106">**Propriedade Parameters**</span><span class="sxs-lookup"><span data-stu-id="aca5a-106">**InParameters property**</span></span>](swbemmethod-inparameters.md)
+-   [<span data-ttu-id="aca5a-107">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="aca5a-107">**Name property**</span></span>](swbemmethod-name.md)
+-   [<span data-ttu-id="aca5a-108">**Propriedade Origin**</span><span class="sxs-lookup"><span data-stu-id="aca5a-108">**Origin property**</span></span>](swbemmethod-origin.md)
+-   [<span data-ttu-id="aca5a-109">**Propriedade Parameters**</span><span class="sxs-lookup"><span data-stu-id="aca5a-109">**OutParameters property**</span></span>](swbemmethod-outparameters.md)
+-   [<span data-ttu-id="aca5a-110">**Propriedade Qualifiers \_**</span><span class="sxs-lookup"><span data-stu-id="aca5a-110">**Qualifiers\_ property**</span></span>](swbemmethod-qualifiers-.md)
 
  
 

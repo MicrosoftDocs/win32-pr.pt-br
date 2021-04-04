@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171118"
 ---
-# <a name="icryptattributes-methods"></a><span data-ttu-id="a7ef1-103">Métodos ICryptAttributes</span><span class="sxs-lookup"><span data-stu-id="a7ef1-103">ICryptAttributes Methods</span></span>
+# <a name="icryptattributes-methods"></a><span data-ttu-id="a3e33-103">Métodos ICryptAttributes</span><span class="sxs-lookup"><span data-stu-id="a3e33-103">ICryptAttributes Methods</span></span>
 
-<span data-ttu-id="a7ef1-104">A interface [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a7ef1-104">The [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) interface exposes the following methods.</span></span>
+<span data-ttu-id="a3e33-104">A interface [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a3e33-104">The [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a7ef1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a7ef1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="a3e33-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a3e33-105">In this section</span></span>
 
--   [<span data-ttu-id="a7ef1-106">**Adicionar método**</span><span class="sxs-lookup"><span data-stu-id="a7ef1-106">**Add Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-add)
--   [<span data-ttu-id="a7ef1-107">**Método AddRange**</span><span class="sxs-lookup"><span data-stu-id="a7ef1-107">**AddRange Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-addrange)
--   [<span data-ttu-id="a7ef1-108">**Método Clear**</span><span class="sxs-lookup"><span data-stu-id="a7ef1-108">**Clear Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-clear)
--   [<span data-ttu-id="a7ef1-109">**Remover método**</span><span class="sxs-lookup"><span data-stu-id="a7ef1-109">**Remove Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-remove)
+-   [<span data-ttu-id="a3e33-106">**Adicionar método**</span><span class="sxs-lookup"><span data-stu-id="a3e33-106">**Add Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-add)
+-   [<span data-ttu-id="a3e33-107">**Método AddRange**</span><span class="sxs-lookup"><span data-stu-id="a3e33-107">**AddRange Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-addrange)
+-   [<span data-ttu-id="a3e33-108">**Método Clear**</span><span class="sxs-lookup"><span data-stu-id="a3e33-108">**Clear Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-clear)
+-   [<span data-ttu-id="a3e33-109">**Remover método**</span><span class="sxs-lookup"><span data-stu-id="a3e33-109">**Remove Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-remove)
 
  
 

@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171051"
 ---
-# <a name="jet_columncreateszcolumnname-property"></a><span data-ttu-id="5ccfe-103">Propriedade JET_COLUMNCREATE. szColumnName</span><span class="sxs-lookup"><span data-stu-id="5ccfe-103">JET_COLUMNCREATE.szColumnName property</span></span>
+# <a name="jet_columncreateszcolumnname-property"></a><span data-ttu-id="58e64-103">Propriedade JET_COLUMNCREATE. szColumnName</span><span class="sxs-lookup"><span data-stu-id="58e64-103">JET_COLUMNCREATE.szColumnName property</span></span>
 
-<span data-ttu-id="5ccfe-104">Obtém ou define o nome da coluna a ser criada.</span><span class="sxs-lookup"><span data-stu-id="5ccfe-104">Gets or sets the name of the column to create.</span></span>
+<span data-ttu-id="58e64-104">Obtém ou define o nome da coluna a ser criada.</span><span class="sxs-lookup"><span data-stu-id="58e64-104">Gets or sets the name of the column to create.</span></span>
 
-<span data-ttu-id="5ccfe-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5ccfe-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="5ccfe-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5ccfe-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="58e64-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="58e64-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="58e64-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="58e64-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5ccfe-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="5ccfe-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="58e64-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="58e64-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.szColumnName = value
 public string szColumnName { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="5ccfe-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5ccfe-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="58e64-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="58e64-108">Property value</span></span>
 
-<span data-ttu-id="5ccfe-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="5ccfe-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="58e64-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="58e64-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="5ccfe-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="5ccfe-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="58e64-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="58e64-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="5ccfe-111">Referência</span><span class="sxs-lookup"><span data-stu-id="5ccfe-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="58e64-111">Referência</span><span class="sxs-lookup"><span data-stu-id="58e64-111">Reference</span></span>
 
-[<span data-ttu-id="5ccfe-112">Classe JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="5ccfe-112">JET_COLUMNCREATE class</span></span>](./jet-columncreate-class.md)
+[<span data-ttu-id="58e64-112">Classe JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="58e64-112">JET_COLUMNCREATE class</span></span>](./jet-columncreate-class.md)
 
-[<span data-ttu-id="5ccfe-113">Membros do JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="5ccfe-113">JET_COLUMNCREATE members</span></span>](./jet-columncreate-members.md)
+[<span data-ttu-id="58e64-113">Membros do JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="58e64-113">JET_COLUMNCREATE members</span></span>](./jet-columncreate-members.md)
 
-[<span data-ttu-id="5ccfe-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5ccfe-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="58e64-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="58e64-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
