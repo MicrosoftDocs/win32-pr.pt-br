@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661751"
 ---
-# <a name="swbemprivilegeset-properties"></a><span data-ttu-id="ce4b3-103">Propriedades de SWbemPrivilegeSet</span><span class="sxs-lookup"><span data-stu-id="ce4b3-103">SWbemPrivilegeSet Properties</span></span>
+# <a name="swbemprivilegeset-properties"></a><span data-ttu-id="4327d-103">Propriedades de SWbemPrivilegeSet</span><span class="sxs-lookup"><span data-stu-id="4327d-103">SWbemPrivilegeSet Properties</span></span>
 
-<span data-ttu-id="ce4b3-104">O objeto [**SWbemPrivilegeSet**](swbemprivilegeset.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="ce4b3-104">The [**SWbemPrivilegeSet**](swbemprivilegeset.md) object exposes the following properties.</span></span>
+<span data-ttu-id="4327d-104">O objeto [**SWbemPrivilegeSet**](swbemprivilegeset.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="4327d-104">The [**SWbemPrivilegeSet**](swbemprivilegeset.md) object exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="ce4b3-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ce4b3-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4327d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4327d-105">In this section</span></span>
 
--   [<span data-ttu-id="ce4b3-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="ce4b3-106">**Count property**</span></span>](swbemprivilegeset-count.md)
+-   [<span data-ttu-id="4327d-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="4327d-106">**Count property**</span></span>](swbemprivilegeset-count.md)
 
  
 

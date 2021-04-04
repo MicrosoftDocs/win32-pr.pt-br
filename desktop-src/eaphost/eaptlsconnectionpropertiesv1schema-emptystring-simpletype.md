@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "104008387"
 ---
-# <a name="emptystring-simple-type"></a><span data-ttu-id="32b1b-105">Tipo simples emptyobject</span><span class="sxs-lookup"><span data-stu-id="32b1b-105">emptyString Simple Type</span></span>
+# <a name="emptystring-simple-type"></a><span data-ttu-id="accbc-105">Tipo simples emptyobject</span><span class="sxs-lookup"><span data-stu-id="accbc-105">emptyString Simple Type</span></span>
 
-<span data-ttu-id="32b1b-106">O tipo simples **emptyobject** não está em uso.</span><span class="sxs-lookup"><span data-stu-id="32b1b-106">The **emptyString** simple type is not in use.</span></span>
+<span data-ttu-id="accbc-106">O tipo simples **emptyobject** não está em uso.</span><span class="sxs-lookup"><span data-stu-id="accbc-106">The **emptyString** simple type is not in use.</span></span>
 
 ``` syntax
 <xs:simpleType name="emptyString">
@@ -37,28 +37,28 @@ ms.locfileid: "104008387"
 </xs:simpleType>
 ```
 
-## <a name="requirements"></a><span data-ttu-id="32b1b-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="32b1b-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="accbc-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="accbc-107">Requirements</span></span>
 
 
 
-| <span data-ttu-id="32b1b-108">Função</span><span class="sxs-lookup"><span data-stu-id="32b1b-108">Role</span></span> | <span data-ttu-id="32b1b-109">Versão mínima do sistema operacional com suporte</span><span class="sxs-lookup"><span data-stu-id="32b1b-109">Minimum supported OS version</span></span> |
+| <span data-ttu-id="accbc-108">Função</span><span class="sxs-lookup"><span data-stu-id="accbc-108">Role</span></span> | <span data-ttu-id="accbc-109">Versão mínima do sistema operacional com suporte</span><span class="sxs-lookup"><span data-stu-id="accbc-109">Minimum supported OS version</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="32b1b-110">Cliente</span><span class="sxs-lookup"><span data-stu-id="32b1b-110">Client</span></span><br/> | <span data-ttu-id="32b1b-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="32b1b-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="32b1b-112">Servidor</span><span class="sxs-lookup"><span data-stu-id="32b1b-112">Server</span></span><br/> | <span data-ttu-id="32b1b-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="32b1b-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="accbc-110">Cliente</span><span class="sxs-lookup"><span data-stu-id="accbc-110">Client</span></span><br/> | <span data-ttu-id="accbc-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="accbc-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="accbc-112">Servidor</span><span class="sxs-lookup"><span data-stu-id="accbc-112">Server</span></span><br/> | <span data-ttu-id="accbc-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="accbc-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="32b1b-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="32b1b-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="accbc-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="accbc-114">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="32b1b-115">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="32b1b-115">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="accbc-115">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="accbc-115">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="32b1b-116">Esquema eaptlsconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="32b1b-116">eaptlsconnectionpropertiesv1 Schema</span></span>](eaptlsconnectionpropertiesv1schema-schema.md)
+[<span data-ttu-id="accbc-116">Esquema eaptlsconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="accbc-116">eaptlsconnectionpropertiesv1 Schema</span></span>](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[<span data-ttu-id="32b1b-117">Tipos simples de esquema eaptlsconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="32b1b-117">eaptlsconnectionpropertiesv1 Schema Simple Types</span></span>](eaptlsconnectionpropertiesv1schema-simple-types.md)
+[<span data-ttu-id="accbc-117">Tipos simples de esquema eaptlsconnectionpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="accbc-117">eaptlsconnectionpropertiesv1 Schema Simple Types</span></span>](eaptlsconnectionpropertiesv1schema-simple-types.md)
 </dt> </dl>
 
  

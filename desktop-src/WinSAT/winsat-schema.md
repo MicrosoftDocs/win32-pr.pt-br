@@ -11,18 +11,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822447"
 ---
-# <a name="winsat-schema"></a><span data-ttu-id="af846-103">Esquema do WinSAT</span><span class="sxs-lookup"><span data-stu-id="af846-103">WinSAT Schema</span></span>
+# <a name="winsat-schema"></a><span data-ttu-id="88468-103">Esquema do WinSAT</span><span class="sxs-lookup"><span data-stu-id="88468-103">WinSAT Schema</span></span>
 
-<span data-ttu-id="af846-104">\[As enumerações do WinSAT podem ser alteradas ou indisponíveis para versões após a Windows 8.1.\]</span><span class="sxs-lookup"><span data-stu-id="af846-104">\[WinSAT enumerations may be altered or unavailable for releases after Windows 8.1.\]</span></span>
+<span data-ttu-id="88468-104">\[As enumerações do WinSAT podem ser alteradas ou indisponíveis para versões após a Windows 8.1.\]</span><span class="sxs-lookup"><span data-stu-id="88468-104">\[WinSAT enumerations may be altered or unavailable for releases after Windows 8.1.\]</span></span>
 
-<span data-ttu-id="af846-105">Você pode usar o esquema do WinSAT (ferramenta de avaliação de sistema do Windows) para determinar as consultas XPath válidas a serem executadas.</span><span class="sxs-lookup"><span data-stu-id="af846-105">You can use the Windows System Assessment Tool (WinSAT) schema to determine valid XPath queries to run.</span></span> <span data-ttu-id="af846-106">Para executar uma consulta XPath, consulte um dos seguintes métodos:</span><span class="sxs-lookup"><span data-stu-id="af846-106">To run an XPath query, see one of the following methods:</span></span>
+<span data-ttu-id="88468-105">Você pode usar o esquema do WinSAT (ferramenta de avaliação de sistema do Windows) para determinar as consultas XPath válidas a serem executadas.</span><span class="sxs-lookup"><span data-stu-id="88468-105">You can use the Windows System Assessment Tool (WinSAT) schema to determine valid XPath queries to run.</span></span> <span data-ttu-id="88468-106">Para executar uma consulta XPath, consulte um dos seguintes métodos:</span><span class="sxs-lookup"><span data-stu-id="88468-106">To run an XPath query, see one of the following methods:</span></span>
 
--   [<span data-ttu-id="af846-107">**IQueryAllWinSATAssessments:: obter \_ AllXML**</span><span class="sxs-lookup"><span data-stu-id="af846-107">**IQueryAllWinSATAssessments::get\_AllXML**</span></span>](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
--   [<span data-ttu-id="af846-108">**IQueryRecentWinSATAssessment:: obter \_ XML**</span><span class="sxs-lookup"><span data-stu-id="af846-108">**IQueryRecentWinSATAssessment::get\_XML**</span></span>](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
+-   [<span data-ttu-id="88468-107">**IQueryAllWinSATAssessments:: obter \_ AllXML**</span><span class="sxs-lookup"><span data-stu-id="88468-107">**IQueryAllWinSATAssessments::get\_AllXML**</span></span>](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
+-   [<span data-ttu-id="88468-108">**IQueryRecentWinSATAssessment:: obter \_ XML**</span><span class="sxs-lookup"><span data-stu-id="88468-108">**IQueryRecentWinSATAssessment::get\_XML**</span></span>](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
 
-<span data-ttu-id="af846-109">O elemento **WinSAT** pode ter um elemento **WinsatAssessments** como um elemento pai quando você chama o método [**Get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) .</span><span class="sxs-lookup"><span data-stu-id="af846-109">The **WinSAT** element can have a **WinsatAssessments** element as a parent element when you call the [**get\_AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) method.</span></span>
+<span data-ttu-id="88468-109">O elemento **WinSAT** pode ter um elemento **WinsatAssessments** como um elemento pai quando você chama o método [**Get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) .</span><span class="sxs-lookup"><span data-stu-id="88468-109">The **WinSAT** element can have a **WinsatAssessments** element as a parent element when you call the [**get\_AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) method.</span></span>
 
-<span data-ttu-id="af846-110">Veja a seguir o esquema do WinSAT que você pode usar para determinar o XPath.</span><span class="sxs-lookup"><span data-stu-id="af846-110">The following is the WinSAT schema that you can use to determine the XPath.</span></span>
+<span data-ttu-id="88468-110">Veja a seguir o esquema do WinSAT que você pode usar para determinar o XPath.</span><span class="sxs-lookup"><span data-stu-id="88468-110">The following is the WinSAT schema that you can use to determine the XPath.</span></span>
 
 
 ```xsd

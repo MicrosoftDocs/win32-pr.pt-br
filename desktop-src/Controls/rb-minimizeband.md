@@ -21,37 +21,37 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824191"
 ---
-# <a name="rb_minimizeband-message"></a><span data-ttu-id="db05a-104">\_Mensagem MINIMIZEBAND RB</span><span class="sxs-lookup"><span data-stu-id="db05a-104">RB\_MINIMIZEBAND message</span></span>
+# <a name="rb_minimizeband-message"></a><span data-ttu-id="bc413-104">\_Mensagem MINIMIZEBAND RB</span><span class="sxs-lookup"><span data-stu-id="bc413-104">RB\_MINIMIZEBAND message</span></span>
 
-<span data-ttu-id="db05a-105">Redimensiona uma faixa em um controle rebar para seu menor tamanho.</span><span class="sxs-lookup"><span data-stu-id="db05a-105">Resizes a band in a rebar control to its smallest size.</span></span>
+<span data-ttu-id="bc413-105">Redimensiona uma faixa em um controle rebar para seu menor tamanho.</span><span class="sxs-lookup"><span data-stu-id="bc413-105">Resizes a band in a rebar control to its smallest size.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="db05a-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="db05a-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bc413-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="bc413-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="db05a-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="db05a-107">*wParam*</span></span> 
+<span data-ttu-id="bc413-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="bc413-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="db05a-108">Índice de base zero da banda a ser minimizada.</span><span class="sxs-lookup"><span data-stu-id="db05a-108">Zero-based index of the band to be minimized.</span></span>
+<span data-ttu-id="bc413-108">Índice de base zero da banda a ser minimizada.</span><span class="sxs-lookup"><span data-stu-id="bc413-108">Zero-based index of the band to be minimized.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="db05a-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="db05a-109">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="db05a-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="db05a-110">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="bc413-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="bc413-109">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="bc413-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="bc413-110">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="db05a-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="db05a-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bc413-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="bc413-111">Return value</span></span>
 
-<span data-ttu-id="db05a-112">O valor de retorno não é usado.</span><span class="sxs-lookup"><span data-stu-id="db05a-112">The return value is not used.</span></span>
+<span data-ttu-id="bc413-112">O valor de retorno não é usado.</span><span class="sxs-lookup"><span data-stu-id="bc413-112">The return value is not used.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="db05a-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="db05a-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="bc413-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bc413-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="db05a-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="db05a-114">Requirement</span></span> | <span data-ttu-id="db05a-115">Valor</span><span class="sxs-lookup"><span data-stu-id="db05a-115">Value</span></span> |
+| <span data-ttu-id="bc413-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="bc413-114">Requirement</span></span> | <span data-ttu-id="bc413-115">Valor</span><span class="sxs-lookup"><span data-stu-id="bc413-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="db05a-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="db05a-116">Minimum supported client</span></span><br/> | <span data-ttu-id="db05a-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="db05a-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="db05a-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="db05a-118">Minimum supported server</span></span><br/> | <span data-ttu-id="db05a-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="db05a-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="db05a-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="db05a-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="db05a-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="db05a-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="bc413-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bc413-116">Minimum supported client</span></span><br/> | <span data-ttu-id="bc413-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="bc413-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="bc413-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bc413-118">Minimum supported server</span></span><br/> | <span data-ttu-id="bc413-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="bc413-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="bc413-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="bc413-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="bc413-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="bc413-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

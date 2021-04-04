@@ -11,27 +11,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "103824068"
 ---
-# <a name="how-to-process-the-dtn_format-notification"></a><span data-ttu-id="d09b4-103">Como processar a notificação de \_ formato DTN</span><span class="sxs-lookup"><span data-stu-id="d09b4-103">How to Process the DTN\_FORMAT Notification</span></span>
+# <a name="how-to-process-the-dtn_format-notification"></a><span data-ttu-id="09dfe-103">Como processar a notificação de \_ formato DTN</span><span class="sxs-lookup"><span data-stu-id="09dfe-103">How to Process the DTN\_FORMAT Notification</span></span>
 
-<span data-ttu-id="d09b4-104">Este tópico demonstra como processar uma notificação de formato enviada pelo controle do seletor de data e hora (DTP).</span><span class="sxs-lookup"><span data-stu-id="d09b4-104">This topic demonstrates how to process a format notification sent by the date and time picker (DTP) control.</span></span>
+<span data-ttu-id="09dfe-104">Este tópico demonstra como processar uma notificação de formato enviada pelo controle do seletor de data e hora (DTP).</span><span class="sxs-lookup"><span data-stu-id="09dfe-104">This topic demonstrates how to process a format notification sent by the date and time picker (DTP) control.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="d09b4-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="d09b4-105">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="09dfe-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="09dfe-105">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="d09b4-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="d09b4-106">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="09dfe-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="09dfe-106">Technologies</span></span>
 
--   [<span data-ttu-id="d09b4-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="d09b4-107">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="09dfe-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="09dfe-107">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="d09b4-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d09b4-108">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="09dfe-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="09dfe-108">Prerequisites</span></span>
 
--   <span data-ttu-id="d09b4-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="d09b4-109">C/C++</span></span>
--   <span data-ttu-id="d09b4-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="d09b4-110">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="09dfe-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="09dfe-109">C/C++</span></span>
+-   <span data-ttu-id="09dfe-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="09dfe-110">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="d09b4-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="d09b4-111">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="09dfe-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="09dfe-111">Instructions</span></span>
 
 
-<span data-ttu-id="d09b4-112">Um controle DTP envia a notificação de [ \_ formato DTN](dtn-format.md) para solicitar texto que será exibido em um campo de retorno de chamada do controle.</span><span class="sxs-lookup"><span data-stu-id="d09b4-112">A DTP control sends the [DTN\_FORMAT](dtn-format.md) notification to request text that will be displayed in a callback field of the control.</span></span> <span data-ttu-id="d09b4-113">Seu aplicativo deve lidar com essa notificação para habilitar o controle DTP a fim de exibir informações de que ele não dá suporte nativo.</span><span class="sxs-lookup"><span data-stu-id="d09b4-113">Your application must handle this notification to enable the DTP control to display information that it does not natively support.</span></span>
+<span data-ttu-id="09dfe-112">Um controle DTP envia a notificação de [ \_ formato DTN](dtn-format.md) para solicitar texto que será exibido em um campo de retorno de chamada do controle.</span><span class="sxs-lookup"><span data-stu-id="09dfe-112">A DTP control sends the [DTN\_FORMAT](dtn-format.md) notification to request text that will be displayed in a callback field of the control.</span></span> <span data-ttu-id="09dfe-113">Seu aplicativo deve lidar com essa notificação para habilitar o controle DTP a fim de exibir informações de que ele não dá suporte nativo.</span><span class="sxs-lookup"><span data-stu-id="09dfe-113">Your application must handle this notification to enable the DTP control to display information that it does not natively support.</span></span>
 
-<span data-ttu-id="d09b4-114">O exemplo de código C++ a seguir é uma função definida pelo aplicativo (**Doformat**) que processa códigos de notificação de [ \_ formato DTN](dtn-format.md) fornecendo uma cadeia de caracteres de texto para um campo de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="d09b4-114">The following C++ code example is an application-defined function (**DoFormat**) that processes [DTN\_FORMAT](dtn-format.md) notification codes by providing a text string for a callback field.</span></span> <span data-ttu-id="d09b4-115">O aplicativo chama a função definida pelo aplicativo **GetDayNum** para solicitar o número do dia a ser usado na cadeia de caracteres de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="d09b4-115">The application calls the **GetDayNum** application-defined function to request the day number to be used in the callback string.</span></span>
+<span data-ttu-id="09dfe-114">O exemplo de código C++ a seguir é uma função definida pelo aplicativo (**Doformat**) que processa códigos de notificação de [ \_ formato DTN](dtn-format.md) fornecendo uma cadeia de caracteres de texto para um campo de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="09dfe-114">The following C++ code example is an application-defined function (**DoFormat**) that processes [DTN\_FORMAT](dtn-format.md) notification codes by providing a text string for a callback field.</span></span> <span data-ttu-id="09dfe-115">O aplicativo chama a função definida pelo aplicativo **GetDayNum** para solicitar o número do dia a ser usado na cadeia de caracteres de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="09dfe-115">The application calls the **GetDayNum** application-defined function to request the day number to be used in the callback string.</span></span>
 
 
 ```C++
@@ -61,9 +61,9 @@ else
 
 
 
-<span data-ttu-id="d09b4-116">**A função definida pelo aplicativo GetDayNum**</span><span class="sxs-lookup"><span data-stu-id="d09b4-116">**The GetDayNum application-defined function**</span></span>
+<span data-ttu-id="09dfe-116">**A função definida pelo aplicativo GetDayNum**</span><span class="sxs-lookup"><span data-stu-id="09dfe-116">**The GetDayNum application-defined function**</span></span>
 
-<span data-ttu-id="d09b4-117">A função de exemplo definida pelo aplicativo **Doformat** chama a seguinte função definida pelo aplicativo **GetDayNum** para solicitar o número do dia com base na data atual.</span><span class="sxs-lookup"><span data-stu-id="d09b4-117">The application-defined sample function **DoFormat** calls the following **GetDayNum** application-defined function to request the day number based on the current date.</span></span> <span data-ttu-id="d09b4-118">**GetDayNum** retorna um valor **int** que representa o dia atual do ano, de 0 a 366.</span><span class="sxs-lookup"><span data-stu-id="d09b4-118">**GetDayNum** returns an **INT** value that represents the current day of the year, from 0 to 366.</span></span> <span data-ttu-id="d09b4-119">Essa função chama outra função definida pelo aplicativo, **IsLeapYr**, durante o processamento.</span><span class="sxs-lookup"><span data-stu-id="d09b4-119">This function calls another application-defined function, **IsLeapYr**, during processing.</span></span>
+<span data-ttu-id="09dfe-117">A função de exemplo definida pelo aplicativo **Doformat** chama a seguinte função definida pelo aplicativo **GetDayNum** para solicitar o número do dia com base na data atual.</span><span class="sxs-lookup"><span data-stu-id="09dfe-117">The application-defined sample function **DoFormat** calls the following **GetDayNum** application-defined function to request the day number based on the current date.</span></span> <span data-ttu-id="09dfe-118">**GetDayNum** retorna um valor **int** que representa o dia atual do ano, de 0 a 366.</span><span class="sxs-lookup"><span data-stu-id="09dfe-118">**GetDayNum** returns an **INT** value that represents the current day of the year, from 0 to 366.</span></span> <span data-ttu-id="09dfe-119">Essa função chama outra função definida pelo aplicativo, **IsLeapYr**, durante o processamento.</span><span class="sxs-lookup"><span data-stu-id="09dfe-119">This function calls another application-defined function, **IsLeapYr**, during processing.</span></span>
 
 
 ```C++
@@ -92,9 +92,9 @@ int WINAPI GetDayNum(SYSTEMTIME *st)
 
 
 
-<span data-ttu-id="d09b4-120">**A função definida pelo aplicativo IsLeapYr**</span><span class="sxs-lookup"><span data-stu-id="d09b4-120">**The IsLeapYr application-defined function**</span></span>
+<span data-ttu-id="09dfe-120">**A função definida pelo aplicativo IsLeapYr**</span><span class="sxs-lookup"><span data-stu-id="09dfe-120">**The IsLeapYr application-defined function**</span></span>
 
-<span data-ttu-id="d09b4-121">A função definida pelo aplicativo **GetDayNum** chama a função **IsLeapYr** para determinar se o ano atual é um ano bissexto.</span><span class="sxs-lookup"><span data-stu-id="d09b4-121">The application-defined function **GetDayNum** calls the **IsLeapYr** function to determine whether the current year is a leap year.</span></span> <span data-ttu-id="d09b4-122">**IsLeapYr** retornará um valor **bool** que será **true** se for um ano bissexto e **false** caso contrário.</span><span class="sxs-lookup"><span data-stu-id="d09b4-122">**IsLeapYr** returns a **BOOL** value that is **TRUE** if it is a leap year and **FALSE** otherwise.</span></span>
+<span data-ttu-id="09dfe-121">A função definida pelo aplicativo **GetDayNum** chama a função **IsLeapYr** para determinar se o ano atual é um ano bissexto.</span><span class="sxs-lookup"><span data-stu-id="09dfe-121">The application-defined function **GetDayNum** calls the **IsLeapYr** function to determine whether the current year is a leap year.</span></span> <span data-ttu-id="09dfe-122">**IsLeapYr** retornará um valor **bool** que será **true** se for um ano bissexto e **false** caso contrário.</span><span class="sxs-lookup"><span data-stu-id="09dfe-122">**IsLeapYr** returns a **BOOL** value that is **TRUE** if it is a leap year and **FALSE** otherwise.</span></span>
 
 
 ```C++
@@ -119,17 +119,17 @@ BOOL WINAPI IsLeapYr(int iYear)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="d09b4-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d09b4-123">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="09dfe-123">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="09dfe-123">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d09b4-124">Usando controles de seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="d09b4-124">Using Date and Time Picker Controls</span></span>](using-date-and-time-picker.md)
+[<span data-ttu-id="09dfe-124">Usando controles de seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="09dfe-124">Using Date and Time Picker Controls</span></span>](using-date-and-time-picker.md)
 </dt> <dt>
 
-[<span data-ttu-id="d09b4-125">Referência de controle do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="d09b4-125">Date and Time Picker Control Reference</span></span>](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[<span data-ttu-id="09dfe-125">Referência de controle do seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="09dfe-125">Date and Time Picker Control Reference</span></span>](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="d09b4-126">Seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="d09b4-126">Date and Time Picker</span></span>](date-and-time-picker-control-reference.md)
+[<span data-ttu-id="09dfe-126">Seletor de data e hora</span><span class="sxs-lookup"><span data-stu-id="09dfe-126">Date and Time Picker</span></span>](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

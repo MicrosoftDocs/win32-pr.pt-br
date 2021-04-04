@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103917971"
 ---
-# <a name="mci_ovly_window_parms-structure"></a><span data-ttu-id="c3845-104">\_Estrutura de \_ parâmetros da janela OVLY MCI \_</span><span class="sxs-lookup"><span data-stu-id="c3845-104">MCI\_OVLY\_WINDOW\_PARMS structure</span></span>
+# <a name="mci_ovly_window_parms-structure"></a><span data-ttu-id="b407b-104">\_Estrutura de \_ parâmetros da janela OVLY MCI \_</span><span class="sxs-lookup"><span data-stu-id="b407b-104">MCI\_OVLY\_WINDOW\_PARMS structure</span></span>
 
-<span data-ttu-id="c3845-105">A estrutura de **\_ parâmetros da \_ janela \_ MCI OVLY** contém informações de exibição de janela para o comando de [**\_ janela MCI**](mci-window.md) para dispositivos de sobreposição de vídeo.</span><span class="sxs-lookup"><span data-stu-id="c3845-105">The **MCI\_OVLY\_WINDOW\_PARMS** structure contains window-display information for the [**MCI\_WINDOW**](mci-window.md) command for video-overlay devices.</span></span>
+<span data-ttu-id="b407b-105">A estrutura de **\_ parâmetros da \_ janela \_ MCI OVLY** contém informações de exibição de janela para o comando de [**\_ janela MCI**](mci-window.md) para dispositivos de sobreposição de vídeo.</span><span class="sxs-lookup"><span data-stu-id="b407b-105">The **MCI\_OVLY\_WINDOW\_PARMS** structure contains window-display information for the [**MCI\_WINDOW**](mci-window.md) command for video-overlay devices.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c3845-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c3845-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b407b-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b407b-106">Syntax</span></span>
 
 
 ```C++
@@ -39,68 +39,68 @@ typedef struct {
 
 
 
-## <a name="members"></a><span data-ttu-id="c3845-107">Membros</span><span class="sxs-lookup"><span data-stu-id="c3845-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="b407b-107">Membros</span><span class="sxs-lookup"><span data-stu-id="b407b-107">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="c3845-108">**dwCallback**</span><span class="sxs-lookup"><span data-stu-id="c3845-108">**dwCallback**</span></span>
+<span data-ttu-id="b407b-108">**dwCallback**</span><span class="sxs-lookup"><span data-stu-id="b407b-108">**dwCallback**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c3845-109">A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.</span><span class="sxs-lookup"><span data-stu-id="c3845-109">The low-order word specifies a window handle used for the MCI\_NOTIFY flag.</span></span>
+<span data-ttu-id="b407b-109">A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.</span><span class="sxs-lookup"><span data-stu-id="b407b-109">The low-order word specifies a window handle used for the MCI\_NOTIFY flag.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c3845-110">**hWnd**</span><span class="sxs-lookup"><span data-stu-id="c3845-110">**hWnd**</span></span>
+<span data-ttu-id="b407b-110">**hWnd**</span><span class="sxs-lookup"><span data-stu-id="b407b-110">**hWnd**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c3845-111">Identificador para exibir janela.</span><span class="sxs-lookup"><span data-stu-id="c3845-111">Handle to display window.</span></span>
+<span data-ttu-id="b407b-111">Identificador para exibir janela.</span><span class="sxs-lookup"><span data-stu-id="b407b-111">Handle to display window.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c3845-112">**nCmdShow**</span><span class="sxs-lookup"><span data-stu-id="c3845-112">**nCmdShow**</span></span>
+<span data-ttu-id="b407b-112">**nCmdShow**</span><span class="sxs-lookup"><span data-stu-id="b407b-112">**nCmdShow**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c3845-113">Janela-comando de exibição.</span><span class="sxs-lookup"><span data-stu-id="c3845-113">Window-display command.</span></span>
+<span data-ttu-id="b407b-113">Janela-comando de exibição.</span><span class="sxs-lookup"><span data-stu-id="b407b-113">Window-display command.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="c3845-114">**lpstrText**</span><span class="sxs-lookup"><span data-stu-id="c3845-114">**lpstrText**</span></span>
+<span data-ttu-id="b407b-114">**lpstrText**</span><span class="sxs-lookup"><span data-stu-id="b407b-114">**lpstrText**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="c3845-115">Legenda da janela.</span><span class="sxs-lookup"><span data-stu-id="c3845-115">Window caption.</span></span>
+<span data-ttu-id="b407b-115">Legenda da janela.</span><span class="sxs-lookup"><span data-stu-id="b407b-115">Window caption.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="c3845-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="c3845-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b407b-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="b407b-116">Remarks</span></span>
 
-<span data-ttu-id="c3845-117">Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.</span><span class="sxs-lookup"><span data-stu-id="c3845-117">When assigning data to the members of this structure, set the corresponding flags in the *fdwCommand* parameter of the [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) function to validate the members.</span></span>
+<span data-ttu-id="b407b-117">Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.</span><span class="sxs-lookup"><span data-stu-id="b407b-117">When assigning data to the members of this structure, set the corresponding flags in the *fdwCommand* parameter of the [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) function to validate the members.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="c3845-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c3845-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="b407b-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b407b-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="c3845-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="c3845-119">Requirement</span></span> | <span data-ttu-id="c3845-120">Valor</span><span class="sxs-lookup"><span data-stu-id="c3845-120">Value</span></span> |
+| <span data-ttu-id="b407b-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="b407b-119">Requirement</span></span> | <span data-ttu-id="b407b-120">Valor</span><span class="sxs-lookup"><span data-stu-id="b407b-120">Value</span></span> |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| <span data-ttu-id="c3845-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c3845-121">Minimum supported client</span></span><br/> | <span data-ttu-id="c3845-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="c3845-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                          |
-| <span data-ttu-id="c3845-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c3845-123">Minimum supported server</span></span><br/> | <span data-ttu-id="c3845-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="c3845-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                |
-| <span data-ttu-id="c3845-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c3845-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="c3845-126"><dt>Mciapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="c3845-126"><dt>Mciapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="b407b-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b407b-121">Minimum supported client</span></span><br/> | <span data-ttu-id="b407b-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="b407b-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                          |
+| <span data-ttu-id="b407b-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b407b-123">Minimum supported server</span></span><br/> | <span data-ttu-id="b407b-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="b407b-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                |
+| <span data-ttu-id="b407b-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b407b-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="b407b-126"><dt>Mciapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="b407b-126"><dt>Mciapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="c3845-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="c3845-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b407b-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="b407b-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c3845-128">**MCI**</span><span class="sxs-lookup"><span data-stu-id="c3845-128">**MCI**</span></span>](mci.md)
+[<span data-ttu-id="b407b-128">**MCI**</span><span class="sxs-lookup"><span data-stu-id="b407b-128">**MCI**</span></span>](mci.md)
 </dt> <dt>
 
-[<span data-ttu-id="c3845-129">**Estruturas MCI**</span><span class="sxs-lookup"><span data-stu-id="c3845-129">**MCI Structures**</span></span>](mci-structures.md)
+[<span data-ttu-id="b407b-129">**Estruturas MCI**</span><span class="sxs-lookup"><span data-stu-id="b407b-129">**MCI Structures**</span></span>](mci-structures.md)
 </dt> <dt>
 
-[<span data-ttu-id="c3845-130">**\_janela MCI**</span><span class="sxs-lookup"><span data-stu-id="c3845-130">**MCI\_WINDOW**</span></span>](mci-window.md)
+[<span data-ttu-id="b407b-130">**\_janela MCI**</span><span class="sxs-lookup"><span data-stu-id="b407b-130">**MCI\_WINDOW**</span></span>](mci-window.md)
 </dt> <dt>
 
-<span data-ttu-id="c3845-131">[**mciSendCommand**](/previous-versions//dd757160(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="c3845-131">[**mciSendCommand**](/previous-versions//dd757160(v=vs.85))</span></span>
+<span data-ttu-id="b407b-131">[**mciSendCommand**](/previous-versions//dd757160(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="b407b-131">[**mciSendCommand**](/previous-versions//dd757160(v=vs.85))</span></span>
 </dt> </dl>
 
  

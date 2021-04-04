@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103662044"
 ---
-# <a name="directories"></a><span data-ttu-id="45c39-103">Diretórios</span><span class="sxs-lookup"><span data-stu-id="45c39-103">Directories</span></span>
+# <a name="directories"></a><span data-ttu-id="5f9de-103">Diretórios</span><span class="sxs-lookup"><span data-stu-id="5f9de-103">Directories</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="45c39-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="45c39-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5f9de-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5f9de-104">In this section</span></span>
 
--   [<span data-ttu-id="45c39-105">Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="45c39-105">Active Directory Domain Services</span></span>](/windows/desktop/AD/active-directory-domain-services)
--   [<span data-ttu-id="45c39-106">Active Directory Lightweight Directory Services</span><span class="sxs-lookup"><span data-stu-id="45c39-106">Active Directory Lightweight Directory Services</span></span>](/previous-versions/windows/desktop/adam/active-directory-lightweight-directory-services)
--   [<span data-ttu-id="45c39-107">Esquema do Active Directory</span><span class="sxs-lookup"><span data-stu-id="45c39-107">Active Directory Schema</span></span>](/windows/desktop/ADSchema/active-directory-schema)
--   [<span data-ttu-id="45c39-108">Provedor WMI de Active Directory</span><span class="sxs-lookup"><span data-stu-id="45c39-108">Active Directory WMI Provider</span></span>](/previous-versions/windows/desktop/dsprov/active-directory-provider)
--   <span data-ttu-id="45c39-109">[SDK do Microsoft UDDI](/previous-versions/windows/desktop/aa966237(v=bts.10))</span><span class="sxs-lookup"><span data-stu-id="45c39-109">[Microsoft UDDI SDK](/previous-versions/windows/desktop/aa966237(v=bts.10))</span></span>
--   <span data-ttu-id="45c39-110">[Biblioteca de classes UDDI](/previous-versions/windows/desktop/ee294451(v=bts.10))</span><span class="sxs-lookup"><span data-stu-id="45c39-110">[UDDI Class Library](/previous-versions/windows/desktop/ee294451(v=bts.10))</span></span>
+-   [<span data-ttu-id="5f9de-105">Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="5f9de-105">Active Directory Domain Services</span></span>](/windows/desktop/AD/active-directory-domain-services)
+-   [<span data-ttu-id="5f9de-106">Active Directory Lightweight Directory Services</span><span class="sxs-lookup"><span data-stu-id="5f9de-106">Active Directory Lightweight Directory Services</span></span>](/previous-versions/windows/desktop/adam/active-directory-lightweight-directory-services)
+-   [<span data-ttu-id="5f9de-107">Esquema do Active Directory</span><span class="sxs-lookup"><span data-stu-id="5f9de-107">Active Directory Schema</span></span>](/windows/desktop/ADSchema/active-directory-schema)
+-   [<span data-ttu-id="5f9de-108">Provedor WMI de Active Directory</span><span class="sxs-lookup"><span data-stu-id="5f9de-108">Active Directory WMI Provider</span></span>](/previous-versions/windows/desktop/dsprov/active-directory-provider)
+-   <span data-ttu-id="5f9de-109">[SDK do Microsoft UDDI](/previous-versions/windows/desktop/aa966237(v=bts.10))</span><span class="sxs-lookup"><span data-stu-id="5f9de-109">[Microsoft UDDI SDK](/previous-versions/windows/desktop/aa966237(v=bts.10))</span></span>
+-   <span data-ttu-id="5f9de-110">[Biblioteca de classes UDDI](/previous-versions/windows/desktop/ee294451(v=bts.10))</span><span class="sxs-lookup"><span data-stu-id="5f9de-110">[UDDI Class Library](/previous-versions/windows/desktop/ee294451(v=bts.10))</span></span>
 
  
 

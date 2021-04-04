@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822410"
 ---
-# <a name="example-code-for-redistribution-setup"></a><span data-ttu-id="95c48-113">Exemplo de código para configuração de redistribuição</span><span class="sxs-lookup"><span data-stu-id="95c48-113">Example Code for Redistribution Setup</span></span>
+# <a name="example-code-for-redistribution-setup"></a><span data-ttu-id="4ec23-113">Exemplo de código para configuração de redistribuição</span><span class="sxs-lookup"><span data-stu-id="4ec23-113">Example Code for Redistribution Setup</span></span>
 
-<span data-ttu-id="95c48-114">Ao incluir o pacote de redistribuição em seu aplicativo, você pode usar o sinalizador/Q: A ao invocar o pacote de redistribuição em sua rotina de instalação.</span><span class="sxs-lookup"><span data-stu-id="95c48-114">When including the redistribution package in your application, you can use the /Q:A flag when you invoke the redistribution package in your setup routine.</span></span> <span data-ttu-id="95c48-115">Isso suprime a interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="95c48-115">This suppresses the user interface (UI).</span></span>
+<span data-ttu-id="4ec23-114">Ao incluir o pacote de redistribuição em seu aplicativo, você pode usar o sinalizador/Q: A ao invocar o pacote de redistribuição em sua rotina de instalação.</span><span class="sxs-lookup"><span data-stu-id="4ec23-114">When including the redistribution package in your application, you can use the /Q:A flag when you invoke the redistribution package in your setup routine.</span></span> <span data-ttu-id="4ec23-115">Isso suprime a interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="4ec23-115">This suppresses the user interface (UI).</span></span>
 
-<span data-ttu-id="95c48-116">O código de exemplo a seguir pode ser usado em sua rotina de instalação para executar os pacotes de redistribuição no modo silencioso e notificar sua rotina de instalação quando o computador precisar ser reiniciado.</span><span class="sxs-lookup"><span data-stu-id="95c48-116">The following example code can be used in your setup routine to run the redistribution packages in quiet mode and notify your setup routine when the computer must be restarted.</span></span>
+<span data-ttu-id="4ec23-116">O código de exemplo a seguir pode ser usado em sua rotina de instalação para executar os pacotes de redistribuição no modo silencioso e notificar sua rotina de instalação quando o computador precisar ser reiniciado.</span><span class="sxs-lookup"><span data-stu-id="4ec23-116">The following example code can be used in your setup routine to run the redistribution packages in quiet mode and notify your setup routine when the computer must be restarted.</span></span>
 
 
 ```C++
@@ -207,11 +207,11 @@ BOOL SystemNeedsReboot( void )
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="95c48-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="95c48-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4ec23-117">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4ec23-117">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="95c48-118">**Redistribuição de software**</span><span class="sxs-lookup"><span data-stu-id="95c48-118">**Software Redistribution**</span></span>](software-redistribution.md)
+[<span data-ttu-id="4ec23-118">**Redistribuição de software**</span><span class="sxs-lookup"><span data-stu-id="4ec23-118">**Software Redistribution**</span></span>](software-redistribution.md)
 </dt> </dl>
 
  
