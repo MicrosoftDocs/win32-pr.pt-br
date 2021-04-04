@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662924"
 ---
-# <a name="iobjectids-properties"></a><span data-ttu-id="e440f-103">Propriedades de IObjectIds</span><span class="sxs-lookup"><span data-stu-id="e440f-103">IObjectIds Properties</span></span>
+# <a name="iobjectids-properties"></a><span data-ttu-id="1dac5-103">Propriedades de IObjectIds</span><span class="sxs-lookup"><span data-stu-id="1dac5-103">IObjectIds Properties</span></span>
 
-<span data-ttu-id="e440f-104">A interface [**IObjectIds**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectids) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e440f-104">The [**IObjectIds**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectids) interface exposes the following properties.</span></span>
+<span data-ttu-id="1dac5-104">A interface [**IObjectIds**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectids) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="1dac5-104">The [**IObjectIds**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectids) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e440f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e440f-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1dac5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1dac5-105">In this section</span></span>
 
--   [<span data-ttu-id="e440f-106">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="e440f-106">**\_NewEnum Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get__newenum)
--   [<span data-ttu-id="e440f-107">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="e440f-107">**Count Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_count)
--   [<span data-ttu-id="e440f-108">**Propriedade ItemByIndex**</span><span class="sxs-lookup"><span data-stu-id="e440f-108">**ItemByIndex Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_itembyindex)
+-   [<span data-ttu-id="1dac5-106">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="1dac5-106">**\_NewEnum Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get__newenum)
+-   [<span data-ttu-id="1dac5-107">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="1dac5-107">**Count Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_count)
+-   [<span data-ttu-id="1dac5-108">**Propriedade ItemByIndex**</span><span class="sxs-lookup"><span data-stu-id="1dac5-108">**ItemByIndex Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-iobjectids-get_itembyindex)
 
  
 

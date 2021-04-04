@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662868"
 ---
-# <a name="esentslvdatabasemissingexception-constructor"></a><span data-ttu-id="bde77-103">Construtor EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bde77-103">EsentSLVDatabaseMissingException constructor</span></span>
+# <a name="esentslvdatabasemissingexception-constructor"></a><span data-ttu-id="bf69f-103">Construtor EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bf69f-103">EsentSLVDatabaseMissingException constructor</span></span>
 
-<span data-ttu-id="bde77-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bde77-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="bde77-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bde77-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="bf69f-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bf69f-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="bf69f-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bf69f-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bde77-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bde77-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bf69f-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bf69f-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New EsentSLVDatabaseMissingException()
 public EsentSLVDatabaseMissingException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bde77-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="bde77-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf69f-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="bf69f-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="bde77-108">Referência</span><span class="sxs-lookup"><span data-stu-id="bde77-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="bf69f-108">Referência</span><span class="sxs-lookup"><span data-stu-id="bf69f-108">Reference</span></span>
 
-[<span data-ttu-id="bde77-109">Classe EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bde77-109">EsentSLVDatabaseMissingException class</span></span>](./esentslvdatabasemissingexception-class.md)
+[<span data-ttu-id="bf69f-109">Classe EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bf69f-109">EsentSLVDatabaseMissingException class</span></span>](./esentslvdatabasemissingexception-class.md)
 
-[<span data-ttu-id="bde77-110">Membros do EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bde77-110">EsentSLVDatabaseMissingException members</span></span>](./esentslvdatabasemissingexception-members.md)
+[<span data-ttu-id="bf69f-110">Membros do EsentSLVDatabaseMissingException</span><span class="sxs-lookup"><span data-stu-id="bf69f-110">EsentSLVDatabaseMissingException members</span></span>](./esentslvdatabasemissingexception-members.md)
 
-[<span data-ttu-id="bde77-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bde77-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="bf69f-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bf69f-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

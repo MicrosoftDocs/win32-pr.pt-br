@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662927"
 ---
-# <a name="icspstatus-methods"></a><span data-ttu-id="809f8-103">Métodos ICspStatus</span><span class="sxs-lookup"><span data-stu-id="809f8-103">ICspStatus Methods</span></span>
+# <a name="icspstatus-methods"></a><span data-ttu-id="5a50c-103">Métodos ICspStatus</span><span class="sxs-lookup"><span data-stu-id="5a50c-103">ICspStatus Methods</span></span>
 
-<span data-ttu-id="809f8-104">A interface [**ICspStatus**](/windows/desktop/api/CertEnroll/nn-certenroll-icspstatus) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="809f8-104">The [**ICspStatus**](/windows/desktop/api/CertEnroll/nn-certenroll-icspstatus) interface exposes the following methods.</span></span>
+<span data-ttu-id="5a50c-104">A interface [**ICspStatus**](/windows/desktop/api/CertEnroll/nn-certenroll-icspstatus) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="5a50c-104">The [**ICspStatus**](/windows/desktop/api/CertEnroll/nn-certenroll-icspstatus) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="809f8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="809f8-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5a50c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5a50c-105">In this section</span></span>
 
--   [<span data-ttu-id="809f8-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="809f8-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-initialize)
+-   [<span data-ttu-id="5a50c-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="5a50c-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icspstatus-initialize)
 
  
 

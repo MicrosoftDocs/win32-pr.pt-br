@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662773"
 ---
-# <a name="encrypteddata-properties"></a><span data-ttu-id="557f8-103">Propriedades de EncryptedData</span><span class="sxs-lookup"><span data-stu-id="557f8-103">EncryptedData Properties</span></span>
+# <a name="encrypteddata-properties"></a><span data-ttu-id="875b9-103">Propriedades de EncryptedData</span><span class="sxs-lookup"><span data-stu-id="875b9-103">EncryptedData Properties</span></span>
 
-<span data-ttu-id="557f8-104">O objeto [**EncryptedData**](encrypteddata.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="557f8-104">The [**EncryptedData**](encrypteddata.md) object exposes the following properties.</span></span>
+<span data-ttu-id="875b9-104">O objeto [**EncryptedData**](encrypteddata.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="875b9-104">The [**EncryptedData**](encrypteddata.md) object exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="557f8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="557f8-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="875b9-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="875b9-105">In this section</span></span>
 
--   [<span data-ttu-id="557f8-106">**Propriedade de algoritmo**</span><span class="sxs-lookup"><span data-stu-id="557f8-106">**Algorithm Property**</span></span>](encrypteddata-algorithm.md)
--   [<span data-ttu-id="557f8-107">**Propriedade de conteúdo**</span><span class="sxs-lookup"><span data-stu-id="557f8-107">**Content Property**</span></span>](encrypteddata-content.md)
+-   [<span data-ttu-id="875b9-106">**Propriedade de algoritmo**</span><span class="sxs-lookup"><span data-stu-id="875b9-106">**Algorithm Property**</span></span>](encrypteddata-algorithm.md)
+-   [<span data-ttu-id="875b9-107">**Propriedade de conteúdo**</span><span class="sxs-lookup"><span data-stu-id="875b9-107">**Content Property**</span></span>](encrypteddata-content.md)
 
  
 

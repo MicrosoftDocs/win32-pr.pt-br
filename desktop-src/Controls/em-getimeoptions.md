@@ -21,54 +21,54 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104085936"
 ---
-# <a name="em_getimeoptions-message"></a><span data-ttu-id="7c26d-104">\_Mensagem em GETIMEOPTIONS</span><span class="sxs-lookup"><span data-stu-id="7c26d-104">EM\_GETIMEOPTIONS message</span></span>
+# <a name="em_getimeoptions-message"></a><span data-ttu-id="a8b4c-104">\_Mensagem em GETIMEOPTIONS</span><span class="sxs-lookup"><span data-stu-id="a8b4c-104">EM\_GETIMEOPTIONS message</span></span>
 
-<span data-ttu-id="7c26d-105">Recupera as opções atuais do IME (editor de método de entrada).</span><span class="sxs-lookup"><span data-stu-id="7c26d-105">Retrieves the current Input Method Editor (IME) options.</span></span>
+<span data-ttu-id="a8b4c-105">Recupera as opções atuais do IME (editor de método de entrada).</span><span class="sxs-lookup"><span data-stu-id="a8b4c-105">Retrieves the current Input Method Editor (IME) options.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="7c26d-106">Esta mensagem tem suporte apenas em versões de idioma asiático do Microsoft Rich Edit 1,0.</span><span class="sxs-lookup"><span data-stu-id="7c26d-106">This message is supported only in Asian-language versions of Microsoft Rich Edit 1.0.</span></span> <span data-ttu-id="7c26d-107">Não há suporte para ele em versões posteriores do rich edit.</span><span class="sxs-lookup"><span data-stu-id="7c26d-107">It is not supported in any later versions of Rich Edit.</span></span>
+> <span data-ttu-id="a8b4c-106">Esta mensagem tem suporte apenas em versões de idioma asiático do Microsoft Rich Edit 1,0.</span><span class="sxs-lookup"><span data-stu-id="a8b4c-106">This message is supported only in Asian-language versions of Microsoft Rich Edit 1.0.</span></span> <span data-ttu-id="a8b4c-107">Não há suporte para ele em versões posteriores do rich edit.</span><span class="sxs-lookup"><span data-stu-id="a8b4c-107">It is not supported in any later versions of Rich Edit.</span></span>
 
  
 
-## <a name="parameters"></a><span data-ttu-id="7c26d-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7c26d-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a8b4c-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a8b4c-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="7c26d-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="7c26d-109">*wParam*</span></span> 
+<span data-ttu-id="a8b4c-109">*wParam*</span><span class="sxs-lookup"><span data-stu-id="a8b4c-109">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="7c26d-110">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="7c26d-110">Not used; must be zero.</span></span>
+<span data-ttu-id="a8b4c-110">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="a8b4c-110">Not used; must be zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="7c26d-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="7c26d-111">*lParam*</span></span> 
+<span data-ttu-id="a8b4c-111">*lParam*</span><span class="sxs-lookup"><span data-stu-id="a8b4c-111">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="7c26d-112">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="7c26d-112">Not used; must be zero.</span></span>
+<span data-ttu-id="a8b4c-112">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="a8b4c-112">Not used; must be zero.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="7c26d-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7c26d-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a8b4c-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="a8b4c-113">Return value</span></span>
 
-<span data-ttu-id="7c26d-114">Essa mensagem retorna um ou mais dos valores de sinalizador de opção do IME descritos na mensagem em [**\_ SETIMEOPTIONS**](em-setimeoptions.md) .</span><span class="sxs-lookup"><span data-stu-id="7c26d-114">This message returns one or more of the IME option flag values described in the [**EM\_SETIMEOPTIONS**](em-setimeoptions.md) message.</span></span>
+<span data-ttu-id="a8b4c-114">Essa mensagem retorna um ou mais dos valores de sinalizador de opção do IME descritos na mensagem em [**\_ SETIMEOPTIONS**](em-setimeoptions.md) .</span><span class="sxs-lookup"><span data-stu-id="a8b4c-114">This message returns one or more of the IME option flag values described in the [**EM\_SETIMEOPTIONS**](em-setimeoptions.md) message.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7c26d-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7c26d-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a8b4c-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a8b4c-115">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7c26d-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="7c26d-116">Requirement</span></span> | <span data-ttu-id="7c26d-117">Valor</span><span class="sxs-lookup"><span data-stu-id="7c26d-117">Value</span></span> |
+| <span data-ttu-id="a8b4c-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="a8b4c-116">Requirement</span></span> | <span data-ttu-id="a8b4c-117">Valor</span><span class="sxs-lookup"><span data-stu-id="a8b4c-117">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="7c26d-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7c26d-118">Minimum supported client</span></span><br/> | <span data-ttu-id="7c26d-119">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="7c26d-119">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="7c26d-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7c26d-120">Minimum supported server</span></span><br/> | <span data-ttu-id="7c26d-121">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="7c26d-121">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="7c26d-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7c26d-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="7c26d-123"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="7c26d-123"><dt>Richedit.h</dt></span></span> </dl> |
+| <span data-ttu-id="a8b4c-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8b4c-118">Minimum supported client</span></span><br/> | <span data-ttu-id="a8b4c-119">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="a8b4c-119">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="a8b4c-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8b4c-120">Minimum supported server</span></span><br/> | <span data-ttu-id="a8b4c-121">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="a8b4c-121">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="a8b4c-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a8b4c-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="a8b4c-123"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="a8b4c-123"><dt>Richedit.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7c26d-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="7c26d-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a8b4c-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="a8b4c-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7c26d-125">**em \_ SETIMEOPTIONS**</span><span class="sxs-lookup"><span data-stu-id="7c26d-125">**EM\_SETIMEOPTIONS**</span></span>](em-setimeoptions.md)
+[<span data-ttu-id="a8b4c-125">**em \_ SETIMEOPTIONS**</span><span class="sxs-lookup"><span data-stu-id="a8b4c-125">**EM\_SETIMEOPTIONS**</span></span>](em-setimeoptions.md)
 </dt> </dl>
 
  

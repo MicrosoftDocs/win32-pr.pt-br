@@ -34,25 +34,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824342"
 ---
-# <a name="iadssession-property-methods"></a><span data-ttu-id="54fac-105">Métodos de propriedade IADsSession</span><span class="sxs-lookup"><span data-stu-id="54fac-105">IADsSession Property Methods</span></span>
+# <a name="iadssession-property-methods"></a><span data-ttu-id="859f2-105">Métodos de propriedade IADsSession</span><span class="sxs-lookup"><span data-stu-id="859f2-105">IADsSession Property Methods</span></span>
 
-<span data-ttu-id="54fac-106">Os métodos de propriedade da interface [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obtêm ou definem as propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="54fac-106">The property methods of the [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) interface get or set the properties described in the following table.</span></span> <span data-ttu-id="54fac-107">Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="54fac-107">For more information and a general discussion about property methods, see [Interface Property Methods](interface-property-methods.md).</span></span>
+<span data-ttu-id="859f2-106">Os métodos de propriedade da interface [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obtêm ou definem as propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="859f2-106">The property methods of the [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) interface get or set the properties described in the following table.</span></span> <span data-ttu-id="859f2-107">Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="859f2-107">For more information and a general discussion about property methods, see [Interface Property Methods](interface-property-methods.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="54fac-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="54fac-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="859f2-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="859f2-108">Properties</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="54fac-109">**Computador**</span><span class="sxs-lookup"><span data-stu-id="54fac-109">**Computer**</span></span>
-<span data-ttu-id="54fac-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-110"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-109">**Computador**</span><span class="sxs-lookup"><span data-stu-id="859f2-109">**Computer**</span></span>
+<span data-ttu-id="859f2-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-110"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-111">Nome da estação de trabalho cliente.</span><span class="sxs-lookup"><span data-stu-id="54fac-111">Name of the client workstation.</span></span>
+<span data-ttu-id="859f2-111">Nome da estação de trabalho cliente.</span><span class="sxs-lookup"><span data-stu-id="859f2-111">Name of the client workstation.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-112">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-112">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-112">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-112">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-113">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="54fac-113">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="859f2-113">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="859f2-113">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -67,17 +67,17 @@ HRESULT get_Computer(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="54fac-114">**ComputerPath**</span><span class="sxs-lookup"><span data-stu-id="54fac-114">**ComputerPath**</span></span>
-<span data-ttu-id="54fac-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-115"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-114">**ComputerPath**</span><span class="sxs-lookup"><span data-stu-id="859f2-114">**ComputerPath**</span></span>
+<span data-ttu-id="859f2-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-115"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-116">ADsPath do objeto de computador para a estação de trabalho cliente.</span><span class="sxs-lookup"><span data-stu-id="54fac-116">ADsPath of the computer object for the client workstation.</span></span>
+<span data-ttu-id="859f2-116">ADsPath do objeto de computador para a estação de trabalho cliente.</span><span class="sxs-lookup"><span data-stu-id="859f2-116">ADsPath of the computer object for the client workstation.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-117">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-117">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-117">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-117">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-118">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="54fac-118">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="859f2-118">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="859f2-118">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -92,17 +92,17 @@ HRESULT get_ComputerPath(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="54fac-119">**Connecttime**</span><span class="sxs-lookup"><span data-stu-id="54fac-119">**ConnectTime**</span></span>
-<span data-ttu-id="54fac-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-120"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-119">**Connecttime**</span><span class="sxs-lookup"><span data-stu-id="859f2-119">**ConnectTime**</span></span>
+<span data-ttu-id="859f2-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-120"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-121">Tempo decorrido, em segundos, desde que a sessão foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="54fac-121">Elapsed time, in seconds, since the session started.</span></span>
+<span data-ttu-id="859f2-121">Tempo decorrido, em segundos, desde que a sessão foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="859f2-121">Elapsed time, in seconds, since the session started.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-122">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-122">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-122">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-122">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-123">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="54fac-123">Scripting data type: **LONG**</span></span>
+<span data-ttu-id="859f2-123">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="859f2-123">Scripting data type: **LONG**</span></span>
 </dt> <dt>
 
 
@@ -117,17 +117,17 @@ HRESULT get_ConnectTime(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="54fac-124">**Tempo ocioso**</span><span class="sxs-lookup"><span data-stu-id="54fac-124">**IdleTime**</span></span>
-<span data-ttu-id="54fac-125"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-125"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-124">**Tempo ocioso**</span><span class="sxs-lookup"><span data-stu-id="859f2-124">**IdleTime**</span></span>
+<span data-ttu-id="859f2-125"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-125"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-126">Tempo ocioso, em segundos, da sessão.</span><span class="sxs-lookup"><span data-stu-id="54fac-126">Idle time, in seconds, of the session.</span></span>
+<span data-ttu-id="859f2-126">Tempo ocioso, em segundos, da sessão.</span><span class="sxs-lookup"><span data-stu-id="859f2-126">Idle time, in seconds, of the session.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-127">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-127">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-127">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-127">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-128">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="54fac-128">Scripting data type: **LONG**</span></span>
+<span data-ttu-id="859f2-128">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="859f2-128">Scripting data type: **LONG**</span></span>
 </dt> <dt>
 
 
@@ -142,17 +142,17 @@ HRESULT get_IdleTime(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="54fac-129">**Usuário**</span><span class="sxs-lookup"><span data-stu-id="54fac-129">**User**</span></span>
-<span data-ttu-id="54fac-130"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-130"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-129">**Usuário**</span><span class="sxs-lookup"><span data-stu-id="859f2-129">**User**</span></span>
+<span data-ttu-id="859f2-130"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-130"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-131">O nome do usuário da sessão.</span><span class="sxs-lookup"><span data-stu-id="54fac-131">The name of the user of the session.</span></span>
+<span data-ttu-id="859f2-131">O nome do usuário da sessão.</span><span class="sxs-lookup"><span data-stu-id="859f2-131">The name of the user of the session.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-132">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-132">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-132">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-133">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="54fac-133">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="859f2-133">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="859f2-133">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -167,17 +167,17 @@ HRESULT get_User(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="54fac-134">**UserPath**</span><span class="sxs-lookup"><span data-stu-id="54fac-134">**UserPath**</span></span>
-<span data-ttu-id="54fac-135"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="54fac-135"></dt> <dd> <dl></span></span>
+<span data-ttu-id="859f2-134">**UserPath**</span><span class="sxs-lookup"><span data-stu-id="859f2-134">**UserPath**</span></span>
+<span data-ttu-id="859f2-135"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="859f2-135"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="54fac-136">O ADsPath do objeto de usuário para o usuário desta sessão.</span><span class="sxs-lookup"><span data-stu-id="54fac-136">The ADsPath of the user object for the user of this session.</span></span>
+<span data-ttu-id="859f2-136">O ADsPath do objeto de usuário para o usuário desta sessão.</span><span class="sxs-lookup"><span data-stu-id="859f2-136">The ADsPath of the user object for the user of this session.</span></span>
 
 <dt>
 
-<span data-ttu-id="54fac-137">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="54fac-137">Access type: Read-only</span></span>
+<span data-ttu-id="859f2-137">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="859f2-137">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="54fac-138">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="54fac-138">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="859f2-138">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="859f2-138">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -194,9 +194,9 @@ HRESULT get_UserPath(
 
  
 
-## <a name="examples"></a><span data-ttu-id="54fac-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="54fac-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="859f2-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="859f2-139">Examples</span></span>
 
-<span data-ttu-id="54fac-140">O exemplo de código a seguir mostra como examinar sessões para um serviço de arquivo.</span><span class="sxs-lookup"><span data-stu-id="54fac-140">The following code example shows how to examine sessions for a file service.</span></span>
+<span data-ttu-id="859f2-140">O exemplo de código a seguir mostra como examinar sessões para um serviço de arquivo.</span><span class="sxs-lookup"><span data-stu-id="859f2-140">The following code example shows how to examine sessions for a file service.</span></span>
 
 
 ```VB
@@ -223,7 +223,7 @@ Cleanup:
 
 
 
-<span data-ttu-id="54fac-141">O exemplo de código a seguir enumera uma coleção de sessões.</span><span class="sxs-lookup"><span data-stu-id="54fac-141">The following code example enumerates a collection of sessions.</span></span>
+<span data-ttu-id="859f2-141">O exemplo de código a seguir enumera uma coleção de sessões.</span><span class="sxs-lookup"><span data-stu-id="859f2-141">The following code example enumerates a collection of sessions.</span></span>
 
 
 ```C++
@@ -289,28 +289,28 @@ Cleanup:
 
 
 
-## <a name="requirements"></a><span data-ttu-id="54fac-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="54fac-142">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="859f2-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="859f2-142">Requirements</span></span>
 
 
 
-| <span data-ttu-id="54fac-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="54fac-143">Requirement</span></span> | <span data-ttu-id="54fac-144">Valor</span><span class="sxs-lookup"><span data-stu-id="54fac-144">Value</span></span> |
+| <span data-ttu-id="859f2-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="859f2-143">Requirement</span></span> | <span data-ttu-id="859f2-144">Valor</span><span class="sxs-lookup"><span data-stu-id="859f2-144">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="54fac-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="54fac-145">Minimum supported client</span></span><br/> | <span data-ttu-id="54fac-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="54fac-146">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="54fac-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="54fac-147">Minimum supported server</span></span><br/> | <span data-ttu-id="54fac-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="54fac-148">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="54fac-149">parâmetro</span><span class="sxs-lookup"><span data-stu-id="54fac-149">Header</span></span><br/>                   | <dl> <span data-ttu-id="54fac-150"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="54fac-150"><dt>Iads.h</dt></span></span> </dl>       |
-| <span data-ttu-id="54fac-151">DLL</span><span class="sxs-lookup"><span data-stu-id="54fac-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="54fac-152"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="54fac-152"><dt>Activeds.dll</dt></span></span> </dl> |
-| <span data-ttu-id="54fac-153">IID</span><span class="sxs-lookup"><span data-stu-id="54fac-153">IID</span></span><br/>                      | <span data-ttu-id="54fac-154">IID \_ IADsSession é definido como 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9</span><span class="sxs-lookup"><span data-stu-id="54fac-154">IID\_IADsSession is defined as 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9</span></span><br/>          |
+| <span data-ttu-id="859f2-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="859f2-145">Minimum supported client</span></span><br/> | <span data-ttu-id="859f2-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="859f2-146">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="859f2-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="859f2-147">Minimum supported server</span></span><br/> | <span data-ttu-id="859f2-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="859f2-148">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="859f2-149">parâmetro</span><span class="sxs-lookup"><span data-stu-id="859f2-149">Header</span></span><br/>                   | <dl> <span data-ttu-id="859f2-150"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="859f2-150"><dt>Iads.h</dt></span></span> </dl>       |
+| <span data-ttu-id="859f2-151">DLL</span><span class="sxs-lookup"><span data-stu-id="859f2-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="859f2-152"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="859f2-152"><dt>Activeds.dll</dt></span></span> </dl> |
+| <span data-ttu-id="859f2-153">IID</span><span class="sxs-lookup"><span data-stu-id="859f2-153">IID</span></span><br/>                      | <span data-ttu-id="859f2-154">IID \_ IADsSession é definido como 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9</span><span class="sxs-lookup"><span data-stu-id="859f2-154">IID\_IADsSession is defined as 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9</span></span><br/>          |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="54fac-155">Consulte também</span><span class="sxs-lookup"><span data-stu-id="54fac-155">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="859f2-155">Confira também</span><span class="sxs-lookup"><span data-stu-id="859f2-155">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="54fac-156">**IADsFileServiceOperations:: sessões**</span><span class="sxs-lookup"><span data-stu-id="54fac-156">**IADsFileServiceOperations::Sessions**</span></span>](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
+[<span data-ttu-id="859f2-156">**IADsFileServiceOperations:: sessões**</span><span class="sxs-lookup"><span data-stu-id="859f2-156">**IADsFileServiceOperations::Sessions**</span></span>](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
 </dt> <dt>
 
-[<span data-ttu-id="54fac-157">**IADsSession**</span><span class="sxs-lookup"><span data-stu-id="54fac-157">**IADsSession**</span></span>](/windows/desktop/api/Iads/nn-iads-iadssession)
+[<span data-ttu-id="859f2-157">**IADsSession**</span><span class="sxs-lookup"><span data-stu-id="859f2-157">**IADsSession**</span></span>](/windows/desktop/api/Iads/nn-iads-iadssession)
 </dt> </dl>
 
  

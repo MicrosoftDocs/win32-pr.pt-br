@@ -24,15 +24,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104085986"
 ---
-# <a name="mdm_policy_result01_cryptography02-class"></a><span data-ttu-id="78336-105">\_Classe MDM \_ Result01 \_ Cryptography02</span><span class="sxs-lookup"><span data-stu-id="78336-105">MDM\_Policy\_Result01\_Cryptography02 class</span></span>
+# <a name="mdm_policy_result01_cryptography02-class"></a><span data-ttu-id="bc8c5-105">\_Classe MDM \_ Result01 \_ Cryptography02</span><span class="sxs-lookup"><span data-stu-id="bc8c5-105">MDM\_Policy\_Result01\_Cryptography02 class</span></span>
 
-<span data-ttu-id="78336-106">\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente.</span><span class="sxs-lookup"><span data-stu-id="78336-106">\[Some information relates to pre-released product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="78336-107">A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]</span><span class="sxs-lookup"><span data-stu-id="78336-107">Microsoft makes no warranties, express or implied, with respect to the information provided here.\]</span></span>
+<span data-ttu-id="bc8c5-106">\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-106">\[Some information relates to pre-released product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="bc8c5-107">A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]</span><span class="sxs-lookup"><span data-stu-id="bc8c5-107">Microsoft makes no warranties, express or implied, with respect to the information provided here.\]</span></span>
 
-<span data-ttu-id="78336-108">A classe **MDM \_ Policy \_ Result01 \_ Cryptography02** representa políticas relacionadas à criptografia.</span><span class="sxs-lookup"><span data-stu-id="78336-108">The **MDM\_Policy\_Result01\_Cryptography02** class represents policies related to cryptography.</span></span>
+<span data-ttu-id="bc8c5-108">A classe **MDM \_ Policy \_ Result01 \_ Cryptography02** representa políticas relacionadas à criptografia.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-108">The **MDM\_Policy\_Result01\_Cryptography02** class represents policies related to cryptography.</span></span>
 
-<span data-ttu-id="78336-109">A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="78336-109">The following syntax is simplified from MOF code and includes all inherited properties.</span></span>
+<span data-ttu-id="bc8c5-109">A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-109">The following syntax is simplified from MOF code and includes all inherited properties.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="78336-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="78336-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bc8c5-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bc8c5-110">Syntax</span></span>
 
 ``` syntax
 [InPartition("local-system"), dynamic, provider("DMWmiBridgeProv")]
@@ -45,91 +45,91 @@ class MDM_Policy_Result01_Cryptography02
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="78336-111">Membros</span><span class="sxs-lookup"><span data-stu-id="78336-111">Members</span></span>
+## <a name="members"></a><span data-ttu-id="bc8c5-111">Membros</span><span class="sxs-lookup"><span data-stu-id="bc8c5-111">Members</span></span>
 
-<span data-ttu-id="78336-112">A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="78336-112">The **MDM\_Policy\_Result01\_Cryptography02** class has these types of members:</span></span>
+<span data-ttu-id="bc8c5-112">A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="bc8c5-112">The **MDM\_Policy\_Result01\_Cryptography02** class has these types of members:</span></span>
 
--   [<span data-ttu-id="78336-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="78336-113">Properties</span></span>](#properties)
+-   [<span data-ttu-id="bc8c5-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bc8c5-113">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="78336-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="78336-114">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="bc8c5-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bc8c5-114">Properties</span></span>
 
-<span data-ttu-id="78336-115">A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="78336-115">The **MDM\_Policy\_Result01\_Cryptography02** class has these properties.</span></span>
+<span data-ttu-id="bc8c5-115">A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-115">The **MDM\_Policy\_Result01\_Cryptography02** class has these properties.</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="78336-116">AllowFipsAlgorithmPolicy</span><span class="sxs-lookup"><span data-stu-id="78336-116">AllowFipsAlgorithmPolicy</span></span>](/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+[<span data-ttu-id="bc8c5-116">AllowFipsAlgorithmPolicy</span><span class="sxs-lookup"><span data-stu-id="bc8c5-116">AllowFipsAlgorithmPolicy</span></span>](/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="78336-117">Tipo de dados: **sint32**</span><span class="sxs-lookup"><span data-stu-id="78336-117">Data type: **sint32**</span></span>
+<span data-ttu-id="bc8c5-117">Tipo de dados: **sint32**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-117">Data type: **sint32**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-118">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="78336-118">Access type: Read/write</span></span>
+<span data-ttu-id="bc8c5-118">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="bc8c5-118">Access type: Read/write</span></span>
 </dt> </dl>
 
 </dd> <dt>
 
-<span data-ttu-id="78336-119">**InstanceID**</span><span class="sxs-lookup"><span data-stu-id="78336-119">**InstanceID**</span></span>
+<span data-ttu-id="bc8c5-119">**InstanceID**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-119">**InstanceID**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="78336-120">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="78336-120">Data type: **string**</span></span>
+<span data-ttu-id="bc8c5-120">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-120">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-121">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="78336-121">Access type: Read-only</span></span>
+<span data-ttu-id="bc8c5-121">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="bc8c5-121">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-122">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="78336-122">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
+<span data-ttu-id="bc8c5-122">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="bc8c5-122">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="78336-123">Identifica o nome do nó pai.</span><span class="sxs-lookup"><span data-stu-id="78336-123">Identifies the name of the parent node.</span></span> <span data-ttu-id="78336-124">Para essa classe, a cadeia de caracteres é "Cryptography"</span><span class="sxs-lookup"><span data-stu-id="78336-124">For this class, the string is "Cryptography"</span></span>
+<span data-ttu-id="bc8c5-123">Identifica o nome do nó pai.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-123">Identifies the name of the parent node.</span></span> <span data-ttu-id="bc8c5-124">Para essa classe, a cadeia de caracteres é "Cryptography"</span><span class="sxs-lookup"><span data-stu-id="bc8c5-124">For this class, the string is "Cryptography"</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="78336-125">**ParentID**</span><span class="sxs-lookup"><span data-stu-id="78336-125">**ParentID**</span></span>
+<span data-ttu-id="bc8c5-125">**ParentID**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-125">**ParentID**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="78336-126">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="78336-126">Data type: **string**</span></span>
+<span data-ttu-id="bc8c5-126">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-126">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-127">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="78336-127">Access type: Read-only</span></span>
+<span data-ttu-id="bc8c5-127">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="bc8c5-127">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-128">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="78336-128">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
+<span data-ttu-id="bc8c5-128">Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)</span><span class="sxs-lookup"><span data-stu-id="bc8c5-128">Qualifiers: [**key**](/windows/desktop/WmiSdk/key-qualifier)</span></span>
 </dt> </dl>
 
-<span data-ttu-id="78336-129">Descreve o caminho completo para o nó pai.</span><span class="sxs-lookup"><span data-stu-id="78336-129">Describes the full path to the parent node.</span></span> <span data-ttu-id="78336-130">Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/Policy/Result"</span><span class="sxs-lookup"><span data-stu-id="78336-130">For this class, the string is "./Vendor/MSFT/Policy/Result"</span></span>
+<span data-ttu-id="bc8c5-129">Descreve o caminho completo para o nó pai.</span><span class="sxs-lookup"><span data-stu-id="bc8c5-129">Describes the full path to the parent node.</span></span> <span data-ttu-id="bc8c5-130">Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/Policy/Result"</span><span class="sxs-lookup"><span data-stu-id="bc8c5-130">For this class, the string is "./Vendor/MSFT/Policy/Result"</span></span>
 
 </dd> <dt>
 
-[<span data-ttu-id="78336-131">TLSCipherSuites</span><span class="sxs-lookup"><span data-stu-id="78336-131">TLSCipherSuites</span></span>](/windows/client-management/mdm/policy-csp-cryptography#cryptography-tlsciphersuites)
+[<span data-ttu-id="bc8c5-131">TLSCipherSuites</span><span class="sxs-lookup"><span data-stu-id="bc8c5-131">TLSCipherSuites</span></span>](/windows/client-management/mdm/policy-csp-cryptography#cryptography-tlsciphersuites)
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="78336-132">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="78336-132">Data type: **string**</span></span>
+<span data-ttu-id="bc8c5-132">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="bc8c5-132">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="78336-133">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="78336-133">Access type: Read/write</span></span>
+<span data-ttu-id="bc8c5-133">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="bc8c5-133">Access type: Read/write</span></span>
 </dt> </dl>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="78336-134">Requisitos</span><span class="sxs-lookup"><span data-stu-id="78336-134">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="bc8c5-134">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bc8c5-134">Requirements</span></span>
 
 
 
-| <span data-ttu-id="78336-135">Requisito</span><span class="sxs-lookup"><span data-stu-id="78336-135">Requirement</span></span> | <span data-ttu-id="78336-136">Valor</span><span class="sxs-lookup"><span data-stu-id="78336-136">Value</span></span> |
+| <span data-ttu-id="bc8c5-135">Requisito</span><span class="sxs-lookup"><span data-stu-id="bc8c5-135">Requirement</span></span> | <span data-ttu-id="bc8c5-136">Valor</span><span class="sxs-lookup"><span data-stu-id="bc8c5-136">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="78336-137">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="78336-137">Minimum supported client</span></span><br/> | <span data-ttu-id="78336-138">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="78336-138">Windows 10 \[desktop apps only\]</span></span><br/>                                                    |
-| <span data-ttu-id="78336-139">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="78336-139">Minimum supported server</span></span><br/> | <span data-ttu-id="78336-140">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="78336-140">None supported</span></span><br/>                                                                      |
-| <span data-ttu-id="78336-141">Namespace</span><span class="sxs-lookup"><span data-stu-id="78336-141">Namespace</span></span><br/>                | <span data-ttu-id="78336-142">\\Dmmap de \\ MDM \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="78336-142">Root\\cimv2\\mdm\\dmmap</span></span><br/>                                                             |
-| <span data-ttu-id="78336-143">MOF</span><span class="sxs-lookup"><span data-stu-id="78336-143">MOF</span></span><br/>                      | <dl> <span data-ttu-id="78336-144"><dt>DMWmiBridgeProv. mof</dt></span><span class="sxs-lookup"><span data-stu-id="78336-144"><dt>DMWmiBridgeProv.mof</dt></span></span> </dl> |
-| <span data-ttu-id="78336-145">DLL</span><span class="sxs-lookup"><span data-stu-id="78336-145">DLL</span></span><br/>                      | <dl> <span data-ttu-id="78336-146"><dt>DMWmiBridgeProv.dll</dt></span><span class="sxs-lookup"><span data-stu-id="78336-146"><dt>DMWmiBridgeProv.dll</dt></span></span> </dl> |
+| <span data-ttu-id="bc8c5-137">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bc8c5-137">Minimum supported client</span></span><br/> | <span data-ttu-id="bc8c5-138">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="bc8c5-138">Windows 10 \[desktop apps only\]</span></span><br/>                                                    |
+| <span data-ttu-id="bc8c5-139">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bc8c5-139">Minimum supported server</span></span><br/> | <span data-ttu-id="bc8c5-140">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="bc8c5-140">None supported</span></span><br/>                                                                      |
+| <span data-ttu-id="bc8c5-141">Namespace</span><span class="sxs-lookup"><span data-stu-id="bc8c5-141">Namespace</span></span><br/>                | <span data-ttu-id="bc8c5-142">\\Dmmap de \\ MDM \\ cimv2 raiz</span><span class="sxs-lookup"><span data-stu-id="bc8c5-142">Root\\cimv2\\mdm\\dmmap</span></span><br/>                                                             |
+| <span data-ttu-id="bc8c5-143">MOF</span><span class="sxs-lookup"><span data-stu-id="bc8c5-143">MOF</span></span><br/>                      | <dl> <span data-ttu-id="bc8c5-144"><dt>DMWmiBridgeProv. mof</dt></span><span class="sxs-lookup"><span data-stu-id="bc8c5-144"><dt>DMWmiBridgeProv.mof</dt></span></span> </dl> |
+| <span data-ttu-id="bc8c5-145">DLL</span><span class="sxs-lookup"><span data-stu-id="bc8c5-145">DLL</span></span><br/>                      | <dl> <span data-ttu-id="bc8c5-146"><dt>DMWmiBridgeProv.dll</dt></span><span class="sxs-lookup"><span data-stu-id="bc8c5-146"><dt>DMWmiBridgeProv.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="78336-147">Confira também</span><span class="sxs-lookup"><span data-stu-id="78336-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bc8c5-147">Confira também</span><span class="sxs-lookup"><span data-stu-id="bc8c5-147">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="78336-148">Como usar os scripts do PowerShell com o provedor de ponte WMI</span><span class="sxs-lookup"><span data-stu-id="78336-148">Using PowerShell scripting with the WMI Bridge Provider</span></span>](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[<span data-ttu-id="bc8c5-148">Como usar os scripts do PowerShell com o provedor de ponte WMI</span><span class="sxs-lookup"><span data-stu-id="bc8c5-148">Using PowerShell scripting with the WMI Bridge Provider</span></span>](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

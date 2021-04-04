@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104085743"
 ---
-# <a name="ws_policy"></a><span data-ttu-id="938a7-104">\_política WS</span><span class="sxs-lookup"><span data-stu-id="938a7-104">WS\_POLICY</span></span>
+# <a name="ws_policy"></a><span data-ttu-id="97a91-104">\_política WS</span><span class="sxs-lookup"><span data-stu-id="97a91-104">WS\_POLICY</span></span>
 
-<span data-ttu-id="938a7-105">Um tipo opaco usado para fazer referência a uma política de[entrada de metadados](metadata-import.md) .</span><span class="sxs-lookup"><span data-stu-id="938a7-105">An opaque type used to reference a[metadata input](metadata-import.md) policy.</span></span>
+<span data-ttu-id="97a91-105">Um tipo opaco usado para fazer referência a uma política de[entrada de metadados](metadata-import.md) .</span><span class="sxs-lookup"><span data-stu-id="97a91-105">An opaque type used to reference a[metadata input](metadata-import.md) policy.</span></span>
 
 
 ```C++
@@ -24,19 +24,19 @@ typedef struct _WS_POLICY WS_POLICY;
 
 
 
-## <a name="remarks"></a><span data-ttu-id="938a7-106">Comentários</span><span class="sxs-lookup"><span data-stu-id="938a7-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="97a91-106">Comentários</span><span class="sxs-lookup"><span data-stu-id="97a91-106">Remarks</span></span>
 
-<span data-ttu-id="938a7-107">Este objeto não é thread-safe.</span><span class="sxs-lookup"><span data-stu-id="938a7-107">This object is not thread safe.</span></span> <span data-ttu-id="938a7-108">Para obter mais informações, consulte [segurança do thread](thread-safety.md).</span><span class="sxs-lookup"><span data-stu-id="938a7-108">For more information, see [thread safety](thread-safety.md).</span></span>
+<span data-ttu-id="97a91-107">Este objeto não é thread-safe.</span><span class="sxs-lookup"><span data-stu-id="97a91-107">This object is not thread safe.</span></span> <span data-ttu-id="97a91-108">Para obter mais informações, consulte [segurança do thread](thread-safety.md).</span><span class="sxs-lookup"><span data-stu-id="97a91-108">For more information, see [thread safety](thread-safety.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="938a7-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="938a7-109">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="97a91-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="97a91-109">Requirements</span></span>
 
 
 
-| <span data-ttu-id="938a7-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="938a7-110">Requirement</span></span> | <span data-ttu-id="938a7-111">Valor</span><span class="sxs-lookup"><span data-stu-id="938a7-111">Value</span></span> |
+| <span data-ttu-id="97a91-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="97a91-110">Requirement</span></span> | <span data-ttu-id="97a91-111">Valor</span><span class="sxs-lookup"><span data-stu-id="97a91-111">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="938a7-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="938a7-112">Minimum supported client</span></span><br/> | <span data-ttu-id="938a7-113">Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="938a7-113">Windows 7 \[desktop apps \| UWP apps\]</span></span><br/>                                        |
-| <span data-ttu-id="938a7-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="938a7-114">Minimum supported server</span></span><br/> | <span data-ttu-id="938a7-115">\[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]</span><span class="sxs-lookup"><span data-stu-id="938a7-115">Windows Server 2008 R2 \[desktop apps \| UWP apps\]</span></span><br/>                           |
-| <span data-ttu-id="938a7-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="938a7-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="938a7-117"><dt>WebServices. h</dt></span><span class="sxs-lookup"><span data-stu-id="938a7-117"><dt>WebServices.h</dt></span></span> </dl> |
+| <span data-ttu-id="97a91-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="97a91-112">Minimum supported client</span></span><br/> | <span data-ttu-id="97a91-113">Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="97a91-113">Windows 7 \[desktop apps \| UWP apps\]</span></span><br/>                                        |
+| <span data-ttu-id="97a91-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="97a91-114">Minimum supported server</span></span><br/> | <span data-ttu-id="97a91-115">\[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]</span><span class="sxs-lookup"><span data-stu-id="97a91-115">Windows Server 2008 R2 \[desktop apps \| UWP apps\]</span></span><br/>                           |
+| <span data-ttu-id="97a91-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="97a91-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="97a91-117"><dt>WebServices. h</dt></span><span class="sxs-lookup"><span data-stu-id="97a91-117"><dt>WebServices.h</dt></span></span> </dl> |
 
 
 
