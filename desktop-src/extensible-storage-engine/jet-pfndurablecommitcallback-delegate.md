@@ -35,14 +35,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837353"
 ---
-# <a name="jet_pfndurablecommitcallback-delegate"></a><span data-ttu-id="5b148-103">JET_PFNDURABLECOMMITCALLBACK delegado</span><span class="sxs-lookup"><span data-stu-id="5b148-103">JET_PFNDURABLECOMMITCALLBACK delegate</span></span>
+# <a name="jet_pfndurablecommitcallback-delegate"></a><span data-ttu-id="680ef-103">JET_PFNDURABLECOMMITCALLBACK delegado</span><span class="sxs-lookup"><span data-stu-id="680ef-103">JET_PFNDURABLECOMMITCALLBACK delegate</span></span>
 
-<span data-ttu-id="5b148-104">Retorno de chamada para JET_paramDurableCommitCallback.</span><span class="sxs-lookup"><span data-stu-id="5b148-104">Callback for JET_paramDurableCommitCallback.</span></span>
+<span data-ttu-id="680ef-104">Retorno de chamada para JET_paramDurableCommitCallback.</span><span class="sxs-lookup"><span data-stu-id="680ef-104">Callback for JET_paramDurableCommitCallback.</span></span>
 
-<span data-ttu-id="5b148-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5b148-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="5b148-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5b148-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="680ef-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="680ef-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="680ef-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="680ef-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5b148-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5b148-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="680ef-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="680ef-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -63,33 +63,33 @@ public delegate JET_err JET_PFNDURABLECOMMITCALLBACK(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="5b148-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5b148-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="680ef-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="680ef-108">Parameters</span></span>
 
-  - <span data-ttu-id="5b148-109">instance</span><span class="sxs-lookup"><span data-stu-id="5b148-109">instance</span></span>  
-    <span data-ttu-id="5b148-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="5b148-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
+  - <span data-ttu-id="680ef-109">instance</span><span class="sxs-lookup"><span data-stu-id="680ef-109">instance</span></span>  
+    <span data-ttu-id="680ef-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="680ef-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
     
-    <span data-ttu-id="5b148-111">Instância a ser usada.</span><span class="sxs-lookup"><span data-stu-id="5b148-111">Instance to use.</span></span>
+    <span data-ttu-id="680ef-111">Instância a ser usada.</span><span class="sxs-lookup"><span data-stu-id="680ef-111">Instance to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="5b148-112">pCommitIdSeen</span><span class="sxs-lookup"><span data-stu-id="5b148-112">pCommitIdSeen</span></span>  
-    <span data-ttu-id="5b148-113">Tipo: [Microsoft.ISAM.ESENT.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)</span><span class="sxs-lookup"><span data-stu-id="5b148-113">Type: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)</span></span>  
+  - <span data-ttu-id="680ef-112">pCommitIdSeen</span><span class="sxs-lookup"><span data-stu-id="680ef-112">pCommitIdSeen</span></span>  
+    <span data-ttu-id="680ef-113">Tipo: [Microsoft.ISAM.ESENT.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)</span><span class="sxs-lookup"><span data-stu-id="680ef-113">Type: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)</span></span>  
     
-    <span data-ttu-id="5b148-114">Confirmação-ID que acabou de ser liberada.</span><span class="sxs-lookup"><span data-stu-id="5b148-114">Commit-id that has just been flushed.</span></span>
+    <span data-ttu-id="680ef-114">Confirmação-ID que acabou de ser liberada.</span><span class="sxs-lookup"><span data-stu-id="680ef-114">Commit-id that has just been flushed.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="5b148-115">grbit</span><span class="sxs-lookup"><span data-stu-id="5b148-115">grbit</span></span>  
-    <span data-ttu-id="5b148-116">Tipo: [Microsoft. ISAM. ESENT. Interop. Windows8. DurableCommitCallbackGrbit](./durablecommitcallbackgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="5b148-116">Type: [Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallbackGrbit](./durablecommitcallbackgrbit-enumeration.md)</span></span>  
+  - <span data-ttu-id="680ef-115">grbit</span><span class="sxs-lookup"><span data-stu-id="680ef-115">grbit</span></span>  
+    <span data-ttu-id="680ef-116">Tipo: [Microsoft. ISAM. ESENT. Interop. Windows8. DurableCommitCallbackGrbit](./durablecommitcallbackgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="680ef-116">Type: [Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallbackGrbit](./durablecommitcallbackgrbit-enumeration.md)</span></span>  
     
-    <span data-ttu-id="5b148-117">Reservado no momento.</span><span class="sxs-lookup"><span data-stu-id="5b148-117">Reserved currently.</span></span>
+    <span data-ttu-id="680ef-117">Reservado no momento.</span><span class="sxs-lookup"><span data-stu-id="680ef-117">Reserved currently.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="5b148-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="5b148-118">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="680ef-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="680ef-118">Return value</span></span>
 
-<span data-ttu-id="5b148-119">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="5b148-119">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
+<span data-ttu-id="680ef-119">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="680ef-119">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="5b148-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="5b148-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="680ef-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="680ef-120">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="5b148-121">Referência</span><span class="sxs-lookup"><span data-stu-id="5b148-121">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="680ef-121">Referência</span><span class="sxs-lookup"><span data-stu-id="680ef-121">Reference</span></span>
 
-[<span data-ttu-id="5b148-122">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="5b148-122">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="680ef-122">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="680ef-122">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

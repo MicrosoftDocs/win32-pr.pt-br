@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829435"
 ---
-# <a name="ix509attributerenewalcertificate-methods"></a><span data-ttu-id="05ed8-103">Métodos IX509AttributeRenewalCertificate</span><span class="sxs-lookup"><span data-stu-id="05ed8-103">IX509AttributeRenewalCertificate Methods</span></span>
+# <a name="ix509attributerenewalcertificate-methods"></a><span data-ttu-id="fd8ed-103">Métodos IX509AttributeRenewalCertificate</span><span class="sxs-lookup"><span data-stu-id="fd8ed-103">IX509AttributeRenewalCertificate Methods</span></span>
 
-<span data-ttu-id="05ed8-104">A interface [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="05ed8-104">The [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) interface exposes the following methods.</span></span>
+<span data-ttu-id="fd8ed-104">A interface [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="fd8ed-104">The [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="05ed8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="05ed8-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fd8ed-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fd8ed-105">In this section</span></span>
 
--   [<span data-ttu-id="05ed8-106">**Método InitializeDecode**</span><span class="sxs-lookup"><span data-stu-id="05ed8-106">**InitializeDecode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializedecode)
--   [<span data-ttu-id="05ed8-107">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="05ed8-107">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializeencode)
+-   [<span data-ttu-id="fd8ed-106">**Método InitializeDecode**</span><span class="sxs-lookup"><span data-stu-id="fd8ed-106">**InitializeDecode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializedecode)
+-   [<span data-ttu-id="fd8ed-107">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="fd8ed-107">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributerenewalcertificate-initializeencode)
 
  
 

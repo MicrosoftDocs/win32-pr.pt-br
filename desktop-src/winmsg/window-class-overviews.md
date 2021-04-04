@@ -11,10 +11,10 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836873"
 ---
-# <a name="window-classes-overviews"></a><span data-ttu-id="f3b11-103">Visões gerais de classes de janela</span><span class="sxs-lookup"><span data-stu-id="f3b11-103">Window Classes Overviews</span></span>
+# <a name="window-classes-overviews"></a><span data-ttu-id="b3cec-103">Visões gerais de classes de janela</span><span class="sxs-lookup"><span data-stu-id="b3cec-103">Window Classes Overviews</span></span>
 
--   [<span data-ttu-id="f3b11-104">Sobre classes de janela</span><span class="sxs-lookup"><span data-stu-id="f3b11-104">About Window Classes</span></span>](about-window-classes.md)
--   [<span data-ttu-id="f3b11-105">Usando classes de janela</span><span class="sxs-lookup"><span data-stu-id="f3b11-105">Using Window Classes</span></span>](using-window-classes.md)
+-   [<span data-ttu-id="b3cec-104">Sobre classes de janela</span><span class="sxs-lookup"><span data-stu-id="b3cec-104">About Window Classes</span></span>](about-window-classes.md)
+-   [<span data-ttu-id="b3cec-105">Usando classes de janela</span><span class="sxs-lookup"><span data-stu-id="b3cec-105">Using Window Classes</span></span>](using-window-classes.md)
 
  
 

@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930395"
 ---
-# <a name="ibackgroundcopyjob5-methods-do"></a><span data-ttu-id="a8bfb-104">Métodos IBackgroundCopyJob5 (DO)</span><span class="sxs-lookup"><span data-stu-id="a8bfb-104">IBackgroundCopyJob5 Methods (DO)</span></span>
+# <a name="ibackgroundcopyjob5-methods-do"></a><span data-ttu-id="75eda-104">Métodos IBackgroundCopyJob5 (DO)</span><span class="sxs-lookup"><span data-stu-id="75eda-104">IBackgroundCopyJob5 Methods (DO)</span></span>
 
-<span data-ttu-id="a8bfb-105">A interface [**IBackgroundCopyJob5**](https://www.bing.com/search?q=**IBackgroundCopyJob5**) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a8bfb-105">The [**IBackgroundCopyJob5**](https://www.bing.com/search?q=**IBackgroundCopyJob5**) interface exposes the following methods.</span></span>
+<span data-ttu-id="75eda-105">A interface [**IBackgroundCopyJob5**](https://www.bing.com/search?q=**IBackgroundCopyJob5**) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="75eda-105">The [**IBackgroundCopyJob5**](https://www.bing.com/search?q=**IBackgroundCopyJob5**) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a8bfb-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a8bfb-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="75eda-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="75eda-106">In this section</span></span>
 
--   [<span data-ttu-id="a8bfb-107">**Método GetProperty**</span><span class="sxs-lookup"><span data-stu-id="a8bfb-107">**GetProperty method**</span></span>](ibackgroundcopyjob5-getproperty.md)
--   [<span data-ttu-id="a8bfb-108">**Método SetProperty**</span><span class="sxs-lookup"><span data-stu-id="a8bfb-108">**SetProperty method**</span></span>](ibackgroundcopyjob5-setproperty.md)
+-   [<span data-ttu-id="75eda-107">**Método GetProperty**</span><span class="sxs-lookup"><span data-stu-id="75eda-107">**GetProperty method**</span></span>](ibackgroundcopyjob5-getproperty.md)
+-   [<span data-ttu-id="75eda-108">**Método SetProperty**</span><span class="sxs-lookup"><span data-stu-id="75eda-108">**SetProperty method**</span></span>](ibackgroundcopyjob5-setproperty.md)
 
  
 

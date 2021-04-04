@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661895"
 ---
-# <a name="time-structures"></a><span data-ttu-id="37647-103">Estruturas de tempo</span><span class="sxs-lookup"><span data-stu-id="37647-103">Time Structures</span></span>
+# <a name="time-structures"></a><span data-ttu-id="0083f-103">Estruturas de tempo</span><span class="sxs-lookup"><span data-stu-id="0083f-103">Time Structures</span></span>
 
-<span data-ttu-id="37647-104">As estruturas a seguir são usadas com o tempo.</span><span class="sxs-lookup"><span data-stu-id="37647-104">The following structures are used with time.</span></span>
+<span data-ttu-id="0083f-104">As estruturas a seguir são usadas com o tempo.</span><span class="sxs-lookup"><span data-stu-id="0083f-104">The following structures are used with time.</span></span>
 
 <dl>
 
-[<span data-ttu-id="37647-105">**\_informações de \_ fuso \_ horário dinâmico**</span><span class="sxs-lookup"><span data-stu-id="37647-105">**DYNAMIC\_TIME\_ZONE\_INFORMATION**</span></span>](/windows/win32/api/timezoneapi/ns-timezoneapi-dynamic_time_zone_information)  
-[<span data-ttu-id="37647-106">**FILETIME**</span><span class="sxs-lookup"><span data-stu-id="37647-106">**FILETIME**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-filetime)  
-[<span data-ttu-id="37647-107">**SYSTEMTIME**</span><span class="sxs-lookup"><span data-stu-id="37647-107">**SYSTEMTIME**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)  
-[<span data-ttu-id="37647-108">**\_informações de fuso horário \_**</span><span class="sxs-lookup"><span data-stu-id="37647-108">**TIME\_ZONE\_INFORMATION**</span></span>](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information)  
+[<span data-ttu-id="0083f-105">**\_informações de \_ fuso \_ horário dinâmico**</span><span class="sxs-lookup"><span data-stu-id="0083f-105">**DYNAMIC\_TIME\_ZONE\_INFORMATION**</span></span>](/windows/win32/api/timezoneapi/ns-timezoneapi-dynamic_time_zone_information)  
+[<span data-ttu-id="0083f-106">**FILETIME**</span><span class="sxs-lookup"><span data-stu-id="0083f-106">**FILETIME**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-filetime)  
+[<span data-ttu-id="0083f-107">**SYSTEMTIME**</span><span class="sxs-lookup"><span data-stu-id="0083f-107">**SYSTEMTIME**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)  
+[<span data-ttu-id="0083f-108">**\_informações de fuso horário \_**</span><span class="sxs-lookup"><span data-stu-id="0083f-108">**TIME\_ZONE\_INFORMATION**</span></span>](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information)  
 </dl>
 
  

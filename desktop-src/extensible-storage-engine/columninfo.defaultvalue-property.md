@@ -32,14 +32,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647625"
 ---
-# <a name="columninfodefaultvalue-property"></a><span data-ttu-id="960a8-103">Propriedade ColumnInfo. DefaultValue</span><span class="sxs-lookup"><span data-stu-id="960a8-103">ColumnInfo.DefaultValue property</span></span>
+# <a name="columninfodefaultvalue-property"></a><span data-ttu-id="c8c7f-103">Propriedade ColumnInfo. DefaultValue</span><span class="sxs-lookup"><span data-stu-id="c8c7f-103">ColumnInfo.DefaultValue property</span></span>
 
-<span data-ttu-id="960a8-104">Obtém o valor padrão da coluna.</span><span class="sxs-lookup"><span data-stu-id="960a8-104">Gets the default value of the column.</span></span>
+<span data-ttu-id="c8c7f-104">Obtém o valor padrão da coluna.</span><span class="sxs-lookup"><span data-stu-id="c8c7f-104">Gets the default value of the column.</span></span>
 
-<span data-ttu-id="960a8-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="960a8-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="960a8-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="960a8-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c8c7f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c8c7f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c8c7f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c8c7f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="960a8-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="960a8-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c8c7f-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c8c7f-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -56,16 +56,16 @@ value = instance.DefaultValue
 public IList<byte> DefaultValue { get; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="960a8-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="960a8-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="c8c7f-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="c8c7f-108">Property value</span></span>
 
-<span data-ttu-id="960a8-109">Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\></span><span class="sxs-lookup"><span data-stu-id="960a8-109">Type: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\></span></span>  
+<span data-ttu-id="c8c7f-109">Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\></span><span class="sxs-lookup"><span data-stu-id="c8c7f-109">Type: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\></span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="960a8-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="960a8-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8c7f-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="c8c7f-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="960a8-111">Referência</span><span class="sxs-lookup"><span data-stu-id="960a8-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c8c7f-111">Referência</span><span class="sxs-lookup"><span data-stu-id="c8c7f-111">Reference</span></span>
 
-[<span data-ttu-id="960a8-112">Classe ColumnInfo</span><span class="sxs-lookup"><span data-stu-id="960a8-112">ColumnInfo class</span></span>](./columninfo-class.md)
+[<span data-ttu-id="c8c7f-112">Classe ColumnInfo</span><span class="sxs-lookup"><span data-stu-id="c8c7f-112">ColumnInfo class</span></span>](./columninfo-class.md)
 
-[<span data-ttu-id="960a8-113">Membros do ColumnInfo</span><span class="sxs-lookup"><span data-stu-id="960a8-113">ColumnInfo members</span></span>](./columninfo-members.md)
+[<span data-ttu-id="c8c7f-113">Membros do ColumnInfo</span><span class="sxs-lookup"><span data-stu-id="c8c7f-113">ColumnInfo members</span></span>](./columninfo-members.md)
 
-[<span data-ttu-id="960a8-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="960a8-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c8c7f-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c8c7f-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

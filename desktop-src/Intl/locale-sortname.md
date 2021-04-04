@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837121"
 ---
-# <a name="locale_sortname"></a><span data-ttu-id="66b2b-103">tipo de classificação de localidade \_</span><span class="sxs-lookup"><span data-stu-id="66b2b-103">LOCALE\_SORTNAME</span></span>
+# <a name="locale_sortname"></a><span data-ttu-id="2f771-103">tipo de classificação de localidade \_</span><span class="sxs-lookup"><span data-stu-id="2f771-103">LOCALE\_SORTNAME</span></span>
 
-<span data-ttu-id="66b2b-104">**Windows 7 e posterior:** Nome da localidade a ser usado para classificação, se for diferente da localidade especificada pela [localidade \_ SNAME](locale-sname.md).</span><span class="sxs-lookup"><span data-stu-id="66b2b-104">**Windows 7 and later:** Locale name to use for sorting, if different from the locale specified by [LOCALE\_SNAME](locale-sname.md).</span></span> <span data-ttu-id="66b2b-105">Essa constante é usada por localidades personalizadas.</span><span class="sxs-lookup"><span data-stu-id="66b2b-105">This constant is used by custom locales.</span></span> <span data-ttu-id="66b2b-106">Consulte também [ \_ SSORTNAME de localidade](locale-ssort-constants.md).</span><span class="sxs-lookup"><span data-stu-id="66b2b-106">See also [LOCALE\_SSORTNAME](locale-ssort-constants.md).</span></span>
+<span data-ttu-id="2f771-104">**Windows 7 e posterior:** Nome da localidade a ser usado para classificação, se for diferente da localidade especificada pela [localidade \_ SNAME](locale-sname.md).</span><span class="sxs-lookup"><span data-stu-id="2f771-104">**Windows 7 and later:** Locale name to use for sorting, if different from the locale specified by [LOCALE\_SNAME](locale-sname.md).</span></span> <span data-ttu-id="2f771-105">Essa constante é usada por localidades personalizadas.</span><span class="sxs-lookup"><span data-stu-id="2f771-105">This constant is used by custom locales.</span></span> <span data-ttu-id="2f771-106">Consulte também [ \_ SSORTNAME de localidade](locale-ssort-constants.md).</span><span class="sxs-lookup"><span data-stu-id="2f771-106">See also [LOCALE\_SSORTNAME](locale-ssort-constants.md).</span></span>
 
  
 

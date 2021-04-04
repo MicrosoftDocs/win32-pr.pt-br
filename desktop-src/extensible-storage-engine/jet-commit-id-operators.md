@@ -14,64 +14,64 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647586"
 ---
-# <a name="jet_commit_id-operators"></a><span data-ttu-id="2569c-103">Operadores de JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="2569c-103">JET_COMMIT_ID operators</span></span>
+# <a name="jet_commit_id-operators"></a><span data-ttu-id="ed988-103">Operadores de JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="ed988-103">JET_COMMIT_ID operators</span></span>
 
-<span data-ttu-id="2569c-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="2569c-104">Include protected members</span></span>  
-<span data-ttu-id="2569c-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="2569c-105">Include inherited members</span></span>  
+<span data-ttu-id="ed988-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="ed988-104">Include protected members</span></span>  
+<span data-ttu-id="ed988-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="ed988-105">Include inherited members</span></span>  
 
-<span data-ttu-id="2569c-106">O tipo de [JET_COMMIT_ID](./jet-commit-id-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="2569c-106">The [JET_COMMIT_ID](./jet-commit-id-class.md) type exposes the following members.</span></span>
+<span data-ttu-id="ed988-106">O tipo de [JET_COMMIT_ID](./jet-commit-id-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="ed988-106">The [JET_COMMIT_ID](./jet-commit-id-class.md) type exposes the following members.</span></span>
 
-## <a name="operators"></a><span data-ttu-id="2569c-107">Operadores</span><span class="sxs-lookup"><span data-stu-id="2569c-107">Operators</span></span>
+## <a name="operators"></a><span data-ttu-id="ed988-107">Operadores</span><span class="sxs-lookup"><span data-stu-id="ed988-107">Operators</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="2569c-108">Nome</span><span class="sxs-lookup"><span data-stu-id="2569c-108">Name</span></span></th>
-<th><span data-ttu-id="2569c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2569c-109">Description</span></span></th>
+<th><span data-ttu-id="ed988-108">Nome</span><span class="sxs-lookup"><span data-stu-id="ed988-108">Name</span></span></th>
+<th><span data-ttu-id="ed988-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ed988-109">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-112"><a href="dn335331(v=exchg.10).md">Igualitário</a></span><span class="sxs-lookup"><span data-stu-id="2569c-112"><a href="dn335331(v=exchg.10).md">Equality</a></span></span></td>
-<td><span data-ttu-id="2569c-113">Determine se uma confirmação é igual a outra ConfirmID.</span><span class="sxs-lookup"><span data-stu-id="2569c-113">Determine whether one commitid is is equal to another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-112"><a href="dn335331(v=exchg.10).md">Igualitário</a></span><span class="sxs-lookup"><span data-stu-id="ed988-112"><a href="dn335331(v=exchg.10).md">Equality</a></span></span></td>
+<td><span data-ttu-id="ed988-113">Determine se uma confirmação é igual a outra ConfirmID.</span><span class="sxs-lookup"><span data-stu-id="ed988-113">Determine whether one commitid is is equal to another commitid.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-116"><a href="dn335457(v=exchg.10).md">GreaterThan</a></span><span class="sxs-lookup"><span data-stu-id="2569c-116"><a href="dn335457(v=exchg.10).md">GreaterThan</a></span></span></td>
-<td><span data-ttu-id="2569c-117">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="2569c-117">Determine whether one commitid is before another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-116"><a href="dn335457(v=exchg.10).md">GreaterThan</a></span><span class="sxs-lookup"><span data-stu-id="ed988-116"><a href="dn335457(v=exchg.10).md">GreaterThan</a></span></span></td>
+<td><span data-ttu-id="ed988-117">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="ed988-117">Determine whether one commitid is before another commitid.</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-120"><a href="dn335332(v=exchg.10).md">GreaterThanOrEqual</a></span><span class="sxs-lookup"><span data-stu-id="2569c-120"><a href="dn335332(v=exchg.10).md">GreaterThanOrEqual</a></span></span></td>
-<td><span data-ttu-id="2569c-121">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="2569c-121">Determine whether one commitid is before another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-120"><a href="dn335332(v=exchg.10).md">GreaterThanOrEqual</a></span><span class="sxs-lookup"><span data-stu-id="ed988-120"><a href="dn335332(v=exchg.10).md">GreaterThanOrEqual</a></span></span></td>
+<td><span data-ttu-id="ed988-121">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="ed988-121">Determine whether one commitid is before another commitid.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-124"><a href="dn335462(v=exchg.10).md">Desigualdade</a></span><span class="sxs-lookup"><span data-stu-id="2569c-124"><a href="dn335462(v=exchg.10).md">Inequality</a></span></span></td>
-<td><span data-ttu-id="2569c-125">Determine se uma commitid não é igual a outra ConfirmID.</span><span class="sxs-lookup"><span data-stu-id="2569c-125">Determine whether one commitid is not equal to another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-124"><a href="dn335462(v=exchg.10).md">Desigualdade</a></span><span class="sxs-lookup"><span data-stu-id="ed988-124"><a href="dn335462(v=exchg.10).md">Inequality</a></span></span></td>
+<td><span data-ttu-id="ed988-125">Determine se uma commitid não é igual a outra ConfirmID.</span><span class="sxs-lookup"><span data-stu-id="ed988-125">Determine whether one commitid is not equal to another commitid.</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-128"><a href="dn335335(v=exchg.10).md">LessThan</a></span><span class="sxs-lookup"><span data-stu-id="2569c-128"><a href="dn335335(v=exchg.10).md">LessThan</a></span></span></td>
-<td><span data-ttu-id="2569c-129">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="2569c-129">Determine whether one commitid is before another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-128"><a href="dn335335(v=exchg.10).md">LessThan</a></span><span class="sxs-lookup"><span data-stu-id="ed988-128"><a href="dn335335(v=exchg.10).md">LessThan</a></span></span></td>
+<td><span data-ttu-id="ed988-129">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="ed988-129">Determine whether one commitid is before another commitid.</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><span data-ttu-id="2569c-132"><a href="dn335463(v=exchg.10).md">LessThanOrEqual</a></span><span class="sxs-lookup"><span data-stu-id="2569c-132"><a href="dn335463(v=exchg.10).md">LessThanOrEqual</a></span></span></td>
-<td><span data-ttu-id="2569c-133">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="2569c-133">Determine whether one commitid is before another commitid.</span></span></td>
+<td><span data-ttu-id="ed988-132"><a href="dn335463(v=exchg.10).md">LessThanOrEqual</a></span><span class="sxs-lookup"><span data-stu-id="ed988-132"><a href="dn335463(v=exchg.10).md">LessThanOrEqual</a></span></span></td>
+<td><span data-ttu-id="ed988-133">Determine se uma commitid é anterior a outra commitid.</span><span class="sxs-lookup"><span data-stu-id="ed988-133">Determine whether one commitid is before another commitid.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="2569c-134">Parte superior</span><span class="sxs-lookup"><span data-stu-id="2569c-134">Top</span></span>
+<span data-ttu-id="ed988-134">Parte superior</span><span class="sxs-lookup"><span data-stu-id="ed988-134">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2569c-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="2569c-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ed988-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="ed988-135">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="2569c-136">Referência</span><span class="sxs-lookup"><span data-stu-id="2569c-136">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ed988-136">Referência</span><span class="sxs-lookup"><span data-stu-id="ed988-136">Reference</span></span>
 
-[<span data-ttu-id="2569c-137">Classe JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="2569c-137">JET_COMMIT_ID class</span></span>](./jet-commit-id-class.md)
+[<span data-ttu-id="ed988-137">Classe JET_COMMIT_ID</span><span class="sxs-lookup"><span data-stu-id="ed988-137">JET_COMMIT_ID class</span></span>](./jet-commit-id-class.md)
 
-[<span data-ttu-id="2569c-138">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="2569c-138">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="ed988-138">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="ed988-138">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

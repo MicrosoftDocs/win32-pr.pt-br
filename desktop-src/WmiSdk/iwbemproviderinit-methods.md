@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661842"
 ---
-# <a name="iwbemproviderinit-methods"></a><span data-ttu-id="22bfc-103">Métodos IWbemProviderInit</span><span class="sxs-lookup"><span data-stu-id="22bfc-103">IWbemProviderInit Methods</span></span>
+# <a name="iwbemproviderinit-methods"></a><span data-ttu-id="8843e-103">Métodos IWbemProviderInit</span><span class="sxs-lookup"><span data-stu-id="8843e-103">IWbemProviderInit Methods</span></span>
 
-<span data-ttu-id="22bfc-104">A interface [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="22bfc-104">The [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) interface exposes the following methods.</span></span>
+<span data-ttu-id="8843e-104">A interface [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8843e-104">The [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="22bfc-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="22bfc-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8843e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8843e-105">In this section</span></span>
 
--   [<span data-ttu-id="22bfc-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="22bfc-106">**Initialize method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize)
+-   [<span data-ttu-id="8843e-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="8843e-106">**Initialize method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize)
 
  
 

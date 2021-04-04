@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103837367"
 ---
-# <a name="esentsessionwriteconflictexception-class"></a><span data-ttu-id="80cea-103">Classe EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="80cea-103">EsentSessionWriteConflictException class</span></span>
+# <a name="esentsessionwriteconflictexception-class"></a><span data-ttu-id="367c6-103">Classe EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="367c6-103">EsentSessionWriteConflictException class</span></span>
 
-<span data-ttu-id="80cea-104">Classe base para JET_err. SessionWriteConflict exceções.</span><span class="sxs-lookup"><span data-stu-id="80cea-104">Base class for JET_err.SessionWriteConflict exceptions.</span></span>
+<span data-ttu-id="367c6-104">Classe base para JET_err. SessionWriteConflict exceções.</span><span class="sxs-lookup"><span data-stu-id="367c6-104">Base class for JET_err.SessionWriteConflict exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="80cea-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="80cea-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="367c6-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="367c6-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="80cea-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="80cea-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="80cea-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="80cea-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="80cea-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="80cea-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="80cea-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="80cea-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="80cea-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="80cea-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="80cea-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="80cea-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
-            <span data-ttu-id="80cea-112">Microsoft. ISAM. ESENT. Interop. EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="80cea-112">Microsoft.Isam.Esent.Interop.EsentSessionWriteConflictException</span></span>  
+[<span data-ttu-id="367c6-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="367c6-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="367c6-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="367c6-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="367c6-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="367c6-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="367c6-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="367c6-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="367c6-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="367c6-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="367c6-111">Microsoft. ISAM. ESENT. Interop. EsentUsageException</span><span class="sxs-lookup"><span data-stu-id="367c6-111">Microsoft.Isam.Esent.Interop.EsentUsageException</span></span>](./esentusageexception-class.md)  
+            <span data-ttu-id="367c6-112">Microsoft. ISAM. ESENT. Interop. EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="367c6-112">Microsoft.Isam.Esent.Interop.EsentSessionWriteConflictException</span></span>  
 
-<span data-ttu-id="80cea-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="80cea-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="80cea-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="80cea-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="367c6-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="367c6-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="367c6-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="367c6-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="80cea-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="80cea-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="367c6-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="367c6-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentSessionWriteConflictException
 public sealed class EsentSessionWriteConflictException : EsentUsageException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="80cea-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="80cea-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="367c6-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="367c6-116">Thread safety</span></span>
 
-<span data-ttu-id="80cea-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="80cea-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="80cea-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="80cea-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="367c6-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="367c6-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="367c6-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="367c6-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="80cea-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="80cea-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="367c6-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="367c6-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="80cea-120">Referência</span><span class="sxs-lookup"><span data-stu-id="80cea-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="367c6-120">Referência</span><span class="sxs-lookup"><span data-stu-id="367c6-120">Reference</span></span>
 
-[<span data-ttu-id="80cea-121">Membros do EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="80cea-121">EsentSessionWriteConflictException members</span></span>](./esentsessionwriteconflictexception-members.md)
+[<span data-ttu-id="367c6-121">Membros do EsentSessionWriteConflictException</span><span class="sxs-lookup"><span data-stu-id="367c6-121">EsentSessionWriteConflictException members</span></span>](./esentsessionwriteconflictexception-members.md)
 
-[<span data-ttu-id="80cea-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="80cea-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="367c6-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="367c6-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

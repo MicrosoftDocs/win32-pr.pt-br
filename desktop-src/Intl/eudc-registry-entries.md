@@ -11,18 +11,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829792"
 ---
-# <a name="eudc-registry-entries"></a><span data-ttu-id="3aa19-103">Entradas do registro EUDC</span><span class="sxs-lookup"><span data-stu-id="3aa19-103">EUDC Registry Entries</span></span>
+# <a name="eudc-registry-entries"></a><span data-ttu-id="91fad-103">Entradas do registro EUDC</span><span class="sxs-lookup"><span data-stu-id="91fad-103">EUDC Registry Entries</span></span>
 
-<span data-ttu-id="3aa19-104">Os tópicos a seguir descrevem as entradas de registro para uso com caracteres do usuário final (EUDCs):</span><span class="sxs-lookup"><span data-stu-id="3aa19-104">The following topics describe the registry entries for use with end-user-defined characters (EUDCs):</span></span>
+<span data-ttu-id="91fad-104">Os tópicos a seguir descrevem as entradas de registro para uso com caracteres do usuário final (EUDCs):</span><span class="sxs-lookup"><span data-stu-id="91fad-104">The following topics describe the registry entries for use with end-user-defined characters (EUDCs):</span></span>
 
--   [<span data-ttu-id="3aa19-105">EUDC</span><span class="sxs-lookup"><span data-stu-id="3aa19-105">EUDC</span></span>](eudc.md)
--   [<span data-ttu-id="3aa19-106">EUDCCodeRange</span><span class="sxs-lookup"><span data-stu-id="3aa19-106">EUDCCodeRange</span></span>](eudccoderange.md)
+-   [<span data-ttu-id="91fad-105">EUDC</span><span class="sxs-lookup"><span data-stu-id="91fad-105">EUDC</span></span>](eudc.md)
+-   [<span data-ttu-id="91fad-106">EUDCCodeRange</span><span class="sxs-lookup"><span data-stu-id="91fad-106">EUDCCodeRange</span></span>](eudccoderange.md)
 
-## <a name="related-topics"></a><span data-ttu-id="3aa19-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3aa19-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="91fad-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="91fad-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3aa19-108">Caracteres da área de uso privado e definido pelo usuário final</span><span class="sxs-lookup"><span data-stu-id="3aa19-108">End-User-Defined and Private Use Area Characters</span></span>](end-user-defined-characters.md)
+[<span data-ttu-id="91fad-108">Caracteres da área de uso privado e definido pelo usuário final</span><span class="sxs-lookup"><span data-stu-id="91fad-108">End-User-Defined and Private Use Area Characters</span></span>](end-user-defined-characters.md)
 </dt> </dl>
 
  

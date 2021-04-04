@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103647600"
 ---
-# <a name="instance-constructor-string-string-termgrbit"></a><span data-ttu-id="ebe27-103">Construtor de instância (cadeia de caracteres, Cadeia de caracteres, TermGrbit)</span><span class="sxs-lookup"><span data-stu-id="ebe27-103">Instance constructor (String, String, TermGrbit)</span></span>
+# <a name="instance-constructor-string-string-termgrbit"></a><span data-ttu-id="5c113-103">Construtor de instância (cadeia de caracteres, Cadeia de caracteres, TermGrbit)</span><span class="sxs-lookup"><span data-stu-id="5c113-103">Instance constructor (String, String, TermGrbit)</span></span>
 
-<span data-ttu-id="ebe27-104">Inicializa uma nova instância da classe de instância.</span><span class="sxs-lookup"><span data-stu-id="ebe27-104">Initializes a new instance of the Instance class.</span></span> <span data-ttu-id="ebe27-105">O JET_INSTANCE subjacente é alocado, mas não inicializado.</span><span class="sxs-lookup"><span data-stu-id="ebe27-105">The underlying JET_INSTANCE is allocated, but not initialized.</span></span>
+<span data-ttu-id="5c113-104">Inicializa uma nova instância da classe de instância.</span><span class="sxs-lookup"><span data-stu-id="5c113-104">Initializes a new instance of the Instance class.</span></span> <span data-ttu-id="5c113-105">O JET_INSTANCE subjacente é alocado, mas não inicializado.</span><span class="sxs-lookup"><span data-stu-id="5c113-105">The underlying JET_INSTANCE is allocated, but not initialized.</span></span>
 
-<span data-ttu-id="ebe27-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ebe27-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="ebe27-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ebe27-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5c113-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5c113-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5c113-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5c113-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ebe27-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ebe27-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5c113-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5c113-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,35 +60,35 @@ public Instance(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="ebe27-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ebe27-109">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="5c113-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5c113-109">Parameters</span></span>
 
-  - <span data-ttu-id="ebe27-110">name</span><span class="sxs-lookup"><span data-stu-id="ebe27-110">name</span></span>  
-    <span data-ttu-id="ebe27-111">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="ebe27-111">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="5c113-110">name</span><span class="sxs-lookup"><span data-stu-id="5c113-110">name</span></span>  
+    <span data-ttu-id="5c113-111">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="5c113-111">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="ebe27-112">O nome da instância.</span><span class="sxs-lookup"><span data-stu-id="ebe27-112">The name of the instance.</span></span> <span data-ttu-id="ebe27-113">Essa cadeia de caracteres deve ser exclusiva em um determinado processo que hospeda o mecanismo de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="ebe27-113">This string must be unique within a given process hosting the database engine.</span></span>
+    <span data-ttu-id="5c113-112">O nome da instância.</span><span class="sxs-lookup"><span data-stu-id="5c113-112">The name of the instance.</span></span> <span data-ttu-id="5c113-113">Essa cadeia de caracteres deve ser exclusiva em um determinado processo que hospeda o mecanismo de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="5c113-113">This string must be unique within a given process hosting the database engine.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="ebe27-114">displayName</span><span class="sxs-lookup"><span data-stu-id="ebe27-114">displayName</span></span>  
-    <span data-ttu-id="ebe27-115">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="ebe27-115">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="5c113-114">displayName</span><span class="sxs-lookup"><span data-stu-id="5c113-114">displayName</span></span>  
+    <span data-ttu-id="5c113-115">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="5c113-115">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="ebe27-116">Um nome de exibição para a instância.</span><span class="sxs-lookup"><span data-stu-id="ebe27-116">A display name for the instance.</span></span> <span data-ttu-id="ebe27-117">Isso será usado em entradas do EventLog.</span><span class="sxs-lookup"><span data-stu-id="ebe27-117">This will be used in eventlog entries.</span></span>
+    <span data-ttu-id="5c113-116">Um nome de exibição para a instância.</span><span class="sxs-lookup"><span data-stu-id="5c113-116">A display name for the instance.</span></span> <span data-ttu-id="5c113-117">Isso será usado em entradas do EventLog.</span><span class="sxs-lookup"><span data-stu-id="5c113-117">This will be used in eventlog entries.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="ebe27-118">termGrbit</span><span class="sxs-lookup"><span data-stu-id="ebe27-118">termGrbit</span></span>  
-    <span data-ttu-id="ebe27-119">Tipo: [Microsoft. ISAM. ESENT. Interop. TermGrbit](./termgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="ebe27-119">Type: [Microsoft.Isam.Esent.Interop.TermGrbit](./termgrbit-enumeration.md)</span></span>  
+  - <span data-ttu-id="5c113-118">termGrbit</span><span class="sxs-lookup"><span data-stu-id="5c113-118">termGrbit</span></span>  
+    <span data-ttu-id="5c113-119">Tipo: [Microsoft. ISAM. ESENT. Interop. TermGrbit](./termgrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="5c113-119">Type: [Microsoft.Isam.Esent.Interop.TermGrbit](./termgrbit-enumeration.md)</span></span>  
     
-    <span data-ttu-id="ebe27-120">O TermGrbit a ser usado em JetTerm hora.</span><span class="sxs-lookup"><span data-stu-id="ebe27-120">The TermGrbit to be used at JetTerm time.</span></span>
+    <span data-ttu-id="5c113-120">O TermGrbit a ser usado em JetTerm hora.</span><span class="sxs-lookup"><span data-stu-id="5c113-120">The TermGrbit to be used at JetTerm time.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ebe27-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="ebe27-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5c113-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="5c113-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="ebe27-122">Referência</span><span class="sxs-lookup"><span data-stu-id="ebe27-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5c113-122">Referência</span><span class="sxs-lookup"><span data-stu-id="5c113-122">Reference</span></span>
 
-[<span data-ttu-id="ebe27-123">Classe de instância</span><span class="sxs-lookup"><span data-stu-id="ebe27-123">Instance class</span></span>](./instance-class.md)
+[<span data-ttu-id="5c113-123">Classe de instância</span><span class="sxs-lookup"><span data-stu-id="5c113-123">Instance class</span></span>](./instance-class.md)
 
-[<span data-ttu-id="ebe27-124">Membros da Instância </span><span class="sxs-lookup"><span data-stu-id="ebe27-124">Instance members</span></span>](./instance-members.md)
+[<span data-ttu-id="5c113-124">Membros da Instância </span><span class="sxs-lookup"><span data-stu-id="5c113-124">Instance members</span></span>](./instance-members.md)
 
-[<span data-ttu-id="ebe27-125">Sobrecarga de instância</span><span class="sxs-lookup"><span data-stu-id="ebe27-125">Instance overload</span></span>](./instance-constructor.md)
+[<span data-ttu-id="5c113-125">Sobrecarga de instância</span><span class="sxs-lookup"><span data-stu-id="5c113-125">Instance overload</span></span>](./instance-constructor.md)
 
-[<span data-ttu-id="ebe27-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ebe27-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5c113-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5c113-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
