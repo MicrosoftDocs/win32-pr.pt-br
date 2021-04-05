@@ -13,23 +13,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "103641737"
 ---
-# <a name="bluetooth-and-getaddrinfo"></a><span data-ttu-id="32402-105">Bluetooth e getaddrinfo</span><span class="sxs-lookup"><span data-stu-id="32402-105">Bluetooth and getaddrinfo</span></span>
+# <a name="bluetooth-and-getaddrinfo"></a><span data-ttu-id="f5362-105">Bluetooth e getaddrinfo</span><span class="sxs-lookup"><span data-stu-id="f5362-105">Bluetooth and getaddrinfo</span></span>
 
-<span data-ttu-id="32402-106">A função [**Getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) fornece a tradução do nome do host para tratar de transportes baseados em IP.</span><span class="sxs-lookup"><span data-stu-id="32402-106">The [**getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) function provides translation from host name to address for IP-based transports.</span></span> <span data-ttu-id="32402-107">Como a função **Getaddrinfo** é específica para transportes baseados em IP, ela falha em soquetes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="32402-107">Because the **getaddrinfo** function is specific to IP-based transports, it fails on Bluetooth sockets.</span></span>
+<span data-ttu-id="f5362-106">A função [**Getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) fornece a tradução do nome do host para tratar de transportes baseados em IP.</span><span class="sxs-lookup"><span data-stu-id="f5362-106">The [**getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) function provides translation from host name to address for IP-based transports.</span></span> <span data-ttu-id="f5362-107">Como a função **Getaddrinfo** é específica para transportes baseados em IP, ela falha em soquetes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="f5362-107">Because the **getaddrinfo** function is specific to IP-based transports, it fails on Bluetooth sockets.</span></span>
 
-<span data-ttu-id="32402-108">Para executar a conversão do nome do host para tratar de soquetes Bluetooth, use a função [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) com **\_ contêineres Lup** para consultar dispositivos remotos e, em seguida, procure um nome remoto correspondente e um endereço correspondente.</span><span class="sxs-lookup"><span data-stu-id="32402-108">To perform translation from host name to address for Bluetooth sockets, use the [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) function with **LUP\_CONTAINERS** to query remote devices, then search for a specific matching Remote Name and corresponding address.</span></span>
+<span data-ttu-id="f5362-108">Para executar a conversão do nome do host para tratar de soquetes Bluetooth, use a função [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) com **\_ contêineres Lup** para consultar dispositivos remotos e, em seguida, procure um nome remoto correspondente e um endereço correspondente.</span><span class="sxs-lookup"><span data-stu-id="f5362-108">To perform translation from host name to address for Bluetooth sockets, use the [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) function with **LUP\_CONTAINERS** to query remote devices, then search for a specific matching Remote Name and corresponding address.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="32402-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="32402-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f5362-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f5362-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="32402-110">Windows Sockets</span><span class="sxs-lookup"><span data-stu-id="32402-110">Windows Sockets</span></span>](/windows/desktop/WinSock/windows-sockets-start-page-2)
+[<span data-ttu-id="f5362-110">Windows Sockets</span><span class="sxs-lookup"><span data-stu-id="f5362-110">Windows Sockets</span></span>](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
-[<span data-ttu-id="32402-111">**getaddrinfo**</span><span class="sxs-lookup"><span data-stu-id="32402-111">**getaddrinfo**</span></span>](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)
+[<span data-ttu-id="f5362-111">**getaddrinfo**</span><span class="sxs-lookup"><span data-stu-id="f5362-111">**getaddrinfo**</span></span>](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)
 </dt> <dt>
 
-[<span data-ttu-id="32402-112">**WSALookupServiceBegin**</span><span class="sxs-lookup"><span data-stu-id="32402-112">**WSALookupServiceBegin**</span></span>](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicebegina)
+[<span data-ttu-id="f5362-112">**WSALookupServiceBegin**</span><span class="sxs-lookup"><span data-stu-id="f5362-112">**WSALookupServiceBegin**</span></span>](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicebegina)
 </dt> </dl>
 
  

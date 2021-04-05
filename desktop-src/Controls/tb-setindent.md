@@ -21,37 +21,37 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644252"
 ---
-# <a name="tb_setindent-message"></a><span data-ttu-id="9f292-104">\_RErecuar mensagem de TB</span><span class="sxs-lookup"><span data-stu-id="9f292-104">TB\_SETINDENT message</span></span>
+# <a name="tb_setindent-message"></a><span data-ttu-id="d6926-104">\_RErecuar mensagem de TB</span><span class="sxs-lookup"><span data-stu-id="d6926-104">TB\_SETINDENT message</span></span>
 
-<span data-ttu-id="9f292-105">Define o recuo para o primeiro botão em um controle ToolBar.</span><span class="sxs-lookup"><span data-stu-id="9f292-105">Sets the indentation for the first button in a toolbar control.</span></span>
+<span data-ttu-id="d6926-105">Define o recuo para o primeiro botão em um controle ToolBar.</span><span class="sxs-lookup"><span data-stu-id="d6926-105">Sets the indentation for the first button in a toolbar control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="9f292-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="9f292-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d6926-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d6926-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9f292-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="9f292-107">*wParam*</span></span> 
+<span data-ttu-id="d6926-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="d6926-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="9f292-108">Valor que especifica o recuo, em pixels.</span><span class="sxs-lookup"><span data-stu-id="9f292-108">Value specifying the indentation, in pixels.</span></span>
+<span data-ttu-id="d6926-108">Valor que especifica o recuo, em pixels.</span><span class="sxs-lookup"><span data-stu-id="d6926-108">Value specifying the indentation, in pixels.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="9f292-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="9f292-109">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="9f292-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="9f292-110">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="d6926-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="d6926-109">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="d6926-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="d6926-110">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="9f292-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="9f292-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d6926-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d6926-111">Return value</span></span>
 
-<span data-ttu-id="9f292-112">Retornará zero se for bem-sucedido ou nenhum outro.</span><span class="sxs-lookup"><span data-stu-id="9f292-112">Returns nonzero if successful, or zero otherwise.</span></span>
+<span data-ttu-id="d6926-112">Retornará zero se for bem-sucedido ou nenhum outro.</span><span class="sxs-lookup"><span data-stu-id="d6926-112">Returns nonzero if successful, or zero otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="9f292-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9f292-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d6926-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d6926-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="9f292-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="9f292-114">Requirement</span></span> | <span data-ttu-id="9f292-115">Valor</span><span class="sxs-lookup"><span data-stu-id="9f292-115">Value</span></span> |
+| <span data-ttu-id="d6926-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="d6926-114">Requirement</span></span> | <span data-ttu-id="d6926-115">Valor</span><span class="sxs-lookup"><span data-stu-id="d6926-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="9f292-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9f292-116">Minimum supported client</span></span><br/> | <span data-ttu-id="9f292-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="9f292-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="9f292-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9f292-118">Minimum supported server</span></span><br/> | <span data-ttu-id="9f292-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="9f292-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="9f292-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="9f292-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="9f292-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="9f292-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="d6926-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d6926-116">Minimum supported client</span></span><br/> | <span data-ttu-id="d6926-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="d6926-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="d6926-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d6926-118">Minimum supported server</span></span><br/> | <span data-ttu-id="d6926-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="d6926-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="d6926-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d6926-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="d6926-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="d6926-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

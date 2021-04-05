@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645250"
 ---
-# <a name="settimecode-command"></a><span data-ttu-id="d1e79-105">comando SetCode</span><span class="sxs-lookup"><span data-stu-id="d1e79-105">settimecode command</span></span>
+# <a name="settimecode-command"></a><span data-ttu-id="41771-105">comando SetCode</span><span class="sxs-lookup"><span data-stu-id="41771-105">settimecode command</span></span>
 
-<span data-ttu-id="d1e79-106">O comando SetCode habilita ou desabilita a gravação do código de ponto para um videocassete.</span><span class="sxs-lookup"><span data-stu-id="d1e79-106">The settimecode command enables or disables timecode recording for a VCR.</span></span> <span data-ttu-id="d1e79-107">Os dispositivos VCR reconhecem este comando.</span><span class="sxs-lookup"><span data-stu-id="d1e79-107">VCR devices recognize this command.</span></span>
+<span data-ttu-id="41771-106">O comando SetCode habilita ou desabilita a gravação do código de ponto para um videocassete.</span><span class="sxs-lookup"><span data-stu-id="41771-106">The settimecode command enables or disables timecode recording for a VCR.</span></span> <span data-ttu-id="41771-107">Os dispositivos VCR reconhecem este comando.</span><span class="sxs-lookup"><span data-stu-id="41771-107">VCR devices recognize this command.</span></span>
 
-<span data-ttu-id="d1e79-108">Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="d1e79-108">To send this command, call the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function with the *lpszCommand* parameter set as follows.</span></span>
+<span data-ttu-id="41771-108">Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="41771-108">To send this command, call the [**mciSendString**](/previous-versions//dd757161(v=vs.85)) function with the *lpszCommand* parameter set as follows.</span></span>
 
 ``` syntax
 _stprintf_s(
@@ -35,28 +35,28 @@ _stprintf_s(
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="d1e79-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d1e79-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="41771-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="41771-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d1e79-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span><span class="sxs-lookup"><span data-stu-id="d1e79-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span></span>
+<span data-ttu-id="41771-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span><span class="sxs-lookup"><span data-stu-id="41771-110"><span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d1e79-111">Identificador de um dispositivo MCI.</span><span class="sxs-lookup"><span data-stu-id="d1e79-111">Identifier of an MCI device.</span></span> <span data-ttu-id="d1e79-112">Esse identificador ou alias é atribuído quando o dispositivo é aberto.</span><span class="sxs-lookup"><span data-stu-id="d1e79-112">This identifier or alias is assigned when the device is opened.</span></span>
+<span data-ttu-id="41771-111">Identificador de um dispositivo MCI.</span><span class="sxs-lookup"><span data-stu-id="41771-111">Identifier of an MCI device.</span></span> <span data-ttu-id="41771-112">Esse identificador ou alias é atribuído quando o dispositivo é aberto.</span><span class="sxs-lookup"><span data-stu-id="41771-112">This identifier or alias is assigned when the device is opened.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="d1e79-113"><span id="lpszTimecode"></span><span id="lpsztimecode"></span><span id="LPSZTIMECODE"></span>*lpszTimecode*</span><span class="sxs-lookup"><span data-stu-id="d1e79-113"><span id="lpszTimecode"></span><span id="lpsztimecode"></span><span id="LPSZTIMECODE"></span>*lpszTimecode*</span></span>
+<span data-ttu-id="41771-113"><span id="lpszTimecode"></span><span id="lpsztimecode"></span><span id="LPSZTIMECODE"></span>*lpszTimecode*</span><span class="sxs-lookup"><span data-stu-id="41771-113"><span id="lpszTimecode"></span><span id="lpsztimecode"></span><span id="LPSZTIMECODE"></span>*lpszTimecode*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d1e79-114">Um dos sinalizadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="d1e79-114">One of the following flags.</span></span>
+<span data-ttu-id="41771-114">Um dos sinalizadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="41771-114">One of the following flags.</span></span>
 
 
 
-| <span data-ttu-id="d1e79-115">Valor</span><span class="sxs-lookup"><span data-stu-id="d1e79-115">Value</span></span>      | <span data-ttu-id="d1e79-116">Significado</span><span class="sxs-lookup"><span data-stu-id="d1e79-116">Meaning</span></span>                          |
+| <span data-ttu-id="41771-115">Valor</span><span class="sxs-lookup"><span data-stu-id="41771-115">Value</span></span>      | <span data-ttu-id="41771-116">Significado</span><span class="sxs-lookup"><span data-stu-id="41771-116">Meaning</span></span>                          |
 |------------|----------------------------------|
-| <span data-ttu-id="d1e79-117">gravar em</span><span class="sxs-lookup"><span data-stu-id="d1e79-117">record on</span></span>  | <span data-ttu-id="d1e79-118">Define o VCR para registrar o código de linhas.</span><span class="sxs-lookup"><span data-stu-id="d1e79-118">Sets the VCR to record timecode.</span></span> |
-| <span data-ttu-id="d1e79-119">registro desativado</span><span class="sxs-lookup"><span data-stu-id="d1e79-119">record off</span></span> | <span data-ttu-id="d1e79-120">Desabilita a gravação do código de ponto.</span><span class="sxs-lookup"><span data-stu-id="d1e79-120">Disables timecode recording.</span></span>     |
+| <span data-ttu-id="41771-117">gravar em</span><span class="sxs-lookup"><span data-stu-id="41771-117">record on</span></span>  | <span data-ttu-id="41771-118">Define o VCR para registrar o código de linhas.</span><span class="sxs-lookup"><span data-stu-id="41771-118">Sets the VCR to record timecode.</span></span> |
+| <span data-ttu-id="41771-119">registro desativado</span><span class="sxs-lookup"><span data-stu-id="41771-119">record off</span></span> | <span data-ttu-id="41771-120">Desabilita a gravação do código de ponto.</span><span class="sxs-lookup"><span data-stu-id="41771-120">Disables timecode recording.</span></span>     |
 
 
 
@@ -64,36 +64,36 @@ _stprintf_s(
 
 </dd> <dt>
 
-<span data-ttu-id="d1e79-121"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span><span class="sxs-lookup"><span data-stu-id="d1e79-121"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span></span>
+<span data-ttu-id="41771-121"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span><span class="sxs-lookup"><span data-stu-id="41771-121"><span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d1e79-122">Pode ser "Wait", "Notify", "Test" ou uma combinação desses.</span><span class="sxs-lookup"><span data-stu-id="d1e79-122">Can be "wait", "notify", "test", or a combination of these.</span></span> <span data-ttu-id="d1e79-123">Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).</span><span class="sxs-lookup"><span data-stu-id="d1e79-123">For more information about these flags, see [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).</span></span>
+<span data-ttu-id="41771-122">Pode ser "Wait", "Notify", "Test" ou uma combinação desses.</span><span class="sxs-lookup"><span data-stu-id="41771-122">Can be "wait", "notify", "test", or a combination of these.</span></span> <span data-ttu-id="41771-123">Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).</span><span class="sxs-lookup"><span data-stu-id="41771-123">For more information about these flags, see [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="d1e79-124">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="d1e79-124">Return Value</span></span>
+## <a name="return-value"></a><span data-ttu-id="41771-124">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="41771-124">Return Value</span></span>
 
-<span data-ttu-id="d1e79-125">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="d1e79-125">Returns zero if successful or an error otherwise.</span></span>
+<span data-ttu-id="41771-125">Retornará zero se for bem-sucedido ou um erro de outra forma.</span><span class="sxs-lookup"><span data-stu-id="41771-125">Returns zero if successful or an error otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="d1e79-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d1e79-126">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="41771-126">Requisitos</span><span class="sxs-lookup"><span data-stu-id="41771-126">Requirements</span></span>
 
 
 
-| <span data-ttu-id="d1e79-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="d1e79-127">Requirement</span></span> | <span data-ttu-id="d1e79-128">Valor</span><span class="sxs-lookup"><span data-stu-id="d1e79-128">Value</span></span> |
+| <span data-ttu-id="41771-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="41771-127">Requirement</span></span> | <span data-ttu-id="41771-128">Valor</span><span class="sxs-lookup"><span data-stu-id="41771-128">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------|
-| <span data-ttu-id="d1e79-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1e79-129">Minimum supported client</span></span><br/> | <span data-ttu-id="d1e79-130">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="d1e79-130">Windows 2000 Professional \[desktop apps only\]</span></span><br/> |
-| <span data-ttu-id="d1e79-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1e79-131">Minimum supported server</span></span><br/> | <span data-ttu-id="d1e79-132">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="d1e79-132">Windows 2000 Server \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="41771-129">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="41771-129">Minimum supported client</span></span><br/> | <span data-ttu-id="41771-130">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="41771-130">Windows 2000 Professional \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="41771-131">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="41771-131">Minimum supported server</span></span><br/> | <span data-ttu-id="41771-132">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="41771-132">Windows 2000 Server \[desktop apps only\]</span></span><br/>       |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="d1e79-133">Consulte também</span><span class="sxs-lookup"><span data-stu-id="d1e79-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="41771-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="41771-133">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d1e79-134">MCI</span><span class="sxs-lookup"><span data-stu-id="d1e79-134">MCI</span></span>](mci.md)
+[<span data-ttu-id="41771-134">MCI</span><span class="sxs-lookup"><span data-stu-id="41771-134">MCI</span></span>](mci.md)
 </dt> <dt>
 
-[<span data-ttu-id="d1e79-135">Cadeias de caracteres de comando MCI</span><span class="sxs-lookup"><span data-stu-id="d1e79-135">MCI Command Strings</span></span>](mci-command-strings.md)
+[<span data-ttu-id="41771-135">Cadeias de caracteres de comando MCI</span><span class="sxs-lookup"><span data-stu-id="41771-135">MCI Command Strings</span></span>](mci-command-strings.md)
 </dt> </dl>
 
  

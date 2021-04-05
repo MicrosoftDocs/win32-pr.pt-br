@@ -12,23 +12,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "103644156"
 ---
-# <a name="l-rpc"></a><span data-ttu-id="e47b8-103">L (RPC)</span><span class="sxs-lookup"><span data-stu-id="e47b8-103">L (RPC)</span></span>
+# <a name="l-rpc"></a><span data-ttu-id="8b481-103">L (RPC)</span><span class="sxs-lookup"><span data-stu-id="8b481-103">L (RPC)</span></span>
 
-<span data-ttu-id="e47b8-104">[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [i](i-glos.md) J K L [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z</span><span class="sxs-lookup"><span data-stu-id="e47b8-104">[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z</span></span>
+<span data-ttu-id="8b481-104">[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [i](i-glos.md) J K L [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z</span><span class="sxs-lookup"><span data-stu-id="8b481-104">[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="e47b8-105"><span id="_rpc_lrpc_glos"></span><span id="_RPC_LRPC_GLOS"></span>**LRPC (chamada de procedimento remoto) local**</span><span class="sxs-lookup"><span data-stu-id="e47b8-105"><span id="_rpc_lrpc_glos"></span><span id="_RPC_LRPC_GLOS"></span>**local remote procedure call (LRPC)**</span></span>
+<span data-ttu-id="8b481-105"><span id="_rpc_lrpc_glos"></span><span id="_RPC_LRPC_GLOS"></span>**LRPC (chamada de procedimento remoto) local**</span><span class="sxs-lookup"><span data-stu-id="8b481-105"><span id="_rpc_lrpc_glos"></span><span id="_RPC_LRPC_GLOS"></span>**local remote procedure call (LRPC)**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e47b8-106">Chamada de procedimento remoto para outro processo no mesmo computador que o processo de chamada.</span><span class="sxs-lookup"><span data-stu-id="e47b8-106">Remote procedure call to another process on the same computer as the calling process.</span></span>
+<span data-ttu-id="8b481-106">Chamada de procedimento remoto para outro processo no mesmo computador que o processo de chamada.</span><span class="sxs-lookup"><span data-stu-id="8b481-106">Remote procedure call to another process on the same computer as the calling process.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e47b8-107"><span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Localizado**</span><span class="sxs-lookup"><span data-stu-id="e47b8-107"><span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Locator**</span></span>
+<span data-ttu-id="8b481-107"><span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Localizado**</span><span class="sxs-lookup"><span data-stu-id="8b481-107"><span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Locator**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="e47b8-108">Microsoft Windows Name-provedor de serviços.</span><span class="sxs-lookup"><span data-stu-id="e47b8-108">Microsoft Windows name-service provider.</span></span> <span data-ttu-id="e47b8-109">Consulte também [*serviço de nome*](n-glos.md).</span><span class="sxs-lookup"><span data-stu-id="e47b8-109">See also [*name service*](n-glos.md).</span></span>
+<span data-ttu-id="8b481-108">Microsoft Windows Name-provedor de serviços.</span><span class="sxs-lookup"><span data-stu-id="8b481-108">Microsoft Windows name-service provider.</span></span> <span data-ttu-id="8b481-109">Consulte também [*serviço de nome*](n-glos.md).</span><span class="sxs-lookup"><span data-stu-id="8b481-109">See also [*name service*](n-glos.md).</span></span>
 
 </dd> </dl>
 

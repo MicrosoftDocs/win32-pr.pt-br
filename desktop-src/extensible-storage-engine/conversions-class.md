@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921133"
 ---
-# <a name="conversions-class"></a><span data-ttu-id="bf141-103">Classe conversões</span><span class="sxs-lookup"><span data-stu-id="bf141-103">Conversions class</span></span>
+# <a name="conversions-class"></a><span data-ttu-id="ad2c5-103">Classe conversões</span><span class="sxs-lookup"><span data-stu-id="ad2c5-103">Conversions class</span></span>
 
-<span data-ttu-id="bf141-104">Forneça métodos para converter dados e sinalizadores entre o Win32 e o .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="bf141-104">Provide methods to convert data and flags between Win32 and the .NET Framework.</span></span>
+<span data-ttu-id="ad2c5-104">Forneça métodos para converter dados e sinalizadores entre o Win32 e o .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="ad2c5-104">Provide methods to convert data and flags between Win32 and the .NET Framework.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="bf141-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="bf141-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="ad2c5-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="ad2c5-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="bf141-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="bf141-106">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="bf141-107">Microsoft. ISAM. ESENT. Interop. conversões</span><span class="sxs-lookup"><span data-stu-id="bf141-107">Microsoft.Isam.Esent.Interop.Conversions</span></span>  
+[<span data-ttu-id="ad2c5-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="ad2c5-106">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="ad2c5-107">Microsoft. ISAM. ESENT. Interop. conversões</span><span class="sxs-lookup"><span data-stu-id="ad2c5-107">Microsoft.Isam.Esent.Interop.Conversions</span></span>  
 
-<span data-ttu-id="bf141-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bf141-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="bf141-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bf141-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="ad2c5-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ad2c5-108">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="ad2c5-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ad2c5-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bf141-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="bf141-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ad2c5-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="ad2c5-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -56,14 +56,14 @@ You do not need to declare an instance of a static class in order to access its 
 public static class Conversions
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="bf141-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="bf141-111">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="ad2c5-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="ad2c5-111">Thread safety</span></span>
 
-<span data-ttu-id="bf141-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bf141-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="bf141-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="bf141-113">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="ad2c5-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="ad2c5-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="ad2c5-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="ad2c5-113">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="bf141-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="bf141-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad2c5-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="ad2c5-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="bf141-115">Referência</span><span class="sxs-lookup"><span data-stu-id="bf141-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ad2c5-115">Referência</span><span class="sxs-lookup"><span data-stu-id="ad2c5-115">Reference</span></span>
 
-[<span data-ttu-id="bf141-116">Membros de conversões</span><span class="sxs-lookup"><span data-stu-id="bf141-116">Conversions members</span></span>](./conversions-members.md)
+[<span data-ttu-id="ad2c5-116">Membros de conversões</span><span class="sxs-lookup"><span data-stu-id="ad2c5-116">Conversions members</span></span>](./conversions-members.md)
 
-[<span data-ttu-id="bf141-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bf141-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="ad2c5-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ad2c5-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

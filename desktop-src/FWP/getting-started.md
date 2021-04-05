@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/23/2019
 ms.locfileid: "103638909"
 ---
-# <a name="getting-started-with-wfp"></a><span data-ttu-id="74712-103">Introdução à WFP</span><span class="sxs-lookup"><span data-stu-id="74712-103">Getting started with WFP</span></span>
+# <a name="getting-started-with-wfp"></a><span data-ttu-id="20c53-103">Introdução à WFP</span><span class="sxs-lookup"><span data-stu-id="20c53-103">Getting started with WFP</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="74712-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="74712-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="20c53-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="20c53-104">In this section</span></span>
 
--   [<span data-ttu-id="74712-105">Instalando um provedor</span><span class="sxs-lookup"><span data-stu-id="74712-105">Installing a Provider</span></span>](installing-a-provider.md)
--   [<span data-ttu-id="74712-106">Desinstalando um provedor</span><span class="sxs-lookup"><span data-stu-id="74712-106">Uninstalling a Provider</span></span>](uninstalling-a-provider.md)
+-   [<span data-ttu-id="20c53-105">Instalando um provedor</span><span class="sxs-lookup"><span data-stu-id="20c53-105">Installing a Provider</span></span>](installing-a-provider.md)
+-   [<span data-ttu-id="20c53-106">Desinstalando um provedor</span><span class="sxs-lookup"><span data-stu-id="20c53-106">Uninstalling a Provider</span></span>](uninstalling-a-provider.md)
 
  
 

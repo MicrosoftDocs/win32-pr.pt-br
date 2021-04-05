@@ -51,13 +51,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644277"
 ---
-# <a name="imsrdpclientadvancedsettings3connectionbarshowminimizebutton-property"></a><span data-ttu-id="a08f6-116">Propriedade IMsRdpClientAdvancedSettings3:: ConnectionBarShowMinimizeButton</span><span class="sxs-lookup"><span data-stu-id="a08f6-116">IMsRdpClientAdvancedSettings3::ConnectionBarShowMinimizeButton property</span></span>
+# <a name="imsrdpclientadvancedsettings3connectionbarshowminimizebutton-property"></a><span data-ttu-id="ca5a7-116">Propriedade IMsRdpClientAdvancedSettings3:: ConnectionBarShowMinimizeButton</span><span class="sxs-lookup"><span data-stu-id="ca5a7-116">IMsRdpClientAdvancedSettings3::ConnectionBarShowMinimizeButton property</span></span>
 
-<span data-ttu-id="a08f6-117">Especifica se o botão de **minimização** deve ser exibido na barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="a08f6-117">Specifies whether to display the **Minimize** button on the connection bar.</span></span>
+<span data-ttu-id="ca5a7-117">Especifica se o botão de **minimização** deve ser exibido na barra de conexão.</span><span class="sxs-lookup"><span data-stu-id="ca5a7-117">Specifies whether to display the **Minimize** button on the connection bar.</span></span>
 
-<span data-ttu-id="a08f6-118">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="a08f6-118">This property is read/write.</span></span>
+<span data-ttu-id="ca5a7-118">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="ca5a7-118">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a08f6-119">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a08f6-119">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ca5a7-119">Syntax</span><span class="sxs-lookup"><span data-stu-id="ca5a7-119">Syntax</span></span>
 
 
 ```C++
@@ -72,54 +72,54 @@ HRESULT get_ConnectionBarShowMinimizeButton(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="a08f6-120">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="a08f6-120">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="ca5a7-120">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="ca5a7-120">Property value</span></span>
 
-<span data-ttu-id="a08f6-121">Defina esse parâmetro como **Variant \_ true** para exibir o botão **minimizar** e como **Variant \_ false** para desabilitar a exibição do botão **minimizar** .</span><span class="sxs-lookup"><span data-stu-id="a08f6-121">Set this parameter to **VARIANT\_TRUE** to display the **Minimize** button, and to **VARIANT\_FALSE** to disable the display of the **Minimize** button.</span></span>
+<span data-ttu-id="ca5a7-121">Defina esse parâmetro como **Variant \_ true** para exibir o botão **minimizar** e como **Variant \_ false** para desabilitar a exibição do botão **minimizar** .</span><span class="sxs-lookup"><span data-stu-id="ca5a7-121">Set this parameter to **VARIANT\_TRUE** to display the **Minimize** button, and to **VARIANT\_FALSE** to disable the display of the **Minimize** button.</span></span>
 
-## <a name="error-codes"></a><span data-ttu-id="a08f6-122">Códigos do Erro</span><span class="sxs-lookup"><span data-stu-id="a08f6-122">Error codes</span></span>
+## <a name="error-codes"></a><span data-ttu-id="ca5a7-122">Códigos do Erro</span><span class="sxs-lookup"><span data-stu-id="ca5a7-122">Error codes</span></span>
 
-<span data-ttu-id="a08f6-123">Retornará **S \_ OK** se for bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="a08f6-123">Returns **S\_OK** if successful.</span></span>
+<span data-ttu-id="ca5a7-123">Retornará **S \_ OK** se for bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="ca5a7-123">Returns **S\_OK** if successful.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a08f6-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="a08f6-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ca5a7-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="ca5a7-124">Remarks</span></span>
 
-<span data-ttu-id="a08f6-125">Esta propriedade não pode ser definida enquanto o controle está conectado.</span><span class="sxs-lookup"><span data-stu-id="a08f6-125">This property cannot be set while the control is connected.</span></span>
+<span data-ttu-id="ca5a7-125">Esta propriedade não pode ser definida enquanto o controle está conectado.</span><span class="sxs-lookup"><span data-stu-id="ca5a7-125">This property cannot be set while the control is connected.</span></span>
 
-<span data-ttu-id="a08f6-126">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="a08f6-126">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
+<span data-ttu-id="ca5a7-126">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="ca5a7-126">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="a08f6-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a08f6-127">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="ca5a7-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ca5a7-127">Requirements</span></span>
 
 
 
-| <span data-ttu-id="a08f6-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="a08f6-128">Requirement</span></span> | <span data-ttu-id="a08f6-129">Valor</span><span class="sxs-lookup"><span data-stu-id="a08f6-129">Value</span></span> |
+| <span data-ttu-id="ca5a7-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="ca5a7-128">Requirement</span></span> | <span data-ttu-id="ca5a7-129">Valor</span><span class="sxs-lookup"><span data-stu-id="ca5a7-129">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="a08f6-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a08f6-130">Minimum supported client</span></span><br/> | <span data-ttu-id="a08f6-131">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="a08f6-131">Windows Vista</span></span><br/>                                                                         |
-| <span data-ttu-id="a08f6-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a08f6-132">Minimum supported server</span></span><br/> | <span data-ttu-id="a08f6-133">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="a08f6-133">Windows Server 2008</span></span><br/>                                                                   |
-| <span data-ttu-id="a08f6-134">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="a08f6-134">Type library</span></span><br/>             | <dl> <span data-ttu-id="a08f6-135"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a08f6-135"><dt>MsTscAx.dll</dt></span></span> </dl>           |
-| <span data-ttu-id="a08f6-136">DLL</span><span class="sxs-lookup"><span data-stu-id="a08f6-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="a08f6-137"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a08f6-137"><dt>MsTscAx.dll</dt></span></span> </dl>           |
-| <span data-ttu-id="a08f6-138">IID</span><span class="sxs-lookup"><span data-stu-id="a08f6-138">IID</span></span><br/>                      | <span data-ttu-id="a08f6-139">IID \_ IMsRdpClientAdvancedSettings3 é definido como 19cd856b-C542-4c53-ACEE-f127e3be1a59</span><span class="sxs-lookup"><span data-stu-id="a08f6-139">IID\_IMsRdpClientAdvancedSettings3 is defined as 19cd856b-c542-4c53-acee-f127e3be1a59</span></span><br/> |
+| <span data-ttu-id="ca5a7-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ca5a7-130">Minimum supported client</span></span><br/> | <span data-ttu-id="ca5a7-131">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="ca5a7-131">Windows Vista</span></span><br/>                                                                         |
+| <span data-ttu-id="ca5a7-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="ca5a7-132">Minimum supported server</span></span><br/> | <span data-ttu-id="ca5a7-133">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="ca5a7-133">Windows Server 2008</span></span><br/>                                                                   |
+| <span data-ttu-id="ca5a7-134">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="ca5a7-134">Type library</span></span><br/>             | <dl> <span data-ttu-id="ca5a7-135"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="ca5a7-135"><dt>MsTscAx.dll</dt></span></span> </dl>           |
+| <span data-ttu-id="ca5a7-136">DLL</span><span class="sxs-lookup"><span data-stu-id="ca5a7-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="ca5a7-137"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="ca5a7-137"><dt>MsTscAx.dll</dt></span></span> </dl>           |
+| <span data-ttu-id="ca5a7-138">IID</span><span class="sxs-lookup"><span data-stu-id="ca5a7-138">IID</span></span><br/>                      | <span data-ttu-id="ca5a7-139">IID \_ IMsRdpClientAdvancedSettings3 é definido como 19cd856b-C542-4c53-ACEE-f127e3be1a59</span><span class="sxs-lookup"><span data-stu-id="ca5a7-139">IID\_IMsRdpClientAdvancedSettings3 is defined as 19cd856b-c542-4c53-acee-f127e3be1a59</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="a08f6-140">Consulte também</span><span class="sxs-lookup"><span data-stu-id="a08f6-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ca5a7-140">Confira também</span><span class="sxs-lookup"><span data-stu-id="ca5a7-140">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a08f6-141">**IMsRdpClientAdvancedSettings4**</span><span class="sxs-lookup"><span data-stu-id="a08f6-141">**IMsRdpClientAdvancedSettings4**</span></span>](imsrdpclientadvancedsettings4.md)
+[<span data-ttu-id="ca5a7-141">**IMsRdpClientAdvancedSettings4**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-141">**IMsRdpClientAdvancedSettings4**</span></span>](imsrdpclientadvancedsettings4.md)
 </dt> <dt>
 
-[<span data-ttu-id="a08f6-142">**IMsRdpClientAdvancedSettings5**</span><span class="sxs-lookup"><span data-stu-id="a08f6-142">**IMsRdpClientAdvancedSettings5**</span></span>](imsrdpclientadvancedsettings5.md)
+[<span data-ttu-id="ca5a7-142">**IMsRdpClientAdvancedSettings5**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-142">**IMsRdpClientAdvancedSettings5**</span></span>](imsrdpclientadvancedsettings5.md)
 </dt> <dt>
 
-[<span data-ttu-id="a08f6-143">**IMsRdpClientAdvancedSettings6**</span><span class="sxs-lookup"><span data-stu-id="a08f6-143">**IMsRdpClientAdvancedSettings6**</span></span>](imsrdpclientadvancedsettings6.md)
+[<span data-ttu-id="ca5a7-143">**IMsRdpClientAdvancedSettings6**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-143">**IMsRdpClientAdvancedSettings6**</span></span>](imsrdpclientadvancedsettings6.md)
 </dt> <dt>
 
-[<span data-ttu-id="a08f6-144">**IMsRdpClientAdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="a08f6-144">**IMsRdpClientAdvancedSettings7**</span></span>](imsrdpclientadvancedsettings7.md)
+[<span data-ttu-id="ca5a7-144">**IMsRdpClientAdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-144">**IMsRdpClientAdvancedSettings7**</span></span>](imsrdpclientadvancedsettings7.md)
 </dt> <dt>
 
-[<span data-ttu-id="a08f6-145">**IMsRdpClientAdvancedSettings8**</span><span class="sxs-lookup"><span data-stu-id="a08f6-145">**IMsRdpClientAdvancedSettings8**</span></span>](imsrdpclientadvancedsettings8.md)
+[<span data-ttu-id="ca5a7-145">**IMsRdpClientAdvancedSettings8**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-145">**IMsRdpClientAdvancedSettings8**</span></span>](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[<span data-ttu-id="a08f6-146">**IMsRdpClientAdvancedSettings3**</span><span class="sxs-lookup"><span data-stu-id="a08f6-146">**IMsRdpClientAdvancedSettings3**</span></span>](imsrdpclientadvancedsettings3.md)
+[<span data-ttu-id="ca5a7-146">**IMsRdpClientAdvancedSettings3**</span><span class="sxs-lookup"><span data-stu-id="ca5a7-146">**IMsRdpClientAdvancedSettings3**</span></span>](imsrdpclientadvancedsettings3.md)
 </dt> </dl>
 
  

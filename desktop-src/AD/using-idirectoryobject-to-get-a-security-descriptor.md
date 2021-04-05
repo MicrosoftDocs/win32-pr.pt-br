@@ -14,16 +14,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "103640372"
 ---
-# <a name="using-idirectoryobject-to-get-a-security-descriptor"></a><span data-ttu-id="245a6-104">Usando IDirectoryObject para obter um descritor de segurança</span><span class="sxs-lookup"><span data-stu-id="245a6-104">Using IDirectoryObject to Get a Security Descriptor</span></span>
+# <a name="using-idirectoryobject-to-get-a-security-descriptor"></a><span data-ttu-id="27ce7-104">Usando IDirectoryObject para obter um descritor de segurança</span><span class="sxs-lookup"><span data-stu-id="27ce7-104">Using IDirectoryObject to Get a Security Descriptor</span></span>
 
-<span data-ttu-id="245a6-105">Este tópico inclui um exemplo de código usado para obter um descritor de segurança.</span><span class="sxs-lookup"><span data-stu-id="245a6-105">This topic includes a code example used to get a security descriptor.</span></span>
+<span data-ttu-id="27ce7-105">Este tópico inclui um exemplo de código usado para obter um descritor de segurança.</span><span class="sxs-lookup"><span data-stu-id="27ce7-105">This topic includes a code example used to get a security descriptor.</span></span>
 
-<span data-ttu-id="245a6-106">O seguinte exemplo de código C++:</span><span class="sxs-lookup"><span data-stu-id="245a6-106">The following C++ code example:</span></span>
+<span data-ttu-id="27ce7-106">O seguinte exemplo de código C++:</span><span class="sxs-lookup"><span data-stu-id="27ce7-106">The following C++ code example:</span></span>
 
--   <span data-ttu-id="245a6-107">Cria um buffer.</span><span class="sxs-lookup"><span data-stu-id="245a6-107">Creates a buffer.</span></span>
--   <span data-ttu-id="245a6-108">Usa a interface [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) para obter o descritor de segurança do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="245a6-108">Uses the [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) interface to get the security descriptor of the specified object.</span></span>
--   <span data-ttu-id="245a6-109">Copia o descritor de segurança para o buffer.</span><span class="sxs-lookup"><span data-stu-id="245a6-109">Copies the security descriptor to the buffer.</span></span>
--   <span data-ttu-id="245a6-110">Retorna um ponteiro para uma estrutura de [**\_ descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contém os dados do descritor de segurança.</span><span class="sxs-lookup"><span data-stu-id="245a6-110">Returns a pointer to a [**SECURITY\_DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure that contains the security descriptor data.</span></span>
+-   <span data-ttu-id="27ce7-107">Cria um buffer.</span><span class="sxs-lookup"><span data-stu-id="27ce7-107">Creates a buffer.</span></span>
+-   <span data-ttu-id="27ce7-108">Usa a interface [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) para obter o descritor de segurança do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="27ce7-108">Uses the [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) interface to get the security descriptor of the specified object.</span></span>
+-   <span data-ttu-id="27ce7-109">Copia o descritor de segurança para o buffer.</span><span class="sxs-lookup"><span data-stu-id="27ce7-109">Copies the security descriptor to the buffer.</span></span>
+-   <span data-ttu-id="27ce7-110">Retorna um ponteiro para uma estrutura de [**\_ descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contém os dados do descritor de segurança.</span><span class="sxs-lookup"><span data-stu-id="27ce7-110">Returns a pointer to a [**SECURITY\_DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure that contains the security descriptor data.</span></span>
 
 
 ```C++

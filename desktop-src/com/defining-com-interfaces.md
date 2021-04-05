@@ -1,0 +1,47 @@
+---
+title: Definição de interfaces COM
+description: A Microsoft define muitas interfaces COM. Na maioria dos casos, você pode reutilizar essas interfaces genéricas. No entanto, alguns aplicativos têm requisitos específicos que o tornam desejável ou necessário para definir suas próprias interfaces de objeto.
+ms.assetid: 8a94bd7d-d101-411c-97de-9e9a46bf9591
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 516c02a2c337b2c76229094b0e42d75b44f65d16
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "104084924"
+---
+# <a name="defining-com-interfaces"></a><span data-ttu-id="3df06-105">Definição de interfaces COM</span><span class="sxs-lookup"><span data-stu-id="3df06-105">Defining COM Interfaces</span></span>
+
+<span data-ttu-id="3df06-106">A Microsoft define muitas interfaces COM.</span><span class="sxs-lookup"><span data-stu-id="3df06-106">Microsoft defines many COM interfaces.</span></span> <span data-ttu-id="3df06-107">Na maioria dos casos, você pode reutilizar essas interfaces genéricas.</span><span class="sxs-lookup"><span data-stu-id="3df06-107">In most cases, you can reuse these generic interfaces.</span></span> <span data-ttu-id="3df06-108">No entanto, alguns aplicativos têm requisitos específicos que o tornam desejável ou necessário para definir suas próprias interfaces de objeto.</span><span class="sxs-lookup"><span data-stu-id="3df06-108">However, some applications have specific requirements that make it desirable or necessary to define your own object interfaces.</span></span>
+
+<span data-ttu-id="3df06-109">Todas as interfaces COM devem derivar, direta ou indiretamente, da interface [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) .</span><span class="sxs-lookup"><span data-stu-id="3df06-109">All COM interfaces must derive, directly or indirectly, from the [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) interface.</span></span> <span data-ttu-id="3df06-110">Dentro dessa restrição, sua interface personalizada pode dar suporte a praticamente qualquer método ou parâmetro, incluindo métodos assíncronos.</span><span class="sxs-lookup"><span data-stu-id="3df06-110">Within that constraint, your custom interface can support almost any method or parameter, including asynchronous methods.</span></span> <span data-ttu-id="3df06-111">Você também pode gerar uma biblioteca de tipos para suas interfaces personalizadas para que os clientes possam acessar informações sobre os métodos do objeto em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="3df06-111">You can also generate a type library for your custom interfaces so that clients can access information about your object's methods at run time.</span></span> <span data-ttu-id="3df06-112">Depois de definir uma interface, descreva-a no linguagem IDL da Microsoft (MIDL), compile e registre-a, use-a assim como qualquer interface genérica.</span><span class="sxs-lookup"><span data-stu-id="3df06-112">After you define an interface, describe it in Microsoft Interface Definition Language (MIDL), compile and register it, you use it just like any generic interface.</span></span> <span data-ttu-id="3df06-113">Com o Distributed COM, os métodos de interface estão disponíveis para processos remotos e outros processos no mesmo computador.</span><span class="sxs-lookup"><span data-stu-id="3df06-113">With distributed COM, interface methods are available both to remote processes and to other processes on the same computer.</span></span>
+
+<span data-ttu-id="3df06-114">Por fim, a criação de interfaces COM requer um ambiente de desenvolvimento que inclua um compilador C/C++ e o compilador Midl.exe.</span><span class="sxs-lookup"><span data-stu-id="3df06-114">Finally, building COM interfaces requires a development environment that includes a C/C++ compiler and the Midl.exe compiler.</span></span>
+
+<span data-ttu-id="3df06-115">As etapas na criação de uma interface COM são as seguintes:</span><span class="sxs-lookup"><span data-stu-id="3df06-115">The steps in creating a COM interface are as follows:</span></span>
+
+-   <span data-ttu-id="3df06-116">Decida como você deseja fornecer suporte de marshaling para sua interface; com o marshaling controlado por biblioteca de tipos ou com uma DLL de proxy/stub.</span><span class="sxs-lookup"><span data-stu-id="3df06-116">Decide how you want to provide marshaling support for your interface; either with type-library driven marshaling or with a proxy/stub DLL.</span></span> <span data-ttu-id="3df06-117">Mesmo as interfaces em processo devem ser empacotadas se forem usadas em limites de apartamento.</span><span class="sxs-lookup"><span data-stu-id="3df06-117">Even in-process interfaces must be marshaled if they are to be used across apartment boundaries.</span></span> <span data-ttu-id="3df06-118">É uma boa ideia criar o suporte de marshaling em cada interface COM, mesmo se você não considerar que precisará dela.</span><span class="sxs-lookup"><span data-stu-id="3df06-118">It is a good idea to build marshaling support into every COM interface, even if you don't think you will need it.</span></span> <span data-ttu-id="3df06-119">Consulte [marshaling de interface](interface-marshaling.md) para obter mais informações.</span><span class="sxs-lookup"><span data-stu-id="3df06-119">See [Interface Marshaling](interface-marshaling.md) for more information.</span></span>
+-   <span data-ttu-id="3df06-120">Descreva a interface ou as interfaces em um arquivo de definição de interface (IDL).</span><span class="sxs-lookup"><span data-stu-id="3df06-120">Describe the interface or interfaces in an interface definition (IDL) file.</span></span> <span data-ttu-id="3df06-121">Além disso, você pode especificar determinados aspectos locais de sua interface em um arquivo de configuração de aplicativo (ACF).</span><span class="sxs-lookup"><span data-stu-id="3df06-121">In addition, you can specify certain local aspects of your interface in an application configuration file (ACF).</span></span> <span data-ttu-id="3df06-122">Se você estiver usando o marshaling controlado por biblioteca de tipos, adicione uma instrução de [**biblioteca**](/windows/desktop/Midl/library) que referencie as interfaces para as quais você deseja gerar informações de tipo.</span><span class="sxs-lookup"><span data-stu-id="3df06-122">If you are using type-library driven marshaling, add a [**library**](/windows/desktop/Midl/library) statement that references the interfaces for which you want to generate type information.</span></span>
+-   <span data-ttu-id="3df06-123">Use o compilador MIDL para gerar um arquivo de biblioteca de tipos e um arquivo de cabeçalho, ou arquivos de proxy/stub de linguagem C, arquivo de identificador de interface, arquivo de dados DLL e arquivo de cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="3df06-123">Use the MIDL compiler to generate a type library file and header file, or C-language proxy/stub files, interface identifier file, DLL data file and header file.</span></span> <span data-ttu-id="3df06-124">Consulte [compilação de MIDL](midl-compilation.md) para obter mais informações.</span><span class="sxs-lookup"><span data-stu-id="3df06-124">See [MIDL Compilation](midl-compilation.md) for more information.</span></span>
+-   <span data-ttu-id="3df06-125">Dependendo do método de marshaling escolhido, grave um arquivo de definição de módulo (DEF), compile e vincule todos os arquivos gerados por MIDL em uma única DLL de proxy e registre a interface no registro do sistema ou registre a biblioteca de tipos.</span><span class="sxs-lookup"><span data-stu-id="3df06-125">Depending on the marshaling method you chose, write a module definition (DEF) file, compile and link all the MIDL-generated files into a single proxy DLL, and register the interface in the system registry, or register the type library.</span></span> <span data-ttu-id="3df06-126">Consulte [carregando e registrando uma biblioteca de tipos](loading-and-registering-a-type-library.md) e [criando e registrando uma DLL de proxy](building-and-registering-a-proxy-dll.md) para obter mais informações.</span><span class="sxs-lookup"><span data-stu-id="3df06-126">See [Loading and Registering a Type Library](loading-and-registering-a-type-library.md) and [Building and Registering a Proxy DLL](building-and-registering-a-proxy-dll.md) for more information.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="3df06-127">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3df06-127">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="3df06-128">Anatomia de um arquivo IDL</span><span class="sxs-lookup"><span data-stu-id="3df06-128">Anatomy of an IDL File</span></span>](anatomy-of-an-idl-file.md)
+</dt> <dt>
+
+[<span data-ttu-id="3df06-129">Clientes e servidores COM</span><span class="sxs-lookup"><span data-stu-id="3df06-129">COM Clients and Servers</span></span>](com-clients-and-servers.md)
+</dt> <dt>
+
+[<span data-ttu-id="3df06-130">Regras de design de interface</span><span class="sxs-lookup"><span data-stu-id="3df06-130">Interface Design Rules</span></span>](interface-design-rules.md)
+</dt> <dt>
+
+[<span data-ttu-id="3df06-131">O Component Object Model</span><span class="sxs-lookup"><span data-stu-id="3df06-131">The Component Object Model</span></span>](the-component-object-model.md)
+</dt> </dl>
+
+ 
+
+ 
