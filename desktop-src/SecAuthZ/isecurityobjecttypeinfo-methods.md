@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662996"
 ---
-# <a name="isecurityobjecttypeinfo-methods"></a><span data-ttu-id="587a0-103">Métodos ISecurityObjectTypeInfo</span><span class="sxs-lookup"><span data-stu-id="587a0-103">ISecurityObjectTypeInfo Methods</span></span>
+# <a name="isecurityobjecttypeinfo-methods"></a><span data-ttu-id="0aee0-103">Métodos ISecurityObjectTypeInfo</span><span class="sxs-lookup"><span data-stu-id="0aee0-103">ISecurityObjectTypeInfo Methods</span></span>
 
-<span data-ttu-id="587a0-104">A interface [**ISecurityObjectTypeInfo**](/windows/win32/api/aclui/nn-aclui-isecurityobjecttypeinfo) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="587a0-104">The [**ISecurityObjectTypeInfo**](/windows/win32/api/aclui/nn-aclui-isecurityobjecttypeinfo) interface exposes the following methods.</span></span>
+<span data-ttu-id="0aee0-104">A interface [**ISecurityObjectTypeInfo**](/windows/win32/api/aclui/nn-aclui-isecurityobjecttypeinfo) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0aee0-104">The [**ISecurityObjectTypeInfo**](/windows/win32/api/aclui/nn-aclui-isecurityobjecttypeinfo) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="587a0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="587a0-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0aee0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0aee0-105">In this section</span></span>
 
--   [<span data-ttu-id="587a0-106">**Método getherdize**</span><span class="sxs-lookup"><span data-stu-id="587a0-106">**GetInheritSource Method**</span></span>](/windows/win32/api/aclui/nf-aclui-isecurityobjecttypeinfo-getinheritsource)
+-   [<span data-ttu-id="0aee0-106">**Método getherdize**</span><span class="sxs-lookup"><span data-stu-id="0aee0-106">**GetInheritSource Method**</span></span>](/windows/win32/api/aclui/nf-aclui-isecurityobjecttypeinfo-getinheritsource)
 
  
 

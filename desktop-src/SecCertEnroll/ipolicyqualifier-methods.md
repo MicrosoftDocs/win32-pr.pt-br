@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662923"
 ---
-# <a name="ipolicyqualifier-methods"></a><span data-ttu-id="36003-103">Métodos IPolicyQualifier</span><span class="sxs-lookup"><span data-stu-id="36003-103">IPolicyQualifier Methods</span></span>
+# <a name="ipolicyqualifier-methods"></a><span data-ttu-id="8c387-103">Métodos IPolicyQualifier</span><span class="sxs-lookup"><span data-stu-id="8c387-103">IPolicyQualifier Methods</span></span>
 
-<span data-ttu-id="36003-104">A interface [**IPolicyQualifier**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifier) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="36003-104">The [**IPolicyQualifier**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifier) interface exposes the following methods.</span></span>
+<span data-ttu-id="8c387-104">A interface [**IPolicyQualifier**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifier) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8c387-104">The [**IPolicyQualifier**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifier) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="36003-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="36003-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8c387-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8c387-105">In this section</span></span>
 
--   [<span data-ttu-id="36003-106">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="36003-106">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-initializeencode)
+-   [<span data-ttu-id="8c387-106">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="8c387-106">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ipolicyqualifier-initializeencode)
 
  
 

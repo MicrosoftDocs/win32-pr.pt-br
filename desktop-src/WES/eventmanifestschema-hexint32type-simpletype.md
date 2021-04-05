@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103918399"
 ---
-# <a name="uint32type-simple-type-windows-event-log"></a><span data-ttu-id="1c570-104">Tipo simples UInt32type (log de eventos do Windows)</span><span class="sxs-lookup"><span data-stu-id="1c570-104">UInt32Type Simple Type (Windows Event Log)</span></span>
+# <a name="uint32type-simple-type-windows-event-log"></a><span data-ttu-id="fbc56-104">Tipo simples UInt32type (log de eventos do Windows)</span><span class="sxs-lookup"><span data-stu-id="fbc56-104">UInt32Type Simple Type (Windows Event Log)</span></span>
 
-<span data-ttu-id="1c570-105">Define um tipo inteiro sem sinal.</span><span class="sxs-lookup"><span data-stu-id="1c570-105">Defines an unsigned integer type.</span></span> <span data-ttu-id="1c570-106">O valor pode ser especificado como um inteiro de 4 bytes ou um valor hexadecimal no intervalo de 0 a 4.294.967.295.</span><span class="sxs-lookup"><span data-stu-id="1c570-106">The value can be specified as a 4-byte integer or hexadecimal value in the range from 0 through 4,294,967,295.</span></span>
+<span data-ttu-id="fbc56-105">Define um tipo inteiro sem sinal.</span><span class="sxs-lookup"><span data-stu-id="fbc56-105">Defines an unsigned integer type.</span></span> <span data-ttu-id="fbc56-106">O valor pode ser especificado como um inteiro de 4 bytes ou um valor hexadecimal no intervalo de 0 a 4.294.967.295.</span><span class="sxs-lookup"><span data-stu-id="fbc56-106">The value can be specified as a 4-byte integer or hexadecimal value in the range from 0 through 4,294,967,295.</span></span>
 
 ``` syntax
 <xs:simpleType name="UInt32Type">
@@ -32,14 +32,14 @@ ms.locfileid: "103918399"
 </xs:simpleType>
 ```
 
-## <a name="requirements"></a><span data-ttu-id="1c570-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1c570-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="fbc56-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="fbc56-107">Requirements</span></span>
 
 
 
-| <span data-ttu-id="1c570-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="1c570-108">Requirement</span></span> | <span data-ttu-id="1c570-109">Valor</span><span class="sxs-lookup"><span data-stu-id="1c570-109">Value</span></span> |
+| <span data-ttu-id="fbc56-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="fbc56-108">Requirement</span></span> | <span data-ttu-id="fbc56-109">Valor</span><span class="sxs-lookup"><span data-stu-id="fbc56-109">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="1c570-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1c570-110">Minimum supported client</span></span><br/> | <span data-ttu-id="1c570-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="1c570-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="1c570-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1c570-112">Minimum supported server</span></span><br/> | <span data-ttu-id="1c570-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="1c570-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="fbc56-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="fbc56-110">Minimum supported client</span></span><br/> | <span data-ttu-id="fbc56-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="fbc56-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="fbc56-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="fbc56-112">Minimum supported server</span></span><br/> | <span data-ttu-id="fbc56-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="fbc56-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
