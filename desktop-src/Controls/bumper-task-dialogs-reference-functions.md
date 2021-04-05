@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "103930441"
 ---
-# <a name="task-dialog-functions"></a><span data-ttu-id="75e04-103">Funções da caixa de diálogo de tarefa</span><span class="sxs-lookup"><span data-stu-id="75e04-103">Task Dialog Functions</span></span>
+# <a name="task-dialog-functions"></a><span data-ttu-id="2baa6-103">Funções da caixa de diálogo de tarefa</span><span class="sxs-lookup"><span data-stu-id="2baa6-103">Task Dialog Functions</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="75e04-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="75e04-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2baa6-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2baa6-104">In This Section</span></span>
 
--   [<span data-ttu-id="75e04-105">**TaskDialog**</span><span class="sxs-lookup"><span data-stu-id="75e04-105">**TaskDialog**</span></span>](/windows/desktop/api/Commctrl/nf-commctrl-taskdialog)
--   [<span data-ttu-id="75e04-106">**TaskDialogCallbackProc**</span><span class="sxs-lookup"><span data-stu-id="75e04-106">**TaskDialogCallbackProc**</span></span>](/windows/win32/api/commctrl/nc-commctrl-pftaskdialogcallback)
--   [<span data-ttu-id="75e04-107">**TaskDialogIndirect**</span><span class="sxs-lookup"><span data-stu-id="75e04-107">**TaskDialogIndirect**</span></span>](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
+-   [<span data-ttu-id="2baa6-105">**TaskDialog**</span><span class="sxs-lookup"><span data-stu-id="2baa6-105">**TaskDialog**</span></span>](/windows/desktop/api/Commctrl/nf-commctrl-taskdialog)
+-   [<span data-ttu-id="2baa6-106">**TaskDialogCallbackProc**</span><span class="sxs-lookup"><span data-stu-id="2baa6-106">**TaskDialogCallbackProc**</span></span>](/windows/win32/api/commctrl/nc-commctrl-pftaskdialogcallback)
+-   [<span data-ttu-id="2baa6-107">**TaskDialogIndirect**</span><span class="sxs-lookup"><span data-stu-id="2baa6-107">**TaskDialogIndirect**</span></span>](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
  
 
