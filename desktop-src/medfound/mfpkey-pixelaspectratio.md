@@ -11,43 +11,43 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827901"
 ---
-# <a name="mfpkey_pixelaspectratio-property"></a><span data-ttu-id="832c2-103">\_Propriedade MFPKEY PIXELASPECTRATIO</span><span class="sxs-lookup"><span data-stu-id="832c2-103">MFPKEY\_PIXELASPECTRATIO Property</span></span>
+# <a name="mfpkey_pixelaspectratio-property"></a><span data-ttu-id="a9082-103">\_Propriedade MFPKEY PIXELASPECTRATIO</span><span class="sxs-lookup"><span data-stu-id="a9082-103">MFPKEY\_PIXELASPECTRATIO Property</span></span>
 
-<span data-ttu-id="832c2-104">Especifica a taxa de proporção de pixel do tipo de mídia de saída.</span><span class="sxs-lookup"><span data-stu-id="832c2-104">Specifies the pixel aspect ratio of the output media type.</span></span>
+<span data-ttu-id="a9082-104">Especifica a taxa de proporção de pixel do tipo de mídia de saída.</span><span class="sxs-lookup"><span data-stu-id="a9082-104">Specifies the pixel aspect ratio of the output media type.</span></span>
 
-## <a name="constant-for-ipropertybag"></a><span data-ttu-id="832c2-105">Constante para IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="832c2-105">Constant for IPropertyBag</span></span>
+## <a name="constant-for-ipropertybag"></a><span data-ttu-id="a9082-105">Constante para IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="a9082-105">Constant for IPropertyBag</span></span>
 
-<span data-ttu-id="832c2-106">Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span><span class="sxs-lookup"><span data-stu-id="832c2-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
+<span data-ttu-id="a9082-106">Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span><span class="sxs-lookup"><span data-stu-id="a9082-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="832c2-107">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="832c2-107">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="a9082-107">Tipo de Dados</span><span class="sxs-lookup"><span data-stu-id="a9082-107">Data Type</span></span>
 
-<span data-ttu-id="832c2-108">\_UI8 VT</span><span class="sxs-lookup"><span data-stu-id="832c2-108">VT\_UI8</span></span>
+<span data-ttu-id="a9082-108">\_UI8 VT</span><span class="sxs-lookup"><span data-stu-id="a9082-108">VT\_UI8</span></span>
 
-## <a name="applies-to"></a><span data-ttu-id="832c2-109">Aplica-se A</span><span class="sxs-lookup"><span data-stu-id="832c2-109">Applies To</span></span>
+## <a name="applies-to"></a><span data-ttu-id="a9082-109">Aplica-se A</span><span class="sxs-lookup"><span data-stu-id="a9082-109">Applies To</span></span>
 
--   [<span data-ttu-id="832c2-110">DSP de redimensionador de vídeo</span><span class="sxs-lookup"><span data-stu-id="832c2-110">Video Resizer DSP</span></span>](videoresizer.md)
+-   [<span data-ttu-id="a9082-110">DSP de redimensionador de vídeo</span><span class="sxs-lookup"><span data-stu-id="a9082-110">Video Resizer DSP</span></span>](videoresizer.md)
 
-## <a name="remarks"></a><span data-ttu-id="832c2-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="832c2-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a9082-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="a9082-111">Remarks</span></span>
 
-<span data-ttu-id="832c2-112">Armazena o numerador nos 4 bytes mais altos e o denominador nos 4 bytes inferiores.</span><span class="sxs-lookup"><span data-stu-id="832c2-112">Stores the numerator in the higher 4 bytes and the denominator in the lower 4 bytes.</span></span>
+<span data-ttu-id="a9082-112">Armazena o numerador nos 4 bytes mais altos e o denominador nos 4 bytes inferiores.</span><span class="sxs-lookup"><span data-stu-id="a9082-112">Stores the numerator in the higher 4 bytes and the denominator in the lower 4 bytes.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="832c2-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="832c2-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a9082-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a9082-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="832c2-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="832c2-114">Requirement</span></span> | <span data-ttu-id="832c2-115">Valor</span><span class="sxs-lookup"><span data-stu-id="832c2-115">Value</span></span> |
+| <span data-ttu-id="a9082-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="a9082-114">Requirement</span></span> | <span data-ttu-id="a9082-115">Valor</span><span class="sxs-lookup"><span data-stu-id="a9082-115">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="832c2-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="832c2-116">Minimum supported client</span></span><br/> | <span data-ttu-id="832c2-117">\[Somente aplicativos da área de trabalho do Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="832c2-117">Windows XP \[desktop apps only\]</span></span><br/>                                             |
-| <span data-ttu-id="832c2-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="832c2-118">Minimum supported server</span></span><br/> | <span data-ttu-id="832c2-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="832c2-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="832c2-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="832c2-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="832c2-121"><dt>Wmcodecdsp. h</dt></span><span class="sxs-lookup"><span data-stu-id="832c2-121"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
+| <span data-ttu-id="a9082-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a9082-116">Minimum supported client</span></span><br/> | <span data-ttu-id="a9082-117">\[Somente aplicativos da área de trabalho do Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="a9082-117">Windows XP \[desktop apps only\]</span></span><br/>                                             |
+| <span data-ttu-id="a9082-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a9082-118">Minimum supported server</span></span><br/> | <span data-ttu-id="a9082-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="a9082-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="a9082-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a9082-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="a9082-121"><dt>Wmcodecdsp. h</dt></span><span class="sxs-lookup"><span data-stu-id="a9082-121"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="832c2-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="832c2-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a9082-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="a9082-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="832c2-123">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="832c2-123">Media Foundation Properties</span></span>](media-foundation-properties.md)
+[<span data-ttu-id="a9082-123">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="a9082-123">Media Foundation Properties</span></span>](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103828022"
 ---
-# <a name="template"></a><span data-ttu-id="d3b0c-104">Modelo</span><span class="sxs-lookup"><span data-stu-id="d3b0c-104">Template</span></span>
+# <a name="template"></a><span data-ttu-id="3eac6-104">Modelo</span><span class="sxs-lookup"><span data-stu-id="3eac6-104">Template</span></span>
 
-<span data-ttu-id="d3b0c-105">O tipo de dados de modelo é uma cadeia de caracteres de texto que pode conter propriedades que são colocadas entre colchetes \[ \] .</span><span class="sxs-lookup"><span data-stu-id="d3b0c-105">The Template data type is a text string that may contain properties that are enclosed in brackets \[ \].</span></span> <span data-ttu-id="d3b0c-106">O tipo de modelo permite todos os formatos de tipo [formatado](formatted.md) , além de \[ *1* , \] em que *1* é um número.</span><span class="sxs-lookup"><span data-stu-id="d3b0c-106">The template type allows all of the [Formatted](formatted.md) type formats, plus \[*1*\] where *1* is a number.</span></span>
+<span data-ttu-id="3eac6-105">O tipo de dados de modelo é uma cadeia de caracteres de texto que pode conter propriedades que são colocadas entre colchetes \[ \] .</span><span class="sxs-lookup"><span data-stu-id="3eac6-105">The Template data type is a text string that may contain properties that are enclosed in brackets \[ \].</span></span> <span data-ttu-id="3eac6-106">O tipo de modelo permite todos os formatos de tipo [formatado](formatted.md) , além de \[ *1* , \] em que *1* é um número.</span><span class="sxs-lookup"><span data-stu-id="3eac6-106">The template type allows all of the [Formatted](formatted.md) type formats, plus \[*1*\] where *1* is a number.</span></span>
 
  
 

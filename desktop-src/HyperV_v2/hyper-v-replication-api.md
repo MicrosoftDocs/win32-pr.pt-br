@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921261"
 ---
-# <a name="hyper-v-replication-api"></a><span data-ttu-id="d37ae-103">API de replicação do Hyper-V</span><span class="sxs-lookup"><span data-stu-id="d37ae-103">Hyper-V replication API</span></span>
+# <a name="hyper-v-replication-api"></a><span data-ttu-id="46588-103">API de replicação do Hyper-V</span><span class="sxs-lookup"><span data-stu-id="46588-103">Hyper-V replication API</span></span>
 
-<span data-ttu-id="d37ae-104">A API de replicação do Hyper-V é usada para controlar a replicação da máquina virtual e a recuperação de failover.</span><span class="sxs-lookup"><span data-stu-id="d37ae-104">The Hyper-V replication API is used to control virtual machine replication and failover recovery.</span></span>
+<span data-ttu-id="46588-104">A API de replicação do Hyper-V é usada para controlar a replicação da máquina virtual e a recuperação de failover.</span><span class="sxs-lookup"><span data-stu-id="46588-104">The Hyper-V replication API is used to control virtual machine replication and failover recovery.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="d37ae-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="d37ae-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="46588-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="46588-105">In this section</span></span>
 
--   [<span data-ttu-id="d37ae-106">Referência da API de replicação do Hyper-V</span><span class="sxs-lookup"><span data-stu-id="d37ae-106">Hyper-V replication API reference</span></span>](hyper-v-replication-api-reference.md)
+-   [<span data-ttu-id="46588-106">Referência da API de replicação do Hyper-V</span><span class="sxs-lookup"><span data-stu-id="46588-106">Hyper-V replication API reference</span></span>](hyper-v-replication-api-reference.md)
 
  
 

@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005370"
 ---
-# <a name="itssbplacementnotifysink-methods"></a><span data-ttu-id="1a7a9-103">Métodos ITsSbPlacementNotifySink</span><span class="sxs-lookup"><span data-stu-id="1a7a9-103">ITsSbPlacementNotifySink Methods</span></span>
+# <a name="itssbplacementnotifysink-methods"></a><span data-ttu-id="b36e0-103">Métodos ITsSbPlacementNotifySink</span><span class="sxs-lookup"><span data-stu-id="b36e0-103">ITsSbPlacementNotifySink Methods</span></span>
 
-<span data-ttu-id="1a7a9-104">A interface [**ITsSbPlacementNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacementnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="1a7a9-104">The [**ITsSbPlacementNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacementnotifysink) interface exposes the following methods.</span></span>
+<span data-ttu-id="b36e0-104">A interface [**ITsSbPlacementNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacementnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b36e0-104">The [**ITsSbPlacementNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacementnotifysink) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="1a7a9-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1a7a9-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b36e0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b36e0-105">In this section</span></span>
 
--   [<span data-ttu-id="1a7a9-106">**Método OnQueryEnvironmentCompleted**</span><span class="sxs-lookup"><span data-stu-id="1a7a9-106">**OnQueryEnvironmentCompleted method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplacementnotifysink-onqueryenvironmentcompleted)
+-   [<span data-ttu-id="b36e0-106">**Método OnQueryEnvironmentCompleted**</span><span class="sxs-lookup"><span data-stu-id="b36e0-106">**OnQueryEnvironmentCompleted method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbplacementnotifysink-onqueryenvironmentcompleted)
 
  
 
