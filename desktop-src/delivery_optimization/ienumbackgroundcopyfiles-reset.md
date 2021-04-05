@@ -61,7 +61,7 @@ Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

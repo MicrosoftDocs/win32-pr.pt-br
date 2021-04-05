@@ -43,7 +43,7 @@ Não há elementos filho.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**String**](windowsribbon-element-string.md)<br/> |
+| [**Strings**](windowsribbon-element-string.md)<br/> |
 
 
 

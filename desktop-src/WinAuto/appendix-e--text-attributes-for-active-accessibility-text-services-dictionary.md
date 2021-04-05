@@ -32,7 +32,7 @@ Os atributos na tabela a seguir são associados a atributos de fonte geral. O TO
 
 | Nome do atributo, nome amigável       | Tipo     | Equivalente de CSS       | TOM equivalente | Comentário           |
 |-------------------------------------|----------|----------------------|----------------|-------------------|
-| Face da fonte \_ , facename<br/> | VT \_ BSTR | Fonte-família: Verdana | Name           |                   |
+| Face da fonte \_ , facename<br/> | VT \_ BSTR | Fonte-família: Verdana | Nome           |                   |
 | Fonte \_ SizePts, SizePts<br/>   | \_I4 VT   | Fonte-tamanho: xpt       | Tamanho           | O tamanho está em pontos |
 
 

@@ -59,7 +59,7 @@ O valor de retorno é a altura, em pixels, dos itens da lista em uma caixa de co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

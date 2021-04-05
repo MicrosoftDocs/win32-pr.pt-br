@@ -47,7 +47,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
-| Código de retorno                                                                                          | Description                                                                                              |
+| Código de retorno                                                                                          | Descrição                                                                                              |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S_OK * * * *</dt> </dl>             | O trabalho foi cancelado com êxito.<br/>                                                                |
 | <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | Não é possível cancelar um trabalho cujo estado é BG_JOB_STATE_CANCELLED ou BG_JOB_STATE_ACKNOWLEDGED.<br/> |
@@ -76,7 +76,7 @@ Você pode cancelar um trabalho a qualquer momento; no entanto, o trabalho não 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

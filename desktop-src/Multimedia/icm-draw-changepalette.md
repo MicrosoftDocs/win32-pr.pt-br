@@ -65,7 +65,7 @@ Essa mensagem deve ser suportada por manipuladores de renderização instalávei
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

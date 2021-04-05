@@ -22,7 +22,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Crop.
 -   [Imagem de exemplo](#example-image)
 -   [Propriedades do efeito](#effect-properties)
 -   [Bitmap de saída](#output-bitmap)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagem de exemplo
@@ -68,7 +68,7 @@ m_d2dContext->EndDraw();
 <tr class="header">
 <th>Nome de exibição e enumeração de índice</th>
 <th>Tipo e valor padrão</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>

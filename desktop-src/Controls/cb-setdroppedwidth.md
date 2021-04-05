@@ -65,7 +65,7 @@ Por padrão, a largura mínima permitida da caixa de listagem suspensa é zero. 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

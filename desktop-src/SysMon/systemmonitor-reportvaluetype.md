@@ -58,7 +58,7 @@ O SYSMON ignora esse valor e usa [**ReportValueTypeConstants.sysmonDefaultValue*
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

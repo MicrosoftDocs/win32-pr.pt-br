@@ -63,7 +63,7 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

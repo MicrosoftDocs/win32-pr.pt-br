@@ -81,7 +81,7 @@ Para remover todos os contadores da coleção, você pode chamar [**SystemMonito
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

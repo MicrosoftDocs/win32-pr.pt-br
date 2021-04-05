@@ -55,7 +55,7 @@ Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1383,7 +1383,7 @@ Definições para fórmulas que podem variar o caminho de uma forma ou ser usada
 
 
 
-| Atributos | Descrição                                                                                                                                                                                                                                                                                                                                                                                          |
+| Atributos | Description                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Eqn        | [IVgEquation](#data-types-used-in-the-vml-object-model). Cada fórmula define um único valor como o resultado da avaliação da expressão. A expressão é definida por esse atributo e tem a forma geral de uma operação seguida por até três argumentos, que podem ser valores de ajuste (por exemplo, \# 2), os resultados de fórmulas anteriores (por exemplo, @2 ), números fixos ou valores predefinidos. |
 
@@ -1397,7 +1397,7 @@ Uma coleção de objetos de fórmula.
 
 
 
-| Atributos | Descrição                                                                                                                                  |
+| Atributos | Description                                                                                                                                  |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Comprimento     | [Integer](#data-types-used-in-the-vml-object-model). Número de objetos de fórmula na coleção.                                                |
 | Item       | [IVgFormula](#data-types-used-in-the-vml-object-model). Uma fórmula específica. Observe que a matriz de fórmulas pode ser herdada do tipo de forma. |
@@ -1454,7 +1454,7 @@ Uma matriz usada para inclinar formas, uma matriz de transformação de perspect
 
 
 
-| Atributos   | Descrição                                         |
+| Atributos   | Description                                         |
 |--------------|-----------------------------------------------------|
 | XtoX         | [Double](#data-types-used-in-the-vml-object-model). |
 | YtoX         | [Double](#data-types-used-in-the-vml-object-model). |
@@ -1504,7 +1504,7 @@ Especifica o deslocamento da distorção.
 <thead>
 <tr class="header">
 <th>Tipo</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>

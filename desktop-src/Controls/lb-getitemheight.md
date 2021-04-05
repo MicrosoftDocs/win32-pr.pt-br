@@ -61,7 +61,7 @@ O valor de retorno é a altura, em pixels, de cada item na caixa de listagem. O 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -29,7 +29,7 @@ Recupera ou define um valor que indica se o contador está selecionado.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -58,7 +58,7 @@ Você pode selecionar um ou mais contadores da coleção de contadores. Selecion
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
