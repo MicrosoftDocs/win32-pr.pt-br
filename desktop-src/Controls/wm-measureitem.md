@@ -77,7 +77,7 @@ O sistema envia a mensagem do **WM \_ MEASUREITEM** para a janela do proprietár
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -75,7 +75,7 @@ Uma coleção de objetos [**IVMTask**](ivmtask.md) . Consulte [**IVMTaskCollecti
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -80,7 +80,7 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

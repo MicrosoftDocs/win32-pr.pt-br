@@ -48,7 +48,7 @@ Especifica que a propriedade malha é a versão 1,0.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

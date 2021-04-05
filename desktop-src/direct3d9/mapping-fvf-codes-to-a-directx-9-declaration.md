@@ -1,0 +1,165 @@
+---
+description: Esta tabela mapeia códigos FVF para uma estrutura D3DVERTEXELEMENT9.
+ms.assetid: de865481-2a08-4d25-967c-8e68b7affe8d
+title: Mapeando códigos FVF para uma declaração do Direct3D 9 (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 85442cf1c92c78aa1a37f4d4a4ec3de154f5b8d3
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "103645616"
+---
+# <a name="mapping-fvf-codes-to-a-direct3d-9-declaration-direct3d-9"></a>Mapeando códigos FVF para uma declaração do Direct3D 9 (Direct3D 9)
+
+Esta tabela mapeia códigos FVF para uma estrutura [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) .
+
+
+
+| FVF                                                   | Tipo de dados                                                           | Uso                                                                         | Índice de uso |
+|-------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------|
+| D3DFVF \_ XYZ                                           | D3DDECLTYPE \_ FLOAT3                                                 | \_Posição D3DDECLUSAGE                                                        | 0           |
+| D3DFVF \_ XYZRHW                                        | D3DDECLTYPE \_ FLOAT4                                                 | Posição de D3DDECLUSAGE \_                                                       | 0           |
+| D3DFVF \_ XYZW                                          | D3DDECLTYPE \_ FLOAT4                                                 | \_Posição D3DDECLUSAGE                                                        | 0           |
+| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ UBYTE4            | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ UBYTE4                   | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ D3DCOLOR          | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ D3DCOLOR                 | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZB5                                         | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT4, D3DDECLTYPE \_ FLOAT1       | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZBn (n = 1.. 4)                                | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ floatn                            | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT                             | 0           |
+| D3DFVF \_ XYZBn (n = 1.. 4) e D3DFVF \_ LASTBETA \_ UBYTE4   | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ float (n-1), D3DDECLTYPE \_ UBYTE4   | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZBn (n = 1.. 4) e D3DFVF \_ LASTBETA \_ D3DCOLOR | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ float (n-1), D3DDECLTYPE \_ D3DCOLOR | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ normal                                        | D3DDECLTYPE \_ FLOAT3                                                 | D3DDECLUSAGE \_ normal                                                          | 0           |
+| D3DFVF \_ PSIZE                                         | D3DDECLTYPE \_ FLOAT1                                                 | D3DDECLUSAGE \_ PSIZE                                                           | 0           |
+| D3DFVF \_ difuso                                       | D3DDECLTYPE \_ D3DCOLOR                                               | \_Cor D3DDECLUSAGE                                                           | 0           |
+| \_Especular D3DFVF                                      | D3DDECLTYPE \_ D3DCOLOR                                               | \_Cor D3DDECLUSAGE                                                           | 1           |
+| D3DFVF \_ TEXCOORDSIZEm (n)                              | D3DDECLTYPE \_ floatm                                                 | D3DDECLUSAGE \_ TEXCOORD                                                        | n           |
+
+
+
+ 
+
+## <a name="vertex-declarations-with-d3ddeclusage_positiont"></a>Declarações de vértice com \_ Position D3DDECLUSAGE
+
+A presença de um elemento Vertex com (D3DUSAGE \_ posiçãot, 0) é usada para indicar ao dispositivo que os dados de vértice que estão chegando já foram por meio do processamento de vértice (como um FVF com \_ conjunto de bits D3DFVF XYZRHW). No momento do desenho, se a declaração definida atualmente tiver um elemento com a semântica (D3DUSAGE \_ posiçãot, 0), todo o processamento do vértice será ignorado (assim como se um FVF com D3DFVF \_ XYZRHW bit tiver sido definido).
+
+Há algumas restrições em declarações de vértice com (D3DDECLUSAGE \_ posiçãot, 0):
+
+-   Somente o fluxo zero pode ser usado em tais declarações.
+-   Os elementos de vértice devem ser classificados aumentando o deslocamento do fluxo.
+-   O deslocamento do fluxo deve ser alinhado em DWORD.
+-   O mesmo par (uso, índice de uso) deve ser listado apenas uma vez.
+-   Somente o \_ método padrão D3DDECLMETHOD pode ser usado.
+-   Outros elementos de vértice não podem ter a \_ semântica (D3DDECLUSAGE position, 0).
+
+Além disso, há algumas restrições sobre essa declaração relacionada à versão do driver do dispositivo. Essas restrições estão em vigor porque o Direct3D envia tais declarações diretamente para o driver sem fazer nenhuma conversão.
+
+## <a name="vertex-declarations-without-d3ddeclusage_positiont"></a>Declarações de vértice sem D3DDECLUSAGE \_ posição
+
+O tempo de execução valida a criação de declarações. A seguir estão as regras gerais para quais declarações são legais.
+
+-   Todos os elementos de vértice de um fluxo devem ser consecutivos e classificados por deslocamento.
+-   O deslocamento do fluxo deve ser alinhado em DWORD.
+-   O mesmo par (uso, índice de uso) deve ser listado apenas uma vez.
+-   Se D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET for definido,
+    -   Vários elementos Vertex podem compartilhar o mesmo deslocamento em um fluxo.
+    -   Os elementos de vértice podem ser de tipos diferentes que podem ser de tamanhos diferentes.
+    -   Os elementos de vértice podem se sobrepor arbitrariamente. Por exemplo, um elemento pode começar em um local de um fluxo que é, ao mesmo tempo, no meio de outro elemento.
+    -   Elementos Vertex podem ter deslocamento de fluxo em qualquer ordem.
+-   O número de elementos de vértice não pode ser maior que 64.
+-   UsageIndex deve estar no intervalo de \[ 0-15 \] .
+-   A declaração, usada com a API DrawPrimitive, não deve ter elementos Vertex diferentes de D3DDECLMETHOD \_ Default, D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ Lookup.
+-   A declaração, que contém D3DDECLMETHOD \_ Lookup ou LOOKUPPRESAMPLED, deve ser usada somente com o pipeline de vértice programável.
+-   Declaração, usada com a API DrawRectPatch/DrawTriPatch, não pode ter elementos Vertex com D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ Lookup.
+-   A declaração deve ter apenas um elemento com D3DDECLMETHOD \_ Lookup ou o \_ método D3DDECLMETHOD LOOKUPPRESAMPLED.
+-   A declaração com D3DDECLMETHOD \_ Lookup ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED não deve ter elementos diferentes de D3DDECLMETHOD \_ padrão, pois o mapeamento de deslocamento é feito somente para N-patches.
+-   Elementos de vértice com D3DDECLMETHOD \_ Lookup ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED só podem ser usados com a semântica (D3DDECLUSAGE \_ Sample, n) e vice-versa.
+-   Se um elemento Vertex com \_ método Lookup D3DDECLMETHOD tiver um índice de fluxo e um deslocamento de um elemento Vertex já existente, esse elemento Vertex deverá ter o mesmo tipo de dados.
+-   Um elemento Vertex com o \_ método de pesquisa D3DDECLMETHOD deve ter o \_ tipo de dados D3DDECLTYPE FLOAT2/3/4
+-   Elementos de vértice com tipos D3DDECLMETHOD \_ CROSSUV, D3DDECLMETHOD \_ partiald e D3DDECLMETHOD \_ PARTIALV devem ter um deslocamento de um elemento Vertex com um tipo de dados compatível.
+-   Um elemento Vertex com o método D3DDECLMETHOD \_ UV ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED deve ter o tipo D3DDECLTYPE \_ não utilizado, o índice de fluxo zero e o deslocamento de fluxo zero.
+-   Declarações com métodos D3DDECLMETHOD \_ UV, D3DDECLMETHOD \_ partiald e D3DDECLMETHOD \_ PARTIALV só podem ser usadas com DrawRectPatch.
+-   O uso \_ de D3DDECLUSAGE TESSFACTOR deve ser usado somente com o tipo de dados D3DDECLTYPE \_ FLOAT1 e o índice de uso 0.
+-   Quando uma declaração é usada para mosaico (DrawRectPatch, DrawTriPatch, N-patches), o tipo de dados deve ser menor ou igual a D3DDECLTYPE \_ SHORT4.
+-   As declarações que contêm métodos que exigem determinados recursos de dispositivo (por exemplo, mapeamento de deslocamento, RT-patches) só poderão ser criadas se o dispositivo oferecer suporte a eles.
+-   Uma declaração de vértice usada para desenhar pontos e linhas não pode ter métodos diferentes de D3DDECLMETHOD \_ padrão.
+-   As declarações que podem ser criadas também dependem dos recursos do driver.
+
+## <a name="driver-considerations"></a>Considerações sobre o driver
+
+### <a name="pre-direct3d-9-drivers"></a>Drivers anteriores ao Direct3D 9
+
+-   A declaração de entrada deve ser traduzível para um FVF válido (ter a mesma ordem de elementos de vértice e seus tipos de dados).
+-   As lacunas nas coordenadas de textura não são permitidas. Isso significa que, se houver um elemento de vértice com (D3DDECLUSAGE \_ TEXCOORD, n), também deverá haver um elemento Vertex com (D3DDECLUSAGE \_ TEXCOORD, n-1).
+
+### <a name="direct3d-9-drivers-without-pixel-shader-version-3-support"></a>Drivers do Direct3D 9 sem suporte para o pixel shader versão 3
+
+-   A declaração de entrada deve ser traduzível para um FVF válido (ter a mesma ordem de elementos de vértice e seus tipos de dados).
+-   As lacunas nas coordenadas de textura são permitidas.
+
+### <a name="direct3d-9-drivers-with-pixel-shader-version-3-support"></a>Drivers do Direct3D 9 com suporte para o pixel shader versão 3
+
+Declarações mais gerais são permitidas.
+
+-   Elementos de vértice podem estar em ordem arbitrária e podem ter qualquer tipo de dados.
+-   Vários elementos de vértice podem compartilhar o mesmo deslocamento de fluxo e ser de um tipo diferente ao mesmo tempo se D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET for definido pelo dispositivo.
+
+## <a name="vertex-declaration-usage-with-the-programmable-vertex-pipeline"></a>Uso de declaração de vértice com o pipeline de vértice programável
+
+-   No momento do desenho, o Direct3D procura a mesma combinação de "índice de uso de uso" na declaração de vértice atual e a função de sombreador de vértice atual. Quando a combinação é encontrada, o registro da função de sombreador DCL é usado como o destino para o elemento Vertex.
+-   Quando um elemento Vertex na declaração de vértice atual tem um uso que não é encontrado no sombreador de vértice atual, esse elemento vertex é ignorado.
+-   Ao usar uma versão de sombreadores de vértice inferior a 2,0, toda a semântica mencionada no código do sombreador precisa estar presente na declaração associada no tempo de desenho. Ao usar os sombreadores de vértice 2,0 e acima, essa restrição que permite que os aplicativos usem declarações de vértice diferentes com o mesmo sombreador de vértices não existe. Isso é útil quando um sombreador de vértice lê dados de entrada com base em condições estáticas. Os registros de sombreador de vértice não inicializados porque isso terá valores indefinidos.
+
+Há restrições adicionais ao usar com o processamento de vértice de hardware em um driver DirectX 8:
+
+-   Os elementos de vértice não podem se sobrepor nem compartilhar o mesmo deslocamento.
+-   Os tipos de dados são limitados ao que o driver DirectX 8 pode entender.
+
+O CreateVertexDeclaration poderá falhar se a declaração fornecida não puder ser convertida em uma declaração de estilo DirectX 8. Para um dispositivo de modo misto, essa falha ocorrerá no \* momento do empate porque esse é o único momento em que ele pode ser conhecido se esse sombreador está sendo usado com o processamento de vértice de hardware ou software.
+
+## <a name="vertex-declaration-usage-with-the-fixed-function-pipeline"></a>Uso de declaração de vértice com o pipeline de função fixa
+
+Somente declarações que aderem às seguintes regras podem ser usadas:
+
+-   Não deve haver nenhuma lacuna entre os elementos de vértice (SKIP não é permitido em uma declaração DirectX 8, que é usada para o pipeline de função fixo).
+-   Semântica (D3DDECLUSAGE \_ posição, 0) deve ser especificada e deve ter o \_ tipo de dados D3DDECLTYPE FLOAT3.
+-   Um elemento Vertex com o método D3DDECLMETHOD \_ UV deve especificar uso D3DDECLUSAGE \_ TEXCOORD ou D3DDECLUSAGE \_ BLENDWEIGHT.
+-   Um elemento Vertex com o método D3DDECLMETHOD \_ partialu, \_ PARTIALV ou \_ CROSSUV só pode ser usado com D3DDECLUSAGE \_ Position, \_ normal, \_ BLENDWEIGHT ou \_ TEXCOORD e deve usar o tipo de entrada D3DDECLTYPE \_ FLOAT3.
+
+Quando uma declaração é usada com o processamento de vértice de hardware em um driver DirectX 8, o tempo de execução do Direct3D converte-o em uma declaração de estilo DirectX 8 com as seguintes regras:
+
+-   Os elementos de vértice não podem compartilhar o mesmo deslocamento em um fluxo e não podem se sobrepor.
+-   O tipo de dados deve ser menor ou igual a D3DDECLTYPE \_ SHORT4.
+-   Somente os métodos a seguir são permitidos: D3DDECLMETHOD \_ Default, D3DDECLMETHOD \_ CROSSUV e D3DDECLMETHOD \_ UV
+-   O [mapeamento entre uma declaração do Direct3D 9 e uma declaração do Direct3D 8 (Direct3D 9)](mapping-between-a-directx-9-declaration-and-directx-8.md) mostra quais semânticas do Direct3D 9 podem ser convertidas para a declaração do estilo DirectX 8. Uso e UsageIndex são convertidos em um valor de registro.
+-   Se houver n elementos Vertex em uma declaração e 0-m (m < n) for mapeado para um FVF (elementos descritos no [mapeamento entre uma declaração Direct3D e códigos FVF (Direct3D 9)](mapping-between-a-directx-9-declaration-and-fvf-codes.md)), mas m + 1 não, então:
+    -   Se um dos m + 2 até os elementos de vértice n-1 mapearem para FVF/dx8decl, a declaração será inválida.
+    -   Os elementos de 0 a m são convertidos (pelo tempo de execução para DirectX 8 e drivers mais antigos, e pelos drivers do Direct3D 9) usando o [mapeamento entre uma declaração de Direct3D e códigos de FVF (Direct3D 9)](mapping-between-a-directx-9-declaration-and-fvf-codes.md), m + 1, m + 2 até que n-1 seja mapeado para texcoord contíguos (k), texcoord (k + 1), a partir de qualquer texcoord
+    -   O tipo de dados em um texcoord mapeado é considerado como float \[ 1234 \] substituindo qualquer tipo de dados que o elemento atual contém (mas o mesmo tamanho). Portanto, o tipo de dados existente pode ser algo que não está no [mapeamento entre uma declaração de Direct3D e códigos de FVF (Direct3D 9)](mapping-between-a-directx-9-declaration-and-fvf-codes.md).
+    -   Se k atingir 8, a declaração será inválida para FVF/dx8decl.
+    -   Se algum mapeamento para texcoords tiver ocorrido, toda a declaração será necessária para não ter nenhum elemento com método de geração diferente de padrão ou a declaração será inválida para FVF/dx8decl.
+
+## <a name="using-vertex-declarations-with-processvertices"></a>Usando declarações de vértice com ProcessVertices
+
+Uma declaração de vértice pode ser usada para descrever a saída de ProcessVertices. Essa declaração deve aderir às seguintes regras:
+
+-   Somente o fluxo 0 deve ser usado.
+-   Somente \_ métodos padrão D3DDECLMETHOD são permitidos.
+-   Somente \_ os tipos de dados D3DDECLTYPE floatn ou D3DDECLTYPE \_ D3DCOLOR podem ser usados.
+-   Os elementos de vértice não podem compartilhar o mesmo deslocamento ou se sobrepõem.
+-   Elementos de vértice com ( \_ posição D3DDECLUSAGE, 0) ou (D3DDECLUSAGE de \_ posição, 0) não são necessários.
+-   Elementos de vértice com ( \_ posição D3DDECLUSAGE, 0) e (D3DDECLUSAGE \_ posição, 0) não podem estar presentes na mesma declaração.
+-   O sombreador atual do vértice deve ser a versão 3,0 ou superior quando tal declaração for usada.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Declaração de vértice](vertex-declaration.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+

@@ -76,7 +76,7 @@ As mensagens **ICM \_ DECOMPRESSEX \_ begin** e [**ICM \_ DECOMPRESSEX \_ end**]
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
