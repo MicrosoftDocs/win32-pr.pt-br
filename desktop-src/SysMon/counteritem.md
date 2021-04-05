@@ -89,7 +89,7 @@ O [**valor**](counteritem-value.md) é a propriedade padrão do **item de itens*
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

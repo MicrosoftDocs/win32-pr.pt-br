@@ -50,7 +50,7 @@ A classe **GetStreamPropertiesOperation** tem essas propriedades.
 
 
 
-| Propriedade                                                               | Tipo de acesso           | Description                                                                                                                                                                                   |
+| Propriedade                                                               | Tipo de acesso           | Descrição                                                                                                                                                                                   |
 |:-----------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Concluído**](getstreampropertiesoperation-completed.md)<br/> | Leitura/gravação<br/> | Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada pelo [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) é concluída.<br/> |
 

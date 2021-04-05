@@ -123,7 +123,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                                                                                                                  |
+| Nome                                                                                                  | Significado                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *destino* não era GL \_ Texture \_ 1D.<br/>                                                                                                                                                                                                                             |
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *formato* não era uma constante aceita.<br/>                                                                                                                                                                                                                        |
@@ -170,7 +170,7 @@ As funções a seguir recuperam informações relacionadas ao **glTexSubImage1D*
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

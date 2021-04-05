@@ -53,7 +53,7 @@ O método EAP executa a validação de esquema no conteúdo de **BaseEapMethodUs
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

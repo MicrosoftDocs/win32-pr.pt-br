@@ -36,7 +36,7 @@ Contém as informações de proprietário de um determinado TPM.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1966                     |
 | System-ID-GUID    | aa4e1a6d-550d-4e05-8c35-4afcb917a9fe        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

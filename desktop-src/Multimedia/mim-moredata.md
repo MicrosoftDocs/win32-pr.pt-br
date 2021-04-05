@@ -93,7 +93,7 @@ Essa mensagem não é enviada quando uma mensagem exclusiva do sistema MIDI é r
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

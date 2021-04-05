@@ -36,7 +36,7 @@ Esse atributo contém uma lista de IDs de categoria de componente que esse objet
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.320                                |
 | System-ID-GUID    | 7d6c0e92-7e20-11d0-afd6-00c04fd930c9                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

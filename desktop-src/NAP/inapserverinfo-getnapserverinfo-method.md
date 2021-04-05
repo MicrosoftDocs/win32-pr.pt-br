@@ -100,7 +100,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ O nome distinto usado anteriormente pelo Exchange.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.655                      |
 | System-ID-GUID    | 28630ebc-41d5-11d1-a9c1-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
+| Syntax            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
 
 
 

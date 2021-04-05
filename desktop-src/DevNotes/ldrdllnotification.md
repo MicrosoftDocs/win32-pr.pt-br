@@ -127,7 +127,7 @@ A função de retorno de chamada de notificação é chamada antes que a vincula
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

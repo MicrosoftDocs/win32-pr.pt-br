@@ -69,7 +69,7 @@ Para um controle de edição de várias linhas, o valor de retorno será **true*
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

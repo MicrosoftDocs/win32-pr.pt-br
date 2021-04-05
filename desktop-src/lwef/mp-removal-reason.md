@@ -26,7 +26,7 @@ ms.locfileid: "103645071"
 
 Motivo da remoção da assinatura FastPath.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

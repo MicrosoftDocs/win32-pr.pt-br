@@ -44,7 +44,7 @@ O elemento **usercert** é definido pelo elemento [**EapType**](eaptlsuserproper
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

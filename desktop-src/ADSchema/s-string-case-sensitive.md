@@ -32,13 +32,13 @@ Uma cadeia de caracteres que diferencia maiúsculas de minúsculas.
 | ID da sintaxe    | 2.5.5.3                                                                |
 | ID DO OM        | 27                                                                     |
 | Tipo de MAPI    | TSTRING                                                                |
-| Tipo de ADS     | nenhum                                                                   |
-| Tipo de variante | nenhum                                                                   |
+| Tipo de ADS     | none                                                                   |
+| Tipo de variante | none                                                                   |
 | Tipo SDS     | [System.String](/dotnet/api/system.string) |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -58,7 +58,7 @@ As estatísticas exibidas incluem o último valor, o valor médio e os valores m
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

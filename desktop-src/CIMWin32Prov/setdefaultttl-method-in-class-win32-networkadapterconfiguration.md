@@ -426,7 +426,7 @@ O exemplo de [Modificar o tempo de vida padrão para todos os adaptadores de red
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

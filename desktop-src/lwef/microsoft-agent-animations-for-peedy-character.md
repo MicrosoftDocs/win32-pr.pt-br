@@ -29,7 +29,7 @@ O arquivo de caractere inclui efeitos sonoros para algumas animações, conforme
 
 
 
-| Animação                  | Retornar animação         | Dá suporte à fala | Efeitos de som | Atribuído ao estado                            | Description                                            |
+| Animação                  | Retornar animação         | Dá suporte à fala | Efeitos de som | Atribuído ao estado                            | Descrição                                            |
 |----------------------------|--------------------------|-------------------|---------------|----------------------------------------------|--------------------------------------------------------|
 | **Reconhecer**            | Nenhum                     | Não                | **Não**        | Nenhum                                         | Cabeçalho do nós nesta                                              |
 | **Alerta**                  | Sim, usando branches de saída | Sim               | **Não**        | **Detecta**                                | Retifica e levanta os meus eyebrows                        |

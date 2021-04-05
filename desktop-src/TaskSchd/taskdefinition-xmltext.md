@@ -27,7 +27,7 @@ ms.locfileid: "103644882"
 
 Para scripts, Obtém ou define a definição formatada como XML da tarefa.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

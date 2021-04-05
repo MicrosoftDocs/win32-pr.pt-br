@@ -75,7 +75,7 @@ O número de segundos que o aplicativo do Windows Virtual PC está em execução
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

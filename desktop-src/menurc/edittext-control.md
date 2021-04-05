@@ -48,7 +48,7 @@ O exemplo a seguir demonstra o uso da instrução **EDITTEXT** :
 EDITTEXT  3, 10, 10, 100, 10
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -56,9 +56,9 @@ A tabela a seguir ilustra o que aconteceria se o site da Fourth Coffee fosse mai
 | Solicitação para Downfall café & chá concluído                       | Baixar preços do Downfall café & chá | Baixar preços do Downfall café & chá               |
 | Após o Downfall café & os preços de chá são baixados              | Enviar solicitação para Fourth Coffee              | Comparar preços                                           |
 | Comparação da versão assíncrona concluída                      | Aguardando                                    | Operação concluída                                       |
-| Solicitação da versão síncrona para a Fourth Coffee concluída  | Baixar preços do Fourth Coffee         | n/a                                                      |
-| Após o download dos preços da Fourth Coffee                      | Comparar preços                             | n/a                                                      |
-| Comparação da versão síncrona concluída                       | Operação concluída                         | n/a                                                      |
+| Solicitação da versão síncrona para a Fourth Coffee concluída  | Baixar preços do Fourth Coffee         | N/D                                                      |
+| Após o download dos preços da Fourth Coffee                      | Comparar preços                             | N/D                                                      |
+| Comparação da versão síncrona concluída                       | Operação concluída                         | N/D                                                      |
 
 
 

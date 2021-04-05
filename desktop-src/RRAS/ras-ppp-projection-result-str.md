@@ -91,7 +91,7 @@ Essa estrutura relata os resultados da projeção para protocolos NetBEUI, TCP/I
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

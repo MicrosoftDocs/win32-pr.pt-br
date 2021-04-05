@@ -36,7 +36,7 @@ Contém a posição do campo que é usada para extrair a chave de um mapa não p
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.345          |
 | System-ID-GUID    | 585c9d5e-f599-4f07-9cf9-4373af4b89d3 |
-| Sintaxe            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
 
 
 

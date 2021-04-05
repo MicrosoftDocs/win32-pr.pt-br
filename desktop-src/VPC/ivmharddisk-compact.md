@@ -92,7 +92,7 @@ Para compactar uma imagem de disco rígido de expansão dinâmica, o espaço liv
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

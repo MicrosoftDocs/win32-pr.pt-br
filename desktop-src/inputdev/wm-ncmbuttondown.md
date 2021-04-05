@@ -87,7 +87,7 @@ Se for apropriado fazer isso, o sistema enviará a mensagem [**\_ SYSCOMMAND do 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -79,7 +79,7 @@ A função a seguir recupera informações relacionadas a **glIndexdv**:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

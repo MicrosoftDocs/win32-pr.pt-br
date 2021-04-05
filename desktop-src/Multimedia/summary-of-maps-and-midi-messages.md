@@ -26,7 +26,7 @@ A seguir estão os bytes de status para mensagens MIDI e os tipos de mapa que af
 
 
 
-| Status de MIDI | Description               | Tipos de mapa                |
+| Status de MIDI | Descrição               | Tipos de mapa                |
 |-------------|---------------------------|--------------------------|
 | 0x80-0x8F   | Anotação desativada                  | Mapas de canal, mapas de chaves   |
 | 0x90-0x9F   | Observe o                    | Mapas de canal, mapas de chaves   |

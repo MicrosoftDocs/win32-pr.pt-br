@@ -47,7 +47,7 @@ O tipo de **Hyper** é um dos tipos base da IDL (Interface Definition Language).
 
  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

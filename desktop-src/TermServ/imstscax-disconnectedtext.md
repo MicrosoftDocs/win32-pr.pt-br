@@ -77,7 +77,7 @@ Especifica o texto que aparece centralizado no controle antes que uma conexão s
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -124,7 +124,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

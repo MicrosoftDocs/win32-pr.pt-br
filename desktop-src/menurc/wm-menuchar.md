@@ -98,7 +98,7 @@ Um aplicativo deve processar essa mensagem quando um acelerador é usado para se
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

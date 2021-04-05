@@ -48,7 +48,7 @@ Define o grupo de ações que uma tarefa pode executar.
 
 
 
-| Elemento                                                                    | Type                                                                       | Description                                                             |
+| Elemento                                                                    | Type                                                                       | Descrição                                                             |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | [**Commanipulador**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comhandletype**](taskschedulerschema-comhandlertype-complextype.md)   | Representa uma ação que dispara um manipulador.<br/>                   |
 | [**Exec**](taskschedulerschema-exec-actiongroup-element.md)               | [**exectype**](taskschedulerschema-exectype-complextype.md)               | Representa uma ação que executa uma operação de linha de comando.<br/> |
@@ -72,7 +72,7 @@ Ao ler ou gravar XML, os elementos definidos por esse grupo são os elementos fi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
