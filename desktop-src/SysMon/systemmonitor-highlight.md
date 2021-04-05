@@ -23,13 +23,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824430"
 ---
-# <a name="systemmonitorhighlight-property"></a><span data-ttu-id="6a119-106">Propriedade SystemMonitor. Highlight</span><span class="sxs-lookup"><span data-stu-id="6a119-106">SystemMonitor.Highlight property</span></span>
+# <a name="systemmonitorhighlight-property"></a><span data-ttu-id="57e12-106">Propriedade SystemMonitor. Highlight</span><span class="sxs-lookup"><span data-stu-id="57e12-106">SystemMonitor.Highlight property</span></span>
 
-<span data-ttu-id="6a119-107">Recupera ou define um valor que indica se os valores dos contadores selecionados são realçados no grafo.</span><span class="sxs-lookup"><span data-stu-id="6a119-107">Retrieves or sets a value indicating whether the values of the selected counters are highlighted in the graph.</span></span>
+<span data-ttu-id="57e12-107">Recupera ou define um valor que indica se os valores dos contadores selecionados são realçados no grafo.</span><span class="sxs-lookup"><span data-stu-id="57e12-107">Retrieves or sets a value indicating whether the values of the selected counters are highlighted in the graph.</span></span>
 
-<span data-ttu-id="6a119-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="6a119-108">This property is read-only.</span></span>
+<span data-ttu-id="57e12-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="57e12-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6a119-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6a119-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="57e12-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="57e12-109">Syntax</span></span>
 
 
 ```VB
@@ -38,38 +38,38 @@ Property Highlight As Boolean
 
 
 
-## <a name="property-value"></a><span data-ttu-id="6a119-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="6a119-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="57e12-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="57e12-110">Property value</span></span>
 
-<span data-ttu-id="6a119-111">Verdadeiro indica que os valores dos contadores selecionados são realçados no grafo; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="6a119-111">True indicates that the values of the selected counters are highlighted in the graph; otherwise, False.</span></span> <span data-ttu-id="6a119-112">O valor padrão é False.</span><span class="sxs-lookup"><span data-stu-id="6a119-112">The default value is False.</span></span>
+<span data-ttu-id="57e12-111">Verdadeiro indica que os valores dos contadores selecionados são realçados no grafo; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="57e12-111">True indicates that the values of the selected counters are highlighted in the graph; otherwise, False.</span></span> <span data-ttu-id="57e12-112">O valor padrão é False.</span><span class="sxs-lookup"><span data-stu-id="57e12-112">The default value is False.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6a119-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="6a119-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="57e12-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="57e12-113">Remarks</span></span>
 
-<span data-ttu-id="6a119-114">Para selecionar um ou mais contadores, você pode definir [**MyItem. Selected**](counteritem-selected.md) como true ou o usuário pode selecionar os contadores na lista de contadores mostrados na legenda.</span><span class="sxs-lookup"><span data-stu-id="6a119-114">To select one or more counters, you can set [**CounterItem.Selected**](counteritem-selected.md) to True, or the user can select the counters from the list of counters shown in the Legend.</span></span>
+<span data-ttu-id="57e12-114">Para selecionar um ou mais contadores, você pode definir [**MyItem. Selected**](counteritem-selected.md) como true ou o usuário pode selecionar os contadores na lista de contadores mostrados na legenda.</span><span class="sxs-lookup"><span data-stu-id="57e12-114">To select one or more counters, you can set [**CounterItem.Selected**](counteritem-selected.md) to True, or the user can select the counters from the list of counters shown in the Legend.</span></span>
 
-<span data-ttu-id="6a119-115">**Antes do Windows Vista:** Não é possível selecionar contadores de forma programática e o usuário pode selecionar apenas um contador na lista de contadores mostrados na legenda.</span><span class="sxs-lookup"><span data-stu-id="6a119-115">**Prior to Windows Vista:** You cannot programmatically select counters and the user can select only one counter from the list of counters shown in the Legend.</span></span>
+<span data-ttu-id="57e12-115">**Antes do Windows Vista:** Não é possível selecionar contadores de forma programática e o usuário pode selecionar apenas um contador na lista de contadores mostrados na legenda.</span><span class="sxs-lookup"><span data-stu-id="57e12-115">**Prior to Windows Vista:** You cannot programmatically select counters and the user can select only one counter from the list of counters shown in the Legend.</span></span>
 
-<span data-ttu-id="6a119-116">O realce pode ser preto ou branco, dependendo do valor da propriedade [**BackColor**](systemmonitor-backcolor.md) .</span><span class="sxs-lookup"><span data-stu-id="6a119-116">Highlighting can be black or white, depending on the value of the [**BackColor**](systemmonitor-backcolor.md) property.</span></span> <span data-ttu-id="6a119-117">O realce é definido automaticamente com a cor que fornecerá contraste suficiente entre a cor de realce e a cor do plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="6a119-117">The highlighting is automatically set to the color that will provide sufficient contrast between highlight color and the background color.</span></span>
+<span data-ttu-id="57e12-116">O realce pode ser preto ou branco, dependendo do valor da propriedade [**BackColor**](systemmonitor-backcolor.md) .</span><span class="sxs-lookup"><span data-stu-id="57e12-116">Highlighting can be black or white, depending on the value of the [**BackColor**](systemmonitor-backcolor.md) property.</span></span> <span data-ttu-id="57e12-117">O realce é definido automaticamente com a cor que fornecerá contraste suficiente entre a cor de realce e a cor do plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="57e12-117">The highlighting is automatically set to the color that will provide sufficient contrast between highlight color and the background color.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="6a119-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="6a119-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="57e12-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="57e12-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="6a119-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="6a119-119">Requirement</span></span> | <span data-ttu-id="6a119-120">Valor</span><span class="sxs-lookup"><span data-stu-id="6a119-120">Value</span></span> |
+| <span data-ttu-id="57e12-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="57e12-119">Requirement</span></span> | <span data-ttu-id="57e12-120">Valor</span><span class="sxs-lookup"><span data-stu-id="57e12-120">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="6a119-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6a119-121">Minimum supported client</span></span><br/> | <span data-ttu-id="6a119-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="6a119-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
-| <span data-ttu-id="6a119-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6a119-123">Minimum supported server</span></span><br/> | <span data-ttu-id="6a119-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="6a119-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="6a119-125">DLL</span><span class="sxs-lookup"><span data-stu-id="6a119-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="6a119-126"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="6a119-126"><dt>Sysmon.ocx</dt></span></span> </dl> |
+| <span data-ttu-id="57e12-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="57e12-121">Minimum supported client</span></span><br/> | <span data-ttu-id="57e12-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="57e12-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
+| <span data-ttu-id="57e12-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="57e12-123">Minimum supported server</span></span><br/> | <span data-ttu-id="57e12-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="57e12-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="57e12-125">DLL</span><span class="sxs-lookup"><span data-stu-id="57e12-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="57e12-126"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="57e12-126"><dt>Sysmon.ocx</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="6a119-127">Consulte também</span><span class="sxs-lookup"><span data-stu-id="6a119-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="57e12-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="57e12-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6a119-128">**SystemMonitor**</span><span class="sxs-lookup"><span data-stu-id="6a119-128">**SystemMonitor**</span></span>](systemmonitor.md)
+[<span data-ttu-id="57e12-128">**SystemMonitor**</span><span class="sxs-lookup"><span data-stu-id="57e12-128">**SystemMonitor**</span></span>](systemmonitor.md)
 </dt> <dt>
 
-[<span data-ttu-id="6a119-129">**Coitem. selecionado**</span><span class="sxs-lookup"><span data-stu-id="6a119-129">**CounterItem.Selected**</span></span>](counteritem-selected.md)
+[<span data-ttu-id="57e12-129">**Coitem. selecionado**</span><span class="sxs-lookup"><span data-stu-id="57e12-129">**CounterItem.Selected**</span></span>](counteritem-selected.md)
 </dt> </dl>
 
  

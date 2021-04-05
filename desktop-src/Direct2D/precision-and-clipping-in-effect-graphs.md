@@ -1,0 +1,157 @@
+---
+title: Recorte numérico e de precisão nos grafos de efeito
+description: Os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para atingir o nível desejado de qualidade e previsibilidade em relação à precisão numérica.
+ms.assetid: 6fd1d77f-e613-534f-3205-bad11fa24c30
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 90628661ec8cd3f16ff6a6149aecbb7e8be3e5a9
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104008004"
+---
+# <a name="precision-and-numerical-clipping-in-effect-graphs"></a><span data-ttu-id="530a7-103">Recorte numérico e de precisão nos grafos de efeito</span><span class="sxs-lookup"><span data-stu-id="530a7-103">Precision and numerical clipping in effect graphs</span></span>
+
+<span data-ttu-id="530a7-104">Os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para atingir o nível desejado de qualidade e previsibilidade em relação à precisão numérica.</span><span class="sxs-lookup"><span data-stu-id="530a7-104">Applications that render effects using Direct2D must take care to achieve the desired level of quality and predictability with respect to numerical precision.</span></span> <span data-ttu-id="530a7-105">Este tópico descreve as práticas recomendadas e as configurações relevantes no Direct2D, que são úteis se:</span><span class="sxs-lookup"><span data-stu-id="530a7-105">This topic describes best practices and relevant settings in Direct2D which are useful if:</span></span>
+
+-   <span data-ttu-id="530a7-106">O grafo de efeito depende de uma precisão ou cores numéricas altas fora do \[ intervalo 0, 1 \] e você deseja garantir que eles sempre estarão disponíveis</span><span class="sxs-lookup"><span data-stu-id="530a7-106">Your effect graph relies on high numerical precision or colors outside of the \[0, 1\] range, and you want to make sure these will always be available</span></span>
+-   <span data-ttu-id="530a7-107">Ou, o grafo de efeito depende da implementação de renderização para fixe as cores intermediárias para o \[ intervalo 0, 1 \] e você deseja garantir que esse fixação MSS sempre ocorra</span><span class="sxs-lookup"><span data-stu-id="530a7-107">Or, your effect graph relies on the rendering implementation to clamp intermediate colors to the \[0, 1\] range, and you want to ensure this clamping always occurs</span></span>
+
+<span data-ttu-id="530a7-108">O Direct2D geralmente divide um gráfico de efeito em seções e renderiza cada seção em uma etapa separada.</span><span class="sxs-lookup"><span data-stu-id="530a7-108">Direct2D often divides an effect graph into sections, and renders each section in a separate step.</span></span> <span data-ttu-id="530a7-109">A saída de algumas etapas pode ser armazenada em texturas de Direct3D intermediárias que, por padrão, têm uma precisão e um intervalo numérico limitados.</span><span class="sxs-lookup"><span data-stu-id="530a7-109">The output of some steps may be stored in intermediate Direct3D textures which by default have limited numerical range and precision.</span></span> <span data-ttu-id="530a7-110">O Direct2D não faz nenhuma garantia sobre se ou onde essas texturas intermediárias são usadas.</span><span class="sxs-lookup"><span data-stu-id="530a7-110">Direct2D makes no guarantees about if or where these intermediate textures are used.</span></span> <span data-ttu-id="530a7-111">Esse comportamento pode variar de acordo com os recursos de GPU, bem como entre as versões do Windows.</span><span class="sxs-lookup"><span data-stu-id="530a7-111">This behavior may vary according to GPU capabilities as well as between Windows versions.</span></span>
+
+<span data-ttu-id="530a7-112">No Windows 10, o Direct2D usa menos texturas intermediárias devido ao uso de vinculação de sombreador.</span><span class="sxs-lookup"><span data-stu-id="530a7-112">In Windows 10, Direct2D uses fewer intermediate textures due to its use of shader linking.</span></span> <span data-ttu-id="530a7-113">O Direct2D pode, portanto, produzir resultados diferentes com configurações padrão do que nas versões anteriores do Windows.</span><span class="sxs-lookup"><span data-stu-id="530a7-113">Direct2D may therefore produce different results with default settings than in prior Windows releases.</span></span> <span data-ttu-id="530a7-114">Isso afeta principalmente cenários em que a vinculação de sombreador é possível em um grafo de efeito, e esse grafo também contém efeitos que produzem cores de saída de intervalo estendido.</span><span class="sxs-lookup"><span data-stu-id="530a7-114">This primarily affects scenarios where shader linking is possible in an effect graph, and that graph also contains effects that produce extended-range output colors.</span></span>
+
+## <a name="overview-of-effect-rendering-and-intermediates"></a><span data-ttu-id="530a7-115">Visão geral da renderização de efeito e intermediários</span><span class="sxs-lookup"><span data-stu-id="530a7-115">Overview of effect rendering and intermediates</span></span>
+
+<span data-ttu-id="530a7-116">Para renderizar um grafo de efeito, o Direct2D primeiro encontra o gráfico subjacente de "transformações", onde uma transformação é um nó de gráfico usado dentro de um efeito.</span><span class="sxs-lookup"><span data-stu-id="530a7-116">To render an effect graph, Direct2D first finds the underlying graph of “transforms,” where a transform is a graph node used within an effect.</span></span> <span data-ttu-id="530a7-117">Há diferentes tipos de transformações, incluindo aquelas que fornecem sombreadores de Direct3D para uso de Direct2D.</span><span class="sxs-lookup"><span data-stu-id="530a7-117">There are different types of transforms, including those which provide Direct3D shaders for Direct2D to use.</span></span>
+
+<span data-ttu-id="530a7-118">Por exemplo, Direct2D pode renderizar um grafo de efeito da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="530a7-118">For example, Direct2D may render an effect graph as follows:</span></span>
+
+![Grafo de efeito com texturas intermediárias](images/precision-and-clipping-1.png)
+
+<span data-ttu-id="530a7-120">Direct2D procura oportunidades para reduzir o número de texturas intermediárias usadas para renderizar o grafo de efeito; Essa lógica é opaca para aplicativos.</span><span class="sxs-lookup"><span data-stu-id="530a7-120">Direct2D looks for opportunities to reduce the number intermediate textures used to render the effect graph; this logic is opaque to applications.</span></span> <span data-ttu-id="530a7-121">Por exemplo, o grafo a seguir pode ser renderizado por Direct2D usando uma chamada do Direct3D Draw e nenhuma textura intermediária:</span><span class="sxs-lookup"><span data-stu-id="530a7-121">For example, the following graph can be rendered by Direct2D using one Direct3D draw call and no intermediate textures:</span></span>
+
+![Grafo de efeito sem texturas intermediárias](images/precision-and-clipping-2.png)
+
+<span data-ttu-id="530a7-123">Antes do Windows 10, Direct2D sempre usaria texturas intermediárias se vários sombreadores fossem usados dentro do mesmo grafo de efeitos.</span><span class="sxs-lookup"><span data-stu-id="530a7-123">Prior to Windows 10, Direct2D would always use intermediate textures if multiple pixels shaders were used within the same effect graph.</span></span> <span data-ttu-id="530a7-124">A maioria dos efeitos internos que simplesmente ajusta os valores de cor (por exemplo, brilho ou saturação) faz isso usando sombreadores de pixel.</span><span class="sxs-lookup"><span data-stu-id="530a7-124">Most built-in effects that simply adjust color values (for example, Brightness or Saturation) do so using pixel shaders.</span></span>
+
+<span data-ttu-id="530a7-125">No Windows 10, o Direct2D agora pode evitar o uso de texturas intermediárias nesses casos.</span><span class="sxs-lookup"><span data-stu-id="530a7-125">In Windows 10, Direct2D may now avoid using intermediate textures in such cases.</span></span> <span data-ttu-id="530a7-126">Ele faz isso por meio da vinculação interna de sombreadores de pixel adjacentes.</span><span class="sxs-lookup"><span data-stu-id="530a7-126">It does this by internally linking adjacent pixel shaders.</span></span> <span data-ttu-id="530a7-127">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="530a7-127">For example:</span></span>
+
+![Grafo de efeito do Windows 10 com vários sombreadores de pixel e nenhuma textura intermediária](images/precision-and-clipping-3.png)
+
+<span data-ttu-id="530a7-129">Observe que nem todos os sombreadores de pixel adjacentes em um grafo podem ser vinculados juntos e, portanto, apenas determinados grafos produzirão uma saída diferente no Windows 10.</span><span class="sxs-lookup"><span data-stu-id="530a7-129">Note that not all adjacent pixel shaders in a graph may be linked together, and therefore only certain graphs will produce different output on Windows 10.</span></span> <span data-ttu-id="530a7-130">Para obter detalhes completos, consulte [efeitos de vinculação de sombreador](effect-shader-linking.md).</span><span class="sxs-lookup"><span data-stu-id="530a7-130">For full details see [Effect Shader Linking](effect-shader-linking.md).</span></span> <span data-ttu-id="530a7-131">As principais restrições são:</span><span class="sxs-lookup"><span data-stu-id="530a7-131">The primary restrictions are:</span></span>
+
+-   <span data-ttu-id="530a7-132">Um efeito não será vinculado com efeitos que consomem sua saída, se o primeiro efeito estiver conectado como uma entrada para vários efeitos.</span><span class="sxs-lookup"><span data-stu-id="530a7-132">An effect will not be linked with effects consuming its output, if the first effect is connected as an input to multiple effects.</span></span>
+-   <span data-ttu-id="530a7-133">Um efeito não será vinculado a um conjunto de efeitos como sua entrada, se o primeiro efeito amostras de sua entrada em uma posição lógica diferente da sua saída.</span><span class="sxs-lookup"><span data-stu-id="530a7-133">An effect will not be linked with an effect set as its input, if the first effect samples its input at a different logical position than its output.</span></span> <span data-ttu-id="530a7-134">Por exemplo, um efeito de matriz de cor pode ser vinculado com sua entrada, mas um efeito de convolução não será.</span><span class="sxs-lookup"><span data-stu-id="530a7-134">For example, a Color Matrix effect might be linked with its input, but a Convolution effect will not be.</span></span>
+
+## <a name="built-in-effect-behavior"></a><span data-ttu-id="530a7-135">Comportamento de efeito interno</span><span class="sxs-lookup"><span data-stu-id="530a7-135">Built-in effect behavior</span></span>
+
+<span data-ttu-id="530a7-136">Muitos efeitos internos podem produzir cores fora do \[ intervalo de 0, 1 \] no espaço de cores unpremultiplied, mesmo quando suas cores de entrada estão dentro desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="530a7-136">Many built-in effects may produce colors outside of the \[0, 1\] range in the unpremultiplied color space, even when their input colors are within that range.</span></span> <span data-ttu-id="530a7-137">Quando isso acontece, essas cores podem estar sujeitas ao recorte numérico.</span><span class="sxs-lookup"><span data-stu-id="530a7-137">When this happens, such colors may be subject to numerical clipping.</span></span> <span data-ttu-id="530a7-138">Observe que é importante considerar o intervalo de cores no espaço unpremultiplied, embora os efeitos internos normalmente produzam cores no espaço premultiplicado.</span><span class="sxs-lookup"><span data-stu-id="530a7-138">Note that it’s important to consider the color range in unpremultiplied space, even though built-in effects typically produce colors in premultiplied space.</span></span> <span data-ttu-id="530a7-139">Isso garante que as cores permaneçam dentro do intervalo, mesmo se outros efeitos subsequentemente unpremultiply-las.</span><span class="sxs-lookup"><span data-stu-id="530a7-139">This ensures that colors stay within range, even if other effects subsequently unpremultiply them.</span></span>
+
+<span data-ttu-id="530a7-140">Alguns dos efeitos que podem emitir essas cores fora do intervalo oferecem uma propriedade "ClampOutput".</span><span class="sxs-lookup"><span data-stu-id="530a7-140">Some of the effects which may emit these out-of-range colors offer a “ClampOutput” property.</span></span> <span data-ttu-id="530a7-141">Estão incluídos:</span><span class="sxs-lookup"><span data-stu-id="530a7-141">These include:</span></span>
+
+-   [<span data-ttu-id="530a7-142">Matriz de cores</span><span class="sxs-lookup"><span data-stu-id="530a7-142">Color Matrix</span></span>](color-matrix.md)
+-   [<span data-ttu-id="530a7-143">Composto aritmético</span><span class="sxs-lookup"><span data-stu-id="530a7-143">Arithmetic Composite</span></span>](arithmetic-composite.md)
+-   [<span data-ttu-id="530a7-144">Convolve</span><span class="sxs-lookup"><span data-stu-id="530a7-144">Convolve</span></span>](convolve-matrix.md)
+-   [<span data-ttu-id="530a7-145">Efeitos de transferência</span><span class="sxs-lookup"><span data-stu-id="530a7-145">Transfer effects</span></span>](built-in-effects.md)
+
+<span data-ttu-id="530a7-146">Definir a propriedade ClampOutput como TRUE nesses efeitos garante que um resultado consistente será obtido, independentemente de fatores como a vinculação de sombreador.</span><span class="sxs-lookup"><span data-stu-id="530a7-146">Setting the ClampOutput property to TRUE on these effects ensures a consistent result will be achieved regardless of factors such as shader linking.</span></span> <span data-ttu-id="530a7-147">Observe que fixação MSS ocorre no espaço unpremultiplied.</span><span class="sxs-lookup"><span data-stu-id="530a7-147">Note that clamping occurs in unpremultiplied space.</span></span>
+
+<span data-ttu-id="530a7-148">Outros efeitos internos também podem produzir cores de saída além de \[ 0, 1 \] intervalo no espaço unpremultiplied, mesmo quando suas cores pixels (e propriedades de "cor", se houver) estiverem dentro desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="530a7-148">Other built-in effects may also produce output colors beyond the \[0, 1\] range in unpremultiplied space, even when their colors pixels (and “Color” properties if any) are within that range.</span></span> <span data-ttu-id="530a7-149">Estão incluídos:</span><span class="sxs-lookup"><span data-stu-id="530a7-149">These include:</span></span>
+
+-   <span data-ttu-id="530a7-150">[Transformando e dimensionando efeitos](built-in-effects.md) (quando a propriedade modo de interpolação é cúbica ou cúbico de alta qualidade)</span><span class="sxs-lookup"><span data-stu-id="530a7-150">[Transforming and Scaling effects](built-in-effects.md) (When the Interpolation Mode property is Cubic or High Quality Cubic)</span></span>
+-   [<span data-ttu-id="530a7-151">Efeitos de iluminação</span><span class="sxs-lookup"><span data-stu-id="530a7-151">Lighting effects</span></span>](built-in-effects.md)
+-   <span data-ttu-id="530a7-152">[Detecção de borda](edge-detection-effect.md) (quando a propriedade sobrepor bordas for verdadeira)</span><span class="sxs-lookup"><span data-stu-id="530a7-152">[Edge detection](edge-detection-effect.md) (When the Overlay Edges property is TRUE)</span></span>
+-   [<span data-ttu-id="530a7-153">Exposição</span><span class="sxs-lookup"><span data-stu-id="530a7-153">Exposure</span></span>](exposure-effect.md)
+-   <span data-ttu-id="530a7-154">[Composite](composite.md) (quando a propriedade Mode é mais)</span><span class="sxs-lookup"><span data-stu-id="530a7-154">[Composite](composite.md) (When the Mode property is Plus)</span></span>
+-   [<span data-ttu-id="530a7-155">Temperatura e tonalidade</span><span class="sxs-lookup"><span data-stu-id="530a7-155">Temperature and Tint</span></span>](temperature-and-tint-effect.md)
+-   [<span data-ttu-id="530a7-156">Sépia</span><span class="sxs-lookup"><span data-stu-id="530a7-156">Sepia</span></span>](sepia-effect.md)
+-   [<span data-ttu-id="530a7-157">Saturação</span><span class="sxs-lookup"><span data-stu-id="530a7-157">Saturation</span></span>](saturation.md)
+
+## <a name="forcing-numerical-clipping-within-an-effect-graph"></a><span data-ttu-id="530a7-158">Forçando o recorte numérico dentro de um grafo de efeito</span><span class="sxs-lookup"><span data-stu-id="530a7-158">Forcing numerical clipping within an effect graph</span></span>
+
+<span data-ttu-id="530a7-159">Ao usar os efeitos listados acima que não têm uma propriedade ClampOutput, os aplicativos devem considerar a possibilidade de forçar o fixação MSS numérico.</span><span class="sxs-lookup"><span data-stu-id="530a7-159">While using effects listed above which do not have a ClampOutput property, applications should consider forcing numerical clamping.</span></span> <span data-ttu-id="530a7-160">Isso pode ser feito inserindo um efeito adicional no grafo que coloca seus pixels.</span><span class="sxs-lookup"><span data-stu-id="530a7-160">This can be done by inserting an additional effect into the graph that clamps its pixels.</span></span> <span data-ttu-id="530a7-161">Um efeito de matriz de cor pode ser usado, com sua propriedade ' ClampOutput ' definida como TRUE e deixando a propriedade ' ColorMatrix ' como o valor padrão (passagem).</span><span class="sxs-lookup"><span data-stu-id="530a7-161">A Color Matrix effect may be used, with its ‘ClampOutput’ property set to TRUE and leaving the ‘ColorMatrix’ property as the default (pass-through) value.</span></span>
+
+<span data-ttu-id="530a7-162">Uma segunda opção para obter resultados consistentes é solicitar que Direct2D use texturas intermediárias que tenham maior precisão.</span><span class="sxs-lookup"><span data-stu-id="530a7-162">A second option to achieve consistent results is to request that Direct2D use intermediate textures which have greater precision.</span></span> <span data-ttu-id="530a7-163">Isso é descrito abaixo.</span><span class="sxs-lookup"><span data-stu-id="530a7-163">This is described below.</span></span>
+
+## <a name="controlling-precision-of-intermediate-textures"></a><span data-ttu-id="530a7-164">Controlando a precisão das texturas intermediárias</span><span class="sxs-lookup"><span data-stu-id="530a7-164">Controlling precision of intermediate textures</span></span>
+
+<span data-ttu-id="530a7-165">O Direct2D fornece algumas maneiras de controlar a precisão de um grafo.</span><span class="sxs-lookup"><span data-stu-id="530a7-165">Direct2D provides a few ways to control the precision of a graph.</span></span> <span data-ttu-id="530a7-166">Antes de usar formatos de alta precisão no Direct2D, os aplicativos devem garantir que eles tenham suporte suficiente pela GPU.</span><span class="sxs-lookup"><span data-stu-id="530a7-166">Before using high precision formats in Direct2D, applications must ensure they are supported sufficiently by the GPU.</span></span> <span data-ttu-id="530a7-167">Para verificar isso, use [**ID2D1DeviceContext:: IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported).</span><span class="sxs-lookup"><span data-stu-id="530a7-167">To check this, use [**ID2D1DeviceContext::IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported).</span></span>
+
+<span data-ttu-id="530a7-168">Os aplicativos podem criar um dispositivo Direct3D usando WARP (emulação de software) para garantir que todas as precisão de buffer tenham suporte independente do hardware de GPU real no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="530a7-168">Applications may create a Direct3D device using WARP (software emulation) to guarantee that all buffer precisions are supported independent of the actual GPU hardware on the device.</span></span> <span data-ttu-id="530a7-169">Isso é recomendado em cenários como aplicar efeitos a uma foto enquanto salva em disco.</span><span class="sxs-lookup"><span data-stu-id="530a7-169">This is recommended in scenarios such as applying effects to a photo while saving to disk.</span></span> <span data-ttu-id="530a7-170">Mesmo que o Direct2D dê suporte a formatos de buffer de alta precisão na GPU, o uso de WARP é recomendado nesse cenário em GPUs de nível de recurso 9. X, devido à precisão limitada da aritmética de sombreador e à amostragem em algumas GPUs móveis de baixa energia.</span><span class="sxs-lookup"><span data-stu-id="530a7-170">Even if Direct2D supports high precision buffer formats on the GPU, using WARP is recommended in this scenario on feature level 9.X GPUs, due to the limited precision of shader arithmetic and sampling on some low-power mobile GPUs.</span></span>
+
+<span data-ttu-id="530a7-171">Em cada caso abaixo, a precisão solicitada é, na verdade, a precisão mínima que o Direct2D usará.</span><span class="sxs-lookup"><span data-stu-id="530a7-171">In each case below, the requested precision is actually the minimum precision Direct2D will use.</span></span> <span data-ttu-id="530a7-172">Uma precisão maior poderá ser usada se os intermediários não forem necessários.</span><span class="sxs-lookup"><span data-stu-id="530a7-172">Higher precision may be used if intermediates are not required.</span></span> <span data-ttu-id="530a7-173">Direct2D também pode compartilhar texturas intermediárias para diferentes partes do mesmo grafo ou grafos diferentes.</span><span class="sxs-lookup"><span data-stu-id="530a7-173">Direct2D may also share intermediate textures for different parts of the same graph or different graphs entirely.</span></span> <span data-ttu-id="530a7-174">Nesse caso, o Direct2D usa a precisão máxima solicitada para todas as operações envolvidas.</span><span class="sxs-lookup"><span data-stu-id="530a7-174">In this case Direct2D uses the maximum precision requested for all involved operations.</span></span>
+
+### <a name="precision-selection-from-id2d1devicecontextsetrenderingcontrols"></a><span data-ttu-id="530a7-175">Seleção de precisão de ID2D1DeviceContext:: SetRenderingControls</span><span class="sxs-lookup"><span data-stu-id="530a7-175">Precision selection from ID2D1DeviceContext::SetRenderingControls</span></span>
+
+<span data-ttu-id="530a7-176">A maneira mais simples de controlar a precisão das texturas intermediárias Direct2D's é usar [**ID2D1DeviceContext:: SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)).</span><span class="sxs-lookup"><span data-stu-id="530a7-176">The simplest way to control the precision of Direct2D’s intermediate textures is to use [**ID2D1DeviceContext::SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)).</span></span> <span data-ttu-id="530a7-177">Isso controla a precisão de todas as texturas intermediárias, contanto que uma precisão não seja também definida manualmente em efeitos ou transformações diretamente.</span><span class="sxs-lookup"><span data-stu-id="530a7-177">This controls the precision of all intermediate textures, as long as a precision is not also set manually on effects or transforms directly.</span></span>
+
+
+```cpp
+if (Device->IsBufferPrecisionSupported(D2D1_BUFFER_PRECISION_32BPC_FLOAT))
+{
+  // Get the current rendering controls
+  D2D1_RENDERING_CONTROLS renderingControls = {};
+  Context->GetRenderingControls(&renderingControls);
+
+  // Switch the precision within the rendering controls and set it
+  renderingControls.bufferPrecision = D2D1_BUFFER_PRECISION_32BPC_FLOAT;
+  Context->SetRenderingControls(&renderingControls);
+}
+              
+```
+
+
+
+### <a name="precision-selection-from-inputs-and-render-targets"></a><span data-ttu-id="530a7-178">Seleção de precisão de entradas e destinos de renderização</span><span class="sxs-lookup"><span data-stu-id="530a7-178">Precision selection from inputs and render targets</span></span>
+
+<span data-ttu-id="530a7-179">Os aplicativos também podem contar com a precisão das entradas para um grafo de efeito controlar a precisão das texturas intermediárias.</span><span class="sxs-lookup"><span data-stu-id="530a7-179">Applications may also rely on the precision of the inputs to an effect graph to control the precision of intermediate textures.</span></span> <span data-ttu-id="530a7-180">Isso é verdadeiro, desde que uma precisão de buffer não seja especificada usando [**ID2D1DeviceContext:: SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)), e não seja definida manualmente em efeitos e transformação diretamente.</span><span class="sxs-lookup"><span data-stu-id="530a7-180">This is true as long as a buffer precision is not specified using [**ID2D1DeviceContext::SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)), and is not set manually on effects and transform directly.</span></span>
+
+<span data-ttu-id="530a7-181">As precisão de entradas para efeitos são propagadas por meio do grafo para selecionar a precisão dos intermediários downstream.</span><span class="sxs-lookup"><span data-stu-id="530a7-181">The precisions of inputs to effects are propagated through the graph to select the precision of downstream intermediates.</span></span> <span data-ttu-id="530a7-182">Onde as diferentes ramificações do grafo de efeito se encontram, a maior precisão de qualquer entrada é usada.</span><span class="sxs-lookup"><span data-stu-id="530a7-182">Where different branches in the effect graph meet, the greatest precision of any input is used.</span></span>
+
+<span data-ttu-id="530a7-183">A precisão selecionada com base em um bitmap Direct2D é determinada de seu formato de pixel.</span><span class="sxs-lookup"><span data-stu-id="530a7-183">The precision selected based on a Direct2D bitmap is determined from its pixel format.</span></span> <span data-ttu-id="530a7-184">A precisão selecionada para um [**ID2D1ImageSource**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesource) é determinada do formato do pixel do WIC do IWICBitmapSource subjacente usado para criar o **ID2D1ImageSource**.</span><span class="sxs-lookup"><span data-stu-id="530a7-184">The precision selected for an [**ID2D1ImageSource**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesource) is determined from the WIC pixel format of the underlying IWICBitmapSource used to create the **ID2D1ImageSource**.</span></span> <span data-ttu-id="530a7-185">Observe que o Direct2D não permite que fontes de imagem sejam criadas com fontes WIC usando precisão sem suporte pelo Direct2D e pela GPU.</span><span class="sxs-lookup"><span data-stu-id="530a7-185">Note that Direct2D doesn’t allow image sources to be created with WIC sources using precisions unsupported by Direct2D and the GPU.</span></span>
+
+<span data-ttu-id="530a7-186">É possível que Direct2D não possa atribuir um efeito a uma precisão com base em suas entradas.</span><span class="sxs-lookup"><span data-stu-id="530a7-186">It is possible that Direct2D cannot assign an effect a precision based on its inputs.</span></span> <span data-ttu-id="530a7-187">Isso acontece quando um efeito não tem entradas ou quando um [**ID2D1CommandList**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandlist) é usado, o que não tem precisão específica.</span><span class="sxs-lookup"><span data-stu-id="530a7-187">This happens when an effect has no inputs, or when an [**ID2D1CommandList**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandlist) is used, which has no specific precision.</span></span> <span data-ttu-id="530a7-188">Nesse caso, a precisão das texturas intermediárias é determinada do conjunto de bitmaps como o destino de renderização atual do contexto.</span><span class="sxs-lookup"><span data-stu-id="530a7-188">In this case, the precision of intermediate textures is determined from the bitmap set as the context’s current render target.</span></span>
+
+### <a name="precision-selection-directly-on-the-effect-and-transforms"></a><span data-ttu-id="530a7-189">Seleção de precisão diretamente no efeito e nas transformações</span><span class="sxs-lookup"><span data-stu-id="530a7-189">Precision selection directly on the effect and transforms</span></span>
+
+<span data-ttu-id="530a7-190">A precisão mínima para texturas intermediárias também pode ser definida em locais explícitos dentro de um grafo de efeito.</span><span class="sxs-lookup"><span data-stu-id="530a7-190">The minimum precision for intermediate textures may also be set at explicit locations within an effect graph.</span></span> <span data-ttu-id="530a7-191">Isso é recomendado apenas para cenários avançados.</span><span class="sxs-lookup"><span data-stu-id="530a7-191">This is only recommended for advanced scenarios.</span></span>
+
+<span data-ttu-id="530a7-192">A precisão mínima pode ser definida usando uma propriedade em um efeito da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="530a7-192">The minimum precision may be set using a property on an effect as follows:</span></span>
+
+
+```cpp
+if (Device->IsBufferPrecisionSupported(D2D1_BUFFER_PRECISION_32BPC_FLOAT))
+{
+  hr = Effect->SetValue(D2D1_PROPERTY_PRECISION, D2D1_BUFFER_PRECISION_32BPC_FLOAT);
+}
+              
+```
+
+
+
+<span data-ttu-id="530a7-193">Dentro de uma implementação de efeito, a precisão mínima pode ser definida usando ID2D1RenderInfo:: SetOutputPrecision da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="530a7-193">Within an effect implementation, the minimum precision may be set using ID2D1RenderInfo::SetOutputPrecision as follows:</span></span>
+
+
+```cpp
+if (EffectContext->IsBufferPrecisionSupported(D2D1_BUFFER_PRECISION_32BPC_FLOAT))
+{
+  hr = RenderInfo->SetOutputBuffer(
+  D2D1_BUFFER_PRECISION_32BPC_FLOAT,
+  D2D1_CHANNEL_DEPTH_4);
+}
+              
+```
+
+
+
+<span data-ttu-id="530a7-194">Observe que a precisão definida em um efeito será propagada para efeitos downstream no mesmo grafo de efeito, a menos que uma precisão diferente seja definida nesses efeitos de downstream.</span><span class="sxs-lookup"><span data-stu-id="530a7-194">Note that the precision set on an effect will propagate to downstream effects in the same effect graph, unless a different precision is set on those downstream effects.</span></span> <span data-ttu-id="530a7-195">A precisão definida em uma transformação dentro de um efeito não afeta a precisão dos nós de transformação downstream.</span><span class="sxs-lookup"><span data-stu-id="530a7-195">The precision set on a transform within an effect does not affect the precision for downstream transform nodes.</span></span>
+
+<span data-ttu-id="530a7-196">Abaixo está a lógica recursiva completa usada para determinar a precisão mínima para um buffer intermediário que armazena a saída de um determinado nó de transformação:</span><span class="sxs-lookup"><span data-stu-id="530a7-196">Below is the full recursive logic used to determine the minimum precision for an intermediate buffer storing the output of a given transform node:</span></span>
+
+![Lógica de precisão mínima do buffer intermediário](images/precision-and-clipping-4.png)
+
+ 
+
+ 

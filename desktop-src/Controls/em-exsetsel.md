@@ -21,41 +21,41 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824532"
 ---
-# <a name="em_exsetsel-message"></a><span data-ttu-id="4ff22-104">\_Mensagem em EXSETSEL</span><span class="sxs-lookup"><span data-stu-id="4ff22-104">EM\_EXSETSEL message</span></span>
+# <a name="em_exsetsel-message"></a><span data-ttu-id="5826a-104">\_Mensagem em EXSETSEL</span><span class="sxs-lookup"><span data-stu-id="5826a-104">EM\_EXSETSEL message</span></span>
 
-<span data-ttu-id="4ff22-105">Seleciona um intervalo de caracteres ou objetos de Component Object Model (COM) em um controle de edição rico da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4ff22-105">Selects a range of characters or Component Object Model (COM) objects in a Microsoft Rich Edit control.</span></span>
+<span data-ttu-id="5826a-105">Seleciona um intervalo de caracteres ou objetos de Component Object Model (COM) em um controle de edição rico da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="5826a-105">Selects a range of characters or Component Object Model (COM) objects in a Microsoft Rich Edit control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="4ff22-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4ff22-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5826a-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5826a-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4ff22-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="4ff22-107">*wParam*</span></span> 
+<span data-ttu-id="5826a-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="5826a-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="4ff22-108">Esse parâmetro não é usado; Ele deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="4ff22-108">This parameter is not used; it must be zero.</span></span>
+<span data-ttu-id="5826a-108">Esse parâmetro não é usado; Ele deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="5826a-108">This parameter is not used; it must be zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4ff22-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="4ff22-109">*lParam*</span></span> 
+<span data-ttu-id="5826a-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="5826a-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="4ff22-110">Uma estrutura [**CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) que especifica o intervalo de seleção.</span><span class="sxs-lookup"><span data-stu-id="4ff22-110">A [**CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) structure that specifies the selection range.</span></span>
+<span data-ttu-id="5826a-110">Uma estrutura [**CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) que especifica o intervalo de seleção.</span><span class="sxs-lookup"><span data-stu-id="5826a-110">A [**CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) structure that specifies the selection range.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4ff22-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4ff22-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5826a-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="5826a-111">Return value</span></span>
 
-<span data-ttu-id="4ff22-112">O valor de retorno é a seleção que realmente está definida.</span><span class="sxs-lookup"><span data-stu-id="4ff22-112">The return value is the selection that is actually set.</span></span>
+<span data-ttu-id="5826a-112">O valor de retorno é a seleção que realmente está definida.</span><span class="sxs-lookup"><span data-stu-id="5826a-112">The return value is the selection that is actually set.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4ff22-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4ff22-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5826a-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="5826a-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4ff22-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="4ff22-114">Requirement</span></span> | <span data-ttu-id="4ff22-115">Valor</span><span class="sxs-lookup"><span data-stu-id="4ff22-115">Value</span></span> |
+| <span data-ttu-id="5826a-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="5826a-114">Requirement</span></span> | <span data-ttu-id="5826a-115">Valor</span><span class="sxs-lookup"><span data-stu-id="5826a-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="4ff22-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4ff22-116">Minimum supported client</span></span><br/> | <span data-ttu-id="4ff22-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="4ff22-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="4ff22-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4ff22-118">Minimum supported server</span></span><br/> | <span data-ttu-id="4ff22-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="4ff22-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="4ff22-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4ff22-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="4ff22-121"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="4ff22-121"><dt>Richedit.h</dt></span></span> </dl> |
+| <span data-ttu-id="5826a-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5826a-116">Minimum supported client</span></span><br/> | <span data-ttu-id="5826a-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="5826a-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="5826a-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="5826a-118">Minimum supported server</span></span><br/> | <span data-ttu-id="5826a-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="5826a-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="5826a-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="5826a-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="5826a-121"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="5826a-121"><dt>Richedit.h</dt></span></span> </dl> |
 
 
 
