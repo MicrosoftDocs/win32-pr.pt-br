@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662316"
 ---
-# <a name="iwbemdecoupledbasiceventprovider-methods"></a><span data-ttu-id="949a2-103">Métodos IWbemDecoupledBasicEventProvider</span><span class="sxs-lookup"><span data-stu-id="949a2-103">IWbemDecoupledBasicEventProvider Methods</span></span>
+# <a name="iwbemdecoupledbasiceventprovider-methods"></a><span data-ttu-id="aba05-103">Métodos IWbemDecoupledBasicEventProvider</span><span class="sxs-lookup"><span data-stu-id="aba05-103">IWbemDecoupledBasicEventProvider Methods</span></span>
 
-<span data-ttu-id="949a2-104">A interface [**IWbemDecoupledBasicEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledbasiceventprovider) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="949a2-104">The [**IWbemDecoupledBasicEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledbasiceventprovider) interface exposes the following methods.</span></span>
+<span data-ttu-id="aba05-104">A interface [**IWbemDecoupledBasicEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledbasiceventprovider) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="aba05-104">The [**IWbemDecoupledBasicEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledbasiceventprovider) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="949a2-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="949a2-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="aba05-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="aba05-105">In this section</span></span>
 
--   [<span data-ttu-id="949a2-106">**Método GetService**</span><span class="sxs-lookup"><span data-stu-id="949a2-106">**GetService method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getservice)
--   [<span data-ttu-id="949a2-107">**Método getsink**</span><span class="sxs-lookup"><span data-stu-id="949a2-107">**GetSink method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getsink)
--   <span data-ttu-id="949a2-108">[**Método Register**](/previous-versions/windows/desktop/legacy/aa391480(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="949a2-108">[**Register method**](/previous-versions/windows/desktop/legacy/aa391480(v=vs.85))</span></span>
+-   [<span data-ttu-id="aba05-106">**Método GetService**</span><span class="sxs-lookup"><span data-stu-id="aba05-106">**GetService method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getservice)
+-   [<span data-ttu-id="aba05-107">**Método getsink**</span><span class="sxs-lookup"><span data-stu-id="aba05-107">**GetSink method**</span></span>](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledbasiceventprovider-getsink)
+-   <span data-ttu-id="aba05-108">[**Método Register**](/previous-versions/windows/desktop/legacy/aa391480(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="aba05-108">[**Register method**](/previous-versions/windows/desktop/legacy/aa391480(v=vs.85))</span></span>
 
  
 

@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089901"
 ---
-# <a name="jet_recsizeccompressedcolumns-property"></a><span data-ttu-id="c64ae-103">Propriedade JET_RECSIZE. cCompressedColumns</span><span class="sxs-lookup"><span data-stu-id="c64ae-103">JET_RECSIZE.cCompressedColumns property</span></span>
+# <a name="jet_recsizeccompressedcolumns-property"></a><span data-ttu-id="e04f1-103">Propriedade JET_RECSIZE. cCompressedColumns</span><span class="sxs-lookup"><span data-stu-id="e04f1-103">JET_RECSIZE.cCompressedColumns property</span></span>
 
-<span data-ttu-id="c64ae-104">Obtém o número total de colunas no registro que estão compactadas.</span><span class="sxs-lookup"><span data-stu-id="c64ae-104">Gets the total number of columns in the record which are compressed.</span></span>
+<span data-ttu-id="e04f1-104">Obtém o número total de colunas no registro que estão compactadas.</span><span class="sxs-lookup"><span data-stu-id="e04f1-104">Gets the total number of columns in the record which are compressed.</span></span>
 
-<span data-ttu-id="c64ae-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c64ae-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="c64ae-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c64ae-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e04f1-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e04f1-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="e04f1-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e04f1-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c64ae-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c64ae-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e04f1-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="e04f1-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.cCompressedColumns
 public long cCompressedColumns { get; internal set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="c64ae-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="c64ae-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="e04f1-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="e04f1-108">Property value</span></span>
 
-<span data-ttu-id="c64ae-109">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="c64ae-109">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
+<span data-ttu-id="e04f1-109">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="e04f1-109">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="c64ae-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="c64ae-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e04f1-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="e04f1-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="c64ae-111">Referência</span><span class="sxs-lookup"><span data-stu-id="c64ae-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e04f1-111">Referência</span><span class="sxs-lookup"><span data-stu-id="e04f1-111">Reference</span></span>
 
-[<span data-ttu-id="c64ae-112">Estrutura de JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="c64ae-112">JET_RECSIZE structure</span></span>](./jet-recsize-structure2.md)
+[<span data-ttu-id="e04f1-112">Estrutura de JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="e04f1-112">JET_RECSIZE structure</span></span>](./jet-recsize-structure2.md)
 
-[<span data-ttu-id="c64ae-113">Membros do JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="c64ae-113">JET_RECSIZE members</span></span>](./jet-recsize-members.md)
+[<span data-ttu-id="e04f1-113">Membros do JET_RECSIZE</span><span class="sxs-lookup"><span data-stu-id="e04f1-113">JET_RECSIZE members</span></span>](./jet-recsize-members.md)
 
-[<span data-ttu-id="c64ae-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="c64ae-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="e04f1-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="e04f1-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

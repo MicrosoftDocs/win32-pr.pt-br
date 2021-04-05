@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090151"
 ---
-# <a name="apijetdupsession-method"></a><span data-ttu-id="f1f3c-103">Método API. JetDupSession</span><span class="sxs-lookup"><span data-stu-id="f1f3c-103">Api.JetDupSession method</span></span>
+# <a name="apijetdupsession-method"></a><span data-ttu-id="85704-103">Método API. JetDupSession</span><span class="sxs-lookup"><span data-stu-id="85704-103">Api.JetDupSession method</span></span>
 
-<span data-ttu-id="f1f3c-104">Inicialize uma nova sessão do ESE na mesma instância do sesid fornecido.</span><span class="sxs-lookup"><span data-stu-id="f1f3c-104">Initialize a new ESE session in the same instance as the given sesid.</span></span>
+<span data-ttu-id="85704-104">Inicialize uma nova sessão do ESE na mesma instância do sesid fornecido.</span><span class="sxs-lookup"><span data-stu-id="85704-104">Initialize a new ESE session in the same instance as the given sesid.</span></span>
 
-<span data-ttu-id="f1f3c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f1f3c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f1f3c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f1f3c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="85704-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="85704-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="85704-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="85704-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f1f3c-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f1f3c-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="85704-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="85704-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,26 +58,26 @@ public static void JetDupSession(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="f1f3c-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f1f3c-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="85704-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="85704-108">Parameters</span></span>
 
-  - <span data-ttu-id="f1f3c-109">sesid</span><span class="sxs-lookup"><span data-stu-id="f1f3c-109">sesid</span></span>  
-    <span data-ttu-id="f1f3c-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="f1f3c-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="85704-109">sesid</span><span class="sxs-lookup"><span data-stu-id="85704-109">sesid</span></span>  
+    <span data-ttu-id="85704-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="85704-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="f1f3c-111">A sessão a ser duplicada.</span><span class="sxs-lookup"><span data-stu-id="f1f3c-111">The session to duplicate.</span></span>
+    <span data-ttu-id="85704-111">A sessão a ser duplicada.</span><span class="sxs-lookup"><span data-stu-id="85704-111">The session to duplicate.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="f1f3c-112">newSesid</span><span class="sxs-lookup"><span data-stu-id="f1f3c-112">newSesid</span></span>  
-    <span data-ttu-id="f1f3c-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="f1f3c-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="85704-112">newSesid</span><span class="sxs-lookup"><span data-stu-id="85704-112">newSesid</span></span>  
+    <span data-ttu-id="85704-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="85704-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="f1f3c-114">Retorna a nova sessão.</span><span class="sxs-lookup"><span data-stu-id="f1f3c-114">Returns the new session.</span></span>
+    <span data-ttu-id="85704-114">Retorna a nova sessão.</span><span class="sxs-lookup"><span data-stu-id="85704-114">Returns the new session.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f1f3c-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="f1f3c-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85704-115">Confira também</span><span class="sxs-lookup"><span data-stu-id="85704-115">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f1f3c-116">Referência</span><span class="sxs-lookup"><span data-stu-id="f1f3c-116">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="85704-116">Referência</span><span class="sxs-lookup"><span data-stu-id="85704-116">Reference</span></span>
 
-[<span data-ttu-id="f1f3c-117">Classe de API</span><span class="sxs-lookup"><span data-stu-id="f1f3c-117">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="85704-117">Classe de API</span><span class="sxs-lookup"><span data-stu-id="85704-117">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="f1f3c-118">Membros da API</span><span class="sxs-lookup"><span data-stu-id="f1f3c-118">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="85704-118">Membros da API</span><span class="sxs-lookup"><span data-stu-id="85704-118">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="f1f3c-119">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f1f3c-119">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="85704-119">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="85704-119">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

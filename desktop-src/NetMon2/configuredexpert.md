@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169707"
 ---
-# <a name="configuredexpert-structure"></a><span data-ttu-id="6a3e4-103">Estrutura CONFIGUREDEXPERT</span><span class="sxs-lookup"><span data-stu-id="6a3e4-103">CONFIGUREDEXPERT structure</span></span>
+# <a name="configuredexpert-structure"></a><span data-ttu-id="1b901-103">Estrutura CONFIGUREDEXPERT</span><span class="sxs-lookup"><span data-stu-id="1b901-103">CONFIGUREDEXPERT structure</span></span>
 
-<span data-ttu-id="6a3e4-104">A estrutura **CONFIGUREDEXPERT** associa um especialista aos seus dados de configuração.</span><span class="sxs-lookup"><span data-stu-id="6a3e4-104">The **CONFIGUREDEXPERT** structure associates an expert with its configuration data.</span></span>
+<span data-ttu-id="1b901-104">A estrutura **CONFIGUREDEXPERT** associa um especialista aos seus dados de configuração.</span><span class="sxs-lookup"><span data-stu-id="1b901-104">The **CONFIGUREDEXPERT** structure associates an expert with its configuration data.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6a3e4-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6a3e4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1b901-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1b901-105">Syntax</span></span>
 
 
 ```C++
@@ -37,40 +37,40 @@ typedef struct {
 
 
 
-## <a name="members"></a><span data-ttu-id="6a3e4-106">Membros</span><span class="sxs-lookup"><span data-stu-id="6a3e4-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="1b901-106">Membros</span><span class="sxs-lookup"><span data-stu-id="1b901-106">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="6a3e4-107">**hExpert**</span><span class="sxs-lookup"><span data-stu-id="6a3e4-107">**hExpert**</span></span>
+<span data-ttu-id="1b901-107">**hExpert**</span><span class="sxs-lookup"><span data-stu-id="1b901-107">**hExpert**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="6a3e4-108">Lide com um especialista.</span><span class="sxs-lookup"><span data-stu-id="6a3e4-108">Handle to an expert.</span></span>
+<span data-ttu-id="1b901-108">Lide com um especialista.</span><span class="sxs-lookup"><span data-stu-id="1b901-108">Handle to an expert.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="6a3e4-109">**StartupFlags**</span><span class="sxs-lookup"><span data-stu-id="6a3e4-109">**StartupFlags**</span></span>
+<span data-ttu-id="1b901-109">**StartupFlags**</span><span class="sxs-lookup"><span data-stu-id="1b901-109">**StartupFlags**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="6a3e4-110">Os valores do sinalizador de inicialização do especialista.</span><span class="sxs-lookup"><span data-stu-id="6a3e4-110">Startup flag values of the expert.</span></span>
+<span data-ttu-id="1b901-110">Os valores do sinalizador de inicialização do especialista.</span><span class="sxs-lookup"><span data-stu-id="1b901-110">Startup flag values of the expert.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="6a3e4-111">**pConfig**</span><span class="sxs-lookup"><span data-stu-id="6a3e4-111">**pConfig**</span></span>
+<span data-ttu-id="1b901-111">**pConfig**</span><span class="sxs-lookup"><span data-stu-id="1b901-111">**pConfig**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="6a3e4-112">Ponteiro para uma estrutura [**EXPERTCONFIG**](expertconfig.md) .</span><span class="sxs-lookup"><span data-stu-id="6a3e4-112">Pointer to an [**EXPERTCONFIG**](expertconfig.md) structure.</span></span>
+<span data-ttu-id="1b901-112">Ponteiro para uma estrutura [**EXPERTCONFIG**](expertconfig.md) .</span><span class="sxs-lookup"><span data-stu-id="1b901-112">Pointer to an [**EXPERTCONFIG**](expertconfig.md) structure.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="6a3e4-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="6a3e4-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="1b901-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1b901-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="6a3e4-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="6a3e4-114">Requirement</span></span> | <span data-ttu-id="6a3e4-115">Valor</span><span class="sxs-lookup"><span data-stu-id="6a3e4-115">Value</span></span> |
+| <span data-ttu-id="1b901-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="1b901-114">Requirement</span></span> | <span data-ttu-id="1b901-115">Valor</span><span class="sxs-lookup"><span data-stu-id="1b901-115">Value</span></span> |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| <span data-ttu-id="6a3e4-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6a3e4-116">Minimum supported client</span></span><br/> | <span data-ttu-id="6a3e4-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="6a3e4-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                          |
-| <span data-ttu-id="6a3e4-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6a3e4-118">Minimum supported server</span></span><br/> | <span data-ttu-id="6a3e4-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="6a3e4-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                |
-| <span data-ttu-id="6a3e4-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6a3e4-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="6a3e4-121"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="6a3e4-121"><dt>Netmon.h</dt></span></span> </dl> |
+| <span data-ttu-id="1b901-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b901-116">Minimum supported client</span></span><br/> | <span data-ttu-id="1b901-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="1b901-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                          |
+| <span data-ttu-id="1b901-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b901-118">Minimum supported server</span></span><br/> | <span data-ttu-id="1b901-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="1b901-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                |
+| <span data-ttu-id="1b901-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1b901-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="1b901-121"><dt>Netmon. h</dt></span><span class="sxs-lookup"><span data-stu-id="1b901-121"><dt>Netmon.h</dt></span></span> </dl> |
 
 
 

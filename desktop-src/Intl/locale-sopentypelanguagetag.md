@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169722"
 ---
-# <a name="locale_sopentypelanguagetag"></a><span data-ttu-id="f23f4-103">SOPENTYPELANGUAGETAG de localidade \_</span><span class="sxs-lookup"><span data-stu-id="f23f4-103">LOCALE\_SOPENTYPELANGUAGETAG</span></span>
+# <a name="locale_sopentypelanguagetag"></a><span data-ttu-id="328d0-103">SOPENTYPELANGUAGETAG de localidade \_</span><span class="sxs-lookup"><span data-stu-id="328d0-103">LOCALE\_SOPENTYPELANGUAGETAG</span></span>
 
-<span data-ttu-id="f23f4-104">**Windows 7 e posterior:** Marca de idioma OpenType usada para recuperar recursos tipográficos culturalmente apropriados de uma fonte.</span><span class="sxs-lookup"><span data-stu-id="f23f4-104">**Windows 7 and later:** OpenType language tag used to retrieve culturally appropriate typographic features from a font.</span></span> <span data-ttu-id="f23f4-105">Para obter mais informações, [**consulte \_ marca OPENTYPE**](opentype-tag.md).</span><span class="sxs-lookup"><span data-stu-id="f23f4-105">For more information, see [**OPENTYPE\_TAG**](opentype-tag.md).</span></span>
+<span data-ttu-id="328d0-104">**Windows 7 e posterior:** Marca de idioma OpenType usada para recuperar recursos tipográficos culturalmente apropriados de uma fonte.</span><span class="sxs-lookup"><span data-stu-id="328d0-104">**Windows 7 and later:** OpenType language tag used to retrieve culturally appropriate typographic features from a font.</span></span> <span data-ttu-id="328d0-105">Para obter mais informações, [**consulte \_ marca OPENTYPE**](opentype-tag.md).</span><span class="sxs-lookup"><span data-stu-id="328d0-105">For more information, see [**OPENTYPE\_TAG**](opentype-tag.md).</span></span>
 
  
 

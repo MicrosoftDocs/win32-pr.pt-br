@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090042"
 ---
-# <a name="scopeitem-element-search-connector-schema"></a><span data-ttu-id="ff0a9-103">Elemento scopeItem (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="ff0a9-103">scopeItem Element (Search Connector Schema)</span></span>
+# <a name="scopeitem-element-search-connector-schema"></a><span data-ttu-id="b3c5b-103">Elemento scopeItem (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="b3c5b-103">scopeItem Element (Search Connector Schema)</span></span>
 
-<span data-ttu-id="ff0a9-104">O <scopeItem> elemento representa uma única entrada na tabela de escopo de exclusão/inclusão.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-104">The <scopeItem> element represents a single entry in the exclusion/inclusion scope table.</span></span> <span data-ttu-id="ff0a9-105"><scopeItem> estende o tipo de shellLinkType padrão adicionando três novos elementos que controlam a inclusão e a exclusão de pastas, controlam a profundidade dos resultados e especificam o local do escopo.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-105"><scopeItem> extends the standard shellLinkType type by adding three new elements that control inclusion and exclusion of folders, control the depth of results, and specify the location of the scope.</span></span> <span data-ttu-id="ff0a9-106">Se o <scope> elemento existir, esse elemento será necessário.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-106">If the <scope> element exists, this element is required.</span></span> <span data-ttu-id="ff0a9-107">Ele tem três elementos filho e nenhum atributo.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-107">It has three child elements and no attributes.</span></span>
+<span data-ttu-id="b3c5b-104">O <scopeItem> elemento representa uma única entrada na tabela de escopo de exclusão/inclusão.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-104">The <scopeItem> element represents a single entry in the exclusion/inclusion scope table.</span></span> <span data-ttu-id="b3c5b-105"><scopeItem> estende o tipo de shellLinkType padrão adicionando três novos elementos que controlam a inclusão e a exclusão de pastas, controlam a profundidade dos resultados e especificam o local do escopo.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-105"><scopeItem> extends the standard shellLinkType type by adding three new elements that control inclusion and exclusion of folders, control the depth of results, and specify the location of the scope.</span></span> <span data-ttu-id="b3c5b-106">Se o <scope> elemento existir, esse elemento será necessário.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-106">If the <scope> element exists, this element is required.</span></span> <span data-ttu-id="b3c5b-107">Ele tem três elementos filho e nenhum atributo.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-107">It has three child elements and no attributes.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ff0a9-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="ff0a9-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b3c5b-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="b3c5b-108">Syntax</span></span>
 
 
 ```
@@ -51,27 +51,27 @@ ms.locfileid: "104090042"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="ff0a9-109">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="ff0a9-109">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="b3c5b-109">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="b3c5b-109">Element Information</span></span>
 
 
 
-| <span data-ttu-id="ff0a9-110">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="ff0a9-110">Parent Element</span></span>                                                           | <span data-ttu-id="ff0a9-111">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="ff0a9-111">Child Elements</span></span>                                                                        |
+| <span data-ttu-id="b3c5b-110">Elemento pai</span><span class="sxs-lookup"><span data-stu-id="b3c5b-110">Parent Element</span></span>                                                           | <span data-ttu-id="b3c5b-111">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="b3c5b-111">Child Elements</span></span>                                                                        |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [<span data-ttu-id="ff0a9-112">Elemento Scope (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="ff0a9-112">scope Element (Search Connector Schema)</span></span>](search-schema-sconn-scope.md) | <span data-ttu-id="ff0a9-113">[elemento Scope (esquema do conector de pesquisa)](search-schema-sconn-scope-mode.md).</span><span class="sxs-lookup"><span data-stu-id="ff0a9-113">[scope Element (Search Connector Schema)](search-schema-sconn-scope-mode.md).</span></span>        |
-|                                                                          | <span data-ttu-id="ff0a9-114">[elemento Scope (esquema do conector de pesquisa)](search-schema-sconn-scope-depth.md).</span><span class="sxs-lookup"><span data-stu-id="ff0a9-114">[scope Element (Search Connector Schema)](search-schema-sconn-scope-depth.md).</span></span>       |
-|                                                                          | <span data-ttu-id="ff0a9-115">[elemento URL scopeItem (esquema do conector de pesquisa)](search-schema-sconn-scope-url.md).</span><span class="sxs-lookup"><span data-stu-id="ff0a9-115">[scopeItem url Element (Search Connector Schema)](search-schema-sconn-scope-url.md).</span></span> |
+| [<span data-ttu-id="b3c5b-112">Elemento Scope (esquema do conector de pesquisa)</span><span class="sxs-lookup"><span data-stu-id="b3c5b-112">scope Element (Search Connector Schema)</span></span>](search-schema-sconn-scope.md) | <span data-ttu-id="b3c5b-113">[elemento Scope (esquema do conector de pesquisa)](search-schema-sconn-scope-mode.md).</span><span class="sxs-lookup"><span data-stu-id="b3c5b-113">[scope Element (Search Connector Schema)](search-schema-sconn-scope-mode.md).</span></span>        |
+|                                                                          | <span data-ttu-id="b3c5b-114">[elemento Scope (esquema do conector de pesquisa)](search-schema-sconn-scope-depth.md).</span><span class="sxs-lookup"><span data-stu-id="b3c5b-114">[scope Element (Search Connector Schema)](search-schema-sconn-scope-depth.md).</span></span>       |
+|                                                                          | <span data-ttu-id="b3c5b-115">[elemento URL scopeItem (esquema do conector de pesquisa)](search-schema-sconn-scope-url.md).</span><span class="sxs-lookup"><span data-stu-id="b3c5b-115">[scopeItem url Element (Search Connector Schema)](search-schema-sconn-scope-url.md).</span></span> |
 
 
 
  
 
-## <a name="remarks"></a><span data-ttu-id="ff0a9-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="ff0a9-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b3c5b-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="b3c5b-116">Remarks</span></span>
 
-<span data-ttu-id="ff0a9-117">Use os <scope> <scopeItem> elementos e para identificar quais locais devem ser pesquisados e quais locais devem ser excluídos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-117">Use the <scope> and <scopeItem> elements to identify which locations should be searched and which locations should be excluded from searching.</span></span>
+<span data-ttu-id="b3c5b-117">Use os <scope> <scopeItem> elementos e para identificar quais locais devem ser pesquisados e quais locais devem ser excluídos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-117">Use the <scope> and <scopeItem> elements to identify which locations should be searched and which locations should be excluded from searching.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff0a9-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ff0a9-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b3c5b-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b3c5b-118">Example</span></span>
 
-<span data-ttu-id="ff0a9-119">O exemplo a seguir mostra um escopo de pesquisa que inclui C: \\ ExampleFolder e todas as suas pastas filho, exceto c: \\ ExampleFolder \\ ExcludeMe.</span><span class="sxs-lookup"><span data-stu-id="ff0a9-119">The following example shows a search scope that includes C:\\ExampleFolder and all its child folders except C:\\ExampleFolder\\ExcludeMe.</span></span>
+<span data-ttu-id="b3c5b-119">O exemplo a seguir mostra um escopo de pesquisa que inclui C: \\ ExampleFolder e todas as suas pastas filho, exceto c: \\ ExampleFolder \\ ExcludeMe.</span><span class="sxs-lookup"><span data-stu-id="b3c5b-119">The following example shows a search scope that includes C:\\ExampleFolder and all its child folders except C:\\ExampleFolder\\ExcludeMe.</span></span>
 
 
 ```

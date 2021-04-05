@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090146"
 ---
-# <a name="apijetgetdatabasefileinfo-method-string-int64-jet_dbinfo"></a><span data-ttu-id="8169f-103">Método API. JetGetDatabaseFileInfo (String, Int64, JET_DbInfo)</span><span class="sxs-lookup"><span data-stu-id="8169f-103">Api.JetGetDatabaseFileInfo method (String, Int64, JET_DbInfo)</span></span>
+# <a name="apijetgetdatabasefileinfo-method-string-int64-jet_dbinfo"></a><span data-ttu-id="c392f-103">Método API. JetGetDatabaseFileInfo (String, Int64, JET_DbInfo)</span><span class="sxs-lookup"><span data-stu-id="c392f-103">Api.JetGetDatabaseFileInfo method (String, Int64, JET_DbInfo)</span></span>
 
-<span data-ttu-id="8169f-104">Recupera determinadas informações sobre o banco de dados especificado.</span><span class="sxs-lookup"><span data-stu-id="8169f-104">Retrieves certain information about the given database.</span></span>
+<span data-ttu-id="c392f-104">Recupera determinadas informações sobre o banco de dados especificado.</span><span class="sxs-lookup"><span data-stu-id="c392f-104">Retrieves certain information about the given database.</span></span>
 
-<span data-ttu-id="8169f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8169f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="8169f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8169f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c392f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c392f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="c392f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c392f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8169f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8169f-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c392f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c392f-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,35 +58,35 @@ public static void JetGetDatabaseFileInfo(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="8169f-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8169f-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="c392f-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c392f-108">Parameters</span></span>
 
-  - <span data-ttu-id="8169f-109">databaseName</span><span class="sxs-lookup"><span data-stu-id="8169f-109">databaseName</span></span>  
-    <span data-ttu-id="8169f-110">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="8169f-110">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="c392f-109">databaseName</span><span class="sxs-lookup"><span data-stu-id="c392f-109">databaseName</span></span>  
+    <span data-ttu-id="c392f-110">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="c392f-110">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="8169f-111">O nome do arquivo do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="8169f-111">The file name of the database.</span></span>
+    <span data-ttu-id="c392f-111">O nome do arquivo do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="c392f-111">The file name of the database.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="8169f-112">value</span><span class="sxs-lookup"><span data-stu-id="8169f-112">value</span></span>  
-    <span data-ttu-id="8169f-113">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="8169f-113">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
+  - <span data-ttu-id="c392f-112">value</span><span class="sxs-lookup"><span data-stu-id="c392f-112">value</span></span>  
+    <span data-ttu-id="c392f-113">Tipo: [System. Int64](/dotnet/api/system.int64)</span><span class="sxs-lookup"><span data-stu-id="c392f-113">Type: [System.Int64](/dotnet/api/system.int64)</span></span>  
     
-    <span data-ttu-id="8169f-114">O valor a ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="8169f-114">The value to be retrieved.</span></span>
+    <span data-ttu-id="c392f-114">O valor a ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="c392f-114">The value to be retrieved.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="8169f-115">infoLevel</span><span class="sxs-lookup"><span data-stu-id="8169f-115">infoLevel</span></span>  
-    <span data-ttu-id="8169f-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DbInfo](./jet-dbinfo-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="8169f-116">Type: [Microsoft.Isam.Esent.Interop.JET_DbInfo](./jet-dbinfo-enumeration.md)</span></span>  
+  - <span data-ttu-id="c392f-115">infoLevel</span><span class="sxs-lookup"><span data-stu-id="c392f-115">infoLevel</span></span>  
+    <span data-ttu-id="c392f-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DbInfo](./jet-dbinfo-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="c392f-116">Type: [Microsoft.Isam.Esent.Interop.JET_DbInfo](./jet-dbinfo-enumeration.md)</span></span>  
     
-    <span data-ttu-id="8169f-117">Os dados específicos a serem recuperados.</span><span class="sxs-lookup"><span data-stu-id="8169f-117">The specific data to retrieve.</span></span>
+    <span data-ttu-id="c392f-117">Os dados específicos a serem recuperados.</span><span class="sxs-lookup"><span data-stu-id="c392f-117">The specific data to retrieve.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8169f-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="8169f-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c392f-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="c392f-118">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="8169f-119">Referência</span><span class="sxs-lookup"><span data-stu-id="8169f-119">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c392f-119">Referência</span><span class="sxs-lookup"><span data-stu-id="c392f-119">Reference</span></span>
 
-[<span data-ttu-id="8169f-120">Classe de API</span><span class="sxs-lookup"><span data-stu-id="8169f-120">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="c392f-120">Classe de API</span><span class="sxs-lookup"><span data-stu-id="c392f-120">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="8169f-121">Membros da API</span><span class="sxs-lookup"><span data-stu-id="8169f-121">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="c392f-121">Membros da API</span><span class="sxs-lookup"><span data-stu-id="c392f-121">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="8169f-122">Sobrecarga de JetGetDatabaseFileInfo</span><span class="sxs-lookup"><span data-stu-id="8169f-122">JetGetDatabaseFileInfo overload</span></span>](./api.jetgetdatabasefileinfo-method.md)
+[<span data-ttu-id="c392f-122">Sobrecarga de JetGetDatabaseFileInfo</span><span class="sxs-lookup"><span data-stu-id="c392f-122">JetGetDatabaseFileInfo overload</span></span>](./api.jetgetdatabasefileinfo-method.md)
 
-[<span data-ttu-id="8169f-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8169f-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="c392f-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c392f-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

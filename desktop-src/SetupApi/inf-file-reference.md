@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662278"
 ---
-# <a name="inf-file-reference"></a><span data-ttu-id="04def-103">Referência de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="04def-103">INF File Reference</span></span>
+# <a name="inf-file-reference"></a><span data-ttu-id="72531-103">Referência de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="72531-103">INF File Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="04def-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="04def-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="72531-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="72531-104">In this section</span></span>
 
--   [<span data-ttu-id="04def-105">Funções de configuração de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="04def-105">INF File Setup Functions</span></span>](inf-file-setup-functions.md)
--   [<span data-ttu-id="04def-106">Identificador para um arquivo INF</span><span class="sxs-lookup"><span data-stu-id="04def-106">Handle to an INF File</span></span>](handle-to-an-inf-file.md)
--   [<span data-ttu-id="04def-107">Estruturas de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="04def-107">INF File Structures</span></span>](inf-file-structures.md)
--   [<span data-ttu-id="04def-108">Notificações de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="04def-108">INF File Notifications</span></span>](inf-file-notifications.md)
+-   [<span data-ttu-id="72531-105">Funções de configuração de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="72531-105">INF File Setup Functions</span></span>](inf-file-setup-functions.md)
+-   [<span data-ttu-id="72531-106">Identificador para um arquivo INF</span><span class="sxs-lookup"><span data-stu-id="72531-106">Handle to an INF File</span></span>](handle-to-an-inf-file.md)
+-   [<span data-ttu-id="72531-107">Estruturas de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="72531-107">INF File Structures</span></span>](inf-file-structures.md)
+-   [<span data-ttu-id="72531-108">Notificações de arquivo INF</span><span class="sxs-lookup"><span data-stu-id="72531-108">INF File Notifications</span></span>](inf-file-notifications.md)
 
  
 

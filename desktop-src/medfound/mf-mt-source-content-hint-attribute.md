@@ -11,49 +11,49 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169761"
 ---
-# <a name="mf_mt_source_content_hint-attribute"></a><span data-ttu-id="58633-103">\_Atributo de \_ dica de conteúdo de origem MF MT \_ \_</span><span class="sxs-lookup"><span data-stu-id="58633-103">MF\_MT\_SOURCE\_CONTENT\_HINT attribute</span></span>
+# <a name="mf_mt_source_content_hint-attribute"></a><span data-ttu-id="8f76a-103">\_Atributo de \_ dica de conteúdo de origem MF MT \_ \_</span><span class="sxs-lookup"><span data-stu-id="8f76a-103">MF\_MT\_SOURCE\_CONTENT\_HINT attribute</span></span>
 
-<span data-ttu-id="58633-104">Descreve a taxa de proporção pretendida para um tipo de mídia de vídeo.</span><span class="sxs-lookup"><span data-stu-id="58633-104">Describes the intended aspect ratio for a video media type.</span></span>
+<span data-ttu-id="8f76a-104">Descreve a taxa de proporção pretendida para um tipo de mídia de vídeo.</span><span class="sxs-lookup"><span data-stu-id="8f76a-104">Describes the intended aspect ratio for a video media type.</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="58633-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="58633-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="8f76a-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="8f76a-105">Data type</span></span>
 
-<span data-ttu-id="58633-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="58633-106">**UINT32**</span></span>
+<span data-ttu-id="8f76a-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="8f76a-106">**UINT32**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="58633-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="58633-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8f76a-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="8f76a-107">Remarks</span></span>
 
-<span data-ttu-id="58633-108">O valor desse atributo é um membro da enumeração [**MFVideoSrcContentHintFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags) .</span><span class="sxs-lookup"><span data-stu-id="58633-108">The value of this attribute is a member of the [**MFVideoSrcContentHintFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags) enumeration.</span></span>
+<span data-ttu-id="8f76a-108">O valor desse atributo é um membro da enumeração [**MFVideoSrcContentHintFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags) .</span><span class="sxs-lookup"><span data-stu-id="8f76a-108">The value of this attribute is a member of the [**MFVideoSrcContentHintFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags) enumeration.</span></span>
 
-<span data-ttu-id="58633-109">A constante de GUID para esse atributo é exportada de mfuuid. lib.</span><span class="sxs-lookup"><span data-stu-id="58633-109">The GUID constant for this attribute is exported from mfuuid.lib.</span></span>
+<span data-ttu-id="8f76a-109">A constante de GUID para esse atributo é exportada de mfuuid. lib.</span><span class="sxs-lookup"><span data-stu-id="8f76a-109">The GUID constant for this attribute is exported from mfuuid.lib.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="58633-110">Requisitos</span><span class="sxs-lookup"><span data-stu-id="58633-110">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="8f76a-110">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8f76a-110">Requirements</span></span>
 
 
 
-| <span data-ttu-id="58633-111">Requisito</span><span class="sxs-lookup"><span data-stu-id="58633-111">Requirement</span></span> | <span data-ttu-id="58633-112">Valor</span><span class="sxs-lookup"><span data-stu-id="58633-112">Value</span></span> |
+| <span data-ttu-id="8f76a-111">Requisito</span><span class="sxs-lookup"><span data-stu-id="8f76a-111">Requirement</span></span> | <span data-ttu-id="8f76a-112">Valor</span><span class="sxs-lookup"><span data-stu-id="8f76a-112">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="58633-113">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58633-113">Minimum supported client</span></span><br/> | <span data-ttu-id="58633-114">Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]</span><span class="sxs-lookup"><span data-stu-id="58633-114">Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                              |
-| <span data-ttu-id="58633-115">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58633-115">Minimum supported server</span></span><br/> | <span data-ttu-id="58633-116">Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="58633-116">Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/>                        |
-| <span data-ttu-id="58633-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="58633-117">Header</span></span><br/>                   | <dl> <span data-ttu-id="58633-118"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="58633-118"><dt>Mfapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="8f76a-113">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8f76a-113">Minimum supported client</span></span><br/> | <span data-ttu-id="8f76a-114">Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]</span><span class="sxs-lookup"><span data-stu-id="8f76a-114">Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                              |
+| <span data-ttu-id="8f76a-115">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8f76a-115">Minimum supported server</span></span><br/> | <span data-ttu-id="8f76a-116">Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="8f76a-116">Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/>                        |
+| <span data-ttu-id="8f76a-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="8f76a-117">Header</span></span><br/>                   | <dl> <span data-ttu-id="8f76a-118"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="8f76a-118"><dt>Mfapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="58633-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="58633-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f76a-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="8f76a-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="58633-120">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="58633-120">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+[<span data-ttu-id="8f76a-120">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="8f76a-120">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[<span data-ttu-id="58633-121">**IMFAttributes:: GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="58633-121">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[<span data-ttu-id="8f76a-121">**IMFAttributes:: GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="8f76a-121">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[<span data-ttu-id="58633-122">**IMFAttributes:: setuint32**</span><span class="sxs-lookup"><span data-stu-id="58633-122">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[<span data-ttu-id="8f76a-122">**IMFAttributes:: setuint32**</span><span class="sxs-lookup"><span data-stu-id="8f76a-122">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[<span data-ttu-id="58633-123">**IMFMediaType**</span><span class="sxs-lookup"><span data-stu-id="58633-123">**IMFMediaType**</span></span>](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
+[<span data-ttu-id="8f76a-123">**IMFMediaType**</span><span class="sxs-lookup"><span data-stu-id="8f76a-123">**IMFMediaType**</span></span>](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[<span data-ttu-id="58633-124">Atributos de tipo de mídia</span><span class="sxs-lookup"><span data-stu-id="58633-124">Media Type Attributes</span></span>](media-type-attributes.md)
+[<span data-ttu-id="8f76a-124">Atributos de tipo de mídia</span><span class="sxs-lookup"><span data-stu-id="8f76a-124">Media Type Attributes</span></span>](media-type-attributes.md)
 </dt> </dl>
 
  

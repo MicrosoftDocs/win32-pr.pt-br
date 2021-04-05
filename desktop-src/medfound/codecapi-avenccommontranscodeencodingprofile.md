@@ -11,35 +11,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089790"
 ---
-# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a><span data-ttu-id="e5958-103">\_Propriedade CODECAPI AVEncCommonTranscodeEncodingProfile</span><span class="sxs-lookup"><span data-stu-id="e5958-103">CODECAPI\_AVEncCommonTranscodeEncodingProfile property</span></span>
+# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a><span data-ttu-id="e3822-103">\_Propriedade CODECAPI AVEncCommonTranscodeEncodingProfile</span><span class="sxs-lookup"><span data-stu-id="e3822-103">CODECAPI\_AVEncCommonTranscodeEncodingProfile property</span></span>
 
-<span data-ttu-id="e5958-104">Especifica o perfil de codificação de transcodificar comum.</span><span class="sxs-lookup"><span data-stu-id="e5958-104">Specifies the common transcode encoding profile.</span></span>
+<span data-ttu-id="e3822-104">Especifica o perfil de codificação de transcodificar comum.</span><span class="sxs-lookup"><span data-stu-id="e3822-104">Specifies the common transcode encoding profile.</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="e5958-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="e5958-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="e3822-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="e3822-105">Data type</span></span>
 
-<span data-ttu-id="e5958-106">**BSTR**</span><span class="sxs-lookup"><span data-stu-id="e5958-106">**BSTR**</span></span>
+<span data-ttu-id="e3822-106">**BSTR**</span><span class="sxs-lookup"><span data-stu-id="e3822-106">**BSTR**</span></span>
 
-## <a name="property-guid"></a><span data-ttu-id="e5958-107">GUID da propriedade</span><span class="sxs-lookup"><span data-stu-id="e5958-107">Property GUID</span></span>
+## <a name="property-guid"></a><span data-ttu-id="e3822-107">GUID da propriedade</span><span class="sxs-lookup"><span data-stu-id="e3822-107">Property GUID</span></span>
 
-<span data-ttu-id="e5958-108">**CODECAPI \_ AVEncCommonTranscodeEncodingProfile**</span><span class="sxs-lookup"><span data-stu-id="e5958-108">**CODECAPI\_AVEncCommonTranscodeEncodingProfile**</span></span>
+<span data-ttu-id="e3822-108">**CODECAPI \_ AVEncCommonTranscodeEncodingProfile**</span><span class="sxs-lookup"><span data-stu-id="e3822-108">**CODECAPI\_AVEncCommonTranscodeEncodingProfile**</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="e5958-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e5958-109">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e3822-109">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e3822-109">Requirements</span></span>
 
 
 
-| <span data-ttu-id="e5958-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="e5958-110">Requirement</span></span> | <span data-ttu-id="e5958-111">Valor</span><span class="sxs-lookup"><span data-stu-id="e5958-111">Value</span></span> |
+| <span data-ttu-id="e3822-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="e3822-110">Requirement</span></span> | <span data-ttu-id="e3822-111">Valor</span><span class="sxs-lookup"><span data-stu-id="e3822-111">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="e5958-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e5958-112">Minimum supported client</span></span><br/> | <span data-ttu-id="e5958-113">Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="e5958-113">Windows 8 \[desktop apps \| UWP apps\]</span></span><br/>                                     |
-| <span data-ttu-id="e5958-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e5958-114">Minimum supported server</span></span><br/> | <span data-ttu-id="e5958-115">Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="e5958-115">Windows Server 2012 \[desktop apps \| UWP apps\]</span></span><br/>                           |
-| <span data-ttu-id="e5958-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="e5958-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="e5958-117"><dt>Codecapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="e5958-117"><dt>Codecapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="e3822-112">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e3822-112">Minimum supported client</span></span><br/> | <span data-ttu-id="e3822-113">Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="e3822-113">Windows 8 \[desktop apps \| UWP apps\]</span></span><br/>                                     |
+| <span data-ttu-id="e3822-114">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e3822-114">Minimum supported server</span></span><br/> | <span data-ttu-id="e3822-115">Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="e3822-115">Windows Server 2012 \[desktop apps \| UWP apps\]</span></span><br/>                           |
+| <span data-ttu-id="e3822-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="e3822-116">Header</span></span><br/>                   | <dl> <span data-ttu-id="e3822-117"><dt>Codecapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="e3822-117"><dt>Codecapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="e5958-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="e5958-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e3822-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="e3822-118">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e5958-119">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="e5958-119">Media Foundation Properties</span></span>](media-foundation-properties.md)
+[<span data-ttu-id="e3822-119">Propriedades de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="e3822-119">Media Foundation Properties</span></span>](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089837"
 ---
-# <a name="the-performance-monitoring-provider"></a><span data-ttu-id="f598c-103">O provedor de monitoramento de desempenho</span><span class="sxs-lookup"><span data-stu-id="f598c-103">The Performance Monitoring Provider</span></span>
+# <a name="the-performance-monitoring-provider"></a><span data-ttu-id="09e2f-103">O provedor de monitoramento de desempenho</span><span class="sxs-lookup"><span data-stu-id="09e2f-103">The Performance Monitoring Provider</span></span>
 
-<span data-ttu-id="f598c-104">Os dados das bibliotecas de desempenho estão disponíveis como [classes de contador de desempenho](/windows/desktop/CIMWin32Prov/performance-counter-classes) WMI por meio do [provedor WMIPerfClass](wmiperfclass-provider.md) e do [provedor WMIPerfInst](wmiperfinst-provider.md).</span><span class="sxs-lookup"><span data-stu-id="f598c-104">Data from performance libraries is available as WMI [Performance Counter Classes](/windows/desktop/CIMWin32Prov/performance-counter-classes) through the [WMIPerfClass Provider](wmiperfclass-provider.md) and [WMIPerfInst Provider](wmiperfinst-provider.md).</span></span>
+<span data-ttu-id="09e2f-104">Os dados das bibliotecas de desempenho estão disponíveis como [classes de contador de desempenho](/windows/desktop/CIMWin32Prov/performance-counter-classes) WMI por meio do [provedor WMIPerfClass](wmiperfclass-provider.md) e do [provedor WMIPerfInst](wmiperfinst-provider.md).</span><span class="sxs-lookup"><span data-stu-id="09e2f-104">Data from performance libraries is available as WMI [Performance Counter Classes](/windows/desktop/CIMWin32Prov/performance-counter-classes) through the [WMIPerfClass Provider](wmiperfclass-provider.md) and [WMIPerfInst Provider](wmiperfinst-provider.md).</span></span>
 
  
 
