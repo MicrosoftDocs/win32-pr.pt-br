@@ -60,7 +60,7 @@ Retorna **S \_ OK** se for bem-sucedido ou um código de erro **HRESULT** padrã
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

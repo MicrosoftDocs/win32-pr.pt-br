@@ -61,7 +61,7 @@ A classe **MsRdpClient8** tem esses métodos.
 
 | Método                                                                                      | Descrição                                                                                                                                                                                                                                                                                   |
 |:--------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Conectar**](imstscax-connect.md)                                                         | Inicia uma conexão usando as propriedades atualmente definidas no controle.<br/>                                                                                                                                                                                                          |
+| [**Connect**](imstscax-connect.md)                                                         | Inicia uma conexão usando as propriedades atualmente definidas no controle.<br/>                                                                                                                                                                                                          |
 | [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)                             | Cria um objeto de canal virtual do lado do cliente para cada nome de canal virtual especificado.<br/>                                                                                                                                                                                              |
 | [**Desconectar**](imstscax-disconnect.md)                                                   | Desconecta a conexão ativa.<br/>                                                                                                                                                                                                                                                 |
 | [**GetErrorDescription**](imsrdpclient5-geterrordescription.md)                            | Recupera os códigos de erro e as mensagens de erro.<br/>                                                                                                                                                                                                                                      |
@@ -128,7 +128,7 @@ A classe **MsRdpClient8** tem essas propriedades.
 <tr class="header">
 <th style="text-align: left;">Propriedade</th>
 <th style="text-align: left;">Tipo de acesso</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -263,7 +263,7 @@ A classe **MsRdpClient8** tem essas propriedades.
 <td style="text-align: left;">O texto que aparece centralizado no controle antes que uma conexão seja encerrada.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="imstscax-domain.md"><strong>Domínio</strong></a><br/></td>
+<td style="text-align: left;"><a href="imstscax-domain.md"><strong>Controlador</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
 <td style="text-align: left;">O domínio no qual o usuário atual faz logon.<br/></td>
 </tr>
@@ -513,7 +513,7 @@ Quando o <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

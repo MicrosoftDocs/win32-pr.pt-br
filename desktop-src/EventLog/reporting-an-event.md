@@ -362,7 +362,7 @@ Antes de executar este exemplo, registre o provedor no registro. Para obter deta
 
 O seguinte mostra os valores de registro a serem definidos para a chave do registro "myeventprovider".
 
-| Nome do valor           | Type       | os dados de Valor           |
+| Nome do valor           | Tipo       | os dados de Valor           |
 |----------------------|------------|----------------------|
 | CategoryCount        | REG \_ DWORD | 0x00000003           |
 | CategoryMessageFile  | REG \_ sz    | *caminho* \\ doprovider.dll |

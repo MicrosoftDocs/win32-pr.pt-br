@@ -67,7 +67,7 @@ Você deve usar a ferramenta Logman.exe ou o snap-in do MMC Perfmon. msc para ge
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

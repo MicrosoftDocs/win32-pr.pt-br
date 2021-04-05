@@ -19,7 +19,7 @@ Este tutorial apresenta um aplicativo completo que reproduz vídeo usando o MFPl
 
 Este tutorial contém as seguintes seções:
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Arquivos de cabeçalho e biblioteca](#header-and-library-files)
 -   [Variáveis globais](#global-variables)
 -   [Declarar a classe de retorno de chamada](#declare-the-callback-class)

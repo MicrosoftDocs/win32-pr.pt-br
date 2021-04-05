@@ -49,7 +49,7 @@ As constantes **de \_ \_ tipo de identidade WINBIO** a seguir podem ser usadas p
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

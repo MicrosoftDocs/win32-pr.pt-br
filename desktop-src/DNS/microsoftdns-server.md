@@ -197,7 +197,7 @@ Especifica se o servidor DNS aceita solicitações de atualização dinâmica. O
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Sem restrições.<br/>                                                                           |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Não permite atualizações dinâmicas de registros SOA.<br/>                                             |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Não permite atualizações dinâmicas de registros NS na raiz da zona.<br/>                             |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Não permite atualizações dinâmicas de registros NS que não estejam na raiz da zona (registros NS de delegação).<br/> |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Não permite atualizações dinâmicas de registros NS que não estejam na raiz da zona (registros NS de delegação).<br/> |
 
 
 
@@ -238,7 +238,7 @@ Indica quais zonas primárias padrão que são autoritativas para o nome do serv
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum.<br/>                                           |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Somente servidores que permitem atualizações dinâmicas.<br/>        |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Somente servidores que não permitem atualizações dinâmicas.<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Todos os servidores.<br/>                                    |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Todos os servidores.<br/>                                    |
 
 
 
@@ -283,7 +283,7 @@ Método de inicialização para o servidor DNS. Os valores válidos são mostrad
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Não inicializado.<br/>                    |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Inicialize do arquivo.<br/>                   |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Inicializar do registro.<br/>               |
-| <span id="3"></span><dl> <dt>**Beta**</dt> </dl> | Inicialize do diretório e do registro.<br/> |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Inicialize do diretório e do registro.<br/> |
 
 
 
@@ -483,7 +483,7 @@ Indica quais eventos o servidor DNS registra no log do sistema Visualizador de E
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum.<br/>                         |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Registrar apenas erros.<br/>              |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Registrar somente avisos e erros.<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Registrar todos os eventos.<br/>               |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Registrar todos os eventos.<br/>               |
 
 
 
@@ -722,7 +722,7 @@ Indica o conjunto de caracteres qualificados a ser usado em nomes DNS. Os valore
 |------------------------------------------------------------------------------------------------------|------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | RFC estrito (ANSI)<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Não RFC (ANSI)<br/>    |
-| <span id="3"></span><dl> <dt>**Beta**</dt> </dl> | Multibyte (UTF8)<br/>  |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Multibyte (UTF8)<br/>  |
 
 
 
@@ -805,10 +805,10 @@ Protocolo RPC ou protocolos sobre os quais o RPC administrativo é executado. O 
 
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhuma<br/>        |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum<br/>        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | TCP<br/>         |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Pipes nomeados<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | LPC<br/>         |
+| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | LPC<br/>         |
 
 
 
@@ -968,7 +968,7 @@ Tempo, em segundos, o servidor DNS aguarda uma conexão TCP bem-sucedida para um
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

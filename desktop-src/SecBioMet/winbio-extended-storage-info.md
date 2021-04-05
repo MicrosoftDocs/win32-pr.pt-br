@@ -153,7 +153,7 @@ Os recursos de reconhecimento de voz do componente de armazenamento que está co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

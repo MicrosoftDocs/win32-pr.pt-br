@@ -80,7 +80,7 @@ Em conclusão bem-sucedida, contém o conteúdo do ícone.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

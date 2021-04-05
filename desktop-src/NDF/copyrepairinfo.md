@@ -67,7 +67,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 
 
-| Código de retorno                                                                                   | Description                                                                 |
+| Código de retorno                                                                                   | Descrição                                                                 |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | A operação foi realizada com êxito.<br/>                                         |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Um ou mais parâmetros não foram fornecidos corretamente.<br/>          |
@@ -89,7 +89,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

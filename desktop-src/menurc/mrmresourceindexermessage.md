@@ -90,7 +90,7 @@ O texto da mensagem. Não libere esse ponteiro; a memória pertence ao sistema o
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

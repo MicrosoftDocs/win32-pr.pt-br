@@ -27,7 +27,7 @@ ms.locfileid: "103918208"
 
 Para scripts, Obtém ou define a quantidade máxima de tempo que a tarefa iniciada pelo gatilho tem permissão para ser executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -57,7 +57,7 @@ Ao ler ou gravar XML para uma tarefa, o limite de tempo de execução é especif
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

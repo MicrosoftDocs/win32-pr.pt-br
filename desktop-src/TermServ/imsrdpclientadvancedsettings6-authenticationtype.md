@@ -98,7 +98,7 @@ O certificado e a autenticação Kerberos são usados.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

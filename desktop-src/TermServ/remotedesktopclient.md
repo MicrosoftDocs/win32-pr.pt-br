@@ -46,7 +46,7 @@ A classe **RemoteDesktopClient** tem esses métodos.
 | Método                                                                                      | Descrição                                                                                                                                                        |
 |:--------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**attachEvent**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-attachevent)                                     | Anexa um manipulador de eventos a um evento.<br/>                                                                                                                  |
-| [**Conectar**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-connect)                                             | Inicia uma conexão usando as propriedades atualmente definidas no controle de cliente do contêiner de aplicativo protocolo RDP (RDP).<br/>                         |
+| [**Connect**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-connect)                                             | Inicia uma conexão usando as propriedades atualmente definidas no controle de cliente do contêiner de aplicativo protocolo RDP (RDP).<br/>                         |
 | [**DeleteSavedCredentials**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-deletesavedcredentials)               | Exclui as credenciais salvas para o computador remoto especificado.<br/>                                                                                            |
 | [**detachEvent**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-detachevent)                                     | Desanexa um manipulador de eventos de um evento.<br/>                                                                                                                |
 | [**Desconectar**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-disconnect)                                       | Desconecta a conexão ativa.<br/>                                                                                                                      |
@@ -77,7 +77,7 @@ A classe **RemoteDesktopClient** tem essas propriedades.
 
 
 
-| Propriedade                                                             | Tipo de acesso          | Description                                                                                                                                                            |
+| Propriedade                                                             | Tipo de acesso          | Descrição                                                                                                                                                            |
 |:---------------------------------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Ações**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-get_actions)<br/>           | Somente leitura<br/> | Recupera o objeto Actions para o cliente de contêiner de aplicativo protocolo RDP (RDP).<br/>                                                                    |
 | [**Configurações**](iremotedesktopclient-settings.md)<br/>         | Somente leitura<br/> | Recupera o objeto de configurações para o cliente de contêiner de aplicativo protocolo RDP (RDP).<br/>                                                                   |
@@ -101,7 +101,7 @@ A classe **RemoteDesktopClient** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

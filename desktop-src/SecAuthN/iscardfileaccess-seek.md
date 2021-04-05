@@ -81,7 +81,7 @@ O método retorna um dos seguintes valores possíveis.
 
 
 
-| Código de retorno                                                                                   | Description                                  |
+| Código de retorno                                                                                   | Descrição                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operação concluída com sucesso.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parâmetro inválido.<br/>                |

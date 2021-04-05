@@ -170,7 +170,7 @@ Para dispositivos VCR, o *lpRecord* aponta para uma estrutura de parâmetros de 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
