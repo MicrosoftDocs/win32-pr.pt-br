@@ -69,7 +69,7 @@ Para determinar se um controle de edição tem o estilo [**es \_ ReadOnly**](edi
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

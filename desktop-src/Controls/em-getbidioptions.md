@@ -64,7 +64,7 @@ Essa mensagem define os valores dos membros **wMask** e **wEffects** como o valo
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

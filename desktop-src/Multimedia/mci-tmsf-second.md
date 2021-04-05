@@ -76,7 +76,7 @@ A **\_ \_ segunda macro TMSF do MCI** é definida da seguinte maneira:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
