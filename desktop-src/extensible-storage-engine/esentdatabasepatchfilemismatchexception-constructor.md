@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827698"
 ---
-# <a name="esentdatabasepatchfilemismatchexception-constructor"></a><span data-ttu-id="e214b-103">Construtor EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="e214b-103">EsentDatabasePatchFileMismatchException constructor</span></span>
+# <a name="esentdatabasepatchfilemismatchexception-constructor"></a><span data-ttu-id="6bb3b-103">Construtor EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="6bb3b-103">EsentDatabasePatchFileMismatchException constructor</span></span>
 
-<span data-ttu-id="e214b-104">Inicializa uma nova instância da classe EsentDatabasePatchFileMismatchException.</span><span class="sxs-lookup"><span data-stu-id="e214b-104">Initializes a new instance of the EsentDatabasePatchFileMismatchException class.</span></span>
+<span data-ttu-id="6bb3b-104">Inicializa uma nova instância da classe EsentDatabasePatchFileMismatchException.</span><span class="sxs-lookup"><span data-stu-id="6bb3b-104">Initializes a new instance of the EsentDatabasePatchFileMismatchException class.</span></span>
 
-<span data-ttu-id="e214b-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e214b-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="e214b-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e214b-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6bb3b-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6bb3b-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="6bb3b-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6bb3b-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e214b-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e214b-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6bb3b-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6bb3b-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentDatabasePatchFileMismatchException()
 public EsentDatabasePatchFileMismatchException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e214b-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="e214b-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6bb3b-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6bb3b-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="e214b-109">Referência</span><span class="sxs-lookup"><span data-stu-id="e214b-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6bb3b-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6bb3b-109">Reference</span></span>
 
-[<span data-ttu-id="e214b-110">Classe EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="e214b-110">EsentDatabasePatchFileMismatchException class</span></span>](./esentdatabasepatchfilemismatchexception-class.md)
+[<span data-ttu-id="6bb3b-110">Classe EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="6bb3b-110">EsentDatabasePatchFileMismatchException class</span></span>](./esentdatabasepatchfilemismatchexception-class.md)
 
-[<span data-ttu-id="e214b-111">Membros do EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="e214b-111">EsentDatabasePatchFileMismatchException members</span></span>](./esentdatabasepatchfilemismatchexception-members.md)
+[<span data-ttu-id="6bb3b-111">Membros do EsentDatabasePatchFileMismatchException</span><span class="sxs-lookup"><span data-stu-id="6bb3b-111">EsentDatabasePatchFileMismatchException members</span></span>](./esentdatabasepatchfilemismatchexception-members.md)
 
-[<span data-ttu-id="e214b-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e214b-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="6bb3b-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6bb3b-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

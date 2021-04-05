@@ -31,19 +31,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663032"
 ---
-# <a name="jet_index_range-class"></a><span data-ttu-id="d42e7-103">Classe JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="d42e7-103">JET_INDEX_RANGE class</span></span>
+# <a name="jet_index_range-class"></a><span data-ttu-id="644ff-103">Classe JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="644ff-103">JET_INDEX_RANGE class</span></span>
 
-<span data-ttu-id="d42e7-104">Contém a definição para [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).</span><span class="sxs-lookup"><span data-stu-id="d42e7-104">Contains definition for [JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[\], Int32, Int32, Int32, \[\], PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).</span></span>
+<span data-ttu-id="644ff-104">Contém a definição para [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).</span><span class="sxs-lookup"><span data-stu-id="644ff-104">Contains definition for [JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[\], Int32, Int32, Int32, \[\], PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="d42e7-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="d42e7-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="644ff-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="644ff-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="d42e7-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="d42e7-106">System.Object</span></span>](/dotnet/api/system.object)  
-  <span data-ttu-id="d42e7-107">Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="d42e7-107">Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE</span></span>  
+[<span data-ttu-id="644ff-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="644ff-106">System.Object</span></span>](/dotnet/api/system.object)  
+  <span data-ttu-id="644ff-107">Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="644ff-107">Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE</span></span>  
 
-<span data-ttu-id="d42e7-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d42e7-108">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="d42e7-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d42e7-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="644ff-108">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="644ff-108">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="644ff-109">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="644ff-109">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d42e7-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="d42e7-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="644ff-110">Syntax</span><span class="sxs-lookup"><span data-stu-id="644ff-110">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -56,14 +56,14 @@ Dim instance As JET_INDEX_RANGE
 public class JET_INDEX_RANGE
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="d42e7-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="d42e7-111">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="644ff-111">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="644ff-111">Thread safety</span></span>
 
-<span data-ttu-id="d42e7-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="d42e7-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="d42e7-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="d42e7-113">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="644ff-112">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="644ff-112">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="644ff-113">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="644ff-113">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d42e7-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="d42e7-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="644ff-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="644ff-114">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d42e7-115">Referência</span><span class="sxs-lookup"><span data-stu-id="d42e7-115">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="644ff-115">Referência</span><span class="sxs-lookup"><span data-stu-id="644ff-115">Reference</span></span>
 
-[<span data-ttu-id="d42e7-116">Membros do JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="d42e7-116">JET_INDEX_RANGE members</span></span>](./jet-index-range-members.md)
+[<span data-ttu-id="644ff-116">Membros do JET_INDEX_RANGE</span><span class="sxs-lookup"><span data-stu-id="644ff-116">JET_INDEX_RANGE members</span></span>](./jet-index-range-members.md)
 
-[<span data-ttu-id="d42e7-117">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="d42e7-117">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="644ff-117">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="644ff-117">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -12,12 +12,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827487"
 ---
-# <a name="preprocessor-commands"></a><span data-ttu-id="16b5c-103">Comandos de pré-processador</span><span class="sxs-lookup"><span data-stu-id="16b5c-103">Preprocessor Commands</span></span>
+# <a name="preprocessor-commands"></a><span data-ttu-id="611f1-103">Comandos de pré-processador</span><span class="sxs-lookup"><span data-stu-id="611f1-103">Preprocessor Commands</span></span>
 
-<span data-ttu-id="16b5c-104">Um comando de pré-processador é uma linha de código colocada dentro de um arquivo MOF que controla a maneira como o compilador MOF compila o código.</span><span class="sxs-lookup"><span data-stu-id="16b5c-104">A preprocessor command is a line of code placed inside a MOF file that controls the way the MOF compiler compiles code.</span></span> <span data-ttu-id="16b5c-105">Há dois comandos de pré-processador usados na compilação de arquivos MOF:</span><span class="sxs-lookup"><span data-stu-id="16b5c-105">There are two preprocessor commands used in compiling MOF files:</span></span>
+<span data-ttu-id="611f1-104">Um comando de pré-processador é uma linha de código colocada dentro de um arquivo MOF que controla a maneira como o compilador MOF compila o código.</span><span class="sxs-lookup"><span data-stu-id="611f1-104">A preprocessor command is a line of code placed inside a MOF file that controls the way the MOF compiler compiles code.</span></span> <span data-ttu-id="611f1-105">Há dois comandos de pré-processador usados na compilação de arquivos MOF:</span><span class="sxs-lookup"><span data-stu-id="611f1-105">There are two preprocessor commands used in compiling MOF files:</span></span>
 
--   [<span data-ttu-id="16b5c-106">\#incluir</span><span class="sxs-lookup"><span data-stu-id="16b5c-106">\#include</span></span>](-include.md)
--   [<span data-ttu-id="16b5c-107">\#pragma</span><span class="sxs-lookup"><span data-stu-id="16b5c-107">\#pragma</span></span>](-pragma.md)
+-   [<span data-ttu-id="611f1-106">\#incluir</span><span class="sxs-lookup"><span data-stu-id="611f1-106">\#include</span></span>](-include.md)
+-   [<span data-ttu-id="611f1-107">\#pragma</span><span class="sxs-lookup"><span data-stu-id="611f1-107">\#pragma</span></span>](-pragma.md)
 
  
 
