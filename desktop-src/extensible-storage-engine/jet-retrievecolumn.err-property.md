@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011118"
 ---
-# <a name="jet_retrievecolumnerr-property"></a><span data-ttu-id="e41e3-103">Propriedade JET_RETRIEVECOLUMN. err</span><span class="sxs-lookup"><span data-stu-id="e41e3-103">JET_RETRIEVECOLUMN.err property</span></span>
+# <a name="jet_retrievecolumnerr-property"></a><span data-ttu-id="3d6b7-103">Propriedade JET_RETRIEVECOLUMN. err</span><span class="sxs-lookup"><span data-stu-id="3d6b7-103">JET_RETRIEVECOLUMN.err property</span></span>
 
-<span data-ttu-id="e41e3-104">Obtém o aviso retornado da recuperação da coluna.</span><span class="sxs-lookup"><span data-stu-id="e41e3-104">Gets the warning returned from the retrieval of the column.</span></span>
+<span data-ttu-id="3d6b7-104">Obtém o aviso retornado da recuperação da coluna.</span><span class="sxs-lookup"><span data-stu-id="3d6b7-104">Gets the warning returned from the retrieval of the column.</span></span>
 
-<span data-ttu-id="e41e3-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e41e3-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="e41e3-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e41e3-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="3d6b7-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="3d6b7-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="3d6b7-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="3d6b7-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e41e3-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e41e3-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3d6b7-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="3d6b7-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,16 +58,16 @@ value = instance.err
 public JET_wrn err { get; private set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="e41e3-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="e41e3-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="3d6b7-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="3d6b7-108">Property value</span></span>
 
-<span data-ttu-id="e41e3-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="e41e3-109">Type: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)</span></span>  
+<span data-ttu-id="3d6b7-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="3d6b7-109">Type: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="e41e3-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="e41e3-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3d6b7-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="3d6b7-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="e41e3-111">Referência</span><span class="sxs-lookup"><span data-stu-id="e41e3-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="3d6b7-111">Referência</span><span class="sxs-lookup"><span data-stu-id="3d6b7-111">Reference</span></span>
 
-[<span data-ttu-id="e41e3-112">Classe JET_RETRIEVECOLUMN</span><span class="sxs-lookup"><span data-stu-id="e41e3-112">JET_RETRIEVECOLUMN class</span></span>](./jet-retrievecolumn-class.md)
+[<span data-ttu-id="3d6b7-112">Classe JET_RETRIEVECOLUMN</span><span class="sxs-lookup"><span data-stu-id="3d6b7-112">JET_RETRIEVECOLUMN class</span></span>](./jet-retrievecolumn-class.md)
 
-[<span data-ttu-id="e41e3-113">Membros do JET_RETRIEVECOLUMN</span><span class="sxs-lookup"><span data-stu-id="e41e3-113">JET_RETRIEVECOLUMN members</span></span>](./jet-retrievecolumn-members.md)
+[<span data-ttu-id="3d6b7-113">Membros do JET_RETRIEVECOLUMN</span><span class="sxs-lookup"><span data-stu-id="3d6b7-113">JET_RETRIEVECOLUMN members</span></span>](./jet-retrievecolumn-members.md)
 
-[<span data-ttu-id="e41e3-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e41e3-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="3d6b7-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3d6b7-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

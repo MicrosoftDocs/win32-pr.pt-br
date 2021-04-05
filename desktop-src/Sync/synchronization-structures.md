@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011069"
 ---
-# <a name="synchronization-structures"></a><span data-ttu-id="bcbb1-103">Estruturas de sincronização</span><span class="sxs-lookup"><span data-stu-id="bcbb1-103">Synchronization Structures</span></span>
+# <a name="synchronization-structures"></a><span data-ttu-id="6ccd7-103">Estruturas de sincronização</span><span class="sxs-lookup"><span data-stu-id="6ccd7-103">Synchronization Structures</span></span>
 
-<span data-ttu-id="bcbb1-104">As seguintes estruturas são usadas com a sincronização:</span><span class="sxs-lookup"><span data-stu-id="bcbb1-104">The following structures are used with synchronization:</span></span>
+<span data-ttu-id="6ccd7-104">As seguintes estruturas são usadas com a sincronização:</span><span class="sxs-lookup"><span data-stu-id="6ccd7-104">The following structures are used with synchronization:</span></span>
 
--   [<span data-ttu-id="bcbb1-105">**SOBREPÕE**</span><span class="sxs-lookup"><span data-stu-id="bcbb1-105">**OVERLAPPED**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-overlapped)
--   [<span data-ttu-id="bcbb1-106">**\_entrada SLIST**</span><span class="sxs-lookup"><span data-stu-id="bcbb1-106">**SLIST\_ENTRY**</span></span>](/windows/win32/api/winnt/ns-winnt-slist_entry)
+-   [<span data-ttu-id="6ccd7-105">**SOBREPÕE**</span><span class="sxs-lookup"><span data-stu-id="6ccd7-105">**OVERLAPPED**</span></span>](/windows/win32/api/minwinbase/ns-minwinbase-overlapped)
+-   [<span data-ttu-id="6ccd7-106">**\_entrada SLIST**</span><span class="sxs-lookup"><span data-stu-id="6ccd7-106">**SLIST\_ENTRY**</span></span>](/windows/win32/api/winnt/ns-winnt-slist_entry)
 
  
 

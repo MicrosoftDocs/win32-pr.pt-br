@@ -22,49 +22,49 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103918068"
 ---
-# <a name="cqpm_clearform-message"></a><span data-ttu-id="df5c9-104">\_Mensagem CQPM CLEARFORM</span><span class="sxs-lookup"><span data-stu-id="df5c9-104">CQPM\_CLEARFORM message</span></span>
+# <a name="cqpm_clearform-message"></a><span data-ttu-id="bfdc6-104">\_Mensagem CQPM CLEARFORM</span><span class="sxs-lookup"><span data-stu-id="bfdc6-104">CQPM\_CLEARFORM message</span></span>
 
-<span data-ttu-id="df5c9-105">A mensagem **CQPM \_ CLEARFORM** é enviada para a função de retorno de chamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de uma consulta para a página extensão quando o conteúdo da página deve ser redefinido para os valores padrão.</span><span class="sxs-lookup"><span data-stu-id="df5c9-105">The **CQPM\_CLEARFORM** message is sent to the [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) callback function of a query for extension page when the contents of the page should be reset to the default values.</span></span>
+<span data-ttu-id="bfdc6-105">A mensagem **CQPM \_ CLEARFORM** é enviada para a função de retorno de chamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de uma consulta para a página extensão quando o conteúdo da página deve ser redefinido para os valores padrão.</span><span class="sxs-lookup"><span data-stu-id="bfdc6-105">The **CQPM\_CLEARFORM** message is sent to the [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) callback function of a query for extension page when the contents of the page should be reset to the default values.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="df5c9-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="df5c9-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bfdc6-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="bfdc6-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="df5c9-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="df5c9-107">*wParam*</span></span> 
+<span data-ttu-id="bfdc6-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="bfdc6-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="df5c9-108">Não usado.</span><span class="sxs-lookup"><span data-stu-id="df5c9-108">Not used.</span></span>
+<span data-ttu-id="bfdc6-108">Não usado.</span><span class="sxs-lookup"><span data-stu-id="bfdc6-108">Not used.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="df5c9-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="df5c9-109">*lParam*</span></span> 
+<span data-ttu-id="bfdc6-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="bfdc6-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="df5c9-110">Não usado.</span><span class="sxs-lookup"><span data-stu-id="df5c9-110">Not used.</span></span>
+<span data-ttu-id="bfdc6-110">Não usado.</span><span class="sxs-lookup"><span data-stu-id="bfdc6-110">Not used.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="df5c9-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="df5c9-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bfdc6-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="bfdc6-111">Return value</span></span>
 
-<span data-ttu-id="df5c9-112">Retorna **S \_ OK** se for bem-sucedido ou um código de erro **HRESULT** padrão do contrário.</span><span class="sxs-lookup"><span data-stu-id="df5c9-112">Returns **S\_OK** if successful or a standard **HRESULT** error code otherwise.</span></span>
+<span data-ttu-id="bfdc6-112">Retorna **S \_ OK** se for bem-sucedido ou um código de erro **HRESULT** padrão do contrário.</span><span class="sxs-lookup"><span data-stu-id="bfdc6-112">Returns **S\_OK** if successful or a standard **HRESULT** error code otherwise.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="df5c9-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="df5c9-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="bfdc6-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bfdc6-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="df5c9-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="df5c9-114">Requirement</span></span> | <span data-ttu-id="df5c9-115">Valor</span><span class="sxs-lookup"><span data-stu-id="df5c9-115">Value</span></span> |
+| <span data-ttu-id="bfdc6-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="bfdc6-114">Requirement</span></span> | <span data-ttu-id="bfdc6-115">Valor</span><span class="sxs-lookup"><span data-stu-id="bfdc6-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="df5c9-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="df5c9-116">Minimum supported client</span></span><br/> | <span data-ttu-id="df5c9-117">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="df5c9-117">Windows Vista</span></span><br/>                                                              |
-| <span data-ttu-id="df5c9-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="df5c9-118">Minimum supported server</span></span><br/> | <span data-ttu-id="df5c9-119">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="df5c9-119">Windows Server 2008</span></span><br/>                                                        |
-| <span data-ttu-id="df5c9-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="df5c9-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="df5c9-121"><dt>Cmnquery. h</dt></span><span class="sxs-lookup"><span data-stu-id="df5c9-121"><dt>Cmnquery.h</dt></span></span> </dl> |
+| <span data-ttu-id="bfdc6-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bfdc6-116">Minimum supported client</span></span><br/> | <span data-ttu-id="bfdc6-117">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="bfdc6-117">Windows Vista</span></span><br/>                                                              |
+| <span data-ttu-id="bfdc6-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bfdc6-118">Minimum supported server</span></span><br/> | <span data-ttu-id="bfdc6-119">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="bfdc6-119">Windows Server 2008</span></span><br/>                                                        |
+| <span data-ttu-id="bfdc6-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="bfdc6-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="bfdc6-121"><dt>Cmnquery. h</dt></span><span class="sxs-lookup"><span data-stu-id="bfdc6-121"><dt>Cmnquery.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="df5c9-122">Consulte também</span><span class="sxs-lookup"><span data-stu-id="df5c9-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bfdc6-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="bfdc6-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="df5c9-123">**CQPageProc**</span><span class="sxs-lookup"><span data-stu-id="df5c9-123">**CQPageProc**</span></span>](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc)
+[<span data-ttu-id="bfdc6-123">**CQPageProc**</span><span class="sxs-lookup"><span data-stu-id="bfdc6-123">**CQPageProc**</span></span>](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc)
 </dt> </dl>
 
  

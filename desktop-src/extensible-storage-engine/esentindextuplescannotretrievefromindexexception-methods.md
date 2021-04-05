@@ -14,74 +14,74 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011063"
 ---
-# <a name="esentindextuplescannotretrievefromindexexception-methods"></a><span data-ttu-id="ca9ad-103">Métodos EsentIndexTuplesCannotRetrieveFromIndexException </span><span class="sxs-lookup"><span data-stu-id="ca9ad-103">EsentIndexTuplesCannotRetrieveFromIndexException methods</span></span>
+# <a name="esentindextuplescannotretrievefromindexexception-methods"></a><span data-ttu-id="a1293-103">Métodos EsentIndexTuplesCannotRetrieveFromIndexException </span><span class="sxs-lookup"><span data-stu-id="a1293-103">EsentIndexTuplesCannotRetrieveFromIndexException methods</span></span>
 
-<span data-ttu-id="ca9ad-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="ca9ad-104">Include protected members</span></span>  
-<span data-ttu-id="ca9ad-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="ca9ad-105">Include inherited members</span></span>  
+<span data-ttu-id="a1293-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="a1293-104">Include protected members</span></span>  
+<span data-ttu-id="a1293-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="a1293-105">Include inherited members</span></span>  
 
-<span data-ttu-id="ca9ad-106">O tipo [EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="ca9ad-106">The [EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-class.md) type exposes the following members.</span></span>
+<span data-ttu-id="a1293-106">O tipo [EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="a1293-106">The [EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-class.md) type exposes the following members.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="ca9ad-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="ca9ad-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="a1293-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="a1293-107">Methods</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="ca9ad-108">Nome</span><span class="sxs-lookup"><span data-stu-id="ca9ad-108">Name</span></span></th>
-<th><span data-ttu-id="ca9ad-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca9ad-109">Description</span></span></th>
+<th><span data-ttu-id="a1293-108">Nome</span><span class="sxs-lookup"><span data-stu-id="a1293-108">Name</span></span></th>
+<th><span data-ttu-id="a1293-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a1293-109">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-111"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Igual a</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-111"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Equals</a></span></span></td>
-<td><span data-ttu-id="ca9ad-112">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-112">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-111"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Igual a</a></span><span class="sxs-lookup"><span data-stu-id="a1293-111"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Equals</a></span></span></td>
+<td><span data-ttu-id="a1293-112">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-112">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="ca9ad-114"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-114"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></span></span></td>
-<td><span data-ttu-id="ca9ad-115">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-115">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-114"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></span><span class="sxs-lookup"><span data-stu-id="a1293-114"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></span></span></td>
+<td><span data-ttu-id="a1293-115">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-115">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-117"><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-117"><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></span></span></td>
-<td><span data-ttu-id="ca9ad-118">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-118">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-117"><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></span><span class="sxs-lookup"><span data-stu-id="a1293-117"><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></span></span></td>
+<td><span data-ttu-id="a1293-118">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-118">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-120"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-120"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span></span></td>
-<td><span data-ttu-id="ca9ad-121">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-121">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-120"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span><span class="sxs-lookup"><span data-stu-id="a1293-120"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span></span></td>
+<td><span data-ttu-id="a1293-121">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-121">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-123"><a href="dn334369(v=exchg.10).md">GetObjectData</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-123"><a href="dn334369(v=exchg.10).md">GetObjectData</a></span></span></td>
-<td><span data-ttu-id="ca9ad-124">Quando substituído em uma classe derivada, define <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> com informações sobre a exceção.</span><span class="sxs-lookup"><span data-stu-id="ca9ad-124">When overridden in a derived class, sets the <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> with information about the exception.</span></span> <span data-ttu-id="ca9ad-125">(Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-125">(Inherited from <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-123"><a href="dn334369(v=exchg.10).md">GetObjectData</a></span><span class="sxs-lookup"><span data-stu-id="a1293-123"><a href="dn334369(v=exchg.10).md">GetObjectData</a></span></span></td>
+<td><span data-ttu-id="a1293-124">Quando substituído em uma classe derivada, define <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> com informações sobre a exceção.</span><span class="sxs-lookup"><span data-stu-id="a1293-124">When overridden in a derived class, sets the <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> with information about the exception.</span></span> <span data-ttu-id="a1293-125">(Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-125">(Inherited from <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-127"><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-127"><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></span></span></td>
-<td><span data-ttu-id="ca9ad-128">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-128">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-127"><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></span><span class="sxs-lookup"><span data-stu-id="a1293-127"><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></span></span></td>
+<td><span data-ttu-id="a1293-128">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-128">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="ca9ad-130"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-130"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span></span></td>
-<td><span data-ttu-id="ca9ad-131">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-131">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-130"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span><span class="sxs-lookup"><span data-stu-id="a1293-130"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span></span></td>
+<td><span data-ttu-id="a1293-131">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-131">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="ca9ad-133"><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></span><span class="sxs-lookup"><span data-stu-id="ca9ad-133"><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></span></span></td>
-<td><span data-ttu-id="ca9ad-134">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="ca9ad-134">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
+<td><span data-ttu-id="a1293-133"><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></span><span class="sxs-lookup"><span data-stu-id="a1293-133"><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></span></span></td>
+<td><span data-ttu-id="a1293-134">(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</span><span class="sxs-lookup"><span data-stu-id="a1293-134">(Inherited from <a href="/dotnet/api/system.exception">Exception</a>.)</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="ca9ad-135">Parte superior</span><span class="sxs-lookup"><span data-stu-id="ca9ad-135">Top</span></span>
+<span data-ttu-id="a1293-135">Parte superior</span><span class="sxs-lookup"><span data-stu-id="a1293-135">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ca9ad-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="ca9ad-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1293-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="a1293-136">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="ca9ad-137">Referência</span><span class="sxs-lookup"><span data-stu-id="ca9ad-137">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="a1293-137">Referência</span><span class="sxs-lookup"><span data-stu-id="a1293-137">Reference</span></span>
 
-[<span data-ttu-id="ca9ad-138">Classe EsentIndexTuplesCannotRetrieveFromIndexException</span><span class="sxs-lookup"><span data-stu-id="ca9ad-138">EsentIndexTuplesCannotRetrieveFromIndexException class</span></span>](./esentindextuplescannotretrievefromindexexception-class.md)
+[<span data-ttu-id="a1293-138">Classe EsentIndexTuplesCannotRetrieveFromIndexException</span><span class="sxs-lookup"><span data-stu-id="a1293-138">EsentIndexTuplesCannotRetrieveFromIndexException class</span></span>](./esentindextuplescannotretrievefromindexexception-class.md)
 
-[<span data-ttu-id="ca9ad-139">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ca9ad-139">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="a1293-139">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="a1293-139">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

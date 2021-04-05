@@ -35,16 +35,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011109"
 ---
-# <a name="prereadkeysgrbit-enumeration"></a><span data-ttu-id="a53a7-103">Enumeração PrereadKeysGrbit</span><span class="sxs-lookup"><span data-stu-id="a53a7-103">PrereadKeysGrbit enumeration</span></span>
+# <a name="prereadkeysgrbit-enumeration"></a><span data-ttu-id="abd4a-103">Enumeração PrereadKeysGrbit</span><span class="sxs-lookup"><span data-stu-id="abd4a-103">PrereadKeysGrbit enumeration</span></span>
 
-<span data-ttu-id="a53a7-104">Opções para JetPrereadKeys.</span><span class="sxs-lookup"><span data-stu-id="a53a7-104">Options for JetPrereadKeys.</span></span>
+<span data-ttu-id="abd4a-104">Opções para JetPrereadKeys.</span><span class="sxs-lookup"><span data-stu-id="abd4a-104">Options for JetPrereadKeys.</span></span>
 
-<span data-ttu-id="a53a7-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="a53a7-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
+<span data-ttu-id="abd4a-105">Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.</span><span class="sxs-lookup"><span data-stu-id="abd4a-105">This enumeration has a [FlagsAttribute](/dotnet/api/system.flagsattribute) attribute that allows a bitwise combination of its member values.</span></span>
 
-<span data-ttu-id="a53a7-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a53a7-106">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
-<span data-ttu-id="a53a7-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a53a7-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="abd4a-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="abd4a-106">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
+<span data-ttu-id="abd4a-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="abd4a-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a53a7-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a53a7-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="abd4a-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="abd4a-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,33 +59,33 @@ Dim instance As PrereadKeysGrbit
 public enum PrereadKeysGrbit
 ```
 
-## <a name="members"></a><span data-ttu-id="a53a7-109">Membros</span><span class="sxs-lookup"><span data-stu-id="a53a7-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="abd4a-109">Membros</span><span class="sxs-lookup"><span data-stu-id="abd4a-109">Members</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th></th>
-<th><span data-ttu-id="a53a7-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="a53a7-110">Member name</span></span></th>
-<th><span data-ttu-id="a53a7-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="a53a7-111">Description</span></span></th>
+<th><span data-ttu-id="abd4a-110">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="abd4a-110">Member name</span></span></th>
+<th><span data-ttu-id="abd4a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="abd4a-111">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="a53a7-112">Encaminhar</span><span class="sxs-lookup"><span data-stu-id="a53a7-112">Forward</span></span></td>
-<td><span data-ttu-id="a53a7-113">Leitura antecipada.</span><span class="sxs-lookup"><span data-stu-id="a53a7-113">Preread forward.</span></span></td>
+<td><span data-ttu-id="abd4a-112">Encaminhar</span><span class="sxs-lookup"><span data-stu-id="abd4a-112">Forward</span></span></td>
+<td><span data-ttu-id="abd4a-113">Leitura antecipada.</span><span class="sxs-lookup"><span data-stu-id="abd4a-113">Preread forward.</span></span></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><span data-ttu-id="a53a7-114">Compatibilidade</span><span class="sxs-lookup"><span data-stu-id="a53a7-114">Backwards</span></span></td>
-<td><span data-ttu-id="a53a7-115">Leia para trás.</span><span class="sxs-lookup"><span data-stu-id="a53a7-115">Preread backwards.</span></span></td>
+<td><span data-ttu-id="abd4a-114">Compatibilidade</span><span class="sxs-lookup"><span data-stu-id="abd4a-114">Backwards</span></span></td>
+<td><span data-ttu-id="abd4a-115">Leia para trás.</span><span class="sxs-lookup"><span data-stu-id="abd4a-115">Preread backwards.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a><span data-ttu-id="a53a7-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="a53a7-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="abd4a-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="abd4a-116">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a53a7-117">Referência</span><span class="sxs-lookup"><span data-stu-id="a53a7-117">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="abd4a-117">Referência</span><span class="sxs-lookup"><span data-stu-id="abd4a-117">Reference</span></span>
 
-[<span data-ttu-id="a53a7-118">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="a53a7-118">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)
+[<span data-ttu-id="abd4a-118">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="abd4a-118">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)

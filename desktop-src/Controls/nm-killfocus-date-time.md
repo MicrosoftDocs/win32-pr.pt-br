@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103917985"
 ---
-# <a name="nm_killfocus-date-time-notification-code"></a><span data-ttu-id="8abd9-105">\_Código de notificação nm KILLFOCUS (data e hora)</span><span class="sxs-lookup"><span data-stu-id="8abd9-105">NM\_KILLFOCUS (date time) notification code</span></span>
+# <a name="nm_killfocus-date-time-notification-code"></a><span data-ttu-id="27451-105">\_Código de notificação nm KILLFOCUS (data e hora)</span><span class="sxs-lookup"><span data-stu-id="27451-105">NM\_KILLFOCUS (date time) notification code</span></span>
 
-<span data-ttu-id="8abd9-106">Notifica uma janela pai do controle seletor de data e hora que o controle perdeu o foco de entrada.</span><span class="sxs-lookup"><span data-stu-id="8abd9-106">Notifies a date and time picker control's parent window that the control has lost the input focus.</span></span> <span data-ttu-id="8abd9-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="8abd9-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
+<span data-ttu-id="27451-106">Notifica uma janela pai do controle seletor de data e hora que o controle perdeu o foco de entrada.</span><span class="sxs-lookup"><span data-stu-id="27451-106">Notifies a date and time picker control's parent window that the control has lost the input focus.</span></span> <span data-ttu-id="27451-107">Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .</span><span class="sxs-lookup"><span data-stu-id="27451-107">This notification code is sent in the form of a [**WM\_NOTIFY**](wm-notify.md) message.</span></span>
 
 
 ```C++
@@ -34,30 +34,30 @@ NM_KILLFOCUS
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8abd9-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8abd9-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="27451-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="27451-108">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8abd9-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="8abd9-109">*lParam*</span></span> 
+<span data-ttu-id="27451-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="27451-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="8abd9-110">O endereço de uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="8abd9-110">The address of an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
+<span data-ttu-id="27451-110">O endereço de uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.</span><span class="sxs-lookup"><span data-stu-id="27451-110">The address of an [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains additional information about this notification.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="8abd9-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="8abd9-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="27451-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="27451-111">Return value</span></span>
 
-<span data-ttu-id="8abd9-112">O valor de retorno é ignorado.</span><span class="sxs-lookup"><span data-stu-id="8abd9-112">The return value is ignored.</span></span>
+<span data-ttu-id="27451-112">O valor de retorno é ignorado.</span><span class="sxs-lookup"><span data-stu-id="27451-112">The return value is ignored.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="8abd9-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8abd9-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="27451-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="27451-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8abd9-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="8abd9-114">Requirement</span></span> | <span data-ttu-id="8abd9-115">Valor</span><span class="sxs-lookup"><span data-stu-id="8abd9-115">Value</span></span> |
+| <span data-ttu-id="27451-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="27451-114">Requirement</span></span> | <span data-ttu-id="27451-115">Valor</span><span class="sxs-lookup"><span data-stu-id="27451-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="8abd9-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8abd9-116">Minimum supported client</span></span><br/> | <span data-ttu-id="8abd9-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="8abd9-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="8abd9-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8abd9-118">Minimum supported server</span></span><br/> | <span data-ttu-id="8abd9-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="8abd9-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="8abd9-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="8abd9-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="8abd9-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="8abd9-121"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="27451-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="27451-116">Minimum supported client</span></span><br/> | <span data-ttu-id="27451-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="27451-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="27451-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="27451-118">Minimum supported server</span></span><br/> | <span data-ttu-id="27451-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="27451-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="27451-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="27451-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="27451-121"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="27451-121"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 

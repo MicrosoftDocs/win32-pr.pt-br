@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661917"
 ---
-# <a name="reporting-events"></a><span data-ttu-id="df0b3-105">Eventos de relatório</span><span class="sxs-lookup"><span data-stu-id="df0b3-105">Reporting Events</span></span>
+# <a name="reporting-events"></a><span data-ttu-id="a7bc9-105">Eventos de relatório</span><span class="sxs-lookup"><span data-stu-id="a7bc9-105">Reporting Events</span></span>
 
-<span data-ttu-id="df0b3-106">Para relatar eventos, você deve primeiro definir os eventos em um arquivo de texto de mensagem.</span><span class="sxs-lookup"><span data-stu-id="df0b3-106">To report events, you must first define the events in a message text file.</span></span> <span data-ttu-id="df0b3-107">Para obter detalhes sobre como gravar um arquivo de texto de mensagem, consulte [arquivos de texto da mensagem](message-text-files.md).</span><span class="sxs-lookup"><span data-stu-id="df0b3-107">For details on writing a message text file, see [Message Text Files](message-text-files.md).</span></span> <span data-ttu-id="df0b3-108">O seguinte mostra o arquivo de texto de mensagem usado neste exemplo.</span><span class="sxs-lookup"><span data-stu-id="df0b3-108">The following shows the message text file used in this example.</span></span>
+<span data-ttu-id="a7bc9-106">Para relatar eventos, você deve primeiro definir os eventos em um arquivo de texto de mensagem.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-106">To report events, you must first define the events in a message text file.</span></span> <span data-ttu-id="a7bc9-107">Para obter detalhes sobre como gravar um arquivo de texto de mensagem, consulte [arquivos de texto da mensagem](message-text-files.md).</span><span class="sxs-lookup"><span data-stu-id="a7bc9-107">For details on writing a message text file, see [Message Text Files](message-text-files.md).</span></span> <span data-ttu-id="a7bc9-108">O seguinte mostra o arquivo de texto de mensagem usado neste exemplo.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-108">The following shows the message text file used in this example.</span></span>
 
 
 ```C++
@@ -122,19 +122,19 @@ gallons%0
 
 
 
-<span data-ttu-id="df0b3-109">Para compilar o arquivo de texto da mensagem, use o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="df0b3-109">To compile the message text file, use the following command:</span></span>
+<span data-ttu-id="a7bc9-109">Para compilar o arquivo de texto da mensagem, use o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="a7bc9-109">To compile the message text file, use the following command:</span></span>
 
-<span data-ttu-id="df0b3-110">**MC-U provider.mc**</span><span class="sxs-lookup"><span data-stu-id="df0b3-110">**mc -U provider.mc**</span></span>
+<span data-ttu-id="a7bc9-110">**MC-U provider.mc**</span><span class="sxs-lookup"><span data-stu-id="a7bc9-110">**mc -U provider.mc**</span></span>
 
-<span data-ttu-id="df0b3-111">Para compilar os recursos gerados pelo compilador de mensagem, use o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="df0b3-111">To compile the resources that the message compiler generated, use the following command:</span></span>
+<span data-ttu-id="a7bc9-111">Para compilar os recursos gerados pelo compilador de mensagem, use o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="a7bc9-111">To compile the resources that the message compiler generated, use the following command:</span></span>
 
-<span data-ttu-id="df0b3-112">**RC Provider. rc**</span><span class="sxs-lookup"><span data-stu-id="df0b3-112">**rc provider.rc**</span></span>
+<span data-ttu-id="a7bc9-112">**RC Provider. rc**</span><span class="sxs-lookup"><span data-stu-id="a7bc9-112">**rc provider.rc**</span></span>
 
-<span data-ttu-id="df0b3-113">Para criar a DLL somente de recursos que contém os recursos de cadeia de caracteres da tabela de mensagens, use o comando a seguir (você pode executar o comando em um prompt de comando do Visual Studio):</span><span class="sxs-lookup"><span data-stu-id="df0b3-113">To create the resource-only DLL that contains the message table string resources, use the following command (you can run the command from a Visual Studio Command Prompt):</span></span>
+<span data-ttu-id="a7bc9-113">Para criar a DLL somente de recursos que contém os recursos de cadeia de caracteres da tabela de mensagens, use o comando a seguir (você pode executar o comando em um prompt de comando do Visual Studio):</span><span class="sxs-lookup"><span data-stu-id="a7bc9-113">To create the resource-only DLL that contains the message table string resources, use the following command (you can run the command from a Visual Studio Command Prompt):</span></span>
 
-<span data-ttu-id="df0b3-114">**link-dll-NOENTRY Provider. res**</span><span class="sxs-lookup"><span data-stu-id="df0b3-114">**link -dll -noentry provider.res**</span></span>
+<span data-ttu-id="a7bc9-114">**link-dll-NOENTRY Provider. res**</span><span class="sxs-lookup"><span data-stu-id="a7bc9-114">**link -dll -noentry provider.res**</span></span>
 
-<span data-ttu-id="df0b3-115">O seguinte mostra o arquivo de cabeçalho que o compilador gerou para o arquivo de texto de mensagem acima.</span><span class="sxs-lookup"><span data-stu-id="df0b3-115">The following shows the header file that the compiler generated for the above message text file.</span></span> <span data-ttu-id="df0b3-116">Inclua o arquivo de cabeçalho em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="df0b3-116">Include the header file in your project.</span></span>
+<span data-ttu-id="a7bc9-115">O seguinte mostra o arquivo de cabeçalho que o compilador gerou para o arquivo de texto de mensagem acima.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-115">The following shows the header file that the compiler generated for the above message text file.</span></span> <span data-ttu-id="a7bc9-116">Inclua o arquivo de cabeçalho em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-116">Include the header file in your project.</span></span>
 
 
 ```C++
@@ -273,7 +273,7 @@ gallons%0
 
 
 
-<span data-ttu-id="df0b3-117">O exemplo a seguir mostra como usar a função [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) para gravar os eventos definidos no arquivo de texto da mensagem acima.</span><span class="sxs-lookup"><span data-stu-id="df0b3-117">The following example shows how to use the [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) function to write the events defined in the above message text file.</span></span>
+<span data-ttu-id="a7bc9-117">O exemplo a seguir mostra como usar a função [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) para gravar os eventos definidos no arquivo de texto da mensagem acima.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-117">The following example shows how to use the [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) function to write the events defined in the above message text file.</span></span>
 
 
 ```C++
@@ -356,19 +356,19 @@ cleanup:
 
 
 
-<span data-ttu-id="df0b3-118">Antes de executar este exemplo, registre o provedor no registro.</span><span class="sxs-lookup"><span data-stu-id="df0b3-118">Before running this example, register the provider in the registry.</span></span> <span data-ttu-id="df0b3-119">Para obter detalhes sobre as configurações do registro, consulte [origens do evento](event-sources.md).</span><span class="sxs-lookup"><span data-stu-id="df0b3-119">For details on the registry settings, see [Event Sources](event-sources.md).</span></span> <span data-ttu-id="df0b3-120">Adicione "myeventprovider" como uma chave do registro na seguinte chave:</span><span class="sxs-lookup"><span data-stu-id="df0b3-120">Add "MyEventProvider" as a registry key under the following key:</span></span>
+<span data-ttu-id="a7bc9-118">Antes de executar este exemplo, registre o provedor no registro.</span><span class="sxs-lookup"><span data-stu-id="a7bc9-118">Before running this example, register the provider in the registry.</span></span> <span data-ttu-id="a7bc9-119">Para obter detalhes sobre as configurações do registro, consulte [origens do evento](event-sources.md).</span><span class="sxs-lookup"><span data-stu-id="a7bc9-119">For details on the registry settings, see [Event Sources](event-sources.md).</span></span> <span data-ttu-id="a7bc9-120">Adicione "myeventprovider" como uma chave do registro na seguinte chave:</span><span class="sxs-lookup"><span data-stu-id="a7bc9-120">Add "MyEventProvider" as a registry key under the following key:</span></span>
 
-<span data-ttu-id="df0b3-121">**HKEY \_ local \_ Machine \\ sistema \\ CurrentControlSet \\ Services \\ EventLog \\ Application**</span><span class="sxs-lookup"><span data-stu-id="df0b3-121">**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application**</span></span>
+<span data-ttu-id="a7bc9-121">**HKEY \_ local \_ Machine \\ sistema \\ CurrentControlSet \\ Services \\ EventLog \\ Application**</span><span class="sxs-lookup"><span data-stu-id="a7bc9-121">**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application**</span></span>
 
-<span data-ttu-id="df0b3-122">O seguinte mostra os valores de registro a serem definidos para a chave do registro "myeventprovider".</span><span class="sxs-lookup"><span data-stu-id="df0b3-122">The following shows the registry values to set for the "MyEventProvider" registry key.</span></span>
+<span data-ttu-id="a7bc9-122">O seguinte mostra os valores de registro a serem definidos para a chave do registro "myeventprovider".</span><span class="sxs-lookup"><span data-stu-id="a7bc9-122">The following shows the registry values to set for the "MyEventProvider" registry key.</span></span>
 
-| <span data-ttu-id="df0b3-123">Nome do valor</span><span class="sxs-lookup"><span data-stu-id="df0b3-123">Value name</span></span>           | <span data-ttu-id="df0b3-124">Type</span><span class="sxs-lookup"><span data-stu-id="df0b3-124">Type</span></span>       | <span data-ttu-id="df0b3-125">os dados de Valor</span><span class="sxs-lookup"><span data-stu-id="df0b3-125">Value data</span></span>           |
+| <span data-ttu-id="a7bc9-123">Nome do valor</span><span class="sxs-lookup"><span data-stu-id="a7bc9-123">Value name</span></span>           | <span data-ttu-id="a7bc9-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="a7bc9-124">Type</span></span>       | <span data-ttu-id="a7bc9-125">os dados de Valor</span><span class="sxs-lookup"><span data-stu-id="a7bc9-125">Value data</span></span>           |
 |----------------------|------------|----------------------|
-| <span data-ttu-id="df0b3-126">CategoryCount</span><span class="sxs-lookup"><span data-stu-id="df0b3-126">CategoryCount</span></span>        | <span data-ttu-id="df0b3-127">REG \_ DWORD</span><span class="sxs-lookup"><span data-stu-id="df0b3-127">REG\_DWORD</span></span> | <span data-ttu-id="df0b3-128">0x00000003</span><span class="sxs-lookup"><span data-stu-id="df0b3-128">0x00000003</span></span>           |
-| <span data-ttu-id="df0b3-129">CategoryMessageFile</span><span class="sxs-lookup"><span data-stu-id="df0b3-129">CategoryMessageFile</span></span>  | <span data-ttu-id="df0b3-130">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="df0b3-130">REG\_SZ</span></span>    | <span data-ttu-id="df0b3-131">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="df0b3-131">*path*\\provider.dll</span></span> |
-| <span data-ttu-id="df0b3-132">EventMessageFile</span><span class="sxs-lookup"><span data-stu-id="df0b3-132">EventMessageFile</span></span>     | <span data-ttu-id="df0b3-133">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="df0b3-133">REG\_SZ</span></span>    | <span data-ttu-id="df0b3-134">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="df0b3-134">*path*\\provider.dll</span></span> |
-| <span data-ttu-id="df0b3-135">ParameterMessageFile</span><span class="sxs-lookup"><span data-stu-id="df0b3-135">ParameterMessageFile</span></span> | <span data-ttu-id="df0b3-136">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="df0b3-136">REG\_SZ</span></span>    | <span data-ttu-id="df0b3-137">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="df0b3-137">*path*\\provider.dll</span></span> |
-| <span data-ttu-id="df0b3-138">TypesSupported</span><span class="sxs-lookup"><span data-stu-id="df0b3-138">TypesSupported</span></span>       | <span data-ttu-id="df0b3-139">REG \_ DWORD</span><span class="sxs-lookup"><span data-stu-id="df0b3-139">REG\_DWORD</span></span> | <span data-ttu-id="df0b3-140">0x00000007</span><span class="sxs-lookup"><span data-stu-id="df0b3-140">0x00000007</span></span>           |
+| <span data-ttu-id="a7bc9-126">CategoryCount</span><span class="sxs-lookup"><span data-stu-id="a7bc9-126">CategoryCount</span></span>        | <span data-ttu-id="a7bc9-127">REG \_ DWORD</span><span class="sxs-lookup"><span data-stu-id="a7bc9-127">REG\_DWORD</span></span> | <span data-ttu-id="a7bc9-128">0x00000003</span><span class="sxs-lookup"><span data-stu-id="a7bc9-128">0x00000003</span></span>           |
+| <span data-ttu-id="a7bc9-129">CategoryMessageFile</span><span class="sxs-lookup"><span data-stu-id="a7bc9-129">CategoryMessageFile</span></span>  | <span data-ttu-id="a7bc9-130">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="a7bc9-130">REG\_SZ</span></span>    | <span data-ttu-id="a7bc9-131">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="a7bc9-131">*path*\\provider.dll</span></span> |
+| <span data-ttu-id="a7bc9-132">EventMessageFile</span><span class="sxs-lookup"><span data-stu-id="a7bc9-132">EventMessageFile</span></span>     | <span data-ttu-id="a7bc9-133">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="a7bc9-133">REG\_SZ</span></span>    | <span data-ttu-id="a7bc9-134">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="a7bc9-134">*path*\\provider.dll</span></span> |
+| <span data-ttu-id="a7bc9-135">ParameterMessageFile</span><span class="sxs-lookup"><span data-stu-id="a7bc9-135">ParameterMessageFile</span></span> | <span data-ttu-id="a7bc9-136">REG \_ sz</span><span class="sxs-lookup"><span data-stu-id="a7bc9-136">REG\_SZ</span></span>    | <span data-ttu-id="a7bc9-137">*caminho* \\ doprovider.dll</span><span class="sxs-lookup"><span data-stu-id="a7bc9-137">*path*\\provider.dll</span></span> |
+| <span data-ttu-id="a7bc9-138">TypesSupported</span><span class="sxs-lookup"><span data-stu-id="a7bc9-138">TypesSupported</span></span>       | <span data-ttu-id="a7bc9-139">REG \_ DWORD</span><span class="sxs-lookup"><span data-stu-id="a7bc9-139">REG\_DWORD</span></span> | <span data-ttu-id="a7bc9-140">0x00000007</span><span class="sxs-lookup"><span data-stu-id="a7bc9-140">0x00000007</span></span>           |
 
 
 
