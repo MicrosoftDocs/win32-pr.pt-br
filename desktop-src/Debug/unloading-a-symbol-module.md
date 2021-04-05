@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103826399"
 ---
-# <a name="unloading-a-symbol-module"></a><span data-ttu-id="7bd08-103">Descarregando um módulo de símbolo</span><span class="sxs-lookup"><span data-stu-id="7bd08-103">Unloading a Symbol Module</span></span>
+# <a name="unloading-a-symbol-module"></a><span data-ttu-id="5e970-103">Descarregando um módulo de símbolo</span><span class="sxs-lookup"><span data-stu-id="5e970-103">Unloading a Symbol Module</span></span>
 
-<span data-ttu-id="7bd08-104">O código a seguir descarrega um módulo de símbolo referido pelo endereço do módulo BaseOfDll usando [**SymUnloadModule64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symunloadmodule).</span><span class="sxs-lookup"><span data-stu-id="7bd08-104">The following code unloads a symbol module referred to by the BaseOfDll module address using [**SymUnloadModule64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symunloadmodule).</span></span>
+<span data-ttu-id="5e970-104">O código a seguir descarrega um módulo de símbolo referido pelo endereço do módulo BaseOfDll usando [**SymUnloadModule64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symunloadmodule).</span><span class="sxs-lookup"><span data-stu-id="5e970-104">The following code unloads a symbol module referred to by the BaseOfDll module address using [**SymUnloadModule64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symunloadmodule).</span></span>
 
 
 ```C++
@@ -31,11 +31,11 @@ else
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="7bd08-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7bd08-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5e970-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5e970-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7bd08-106">Carregando um módulo de símbolo</span><span class="sxs-lookup"><span data-stu-id="7bd08-106">Loading a Symbol Module</span></span>](loading-a-symbol-module.md)
+[<span data-ttu-id="5e970-106">Carregando um módulo de símbolo</span><span class="sxs-lookup"><span data-stu-id="5e970-106">Loading a Symbol Module</span></span>](loading-a-symbol-module.md)
 </dt> </dl>
 
  

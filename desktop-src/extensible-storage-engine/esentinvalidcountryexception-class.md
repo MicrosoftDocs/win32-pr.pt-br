@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827690"
 ---
-# <a name="esentinvalidcountryexception-class"></a><span data-ttu-id="ff0c5-103">Classe EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-103">EsentInvalidCountryException class</span></span>
+# <a name="esentinvalidcountryexception-class"></a><span data-ttu-id="6dba4-103">Classe EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="6dba4-103">EsentInvalidCountryException class</span></span>
 
-<span data-ttu-id="ff0c5-104">Classe base para JET_err. InvalidCountry exceções.</span><span class="sxs-lookup"><span data-stu-id="ff0c5-104">Base class for JET_err.InvalidCountry exceptions.</span></span>
+<span data-ttu-id="6dba4-104">Classe base para JET_err. InvalidCountry exceções.</span><span class="sxs-lookup"><span data-stu-id="6dba4-104">Base class for JET_err.InvalidCountry exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="ff0c5-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="ff0c5-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="6dba4-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="6dba4-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="ff0c5-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="ff0c5-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="ff0c5-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="ff0c5-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="ff0c5-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="ff0c5-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="ff0c5-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="ff0c5-111">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-111">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
-            <span data-ttu-id="ff0c5-112">Microsoft. ISAM. ESENT. Interop. EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-112">Microsoft.Isam.Esent.Interop.EsentInvalidCountryException</span></span>  
+[<span data-ttu-id="6dba4-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="6dba4-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="6dba4-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="6dba4-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="6dba4-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="6dba4-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="6dba4-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="6dba4-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="6dba4-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="6dba4-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="6dba4-111">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="6dba4-111">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
+            <span data-ttu-id="6dba4-112">Microsoft. ISAM. ESENT. Interop. EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="6dba4-112">Microsoft.Isam.Esent.Interop.EsentInvalidCountryException</span></span>  
 
-<span data-ttu-id="ff0c5-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ff0c5-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="ff0c5-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ff0c5-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6dba4-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6dba4-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="6dba4-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6dba4-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ff0c5-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="ff0c5-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6dba4-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="6dba4-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentInvalidCountryException
 public sealed class EsentInvalidCountryException : EsentObsoleteException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="ff0c5-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="ff0c5-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="6dba4-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="6dba4-116">Thread safety</span></span>
 
-<span data-ttu-id="ff0c5-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="ff0c5-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="ff0c5-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="ff0c5-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="6dba4-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="6dba4-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="6dba4-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="6dba4-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ff0c5-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="ff0c5-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6dba4-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="6dba4-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="ff0c5-120">Referência</span><span class="sxs-lookup"><span data-stu-id="ff0c5-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6dba4-120">Referência</span><span class="sxs-lookup"><span data-stu-id="6dba4-120">Reference</span></span>
 
-[<span data-ttu-id="ff0c5-121">Membros do EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="ff0c5-121">EsentInvalidCountryException members</span></span>](./esentinvalidcountryexception-members.md)
+[<span data-ttu-id="6dba4-121">Membros do EsentInvalidCountryException</span><span class="sxs-lookup"><span data-stu-id="6dba4-121">EsentInvalidCountryException members</span></span>](./esentinvalidcountryexception-members.md)
 
-[<span data-ttu-id="ff0c5-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ff0c5-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="6dba4-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6dba4-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -11,38 +11,38 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104164959"
 ---
-# <a name="xmuint2-operators"></a><span data-ttu-id="10aed-103">Operadores XMUINT2</span><span class="sxs-lookup"><span data-stu-id="10aed-103">XMUINT2 Operators</span></span>
+# <a name="xmuint2-operators"></a><span data-ttu-id="073ae-103">Operadores XMUINT2</span><span class="sxs-lookup"><span data-stu-id="073ae-103">XMUINT2 Operators</span></span>
 
-<span data-ttu-id="10aed-104">A estrutura [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2) expõe os operadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="10aed-104">The [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2) structure exposes the following operators.</span></span>
+<span data-ttu-id="073ae-104">A estrutura [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2) expõe os operadores a seguir.</span><span class="sxs-lookup"><span data-stu-id="073ae-104">The [**XMUINT2**](/windows/win32/api/directxmath/ns-directxmath-xmuint2) structure exposes the following operators.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="10aed-105">Os operadores listados aqui só estão disponíveis em C++.</span><span class="sxs-lookup"><span data-stu-id="10aed-105">The operators listed here are only available under C++.</span></span>
+> <span data-ttu-id="073ae-105">Os operadores listados aqui só estão disponíveis em C++.</span><span class="sxs-lookup"><span data-stu-id="073ae-105">The operators listed here are only available under C++.</span></span>
 
  
 
-## <a name="in-this-section"></a><span data-ttu-id="10aed-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="10aed-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="073ae-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="073ae-106">In this section</span></span>
 
 
 
-| <span data-ttu-id="10aed-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="10aed-107">Methods</span></span>                                              | <span data-ttu-id="10aed-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="10aed-108">Description</span></span>                                                                                                       |
+| <span data-ttu-id="073ae-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="073ae-107">Methods</span></span>                                              | <span data-ttu-id="073ae-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="073ae-108">Description</span></span>                                                                                                       |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="10aed-109">**operador =**</span><span class="sxs-lookup"><span data-stu-id="10aed-109">**operator =**</span></span>](/windows/win32/api/directxmath/nf-directxmath-xmuint2-operator-assign)<br/> | <span data-ttu-id="10aed-110">Atribui os dados do componente de vetor de uma instância do `XMUINT2` à instância atual do `XMUINT2` .</span><span class="sxs-lookup"><span data-stu-id="10aed-110">Assigns the vector component data from one instance of `XMUINT2` to the current instance of `XMUINT2`.</span></span><br/> |
+| [<span data-ttu-id="073ae-109">**operador =**</span><span class="sxs-lookup"><span data-stu-id="073ae-109">**operator =**</span></span>](/windows/win32/api/directxmath/nf-directxmath-xmuint2-operator-assign)<br/> | <span data-ttu-id="073ae-110">Atribui os dados do componente de vetor de uma instância do `XMUINT2` à instância atual do `XMUINT2` .</span><span class="sxs-lookup"><span data-stu-id="073ae-110">Assigns the vector component data from one instance of `XMUINT2` to the current instance of `XMUINT2`.</span></span><br/> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="10aed-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="10aed-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="073ae-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="073ae-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="10aed-112">Extensões XMUINT2</span><span class="sxs-lookup"><span data-stu-id="10aed-112">XMUINT2 Extensions</span></span>](ovw-xmuint2-extensions.md)
+[<span data-ttu-id="073ae-112">Extensões XMUINT2</span><span class="sxs-lookup"><span data-stu-id="073ae-112">XMUINT2 Extensions</span></span>](ovw-xmuint2-extensions.md)
 </dt> <dt>
 
-<span data-ttu-id="10aed-113">**Referência**</span><span class="sxs-lookup"><span data-stu-id="10aed-113">**Reference**</span></span>
+<span data-ttu-id="073ae-113">**Referência**</span><span class="sxs-lookup"><span data-stu-id="073ae-113">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="10aed-114">**XMUINT2**</span><span class="sxs-lookup"><span data-stu-id="10aed-114">**XMUINT2**</span></span>](/windows/win32/api/directxmath/ns-directxmath-xmuint2)
+[<span data-ttu-id="073ae-114">**XMUINT2**</span><span class="sxs-lookup"><span data-stu-id="073ae-114">**XMUINT2**</span></span>](/windows/win32/api/directxmath/ns-directxmath-xmuint2)
 </dt> </dl>
 
  

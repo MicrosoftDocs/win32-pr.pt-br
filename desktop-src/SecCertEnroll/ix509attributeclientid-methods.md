@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827451"
 ---
-# <a name="ix509attributeclientid-methods"></a><span data-ttu-id="8f0ab-103">Métodos IX509AttributeClientId</span><span class="sxs-lookup"><span data-stu-id="8f0ab-103">IX509AttributeClientId Methods</span></span>
+# <a name="ix509attributeclientid-methods"></a><span data-ttu-id="16d5f-103">Métodos IX509AttributeClientId</span><span class="sxs-lookup"><span data-stu-id="16d5f-103">IX509AttributeClientId Methods</span></span>
 
-<span data-ttu-id="8f0ab-104">A interface [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8f0ab-104">The [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) interface exposes the following methods.</span></span>
+<span data-ttu-id="16d5f-104">A interface [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="16d5f-104">The [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="8f0ab-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8f0ab-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="16d5f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="16d5f-105">In this section</span></span>
 
--   [<span data-ttu-id="8f0ab-106">**Método InitializeDecode**</span><span class="sxs-lookup"><span data-stu-id="8f0ab-106">**InitializeDecode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializedecode)
--   [<span data-ttu-id="8f0ab-107">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="8f0ab-107">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializeencode)
+-   [<span data-ttu-id="16d5f-106">**Método InitializeDecode**</span><span class="sxs-lookup"><span data-stu-id="16d5f-106">**InitializeDecode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializedecode)
+-   [<span data-ttu-id="16d5f-107">**Método InitializeEncode**</span><span class="sxs-lookup"><span data-stu-id="16d5f-107">**InitializeEncode Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509attributeclientid-initializeencode)
 
  
 

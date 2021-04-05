@@ -19,13 +19,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103826334"
 ---
-# <a name="cabinetdllversioninfo-structure"></a><span data-ttu-id="8759f-103">Estrutura CABINETDLLVERSIONINFO</span><span class="sxs-lookup"><span data-stu-id="8759f-103">CABINETDLLVERSIONINFO structure</span></span>
+# <a name="cabinetdllversioninfo-structure"></a><span data-ttu-id="42b36-103">Estrutura CABINETDLLVERSIONINFO</span><span class="sxs-lookup"><span data-stu-id="42b36-103">CABINETDLLVERSIONINFO structure</span></span>
 
-<span data-ttu-id="8759f-104">\[Esta estrutura contém informações necessárias apenas ao usar a função **DllGetVersion** , que não tem suporte.</span><span class="sxs-lookup"><span data-stu-id="8759f-104">\[This structure contains information required only when using the **DllGetVersion** function, which is not supported.</span></span> <span data-ttu-id="8759f-105">Esta documentação é fornecida apenas para fins informativos.\]</span><span class="sxs-lookup"><span data-stu-id="8759f-105">This documentation is provided for informational purposes only.\]</span></span>
+<span data-ttu-id="42b36-104">\[Esta estrutura contém informações necessárias apenas ao usar a função **DllGetVersion** , que não tem suporte.</span><span class="sxs-lookup"><span data-stu-id="42b36-104">\[This structure contains information required only when using the **DllGetVersion** function, which is not supported.</span></span> <span data-ttu-id="42b36-105">Esta documentação é fornecida apenas para fins informativos.\]</span><span class="sxs-lookup"><span data-stu-id="42b36-105">This documentation is provided for informational purposes only.\]</span></span>
 
-<span data-ttu-id="8759f-106">O **CABINETDLLVERSIONINFO** contém as informações de versão para Cabinet.dll.</span><span class="sxs-lookup"><span data-stu-id="8759f-106">The **CABINETDLLVERSIONINFO** contains the version information for Cabinet.dll.</span></span>
+<span data-ttu-id="42b36-106">O **CABINETDLLVERSIONINFO** contém as informações de versão para Cabinet.dll.</span><span class="sxs-lookup"><span data-stu-id="42b36-106">The **CABINETDLLVERSIONINFO** contains the version information for Cabinet.dll.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8759f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8759f-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="42b36-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="42b36-107">Syntax</span></span>
 
 
 ```C++
@@ -40,50 +40,50 @@ typedef struct {
 
 
 
-## <a name="members"></a><span data-ttu-id="8759f-108">Membros</span><span class="sxs-lookup"><span data-stu-id="8759f-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="42b36-108">Membros</span><span class="sxs-lookup"><span data-stu-id="42b36-108">Members</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8759f-109">**cbStruct**</span><span class="sxs-lookup"><span data-stu-id="8759f-109">**cbStruct**</span></span>
+<span data-ttu-id="42b36-109">**cbStruct**</span><span class="sxs-lookup"><span data-stu-id="42b36-109">**cbStruct**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8759f-110">O tamanho dessa estrutura, em bytes.</span><span class="sxs-lookup"><span data-stu-id="8759f-110">The size of this structure, in bytes.</span></span>
+<span data-ttu-id="42b36-110">O tamanho dessa estrutura, em bytes.</span><span class="sxs-lookup"><span data-stu-id="42b36-110">The size of this structure, in bytes.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8759f-111">**dwReserved1**</span><span class="sxs-lookup"><span data-stu-id="8759f-111">**dwReserved1**</span></span>
+<span data-ttu-id="42b36-111">**dwReserved1**</span><span class="sxs-lookup"><span data-stu-id="42b36-111">**dwReserved1**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8759f-112">Reservado.</span><span class="sxs-lookup"><span data-stu-id="8759f-112">Reserved.</span></span>
+<span data-ttu-id="42b36-112">Reservado.</span><span class="sxs-lookup"><span data-stu-id="42b36-112">Reserved.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8759f-113">**dwReserved2**</span><span class="sxs-lookup"><span data-stu-id="8759f-113">**dwReserved2**</span></span>
+<span data-ttu-id="42b36-113">**dwReserved2**</span><span class="sxs-lookup"><span data-stu-id="42b36-113">**dwReserved2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8759f-114">Reservado.</span><span class="sxs-lookup"><span data-stu-id="8759f-114">Reserved.</span></span>
+<span data-ttu-id="42b36-114">Reservado.</span><span class="sxs-lookup"><span data-stu-id="42b36-114">Reserved.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8759f-115">**dwFileVersionMS**</span><span class="sxs-lookup"><span data-stu-id="8759f-115">**dwFileVersionMS**</span></span>
+<span data-ttu-id="42b36-115">**dwFileVersionMS**</span><span class="sxs-lookup"><span data-stu-id="42b36-115">**dwFileVersionMS**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8759f-116">Contém os bits mais significativos das informações de versão.</span><span class="sxs-lookup"><span data-stu-id="8759f-116">Contains the most significant bits of the version information.</span></span> <span data-ttu-id="8759f-117">O bits 0-15 contém a versão secundária e o bits 16-31 contém a versão principal.</span><span class="sxs-lookup"><span data-stu-id="8759f-117">Bits 0-15 contain the minor version, and bits 16-31 contain the major version.</span></span>
+<span data-ttu-id="42b36-116">Contém os bits mais significativos das informações de versão.</span><span class="sxs-lookup"><span data-stu-id="42b36-116">Contains the most significant bits of the version information.</span></span> <span data-ttu-id="42b36-117">O bits 0-15 contém a versão secundária e o bits 16-31 contém a versão principal.</span><span class="sxs-lookup"><span data-stu-id="42b36-117">Bits 0-15 contain the minor version, and bits 16-31 contain the major version.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="8759f-118">**dwFileVersionLS**</span><span class="sxs-lookup"><span data-stu-id="8759f-118">**dwFileVersionLS**</span></span>
+<span data-ttu-id="42b36-118">**dwFileVersionLS**</span><span class="sxs-lookup"><span data-stu-id="42b36-118">**dwFileVersionLS**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8759f-119">Contém os bits menos significativos das informações de versão.</span><span class="sxs-lookup"><span data-stu-id="8759f-119">Contains the least significant bits of the version information.</span></span> <span data-ttu-id="8759f-120">O bits 0-15 contém o número de revisão e o bits 16-31 contém o número de Build.</span><span class="sxs-lookup"><span data-stu-id="8759f-120">Bits 0-15 contain the revision number, and bits 16-31 contain the build number.</span></span>
+<span data-ttu-id="42b36-119">Contém os bits menos significativos das informações de versão.</span><span class="sxs-lookup"><span data-stu-id="42b36-119">Contains the least significant bits of the version information.</span></span> <span data-ttu-id="42b36-120">O bits 0-15 contém o número de revisão e o bits 16-31 contém o número de Build.</span><span class="sxs-lookup"><span data-stu-id="42b36-120">Bits 0-15 contain the revision number, and bits 16-31 contain the build number.</span></span>
 
 </dd> </dl>
 
-## <a name="see-also"></a><span data-ttu-id="8759f-121">Consulte também</span><span class="sxs-lookup"><span data-stu-id="8759f-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="42b36-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="42b36-121">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8759f-122">**DllGetVersion**</span><span class="sxs-lookup"><span data-stu-id="8759f-122">**DllGetVersion**</span></span>](dllgetversion.md)
+[<span data-ttu-id="42b36-122">**DllGetVersion**</span><span class="sxs-lookup"><span data-stu-id="42b36-122">**DllGetVersion**</span></span>](dllgetversion.md)
 </dt> </dl>
 
  

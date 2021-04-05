@@ -31,25 +31,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104164675"
 ---
-# <a name="esentoutofmemoryexception-class"></a><span data-ttu-id="74380-103">Classe EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="74380-103">EsentOutOfMemoryException class</span></span>
+# <a name="esentoutofmemoryexception-class"></a><span data-ttu-id="8a3e6-103">Classe EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-103">EsentOutOfMemoryException class</span></span>
 
-<span data-ttu-id="74380-104">Classe base para JET_err. Exceções de OutOfMemory.</span><span class="sxs-lookup"><span data-stu-id="74380-104">Base class for JET_err.OutOfMemory exceptions.</span></span>
+<span data-ttu-id="8a3e6-104">Classe base para JET_err. Exceções de OutOfMemory.</span><span class="sxs-lookup"><span data-stu-id="8a3e6-104">Base class for JET_err.OutOfMemory exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="74380-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="74380-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="8a3e6-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="8a3e6-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="74380-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="74380-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="74380-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="74380-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="74380-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="74380-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="74380-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="74380-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="74380-110">Microsoft. ISAM. ESENT. Interop. EsentOperationException</span><span class="sxs-lookup"><span data-stu-id="74380-110">Microsoft.Isam.Esent.Interop.EsentOperationException</span></span>](./esentoperationexception-class.md)  
-          [<span data-ttu-id="74380-111">Microsoft. ISAM. ESENT. Interop. EsentResourceException</span><span class="sxs-lookup"><span data-stu-id="74380-111">Microsoft.Isam.Esent.Interop.EsentResourceException</span></span>](./esentresourceexception-class.md)  
-            [<span data-ttu-id="74380-112">Microsoft. ISAM. ESENT. Interop. EsentMemoryException</span><span class="sxs-lookup"><span data-stu-id="74380-112">Microsoft.Isam.Esent.Interop.EsentMemoryException</span></span>](./esentmemoryexception-class.md)  
-              <span data-ttu-id="74380-113">Microsoft. ISAM. ESENT. Interop. EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="74380-113">Microsoft.Isam.Esent.Interop.EsentOutOfMemoryException</span></span>  
+[<span data-ttu-id="8a3e6-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="8a3e6-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="8a3e6-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="8a3e6-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="8a3e6-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="8a3e6-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="8a3e6-110">Microsoft. ISAM. ESENT. Interop. EsentOperationException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-110">Microsoft.Isam.Esent.Interop.EsentOperationException</span></span>](./esentoperationexception-class.md)  
+          [<span data-ttu-id="8a3e6-111">Microsoft. ISAM. ESENT. Interop. EsentResourceException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-111">Microsoft.Isam.Esent.Interop.EsentResourceException</span></span>](./esentresourceexception-class.md)  
+            [<span data-ttu-id="8a3e6-112">Microsoft. ISAM. ESENT. Interop. EsentMemoryException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-112">Microsoft.Isam.Esent.Interop.EsentMemoryException</span></span>](./esentmemoryexception-class.md)  
+              <span data-ttu-id="8a3e6-113">Microsoft. ISAM. ESENT. Interop. EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-113">Microsoft.Isam.Esent.Interop.EsentOutOfMemoryException</span></span>  
 
-<span data-ttu-id="74380-114">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="74380-114">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="74380-115">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="74380-115">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="8a3e6-114">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8a3e6-114">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="8a3e6-115">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8a3e6-115">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="74380-116">Syntax</span><span class="sxs-lookup"><span data-stu-id="74380-116">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8a3e6-116">Syntax</span><span class="sxs-lookup"><span data-stu-id="8a3e6-116">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -65,14 +65,14 @@ Dim instance As EsentOutOfMemoryException
 public sealed class EsentOutOfMemoryException : EsentMemoryException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="74380-117">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="74380-117">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="8a3e6-117">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="8a3e6-117">Thread safety</span></span>
 
-<span data-ttu-id="74380-118">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="74380-118">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="74380-119">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="74380-119">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="8a3e6-118">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="8a3e6-118">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="8a3e6-119">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="8a3e6-119">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="74380-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="74380-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8a3e6-120">Confira também</span><span class="sxs-lookup"><span data-stu-id="8a3e6-120">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="74380-121">Referência</span><span class="sxs-lookup"><span data-stu-id="74380-121">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="8a3e6-121">Referência</span><span class="sxs-lookup"><span data-stu-id="8a3e6-121">Reference</span></span>
 
-[<span data-ttu-id="74380-122">Membros do EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="74380-122">EsentOutOfMemoryException members</span></span>](./esentoutofmemoryexception-members.md)
+[<span data-ttu-id="8a3e6-122">Membros do EsentOutOfMemoryException</span><span class="sxs-lookup"><span data-stu-id="8a3e6-122">EsentOutOfMemoryException members</span></span>](./esentoutofmemoryexception-members.md)
 
-[<span data-ttu-id="74380-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="74380-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="8a3e6-123">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8a3e6-123">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

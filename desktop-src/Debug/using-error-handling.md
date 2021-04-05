@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103826396"
 ---
-# <a name="using-error-handling"></a><span data-ttu-id="e0247-103">Usando o tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="e0247-103">Using Error Handling</span></span>
+# <a name="using-error-handling"></a><span data-ttu-id="5b737-103">Usando o tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="5b737-103">Using Error Handling</span></span>
 
-<span data-ttu-id="e0247-104">O tópico a seguir contém detalhes sobre como usar as funções [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) :</span><span class="sxs-lookup"><span data-stu-id="e0247-104">The following topic contains details on using the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) and [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) functions:</span></span>
+<span data-ttu-id="5b737-104">O tópico a seguir contém detalhes sobre como usar as funções [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) :</span><span class="sxs-lookup"><span data-stu-id="5b737-104">The following topic contains details on using the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) and [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) functions:</span></span>
 
--   [<span data-ttu-id="e0247-105">Recuperando o código de Last-Error</span><span class="sxs-lookup"><span data-stu-id="e0247-105">Retrieving the Last-Error Code</span></span>](retrieving-the-last-error-code.md)
+-   [<span data-ttu-id="5b737-105">Recuperando o código de Last-Error</span><span class="sxs-lookup"><span data-stu-id="5b737-105">Retrieving the Last-Error Code</span></span>](retrieving-the-last-error-code.md)
 
  
 

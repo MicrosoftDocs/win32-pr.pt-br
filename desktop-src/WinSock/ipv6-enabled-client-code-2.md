@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103920908"
 ---
-# <a name="ipv6-enabled-client-code"></a><span data-ttu-id="4a851-103">IPv6-Enabled código de cliente</span><span class="sxs-lookup"><span data-stu-id="4a851-103">IPv6-Enabled Client Code</span></span>
+# <a name="ipv6-enabled-client-code"></a><span data-ttu-id="ef174-103">IPv6-Enabled código de cliente</span><span class="sxs-lookup"><span data-stu-id="ef174-103">IPv6-Enabled Client Code</span></span>
 
-<span data-ttu-id="4a851-104">O código a seguir é o arquivo client. c independente de IP, que é uma versão habilitada para IPv6 do arquivo Simplec. c.</span><span class="sxs-lookup"><span data-stu-id="4a851-104">The following code is the IP agnostic Client.c file, which is an IPv6-enabled version of the Simplec.c file.</span></span>
+<span data-ttu-id="ef174-104">O código a seguir é o arquivo client. c independente de IP, que é uma versão habilitada para IPv6 do arquivo Simplec. c.</span><span class="sxs-lookup"><span data-stu-id="ef174-104">The following code is the IP agnostic Client.c file, which is an IPv6-enabled version of the Simplec.c file.</span></span>
 
 
 ```C++
