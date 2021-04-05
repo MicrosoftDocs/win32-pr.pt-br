@@ -82,7 +82,7 @@ Antes de chamar essa função, chame a função [**SdbFindFirstTag**](sdbfindfir
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

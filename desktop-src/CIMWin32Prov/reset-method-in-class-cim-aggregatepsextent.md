@@ -1,42 +1,40 @@
 ---
-description: O método Invoke da classe CIM \_ Fileespecífication avalia uma verificação específica. Os detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas subclasses de verificação CIM não abstratas \_ . Esse método é herdado da \_ verificação CIM.
-ms.assetid: cefb64b5-c06f-4775-a903-4e8a8b99a6ae
+description: O método reset da classe CIM \_ AggregatePSExtent solicita uma redefinição do dispositivo lógico.
+ms.assetid: 6669126f-ceab-4e34-81e5-5cfe1abf5b98
 ms.tgt_platform: multiple
-title: Método Invoke da classe CIM_FileSpecification
+title: Método Reset da classe CIM_AggregatePSExtent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
 - APIRef
 - kbSyntax
 api_name:
-- CIM_FileSpecification.Invoke
+- CIM_AggregatePSExtent.Reset
 api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 725fa6f9e667f70a270754d2bc453acc4b695ca2
+ms.openlocfilehash: 376ac4f0180e92f1b67a13e4fbf98a2912ee4ade
 ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826296"
+ms.locfileid: "103826700"
 ---
-# <a name="invoke-method-of-the-cim_filespecification-class"></a>Método Invoke da classe CIM \_ Fileespecífication
+# <a name="reset-method-of-the-cim_aggregatepsextent-class"></a>Método Reset da classe CIM \_ AggregatePSExtent
 
-O método **Invoke** da classe [**CIM \_ fileespecífication**](cim-filespecification.md) avalia uma verificação específica. Os detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas subclasses de [**\_ verificação CIM**](cim-check.md) não abstratas. Esse método é herdado **da \_ verificação CIM**.
+O método **Reset** da classe CIM \_ AggregatePSExtent solicita uma redefinição do dispositivo lógico. Esse método é herdado [**do \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
 > As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
-
 ## <a name="syntax"></a>Sintaxe
 
 
 ```mof
-uint32 Invoke();
+uint32 Reset();
 ```
 
 
@@ -47,7 +45,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Retornar valor
 
-Retorna um valor de 0 (zero) em êxito, 1 (um) se o método não tiver suporte e qualquer outro número para indicar um erro.
+Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 
 ## <a name="remarks"></a>Comentários
 
@@ -73,11 +71,16 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[Inespecificações de CIM \_](invoke-method-in-class-cim-filespecification.md)
+[\_AGGREGATEPSEXTENT CIM](reset-method-in-class-cim-aggregatepsextent.md)
 </dt> <dt>
 
-[**Inespecificações de CIM \_**](cim-filespecification.md)
+[**\_AGGREGATEPSEXTENT CIM**](cim-aggregatepsextent.md)
 </dt> </dl>
 
  
+
+ 
+
+
+
 

@@ -65,7 +65,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Sucesso.
+Êxito.
 
 </dd> <dt>
 
