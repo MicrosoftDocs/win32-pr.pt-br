@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662951"
 ---
-# <a name="vistacoltypunsignedshort-field"></a><span data-ttu-id="d26ce-103">Campo VistaColtyp. UnsignedShort</span><span class="sxs-lookup"><span data-stu-id="d26ce-103">VistaColtyp.UnsignedShort field</span></span>
+# <a name="vistacoltypunsignedshort-field"></a><span data-ttu-id="5c39d-103">Campo VistaColtyp. UnsignedShort</span><span class="sxs-lookup"><span data-stu-id="5c39d-103">VistaColtyp.UnsignedShort field</span></span>
 
-<span data-ttu-id="d26ce-104">Número de 16 bits sem sinal.</span><span class="sxs-lookup"><span data-stu-id="d26ce-104">Unsigned 16-bit number.</span></span>
+<span data-ttu-id="5c39d-104">Número de 16 bits sem sinal.</span><span class="sxs-lookup"><span data-stu-id="5c39d-104">Unsigned 16-bit number.</span></span>
 
-<span data-ttu-id="d26ce-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d26ce-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="d26ce-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d26ce-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5c39d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5c39d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="5c39d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5c39d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d26ce-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d26ce-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5c39d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5c39d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = VistaColtyp.UnsignedShort
 public const JET_coltyp UnsignedShort
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d26ce-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="d26ce-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5c39d-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="5c39d-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d26ce-109">Referência</span><span class="sxs-lookup"><span data-stu-id="d26ce-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5c39d-109">Referência</span><span class="sxs-lookup"><span data-stu-id="5c39d-109">Reference</span></span>
 
-[<span data-ttu-id="d26ce-110">Classe VistaColtyp</span><span class="sxs-lookup"><span data-stu-id="d26ce-110">VistaColtyp class</span></span>](./vistacoltyp-class.md)
+[<span data-ttu-id="5c39d-110">Classe VistaColtyp</span><span class="sxs-lookup"><span data-stu-id="5c39d-110">VistaColtyp class</span></span>](./vistacoltyp-class.md)
 
-[<span data-ttu-id="d26ce-111">Membros do VistaColtyp</span><span class="sxs-lookup"><span data-stu-id="d26ce-111">VistaColtyp members</span></span>](./vistacoltyp-members.md)
+[<span data-ttu-id="5c39d-111">Membros do VistaColtyp</span><span class="sxs-lookup"><span data-stu-id="5c39d-111">VistaColtyp members</span></span>](./vistacoltyp-members.md)
 
-[<span data-ttu-id="d26ce-112">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="d26ce-112">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="5c39d-112">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="5c39d-112">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

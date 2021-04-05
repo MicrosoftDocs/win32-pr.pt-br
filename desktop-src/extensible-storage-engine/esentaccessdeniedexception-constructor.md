@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662973"
 ---
-# <a name="esentaccessdeniedexception-constructor"></a><span data-ttu-id="d432c-103">Construtor EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="d432c-103">EsentAccessDeniedException constructor</span></span>
+# <a name="esentaccessdeniedexception-constructor"></a><span data-ttu-id="f7a6a-103">Construtor EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="f7a6a-103">EsentAccessDeniedException constructor</span></span>
 
-<span data-ttu-id="d432c-104">Inicializa uma nova instância da classe EsentAccessDeniedException.</span><span class="sxs-lookup"><span data-stu-id="d432c-104">Initializes a new instance of the EsentAccessDeniedException class.</span></span>
+<span data-ttu-id="f7a6a-104">Inicializa uma nova instância da classe EsentAccessDeniedException.</span><span class="sxs-lookup"><span data-stu-id="f7a6a-104">Initializes a new instance of the EsentAccessDeniedException class.</span></span>
 
-<span data-ttu-id="d432c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d432c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="d432c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d432c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f7a6a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f7a6a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f7a6a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f7a6a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d432c-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d432c-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f7a6a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f7a6a-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentAccessDeniedException()
 public EsentAccessDeniedException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d432c-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="d432c-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f7a6a-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="f7a6a-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d432c-109">Referência</span><span class="sxs-lookup"><span data-stu-id="d432c-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f7a6a-109">Referência</span><span class="sxs-lookup"><span data-stu-id="f7a6a-109">Reference</span></span>
 
-[<span data-ttu-id="d432c-110">Classe EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="d432c-110">EsentAccessDeniedException class</span></span>](./esentaccessdeniedexception-class.md)
+[<span data-ttu-id="f7a6a-110">Classe EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="f7a6a-110">EsentAccessDeniedException class</span></span>](./esentaccessdeniedexception-class.md)
 
-[<span data-ttu-id="d432c-111">Membros do EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="d432c-111">EsentAccessDeniedException members</span></span>](./esentaccessdeniedexception-members.md)
+[<span data-ttu-id="f7a6a-111">Membros do EsentAccessDeniedException</span><span class="sxs-lookup"><span data-stu-id="f7a6a-111">EsentAccessDeniedException members</span></span>](./esentaccessdeniedexception-members.md)
 
-[<span data-ttu-id="d432c-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d432c-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f7a6a-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f7a6a-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

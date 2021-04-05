@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662783"
 ---
-# <a name="iazapplicationgroup-properties"></a><span data-ttu-id="fafd0-103">Propriedades de IAzApplicationGroup</span><span class="sxs-lookup"><span data-stu-id="fafd0-103">IAzApplicationGroup Properties</span></span>
+# <a name="iazapplicationgroup-properties"></a><span data-ttu-id="3cf40-103">Propriedades de IAzApplicationGroup</span><span class="sxs-lookup"><span data-stu-id="3cf40-103">IAzApplicationGroup Properties</span></span>
 
-<span data-ttu-id="fafd0-104">A interface [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="fafd0-104">The [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) interface exposes the following properties.</span></span>
+<span data-ttu-id="3cf40-104">A interface [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="3cf40-104">The [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="fafd0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fafd0-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3cf40-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3cf40-105">In this section</span></span>
 
--   [<span data-ttu-id="fafd0-106">**Propriedade AppMembers**</span><span class="sxs-lookup"><span data-stu-id="fafd0-106">**AppMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appmembers)
--   [<span data-ttu-id="fafd0-107">**Propriedade AppNonMembers**</span><span class="sxs-lookup"><span data-stu-id="fafd0-107">**AppNonMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)
--   [<span data-ttu-id="fafd0-108">**Propriedade Description**</span><span class="sxs-lookup"><span data-stu-id="fafd0-108">**Description Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)
--   [<span data-ttu-id="fafd0-109">**Propriedade LdapQuery**</span><span class="sxs-lookup"><span data-stu-id="fafd0-109">**LdapQuery Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)
--   [<span data-ttu-id="fafd0-110">**Propriedade Members**</span><span class="sxs-lookup"><span data-stu-id="fafd0-110">**Members Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)
--   [<span data-ttu-id="fafd0-111">**Propriedade MemberName**</span><span class="sxs-lookup"><span data-stu-id="fafd0-111">**MembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)
--   [<span data-ttu-id="fafd0-112">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="fafd0-112">**Name Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)
--   [<span data-ttu-id="fafd0-113">**Propriedade nonmembers**</span><span class="sxs-lookup"><span data-stu-id="fafd0-113">**NonMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)
--   [<span data-ttu-id="fafd0-114">**Propriedade nonmembername**</span><span class="sxs-lookup"><span data-stu-id="fafd0-114">**NonMembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)
--   [<span data-ttu-id="fafd0-115">**Propriedade Type**</span><span class="sxs-lookup"><span data-stu-id="fafd0-115">**Type Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)
--   [<span data-ttu-id="fafd0-116">**Propriedade gravável**</span><span class="sxs-lookup"><span data-stu-id="fafd0-116">**Writable Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)
+-   [<span data-ttu-id="3cf40-106">**Propriedade AppMembers**</span><span class="sxs-lookup"><span data-stu-id="3cf40-106">**AppMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appmembers)
+-   [<span data-ttu-id="3cf40-107">**Propriedade AppNonMembers**</span><span class="sxs-lookup"><span data-stu-id="3cf40-107">**AppNonMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)
+-   [<span data-ttu-id="3cf40-108">**Propriedade Description**</span><span class="sxs-lookup"><span data-stu-id="3cf40-108">**Description Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)
+-   [<span data-ttu-id="3cf40-109">**Propriedade LdapQuery**</span><span class="sxs-lookup"><span data-stu-id="3cf40-109">**LdapQuery Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)
+-   [<span data-ttu-id="3cf40-110">**Propriedade Members**</span><span class="sxs-lookup"><span data-stu-id="3cf40-110">**Members Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)
+-   [<span data-ttu-id="3cf40-111">**Propriedade MemberName**</span><span class="sxs-lookup"><span data-stu-id="3cf40-111">**MembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)
+-   [<span data-ttu-id="3cf40-112">**Propriedade Name**</span><span class="sxs-lookup"><span data-stu-id="3cf40-112">**Name Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)
+-   [<span data-ttu-id="3cf40-113">**Propriedade nonmembers**</span><span class="sxs-lookup"><span data-stu-id="3cf40-113">**NonMembers Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)
+-   [<span data-ttu-id="3cf40-114">**Propriedade nonmembername**</span><span class="sxs-lookup"><span data-stu-id="3cf40-114">**NonMembersName Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)
+-   [<span data-ttu-id="3cf40-115">**Propriedade Type**</span><span class="sxs-lookup"><span data-stu-id="3cf40-115">**Type Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)
+-   [<span data-ttu-id="3cf40-116">**Propriedade gravável**</span><span class="sxs-lookup"><span data-stu-id="3cf40-116">**Writable Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)
 
  
 

@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103918672"
 ---
-# <a name="winbio_anti_spoof_policy_action-enumeration"></a><span data-ttu-id="7fae9-105">\_Enumeração de \_ ação de política de antifalsificação WINBIO \_ \_</span><span class="sxs-lookup"><span data-stu-id="7fae9-105">WINBIO\_ANTI\_SPOOF\_POLICY\_ACTION enumeration</span></span>
+# <a name="winbio_anti_spoof_policy_action-enumeration"></a><span data-ttu-id="e3068-105">\_Enumeração de \_ ação de política de antifalsificação WINBIO \_ \_</span><span class="sxs-lookup"><span data-stu-id="e3068-105">WINBIO\_ANTI\_SPOOF\_POLICY\_ACTION enumeration</span></span>
 
-<span data-ttu-id="7fae9-106">Especifica os tipos de ações que você assume para a política de antifalsificação de um usuário.</span><span class="sxs-lookup"><span data-stu-id="7fae9-106">Specifies the types of actions you take for the antispoofing policy of a user.</span></span>
+<span data-ttu-id="e3068-106">Especifica os tipos de ações que você assume para a política de antifalsificação de um usuário.</span><span class="sxs-lookup"><span data-stu-id="e3068-106">Specifies the types of actions you take for the antispoofing policy of a user.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7fae9-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="7fae9-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e3068-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="e3068-107">Syntax</span></span>
 
 
 ```C++
@@ -39,51 +39,51 @@ typedef enum _WINBIO_ANTI_SPOOF_POLICY_ACTION {
 
 
 
-## <a name="constants"></a><span data-ttu-id="7fae9-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="7fae9-108">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="e3068-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="e3068-108">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="7fae9-109"><span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**\_ \_ desabilitar antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="7fae9-109"><span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**WINBIO\_ANTI\_SPOOF\_DISABLE**</span></span>
+<span data-ttu-id="e3068-109"><span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**\_ \_ desabilitar antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="e3068-109"><span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**WINBIO\_ANTI\_SPOOF\_DISABLE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7fae9-110">Desativa a detecção de falsificação para um fator biométrico.</span><span class="sxs-lookup"><span data-stu-id="7fae9-110">Turns off the detection of spoofing for a biometric factor.</span></span>
+<span data-ttu-id="e3068-110">Desativa a detecção de falsificação para um fator biométrico.</span><span class="sxs-lookup"><span data-stu-id="e3068-110">Turns off the detection of spoofing for a biometric factor.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="7fae9-111"><span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**\_ \_ habilitar antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="7fae9-111"><span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**WINBIO\_ANTI\_SPOOF\_ENABLE**</span></span>
+<span data-ttu-id="e3068-111"><span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**\_ \_ habilitar antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="e3068-111"><span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**WINBIO\_ANTI\_SPOOF\_ENABLE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7fae9-112">Ativa a detecção de falsificação para um fator biométrico.</span><span class="sxs-lookup"><span data-stu-id="7fae9-112">Turns on the detection of spoofing for a biometric factor.</span></span>
+<span data-ttu-id="e3068-112">Ativa a detecção de falsificação para um fator biométrico.</span><span class="sxs-lookup"><span data-stu-id="e3068-112">Turns on the detection of spoofing for a biometric factor.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="7fae9-113"><span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**\_remoção de \_ antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="7fae9-113"><span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**WINBIO\_ANTI\_SPOOF\_REMOVE**</span></span>
+<span data-ttu-id="e3068-113"><span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**\_remoção de \_ antifalsificação do WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="e3068-113"><span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**WINBIO\_ANTI\_SPOOF\_REMOVE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="7fae9-114">Remove toda a política antifalsificação para o fator biométrico da conta.</span><span class="sxs-lookup"><span data-stu-id="7fae9-114">Removes the entire antispoofing policy for the biometric factor from the account.</span></span>
+<span data-ttu-id="e3068-114">Remove toda a política antifalsificação para o fator biométrico da conta.</span><span class="sxs-lookup"><span data-stu-id="e3068-114">Removes the entire antispoofing policy for the biometric factor from the account.</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="7fae9-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7fae9-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e3068-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e3068-115">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7fae9-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="7fae9-116">Requirement</span></span> | <span data-ttu-id="7fae9-117">Valor</span><span class="sxs-lookup"><span data-stu-id="7fae9-117">Value</span></span> |
+| <span data-ttu-id="e3068-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="e3068-116">Requirement</span></span> | <span data-ttu-id="e3068-117">Valor</span><span class="sxs-lookup"><span data-stu-id="e3068-117">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7fae9-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7fae9-118">Minimum supported client</span></span><br/> | <span data-ttu-id="7fae9-119">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="7fae9-119">Windows 10 \[desktop apps only\]</span></span><br/>                                                                                                                              |
-| <span data-ttu-id="7fae9-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7fae9-120">Minimum supported server</span></span><br/> | <span data-ttu-id="7fae9-121">\[Somente aplicativos da área de trabalho do Windows Server 2016\]</span><span class="sxs-lookup"><span data-stu-id="7fae9-121">Windows Server 2016 \[desktop apps only\]</span></span><br/>                                                                                                                     |
-| <span data-ttu-id="7fae9-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7fae9-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="7fae9-123"><dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt></span><span class="sxs-lookup"><span data-stu-id="7fae9-123"><dt>Winbio\_types.h (include Winbio.h for client applications or Winbio\_adapters.h for adapters)</dt></span></span> </dl> |
+| <span data-ttu-id="e3068-118">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e3068-118">Minimum supported client</span></span><br/> | <span data-ttu-id="e3068-119">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="e3068-119">Windows 10 \[desktop apps only\]</span></span><br/>                                                                                                                              |
+| <span data-ttu-id="e3068-120">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e3068-120">Minimum supported server</span></span><br/> | <span data-ttu-id="e3068-121">\[Somente aplicativos da área de trabalho do Windows Server 2016\]</span><span class="sxs-lookup"><span data-stu-id="e3068-121">Windows Server 2016 \[desktop apps only\]</span></span><br/>                                                                                                                     |
+| <span data-ttu-id="e3068-122">parâmetro</span><span class="sxs-lookup"><span data-stu-id="e3068-122">Header</span></span><br/>                   | <dl> <span data-ttu-id="e3068-123"><dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt></span><span class="sxs-lookup"><span data-stu-id="e3068-123"><dt>Winbio\_types.h (include Winbio.h for client applications or Winbio\_adapters.h for adapters)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7fae9-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="7fae9-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e3068-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="e3068-124">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7fae9-125">**\_ação da \_ política antifalsificação do \_ WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="7fae9-125">**WINBIO\_ANTI\_SPOOF\_POLICY\_ACTION**</span></span>](winbio-anti-spoof-policy-action.md)
+[<span data-ttu-id="e3068-125">**\_ação da \_ política antifalsificação do \_ WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="e3068-125">**WINBIO\_ANTI\_SPOOF\_POLICY\_ACTION**</span></span>](winbio-anti-spoof-policy-action.md)
 </dt> <dt>
 
-[<span data-ttu-id="7fae9-126">**\_origem da política de WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="7fae9-126">**WINBIO\_POLICY\_SOURCE**</span></span>](winbio-policy-source.md)
+[<span data-ttu-id="e3068-126">**\_origem da política de WINBIO \_**</span><span class="sxs-lookup"><span data-stu-id="e3068-126">**WINBIO\_POLICY\_SOURCE**</span></span>](winbio-policy-source.md)
 </dt> </dl>
 
  
