@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635457"
 ---
-# <a name="cc-code-example-setting-working-directory"></a><span data-ttu-id="590c7-105">Exemplo de código C/C++: definindo diretório de trabalho</span><span class="sxs-lookup"><span data-stu-id="590c7-105">C/C++ Code Example: Setting Working Directory</span></span>
+# <a name="cc-code-example-setting-working-directory"></a><span data-ttu-id="69803-105">Exemplo de código C/C++: definindo diretório de trabalho</span><span class="sxs-lookup"><span data-stu-id="69803-105">C/C++ Code Example: Setting Working Directory</span></span>
 
-<span data-ttu-id="590c7-106">Este exemplo define o diretório de trabalho de uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="590c7-106">This example sets the working directory of a known task.</span></span> <span data-ttu-id="590c7-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="590c7-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="69803-106">Este exemplo define o diretório de trabalho de uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="69803-106">This example sets the working directory of a known task.</span></span> <span data-ttu-id="69803-107">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="69803-107">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -132,11 +132,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="590c7-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="590c7-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="69803-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="69803-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="590c7-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="590c7-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="69803-109">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="69803-109">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

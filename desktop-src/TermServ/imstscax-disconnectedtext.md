@@ -71,13 +71,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644806"
 ---
-# <a name="imstscaxdisconnectedtext-property"></a><span data-ttu-id="273ad-124">IMsTscAx: Propriedade isconnectedText de:D</span><span class="sxs-lookup"><span data-stu-id="273ad-124">IMsTscAx::DisconnectedText property</span></span>
+# <a name="imstscaxdisconnectedtext-property"></a><span data-ttu-id="64198-124">IMsTscAx: Propriedade isconnectedText de:D</span><span class="sxs-lookup"><span data-stu-id="64198-124">IMsTscAx::DisconnectedText property</span></span>
 
-<span data-ttu-id="273ad-125">Especifica o texto que aparece centralizado no controle antes que uma conexão seja encerrada.</span><span class="sxs-lookup"><span data-stu-id="273ad-125">Specifies the text that appears centered in the control before a connection is terminated.</span></span>
+<span data-ttu-id="64198-125">Especifica o texto que aparece centralizado no controle antes que uma conexão seja encerrada.</span><span class="sxs-lookup"><span data-stu-id="64198-125">Specifies the text that appears centered in the control before a connection is terminated.</span></span>
 
-<span data-ttu-id="273ad-126">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="273ad-126">This property is read/write.</span></span>
+<span data-ttu-id="64198-126">Esta propriedade é de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="64198-126">This property is read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="273ad-127">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="273ad-127">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="64198-127">Syntax</span><span class="sxs-lookup"><span data-stu-id="64198-127">Syntax</span></span>
 
 
 ```C++
@@ -92,70 +92,70 @@ HRESULT get_DisconnectedText(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="273ad-128">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="273ad-128">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="64198-128">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="64198-128">Property value</span></span>
 
-<span data-ttu-id="273ad-129">O novo texto de exibição.</span><span class="sxs-lookup"><span data-stu-id="273ad-129">The new display text.</span></span>
+<span data-ttu-id="64198-129">O novo texto de exibição.</span><span class="sxs-lookup"><span data-stu-id="64198-129">The new display text.</span></span>
 
-## <a name="error-codes"></a><span data-ttu-id="273ad-130">Códigos do Erro</span><span class="sxs-lookup"><span data-stu-id="273ad-130">Error codes</span></span>
+## <a name="error-codes"></a><span data-ttu-id="64198-130">Códigos do Erro</span><span class="sxs-lookup"><span data-stu-id="64198-130">Error codes</span></span>
 
-<span data-ttu-id="273ad-131">Retornar **S \_ OK** se for bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="273ad-131">Return **S\_OK** if successful.</span></span>
+<span data-ttu-id="64198-131">Retornar **S \_ OK** se for bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="64198-131">Return **S\_OK** if successful.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="273ad-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="273ad-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="64198-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="64198-132">Remarks</span></span>
 
-<span data-ttu-id="273ad-133">A definição da propriedade **DisconnectedText** é opcional.</span><span class="sxs-lookup"><span data-stu-id="273ad-133">Setting the **DisconnectedText** property is optional.</span></span> <span data-ttu-id="273ad-134">Se não for especificado, o controle aparecerá em branco antes que uma conexão seja estabelecida.</span><span class="sxs-lookup"><span data-stu-id="273ad-134">If it is not specified the control appears blank before a connection is established.</span></span>
+<span data-ttu-id="64198-133">A definição da propriedade **DisconnectedText** é opcional.</span><span class="sxs-lookup"><span data-stu-id="64198-133">Setting the **DisconnectedText** property is optional.</span></span> <span data-ttu-id="64198-134">Se não for especificado, o controle aparecerá em branco antes que uma conexão seja estabelecida.</span><span class="sxs-lookup"><span data-stu-id="64198-134">If it is not specified the control appears blank before a connection is established.</span></span>
 
-<span data-ttu-id="273ad-135">Essa propriedade só poderá ser definida se o controle não estiver no estado conectado.</span><span class="sxs-lookup"><span data-stu-id="273ad-135">This property can be set only if the control is not in the connected state.</span></span> <span data-ttu-id="273ad-136">O método retornará **E \_ falhará** se for chamado depois que o controle for conectado.</span><span class="sxs-lookup"><span data-stu-id="273ad-136">The method returns **E\_FAIL** if it is called after the control is connected.</span></span> <span data-ttu-id="273ad-137">Você pode verificar se o controle está conectado respondendo a eventos de conexão em [**IMsTscAxEvents**](imstscaxevents-interface.md) ou examinando a propriedade [**Connected**](imstscax-connected.md) .</span><span class="sxs-lookup"><span data-stu-id="273ad-137">You can check if the control is connected by responding to connection events in [**IMsTscAxEvents**](imstscaxevents-interface.md) or examining the [**Connected**](imstscax-connected.md) property.</span></span>
+<span data-ttu-id="64198-135">Essa propriedade só poderá ser definida se o controle não estiver no estado conectado.</span><span class="sxs-lookup"><span data-stu-id="64198-135">This property can be set only if the control is not in the connected state.</span></span> <span data-ttu-id="64198-136">O método retornará **E \_ falhará** se for chamado depois que o controle for conectado.</span><span class="sxs-lookup"><span data-stu-id="64198-136">The method returns **E\_FAIL** if it is called after the control is connected.</span></span> <span data-ttu-id="64198-137">Você pode verificar se o controle está conectado respondendo a eventos de conexão em [**IMsTscAxEvents**](imstscaxevents-interface.md) ou examinando a propriedade [**Connected**](imstscax-connected.md) .</span><span class="sxs-lookup"><span data-stu-id="64198-137">You can check if the control is connected by responding to connection events in [**IMsTscAxEvents**](imstscaxevents-interface.md) or examining the [**Connected**](imstscax-connected.md) property.</span></span>
 
-<span data-ttu-id="273ad-138">Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pDisconnectedText* .</span><span class="sxs-lookup"><span data-stu-id="273ad-138">This method allocates the memory required for the buffer pointed to by the *pDisconnectedText* parameter.</span></span> <span data-ttu-id="273ad-139">Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) .</span><span class="sxs-lookup"><span data-stu-id="273ad-139">Calling C/C++ applications must free the memory with a call to the [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) function.</span></span> <span data-ttu-id="273ad-140">Isso não é necessário para clientes de Visual Basic e de script.</span><span class="sxs-lookup"><span data-stu-id="273ad-140">This is not required for Visual Basic and scripting clients.</span></span>
+<span data-ttu-id="64198-138">Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pDisconnectedText* .</span><span class="sxs-lookup"><span data-stu-id="64198-138">This method allocates the memory required for the buffer pointed to by the *pDisconnectedText* parameter.</span></span> <span data-ttu-id="64198-139">Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) .</span><span class="sxs-lookup"><span data-stu-id="64198-139">Calling C/C++ applications must free the memory with a call to the [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) function.</span></span> <span data-ttu-id="64198-140">Isso não é necessário para clientes de Visual Basic e de script.</span><span class="sxs-lookup"><span data-stu-id="64198-140">This is not required for Visual Basic and scripting clients.</span></span>
 
-<span data-ttu-id="273ad-141">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="273ad-141">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
+<span data-ttu-id="64198-141">Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).</span><span class="sxs-lookup"><span data-stu-id="64198-141">For more information about Remote Desktop Web Connection, see [Requirements for Remote Desktop Web Connection](requirements-for-remote-desktop-web-connection.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="273ad-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="273ad-142">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="64198-142">Requisitos</span><span class="sxs-lookup"><span data-stu-id="64198-142">Requirements</span></span>
 
 
 
-| <span data-ttu-id="273ad-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="273ad-143">Requirement</span></span> | <span data-ttu-id="273ad-144">Valor</span><span class="sxs-lookup"><span data-stu-id="273ad-144">Value</span></span> |
+| <span data-ttu-id="64198-143">Requisito</span><span class="sxs-lookup"><span data-stu-id="64198-143">Requirement</span></span> | <span data-ttu-id="64198-144">Valor</span><span class="sxs-lookup"><span data-stu-id="64198-144">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="273ad-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="273ad-145">Minimum supported client</span></span><br/> | <span data-ttu-id="273ad-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="273ad-146">Windows Vista</span></span><br/>                                                               |
-| <span data-ttu-id="273ad-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="273ad-147">Minimum supported server</span></span><br/> | <span data-ttu-id="273ad-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="273ad-148">Windows Server 2008</span></span><br/>                                                         |
-| <span data-ttu-id="273ad-149">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="273ad-149">Type library</span></span><br/>             | <dl> <span data-ttu-id="273ad-150"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="273ad-150"><dt>MsTscAx.dll</dt></span></span> </dl> |
-| <span data-ttu-id="273ad-151">DLL</span><span class="sxs-lookup"><span data-stu-id="273ad-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="273ad-152"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="273ad-152"><dt>MsTscAx.dll</dt></span></span> </dl> |
-| <span data-ttu-id="273ad-153">IID</span><span class="sxs-lookup"><span data-stu-id="273ad-153">IID</span></span><br/>                      | <span data-ttu-id="273ad-154">IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489</span><span class="sxs-lookup"><span data-stu-id="273ad-154">IID\_IMsTscAx is defined as 8C11EFAE-92C3-11D1-BC1E-00C04FA31489</span></span><br/>            |
+| <span data-ttu-id="64198-145">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="64198-145">Minimum supported client</span></span><br/> | <span data-ttu-id="64198-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="64198-146">Windows Vista</span></span><br/>                                                               |
+| <span data-ttu-id="64198-147">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="64198-147">Minimum supported server</span></span><br/> | <span data-ttu-id="64198-148">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="64198-148">Windows Server 2008</span></span><br/>                                                         |
+| <span data-ttu-id="64198-149">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="64198-149">Type library</span></span><br/>             | <dl> <span data-ttu-id="64198-150"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="64198-150"><dt>MsTscAx.dll</dt></span></span> </dl> |
+| <span data-ttu-id="64198-151">DLL</span><span class="sxs-lookup"><span data-stu-id="64198-151">DLL</span></span><br/>                      | <dl> <span data-ttu-id="64198-152"><dt>MsTscAx.dll</dt></span><span class="sxs-lookup"><span data-stu-id="64198-152"><dt>MsTscAx.dll</dt></span></span> </dl> |
+| <span data-ttu-id="64198-153">IID</span><span class="sxs-lookup"><span data-stu-id="64198-153">IID</span></span><br/>                      | <span data-ttu-id="64198-154">IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489</span><span class="sxs-lookup"><span data-stu-id="64198-154">IID\_IMsTscAx is defined as 8C11EFAE-92C3-11D1-BC1E-00C04FA31489</span></span><br/>            |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="273ad-155">Consulte também</span><span class="sxs-lookup"><span data-stu-id="273ad-155">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="64198-155">Confira também</span><span class="sxs-lookup"><span data-stu-id="64198-155">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="273ad-156">**IMsRdpClient**</span><span class="sxs-lookup"><span data-stu-id="273ad-156">**IMsRdpClient**</span></span>](imsrdpclient-interface.md)
+[<span data-ttu-id="64198-156">**IMsRdpClient**</span><span class="sxs-lookup"><span data-stu-id="64198-156">**IMsRdpClient**</span></span>](imsrdpclient-interface.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-157">**IMsRdpClient2**</span><span class="sxs-lookup"><span data-stu-id="273ad-157">**IMsRdpClient2**</span></span>](imsrdpclient2.md)
+[<span data-ttu-id="64198-157">**IMsRdpClient2**</span><span class="sxs-lookup"><span data-stu-id="64198-157">**IMsRdpClient2**</span></span>](imsrdpclient2.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-158">**IMsRdpClient3**</span><span class="sxs-lookup"><span data-stu-id="273ad-158">**IMsRdpClient3**</span></span>](imsrdpclient3.md)
+[<span data-ttu-id="64198-158">**IMsRdpClient3**</span><span class="sxs-lookup"><span data-stu-id="64198-158">**IMsRdpClient3**</span></span>](imsrdpclient3.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-159">**IMsRdpClient4**</span><span class="sxs-lookup"><span data-stu-id="273ad-159">**IMsRdpClient4**</span></span>](imsrdpclient4.md)
+[<span data-ttu-id="64198-159">**IMsRdpClient4**</span><span class="sxs-lookup"><span data-stu-id="64198-159">**IMsRdpClient4**</span></span>](imsrdpclient4.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-160">**IMsRdpClient5**</span><span class="sxs-lookup"><span data-stu-id="273ad-160">**IMsRdpClient5**</span></span>](imsrdpclient5.md)
+[<span data-ttu-id="64198-160">**IMsRdpClient5**</span><span class="sxs-lookup"><span data-stu-id="64198-160">**IMsRdpClient5**</span></span>](imsrdpclient5.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-161">**IMsRdpClient6**</span><span class="sxs-lookup"><span data-stu-id="273ad-161">**IMsRdpClient6**</span></span>](imsrdpclient6.md)
+[<span data-ttu-id="64198-161">**IMsRdpClient6**</span><span class="sxs-lookup"><span data-stu-id="64198-161">**IMsRdpClient6**</span></span>](imsrdpclient6.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-162">**IMsRdpClient7**</span><span class="sxs-lookup"><span data-stu-id="273ad-162">**IMsRdpClient7**</span></span>](imsrdpclient7.md)
+[<span data-ttu-id="64198-162">**IMsRdpClient7**</span><span class="sxs-lookup"><span data-stu-id="64198-162">**IMsRdpClient7**</span></span>](imsrdpclient7.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-163">**IMsRdpClient8**</span><span class="sxs-lookup"><span data-stu-id="273ad-163">**IMsRdpClient8**</span></span>](imsrdpclient8.md)
+[<span data-ttu-id="64198-163">**IMsRdpClient8**</span><span class="sxs-lookup"><span data-stu-id="64198-163">**IMsRdpClient8**</span></span>](imsrdpclient8.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-164">**IMsRdpClient9**</span><span class="sxs-lookup"><span data-stu-id="273ad-164">**IMsRdpClient9**</span></span>](imsrdpclient9.md)
+[<span data-ttu-id="64198-164">**IMsRdpClient9**</span><span class="sxs-lookup"><span data-stu-id="64198-164">**IMsRdpClient9**</span></span>](imsrdpclient9.md)
 </dt> <dt>
 
-[<span data-ttu-id="273ad-165">**IMsTscAx**</span><span class="sxs-lookup"><span data-stu-id="273ad-165">**IMsTscAx**</span></span>](imstscax-interface.md)
+[<span data-ttu-id="64198-165">**IMsTscAx**</span><span class="sxs-lookup"><span data-stu-id="64198-165">**IMsTscAx**</span></span>](imstscax-interface.md)
 </dt> </dl>
 
  

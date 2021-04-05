@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103645074"
 ---
-# <a name="usercert-eaptype-element"></a><span data-ttu-id="a8e01-104">Elemento usercert (EapType)</span><span class="sxs-lookup"><span data-stu-id="a8e01-104">UserCert (EapType) Element</span></span>
+# <a name="usercert-eaptype-element"></a><span data-ttu-id="9e24e-104">Elemento usercert (EapType)</span><span class="sxs-lookup"><span data-stu-id="9e24e-104">UserCert (EapType) Element</span></span>
 
-<span data-ttu-id="a8e01-105">O elemento **usercert (EapType)** refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.</span><span class="sxs-lookup"><span data-stu-id="a8e01-105">The **UserCert (EapType)** element refers to the SHA-1 hash of the certificate that should be used for authentication.</span></span>
+<span data-ttu-id="9e24e-105">O elemento **usercert (EapType)** refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.</span><span class="sxs-lookup"><span data-stu-id="9e24e-105">The **UserCert (EapType)** element refers to the SHA-1 hash of the certificate that should be used for authentication.</span></span>
 
 ``` syntax
 <xs:element name="UserCert"
@@ -31,39 +31,39 @@ ms.locfileid: "103645074"
  />
 ```
 
-<span data-ttu-id="a8e01-106">O elemento **usercert** é definido pelo elemento [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) .</span><span class="sxs-lookup"><span data-stu-id="a8e01-106">The **UserCert** element is defined by the [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) element.</span></span>
+<span data-ttu-id="9e24e-106">O elemento **usercert** é definido pelo elemento [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) .</span><span class="sxs-lookup"><span data-stu-id="9e24e-106">The **UserCert** element is defined by the [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) element.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="a8e01-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a8e01-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="9e24e-107">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9e24e-107">Requirements</span></span>
 
 
 
-| <span data-ttu-id="a8e01-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="a8e01-108">Requirement</span></span> | <span data-ttu-id="a8e01-109">Valor</span><span class="sxs-lookup"><span data-stu-id="a8e01-109">Value</span></span> |
+| <span data-ttu-id="9e24e-108">Requisito</span><span class="sxs-lookup"><span data-stu-id="9e24e-108">Requirement</span></span> | <span data-ttu-id="9e24e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="9e24e-109">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="a8e01-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8e01-110">Minimum supported client</span></span><br/> | <span data-ttu-id="a8e01-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="a8e01-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="a8e01-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8e01-112">Minimum supported server</span></span><br/> | <span data-ttu-id="a8e01-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="a8e01-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="9e24e-110">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9e24e-110">Minimum supported client</span></span><br/> | <span data-ttu-id="9e24e-111">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="9e24e-111">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="9e24e-112">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9e24e-112">Minimum supported server</span></span><br/> | <span data-ttu-id="9e24e-113">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="9e24e-113">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="a8e01-114">Consulte também</span><span class="sxs-lookup"><span data-stu-id="a8e01-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e24e-114">Confira também</span><span class="sxs-lookup"><span data-stu-id="9e24e-114">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="a8e01-115">**Contexto de definição do elemento no esquema**</span><span class="sxs-lookup"><span data-stu-id="a8e01-115">**Definition context of element in schema**</span></span>
+<span data-ttu-id="9e24e-115">**Contexto de definição do elemento no esquema**</span><span class="sxs-lookup"><span data-stu-id="9e24e-115">**Definition context of element in schema**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="a8e01-116">**EapType**</span><span class="sxs-lookup"><span data-stu-id="a8e01-116">**EapType**</span></span>](eaptlsuserpropertiesv1schema-eaptype-element.md)
+[<span data-ttu-id="9e24e-116">**EapType**</span><span class="sxs-lookup"><span data-stu-id="9e24e-116">**EapType**</span></span>](eaptlsuserpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-<span data-ttu-id="a8e01-117">**Possível elemento pai imediato na instância de esquema**</span><span class="sxs-lookup"><span data-stu-id="a8e01-117">**Possible immediate parent element in schema instance**</span></span>
+<span data-ttu-id="9e24e-117">**Possível elemento pai imediato na instância de esquema**</span><span class="sxs-lookup"><span data-stu-id="9e24e-117">**Possible immediate parent element in schema instance**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="a8e01-118">**EapType**</span><span class="sxs-lookup"><span data-stu-id="a8e01-118">**EapType**</span></span>](eaptlsuserpropertiesv1schema-eaptype-element.md)
+[<span data-ttu-id="9e24e-118">**EapType**</span><span class="sxs-lookup"><span data-stu-id="9e24e-118">**EapType**</span></span>](eaptlsuserpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-[<span data-ttu-id="a8e01-119">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="a8e01-119">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
+[<span data-ttu-id="9e24e-119">EAPHost e esquema herdado</span><span class="sxs-lookup"><span data-stu-id="9e24e-119">EAPHost and Legacy Schema</span></span>](eaphost-schemas.md)
 </dt> <dt>
 
-[<span data-ttu-id="a8e01-120">Esquema eaptlsuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="a8e01-120">eaptlsuserpropertiesv1 Schema</span></span>](eaptlsuserpropertiesv1schema-schema.md)
+[<span data-ttu-id="9e24e-120">Esquema eaptlsuserpropertiesv1</span><span class="sxs-lookup"><span data-stu-id="9e24e-120">eaptlsuserpropertiesv1 Schema</span></span>](eaptlsuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

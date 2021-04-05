@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "103640965"
 ---
-# <a name="connectionstatuschanged-event"></a><span data-ttu-id="1c767-104">Evento ConnectionStatusChanged</span><span class="sxs-lookup"><span data-stu-id="1c767-104">ConnectionStatusChanged event</span></span>
+# <a name="connectionstatuschanged-event"></a><span data-ttu-id="17863-104">Evento ConnectionStatusChanged</span><span class="sxs-lookup"><span data-stu-id="17863-104">ConnectionStatusChanged event</span></span>
 
-<span data-ttu-id="1c767-105">Ocorre quando o status da conexão de rede do dispositivo é alterado.</span><span class="sxs-lookup"><span data-stu-id="1c767-105">Occurs when the device’s network connection status changes.</span></span>
+<span data-ttu-id="17863-105">Ocorre quando o status da conexão de rede do dispositivo é alterado.</span><span class="sxs-lookup"><span data-stu-id="17863-105">Occurs when the device’s network connection status changes.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1c767-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1c767-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="17863-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="17863-106">Syntax</span></span>
 
 
 ```C++
@@ -32,17 +32,17 @@ void ConnectionStatusChanged();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="1c767-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="1c767-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="17863-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="17863-107">Parameters</span></span>
 
-<span data-ttu-id="1c767-108">Este evento não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="1c767-108">This event has no parameters.</span></span>
+<span data-ttu-id="17863-108">Este evento não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="17863-108">This event has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="1c767-109">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="1c767-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="17863-109">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="17863-109">Return value</span></span>
 
-<span data-ttu-id="1c767-110">Esse evento não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="1c767-110">This event does not return a value.</span></span>
+<span data-ttu-id="17863-110">Esse evento não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="17863-110">This event does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="1c767-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="1c767-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="17863-111">Comentários</span><span class="sxs-lookup"><span data-stu-id="17863-111">Remarks</span></span>
 
-<span data-ttu-id="1c767-112">Para lidar com notificações desse evento, registre uma função de manipulador de eventos [**ConnectionStatusHandler**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85)) usando o método [**Add \_ ConnectionStatusChanged**](ibasicdevice-add-connectionstatuschanged.md) .</span><span class="sxs-lookup"><span data-stu-id="1c767-112">To handle notifications from this event, register a [**ConnectionStatusHandler**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85)) event handler function using the [**add\_ConnectionStatusChanged**](ibasicdevice-add-connectionstatuschanged.md) method.</span></span> <span data-ttu-id="1c767-113">Para cancelar o registro do manipulador de eventos, use o método [**Remove \_ ConnectionStatusChanged**](ibasicdevice-remove-connectionstatuschanged.md) .</span><span class="sxs-lookup"><span data-stu-id="1c767-113">To unregister the event handler, use the [**remove\_ConnectionStatusChanged**](ibasicdevice-remove-connectionstatuschanged.md) method.</span></span>
+<span data-ttu-id="17863-112">Para lidar com notificações desse evento, registre uma função de manipulador de eventos [**ConnectionStatusHandler**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85)) usando o método [**Add \_ ConnectionStatusChanged**](ibasicdevice-add-connectionstatuschanged.md) .</span><span class="sxs-lookup"><span data-stu-id="17863-112">To handle notifications from this event, register a [**ConnectionStatusHandler**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85)) event handler function using the [**add\_ConnectionStatusChanged**](ibasicdevice-add-connectionstatuschanged.md) method.</span></span> <span data-ttu-id="17863-113">Para cancelar o registro do manipulador de eventos, use o método [**Remove \_ ConnectionStatusChanged**](ibasicdevice-remove-connectionstatuschanged.md) .</span><span class="sxs-lookup"><span data-stu-id="17863-113">To unregister the event handler, use the [**remove\_ConnectionStatusChanged**](ibasicdevice-remove-connectionstatuschanged.md) method.</span></span>
 
  
 

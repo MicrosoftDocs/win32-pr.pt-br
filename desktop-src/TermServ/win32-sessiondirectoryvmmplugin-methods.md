@@ -12,20 +12,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635639"
 ---
-# <a name="win32_sessiondirectoryvmmplugin-methods"></a><span data-ttu-id="313eb-103">\_Métodos SessionDirectoryVMMPlugin do Win32</span><span class="sxs-lookup"><span data-stu-id="313eb-103">Win32\_SessionDirectoryVMMPlugin Methods</span></span>
+# <a name="win32_sessiondirectoryvmmplugin-methods"></a><span data-ttu-id="1f7f7-103">\_Métodos SessionDirectoryVMMPlugin do Win32</span><span class="sxs-lookup"><span data-stu-id="1f7f7-103">Win32\_SessionDirectoryVMMPlugin Methods</span></span>
 
-<span data-ttu-id="313eb-104">A classe [**Win32 \_ SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="313eb-104">The [**Win32\_SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md) class exposes the following methods.</span></span>
+<span data-ttu-id="1f7f7-104">A classe [**Win32 \_ SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="1f7f7-104">The [**Win32\_SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="313eb-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="313eb-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1f7f7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1f7f7-105">In this section</span></span>
 
--   [<span data-ttu-id="313eb-106">**Método RegisterVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="313eb-106">**RegisterVMMPlugin method**</span></span>](registervmmplugin-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-107">**Método UnregisterVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="313eb-107">**UnregisterVMMPlugin method**</span></span>](unregistervmmplugin-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-108">**Método GetCurrentVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="313eb-108">**GetCurrentVMMPlugin method**</span></span>](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-109">**Método setanteriority**</span><span class="sxs-lookup"><span data-stu-id="313eb-109">**SetPriority method**</span></span>](setpriority-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-110">**Método sethabilitado**</span><span class="sxs-lookup"><span data-stu-id="313eb-110">**SetEnabled method**</span></span>](setenabled-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-111">**Método SetName**</span><span class="sxs-lookup"><span data-stu-id="313eb-111">**SetName method**</span></span>](setname-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-112">**Método setfornecedor**</span><span class="sxs-lookup"><span data-stu-id="313eb-112">**SetProvider method**</span></span>](setprovider-win32-sessiondirectoryvmmplugin.md)
--   [<span data-ttu-id="313eb-113">**Método SetServiceLocation**</span><span class="sxs-lookup"><span data-stu-id="313eb-113">**SetServiceLocation method**</span></span>](setservicelocation-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-106">**Método RegisterVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-106">**RegisterVMMPlugin method**</span></span>](registervmmplugin-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-107">**Método UnregisterVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-107">**UnregisterVMMPlugin method**</span></span>](unregistervmmplugin-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-108">**Método GetCurrentVMMPlugin**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-108">**GetCurrentVMMPlugin method**</span></span>](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-109">**Método setanteriority**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-109">**SetPriority method**</span></span>](setpriority-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-110">**Método sethabilitado**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-110">**SetEnabled method**</span></span>](setenabled-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-111">**Método SetName**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-111">**SetName method**</span></span>](setname-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-112">**Método setfornecedor**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-112">**SetProvider method**</span></span>](setprovider-win32-sessiondirectoryvmmplugin.md)
+-   [<span data-ttu-id="1f7f7-113">**Método SetServiceLocation**</span><span class="sxs-lookup"><span data-stu-id="1f7f7-113">**SetServiceLocation method**</span></span>](setservicelocation-win32-sessiondirectoryvmmplugin.md)
 
  
 

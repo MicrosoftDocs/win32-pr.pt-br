@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663240"
 ---
-# <a name="apijetmove-method-jet_sesid-jet_tableid-jet_move-movegrbit"></a><span data-ttu-id="013a9-103">Método API. JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)</span><span class="sxs-lookup"><span data-stu-id="013a9-103">Api.JetMove method (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)</span></span>
+# <a name="apijetmove-method-jet_sesid-jet_tableid-jet_move-movegrbit"></a><span data-ttu-id="0a73e-103">Método API. JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)</span><span class="sxs-lookup"><span data-stu-id="0a73e-103">Api.JetMove method (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)</span></span>
 
-<span data-ttu-id="013a9-104">Navegar por um índice.</span><span class="sxs-lookup"><span data-stu-id="013a9-104">Navigate through an index.</span></span> <span data-ttu-id="013a9-105">O cursor pode ser posicionado no início ou no final do índice e movido para trás e encaminhado por um número especificado de entradas de índice.</span><span class="sxs-lookup"><span data-stu-id="013a9-105">The cursor can be positioned at the start or end of the index and moved backwards and forwards by a specified number of index entries.</span></span> <span data-ttu-id="013a9-106">Consulte também [TryMoveFirst (JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast (JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext (JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious (JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).</span><span class="sxs-lookup"><span data-stu-id="013a9-106">Also see [TryMoveFirst(JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast(JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext(JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious(JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).</span></span>
+<span data-ttu-id="0a73e-104">Navegar por um índice.</span><span class="sxs-lookup"><span data-stu-id="0a73e-104">Navigate through an index.</span></span> <span data-ttu-id="0a73e-105">O cursor pode ser posicionado no início ou no final do índice e movido para trás e encaminhado por um número especificado de entradas de índice.</span><span class="sxs-lookup"><span data-stu-id="0a73e-105">The cursor can be positioned at the start or end of the index and moved backwards and forwards by a specified number of index entries.</span></span> <span data-ttu-id="0a73e-106">Consulte também [TryMoveFirst (JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast (JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext (JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious (JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).</span><span class="sxs-lookup"><span data-stu-id="0a73e-106">Also see [TryMoveFirst(JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast(JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext(JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious(JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).</span></span>
 
-<span data-ttu-id="013a9-107">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="013a9-107">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="013a9-108">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="013a9-108">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="0a73e-107">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="0a73e-107">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="0a73e-108">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="0a73e-108">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="013a9-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="013a9-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0a73e-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0a73e-109">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -61,42 +61,42 @@ public static void JetMove(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="013a9-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="013a9-110">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0a73e-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="0a73e-110">Parameters</span></span>
 
-  - <span data-ttu-id="013a9-111">sesid</span><span class="sxs-lookup"><span data-stu-id="013a9-111">sesid</span></span>  
-    <span data-ttu-id="013a9-112">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="013a9-112">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="0a73e-111">sesid</span><span class="sxs-lookup"><span data-stu-id="0a73e-111">sesid</span></span>  
+    <span data-ttu-id="0a73e-112">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="0a73e-112">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="013a9-113">A sessão a ser usada para a chamada.</span><span class="sxs-lookup"><span data-stu-id="013a9-113">The session to use for the call.</span></span>
+    <span data-ttu-id="0a73e-113">A sessão a ser usada para a chamada.</span><span class="sxs-lookup"><span data-stu-id="0a73e-113">The session to use for the call.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="013a9-114">TableID</span><span class="sxs-lookup"><span data-stu-id="013a9-114">tableid</span></span>  
-    <span data-ttu-id="013a9-115">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="013a9-115">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="0a73e-114">TableID</span><span class="sxs-lookup"><span data-stu-id="0a73e-114">tableid</span></span>  
+    <span data-ttu-id="0a73e-115">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="0a73e-115">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="013a9-116">O cursor a ser posicionado.</span><span class="sxs-lookup"><span data-stu-id="013a9-116">The cursor to position.</span></span>
+    <span data-ttu-id="0a73e-116">O cursor a ser posicionado.</span><span class="sxs-lookup"><span data-stu-id="0a73e-116">The cursor to position.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="013a9-117">numRows</span><span class="sxs-lookup"><span data-stu-id="013a9-117">numRows</span></span>  
-    <span data-ttu-id="013a9-118">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_Move](./jet-move-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="013a9-118">Type: [Microsoft.Isam.Esent.Interop.JET_Move](./jet-move-enumeration.md)</span></span>  
+  - <span data-ttu-id="0a73e-117">numRows</span><span class="sxs-lookup"><span data-stu-id="0a73e-117">numRows</span></span>  
+    <span data-ttu-id="0a73e-118">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_Move](./jet-move-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="0a73e-118">Type: [Microsoft.Isam.Esent.Interop.JET_Move](./jet-move-enumeration.md)</span></span>  
     
-    <span data-ttu-id="013a9-119">Um deslocamento que indica a distância de movimentação do cursor.</span><span class="sxs-lookup"><span data-stu-id="013a9-119">An offset which indicates how far to move the cursor.</span></span>
+    <span data-ttu-id="0a73e-119">Um deslocamento que indica a distância de movimentação do cursor.</span><span class="sxs-lookup"><span data-stu-id="0a73e-119">An offset which indicates how far to move the cursor.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="013a9-120">grbit</span><span class="sxs-lookup"><span data-stu-id="013a9-120">grbit</span></span>  
-    <span data-ttu-id="013a9-121">Tipo: [Microsoft. ISAM. ESENT. Interop. MoveGrbit](./movegrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="013a9-121">Type: [Microsoft.Isam.Esent.Interop.MoveGrbit](./movegrbit-enumeration.md)</span></span>  
+  - <span data-ttu-id="0a73e-120">grbit</span><span class="sxs-lookup"><span data-stu-id="0a73e-120">grbit</span></span>  
+    <span data-ttu-id="0a73e-121">Tipo: [Microsoft. ISAM. ESENT. Interop. MoveGrbit](./movegrbit-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="0a73e-121">Type: [Microsoft.Isam.Esent.Interop.MoveGrbit](./movegrbit-enumeration.md)</span></span>  
     
-    <span data-ttu-id="013a9-122">Opções de movimentação.</span><span class="sxs-lookup"><span data-stu-id="013a9-122">Move options.</span></span>
+    <span data-ttu-id="0a73e-122">Opções de movimentação.</span><span class="sxs-lookup"><span data-stu-id="0a73e-122">Move options.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="013a9-123">Confira também</span><span class="sxs-lookup"><span data-stu-id="013a9-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0a73e-123">Confira também</span><span class="sxs-lookup"><span data-stu-id="0a73e-123">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="013a9-124">Referência</span><span class="sxs-lookup"><span data-stu-id="013a9-124">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="0a73e-124">Referência</span><span class="sxs-lookup"><span data-stu-id="0a73e-124">Reference</span></span>
 
-[<span data-ttu-id="013a9-125">Classe de API</span><span class="sxs-lookup"><span data-stu-id="013a9-125">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="0a73e-125">Classe de API</span><span class="sxs-lookup"><span data-stu-id="0a73e-125">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="013a9-126">Membros da API</span><span class="sxs-lookup"><span data-stu-id="013a9-126">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="0a73e-126">Membros da API</span><span class="sxs-lookup"><span data-stu-id="0a73e-126">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="013a9-127">Sobrecarga de JetMove</span><span class="sxs-lookup"><span data-stu-id="013a9-127">JetMove overload</span></span>](./api.jetmove-method.md)
+[<span data-ttu-id="0a73e-127">Sobrecarga de JetMove</span><span class="sxs-lookup"><span data-stu-id="0a73e-127">JetMove overload</span></span>](./api.jetmove-method.md)
 
-[<span data-ttu-id="013a9-128">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="013a9-128">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="0a73e-128">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="0a73e-128">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

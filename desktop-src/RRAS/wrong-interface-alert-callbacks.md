@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103637039"
 ---
-# <a name="wrong-interface-alert-callbacks"></a><span data-ttu-id="fdaa1-103">Retornos de chamada de alerta de interface incorreto</span><span class="sxs-lookup"><span data-stu-id="fdaa1-103">Wrong Interface Alert Callbacks</span></span>
+# <a name="wrong-interface-alert-callbacks"></a><span data-ttu-id="25826-103">Retornos de chamada de alerta de interface incorreto</span><span class="sxs-lookup"><span data-stu-id="25826-103">Wrong Interface Alert Callbacks</span></span>
 
-<span data-ttu-id="fdaa1-104">Depois que o encaminhador de kernel recebe dados de multicast de uma fonte específica na interface errada, ele notifica o Gerenciador do grupo de multicast.</span><span class="sxs-lookup"><span data-stu-id="fdaa1-104">After the kernel forwarder receives multicast data from a specific source on the wrong interface, it notifies the multicast group manager.</span></span> <span data-ttu-id="fdaa1-105">O Gerenciador do grupo de multicast invocará o [**PMGM \_ errado \_ se \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback) o retorno de chamada de retorno de chamada ao protocolo de roteamento que possui a interface em que os dados chegaram incorretamente.</span><span class="sxs-lookup"><span data-stu-id="fdaa1-105">The multicast group manager then invokes the [**PMGM\_WRONG\_IF\_CALLBACK**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback) callback to the routing protocol that owns the interface on which the data incorrectly arrived.</span></span>
+<span data-ttu-id="25826-104">Depois que o encaminhador de kernel recebe dados de multicast de uma fonte específica na interface errada, ele notifica o Gerenciador do grupo de multicast.</span><span class="sxs-lookup"><span data-stu-id="25826-104">After the kernel forwarder receives multicast data from a specific source on the wrong interface, it notifies the multicast group manager.</span></span> <span data-ttu-id="25826-105">O Gerenciador do grupo de multicast invocará o [**PMGM \_ errado \_ se \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback) o retorno de chamada de retorno de chamada ao protocolo de roteamento que possui a interface em que os dados chegaram incorretamente.</span><span class="sxs-lookup"><span data-stu-id="25826-105">The multicast group manager then invokes the [**PMGM\_WRONG\_IF\_CALLBACK**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback) callback to the routing protocol that owns the interface on which the data incorrectly arrived.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="fdaa1-106">Este retorno de chamada não está implementado atualmente nesta versão da API MGM.</span><span class="sxs-lookup"><span data-stu-id="fdaa1-106">This callback is not currently implemented in this version of the MGM API.</span></span>
+> <span data-ttu-id="25826-106">Este retorno de chamada não está implementado atualmente nesta versão da API MGM.</span><span class="sxs-lookup"><span data-stu-id="25826-106">This callback is not currently implemented in this version of the MGM API.</span></span>
 
  
 

@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
 ms.locfileid: "103641833"
 ---
-# <a name="stdfactcpp"></a><span data-ttu-id="69c51-104">STDFACT. CPP</span><span class="sxs-lookup"><span data-stu-id="69c51-104">STDFACT.CPP</span></span>
+# <a name="stdfactcpp"></a><span data-ttu-id="9d9a6-104">STDFACT. CPP</span><span class="sxs-lookup"><span data-stu-id="9d9a6-104">STDFACT.CPP</span></span>
 
-<span data-ttu-id="69c51-105">No componente de provedor de exemplo, um exemplo de código que mostra a implementação de [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) padrão está em Stdfact. cpp.</span><span class="sxs-lookup"><span data-stu-id="69c51-105">In the example provider component, a code example showing the standard [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) implementation is in Stdfact.cpp.</span></span> <span data-ttu-id="69c51-106">Para obter mais informações, consulte **IClassFactory**.</span><span class="sxs-lookup"><span data-stu-id="69c51-106">For more information, see **IClassFactory**.</span></span>
+<span data-ttu-id="9d9a6-105">No componente de provedor de exemplo, um exemplo de código que mostra a implementação de [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) padrão está em Stdfact. cpp.</span><span class="sxs-lookup"><span data-stu-id="9d9a6-105">In the example provider component, a code example showing the standard [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) implementation is in Stdfact.cpp.</span></span> <span data-ttu-id="9d9a6-106">Para obter mais informações, consulte **IClassFactory**.</span><span class="sxs-lookup"><span data-stu-id="9d9a6-106">For more information, see **IClassFactory**.</span></span>
 
  
 

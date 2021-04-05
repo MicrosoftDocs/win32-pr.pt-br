@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636721"
 ---
-# <a name="traversing-the-thread-list"></a><span data-ttu-id="b1ab3-103">Atravessando a lista de threads</span><span class="sxs-lookup"><span data-stu-id="b1ab3-103">Traversing the Thread List</span></span>
+# <a name="traversing-the-thread-list"></a><span data-ttu-id="3e230-103">Atravessando a lista de threads</span><span class="sxs-lookup"><span data-stu-id="3e230-103">Traversing the Thread List</span></span>
 
-<span data-ttu-id="b1ab3-104">A função de exemplo a seguir lista os threads em execução para um processo especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ab3-104">The following example function lists running threads for a specified process.</span></span> <span data-ttu-id="b1ab3-105">Primeiro, a `ListProcessThreads` função tira um instantâneo dos threads atualmente em execução no sistema usando [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)e, em seguida, percorre a lista registrada no instantâneo usando as funções [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) e [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) .</span><span class="sxs-lookup"><span data-stu-id="b1ab3-105">First, the `ListProcessThreads` function takes a snapshot of the currently executing threads in the system using [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot), and then it walks through the list recorded in the snapshot using the [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) and [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) functions.</span></span> <span data-ttu-id="b1ab3-106">O parâmetro para `ListProcessThreads` é o identificador do processo do processo cujos threads devem ser listados.</span><span class="sxs-lookup"><span data-stu-id="b1ab3-106">The parameter for `ListProcessThreads` is the process identifier of the process whose threads are to be listed.</span></span>
+<span data-ttu-id="3e230-104">A função de exemplo a seguir lista os threads em execução para um processo especificado.</span><span class="sxs-lookup"><span data-stu-id="3e230-104">The following example function lists running threads for a specified process.</span></span> <span data-ttu-id="3e230-105">Primeiro, a `ListProcessThreads` função tira um instantâneo dos threads atualmente em execução no sistema usando [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)e, em seguida, percorre a lista registrada no instantâneo usando as funções [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) e [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) .</span><span class="sxs-lookup"><span data-stu-id="3e230-105">First, the `ListProcessThreads` function takes a snapshot of the currently executing threads in the system using [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot), and then it walks through the list recorded in the snapshot using the [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) and [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) functions.</span></span> <span data-ttu-id="3e230-106">O parâmetro para `ListProcessThreads` é o identificador do processo do processo cujos threads devem ser listados.</span><span class="sxs-lookup"><span data-stu-id="3e230-106">The parameter for `ListProcessThreads` is the process identifier of the process whose threads are to be listed.</span></span>
 
 
 ```C++
@@ -99,11 +99,11 @@ void printError( TCHAR* msg )
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="b1ab3-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b1ab3-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3e230-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="3e230-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b1ab3-108">Movimentação de thread</span><span class="sxs-lookup"><span data-stu-id="b1ab3-108">Thread Walking</span></span>](thread-walking.md)
+[<span data-ttu-id="3e230-108">Movimentação de thread</span><span class="sxs-lookup"><span data-stu-id="3e230-108">Thread Walking</span></span>](thread-walking.md)
 </dt> </dl>
 
  

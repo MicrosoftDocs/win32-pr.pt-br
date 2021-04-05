@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663139"
 ---
-# <a name="tapi-constants"></a><span data-ttu-id="cc5b5-103">Constantes TAPI</span><span class="sxs-lookup"><span data-stu-id="cc5b5-103">TAPI Constants</span></span>
+# <a name="tapi-constants"></a><span data-ttu-id="6ea1b-103">Constantes TAPI</span><span class="sxs-lookup"><span data-stu-id="6ea1b-103">TAPI Constants</span></span>
 
-<span data-ttu-id="cc5b5-104">Esta seção contém a referência para as seguintes constantes TAPI:</span><span class="sxs-lookup"><span data-stu-id="cc5b5-104">This section contains the reference for the following TAPI constants:</span></span>
+<span data-ttu-id="6ea1b-104">Esta seção contém a referência para as seguintes constantes TAPI:</span><span class="sxs-lookup"><span data-stu-id="6ea1b-104">This section contains the reference for the following TAPI constants:</span></span>
 
--   [<span data-ttu-id="cc5b5-105">Constantes de Call Center</span><span class="sxs-lookup"><span data-stu-id="cc5b5-105">Call Center Constants</span></span>](call-center-constants.md)
--   [<span data-ttu-id="cc5b5-106">Constantes de dispositivo de linha</span><span class="sxs-lookup"><span data-stu-id="cc5b5-106">Line Device Constants</span></span>](line-device-constants.md)
--   [<span data-ttu-id="cc5b5-107">Constantes de dispositivo de telefone</span><span class="sxs-lookup"><span data-stu-id="cc5b5-107">Phone Device Constants</span></span>](phone-device-constants.md)
--   [<span data-ttu-id="cc5b5-108">\_Constantes TAPIERR</span><span class="sxs-lookup"><span data-stu-id="cc5b5-108">TAPIERR\_ Constants</span></span>](tapierr--constants.md)
+-   [<span data-ttu-id="6ea1b-105">Constantes de Call Center</span><span class="sxs-lookup"><span data-stu-id="6ea1b-105">Call Center Constants</span></span>](call-center-constants.md)
+-   [<span data-ttu-id="6ea1b-106">Constantes de dispositivo de linha</span><span class="sxs-lookup"><span data-stu-id="6ea1b-106">Line Device Constants</span></span>](line-device-constants.md)
+-   [<span data-ttu-id="6ea1b-107">Constantes de dispositivo de telefone</span><span class="sxs-lookup"><span data-stu-id="6ea1b-107">Phone Device Constants</span></span>](phone-device-constants.md)
+-   [<span data-ttu-id="6ea1b-108">\_Constantes TAPIERR</span><span class="sxs-lookup"><span data-stu-id="6ea1b-108">TAPIERR\_ Constants</span></span>](tapierr--constants.md)
 
  
 

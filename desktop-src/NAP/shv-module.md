@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103635667"
 ---
-# <a name="shv-module"></a><span data-ttu-id="7189f-103">Módulo SHV</span><span class="sxs-lookup"><span data-stu-id="7189f-103">SHV Module</span></span>
+# <a name="shv-module"></a><span data-ttu-id="4ee30-103">Módulo SHV</span><span class="sxs-lookup"><span data-stu-id="4ee30-103">SHV Module</span></span>
 
 > [!Note]  
-> <span data-ttu-id="7189f-104">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="7189f-104">The Network Access Protection platform is not available starting with Windows 10</span></span>
+> <span data-ttu-id="4ee30-104">A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10</span><span class="sxs-lookup"><span data-stu-id="4ee30-104">The Network Access Protection platform is not available starting with Windows 10</span></span>
 
  
 
-<span data-ttu-id="7189f-105">Configura um módulo de validador da integridade do sistema (SHV), incluindo o registro e o cancelamento de registro com o sistema NAP.</span><span class="sxs-lookup"><span data-stu-id="7189f-105">Sets up a system health validator (SHV) module including registration and unregistration with the NAP system.</span></span>
+<span data-ttu-id="4ee30-105">Configura um módulo de validador da integridade do sistema (SHV), incluindo o registro e o cancelamento de registro com o sistema NAP.</span><span class="sxs-lookup"><span data-stu-id="4ee30-105">Sets up a system health validator (SHV) module including registration and unregistration with the NAP system.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="7189f-106">O SDK do NAP também contém um conjunto completo de códigos de exemplo que podem ser encontrados no. \\ .. Exemplos \\ de \\ NAP NetDS... diretório da instalação do SDK.</span><span class="sxs-lookup"><span data-stu-id="7189f-106">The NAP SDK also contains a full set of sample code that can be found in the ...\\Samples\\NetDS\\NAP... directory of your SDK installation.</span></span> <span data-ttu-id="7189f-107">Este conjunto de amostras inclui um SHA (agente de integridade do sistema), SHV e cliente de imposição (EC).</span><span class="sxs-lookup"><span data-stu-id="7189f-107">This sample set includes a system health agent (SHA), SHV, and enforcement client (EC).</span></span> <span data-ttu-id="7189f-108">Ele tem cenários NAP de trabalho completo Configurando a comunicação entre SHA-SHV e SHA-EC.</span><span class="sxs-lookup"><span data-stu-id="7189f-108">It has full working NAP scenarios setting up communication between SHA-SHV and SHA-EC.</span></span>
+> <span data-ttu-id="4ee30-106">O SDK do NAP também contém um conjunto completo de códigos de exemplo que podem ser encontrados no. \\ .. Exemplos \\ de \\ NAP NetDS... diretório da instalação do SDK.</span><span class="sxs-lookup"><span data-stu-id="4ee30-106">The NAP SDK also contains a full set of sample code that can be found in the ...\\Samples\\NetDS\\NAP... directory of your SDK installation.</span></span> <span data-ttu-id="4ee30-107">Este conjunto de amostras inclui um SHA (agente de integridade do sistema), SHV e cliente de imposição (EC).</span><span class="sxs-lookup"><span data-stu-id="4ee30-107">This sample set includes a system health agent (SHA), SHV, and enforcement client (EC).</span></span> <span data-ttu-id="4ee30-108">Ele tem cenários NAP de trabalho completo Configurando a comunicação entre SHA-SHV e SHA-EC.</span><span class="sxs-lookup"><span data-stu-id="4ee30-108">It has full working NAP scenarios setting up communication between SHA-SHV and SHA-EC.</span></span>
 
  
 

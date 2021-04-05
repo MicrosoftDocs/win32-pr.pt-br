@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663353"
 ---
-# <a name="configuring-vss"></a><span data-ttu-id="25e18-103">Configurando o VSS</span><span class="sxs-lookup"><span data-stu-id="25e18-103">Configuring VSS</span></span>
+# <a name="configuring-vss"></a><span data-ttu-id="f8bb0-103">Configurando o VSS</span><span class="sxs-lookup"><span data-stu-id="f8bb0-103">Configuring VSS</span></span>
 
-<span data-ttu-id="25e18-104">Usando as ferramentas de configuração do VSS — incluindo a definição do contexto de cópia de sombra, a escolha de um método de restauração e a alteração de um destino de restauração — gravadores e solicitantes controlam como ocorre uma operação de backup ou restauração:</span><span class="sxs-lookup"><span data-stu-id="25e18-104">By using VSS configuration tools—including setting the shadow copy context, choosing a restore method, and changing a restore target—writers and requesters control how a backup or restore operation takes place:</span></span>
+<span data-ttu-id="f8bb0-104">Usando as ferramentas de configuração do VSS — incluindo a definição do contexto de cópia de sombra, a escolha de um método de restauração e a alteração de um destino de restauração — gravadores e solicitantes controlam como ocorre uma operação de backup ou restauração:</span><span class="sxs-lookup"><span data-stu-id="f8bb0-104">By using VSS configuration tools—including setting the shadow copy context, choosing a restore method, and changing a restore target—writers and requesters control how a backup or restore operation takes place:</span></span>
 
--   [<span data-ttu-id="25e18-105">Configurações de contexto de cópia de sombra</span><span class="sxs-lookup"><span data-stu-id="25e18-105">Shadow Copy Context Configurations</span></span>](shadow-copy-context-configurations.md)
--   [<span data-ttu-id="25e18-106">Configurações de backup do VSS</span><span class="sxs-lookup"><span data-stu-id="25e18-106">VSS Backup Configurations</span></span>](vss-backup-configurations.md)
--   [<span data-ttu-id="25e18-107">Configurações de restauração do VSS</span><span class="sxs-lookup"><span data-stu-id="25e18-107">VSS Restore Configurations</span></span>](vss-restore-configurations.md)
+-   [<span data-ttu-id="f8bb0-105">Configurações de contexto de cópia de sombra</span><span class="sxs-lookup"><span data-stu-id="f8bb0-105">Shadow Copy Context Configurations</span></span>](shadow-copy-context-configurations.md)
+-   [<span data-ttu-id="f8bb0-106">Configurações de backup do VSS</span><span class="sxs-lookup"><span data-stu-id="f8bb0-106">VSS Backup Configurations</span></span>](vss-backup-configurations.md)
+-   [<span data-ttu-id="f8bb0-107">Configurações de restauração do VSS</span><span class="sxs-lookup"><span data-stu-id="f8bb0-107">VSS Restore Configurations</span></span>](vss-restore-configurations.md)
 
  
 

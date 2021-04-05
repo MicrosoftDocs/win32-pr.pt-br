@@ -19,46 +19,46 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103644585"
 ---
-# <a name="ui_animation_iteration_none"></a><span data-ttu-id="c878f-103">\_iteração de animação de IU \_ \_ nenhum</span><span class="sxs-lookup"><span data-stu-id="c878f-103">UI\_ANIMATION\_ITERATION\_NONE</span></span>
+# <a name="ui_animation_iteration_none"></a><span data-ttu-id="2c157-103">\_iteração de animação de IU \_ \_ nenhum</span><span class="sxs-lookup"><span data-stu-id="2c157-103">UI\_ANIMATION\_ITERATION\_NONE</span></span>
 
-<span data-ttu-id="c878f-104">Indica que esta é a entrada inicial em um determinado loop.</span><span class="sxs-lookup"><span data-stu-id="c878f-104">Indicates that this is the initial entry into a given loop.</span></span>
+<span data-ttu-id="2c157-104">Indica que esta é a entrada inicial em um determinado loop.</span><span class="sxs-lookup"><span data-stu-id="2c157-104">Indicates that this is the initial entry into a given loop.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="c878f-105"><span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**\_iteração de animação de IU \_ \_ nenhum**</span><span class="sxs-lookup"><span data-stu-id="c878f-105"><span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**UI\_ANIMATION\_ITERATION\_NONE**</span></span>
+<span data-ttu-id="2c157-105"><span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**\_iteração de animação de IU \_ \_ nenhum**</span><span class="sxs-lookup"><span data-stu-id="2c157-105"><span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**UI\_ANIMATION\_ITERATION\_NONE**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="c878f-106">-1</span><span class="sxs-lookup"><span data-stu-id="c878f-106">-1</span></span>
+<span data-ttu-id="2c157-106">-1</span><span class="sxs-lookup"><span data-stu-id="2c157-106">-1</span></span>
 </dt> <dt>
 
 
 
-<span data-ttu-id="c878f-107">UINT32</span><span class="sxs-lookup"><span data-stu-id="c878f-107">UINT32</span></span>
+<span data-ttu-id="2c157-107">UINT32</span><span class="sxs-lookup"><span data-stu-id="2c157-107">UINT32</span></span>
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="c878f-108">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c878f-108">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="2c157-108">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2c157-108">Requirements</span></span>
 
 
 
-| <span data-ttu-id="c878f-109">Requisito</span><span class="sxs-lookup"><span data-stu-id="c878f-109">Requirement</span></span> | <span data-ttu-id="c878f-110">Valor</span><span class="sxs-lookup"><span data-stu-id="c878f-110">Value</span></span> |
+| <span data-ttu-id="2c157-109">Requisito</span><span class="sxs-lookup"><span data-stu-id="2c157-109">Requirement</span></span> | <span data-ttu-id="2c157-110">Valor</span><span class="sxs-lookup"><span data-stu-id="2c157-110">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c878f-111">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c878f-111">Minimum supported client</span></span><br/> | <span data-ttu-id="c878f-112">Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]</span><span class="sxs-lookup"><span data-stu-id="c878f-112">Windows 8, Windows 7 and Platform Update for Windows 7 \[desktop apps only\]</span></span><br/>    |
-| <span data-ttu-id="c878f-113">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c878f-113">Minimum supported server</span></span><br/> | <span data-ttu-id="c878f-114">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="c878f-114">None supported</span></span><br/>                                                                  |
-| <span data-ttu-id="c878f-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="c878f-115">Header</span></span><br/>                   | <dl> <span data-ttu-id="c878f-116"><dt>UIAnimation. h</dt></span><span class="sxs-lookup"><span data-stu-id="c878f-116"><dt>UIAnimation.h</dt></span></span> </dl>   |
-| <span data-ttu-id="c878f-117">INSERI</span><span class="sxs-lookup"><span data-stu-id="c878f-117">IDL</span></span><br/>                      | <dl> <span data-ttu-id="c878f-118"><dt>UIAnimation. idl</dt></span><span class="sxs-lookup"><span data-stu-id="c878f-118"><dt>UIAnimation.idl</dt></span></span> </dl> |
+| <span data-ttu-id="2c157-111">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2c157-111">Minimum supported client</span></span><br/> | <span data-ttu-id="2c157-112">Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]</span><span class="sxs-lookup"><span data-stu-id="2c157-112">Windows 8, Windows 7 and Platform Update for Windows 7 \[desktop apps only\]</span></span><br/>    |
+| <span data-ttu-id="2c157-113">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="2c157-113">Minimum supported server</span></span><br/> | <span data-ttu-id="2c157-114">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="2c157-114">None supported</span></span><br/>                                                                  |
+| <span data-ttu-id="2c157-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2c157-115">Header</span></span><br/>                   | <dl> <span data-ttu-id="2c157-116"><dt>UIAnimation. h</dt></span><span class="sxs-lookup"><span data-stu-id="2c157-116"><dt>UIAnimation.h</dt></span></span> </dl>   |
+| <span data-ttu-id="2c157-117">INSERI</span><span class="sxs-lookup"><span data-stu-id="2c157-117">IDL</span></span><br/>                      | <dl> <span data-ttu-id="2c157-118"><dt>UIAnimation. idl</dt></span><span class="sxs-lookup"><span data-stu-id="2c157-118"><dt>UIAnimation.idl</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="c878f-119">Consulte também</span><span class="sxs-lookup"><span data-stu-id="c878f-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c157-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="2c157-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c878f-120">Constantes</span><span class="sxs-lookup"><span data-stu-id="c878f-120">Constants</span></span>](constants.md)
+[<span data-ttu-id="2c157-120">Constantes</span><span class="sxs-lookup"><span data-stu-id="2c157-120">Constants</span></span>](constants.md)
 </dt> <dt>
 
-[<span data-ttu-id="c878f-121">**OnLoopIterationChanged**</span><span class="sxs-lookup"><span data-stu-id="c878f-121">**OnLoopIterationChanged**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationloopiterationchangehandler2-onloopiterationchanged)
+[<span data-ttu-id="2c157-121">**OnLoopIterationChanged**</span><span class="sxs-lookup"><span data-stu-id="2c157-121">**OnLoopIterationChanged**</span></span>](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationloopiterationchangehandler2-onloopiterationchanged)
 </dt> </dl>
 
  

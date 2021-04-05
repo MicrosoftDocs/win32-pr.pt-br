@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103636480"
 ---
-# <a name="permitting-and-blocking-applications-and-users"></a><span data-ttu-id="537b8-103">Permitindo e bloqueando aplicativos e usuários</span><span class="sxs-lookup"><span data-stu-id="537b8-103">Permitting and Blocking Applications and Users</span></span>
+# <a name="permitting-and-blocking-applications-and-users"></a><span data-ttu-id="49a28-103">Permitindo e bloqueando aplicativos e usuários</span><span class="sxs-lookup"><span data-stu-id="49a28-103">Permitting and Blocking Applications and Users</span></span>
 
-<span data-ttu-id="537b8-104">O código de exemplo a seguir demonstra como adicionar um filtro que é avaliado por ID de usuário ou aplicativo.</span><span class="sxs-lookup"><span data-stu-id="537b8-104">The following sample code demonstrates how to add a filter that evaluates by user or application ID.</span></span>
+<span data-ttu-id="49a28-104">O código de exemplo a seguir demonstra como adicionar um filtro que é avaliado por ID de usuário ou aplicativo.</span><span class="sxs-lookup"><span data-stu-id="49a28-104">The following sample code demonstrates how to add a filter that evaluates by user or application ID.</span></span>
 
 
 ```C++
@@ -148,11 +148,11 @@ CLEANUP:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="537b8-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="537b8-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="49a28-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="49a28-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="537b8-106">**Condições de filtragem disponíveis em cada camada de filtragem**</span><span class="sxs-lookup"><span data-stu-id="537b8-106">**Filtering Conditions Available at Each Filtering Layer**</span></span>](filtering-conditions-available-at-each-filtering-layer.md)
+[<span data-ttu-id="49a28-106">**Condições de filtragem disponíveis em cada camada de filtragem**</span><span class="sxs-lookup"><span data-stu-id="49a28-106">**Filtering Conditions Available at Each Filtering Layer**</span></span>](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
  
