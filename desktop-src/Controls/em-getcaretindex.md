@@ -51,7 +51,7 @@ O valor de retorno é um valor de índice baseado em zero da posição do cursor
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

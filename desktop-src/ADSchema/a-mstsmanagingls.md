@@ -36,7 +36,7 @@ Serviços de terminal Gerenciando servidor de licenças.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1995                     |
 | System-ID-GUID    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

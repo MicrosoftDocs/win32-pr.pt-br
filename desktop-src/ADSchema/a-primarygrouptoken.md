@@ -67,7 +67,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -88,7 +88,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -109,7 +109,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -130,7 +130,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -151,7 +151,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -172,7 +172,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -193,7 +193,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000014                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 

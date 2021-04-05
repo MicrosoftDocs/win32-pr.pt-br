@@ -36,7 +36,7 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
 | System-ID-GUID    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

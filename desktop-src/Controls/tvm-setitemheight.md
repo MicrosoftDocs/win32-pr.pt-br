@@ -59,7 +59,7 @@ O controle de exibição de árvore usa esse valor para a altura de todos os ite
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
