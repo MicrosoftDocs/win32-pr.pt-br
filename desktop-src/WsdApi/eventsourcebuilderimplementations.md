@@ -1,0 +1,73 @@
+---
+description: Gera funções que criam classes de origem de evento.
+ms.assetid: 002e5b2c-8853-4500-bf53-71f839da97f3
+title: elemento eventSourceBuilderImplementations
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: c50ffcbf24ace4b624748c1a3e91b39c34587d7a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103827830"
+---
+# <a name="eventsourcebuilderimplementations-element"></a>elemento eventSourceBuilderImplementations
+
+Gera funções que criam classes de origem de evento.
+
+## <a name="usage"></a>Uso
+
+``` syntax
+<eventSourceBuilderImplementations>
+  child elements
+</eventSourceBuilderImplementations>
+```
+
+## <a name="attributes"></a>Atributos
+
+Não há atributos.
+
+## <a name="child-elements"></a>Elementos filho
+
+
+
+| Elemento                                     | Descrição                                                                           |
+|---------------------------------------------|---------------------------------------------------------------------------------------|
+| [**proxyClass**](proxyclass.md)<br/> | Nome da classe a ser gerada a partir da função do construtor de origem do evento.<br/> <br/> |
+
+
+
+### <a name="child-element-sequence"></a>Sequência de elementos filho
+
+``` syntax
+proxyClass
+```
+
+## <a name="parent-elements"></a>Elementos pai
+
+
+
+| Elemento                         | Descrição                                                    |
+|---------------------------------|----------------------------------------------------------------|
+| [**Grupo**](file.md)<br/> | Gera um arquivo do gerador de código.<br/> <br/> |
+
+
+
+## <a name="element-information"></a>Informações do elemento
+
+
+
+|                                     |               |
+|-------------------------------------|---------------|
+| Sistema mínimo com suporte<br/> | Windows Vista |
+| Pode estar vazio                        | Não            |
+
+
+
+ 
+
+ 
+
+
+
+

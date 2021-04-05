@@ -86,7 +86,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|----------------------------------------------------------|
 | Descrição    | Indica se a assinatura está habilitada no momento. |
 | Access         | ReadWrite                                                |
-| Type           | Bool                                                     |
+| Tipo           | Bool                                                     |
 | Padrão        | True                                                     |
 | Sistema mínimo | Windows 2000                                             |
 
@@ -214,7 +214,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|---------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica se a assinatura se aplica somente a um determinado usuário, representado pela propriedade UserName. |
 | Access         | ReadWrite                                                                                               |
-| Type           | Bool                                                                                                    |
+| Tipo           | Bool                                                                                                    |
 | Padrão        | Falso                                                                                                   |
 | Sistema mínimo | Windows 2000                                                                                            |
 
@@ -246,7 +246,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|------------------------------------------|
 | Descrição    | Um ponteiro para a interface do Assinante. |
 | Access         | ReadWrite                                |
-| Type           | Variante                                  |
+| Tipo           | Variante                                  |
 | Padrão        | N/D                                      |
 | Sistema mínimo | Windows 2000                             |
 

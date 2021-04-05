@@ -110,7 +110,7 @@ Ponteiro para uma [estrutura \_ FLIPDATA do DD](https://msdn.microsoft.com/libra
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

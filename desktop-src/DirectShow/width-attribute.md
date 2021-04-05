@@ -26,7 +26,7 @@ Valor de ponto flutuante. O valor deve incluir o zero à esquerda antes da casa 
 
 ## <a name="applies-to"></a>Aplica-se A
 
-[**group**](group-element.md)
+[**Group**](group-element.md)
 
 ## <a name="remarks"></a>Comentários
 

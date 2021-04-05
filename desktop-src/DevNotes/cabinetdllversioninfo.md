@@ -79,7 +79,7 @@ Contém os bits menos significativos das informações de versão. O bits 0-15 c
 
 </dd> </dl>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

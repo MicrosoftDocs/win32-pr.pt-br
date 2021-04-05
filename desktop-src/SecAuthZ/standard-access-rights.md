@@ -1,0 +1,52 @@
+---
+description: Cada tipo de objeto protegível tem um conjunto de direitos de acesso que correspondem às operações específicas desse tipo de objeto.
+ms.assetid: f43bccce-0f8c-4732-b678-5fd3218a9f84
+title: Direitos de acesso padrão
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: bf28fb1ac86a60df373a9f747510b4df624a17eb
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103827331"
+---
+# <a name="standard-access-rights"></a>Direitos de acesso padrão
+
+Cada tipo de objeto protegível tem um conjunto de direitos de acesso que correspondem às operações específicas desse tipo de objeto. Além desses direitos de acesso específicos ao objeto, há um conjunto de direitos de acesso padrão que correspondem às operações comuns à maioria dos tipos de objetos protegíveis.
+
+O [formato de máscara de acesso](access-mask-format.md) inclui um conjunto de bits para os direitos de acesso padrão. As seguintes constantes do Windows para direitos de acesso padrão são definidas em Winnt. h.
+
+
+
+| Constante      | Significado                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Delete (excluir)        | O direito de excluir o objeto.                                                                                                                                                                                                                                                                                                              |
+| controle de leitura \_ | O direito de ler as informações no [*descritor de segurança*](/windows/desktop/SecGloss/s-gly)do objeto, sem incluir as informações na SACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/s-gly) ) do sistema. |
+| SYNCHRONIZE   | O direito de usar o objeto para sincronização. Isso permite que um thread aguarde até que o objeto esteja no estado sinalizado. Alguns tipos de objeto não dão suporte a esse direito de acesso.                                                                                                                                                                |
+| GRAVAR \_ DAC    | O direito de modificar a DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/SecGloss/d-gly) ) no descritor de segurança do objeto.                                                                                                                    |
+| proprietário da gravação \_  | O direito de alterar o proprietário no descritor de segurança do objeto.                                                                                                                                                                                                                                                                           |
+
+
+
+ 
+
+O Winnt. h também define as seguintes combinações de constantes de direitos de acesso padrão.
+
+
+
+| Constante                   | Significado                                                                           |
+|----------------------------|-----------------------------------------------------------------------------------|
+| \_ \_ todos os direitos padrão      | Combina a exclusão, o \_ controle de leitura, a gravação de \_ DAC, o proprietário da gravação \_ e o acesso de sincronização. |
+| \_execução de direitos padrão \_  | Definido atualmente para o controle de leitura igual \_ .                                         |
+| \_leitura de direitos padrão \_     | Definido atualmente para o controle de leitura igual \_ .                                         |
+| \_direitos padrão \_ necessários | Combina exclusão, \_ controle de leitura, gravação de \_ DAC e \_ acesso de proprietário de gravação.              |
+| \_gravação de direitos padrão \_    | Definido atualmente para o controle de leitura igual \_ .                                         |
+
+
+
+ 
+
+ 
+
+ 

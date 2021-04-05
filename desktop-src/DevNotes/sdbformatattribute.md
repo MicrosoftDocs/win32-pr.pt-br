@@ -78,7 +78,7 @@ A função retornará **true** em caso de êxito ou **falso** se o buffer for mu
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
