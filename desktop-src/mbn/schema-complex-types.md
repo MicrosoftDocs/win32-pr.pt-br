@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103920891"
 ---
-# <a name="mobile-broadband-profile-schema-v1-complex-types"></a><span data-ttu-id="59421-104">Tipos complexos do esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="59421-104">Mobile Broadband Profile Schema v1 Complex Types</span></span>
+# <a name="mobile-broadband-profile-schema-v1-complex-types"></a><span data-ttu-id="785e9-104">Tipos complexos do esquema de perfil de banda larga móvel v1</span><span class="sxs-lookup"><span data-stu-id="785e9-104">Mobile Broadband Profile Schema v1 Complex Types</span></span>
 
-<span data-ttu-id="59421-105">O esquema do perfil de banda larga móvel v1 define os tipos complexos a seguir.</span><span class="sxs-lookup"><span data-stu-id="59421-105">The Mobile Broadband Profile Schema v1 defines the following complex types.</span></span> <span data-ttu-id="59421-106">Todos esses tipos complexos estão no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .</span><span class="sxs-lookup"><span data-stu-id="59421-106">All of these complex types are in the namespace `https://www.microsoft.com/networking/WWAN/profile/v1`.</span></span>
+<span data-ttu-id="785e9-105">O esquema do perfil de banda larga móvel v1 define os tipos complexos a seguir.</span><span class="sxs-lookup"><span data-stu-id="785e9-105">The Mobile Broadband Profile Schema v1 defines the following complex types.</span></span> <span data-ttu-id="785e9-106">Todos esses tipos complexos estão no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .</span><span class="sxs-lookup"><span data-stu-id="785e9-106">All of these complex types are in the namespace `https://www.microsoft.com/networking/WWAN/profile/v1`.</span></span>
 
--   [<span data-ttu-id="59421-107">**contextType**</span><span class="sxs-lookup"><span data-stu-id="59421-107">**contextType**</span></span>](schema-contexttype-complextype.md)
--   [<span data-ttu-id="59421-108">**providerType**</span><span class="sxs-lookup"><span data-stu-id="59421-108">**providerType**</span></span>](schema-providertype-complextype.md)
+-   [<span data-ttu-id="785e9-107">**contextType**</span><span class="sxs-lookup"><span data-stu-id="785e9-107">**contextType**</span></span>](schema-contexttype-complextype.md)
+-   [<span data-ttu-id="785e9-108">**providerType**</span><span class="sxs-lookup"><span data-stu-id="785e9-108">**providerType**</span></span>](schema-providertype-complextype.md)
 
  
 

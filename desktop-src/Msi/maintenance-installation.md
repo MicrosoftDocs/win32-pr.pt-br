@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662791"
 ---
-# <a name="maintenance-installation"></a><span data-ttu-id="03b61-104">Instalação de manutenção</span><span class="sxs-lookup"><span data-stu-id="03b61-104">Maintenance Installation</span></span>
+# <a name="maintenance-installation"></a><span data-ttu-id="1f144-104">Instalação de manutenção</span><span class="sxs-lookup"><span data-stu-id="1f144-104">Maintenance Installation</span></span>
 
-<span data-ttu-id="03b61-105">Depois que um aplicativo tiver sido instalado com êxito, talvez o usuário queira retornar à instalação para adicionar ou remover recursos.</span><span class="sxs-lookup"><span data-stu-id="03b61-105">After an application has been successfully installed, the user may want to return to the installation to add or remove features.</span></span> <span data-ttu-id="03b61-106">Isso é conhecido como uma instalação de manutenção.</span><span class="sxs-lookup"><span data-stu-id="03b61-106">This is known as a maintenance installation.</span></span>
+<span data-ttu-id="1f144-105">Depois que um aplicativo tiver sido instalado com êxito, talvez o usuário queira retornar à instalação para adicionar ou remover recursos.</span><span class="sxs-lookup"><span data-stu-id="1f144-105">After an application has been successfully installed, the user may want to return to the installation to add or remove features.</span></span> <span data-ttu-id="1f144-106">Isso é conhecido como uma instalação de manutenção.</span><span class="sxs-lookup"><span data-stu-id="1f144-106">This is known as a maintenance installation.</span></span>
 
-<span data-ttu-id="03b61-107">As [transformações](transforms.md) que foram aplicadas a uma instalação devem estar disponíveis durante as instalações de manutenção subsequentes.</span><span class="sxs-lookup"><span data-stu-id="03b61-107">[Transforms](transforms.md) that have been applied to an installation must be available during subsequent maintenance installations.</span></span>
+<span data-ttu-id="1f144-107">As [transformações](transforms.md) que foram aplicadas a uma instalação devem estar disponíveis durante as instalações de manutenção subsequentes.</span><span class="sxs-lookup"><span data-stu-id="1f144-107">[Transforms](transforms.md) that have been applied to an installation must be available during subsequent maintenance installations.</span></span>
 
  
 

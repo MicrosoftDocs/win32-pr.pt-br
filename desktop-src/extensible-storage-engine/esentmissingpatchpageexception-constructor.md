@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921081"
 ---
-# <a name="esentmissingpatchpageexception-constructor"></a><span data-ttu-id="f6276-103">Construtor EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="f6276-103">EsentMissingPatchPageException constructor</span></span>
+# <a name="esentmissingpatchpageexception-constructor"></a><span data-ttu-id="ac824-103">Construtor EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="ac824-103">EsentMissingPatchPageException constructor</span></span>
 
-<span data-ttu-id="f6276-104">Inicializa uma nova instância da classe EsentMissingPatchPageException.</span><span class="sxs-lookup"><span data-stu-id="f6276-104">Initializes a new instance of the EsentMissingPatchPageException class.</span></span>
+<span data-ttu-id="ac824-104">Inicializa uma nova instância da classe EsentMissingPatchPageException.</span><span class="sxs-lookup"><span data-stu-id="ac824-104">Initializes a new instance of the EsentMissingPatchPageException class.</span></span>
 
-<span data-ttu-id="f6276-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f6276-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f6276-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f6276-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="ac824-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ac824-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="ac824-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ac824-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f6276-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f6276-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ac824-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ac824-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentMissingPatchPageException()
 public EsentMissingPatchPageException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f6276-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="f6276-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ac824-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="ac824-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f6276-109">Referência</span><span class="sxs-lookup"><span data-stu-id="f6276-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ac824-109">Referência</span><span class="sxs-lookup"><span data-stu-id="ac824-109">Reference</span></span>
 
-[<span data-ttu-id="f6276-110">Classe EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="f6276-110">EsentMissingPatchPageException class</span></span>](./esentmissingpatchpageexception-class.md)
+[<span data-ttu-id="ac824-110">Classe EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="ac824-110">EsentMissingPatchPageException class</span></span>](./esentmissingpatchpageexception-class.md)
 
-[<span data-ttu-id="f6276-111">Membros do EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="f6276-111">EsentMissingPatchPageException members</span></span>](./esentmissingpatchpageexception-members.md)
+[<span data-ttu-id="ac824-111">Membros do EsentMissingPatchPageException</span><span class="sxs-lookup"><span data-stu-id="ac824-111">EsentMissingPatchPageException members</span></span>](./esentmissingpatchpageexception-members.md)
 
-[<span data-ttu-id="f6276-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f6276-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="ac824-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ac824-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

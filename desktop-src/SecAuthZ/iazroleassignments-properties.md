@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662781"
 ---
-# <a name="iazroleassignments-properties"></a><span data-ttu-id="ae257-103">Propriedades de IAzRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="ae257-103">IAzRoleAssignments Properties</span></span>
+# <a name="iazroleassignments-properties"></a><span data-ttu-id="fbc65-103">Propriedades de IAzRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="fbc65-103">IAzRoleAssignments Properties</span></span>
 
-<span data-ttu-id="ae257-104">A interface [**IAzRoleAssignments**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignments) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="ae257-104">The [**IAzRoleAssignments**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignments) interface exposes the following properties.</span></span>
+<span data-ttu-id="fbc65-104">A interface [**IAzRoleAssignments**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignments) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="fbc65-104">The [**IAzRoleAssignments**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignments) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="ae257-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ae257-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fbc65-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fbc65-105">In this section</span></span>
 
--   [<span data-ttu-id="ae257-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="ae257-106">**Count Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_count)
--   [<span data-ttu-id="ae257-107">**Propriedade do item**</span><span class="sxs-lookup"><span data-stu-id="ae257-107">**Item Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_item)
--   [<span data-ttu-id="ae257-108">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="ae257-108">**\_NewEnum Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get__newenum)
+-   [<span data-ttu-id="fbc65-106">**Propriedade Count**</span><span class="sxs-lookup"><span data-stu-id="fbc65-106">**Count Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_count)
+-   [<span data-ttu-id="fbc65-107">**Propriedade do item**</span><span class="sxs-lookup"><span data-stu-id="fbc65-107">**Item Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_item)
+-   [<span data-ttu-id="fbc65-108">**\_Propriedade NewEnum**</span><span class="sxs-lookup"><span data-stu-id="fbc65-108">**\_NewEnum Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get__newenum)
 
  
 

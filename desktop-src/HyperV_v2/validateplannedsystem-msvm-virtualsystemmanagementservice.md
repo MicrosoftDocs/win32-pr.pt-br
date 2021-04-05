@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663004"
 ---
-# <a name="validateplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a><span data-ttu-id="da3db-103">Método ValidatePlannedSystem da \_ classe VirtualSystemManagementService Msvm</span><span class="sxs-lookup"><span data-stu-id="da3db-103">ValidatePlannedSystem method of the Msvm\_VirtualSystemManagementService class</span></span>
+# <a name="validateplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a><span data-ttu-id="f02d4-103">Método ValidatePlannedSystem da \_ classe VirtualSystemManagementService Msvm</span><span class="sxs-lookup"><span data-stu-id="f02d4-103">ValidatePlannedSystem method of the Msvm\_VirtualSystemManagementService class</span></span>
 
-<span data-ttu-id="da3db-104">Valida o sistema planejado especificado.</span><span class="sxs-lookup"><span data-stu-id="da3db-104">Validates the specified planned system.</span></span> <span data-ttu-id="da3db-105">Isso envolve verificações de configuração de máquina virtual, dispositivos, configuração de instantâneo, dispositivos de instantâneo, arquivos de estado salvos e arquivos de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="da3db-105">This involves checks of the virtual machine configuration, devices, snapshot configuration, snapshot devices, saved state files and storage files.</span></span>
+<span data-ttu-id="f02d4-104">Valida o sistema planejado especificado.</span><span class="sxs-lookup"><span data-stu-id="f02d4-104">Validates the specified planned system.</span></span> <span data-ttu-id="f02d4-105">Isso envolve verificações de configuração de máquina virtual, dispositivos, configuração de instantâneo, dispositivos de instantâneo, arquivos de estado salvos e arquivos de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="f02d4-105">This involves checks of the virtual machine configuration, devices, snapshot configuration, snapshot devices, saved state files and storage files.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="da3db-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="da3db-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f02d4-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f02d4-106">Syntax</span></span>
 
 
 ```mof
@@ -36,78 +36,78 @@ uint32 ValidatePlannedSystem(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="da3db-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="da3db-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f02d4-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f02d4-107">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="da3db-108">*PlannedSystem* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="da3db-108">*PlannedSystem* \[in\]</span></span>
+<span data-ttu-id="f02d4-108">*PlannedSystem* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="f02d4-108">*PlannedSystem* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="da3db-109">Uma referência a um objeto [**Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que representa o sistema planejado a ser validado.</span><span class="sxs-lookup"><span data-stu-id="da3db-109">A reference to an [**Msvm\_PlannedComputerSystem**](msvm-plannedcomputersystem.md) object that represents the planned system to be validated.</span></span>
+<span data-ttu-id="f02d4-109">Uma referência a um objeto [**Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que representa o sistema planejado a ser validado.</span><span class="sxs-lookup"><span data-stu-id="f02d4-109">A reference to an [**Msvm\_PlannedComputerSystem**](msvm-plannedcomputersystem.md) object that represents the planned system to be validated.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="da3db-110">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="da3db-110">*Job* \[out\]</span></span>
+<span data-ttu-id="f02d4-110">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="f02d4-110">*Job* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="da3db-111">Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="da3db-111">If the operation is performed asynchronously, this method will return 4096, and this parameter will contain a reference to an object derived from [**CIM\_ConcreteJob**](/previous-versions//cc136808(v=vs.85)).</span></span>
+<span data-ttu-id="f02d4-111">Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="f02d4-111">If the operation is performed asynchronously, this method will return 4096, and this parameter will contain a reference to an object derived from [**CIM\_ConcreteJob**](/previous-versions//cc136808(v=vs.85)).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="da3db-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="da3db-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f02d4-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="f02d4-112">Return value</span></span>
 
-<span data-ttu-id="da3db-113">Esse método retorna um dos valores a seguir.</span><span class="sxs-lookup"><span data-stu-id="da3db-113">This method returns one of the following values.</span></span>
+<span data-ttu-id="f02d4-113">Esse método retorna um dos valores a seguir.</span><span class="sxs-lookup"><span data-stu-id="f02d4-113">This method returns one of the following values.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="da3db-114">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="da3db-114">**Completed with No Error** (0)</span></span>
+<span data-ttu-id="f02d4-114">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="f02d4-114">**Completed with No Error** (0)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-115">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="da3db-115">**Method Parameters Checked - Job Started** (4096)</span></span>
+<span data-ttu-id="f02d4-115">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="f02d4-115">**Method Parameters Checked - Job Started** (4096)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-116">**Falha** (32768)</span><span class="sxs-lookup"><span data-stu-id="da3db-116">**Failed** (32768)</span></span>
+<span data-ttu-id="f02d4-116">**Falha** (32768)</span><span class="sxs-lookup"><span data-stu-id="f02d4-116">**Failed** (32768)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-117">**Acesso negado** (32769)</span><span class="sxs-lookup"><span data-stu-id="da3db-117">**Access Denied** (32769)</span></span>
+<span data-ttu-id="f02d4-117">**Acesso negado** (32769)</span><span class="sxs-lookup"><span data-stu-id="f02d4-117">**Access Denied** (32769)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-118">**Sem suporte** (32770)</span><span class="sxs-lookup"><span data-stu-id="da3db-118">**Not Supported** (32770)</span></span>
+<span data-ttu-id="f02d4-118">**Sem suporte** (32770)</span><span class="sxs-lookup"><span data-stu-id="f02d4-118">**Not Supported** (32770)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-119">O **status é desconhecido** (32771)</span><span class="sxs-lookup"><span data-stu-id="da3db-119">**Status is unknown** (32771)</span></span>
+<span data-ttu-id="f02d4-119">O **status é desconhecido** (32771)</span><span class="sxs-lookup"><span data-stu-id="f02d4-119">**Status is unknown** (32771)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-120">**Tempo limite** (32772)</span><span class="sxs-lookup"><span data-stu-id="da3db-120">**Timeout** (32772)</span></span>
+<span data-ttu-id="f02d4-120">**Tempo limite** (32772)</span><span class="sxs-lookup"><span data-stu-id="f02d4-120">**Timeout** (32772)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-121">**Parâmetro inválido** (32773)</span><span class="sxs-lookup"><span data-stu-id="da3db-121">**Invalid parameter** (32773)</span></span>
+<span data-ttu-id="f02d4-121">**Parâmetro inválido** (32773)</span><span class="sxs-lookup"><span data-stu-id="f02d4-121">**Invalid parameter** (32773)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-122">O **sistema está em uso** (32774)</span><span class="sxs-lookup"><span data-stu-id="da3db-122">**System is in use** (32774)</span></span>
+<span data-ttu-id="f02d4-122">O **sistema está em uso** (32774)</span><span class="sxs-lookup"><span data-stu-id="f02d4-122">**System is in use** (32774)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-123">**Estado inválido para esta operação** (32775)</span><span class="sxs-lookup"><span data-stu-id="da3db-123">**Invalid state for this operation** (32775)</span></span>
+<span data-ttu-id="f02d4-123">**Estado inválido para esta operação** (32775)</span><span class="sxs-lookup"><span data-stu-id="f02d4-123">**Invalid state for this operation** (32775)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-124">**Tipo de dados incorreto** (32776)</span><span class="sxs-lookup"><span data-stu-id="da3db-124">**Incorrect data type** (32776)</span></span>
+<span data-ttu-id="f02d4-124">**Tipo de dados incorreto** (32776)</span><span class="sxs-lookup"><span data-stu-id="f02d4-124">**Incorrect data type** (32776)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-125">O **sistema não está disponível** (32777)</span><span class="sxs-lookup"><span data-stu-id="da3db-125">**System is not available** (32777)</span></span>
+<span data-ttu-id="f02d4-125">O **sistema não está disponível** (32777)</span><span class="sxs-lookup"><span data-stu-id="f02d4-125">**System is not available** (32777)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-126">**Memória insuficiente** (32778)</span><span class="sxs-lookup"><span data-stu-id="da3db-126">**Out of memory** (32778)</span></span>
+<span data-ttu-id="f02d4-126">**Memória insuficiente** (32778)</span><span class="sxs-lookup"><span data-stu-id="f02d4-126">**Out of memory** (32778)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="da3db-127">**Arquivo em uso** (32779)</span><span class="sxs-lookup"><span data-stu-id="da3db-127">**File in Use** (32779)</span></span>
+<span data-ttu-id="f02d4-127">**Arquivo em uso** (32779)</span><span class="sxs-lookup"><span data-stu-id="f02d4-127">**File in Use** (32779)</span></span>
 </dt> </dl>
 
-## <a name="examples"></a><span data-ttu-id="da3db-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="da3db-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f02d4-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f02d4-128">Examples</span></span>
 
-<span data-ttu-id="da3db-129">O exemplo de C# a seguir usa o método **ValidatePlannedSystem** para validar uma máquina virtual planejada.</span><span class="sxs-lookup"><span data-stu-id="da3db-129">The following C# sample uses the **ValidatePlannedSystem** method to validate a planned virtual machine.</span></span> <span data-ttu-id="da3db-130">Esse código é obtido do [exemplo de máquinas virtuais planejadas do Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm).</span><span class="sxs-lookup"><span data-stu-id="da3db-130">This code is taken from the [Hyper-V planned virtual machines sample](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm).</span></span> <span data-ttu-id="da3db-131">Os utilitários referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).</span><span class="sxs-lookup"><span data-stu-id="da3db-131">The referenced utilities can be found in [Common utilities for the virtualization samples (V2)](common-utilities-for-the-virtualization-samples-v2.md).</span></span>
+<span data-ttu-id="f02d4-129">O exemplo de C# a seguir usa o método **ValidatePlannedSystem** para validar uma máquina virtual planejada.</span><span class="sxs-lookup"><span data-stu-id="f02d4-129">The following C# sample uses the **ValidatePlannedSystem** method to validate a planned virtual machine.</span></span> <span data-ttu-id="f02d4-130">Esse código é obtido do [exemplo de máquinas virtuais planejadas do Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm).</span><span class="sxs-lookup"><span data-stu-id="f02d4-130">This code is taken from the [Hyper-V planned virtual machines sample](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm).</span></span> <span data-ttu-id="f02d4-131">Os utilitários referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).</span><span class="sxs-lookup"><span data-stu-id="f02d4-131">The referenced utilities can be found in [Common utilities for the virtualization samples (V2)](common-utilities-for-the-virtualization-samples-v2.md).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="da3db-132">Para funcionar corretamente, o código a seguir deve ser executado no servidor de host da máquina virtual e deve ser executado com privilégios de administrador.</span><span class="sxs-lookup"><span data-stu-id="da3db-132">To function correctly, the following code must be run on the virtual machine host server, and must be run with Administrator privileges.</span></span>
+> <span data-ttu-id="f02d4-132">Para funcionar corretamente, o código a seguir deve ser executado no servidor de host da máquina virtual e deve ser executado com privilégios de administrador.</span><span class="sxs-lookup"><span data-stu-id="f02d4-132">To function correctly, the following code must be run on the virtual machine host server, and must be run with Administrator privileges.</span></span>
 
  
 
@@ -153,25 +153,25 @@ ValidatePvm(
 
 
 
-## <a name="requirements"></a><span data-ttu-id="da3db-133">Requisitos</span><span class="sxs-lookup"><span data-stu-id="da3db-133">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="f02d4-133">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f02d4-133">Requirements</span></span>
 
 
 
-| <span data-ttu-id="da3db-134">Requisito</span><span class="sxs-lookup"><span data-stu-id="da3db-134">Requirement</span></span> | <span data-ttu-id="da3db-135">Valor</span><span class="sxs-lookup"><span data-stu-id="da3db-135">Value</span></span> |
+| <span data-ttu-id="f02d4-134">Requisito</span><span class="sxs-lookup"><span data-stu-id="f02d4-134">Requirement</span></span> | <span data-ttu-id="f02d4-135">Valor</span><span class="sxs-lookup"><span data-stu-id="f02d4-135">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="da3db-136">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="da3db-136">Minimum supported client</span></span><br/> | <span data-ttu-id="da3db-137">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="da3db-137">Windows 8 \[desktop apps only\]</span></span><br/>                                                              |
-| <span data-ttu-id="da3db-138">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="da3db-138">Minimum supported server</span></span><br/> | <span data-ttu-id="da3db-139">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="da3db-139">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                                    |
-| <span data-ttu-id="da3db-140">Namespace</span><span class="sxs-lookup"><span data-stu-id="da3db-140">Namespace</span></span><br/>                | <span data-ttu-id="da3db-141">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="da3db-141">Root\\Virtualization\\V2</span></span><br/>                                                                     |
-| <span data-ttu-id="da3db-142">MOF</span><span class="sxs-lookup"><span data-stu-id="da3db-142">MOF</span></span><br/>                      | <dl> <span data-ttu-id="da3db-143"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="da3db-143"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="da3db-144">DLL</span><span class="sxs-lookup"><span data-stu-id="da3db-144">DLL</span></span><br/>                      | <dl> <span data-ttu-id="da3db-145"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="da3db-145"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="f02d4-136">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f02d4-136">Minimum supported client</span></span><br/> | <span data-ttu-id="f02d4-137">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="f02d4-137">Windows 8 \[desktop apps only\]</span></span><br/>                                                              |
+| <span data-ttu-id="f02d4-138">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f02d4-138">Minimum supported server</span></span><br/> | <span data-ttu-id="f02d4-139">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="f02d4-139">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                                    |
+| <span data-ttu-id="f02d4-140">Namespace</span><span class="sxs-lookup"><span data-stu-id="f02d4-140">Namespace</span></span><br/>                | <span data-ttu-id="f02d4-141">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="f02d4-141">Root\\Virtualization\\V2</span></span><br/>                                                                     |
+| <span data-ttu-id="f02d4-142">MOF</span><span class="sxs-lookup"><span data-stu-id="f02d4-142">MOF</span></span><br/>                      | <dl> <span data-ttu-id="f02d4-143"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="f02d4-143"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="f02d4-144">DLL</span><span class="sxs-lookup"><span data-stu-id="f02d4-144">DLL</span></span><br/>                      | <dl> <span data-ttu-id="f02d4-145"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="f02d4-145"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="da3db-146">Confira também</span><span class="sxs-lookup"><span data-stu-id="da3db-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f02d4-146">Confira também</span><span class="sxs-lookup"><span data-stu-id="f02d4-146">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="da3db-147">**Msvm \_ VirtualSystemManagementService**</span><span class="sxs-lookup"><span data-stu-id="da3db-147">**Msvm\_VirtualSystemManagementService**</span></span>](msvm-virtualsystemmanagementservice.md)
+[<span data-ttu-id="f02d4-147">**Msvm \_ VirtualSystemManagementService**</span><span class="sxs-lookup"><span data-stu-id="f02d4-147">**Msvm\_VirtualSystemManagementService**</span></span>](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  
