@@ -23,7 +23,7 @@ ms.locfileid: "103662940"
 
 Indica se as mensagens de contexto devem ser enviadas para o procedimento de janela da janela de propriedade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

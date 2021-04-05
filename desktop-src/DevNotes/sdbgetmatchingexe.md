@@ -106,7 +106,7 @@ Quando você terminar com o [**TAGREF**](tagref.md)retornado, libere-o usando a 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

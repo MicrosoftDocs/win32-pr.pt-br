@@ -62,7 +62,7 @@ Para usar essa classe do Microsoft Visual Basic, adicione uma referência à bib
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

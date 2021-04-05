@@ -51,7 +51,7 @@ O valor que seu aplicativo pode retornar depende do estágio de desenho atual. O
 
 
 
-| Código de retorno                                                                                            | Description                                                                                                                                                                                                                                                                               |
+| Código de retorno                                                                                            | Descrição                                                                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**dopadrão CDRF \_**</dt> </dl>         | O controle se desenha. Ele não envia nenhum código [ \_ CUSTOMDRAW de nm](nm-customdraw.md) adicional para este ciclo de pintura. Isso ocorre quando **dwDrawStage** é igual a CDDs \_ PrePaint.<br/>                                                                                              |
 | <dl> <dt>**CDRF \_ NOTIFYITEMDRAW**</dt> </dl>    | O controle notifica o pai de qualquer operação de desenho relacionada a itens. Ele envia códigos de notificação [nm \_ CUSTOMDRAW](nm-customdraw.md) antes e depois de itens de desenho. Isso ocorre quando **dwDrawStage** é igual a CDDs \_ PrePaint.<br/>                                                |
@@ -81,7 +81,7 @@ O valor que seu aplicativo pode retornar depende do estágio de desenho atual. O
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

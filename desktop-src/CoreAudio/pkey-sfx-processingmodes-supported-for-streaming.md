@@ -35,7 +35,7 @@ Esta lista não inclui nenhum modo de processamento de sinal com suporte do APO 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

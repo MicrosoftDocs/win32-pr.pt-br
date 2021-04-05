@@ -31,7 +31,7 @@ O membro **pwszVal** da estrutura **PROPVARIANT** aponta para uma cadeia de cara
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

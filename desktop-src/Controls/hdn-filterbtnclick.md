@@ -61,7 +61,7 @@ Se você retornar **true**, um código de notificação [HDN \_ FILTERCHANGE](hd
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
