@@ -107,7 +107,7 @@ O exemplo de C++ a seguir mostra como definir as cores de primeiro e segundo pla
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

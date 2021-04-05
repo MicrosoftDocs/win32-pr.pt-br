@@ -73,7 +73,7 @@ O identificador de porta. Esse valor é atribuído pelo driver do conector USB.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

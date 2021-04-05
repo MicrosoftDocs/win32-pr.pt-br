@@ -78,7 +78,7 @@ A palavra-chave **typedef** em um ACF aplica atributos a tipos que são definido
 
 A instrução de **typedef** de ACF aparece como parte do corpo de ACF. Observe que a sintaxe de **typedef** de ACF é diferente da sintaxe de **typedef** de IDL e da sintaxe de **typedef** de linguagem C. Nenhum tipo novo pode ser introduzido no ACF.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
@@ -121,7 +121,7 @@ A instrução de **typedef** de ACF aparece como parte do corpo de ACF. Observe 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**Strings**](string.md)
+[**string**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)

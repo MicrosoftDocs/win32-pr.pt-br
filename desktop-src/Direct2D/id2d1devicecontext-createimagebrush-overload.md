@@ -35,7 +35,7 @@ Cria um pincel de imagem. A imagem de entrada pode ser qualquer tipo de imagem, 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

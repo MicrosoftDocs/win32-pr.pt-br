@@ -70,7 +70,7 @@ Se ocorrer um erro e uma função de retorno de chamada de erro for definida usa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

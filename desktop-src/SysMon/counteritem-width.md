@@ -29,7 +29,7 @@ Recupera ou define a largura da linha usada para grafar o valor do contador.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -74,7 +74,7 @@ Para especificar um [**estilo de linha**](counteritem-linestyle.md) diferente de
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

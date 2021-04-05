@@ -26,7 +26,7 @@ ms.locfileid: "103644354"
 
 A enumeração **BITS_JOB_PROPERTY_ID** especifica a ID da propriedade para o trabalho do. Essa enumeração é usada na União de [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) para determinar o tipo de valor contido na União.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -120,7 +120,7 @@ Não há suporte.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ Rastreia informações de estado de replicação interna para objetos DS. As inf
 | Frequência de atualização  | Alterações em resposta a qualquer alteração de replicação no objeto.                |
 | Attribute-Id      | 1.2.840.113556.1.4.3                                                         |
 | System-ID-GUID    | 281416c0-1968-11d0-a28f-00aa003049e2                                         |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md)                        |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)                        |
 
 
 

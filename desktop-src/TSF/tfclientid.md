@@ -44,7 +44,7 @@ O tipo de dados **TfClientId** é fornecido pelo Gerenciador de TSF. Um aplicati
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ Contém a descrição a ser exibida para um objeto. Esse valor é restrito como 
 | Frequência de atualização  | Sempre que a descrição precisar ser alterada.   |
 | Attribute-Id      | 2.5.4.13                                    |
 | System-ID-GUID    | bf967950-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

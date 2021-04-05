@@ -69,7 +69,7 @@ A função **gluDeleteTess** destrói o objeto de mosaico indicado e libera a me
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

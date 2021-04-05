@@ -73,7 +73,7 @@ Para uma caixa de listagem de seleção múltipla, o \_ código de notificação
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

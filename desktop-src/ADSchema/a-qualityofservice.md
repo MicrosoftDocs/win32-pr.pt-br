@@ -36,7 +36,7 @@ Qualidade local ou de domínio de bits de serviço em objetos de política.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.458               |
 | System-ID-GUID    | 80a67e4e-9f22-11d0-afdd-00c04fd930c9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -34,7 +34,7 @@ Define o ponto de partida para esse objeto de tinta. Isso determina onde esse ob
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -36,7 +36,7 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | Frequência de atualização  | Sempre que o usuário ou administrador precisar adicionar comentários na conta. |
 | Attribute-Id      | 1.2.840.113556.1.2.81                                                    |
 | System-ID-GUID    | bf96793e-0de6-11d0-a285-00aa003049e2                                     |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                              |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                              |
 
 
 

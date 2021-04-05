@@ -33,7 +33,7 @@ Recupera e define os caminhos do sistema de arquivos que são usados para locali
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -87,7 +87,7 @@ Especifica um SafeArray que contém um caminho de sistema de arquivos para cada 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

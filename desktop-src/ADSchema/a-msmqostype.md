@@ -36,7 +36,7 @@ O tipo de sistema operacional.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.935               |
 | System-ID-GUID    | 9a0dc330-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

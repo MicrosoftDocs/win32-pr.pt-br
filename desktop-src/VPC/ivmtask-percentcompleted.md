@@ -74,7 +74,7 @@ A porcentagem de conclusão atual. O valor é um número entre 0 e 100.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

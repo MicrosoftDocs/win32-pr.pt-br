@@ -69,7 +69,7 @@ Esse método limpará o modo de exibição de gráfico. O SYSMON usa o fator de 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -33,7 +33,7 @@ Recupera e define o endereço Ethernet (MAC) da interface de rede.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -82,7 +82,7 @@ O endereço MAC da NIC virtual. Ele deve ter o formato "*XX* - *XX* XX XX XX XX 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

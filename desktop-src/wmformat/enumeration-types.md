@@ -22,7 +22,7 @@ O SDK do Windows Media Format implementa os seguintes tipos de enumeração.
 
 
 
-| Tipo de enumeração                                                               | Description                                                                                                                      |
+| Tipo de enumeração                                                               | Descrição                                                                                                                      |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | [**\_status do http DRM \_**](drm-http-status.md)                                   | Define um intervalo de Estados para uma solicitação de DRM.                                                                                     |
 | [**\_categoria de \_ estado da licença DRM \_**](drm-license-state-category.md)            | Define as categorias para cadeias de caracteres de licença DRM.                                                                                  |

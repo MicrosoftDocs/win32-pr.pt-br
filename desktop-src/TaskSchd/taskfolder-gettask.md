@@ -27,7 +27,7 @@ ms.locfileid: "103644424"
 
 Para scripts, obtém uma tarefa em um local especificado em uma pasta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

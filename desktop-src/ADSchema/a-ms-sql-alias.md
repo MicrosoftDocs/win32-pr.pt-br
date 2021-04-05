@@ -36,7 +36,7 @@ Um alias usado para se conectar ao banco de dados. O padrão é definido como al
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1395                     |
 | System-ID-GUID    | e0c6baae-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

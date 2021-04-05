@@ -17,7 +17,7 @@ ms.locfileid: "103641593"
 
 O aplicativo parece não oferecer suporte à tabulação.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

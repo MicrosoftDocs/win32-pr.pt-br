@@ -19,7 +19,7 @@ ms.locfileid: "103642923"
 
 O elemento com a função **Grid** não tem uma estrutura de grade ou marcação acessível correspondente.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 Erro
 

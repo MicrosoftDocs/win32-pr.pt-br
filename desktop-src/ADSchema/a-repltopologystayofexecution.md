@@ -36,7 +36,7 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | Frequência de atualização  | Sempre que um objeto de servidor é excluído. |
 | Attribute-Id      | 1.2.840.113556.1.4.677               |
 | System-ID-GUID    | 7bfdcb83-4807-11d1-a9c3-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
