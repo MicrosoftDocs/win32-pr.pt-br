@@ -62,7 +62,7 @@ O método retorna um dos seguintes valores possíveis:
 
 
 
-| Código de retorno                                                                                   | Description                                                                                      |
+| Código de retorno                                                                                   | Descrição                                                                                      |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Memória alocada com êxito.<br/>                                                        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Há algo errado com um ou mais dos parâmetros passados para a função.<br/> |
