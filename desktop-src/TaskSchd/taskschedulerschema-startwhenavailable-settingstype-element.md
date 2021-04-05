@@ -38,7 +38,7 @@ O elemento **StartWhenAvailable** é definido pelo tipo complexo [**settingstype
 
 
 
-| Elemento                                                           | Derivado de                                                         | Description                                                                        |
+| Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingstype**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
@@ -76,7 +76,7 @@ O XML a seguir define um elemento Settings que permite que o Agendador de Tarefa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

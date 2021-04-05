@@ -59,7 +59,7 @@ O valor de retorno é o índice do primeiro item visível na caixa de listagem.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

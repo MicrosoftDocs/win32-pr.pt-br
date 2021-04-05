@@ -47,7 +47,7 @@ O elemento é definido pelo tipo complexo [**Restart**](taskschedulerschema-rest
 
 
 
-| Elemento                                                                               | Derivado de                                                       | Description                                                                                                     |
+| Elemento                                                                               | Derivado de                                                       | Descrição                                                                                                     |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | [**RestartOnFailure**](taskschedulerschema-restartonfailure-settingstype-element.md) | [**Restart**](taskschedulerschema-restarttype-complextype.md) | Especifica que o Agendador de Tarefas tentará reiniciar a tarefa se a tarefa falhar por algum motivo.<br/> |
 
@@ -72,7 +72,7 @@ Para desenvolvimento de script, consulte [**TaskSettings. RestartInterval**](tas
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

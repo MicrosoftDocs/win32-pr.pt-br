@@ -66,7 +66,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 

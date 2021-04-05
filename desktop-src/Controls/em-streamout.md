@@ -95,7 +95,7 @@ Quando você envia uma mensagem em **\_ StreamOut** , o controle de edição ric
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

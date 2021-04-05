@@ -63,7 +63,7 @@ O valor de retorno é o índice de caracteres da linha especificada no parâmetr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

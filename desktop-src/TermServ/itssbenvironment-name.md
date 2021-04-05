@@ -62,7 +62,7 @@ Esse método retorna uma cadeia de caracteres que não é usada diretamente pelo
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
