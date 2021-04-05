@@ -136,7 +136,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* não era um valor aceito.<br/>                                                                                          |
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | A *largura* ou a altura era negativa.<br/>                                                                                     |
@@ -194,7 +194,7 @@ Para copiar o pixel de cor no canto inferior esquerdo da janela para a posição
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

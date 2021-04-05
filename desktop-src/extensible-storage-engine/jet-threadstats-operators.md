@@ -27,7 +27,7 @@ O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a
 <thead>
 <tr class="header">
 <th> </th>
-<th>Name</th>
+<th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>

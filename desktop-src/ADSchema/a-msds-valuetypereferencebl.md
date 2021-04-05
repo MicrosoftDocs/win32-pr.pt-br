@@ -36,7 +36,7 @@ Este é o link voltar para o MS-DS-Value-Type-Reference. Ele vincula um objeto d
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2188                 |
 | System-ID-GUID    | ab5543ad-23a1-3b45-b937-9b313d5474a8    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

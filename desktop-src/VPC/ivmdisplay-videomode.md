@@ -77,7 +77,7 @@ O modo de vídeo atual do sistema operacional convidado. Para obter uma lista de
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

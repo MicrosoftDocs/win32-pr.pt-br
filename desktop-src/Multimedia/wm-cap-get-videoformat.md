@@ -72,7 +72,7 @@ Como os formatos de vídeo compactados variam em requisitos de tamanho, os aplic
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

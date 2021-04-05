@@ -76,7 +76,7 @@ O número de versão principal do Service Pack mais recente instalado.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -56,7 +56,7 @@ A caixa de diálogo vídeo Display é exclusiva para cada driver de captura. Alg
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -72,7 +72,7 @@ Todas as quatro margens assumem o padrão de zero quando você cria o controle T
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

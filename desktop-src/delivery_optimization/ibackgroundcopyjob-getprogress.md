@@ -56,7 +56,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
-| Código de retorno                                                                              | Description                                                 |
+| Código de retorno                                                                              | Descrição                                                 |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | <dl> <dt>S_OK * * * *</dt> </dl> | As informações de progresso foram recuperadas com êxito.<br/> |
 
@@ -80,7 +80,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

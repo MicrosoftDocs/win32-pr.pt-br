@@ -63,7 +63,7 @@ Para obter a tendência do modo IME, chame em [**\_ GETIMEMODEBIAS**](em-getimem
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

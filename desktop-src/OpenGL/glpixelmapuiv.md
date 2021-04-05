@@ -92,7 +92,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                                                                    |
+| Nome                                                                                                  | Significado                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *mapa* não era um valor aceito.<br/>                                                                                                                                                                                |
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | o *Maps* foi negativo ou maior que a \_ tabela de mapa de pixel GL \_ \_ . <br/>                                                                                                                                                   |
@@ -115,7 +115,7 @@ A tabela a seguir mostra os tamanhos e valores iniciais para cada um dos mapas. 
 
 
 
-| Map                      | Índice de pesquisa  | Valor de pesquisa  | Tamanho Inicial | Valor inicial |
+| Mapeamento                      | Índice de pesquisa  | Valor de pesquisa  | Tamanho Inicial | Valor inicial |
 |--------------------------|---------------|---------------|--------------|---------------|
 | \_ \_ mapa de pixel GL \_ i \_ para \_ | índice de cores   | índice de cores   | 1            | 0.0           |
 | \_ \_ mapas de pixel GL \_ s \_ para \_ s | índice de estêncil | índice de estêncil | 1            | 0.0           |
@@ -170,7 +170,7 @@ tabela de mapa de pixels de **glGet** com Argument GL \_ Max \_ \_ \_
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

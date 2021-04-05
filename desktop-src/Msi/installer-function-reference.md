@@ -19,7 +19,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                     | Descrição                                                                           |
+| Nome                                                     | Descrição                                                                           |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------|
 | [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui)             | Habilita a interface do usuário interna do instalador.                                 |
 | [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia)             | Habilita um manipulador de interface de usuário externo que recebe mensagens em um formato de cadeia de caracteres. |
@@ -34,7 +34,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                             | Descrição                                                   |
+| Nome                                             | Descrição                                                   |
 |--------------------------------------------------|---------------------------------------------------------------|
 | [**MsiCloseHandle**](/windows/desktop/api/Msi/nf-msi-msiclosehandle)         | Fecha um identificador de instalação aberta.                           |
 | [**MsiCloseAllHandles**](/windows/desktop/api/Msi/nf-msi-msicloseallhandles) | Fecha todos os identificadores de instalação aberta. Não use para limpeza. |
@@ -47,7 +47,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                                     | Descrição                                                                                                                                                                                                                  |
+| Nome                                                                     | Descrição                                                                                                                                                                                                                  |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsiAdvertiseProduct**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproducta)                       | Anuncia um produto.                                                                                                                                                                                                        |
 | [**MsiAdvertiseProductEx**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa)                   | Anuncia um produto.                                                                                                                                                                                                        |
@@ -84,7 +84,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                                     | Descrição                                                                                                                                                                                                                   |
+| Nome                                                                     | Descrição                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsiProvideAssembly**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya)                         | Instala e retorna o caminho completo do componente para um assembly.                                                                                                                                                                 |
 | [**MsiProvideComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidecomponenta)                       | Instala e retorna o caminho completo do componente de um componente.                                                                                                                                                                  |
@@ -103,7 +103,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                             | Descrição                                                            |
+| Nome                                             | Descrição                                                            |
 |--------------------------------------------------|------------------------------------------------------------------------|
 | [**MsiCollectUserInfo**](/windows/desktop/api/Msi/nf-msi-msicollectuserinfoa) | Armazena informações do usuário de um assistente de instalação.                   |
 | [**MsiUseFeature**](/windows/desktop/api/Msi/nf-msi-msiusefeaturea)           | Incrementa a contagem de uso de um recurso e indica o estado da instalação. |
@@ -118,7 +118,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                             | Descrição                                                                                                                                                                                                                       |
+| Nome                                                             | Descrição                                                                                                                                                                                                                       |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa)                       | Enumera os produtos anunciados.                                                                                                                                                                                                   |
 | [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa)                   | Enumera todas as instâncias de produtos anunciados ou instalados em um contexto especificado. Disponível no Windows Installer 3,0 ou posterior.                                                                                    |
@@ -145,7 +145,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                               | Descrição                                                                            |
+| Nome                                                               | Descrição                                                                            |
 |--------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | [**MsiOpenProduct**](/windows/desktop/api/Msi/nf-msi-msiopenproducta)                           | Abre um produto a ser usado com as funções que acessam o banco de dados.                    |
 | [**MsiOpenPackage**](/windows/desktop/api/Msi/nf-msi-msiopenpackagea)                           | Abre um pacote para usar com as funções que acessam o banco de dados.                    |
@@ -165,7 +165,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                                   | Descrição                                                                                                                                                        |
+| Nome                                                                   | Descrição                                                                                                                                                        |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsiApplyPatch**](/windows/desktop/api/Msi/nf-msi-msiapplypatcha)                                 | Invoca uma instalação e aplica um pacote de patch.                                                                                                               |
 | [**MsiEnumPatches**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska)                    | Retorna o GUID de cada patch que é aplicado a um produto e uma lista de transformações de cada patch que se aplicam ao produto.                                  |
@@ -187,7 +187,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                                                     | Descrição                                                                                                 |
+| Nome                                                                     | Descrição                                                                                                 |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [**MsiGetFileHash**](/windows/desktop/api/Msi/nf-msi-msigetfilehasha)                                 | Usa o caminho para um arquivo e retorna um hash de 128 bits desse arquivo.                                           |
 | [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa) | Usa o caminho para um arquivo que foi assinado digitalmente e retorna o certificado e o hash do signatário do arquivo. |
@@ -201,7 +201,7 @@ Para habilitar Windows Installer em seu aplicativo, você deve usar as funções
 
 
 
-| Name                                               | Descrição                                                                                                                                                                                         |
+| Nome                                               | Descrição                                                                                                                                                                                         |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MsiBeginTransaction**](/windows/desktop/api/Msi/nf-msi-msibegintransactiona) | Inicia o processamento de transações de uma instalação de vários pacotes e retorna um identificador para a transação. Essa função está disponível a partir do Windows Installer 4,5.                    |
 | [**MsiJoinTransaction**](/windows/desktop/api/Msi/nf-msi-msijointransaction)   | Solicita que o Windows Installer torne o processo atual o proprietário da transação que está instalando uma instalação de vários pacotes. Essa função está disponível a partir do Windows Installer 4,5. |
