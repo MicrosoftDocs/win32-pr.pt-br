@@ -19,18 +19,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005400"
 ---
-# <a name="midi-types"></a><span data-ttu-id="1baa1-110">Tipos de MIDI</span><span class="sxs-lookup"><span data-stu-id="1baa1-110">MIDI Types</span></span>
+# <a name="midi-types"></a><span data-ttu-id="25005-110">Tipos de MIDI</span><span class="sxs-lookup"><span data-stu-id="25005-110">MIDI Types</span></span>
 
-<span data-ttu-id="1baa1-111">Os tipos a seguir são usados com MIDI.</span><span class="sxs-lookup"><span data-stu-id="1baa1-111">The following types are used with MIDI.</span></span>
+<span data-ttu-id="25005-111">Os tipos a seguir são usados com MIDI.</span><span class="sxs-lookup"><span data-stu-id="25005-111">The following types are used with MIDI.</span></span>
 
--   [<span data-ttu-id="1baa1-112">Keyarray</span><span class="sxs-lookup"><span data-stu-id="1baa1-112">KEYARRAY</span></span>](keyarray.md)
--   [<span data-ttu-id="1baa1-113">PATCHARRAY</span><span class="sxs-lookup"><span data-stu-id="1baa1-113">PATCHARRAY</span></span>](patcharray.md)
+-   [<span data-ttu-id="25005-112">Keyarray</span><span class="sxs-lookup"><span data-stu-id="25005-112">KEYARRAY</span></span>](keyarray.md)
+-   [<span data-ttu-id="25005-113">PATCHARRAY</span><span class="sxs-lookup"><span data-stu-id="25005-113">PATCHARRAY</span></span>](patcharray.md)
 
-## <a name="related-topics"></a><span data-ttu-id="1baa1-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1baa1-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="25005-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="25005-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1baa1-115">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="1baa1-115">MIDI Reference</span></span>](midi-reference.md)
+[<span data-ttu-id="25005-115">Referência de MIDI</span><span class="sxs-lookup"><span data-stu-id="25005-115">MIDI Reference</span></span>](midi-reference.md)
 </dt> </dl>
 
  

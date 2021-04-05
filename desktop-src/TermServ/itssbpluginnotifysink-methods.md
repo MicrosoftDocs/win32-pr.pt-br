@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005369"
 ---
-# <a name="itssbpluginnotifysink-methods"></a><span data-ttu-id="6f0e1-103">Métodos ITsSbPluginNotifySink</span><span class="sxs-lookup"><span data-stu-id="6f0e1-103">ITsSbPluginNotifySink Methods</span></span>
+# <a name="itssbpluginnotifysink-methods"></a><span data-ttu-id="541e6-103">Métodos ITsSbPluginNotifySink</span><span class="sxs-lookup"><span data-stu-id="541e6-103">ITsSbPluginNotifySink Methods</span></span>
 
-<span data-ttu-id="6f0e1-104">A interface [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6f0e1-104">The [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink) interface exposes the following methods.</span></span>
+<span data-ttu-id="541e6-104">A interface [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="541e6-104">The [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="6f0e1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6f0e1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="541e6-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="541e6-105">In this section</span></span>
 
--   [<span data-ttu-id="6f0e1-106">**Método OnInitialized**</span><span class="sxs-lookup"><span data-stu-id="6f0e1-106">**OnInitialized method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbpluginnotifysink-oninitialized)
--   [<span data-ttu-id="6f0e1-107">**Método onterminado**</span><span class="sxs-lookup"><span data-stu-id="6f0e1-107">**OnTerminated method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbpluginnotifysink-onterminated)
+-   [<span data-ttu-id="541e6-106">**Método OnInitialized**</span><span class="sxs-lookup"><span data-stu-id="541e6-106">**OnInitialized method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbpluginnotifysink-oninitialized)
+-   [<span data-ttu-id="541e6-107">**Método onterminado**</span><span class="sxs-lookup"><span data-stu-id="541e6-107">**OnTerminated method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssbpluginnotifysink-onterminated)
 
  
 

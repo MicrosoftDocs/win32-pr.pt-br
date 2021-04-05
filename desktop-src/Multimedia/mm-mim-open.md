@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824142"
 ---
-# <a name="mm_mim_open-message"></a><span data-ttu-id="4c76a-104">Mensagem de abertura do \_ mim mm \_</span><span class="sxs-lookup"><span data-stu-id="4c76a-104">MM\_MIM\_OPEN message</span></span>
+# <a name="mm_mim_open-message"></a><span data-ttu-id="a8847-104">Mensagem de abertura do \_ mim mm \_</span><span class="sxs-lookup"><span data-stu-id="a8847-104">MM\_MIM\_OPEN message</span></span>
 
-<span data-ttu-id="4c76a-105">A **mensagem \_ mm \_ Open do mim** é enviada para uma janela quando um dispositivo de entrada MIDI é aberto.</span><span class="sxs-lookup"><span data-stu-id="4c76a-105">The **MM\_MIM\_OPEN** message is sent to a window when a MIDI input device is opened.</span></span>
+<span data-ttu-id="a8847-105">A **mensagem \_ mm \_ Open do mim** é enviada para uma janela quando um dispositivo de entrada MIDI é aberto.</span><span class="sxs-lookup"><span data-stu-id="a8847-105">The **MM\_MIM\_OPEN** message is sent to a window when a MIDI input device is opened.</span></span>
 
 
 ```C++
@@ -34,48 +34,48 @@ lParam = reserved
 
 
 
-## <a name="parameters"></a><span data-ttu-id="4c76a-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4c76a-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a8847-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a8847-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4c76a-107"><span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*</span><span class="sxs-lookup"><span data-stu-id="4c76a-107"><span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*</span></span>
+<span data-ttu-id="a8847-107"><span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*</span><span class="sxs-lookup"><span data-stu-id="a8847-107"><span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4c76a-108">Identificador para o dispositivo de entrada MIDI que foi aberto.</span><span class="sxs-lookup"><span data-stu-id="4c76a-108">Handle to the MIDI input device that was opened.</span></span>
+<span data-ttu-id="a8847-108">Identificador para o dispositivo de entrada MIDI que foi aberto.</span><span class="sxs-lookup"><span data-stu-id="a8847-108">Handle to the MIDI input device that was opened.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="4c76a-109"><span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*</span><span class="sxs-lookup"><span data-stu-id="4c76a-109"><span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*</span></span>
+<span data-ttu-id="a8847-109"><span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*</span><span class="sxs-lookup"><span data-stu-id="a8847-109"><span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4c76a-110">Reservado Não use.</span><span class="sxs-lookup"><span data-stu-id="4c76a-110">Reserved; do not use.</span></span>
+<span data-ttu-id="a8847-110">Reservado Não use.</span><span class="sxs-lookup"><span data-stu-id="a8847-110">Reserved; do not use.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4c76a-111">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="4c76a-111">Return Value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a8847-111">Valor Retornado</span><span class="sxs-lookup"><span data-stu-id="a8847-111">Return Value</span></span>
 
-<span data-ttu-id="4c76a-112">Essa mensagem não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="4c76a-112">This message does not return a value.</span></span>
+<span data-ttu-id="a8847-112">Essa mensagem não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="a8847-112">This message does not return a value.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4c76a-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4c76a-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a8847-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a8847-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4c76a-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="4c76a-114">Requirement</span></span> | <span data-ttu-id="4c76a-115">Valor</span><span class="sxs-lookup"><span data-stu-id="4c76a-115">Value</span></span> |
+| <span data-ttu-id="a8847-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="a8847-114">Requirement</span></span> | <span data-ttu-id="a8847-115">Valor</span><span class="sxs-lookup"><span data-stu-id="a8847-115">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4c76a-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4c76a-116">Minimum supported client</span></span><br/> | <span data-ttu-id="4c76a-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4c76a-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                                |
-| <span data-ttu-id="4c76a-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4c76a-118">Minimum supported server</span></span><br/> | <span data-ttu-id="4c76a-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4c76a-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                      |
-| <span data-ttu-id="4c76a-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4c76a-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="4c76a-121"><dt>Mmsystem. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="4c76a-121"><dt>Mmsystem.h (include Windows.h)</dt></span></span> </dl> |
+| <span data-ttu-id="a8847-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8847-116">Minimum supported client</span></span><br/> | <span data-ttu-id="a8847-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="a8847-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                                |
+| <span data-ttu-id="a8847-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a8847-118">Minimum supported server</span></span><br/> | <span data-ttu-id="a8847-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="a8847-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                      |
+| <span data-ttu-id="a8847-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a8847-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="a8847-121"><dt>Mmsystem. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="a8847-121"><dt>Mmsystem.h (include Windows.h)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4c76a-122">Consulte também</span><span class="sxs-lookup"><span data-stu-id="4c76a-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a8847-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="a8847-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4c76a-123">MIDI (interface digital de instrumento musical)</span><span class="sxs-lookup"><span data-stu-id="4c76a-123">Musical Instrument Digital Interface (MIDI)</span></span>](musical-instrument-digital-interface--midi.md)
+[<span data-ttu-id="a8847-123">MIDI (interface digital de instrumento musical)</span><span class="sxs-lookup"><span data-stu-id="a8847-123">Musical Instrument Digital Interface (MIDI)</span></span>](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[<span data-ttu-id="4c76a-124">Mensagens MIDI</span><span class="sxs-lookup"><span data-stu-id="4c76a-124">MIDI Messages</span></span>](midi-messages.md)
+[<span data-ttu-id="a8847-124">Mensagens MIDI</span><span class="sxs-lookup"><span data-stu-id="a8847-124">MIDI Messages</span></span>](midi-messages.md)
 </dt> </dl>
 
  

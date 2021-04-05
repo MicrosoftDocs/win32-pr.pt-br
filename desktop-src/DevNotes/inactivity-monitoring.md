@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103826558"
 ---
-# <a name="inactivity-monitoring"></a><span data-ttu-id="05f1f-103">Monitoramento de inatividade</span><span class="sxs-lookup"><span data-stu-id="05f1f-103">Inactivity Monitoring</span></span>
+# <a name="inactivity-monitoring"></a><span data-ttu-id="9617e-103">Monitoramento de inatividade</span><span class="sxs-lookup"><span data-stu-id="9617e-103">Inactivity Monitoring</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="05f1f-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="05f1f-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9617e-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="9617e-104">In this section</span></span>
 
--   [<span data-ttu-id="05f1f-105">**BeginIdleDetection**</span><span class="sxs-lookup"><span data-stu-id="05f1f-105">**BeginIdleDetection**</span></span>](beginidledetection.md)
--   [<span data-ttu-id="05f1f-106">**EndIdleDetection**</span><span class="sxs-lookup"><span data-stu-id="05f1f-106">**EndIdleDetection**</span></span>](endidledetection.md)
--   [<span data-ttu-id="05f1f-107">**GetIdleMinutes**</span><span class="sxs-lookup"><span data-stu-id="05f1f-107">**GetIdleMinutes**</span></span>](getidleminutes.md)
+-   [<span data-ttu-id="9617e-105">**BeginIdleDetection**</span><span class="sxs-lookup"><span data-stu-id="9617e-105">**BeginIdleDetection**</span></span>](beginidledetection.md)
+-   [<span data-ttu-id="9617e-106">**EndIdleDetection**</span><span class="sxs-lookup"><span data-stu-id="9617e-106">**EndIdleDetection**</span></span>](endidledetection.md)
+-   [<span data-ttu-id="9617e-107">**GetIdleMinutes**</span><span class="sxs-lookup"><span data-stu-id="9617e-107">**GetIdleMinutes**</span></span>](getidleminutes.md)
 
  
 

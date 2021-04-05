@@ -24,13 +24,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/19/2020
 ms.locfileid: "103825451"
 ---
-# <a name="imsrdpcameraredirconfigsymboliclink-property"></a><span data-ttu-id="f43ea-106">Propriedade IMsRdpCameraRedirConfig:: SymbolicLink</span><span class="sxs-lookup"><span data-stu-id="f43ea-106">IMsRdpCameraRedirConfig::SymbolicLink property</span></span>
+# <a name="imsrdpcameraredirconfigsymboliclink-property"></a><span data-ttu-id="0ee3d-106">Propriedade IMsRdpCameraRedirConfig:: SymbolicLink</span><span class="sxs-lookup"><span data-stu-id="0ee3d-106">IMsRdpCameraRedirConfig::SymbolicLink property</span></span>
 
-<span data-ttu-id="f43ea-107">Obtém o link simbólico da interface de **KSCATEGORY_VIDEO_CAMERA** para a câmera.</span><span class="sxs-lookup"><span data-stu-id="f43ea-107">Gets the symbolic link of the **KSCATEGORY_VIDEO_CAMERA** interface for the camera.</span></span>
+<span data-ttu-id="0ee3d-107">Obtém o link simbólico da interface de **KSCATEGORY_VIDEO_CAMERA** para a câmera.</span><span class="sxs-lookup"><span data-stu-id="0ee3d-107">Gets the symbolic link of the **KSCATEGORY_VIDEO_CAMERA** interface for the camera.</span></span>
 
-<span data-ttu-id="f43ea-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="f43ea-108">This property is read-only.</span></span>
+<span data-ttu-id="0ee3d-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="0ee3d-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f43ea-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f43ea-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0ee3d-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="0ee3d-109">Syntax</span></span>
 
 ```C++
 HRESULT get_SymbolicLink(
@@ -38,22 +38,22 @@ HRESULT get_SymbolicLink(
 );
 ```
 
-## <a name="property-value"></a><span data-ttu-id="f43ea-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f43ea-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="0ee3d-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="0ee3d-110">Property value</span></span>
 
-<span data-ttu-id="f43ea-111">O link simbólico da interface de **KSCATEGORY_VIDEO_CAMERA** para a câmera.</span><span class="sxs-lookup"><span data-stu-id="f43ea-111">The symbolic link of the **KSCATEGORY_VIDEO_CAMERA** interface for the camera.</span></span>
+<span data-ttu-id="0ee3d-111">O link simbólico da interface de **KSCATEGORY_VIDEO_CAMERA** para a câmera.</span><span class="sxs-lookup"><span data-stu-id="0ee3d-111">The symbolic link of the **KSCATEGORY_VIDEO_CAMERA** interface for the camera.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f43ea-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f43ea-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="0ee3d-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="0ee3d-112">Requirements</span></span>
 
-| <span data-ttu-id="f43ea-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="f43ea-113">Requirement</span></span> | <span data-ttu-id="f43ea-114">Valor</span><span class="sxs-lookup"><span data-stu-id="f43ea-114">Value</span></span> |
+| <span data-ttu-id="0ee3d-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="0ee3d-113">Requirement</span></span> | <span data-ttu-id="0ee3d-114">Valor</span><span class="sxs-lookup"><span data-stu-id="0ee3d-114">Value</span></span> |
 |-------------------------------------|---------------------------------------|
-| <span data-ttu-id="f43ea-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f43ea-115">Minimum supported client</span></span>| <span data-ttu-id="f43ea-116">Windows 10, versão 1803 (build 17134)</span><span class="sxs-lookup"><span data-stu-id="f43ea-116">Windows 10, version 1803 (build 17134)</span></span>      |
-| <span data-ttu-id="f43ea-117">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="f43ea-117">Type library</span></span>            | <span data-ttu-id="f43ea-118">MsTscAx.dll</span><span class="sxs-lookup"><span data-stu-id="f43ea-118">MsTscAx.dll</span></span>                        |
-| <span data-ttu-id="f43ea-119">DLL</span><span class="sxs-lookup"><span data-stu-id="f43ea-119">DLL</span></span>                  | <span data-ttu-id="f43ea-120">MsTscAx.dll</span><span class="sxs-lookup"><span data-stu-id="f43ea-120">MsTscAx.dll</span></span>     |
-| <span data-ttu-id="f43ea-121">IID</span><span class="sxs-lookup"><span data-stu-id="f43ea-121">IID</span></span>                      | <span data-ttu-id="f43ea-122">IID \_ IMsRdpCameraRedirConfig é definido como 09750604-D625-47C1-9FCD-F09F735705D7</span><span class="sxs-lookup"><span data-stu-id="f43ea-122">IID\_IMsRdpCameraRedirConfig is defined as 09750604-D625-47C1-9FCD-F09F735705D7</span></span>            |
+| <span data-ttu-id="0ee3d-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0ee3d-115">Minimum supported client</span></span>| <span data-ttu-id="0ee3d-116">Windows 10, versão 1803 (build 17134)</span><span class="sxs-lookup"><span data-stu-id="0ee3d-116">Windows 10, version 1803 (build 17134)</span></span>      |
+| <span data-ttu-id="0ee3d-117">Biblioteca de tipos</span><span class="sxs-lookup"><span data-stu-id="0ee3d-117">Type library</span></span>            | <span data-ttu-id="0ee3d-118">MsTscAx.dll</span><span class="sxs-lookup"><span data-stu-id="0ee3d-118">MsTscAx.dll</span></span>                        |
+| <span data-ttu-id="0ee3d-119">DLL</span><span class="sxs-lookup"><span data-stu-id="0ee3d-119">DLL</span></span>                  | <span data-ttu-id="0ee3d-120">MsTscAx.dll</span><span class="sxs-lookup"><span data-stu-id="0ee3d-120">MsTscAx.dll</span></span>     |
+| <span data-ttu-id="0ee3d-121">IID</span><span class="sxs-lookup"><span data-stu-id="0ee3d-121">IID</span></span>                      | <span data-ttu-id="0ee3d-122">IID \_ IMsRdpCameraRedirConfig é definido como 09750604-D625-47C1-9FCD-F09F735705D7</span><span class="sxs-lookup"><span data-stu-id="0ee3d-122">IID\_IMsRdpCameraRedirConfig is defined as 09750604-D625-47C1-9FCD-F09F735705D7</span></span>            |
 
-## <a name="see-also"></a><span data-ttu-id="f43ea-123">Confira também</span><span class="sxs-lookup"><span data-stu-id="f43ea-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0ee3d-123">Confira também</span><span class="sxs-lookup"><span data-stu-id="0ee3d-123">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f43ea-124">**IMsRdpCameraRedirConfig**</span><span class="sxs-lookup"><span data-stu-id="f43ea-124">**IMsRdpCameraRedirConfig**</span></span>](imsrdpcameraredirconfig.md)
+[<span data-ttu-id="0ee3d-124">**IMsRdpCameraRedirConfig**</span><span class="sxs-lookup"><span data-stu-id="0ee3d-124">**IMsRdpCameraRedirConfig**</span></span>](imsrdpcameraredirconfig.md)
 </dt> </dl>

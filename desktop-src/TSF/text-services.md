@@ -15,14 +15,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005453"
 ---
-# <a name="text-services"></a><span data-ttu-id="e41fe-106">Serviços de texto</span><span class="sxs-lookup"><span data-stu-id="e41fe-106">Text Services</span></span>
+# <a name="text-services"></a><span data-ttu-id="b960d-106">Serviços de texto</span><span class="sxs-lookup"><span data-stu-id="b960d-106">Text Services</span></span>
 
-<span data-ttu-id="e41fe-107">Os seguintes elementos de programação são usados ou implementados por um [serviço de texto](architecture.md).</span><span class="sxs-lookup"><span data-stu-id="e41fe-107">The following programming elements are used or implemented by a [text service](architecture.md).</span></span>
+<span data-ttu-id="b960d-107">Os seguintes elementos de programação são usados ou implementados por um [serviço de texto](architecture.md).</span><span class="sxs-lookup"><span data-stu-id="b960d-107">The following programming elements are used or implemented by a [text service](architecture.md).</span></span>
 
--   [<span data-ttu-id="e41fe-108">Registro do serviço de texto</span><span class="sxs-lookup"><span data-stu-id="e41fe-108">Text Service Registration</span></span>](text-service-registration.md)
--   [<span data-ttu-id="e41fe-109">Barra de idiomas</span><span class="sxs-lookup"><span data-stu-id="e41fe-109">Language Bar</span></span>](language-bar.md)
--   [<span data-ttu-id="e41fe-110">Editar sessões</span><span class="sxs-lookup"><span data-stu-id="e41fe-110">Edit Sessions</span></span>](edit-sessions.md)
--   [<span data-ttu-id="e41fe-111">Fornecendo atributos de exibição</span><span class="sxs-lookup"><span data-stu-id="e41fe-111">Providing Display Attributes</span></span>](providing-display-attributes.md)
+-   [<span data-ttu-id="b960d-108">Registro do serviço de texto</span><span class="sxs-lookup"><span data-stu-id="b960d-108">Text Service Registration</span></span>](text-service-registration.md)
+-   [<span data-ttu-id="b960d-109">Barra de idiomas</span><span class="sxs-lookup"><span data-stu-id="b960d-109">Language Bar</span></span>](language-bar.md)
+-   [<span data-ttu-id="b960d-110">Editar sessões</span><span class="sxs-lookup"><span data-stu-id="b960d-110">Edit Sessions</span></span>](edit-sessions.md)
+-   [<span data-ttu-id="b960d-111">Fornecendo atributos de exibição</span><span class="sxs-lookup"><span data-stu-id="b960d-111">Providing Display Attributes</span></span>](providing-display-attributes.md)
 
  
 
