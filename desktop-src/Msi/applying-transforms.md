@@ -1,0 +1,48 @@
+---
+description: A propriedade transformações contém a lista de transformações de um pacote de instalação. O instalador aplica todas as transformações na lista transformações em cada instalação, anúncio, instalação sob demanda ou instalação de manutenção do pacote.
+ms.assetid: dde2ef55-7794-4eb1-984a-ed13e990c97f
+title: Aplicando transformações
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2367e02396ec33e517f8abfe579060c0a0986be2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103828068"
+---
+# <a name="applying-transforms"></a><span data-ttu-id="404d5-104">Aplicando transformações</span><span class="sxs-lookup"><span data-stu-id="404d5-104">Applying Transforms</span></span>
+
+<span data-ttu-id="404d5-105">A propriedade [**TRANSformações**](transforms.md) contém a lista de transformações de um pacote de instalação.</span><span class="sxs-lookup"><span data-stu-id="404d5-105">The [**TRANSFORMS**](transforms.md) property contains the list of transforms for an installation package.</span></span> <span data-ttu-id="404d5-106">O instalador aplica todas as transformações na lista transformações em cada instalação, anúncio, instalação sob demanda ou instalação de manutenção do pacote.</span><span class="sxs-lookup"><span data-stu-id="404d5-106">The installer applies all the transforms in the transforms list at every installation, advertisement, installation-on-demand, or maintenance installation of the package.</span></span>
+
+<span data-ttu-id="404d5-107">A propriedade [**TRANSformações**](transforms.md) é definida especificando a lista de transformações na linha de comando; no entanto, ao usar a opção de [linha de comando](command-line-options.md)/JM ou/Ju, a lista transformações deve ser especificada usando a opção/t.</span><span class="sxs-lookup"><span data-stu-id="404d5-107">The [**TRANSFORMS**](transforms.md) property is set by specifying the list of transforms on the command line; however, when using either the /jm or /ju [command line option](command-line-options.md), the transforms list must be specified using the /t option.</span></span>
+
+<span data-ttu-id="404d5-108">Observe que a lista transformações não pode ser modificada depois de instalada e só pode ser removida pela desinstalação do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="404d5-108">Note that the transforms list cannot be modified once installed and can only be removed by uninstalling the application.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="404d5-109">Um pacote Windows Installer pode aplicar no máximo 255 transformações ao instalar um aplicativo ou atualizar.</span><span class="sxs-lookup"><span data-stu-id="404d5-109">A Windows Installer package can apply no more than 255 transforms when installing an application or update.</span></span> <span data-ttu-id="404d5-110">Quando muitas transformações são necessárias, elas devem ser combinadas e as transformações obsoletas anteriores devem ser eliminadas.</span><span class="sxs-lookup"><span data-stu-id="404d5-110">When many transforms are necessary, they should be combined and previous obsolete transforms should be eliminated.</span></span>
+
+ 
+
+<span data-ttu-id="404d5-111">A tabela a seguir fornece exemplos de várias cadeias de caracteres de transformações que podem ser adicionadas à lista transformações.</span><span class="sxs-lookup"><span data-stu-id="404d5-111">The following table provides examples of various transforms strings that could be added to the transforms list.</span></span>
+
+
+
+| <span data-ttu-id="404d5-112">Cadeia de caracteres de transformações</span><span class="sxs-lookup"><span data-stu-id="404d5-112">Transforms string</span></span>                                                                                                              | <span data-ttu-id="404d5-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="404d5-113">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="404d5-114">transform1. MST;: preform2. MST;: transform3. MST</span><span class="sxs-lookup"><span data-stu-id="404d5-114">transform1.mst;:transform2.mst;:transform3.mst</span></span>                                                                                 | <span data-ttu-id="404d5-115">O transform2. MST e o transform3. MST são [transformações incorporadas](embedded-transforms.md).</span><span class="sxs-lookup"><span data-stu-id="404d5-115">Transform2.mst and transform3.mst are [embedded transforms](embedded-transforms.md).</span></span> <span data-ttu-id="404d5-116">o preform1. MST é uma [transformação segura no código-fonte](secure-at-source-transforms.md) somente se a propriedade [**TRANSFORMSSECURE**](transformssecure.md) ou a [política TRANSFORMSSECURE](transformssecure-policy.md) for definida; caso contrário, transform1 será uma [transformação não segura](unsecured-transforms.md).</span><span class="sxs-lookup"><span data-stu-id="404d5-116">transform1.mst is a [secure-at-source transform](secure-at-source-transforms.md) only if the [**TRANSFORMSSECURE**](transformssecure.md) property or [TransformsSecure policy](transformssecure-policy.md) is set, otherwise transform1 is an [unsecured transform](unsecured-transforms.md).</span></span> |
+| <span data-ttu-id="404d5-117">\\\\caminho de compartilhamento de servidor \\ \\ \\ transform1. MST;: preform2. MST</span><span class="sxs-lookup"><span data-stu-id="404d5-117">\\\\server\\share\\path\\transform1.mst;:transform2.mst</span></span>                                                                        | <span data-ttu-id="404d5-118">O transform2. MST é uma [transformação inserida](embedded-transforms.md).</span><span class="sxs-lookup"><span data-stu-id="404d5-118">Transform2.mst is an [embedded transform](embedded-transforms.md).</span></span> <span data-ttu-id="404d5-119">o transform1. MST é uma [transformação de caminho completo seguro](secure-full-path-transforms.md) somente se a propriedade [**TRANSFORMSSECURE**](transformssecure.md) ou a [política TRANSFORMSSECURE](transformssecure-policy.md) estiver definida; caso contrário, transform1 será uma [transformação não segura](unsecured-transforms.md).</span><span class="sxs-lookup"><span data-stu-id="404d5-119">transform1.mst is a [secure-full-path transform](secure-full-path-transforms.md) only if the [**TRANSFORMSSECURE**](transformssecure.md) property or [TransformsSecure policy](transformssecure-policy.md) is set, otherwise transform1 is an [unsecured transform](unsecured-transforms.md).</span></span>                   |
+| <span data-ttu-id="404d5-120">@: exform2. MST; transform1. MST @transform1.mst ;: preform2. MST</span><span class="sxs-lookup"><span data-stu-id="404d5-120">@:transform2.mst;transform1.mst @transform1.mst;:transform2.mst</span></span><br/>                                                     | <span data-ttu-id="404d5-121">O transform2. MST é uma transformação inserida.</span><span class="sxs-lookup"><span data-stu-id="404d5-121">Transform2.mst is an embedded transform.</span></span> <span data-ttu-id="404d5-122">o preform1. MST é uma [transformações seguras de origem](secure-at-source-transforms.md)autônoma.</span><span class="sxs-lookup"><span data-stu-id="404d5-122">transform1.mst is a stand-alone [secure-at-source transforms](secure-at-source-transforms.md).</span></span>                                                                                                                                                                                                                                                |
+| <span data-ttu-id="404d5-123">\|\\\\caminho de compartilhamento de servidor \\ \\ \\ transform1. MST;: preform2. MST \| : transform2. MST; \\ \\ caminho de compartilhamento de servidor \\ \\ \\ transform1. MST</span><span class="sxs-lookup"><span data-stu-id="404d5-123">\|\\\\server\\share\\path\\transform1.mst;:transform2.mst \|:transform2.mst;\\\\server\\share\\path\\transform1.mst</span></span><br/> | <span data-ttu-id="404d5-124">O transform2. MST é uma transformação inserida.</span><span class="sxs-lookup"><span data-stu-id="404d5-124">Transform2.mst is an embedded transform.</span></span> <span data-ttu-id="404d5-125">o preform1. MST é uma [transformações de caminho completo e seguro](secure-full-path-transforms.md)autônomo.</span><span class="sxs-lookup"><span data-stu-id="404d5-125">transform1.mst is a Standalone [secure-full-path transforms](secure-full-path-transforms.md).</span></span>                                                                                                                                                                                                                                                 |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+

@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011273"
 ---
-# <a name="esentseparatedlongvalueexception-class"></a><span data-ttu-id="9b984-103">Classe EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="9b984-103">EsentSeparatedLongValueException class</span></span>
+# <a name="esentseparatedlongvalueexception-class"></a><span data-ttu-id="5ca8a-103">Classe EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-103">EsentSeparatedLongValueException class</span></span>
 
-<span data-ttu-id="9b984-104">Classe base para JET_err. SeparatedLongValue exceções.</span><span class="sxs-lookup"><span data-stu-id="9b984-104">Base class for JET_err.SeparatedLongValue exceptions.</span></span>
+<span data-ttu-id="5ca8a-104">Classe base para JET_err. SeparatedLongValue exceções.</span><span class="sxs-lookup"><span data-stu-id="5ca8a-104">Base class for JET_err.SeparatedLongValue exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="9b984-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="9b984-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="5ca8a-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="5ca8a-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="9b984-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="9b984-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="9b984-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="9b984-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="9b984-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="9b984-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="9b984-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="9b984-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="9b984-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="9b984-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="9b984-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="9b984-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
-            <span data-ttu-id="9b984-112">Microsoft. ISAM. ESENT. Interop. EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="9b984-112">Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException</span></span>  
+[<span data-ttu-id="5ca8a-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="5ca8a-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="5ca8a-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="5ca8a-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="5ca8a-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="5ca8a-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="5ca8a-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="5ca8a-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
+            <span data-ttu-id="5ca8a-112">Microsoft. ISAM. ESENT. Interop. EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-112">Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException</span></span>  
 
-<span data-ttu-id="9b984-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9b984-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="9b984-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9b984-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5ca8a-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5ca8a-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5ca8a-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5ca8a-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9b984-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="9b984-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5ca8a-115">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5ca8a-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentSeparatedLongValueException
 public sealed class EsentSeparatedLongValueException : EsentStateException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="9b984-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="9b984-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="5ca8a-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="5ca8a-116">Thread safety</span></span>
 
-<span data-ttu-id="9b984-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="9b984-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="9b984-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="9b984-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="5ca8a-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="5ca8a-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="5ca8a-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="5ca8a-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9b984-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="9b984-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5ca8a-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="5ca8a-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="9b984-120">Referência</span><span class="sxs-lookup"><span data-stu-id="9b984-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5ca8a-120">Referência</span><span class="sxs-lookup"><span data-stu-id="5ca8a-120">Reference</span></span>
 
-[<span data-ttu-id="9b984-121">Membros do EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="9b984-121">EsentSeparatedLongValueException members</span></span>](./esentseparatedlongvalueexception-members.md)
+[<span data-ttu-id="5ca8a-121">Membros do EsentSeparatedLongValueException</span><span class="sxs-lookup"><span data-stu-id="5ca8a-121">EsentSeparatedLongValueException members</span></span>](./esentseparatedlongvalueexception-members.md)
 
-[<span data-ttu-id="9b984-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="9b984-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5ca8a-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5ca8a-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -21,41 +21,41 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103824626"
 ---
-# <a name="em_getwordbreakprocex-message"></a><span data-ttu-id="58b21-104">\_Mensagem em GETWORDBREAKPROCEX</span><span class="sxs-lookup"><span data-stu-id="58b21-104">EM\_GETWORDBREAKPROCEX message</span></span>
+# <a name="em_getwordbreakprocex-message"></a><span data-ttu-id="354e9-104">\_Mensagem em GETWORDBREAKPROCEX</span><span class="sxs-lookup"><span data-stu-id="354e9-104">EM\_GETWORDBREAKPROCEX message</span></span>
 
-<span data-ttu-id="58b21-105">Recupera o endereço do procedimento de quebra de palavra estendido atualmente registrado para um controle de edição rico.</span><span class="sxs-lookup"><span data-stu-id="58b21-105">Retrieves the address of the currently registered extended word-break procedure for a rich edit control.</span></span>
+<span data-ttu-id="354e9-105">Recupera o endereço do procedimento de quebra de palavra estendido atualmente registrado para um controle de edição rico.</span><span class="sxs-lookup"><span data-stu-id="354e9-105">Retrieves the address of the currently registered extended word-break procedure for a rich edit control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="58b21-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="58b21-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="354e9-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="354e9-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="58b21-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="58b21-107">*wParam*</span></span> 
+<span data-ttu-id="354e9-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="354e9-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="58b21-108">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="58b21-108">Not used; must be zero.</span></span>
+<span data-ttu-id="354e9-108">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="354e9-108">Not used; must be zero.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="58b21-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="58b21-109">*lParam*</span></span> 
+<span data-ttu-id="354e9-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="354e9-109">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="58b21-110">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="58b21-110">Not used; must be zero.</span></span>
+<span data-ttu-id="354e9-110">Não usado; deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="354e9-110">Not used; must be zero.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="58b21-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="58b21-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="354e9-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="354e9-111">Return value</span></span>
 
-<span data-ttu-id="58b21-112">A mensagem retorna o endereço do procedimento atual.</span><span class="sxs-lookup"><span data-stu-id="58b21-112">The message returns the address of the current procedure.</span></span>
+<span data-ttu-id="354e9-112">A mensagem retorna o endereço do procedimento atual.</span><span class="sxs-lookup"><span data-stu-id="354e9-112">The message returns the address of the current procedure.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="58b21-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="58b21-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="354e9-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="354e9-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="58b21-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="58b21-114">Requirement</span></span> | <span data-ttu-id="58b21-115">Valor</span><span class="sxs-lookup"><span data-stu-id="58b21-115">Value</span></span> |
+| <span data-ttu-id="354e9-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="354e9-114">Requirement</span></span> | <span data-ttu-id="354e9-115">Valor</span><span class="sxs-lookup"><span data-stu-id="354e9-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="58b21-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58b21-116">Minimum supported client</span></span><br/> | <span data-ttu-id="58b21-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="58b21-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="58b21-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="58b21-118">Minimum supported server</span></span><br/> | <span data-ttu-id="58b21-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="58b21-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="58b21-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="58b21-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="58b21-121"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="58b21-121"><dt>Richedit.h</dt></span></span> </dl> |
+| <span data-ttu-id="354e9-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="354e9-116">Minimum supported client</span></span><br/> | <span data-ttu-id="354e9-117">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="354e9-117">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="354e9-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="354e9-118">Minimum supported server</span></span><br/> | <span data-ttu-id="354e9-119">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="354e9-119">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="354e9-120">parâmetro</span><span class="sxs-lookup"><span data-stu-id="354e9-120">Header</span></span><br/>                   | <dl> <span data-ttu-id="354e9-121"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="354e9-121"><dt>Richedit.h</dt></span></span> </dl> |
 
 
 
