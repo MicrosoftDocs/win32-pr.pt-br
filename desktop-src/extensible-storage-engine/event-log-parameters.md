@@ -58,31 +58,31 @@ Esse parâmetro controla o tamanho (em bytes) de um cache de mensagens do EventL
 </tr>
 <tr class="odd">
 <td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o desempenho:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta os recursos:</p></td>
-<td><p>Sim</p></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Todos</p></td>
+<td><p>Tudo</p></td>
 </tr>
 </tbody>
 </table>
@@ -116,27 +116,27 @@ Esse parâmetro configura o nível de detalhe das mensagens de log de eventos em
 </tr>
 <tr class="odd">
 <td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o desempenho:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
@@ -175,31 +175,31 @@ Esse parâmetro fornece uma cadeia de caracteres específica do aplicativo que s
 </tr>
 <tr class="odd">
 <td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o desempenho:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Todos</p></td>
+<td><p>Tudo</p></td>
 </tr>
 </tbody>
 </table>
@@ -234,31 +234,31 @@ Esse parâmetro pode ser usado para controlar qual log de eventos o mecanismo de
 </tr>
 <tr class="odd">
 <td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o desempenho:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Todos</p></td>
+<td><p>Tudo</p></td>
 </tr>
 </tbody>
 </table>
@@ -293,31 +293,31 @@ Quando esse parâmetro for true, as mensagens de log de eventos informativas que
 </tr>
 <tr class="odd">
 <td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afeta o desempenho:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
+<td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Todos</p></td>
+<td><p>Tudo</p></td>
 </tr>
 </tbody>
 </table>

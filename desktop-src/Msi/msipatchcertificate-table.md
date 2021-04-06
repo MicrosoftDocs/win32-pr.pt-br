@@ -19,7 +19,7 @@ A tabela MsiPatchCertificate tem as seguintes colunas:
 
 
 
-| Coluna               | Type                         | Chave | Nullable |
+| Coluna               | Tipo                         | Chave | Nullable |
 |----------------------|------------------------------|-----|----------|
 | PatchCertificate     | [Identificador](identifier.md) | S   | N        |
 | DigitalCertificate\_ | [Identificador](identifier.md) | N   | N        |

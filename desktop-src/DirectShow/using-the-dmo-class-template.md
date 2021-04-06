@@ -1,0 +1,160 @@
+---
+description: Usando o modelo de classe DMO
+ms.assetid: 5193ad08-aaee-47e3-93eb-a126a66d8f23
+title: Usando o modelo de classe DMO
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4db80017372f11f6c928e0e6a83b591967a84ee7
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104011321"
+---
+# <a name="using-the-dmo-class-template"></a>Usando o modelo de classe DMO
+
+O DirectShow inclui um modelo de classe, [**IMediaObjectImpl**](imediaobjectimpl-class-template.md), para implementar DMOs. O modelo lida com muitas das tarefas "de escrituração", como a validação de parâmetros de entrada. Usando o modelo, você pode se concentrar na funcionalidade que é específica para o DMO. Além disso, o modelo ajuda a garantir que você crie uma implementação robusta. O modelo é definido no arquivo de cabeçalho Dmoimpl. h, localizado no diretório de inclusão do SDK.
+
+O modelo **IMediaObjectImpl** herda a interface [**IMediaObject**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediaobject) . Para criar um DMO usando o modelo, defina uma nova classe que derive de **IMediaObjectImpl**. O modelo implementa todos os métodos **IMediaObject** . Na maioria dos casos, o modelo chama um método particular correspondente na classe derivada. O modelo fornece os seguintes recursos:
+
+-   Verificação de parâmetro básica. Os métodos de modelo verificam se os parâmetros obrigatórios não são **nulos**, se os índices de fluxo estão dentro do intervalo e se os sinalizadores são válidos.
+-   Bloqueio. Os métodos de modelo chamam dois métodos internos, **Lock** e **Unlock**, para serializar operações no DMO. Esse recurso garante que o DMO seja thread-safe.
+-   Tipos de mídia. O modelo armazena os tipos de mídia definidos pelo cliente e fornece métodos de acessador para os tipos de mídia.
+-   Transmiti. O modelo impede o streaming até que o cliente defina os tipos de mídia para todos os fluxos não opcionais. Ele também garante que o método [**IMediaObject:: AllocateStreamingResources**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-allocatestreamingresources) seja chamado antes do início do streaming, o que garante que os recursos sejam alocados.
+
+A classe derivada deve implementar a interface **IUnknown** ; o modelo não fornece essa interface. Você pode usar o Active Template Library (ATL) para implementar **IUnknown** ou pode fornecer alguma outra implementação. O modelo também não implementa o mecanismo de bloqueio. A classe derivada deve implementar os métodos **Lock** e **Unlock** . Se você criar sua classe usando ATL, poderá usar as implementações padrão da ATL.
+
+**Declarando a classe derivada**
+
+O modelo de classe **IMediaObjectImpl** é declarado da seguinte maneira:
+
+
+```C++
+template <class _DERIVED_, int NUMBEROFINPUTS, int NUMBEROFOUTPUTS>
+class IMediaObjectImpl : public ImediaObject
+```
+
+
+
+Os três parâmetros de modelo são \_ derivados \_ , NUMBEROFINPUTS e NUMBEROFOUTPUTS. Defina \_ derivado \_ igual ao nome da sua classe. Os outros dois parâmetros definem o número de fluxos de entrada e fluxos de saída no DMO. Por exemplo, para criar uma classe DMO chamada CMyDmo que dá suporte a um fluxo de entrada e dois fluxos de saída, use a seguinte declaração:
+
+
+```C++
+class CMyDmo : public IMediaObjectImpl<CMyDmo, 1, 2>
+```
+
+
+
+O restante desta seção descreve como o modelo implementa os vários métodos no **IMediaObject**.
+
+**Métodos para definir tipos de mídia**
+
+Os métodos a seguir definem ou recuperam os tipos de mídia no DMO:
+
+-   **Getparâmetrosdeentrada**, **GetOutputType**. Esses métodos retornam tipos de mídia preferenciais, por número de fluxo e índice de tipo. O modelo chama **InternalGetInputType** ou **InternalGetOutputType** na classe derivada.
+-   **Setparâmetrosdeentrada**, **SetOutputType**. Esses métodos definem o tipo de mídia em um fluxo, testam um tipo de mídia ou desmarcam um tipo de mídia. Para validar o tipo de mídia, o modelo chama **InternalCheckInputType** ou **InternalCheckOutputType** na classe derivada. A classe derivada retorna S \_ OK para aceitar o tipo ou DMO \_ E \_ invalidatype para rejeitar o tipo. O modelo manipula a configuração ou a limpeza do tipo de mídia.
+-   **GetInputCurrentType**, **GetOutputCurrentType**. Esses métodos retornam o tipo de mídia atual para um fluxo, ou DMO \_ e \_ tipo \_ não \_ definido se nenhum tipo for definido. O modelo implementa completamente esses métodos.
+
+**Métodos informativos**
+
+Os métodos a seguir fornecem informações sobre o DMO.
+
+-   **GetInputMaxLatency**, **SetInputMaxLatency**. Esses métodos recuperam ou definem a latência máxima. O modelo chama **InternalGetInputMaxLatency** ou **InternalSetInputMaxLatency** na classe derivada.
+-   **GetInputSizeInfo**, **GetOutputSizeInfo**. Esses métodos retornam os requisitos de buffer de DMO para um fluxo especificado. Se nenhum tipo de mídia tiver sido definido nesse fluxo, o modelo retornará o \_ tipo DMO E \_ \_ não \_ definido. Caso contrário, ele chama **InternalGetInputSizeInfo** ou **InternalGetOutputSizeInfo** na classe derivada.
+-   **GetInputStreamInfo**, **GetOutputStreamInfo**. Esses métodos retornam vários sinalizadores que indicam como o cliente deve formatar os dados. O modelo chama **InternalGetInputStreamInfo** ou **InternalGetOutputStreamInfo** na classe derivada.
+-   **GetStreamCount**. Esse método retorna o número de fluxos de entrada e saída. O modelo implementa esse método, usando os parâmetros de modelo.
+
+**Métodos para alocação de recursos**
+
+-   O método **AllocateStreamingResources** aloca todos os recursos que o DMO precisa antes que o streaming comece. O método **FreeStreamingResources** libera os mesmos recursos. O modelo chama **InternalAllocateStreamingResources** e **InternalFreeStreamingResources**, respectivamente.
+
+O cliente do DMO não é necessário para chamar esses métodos, mas o modelo chama **AllocateStreamingResources** automaticamente antes de iniciar o streaming. Portanto, o DMO pode assumir que os recursos foram alocados corretamente pela hora em que o **ProcessInput** é chamado. O DMO deve chamar **FreeStreamingResources** em seu destruidor.
+
+Além disso, quando o modelo chama **InternalAllocateStreamingResources**, ele define um sinalizador interno, para que ele não chame esse método novamente até chamar **InternalFreeStreamingResources**. Isso garante que os recursos não sejam novamente alocados acidentalmente, o que pode causar vazamentos de memória.
+
+**Métodos para streaming**
+
+Os métodos a seguir são usados para transmitir dados:
+
+-   **GetInputStatus**. Esse método indica se o DMO pode aceitar entrada no momento. O modelo chama **InternalAcceptingInput** na classe derivada. Se o DMO puder aceitar a entrada, a classe derivada retornará S \_ OK e o modelo definirá o \_ bit de entrada \_ STATUSF Accept de \_ \_ dados no parâmetro *dwFlags* . Caso contrário, a classe derivada retornará S \_ false e o modelo definirá *dwFlags* como zero.
+-   **ProcessInput**. Esse método processa um buffer de entrada. O modelo chama **AllocateStreamingResources**, descrito anteriormente. Em seguida, ele chama **InternalAcceptingInput** na classe derivada. Se o DMO puder aceitar nova entrada, o modelo chamará **InternalProcessInput**.
+-   **ProcessOutput**. Esse método processa um conjunto de buffers de saída, um buffer para cada fluxo de saída. O modelo chama **AllocateStreamingResources** e, em seguida, **InternalProcessOutput**.
+-   **Descontinuidade**. Esse método sinaliza uma descontinuidade em um fluxo de entrada. O modelo chama **InternalAcceptingInput** na classe derivada. Se esse método retornar S \_ OK, o modelo chamará **InternalDiscontinuity** na classe derivada.
+-   **Liberar**. Esse método libera o DMO. O modelo chama **InternalFlush** na classe derivada. O DMO deve descartar os buffers de entrada que ele ainda mantém para ser processado.
+
+O modelo não fornece nenhum suporte direto para a interface [**IMediaObjectInPlace**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobjectinplace) .
+
+**Métodos para bloqueio**
+
+O bloqueio é usado para proteger o estado de DMO em um ambiente multi-threaded. Em um projeto ATL, o método [**IMediaObject:: Lock**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-lock) causa um conflito de nome com o método de **bloqueio** ATL. Para resolver o conflito, o modelo renomeia o método **IMediaObject** para **DMOLock**. Ao compilar a classe derivada, defina corrigir \_ nome do bloqueio \_ antes de incluir o arquivo de cabeçalho DMO. h:
+
+
+```C++
+#define FIX_LOCK_NAME
+#include <dmo.h>
+```
+
+
+
+Essa diretiva faz com que o pré-processador substitua **DMOLock** por **bloqueio** na declaração da interface **IMediaObject** . Os aplicativos ainda podem invocar o método usando o nome **Lock**, pois a ordem vtable não é alterada. O método **DMOLock** chama **Lock** ou **Unlock** na classe derivada. Se você estiver usando a ATL para implementar a classe derivada, esses métodos já serão definidos pela ATL, portanto, nenhum código adicional será necessário. Se você não estiver usando a ATL, deverá fornecer os métodos **Lock** e **Unlock** em sua classe derivada.
+
+O modelo bloqueia automaticamente o DMO em cada um dos métodos **IMediaObject** . A classe derivada pode precisar bloquear o DMO dentro de outros métodos públicos que ele implementa (por exemplo, se ele dá suporte a **IMediaObjectInPlace**). O modelo de classe também fornece uma classe auxiliar interna, [**IMediaObjectImpl:: Lockit**](imediaobjectimpl-lockit.md), que é útil para bloquear e desbloquear o DMO.
+
+**Resumo**
+
+Para os seguintes métodos **IMediaObject** , o modelo chama um método correspondente com a mesma assinatura na classe derivada. A classe derivada deve implementar cada um dos métodos mostrados na segunda coluna.
+
+
+
+| Método IMediaObject            | Método de classe derivada                   |
+|--------------------------------|----------------------------------------|
+| **AllocateStreamingResources** | **InternalAllocateStreamingResources** |
+| **Descontinuidade**              | **InternalDiscontinuity**              |
+| **Liberar**                      | **InternalFlush**                      |
+| **FreeStreamingResources**     | **InternalFreeStreamingResources**     |
+| **GetInputMaxLatency**         | **InternalGetInputMaxLatency**         |
+| **GetInputSizeInfo**           | **InternalGetInputSizeInfo**           |
+| **GetInputStreamInfo**         | **InternalGetInputStreamInfo**         |
+| **GetInputType**               | **InternalGetInputType**               |
+| **GetOutputSizeInfo**          | **InternalGetOutputSizeInfo**          |
+| **GetOutputStreamInfo**        | **InternalGetOutputStreamInfo**        |
+| **GetOutputType**              | **InternalGetOutputType**              |
+| **ProcessInput**               | **InternalProcessInput**               |
+| **ProcessOutput**              | **InternalProcessOutput**              |
+| **SetInputMaxLatency**         | **InternalSetInputMaxLatency**         |
+
+
+
+ 
+
+Para os demais métodos **IMediaObject** , não há uma correspondência um-para-um entre métodos de modelo e métodos de classe derivada. A tabela a seguir resume quais métodos são totalmente implementados pelo modelo e quais métodos chamam outros métodos na classe derivada.
+
+
+
+| Método IMediaObject                   | Método de classe derivada                                                             |
+|---------------------------------------|----------------------------------------------------------------------------------|
+| **GetInputCurrentType**               | Totalmente implementado                                                                |
+| **GetOutputCurrentType**              | Totalmente implementado                                                                |
+| **GetStreamCount**                    | Totalmente implementado                                                                |
+| **GetInputStatus**                    | [**InternalAcceptingInput**](/previous-versions/ms809095(v=msdn.10))        |
+| **Bloqueio** (implementado como **DMOLock**) | [**Bloquear**](/previous-versions/ms809100(v=msdn.10)), [ **desbloquear**](/previous-versions/ms809101(v=msdn.10)) |
+| **SetInputType**                      | [**InternalCheckInputType**](/previous-versions/ms809096(v=msdn.10))        |
+| **Setoutputtypetype**                     | [**InternalCheckOutputType**](/previous-versions/ms809098(v=msdn.10))      |
+
+
+
+ 
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[**Modelo de classe IMediaObjectImpl**](imediaobjectimpl-class-template.md)
+</dt> <dt>
+
+[Escrevendo um DMO](writing-a-dmo.md)
+</dt> </dl>
+
+ 
+
+ 
