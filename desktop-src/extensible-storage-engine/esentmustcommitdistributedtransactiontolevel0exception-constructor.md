@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827682"
 ---
-# <a name="esentmustcommitdistributedtransactiontolevel0exception-constructor"></a><span data-ttu-id="7fb00-103">Construtor EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="7fb00-103">EsentMustCommitDistributedTransactionToLevel0Exception constructor</span></span>
+# <a name="esentmustcommitdistributedtransactiontolevel0exception-constructor"></a><span data-ttu-id="d6583-103">Construtor EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="d6583-103">EsentMustCommitDistributedTransactionToLevel0Exception constructor</span></span>
 
-<span data-ttu-id="7fb00-104">Inicializa uma nova instância da classe EsentMustCommitDistributedTransactionToLevel0Exception.</span><span class="sxs-lookup"><span data-stu-id="7fb00-104">Initializes a new instance of the EsentMustCommitDistributedTransactionToLevel0Exception class.</span></span>
+<span data-ttu-id="d6583-104">Inicializa uma nova instância da classe EsentMustCommitDistributedTransactionToLevel0Exception.</span><span class="sxs-lookup"><span data-stu-id="d6583-104">Initializes a new instance of the EsentMustCommitDistributedTransactionToLevel0Exception class.</span></span>
 
-<span data-ttu-id="7fb00-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="7fb00-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="7fb00-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="7fb00-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="d6583-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d6583-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="d6583-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d6583-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7fb00-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7fb00-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d6583-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d6583-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentMustCommitDistributedTransactionToLevel0Exception()
 public EsentMustCommitDistributedTransactionToLevel0Exception()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7fb00-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="7fb00-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d6583-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="d6583-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="7fb00-109">Referência</span><span class="sxs-lookup"><span data-stu-id="7fb00-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="d6583-109">Referência</span><span class="sxs-lookup"><span data-stu-id="d6583-109">Reference</span></span>
 
-[<span data-ttu-id="7fb00-110">Classe EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="7fb00-110">EsentMustCommitDistributedTransactionToLevel0Exception class</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-class.md)
+[<span data-ttu-id="d6583-110">Classe EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="d6583-110">EsentMustCommitDistributedTransactionToLevel0Exception class</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-class.md)
 
-[<span data-ttu-id="7fb00-111">Membros do EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="7fb00-111">EsentMustCommitDistributedTransactionToLevel0Exception members</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
+[<span data-ttu-id="d6583-111">Membros do EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="d6583-111">EsentMustCommitDistributedTransactionToLevel0Exception members</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
 
-[<span data-ttu-id="7fb00-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="7fb00-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="d6583-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d6583-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

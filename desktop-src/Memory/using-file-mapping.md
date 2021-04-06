@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103828110"
 ---
-# <a name="using-file-mapping"></a><span data-ttu-id="a2883-103">Usando mapeamento de arquivo</span><span class="sxs-lookup"><span data-stu-id="a2883-103">Using File Mapping</span></span>
+# <a name="using-file-mapping"></a><span data-ttu-id="754ca-103">Usando mapeamento de arquivo</span><span class="sxs-lookup"><span data-stu-id="754ca-103">Using File Mapping</span></span>
 
-<span data-ttu-id="a2883-104">Os exemplos a seguir demonstram como dois processos podem acessar um arquivo existente como memória compartilhada nomeada:</span><span class="sxs-lookup"><span data-stu-id="a2883-104">The following examples demonstrate how two processes might access an existing file as named shared memory:</span></span>
+<span data-ttu-id="754ca-104">Os exemplos a seguir demonstram como dois processos podem acessar um arquivo existente como memória compartilhada nomeada:</span><span class="sxs-lookup"><span data-stu-id="754ca-104">The following examples demonstrate how two processes might access an existing file as named shared memory:</span></span>
 
--   [<span data-ttu-id="a2883-105">Criando uma exibição dentro de um arquivo</span><span class="sxs-lookup"><span data-stu-id="a2883-105">Creating a View Within a File</span></span>](creating-a-view-within-a-file.md)
--   [<span data-ttu-id="a2883-106">Criando a memória compartilhada nomeada</span><span class="sxs-lookup"><span data-stu-id="a2883-106">Creating Named Shared Memory</span></span>](creating-named-shared-memory.md)
--   [<span data-ttu-id="a2883-107">Criando um mapeamento de arquivo usando páginas grandes</span><span class="sxs-lookup"><span data-stu-id="a2883-107">Creating a File Mapping Using Large Pages</span></span>](creating-a-file-mapping-using-large-pages.md)
--   [<span data-ttu-id="a2883-108">Obtendo um nome de arquivo de um identificador de arquivo</span><span class="sxs-lookup"><span data-stu-id="a2883-108">Obtaining a File Name From a File Handle</span></span>](obtaining-a-file-name-from-a-file-handle.md)
+-   [<span data-ttu-id="754ca-105">Criando uma exibição dentro de um arquivo</span><span class="sxs-lookup"><span data-stu-id="754ca-105">Creating a View Within a File</span></span>](creating-a-view-within-a-file.md)
+-   [<span data-ttu-id="754ca-106">Criando a memória compartilhada nomeada</span><span class="sxs-lookup"><span data-stu-id="754ca-106">Creating Named Shared Memory</span></span>](creating-named-shared-memory.md)
+-   [<span data-ttu-id="754ca-107">Criando um mapeamento de arquivo usando páginas grandes</span><span class="sxs-lookup"><span data-stu-id="754ca-107">Creating a File Mapping Using Large Pages</span></span>](creating-a-file-mapping-using-large-pages.md)
+-   [<span data-ttu-id="754ca-108">Obtendo um nome de arquivo de um identificador de arquivo</span><span class="sxs-lookup"><span data-stu-id="754ca-108">Obtaining a File Name From a File Handle</span></span>](obtaining-a-file-name-from-a-file-handle.md)
 
-<span data-ttu-id="a2883-109">Os processos devem sincronizar o acesso à memória.</span><span class="sxs-lookup"><span data-stu-id="a2883-109">The processes must synchronize their access to the memory.</span></span> <span data-ttu-id="a2883-110">Para obter mais informações, consulte [sincronização](../sync/synchronization.md).</span><span class="sxs-lookup"><span data-stu-id="a2883-110">For more information, see [Synchronization](../sync/synchronization.md).</span></span>
+<span data-ttu-id="754ca-109">Os processos devem sincronizar o acesso à memória.</span><span class="sxs-lookup"><span data-stu-id="754ca-109">The processes must synchronize their access to the memory.</span></span> <span data-ttu-id="754ca-110">Para obter mais informações, consulte [sincronização](../sync/synchronization.md).</span><span class="sxs-lookup"><span data-stu-id="754ca-110">For more information, see [Synchronization](../sync/synchronization.md).</span></span>
 
  
 
