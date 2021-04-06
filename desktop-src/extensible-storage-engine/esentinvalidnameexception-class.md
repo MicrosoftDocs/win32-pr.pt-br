@@ -1,21 +1,21 @@
 ---
-description: 'Saiba mais sobre: classe EsentSeparatedLongValueException'
-title: Classe EsentSeparatedLongValueException
-TOCTitle: EsentSeparatedLongValueException class
-ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
-ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentseparatedlongvalueexception(v=EXCHG.10)
-ms:contentKeyID: 55107331
+description: 'Saiba mais sobre: classe EsentInvalidNameException'
+title: Classe EsentInvalidNameException
+TOCTitle: EsentInvalidNameException class
+ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidNameException
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidnameexception(v=EXCHG.10)
+ms:contentKeyID: 55101977
 ms.date: 07/30/2014
 ms.topic: reference
 f1_keywords:
-- Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
+- Microsoft.Isam.Esent.Interop.EsentInvalidNameException
 dev_langs:
 - CSharp
 - JScript
 - VB
 - other
 api_name:
-- Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
+- Microsoft.Isam.Esent.Interop.EsentInvalidNameException
 topic_type:
 - kbSyntax
 - apiref
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d35977f8b27914799097188030f6b91afd055d08
+ms.openlocfilehash: f0bc20287d26800478a5a41ff39b3bce08fb5eae
 ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011273"
+ms.locfileid: "104011279"
 ---
-# <a name="esentseparatedlongvalueexception-class"></a>Classe EsentSeparatedLongValueException
+# <a name="esentinvalidnameexception-class"></a>Classe EsentInvalidNameException
 
-Classe base para JET_err. SeparatedLongValue exceções.
+Classe base para JET_err. Exceções inválidas.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
@@ -42,8 +42,8 @@ Classe base para JET_err. SeparatedLongValue exceções.
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentStateException](./esentstateexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentSeparatedLongValueException  
+          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentInvalidNameException  
 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
@@ -53,15 +53,15 @@ Classe base para JET_err. SeparatedLongValue exceções.
 ``` vb
 'Declaration
 <SerializableAttribute> _
-Public NotInheritable Class EsentSeparatedLongValueException _
-    Inherits EsentStateException
+Public NotInheritable Class EsentInvalidNameException _
+    Inherits EsentUsageException
 'Usage
-Dim instance As EsentSeparatedLongValueException
+Dim instance As EsentInvalidNameException
 ```
 
 ``` csharp
 [SerializableAttribute]
-public sealed class EsentSeparatedLongValueException : EsentStateException
+public sealed class EsentInvalidNameException : EsentUsageException
 ```
 
 ## <a name="thread-safety"></a>Acesso thread-safe
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentSeparatedLongValueException](./esentseparatedlongvalueexception-members.md)
+[Membros do EsentInvalidNameException](./esentinvalidnameexception-members.md)
 
 [Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

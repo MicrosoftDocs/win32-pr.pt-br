@@ -1,21 +1,21 @@
 ---
-description: 'Saiba mais sobre: classe EsentSeparatedLongValueException'
-title: Classe EsentSeparatedLongValueException
-TOCTitle: EsentSeparatedLongValueException class
-ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
-ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentseparatedlongvalueexception(v=EXCHG.10)
-ms:contentKeyID: 55107331
+description: 'Saiba mais sobre: classe EsentSPAvailExtCorruptedException'
+title: Classe EsentSPAvailExtCorruptedException
+TOCTitle: EsentSPAvailExtCorruptedException class
+ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentSPAvailExtCorruptedException
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentspavailextcorruptedexception(v=EXCHG.10)
+ms:contentKeyID: 55107349
 ms.date: 07/30/2014
 ms.topic: reference
 f1_keywords:
-- Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
+- Microsoft.Isam.Esent.Interop.EsentSPAvailExtCorruptedException
 dev_langs:
 - CSharp
 - JScript
 - VB
 - other
 api_name:
-- Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException
+- Microsoft.Isam.Esent.Interop.EsentSPAvailExtCorruptedException
 topic_type:
 - kbSyntax
 - apiref
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d35977f8b27914799097188030f6b91afd055d08
+ms.openlocfilehash: 004bca3eb0890c2ec74e6881d6ed4b007a3fa581
 ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011273"
+ms.locfileid: "104011269"
 ---
-# <a name="esentseparatedlongvalueexception-class"></a>Classe EsentSeparatedLongValueException
+# <a name="esentspavailextcorruptedexception-class"></a>Classe EsentSPAvailExtCorruptedException
 
-Classe base para JET_err. SeparatedLongValue exceções.
+Classe base para JET_err. SPAvailExtCorrupted exceções.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
@@ -41,9 +41,9 @@ Classe base para JET_err. SeparatedLongValue exceções.
   [System. Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentStateException](./esentstateexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentSeparatedLongValueException  
+        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
+          [Microsoft. ISAM. ESENT. Interop. EsentCorruptionException](./esentcorruptionexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentSPAvailExtCorruptedException  
 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
@@ -53,15 +53,15 @@ Classe base para JET_err. SeparatedLongValue exceções.
 ``` vb
 'Declaration
 <SerializableAttribute> _
-Public NotInheritable Class EsentSeparatedLongValueException _
-    Inherits EsentStateException
+Public NotInheritable Class EsentSPAvailExtCorruptedException _
+    Inherits EsentCorruptionException
 'Usage
-Dim instance As EsentSeparatedLongValueException
+Dim instance As EsentSPAvailExtCorruptedException
 ```
 
 ``` csharp
 [SerializableAttribute]
-public sealed class EsentSeparatedLongValueException : EsentStateException
+public sealed class EsentSPAvailExtCorruptedException : EsentCorruptionException
 ```
 
 ## <a name="thread-safety"></a>Acesso thread-safe
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentSeparatedLongValueException](./esentseparatedlongvalueexception-members.md)
+[Membros do EsentSPAvailExtCorruptedException](./esentspavailextcorruptedexception-members.md)
 
 [Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

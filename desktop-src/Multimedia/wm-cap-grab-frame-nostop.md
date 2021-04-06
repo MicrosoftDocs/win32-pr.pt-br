@@ -54,7 +54,7 @@ Para obter informações sobre como instalar funções de chamada de retorno, co
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
