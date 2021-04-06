@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103663000"
 ---
-# <a name="iidentityadvise-methods"></a><span data-ttu-id="44d9b-103">Métodos IIdentityAdvise</span><span class="sxs-lookup"><span data-stu-id="44d9b-103">IIdentityAdvise Methods</span></span>
+# <a name="iidentityadvise-methods"></a><span data-ttu-id="3c3a5-103">Métodos IIdentityAdvise</span><span class="sxs-lookup"><span data-stu-id="3c3a5-103">IIdentityAdvise Methods</span></span>
 
-<span data-ttu-id="44d9b-104">A interface [**IIdentityAdvise**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iidentityadvise) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="44d9b-104">The [**IIdentityAdvise**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iidentityadvise) interface exposes the following methods.</span></span>
+<span data-ttu-id="3c3a5-104">A interface [**IIdentityAdvise**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iidentityadvise) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3c3a5-104">The [**IIdentityAdvise**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iidentityadvise) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="44d9b-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="44d9b-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3c3a5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3c3a5-105">In this section</span></span>
 
--   [<span data-ttu-id="44d9b-106">**Método IdentityUpdated**</span><span class="sxs-lookup"><span data-stu-id="44d9b-106">**IdentityUpdated Method**</span></span>](/windows/desktop/api/IdentityProvider/nf-identityprovider-iidentityadvise-identityupdated)
+-   [<span data-ttu-id="3c3a5-106">**Método IdentityUpdated**</span><span class="sxs-lookup"><span data-stu-id="3c3a5-106">**IdentityUpdated Method**</span></span>](/windows/desktop/api/IdentityProvider/nf-identityprovider-iidentityadvise-identityupdated)
 
  
 

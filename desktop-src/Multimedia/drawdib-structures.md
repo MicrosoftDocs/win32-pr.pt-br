@@ -19,17 +19,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916555"
 ---
-# <a name="drawdib-structures"></a><span data-ttu-id="8f23d-110">Estruturas DrawDib</span><span class="sxs-lookup"><span data-stu-id="8f23d-110">DrawDib Structures</span></span>
+# <a name="drawdib-structures"></a><span data-ttu-id="24d7a-110">Estruturas DrawDib</span><span class="sxs-lookup"><span data-stu-id="24d7a-110">DrawDib Structures</span></span>
 
-<span data-ttu-id="8f23d-111">A estrutura a seguir é usada com DrawDib.</span><span class="sxs-lookup"><span data-stu-id="8f23d-111">The following structure is used with DrawDib.</span></span>
+<span data-ttu-id="24d7a-111">A estrutura a seguir é usada com DrawDib.</span><span class="sxs-lookup"><span data-stu-id="24d7a-111">The following structure is used with DrawDib.</span></span>
 
-[<span data-ttu-id="8f23d-112">**DRAWDIBTIME**</span><span class="sxs-lookup"><span data-stu-id="8f23d-112">**DRAWDIBTIME**</span></span>](/windows/desktop/api/Vfw/ns-vfw-drawdibtime)
+[<span data-ttu-id="24d7a-112">**DRAWDIBTIME**</span><span class="sxs-lookup"><span data-stu-id="24d7a-112">**DRAWDIBTIME**</span></span>](/windows/desktop/api/Vfw/ns-vfw-drawdibtime)
 
-## <a name="related-topics"></a><span data-ttu-id="8f23d-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8f23d-113">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="24d7a-113">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="24d7a-113">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8f23d-114">Referência de DrawDib</span><span class="sxs-lookup"><span data-stu-id="8f23d-114">DrawDib Reference</span></span>](drawdib-reference.md)
+[<span data-ttu-id="24d7a-114">Referência de DrawDib</span><span class="sxs-lookup"><span data-stu-id="24d7a-114">DrawDib Reference</span></span>](drawdib-reference.md)
 </dt> </dl>
 
  

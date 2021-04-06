@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662774"
 ---
-# <a name="encrypteddata-methods"></a><span data-ttu-id="68ac4-103">Métodos EncryptedData</span><span class="sxs-lookup"><span data-stu-id="68ac4-103">EncryptedData Methods</span></span>
+# <a name="encrypteddata-methods"></a><span data-ttu-id="cf2df-103">Métodos EncryptedData</span><span class="sxs-lookup"><span data-stu-id="cf2df-103">EncryptedData Methods</span></span>
 
-<span data-ttu-id="68ac4-104">O objeto [**EncryptedData**](encrypteddata.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="68ac4-104">The [**EncryptedData**](encrypteddata.md) object exposes the following methods.</span></span>
+<span data-ttu-id="cf2df-104">O objeto [**EncryptedData**](encrypteddata.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="cf2df-104">The [**EncryptedData**](encrypteddata.md) object exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="68ac4-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="68ac4-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="cf2df-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="cf2df-105">In this section</span></span>
 
--   [<span data-ttu-id="68ac4-106">**Método Decrypt**</span><span class="sxs-lookup"><span data-stu-id="68ac4-106">**Decrypt Method**</span></span>](encrypteddata-decrypt.md)
--   [<span data-ttu-id="68ac4-107">**Método Encrypt**</span><span class="sxs-lookup"><span data-stu-id="68ac4-107">**Encrypt Method**</span></span>](encrypteddata-encrypt.md)
--   [<span data-ttu-id="68ac4-108">**Método setsecret**</span><span class="sxs-lookup"><span data-stu-id="68ac4-108">**SetSecret Method**</span></span>](encrypteddata-setsecret.md)
+-   [<span data-ttu-id="cf2df-106">**Método Decrypt**</span><span class="sxs-lookup"><span data-stu-id="cf2df-106">**Decrypt Method**</span></span>](encrypteddata-decrypt.md)
+-   [<span data-ttu-id="cf2df-107">**Método Encrypt**</span><span class="sxs-lookup"><span data-stu-id="cf2df-107">**Encrypt Method**</span></span>](encrypteddata-encrypt.md)
+-   [<span data-ttu-id="cf2df-108">**Método setsecret**</span><span class="sxs-lookup"><span data-stu-id="cf2df-108">**SetSecret Method**</span></span>](encrypteddata-setsecret.md)
 
  
 

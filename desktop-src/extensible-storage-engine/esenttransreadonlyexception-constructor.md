@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011055"
 ---
-# <a name="esenttransreadonlyexception-constructor"></a><span data-ttu-id="82ec2-103">Construtor EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="82ec2-103">EsentTransReadOnlyException constructor</span></span>
+# <a name="esenttransreadonlyexception-constructor"></a><span data-ttu-id="041ab-103">Construtor EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="041ab-103">EsentTransReadOnlyException constructor</span></span>
 
-<span data-ttu-id="82ec2-104">Inicializa uma nova instância da classe EsentTransReadOnlyException.</span><span class="sxs-lookup"><span data-stu-id="82ec2-104">Initializes a new instance of the EsentTransReadOnlyException class.</span></span>
+<span data-ttu-id="041ab-104">Inicializa uma nova instância da classe EsentTransReadOnlyException.</span><span class="sxs-lookup"><span data-stu-id="041ab-104">Initializes a new instance of the EsentTransReadOnlyException class.</span></span>
 
-<span data-ttu-id="82ec2-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="82ec2-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="82ec2-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="82ec2-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="041ab-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="041ab-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="041ab-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="041ab-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="82ec2-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="82ec2-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="041ab-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="041ab-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTransReadOnlyException()
 public EsentTransReadOnlyException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="82ec2-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="82ec2-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="041ab-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="041ab-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="82ec2-109">Referência</span><span class="sxs-lookup"><span data-stu-id="82ec2-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="041ab-109">Referência</span><span class="sxs-lookup"><span data-stu-id="041ab-109">Reference</span></span>
 
-[<span data-ttu-id="82ec2-110">Classe EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="82ec2-110">EsentTransReadOnlyException class</span></span>](./esenttransreadonlyexception-class.md)
+[<span data-ttu-id="041ab-110">Classe EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="041ab-110">EsentTransReadOnlyException class</span></span>](./esenttransreadonlyexception-class.md)
 
-[<span data-ttu-id="82ec2-111">Membros do EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="82ec2-111">EsentTransReadOnlyException members</span></span>](./esenttransreadonlyexception-members.md)
+[<span data-ttu-id="041ab-111">Membros do EsentTransReadOnlyException</span><span class="sxs-lookup"><span data-stu-id="041ab-111">EsentTransReadOnlyException members</span></span>](./esenttransreadonlyexception-members.md)
 
-[<span data-ttu-id="82ec2-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="82ec2-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="041ab-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="041ab-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

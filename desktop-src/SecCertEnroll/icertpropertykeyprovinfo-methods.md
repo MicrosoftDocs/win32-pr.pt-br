@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104011243"
 ---
-# <a name="icertpropertykeyprovinfo-methods"></a><span data-ttu-id="a4b5f-103">Métodos ICertPropertyKeyProvInfo</span><span class="sxs-lookup"><span data-stu-id="a4b5f-103">ICertPropertyKeyProvInfo Methods</span></span>
+# <a name="icertpropertykeyprovinfo-methods"></a><span data-ttu-id="b034d-103">Métodos ICertPropertyKeyProvInfo</span><span class="sxs-lookup"><span data-stu-id="b034d-103">ICertPropertyKeyProvInfo Methods</span></span>
 
-<span data-ttu-id="a4b5f-104">A interface [**ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a4b5f-104">The [**ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) interface exposes the following methods.</span></span>
+<span data-ttu-id="b034d-104">A interface [**ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b034d-104">The [**ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a4b5f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a4b5f-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b034d-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b034d-105">In this section</span></span>
 
--   [<span data-ttu-id="a4b5f-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="a4b5f-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icertpropertykeyprovinfo-initialize)
+-   [<span data-ttu-id="b034d-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="b034d-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icertpropertykeyprovinfo-initialize)
 
  
 

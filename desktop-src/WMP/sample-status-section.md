@@ -17,9 +17,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103916410"
 ---
-# <a name="sample-status-section"></a><span data-ttu-id="df825-108">Seção de status de exemplo</span><span class="sxs-lookup"><span data-stu-id="df825-108">Sample Status Section</span></span>
+# <a name="sample-status-section"></a><span data-ttu-id="65a5a-108">Seção de status de exemplo</span><span class="sxs-lookup"><span data-stu-id="65a5a-108">Sample Status Section</span></span>
 
-<span data-ttu-id="df825-109">As linhas a seguir mostram uma seção de status típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="df825-109">The following lines show a typical Status section of a skin definition file:</span></span>
+<span data-ttu-id="65a5a-109">As linhas a seguir mostram uma seção de status típica de um arquivo de definição de capa:</span><span class="sxs-lookup"><span data-stu-id="65a5a-109">The following lines show a typical Status section of a skin definition file:</span></span>
 
 
 ```C++
@@ -33,11 +33,11 @@ ms.locfileid: "103916410"
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="df825-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="df825-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="65a5a-110">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="65a5a-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="df825-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="df825-111">**Status**</span></span>](status.md)
+[<span data-ttu-id="65a5a-111">**Estado**</span><span class="sxs-lookup"><span data-stu-id="65a5a-111">**Status**</span></span>](status.md)
 </dt> </dl>
 
  

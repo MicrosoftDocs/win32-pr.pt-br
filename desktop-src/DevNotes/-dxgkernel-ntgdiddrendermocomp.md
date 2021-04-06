@@ -1,0 +1,102 @@
+---
+description: Informa ao driver o que macroblocos renderizar especificando as superfícies que contêm o macroblocos, os deslocamentos em cada superfície em que o macroblocos existe e o tamanho dos dados de macrobloco a serem renderizados.
+ms.assetid: c49d9dfa-a3db-4572-a474-72c7d4e80940
+title: Função NtGdiDdRenderMoComp (Ntgdi. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- NtGdiDdRenderMoComp
+api_type:
+- DllExport
+api_location:
+- Ntgdi.h
+- Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+- GDI32.dll
+- GDI32Full.dll
+ms.openlocfilehash: 6e1dd0942a6996264e02531f7e21b2a99f059143
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103826137"
+---
+# <a name="ntgdiddrendermocomp-function"></a><span data-ttu-id="d36f1-103">Função NtGdiDdRenderMoComp</span><span class="sxs-lookup"><span data-stu-id="d36f1-103">NtGdiDdRenderMoComp function</span></span>
+
+<span data-ttu-id="d36f1-104">\[Essa função está sujeita a alterações em cada revisão do sistema operacional.</span><span class="sxs-lookup"><span data-stu-id="d36f1-104">\[This function is subject to change with each operating system revision.</span></span> <span data-ttu-id="d36f1-105">Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]</span><span class="sxs-lookup"><span data-stu-id="d36f1-105">Instead, use the Microsoft DirectDraw and Microsoft Direct3DAPIs; these APIs insulate applications from such operating system changes, and hide many other difficulties involved in interacting directly with display drivers.\]</span></span>
+
+<span data-ttu-id="d36f1-106">Informa ao driver o que macroblocos renderizar especificando as superfícies que contêm o macroblocos, os deslocamentos em cada superfície em que o macroblocos existe e o tamanho dos dados de macrobloco a serem renderizados.</span><span class="sxs-lookup"><span data-stu-id="d36f1-106">Tells the driver what macroblocks to render by specifying the surfaces containing the macroblocks, the offsets in each surface where the macroblocks exist, and the size of the macroblock data to be rendered.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="d36f1-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d36f1-107">Syntax</span></span>
+
+
+```C++
+DWORD APIENTRY NtGdiDdRenderMoComp(
+  _In_    HANDLE               hMoComp,
+  _Inout_ PDD_RENDERMOCOMPDATA puRenderMoCompData
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="d36f1-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d36f1-108">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="d36f1-109">*hMoComp* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="d36f1-109">*hMoComp* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d36f1-110">Identificador para uma [**estrutura \_ \_ local MOTIONCOMP DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) que contém uma descrição da compensação de movimento que está sendo solicitada.</span><span class="sxs-lookup"><span data-stu-id="d36f1-110">Handle to a [**DD\_MOTIONCOMP\_LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) structure that contains a description of the motion compensation being requested.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d36f1-111">*puRenderMoCompData* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="d36f1-111">*puRenderMoCompData* \[in, out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d36f1-112">Ponteiro para uma [**estrutura \_ RENDERMOCOMPDATA do DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) que contém as informações necessárias para renderizar um quadro.</span><span class="sxs-lookup"><span data-stu-id="d36f1-112">Pointer to a [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure that contains the information needed to render a frame.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="d36f1-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d36f1-113">Return value</span></span>
+
+<span data-ttu-id="d36f1-114">**NtGdiDdRenderMoComp** retorna um dos seguintes códigos de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="d36f1-114">**NtGdiDdRenderMoComp** returns one of the following callback codes.</span></span>
+
+
+
+| <span data-ttu-id="d36f1-115">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="d36f1-115">Return code</span></span>                                                                                              | <span data-ttu-id="d36f1-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="d36f1-116">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <dl> <span data-ttu-id="d36f1-117"><dt>**\_Driver DDHAL \_ manipulado**</dt></span><span class="sxs-lookup"><span data-stu-id="d36f1-117"><dt>**DDHAL\_DRIVER\_HANDLED**</dt></span></span> </dl>    | <span data-ttu-id="d36f1-118">O driver executou a operação e retornou um código de retorno válido para essa operação.</span><span class="sxs-lookup"><span data-stu-id="d36f1-118">The driver has performed the operation and returned a valid return code for that operation.</span></span> <span data-ttu-id="d36f1-119">Se esse código for DD \_ OK, o DirectDraw ou Direct3D continuará com a função.</span><span class="sxs-lookup"><span data-stu-id="d36f1-119">If this code is DD\_OK, DirectDraw or Direct3D proceeds with the function.</span></span> <span data-ttu-id="d36f1-120">Caso contrário, o DirectDraw ou o Direct3D retorna o código de erro fornecido pelo driver e anula a função.</span><span class="sxs-lookup"><span data-stu-id="d36f1-120">Otherwise, DirectDraw or Direct3D returns the error code provided by the driver and aborts the function.</span></span><br/>                                                                                 |
+| <dl> <span data-ttu-id="d36f1-121"><dt>**Driver DDHAL não \_ \_ manipulado**</dt></span><span class="sxs-lookup"><span data-stu-id="d36f1-121"><dt>**DDHAL\_DRIVER\_NOTHANDLED**</dt></span></span> </dl> | <span data-ttu-id="d36f1-122">O driver não tem nenhum comentário sobre a operação solicitada.</span><span class="sxs-lookup"><span data-stu-id="d36f1-122">The driver has no comment on the requested operation.</span></span> <span data-ttu-id="d36f1-123">Se for necessário que o driver implementou um retorno de chamada específico, o DirectDraw ou o Direct3D relatará uma condição de erro.</span><span class="sxs-lookup"><span data-stu-id="d36f1-123">If the driver is required to have implemented a particular callback, DirectDraw or Direct3D reports an error condition.</span></span> <span data-ttu-id="d36f1-124">Caso contrário, o DirectDraw ou o Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido pela execução da implementação do DirectDraw ou do Direct3D independente de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d36f1-124">Otherwise, DirectDraw or Direct3D handles the operation as if the driver callback had not been defined by executing the DirectDraw or Direct3D device-independent implementation.</span></span><br/> |
+
+
+
+ 
+
+## <a name="remarks"></a><span data-ttu-id="d36f1-125">Comentários</span><span class="sxs-lookup"><span data-stu-id="d36f1-125">Remarks</span></span>
+
+<span data-ttu-id="d36f1-126">Para obter mais informações, consulte o Microsoft DirectX Video Acceleration Driver Development Kit (DDK).</span><span class="sxs-lookup"><span data-stu-id="d36f1-126">For more information, see the Microsoft DirectX Video Acceleration Driver Development Kit (DDK).</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="d36f1-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d36f1-127">Requirements</span></span>
+
+
+
+| <span data-ttu-id="d36f1-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="d36f1-128">Requirement</span></span> | <span data-ttu-id="d36f1-129">Valor</span><span class="sxs-lookup"><span data-stu-id="d36f1-129">Value</span></span> |
+|-------------------------------------|------------------------------------------------------------------------------------|
+| <span data-ttu-id="d36f1-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d36f1-130">Minimum supported client</span></span><br/> | <span data-ttu-id="d36f1-131">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="d36f1-131">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                         |
+| <span data-ttu-id="d36f1-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d36f1-132">Minimum supported server</span></span><br/> | <span data-ttu-id="d36f1-133">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="d36f1-133">Windows 2000 Server \[desktop apps only\]</span></span><br/>                               |
+| <span data-ttu-id="d36f1-134">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d36f1-134">Header</span></span><br/>                   | <dl> <span data-ttu-id="d36f1-135"><dt>Ntgdi. h</dt></span><span class="sxs-lookup"><span data-stu-id="d36f1-135"><dt>Ntgdi.h</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="d36f1-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="d36f1-136">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="d36f1-137">Suporte ao cliente de nível baixo de gráficos</span><span class="sxs-lookup"><span data-stu-id="d36f1-137">Graphics Low Level Client Support</span></span>](-dxgkernel-low-level-client-support.md)
+</dt> </dl>
+
+ 
+
+ 

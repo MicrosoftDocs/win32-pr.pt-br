@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "103916726"
 ---
-# <a name="saux-switch"></a><span data-ttu-id="9029f-104">comutador/Saux</span><span class="sxs-lookup"><span data-stu-id="9029f-104">/saux switch</span></span>
+# <a name="saux-switch"></a><span data-ttu-id="0a00d-104">comutador/Saux</span><span class="sxs-lookup"><span data-stu-id="0a00d-104">/saux switch</span></span>
 
-<span data-ttu-id="9029f-105">Essa opção é obsoleta e, se usada, resulta em um erro.</span><span class="sxs-lookup"><span data-stu-id="9029f-105">This switch is obsolete and, if used, results in an error.</span></span>
+<span data-ttu-id="0a00d-105">Essa opção é obsoleta e, se usada, resulta em um erro.</span><span class="sxs-lookup"><span data-stu-id="0a00d-105">This switch is obsolete and, if used, results in an error.</span></span>
 
  
 

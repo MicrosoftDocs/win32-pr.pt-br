@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662984"
 ---
-# <a name="apijetgettablecolumninfo-method-jet_sesid-jet_tableid-jet_columnid-jet_columndef"></a><span data-ttu-id="a9ac0-103">Método API. JetGetTableColumnInfo (JET_SESID, JET_TABLEID, JET_COLUMNID JET_COLUMNDEF)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-103">Api.JetGetTableColumnInfo method (JET_SESID, JET_TABLEID, JET_COLUMNID, JET_COLUMNDEF)</span></span>
+# <a name="apijetgettablecolumninfo-method-jet_sesid-jet_tableid-jet_columnid-jet_columndef"></a><span data-ttu-id="350c8-103">Método API. JetGetTableColumnInfo (JET_SESID, JET_TABLEID, JET_COLUMNID JET_COLUMNDEF)</span><span class="sxs-lookup"><span data-stu-id="350c8-103">Api.JetGetTableColumnInfo method (JET_SESID, JET_TABLEID, JET_COLUMNID, JET_COLUMNDEF)</span></span>
 
-<span data-ttu-id="a9ac0-104">Recupera informações sobre uma coluna de tabela.</span><span class="sxs-lookup"><span data-stu-id="a9ac0-104">Retrieves information about a table column.</span></span>
+<span data-ttu-id="350c8-104">Recupera informações sobre uma coluna de tabela.</span><span class="sxs-lookup"><span data-stu-id="350c8-104">Retrieves information about a table column.</span></span>
 
-<span data-ttu-id="a9ac0-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="a9ac0-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="350c8-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="350c8-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="350c8-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="350c8-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a9ac0-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a9ac0-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="350c8-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="350c8-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -61,42 +61,42 @@ public static void JetGetTableColumnInfo(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="a9ac0-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a9ac0-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="350c8-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="350c8-108">Parameters</span></span>
 
-  - <span data-ttu-id="a9ac0-109">sesid</span><span class="sxs-lookup"><span data-stu-id="a9ac0-109">sesid</span></span>  
-    <span data-ttu-id="a9ac0-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="350c8-109">sesid</span><span class="sxs-lookup"><span data-stu-id="350c8-109">sesid</span></span>  
+    <span data-ttu-id="350c8-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="350c8-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="a9ac0-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="a9ac0-111">The session to use.</span></span>
+    <span data-ttu-id="350c8-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="350c8-111">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="a9ac0-112">TableID</span><span class="sxs-lookup"><span data-stu-id="a9ac0-112">tableid</span></span>  
-    <span data-ttu-id="a9ac0-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="350c8-112">TableID</span><span class="sxs-lookup"><span data-stu-id="350c8-112">tableid</span></span>  
+    <span data-ttu-id="350c8-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="350c8-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="a9ac0-114">A tabela que contém a coluna.</span><span class="sxs-lookup"><span data-stu-id="a9ac0-114">The table containing the column.</span></span>
+    <span data-ttu-id="350c8-114">A tabela que contém a coluna.</span><span class="sxs-lookup"><span data-stu-id="350c8-114">The table containing the column.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="a9ac0-115">columnid</span><span class="sxs-lookup"><span data-stu-id="a9ac0-115">columnid</span></span>  
-    <span data-ttu-id="a9ac0-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-116">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
+  - <span data-ttu-id="350c8-115">columnid</span><span class="sxs-lookup"><span data-stu-id="350c8-115">columnid</span></span>  
+    <span data-ttu-id="350c8-116">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="350c8-116">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
     
-    <span data-ttu-id="a9ac0-117">O columnid da coluna.</span><span class="sxs-lookup"><span data-stu-id="a9ac0-117">The columnid of the column.</span></span>
+    <span data-ttu-id="350c8-117">O columnid da coluna.</span><span class="sxs-lookup"><span data-stu-id="350c8-117">The columnid of the column.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="a9ac0-118">columndef</span><span class="sxs-lookup"><span data-stu-id="a9ac0-118">columndef</span></span>  
-    <span data-ttu-id="a9ac0-119">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNDEF](./jet-columndef-class.md)</span><span class="sxs-lookup"><span data-stu-id="a9ac0-119">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)</span></span>  
+  - <span data-ttu-id="350c8-118">columndef</span><span class="sxs-lookup"><span data-stu-id="350c8-118">columndef</span></span>  
+    <span data-ttu-id="350c8-119">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNDEF](./jet-columndef-class.md)</span><span class="sxs-lookup"><span data-stu-id="350c8-119">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)</span></span>  
     
-    <span data-ttu-id="a9ac0-120">Preenchido com informações sobre a coluna.</span><span class="sxs-lookup"><span data-stu-id="a9ac0-120">Filled in with information about the column.</span></span>
+    <span data-ttu-id="350c8-120">Preenchido com informações sobre a coluna.</span><span class="sxs-lookup"><span data-stu-id="350c8-120">Filled in with information about the column.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a9ac0-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="a9ac0-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="350c8-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="350c8-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a9ac0-122">Referência</span><span class="sxs-lookup"><span data-stu-id="a9ac0-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="350c8-122">Referência</span><span class="sxs-lookup"><span data-stu-id="350c8-122">Reference</span></span>
 
-[<span data-ttu-id="a9ac0-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="a9ac0-123">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="350c8-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="350c8-123">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="a9ac0-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="a9ac0-124">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="350c8-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="350c8-124">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="a9ac0-125">Sobrecarga de JetGetTableColumnInfo</span><span class="sxs-lookup"><span data-stu-id="a9ac0-125">JetGetTableColumnInfo overload</span></span>](./api.jetgettablecolumninfo-method.md)
+[<span data-ttu-id="350c8-125">Sobrecarga de JetGetTableColumnInfo</span><span class="sxs-lookup"><span data-stu-id="350c8-125">JetGetTableColumnInfo overload</span></span>](./api.jetgettablecolumninfo-method.md)
 
-[<span data-ttu-id="a9ac0-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="a9ac0-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="350c8-126">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="350c8-126">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

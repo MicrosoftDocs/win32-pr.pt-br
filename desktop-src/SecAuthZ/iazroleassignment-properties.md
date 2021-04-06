@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103662998"
 ---
-# <a name="iazroleassignment-properties"></a><span data-ttu-id="6623c-103">Propriedades de IAzRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="6623c-103">IAzRoleAssignment Properties</span></span>
+# <a name="iazroleassignment-properties"></a><span data-ttu-id="42f3f-103">Propriedades de IAzRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="42f3f-103">IAzRoleAssignment Properties</span></span>
 
-<span data-ttu-id="6623c-104">A interface [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="6623c-104">The [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) interface exposes the following properties.</span></span>
+<span data-ttu-id="42f3f-104">A interface [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="42f3f-104">The [**IAzRoleAssignment**](/windows/desktop/api/Azroles/nn-azroles-iazroleassignment) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="6623c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6623c-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="42f3f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="42f3f-105">In this section</span></span>
 
--   [<span data-ttu-id="6623c-106">**Propriedade RoleDefinitions**</span><span class="sxs-lookup"><span data-stu-id="6623c-106">**RoleDefinitions Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_roledefinitions)
--   [<span data-ttu-id="6623c-107">**Propriedade de escopo**</span><span class="sxs-lookup"><span data-stu-id="6623c-107">**Scope Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_scope)
+-   [<span data-ttu-id="42f3f-106">**Propriedade RoleDefinitions**</span><span class="sxs-lookup"><span data-stu-id="42f3f-106">**RoleDefinitions Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_roledefinitions)
+-   [<span data-ttu-id="42f3f-107">**Propriedade de escopo**</span><span class="sxs-lookup"><span data-stu-id="42f3f-107">**Scope Property**</span></span>](/windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_scope)
 
  
 
