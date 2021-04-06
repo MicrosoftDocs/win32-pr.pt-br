@@ -19,7 +19,7 @@ A \_ tabela de armazenamentos lista armazenamentos de dados OLE inseridos. Essa 
 
 | Coluna | Tipo                 | Chave | Nullable |
 |--------|----------------------|-----|----------|
-| Name   | [Text](text.md)     | S   | N        |
+| Nome   | [Text](text.md)     | S   | N        |
 | Dados   | [Binary](binary.md) | N   | S        |
 
 
