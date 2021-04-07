@@ -11,52 +11,52 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827623"
 ---
-# <a name="mf_mt_audio_samples_per_second-attribute"></a><span data-ttu-id="0dc55-103">\_Atributo de amostras de áudio MF MT \_ \_ \_ por \_ segundo</span><span class="sxs-lookup"><span data-stu-id="0dc55-103">MF\_MT\_AUDIO\_SAMPLES\_PER\_SECOND attribute</span></span>
+# <a name="mf_mt_audio_samples_per_second-attribute"></a><span data-ttu-id="83f17-103">\_Atributo de amostras de áudio MF MT \_ \_ \_ por \_ segundo</span><span class="sxs-lookup"><span data-stu-id="83f17-103">MF\_MT\_AUDIO\_SAMPLES\_PER\_SECOND attribute</span></span>
 
-<span data-ttu-id="0dc55-104">Número de amostras de áudio por segundo em um tipo de mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="0dc55-104">Number of audio samples per second in an audio media type.</span></span>
+<span data-ttu-id="83f17-104">Número de amostras de áudio por segundo em um tipo de mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="83f17-104">Number of audio samples per second in an audio media type.</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="0dc55-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="0dc55-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="83f17-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="83f17-105">Data type</span></span>
 
-<span data-ttu-id="0dc55-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="0dc55-106">**UINT32**</span></span>
+<span data-ttu-id="83f17-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="83f17-106">**UINT32**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0dc55-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="0dc55-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="83f17-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="83f17-107">Remarks</span></span>
 
-<span data-ttu-id="0dc55-108">Esse atributo corresponde ao membro **nSamplesPerSec** da estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="0dc55-108">This attribute corresponds to the **nSamplesPerSec** member of the [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) structure.</span></span>
+<span data-ttu-id="83f17-108">Esse atributo corresponde ao membro **nSamplesPerSec** da estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .</span><span class="sxs-lookup"><span data-stu-id="83f17-108">This attribute corresponds to the **nSamplesPerSec** member of the [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) structure.</span></span>
 
-<span data-ttu-id="0dc55-109">A constante de GUID para esse atributo é exportada de mfuuid. lib.</span><span class="sxs-lookup"><span data-stu-id="0dc55-109">The GUID constant for this attribute is exported from mfuuid.lib.</span></span>
+<span data-ttu-id="83f17-109">A constante de GUID para esse atributo é exportada de mfuuid. lib.</span><span class="sxs-lookup"><span data-stu-id="83f17-109">The GUID constant for this attribute is exported from mfuuid.lib.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="0dc55-110">Requisitos</span><span class="sxs-lookup"><span data-stu-id="0dc55-110">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="83f17-110">Requisitos</span><span class="sxs-lookup"><span data-stu-id="83f17-110">Requirements</span></span>
 
 
 
-| <span data-ttu-id="0dc55-111">Requisito</span><span class="sxs-lookup"><span data-stu-id="0dc55-111">Requirement</span></span> | <span data-ttu-id="0dc55-112">Valor</span><span class="sxs-lookup"><span data-stu-id="0dc55-112">Value</span></span> |
+| <span data-ttu-id="83f17-111">Requisito</span><span class="sxs-lookup"><span data-stu-id="83f17-111">Requirement</span></span> | <span data-ttu-id="83f17-112">Valor</span><span class="sxs-lookup"><span data-stu-id="83f17-112">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="0dc55-113">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0dc55-113">Minimum supported client</span></span><br/> | <span data-ttu-id="0dc55-114">Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]</span><span class="sxs-lookup"><span data-stu-id="0dc55-114">Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                              |
-| <span data-ttu-id="0dc55-115">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="0dc55-115">Minimum supported server</span></span><br/> | <span data-ttu-id="0dc55-116">Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="0dc55-116">Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/>                        |
-| <span data-ttu-id="0dc55-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="0dc55-117">Header</span></span><br/>                   | <dl> <span data-ttu-id="0dc55-118"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="0dc55-118"><dt>Mfapi.h</dt></span></span> </dl> |
+| <span data-ttu-id="83f17-113">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="83f17-113">Minimum supported client</span></span><br/> | <span data-ttu-id="83f17-114">Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]</span><span class="sxs-lookup"><span data-stu-id="83f17-114">Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                              |
+| <span data-ttu-id="83f17-115">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="83f17-115">Minimum supported server</span></span><br/> | <span data-ttu-id="83f17-116">Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="83f17-116">Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/>                        |
+| <span data-ttu-id="83f17-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="83f17-117">Header</span></span><br/>                   | <dl> <span data-ttu-id="83f17-118"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="83f17-118"><dt>Mfapi.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="0dc55-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="0dc55-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83f17-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="83f17-119">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="0dc55-120">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="0dc55-120">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+[<span data-ttu-id="83f17-120">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="83f17-120">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[<span data-ttu-id="0dc55-121">**IMFAttributes:: GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="0dc55-121">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[<span data-ttu-id="83f17-121">**IMFAttributes:: GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="83f17-121">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[<span data-ttu-id="0dc55-122">**IMFAttributes:: setuint32**</span><span class="sxs-lookup"><span data-stu-id="0dc55-122">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[<span data-ttu-id="83f17-122">**IMFAttributes:: setuint32**</span><span class="sxs-lookup"><span data-stu-id="83f17-122">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[<span data-ttu-id="0dc55-123">**IMFMediaType**</span><span class="sxs-lookup"><span data-stu-id="0dc55-123">**IMFMediaType**</span></span>](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
+[<span data-ttu-id="83f17-123">**IMFMediaType**</span><span class="sxs-lookup"><span data-stu-id="83f17-123">**IMFMediaType**</span></span>](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[<span data-ttu-id="0dc55-124">Atributos de tipo de mídia</span><span class="sxs-lookup"><span data-stu-id="0dc55-124">Media Type Attributes</span></span>](media-type-attributes.md)
+[<span data-ttu-id="83f17-124">Atributos de tipo de mídia</span><span class="sxs-lookup"><span data-stu-id="83f17-124">Media Type Attributes</span></span>](media-type-attributes.md)
 </dt> <dt>
 
-[<span data-ttu-id="0dc55-125">**\_ \_ amostras float de áudio MF MT \_ \_ \_ por \_ segundo**</span><span class="sxs-lookup"><span data-stu-id="0dc55-125">**MF\_MT\_AUDIO\_FLOAT\_SAMPLES\_PER\_SECOND**</span></span>](mf-mt-audio-float-samples-per-second-attribute.md)
+[<span data-ttu-id="83f17-125">**\_ \_ amostras float de áudio MF MT \_ \_ \_ por \_ segundo**</span><span class="sxs-lookup"><span data-stu-id="83f17-125">**MF\_MT\_AUDIO\_FLOAT\_SAMPLES\_PER\_SECOND**</span></span>](mf-mt-audio-float-samples-per-second-attribute.md)
 </dt> </dl>
 
  

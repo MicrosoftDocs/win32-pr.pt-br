@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827558"
 ---
-# <a name="esenttoomanyopentablesexception-constructor"></a><span data-ttu-id="82ffd-103">Construtor EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="82ffd-103">EsentTooManyOpenTablesException constructor</span></span>
+# <a name="esenttoomanyopentablesexception-constructor"></a><span data-ttu-id="8b3ff-103">Construtor EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="8b3ff-103">EsentTooManyOpenTablesException constructor</span></span>
 
-<span data-ttu-id="82ffd-104">Inicializa uma nova instância da classe EsentTooManyOpenTablesException.</span><span class="sxs-lookup"><span data-stu-id="82ffd-104">Initializes a new instance of the EsentTooManyOpenTablesException class.</span></span>
+<span data-ttu-id="8b3ff-104">Inicializa uma nova instância da classe EsentTooManyOpenTablesException.</span><span class="sxs-lookup"><span data-stu-id="8b3ff-104">Initializes a new instance of the EsentTooManyOpenTablesException class.</span></span>
 
-<span data-ttu-id="82ffd-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="82ffd-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="82ffd-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="82ffd-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="8b3ff-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8b3ff-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="8b3ff-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8b3ff-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="82ffd-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="82ffd-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8b3ff-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8b3ff-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTooManyOpenTablesException()
 public EsentTooManyOpenTablesException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="82ffd-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="82ffd-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8b3ff-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="8b3ff-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="82ffd-109">Referência</span><span class="sxs-lookup"><span data-stu-id="82ffd-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="8b3ff-109">Referência</span><span class="sxs-lookup"><span data-stu-id="8b3ff-109">Reference</span></span>
 
-[<span data-ttu-id="82ffd-110">Classe EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="82ffd-110">EsentTooManyOpenTablesException class</span></span>](./esenttoomanyopentablesexception-class.md)
+[<span data-ttu-id="8b3ff-110">Classe EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="8b3ff-110">EsentTooManyOpenTablesException class</span></span>](./esenttoomanyopentablesexception-class.md)
 
-[<span data-ttu-id="82ffd-111">Membros do EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="82ffd-111">EsentTooManyOpenTablesException members</span></span>](./esenttoomanyopentablesexception-members.md)
+[<span data-ttu-id="8b3ff-111">Membros do EsentTooManyOpenTablesException</span><span class="sxs-lookup"><span data-stu-id="8b3ff-111">EsentTooManyOpenTablesException members</span></span>](./esenttoomanyopentablesexception-members.md)
 
-[<span data-ttu-id="82ffd-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="82ffd-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="8b3ff-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="8b3ff-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
