@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103919857"
 ---
-# <a name="span-idvspixenginepackedcallpkgspanpackedcallpkg-structure"></a><span data-ttu-id="90a89-103"><span id="vspixengine.packedcallpkg"></span>Estrutura PackedCallPkg</span><span class="sxs-lookup"><span data-stu-id="90a89-103"><span id="vspixengine.packedcallpkg"></span>PackedCallPkg structure</span></span>
+# <a name="span-idvspixenginepackedcallpkgspanpackedcallpkg-structure"></a><span data-ttu-id="af126-103"><span id="vspixengine.packedcallpkg"></span>Estrutura PackedCallPkg</span><span class="sxs-lookup"><span data-stu-id="af126-103"><span id="vspixengine.packedcallpkg"></span>PackedCallPkg structure</span></span>
 
-<span data-ttu-id="90a89-104">Representa um pacote de quatro chamadas.</span><span class="sxs-lookup"><span data-stu-id="90a89-104">Represents a package of four calls.</span></span>
+<span data-ttu-id="af126-104">Representa um pacote de quatro chamadas.</span><span class="sxs-lookup"><span data-stu-id="af126-104">Represents a package of four calls.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="90a89-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="90a89-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="af126-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="af126-105">Syntax</span></span>
 
 
 ```C++
@@ -40,23 +40,23 @@ typedef struct PackedCallPkg {
 } PackedCallPkg;
 ```
 
-## <a name="members"></a><span data-ttu-id="90a89-106">Membros</span><span class="sxs-lookup"><span data-stu-id="90a89-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="af126-106">Membros</span><span class="sxs-lookup"><span data-stu-id="af126-106">Members</span></span>
 
-<span data-ttu-id="90a89-107">**pcp1**</span><span class="sxs-lookup"><span data-stu-id="90a89-107">**pcp1**</span></span>  
-<span data-ttu-id="90a89-108">A primeira chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="90a89-108">The first call in the package.</span></span>
+<span data-ttu-id="af126-107">**pcp1**</span><span class="sxs-lookup"><span data-stu-id="af126-107">**pcp1**</span></span>  
+<span data-ttu-id="af126-108">A primeira chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="af126-108">The first call in the package.</span></span>
 
-<span data-ttu-id="90a89-109">**pcp2**</span><span class="sxs-lookup"><span data-stu-id="90a89-109">**pcp2**</span></span>  
-<span data-ttu-id="90a89-110">A segunda chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="90a89-110">The second call in the package.</span></span>
+<span data-ttu-id="af126-109">**pcp2**</span><span class="sxs-lookup"><span data-stu-id="af126-109">**pcp2**</span></span>  
+<span data-ttu-id="af126-110">A segunda chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="af126-110">The second call in the package.</span></span>
 
-<span data-ttu-id="90a89-111">**pcp3**</span><span class="sxs-lookup"><span data-stu-id="90a89-111">**pcp3**</span></span>  
-<span data-ttu-id="90a89-112">A terceira chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="90a89-112">The third call in the package.</span></span>
+<span data-ttu-id="af126-111">**pcp3**</span><span class="sxs-lookup"><span data-stu-id="af126-111">**pcp3**</span></span>  
+<span data-ttu-id="af126-112">A terceira chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="af126-112">The third call in the package.</span></span>
 
-<span data-ttu-id="90a89-113">**pcp4**</span><span class="sxs-lookup"><span data-stu-id="90a89-113">**pcp4**</span></span>  
-<span data-ttu-id="90a89-114">A quarta chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="90a89-114">The fourth call in the package.</span></span>
+<span data-ttu-id="af126-113">**pcp4**</span><span class="sxs-lookup"><span data-stu-id="af126-113">**pcp4**</span></span>  
+<span data-ttu-id="af126-114">A quarta chamada no pacote.</span><span class="sxs-lookup"><span data-stu-id="af126-114">The fourth call in the package.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="90a89-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="90a89-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="af126-115">Requisitos</span><span class="sxs-lookup"><span data-stu-id="af126-115">Requirements</span></span>
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="90a89-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="90a89-116">Header</span></span></p></td><td><span data-ttu-id="90a89-117">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="90a89-117">Vspixengine.h</span></span></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="af126-116">parâmetro</span><span class="sxs-lookup"><span data-stu-id="af126-116">Header</span></span></p></td><td><span data-ttu-id="af126-117">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="af126-117">Vspixengine.h</span></span></td></tr></tbody></table>
 
  
 
