@@ -23,7 +23,7 @@ ICE90 posta o aviso a seguir.
 
 
 
-| Erro de ICE90                                                                                                                                                                                                                    | Descrição                                                     |
+| Erro de ICE90                                                                                                                                                                                                                    | Description                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | O atalho ' \[ 1 \] ' tem um diretório que é uma propriedade pública (All Caps) e está no diretório de perfil do usuário. Isso resultará em um problema se o valor da propriedade [**AllUsers**](allusers.md) for alterado na sequência da interface do usuário. | O diretório de um atalho foi especificado como uma propriedade pública. |
 
