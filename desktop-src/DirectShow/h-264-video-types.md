@@ -17,7 +17,7 @@ Os subtipos de mídia a seguir são definidos para o vídeo H. 264.
 
 
 
-| Subtype                | FOURCC | Descrição                                                    |
+| Subtype                | FOURCC | Description                                                    |
 |------------------------|--------|----------------------------------------------------------------|
 | **MEDIASUBTYPE \_ AVC1** | 'AVC1' | H. 264 fragmentado sem códigos de início.                           |
 | **MEDIASUBTYPE \_ H264** | Taxas | H. 264 fragmentado com códigos de início.                              |
