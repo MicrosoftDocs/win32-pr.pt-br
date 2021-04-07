@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "103919948"
 ---
-# <a name="direct3d-functions"></a><span data-ttu-id="8e89b-103">Funções do Direct3D</span><span class="sxs-lookup"><span data-stu-id="8e89b-103">Direct3D Functions</span></span>
+# <a name="direct3d-functions"></a><span data-ttu-id="de17f-103">Funções do Direct3D</span><span class="sxs-lookup"><span data-stu-id="de17f-103">Direct3D Functions</span></span>
 
-<span data-ttu-id="8e89b-104">Esta seção contém informações de referência para as funções que você precisa usar ao trabalhar com o Direct3D.</span><span class="sxs-lookup"><span data-stu-id="8e89b-104">This section contains reference information for the functions that you need to use when you work with Direct3D.</span></span> <span data-ttu-id="8e89b-105">As seguintes funções são implementadas:</span><span class="sxs-lookup"><span data-stu-id="8e89b-105">The following functions are implemented:</span></span>
+<span data-ttu-id="de17f-104">Esta seção contém informações de referência para as funções que você precisa usar ao trabalhar com o Direct3D.</span><span class="sxs-lookup"><span data-stu-id="de17f-104">This section contains reference information for the functions that you need to use when you work with Direct3D.</span></span> <span data-ttu-id="de17f-105">As seguintes funções são implementadas:</span><span class="sxs-lookup"><span data-stu-id="de17f-105">The following functions are implemented:</span></span>
 
-- [<span data-ttu-id="8e89b-106">**D3DPERF_BeginEvent**</span><span class="sxs-lookup"><span data-stu-id="8e89b-106">**D3DPERF_BeginEvent**</span></span>](./d3d9/nf-d3d9-d3dperf_beginevent.md)
-- [<span data-ttu-id="8e89b-107">**D3DPERF_EndEvent**</span><span class="sxs-lookup"><span data-stu-id="8e89b-107">**D3DPERF_EndEvent**</span></span>](./d3d9/nf-d3d9-d3dperf_endevent.md)
-- [<span data-ttu-id="8e89b-108">**D3DPERF_GetStatus**</span><span class="sxs-lookup"><span data-stu-id="8e89b-108">**D3DPERF_GetStatus**</span></span>](./d3d9/nf-d3d9-d3dperf_getstatus.md)
-- [<span data-ttu-id="8e89b-109">**D3DPERF_QueryRepeatFrame**</span><span class="sxs-lookup"><span data-stu-id="8e89b-109">**D3DPERF_QueryRepeatFrame**</span></span>](./d3d9/nf-d3d9-d3dperf_queryrepeatframe.md)
-- [<span data-ttu-id="8e89b-110">**D3DPERF_SetMarker**</span><span class="sxs-lookup"><span data-stu-id="8e89b-110">**D3DPERF_SetMarker**</span></span>](./d3d9/nf-d3d9-d3dperf_setmarker.md)
-- [<span data-ttu-id="8e89b-111">**D3DPERF_SetOptions**</span><span class="sxs-lookup"><span data-stu-id="8e89b-111">**D3DPERF_SetOptions**</span></span>](./d3d9/nf-d3d9-d3dperf_setoptions.md)
-- [<span data-ttu-id="8e89b-112">**D3DPERF_SetRegion**</span><span class="sxs-lookup"><span data-stu-id="8e89b-112">**D3DPERF_SetRegion**</span></span>](./d3d9/nf-d3d9-d3dperf_setregion.md)
-- [<span data-ttu-id="8e89b-113">**DebugSetMute**</span><span class="sxs-lookup"><span data-stu-id="8e89b-113">**DebugSetMute**</span></span>](debugsetmute.md)
-- [<span data-ttu-id="8e89b-114">**Direct3DCreate9**</span><span class="sxs-lookup"><span data-stu-id="8e89b-114">**Direct3DCreate9**</span></span>](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9)
+- [<span data-ttu-id="de17f-106">**D3DPERF_BeginEvent**</span><span class="sxs-lookup"><span data-stu-id="de17f-106">**D3DPERF_BeginEvent**</span></span>](./d3d9/nf-d3d9-d3dperf_beginevent.md)
+- [<span data-ttu-id="de17f-107">**D3DPERF_EndEvent**</span><span class="sxs-lookup"><span data-stu-id="de17f-107">**D3DPERF_EndEvent**</span></span>](./d3d9/nf-d3d9-d3dperf_endevent.md)
+- [<span data-ttu-id="de17f-108">**D3DPERF_GetStatus**</span><span class="sxs-lookup"><span data-stu-id="de17f-108">**D3DPERF_GetStatus**</span></span>](./d3d9/nf-d3d9-d3dperf_getstatus.md)
+- [<span data-ttu-id="de17f-109">**D3DPERF_QueryRepeatFrame**</span><span class="sxs-lookup"><span data-stu-id="de17f-109">**D3DPERF_QueryRepeatFrame**</span></span>](./d3d9/nf-d3d9-d3dperf_queryrepeatframe.md)
+- [<span data-ttu-id="de17f-110">**D3DPERF_SetMarker**</span><span class="sxs-lookup"><span data-stu-id="de17f-110">**D3DPERF_SetMarker**</span></span>](./d3d9/nf-d3d9-d3dperf_setmarker.md)
+- [<span data-ttu-id="de17f-111">**D3DPERF_SetOptions**</span><span class="sxs-lookup"><span data-stu-id="de17f-111">**D3DPERF_SetOptions**</span></span>](./d3d9/nf-d3d9-d3dperf_setoptions.md)
+- [<span data-ttu-id="de17f-112">**D3DPERF_SetRegion**</span><span class="sxs-lookup"><span data-stu-id="de17f-112">**D3DPERF_SetRegion**</span></span>](./d3d9/nf-d3d9-d3dperf_setregion.md)
+- [<span data-ttu-id="de17f-113">**DebugSetMute**</span><span class="sxs-lookup"><span data-stu-id="de17f-113">**DebugSetMute**</span></span>](debugsetmute.md)
+- [<span data-ttu-id="de17f-114">**Direct3DCreate9**</span><span class="sxs-lookup"><span data-stu-id="de17f-114">**Direct3DCreate9**</span></span>](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9)
 
     <table>
     <colgroup>
@@ -31,21 +31,21 @@ ms.locfileid: "103919948"
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td><span data-ttu-id="8e89b-115">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="8e89b-115">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="8e89b-116">Essa função está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="8e89b-116">This function is available in Direct3D 9Ex only.</span></span><br/>
+    <td><span data-ttu-id="de17f-115">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="de17f-115">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="de17f-116">Essa função está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="de17f-116">This function is available in Direct3D 9Ex only.</span></span><br/>
     <ul>
-    <li><span data-ttu-id="8e89b-117"><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></span><span class="sxs-lookup"><span data-stu-id="8e89b-117"><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></span></span></li>
+    <li><span data-ttu-id="de17f-117"><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></span><span class="sxs-lookup"><span data-stu-id="de17f-117"><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></span></span></li>
     </ul></td>
     </tr>
     </tbody>
     </table>
 
-- [<span data-ttu-id="8e89b-118">**Direct3DShaderValidatorCreate9**</span><span class="sxs-lookup"><span data-stu-id="8e89b-118">**Direct3DShaderValidatorCreate9**</span></span>](direct3dshadervalidatorcreate9.md)
+- [<span data-ttu-id="de17f-118">**Direct3DShaderValidatorCreate9**</span><span class="sxs-lookup"><span data-stu-id="de17f-118">**Direct3DShaderValidatorCreate9**</span></span>](direct3dshadervalidatorcreate9.md)
 
-## <a name="related-topics"></a><span data-ttu-id="8e89b-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8e89b-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="de17f-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="de17f-119">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8e89b-120">Referência do Direct3D</span><span class="sxs-lookup"><span data-stu-id="8e89b-120">Direct3D Reference</span></span>](dx9-graphics-reference-d3d.md)
+[<span data-ttu-id="de17f-120">Referência do Direct3D</span><span class="sxs-lookup"><span data-stu-id="de17f-120">Direct3D Reference</span></span>](dx9-graphics-reference-d3d.md)
 </dt> </dl>
 
  
