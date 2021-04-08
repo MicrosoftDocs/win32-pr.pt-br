@@ -23,7 +23,7 @@ As sintaxes a seguir são definidas por Active Directory.
 [**Enumeração (mecanismo de entrega)**](s-enumeration-delivery-mechanism.md)  
 [**Enumeração (exportar-nível de informação)**](s-enumeration-export-information-level.md)  
 [**Enumeração (preferencial-Delivery-Method)**](s-enumeration-preferred-delivery-method.md)  
-[**Inteiro**](s-integer.md)  
+[**Valores**](s-integer.md)  
 [**Intervalo**](s-interval.md)  
 [**LargeInteger**](s-largeinteger.md)  
 [**Objeto (ponto de acesso)**](s-object-access-point.md)  

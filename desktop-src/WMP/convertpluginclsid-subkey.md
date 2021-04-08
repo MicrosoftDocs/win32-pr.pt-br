@@ -42,7 +42,7 @@ Por exemplo, suponha que um formato de arquivo personalizado tenha um plug-in de
 
 
 
-| Nome                                                                          | Type        | Valor                                                                |
+| Nome                                                                          | Tipo        | Valor                                                                |
 |-------------------------------------------------------------------------------|-------------|----------------------------------------------------------------------|
 | Padrão                                                                       | **REG \_ sz** | A ID da classe, no formato do registro, do plug-in de conversão padrão. |
 | A ID da classe, no formato do registro, do plug-in de conversão padrão.          | **REG \_ sz** | O nome amigável do plug-in de conversão padrão.                 |
