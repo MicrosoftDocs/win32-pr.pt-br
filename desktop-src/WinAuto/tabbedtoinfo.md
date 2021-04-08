@@ -25,7 +25,7 @@ Voltando ao início
 
 ## <a name="type"></a>Tipo
 
-Informativa
+Informativo
 
 ## <a name="description"></a>Descrição
 
