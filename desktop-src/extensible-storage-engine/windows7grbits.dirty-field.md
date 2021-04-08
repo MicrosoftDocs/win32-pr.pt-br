@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827484"
 ---
-# <a name="windows7grbitsdirty-field"></a><span data-ttu-id="40547-103">Campo Windows7Grbits. Dirty</span><span class="sxs-lookup"><span data-stu-id="40547-103">Windows7Grbits.Dirty field</span></span>
+# <a name="windows7grbitsdirty-field"></a><span data-ttu-id="e5d76-103">Campo Windows7Grbits. Dirty</span><span class="sxs-lookup"><span data-stu-id="e5d76-103">Windows7Grbits.Dirty field</span></span>
 
-<span data-ttu-id="40547-104">Terminar sem liberar o cache do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="40547-104">Terminate without flushing the database cache.</span></span>
+<span data-ttu-id="e5d76-104">Terminar sem liberar o cache do banco de dados.</span><span class="sxs-lookup"><span data-stu-id="e5d76-104">Terminate without flushing the database cache.</span></span>
 
-<span data-ttu-id="40547-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="40547-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
-<span data-ttu-id="40547-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="40547-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="e5d76-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e5d76-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
+<span data-ttu-id="e5d76-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e5d76-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="40547-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="40547-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e5d76-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e5d76-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = Windows7Grbits.Dirty
 public const TermGrbit Dirty
 ```
 
-## <a name="see-also"></a><span data-ttu-id="40547-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="40547-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e5d76-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="e5d76-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="40547-109">Referência</span><span class="sxs-lookup"><span data-stu-id="40547-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="e5d76-109">Referência</span><span class="sxs-lookup"><span data-stu-id="e5d76-109">Reference</span></span>
 
-[<span data-ttu-id="40547-110">Classe Windows7Grbits</span><span class="sxs-lookup"><span data-stu-id="40547-110">Windows7Grbits class</span></span>](./windows7grbits-class.md)
+[<span data-ttu-id="e5d76-110">Classe Windows7Grbits</span><span class="sxs-lookup"><span data-stu-id="e5d76-110">Windows7Grbits class</span></span>](./windows7grbits-class.md)
 
-[<span data-ttu-id="40547-111">Membros do Windows7Grbits</span><span class="sxs-lookup"><span data-stu-id="40547-111">Windows7Grbits members</span></span>](./windows7grbits-members.md)
+[<span data-ttu-id="e5d76-111">Membros do Windows7Grbits</span><span class="sxs-lookup"><span data-stu-id="e5d76-111">Windows7Grbits members</span></span>](./windows7grbits-members.md)
 
-[<span data-ttu-id="40547-112">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="40547-112">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)
+[<span data-ttu-id="e5d76-112">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="e5d76-112">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)

@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827481"
 ---
-# <a name="windows7paramdbscanthrottle-field"></a><span data-ttu-id="560ec-103">Campo Windows7Param. DbScanThrottle</span><span class="sxs-lookup"><span data-stu-id="560ec-103">Windows7Param.DbScanThrottle field</span></span>
+# <a name="windows7paramdbscanthrottle-field"></a><span data-ttu-id="13ea2-103">Campo Windows7Param. DbScanThrottle</span><span class="sxs-lookup"><span data-stu-id="13ea2-103">Windows7Param.DbScanThrottle field</span></span>
 
-<span data-ttu-id="560ec-104">Limitação da verificação do banco de dados, em milissegundos.</span><span class="sxs-lookup"><span data-stu-id="560ec-104">Throttling of the database scan, in milliseconds.</span></span>
+<span data-ttu-id="13ea2-104">Limitação da verificação do banco de dados, em milissegundos.</span><span class="sxs-lookup"><span data-stu-id="13ea2-104">Throttling of the database scan, in milliseconds.</span></span>
 
-<span data-ttu-id="560ec-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="560ec-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
-<span data-ttu-id="560ec-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="560ec-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="13ea2-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="13ea2-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)</span></span>  
+<span data-ttu-id="13ea2-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="13ea2-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="560ec-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="560ec-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="13ea2-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="13ea2-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = Windows7Param.DbScanThrottle
 public const JET_param DbScanThrottle
 ```
 
-## <a name="see-also"></a><span data-ttu-id="560ec-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="560ec-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="13ea2-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="13ea2-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="560ec-109">Referência</span><span class="sxs-lookup"><span data-stu-id="560ec-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="13ea2-109">Referência</span><span class="sxs-lookup"><span data-stu-id="13ea2-109">Reference</span></span>
 
-[<span data-ttu-id="560ec-110">Classe Windows7Param</span><span class="sxs-lookup"><span data-stu-id="560ec-110">Windows7Param class</span></span>](./windows7param-class.md)
+[<span data-ttu-id="13ea2-110">Classe Windows7Param</span><span class="sxs-lookup"><span data-stu-id="13ea2-110">Windows7Param class</span></span>](./windows7param-class.md)
 
-[<span data-ttu-id="560ec-111">Membros do Windows7Param</span><span class="sxs-lookup"><span data-stu-id="560ec-111">Windows7Param members</span></span>](./windows7param-members.md)
+[<span data-ttu-id="13ea2-111">Membros do Windows7Param</span><span class="sxs-lookup"><span data-stu-id="13ea2-111">Windows7Param members</span></span>](./windows7param-members.md)
 
-[<span data-ttu-id="560ec-112">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="560ec-112">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)
+[<span data-ttu-id="13ea2-112">Namespace Microsoft. ISAM. ESENT. Interop. Windows7</span><span class="sxs-lookup"><span data-stu-id="13ea2-112">Microsoft.Isam.Esent.Interop.Windows7 namespace</span></span>](./microsoft.isam.esent.interop.windows7-namespace.md)
