@@ -41,7 +41,7 @@ O elemento **Timecriated** é definido pelo tipo complexo [**SystemPropertiesTyp
 
 
 
-| Nome       | Type     | Descrição                                              |
+| Nome       | Tipo     | Descrição                                              |
 |------------|----------|----------------------------------------------------------|
 | SystemTime | dateTime | A hora do sistema de quando o evento foi registrado.<br/> |
 
@@ -58,7 +58,7 @@ O elemento **Timecriated** é definido pelo tipo complexo [**SystemPropertiesTyp
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

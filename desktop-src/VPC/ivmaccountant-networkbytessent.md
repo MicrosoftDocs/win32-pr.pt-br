@@ -79,7 +79,7 @@ Observe que as estatísticas de e/s de rede são redefinidas para zero quando um
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
