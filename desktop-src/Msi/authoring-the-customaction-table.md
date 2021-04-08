@@ -37,7 +37,7 @@ O código-fonte do C++ para as bibliotecas de vínculo dinâmico são fornecidos
 
 
 
-| Name        | Dados            |
+| Nome        | Dados            |
 |-------------|-----------------|
 | Process.dll | {*dados binários*} |
 | Create.dll  | {*dados binários*} |

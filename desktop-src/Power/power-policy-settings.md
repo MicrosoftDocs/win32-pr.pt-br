@@ -19,7 +19,7 @@ Um plano de energia consiste em um grupo de preferências de configuração de e
 
 A tabela a seguir mostra os três personalidades do plano de energia. 
 
-| Nome de exibição     | Description                                                                   | **GUID**                             |
+| Nome de exibição     | Descrição                                                                   | **GUID**                             |
 |------------------|-------------------------------------------------------------------------------|--------------------------------------|
 | Economia de energia      | Oferece um desempenho reduzido que pode aumentar a economia de energia.                | a1841308-3541-4fab-bc81-f71556f20b4a |
 | Balanced         | Balanceia automaticamente o consumo de energia e de desempenho de acordo com a demanda. | 381b4222-f694-41f0-9685-ff5bb260df2e |
