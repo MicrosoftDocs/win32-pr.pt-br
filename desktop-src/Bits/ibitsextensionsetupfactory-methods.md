@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004970"
 ---
-# <a name="ibitsextensionsetupfactory-methods"></a><span data-ttu-id="3a929-103">Métodos IBITSExtensionSetupFactory</span><span class="sxs-lookup"><span data-stu-id="3a929-103">IBITSExtensionSetupFactory Methods</span></span>
+# <a name="ibitsextensionsetupfactory-methods"></a><span data-ttu-id="6bf61-103">Métodos IBITSExtensionSetupFactory</span><span class="sxs-lookup"><span data-stu-id="6bf61-103">IBITSExtensionSetupFactory Methods</span></span>
 
-<span data-ttu-id="3a929-104">A interface [**IBITSExtensionSetupFactory**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetupfactory) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3a929-104">The [**IBITSExtensionSetupFactory**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetupfactory) interface exposes the following methods.</span></span>
+<span data-ttu-id="6bf61-104">A interface [**IBITSExtensionSetupFactory**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetupfactory) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6bf61-104">The [**IBITSExtensionSetupFactory**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetupfactory) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3a929-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3a929-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6bf61-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6bf61-105">In this section</span></span>
 
--   [<span data-ttu-id="3a929-106">**Método GetObject**</span><span class="sxs-lookup"><span data-stu-id="3a929-106">**GetObject Method**</span></span>](/windows/desktop/api/Bitscfg/nf-bitscfg-ibitsextensionsetupfactory-getobject)
+-   [<span data-ttu-id="6bf61-106">**Método GetObject**</span><span class="sxs-lookup"><span data-stu-id="6bf61-106">**GetObject Method**</span></span>](/windows/desktop/api/Bitscfg/nf-bitscfg-ibitsextensionsetupfactory-getobject)
 
  
 

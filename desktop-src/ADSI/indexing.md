@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004869"
 ---
-# <a name="indexing"></a><span data-ttu-id="9e5bf-104">Indexação</span><span class="sxs-lookup"><span data-stu-id="9e5bf-104">Indexing</span></span>
+# <a name="indexing"></a><span data-ttu-id="55181-104">Indexação</span><span class="sxs-lookup"><span data-stu-id="55181-104">Indexing</span></span>
 
-<span data-ttu-id="9e5bf-105">Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado.</span><span class="sxs-lookup"><span data-stu-id="9e5bf-105">When possible, search for indexed attributes, or at least one indexed attribute.</span></span> <span data-ttu-id="9e5bf-106">Como em geral, com bancos de dados, a pesquisa em um atributo indexado permite que o servidor Calcule com mais eficiência o conjunto de resultados.</span><span class="sxs-lookup"><span data-stu-id="9e5bf-106">As in general with databases, searching on an indexed attribute enables the server to more efficiently calculate the result set.</span></span>
+<span data-ttu-id="55181-105">Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado.</span><span class="sxs-lookup"><span data-stu-id="55181-105">When possible, search for indexed attributes, or at least one indexed attribute.</span></span> <span data-ttu-id="55181-106">Como em geral, com bancos de dados, a pesquisa em um atributo indexado permite que o servidor Calcule com mais eficiência o conjunto de resultados.</span><span class="sxs-lookup"><span data-stu-id="55181-106">As in general with databases, searching on an indexed attribute enables the server to more efficiently calculate the result set.</span></span>
 
  
 

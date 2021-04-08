@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004928"
 ---
-# <a name="example-code-for-creating-a-bindable-string-representation-of-a-guid"></a><span data-ttu-id="ec28a-104">Exemplo de código para criar uma representação de cadeia de caracteres vinculável de um GUID</span><span class="sxs-lookup"><span data-stu-id="ec28a-104">Example Code for Creating a Bindable String Representation of a GUID</span></span>
+# <a name="example-code-for-creating-a-bindable-string-representation-of-a-guid"></a><span data-ttu-id="39ca8-104">Exemplo de código para criar uma representação de cadeia de caracteres vinculável de um GUID</span><span class="sxs-lookup"><span data-stu-id="39ca8-104">Example Code for Creating a Bindable String Representation of a GUID</span></span>
 
-<span data-ttu-id="ec28a-105">O exemplo de código a seguir pode ser usado para retornar uma representação de cadeia de caracteres de um GUID que pode ser usado para associar ao objeto.</span><span class="sxs-lookup"><span data-stu-id="ec28a-105">The following code example can be used to return a string representation of a GUID that can be used to bind to the object.</span></span>
+<span data-ttu-id="39ca8-105">O exemplo de código a seguir pode ser usado para retornar uma representação de cadeia de caracteres de um GUID que pode ser usado para associar ao objeto.</span><span class="sxs-lookup"><span data-stu-id="39ca8-105">The following code example can be used to return a string representation of a GUID that can be used to bind to the object.</span></span>
 
 
 ```C++
