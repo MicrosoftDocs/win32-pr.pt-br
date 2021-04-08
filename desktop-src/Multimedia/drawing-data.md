@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005273"
 ---
-# <a name="drawing-data"></a><span data-ttu-id="ac8d5-110">Dados de desenho</span><span class="sxs-lookup"><span data-stu-id="ac8d5-110">Drawing Data</span></span>
+# <a name="drawing-data"></a><span data-ttu-id="8ae3d-110">Dados de desenho</span><span class="sxs-lookup"><span data-stu-id="8ae3d-110">Drawing Data</span></span>
 
-<span data-ttu-id="ac8d5-111">O exemplo a seguir usa a função [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) e as macros [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush)e [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) para desenhar dados na tela.</span><span class="sxs-lookup"><span data-stu-id="ac8d5-111">The following example uses the [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) function and the [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush), and [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) macros to draw data on the screen.</span></span>
+<span data-ttu-id="8ae3d-111">O exemplo a seguir usa a função [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) e as macros [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush)e [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) para desenhar dados na tela.</span><span class="sxs-lookup"><span data-stu-id="8ae3d-111">The following example uses the [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) function and the [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush), and [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) macros to draw data on the screen.</span></span>
 
 
 ```C++

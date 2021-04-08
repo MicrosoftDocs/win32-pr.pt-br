@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005241"
 ---
-# <a name="creating-a-status-callback-function"></a><span data-ttu-id="5ca42-104">Criando uma função de retorno de chamada de status</span><span class="sxs-lookup"><span data-stu-id="5ca42-104">Creating a Status Callback Function</span></span>
+# <a name="creating-a-status-callback-function"></a><span data-ttu-id="8f13d-104">Criando uma função de retorno de chamada de status</span><span class="sxs-lookup"><span data-stu-id="8f13d-104">Creating a Status Callback Function</span></span>
 
-<span data-ttu-id="5ca42-105">O exemplo a seguir é uma função de retorno de chamada de status simples.</span><span class="sxs-lookup"><span data-stu-id="5ca42-105">The following example is a simple status callback function.</span></span> <span data-ttu-id="5ca42-106">Registre esse retorno de chamada usando a macro [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) .</span><span class="sxs-lookup"><span data-stu-id="5ca42-106">Register this callback by using the [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) macro.</span></span>
+<span data-ttu-id="8f13d-105">O exemplo a seguir é uma função de retorno de chamada de status simples.</span><span class="sxs-lookup"><span data-stu-id="8f13d-105">The following example is a simple status callback function.</span></span> <span data-ttu-id="8f13d-106">Registre esse retorno de chamada usando a macro [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) .</span><span class="sxs-lookup"><span data-stu-id="8f13d-106">Register this callback by using the [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) macro.</span></span>
 
 
 ```C++
@@ -49,11 +49,11 @@ LRESULT PASCAL StatusCallbackProc(HWND hWnd, int nID,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="5ca42-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5ca42-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8f13d-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8f13d-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="5ca42-108">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="5ca42-108">Using Video Capture</span></span>](using-video-capture.md)
+[<span data-ttu-id="8f13d-108">Usando a captura de vídeo</span><span class="sxs-lookup"><span data-stu-id="8f13d-108">Using Video Capture</span></span>](using-video-capture.md)
 </dt> </dl>
 
  

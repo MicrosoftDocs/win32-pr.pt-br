@@ -22,30 +22,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005168"
 ---
-# <a name="previous-versions-of-windows-media-metafiles-deprecated"></a><span data-ttu-id="96636-108">Versões anteriores de metaarquivos do Windows Media (preterido)</span><span class="sxs-lookup"><span data-stu-id="96636-108">Previous Versions of Windows Media Metafiles (deprecated)</span></span>
+# <a name="previous-versions-of-windows-media-metafiles-deprecated"></a><span data-ttu-id="70145-108">Versões anteriores de metaarquivos do Windows Media (preterido)</span><span class="sxs-lookup"><span data-stu-id="70145-108">Previous Versions of Windows Media Metafiles (deprecated)</span></span>
 
-<span data-ttu-id="96636-109">Este tópico documenta um recurso que não é mais usado na versão atual dos metaarquivos do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="96636-109">This topic documents a feature that is no longer used in the current version of Windows Media Metafiles.</span></span>
+<span data-ttu-id="70145-109">Este tópico documenta um recurso que não é mais usado na versão atual dos metaarquivos do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="70145-109">This topic documents a feature that is no longer used in the current version of Windows Media Metafiles.</span></span>
 
-<span data-ttu-id="96636-110">Esta seção documenta uma parte da versão 2 dos metaarquivos do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="96636-110">This section documents a portion of version 2 of Windows Media Metafiles.</span></span> <span data-ttu-id="96636-111">A versão 2 não é a versão atual dos metaarquivos do Windows Media, mas há alguns casos em que o Windows Media Services fornece aos clientes os metaarquivos que estão no formato versão 2.</span><span class="sxs-lookup"><span data-stu-id="96636-111">Version 2 is not the current version of Windows Media Metafiles, but there are some cases in which Windows Media Services supplies clients with metafiles that are in the version 2 format.</span></span> <span data-ttu-id="96636-112">Os metaarquivos de mídia do Windows também são chamados de arquivos ASX (redirecionador de fluxo avançado).</span><span class="sxs-lookup"><span data-stu-id="96636-112">Windows Media Metafiles are also referred to as Advanced Stream Redirector (ASX) files.</span></span>
+<span data-ttu-id="70145-110">Esta seção documenta uma parte da versão 2 dos metaarquivos do Windows Media.</span><span class="sxs-lookup"><span data-stu-id="70145-110">This section documents a portion of version 2 of Windows Media Metafiles.</span></span> <span data-ttu-id="70145-111">A versão 2 não é a versão atual dos metaarquivos do Windows Media, mas há alguns casos em que o Windows Media Services fornece aos clientes os metaarquivos que estão no formato versão 2.</span><span class="sxs-lookup"><span data-stu-id="70145-111">Version 2 is not the current version of Windows Media Metafiles, but there are some cases in which Windows Media Services supplies clients with metafiles that are in the version 2 format.</span></span> <span data-ttu-id="70145-112">Os metaarquivos de mídia do Windows também são chamados de arquivos ASX (redirecionador de fluxo avançado).</span><span class="sxs-lookup"><span data-stu-id="70145-112">Windows Media Metafiles are also referred to as Advanced Stream Redirector (ASX) files.</span></span>
 
-<span data-ttu-id="96636-113">Esta seção documenta os itens a seguir.</span><span class="sxs-lookup"><span data-stu-id="96636-113">This section documents the following items.</span></span>
+<span data-ttu-id="70145-113">Esta seção documenta os itens a seguir.</span><span class="sxs-lookup"><span data-stu-id="70145-113">This section documents the following items.</span></span>
 
 
 
-| <span data-ttu-id="96636-114">Item</span><span class="sxs-lookup"><span data-stu-id="96636-114">Item</span></span>                                                   | <span data-ttu-id="96636-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="96636-115">Description</span></span>                                                    |
+| <span data-ttu-id="70145-114">Item</span><span class="sxs-lookup"><span data-stu-id="70145-114">Item</span></span>                                                   | <span data-ttu-id="70145-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="70145-115">Description</span></span>                                                    |
 |--------------------------------------------------------|----------------------------------------------------------------|
-| [<span data-ttu-id="96636-116">Elemento Reference</span><span class="sxs-lookup"><span data-stu-id="96636-116">reference Element</span></span>](reference-element--deprecated.md) | <span data-ttu-id="96636-117">Contém uma lista de URLs de arquivos de mídia.</span><span class="sxs-lookup"><span data-stu-id="96636-117">Contains a list of URLs of media files.</span></span>                        |
-| [<span data-ttu-id="96636-118">Parâmetro MSWMExt</span><span class="sxs-lookup"><span data-stu-id="96636-118">MSWMExt parameter</span></span>](mswmext-parameter--deprecated.md) | <span data-ttu-id="96636-119">Indica a um programa cliente o formato de um arquivo referenciado.</span><span class="sxs-lookup"><span data-stu-id="96636-119">Indicates to a client program the format of a referenced file.</span></span> |
+| [<span data-ttu-id="70145-116">Elemento Reference</span><span class="sxs-lookup"><span data-stu-id="70145-116">reference Element</span></span>](reference-element--deprecated.md) | <span data-ttu-id="70145-117">Contém uma lista de URLs de arquivos de mídia.</span><span class="sxs-lookup"><span data-stu-id="70145-117">Contains a list of URLs of media files.</span></span>                        |
+| [<span data-ttu-id="70145-118">Parâmetro MSWMExt</span><span class="sxs-lookup"><span data-stu-id="70145-118">MSWMExt parameter</span></span>](mswmext-parameter--deprecated.md) | <span data-ttu-id="70145-119">Indica a um programa cliente o formato de um arquivo referenciado.</span><span class="sxs-lookup"><span data-stu-id="70145-119">Indicates to a client program the format of a referenced file.</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="96636-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="96636-120">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="70145-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="70145-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="96636-121">**Metaarquivos do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="96636-121">**Windows Media Metafiles**</span></span>](windows-media-metafiles.md)
+[<span data-ttu-id="70145-121">**Metaarquivos do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="70145-121">**Windows Media Metafiles**</span></span>](windows-media-metafiles.md)
 </dt> </dl>
 
  

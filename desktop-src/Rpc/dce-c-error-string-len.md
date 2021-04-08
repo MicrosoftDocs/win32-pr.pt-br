@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005204"
 ---
-# <a name="dce_c_error_string_len"></a><span data-ttu-id="9e74f-104">comp. de \_ cadeia de caracteres de erro DCE C \_ \_ \_</span><span class="sxs-lookup"><span data-stu-id="9e74f-104">DCE\_C\_ERROR\_STRING\_LEN</span></span>
+# <a name="dce_c_error_string_len"></a><span data-ttu-id="c16ec-104">comp. de \_ cadeia de caracteres de erro DCE C \_ \_ \_</span><span class="sxs-lookup"><span data-stu-id="c16ec-104">DCE\_C\_ERROR\_STRING\_LEN</span></span>
 
-<span data-ttu-id="9e74f-105">A constante número de **\_ \_ \_ cadeias de caracteres de erro \_ de DCE C** define a quantidade máxima de caracteres que uma cadeia de caracteres de mensagem de erro contém.</span><span class="sxs-lookup"><span data-stu-id="9e74f-105">The constant **DCE\_C\_ERROR\_STRING\_LEN** defines the maximum number of characters that an error message string contains.</span></span>
+<span data-ttu-id="c16ec-105">A constante número de **\_ \_ \_ cadeias de caracteres de erro \_ de DCE C** define a quantidade máxima de caracteres que uma cadeia de caracteres de mensagem de erro contém.</span><span class="sxs-lookup"><span data-stu-id="c16ec-105">The constant **DCE\_C\_ERROR\_STRING\_LEN** defines the maximum number of characters that an error message string contains.</span></span>
 
  
 
