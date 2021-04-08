@@ -34,7 +34,7 @@ A interface **IDebugLiveShaderRequest** herda da interface [**IUnknown**](/windo
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IDebugLiveShaderRequest** tem esses métodos.
 

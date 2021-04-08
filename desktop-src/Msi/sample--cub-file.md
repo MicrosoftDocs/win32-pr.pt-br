@@ -23,7 +23,7 @@ A ação personalizada ICE08 é um [tipo de ação personalizada 6](custom-actio
 
 
 
-| Name    | Dados                               |
+| Nome    | Dados                               |
 |---------|------------------------------------|
 | ice.vbs | Dados binários não formatados de ice.vbs |
 | ice.dll | Dados binários não formatados de ice.dll |
@@ -68,7 +68,7 @@ ICE01 e ICE08 não exigem a inclusão de tabelas de processamento especiais. Qua
 
 | Tabela         | Coluna    | Nullable | MinValue | MaxValue | KeyTable | KeyColumn | Categoria                         | Definir | Descrição |
 |---------------|-----------|----------|----------|----------|----------|-----------|----------------------------------|-----|-------------|
-| Binário        | Name      | N        |          |          |          |           | [Identificador](identifier.md)     |     |             |
+| Binário        | Nome      | N        |          |          |          |           | [Identificador](identifier.md)     |     |             |
 | Binário        | Dados      | N        |          |          |          |           | [Binary](binary.md)             |     |             |
 | CustomAction  | Ação    | N        |          |          |          |           | [Identificador](identifier.md)     |     |             |
 | CustomAction  | Tipo      | N        |          |          |          |           | [Inteiro](integer.md)           |     |             |
