@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103836903"
 ---
-# <a name="systemparametersmindataforxpress-property"></a><span data-ttu-id="f24f8-103">Propriedade SystemParameters. MinDataForXpress</span><span class="sxs-lookup"><span data-stu-id="f24f8-103">SystemParameters.MinDataForXpress property</span></span>
+# <a name="systemparametersmindataforxpress-property"></a><span data-ttu-id="5c984-103">Propriedade SystemParameters. MinDataForXpress</span><span class="sxs-lookup"><span data-stu-id="5c984-103">SystemParameters.MinDataForXpress property</span></span>
 
-<span data-ttu-id="f24f8-104">Obtém ou define a menor quantidade de dados que devem ser compactados com a compactação do Xpress.</span><span class="sxs-lookup"><span data-stu-id="f24f8-104">Gets or sets the smallest amount of data that should be compressed with xpress compression.</span></span>
+<span data-ttu-id="5c984-104">Obtém ou define a menor quantidade de dados que devem ser compactados com a compactação do Xpress.</span><span class="sxs-lookup"><span data-stu-id="5c984-104">Gets or sets the smallest amount of data that should be compressed with xpress compression.</span></span>
 
-<span data-ttu-id="f24f8-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f24f8-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f24f8-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f24f8-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5c984-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5c984-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5c984-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5c984-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f24f8-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="f24f8-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5c984-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="5c984-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -59,16 +59,16 @@ SystemParameters.MinDataForXpress = value
 public static int MinDataForXpress { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="f24f8-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f24f8-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="5c984-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="5c984-108">Property value</span></span>
 
-<span data-ttu-id="f24f8-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="f24f8-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="5c984-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="5c984-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="f24f8-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="f24f8-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5c984-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="5c984-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f24f8-111">Referência</span><span class="sxs-lookup"><span data-stu-id="f24f8-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5c984-111">Referência</span><span class="sxs-lookup"><span data-stu-id="5c984-111">Reference</span></span>
 
-[<span data-ttu-id="f24f8-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="f24f8-112">SystemParameters class</span></span>](./systemparameters-class.md)
+[<span data-ttu-id="5c984-112">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="5c984-112">SystemParameters class</span></span>](./systemparameters-class.md)
 
-[<span data-ttu-id="f24f8-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="f24f8-113">SystemParameters members</span></span>](./systemparameters-members.md)
+[<span data-ttu-id="5c984-113">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="5c984-113">SystemParameters members</span></span>](./systemparameters-members.md)
 
-[<span data-ttu-id="f24f8-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f24f8-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5c984-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5c984-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

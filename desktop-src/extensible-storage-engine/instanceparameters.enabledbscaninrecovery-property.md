@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103829611"
 ---
-# <a name="instanceparametersenabledbscaninrecovery-property"></a><span data-ttu-id="f38b4-103">Propriedade instanceparameters. EnableDbScanInRecovery</span><span class="sxs-lookup"><span data-stu-id="f38b4-103">InstanceParameters.EnableDbScanInRecovery property</span></span>
+# <a name="instanceparametersenabledbscaninrecovery-property"></a><span data-ttu-id="47a36-103">Propriedade instanceparameters. EnableDbScanInRecovery</span><span class="sxs-lookup"><span data-stu-id="47a36-103">InstanceParameters.EnableDbScanInRecovery property</span></span>
 
-<span data-ttu-id="f38b4-104">Obtém ou define um valor que indica se a manutenção do banco de dados deve ser executada durante a recuperação.</span><span class="sxs-lookup"><span data-stu-id="f38b4-104">Gets or sets a value indicating whether Database Maintenance should run during recovery.</span></span>
+<span data-ttu-id="47a36-104">Obtém ou define um valor que indica se a manutenção do banco de dados deve ser executada durante a recuperação.</span><span class="sxs-lookup"><span data-stu-id="47a36-104">Gets or sets a value indicating whether Database Maintenance should run during recovery.</span></span>
 
-<span data-ttu-id="f38b4-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f38b4-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f38b4-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f38b4-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="47a36-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="47a36-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="47a36-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="47a36-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f38b4-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="f38b4-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="47a36-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="47a36-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.EnableDbScanInRecovery = value
 public int EnableDbScanInRecovery { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="f38b4-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="f38b4-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="47a36-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="47a36-108">Property value</span></span>
 
-<span data-ttu-id="f38b4-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="f38b4-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="47a36-109">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="47a36-109">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="f38b4-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="f38b4-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="47a36-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="47a36-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f38b4-111">Referência</span><span class="sxs-lookup"><span data-stu-id="f38b4-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="47a36-111">Referência</span><span class="sxs-lookup"><span data-stu-id="47a36-111">Reference</span></span>
 
-[<span data-ttu-id="f38b4-112">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="f38b4-112">InstanceParameters class</span></span>](./instanceparameters-class.md)
+[<span data-ttu-id="47a36-112">Classe instanceparameters</span><span class="sxs-lookup"><span data-stu-id="47a36-112">InstanceParameters class</span></span>](./instanceparameters-class.md)
 
-[<span data-ttu-id="f38b4-113">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="f38b4-113">InstanceParameters members</span></span>](./instanceparameters-members.md)
+[<span data-ttu-id="47a36-113">Membros de instanceparameters</span><span class="sxs-lookup"><span data-stu-id="47a36-113">InstanceParameters members</span></span>](./instanceparameters-members.md)
 
-[<span data-ttu-id="f38b4-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f38b4-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="47a36-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="47a36-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

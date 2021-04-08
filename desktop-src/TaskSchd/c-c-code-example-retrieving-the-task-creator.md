@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005418"
 ---
-# <a name="cc-code-example-retrieving-the-task-creator"></a><span data-ttu-id="901f5-106">Exemplo de código do C/C++: Recuperando o criador da tarefa</span><span class="sxs-lookup"><span data-stu-id="901f5-106">C/C++ Code Example: Retrieving the Task Creator</span></span>
+# <a name="cc-code-example-retrieving-the-task-creator"></a><span data-ttu-id="67ca6-106">Exemplo de código do C/C++: Recuperando o criador da tarefa</span><span class="sxs-lookup"><span data-stu-id="67ca6-106">C/C++ Code Example: Retrieving the Task Creator</span></span>
 
-<span data-ttu-id="901f5-107">Este exemplo recupera o nome do criador da tarefa e o exibe na tela.</span><span class="sxs-lookup"><span data-stu-id="901f5-107">This example retrieves the name of the creator of the task and displays it on the screen.</span></span> <span data-ttu-id="901f5-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="901f5-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
+<span data-ttu-id="67ca6-107">Este exemplo recupera o nome do criador da tarefa e o exibe na tela.</span><span class="sxs-lookup"><span data-stu-id="67ca6-107">This example retrieves the name of the creator of the task and displays it on the screen.</span></span> <span data-ttu-id="67ca6-108">Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.</span><span class="sxs-lookup"><span data-stu-id="67ca6-108">This example assumes that the task and the test task already exist on the local computer.</span></span>
 
 
 ```C++
@@ -114,11 +114,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="901f5-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="901f5-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="67ca6-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="67ca6-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="901f5-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="901f5-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="67ca6-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="67ca6-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

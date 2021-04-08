@@ -17,27 +17,27 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103915988"
 ---
-# <a name="boundary-feedback"></a><span data-ttu-id="9f41f-108">Comentários de limite</span><span class="sxs-lookup"><span data-stu-id="9f41f-108">Boundary Feedback</span></span>
+# <a name="boundary-feedback"></a><span data-ttu-id="4ec86-108">Comentários de limite</span><span class="sxs-lookup"><span data-stu-id="4ec86-108">Boundary Feedback</span></span>
 
-<span data-ttu-id="9f41f-109">Os comentários de limite indicam a um usuário que eles saíram de uma região de panorâmica.</span><span class="sxs-lookup"><span data-stu-id="9f41f-109">Boundary feedback indicates to a user that they have left a pannable region.</span></span>
+<span data-ttu-id="4ec86-109">Os comentários de limite indicam a um usuário que eles saíram de uma região de panorâmica.</span><span class="sxs-lookup"><span data-stu-id="4ec86-109">Boundary feedback indicates to a user that they have left a pannable region.</span></span>
 
-<span data-ttu-id="9f41f-110">As seções a seguir descrevem a API para comentários de limite.</span><span class="sxs-lookup"><span data-stu-id="9f41f-110">The following sections describe the API for boundary feedback.</span></span>
+<span data-ttu-id="4ec86-110">As seções a seguir descrevem a API para comentários de limite.</span><span class="sxs-lookup"><span data-stu-id="4ec86-110">The following sections describe the API for boundary feedback.</span></span>
 
 
 
-| <span data-ttu-id="9f41f-111">Seção</span><span class="sxs-lookup"><span data-stu-id="9f41f-111">Section</span></span>                                      | <span data-ttu-id="9f41f-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f41f-112">Description</span></span>                                         |
+| <span data-ttu-id="4ec86-111">Seção</span><span class="sxs-lookup"><span data-stu-id="4ec86-111">Section</span></span>                                      | <span data-ttu-id="4ec86-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="4ec86-112">Description</span></span>                                         |
 |----------------------------------------------|-----------------------------------------------------|
-| [<span data-ttu-id="9f41f-113">Funções</span><span class="sxs-lookup"><span data-stu-id="9f41f-113">Functions</span></span>](boundary-feedback-functions.md) | <span data-ttu-id="9f41f-114">Descreve as funções usadas para comentários de limite.</span><span class="sxs-lookup"><span data-stu-id="9f41f-114">Describes the functions used for boundary feedback.</span></span> |
+| [<span data-ttu-id="4ec86-113">Funções</span><span class="sxs-lookup"><span data-stu-id="4ec86-113">Functions</span></span>](boundary-feedback-functions.md) | <span data-ttu-id="4ec86-114">Descreve as funções usadas para comentários de limite.</span><span class="sxs-lookup"><span data-stu-id="4ec86-114">Describes the functions used for boundary feedback.</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="9f41f-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="9f41f-115">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4ec86-115">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4ec86-115">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9f41f-116">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="9f41f-116">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
+[<span data-ttu-id="4ec86-116">Referência de programação do Windows Touch</span><span class="sxs-lookup"><span data-stu-id="4ec86-116">Windows Touch Programming Reference</span></span>](windows-touch-programming-reference.md)
 </dt> </dl>
 
  

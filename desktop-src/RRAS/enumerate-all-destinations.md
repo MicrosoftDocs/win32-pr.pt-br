@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005572"
 ---
-# <a name="enumerate-all-destinations"></a><span data-ttu-id="beecc-103">Enumerar todos os destinos</span><span class="sxs-lookup"><span data-stu-id="beecc-103">Enumerate All Destinations</span></span>
+# <a name="enumerate-all-destinations"></a><span data-ttu-id="c3354-103">Enumerar todos os destinos</span><span class="sxs-lookup"><span data-stu-id="c3354-103">Enumerate All Destinations</span></span>
 
-<span data-ttu-id="beecc-104">O código de exemplo a seguir mostra como enumerar todos os destinos na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="beecc-104">The following sample code shows how to enumerate all destinations in the routing table.</span></span>
+<span data-ttu-id="c3354-104">O código de exemplo a seguir mostra como enumerar todos os destinos na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="c3354-104">The following sample code shows how to enumerate all destinations in the routing table.</span></span>
 
 
 ```C++
