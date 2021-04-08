@@ -1,0 +1,25 @@
+---
+description: Uma ação personalizada em uma tabela de sequência de interface do usuário ou um arquivo executável externo pode precisar do nível de interface do usuário atual da instalação.
+ms.assetid: d1ddadd5-b4ec-4c7c-aee4-b2d688a57eb4
+title: Determinando o nível da interface do usuário de uma ação personalizada
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2586cd03bfda2b22e721c0ae9c3393d4bbc525a6
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103922041"
+---
+# <a name="determining-ui-level-from-a-custom-action"></a>Determinando o nível da interface do usuário de uma ação personalizada
+
+Uma ação personalizada em uma tabela de sequência de interface do usuário ou um arquivo executável externo pode precisar do nível de interface do usuário atual da instalação. Por exemplo, uma ação personalizada que tem uma caixa de diálogo deve exibir apenas o diálogo quando o nível da interface do usuário for interface de usuários completa ou reduzida, ele não deverá exibir a caixa de diálogo se o nível da interface do usuário for Basic UI ou None. Você deve usar a propriedade [**UILevel**](uilevel.md) para determinar o nível da interface do usuário atual. Você não pode chamar [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) de uma ação personalizada e não é possível alterar a propriedade de nível da interface do usuário de dentro de uma ação personalizada.
+
+É recomendável que as ações personalizadas não usem o nível da interface do usuário como uma condição para enviar mensagens de erro ao instalador, pois isso pode interferir no registro em log e mensagens externas.
+
+ 
+
+ 
+
+
+
