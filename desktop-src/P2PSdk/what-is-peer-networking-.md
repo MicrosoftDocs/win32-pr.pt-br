@@ -1,0 +1,62 @@
+---
+description: A rede ponto a ponto é uma tecnologia de rede sem servidor que permite que vários dispositivos de rede compartilhem recursos e se comuniquem diretamente entre si.
+ms.assetid: d2a43d3b-2782-4777-8c65-05e2c52930d0
+title: O que é rede de mesmo nível?
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c456fac9b7695a2846765ee0ccd38c1e5df646e0
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103921757"
+---
+# <a name="what-is-peer-networking"></a><span data-ttu-id="b0cde-103">O que é rede de mesmo nível?</span><span class="sxs-lookup"><span data-stu-id="b0cde-103">What is Peer Networking?</span></span>
+
+<span data-ttu-id="b0cde-104">A rede ponto a ponto é uma tecnologia de rede sem servidor que permite que vários dispositivos de rede compartilhem recursos e se comuniquem diretamente entre si.</span><span class="sxs-lookup"><span data-stu-id="b0cde-104">Peer-to-peer networking is a serverless networking technology that allows several network devices to share resources and communicate directly with each other.</span></span> <span data-ttu-id="b0cde-105">Essa tecnologia está disponível para o Windows XP com Service Pack 1 (SP1) e clientes posteriores que executam o pacote de rede avançado para a infraestrutura ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="b0cde-105">This technology is available for Windows XP with Service Pack 1 (SP1) and later clients that run the Advanced Networking Pack for the Peer-to-Peer Infrastructure.</span></span>
+
+<span data-ttu-id="b0cde-106">A infraestrutura ponto a ponto é um conjunto de APIs de rede para ajudá-lo a desenvolver aplicativos de rede descentralizados que usam a potência coletiva dos computadores em uma rede.</span><span class="sxs-lookup"><span data-stu-id="b0cde-106">The Peer-to-Peer Infrastructure is a set of networking APIs to help you develop decentralized networking applications that use the collective power of computers on a network.</span></span> <span data-ttu-id="b0cde-107">Por exemplo, aplicativos ponto a ponto podem ser comunicações colaborativas, tecnologias de distribuição de conteúdo e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="b0cde-107">For example, peer-to-peer applications can be collaborative communications, content distribution technologies, and so on.</span></span>
+
+<span data-ttu-id="b0cde-108">A infraestrutura ponto a ponto fornece uma infraestrutura de rede sólida para que você possa se concentrar no desenvolvimento de aplicativos, pois a infraestrutura é desenvolvida para você.</span><span class="sxs-lookup"><span data-stu-id="b0cde-108">The Peer-to-Peer Infrastructure provides a solid networking infrastructure so that you can concentrate on developing applications, because the infrastructure is developed for you.</span></span>
+
+<span data-ttu-id="b0cde-109">A infraestrutura ponto a ponto inclui os seguintes componentes principais:</span><span class="sxs-lookup"><span data-stu-id="b0cde-109">The Peer-to-Peer Infrastructure includes the following major components:</span></span>
+
+-   [<span data-ttu-id="b0cde-110">Resolução de nome de par escalonável e seguro</span><span class="sxs-lookup"><span data-stu-id="b0cde-110">Scalable and secure peer name resolution</span></span>](#scalable-and-secure-peer-name-resolution)
+-   [<span data-ttu-id="b0cde-111">Comunicação eficiente com o MultiPoint</span><span class="sxs-lookup"><span data-stu-id="b0cde-111">Efficient multipoint communication</span></span>](#efficient-multipoint-communication)
+-   [<span data-ttu-id="b0cde-112">Gerenciamento de dados distribuídos</span><span class="sxs-lookup"><span data-stu-id="b0cde-112">Distributed data management</span></span>](#distributed-data-management)
+-   [<span data-ttu-id="b0cde-113">Identidades de pares seguros</span><span class="sxs-lookup"><span data-stu-id="b0cde-113">Secure peer identities</span></span>](#secure-peer-identities)
+-   [<span data-ttu-id="b0cde-114">Proteger grupos ponto a ponto</span><span class="sxs-lookup"><span data-stu-id="b0cde-114">Secure Peer-to-Peer groups</span></span>](#secure-peer-to-peer-groups)
+
+## <a name="scalable-and-secure-peer-name-resolution"></a><span data-ttu-id="b0cde-115">Resolução de nome de par escalonável e seguro</span><span class="sxs-lookup"><span data-stu-id="b0cde-115">Scalable and Secure Peer Name Resolution</span></span>
+
+<span data-ttu-id="b0cde-116">A [API do provedor de Namespace PNRP (Peer Name Resolution Protocol)](pnrp-namespace-provider-api.md) é um protocolo de resolução de nome para IP.</span><span class="sxs-lookup"><span data-stu-id="b0cde-116">The [Peer Name Resolution Protocol (PNRP) Namespace Provider API](pnrp-namespace-provider-api.md) is a name-to-IP resolution protocol.</span></span> <span data-ttu-id="b0cde-117">O escopo ou contexto IPv6 que inclui todos os pares participantes é chamado de [nuvem](clouds.md).</span><span class="sxs-lookup"><span data-stu-id="b0cde-117">The IPv6 scope or context that includes all participating peers is called a [cloud](clouds.md).</span></span> <span data-ttu-id="b0cde-118">O PNRP permite que os colegas interajam entre si dentro de uma nuvem.</span><span class="sxs-lookup"><span data-stu-id="b0cde-118">PNRP allows peers to interact with each other within a cloud.</span></span>
+
+## <a name="efficient-multipoint-communication"></a><span data-ttu-id="b0cde-119">Comunicação eficiente com o MultiPoint</span><span class="sxs-lookup"><span data-stu-id="b0cde-119">Efficient Multipoint Communication</span></span>
+
+<span data-ttu-id="b0cde-120">A infraestrutura ponto a ponto inclui a API de [gráfico](graphing-api.md) que fornece comunicação eficiente do MultiPoint.</span><span class="sxs-lookup"><span data-stu-id="b0cde-120">The Peer-to-Peer Infrastructure includes the [Graphing API](graphing-api.md) that provides efficient multipoint communication.</span></span> <span data-ttu-id="b0cde-121">Como o PNRP, o grafo ponto a ponto permite que um conjunto de nós interaja e passe dados entre si na forma de um [registro](records.md).</span><span class="sxs-lookup"><span data-stu-id="b0cde-121">Like PNRP, peer-to-peer graphing allows a set of nodes to interact, and pass data to and from each other in the form of a [record](records.md).</span></span> <span data-ttu-id="b0cde-122">Cada registro gerado por um par ou atualizações é enviado para todos os nós em um grafo.</span><span class="sxs-lookup"><span data-stu-id="b0cde-122">Each record that a peer generates or updates is sent to all nodes in a graph.</span></span>
+
+## <a name="distributed-data-management"></a><span data-ttu-id="b0cde-123">Gerenciamento de Dados distribuídos</span><span class="sxs-lookup"><span data-stu-id="b0cde-123">Distributed Data Management</span></span>
+
+<span data-ttu-id="b0cde-124">O gerenciamento de dados distribuídos armazena automaticamente todos os registros enviados a um grafo ponto a ponto até o tempo de expiração especificado para cada registro.</span><span class="sxs-lookup"><span data-stu-id="b0cde-124">Distributed data management automatically stores all records sent to a peer-to-peer graph until the specified expiration time for each record.</span></span> <span data-ttu-id="b0cde-125">A rede ponto a ponto garante que cada nó em um grafo ponto a ponto tenha uma exibição semelhante do banco de dados de registro.</span><span class="sxs-lookup"><span data-stu-id="b0cde-125">Peer-to-peer networking ensures that each node in a peer-to-peer graph has a similar view of the record database.</span></span> <span data-ttu-id="b0cde-126">Se um grafo ponto a ponto tiver um modelo de segurança associado a ele, o grafo conterá as seguintes informações:</span><span class="sxs-lookup"><span data-stu-id="b0cde-126">If a peer-to-peer graph has a security model associated with it, the graph contains the following information:</span></span>
+
+-   <span data-ttu-id="b0cde-127">Quem pode e não pode se conectar a um grafo</span><span class="sxs-lookup"><span data-stu-id="b0cde-127">Who can and cannot connect to a graph</span></span>
+-   <span data-ttu-id="b0cde-128">Quem pode proteger e validar registros com base em critérios definidos externamente</span><span class="sxs-lookup"><span data-stu-id="b0cde-128">Who can secure and validate records based on externally defined criteria</span></span>
+
+## <a name="secure-peer-identities"></a><span data-ttu-id="b0cde-129">Identidades de pares seguros</span><span class="sxs-lookup"><span data-stu-id="b0cde-129">Secure Peer Identities</span></span>
+
+<span data-ttu-id="b0cde-130">A infraestrutura ponto a ponto fornece uma [API do Gerenciador de identidade](identity-manager-api.md) ponto a ponto que permite criar, gerenciar e manipular as identidades de pares.</span><span class="sxs-lookup"><span data-stu-id="b0cde-130">The Peer-to-Peer Infrastructure provides a Peer-to-Peer [Identity Manager API](identity-manager-api.md) that allows you to create, manage, and manipulate the peer identities.</span></span> <span data-ttu-id="b0cde-131">As identidades de par são usadas para definir nomes para pontos de extremidade seguros em PNRP e podem representar qualquer recurso que participe de uma rede ponto a ponto, incluindo serviços e grupos ponto a ponto seguros.</span><span class="sxs-lookup"><span data-stu-id="b0cde-131">Peer identities are used to define names for secure endpoints in PNRP, and can represent any resource that participates in a peer-to-peer network, including secure peer-to-peer groups and services.</span></span>
+
+## <a name="secure-peer-to-peer-groups"></a><span data-ttu-id="b0cde-132">Proteger grupos ponto a ponto</span><span class="sxs-lookup"><span data-stu-id="b0cde-132">Secure Peer-to-Peer Groups</span></span>
+
+<span data-ttu-id="b0cde-133">A [API de agrupamento](grouping-api.md) ponto a ponto combina o grafo ponto a ponto, o Identity Manager e as APIs do PNRP para formar uma solução coesa e conveniente para o desenvolvimento de aplicativos de rede ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="b0cde-133">The Peer-to-Peer [Grouping API](grouping-api.md) combines the Peer-to-Peer Graphing, Identity Manager, and PNRP APIs to form a cohesive and convenient solution for peer-to-peer networking application development.</span></span> <span data-ttu-id="b0cde-134">A API de agrupamento ponto a ponto usa a API do Gerenciador de identidade ponto a ponto e um esquema de certificado autoassinado para garantir a segurança na infraestrutura de gráfico.</span><span class="sxs-lookup"><span data-stu-id="b0cde-134">The Peer-to-Peer Grouping API uses the Peer-to-Peer Identity Manager API and a self-signed certificate scheme to ensure security within the graphing infrastructure.</span></span> <span data-ttu-id="b0cde-135">Cada grupo pode ser resolvido e registrado por meio de PNRP, o que permite a resolução de nomes de pares aleatórios em um grupo de ponto a ponto registrado.</span><span class="sxs-lookup"><span data-stu-id="b0cde-135">Each group can be resolved and registered through PNRP, which allows for the name resolution of random peers within a registered peer-to-peer group.</span></span> <span data-ttu-id="b0cde-136">Um grupo pode ser um ponto de extremidade em PNRP, assim como um par.</span><span class="sxs-lookup"><span data-stu-id="b0cde-136">A group can be an endpoint in PNRP, just like a peer.</span></span>
+
+<span data-ttu-id="b0cde-137">Para obter uma visão geral da infraestrutura ponto a ponto, consulte o artigo "[introdução à rede ponto a ponto do Windows XP](https://www.microsoft.com/windowsxp/pro/techinfo/administration/p2p/introduction.asp)".</span><span class="sxs-lookup"><span data-stu-id="b0cde-137">For an overview of the Peer-to-Peer Infrastructure, see the article "[Introduction to Windows XP Peer-to-Peer Networking](https://www.microsoft.com/windowsxp/pro/techinfo/administration/p2p/introduction.asp)".</span></span>
+
+<span data-ttu-id="b0cde-138">Para obter uma visão geral das APIs na infraestrutura ponto a ponto, consulte o tópico [o que é a infraestrutura de mesmo nível?](what-is-the-peer-infrastructure-.md).</span><span class="sxs-lookup"><span data-stu-id="b0cde-138">For an overview of the APIs in the Peer-to-Peer Infrastructure, see the topic [What is the Peer Infrastructure?](what-is-the-peer-infrastructure-.md).</span></span>
+
+ 
+
+ 
+
+
+
