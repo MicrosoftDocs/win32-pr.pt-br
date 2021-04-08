@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005016"
 ---
-# <a name="win32_tsenvironmentsetting-methods"></a><span data-ttu-id="1d868-103">\_Métodos TSEnvironmentSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="1d868-103">Win32\_TSEnvironmentSetting Methods</span></span>
+# <a name="win32_tsenvironmentsetting-methods"></a><span data-ttu-id="59d47-103">\_Métodos TSEnvironmentSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="59d47-103">Win32\_TSEnvironmentSetting Methods</span></span>
 
-<span data-ttu-id="1d868-104">A classe [**Win32 \_ TSEnvironmentSetting**](win32-tsenvironmentsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="1d868-104">The [**Win32\_TSEnvironmentSetting**](win32-tsenvironmentsetting.md) class exposes the following methods.</span></span>
+<span data-ttu-id="59d47-104">A classe [**Win32 \_ TSEnvironmentSetting**](win32-tsenvironmentsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="59d47-104">The [**Win32\_TSEnvironmentSetting**](win32-tsenvironmentsetting.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="1d868-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="1d868-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="59d47-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="59d47-105">In this section</span></span>
 
--   [<span data-ttu-id="1d868-106">**Método InitialProgram**</span><span class="sxs-lookup"><span data-stu-id="1d868-106">**InitialProgram method**</span></span>](win32-tsenvironmentsetting-initialprogram.md)
--   [<span data-ttu-id="1d868-107">**Método SetClientWallPaper**</span><span class="sxs-lookup"><span data-stu-id="1d868-107">**SetClientWallPaper method**</span></span>](win32-tsenvironmentsetting-setclientwallpaper.md)
+-   [<span data-ttu-id="59d47-106">**Método InitialProgram**</span><span class="sxs-lookup"><span data-stu-id="59d47-106">**InitialProgram method**</span></span>](win32-tsenvironmentsetting-initialprogram.md)
+-   [<span data-ttu-id="59d47-107">**Método SetClientWallPaper**</span><span class="sxs-lookup"><span data-stu-id="59d47-107">**SetClientWallPaper method**</span></span>](win32-tsenvironmentsetting-setclientwallpaper.md)
 
  
 

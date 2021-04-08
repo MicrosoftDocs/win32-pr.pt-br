@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004999"
 ---
-# <a name="recording-waveform-audio"></a><span data-ttu-id="1619f-106">Gravando áudio de onda</span><span class="sxs-lookup"><span data-stu-id="1619f-106">Recording Waveform Audio</span></span>
+# <a name="recording-waveform-audio"></a><span data-ttu-id="5166e-106">Gravando áudio de onda</span><span class="sxs-lookup"><span data-stu-id="5166e-106">Recording Waveform Audio</span></span>
 
-<span data-ttu-id="1619f-107">Os tópicos a seguir descrevem como usar a interface de áudio de forma de onda para gravar áudio.</span><span class="sxs-lookup"><span data-stu-id="1619f-107">The following topics describe how to use the waveform-audio interface to record audio.</span></span>
+<span data-ttu-id="5166e-107">Os tópicos a seguir descrevem como usar a interface de áudio de forma de onda para gravar áudio.</span><span class="sxs-lookup"><span data-stu-id="5166e-107">The following topics describe how to use the waveform-audio interface to record audio.</span></span>
 
--   [<span data-ttu-id="1619f-108">Wave-tipos de dados de entrada de áudio</span><span class="sxs-lookup"><span data-stu-id="1619f-108">Waveform-Audio Input Data Types</span></span>](waveform-audio-input-data-types.md)
--   [<span data-ttu-id="1619f-109">Consultando Waveform-Audio dispositivos de entrada</span><span class="sxs-lookup"><span data-stu-id="1619f-109">Querying Waveform-Audio Input Devices</span></span>](querying-waveform-audio-input-devices.md)
--   [<span data-ttu-id="1619f-110">Abrindo Waveform-Audio dispositivos de entrada</span><span class="sxs-lookup"><span data-stu-id="1619f-110">Opening Waveform-Audio Input Devices</span></span>](opening-waveform-audio-input-devices.md)
--   [<span data-ttu-id="1619f-111">Gerenciando a gravação de Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="1619f-111">Managing Waveform-Audio Recording</span></span>](managing-waveform-audio-recording.md)
--   [<span data-ttu-id="1619f-112">Usando mensagens de janela para gerenciar a gravação de Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="1619f-112">Using Window Messages to Manage Waveform-Audio Recording</span></span>](using-window-messages-to-manage-waveform-audio-recording.md)
+-   [<span data-ttu-id="5166e-108">Wave-tipos de dados de entrada de áudio</span><span class="sxs-lookup"><span data-stu-id="5166e-108">Waveform-Audio Input Data Types</span></span>](waveform-audio-input-data-types.md)
+-   [<span data-ttu-id="5166e-109">Consultando Waveform-Audio dispositivos de entrada</span><span class="sxs-lookup"><span data-stu-id="5166e-109">Querying Waveform-Audio Input Devices</span></span>](querying-waveform-audio-input-devices.md)
+-   [<span data-ttu-id="5166e-110">Abrindo Waveform-Audio dispositivos de entrada</span><span class="sxs-lookup"><span data-stu-id="5166e-110">Opening Waveform-Audio Input Devices</span></span>](opening-waveform-audio-input-devices.md)
+-   [<span data-ttu-id="5166e-111">Gerenciando a gravação de Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="5166e-111">Managing Waveform-Audio Recording</span></span>](managing-waveform-audio-recording.md)
+-   [<span data-ttu-id="5166e-112">Usando mensagens de janela para gerenciar a gravação de Waveform-Audio</span><span class="sxs-lookup"><span data-stu-id="5166e-112">Using Window Messages to Manage Waveform-Audio Recording</span></span>](using-window-messages-to-manage-waveform-audio-recording.md)
 
  
 

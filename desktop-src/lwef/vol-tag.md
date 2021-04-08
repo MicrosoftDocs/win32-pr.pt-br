@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005072"
 ---
-# <a name="vol-tag"></a><span data-ttu-id="f4f4c-103">Marca de Vol.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-103">Vol Tag</span></span>
+# <a name="vol-tag"></a><span data-ttu-id="53d30-103">Marca de Vol.</span><span class="sxs-lookup"><span data-stu-id="53d30-103">Vol Tag</span></span>
 
-<span data-ttu-id="f4f4c-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="f4f4c-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="53d30-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="53d30-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="f4f4c-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="f4f4c-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
+<span data-ttu-id="53d30-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**</span><span class="sxs-lookup"><span data-stu-id="53d30-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f4f4c-106">Define o volume de fala de linha de base da saída de fala.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-106">Sets the baseline speaking volume of the speech output.</span></span>
+<span data-ttu-id="53d30-106">Define o volume de fala de linha de base da saída de fala.</span><span class="sxs-lookup"><span data-stu-id="53d30-106">Sets the baseline speaking volume of the speech output.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="f4f4c-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="f4f4c-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
+<span data-ttu-id="53d30-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**</span><span class="sxs-lookup"><span data-stu-id="53d30-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f4f4c-108">**\\Vol =***número***\\**</span><span class="sxs-lookup"><span data-stu-id="f4f4c-108">**\\Vol=***number***\\**</span></span>
+<span data-ttu-id="53d30-108">**\\Vol =***número***\\**</span><span class="sxs-lookup"><span data-stu-id="53d30-108">**\\Vol=***number***\\**</span></span>
 
 
 
-| <span data-ttu-id="f4f4c-109">Parte</span><span class="sxs-lookup"><span data-stu-id="f4f4c-109">Part</span></span>     | <span data-ttu-id="f4f4c-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f4f4c-110">Description</span></span>                                                         |
+| <span data-ttu-id="53d30-109">Parte</span><span class="sxs-lookup"><span data-stu-id="53d30-109">Part</span></span>     | <span data-ttu-id="53d30-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="53d30-110">Description</span></span>                                                         |
 |----------|---------------------------------------------------------------------|
-| <span data-ttu-id="f4f4c-111">*number*</span><span class="sxs-lookup"><span data-stu-id="f4f4c-111">*number*</span></span> | <span data-ttu-id="f4f4c-112">Volume de fala de linha de base: 0 é silêncio e 65535 é o volume máximo.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-112">Baseline speaking volume: 0 is silence and 65535 is maximum volume.</span></span> |
+| <span data-ttu-id="53d30-111">*number*</span><span class="sxs-lookup"><span data-stu-id="53d30-111">*number*</span></span> | <span data-ttu-id="53d30-112">Volume de fala de linha de base: 0 é silêncio e 65535 é o volume máximo.</span><span class="sxs-lookup"><span data-stu-id="53d30-112">Baseline speaking volume: 0 is silence and 65535 is maximum volume.</span></span> |
 
 
 
@@ -41,9 +41,9 @@ ms.locfileid: "104005072"
 
 </dd> </dl>
 
-### <a name="remarks"></a><span data-ttu-id="f4f4c-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="f4f4c-113">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="53d30-113">Comentários</span><span class="sxs-lookup"><span data-stu-id="53d30-113">Remarks</span></span>
 
-<span data-ttu-id="f4f4c-114">A configuração de volume afeta os canais esquerdo e direito.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-114">The volume setting affects both left and right channels.</span></span> <span data-ttu-id="f4f4c-115">Você não pode definir o volume de cada canal separadamente.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-115">You cannot set the volume of each channel separately.</span></span> <span data-ttu-id="f4f4c-116">Essa marca só tem suporte para a saída gerada por TTS.</span><span class="sxs-lookup"><span data-stu-id="f4f4c-116">This tag is supported only for TTS-generated output.</span></span>
+<span data-ttu-id="53d30-114">A configuração de volume afeta os canais esquerdo e direito.</span><span class="sxs-lookup"><span data-stu-id="53d30-114">The volume setting affects both left and right channels.</span></span> <span data-ttu-id="53d30-115">Você não pode definir o volume de cada canal separadamente.</span><span class="sxs-lookup"><span data-stu-id="53d30-115">You cannot set the volume of each channel separately.</span></span> <span data-ttu-id="53d30-116">Essa marca só tem suporte para a saída gerada por TTS.</span><span class="sxs-lookup"><span data-stu-id="53d30-116">This tag is supported only for TTS-generated output.</span></span>
 
  
 

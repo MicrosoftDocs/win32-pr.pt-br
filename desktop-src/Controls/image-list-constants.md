@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005090"
 ---
-# <a name="image-list-constants"></a><span data-ttu-id="c60b7-103">Constantes da lista de imagens</span><span class="sxs-lookup"><span data-stu-id="c60b7-103">Image List Constants</span></span>
+# <a name="image-list-constants"></a><span data-ttu-id="8cf84-103">Constantes da lista de imagens</span><span class="sxs-lookup"><span data-stu-id="8cf84-103">Image List Constants</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="c60b7-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c60b7-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8cf84-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="8cf84-104">In This Section</span></span>
 
--   [<span data-ttu-id="c60b7-105">**Sinalizadores de criação da lista de imagens**</span><span class="sxs-lookup"><span data-stu-id="c60b7-105">**Image List Creation Flags**</span></span>](ilc-constants.md)
+-   [<span data-ttu-id="8cf84-105">**Sinalizadores de criação da lista de imagens**</span><span class="sxs-lookup"><span data-stu-id="8cf84-105">**Image List Creation Flags**</span></span>](ilc-constants.md)
 
  
 

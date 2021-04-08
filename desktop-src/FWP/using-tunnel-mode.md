@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005019"
 ---
-# <a name="using-tunnel-mode"></a><span data-ttu-id="cf14f-103">Usando o modo de túnel</span><span class="sxs-lookup"><span data-stu-id="cf14f-103">Using Tunnel Mode</span></span>
+# <a name="using-tunnel-mode"></a><span data-ttu-id="a3689-103">Usando o modo de túnel</span><span class="sxs-lookup"><span data-stu-id="a3689-103">Using Tunnel Mode</span></span>
 
-<span data-ttu-id="cf14f-104">O código de exemplo a seguir demonstra como configurar um túnel IPsec ponto a ponto usando a API da Windows Filtering Platform (WFP).</span><span class="sxs-lookup"><span data-stu-id="cf14f-104">The following sample code demonstrates how to configure a point-to-point IPsec tunnel using the Windows Filtering Platform (WFP) API.</span></span>
+<span data-ttu-id="a3689-104">O código de exemplo a seguir demonstra como configurar um túnel IPsec ponto a ponto usando a API da Windows Filtering Platform (WFP).</span><span class="sxs-lookup"><span data-stu-id="a3689-104">The following sample code demonstrates how to configure a point-to-point IPsec tunnel using the Windows Filtering Platform (WFP) API.</span></span>
 
 
 ```C++

@@ -12,17 +12,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005066"
 ---
-# <a name="validated-writes"></a><span data-ttu-id="d6396-103">Gravações validadas</span><span class="sxs-lookup"><span data-stu-id="d6396-103">Validated Writes</span></span>
+# <a name="validated-writes"></a><span data-ttu-id="39d54-103">Gravações validadas</span><span class="sxs-lookup"><span data-stu-id="39d54-103">Validated Writes</span></span>
 
-<span data-ttu-id="d6396-104">As seguintes gravações validadas são definidas por Active Directory.</span><span class="sxs-lookup"><span data-stu-id="d6396-104">The following validated writes are defined by Active Directory.</span></span>
+<span data-ttu-id="39d54-104">As seguintes gravações validadas são definidas por Active Directory.</span><span class="sxs-lookup"><span data-stu-id="39d54-104">The following validated writes are defined by Active Directory.</span></span>
 
 <dl>
 
-[<span data-ttu-id="d6396-105">**Associação automática**</span><span class="sxs-lookup"><span data-stu-id="d6396-105">**Self-Membership**</span></span>](r-self-membership.md)  
-[<span data-ttu-id="d6396-106">**Validado-DNS-nome-do-host**</span><span class="sxs-lookup"><span data-stu-id="d6396-106">**Validated-DNS-Host-Name**</span></span>](r-validated-dns-host-name.md)  
-[<span data-ttu-id="d6396-107">**Validado-MS-DS-adicional-DNS-Host-Name**</span><span class="sxs-lookup"><span data-stu-id="d6396-107">**Validated-MS-DS-Additional-DNS-Host-Name**</span></span>](r-validated-ms-ds-additional-dns-host-name.md)  
-[<span data-ttu-id="d6396-108">**Validado-MS-DS-Behavior-versão**</span><span class="sxs-lookup"><span data-stu-id="d6396-108">**Validated-MS-DS-Behavior-Version**</span></span>](r-validated-ms-ds-behavior-version.md)  
-[<span data-ttu-id="d6396-109">**Validado-SPN**</span><span class="sxs-lookup"><span data-stu-id="d6396-109">**Validated-SPN**</span></span>](r-validated-spn.md)  
+[<span data-ttu-id="39d54-105">**Associação automática**</span><span class="sxs-lookup"><span data-stu-id="39d54-105">**Self-Membership**</span></span>](r-self-membership.md)  
+[<span data-ttu-id="39d54-106">**Validado-DNS-nome-do-host**</span><span class="sxs-lookup"><span data-stu-id="39d54-106">**Validated-DNS-Host-Name**</span></span>](r-validated-dns-host-name.md)  
+[<span data-ttu-id="39d54-107">**Validado-MS-DS-adicional-DNS-Host-Name**</span><span class="sxs-lookup"><span data-stu-id="39d54-107">**Validated-MS-DS-Additional-DNS-Host-Name**</span></span>](r-validated-ms-ds-additional-dns-host-name.md)  
+[<span data-ttu-id="39d54-108">**Validado-MS-DS-Behavior-versão**</span><span class="sxs-lookup"><span data-stu-id="39d54-108">**Validated-MS-DS-Behavior-Version**</span></span>](r-validated-ms-ds-behavior-version.md)  
+[<span data-ttu-id="39d54-109">**Validado-SPN**</span><span class="sxs-lookup"><span data-stu-id="39d54-109">**Validated-SPN**</span></span>](r-validated-spn.md)  
 </dl>
 
  
