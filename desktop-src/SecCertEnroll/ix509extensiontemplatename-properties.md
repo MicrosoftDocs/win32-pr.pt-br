@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "103828952"
 ---
-# <a name="ix509extensiontemplatename-properties"></a><span data-ttu-id="d66b2-103">Propriedades de IX509ExtensionTemplateName</span><span class="sxs-lookup"><span data-stu-id="d66b2-103">IX509ExtensionTemplateName Properties</span></span>
+# <a name="ix509extensiontemplatename-properties"></a><span data-ttu-id="6b941-103">Propriedades de IX509ExtensionTemplateName</span><span class="sxs-lookup"><span data-stu-id="6b941-103">IX509ExtensionTemplateName Properties</span></span>
 
-<span data-ttu-id="d66b2-104">A interface [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="d66b2-104">The [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) interface exposes the following properties.</span></span>
+<span data-ttu-id="6b941-104">A interface [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b941-104">The [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="d66b2-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="d66b2-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6b941-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6b941-105">In this section</span></span>
 
--   [<span data-ttu-id="d66b2-106">**Propriedade TemplateName**</span><span class="sxs-lookup"><span data-stu-id="d66b2-106">**TemplateName Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplatename-get_templatename)
+-   [<span data-ttu-id="6b941-106">**Propriedade TemplateName**</span><span class="sxs-lookup"><span data-stu-id="6b941-106">**TemplateName Property**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensiontemplatename-get_templatename)
 
  
 

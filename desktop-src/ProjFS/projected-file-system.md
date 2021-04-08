@@ -1,0 +1,36 @@
+---
+title: Sistema de arquivos projetado pelo Windows
+description: Visão geral do sistema de arquivos projetado do Windows (ProjFS)
+ms.assetid: <GUID-GOES-HERE>
+ms.date: 09/14/2018
+ms.topic: article
+ms.openlocfilehash: 8391ec63f23c9ebae5b47e4cac862f6ab3079ceb
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103823808"
+---
+# <a name="windows-projected-file-system-projfs"></a><span data-ttu-id="f1709-103">Sistema de arquivos projetado do Windows (ProjFS)</span><span class="sxs-lookup"><span data-stu-id="f1709-103">Windows Projected File System (ProjFS)</span></span>
+
+<span data-ttu-id="f1709-104">O sistema de arquivos projetado do Windows (ProjFS) permite que um aplicativo de modo de usuário chamado "provedor" faça o projeto de dados hierárquicos de um armazenamento de dados de backup no sistema de arquivos, fazendo com que ele apareça como arquivos e diretórios no sistema de arquivos.</span><span class="sxs-lookup"><span data-stu-id="f1709-104">The Windows Projected File System (ProjFS) allows a user-mode application called a "provider" to project hierarchical data from a backing data store into the file system, making it appear as files and directories in the file system.</span></span> <span data-ttu-id="f1709-105">Por exemplo, um provedor simples pode projetar o registro do Windows no sistema de arquivos, fazendo com que as chaves e os valores do registro apareçam como arquivos e diretórios, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="f1709-105">For example, a simple provider could project the Windows registry into the file system, making registry keys and values appear as files and directories, respectively.</span></span> <span data-ttu-id="f1709-106">Um exemplo de um provedor mais complexo é o [VFS para git](https://github.com/Microsoft/VFSForGit), que é usado para virtualizar repositórios git muito grande.</span><span class="sxs-lookup"><span data-stu-id="f1709-106">An example of a more complex provider is [VFS for Git](https://github.com/Microsoft/VFSForGit), which is used to virtualize very large git repos.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f1709-107">O ProjFS foi projetado para uso com armazenamentos de dados de backup de alta velocidade.</span><span class="sxs-lookup"><span data-stu-id="f1709-107">ProjFS is designed for use with high-speed backing data stores.</span></span> <span data-ttu-id="f1709-108">Uma de suas metas de design é fazer com que os dados projetados apareçam como se estivessem presentes localmente, ocultando o fato de que os dados podem ser remotos.</span><span class="sxs-lookup"><span data-stu-id="f1709-108">One of its design goals is to make the projected data appear as if it were locally present, hiding the fact that the data may be remote.</span></span> <span data-ttu-id="f1709-109">Como tal, o ProjFS não fornece: mecanismos para relatar o progresso da recuperação de dados; indicação do estado online versus offline de um arquivo; nem outros recursos que podem ser desejáveis ao trabalhar com armazenamentos de dados de backup lentos.</span><span class="sxs-lookup"><span data-stu-id="f1709-109">As such, ProjFS doesn't provide: mechanisms for reporting progress of data recall; indication of the online versus offline state of a file; nor other features that may be desirable when working with backing data stores that are slow.</span></span> <span data-ttu-id="f1709-110">Para esses cenários, considere usar a [API de arquivos de nuvem](../cfapi/cloud-files-api-portal.md).</span><span class="sxs-lookup"><span data-stu-id="f1709-110">For such scenarios, consider instead using the [Cloud Files API](../cfapi/cloud-files-api-portal.md).</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="f1709-111">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f1709-111">In this section</span></span>
+
+| <span data-ttu-id="f1709-112">Tópico</span><span class="sxs-lookup"><span data-stu-id="f1709-112">Topic</span></span>                                                                                                       | <span data-ttu-id="f1709-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="f1709-113">Description</span></span> |
+|-------------------------------------------------------------------------------------------------------------|-------------|
+| [<span data-ttu-id="f1709-114">Guia de programação do sistema de arquivos projetado pelo Windows</span><span class="sxs-lookup"><span data-stu-id="f1709-114">Windows Projected File System Programming Guide</span></span>](projfs-programming-guide.md)                              | <span data-ttu-id="f1709-115">Informações conceituais sobre como implementar um aplicativo de provedor ProjFS.</span><span class="sxs-lookup"><span data-stu-id="f1709-115">Conceptual information on implementing a ProjFS provider application.</span></span>
+| [<span data-ttu-id="f1709-116">Referência da API do sistema de arquivos projetadas do Windows</span><span class="sxs-lookup"><span data-stu-id="f1709-116">Windows Projected File System API Reference</span></span>](projfs-reference.md)                                          | <span data-ttu-id="f1709-117">Informações de referência para a interface de programação ProjFS.</span><span class="sxs-lookup"><span data-stu-id="f1709-117">Reference information for the ProjFS programming interface.</span></span>
+| [<span data-ttu-id="f1709-118">Glossário do sistema de arquivos projetado do Windows</span><span class="sxs-lookup"><span data-stu-id="f1709-118">Windows Projected File System glossary</span></span>](projfs-glossary.md)                                                | <span data-ttu-id="f1709-119">Termos especiais usados em ProjFS.</span><span class="sxs-lookup"><span data-stu-id="f1709-119">Special terms used in ProjFS.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="f1709-120">Recursos adicionais</span><span class="sxs-lookup"><span data-stu-id="f1709-120">Additional Resources</span></span>
+
+|                                                                                                              |                                                                                   |
+|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [<span data-ttu-id="f1709-121">Exemplo de RegFS</span><span class="sxs-lookup"><span data-stu-id="f1709-121">RegFS Sample</span></span>](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | <span data-ttu-id="f1709-122">Um provedor de ProjFS de exemplo que projeta o registro do Windows no sistema de arquivos.</span><span class="sxs-lookup"><span data-stu-id="f1709-122">A sample ProjFS provider that projects the Windows registry into the file system.</span></span> |
+<!--
+| [ProjFS.Managed API](https://github.com/Microsoft/URL_TBD)                                                   | A .NET wrapper for the ProjFS API.                                                |
+-->
