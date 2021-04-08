@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004926"
 ---
-# <a name="example-code-for-creating-a-user"></a><span data-ttu-id="02a9b-104">Exemplo de código para criar um usuário</span><span class="sxs-lookup"><span data-stu-id="02a9b-104">Example Code for Creating a User</span></span>
+# <a name="example-code-for-creating-a-user"></a><span data-ttu-id="0cb56-104">Exemplo de código para criar um usuário</span><span class="sxs-lookup"><span data-stu-id="0cb56-104">Example Code for Creating a User</span></span>
 
-<span data-ttu-id="02a9b-105">Este tópico inclui exemplos de código que criam um usuário em um domínio controlado por Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="02a9b-105">This topic includes code examples that create a user in a domain controlled by Active Directory Domain Services.</span></span>
+<span data-ttu-id="0cb56-105">Este tópico inclui exemplos de código que criam um usuário em um domínio controlado por Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="0cb56-105">This topic includes code examples that create a user in a domain controlled by Active Directory Domain Services.</span></span>
 
 
 ```VB
