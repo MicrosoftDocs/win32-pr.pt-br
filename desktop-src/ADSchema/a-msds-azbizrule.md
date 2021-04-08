@@ -36,7 +36,7 @@ Texto do script que implementa a regra de negócio.
 | Frequência de atualização  | Durante a inicialização ou a alteração da política.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1801                     |
 | System-ID-GUID    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

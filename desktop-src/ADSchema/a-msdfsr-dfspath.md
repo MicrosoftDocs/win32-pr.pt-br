@@ -36,7 +36,7 @@ Contém o caminho completo do link Sistema de Arquivos Distribuído (DFS) associ
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.21                  |
 | System-ID-GUID    | 2cc903e2-398c-443b-ac86-ff6b01eac7ba        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

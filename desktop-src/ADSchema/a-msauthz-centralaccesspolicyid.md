@@ -36,7 +36,7 @@ Para uma política de acesso central, esse atributo define um GUID que pode ser 
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2154              |
 | System-ID-GUID    | 62f29b60-be74-4630-9456-2f6691993a86 |
-| Sintaxe            | [**Cadeia de caracteres (SID)**](s-string-sid.md)  |
+| Syntax            | [**Cadeia de caracteres (SID)**](s-string-sid.md)  |
 
 
 
