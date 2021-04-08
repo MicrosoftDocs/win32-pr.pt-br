@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004930"
 ---
-# <a name="example-code-for-changing-the-scope-of-a-group"></a><span data-ttu-id="44fb5-104">Exemplo de código para alterar o escopo de um grupo</span><span class="sxs-lookup"><span data-stu-id="44fb5-104">Example Code for Changing the Scope of a Group</span></span>
+# <a name="example-code-for-changing-the-scope-of-a-group"></a><span data-ttu-id="43052-104">Exemplo de código para alterar o escopo de um grupo</span><span class="sxs-lookup"><span data-stu-id="43052-104">Example Code for Changing the Scope of a Group</span></span>
 
-<span data-ttu-id="44fb5-105">O exemplo de código C++ a seguir altera o escopo de um grupo.</span><span class="sxs-lookup"><span data-stu-id="44fb5-105">The following C++ code example changes the scope of a group.</span></span>
+<span data-ttu-id="43052-105">O exemplo de código C++ a seguir altera o escopo de um grupo.</span><span class="sxs-lookup"><span data-stu-id="43052-105">The following C++ code example changes the scope of a group.</span></span>
 
 
 ```C++
@@ -54,7 +54,7 @@ ms.locfileid: "104004930"
 
 
 
-<span data-ttu-id="44fb5-106">O exemplo de código a seguir Visual Basic altera o escopo de um grupo.</span><span class="sxs-lookup"><span data-stu-id="44fb5-106">The following Visual Basic code example changes the scope of a group.</span></span>
+<span data-ttu-id="43052-106">O exemplo de código a seguir Visual Basic altera o escopo de um grupo.</span><span class="sxs-lookup"><span data-stu-id="43052-106">The following Visual Basic code example changes the scope of a group.</span></span>
 
 
 ```VB

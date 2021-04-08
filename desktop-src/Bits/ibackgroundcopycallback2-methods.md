@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005028"
 ---
-# <a name="ibackgroundcopycallback2-methods"></a><span data-ttu-id="f129f-103">Métodos IBackgroundCopyCallback2</span><span class="sxs-lookup"><span data-stu-id="f129f-103">IBackgroundCopyCallback2 Methods</span></span>
+# <a name="ibackgroundcopycallback2-methods"></a><span data-ttu-id="ae20f-103">Métodos IBackgroundCopyCallback2</span><span class="sxs-lookup"><span data-stu-id="ae20f-103">IBackgroundCopyCallback2 Methods</span></span>
 
-<span data-ttu-id="f129f-104">A interface [**IBackgroundCopyCallback2**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopycallback2) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="f129f-104">The [**IBackgroundCopyCallback2**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopycallback2) interface exposes the following methods.</span></span>
+<span data-ttu-id="ae20f-104">A interface [**IBackgroundCopyCallback2**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopycallback2) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="ae20f-104">The [**IBackgroundCopyCallback2**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopycallback2) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="f129f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f129f-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="ae20f-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="ae20f-105">In this section</span></span>
 
--   [<span data-ttu-id="f129f-106">**Método transferida**</span><span class="sxs-lookup"><span data-stu-id="f129f-106">**FileTransferred Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopycallback2-filetransferred)
+-   [<span data-ttu-id="ae20f-106">**Método transferida**</span><span class="sxs-lookup"><span data-stu-id="ae20f-106">**FileTransferred Method**</span></span>](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopycallback2-filetransferred)
 
  
 
