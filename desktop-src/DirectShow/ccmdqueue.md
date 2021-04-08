@@ -61,7 +61,7 @@ Em todos os casos, os comandos permanecem na fila até que sejam chamados ou can
 | [**Inserido**](ccmdqueue-insert.md)                     | Adiciona o objeto [**CDeferredCommand**](cdeferredcommand.md) à fila.                             |
 | [**Novo**](ccmdqueue-new.md)                           | Inicializa um comando a ser executado e retorna um novo objeto [**CDeferredCommand**](cdeferredcommand.md) . |
 | [**Remover**](ccmdqueue-remove.md)                     | Remove o objeto [**CDeferredCommand**](cdeferredcommand.md) da fila.                        |
-| [**Funcionam**](ccmdqueue-run.md)                           | Alterna para o modo de execução.                                                                              |
+| [**Executar**](ccmdqueue-run.md)                           | Alterna para o modo de execução.                                                                              |
 | [**Setsynce**](ccmdqueue-setsyncsource.md)       | Define o relógio usado para o tempo.                                                                        |
 | [**SetTimeAdvise**](ccmdqueue-settimeadvise.md)       | Configura um evento de temporizador com o relógio de referência.                                                        |
 

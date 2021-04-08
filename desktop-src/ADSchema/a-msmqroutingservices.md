@@ -36,7 +36,7 @@ Indica se o MSMQ instalado neste computador fornece serviços de roteamento MSMQ
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1227              |
 | System-ID-GUID    | 2df90d77-009f-11d2-aa4c-00c04fd7d83a |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

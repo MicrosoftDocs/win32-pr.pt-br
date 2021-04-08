@@ -36,7 +36,7 @@ Data de validade da quarta CAL de TS por usuário.
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.2006                                       |
 | System-ID-GUID    | 5e11dc43-204a-4faf-a008-6863621c6f5f                          |
-| Sintaxe            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 

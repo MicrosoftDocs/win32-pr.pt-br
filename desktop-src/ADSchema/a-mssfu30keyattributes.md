@@ -36,7 +36,7 @@ Contém os nomes dos atributos que o servidor NIS usa como chaves para um mapa d
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.301                 |
 | System-ID-GUID    | 32ecd698-ce9e-4894-a134-7ad76b082e83        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

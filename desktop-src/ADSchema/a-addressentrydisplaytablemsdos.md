@@ -36,7 +36,7 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.400                                |
 | System-ID-GUID    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

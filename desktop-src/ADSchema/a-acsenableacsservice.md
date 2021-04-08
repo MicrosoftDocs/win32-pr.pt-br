@@ -36,7 +36,7 @@ True se o serviço do ACS for habilitado.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.770               |
 | System-ID-GUID    | 7f561287-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

@@ -36,7 +36,7 @@ Parâmetros para o algoritmo de derivação de chave.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2170                               |
 | System-ID-GUID    | 8a800772-f4b8-154f-b41c-2e4271eff7a7                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
