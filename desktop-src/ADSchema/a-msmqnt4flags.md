@@ -36,7 +36,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.964               |
 | System-ID-GUID    | eb38a158-d57f-11d1-90a2-00c04fd91ab1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

@@ -36,7 +36,7 @@ A última data em que esse objeto foi alterado.
 | Frequência de atualização  | \-                                                |
 | Attribute-Id      | 1.2.840.113556.1.4.1624                           |
 | System-ID-GUID    | f9cdf7a0-ec44-4937-a79b-cd91522b3aa8              |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)       |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)       |
 
 
 

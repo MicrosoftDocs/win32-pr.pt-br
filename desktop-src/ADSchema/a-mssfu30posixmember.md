@@ -36,7 +36,7 @@ Contém o nome de exibição do DN da parte do usuário de um grupo.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.346             |
 | System-ID-GUID    | c875d82d-2848-4cec-bb50-3c5486d09d57    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

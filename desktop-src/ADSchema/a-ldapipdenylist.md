@@ -36,7 +36,7 @@ Mantém uma lista de endereços IP binários que têm acesso negado a um servido
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.844                                |
 | System-ID-GUID    | 7359a353-90f7-11d1-aebc-0000f80367c1                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
