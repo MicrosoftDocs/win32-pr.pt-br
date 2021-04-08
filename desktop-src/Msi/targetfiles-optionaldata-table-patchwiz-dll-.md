@@ -1,0 +1,99 @@
+---
+description: A \_ tabela TargetFiles OptionalData contém informações sobre arquivos específicos em uma imagem de destino. Essa tabela é opcional no banco de dados de criação de patches (arquivo. PCP) e é usada pela função UiCreatePatchPackageEx.
+ms.assetid: 577b1674-1e44-42e1-b011-c0fb561b514c
+title: Tabela de TargetFiles_OptionalData (Patchwiz.dll)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 859ac2e03f68c28eff5ebf7f5afa2bf53ab69299
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103922129"
+---
+# <a name="targetfiles_optionaldata-table-patchwizdll"></a>\_Tabela TargetFiles OptionalData (Patchwiz.dll)
+
+A \_ tabela TargetFiles OptionalData contém informações sobre arquivos específicos em uma imagem de destino. Essa tabela é opcional no banco de dados de criação de patches (arquivo. PCP) e é usada pela função [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) .
+
+A \_ tabela TargetFiles OptionalData tem as colunas a seguir.
+
+
+
+| Coluna        | Tipo | Chave | Nullable |
+|---------------|------|-----|----------|
+| Destino        | text | S   | N        |
+| FTK           | text | S   | N        |
+| SymbolPaths   | text |     | S        |
+| IgnoreOffsets | text |     | S        |
+| IgnoreLengths | text |     | S        |
+| RetainOffsets | text |     | S        |
+
+
+
+ 
+
+## <a name="columns"></a>Colunas
+
+<dl> <dt>
+
+<span id="Target"></span><span id="target"></span><span id="TARGET"></span>Alvo
+</dt> <dd>
+
+Chave estrangeira para a coluna de destino da [tabela TargetImages (Patchwiz.dll)](targetimages-table-patchwiz-dll-.md).
+
+</dd> <dt>
+
+<span id="FTK"></span><span id="ftk"></span>FTK
+</dt> <dd>
+
+Chave estrangeira na [tabela de arquivos](file-table.md) da imagem de destino.
+
+</dd> <dt>
+
+<span id="SymbolPaths"></span><span id="symbolpaths"></span><span id="SYMBOLPATHS"></span>SymbolPaths
+</dt> <dd>
+
+O valor nesse campo é adicionado à lista delimitada por ponto-e-vírgula das pastas na coluna SymbolPaths da [tabela TargetImages (Patchwiz.dll)](targetimages-table-patchwiz-dll-.md) quando o patch é gerado e pode ser usado para adicionar arquivos de símbolo para um arquivo específico.
+
+</dd> <dt>
+
+<span id="IgnoreOffsets"></span><span id="ignoreoffsets"></span><span id="IGNOREOFFSETS"></span>IgnoreOffsets
+</dt> <dd>
+
+O valor nesse campo é uma lista delimitada por vírgulas de números de deslocamento de intervalo para os intervalos a serem ignorados no arquivo de destino. A ordem e o número dos intervalos na lista devem corresponder aos itens na coluna IgnoreLengths. Essa coluna é opcional.
+
+Os valores podem ser decimal ou hexadecimal. [Patchwiz.dll](patchwiz-dll.md) tratará o valor como hexadecimal se for prefixado por "0x". As colunas são colunas de cadeia de caracteres e Patchwiz.dll converterá os valores em ULONGs.
+
+</dd> <dt>
+
+<span id="IgnoreLengths"></span><span id="ignorelengths"></span><span id="IGNORELENGTHS"></span>IgnoreLengths
+</dt> <dd>
+
+O valor nesse campo é uma lista delimitada por vírgulas de comprimentos de intervalo em bytes para que os intervalos sejam ignorados no arquivo de destino. A ordem e o número dos intervalos na lista devem corresponder aos itens na coluna IgnoreOffsets. Essa coluna é opcional.
+
+Os valores podem ser decimal ou hexadecimal. [Patchwiz.dll](patchwiz-dll.md) tratará o valor como hexadecimal se for prefixado por "0x". As colunas são colunas de cadeia de caracteres e Patchwiz.dll converterá os valores em ULONGs.
+
+</dd> <dt>
+
+<span id="RetainOffsets"></span><span id="retainoffsets"></span><span id="RETAINOFFSETS"></span>RetainOffsets
+</dt> <dd>
+
+O valor nesse campo é uma lista delimitada por vírgulas de números de deslocamento de intervalo para os intervalos a serem retidos no arquivo de destino. A ordem e o número dos intervalos na lista devem corresponder aos itens na coluna RetainOffsets do registro correspondente na [tabela FamilyFileRanges (Patchwiz.dll)](familyfileranges-table-patchwiz-dll-.md)
+
+Os valores podem ser decimal ou hexadecimal. [Patchwiz.dll](patchwiz-dll.md) tratará o valor como hexadecimal se for prefixado por "0x". As colunas são colunas de cadeia de caracteres e Patchwiz.dll converterá os valores em ULONGs.
+
+</dd> </dl>
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Aplicação de patch nas regiões selecionadas de um arquivo](patching-selected-regions-of-a-file.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
