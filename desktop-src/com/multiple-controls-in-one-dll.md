@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004950"
 ---
-# <a name="multiple-controls-in-one-dll"></a><span data-ttu-id="e82f2-103">Vários controles em uma DLL</span><span class="sxs-lookup"><span data-stu-id="e82f2-103">Multiple Controls in One DLL</span></span>
+# <a name="multiple-controls-in-one-dll"></a><span data-ttu-id="b9a23-103">Vários controles em uma DLL</span><span class="sxs-lookup"><span data-stu-id="b9a23-103">Multiple Controls in One DLL</span></span>
 
-<span data-ttu-id="e82f2-104">Uma única DLL. ocx pode contêinerar qualquer número de controles ActiveX, simplificando assim a distribuição e o uso de um conjunto de controles relacionados.</span><span class="sxs-lookup"><span data-stu-id="e82f2-104">A single .ocx DLL can container any number of ActiveX controls, thus simplifying the distribution and use of a set of related controls.</span></span>
+<span data-ttu-id="b9a23-104">Uma única DLL. ocx pode contêinerar qualquer número de controles ActiveX, simplificando assim a distribuição e o uso de um conjunto de controles relacionados.</span><span class="sxs-lookup"><span data-stu-id="b9a23-104">A single .ocx DLL can container any number of ActiveX controls, thus simplifying the distribution and use of a set of related controls.</span></span>
 
-<span data-ttu-id="e82f2-105">Se você enviar vários controles em uma única DLL, certifique-se de incluir o nome do fornecedor em cada nome de controle no pacote.</span><span class="sxs-lookup"><span data-stu-id="e82f2-105">If you ship multiple controls in a single DLL, be sure to include the vendor name in each control name in the package.</span></span> <span data-ttu-id="e82f2-106">A inclusão dos nomes dos fornecedores em cada nome de controle permitirá que os usuários identifiquem facilmente os controles em um pacote.</span><span class="sxs-lookup"><span data-stu-id="e82f2-106">Including the vendors' names in each control name will enable users to easily identify controls within a package.</span></span> <span data-ttu-id="e82f2-107">Por exemplo, se você enviar uma DLL que implemente três controles, Con1, Con2 e Con3, os nomes de controle deverão ser:</span><span class="sxs-lookup"><span data-stu-id="e82f2-107">For example, if you ship a DLL that implements three controls, Con1, Con2, and Con3, then the control names should be:</span></span>
+<span data-ttu-id="b9a23-105">Se você enviar vários controles em uma única DLL, certifique-se de incluir o nome do fornecedor em cada nome de controle no pacote.</span><span class="sxs-lookup"><span data-stu-id="b9a23-105">If you ship multiple controls in a single DLL, be sure to include the vendor name in each control name in the package.</span></span> <span data-ttu-id="b9a23-106">A inclusão dos nomes dos fornecedores em cada nome de controle permitirá que os usuários identifiquem facilmente os controles em um pacote.</span><span class="sxs-lookup"><span data-stu-id="b9a23-106">Including the vendors' names in each control name will enable users to easily identify controls within a package.</span></span> <span data-ttu-id="b9a23-107">Por exemplo, se você enviar uma DLL que implemente três controles, Con1, Con2 e Con3, os nomes de controle deverão ser:</span><span class="sxs-lookup"><span data-stu-id="b9a23-107">For example, if you ship a DLL that implements three controls, Con1, Con2, and Con3, then the control names should be:</span></span>
 
--   <span data-ttu-id="e82f2-108">*O nome da sua empresa* Controle Con1</span><span class="sxs-lookup"><span data-stu-id="e82f2-108">*Your company name* Con1 Control</span></span>
+-   <span data-ttu-id="b9a23-108">*O nome da sua empresa* Controle Con1</span><span class="sxs-lookup"><span data-stu-id="b9a23-108">*Your company name* Con1 Control</span></span>
 
--   <span data-ttu-id="e82f2-109">*O nome da sua empresa* Controle Con2</span><span class="sxs-lookup"><span data-stu-id="e82f2-109">*Your company name* Con2 Control</span></span>
+-   <span data-ttu-id="b9a23-109">*O nome da sua empresa* Controle Con2</span><span class="sxs-lookup"><span data-stu-id="b9a23-109">*Your company name* Con2 Control</span></span>
 
--   <span data-ttu-id="e82f2-110">*O nome da sua empresa* Controle Con3</span><span class="sxs-lookup"><span data-stu-id="e82f2-110">*Your company name* Con3 Control</span></span>
+-   <span data-ttu-id="b9a23-110">*O nome da sua empresa* Controle Con3</span><span class="sxs-lookup"><span data-stu-id="b9a23-110">*Your company name* Con3 Control</span></span>
 
  
 

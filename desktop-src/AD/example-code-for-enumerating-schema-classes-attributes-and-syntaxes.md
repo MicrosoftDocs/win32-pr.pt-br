@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004921"
 ---
-# <a name="example-code-for-enumerating-schema-classes-attributes-and-syntaxes"></a><span data-ttu-id="3514e-104">Código de exemplo para enumerar classes de esquema, atributos e sintaxes</span><span class="sxs-lookup"><span data-stu-id="3514e-104">Example Code for Enumerating Schema Classes, Attributes, and Syntaxes</span></span>
+# <a name="example-code-for-enumerating-schema-classes-attributes-and-syntaxes"></a><span data-ttu-id="c16cc-104">Código de exemplo para enumerar classes de esquema, atributos e sintaxes</span><span class="sxs-lookup"><span data-stu-id="c16cc-104">Example Code for Enumerating Schema Classes, Attributes, and Syntaxes</span></span>
 
-<span data-ttu-id="3514e-105">O exemplo de C++ a seguir mostra como enumerar as classes, os atributos e as sintaxes no esquema abstrato.</span><span class="sxs-lookup"><span data-stu-id="3514e-105">The following C++ example shows how to enumerate the classes, attributes, and syntaxes in the abstract schema.</span></span>
+<span data-ttu-id="c16cc-105">O exemplo de C++ a seguir mostra como enumerar as classes, os atributos e as sintaxes no esquema abstrato.</span><span class="sxs-lookup"><span data-stu-id="c16cc-105">The following C++ example shows how to enumerate the classes, attributes, and syntaxes in the abstract schema.</span></span>
 
 
 ```C++
@@ -167,7 +167,7 @@ cleanup:
 
 
 
-<span data-ttu-id="3514e-106">O exemplo de código a seguir Visual Basic lê o esquema abstrato para enumerar as classes de objeto estrutural, abstrato e auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3514e-106">The following Visual Basic code example reads the abstract schema to enumerate the structural, abstract, and auxiliary object classes.</span></span> <span data-ttu-id="3514e-107">Em seguida, o exemplo enumera as classes de atributo de valor único e de valores múltiplos.</span><span class="sxs-lookup"><span data-stu-id="3514e-107">The example then enumerates the single-valued and multi-valued attribute classes.</span></span>
+<span data-ttu-id="c16cc-106">O exemplo de código a seguir Visual Basic lê o esquema abstrato para enumerar as classes de objeto estrutural, abstrato e auxiliar.</span><span class="sxs-lookup"><span data-stu-id="c16cc-106">The following Visual Basic code example reads the abstract schema to enumerate the structural, abstract, and auxiliary object classes.</span></span> <span data-ttu-id="c16cc-107">Em seguida, o exemplo enumera as classes de atributo de valor único e de valores múltiplos.</span><span class="sxs-lookup"><span data-stu-id="c16cc-107">The example then enumerates the single-valued and multi-valued attribute classes.</span></span>
 
 
 ```VB
