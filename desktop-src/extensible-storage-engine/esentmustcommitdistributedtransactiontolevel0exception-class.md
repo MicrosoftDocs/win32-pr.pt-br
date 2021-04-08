@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921304"
 ---
-# <a name="esentmustcommitdistributedtransactiontolevel0exception-class"></a><span data-ttu-id="3b4a9-103">Classe EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="3b4a9-103">EsentMustCommitDistributedTransactionToLevel0Exception class</span></span>
+# <a name="esentmustcommitdistributedtransactiontolevel0exception-class"></a><span data-ttu-id="275e7-103">Classe EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="275e7-103">EsentMustCommitDistributedTransactionToLevel0Exception class</span></span>
 
-<span data-ttu-id="3b4a9-104">Classe base para JET_err. MustCommitDistributedTransactionToLevel0 exceções.</span><span class="sxs-lookup"><span data-stu-id="3b4a9-104">Base class for JET_err.MustCommitDistributedTransactionToLevel0 exceptions.</span></span>
+<span data-ttu-id="275e7-104">Classe base para JET_err. MustCommitDistributedTransactionToLevel0 exceções.</span><span class="sxs-lookup"><span data-stu-id="275e7-104">Base class for JET_err.MustCommitDistributedTransactionToLevel0 exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="3b4a9-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="3b4a9-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="275e7-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="275e7-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="3b4a9-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="3b4a9-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="3b4a9-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="3b4a9-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="3b4a9-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="3b4a9-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="3b4a9-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="3b4a9-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="3b4a9-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="3b4a9-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="3b4a9-111">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="3b4a9-111">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
-            <span data-ttu-id="3b4a9-112">Microsoft. ISAM. ESENT. Interop. EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="3b4a9-112">Microsoft.Isam.Esent.Interop.EsentMustCommitDistributedTransactionToLevel0Exception</span></span>  
+[<span data-ttu-id="275e7-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="275e7-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="275e7-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="275e7-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="275e7-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="275e7-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="275e7-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="275e7-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="275e7-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="275e7-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="275e7-111">Microsoft. ISAM. ESENT. Interop. EsentObsoleteException</span><span class="sxs-lookup"><span data-stu-id="275e7-111">Microsoft.Isam.Esent.Interop.EsentObsoleteException</span></span>](./esentobsoleteexception-class.md)  
+            <span data-ttu-id="275e7-112">Microsoft. ISAM. ESENT. Interop. EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="275e7-112">Microsoft.Isam.Esent.Interop.EsentMustCommitDistributedTransactionToLevel0Exception</span></span>  
 
-<span data-ttu-id="3b4a9-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="3b4a9-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="3b4a9-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="3b4a9-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="275e7-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="275e7-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="275e7-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="275e7-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3b4a9-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="3b4a9-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="275e7-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="275e7-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentMustCommitDistributedTransactionToLevel0Exception
 public sealed class EsentMustCommitDistributedTransactionToLevel0Exception : EsentObsoleteException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="3b4a9-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="3b4a9-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="275e7-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="275e7-116">Thread safety</span></span>
 
-<span data-ttu-id="3b4a9-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="3b4a9-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="3b4a9-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="3b4a9-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="275e7-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="275e7-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="275e7-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="275e7-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3b4a9-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="3b4a9-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="275e7-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="275e7-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="3b4a9-120">Referência</span><span class="sxs-lookup"><span data-stu-id="3b4a9-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="275e7-120">Referência</span><span class="sxs-lookup"><span data-stu-id="275e7-120">Reference</span></span>
 
-[<span data-ttu-id="3b4a9-121">Membros do EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="3b4a9-121">EsentMustCommitDistributedTransactionToLevel0Exception members</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
+[<span data-ttu-id="275e7-121">Membros do EsentMustCommitDistributedTransactionToLevel0Exception</span><span class="sxs-lookup"><span data-stu-id="275e7-121">EsentMustCommitDistributedTransactionToLevel0Exception members</span></span>](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
 
-[<span data-ttu-id="3b4a9-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="3b4a9-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="275e7-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="275e7-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

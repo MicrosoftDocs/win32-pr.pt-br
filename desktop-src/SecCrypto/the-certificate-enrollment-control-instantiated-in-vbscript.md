@@ -16,9 +16,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103920976"
 ---
-# <a name="the-certificate-enrollment-control-instantiated-in-vbscript"></a><span data-ttu-id="e4eb8-103">O controle de registro de certificado instanciado no VBScript</span><span class="sxs-lookup"><span data-stu-id="e4eb8-103">The Certificate Enrollment Control Instantiated in VBScript</span></span>
+# <a name="the-certificate-enrollment-control-instantiated-in-vbscript"></a><span data-ttu-id="97a1a-103">O controle de registro de certificado instanciado no VBScript</span><span class="sxs-lookup"><span data-stu-id="97a1a-103">The Certificate Enrollment Control Instantiated in VBScript</span></span>
 
-<span data-ttu-id="e4eb8-104">O exemplo a seguir Visual Basic Scripting Edition (VBScript) usa a marca OBJECT para criar uma instância do objeto de controle de registro de certificado.</span><span class="sxs-lookup"><span data-stu-id="e4eb8-104">The following Visual Basic Scripting Edition (VBScript) example uses the OBJECT tag to create an instance of the Certificate Enrollment Control object.</span></span> <span data-ttu-id="e4eb8-105">O objeto é liberado da memória quando sai do escopo.</span><span class="sxs-lookup"><span data-stu-id="e4eb8-105">The object is freed from memory when it goes out of scope.</span></span>
+<span data-ttu-id="97a1a-104">O exemplo a seguir Visual Basic Scripting Edition (VBScript) usa a marca OBJECT para criar uma instância do objeto de controle de registro de certificado.</span><span class="sxs-lookup"><span data-stu-id="97a1a-104">The following Visual Basic Scripting Edition (VBScript) example uses the OBJECT tag to create an instance of the Certificate Enrollment Control object.</span></span> <span data-ttu-id="97a1a-105">O objeto é liberado da memória quando sai do escopo.</span><span class="sxs-lookup"><span data-stu-id="97a1a-105">The object is freed from memory when it goes out of scope.</span></span>
 
 
 ```VB

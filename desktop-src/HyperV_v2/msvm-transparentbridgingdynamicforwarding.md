@@ -22,13 +22,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921167"
 ---
-# <a name="msvm_transparentbridgingdynamicforwarding-class"></a><span data-ttu-id="fbf02-103">\_Classe Msvm TransparentBridgingDynamicForwarding</span><span class="sxs-lookup"><span data-stu-id="fbf02-103">Msvm\_TransparentBridgingDynamicForwarding class</span></span>
+# <a name="msvm_transparentbridgingdynamicforwarding-class"></a><span data-ttu-id="79aee-103">\_Classe Msvm TransparentBridgingDynamicForwarding</span><span class="sxs-lookup"><span data-stu-id="79aee-103">Msvm\_TransparentBridgingDynamicForwarding class</span></span>
 
-<span data-ttu-id="fbf02-104">Conecta um serviço de ponte transparente a uma entrada de encaminhamento dinâmico (endereço MAC aprendido).</span><span class="sxs-lookup"><span data-stu-id="fbf02-104">Connects a transparent bridging service to a dynamic forward entry (learned MAC address).</span></span>
+<span data-ttu-id="79aee-104">Conecta um serviço de ponte transparente a uma entrada de encaminhamento dinâmico (endereço MAC aprendido).</span><span class="sxs-lookup"><span data-stu-id="79aee-104">Connects a transparent bridging service to a dynamic forward entry (learned MAC address).</span></span>
 
-<span data-ttu-id="fbf02-105">A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="fbf02-105">The following syntax is simplified Managed Object Format (MOF) code, and it includes all of the inherited properties.</span></span>
+<span data-ttu-id="79aee-105">A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="79aee-105">The following syntax is simplified Managed Object Format (MOF) code, and it includes all of the inherited properties.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fbf02-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="fbf02-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="79aee-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="79aee-106">Syntax</span></span>
 
 ``` syntax
 [Association, Dynamic, Provider("VmmsWmiInstanceAndMethodProvider"), AMENDMENT]
@@ -39,76 +39,76 @@ class Msvm_TransparentBridgingDynamicForwarding : CIM_TransparentBridgingDynamic
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="fbf02-107">Membros</span><span class="sxs-lookup"><span data-stu-id="fbf02-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="79aee-107">Membros</span><span class="sxs-lookup"><span data-stu-id="79aee-107">Members</span></span>
 
-<span data-ttu-id="fbf02-108">A classe **Msvm \_ TransparentBridgingDynamicForwarding** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="fbf02-108">The **Msvm\_TransparentBridgingDynamicForwarding** class has these types of members:</span></span>
+<span data-ttu-id="79aee-108">A classe **Msvm \_ TransparentBridgingDynamicForwarding** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="79aee-108">The **Msvm\_TransparentBridgingDynamicForwarding** class has these types of members:</span></span>
 
--   [<span data-ttu-id="fbf02-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fbf02-109">Properties</span></span>](#properties)
+-   [<span data-ttu-id="79aee-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="79aee-109">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="fbf02-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fbf02-110">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="79aee-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="79aee-110">Properties</span></span>
 
-<span data-ttu-id="fbf02-111">A classe **Msvm \_ TransparentBridgingDynamicForwarding** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="fbf02-111">The **Msvm\_TransparentBridgingDynamicForwarding** class has these properties.</span></span>
+<span data-ttu-id="79aee-111">A classe **Msvm \_ TransparentBridgingDynamicForwarding** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="79aee-111">The **Msvm\_TransparentBridgingDynamicForwarding** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="fbf02-112">**Antecedent**</span><span class="sxs-lookup"><span data-stu-id="fbf02-112">**Antecedent**</span></span>
+<span data-ttu-id="79aee-112">**Antecedent**</span><span class="sxs-lookup"><span data-stu-id="79aee-112">**Antecedent**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="fbf02-113">Tipo de dados: **[ **Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md)**</span><span class="sxs-lookup"><span data-stu-id="fbf02-113">Data type: **[**Msvm\_TransparentBridgingService**](msvm-transparentbridgingservice.md)**</span></span>
+<span data-ttu-id="79aee-113">Tipo de dados: **[ **Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md)**</span><span class="sxs-lookup"><span data-stu-id="79aee-113">Data type: **[**Msvm\_TransparentBridgingService**](msvm-transparentbridgingservice.md)**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="fbf02-114">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="fbf02-114">Access type: Read-only</span></span>
+<span data-ttu-id="79aee-114">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="79aee-114">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="fbf02-115">Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")</span><span class="sxs-lookup"><span data-stu-id="fbf02-115">Qualifiers: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")</span></span>
+<span data-ttu-id="79aee-115">Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")</span><span class="sxs-lookup"><span data-stu-id="79aee-115">Qualifiers: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="fbf02-116">Uma referência a uma instância da classe [**Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) que representa o serviço de ponte transparente.</span><span class="sxs-lookup"><span data-stu-id="fbf02-116">A reference to an instance of the [**Msvm\_TransparentBridgingService**](msvm-transparentbridgingservice.md) class that represents the transparent bridging service.</span></span>
+<span data-ttu-id="79aee-116">Uma referência a uma instância da classe [**Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) que representa o serviço de ponte transparente.</span><span class="sxs-lookup"><span data-stu-id="79aee-116">A reference to an instance of the [**Msvm\_TransparentBridgingService**](msvm-transparentbridgingservice.md) class that represents the transparent bridging service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="fbf02-117">**Depende**</span><span class="sxs-lookup"><span data-stu-id="fbf02-117">**Dependent**</span></span>
+<span data-ttu-id="79aee-117">**Depende**</span><span class="sxs-lookup"><span data-stu-id="79aee-117">**Dependent**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="fbf02-118">Tipo de dados: **[ **Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**</span><span class="sxs-lookup"><span data-stu-id="fbf02-118">Data type: **[**Msvm\_DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**</span></span>
+<span data-ttu-id="79aee-118">Tipo de dados: **[ **Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**</span><span class="sxs-lookup"><span data-stu-id="79aee-118">Data type: **[**Msvm\_DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="fbf02-119">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="fbf02-119">Access type: Read-only</span></span>
+<span data-ttu-id="79aee-119">Tipo de acesso: Somente leitura</span><span class="sxs-lookup"><span data-stu-id="79aee-119">Access type: Read-only</span></span>
 </dt> <dt>
 
-<span data-ttu-id="fbf02-120">Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")</span><span class="sxs-lookup"><span data-stu-id="fbf02-120">Qualifiers: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")</span></span>
+<span data-ttu-id="79aee-120">Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")</span><span class="sxs-lookup"><span data-stu-id="79aee-120">Qualifiers: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")</span></span>
 </dt> </dl>
 
-<span data-ttu-id="fbf02-121">Uma referência a uma instância da classe [**Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) que representa a entrada de encaminhamento dinâmico do banco de dados de encaminhamento.</span><span class="sxs-lookup"><span data-stu-id="fbf02-121">A reference to an instance of the [**Msvm\_DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) class that represents the dynamic forwarding entry of the forwarding database.</span></span>
+<span data-ttu-id="79aee-121">Uma referência a uma instância da classe [**Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) que representa a entrada de encaminhamento dinâmico do banco de dados de encaminhamento.</span><span class="sxs-lookup"><span data-stu-id="79aee-121">A reference to an instance of the [**Msvm\_DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) class that represents the dynamic forwarding entry of the forwarding database.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="fbf02-122">Comentários</span><span class="sxs-lookup"><span data-stu-id="fbf02-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="79aee-122">Comentários</span><span class="sxs-lookup"><span data-stu-id="79aee-122">Remarks</span></span>
 
-<span data-ttu-id="fbf02-123">O acesso à classe **Msvm \_ TransparentBridgingDynamicForwarding** pode ser restringido pela filtragem do UAC.</span><span class="sxs-lookup"><span data-stu-id="fbf02-123">Access to the **Msvm\_TransparentBridgingDynamicForwarding** class might be restricted by UAC Filtering.</span></span> <span data-ttu-id="fbf02-124">Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).</span><span class="sxs-lookup"><span data-stu-id="fbf02-124">For more information, see [User Account Control and WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).</span></span>
+<span data-ttu-id="79aee-123">O acesso à classe **Msvm \_ TransparentBridgingDynamicForwarding** pode ser restringido pela filtragem do UAC.</span><span class="sxs-lookup"><span data-stu-id="79aee-123">Access to the **Msvm\_TransparentBridgingDynamicForwarding** class might be restricted by UAC Filtering.</span></span> <span data-ttu-id="79aee-124">Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).</span><span class="sxs-lookup"><span data-stu-id="79aee-124">For more information, see [User Account Control and WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="fbf02-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="fbf02-125">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="79aee-125">Requisitos</span><span class="sxs-lookup"><span data-stu-id="79aee-125">Requirements</span></span>
 
 
 
-| <span data-ttu-id="fbf02-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="fbf02-126">Requirement</span></span> | <span data-ttu-id="fbf02-127">Valor</span><span class="sxs-lookup"><span data-stu-id="fbf02-127">Value</span></span> |
+| <span data-ttu-id="79aee-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="79aee-126">Requirement</span></span> | <span data-ttu-id="79aee-127">Valor</span><span class="sxs-lookup"><span data-stu-id="79aee-127">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="fbf02-128">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="fbf02-128">Minimum supported client</span></span><br/> | <span data-ttu-id="fbf02-129">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="fbf02-129">Windows 8 \[desktop apps only\]</span></span><br/>                                                              |
-| <span data-ttu-id="fbf02-130">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="fbf02-130">Minimum supported server</span></span><br/> | <span data-ttu-id="fbf02-131">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="fbf02-131">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                                    |
-| <span data-ttu-id="fbf02-132">Namespace</span><span class="sxs-lookup"><span data-stu-id="fbf02-132">Namespace</span></span><br/>                | <span data-ttu-id="fbf02-133">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="fbf02-133">Root\\Virtualization\\V2</span></span><br/>                                                                     |
-| <span data-ttu-id="fbf02-134">MOF</span><span class="sxs-lookup"><span data-stu-id="fbf02-134">MOF</span></span><br/>                      | <dl> <span data-ttu-id="fbf02-135"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="fbf02-135"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="fbf02-136">DLL</span><span class="sxs-lookup"><span data-stu-id="fbf02-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="fbf02-137"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="fbf02-137"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="79aee-128">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="79aee-128">Minimum supported client</span></span><br/> | <span data-ttu-id="79aee-129">\[Somente aplicativos de área de trabalho do Windows 8\]</span><span class="sxs-lookup"><span data-stu-id="79aee-129">Windows 8 \[desktop apps only\]</span></span><br/>                                                              |
+| <span data-ttu-id="79aee-130">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="79aee-130">Minimum supported server</span></span><br/> | <span data-ttu-id="79aee-131">\[Somente aplicativos da área de trabalho do Windows Server 2012\]</span><span class="sxs-lookup"><span data-stu-id="79aee-131">Windows Server 2012 \[desktop apps only\]</span></span><br/>                                                    |
+| <span data-ttu-id="79aee-132">Namespace</span><span class="sxs-lookup"><span data-stu-id="79aee-132">Namespace</span></span><br/>                | <span data-ttu-id="79aee-133">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="79aee-133">Root\\Virtualization\\V2</span></span><br/>                                                                     |
+| <span data-ttu-id="79aee-134">MOF</span><span class="sxs-lookup"><span data-stu-id="79aee-134">MOF</span></span><br/>                      | <dl> <span data-ttu-id="79aee-135"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="79aee-135"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="79aee-136">DLL</span><span class="sxs-lookup"><span data-stu-id="79aee-136">DLL</span></span><br/>                      | <dl> <span data-ttu-id="79aee-137"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="79aee-137"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="fbf02-138">Confira também</span><span class="sxs-lookup"><span data-stu-id="fbf02-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="79aee-138">Confira também</span><span class="sxs-lookup"><span data-stu-id="79aee-138">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="fbf02-139">**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**</span><span class="sxs-lookup"><span data-stu-id="fbf02-139">**CIM\_TransparentBridgingDynamicForwarding**</span></span>](cim-transparentbridgingdynamicforwarding.md)
+[<span data-ttu-id="79aee-139">**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**</span><span class="sxs-lookup"><span data-stu-id="79aee-139">**CIM\_TransparentBridgingDynamicForwarding**</span></span>](cim-transparentbridgingdynamicforwarding.md)
 </dt> <dt>
 
-[<span data-ttu-id="fbf02-140">**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**</span><span class="sxs-lookup"><span data-stu-id="fbf02-140">**CIM\_TransparentBridgingDynamicForwarding**</span></span>](/previous-versions/windows/desktop/clushyperv/cim-transparentbridgingdynamicforwarding)
+[<span data-ttu-id="79aee-140">**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**</span><span class="sxs-lookup"><span data-stu-id="79aee-140">**CIM\_TransparentBridgingDynamicForwarding**</span></span>](/previous-versions/windows/desktop/clushyperv/cim-transparentbridgingdynamicforwarding)
 </dt> </dl>
 
  

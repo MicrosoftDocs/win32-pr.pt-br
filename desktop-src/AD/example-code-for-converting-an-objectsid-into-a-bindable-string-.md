@@ -12,11 +12,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "103822285"
 ---
-# <a name="example-code-for-converting-an-objectsid-into-a-bindable-string"></a><span data-ttu-id="05921-103">Código de exemplo para converter um objectSid em uma cadeia de caracteres vinculável</span><span class="sxs-lookup"><span data-stu-id="05921-103">Example Code for Converting an objectSid into a Bindable String</span></span>
+# <a name="example-code-for-converting-an-objectsid-into-a-bindable-string"></a><span data-ttu-id="880c9-103">Código de exemplo para converter um objectSid em uma cadeia de caracteres vinculável</span><span class="sxs-lookup"><span data-stu-id="880c9-103">Example Code for Converting an objectSid into a Bindable String</span></span>
 
-<span data-ttu-id="05921-104">Este tópico contém um exemplo de código que converte um **objectSid** em uma cadeia de caracteres vinculável para adicionar um membro que pertence a um domínio de nível inferior a um grupo em um domínio de nível superior.</span><span class="sxs-lookup"><span data-stu-id="05921-104">This topic contains a code example that converts an **objectSid** to a bindable string to add a member that belongs to a down-level domain to a group in an up-level domain.</span></span>
+<span data-ttu-id="880c9-104">Este tópico contém um exemplo de código que converte um **objectSid** em uma cadeia de caracteres vinculável para adicionar um membro que pertence a um domínio de nível inferior a um grupo em um domínio de nível superior.</span><span class="sxs-lookup"><span data-stu-id="880c9-104">This topic contains a code example that converts an **objectSid** to a bindable string to add a member that belongs to a down-level domain to a group in an up-level domain.</span></span>
 
-<span data-ttu-id="05921-105">O exemplo de código C++ a seguir mostra como converter um **objectSid** em uma cadeia de caracteres vinculável.</span><span class="sxs-lookup"><span data-stu-id="05921-105">The following C++ code example shows how to convert an **objectSid** into a bindable string.</span></span>
+<span data-ttu-id="880c9-105">O exemplo de código C++ a seguir mostra como converter um **objectSid** em uma cadeia de caracteres vinculável.</span><span class="sxs-lookup"><span data-stu-id="880c9-105">The following C++ code example shows how to convert an **objectSid** into a bindable string.</span></span>
 
 
 ```C++
