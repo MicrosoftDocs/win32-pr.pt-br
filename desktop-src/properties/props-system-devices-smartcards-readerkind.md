@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921579"
 ---
-# <a name="systemdevicessmartcardsreaderkind"></a><span data-ttu-id="c857d-103">System. Devices. Smarts. ReaderKind</span><span class="sxs-lookup"><span data-stu-id="c857d-103">System.Devices.SmartCards.ReaderKind</span></span>
+# <a name="systemdevicessmartcardsreaderkind"></a><span data-ttu-id="980ff-103">System. Devices. Smarts. ReaderKind</span><span class="sxs-lookup"><span data-stu-id="980ff-103">System.Devices.SmartCards.ReaderKind</span></span>
 
-<span data-ttu-id="c857d-104">Tipo de leitor de cartão inteligente.</span><span class="sxs-lookup"><span data-stu-id="c857d-104">Smart card reader kind.</span></span>
+<span data-ttu-id="980ff-104">Tipo de leitor de cartão inteligente.</span><span class="sxs-lookup"><span data-stu-id="980ff-104">Smart card reader kind.</span></span>
 
-## <a name="windows-10-version-1703-windows-10-version-1607"></a><span data-ttu-id="c857d-105">Windows 10, versão 1703, Windows 10, versão 1607</span><span class="sxs-lookup"><span data-stu-id="c857d-105">Windows 10, version 1703, Windows 10, version 1607</span></span>
+## <a name="windows-10-version-1703-windows-10-version-1607"></a><span data-ttu-id="980ff-105">Windows 10, versão 1703, Windows 10, versão 1607</span><span class="sxs-lookup"><span data-stu-id="980ff-105">Windows 10, version 1703, Windows 10, version 1607</span></span>
 
 ```
 propertyDescription
@@ -63,7 +63,7 @@ propertyDescription
             defineToken = SMARTCARDREADERKIND_EMBEDDEDSE
 ```
 
-## <a name="windows-10-version-1511-windows-10-version-1507-windows-81"></a><span data-ttu-id="c857d-106">Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="c857d-106">Windows 10, version 1511, Windows 10, version 1507, Windows 8.1</span></span>
+## <a name="windows-10-version-1511-windows-10-version-1507-windows-81"></a><span data-ttu-id="980ff-106">Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="980ff-106">Windows 10, version 1511, Windows 10, version 1507, Windows 8.1</span></span>
 
 ```
 propertyDescription
@@ -106,54 +106,54 @@ propertyDescription
             defineToken = SMARTCARDREADERKIND_UICC
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c857d-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="c857d-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="980ff-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="980ff-107">Remarks</span></span>
 
-<span data-ttu-id="c857d-108">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="c857d-108">PKEY values are defined in Propkey.h.</span></span>
+<span data-ttu-id="980ff-108">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="980ff-108">PKEY values are defined in Propkey.h.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="c857d-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c857d-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="980ff-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="980ff-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c857d-110">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="c857d-110">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
+[<span data-ttu-id="980ff-110">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="980ff-110">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-111">searchInfo</span><span class="sxs-lookup"><span data-stu-id="c857d-111">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
+[<span data-ttu-id="980ff-111">searchInfo</span><span class="sxs-lookup"><span data-stu-id="980ff-111">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-112">labelInfo</span><span class="sxs-lookup"><span data-stu-id="c857d-112">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
+[<span data-ttu-id="980ff-112">labelInfo</span><span class="sxs-lookup"><span data-stu-id="980ff-112">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-113">typeInfo</span><span class="sxs-lookup"><span data-stu-id="c857d-113">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
+[<span data-ttu-id="980ff-113">typeInfo</span><span class="sxs-lookup"><span data-stu-id="980ff-113">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-114">displayInfo</span><span class="sxs-lookup"><span data-stu-id="c857d-114">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
+[<span data-ttu-id="980ff-114">displayInfo</span><span class="sxs-lookup"><span data-stu-id="980ff-114">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-115">stringFormat</span><span class="sxs-lookup"><span data-stu-id="c857d-115">stringFormat</span></span>](./propdesc-schema-stringformat.md)
+[<span data-ttu-id="980ff-115">stringFormat</span><span class="sxs-lookup"><span data-stu-id="980ff-115">stringFormat</span></span>](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-116">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="c857d-116">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
+[<span data-ttu-id="980ff-116">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="980ff-116">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-117">numberFormat</span><span class="sxs-lookup"><span data-stu-id="c857d-117">numberFormat</span></span>](./propdesc-schema-numberformat.md)
+[<span data-ttu-id="980ff-117">numberFormat</span><span class="sxs-lookup"><span data-stu-id="980ff-117">numberFormat</span></span>](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-118">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="c857d-118">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
+[<span data-ttu-id="980ff-118">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="980ff-118">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-119">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="c857d-119">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
+[<span data-ttu-id="980ff-119">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="980ff-119">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-120">drawControl</span><span class="sxs-lookup"><span data-stu-id="c857d-120">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
+[<span data-ttu-id="980ff-120">drawControl</span><span class="sxs-lookup"><span data-stu-id="980ff-120">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-121">editControl</span><span class="sxs-lookup"><span data-stu-id="c857d-121">editControl</span></span>](./propdesc-schema-editcontrol.md)
+[<span data-ttu-id="980ff-121">editControl</span><span class="sxs-lookup"><span data-stu-id="980ff-121">editControl</span></span>](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-122">filterControl</span><span class="sxs-lookup"><span data-stu-id="c857d-122">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
+[<span data-ttu-id="980ff-122">filterControl</span><span class="sxs-lookup"><span data-stu-id="980ff-122">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="c857d-123">queryControl</span><span class="sxs-lookup"><span data-stu-id="c857d-123">queryControl</span></span>](./propdesc-schema-querycontrol.md)
+[<span data-ttu-id="980ff-123">queryControl</span><span class="sxs-lookup"><span data-stu-id="980ff-123">queryControl</span></span>](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -20,13 +20,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103661866"
 ---
-# <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a><span data-ttu-id="d1eaa-103">Método RemoveResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM</span><span class="sxs-lookup"><span data-stu-id="d1eaa-103">RemoveResourceSettings method of the CIM\_VirtualSystemManagementService class</span></span>
+# <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a><span data-ttu-id="67310-103">Método RemoveResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM</span><span class="sxs-lookup"><span data-stu-id="67310-103">RemoveResourceSettings method of the CIM\_VirtualSystemManagementService class</span></span>
 
-<span data-ttu-id="d1eaa-104">Remove as configurações de recursos virtuais de uma configuração de sistema virtual.</span><span class="sxs-lookup"><span data-stu-id="d1eaa-104">Removes virtual resource settings from a virtual system configuration.</span></span>
+<span data-ttu-id="67310-104">Remove as configurações de recursos virtuais de uma configuração de sistema virtual.</span><span class="sxs-lookup"><span data-stu-id="67310-104">Removes virtual resource settings from a virtual system configuration.</span></span>
 
-<span data-ttu-id="d1eaa-105">Quando aplicado a partes de uma configuração de sistema virtual "atual", como os recursos de efeito colateral do sistema virtual ativo podem ser removidos.</span><span class="sxs-lookup"><span data-stu-id="d1eaa-105">When applied to parts of a "current" virtual system configuration, as a side effect resources of the active virtual system may be removed.</span></span>
+<span data-ttu-id="67310-105">Quando aplicado a partes de uma configuração de sistema virtual "atual", como os recursos de efeito colateral do sistema virtual ativo podem ser removidos.</span><span class="sxs-lookup"><span data-stu-id="67310-105">When applied to parts of a "current" virtual system configuration, as a side effect resources of the active virtual system may be removed.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d1eaa-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d1eaa-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="67310-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="67310-106">Syntax</span></span>
 
 
 ```mof
@@ -38,79 +38,79 @@ uint32 RemoveResourceSettings(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="d1eaa-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d1eaa-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="67310-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="67310-107">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d1eaa-108">*ResourceSettings* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="d1eaa-108">*ResourceSettings* \[in\]</span></span>
+<span data-ttu-id="67310-108">*ResourceSettings* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="67310-108">*ResourceSettings* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d1eaa-109">Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) em que cada instância representa as configurações de um recurso virtual em uma configuração de sistema virtual que devem ser removidas.</span><span class="sxs-lookup"><span data-stu-id="d1eaa-109">Array of references to instances of class [**CIM\_ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) where each instance represents the settings of a virtual resource within a virtual system configuration that are to be removed.</span></span>
+<span data-ttu-id="67310-109">Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) em que cada instância representa as configurações de um recurso virtual em uma configuração de sistema virtual que devem ser removidas.</span><span class="sxs-lookup"><span data-stu-id="67310-109">Array of references to instances of class [**CIM\_ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) where each instance represents the settings of a virtual resource within a virtual system configuration that are to be removed.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="d1eaa-110">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="d1eaa-110">*Job* \[out\]</span></span>
+<span data-ttu-id="67310-110">*Trabalho* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="67310-110">*Job* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="d1eaa-111">Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.</span><span class="sxs-lookup"><span data-stu-id="d1eaa-111">If the operation is long running, then optionally a [**CIM\_ConcreteJob**](cim-concretejob.md) representing the job may be returned.</span></span>
+<span data-ttu-id="67310-111">Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.</span><span class="sxs-lookup"><span data-stu-id="67310-111">If the operation is long running, then optionally a [**CIM\_ConcreteJob**](cim-concretejob.md) representing the job may be returned.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="d1eaa-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d1eaa-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="67310-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="67310-112">Return value</span></span>
 
-<span data-ttu-id="d1eaa-113">Retorna um 0 em caso de êxito; caso contrário, retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="d1eaa-113">Returns a 0 on success; otherwise, returns an error.</span></span>
+<span data-ttu-id="67310-113">Retorna um 0 em caso de êxito; caso contrário, retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="67310-113">Returns a 0 on success; otherwise, returns an error.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="d1eaa-114">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-114">**Completed with No Error** (0)</span></span>
+<span data-ttu-id="67310-114">**Concluído sem erro** (0)</span><span class="sxs-lookup"><span data-stu-id="67310-114">**Completed with No Error** (0)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-115">**Sem suporte** (1)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-115">**Not Supported** (1)</span></span>
+<span data-ttu-id="67310-115">**Sem suporte** (1)</span><span class="sxs-lookup"><span data-stu-id="67310-115">**Not Supported** (1)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-116">**Falha** (2)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-116">**Failed** (2)</span></span>
+<span data-ttu-id="67310-116">**Falha** (2)</span><span class="sxs-lookup"><span data-stu-id="67310-116">**Failed** (2)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-117">**Tempo limite** (3)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-117">**Timeout** (3)</span></span>
+<span data-ttu-id="67310-117">**Tempo limite** (3)</span><span class="sxs-lookup"><span data-stu-id="67310-117">**Timeout** (3)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-118">**Parâmetro inválido** (4)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-118">**Invalid Parameter** (4)</span></span>
+<span data-ttu-id="67310-118">**Parâmetro inválido** (4)</span><span class="sxs-lookup"><span data-stu-id="67310-118">**Invalid Parameter** (4)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-119">**Estado inválido** (5)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-119">**Invalid State** (5)</span></span>
+<span data-ttu-id="67310-119">**Estado inválido** (5)</span><span class="sxs-lookup"><span data-stu-id="67310-119">**Invalid State** (5)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-120">**DMTF reservado** (..)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-120">**DMTF Reserved** (..)</span></span>
+<span data-ttu-id="67310-120">**DMTF reservado** (..)</span><span class="sxs-lookup"><span data-stu-id="67310-120">**DMTF Reserved** (..)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-121">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-121">**Method Parameters Checked - Job Started** (4096)</span></span>
+<span data-ttu-id="67310-121">**Parâmetros de método marcados-trabalho iniciado** (4096)</span><span class="sxs-lookup"><span data-stu-id="67310-121">**Method Parameters Checked - Job Started** (4096)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-122">**Método reservado** (4097.. 32767)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-122">**Method Reserved** (4097..32767)</span></span>
+<span data-ttu-id="67310-122">**Método reservado** (4097.. 32767)</span><span class="sxs-lookup"><span data-stu-id="67310-122">**Method Reserved** (4097..32767)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="d1eaa-123">**Específico do fornecedor** (32768.. 65535)</span><span class="sxs-lookup"><span data-stu-id="d1eaa-123">**Vendor Specific** (32768..65535)</span></span>
+<span data-ttu-id="67310-123">**Específico do fornecedor** (32768.. 65535)</span><span class="sxs-lookup"><span data-stu-id="67310-123">**Vendor Specific** (32768..65535)</span></span>
 </dt> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="d1eaa-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d1eaa-124">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="67310-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="67310-124">Requirements</span></span>
 
 
 
-| <span data-ttu-id="d1eaa-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="d1eaa-125">Requirement</span></span> | <span data-ttu-id="d1eaa-126">Valor</span><span class="sxs-lookup"><span data-stu-id="d1eaa-126">Value</span></span> |
+| <span data-ttu-id="67310-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="67310-125">Requirement</span></span> | <span data-ttu-id="67310-126">Valor</span><span class="sxs-lookup"><span data-stu-id="67310-126">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d1eaa-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1eaa-127">Minimum supported client</span></span><br/> | <span data-ttu-id="d1eaa-128">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="d1eaa-128">Windows 8.1</span></span><br/>                                                                                  |
-| <span data-ttu-id="d1eaa-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d1eaa-129">Minimum supported server</span></span><br/> | <span data-ttu-id="d1eaa-130">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="d1eaa-130">Windows Server 2012 R2</span></span><br/>                                                                       |
-| <span data-ttu-id="d1eaa-131">Namespace</span><span class="sxs-lookup"><span data-stu-id="d1eaa-131">Namespace</span></span><br/>                | <span data-ttu-id="d1eaa-132">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="d1eaa-132">Root\\virtualization\\v2</span></span><br/>                                                                     |
-| <span data-ttu-id="d1eaa-133">MOF</span><span class="sxs-lookup"><span data-stu-id="d1eaa-133">MOF</span></span><br/>                      | <dl> <span data-ttu-id="d1eaa-134"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="d1eaa-134"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="d1eaa-135">DLL</span><span class="sxs-lookup"><span data-stu-id="d1eaa-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="d1eaa-136"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="d1eaa-136"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="67310-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="67310-127">Minimum supported client</span></span><br/> | <span data-ttu-id="67310-128">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="67310-128">Windows 8.1</span></span><br/>                                                                                  |
+| <span data-ttu-id="67310-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="67310-129">Minimum supported server</span></span><br/> | <span data-ttu-id="67310-130">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="67310-130">Windows Server 2012 R2</span></span><br/>                                                                       |
+| <span data-ttu-id="67310-131">Namespace</span><span class="sxs-lookup"><span data-stu-id="67310-131">Namespace</span></span><br/>                | <span data-ttu-id="67310-132">\\Virtualização \\ v2 de raiz</span><span class="sxs-lookup"><span data-stu-id="67310-132">Root\\virtualization\\v2</span></span><br/>                                                                     |
+| <span data-ttu-id="67310-133">MOF</span><span class="sxs-lookup"><span data-stu-id="67310-133">MOF</span></span><br/>                      | <dl> <span data-ttu-id="67310-134"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="67310-134"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="67310-135">DLL</span><span class="sxs-lookup"><span data-stu-id="67310-135">DLL</span></span><br/>                      | <dl> <span data-ttu-id="67310-136"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="67310-136"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="d1eaa-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="d1eaa-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="67310-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="67310-137">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d1eaa-138">**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**</span><span class="sxs-lookup"><span data-stu-id="d1eaa-138">**CIM\_VirtualSystemManagementService**</span></span>](cim-virtualsystemmanagementservice.md)
+[<span data-ttu-id="67310-138">**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**</span><span class="sxs-lookup"><span data-stu-id="67310-138">**CIM\_VirtualSystemManagementService**</span></span>](cim-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

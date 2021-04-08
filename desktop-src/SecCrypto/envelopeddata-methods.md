@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103827930"
 ---
-# <a name="envelopeddata-methods"></a><span data-ttu-id="692a1-103">Métodos EnvelopedData</span><span class="sxs-lookup"><span data-stu-id="692a1-103">EnvelopedData Methods</span></span>
+# <a name="envelopeddata-methods"></a><span data-ttu-id="33f7e-103">Métodos EnvelopedData</span><span class="sxs-lookup"><span data-stu-id="33f7e-103">EnvelopedData Methods</span></span>
 
-<span data-ttu-id="692a1-104">O objeto [**EnvelopedData**](envelopeddata.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="692a1-104">The [**EnvelopedData**](envelopeddata.md) object exposes the following methods.</span></span>
+<span data-ttu-id="33f7e-104">O objeto [**EnvelopedData**](envelopeddata.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="33f7e-104">The [**EnvelopedData**](envelopeddata.md) object exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="692a1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="692a1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="33f7e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="33f7e-105">In this section</span></span>
 
--   [<span data-ttu-id="692a1-106">**Método Decrypt**</span><span class="sxs-lookup"><span data-stu-id="692a1-106">**Decrypt Method**</span></span>](envelopeddata-decrypt.md)
--   [<span data-ttu-id="692a1-107">**Método Encrypt**</span><span class="sxs-lookup"><span data-stu-id="692a1-107">**Encrypt Method**</span></span>](envelopeddata-encrypt.md)
+-   [<span data-ttu-id="33f7e-106">**Método Decrypt**</span><span class="sxs-lookup"><span data-stu-id="33f7e-106">**Decrypt Method**</span></span>](envelopeddata-decrypt.md)
+-   [<span data-ttu-id="33f7e-107">**Método Encrypt**</span><span class="sxs-lookup"><span data-stu-id="33f7e-107">**Encrypt Method**</span></span>](envelopeddata-encrypt.md)
 
  
 
