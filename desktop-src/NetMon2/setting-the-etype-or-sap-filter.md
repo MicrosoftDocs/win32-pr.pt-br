@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103920993"
 ---
-# <a name="setting-the-etype-or-sap-filter"></a><span data-ttu-id="e1d81-103">Configurando o filtro ETYPE ou SAP</span><span class="sxs-lookup"><span data-stu-id="e1d81-103">Setting the Etype or SAP Filter</span></span>
+# <a name="setting-the-etype-or-sap-filter"></a><span data-ttu-id="4f234-103">Configurando o filtro ETYPE ou SAP</span><span class="sxs-lookup"><span data-stu-id="4f234-103">Setting the Etype or SAP Filter</span></span>
 
-<span data-ttu-id="e1d81-104">Definir a parte ETYPE ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.</span><span class="sxs-lookup"><span data-stu-id="e1d81-104">Setting the Etype or SAP portion of the capture filter is the first step in the capture filter creation process.</span></span>
+<span data-ttu-id="4f234-104">Definir a parte ETYPE ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.</span><span class="sxs-lookup"><span data-stu-id="4f234-104">Setting the Etype or SAP portion of the capture filter is the first step in the capture filter creation process.</span></span>
 
-<span data-ttu-id="e1d81-105">No exemplo a seguir, o filtro de captura está definido para recuperar somente o tráfego IPX:</span><span class="sxs-lookup"><span data-stu-id="e1d81-105">In the following example, the capture filter is set to only retrieve IPX traffic:</span></span>
+<span data-ttu-id="4f234-105">No exemplo a seguir, o filtro de captura está definido para recuperar somente o tráfego IPX:</span><span class="sxs-lookup"><span data-stu-id="4f234-105">In the following example, the capture filter is set to only retrieve IPX traffic:</span></span>
 
 
 ```C++
@@ -34,7 +34,7 @@ rc = SetNPPEtypeSapFilter(m_hBlob,
 
 
 
-<span data-ttu-id="e1d81-106">Os valores SAP e ETYPE geralmente estão disponíveis em RFCs.</span><span class="sxs-lookup"><span data-stu-id="e1d81-106">SAP and Etype values are usually available in RFCs.</span></span> <span data-ttu-id="e1d81-107">Os valores SAP e ETYPE podem estar em uma matriz.</span><span class="sxs-lookup"><span data-stu-id="e1d81-107">Both SAP and Etype values can be in an array.</span></span>
+<span data-ttu-id="4f234-106">Os valores SAP e ETYPE geralmente estão disponíveis em RFCs.</span><span class="sxs-lookup"><span data-stu-id="4f234-106">SAP and Etype values are usually available in RFCs.</span></span> <span data-ttu-id="4f234-107">Os valores SAP e ETYPE podem estar em uma matriz.</span><span class="sxs-lookup"><span data-stu-id="4f234-107">Both SAP and Etype values can be in an array.</span></span>
 
  
 

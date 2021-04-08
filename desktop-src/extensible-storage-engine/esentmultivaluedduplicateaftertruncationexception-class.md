@@ -31,24 +31,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "103921079"
 ---
-# <a name="esentmultivaluedduplicateaftertruncationexception-class"></a><span data-ttu-id="4ed8e-103">Classe EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-103">EsentMultiValuedDuplicateAfterTruncationException class</span></span>
+# <a name="esentmultivaluedduplicateaftertruncationexception-class"></a><span data-ttu-id="5f947-103">Classe EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="5f947-103">EsentMultiValuedDuplicateAfterTruncationException class</span></span>
 
-<span data-ttu-id="4ed8e-104">Classe base para JET_err. MultiValuedDuplicateAfterTruncation exceções.</span><span class="sxs-lookup"><span data-stu-id="4ed8e-104">Base class for JET_err.MultiValuedDuplicateAfterTruncation exceptions.</span></span>
+<span data-ttu-id="5f947-104">Classe base para JET_err. MultiValuedDuplicateAfterTruncation exceções.</span><span class="sxs-lookup"><span data-stu-id="5f947-104">Base class for JET_err.MultiValuedDuplicateAfterTruncation exceptions.</span></span>
 
-## <a name="inheritance-hierarchy"></a><span data-ttu-id="4ed8e-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="4ed8e-105">Inheritance hierarchy</span></span>
+## <a name="inheritance-hierarchy"></a><span data-ttu-id="5f947-105">Hierarquia de herança</span><span class="sxs-lookup"><span data-stu-id="5f947-105">Inheritance hierarchy</span></span>
 
-[<span data-ttu-id="4ed8e-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="4ed8e-106">System.Object</span></span>](/dotnet/api/system.object)  
-  [<span data-ttu-id="4ed8e-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="4ed8e-107">System.Exception</span></span>](/dotnet/api/system.exception)  
-    [<span data-ttu-id="4ed8e-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
-      [<span data-ttu-id="4ed8e-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
-        [<span data-ttu-id="4ed8e-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
-          [<span data-ttu-id="4ed8e-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
-            <span data-ttu-id="4ed8e-112">Microsoft. ISAM. ESENT. Interop. EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-112">Microsoft.Isam.Esent.Interop.EsentMultiValuedDuplicateAfterTruncationException</span></span>  
+[<span data-ttu-id="5f947-106">System.Object</span><span class="sxs-lookup"><span data-stu-id="5f947-106">System.Object</span></span>](/dotnet/api/system.object)  
+  [<span data-ttu-id="5f947-107">System. Exception</span><span class="sxs-lookup"><span data-stu-id="5f947-107">System.Exception</span></span>](/dotnet/api/system.exception)  
+    [<span data-ttu-id="5f947-108">Microsoft. ISAM. ESENT. EsentException</span><span class="sxs-lookup"><span data-stu-id="5f947-108">Microsoft.Isam.Esent.EsentException</span></span>](./esentexception-class.md)  
+      [<span data-ttu-id="5f947-109">Microsoft. ISAM. ESENT. Interop. EsentErrorException</span><span class="sxs-lookup"><span data-stu-id="5f947-109">Microsoft.Isam.Esent.Interop.EsentErrorException</span></span>](./esenterrorexception-class.md)  
+        [<span data-ttu-id="5f947-110">Microsoft. ISAM. ESENT. Interop. EsentApiException</span><span class="sxs-lookup"><span data-stu-id="5f947-110">Microsoft.Isam.Esent.Interop.EsentApiException</span></span>](./esentapiexception-class.md)  
+          [<span data-ttu-id="5f947-111">Microsoft. ISAM. ESENT. Interop. EsentStateException</span><span class="sxs-lookup"><span data-stu-id="5f947-111">Microsoft.Isam.Esent.Interop.EsentStateException</span></span>](./esentstateexception-class.md)  
+            <span data-ttu-id="5f947-112">Microsoft. ISAM. ESENT. Interop. EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="5f947-112">Microsoft.Isam.Esent.Interop.EsentMultiValuedDuplicateAfterTruncationException</span></span>  
 
-<span data-ttu-id="4ed8e-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="4ed8e-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="4ed8e-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="4ed8e-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5f947-113">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5f947-113">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5f947-114">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5f947-114">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4ed8e-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="4ed8e-115">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5f947-115">Syntax</span><span class="sxs-lookup"><span data-stu-id="5f947-115">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -64,14 +64,14 @@ Dim instance As EsentMultiValuedDuplicateAfterTruncationException
 public sealed class EsentMultiValuedDuplicateAfterTruncationException : EsentStateException
 ```
 
-## <a name="thread-safety"></a><span data-ttu-id="4ed8e-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="4ed8e-116">Thread safety</span></span>
+## <a name="thread-safety"></a><span data-ttu-id="5f947-116">Acesso thread-safe</span><span class="sxs-lookup"><span data-stu-id="5f947-116">Thread safety</span></span>
 
-<span data-ttu-id="4ed8e-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="4ed8e-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="4ed8e-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="4ed8e-118">Any instance members are not guaranteed to be thread safe.</span></span>
+<span data-ttu-id="5f947-117">Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="5f947-117">Any public static (Shared in Visual Basic) members of this type are thread safe.</span></span> <span data-ttu-id="5f947-118">Não há garantia de que qualquer membro de instância seja seguro para threads.</span><span class="sxs-lookup"><span data-stu-id="5f947-118">Any instance members are not guaranteed to be thread safe.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4ed8e-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="4ed8e-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f947-119">Confira também</span><span class="sxs-lookup"><span data-stu-id="5f947-119">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="4ed8e-120">Referência</span><span class="sxs-lookup"><span data-stu-id="4ed8e-120">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5f947-120">Referência</span><span class="sxs-lookup"><span data-stu-id="5f947-120">Reference</span></span>
 
-[<span data-ttu-id="4ed8e-121">Membros do EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="4ed8e-121">EsentMultiValuedDuplicateAfterTruncationException members</span></span>](./esentmultivaluedduplicateaftertruncationexception-members.md)
+[<span data-ttu-id="5f947-121">Membros do EsentMultiValuedDuplicateAfterTruncationException</span><span class="sxs-lookup"><span data-stu-id="5f947-121">EsentMultiValuedDuplicateAfterTruncationException members</span></span>](./esentmultivaluedduplicateaftertruncationexception-members.md)
 
-[<span data-ttu-id="4ed8e-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="4ed8e-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5f947-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5f947-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
