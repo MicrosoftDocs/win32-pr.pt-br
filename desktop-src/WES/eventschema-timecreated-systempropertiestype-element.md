@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "103918635"
 ---
-# <a name="timecreated-systempropertiestype-element"></a><span data-ttu-id="bb790-104">Elemento timecriado (SystemPropertiesType)</span><span class="sxs-lookup"><span data-stu-id="bb790-104">TimeCreated (SystemPropertiesType) Element</span></span>
+# <a name="timecreated-systempropertiestype-element"></a><span data-ttu-id="17647-104">Elemento timecriado (SystemPropertiesType)</span><span class="sxs-lookup"><span data-stu-id="17647-104">TimeCreated (SystemPropertiesType) Element</span></span>
 
-<span data-ttu-id="bb790-105">O carimbo de data/hora que identifica quando o evento foi registrado.</span><span class="sxs-lookup"><span data-stu-id="bb790-105">The time stamp that identifies when the event was logged.</span></span>
+<span data-ttu-id="17647-105">O carimbo de data/hora que identifica quando o evento foi registrado.</span><span class="sxs-lookup"><span data-stu-id="17647-105">The time stamp that identifies when the event was logged.</span></span>
 
 ``` syntax
 <xs:element name="TimeCreated">
@@ -35,37 +35,37 @@ ms.locfileid: "103918635"
 </xs:element>
 ```
 
-<span data-ttu-id="bb790-106">O elemento **Timecriated** é definido pelo tipo complexo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="bb790-106">The **TimeCreated** element is defined by the [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) complex type.</span></span>
+<span data-ttu-id="17647-106">O elemento **Timecriated** é definido pelo tipo complexo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .</span><span class="sxs-lookup"><span data-stu-id="17647-106">The **TimeCreated** element is defined by the [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) complex type.</span></span>
 
-## <a name="attributes"></a><span data-ttu-id="bb790-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="bb790-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="17647-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="17647-107">Attributes</span></span>
 
 
 
-| <span data-ttu-id="bb790-108">Nome</span><span class="sxs-lookup"><span data-stu-id="bb790-108">Name</span></span>       | <span data-ttu-id="bb790-109">Type</span><span class="sxs-lookup"><span data-stu-id="bb790-109">Type</span></span>     | <span data-ttu-id="bb790-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="bb790-110">Description</span></span>                                              |
+| <span data-ttu-id="17647-108">Nome</span><span class="sxs-lookup"><span data-stu-id="17647-108">Name</span></span>       | <span data-ttu-id="17647-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="17647-109">Type</span></span>     | <span data-ttu-id="17647-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="17647-110">Description</span></span>                                              |
 |------------|----------|----------------------------------------------------------|
-| <span data-ttu-id="bb790-111">SystemTime</span><span class="sxs-lookup"><span data-stu-id="bb790-111">SystemTime</span></span> | <span data-ttu-id="bb790-112">dateTime</span><span class="sxs-lookup"><span data-stu-id="bb790-112">dateTime</span></span> | <span data-ttu-id="bb790-113">A hora do sistema de quando o evento foi registrado.</span><span class="sxs-lookup"><span data-stu-id="bb790-113">The system time of when the event was logged.</span></span><br/> |
+| <span data-ttu-id="17647-111">SystemTime</span><span class="sxs-lookup"><span data-stu-id="17647-111">SystemTime</span></span> | <span data-ttu-id="17647-112">dateTime</span><span class="sxs-lookup"><span data-stu-id="17647-112">dateTime</span></span> | <span data-ttu-id="17647-113">A hora do sistema de quando o evento foi registrado.</span><span class="sxs-lookup"><span data-stu-id="17647-113">The system time of when the event was logged.</span></span><br/> |
 
 
 
-## <a name="requirements"></a><span data-ttu-id="bb790-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bb790-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="17647-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="17647-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="bb790-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="bb790-115">Requirement</span></span> | <span data-ttu-id="bb790-116">Valor</span><span class="sxs-lookup"><span data-stu-id="bb790-116">Value</span></span> |
+| <span data-ttu-id="17647-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="17647-115">Requirement</span></span> | <span data-ttu-id="17647-116">Valor</span><span class="sxs-lookup"><span data-stu-id="17647-116">Value</span></span> |
 |-------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="bb790-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bb790-117">Minimum supported client</span></span><br/> | <span data-ttu-id="bb790-118">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="bb790-118">Windows Vista \[desktop apps only\]</span></span><br/>       |
-| <span data-ttu-id="bb790-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="bb790-119">Minimum supported server</span></span><br/> | <span data-ttu-id="bb790-120">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="bb790-120">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
+| <span data-ttu-id="17647-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="17647-117">Minimum supported client</span></span><br/> | <span data-ttu-id="17647-118">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="17647-118">Windows Vista \[desktop apps only\]</span></span><br/>       |
+| <span data-ttu-id="17647-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="17647-119">Minimum supported server</span></span><br/> | <span data-ttu-id="17647-120">\[Somente aplicativos da área de trabalho do Windows Server 2008\]</span><span class="sxs-lookup"><span data-stu-id="17647-120">Windows Server 2008 \[desktop apps only\]</span></span><br/> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="bb790-121">Consulte também</span><span class="sxs-lookup"><span data-stu-id="bb790-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="17647-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="17647-121">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="bb790-122">**Elemento pai**</span><span class="sxs-lookup"><span data-stu-id="bb790-122">**Parent element**</span></span>
+<span data-ttu-id="17647-122">**Elemento pai**</span><span class="sxs-lookup"><span data-stu-id="17647-122">**Parent element**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="bb790-123">**Sistema (EventType)**</span><span class="sxs-lookup"><span data-stu-id="bb790-123">**System (EventType)**</span></span>](eventschema-system-eventtype-element.md)
+[<span data-ttu-id="17647-123">**Sistema (EventType)**</span><span class="sxs-lookup"><span data-stu-id="17647-123">**System (EventType)**</span></span>](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  
