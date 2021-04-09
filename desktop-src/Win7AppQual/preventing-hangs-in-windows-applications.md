@@ -1,0 +1,212 @@
+---
+description: Saiba como evitar interrupções em aplicativos do Windows para plataformas Windows 7 e Windows Server 2008 R2.
+ms.assetid: 698a046b-1934-49cd-a717-d61e7e1ec534
+title: Prevenção de interrupções em aplicativos do Windows
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 35a2d8fac95039f20c8c684c50138933c54750c3
+ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "104011896"
+---
+# <a name="preventing-hangs-in-windows-applications"></a>Prevenção de interrupções em aplicativos do Windows
+
+## <a name="affected-platforms"></a>Plataformas afetadas
+
+**Clientes** -Windows 7  
+**Servidores** -Windows Server 2008 R2  
+
+
+
+
+
+
+
+
+
+## <a name="description"></a>Descrição
+
+**Travas – perspectiva do usuário**
+
+Usuários como aplicativos responsivos. Quando eles clicam em um menu, eles querem que o aplicativo reaja instantaneamente, mesmo que ele esteja imprimindo seu trabalho no momento. Quando eles salvam um documento longo em seu processador de palavras favoritas, eles querem continuar digitando enquanto o disco ainda está girando. Os usuários obtêm impaciente bastante rapidamente quando o aplicativo não reage em tempo hábil à sua entrada.
+
+Um programador pode reconhecer muitos motivos legítimos para que um aplicativo não responda instantaneamente à entrada do usuário. O aplicativo pode estar ocupado recalculando alguns dados ou simplesmente aguardando a conclusão de sua e/s de disco. No entanto, da pesquisa do usuário, sabemos que os usuários ficam irritativos e frustrados após apenas alguns segundos de falta de resposta. Após 5 segundos, eles tentarão encerrar um aplicativo suspenso. Ao lado de falhas, o aplicativo paralisa a fonte mais comum de interrupção do usuário ao trabalhar com aplicativos Win32.
+
+Há muitas causas raiz diferentes para o travamento do aplicativo, e nem todos eles se manifestam em uma interface do usuário sem resposta. No entanto, uma interface do usuário sem resposta é uma das experiências mais comuns de travamento, e esse cenário atualmente recebe a maior parte do suporte do sistema operacional para a detecção, bem como para a recuperação. O Windows detecta automaticamente, coleta informações de depuração e, opcionalmente, encerra ou reinicia os aplicativos suspensos. Caso contrário, o usuário pode precisar reiniciar o computador para recuperar um aplicativo suspenso.
+
+**Travas-perspectiva do sistema operacional**
+
+Quando um aplicativo (ou mais precisamente, um thread) cria uma janela na área de trabalho, ele entra em um contrato implícito com o Gerenciador de Janelas da Área de Trabalho (DWM) para processar mensagens de janela em tempo hábil. O DWM posta mensagens (entrada de teclado/mouse e mensagens de outras janelas, bem como a si mesma) na fila de mensagens específica do thread. O thread recupera e despacha essas mensagens por meio de sua fila de mensagens. Se o thread não atender à fila chamando GetMessage (), as mensagens não serão processadas e a janela travará: ela não poderá redesenhar nem aceitar a entrada do usuário. O sistema operacional detecta esse estado anexando um temporizador a mensagens pendentes na fila de mensagens. Se uma mensagem não tiver sido recuperada em 5 segundos, o DWM declarará a janela a ser suspensa. Você pode consultar esse estado de janela em particular por meio da API IsHungAppWindow ().
+
+A detecção é apenas a primeira etapa. Neste ponto, o usuário ainda não pode até encerrar o aplicativo – clicar no botão X (fechar) resultaria em uma mensagem de fechamento do WM \_ , que estaria presa na fila de mensagens, assim como qualquer outra mensagem. O Gerenciador de Janelas da Área de Trabalho ajuda por ocultar e, em seguida, substituir a janela suspensa por uma cópia ' fantasma ' exibindo um bitmap da área do cliente anterior da janela original (e adicionando "não respondendo" à barra de título). Desde que o thread da janela original não recupere as mensagens, o DWM gerenciará ambas as janelas simultaneamente, mas permitirá que o usuário interaja apenas com a cópia fantasma. Usando essa janela fantasma, o usuário só pode mover, minimizar e, mais importante, fechar o aplicativo sem resposta, mas não alterar seu estado interno.
+
+A experiência de fantasma inteira tem esta aparência:
+
+![Captura de tela que mostra a caixa de diálogo ' o bloco de notas não está respondendo '.](images/preventinghangs-ghostwindow.gif)
+
+A Gerenciador de Janelas da Área de Trabalho faz uma última coisa; Ele se integra com Relatório de Erros do Windows, permitindo que o usuário não apenas feche e, opcionalmente, reinicie o aplicativo, mas também envie dados de depuração valiosos de volta à Microsoft. Você pode obter esses dados de suspensão para seus próprios aplicativos inscrevendo-se no site do winqual.
+
+O Windows 7 adicionou um novo recurso a essa experiência. O sistema operacional analisa o aplicativo suspenso e, em determinadas circunstâncias, dá ao usuário a opção de cancelar uma operação de bloqueio e fazer com que o aplicativo responda novamente. A implementação atual dá suporte ao cancelamento de bloqueio de chamadas de soquete; mais operações serão canceladas pelo usuário em versões futuras.
+
+Para integrar seu aplicativo com a experiência de recuperação de suspensão e tirar o máximo proveito dos dados disponíveis, siga estas etapas:
+
+-   Certifique-se de que seu aplicativo seja registrado para reinicialização e recuperação, fazendo com que o usuário fique mais livre possível. Um aplicativo registrado corretamente pode ser reiniciado automaticamente com a maioria de seus dados não salvos intactos. Isso funciona para travamentos e falhas do aplicativo.
+-   Obtenha informações de frequência, bem como depuração de dados para seus aplicativos suspensos e com falha do site winqual. Você pode usar essas informações mesmo durante sua versão beta para melhorar seu código. Consulte "introdução ao Relatório de Erros do Windows" para obter uma breve visão geral.
+-   Você pode desabilitar o recurso de fantasma em seu aplicativo por meio de uma chamada para DisableProcessWindowsGhosting (). No entanto, isso impede que o usuário médio feche e reinicie um aplicativo suspenso e, muitas vezes, termina em uma reinicialização.
+
+**Travas – perspectiva do desenvolvedor**
+
+O sistema operacional define um bloqueio de aplicativo como um thread de interface do usuário que não processou mensagens por pelo menos 5 segundos. Bugs óbvios causam algumas travas, por exemplo, um thread aguardando um evento que nunca é sinalizado e dois threads que mantêm um bloqueio e tentando adquirir os outros. Você pode corrigir esses bugs sem muito esforço. No entanto, muitos travamentos não são tão claros. Sim, o thread da interface do usuário não está recuperando mensagens, mas está igualmente ocupado fazendo outro trabalho "importante" e, eventualmente, voltará a processar mensagens.
+
+No entanto, o usuário percebe isso como um bug. O design deve corresponder às expectativas do usuário. Se o projeto do aplicativo leva a um aplicativo sem resposta, o design precisará ser alterado. Finalmente, e isso é importante, a falta de resposta não pode ser corrigida como um bug de código; Ele requer trabalho inicial durante a fase de design. Tentar adaptar a base de código existente de um aplicativo para tornar a interface do usuário mais responsiva geralmente é muito cara. As diretrizes de design a seguir podem ajudar.
+
+-   Tornar a capacidade de resposta da interface do usuário um requisito de nível superior; o usuário deve sempre se sentir no controle do seu aplicativo
+-   Verifique se os usuários podem cancelar operações que levam mais de um segundo para serem concluídas e/ou que as operações podem ser concluídas em segundo plano; fornecer a interface do usuário de progresso apropriada, se necessário
+
+![Captura de tela que mostra a caixa de diálogo ' copiando itens '.](images/preventinghangs-progressbar.gif)
+
+-   Enfileirar operações de execução longa ou bloqueio como tarefas em segundo plano (isso requer um mecanismo de mensagens bem pensado para informar o thread da interface do usuário quando o trabalho for concluído)
+-   Mantenha o código para threads de interface do usuário simples; remover o máximo possível de chamadas à API de bloqueio
+-   Mostrar janelas e caixas de diálogo somente quando estiverem prontas e totalmente operacionais. Se a caixa de diálogo precisar exibir informações com muitos recursos para calcular, mostre algumas informações genéricas primeiro e atualize-as imediatamente quando mais dados forem disponibilizados. Um bom exemplo é a caixa de diálogo Propriedades da pasta do Windows Explorer. Ele precisa exibir o tamanho total da pasta, informações que não estão prontamente disponíveis no sistema de arquivos. A caixa de diálogo aparece imediatamente e o campo "tamanho" é atualizado de um thread de trabalho:
+
+![Captura de tela que mostra a página ' geral ' das propriedades do Windows com o texto ' tamanho ', ' tamanho em disco ' e ' contém ' circulado.](images/preventinghangs-updatingdialog.gif)
+
+Infelizmente, não há uma maneira simples de criar e escrever um aplicativo responsivo. O Windows não fornece uma estrutura assíncrona simples que permitisse o agendamento fácil de operações de bloqueio ou execução demorada. As seções a seguir introduzem algumas das práticas recomendadas para evitar interrupções e destacar algumas das armadilhas comuns.
+
+## <a name="best-practices"></a>Práticas Recomendadas
+
+**Mantenha o thread da interface do usuário simples**
+
+A principal responsabilidade do thread de interface do usuário é recuperar e distribuir mensagens. Qualquer outro tipo de trabalho apresenta o risco de desligar as janelas pertencentes a esse thread.
+
+**Coincide**
+
+-   Mover algoritmos com uso intensivo de recursos ou não vinculados que resultam em operações de longa execução para threads de trabalho
+-   Identifique quantas chamadas de função de bloqueio forem possíveis e tente movê-las para threads de trabalho; qualquer função que chame em outra DLL deve ser suspeita
+-   Tome um esforço extra para remover todas as chamadas de API de rede e e/s de arquivo do seu thread de trabalho. Essas funções podem ser bloqueadas por muitos segundos, se não forem minutos. Se você precisar fazer qualquer tipo de e/s no thread da interface do usuário, considere O uso de e/s assíncrona
+-   Lembre-se de que seu thread de interface do usuário também está atendendo a todos os servidores COM de Sta (single-threaded apartment) hospedados pelo seu processo; Se você fizer uma chamada de bloqueio, esses servidores COM deixarão de responder até que você atenda à fila de mensagens novamente
+
+**Não:**
+
+-   Aguardar qualquer objeto de kernel (como evento ou mutex) por mais de um período muito curto; Se você precisar esperar, considere o uso de MsgWaitForMultipleObjects (), que será desbloqueado quando uma nova mensagem chegar
+-   Compartilhe a fila de mensagens da janela de um thread com outro thread usando a função AttachThreadInput (). Não é muito difícil sincronizar corretamente o acesso à fila, também pode impedir que o sistema operacional Windows detecte corretamente uma janela suspensa
+-   Use TerminateThread () em qualquer um de seus threads de trabalho. Encerrar um thread dessa maneira não permitirá que ele libere bloqueios ou eventos de sinal e possa resultar facilmente em objetos de sincronização órfãos
+-   Chame qualquer código "desconhecido" do seu thread de interface do usuário. Isso é especialmente verdadeiro se seu aplicativo tiver um modelo de extensibilidade; Não há nenhuma garantia de que o código de terceiros siga suas diretrizes de capacidade de resposta
+-   Faça qualquer tipo de bloqueio de chamada de difusão; SendMessage ( \_ difusão HWND) coloca você no mercê de todos os aplicativos mal escritos em execução no momento
+
+**Implementar padrões assíncronos**
+
+Remover operações de execução longa ou de bloqueio do thread da interface do usuário requer a implementação de uma estrutura assíncrona que permita o descarregamento dessas operações para threads de trabalho.
+
+**Coincide**
+
+-   Use APIs assíncronas de mensagem de janela em seu thread de interface do usuário, especialmente substituindo SendMessage por um de seus pares sem bloqueio: SendNotifyMessage ou SendMessageCallback
+-   Use threads em segundo plano para executar tarefas de execução longa ou de bloqueio. Usar a nova API do pool de threads para implementar seus threads de trabalho
+-   Fornecer suporte ao cancelamento para tarefas em segundo plano de execução longa. Para bloquear operações de e/s, use o cancelamento de e/s, mas somente como último recurso; Não é fácil cancelar a operação ' direita '
+-   Implementar um design assíncrono para código gerenciado usando o padrão IAsyncResult ou usando eventos
+
+**Usar os bloqueios com sabedoria**
+
+Seu aplicativo ou DLL precisa de bloqueios para sincronizar o acesso às suas estruturas de dados internas. O uso de vários bloqueios aumenta o paralelismo e torna seu aplicativo mais responsivo. No entanto, o uso de vários bloqueios também aumenta a chance de adquirir esses bloqueios em diferentes ordens e causar o deadlock de seus threads. Se dois threads mantiverem um bloqueio e, em seguida, tentarem adquirir o bloqueio do outro thread, suas operações irão formar uma espera circular que bloqueia qualquer progresso de encaminhamento para esses threads. Você pode evitar esse deadlock somente garantindo que todos os threads no aplicativo sempre adquirem todos os bloqueios na mesma ordem. No entanto, nem sempre é fácil adquirir bloqueios na ordem ' direita '. Os componentes de software podem ser compostos, mas as aquisições de bloqueio não podem. Se o seu código chamar algum outro componente, os bloqueios desse componente agora se tornarão parte de sua ordem de bloqueio implícita, mesmo que você não tenha visibilidade nesses bloqueios.
+
+As coisas ficam ainda mais difíceis porque as operações de bloqueio incluem muito mais do que as funções usuais para seções críticas, mutexes e outros bloqueios tradicionais. Qualquer chamada de bloqueio que cruza os limites de thread tem propriedades de sincronização que podem resultar em um deadlock. O thread de chamada executa uma operação com a semântica ' Acquire ' e não pode desbloquear até que o thread de destino seja chamado. Algumas funções user32 (por exemplo, SendMessage), bem como muitas chamadas COM de bloqueio se enquadram nessa categoria.
+
+Pior ainda, o sistema operacional tem seu próprio bloqueio específico de processo interno que às vezes é mantido enquanto seu código é executado. Esse bloqueio é adquirido quando as DLLs são carregadas no processo e, portanto, são chamadas de "bloqueio de carregador". A função DllMain sempre é executada sob o bloqueio do carregador; Se você adquirir bloqueios em DllMain (e não deve), será necessário fazer com que o carregador trave a parte da sua ordem de bloqueio. Chamar determinadas APIs do Win32 também pode adquirir o bloqueio de carregador em suas funções de nome, como LoadLibraryEx, GetModuleHandle e especialmente CoCreateInstance.
+
+Para reunir tudo isso, examine o código de exemplo abaixo. Essa função adquire vários objetos de sincronização e define implicitamente uma ordem de bloqueio, algo que não é necessariamente óbvio na inspeção de cursores. Na entrada da função, o código adquire uma seção crítica e não a libera até que a função saia, tornando-a o nó superior em nossa hierarquia de bloqueio. Em seguida, o código chama a função do Win32 LoadIcon (), que, nos bastidores, pode chamar o carregador do sistema operacional para carregar esse binário. Essa operação adquiriria o bloqueio de carregador, que agora também se torna parte dessa hierarquia de bloqueio (verifique se a função DllMain não adquire o \_ bloqueio g cs). Em seguida, o código chama SendMessage (), uma operação de bloqueio entre threads, que não será retornada, a menos que o thread da interface do usuário responda. Novamente, verifique se o thread da interface do usuário nunca adquire o g \_ cs.
+
+```
+bool foo::bar (char* buffer)  
+{  
+      EnterCriticalSection(&g_cs);  
+      // Get 'new data' icon  
+      this.m_Icon = LoadIcon(hInst, MAKEINTRESOURCE(5));  
+      // Let UI thread know to update icon SendMessage(hWnd,WM_COMMAND,IDM_ICON,NULL);  
+      this.m_Params = GetParams(buffer);  
+      LeaveCriticalSection(&g_cs);
+      return true;  
+}  
+```
+
+Observando esse código, parece claro que tornamos implicitamente g \_ cs o bloqueio de nível superior em nossa hierarquia de bloqueio, mesmo se quiséssemos apenas sincronizar o acesso às variáveis de membro de classe.
+
+**Coincide**
+
+-   Crie uma hierarquia de bloqueio e obedeça a ela. Adicione todos os bloqueios necessários. Há muito mais primitivos de sincronização do que apenas mutex e CriticalSections; todos eles precisam ser incluídos. Inclua o bloqueio de carregador em sua hierarquia se você usar bloqueios em DllMain ()
+-   Concorde com o protocolo de bloqueio com suas dependências. Qualquer código que seu aplicativo chama ou que possa chamar seu aplicativo precisa compartilhar a mesma hierarquia de bloqueio
+-   Bloquear estruturas de dados não funções. Mova as aquisições de bloqueios para longe dos pontos de entrada de função e proteja apenas o acesso a dados com bloqueios. Se menos código operar sob um bloqueio, haverá menos chances de deadlocks
+-   Analise as aquisições e as liberações de bloqueio no código de tratamento de erros. Geralmente, a hierarquia de bloqueio se esqueceu ao tentar se recuperar de uma condição de erro
+-   Substituir bloqueios aninhados por contadores de referência-eles não podem deadlock. Elementos bloqueados individualmente em listas e tabelas são bons candidatos
+-   Tenha cuidado ao aguardar um identificador de thread de uma DLL. Sempre assuma que seu código pode ser chamado sob o bloqueio do carregador. É melhor fazer referência a seus recursos e permitir que o thread de trabalho faça sua própria limpeza (e, em seguida, use FreeLibraryAndExitThread para terminar de forma limpa)
+-   Use a API de passagem da cadeia de espera se desejar diagnosticar seus próprios deadlocks
+
+**Não:**
+
+-   Faça algo além do trabalho de inicialização muito simples em sua função DllMain (). Consulte a função de retorno de chamada DllMain para obter mais detalhes. Especialmente não chame LoadLibraryEx ou CoCreateInstance
+-   Escreva seus próprios primitivos de bloqueio. O código de sincronização personalizado pode facilmente introduzir Bugs sutis em sua base de código. Use a seleção avançada de objetos de sincronização de sistema operacional em vez disso
+-   Fazer qualquer trabalho nos construtores e destruidores para variáveis globais, eles são executados sob o bloqueio do carregador
+
+**Tenha cuidado com exceções**
+
+As exceções permitem a separação do fluxo normal do programa e do tratamento de erros. Por causa dessa separação, pode ser difícil saber o estado preciso do programa antes da exceção, e o manipulador de exceção pode perder etapas cruciais na restauração de um estado válido. Isso é especialmente verdadeiro para aquisições de bloqueio que precisam ser liberadas no manipulador para evitar deadlocks futuros.
+
+O código de exemplo a seguir ilustra esse problema. O acesso não associado à variável "buffer" eventualmente resultará em uma violação de acesso (AV). Esse AV é capturado pelo manipulador de exceção nativa, mas não tem uma maneira fácil de determinar se a seção crítica já foi adquirida no momento da exceção (o AV poderia até mesmo ocorrer em algum lugar no código EnterCriticalSection).
+
+```
+ BOOL bar (char* buffer)  
+{  
+   BOOL rc = FALSE;  
+   __try {  
+      EnterCriticalSection(&cs);  
+      while (*buffer++ != '&') ;  
+      rc = GetParams(buffer);  
+      LeaveCriticalSection(&cs);  
+   } __except (EXCEPTION_EXECUTE_HANDLER)  
+   {  
+      return FALSE;  
+   } 
+   return rc;  
+}  
+```
+
+**Coincide**
+
+-   Remover \_ \_ try/ \_ \_ Except sempre que possível; não use SetUnhandledExceptionFilter
+-   Empacote seus bloqueios em modelos de PTR automáticos personalizados \_ se você usar exceções de C++. O bloqueio deve ser liberado no destruidor. Para exceções nativas, libere os bloqueios em sua \_ \_ instrução Finally
+-   Tenha cuidado com o código em execução em um manipulador de exceção nativa; a exceção pode ter vazado muitos bloqueios, portanto, o manipulador não deve adquirir nenhum
+
+**Não:**
+
+-   Manipule exceções nativas se elas não forem necessárias ou requeridas pelas APIs do Win32. Se você usar manipuladores de exceção nativa para relatórios ou recuperação de dados após falhas catastróficas, considere usar o mecanismo do sistema operacional padrão de Relatório de Erros do Windows em vez disso
+-   Usar exceções do C++ com qualquer tipo de código de interface do usuário (user32); uma exceção gerada em um retorno de chamada percorrerá as camadas do código C fornecido pelo sistema operacional. Esse código não sabe sobre a semântica de desroll do C++
+
+## <a name="links-to-resources"></a>Links para recursos
+
+-   [Relatório de Erros do Windows](../wer/windows-error-reporting.md)
+-   [Design assíncrono](https://msdn.microsoft.com/library/ms228969(v=VS.80).aspx)
+-   [E/s assíncrona](../fileio/synchronous-and-asynchronous-i-o.md)
+-   [**Função AttachThreadInput**](/windows/win32/api/winuser/nf-winuser-attachthreadinput)
+-   [**\_classe PTR automaticamente**](https://msdn.microsoft.com/library/ew3fk483(v=VS.71).aspx)
+-   [**Função DisableProcessWindowsGhosting**](/windows/win32/api/winuser/nf-winuser-disableprocesswindowsghosting)
+-   [**Função de retorno de chamada DllMain**](../dlls/dllmain.md)
+-   [Eventos](https://msdn.microsoft.com/library/wewwczdw(v=VS.80).aspx)
+-   [**Função GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage)
+-   [Cancelamento de e/s](../fileio/canceling-pending-i-o-operations.md)
+-   [**Função IsHungAppWindow**](/windows/win32/api/winuser/nf-winuser-ishungappwindow)
+-   [Fila de mensagens](../winmsg/using-messages-and-message-queues.md)
+-   [**Função MsgWaitForMultipleObjects**](/windows/win32/api/winuser/nf-winuser-msgwaitformultipleobjects)
+-   [Nova API do pool de threads](../procthread/thread-pool-api.md)
+-   [**Função de mensagem**](/windows/win32/api/winuser/nf-winuser-postmessagea)
+-   [Reinicialização e recuperação](../recovery/registering-for-application-restart.md)
+-   [**Função SendMessageCallback**](/windows/win32/api/winuser/nf-winuser-sendmessagecallbacka)
+-   [**Função SendNotifyMessage**](/windows/win32/api/winuser/nf-winuser-sendnotifymessagea)
+-   [Objetos de sincronização](../sync/about-synchronization.md)
+-   [**Função TerminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread)
+-   [Relatório de Erros do Windows](../wer/windows-error-reporting.md)
+-   [Winqual](/windows-hardware/drivers/dashboard/winqual-submission-tool--winqualexe-)
+
+ 
+
+ 
