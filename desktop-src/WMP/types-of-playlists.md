@@ -23,24 +23,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005165"
 ---
-# <a name="types-of-playlists"></a><span data-ttu-id="13f6c-109">Tipos de listas de reprodução</span><span class="sxs-lookup"><span data-stu-id="13f6c-109">Types of Playlists</span></span>
+# <a name="types-of-playlists"></a><span data-ttu-id="ed72f-109">Tipos de listas de reprodução</span><span class="sxs-lookup"><span data-stu-id="ed72f-109">Types of Playlists</span></span>
 
-<span data-ttu-id="13f6c-110">As listas de reprodução do metarquivo do Windows Media, simplesmente chamadas de listas de reprodução neste documento, têm extensões. Wax,. wvx ou. asx.</span><span class="sxs-lookup"><span data-stu-id="13f6c-110">Windows Media metafile playlists, simply referred to as playlists in this document, have .wax, .wvx, or .asx extensions.</span></span> <span data-ttu-id="13f6c-111">As listas de reprodução com essas extensões são usadas para acessar arquivos de mídia do Windows com extensões de nome de arquivo. WMA,. wmv e. ASF, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="13f6c-111">Playlists with these extensions are used to access Windows Media files with .wma, .wmv, and .asf file name extensions, respectively.</span></span>
+<span data-ttu-id="ed72f-110">As listas de reprodução do metarquivo do Windows Media, simplesmente chamadas de listas de reprodução neste documento, têm extensões. Wax,. wvx ou. asx.</span><span class="sxs-lookup"><span data-stu-id="ed72f-110">Windows Media metafile playlists, simply referred to as playlists in this document, have .wax, .wvx, or .asx extensions.</span></span> <span data-ttu-id="ed72f-111">As listas de reprodução com essas extensões são usadas para acessar arquivos de mídia do Windows com extensões de nome de arquivo. WMA,. wmv e. ASF, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="ed72f-111">Playlists with these extensions are used to access Windows Media files with .wma, .wmv, and .asf file name extensions, respectively.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="13f6c-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="13f6c-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ed72f-112">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ed72f-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="13f6c-113">**Diretrizes de extensão de metarquivo**</span><span class="sxs-lookup"><span data-stu-id="13f6c-113">**Metafile Extension Guidelines**</span></span>](metafile-extension-guidelines.md)
+[<span data-ttu-id="ed72f-113">**Diretrizes de extensão de metarquivo**</span><span class="sxs-lookup"><span data-stu-id="ed72f-113">**Metafile Extension Guidelines**</span></span>](metafile-extension-guidelines.md)
 </dt> <dt>
 
-[<span data-ttu-id="13f6c-114">**Usando listas de reprodução de metarquivo**</span><span class="sxs-lookup"><span data-stu-id="13f6c-114">**Using Metafile Playlists**</span></span>](using-metafile-playlists.md)
+[<span data-ttu-id="ed72f-114">**Usando listas de reprodução de metarquivo**</span><span class="sxs-lookup"><span data-stu-id="ed72f-114">**Using Metafile Playlists**</span></span>](using-metafile-playlists.md)
 </dt> <dt>
 
-[<span data-ttu-id="13f6c-115">**Referência de elementos de metarquivo do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="13f6c-115">**Windows Media Metafile Elements Reference**</span></span>](windows-media-metafile-elements-reference.md)
+[<span data-ttu-id="ed72f-115">**Referência de elementos de metarquivo do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="ed72f-115">**Windows Media Metafile Elements Reference**</span></span>](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[<span data-ttu-id="13f6c-116">**Guia de metarquivo do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="13f6c-116">**Windows Media Metafile Guide**</span></span>](windows-media-metafile-guide.md)
+[<span data-ttu-id="ed72f-116">**Guia de metarquivo do Windows Media**</span><span class="sxs-lookup"><span data-stu-id="ed72f-116">**Windows Media Metafile Guide**</span></span>](windows-media-metafile-guide.md)
 </dt> </dl>
 
  
