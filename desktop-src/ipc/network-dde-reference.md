@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089864"
 ---
-# <a name="network-dde-reference"></a><span data-ttu-id="8e651-103">Referência DDE de rede</span><span class="sxs-lookup"><span data-stu-id="8e651-103">Network DDE Reference</span></span>
+# <a name="network-dde-reference"></a><span data-ttu-id="82de3-103">Referência DDE de rede</span><span class="sxs-lookup"><span data-stu-id="82de3-103">Network DDE Reference</span></span>
 
-<span data-ttu-id="8e651-104">\[Não há mais suporte para DDE de rede.</span><span class="sxs-lookup"><span data-stu-id="8e651-104">\[Network DDE is no longer supported.</span></span> <span data-ttu-id="8e651-105">Nddeapi.dll está presente no Windows Vista, mas todas as chamadas de função retornam NDDE \_ não \_ implementado.\]</span><span class="sxs-lookup"><span data-stu-id="8e651-105">Nddeapi.dll is present on Windows Vista, but all function calls return NDDE\_NOT\_IMPLEMENTED.\]</span></span>
+<span data-ttu-id="82de3-104">\[Não há mais suporte para DDE de rede.</span><span class="sxs-lookup"><span data-stu-id="82de3-104">\[Network DDE is no longer supported.</span></span> <span data-ttu-id="82de3-105">Nddeapi.dll está presente no Windows Vista, mas todas as chamadas de função retornam NDDE \_ não \_ implementado.\]</span><span class="sxs-lookup"><span data-stu-id="82de3-105">Nddeapi.dll is present on Windows Vista, but all function calls return NDDE\_NOT\_IMPLEMENTED.\]</span></span>
 
-<span data-ttu-id="8e651-106">Os seguintes elementos são usados com DDE de rede:</span><span class="sxs-lookup"><span data-stu-id="8e651-106">This following elements are used with network DDE:</span></span>
+<span data-ttu-id="82de3-106">Os seguintes elementos são usados com DDE de rede:</span><span class="sxs-lookup"><span data-stu-id="82de3-106">This following elements are used with network DDE:</span></span>
 
--   [<span data-ttu-id="8e651-107">Funções DDE de rede</span><span class="sxs-lookup"><span data-stu-id="8e651-107">Network DDE Functions</span></span>](network-dde-functions.md)
--   [<span data-ttu-id="8e651-108">Estruturas DDE de rede</span><span class="sxs-lookup"><span data-stu-id="8e651-108">Network DDE Structures</span></span>](network-dde-structures.md)
+-   [<span data-ttu-id="82de3-107">Funções DDE de rede</span><span class="sxs-lookup"><span data-stu-id="82de3-107">Network DDE Functions</span></span>](network-dde-functions.md)
+-   [<span data-ttu-id="82de3-108">Estruturas DDE de rede</span><span class="sxs-lookup"><span data-stu-id="82de3-108">Network DDE Structures</span></span>](network-dde-structures.md)
 
  
 

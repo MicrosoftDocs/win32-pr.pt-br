@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089985"
 ---
-# <a name="integer"></a><span data-ttu-id="54520-104">Integer</span><span class="sxs-lookup"><span data-stu-id="54520-104">Integer</span></span>
+# <a name="integer"></a><span data-ttu-id="fb069-104">Integer</span><span class="sxs-lookup"><span data-stu-id="fb069-104">Integer</span></span>
 
-<span data-ttu-id="54520-105">O tipo de dados Integer é um valor inteiro de dois bytes.</span><span class="sxs-lookup"><span data-stu-id="54520-105">The Integer data type is a two-byte integer value.</span></span> <span data-ttu-id="54520-106">A menos que seja restrito de outra forma, o intervalo de valores válidos é de – 32.767 a + 32.767.</span><span class="sxs-lookup"><span data-stu-id="54520-106">Unless otherwise restricted, the range of legal values is from –32,767 to +32,767.</span></span>
+<span data-ttu-id="fb069-105">O tipo de dados Integer é um valor inteiro de dois bytes.</span><span class="sxs-lookup"><span data-stu-id="fb069-105">The Integer data type is a two-byte integer value.</span></span> <span data-ttu-id="fb069-106">A menos que seja restrito de outra forma, o intervalo de valores válidos é de – 32.767 a + 32.767.</span><span class="sxs-lookup"><span data-stu-id="fb069-106">Unless otherwise restricted, the range of legal values is from –32,767 to +32,767.</span></span>
 
  
 

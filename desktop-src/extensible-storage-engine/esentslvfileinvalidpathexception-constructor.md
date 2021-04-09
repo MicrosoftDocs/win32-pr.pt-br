@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090134"
 ---
-# <a name="esentslvfileinvalidpathexception-constructor"></a><span data-ttu-id="78791-103">Construtor EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="78791-103">EsentSLVFileInvalidPathException constructor</span></span>
+# <a name="esentslvfileinvalidpathexception-constructor"></a><span data-ttu-id="d0ac0-103">Construtor EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="d0ac0-103">EsentSLVFileInvalidPathException constructor</span></span>
 
-<span data-ttu-id="78791-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="78791-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="78791-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="78791-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="d0ac0-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d0ac0-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="d0ac0-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d0ac0-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="78791-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="78791-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d0ac0-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d0ac0-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New EsentSLVFileInvalidPathException()
 public EsentSLVFileInvalidPathException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="78791-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="78791-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d0ac0-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="d0ac0-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="78791-108">Referência</span><span class="sxs-lookup"><span data-stu-id="78791-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="d0ac0-108">Referência</span><span class="sxs-lookup"><span data-stu-id="d0ac0-108">Reference</span></span>
 
-[<span data-ttu-id="78791-109">Classe EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="78791-109">EsentSLVFileInvalidPathException class</span></span>](./esentslvfileinvalidpathexception-class.md)
+[<span data-ttu-id="d0ac0-109">Classe EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="d0ac0-109">EsentSLVFileInvalidPathException class</span></span>](./esentslvfileinvalidpathexception-class.md)
 
-[<span data-ttu-id="78791-110">Membros do EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="78791-110">EsentSLVFileInvalidPathException members</span></span>](./esentslvfileinvalidpathexception-members.md)
+[<span data-ttu-id="d0ac0-110">Membros do EsentSLVFileInvalidPathException</span><span class="sxs-lookup"><span data-stu-id="d0ac0-110">EsentSLVFileInvalidPathException members</span></span>](./esentslvfileinvalidpathexception-members.md)
 
-[<span data-ttu-id="78791-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="78791-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="d0ac0-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d0ac0-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
