@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005240"
 ---
-# <a name="creating-a-virtual-function-table-for-a-stream-handler"></a><span data-ttu-id="4294e-103">Criando uma tabela de função virtual para um manipulador de fluxo</span><span class="sxs-lookup"><span data-stu-id="4294e-103">Creating a Virtual Function Table for a Stream Handler</span></span>
+# <a name="creating-a-virtual-function-table-for-a-stream-handler"></a><span data-ttu-id="65215-103">Criando uma tabela de função virtual para um manipulador de fluxo</span><span class="sxs-lookup"><span data-stu-id="65215-103">Creating a Virtual Function Table for a Stream Handler</span></span>
 
-<span data-ttu-id="4294e-104">O exemplo a seguir (escrito em C) mostra como um aplicativo (AVIBall) cria a tabela de funções virtuais usada para referenciar seus serviços.</span><span class="sxs-lookup"><span data-stu-id="4294e-104">The following example (written in C) shows how an application (AVIBall) creates the virtual function table used to reference its services.</span></span>
+<span data-ttu-id="65215-104">O exemplo a seguir (escrito em C) mostra como um aplicativo (AVIBall) cria a tabela de funções virtuais usada para referenciar seus serviços.</span><span class="sxs-lookup"><span data-stu-id="65215-104">The following example (written in C) shows how an application (AVIBall) creates the virtual function table used to reference its services.</span></span>
 
 
 ```C++
@@ -62,7 +62,7 @@ IAVIStreamVtbl AVIBallHandler = {
 
 
 
-<span data-ttu-id="4294e-105">Os manipuladores de arquivo usam um procedimento semelhante, exceto que usam uma definição diferente para a tabela de funções virtuais.</span><span class="sxs-lookup"><span data-stu-id="4294e-105">File handlers use a similar procedure, except they use a different definition for the virtual function table.</span></span>
+<span data-ttu-id="65215-105">Os manipuladores de arquivo usam um procedimento semelhante, exceto que usam uma definição diferente para a tabela de funções virtuais.</span><span class="sxs-lookup"><span data-stu-id="65215-105">File handlers use a similar procedure, except they use a different definition for the virtual function table.</span></span>
 
  
 

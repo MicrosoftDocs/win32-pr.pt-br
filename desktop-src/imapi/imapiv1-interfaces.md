@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005162"
 ---
-# <a name="imapiv1-interfaces"></a><span data-ttu-id="d2060-103">Interfaces IMAPIv1</span><span class="sxs-lookup"><span data-stu-id="d2060-103">IMAPIv1 Interfaces</span></span>
+# <a name="imapiv1-interfaces"></a><span data-ttu-id="8de1e-103">Interfaces IMAPIv1</span><span class="sxs-lookup"><span data-stu-id="8de1e-103">IMAPIv1 Interfaces</span></span>
 
-<span data-ttu-id="d2060-104">A seguir estão as interfaces IMAPi.</span><span class="sxs-lookup"><span data-stu-id="d2060-104">The following are the IMAPI interfaces.</span></span>
+<span data-ttu-id="8de1e-104">A seguir estão as interfaces IMAPi.</span><span class="sxs-lookup"><span data-stu-id="8de1e-104">The following are the IMAPI interfaces.</span></span>
 
 <dl>
 
-[<span data-ttu-id="d2060-105">**IDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="d2060-105">**IDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscmaster)  
-[<span data-ttu-id="d2060-106">**IDiscRecorder**</span><span class="sxs-lookup"><span data-stu-id="d2060-106">**IDiscRecorder**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscrecorder)  
-[<span data-ttu-id="d2060-107">**IRedbookDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="d2060-107">**IRedbookDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-iredbookdiscmaster)  
-[<span data-ttu-id="d2060-108">**IJolietDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="d2060-108">**IJolietDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-ijolietdiscmaster)  
-[<span data-ttu-id="d2060-109">**IDiscMasterProgressEvents**</span><span class="sxs-lookup"><span data-stu-id="d2060-109">**IDiscMasterProgressEvents**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscmasterprogressevents)  
+[<span data-ttu-id="8de1e-105">**IDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="8de1e-105">**IDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscmaster)  
+[<span data-ttu-id="8de1e-106">**IDiscRecorder**</span><span class="sxs-lookup"><span data-stu-id="8de1e-106">**IDiscRecorder**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscrecorder)  
+[<span data-ttu-id="8de1e-107">**IRedbookDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="8de1e-107">**IRedbookDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-iredbookdiscmaster)  
+[<span data-ttu-id="8de1e-108">**IJolietDiscMaster**</span><span class="sxs-lookup"><span data-stu-id="8de1e-108">**IJolietDiscMaster**</span></span>](/windows/desktop/api/Imapi/nn-imapi-ijolietdiscmaster)  
+[<span data-ttu-id="8de1e-109">**IDiscMasterProgressEvents**</span><span class="sxs-lookup"><span data-stu-id="8de1e-109">**IDiscMasterProgressEvents**</span></span>](/windows/desktop/api/Imapi/nn-imapi-idiscmasterprogressevents)  
 </dl>
 
  

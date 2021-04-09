@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005313"
 ---
-# <a name="imsrdpdevicecollection-methods"></a><span data-ttu-id="16037-103">Métodos IMsRdpDeviceCollection</span><span class="sxs-lookup"><span data-stu-id="16037-103">IMsRdpDeviceCollection Methods</span></span>
+# <a name="imsrdpdevicecollection-methods"></a><span data-ttu-id="a8aa5-103">Métodos IMsRdpDeviceCollection</span><span class="sxs-lookup"><span data-stu-id="a8aa5-103">IMsRdpDeviceCollection Methods</span></span>
 
-<span data-ttu-id="16037-104">A interface [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="16037-104">The [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md) interface exposes the following methods.</span></span>
+<span data-ttu-id="a8aa5-104">A interface [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a8aa5-104">The [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="16037-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="16037-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="a8aa5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a8aa5-105">In this section</span></span>
 
--   [<span data-ttu-id="16037-106">**Método RescanDevices**</span><span class="sxs-lookup"><span data-stu-id="16037-106">**RescanDevices method**</span></span>](imsrdpdevicecollection-rescandevices.md)
+-   [<span data-ttu-id="a8aa5-106">**Método RescanDevices**</span><span class="sxs-lookup"><span data-stu-id="a8aa5-106">**RescanDevices method**</span></span>](imsrdpdevicecollection-rescandevices.md)
 
  
 
