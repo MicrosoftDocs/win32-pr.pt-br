@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005396"
 ---
-# <a name="multimedia-appendix"></a><span data-ttu-id="c8122-103">Apêndice de multimídia</span><span class="sxs-lookup"><span data-stu-id="c8122-103">Multimedia Appendix</span></span>
+# <a name="multimedia-appendix"></a><span data-ttu-id="39b6c-103">Apêndice de multimídia</span><span class="sxs-lookup"><span data-stu-id="39b6c-103">Multimedia Appendix</span></span>
 
-<span data-ttu-id="c8122-104">Esta seção contém os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="c8122-104">This section contains the following topics:</span></span>
+<span data-ttu-id="39b6c-104">Esta seção contém os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="39b6c-104">This section contains the following topics:</span></span>
 
--   [<span data-ttu-id="c8122-105">Especificações de PC multimídia</span><span class="sxs-lookup"><span data-stu-id="c8122-105">Multimedia PC Specifications</span></span>](multimedia-pc-specifications.md)
--   [<span data-ttu-id="c8122-106">Identificadores de fabricante e produto</span><span class="sxs-lookup"><span data-stu-id="c8122-106">Manufacturer and Product Identifiers</span></span>](manufacturer-and-product-identifiers.md)
--   [<span data-ttu-id="c8122-107">Drivers instaláveis</span><span class="sxs-lookup"><span data-stu-id="c8122-107">Installable Drivers</span></span>](installable-drivers.md)
+-   [<span data-ttu-id="39b6c-105">Especificações de PC multimídia</span><span class="sxs-lookup"><span data-stu-id="39b6c-105">Multimedia PC Specifications</span></span>](multimedia-pc-specifications.md)
+-   [<span data-ttu-id="39b6c-106">Identificadores de fabricante e produto</span><span class="sxs-lookup"><span data-stu-id="39b6c-106">Manufacturer and Product Identifiers</span></span>](manufacturer-and-product-identifiers.md)
+-   [<span data-ttu-id="39b6c-107">Drivers instaláveis</span><span class="sxs-lookup"><span data-stu-id="39b6c-107">Installable Drivers</span></span>](installable-drivers.md)
 
-## <a name="related-topics"></a><span data-ttu-id="c8122-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c8122-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="39b6c-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="39b6c-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c8122-109">Multimídia do Windows</span><span class="sxs-lookup"><span data-stu-id="c8122-109">Windows Multimedia</span></span>](windows-multimedia-start-page.md)
+[<span data-ttu-id="39b6c-109">Multimídia do Windows</span><span class="sxs-lookup"><span data-stu-id="39b6c-109">Windows Multimedia</span></span>](windows-multimedia-start-page.md)
 </dt> </dl>
 
  
