@@ -21,179 +21,179 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/14/2020
 ms.locfileid: "104086726"
 ---
-# <a name="ms-ds-consistency-child-count-attribute"></a><span data-ttu-id="510bd-105">Atributo MS-DS-Consistency-filho-Count</span><span class="sxs-lookup"><span data-stu-id="510bd-105">MS-DS-Consistency-Child-Count attribute</span></span>
+# <a name="ms-ds-consistency-child-count-attribute"></a><span data-ttu-id="fc51c-105">Atributo MS-DS-Consistency-filho-Count</span><span class="sxs-lookup"><span data-stu-id="fc51c-105">MS-DS-Consistency-Child-Count attribute</span></span>
 
-<span data-ttu-id="510bd-106">Esse atributo é usado para verificar a consistência entre o diretório e outro objeto, banco de dados ou aplicativo, comparando uma contagem de objetos filho.</span><span class="sxs-lookup"><span data-stu-id="510bd-106">This attribute is used to check consistency between the directory and another object, database, or application, by comparing a count of child objects.</span></span>
+<span data-ttu-id="fc51c-106">Esse atributo é usado para verificar a consistência entre o diretório e outro objeto, banco de dados ou aplicativo, comparando uma contagem de objetos filho.</span><span class="sxs-lookup"><span data-stu-id="fc51c-106">This attribute is used to check consistency between the directory and another object, database, or application, by comparing a count of child objects.</span></span>
 
 
 
-| <span data-ttu-id="510bd-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-107">Entry</span></span> | <span data-ttu-id="510bd-108">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-108">Value</span></span> |
+| <span data-ttu-id="fc51c-107">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-107">Entry</span></span> | <span data-ttu-id="fc51c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-108">Value</span></span> |
 |-------------------|--------------------------------------|
-| <span data-ttu-id="510bd-109">CN</span><span class="sxs-lookup"><span data-stu-id="510bd-109">CN</span></span>                | <span data-ttu-id="510bd-110">MS-DS-Consistency-filho-Count</span><span class="sxs-lookup"><span data-stu-id="510bd-110">MS-DS-Consistency-Child-Count</span></span>        |
-| <span data-ttu-id="510bd-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="510bd-111">Ldap-Display-Name</span></span> | <span data-ttu-id="510bd-112">mS-DS-ConsistencyChildCount</span><span class="sxs-lookup"><span data-stu-id="510bd-112">mS-DS-ConsistencyChildCount</span></span>          |
-| <span data-ttu-id="510bd-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="510bd-113">Size</span></span>              | \-                                   |
-| <span data-ttu-id="510bd-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="510bd-114">Update Privilege</span></span>  | \-                                   |
-| <span data-ttu-id="510bd-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="510bd-115">Update Frequency</span></span>  | \-                                   |
-| <span data-ttu-id="510bd-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-116">Attribute-Id</span></span>      | <span data-ttu-id="510bd-117">1.2.840.113556.1.4.1361</span><span class="sxs-lookup"><span data-stu-id="510bd-117">1.2.840.113556.1.4.1361</span></span>              |
-| <span data-ttu-id="510bd-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="510bd-118">System-Id-Guid</span></span>    | <span data-ttu-id="510bd-119">178b7bc2-b63a-11d2-90e1-00c04fd91ab1</span><span class="sxs-lookup"><span data-stu-id="510bd-119">178b7bc2-b63a-11d2-90e1-00c04fd91ab1</span></span> |
-| <span data-ttu-id="510bd-120">Syntax</span><span class="sxs-lookup"><span data-stu-id="510bd-120">Syntax</span></span>            | [<span data-ttu-id="510bd-121">**Enumeração**</span><span class="sxs-lookup"><span data-stu-id="510bd-121">**Enumeration**</span></span>](s-enumeration.md) |
+| <span data-ttu-id="fc51c-109">CN</span><span class="sxs-lookup"><span data-stu-id="fc51c-109">CN</span></span>                | <span data-ttu-id="fc51c-110">MS-DS-Consistency-filho-Count</span><span class="sxs-lookup"><span data-stu-id="fc51c-110">MS-DS-Consistency-Child-Count</span></span>        |
+| <span data-ttu-id="fc51c-111">LDAP-Display-Name</span><span class="sxs-lookup"><span data-stu-id="fc51c-111">Ldap-Display-Name</span></span> | <span data-ttu-id="fc51c-112">mS-DS-ConsistencyChildCount</span><span class="sxs-lookup"><span data-stu-id="fc51c-112">mS-DS-ConsistencyChildCount</span></span>          |
+| <span data-ttu-id="fc51c-113">Tamanho</span><span class="sxs-lookup"><span data-stu-id="fc51c-113">Size</span></span>              | \-                                   |
+| <span data-ttu-id="fc51c-114">Privilégio de atualização</span><span class="sxs-lookup"><span data-stu-id="fc51c-114">Update Privilege</span></span>  | \-                                   |
+| <span data-ttu-id="fc51c-115">Frequência de atualização</span><span class="sxs-lookup"><span data-stu-id="fc51c-115">Update Frequency</span></span>  | \-                                   |
+| <span data-ttu-id="fc51c-116">Attribute-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-116">Attribute-Id</span></span>      | <span data-ttu-id="fc51c-117">1.2.840.113556.1.4.1361</span><span class="sxs-lookup"><span data-stu-id="fc51c-117">1.2.840.113556.1.4.1361</span></span>              |
+| <span data-ttu-id="fc51c-118">System-ID-GUID</span><span class="sxs-lookup"><span data-stu-id="fc51c-118">System-Id-Guid</span></span>    | <span data-ttu-id="fc51c-119">178b7bc2-b63a-11d2-90e1-00c04fd91ab1</span><span class="sxs-lookup"><span data-stu-id="fc51c-119">178b7bc2-b63a-11d2-90e1-00c04fd91ab1</span></span> |
+| <span data-ttu-id="fc51c-120">Syntax</span><span class="sxs-lookup"><span data-stu-id="fc51c-120">Syntax</span></span>            | [<span data-ttu-id="fc51c-121">**Enumeração**</span><span class="sxs-lookup"><span data-stu-id="fc51c-121">**Enumeration**</span></span>](s-enumeration.md) |
 
 
 
-## <a name="implementations"></a><span data-ttu-id="510bd-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="510bd-122">Implementations</span></span>
+## <a name="implementations"></a><span data-ttu-id="fc51c-122">Implementações</span><span class="sxs-lookup"><span data-stu-id="fc51c-122">Implementations</span></span>
 
--   [<span data-ttu-id="510bd-123">**Windows 2000 Server**</span><span class="sxs-lookup"><span data-stu-id="510bd-123">**Windows 2000 Server**</span></span>](#windows-2000-server)
--   [<span data-ttu-id="510bd-124">**Windows Server 2003**</span><span class="sxs-lookup"><span data-stu-id="510bd-124">**Windows Server 2003**</span></span>](#windows-server-2003)
--   [<span data-ttu-id="510bd-125">**ADAM**</span><span class="sxs-lookup"><span data-stu-id="510bd-125">**ADAM**</span></span>](#adam)
--   [<span data-ttu-id="510bd-126">**Windows Server 2003 R2**</span><span class="sxs-lookup"><span data-stu-id="510bd-126">**Windows Server 2003 R2**</span></span>](#windows-server-2003-r2)
--   [<span data-ttu-id="510bd-127">**Windows Server 2008**</span><span class="sxs-lookup"><span data-stu-id="510bd-127">**Windows Server 2008**</span></span>](#windows-server-2008)
--   [<span data-ttu-id="510bd-128">**Windows Server 2008 R2**</span><span class="sxs-lookup"><span data-stu-id="510bd-128">**Windows Server 2008 R2**</span></span>](#windows-server-2008-r2)
--   [<span data-ttu-id="510bd-129">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="510bd-129">**Windows Server 2012**</span></span>](#windows-server-2012)
+-   [<span data-ttu-id="fc51c-123">**Windows 2000 Server**</span><span class="sxs-lookup"><span data-stu-id="fc51c-123">**Windows 2000 Server**</span></span>](#windows-2000-server)
+-   [<span data-ttu-id="fc51c-124">**Windows Server 2003**</span><span class="sxs-lookup"><span data-stu-id="fc51c-124">**Windows Server 2003**</span></span>](#windows-server-2003)
+-   [<span data-ttu-id="fc51c-125">**ADAM**</span><span class="sxs-lookup"><span data-stu-id="fc51c-125">**ADAM**</span></span>](#adam)
+-   [<span data-ttu-id="fc51c-126">**Windows Server 2003 R2**</span><span class="sxs-lookup"><span data-stu-id="fc51c-126">**Windows Server 2003 R2**</span></span>](#windows-server-2003-r2)
+-   [<span data-ttu-id="fc51c-127">**Windows Server 2008**</span><span class="sxs-lookup"><span data-stu-id="fc51c-127">**Windows Server 2008**</span></span>](#windows-server-2008)
+-   [<span data-ttu-id="fc51c-128">**Windows Server 2008 R2**</span><span class="sxs-lookup"><span data-stu-id="fc51c-128">**Windows Server 2008 R2**</span></span>](#windows-server-2008-r2)
+-   [<span data-ttu-id="fc51c-129">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="fc51c-129">**Windows Server 2012**</span></span>](#windows-server-2012)
 
-## <a name="windows-2000-server"></a><span data-ttu-id="510bd-130">Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="510bd-130">Windows 2000 Server</span></span>
+## <a name="windows-2000-server"></a><span data-ttu-id="fc51c-130">Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="fc51c-130">Windows 2000 Server</span></span>
 
 
 
-| <span data-ttu-id="510bd-131">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-131">Entry</span></span> | <span data-ttu-id="510bd-132">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-132">Value</span></span> |
+| <span data-ttu-id="fc51c-131">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-131">Entry</span></span> | <span data-ttu-id="fc51c-132">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-132">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-133">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-133">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-134">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-134">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-135">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-135">System-Only</span></span>            | <span data-ttu-id="510bd-136">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-136">False</span></span>                           |
-| <span data-ttu-id="510bd-137">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-137">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-138">True</span><span class="sxs-lookup"><span data-stu-id="510bd-138">True</span></span>                            |
-| <span data-ttu-id="510bd-139">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-139">Is Indexed</span></span>             | <span data-ttu-id="510bd-140">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-140">False</span></span>                           |
-| <span data-ttu-id="510bd-141">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-141">In Global Catalog</span></span>      | <span data-ttu-id="510bd-142">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-142">False</span></span>                           |
-| <span data-ttu-id="510bd-143">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-143">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-144">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-144">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-145">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-145">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-146">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-146">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-147">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-147">Search-Flags</span></span>           | <span data-ttu-id="510bd-148">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-148">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-149">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-149">System-Flags</span></span>           | <span data-ttu-id="510bd-150">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-150">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-151">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-151">Classes used in</span></span>        | [<span data-ttu-id="510bd-152">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-152">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-133">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-133">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-134">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-134">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-135">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-135">System-Only</span></span>            | <span data-ttu-id="fc51c-136">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-136">False</span></span>                           |
+| <span data-ttu-id="fc51c-137">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-137">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-138">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-138">True</span></span>                            |
+| <span data-ttu-id="fc51c-139">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-139">Is Indexed</span></span>             | <span data-ttu-id="fc51c-140">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-140">False</span></span>                           |
+| <span data-ttu-id="fc51c-141">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-141">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-142">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-142">False</span></span>                           |
+| <span data-ttu-id="fc51c-143">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-143">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-144">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-144">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-145">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-145">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-146">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-146">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-147">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-147">Search-Flags</span></span>           | <span data-ttu-id="fc51c-148">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-148">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-149">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-149">System-Flags</span></span>           | <span data-ttu-id="fc51c-150">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-150">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-151">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-151">Classes used in</span></span>        | [<span data-ttu-id="fc51c-152">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-152">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="windows-server-2003"></a><span data-ttu-id="510bd-153">Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="510bd-153">Windows Server 2003</span></span>
+## <a name="windows-server-2003"></a><span data-ttu-id="fc51c-153">Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="fc51c-153">Windows Server 2003</span></span>
 
 
 
-| <span data-ttu-id="510bd-154">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-154">Entry</span></span> | <span data-ttu-id="510bd-155">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-155">Value</span></span> |
+| <span data-ttu-id="fc51c-154">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-154">Entry</span></span> | <span data-ttu-id="fc51c-155">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-155">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-156">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-156">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-157">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-157">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-158">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-158">System-Only</span></span>            | <span data-ttu-id="510bd-159">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-159">False</span></span>                           |
-| <span data-ttu-id="510bd-160">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-160">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-161">True</span><span class="sxs-lookup"><span data-stu-id="510bd-161">True</span></span>                            |
-| <span data-ttu-id="510bd-162">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-162">Is Indexed</span></span>             | <span data-ttu-id="510bd-163">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-163">False</span></span>                           |
-| <span data-ttu-id="510bd-164">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-164">In Global Catalog</span></span>      | <span data-ttu-id="510bd-165">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-165">False</span></span>                           |
-| <span data-ttu-id="510bd-166">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-166">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-167">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-167">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-168">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-168">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-169">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-169">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-170">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-170">Search-Flags</span></span>           | <span data-ttu-id="510bd-171">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-171">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-172">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-172">System-Flags</span></span>           | <span data-ttu-id="510bd-173">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-173">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-174">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-174">Classes used in</span></span>        | [<span data-ttu-id="510bd-175">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-175">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-156">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-156">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-157">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-157">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-158">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-158">System-Only</span></span>            | <span data-ttu-id="fc51c-159">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-159">False</span></span>                           |
+| <span data-ttu-id="fc51c-160">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-160">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-161">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-161">True</span></span>                            |
+| <span data-ttu-id="fc51c-162">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-162">Is Indexed</span></span>             | <span data-ttu-id="fc51c-163">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-163">False</span></span>                           |
+| <span data-ttu-id="fc51c-164">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-164">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-165">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-165">False</span></span>                           |
+| <span data-ttu-id="fc51c-166">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-166">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-167">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-167">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-168">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-168">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-169">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-169">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-170">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-170">Search-Flags</span></span>           | <span data-ttu-id="fc51c-171">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-171">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-172">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-172">System-Flags</span></span>           | <span data-ttu-id="fc51c-173">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-173">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-174">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-174">Classes used in</span></span>        | [<span data-ttu-id="fc51c-175">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-175">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a><span data-ttu-id="510bd-176">ADAM</span><span class="sxs-lookup"><span data-stu-id="510bd-176">ADAM</span></span>
+## <a name="adam"></a><span data-ttu-id="fc51c-176">ADAM</span><span class="sxs-lookup"><span data-stu-id="fc51c-176">ADAM</span></span>
 
 
 
-| <span data-ttu-id="510bd-177">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-177">Entry</span></span> | <span data-ttu-id="510bd-178">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-178">Value</span></span> |
+| <span data-ttu-id="fc51c-177">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-177">Entry</span></span> | <span data-ttu-id="fc51c-178">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-178">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-179">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-179">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-180">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-180">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-181">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-181">System-Only</span></span>            | <span data-ttu-id="510bd-182">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-182">False</span></span>                           |
-| <span data-ttu-id="510bd-183">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-183">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-184">True</span><span class="sxs-lookup"><span data-stu-id="510bd-184">True</span></span>                            |
-| <span data-ttu-id="510bd-185">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-185">Is Indexed</span></span>             | <span data-ttu-id="510bd-186">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-186">False</span></span>                           |
-| <span data-ttu-id="510bd-187">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-187">In Global Catalog</span></span>      | <span data-ttu-id="510bd-188">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-188">False</span></span>                           |
-| <span data-ttu-id="510bd-189">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-189">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-190">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-190">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-191">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-191">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-192">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-192">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-193">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-193">Search-Flags</span></span>           | <span data-ttu-id="510bd-194">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-194">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-195">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-195">System-Flags</span></span>           | <span data-ttu-id="510bd-196">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-196">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-197">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-197">Classes used in</span></span>        | [<span data-ttu-id="510bd-198">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-198">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-179">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-179">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-180">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-180">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-181">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-181">System-Only</span></span>            | <span data-ttu-id="fc51c-182">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-182">False</span></span>                           |
+| <span data-ttu-id="fc51c-183">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-183">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-184">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-184">True</span></span>                            |
+| <span data-ttu-id="fc51c-185">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-185">Is Indexed</span></span>             | <span data-ttu-id="fc51c-186">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-186">False</span></span>                           |
+| <span data-ttu-id="fc51c-187">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-187">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-188">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-188">False</span></span>                           |
+| <span data-ttu-id="fc51c-189">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-189">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-190">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-190">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-191">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-191">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-192">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-192">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-193">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-193">Search-Flags</span></span>           | <span data-ttu-id="fc51c-194">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-194">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-195">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-195">System-Flags</span></span>           | <span data-ttu-id="fc51c-196">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-196">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-197">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-197">Classes used in</span></span>        | [<span data-ttu-id="fc51c-198">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-198">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="windows-server-2003-r2"></a><span data-ttu-id="510bd-199">Windows Server 2003 R2</span><span class="sxs-lookup"><span data-stu-id="510bd-199">Windows Server 2003 R2</span></span>
+## <a name="windows-server-2003-r2"></a><span data-ttu-id="fc51c-199">Windows Server 2003 R2</span><span class="sxs-lookup"><span data-stu-id="fc51c-199">Windows Server 2003 R2</span></span>
 
 
 
-| <span data-ttu-id="510bd-200">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-200">Entry</span></span> | <span data-ttu-id="510bd-201">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-201">Value</span></span> |
+| <span data-ttu-id="fc51c-200">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-200">Entry</span></span> | <span data-ttu-id="fc51c-201">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-201">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-202">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-202">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-203">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-203">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-204">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-204">System-Only</span></span>            | <span data-ttu-id="510bd-205">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-205">False</span></span>                           |
-| <span data-ttu-id="510bd-206">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-206">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-207">True</span><span class="sxs-lookup"><span data-stu-id="510bd-207">True</span></span>                            |
-| <span data-ttu-id="510bd-208">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-208">Is Indexed</span></span>             | <span data-ttu-id="510bd-209">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-209">False</span></span>                           |
-| <span data-ttu-id="510bd-210">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-210">In Global Catalog</span></span>      | <span data-ttu-id="510bd-211">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-211">False</span></span>                           |
-| <span data-ttu-id="510bd-212">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-212">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-213">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-213">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-214">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-214">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-215">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-215">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-216">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-216">Search-Flags</span></span>           | <span data-ttu-id="510bd-217">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-217">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-218">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-218">System-Flags</span></span>           | <span data-ttu-id="510bd-219">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-219">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-220">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-220">Classes used in</span></span>        | [<span data-ttu-id="510bd-221">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-221">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-202">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-202">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-203">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-203">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-204">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-204">System-Only</span></span>            | <span data-ttu-id="fc51c-205">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-205">False</span></span>                           |
+| <span data-ttu-id="fc51c-206">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-206">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-207">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-207">True</span></span>                            |
+| <span data-ttu-id="fc51c-208">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-208">Is Indexed</span></span>             | <span data-ttu-id="fc51c-209">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-209">False</span></span>                           |
+| <span data-ttu-id="fc51c-210">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-210">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-211">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-211">False</span></span>                           |
+| <span data-ttu-id="fc51c-212">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-212">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-213">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-213">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-214">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-214">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-215">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-215">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-216">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-216">Search-Flags</span></span>           | <span data-ttu-id="fc51c-217">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-217">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-218">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-218">System-Flags</span></span>           | <span data-ttu-id="fc51c-219">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-219">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-220">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-220">Classes used in</span></span>        | [<span data-ttu-id="fc51c-221">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-221">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="windows-server-2008"></a><span data-ttu-id="510bd-222">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="510bd-222">Windows Server 2008</span></span>
+## <a name="windows-server-2008"></a><span data-ttu-id="fc51c-222">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="fc51c-222">Windows Server 2008</span></span>
 
 
 
-| <span data-ttu-id="510bd-223">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-223">Entry</span></span> | <span data-ttu-id="510bd-224">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-224">Value</span></span> |
+| <span data-ttu-id="fc51c-223">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-223">Entry</span></span> | <span data-ttu-id="fc51c-224">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-224">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-225">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-225">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-226">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-226">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-227">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-227">System-Only</span></span>            | <span data-ttu-id="510bd-228">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-228">False</span></span>                           |
-| <span data-ttu-id="510bd-229">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-229">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-230">True</span><span class="sxs-lookup"><span data-stu-id="510bd-230">True</span></span>                            |
-| <span data-ttu-id="510bd-231">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-231">Is Indexed</span></span>             | <span data-ttu-id="510bd-232">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-232">False</span></span>                           |
-| <span data-ttu-id="510bd-233">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-233">In Global Catalog</span></span>      | <span data-ttu-id="510bd-234">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-234">False</span></span>                           |
-| <span data-ttu-id="510bd-235">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-235">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-236">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-236">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-237">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-237">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-238">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-238">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-239">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-239">Search-Flags</span></span>           | <span data-ttu-id="510bd-240">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-240">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-241">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-241">System-Flags</span></span>           | <span data-ttu-id="510bd-242">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-242">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-243">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-243">Classes used in</span></span>        | [<span data-ttu-id="510bd-244">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-244">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-225">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-225">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-226">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-226">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-227">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-227">System-Only</span></span>            | <span data-ttu-id="fc51c-228">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-228">False</span></span>                           |
+| <span data-ttu-id="fc51c-229">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-229">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-230">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-230">True</span></span>                            |
+| <span data-ttu-id="fc51c-231">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-231">Is Indexed</span></span>             | <span data-ttu-id="fc51c-232">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-232">False</span></span>                           |
+| <span data-ttu-id="fc51c-233">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-233">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-234">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-234">False</span></span>                           |
+| <span data-ttu-id="fc51c-235">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-235">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-236">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-236">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-237">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-237">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-238">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-238">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-239">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-239">Search-Flags</span></span>           | <span data-ttu-id="fc51c-240">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-240">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-241">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-241">System-Flags</span></span>           | <span data-ttu-id="fc51c-242">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-242">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-243">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-243">Classes used in</span></span>        | [<span data-ttu-id="fc51c-244">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-244">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="windows-server-2008-r2"></a><span data-ttu-id="510bd-245">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="510bd-245">Windows Server 2008 R2</span></span>
+## <a name="windows-server-2008-r2"></a><span data-ttu-id="fc51c-245">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="fc51c-245">Windows Server 2008 R2</span></span>
 
 
 
-| <span data-ttu-id="510bd-246">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-246">Entry</span></span> | <span data-ttu-id="510bd-247">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-247">Value</span></span> |
+| <span data-ttu-id="fc51c-246">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-246">Entry</span></span> | <span data-ttu-id="fc51c-247">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-247">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-248">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-248">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-249">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-249">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-250">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-250">System-Only</span></span>            | <span data-ttu-id="510bd-251">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-251">False</span></span>                           |
-| <span data-ttu-id="510bd-252">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-252">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-253">True</span><span class="sxs-lookup"><span data-stu-id="510bd-253">True</span></span>                            |
-| <span data-ttu-id="510bd-254">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-254">Is Indexed</span></span>             | <span data-ttu-id="510bd-255">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-255">False</span></span>                           |
-| <span data-ttu-id="510bd-256">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-256">In Global Catalog</span></span>      | <span data-ttu-id="510bd-257">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-257">False</span></span>                           |
-| <span data-ttu-id="510bd-258">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-258">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-259">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-259">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-260">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-260">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-261">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-261">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-262">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-262">Search-Flags</span></span>           | <span data-ttu-id="510bd-263">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-263">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-264">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-264">System-Flags</span></span>           | <span data-ttu-id="510bd-265">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-265">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-266">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-266">Classes used in</span></span>        | [<span data-ttu-id="510bd-267">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-267">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-248">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-248">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-249">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-249">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-250">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-250">System-Only</span></span>            | <span data-ttu-id="fc51c-251">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-251">False</span></span>                           |
+| <span data-ttu-id="fc51c-252">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-252">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-253">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-253">True</span></span>                            |
+| <span data-ttu-id="fc51c-254">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-254">Is Indexed</span></span>             | <span data-ttu-id="fc51c-255">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-255">False</span></span>                           |
+| <span data-ttu-id="fc51c-256">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-256">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-257">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-257">False</span></span>                           |
+| <span data-ttu-id="fc51c-258">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-258">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-259">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-259">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-260">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-260">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-261">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-261">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-262">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-262">Search-Flags</span></span>           | <span data-ttu-id="fc51c-263">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-263">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-264">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-264">System-Flags</span></span>           | <span data-ttu-id="fc51c-265">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-265">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-266">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-266">Classes used in</span></span>        | [<span data-ttu-id="fc51c-267">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-267">**Top**</span></span>](c-top.md)<br/> |
 
 
 
-## <a name="windows-server-2012"></a><span data-ttu-id="510bd-268">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="510bd-268">Windows Server 2012</span></span>
+## <a name="windows-server-2012"></a><span data-ttu-id="fc51c-268">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="fc51c-268">Windows Server 2012</span></span>
 
 
 
-| <span data-ttu-id="510bd-269">Entrada</span><span class="sxs-lookup"><span data-stu-id="510bd-269">Entry</span></span> | <span data-ttu-id="510bd-270">Valor</span><span class="sxs-lookup"><span data-stu-id="510bd-270">Value</span></span> |
+| <span data-ttu-id="fc51c-269">Entrada</span><span class="sxs-lookup"><span data-stu-id="fc51c-269">Entry</span></span> | <span data-ttu-id="fc51c-270">Valor</span><span class="sxs-lookup"><span data-stu-id="fc51c-270">Value</span></span> |
 |------------------------|---------------------------------|
-| <span data-ttu-id="510bd-271">ID do link</span><span class="sxs-lookup"><span data-stu-id="510bd-271">Link-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-272">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="510bd-272">MAPI-Id</span></span>                | \-                              |
-| <span data-ttu-id="510bd-273">System-Only</span><span class="sxs-lookup"><span data-stu-id="510bd-273">System-Only</span></span>            | <span data-ttu-id="510bd-274">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-274">False</span></span>                           |
-| <span data-ttu-id="510bd-275">É de valor único</span><span class="sxs-lookup"><span data-stu-id="510bd-275">Is-Single-Valued</span></span>       | <span data-ttu-id="510bd-276">True</span><span class="sxs-lookup"><span data-stu-id="510bd-276">True</span></span>                            |
-| <span data-ttu-id="510bd-277">É indexado</span><span class="sxs-lookup"><span data-stu-id="510bd-277">Is Indexed</span></span>             | <span data-ttu-id="510bd-278">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-278">False</span></span>                           |
-| <span data-ttu-id="510bd-279">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="510bd-279">In Global Catalog</span></span>      | <span data-ttu-id="510bd-280">Falso</span><span class="sxs-lookup"><span data-stu-id="510bd-280">False</span></span>                           |
-| <span data-ttu-id="510bd-281">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="510bd-281">NT-Security-Descriptor</span></span> | <span data-ttu-id="510bd-282">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="510bd-282">O:BAG:BAD:S:</span></span>                    |
-| <span data-ttu-id="510bd-283">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="510bd-283">Range-Lower</span></span>            | \-                              |
-| <span data-ttu-id="510bd-284">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="510bd-284">Range-Upper</span></span>            | \-                              |
-| <span data-ttu-id="510bd-285">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-285">Search-Flags</span></span>           | <span data-ttu-id="510bd-286">0x00000000</span><span class="sxs-lookup"><span data-stu-id="510bd-286">0x00000000</span></span>                      |
-| <span data-ttu-id="510bd-287">System-Flags</span><span class="sxs-lookup"><span data-stu-id="510bd-287">System-Flags</span></span>           | <span data-ttu-id="510bd-288">0x00000010</span><span class="sxs-lookup"><span data-stu-id="510bd-288">0x00000010</span></span>                      |
-| <span data-ttu-id="510bd-289">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="510bd-289">Classes used in</span></span>        | [<span data-ttu-id="510bd-290">**Início**</span><span class="sxs-lookup"><span data-stu-id="510bd-290">**Top**</span></span>](c-top.md)<br/> |
+| <span data-ttu-id="fc51c-271">ID do link</span><span class="sxs-lookup"><span data-stu-id="fc51c-271">Link-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-272">MAPI-Id</span><span class="sxs-lookup"><span data-stu-id="fc51c-272">MAPI-Id</span></span>                | \-                              |
+| <span data-ttu-id="fc51c-273">System-Only</span><span class="sxs-lookup"><span data-stu-id="fc51c-273">System-Only</span></span>            | <span data-ttu-id="fc51c-274">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-274">False</span></span>                           |
+| <span data-ttu-id="fc51c-275">É de valor único</span><span class="sxs-lookup"><span data-stu-id="fc51c-275">Is-Single-Valued</span></span>       | <span data-ttu-id="fc51c-276">True</span><span class="sxs-lookup"><span data-stu-id="fc51c-276">True</span></span>                            |
+| <span data-ttu-id="fc51c-277">É indexado</span><span class="sxs-lookup"><span data-stu-id="fc51c-277">Is Indexed</span></span>             | <span data-ttu-id="fc51c-278">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-278">False</span></span>                           |
+| <span data-ttu-id="fc51c-279">No catálogo global</span><span class="sxs-lookup"><span data-stu-id="fc51c-279">In Global Catalog</span></span>      | <span data-ttu-id="fc51c-280">Falso</span><span class="sxs-lookup"><span data-stu-id="fc51c-280">False</span></span>                           |
+| <span data-ttu-id="fc51c-281">NT-Security-Descriptor</span><span class="sxs-lookup"><span data-stu-id="fc51c-281">NT-Security-Descriptor</span></span> | <span data-ttu-id="fc51c-282">O:BAG: INADEQUADO: S:</span><span class="sxs-lookup"><span data-stu-id="fc51c-282">O:BAG:BAD:S:</span></span>                    |
+| <span data-ttu-id="fc51c-283">Range-Lower</span><span class="sxs-lookup"><span data-stu-id="fc51c-283">Range-Lower</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-284">Range-Upper</span><span class="sxs-lookup"><span data-stu-id="fc51c-284">Range-Upper</span></span>            | \-                              |
+| <span data-ttu-id="fc51c-285">Search-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-285">Search-Flags</span></span>           | <span data-ttu-id="fc51c-286">0x00000000</span><span class="sxs-lookup"><span data-stu-id="fc51c-286">0x00000000</span></span>                      |
+| <span data-ttu-id="fc51c-287">System-Flags</span><span class="sxs-lookup"><span data-stu-id="fc51c-287">System-Flags</span></span>           | <span data-ttu-id="fc51c-288">0x00000010</span><span class="sxs-lookup"><span data-stu-id="fc51c-288">0x00000010</span></span>                      |
+| <span data-ttu-id="fc51c-289">Classes usadas em</span><span class="sxs-lookup"><span data-stu-id="fc51c-289">Classes used in</span></span>        | [<span data-ttu-id="fc51c-290">**Início**</span><span class="sxs-lookup"><span data-stu-id="fc51c-290">**Top**</span></span>](c-top.md)<br/> |
 
 
 
