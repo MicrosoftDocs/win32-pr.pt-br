@@ -1,0 +1,110 @@
+---
+description: A \_ classe CIM ProductPhysicalElements representa os elementos físicos que compõem um produto.
+ms.assetid: cf23098a-f61e-4778-883e-1a5138af3da0
+ms.tgt_platform: multiple
+title: Classe CIM_ProductPhysicalElements
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CIM_ProductPhysicalElements
+- CIM_ProductPhysicalElements.Component
+- CIM_ProductPhysicalElements.Product
+api_type:
+- DllExport
+api_location:
+- CIMWin32.dll
+ms.openlocfilehash: a581293426c421de0dd76636a9f446f245f6ab32
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104089039"
+---
+# <a name="cim_productphysicalelements-class"></a>\_Classe CIM ProductPhysicalElements
+
+A classe **CIM \_ ProductPhysicalElements** representa os elementos físicos que compõem um produto.
+
+> [!IMPORTANT]
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+
+ 
+
+A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+
+## <a name="syntax"></a>Sintaxe
+
+``` syntax
+[Abstract, UUID("{502F00A0-DB2B-11d2-85FC-0000F8102E5F}"), Aggregation, Association, AMENDMENT]
+class CIM_ProductPhysicalElements
+{
+  CIM_PhysicalElement REF Component;
+  CIM_Product         REF Product;
+};
+```
+
+## <a name="members"></a>Membros
+
+A classe **CIM \_ ProductPhysicalElements** tem estes tipos de membros:
+
+-   [Propriedades](#properties)
+
+### <a name="properties"></a>Propriedades
+
+A classe **CIM \_ ProductPhysicalElements** tem essas propriedades.
+
+<dl> <dt>
+
+**Componente**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **CIM \_ físicoelement**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> </dl>
+
+Referência ao elemento físico que faz parte do produto.
+
+</dd> <dt>
+
+**Product**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados **: \_ produto CIM**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+</dt> </dl>
+
+Referência ao produto.
+
+</dd> </dl>
+
+## <a name="remarks"></a>Comentários
+
+O WMI não implementa essa classe.
+
+Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
+
+
+
+ 
+
