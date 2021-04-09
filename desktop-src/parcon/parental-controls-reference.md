@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169751"
 ---
-# <a name="parental-controls-reference"></a><span data-ttu-id="3d559-103">Referência de controles dos pais</span><span class="sxs-lookup"><span data-stu-id="3d559-103">Parental Controls Reference</span></span>
+# <a name="parental-controls-reference"></a><span data-ttu-id="43a81-103">Referência de controles dos pais</span><span class="sxs-lookup"><span data-stu-id="43a81-103">Parental Controls Reference</span></span>
 
-<span data-ttu-id="3d559-104">Os controles dos pais fazem referência a informações sobre como interagir com as APIs de controles dos pais é dividida nas seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="3d559-104">Parental Controls reference information about how to interact with Parental Controls APIs is divided into the following sections:</span></span>
+<span data-ttu-id="43a81-104">Os controles dos pais fazem referência a informações sobre como interagir com as APIs de controles dos pais é dividida nas seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="43a81-104">Parental Controls reference information about how to interact with Parental Controls APIs is divided into the following sections:</span></span>
 
--   [<span data-ttu-id="3d559-105">Log de controles pelos pais</span><span class="sxs-lookup"><span data-stu-id="3d559-105">Parental Controls Logging</span></span>](parental-controls-logging.md)
--   [<span data-ttu-id="3d559-106">Controle dos pais API de conformidade mínima</span><span class="sxs-lookup"><span data-stu-id="3d559-106">Parental Controls Minimum Compliance API</span></span>](parental-controls-minimum-compliance-api.md)
--   [<span data-ttu-id="3d559-107">Controle dos pais API do provedor WMI</span><span class="sxs-lookup"><span data-stu-id="3d559-107">Parental Controls WMI Provider API</span></span>](parental-controls-wmi-provider-api.md)
+-   [<span data-ttu-id="43a81-105">Log de controles pelos pais</span><span class="sxs-lookup"><span data-stu-id="43a81-105">Parental Controls Logging</span></span>](parental-controls-logging.md)
+-   [<span data-ttu-id="43a81-106">Controle dos pais API de conformidade mínima</span><span class="sxs-lookup"><span data-stu-id="43a81-106">Parental Controls Minimum Compliance API</span></span>](parental-controls-minimum-compliance-api.md)
+-   [<span data-ttu-id="43a81-107">Controle dos pais API do provedor WMI</span><span class="sxs-lookup"><span data-stu-id="43a81-107">Parental Controls WMI Provider API</span></span>](parental-controls-wmi-provider-api.md)
 
  
 
