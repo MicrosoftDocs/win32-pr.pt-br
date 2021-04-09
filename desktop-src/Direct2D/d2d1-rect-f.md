@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104011998"
 ---
-# <a name="d2d1_rect_f"></a><span data-ttu-id="dc61d-105">D2D1 \_ Rect \_ F</span><span class="sxs-lookup"><span data-stu-id="dc61d-105">D2D1\_RECT\_F</span></span>
+# <a name="d2d1_rect_f"></a><span data-ttu-id="374c9-105">D2D1 \_ Rect \_ F</span><span class="sxs-lookup"><span data-stu-id="374c9-105">D2D1\_RECT\_F</span></span>
 
-<span data-ttu-id="dc61d-106">Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).</span><span class="sxs-lookup"><span data-stu-id="dc61d-106">Represents a rectangle defined by the coordinates of the upper-left corner (left, top) and the coordinates of the lower-right corner (right, bottom).</span></span>
+<span data-ttu-id="374c9-106">Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).</span><span class="sxs-lookup"><span data-stu-id="374c9-106">Represents a rectangle defined by the coordinates of the upper-left corner (left, top) and the coordinates of the lower-right corner (right, bottom).</span></span>
 
 
 ```C++
@@ -24,13 +24,13 @@ typedef D2D_RECT_F D2D1_RECT_F;
 
 
 
-## <a name="remarks"></a><span data-ttu-id="dc61d-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="dc61d-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="374c9-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="374c9-107">Remarks</span></span>
 
-<span data-ttu-id="dc61d-108">**D2d1 \_ RECT \_ f** é um novo nome para o struct [**f D2D \_ Rect \_**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) já definido.</span><span class="sxs-lookup"><span data-stu-id="dc61d-108">**D2D1\_RECT\_F** is a new name for the already defined [**D2D\_RECT\_F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) struct.</span></span>
+<span data-ttu-id="374c9-108">**D2d1 \_ RECT \_ f** é um novo nome para o struct [**f D2D \_ Rect \_**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) já definido.</span><span class="sxs-lookup"><span data-stu-id="374c9-108">**D2D1\_RECT\_F** is a new name for the already defined [**D2D\_RECT\_F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) struct.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="dc61d-109">Exemplos</span><span class="sxs-lookup"><span data-stu-id="dc61d-109">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="374c9-109">Exemplos</span><span class="sxs-lookup"><span data-stu-id="374c9-109">Examples</span></span>
 
-<span data-ttu-id="dc61d-110">O exemplo a seguir usa um [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) para desenhar e preencher vários retângulos.</span><span class="sxs-lookup"><span data-stu-id="dc61d-110">The following example uses an [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) to draw and fill several rectangles.</span></span> <span data-ttu-id="dc61d-111">Este exemplo produz a saída, conforme mostrado na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="dc61d-111">This example produces output as shown in the following illustration.</span></span>
+<span data-ttu-id="374c9-110">O exemplo a seguir usa um [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) para desenhar e preencher vários retângulos.</span><span class="sxs-lookup"><span data-stu-id="374c9-110">The following example uses an [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) to draw and fill several rectangles.</span></span> <span data-ttu-id="374c9-111">Este exemplo produz a saída, conforme mostrado na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="374c9-111">This example produces output as shown in the following illustration.</span></span>
 
 ![ilustração de dois retângulos em um plano de fundo de grade](images/drawrectangleexample-small.png)
 
@@ -116,29 +116,29 @@ HRESULT DemoApp::OnRender()
 
 
 
-<span data-ttu-id="dc61d-113">Para obter um tutorial relacionado, consulte [criando um aplicativo Direct2D simples](direct2d-quickstart.md).</span><span class="sxs-lookup"><span data-stu-id="dc61d-113">For a related tutorial, see [Creating a Simple Direct2D Application](direct2d-quickstart.md).</span></span>
+<span data-ttu-id="374c9-113">Para obter um tutorial relacionado, consulte [criando um aplicativo Direct2D simples](direct2d-quickstart.md).</span><span class="sxs-lookup"><span data-stu-id="374c9-113">For a related tutorial, see [Creating a Simple Direct2D Application](direct2d-quickstart.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="dc61d-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="dc61d-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="374c9-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="374c9-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="dc61d-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="dc61d-115">Requirement</span></span> | <span data-ttu-id="dc61d-116">Valor</span><span class="sxs-lookup"><span data-stu-id="dc61d-116">Value</span></span> |
+| <span data-ttu-id="374c9-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="374c9-115">Requirement</span></span> | <span data-ttu-id="374c9-116">Valor</span><span class="sxs-lookup"><span data-stu-id="374c9-116">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc61d-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc61d-117">Minimum supported client</span></span><br/> | <span data-ttu-id="dc61d-118">Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]</span><span class="sxs-lookup"><span data-stu-id="dc61d-118">Windows 7, Windows Vista with SP2 and Platform Update for Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                          |
-| <span data-ttu-id="dc61d-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="dc61d-119">Minimum supported server</span></span><br/> | <span data-ttu-id="dc61d-120">Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="dc61d-120">Windows Server 2008 R2, Windows Server 2008 with SP2 and Platform Update for Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/> |
-| <span data-ttu-id="dc61d-121">Número mínimo de telefone com suporte</span><span class="sxs-lookup"><span data-stu-id="dc61d-121">Minimum supported phone</span></span><br/>  | <span data-ttu-id="dc61d-122">Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]</span><span class="sxs-lookup"><span data-stu-id="dc61d-122">Windows Phone 8.1 \[Windows Phone Silverlight 8.1 and Windows Runtime apps\]</span></span><br/>                                                  |
-| <span data-ttu-id="dc61d-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="dc61d-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="dc61d-124"><dt>D2DBaseTypes. h (incluir D2d1. h)</dt></span><span class="sxs-lookup"><span data-stu-id="dc61d-124"><dt>D2DBaseTypes.h (include D2d1.h)</dt></span></span> </dl>                               |
+| <span data-ttu-id="374c9-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="374c9-117">Minimum supported client</span></span><br/> | <span data-ttu-id="374c9-118">Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]</span><span class="sxs-lookup"><span data-stu-id="374c9-118">Windows 7, Windows Vista with SP2 and Platform Update for Windows Vista \[desktop apps \| UWP apps\]</span></span><br/>                          |
+| <span data-ttu-id="374c9-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="374c9-119">Minimum supported server</span></span><br/> | <span data-ttu-id="374c9-120">Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="374c9-120">Windows Server 2008 R2, Windows Server 2008 with SP2 and Platform Update for Windows Server 2008 \[desktop apps \| UWP apps\]</span></span><br/> |
+| <span data-ttu-id="374c9-121">Número mínimo de telefone com suporte</span><span class="sxs-lookup"><span data-stu-id="374c9-121">Minimum supported phone</span></span><br/>  | <span data-ttu-id="374c9-122">Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]</span><span class="sxs-lookup"><span data-stu-id="374c9-122">Windows Phone 8.1 \[Windows Phone Silverlight 8.1 and Windows Runtime apps\]</span></span><br/>                                                  |
+| <span data-ttu-id="374c9-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="374c9-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="374c9-124"><dt>D2DBaseTypes. h (incluir D2d1. h)</dt></span><span class="sxs-lookup"><span data-stu-id="374c9-124"><dt>D2DBaseTypes.h (include D2d1.h)</dt></span></span> </dl>                               |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="dc61d-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="dc61d-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="374c9-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="374c9-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="dc61d-126">**D2D \_ Rect \_ F**</span><span class="sxs-lookup"><span data-stu-id="dc61d-126">**D2D\_RECT\_F**</span></span>](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f)
+[<span data-ttu-id="374c9-126">**D2D \_ Rect \_ F**</span><span class="sxs-lookup"><span data-stu-id="374c9-126">**D2D\_RECT\_F**</span></span>](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f)
 </dt> <dt>
 
-[<span data-ttu-id="dc61d-127">Criando um aplicativo Direct2D simples</span><span class="sxs-lookup"><span data-stu-id="dc61d-127">Creating a Simple Direct2D Application</span></span>](direct2d-quickstart.md)
+[<span data-ttu-id="374c9-127">Criando um aplicativo Direct2D simples</span><span class="sxs-lookup"><span data-stu-id="374c9-127">Creating a Simple Direct2D Application</span></span>](direct2d-quickstart.md)
 </dt> </dl>
 
  

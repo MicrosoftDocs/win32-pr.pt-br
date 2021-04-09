@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089824"
 ---
-# <a name="apijetbeginsession-method"></a><span data-ttu-id="b514d-103">Método API. JetBeginSession</span><span class="sxs-lookup"><span data-stu-id="b514d-103">Api.JetBeginSession method</span></span>
+# <a name="apijetbeginsession-method"></a><span data-ttu-id="21b8f-103">Método API. JetBeginSession</span><span class="sxs-lookup"><span data-stu-id="21b8f-103">Api.JetBeginSession method</span></span>
 
-<span data-ttu-id="b514d-104">Inicializar uma nova sessão ESENT.</span><span class="sxs-lookup"><span data-stu-id="b514d-104">Initialize a new ESENT session.</span></span>
+<span data-ttu-id="21b8f-104">Inicializar uma nova sessão ESENT.</span><span class="sxs-lookup"><span data-stu-id="21b8f-104">Initialize a new ESENT session.</span></span>
 
-<span data-ttu-id="b514d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b514d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="b514d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b514d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="21b8f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="21b8f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="21b8f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="21b8f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b514d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b514d-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="21b8f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="21b8f-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -65,40 +65,40 @@ public static void JetBeginSession(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="b514d-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b514d-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="21b8f-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="21b8f-108">Parameters</span></span>
 
-  - <span data-ttu-id="b514d-109">instance</span><span class="sxs-lookup"><span data-stu-id="b514d-109">instance</span></span>  
-    <span data-ttu-id="b514d-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b514d-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
+  - <span data-ttu-id="21b8f-109">instance</span><span class="sxs-lookup"><span data-stu-id="21b8f-109">instance</span></span>  
+    <span data-ttu-id="21b8f-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="21b8f-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
     
-    <span data-ttu-id="b514d-111">A instância inicializada na qual criar a sessão.</span><span class="sxs-lookup"><span data-stu-id="b514d-111">The initialized instance to create the session in.</span></span>
+    <span data-ttu-id="21b8f-111">A instância inicializada na qual criar a sessão.</span><span class="sxs-lookup"><span data-stu-id="21b8f-111">The initialized instance to create the session in.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b514d-112">sesid</span><span class="sxs-lookup"><span data-stu-id="b514d-112">sesid</span></span>  
-    <span data-ttu-id="b514d-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b514d-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="21b8f-112">sesid</span><span class="sxs-lookup"><span data-stu-id="21b8f-112">sesid</span></span>  
+    <span data-ttu-id="21b8f-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="21b8f-113">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="b514d-114">Retorna a sessão criada.</span><span class="sxs-lookup"><span data-stu-id="b514d-114">Returns the created session.</span></span>
+    <span data-ttu-id="21b8f-114">Retorna a sessão criada.</span><span class="sxs-lookup"><span data-stu-id="21b8f-114">Returns the created session.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b514d-115">Nome de Usuário</span><span class="sxs-lookup"><span data-stu-id="b514d-115">username</span></span>  
-    <span data-ttu-id="b514d-116">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="b514d-116">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="21b8f-115">Nome de Usuário</span><span class="sxs-lookup"><span data-stu-id="21b8f-115">username</span></span>  
+    <span data-ttu-id="21b8f-116">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="21b8f-116">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="b514d-117">O parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="b514d-117">The parameter is not used.</span></span>
+    <span data-ttu-id="21b8f-117">O parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="21b8f-117">The parameter is not used.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b514d-118">password</span><span class="sxs-lookup"><span data-stu-id="b514d-118">password</span></span>  
-    <span data-ttu-id="b514d-119">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="b514d-119">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="21b8f-118">password</span><span class="sxs-lookup"><span data-stu-id="21b8f-118">password</span></span>  
+    <span data-ttu-id="21b8f-119">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="21b8f-119">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="b514d-120">O parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="b514d-120">The parameter is not used.</span></span>
+    <span data-ttu-id="21b8f-120">O parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="21b8f-120">The parameter is not used.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b514d-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="b514d-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="21b8f-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="21b8f-121">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="b514d-122">Referência</span><span class="sxs-lookup"><span data-stu-id="b514d-122">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="21b8f-122">Referência</span><span class="sxs-lookup"><span data-stu-id="21b8f-122">Reference</span></span>
 
-[<span data-ttu-id="b514d-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="b514d-123">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="21b8f-123">Classe de API</span><span class="sxs-lookup"><span data-stu-id="21b8f-123">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="b514d-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="b514d-124">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="21b8f-124">Membros da API</span><span class="sxs-lookup"><span data-stu-id="21b8f-124">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="b514d-125">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="b514d-125">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="21b8f-125">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="21b8f-125">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
