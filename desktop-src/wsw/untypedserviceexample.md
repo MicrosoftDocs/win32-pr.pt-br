@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005193"
 ---
-# <a name="untypedserviceexample"></a><span data-ttu-id="ee016-107">UnTypedServiceExample</span><span class="sxs-lookup"><span data-stu-id="ee016-107">UnTypedServiceExample</span></span>
+# <a name="untypedserviceexample"></a><span data-ttu-id="91598-107">UnTypedServiceExample</span><span class="sxs-lookup"><span data-stu-id="91598-107">UnTypedServiceExample</span></span>
 
-<span data-ttu-id="ee016-108">Este exemplo mostra como implementar um serviço não tipado com o modelo de serviço.</span><span class="sxs-lookup"><span data-stu-id="ee016-108">This sample shows how implement an untyped service with Service Model.</span></span> <span data-ttu-id="ee016-109">Nesse caso, o modelo de serviço fornece a infraestrutura de placa do preparador.</span><span class="sxs-lookup"><span data-stu-id="ee016-109">Service Model in this case provides the boiler plate infrastructure.</span></span>
+<span data-ttu-id="91598-108">Este exemplo mostra como implementar um serviço não tipado com o modelo de serviço.</span><span class="sxs-lookup"><span data-stu-id="91598-108">This sample shows how implement an untyped service with Service Model.</span></span> <span data-ttu-id="91598-109">Nesse caso, o modelo de serviço fornece a infraestrutura de placa do preparador.</span><span class="sxs-lookup"><span data-stu-id="91598-109">Service Model in this case provides the boiler plate infrastructure.</span></span>
 
--   [<span data-ttu-id="ee016-110">UnTypedService. cpp</span><span class="sxs-lookup"><span data-stu-id="ee016-110">UnTypedService.cpp</span></span>](#untypedservicecpp)
--   [<span data-ttu-id="ee016-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ee016-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="ee016-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="ee016-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="91598-110">UnTypedService. cpp</span><span class="sxs-lookup"><span data-stu-id="91598-110">UnTypedService.cpp</span></span>](#untypedservicecpp)
+-   [<span data-ttu-id="91598-111">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="91598-111">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="91598-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="91598-112">Makefile</span></span>](#makefile)
 
-## <a name="untypedservicecpp"></a><span data-ttu-id="ee016-113">UnTypedService. cpp</span><span class="sxs-lookup"><span data-stu-id="ee016-113">UnTypedService.cpp</span></span>
+## <a name="untypedservicecpp"></a><span data-ttu-id="91598-113">UnTypedService. cpp</span><span class="sxs-lookup"><span data-stu-id="91598-113">UnTypedService.cpp</span></span>
 
 
 ```C++
@@ -360,7 +360,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="ee016-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="ee016-114">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="91598-114">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="91598-114">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -471,7 +471,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="ee016-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="ee016-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="91598-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="91598-115">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------
