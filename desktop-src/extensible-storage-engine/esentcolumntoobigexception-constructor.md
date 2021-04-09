@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089928"
 ---
-# <a name="esentcolumntoobigexception-constructor"></a><span data-ttu-id="28f74-103">Construtor EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="28f74-103">EsentColumnTooBigException constructor</span></span>
+# <a name="esentcolumntoobigexception-constructor"></a><span data-ttu-id="5298a-103">Construtor EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="5298a-103">EsentColumnTooBigException constructor</span></span>
 
-<span data-ttu-id="28f74-104">Inicializa uma nova instância da classe EsentColumnTooBigException.</span><span class="sxs-lookup"><span data-stu-id="28f74-104">Initializes a new instance of the EsentColumnTooBigException class.</span></span>
+<span data-ttu-id="5298a-104">Inicializa uma nova instância da classe EsentColumnTooBigException.</span><span class="sxs-lookup"><span data-stu-id="5298a-104">Initializes a new instance of the EsentColumnTooBigException class.</span></span>
 
-<span data-ttu-id="28f74-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="28f74-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="28f74-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="28f74-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5298a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5298a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5298a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5298a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="28f74-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="28f74-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5298a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5298a-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentColumnTooBigException()
 public EsentColumnTooBigException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="28f74-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="28f74-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5298a-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="5298a-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="28f74-109">Referência</span><span class="sxs-lookup"><span data-stu-id="28f74-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5298a-109">Referência</span><span class="sxs-lookup"><span data-stu-id="5298a-109">Reference</span></span>
 
-[<span data-ttu-id="28f74-110">Classe EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="28f74-110">EsentColumnTooBigException class</span></span>](./esentcolumntoobigexception-class.md)
+[<span data-ttu-id="5298a-110">Classe EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="5298a-110">EsentColumnTooBigException class</span></span>](./esentcolumntoobigexception-class.md)
 
-[<span data-ttu-id="28f74-111">Membros do EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="28f74-111">EsentColumnTooBigException members</span></span>](./esentcolumntoobigexception-members.md)
+[<span data-ttu-id="5298a-111">Membros do EsentColumnTooBigException</span><span class="sxs-lookup"><span data-stu-id="5298a-111">EsentColumnTooBigException members</span></span>](./esentcolumntoobigexception-members.md)
 
-[<span data-ttu-id="28f74-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="28f74-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5298a-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5298a-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
