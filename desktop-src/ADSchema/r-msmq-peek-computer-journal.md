@@ -20,92 +20,92 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/14/2020
 ms.locfileid: "104087186"
 ---
-# <a name="msmq-peek-computer-journal-extended-right"></a><span data-ttu-id="a9109-104">MSMQ-Peek-Computer-Journal Extended Right</span><span class="sxs-lookup"><span data-stu-id="a9109-104">msmq-Peek-computer-Journal extended right</span></span>
+# <a name="msmq-peek-computer-journal-extended-right"></a><span data-ttu-id="b7681-104">MSMQ-Peek-Computer-Journal Extended Right</span><span class="sxs-lookup"><span data-stu-id="b7681-104">msmq-Peek-computer-Journal extended right</span></span>
 
-<span data-ttu-id="a9109-105">Permite exibir mensagens na fila de diário do computador.</span><span class="sxs-lookup"><span data-stu-id="a9109-105">Allows peeking at messages in the Computer Journal queue.</span></span>
+<span data-ttu-id="b7681-105">Permite exibir mensagens na fila de diário do computador.</span><span class="sxs-lookup"><span data-stu-id="b7681-105">Allows peeking at messages in the Computer Journal queue.</span></span>
 
 
 
-| <span data-ttu-id="a9109-106">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-106">Entry</span></span> | <span data-ttu-id="a9109-107">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-107">Value</span></span> |
+| <span data-ttu-id="b7681-106">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-106">Entry</span></span> | <span data-ttu-id="b7681-107">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-107">Value</span></span> |
 |--------------|--------------------------------------|
-| <span data-ttu-id="a9109-108">CN</span><span class="sxs-lookup"><span data-stu-id="a9109-108">CN</span></span>           | <span data-ttu-id="a9109-109">MSMQ-Peek-Computer-Journal</span><span class="sxs-lookup"><span data-stu-id="a9109-109">msmq-Peek-computer-Journal</span></span>           |
-| <span data-ttu-id="a9109-110">Display-Name</span><span class="sxs-lookup"><span data-stu-id="a9109-110">Display-Name</span></span> | <span data-ttu-id="a9109-111">Inspecionar diário do computador</span><span class="sxs-lookup"><span data-stu-id="a9109-111">Peek Computer Journal</span></span>                |
-| <span data-ttu-id="a9109-112">GUID de direitos</span><span class="sxs-lookup"><span data-stu-id="a9109-112">Rights-GUID</span></span>  | <span data-ttu-id="a9109-113">4b6e08c3-df3c-11d1-9c86-006008764d0e</span><span class="sxs-lookup"><span data-stu-id="a9109-113">4b6e08c3-df3c-11d1-9c86-006008764d0e</span></span> |
+| <span data-ttu-id="b7681-108">CN</span><span class="sxs-lookup"><span data-stu-id="b7681-108">CN</span></span>           | <span data-ttu-id="b7681-109">MSMQ-Peek-Computer-Journal</span><span class="sxs-lookup"><span data-stu-id="b7681-109">msmq-Peek-computer-Journal</span></span>           |
+| <span data-ttu-id="b7681-110">Display-Name</span><span class="sxs-lookup"><span data-stu-id="b7681-110">Display-Name</span></span> | <span data-ttu-id="b7681-111">Inspecionar diário do computador</span><span class="sxs-lookup"><span data-stu-id="b7681-111">Peek Computer Journal</span></span>                |
+| <span data-ttu-id="b7681-112">GUID de direitos</span><span class="sxs-lookup"><span data-stu-id="b7681-112">Rights-GUID</span></span>  | <span data-ttu-id="b7681-113">4b6e08c3-df3c-11d1-9c86-006008764d0e</span><span class="sxs-lookup"><span data-stu-id="b7681-113">4b6e08c3-df3c-11d1-9c86-006008764d0e</span></span> |
 
 
 
-## <a name="implementations"></a><span data-ttu-id="a9109-114">Implementações</span><span class="sxs-lookup"><span data-stu-id="a9109-114">Implementations</span></span>
+## <a name="implementations"></a><span data-ttu-id="b7681-114">Implementações</span><span class="sxs-lookup"><span data-stu-id="b7681-114">Implementations</span></span>
 
--   [<span data-ttu-id="a9109-115">**Windows 2000 Server**</span><span class="sxs-lookup"><span data-stu-id="a9109-115">**Windows 2000 Server**</span></span>](#windows-2000-server)
--   [<span data-ttu-id="a9109-116">**Windows Server 2003**</span><span class="sxs-lookup"><span data-stu-id="a9109-116">**Windows Server 2003**</span></span>](#windows-server-2003)
--   [<span data-ttu-id="a9109-117">**Windows Server 2003 R2**</span><span class="sxs-lookup"><span data-stu-id="a9109-117">**Windows Server 2003 R2**</span></span>](#windows-server-2003-r2)
--   [<span data-ttu-id="a9109-118">**Windows Server 2008**</span><span class="sxs-lookup"><span data-stu-id="a9109-118">**Windows Server 2008**</span></span>](#windows-server-2008)
--   [<span data-ttu-id="a9109-119">**Windows Server 2008 R2**</span><span class="sxs-lookup"><span data-stu-id="a9109-119">**Windows Server 2008 R2**</span></span>](#windows-server-2008-r2)
--   [<span data-ttu-id="a9109-120">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="a9109-120">**Windows Server 2012**</span></span>](#windows-server-2012)
+-   [<span data-ttu-id="b7681-115">**Windows 2000 Server**</span><span class="sxs-lookup"><span data-stu-id="b7681-115">**Windows 2000 Server**</span></span>](#windows-2000-server)
+-   [<span data-ttu-id="b7681-116">**Windows Server 2003**</span><span class="sxs-lookup"><span data-stu-id="b7681-116">**Windows Server 2003**</span></span>](#windows-server-2003)
+-   [<span data-ttu-id="b7681-117">**Windows Server 2003 R2**</span><span class="sxs-lookup"><span data-stu-id="b7681-117">**Windows Server 2003 R2**</span></span>](#windows-server-2003-r2)
+-   [<span data-ttu-id="b7681-118">**Windows Server 2008**</span><span class="sxs-lookup"><span data-stu-id="b7681-118">**Windows Server 2008**</span></span>](#windows-server-2008)
+-   [<span data-ttu-id="b7681-119">**Windows Server 2008 R2**</span><span class="sxs-lookup"><span data-stu-id="b7681-119">**Windows Server 2008 R2**</span></span>](#windows-server-2008-r2)
+-   [<span data-ttu-id="b7681-120">**Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="b7681-120">**Windows Server 2012**</span></span>](#windows-server-2012)
 
-## <a name="windows-2000-server"></a><span data-ttu-id="a9109-121">Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="a9109-121">Windows 2000 Server</span></span>
+## <a name="windows-2000-server"></a><span data-ttu-id="b7681-121">Windows 2000 Server</span><span class="sxs-lookup"><span data-stu-id="b7681-121">Windows 2000 Server</span></span>
 
 
 
-| <span data-ttu-id="a9109-122">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-122">Entry</span></span> | <span data-ttu-id="a9109-123">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-123">Value</span></span> |
+| <span data-ttu-id="b7681-122">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-122">Entry</span></span> | <span data-ttu-id="b7681-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-123">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-124">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-124">Applies-To</span></span>              | [<span data-ttu-id="a9109-125">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-125">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-126">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-126">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-127">41</span><span class="sxs-lookup"><span data-stu-id="a9109-127">41</span></span>                                                           |
+| <span data-ttu-id="b7681-124">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-124">Applies-To</span></span>              | [<span data-ttu-id="b7681-125">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-125">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-126">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-126">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-127">41</span><span class="sxs-lookup"><span data-stu-id="b7681-127">41</span></span>                                                           |
 
 
 
-## <a name="windows-server-2003"></a><span data-ttu-id="a9109-128">Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="a9109-128">Windows Server 2003</span></span>
+## <a name="windows-server-2003"></a><span data-ttu-id="b7681-128">Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="b7681-128">Windows Server 2003</span></span>
 
 
 
-| <span data-ttu-id="a9109-129">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-129">Entry</span></span> | <span data-ttu-id="a9109-130">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-130">Value</span></span> |
+| <span data-ttu-id="b7681-129">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-129">Entry</span></span> | <span data-ttu-id="b7681-130">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-130">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-131">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-131">Applies-To</span></span>              | [<span data-ttu-id="a9109-132">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-132">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-133">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-133">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-134">41</span><span class="sxs-lookup"><span data-stu-id="a9109-134">41</span></span>                                                           |
+| <span data-ttu-id="b7681-131">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-131">Applies-To</span></span>              | [<span data-ttu-id="b7681-132">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-132">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-133">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-133">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-134">41</span><span class="sxs-lookup"><span data-stu-id="b7681-134">41</span></span>                                                           |
 
 
 
-## <a name="windows-server-2003-r2"></a><span data-ttu-id="a9109-135">Windows Server 2003 R2</span><span class="sxs-lookup"><span data-stu-id="a9109-135">Windows Server 2003 R2</span></span>
+## <a name="windows-server-2003-r2"></a><span data-ttu-id="b7681-135">Windows Server 2003 R2</span><span class="sxs-lookup"><span data-stu-id="b7681-135">Windows Server 2003 R2</span></span>
 
 
 
-| <span data-ttu-id="a9109-136">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-136">Entry</span></span> | <span data-ttu-id="a9109-137">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-137">Value</span></span> |
+| <span data-ttu-id="b7681-136">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-136">Entry</span></span> | <span data-ttu-id="b7681-137">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-137">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-138">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-138">Applies-To</span></span>              | [<span data-ttu-id="a9109-139">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-139">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-140">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-140">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-141">41</span><span class="sxs-lookup"><span data-stu-id="a9109-141">41</span></span>                                                           |
+| <span data-ttu-id="b7681-138">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-138">Applies-To</span></span>              | [<span data-ttu-id="b7681-139">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-139">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-140">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-140">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-141">41</span><span class="sxs-lookup"><span data-stu-id="b7681-141">41</span></span>                                                           |
 
 
 
-## <a name="windows-server-2008"></a><span data-ttu-id="a9109-142">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="a9109-142">Windows Server 2008</span></span>
+## <a name="windows-server-2008"></a><span data-ttu-id="b7681-142">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="b7681-142">Windows Server 2008</span></span>
 
 
 
-| <span data-ttu-id="a9109-143">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-143">Entry</span></span> | <span data-ttu-id="a9109-144">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-144">Value</span></span> |
+| <span data-ttu-id="b7681-143">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-143">Entry</span></span> | <span data-ttu-id="b7681-144">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-144">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-145">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-145">Applies-To</span></span>              | [<span data-ttu-id="a9109-146">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-146">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-147">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-147">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-148">41</span><span class="sxs-lookup"><span data-stu-id="a9109-148">41</span></span>                                                           |
+| <span data-ttu-id="b7681-145">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-145">Applies-To</span></span>              | [<span data-ttu-id="b7681-146">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-146">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-147">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-147">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-148">41</span><span class="sxs-lookup"><span data-stu-id="b7681-148">41</span></span>                                                           |
 
 
 
-## <a name="windows-server-2008-r2"></a><span data-ttu-id="a9109-149">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="a9109-149">Windows Server 2008 R2</span></span>
+## <a name="windows-server-2008-r2"></a><span data-ttu-id="b7681-149">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="b7681-149">Windows Server 2008 R2</span></span>
 
 
 
-| <span data-ttu-id="a9109-150">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-150">Entry</span></span> | <span data-ttu-id="a9109-151">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-151">Value</span></span> |
+| <span data-ttu-id="b7681-150">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-150">Entry</span></span> | <span data-ttu-id="b7681-151">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-151">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-152">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-152">Applies-To</span></span>              | [<span data-ttu-id="a9109-153">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-153">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-154">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-154">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-155">41</span><span class="sxs-lookup"><span data-stu-id="a9109-155">41</span></span>                                                           |
+| <span data-ttu-id="b7681-152">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-152">Applies-To</span></span>              | [<span data-ttu-id="b7681-153">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-153">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-154">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-154">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-155">41</span><span class="sxs-lookup"><span data-stu-id="b7681-155">41</span></span>                                                           |
 
 
 
-## <a name="windows-server-2012"></a><span data-ttu-id="a9109-156">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="a9109-156">Windows Server 2012</span></span>
+## <a name="windows-server-2012"></a><span data-ttu-id="b7681-156">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="b7681-156">Windows Server 2012</span></span>
 
 
 
-| <span data-ttu-id="a9109-157">Entrada</span><span class="sxs-lookup"><span data-stu-id="a9109-157">Entry</span></span> | <span data-ttu-id="a9109-158">Valor</span><span class="sxs-lookup"><span data-stu-id="a9109-158">Value</span></span> |
+| <span data-ttu-id="b7681-157">Entrada</span><span class="sxs-lookup"><span data-stu-id="b7681-157">Entry</span></span> | <span data-ttu-id="b7681-158">Valor</span><span class="sxs-lookup"><span data-stu-id="b7681-158">Value</span></span> |
 |-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="a9109-159">Applies-To</span><span class="sxs-lookup"><span data-stu-id="a9109-159">Applies-To</span></span>              | [<span data-ttu-id="a9109-160">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="a9109-160">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
-| <span data-ttu-id="a9109-161">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="a9109-161">Localization-Display-ID</span></span> | <span data-ttu-id="a9109-162">41</span><span class="sxs-lookup"><span data-stu-id="a9109-162">41</span></span>                                                           |
+| <span data-ttu-id="b7681-159">Applies-To</span><span class="sxs-lookup"><span data-stu-id="b7681-159">Applies-To</span></span>              | [<span data-ttu-id="b7681-160">**Configuração do MSMQ**</span><span class="sxs-lookup"><span data-stu-id="b7681-160">**MSMQ-Configuration**</span></span>](c-msmqconfiguration.md)<br/> |
+| <span data-ttu-id="b7681-161">Localização-exibição-ID</span><span class="sxs-lookup"><span data-stu-id="b7681-161">Localization-Display-ID</span></span> | <span data-ttu-id="b7681-162">41</span><span class="sxs-lookup"><span data-stu-id="b7681-162">41</span></span>                                                           |
 
 
 
