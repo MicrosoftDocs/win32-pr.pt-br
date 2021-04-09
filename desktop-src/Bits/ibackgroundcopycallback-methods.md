@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104012010"
 ---
-# <a name="ibackgroundcopycallback-methods-bits"></a><span data-ttu-id="76553-104">Métodos IBackgroundCopyCallback (BITS)</span><span class="sxs-lookup"><span data-stu-id="76553-104">IBackgroundCopyCallback Methods (BITS)</span></span>
+# <a name="ibackgroundcopycallback-methods-bits"></a><span data-ttu-id="3cf86-104">Métodos IBackgroundCopyCallback (BITS)</span><span class="sxs-lookup"><span data-stu-id="3cf86-104">IBackgroundCopyCallback Methods (BITS)</span></span>
 
-<span data-ttu-id="76553-105">A interface [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="76553-105">The [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) interface exposes the following methods.</span></span>
+<span data-ttu-id="3cf86-105">A interface [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="3cf86-105">The [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="76553-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="76553-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3cf86-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3cf86-106">In this section</span></span>
 
--   [<span data-ttu-id="76553-107">**Método JobError**</span><span class="sxs-lookup"><span data-stu-id="76553-107">**JobError Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror)
--   [<span data-ttu-id="76553-108">**Método JobModification**</span><span class="sxs-lookup"><span data-stu-id="76553-108">**JobModification Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)
--   [<span data-ttu-id="76553-109">**Método JobTransferred**</span><span class="sxs-lookup"><span data-stu-id="76553-109">**JobTransferred Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred)
+-   [<span data-ttu-id="3cf86-107">**Método JobError**</span><span class="sxs-lookup"><span data-stu-id="3cf86-107">**JobError Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror)
+-   [<span data-ttu-id="3cf86-108">**Método JobModification**</span><span class="sxs-lookup"><span data-stu-id="3cf86-108">**JobModification Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)
+-   [<span data-ttu-id="3cf86-109">**Método JobTransferred**</span><span class="sxs-lookup"><span data-stu-id="3cf86-109">**JobTransferred Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred)
 
  
 

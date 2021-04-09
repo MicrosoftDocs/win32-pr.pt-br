@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104012006"
 ---
-# <a name="hot-key-control-reference"></a><span data-ttu-id="b37ea-103">Referência de controle de teclas de acesso</span><span class="sxs-lookup"><span data-stu-id="b37ea-103">Hot Key Control Reference</span></span>
+# <a name="hot-key-control-reference"></a><span data-ttu-id="40c9b-103">Referência de controle de teclas de acesso</span><span class="sxs-lookup"><span data-stu-id="40c9b-103">Hot Key Control Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b37ea-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b37ea-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="40c9b-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="40c9b-104">In This Section</span></span>
 
--   [<span data-ttu-id="b37ea-105">Mensagens de controle de tecla quente</span><span class="sxs-lookup"><span data-stu-id="b37ea-105">Hot Key Control Messages</span></span>](bumper-hot-key-control-reference-messages.md)
+-   [<span data-ttu-id="40c9b-105">Mensagens de controle de tecla quente</span><span class="sxs-lookup"><span data-stu-id="40c9b-105">Hot Key Control Messages</span></span>](bumper-hot-key-control-reference-messages.md)
 
  
 
