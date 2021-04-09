@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "104012108"
 ---
-# <a name="id3dxbuffergetbuffersize-method"></a><span data-ttu-id="7032d-103">Método ID3DXBuffer:: getbuffersize</span><span class="sxs-lookup"><span data-stu-id="7032d-103">ID3DXBuffer::GetBufferSize method</span></span>
+# <a name="id3dxbuffergetbuffersize-method"></a><span data-ttu-id="d5793-103">Método ID3DXBuffer:: getbuffersize</span><span class="sxs-lookup"><span data-stu-id="d5793-103">ID3DXBuffer::GetBufferSize method</span></span>
 
-<span data-ttu-id="7032d-104">Recupera o tamanho total dos dados no buffer.</span><span class="sxs-lookup"><span data-stu-id="7032d-104">Retrieves the total size of the data in the buffer.</span></span>
+<span data-ttu-id="d5793-104">Recupera o tamanho total dos dados no buffer.</span><span class="sxs-lookup"><span data-stu-id="d5793-104">Retrieves the total size of the data in the buffer.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7032d-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7032d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d5793-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d5793-105">Syntax</span></span>
 
 
 ```C++
@@ -34,32 +34,32 @@ DWORD GetBufferSize();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="7032d-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7032d-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d5793-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d5793-106">Parameters</span></span>
 
-<span data-ttu-id="7032d-107">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="7032d-107">This method has no parameters.</span></span>
+<span data-ttu-id="d5793-107">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="d5793-107">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="7032d-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7032d-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d5793-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d5793-108">Return value</span></span>
 
-<span data-ttu-id="7032d-109">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="7032d-109">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="d5793-109">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="d5793-109">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="7032d-110">Retorna o tamanho total dos dados no buffer, em bytes.</span><span class="sxs-lookup"><span data-stu-id="7032d-110">Returns the total size of the data in the buffer, in bytes.</span></span>
+<span data-ttu-id="d5793-110">Retorna o tamanho total dos dados no buffer, em bytes.</span><span class="sxs-lookup"><span data-stu-id="d5793-110">Returns the total size of the data in the buffer, in bytes.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7032d-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7032d-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d5793-111">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d5793-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7032d-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="7032d-112">Requirement</span></span> | <span data-ttu-id="7032d-113">Valor</span><span class="sxs-lookup"><span data-stu-id="7032d-113">Value</span></span> |
+| <span data-ttu-id="d5793-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="d5793-112">Requirement</span></span> | <span data-ttu-id="d5793-113">Valor</span><span class="sxs-lookup"><span data-stu-id="d5793-113">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="7032d-114">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7032d-114">Header</span></span><br/>  | <dl> <span data-ttu-id="7032d-115"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="7032d-115"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
-| <span data-ttu-id="7032d-116">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="7032d-116">Library</span></span><br/> | <dl> <span data-ttu-id="7032d-117"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="7032d-117"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="d5793-114">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d5793-114">Header</span></span><br/>  | <dl> <span data-ttu-id="d5793-115"><dt>D3DX9Mesh. h</dt></span><span class="sxs-lookup"><span data-stu-id="d5793-115"><dt>D3DX9Mesh.h</dt></span></span> </dl> |
+| <span data-ttu-id="d5793-116">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="d5793-116">Library</span></span><br/> | <dl> <span data-ttu-id="d5793-117"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="d5793-117"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7032d-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="7032d-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d5793-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="d5793-118">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7032d-119">ID3DXBuffer</span><span class="sxs-lookup"><span data-stu-id="7032d-119">ID3DXBuffer</span></span>](id3dxbuffer.md)
+[<span data-ttu-id="d5793-119">ID3DXBuffer</span><span class="sxs-lookup"><span data-stu-id="d5793-119">ID3DXBuffer</span></span>](id3dxbuffer.md)
 </dt> </dl>
 
  
