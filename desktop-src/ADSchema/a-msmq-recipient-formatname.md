@@ -36,7 +36,7 @@ Usado como o nome do formato de destinatário na classe MSMQ-Custom-Recipient.
 | Frequência de atualização  | Somente após a movimentação da fila externa.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1695                     |
 | System-ID-GUID    | 3bfe6748-b544-485a-b067-1b310c4334bf        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
