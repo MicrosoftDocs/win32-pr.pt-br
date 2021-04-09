@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005317"
 ---
-# <a name="register-for-change-notification"></a><span data-ttu-id="04bad-104">Registrar para notificação de alteração</span><span class="sxs-lookup"><span data-stu-id="04bad-104">Register For Change Notification</span></span>
+# <a name="register-for-change-notification"></a><span data-ttu-id="e04a7-104">Registrar para notificação de alteração</span><span class="sxs-lookup"><span data-stu-id="e04a7-104">Register For Change Notification</span></span>
 
-<span data-ttu-id="04bad-105">O código de exemplo a seguir mostra como registrar-se para notificações de alteração na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="04bad-105">The following sample code shows how to register for change notifications in the routing table.</span></span> <span data-ttu-id="04bad-106">O tópico "[usar o retorno de chamada de notificação de evento](use-the-event-notification-callback.md)" demonstra como utilizar essas notificações de alteração.</span><span class="sxs-lookup"><span data-stu-id="04bad-106">The topic "[Use the Event Notification Callback](use-the-event-notification-callback.md)" demonstrates how to utilize those change notifications.</span></span>
+<span data-ttu-id="e04a7-105">O código de exemplo a seguir mostra como registrar-se para notificações de alteração na tabela de roteamento.</span><span class="sxs-lookup"><span data-stu-id="e04a7-105">The following sample code shows how to register for change notifications in the routing table.</span></span> <span data-ttu-id="e04a7-106">O tópico "[usar o retorno de chamada de notificação de evento](use-the-event-notification-callback.md)" demonstra como utilizar essas notificações de alteração.</span><span class="sxs-lookup"><span data-stu-id="e04a7-106">The topic "[Use the Event Notification Callback](use-the-event-notification-callback.md)" demonstrates how to utilize those change notifications.</span></span>
 
 
 ```C++

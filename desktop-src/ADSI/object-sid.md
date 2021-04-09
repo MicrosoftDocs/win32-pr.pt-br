@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004866"
 ---
-# <a name="object-sid-winnt-provider"></a><span data-ttu-id="afdff-105">SID de objeto (provedor de WinNT)</span><span class="sxs-lookup"><span data-stu-id="afdff-105">Object SID (WinNT Provider)</span></span>
+# <a name="object-sid-winnt-provider"></a><span data-ttu-id="56cdf-105">SID de objeto (provedor de WinNT)</span><span class="sxs-lookup"><span data-stu-id="56cdf-105">Object SID (WinNT Provider)</span></span>
 
-<span data-ttu-id="afdff-106">O SID (identificador de segurança do usuário) pode ser recuperado usando o atributo **objectSid** .</span><span class="sxs-lookup"><span data-stu-id="afdff-106">The user security identifier (SID) can be retrieved using the **objectSID** attribute.</span></span> <span data-ttu-id="afdff-107">O **objectSid** é retornado como uma matriz **variante** de caracteres que formam a cadeia de caracteres Sid.</span><span class="sxs-lookup"><span data-stu-id="afdff-107">The **objectSID** is returned as a **VARIANT** array of characters that form the SID string.</span></span>
+<span data-ttu-id="56cdf-106">O SID (identificador de segurança do usuário) pode ser recuperado usando o atributo **objectSid** .</span><span class="sxs-lookup"><span data-stu-id="56cdf-106">The user security identifier (SID) can be retrieved using the **objectSID** attribute.</span></span> <span data-ttu-id="56cdf-107">O **objectSid** é retornado como uma matriz **variante** de caracteres que formam a cadeia de caracteres Sid.</span><span class="sxs-lookup"><span data-stu-id="56cdf-107">The **objectSID** is returned as a **VARIANT** array of characters that form the SID string.</span></span>
 
-## <a name="example-code"></a><span data-ttu-id="afdff-108">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="afdff-108">Example Code</span></span>
+## <a name="example-code"></a><span data-ttu-id="56cdf-108">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="56cdf-108">Example Code</span></span>
 
 
 ```VB

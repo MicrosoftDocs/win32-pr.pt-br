@@ -14,11 +14,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004920"
 ---
-# <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a><span data-ttu-id="8e716-104">Código de exemplo para enumerar a ACL de um objeto no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="8e716-104">Example Code for Enumerating the ACL of an Object in Active Directory Domain Services</span></span>
+# <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a><span data-ttu-id="ecb1a-104">Código de exemplo para enumerar a ACL de um objeto no Active Directory Domain Services</span><span class="sxs-lookup"><span data-stu-id="ecb1a-104">Example Code for Enumerating the ACL of an Object in Active Directory Domain Services</span></span>
 
-<span data-ttu-id="8e716-105">Os exemplos de código a seguir podem ser usados para enumerar a lista de controle de acesso (ACL) de um objeto no Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="8e716-105">The following code examples can be used to enumerate the access control list (ACL) of an object in Active Directory Domain Services.</span></span>
+<span data-ttu-id="ecb1a-105">Os exemplos de código a seguir podem ser usados para enumerar a lista de controle de acesso (ACL) de um objeto no Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="ecb1a-105">The following code examples can be used to enumerate the access control list (ACL) of an object in Active Directory Domain Services.</span></span>
 
-<span data-ttu-id="8e716-106">O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.</span><span class="sxs-lookup"><span data-stu-id="8e716-106">The following code example shows a function that enumerates the trustees of an object .</span></span>
+<span data-ttu-id="ecb1a-106">O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.</span><span class="sxs-lookup"><span data-stu-id="ecb1a-106">The following code example shows a function that enumerates the trustees of an object .</span></span>
 
 
 ```C++
@@ -171,7 +171,7 @@ HRESULT EnumAccessInfo(IADs *pads)
 
 
 
-<span data-ttu-id="8e716-107">O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.</span><span class="sxs-lookup"><span data-stu-id="8e716-107">The following code example shows a function that enumerates the trustees of an object.</span></span>
+<span data-ttu-id="ecb1a-107">O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.</span><span class="sxs-lookup"><span data-stu-id="ecb1a-107">The following code example shows a function that enumerates the trustees of an object.</span></span>
 
 
 ```VB

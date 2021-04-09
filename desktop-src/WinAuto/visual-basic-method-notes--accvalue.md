@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005367"
 ---
-# <a name="visual-basic-method-notes-accvalue"></a><span data-ttu-id="5c519-104">Visual Basic observações do método: accValue</span><span class="sxs-lookup"><span data-stu-id="5c519-104">Visual Basic Method Notes: accValue</span></span>
+# <a name="visual-basic-method-notes-accvalue"></a><span data-ttu-id="e10ae-104">Visual Basic observações do método: accValue</span><span class="sxs-lookup"><span data-stu-id="e10ae-104">Visual Basic Method Notes: accValue</span></span>
 
-<span data-ttu-id="5c519-105">O arquivo de linguagem de descrição de objeto (ODL), OleAcc. ODL, contém informações que diferem da implementação de C/C++.</span><span class="sxs-lookup"><span data-stu-id="5c519-105">The Object Description Language (ODL) file, Oleacc.odl, contains information that differs from the C/C++ implementation.</span></span> <span data-ttu-id="5c519-106">O arquivo OleAcc. odl contém a seguinte definição para a versão que define a propriedade da função.</span><span class="sxs-lookup"><span data-stu-id="5c519-106">The file Oleacc.odl contains the following definition for the version that sets the property of the function.</span></span>
+<span data-ttu-id="e10ae-105">O arquivo de linguagem de descrição de objeto (ODL), OleAcc. ODL, contém informações que diferem da implementação de C/C++.</span><span class="sxs-lookup"><span data-stu-id="e10ae-105">The Object Description Language (ODL) file, Oleacc.odl, contains information that differs from the C/C++ implementation.</span></span> <span data-ttu-id="e10ae-106">O arquivo OleAcc. odl contém a seguinte definição para a versão que define a propriedade da função.</span><span class="sxs-lookup"><span data-stu-id="e10ae-106">The file Oleacc.odl contains the following definition for the version that sets the property of the function.</span></span>
 
 
 ```C++
@@ -25,7 +25,7 @@ ms.locfileid: "104005367"
 
 
 
-<span data-ttu-id="5c519-107">Embora o parâmetro *varChild* esteja listado como opcional no arquivo ODL e no Pesquisador de objetos, você deve incluí-lo ao chamar a versão de configuração de Propriedade do [**accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-put_accvalue).</span><span class="sxs-lookup"><span data-stu-id="5c519-107">Although the *varChild* parameter is listed as optional in the ODL file and the object browser, you must include it when calling the property-setting version of [**accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-put_accvalue).</span></span>
+<span data-ttu-id="e10ae-107">Embora o parâmetro *varChild* esteja listado como opcional no arquivo ODL e no Pesquisador de objetos, você deve incluí-lo ao chamar a versão de configuração de Propriedade do [**accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-put_accvalue).</span><span class="sxs-lookup"><span data-stu-id="e10ae-107">Although the *varChild* parameter is listed as optional in the ODL file and the object browser, you must include it when calling the property-setting version of [**accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-put_accvalue).</span></span>
 
  
 
