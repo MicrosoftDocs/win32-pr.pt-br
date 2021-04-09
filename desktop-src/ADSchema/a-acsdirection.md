@@ -36,7 +36,7 @@ Enviar, receber, enviar/receber ou nenhum.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.757               |
 | System-ID-GUID    | 7f56127a-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 

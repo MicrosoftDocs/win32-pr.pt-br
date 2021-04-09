@@ -31,7 +31,7 @@ Especifica se uma nova câmera será redirecionada por padrão.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```C++
 HRESULT put_RedirectByDefault(
