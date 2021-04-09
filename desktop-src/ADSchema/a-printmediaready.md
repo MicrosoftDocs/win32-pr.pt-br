@@ -36,7 +36,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.289                      |
 | System-ID-GUID    | 3bcbfcf5-4d3d-11d0-a1a6-00c04fd930c9        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

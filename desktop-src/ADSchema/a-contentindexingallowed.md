@@ -36,7 +36,7 @@ Indica se o objeto de volume pode ser indexado com conteúdo.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.24                |
 | System-ID-GUID    | bf967943-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

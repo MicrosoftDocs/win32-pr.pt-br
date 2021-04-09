@@ -36,7 +36,7 @@ A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL)
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.246                      |
 | System-ID-GUID    | 281416d6-1968-11d0-a28f-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

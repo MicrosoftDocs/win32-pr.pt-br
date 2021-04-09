@@ -36,7 +36,7 @@ O nome do objeto a ser exibido nas caixas de diálogo.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.610                      |
 | System-ID-GUID    | 548e1c22-dea6-11d0-b010-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

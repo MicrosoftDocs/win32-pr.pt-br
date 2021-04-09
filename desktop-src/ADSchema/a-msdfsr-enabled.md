@@ -36,7 +36,7 @@ Especifica se o objeto está habilitado.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.9            |
 | System-ID-GUID    | 03726ae7-8e7d-4446-8aae-a91657c00993 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
