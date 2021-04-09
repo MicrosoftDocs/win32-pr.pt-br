@@ -29,9 +29,9 @@ A seguir está uma lista das colunas (além de tabela, coluna e descrição) na 
 
 
 
-| Type    | Colunas                                                          |
+| Tipo    | Colunas                                                          |
 |---------|------------------------------------------------------------------|
-| Inteiro | Nullable, MinValue, MaxValue, keyTable, KeyColumn, Set           |
+| Integer | Nullable, MinValue, MaxValue, keyTable, KeyColumn, Set           |
 | String  | Nullable, keyTable, KeyColumn, Category, set, MinValue, MaxValue |
 | Binário  | Permite valor nulo, categoria (a categoria deve ser "binary")                   |
 

@@ -15,7 +15,7 @@ ms.locfileid: "104090044"
 
 O elemento booliano opcional <isIndexed> especifica se o local descrito pelo conector de pesquisa é indexado (local ou remotamente usando o Windows Search 4 ou superior). O valor padrão é true para pastas locais. Este elemento não tem elementos filho e nenhum atributo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```
