@@ -36,7 +36,7 @@ O atributo **BuiltIn-Modified-Count** é usado para dar suporte à replicação 
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.14                |
 | System-ID-GUID    | bf967930-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

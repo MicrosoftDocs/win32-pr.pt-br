@@ -36,7 +36,7 @@ Contém o tamanho mínimo do arquivo, em kilobytes, ao qual aplicar a RDC.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.20           |
 | System-ID-GUID    | f402a330-ace5-4dc1-8cc9-74d900bf8ae0 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 

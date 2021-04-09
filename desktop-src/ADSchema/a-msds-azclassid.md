@@ -36,7 +36,7 @@ Uma ID de classe exigida pela interface do usuário do amAzRoles no objeto AzApp
 | Frequência de atualização  | Durante a inicialização ou a alteração da política.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1816                     |
 | System-ID-GUID    | 013a7277-5c2d-49ef-a7de-b765b36a3f6f        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
