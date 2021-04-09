@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104012024"
 ---
-# <a name="rich-edit-control-overview"></a><span data-ttu-id="a9489-103">Visão geral do controle de edição avançada</span><span class="sxs-lookup"><span data-stu-id="a9489-103">Rich Edit Control Overview</span></span>
+# <a name="rich-edit-control-overview"></a><span data-ttu-id="02104-103">Visão geral do controle de edição avançada</span><span class="sxs-lookup"><span data-stu-id="02104-103">Rich Edit Control Overview</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a9489-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a9489-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="02104-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="02104-104">In this section</span></span>
 
--   [<span data-ttu-id="a9489-105">Sobre os controles de edição avançados</span><span class="sxs-lookup"><span data-stu-id="a9489-105">About Rich Edit Controls</span></span>](about-rich-edit-controls.md)
--   [<span data-ttu-id="a9489-106">Usando controles de edição avançados</span><span class="sxs-lookup"><span data-stu-id="a9489-106">Using Rich Edit Controls</span></span>](using-rich-edit-controls.md)
+-   [<span data-ttu-id="02104-105">Sobre os controles de edição avançados</span><span class="sxs-lookup"><span data-stu-id="02104-105">About Rich Edit Controls</span></span>](about-rich-edit-controls.md)
+-   [<span data-ttu-id="02104-106">Usando controles de edição avançados</span><span class="sxs-lookup"><span data-stu-id="02104-106">Using Rich Edit Controls</span></span>](using-rich-edit-controls.md)
 
  
 
