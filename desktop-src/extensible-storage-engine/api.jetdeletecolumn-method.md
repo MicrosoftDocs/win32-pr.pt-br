@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104090155"
 ---
-# <a name="apijetdeletecolumn-method"></a><span data-ttu-id="eac66-103">Método API. JetDeleteColumn</span><span class="sxs-lookup"><span data-stu-id="eac66-103">Api.JetDeleteColumn method</span></span>
+# <a name="apijetdeletecolumn-method"></a><span data-ttu-id="6dbef-103">Método API. JetDeleteColumn</span><span class="sxs-lookup"><span data-stu-id="6dbef-103">Api.JetDeleteColumn method</span></span>
 
-<span data-ttu-id="eac66-104">Exclui uma coluna de uma tabela de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="eac66-104">Deletes a column from a database table.</span></span>
+<span data-ttu-id="6dbef-104">Exclui uma coluna de uma tabela de banco de dados.</span><span class="sxs-lookup"><span data-stu-id="6dbef-104">Deletes a column from a database table.</span></span>
 
-<span data-ttu-id="eac66-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="eac66-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="eac66-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="eac66-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6dbef-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6dbef-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="6dbef-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6dbef-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="eac66-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="eac66-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6dbef-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6dbef-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -62,33 +62,33 @@ public static void JetDeleteColumn(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="eac66-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="eac66-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="6dbef-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="6dbef-108">Parameters</span></span>
 
-  - <span data-ttu-id="eac66-109">sesid</span><span class="sxs-lookup"><span data-stu-id="eac66-109">sesid</span></span>  
-    <span data-ttu-id="eac66-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="eac66-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="6dbef-109">sesid</span><span class="sxs-lookup"><span data-stu-id="6dbef-109">sesid</span></span>  
+    <span data-ttu-id="6dbef-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="6dbef-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="eac66-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="eac66-111">The session to use.</span></span>
+    <span data-ttu-id="6dbef-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="6dbef-111">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="eac66-112">TableID</span><span class="sxs-lookup"><span data-stu-id="eac66-112">tableid</span></span>  
-    <span data-ttu-id="eac66-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="eac66-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="6dbef-112">TableID</span><span class="sxs-lookup"><span data-stu-id="6dbef-112">tableid</span></span>  
+    <span data-ttu-id="6dbef-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="6dbef-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="eac66-114">Um cursor na tabela da qual excluir a coluna.</span><span class="sxs-lookup"><span data-stu-id="eac66-114">A cursor on the table to delete the column from.</span></span>
+    <span data-ttu-id="6dbef-114">Um cursor na tabela da qual excluir a coluna.</span><span class="sxs-lookup"><span data-stu-id="6dbef-114">A cursor on the table to delete the column from.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="eac66-115">coluna</span><span class="sxs-lookup"><span data-stu-id="eac66-115">column</span></span>  
-    <span data-ttu-id="eac66-116">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="eac66-116">Type: [System.String](/dotnet/api/system.string)</span></span>  
+  - <span data-ttu-id="6dbef-115">coluna</span><span class="sxs-lookup"><span data-stu-id="6dbef-115">column</span></span>  
+    <span data-ttu-id="6dbef-116">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="6dbef-116">Type: [System.String](/dotnet/api/system.string)</span></span>  
     
-    <span data-ttu-id="eac66-117">O nome da coluna a ser excluída.</span><span class="sxs-lookup"><span data-stu-id="eac66-117">The name of the column to be deleted.</span></span>
+    <span data-ttu-id="6dbef-117">O nome da coluna a ser excluída.</span><span class="sxs-lookup"><span data-stu-id="6dbef-117">The name of the column to be deleted.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="eac66-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="eac66-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6dbef-118">Confira também</span><span class="sxs-lookup"><span data-stu-id="6dbef-118">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="eac66-119">Referência</span><span class="sxs-lookup"><span data-stu-id="eac66-119">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6dbef-119">Referência</span><span class="sxs-lookup"><span data-stu-id="6dbef-119">Reference</span></span>
 
-[<span data-ttu-id="eac66-120">Classe de API</span><span class="sxs-lookup"><span data-stu-id="eac66-120">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="6dbef-120">Classe de API</span><span class="sxs-lookup"><span data-stu-id="6dbef-120">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="eac66-121">Membros da API</span><span class="sxs-lookup"><span data-stu-id="eac66-121">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="6dbef-121">Membros da API</span><span class="sxs-lookup"><span data-stu-id="6dbef-121">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="eac66-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="eac66-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="6dbef-122">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6dbef-122">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
