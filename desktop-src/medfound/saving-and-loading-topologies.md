@@ -25,7 +25,7 @@ Com o TopoEdit, você pode salvar uma topologia como um arquivo XML e carregá-l
 
 3.  No campo **nome do arquivo:** , insira o nome do arquivo.
 
-4.  Clique em **Save** (Salvar).
+4.  Clique em **Salvar**.
 
 O arquivo de topologia será salvo como um arquivo XML.
 
