@@ -147,7 +147,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *destino* não era um valor aceito.<br/>                                                                                        |
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | *U1* era igual a *U2*, ou *v1* era igual a *v2*.<br/>                                                                         |

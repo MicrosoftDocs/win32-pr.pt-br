@@ -24,7 +24,7 @@ Especifica a origem de uma folha primária de capa de fundo personalizada para o
 
 
 
-| Name                       |                                           |
+| Nome                       |                                           |
 |----------------------------|-------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                   |
 | Prefixo de escopo <br/> | Trabalho<br/>                            |
