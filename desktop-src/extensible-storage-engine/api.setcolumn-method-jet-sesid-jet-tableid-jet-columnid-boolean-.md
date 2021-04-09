@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089818"
 ---
-# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-boolean"></a><span data-ttu-id="b95e9-103">Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, booliano)</span><span class="sxs-lookup"><span data-stu-id="b95e9-103">Api.SetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, Boolean)</span></span>
+# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-boolean"></a><span data-ttu-id="1d1ce-103">Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, booliano)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-103">Api.SetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, Boolean)</span></span>
 
-<span data-ttu-id="b95e9-104">Modifica um valor de coluna única em um registro modificado a ser inserido ou para atualizar o registro atual.</span><span class="sxs-lookup"><span data-stu-id="b95e9-104">Modifies a single column value in a modified record to be inserted or to update the current record.</span></span>
+<span data-ttu-id="1d1ce-104">Modifica um valor de coluna única em um registro modificado a ser inserido ou para atualizar o registro atual.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-104">Modifies a single column value in a modified record to be inserted or to update the current record.</span></span>
 
-<span data-ttu-id="b95e9-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b95e9-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="b95e9-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b95e9-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="1d1ce-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="1d1ce-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b95e9-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b95e9-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1d1ce-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1d1ce-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -61,42 +61,42 @@ public static void SetColumn(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="b95e9-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b95e9-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="1d1ce-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="1d1ce-108">Parameters</span></span>
 
-  - <span data-ttu-id="b95e9-109">sesid</span><span class="sxs-lookup"><span data-stu-id="b95e9-109">sesid</span></span>  
-    <span data-ttu-id="b95e9-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b95e9-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="1d1ce-109">sesid</span><span class="sxs-lookup"><span data-stu-id="1d1ce-109">sesid</span></span>  
+    <span data-ttu-id="1d1ce-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-110">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="b95e9-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="b95e9-111">The session to use.</span></span>
+    <span data-ttu-id="1d1ce-111">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-111">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b95e9-112">TableID</span><span class="sxs-lookup"><span data-stu-id="b95e9-112">tableid</span></span>  
-    <span data-ttu-id="b95e9-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b95e9-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="1d1ce-112">TableID</span><span class="sxs-lookup"><span data-stu-id="1d1ce-112">tableid</span></span>  
+    <span data-ttu-id="1d1ce-113">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-113">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="b95e9-114">O cursor a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="b95e9-114">The cursor to update.</span></span> <span data-ttu-id="b95e9-115">Uma atualização deve ser preparada.</span><span class="sxs-lookup"><span data-stu-id="b95e9-115">An update should be prepared.</span></span>
+    <span data-ttu-id="1d1ce-114">O cursor a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-114">The cursor to update.</span></span> <span data-ttu-id="1d1ce-115">Uma atualização deve ser preparada.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-115">An update should be prepared.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b95e9-116">columnid</span><span class="sxs-lookup"><span data-stu-id="b95e9-116">columnid</span></span>  
-    <span data-ttu-id="b95e9-117">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="b95e9-117">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
+  - <span data-ttu-id="1d1ce-116">columnid</span><span class="sxs-lookup"><span data-stu-id="1d1ce-116">columnid</span></span>  
+    <span data-ttu-id="1d1ce-117">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-117">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
     
-    <span data-ttu-id="b95e9-118">O columnid a ser definido.</span><span class="sxs-lookup"><span data-stu-id="b95e9-118">The columnid to set.</span></span>
+    <span data-ttu-id="1d1ce-118">O columnid a ser definido.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-118">The columnid to set.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="b95e9-119">data</span><span class="sxs-lookup"><span data-stu-id="b95e9-119">data</span></span>  
-    <span data-ttu-id="b95e9-120">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="b95e9-120">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
+  - <span data-ttu-id="1d1ce-119">data</span><span class="sxs-lookup"><span data-stu-id="1d1ce-119">data</span></span>  
+    <span data-ttu-id="1d1ce-120">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="1d1ce-120">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
     
-    <span data-ttu-id="b95e9-121">Os dados a serem definidos.</span><span class="sxs-lookup"><span data-stu-id="b95e9-121">The data to set.</span></span>
+    <span data-ttu-id="1d1ce-121">Os dados a serem definidos.</span><span class="sxs-lookup"><span data-stu-id="1d1ce-121">The data to set.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b95e9-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="b95e9-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1d1ce-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="1d1ce-122">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="b95e9-123">Referência</span><span class="sxs-lookup"><span data-stu-id="b95e9-123">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="1d1ce-123">Referência</span><span class="sxs-lookup"><span data-stu-id="1d1ce-123">Reference</span></span>
 
-[<span data-ttu-id="b95e9-124">Classe de API</span><span class="sxs-lookup"><span data-stu-id="b95e9-124">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="1d1ce-124">Classe de API</span><span class="sxs-lookup"><span data-stu-id="1d1ce-124">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="b95e9-125">Membros da API</span><span class="sxs-lookup"><span data-stu-id="b95e9-125">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="1d1ce-125">Membros da API</span><span class="sxs-lookup"><span data-stu-id="1d1ce-125">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="b95e9-126">Sobrecarga de SetColumn</span><span class="sxs-lookup"><span data-stu-id="b95e9-126">SetColumn overload</span></span>](./api.setcolumn-method.md)
+[<span data-ttu-id="1d1ce-126">Sobrecarga de SetColumn</span><span class="sxs-lookup"><span data-stu-id="1d1ce-126">SetColumn overload</span></span>](./api.setcolumn-method.md)
 
-[<span data-ttu-id="b95e9-127">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="b95e9-127">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="1d1ce-127">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1d1ce-127">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
