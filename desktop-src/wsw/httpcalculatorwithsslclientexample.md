@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005687"
 ---
-# <a name="httpcalculatorwithsslclientexample"></a><span data-ttu-id="7d299-106">HttpCalculatorWithSslClientExample</span><span class="sxs-lookup"><span data-stu-id="7d299-106">HttpCalculatorWithSslClientExample</span></span>
+# <a name="httpcalculatorwithsslclientexample"></a><span data-ttu-id="485f7-106">HttpCalculatorWithSslClientExample</span><span class="sxs-lookup"><span data-stu-id="485f7-106">HttpCalculatorWithSslClientExample</span></span>
 
-<span data-ttu-id="7d299-107">Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora, com segurança de transporte SSL.</span><span class="sxs-lookup"><span data-stu-id="7d299-107">This example show how to use the service proxy to talk to a calculator service, with SSL transport security.</span></span>
+<span data-ttu-id="485f7-107">Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora, com segurança de transporte SSL.</span><span class="sxs-lookup"><span data-stu-id="485f7-107">This example show how to use the service proxy to talk to a calculator service, with SSL transport security.</span></span>
 
--   [<span data-ttu-id="7d299-108">HttpCalculatorClientWithSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="7d299-108">HttpCalculatorClientWithSsl.cpp</span></span>](#httpcalculatorclientwithsslcpp)
--   [<span data-ttu-id="7d299-109">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="7d299-109">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
--   [<span data-ttu-id="7d299-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="7d299-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="485f7-108">HttpCalculatorClientWithSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="485f7-108">HttpCalculatorClientWithSsl.cpp</span></span>](#httpcalculatorclientwithsslcpp)
+-   [<span data-ttu-id="485f7-109">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="485f7-109">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
+-   [<span data-ttu-id="485f7-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="485f7-110">Makefile</span></span>](#makefile)
 
-## <a name="httpcalculatorclientwithsslcpp"></a><span data-ttu-id="7d299-111">HttpCalculatorClientWithSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="7d299-111">HttpCalculatorClientWithSsl.cpp</span></span>
+## <a name="httpcalculatorclientwithsslcpp"></a><span data-ttu-id="485f7-111">HttpCalculatorClientWithSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="485f7-111">HttpCalculatorClientWithSsl.cpp</span></span>
 
 
 ```C++
@@ -218,7 +218,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a><span data-ttu-id="7d299-112">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="7d299-112">CalculatorService.wsdl</span></span>
+## <a name="calculatorservicewsdl"></a><span data-ttu-id="485f7-112">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="485f7-112">CalculatorService.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -315,7 +315,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="7d299-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="7d299-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="485f7-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="485f7-113">Makefile</span></span>
 
 ``` syntax
 EXTRA_LIBS = WebServices.lib rpcrt4.lib Iphlpapi.lib

@@ -15,11 +15,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005583"
 ---
-# <a name="xmlbufferexample"></a><span data-ttu-id="b47e4-106">XmlBufferExample</span><span class="sxs-lookup"><span data-stu-id="b47e4-106">XmlBufferExample</span></span>
+# <a name="xmlbufferexample"></a><span data-ttu-id="11c2d-106">XmlBufferExample</span><span class="sxs-lookup"><span data-stu-id="11c2d-106">XmlBufferExample</span></span>
 
-<span data-ttu-id="b47e4-107">Este exemplo mostra algum uso das APIs de buffer XML.</span><span class="sxs-lookup"><span data-stu-id="b47e4-107">This example shows some use of the xml buffer APIs.</span></span>
+<span data-ttu-id="11c2d-107">Este exemplo mostra algum uso das APIs de buffer XML.</span><span class="sxs-lookup"><span data-stu-id="11c2d-107">This example shows some use of the xml buffer APIs.</span></span>
 
-## <a name="xmlbuffercpp"></a><span data-ttu-id="b47e4-108">Xmlbuffer. cpp</span><span class="sxs-lookup"><span data-stu-id="b47e4-108">XmlBuffer.cpp</span></span>
+## <a name="xmlbuffercpp"></a><span data-ttu-id="11c2d-108">Xmlbuffer. cpp</span><span class="sxs-lookup"><span data-stu-id="11c2d-108">XmlBuffer.cpp</span></span>
 
 
 ```C++
