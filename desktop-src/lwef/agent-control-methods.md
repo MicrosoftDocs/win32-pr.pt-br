@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005076"
 ---
-# <a name="agent-control-methods"></a><span data-ttu-id="9405b-103">Métodos de controle de agente</span><span class="sxs-lookup"><span data-stu-id="9405b-103">Agent Control Methods</span></span>
+# <a name="agent-control-methods"></a><span data-ttu-id="7b153-103">Métodos de controle de agente</span><span class="sxs-lookup"><span data-stu-id="7b153-103">Agent Control Methods</span></span>
 
-<span data-ttu-id="9405b-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="9405b-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+<span data-ttu-id="7b153-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="7b153-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
 
-<span data-ttu-id="9405b-105">O método a seguir está disponível no controle do agente:</span><span class="sxs-lookup"><span data-stu-id="9405b-105">The following method is available from the Agent control:</span></span>
+<span data-ttu-id="7b153-105">O método a seguir está disponível no controle do agente:</span><span class="sxs-lookup"><span data-stu-id="7b153-105">The following method is available from the Agent control:</span></span>
 
--   [<span data-ttu-id="9405b-106">Método ShowDefaultCharacterProperties</span><span class="sxs-lookup"><span data-stu-id="9405b-106">ShowDefaultCharacterProperties Method</span></span>](showdefaultcharacterproperties-method.md)
+-   [<span data-ttu-id="7b153-106">Método ShowDefaultCharacterProperties</span><span class="sxs-lookup"><span data-stu-id="7b153-106">ShowDefaultCharacterProperties Method</span></span>](showdefaultcharacterproperties-method.md)
 
  
 

@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005138"
 ---
-# <a name="httpcalculatorwithusernameoversslserviceexample"></a><span data-ttu-id="550f7-106">HttpCalculatorWithUserNameOverSslServiceExample</span><span class="sxs-lookup"><span data-stu-id="550f7-106">HttpCalculatorWithUserNameOverSslServiceExample</span></span>
+# <a name="httpcalculatorwithusernameoversslserviceexample"></a><span data-ttu-id="1dfca-106">HttpCalculatorWithUserNameOverSslServiceExample</span><span class="sxs-lookup"><span data-stu-id="1dfca-106">HttpCalculatorWithUserNameOverSslServiceExample</span></span>
 
-<span data-ttu-id="550f7-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com o nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="550f7-107">This example shows how to use service host for hosting a calculator service over HTTP, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="550f7-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="550f7-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="550f7-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="550f7-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
+<span data-ttu-id="1dfca-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com o nome de usuário sobre segurança de modo misto SSL.</span><span class="sxs-lookup"><span data-stu-id="1dfca-107">This example shows how to use service host for hosting a calculator service over HTTP, with username over SSL mixed-mode security.</span></span> <span data-ttu-id="1dfca-108">Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor.</span><span class="sxs-lookup"><span data-stu-id="1dfca-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="1dfca-109">A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.</span><span class="sxs-lookup"><span data-stu-id="1dfca-109">Client authentication is provided by a username/password pair in a WS-Security header in the message.</span></span>
 
--   [<span data-ttu-id="550f7-110">CalculatorServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="550f7-110">CalculatorServiceUserNameOverSsl.cpp</span></span>](#calculatorserviceusernameoversslcpp)
--   [<span data-ttu-id="550f7-111">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="550f7-111">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
--   [<span data-ttu-id="550f7-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="550f7-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="1dfca-110">CalculatorServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="1dfca-110">CalculatorServiceUserNameOverSsl.cpp</span></span>](#calculatorserviceusernameoversslcpp)
+-   [<span data-ttu-id="1dfca-111">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="1dfca-111">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
+-   [<span data-ttu-id="1dfca-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="1dfca-112">Makefile</span></span>](#makefile)
 
-## <a name="calculatorserviceusernameoversslcpp"></a><span data-ttu-id="550f7-113">CalculatorServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="550f7-113">CalculatorServiceUserNameOverSsl.cpp</span></span>
+## <a name="calculatorserviceusernameoversslcpp"></a><span data-ttu-id="1dfca-113">CalculatorServiceUserNameOverSsl. cpp</span><span class="sxs-lookup"><span data-stu-id="1dfca-113">CalculatorServiceUserNameOverSsl.cpp</span></span>
 
 
 ```C++
@@ -355,7 +355,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a><span data-ttu-id="550f7-114">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="550f7-114">CalculatorService.wsdl</span></span>
+## <a name="calculatorservicewsdl"></a><span data-ttu-id="1dfca-114">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="1dfca-114">CalculatorService.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -452,7 +452,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="550f7-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="550f7-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="1dfca-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="1dfca-115">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
