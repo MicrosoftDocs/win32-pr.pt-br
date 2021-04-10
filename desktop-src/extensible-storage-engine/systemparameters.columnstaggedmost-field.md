@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169769"
 ---
-# <a name="systemparameterscolumnstaggedmost-field"></a><span data-ttu-id="d53c6-103">Campo SystemParameters. ColumnsTaggedMost</span><span class="sxs-lookup"><span data-stu-id="d53c6-103">SystemParameters.ColumnsTaggedMost field</span></span>
+# <a name="systemparameterscolumnstaggedmost-field"></a><span data-ttu-id="65529-103">Campo SystemParameters. ColumnsTaggedMost</span><span class="sxs-lookup"><span data-stu-id="65529-103">SystemParameters.ColumnsTaggedMost field</span></span>
 
-<span data-ttu-id="d53c6-104">Número máximo de colunas marcadas permitidas em uma tabela.</span><span class="sxs-lookup"><span data-stu-id="d53c6-104">Maximum number of tagged columns allowed in a table.</span></span>
+<span data-ttu-id="65529-104">Número máximo de colunas marcadas permitidas em uma tabela.</span><span class="sxs-lookup"><span data-stu-id="65529-104">Maximum number of tagged columns allowed in a table.</span></span>
 
-<span data-ttu-id="d53c6-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d53c6-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="d53c6-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d53c6-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="65529-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="65529-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="65529-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="65529-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d53c6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d53c6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="65529-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="65529-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ value = SystemParameters.ColumnsTaggedMost
 public const int ColumnsTaggedMost
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d53c6-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="d53c6-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="65529-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="65529-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d53c6-109">Referência</span><span class="sxs-lookup"><span data-stu-id="d53c6-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="65529-109">Referência</span><span class="sxs-lookup"><span data-stu-id="65529-109">Reference</span></span>
 
-[<span data-ttu-id="d53c6-110">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="d53c6-110">SystemParameters class</span></span>](./systemparameters-class.md)
+[<span data-ttu-id="65529-110">Classe SystemParameters</span><span class="sxs-lookup"><span data-stu-id="65529-110">SystemParameters class</span></span>](./systemparameters-class.md)
 
-[<span data-ttu-id="d53c6-111">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="d53c6-111">SystemParameters members</span></span>](./systemparameters-members.md)
+[<span data-ttu-id="65529-111">Membros do SystemParameters</span><span class="sxs-lookup"><span data-stu-id="65529-111">SystemParameters members</span></span>](./systemparameters-members.md)
 
-[<span data-ttu-id="d53c6-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d53c6-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="65529-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="65529-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

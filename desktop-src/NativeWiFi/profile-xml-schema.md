@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169710"
 ---
-# <a name="profile-xml-schema"></a><span data-ttu-id="583a5-103">Esquema XML do perfil</span><span class="sxs-lookup"><span data-stu-id="583a5-103">Profile XML Schema</span></span>
+# <a name="profile-xml-schema"></a><span data-ttu-id="3a2fb-103">Esquema XML do perfil</span><span class="sxs-lookup"><span data-stu-id="3a2fb-103">Profile XML Schema</span></span>
 
-<span data-ttu-id="583a5-104">Os esquemas XML a seguir são usados para criar perfis de rede com e sem fio.</span><span class="sxs-lookup"><span data-stu-id="583a5-104">The following XML schemas are used to create wired and wireless network profiles.</span></span>
+<span data-ttu-id="3a2fb-104">Os esquemas XML a seguir são usados para criar perfis de rede com e sem fio.</span><span class="sxs-lookup"><span data-stu-id="3a2fb-104">The following XML schemas are used to create wired and wireless network profiles.</span></span>
 
--   [<span data-ttu-id="583a5-105">Esquema de política de LAN \_</span><span class="sxs-lookup"><span data-stu-id="583a5-105">LAN\_policy Schema</span></span>](lan-policyschema-schema.md)
--   [<span data-ttu-id="583a5-106">Esquema de perfil de LAN \_</span><span class="sxs-lookup"><span data-stu-id="583a5-106">LAN\_profile Schema</span></span>](lan-profileschema-schema.md)
--   [<span data-ttu-id="583a5-107">Esquema OneX</span><span class="sxs-lookup"><span data-stu-id="583a5-107">OneX Schema</span></span>](onexschema-schema.md)
--   [<span data-ttu-id="583a5-108">Esquema de política de WLAN \_</span><span class="sxs-lookup"><span data-stu-id="583a5-108">WLAN\_policy Schema</span></span>](wlan-policyschema-schema.md)
--   [<span data-ttu-id="583a5-109">\_Esquema de perfil WLAN</span><span class="sxs-lookup"><span data-stu-id="583a5-109">WLAN\_profile Schema</span></span>](wlan-profileschema-schema.md)
+-   [<span data-ttu-id="3a2fb-105">Esquema de política de LAN \_</span><span class="sxs-lookup"><span data-stu-id="3a2fb-105">LAN\_policy Schema</span></span>](lan-policyschema-schema.md)
+-   [<span data-ttu-id="3a2fb-106">Esquema de perfil de LAN \_</span><span class="sxs-lookup"><span data-stu-id="3a2fb-106">LAN\_profile Schema</span></span>](lan-profileschema-schema.md)
+-   [<span data-ttu-id="3a2fb-107">Esquema OneX</span><span class="sxs-lookup"><span data-stu-id="3a2fb-107">OneX Schema</span></span>](onexschema-schema.md)
+-   [<span data-ttu-id="3a2fb-108">Esquema de política de WLAN \_</span><span class="sxs-lookup"><span data-stu-id="3a2fb-108">WLAN\_policy Schema</span></span>](wlan-policyschema-schema.md)
+-   [<span data-ttu-id="3a2fb-109">\_Esquema de perfil WLAN</span><span class="sxs-lookup"><span data-stu-id="3a2fb-109">WLAN\_profile Schema</span></span>](wlan-profileschema-schema.md)
 
  
 
