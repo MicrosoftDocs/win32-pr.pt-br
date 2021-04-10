@@ -1,0 +1,22 @@
+---
+description: Um Gerenciador de credenciais é semelhante a um provedor de rede no que fornece pontos de entrada chamados pelo roteador de vários provedores (MPR). Na verdade, alguns provedores de rede também são gerenciadores de credenciais.
+ms.assetid: a1105754-a57f-4a0d-9797-bec22b99900c
+title: Gerenciador de Credenciais
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 20165a5e6145de0a2c042c38923c41d793bd641d
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104011248"
+---
+# <a name="credential-manager"></a><span data-ttu-id="94a4d-104">Gerenciador de Credenciais</span><span class="sxs-lookup"><span data-stu-id="94a4d-104">Credential Manager</span></span>
+
+<span data-ttu-id="94a4d-105">Um Gerenciador de credenciais é semelhante a um provedor de rede no que fornece pontos de entrada chamados pelo [*roteador de vários provedores*](/windows/desktop/SecGloss/m-gly) (MPR).</span><span class="sxs-lookup"><span data-stu-id="94a4d-105">A credential manager is similar to a network provider in that it provides entry points that are called by the [*Multiple Provider Router*](/windows/desktop/SecGloss/m-gly) (MPR).</span></span> <span data-ttu-id="94a4d-106">Na verdade, alguns provedores de rede também são gerenciadores de credenciais.</span><span class="sxs-lookup"><span data-stu-id="94a4d-106">In fact, some network providers are also credential managers.</span></span>
+
+<span data-ttu-id="94a4d-107">Se você implementar as funções de gerenciamento de credenciais na mesma DLL que as funções de provedor de rede depende dos requisitos do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="94a4d-107">Whether you implement the credential management functions in the same DLL as the network provider functions depends on the requirements of your application.</span></span> <span data-ttu-id="94a4d-108">Os gerenciadores de credenciais recebem notificações quando as informações de autenticação são alteradas.</span><span class="sxs-lookup"><span data-stu-id="94a4d-108">Credential managers receive notifications when authentication information changes.</span></span> <span data-ttu-id="94a4d-109">Por exemplo, os gerenciadores de credenciais são notificados quando um usuário faz logon ou uma conta de senha é alterada.</span><span class="sxs-lookup"><span data-stu-id="94a4d-109">For example, credential managers are notified when a user logs on or an account password changes.</span></span> <span data-ttu-id="94a4d-110">Quando um processo de logon, como o [*Winlogon*](/windows/desktop/SecGloss/w-gly), está no processo de fazer logon ou alterar a senha de uma conta, ele chama a função de WNet (rede do Windows) de MPR apropriada.</span><span class="sxs-lookup"><span data-stu-id="94a4d-110">When a logon process, such as [*Winlogon*](/windows/desktop/SecGloss/w-gly), is in the process of logging on or changing the password for an account, it calls the appropriate MPR Windows Networking (WNet) function.</span></span> <span data-ttu-id="94a4d-111">Em seguida, o MPR chama o ponto de entrada apropriado para cada Gerenciador de credenciais.</span><span class="sxs-lookup"><span data-stu-id="94a4d-111">The MPR then calls the appropriate entry point for each credential manager.</span></span> <span data-ttu-id="94a4d-112">Essas funções de gerenciamento de credenciais sempre serão chamadas no contexto do sistema, LocalSystem, em vez do contexto do usuário.</span><span class="sxs-lookup"><span data-stu-id="94a4d-112">These credential management functions will always be called in the system context, LocalSystem, rather than the user context.</span></span> <span data-ttu-id="94a4d-113">Para obter mais informações sobre as funções do WNet, consulte [sistema de rede do Windows](/windows/desktop/WNet/windows-networking-wnet-).</span><span class="sxs-lookup"><span data-stu-id="94a4d-113">For more information about WNet functions, see [Windows Networking](/windows/desktop/WNet/windows-networking-wnet-).</span></span> <span data-ttu-id="94a4d-114">Para obter mais informações sobre a interface que os gerenciadores de credenciais devem implementar, consulte [**API de gerenciamento de credenciais**](credential-management-api.md).</span><span class="sxs-lookup"><span data-stu-id="94a4d-114">For more information about the interface that credential managers must implement, see [**Credential Management API**](credential-management-api.md).</span></span>
+
+ 
+
+ 

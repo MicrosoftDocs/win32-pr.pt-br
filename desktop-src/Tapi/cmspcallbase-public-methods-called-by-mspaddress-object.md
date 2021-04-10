@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169671"
 ---
-# <a name="cmspcallbase-public-methods-called-by-mspaddress-object"></a><span data-ttu-id="f711c-103">Métodos públicos CMSPCallBase, chamados por objeto MSPAddress</span><span class="sxs-lookup"><span data-stu-id="f711c-103">CMSPCallBase Public Methods, Called By MSPAddress Object</span></span>
+# <a name="cmspcallbase-public-methods-called-by-mspaddress-object"></a><span data-ttu-id="5c4e2-103">Métodos públicos CMSPCallBase, chamados por objeto MSPAddress</span><span class="sxs-lookup"><span data-stu-id="5c4e2-103">CMSPCallBase Public Methods, Called By MSPAddress Object</span></span>
 
 
 
-| <span data-ttu-id="f711c-104">Métodos públicos CMSPCallBase</span><span class="sxs-lookup"><span data-stu-id="f711c-104">CMSPCallBase public methods</span></span>                                   | <span data-ttu-id="f711c-105">Descrição</span><span class="sxs-lookup"><span data-stu-id="f711c-105">Description</span></span>                                                                                                                               |
+| <span data-ttu-id="5c4e2-104">Métodos públicos CMSPCallBase</span><span class="sxs-lookup"><span data-stu-id="5c4e2-104">CMSPCallBase public methods</span></span>                                   | <span data-ttu-id="5c4e2-105">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c4e2-105">Description</span></span>                                                                                                                               |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="f711c-106">**ReceiveTSPCallData**</span><span class="sxs-lookup"><span data-stu-id="f711c-106">**ReceiveTSPCallData**</span></span>](/windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-receivetspcalldata) | <span data-ttu-id="f711c-107">Chamado pelo método [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata) do objeto de endereço msp para distribuir dados do tsp para a chamada correta.</span><span class="sxs-lookup"><span data-stu-id="f711c-107">Called by the MSP address object's [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata) method to dispatch TSP data to the correct call.</span></span> |
+| [<span data-ttu-id="5c4e2-106">**ReceiveTSPCallData**</span><span class="sxs-lookup"><span data-stu-id="5c4e2-106">**ReceiveTSPCallData**</span></span>](/windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-receivetspcalldata) | <span data-ttu-id="5c4e2-107">Chamado pelo método [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata) do objeto de endereço msp para distribuir dados do tsp para a chamada correta.</span><span class="sxs-lookup"><span data-stu-id="5c4e2-107">Called by the MSP address object's [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata) method to dispatch TSP data to the correct call.</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="f711c-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="f711c-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5c4e2-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5c4e2-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f711c-109">**CMSPCallBase**</span><span class="sxs-lookup"><span data-stu-id="f711c-109">**CMSPCallBase**</span></span>](/windows/desktop/api/Mspcall/nl-mspcall-cmspcallbase)
+[<span data-ttu-id="5c4e2-109">**CMSPCallBase**</span><span class="sxs-lookup"><span data-stu-id="5c4e2-109">**CMSPCallBase**</span></span>](/windows/desktop/api/Mspcall/nl-mspcall-cmspcallbase)
 </dt> </dl>
 
  

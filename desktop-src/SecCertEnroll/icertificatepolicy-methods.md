@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169696"
 ---
-# <a name="icertificatepolicy-methods"></a><span data-ttu-id="363d7-103">Métodos ICertificatePolicy</span><span class="sxs-lookup"><span data-stu-id="363d7-103">ICertificatePolicy Methods</span></span>
+# <a name="icertificatepolicy-methods"></a><span data-ttu-id="6a45c-103">Métodos ICertificatePolicy</span><span class="sxs-lookup"><span data-stu-id="6a45c-103">ICertificatePolicy Methods</span></span>
 
-<span data-ttu-id="363d7-104">A interface [**ICertificatePolicy**](/windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicy) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="363d7-104">The [**ICertificatePolicy**](/windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicy) interface exposes the following methods.</span></span>
+<span data-ttu-id="6a45c-104">A interface [**ICertificatePolicy**](/windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicy) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="6a45c-104">The [**ICertificatePolicy**](/windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicy) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="363d7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="363d7-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6a45c-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6a45c-105">In this section</span></span>
 
--   [<span data-ttu-id="363d7-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="363d7-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicy-initialize)
+-   [<span data-ttu-id="6a45c-106">**Método Initialize**</span><span class="sxs-lookup"><span data-stu-id="6a45c-106">**Initialize Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-icertificatepolicy-initialize)
 
  
 
