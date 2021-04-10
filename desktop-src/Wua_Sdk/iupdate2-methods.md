@@ -1,0 +1,37 @@
+---
+description: A interface IUpdate2 define o método a seguir.
+ms.assetid: 1859a70c-9ed1-400a-8e3f-412432862ace
+title: Métodos IUpdate2
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 9a3f0ff74c59945c963e7dfcda39fb00c04548eb
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104296414"
+---
+# <a name="iupdate2-methods"></a>Métodos IUpdate2
+
+A interface [**IUpdate2**](/windows/desktop/api/Wuapi/nn-wuapi-iupdate2) define o método a seguir.
+
+
+
+| Método                                      | Descrição                                                                                                            |
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| [**CopyToCache**](/windows/desktop/api/Wuapi/nf-wuapi-iupdate2-copytocache) | Copia arquivos para uma atualização de um local de origem especificado para o cache de download do WUA (agente de Windows Update interno). |
+
+
+
+ 
+
+Para obter informações sobre os membros herdados por essa interface, consulte a seguinte interface:
+
+-   [**IUpdate**](/windows/desktop/api/Wuapi/nn-wuapi-iupdate)
+
+ 
+
+ 
+
+
+
