@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172105"
 ---
-# <a name="esentslvpagesnotfreeexception-constructor"></a><span data-ttu-id="34e45-103">Construtor EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="34e45-103">EsentSLVPagesNotFreeException constructor</span></span>
+# <a name="esentslvpagesnotfreeexception-constructor"></a><span data-ttu-id="033ea-103">Construtor EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="033ea-103">EsentSLVPagesNotFreeException constructor</span></span>
 
-<span data-ttu-id="34e45-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="34e45-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="34e45-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="34e45-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="033ea-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="033ea-104">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="033ea-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="033ea-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="34e45-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="34e45-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="033ea-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="033ea-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New EsentSLVPagesNotFreeException()
 public EsentSLVPagesNotFreeException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="34e45-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="34e45-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="033ea-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="033ea-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="34e45-108">Referência</span><span class="sxs-lookup"><span data-stu-id="34e45-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="033ea-108">Referência</span><span class="sxs-lookup"><span data-stu-id="033ea-108">Reference</span></span>
 
-[<span data-ttu-id="34e45-109">Classe EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="34e45-109">EsentSLVPagesNotFreeException class</span></span>](./esentslvpagesnotfreeexception-class.md)
+[<span data-ttu-id="033ea-109">Classe EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="033ea-109">EsentSLVPagesNotFreeException class</span></span>](./esentslvpagesnotfreeexception-class.md)
 
-[<span data-ttu-id="34e45-110">Membros do EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="34e45-110">EsentSLVPagesNotFreeException members</span></span>](./esentslvpagesnotfreeexception-members.md)
+[<span data-ttu-id="033ea-110">Membros do EsentSLVPagesNotFreeException</span><span class="sxs-lookup"><span data-stu-id="033ea-110">EsentSLVPagesNotFreeException members</span></span>](./esentslvpagesnotfreeexception-members.md)
 
-[<span data-ttu-id="34e45-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="34e45-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="033ea-111">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="033ea-111">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

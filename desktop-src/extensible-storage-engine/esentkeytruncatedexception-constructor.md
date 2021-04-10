@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171902"
 ---
-# <a name="esentkeytruncatedexception-constructor"></a><span data-ttu-id="42b3a-103">Construtor EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="42b3a-103">EsentKeyTruncatedException constructor</span></span>
+# <a name="esentkeytruncatedexception-constructor"></a><span data-ttu-id="2978d-103">Construtor EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="2978d-103">EsentKeyTruncatedException constructor</span></span>
 
-<span data-ttu-id="42b3a-104">Inicializa uma nova instância da classe EsentKeyTruncatedException.</span><span class="sxs-lookup"><span data-stu-id="42b3a-104">Initializes a new instance of the EsentKeyTruncatedException class.</span></span>
+<span data-ttu-id="2978d-104">Inicializa uma nova instância da classe EsentKeyTruncatedException.</span><span class="sxs-lookup"><span data-stu-id="2978d-104">Initializes a new instance of the EsentKeyTruncatedException class.</span></span>
 
-<span data-ttu-id="42b3a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="42b3a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="42b3a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="42b3a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="2978d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="2978d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="2978d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="2978d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="42b3a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="42b3a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2978d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2978d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentKeyTruncatedException()
 public EsentKeyTruncatedException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="42b3a-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="42b3a-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2978d-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="2978d-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="42b3a-109">Referência</span><span class="sxs-lookup"><span data-stu-id="42b3a-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="2978d-109">Referência</span><span class="sxs-lookup"><span data-stu-id="2978d-109">Reference</span></span>
 
-[<span data-ttu-id="42b3a-110">Classe EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="42b3a-110">EsentKeyTruncatedException class</span></span>](./esentkeytruncatedexception-class.md)
+[<span data-ttu-id="2978d-110">Classe EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="2978d-110">EsentKeyTruncatedException class</span></span>](./esentkeytruncatedexception-class.md)
 
-[<span data-ttu-id="42b3a-111">Membros do EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="42b3a-111">EsentKeyTruncatedException members</span></span>](./esentkeytruncatedexception-members.md)
+[<span data-ttu-id="2978d-111">Membros do EsentKeyTruncatedException</span><span class="sxs-lookup"><span data-stu-id="2978d-111">EsentKeyTruncatedException members</span></span>](./esentkeytruncatedexception-members.md)
 
-[<span data-ttu-id="42b3a-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="42b3a-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="2978d-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="2978d-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

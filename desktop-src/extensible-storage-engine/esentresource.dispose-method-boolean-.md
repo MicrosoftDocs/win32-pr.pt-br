@@ -27,14 +27,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172115"
 ---
-# <a name="esentresourcedispose-method-boolean"></a><span data-ttu-id="55214-103">Método EsentResource. Dispose (booliano)</span><span class="sxs-lookup"><span data-stu-id="55214-103">EsentResource.Dispose method (Boolean)</span></span>
+# <a name="esentresourcedispose-method-boolean"></a><span data-ttu-id="eb0e6-103">Método EsentResource. Dispose (booliano)</span><span class="sxs-lookup"><span data-stu-id="eb0e6-103">EsentResource.Dispose method (Boolean)</span></span>
 
-<span data-ttu-id="55214-104">Chamado por Dispose e o finalizador.</span><span class="sxs-lookup"><span data-stu-id="55214-104">Called by Dispose and the finalizer.</span></span>
+<span data-ttu-id="eb0e6-104">Chamado por Dispose e o finalizador.</span><span class="sxs-lookup"><span data-stu-id="eb0e6-104">Called by Dispose and the finalizer.</span></span>
 
-<span data-ttu-id="55214-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="55214-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="55214-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="55214-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="eb0e6-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="eb0e6-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="eb0e6-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="eb0e6-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="55214-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="55214-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="eb0e6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="eb0e6-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,21 +53,21 @@ protected virtual void Dispose(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="55214-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="55214-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="eb0e6-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="eb0e6-108">Parameters</span></span>
 
-  - <span data-ttu-id="55214-109">isdisposição</span><span class="sxs-lookup"><span data-stu-id="55214-109">isDisposing</span></span>  
-    <span data-ttu-id="55214-110">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="55214-110">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
+  - <span data-ttu-id="eb0e6-109">isdisposição</span><span class="sxs-lookup"><span data-stu-id="eb0e6-109">isDisposing</span></span>  
+    <span data-ttu-id="eb0e6-110">Tipo: [System. Boolean](/dotnet/api/system.boolean)</span><span class="sxs-lookup"><span data-stu-id="eb0e6-110">Type: [System.Boolean](/dotnet/api/system.boolean)</span></span>  
     
-    <span data-ttu-id="55214-111">True se chamado de Dispose.</span><span class="sxs-lookup"><span data-stu-id="55214-111">True if called from Dispose.</span></span>
+    <span data-ttu-id="eb0e6-111">True se chamado de Dispose.</span><span class="sxs-lookup"><span data-stu-id="eb0e6-111">True if called from Dispose.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="55214-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="55214-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb0e6-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="eb0e6-112">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="55214-113">Referência</span><span class="sxs-lookup"><span data-stu-id="55214-113">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="eb0e6-113">Referência</span><span class="sxs-lookup"><span data-stu-id="eb0e6-113">Reference</span></span>
 
-[<span data-ttu-id="55214-114">Classe EsentResource</span><span class="sxs-lookup"><span data-stu-id="55214-114">EsentResource class</span></span>](./esentresource-class.md)
+[<span data-ttu-id="eb0e6-114">Classe EsentResource</span><span class="sxs-lookup"><span data-stu-id="eb0e6-114">EsentResource class</span></span>](./esentresource-class.md)
 
-[<span data-ttu-id="55214-115">Membros do EsentResource</span><span class="sxs-lookup"><span data-stu-id="55214-115">EsentResource members</span></span>](./esentresource-members.md)
+[<span data-ttu-id="eb0e6-115">Membros do EsentResource</span><span class="sxs-lookup"><span data-stu-id="eb0e6-115">EsentResource members</span></span>](./esentresource-members.md)
 
-[<span data-ttu-id="55214-116">Descartar sobrecarga</span><span class="sxs-lookup"><span data-stu-id="55214-116">Dispose overload</span></span>](./esentresource.dispose-method.md)
+[<span data-ttu-id="eb0e6-116">Descartar sobrecarga</span><span class="sxs-lookup"><span data-stu-id="eb0e6-116">Dispose overload</span></span>](./esentresource.dispose-method.md)
 
-[<span data-ttu-id="55214-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="55214-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="eb0e6-117">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="eb0e6-117">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

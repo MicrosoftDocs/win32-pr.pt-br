@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172172"
 ---
-# <a name="using-word-break-points"></a><span data-ttu-id="b1002-104">Usando pontos de quebra de palavras</span><span class="sxs-lookup"><span data-stu-id="b1002-104">Using Word Break Points</span></span>
+# <a name="using-word-break-points"></a><span data-ttu-id="a6b7f-104">Usando pontos de quebra de palavras</span><span class="sxs-lookup"><span data-stu-id="a6b7f-104">Using Word Break Points</span></span>
 
-<span data-ttu-id="b1002-105">Quando o aplicativo está lidando com palavras inteiras, as posições válidas para o cursor são marcadas pelo valor do membro **fWordStop** da estrutura [**\_ LOGATTR do script**](/windows/win32/api/usp10/ns-usp10-script_logattr) .</span><span class="sxs-lookup"><span data-stu-id="b1002-105">When the application is dealing with whole words, valid positions for the caret are marked by the value of the **fWordStop** member of the [**SCRIPT\_LOGATTR**](/windows/win32/api/usp10/ns-usp10-script_logattr) structure.</span></span> <span data-ttu-id="b1002-106">Esse valor é recuperado fazendo uma chamada para [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span><span class="sxs-lookup"><span data-stu-id="b1002-106">This value is retrieved by making a call to [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span></span>
+<span data-ttu-id="a6b7f-105">Quando o aplicativo está lidando com palavras inteiras, as posições válidas para o cursor são marcadas pelo valor do membro **fWordStop** da estrutura [**\_ LOGATTR do script**](/windows/win32/api/usp10/ns-usp10-script_logattr) .</span><span class="sxs-lookup"><span data-stu-id="a6b7f-105">When the application is dealing with whole words, valid positions for the caret are marked by the value of the **fWordStop** member of the [**SCRIPT\_LOGATTR**](/windows/win32/api/usp10/ns-usp10-script_logattr) structure.</span></span> <span data-ttu-id="a6b7f-106">Esse valor é recuperado fazendo uma chamada para [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span><span class="sxs-lookup"><span data-stu-id="a6b7f-106">This value is retrieved by making a call to [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span></span>
 
-<span data-ttu-id="b1002-107">Posições válidas para linhas de quebra entre palavras são marcadas pelo valor **fSoftBreak** recuperado por [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span><span class="sxs-lookup"><span data-stu-id="b1002-107">Valid positions for breaking lines between words are marked by the **fSoftBreak** value retrieved by [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span></span>
+<span data-ttu-id="a6b7f-107">Posições válidas para linhas de quebra entre palavras são marcadas pelo valor **fSoftBreak** recuperado por [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span><span class="sxs-lookup"><span data-stu-id="a6b7f-107">Valid positions for breaking lines between words are marked by the **fSoftBreak** value retrieved by [**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="b1002-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b1002-108">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a6b7f-108">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a6b7f-108">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b1002-109">Usando o Uniscribe</span><span class="sxs-lookup"><span data-stu-id="b1002-109">Using Uniscribe</span></span>](using-uniscribe.md)
+[<span data-ttu-id="a6b7f-109">Usando o Uniscribe</span><span class="sxs-lookup"><span data-stu-id="a6b7f-109">Using Uniscribe</span></span>](using-uniscribe.md)
 </dt> </dl>
 
  

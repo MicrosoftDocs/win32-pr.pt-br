@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172142"
 ---
-# <a name="iwbemobjecttextsrc-methods"></a><span data-ttu-id="24ea1-103">Métodos IWbemObjectTextSrc</span><span class="sxs-lookup"><span data-stu-id="24ea1-103">IWbemObjectTextSrc Methods</span></span>
+# <a name="iwbemobjecttextsrc-methods"></a><span data-ttu-id="35db5-103">Métodos IWbemObjectTextSrc</span><span class="sxs-lookup"><span data-stu-id="35db5-103">IWbemObjectTextSrc Methods</span></span>
 
-<span data-ttu-id="24ea1-104">A interface [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="24ea1-104">The [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) interface exposes the following methods.</span></span>
+<span data-ttu-id="35db5-104">A interface [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="35db5-104">The [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="24ea1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="24ea1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="35db5-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="35db5-105">In this section</span></span>
 
--   [<span data-ttu-id="24ea1-106">**Método GetText**</span><span class="sxs-lookup"><span data-stu-id="24ea1-106">**GetText method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext)
+-   [<span data-ttu-id="35db5-106">**Método GetText**</span><span class="sxs-lookup"><span data-stu-id="35db5-106">**GetText method**</span></span>](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext)
 
  
 
