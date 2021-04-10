@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171909"
 ---
-# <a name="esentindextupleskeytoosmallexception-constructor"></a><span data-ttu-id="9d55c-103">Construtor EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="9d55c-103">EsentIndexTuplesKeyTooSmallException constructor</span></span>
+# <a name="esentindextupleskeytoosmallexception-constructor"></a><span data-ttu-id="21841-103">Construtor EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="21841-103">EsentIndexTuplesKeyTooSmallException constructor</span></span>
 
-<span data-ttu-id="9d55c-104">Inicializa uma nova instância da classe EsentIndexTuplesKeyTooSmallException.</span><span class="sxs-lookup"><span data-stu-id="9d55c-104">Initializes a new instance of the EsentIndexTuplesKeyTooSmallException class.</span></span>
+<span data-ttu-id="21841-104">Inicializa uma nova instância da classe EsentIndexTuplesKeyTooSmallException.</span><span class="sxs-lookup"><span data-stu-id="21841-104">Initializes a new instance of the EsentIndexTuplesKeyTooSmallException class.</span></span>
 
-<span data-ttu-id="9d55c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9d55c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="9d55c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9d55c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="21841-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="21841-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="21841-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="21841-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9d55c-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9d55c-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="21841-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="21841-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentIndexTuplesKeyTooSmallException()
 public EsentIndexTuplesKeyTooSmallException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9d55c-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="9d55c-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="21841-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="21841-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="9d55c-109">Referência</span><span class="sxs-lookup"><span data-stu-id="9d55c-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="21841-109">Referência</span><span class="sxs-lookup"><span data-stu-id="21841-109">Reference</span></span>
 
-[<span data-ttu-id="9d55c-110">Classe EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="9d55c-110">EsentIndexTuplesKeyTooSmallException class</span></span>](./esentindextupleskeytoosmallexception-class.md)
+[<span data-ttu-id="21841-110">Classe EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="21841-110">EsentIndexTuplesKeyTooSmallException class</span></span>](./esentindextupleskeytoosmallexception-class.md)
 
-[<span data-ttu-id="9d55c-111">Membros do EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="9d55c-111">EsentIndexTuplesKeyTooSmallException members</span></span>](./esentindextupleskeytoosmallexception-members.md)
+[<span data-ttu-id="21841-111">Membros do EsentIndexTuplesKeyTooSmallException</span><span class="sxs-lookup"><span data-stu-id="21841-111">EsentIndexTuplesKeyTooSmallException members</span></span>](./esentindextupleskeytoosmallexception-members.md)
 
-[<span data-ttu-id="9d55c-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="9d55c-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="21841-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="21841-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
