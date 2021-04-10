@@ -36,7 +36,7 @@ Lista de escopos de diretório (por exemplo, C: \\ ou D: \) que são indexados.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.681                      |
 | System-ID-GUID    | 7bfdcb87-4807-11d1-a9c3-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

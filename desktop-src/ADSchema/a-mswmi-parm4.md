@@ -36,7 +36,7 @@ O atributo **MS-WMI-Parm4** é reservado para uso interno.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1685                     |
 | System-ID-GUID    | 3800d5a3-f1ce-4b82-a59a-1528ea795f59        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

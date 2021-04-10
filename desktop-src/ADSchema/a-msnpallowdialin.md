@@ -35,7 +35,7 @@ Indica se a conta tem permissão para fazer a conexão com o servidor RAS. Não 
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1119              |
 | System-ID-GUID    | db0c9085-c1f2-11d1-bbc5-0080c76670c0 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

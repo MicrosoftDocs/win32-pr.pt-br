@@ -1,0 +1,118 @@
+---
+title: Função MrmIndexString (MrmResourceIndexer. h)
+description: Indexa um único recurso de cadeia de caracteres que pertence a um aplicativo UWP.
+ms.assetid: 098F47E7-4BEC-452F-A33C-111F3F524E67
+keywords:
+- Menus de função MrmIndexString e outros recursos
+topic_type:
+- apiref
+api_name:
+- MrmIndexString
+api_location:
+- Mrmsupport.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: ec0c81155ae2484dd38f29e332a5f0093b07cd9a
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104085218"
+---
+# <a name="mrmindexstring-function"></a>Função MrmIndexString
+
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+
+Indexa um único recurso de cadeia de caracteres que pertence a um aplicativo UWP. Usa uma lista explícita (mas opcional) de qualificadores de recursos. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de [Pri (indexação de recursos de pacote) e sistemas de compilação personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT HRESULT MrmIndexString(
+  _In_     MrmResourceIndexerHandle indexer,
+  _In_     PCWSTR                   resourceUri,
+  _In_     PCWSTR                   resourceString,
+  _In_opt_ PCWSTR                   qualifiers
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*indexador* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
+
+Um identificador que identifica o indexador de recursos que indexará os recursos de cadeia de caracteres.
+
+</dd> <dt>
+
+*ResourceURI* \[ no\]
+</dt> <dd>
+
+Tipo: **PCWSTR**
+
+O URI de recurso a ser atribuído ao recurso. O caminho será usado como o nome da subárvore do mapa de recursos para esse recurso quando você gerar posteriormente um arquivo PRI desse indexador de recursos.
+
+</dd> <dt>
+
+*origemstring* \[ no\]
+</dt> <dd>
+
+Tipo: **PCWSTR**
+
+O valor do recurso de cadeia de caracteres.
+
+</dd> <dt>
+
+*qualificadores* \[ em, opcional\]
+</dt> <dd>
+
+Tipo: **PCWSTR**
+
+Uma lista opcional de qualificadores de recursos, por exemplo, L "idioma-en-US \_ Scale-100 \_ contraste-Standard". Uma cadeia de caracteres vazia ou **nullptr** indica um recurso neutro. Qualificadores de recursos *não* são inferidos de *ResourceURI*.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Tipo: **HRESULT**
+
+S \_ OK se a função for bem-sucedida, caso contrário, algum outro valor. Use as macros SUCCEEDed () ou FAILED () (definidas em Winerror. h) para determinar o êxito ou a falha.
+
+## <a name="remarks"></a>Comentários
+
+Se você quiser especificar quaisquer qualificadores de recursos, passe-os no parâmetro *Qualifiers* . Qualificadores de recursos *não* são inferidos de *ResourceURI*.
+
+O segmento de nome de arquivo de *ResourceURI* é usado como o nome do recurso.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
+| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[APIs de PRI (índice de recurso do pacote) e sistemas de build personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems)
+</dt> </dl>
+
+ 
+

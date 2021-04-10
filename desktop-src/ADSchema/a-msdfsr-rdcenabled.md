@@ -36,7 +36,7 @@ Contém o valor que especifica se a RDC está habilitada ou desabilitada.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.19           |
 | System-ID-GUID    | e3b44e05-f4a7-4078-a730-f48670a743f8 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 

@@ -35,7 +35,7 @@ O número da sala de um objeto.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.6                   |
 | System-ID-GUID    | 81d7f8c2-e327-4a0d-91c6-b42d4009115f        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

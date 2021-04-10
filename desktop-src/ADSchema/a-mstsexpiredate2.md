@@ -36,7 +36,7 @@ Data de expiração do segundo TS CAL por usuário.
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.2000                                       |
 | System-ID-GUID    | 54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925                          |
-| Sintaxe            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 
