@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005230"
 ---
-# <a name="cc-code-example-setting-task-account-information"></a><span data-ttu-id="43206-106">Exemplo de código C/C++: definindo informações da conta da tarefa</span><span class="sxs-lookup"><span data-stu-id="43206-106">C/C++ Code Example: Setting Task Account Information</span></span>
+# <a name="cc-code-example-setting-task-account-information"></a><span data-ttu-id="a3298-106">Exemplo de código C/C++: definindo informações da conta da tarefa</span><span class="sxs-lookup"><span data-stu-id="a3298-106">C/C++ Code Example: Setting Task Account Information</span></span>
 
-<span data-ttu-id="43206-107">Este exemplo define as informações da conta para uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="43206-107">This example sets the account information for a known task.</span></span> <span data-ttu-id="43206-108">Este exemplo pressupõe que a tarefa "Test Task" já exista no computador local e que o serviço Agendador de Tarefas esteja em execução.</span><span class="sxs-lookup"><span data-stu-id="43206-108">This example assumes that the task "test task" already exists on the local computer and that the Task Scheduler service is running.</span></span>
+<span data-ttu-id="a3298-107">Este exemplo define as informações da conta para uma tarefa conhecida.</span><span class="sxs-lookup"><span data-stu-id="a3298-107">This example sets the account information for a known task.</span></span> <span data-ttu-id="a3298-108">Este exemplo pressupõe que a tarefa "Test Task" já exista no computador local e que o serviço Agendador de Tarefas esteja em execução.</span><span class="sxs-lookup"><span data-stu-id="a3298-108">This example assumes that the task "test task" already exists on the local computer and that the Task Scheduler service is running.</span></span>
 
 
 ```C++
@@ -186,11 +186,11 @@ int main(int argc, char **argv)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="43206-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="43206-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a3298-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="a3298-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="43206-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="43206-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+[<span data-ttu-id="a3298-110">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="a3298-110">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
  

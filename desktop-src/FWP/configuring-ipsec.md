@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005214"
 ---
-# <a name="configuring-ipsec"></a><span data-ttu-id="4ff42-103">Configurando o IPSec</span><span class="sxs-lookup"><span data-stu-id="4ff42-103">Configuring IPSec</span></span>
+# <a name="configuring-ipsec"></a><span data-ttu-id="5bf54-103">Configurando o IPSec</span><span class="sxs-lookup"><span data-stu-id="5bf54-103">Configuring IPSec</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="4ff42-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4ff42-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5bf54-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5bf54-104">In this section</span></span>
 
--   [<span data-ttu-id="4ff42-105">Usando o modo de transporte</span><span class="sxs-lookup"><span data-stu-id="4ff42-105">Using Transport Mode</span></span>](using-transport-mode.md)
--   [<span data-ttu-id="4ff42-106">Usando o modo de túnel</span><span class="sxs-lookup"><span data-stu-id="4ff42-106">Using Tunnel Mode</span></span>](using-tunnel-mode.md)
--   [<span data-ttu-id="4ff42-107">Chaveamento da SA manual</span><span class="sxs-lookup"><span data-stu-id="4ff42-107">Manual SA Keying</span></span>](manual-sa-keying.md)
+-   [<span data-ttu-id="5bf54-105">Usando o modo de transporte</span><span class="sxs-lookup"><span data-stu-id="5bf54-105">Using Transport Mode</span></span>](using-transport-mode.md)
+-   [<span data-ttu-id="5bf54-106">Usando o modo de túnel</span><span class="sxs-lookup"><span data-stu-id="5bf54-106">Using Tunnel Mode</span></span>](using-tunnel-mode.md)
+-   [<span data-ttu-id="5bf54-107">Chaveamento da SA manual</span><span class="sxs-lookup"><span data-stu-id="5bf54-107">Manual SA Keying</span></span>](manual-sa-keying.md)
 
  
 

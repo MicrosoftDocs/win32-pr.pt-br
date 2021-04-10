@@ -1,0 +1,47 @@
+---
+title: Atributo LightHarsh2 de VML
+description: Atributo LightHarsh2 de VML
+ms.assetid: c36fee79-a755-46cc-abd0-238c88c700d6
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4a0819e4d83031ed27e1aeb594f009908b045c7d
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104007621"
+---
+# <a name="vml-lightharsh2-attribute"></a><span data-ttu-id="395a7-103">Atributo LightHarsh2 de VML</span><span class="sxs-lookup"><span data-stu-id="395a7-103">VML LightHarsh2 Attribute</span></span>
+
+<span data-ttu-id="395a7-104">Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="395a7-104">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="395a7-105">As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.</span><span class="sxs-lookup"><span data-stu-id="395a7-105">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="395a7-106">A partir de dezembro de 2011, este tópico foi arquivado.</span><span class="sxs-lookup"><span data-stu-id="395a7-106">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="395a7-107">Como resultado, ele não é mais mantido ativamente.</span><span class="sxs-lookup"><span data-stu-id="395a7-107">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="395a7-108">Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="395a7-108">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="395a7-109">Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="395a7-109">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+
+ 
+
+<span data-ttu-id="395a7-110">Determina se a fonte de luz secundária será dura.</span><span class="sxs-lookup"><span data-stu-id="395a7-110">Determines whether the secondary light source will be harsh.</span></span> <span data-ttu-id="395a7-111">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="395a7-111">Read/write.</span></span> <span data-ttu-id="395a7-112">**VgTriState**.</span><span class="sxs-lookup"><span data-stu-id="395a7-112">**VgTriState**.</span></span>
+
+<span data-ttu-id="395a7-113">**Aplica-se a**</span><span class="sxs-lookup"><span data-stu-id="395a7-113">**Applies To**</span></span>
+
+[<span data-ttu-id="395a7-114">Extrusão</span><span class="sxs-lookup"><span data-stu-id="395a7-114">Extrusion</span></span>](msdn-online-vml-extrusion-element.md)
+
+<span data-ttu-id="395a7-115">**Sintaxe de marca**</span><span class="sxs-lookup"><span data-stu-id="395a7-115">**Tag Syntax**</span></span>
+
+<span data-ttu-id="395a7-116"><o: *Element* lightharsh2 = " *expressão* " ></span><span class="sxs-lookup"><span data-stu-id="395a7-116"><o: *element* lightharsh2=" *expression* "></span></span>
+
+<span data-ttu-id="395a7-117">**Sintaxe do script**</span><span class="sxs-lookup"><span data-stu-id="395a7-117">**Script Syntax**</span></span>
+
+<span data-ttu-id="395a7-118">*Element* . lightharsh2 = "*expressão*"</span><span class="sxs-lookup"><span data-stu-id="395a7-118">*element* .lightharsh2="*expression*"</span></span>
+
+<span data-ttu-id="395a7-119">*expressão* = de *elemento*. lightharsh2</span><span class="sxs-lookup"><span data-stu-id="395a7-119">*expression*=*element*.lightharsh2</span></span>
+
+<span data-ttu-id="395a7-120">**Comentários**</span><span class="sxs-lookup"><span data-stu-id="395a7-120">**Remarks**</span></span>
+
+<span data-ttu-id="395a7-121">Se **for false**, os limites de sombra definidos pela segunda fonte de luz serão difusos.</span><span class="sxs-lookup"><span data-stu-id="395a7-121">If **False**, the shadow boundaries defined by the second light source are diffused.</span></span> <span data-ttu-id="395a7-122">O valor padrão é **True**.</span><span class="sxs-lookup"><span data-stu-id="395a7-122">The default value is **True**.</span></span>
+
+<span data-ttu-id="395a7-123">*Atributo de extensões de Microsoft Office*</span><span class="sxs-lookup"><span data-stu-id="395a7-123">*Microsoft Office Extensions Attribute*</span></span>
+
+ 
+
+ 

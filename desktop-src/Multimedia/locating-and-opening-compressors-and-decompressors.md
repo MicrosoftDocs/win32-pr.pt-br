@@ -15,9 +15,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005236"
 ---
-# <a name="locating-and-opening-compressors-and-decompressors"></a><span data-ttu-id="8a881-106">Localizando e abrindo compactadores e descompactadores</span><span class="sxs-lookup"><span data-stu-id="8a881-106">Locating and Opening Compressors and Decompressors</span></span>
+# <a name="locating-and-opening-compressors-and-decompressors"></a><span data-ttu-id="ad33f-106">Localizando e abrindo compactadores e descompactadores</span><span class="sxs-lookup"><span data-stu-id="ad33f-106">Locating and Opening Compressors and Decompressors</span></span>
 
-<span data-ttu-id="8a881-107">O exemplo a seguir usa a função [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) para encontrar um compressor que pode compactar um bitmap de 8 bits por pixel.</span><span class="sxs-lookup"><span data-stu-id="8a881-107">The following example uses the [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) function to find a compressor that can compress an 8-bits-per-pixel bitmap.</span></span>
+<span data-ttu-id="ad33f-107">O exemplo a seguir usa a função [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) para encontrar um compressor que pode compactar um bitmap de 8 bits por pixel.</span><span class="sxs-lookup"><span data-stu-id="ad33f-107">The following example uses the [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) function to find a compressor that can compress an 8-bits-per-pixel bitmap.</span></span>
 
 
 ```C++
@@ -41,7 +41,7 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L, (LPBITMAPINFOHEADER) &bih,
 
 
 
-<span data-ttu-id="8a881-108">O exemplo a seguir enumera os decompactadores no sistema para encontrar um que possa manipular o formato de suas imagens.</span><span class="sxs-lookup"><span data-stu-id="8a881-108">The following example enumerates the decompressors in the system to find one that can handle the format of its images.</span></span> <span data-ttu-id="8a881-109">Este exemplo usa **o \_ vídeo ICTYPE** (que é equivalente ao código de quatro caracteres "VIDC") e a macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) para determinar se um compressor ou descompactador dá suporte ao formato de imagem.</span><span class="sxs-lookup"><span data-stu-id="8a881-109">This example uses **ICTYPE\_VIDEO** (which is equivalent to the "VIDC" four-character code) and the [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) macro to determine if a compressor or decompressor supports the image format.</span></span>
+<span data-ttu-id="ad33f-108">O exemplo a seguir enumera os decompactadores no sistema para encontrar um que possa manipular o formato de suas imagens.</span><span class="sxs-lookup"><span data-stu-id="ad33f-108">The following example enumerates the decompressors in the system to find one that can handle the format of its images.</span></span> <span data-ttu-id="ad33f-109">Este exemplo usa **o \_ vídeo ICTYPE** (que é equivalente ao código de quatro caracteres "VIDC") e a macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) para determinar se um compressor ou descompactador dá suporte ao formato de imagem.</span><span class="sxs-lookup"><span data-stu-id="ad33f-109">This example uses **ICTYPE\_VIDEO** (which is equivalent to the "VIDC" four-character code) and the [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) macro to determine if a compressor or decompressor supports the image format.</span></span>
 
 
 ```C++
@@ -71,7 +71,7 @@ for (i=0; ICInfo(fccType, i, &icinfo); i++)
 
 
 
-<span data-ttu-id="8a881-110">O exemplo a seguir tenta localizar um compressor específico para compactar o formato RGB de 8 bits para um formato RLE de 8 bits.</span><span class="sxs-lookup"><span data-stu-id="8a881-110">The following example attempts to locate a specific compressor to compress the 8-bit RGB format to an 8-bit RLE format.</span></span>
+<span data-ttu-id="ad33f-110">O exemplo a seguir tenta localizar um compressor específico para compactar o formato RGB de 8 bits para um formato RLE de 8 bits.</span><span class="sxs-lookup"><span data-stu-id="ad33f-110">The following example attempts to locate a specific compressor to compress the 8-bit RGB format to an 8-bit RLE format.</span></span>
 
 
 ```C++
@@ -100,11 +100,11 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="8a881-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8a881-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ad33f-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ad33f-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8a881-112">Usando o Gerenciador de compactação de vídeo</span><span class="sxs-lookup"><span data-stu-id="8a881-112">Using the Video Compression Manager</span></span>](using-the-video-compression-manager.md)
+[<span data-ttu-id="ad33f-112">Usando o Gerenciador de compactação de vídeo</span><span class="sxs-lookup"><span data-stu-id="ad33f-112">Using the Video Compression Manager</span></span>](using-the-video-compression-manager.md)
 </dt> </dl>
 
  

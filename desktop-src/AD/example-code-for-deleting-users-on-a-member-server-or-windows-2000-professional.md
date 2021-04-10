@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004922"
 ---
-# <a name="example-code-for-deleting-users-on-a-member-server-or-windows-2000-professional"></a><span data-ttu-id="fa2d7-104">Código de exemplo para excluir usuários em um servidor membro ou Windows 2000 Professional</span><span class="sxs-lookup"><span data-stu-id="fa2d7-104">Example Code for Deleting Users on a Member Server or Windows 2000 Professional</span></span>
+# <a name="example-code-for-deleting-users-on-a-member-server-or-windows-2000-professional"></a><span data-ttu-id="998c4-104">Código de exemplo para excluir usuários em um servidor membro ou Windows 2000 Professional</span><span class="sxs-lookup"><span data-stu-id="998c4-104">Example Code for Deleting Users on a Member Server or Windows 2000 Professional</span></span>
 
-<span data-ttu-id="fa2d7-105">O código de Visual Basic a seguir exclui um usuário em um servidor membro ou estação de trabalho.</span><span class="sxs-lookup"><span data-stu-id="fa2d7-105">The following Visual Basic code deletes a user on a member server or workstation.</span></span>
+<span data-ttu-id="998c4-105">O código de Visual Basic a seguir exclui um usuário em um servidor membro ou estação de trabalho.</span><span class="sxs-lookup"><span data-stu-id="998c4-105">The following Visual Basic code deletes a user on a member server or workstation.</span></span>
 
 
 ```VB
