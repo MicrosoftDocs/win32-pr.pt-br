@@ -27,7 +27,7 @@ O tipo de [JET_RECSIZE](./jet-recsize-structure2.md) expõe os membros a seguir.
 <thead>
 <tr class="header">
 <th> </th>
-<th>Name</th>
+<th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>
