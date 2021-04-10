@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "104089904"
 ---
-# <a name="jet_enumcolumnidcolumnid-property"></a><span data-ttu-id="1e874-103">Propriedade JET_ENUMCOLUMNID. ColumnID</span><span class="sxs-lookup"><span data-stu-id="1e874-103">JET_ENUMCOLUMNID.columnid property</span></span>
+# <a name="jet_enumcolumnidcolumnid-property"></a><span data-ttu-id="55f46-103">Propriedade JET_ENUMCOLUMNID. ColumnID</span><span class="sxs-lookup"><span data-stu-id="55f46-103">JET_ENUMCOLUMNID.columnid property</span></span>
 
-<span data-ttu-id="1e874-104">Obtém ou define a ID de columnid a ser enumerada.</span><span class="sxs-lookup"><span data-stu-id="1e874-104">Gets or sets the columnid ID to enumerate.</span></span>
+<span data-ttu-id="55f46-104">Obtém ou define a ID de columnid a ser enumerada.</span><span class="sxs-lookup"><span data-stu-id="55f46-104">Gets or sets the columnid ID to enumerate.</span></span>
 
-<span data-ttu-id="1e874-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1e874-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="1e874-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1e874-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="55f46-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="55f46-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="55f46-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="55f46-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1e874-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="1e874-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="55f46-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="55f46-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,20 +60,20 @@ instance.columnid = value
 public JET_COLUMNID columnid { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="1e874-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="1e874-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="55f46-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="55f46-108">Property value</span></span>
 
-<span data-ttu-id="1e874-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="1e874-109">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
+<span data-ttu-id="55f46-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="55f46-109">Type: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)</span></span>  
 
-## <a name="remarks"></a><span data-ttu-id="1e874-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="1e874-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="55f46-110">Comentários</span><span class="sxs-lookup"><span data-stu-id="55f46-110">Remarks</span></span>
 
-<span data-ttu-id="1e874-111">Se a ID da coluna for 0 (zero), a enumeração dessa coluna será ignorada e um slot correspondente na matriz de saída de estruturas de JET_ENUMCOLUMN será gerado com um estado de coluna de JET_wrnColumnSkipped.</span><span class="sxs-lookup"><span data-stu-id="1e874-111">If the column ID is 0 (zero) then the enumeration of this column is skipped and a corresponding slot in the output array of JET_ENUMCOLUMN structures will be generated with a column state of JET_wrnColumnSkipped.</span></span>
+<span data-ttu-id="55f46-111">Se a ID da coluna for 0 (zero), a enumeração dessa coluna será ignorada e um slot correspondente na matriz de saída de estruturas de JET_ENUMCOLUMN será gerado com um estado de coluna de JET_wrnColumnSkipped.</span><span class="sxs-lookup"><span data-stu-id="55f46-111">If the column ID is 0 (zero) then the enumeration of this column is skipped and a corresponding slot in the output array of JET_ENUMCOLUMN structures will be generated with a column state of JET_wrnColumnSkipped.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1e874-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="1e874-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="55f46-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="55f46-112">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="1e874-113">Referência</span><span class="sxs-lookup"><span data-stu-id="1e874-113">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="55f46-113">Referência</span><span class="sxs-lookup"><span data-stu-id="55f46-113">Reference</span></span>
 
-[<span data-ttu-id="1e874-114">Classe JET_ENUMCOLUMNID</span><span class="sxs-lookup"><span data-stu-id="1e874-114">JET_ENUMCOLUMNID class</span></span>](./jet-enumcolumnid-class.md)
+[<span data-ttu-id="55f46-114">Classe JET_ENUMCOLUMNID</span><span class="sxs-lookup"><span data-stu-id="55f46-114">JET_ENUMCOLUMNID class</span></span>](./jet-enumcolumnid-class.md)
 
-[<span data-ttu-id="1e874-115">Membros do JET_ENUMCOLUMNID</span><span class="sxs-lookup"><span data-stu-id="1e874-115">JET_ENUMCOLUMNID members</span></span>](./jet-enumcolumnid-members.md)
+[<span data-ttu-id="55f46-115">Membros do JET_ENUMCOLUMNID</span><span class="sxs-lookup"><span data-stu-id="55f46-115">JET_ENUMCOLUMNID members</span></span>](./jet-enumcolumnid-members.md)
 
-[<span data-ttu-id="1e874-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1e874-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="55f46-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="55f46-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
