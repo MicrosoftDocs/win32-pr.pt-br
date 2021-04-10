@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005222"
 ---
-# <a name="creating-a-binding-handle"></a><span data-ttu-id="6c4bb-104">Criando um identificador de associação</span><span class="sxs-lookup"><span data-stu-id="6c4bb-104">Creating a Binding Handle</span></span>
+# <a name="creating-a-binding-handle"></a><span data-ttu-id="e3ea6-104">Criando um identificador de associação</span><span class="sxs-lookup"><span data-stu-id="e3ea6-104">Creating a Binding Handle</span></span>
 
-<span data-ttu-id="6c4bb-105">O programa cliente de um aplicativo distribuído precisa criar um identificador de associação que informa ao tempo de execução RPC qual servidor deve ser contatado e como o servidor deve ser contatado.</span><span class="sxs-lookup"><span data-stu-id="6c4bb-105">The client program of a distributed application needs to create a binding handle that tells the RPC run time which server should be contacted, and how the server should be contacted.</span></span>
+<span data-ttu-id="e3ea6-105">O programa cliente de um aplicativo distribuído precisa criar um identificador de associação que informa ao tempo de execução RPC qual servidor deve ser contatado e como o servidor deve ser contatado.</span><span class="sxs-lookup"><span data-stu-id="e3ea6-105">The client program of a distributed application needs to create a binding handle that tells the RPC run time which server should be contacted, and how the server should be contacted.</span></span>
 
-<span data-ttu-id="6c4bb-106">O fragmento de código a seguir demonstra uma abordagem comum para criar um identificador de associação:</span><span class="sxs-lookup"><span data-stu-id="6c4bb-106">The following code fragment demonstrates a common approach to creating a binding handle:</span></span>
+<span data-ttu-id="e3ea6-106">O fragmento de código a seguir demonstra uma abordagem comum para criar um identificador de associação:</span><span class="sxs-lookup"><span data-stu-id="e3ea6-106">The following code fragment demonstrates a common approach to creating a binding handle:</span></span>
 
 
 ```C++
