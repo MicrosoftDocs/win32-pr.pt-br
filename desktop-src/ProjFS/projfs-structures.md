@@ -1,0 +1,31 @@
+---
+title: Estruturas ProjFS
+description: As seguintes estruturas são declaradas em projectedfslib. h.
+ms.assetid: <GUID-GOES-HERE>
+ms.date: 01/17/2020
+ms.topic: article
+ms.openlocfilehash: 0bf72bd479e273c6c8cbdaa9ed588625298f4f95
+ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "104163573"
+---
+# <a name="projfs-structures"></a><span data-ttu-id="93b04-103">Estruturas ProjFS</span><span class="sxs-lookup"><span data-stu-id="93b04-103">ProjFS structures</span></span>
+
+<span data-ttu-id="93b04-104">As seguintes estruturas são declaradas em projectedfslib. h.</span><span class="sxs-lookup"><span data-stu-id="93b04-104">The following structures are declared in projectedfslib.h.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="93b04-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="93b04-105">In this section</span></span>
+
+| <span data-ttu-id="93b04-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="93b04-106">Topic</span></span> | <span data-ttu-id="93b04-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="93b04-107">Description</span></span> |
+|-|-|
+| [<span data-ttu-id="93b04-108">**PRJ_CALLBACK_DATA**</span><span class="sxs-lookup"><span data-stu-id="93b04-108">**PRJ_CALLBACK_DATA**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callback_data) | <span data-ttu-id="93b04-109">Define as informações padrão passadas para um provedor para cada retorno de chamada de operação.</span><span class="sxs-lookup"><span data-stu-id="93b04-109">Defines the standard information passed to a provider for every operation callback.</span></span> |
+| [<span data-ttu-id="93b04-110">**PRJ_CALLBACKS**</span><span class="sxs-lookup"><span data-stu-id="93b04-110">**PRJ_CALLBACKS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callbacks) | <span data-ttu-id="93b04-111">Um conjunto de ponteiros para onde o provedor armazena suas implementações das rotinas de retorno de chamada.</span><span class="sxs-lookup"><span data-stu-id="93b04-111">A set of pointers to where the provider stores its implementations of the callback routines.</span></span> |
+| [<span data-ttu-id="93b04-112">**PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS**</span><span class="sxs-lookup"><span data-stu-id="93b04-112">**PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_complete_command_extended_parameters) | <span data-ttu-id="93b04-113">Especifica os parâmetros necessários para concluir determinados retornos de chamada.</span><span class="sxs-lookup"><span data-stu-id="93b04-113">Specifies parameters required for completing certain callbacks.</span></span> |
+| [<span data-ttu-id="93b04-114">**PRJ_FILE_BASIC_INFO**</span><span class="sxs-lookup"><span data-stu-id="93b04-114">**PRJ_FILE_BASIC_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_file_basic_info) | <span data-ttu-id="93b04-115">Informações básicas sobre um item.</span><span class="sxs-lookup"><span data-stu-id="93b04-115">Basic information about an item.</span></span> |
+| [<span data-ttu-id="93b04-116">**PRJ_NOTIFICATION_MAPPING**</span><span class="sxs-lookup"><span data-stu-id="93b04-116">**PRJ_NOTIFICATION_MAPPING**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_mapping) | <span data-ttu-id="93b04-117">Descreve um mapeamento de notificação, que é um emparelhamento entre um diretório (chamado de "raiz de notificação") e um conjunto de notificações, expresso como uma máscara de bits.</span><span class="sxs-lookup"><span data-stu-id="93b04-117">Describes a notification mapping, which is a pairing between a directory (referred to as a "notification root") and a set of notifications, expressed as a bit mask.</span></span> |
+| [<span data-ttu-id="93b04-118">**PRJ_NOTIFICATION_PARAMETERS**</span><span class="sxs-lookup"><span data-stu-id="93b04-118">**PRJ_NOTIFICATION_PARAMETERS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_parameters) | <span data-ttu-id="93b04-119">Parâmetros extras para notificações.</span><span class="sxs-lookup"><span data-stu-id="93b04-119">Extra parameters for notifications.</span></span> |
+| [<span data-ttu-id="93b04-120">**PRJ_PLACEHOLDER_INFO**</span><span class="sxs-lookup"><span data-stu-id="93b04-120">**PRJ_PLACEHOLDER_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_info) | <span data-ttu-id="93b04-121">Um buffer de metadados para o arquivo ou diretório de espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="93b04-121">A buffer of metadata for the placeholder file or directory.</span></span> |
+| [<span data-ttu-id="93b04-122">**PRJ_PLACEHOLDER_VERSION_INFO**</span><span class="sxs-lookup"><span data-stu-id="93b04-122">**PRJ_PLACEHOLDER_VERSION_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_version_info) | <span data-ttu-id="93b04-123">Informações que identificam exclusivamente o conteúdo de um arquivo de espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="93b04-123">Information that uniquely identifies the contents of a placeholder file.</span></span> |
+| [<span data-ttu-id="93b04-124">**PRJ_STARTVIRTUALIZING_OPTIONS**</span><span class="sxs-lookup"><span data-stu-id="93b04-124">**PRJ_STARTVIRTUALIZING_OPTIONS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_startvirtualizing_options) | <span data-ttu-id="93b04-125">Opções a serem fornecidas ao iniciar uma instância de virtualização.</span><span class="sxs-lookup"><span data-stu-id="93b04-125">Options to provide when starting a virtualization instance.</span></span> |
+| [<span data-ttu-id="93b04-126">**PRJ_VIRTUALIZATION_INSTANCE_INFO**</span><span class="sxs-lookup"><span data-stu-id="93b04-126">**PRJ_VIRTUALIZATION_INSTANCE_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_virtualization_instance_info) | <span data-ttu-id="93b04-127">Informações sobre uma instância de virtualização.</span><span class="sxs-lookup"><span data-stu-id="93b04-127">Information about a virtualization instance.</span></span> |
