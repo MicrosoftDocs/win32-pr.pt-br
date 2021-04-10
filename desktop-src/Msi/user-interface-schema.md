@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172003"
 ---
-# <a name="user-interface-schema"></a><span data-ttu-id="4d54d-103">Esquema da interface do usuário</span><span class="sxs-lookup"><span data-stu-id="4d54d-103">User Interface Schema</span></span>
+# <a name="user-interface-schema"></a><span data-ttu-id="76df7-103">Esquema da interface do usuário</span><span class="sxs-lookup"><span data-stu-id="76df7-103">User Interface Schema</span></span>
 
 ![esquema da interface do usuário](images/gui.png)
 
-<span data-ttu-id="4d54d-105">Para obter mais informações sobre este diagrama, consulte [legenda de diagrama de relação de entidade](entity-relationship-diagram-legend.md).</span><span class="sxs-lookup"><span data-stu-id="4d54d-105">For more information about this diagram, see [entity relationship diagram legend](entity-relationship-diagram-legend.md).</span></span>
+<span data-ttu-id="76df7-105">Para obter mais informações sobre este diagrama, consulte [legenda de diagrama de relação de entidade](entity-relationship-diagram-legend.md).</span><span class="sxs-lookup"><span data-stu-id="76df7-105">For more information about this diagram, see [entity relationship diagram legend](entity-relationship-diagram-legend.md).</span></span>
 
  
 

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160482"
 ---
-# <a name="ui_pkey_themecolorstooltips"></a><span data-ttu-id="47852-103">\_ThemeColorsTooltips PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="47852-103">UI\_PKEY\_ThemeColorsTooltips</span></span>
+# <a name="ui_pkey_themecolorstooltips"></a><span data-ttu-id="80846-103">\_ThemeColorsTooltips PKEY \_ UI</span><span class="sxs-lookup"><span data-stu-id="80846-103">UI\_PKEY\_ThemeColorsTooltips</span></span>
 
-<span data-ttu-id="47852-104">Identifica a \_ Propriedade PKEY ThemeColorsTooltips da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="47852-104">Identifies the UI\_PKEY\_ThemeColorsTooltips property.</span></span>
+<span data-ttu-id="80846-104">Identifica a \_ Propriedade PKEY ThemeColorsTooltips da interface do usuário \_ .</span><span class="sxs-lookup"><span data-stu-id="80846-104">Identifies the UI\_PKEY\_ThemeColorsTooltips property.</span></span>
 
 ```
 propertyDescription
@@ -25,19 +25,19 @@ propertyDescription
       type = VT_VECTOR | VT_LPWSTR
 ```
 
-## <a name="remarks"></a><span data-ttu-id="47852-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="47852-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="80846-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="80846-105">Remarks</span></span>
 
-<span data-ttu-id="47852-106">A interface do usuário \_ PKEY \_ ThemeColorsTooltips é usada por um aplicativo para consultar as dicas de ferramentas de amostra de cor de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="47852-106">UI\_PKEY\_ThemeColorsTooltips is used by an application to query the color swatch tooltips of a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
+<span data-ttu-id="80846-106">A interface do usuário \_ PKEY \_ ThemeColorsTooltips é usada por um aplicativo para consultar as dicas de ferramentas de amostra de cor de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span><span class="sxs-lookup"><span data-stu-id="80846-106">UI\_PKEY\_ThemeColorsTooltips is used by an application to query the color swatch tooltips of a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).</span></span>
 
-<span data-ttu-id="47852-107">O valor da propriedade é uma matriz de valores de cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="47852-107">The property value is an array of string values.</span></span>
+<span data-ttu-id="80846-107">O valor da propriedade é uma matriz de valores de cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="80846-107">The property value is an array of string values.</span></span>
 
-<span data-ttu-id="47852-108">Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que `ThemeColors` é especificado como o valor do atributo **colortemplate** .</span><span class="sxs-lookup"><span data-stu-id="47852-108">Each string value corresponds to the tooltip for a color swatch in a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) where `ThemeColors` is specified as the value of the **ColorTemplate** attribute.</span></span>
+<span data-ttu-id="80846-108">Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que `ThemeColors` é especificado como o valor do atributo **colortemplate** .</span><span class="sxs-lookup"><span data-stu-id="80846-108">Each string value corresponds to the tooltip for a color swatch in a [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) where `ThemeColors` is specified as the value of the **ColorTemplate** attribute.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="47852-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="47852-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="80846-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="80846-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="47852-110">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="47852-110">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
+[<span data-ttu-id="80846-110">Propriedades do seletor de cores</span><span class="sxs-lookup"><span data-stu-id="80846-110">Color Picker Properties</span></span>](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  

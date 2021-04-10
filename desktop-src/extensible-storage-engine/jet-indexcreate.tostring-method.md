@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172218"
 ---
-# <a name="jet_indexcreatetostring-method"></a><span data-ttu-id="e4d95-103">JET_INDEXCREATE. Método ToString</span><span class="sxs-lookup"><span data-stu-id="e4d95-103">JET_INDEXCREATE.ToString method</span></span>
+# <a name="jet_indexcreatetostring-method"></a><span data-ttu-id="b8c39-103">JET_INDEXCREATE. Método ToString</span><span class="sxs-lookup"><span data-stu-id="b8c39-103">JET_INDEXCREATE.ToString method</span></span>
 
-<span data-ttu-id="e4d95-104">Gere uma representação de cadeia de caracteres da instância.</span><span class="sxs-lookup"><span data-stu-id="e4d95-104">Generate a string representation of the instance.</span></span>
+<span data-ttu-id="b8c39-104">Gere uma representação de cadeia de caracteres da instância.</span><span class="sxs-lookup"><span data-stu-id="b8c39-104">Generate a string representation of the instance.</span></span>
 
-<span data-ttu-id="e4d95-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="e4d95-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="e4d95-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="e4d95-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="b8c39-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="b8c39-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="b8c39-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="b8c39-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e4d95-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e4d95-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b8c39-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b8c39-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="e4d95-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e4d95-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="b8c39-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b8c39-108">Return value</span></span>
 
-<span data-ttu-id="e4d95-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="e4d95-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
-<span data-ttu-id="e4d95-110">A estrutura como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="e4d95-110">The structure as a string.</span></span>  
+<span data-ttu-id="b8c39-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="b8c39-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="b8c39-110">A estrutura como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="b8c39-110">The structure as a string.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="e4d95-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="e4d95-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8c39-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="b8c39-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="e4d95-112">Referência</span><span class="sxs-lookup"><span data-stu-id="e4d95-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="b8c39-112">Referência</span><span class="sxs-lookup"><span data-stu-id="b8c39-112">Reference</span></span>
 
-[<span data-ttu-id="e4d95-113">Classe JET_INDEXCREATE</span><span class="sxs-lookup"><span data-stu-id="e4d95-113">JET_INDEXCREATE class</span></span>](./jet-indexcreate-class.md)
+[<span data-ttu-id="b8c39-113">Classe JET_INDEXCREATE</span><span class="sxs-lookup"><span data-stu-id="b8c39-113">JET_INDEXCREATE class</span></span>](./jet-indexcreate-class.md)
 
-[<span data-ttu-id="e4d95-114">Membros do JET_INDEXCREATE</span><span class="sxs-lookup"><span data-stu-id="e4d95-114">JET_INDEXCREATE members</span></span>](./jet-indexcreate-members.md)
+[<span data-ttu-id="b8c39-114">Membros do JET_INDEXCREATE</span><span class="sxs-lookup"><span data-stu-id="b8c39-114">JET_INDEXCREATE members</span></span>](./jet-indexcreate-members.md)
 
-[<span data-ttu-id="e4d95-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="e4d95-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="b8c39-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="b8c39-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

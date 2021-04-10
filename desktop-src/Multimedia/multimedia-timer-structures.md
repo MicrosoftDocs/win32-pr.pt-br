@@ -19,18 +19,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "104161918"
 ---
-# <a name="multimedia-timer-structures"></a><span data-ttu-id="08f1f-110">Estruturas de timer de multimídia</span><span class="sxs-lookup"><span data-stu-id="08f1f-110">Multimedia Timer Structures</span></span>
+# <a name="multimedia-timer-structures"></a><span data-ttu-id="cb5a3-110">Estruturas de timer de multimídia</span><span class="sxs-lookup"><span data-stu-id="cb5a3-110">Multimedia Timer Structures</span></span>
 
-<span data-ttu-id="08f1f-111">As estruturas a seguir são usadas com temporizadores de multimídia.</span><span class="sxs-lookup"><span data-stu-id="08f1f-111">The following structures are used with multimedia timers.</span></span>
+<span data-ttu-id="cb5a3-111">As estruturas a seguir são usadas com temporizadores de multimídia.</span><span class="sxs-lookup"><span data-stu-id="cb5a3-111">The following structures are used with multimedia timers.</span></span>
 
--   <span data-ttu-id="08f1f-112">[**MMTIME**](/previous-versions//dd757347(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="08f1f-112">[**MMTIME**](/previous-versions//dd757347(v=vs.85))</span></span>
--   [<span data-ttu-id="08f1f-113">**Timecaps**</span><span class="sxs-lookup"><span data-stu-id="08f1f-113">**TIMECAPS**</span></span>](/windows/desktop/api/TimeAPI/ns-timeapi-timecaps)
+-   <span data-ttu-id="cb5a3-112">[**MMTIME**](/previous-versions//dd757347(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="cb5a3-112">[**MMTIME**](/previous-versions//dd757347(v=vs.85))</span></span>
+-   [<span data-ttu-id="cb5a3-113">**Timecaps**</span><span class="sxs-lookup"><span data-stu-id="cb5a3-113">**TIMECAPS**</span></span>](/windows/desktop/api/TimeAPI/ns-timeapi-timecaps)
 
-## <a name="related-topics"></a><span data-ttu-id="08f1f-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="08f1f-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cb5a3-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cb5a3-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="08f1f-115">Referência do temporizador de multimídia</span><span class="sxs-lookup"><span data-stu-id="08f1f-115">Multimedia Timer Reference</span></span>](multimedia-timer-reference.md)
+[<span data-ttu-id="cb5a3-115">Referência do temporizador de multimídia</span><span class="sxs-lookup"><span data-stu-id="cb5a3-115">Multimedia Timer Reference</span></span>](multimedia-timer-reference.md)
 </dt> </dl>
 
  
