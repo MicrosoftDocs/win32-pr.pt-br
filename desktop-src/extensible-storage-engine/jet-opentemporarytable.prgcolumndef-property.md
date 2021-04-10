@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169787"
 ---
-# <a name="jet_opentemporarytableprgcolumndef-property"></a><span data-ttu-id="a7364-103">Propriedade JET_OPENTEMPORARYTABLE. prgcolumndef</span><span class="sxs-lookup"><span data-stu-id="a7364-103">JET_OPENTEMPORARYTABLE.prgcolumndef property</span></span>
+# <a name="jet_opentemporarytableprgcolumndef-property"></a><span data-ttu-id="74411-103">Propriedade JET_OPENTEMPORARYTABLE. prgcolumndef</span><span class="sxs-lookup"><span data-stu-id="74411-103">JET_OPENTEMPORARYTABLE.prgcolumndef property</span></span>
 
-<span data-ttu-id="a7364-104">Obtém ou define as definições de coluna para as colunas criadas na tabela temporária.</span><span class="sxs-lookup"><span data-stu-id="a7364-104">Gets or sets the column definitions for the columns created in the temporary table.</span></span>
+<span data-ttu-id="74411-104">Obtém ou define as definições de coluna para as colunas criadas na tabela temporária.</span><span class="sxs-lookup"><span data-stu-id="74411-104">Gets or sets the column definitions for the columns created in the temporary table.</span></span>
 
-<span data-ttu-id="a7364-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a7364-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="a7364-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a7364-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="74411-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="74411-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="74411-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="74411-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a7364-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="a7364-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="74411-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="74411-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.prgcolumndef = value
 public JET_COLUMNDEF[] prgcolumndef { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="a7364-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="a7364-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="74411-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="74411-108">Property value</span></span>
 
-<span data-ttu-id="a7364-109">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="a7364-109">Type: \[\]</span></span>  
+<span data-ttu-id="74411-109">Escreva \[\]</span><span class="sxs-lookup"><span data-stu-id="74411-109">Type: \[\]</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="a7364-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="a7364-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74411-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="74411-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a7364-111">Referência</span><span class="sxs-lookup"><span data-stu-id="a7364-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="74411-111">Referência</span><span class="sxs-lookup"><span data-stu-id="74411-111">Reference</span></span>
 
-[<span data-ttu-id="a7364-112">Classe JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="a7364-112">JET_OPENTEMPORARYTABLE class</span></span>](./jet-opentemporarytable-class.md)
+[<span data-ttu-id="74411-112">Classe JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="74411-112">JET_OPENTEMPORARYTABLE class</span></span>](./jet-opentemporarytable-class.md)
 
-[<span data-ttu-id="a7364-113">Membros do JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="a7364-113">JET_OPENTEMPORARYTABLE members</span></span>](./jet-opentemporarytable-members.md)
+[<span data-ttu-id="74411-113">Membros do JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="74411-113">JET_OPENTEMPORARYTABLE members</span></span>](./jet-opentemporarytable-members.md)
 
-[<span data-ttu-id="a7364-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="a7364-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="74411-114">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="74411-114">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
