@@ -28,7 +28,7 @@ Define o texto ou CDATA a ser reutilizado pelo elemento [**include**](include.md
 
 | Atributo           | Type                         | Obrigatório       | Descrição                                   |
 |---------------------|------------------------------|----------------|-----------------------------------------------|
-| **name**<br/> | Cadeia de caracteres \_<br/> | Sim<br/> | O nome da macro.<br/> <br/> |
+| **name**<br/> | Cadeia de caracteres \_<br/> | Yes<br/> | O nome da macro.<br/> <br/> |
 
 
 
