@@ -15,15 +15,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104292826"
 ---
-# <a name="sessionfullcalculatorserviceexample"></a><span data-ttu-id="4486b-106">SessionfullCalculatorServiceExample</span><span class="sxs-lookup"><span data-stu-id="4486b-106">SessionfullCalculatorServiceExample</span></span>
+# <a name="sessionfullcalculatorserviceexample"></a><span data-ttu-id="ab2c8-106">SessionfullCalculatorServiceExample</span><span class="sxs-lookup"><span data-stu-id="ab2c8-106">SessionfullCalculatorServiceExample</span></span>
 
-<span data-ttu-id="4486b-107">Uma implementação de um serviço de calculadora de sessão usando o host de serviço.</span><span class="sxs-lookup"><span data-stu-id="4486b-107">An implementation of a sessionful calculator service using the Service Host.</span></span>
+<span data-ttu-id="ab2c8-107">Uma implementação de um serviço de calculadora de sessão usando o host de serviço.</span><span class="sxs-lookup"><span data-stu-id="ab2c8-107">An implementation of a sessionful calculator service using the Service Host.</span></span>
 
--   [<span data-ttu-id="4486b-108">SessionfullCalculatorService. cpp</span><span class="sxs-lookup"><span data-stu-id="4486b-108">SessionfullCalculatorService.cpp</span></span>](#sessionfullcalculatorservicecpp)
--   [<span data-ttu-id="4486b-109">SessionBasedCalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="4486b-109">SessionBasedCalculatorService.wsdl</span></span>](#sessionbasedcalculatorservicewsdl)
--   [<span data-ttu-id="4486b-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="4486b-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="ab2c8-108">SessionfullCalculatorService. cpp</span><span class="sxs-lookup"><span data-stu-id="ab2c8-108">SessionfullCalculatorService.cpp</span></span>](#sessionfullcalculatorservicecpp)
+-   [<span data-ttu-id="ab2c8-109">SessionBasedCalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="ab2c8-109">SessionBasedCalculatorService.wsdl</span></span>](#sessionbasedcalculatorservicewsdl)
+-   [<span data-ttu-id="ab2c8-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="ab2c8-110">Makefile</span></span>](#makefile)
 
-## <a name="sessionfullcalculatorservicecpp"></a><span data-ttu-id="4486b-111">SessionfullCalculatorService. cpp</span><span class="sxs-lookup"><span data-stu-id="4486b-111">SessionfullCalculatorService.cpp</span></span>
+## <a name="sessionfullcalculatorservicecpp"></a><span data-ttu-id="ab2c8-111">SessionfullCalculatorService. cpp</span><span class="sxs-lookup"><span data-stu-id="ab2c8-111">SessionfullCalculatorService.cpp</span></span>
 
 
 ```C++
@@ -415,7 +415,7 @@ Exit:
 
 
 
-## <a name="sessionbasedcalculatorservicewsdl"></a><span data-ttu-id="4486b-112">SessionBasedCalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="4486b-112">SessionBasedCalculatorService.wsdl</span></span>
+## <a name="sessionbasedcalculatorservicewsdl"></a><span data-ttu-id="ab2c8-112">SessionBasedCalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="ab2c8-112">SessionBasedCalculatorService.wsdl</span></span>
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -546,7 +546,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="4486b-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="4486b-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="ab2c8-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="ab2c8-113">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------

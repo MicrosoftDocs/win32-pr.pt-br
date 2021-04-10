@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104292970"
 ---
-# <a name="imsrdpclient6-properties"></a><span data-ttu-id="bc9c2-103">Propriedades de IMsRdpClient6</span><span class="sxs-lookup"><span data-stu-id="bc9c2-103">IMsRdpClient6 Properties</span></span>
+# <a name="imsrdpclient6-properties"></a><span data-ttu-id="c6ae0-103">Propriedades de IMsRdpClient6</span><span class="sxs-lookup"><span data-stu-id="c6ae0-103">IMsRdpClient6 Properties</span></span>
 
-<span data-ttu-id="bc9c2-104">A interface [**IMsRdpClient6**](imsrdpclient6.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="bc9c2-104">The [**IMsRdpClient6**](imsrdpclient6.md) interface exposes the following properties.</span></span>
+<span data-ttu-id="c6ae0-104">A interface [**IMsRdpClient6**](imsrdpclient6.md) expõe as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="c6ae0-104">The [**IMsRdpClient6**](imsrdpclient6.md) interface exposes the following properties.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="bc9c2-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="bc9c2-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c6ae0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c6ae0-105">In this section</span></span>
 
--   [<span data-ttu-id="bc9c2-106">**Propriedade AdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="bc9c2-106">**AdvancedSettings7 property**</span></span>](imsrdpclient6-advancedsettings7.md)
--   [<span data-ttu-id="bc9c2-107">**Propriedade TransportSettings2**</span><span class="sxs-lookup"><span data-stu-id="bc9c2-107">**TransportSettings2 property**</span></span>](imsrdpclient6-transportsettings2.md)
+-   [<span data-ttu-id="c6ae0-106">**Propriedade AdvancedSettings7**</span><span class="sxs-lookup"><span data-stu-id="c6ae0-106">**AdvancedSettings7 property**</span></span>](imsrdpclient6-advancedsettings7.md)
+-   [<span data-ttu-id="c6ae0-107">**Propriedade TransportSettings2**</span><span class="sxs-lookup"><span data-stu-id="c6ae0-107">**TransportSettings2 property**</span></span>](imsrdpclient6-transportsettings2.md)
 
  
 

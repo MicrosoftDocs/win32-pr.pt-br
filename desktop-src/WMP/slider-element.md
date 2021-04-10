@@ -1,0 +1,104 @@
+---
+title: Elemento SLIDER
+description: Elemento SLIDER
+ms.assetid: f1da8987-5430-46ef-b7d7-ac92f34a2185
+keywords:
+- Capas do Windows Media Player, elemento SLIDER
+- capas, elemento SLIDER
+- Elemento SLIDER
+- referência para capas, elemento SLIDER
+- elementos, controle deslizante
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 34607c8706fccc8f416ebc83ae483c98a784c08b
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104292324"
+---
+# <a name="slider-element"></a><span data-ttu-id="8c9a1-108">Elemento SLIDER</span><span class="sxs-lookup"><span data-stu-id="8c9a1-108">SLIDER Element</span></span>
+
+<span data-ttu-id="8c9a1-109">O elemento **Slider** fornece uma maneira de criar e manipular um controle deslizante horizontal simples ou vertical.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-109">The **SLIDER** element provides a way to create and manipulate a simple horizontal or vertical slider control.</span></span> <span data-ttu-id="8c9a1-110">Ele dá suporte aos seguintes atributos e manipuladores de eventos.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-110">It supports the following attributes and event handlers.</span></span> <span data-ttu-id="8c9a1-111">Elementos **Slider** predefinidos também são fornecidos para sua conveniência.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-111">Predefined **SLIDER** elements are also provided for convenience.</span></span>
+
+<span data-ttu-id="8c9a1-112">O elemento **Slider** dá suporte aos seguintes atributos.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-112">The **SLIDER** element supports the following attributes.</span></span>
+
+
+
+| <span data-ttu-id="8c9a1-113">Atributo</span><span class="sxs-lookup"><span data-stu-id="8c9a1-113">Attribute</span></span>                                                 | <span data-ttu-id="8c9a1-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c9a1-114">Description</span></span>                                                                                                       |
+|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="8c9a1-115">backgroundColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-115">backgroundColor</span></span>](slider-backgroundcolor.md)             | <span data-ttu-id="8c9a1-116">Especifica ou recupera a cor do plano de fundo do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-116">Specifies or retrieves the background color of the slider control.</span></span>                                                |
+| [<span data-ttu-id="8c9a1-117">backgroundEndColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-117">backgroundEndColor</span></span>](slider-backgroundendcolor.md)       | <span data-ttu-id="8c9a1-118">Especifica ou recupera a cor final do plano de fundo do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-118">Specifies or retrieves the background ending color of the slider control.</span></span>                                         |
+| [<span data-ttu-id="8c9a1-119">backgroundHoverImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-119">backgroundHoverImage</span></span>](slider-backgroundhoverimage.md)   | <span data-ttu-id="8c9a1-120">Especifica ou recupera a imagem de plano de fundo do controle deslizante que aparece ao passar o mouse sobre ele.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-120">Specifies or retrieves the background image of the slider that appears when hovering over it with the mouse.</span></span>      |
+| [<span data-ttu-id="8c9a1-121">backgroundImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-121">backgroundImage</span></span>](slider-backgroundimage.md)             | <span data-ttu-id="8c9a1-122">Especifica ou recupera a imagem de plano de fundo padrão do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-122">Specifies or retrieves the default background image of the slider.</span></span>                                                |
+| [<span data-ttu-id="8c9a1-123">Bordas</span><span class="sxs-lookup"><span data-stu-id="8c9a1-123">borderSize</span></span>](slider-bordersize.md)                       | <span data-ttu-id="8c9a1-124">Especifica ou recupera o tamanho da borda em pixels.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-124">Specifies or retrieves the border size in pixels.</span></span>                                                                 |
+| [<span data-ttu-id="8c9a1-125">cursor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-125">cursor</span></span>](slider-cursor.md)                               | <span data-ttu-id="8c9a1-126">Especifica ou recupera um valor que indica qual tipo de cursor aparece quando o mouse está sobre o controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-126">Specifies or retrieves a value indicating which type of cursor appears when the mouse is over the slider control.</span></span> |
+| [<span data-ttu-id="8c9a1-127">direction</span><span class="sxs-lookup"><span data-stu-id="8c9a1-127">direction</span></span>](slider-direction.md)                         | <span data-ttu-id="8c9a1-128">Especifica ou recupera a direção na qual as imagens do controle deslizante são dispostas.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-128">Specifies or retrieves the direction that slider images are laid out.</span></span>                                             |
+| [<span data-ttu-id="8c9a1-129">disabledColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-129">disabledColor</span></span>](slider-disabledcolor.md)                 | <span data-ttu-id="8c9a1-130">Especifica ou recupera a cor desabilitada do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-130">Specifies or retrieves the disabled color of the slider control.</span></span>                                                  |
+| [<span data-ttu-id="8c9a1-131">disabledImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-131">disabledImage</span></span>](slider-disabledimage.md)                 | <span data-ttu-id="8c9a1-132">Especifica ou recupera a imagem do controle deslizante que aparece quando o controle está desabilitado.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-132">Specifies or retrieves the image of the slider that appears when the control is disabled.</span></span>                         |
+| [<span data-ttu-id="8c9a1-133">foregroundColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-133">foregroundColor</span></span>](slider-foregroundcolor.md)             | <span data-ttu-id="8c9a1-134">Especifica ou recupera a cor de primeiro plano do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-134">Specifies or retrieves the foreground color of the slider control.</span></span>                                                |
+| [<span data-ttu-id="8c9a1-135">foregroundEndColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-135">foregroundEndColor</span></span>](slider-foregroundendcolor.md)       | <span data-ttu-id="8c9a1-136">Especifica ou recupera a cor final do primeiro plano do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-136">Specifies or retrieves the foreground ending color of the slider control.</span></span>                                         |
+| [<span data-ttu-id="8c9a1-137">foregroundHoverImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-137">foregroundHoverImage</span></span>](slider-foregroundhoverimage.md)   | <span data-ttu-id="8c9a1-138">Especifica ou recupera a imagem em primeiro plano do controle deslizante que aparece ao passar o mouse sobre ele.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-138">Specifies or retrieves the foreground image of the slider that appears when hovering over it with the mouse.</span></span>      |
+| [<span data-ttu-id="8c9a1-139">foregroundImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-139">foregroundImage</span></span>](slider-foregroundimage.md)             | <span data-ttu-id="8c9a1-140">Especifica ou recupera a imagem de primeiro plano padrão do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-140">Specifies or retrieves the default foreground image of the slider.</span></span>                                                |
+| [<span data-ttu-id="8c9a1-141">foregroundProgress</span><span class="sxs-lookup"><span data-stu-id="8c9a1-141">foregroundProgress</span></span>](slider-foregroundprogress.md)       | <span data-ttu-id="8c9a1-142">Especifica ou recupera a posição atual da barra de progresso em primeiro plano como uma porcentagem da área do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-142">Specifies or retrieves the current position of the foreground progress bar as a percentage of the slider area.</span></span>    |
+| [<span data-ttu-id="8c9a1-143">max</span><span class="sxs-lookup"><span data-stu-id="8c9a1-143">max</span></span>](slider-max.md)                                     | <span data-ttu-id="8c9a1-144">Especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-144">Specifies or retrieves the maximum value of the range defined by the slider control.</span></span>                              |
+| [<span data-ttu-id="8c9a1-145">min</span><span class="sxs-lookup"><span data-stu-id="8c9a1-145">min</span></span>](slider-min.md)                                     | <span data-ttu-id="8c9a1-146">Especifica ou recupera o valor mínimo do intervalo definido pelo controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-146">Specifies or retrieves the minimum value of the range defined by the slider control.</span></span>                              |
+| [<span data-ttu-id="8c9a1-147">seleto</span><span class="sxs-lookup"><span data-stu-id="8c9a1-147">slide</span></span>](slider-slide.md)                                 | <span data-ttu-id="8c9a1-148">Especifica ou recupera um valor que indica se a imagem em primeiro plano desliza sobre a imagem de plano de fundo.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-148">Specifies or retrieves a value indicating whether the foreground image slides over the background image.</span></span>          |
+| [<span data-ttu-id="8c9a1-149">thumbDisabledImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-149">thumbDisabledImage</span></span>](slider-thumbdisabledimage.md)       | <span data-ttu-id="8c9a1-150">Especifica ou recupera a imagem Thumb desabilitada do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-150">Specifies or retrieves the disabled thumb image of the slider control.</span></span>                                            |
+| [<span data-ttu-id="8c9a1-151">thumbDownImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-151">thumbDownImage</span></span>](slider-thumbdownimage.md)               | <span data-ttu-id="8c9a1-152">Especifica ou recupera a imagem que representa o estado inoperante do Thumb.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-152">Specifies or retrieves the image representing the down state of the thumb.</span></span>                                        |
+| [<span data-ttu-id="8c9a1-153">thumbHoverImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-153">thumbHoverImage</span></span>](slider-thumbhoverimage.md)             | <span data-ttu-id="8c9a1-154">Especifica ou recupera a imagem do Thumb que aparece ao passar o mouse sobre ela.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-154">Specifies or retrieves the image of the thumb that appears when hovering over it with the mouse.</span></span>                  |
+| [<span data-ttu-id="8c9a1-155">thumbImage</span><span class="sxs-lookup"><span data-stu-id="8c9a1-155">thumbImage</span></span>](slider-thumbimage.md)                       | <span data-ttu-id="8c9a1-156">Especifica ou recupera a imagem que será usada para representar a posição atual do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-156">Specifies or retrieves the image that will be used to represent the current position of the slider.</span></span>               |
+| [<span data-ttu-id="8c9a1-157">lado a lado</span><span class="sxs-lookup"><span data-stu-id="8c9a1-157">tiled</span></span>](slider-tiled.md)                                 | <span data-ttu-id="8c9a1-158">Especifica ou recupera um valor que indica se as imagens do controle deslizante serão enlados.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-158">Specifies or retrieves a value indicating whether the slider images will be tiled.</span></span>                                |
+| [<span data-ttu-id="8c9a1-159">Dessa</span><span class="sxs-lookup"><span data-stu-id="8c9a1-159">toolTip</span></span>](slider-tooltip.md)                             | <span data-ttu-id="8c9a1-160">Especifica ou recupera o texto da dica de ferramenta para o controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-160">Specifies or retrieves the ToolTip text for the slider control.</span></span>                                                   |
+| [<span data-ttu-id="8c9a1-161">transparencyColor</span><span class="sxs-lookup"><span data-stu-id="8c9a1-161">transparencyColor</span></span>](slider-transparencycolor.md)         | <span data-ttu-id="8c9a1-162">Especifica ou recupera a cor transparente das imagens do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-162">Specifies or retrieves the transparent color of the slider images.</span></span>                                                |
+| [<span data-ttu-id="8c9a1-163">useForegroundProgress</span><span class="sxs-lookup"><span data-stu-id="8c9a1-163">useForegroundProgress</span></span>](slider-useforegroundprogress.md) | <span data-ttu-id="8c9a1-164">Especifica ou recupera um valor que indica se a barra de progresso de primeiro plano será usada.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-164">Specifies or retrieves a value indicating whether the foreground progress bar will be used.</span></span>                       |
+| [<span data-ttu-id="8c9a1-165">value</span><span class="sxs-lookup"><span data-stu-id="8c9a1-165">value</span></span>](slider-value.md)                                 | <span data-ttu-id="8c9a1-166">Especifica e recupera a posição atual do controle deslizante.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-166">Specifies and retrieves the current position of the slider.</span></span>                                                       |
+
+
+
+ 
+
+<span data-ttu-id="8c9a1-167">O elemento **Slider** pode implementar os manipuladores de eventos a seguir.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-167">The **SLIDER** element can implement the following event handlers.</span></span>
+
+
+
+| <span data-ttu-id="8c9a1-168">Manipulador de eventos</span><span class="sxs-lookup"><span data-stu-id="8c9a1-168">Event handler</span></span>                                   | <span data-ttu-id="8c9a1-169">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c9a1-169">Description</span></span>                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="8c9a1-170">onDragBegin</span><span class="sxs-lookup"><span data-stu-id="8c9a1-170">onDragBegin</span></span>](slider-ondragbegin.md)           | <span data-ttu-id="8c9a1-171">Manipula um evento que ocorre quando o usuário clica e mantém o botão esquerdo do mouse pressionado e começa a arrastar o mouse.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-171">Handles an event that occurs when the user clicks and holds the left mouse button down and begins to drag the mouse.</span></span> |
+| [<span data-ttu-id="8c9a1-172">onDragEnd</span><span class="sxs-lookup"><span data-stu-id="8c9a1-172">onDragEnd</span></span>](slider-ondragend.md)               | <span data-ttu-id="8c9a1-173">Manipula um evento que ocorre quando o botão esquerdo do mouse é liberado após uma operação de arrastar.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-173">Handles an event that occurs when the left mouse button is released after a dragging operation.</span></span>                      |
+| [<span data-ttu-id="8c9a1-174">onPositionChange</span><span class="sxs-lookup"><span data-stu-id="8c9a1-174">onPositionChange</span></span>](slider-onpositionchange.md) | <span data-ttu-id="8c9a1-175">Manipula um evento que ocorre quando a posição do controle deslizante é alterada como resultado do clique ou arraste do usuário.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-175">Handles an event that occurs when the position of the slider changes as a result of the user clicking or dragging.</span></span>   |
+
+
+
+ 
+
+<span data-ttu-id="8c9a1-176">O elemento **Slider** dá suporte aos atributos de ambiente e pode implementar os manipuladores de eventos de ambiente.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-176">The **SLIDER** element supports the ambient attributes and can implement the ambient event handlers.</span></span> <span data-ttu-id="8c9a1-177">Para obter mais informações, consulte [atributos de ambiente](ambient-attributes.md) e [manipuladores de eventos de ambiente](ambient-event-handlers.md).</span><span class="sxs-lookup"><span data-stu-id="8c9a1-177">For more information, see [Ambient Attributes](ambient-attributes.md) and [Ambient Event Handlers](ambient-event-handlers.md).</span></span>
+
+<span data-ttu-id="8c9a1-178">Os controles deslizantes predefinidos são elementos **Slider** normais com várias configurações de atributo comuns especificadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-178">Predefined sliders are normal **SLIDER** elements with various common attribute settings specified by default.</span></span> <span data-ttu-id="8c9a1-179">Os seguintes controles deslizantes predefinidos estão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-179">The following predefined sliders are available.</span></span>
+
+
+
+| <span data-ttu-id="8c9a1-180">Controle deslizante predefinido</span><span class="sxs-lookup"><span data-stu-id="8c9a1-180">Predefined SLIDER</span></span>                  | <span data-ttu-id="8c9a1-181">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c9a1-181">Description</span></span>                                                    |
+|------------------------------------|----------------------------------------------------------------|
+| [<span data-ttu-id="8c9a1-182">BALANCESLIDER</span><span class="sxs-lookup"><span data-stu-id="8c9a1-182">BALANCESLIDER</span></span>](balanceslider.md) | <span data-ttu-id="8c9a1-183">Um **controle deslizante** usado para definir o equilíbrio de áudio.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-183">A **SLIDER** used to set audio balance.</span></span>                        |
+| [<span data-ttu-id="8c9a1-184">SEEKSLIDER</span><span class="sxs-lookup"><span data-stu-id="8c9a1-184">SEEKSLIDER</span></span>](seekslider.md)       | <span data-ttu-id="8c9a1-185">Um **controle deslizante** usado para buscar qualquer posição dentro de um arquivo de mídia.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-185">A **SLIDER** used to seek to any position within a media file.</span></span> |
+| [<span data-ttu-id="8c9a1-186">VOLUMESLIDER</span><span class="sxs-lookup"><span data-stu-id="8c9a1-186">VOLUMESLIDER</span></span>](volumeslider.md)   | <span data-ttu-id="8c9a1-187">Um **controle deslizante** usado para definir o volume de áudio.</span><span class="sxs-lookup"><span data-stu-id="8c9a1-187">A **SLIDER** used to set audio volume.</span></span>                         |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="8c9a1-188">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="8c9a1-188">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="8c9a1-189">**Referência de programação de capa**</span><span class="sxs-lookup"><span data-stu-id="8c9a1-189">**Skin Programming Reference**</span></span>](skin-programming-reference.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
