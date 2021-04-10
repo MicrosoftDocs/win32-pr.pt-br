@@ -1,0 +1,42 @@
+---
+description: Contém informações sobre a interface de programação para o serviço de configuração zero sem fio no Windows XP e no Windows Server 2003.
+ms.assetid: cd9e8fc0-0a65-4654-95aa-201751183521
+title: Referência de configuração zero sem fio
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3ebe202e16aa38fef617f382559f124772d50a58
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104169384"
+---
+# <a name="wireless-zero-configuration-reference"></a><span data-ttu-id="f08de-103">Referência de configuração zero sem fio</span><span class="sxs-lookup"><span data-stu-id="f08de-103">Wireless Zero Configuration Reference</span></span>
+
+<span data-ttu-id="f08de-104">\[Não há mais suporte para a interface de programação de configuração zero sem fio a partir do Windows Vista e do Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="f08de-104">\[The Wireless Zero Configuration programming interface is no longer supported as of Windows Vista and Windows Server 2008.</span></span> <span data-ttu-id="f08de-105">Em vez disso, use a [API Wi-Fi nativa](native-wifi-reference.md), que fornece funcionalidade semelhante.</span><span class="sxs-lookup"><span data-stu-id="f08de-105">Instead, use the [Native Wifi API](native-wifi-reference.md), which provides similar functionality.</span></span> <span data-ttu-id="f08de-106">Para obter mais informações, consulte [sobre a API Wi-Fi nativa](about-the-native-wifi-api.md).\]</span><span class="sxs-lookup"><span data-stu-id="f08de-106">For more information, see [About the Native Wifi API](about-the-native-wifi-api.md).\]</span></span>
+
+<span data-ttu-id="f08de-107">Esta seção contém informações sobre a interface de programação para o serviço de configuração zero sem fio no Windows XP e no Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="f08de-107">This section contains information on the programming interface for the Wireless Zero Configuration service on Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="f08de-108">Os tópicos incluem:</span><span class="sxs-lookup"><span data-stu-id="f08de-108">The topics include:</span></span>
+
+-   [<span data-ttu-id="f08de-109">Funções de configuração sem fio zero</span><span class="sxs-lookup"><span data-stu-id="f08de-109">Wireless Zero Configuration Functions</span></span>](wireless-zero-configuration-functions.md)
+-   [<span data-ttu-id="f08de-110">Estruturas de configuração sem fio zero</span><span class="sxs-lookup"><span data-stu-id="f08de-110">Wireless Zero Configuration Structures</span></span>](wireless-zero-configuration-structures.md)
+
+<span data-ttu-id="f08de-111">A configuração sem fio zero é um serviço do Windows no Windows XP e no Windows Server 2003 que é usado para configurar e gerenciar conexões de rede sem fio em um adaptador sem fio.</span><span class="sxs-lookup"><span data-stu-id="f08de-111">Wireless Zero Configuration is a Windows service on Windows XP and Windows Server 2003 that is used to configure and manage wireless network connections on a wireless adapter.</span></span> <span data-ttu-id="f08de-112">O nome do serviço para a configuração zero sem fio é WZCSVC.</span><span class="sxs-lookup"><span data-stu-id="f08de-112">The service name for Wireless Zero Configuration is WZCSVC.</span></span> <span data-ttu-id="f08de-113">No Windows XP, o nome de exibição do serviço WZCSVC é configuração sem fio zero.</span><span class="sxs-lookup"><span data-stu-id="f08de-113">On Windows XP, the display name for the WZCSVC service is Wireless Zero Configuration.</span></span> <span data-ttu-id="f08de-114">No Windows Server 2003, o nome de exibição para o serviço WZCSVC é configuração sem fio.</span><span class="sxs-lookup"><span data-stu-id="f08de-114">On Windows Server 2003, the display name for the WZCSVC service is Wireless Configuration.</span></span>
+
+<span data-ttu-id="f08de-115">O serviço de configuração zero sem fio normalmente é iniciado no momento da inicialização.</span><span class="sxs-lookup"><span data-stu-id="f08de-115">The Wireless Zero Configuration service is normally started at boot time.</span></span> <span data-ttu-id="f08de-116">A interface de programação para o serviço de configuração zero sem fio só poderá ser usada se o serviço de configuração sem fio for iniciado.</span><span class="sxs-lookup"><span data-stu-id="f08de-116">The programming interface for the Wireless Zero Configuration service can be used only if the Wireless Zero Configuration service has been started.</span></span> <span data-ttu-id="f08de-117">Se o serviço de configuração zero sem fio não for iniciado, as funções de configuração sem fio zero retornarão um erro.</span><span class="sxs-lookup"><span data-stu-id="f08de-117">If the Wireless Zero Configuration service is not started, then the Wireless Zero Configuration functions will return an error.</span></span>
+
+<span data-ttu-id="f08de-118">Para habilitar o serviço de configuração zero sem fio para que ele seja iniciado automaticamente, vá para o botão **Iniciar** .</span><span class="sxs-lookup"><span data-stu-id="f08de-118">To enable the Wireless Zero Configuration service so it starts up automatically, go to the **Start** button.</span></span> <span data-ttu-id="f08de-119">Selecione a opção **configurações** e, em seguida, selecione **painel de controle**.</span><span class="sxs-lookup"><span data-stu-id="f08de-119">Select the **Settings** option and then select **Control Panel**.</span></span> <span data-ttu-id="f08de-120">Se você estiver usando a exibição do Windows XP, selecione a categoria **desempenho e manutenção** e, em seguida, selecione **Ferramentas administrativas**.</span><span class="sxs-lookup"><span data-stu-id="f08de-120">If you are using the Windows XP view, select the **Performance and Maintenance** category and then select **Administrative Tools**.</span></span> <span data-ttu-id="f08de-121">Se você estiver usando o modo de exibição clássico, selecione **Ferramentas administrativas**.</span><span class="sxs-lookup"><span data-stu-id="f08de-121">If you are using the Classic View, then select **Administrative Tools**.</span></span> <span data-ttu-id="f08de-122">Clique no ícone **Serviços** no painel esquerdo.</span><span class="sxs-lookup"><span data-stu-id="f08de-122">Click the **Services** icon in the left pane.</span></span> <span data-ttu-id="f08de-123">Clique no ícone configuração sem fio zero no painel direito e altere o **tipo de inicialização** Dropbox para **automático**.</span><span class="sxs-lookup"><span data-stu-id="f08de-123">Click the Wireless Zero Configuration icon in the right pane and change the **Startup Type** dropbox to **Automatic**.</span></span> <span data-ttu-id="f08de-124">Essa configuração definirá o serviço para iniciar automaticamente no momento da inicialização.</span><span class="sxs-lookup"><span data-stu-id="f08de-124">This setting will set the service to start automatically at boot time.</span></span> <span data-ttu-id="f08de-125">Em seguida, clique no botão **Iniciar** para iniciar o serviço de configuração zero sem fio sem fio zero e clique no botão **OK** .</span><span class="sxs-lookup"><span data-stu-id="f08de-125">Then click the **Start** button to start the Wireless Zero Wireless Zero Configuration service and click the **OK** button.</span></span>
+
+<span data-ttu-id="f08de-126">A configuração sem fio zero também pode ser iniciada e interrompida em um prompt de comando.</span><span class="sxs-lookup"><span data-stu-id="f08de-126">The Wireless Zero Configuration can also be started and stopped from a command prompt.</span></span> <span data-ttu-id="f08de-127">Para iniciar a configuração zero sem fio, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="f08de-127">To start the Wireless Zero Configuration, run the following command:</span></span>
+
+<span data-ttu-id="f08de-128">**net start WZCSVC**</span><span class="sxs-lookup"><span data-stu-id="f08de-128">**net start wzcsvc**</span></span>
+
+<span data-ttu-id="f08de-129">Para interromper a configuração zero sem fio, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="f08de-129">To stop the Wireless Zero Configuration, run the following command:</span></span>
+
+<span data-ttu-id="f08de-130">**WZCSVC net stop**</span><span class="sxs-lookup"><span data-stu-id="f08de-130">**net stop wzcsvc**</span></span>
+
+ 
+
+ 
+
+
+
