@@ -57,7 +57,7 @@ Não há elementos pai.
 
 |              |     |
 |--------------|-----|
-| Pode estar vazio | Sim |
+| Pode estar vazio | Yes |
 
 
 
