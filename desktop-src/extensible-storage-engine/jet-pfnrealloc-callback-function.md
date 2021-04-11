@@ -70,7 +70,7 @@ O sistema pode gerar códigos de êxito ou de falha como resultado de uma chamad
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Sucesso</p></td>
+<td><p>Êxito</p></td>
 <td><p>Se um bloco de memória alocado anteriormente tiver sido especificado e um novo tamanho zero for especificado, esse bloco será liberado e nulo será retornado. Se um bloco de memória alocado anteriormente tiver sido especificado e um novo tamanho diferente de zero tiver sido especificado, o bloco de memória realocada será retornado. Se nenhum bloco de memória tiver sido especificado, um bloco de memória recentemente alocado do tamanho especificado será retornado.</p></td>
 </tr>
 <tr class="even">
