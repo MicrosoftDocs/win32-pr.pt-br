@@ -37,14 +37,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172221"
 ---
-# <a name="jet_cp-enumeration"></a><span data-ttu-id="d2ef5-103">Enumeração de JET_CP</span><span class="sxs-lookup"><span data-stu-id="d2ef5-103">JET_CP enumeration</span></span>
+# <a name="jet_cp-enumeration"></a><span data-ttu-id="1356e-103">Enumeração de JET_CP</span><span class="sxs-lookup"><span data-stu-id="1356e-103">JET_CP enumeration</span></span>
 
-<span data-ttu-id="d2ef5-104">Página de código para uma coluna ESENT.</span><span class="sxs-lookup"><span data-stu-id="d2ef5-104">Codepage for an ESENT column.</span></span>
+<span data-ttu-id="1356e-104">Página de código para uma coluna ESENT.</span><span class="sxs-lookup"><span data-stu-id="1356e-104">Codepage for an ESENT column.</span></span>
 
-<span data-ttu-id="d2ef5-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="d2ef5-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="d2ef5-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="d2ef5-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="1356e-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1356e-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="1356e-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1356e-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d2ef5-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d2ef5-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1356e-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1356e-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -57,38 +57,38 @@ Dim instance As JET_CP
 public enum JET_CP
 ```
 
-## <a name="members"></a><span data-ttu-id="d2ef5-108">Membros</span><span class="sxs-lookup"><span data-stu-id="d2ef5-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="1356e-108">Membros</span><span class="sxs-lookup"><span data-stu-id="1356e-108">Members</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th></th>
-<th><span data-ttu-id="d2ef5-109">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="d2ef5-109">Member name</span></span></th>
-<th><span data-ttu-id="d2ef5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2ef5-110">Description</span></span></th>
+<th><span data-ttu-id="1356e-109">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="1356e-109">Member name</span></span></th>
+<th><span data-ttu-id="1356e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1356e-110">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="d2ef5-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d2ef5-111">None</span></span></td>
-<td><span data-ttu-id="d2ef5-112">Página de código para colunas que não são de texto.</span><span class="sxs-lookup"><span data-stu-id="d2ef5-112">Code page for non-text columns.</span></span></td>
+<td><span data-ttu-id="1356e-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1356e-111">None</span></span></td>
+<td><span data-ttu-id="1356e-112">Página de código para colunas que não são de texto.</span><span class="sxs-lookup"><span data-stu-id="1356e-112">Code page for non-text columns.</span></span></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><span data-ttu-id="d2ef5-113">Unicode</span><span class="sxs-lookup"><span data-stu-id="d2ef5-113">Unicode</span></span></td>
-<td><span data-ttu-id="d2ef5-114">Codificação Unicode.</span><span class="sxs-lookup"><span data-stu-id="d2ef5-114">Unicode encoding.</span></span></td>
+<td><span data-ttu-id="1356e-113">Unicode</span><span class="sxs-lookup"><span data-stu-id="1356e-113">Unicode</span></span></td>
+<td><span data-ttu-id="1356e-114">Codificação Unicode.</span><span class="sxs-lookup"><span data-stu-id="1356e-114">Unicode encoding.</span></span></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="d2ef5-115">ASCII</span><span class="sxs-lookup"><span data-stu-id="d2ef5-115">ASCII</span></span></td>
-<td><span data-ttu-id="d2ef5-116">Codificação ASCII.</span><span class="sxs-lookup"><span data-stu-id="d2ef5-116">ASCII encoding.</span></span></td>
+<td><span data-ttu-id="1356e-115">ASCII</span><span class="sxs-lookup"><span data-stu-id="1356e-115">ASCII</span></span></td>
+<td><span data-ttu-id="1356e-116">Codificação ASCII.</span><span class="sxs-lookup"><span data-stu-id="1356e-116">ASCII encoding.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a><span data-ttu-id="d2ef5-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="d2ef5-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1356e-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="1356e-117">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="d2ef5-118">Referência</span><span class="sxs-lookup"><span data-stu-id="d2ef5-118">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="1356e-118">Referência</span><span class="sxs-lookup"><span data-stu-id="1356e-118">Reference</span></span>
 
-[<span data-ttu-id="d2ef5-119">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="d2ef5-119">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="1356e-119">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1356e-119">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
