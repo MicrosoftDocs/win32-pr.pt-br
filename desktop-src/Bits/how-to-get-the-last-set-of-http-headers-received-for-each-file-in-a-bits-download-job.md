@@ -13,23 +13,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104159413"
 ---
-# <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a><span data-ttu-id="bbd97-104">Como obter o último conjunto de cabeçalhos HTTP recebidos para cada arquivo em um trabalho de download do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-104">How to get the last set of HTTP headers received for each file in a BITS download job</span></span>
+# <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a><span data-ttu-id="e27ff-104">Como obter o último conjunto de cabeçalhos HTTP recebidos para cada arquivo em um trabalho de download do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-104">How to get the last set of HTTP headers received for each file in a BITS download job</span></span>
 
-<span data-ttu-id="bbd97-105">Este exemplo mostra como usar o método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) da nova interface [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obter o último conjunto de cabeçalhos HTTP recebido para cada arquivo em um trabalho de download de serviço de transferência inteligente em segundo plano (bits).</span><span class="sxs-lookup"><span data-stu-id="bbd97-105">This sample shows how to use the new [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) interface's [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) method to obtain the last set HTTP headers received for each file in a Background Intelligent Transfer Service (BITS) download job.</span></span> <span data-ttu-id="bbd97-106">As informações no cabeçalho HTTP podem ser usadas, por exemplo, para determinar o tipo de arquivo ou quando ele foi alterado pela última vez no servidor.</span><span class="sxs-lookup"><span data-stu-id="bbd97-106">The information in the HTTP header could be used, for example, to determine the file type or when it last changed on the server.</span></span> <span data-ttu-id="bbd97-107">Antes do Windows 8 e do Windows Server 2012, o BITS não forneceu um meio pelo qual o aplicativo poderia recuperar e inspecionar os cabeçalhos de resposta HTTP de um download concluído.</span><span class="sxs-lookup"><span data-stu-id="bbd97-107">Prior to Windows 8 and Windows Server 2012, BITS did not provide a means by which the application could retrieve and inspect the HTTP response headers of a completed download.</span></span> <span data-ttu-id="bbd97-108">Este exemplo mostra como usar a API do BITS para criar um trabalho do BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.</span><span class="sxs-lookup"><span data-stu-id="bbd97-108">This sample shows how to use the BITS API to create a BITS job with multiple URLs to download, list the URLs in a job, and retrieve the HTTP response headers for each URL.</span></span>
+<span data-ttu-id="e27ff-105">Este exemplo mostra como usar o método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) da nova interface [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obter o último conjunto de cabeçalhos HTTP recebido para cada arquivo em um trabalho de download de serviço de transferência inteligente em segundo plano (bits).</span><span class="sxs-lookup"><span data-stu-id="e27ff-105">This sample shows how to use the new [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) interface's [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) method to obtain the last set HTTP headers received for each file in a Background Intelligent Transfer Service (BITS) download job.</span></span> <span data-ttu-id="e27ff-106">As informações no cabeçalho HTTP podem ser usadas, por exemplo, para determinar o tipo de arquivo ou quando ele foi alterado pela última vez no servidor.</span><span class="sxs-lookup"><span data-stu-id="e27ff-106">The information in the HTTP header could be used, for example, to determine the file type or when it last changed on the server.</span></span> <span data-ttu-id="e27ff-107">Antes do Windows 8 e do Windows Server 2012, o BITS não forneceu um meio pelo qual o aplicativo poderia recuperar e inspecionar os cabeçalhos de resposta HTTP de um download concluído.</span><span class="sxs-lookup"><span data-stu-id="e27ff-107">Prior to Windows 8 and Windows Server 2012, BITS did not provide a means by which the application could retrieve and inspect the HTTP response headers of a completed download.</span></span> <span data-ttu-id="e27ff-108">Este exemplo mostra como usar a API do BITS para criar um trabalho do BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.</span><span class="sxs-lookup"><span data-stu-id="e27ff-108">This sample shows how to use the BITS API to create a BITS job with multiple URLs to download, list the URLs in a job, and retrieve the HTTP response headers for each URL.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="bbd97-109">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="bbd97-109">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="e27ff-109">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="e27ff-109">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="bbd97-110">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="bbd97-110">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="e27ff-110">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="e27ff-110">Technologies</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="bbd97-111">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="bbd97-111">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="e27ff-111">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e27ff-111">Prerequisites</span></span>
 
--   <span data-ttu-id="bbd97-112">Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bbd97-112">Microsoft Visual Studio</span></span>
+-   <span data-ttu-id="e27ff-112">Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e27ff-112">Microsoft Visual Studio</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="bbd97-113">Instruções</span><span class="sxs-lookup"><span data-stu-id="bbd97-113">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="e27ff-113">Instruções</span><span class="sxs-lookup"><span data-stu-id="e27ff-113">Instructions</span></span>
 
-### <a name="step-1-include-the-required-bits-header-files"></a><span data-ttu-id="bbd97-114">Etapa 1: incluir os arquivos de cabeçalho do BITS necessários</span><span class="sxs-lookup"><span data-stu-id="bbd97-114">Step 1: Include the required BITS header files</span></span>
+### <a name="step-1-include-the-required-bits-header-files"></a><span data-ttu-id="e27ff-114">Etapa 1: incluir os arquivos de cabeçalho do BITS necessários</span><span class="sxs-lookup"><span data-stu-id="e27ff-114">Step 1: Include the required BITS header files</span></span>
 
-<span data-ttu-id="bbd97-115">Insira as seguintes diretivas de cabeçalho na parte superior do arquivo de origem.</span><span class="sxs-lookup"><span data-stu-id="bbd97-115">Insert the following header directives at the top of the source file.</span></span>
+<span data-ttu-id="e27ff-115">Insira as seguintes diretivas de cabeçalho na parte superior do arquivo de origem.</span><span class="sxs-lookup"><span data-stu-id="e27ff-115">Insert the following header directives at the top of the source file.</span></span>
 
 
 ```C++
@@ -38,9 +38,9 @@ ms.locfileid: "104159413"
 
 
 
-### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a><span data-ttu-id="bbd97-116">Etapa 2: inicializar COM e instanciar uma interface de objeto do Gerenciador de cópia em segundo plano do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-116">Step 2: Initialize COM and instantiate a BITS Background Copy Manager object interface</span></span>
+### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a><span data-ttu-id="e27ff-116">Etapa 2: inicializar COM e instanciar uma interface de objeto do Gerenciador de cópia em segundo plano do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-116">Step 2: Initialize COM and instantiate a BITS Background Copy Manager object interface</span></span>
 
-<span data-ttu-id="bbd97-117">Antes de instanciar a interface [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (usada para criar um trabalho bits), você deve inicializar com e definir o modelo de Threading com desejado.</span><span class="sxs-lookup"><span data-stu-id="bbd97-117">Before instantiating the [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) interface (used to create a BITS job), you must initialize COM and set the desired COM threading model.</span></span>
+<span data-ttu-id="e27ff-117">Antes de instanciar a interface [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (usada para criar um trabalho bits), você deve inicializar com e definir o modelo de Threading com desejado.</span><span class="sxs-lookup"><span data-stu-id="e27ff-117">Before instantiating the [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) interface (used to create a BITS job), you must initialize COM and set the desired COM threading model.</span></span>
 
 
 ```C++
@@ -60,9 +60,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-3-create-the-bits-job"></a><span data-ttu-id="bbd97-118">Etapa 3: criar o trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-118">Step 3: Create the BITS job</span></span>
+### <a name="step-3-create-the-bits-job"></a><span data-ttu-id="e27ff-118">Etapa 3: criar o trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-118">Step 3: Create the BITS job</span></span>
 
-<span data-ttu-id="bbd97-119">Somente o usuário que cria o trabalho ou um usuário com privilégios de administrador pode adicionar arquivos ao trabalho e alterar as propriedades do trabalho.</span><span class="sxs-lookup"><span data-stu-id="bbd97-119">Only the user who creates the job or a user with administrator privileges can add files to the job and change the job's properties.</span></span>
+<span data-ttu-id="e27ff-119">Somente o usuário que cria o trabalho ou um usuário com privilégios de administrador pode adicionar arquivos ao trabalho e alterar as propriedades do trabalho.</span><span class="sxs-lookup"><span data-stu-id="e27ff-119">Only the user who creates the job or a user with administrator privileges can add files to the job and change the job's properties.</span></span>
 
 
 ```C++
@@ -77,9 +77,9 @@ hr = pManager->CreateJob(L"TransferPolicy",
 
 
 
-### <a name="step-4-add-the-files-to-the-bits-job"></a><span data-ttu-id="bbd97-120">Etapa 4: adicionar os arquivos ao trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-120">Step 4: Add the files to the BITS job</span></span>
+### <a name="step-4-add-the-files-to-the-bits-job"></a><span data-ttu-id="e27ff-120">Etapa 4: adicionar os arquivos ao trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-120">Step 4: Add the files to the BITS job</span></span>
 
-<span data-ttu-id="bbd97-121">O exemplo a seguir baixa documentos publicamente disponíveis do centro de download da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="bbd97-121">The following example downloads publicly available documents from the Microsoft Download Center.</span></span> <span data-ttu-id="bbd97-122">Você precisará alterar esses valores para seu ambiente específico.</span><span class="sxs-lookup"><span data-stu-id="bbd97-122">You'll need to change these values for your specific environment.</span></span>
+<span data-ttu-id="e27ff-121">O exemplo a seguir baixa documentos publicamente disponíveis do centro de download da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e27ff-121">The following example downloads publicly available documents from the Microsoft Download Center.</span></span> <span data-ttu-id="e27ff-122">Você precisará alterar esses valores para seu ambiente específico.</span><span class="sxs-lookup"><span data-stu-id="e27ff-122">You'll need to change these values for your specific environment.</span></span>
 
 
 ```C++
@@ -114,9 +114,9 @@ for (int i=0; i < ARRAY_LENGTH(FileList); ++i)
 
 
 
-### <a name="step-5-start-the-bits-job"></a><span data-ttu-id="bbd97-123">Etapa 5: iniciar o trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-123">Step 5: Start the BITS job</span></span>
+### <a name="step-5-start-the-bits-job"></a><span data-ttu-id="e27ff-123">Etapa 5: iniciar o trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-123">Step 5: Start the BITS job</span></span>
 
-<span data-ttu-id="bbd97-124">Depois de configurar o trabalho do BITS, chame a função [**resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) da interface [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) para iniciar ou continuar o download.</span><span class="sxs-lookup"><span data-stu-id="bbd97-124">After setting up the BITS job, call the [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) interface's [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) function to start or continue the download.</span></span>
+<span data-ttu-id="e27ff-124">Depois de configurar o trabalho do BITS, chame a função [**resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) da interface [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) para iniciar ou continuar o download.</span><span class="sxs-lookup"><span data-stu-id="e27ff-124">After setting up the BITS job, call the [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) interface's [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) function to start or continue the download.</span></span>
 
 
 ```C++
@@ -126,9 +126,9 @@ hr = pBackgroundJob->Resume();
 
 
 
-### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a><span data-ttu-id="bbd97-125">Etapa 6: monitorar e exibir o progresso do trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="bbd97-125">Step 6: Monitor and display the BITS job's progress</span></span>
+### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a><span data-ttu-id="e27ff-125">Etapa 6: monitorar e exibir o progresso do trabalho do BITS</span><span class="sxs-lookup"><span data-stu-id="e27ff-125">Step 6: Monitor and display the BITS job's progress</span></span>
 
-<span data-ttu-id="bbd97-126">A `MonitorJobProgress` função auxiliar usa um objeto [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) como seu único parâmetro e sonda o trabalho em busca de um status a cada 500 milissegundos.</span><span class="sxs-lookup"><span data-stu-id="bbd97-126">The `MonitorJobProgress` helper function takes an [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) object as its only parameter and polls the job for a status every 500 milliseconds.</span></span> <span data-ttu-id="bbd97-127">Essa função não retorna até que o trabalho seja concluído ou cancelado.</span><span class="sxs-lookup"><span data-stu-id="bbd97-127">This function does not return until the job has completed or been canceled.</span></span>
+<span data-ttu-id="e27ff-126">A `MonitorJobProgress` função auxiliar usa um objeto [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) como seu único parâmetro e sonda o trabalho em busca de um status a cada 500 milissegundos.</span><span class="sxs-lookup"><span data-stu-id="e27ff-126">The `MonitorJobProgress` helper function takes an [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) object as its only parameter and polls the job for a status every 500 milliseconds.</span></span> <span data-ttu-id="e27ff-127">Essa função não retorna até que o trabalho seja concluído ou cancelado.</span><span class="sxs-lookup"><span data-stu-id="e27ff-127">This function does not return until the job has completed or been canceled.</span></span>
 
 
 ```C++
@@ -233,9 +233,9 @@ VOID DisplayProgress(__in IBackgroundCopyJob *Job)
 
 
 
-### <a name="step-7-display-the-downloaded-file-headers"></a><span data-ttu-id="bbd97-128">Etapa 7: exibir os cabeçalhos de arquivo baixados</span><span class="sxs-lookup"><span data-stu-id="bbd97-128">Step 7: Display the downloaded file headers</span></span>
+### <a name="step-7-display-the-downloaded-file-headers"></a><span data-ttu-id="e27ff-128">Etapa 7: exibir os cabeçalhos de arquivo baixados</span><span class="sxs-lookup"><span data-stu-id="e27ff-128">Step 7: Display the downloaded file headers</span></span>
 
-<span data-ttu-id="bbd97-129">A `DisplayFileHeaders` função auxiliar enumera os trabalhos definidos para um objeto [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .</span><span class="sxs-lookup"><span data-stu-id="bbd97-129">The `DisplayFileHeaders` helper function enumerates the jobs defined for an [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) object.</span></span>
+<span data-ttu-id="e27ff-129">A `DisplayFileHeaders` função auxiliar enumera os trabalhos definidos para um objeto [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .</span><span class="sxs-lookup"><span data-stu-id="e27ff-129">The `DisplayFileHeaders` helper function enumerates the jobs defined for an [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) object.</span></span>
 
 
 ```C++
@@ -303,9 +303,9 @@ HRESULT DisplayFileHeaders(__in IBackgroundCopyJob *Job)
 
 
 
-## <a name="example"></a><span data-ttu-id="bbd97-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bbd97-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e27ff-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e27ff-130">Example</span></span>
 
-<span data-ttu-id="bbd97-131">O exemplo de código a seguir é um aplicativo de console totalmente funcional que mostra como usar a API BITS para criar um trabalho BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.</span><span class="sxs-lookup"><span data-stu-id="bbd97-131">The following code example is a fully working console application that shows how to use the BITS API to create a BITS job with multiple URLs to download, list the URLs in a job, and retrieve the HTTP response headers for each URL.</span></span>
+<span data-ttu-id="e27ff-131">O exemplo de código a seguir é um aplicativo de console totalmente funcional que mostra como usar a API BITS para criar um trabalho BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.</span><span class="sxs-lookup"><span data-stu-id="e27ff-131">The following code example is a fully working console application that shows how to use the BITS API to create a BITS job with multiple URLs to download, list the URLs in a job, and retrieve the HTTP response headers for each URL.</span></span>
 
 
 ```C++

@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104172630"
 ---
-# <a name="pager-control-overviews"></a><span data-ttu-id="cbbab-103">Visões gerais do controle de pager</span><span class="sxs-lookup"><span data-stu-id="cbbab-103">Pager Control Overviews</span></span>
+# <a name="pager-control-overviews"></a><span data-ttu-id="82a96-103">Visões gerais do controle de pager</span><span class="sxs-lookup"><span data-stu-id="82a96-103">Pager Control Overviews</span></span>
 
--   [<span data-ttu-id="cbbab-104">Controles de pager</span><span class="sxs-lookup"><span data-stu-id="cbbab-104">Pager Controls</span></span>](pager-controls.md)
+-   [<span data-ttu-id="82a96-104">Controles de pager</span><span class="sxs-lookup"><span data-stu-id="82a96-104">Pager Controls</span></span>](pager-controls.md)
 
  
 
