@@ -14,15 +14,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104292891"
 ---
-# <a name="router-management-reference"></a><span data-ttu-id="9f71c-105">Referência de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-105">Router Management Reference</span></span>
+# <a name="router-management-reference"></a><span data-ttu-id="8d7f4-105">Referência de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-105">Router Management Reference</span></span>
 
-<span data-ttu-id="9f71c-106">Use as seguintes funções, estruturas e tipos enumerados ao desenvolver software para administrar roteadores do Windows:</span><span class="sxs-lookup"><span data-stu-id="9f71c-106">Use the following functions, structures, and enumerated types when developing software to administer Windows routers:</span></span>
+<span data-ttu-id="8d7f4-106">Use as seguintes funções, estruturas e tipos enumerados ao desenvolver software para administrar roteadores do Windows:</span><span class="sxs-lookup"><span data-stu-id="8d7f4-106">Use the following functions, structures, and enumerated types when developing software to administer Windows routers:</span></span>
 
--   [<span data-ttu-id="9f71c-107">Referência de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-107">Router Administration Reference</span></span>](router-administration-reference.md)
--   [<span data-ttu-id="9f71c-108">Referência de configuração do roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-108">Router Configuration Reference</span></span>](router-configuration-reference.md)
--   [<span data-ttu-id="9f71c-109">Referência de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-109">Router Information Reference</span></span>](router-information-reference.md)
--   [<span data-ttu-id="9f71c-110">Estruturas de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-110">Router Management Structures</span></span>](router-management-structures.md)
--   [<span data-ttu-id="9f71c-111">Enumerações de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="9f71c-111">Router Management Enumerations</span></span>](router-management-enumerations.md)
+-   [<span data-ttu-id="8d7f4-107">Referência de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-107">Router Administration Reference</span></span>](router-administration-reference.md)
+-   [<span data-ttu-id="8d7f4-108">Referência de configuração do roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-108">Router Configuration Reference</span></span>](router-configuration-reference.md)
+-   [<span data-ttu-id="8d7f4-109">Referência de informações do roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-109">Router Information Reference</span></span>](router-information-reference.md)
+-   [<span data-ttu-id="8d7f4-110">Estruturas de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-110">Router Management Structures</span></span>](router-management-structures.md)
+-   [<span data-ttu-id="8d7f4-111">Enumerações de gerenciamento de roteador</span><span class="sxs-lookup"><span data-stu-id="8d7f4-111">Router Management Enumerations</span></span>](router-management-enumerations.md)
 
  
 

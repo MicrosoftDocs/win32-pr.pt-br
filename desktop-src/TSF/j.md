@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/10/2019
 ms.locfileid: "104293684"
 ---
-# <a name="j"></a><span data-ttu-id="abd76-103">J</span><span class="sxs-lookup"><span data-stu-id="abd76-103">J</span></span>
+# <a name="j"></a><span data-ttu-id="c0e74-103">J</span><span class="sxs-lookup"><span data-stu-id="c0e74-103">J</span></span>
 
 <dl> <dt>
 

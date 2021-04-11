@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104292866"
 ---
-# <a name="iwtslistenercallback-methods"></a><span data-ttu-id="230d1-103">Métodos IWTSListenerCallback</span><span class="sxs-lookup"><span data-stu-id="230d1-103">IWTSListenerCallback Methods</span></span>
+# <a name="iwtslistenercallback-methods"></a><span data-ttu-id="2ac5a-103">Métodos IWTSListenerCallback</span><span class="sxs-lookup"><span data-stu-id="2ac5a-103">IWTSListenerCallback Methods</span></span>
 
-<span data-ttu-id="230d1-104">A interface [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="230d1-104">The [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback) interface exposes the following methods.</span></span>
+<span data-ttu-id="2ac5a-104">A interface [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="2ac5a-104">The [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="230d1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="230d1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2ac5a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2ac5a-105">In this section</span></span>
 
--   [<span data-ttu-id="230d1-106">**Método OnNewChannelConnection**</span><span class="sxs-lookup"><span data-stu-id="230d1-106">**OnNewChannelConnection method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtslistenercallback-onnewchannelconnection)
+-   [<span data-ttu-id="2ac5a-106">**Método OnNewChannelConnection**</span><span class="sxs-lookup"><span data-stu-id="2ac5a-106">**OnNewChannelConnection method**</span></span>](/windows/desktop/api/TsVirtualChannels/nf-tsvirtualchannels-iwtslistenercallback-onnewchannelconnection)
 
  
 

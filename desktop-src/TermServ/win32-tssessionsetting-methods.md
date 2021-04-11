@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104292888"
 ---
-# <a name="win32_tssessionsetting-methods"></a><span data-ttu-id="0b4ff-103">\_Métodos TSSessionSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="0b4ff-103">Win32\_TSSessionSetting Methods</span></span>
+# <a name="win32_tssessionsetting-methods"></a><span data-ttu-id="a8bc0-103">\_Métodos TSSessionSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="a8bc0-103">Win32\_TSSessionSetting Methods</span></span>
 
-<span data-ttu-id="0b4ff-104">A classe [**Win32 \_ TSSessionSetting**](win32-tssessionsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="0b4ff-104">The [**Win32\_TSSessionSetting**](win32-tssessionsetting.md) class exposes the following methods.</span></span>
+<span data-ttu-id="a8bc0-104">A classe [**Win32 \_ TSSessionSetting**](win32-tssessionsetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a8bc0-104">The [**Win32\_TSSessionSetting**](win32-tssessionsetting.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="0b4ff-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="0b4ff-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="a8bc0-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a8bc0-105">In this section</span></span>
 
--   [<span data-ttu-id="0b4ff-106">**Método BrokenConnection**</span><span class="sxs-lookup"><span data-stu-id="0b4ff-106">**BrokenConnection method**</span></span>](win32-tssessionsetting-brokenconnection.md)
--   [<span data-ttu-id="0b4ff-107">**Método timelimite**</span><span class="sxs-lookup"><span data-stu-id="0b4ff-107">**TimeLimit method**</span></span>](win32-tssessionsetting-timelimit.md)
+-   [<span data-ttu-id="a8bc0-106">**Método BrokenConnection**</span><span class="sxs-lookup"><span data-stu-id="a8bc0-106">**BrokenConnection method**</span></span>](win32-tssessionsetting-brokenconnection.md)
+-   [<span data-ttu-id="a8bc0-107">**Método timelimite**</span><span class="sxs-lookup"><span data-stu-id="a8bc0-107">**TimeLimit method**</span></span>](win32-tssessionsetting-timelimit.md)
 
  
 
