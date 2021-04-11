@@ -1,0 +1,31 @@
+---
+description: O código do produto é um GUID que é a principal identificação de um aplicativo ou produto.
+ms.assetid: 6fbad59b-27b7-4ac1-bad5-8a608c7b270f
+title: Códigos de produto
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: edca03d54dcd14068e89b2314b729e672b0c631c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104170956"
+---
+# <a name="product-codes"></a><span data-ttu-id="5434b-103">Códigos de produto</span><span class="sxs-lookup"><span data-stu-id="5434b-103">Product Codes</span></span>
+
+<span data-ttu-id="5434b-104">O código do produto é um GUID que é a principal identificação de um aplicativo ou produto.</span><span class="sxs-lookup"><span data-stu-id="5434b-104">The product code is a GUID that is the principal identification of an application or product.</span></span> <span data-ttu-id="5434b-105">Para obter mais informações, consulte a propriedade [**ProductCode**](productcode.md) .</span><span class="sxs-lookup"><span data-stu-id="5434b-105">For more information, see the [**ProductCode**](productcode.md) property.</span></span> <span data-ttu-id="5434b-106">Se forem feitas alterações significativas em um produto, o código do produto também deverá ser alterado para refletir isso.</span><span class="sxs-lookup"><span data-stu-id="5434b-106">If significant changes are made to a product then the product code should also be changed to reflect this.</span></span> <span data-ttu-id="5434b-107">No entanto, não é um requisito de que o código do produto seja alterado se as alterações no produto forem relativamente secundárias.</span><span class="sxs-lookup"><span data-stu-id="5434b-107">It is not however a requirement that the product code be changed if the changes to the product are relatively minor.</span></span>
+
+<span data-ttu-id="5434b-108">As versões de 32 bits e 64 bits do pacote de um aplicativo devem ter códigos de produto diferentes.</span><span class="sxs-lookup"><span data-stu-id="5434b-108">The 32-bit and 64-bit versions of an application's package must have different product codes.</span></span> <span data-ttu-id="5434b-109">Se qualquer componente de 32 bits de um aplicativo for recompilado em um componente de 64 bits, um novo código de produto deverá ser atribuído.</span><span class="sxs-lookup"><span data-stu-id="5434b-109">If any 32-bit component of an application is recompiled into a 64-bit component, a new product code must be assigned.</span></span>
+
+<span data-ttu-id="5434b-110">Se um servidor exposto na [tabela PublishComponent](publishcomponent-table.md) for recompilado de 32 bits para 64 bits, o GUID nesta tabela também poderá precisar ser alterado para que os clientes de 32 bits e de 64 bits possam identificar a categoria de componente qualificada apropriada.</span><span class="sxs-lookup"><span data-stu-id="5434b-110">If a server exposed in the [PublishComponent Table](publishcomponent-table.md) is recompiled from 32-bits to 64-bits, the GUID in this table may also need to be changed so that 32-bit and 64-bit clients can identify the appropriate qualified component category.</span></span> <span data-ttu-id="5434b-111">Nesse caso, o código do produto também deve ser alterado.</span><span class="sxs-lookup"><span data-stu-id="5434b-111">In this case, the product code must also be changed.</span></span>
+
+<span data-ttu-id="5434b-112">Observe que as letras em GUIDs de código do produto devem estar em letras maiúsculas.</span><span class="sxs-lookup"><span data-stu-id="5434b-112">Note that letters in product code GUIDs must be uppercase.</span></span> <span data-ttu-id="5434b-113">Utilitários como o GUIDGEN geram GUIDs contendo letras minúsculas.</span><span class="sxs-lookup"><span data-stu-id="5434b-113">Utilities such as GUIDGEN generate GUIDs containing lowercase letters.</span></span> <span data-ttu-id="5434b-114">As letras minúsculas nesses GUIDs devem ser alteradas para letras maiúsculas para serem usadas como código do produto ou código do pacote.</span><span class="sxs-lookup"><span data-stu-id="5434b-114">The lowercase letters in these GUIDs must be changed to uppercase to be used as a product code or package code.</span></span> <span data-ttu-id="5434b-115">Para obter mais informações, consulte [alterando o código do produto](changing-the-product-code.md).</span><span class="sxs-lookup"><span data-stu-id="5434b-115">For more information, see [Changing the Product Code](changing-the-product-code.md).</span></span>
+
+<span data-ttu-id="5434b-116">O código do pacote é um GUID que identifica um determinado [*pacote*](p-gly.md)de Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="5434b-116">The package code is a GUID identifying a particular Windows Installer [*package*](p-gly.md).</span></span> <span data-ttu-id="5434b-117">O código do pacote associa um arquivo. msi a um aplicativo ou produto e também pode ser usado para a verificação de fontes.</span><span class="sxs-lookup"><span data-stu-id="5434b-117">The package code associates an .msi file with an application or product and can also be used for the verification of sources.</span></span> <span data-ttu-id="5434b-118">Os códigos do produto e do pacote não são intercambiáveis.</span><span class="sxs-lookup"><span data-stu-id="5434b-118">The product and package codes are not interchangeable.</span></span> <span data-ttu-id="5434b-119">Dois arquivos. msi não idênticos já devem ter o mesmo código de pacote.</span><span class="sxs-lookup"><span data-stu-id="5434b-119">No two nonidentical .msi files should ever have the same package code.</span></span> <span data-ttu-id="5434b-120">Embora seja comum enviar um aplicativo que tenha o mesmo código de pacote e código do produto, os dois valores podem divergir à medida que o aplicativo é atualizado.</span><span class="sxs-lookup"><span data-stu-id="5434b-120">Although it is common to ship an application that has the same package code and product code, the two values can diverge as the application is updated.</span></span> <span data-ttu-id="5434b-121">Para obter mais informações, consulte [Package codes](package-codes.md).</span><span class="sxs-lookup"><span data-stu-id="5434b-121">For more information, see [Package Codes](package-codes.md).</span></span>
+
+ 
+
+ 
+
+
+
