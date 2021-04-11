@@ -67,7 +67,7 @@ Você pode melhorar significativamente o desempenho da captura de fluxo ao aloca
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

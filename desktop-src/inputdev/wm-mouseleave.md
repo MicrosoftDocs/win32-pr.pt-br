@@ -72,7 +72,7 @@ Todo o controle solicitado por [**TrackMouseEvent**](/windows/win32/api/winuser/
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

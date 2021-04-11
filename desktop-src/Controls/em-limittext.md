@@ -75,7 +75,7 @@ Para controles de edição de linha única, o limite de texto é 0x7FFFFFFE byte
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

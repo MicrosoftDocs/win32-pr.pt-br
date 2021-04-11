@@ -61,7 +61,7 @@ Se ocorrer um erro, o valor de retorno será um erro de LB \_ .
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
