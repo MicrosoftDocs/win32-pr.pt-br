@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104004929"
 ---
-# <a name="example-code-for-checking-for-a-control-access-right-in-an-ace"></a><span data-ttu-id="946f4-104">Código de exemplo para verificar um direito de acesso de controle em uma ACE</span><span class="sxs-lookup"><span data-stu-id="946f4-104">Example Code for Checking for a Control Access Right in an ACE</span></span>
+# <a name="example-code-for-checking-for-a-control-access-right-in-an-ace"></a><span data-ttu-id="867ba-104">Código de exemplo para verificar um direito de acesso de controle em uma ACE</span><span class="sxs-lookup"><span data-stu-id="867ba-104">Example Code for Checking for a Control Access Right in an ACE</span></span>
 
-<span data-ttu-id="946f4-105">O exemplo de código C++ a seguir verifica um acesso de controle especificado diretamente em uma ACE na ACL do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="946f4-105">The following C++ code example verifies a specified control access right in an ACE in the ACL of the specified object.</span></span>
+<span data-ttu-id="867ba-105">O exemplo de código C++ a seguir verifica um acesso de controle especificado diretamente em uma ACE na ACL do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="867ba-105">The following C++ code example verifies a specified control access right in an ACE in the ACL of the specified object.</span></span>
 
 
 ```C++

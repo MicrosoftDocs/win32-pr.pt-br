@@ -1,0 +1,92 @@
+---
+title: Para criar arquivos ASF usando codecs de terceiros
+description: Para criar arquivos ASF usando codecs de terceiros
+ms.assetid: 5cd348ca-1f86-429d-92ee-4eab4ced8571
+keywords:
+- SDK do Windows Media Format, criando arquivos ASF
+- SDK do Windows Media Format, codecs de terceiros
+- ASF (Advanced Systems Format), criando arquivos
+- ASF (formato de sistemas avançados), criando arquivos
+- Formato de sistema avançado (ASF), codecs de terceiros
+- ASF (formato de sistemas avançados), codecs de terceiros
+- codecs de terceiros
+- codecs, terceiros
+- codecs, criando arquivos ASF
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9d6c057f1785ed50e328ac6094ff7dbe078e98fc
+ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "104293849"
+---
+# <a name="to-create-asf-files-using-third-party-codecs"></a><span data-ttu-id="04a4a-112">Para criar arquivos ASF usando codecs de terceiros</span><span class="sxs-lookup"><span data-stu-id="04a4a-112">To Create ASF Files Using Third-Party Codecs</span></span>
+
+<span data-ttu-id="04a4a-113">Você pode usar o Windows Media Format SDK para criar arquivos ASF que contêm mídia digital codificada com qualquer codec escolhido.</span><span class="sxs-lookup"><span data-stu-id="04a4a-113">You can use the Windows Media Format SDK to create ASF files that contain digital media encoded with any codec you choose.</span></span> <span data-ttu-id="04a4a-114">Ao usar um codec diferente de um incluído neste SDK, você deve executar as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="04a4a-114">When using a codec other than one included with this SDK, you must perform the following steps.</span></span>
+
+1.  <span data-ttu-id="04a4a-115">Codifique o conteúdo com o codec desejado.</span><span class="sxs-lookup"><span data-stu-id="04a4a-115">Encode the content with the desired codec.</span></span>
+2.  <span data-ttu-id="04a4a-116">Localize ou crie um valor de GUID para identificar o conteúdo codificado com o codec usado na etapa 1.</span><span class="sxs-lookup"><span data-stu-id="04a4a-116">Find or create a GUID value to identify content encoded with the codec used in step 1.</span></span>
+3.  <span data-ttu-id="04a4a-117">Crie um novo perfil ou modifique um perfil existente para uso com o conteúdo codificado.</span><span class="sxs-lookup"><span data-stu-id="04a4a-117">Create a new profile, or modify an existing profile for use with the encoded content.</span></span>
+    -   <span data-ttu-id="04a4a-118">Crie um fluxo para o conteúdo codificado com o tipo principal apropriado.</span><span class="sxs-lookup"><span data-stu-id="04a4a-118">Create a stream for the encoded content with the appropriate major type.</span></span> <span data-ttu-id="04a4a-119">Para obter mais informações sobre os principais tipos de mídia, consulte [tipos de mídia](media-types.md).</span><span class="sxs-lookup"><span data-stu-id="04a4a-119">For more information about major media types, see [Media Types](media-types.md).</span></span> <span data-ttu-id="04a4a-120">Use o GUID identificado na etapa 2 como o subtipo de mídia.</span><span class="sxs-lookup"><span data-stu-id="04a4a-120">Use the GUID identified in step 2 as the media subtype.</span></span>
+    -   <span data-ttu-id="04a4a-121">Defina a taxa de bits e a janela de buffer para o fluxo para valores que não resultarão no estouro de buffer.</span><span class="sxs-lookup"><span data-stu-id="04a4a-121">Set the bit rate and buffer window for the stream to values that will not result in buffer overflow.</span></span> <span data-ttu-id="04a4a-122">Você deve ser capaz de obter esses valores do codec no momento da codificação.</span><span class="sxs-lookup"><span data-stu-id="04a4a-122">You should be able to obtain these values from the codec at the time of encoding.</span></span> <span data-ttu-id="04a4a-123">Os componentes de tempo de execução do SDK verificam os valores da janela de taxa de bits/buffer e removem amostras, se necessário, para que os dados específicos caibam com esses valores.</span><span class="sxs-lookup"><span data-stu-id="04a4a-123">The SDK runtime components check the bitrate/buffer window values and drop samples if necessary to make the given data fit in with these values.</span></span> <span data-ttu-id="04a4a-124">Se você definir os valores incorretamente, o arquivo não será transmitido corretamente, resultando em uma reprodução ruim.</span><span class="sxs-lookup"><span data-stu-id="04a4a-124">If you set the values incorrectly, the file will not stream properly, resulting in poor playback.</span></span>
+    -   <span data-ttu-id="04a4a-125">Para fluxos de vídeo, você deve definir o membro de **bicompressão** da estrutura **BITMAPINFOHEADER** contida na estrutura [**WMVIDEOINFOHEADER**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmvideoinfoheader) para o valor FOURCC apropriado para o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-125">For video streams, you must set the **biCompression** member of the **BITMAPINFOHEADER** structure contained in the [**WMVIDEOINFOHEADER**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmvideoinfoheader) structure to the appropriate FOURCC value for the content.</span></span> <span data-ttu-id="04a4a-126">Esse valor deve ser igual aos quatro primeiros bytes do GUID do subtipo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-126">This value must be equal to the first four bytes of the subtype GUID.</span></span> <span data-ttu-id="04a4a-127">Por exemplo, se **biCompression** for MAKEFOURCC (' T', ' E ', ' s', ' T') = 0x54455354, o GUID do subtipo começará da seguinte maneira: 54455354-XXXX-XXXX-XXXX-XXXXXXXXXXXX.</span><span class="sxs-lookup"><span data-stu-id="04a4a-127">For example, if **biCompression** is MAKEFOURCC('T','E','S','T')=0x54455354, then the subtype GUID will begin like this: 54455354-XXXX-XXXX-XXXX-XXXXXXXXXXXX.</span></span>
+4.  <span data-ttu-id="04a4a-128">Crie um objeto do gravador e carregue o perfil criado na etapa anterior.</span><span class="sxs-lookup"><span data-stu-id="04a4a-128">Create a writer object and load the profile created in the previous step.</span></span> <span data-ttu-id="04a4a-129">Para obter mais informações sobre como gravar arquivos, consulte [Writing ASF files](writing-asf-files.md).</span><span class="sxs-lookup"><span data-stu-id="04a4a-129">For more information about writing files, see [Writing ASF Files](writing-asf-files.md).</span></span>
+5.  <span data-ttu-id="04a4a-130">Faça um loop pelas entradas do arquivo e atribua Propriedades de entrada para cada um como faria normalmente.</span><span class="sxs-lookup"><span data-stu-id="04a4a-130">Loop through the inputs of the file and assign input properties for each as you normally would.</span></span> <span data-ttu-id="04a4a-131">Para obter mais informações sobre entradas, consulte [trabalhando com entradas](working-with-inputs.md).</span><span class="sxs-lookup"><span data-stu-id="04a4a-131">For more information about inputs, see [Working with Inputs](working-with-inputs.md).</span></span> <span data-ttu-id="04a4a-132">Para o fluxo codificado com um codec de terceiros, defina o ponteiro de interface [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) como **nulo** antes de chamar [**IWMWriter:: BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).</span><span class="sxs-lookup"><span data-stu-id="04a4a-132">For the stream encoded with a third-party codec, set the [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) interface pointer to **NULL** before calling [**IWMWriter::BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).</span></span>
+6.  <span data-ttu-id="04a4a-133">Use o novo perfil criado na etapa anterior para gravar o arquivo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-133">Use the new profile created in the previous step to write the file.</span></span> <span data-ttu-id="04a4a-134">Passe os exemplos compactados usando [**IWMWriterAdvanced:: WriteStreamSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-writestreamsample) em vez de [**IWMWriter:: WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample).</span><span class="sxs-lookup"><span data-stu-id="04a4a-134">Pass the compressed samples using [**IWMWriterAdvanced::WriteStreamSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-writestreamsample) instead of [**IWMWriter::WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample).</span></span> <span data-ttu-id="04a4a-135">Para vídeo, você deve especificar quais exemplos são quadros-chave passando \_ o WM it \_ CLEANPOINT como o parâmetro *dwFlags* .</span><span class="sxs-lookup"><span data-stu-id="04a4a-135">For video, you must specify which samples are key frames by passing WM\_SF\_CLEANPOINT as the *dwFlags* parameter.</span></span>
+
+<span data-ttu-id="04a4a-136">Para processar e descompactar o fluxo codificado com um codec de terceiros, você deve ler exemplos de fluxo compactados.</span><span class="sxs-lookup"><span data-stu-id="04a4a-136">To process and decompress the stream encoded with a third-party codec, you must read compressed stream samples.</span></span> <span data-ttu-id="04a4a-137">Seu aplicativo de leitura também deve tratar a descompactação de exemplo para o fluxo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-137">Your reading application must handle sample decompression for the stream as well.</span></span>
+
+## <a name="putting-mpeg-2-streams-into-asf"></a><span data-ttu-id="04a4a-138">Colocando fluxos MPEG-2 no ASF</span><span class="sxs-lookup"><span data-stu-id="04a4a-138">Putting MPEG-2 streams into ASF</span></span>
+
+> [!Note]  
+> <span data-ttu-id="04a4a-139">Este tópico se aplica a aplicativos que usam o Windows Media Format SDK para colocar MPEG-2 (ou outros formatos de compactação que usam quadros B) no contêiner de arquivo ASF.</span><span class="sxs-lookup"><span data-stu-id="04a4a-139">This topic applies to applications that use the Windows Media Format SDK to put MPEG-2 (or other compression formats that use B frames) into the ASF file container.</span></span>
+
+ 
+
+<span data-ttu-id="04a4a-140">O objeto do gravador requer que todos os exemplos de entrada tenham carimbos de data/hora e supõe que cada amostra de entrada tem um tempo de apresentação posterior ao que o precede.</span><span class="sxs-lookup"><span data-stu-id="04a4a-140">The writer object requires that all input samples have time stamps, and it assumes that each input sample has a presentation time later than the one that preceded it.</span></span> <span data-ttu-id="04a4a-141">Embora praticamente todos os vídeos descompactados e até mesmo alguns fluxos de vídeo compactados atendam a essas condições, os fluxos MPEG-2 não fazem isso.</span><span class="sxs-lookup"><span data-stu-id="04a4a-141">While virtually all uncompressed video and even some compressed video streams meet these conditions, MPEG-2 streams do not.</span></span> <span data-ttu-id="04a4a-142">Em MPEG-2, nem todas as amostras são de data e hora e quando os quadros B estão presentes, a ordem de decodificação de exemplo não é a mesma que a ordem de renderização.</span><span class="sxs-lookup"><span data-stu-id="04a4a-142">In MPEG-2, not all samples are time stamped, and when B frames are present, the sample decoding order is not the same as the rendering order.</span></span> <span data-ttu-id="04a4a-143">Quando o objeto do gravador encontra amostras fora de ordem, ele os organiza na ordem "correta".</span><span class="sxs-lookup"><span data-stu-id="04a4a-143">When the writer object encounters out-of-order samples, it rearranges them into the "correct" order.</span></span> <span data-ttu-id="04a4a-144">Portanto, para armazenar fluxos MPEG-2 nativamente (não decodificados) em um contêiner ASF, você deve executar as seguintes etapas:</span><span class="sxs-lookup"><span data-stu-id="04a4a-144">Therefore, to store MPEG-2 streams natively (not decoded) in an ASF container, you must perform the following steps:</span></span>
+
+<span data-ttu-id="04a4a-145">Ao gravar o arquivo:</span><span class="sxs-lookup"><span data-stu-id="04a4a-145">When writing the file:</span></span>
+
+1.  <span data-ttu-id="04a4a-146">Adicione uma extensão de unidade de dados de tamanho fixo (devido) a cada amostra de entrada que conterá uma estrutura que contém os valores reais de hora de início e tempo de parada de carimbo de hora MPEG para o exemplo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-146">Add a fixed-size data unit extension (DUE) to each input sample that will hold a structure that contains the actual MPEG time-stamp start-time and stop-time values for the sample.</span></span> <span data-ttu-id="04a4a-147">Use-1 para esses valores se o exemplo não tiver carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="04a4a-147">Use -1 for these values if the sample has no time stamp.</span></span>
+2.  <span data-ttu-id="04a4a-148">Forneça os carimbos de data/hora de entrada "fictícios" do objeto gravador que estão sempre aumentando para que eles gravem os exemplos no arquivo exatamente na mesma ordem em que são recebidos.</span><span class="sxs-lookup"><span data-stu-id="04a4a-148">Give the writer object "dummy" input time stamps that are always increasing so that it will write the samples to the file in exactly the same order as they are received.</span></span> <span data-ttu-id="04a4a-149">Os carimbos de data/hora fictícios devem corresponder aproximadamente aos tempos de apresentação reais, conforme a média ao longo do tempo.</span><span class="sxs-lookup"><span data-stu-id="04a4a-149">The dummy time stamps should correspond approximately to the actual presentation times, as averaged over time.</span></span> <span data-ttu-id="04a4a-150">Os carimbos de data/hora fictícios formarão a linha do tempo de busca, portanto, se eles divergirem em relação aos carimbos em tempo real, as operações de busca no arquivo produzirão resultados inesperados.</span><span class="sxs-lookup"><span data-stu-id="04a4a-150">The dummy time stamps will form the seeking timeline, so if they diverge relative to the real time stamps, seek operations on the file will produce unexpected results.</span></span> <span data-ttu-id="04a4a-151">No entanto, uma quantidade limitada de tremulação entre os tempos de amostra não afetará seriamente as operações de busca.</span><span class="sxs-lookup"><span data-stu-id="04a4a-151">However, a limited amount of jitter between the sample times will not seriously affect seek operations.</span></span>
+
+<span data-ttu-id="04a4a-152">Ao ler o arquivo:</span><span class="sxs-lookup"><span data-stu-id="04a4a-152">When reading the file:</span></span>
+
+-   <span data-ttu-id="04a4a-153">Para cada exemplo de leitura do arquivo, examine a conclusão.</span><span class="sxs-lookup"><span data-stu-id="04a4a-153">For each sample read from the file, examine the DUE.</span></span> <span data-ttu-id="04a4a-154">Se ele contiver uma hora de início maior ou igual a zero, copie esse valor para o carimbo de data/hora do exemplo de saída antes que ele seja entregue ao decodificador.</span><span class="sxs-lookup"><span data-stu-id="04a4a-154">If it contains a start time that is greater than or equal to zero, copy that value to the time stamp for the output sample before it is delivered to the decoder.</span></span> <span data-ttu-id="04a4a-155">Defina todos os outros carimbos de data/hora na saída exemplos como **NULL**.</span><span class="sxs-lookup"><span data-stu-id="04a4a-155">Set all other time stamps on the output samples to **NULL**.</span></span> <span data-ttu-id="04a4a-156">No DirectShow, isso é feito chamando **IMediaSample:: SetTime**(**NULL**,**NULL**).</span><span class="sxs-lookup"><span data-stu-id="04a4a-156">In DirectShow, this is done by calling **IMediaSample::SetTime**(**NULL**,**NULL**).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="04a4a-157">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="04a4a-157">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="04a4a-158">**Armazenando conteúdo em buffer**</span><span class="sxs-lookup"><span data-stu-id="04a4a-158">**Buffering Content**</span></span>](buffering-content.md)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-159">**Interface IWMWriter**</span><span class="sxs-lookup"><span data-stu-id="04a4a-159">**IWMWriter Interface**</span></span>](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-160">**Interface IWMWriterAdvanced**</span><span class="sxs-lookup"><span data-stu-id="04a4a-160">**IWMWriterAdvanced Interface**</span></span>](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-161">**Para fornecer amostras compactadas com o leitor assíncrono**</span><span class="sxs-lookup"><span data-stu-id="04a4a-161">**To Deliver Compressed Samples with the Asynchronous Reader**</span></span>](to-deliver-compressed-samples-with-the-asynchronous-reader.md)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-162">**Para recuperar exemplos de fluxo com o leitor síncrono**</span><span class="sxs-lookup"><span data-stu-id="04a4a-162">**To Retrieve Stream Samples with the Synchronous Reader**</span></span>](to-retrieve-stream-samples-with-the-synchronous-reader.md)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-163">**WMVIDEOINFOHEADER**</span><span class="sxs-lookup"><span data-stu-id="04a4a-163">**WMVIDEOINFOHEADER**</span></span>](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmvideoinfoheader)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-164">**Trabalhando com perfis**</span><span class="sxs-lookup"><span data-stu-id="04a4a-164">**Working with Profiles**</span></span>](working-with-profiles.md)
+</dt> <dt>
+
+[<span data-ttu-id="04a4a-165">**Gravando arquivos ASF**</span><span class="sxs-lookup"><span data-stu-id="04a4a-165">**Writing ASF Files**</span></span>](writing-asf-files.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
