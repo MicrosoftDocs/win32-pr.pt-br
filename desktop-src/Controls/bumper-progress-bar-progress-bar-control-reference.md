@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104172734"
 ---
-# <a name="progress-bar-control-reference"></a><span data-ttu-id="6b1d0-103">Referência de controle da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="6b1d0-103">Progress Bar Control Reference</span></span>
+# <a name="progress-bar-control-reference"></a><span data-ttu-id="fc5c1-103">Referência de controle da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="fc5c1-103">Progress Bar Control Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="6b1d0-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="6b1d0-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fc5c1-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="fc5c1-104">In This Section</span></span>
 
--   [<span data-ttu-id="6b1d0-105">Mensagens da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="6b1d0-105">Progress Bar Messages</span></span>](bumper-progress-bar-control-reference-messages.md)
--   [<span data-ttu-id="6b1d0-106">Estruturas da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="6b1d0-106">Progress Bar Structures</span></span>](bumper-progress-bar-control-reference-structures.md)
--   [<span data-ttu-id="6b1d0-107">Constantes da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="6b1d0-107">Progress Bar Constants</span></span>](bumper-progress-bar-control-reference-constants.md)
+-   [<span data-ttu-id="fc5c1-105">Mensagens da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="fc5c1-105">Progress Bar Messages</span></span>](bumper-progress-bar-control-reference-messages.md)
+-   [<span data-ttu-id="fc5c1-106">Estruturas da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="fc5c1-106">Progress Bar Structures</span></span>](bumper-progress-bar-control-reference-structures.md)
+-   [<span data-ttu-id="fc5c1-107">Constantes da barra de progresso</span><span class="sxs-lookup"><span data-stu-id="fc5c1-107">Progress Bar Constants</span></span>](bumper-progress-bar-control-reference-constants.md)
 
  
 
