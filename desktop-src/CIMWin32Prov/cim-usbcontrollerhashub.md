@@ -1,0 +1,238 @@
+---
+description: A \_ classe CIM USBControllerHasHub define os hubs que são downstream do controlador USB.
+ms.assetid: 38bc0342-3ff0-42c8-9c1e-ea5a5822e1d3
+ms.tgt_platform: multiple
+title: Classe CIM_USBControllerHasHub
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CIM_USBControllerHasHub
+- CIM_USBControllerHasHub.NegotiatedDataWidth
+- CIM_USBControllerHasHub.NegotiatedSpeed
+- CIM_USBControllerHasHub.AccessState
+- CIM_USBControllerHasHub.NumberOfHardResets
+- CIM_USBControllerHasHub.NumberOfSoftResets
+- CIM_USBControllerHasHub.Dependent
+- CIM_USBControllerHasHub.Antecedent
+api_type:
+- DllExport
+api_location:
+- CIMWin32.dll
+ms.openlocfilehash: ba0f6d9a618a194faa8d16f9b2f53c6ce10653cf
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104088880"
+---
+# <a name="cim_usbcontrollerhashub-class"></a>\_Classe CIM USBControllerHasHub
+
+A classe **CIM \_ USBControllerHasHub** define os hubs que são DOWNSTREAM do controlador USB.
+
+> [!IMPORTANT]
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+
+ 
+
+A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+
+## <a name="syntax"></a>Sintaxe
+
+``` syntax
+[AMENDMENT]
+class CIM_USBControllerHasHub : CIM_ControlledBy
+{
+  uint32                NegotiatedDataWidth;
+  uint64                NegotiatedSpeed;
+  uint16                AccessState;
+  uint32                NumberOfHardResets;
+  uint32                NumberOfSoftResets;
+  CIM_USBHub        REF Dependent;
+  CIM_USBController REF Antecedent;
+};
+```
+
+## <a name="members"></a>Membros
+
+A classe **CIM \_ USBControllerHasHub** tem estes tipos de membros:
+
+-   [Propriedades](#properties)
+
+### <a name="properties"></a>Propriedades
+
+A classe **CIM \_ USBControllerHasHub** tem essas propriedades.
+
+<dl> <dt>
+
+**Accessstate**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt16**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> </dl>
+
+Indica se o controlador está ativando ou acessando ativamente o dispositivo. Essas informações são necessárias quando um dispositivo lógico pode ser acessado ou acessado por meio de vários controladores.
+
+Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+
+<dt>
+
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
+
+**Desconhecido** (0)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="Active"></span><span id="active"></span><span id="ACTIVE"></span>
+
+**Ativo** (1)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="Inactive"></span><span id="inactive"></span><span id="INACTIVE"></span>
+
+**Inativo** (2)
+
+
+</dt> <dd></dd> </dl>
+
+</dd> <dt>
+
+**Antecedent**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **CIM \_ USBController**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+</dt> </dl>
+
+Um [**\_ USBController CIM**](cim-usbcontroller.md) que descreve o USBController.
+
+</dd> <dt>
+
+**Depende**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **CIM \_ USBHub**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente"), [**mín**](/windows/desktop/WmiSdk/standard-qualifiers) . (1)
+</dt> </dl>
+
+Um [**CIM \_ USBHub**](cim-usbhub.md) que descreve o USBHub associado ao controlador.
+
+</dd> <dt>
+
+**NegotiatedDataWidth**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt32**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+</dt> </dl>
+
+Quando várias larguras de dados de barramento ou conexão são possíveis, essa propriedade define a que está em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+
+Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+
+</dd> <dt>
+
+**NegotiatedSpeed**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt64**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo")
+</dt> </dl>
+
+Quando várias velocidades de barramento ou conexão são possíveis, essa propriedade define a que está sendo usada entre os dispositivos. A velocidade é especificada em bits por segundo. Se as velocidades de conexão ou de barramento não forem negociadas ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+
+Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+
+Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+
+</dd> <dt>
+
+**NumberOfHardResets**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt32**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> </dl>
+
+Número de redefinições de hardware emitidas pelo controlador. Uma reinicialização forçada retorna o dispositivo para seu estado de inicialização ou inicialização. Todos os dados e informações de estado do dispositivo interno são perdidos.
+
+Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+
+</dd> <dt>
+
+**NumberOfSoftResets**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt32**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> </dl>
+
+Número de redefinições reversível emitidas pelo controlador. Uma redefinição reversível não limpa completamente o estado e os dados atuais do dispositivo. A semântica exata depende do dispositivo e dos protocolos e mecanismos usados para se comunicar com ele.
+
+Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+
+</dd> </dl>
+
+## <a name="remarks"></a>Comentários
+
+A classe **CIM \_ USBControllerHasHub** é derivada de [**\_ ControlledBy CIM**](cim-controlledby.md).
+
+O WMI não implementa essa classe. Para classes WMI derivadas do **CIM \_ USBControllerHasHub**, consulte [classes Win32](win32-provider.md).
+
+Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+</dt> </dl>
+
+ 
+
