@@ -1,0 +1,38 @@
+---
+title: Representação
+description: Representação é a capacidade de um thread ser executado em um contexto de segurança diferente do contexto do processo que possui o thread.
+ms.assetid: b33ca3b0-0423-4338-b3d6-4bb3db3d3e1b
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a735fa12e175ecec5dc2a7ed741843d713532e19
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "104008441"
+---
+# <a name="impersonation"></a><span data-ttu-id="35a3b-103">Representação</span><span class="sxs-lookup"><span data-stu-id="35a3b-103">Impersonation</span></span>
+
+<span data-ttu-id="35a3b-104">Representação é a capacidade de um thread ser executado em um contexto de segurança diferente do contexto do processo que possui o thread.</span><span class="sxs-lookup"><span data-stu-id="35a3b-104">Impersonation is the ability of a thread to execute in a security context that is different from the context of the process that owns the thread.</span></span> <span data-ttu-id="35a3b-105">Ao executar no contexto de segurança do cliente, o servidor "é" o cliente, até certo grau.</span><span class="sxs-lookup"><span data-stu-id="35a3b-105">When running in the client's security context, the server "is" the client, to some degree.</span></span> <span data-ttu-id="35a3b-106">O thread do servidor usa um token de acesso que representa as credenciais do cliente para obter acesso aos objetos aos quais o cliente tem acesso.</span><span class="sxs-lookup"><span data-stu-id="35a3b-106">The server thread uses an access token representing the client's credentials to obtain access to the objects to which the client has access.</span></span>
+
+<span data-ttu-id="35a3b-107">O principal motivo para a representação é fazer com que as verificações de acesso sejam executadas em relação à identidade do cliente.</span><span class="sxs-lookup"><span data-stu-id="35a3b-107">The primary reason for impersonation is to cause access checks to be performed against the client's identity.</span></span> <span data-ttu-id="35a3b-108">Usar a identidade do cliente para verificações de acesso pode fazer com que o acesso seja restrito ou expandido, dependendo do que o cliente tem permissão para fazer.</span><span class="sxs-lookup"><span data-stu-id="35a3b-108">Using the client's identity for access checks can cause access to be either restricted or expanded, depending on what the client has permission to do.</span></span> <span data-ttu-id="35a3b-109">Por exemplo, suponha que um servidor de arquivos tenha arquivos contendo informações confidenciais e que cada um desses arquivos seja protegido por uma ACL.</span><span class="sxs-lookup"><span data-stu-id="35a3b-109">For example, suppose a file server has files containing confidential information and that each of these files is protected by an ACL.</span></span> <span data-ttu-id="35a3b-110">Para ajudar a impedir que um cliente obtenha acesso não autorizado às informações nesses arquivos, o servidor pode representar o cliente antes de acessar os arquivos.</span><span class="sxs-lookup"><span data-stu-id="35a3b-110">To help prevent a client from obtaining unauthorized access to information in these files, the server can impersonate the client before accessing the files.</span></span>
+
+## <a name="access-tokens-for-impersonation"></a><span data-ttu-id="35a3b-111">Tokens de acesso para representação</span><span class="sxs-lookup"><span data-stu-id="35a3b-111">Access Tokens for Impersonation</span></span>
+
+<span data-ttu-id="35a3b-112">Tokens de acesso são objetos que descrevem o contexto de segurança de um processo ou thread.</span><span class="sxs-lookup"><span data-stu-id="35a3b-112">Access tokens are objects that describe the security context of a process or thread.</span></span> <span data-ttu-id="35a3b-113">Eles fornecem informações que incluem a identidade de uma conta de usuário e um subconjunto dos privilégios disponíveis para a conta de usuário.</span><span class="sxs-lookup"><span data-stu-id="35a3b-113">They provide information that includes the identity of a user account and a subset of the privileges available to the user account.</span></span> <span data-ttu-id="35a3b-114">Cada processo tem um *token de acesso primário* que descreve o contexto de segurança da conta de usuário associada ao processo.</span><span class="sxs-lookup"><span data-stu-id="35a3b-114">Every process has a *primary access token* that describes the security context of the user account associated with the process.</span></span> <span data-ttu-id="35a3b-115">Por padrão, o sistema usa o token primário quando um thread do processo interage com um objeto protegível.</span><span class="sxs-lookup"><span data-stu-id="35a3b-115">By default, the system uses the primary token when a thread of the process interacts with a securable object.</span></span> <span data-ttu-id="35a3b-116">No entanto, quando um thread representa um cliente, o thread de representação tem um token de acesso primário e um *token de representação*.</span><span class="sxs-lookup"><span data-stu-id="35a3b-116">However, when a thread impersonates a client, the impersonating thread has both a primary access token and an *impersonation token*.</span></span> <span data-ttu-id="35a3b-117">O token de representação representa o contexto de segurança do cliente e esse token de acesso é aquele usado para verificações de acesso durante a representação.</span><span class="sxs-lookup"><span data-stu-id="35a3b-117">The impersonation token represents the client's security context, and this access token is the one that is used for access checks during impersonation.</span></span> <span data-ttu-id="35a3b-118">Quando a representação terminar, o thread voltará a usar apenas o token de acesso primário.</span><span class="sxs-lookup"><span data-stu-id="35a3b-118">When impersonation is over, the thread reverts to using only the primary access token.</span></span>
+
+<span data-ttu-id="35a3b-119">Você pode usar a função [**OpenProcessToken**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) para obter um identificador para o token primário de um processo.</span><span class="sxs-lookup"><span data-stu-id="35a3b-119">You can use the [**OpenProcessToken**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) function to get a handle to the primary token of a process.</span></span> <span data-ttu-id="35a3b-120">Use a função [**OpenThreadToken**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openthreadtoken) para obter um identificador para o token de representação de um thread.</span><span class="sxs-lookup"><span data-stu-id="35a3b-120">Use the [**OpenThreadToken**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openthreadtoken) function to get a handle to the impersonation token of a thread.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="35a3b-121">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="35a3b-121">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="35a3b-122">Tokens de acesso</span><span class="sxs-lookup"><span data-stu-id="35a3b-122">Access Tokens</span></span>](/windows/desktop/SecAuthZ/access-tokens)
+</dt> <dt>
+
+[<span data-ttu-id="35a3b-123">Delegação e representação</span><span class="sxs-lookup"><span data-stu-id="35a3b-123">Delegation and Impersonation</span></span>](delegation-and-impersonation.md)
+</dt> </dl>
+
+ 
+
+ 
