@@ -1,0 +1,113 @@
+---
+description: A propriedade AuthenticationLevel é um inteiro que define o nível de autenticação COM que é atribuído a esse objeto.
+ms.assetid: 96c2e6a5-a91f-469d-bdd1-eaa20b176158
+ms.tgt_platform: multiple
+title: Propriedade SWbemSecurity. AuthenticationLevel
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- SWbemSecurity.AuthenticationLevel
+- ISWbemSecurity.AuthenticationLevel
+api_type:
+- COM
+api_location:
+- Wbemdisp.dll
+ms.openlocfilehash: 63ae9e529de010e0a0ca7b8bc1da7dc8dc4891b3
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104296591"
+---
+# <a name="swbemsecurityauthenticationlevel-property"></a>Propriedade SWbemSecurity. AuthenticationLevel
+
+A propriedade **AuthenticationLevel** é um inteiro que define o nível de autenticação com que é atribuído a esse objeto. Essa configuração determina como você protege as informações enviadas do WMI. Para obter mais informações sobre níveis de autenticação, consulte [definindo a \_ segurança do \_ processo do aplicativo cliente](setting-client-application-process-security.md). Em geral, não é necessário definir o nível de autenticação ao fazer chamadas de API do WMI. Se você não definir essa propriedade, o nível de autenticação COM padrão para seu sistema será usado.
+
+Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+
+Esta propriedade é de leitura/gravação.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```VB
+SWbemSecurity.AuthenticationLevel As Integer
+```
+
+
+
+## <a name="property-value"></a>Valor da propriedade
+
+## <a name="remarks"></a>Comentários
+
+A configuração authenticationLevel permite solicitar o nível de autenticação DCOM e privacidade a ser usada em uma conexão. O intervalo de configurações não é autenticado para autenticação criptografada por pacote.
+
+
+
+| Valor        | Descrição                                                                                                                                                                                                                                                                                                            |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nenhum         | Não usa nenhuma autenticação. Todas as configurações de segurança são ignoradas.<br/>                                                                                                                                                                                                                                         |
+| Padrão      | Usa uma negociação de segurança padrão para selecionar um nível de autenticação. Essa é a configuração recomendada porque o cliente envolvido na transação será negociado para o nível de autenticação especificado pelo servidor.<br/> O DCOM não selecionará o valor None durante uma sessão de negociação.<br/> |
+| Conectar      | Autentica as credenciais do cliente somente quando o cliente tenta se conectar ao servidor. Depois que uma conexão é estabelecida, nenhuma verificação de autenticação adicional ocorre.<br/>                                                                                                                          |
+| Chamar         | Autentica as credenciais do cliente somente no início de cada chamada, quando o servidor recebe a solicitação. Os cabeçalhos de pacote são assinados, mas os pacotes de dados trocados entre o cliente e o servidor não são assinados nem criptografados.<br/>                                                     |
+| PCT          | Autentica que todos os pacotes de dados são recebidos do cliente esperado. Semelhante a chamada; os cabeçalhos de pacote são assinados, mas não criptografados. Os próprios pacotes não são assinados nem criptografados.<br/>                                                                                                               |
+| PktIntegrity | Autentica e verifica se nenhum dos pacotes de dados transferidos entre o cliente e o servidor foi modificado. Cada pacote de dados é assinado, garantindo que os pacotes não tenham sido modificados durante o trânsito. Nenhum dos pacotes de dados está criptografado.<br/>                                            |
+| PktPrivacy   | Autentica todos os níveis de representação anteriores e assina e criptografa cada pacote de dados. Isso garante que toda a comunicação entre o cliente e o servidor seja confidencial.<br/>                                                                                                                             |
+
+
+
+ 
+
+Você pode definir o nível de autenticação dos objetos [**SWbemServices**](swbemservices.md), [**SWbemObject**](swbemobject.md), [**SWbemObjectSet**](swbemobjectset.md), [**SWbemObjectPath**](swbemobjectpath.md)e [**SwbemLocator**](swbemlocator.md) definindo a propriedade **AuthenticationLevel** para o valor desejado.
+
+O exemplo a seguir mostra como definir o nível de autenticação para um objeto **SwbemObject** .
+
+
+```VB
+objinstance.Security_.AuthenticationLevel = wbemAuthenticationLevelPkt
+```
+
+
+
+Você também pode especificar níveis de autenticação como parte de um moniker. O exemplo a seguir define o nível de autenticação e o nível de representação e recupera uma instância do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk).
+
+
+```VB
+Set objinst = GetObject("WinMgmts:{impersonationLevel=impersonate,authenticationLevel=pktPrivacy}!root/cimv2:Win32_LogicalDisk='c:'")
+```
+
+
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
+| CLSID<br/>                    | \_SWBEMSECURITY CLSID<br/>                                                         |
+| IID<br/>                      | ISWbemSecurity de IID \_<br/>                                                          |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[Definindo a \_ segurança do processo do aplicativo cliente \_](setting-client-application-process-security.md)
+</dt> <dt>
+
+[**WbemAuthenticationLevelEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemauthenticationlevelenum)
+</dt> <dt>
+
+[**SWbemSecurity**](swbemsecurity.md)
+</dt> </dl>
+
+ 
+
