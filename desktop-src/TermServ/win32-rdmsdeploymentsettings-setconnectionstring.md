@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104369510"
 ---
-# <a name="setconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a><span data-ttu-id="f6bcb-106">Método setconnectionstring da classe Win32 \_ RDMSDeploymentSettings</span><span class="sxs-lookup"><span data-stu-id="f6bcb-106">SetConnectionString method of the Win32\_RDMSDeploymentSettings class</span></span>
+# <a name="setconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a><span data-ttu-id="53879-106">Método setconnectionstring da classe Win32 \_ RDMSDeploymentSettings</span><span class="sxs-lookup"><span data-stu-id="53879-106">SetConnectionString method of the Win32\_RDMSDeploymentSettings class</span></span>
 
-<span data-ttu-id="f6bcb-107">Define a cadeia de conexão do banco de dados de nível de implantação.</span><span class="sxs-lookup"><span data-stu-id="f6bcb-107">Sets the deployment-level database connection string.</span></span>
+<span data-ttu-id="53879-107">Define a cadeia de conexão do banco de dados de nível de implantação.</span><span class="sxs-lookup"><span data-stu-id="53879-107">Sets the deployment-level database connection string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f6bcb-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f6bcb-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="53879-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="53879-108">Syntax</span></span>
 
 
 ```mof
@@ -39,40 +39,40 @@ uint32 SetConnectionString(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="f6bcb-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f6bcb-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="53879-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="53879-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="f6bcb-110">*ConnectionString* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="f6bcb-110">*ConnectionString* \[in\]</span></span>
+<span data-ttu-id="53879-110">*ConnectionString* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="53879-110">*ConnectionString* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="f6bcb-111">A cadeia de conexão a ser definida</span><span class="sxs-lookup"><span data-stu-id="f6bcb-111">The connection string to set</span></span>
+<span data-ttu-id="53879-111">A cadeia de conexão a ser definida</span><span class="sxs-lookup"><span data-stu-id="53879-111">The connection string to set</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="f6bcb-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="f6bcb-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="53879-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="53879-112">Return value</span></span>
 
-<span data-ttu-id="f6bcb-113">Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="f6bcb-113">Returns 0 on success, otherwise returns a WMI error code.</span></span>
+<span data-ttu-id="53879-113">Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="53879-113">Returns 0 on success, otherwise returns a WMI error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f6bcb-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f6bcb-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="53879-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="53879-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f6bcb-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="f6bcb-115">Requirement</span></span> | <span data-ttu-id="f6bcb-116">Valor</span><span class="sxs-lookup"><span data-stu-id="f6bcb-116">Value</span></span> |
+| <span data-ttu-id="53879-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="53879-115">Requirement</span></span> | <span data-ttu-id="53879-116">Valor</span><span class="sxs-lookup"><span data-stu-id="53879-116">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f6bcb-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f6bcb-117">Minimum supported client</span></span><br/> | <span data-ttu-id="f6bcb-118">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="f6bcb-118">None supported</span></span><br/>                                                                   |
-| <span data-ttu-id="f6bcb-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="f6bcb-119">Minimum supported server</span></span><br/> | <span data-ttu-id="f6bcb-120">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="f6bcb-120">Windows Server 2016</span></span><br/>                                                              |
-| <span data-ttu-id="f6bcb-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="f6bcb-121">Namespace</span></span><br/>                | <span data-ttu-id="f6bcb-122">\\RDMs cimv2 \\ raiz</span><span class="sxs-lookup"><span data-stu-id="f6bcb-122">Root\\cimv2\\rdms</span></span><br/>                                                                |
-| <span data-ttu-id="f6bcb-123">MOF</span><span class="sxs-lookup"><span data-stu-id="f6bcb-123">MOF</span></span><br/>                      | <dl> <span data-ttu-id="f6bcb-124"><dt>RDManagement. mof</dt></span><span class="sxs-lookup"><span data-stu-id="f6bcb-124"><dt>RDManagement.mof</dt></span></span> </dl> |
-| <span data-ttu-id="f6bcb-125">DLL</span><span class="sxs-lookup"><span data-stu-id="f6bcb-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="f6bcb-126"><dt>RDMS.dll</dt></span><span class="sxs-lookup"><span data-stu-id="f6bcb-126"><dt>RDMS.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="53879-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="53879-117">Minimum supported client</span></span><br/> | <span data-ttu-id="53879-118">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="53879-118">None supported</span></span><br/>                                                                   |
+| <span data-ttu-id="53879-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="53879-119">Minimum supported server</span></span><br/> | <span data-ttu-id="53879-120">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="53879-120">Windows Server 2016</span></span><br/>                                                              |
+| <span data-ttu-id="53879-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="53879-121">Namespace</span></span><br/>                | <span data-ttu-id="53879-122">\\RDMs cimv2 \\ raiz</span><span class="sxs-lookup"><span data-stu-id="53879-122">Root\\cimv2\\rdms</span></span><br/>                                                                |
+| <span data-ttu-id="53879-123">MOF</span><span class="sxs-lookup"><span data-stu-id="53879-123">MOF</span></span><br/>                      | <dl> <span data-ttu-id="53879-124"><dt>RDManagement. mof</dt></span><span class="sxs-lookup"><span data-stu-id="53879-124"><dt>RDManagement.mof</dt></span></span> </dl> |
+| <span data-ttu-id="53879-125">DLL</span><span class="sxs-lookup"><span data-stu-id="53879-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="53879-126"><dt>RDMS.dll</dt></span><span class="sxs-lookup"><span data-stu-id="53879-126"><dt>RDMS.dll</dt></span></span> </dl>         |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f6bcb-127">Consulte também</span><span class="sxs-lookup"><span data-stu-id="f6bcb-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="53879-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="53879-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f6bcb-128">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="f6bcb-128">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
+[<span data-ttu-id="53879-128">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="53879-128">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  
