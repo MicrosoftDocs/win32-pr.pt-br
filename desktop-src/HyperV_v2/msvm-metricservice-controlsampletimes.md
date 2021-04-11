@@ -1,0 +1,119 @@
+---
+description: Define os tempos de exemplo de controle.
+ms.assetid: 17ffa106-8b6b-4077-895c-03400505c2a0
+title: Método ControlSampleTimes da classe Msvm_MetricService
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Msvm_MetricService.ControlSampleTimes
+api_type:
+- COM
+api_location:
+- vmms.exe
+ms.openlocfilehash: 1bb3797523153592610714406306035f59fc844c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104169414"
+---
+# <a name="controlsampletimes-method-of-the-msvm_metricservice-class"></a>Método ControlSampleTimes da \_ classe MetricService Msvm
+
+Define os tempos de exemplo de controle.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```mof
+uint32 ControlSampleTimes(
+  [in] datetime StartSampleTime,
+  [in] datetime PreferredSampleInterval,
+  [in] boolean  RestartGathering
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*StartSampleTime* \[ no\]
+</dt> <dd>
+
+Ponto no tempo em que a amostragem para as métricas deve ser iniciada.
+
+Um valor de 99990101000000.000000 + 000 deverá indicar que a amostragem deve ser iniciada na próxima vez que for sincronizada com a hora completa. A amostragem será sincronizada com a hora completa se segundos desde o intervalo de amostragem de módulo de meia-noite em segundos for igual a 0.
+
+</dd> <dt>
+
+*PreferredSampleInterval* \[ no\]
+</dt> <dd>
+
+Tempo de intervalo de amostragem preferencial. Para obter métricas correlacionadas, é recomendável que o intervalo de exemplo seja escolhido de forma que o tempo de intervalo de amostragem de 3600 de módulo em segundos seja igual a 0.
+
+É responsabilidade da implementação do serviço de métrica CIM decidir se o tempo de intervalo de amostragem solicitado é respeitado.
+
+O cliente CIM pode verificar se os provedores de métrica estão respeitando o tempo de intervalo de amostragem solicitado, recuperando instâncias BaseMetricDefinition relacionadas e verificando o conteúdo da propriedade "CIM \_ BaseMetricDefinition. SampleInterval".
+
+</dd> <dt>
+
+*RestartGathering* \[ no\]
+</dt> <dd>
+
+Booliano que quando definido como verdadeiro solicita que a coleta de todas as métricas associadas ao serviço de métrica seja reiniciada com essa chamada de método.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Esse método retorna um dos seguintes valores:
+
+<dl> <dt>
+
+**Êxito** (0)
+</dt> <dt>
+
+**Sem suporte** (1)
+</dt> <dt>
+
+**Falha** (2)
+</dt> <dt>
+
+**Método reservado** (..)
+</dt> <dt>
+
+**Específico do fornecedor** (32768.. 65535)
+</dt> </dl>
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Msvm \_ MetricService**](msvm-metricservice.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
