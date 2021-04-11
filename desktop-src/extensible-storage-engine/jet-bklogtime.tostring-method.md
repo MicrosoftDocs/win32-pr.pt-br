@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172091"
 ---
-# <a name="jet_bklogtimetostring-method"></a><span data-ttu-id="2d560-103">JET_BKLOGTIME. Método ToString</span><span class="sxs-lookup"><span data-stu-id="2d560-103">JET_BKLOGTIME.ToString method</span></span>
+# <a name="jet_bklogtimetostring-method"></a><span data-ttu-id="ef54d-103">JET_BKLOGTIME. Método ToString</span><span class="sxs-lookup"><span data-stu-id="ef54d-103">JET_BKLOGTIME.ToString method</span></span>
 
-<span data-ttu-id="2d560-104">Gere uma representação de cadeia de caracteres da estrutura.</span><span class="sxs-lookup"><span data-stu-id="2d560-104">Generate a string representation of the structure.</span></span>
+<span data-ttu-id="ef54d-104">Gere uma representação de cadeia de caracteres da estrutura.</span><span class="sxs-lookup"><span data-stu-id="ef54d-104">Generate a string representation of the structure.</span></span>
 
-<span data-ttu-id="2d560-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="2d560-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="2d560-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="2d560-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="ef54d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ef54d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="ef54d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ef54d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2d560-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2d560-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ef54d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ef54d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="2d560-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2d560-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="ef54d-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="ef54d-108">Return value</span></span>
 
-<span data-ttu-id="2d560-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="2d560-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
-<span data-ttu-id="2d560-110">A estrutura como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="2d560-110">The structure as a string.</span></span>  
+<span data-ttu-id="ef54d-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="ef54d-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="ef54d-110">A estrutura como uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="ef54d-110">The structure as a string.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="2d560-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="2d560-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ef54d-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="ef54d-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="2d560-112">Referência</span><span class="sxs-lookup"><span data-stu-id="2d560-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ef54d-112">Referência</span><span class="sxs-lookup"><span data-stu-id="ef54d-112">Reference</span></span>
 
-[<span data-ttu-id="2d560-113">Estrutura de JET_BKLOGTIME</span><span class="sxs-lookup"><span data-stu-id="2d560-113">JET_BKLOGTIME structure</span></span>](./jet-bklogtime-structure2.md)
+[<span data-ttu-id="ef54d-113">Estrutura de JET_BKLOGTIME</span><span class="sxs-lookup"><span data-stu-id="ef54d-113">JET_BKLOGTIME structure</span></span>](./jet-bklogtime-structure2.md)
 
-[<span data-ttu-id="2d560-114">Membros do JET_BKLOGTIME</span><span class="sxs-lookup"><span data-stu-id="2d560-114">JET_BKLOGTIME members</span></span>](./jet-bklogtime-members.md)
+[<span data-ttu-id="ef54d-114">Membros do JET_BKLOGTIME</span><span class="sxs-lookup"><span data-stu-id="ef54d-114">JET_BKLOGTIME members</span></span>](./jet-bklogtime-members.md)
 
-[<span data-ttu-id="2d560-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="2d560-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="ef54d-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ef54d-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

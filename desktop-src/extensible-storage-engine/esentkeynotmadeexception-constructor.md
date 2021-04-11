@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172258"
 ---
-# <a name="esentkeynotmadeexception-constructor"></a><span data-ttu-id="1be92-103">Construtor EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="1be92-103">EsentKeyNotMadeException constructor</span></span>
+# <a name="esentkeynotmadeexception-constructor"></a><span data-ttu-id="bfbd7-103">Construtor EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="bfbd7-103">EsentKeyNotMadeException constructor</span></span>
 
-<span data-ttu-id="1be92-104">Inicializa uma nova instância da classe EsentKeyNotMadeException.</span><span class="sxs-lookup"><span data-stu-id="1be92-104">Initializes a new instance of the EsentKeyNotMadeException class.</span></span>
+<span data-ttu-id="bfbd7-104">Inicializa uma nova instância da classe EsentKeyNotMadeException.</span><span class="sxs-lookup"><span data-stu-id="bfbd7-104">Initializes a new instance of the EsentKeyNotMadeException class.</span></span>
 
-<span data-ttu-id="1be92-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="1be92-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="1be92-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="1be92-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="bfbd7-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="bfbd7-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="bfbd7-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="bfbd7-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1be92-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1be92-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bfbd7-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bfbd7-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentKeyNotMadeException()
 public EsentKeyNotMadeException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1be92-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="1be92-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bfbd7-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="bfbd7-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="1be92-109">Referência</span><span class="sxs-lookup"><span data-stu-id="1be92-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="bfbd7-109">Referência</span><span class="sxs-lookup"><span data-stu-id="bfbd7-109">Reference</span></span>
 
-[<span data-ttu-id="1be92-110">Classe EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="1be92-110">EsentKeyNotMadeException class</span></span>](./esentkeynotmadeexception-class.md)
+[<span data-ttu-id="bfbd7-110">Classe EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="bfbd7-110">EsentKeyNotMadeException class</span></span>](./esentkeynotmadeexception-class.md)
 
-[<span data-ttu-id="1be92-111">Membros do EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="1be92-111">EsentKeyNotMadeException members</span></span>](./esentkeynotmadeexception-members.md)
+[<span data-ttu-id="bfbd7-111">Membros do EsentKeyNotMadeException</span><span class="sxs-lookup"><span data-stu-id="bfbd7-111">EsentKeyNotMadeException members</span></span>](./esentkeynotmadeexception-members.md)
 
-[<span data-ttu-id="1be92-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="1be92-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="bfbd7-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="bfbd7-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

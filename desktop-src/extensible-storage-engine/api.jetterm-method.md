@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171952"
 ---
-# <a name="apijetterm-method"></a><span data-ttu-id="c1b25-103">Método API. JetTerm</span><span class="sxs-lookup"><span data-stu-id="c1b25-103">Api.JetTerm method</span></span>
+# <a name="apijetterm-method"></a><span data-ttu-id="5ac0f-103">Método API. JetTerm</span><span class="sxs-lookup"><span data-stu-id="5ac0f-103">Api.JetTerm method</span></span>
 
-<span data-ttu-id="c1b25-104">Finalize uma instância que foi criada com [JetInit (JET_INSTANCE)](./api.jetinit-method.md) ou [JetCreateInstance (JET_INSTANCE, String)](./api.jetcreateinstance-method.md).</span><span class="sxs-lookup"><span data-stu-id="c1b25-104">Terminate an instance that was created with [JetInit(JET_INSTANCE)](./api.jetinit-method.md) or [JetCreateInstance(JET_INSTANCE, String)](./api.jetcreateinstance-method.md).</span></span>
+<span data-ttu-id="5ac0f-104">Finalize uma instância que foi criada com [JetInit (JET_INSTANCE)](./api.jetinit-method.md) ou [JetCreateInstance (JET_INSTANCE, String)](./api.jetcreateinstance-method.md).</span><span class="sxs-lookup"><span data-stu-id="5ac0f-104">Terminate an instance that was created with [JetInit(JET_INSTANCE)](./api.jetinit-method.md) or [JetCreateInstance(JET_INSTANCE, String)](./api.jetcreateinstance-method.md).</span></span>
 
-<span data-ttu-id="c1b25-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c1b25-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="c1b25-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c1b25-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="5ac0f-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="5ac0f-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="5ac0f-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="5ac0f-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c1b25-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c1b25-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5ac0f-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="5ac0f-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -55,19 +55,19 @@ public static void JetTerm(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="c1b25-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c1b25-108">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="5ac0f-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="5ac0f-108">Parameters</span></span>
 
-  - <span data-ttu-id="c1b25-109">instance</span><span class="sxs-lookup"><span data-stu-id="c1b25-109">instance</span></span>  
-    <span data-ttu-id="c1b25-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="c1b25-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
+  - <span data-ttu-id="5ac0f-109">instance</span><span class="sxs-lookup"><span data-stu-id="5ac0f-109">instance</span></span>  
+    <span data-ttu-id="5ac0f-110">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)</span><span class="sxs-lookup"><span data-stu-id="5ac0f-110">Type: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)</span></span>  
     
-    <span data-ttu-id="c1b25-111">A instância a ser encerrada.</span><span class="sxs-lookup"><span data-stu-id="c1b25-111">The instance to terminate.</span></span>
+    <span data-ttu-id="5ac0f-111">A instância a ser encerrada.</span><span class="sxs-lookup"><span data-stu-id="5ac0f-111">The instance to terminate.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c1b25-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="c1b25-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5ac0f-112">Confira também</span><span class="sxs-lookup"><span data-stu-id="5ac0f-112">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="c1b25-113">Referência</span><span class="sxs-lookup"><span data-stu-id="c1b25-113">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="5ac0f-113">Referência</span><span class="sxs-lookup"><span data-stu-id="5ac0f-113">Reference</span></span>
 
-[<span data-ttu-id="c1b25-114">Classe de API</span><span class="sxs-lookup"><span data-stu-id="c1b25-114">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="5ac0f-114">Classe de API</span><span class="sxs-lookup"><span data-stu-id="5ac0f-114">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="c1b25-115">Membros da API</span><span class="sxs-lookup"><span data-stu-id="c1b25-115">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="5ac0f-115">Membros da API</span><span class="sxs-lookup"><span data-stu-id="5ac0f-115">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="c1b25-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c1b25-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="5ac0f-116">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="5ac0f-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
