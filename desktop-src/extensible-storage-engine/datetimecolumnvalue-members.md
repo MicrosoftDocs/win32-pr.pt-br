@@ -14,160 +14,160 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171946"
 ---
-# <a name="datetimecolumnvalue-members"></a><span data-ttu-id="f408a-103">Membros do DateTimeColumnValue</span><span class="sxs-lookup"><span data-stu-id="f408a-103">DateTimeColumnValue members</span></span>
+# <a name="datetimecolumnvalue-members"></a><span data-ttu-id="f9ad6-103">Membros do DateTimeColumnValue</span><span class="sxs-lookup"><span data-stu-id="f9ad6-103">DateTimeColumnValue members</span></span>
 
-<span data-ttu-id="f408a-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="f408a-104">Include protected members</span></span>  
-<span data-ttu-id="f408a-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="f408a-105">Include inherited members</span></span>  
+<span data-ttu-id="f9ad6-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="f9ad6-104">Include protected members</span></span>  
+<span data-ttu-id="f9ad6-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="f9ad6-105">Include inherited members</span></span>  
 
-<span data-ttu-id="f408a-106">Um valor de coluna [GUID](/dotnet/api/system.guid) .</span><span class="sxs-lookup"><span data-stu-id="f408a-106">A [Guid](/dotnet/api/system.guid) column value.</span></span>
+<span data-ttu-id="f9ad6-106">Um valor de coluna [GUID](/dotnet/api/system.guid) .</span><span class="sxs-lookup"><span data-stu-id="f9ad6-106">A [Guid](/dotnet/api/system.guid) column value.</span></span>
 
-<span data-ttu-id="f408a-107">O tipo [DateTimeColumnValue](./datetimecolumnvalue-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="f408a-107">The [DateTimeColumnValue](./datetimecolumnvalue-class.md) type exposes the following members.</span></span>
+<span data-ttu-id="f9ad6-107">O tipo [DateTimeColumnValue](./datetimecolumnvalue-class.md) expõe os membros a seguir.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-107">The [DateTimeColumnValue](./datetimecolumnvalue-class.md) type exposes the following members.</span></span>
 
-## <a name="constructors"></a><span data-ttu-id="f408a-108">Construtores</span><span class="sxs-lookup"><span data-stu-id="f408a-108">Constructors</span></span>
+## <a name="constructors"></a><span data-ttu-id="f9ad6-108">Construtores</span><span class="sxs-lookup"><span data-stu-id="f9ad6-108">Constructors</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="f408a-109">Nome</span><span class="sxs-lookup"><span data-stu-id="f408a-109">Name</span></span></th>
-<th><span data-ttu-id="f408a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f408a-110">Description</span></span></th>
+<th><span data-ttu-id="f9ad6-109">Nome</span><span class="sxs-lookup"><span data-stu-id="f9ad6-109">Name</span></span></th>
+<th><span data-ttu-id="f9ad6-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9ad6-110">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="f408a-112"><a href="dn334240(v=exchg.10).md">DateTimeColumnValue</a></span><span class="sxs-lookup"><span data-stu-id="f408a-112"><a href="dn334240(v=exchg.10).md">DateTimeColumnValue</a></span></span></td>
+<td><span data-ttu-id="f9ad6-112"><a href="dn334240(v=exchg.10).md">DateTimeColumnValue</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-112"><a href="dn334240(v=exchg.10).md">DateTimeColumnValue</a></span></span></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="f408a-113">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f408a-113">Top</span></span>
+<span data-ttu-id="f9ad6-113">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f9ad6-113">Top</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f408a-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f408a-114">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f9ad6-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f9ad6-114">Properties</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="f408a-115">Nome</span><span class="sxs-lookup"><span data-stu-id="f408a-115">Name</span></span></th>
-<th><span data-ttu-id="f408a-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="f408a-116">Description</span></span></th>
+<th><span data-ttu-id="f9ad6-115">Nome</span><span class="sxs-lookup"><span data-stu-id="f9ad6-115">Name</span></span></th>
+<th><span data-ttu-id="f9ad6-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9ad6-116">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-118"><a href="dn334166(v=exchg.10).md">Columnid</a></span><span class="sxs-lookup"><span data-stu-id="f408a-118"><a href="dn334166(v=exchg.10).md">Columnid</a></span></span></td>
-<td><span data-ttu-id="f408a-119">Obtém ou define o columnid a ser definido ou recuperado.</span><span class="sxs-lookup"><span data-stu-id="f408a-119">Gets or sets the columnid to be set or retrieved.</span></span> <span data-ttu-id="f408a-120">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-120">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-118"><a href="dn334166(v=exchg.10).md">Columnid</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-118"><a href="dn334166(v=exchg.10).md">Columnid</a></span></span></td>
+<td><span data-ttu-id="f9ad6-119">Obtém ou define o columnid a ser definido ou recuperado.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-119">Gets or sets the columnid to be set or retrieved.</span></span> <span data-ttu-id="f9ad6-120">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-120">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-122"><a href="dn334212(v=exchg.10).md">Erro</a></span><span class="sxs-lookup"><span data-stu-id="f408a-122"><a href="dn334212(v=exchg.10).md">Error</a></span></span></td>
-<td><span data-ttu-id="f408a-123">Obtém o aviso gerado pela recuperação ou definição desta coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-123">Gets the warning generated by retrieving or setting this column.</span></span> <span data-ttu-id="f408a-124">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-124">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-122"><a href="dn334212(v=exchg.10).md">Erro</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-122"><a href="dn334212(v=exchg.10).md">Error</a></span></span></td>
+<td><span data-ttu-id="f9ad6-123">Obtém o aviso gerado pela recuperação ou definição desta coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-123">Gets the warning generated by retrieving or setting this column.</span></span> <span data-ttu-id="f9ad6-124">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-124">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-126"><a href="dn334165(v=exchg.10).md">ItagSequence</a></span><span class="sxs-lookup"><span data-stu-id="f408a-126"><a href="dn334165(v=exchg.10).md">ItagSequence</a></span></span></td>
-<td><span data-ttu-id="f408a-127">Obtém ou define a sequência de iTag da coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-127">Gets or sets the column itag sequence.</span></span> <span data-ttu-id="f408a-128">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-128">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-126"><a href="dn334165(v=exchg.10).md">ItagSequence</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-126"><a href="dn334165(v=exchg.10).md">ItagSequence</a></span></span></td>
+<td><span data-ttu-id="f9ad6-127">Obtém ou define a sequência de iTag da coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-127">Gets or sets the column itag sequence.</span></span> <span data-ttu-id="f9ad6-128">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-128">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-130"><a href="dn334225(v=exchg.10).md">Comprimento</a></span><span class="sxs-lookup"><span data-stu-id="f408a-130"><a href="dn334225(v=exchg.10).md">Length</a></span></span></td>
-<td><span data-ttu-id="f408a-131">Obtém o comprimento de bytes de um valor de coluna, que será zero se a coluna for nula, caso contrário, ela corresponderá ao tamanho dessa coluna de tamanho fixo.</span><span class="sxs-lookup"><span data-stu-id="f408a-131">Gets the byte length of a column value, which is zero if column is null, otherwise it matches the Size for this fixed-size column.</span></span> <span data-ttu-id="f408a-132">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-132">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-130"><a href="dn334225(v=exchg.10).md">Comprimento</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-130"><a href="dn334225(v=exchg.10).md">Length</a></span></span></td>
+<td><span data-ttu-id="f9ad6-131">Obtém o comprimento de bytes de um valor de coluna, que será zero se a coluna for nula, caso contrário, ela corresponderá ao tamanho dessa coluna de tamanho fixo.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-131">Gets the byte length of a column value, which is zero if column is null, otherwise it matches the Size for this fixed-size column.</span></span> <span data-ttu-id="f9ad6-132">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-132">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-134"><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></span><span class="sxs-lookup"><span data-stu-id="f408a-134"><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></span></span></td>
-<td><span data-ttu-id="f408a-135">Obtém ou define opções de recuperação de coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-135">Gets or sets column retrieval options.</span></span> <span data-ttu-id="f408a-136">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-136">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-134"><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-134"><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></span></span></td>
+<td><span data-ttu-id="f9ad6-135">Obtém ou define opções de recuperação de coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-135">Gets or sets column retrieval options.</span></span> <span data-ttu-id="f9ad6-136">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-136">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-138"><a href="dn334215(v=exchg.10).md">SetGrbit</a></span><span class="sxs-lookup"><span data-stu-id="f408a-138"><a href="dn334215(v=exchg.10).md">SetGrbit</a></span></span></td>
-<td><span data-ttu-id="f408a-139">Obtém ou define opções de atualização de coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-139">Gets or sets column update options.</span></span> <span data-ttu-id="f408a-140">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-140">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-138"><a href="dn334215(v=exchg.10).md">SetGrbit</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-138"><a href="dn334215(v=exchg.10).md">SetGrbit</a></span></span></td>
+<td><span data-ttu-id="f9ad6-139">Obtém ou define opções de atualização de coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-139">Gets or sets column update options.</span></span> <span data-ttu-id="f9ad6-140">(Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-140">(Inherited from <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><span data-ttu-id="f408a-142"><a href="dn334243(v=exchg.10).md">Tamanho</a></span><span class="sxs-lookup"><span data-stu-id="f408a-142"><a href="dn334243(v=exchg.10).md">Size</a></span></span></td>
-<td><span data-ttu-id="f408a-143">Obtém o tamanho do valor na coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-143">Gets the size of the value in the column.</span></span> <span data-ttu-id="f408a-144">Isso retorna 0 para colunas de tamanho variável (ou seja, binary e String).</span><span class="sxs-lookup"><span data-stu-id="f408a-144">This returns 0 for variable sized columns (i.e. binary and string).</span></span> <span data-ttu-id="f408a-145">(Substitui <a href="dn334172(v=exchg.10).md">columnvalue. Size</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-145">(Overrides <a href="dn334172(v=exchg.10).md">ColumnValue.Size</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-142"><a href="dn334243(v=exchg.10).md">Tamanho</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-142"><a href="dn334243(v=exchg.10).md">Size</a></span></span></td>
+<td><span data-ttu-id="f9ad6-143">Obtém o tamanho do valor na coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-143">Gets the size of the value in the column.</span></span> <span data-ttu-id="f9ad6-144">Isso retorna 0 para colunas de tamanho variável (ou seja, binary e String).</span><span class="sxs-lookup"><span data-stu-id="f9ad6-144">This returns 0 for variable sized columns (i.e. binary and string).</span></span> <span data-ttu-id="f9ad6-145">(Substitui <a href="dn334172(v=exchg.10).md">columnvalue. Size</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-145">(Overrides <a href="dn334172(v=exchg.10).md">ColumnValue.Size</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-147"><a href="dn334180(v=exchg.10).md">Valor</a></span><span class="sxs-lookup"><span data-stu-id="f408a-147"><a href="dn334180(v=exchg.10).md">Value</a></span></span></td>
-<td><span data-ttu-id="f408a-148">Obtém ou define o valor na estrutura.</span><span class="sxs-lookup"><span data-stu-id="f408a-148">Gets or sets the value in the struct.</span></span> <span data-ttu-id="f408a-149">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-149">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-147"><a href="dn334180(v=exchg.10).md">Valor</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-147"><a href="dn334180(v=exchg.10).md">Value</a></span></span></td>
+<td><span data-ttu-id="f9ad6-148">Obtém ou define o valor na estrutura.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-148">Gets or sets the value in the struct.</span></span> <span data-ttu-id="f9ad6-149">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-149">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><span data-ttu-id="f408a-151"><a href="dn334226(v=exchg.10).md">ValueAsObject</a></span><span class="sxs-lookup"><span data-stu-id="f408a-151"><a href="dn334226(v=exchg.10).md">ValueAsObject</a></span></span></td>
-<td><span data-ttu-id="f408a-152">Obtém o último conjunto ou o valor recuperado da coluna.</span><span class="sxs-lookup"><span data-stu-id="f408a-152">Gets the last set or retrieved value of the column.</span></span> <span data-ttu-id="f408a-153">O valor é retornado como um objeto genérico.</span><span class="sxs-lookup"><span data-stu-id="f408a-153">The value is returned as a generic object.</span></span> <span data-ttu-id="f408a-154">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-154">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-151"><a href="dn334226(v=exchg.10).md">ValueAsObject</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-151"><a href="dn334226(v=exchg.10).md">ValueAsObject</a></span></span></td>
+<td><span data-ttu-id="f9ad6-152">Obtém o último conjunto ou o valor recuperado da coluna.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-152">Gets the last set or retrieved value of the column.</span></span> <span data-ttu-id="f9ad6-153">O valor é retornado como um objeto genérico.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-153">The value is returned as a generic object.</span></span> <span data-ttu-id="f9ad6-154">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-154">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="f408a-155">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f408a-155">Top</span></span>
+<span data-ttu-id="f9ad6-155">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f9ad6-155">Top</span></span>
 
-## <a name="methods"></a><span data-ttu-id="f408a-156">Métodos</span><span class="sxs-lookup"><span data-stu-id="f408a-156">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="f9ad6-156">Métodos</span><span class="sxs-lookup"><span data-stu-id="f9ad6-156">Methods</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="f408a-157">Nome</span><span class="sxs-lookup"><span data-stu-id="f408a-157">Name</span></span></th>
-<th><span data-ttu-id="f408a-158">Descrição</span><span class="sxs-lookup"><span data-stu-id="f408a-158">Description</span></span></th>
+<th><span data-ttu-id="f9ad6-157">Nome</span><span class="sxs-lookup"><span data-stu-id="f9ad6-157">Name</span></span></th>
+<th><span data-ttu-id="f9ad6-158">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9ad6-158">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="f408a-160"><a href="dn334178(v=exchg.10).md">CheckDataCount</a></span><span class="sxs-lookup"><span data-stu-id="f408a-160"><a href="dn334178(v=exchg.10).md">CheckDataCount</a></span></span></td>
-<td><span data-ttu-id="f408a-161">Verifique se os dados recuperados são exatamente o tamanho necessário para a estrutura.</span><span class="sxs-lookup"><span data-stu-id="f408a-161">Make sure the retrieved data is exactly the size needed for the structure.</span></span> <span data-ttu-id="f408a-162">Uma exceção será lançada se houver uma incompatibilidade.</span><span class="sxs-lookup"><span data-stu-id="f408a-162">An exception is thrown if there is a mismatch.</span></span> <span data-ttu-id="f408a-163">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-163">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-160"><a href="dn334178(v=exchg.10).md">CheckDataCount</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-160"><a href="dn334178(v=exchg.10).md">CheckDataCount</a></span></span></td>
+<td><span data-ttu-id="f9ad6-161">Verifique se os dados recuperados são exatamente o tamanho necessário para a estrutura.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-161">Make sure the retrieved data is exactly the size needed for the structure.</span></span> <span data-ttu-id="f9ad6-162">Uma exceção será lançada se houver uma incompatibilidade.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-162">An exception is thrown if there is a mismatch.</span></span> <span data-ttu-id="f9ad6-163">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-163">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="f408a-165"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Igual a</a></span><span class="sxs-lookup"><span data-stu-id="f408a-165"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Equals</a></span></span></td>
-<td><span data-ttu-id="f408a-166">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-166">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-165"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Igual a</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-165"><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Equals</a></span></span></td>
+<td><span data-ttu-id="f9ad6-166">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-166">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="f408a-168"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></span><span class="sxs-lookup"><span data-stu-id="f408a-168"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></span></span></td>
-<td><span data-ttu-id="f408a-169">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-169">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-168"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-168"><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></span></span></td>
+<td><span data-ttu-id="f9ad6-169">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-169">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="f408a-171"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span><span class="sxs-lookup"><span data-stu-id="f408a-171"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span></span></td>
-<td><span data-ttu-id="f408a-172">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-172">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-171"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-171"><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></span></span></td>
+<td><span data-ttu-id="f9ad6-172">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-172">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="f408a-174"><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></span><span class="sxs-lookup"><span data-stu-id="f408a-174"><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></span></span></td>
-<td><span data-ttu-id="f408a-175">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-175">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-174"><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-174"><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></span></span></td>
+<td><span data-ttu-id="f9ad6-175">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-175">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="f408a-177"><a href="dn334242(v=exchg.10).md">GetValueFromBytes</a></span><span class="sxs-lookup"><span data-stu-id="f408a-177"><a href="dn334242(v=exchg.10).md">GetValueFromBytes</a></span></span></td>
-<td><span data-ttu-id="f408a-178">Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="f408a-178">Given data retrieved from ESENT, decode the data and set the value in the ColumnValue object.</span></span> <span data-ttu-id="f408a-179">(Substitui <a href="dn334208(v=exchg.10).md">columnvalue. GetValueFromBytes ([], Int32, Int32, Int32)</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-179">(Overrides <a href="dn334208(v=exchg.10).md">ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-177"><a href="dn334242(v=exchg.10).md">GetValueFromBytes</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-177"><a href="dn334242(v=exchg.10).md">GetValueFromBytes</a></span></span></td>
+<td><span data-ttu-id="f9ad6-178">Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-178">Given data retrieved from ESENT, decode the data and set the value in the ColumnValue object.</span></span> <span data-ttu-id="f9ad6-179">(Substitui <a href="dn334208(v=exchg.10).md">columnvalue. GetValueFromBytes ([], Int32, Int32, Int32)</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-179">(Overrides <a href="dn334208(v=exchg.10).md">ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.)</span></span></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><span data-ttu-id="f408a-181"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span><span class="sxs-lookup"><span data-stu-id="f408a-181"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span></span></td>
-<td><span data-ttu-id="f408a-182">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-182">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-181"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-181"><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></span></span></td>
+<td><span data-ttu-id="f9ad6-182">(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-182">(Inherited from <a href="/dotnet/api/system.object">Object</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="f408a-184"><a href="dn334223(v=exchg.10).md">ToString</a></span><span class="sxs-lookup"><span data-stu-id="f408a-184"><a href="dn334223(v=exchg.10).md">ToString</a></span></span></td>
-<td><span data-ttu-id="f408a-185">Obtém uma representação de cadeia de caracteres deste objeto.</span><span class="sxs-lookup"><span data-stu-id="f408a-185">Gets a string representation of this object.</span></span> <span data-ttu-id="f408a-186">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f408a-186">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
+<td><span data-ttu-id="f9ad6-184"><a href="dn334223(v=exchg.10).md">ToString</a></span><span class="sxs-lookup"><span data-stu-id="f9ad6-184"><a href="dn334223(v=exchg.10).md">ToString</a></span></span></td>
+<td><span data-ttu-id="f9ad6-185">Obtém uma representação de cadeia de caracteres deste objeto.</span><span class="sxs-lookup"><span data-stu-id="f9ad6-185">Gets a string representation of this object.</span></span> <span data-ttu-id="f9ad6-186">(Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</span><span class="sxs-lookup"><span data-stu-id="f9ad6-186">(Inherited from <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct&lt;T&gt;</a>.)</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="f408a-187">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f408a-187">Top</span></span>
+<span data-ttu-id="f9ad6-187">Parte superior</span><span class="sxs-lookup"><span data-stu-id="f9ad6-187">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f408a-188">Confira também</span><span class="sxs-lookup"><span data-stu-id="f408a-188">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f9ad6-188">Confira também</span><span class="sxs-lookup"><span data-stu-id="f9ad6-188">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f408a-189">Referência</span><span class="sxs-lookup"><span data-stu-id="f408a-189">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f9ad6-189">Referência</span><span class="sxs-lookup"><span data-stu-id="f9ad6-189">Reference</span></span>
 
-[<span data-ttu-id="f408a-190">Classe DateTimeColumnValue</span><span class="sxs-lookup"><span data-stu-id="f408a-190">DateTimeColumnValue class</span></span>](./datetimecolumnvalue-class.md)
+[<span data-ttu-id="f9ad6-190">Classe DateTimeColumnValue</span><span class="sxs-lookup"><span data-stu-id="f9ad6-190">DateTimeColumnValue class</span></span>](./datetimecolumnvalue-class.md)
 
-[<span data-ttu-id="f408a-191">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f408a-191">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f9ad6-191">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f9ad6-191">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

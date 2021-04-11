@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172153"
 ---
-# <a name="ialternativename-methods"></a><span data-ttu-id="a1f94-103">Métodos IAlternativeName</span><span class="sxs-lookup"><span data-stu-id="a1f94-103">IAlternativeName Methods</span></span>
+# <a name="ialternativename-methods"></a><span data-ttu-id="e820e-103">Métodos IAlternativeName</span><span class="sxs-lookup"><span data-stu-id="e820e-103">IAlternativeName Methods</span></span>
 
-<span data-ttu-id="a1f94-104">A interface [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a1f94-104">The [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) interface exposes the following methods.</span></span>
+<span data-ttu-id="e820e-104">A interface [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="e820e-104">The [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a1f94-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a1f94-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e820e-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e820e-105">In this section</span></span>
 
--   [<span data-ttu-id="a1f94-106">**Método InitializeFromOtherName**</span><span class="sxs-lookup"><span data-stu-id="a1f94-106">**InitializeFromOtherName Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromothername)
--   [<span data-ttu-id="a1f94-107">**Método InitializeFromRawData**</span><span class="sxs-lookup"><span data-stu-id="a1f94-107">**InitializeFromRawData Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromrawdata)
--   [<span data-ttu-id="a1f94-108">**Método InitializeFromString**</span><span class="sxs-lookup"><span data-stu-id="a1f94-108">**InitializeFromString Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromstring)
+-   [<span data-ttu-id="e820e-106">**Método InitializeFromOtherName**</span><span class="sxs-lookup"><span data-stu-id="e820e-106">**InitializeFromOtherName Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromothername)
+-   [<span data-ttu-id="e820e-107">**Método InitializeFromRawData**</span><span class="sxs-lookup"><span data-stu-id="e820e-107">**InitializeFromRawData Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromrawdata)
+-   [<span data-ttu-id="e820e-108">**Método InitializeFromString**</span><span class="sxs-lookup"><span data-stu-id="e820e-108">**InitializeFromString Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromstring)
 
  
 

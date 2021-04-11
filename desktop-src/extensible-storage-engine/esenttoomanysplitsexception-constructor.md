@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171874"
 ---
-# <a name="esenttoomanysplitsexception-constructor"></a><span data-ttu-id="19d23-103">Construtor EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="19d23-103">EsentTooManySplitsException constructor</span></span>
+# <a name="esenttoomanysplitsexception-constructor"></a><span data-ttu-id="ef15c-103">Construtor EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="ef15c-103">EsentTooManySplitsException constructor</span></span>
 
-<span data-ttu-id="19d23-104">Inicializa uma nova instância da classe EsentTooManySplitsException.</span><span class="sxs-lookup"><span data-stu-id="19d23-104">Initializes a new instance of the EsentTooManySplitsException class.</span></span>
+<span data-ttu-id="ef15c-104">Inicializa uma nova instância da classe EsentTooManySplitsException.</span><span class="sxs-lookup"><span data-stu-id="ef15c-104">Initializes a new instance of the EsentTooManySplitsException class.</span></span>
 
-<span data-ttu-id="19d23-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="19d23-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="19d23-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="19d23-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="ef15c-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="ef15c-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="ef15c-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="ef15c-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="19d23-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="19d23-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ef15c-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ef15c-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentTooManySplitsException()
 public EsentTooManySplitsException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="19d23-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="19d23-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ef15c-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="ef15c-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="19d23-109">Referência</span><span class="sxs-lookup"><span data-stu-id="19d23-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="ef15c-109">Referência</span><span class="sxs-lookup"><span data-stu-id="ef15c-109">Reference</span></span>
 
-[<span data-ttu-id="19d23-110">Classe EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="19d23-110">EsentTooManySplitsException class</span></span>](./esenttoomanysplitsexception-class.md)
+[<span data-ttu-id="ef15c-110">Classe EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="ef15c-110">EsentTooManySplitsException class</span></span>](./esenttoomanysplitsexception-class.md)
 
-[<span data-ttu-id="19d23-111">Membros do EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="19d23-111">EsentTooManySplitsException members</span></span>](./esenttoomanysplitsexception-members.md)
+[<span data-ttu-id="ef15c-111">Membros do EsentTooManySplitsException</span><span class="sxs-lookup"><span data-stu-id="ef15c-111">EsentTooManySplitsException members</span></span>](./esenttoomanysplitsexception-members.md)
 
-[<span data-ttu-id="19d23-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="19d23-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="ef15c-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="ef15c-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171940"
 ---
-# <a name="errorinfogrbit-enumeration"></a><span data-ttu-id="8302a-103">Enumeração ErrorInfoGrbit</span><span class="sxs-lookup"><span data-stu-id="8302a-103">ErrorInfoGrbit enumeration</span></span>
+# <a name="errorinfogrbit-enumeration"></a><span data-ttu-id="c1c78-103">Enumeração ErrorInfoGrbit</span><span class="sxs-lookup"><span data-stu-id="c1c78-103">ErrorInfoGrbit enumeration</span></span>
 
-<span data-ttu-id="8302a-104">Opções para [JetGetErrorInfo (JET_err, JET_ERRINFOBASIC)](./windows8api.jetgeterrorinfo-method.md).</span><span class="sxs-lookup"><span data-stu-id="8302a-104">Options for [JetGetErrorInfo(JET_err, JET_ERRINFOBASIC)](./windows8api.jetgeterrorinfo-method.md).</span></span>
+<span data-ttu-id="c1c78-104">Opções para [JetGetErrorInfo (JET_err, JET_ERRINFOBASIC)](./windows8api.jetgeterrorinfo-method.md).</span><span class="sxs-lookup"><span data-stu-id="c1c78-104">Options for [JetGetErrorInfo(JET_err, JET_ERRINFOBASIC)](./windows8api.jetgeterrorinfo-method.md).</span></span>
 
-<span data-ttu-id="8302a-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="8302a-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="8302a-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="8302a-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="c1c78-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c1c78-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="c1c78-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c1c78-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8302a-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8302a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c1c78-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c1c78-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,28 +53,28 @@ Dim instance As ErrorInfoGrbit
 public enum ErrorInfoGrbit
 ```
 
-## <a name="members"></a><span data-ttu-id="8302a-108">Membros</span><span class="sxs-lookup"><span data-stu-id="8302a-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="c1c78-108">Membros</span><span class="sxs-lookup"><span data-stu-id="c1c78-108">Members</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th></th>
-<th><span data-ttu-id="8302a-109">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="8302a-109">Member name</span></span></th>
-<th><span data-ttu-id="8302a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8302a-110">Description</span></span></th>
+<th><span data-ttu-id="c1c78-109">Nome do membro</span><span class="sxs-lookup"><span data-stu-id="c1c78-109">Member name</span></span></th>
+<th><span data-ttu-id="c1c78-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c1c78-110">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><span data-ttu-id="8302a-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="8302a-111">None</span></span></td>
-<td><span data-ttu-id="8302a-112">Nenhuma opção.</span><span class="sxs-lookup"><span data-stu-id="8302a-112">No option.</span></span></td>
+<td><span data-ttu-id="c1c78-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c1c78-111">None</span></span></td>
+<td><span data-ttu-id="c1c78-112">Nenhuma opção.</span><span class="sxs-lookup"><span data-stu-id="c1c78-112">No option.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a><span data-ttu-id="8302a-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="8302a-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c1c78-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="c1c78-113">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="8302a-114">Referência</span><span class="sxs-lookup"><span data-stu-id="8302a-114">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="c1c78-114">Referência</span><span class="sxs-lookup"><span data-stu-id="c1c78-114">Reference</span></span>
 
-[<span data-ttu-id="8302a-115">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="8302a-115">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="c1c78-115">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="c1c78-115">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
