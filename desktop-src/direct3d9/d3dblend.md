@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "103930560"
 ---
-# <a name="d3dblend-enumeration"></a><span data-ttu-id="2f45f-103">Enumeração D3DBLEND</span><span class="sxs-lookup"><span data-stu-id="2f45f-103">D3DBLEND enumeration</span></span>
+# <a name="d3dblend-enumeration"></a><span data-ttu-id="50ae2-103">Enumeração D3DBLEND</span><span class="sxs-lookup"><span data-stu-id="50ae2-103">D3DBLEND enumeration</span></span>
 
-<span data-ttu-id="2f45f-104">Define o modo de mesclagem com suporte.</span><span class="sxs-lookup"><span data-stu-id="2f45f-104">Defines the supported blend mode.</span></span>
+<span data-ttu-id="50ae2-104">Define o modo de mesclagem com suporte.</span><span class="sxs-lookup"><span data-stu-id="50ae2-104">Defines the supported blend mode.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2f45f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="2f45f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="50ae2-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="50ae2-105">Syntax</span></span>
 
 
 ```C++
@@ -52,125 +52,125 @@ typedef enum D3DBLEND {
 
 
 
-## <a name="constants"></a><span data-ttu-id="2f45f-106">Constantes</span><span class="sxs-lookup"><span data-stu-id="2f45f-106">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="50ae2-106">Constantes</span><span class="sxs-lookup"><span data-stu-id="50ae2-106">Constants</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="2f45f-107"><span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND \_ zero**</span><span class="sxs-lookup"><span data-stu-id="2f45f-107"><span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND\_ZERO**</span></span>
+<span data-ttu-id="50ae2-107"><span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND \_ zero**</span><span class="sxs-lookup"><span data-stu-id="50ae2-107"><span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND\_ZERO**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-108">O fator de mistura é (0, 0, 0, 0).</span><span class="sxs-lookup"><span data-stu-id="2f45f-108">Blend factor is (0, 0, 0, 0).</span></span>
+<span data-ttu-id="50ae2-108">O fator de mistura é (0, 0, 0, 0).</span><span class="sxs-lookup"><span data-stu-id="50ae2-108">Blend factor is (0, 0, 0, 0).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-109"><span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND \_ um**</span><span class="sxs-lookup"><span data-stu-id="2f45f-109"><span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND\_ONE**</span></span>
+<span data-ttu-id="50ae2-109"><span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND \_ um**</span><span class="sxs-lookup"><span data-stu-id="50ae2-109"><span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND\_ONE**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-110">O fator de mistura é (1, 1, 1, 1).</span><span class="sxs-lookup"><span data-stu-id="2f45f-110">Blend factor is (1, 1, 1, 1).</span></span>
+<span data-ttu-id="50ae2-110">O fator de mistura é (1, 1, 1, 1).</span><span class="sxs-lookup"><span data-stu-id="50ae2-110">Blend factor is (1, 1, 1, 1).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-111"><span id="D3DBLEND_SRCCOLOR"></span><span id="d3dblend_srccolor"></span>**D3DBLEND \_ SRCCOLOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-111"><span id="D3DBLEND_SRCCOLOR"></span><span id="d3dblend_srccolor"></span>**D3DBLEND\_SRCCOLOR**</span></span>
+<span data-ttu-id="50ae2-111"><span id="D3DBLEND_SRCCOLOR"></span><span id="d3dblend_srccolor"></span>**D3DBLEND \_ SRCCOLOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-111"><span id="D3DBLEND_SRCCOLOR"></span><span id="d3dblend_srccolor"></span>**D3DBLEND\_SRCCOLOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-112">O fator de mistura é (RS, GS, BS, as).</span><span class="sxs-lookup"><span data-stu-id="2f45f-112">Blend factor is (Rₛ, Gₛ, Bₛ, Aₛ).</span></span>
+<span data-ttu-id="50ae2-112">O fator de mistura é (RS, GS, BS, as).</span><span class="sxs-lookup"><span data-stu-id="50ae2-112">Blend factor is (Rₛ, Gₛ, Bₛ, Aₛ).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-113"><span id="D3DBLEND_INVSRCCOLOR"></span><span id="d3dblend_invsrccolor"></span>**D3DBLEND \_ INVSRCCOLOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-113"><span id="D3DBLEND_INVSRCCOLOR"></span><span id="d3dblend_invsrccolor"></span>**D3DBLEND\_INVSRCCOLOR**</span></span>
+<span data-ttu-id="50ae2-113"><span id="D3DBLEND_INVSRCCOLOR"></span><span id="d3dblend_invsrccolor"></span>**D3DBLEND \_ INVSRCCOLOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-113"><span id="D3DBLEND_INVSRCCOLOR"></span><span id="d3dblend_invsrccolor"></span>**D3DBLEND\_INVSRCCOLOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-114">O fator de mistura é (1-RS, 1-GS, 1-BS, 1-as).</span><span class="sxs-lookup"><span data-stu-id="2f45f-114">Blend factor is (1 - Rₛ, 1 - Gₛ, 1 - Bₛ, 1 - Aₛ).</span></span>
+<span data-ttu-id="50ae2-114">O fator de mistura é (1-RS, 1-GS, 1-BS, 1-as).</span><span class="sxs-lookup"><span data-stu-id="50ae2-114">Blend factor is (1 - Rₛ, 1 - Gₛ, 1 - Bₛ, 1 - Aₛ).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-115"><span id="D3DBLEND_SRCALPHA"></span><span id="d3dblend_srcalpha"></span>**D3DBLEND \_ SRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-115"><span id="D3DBLEND_SRCALPHA"></span><span id="d3dblend_srcalpha"></span>**D3DBLEND\_SRCALPHA**</span></span>
+<span data-ttu-id="50ae2-115"><span id="D3DBLEND_SRCALPHA"></span><span id="d3dblend_srcalpha"></span>**D3DBLEND \_ SRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-115"><span id="D3DBLEND_SRCALPHA"></span><span id="d3dblend_srcalpha"></span>**D3DBLEND\_SRCALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-116">O fator de mistura é (como, como, como).</span><span class="sxs-lookup"><span data-stu-id="2f45f-116">Blend factor is (Aₛ, Aₛ, Aₛ, Aₛ).</span></span>
+<span data-ttu-id="50ae2-116">O fator de mistura é (como, como, como).</span><span class="sxs-lookup"><span data-stu-id="50ae2-116">Blend factor is (Aₛ, Aₛ, Aₛ, Aₛ).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-117"><span id="D3DBLEND_INVSRCALPHA"></span><span id="d3dblend_invsrcalpha"></span>**D3DBLEND \_ INVSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-117"><span id="D3DBLEND_INVSRCALPHA"></span><span id="d3dblend_invsrcalpha"></span>**D3DBLEND\_INVSRCALPHA**</span></span>
+<span data-ttu-id="50ae2-117"><span id="D3DBLEND_INVSRCALPHA"></span><span id="d3dblend_invsrcalpha"></span>**D3DBLEND \_ INVSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-117"><span id="D3DBLEND_INVSRCALPHA"></span><span id="d3dblend_invsrcalpha"></span>**D3DBLEND\_INVSRCALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-118">O fator de mistura é (1-como, 1-como, 1-como, 1-como).</span><span class="sxs-lookup"><span data-stu-id="2f45f-118">Blend factor is ( 1 - Aₛ, 1 - Aₛ, 1 - Aₛ, 1 - Aₛ).</span></span>
+<span data-ttu-id="50ae2-118">O fator de mistura é (1-como, 1-como, 1-como, 1-como).</span><span class="sxs-lookup"><span data-stu-id="50ae2-118">Blend factor is ( 1 - Aₛ, 1 - Aₛ, 1 - Aₛ, 1 - Aₛ).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-119"><span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND \_ DESTALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-119"><span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND\_DESTALPHA**</span></span>
+<span data-ttu-id="50ae2-119"><span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND \_ DESTALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-119"><span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND\_DESTALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-120">O<sub>fator de mistura</sub> é<sub>(a d a d</sub> <sub>a d</sub> <sub>).</sub></span><span class="sxs-lookup"><span data-stu-id="2f45f-120">Blend factor is (A<sub>d</sub> A<sub>d</sub> A<sub>d</sub> A<sub>d</sub>).</span></span>
+<span data-ttu-id="50ae2-120">O<sub>fator de mistura</sub> é<sub>(a d a d</sub> <sub>a d</sub> <sub>).</sub></span><span class="sxs-lookup"><span data-stu-id="50ae2-120">Blend factor is (A<sub>d</sub> A<sub>d</sub> A<sub>d</sub> A<sub>d</sub>).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-121"><span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND \_ INVDESTALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-121"><span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND\_INVDESTALPHA**</span></span>
+<span data-ttu-id="50ae2-121"><span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND \_ INVDESTALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-121"><span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND\_INVDESTALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-122">O fator de mistura é (1-A<sub>d</sub> 1-a<sub>d</sub> 1-A<sub>d 1-a</sub> <sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="2f45f-122">Blend factor is (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub>).</span></span>
+<span data-ttu-id="50ae2-122">O fator de mistura é (1-A<sub>d</sub> 1-a<sub>d</sub> 1-A<sub>d 1-a</sub> <sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="50ae2-122">Blend factor is (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub>).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-123"><span id="D3DBLEND_DESTCOLOR"></span><span id="d3dblend_destcolor"></span>**D3DBLEND \_ DESTCOLOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-123"><span id="D3DBLEND_DESTCOLOR"></span><span id="d3dblend_destcolor"></span>**D3DBLEND\_DESTCOLOR**</span></span>
+<span data-ttu-id="50ae2-123"><span id="D3DBLEND_DESTCOLOR"></span><span id="d3dblend_destcolor"></span>**D3DBLEND \_ DESTCOLOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-123"><span id="D3DBLEND_DESTCOLOR"></span><span id="d3dblend_destcolor"></span>**D3DBLEND\_DESTCOLOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-124">O fator de mistura é (R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="2f45f-124">Blend factor is (R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>).</span></span>
+<span data-ttu-id="50ae2-124">O fator de mistura é (R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="50ae2-124">Blend factor is (R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-125"><span id="D3DBLEND_INVDESTCOLOR"></span><span id="d3dblend_invdestcolor"></span>**D3DBLEND \_ INVDESTCOLOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-125"><span id="D3DBLEND_INVDESTCOLOR"></span><span id="d3dblend_invdestcolor"></span>**D3DBLEND\_INVDESTCOLOR**</span></span>
+<span data-ttu-id="50ae2-125"><span id="D3DBLEND_INVDESTCOLOR"></span><span id="d3dblend_invdestcolor"></span>**D3DBLEND \_ INVDESTCOLOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-125"><span id="D3DBLEND_INVDESTCOLOR"></span><span id="d3dblend_invdestcolor"></span>**D3DBLEND\_INVDESTCOLOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-126">O fator de mistura é (1-R<sub>d</sub>, 1-G<sub>d</sub>, 1-B<sub>d</sub>, 1-a<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="2f45f-126">Blend factor is (1 - R<sub>d</sub>, 1 - G<sub>d</sub>, 1 - B<sub>d</sub>, 1 - A<sub>d</sub>).</span></span>
+<span data-ttu-id="50ae2-126">O fator de mistura é (1-R<sub>d</sub>, 1-G<sub>d</sub>, 1-B<sub>d</sub>, 1-a<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="50ae2-126">Blend factor is (1 - R<sub>d</sub>, 1 - G<sub>d</sub>, 1 - B<sub>d</sub>, 1 - A<sub>d</sub>).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-127"><span id="D3DBLEND_SRCALPHASAT"></span><span id="d3dblend_srcalphasat"></span>**D3DBLEND \_ SRCALPHASAT**</span><span class="sxs-lookup"><span data-stu-id="2f45f-127"><span id="D3DBLEND_SRCALPHASAT"></span><span id="d3dblend_srcalphasat"></span>**D3DBLEND\_SRCALPHASAT**</span></span>
+<span data-ttu-id="50ae2-127"><span id="D3DBLEND_SRCALPHASAT"></span><span id="d3dblend_srcalphasat"></span>**D3DBLEND \_ SRCALPHASAT**</span><span class="sxs-lookup"><span data-stu-id="50ae2-127"><span id="D3DBLEND_SRCALPHASAT"></span><span id="d3dblend_srcalphasat"></span>**D3DBLEND\_SRCALPHASAT**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-128">O fator de mistura é (f, f, f, 1); em que f = min (as, 1 a<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="2f45f-128">Blend factor is (f, f, f, 1); where f = min(Aₛ, 1 - A<sub>d</sub>).</span></span>
+<span data-ttu-id="50ae2-128">O fator de mistura é (f, f, f, 1); em que f = min (as, 1 a<sub>d</sub>).</span><span class="sxs-lookup"><span data-stu-id="50ae2-128">Blend factor is (f, f, f, 1); where f = min(Aₛ, 1 - A<sub>d</sub>).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-129"><span id="D3DBLEND_BOTHSRCALPHA"></span><span id="d3dblend_bothsrcalpha"></span>**D3DBLEND \_ BOTHSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-129"><span id="D3DBLEND_BOTHSRCALPHA"></span><span id="d3dblend_bothsrcalpha"></span>**D3DBLEND\_BOTHSRCALPHA**</span></span>
+<span data-ttu-id="50ae2-129"><span id="D3DBLEND_BOTHSRCALPHA"></span><span id="d3dblend_bothsrcalpha"></span>**D3DBLEND \_ BOTHSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-129"><span id="D3DBLEND_BOTHSRCALPHA"></span><span id="d3dblend_bothsrcalpha"></span>**D3DBLEND\_BOTHSRCALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-130">**Obsoleto**.</span><span class="sxs-lookup"><span data-stu-id="2f45f-130">**Obsolete**.</span></span> <span data-ttu-id="2f45f-131">A partir do DirectX 6, você pode obter o mesmo efeito definindo os fatores de mesclagem de origem e de destino como D3DBLEND \_ SRCALPHA e D3DBLEND \_ INVSRCALPHA em chamadas separadas.</span><span class="sxs-lookup"><span data-stu-id="2f45f-131">Starting with DirectX 6, you can achieve the same effect by setting the source and destination blend factors to D3DBLEND\_SRCALPHA and D3DBLEND\_INVSRCALPHA in separate calls.</span></span>
+<span data-ttu-id="50ae2-130">**Obsoleto**.</span><span class="sxs-lookup"><span data-stu-id="50ae2-130">**Obsolete**.</span></span> <span data-ttu-id="50ae2-131">A partir do DirectX 6, você pode obter o mesmo efeito definindo os fatores de mesclagem de origem e de destino como D3DBLEND \_ SRCALPHA e D3DBLEND \_ INVSRCALPHA em chamadas separadas.</span><span class="sxs-lookup"><span data-stu-id="50ae2-131">Starting with DirectX 6, you can achieve the same effect by setting the source and destination blend factors to D3DBLEND\_SRCALPHA and D3DBLEND\_INVSRCALPHA in separate calls.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-132"><span id="D3DBLEND_BOTHINVSRCALPHA"></span><span id="d3dblend_bothinvsrcalpha"></span>**D3DBLEND \_ BOTHINVSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="2f45f-132"><span id="D3DBLEND_BOTHINVSRCALPHA"></span><span id="d3dblend_bothinvsrcalpha"></span>**D3DBLEND\_BOTHINVSRCALPHA**</span></span>
+<span data-ttu-id="50ae2-132"><span id="D3DBLEND_BOTHINVSRCALPHA"></span><span id="d3dblend_bothinvsrcalpha"></span>**D3DBLEND \_ BOTHINVSRCALPHA**</span><span class="sxs-lookup"><span data-stu-id="50ae2-132"><span id="D3DBLEND_BOTHINVSRCALPHA"></span><span id="d3dblend_bothinvsrcalpha"></span>**D3DBLEND\_BOTHINVSRCALPHA**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-133">**Obsoleto**.</span><span class="sxs-lookup"><span data-stu-id="2f45f-133">**Obsolete**.</span></span> <span data-ttu-id="2f45f-134">O fator de mistura de origem é (1-como, 1-como, 1-como, 1-como) e o fator de mesclagem de destino é (como, como, como, como); a seleção de mesclagem de destino é substituída.</span><span class="sxs-lookup"><span data-stu-id="2f45f-134">Source blend factor is (1 - Aₛ, 1 - Aₛ, 1 - Aₛ, 1 - Aₛ), and destination blend factor is (Aₛ, Aₛ, Aₛ, Aₛ); the destination blend selection is overridden.</span></span> <span data-ttu-id="2f45f-135">Esse modo de mesclagem tem suporte apenas para o \_ estado de RENDERIZAÇÃO D3DRS SRCBLEND.</span><span class="sxs-lookup"><span data-stu-id="2f45f-135">This blend mode is supported only for the D3DRS\_SRCBLEND render state.</span></span>
+<span data-ttu-id="50ae2-133">**Obsoleto**.</span><span class="sxs-lookup"><span data-stu-id="50ae2-133">**Obsolete**.</span></span> <span data-ttu-id="50ae2-134">O fator de mistura de origem é (1-como, 1-como, 1-como, 1-como) e o fator de mesclagem de destino é (como, como, como, como); a seleção de mesclagem de destino é substituída.</span><span class="sxs-lookup"><span data-stu-id="50ae2-134">Source blend factor is (1 - Aₛ, 1 - Aₛ, 1 - Aₛ, 1 - Aₛ), and destination blend factor is (Aₛ, Aₛ, Aₛ, Aₛ); the destination blend selection is overridden.</span></span> <span data-ttu-id="50ae2-135">Esse modo de mesclagem tem suporte apenas para o \_ estado de RENDERIZAÇÃO D3DRS SRCBLEND.</span><span class="sxs-lookup"><span data-stu-id="50ae2-135">This blend mode is supported only for the D3DRS\_SRCBLEND render state.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-136"><span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND \_ BLENDFACTOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-136"><span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND\_BLENDFACTOR**</span></span>
+<span data-ttu-id="50ae2-136"><span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND \_ BLENDFACTOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-136"><span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND\_BLENDFACTOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-137">Fator de mistura de cor constante usado pelo misturador de buffer de quadro.</span><span class="sxs-lookup"><span data-stu-id="2f45f-137">Constant color blending factor used by the frame-buffer blender.</span></span> <span data-ttu-id="2f45f-138">Esse modo de mesclagem só terá suporte se D3DPBLENDCAPS \_ BLENDFACTOR estiver definido nos membros **SrcBlendCaps** ou **DestBlendCaps** de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span><span class="sxs-lookup"><span data-stu-id="2f45f-138">This blend mode is supported only if D3DPBLENDCAPS\_BLENDFACTOR is set in the **SrcBlendCaps** or **DestBlendCaps** members of [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span></span>
+<span data-ttu-id="50ae2-137">Fator de mistura de cor constante usado pelo misturador de buffer de quadro.</span><span class="sxs-lookup"><span data-stu-id="50ae2-137">Constant color blending factor used by the frame-buffer blender.</span></span> <span data-ttu-id="50ae2-138">Esse modo de mesclagem só terá suporte se D3DPBLENDCAPS \_ BLENDFACTOR estiver definido nos membros **SrcBlendCaps** ou **DestBlendCaps** de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span><span class="sxs-lookup"><span data-stu-id="50ae2-138">This blend mode is supported only if D3DPBLENDCAPS\_BLENDFACTOR is set in the **SrcBlendCaps** or **DestBlendCaps** members of [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-139"><span id="D3DBLEND_INVBLENDFACTOR"></span><span id="d3dblend_invblendfactor"></span>**D3DBLEND \_ INVBLENDFACTOR**</span><span class="sxs-lookup"><span data-stu-id="2f45f-139"><span id="D3DBLEND_INVBLENDFACTOR"></span><span id="d3dblend_invblendfactor"></span>**D3DBLEND\_INVBLENDFACTOR**</span></span>
+<span data-ttu-id="50ae2-139"><span id="D3DBLEND_INVBLENDFACTOR"></span><span id="d3dblend_invblendfactor"></span>**D3DBLEND \_ INVBLENDFACTOR**</span><span class="sxs-lookup"><span data-stu-id="50ae2-139"><span id="D3DBLEND_INVBLENDFACTOR"></span><span id="d3dblend_invblendfactor"></span>**D3DBLEND\_INVBLENDFACTOR**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-140">Fator de mistura de cor constante invertido usado pelo misturador de buffer de quadro.</span><span class="sxs-lookup"><span data-stu-id="2f45f-140">Inverted constant color-blending factor used by the frame-buffer blender.</span></span> <span data-ttu-id="2f45f-141">Esse modo de mesclagem só terá suporte se o \_ bit D3DPBLENDCAPS BLENDFACTOR for definido nos membros **SrcBlendCaps** ou **DestBlendCaps** de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span><span class="sxs-lookup"><span data-stu-id="2f45f-141">This blend mode is supported only if the D3DPBLENDCAPS\_BLENDFACTOR bit is set in the **SrcBlendCaps** or **DestBlendCaps** members of [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span></span>
+<span data-ttu-id="50ae2-140">Fator de mistura de cor constante invertido usado pelo misturador de buffer de quadro.</span><span class="sxs-lookup"><span data-stu-id="50ae2-140">Inverted constant color-blending factor used by the frame-buffer blender.</span></span> <span data-ttu-id="50ae2-141">Esse modo de mesclagem só terá suporte se o \_ bit D3DPBLENDCAPS BLENDFACTOR for definido nos membros **SrcBlendCaps** ou **DestBlendCaps** de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span><span class="sxs-lookup"><span data-stu-id="50ae2-141">This blend mode is supported only if the D3DPBLENDCAPS\_BLENDFACTOR bit is set in the **SrcBlendCaps** or **DestBlendCaps** members of [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-142"><span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND \_ SRCCOLOR2**</span><span class="sxs-lookup"><span data-stu-id="2f45f-142"><span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND\_SRCCOLOR2**</span></span>
+<span data-ttu-id="50ae2-142"><span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND \_ SRCCOLOR2**</span><span class="sxs-lookup"><span data-stu-id="50ae2-142"><span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND\_SRCCOLOR2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-143">O fator de mistura é (PSOutColor \[ 1 \] <sub>r</sub>, PSOutColor \[ 1 \] <sub>g</sub>, PSOutColor \[ 1 \] <sub>b</sub>, não usado).</span><span class="sxs-lookup"><span data-stu-id="2f45f-143">Blend factor is (PSOutColor\[1\]<sub>r</sub>, PSOutColor\[1\]<sub>g</sub>, PSOutColor\[1\]<sub>b</sub>, not used).</span></span> <span data-ttu-id="2f45f-144">Consulte [mesclagem de destino de renderização](#render-target-blending).</span><span class="sxs-lookup"><span data-stu-id="2f45f-144">See [Render Target Blending](#render-target-blending).</span></span>
+<span data-ttu-id="50ae2-143">O fator de mistura é (PSOutColor \[ 1 \] <sub>r</sub>, PSOutColor \[ 1 \] <sub>g</sub>, PSOutColor \[ 1 \] <sub>b</sub>, não usado).</span><span class="sxs-lookup"><span data-stu-id="50ae2-143">Blend factor is (PSOutColor\[1\]<sub>r</sub>, PSOutColor\[1\]<sub>g</sub>, PSOutColor\[1\]<sub>b</sub>, not used).</span></span> <span data-ttu-id="50ae2-144">Consulte [mesclagem de destino de renderização](#render-target-blending).</span><span class="sxs-lookup"><span data-stu-id="50ae2-144">See [Render Target Blending](#render-target-blending).</span></span>
 
 
 
 |                                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2f45f-145">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="2f45f-145">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="2f45f-146">Esse sinalizador está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="2f45f-146">This flag is available in Direct3D 9Ex only.</span></span><br/> |
+| <span data-ttu-id="50ae2-145">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="50ae2-145">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="50ae2-146">Esse sinalizador está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="50ae2-146">This flag is available in Direct3D 9Ex only.</span></span><br/> |
 
 
 
@@ -178,16 +178,16 @@ typedef enum D3DBLEND {
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-147"><span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND \_ INVSRCCOLOR2**</span><span class="sxs-lookup"><span data-stu-id="2f45f-147"><span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND\_INVSRCCOLOR2**</span></span>
+<span data-ttu-id="50ae2-147"><span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND \_ INVSRCCOLOR2**</span><span class="sxs-lookup"><span data-stu-id="50ae2-147"><span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND\_INVSRCCOLOR2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-148">O fator de mistura é (1-PSOutColor \[ 1 \] <sub>r</sub>, 1-PSOutColor \[ 1 \] <sub>g</sub>, 1-PSOutColor \[ 1 \] <sub>b</sub>, não usado)).</span><span class="sxs-lookup"><span data-stu-id="2f45f-148">Blend factor is (1 - PSOutColor\[1\]<sub>r</sub>, 1 - PSOutColor\[1\]<sub>g</sub>, 1 - PSOutColor\[1\]<sub>b</sub>, not used)).</span></span> <span data-ttu-id="2f45f-149">Consulte [mesclagem de destino de renderização](#render-target-blending).</span><span class="sxs-lookup"><span data-stu-id="2f45f-149">See [Render Target Blending](#render-target-blending).</span></span>
+<span data-ttu-id="50ae2-148">O fator de mistura é (1-PSOutColor \[ 1 \] <sub>r</sub>, 1-PSOutColor \[ 1 \] <sub>g</sub>, 1-PSOutColor \[ 1 \] <sub>b</sub>, não usado)).</span><span class="sxs-lookup"><span data-stu-id="50ae2-148">Blend factor is (1 - PSOutColor\[1\]<sub>r</sub>, 1 - PSOutColor\[1\]<sub>g</sub>, 1 - PSOutColor\[1\]<sub>b</sub>, not used)).</span></span> <span data-ttu-id="50ae2-149">Consulte [mesclagem de destino de renderização](#render-target-blending).</span><span class="sxs-lookup"><span data-stu-id="50ae2-149">See [Render Target Blending](#render-target-blending).</span></span>
 
 
 
 |                                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2f45f-150">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="2f45f-150">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="2f45f-151">Esse sinalizador está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="2f45f-151">This flag is available in Direct3D 9Ex only.</span></span><br/> |
+| <span data-ttu-id="50ae2-150">Diferenças entre o Direct3D 9 e o Direct3D 9Ex:</span><span class="sxs-lookup"><span data-stu-id="50ae2-150">Differences between Direct3D 9 and Direct3D 9Ex:</span></span><br/> <span data-ttu-id="50ae2-151">Esse sinalizador está disponível somente no Direct3D 9Ex.</span><span class="sxs-lookup"><span data-stu-id="50ae2-151">This flag is available in Direct3D 9Ex only.</span></span><br/> |
 
 
 
@@ -195,47 +195,47 @@ typedef enum D3DBLEND {
 
 </dd> <dt>
 
-<span data-ttu-id="2f45f-152"><span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND \_ forçar \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="2f45f-152"><span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND\_FORCE\_DWORD**</span></span>
+<span data-ttu-id="50ae2-152"><span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND \_ forçar \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="50ae2-152"><span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND\_FORCE\_DWORD**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2f45f-153">Força essa enumeração a compilar a 32 bits de tamanho.</span><span class="sxs-lookup"><span data-stu-id="2f45f-153">Forces this enumeration to compile to 32 bits in size.</span></span> <span data-ttu-id="2f45f-154">Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="2f45f-154">Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits.</span></span> <span data-ttu-id="2f45f-155">Este valor não é usado.</span><span class="sxs-lookup"><span data-stu-id="2f45f-155">This value is not used.</span></span>
+<span data-ttu-id="50ae2-153">Força essa enumeração a compilar a 32 bits de tamanho.</span><span class="sxs-lookup"><span data-stu-id="50ae2-153">Forces this enumeration to compile to 32 bits in size.</span></span> <span data-ttu-id="50ae2-154">Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="50ae2-154">Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits.</span></span> <span data-ttu-id="50ae2-155">Este valor não é usado.</span><span class="sxs-lookup"><span data-stu-id="50ae2-155">This value is not used.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="2f45f-156">Comentários</span><span class="sxs-lookup"><span data-stu-id="2f45f-156">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="50ae2-156">Comentários</span><span class="sxs-lookup"><span data-stu-id="50ae2-156">Remarks</span></span>
 
-<span data-ttu-id="2f45f-157">Nas descrições de membro anteriores, os valores RGBA da origem e do destino são indicados pelos subscritos s e d.</span><span class="sxs-lookup"><span data-stu-id="2f45f-157">In the preceding member descriptions, the RGBA values of the source and destination are indicated by the s and d subscripts.</span></span>
+<span data-ttu-id="50ae2-157">Nas descrições de membro anteriores, os valores RGBA da origem e do destino são indicados pelos subscritos s e d.</span><span class="sxs-lookup"><span data-stu-id="50ae2-157">In the preceding member descriptions, the RGBA values of the source and destination are indicated by the s and d subscripts.</span></span>
 
-<span data-ttu-id="2f45f-158">Os valores neste tipo enumerado são usados pelos seguintes Estados de renderização:</span><span class="sxs-lookup"><span data-stu-id="2f45f-158">The values in this enumerated type are used by the following render states:</span></span>
+<span data-ttu-id="50ae2-158">Os valores neste tipo enumerado são usados pelos seguintes Estados de renderização:</span><span class="sxs-lookup"><span data-stu-id="50ae2-158">The values in this enumerated type are used by the following render states:</span></span>
 
--   <span data-ttu-id="2f45f-159">D3DRS \_ DESTBLEND</span><span class="sxs-lookup"><span data-stu-id="2f45f-159">D3DRS\_DESTBLEND</span></span>
--   <span data-ttu-id="2f45f-160">D3DRS \_ SRCBLEND</span><span class="sxs-lookup"><span data-stu-id="2f45f-160">D3DRS\_SRCBLEND</span></span>
--   <span data-ttu-id="2f45f-161">D3DRS \_ DESTBLENDALPHA</span><span class="sxs-lookup"><span data-stu-id="2f45f-161">D3DRS\_DESTBLENDALPHA</span></span>
--   <span data-ttu-id="2f45f-162">D3DRS \_ SRCBLENDALPHA</span><span class="sxs-lookup"><span data-stu-id="2f45f-162">D3DRS\_SRCBLENDALPHA</span></span>
+-   <span data-ttu-id="50ae2-159">D3DRS \_ DESTBLEND</span><span class="sxs-lookup"><span data-stu-id="50ae2-159">D3DRS\_DESTBLEND</span></span>
+-   <span data-ttu-id="50ae2-160">D3DRS \_ SRCBLEND</span><span class="sxs-lookup"><span data-stu-id="50ae2-160">D3DRS\_SRCBLEND</span></span>
+-   <span data-ttu-id="50ae2-161">D3DRS \_ DESTBLENDALPHA</span><span class="sxs-lookup"><span data-stu-id="50ae2-161">D3DRS\_DESTBLENDALPHA</span></span>
+-   <span data-ttu-id="50ae2-162">D3DRS \_ SRCBLENDALPHA</span><span class="sxs-lookup"><span data-stu-id="50ae2-162">D3DRS\_SRCBLENDALPHA</span></span>
 
-<span data-ttu-id="2f45f-163">Consulte [ **D3DRENDERSTATETYPE**](./d3drenderstatetype.md)</span><span class="sxs-lookup"><span data-stu-id="2f45f-163">See [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)</span></span>
+<span data-ttu-id="50ae2-163">Consulte [ **D3DRENDERSTATETYPE**](./d3drenderstatetype.md)</span><span class="sxs-lookup"><span data-stu-id="50ae2-163">See [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)</span></span>
 
-### <a name="render-target-blending"></a><span data-ttu-id="2f45f-164">Renderizar a mesclagem de destino</span><span class="sxs-lookup"><span data-stu-id="2f45f-164">Render Target Blending</span></span>
+### <a name="render-target-blending"></a><span data-ttu-id="50ae2-164">Renderizar a mesclagem de destino</span><span class="sxs-lookup"><span data-stu-id="50ae2-164">Render Target Blending</span></span>
 
-<span data-ttu-id="2f45f-165">O Direct3D 9Ex aprimorou os recursos de renderização de texto.</span><span class="sxs-lookup"><span data-stu-id="2f45f-165">Direct3D 9Ex has improved text rendering capabilities.</span></span> <span data-ttu-id="2f45f-166">A renderização de fontes de tipo limpar normalmente exigiria duas passagens.</span><span class="sxs-lookup"><span data-stu-id="2f45f-166">Rendering clear-type fonts would normally require two passes.</span></span> <span data-ttu-id="2f45f-167">Para eliminar a segunda passagem, um sombreador de pixel pode ser usado para produzir duas cores, que podemos chamar PSOutColor \[ 0 \] e PSOutColor \[ 1 \] .</span><span class="sxs-lookup"><span data-stu-id="2f45f-167">To eliminate the second pass, a pixel shader can be used to output two colors, which we can call PSOutColor\[0\] and PSOutColor\[1\].</span></span> <span data-ttu-id="2f45f-168">A primeira cor conterá os componentes padrão de 3 cores (RGB).</span><span class="sxs-lookup"><span data-stu-id="2f45f-168">The first color would contain the standard 3 color components (RGB).</span></span> <span data-ttu-id="2f45f-169">A segunda cor conterá três componentes alfa (um para cada componente da primeira cor).</span><span class="sxs-lookup"><span data-stu-id="2f45f-169">The second color would contain 3 alpha components (one for each component of the first color).</span></span>
+<span data-ttu-id="50ae2-165">O Direct3D 9Ex aprimorou os recursos de renderização de texto.</span><span class="sxs-lookup"><span data-stu-id="50ae2-165">Direct3D 9Ex has improved text rendering capabilities.</span></span> <span data-ttu-id="50ae2-166">A renderização de fontes de tipo limpar normalmente exigiria duas passagens.</span><span class="sxs-lookup"><span data-stu-id="50ae2-166">Rendering clear-type fonts would normally require two passes.</span></span> <span data-ttu-id="50ae2-167">Para eliminar a segunda passagem, um sombreador de pixel pode ser usado para produzir duas cores, que podemos chamar PSOutColor \[ 0 \] e PSOutColor \[ 1 \] .</span><span class="sxs-lookup"><span data-stu-id="50ae2-167">To eliminate the second pass, a pixel shader can be used to output two colors, which we can call PSOutColor\[0\] and PSOutColor\[1\].</span></span> <span data-ttu-id="50ae2-168">A primeira cor conterá os componentes padrão de 3 cores (RGB).</span><span class="sxs-lookup"><span data-stu-id="50ae2-168">The first color would contain the standard 3 color components (RGB).</span></span> <span data-ttu-id="50ae2-169">A segunda cor conterá três componentes alfa (um para cada componente da primeira cor).</span><span class="sxs-lookup"><span data-stu-id="50ae2-169">The second color would contain 3 alpha components (one for each component of the first color).</span></span>
 
-<span data-ttu-id="2f45f-170">Esses novos modos de mesclagem são usados apenas para renderização de texto no primeiro destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="2f45f-170">These new blending modes are only used for text rendering on the first render target.</span></span>
+<span data-ttu-id="50ae2-170">Esses novos modos de mesclagem são usados apenas para renderização de texto no primeiro destino de renderização.</span><span class="sxs-lookup"><span data-stu-id="50ae2-170">These new blending modes are only used for text rendering on the first render target.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="2f45f-171">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2f45f-171">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="50ae2-171">Requisitos</span><span class="sxs-lookup"><span data-stu-id="50ae2-171">Requirements</span></span>
 
 
 
-| <span data-ttu-id="2f45f-172">Requisito</span><span class="sxs-lookup"><span data-stu-id="2f45f-172">Requirement</span></span> | <span data-ttu-id="2f45f-173">Valor</span><span class="sxs-lookup"><span data-stu-id="2f45f-173">Value</span></span> |
+| <span data-ttu-id="50ae2-172">Requisito</span><span class="sxs-lookup"><span data-stu-id="50ae2-172">Requirement</span></span> | <span data-ttu-id="50ae2-173">Valor</span><span class="sxs-lookup"><span data-stu-id="50ae2-173">Value</span></span> |
 |-------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="2f45f-174">parâmetro</span><span class="sxs-lookup"><span data-stu-id="2f45f-174">Header</span></span><br/> | <dl> <span data-ttu-id="2f45f-175"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="2f45f-175"><dt>D3D9Types.h</dt></span></span> </dl> |
+| <span data-ttu-id="50ae2-174">parâmetro</span><span class="sxs-lookup"><span data-stu-id="50ae2-174">Header</span></span><br/> | <dl> <span data-ttu-id="50ae2-175"><dt>D3D9Types. h</dt></span><span class="sxs-lookup"><span data-stu-id="50ae2-175"><dt>D3D9Types.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="2f45f-176">Confira também</span><span class="sxs-lookup"><span data-stu-id="2f45f-176">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="50ae2-176">Confira também</span><span class="sxs-lookup"><span data-stu-id="50ae2-176">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2f45f-177">Enumerações do Direct3D</span><span class="sxs-lookup"><span data-stu-id="2f45f-177">Direct3D Enumerations</span></span>](dx9-graphics-reference-d3d-enums.md)
+[<span data-ttu-id="50ae2-177">Enumerações do Direct3D</span><span class="sxs-lookup"><span data-stu-id="50ae2-177">Direct3D Enumerations</span></span>](dx9-graphics-reference-d3d-enums.md)
 </dt> </dl>
 
  
