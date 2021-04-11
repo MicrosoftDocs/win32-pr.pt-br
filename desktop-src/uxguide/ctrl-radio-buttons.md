@@ -1,0 +1,233 @@
+---
+title: Botões de opção
+description: Com um botão de opção, os usuários fazem uma escolha entre um conjunto de opções relacionadas mutuamente exclusivas.
+ms.assetid: f9af0a8a-d4a1-464c-a967-bab88ae0726b
+ms.topic: article
+ms.date: 10/20/2020
+ms.openlocfilehash: 00495695753506702015431c889e74d5a7effe9a
+ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "104172434"
+---
+# <a name="radio-buttons"></a><span data-ttu-id="27729-103">Botões de opção</span><span class="sxs-lookup"><span data-stu-id="27729-103">Radio Buttons</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="27729-104">Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows.</span><span class="sxs-lookup"><span data-stu-id="27729-104">This design guide was created for Windows 7 and has not been updated for newer versions of Windows.</span></span> <span data-ttu-id="27729-105">Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).</span><span class="sxs-lookup"><span data-stu-id="27729-105">Much of the guidance still applies in principle, but the presentation and examples do not reflect our [current design guidance](/windows/uwp/design/).</span></span>
+
+<span data-ttu-id="27729-106">Com um botão de opção, os usuários fazem uma escolha entre um conjunto de opções relacionadas mutuamente exclusivas.</span><span class="sxs-lookup"><span data-stu-id="27729-106">With a radio button, users make a choice among a set of mutually exclusive, related options.</span></span> <span data-ttu-id="27729-107">Os usuários podem escolher uma e apenas uma opção.</span><span class="sxs-lookup"><span data-stu-id="27729-107">Users can choose one and only one option.</span></span> <span data-ttu-id="27729-108">Os botões de opção são tão chamados porque funcionam como as predefinições de canal em rádios.</span><span class="sxs-lookup"><span data-stu-id="27729-108">Radio buttons are so called because they function like the channel presets on radios.</span></span>
+
+![<span data-ttu-id="27729-109">captura de tela de três botões de opção</span><span class="sxs-lookup"><span data-stu-id="27729-109">screen shot of three radio buttons</span></span> ](images/radio-buttons-image1.png)
+
+<span data-ttu-id="27729-110">Um grupo típico de botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-110">A typical group of radio buttons.</span></span>
+
+<span data-ttu-id="27729-111">Um grupo de botões de opção se comporta como um único controle.</span><span class="sxs-lookup"><span data-stu-id="27729-111">A group of radio buttons behaves like a single control.</span></span> <span data-ttu-id="27729-112">Somente a opção selecionada pode ser acessada usando a tecla Tab, mas os usuários podem percorrer o grupo usando as teclas de direção.</span><span class="sxs-lookup"><span data-stu-id="27729-112">Only the selected choice is accessible using the Tab key, but users can cycle through the group using the arrow keys.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="27729-113">As diretrizes relacionadas ao [layout](vis-layout.md) e à [navegação por teclado](inter-keyboard.md) são apresentadas em um artigo separado.</span><span class="sxs-lookup"><span data-stu-id="27729-113">Guidelines related to [layout](vis-layout.md) and [keyboard navigation](inter-keyboard.md) are presented in a separate article.</span></span>
+
+ 
+
+## <a name="is-this-the-right-control"></a><span data-ttu-id="27729-114">Esse é o controle correto?</span><span class="sxs-lookup"><span data-stu-id="27729-114">Is this the right control?</span></span>
+
+<span data-ttu-id="27729-115">Para decidir, considere estas perguntas:</span><span class="sxs-lookup"><span data-stu-id="27729-115">To decide, consider these questions:</span></span>
+
+-   <span data-ttu-id="27729-116">**O controle é usado para escolher uma opção de um conjunto de opções mutuamente exclusivas?**</span><span class="sxs-lookup"><span data-stu-id="27729-116">**Is the control used to choose one option from a set of mutually exclusive choices?**</span></span> <span data-ttu-id="27729-117">Se não, use outro controle.</span><span class="sxs-lookup"><span data-stu-id="27729-117">If not, use another control.</span></span> <span data-ttu-id="27729-118">Para escolher várias opções, use as [caixas de seleção](ctrl-check-boxes.md), uma lista de [seleção múltipla](ctrl-list-boxes.md) ou uma lista de caixas de seleção.</span><span class="sxs-lookup"><span data-stu-id="27729-118">To choose multiple options, use [check boxes](ctrl-check-boxes.md), a [multiple-selection list](ctrl-list-boxes.md) or a check box list instead.</span></span>
+-   <span data-ttu-id="27729-119">**É o número de opções entre dois e sete?**</span><span class="sxs-lookup"><span data-stu-id="27729-119">**Is the number of options between two and seven?**</span></span> <span data-ttu-id="27729-120">Como o espaço da tela usado é proporcional ao número de opções, mantenha o número de opções em um grupo entre dois e sete.</span><span class="sxs-lookup"><span data-stu-id="27729-120">Since the screen space used is proportional to the number of options, keep the number of options in a group between two and seven.</span></span> <span data-ttu-id="27729-121">Para oito ou mais opções, use uma [lista suspensa](/windows/desktop/uxguide/ctrl-drop) ou [lista de seleção única](ctrl-list-boxes.md).</span><span class="sxs-lookup"><span data-stu-id="27729-121">For eight or more options, use a [drop-down list](/windows/desktop/uxguide/ctrl-drop) or [single-selection list](ctrl-list-boxes.md).</span></span>
+-   <span data-ttu-id="27729-122">**Uma caixa de seleção seria uma opção melhor?**</span><span class="sxs-lookup"><span data-stu-id="27729-122">**Would a check box be a better choice?**</span></span> <span data-ttu-id="27729-123">Se houver apenas duas opções, você poderá usar uma única [caixa de seleção](ctrl-check-boxes.md) em vez disso.</span><span class="sxs-lookup"><span data-stu-id="27729-123">If there are only two options, you could use a single [check box](ctrl-check-boxes.md) instead.</span></span> <span data-ttu-id="27729-124">No entanto, as caixas de seleção são adequadas apenas para ativar ou desativar uma única opção, enquanto botões de opção podem ser usados para alternativas completamente diferentes.</span><span class="sxs-lookup"><span data-stu-id="27729-124">However, check boxes are suitable only for turning a single option on or off, whereas radio buttons can be used for completely different alternatives.</span></span> <span data-ttu-id="27729-125">Se ambas as soluções forem possíveis:</span><span class="sxs-lookup"><span data-stu-id="27729-125">If both solutions are possible:</span></span>
+    -   <span data-ttu-id="27729-126">Use botões de opção se o significado da caixa de seleção desmarcada não for completamente óbvio.</span><span class="sxs-lookup"><span data-stu-id="27729-126">Use radio buttons if the meaning of the cleared check box isn't completely obvious.</span></span>
+
+        <span data-ttu-id="27729-127">**Incorreto:**</span><span class="sxs-lookup"><span data-stu-id="27729-127">**Incorrect:**</span></span>
+
+        ![<span data-ttu-id="27729-128">captura de tela da caixa de seleção paisagem</span><span class="sxs-lookup"><span data-stu-id="27729-128">screen shot of landscape check box</span></span> ](images/radio-buttons-image2.png)
+
+        <span data-ttu-id="27729-129">**Correto:**</span><span class="sxs-lookup"><span data-stu-id="27729-129">**Correct:**</span></span>
+
+        ![<span data-ttu-id="27729-130">captura de tela de botões de opção paisagem/retrato</span><span class="sxs-lookup"><span data-stu-id="27729-130">screen shot of landscape/portrait radio buttons</span></span> ](images/radio-buttons-image3.png)
+
+        <span data-ttu-id="27729-131">No exemplo correto, as opções não são opostas, portanto, os botões de opção são a melhor opção.</span><span class="sxs-lookup"><span data-stu-id="27729-131">In the correct example, the choices are not opposites so radio buttons are the better choice.</span></span>
+
+    -   <span data-ttu-id="27729-132">Use botões de opção em páginas de assistente para tornar as alternativas desclaradas, mesmo que uma caixa de seleção seja aceitável de outra forma.</span><span class="sxs-lookup"><span data-stu-id="27729-132">Use radio buttons on wizard pages to make the alternatives clear, even if a check box is otherwise acceptable.</span></span>
+    -   <span data-ttu-id="27729-133">Use botões de opção se você tiver espaço de tela suficiente e as opções forem importantes o suficiente para ser um bom uso desse espaço de tela.</span><span class="sxs-lookup"><span data-stu-id="27729-133">Use radio buttons if you have enough screen space and the options are important enough to be a good use of that screen space.</span></span> <span data-ttu-id="27729-134">Caso contrário, use uma caixa de seleção ou lista suspensa.</span><span class="sxs-lookup"><span data-stu-id="27729-134">Otherwise, use a check box or drop-down list.</span></span>
+
+        <span data-ttu-id="27729-135">**Incorreto:**</span><span class="sxs-lookup"><span data-stu-id="27729-135">**Incorrect:**</span></span>
+
+        ![<span data-ttu-id="27729-136">captura de tela de mostrar/não mostrar botões de opção</span><span class="sxs-lookup"><span data-stu-id="27729-136">screen shot of show/don't show radio buttons</span></span> ](images/radio-buttons-image4.png)
+
+        <span data-ttu-id="27729-137">Neste exemplo, as opções não são importantes o suficiente para usar botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-137">In this example, the options aren't important enough to use radio buttons.</span></span>
+
+        <span data-ttu-id="27729-138">**Correto:**</span><span class="sxs-lookup"><span data-stu-id="27729-138">**Correct:**</span></span>
+
+        ![<span data-ttu-id="27729-139">captura de tela da caixa de seleção não mostrar esta mensagem</span><span class="sxs-lookup"><span data-stu-id="27729-139">screen shot of don't show this message check box</span></span> ](images/radio-buttons-image5.png)
+
+        <span data-ttu-id="27729-140">Neste exemplo, uma caixa de seleção é um uso eficiente do espaço da tela para essa opção de periférico.</span><span class="sxs-lookup"><span data-stu-id="27729-140">In this example, a check box is an efficient use of screen space for this peripheral option.</span></span>
+
+    -   <span data-ttu-id="27729-141">Use uma caixa de seleção se houver outras caixas de seleção na página.</span><span class="sxs-lookup"><span data-stu-id="27729-141">Use a check box if there other check boxes on the page.</span></span>
+
+-   <span data-ttu-id="27729-142">**Uma lista suspensa seria uma opção melhor?**</span><span class="sxs-lookup"><span data-stu-id="27729-142">**Would a drop-down list be a better choice?**</span></span> <span data-ttu-id="27729-143">Se a opção padrão for recomendada para a maioria dos usuários na maioria das situações, os botões de opção poderão chamar mais atenção às opções do que o necessário.</span><span class="sxs-lookup"><span data-stu-id="27729-143">If the default option is recommended for most users in most situations, radio buttons might draw more attention to the options than necessary.</span></span>
+    -   <span data-ttu-id="27729-144">Considere o uso de uma lista suspensa se você não quiser chamar a atenção para as opções ou se não quiser encorajar os usuários a fazer alterações.</span><span class="sxs-lookup"><span data-stu-id="27729-144">Consider using a drop-down list if you don't want to draw attention to the options, or you don't want to encourage users to make changes.</span></span> <span data-ttu-id="27729-145">Uma lista suspensa se concentra na seleção atual, enquanto botões de opção enfatizam todas as opções igualmente.</span><span class="sxs-lookup"><span data-stu-id="27729-145">A drop-down list focuses on the current selection, whereas radio buttons emphasize all options equally.</span></span>
+
+        ![<span data-ttu-id="27729-146">captura de tela da qualidade mais alta como botão padrão</span><span class="sxs-lookup"><span data-stu-id="27729-146">screen shot of highest quality as default button</span></span> ](images/radio-buttons-image6.png)
+
+        <span data-ttu-id="27729-147">Neste exemplo, uma lista suspensa se concentra na seleção atual e desencoraja os usuários de fazerem alterações.</span><span class="sxs-lookup"><span data-stu-id="27729-147">In this example, a drop-down list focuses on the current selection and discourages users from making changes.</span></span>
+
+    -   <span data-ttu-id="27729-148">Considere uma lista suspensa se houver outras listas suspensas na página.</span><span class="sxs-lookup"><span data-stu-id="27729-148">Consider a drop-down list if there are other drop-down lists on the page.</span></span>
+
+-   <span data-ttu-id="27729-149">**Um conjunto de botões de comando, links de comando ou um botão de divisão é uma opção melhor?**</span><span class="sxs-lookup"><span data-stu-id="27729-149">**Would a set of command buttons, command links, or a split button be a better choice?**</span></span> <span data-ttu-id="27729-150">Se os botões de opção forem usados apenas para afetar como um comando é executado, geralmente é melhor apresentar as variações de comando em vez disso.</span><span class="sxs-lookup"><span data-stu-id="27729-150">If the radio buttons are used only to affect how a command is performed, it is often better to present the command variations instead.</span></span> <span data-ttu-id="27729-151">Isso permite que os usuários escolham o comando correto com uma única interação.</span><span class="sxs-lookup"><span data-stu-id="27729-151">Doing so allows users to choose the right command with a single interaction.</span></span>
+-   <span data-ttu-id="27729-152">**As opções apresentam opções de programa, em vez de dados?**</span><span class="sxs-lookup"><span data-stu-id="27729-152">**Do the options present program options, rather than data?**</span></span> <span data-ttu-id="27729-153">Os valores das opções não devem ser baseados em contexto ou outros dados.</span><span class="sxs-lookup"><span data-stu-id="27729-153">The options' values shouldn't be based on context or other data.</span></span> <span data-ttu-id="27729-154">Para dados, use uma lista suspensa ou lista de seleção única.</span><span class="sxs-lookup"><span data-stu-id="27729-154">For data, use a drop-down list or single-selection list.</span></span>
+-   <span data-ttu-id="27729-155">Se o controle for usado em uma página de assistente ou em um painel de controle, **o controlará uma resposta à instrução principal e os usuários poderão alterar a opção mais tarde?**</span><span class="sxs-lookup"><span data-stu-id="27729-155">If the control is used on a wizard page or control panel, **is the control a response to the main instruction and can users later change the choice?**</span></span> <span data-ttu-id="27729-156">Nesse caso, considere o uso de links de comando em vez de botões de opção para tornar a interação mais eficiente.</span><span class="sxs-lookup"><span data-stu-id="27729-156">If so, consider using command links instead of radio buttons to make the interaction more efficient.</span></span>
+-   <span data-ttu-id="27729-157">**Os valores são não numéricos?**</span><span class="sxs-lookup"><span data-stu-id="27729-157">**Are the values non-numeric?**</span></span> <span data-ttu-id="27729-158">Para dados numéricos, use [caixas de texto](ctrl-text-boxes.md), [listas suspensas](/windows/desktop/uxguide/ctrl-drop)ou [controles deslizantes](ctrl-sliders.md).</span><span class="sxs-lookup"><span data-stu-id="27729-158">For numeric data, use [text boxes](ctrl-text-boxes.md), [drop-down lists](/windows/desktop/uxguide/ctrl-drop), or [sliders](ctrl-sliders.md).</span></span>
+
+## <a name="guidelines"></a><span data-ttu-id="27729-159">Diretrizes</span><span class="sxs-lookup"><span data-stu-id="27729-159">Guidelines</span></span>
+
+### <a name="general"></a><span data-ttu-id="27729-160">Geral</span><span class="sxs-lookup"><span data-stu-id="27729-160">General</span></span>
+
+-   <span data-ttu-id="27729-161">**Liste as opções em uma ordem lógica,** como a maior probabilidade de ser selecionada para a operação menos simples, mais complexa ou menos arriscada para a maioria.</span><span class="sxs-lookup"><span data-stu-id="27729-161">**List the options in a logical order,** such as most likely to be selected to least, simplest operation to most complex, or least risk to most.</span></span> <span data-ttu-id="27729-162">A ordenação alfabética não é recomendada porque ela é dependente de idioma e, portanto, não é localizável.</span><span class="sxs-lookup"><span data-stu-id="27729-162">Alphabetical ordering is not recommended because it is language dependent and therefore not localizable.</span></span>
+-   <span data-ttu-id="27729-163">**Se nenhuma das opções for uma opção válida, adicione outra opção para refletir essa opção,** como nenhuma ou não se aplica.</span><span class="sxs-lookup"><span data-stu-id="27729-163">**If none of the options is a valid choice, add another option to reflect this choice,** such as None or Does not apply.</span></span>
+-   <span data-ttu-id="27729-164">**Prefira alinhar os botões de opção verticalmente em vez de horizontalmente.**</span><span class="sxs-lookup"><span data-stu-id="27729-164">**Prefer to align radio buttons vertically instead of horizontally.**</span></span> <span data-ttu-id="27729-165">O alinhamento horizontal é mais difícil de ler e localizar.</span><span class="sxs-lookup"><span data-stu-id="27729-165">Horizontal alignment is harder to read and localize.</span></span>
+
+    <span data-ttu-id="27729-166">**Correto:**</span><span class="sxs-lookup"><span data-stu-id="27729-166">**Correct:**</span></span>
+
+    ![<span data-ttu-id="27729-167">captura de tela de alinhamento vertical do botão de opção</span><span class="sxs-lookup"><span data-stu-id="27729-167">screen shot of vertical radio-button alignment</span></span> ](images/radio-buttons-image7.png)
+
+    <span data-ttu-id="27729-168">Neste exemplo, os botões de opção estão alinhados verticalmente.</span><span class="sxs-lookup"><span data-stu-id="27729-168">In this example, the radio buttons are aligned vertically.</span></span>
+
+    <span data-ttu-id="27729-169">**Incorreto:**</span><span class="sxs-lookup"><span data-stu-id="27729-169">**Incorrect:**</span></span>
+
+    ![<span data-ttu-id="27729-170">captura de tela do alinhamento do botão de opção horizontal</span><span class="sxs-lookup"><span data-stu-id="27729-170">screen shot of horizontal radio-button alignment</span></span> ](images/radio-buttons-image8.png)
+
+    <span data-ttu-id="27729-171">Neste exemplo, o alinhamento horizontal é mais difícil de ler.</span><span class="sxs-lookup"><span data-stu-id="27729-171">In this example, the horizontal alignment is harder to read.</span></span>
+
+-   <span data-ttu-id="27729-172">**Reconsidere o uso de caixas de grupo para organizar grupos de botões de opção**— isso geralmente resulta em uma desordem de tela desnecessária.</span><span class="sxs-lookup"><span data-stu-id="27729-172">**Reconsider using group boxes to organize groups of radio buttons**—this often results in unnecessary screen clutter.</span></span>
+-   <span data-ttu-id="27729-173">**Não use rótulos de botão de opção como rótulos de caixa de grupo.**</span><span class="sxs-lookup"><span data-stu-id="27729-173">**Don't use radio button labels as group box labels.**</span></span>
+-   <span data-ttu-id="27729-174">**Não use a seleção de um botão de opção para:**</span><span class="sxs-lookup"><span data-stu-id="27729-174">**Don't use the selection of a radio button to:**</span></span>
+    -   <span data-ttu-id="27729-175">Executar comandos.</span><span class="sxs-lookup"><span data-stu-id="27729-175">Perform commands.</span></span>
+    -   <span data-ttu-id="27729-176">Exiba outras janelas, como uma caixa de diálogo para coletar mais entradas.</span><span class="sxs-lookup"><span data-stu-id="27729-176">Display other windows, such as a dialog box to gather more input.</span></span>
+    -   <span data-ttu-id="27729-177">Mostrar ou ocultar dinamicamente outros controles relacionados ao controle selecionado (leitores de tela não podem detectar esses eventos).</span><span class="sxs-lookup"><span data-stu-id="27729-177">Dynamically show or hide other controls related to the selected control (screen readers cannot detect such events).</span></span> <span data-ttu-id="27729-178">No entanto, você pode alterar o texto dinamicamente com base na seleção.</span><span class="sxs-lookup"><span data-stu-id="27729-178">However, you can change text dynamically based on the selection.</span></span>
+
+### <a name="subordinate-controls"></a><span data-ttu-id="27729-179">Controles subordinados</span><span class="sxs-lookup"><span data-stu-id="27729-179">Subordinate controls</span></span>
+
+-   <span data-ttu-id="27729-180">Coloque controles subordinados à direita ou abaixo (recuado, libere com o rótulo do botão de opção) o botão de opção e seu rótulo.</span><span class="sxs-lookup"><span data-stu-id="27729-180">Place subordinate controls to the right of or below (indented, flush with the radio button label) the radio button and its label.</span></span> <span data-ttu-id="27729-181">Termine o rótulo do botão de opção com dois-pontos.</span><span class="sxs-lookup"><span data-stu-id="27729-181">End the radio button label with a colon.</span></span>
+
+    ![<span data-ttu-id="27729-182">captura de tela de controle à direita de seu rótulo</span><span class="sxs-lookup"><span data-stu-id="27729-182">screen shot of control to the right of its label</span></span> ](images/radio-buttons-image9.png)
+
+    <span data-ttu-id="27729-183">Neste exemplo, o botão de opção e seu controle subordinado compartilham o rótulo do botão de opção e sua chave de acesso.</span><span class="sxs-lookup"><span data-stu-id="27729-183">In this example, the radio button and its subordinate control share the radio button label and its access key.</span></span> <span data-ttu-id="27729-184">Nesse caso, as teclas de seta movem o foco do botão de opção para sua caixa de texto subordinada.</span><span class="sxs-lookup"><span data-stu-id="27729-184">In this case, the arrow keys move focus from the radio button to its subordinate text box.</span></span>
+
+-   <span data-ttu-id="27729-185">**Deixe caixas de texto editáveis e listas suspensas dependentes habilitadas se compartilharem o rótulo do botão de opção.**</span><span class="sxs-lookup"><span data-stu-id="27729-185">**Leave dependent editable text boxes and drop-down lists enabled if they share the radio button's label.**</span></span> <span data-ttu-id="27729-186">Quando os usuários digitam ou colam qualquer coisa na caixa, selecione a opção correspondente automaticamente.</span><span class="sxs-lookup"><span data-stu-id="27729-186">When users type or paste anything into the box, select the corresponding option automatically.</span></span> <span data-ttu-id="27729-187">Fazer isso simplifica a interação.</span><span class="sxs-lookup"><span data-stu-id="27729-187">Doing so simplifies the interaction.</span></span>
+
+    ![<span data-ttu-id="27729-188">captura de tela da caixa de diálogo intervalo de páginas com caixa de texto</span><span class="sxs-lookup"><span data-stu-id="27729-188">screen shot of page range dialog box with text box</span></span> ](images/radio-buttons-image10.png)
+
+    <span data-ttu-id="27729-189">Neste exemplo, a inserção de um número de página seleciona páginas automaticamente.</span><span class="sxs-lookup"><span data-stu-id="27729-189">In this example, entering a page number automatically selects Pages.</span></span>
+
+-   <span data-ttu-id="27729-190">**Evite aninhar botões de opção com outros botões de opção ou caixas de seleção.**</span><span class="sxs-lookup"><span data-stu-id="27729-190">**Avoid nesting radio buttons with other radio buttons or check boxes.**</span></span> <span data-ttu-id="27729-191">Se possível, mantenha todas as opções no mesmo nível.</span><span class="sxs-lookup"><span data-stu-id="27729-191">If possible, keep all the options at the same level.</span></span>
+
+    <span data-ttu-id="27729-192">**Correto:**</span><span class="sxs-lookup"><span data-stu-id="27729-192">**Correct:**</span></span>
+
+    ![<span data-ttu-id="27729-193">captura de tela de botões de opção alinhados à esquerda</span><span class="sxs-lookup"><span data-stu-id="27729-193">screen shot of left-aligned radio buttons</span></span> ](images/radio-buttons-image11.png)
+
+    <span data-ttu-id="27729-194">Neste exemplo, as opções estão no mesmo nível.</span><span class="sxs-lookup"><span data-stu-id="27729-194">In this example, the options are at the same level.</span></span>
+
+    <span data-ttu-id="27729-195">**Incorreto:**</span><span class="sxs-lookup"><span data-stu-id="27729-195">**Incorrect:**</span></span>
+
+    ![<span data-ttu-id="27729-196">captura de tela de botões de opção aninhados</span><span class="sxs-lookup"><span data-stu-id="27729-196">screen shot of nested radio buttons</span></span> ](images/radio-buttons-image12.png)
+
+    <span data-ttu-id="27729-197">Neste exemplo, o uso de opções aninhadas adiciona complexidade desnecessária.</span><span class="sxs-lookup"><span data-stu-id="27729-197">In this example, using nested options adds unnecessary complexity.</span></span>
+
+-   <span data-ttu-id="27729-198">Se você aninhar botões de opção com outros botões de opção ou caixas de seleção, **Desabilite esses controles subordinados até que a opção de alto nível seja selecionada.**</span><span class="sxs-lookup"><span data-stu-id="27729-198">If you do nest radio buttons with other radio buttons or check boxes, **disable these subordinate controls until the high-level option is selected.**</span></span> <span data-ttu-id="27729-199">Isso evita a confusão sobre o significado dos controles subordinados.</span><span class="sxs-lookup"><span data-stu-id="27729-199">Doing so avoids confusion about the meaning of the subordinate controls.</span></span>
+
+### <a name="default-values"></a><span data-ttu-id="27729-200">Valores padrão</span><span class="sxs-lookup"><span data-stu-id="27729-200">Default values</span></span>
+
+-   <span data-ttu-id="27729-201">Como um grupo de botões de opção representa um conjunto de opções mutuamente exclusivas, **sempre tenha um botão de opção selecionado por padrão. Selecione o mais seguro (para evitar perda de dados ou acesso ao sistema) e a opção mais segura e privada.**</span><span class="sxs-lookup"><span data-stu-id="27729-201">Because a group of radio buttons represents a set of mutually exclusive choices, **always have one radio button selected by default. Select the safest (to prevent loss of data or system access) and most secure and private option.**</span></span> <span data-ttu-id="27729-202">Se não houver fatores de segurança e segurança, selecione a opção mais provável ou conveniente.</span><span class="sxs-lookup"><span data-stu-id="27729-202">If safety and security aren't factors, select the most likely or convenient option.</span></span>
+-   <span data-ttu-id="27729-203">**Exceções:** Não terá uma seleção padrão se:</span><span class="sxs-lookup"><span data-stu-id="27729-203">**Exceptions:** Don't have a default selection if:</span></span>
+    -   <span data-ttu-id="27729-204">**Não há nenhuma opção padrão aceitável para segurança, segurança ou motivos legais e, portanto, o usuário deve fazer uma escolha explícita.**</span><span class="sxs-lookup"><span data-stu-id="27729-204">**There is no acceptable default option for safety, security, or legal reasons and therefore the user must make an explicit choice.**</span></span> <span data-ttu-id="27729-205">Se o usuário não fizer uma seleção, exiba uma mensagem de erro para forçar uma.</span><span class="sxs-lookup"><span data-stu-id="27729-205">If the user doesn't make a selection, display an error message to force one.</span></span>
+    -   <span data-ttu-id="27729-206">**A interface do usuário (UI) deve refletir o estado atual e a opção ainda não foi definida.**</span><span class="sxs-lookup"><span data-stu-id="27729-206">**The user interface (UI) must reflect the current state and the option hasn't been set yet.**</span></span> <span data-ttu-id="27729-207">Um valor padrão significaria incorretamente que o usuário não precisa fazer uma seleção.</span><span class="sxs-lookup"><span data-stu-id="27729-207">A default value would incorrectly imply that the user doesn't need to make a selection.</span></span>
+    -   <span data-ttu-id="27729-208">**O objetivo é coletar dados não polarizados.**</span><span class="sxs-lookup"><span data-stu-id="27729-208">**The goal is to collect unbiased data.**</span></span> <span data-ttu-id="27729-209">Os valores padrão diferenciariam a coleta de dados.</span><span class="sxs-lookup"><span data-stu-id="27729-209">Default values would bias data collection.</span></span>
+    -   <span data-ttu-id="27729-210">**O grupo de botões de opção representa uma propriedade em um estado misto**, que ocorre ao exibir uma propriedade para vários objetos que não têm a mesma configuração.</span><span class="sxs-lookup"><span data-stu-id="27729-210">**The group of radio buttons represents a property in a mixed state**, which happens when displaying a property for multiple objects that don't have the same setting.</span></span> <span data-ttu-id="27729-211">Não exibir uma mensagem de erro nesse caso, pois cada objeto tem um estado válido.</span><span class="sxs-lookup"><span data-stu-id="27729-211">Don't display an error message in this case since each object has a valid state.</span></span>
+-   <span data-ttu-id="27729-212">**Torne a primeira opção a opção padrão**, já que os usuários costumam esperar isso — a menos que a ordem não seja lógica.</span><span class="sxs-lookup"><span data-stu-id="27729-212">**Make the first option the default option**, since users often expect that—unless that order isn't logical.</span></span> <span data-ttu-id="27729-213">Para fazer isso, talvez seja necessário alterar os rótulos de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-213">To do this, you might need to change the option labels.</span></span>
+
+    <span data-ttu-id="27729-214">**Incorreto:**</span><span class="sxs-lookup"><span data-stu-id="27729-214">**Incorrect:**</span></span>
+
+    ![<span data-ttu-id="27729-215">captura de tela do último botão de opção como opção padrão</span><span class="sxs-lookup"><span data-stu-id="27729-215">screen shot of last radio button as default option</span></span> ](images/radio-buttons-image13.png)
+
+    <span data-ttu-id="27729-216">Neste exemplo, a opção padrão não é a primeira opção.</span><span class="sxs-lookup"><span data-stu-id="27729-216">In this example, the default option isn't the first option.</span></span>
+
+    <span data-ttu-id="27729-217">**Correto:**</span><span class="sxs-lookup"><span data-stu-id="27729-217">**Correct:**</span></span>
+
+    ![<span data-ttu-id="27729-218">captura de tela do primeiro botão de opção como padrão</span><span class="sxs-lookup"><span data-stu-id="27729-218">screen shot of first radio button as default</span></span> ](images/radio-buttons-image14.png)
+
+    <span data-ttu-id="27729-219">Neste exemplo, os rótulos de opção são redefinidos para tornar a primeira opção a opção padrão.</span><span class="sxs-lookup"><span data-stu-id="27729-219">In this example, the option labels are reworded to make the first option the default option.</span></span>
+
+## <a name="recommended-sizing-and-spacing"></a><span data-ttu-id="27729-220">Dimensionamento e espaçamento recomendados</span><span class="sxs-lookup"><span data-stu-id="27729-220">Recommended sizing and spacing</span></span>
+
+![<span data-ttu-id="27729-221">captura de tela de dimensionamento e espaçamento do botão de opção</span><span class="sxs-lookup"><span data-stu-id="27729-221">screen shot of radio button sizing and spacing</span></span> ](images/radio-buttons-image15.png)
+
+<span data-ttu-id="27729-222">Dimensionamento e espaçamento recomendados para botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-222">Recommended sizing and spacing for radio buttons.</span></span>
+
+## <a name="labels"></a><span data-ttu-id="27729-223">Rótulos</span><span class="sxs-lookup"><span data-stu-id="27729-223">Labels</span></span>
+
+### <a name="radio-button-labels"></a><span data-ttu-id="27729-224">Rótulos de botão de opção</span><span class="sxs-lookup"><span data-stu-id="27729-224">Radio button labels</span></span>
+
+-   <span data-ttu-id="27729-225">Rotular cada botão de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-225">Label every radio button.</span></span>
+
+<!-- -->
+
+-   <span data-ttu-id="27729-226">Atribua uma [chave de acesso](glossary.md) exclusiva para cada rótulo.</span><span class="sxs-lookup"><span data-stu-id="27729-226">Assign a unique [access key](glossary.md) to each label.</span></span> <span data-ttu-id="27729-227">Para obter diretrizes, consulte [teclado](inter-keyboard.md).</span><span class="sxs-lookup"><span data-stu-id="27729-227">For guidelines, see [Keyboard](inter-keyboard.md).</span></span>
+-   <span data-ttu-id="27729-228">Use [a capitalização no estilo de frase](glossary.md).</span><span class="sxs-lookup"><span data-stu-id="27729-228">Use [sentence-style capitalization](glossary.md).</span></span>
+-   <span data-ttu-id="27729-229">Escreva o rótulo como uma frase, não como uma frase, e não use pontuação final.</span><span class="sxs-lookup"><span data-stu-id="27729-229">Write the label as a phrase, not as a sentence, and use no ending punctuation.</span></span>
+    -   <span data-ttu-id="27729-230">**Exceção:** Se um rótulo de botão de opção também rotular um controle subordinado que o segue, termine o rótulo com dois-pontos.</span><span class="sxs-lookup"><span data-stu-id="27729-230">**Exception:** If a radio button label also labels a subordinate control that follows it, end the label with a colon.</span></span>
+-   <span data-ttu-id="27729-231">Use frases paralelas e tente manter o comprimento sobre o mesmo para todos os rótulos.</span><span class="sxs-lookup"><span data-stu-id="27729-231">Use parallel phrasing, and try to keep the length about the same for all labels.</span></span>
+-   <span data-ttu-id="27729-232">Focalize o texto do rótulo nas diferenças entre as opções.</span><span class="sxs-lookup"><span data-stu-id="27729-232">Focus the label text on the differences among the options.</span></span> <span data-ttu-id="27729-233">Se todas as opções tiverem o mesmo texto introdutório, mova esse texto para o rótulo do grupo.</span><span class="sxs-lookup"><span data-stu-id="27729-233">If all the options have the same introductory text, move that text to the group label.</span></span>
+-   <span data-ttu-id="27729-234">Use frases positivas.</span><span class="sxs-lookup"><span data-stu-id="27729-234">Use positive phrasing.</span></span> <span data-ttu-id="27729-235">Por exemplo, use do em vez de não e imprima em vez de não imprimir.</span><span class="sxs-lookup"><span data-stu-id="27729-235">For example, use do instead of do not, and print instead of do not print.</span></span>
+-   <span data-ttu-id="27729-236">Descreva apenas a opção com o rótulo.</span><span class="sxs-lookup"><span data-stu-id="27729-236">Describe just the option with the label.</span></span> <span data-ttu-id="27729-237">Mantenha os rótulos breves para que seja fácil consultá-los em mensagens e documentação.</span><span class="sxs-lookup"><span data-stu-id="27729-237">Keep labels brief so it's easy to refer to them in messages and documentation.</span></span> <span data-ttu-id="27729-238">Se a opção exigir mais explicações, forneça a explicação em um controle de [texto estático](glossary.md) usando frases completas e pontuação final.</span><span class="sxs-lookup"><span data-stu-id="27729-238">If the option requires further explanation, provide the explanation in a [static text](glossary.md) control using complete sentences and ending punctuation.</span></span>
+
+    ![captura de tela de botões de opção com texto explicativo](images/radio-buttons-image16.png)
+
+    <span data-ttu-id="27729-240">Neste exemplo, as opções são explicadas usando controles de texto estáticos separados.</span><span class="sxs-lookup"><span data-stu-id="27729-240">In this example, the options are explained using separate static text controls.</span></span>
+
+    > [!Note]  
+    > <span data-ttu-id="27729-241">Adicionar uma explicação a um botão de opção não significa que você precisa fornecer explicações para todos os botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-241">Adding an explanation to one radio button doesn't mean that you have to provide explanations for all the radio buttons.</span></span> <span data-ttu-id="27729-242">Forneça as informações relevantes no rótulo, se possível, e use explicações somente quando necessário.</span><span class="sxs-lookup"><span data-stu-id="27729-242">Provide the relevant information in the label if you can, and use explanations only when necessary.</span></span> <span data-ttu-id="27729-243">Não apenas redeclare o rótulo para fins de consistência.</span><span class="sxs-lookup"><span data-stu-id="27729-243">Don't merely restate the label for consistency.</span></span>
+
+     
+
+-   <span data-ttu-id="27729-244">**Se uma opção for altamente recomendável, adicione "(recomendado)" ao rótulo.**</span><span class="sxs-lookup"><span data-stu-id="27729-244">**If an option is strongly recommended, add "(recommended)" to the label.**</span></span> <span data-ttu-id="27729-245">Certifique-se de adicionar ao rótulo de controle, não às anotações complementares.</span><span class="sxs-lookup"><span data-stu-id="27729-245">Be sure to add to the control label, not the supplemental notes.</span></span>
+-   <span data-ttu-id="27729-246">**Se uma opção for destinada apenas a usuários avançados, adicione "(avançado)" ao rótulo.**</span><span class="sxs-lookup"><span data-stu-id="27729-246">**If an option is intended only for advanced users, add "(advanced)" to the label.**</span></span> <span data-ttu-id="27729-247">Certifique-se de adicionar ao rótulo de controle, não às anotações complementares.</span><span class="sxs-lookup"><span data-stu-id="27729-247">Be sure to add to the control label, not the supplemental notes.</span></span>
+-   <span data-ttu-id="27729-248">Se você precisar usar rótulos de várias linhas, alinhe a parte superior do rótulo com o botão de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-248">If you must use multi-line labels, align the top of the label with the radio button.</span></span>
+-   <span data-ttu-id="27729-249">Não use um controle subordinado, os valores que ele contém ou seu rótulo de unidades para criar uma frase ou frase.</span><span class="sxs-lookup"><span data-stu-id="27729-249">Don't use a subordinate control, the values it contains, or its units label to create a sentence or phrase.</span></span> <span data-ttu-id="27729-250">Esse tipo de design não é localizável porque a estrutura da frase varia de acordo com a linguagem.</span><span class="sxs-lookup"><span data-stu-id="27729-250">Such a design isn't localizable because sentence structure varies with language.</span></span>
+
+### <a name="radio-button-group-labels"></a><span data-ttu-id="27729-251">Rótulos do grupo de botões de opção</span><span class="sxs-lookup"><span data-stu-id="27729-251">Radio button group labels</span></span>
+
+-   <span data-ttu-id="27729-252">Use o rótulo de grupo para explicar a finalidade do grupo, não como fazer a seleção.</span><span class="sxs-lookup"><span data-stu-id="27729-252">Use the group label to explain the purpose of the group, not how to make the selection.</span></span> <span data-ttu-id="27729-253">Suponha que os usuários saibam como usar botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-253">Assume that users know how to use radio buttons.</span></span> <span data-ttu-id="27729-254">Por exemplo, não diga "Selecione uma das opções a seguir".</span><span class="sxs-lookup"><span data-stu-id="27729-254">For example, don't say "Select one of the following choices".</span></span>
+-   <span data-ttu-id="27729-255">Todos os grupos de botões de opção precisam de rótulos.</span><span class="sxs-lookup"><span data-stu-id="27729-255">All radio button groups need labels.</span></span> <span data-ttu-id="27729-256">Grave o rótulo como uma palavra ou frase, não como uma frase, terminando com dois-pontos usando texto estático ou uma caixa de grupo.</span><span class="sxs-lookup"><span data-stu-id="27729-256">Write the label as a word or phrase, not as a sentence, ending with a colon using static text or a group box.</span></span>
+
+    <span data-ttu-id="27729-257">**Exceção:** Omita o rótulo se for meramente uma recondição de uma [instrução principal](glossary.md)da caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="27729-257">**Exception:** Omit the label if it is merely a restatement of a dialog box's [main instruction](glossary.md).</span></span> <span data-ttu-id="27729-258">Nesse caso, a instrução principal leva os dois-pontos (a menos que seja uma pergunta) e a chave de acesso (se houver).</span><span class="sxs-lookup"><span data-stu-id="27729-258">In this case, the main instruction takes the colon (unless it's a question) and access key (if there is one).</span></span>
+
+    <span data-ttu-id="27729-259">**Aceitável:**</span><span class="sxs-lookup"><span data-stu-id="27729-259">**Acceptable:**</span></span>
+
+    ![<span data-ttu-id="27729-260">captura de tela do rótulo do grupo de botões de opção redundante</span><span class="sxs-lookup"><span data-stu-id="27729-260">screen shot of redundant radio-button group label</span></span> ](images/radio-buttons-image17.png)
+
+    <span data-ttu-id="27729-261">Neste exemplo, o rótulo do grupo de botões de opção é apenas uma recondição da instrução principal.</span><span class="sxs-lookup"><span data-stu-id="27729-261">In this example, the radio button group label is just a restatement of the main instruction.</span></span>
+
+    <span data-ttu-id="27729-262">**Melhor:**</span><span class="sxs-lookup"><span data-stu-id="27729-262">**Better:**</span></span>
+
+    ![<span data-ttu-id="27729-263">captura de tela da instrução Main do botão de opção</span><span class="sxs-lookup"><span data-stu-id="27729-263">screen shot of radio button main instruction only</span></span> ](images/radio-buttons-image18.png)
+
+    <span data-ttu-id="27729-264">Neste exemplo, o rótulo redundante é removido, portanto, a instrução principal leva os dois-pontos.</span><span class="sxs-lookup"><span data-stu-id="27729-264">In this example, the redundant label is removed, so the main instruction takes the colon.</span></span>
+
+-   <span data-ttu-id="27729-265">Não atribua uma chave de acesso ao rótulo.</span><span class="sxs-lookup"><span data-stu-id="27729-265">Don't assign an access key to the label.</span></span> <span data-ttu-id="27729-266">Fazer isso não é necessário e torna mais difícil atribuir as outras chaves de acesso.</span><span class="sxs-lookup"><span data-stu-id="27729-266">Doing so isn't necessary and it makes the other access keys harder to assign.</span></span>
+    -   <span data-ttu-id="27729-267">**Exceção:** Se nem todos os controles puderem ter chaves de acesso exclusivas, você poderá atribuir uma chave de acesso ao rótulo em vez dos controles individuais.</span><span class="sxs-lookup"><span data-stu-id="27729-267">**Exception:** If not all controls can have unique access keys, you can assign an access key to the label instead of the individual controls.</span></span> <span data-ttu-id="27729-268">Para obter mais informações, consulte [teclado](inter-keyboard.md).</span><span class="sxs-lookup"><span data-stu-id="27729-268">For more information, see [Keyboard](inter-keyboard.md).</span></span>
+
+## <a name="documentation"></a><span data-ttu-id="27729-269">Documentação</span><span class="sxs-lookup"><span data-stu-id="27729-269">Documentation</span></span>
+
+<span data-ttu-id="27729-270">Ao fazer referência a botões de opção:</span><span class="sxs-lookup"><span data-stu-id="27729-270">When referring to radio buttons:</span></span>
+
+-   <span data-ttu-id="27729-271">Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua a tecla de acesso sublinhado ou dois-pontos.</span><span class="sxs-lookup"><span data-stu-id="27729-271">Use the exact label text, including its capitalization, but don't include the access key underscore or colon.</span></span>
+-   <span data-ttu-id="27729-272">Em programação e outras documentações técnicas, consulte botões de opção como botões de opção.</span><span class="sxs-lookup"><span data-stu-id="27729-272">In programming and other technical documentation, refer to radio buttons as radio buttons.</span></span> <span data-ttu-id="27729-273">Em qualquer outro lugar, use os botões de opção, especialmente na documentação do usuário.</span><span class="sxs-lookup"><span data-stu-id="27729-273">Everywhere else use option buttons, especially in user documentation.</span></span>
+-   <span data-ttu-id="27729-274">Para descrever a interação do usuário, use clique.</span><span class="sxs-lookup"><span data-stu-id="27729-274">To describe user interaction, use click.</span></span>
+-   <span data-ttu-id="27729-275">Quando possível, formate o rótulo usando texto em negrito.</span><span class="sxs-lookup"><span data-stu-id="27729-275">When possible, format the label using bold text.</span></span> <span data-ttu-id="27729-276">Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.</span><span class="sxs-lookup"><span data-stu-id="27729-276">Otherwise, put the label in quotation marks only if required to prevent confusion.</span></span>
+
+<span data-ttu-id="27729-277">Exemplo: clique em **página atual** e em **OK**.</span><span class="sxs-lookup"><span data-stu-id="27729-277">Example: Click **Current page**, and then click **OK**.</span></span>
+
+ 
+
+ 

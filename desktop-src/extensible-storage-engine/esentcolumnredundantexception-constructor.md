@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172129"
 ---
-# <a name="esentcolumnredundantexception-constructor"></a><span data-ttu-id="6c0b4-103">Construtor EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="6c0b4-103">EsentColumnRedundantException constructor</span></span>
+# <a name="esentcolumnredundantexception-constructor"></a><span data-ttu-id="f3909-103">Construtor EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="f3909-103">EsentColumnRedundantException constructor</span></span>
 
-<span data-ttu-id="6c0b4-104">Inicializa uma nova instância da classe EsentColumnRedundantException.</span><span class="sxs-lookup"><span data-stu-id="6c0b4-104">Initializes a new instance of the EsentColumnRedundantException class.</span></span>
+<span data-ttu-id="f3909-104">Inicializa uma nova instância da classe EsentColumnRedundantException.</span><span class="sxs-lookup"><span data-stu-id="f3909-104">Initializes a new instance of the EsentColumnRedundantException class.</span></span>
 
-<span data-ttu-id="6c0b4-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6c0b4-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="6c0b4-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6c0b4-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="f3909-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f3909-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="f3909-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f3909-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6c0b4-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6c0b4-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f3909-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f3909-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentColumnRedundantException()
 public EsentColumnRedundantException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6c0b4-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6c0b4-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f3909-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="f3909-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="6c0b4-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6c0b4-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="f3909-109">Referência</span><span class="sxs-lookup"><span data-stu-id="f3909-109">Reference</span></span>
 
-[<span data-ttu-id="6c0b4-110">Classe EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="6c0b4-110">EsentColumnRedundantException class</span></span>](./esentcolumnredundantexception-class.md)
+[<span data-ttu-id="f3909-110">Classe EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="f3909-110">EsentColumnRedundantException class</span></span>](./esentcolumnredundantexception-class.md)
 
-[<span data-ttu-id="6c0b4-111">Membros do EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="6c0b4-111">EsentColumnRedundantException members</span></span>](./esentcolumnredundantexception-members.md)
+[<span data-ttu-id="f3909-111">Membros do EsentColumnRedundantException</span><span class="sxs-lookup"><span data-stu-id="f3909-111">EsentColumnRedundantException members</span></span>](./esentcolumnredundantexception-members.md)
 
-[<span data-ttu-id="6c0b4-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="6c0b4-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="f3909-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f3909-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

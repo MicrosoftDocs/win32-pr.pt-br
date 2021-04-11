@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172141"
 ---
-# <a name="apiresetindexrange-method"></a><span data-ttu-id="84f6f-103">Método API. ResetIndexRange</span><span class="sxs-lookup"><span data-stu-id="84f6f-103">Api.ResetIndexRange method</span></span>
+# <a name="apiresetindexrange-method"></a><span data-ttu-id="05849-103">Método API. ResetIndexRange</span><span class="sxs-lookup"><span data-stu-id="05849-103">Api.ResetIndexRange method</span></span>
 
-<span data-ttu-id="84f6f-104">Remove um intervalo de índice criado com [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) ou [TrySetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.trysetindexrange-method.md).</span><span class="sxs-lookup"><span data-stu-id="84f6f-104">Removes an index range created with [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) or [TrySetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.trysetindexrange-method.md).</span></span> <span data-ttu-id="84f6f-105">Se nenhum intervalo de índice estiver presente, esse método não fará nada.</span><span class="sxs-lookup"><span data-stu-id="84f6f-105">If no index range is present this method does nothing.</span></span>
+<span data-ttu-id="05849-104">Remove um intervalo de índice criado com [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) ou [TrySetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.trysetindexrange-method.md).</span><span class="sxs-lookup"><span data-stu-id="05849-104">Removes an index range created with [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) or [TrySetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.trysetindexrange-method.md).</span></span> <span data-ttu-id="05849-105">Se nenhum intervalo de índice estiver presente, esse método não fará nada.</span><span class="sxs-lookup"><span data-stu-id="05849-105">If no index range is present this method does nothing.</span></span>
 
-<span data-ttu-id="84f6f-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="84f6f-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="84f6f-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="84f6f-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="05849-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="05849-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="05849-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="05849-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="84f6f-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="84f6f-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="05849-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="05849-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -58,26 +58,26 @@ public static void ResetIndexRange(
 )
 ```
 
-#### <a name="parameters"></a><span data-ttu-id="84f6f-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="84f6f-109">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="05849-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="05849-109">Parameters</span></span>
 
-  - <span data-ttu-id="84f6f-110">sesid</span><span class="sxs-lookup"><span data-stu-id="84f6f-110">sesid</span></span>  
-    <span data-ttu-id="84f6f-111">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="84f6f-111">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
+  - <span data-ttu-id="05849-110">sesid</span><span class="sxs-lookup"><span data-stu-id="05849-110">sesid</span></span>  
+    <span data-ttu-id="05849-111">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="05849-111">Type: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)</span></span>  
     
-    <span data-ttu-id="84f6f-112">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="84f6f-112">The session to use.</span></span>
+    <span data-ttu-id="05849-112">A sessão a ser usada.</span><span class="sxs-lookup"><span data-stu-id="05849-112">The session to use.</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="84f6f-113">TableID</span><span class="sxs-lookup"><span data-stu-id="84f6f-113">tableid</span></span>  
-    <span data-ttu-id="84f6f-114">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="84f6f-114">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
+  - <span data-ttu-id="05849-113">TableID</span><span class="sxs-lookup"><span data-stu-id="05849-113">tableid</span></span>  
+    <span data-ttu-id="05849-114">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)</span><span class="sxs-lookup"><span data-stu-id="05849-114">Type: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)</span></span>  
     
-    <span data-ttu-id="84f6f-115">O cursor no qual o intervalo de índice será removido.</span><span class="sxs-lookup"><span data-stu-id="84f6f-115">The cursor to remove the index range on.</span></span>
+    <span data-ttu-id="05849-115">O cursor no qual o intervalo de índice será removido.</span><span class="sxs-lookup"><span data-stu-id="05849-115">The cursor to remove the index range on.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="84f6f-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="84f6f-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="05849-116">Confira também</span><span class="sxs-lookup"><span data-stu-id="05849-116">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="84f6f-117">Referência</span><span class="sxs-lookup"><span data-stu-id="84f6f-117">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="05849-117">Referência</span><span class="sxs-lookup"><span data-stu-id="05849-117">Reference</span></span>
 
-[<span data-ttu-id="84f6f-118">Classe de API</span><span class="sxs-lookup"><span data-stu-id="84f6f-118">Api class</span></span>](./api-class.md)
+[<span data-ttu-id="05849-118">Classe de API</span><span class="sxs-lookup"><span data-stu-id="05849-118">Api class</span></span>](./api-class.md)
 
-[<span data-ttu-id="84f6f-119">Membros da API</span><span class="sxs-lookup"><span data-stu-id="84f6f-119">Api members</span></span>](./api-members.md)
+[<span data-ttu-id="05849-119">Membros da API</span><span class="sxs-lookup"><span data-stu-id="05849-119">Api members</span></span>](./api-members.md)
 
-[<span data-ttu-id="84f6f-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="84f6f-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="05849-120">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="05849-120">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

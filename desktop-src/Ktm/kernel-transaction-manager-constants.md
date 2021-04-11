@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172169"
 ---
-# <a name="kernel-transaction-manager-constants"></a><span data-ttu-id="20593-103">Constantes do Gerenciador de transações do kernel</span><span class="sxs-lookup"><span data-stu-id="20593-103">Kernel Transaction Manager Constants</span></span>
+# <a name="kernel-transaction-manager-constants"></a><span data-ttu-id="542ea-103">Constantes do Gerenciador de transações do kernel</span><span class="sxs-lookup"><span data-stu-id="542ea-103">Kernel Transaction Manager Constants</span></span>
 
-<span data-ttu-id="20593-104">O KTM usa as seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="20593-104">KTM uses the following constants:</span></span>
+<span data-ttu-id="542ea-104">O KTM usa as seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="542ea-104">KTM uses the following constants:</span></span>
 
--   [<span data-ttu-id="20593-105">**Máscaras de acesso à inscrição**</span><span class="sxs-lookup"><span data-stu-id="20593-105">**Enlistment Access Masks**</span></span>](enlistment-access-masks.md)
--   [<span data-ttu-id="20593-106">**máscara de notificação \_**</span><span class="sxs-lookup"><span data-stu-id="20593-106">**NOTIFICATION\_MASK**</span></span>](notification-mask.md)
--   [<span data-ttu-id="20593-107">**Máscaras de acesso do Gerenciador de recursos**</span><span class="sxs-lookup"><span data-stu-id="20593-107">**Resource Manager Access Masks**</span></span>](resource-manager-access-masks.md)
--   [<span data-ttu-id="20593-108">**Máscaras de acesso à transação**</span><span class="sxs-lookup"><span data-stu-id="20593-108">**Transaction Access Masks**</span></span>](transaction-access-masks.md)
--   [<span data-ttu-id="20593-109">**Máscaras de acesso do Gerenciador de transações**</span><span class="sxs-lookup"><span data-stu-id="20593-109">**Transaction Manager Access Masks**</span></span>](transaction-manager-access-masks.md)
+-   [<span data-ttu-id="542ea-105">**Máscaras de acesso à inscrição**</span><span class="sxs-lookup"><span data-stu-id="542ea-105">**Enlistment Access Masks**</span></span>](enlistment-access-masks.md)
+-   [<span data-ttu-id="542ea-106">**máscara de notificação \_**</span><span class="sxs-lookup"><span data-stu-id="542ea-106">**NOTIFICATION\_MASK**</span></span>](notification-mask.md)
+-   [<span data-ttu-id="542ea-107">**Máscaras de acesso do Gerenciador de recursos**</span><span class="sxs-lookup"><span data-stu-id="542ea-107">**Resource Manager Access Masks**</span></span>](resource-manager-access-masks.md)
+-   [<span data-ttu-id="542ea-108">**Máscaras de acesso à transação**</span><span class="sxs-lookup"><span data-stu-id="542ea-108">**Transaction Access Masks**</span></span>](transaction-access-masks.md)
+-   [<span data-ttu-id="542ea-109">**Máscaras de acesso do Gerenciador de transações**</span><span class="sxs-lookup"><span data-stu-id="542ea-109">**Transaction Manager Access Masks**</span></span>](transaction-manager-access-masks.md)
 
  
 
