@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172210"
 ---
-# <a name="jet_opentemporarytable-constructor"></a><span data-ttu-id="97249-103">Construtor de JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="97249-103">JET_OPENTEMPORARYTABLE constructor</span></span>
+# <a name="jet_opentemporarytable-constructor"></a><span data-ttu-id="9cb4e-103">Construtor de JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="9cb4e-103">JET_OPENTEMPORARYTABLE constructor</span></span>
 
-<span data-ttu-id="97249-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="97249-104">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
-<span data-ttu-id="97249-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="97249-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="9cb4e-104">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="9cb4e-104">**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)</span></span>  
+<span data-ttu-id="9cb4e-105">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="9cb4e-105">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="97249-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="97249-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9cb4e-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="9cb4e-106">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,12 +50,12 @@ Dim instance As New JET_OPENTEMPORARYTABLE()
 public JET_OPENTEMPORARYTABLE()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="97249-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="97249-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9cb4e-107">Confira também</span><span class="sxs-lookup"><span data-stu-id="9cb4e-107">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="97249-108">Referência</span><span class="sxs-lookup"><span data-stu-id="97249-108">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="9cb4e-108">Referência</span><span class="sxs-lookup"><span data-stu-id="9cb4e-108">Reference</span></span>
 
-[<span data-ttu-id="97249-109">Classe JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="97249-109">JET_OPENTEMPORARYTABLE class</span></span>](./jet-opentemporarytable-class.md)
+[<span data-ttu-id="9cb4e-109">Classe JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="9cb4e-109">JET_OPENTEMPORARYTABLE class</span></span>](./jet-opentemporarytable-class.md)
 
-[<span data-ttu-id="97249-110">Membros do JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="97249-110">JET_OPENTEMPORARYTABLE members</span></span>](./jet-opentemporarytable-members.md)
+[<span data-ttu-id="9cb4e-110">Membros do JET_OPENTEMPORARYTABLE</span><span class="sxs-lookup"><span data-stu-id="9cb4e-110">JET_OPENTEMPORARYTABLE members</span></span>](./jet-opentemporarytable-members.md)
 
-[<span data-ttu-id="97249-111">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="97249-111">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)
+[<span data-ttu-id="9cb4e-111">Namespace Microsoft. ISAM. ESENT. Interop. vista</span><span class="sxs-lookup"><span data-stu-id="9cb4e-111">Microsoft.Isam.Esent.Interop.Vista namespace</span></span>](./microsoft.isam.esent.interop.vista-namespace.md)

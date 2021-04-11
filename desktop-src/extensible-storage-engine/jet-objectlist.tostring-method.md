@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172211"
 ---
-# <a name="jet_objectlisttostring-method"></a><span data-ttu-id="795a6-103">JET_OBJECTLIST. Método ToString</span><span class="sxs-lookup"><span data-stu-id="795a6-103">JET_OBJECTLIST.ToString method</span></span>
+# <a name="jet_objectlisttostring-method"></a><span data-ttu-id="87a98-103">JET_OBJECTLIST. Método ToString</span><span class="sxs-lookup"><span data-stu-id="87a98-103">JET_OBJECTLIST.ToString method</span></span>
 
-<span data-ttu-id="795a6-104">Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_OBJECTLIST](./jet-objectlist-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="795a6-104">Returns a [String](/dotnet/api/system.string) that represents the current [JET_OBJECTLIST](./jet-objectlist-class.md).</span></span>
+<span data-ttu-id="87a98-104">Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_OBJECTLIST](./jet-objectlist-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="87a98-104">Returns a [String](/dotnet/api/system.string) that represents the current [JET_OBJECTLIST](./jet-objectlist-class.md).</span></span>
 
-<span data-ttu-id="795a6-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="795a6-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="795a6-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="795a6-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="87a98-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="87a98-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="87a98-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="87a98-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="795a6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="795a6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="87a98-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="87a98-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="795a6-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="795a6-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="87a98-108">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="87a98-108">Return value</span></span>
 
-<span data-ttu-id="795a6-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="795a6-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
-<span data-ttu-id="795a6-110">Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_OBJECTLIST](./jet-objectlist-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="795a6-110">A [String](/dotnet/api/system.string) that represents the current [JET_OBJECTLIST](./jet-objectlist-class.md).</span></span>  
+<span data-ttu-id="87a98-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="87a98-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="87a98-110">Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_OBJECTLIST](./jet-objectlist-class.md)atual.</span><span class="sxs-lookup"><span data-stu-id="87a98-110">A [String](/dotnet/api/system.string) that represents the current [JET_OBJECTLIST](./jet-objectlist-class.md).</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="795a6-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="795a6-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87a98-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="87a98-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="795a6-112">Referência</span><span class="sxs-lookup"><span data-stu-id="795a6-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="87a98-112">Referência</span><span class="sxs-lookup"><span data-stu-id="87a98-112">Reference</span></span>
 
-[<span data-ttu-id="795a6-113">Classe JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="795a6-113">JET_OBJECTLIST class</span></span>](./jet-objectlist-class.md)
+[<span data-ttu-id="87a98-113">Classe JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="87a98-113">JET_OBJECTLIST class</span></span>](./jet-objectlist-class.md)
 
-[<span data-ttu-id="795a6-114">Membros do JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="795a6-114">JET_OBJECTLIST members</span></span>](./jet-objectlist-members.md)
+[<span data-ttu-id="87a98-114">Membros do JET_OBJECTLIST</span><span class="sxs-lookup"><span data-stu-id="87a98-114">JET_OBJECTLIST members</span></span>](./jet-objectlist-members.md)
 
-[<span data-ttu-id="795a6-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="795a6-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="87a98-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="87a98-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
