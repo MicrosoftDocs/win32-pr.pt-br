@@ -1,0 +1,33 @@
+---
+description: Quando um thread está se comunicando ativamente com um dispositivo WIA (aquisição de imagem do Windows) (por exemplo, transferindo dados ou gravando Propriedades do dispositivo) WIA &\# 0034; bloqueios&\# 0034; o dispositivo.
+ms.assetid: 59533937-284a-4732-a73b-d2e0b5a9a370
+title: Comunicando-se com um dispositivo WIA em vários threads ou aplicativos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1a7a4b518093c3a0fc09534d67e22e5349d44d09
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104169543"
+---
+# <a name="communicating-with-a-wia-device-in-multiple-threads-or-applications"></a><span data-ttu-id="3dd50-103">Comunicando-se com um dispositivo WIA em vários threads ou aplicativos</span><span class="sxs-lookup"><span data-stu-id="3dd50-103">Communicating with a WIA Device in Multiple Threads or Applications</span></span>
+
+<span data-ttu-id="3dd50-104">Quando um thread está se comunicando ativamente com um dispositivo WIA (aquisição de imagem do Windows) (por exemplo, transferindo dados ou gravando Propriedades do dispositivo), o WIA "bloqueia" o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-104">When a thread is actively communicating with a Windows Image Acquisition (WIA) device (for example, transferring data or writing device properties) WIA "locks" the device.</span></span> <span data-ttu-id="3dd50-105">Quando um dispositivo está bloqueado, nenhum outro thread ou processo pode se comunicar ativamente com esse dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-105">When a device is locked, no other threads or processes can actively communicate with that device.</span></span>
+
+<span data-ttu-id="3dd50-106">O WIA não proíbe que vários threads ou processos mantenham conexões com um único dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-106">WIA does not prohibit multiple threads or processes from maintaining connections to a single device.</span></span> <span data-ttu-id="3dd50-107">Ou seja, um dispositivo está bloqueado somente durante a comunicação real e dois ou mais aplicativos podem ter um único dispositivo selecionado simultaneamente.</span><span class="sxs-lookup"><span data-stu-id="3dd50-107">That is, a device is locked only during the actual communication, and two or more applications can simultaneously have a single device selected.</span></span>
+
+<span data-ttu-id="3dd50-108">O WIA cria uma árvore de itens separada sempre que qualquer thread ou aplicativo chama [**IWiaDevMgr:: CreateDevice**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-createdevice) ou [**IWiaDevMgr2:: CreateDevice**](-wia-iwiadevmgr2-createdevice.md) para criar uma instância desse dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-108">WIA creates a separate item tree each time any thread or application calls [**IWiaDevMgr::CreateDevice**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-createdevice) or [**IWiaDevMgr2::CreateDevice**](-wia-iwiadevmgr2-createdevice.md) to create an instance of that device.</span></span> <span data-ttu-id="3dd50-109">O WIA mantém informações de estado separadas para cada árvore de itens.</span><span class="sxs-lookup"><span data-stu-id="3dd50-109">WIA maintains separate state information for each item tree.</span></span> <span data-ttu-id="3dd50-110">Por exemplo, se um thread criar duas instâncias de um verificador específico, ele poderá definir resoluções de verificação diferentes para as duas instâncias.</span><span class="sxs-lookup"><span data-stu-id="3dd50-110">For example, if a thread creates two instances of a particular scanner, it can set different scan resolutions for the two instances.</span></span> <span data-ttu-id="3dd50-111">Quando [**IWiaDataTransfer:: idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata) é chamado em uma determinada instância, o WIA carrega as propriedades associadas a essa instância para o dispositivo antes que a verificação real ocorra.</span><span class="sxs-lookup"><span data-stu-id="3dd50-111">When [**IWiaDataTransfer::idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata) is called on a particular instance, WIA loads the properties associated with that instance to the device before the actual scan takes place.</span></span> <span data-ttu-id="3dd50-112">Isso não afeta o estado da outra instância do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-112">This does not affect the state of the other instance of the device.</span></span>
+
+<span data-ttu-id="3dd50-113">Se um thread tiver um dispositivo bloqueado (está ativamente se comunicando com esse dispositivo) e outro thread tentar chamar um método que se comunica ativamente com o dispositivo, o método retornará um erro de \_ erro de WIA \_ ocupado.</span><span class="sxs-lookup"><span data-stu-id="3dd50-113">If a thread currently has a device locked (it is actively communicating with that device) and another thread attempts to call a method that actively communicates with the device, the method returns a WIA\_ERROR\_BUSY error.</span></span>
+
+<span data-ttu-id="3dd50-114">Normalmente, a leitura e a gravação das propriedades do dispositivo leva pouco tempo que essas operações raramente causam um conflito.</span><span class="sxs-lookup"><span data-stu-id="3dd50-114">Typically, reading and writing device properties takes so little time that these operations rarely cause a conflict.</span></span> <span data-ttu-id="3dd50-115">A transferência de dados, no entanto, geralmente leva mais tempo e, portanto, é mais provável que você crie conflitos de acesso ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-115">Transferring data, however, usually takes longer, and therefore is more likely to create device access conflicts.</span></span> <span data-ttu-id="3dd50-116">É uma programação de som para evitar operações de dispositivo demoradas (transferências de dados) simultaneamente em threads separados dentro de um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3dd50-116">It is sound programming to avoid lengthy device operations (data transfers) concurrently in separate threads within an application.</span></span>
+
+<span data-ttu-id="3dd50-117">Um aplicativo nunca deve supor que é o único aplicativo que está se comunicando com um dispositivo WIA quando ele é iniciado.</span><span class="sxs-lookup"><span data-stu-id="3dd50-117">An application should never assume that it is the only application that is communicating with a WIA device when it starts.</span></span>
+
+ 
+
+ 
+
+
+

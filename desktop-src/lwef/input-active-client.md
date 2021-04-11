@@ -1,0 +1,32 @@
+---
+title: Input-Active cliente
+description: Input-Active cliente
+ms.assetid: b46e91d3-eca7-4a4a-b1ce-27b5e6ad92a5
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3223ddc7bb412b333d628f93cc56b27efd0abb7a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104292502"
+---
+# <a name="input-active-client"></a><span data-ttu-id="c3db5-103">Input-Active cliente</span><span class="sxs-lookup"><span data-stu-id="c3db5-103">Input-Active Client</span></span>
+
+<span data-ttu-id="c3db5-104">\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="c3db5-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+<span data-ttu-id="c3db5-105">Como vários aplicativos cliente podem compartilhar o mesmo caractere e, como vários clientes podem usar caracteres diferentes ao mesmo tempo, o servidor designa um cliente como o cliente de *entrada-ativo* e envia a entrada de mouse e voz somente para esse aplicativo cliente.</span><span class="sxs-lookup"><span data-stu-id="c3db5-105">Because multiple client applications can share the same character and because multiple clients can use different characters at the same time, the server designates one client as the *input-active* client and sends mouse and voice input only to that client application.</span></span> <span data-ttu-id="c3db5-106">Isso mantém o gerenciamento ordenado da entrada do usuário, para que um cliente apropriado responda à entrada.</span><span class="sxs-lookup"><span data-stu-id="c3db5-106">This maintains the orderly management of user input, so that an appropriate client responds to the input.</span></span>
+
+<span data-ttu-id="c3db5-107">Normalmente, a interação do usuário determina qual aplicativo cliente torna-se ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-107">Typically, user interaction determines which client application becomes input-active.</span></span> <span data-ttu-id="c3db5-108">Por exemplo, se o usuário clicar em um caractere, o aplicativo cliente desse caractere se tornará entrada-ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-108">For example, if the user clicks a character, that character's client application becomes input-active.</span></span> <span data-ttu-id="c3db5-109">Da mesma forma, se um usuário falasse o nome de um caractere, ele se tornará entrada-ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-109">Similarly, if a user speaks the name of a character, it becomes input-active.</span></span> <span data-ttu-id="c3db5-110">Além disso, quando o servidor processa o método [**show**](show-method.md) de um caractere, o cliente desse caractere torna-se ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-110">Also, when the server processes a character's [**Show**](show-method.md) method, the client of that character becomes input-active.</span></span>
+
+<span data-ttu-id="c3db5-111">Quando um caractere estiver oculto, o cliente desse caractere não estará mais ativo para esse caractere.</span><span class="sxs-lookup"><span data-stu-id="c3db5-111">When a character is hidden, the client of that character will no longer be input-active for that character.</span></span> <span data-ttu-id="c3db5-112">O servidor torna automaticamente o cliente ativo de qualquer caractere restante (s) entrada-ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-112">The server automatically makes the active client of any remaining character(s) input-active.</span></span> <span data-ttu-id="c3db5-113">Quando todos os caracteres estão ocultos, nenhum cliente é inserido-ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-113">When all characters are hidden, no client is input-active.</span></span> <span data-ttu-id="c3db5-114">No entanto, nessa situação, se o usuário pressionar a tecla de atalho de escuta, o Agent continuará a escutar seus comandos (usando o mecanismo de reconhecimento de fala que corresponde ao caractere superior do último cliente de entrada-ativo).</span><span class="sxs-lookup"><span data-stu-id="c3db5-114">However, in this situation, if the user presses the Listening hotkey, Agent will continue to listen for its commands (using the speech recognition engine matching the topmost character of the last input-active client).</span></span>
+
+<span data-ttu-id="c3db5-115">Se vários clientes estiverem compartilhando o mesmo caractere, o servidor designará seu *cliente ativo* como entrada-cliente ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-115">If multiple clients are sharing the same character, the server will designate its *active client* as input-active client.</span></span> <span data-ttu-id="c3db5-116">O caractere ativo é o primeiro na ordem do cliente.</span><span class="sxs-lookup"><span data-stu-id="c3db5-116">The active character is the topmost in the client order.</span></span> <span data-ttu-id="c3db5-117">Você pode definir seu cliente para ser o cliente ativo ou não ativo usando o método [**Ativar**](activate-method.md) .</span><span class="sxs-lookup"><span data-stu-id="c3db5-117">You can set your client to be the active or not-active client using the [**Activate**](activate-method.md) method.</span></span> <span data-ttu-id="c3db5-118">Você também pode usar o método **Activate** para tornar explicitamente a entrada do cliente-ativa; Mas, para evitar a interrupção de outros clientes do caractere, você deve fazer isso somente quando o aplicativo cliente estiver ativo.</span><span class="sxs-lookup"><span data-stu-id="c3db5-118">You can also use the **Activate** method to explicitly make your client input-active; but to avoid disrupting other clients of the character, you should do so only when your client application is active.</span></span> <span data-ttu-id="c3db5-119">Por exemplo, se o usuário clicar na janela do aplicativo, ativando seu aplicativo, você poderá chamar o método **Activate** para receber e processar a entrada de mouse e fala direcionada para o caractere.</span><span class="sxs-lookup"><span data-stu-id="c3db5-119">For example, if the user clicks your application's window, activating your application, you can call the **Activate** method to receive and process mouse and speech input directed to the character.</span></span>
+
+ 
+
+ 
+
+
+
+
