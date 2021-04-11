@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005130"
 ---
-# <a name="itssborchestrationnotifysink-methods"></a><span data-ttu-id="7f584-103">Métodos ITsSbOrchestrationNotifySink</span><span class="sxs-lookup"><span data-stu-id="7f584-103">ITsSbOrchestrationNotifySink Methods</span></span>
+# <a name="itssborchestrationnotifysink-methods"></a><span data-ttu-id="c1db7-103">Métodos ITsSbOrchestrationNotifySink</span><span class="sxs-lookup"><span data-stu-id="c1db7-103">ITsSbOrchestrationNotifySink Methods</span></span>
 
-<span data-ttu-id="7f584-104">A interface [**ITsSbOrchestrationNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestrationnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="7f584-104">The [**ITsSbOrchestrationNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestrationnotifysink) interface exposes the following methods.</span></span>
+<span data-ttu-id="c1db7-104">A interface [**ITsSbOrchestrationNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestrationnotifysink) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="c1db7-104">The [**ITsSbOrchestrationNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestrationnotifysink) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="7f584-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="7f584-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c1db7-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c1db7-105">In this section</span></span>
 
--   [<span data-ttu-id="7f584-106">**Método OnReadyToConnect**</span><span class="sxs-lookup"><span data-stu-id="7f584-106">**OnReadyToConnect method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssborchestrationnotifysink-onreadytoconnect)
+-   [<span data-ttu-id="c1db7-106">**Método OnReadyToConnect**</span><span class="sxs-lookup"><span data-stu-id="c1db7-106">**OnReadyToConnect method**</span></span>](/windows/desktop/api/sbtsv/nf-sbtsv-itssborchestrationnotifysink-onreadytoconnect)
 
  
 

@@ -13,11 +13,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005104"
 ---
-# <a name="nummethods"></a><span data-ttu-id="c8cec-104">NumMethods</span><span class="sxs-lookup"><span data-stu-id="c8cec-104">NumMethods</span></span>
+# <a name="nummethods"></a><span data-ttu-id="5e865-104">NumMethods</span><span class="sxs-lookup"><span data-stu-id="5e865-104">NumMethods</span></span>
 
-<span data-ttu-id="c8cec-105">Contém o número de métodos na interface associada, incluindo métodos de interfaces derivadas.</span><span class="sxs-lookup"><span data-stu-id="c8cec-105">Contains the number of methods in the associated interface, including methods from derived interfaces.</span></span>
+<span data-ttu-id="5e865-105">Contém o número de métodos na interface associada, incluindo métodos de interfaces derivadas.</span><span class="sxs-lookup"><span data-stu-id="5e865-105">Contains the number of methods in the associated interface, including methods from derived interfaces.</span></span>
 
-## <a name="registry-entry"></a><span data-ttu-id="c8cec-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="c8cec-106">Registry Entry</span></span>
+## <a name="registry-entry"></a><span data-ttu-id="5e865-106">Entrada do Registro</span><span class="sxs-lookup"><span data-stu-id="5e865-106">Registry Entry</span></span>
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
@@ -25,15 +25,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
       NumMethods = value
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c8cec-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="c8cec-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5e865-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="5e865-107">Remarks</span></span>
 
-<span data-ttu-id="c8cec-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="c8cec-108">This is a **REG\_SZ** value.</span></span>
+<span data-ttu-id="5e865-108">Este é um valor de **\_ sz do reg** .</span><span class="sxs-lookup"><span data-stu-id="5e865-108">This is a **REG\_SZ** value.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="c8cec-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c8cec-109">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5e865-109">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5e865-109">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c8cec-110">**Interface**</span><span class="sxs-lookup"><span data-stu-id="c8cec-110">**Interface**</span></span>](interface-key.md)
+[<span data-ttu-id="5e865-110">**Interface**</span><span class="sxs-lookup"><span data-stu-id="5e865-110">**Interface**</span></span>](interface-key.md)
 </dt> </dl>
 
  

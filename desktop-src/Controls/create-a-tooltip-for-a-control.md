@@ -11,26 +11,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104005095"
 ---
-# <a name="how-to-create-a-tooltip-for-a-control"></a><span data-ttu-id="4bce1-103">Como criar uma dica de ferramenta para um controle</span><span class="sxs-lookup"><span data-stu-id="4bce1-103">How to Create a Tooltip for a Control</span></span>
+# <a name="how-to-create-a-tooltip-for-a-control"></a><span data-ttu-id="40f8f-103">Como criar uma dica de ferramenta para um controle</span><span class="sxs-lookup"><span data-stu-id="40f8f-103">How to Create a Tooltip for a Control</span></span>
 
-<span data-ttu-id="4bce1-104">A função de exemplo a seguir cria uma dica de ferramenta e a associa ao controle cuja ID de recurso é passada.</span><span class="sxs-lookup"><span data-stu-id="4bce1-104">The following example function creates a tooltip and associates it with the control whose resource ID is passed in.</span></span>
+<span data-ttu-id="40f8f-104">A função de exemplo a seguir cria uma dica de ferramenta e a associa ao controle cuja ID de recurso é passada.</span><span class="sxs-lookup"><span data-stu-id="40f8f-104">The following example function creates a tooltip and associates it with the control whose resource ID is passed in.</span></span>
 
-## <a name="what-you-need-to-know"></a><span data-ttu-id="4bce1-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="4bce1-105">What you need to know</span></span>
+## <a name="what-you-need-to-know"></a><span data-ttu-id="40f8f-105">O que você precisa saber</span><span class="sxs-lookup"><span data-stu-id="40f8f-105">What you need to know</span></span>
 
-### <a name="technologies"></a><span data-ttu-id="4bce1-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="4bce1-106">Technologies</span></span>
+### <a name="technologies"></a><span data-ttu-id="40f8f-106">Tecnologias</span><span class="sxs-lookup"><span data-stu-id="40f8f-106">Technologies</span></span>
 
--   [<span data-ttu-id="4bce1-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="4bce1-107">Windows Controls</span></span>](window-controls.md)
+-   [<span data-ttu-id="40f8f-107">Controles do Windows</span><span class="sxs-lookup"><span data-stu-id="40f8f-107">Windows Controls</span></span>](window-controls.md)
 
-### <a name="prerequisites"></a><span data-ttu-id="4bce1-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4bce1-108">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="40f8f-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="40f8f-108">Prerequisites</span></span>
 
--   <span data-ttu-id="4bce1-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="4bce1-109">C/C++</span></span>
--   <span data-ttu-id="4bce1-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="4bce1-110">Windows User Interface Programming</span></span>
+-   <span data-ttu-id="40f8f-109">C/C++</span><span class="sxs-lookup"><span data-stu-id="40f8f-109">C/C++</span></span>
+-   <span data-ttu-id="40f8f-110">Programação da interface do usuário do Windows</span><span class="sxs-lookup"><span data-stu-id="40f8f-110">Windows User Interface Programming</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="4bce1-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="4bce1-111">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="40f8f-111">Instruções</span><span class="sxs-lookup"><span data-stu-id="40f8f-111">Instructions</span></span>
 
-### <a name="create-a-tooltip-for-a-control"></a><span data-ttu-id="4bce1-112">Criar uma dica de ferramenta para um controle</span><span class="sxs-lookup"><span data-stu-id="4bce1-112">Create a Tooltip for a Control</span></span>
+### <a name="create-a-tooltip-for-a-control"></a><span data-ttu-id="40f8f-112">Criar uma dica de ferramenta para um controle</span><span class="sxs-lookup"><span data-stu-id="40f8f-112">Create a Tooltip for a Control</span></span>
 
-<span data-ttu-id="4bce1-113">A função de exemplo a seguir cria uma dica de ferramenta e a associa ao controle cuja ID de recurso é passada.</span><span class="sxs-lookup"><span data-stu-id="4bce1-113">The following example function creates a tooltip and associates it with the control whose resource ID is passed in.</span></span>
+<span data-ttu-id="40f8f-113">A função de exemplo a seguir cria uma dica de ferramenta e a associa ao controle cuja ID de recurso é passada.</span><span class="sxs-lookup"><span data-stu-id="40f8f-113">The following example function creates a tooltip and associates it with the control whose resource ID is passed in.</span></span>
 
 
 ```C++
@@ -80,11 +80,11 @@ HWND CreateToolTip(int toolID, HWND hDlg, PTSTR pszText)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="4bce1-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4bce1-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="40f8f-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="40f8f-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4bce1-115">Usando controles de dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="4bce1-115">Using Tooltip Controls</span></span>](using-tooltip-contro.md)
+[<span data-ttu-id="40f8f-115">Usando controles de dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="40f8f-115">Using Tooltip Controls</span></span>](using-tooltip-contro.md)
 </dt> </dl>
 
  
