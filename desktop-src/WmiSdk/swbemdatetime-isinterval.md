@@ -32,7 +32,7 @@ Para obter uma explicação dessa sintaxe, consulte [convenções de documento p
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
