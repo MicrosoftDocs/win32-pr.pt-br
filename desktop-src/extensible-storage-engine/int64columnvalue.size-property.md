@@ -32,14 +32,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172228"
 ---
-# <a name="int64columnvaluesize-property"></a><span data-ttu-id="c4154-103">Propriedade Int64ColumnValue. Size</span><span class="sxs-lookup"><span data-stu-id="c4154-103">Int64ColumnValue.Size property</span></span>
+# <a name="int64columnvaluesize-property"></a><span data-ttu-id="06f61-103">Propriedade Int64ColumnValue. Size</span><span class="sxs-lookup"><span data-stu-id="06f61-103">Int64ColumnValue.Size property</span></span>
 
-<span data-ttu-id="c4154-104">Obtém o tamanho do valor na coluna.</span><span class="sxs-lookup"><span data-stu-id="c4154-104">Gets the size of the value in the column.</span></span> <span data-ttu-id="c4154-105">Isso retorna 0 para colunas de tamanho variável (ou seja, binary e String).</span><span class="sxs-lookup"><span data-stu-id="c4154-105">This returns 0 for variable sized columns (i.e. binary and string).</span></span>
+<span data-ttu-id="06f61-104">Obtém o tamanho do valor na coluna.</span><span class="sxs-lookup"><span data-stu-id="06f61-104">Gets the size of the value in the column.</span></span> <span data-ttu-id="06f61-105">Isso retorna 0 para colunas de tamanho variável (ou seja, binary e String).</span><span class="sxs-lookup"><span data-stu-id="06f61-105">This returns 0 for variable sized columns (i.e. binary and string).</span></span>
 
-<span data-ttu-id="c4154-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="c4154-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="c4154-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="c4154-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="06f61-106">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="06f61-106">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="06f61-107">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="06f61-107">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c4154-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="c4154-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="06f61-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="06f61-108">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -55,16 +55,16 @@ value = Me.Size
 protected override int Size { get; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="c4154-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="c4154-109">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="06f61-109">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="06f61-109">Property value</span></span>
 
-<span data-ttu-id="c4154-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="c4154-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
+<span data-ttu-id="06f61-110">Tipo: [System. Int32](/dotnet/api/system.int32)</span><span class="sxs-lookup"><span data-stu-id="06f61-110">Type: [System.Int32](/dotnet/api/system.int32)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="c4154-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="c4154-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="06f61-111">Confira também</span><span class="sxs-lookup"><span data-stu-id="06f61-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="c4154-112">Referência</span><span class="sxs-lookup"><span data-stu-id="c4154-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="06f61-112">Referência</span><span class="sxs-lookup"><span data-stu-id="06f61-112">Reference</span></span>
 
-[<span data-ttu-id="c4154-113">Classe Int64ColumnValue</span><span class="sxs-lookup"><span data-stu-id="c4154-113">Int64ColumnValue class</span></span>](./int64columnvalue-class.md)
+[<span data-ttu-id="06f61-113">Classe Int64ColumnValue</span><span class="sxs-lookup"><span data-stu-id="06f61-113">Int64ColumnValue class</span></span>](./int64columnvalue-class.md)
 
-[<span data-ttu-id="c4154-114">Membros do Int64ColumnValue</span><span class="sxs-lookup"><span data-stu-id="c4154-114">Int64ColumnValue members</span></span>](./int64columnvalue-members.md)
+[<span data-ttu-id="06f61-114">Membros do Int64ColumnValue</span><span class="sxs-lookup"><span data-stu-id="06f61-114">Int64ColumnValue members</span></span>](./int64columnvalue-members.md)
 
-[<span data-ttu-id="c4154-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="c4154-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="06f61-115">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="06f61-115">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

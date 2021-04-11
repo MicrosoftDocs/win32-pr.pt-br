@@ -21,44 +21,44 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172214"
 ---
-# <a name="jet_lgposequals-method"></a><span data-ttu-id="b9644-103">JET_LGPOS. Método Equals</span><span class="sxs-lookup"><span data-stu-id="b9644-103">JET_LGPOS.Equals method</span></span>
+# <a name="jet_lgposequals-method"></a><span data-ttu-id="7c03d-103">JET_LGPOS. Método Equals</span><span class="sxs-lookup"><span data-stu-id="7c03d-103">JET_LGPOS.Equals method</span></span>
 
-<span data-ttu-id="b9644-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="b9644-104">Include protected members</span></span>  
-<span data-ttu-id="b9644-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="b9644-105">Include inherited members</span></span>  
+<span data-ttu-id="7c03d-104">Incluir membros protegidos</span><span class="sxs-lookup"><span data-stu-id="7c03d-104">Include protected members</span></span>  
+<span data-ttu-id="7c03d-105">Incluir membros herdados</span><span class="sxs-lookup"><span data-stu-id="7c03d-105">Include inherited members</span></span>  
 
-## <a name="overload-list"></a><span data-ttu-id="b9644-106">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="b9644-106">Overload list</span></span>
+## <a name="overload-list"></a><span data-ttu-id="7c03d-106">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="7c03d-106">Overload list</span></span>
 
 <table>
 <thead>
 <tr class="header">
 <th> </th>
-<th><span data-ttu-id="b9644-107">Nome</span><span class="sxs-lookup"><span data-stu-id="b9644-107">Name</span></span></th>
-<th><span data-ttu-id="b9644-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b9644-108">Description</span></span></th>
+<th><span data-ttu-id="7c03d-107">Nome</span><span class="sxs-lookup"><span data-stu-id="7c03d-107">Name</span></span></th>
+<th><span data-ttu-id="7c03d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c03d-108">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="b9644-110"><a href="hh565006(v=exchg.10).md">Equals (Object)</a></span><span class="sxs-lookup"><span data-stu-id="b9644-110"><a href="hh565006(v=exchg.10).md">Equals(Object)</a></span></span></td>
-<td><span data-ttu-id="b9644-111">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="b9644-111">Returns a value indicating whether this instance is equal to another instance.</span></span> <span data-ttu-id="b9644-112">(Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.)</span><span class="sxs-lookup"><span data-stu-id="b9644-112">(Overrides <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>.)</span></span></td>
+<td><span data-ttu-id="7c03d-110"><a href="hh565006(v=exchg.10).md">Equals (Object)</a></span><span class="sxs-lookup"><span data-stu-id="7c03d-110"><a href="hh565006(v=exchg.10).md">Equals(Object)</a></span></span></td>
+<td><span data-ttu-id="7c03d-111">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="7c03d-111">Returns a value indicating whether this instance is equal to another instance.</span></span> <span data-ttu-id="7c03d-112">(Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.)</span><span class="sxs-lookup"><span data-stu-id="7c03d-112">(Overrides <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>.)</span></span></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><span data-ttu-id="b9644-114"><a href="hh558574(v=exchg.10).md">Equals (JET_LGPOS)</a></span><span class="sxs-lookup"><span data-stu-id="b9644-114"><a href="hh558574(v=exchg.10).md">Equals(JET_LGPOS)</a></span></span></td>
-<td><span data-ttu-id="b9644-115">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="b9644-115">Returns a value indicating whether this instance is equal to another instance.</span></span></td>
+<td><span data-ttu-id="7c03d-114"><a href="hh558574(v=exchg.10).md">Equals (JET_LGPOS)</a></span><span class="sxs-lookup"><span data-stu-id="7c03d-114"><a href="hh558574(v=exchg.10).md">Equals(JET_LGPOS)</a></span></span></td>
+<td><span data-ttu-id="7c03d-115">Retorna um valor que indica se essa instância é igual a outra instância.</span><span class="sxs-lookup"><span data-stu-id="7c03d-115">Returns a value indicating whether this instance is equal to another instance.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="b9644-116">Parte superior</span><span class="sxs-lookup"><span data-stu-id="b9644-116">Top</span></span>
+<span data-ttu-id="7c03d-116">Parte superior</span><span class="sxs-lookup"><span data-stu-id="7c03d-116">Top</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b9644-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="b9644-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7c03d-117">Confira também</span><span class="sxs-lookup"><span data-stu-id="7c03d-117">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="b9644-118">Referência</span><span class="sxs-lookup"><span data-stu-id="b9644-118">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="7c03d-118">Referência</span><span class="sxs-lookup"><span data-stu-id="7c03d-118">Reference</span></span>
 
-[<span data-ttu-id="b9644-119">Estrutura de JET_LGPOS</span><span class="sxs-lookup"><span data-stu-id="b9644-119">JET_LGPOS structure</span></span>](./jet-lgpos-structure2.md)
+[<span data-ttu-id="7c03d-119">Estrutura de JET_LGPOS</span><span class="sxs-lookup"><span data-stu-id="7c03d-119">JET_LGPOS structure</span></span>](./jet-lgpos-structure2.md)
 
-[<span data-ttu-id="b9644-120">Membros do JET_LGPOS</span><span class="sxs-lookup"><span data-stu-id="b9644-120">JET_LGPOS members</span></span>](./jet-lgpos-members.md)
+[<span data-ttu-id="7c03d-120">Membros do JET_LGPOS</span><span class="sxs-lookup"><span data-stu-id="7c03d-120">JET_LGPOS members</span></span>](./jet-lgpos-members.md)
 
-[<span data-ttu-id="b9644-121">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="b9644-121">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="7c03d-121">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="7c03d-121">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)

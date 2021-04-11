@@ -58,25 +58,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104455025"
 ---
-# <a name="iadspropertyvalue-property-methods"></a><span data-ttu-id="1b826-105">Métodos de propriedade IADsPropertyValue</span><span class="sxs-lookup"><span data-stu-id="1b826-105">IADsPropertyValue Property Methods</span></span>
+# <a name="iadspropertyvalue-property-methods"></a><span data-ttu-id="a165a-105">Métodos de propriedade IADsPropertyValue</span><span class="sxs-lookup"><span data-stu-id="a165a-105">IADsPropertyValue Property Methods</span></span>
 
-<span data-ttu-id="1b826-106">Os métodos de propriedade da interface [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) fornecem acesso às propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="1b826-106">The property methods of the [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) interface provide access to the properties described in the following table.</span></span> <span data-ttu-id="1b826-107">Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="1b826-107">For more information, see [Interface Property Methods](interface-property-methods.md).</span></span>
+<span data-ttu-id="a165a-106">Os métodos de propriedade da interface [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) fornecem acesso às propriedades descritas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="a165a-106">The property methods of the [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) interface provide access to the properties described in the following table.</span></span> <span data-ttu-id="a165a-107">Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).</span><span class="sxs-lookup"><span data-stu-id="a165a-107">For more information, see [Interface Property Methods](interface-property-methods.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1b826-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1b826-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a165a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a165a-108">Properties</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="1b826-109">**ADsType**</span><span class="sxs-lookup"><span data-stu-id="1b826-109">**ADsType**</span></span>
-<span data-ttu-id="1b826-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-110"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-109">**ADsType**</span><span class="sxs-lookup"><span data-stu-id="a165a-109">**ADsType**</span></span>
+<span data-ttu-id="a165a-110"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-110"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-111">O tipo de dados do valor da propriedade, extraído da enumeração [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) , da propriedade Value.</span><span class="sxs-lookup"><span data-stu-id="1b826-111">The data type of the value of the property, taken from the [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) enumeration, of the value property.</span></span>
+<span data-ttu-id="a165a-111">O tipo de dados do valor da propriedade, extraído da enumeração [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) , da propriedade Value.</span><span class="sxs-lookup"><span data-stu-id="a165a-111">The data type of the value of the property, taken from the [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) enumeration, of the value property.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-112">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-112">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-112">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-112">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-113">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="1b826-113">Scripting data type: **LONG**</span></span>
+<span data-ttu-id="a165a-113">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="a165a-113">Scripting data type: **LONG**</span></span>
 </dt> <dt>
 
 
@@ -94,17 +94,17 @@ HRESULT put_ADsType(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-114">**Booliano**</span><span class="sxs-lookup"><span data-stu-id="1b826-114">**Boolean**</span></span>
-<span data-ttu-id="1b826-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-115"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-114">**Booliano**</span><span class="sxs-lookup"><span data-stu-id="a165a-114">**Boolean**</span></span>
+<span data-ttu-id="a165a-115"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-115"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-116">$True.</span><span class="sxs-lookup"><span data-stu-id="1b826-116">Boolean value.</span></span>
+<span data-ttu-id="a165a-116">$True.</span><span class="sxs-lookup"><span data-stu-id="a165a-116">Boolean value.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-117">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-117">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-117">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-117">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-118">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="1b826-118">Scripting data type: **LONG**</span></span>
+<span data-ttu-id="a165a-118">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="a165a-118">Scripting data type: **LONG**</span></span>
 </dt> <dt>
 
 
@@ -122,17 +122,17 @@ HRESULT put_Boolean(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-119">**CaseExactString**</span><span class="sxs-lookup"><span data-stu-id="1b826-119">**CaseExactString**</span></span>
-<span data-ttu-id="1b826-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-120"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-119">**CaseExactString**</span><span class="sxs-lookup"><span data-stu-id="a165a-119">**CaseExactString**</span></span>
+<span data-ttu-id="a165a-120"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-120"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-121">Cadeia de caracteres a ser interpretada.</span><span class="sxs-lookup"><span data-stu-id="1b826-121">String to be interpreted.</span></span> <span data-ttu-id="1b826-122">Diferenciar maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="1b826-122">Case-sensitive.</span></span>
+<span data-ttu-id="a165a-121">Cadeia de caracteres a ser interpretada.</span><span class="sxs-lookup"><span data-stu-id="a165a-121">String to be interpreted.</span></span> <span data-ttu-id="a165a-122">Diferenciar maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="a165a-122">Case-sensitive.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-123">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-123">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-123">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-123">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-124">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="1b826-124">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="a165a-124">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="a165a-124">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -150,17 +150,17 @@ HRESULT put_CaseExactString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-125">**CaseIgnoreString**</span><span class="sxs-lookup"><span data-stu-id="1b826-125">**CaseIgnoreString**</span></span>
-<span data-ttu-id="1b826-126"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-126"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-125">**CaseIgnoreString**</span><span class="sxs-lookup"><span data-stu-id="a165a-125">**CaseIgnoreString**</span></span>
+<span data-ttu-id="a165a-126"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-126"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-127">Cadeia de caracteres a ser interpretada.</span><span class="sxs-lookup"><span data-stu-id="1b826-127">String to be interpreted.</span></span> <span data-ttu-id="1b826-128">Não diferencia maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="1b826-128">Case insensitive.</span></span>
+<span data-ttu-id="a165a-127">Cadeia de caracteres a ser interpretada.</span><span class="sxs-lookup"><span data-stu-id="a165a-127">String to be interpreted.</span></span> <span data-ttu-id="a165a-128">Não diferencia maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="a165a-128">Case insensitive.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-129">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-129">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-129">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-129">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-130">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="1b826-130">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="a165a-130">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="a165a-130">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -178,17 +178,17 @@ HRESULT put_CaseIgnoreString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-131">**DNString**</span><span class="sxs-lookup"><span data-stu-id="1b826-131">**DNString**</span></span>
-<span data-ttu-id="1b826-132"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-132"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-131">**DNString**</span><span class="sxs-lookup"><span data-stu-id="a165a-131">**DNString**</span></span>
+<span data-ttu-id="a165a-132"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-132"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-133">Cadeia de caracteres que identifica o nome distinto (caminho) de um objeto de valor do serviço de diretório.</span><span class="sxs-lookup"><span data-stu-id="1b826-133">String that identifies the distinguished name (path) of a directory service value object.</span></span>
+<span data-ttu-id="a165a-133">Cadeia de caracteres que identifica o nome distinto (caminho) de um objeto de valor do serviço de diretório.</span><span class="sxs-lookup"><span data-stu-id="a165a-133">String that identifies the distinguished name (path) of a directory service value object.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-134">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-134">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-134">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-134">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-135">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="1b826-135">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="a165a-135">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="a165a-135">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -206,17 +206,17 @@ HRESULT put_DNString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-136">**Inteiro**</span><span class="sxs-lookup"><span data-stu-id="1b826-136">**Integer**</span></span>
-<span data-ttu-id="1b826-137"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-137"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-136">**Inteiro**</span><span class="sxs-lookup"><span data-stu-id="a165a-136">**Integer**</span></span>
+<span data-ttu-id="a165a-137"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-137"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-138">Valor inteiro.</span><span class="sxs-lookup"><span data-stu-id="1b826-138">Integer value.</span></span>
+<span data-ttu-id="a165a-138">Valor inteiro.</span><span class="sxs-lookup"><span data-stu-id="a165a-138">Integer value.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-139">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-139">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-139">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-139">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-140">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="1b826-140">Scripting data type: **LONG**</span></span>
+<span data-ttu-id="a165a-140">Tipo de dados de script: **longo**</span><span class="sxs-lookup"><span data-stu-id="a165a-140">Scripting data type: **LONG**</span></span>
 </dt> <dt>
 
 
@@ -234,17 +234,17 @@ HRESULT put_Integer(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-141">**LargeInteger**</span><span class="sxs-lookup"><span data-stu-id="1b826-141">**LargeInteger**</span></span>
-<span data-ttu-id="1b826-142"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-142"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-141">**LargeInteger**</span><span class="sxs-lookup"><span data-stu-id="a165a-141">**LargeInteger**</span></span>
+<span data-ttu-id="a165a-142"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-142"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-143">Ponteiro para a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) do objeto que implementa [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) para esse valor.</span><span class="sxs-lookup"><span data-stu-id="1b826-143">Pointer to the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface of the object implementing [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) for this value.</span></span>
+<span data-ttu-id="a165a-143">Ponteiro para a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) do objeto que implementa [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) para esse valor.</span><span class="sxs-lookup"><span data-stu-id="a165a-143">Pointer to the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface of the object implementing [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) for this value.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-144">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-144">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-144">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-144">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-145">Tipo de dados de script: **IDispatch**</span><span class="sxs-lookup"><span data-stu-id="1b826-145">Scripting data type: **IDispatch**</span></span>
+<span data-ttu-id="a165a-145">Tipo de dados de script: **IDispatch**</span><span class="sxs-lookup"><span data-stu-id="a165a-145">Scripting data type: **IDispatch**</span></span>
 </dt> <dt>
 
 
@@ -262,17 +262,17 @@ HRESULT put_LargeInteger(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-146">**NumericString**</span><span class="sxs-lookup"><span data-stu-id="1b826-146">**NumericString**</span></span>
-<span data-ttu-id="1b826-147"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-147"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-146">**NumericString**</span><span class="sxs-lookup"><span data-stu-id="a165a-146">**NumericString**</span></span>
+<span data-ttu-id="a165a-147"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-147"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-148">Texto a ser interpretado.</span><span class="sxs-lookup"><span data-stu-id="1b826-148">Text to be interpreted.</span></span> <span data-ttu-id="1b826-149">Tipo numérico.</span><span class="sxs-lookup"><span data-stu-id="1b826-149">Numeric type.</span></span>
+<span data-ttu-id="a165a-148">Texto a ser interpretado.</span><span class="sxs-lookup"><span data-stu-id="a165a-148">Text to be interpreted.</span></span> <span data-ttu-id="a165a-149">Tipo numérico.</span><span class="sxs-lookup"><span data-stu-id="a165a-149">Numeric type.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-150">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-150">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-150">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-150">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-151">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="1b826-151">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="a165a-151">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="a165a-151">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -290,17 +290,17 @@ HRESULT put_NumericString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-152">**Octetstring**</span><span class="sxs-lookup"><span data-stu-id="1b826-152">**OctetString**</span></span>
-<span data-ttu-id="1b826-153"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-153"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-152">**Octetstring**</span><span class="sxs-lookup"><span data-stu-id="a165a-152">**OctetString**</span></span>
+<span data-ttu-id="a165a-153"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-153"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-154">Matriz variante de caracteres de um byte.</span><span class="sxs-lookup"><span data-stu-id="1b826-154">Variant array of one-byte characters.</span></span>
+<span data-ttu-id="a165a-154">Matriz variante de caracteres de um byte.</span><span class="sxs-lookup"><span data-stu-id="a165a-154">Variant array of one-byte characters.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-155">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-155">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-155">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-155">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-156">Tipo de dados de script: **Variant**</span><span class="sxs-lookup"><span data-stu-id="1b826-156">Scripting data type: **VARIANT**</span></span>
+<span data-ttu-id="a165a-156">Tipo de dados de script: **Variant**</span><span class="sxs-lookup"><span data-stu-id="a165a-156">Scripting data type: **VARIANT**</span></span>
 </dt> <dt>
 
 
@@ -318,17 +318,17 @@ HRESULT put_OctetString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-157">**Imenablestring**</span><span class="sxs-lookup"><span data-stu-id="1b826-157">**PrintableString**</span></span>
-<span data-ttu-id="1b826-158"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-158"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-157">**Imenablestring**</span><span class="sxs-lookup"><span data-stu-id="a165a-157">**PrintableString**</span></span>
+<span data-ttu-id="a165a-158"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-158"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-159">Exibir ou imprimir cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="1b826-159">Display or print string.</span></span>
+<span data-ttu-id="a165a-159">Exibir ou imprimir cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="a165a-159">Display or print string.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-160">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-160">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-160">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-160">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-161">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="1b826-161">Scripting data type: **BSTR**</span></span>
+<span data-ttu-id="a165a-161">Tipo de dados de script: **BSTR**</span><span class="sxs-lookup"><span data-stu-id="a165a-161">Scripting data type: **BSTR**</span></span>
 </dt> <dt>
 
 
@@ -346,17 +346,17 @@ HRESULT put_PrintableString(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-162">**SecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="1b826-162">**SecurityDescriptor**</span></span>
-<span data-ttu-id="1b826-163"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-163"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-162">**SecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="a165a-162">**SecurityDescriptor**</span></span>
+<span data-ttu-id="a165a-163"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-163"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-164">Ponteiro para a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) do objeto que implementa [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) para esse valor.</span><span class="sxs-lookup"><span data-stu-id="1b826-164">Pointer to the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface of the object implementing [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) for this value.</span></span>
+<span data-ttu-id="a165a-164">Ponteiro para a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) do objeto que implementa [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) para esse valor.</span><span class="sxs-lookup"><span data-stu-id="a165a-164">Pointer to the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface of the object implementing [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) for this value.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-165">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-165">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-165">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-165">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-166">Tipo de dados de script: **IDispatch**</span><span class="sxs-lookup"><span data-stu-id="1b826-166">Scripting data type: **IDispatch**</span></span>
+<span data-ttu-id="a165a-166">Tipo de dados de script: **IDispatch**</span><span class="sxs-lookup"><span data-stu-id="a165a-166">Scripting data type: **IDispatch**</span></span>
 </dt> <dt>
 
 
@@ -374,17 +374,17 @@ HRESULT put_SecurityDescriptor(
 
 </dt> </dl> </dd> <dt>
 
-<span data-ttu-id="1b826-167">**UTCTime**</span><span class="sxs-lookup"><span data-stu-id="1b826-167">**UTCTime**</span></span>
-<span data-ttu-id="1b826-168"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="1b826-168"></dt> <dd> <dl></span></span>
+<span data-ttu-id="a165a-167">**UTCTime**</span><span class="sxs-lookup"><span data-stu-id="a165a-167">**UTCTime**</span></span>
+<span data-ttu-id="a165a-168"></dt> <dd> <dl></span><span class="sxs-lookup"><span data-stu-id="a165a-168"></dt> <dd> <dl></span></span>
 
-<span data-ttu-id="1b826-169">Uma data do tipo **de \_ Data VT** expresso no formato UTC (tempo Universal Coordenado).</span><span class="sxs-lookup"><span data-stu-id="1b826-169">A date of the **VT\_DATE** type expressed in Coordinated Universal Time (UTC) format.</span></span>
+<span data-ttu-id="a165a-169">Uma data do tipo **de \_ Data VT** expresso no formato UTC (tempo Universal Coordenado).</span><span class="sxs-lookup"><span data-stu-id="a165a-169">A date of the **VT\_DATE** type expressed in Coordinated Universal Time (UTC) format.</span></span>
 
 <dt>
 
-<span data-ttu-id="1b826-170">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="1b826-170">Access type: Read/write</span></span>
+<span data-ttu-id="a165a-170">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="a165a-170">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="1b826-171">Tipo de dados de script: **Data**</span><span class="sxs-lookup"><span data-stu-id="1b826-171">Scripting data type: **DATE**</span></span>
+<span data-ttu-id="a165a-171">Tipo de dados de script: **Data**</span><span class="sxs-lookup"><span data-stu-id="a165a-171">Scripting data type: **DATE**</span></span>
 </dt> <dt>
 
 
@@ -404,33 +404,33 @@ HRESULT put_UTCTime(
 
  
 
-## <a name="remarks"></a><span data-ttu-id="1b826-172">Comentários</span><span class="sxs-lookup"><span data-stu-id="1b826-172">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a165a-172">Comentários</span><span class="sxs-lookup"><span data-stu-id="a165a-172">Remarks</span></span>
 
-<span data-ttu-id="1b826-173">As propriedades [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) só definirão ou recuperarão um valor de Propriedade do tipo especificado.</span><span class="sxs-lookup"><span data-stu-id="1b826-173">The [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) properties will only set or retrieve a property value of the specified type.</span></span> <span data-ttu-id="1b826-174">Por exemplo, a propriedade **CaseIgnoreString** em um atributo do tipo **cadeia \_ de \_ caracteres de DN ADSTYPE**, como o atributo **distinguishedName** , resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="1b826-174">For example, the **CaseIgnoreString** property on an attribute of type **ADSTYPE\_DN\_STRING**, like the **distinguishedName** attribute, will result in an error.</span></span> <span data-ttu-id="1b826-175">A propriedade **CaseIgnoreString** só funcionará em atributos do tipo **ADS, \_ caso ignore a cadeia de \_ \_ caracteres**.</span><span class="sxs-lookup"><span data-stu-id="1b826-175">The **CaseIgnoreString** property will only work on attributes of type **ADS\_CASE\_IGNORE\_STRING**.</span></span> <span data-ttu-id="1b826-176">A tabela a seguir mapeia o valor [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) para a propriedade **IADsPropertyValue** correspondente que pode ser usada para acessar esse tipo de atributo.</span><span class="sxs-lookup"><span data-stu-id="1b826-176">The following table maps the [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) value to the corresponding **IADsPropertyValue** property that can be used to access that attribute type.</span></span> <span data-ttu-id="1b826-177">Se um valor de **ADSTYPEENUM** não estiver listado nesta tabela, ele não estará disponível na interface **IADsPropertyValue** .</span><span class="sxs-lookup"><span data-stu-id="1b826-177">If an **ADSTYPEENUM** value is not listed in this table, it is not available from the **IADsPropertyValue** interface.</span></span> <span data-ttu-id="1b826-178">A interface [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) deve ser usada para obter dados nos outros formatos.</span><span class="sxs-lookup"><span data-stu-id="1b826-178">The [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) interface should be used to obtain data in the other formats.</span></span>
+<span data-ttu-id="a165a-173">As propriedades [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) só definirão ou recuperarão um valor de Propriedade do tipo especificado.</span><span class="sxs-lookup"><span data-stu-id="a165a-173">The [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) properties will only set or retrieve a property value of the specified type.</span></span> <span data-ttu-id="a165a-174">Por exemplo, a propriedade **CaseIgnoreString** em um atributo do tipo **cadeia \_ de \_ caracteres de DN ADSTYPE**, como o atributo **distinguishedName** , resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="a165a-174">For example, the **CaseIgnoreString** property on an attribute of type **ADSTYPE\_DN\_STRING**, like the **distinguishedName** attribute, will result in an error.</span></span> <span data-ttu-id="a165a-175">A propriedade **CaseIgnoreString** só funcionará em atributos do tipo **ADS, \_ caso ignore a cadeia de \_ \_ caracteres**.</span><span class="sxs-lookup"><span data-stu-id="a165a-175">The **CaseIgnoreString** property will only work on attributes of type **ADS\_CASE\_IGNORE\_STRING**.</span></span> <span data-ttu-id="a165a-176">A tabela a seguir mapeia o valor [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) para a propriedade **IADsPropertyValue** correspondente que pode ser usada para acessar esse tipo de atributo.</span><span class="sxs-lookup"><span data-stu-id="a165a-176">The following table maps the [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) value to the corresponding **IADsPropertyValue** property that can be used to access that attribute type.</span></span> <span data-ttu-id="a165a-177">Se um valor de **ADSTYPEENUM** não estiver listado nesta tabela, ele não estará disponível na interface **IADsPropertyValue** .</span><span class="sxs-lookup"><span data-stu-id="a165a-177">If an **ADSTYPEENUM** value is not listed in this table, it is not available from the **IADsPropertyValue** interface.</span></span> <span data-ttu-id="a165a-178">A interface [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) deve ser usada para obter dados nos outros formatos.</span><span class="sxs-lookup"><span data-stu-id="a165a-178">The [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) interface should be used to obtain data in the other formats.</span></span>
 
 
 
-| <span data-ttu-id="1b826-179">Valor de [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum)</span><span class="sxs-lookup"><span data-stu-id="1b826-179">[**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) value</span></span> | <span data-ttu-id="1b826-180">Propriedade [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)</span><span class="sxs-lookup"><span data-stu-id="1b826-180">[**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) property</span></span> |
+| <span data-ttu-id="a165a-179">Valor de [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum)</span><span class="sxs-lookup"><span data-stu-id="a165a-179">[**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) value</span></span> | <span data-ttu-id="a165a-180">Propriedade [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)</span><span class="sxs-lookup"><span data-stu-id="a165a-180">[**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) property</span></span> |
 |------------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="1b826-181">**\_cadeia de \_ caracteres DN ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="1b826-181">**ADSTYPE\_DN\_STRING**</span></span>                  | <span data-ttu-id="1b826-182">**DNString**</span><span class="sxs-lookup"><span data-stu-id="1b826-182">**DNString**</span></span>                                            |
-| <span data-ttu-id="1b826-183">**\_cadeia de \_ caracteres exata do caso de ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="1b826-183">**ADSTYPE\_CASE\_EXACT\_STRING**</span></span>         | <span data-ttu-id="1b826-184">**CaseExactString**</span><span class="sxs-lookup"><span data-stu-id="1b826-184">**CaseExactString**</span></span>                                     |
-| <span data-ttu-id="1b826-185">**\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="1b826-185">**ADSTYPE\_CASE\_IGNORE\_STRING**</span></span>        | <span data-ttu-id="1b826-186">**CaseIgnoreString**</span><span class="sxs-lookup"><span data-stu-id="1b826-186">**CaseIgnoreString**</span></span>                                    |
-| <span data-ttu-id="1b826-187">**\_cadeia de caracteres imprimível do ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="1b826-187">**ADSTYPE\_PRINTABLE\_STRING**</span></span>           | <span data-ttu-id="1b826-188">**Imenablestring**</span><span class="sxs-lookup"><span data-stu-id="1b826-188">**PrintableString**</span></span>                                     |
-| <span data-ttu-id="1b826-189">**\_cadeia de \_ caracteres numérica ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="1b826-189">**ADSTYPE\_NUMERIC\_STRING**</span></span>             | <span data-ttu-id="1b826-190">**NumericString**</span><span class="sxs-lookup"><span data-stu-id="1b826-190">**NumericString**</span></span>                                       |
-| <span data-ttu-id="1b826-191">**ADSTYPE \_ booliano**</span><span class="sxs-lookup"><span data-stu-id="1b826-191">**ADSTYPE\_BOOLEAN**</span></span>                     | <span data-ttu-id="1b826-192">**Booliano**</span><span class="sxs-lookup"><span data-stu-id="1b826-192">**Boolean**</span></span>                                             |
-| <span data-ttu-id="1b826-193">**ADSTYPE \_ inteiro**</span><span class="sxs-lookup"><span data-stu-id="1b826-193">**ADSTYPE\_INTEGER**</span></span>                     | <span data-ttu-id="1b826-194">**Inteiro**</span><span class="sxs-lookup"><span data-stu-id="1b826-194">**Integer**</span></span>                                             |
-| <span data-ttu-id="1b826-195">**Cadeia de caracteres de \_ OCTETO ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="1b826-195">**ADSTYPE\_OCTET\_STRING**</span></span>               | <span data-ttu-id="1b826-196">**Octetstring**</span><span class="sxs-lookup"><span data-stu-id="1b826-196">**OctetString**</span></span>                                         |
-| <span data-ttu-id="1b826-197">**ADSTYPE \_ \_ hora UTC**</span><span class="sxs-lookup"><span data-stu-id="1b826-197">**ADSTYPE\_UTC\_TIME**</span></span>                   | <span data-ttu-id="1b826-198">**UTCTime**</span><span class="sxs-lookup"><span data-stu-id="1b826-198">**UTCTime**</span></span>                                             |
-| <span data-ttu-id="1b826-199">**\_inteiro grande \_ ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="1b826-199">**ADSTYPE\_LARGE\_INTEGER**</span></span>              | <span data-ttu-id="1b826-200">**LargeInteger**</span><span class="sxs-lookup"><span data-stu-id="1b826-200">**LargeInteger**</span></span>                                        |
-| <span data-ttu-id="1b826-201">**\_ \_ descritor de segurança do ADSTYPE NT \_**</span><span class="sxs-lookup"><span data-stu-id="1b826-201">**ADSTYPE\_NT\_SECURITY\_DESCRIPTOR**</span></span>    | <span data-ttu-id="1b826-202">**SecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="1b826-202">**SecurityDescriptor**</span></span>                                  |
+| <span data-ttu-id="a165a-181">**\_cadeia de \_ caracteres DN ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="a165a-181">**ADSTYPE\_DN\_STRING**</span></span>                  | <span data-ttu-id="a165a-182">**DNString**</span><span class="sxs-lookup"><span data-stu-id="a165a-182">**DNString**</span></span>                                            |
+| <span data-ttu-id="a165a-183">**\_cadeia de \_ caracteres exata do caso de ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="a165a-183">**ADSTYPE\_CASE\_EXACT\_STRING**</span></span>         | <span data-ttu-id="a165a-184">**CaseExactString**</span><span class="sxs-lookup"><span data-stu-id="a165a-184">**CaseExactString**</span></span>                                     |
+| <span data-ttu-id="a165a-185">**\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="a165a-185">**ADSTYPE\_CASE\_IGNORE\_STRING**</span></span>        | <span data-ttu-id="a165a-186">**CaseIgnoreString**</span><span class="sxs-lookup"><span data-stu-id="a165a-186">**CaseIgnoreString**</span></span>                                    |
+| <span data-ttu-id="a165a-187">**\_cadeia de caracteres imprimível do ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="a165a-187">**ADSTYPE\_PRINTABLE\_STRING**</span></span>           | <span data-ttu-id="a165a-188">**Imenablestring**</span><span class="sxs-lookup"><span data-stu-id="a165a-188">**PrintableString**</span></span>                                     |
+| <span data-ttu-id="a165a-189">**\_cadeia de \_ caracteres numérica ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="a165a-189">**ADSTYPE\_NUMERIC\_STRING**</span></span>             | <span data-ttu-id="a165a-190">**NumericString**</span><span class="sxs-lookup"><span data-stu-id="a165a-190">**NumericString**</span></span>                                       |
+| <span data-ttu-id="a165a-191">**ADSTYPE \_ booliano**</span><span class="sxs-lookup"><span data-stu-id="a165a-191">**ADSTYPE\_BOOLEAN**</span></span>                     | <span data-ttu-id="a165a-192">**Booliano**</span><span class="sxs-lookup"><span data-stu-id="a165a-192">**Boolean**</span></span>                                             |
+| <span data-ttu-id="a165a-193">**ADSTYPE \_ inteiro**</span><span class="sxs-lookup"><span data-stu-id="a165a-193">**ADSTYPE\_INTEGER**</span></span>                     | <span data-ttu-id="a165a-194">**Inteiro**</span><span class="sxs-lookup"><span data-stu-id="a165a-194">**Integer**</span></span>                                             |
+| <span data-ttu-id="a165a-195">**Cadeia de caracteres de \_ OCTETO ADSTYPE \_**</span><span class="sxs-lookup"><span data-stu-id="a165a-195">**ADSTYPE\_OCTET\_STRING**</span></span>               | <span data-ttu-id="a165a-196">**Octetstring**</span><span class="sxs-lookup"><span data-stu-id="a165a-196">**OctetString**</span></span>                                         |
+| <span data-ttu-id="a165a-197">**ADSTYPE \_ \_ hora UTC**</span><span class="sxs-lookup"><span data-stu-id="a165a-197">**ADSTYPE\_UTC\_TIME**</span></span>                   | <span data-ttu-id="a165a-198">**UTCTime**</span><span class="sxs-lookup"><span data-stu-id="a165a-198">**UTCTime**</span></span>                                             |
+| <span data-ttu-id="a165a-199">**\_inteiro grande \_ ADSTYPE**</span><span class="sxs-lookup"><span data-stu-id="a165a-199">**ADSTYPE\_LARGE\_INTEGER**</span></span>              | <span data-ttu-id="a165a-200">**LargeInteger**</span><span class="sxs-lookup"><span data-stu-id="a165a-200">**LargeInteger**</span></span>                                        |
+| <span data-ttu-id="a165a-201">**\_ \_ descritor de segurança do ADSTYPE NT \_**</span><span class="sxs-lookup"><span data-stu-id="a165a-201">**ADSTYPE\_NT\_SECURITY\_DESCRIPTOR**</span></span>    | <span data-ttu-id="a165a-202">**SecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="a165a-202">**SecurityDescriptor**</span></span>                                  |
 
 
 
  
 
-## <a name="examples"></a><span data-ttu-id="1b826-203">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1b826-203">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a165a-203">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a165a-203">Examples</span></span>
 
-<span data-ttu-id="1b826-204">O exemplo de código a seguir mostra como recuperar uma propriedade da lista de propriedades.</span><span class="sxs-lookup"><span data-stu-id="1b826-204">The following code example shows how to retrieve a property from the property list.</span></span>
+<span data-ttu-id="a165a-204">O exemplo de código a seguir mostra como recuperar uma propriedade da lista de propriedades.</span><span class="sxs-lookup"><span data-stu-id="a165a-204">The following code example shows how to retrieve a property from the property list.</span></span>
 
 
 ```VB
@@ -473,7 +473,7 @@ Cleanup:
 
 
 
-<span data-ttu-id="1b826-205">O código a seguir mostra como usar **IADsPropertyValue:: get \_ CaseIgnoreString** para recuperar o valor da Propriedade Description de uma lista de propriedades.</span><span class="sxs-lookup"><span data-stu-id="1b826-205">The following code shows how to use **IADsPropertyValue::get\_CaseIgnoreString** to retrieve the value of the description property from a property list.</span></span>
+<span data-ttu-id="a165a-205">O código a seguir mostra como usar **IADsPropertyValue:: get \_ CaseIgnoreString** para recuperar o valor da Propriedade Description de uma lista de propriedades.</span><span class="sxs-lookup"><span data-stu-id="a165a-205">The following code shows how to use **IADsPropertyValue::get\_CaseIgnoreString** to retrieve the value of the description property from a property list.</span></span>
 
 
 ```C++
@@ -585,43 +585,43 @@ Cleanup:
 
 
 
-## <a name="requirements"></a><span data-ttu-id="1b826-206">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1b826-206">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a165a-206">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a165a-206">Requirements</span></span>
 
 
 
-| <span data-ttu-id="1b826-207">Requisito</span><span class="sxs-lookup"><span data-stu-id="1b826-207">Requirement</span></span> | <span data-ttu-id="1b826-208">Valor</span><span class="sxs-lookup"><span data-stu-id="1b826-208">Value</span></span> |
+| <span data-ttu-id="a165a-207">Requisito</span><span class="sxs-lookup"><span data-stu-id="a165a-207">Requirement</span></span> | <span data-ttu-id="a165a-208">Valor</span><span class="sxs-lookup"><span data-stu-id="a165a-208">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="1b826-209">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b826-209">Minimum supported client</span></span><br/> | <span data-ttu-id="1b826-210">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="1b826-210">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="1b826-211">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1b826-211">Minimum supported server</span></span><br/> | <span data-ttu-id="1b826-212">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="1b826-212">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="1b826-213">parâmetro</span><span class="sxs-lookup"><span data-stu-id="1b826-213">Header</span></span><br/>                   | <dl> <span data-ttu-id="1b826-214"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="1b826-214"><dt>Iads.h</dt></span></span> </dl>       |
-| <span data-ttu-id="1b826-215">DLL</span><span class="sxs-lookup"><span data-stu-id="1b826-215">DLL</span></span><br/>                      | <dl> <span data-ttu-id="1b826-216"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="1b826-216"><dt>Activeds.dll</dt></span></span> </dl> |
-| <span data-ttu-id="1b826-217">IID</span><span class="sxs-lookup"><span data-stu-id="1b826-217">IID</span></span><br/>                      | <span data-ttu-id="1b826-218">IID \_ IADsPropertyValue é definido como 79FA9AD0-A97C-11D0-8534-00C04FD8D503</span><span class="sxs-lookup"><span data-stu-id="1b826-218">IID\_IADsPropertyValue is defined as 79FA9AD0-A97C-11D0-8534-00C04FD8D503</span></span><br/>    |
+| <span data-ttu-id="a165a-209">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a165a-209">Minimum supported client</span></span><br/> | <span data-ttu-id="a165a-210">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="a165a-210">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="a165a-211">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a165a-211">Minimum supported server</span></span><br/> | <span data-ttu-id="a165a-212">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="a165a-212">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="a165a-213">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a165a-213">Header</span></span><br/>                   | <dl> <span data-ttu-id="a165a-214"><dt>IADs. h</dt></span><span class="sxs-lookup"><span data-stu-id="a165a-214"><dt>Iads.h</dt></span></span> </dl>       |
+| <span data-ttu-id="a165a-215">DLL</span><span class="sxs-lookup"><span data-stu-id="a165a-215">DLL</span></span><br/>                      | <dl> <span data-ttu-id="a165a-216"><dt>Activeds.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a165a-216"><dt>Activeds.dll</dt></span></span> </dl> |
+| <span data-ttu-id="a165a-217">IID</span><span class="sxs-lookup"><span data-stu-id="a165a-217">IID</span></span><br/>                      | <span data-ttu-id="a165a-218">IID \_ IADsPropertyValue é definido como 79FA9AD0-A97C-11D0-8534-00C04FD8D503</span><span class="sxs-lookup"><span data-stu-id="a165a-218">IID\_IADsPropertyValue is defined as 79FA9AD0-A97C-11D0-8534-00C04FD8D503</span></span><br/>    |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="1b826-219">Consulte também</span><span class="sxs-lookup"><span data-stu-id="1b826-219">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a165a-219">Confira também</span><span class="sxs-lookup"><span data-stu-id="a165a-219">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="1b826-220">**IADsPropertyValue**</span><span class="sxs-lookup"><span data-stu-id="1b826-220">**IADsPropertyValue**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)
+[<span data-ttu-id="a165a-220">**IADsPropertyValue**</span><span class="sxs-lookup"><span data-stu-id="a165a-220">**IADsPropertyValue**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-221">**ADSTYPEENUM**</span><span class="sxs-lookup"><span data-stu-id="1b826-221">**ADSTYPEENUM**</span></span>](/windows/win32/api/iads/ne-iads-adstypeenum)
+[<span data-ttu-id="a165a-221">**ADSTYPEENUM**</span><span class="sxs-lookup"><span data-stu-id="a165a-221">**ADSTYPEENUM**</span></span>](/windows/win32/api/iads/ne-iads-adstypeenum)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-222">**IADsPropertyEntry**</span><span class="sxs-lookup"><span data-stu-id="1b826-222">**IADsPropertyEntry**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)
+[<span data-ttu-id="a165a-222">**IADsPropertyEntry**</span><span class="sxs-lookup"><span data-stu-id="a165a-222">**IADsPropertyEntry**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-223">**IADsPropertyList**</span><span class="sxs-lookup"><span data-stu-id="1b826-223">**IADsPropertyList**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertylist)
+[<span data-ttu-id="a165a-223">**IADsPropertyList**</span><span class="sxs-lookup"><span data-stu-id="a165a-223">**IADsPropertyList**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertylist)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-224">**IADsPropertyValue2**</span><span class="sxs-lookup"><span data-stu-id="1b826-224">**IADsPropertyValue2**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2)
+[<span data-ttu-id="a165a-224">**IADsPropertyValue2**</span><span class="sxs-lookup"><span data-stu-id="a165a-224">**IADsPropertyValue2**</span></span>](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-225">**IADsSecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="1b826-225">**IADsSecurityDescriptor**</span></span>](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)
+[<span data-ttu-id="a165a-225">**IADsSecurityDescriptor**</span><span class="sxs-lookup"><span data-stu-id="a165a-225">**IADsSecurityDescriptor**</span></span>](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)
 </dt> <dt>
 
-[<span data-ttu-id="1b826-226">**IDispatch**</span><span class="sxs-lookup"><span data-stu-id="1b826-226">**IDispatch**</span></span>](/windows/win32/api/oaidl/nn-oaidl-idispatch)
+[<span data-ttu-id="a165a-226">**IDispatch**</span><span class="sxs-lookup"><span data-stu-id="a165a-226">**IDispatch**</span></span>](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> </dl>
 
  
