@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104172701"
 ---
-# <a name="windowless-rich-edit-interfaces"></a><span data-ttu-id="3e61e-103">Interfaces de edição sofisticadas sem janela</span><span class="sxs-lookup"><span data-stu-id="3e61e-103">Windowless Rich Edit Interfaces</span></span>
+# <a name="windowless-rich-edit-interfaces"></a><span data-ttu-id="091e6-103">Interfaces de edição sofisticadas sem janela</span><span class="sxs-lookup"><span data-stu-id="091e6-103">Windowless Rich Edit Interfaces</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3e61e-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="3e61e-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="091e6-104">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="091e6-104">In This Section</span></span>
 
--   [<span data-ttu-id="3e61e-105">**ITextHost**</span><span class="sxs-lookup"><span data-stu-id="3e61e-105">**ITextHost**</span></span>](/windows/desktop/api/Textserv/nl-textserv-itexthost)
--   [<span data-ttu-id="3e61e-106">**ITextServices**</span><span class="sxs-lookup"><span data-stu-id="3e61e-106">**ITextServices**</span></span>](/windows/desktop/api/Textserv/nl-textserv-itextservices)
+-   [<span data-ttu-id="091e6-105">**ITextHost**</span><span class="sxs-lookup"><span data-stu-id="091e6-105">**ITextHost**</span></span>](/windows/desktop/api/Textserv/nl-textserv-itexthost)
+-   [<span data-ttu-id="091e6-106">**ITextServices**</span><span class="sxs-lookup"><span data-stu-id="091e6-106">**ITextServices**</span></span>](/windows/desktop/api/Textserv/nl-textserv-itextservices)
 
  
 

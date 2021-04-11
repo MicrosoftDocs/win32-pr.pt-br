@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104159828"
 ---
-# <a name="win32_tspermissionssetting-methods"></a><span data-ttu-id="b1b2a-103">\_Métodos TSPermissionsSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="b1b2a-103">Win32\_TSPermissionsSetting Methods</span></span>
+# <a name="win32_tspermissionssetting-methods"></a><span data-ttu-id="4b869-103">\_Métodos TSPermissionsSetting do Win32</span><span class="sxs-lookup"><span data-stu-id="4b869-103">Win32\_TSPermissionsSetting Methods</span></span>
 
-<span data-ttu-id="b1b2a-104">A classe [**Win32 \_ TSPermissionsSetting**](win32-tspermissionssetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b1b2a-104">The [**Win32\_TSPermissionsSetting**](win32-tspermissionssetting.md) class exposes the following methods.</span></span>
+<span data-ttu-id="4b869-104">A classe [**Win32 \_ TSPermissionsSetting**](win32-tspermissionssetting.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="4b869-104">The [**Win32\_TSPermissionsSetting**](win32-tspermissionssetting.md) class exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b1b2a-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b1b2a-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4b869-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="4b869-105">In this section</span></span>
 
--   [<span data-ttu-id="b1b2a-106">**Método addaccount**</span><span class="sxs-lookup"><span data-stu-id="b1b2a-106">**AddAccount method**</span></span>](win32-tspermissionssetting-addaccount.md)
--   [<span data-ttu-id="b1b2a-107">**Método RestoreDefaults**</span><span class="sxs-lookup"><span data-stu-id="b1b2a-107">**RestoreDefaults method**</span></span>](win32-tspermissionssetting-restoredefaults.md)
+-   [<span data-ttu-id="4b869-106">**Método addaccount**</span><span class="sxs-lookup"><span data-stu-id="4b869-106">**AddAccount method**</span></span>](win32-tspermissionssetting-addaccount.md)
+-   [<span data-ttu-id="4b869-107">**Método RestoreDefaults**</span><span class="sxs-lookup"><span data-stu-id="4b869-107">**RestoreDefaults method**</span></span>](win32-tspermissionssetting-restoredefaults.md)
 
  
 

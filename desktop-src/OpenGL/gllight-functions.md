@@ -20,14 +20,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160169"
 ---
-# <a name="gllight-functions"></a><span data-ttu-id="ecf46-111">Funções glLight</span><span class="sxs-lookup"><span data-stu-id="ecf46-111">glLight Functions</span></span>
+# <a name="gllight-functions"></a><span data-ttu-id="08719-111">Funções glLight</span><span class="sxs-lookup"><span data-stu-id="08719-111">glLight Functions</span></span>
 
-<span data-ttu-id="ecf46-112">Essas funções retornam valores de parâmetro de fonte de luz:</span><span class="sxs-lookup"><span data-stu-id="ecf46-112">These functions return light source parameter values:</span></span>
+<span data-ttu-id="08719-112">Essas funções retornam valores de parâmetro de fonte de luz:</span><span class="sxs-lookup"><span data-stu-id="08719-112">These functions return light source parameter values:</span></span>
 
--   [<span data-ttu-id="ecf46-113">**glLightf**</span><span class="sxs-lookup"><span data-stu-id="ecf46-113">**glLightf**</span></span>](gllightf.md)
--   [<span data-ttu-id="ecf46-114">**glLighti**</span><span class="sxs-lookup"><span data-stu-id="ecf46-114">**glLighti**</span></span>](gllighti.md)
--   [<span data-ttu-id="ecf46-115">**glLightfv**</span><span class="sxs-lookup"><span data-stu-id="ecf46-115">**glLightfv**</span></span>](gllightfv.md)
--   [<span data-ttu-id="ecf46-116">**glLightiv**</span><span class="sxs-lookup"><span data-stu-id="ecf46-116">**glLightiv**</span></span>](gllightiv.md)
+-   [<span data-ttu-id="08719-113">**glLightf**</span><span class="sxs-lookup"><span data-stu-id="08719-113">**glLightf**</span></span>](gllightf.md)
+-   [<span data-ttu-id="08719-114">**glLighti**</span><span class="sxs-lookup"><span data-stu-id="08719-114">**glLighti**</span></span>](gllighti.md)
+-   [<span data-ttu-id="08719-115">**glLightfv**</span><span class="sxs-lookup"><span data-stu-id="08719-115">**glLightfv**</span></span>](gllightfv.md)
+-   [<span data-ttu-id="08719-116">**glLightiv**</span><span class="sxs-lookup"><span data-stu-id="08719-116">**glLightiv**</span></span>](gllightiv.md)
 
  
 
