@@ -1,0 +1,168 @@
+---
+title: Elementos do esquema de Agendador de Tarefas
+description: Os elementos listados aqui são definidos pelo esquema de Agendador de Tarefas. Esses elementos são usados durante a leitura ou gravação de XML para uma tarefa.
+ms.assetid: a4c983fd-ded8-47ad-830e-b7c9907b778f
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 1a78b277de7fb96782a562ca6fa7458bce417e4a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104363629"
+---
+# <a name="task-scheduler-schema-elements"></a><span data-ttu-id="92f83-104">Elementos do esquema de Agendador de Tarefas</span><span class="sxs-lookup"><span data-stu-id="92f83-104">Task Scheduler Schema Elements</span></span>
+
+<span data-ttu-id="92f83-105">Os elementos listados aqui são definidos pelo esquema de Agendador de Tarefas.</span><span class="sxs-lookup"><span data-stu-id="92f83-105">The elements listed here are defined by the Task Scheduler schema.</span></span> <span data-ttu-id="92f83-106">Esses elementos são usados durante a leitura ou gravação de XML para uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="92f83-106">These elements are used when reading or writing XML for a task.</span></span>
+
+<span data-ttu-id="92f83-107">Os tópicos nesta seção incluem uma descrição do elemento; como ele é definido no XSD; e informações sobre todos os pais, filhos e atributos relacionados.</span><span class="sxs-lookup"><span data-stu-id="92f83-107">The topics in this section include a description of the element; how it is defined in the XSD;, and information about all related parents, children, and attributes.</span></span>
+
+-   [<span data-ttu-id="92f83-108">**Ações (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-108">**Actions (taskType)**</span></span>](taskschedulerschema-actions-tasktype-element.md)
+-   [<span data-ttu-id="92f83-109">**AllowHardTerminate (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-109">**AllowHardTerminate (settingsType)**</span></span>](taskschedulerschema-allowhardterminate-settingstype-element.md)
+-   [<span data-ttu-id="92f83-110">**AllowStartOnDemand (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-110">**AllowStartOnDemand (settingsType)**</span></span>](taskschedulerschema-allowstartondemand-settingstype-element.md)
+-   [<span data-ttu-id="92f83-111">**Abril (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-111">**April (monthsType)**</span></span>](taskschedulerschema-april-monthstype-element.md)
+-   [<span data-ttu-id="92f83-112">**Argumentos (exectype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-112">**Arguments (execType)**</span></span>](taskschedulerschema-arguments-exectype-element.md)
+-   [<span data-ttu-id="92f83-113">**Anexos (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-113">**Attachments (sendMailType)**</span></span>](taskschedulerschema-attachments-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-114">**Agosto (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-114">**August (monthsType)**</span></span>](taskschedulerschema-august-monthstype-element.md)
+-   [<span data-ttu-id="92f83-115">**Autor (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-115">**Author (registrationInfoType)**</span></span>](taskschedulerschema-author-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-116">**Corpo (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-116">**Body (sendMailType)**</span></span>](taskschedulerschema-body-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-117">**Corpo (defaultmessagetype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-117">**Body (showMessageType)**</span></span>](taskschedulerschema-body-showmessagetype-element.md)
+-   [<span data-ttu-id="92f83-118">**BootTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-118">**BootTrigger (triggerGroup)**</span></span>](taskschedulerschema-boottrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-119">**Cco (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-119">**Bcc (sendMailType)**</span></span>](taskschedulerschema-bcc-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-120">**CalendarTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-120">**CalendarTrigger (triggerGroup)**</span></span>](taskschedulerschema-calendartrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-121">**CC (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-121">**Cc (sendMailType)**</span></span>](taskschedulerschema-cc-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-122">**ClassID (comhandletype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-122">**ClassId (comHandlerType)**</span></span>](taskschedulerschema-classid-comhandlertype-element.md)
+-   [<span data-ttu-id="92f83-123">**Commanipulador (The actioner)**</span><span class="sxs-lookup"><span data-stu-id="92f83-123">**ComHandler (actionGroup)**</span></span>](taskschedulerschema-comhandler-actiongroup-element.md)
+-   [<span data-ttu-id="92f83-124">**Comando (exectype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-124">**Command (execType)**</span></span>](taskschedulerschema-command-exectype-element.md)
+-   [<span data-ttu-id="92f83-125">**Contagem (restartype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-125">**Count (restartType)**</span></span>](taskschedulerschema-count-restarttype-element.md)
+-   [<span data-ttu-id="92f83-126">**Dados (comhandletype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-126">**Data (comHandlerType)**</span></span>](taskschedulerschema-data-comhandlertype-element.md)
+-   [<span data-ttu-id="92f83-127">**Dados (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-127">**Data (taskType)**</span></span>](taskschedulerschema-data-tasktype-element.md)
+-   [<span data-ttu-id="92f83-128">**Data (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-128">**Date (registrationInfoType)**</span></span>](taskschedulerschema-date-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-129">**Dia (daysOfMonthType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-129">**Day (daysOfMonthType)**</span></span>](taskschedulerschema-day-daysofmonthtype-element.md)
+-   [<span data-ttu-id="92f83-130">**DaysInterval (dailyScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-130">**DaysInterval (dailyScheduleType)**</span></span>](taskschedulerschema-daysinterval-dailyscheduletype-element.md)
+-   [<span data-ttu-id="92f83-131">**DaysOfMonth (monthlyScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-131">**DaysOfMonth (monthlyScheduleType)**</span></span>](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md)
+-   [<span data-ttu-id="92f83-132">**DaysOfWeek (monthlyDayOfWeekScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-132">**DaysOfWeek (monthlyDayOfWeekScheduleType)**</span></span>](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md)
+-   [<span data-ttu-id="92f83-133">**DaysOfWeek (weeklyScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-133">**DaysOfWeek (weeklyScheduleType)**</span></span>](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)
+-   [<span data-ttu-id="92f83-134">**Dezembro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-134">**December (monthsType)**</span></span>](taskschedulerschema-december-monthstype-element.md)
+-   [<span data-ttu-id="92f83-135">**Atraso (bootTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-135">**Delay (bootTriggerType)**</span></span>](taskschedulerschema-delay-boottriggertype-element.md)
+-   [<span data-ttu-id="92f83-136">**Atraso (eventTriggertype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-136">**Delay (eventTriggerType)**</span></span>](taskschedulerschema-delay-eventtriggertype-element.md)
+-   [<span data-ttu-id="92f83-137">**Atraso (logonTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-137">**Delay (logonTriggerType)**</span></span>](taskschedulerschema-delay-logontriggertype-element.md)
+-   [<span data-ttu-id="92f83-138">**Atraso (registrationTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-138">**Delay (registrationTriggerType)**</span></span>](taskschedulerschema-delay-registrationtriggertype-element.md)
+-   [<span data-ttu-id="92f83-139">**Atraso (sessionStateChangeTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-139">**Delay (sessionStateChangeTriggerType)**</span></span>](taskschedulerschema-delay-sessionstatechangetriggertype-element.md)
+-   [<span data-ttu-id="92f83-140">**DeleteExpiredTaskAfter (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-140">**DeleteExpiredTaskAfter (settingsType)**</span></span>](taskschedulerschema-deleteexpiredtaskafter-settingstype-element.md)
+-   [<span data-ttu-id="92f83-141">**Descrição (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-141">**Description (registrationInfoType)**</span></span>](taskschedulerschema-description-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-142">**DisallowStartIfOnBatteries (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-142">**DisallowStartIfOnBatteries (settingsType)**</span></span>](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md)
+-   [<span data-ttu-id="92f83-143">**DisallowStartOnRemoteAppSession (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-143">**DisallowStartOnRemoteAppSession (settingsType)**</span></span>](taskschedulerschema-disallowstartonremoteappsession-settingstype-element.md)
+-   [<span data-ttu-id="92f83-144">**DisplayName (PrincipalType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-144">**DisplayName (principalType)**</span></span>](taskschedulerschema-displayname-principaltype-element.md)
+-   [<span data-ttu-id="92f83-145">**Documentação (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-145">**Documentation (registrationInfoType)**</span></span>](taskschedulerschema-documentation-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-146">**Duração (idleSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-146">**Duration (idleSettingsType)**</span></span>](taskschedulerschema-duration-idlesettingstype-element.md)
+-   [<span data-ttu-id="92f83-147">**Duração (repetiçãotype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-147">**Duration (repetitionType)**</span></span>](taskschedulerschema-duration-repetitiontype-element.md)
+-   [<span data-ttu-id="92f83-148">**Habilitado (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-148">**Enabled (settingsType)**</span></span>](taskschedulerschema-enabled-settingstype-element.md)
+-   [<span data-ttu-id="92f83-149">**Habilitado (triggerBaseType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-149">**Enabled (triggerBaseType)**</span></span>](taskschedulerschema-enabled-triggerbasetype-element.md)
+-   [<span data-ttu-id="92f83-150">**TriggerBaseType (limite de entrada)**</span><span class="sxs-lookup"><span data-stu-id="92f83-150">**EndBoundary (triggerBaseType)**</span></span>](taskschedulerschema-endboundary-triggerbasetype-element.md)
+-   [<span data-ttu-id="92f83-151">**EventTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-151">**EventTrigger (triggerGroup)**</span></span>](taskschedulerschema-eventtrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-152">**Exec (The Action)**</span><span class="sxs-lookup"><span data-stu-id="92f83-152">**Exec (actionGroup)**</span></span>](taskschedulerschema-exec-actiongroup-element.md)
+-   [<span data-ttu-id="92f83-153">**ExecutionTimeLimit (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-153">**ExecutionTimeLimit (settingsType)**</span></span>](taskschedulerschema-executiontimelimit-settingstype-element.md)
+-   [<span data-ttu-id="92f83-154">**ExecutionTimeLimit (triggerBaseType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-154">**ExecutionTimeLimit (triggerBaseType)**</span></span>](taskschedulerschema-executiontimelimit-triggerbasetype-element.md)
+-   [<span data-ttu-id="92f83-155">**Fevereiro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-155">**February (monthsType)**</span></span>](taskschedulerschema-february-monthstype-element.md)
+-   [<span data-ttu-id="92f83-156">**Arquivo (AttachmentType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-156">**File (attachmentsType)**</span></span>](taskschedulerschema-file-attachmentstype-element.md)
+-   [<span data-ttu-id="92f83-157">**Sexta-feira (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-157">**Friday (daysOfWeekType)**</span></span>](taskschedulerschema-friday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-158">**De (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-158">**From (sendMailType)**</span></span>](taskschedulerschema-from-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-159">**GroupId (PrincipalType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-159">**GroupId (principalType)**</span></span>](taskschedulerschema-groupid-principaltype-element.md)
+-   [<span data-ttu-id="92f83-160">**HeaderFields (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-160">**HeaderFields (sendMailType)**</span></span>](taskschedulerschema-headerfields-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-161">**Headerfield (headerFieldsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-161">**HeaderField (headerFieldsType)**</span></span>](taskschedulerschema-headerfield-headerfieldstype-element.md)
+-   [<span data-ttu-id="92f83-162">**Oculto (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-162">**Hidden (settingsType)**</span></span>](taskschedulerschema-hidden-settingstype-element.md)
+-   [<span data-ttu-id="92f83-163">**IdleSettings (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-163">**IdleSettings (settingsType)**</span></span>](taskschedulerschema-idlesettings-settingstype-element.md)
+-   [<span data-ttu-id="92f83-164">**IdleTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-164">**IdleTrigger (triggerGroup)**</span></span>](taskschedulerschema-idletrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-165">**ID (networkSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-165">**Id (networkSettingsType)**</span></span>](taskschedulerschema-id-networksettingstype-element.md)
+-   [<span data-ttu-id="92f83-166">**Intervalo (repetição)**</span><span class="sxs-lookup"><span data-stu-id="92f83-166">**Interval (repetitionType)**</span></span>](taskschedulerschema-interval-repetitiontype-element.md)
+-   [<span data-ttu-id="92f83-167">**Intervalo (restartype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-167">**Interval (restartType)**</span></span>](taskschedulerschema-interval-restarttype-element.md)
+-   [<span data-ttu-id="92f83-168">**Janeiro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-168">**January (monthsType)**</span></span>](taskschedulerschema-january-monthstype-element.md)
+-   [<span data-ttu-id="92f83-169">**Julho (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-169">**July (monthsType)**</span></span>](taskschedulerschema-july-monthstype-element.md)
+-   [<span data-ttu-id="92f83-170">**Junho (monthtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-170">**June (monthsType)**</span></span>](taskschedulerschema-june-monthstype-element.md)
+-   [<span data-ttu-id="92f83-171">**LogonTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-171">**LogonTrigger (triggerGroup)**</span></span>](taskschedulerschema-logontrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-172">**Logontype (dirigetype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-172">**LogonType (principalType)**</span></span>](taskschedulerschema-logontype-principaltype-element.md)
+-   [<span data-ttu-id="92f83-173">**Março (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-173">**March (monthsType)**</span></span>](taskschedulerschema-march-monthstype-element.md)
+-   [<span data-ttu-id="92f83-174">**Maio (monthtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-174">**May (monthsType)**</span></span>](taskschedulerschema-may-monthstype-element.md)
+-   [<span data-ttu-id="92f83-175">**Segunda-feira (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-175">**Monday (daysOfWeekType)**</span></span>](taskschedulerschema-monday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-176">**Meses (monthlyDayOfWeekScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-176">**Months (monthlyDayOfWeekScheduleType)**</span></span>](taskschedulerschema-months-monthlydayofweekscheduletype-element.md)
+-   [<span data-ttu-id="92f83-177">**Meses (monthlyScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-177">**Months (monthlyScheduleType)**</span></span>](taskschedulerschema-months-monthlyscheduletype-element.md)
+-   [<span data-ttu-id="92f83-178">**MultipleInstancesPolicy (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-178">**MultipleInstancesPolicy (settingsType)**</span></span>](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)
+-   [<span data-ttu-id="92f83-179">**Nome (headerFieldType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-179">**Name (headerFieldType)**</span></span>](taskschedulerschema-name-headerfieldtype-element.md)
+-   [<span data-ttu-id="92f83-180">**Nome (networkSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-180">**Name (networkSettingsType)**</span></span>](taskschedulerschema-name-networksettingstype-element.md)
+-   [<span data-ttu-id="92f83-181">**Novembro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-181">**November (monthsType)**</span></span>](taskschedulerschema-november-monthstype-element.md)
+-   [<span data-ttu-id="92f83-182">**Outubro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-182">**October (monthsType)**</span></span>](taskschedulerschema-october-monthstype-element.md)
+-   [<span data-ttu-id="92f83-183">**Entidade de segurança (principalsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-183">**Principal (principalsType)**</span></span>](taskschedulerschema-principal-principaltype-element.md)
+-   [<span data-ttu-id="92f83-184">**Entidades de segurança (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-184">**Principals (taskType)**</span></span>](taskschedulerschema-principals-tasktype-element.md)
+-   [<span data-ttu-id="92f83-185">**ProcessTokenSidType (PrincipalType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-185">**ProcessTokenSidType (principalType)**</span></span>](taskschedulerschema-processtokensidtype-principaltype-element.md)
+-   [<span data-ttu-id="92f83-186">**Prioridade (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-186">**Priority (settingsType)**</span></span>](taskschedulerschema-priority-settingstype-element.md)
+-   [<span data-ttu-id="92f83-187">**Privilégio (requiredPrivilegesType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-187">**Privilege (requiredPrivilegesType)**</span></span>](taskschedulerschema-privilege-requiredprivilegestype-element.md)
+-   [<span data-ttu-id="92f83-188">**RandomDelay (calendarTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-188">**RandomDelay (calendarTriggerType)**</span></span>](taskschedulerschema-randomdelay-calendartriggertype-element.md)
+-   [<span data-ttu-id="92f83-189">**RandomDelay (timetriggertype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-189">**RandomDelay (timeTriggerType)**</span></span>](taskschedulerschema-randomdelay-timetriggertype-element.md)
+-   [<span data-ttu-id="92f83-190">**RegistrationInfo (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-190">**RegistrationInfo (taskType)**</span></span>](taskschedulerschema-registrationinfo-tasktype-element.md)
+-   [<span data-ttu-id="92f83-191">**RegistrationTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-191">**RegistrationTrigger (triggerGroup)**</span></span>](taskschedulerschema-registrationtrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-192">**Repetição (triggerBaseType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-192">**Repetition (triggerBaseType)**</span></span>](taskschedulerschema-repetition-triggerbasetype-element.md)
+-   [<span data-ttu-id="92f83-193">**RequiredPrivileges (requiredPrivilegesType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-193">**RequiredPrivileges (requiredPrivilegesType)**</span></span>](taskschedulerschema-requiredprivileges-requiredprivilegestype-element.md)
+-   [<span data-ttu-id="92f83-194">**ReplyTo (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-194">**ReplyTo (sendMailType)**</span></span>](taskschedulerschema-replyto-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-195">**RestartOnFailure (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-195">**RestartOnFailure (settingsType)**</span></span>](taskschedulerschema-restartonfailure-settingstype-element.md)
+-   [<span data-ttu-id="92f83-196">**RestartOnIdle (idleSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-196">**RestartOnIdle (idleSettingsType)**</span></span>](taskschedulerschema-restartonidle-idlesettingstype-element.md)
+-   [<span data-ttu-id="92f83-197">**RunLevel (PrincipalType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-197">**RunLevel (principalType)**</span></span>](taskschedulerschema-runlevel-principaltype-element.md)
+-   [<span data-ttu-id="92f83-198">**RunOnlyIfIdle (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-198">**RunOnlyIfIdle (settingsType)**</span></span>](taskschedulerschema-runonlyifidle-settingstype-element.md)
+-   [<span data-ttu-id="92f83-199">**RunOnlyIfNetworkAvailable (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-199">**RunOnlyIfNetworkAvailable (settingsType)**</span></span>](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md)
+-   [<span data-ttu-id="92f83-200">**Sábado (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-200">**Saturday (daysOfWeekType)**</span></span>](taskschedulerschema-saturday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-201">**ScheduleByDay (calendarTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-201">**ScheduleByDay (calendarTriggerType)**</span></span>](taskschedulerschema-schedulebyday-calendartriggertype-element.md)
+-   [<span data-ttu-id="92f83-202">**ScheduleByMonthDayOfWeek (calendarTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-202">**ScheduleByMonthDayOfWeek (calendarTriggerType)**</span></span>](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md)
+-   [<span data-ttu-id="92f83-203">**ScheduleByMonth (calendarTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-203">**ScheduleByMonth (calendarTriggerType)**</span></span>](taskschedulerschema-schedulebymonth-calendartriggertype-element.md)
+-   [<span data-ttu-id="92f83-204">**ScheduleByWeek (calendarTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-204">**ScheduleByWeek (calendarTriggerType)**</span></span>](taskschedulerschema-schedulebyweek-calendartriggertype-element.md)
+-   [<span data-ttu-id="92f83-205">**SecurityDescriptor (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-205">**SecurityDescriptor (registrationInfoType)**</span></span>](taskschedulerschema-securitydescriptor-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-206">**Elemento SendEmail (actionGroup)**</span><span class="sxs-lookup"><span data-stu-id="92f83-206">**SendEmail (actionGroup) Element**</span></span>](taskschedulerschema-sendemail-actiongroup-element.md)
+-   [<span data-ttu-id="92f83-207">**Setembro (meses)**</span><span class="sxs-lookup"><span data-stu-id="92f83-207">**September (monthsType)**</span></span>](taskschedulerschema-september-monthstype-element.md)
+-   [<span data-ttu-id="92f83-208">**SessionStateChangeTrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-208">**SessionStateChangeTrigger (triggerGroup)**</span></span>](taskschedulerschema-sessionstatechangetrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-209">**Servidor (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-209">**Server (sendMailType)**</span></span>](taskschedulerschema-server-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-210">**Configurações (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-210">**Settings (taskType)**</span></span>](taskschedulerschema-settings-tasktype-element.md)
+-   [<span data-ttu-id="92f83-211">**Exmessage (The Action)**</span><span class="sxs-lookup"><span data-stu-id="92f83-211">**ShowMessage (actionGroup)**</span></span>](taskschedulerschema-showmessage-actiongroup-element.md)
+-   [<span data-ttu-id="92f83-212">**Origem (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-212">**Source (registrationInfoType)**</span></span>](taskschedulerschema-source-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-213">**StartBoundary (triggerBaseType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-213">**StartBoundary (triggerBaseType)**</span></span>](taskschedulerschema-startboundary-triggerbasetype-element.md)
+-   [<span data-ttu-id="92f83-214">**StartWhenAvailable (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-214">**StartWhenAvailable (settingsType)**</span></span>](taskschedulerschema-startwhenavailable-settingstype-element.md)
+-   [<span data-ttu-id="92f83-215">**StateChange (sessionStateChangeTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-215">**StateChange (sessionStateChangeTriggerType)**</span></span>](taskschedulerschema-statechange-sessionstatechangetriggertype-element.md)
+-   [<span data-ttu-id="92f83-216">**StopAtDurationEnd (repetição)**</span><span class="sxs-lookup"><span data-stu-id="92f83-216">**StopAtDurationEnd (repetitionType)**</span></span>](taskschedulerschema-stopatdurationend-repetitiontype-element.md)
+-   [<span data-ttu-id="92f83-217">**StopIfGoingOnBatteries (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-217">**StopIfGoingOnBatteries (settingsType)**</span></span>](taskschedulerschema-stopifgoingonbatteries-settingstype-element.md)
+-   [<span data-ttu-id="92f83-218">**StopOnIdleEnd (idleSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-218">**StopOnIdleEnd (idleSettingsType)**</span></span>](taskschedulerschema-terminateonidleend-idlesettingstype-element.md)
+-   [<span data-ttu-id="92f83-219">**Assunto (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-219">**Subject (sendMailType)**</span></span>](taskschedulerschema-subject-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-220">**Assinatura (eventTriggertype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-220">**Subscription (eventTriggerType)**</span></span>](taskschedulerschema-subscription-eventtriggertype-element.md)
+-   [<span data-ttu-id="92f83-221">**Domingo (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-221">**Sunday (daysOfWeekType)**</span></span>](taskschedulerschema-sunday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-222">**Tarefa**</span><span class="sxs-lookup"><span data-stu-id="92f83-222">**Task**</span></span>](taskschedulerschema-task-element.md)
+-   [<span data-ttu-id="92f83-223">**Quinta-feira (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-223">**Thursday (daysOfWeekType)**</span></span>](taskschedulerschema-thursday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-224">**Gatilho de timetrigger (The Trigger)**</span><span class="sxs-lookup"><span data-stu-id="92f83-224">**TimeTrigger (triggerGroup)**</span></span>](taskschedulerschema-timetrigger-triggergroup-element.md)
+-   [<span data-ttu-id="92f83-225">**Elemento Title (defaultmessagetype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-225">**Title (showMessageType) Element**</span></span>](taskschedulerschema-title-showmessagetype-element.md)
+-   [<span data-ttu-id="92f83-226">**Para (sendMailtype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-226">**To (sendMailType)**</span></span>](taskschedulerschema-to-sendemailtype-element.md)
+-   [<span data-ttu-id="92f83-227">**Gatilhos (taskType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-227">**Triggers (taskType)**</span></span>](taskschedulerschema-triggers-tasktype-element.md)
+-   [<span data-ttu-id="92f83-228">**Terça-feira (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-228">**Tuesday (daysOfWeekType)**</span></span>](taskschedulerschema-tuesday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-229">**URI (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-229">**URI (registrationInfoType)**</span></span>](taskschedulerschema-uri-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-230">**UserId (logonTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-230">**UserId (logonTriggerType)**</span></span>](taskschedulerschema-userid-logontriggertype-element.md)
+-   [<span data-ttu-id="92f83-231">**UserId (PrincipalType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-231">**UserId (principalType)**</span></span>](taskschedulerschema-userid-principaltype-element.md)
+-   [<span data-ttu-id="92f83-232">**UserId (sessionStateChangeTriggerType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-232">**UserId (sessionStateChangeTriggerType)**</span></span>](taskschedulerschema-userid-sessionstatechangetriggertype-element.md)
+-   [<span data-ttu-id="92f83-233">**UseUnifiedSchedulingEngine (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-233">**UseUnifiedSchedulingEngine (settingsType)**</span></span>](taskschedulerschema-useunifiedschedulingengine-settingstype-element.md)
+-   [<span data-ttu-id="92f83-234">**ValueQueries (eventTriggertype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-234">**ValueQueries (eventTriggerType)**</span></span>](taskschedulerschema-valuequeries-eventtriggertype-element.md)
+-   [<span data-ttu-id="92f83-235">**Valor (headerFieldType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-235">**Value (headerFieldType)**</span></span>](taskschedulerschema-value-headerfieldtype-element.md)
+-   [<span data-ttu-id="92f83-236">**Versão (registrationInfoType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-236">**Version (registrationInfoType)**</span></span>](taskschedulerschema-version-registrationinfotype-element.md)
+-   [<span data-ttu-id="92f83-237">**WaitTimeout (idleSettingsType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-237">**WaitTimeout (idleSettingsType)**</span></span>](taskschedulerschema-waittimeout-idlesettingstype-element.md)
+-   [<span data-ttu-id="92f83-238">**WakeToRun (settingstype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-238">**WakeToRun (settingsType)**</span></span>](taskschedulerschema-waketorun-settingstype-element.md)
+-   [<span data-ttu-id="92f83-239">**Quarta-feira (daysOfWeekType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-239">**Wednesday (daysOfWeekType)**</span></span>](taskschedulerschema-wednesday-daysofweektype-element.md)
+-   [<span data-ttu-id="92f83-240">**Semana (weektype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-240">**Week (weeksType)**</span></span>](taskschedulerschema-week-weekstype-element.md)
+-   [<span data-ttu-id="92f83-241">**WeeksInterval (weeklyScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-241">**WeeksInterval (weeklyScheduleType)**</span></span>](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md)
+-   [<span data-ttu-id="92f83-242">**Semanas (monthlyDayOfWeekScheduleType)**</span><span class="sxs-lookup"><span data-stu-id="92f83-242">**Weeks (monthlyDayOfWeekScheduleType)**</span></span>](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md)
+-   [<span data-ttu-id="92f83-243">**WorkingDirectory (exectype)**</span><span class="sxs-lookup"><span data-stu-id="92f83-243">**WorkingDirectory (execType)**</span></span>](taskschedulerschema-workingdirectory-exectype-element.md)
+
+ 
+
+ 
+
+
+
+
