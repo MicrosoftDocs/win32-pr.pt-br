@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104169702"
 ---
-# <a name="router-administration-reference"></a><span data-ttu-id="22629-103">Referência de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="22629-103">Router Administration Reference</span></span>
+# <a name="router-administration-reference"></a><span data-ttu-id="27a88-103">Referência de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="27a88-103">Router Administration Reference</span></span>
 
-<span data-ttu-id="22629-104">A documentação a seguir descreve as funções a serem usadas ao trabalhar com a administração do roteador:</span><span class="sxs-lookup"><span data-stu-id="22629-104">The following documentation describes the functions to use when working with router administration:</span></span>
+<span data-ttu-id="27a88-104">A documentação a seguir descreve as funções a serem usadas ao trabalhar com a administração do roteador:</span><span class="sxs-lookup"><span data-stu-id="27a88-104">The following documentation describes the functions to use when working with router administration:</span></span>
 
--   [<span data-ttu-id="22629-105">Funções de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="22629-105">Router Administration Functions</span></span>](router-administration-functions.md)
+-   [<span data-ttu-id="27a88-105">Funções de administração do roteador</span><span class="sxs-lookup"><span data-stu-id="27a88-105">Router Administration Functions</span></span>](router-administration-functions.md)
 
  
 
