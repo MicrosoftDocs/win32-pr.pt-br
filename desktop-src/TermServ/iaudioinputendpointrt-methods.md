@@ -12,15 +12,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "104160069"
 ---
-# <a name="iaudioinputendpointrt-methods"></a><span data-ttu-id="a6642-103">Métodos IAudioInputEndpointRT</span><span class="sxs-lookup"><span data-stu-id="a6642-103">IAudioInputEndpointRT Methods</span></span>
+# <a name="iaudioinputendpointrt-methods"></a><span data-ttu-id="26c14-103">Métodos IAudioInputEndpointRT</span><span class="sxs-lookup"><span data-stu-id="26c14-103">IAudioInputEndpointRT Methods</span></span>
 
-<span data-ttu-id="a6642-104">A interface [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="a6642-104">The [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) interface exposes the following methods.</span></span>
+<span data-ttu-id="26c14-104">A interface [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="26c14-104">The [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a6642-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="a6642-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="26c14-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="26c14-105">In this section</span></span>
 
--   [<span data-ttu-id="a6642-106">**Método GetInputDataPointer**</span><span class="sxs-lookup"><span data-stu-id="a6642-106">**GetInputDataPointer method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-getinputdatapointer)
--   [<span data-ttu-id="a6642-107">**Método PulseEndpoint**</span><span class="sxs-lookup"><span data-stu-id="a6642-107">**PulseEndpoint method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-pulseendpoint)
--   [<span data-ttu-id="a6642-108">**Método ReleaseInputDataPointer**</span><span class="sxs-lookup"><span data-stu-id="a6642-108">**ReleaseInputDataPointer method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-releaseinputdatapointer)
+-   [<span data-ttu-id="26c14-106">**Método GetInputDataPointer**</span><span class="sxs-lookup"><span data-stu-id="26c14-106">**GetInputDataPointer method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-getinputdatapointer)
+-   [<span data-ttu-id="26c14-107">**Método PulseEndpoint**</span><span class="sxs-lookup"><span data-stu-id="26c14-107">**PulseEndpoint method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-pulseendpoint)
+-   [<span data-ttu-id="26c14-108">**Método ReleaseInputDataPointer**</span><span class="sxs-lookup"><span data-stu-id="26c14-108">**ReleaseInputDataPointer method**</span></span>](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-releaseinputdatapointer)
 
  
 

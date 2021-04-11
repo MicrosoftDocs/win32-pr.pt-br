@@ -19,57 +19,57 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/19/2020
 ms.locfileid: "104162240"
 ---
-# <a name="audio-mixer-reference"></a><span data-ttu-id="10ac2-110">Referência do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="10ac2-110">Audio Mixer Reference</span></span>
+# <a name="audio-mixer-reference"></a><span data-ttu-id="37eb3-110">Referência do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="37eb3-110">Audio Mixer Reference</span></span>
 
-<span data-ttu-id="10ac2-111">Esta seção descreve as funções, as estruturas e as mensagens associadas aos mixers de áudio.</span><span class="sxs-lookup"><span data-stu-id="10ac2-111">This section describes the functions, structures, and messages associated with audio mixers.</span></span> <span data-ttu-id="10ac2-112">Esses elementos são agrupados da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="10ac2-112">These elements are grouped as follows.</span></span>
+<span data-ttu-id="37eb3-111">Esta seção descreve as funções, as estruturas e as mensagens associadas aos mixers de áudio.</span><span class="sxs-lookup"><span data-stu-id="37eb3-111">This section describes the functions, structures, and messages associated with audio mixers.</span></span> <span data-ttu-id="37eb3-112">Esses elementos são agrupados da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="37eb3-112">These elements are grouped as follows.</span></span>
 
-## <a name="querying-devices"></a><span data-ttu-id="10ac2-113">Consultando dispositivos</span><span class="sxs-lookup"><span data-stu-id="10ac2-113">Querying Devices</span></span>
+## <a name="querying-devices"></a><span data-ttu-id="37eb3-113">Consultando dispositivos</span><span class="sxs-lookup"><span data-stu-id="37eb3-113">Querying Devices</span></span>
 
--   [<span data-ttu-id="10ac2-114">**MIXERCAPS**</span><span class="sxs-lookup"><span data-stu-id="10ac2-114">**MIXERCAPS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercaps)
--   [<span data-ttu-id="10ac2-115">**mixerGetDevCaps**</span><span class="sxs-lookup"><span data-stu-id="10ac2-115">**mixerGetDevCaps**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetdevcaps)
--   [<span data-ttu-id="10ac2-116">**mixerGetNumDevs**</span><span class="sxs-lookup"><span data-stu-id="10ac2-116">**mixerGetNumDevs**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
+-   [<span data-ttu-id="37eb3-114">**MIXERCAPS**</span><span class="sxs-lookup"><span data-stu-id="37eb3-114">**MIXERCAPS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercaps)
+-   [<span data-ttu-id="37eb3-115">**mixerGetDevCaps**</span><span class="sxs-lookup"><span data-stu-id="37eb3-115">**mixerGetDevCaps**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetdevcaps)
+-   [<span data-ttu-id="37eb3-116">**mixerGetNumDevs**</span><span class="sxs-lookup"><span data-stu-id="37eb3-116">**mixerGetNumDevs**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
 
-## <a name="opening-and-closing"></a><span data-ttu-id="10ac2-117">Abrindo e fechando</span><span class="sxs-lookup"><span data-stu-id="10ac2-117">Opening and Closing</span></span>
+## <a name="opening-and-closing"></a><span data-ttu-id="37eb3-117">Abrindo e fechando</span><span class="sxs-lookup"><span data-stu-id="37eb3-117">Opening and Closing</span></span>
 
--   [<span data-ttu-id="10ac2-118">**mixerClose**</span><span class="sxs-lookup"><span data-stu-id="10ac2-118">**mixerClose**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose)
--   [<span data-ttu-id="10ac2-119">**mixerOpen**</span><span class="sxs-lookup"><span data-stu-id="10ac2-119">**mixerOpen**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
+-   [<span data-ttu-id="37eb3-118">**mixerClose**</span><span class="sxs-lookup"><span data-stu-id="37eb3-118">**mixerClose**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose)
+-   [<span data-ttu-id="37eb3-119">**mixerOpen**</span><span class="sxs-lookup"><span data-stu-id="37eb3-119">**mixerOpen**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 
-## <a name="retrieving-mixer-identifiers"></a><span data-ttu-id="10ac2-120">Recuperando identificadores do mixer</span><span class="sxs-lookup"><span data-stu-id="10ac2-120">Retrieving Mixer Identifiers</span></span>
+## <a name="retrieving-mixer-identifiers"></a><span data-ttu-id="37eb3-120">Recuperando identificadores do mixer</span><span class="sxs-lookup"><span data-stu-id="37eb3-120">Retrieving Mixer Identifiers</span></span>
 
--   [<span data-ttu-id="10ac2-121">**mixerGetID**</span><span class="sxs-lookup"><span data-stu-id="10ac2-121">**mixerGetID**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetid)
+-   [<span data-ttu-id="37eb3-121">**mixerGetID**</span><span class="sxs-lookup"><span data-stu-id="37eb3-121">**mixerGetID**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetid)
 
-## <a name="retrieving-line-controls"></a><span data-ttu-id="10ac2-122">Recuperando controles de linha</span><span class="sxs-lookup"><span data-stu-id="10ac2-122">Retrieving Line Controls</span></span>
+## <a name="retrieving-line-controls"></a><span data-ttu-id="37eb3-122">Recuperando controles de linha</span><span class="sxs-lookup"><span data-stu-id="37eb3-122">Retrieving Line Controls</span></span>
 
--   [<span data-ttu-id="10ac2-123">**MIXERCONTROL**</span><span class="sxs-lookup"><span data-stu-id="10ac2-123">**MIXERCONTROL**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercontrol)
--   [<span data-ttu-id="10ac2-124">**mixerGetLineControls**</span><span class="sxs-lookup"><span data-stu-id="10ac2-124">**mixerGetLineControls**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlinecontrols)
--   [<span data-ttu-id="10ac2-125">**MIXERLINECONTROLS**</span><span class="sxs-lookup"><span data-stu-id="10ac2-125">**MIXERLINECONTROLS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
+-   [<span data-ttu-id="37eb3-123">**MIXERCONTROL**</span><span class="sxs-lookup"><span data-stu-id="37eb3-123">**MIXERCONTROL**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercontrol)
+-   [<span data-ttu-id="37eb3-124">**mixerGetLineControls**</span><span class="sxs-lookup"><span data-stu-id="37eb3-124">**mixerGetLineControls**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlinecontrols)
+-   [<span data-ttu-id="37eb3-125">**MIXERLINECONTROLS**</span><span class="sxs-lookup"><span data-stu-id="37eb3-125">**MIXERLINECONTROLS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
 
-## <a name="changing-control-attributes"></a><span data-ttu-id="10ac2-126">Alterando atributos de controle</span><span class="sxs-lookup"><span data-stu-id="10ac2-126">Changing Control Attributes</span></span>
+## <a name="changing-control-attributes"></a><span data-ttu-id="37eb3-126">Alterando atributos de controle</span><span class="sxs-lookup"><span data-stu-id="37eb3-126">Changing Control Attributes</span></span>
 
--   [<span data-ttu-id="10ac2-127">**MIXERCONTROLDETAILS**</span><span class="sxs-lookup"><span data-stu-id="10ac2-127">**MIXERCONTROLDETAILS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
--   <span data-ttu-id="10ac2-128">[**MIXERCONTROLDETAILS \_ booliano**](/previous-versions//dd757295(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="10ac2-128">[**MIXERCONTROLDETAILS\_BOOLEAN**](/previous-versions//dd757295(v=vs.85))</span></span>
--   <span data-ttu-id="10ac2-129">[**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="10ac2-129">[**MIXERCONTROLDETAILS\_LISTTEXT**](/previous-versions//dd757296(v=vs.85))</span></span>
--   <span data-ttu-id="10ac2-130">[**MIXERCONTROLDETAILS \_ assinado**](/previous-versions//dd757297(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="10ac2-130">[**MIXERCONTROLDETAILS\_SIGNED**](/previous-versions//dd757297(v=vs.85))</span></span>
--   <span data-ttu-id="10ac2-131">[**MIXERCONTROLDETAILS \_ não assinado**](/previous-versions//dd757298(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="10ac2-131">[**MIXERCONTROLDETAILS\_UNSIGNED**](/previous-versions//dd757298(v=vs.85))</span></span>
--   [<span data-ttu-id="10ac2-132">**mixerGetControlDetails**</span><span class="sxs-lookup"><span data-stu-id="10ac2-132">**mixerGetControlDetails**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetcontroldetails)
--   [<span data-ttu-id="10ac2-133">**mixerSetControlDetails**</span><span class="sxs-lookup"><span data-stu-id="10ac2-133">**mixerSetControlDetails**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
+-   [<span data-ttu-id="37eb3-127">**MIXERCONTROLDETAILS**</span><span class="sxs-lookup"><span data-stu-id="37eb3-127">**MIXERCONTROLDETAILS**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
+-   <span data-ttu-id="37eb3-128">[**MIXERCONTROLDETAILS \_ booliano**](/previous-versions//dd757295(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="37eb3-128">[**MIXERCONTROLDETAILS\_BOOLEAN**](/previous-versions//dd757295(v=vs.85))</span></span>
+-   <span data-ttu-id="37eb3-129">[**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="37eb3-129">[**MIXERCONTROLDETAILS\_LISTTEXT**](/previous-versions//dd757296(v=vs.85))</span></span>
+-   <span data-ttu-id="37eb3-130">[**MIXERCONTROLDETAILS \_ assinado**](/previous-versions//dd757297(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="37eb3-130">[**MIXERCONTROLDETAILS\_SIGNED**](/previous-versions//dd757297(v=vs.85))</span></span>
+-   <span data-ttu-id="37eb3-131">[**MIXERCONTROLDETAILS \_ não assinado**](/previous-versions//dd757298(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="37eb3-131">[**MIXERCONTROLDETAILS\_UNSIGNED**](/previous-versions//dd757298(v=vs.85))</span></span>
+-   [<span data-ttu-id="37eb3-132">**mixerGetControlDetails**</span><span class="sxs-lookup"><span data-stu-id="37eb3-132">**mixerGetControlDetails**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetcontroldetails)
+-   [<span data-ttu-id="37eb3-133">**mixerSetControlDetails**</span><span class="sxs-lookup"><span data-stu-id="37eb3-133">**mixerSetControlDetails**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
 
-## <a name="retrieving-line-information"></a><span data-ttu-id="10ac2-134">Recuperando informações de linha</span><span class="sxs-lookup"><span data-stu-id="10ac2-134">Retrieving Line Information</span></span>
+## <a name="retrieving-line-information"></a><span data-ttu-id="37eb3-134">Recuperando informações de linha</span><span class="sxs-lookup"><span data-stu-id="37eb3-134">Retrieving Line Information</span></span>
 
--   [<span data-ttu-id="10ac2-135">**mixerGetLineInfo**</span><span class="sxs-lookup"><span data-stu-id="10ac2-135">**mixerGetLineInfo**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
--   [<span data-ttu-id="10ac2-136">**MIXER**</span><span class="sxs-lookup"><span data-stu-id="10ac2-136">**MIXERLINE**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
--   [<span data-ttu-id="10ac2-137">**\_alteração de \_ controle de MIXM mm \_**</span><span class="sxs-lookup"><span data-stu-id="10ac2-137">**MM\_MIXM\_CONTROL\_CHANGE**</span></span>](mm-mixm-control-change.md)
--   [<span data-ttu-id="10ac2-138">**\_alteração de \_ linha \_ MIXM mm**</span><span class="sxs-lookup"><span data-stu-id="10ac2-138">**MM\_MIXM\_LINE\_CHANGE**</span></span>](mm-mixm-line-change.md)
+-   [<span data-ttu-id="37eb3-135">**mixerGetLineInfo**</span><span class="sxs-lookup"><span data-stu-id="37eb3-135">**mixerGetLineInfo**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
+-   [<span data-ttu-id="37eb3-136">**MIXER**</span><span class="sxs-lookup"><span data-stu-id="37eb3-136">**MIXERLINE**</span></span>](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
+-   [<span data-ttu-id="37eb3-137">**\_alteração de \_ controle de MIXM mm \_**</span><span class="sxs-lookup"><span data-stu-id="37eb3-137">**MM\_MIXM\_CONTROL\_CHANGE**</span></span>](mm-mixm-control-change.md)
+-   [<span data-ttu-id="37eb3-138">**\_alteração de \_ linha \_ MIXM mm**</span><span class="sxs-lookup"><span data-stu-id="37eb3-138">**MM\_MIXM\_LINE\_CHANGE**</span></span>](mm-mixm-line-change.md)
 
-## <a name="sending-user-defined-messages"></a><span data-ttu-id="10ac2-139">Enviando mensagens de User-Defined</span><span class="sxs-lookup"><span data-stu-id="10ac2-139">Sending User-Defined Messages</span></span>
+## <a name="sending-user-defined-messages"></a><span data-ttu-id="37eb3-139">Enviando mensagens de User-Defined</span><span class="sxs-lookup"><span data-stu-id="37eb3-139">Sending User-Defined Messages</span></span>
 
--   [<span data-ttu-id="10ac2-140">**mixerMessage**</span><span class="sxs-lookup"><span data-stu-id="10ac2-140">**mixerMessage**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
+-   [<span data-ttu-id="37eb3-140">**mixerMessage**</span><span class="sxs-lookup"><span data-stu-id="37eb3-140">**mixerMessage**</span></span>](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
 
-## <a name="related-topics"></a><span data-ttu-id="10ac2-141">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="10ac2-141">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="37eb3-141">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="37eb3-141">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="10ac2-142">Referência do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="10ac2-142">Audio Mixer Reference</span></span>](audio-mixer-reference.md)
+[<span data-ttu-id="37eb3-142">Referência do mixer de áudio</span><span class="sxs-lookup"><span data-stu-id="37eb3-142">Audio Mixer Reference</span></span>](audio-mixer-reference.md)
 </dt> </dl>
 
  
