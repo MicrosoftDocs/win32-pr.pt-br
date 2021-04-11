@@ -58,7 +58,7 @@ O valor da propriedade resultante, armazenado em um tipo VARIANT.
 
 Esse método retorna os valores de HRESULT a seguir.
 
-| Código de retorno                  | Description          |
+| Código de retorno                  | Descrição          |
 |------------------------------|----------------------|
 | **S_OK**                     | Sucesso              |
 | **DO_E_UNKNOWN_PROPERTY_ID** | ID de propriedade desconhecida. |
@@ -75,6 +75,6 @@ Esse método retorna os valores de HRESULT a seguir.
 | DLL                       | Dosvc.dll                                                                        |
 | IID                       | IID_IDeliveryOptimizationJob2 é definido como 18995A26-BF59-4ABE-9F8B-D5092D5A2405 |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [**IDeliveryOptimizationJob2**](ideliveryoptimizationjob2.md)

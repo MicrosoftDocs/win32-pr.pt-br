@@ -1,0 +1,42 @@
+---
+title: Objetos ADSI implementados na camada do roteador
+description: A tabela a seguir apresenta uma breve descrição dos objetos COM implementados no roteador ADSI.
+ms.assetid: bd446e05-a15d-4354-9204-1df4e360497c
+ms.tgt_platform: multiple
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: af1fad496bbfea220dca0046cac40daf41120675
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104363661"
+---
+# <a name="adsi-objects-implemented-in-the-router-layer"></a>Objetos ADSI implementados na camada do roteador
+
+A tabela a seguir apresenta uma breve descrição dos objetos COM implementados no roteador ADSI.
+
+
+
+| Objeto ADSI            | Descrição                                                         | Interfaces com suporte                                                                                                                                                                                                                                                                      |
+|------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **AccessControlEntry** | Um objeto ADSI que representa uma ACE (entrada de controle de acesso).       | [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)                                                                                                                                                                                                                                  |
+| **AccessControlList**  | Um objeto ADSI que representa uma ACL (lista de controle de acesso).        | [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)                                                                                                                                                                                                                                    |
+| **ADsNamespaces**      | Um objeto ADSI que representa o contêiner de vários namespaces. | <dl> <dt>[**IADs**](/windows/desktop/api/Iads/nn-iads-iads)</dt> <dt>[**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer)</dt> <dt>[**IADsNamespaces**](/windows/desktop/api/Iads/nn-iads-iadsnamespaces)</dt> </dl> |
+| **LargeInteger**       | Um objeto ADSI que representa um inteiro grande.                     | [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger)                                                                                                                                                                                                                                              |
+| **PropertyEntry**      | Um objeto ADSI que representa uma entrada de propriedade.                    | [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)                                                                                                                                                                                                                                            |
+| **PropertyValue**      | Um objeto ADSI que representa um valor de propriedade.                    | [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)                                                                                                                                                                                                                                            |
+| **PropertyValue2**     | Um objeto ADSI que representa um valor de propriedade.                    | [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2)                                                                                                                                                                                                                                          |
+| **SecurityDescriptor** | Um objeto ADSI que representa um descritor de segurança.               | [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                                                                                                                                                                                                                  |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+

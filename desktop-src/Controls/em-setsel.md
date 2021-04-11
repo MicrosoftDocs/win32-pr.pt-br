@@ -73,7 +73,7 @@ Se o controle de edição tiver o estilo [**es \_ NOHIDESEL**](edit-control-styl
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

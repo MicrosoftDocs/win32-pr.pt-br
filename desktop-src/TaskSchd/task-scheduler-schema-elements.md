@@ -1,0 +1,168 @@
+---
+title: Elementos do esquema de Agendador de Tarefas
+description: Os elementos listados aqui são definidos pelo esquema de Agendador de Tarefas. Esses elementos são usados durante a leitura ou gravação de XML para uma tarefa.
+ms.assetid: a4c983fd-ded8-47ad-830e-b7c9907b778f
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 1a78b277de7fb96782a562ca6fa7458bce417e4a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104363629"
+---
+# <a name="task-scheduler-schema-elements"></a>Elementos do esquema de Agendador de Tarefas
+
+Os elementos listados aqui são definidos pelo esquema de Agendador de Tarefas. Esses elementos são usados durante a leitura ou gravação de XML para uma tarefa.
+
+Os tópicos nesta seção incluem uma descrição do elemento; como ele é definido no XSD; e informações sobre todos os pais, filhos e atributos relacionados.
+
+-   [**Ações (taskType)**](taskschedulerschema-actions-tasktype-element.md)
+-   [**AllowHardTerminate (settingstype)**](taskschedulerschema-allowhardterminate-settingstype-element.md)
+-   [**AllowStartOnDemand (settingstype)**](taskschedulerschema-allowstartondemand-settingstype-element.md)
+-   [**Abril (meses)**](taskschedulerschema-april-monthstype-element.md)
+-   [**Argumentos (exectype)**](taskschedulerschema-arguments-exectype-element.md)
+-   [**Anexos (sendMailtype)**](taskschedulerschema-attachments-sendemailtype-element.md)
+-   [**Agosto (meses)**](taskschedulerschema-august-monthstype-element.md)
+-   [**Autor (registrationInfoType)**](taskschedulerschema-author-registrationinfotype-element.md)
+-   [**Corpo (sendMailtype)**](taskschedulerschema-body-sendemailtype-element.md)
+-   [**Corpo (defaultmessagetype)**](taskschedulerschema-body-showmessagetype-element.md)
+-   [**BootTrigger (The Trigger)**](taskschedulerschema-boottrigger-triggergroup-element.md)
+-   [**Cco (sendMailtype)**](taskschedulerschema-bcc-sendemailtype-element.md)
+-   [**CalendarTrigger (The Trigger)**](taskschedulerschema-calendartrigger-triggergroup-element.md)
+-   [**CC (sendMailtype)**](taskschedulerschema-cc-sendemailtype-element.md)
+-   [**ClassID (comhandletype)**](taskschedulerschema-classid-comhandlertype-element.md)
+-   [**Commanipulador (The actioner)**](taskschedulerschema-comhandler-actiongroup-element.md)
+-   [**Comando (exectype)**](taskschedulerschema-command-exectype-element.md)
+-   [**Contagem (restartype)**](taskschedulerschema-count-restarttype-element.md)
+-   [**Dados (comhandletype)**](taskschedulerschema-data-comhandlertype-element.md)
+-   [**Dados (taskType)**](taskschedulerschema-data-tasktype-element.md)
+-   [**Data (registrationInfoType)**](taskschedulerschema-date-registrationinfotype-element.md)
+-   [**Dia (daysOfMonthType)**](taskschedulerschema-day-daysofmonthtype-element.md)
+-   [**DaysInterval (dailyScheduleType)**](taskschedulerschema-daysinterval-dailyscheduletype-element.md)
+-   [**DaysOfMonth (monthlyScheduleType)**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md)
+-   [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md)
+-   [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)
+-   [**Dezembro (meses)**](taskschedulerschema-december-monthstype-element.md)
+-   [**Atraso (bootTriggerType)**](taskschedulerschema-delay-boottriggertype-element.md)
+-   [**Atraso (eventTriggertype)**](taskschedulerschema-delay-eventtriggertype-element.md)
+-   [**Atraso (logonTriggerType)**](taskschedulerschema-delay-logontriggertype-element.md)
+-   [**Atraso (registrationTriggerType)**](taskschedulerschema-delay-registrationtriggertype-element.md)
+-   [**Atraso (sessionStateChangeTriggerType)**](taskschedulerschema-delay-sessionstatechangetriggertype-element.md)
+-   [**DeleteExpiredTaskAfter (settingstype)**](taskschedulerschema-deleteexpiredtaskafter-settingstype-element.md)
+-   [**Descrição (registrationInfoType)**](taskschedulerschema-description-registrationinfotype-element.md)
+-   [**DisallowStartIfOnBatteries (settingstype)**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md)
+-   [**DisallowStartOnRemoteAppSession (settingstype)**](taskschedulerschema-disallowstartonremoteappsession-settingstype-element.md)
+-   [**DisplayName (PrincipalType)**](taskschedulerschema-displayname-principaltype-element.md)
+-   [**Documentação (registrationInfoType)**](taskschedulerschema-documentation-registrationinfotype-element.md)
+-   [**Duração (idleSettingsType)**](taskschedulerschema-duration-idlesettingstype-element.md)
+-   [**Duração (repetiçãotype)**](taskschedulerschema-duration-repetitiontype-element.md)
+-   [**Habilitado (settingstype)**](taskschedulerschema-enabled-settingstype-element.md)
+-   [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)
+-   [**TriggerBaseType (limite de entrada)**](taskschedulerschema-endboundary-triggerbasetype-element.md)
+-   [**EventTrigger (The Trigger)**](taskschedulerschema-eventtrigger-triggergroup-element.md)
+-   [**Exec (The Action)**](taskschedulerschema-exec-actiongroup-element.md)
+-   [**ExecutionTimeLimit (settingstype)**](taskschedulerschema-executiontimelimit-settingstype-element.md)
+-   [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md)
+-   [**Fevereiro (meses)**](taskschedulerschema-february-monthstype-element.md)
+-   [**Arquivo (AttachmentType)**](taskschedulerschema-file-attachmentstype-element.md)
+-   [**Sexta-feira (daysOfWeekType)**](taskschedulerschema-friday-daysofweektype-element.md)
+-   [**De (sendMailtype)**](taskschedulerschema-from-sendemailtype-element.md)
+-   [**GroupId (PrincipalType)**](taskschedulerschema-groupid-principaltype-element.md)
+-   [**HeaderFields (sendMailtype)**](taskschedulerschema-headerfields-sendemailtype-element.md)
+-   [**Headerfield (headerFieldsType)**](taskschedulerschema-headerfield-headerfieldstype-element.md)
+-   [**Oculto (settingstype)**](taskschedulerschema-hidden-settingstype-element.md)
+-   [**IdleSettings (settingstype)**](taskschedulerschema-idlesettings-settingstype-element.md)
+-   [**IdleTrigger (The Trigger)**](taskschedulerschema-idletrigger-triggergroup-element.md)
+-   [**ID (networkSettingsType)**](taskschedulerschema-id-networksettingstype-element.md)
+-   [**Intervalo (repetição)**](taskschedulerschema-interval-repetitiontype-element.md)
+-   [**Intervalo (restartype)**](taskschedulerschema-interval-restarttype-element.md)
+-   [**Janeiro (meses)**](taskschedulerschema-january-monthstype-element.md)
+-   [**Julho (meses)**](taskschedulerschema-july-monthstype-element.md)
+-   [**Junho (monthtype)**](taskschedulerschema-june-monthstype-element.md)
+-   [**LogonTrigger (The Trigger)**](taskschedulerschema-logontrigger-triggergroup-element.md)
+-   [**Logontype (dirigetype)**](taskschedulerschema-logontype-principaltype-element.md)
+-   [**Março (meses)**](taskschedulerschema-march-monthstype-element.md)
+-   [**Maio (monthtype)**](taskschedulerschema-may-monthstype-element.md)
+-   [**Segunda-feira (daysOfWeekType)**](taskschedulerschema-monday-daysofweektype-element.md)
+-   [**Meses (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md)
+-   [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)
+-   [**MultipleInstancesPolicy (settingstype)**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)
+-   [**Nome (headerFieldType)**](taskschedulerschema-name-headerfieldtype-element.md)
+-   [**Nome (networkSettingsType)**](taskschedulerschema-name-networksettingstype-element.md)
+-   [**Novembro (meses)**](taskschedulerschema-november-monthstype-element.md)
+-   [**Outubro (meses)**](taskschedulerschema-october-monthstype-element.md)
+-   [**Entidade de segurança (principalsType)**](taskschedulerschema-principal-principaltype-element.md)
+-   [**Entidades de segurança (taskType)**](taskschedulerschema-principals-tasktype-element.md)
+-   [**ProcessTokenSidType (PrincipalType)**](taskschedulerschema-processtokensidtype-principaltype-element.md)
+-   [**Prioridade (settingstype)**](taskschedulerschema-priority-settingstype-element.md)
+-   [**Privilégio (requiredPrivilegesType)**](taskschedulerschema-privilege-requiredprivilegestype-element.md)
+-   [**RandomDelay (calendarTriggerType)**](taskschedulerschema-randomdelay-calendartriggertype-element.md)
+-   [**RandomDelay (timetriggertype)**](taskschedulerschema-randomdelay-timetriggertype-element.md)
+-   [**RegistrationInfo (taskType)**](taskschedulerschema-registrationinfo-tasktype-element.md)
+-   [**RegistrationTrigger (The Trigger)**](taskschedulerschema-registrationtrigger-triggergroup-element.md)
+-   [**Repetição (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)
+-   [**RequiredPrivileges (requiredPrivilegesType)**](taskschedulerschema-requiredprivileges-requiredprivilegestype-element.md)
+-   [**ReplyTo (sendMailtype)**](taskschedulerschema-replyto-sendemailtype-element.md)
+-   [**RestartOnFailure (settingstype)**](taskschedulerschema-restartonfailure-settingstype-element.md)
+-   [**RestartOnIdle (idleSettingsType)**](taskschedulerschema-restartonidle-idlesettingstype-element.md)
+-   [**RunLevel (PrincipalType)**](taskschedulerschema-runlevel-principaltype-element.md)
+-   [**RunOnlyIfIdle (settingstype)**](taskschedulerschema-runonlyifidle-settingstype-element.md)
+-   [**RunOnlyIfNetworkAvailable (settingstype)**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md)
+-   [**Sábado (daysOfWeekType)**](taskschedulerschema-saturday-daysofweektype-element.md)
+-   [**ScheduleByDay (calendarTriggerType)**](taskschedulerschema-schedulebyday-calendartriggertype-element.md)
+-   [**ScheduleByMonthDayOfWeek (calendarTriggerType)**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md)
+-   [**ScheduleByMonth (calendarTriggerType)**](taskschedulerschema-schedulebymonth-calendartriggertype-element.md)
+-   [**ScheduleByWeek (calendarTriggerType)**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md)
+-   [**SecurityDescriptor (registrationInfoType)**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md)
+-   [**Elemento SendEmail (actionGroup)**](taskschedulerschema-sendemail-actiongroup-element.md)
+-   [**Setembro (meses)**](taskschedulerschema-september-monthstype-element.md)
+-   [**SessionStateChangeTrigger (The Trigger)**](taskschedulerschema-sessionstatechangetrigger-triggergroup-element.md)
+-   [**Servidor (sendMailtype)**](taskschedulerschema-server-sendemailtype-element.md)
+-   [**Configurações (taskType)**](taskschedulerschema-settings-tasktype-element.md)
+-   [**Exmessage (The Action)**](taskschedulerschema-showmessage-actiongroup-element.md)
+-   [**Origem (registrationInfoType)**](taskschedulerschema-source-registrationinfotype-element.md)
+-   [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)
+-   [**StartWhenAvailable (settingstype)**](taskschedulerschema-startwhenavailable-settingstype-element.md)
+-   [**StateChange (sessionStateChangeTriggerType)**](taskschedulerschema-statechange-sessionstatechangetriggertype-element.md)
+-   [**StopAtDurationEnd (repetição)**](taskschedulerschema-stopatdurationend-repetitiontype-element.md)
+-   [**StopIfGoingOnBatteries (settingstype)**](taskschedulerschema-stopifgoingonbatteries-settingstype-element.md)
+-   [**StopOnIdleEnd (idleSettingsType)**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md)
+-   [**Assunto (sendMailtype)**](taskschedulerschema-subject-sendemailtype-element.md)
+-   [**Assinatura (eventTriggertype)**](taskschedulerschema-subscription-eventtriggertype-element.md)
+-   [**Domingo (daysOfWeekType)**](taskschedulerschema-sunday-daysofweektype-element.md)
+-   [**Tarefa**](taskschedulerschema-task-element.md)
+-   [**Quinta-feira (daysOfWeekType)**](taskschedulerschema-thursday-daysofweektype-element.md)
+-   [**Gatilho de timetrigger (The Trigger)**](taskschedulerschema-timetrigger-triggergroup-element.md)
+-   [**Elemento Title (defaultmessagetype)**](taskschedulerschema-title-showmessagetype-element.md)
+-   [**Para (sendMailtype)**](taskschedulerschema-to-sendemailtype-element.md)
+-   [**Gatilhos (taskType)**](taskschedulerschema-triggers-tasktype-element.md)
+-   [**Terça-feira (daysOfWeekType)**](taskschedulerschema-tuesday-daysofweektype-element.md)
+-   [**URI (registrationInfoType)**](taskschedulerschema-uri-registrationinfotype-element.md)
+-   [**UserId (logonTriggerType)**](taskschedulerschema-userid-logontriggertype-element.md)
+-   [**UserId (PrincipalType)**](taskschedulerschema-userid-principaltype-element.md)
+-   [**UserId (sessionStateChangeTriggerType)**](taskschedulerschema-userid-sessionstatechangetriggertype-element.md)
+-   [**UseUnifiedSchedulingEngine (settingstype)**](taskschedulerschema-useunifiedschedulingengine-settingstype-element.md)
+-   [**ValueQueries (eventTriggertype)**](taskschedulerschema-valuequeries-eventtriggertype-element.md)
+-   [**Valor (headerFieldType)**](taskschedulerschema-value-headerfieldtype-element.md)
+-   [**Versão (registrationInfoType)**](taskschedulerschema-version-registrationinfotype-element.md)
+-   [**WaitTimeout (idleSettingsType)**](taskschedulerschema-waittimeout-idlesettingstype-element.md)
+-   [**WakeToRun (settingstype)**](taskschedulerschema-waketorun-settingstype-element.md)
+-   [**Quarta-feira (daysOfWeekType)**](taskschedulerschema-wednesday-daysofweektype-element.md)
+-   [**Semana (weektype)**](taskschedulerschema-week-weekstype-element.md)
+-   [**WeeksInterval (weeklyScheduleType)**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md)
+-   [**Semanas (monthlyDayOfWeekScheduleType)**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md)
+-   [**WorkingDirectory (exectype)**](taskschedulerschema-workingdirectory-exectype-element.md)
+
+ 
+
+ 
+
+
+
+
