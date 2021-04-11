@@ -17,7 +17,7 @@ Windows Installer pode usar assinaturas digitais como um meio de detectar recurs
 
 MsiCert.exe é um utilitário de linha de comando que pode ser usado para popular a [tabela MsiDigitalSignature](msidigitalsignature-table.md) e a [tabela MsiDigitalCertificate](msidigitalcertificate-table.md) com as informações de assinatura digital de um arquivo de gabinete externo. O arquivo de gabinete deve ser assinado digitalmente e listado na [tabela de mídia](media-table.md). MsiCert.exe usa as informações do certificado de signatário do gabinete assinado digitalmente e criará e adicionará as tabelas MsiDigitalSignature e MsiDigitalCertificate ao banco de dados, se elas ainda não existirem.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 **msicert-d** *{Database}* **-m** *{entrada de mídia}* **-c** *{Cabinet}* **\[ - \] h**
 

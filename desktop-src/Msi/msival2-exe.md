@@ -19,7 +19,7 @@ Essa ferramenta só está disponível nos [componentes SDK do Windows para desen
 
 Para obter mais informações sobre ICEs e o arquivo CUB, consulte [usando avaliadores de consistência internos](using-internal-consistency-evaluators.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 **Msival2** *{Database} {arquivo Cub} \[ -f \] \[ -l {logfile} \] \[ -i {ID do Ice} \[ : {ID do Ice}. \] \] ..*
 
