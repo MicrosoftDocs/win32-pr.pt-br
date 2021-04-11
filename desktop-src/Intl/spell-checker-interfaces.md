@@ -11,30 +11,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172032"
 ---
-# <a name="spell-checking-interfaces"></a><span data-ttu-id="48418-103">Interfaces de verificação ortográfica</span><span class="sxs-lookup"><span data-stu-id="48418-103">Spell Checking Interfaces</span></span>
+# <a name="spell-checking-interfaces"></a><span data-ttu-id="c6d71-103">Interfaces de verificação ortográfica</span><span class="sxs-lookup"><span data-stu-id="c6d71-103">Spell Checking Interfaces</span></span>
 
-<span data-ttu-id="48418-104">A API de verificação ortográfica contém as seguintes interfaces:</span><span class="sxs-lookup"><span data-stu-id="48418-104">The Spell Checking API contains the following interfaces:</span></span>
+<span data-ttu-id="c6d71-104">A API de verificação ortográfica contém as seguintes interfaces:</span><span class="sxs-lookup"><span data-stu-id="c6d71-104">The Spell Checking API contains the following interfaces:</span></span>
 
 <dl>
 
-[<span data-ttu-id="48418-105">**IComprehensiveSpellCheckProvider**</span><span class="sxs-lookup"><span data-stu-id="48418-105">**IComprehensiveSpellCheckProvider**</span></span>](/windows/desktop/api/spellcheckprovider/nn-spellcheckprovider-icomprehensivespellcheckprovider)  
-[<span data-ttu-id="48418-106">**IEnumSpellingError**</span><span class="sxs-lookup"><span data-stu-id="48418-106">**IEnumSpellingError**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ienumspellingerror)  
-[<span data-ttu-id="48418-107">**IOptionDescription**</span><span class="sxs-lookup"><span data-stu-id="48418-107">**IOptionDescription**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ioptiondescription)  
-[<span data-ttu-id="48418-108">**ISpellChecker**</span><span class="sxs-lookup"><span data-stu-id="48418-108">**ISpellChecker**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellchecker)  
-[<span data-ttu-id="48418-109">**ISpellChecker2**</span><span class="sxs-lookup"><span data-stu-id="48418-109">**ISpellChecker2**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellchecker2)  
-[<span data-ttu-id="48418-110">**ISpellCheckerChangedEventHandler**</span><span class="sxs-lookup"><span data-stu-id="48418-110">**ISpellCheckerChangedEventHandler**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellcheckerchangedeventhandler)  
-[<span data-ttu-id="48418-111">**ISpellCheckerFactory**</span><span class="sxs-lookup"><span data-stu-id="48418-111">**ISpellCheckerFactory**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellcheckerfactory)  
-[<span data-ttu-id="48418-112">**ISpellCheckProvider**</span><span class="sxs-lookup"><span data-stu-id="48418-112">**ISpellCheckProvider**</span></span>](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckprovider)  
-[<span data-ttu-id="48418-113">**ISpellCheckProviderFactory**</span><span class="sxs-lookup"><span data-stu-id="48418-113">**ISpellCheckProviderFactory**</span></span>](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckproviderfactory)  
-[<span data-ttu-id="48418-114">**ISpellingError**</span><span class="sxs-lookup"><span data-stu-id="48418-114">**ISpellingError**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellingerror)  
-[<span data-ttu-id="48418-115">**IUserDictionariesRegistrar**</span><span class="sxs-lookup"><span data-stu-id="48418-115">**IUserDictionariesRegistrar**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-iuserdictionariesregistrar)  
+[<span data-ttu-id="c6d71-105">**IComprehensiveSpellCheckProvider**</span><span class="sxs-lookup"><span data-stu-id="c6d71-105">**IComprehensiveSpellCheckProvider**</span></span>](/windows/desktop/api/spellcheckprovider/nn-spellcheckprovider-icomprehensivespellcheckprovider)  
+[<span data-ttu-id="c6d71-106">**IEnumSpellingError**</span><span class="sxs-lookup"><span data-stu-id="c6d71-106">**IEnumSpellingError**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ienumspellingerror)  
+[<span data-ttu-id="c6d71-107">**IOptionDescription**</span><span class="sxs-lookup"><span data-stu-id="c6d71-107">**IOptionDescription**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ioptiondescription)  
+[<span data-ttu-id="c6d71-108">**ISpellChecker**</span><span class="sxs-lookup"><span data-stu-id="c6d71-108">**ISpellChecker**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellchecker)  
+[<span data-ttu-id="c6d71-109">**ISpellChecker2**</span><span class="sxs-lookup"><span data-stu-id="c6d71-109">**ISpellChecker2**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellchecker2)  
+[<span data-ttu-id="c6d71-110">**ISpellCheckerChangedEventHandler**</span><span class="sxs-lookup"><span data-stu-id="c6d71-110">**ISpellCheckerChangedEventHandler**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellcheckerchangedeventhandler)  
+[<span data-ttu-id="c6d71-111">**ISpellCheckerFactory**</span><span class="sxs-lookup"><span data-stu-id="c6d71-111">**ISpellCheckerFactory**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellcheckerfactory)  
+[<span data-ttu-id="c6d71-112">**ISpellCheckProvider**</span><span class="sxs-lookup"><span data-stu-id="c6d71-112">**ISpellCheckProvider**</span></span>](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckprovider)  
+[<span data-ttu-id="c6d71-113">**ISpellCheckProviderFactory**</span><span class="sxs-lookup"><span data-stu-id="c6d71-113">**ISpellCheckProviderFactory**</span></span>](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckproviderfactory)  
+[<span data-ttu-id="c6d71-114">**ISpellingError**</span><span class="sxs-lookup"><span data-stu-id="c6d71-114">**ISpellingError**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-ispellingerror)  
+[<span data-ttu-id="c6d71-115">**IUserDictionariesRegistrar**</span><span class="sxs-lookup"><span data-stu-id="c6d71-115">**IUserDictionariesRegistrar**</span></span>](/windows/desktop/api/Spellcheck/nn-spellcheck-iuserdictionariesregistrar)  
 </dl>
 
-## <a name="related-topics"></a><span data-ttu-id="48418-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="48418-116">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c6d71-116">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c6d71-116">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="48418-117">Enumerações de verificação ortográfica</span><span class="sxs-lookup"><span data-stu-id="48418-117">Spell Checking Enumerations</span></span>](spell-checker-enumerations.md)
+[<span data-ttu-id="c6d71-117">Enumerações de verificação ortográfica</span><span class="sxs-lookup"><span data-stu-id="c6d71-117">Spell Checking Enumerations</span></span>](spell-checker-enumerations.md)
 </dt> </dl>
 
  
