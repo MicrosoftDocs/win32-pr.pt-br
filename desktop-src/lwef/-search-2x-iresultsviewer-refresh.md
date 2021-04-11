@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "104292931"
 ---
-# <a name="iresultsviewerrefresh-method"></a><span data-ttu-id="fe283-106">Método IResultsViewer:: Refresh</span><span class="sxs-lookup"><span data-stu-id="fe283-106">IResultsViewer::Refresh method</span></span>
+# <a name="iresultsviewerrefresh-method"></a><span data-ttu-id="129f9-106">Método IResultsViewer:: Refresh</span><span class="sxs-lookup"><span data-stu-id="129f9-106">IResultsViewer::Refresh method</span></span>
 
-<span data-ttu-id="fe283-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="fe283-107">This method is not implemented.</span></span>
+<span data-ttu-id="129f9-107">Este método não está implementado.</span><span class="sxs-lookup"><span data-stu-id="129f9-107">This method is not implemented.</span></span>
 
  
 

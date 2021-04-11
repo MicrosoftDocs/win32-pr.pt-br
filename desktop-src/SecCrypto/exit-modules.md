@@ -1,0 +1,24 @@
+---
+description: Os módulos de saída recebem notificações do mecanismo do servidor quando ocorrem operações como a emissão de um certificado.
+ms.assetid: 5e7ee1f4-7e07-4a08-8e72-89b449804bc2
+title: Módulos de saída
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a5fc0668717c4a7a690cce8a03ff8c140333347b
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104170639"
+---
+# <a name="exit-modules"></a><span data-ttu-id="32f67-103">Módulos de saída</span><span class="sxs-lookup"><span data-stu-id="32f67-103">Exit Modules</span></span>
+
+<span data-ttu-id="32f67-104">Os módulos de saída recebem notificações do mecanismo do servidor quando ocorrem operações como a emissão de um certificado.</span><span class="sxs-lookup"><span data-stu-id="32f67-104">Exit modules receive notifications from the server engine when operations such as the issuance of a certificate occur.</span></span> <span data-ttu-id="32f67-105">Um módulo de saída é implementado como uma dll ( [*biblioteca de vínculo dinâmico*](../secgloss/d-gly.md) ).</span><span class="sxs-lookup"><span data-stu-id="32f67-105">An exit module is implemented as a [*dynamic-link library*](../secgloss/d-gly.md) (DLL).</span></span> <span data-ttu-id="32f67-106">Uma operação típica para um módulo de saída é publicar um certificado concluído em um local especificado (o módulo de saída da autoridade de certificação corporativa padrão, por exemplo, publica certificados de usuário e [*listas de certificados revogados*](../secgloss/c-gly.md) (CRLs) no Active Directory).</span><span class="sxs-lookup"><span data-stu-id="32f67-106">A typical operation for an exit module is to publish a completed certificate in a specified location (the default enterprise certification authority exit module, for instance, publishes user certificates and [*certificate revocation lists*](../secgloss/c-gly.md) (CRLs) to the Active Directory).</span></span> <span data-ttu-id="32f67-107">Um módulo de saída pode usar a interface [**ICertServerExit**](/windows/desktop/api/Certif/nn-certif-icertserverexit) para se comunicar com os serviços de certificados.</span><span class="sxs-lookup"><span data-stu-id="32f67-107">An exit module can use the [**ICertServerExit**](/windows/desktop/api/Certif/nn-certif-icertserverexit) interface to communicate with Certificate Services.</span></span> <span data-ttu-id="32f67-108">Os serviços de certificados se comunicam com um módulo de saída por meio de chamadas COM diretas ou, se o módulo não oferecer suporte a chamadas COM diretas, por meio de automação.</span><span class="sxs-lookup"><span data-stu-id="32f67-108">Certificate Services communicates with an exit module by means of direct COM calls or, if the module does not support direct COM calls, by means of Automation.</span></span>
+
+<span data-ttu-id="32f67-109">Um módulo de saída pode exibir as propriedades e extensões de certificado existentes e também pode exibir atributos e propriedades de solicitação.</span><span class="sxs-lookup"><span data-stu-id="32f67-109">An exit module may view existing certificate properties and extensions, and it may also view request attributes and properties.</span></span> <span data-ttu-id="32f67-110">No entanto, um módulo de saída não pode modificar nenhuma propriedade.</span><span class="sxs-lookup"><span data-stu-id="32f67-110">An exit module cannot, however, modify any properties.</span></span>
+
+<span data-ttu-id="32f67-111">Os serviços de certificados fornecem um módulo de saída padrão, mas você também pode criar módulos de saída personalizados para atender às necessidades especiais.</span><span class="sxs-lookup"><span data-stu-id="32f67-111">Certificate Services provides a default exit module, but you can also create custom exit modules to meet special needs.</span></span> <span data-ttu-id="32f67-112">No entanto, antes de gravar um módulo de saída personalizado, considere usar o módulo de saída padrão.</span><span class="sxs-lookup"><span data-stu-id="32f67-112">However, before writing a custom exit module, consider using the default exit module.</span></span> <span data-ttu-id="32f67-113">Além disso, para uma autoridade de certificação corporativa, o módulo de saída padrão sempre deve ser usado, embora você possa adicionar outros módulos de saída personalizados.</span><span class="sxs-lookup"><span data-stu-id="32f67-113">Moreover, for an enterprise certification authority, the default exit module should always be used, even though you can add additional, custom exit modules.</span></span> <span data-ttu-id="32f67-114">Para obter mais informações, consulte [escrevendo módulos de saída personalizados](writing-custom-exit-modules.md).</span><span class="sxs-lookup"><span data-stu-id="32f67-114">For more information, see [Writing Custom Exit Modules](writing-custom-exit-modules.md).</span></span>
+
+ 
+
+ 

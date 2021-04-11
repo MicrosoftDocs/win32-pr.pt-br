@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171944"
 ---
-# <a name="durablecommitcallbackend-method"></a><span data-ttu-id="a05a0-103">Método DurableCommitCallback. end</span><span class="sxs-lookup"><span data-stu-id="a05a0-103">DurableCommitCallback.End method</span></span>
+# <a name="durablecommitcallbackend-method"></a><span data-ttu-id="6e11d-103">Método DurableCommitCallback. end</span><span class="sxs-lookup"><span data-stu-id="6e11d-103">DurableCommitCallback.End method</span></span>
 
-<span data-ttu-id="a05a0-104">Encerra a sessão de confirmação durável.</span><span class="sxs-lookup"><span data-stu-id="a05a0-104">Terminates the durable commit session.</span></span>
+<span data-ttu-id="6e11d-104">Encerra a sessão de confirmação durável.</span><span class="sxs-lookup"><span data-stu-id="6e11d-104">Terminates the durable commit session.</span></span>
 
-<span data-ttu-id="a05a0-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="a05a0-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
-<span data-ttu-id="a05a0-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="a05a0-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="6e11d-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="6e11d-105">**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)</span></span>  
+<span data-ttu-id="6e11d-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="6e11d-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a05a0-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a05a0-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6e11d-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="6e11d-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -53,12 +53,12 @@ instance.End()
 public void End()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a05a0-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="a05a0-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6e11d-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="6e11d-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="a05a0-109">Referência</span><span class="sxs-lookup"><span data-stu-id="a05a0-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="6e11d-109">Referência</span><span class="sxs-lookup"><span data-stu-id="6e11d-109">Reference</span></span>
 
-[<span data-ttu-id="a05a0-110">Classe DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="a05a0-110">DurableCommitCallback class</span></span>](./durablecommitcallback-class.md)
+[<span data-ttu-id="6e11d-110">Classe DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="6e11d-110">DurableCommitCallback class</span></span>](./durablecommitcallback-class.md)
 
-[<span data-ttu-id="a05a0-111">Membros do DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="a05a0-111">DurableCommitCallback members</span></span>](./durablecommitcallback-members.md)
+[<span data-ttu-id="6e11d-111">Membros do DurableCommitCallback</span><span class="sxs-lookup"><span data-stu-id="6e11d-111">DurableCommitCallback members</span></span>](./durablecommitcallback-members.md)
 
-[<span data-ttu-id="a05a0-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="a05a0-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
+[<span data-ttu-id="6e11d-112">Namespace Microsoft. ISAM. ESENT. Interop. windows8</span><span class="sxs-lookup"><span data-stu-id="6e11d-112">Microsoft.Isam.Esent.Interop.Windows8 namespace</span></span>](./microsoft.isam.esent.interop.windows8-namespace.md)
