@@ -12,13 +12,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104171967"
 ---
-# <a name="swbemsink-methods"></a><span data-ttu-id="09094-103">Métodos SWbemSink</span><span class="sxs-lookup"><span data-stu-id="09094-103">SWbemSink Methods</span></span>
+# <a name="swbemsink-methods"></a><span data-ttu-id="e85e8-103">Métodos SWbemSink</span><span class="sxs-lookup"><span data-stu-id="e85e8-103">SWbemSink Methods</span></span>
 
-<span data-ttu-id="09094-104">O objeto [**SWbemSink**](swbemsink.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="09094-104">The [**SWbemSink**](swbemsink.md) object exposes the following methods.</span></span>
+<span data-ttu-id="e85e8-104">O objeto [**SWbemSink**](swbemsink.md) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="e85e8-104">The [**SWbemSink**](swbemsink.md) object exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="09094-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="09094-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e85e8-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e85e8-105">In this section</span></span>
 
--   [<span data-ttu-id="09094-106">**Método Cancel**</span><span class="sxs-lookup"><span data-stu-id="09094-106">**Cancel method**</span></span>](swbemsink-cancel.md)
+-   [<span data-ttu-id="e85e8-106">**Método Cancel**</span><span class="sxs-lookup"><span data-stu-id="e85e8-106">**Cancel method**</span></span>](swbemsink-cancel.md)
 
  
 

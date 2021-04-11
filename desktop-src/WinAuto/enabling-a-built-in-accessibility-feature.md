@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172308"
 ---
-# <a name="enabling-a-built-in-accessibility-feature"></a><span data-ttu-id="f010f-103">Habilitando um recurso de acessibilidade interno</span><span class="sxs-lookup"><span data-stu-id="f010f-103">Enabling a Built-in Accessibility Feature</span></span>
+# <a name="enabling-a-built-in-accessibility-feature"></a><span data-ttu-id="08981-103">Habilitando um recurso de acessibilidade interno</span><span class="sxs-lookup"><span data-stu-id="08981-103">Enabling a Built-in Accessibility Feature</span></span>
 
-<span data-ttu-id="f010f-104">O fragmento de código a seguir usa a função [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) para habilitar o recurso de teclas de filtragem:</span><span class="sxs-lookup"><span data-stu-id="f010f-104">The following code fragment uses the [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) function to enable the FilterKeys feature:</span></span>
+<span data-ttu-id="08981-104">O fragmento de código a seguir usa a função [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) para habilitar o recurso de teclas de filtragem:</span><span class="sxs-lookup"><span data-stu-id="08981-104">The following code fragment uses the [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) function to enable the FilterKeys feature:</span></span>
 
 
 ```C++

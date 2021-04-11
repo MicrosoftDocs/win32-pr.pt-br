@@ -31,14 +31,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172278"
 ---
-# <a name="esentinvalidcodepageexception-constructor"></a><span data-ttu-id="f8423-103">Construtor EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="f8423-103">EsentInvalidCodePageException constructor</span></span>
+# <a name="esentinvalidcodepageexception-constructor"></a><span data-ttu-id="544a5-103">Construtor EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="544a5-103">EsentInvalidCodePageException constructor</span></span>
 
-<span data-ttu-id="f8423-104">Inicializa uma nova instância da classe EsentInvalidCodePageException.</span><span class="sxs-lookup"><span data-stu-id="f8423-104">Initializes a new instance of the EsentInvalidCodePageException class.</span></span>
+<span data-ttu-id="544a5-104">Inicializa uma nova instância da classe EsentInvalidCodePageException.</span><span class="sxs-lookup"><span data-stu-id="544a5-104">Initializes a new instance of the EsentInvalidCodePageException class.</span></span>
 
-<span data-ttu-id="f8423-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="f8423-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="f8423-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="f8423-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="544a5-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="544a5-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="544a5-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="544a5-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f8423-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="f8423-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="544a5-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="544a5-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -52,12 +52,12 @@ Dim instance As New EsentInvalidCodePageException()
 public EsentInvalidCodePageException()
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f8423-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="f8423-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="544a5-108">Confira também</span><span class="sxs-lookup"><span data-stu-id="544a5-108">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="f8423-109">Referência</span><span class="sxs-lookup"><span data-stu-id="f8423-109">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="544a5-109">Referência</span><span class="sxs-lookup"><span data-stu-id="544a5-109">Reference</span></span>
 
-[<span data-ttu-id="f8423-110">Classe EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="f8423-110">EsentInvalidCodePageException class</span></span>](./esentinvalidcodepageexception-class.md)
+[<span data-ttu-id="544a5-110">Classe EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="544a5-110">EsentInvalidCodePageException class</span></span>](./esentinvalidcodepageexception-class.md)
 
-[<span data-ttu-id="f8423-111">Membros do EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="f8423-111">EsentInvalidCodePageException members</span></span>](./esentinvalidcodepageexception-members.md)
+[<span data-ttu-id="544a5-111">Membros do EsentInvalidCodePageException</span><span class="sxs-lookup"><span data-stu-id="544a5-111">EsentInvalidCodePageException members</span></span>](./esentinvalidcodepageexception-members.md)
 
-[<span data-ttu-id="f8423-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="f8423-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="544a5-112">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="544a5-112">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
