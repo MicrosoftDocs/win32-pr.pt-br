@@ -1,0 +1,79 @@
+---
+description: Interrompe o serviço.
+ms.assetid: cf100cea-b0e1-42e9-831e-6422aded47c5
+title: Método StopService da classe Msvm_SecurityService
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Msvm_SecurityService.StopService
+api_type:
+- COM
+api_location:
+- vmms.exe
+ms.openlocfilehash: 68e88e2c88d4f75f4d7671c389bab0cd81d0deb5
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104170257"
+---
+# <a name="stopservice-method-of-the-msvm_securityservice-class"></a>Método StopService da classe Msvm \_ SecurityService
+
+Interrompe o serviço.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```mof
+uint32 StopService();
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+Esse método não tem parâmetros.
+
+## <a name="return-value"></a>Retornar valor
+
+Em caso de sucesso, retorna um 0; caso contrário, retornará um erro.
+
+<dl> <dt>
+
+**Concluído sem erro** (0)
+</dt> <dt>
+
+**Sem suporte** (1)
+</dt> </dl>
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
