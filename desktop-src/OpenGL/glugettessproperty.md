@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104369516"
 ---
-# <a name="glugettessproperty-function"></a><span data-ttu-id="e5da7-104">função gluGetTessProperty</span><span class="sxs-lookup"><span data-stu-id="e5da7-104">gluGetTessProperty function</span></span>
+# <a name="glugettessproperty-function"></a><span data-ttu-id="4b68c-104">função gluGetTessProperty</span><span class="sxs-lookup"><span data-stu-id="4b68c-104">gluGetTessProperty function</span></span>
 
-<span data-ttu-id="e5da7-105">A função **gluGetTessProperty** Obtém uma propriedade de objeto de mosaico.</span><span class="sxs-lookup"><span data-stu-id="e5da7-105">The **gluGetTessProperty** function gets a tessellation object property.</span></span>
+<span data-ttu-id="4b68c-105">A função **gluGetTessProperty** Obtém uma propriedade de objeto de mosaico.</span><span class="sxs-lookup"><span data-stu-id="4b68c-105">The **gluGetTessProperty** function gets a tessellation object property.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e5da7-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e5da7-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4b68c-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4b68c-106">Syntax</span></span>
 
 
 ```C++
@@ -38,61 +38,61 @@ void WINAPI gluGetTessProperty(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="e5da7-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e5da7-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="4b68c-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4b68c-107">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="e5da7-108">*tess*</span><span class="sxs-lookup"><span data-stu-id="e5da7-108">*tess*</span></span> 
+<span data-ttu-id="4b68c-108">*tess*</span><span class="sxs-lookup"><span data-stu-id="4b68c-108">*tess*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="e5da7-109">O objeto de mosaico (criado com [**gluNewTess**](glunewtess.md)).</span><span class="sxs-lookup"><span data-stu-id="e5da7-109">The tessellation object (created with [**gluNewTess**](glunewtess.md)).</span></span>
+<span data-ttu-id="4b68c-109">O objeto de mosaico (criado com [**gluNewTess**](glunewtess.md)).</span><span class="sxs-lookup"><span data-stu-id="4b68c-109">The tessellation object (created with [**gluNewTess**](glunewtess.md)).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e5da7-110">*Onde*</span><span class="sxs-lookup"><span data-stu-id="e5da7-110">*which*</span></span> 
+<span data-ttu-id="4b68c-110">*Onde*</span><span class="sxs-lookup"><span data-stu-id="4b68c-110">*which*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="e5da7-111">A propriedade cujo valor deve ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="e5da7-111">The property whose value is to be retrieved.</span></span> <span data-ttu-id="e5da7-112">Os seguintes valores são válidos: GLU \_ Tess \_ rebobination \_ Rule, glu \_ Tess \_ limite e a \_ \_ tolerância Glu Tess \_ .</span><span class="sxs-lookup"><span data-stu-id="e5da7-112">The following values are valid: GLU\_TESS\_WINDING\_RULE, GLU\_TESS\_BOUNDARY\_ONLY, and GLU\_TESS\_TOLERANCE.</span></span>
+<span data-ttu-id="4b68c-111">A propriedade cujo valor deve ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="4b68c-111">The property whose value is to be retrieved.</span></span> <span data-ttu-id="4b68c-112">Os seguintes valores são válidos: GLU \_ Tess \_ rebobination \_ Rule, glu \_ Tess \_ limite e a \_ \_ tolerância Glu Tess \_ .</span><span class="sxs-lookup"><span data-stu-id="4b68c-112">The following values are valid: GLU\_TESS\_WINDING\_RULE, GLU\_TESS\_BOUNDARY\_ONLY, and GLU\_TESS\_TOLERANCE.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e5da7-113">*value*</span><span class="sxs-lookup"><span data-stu-id="e5da7-113">*value*</span></span> 
+<span data-ttu-id="4b68c-113">*value*</span><span class="sxs-lookup"><span data-stu-id="4b68c-113">*value*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="e5da7-114">Um ponteiro para o local onde o valor da propriedade nomeada é gravado.</span><span class="sxs-lookup"><span data-stu-id="e5da7-114">A pointer to the location where the value of the named property is written.</span></span>
+<span data-ttu-id="4b68c-114">Um ponteiro para o local onde o valor da propriedade nomeada é gravado.</span><span class="sxs-lookup"><span data-stu-id="4b68c-114">A pointer to the location where the value of the named property is written.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="e5da7-115">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e5da7-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4b68c-115">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4b68c-115">Return value</span></span>
 
-<span data-ttu-id="e5da7-116">Essa função não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="e5da7-116">This function does not return a value.</span></span>
+<span data-ttu-id="4b68c-116">Essa função não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="4b68c-116">This function does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e5da7-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="e5da7-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4b68c-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="4b68c-117">Remarks</span></span>
 
-<span data-ttu-id="e5da7-118">Use **gluGetTessProperty** para recuperar as propriedades armazenadas em um objeto de mosaico.</span><span class="sxs-lookup"><span data-stu-id="e5da7-118">Use **gluGetTessProperty** to retrieve properties stored in a tessellation object.</span></span> <span data-ttu-id="e5da7-119">Essas propriedades afetam o modo como os objetos de mosaico são interpretados e renderizados.</span><span class="sxs-lookup"><span data-stu-id="e5da7-119">These properties affect the way tessellation objects are interpreted and rendered.</span></span> <span data-ttu-id="e5da7-120">Para obter informações sobre o que são as propriedades e o que elas fazem, consulte [**gluTessProperty**](glutessproperty.md).</span><span class="sxs-lookup"><span data-stu-id="e5da7-120">For information about what the properties are and what they do, see [**gluTessProperty**](glutessproperty.md).</span></span>
+<span data-ttu-id="4b68c-118">Use **gluGetTessProperty** para recuperar as propriedades armazenadas em um objeto de mosaico.</span><span class="sxs-lookup"><span data-stu-id="4b68c-118">Use **gluGetTessProperty** to retrieve properties stored in a tessellation object.</span></span> <span data-ttu-id="4b68c-119">Essas propriedades afetam o modo como os objetos de mosaico são interpretados e renderizados.</span><span class="sxs-lookup"><span data-stu-id="4b68c-119">These properties affect the way tessellation objects are interpreted and rendered.</span></span> <span data-ttu-id="4b68c-120">Para obter informações sobre o que são as propriedades e o que elas fazem, consulte [**gluTessProperty**](glutessproperty.md).</span><span class="sxs-lookup"><span data-stu-id="4b68c-120">For information about what the properties are and what they do, see [**gluTessProperty**](glutessproperty.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="e5da7-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e5da7-121">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4b68c-121">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4b68c-121">Requirements</span></span>
 
 
 
-| <span data-ttu-id="e5da7-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="e5da7-122">Requirement</span></span> | <span data-ttu-id="e5da7-123">Valor</span><span class="sxs-lookup"><span data-stu-id="e5da7-123">Value</span></span> |
+| <span data-ttu-id="4b68c-122">Requisito</span><span class="sxs-lookup"><span data-stu-id="4b68c-122">Requirement</span></span> | <span data-ttu-id="4b68c-123">Valor</span><span class="sxs-lookup"><span data-stu-id="4b68c-123">Value</span></span> |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="e5da7-124">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e5da7-124">Minimum supported client</span></span><br/> | <span data-ttu-id="e5da7-125">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="e5da7-125">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                           |
-| <span data-ttu-id="e5da7-126">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e5da7-126">Minimum supported server</span></span><br/> | <span data-ttu-id="e5da7-127">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="e5da7-127">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                 |
-| <span data-ttu-id="e5da7-128">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e5da7-128">Header</span></span><br/>                   | <dl> <span data-ttu-id="e5da7-129"><dt>GLU. h</dt></span><span class="sxs-lookup"><span data-stu-id="e5da7-129"><dt>Glu.h</dt></span></span> </dl>     |
-| <span data-ttu-id="e5da7-130">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="e5da7-130">Library</span></span><br/>                  | <dl> <span data-ttu-id="e5da7-131"><dt>Glu32. lib</dt></span><span class="sxs-lookup"><span data-stu-id="e5da7-131"><dt>Glu32.lib</dt></span></span> </dl> |
-| <span data-ttu-id="e5da7-132">DLL</span><span class="sxs-lookup"><span data-stu-id="e5da7-132">DLL</span></span><br/>                      | <dl> <span data-ttu-id="e5da7-133"><dt>Glu32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="e5da7-133"><dt>Glu32.dll</dt></span></span> </dl> |
+| <span data-ttu-id="4b68c-124">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4b68c-124">Minimum supported client</span></span><br/> | <span data-ttu-id="4b68c-125">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4b68c-125">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                           |
+| <span data-ttu-id="4b68c-126">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4b68c-126">Minimum supported server</span></span><br/> | <span data-ttu-id="4b68c-127">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="4b68c-127">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                 |
+| <span data-ttu-id="4b68c-128">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4b68c-128">Header</span></span><br/>                   | <dl> <span data-ttu-id="4b68c-129"><dt>GLU. h</dt></span><span class="sxs-lookup"><span data-stu-id="4b68c-129"><dt>Glu.h</dt></span></span> </dl>     |
+| <span data-ttu-id="4b68c-130">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="4b68c-130">Library</span></span><br/>                  | <dl> <span data-ttu-id="4b68c-131"><dt>Glu32. lib</dt></span><span class="sxs-lookup"><span data-stu-id="4b68c-131"><dt>Glu32.lib</dt></span></span> </dl> |
+| <span data-ttu-id="4b68c-132">DLL</span><span class="sxs-lookup"><span data-stu-id="4b68c-132">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4b68c-133"><dt>Glu32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4b68c-133"><dt>Glu32.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="e5da7-134">Consulte também</span><span class="sxs-lookup"><span data-stu-id="e5da7-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b68c-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="4b68c-134">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e5da7-135">**gluNewTess**</span><span class="sxs-lookup"><span data-stu-id="e5da7-135">**gluNewTess**</span></span>](glunewtess.md)
+[<span data-ttu-id="4b68c-135">**gluNewTess**</span><span class="sxs-lookup"><span data-stu-id="4b68c-135">**gluNewTess**</span></span>](glunewtess.md)
 </dt> <dt>
 
-[<span data-ttu-id="e5da7-136">**gluTessProperty**</span><span class="sxs-lookup"><span data-stu-id="e5da7-136">**gluTessProperty**</span></span>](glutessproperty.md)
+[<span data-ttu-id="4b68c-136">**gluTessProperty**</span><span class="sxs-lookup"><span data-stu-id="4b68c-136">**gluTessProperty**</span></span>](glutessproperty.md)
 </dt> </dl>
 
  
