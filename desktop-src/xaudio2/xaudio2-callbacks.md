@@ -1,0 +1,58 @@
+---
+description: O XAudio2 pode chamar funções fornecidas pelo cliente para notificá-lo de forma assíncrona de determinados eventos que ocorrem no thread de processamento de áudio.
+ms.assetid: 4fbd4229-f7ac-33b3-b4b7-f09150a60598
+title: Retorno de chamadas XAudio2
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4ee191ad8c15d238a065c837c6fb192befbe7a51
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104297611"
+---
+# <a name="xaudio2-callbacks"></a><span data-ttu-id="ecba8-103">Retorno de chamadas XAudio2</span><span class="sxs-lookup"><span data-stu-id="ecba8-103">XAudio2 Callbacks</span></span>
+
+<span data-ttu-id="ecba8-104">O XAudio2 pode chamar funções fornecidas pelo cliente para notificá-lo de forma assíncrona de determinados eventos que ocorrem no thread de processamento de áudio.</span><span class="sxs-lookup"><span data-stu-id="ecba8-104">XAudio2 can call functions provided by the client to notify it asynchronously of certain events taking place in the audio processing thread.</span></span> <span data-ttu-id="ecba8-105">Esses retornos de chamada podem ser globais ou específicos para uma determinada voz de origem.</span><span class="sxs-lookup"><span data-stu-id="ecba8-105">These callbacks can be global or specific to a given source voice.</span></span> <span data-ttu-id="ecba8-106">Para receber retornos de chamada do mecanismo global, o cliente deve fornecer uma instância de uma classe que implementa a interface [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) ao inicializar XAudio2.</span><span class="sxs-lookup"><span data-stu-id="ecba8-106">To receive global engine callbacks, the client must provide an instance of a class implementing the [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) interface when initializing XAudio2.</span></span> <span data-ttu-id="ecba8-107">Para receber retornos de chamada de voz de origem, o cliente deve fornecer uma instância de uma classe que implementa a interface [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) ao criar vozes de origem.</span><span class="sxs-lookup"><span data-stu-id="ecba8-107">To receive source voice callbacks, the client must provide an instance of a class implementing the [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) interface when creating source voices.</span></span> <span data-ttu-id="ecba8-108">Para obter mais detalhes, consulte **IXAudio2EngineCallback** e **IXAudio2VoiceCallback**.</span><span class="sxs-lookup"><span data-stu-id="ecba8-108">For more details, see **IXAudio2EngineCallback** and **IXAudio2VoiceCallback**.</span></span>
+
+<span data-ttu-id="ecba8-109">Você deve implementar os retornos de chamada com cuidado para evitar causar interrupções no áudio.</span><span class="sxs-lookup"><span data-stu-id="ecba8-109">You must implement callbacks carefully to avoid causing breaks in the audio.</span></span> <span data-ttu-id="ecba8-110">Sempre que um retorno de chamada estiver em execução, o XAudio2 não poderá gerar nenhum áudio.</span><span class="sxs-lookup"><span data-stu-id="ecba8-110">Whenever a callback is running, XAudio2 cannot generate any audio.</span></span> <span data-ttu-id="ecba8-111">Os atrasos de mais de alguns milissegundos podem causar um problema de áudio.</span><span class="sxs-lookup"><span data-stu-id="ecba8-111">Delays of more than a few milliseconds can cause an audio problem.</span></span> <span data-ttu-id="ecba8-112">Os atrasos dessa natureza também geram a saída do depurador.</span><span class="sxs-lookup"><span data-stu-id="ecba8-112">Delays of this nature also generate debugger output.</span></span> <span data-ttu-id="ecba8-113">Isso indica possíveis problemas de desempenho.</span><span class="sxs-lookup"><span data-stu-id="ecba8-113">This indicates potential performance issues.</span></span> <span data-ttu-id="ecba8-114">No mínimo, as funções de retorno de chamada não devem fazer o seguinte:</span><span class="sxs-lookup"><span data-stu-id="ecba8-114">At a minimum, callback functions must not do the following:</span></span>
+
+-   <span data-ttu-id="ecba8-115">Acessar o disco rígido ou outro armazenamento permanente</span><span class="sxs-lookup"><span data-stu-id="ecba8-115">Access the hard disk or other permanent storage</span></span>
+-   <span data-ttu-id="ecba8-116">Fazer chamadas de API caras ou de bloqueio</span><span class="sxs-lookup"><span data-stu-id="ecba8-116">Make expensive or blocking API calls</span></span>
+-   <span data-ttu-id="ecba8-117">Sincronizar com outras partes do código do cliente</span><span class="sxs-lookup"><span data-stu-id="ecba8-117">Synchronize with other parts of client code</span></span>
+-   <span data-ttu-id="ecba8-118">Exigir uso significativo da CPU</span><span class="sxs-lookup"><span data-stu-id="ecba8-118">Require significant CPU usage</span></span>
+
+<span data-ttu-id="ecba8-119">Se o design do cliente exigir um retorno de chamada para disparar ações como aquelas listadas anteriormente, o retorno de chamada deverá sinalizar um thread de cliente diferente para fazer o trabalho.</span><span class="sxs-lookup"><span data-stu-id="ecba8-119">If the client design requires a callback to trigger actions such as those listed previously, the callback should signal a different client thread to do the work.</span></span> <span data-ttu-id="ecba8-120">Você pode fazer isso com **um mecanismo simples** ou mecanismos mais sofisticados, como uma fila de comandos sem bloqueio consumida por outro thread.</span><span class="sxs-lookup"><span data-stu-id="ecba8-120">You can do this with a simple **SetEvent** mechanism or more sophisticated mechanisms like a nonblocking command queue that is consumed by another thread.</span></span>
+
+## <a name="ixaudio2enginecallback"></a><span data-ttu-id="ecba8-121">IXAudio2EngineCallback</span><span class="sxs-lookup"><span data-stu-id="ecba8-121">IXAudio2EngineCallback</span></span>
+
+<span data-ttu-id="ecba8-122">A classe [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) contém métodos que notificam o cliente quando determinados eventos acontecem no mecanismo XAudio2.</span><span class="sxs-lookup"><span data-stu-id="ecba8-122">The [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) class contains methods that notify the client when certain events happen in the XAudio2 engine.</span></span> <span data-ttu-id="ecba8-123">Esses métodos devem ser implementados pelo cliente XAudio2.</span><span class="sxs-lookup"><span data-stu-id="ecba8-123">These methods should be implemented by the XAudio2 client.</span></span> <span data-ttu-id="ecba8-124">XAudio2 chama esses métodos por meio de um ponteiro de interface fornecido pelo cliente usando o método [**IXAudio2:: RegisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-registerforcallbacks) .</span><span class="sxs-lookup"><span data-stu-id="ecba8-124">XAudio2 calls these methods by means of an interface pointer provided by the client using the [**IXAudio2::RegisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-registerforcallbacks) method.</span></span> <span data-ttu-id="ecba8-125">Todos esses métodos retornam **void**, em vez de um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="ecba8-125">All these methods return **void**, rather than an **HRESULT**.</span></span>
+
+## <a name="ixaudio2voicecallback"></a><span data-ttu-id="ecba8-126">IXAudio2VoiceCallback</span><span class="sxs-lookup"><span data-stu-id="ecba8-126">IXAudio2VoiceCallback</span></span>
+
+<span data-ttu-id="ecba8-127">A classe [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) contém métodos que notificam o cliente quando determinados eventos acontecem em uma voz de origem XAudio2 específica.</span><span class="sxs-lookup"><span data-stu-id="ecba8-127">The [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) class contains methods that notify the client when certain events happen in a specific XAudio2 source voice.</span></span> <span data-ttu-id="ecba8-128">XAudio2 chama esses métodos por meio de um ponteiro de interface fornecido pelo cliente em [**IXAudio2:: CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice).</span><span class="sxs-lookup"><span data-stu-id="ecba8-128">XAudio2 calls these methods by means of an interface pointer provided by the client in [**IXAudio2::CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice).</span></span> <span data-ttu-id="ecba8-129">Assim como com [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback), esses métodos devem ser implementados pelo cliente XAudio2 e retornar **void** em vez de um **HRESULT**.</span><span class="sxs-lookup"><span data-stu-id="ecba8-129">As with [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback), these methods should be implemented by the XAudio2 client, and return **void** rather than an **HRESULT**.</span></span>
+
+<span data-ttu-id="ecba8-130">Conforme mencionado anteriormente, é crucial que as implementações fornecidas pelo cliente desses retornos de chamada retornam o mais rápido possível, preferivelmente em um milissegundo.</span><span class="sxs-lookup"><span data-stu-id="ecba8-130">As mentioned previously, it is crucial that the client-provided implementations of these callbacks return as quickly as possible, preferably within a millisecond.</span></span> <span data-ttu-id="ecba8-131">Os retornos de chamada são executados no thread de processamento de áudio, e todo o processamento é interrompido até que o retorno de chamada seja retornado.</span><span class="sxs-lookup"><span data-stu-id="ecba8-131">The callbacks are executed in the audio processing thread, and all processing is interrupted until the callback returns.</span></span> <span data-ttu-id="ecba8-132">Um atraso em um retorno de chamada pode causar facilmente um problema de áudio.</span><span class="sxs-lookup"><span data-stu-id="ecba8-132">A delay in a callback can easily cause an audio problem.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="ecba8-133">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ecba8-133">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ecba8-134">Retornos de chamada</span><span class="sxs-lookup"><span data-stu-id="ecba8-134">Callbacks</span></span>](callbacks.md)
+</dt> <dt>
+
+[<span data-ttu-id="ecba8-135">Guia de Programação em XAudio2</span><span class="sxs-lookup"><span data-stu-id="ecba8-135">XAudio2 Programming Guide</span></span>](programming-guide.md)
+</dt> <dt>
+
+[<span data-ttu-id="ecba8-136">Como: Usar retornos de chamadas de voz de origem</span><span class="sxs-lookup"><span data-stu-id="ecba8-136">How to: Use Source Voice Callbacks</span></span>](how-to--use-source-voice-callbacks.md)
+</dt> <dt>
+
+[<span data-ttu-id="ecba8-137">Como: Usar retornos de chamadas de dispositivo</span><span class="sxs-lookup"><span data-stu-id="ecba8-137">How to: Use Engine Callbacks</span></span>](how-to--use-engine-callbacks.md)
+</dt> <dt>
+
+[<span data-ttu-id="ecba8-138">Como: Fazer o streaming de um som do disco</span><span class="sxs-lookup"><span data-stu-id="ecba8-138">How to: Stream a Sound from Disk</span></span>](how-to--stream-a-sound-from-disk.md)
+</dt> </dl>
+
+ 
+
+ 
