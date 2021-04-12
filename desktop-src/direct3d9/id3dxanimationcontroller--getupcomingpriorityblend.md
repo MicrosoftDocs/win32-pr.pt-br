@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "104370918"
 ---
-# <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a><span data-ttu-id="a16df-103">Método ID3DXAnimationController:: GetUpcomingPriorityBlend</span><span class="sxs-lookup"><span data-stu-id="a16df-103">ID3DXAnimationController::GetUpcomingPriorityBlend method</span></span>
+# <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a><span data-ttu-id="e0ff9-103">Método ID3DXAnimationController:: GetUpcomingPriorityBlend</span><span class="sxs-lookup"><span data-stu-id="e0ff9-103">ID3DXAnimationController::GetUpcomingPriorityBlend method</span></span>
 
-<span data-ttu-id="a16df-104">Retorna um identificador de evento para o próximo evento de mesclagem de prioridade agendado para ocorrer após um evento especificado.</span><span class="sxs-lookup"><span data-stu-id="a16df-104">Returns an event handle to the next priority blend event scheduled to occur after a specified event.</span></span>
+<span data-ttu-id="e0ff9-104">Retorna um identificador de evento para o próximo evento de mesclagem de prioridade agendado para ocorrer após um evento especificado.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-104">Returns an event handle to the next priority blend event scheduled to occur after a specified event.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a16df-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a16df-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e0ff9-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e0ff9-105">Syntax</span></span>
 
 
 ```C++
@@ -36,50 +36,50 @@ D3DXEVENTHANDLE GetUpcomingPriorityBlend(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="a16df-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a16df-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e0ff9-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e0ff9-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="a16df-107">*hEvent* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a16df-107">*hEvent* \[in\]</span></span>
+<span data-ttu-id="e0ff9-107">*hEvent* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="e0ff9-107">*hEvent* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="a16df-108">Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span><span class="sxs-lookup"><span data-stu-id="a16df-108">Type: **[**D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span></span>
+<span data-ttu-id="e0ff9-108">Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span><span class="sxs-lookup"><span data-stu-id="e0ff9-108">Type: **[**D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span></span>
 
-<span data-ttu-id="a16df-109">Identificador de evento para um evento especificado após o qual procurar um evento de mesclagem de prioridade a seguir.</span><span class="sxs-lookup"><span data-stu-id="a16df-109">Event handle to a specified event after which to search for a following priority blend event.</span></span> <span data-ttu-id="a16df-110">Se definido como **NULL**, o método retornará o próximo evento de mesclagem de prioridade agendado.</span><span class="sxs-lookup"><span data-stu-id="a16df-110">If set to **NULL**, then the method will return the next scheduled priority blend event.</span></span>
+<span data-ttu-id="e0ff9-109">Identificador de evento para um evento especificado após o qual procurar um evento de mesclagem de prioridade a seguir.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-109">Event handle to a specified event after which to search for a following priority blend event.</span></span> <span data-ttu-id="e0ff9-110">Se definido como **NULL**, o método retornará o próximo evento de mesclagem de prioridade agendado.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-110">If set to **NULL**, then the method will return the next scheduled priority blend event.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="a16df-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="a16df-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e0ff9-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="e0ff9-111">Return value</span></span>
 
-<span data-ttu-id="a16df-112">Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span><span class="sxs-lookup"><span data-stu-id="a16df-112">Type: **[**D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span></span>
+<span data-ttu-id="e0ff9-112">Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span><span class="sxs-lookup"><span data-stu-id="e0ff9-112">Type: **[**D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**</span></span>
 
-<span data-ttu-id="a16df-113">Identificador de evento para o próximo evento de mesclagem de prioridade agendado.</span><span class="sxs-lookup"><span data-stu-id="a16df-113">Event handle to the next scheduled priority blend event.</span></span> <span data-ttu-id="a16df-114">**NULL** será retornado se nenhum evento de mesclagem de prioridade novo estiver agendado.</span><span class="sxs-lookup"><span data-stu-id="a16df-114">**NULL** is returned if no new priority blend event is scheduled.</span></span>
+<span data-ttu-id="e0ff9-113">Identificador de evento para o próximo evento de mesclagem de prioridade agendado.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-113">Event handle to the next scheduled priority blend event.</span></span> <span data-ttu-id="e0ff9-114">**NULL** será retornado se nenhum evento de mesclagem de prioridade novo estiver agendado.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-114">**NULL** is returned if no new priority blend event is scheduled.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a16df-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="a16df-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e0ff9-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="e0ff9-115">Remarks</span></span>
 
-<span data-ttu-id="a16df-116">Esse método pode ser usado iterativamente para localizar um evento de mesclagem de prioridade desejado, passando repetidamente em **NULL** para hEvent.</span><span class="sxs-lookup"><span data-stu-id="a16df-116">This method can be used iteratively to locate a desired priority blend event by repeatedly passing in **NULL** for hEvent.</span></span>
+<span data-ttu-id="e0ff9-116">Esse método pode ser usado iterativamente para localizar um evento de mesclagem de prioridade desejado, passando repetidamente em **NULL** para hEvent.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-116">This method can be used iteratively to locate a desired priority blend event by repeatedly passing in **NULL** for hEvent.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="a16df-117">Não iterar mais após o método ter retornado **NULL**.</span><span class="sxs-lookup"><span data-stu-id="a16df-117">Do not iterate further after the method has returned **NULL**.</span></span>
+> <span data-ttu-id="e0ff9-117">Não iterar mais após o método ter retornado **NULL**.</span><span class="sxs-lookup"><span data-stu-id="e0ff9-117">Do not iterate further after the method has returned **NULL**.</span></span>
 
  
 
-## <a name="requirements"></a><span data-ttu-id="a16df-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a16df-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e0ff9-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e0ff9-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="a16df-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="a16df-119">Requirement</span></span> | <span data-ttu-id="a16df-120">Valor</span><span class="sxs-lookup"><span data-stu-id="a16df-120">Value</span></span> |
+| <span data-ttu-id="e0ff9-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="e0ff9-119">Requirement</span></span> | <span data-ttu-id="e0ff9-120">Valor</span><span class="sxs-lookup"><span data-stu-id="e0ff9-120">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="a16df-121">parâmetro</span><span class="sxs-lookup"><span data-stu-id="a16df-121">Header</span></span><br/>  | <dl> <span data-ttu-id="a16df-122"><dt>D3dx9anim. h</dt></span><span class="sxs-lookup"><span data-stu-id="a16df-122"><dt>D3dx9anim.h</dt></span></span> </dl> |
-| <span data-ttu-id="a16df-123">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="a16df-123">Library</span></span><br/> | <dl> <span data-ttu-id="a16df-124"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="a16df-124"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="e0ff9-121">parâmetro</span><span class="sxs-lookup"><span data-stu-id="e0ff9-121">Header</span></span><br/>  | <dl> <span data-ttu-id="e0ff9-122"><dt>D3dx9anim. h</dt></span><span class="sxs-lookup"><span data-stu-id="e0ff9-122"><dt>D3dx9anim.h</dt></span></span> </dl> |
+| <span data-ttu-id="e0ff9-123">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="e0ff9-123">Library</span></span><br/> | <dl> <span data-ttu-id="e0ff9-124"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="e0ff9-124"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="a16df-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="a16df-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e0ff9-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="e0ff9-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a16df-126">ID3DXAnimationController</span><span class="sxs-lookup"><span data-stu-id="a16df-126">ID3DXAnimationController</span></span>](id3dxanimationcontroller.md)
+[<span data-ttu-id="e0ff9-126">ID3DXAnimationController</span><span class="sxs-lookup"><span data-stu-id="e0ff9-126">ID3DXAnimationController</span></span>](id3dxanimationcontroller.md)
 </dt> </dl>
 
  

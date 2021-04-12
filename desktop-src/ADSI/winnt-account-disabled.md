@@ -16,13 +16,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/10/2021
 ms.locfileid: "104370908"
 ---
-# <a name="account-disabled-winnt-provider"></a><span data-ttu-id="e15fd-106">Conta desabilitada (provedor de WinNT)</span><span class="sxs-lookup"><span data-stu-id="e15fd-106">Account Disabled (WinNT Provider)</span></span>
+# <a name="account-disabled-winnt-provider"></a><span data-ttu-id="7c895-106">Conta desabilitada (provedor de WinNT)</span><span class="sxs-lookup"><span data-stu-id="7c895-106">Account Disabled (WinNT Provider)</span></span>
 
-<span data-ttu-id="e15fd-107">Ao usar o provedor WinNT, uma conta pode ser habilitada ou desabilitada usando a propriedade [**IADsUser. AccountDisabled**](iadsuser-property-methods.md) .</span><span class="sxs-lookup"><span data-stu-id="e15fd-107">When using the WinNT provider, an account can be enabled or disabled using the [**IADsUser.AccountDisabled**](iadsuser-property-methods.md) property.</span></span>
+<span data-ttu-id="7c895-107">Ao usar o provedor WinNT, uma conta pode ser habilitada ou desabilitada usando a propriedade [**IADsUser. AccountDisabled**](iadsuser-property-methods.md) .</span><span class="sxs-lookup"><span data-stu-id="7c895-107">When using the WinNT provider, an account can be enabled or disabled using the [**IADsUser.AccountDisabled**](iadsuser-property-methods.md) property.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="e15fd-108">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="e15fd-108">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="7c895-108">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="7c895-108">Example 1</span></span>
 
-<span data-ttu-id="e15fd-109">O exemplo de código a seguir mostra como desabilitar uma conta usando Visual Basic com ADSI.</span><span class="sxs-lookup"><span data-stu-id="e15fd-109">The following code example shows how to disable an account using Visual Basic with ADSI.</span></span>
+<span data-ttu-id="7c895-109">O exemplo de código a seguir mostra como desabilitar uma conta usando Visual Basic com ADSI.</span><span class="sxs-lookup"><span data-stu-id="7c895-109">The following code example shows how to disable an account using Visual Basic with ADSI.</span></span>
 
 
 ```VB
@@ -42,9 +42,9 @@ Cleanup:
 
 
 
-## <a name="example-2"></a><span data-ttu-id="e15fd-110">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="e15fd-110">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="7c895-110">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="7c895-110">Example 2</span></span>
 
-<span data-ttu-id="e15fd-111">O exemplo de código a seguir mostra como desabilitar uma conta usando C++ com ADSI.</span><span class="sxs-lookup"><span data-stu-id="e15fd-111">The following code example shows how to disable an account using C++ with ADSI.</span></span>
+<span data-ttu-id="7c895-111">O exemplo de código a seguir mostra como desabilitar uma conta usando C++ com ADSI.</span><span class="sxs-lookup"><span data-stu-id="7c895-111">The following code example shows how to disable an account using C++ with ADSI.</span></span>
 
 
 ```C++
