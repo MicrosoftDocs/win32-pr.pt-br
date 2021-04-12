@@ -1,0 +1,50 @@
+---
+title: Guia de programação para o Windows de 64 bits
+description: A Microsoft lançou versões de 64 bits do sistema operacional Windows.
+ms.assetid: eb31408a-549d-427e-9f8e-9ae96bf6f854
+keywords:
+- Guia de programação do Windows de 64 bits programação de Windows de 64 bits
+- Guia de programação do Windows de 64 bits programação de Windows de 64 bits, home page
+- Guia de programação para programação de 64 bits do Windows de 64 bits, consulte Guia de programação do Windows de 64 bits
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: adb1fa906510d3d9909c5cf888b562deaccb3496
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104364097"
+---
+# <a name="programming-guide-for-64-bit-windows"></a><span data-ttu-id="2f99f-106">Guia de programação para o Windows de 64 bits</span><span class="sxs-lookup"><span data-stu-id="2f99f-106">Programming Guide for 64-bit Windows</span></span>
+
+<span data-ttu-id="2f99f-107">A Microsoft lançou versões de 64 bits do sistema operacional Windows.</span><span class="sxs-lookup"><span data-stu-id="2f99f-107">Microsoft has released 64-bit versions of the Windows operating system.</span></span> <span data-ttu-id="2f99f-108">o Windows de 64 bits foi projetado tendo em mente a compatibilidade.</span><span class="sxs-lookup"><span data-stu-id="2f99f-108">64-bit Windows was designed with compatibility in mind.</span></span> <span data-ttu-id="2f99f-109">Os desenvolvedores podem garantir que seus aplicativos de 32 bits existentes sejam executados bem em janelas de 64 bits ou aproveitem os benefícios das janelas de 64 bits migrando seus aplicativos.</span><span class="sxs-lookup"><span data-stu-id="2f99f-109">Developers can ensure that their existing 32-bit applications run well under 64-bit Windows or take advantage of the benefits of 64-bit Windows by migrating their applications.</span></span>
+
+## <a name="benefits-of-64-bit-windows"></a><span data-ttu-id="2f99f-110">Benefícios do Windows de 64 bits</span><span class="sxs-lookup"><span data-stu-id="2f99f-110">Benefits of 64-bit Windows</span></span>
+
+<span data-ttu-id="2f99f-111">Um sistema operacional de 64 bits dá suporte a muito mais memória física do que um sistema operacional de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="2f99f-111">A 64-bit operating system supports far more physical memory than a 32-bit operating system.</span></span> <span data-ttu-id="2f99f-112">Por exemplo, a maioria dos sistemas Windows de 32 bits dá suporte a um máximo de 4 gigabytes de memória física, com até 3 gigabytes de espaço de endereço para cada processo, enquanto o Windows de 64 bits dá suporte a até 2 terabytes de memória física com 8 terabytes de espaço de endereço para cada processo.</span><span class="sxs-lookup"><span data-stu-id="2f99f-112">For example, most 32-bit Windows systems support a maximum of 4 gigabytes of physical memory, with up to 3 gigabytes of address space for each process, while 64-bit Windows supports up to 2 terabytes of physical memory with 8 terabytes of address space for each process.</span></span> <span data-ttu-id="2f99f-113">A memória física aumentada inclui os seguintes benefícios para aplicativos:</span><span class="sxs-lookup"><span data-stu-id="2f99f-113">The increased physical memory includes the following benefits for applications:</span></span>
+
+-   <span data-ttu-id="2f99f-114">Cada aplicativo pode dar suporte a mais usuários.</span><span class="sxs-lookup"><span data-stu-id="2f99f-114">Each application can support more users.</span></span> <span data-ttu-id="2f99f-115">Todo ou parte de cada aplicativo deve ser replicado para cada usuário, o que requer memória adicional.</span><span class="sxs-lookup"><span data-stu-id="2f99f-115">All or part of each application must be replicated for each user, which requires additional memory.</span></span>
+-   <span data-ttu-id="2f99f-116">Cada aplicativo tem um desempenho melhor.</span><span class="sxs-lookup"><span data-stu-id="2f99f-116">Each application has better performance.</span></span> <span data-ttu-id="2f99f-117">A memória física aumentada permite que mais aplicativos sejam executados simultaneamente e permaneçam completamente residentes na memória principal do sistema.</span><span class="sxs-lookup"><span data-stu-id="2f99f-117">Increased physical memory allows more applications to run simultaneously and remain completely resident in the system's main memory.</span></span> <span data-ttu-id="2f99f-118">Isso reduz ou elimina a penalidade de desempenho de troca de páginas de e para o disco.</span><span class="sxs-lookup"><span data-stu-id="2f99f-118">This reduces or eliminates the performance penalty of swapping pages to and from disk.</span></span>
+-   <span data-ttu-id="2f99f-119">Cada aplicativo tem mais memória para o armazenamento e a manipulação de dados.</span><span class="sxs-lookup"><span data-stu-id="2f99f-119">Each application has more memory for data storage and manipulation.</span></span> <span data-ttu-id="2f99f-120">Os bancos de dados do podem armazenar mais de seu dado na memória física do sistema.</span><span class="sxs-lookup"><span data-stu-id="2f99f-120">Databases can store more of their data in the physical memory of the system.</span></span> <span data-ttu-id="2f99f-121">O acesso a dados é mais rápido porque as leituras de disco não são necessárias.</span><span class="sxs-lookup"><span data-stu-id="2f99f-121">Data access is faster because disk reads are not necessary.</span></span>
+-   <span data-ttu-id="2f99f-122">Os aplicativos podem manipular grandes quantidades de dados com facilidade e confiança.</span><span class="sxs-lookup"><span data-stu-id="2f99f-122">Applications can manipulate large amounts of data easily and more reliably.</span></span> <span data-ttu-id="2f99f-123">A composição de vídeo para a imagem de movimento funcionam requer o Windows de 64 bits por esse motivo.</span><span class="sxs-lookup"><span data-stu-id="2f99f-123">Video composition for motion picture work requires 64-bit Windows for this reason.</span></span> <span data-ttu-id="2f99f-124">A modelagem para aplicativos científicos e financeiros beneficia-se muito das estruturas de dados residentes na memória que não são possíveis em janelas de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="2f99f-124">Modeling for scientific and financial applications benefits greatly from memory-resident data structures that are not possible on 32-bit Windows.</span></span>
+
+<span data-ttu-id="2f99f-125">Também há benefícios importantes para as empresas:</span><span class="sxs-lookup"><span data-stu-id="2f99f-125">There are also important benefits for businesses:</span></span>
+
+-   <span data-ttu-id="2f99f-126">Maior produtividade.</span><span class="sxs-lookup"><span data-stu-id="2f99f-126">Increased productivity.</span></span> <span data-ttu-id="2f99f-127">Os funcionários de conhecimento podem gastar seu tempo pensando e produzindo, em vez de esperar que o software conclua suas tarefas.</span><span class="sxs-lookup"><span data-stu-id="2f99f-127">Knowledge workers can spend their time thinking and producing, rather than waiting for the software to finish its tasks.</span></span>
+-   <span data-ttu-id="2f99f-128">Menor custo de propriedade.</span><span class="sxs-lookup"><span data-stu-id="2f99f-128">Lower cost of ownership.</span></span> <span data-ttu-id="2f99f-129">Cada servidor pode dar suporte a um número maior de usuários e aplicativos, de modo que sua empresa exigirá menos servidores.</span><span class="sxs-lookup"><span data-stu-id="2f99f-129">Each server can support larger numbers of users and applications, so your business will require fewer servers.</span></span> <span data-ttu-id="2f99f-130">Isso se traduz diretamente em menos sobrecarga de gerenciamento — um dos custos mais altos em qualquer ambiente computacional.</span><span class="sxs-lookup"><span data-stu-id="2f99f-130">This translates directly into less management overhead—one of the highest costs in any computing environment.</span></span>
+-   <span data-ttu-id="2f99f-131">Novas oportunidades de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="2f99f-131">New application opportunities.</span></span> <span data-ttu-id="2f99f-132">Novos aplicativos podem ser criados sem as barreiras impostas por janelas de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="2f99f-132">New applications can be designed without the barriers imposed by 32-bit Windows.</span></span> <span data-ttu-id="2f99f-133">Novos aplicativos gráficos tornarão o trabalho mais fácil e agradável.</span><span class="sxs-lookup"><span data-stu-id="2f99f-133">New graphics applications will make work easier and more enjoyable.</span></span> <span data-ttu-id="2f99f-134">Tarefas de uso intensivo de dados que são impossíveis hoje podem ser feitas com o Windows de 64 bits.</span><span class="sxs-lookup"><span data-stu-id="2f99f-134">Data-intensive tasks that are impossible today can be done with 64-bit Windows.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="2f99f-135">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="2f99f-135">In this Section</span></span>
+
+-   [<span data-ttu-id="2f99f-136">Preparando-se para o Windows de 64 bits</span><span class="sxs-lookup"><span data-stu-id="2f99f-136">Getting Ready for 64-bit Windows</span></span>](getting-ready-for-64-bit-windows.md)
+-   [<span data-ttu-id="2f99f-137">Criando interfaces compatíveis com 64 bits</span><span class="sxs-lookup"><span data-stu-id="2f99f-137">Designing 64-bit Compatible Interfaces</span></span>](designing-64-bit-compatible-interfaces.md)
+-   [<span data-ttu-id="2f99f-138">Executando aplicativos de 32 bits</span><span class="sxs-lookup"><span data-stu-id="2f99f-138">Running 32-bit Applications</span></span>](running-32-bit-applications.md)
+-   [<span data-ttu-id="2f99f-139">Dicas de migração</span><span class="sxs-lookup"><span data-stu-id="2f99f-139">Migration Tips</span></span>](migration-tips.md)
+
+ 
+
+ 
+
+
+
+

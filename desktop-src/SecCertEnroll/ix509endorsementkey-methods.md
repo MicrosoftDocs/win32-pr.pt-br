@@ -1,0 +1,42 @@
+---
+description: A interface IX509EndorsementKey expõe os métodos a seguir.
+ms.assetid: 536E5DE6-FF14-45C8-9227-68AF673E5FDC
+title: Métodos IX509EndorsementKey
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: f3c1eb6a96cd555d4b0a0fdcd2ad52ccf80ec4aa
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104171820"
+---
+# <a name="ix509endorsementkey-methods"></a><span data-ttu-id="5d4b1-103">Métodos IX509EndorsementKey</span><span class="sxs-lookup"><span data-stu-id="5d4b1-103">IX509EndorsementKey Methods</span></span>
+
+<span data-ttu-id="5d4b1-104">A interface [**IX509EndorsementKey**](/windows/desktop/api/Certenroll/nn-certenroll-ix509endorsementkey) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-104">The [**IX509EndorsementKey**](/windows/desktop/api/Certenroll/nn-certenroll-ix509endorsementkey) interface exposes the following methods.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="5d4b1-105">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="5d4b1-105">In this section</span></span>
+
+
+
+| <span data-ttu-id="5d4b1-106">Tópico</span><span class="sxs-lookup"><span data-stu-id="5d4b1-106">Topic</span></span>                                                                                        | <span data-ttu-id="5d4b1-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="5d4b1-107">Description</span></span>                                                                                                                                                                                                                                                                                         |
+|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="5d4b1-108">**Método addcertificate**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-108">**AddCertificate method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-addcertificate)<br/>               | <span data-ttu-id="5d4b1-109">Adicione um certificado de chave de endosso ao KSP (provedor de armazenamento de chaves) que oferece suporte a chaves de endosso.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-109">Add an endorsement key certificate to the key storage provider (KSP) that supports endorsement keys.</span></span><br/>                                                                                                                                                                                     |
+| [<span data-ttu-id="5d4b1-110">**Método Close**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-110">**Close method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-close)<br/>                                 | <span data-ttu-id="5d4b1-111">Fecha a chave de endosso.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-111">Closes the endorsement key.</span></span> <span data-ttu-id="5d4b1-112">Você só pode chamar o método [**Close**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-close) depois que o método [**Open**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open) tiver sido chamado com êxito.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-112">You can only call the [**Close**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-close) method after the [**Open**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open) method has been successfully called.</span></span><br/>                                                                                              |
+| [<span data-ttu-id="5d4b1-113">**Método ExportPublicKey**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-113">**ExportPublicKey method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-exportpublickey)<br/>             | <span data-ttu-id="5d4b1-114">Exporta a chave pública de endosso.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-114">Exports the endorsement public key.</span></span><br/>                                                                                                                                                                                                                                                      |
+| [<span data-ttu-id="5d4b1-115">**Método GetCertificateByIndex**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-115">**GetCertificateByIndex method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-getcertificatebyindex)<br/> | <span data-ttu-id="5d4b1-116">Obtém o certificado de endosso associado à chave de endosso do provedor de armazenamento de chaves para o índice especificado.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-116">Gets the endorsement certificate associated with the endorsement key from the key storage provider for the specified index.</span></span><br/>                                                                                                                                                              |
+| [<span data-ttu-id="5d4b1-117">**Método GetCertificateCount**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-117">**GetCertificateCount method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-getcertificatecount)<br/>     | <span data-ttu-id="5d4b1-118">Obtém a contagem dos certificados de endosso no provedor de armazenamento de chaves.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-118">Gets the count of the endorsement certificates in the key storage provider.</span></span><br/>                                                                                                                                                                                                              |
+| [<span data-ttu-id="5d4b1-119">**Método Open**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-119">**Open method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open)<br/>                                   | <span data-ttu-id="5d4b1-120">Abre a chave de endosso.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-120">Opens the endorsement key.</span></span> <span data-ttu-id="5d4b1-121">A chave de endosso deve ser aberta antes que você possa recuperar uma informação da chave de endosso, adicionar ou remover certificados ou exportar a chave de endosso.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-121">The endorsement key must be open before you can retrieve an information from the endorsement key, add or remove certificates, or export the endorsement key.</span></span><br/>                                                                                                  |
+| [<span data-ttu-id="5d4b1-122">**Método RemoveCertificate**</span><span class="sxs-lookup"><span data-stu-id="5d4b1-122">**RemoveCertificate method**</span></span>](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-removecertificate)<br/>         | <span data-ttu-id="5d4b1-123">Remove um certificado de endosso relacionado à chave de endosso do provedor de armazenamento de chaves.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-123">Removes an endorsement certificate related to the endorsement key from the key storage provider.</span></span> <span data-ttu-id="5d4b1-124">Você só pode chamar o método [**RemoveCertificate**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-removecertificate) depois que o método [**Open**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open) tiver sido chamado com êxito.</span><span class="sxs-lookup"><span data-stu-id="5d4b1-124">You can only call the [**RemoveCertificate**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-removecertificate) method after the [**Open**](/windows/desktop/api/Certenroll/nf-certenroll-ix509endorsementkey-open) method has been successfully called.</span></span><br/> |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
