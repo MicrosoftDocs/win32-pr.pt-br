@@ -102,7 +102,7 @@ Para obter o código completo, consulte a amostra [personalizar uma miniatura do
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

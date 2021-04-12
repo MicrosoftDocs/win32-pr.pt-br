@@ -81,7 +81,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                              | Significado                                      |
+| Nome                                                                                              | Significado                                      |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl> | o *tamanho* não era 3 ou 4.<br/>            |
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>  | o *tipo* não era um valor aceito.<br/> |
@@ -127,7 +127,7 @@ matriz de cores [**glIsEnabled**](glisenabled.md) com Argument GL \_ \_
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

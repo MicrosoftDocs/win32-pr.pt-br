@@ -26,7 +26,7 @@ ms.locfileid: "104454948"
 
 Tipos de retorno de chamada possíveis.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
