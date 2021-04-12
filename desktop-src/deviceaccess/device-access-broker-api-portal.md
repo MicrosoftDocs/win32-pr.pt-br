@@ -1,0 +1,36 @@
+---
+title: API de acesso do dispositivo
+description: Use a API de acesso do dispositivo para gravar aplicativos de dispositivo da Windows Store para dispositivos especializados que usam drivers personalizados.
+ms.assetid: 51329746-291e-4ac6-9029-ebe4727d5d7d
+ms.topic: article
+ms.date: 02/11/2020
+ms.openlocfilehash: 6f054167d81f33ce852f7707e194058f4cee3c75
+ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "104366877"
+---
+# <a name="device-access-api"></a><span data-ttu-id="e7d94-103">API de acesso do dispositivo</span><span class="sxs-lookup"><span data-stu-id="e7d94-103">Device Access API</span></span>
+
+## <a name="purpose"></a><span data-ttu-id="e7d94-104">Finalidade</span><span class="sxs-lookup"><span data-stu-id="e7d94-104">Purpose</span></span>
+
+<span data-ttu-id="e7d94-105">Você pode usar a API de acesso do dispositivo para gravar aplicativos de dispositivo da Windows Store para dispositivos especializados que usam drivers personalizados.</span><span class="sxs-lookup"><span data-stu-id="e7d94-105">You can use the Device Access API to write Windows Store device apps for specialized devices that use custom drivers.</span></span> <span data-ttu-id="e7d94-106">A API fornece métodos para enviar códigos de controle para se comunicar com o driver personalizado do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e7d94-106">The API provides methods for sending control codes to communicate with the device's custom driver.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="e7d94-107">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="e7d94-107">In this section</span></span>
+
+| <span data-ttu-id="e7d94-108">Tópico</span><span class="sxs-lookup"><span data-stu-id="e7d94-108">Topic</span></span> | <span data-ttu-id="e7d94-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e7d94-109">Description</span></span> |
+|---|---|
+| [<span data-ttu-id="e7d94-110">Sobre a API de acesso do dispositivo</span><span class="sxs-lookup"><span data-stu-id="e7d94-110">About the Device Access API</span></span>](about-the-device-access-api.md)<br/> | <span data-ttu-id="e7d94-111">A API de acesso ao dispositivo é para desenvolvedores de C++ que estão criando um aplicativo da Windows Store para interagir com dispositivos especializados no Windows 8.</span><span class="sxs-lookup"><span data-stu-id="e7d94-111">The Device Access API is for C++ developers who are creating a Windows Store app to interact with specialized devices in Windows 8.</span></span> <span data-ttu-id="e7d94-112">Este tópico descreve os cenários aos quais a API de acesso ao dispositivo se aplica.</span><span class="sxs-lookup"><span data-stu-id="e7d94-112">This topic describes the scenarios that the Device Access API applies to.</span></span> <span data-ttu-id="e7d94-113">Ele também explica como a API de acesso ao dispositivo aplica regras de segurança para aplicativos da Windows Store no Windows 8.</span><span class="sxs-lookup"><span data-stu-id="e7d94-113">It also explains how the Device Access API applies security rules for Windows Store apps in Windows 8.</span></span><br/> |
+| [<span data-ttu-id="e7d94-114">Como usar a API de acesso do dispositivo</span><span class="sxs-lookup"><span data-stu-id="e7d94-114">How to Use the Device Access API</span></span>](using-the-device-access-api.md)<br/> | <span data-ttu-id="e7d94-115">Este tópico contém tarefas e considerações de design para usar a API de acesso do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e7d94-115">This topic contains tasks and design considerations for using the Device Access API.</span></span><br/> |
+| [<span data-ttu-id="e7d94-116">Referência de programação da API de acesso do dispositivo C++</span><span class="sxs-lookup"><span data-stu-id="e7d94-116">Device Access API C++ Programming Reference</span></span>](device-access-api-c---programming-reference.md)<br/> | <span data-ttu-id="e7d94-117">Fornece páginas de referência para as funções e interfaces na API de acesso do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e7d94-117">Provides reference pages for the functions and interfaces in the Device Access API.</span></span><br/> |
+| [<span data-ttu-id="e7d94-118">Glossário de acesso ao dispositivo</span><span class="sxs-lookup"><span data-stu-id="e7d94-118">Device Access Glossary</span></span>](deviceaccess-glossary.md)<br/> | <span data-ttu-id="e7d94-119">Veja a seguir os termos usados em toda a documentação da API de acesso ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e7d94-119">The following are terms used throughout the documentation for the Device Access API.</span></span><br/> |
+| [<span data-ttu-id="e7d94-120">Outras APIs</span><span class="sxs-lookup"><span data-stu-id="e7d94-120">Other APIs</span></span>](other-apis.md)<br/> | <span data-ttu-id="e7d94-121">Essas interfaces não têm suporte e não devem ser usadas.</span><span class="sxs-lookup"><span data-stu-id="e7d94-121">These interfaces are not supported and should not be used.</span></span> <span data-ttu-id="e7d94-122">Em vez disso, use as APIs na [referência de programação C++ de API de acesso ao dispositivo](device-access-api-c---programming-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="e7d94-122">Use the APIs in the [Device Access API C++ Programming Reference](device-access-api-c---programming-reference.md) instead.</span></span><br/> |
+
+## <a name="developer-audience"></a><span data-ttu-id="e7d94-123">Público de desenvolvedores</span><span class="sxs-lookup"><span data-stu-id="e7d94-123">Developer audience</span></span>
+
+<span data-ttu-id="e7d94-124">A API de acesso ao dispositivo é projetada para os desenvolvedores de OEM (fornecedor independente de hardware) e OEMs que estão familiarizados com C++ e Component Object Model (COM).</span><span class="sxs-lookup"><span data-stu-id="e7d94-124">The Device Access API is designed for independent hardware vendor (IHV) and OEM developers who are familiar with C++ and Component Object Model (COM).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="e7d94-125">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e7d94-125">Related topics</span></span>
+
+<span data-ttu-id="e7d94-126">[Exemplo de acesso de driver personalizado](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample), [aplicativos de dispositivo UWP para dispositivos internos](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices), [centro de desenvolvimento de hardware](/windows-hardware/drivers/)</span><span class="sxs-lookup"><span data-stu-id="e7d94-126">[Custom Driver Access Sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample), [UWP device apps for internal devices](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices), [Hardware Dev Center](/windows-hardware/drivers/)</span></span>
