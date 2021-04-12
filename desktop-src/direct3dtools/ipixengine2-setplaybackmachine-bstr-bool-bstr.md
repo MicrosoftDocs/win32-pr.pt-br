@@ -1,0 +1,67 @@
+---
+description: Define o computador de reprodução atual para o log de gráficos especificado.
+MS-HAID: vspixengine.IPixEngine2\_SetPlaybackMachine\_BSTR\_BOOL\_BSTR
+MSHAttr:
+- PreferredSiteName:MSDN
+- PreferredLib:/library/windows/desktop
+title: 'Método IPixEngine2:: SetPlaybackMachine'
+ms.topic: reference
+ms.date: 05/31/2018
+ms.assetid: 181EE044-1FC4-484B-AE63-C33BC627C3B7
+api_name:
+- IPixEngine2.SetPlaybackMachine
+api_type:
+- COM
+api_location:
+- vspixengine.h
+topic_type:
+- APIRef
+- kbSyntax
+ms.openlocfilehash: 9d7366da4aa999828309136900edfe725af4f622
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104500716"
+---
+# <a name="span-idvspixengineipixengine2_setplaybackmachine_bstr_bool_bstrspanipixengine2setplaybackmachine-method"></a><span id="vspixengine.ipixengine2_setplaybackmachine_bstr_bool_bstr"></span>Método IPixEngine2:: SetPlaybackMachine
+
+Define o computador de reprodução atual para o log de gráficos especificado.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT SetPlaybackMachine(
+   BSTR logFile,
+   BOOL bUseAuthentication,
+   BSTR machine
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+
+*Restaura*   
+Uma cadeia de caracteres COM contianing o nome do log de gráficos.
+
+*bUseAuthentication*   
+true para usar a autenticação; caso contrário, false.
+
+*Tradução*   
+Uma cadeia de caracteres COM que contém o nome da máquina de reprodução.
+
+## <a name="return-value"></a>Retornar valor
+
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+
+## <a name="requirements"></a>Requisitos
+
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
+
+[**IPixEngine2**](/windows/desktop/direct3dtools/ipixengine2)
+
+ 
+
+ 
