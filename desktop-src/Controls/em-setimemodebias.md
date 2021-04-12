@@ -21,25 +21,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104455347"
 ---
-# <a name="em_setimemodebias-message"></a><span data-ttu-id="095b6-104">\_Mensagem em SETIMEMODEBIAS</span><span class="sxs-lookup"><span data-stu-id="095b6-104">EM\_SETIMEMODEBIAS message</span></span>
+# <a name="em_setimemodebias-message"></a><span data-ttu-id="513f8-104">\_Mensagem em SETIMEMODEBIAS</span><span class="sxs-lookup"><span data-stu-id="513f8-104">EM\_SETIMEMODEBIAS message</span></span>
 
-<span data-ttu-id="095b6-105">Defina a tendência do modo IME (editor de método de entrada) para um controle de edição rico.</span><span class="sxs-lookup"><span data-stu-id="095b6-105">Set the Input Method Editor (IME) mode bias for a rich edit control.</span></span>
+<span data-ttu-id="513f8-105">Defina a tendência do modo IME (editor de método de entrada) para um controle de edição rico.</span><span class="sxs-lookup"><span data-stu-id="513f8-105">Set the Input Method Editor (IME) mode bias for a rich edit control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="095b6-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="095b6-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="513f8-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="513f8-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="095b6-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="095b6-107">*wParam*</span></span> 
+<span data-ttu-id="513f8-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="513f8-107">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="095b6-108">Valor de tendência do modo IME.</span><span class="sxs-lookup"><span data-stu-id="095b6-108">IME mode bias value.</span></span> <span data-ttu-id="095b6-109">Pode ser um dos seguintes.</span><span class="sxs-lookup"><span data-stu-id="095b6-109">It can be one of the following.</span></span>
+<span data-ttu-id="513f8-108">Valor de tendência do modo IME.</span><span class="sxs-lookup"><span data-stu-id="513f8-108">IME mode bias value.</span></span> <span data-ttu-id="513f8-109">Pode ser um dos seguintes.</span><span class="sxs-lookup"><span data-stu-id="513f8-109">It can be one of the following.</span></span>
 
 
 
-| <span data-ttu-id="095b6-110">Valor</span><span class="sxs-lookup"><span data-stu-id="095b6-110">Value</span></span>                                                                                                                                                                                        | <span data-ttu-id="095b6-111">Significado</span><span class="sxs-lookup"><span data-stu-id="095b6-111">Meaning</span></span>                                    |
+| <span data-ttu-id="513f8-110">Valor</span><span class="sxs-lookup"><span data-stu-id="513f8-110">Value</span></span>                                                                                                                                                                                        | <span data-ttu-id="513f8-111">Significado</span><span class="sxs-lookup"><span data-stu-id="513f8-111">Meaning</span></span>                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| <span id="IMF_SMODE_PLAURALCLAUSE"></span><span id="imf_smode_plauralclause"></span><dl> <span data-ttu-id="095b6-112"><dt>**\_PLAURALCLAUSE SMODE do IMF \_**</dt></span><span class="sxs-lookup"><span data-stu-id="095b6-112"><dt>**IMF\_SMODE\_PLAURALCLAUSE**</dt></span></span> </dl> | <span data-ttu-id="095b6-113">Define o ajuste do modo IME para nome.</span><span class="sxs-lookup"><span data-stu-id="095b6-113">Sets the IME mode bias to Name.</span></span><br/> |
-| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <span data-ttu-id="095b6-114"><dt>**SMODE do IMF \_ \_ nenhum**</dt></span><span class="sxs-lookup"><span data-stu-id="095b6-114"><dt>**IMF\_SMODE\_NONE**</dt></span></span> </dl>                            | <span data-ttu-id="095b6-115">Sem tendência.</span><span class="sxs-lookup"><span data-stu-id="095b6-115">No bias.</span></span><br/>                        |
+| <span id="IMF_SMODE_PLAURALCLAUSE"></span><span id="imf_smode_plauralclause"></span><dl> <span data-ttu-id="513f8-112"><dt>**\_PLAURALCLAUSE SMODE do IMF \_**</dt></span><span class="sxs-lookup"><span data-stu-id="513f8-112"><dt>**IMF\_SMODE\_PLAURALCLAUSE**</dt></span></span> </dl> | <span data-ttu-id="513f8-113">Define o ajuste do modo IME para nome.</span><span class="sxs-lookup"><span data-stu-id="513f8-113">Sets the IME mode bias to Name.</span></span><br/> |
+| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <span data-ttu-id="513f8-114"><dt>**SMODE do IMF \_ \_ nenhum**</dt></span><span class="sxs-lookup"><span data-stu-id="513f8-114"><dt>**IMF\_SMODE\_NONE**</dt></span></span> </dl>                            | <span data-ttu-id="513f8-115">Sem tendência.</span><span class="sxs-lookup"><span data-stu-id="513f8-115">No bias.</span></span><br/>                        |
 
 
 
@@ -47,48 +47,48 @@ ms.locfileid: "104455347"
 
 </dd> <dt>
 
-<span data-ttu-id="095b6-116">*lParam*</span><span class="sxs-lookup"><span data-stu-id="095b6-116">*lParam*</span></span> 
+<span data-ttu-id="513f8-116">*lParam*</span><span class="sxs-lookup"><span data-stu-id="513f8-116">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="095b6-117">Deve ser o mesmo valor que *wParam*.</span><span class="sxs-lookup"><span data-stu-id="095b6-117">This must be the same value as *wParam*.</span></span>
+<span data-ttu-id="513f8-117">Deve ser o mesmo valor que *wParam*.</span><span class="sxs-lookup"><span data-stu-id="513f8-117">This must be the same value as *wParam*.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="095b6-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="095b6-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="513f8-118">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="513f8-118">Return value</span></span>
 
-<span data-ttu-id="095b6-119">Essa mensagem retorna a nova configuração de ajuste do modo IME.</span><span class="sxs-lookup"><span data-stu-id="095b6-119">This message returns the new IME mode bias setting.</span></span>
+<span data-ttu-id="513f8-119">Essa mensagem retorna a nova configuração de ajuste do modo IME.</span><span class="sxs-lookup"><span data-stu-id="513f8-119">This message returns the new IME mode bias setting.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="095b6-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="095b6-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="513f8-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="513f8-120">Remarks</span></span>
 
-<span data-ttu-id="095b6-121">Quando o IME gera uma lista de opções alternativas para um conjunto de caracteres, essa mensagem define os critérios pelos quais algumas das opções aparecerão na parte superior da lista.</span><span class="sxs-lookup"><span data-stu-id="095b6-121">When the IME generates a list of alternative choices for a set of characters, this message sets the criteria by which some of the choices will appear at the top of the list.</span></span>
+<span data-ttu-id="513f8-121">Quando o IME gera uma lista de opções alternativas para um conjunto de caracteres, essa mensagem define os critérios pelos quais algumas das opções aparecerão na parte superior da lista.</span><span class="sxs-lookup"><span data-stu-id="513f8-121">When the IME generates a list of alternative choices for a set of characters, this message sets the criteria by which some of the choices will appear at the top of the list.</span></span>
 
-<span data-ttu-id="095b6-122">Para definir a tendência do modo TSF (estrutura de serviços de texto), use em [**\_ SETCTFMODEBIAS**](em-setctfmodebias.md).</span><span class="sxs-lookup"><span data-stu-id="095b6-122">To set the Text Services Framework (TSF) mode bias, use [**EM\_SETCTFMODEBIAS**](em-setctfmodebias.md).</span></span>
+<span data-ttu-id="513f8-122">Para definir a tendência do modo TSF (estrutura de serviços de texto), use em [**\_ SETCTFMODEBIAS**](em-setctfmodebias.md).</span><span class="sxs-lookup"><span data-stu-id="513f8-122">To set the Text Services Framework (TSF) mode bias, use [**EM\_SETCTFMODEBIAS**](em-setctfmodebias.md).</span></span>
 
-<span data-ttu-id="095b6-123">O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa função.</span><span class="sxs-lookup"><span data-stu-id="095b6-123">The application should call [**EM\_ISIME**](em-isime.md) before calling this function.</span></span>
+<span data-ttu-id="513f8-123">O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa função.</span><span class="sxs-lookup"><span data-stu-id="513f8-123">The application should call [**EM\_ISIME**](em-isime.md) before calling this function.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="095b6-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="095b6-124">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="513f8-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="513f8-124">Requirements</span></span>
 
 
 
-| <span data-ttu-id="095b6-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="095b6-125">Requirement</span></span> | <span data-ttu-id="095b6-126">Valor</span><span class="sxs-lookup"><span data-stu-id="095b6-126">Value</span></span> |
+| <span data-ttu-id="513f8-125">Requisito</span><span class="sxs-lookup"><span data-stu-id="513f8-125">Requirement</span></span> | <span data-ttu-id="513f8-126">Valor</span><span class="sxs-lookup"><span data-stu-id="513f8-126">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="095b6-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="095b6-127">Minimum supported client</span></span><br/> | <span data-ttu-id="095b6-128">\[Somente aplicativos da área de trabalho do Windows XP com SP1\]</span><span class="sxs-lookup"><span data-stu-id="095b6-128">Windows XP with SP1 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="095b6-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="095b6-129">Minimum supported server</span></span><br/> | <span data-ttu-id="095b6-130">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="095b6-130">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="095b6-131">parâmetro</span><span class="sxs-lookup"><span data-stu-id="095b6-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="095b6-132"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="095b6-132"><dt>Richedit.h</dt></span></span> </dl> |
+| <span data-ttu-id="513f8-127">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="513f8-127">Minimum supported client</span></span><br/> | <span data-ttu-id="513f8-128">\[Somente aplicativos da área de trabalho do Windows XP com SP1\]</span><span class="sxs-lookup"><span data-stu-id="513f8-128">Windows XP with SP1 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="513f8-129">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="513f8-129">Minimum supported server</span></span><br/> | <span data-ttu-id="513f8-130">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="513f8-130">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="513f8-131">parâmetro</span><span class="sxs-lookup"><span data-stu-id="513f8-131">Header</span></span><br/>                   | <dl> <span data-ttu-id="513f8-132"><dt>RichEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="513f8-132"><dt>Richedit.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="095b6-133">Consulte também</span><span class="sxs-lookup"><span data-stu-id="095b6-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="513f8-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="513f8-133">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="095b6-134">**Referência**</span><span class="sxs-lookup"><span data-stu-id="095b6-134">**Reference**</span></span>
+<span data-ttu-id="513f8-134">**Referência**</span><span class="sxs-lookup"><span data-stu-id="513f8-134">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="095b6-135">**em \_ ISIME**</span><span class="sxs-lookup"><span data-stu-id="095b6-135">**EM\_ISIME**</span></span>](em-isime.md)
+[<span data-ttu-id="513f8-135">**em \_ ISIME**</span><span class="sxs-lookup"><span data-stu-id="513f8-135">**EM\_ISIME**</span></span>](em-isime.md)
 </dt> <dt>
 
-[<span data-ttu-id="095b6-136">**em \_ SETCTFMODEBIAS**</span><span class="sxs-lookup"><span data-stu-id="095b6-136">**EM\_SETCTFMODEBIAS**</span></span>](em-setctfmodebias.md)
+[<span data-ttu-id="513f8-136">**em \_ SETCTFMODEBIAS**</span><span class="sxs-lookup"><span data-stu-id="513f8-136">**EM\_SETCTFMODEBIAS**</span></span>](em-setctfmodebias.md)
 </dt> </dl>
 
  
