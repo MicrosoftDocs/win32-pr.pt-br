@@ -66,7 +66,7 @@ Como o controle List-View usa OLE COM para manipular as imagens de plano de fund
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

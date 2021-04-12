@@ -1,45 +1,44 @@
 ---
-title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_NXTType
-description: O método CreateInstanceFromPropertyData instancia um próximo registro de recurso (NXT).
-ms.assetid: d0e4f3bf-f835-4341-a614-539975e6be11
+title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_AAAAType
+description: O método CreateInstanceFromPropertyData instancia um registro de recurso de endereço IPv6 (AAAA).
+ms.assetid: 3f2774d8-1eb6-4300-95e2-f918fc6612e0
 keywords:
 - DNS do método CreateInstanceFromPropertyData
-- Método CreateInstanceFromPropertyData DNS, classe MicrosoftDNS_NXTType
-- MicrosoftDNS_NXTType classe DNS, método CreateInstanceFromPropertyData
+- Método CreateInstanceFromPropertyData DNS, classe MicrosoftDNS_AAAAType
+- MicrosoftDNS_AAAAType classe DNS, método CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
-- MicrosoftDNS_NXTType.CreateInstanceFromPropertyData
+- MicrosoftDNS_AAAAType.CreateInstanceFromPropertyData
 api_location:
 - Root\MicrosoftDNS
 api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee00cd0afdb6ac629a981dbdb586a30252eac1d
+ms.openlocfilehash: 7e9232506b52795521300e827701f685e351d8ec
 ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455415"
+ms.locfileid: "104499376"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_nxttype-class"></a>Método CreateInstanceFromPropertyData da \_ classe NXTType MicrosoftDNS
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_aaaatype-class"></a>Método CreateInstanceFromPropertyData da \_ classe aaaatype MicrosoftDNS
 
-O método **CreateInstanceFromPropertyData** instancia um próximo registro de recurso (NXT).
+O método **CreateInstanceFromPropertyData** instancia um registro de recurso de endereço IPv6 (aaaa).
 
 ## <a name="syntax"></a>Sintaxe
 
 
 ```mof
 void CreateInstanceFromPropertyData(
-  [in]           string               DnsServerName,
-  [in]           string               ContainerName,
-  [in]           string               OwnerName,
-  [in, optional] uint32               RecordClass = 1,
-  [in, optional] uint32               TTL,
-  [in]           string               NextDomainName,
-  [in]           string               Types,
-  [out, ref]     MicrosoftDNS_NXTType &RR
+  [in]           string                DnsServerName,
+  [in]           string                ContainerName,
+  [in]           string                OwnerName,
+  [in, optional] uint32                RecordClass = 1,
+  [in, optional] uint32                TTL,
+  [in]           string                IPv6Address,
+  [out, ref]     MicrosoftDNS_AAAAType &RR
 );
 ```
 
@@ -59,7 +58,7 @@ FQDN ou endereço IP do servidor DNS que contém este RR.
 *ContainerName* \[ no\]
 </dt> <dd>
 
-Nome do contêiner para a zona, o cache ou a instância de RootHints que contém esse RR.
+Nome do contêiner para a zona, o cache ou a instância de RootHints que contém este RR.
 
 </dd> <dt>
 
@@ -97,17 +96,10 @@ Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de D
 
 </dd> <dt>
 
-*NextDomainName* \[ no\]
+*IPv6Address* \[ no\]
 </dt> <dd>
 
-Próximo nome de domínio.
-
-</dd> <dt>
-
-*Tipos* \[ no\]
-</dt> <dd>
-
-Lista separada por espaços dos mnemônicos do tipo RR para o nome do proprietário do registro de recurso NXT.
+Endereço IPv6 para o host.
 
 </dd> <dt>
 
@@ -139,10 +131,10 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**MicrosoftDNS \_ NXTType**](microsoftdns-nxttype.md)
+[**MicrosoftDNS \_ aaaatype**](microsoftdns-aaaatype.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ NXTType**](microsoftdns-nxttype-modify.md)
+[**Método Modify da classe MicrosoftDNS \_ aaaatype**](microsoftdns-aaaatype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

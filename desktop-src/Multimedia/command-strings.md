@@ -1,0 +1,93 @@
+---
+title: Cadeias de caracteres de comando
+description: Cadeias de caracteres de comando
+ms.assetid: ca9ca153-f2bf-45ed-84e6-44e86e8efaed
+keywords:
+- Cadeias de caracteres de comando MCI, sobre
+- Cadeias de caracteres de comando MCI, sintaxe
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 8b62013abff091f668a3b045e9f3ca2e8745f0d9
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104365849"
+---
+# <a name="command-strings"></a>Cadeias de caracteres de comando
+
+Para enviar um comando de cadeia de caracteres para um dispositivo MCI, use a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) , que inclui parâmetros para o comando de cadeia de caracteres e um buffer para qualquer informação retornada.
+
+A função **mciSendString** retornará zero se for bem-sucedida. Se a função falhar, a palavra de ordem inferior do valor de retorno conterá um código de erro. Você pode passar esse código de erro para a função [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) para obter uma descrição de texto do erro.
+
+## <a name="syntax-of-command-strings"></a>Sintaxe de cadeias de caracteres de comando
+
+As cadeias de caracteres de comando MCI usam uma sintaxe de modificador de objeto verbo consistente. Cada cadeia de caracteres de comando inclui um comando, um identificador de dispositivo e argumentos de comando. Os argumentos são opcionais para alguns comandos e são necessários para outros.
+
+Uma cadeia de caracteres de comando tem o seguinte formato:
+
+*argumentos de ID do dispositivo de comando \_*
+
+Esses componentes contêm as seguintes informações:
+
+-   O *comando* especifica um comando MCI, como [**abrir**](open.md), [**Fechar**](close.md)ou [**reproduzir**](play.md).
+-   A *\_ ID do dispositivo* identifica uma instância de um driver MCI. A *\_ ID do dispositivo* é criada quando o dispositivo é aberto.
+-   Os *argumentos* especificam os sinalizadores e as variáveis usadas pelo comando. Os sinalizadores são palavras-chave reconhecidas com o comando MCI. Variáveis são números ou cadeias de caracteres que se aplicam ao comando ou sinalizador MCI.
+
+    Por exemplo, o comando **reproduzir** usa os argumentos "da *posição* " e "para *posição* " para indicar as posições nas quais iniciar e terminar reprodução. Você pode listar os sinalizadores usados com um comando em qualquer ordem. Ao usar um sinalizador que tem uma variável associada a ele, você deve fornecer um valor para a variável.
+
+    Os argumentos de comando não especificados (e opcionais) assumem um valor padrão.
+
+A função de exemplo a seguir envia o comando [**Play**](play.md) com os sinalizadores "from" e "to".
+
+
+```C++
+BOOL PlayFromTo(LPTSTR lpstrAlias, DWORD dwFrom, DWORD dwTo) 
+{ 
+    TCHAR achCommandBuff[128]; 
+    int result;
+    MCIERROR err;
+
+    // Form the command string.
+    result = _stprintf_s(
+        achCommandBuff, 
+        TEXT("play %s from %u to %u"), 
+        lpstrAlias, dwFrom, dwTo); 
+
+    if (result == -1)
+    {
+        return FALSE;
+    }
+
+    // Send the command string.
+    err = mciSendString(achCommandBuff, NULL, 0, NULL); 
+    if (err != 0)
+    {
+        return FALSE;
+    }
+
+    return TRUE;
+} 
+```
+
+
+
+## <a name="data-types-for-command-variables"></a>Tipos de dados para variáveis de comando
+
+Você pode usar os seguintes tipos de dados para as variáveis em uma cadeia de caracteres de comando.
+
+
+
+| **Data type**        | **Descrição**                                                                                                                                                                                                                                                                                                                                                |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cadeias de caracteres              | Os tipos de dados de cadeia de caracteres são delimitados por espaços em branco à esquerda e à direita e aspas. O MCI remove aspas simples de uma cadeia de caracteres. Para colocar uma aspa em uma cadeia de caracteres, use um conjunto de duas aspas em que você deseja inserir as aspas. Para usar uma cadeia de caracteres vazia, use duas aspas delimitadas por espaços em branco à esquerda e à direita. |
+| Inteiros longos assinados | Os tipos de dados inteiros longos assinados são delimitados por espaços em branco à esquerda e à direita. A menos que especificado de outra forma, os inteiros podem ser positivos ou negativos. Se você usar inteiros negativos, não deverá separar o sinal de subtração e o primeiro dígito por um espaço.                                                                                                    |
+| Retângulos           | Os tipos de dados Rectangle são uma lista ordenada de quatro valores curtos assinados. O espaço em branco delimita esse tipo de dados e separa cada inteiro na lista.                                                                                                                                                                                                              |
+
+
+
+ 
+
+ 
+
+ 

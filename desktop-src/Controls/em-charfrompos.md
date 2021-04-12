@@ -71,7 +71,7 @@ Se um ponto for passado para **em \_ CHARFROMPOS** como o *lParam* e o ponto est
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

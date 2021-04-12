@@ -78,7 +78,7 @@ O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa fun
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
