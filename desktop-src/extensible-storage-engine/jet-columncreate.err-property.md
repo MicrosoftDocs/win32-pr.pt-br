@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "104172222"
 ---
-# <a name="jet_columncreateerr-property"></a><span data-ttu-id="4e421-103">Propriedade JET_COLUMNCREATE. err</span><span class="sxs-lookup"><span data-stu-id="4e421-103">JET_COLUMNCREATE.err property</span></span>
+# <a name="jet_columncreateerr-property"></a><span data-ttu-id="44228-103">Propriedade JET_COLUMNCREATE. err</span><span class="sxs-lookup"><span data-stu-id="44228-103">JET_COLUMNCREATE.err property</span></span>
 
-<span data-ttu-id="4e421-104">Obtém ou define o código de erro da criação desta coluna.</span><span class="sxs-lookup"><span data-stu-id="4e421-104">Gets or sets the error code from creating this column.</span></span>
+<span data-ttu-id="44228-104">Obtém ou define o código de erro da criação desta coluna.</span><span class="sxs-lookup"><span data-stu-id="44228-104">Gets or sets the error code from creating this column.</span></span>
 
-<span data-ttu-id="4e421-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="4e421-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="4e421-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="4e421-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="44228-105">**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="44228-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="44228-106">**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="44228-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4e421-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="4e421-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="44228-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="44228-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -60,16 +60,16 @@ instance.err = value
 public JET_err err { get; set; }
 ```
 
-#### <a name="property-value"></a><span data-ttu-id="4e421-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="4e421-108">Property value</span></span>
+#### <a name="property-value"></a><span data-ttu-id="44228-108">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="44228-108">Property value</span></span>
 
-<span data-ttu-id="4e421-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="4e421-109">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
+<span data-ttu-id="44228-109">Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="44228-109">Type: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="4e421-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="4e421-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="44228-110">Confira também</span><span class="sxs-lookup"><span data-stu-id="44228-110">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="4e421-111">Referência</span><span class="sxs-lookup"><span data-stu-id="4e421-111">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="44228-111">Referência</span><span class="sxs-lookup"><span data-stu-id="44228-111">Reference</span></span>
 
-[<span data-ttu-id="4e421-112">Classe JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="4e421-112">JET_COLUMNCREATE class</span></span>](./jet-columncreate-class.md)
+[<span data-ttu-id="44228-112">Classe JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="44228-112">JET_COLUMNCREATE class</span></span>](./jet-columncreate-class.md)
 
-[<span data-ttu-id="4e421-113">Membros do JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="4e421-113">JET_COLUMNCREATE members</span></span>](./jet-columncreate-members.md)
+[<span data-ttu-id="44228-113">Membros do JET_COLUMNCREATE</span><span class="sxs-lookup"><span data-stu-id="44228-113">JET_COLUMNCREATE members</span></span>](./jet-columncreate-members.md)
 
-[<span data-ttu-id="4e421-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="4e421-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="44228-114">Namespace Microsoft. ISAM. ESENT. Interop</span><span class="sxs-lookup"><span data-stu-id="44228-114">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
