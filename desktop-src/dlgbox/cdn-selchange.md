@@ -77,7 +77,7 @@ Para obter o nome do arquivo ou da pasta recentemente selecionada, o procediment
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

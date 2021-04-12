@@ -58,7 +58,7 @@ O controle ajusta automaticamente a posição dos números de escala exibidos na
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -71,7 +71,7 @@ Os aplicativos podem, opcionalmente, definir uma função de retorno de chamada 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

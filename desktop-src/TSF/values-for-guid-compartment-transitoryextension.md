@@ -62,7 +62,7 @@ Esse valor inicia a extensão transitória com a interface do usuário pop-up no
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
