@@ -1,0 +1,79 @@
+---
+title: Mensagem de TB_HASACCELERATOR (commctrl. h)
+description: Recupera uma contagem de botões da barra de ferramentas que têm o caractere de acelerador especificado.
+ms.assetid: 41167815-fb64-4203-a32c-b2a88ce7bce1
+keywords:
+- Controles de TB_HASACCELERATOR de mensagens do Windows
+topic_type:
+- apiref
+api_name:
+- TB_HASACCELERATOR
+api_location:
+- Commctrl.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 2544eae629876e4527ea4e47477b50ea59b796c8
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104455275"
+---
+# <a name="tb_hasaccelerator-message"></a>TB de \_ mensagem HASACCELERATOR
+
+\[Destinado ao uso interno; Não recomendado para uso em aplicativos. Essa mensagem pode não ter suporte em versões futuras do Windows.\]
+
+Recupera uma contagem de botões da barra de ferramentas que têm o caractere de acelerador especificado.
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*wParam* 
+</dt> <dd>
+
+Um **WCHAR** que representa o caractere do acelerador de entrada a ser testado.
+
+</dd> <dt>
+
+*lParam* 
+</dt> <dd>
+
+Ponteiro para um **int** que recebe o número de botões que têm o caractere de acelerador.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+O valor de retorno não é usado.
+
+## <a name="security-considerations"></a>Considerações de segurança
+
+O uso dessa mensagem pode comprometer a segurança do seu programa.
+
+## <a name="remarks"></a>Comentários
+
+Primeiro, o sistema consulta todos os botões da barra de ferramentas para os aceleradores correspondentes. Se nenhuma correspondência for encontrada, o sistema enviará a notificação [tbn \_ MAPACCELERATOR](tbn-mapaccelerator.md) para a janela pai, solicitando o índice do botão que tem o caractere de acelerador especificado. Se o pai fornecer um índice, a contagem será definida como 1.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+
+
+
+ 
+
+ 
+
+
+
+
+
