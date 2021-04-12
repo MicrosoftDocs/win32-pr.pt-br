@@ -1,0 +1,66 @@
+---
+title: Recuperando exemplos de propriedade de item de trabalho
+description: Para recuperar as propriedades de um item de trabalho, chame ITaskScheduler Activate para recuperar a interface do objeto de item de trabalho e, em seguida, chame o método apropriado para recuperar a propriedade de tarefa em que você está interessado.
+ms.assetid: d9723dea-1a82-4993-b4d0-bc7d944e775f
+keywords:
+- Recuperando propriedades do item de trabalho Agendador de Tarefas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 74a51c623301a4a3b53369713abe95ea1dafba80
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104366288"
+---
+# <a name="retrieving-work-item-property-examples"></a><span data-ttu-id="6351e-104">Recuperando exemplos de propriedade de item de trabalho</span><span class="sxs-lookup"><span data-stu-id="6351e-104">Retrieving Work Item Property Examples</span></span>
+
+<span data-ttu-id="6351e-105">Para recuperar as propriedades de um item de trabalho, chame [**ITaskScheduler:: Activate**](/windows/desktop/api/Mstask/nf-mstask-itaskscheduler-activate) para recuperar a interface do objeto de item de trabalho e, em seguida, chame o método apropriado para recuperar a propriedade de tarefa em que você está interessado.</span><span class="sxs-lookup"><span data-stu-id="6351e-105">To retrieve the properties of a work item, call [**ITaskScheduler::Activate**](/windows/desktop/api/Mstask/nf-mstask-itaskscheduler-activate) to retrieve the interface of the work item object, then call the appropriate method to retrieve the task property you are interested in.</span></span> <span data-ttu-id="6351e-106">Atualmente, os únicos itens de trabalho válidos são tarefas.</span><span class="sxs-lookup"><span data-stu-id="6351e-106">Currently, the only valid work items are tasks.</span></span>
+
+<span data-ttu-id="6351e-107">Os exemplos de código listados na parte inferior desta página mostram como recuperar as propriedades que se aplicam a todos os itens de trabalho.</span><span class="sxs-lookup"><span data-stu-id="6351e-107">The code examples listed at the bottom of this page show how to retrieve the properties that apply to all work items.</span></span> <span data-ttu-id="6351e-108">Para outras propriedades que são exclusivas de tarefas, consulte [definindo exemplos de propriedade de tarefa](setting-task-property-examples.md).</span><span class="sxs-lookup"><span data-stu-id="6351e-108">For other properties that are unique to tasks, see [Setting Task Property Examples](setting-task-property-examples.md).</span></span>
+
+> [!Note]  
+> <span data-ttu-id="6351e-109">No exemplo de código a seguir, todas as interfaces são lançadas depois que elas não são mais necessárias.</span><span class="sxs-lookup"><span data-stu-id="6351e-109">In the following code example, all interfaces are released after they are no longer needed.</span></span>
+
+ 
+
+<span data-ttu-id="6351e-110">Observe que, se você estiver recuperando uma propriedade de cadeia de caracteres (como comentário para um item de trabalho), deverá chamar [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar a memória alocada para a cadeia de caracteres retornada.</span><span class="sxs-lookup"><span data-stu-id="6351e-110">Note that if you are retrieving a string property (such as comment for a work item), you must call [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) to free the memory allocated for the returned string.</span></span>
+
+<span data-ttu-id="6351e-111">O procedimento a seguir descreve como recuperar uma propriedade de tarefa.</span><span class="sxs-lookup"><span data-stu-id="6351e-111">The following procedure describes how to retrieve a task property.</span></span>
+
+<span data-ttu-id="6351e-112">**Para recuperar uma propriedade de tarefa**</span><span class="sxs-lookup"><span data-stu-id="6351e-112">**To retrieve a task property**</span></span>
+
+1.  <span data-ttu-id="6351e-113">Chame [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) para inicializar a biblioteca com e [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para obter um objeto Agendador de tarefas.</span><span class="sxs-lookup"><span data-stu-id="6351e-113">Call [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) to initialize the COM library and [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) to get a Task Scheduler object.</span></span> <span data-ttu-id="6351e-114">(Esses exemplos pressupõem que o serviço Agendador de Tarefas está em execução.)</span><span class="sxs-lookup"><span data-stu-id="6351e-114">(These examples assume that the Task Scheduler service is running.)</span></span>
+2.  <span data-ttu-id="6351e-115">Chame [**ITaskScheduler:: Activate**](/windows/desktop/api/Mstask/nf-mstask-itaskscheduler-activate) para obter a interface [**ITask**](/windows/desktop/api/Mstask/nn-mstask-itask) do objeto Task.</span><span class="sxs-lookup"><span data-stu-id="6351e-115">Call [**ITaskScheduler::Activate**](/windows/desktop/api/Mstask/nf-mstask-itaskscheduler-activate) to get the [**ITask**](/windows/desktop/api/Mstask/nn-mstask-itask) interface of the task object.</span></span> <span data-ttu-id="6351e-116">(Observe que as tarefas são atualmente o único tipo válido de item de trabalho.)</span><span class="sxs-lookup"><span data-stu-id="6351e-116">(Note that tasks are currently the only valid type of work item.)</span></span>
+3.  <span data-ttu-id="6351e-117">Chame o método apropriado para recuperar a propriedade em que você está interessado.</span><span class="sxs-lookup"><span data-stu-id="6351e-117">Call the appropriate method to retrieve the property you are interested in.</span></span>
+4.  <span data-ttu-id="6351e-118">Processe a propriedade conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="6351e-118">Process the property as needed.</span></span> <span data-ttu-id="6351e-119">(Esses exemplos simplesmente imprimem a propriedade na tela.)</span><span class="sxs-lookup"><span data-stu-id="6351e-119">(These examples simply print the property to the screen.)</span></span>
+5.  <span data-ttu-id="6351e-120">Se a propriedade retornada for uma cadeia de caracteres, chame [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar a memória alocada para a cadeia de caracteres retornada.</span><span class="sxs-lookup"><span data-stu-id="6351e-120">If the returned property is a string, call [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) to free the memory allocated for the returned string.</span></span>
+
+
+
+| <span data-ttu-id="6351e-121">Para obter um exemplo de código de</span><span class="sxs-lookup"><span data-stu-id="6351e-121">For a code example of</span></span>                                                                        | <span data-ttu-id="6351e-122">Consulte</span><span class="sxs-lookup"><span data-stu-id="6351e-122">See</span></span>                                                                                                                       |
+|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="6351e-123">Recuperando as informações da conta de uma tarefa conhecida</span><span class="sxs-lookup"><span data-stu-id="6351e-123">Retrieving the account information of a known task</span></span>                                           | [<span data-ttu-id="6351e-124">Exemplo de código do C/C++: Recuperando Informações da conta da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-124">C/C++ Code Example: Retrieving Task Account Information</span></span>](c-c-code-example-retrieving-task-account-information.md)       |
+| <span data-ttu-id="6351e-125">Recuperando a cadeia de caracteres de comentário de uma tarefa conhecida</span><span class="sxs-lookup"><span data-stu-id="6351e-125">Retrieving the comment string of a known task</span></span>                                                | [<span data-ttu-id="6351e-126">Exemplo de código C/C++: Recuperando um comentário de tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-126">C/C++ Code Example: Retrieving a Task Comment</span></span>](c-c-code-example-retrieving-a-task-comment.md)                           |
+| <span data-ttu-id="6351e-127">Recuperando o nome do criador da tarefa e exibindo-o na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-127">Retrieving the name of the creator of the task and displaying it on the screen</span></span>               | [<span data-ttu-id="6351e-128">Exemplo de código do C/C++: Recuperando o criador da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-128">C/C++ Code Example: Retrieving the Task Creator</span></span>](c-c-code-example-retrieving-the-task-creator.md)                       |
+| <span data-ttu-id="6351e-129">Recuperando o último código de saída retornado por uma tarefa conhecida</span><span class="sxs-lookup"><span data-stu-id="6351e-129">Retrieving the last exit code returned by a known task</span></span>                                       | [<span data-ttu-id="6351e-130">Exemplo de código do C/C++: Recuperando o código de saída da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-130">C/C++ Code Example: Retrieving Task Exit Code</span></span>](c-c-code-example-retrieving-task-exit-code.md)                           |
+| <span data-ttu-id="6351e-131">Recuperando o tempo ocioso de espera da tarefa e exibindo-o na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-131">Retrieving the idle-wait time of the task and displaying it on the screen</span></span>                    | [<span data-ttu-id="6351e-132">Exemplo de código do C/C++: Recuperando a tarefa ocioso – tempo de espera</span><span class="sxs-lookup"><span data-stu-id="6351e-132">C/C++ Code Example: Retrieving Task Idle-wait Time</span></span>](c-c-code-example-retrieving-task-idle-wait-time.md)                 |
+| <span data-ttu-id="6351e-133">Recuperando a hora em que a tarefa foi executada pela última vez e exibindo-a na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-133">Retrieving the time the task was last run and displaying it on the screen</span></span>                    | [<span data-ttu-id="6351e-134">Exemplo de código C/C++: Recuperando o tempo de MostRecentRun da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-134">C/C++ Code Example: Retrieving the Task MostRecentRun Time</span></span>](c-c-code-example-retrieving-the-task-mostrecentrun-time.md) |
+| <span data-ttu-id="6351e-135">Recuperando a próxima vez que a tarefa estiver agendada para ser executada e exibir essa hora na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-135">Retrieving the next time the task is scheduled to run and displaying that time on the screen</span></span> | [<span data-ttu-id="6351e-136">Exemplo de código C/C++: Recuperando o tempo de NextRun da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-136">C/C++ Code Example: Retrieving the Task NextRun Time</span></span>](c-c-code-example-retrieving-the-task-nextrun-time.md)             |
+| <span data-ttu-id="6351e-137">Recuperar os tempos de execução da tarefa e exibi-los na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-137">Retrieving the run times of the task and displaying them on the screen</span></span>                       | [<span data-ttu-id="6351e-138">Exemplo de código do C/C++: Recuperando tempos de execução da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-138">C/C++ Code Example: Retrieving Task Run Times</span></span>](c-c-code-example-retrieving-task-run-times.md)                           |
+| <span data-ttu-id="6351e-139">Recuperando o status atual da tarefa e exibindo-o na tela</span><span class="sxs-lookup"><span data-stu-id="6351e-139">Retrieving the current status of the task and displaying it on the screen</span></span>                    | [<span data-ttu-id="6351e-140">Exemplo de código do C/C++: Recuperando o status da tarefa</span><span class="sxs-lookup"><span data-stu-id="6351e-140">C/C++ Code Example: Retrieving Task Status</span></span>](c-c-code-example-retrieving-task-status.md)                                 |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="6351e-141">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6351e-141">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="6351e-142">Exemplos de Agendador de Tarefas 1,0</span><span class="sxs-lookup"><span data-stu-id="6351e-142">Task Scheduler 1.0 Examples</span></span>](task-scheduler-1-0-examples.md)
+</dt> </dl>
+
+ 
+
+ 
