@@ -72,7 +72,7 @@ Os drivers só precisarão responder a esta mensagem se a paleta de desenho for 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

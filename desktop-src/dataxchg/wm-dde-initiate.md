@@ -82,7 +82,7 @@ Para concluir a inicialização de uma conversa, o aplicativo de servidor deve r
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

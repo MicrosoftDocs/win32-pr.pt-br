@@ -26,12 +26,12 @@ O CLSID para esse efeito é CLSID \_ D2D1ColorManagement.
 - [Comportamento do canal alfa](#alpha-channel-behavior)
 - [Modos de qualidade](#quality-modes)
 - [Código de exemplo](#sample-code)
-- [Requisitos](#requirements)
+- [Requirements](#requirements)
 - [Tópicos relacionados](#related-topics)
 
 ## <a name="effect-properties"></a>Propriedades do efeito
 
-| Nome de exibição e enumeração de índice | Description |
+| Nome de exibição e enumeração de índice | Descrição |
 |-|-|
 | SourceContext<br/> \_Contexto de \_ \_ cor de origem d2d1 COLORMANAGEMENT prop \_ \_<br/> | As informações de espaço de cores de origem. O tipo é [**ID2D1ColorContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1colorcontext).<br/> O valor padrão é NULL.<br/> |
 | SourceIntent<br/> \_Tentativa de \_ \_ RENDERIZAÇÃO de origem d2d1 COLORMANAGEMENT prop \_ \_<br/> | Qual tentativa de renderização ICC usar. O tipo é a \_ tentativa de RENDERIZAÇÃO d2d1 COLORMANAGEMENT \_ \_ .<br/> O valor padrão é D2D1 \_ COLORMANAGEMENT de \_ tentativa de renderização \_ \_ perceptiva.<br/> |

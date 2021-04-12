@@ -85,7 +85,7 @@ Use **gluGetTessProperty** para recuperar as propriedades armazenadas em um obje
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

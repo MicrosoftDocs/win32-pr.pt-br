@@ -123,7 +123,7 @@ Um valor de dados é incluído no membro **dwUserParm** da estrutura identificad
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

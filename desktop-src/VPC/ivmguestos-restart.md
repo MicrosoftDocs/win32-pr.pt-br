@@ -65,7 +65,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                                    | Description                                                                |
+| Código/valor de retorno                                                                                                                                                                    | Descrição                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                          | A operação foi bem-sucedida.<br/>                                   |
 | <dl> <dt>**E \_**</dt> <dt>0X80004003</dt> de ponteiro </dl>                            | O parâmetro *outRestartTask* é **nulo**.<br/>                     |
@@ -85,7 +85,7 @@ Os valores a seguir podem ser retornados por meio da propriedade [**Error**](ivm
 
 
 
-| Código/valor do [**erro**](ivmtask-error.md)                                                                                                                                                                                                                                                                          | Description                                                                         |
+| Código/valor do [**erro**](ivmtask-error.md)                                                                                                                                                                                                                                                                          | Descrição                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | <span id="HRESULT_FROM_WIN32_ERROR_ACCESS_DENIED___0x80070005_"></span><span id="hresult_from_win32_error_access_denied___0x80070005_"></span><span id="HRESULT_FROM_WIN32_ERROR_ACCESS_DENIED___0X80070005_"></span>`HRESULT_FROM_WIN32(ERROR_ACCESS_DENIED)` 0x80070005<br/>                             | O chamador deve ter permissões de acesso de execução para esta VM.<br/>             |
 | <span id="HRESULT_FROM_WIN32_ERROR_MACHINE_LOCKED___0x800704f7_"></span><span id="hresult_from_win32_error_machine_locked___0x800704f7_"></span><span id="HRESULT_FROM_WIN32_ERROR_MACHINE_LOCKED___0X800704F7_"></span>`HRESULT_FROM_WIN32(ERROR_MACHINE_LOCKED)` (0x800704f7)<br/>                         | O computador está bloqueado e não pode ser desligado sem a opção Force.<br/> |
@@ -111,7 +111,7 @@ Os valores a seguir podem ser retornados por meio da propriedade [**Error**](ivm
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

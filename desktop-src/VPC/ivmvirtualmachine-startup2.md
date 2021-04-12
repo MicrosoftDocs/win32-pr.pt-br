@@ -67,7 +67,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                                          | Description                                                                  |
+| Código/valor de retorno                                                                                                                                                                          | Descrição                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                                | A operação foi bem-sucedida.<br/>                                     |
 | <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                               | O parâmetro *startupOption* não é válido.<br/>                       |
@@ -89,7 +89,7 @@ Os valores a seguir podem ser retornados por meio da propriedade [**Error**](ivm
 
 
 
-| Código/valor do [**erro**](ivmtask-error.md)                                                                                                                                                                                                                                      | Description                                                           |
+| Código/valor do [**erro**](ivmtask-error.md)                                                                                                                                                                                                                                      | Descrição                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | <span id="VM_E_UNSUPPORTED_HARDWARE__0xA0040950_"></span><span id="vm_e_unsupported_hardware__0xa0040950_"></span><span id="VM_E_UNSUPPORTED_HARDWARE__0XA0040950_"></span>`VM_E_UNSUPPORTED_HARDWARE` (0xA0040950)<br/>                                                 | O hardware não oferece suporte à virtualização.<br/>              |
 | <span id="VM_E_HARDWARE_VIRTUALIZATION_DISABLED__0xA0040951_"></span><span id="vm_e_hardware_virtualization_disabled__0xa0040951_"></span><span id="VM_E_HARDWARE_VIRTUALIZATION_DISABLED__0XA0040951_"></span>`VM_E_HARDWARE_VIRTUALIZATION_DISABLED` (0xA0040951)<br/> | A virtualização de hardware está desabilitada.<br/>                       |
@@ -116,7 +116,7 @@ Os valores a seguir podem ser retornados por meio da propriedade [**Error**](ivm
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

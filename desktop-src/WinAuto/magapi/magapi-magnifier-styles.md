@@ -39,6 +39,6 @@ Este tópico descreve os estilos usados com o controle lupa. Para criar um contr
 | Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
 | parâmetro<br/>                   | <dl> <dt>Ampliação. h</dt> </dl> |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Constantes](entry-magapi-constants.md)
