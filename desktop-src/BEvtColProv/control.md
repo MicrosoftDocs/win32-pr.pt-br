@@ -1,0 +1,92 @@
+---
+description: Controle da instância do coletor. Requer os privilégios de administrador (BA).
+ms.assetid: 83b485b2-b03b-4882-a3ff-187eac299755
+ms.tgt_platform: multiple
+title: Classe de controle
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Control
+api_type:
+- DllExport
+api_location:
+- BEvtCol.exe
+ms.openlocfilehash: 2681af7425fd5cacf88375e11e4658e5d4b1a2c3
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104500765"
+---
+# <a name="control-class"></a><span data-ttu-id="1478b-104">Classe de controle</span><span class="sxs-lookup"><span data-stu-id="1478b-104">Control class</span></span>
+
+<span data-ttu-id="1478b-105">Controle da instância do coletor.</span><span class="sxs-lookup"><span data-stu-id="1478b-105">Control of the collector instance.</span></span> <span data-ttu-id="1478b-106">Requer os privilégios de administrador (BA).</span><span class="sxs-lookup"><span data-stu-id="1478b-106">Requires the Administrator (BA) privileges.</span></span>
+
+<span data-ttu-id="1478b-107">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="1478b-107">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="1478b-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="1478b-108">Syntax</span></span>
+
+``` syntax
+[Provider("BootEventCollectorWmiProvider"), AMENDMENT]
+class Control
+{
+};
+```
+
+## <a name="members"></a><span data-ttu-id="1478b-109">Membros</span><span class="sxs-lookup"><span data-stu-id="1478b-109">Members</span></span>
+
+<span data-ttu-id="1478b-110">A classe **Control** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="1478b-110">The **Control** class has these types of members:</span></span>
+
+-   [<span data-ttu-id="1478b-111">Métodos</span><span class="sxs-lookup"><span data-stu-id="1478b-111">Methods</span></span>](#methods)
+
+### <a name="methods"></a><span data-ttu-id="1478b-112">Métodos</span><span class="sxs-lookup"><span data-stu-id="1478b-112">Methods</span></span>
+
+<span data-ttu-id="1478b-113">A classe **Control** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="1478b-113">The **Control** class has these methods.</span></span>
+
+
+
+| <span data-ttu-id="1478b-114">Método</span><span class="sxs-lookup"><span data-stu-id="1478b-114">Method</span></span>                                                         | <span data-ttu-id="1478b-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="1478b-115">Description</span></span>                                                                                                                                                                                                                                                                                                                                                               |
+|:---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="1478b-116">**Verifica**</span><span class="sxs-lookup"><span data-stu-id="1478b-116">**Checkpoint**</span></span>](control-checkpoint.md)                       | <span data-ttu-id="1478b-117">Se a configuração atual for um resultado da função desfazer/refazer/restaurar, o marcará como se ela estivesse definida explicitamente, de modo que o histórico preservará a hora em que foi definido e um arquivo de backup será criado para ele na próxima alteração de configuração.</span><span class="sxs-lookup"><span data-stu-id="1478b-117">If the current configuration is a result of the Undo/Redo/Restore, marks it as if it has been set explicitly, so that the history will preserve the time when it was set, and a backup file will be created for it on the next configuration change.</span></span> <span data-ttu-id="1478b-118">Se a configuração atual já foi definida explicitamente, não terá efeito.</span><span class="sxs-lookup"><span data-stu-id="1478b-118">If the current configuration was already set explicitly, has no effect.</span></span> <span data-ttu-id="1478b-119">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-119">Returns 1 on success, 0 on error.</span></span><br/> |
+| [<span data-ttu-id="1478b-120">**DumpDiagnostics**</span><span class="sxs-lookup"><span data-stu-id="1478b-120">**DumpDiagnostics**</span></span>](control-dumpdiagnostics.md)             | <span data-ttu-id="1478b-121">Despeje as informações de diagnóstico no log.</span><span class="sxs-lookup"><span data-stu-id="1478b-121">Dump the diagnostic information into the log.</span></span><br/>                                                                                                                                                                                                                                                                                                                  |
+| [<span data-ttu-id="1478b-122">**FastShutdown**</span><span class="sxs-lookup"><span data-stu-id="1478b-122">**FastShutdown**</span></span>](control-fastshutdown.md)                   | <span data-ttu-id="1478b-123">Pare o coletor rapidamente, descartando todos os dados na fila.</span><span class="sxs-lookup"><span data-stu-id="1478b-123">Stop the collector quickly, discarding all the queued data.</span></span><br/>                                                                                                                                                                                                                                                                                                    |
+| [<span data-ttu-id="1478b-124">**Liberar**</span><span class="sxs-lookup"><span data-stu-id="1478b-124">**Flush**</span></span>](control-flush.md)                                 | <span data-ttu-id="1478b-125">Libere os buffers do encaminhador.</span><span class="sxs-lookup"><span data-stu-id="1478b-125">Flush the forwarder buffers.</span></span><br/>                                                                                                                                                                                                                                                                                                                                   |
+| [<span data-ttu-id="1478b-126">**GetConfiguration**</span><span class="sxs-lookup"><span data-stu-id="1478b-126">**GetConfiguration**</span></span>](control-getconfiguration.md)           | <span data-ttu-id="1478b-127">Leia a configuração ativa do coletor.</span><span class="sxs-lookup"><span data-stu-id="1478b-127">Read the active configuration of the collector.</span></span><br/>                                                                                                                                                                                                                                                                                                                |
+| [<span data-ttu-id="1478b-128">**IsConfigurationEqual**</span><span class="sxs-lookup"><span data-stu-id="1478b-128">**IsConfigurationEqual**</span></span>](control-isconfigurationequal.md)   | <span data-ttu-id="1478b-129">Compare o argumento com a configuração ativa do coletor.</span><span class="sxs-lookup"><span data-stu-id="1478b-129">Compare the argument with the active configuration of the collector.</span></span> <span data-ttu-id="1478b-130">Retornará 1 se eles corresponderem, 0 se não forem.</span><span class="sxs-lookup"><span data-stu-id="1478b-130">Returns 1 if they match, 0 if they don't.</span></span><br/>                                                                                                                                                                                                                                                 |
+| [<span data-ttu-id="1478b-131">**ListBackups**</span><span class="sxs-lookup"><span data-stu-id="1478b-131">**ListBackups**</span></span>](control-listbackups.md)                     | <span data-ttu-id="1478b-132">Retorne a lista dos arquivos de configuração de backup salvos que podem ser restaurados.</span><span class="sxs-lookup"><span data-stu-id="1478b-132">Return the list of the saved backup configuration files that can be restored.</span></span><br/>                                                                                                                                                                                                                                                                                  |
+| [<span data-ttu-id="1478b-133">**Refazer**</span><span class="sxs-lookup"><span data-stu-id="1478b-133">**Redo**</span></span>](control-redo.md)                                   | <span data-ttu-id="1478b-134">Redefina a configuração ativa do coletor a partir do arquivo de backup posterior (determinado ao avançar do carimbo de data/hora original atual).</span><span class="sxs-lookup"><span data-stu-id="1478b-134">Reset the active configuration of the collector from the later backup file (determined by going forward from the current original timestamp).</span></span> <span data-ttu-id="1478b-135">Se a configuração tiver sido desfeita, isso significará refazer a alteração desfeita.</span><span class="sxs-lookup"><span data-stu-id="1478b-135">If the configuration has been undone, this means redoing the undone change.</span></span> <span data-ttu-id="1478b-136">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-136">Returns 1 on success, 0 on error.</span></span><br/>                                                                                                    |
+| [<span data-ttu-id="1478b-137">**RestoreFile**</span><span class="sxs-lookup"><span data-stu-id="1478b-137">**RestoreFile**</span></span>](control-restorefile.md)                     | <span data-ttu-id="1478b-138">Restaure a configuração ativa do coletor de um arquivo de backup.</span><span class="sxs-lookup"><span data-stu-id="1478b-138">Restore the active configuration of the collector from a backup file.</span></span> <span data-ttu-id="1478b-139">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-139">Returns 1 on success, 0 on error.</span></span><br/>                                                                                                                                                                                                                                                        |
+| [<span data-ttu-id="1478b-140">**RestoreFromTime**</span><span class="sxs-lookup"><span data-stu-id="1478b-140">**RestoreFromTime**</span></span>](control-restorefromtime.md)             | <span data-ttu-id="1478b-141">Restaure a configuração ativa do coletor de um arquivo de backup, selecionado por um carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="1478b-141">Restore the active configuration of the collector from a backup file, selected by a timestamp.</span></span> <span data-ttu-id="1478b-142">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-142">Returns 1 on success, 0 on error.</span></span><br/>                                                                                                                                                                                                                               |
+| [<span data-ttu-id="1478b-143">**Configuração de**</span><span class="sxs-lookup"><span data-stu-id="1478b-143">**SetConfiguration**</span></span>](control-setconfiguration.md)           | <span data-ttu-id="1478b-144">Defina a nova configuração ativa do coletor.</span><span class="sxs-lookup"><span data-stu-id="1478b-144">Set the new active configuration of the collector.</span></span> <span data-ttu-id="1478b-145">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-145">Returns 1 on success, 0 on error.</span></span><br/>                                                                                                                                                                                                                                                                           |
+| [<span data-ttu-id="1478b-146">**Desligar**</span><span class="sxs-lookup"><span data-stu-id="1478b-146">**Shutdown**</span></span>](control-shutdown.md)                           | <span data-ttu-id="1478b-147">Pare o coletor.</span><span class="sxs-lookup"><span data-stu-id="1478b-147">Stop the collector.</span></span> <span data-ttu-id="1478b-148">Se o coletor estiver sendo executado como um serviço, a interrupção do serviço será a melhor abordagem.</span><span class="sxs-lookup"><span data-stu-id="1478b-148">If the collector is running as a service, stopping the service is the better approach.</span></span><br/>                                                                                                                                                                                                                                                     |
+| [<span data-ttu-id="1478b-149">**Desfazer**</span><span class="sxs-lookup"><span data-stu-id="1478b-149">**Undo**</span></span>](control-undo.md)                                   | <span data-ttu-id="1478b-150">Restaure a configuração ativa do coletor a partir do arquivo de backup anterior (determinado voltando do carimbo de data/hora original atual).</span><span class="sxs-lookup"><span data-stu-id="1478b-150">Restore the active configuration of the collector from the previous backup file (determined by going back from the current original timestamp).</span></span> <span data-ttu-id="1478b-151">Se a configuração tiver sido definida apenas, isso significa desfazer essa alteração.</span><span class="sxs-lookup"><span data-stu-id="1478b-151">If the configuration has been just set, this means undoing that change.</span></span> <span data-ttu-id="1478b-152">As chamadas consecutivas serão desfeitas para as configurações anteriores e anteriores.</span><span class="sxs-lookup"><span data-stu-id="1478b-152">The consecutive calls will undo to the earlier and earlier configurations.</span></span> <span data-ttu-id="1478b-153">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-153">Returns 1 on success, 0 on error.</span></span><br/>                           |
+| [<span data-ttu-id="1478b-154">**ValidateConfiguration**</span><span class="sxs-lookup"><span data-stu-id="1478b-154">**ValidateConfiguration**</span></span>](control-validateconfiguration.md) | <span data-ttu-id="1478b-155">Valide um texto de configuração para exatidão sem defini-lo como ativo.</span><span class="sxs-lookup"><span data-stu-id="1478b-155">Validate a configuration text for correctness without setting it active.</span></span> <span data-ttu-id="1478b-156">Retorna 1 em caso de êxito, 0 em erro.</span><span class="sxs-lookup"><span data-stu-id="1478b-156">Returns 1 on success, 0 on error.</span></span><br/>                                                                                                                                                                                                                                                     |
+
+
+
+ 
+
+## <a name="requirements"></a><span data-ttu-id="1478b-157">Requisitos</span><span class="sxs-lookup"><span data-stu-id="1478b-157">Requirements</span></span>
+
+
+
+| <span data-ttu-id="1478b-158">Requisito</span><span class="sxs-lookup"><span data-stu-id="1478b-158">Requirement</span></span> | <span data-ttu-id="1478b-159">Valor</span><span class="sxs-lookup"><span data-stu-id="1478b-159">Value</span></span> |
+|-------------------------------------|------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="1478b-160">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1478b-160">Minimum supported client</span></span><br/> | <span data-ttu-id="1478b-161">\[Somente aplicativos da área de trabalho do Windows 10\]</span><span class="sxs-lookup"><span data-stu-id="1478b-161">Windows 10 \[desktop apps only\]</span></span><br/>                                                          |
+| <span data-ttu-id="1478b-162">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="1478b-162">Minimum supported server</span></span><br/> | <span data-ttu-id="1478b-163">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="1478b-163">Windows Server 2016</span></span><br/>                                                                       |
+| <span data-ttu-id="1478b-164">Namespace</span><span class="sxs-lookup"><span data-stu-id="1478b-164">Namespace</span></span><br/>                | <span data-ttu-id="1478b-165">Raiz \\ do Microsoft \\ Windows \\ BootEventCollector</span><span class="sxs-lookup"><span data-stu-id="1478b-165">Root\\Microsoft\\Windows\\BootEventCollector</span></span><br/>                                              |
+| <span data-ttu-id="1478b-166">MOF</span><span class="sxs-lookup"><span data-stu-id="1478b-166">MOF</span></span><br/>                      | <dl> <span data-ttu-id="1478b-167"><dt>BootEventCollectorWMI. mof</dt></span><span class="sxs-lookup"><span data-stu-id="1478b-167"><dt>BootEventCollectorWMI.mof</dt></span></span> </dl> |
+| <span data-ttu-id="1478b-168">DLL</span><span class="sxs-lookup"><span data-stu-id="1478b-168">DLL</span></span><br/>                      | <dl> <span data-ttu-id="1478b-169"><dt>BEvtCol.exe</dt></span><span class="sxs-lookup"><span data-stu-id="1478b-169"><dt>BEvtCol.exe</dt></span></span> </dl>               |
+
+
+
+ 
+
+ 
+
+
+
+

@@ -1,0 +1,44 @@
+---
+title: Menus e outros recursos
+description: A seção de recursos descreve os recursos da janela, como ícones, cursor e caixas de diálogo.
+ms.assetid: vs|winui|~\winui\windowsuserinterface\resources.htm
+keywords:
+- recursos, sobre
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b701d2d6aeb039b146ddca78ee3ba27d185574f9
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104365884"
+---
+# <a name="menus-and-other-resources"></a><span data-ttu-id="21751-104">Menus e outros recursos</span><span class="sxs-lookup"><span data-stu-id="21751-104">Menus and Other Resources</span></span>
+
+<span data-ttu-id="21751-105">Um *recurso* são dados binários que você pode adicionar ao arquivo executável de um aplicativo baseado no Windows.</span><span class="sxs-lookup"><span data-stu-id="21751-105">A *resource* is binary data that you can add to the executable file of a Windows-based application.</span></span> <span data-ttu-id="21751-106">Um recurso pode ser padrão ou definido.</span><span class="sxs-lookup"><span data-stu-id="21751-106">A resource can be either standard or defined.</span></span> <span data-ttu-id="21751-107">Os dados em um *recurso padrão* descrevem um ícone, cursor, menu, caixa de diálogo, bitmap, metarquivo avançado, fonte, tabela de aceleração, entrada de tabela de mensagens, entrada de tabela de cadeia de caracteres ou informações de versão.</span><span class="sxs-lookup"><span data-stu-id="21751-107">The data in a *standard resource* describes an icon, cursor, menu, dialog box, bitmap, enhanced metafile, font, accelerator table, message-table entry, string-table entry, or version information.</span></span> <span data-ttu-id="21751-108">Um *recurso definido pelo aplicativo*, também chamado de *recurso personalizado*, contém todos os dados exigidos por um aplicativo específico.</span><span class="sxs-lookup"><span data-stu-id="21751-108">An *application-defined resource*, also called a *custom resource*, contains any data required by a specific application.</span></span>
+
+### <a name="in-this-section"></a><span data-ttu-id="21751-109">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="21751-109">In This Section</span></span>
+
+
+
+| <span data-ttu-id="21751-110">Nome</span><span class="sxs-lookup"><span data-stu-id="21751-110">Name</span></span>                                                                    | <span data-ttu-id="21751-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="21751-111">Description</span></span>                                                                                                                                                 |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="21751-112">Introdução aos recursos</span><span class="sxs-lookup"><span data-stu-id="21751-112">Introduction to Resources</span></span>](introduction-to-resources.md)              | <span data-ttu-id="21751-113">Fornece uma visão geral dos recursos.</span><span class="sxs-lookup"><span data-stu-id="21751-113">Provides an overview of resources.</span></span><br/>                                                                                                               |
+| [<span data-ttu-id="21751-114">Interpolação</span><span class="sxs-lookup"><span data-stu-id="21751-114">Carets</span></span>](carets.md)                                                    | <span data-ttu-id="21751-115">Discute os Cursors, que são linhas de intermitência, blocos ou bitmaps na área do cliente de uma janela.</span><span class="sxs-lookup"><span data-stu-id="21751-115">Discusses carets, which are blinking lines, blocks, or bitmaps in the client area of a window.</span></span><br/>                                                   |
+| [<span data-ttu-id="21751-116">Cursores</span><span class="sxs-lookup"><span data-stu-id="21751-116">Cursors</span></span>](cursors.md)                                                  | <span data-ttu-id="21751-117">Discute cursores, que são pequenas figuras cujo local na tela é controlado por um dispositivo apontador, como um mouse, uma caneta ou um trackball.</span><span class="sxs-lookup"><span data-stu-id="21751-117">Discusses cursors, which are small pictures whose location on the screen is controlled by a pointing device, such as a mouse, pen, or trackball.</span></span><br/> |
+| [<span data-ttu-id="21751-118">Ícones</span><span class="sxs-lookup"><span data-stu-id="21751-118">Icons</span></span>](icons.md)                                                      | <span data-ttu-id="21751-119">Discute ícones, que são imagens de bitmap combinadas com uma máscara para criar áreas transparentes na imagem.</span><span class="sxs-lookup"><span data-stu-id="21751-119">Discusses icons, which are bitmap images combined with a mask to create transparent areas in the picture.</span></span><br/>                                        |
+| [<span data-ttu-id="21751-120">Aceleradores de teclado</span><span class="sxs-lookup"><span data-stu-id="21751-120">Keyboard Accelerators</span></span>](keyboard-accelerators.md)                      | <span data-ttu-id="21751-121">Discute aceleradores de teclado, que são pressionamentos de teclas que fornecem acesso aos comandos de um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="21751-121">Discusses keyboard accelerators, which are keystrokes that provide access to the commands for an application.</span></span><br/>                                    |
+| [<span data-ttu-id="21751-122">Menus</span><span class="sxs-lookup"><span data-stu-id="21751-122">Menus</span></span>](menus.md)                                                      | <span data-ttu-id="21751-123">Discute os menus.</span><span class="sxs-lookup"><span data-stu-id="21751-123">Discusses menus.</span></span><br/>                                                                                                                                 |
+| [<span data-ttu-id="21751-124">Cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="21751-124">Strings</span></span>](strings.md)                                                  | <span data-ttu-id="21751-125">Discute as funções de cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="21751-125">Discusses the string functions.</span></span><br/>                                                                                                                  |
+| [<span data-ttu-id="21751-126">Informações sobre versão</span><span class="sxs-lookup"><span data-stu-id="21751-126">Version Information</span></span>](version-information.md)                          | <span data-ttu-id="21751-127">Discute o recurso de informações de versão.</span><span class="sxs-lookup"><span data-stu-id="21751-127">Discusses the version-information resource.</span></span><br/>                                                                                                      |
+| [<span data-ttu-id="21751-128">Compilador de Recurso</span><span class="sxs-lookup"><span data-stu-id="21751-128">Resource Compiler</span></span>](resource-compiler.md)                              | <span data-ttu-id="21751-129">Discute o compilador de recurso, Rc.exe e arquivos de definição de recurso.</span><span class="sxs-lookup"><span data-stu-id="21751-129">Discusses the resource compiler, Rc.exe, and resource-definition files.</span></span><br/>                                                                          |
+| [<span data-ttu-id="21751-130">Referência ao índice de recurso do pacote (PRI)</span><span class="sxs-lookup"><span data-stu-id="21751-130">Package resource indexing (PRI) reference</span></span>](pri-indexing-reference.md) | <span data-ttu-id="21751-131">Um conjunto de APIs para trabalhar com um indexador de recursos.</span><span class="sxs-lookup"><span data-stu-id="21751-131">A set of APIs for working with a resource indexer.</span></span> <span data-ttu-id="21751-132">Um indexador de recursos é usado para gerar arquivos de índice de recurso de pacote (PRI) para um aplicativo UWP.</span><span class="sxs-lookup"><span data-stu-id="21751-132">A resource indexer is used to generate package resource index (PRI) files for a UWP app.</span></span><br/>      |
+
+
+
+ 
+
+<span data-ttu-id="21751-133">Para obter mais informações sobre como criar recursos de mensagem, consulte [**compilador de mensagem**](/windows/desktop/WES/message-compiler--mc-exe-).</span><span class="sxs-lookup"><span data-stu-id="21751-133">For more information about creating message resources, see [**Message Compiler**](/windows/desktop/WES/message-compiler--mc-exe-).</span></span>
+
+ 
+
