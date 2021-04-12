@@ -26,13 +26,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104455140"
 ---
-# <a name="win32_rdallowlistfileassociation-class"></a><span data-ttu-id="e2709-105">\_Classe Win32 RDAllowListFileAssociation</span><span class="sxs-lookup"><span data-stu-id="e2709-105">Win32\_RDAllowListFileAssociation class</span></span>
+# <a name="win32_rdallowlistfileassociation-class"></a><span data-ttu-id="e8579-105">\_Classe Win32 RDAllowListFileAssociation</span><span class="sxs-lookup"><span data-stu-id="e8579-105">Win32\_RDAllowListFileAssociation class</span></span>
 
-<span data-ttu-id="e2709-106">Descreve uma associação de tipo de arquivo publicado com um RemoteApp.</span><span class="sxs-lookup"><span data-stu-id="e2709-106">Describes a published file type association with a RemoteApp.</span></span>
+<span data-ttu-id="e8579-106">Descreve uma associação de tipo de arquivo publicado com um RemoteApp.</span><span class="sxs-lookup"><span data-stu-id="e8579-106">Describes a published file type association with a RemoteApp.</span></span>
 
-<span data-ttu-id="e2709-107">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="e2709-107">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
+<span data-ttu-id="e8579-107">A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.</span><span class="sxs-lookup"><span data-stu-id="e8579-107">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e2709-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e2709-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e8579-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="e8579-108">Syntax</span></span>
 
 ``` syntax
 class Win32_RDAllowListFileAssociation
@@ -43,71 +43,71 @@ class Win32_RDAllowListFileAssociation
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="e2709-109">Membros</span><span class="sxs-lookup"><span data-stu-id="e2709-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="e8579-109">Membros</span><span class="sxs-lookup"><span data-stu-id="e8579-109">Members</span></span>
 
-<span data-ttu-id="e2709-110">A classe **Win32 \_ RDAllowListFileAssociation** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="e2709-110">The **Win32\_RDAllowListFileAssociation** class has these types of members:</span></span>
+<span data-ttu-id="e8579-110">A classe **Win32 \_ RDAllowListFileAssociation** tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="e8579-110">The **Win32\_RDAllowListFileAssociation** class has these types of members:</span></span>
 
--   [<span data-ttu-id="e2709-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e2709-111">Properties</span></span>](#properties)
+-   [<span data-ttu-id="e8579-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e8579-111">Properties</span></span>](#properties)
 
-### <a name="properties"></a><span data-ttu-id="e2709-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e2709-112">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="e8579-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e8579-112">Properties</span></span>
 
-<span data-ttu-id="e2709-113">A classe **Win32 \_ RDAllowListFileAssociation** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="e2709-113">The **Win32\_RDAllowListFileAssociation** class has these properties.</span></span>
+<span data-ttu-id="e8579-113">A classe **Win32 \_ RDAllowListFileAssociation** tem essas propriedades.</span><span class="sxs-lookup"><span data-stu-id="e8579-113">The **Win32\_RDAllowListFileAssociation** class has these properties.</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="e2709-114">**AppAlias**</span><span class="sxs-lookup"><span data-stu-id="e2709-114">**AppAlias**</span></span>
+<span data-ttu-id="e8579-114">**AppAlias**</span><span class="sxs-lookup"><span data-stu-id="e8579-114">**AppAlias**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="e2709-115">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e2709-115">Data type: **string**</span></span>
+<span data-ttu-id="e8579-115">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e8579-115">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="e2709-116">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e2709-116">Access type: Read/write</span></span>
+<span data-ttu-id="e8579-116">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e8579-116">Access type: Read/write</span></span>
 </dt> </dl>
 
-<span data-ttu-id="e2709-117">Alias do RemoteApp associado à extensão.</span><span class="sxs-lookup"><span data-stu-id="e2709-117">Alias of the RemoteApp associated with the extension.</span></span>
+<span data-ttu-id="e8579-117">Alias do RemoteApp associado à extensão.</span><span class="sxs-lookup"><span data-stu-id="e8579-117">Alias of the RemoteApp associated with the extension.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e2709-118">**ExtName**</span><span class="sxs-lookup"><span data-stu-id="e2709-118">**ExtName**</span></span>
+<span data-ttu-id="e8579-118">**ExtName**</span><span class="sxs-lookup"><span data-stu-id="e8579-118">**ExtName**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="e2709-119">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e2709-119">Data type: **string**</span></span>
+<span data-ttu-id="e8579-119">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e8579-119">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="e2709-120">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e2709-120">Access type: Read/write</span></span>
+<span data-ttu-id="e8579-120">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e8579-120">Access type: Read/write</span></span>
 </dt> <dt>
 
-<span data-ttu-id="e2709-121">Qualificadores: **chave**</span><span class="sxs-lookup"><span data-stu-id="e2709-121">Qualifiers: **Key**</span></span>
+<span data-ttu-id="e8579-121">Qualificadores: **chave**</span><span class="sxs-lookup"><span data-stu-id="e8579-121">Qualifiers: **Key**</span></span>
 </dt> </dl>
 
-<span data-ttu-id="e2709-122">Nome da extensão, por exemplo,. txt.</span><span class="sxs-lookup"><span data-stu-id="e2709-122">Name of the extension, for example .txt.</span></span>
+<span data-ttu-id="e8579-122">Nome da extensão, por exemplo,. txt.</span><span class="sxs-lookup"><span data-stu-id="e8579-122">Name of the extension, for example .txt.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="e2709-123">**ProgIdHint**</span><span class="sxs-lookup"><span data-stu-id="e2709-123">**ProgIdHint**</span></span>
+<span data-ttu-id="e8579-123">**ProgIdHint**</span><span class="sxs-lookup"><span data-stu-id="e8579-123">**ProgIdHint**</span></span>
 </dt> <dd> <dl> <dt>
 
-<span data-ttu-id="e2709-124">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e2709-124">Data type: **string**</span></span>
+<span data-ttu-id="e8579-124">Tipo de dados: **cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="e8579-124">Data type: **string**</span></span>
 </dt> <dt>
 
-<span data-ttu-id="e2709-125">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e2709-125">Access type: Read/write</span></span>
+<span data-ttu-id="e8579-125">Tipo de acesso: leitura/gravação</span><span class="sxs-lookup"><span data-stu-id="e8579-125">Access type: Read/write</span></span>
 </dt> </dl>
 
-<span data-ttu-id="e2709-126">Dica para ajudar a abrir documentos com esta associação de arquivo</span><span class="sxs-lookup"><span data-stu-id="e2709-126">Hint to help open documents with this file association</span></span>
+<span data-ttu-id="e8579-126">Dica para ajudar a abrir documentos com esta associação de arquivo</span><span class="sxs-lookup"><span data-stu-id="e8579-126">Hint to help open documents with this file association</span></span>
 
 </dd> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="e2709-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e2709-127">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e8579-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="e8579-127">Requirements</span></span>
 
 
 
-| <span data-ttu-id="e2709-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="e2709-128">Requirement</span></span> | <span data-ttu-id="e2709-129">Valor</span><span class="sxs-lookup"><span data-stu-id="e2709-129">Value</span></span> |
+| <span data-ttu-id="e8579-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="e8579-128">Requirement</span></span> | <span data-ttu-id="e8579-129">Valor</span><span class="sxs-lookup"><span data-stu-id="e8579-129">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="e2709-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e2709-130">Minimum supported client</span></span><br/> | <span data-ttu-id="e2709-131">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="e2709-131">None supported</span></span><br/>                                                               |
-| <span data-ttu-id="e2709-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e2709-132">Minimum supported server</span></span><br/> | <span data-ttu-id="e2709-133">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="e2709-133">Windows Server 2012</span></span><br/>                                                          |
-| <span data-ttu-id="e2709-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="e2709-134">Namespace</span></span><br/>                | <span data-ttu-id="e2709-135">\\TerminalServices da cimv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="e2709-135">Root\\cimv2\\TerminalServices</span></span><br/>                                                |
-| <span data-ttu-id="e2709-136">MOF</span><span class="sxs-lookup"><span data-stu-id="e2709-136">MOF</span></span><br/>                      | <dl> <span data-ttu-id="e2709-137"><dt>TsAllow. mof</dt></span><span class="sxs-lookup"><span data-stu-id="e2709-137"><dt>TsAllow.mof</dt></span></span> </dl>  |
-| <span data-ttu-id="e2709-138">DLL</span><span class="sxs-lookup"><span data-stu-id="e2709-138">DLL</span></span><br/>                      | <dl> <span data-ttu-id="e2709-139"><dt>TsPubWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="e2709-139"><dt>TsPubWmi.dll</dt></span></span> </dl> |
+| <span data-ttu-id="e8579-130">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e8579-130">Minimum supported client</span></span><br/> | <span data-ttu-id="e8579-131">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="e8579-131">None supported</span></span><br/>                                                               |
+| <span data-ttu-id="e8579-132">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="e8579-132">Minimum supported server</span></span><br/> | <span data-ttu-id="e8579-133">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="e8579-133">Windows Server 2012</span></span><br/>                                                          |
+| <span data-ttu-id="e8579-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="e8579-134">Namespace</span></span><br/>                | <span data-ttu-id="e8579-135">\\TerminalServices da cimv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="e8579-135">Root\\cimv2\\TerminalServices</span></span><br/>                                                |
+| <span data-ttu-id="e8579-136">MOF</span><span class="sxs-lookup"><span data-stu-id="e8579-136">MOF</span></span><br/>                      | <dl> <span data-ttu-id="e8579-137"><dt>TsAllow. mof</dt></span><span class="sxs-lookup"><span data-stu-id="e8579-137"><dt>TsAllow.mof</dt></span></span> </dl>  |
+| <span data-ttu-id="e8579-138">DLL</span><span class="sxs-lookup"><span data-stu-id="e8579-138">DLL</span></span><br/>                      | <dl> <span data-ttu-id="e8579-139"><dt>TsPubWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="e8579-139"><dt>TsPubWmi.dll</dt></span></span> </dl> |
 
 
 
