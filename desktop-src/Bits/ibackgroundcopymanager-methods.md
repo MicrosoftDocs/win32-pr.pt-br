@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/09/2021
 ms.locfileid: "104370864"
 ---
-# <a name="ibackgroundcopymanager-methods-bits"></a><span data-ttu-id="c2e31-104">Métodos IBackgroundCopyManager (BITS)</span><span class="sxs-lookup"><span data-stu-id="c2e31-104">IBackgroundCopyManager Methods (BITS)</span></span>
+# <a name="ibackgroundcopymanager-methods-bits"></a><span data-ttu-id="b403e-104">Métodos IBackgroundCopyManager (BITS)</span><span class="sxs-lookup"><span data-stu-id="b403e-104">IBackgroundCopyManager Methods (BITS)</span></span>
 
-<span data-ttu-id="c2e31-105">A interface [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="c2e31-105">The [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) interface exposes the following methods.</span></span>
+<span data-ttu-id="b403e-105">A interface [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) expõe os métodos a seguir.</span><span class="sxs-lookup"><span data-stu-id="b403e-105">The [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) interface exposes the following methods.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="c2e31-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="c2e31-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b403e-106">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="b403e-106">In this section</span></span>
 
--   [<span data-ttu-id="c2e31-107">**Método CreateJob**</span><span class="sxs-lookup"><span data-stu-id="c2e31-107">**CreateJob Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob)
--   [<span data-ttu-id="c2e31-108">**Método EnumJobs**</span><span class="sxs-lookup"><span data-stu-id="c2e31-108">**EnumJobs Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-enumjobs)
--   [<span data-ttu-id="c2e31-109">**Método GetErrorDescription**</span><span class="sxs-lookup"><span data-stu-id="c2e31-109">**GetErrorDescription Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-geterrordescription)
--   [<span data-ttu-id="c2e31-110">**Método GetJob**</span><span class="sxs-lookup"><span data-stu-id="c2e31-110">**GetJob Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob)
+-   [<span data-ttu-id="b403e-107">**Método CreateJob**</span><span class="sxs-lookup"><span data-stu-id="b403e-107">**CreateJob Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob)
+-   [<span data-ttu-id="b403e-108">**Método EnumJobs**</span><span class="sxs-lookup"><span data-stu-id="b403e-108">**EnumJobs Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-enumjobs)
+-   [<span data-ttu-id="b403e-109">**Método GetErrorDescription**</span><span class="sxs-lookup"><span data-stu-id="b403e-109">**GetErrorDescription Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-geterrordescription)
+-   [<span data-ttu-id="b403e-110">**Método GetJob**</span><span class="sxs-lookup"><span data-stu-id="b403e-110">**GetJob Method**</span></span>](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob)
 
  
 
