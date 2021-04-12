@@ -1,0 +1,28 @@
+---
+title: Como WM_GETOBJECT funciona
+description: O Microsoft Acessibilidade Ativa envia a \_ mensagem do WM GetObject para o aplicativo de servidor apropriado quando um cliente chama uma das funções AccessibleObjectFromX.
+ms.assetid: 53f7b3db-97e4-4ff2-9f7a-4555ec7956ea
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 11fe287bca68c925cb7be95ff52d2dac547ed097
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104294109"
+---
+# <a name="how-wm_getobject-works"></a><span data-ttu-id="9a7b9-103">Como o WM \_ GetObject funciona</span><span class="sxs-lookup"><span data-stu-id="9a7b9-103">How WM\_GETOBJECT Works</span></span>
+
+<span data-ttu-id="9a7b9-104">O Microsoft Acessibilidade Ativa envia a mensagem do [**WM \_ GetObject**](wm-getobject.md) para o aplicativo de servidor apropriado quando um cliente chama uma das funções \**AccessibleObjectFrom \* \* \* X* .</span><span class="sxs-lookup"><span data-stu-id="9a7b9-104">Microsoft Active Accessibility sends the [**WM\_GETOBJECT**](wm-getobject.md) message to the appropriate server application when a client calls one of the \**AccessibleObjectFrom\*\*\*X* functions.</span></span> <span data-ttu-id="9a7b9-105">A lista a seguir descreve os vários cenários que ocorrem:</span><span class="sxs-lookup"><span data-stu-id="9a7b9-105">The following list describes the various scenarios that occur:</span></span>
+
+-   <span data-ttu-id="9a7b9-106">Se a janela ou o controle que recebe o [**WM \_ GetObject**](wm-getobject.md) implementar [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible), a janela retornará uma referência à interface **IAccessible** usando [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject).</span><span class="sxs-lookup"><span data-stu-id="9a7b9-106">If the window or control that receives [**WM\_GETOBJECT**](wm-getobject.md) implements [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible), the window returns a reference to the **IAccessible** interface using [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject).</span></span> <span data-ttu-id="9a7b9-107">O Microsoft Acessibilidade Ativa, em conjunto com a biblioteca do Component Object Model (COM), executa o marshaling apropriado e passa o ponteiro de interface do servidor de volta para o cliente.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-107">Microsoft Active Accessibility, in conjunction with the Component Object Model (COM) library, performs the appropriate marshaling and passes the interface pointer from the server back to the client.</span></span>
+-   <span data-ttu-id="9a7b9-108">Se a janela que recebe a mensagem não implementar o [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible), ela deverá retornar zero.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-108">If the window that receives the message does not implement [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible), it should return zero.</span></span>
+-   <span data-ttu-id="9a7b9-109">Se a janela não tratar a mensagem do [**WM \_ GetObject**](wm-getobject.md) , a função [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) retornará zero.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-109">If the window does not handle the [**WM\_GETOBJECT**](wm-getobject.md) message, the [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) function returns zero.</span></span>
+
+<span data-ttu-id="9a7b9-110">Mesmo se o servidor retornar zero, o Microsoft Acessibilidade Ativa ainda fornecerá ao cliente informações sobre o objeto.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-110">Even if the server returns zero, Microsoft Active Accessibility still provides the client with information about the object.</span></span> <span data-ttu-id="9a7b9-111">Para a maioria dos objetos fornecidos pelo sistema, como caixas de listagem e botões, o Microsoft Acessibilidade Ativa fornece informações completas; para outros objetos, as informações são limitadas.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-111">For most system-provided objects such as list boxes and buttons, Microsoft Active Accessibility provides complete information; for other objects, the information is limited.</span></span> <span data-ttu-id="9a7b9-112">Por exemplo, o Microsoft Acessibilidade Ativa não fornece informações para controles que não têm um identificador de janela.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-112">For example, Microsoft Active Accessibility does not provide information for controls that do not have a window handle.</span></span> <span data-ttu-id="9a7b9-113">O Microsoft Acessibilidade Ativa retorna um ponteiro de interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) com proxy que o cliente usa para obter informações sobre o objeto.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-113">Microsoft Active Accessibility returns a proxied [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interface pointer that the client uses to get information about the object.</span></span>
+
+<span data-ttu-id="9a7b9-114">Para obter mais informações, consulte [a \_ mensagem do WM GetObject](the-wm-getobject-message.md).</span><span class="sxs-lookup"><span data-stu-id="9a7b9-114">For more information, see [The WM\_GETOBJECT Message](the-wm-getobject-message.md).</span></span>
+
+ 
+
+ 
