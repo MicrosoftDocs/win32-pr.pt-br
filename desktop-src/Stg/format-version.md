@@ -1,0 +1,26 @@
+---
+title: Versão de formato
+description: O valor da versão de formato é um tipo de dados do WORD que é usado para indicar a versão de formato desse fluxo.
+ms.assetid: 38362a45-4f49-4a85-aabe-452ff32c2812
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 503019a3bfe3224e4137ac3bfd43fadbe1e15a3c
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104499079"
+---
+# <a name="format-version"></a><span data-ttu-id="bb6c2-103">Versão de formato</span><span class="sxs-lookup"><span data-stu-id="bb6c2-103">Format Version</span></span>
+
+<span data-ttu-id="bb6c2-104">O valor da versão de formato é um tipo de dados do **Word** que é usado para indicar a versão de formato desse fluxo.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-104">The Format Version value is a **WORD** data type that is used to indicate the format version of this stream.</span></span> <span data-ttu-id="bb6c2-105">Ele pode ser zero ou um.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-105">It may be zero or one.</span></span> <span data-ttu-id="bb6c2-106">O indicador de versão de formato deve ser verificado durante a leitura do conjunto de propriedades.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-106">The format-version indicator should be checked when reading the property set.</span></span> <span data-ttu-id="bb6c2-107">Se não for zero ou um, o fluxo foi gravado em uma especificação diferente e não poderá ser lido pelo código desenvolvido de acordo com essa especificação.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-107">If it is not zero or one, then the stream was written to a different specification and cannot be read by code developed according to this specification.</span></span>
+
+<span data-ttu-id="bb6c2-108">Os conjuntos de propriedades com formato versão 1 são equivalentes à versão 0, com as seguintes adições:</span><span class="sxs-lookup"><span data-stu-id="bb6c2-108">Property sets with Format Version 1 are equivalent to Version 0, with the following additions:</span></span>
+
+-   <span data-ttu-id="bb6c2-109">**Nomes de propriedade diferenciar maiúsculas e minúsculas**.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-109">**Case sensitive property names**.</span></span> <span data-ttu-id="bb6c2-110">Os nomes de propriedade são armazenados na propriedade de dicionário reservado, [ID de propriedade 0](/windows/desktop/Stg/reserved-property-identifiers).</span><span class="sxs-lookup"><span data-stu-id="bb6c2-110">Property names are stored in the reserved dictionary property, [Property ID 0](/windows/desktop/Stg/reserved-property-identifiers).</span></span> <span data-ttu-id="bb6c2-111">Nos conjuntos de propriedades da versão 1, esses nomes podem diferenciar maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-111">In version 1 property sets, these names can be case sensitive.</span></span> <span data-ttu-id="bb6c2-112">A diferenciação de maiúsculas e minúsculas é determinada pela propriedade de comportamento reservado, [ID de propriedade 0x80000003](/windows/desktop/Stg/reserved-property-identifiers).</span><span class="sxs-lookup"><span data-stu-id="bb6c2-112">Case sensitivity is determined by the reserved Behavior property, [Property ID 0x80000003](/windows/desktop/Stg/reserved-property-identifiers).</span></span>
+-   <span data-ttu-id="bb6c2-113">**Nomes de propriedade longos**.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-113">**Long property names**.</span></span> <span data-ttu-id="bb6c2-114">Os conjuntos de propriedades da versão 1, diferentemente dos conjuntos de propriedades da versão 0, não são limitados no comprimento dos nomes de propriedade.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-114">Version 1 property sets, unlike version 0 property sets, are not limited in the length of property names.</span></span> <span data-ttu-id="bb6c2-115">Consulte a [ID de propriedade 0](/windows/desktop/Stg/reserved-property-identifiers) para obter mais informações sobre nomes de propriedade.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-115">See [Property ID 0](/windows/desktop/Stg/reserved-property-identifiers) for more information on property names.</span></span>
+-   <span data-ttu-id="bb6c2-116">**Tipos de propriedade**.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-116">**Property types**.</span></span> <span data-ttu-id="bb6c2-117">Os conjuntos de propriedades da versão 1 podem conter todos os tipos de propriedade que podem ser mantidos em um conjunto de propriedades da versão 0, além de alguns tipos adicionais.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-117">Version 1 property sets can hold all the property types that can be held in a version 0 property set plus some additional types.</span></span> <span data-ttu-id="bb6c2-118">Consulte a estrutura [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) para obter mais informações sobre esses tipos.</span><span class="sxs-lookup"><span data-stu-id="bb6c2-118">See the [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure for more information on these types.</span></span>
+
+ 
+
+ 
