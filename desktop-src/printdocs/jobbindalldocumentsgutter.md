@@ -24,7 +24,7 @@ Especifica a largura da medianiz de associação.
 
 
 
-| Name                       |                                         |
+| Nome                       |                                         |
 |----------------------------|-----------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                 |
 | Prefixo de escopo <br/> | Trabalho <br/>                         |
