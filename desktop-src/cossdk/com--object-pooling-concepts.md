@@ -1,0 +1,64 @@
+---
+description: O pool de objetos é um serviço automático fornecido pelo COM+ que permite que você configure um componente para que as instâncias dele sejam mantidas ativas em um pool, prontas para serem usadas por qualquer cliente que solicite o componente.
+ms.assetid: 74a45220-449a-4d89-a979-a206e5e3d3ad
+title: Conceitos de pool de objetos COM+
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4fb2aa6481b2493371801d0d274420d356b0a32e
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104370398"
+---
+# <a name="com-object-pooling-concepts"></a><span data-ttu-id="61ca0-103">Conceitos de pool de objetos COM+</span><span class="sxs-lookup"><span data-stu-id="61ca0-103">COM+ Object Pooling Concepts</span></span>
+
+<span data-ttu-id="61ca0-104">O pool de objetos é um serviço automático fornecido pelo COM+ que permite que você configure um componente para que as instâncias dele sejam mantidas ativas em um pool, prontas para serem usadas por qualquer cliente que solicite o componente.</span><span class="sxs-lookup"><span data-stu-id="61ca0-104">Object pooling is an automatic service provided by COM+ that enables you to configure a component to have instances of itself kept active in a pool, ready to be used by any client that requests the component.</span></span> <span data-ttu-id="61ca0-105">Você pode configurar administrativamente e monitorar o pool mantido para um determinado componente, especificando características como tamanho do pool e valores de tempo limite da solicitação de criação.</span><span class="sxs-lookup"><span data-stu-id="61ca0-105">You can administratively configure and monitor the pool maintained for a given component, specifying characteristics such as pool size and creation request time-out values.</span></span> <span data-ttu-id="61ca0-106">Quando o aplicativo está em execução, o COM+ gerencia o pool para você, tratando os detalhes da ativação e reutilização de objetos de acordo com os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="61ca0-106">When the application is running, COM+ manages the pool for you, handling the details of object activation and reuse according to the criteria you have specified.</span></span>
+
+<span data-ttu-id="61ca0-107">Você pode obter benefícios de desempenho e dimensionamento muito significativos reutilizando objetos dessa maneira, especialmente quando eles são escritos para tirar total proveito da reutilização.</span><span class="sxs-lookup"><span data-stu-id="61ca0-107">You can achieve very significant performance and scaling benefits by reusing objects in this manner, particularly when they are written to take full advantage of reuse.</span></span> <span data-ttu-id="61ca0-108">Com o pooling de objetos, você obterá os seguintes benefícios:</span><span class="sxs-lookup"><span data-stu-id="61ca0-108">With object pooling, you gain the following benefits:</span></span>
+
+-   <span data-ttu-id="61ca0-109">Você pode acelerar o tempo de uso do objeto para cada cliente, Fatorando a inicialização demorada e a aquisição de recursos do trabalho real que o objeto executa para os clientes.</span><span class="sxs-lookup"><span data-stu-id="61ca0-109">You can speed object use time for each client, factoring out time-consuming initialization and resource acquisition from the actual work that the object performs for clients.</span></span>
+-   <span data-ttu-id="61ca0-110">Você pode compartilhar o custo de aquisição de recursos caros em todos os clientes.</span><span class="sxs-lookup"><span data-stu-id="61ca0-110">You can share the cost of acquiring expensive resources across all clients.</span></span>
+-   <span data-ttu-id="61ca0-111">É possível alocar objetos previamente quando o aplicativo é iniciado, antes de qualquer solicitação de cliente chegar.</span><span class="sxs-lookup"><span data-stu-id="61ca0-111">You can pre-allocate objects when the application starts, before any client requests come in.</span></span>
+-   <span data-ttu-id="61ca0-112">Você pode controlar o uso de recursos com o gerenciamento de pool administrativo, por exemplo, ao definir um nível máximo apropriado de pool, você pode continuar a abrir apenas as conexões de banco de dados das quais você tem uma licença para o.</span><span class="sxs-lookup"><span data-stu-id="61ca0-112">You can govern resource use with administrative pool management for example, by setting an appropriate maximum pool level, you can keep open only as many database connections as you have a license for.</span></span>
+-   <span data-ttu-id="61ca0-113">Você pode configurar o pooling de forma administrativa para tirar a melhor vantagem dos recursos de hardware disponíveis, você pode ajustar facilmente a configuração do pool conforme os recursos de hardware disponíveis mudam.</span><span class="sxs-lookup"><span data-stu-id="61ca0-113">You can administratively configure pooling to take best advantage of available hardware resources you can easily adjust the pool configuration as available hardware resources change.</span></span>
+-   <span data-ttu-id="61ca0-114">Você pode acelerar o tempo de reativação para objetos que usam a [ativação JIT (just-in-time)](com--just-in-time-activation.md), enquanto controla deliberadamente como os recursos são dedicados aos clientes.</span><span class="sxs-lookup"><span data-stu-id="61ca0-114">You can speed reactivation time for objects that use [just-in-time (JIT) activation](com--just-in-time-activation.md), while deliberately controlling how resources are dedicated to clients.</span></span>
+
+## <a name="writing-poolable-objects"></a><span data-ttu-id="61ca0-115">Gravando objetos com pools</span><span class="sxs-lookup"><span data-stu-id="61ca0-115">Writing Poolable Objects</span></span>
+
+<span data-ttu-id="61ca0-116">Os objetos pooling devem atender a certos requisitos para permitir que uma única instância de objeto seja usada por vários clientes.</span><span class="sxs-lookup"><span data-stu-id="61ca0-116">Poolable objects must meet certain requirements to enable a single object instance to be used by multiple clients.</span></span> <span data-ttu-id="61ca0-117">Por exemplo, eles não podem manter o estado do cliente nem ter nenhuma afinidade de thread.</span><span class="sxs-lookup"><span data-stu-id="61ca0-117">For example, they can't hold client state or have any thread affinity.</span></span> <span data-ttu-id="61ca0-118">Os objetos transacionais também têm requisitos específicos, pois os recursos gerenciados mantidos por um objeto em pool devem ser inscritos manualmente em uma transação.</span><span class="sxs-lookup"><span data-stu-id="61ca0-118">Transactional objects also have particular requirements, in that managed resources held by a pooled object must be manually enlisted in a transaction.</span></span>
+
+<span data-ttu-id="61ca0-119">Os objetos em pool podem implementar [**controledeobjetoi**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontrol) para controlar como eles são reutilizados.</span><span class="sxs-lookup"><span data-stu-id="61ca0-119">Pooled objects can implement [**IObjectControl**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontrol) to control how they are reused.</span></span> <span data-ttu-id="61ca0-120">Isso permite que eles executem a inicialização quando ativados em um determinado contexto, para limpar qualquer estado do cliente na desativação e para indicar quando eles estão em um estado não reutilizável.</span><span class="sxs-lookup"><span data-stu-id="61ca0-120">This enables them to perform initialization when activated in a given context, to clean up any client state on deactivation, and to indicate when they are in a non-reusable state.</span></span>
+
+<span data-ttu-id="61ca0-121">Muitas vezes, é útil escrever objetos com pools de maneira um tanto genérica para que possam ser administrados administrativamente com uma cadeia de caracteres de construtor.</span><span class="sxs-lookup"><span data-stu-id="61ca0-121">Often, it useful to write poolable objects in a somewhat generic fashion so that they can be administratively customized with a constructor string.</span></span> <span data-ttu-id="61ca0-122">Por exemplo, um objeto pode ser escrito para conter uma conexão ODBC genérica, com um DSN específico, de forma administrativa, especificado em uma cadeia de caracteres de construtor.</span><span class="sxs-lookup"><span data-stu-id="61ca0-122">For example, an object might be written to hold a generic ODBC connection, with a particular DSN administratively specified in a constructor string.</span></span>
+
+<span data-ttu-id="61ca0-123">Os tópicos nesta seção, descritos na tabela a seguir, fornecem informações sobre como o pool de objetos funciona no COM+, bem como informações sobre como escrever, configurar e implementar objetos pooling.</span><span class="sxs-lookup"><span data-stu-id="61ca0-123">The topics in this section, described in the following table, provide information about how object pooling works in COM+, as well as information about how to write, configure, and implement poolable objects.</span></span>
+
+
+
+| <span data-ttu-id="61ca0-124">Tópico</span><span class="sxs-lookup"><span data-stu-id="61ca0-124">Topic</span></span>                                                                                                 | <span data-ttu-id="61ca0-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="61ca0-125">Description</span></span>                                                                                              |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="61ca0-126">Como o pool de objetos funciona</span><span class="sxs-lookup"><span data-stu-id="61ca0-126">How Object Pooling Works</span></span>](how-object-pooling-works.md)<br/>                                   | <span data-ttu-id="61ca0-127">Apresenta conceitos básicos.</span><span class="sxs-lookup"><span data-stu-id="61ca0-127">Presents basic concepts.</span></span><br/>                                                                      |
+| [<span data-ttu-id="61ca0-128">Melhorando o desempenho com o pooling de objetos</span><span class="sxs-lookup"><span data-stu-id="61ca0-128">Improving Performance with Object Pooling</span></span>](improving-performance-with-object-pooling.md)<br/> | <span data-ttu-id="61ca0-129">Fornece detalhes específicos sobre como você pode usar o pool de objetos com mais eficiência.</span><span class="sxs-lookup"><span data-stu-id="61ca0-129">Provides specific details on how you can use object pooling most effectively.</span></span><br/>                 |
+| [<span data-ttu-id="61ca0-130">Requisitos para objetos pooling</span><span class="sxs-lookup"><span data-stu-id="61ca0-130">Requirements for Poolable Objects</span></span>](requirements-for-poolable-objects.md)<br/>                 | <span data-ttu-id="61ca0-131">Fornece detalhes sobre como gravar um objeto que será colocado em pool.</span><span class="sxs-lookup"><span data-stu-id="61ca0-131">Provides details on how to write an object that is to be pooled.</span></span><br/>                              |
+| [<span data-ttu-id="61ca0-132">Pooling de objetos transacionais</span><span class="sxs-lookup"><span data-stu-id="61ca0-132">Pooling Transactional Objects</span></span>](pooling-transactional-objects.md)<br/>                         | <span data-ttu-id="61ca0-133">Fornece detalhes sobre os requisitos especiais que se aplicam a objetos transacionais em pool.</span><span class="sxs-lookup"><span data-stu-id="61ca0-133">Provides details about the special requirements that apply to poolable transactional objects.</span></span><br/> |
+| [<span data-ttu-id="61ca0-134">Controlando o tempo de vida e o estado do objeto</span><span class="sxs-lookup"><span data-stu-id="61ca0-134">Controlling Object Lifetime and State</span></span>](controlling-object-lifetime-and-state.md)<br/>         | <span data-ttu-id="61ca0-135">Descreve como os objetos em pool podem ser implementados para controlar como eles são reutilizados.</span><span class="sxs-lookup"><span data-stu-id="61ca0-135">Describes how pooled objects can be implemented to control how they are reused.</span></span><br/>               |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="61ca0-136">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="61ca0-136">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="61ca0-137">Tarefas de pooling de objetos COM+</span><span class="sxs-lookup"><span data-stu-id="61ca0-137">COM+ Object Pooling Tasks</span></span>](com--object-pooling-tasks.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

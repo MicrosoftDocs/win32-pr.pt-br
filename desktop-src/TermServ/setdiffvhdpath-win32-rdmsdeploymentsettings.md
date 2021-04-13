@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104369567"
 ---
-# <a name="setdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a><span data-ttu-id="4cff8-106">Método SetDiffVHDPath da classe Win32 \_ RDMSDeploymentSettings</span><span class="sxs-lookup"><span data-stu-id="4cff8-106">SetDiffVHDPath method of the Win32\_RDMSDeploymentSettings class</span></span>
+# <a name="setdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a><span data-ttu-id="7dde5-106">Método SetDiffVHDPath da classe Win32 \_ RDMSDeploymentSettings</span><span class="sxs-lookup"><span data-stu-id="7dde5-106">SetDiffVHDPath method of the Win32\_RDMSDeploymentSettings class</span></span>
 
-<span data-ttu-id="4cff8-107">Atualiza o caminho do diretório para o qual os discos diferenciais são implantados para uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="4cff8-107">Updates the directory path to which the differencing disks are deployed for a virtual desktop collection.</span></span>
+<span data-ttu-id="7dde5-107">Atualiza o caminho do diretório para o qual os discos diferenciais são implantados para uma coleção de áreas de trabalho virtuais.</span><span class="sxs-lookup"><span data-stu-id="7dde5-107">Updates the directory path to which the differencing disks are deployed for a virtual desktop collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4cff8-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4cff8-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7dde5-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="7dde5-108">Syntax</span></span>
 
 
 ```mof
@@ -39,40 +39,40 @@ uint32 SetDiffVHDPath(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="4cff8-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="4cff8-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7dde5-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="7dde5-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="4cff8-110">*DirectoryPath* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="4cff8-110">*DirectoryPath* \[in\]</span></span>
+<span data-ttu-id="7dde5-110">*DirectoryPath* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="7dde5-110">*DirectoryPath* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="4cff8-111">O novo caminho de disco diferencial.</span><span class="sxs-lookup"><span data-stu-id="4cff8-111">The new differencing disk path.</span></span>
+<span data-ttu-id="7dde5-111">O novo caminho de disco diferencial.</span><span class="sxs-lookup"><span data-stu-id="7dde5-111">The new differencing disk path.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="4cff8-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="4cff8-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7dde5-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="7dde5-112">Return value</span></span>
 
-<span data-ttu-id="4cff8-113">Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="4cff8-113">Returns 0 on success, otherwise returns a WMI error code.</span></span>
+<span data-ttu-id="7dde5-113">Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="7dde5-113">Returns 0 on success, otherwise returns a WMI error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4cff8-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4cff8-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="7dde5-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7dde5-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4cff8-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="4cff8-115">Requirement</span></span> | <span data-ttu-id="4cff8-116">Valor</span><span class="sxs-lookup"><span data-stu-id="4cff8-116">Value</span></span> |
+| <span data-ttu-id="7dde5-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="7dde5-115">Requirement</span></span> | <span data-ttu-id="7dde5-116">Valor</span><span class="sxs-lookup"><span data-stu-id="7dde5-116">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4cff8-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4cff8-117">Minimum supported client</span></span><br/> | <span data-ttu-id="4cff8-118">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="4cff8-118">None supported</span></span><br/>                                                                   |
-| <span data-ttu-id="4cff8-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="4cff8-119">Minimum supported server</span></span><br/> | <span data-ttu-id="4cff8-120">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="4cff8-120">Windows Server 2012</span></span><br/>                                                              |
-| <span data-ttu-id="4cff8-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="4cff8-121">Namespace</span></span><br/>                | <span data-ttu-id="4cff8-122">\\RDMs CIMv2 \\ raiz</span><span class="sxs-lookup"><span data-stu-id="4cff8-122">Root\\CIMv2\\rdms</span></span><br/>                                                                |
-| <span data-ttu-id="4cff8-123">MOF</span><span class="sxs-lookup"><span data-stu-id="4cff8-123">MOF</span></span><br/>                      | <dl> <span data-ttu-id="4cff8-124"><dt>RDManagement. mof</dt></span><span class="sxs-lookup"><span data-stu-id="4cff8-124"><dt>RDManagement.mof</dt></span></span> </dl> |
-| <span data-ttu-id="4cff8-125">DLL</span><span class="sxs-lookup"><span data-stu-id="4cff8-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4cff8-126"><dt>RDMS.dll</dt></span><span class="sxs-lookup"><span data-stu-id="4cff8-126"><dt>RDMS.dll</dt></span></span> </dl>         |
+| <span data-ttu-id="7dde5-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7dde5-117">Minimum supported client</span></span><br/> | <span data-ttu-id="7dde5-118">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="7dde5-118">None supported</span></span><br/>                                                                   |
+| <span data-ttu-id="7dde5-119">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="7dde5-119">Minimum supported server</span></span><br/> | <span data-ttu-id="7dde5-120">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="7dde5-120">Windows Server 2012</span></span><br/>                                                              |
+| <span data-ttu-id="7dde5-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="7dde5-121">Namespace</span></span><br/>                | <span data-ttu-id="7dde5-122">\\RDMs CIMv2 \\ raiz</span><span class="sxs-lookup"><span data-stu-id="7dde5-122">Root\\CIMv2\\rdms</span></span><br/>                                                                |
+| <span data-ttu-id="7dde5-123">MOF</span><span class="sxs-lookup"><span data-stu-id="7dde5-123">MOF</span></span><br/>                      | <dl> <span data-ttu-id="7dde5-124"><dt>RDManagement. mof</dt></span><span class="sxs-lookup"><span data-stu-id="7dde5-124"><dt>RDManagement.mof</dt></span></span> </dl> |
+| <span data-ttu-id="7dde5-125">DLL</span><span class="sxs-lookup"><span data-stu-id="7dde5-125">DLL</span></span><br/>                      | <dl> <span data-ttu-id="7dde5-126"><dt>RDMS.dll</dt></span><span class="sxs-lookup"><span data-stu-id="7dde5-126"><dt>RDMS.dll</dt></span></span> </dl>         |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4cff8-127">Consulte também</span><span class="sxs-lookup"><span data-stu-id="4cff8-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7dde5-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="7dde5-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4cff8-128">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="4cff8-128">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
+[<span data-ttu-id="7dde5-128">**\_RDMSDeploymentSettings Win32**</span><span class="sxs-lookup"><span data-stu-id="7dde5-128">**Win32\_RDMSDeploymentSettings**</span></span>](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

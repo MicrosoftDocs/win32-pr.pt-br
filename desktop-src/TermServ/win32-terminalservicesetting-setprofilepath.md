@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104369558"
 ---
-# <a name="setprofilepath-method-of-the-win32_terminalservicesetting-class"></a><span data-ttu-id="8a24e-106">Método SetProfilePath da classe Win32 \_ TerminalServiceSetting</span><span class="sxs-lookup"><span data-stu-id="8a24e-106">SetProfilePath method of the Win32\_TerminalServiceSetting class</span></span>
+# <a name="setprofilepath-method-of-the-win32_terminalservicesetting-class"></a><span data-ttu-id="d8baa-106">Método SetProfilePath da classe Win32 \_ TerminalServiceSetting</span><span class="sxs-lookup"><span data-stu-id="d8baa-106">SetProfilePath method of the Win32\_TerminalServiceSetting class</span></span>
 
-<span data-ttu-id="8a24e-107">O método **SetProfilePath** define a propriedade **ProfilePath** para a classe.</span><span class="sxs-lookup"><span data-stu-id="8a24e-107">The **SetProfilePath** method sets the **ProfilePath** property for the class.</span></span>
+<span data-ttu-id="d8baa-107">O método **SetProfilePath** define a propriedade **ProfilePath** para a classe.</span><span class="sxs-lookup"><span data-stu-id="d8baa-107">The **SetProfilePath** method sets the **ProfilePath** property for the class.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8a24e-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8a24e-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d8baa-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d8baa-108">Syntax</span></span>
 
 
 ```mof
@@ -39,44 +39,44 @@ uint32 SetProfilePath(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8a24e-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8a24e-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d8baa-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="d8baa-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8a24e-110">*ProfilePath* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="8a24e-110">*ProfilePath* \[in\]</span></span>
+<span data-ttu-id="d8baa-110">*ProfilePath* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="d8baa-110">*ProfilePath* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="8a24e-111">O novo valor para a propriedade **ProfilePath** , que especifica o caminho do perfil para o computador.</span><span class="sxs-lookup"><span data-stu-id="8a24e-111">The new value for the **ProfilePath** property, which specifies the profile path for the computer.</span></span>
+<span data-ttu-id="d8baa-111">O novo valor para a propriedade **ProfilePath** , que especifica o caminho do perfil para o computador.</span><span class="sxs-lookup"><span data-stu-id="d8baa-111">The new value for the **ProfilePath** property, which specifies the profile path for the computer.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="8a24e-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="8a24e-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d8baa-112">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="d8baa-112">Return value</span></span>
 
-<span data-ttu-id="8a24e-113">Retorna êxito em caso de êxito, caso contrário retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="8a24e-113">Returns Success on success, otherwise returns a WMI error code.</span></span> <span data-ttu-id="8a24e-114">Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.</span><span class="sxs-lookup"><span data-stu-id="8a24e-114">Refer to [Remote Desktop Services WMI Provider Error Codes](terminal-services-wmi-provider-error-codes.md) for a list of these values.</span></span>
+<span data-ttu-id="d8baa-113">Retorna êxito em caso de êxito, caso contrário retorna um código de erro WMI.</span><span class="sxs-lookup"><span data-stu-id="d8baa-113">Returns Success on success, otherwise returns a WMI error code.</span></span> <span data-ttu-id="d8baa-114">Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.</span><span class="sxs-lookup"><span data-stu-id="d8baa-114">Refer to [Remote Desktop Services WMI Provider Error Codes](terminal-services-wmi-provider-error-codes.md) for a list of these values.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8a24e-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="8a24e-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d8baa-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="d8baa-115">Remarks</span></span>
 
-<span data-ttu-id="8a24e-116">Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="8a24e-116">Managed Object Format (MOF) files contain the definitions for Windows Management Instrumentation (WMI) classes.</span></span> <span data-ttu-id="8a24e-117">Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="8a24e-117">MOF files are not installed as part of the Microsoft Windows Software Development Kit (SDK).</span></span> <span data-ttu-id="8a24e-118">Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor.</span><span class="sxs-lookup"><span data-stu-id="8a24e-118">They are installed on the server when you add the associated role by using the Server Manager.</span></span> <span data-ttu-id="8a24e-119">Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).</span><span class="sxs-lookup"><span data-stu-id="8a24e-119">For more information about MOF files, see [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).</span></span>
+<span data-ttu-id="d8baa-116">Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI).</span><span class="sxs-lookup"><span data-stu-id="d8baa-116">Managed Object Format (MOF) files contain the definitions for Windows Management Instrumentation (WMI) classes.</span></span> <span data-ttu-id="d8baa-117">Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="d8baa-117">MOF files are not installed as part of the Microsoft Windows Software Development Kit (SDK).</span></span> <span data-ttu-id="d8baa-118">Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor.</span><span class="sxs-lookup"><span data-stu-id="d8baa-118">They are installed on the server when you add the associated role by using the Server Manager.</span></span> <span data-ttu-id="d8baa-119">Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).</span><span class="sxs-lookup"><span data-stu-id="d8baa-119">For more information about MOF files, see [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="8a24e-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8a24e-120">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d8baa-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d8baa-120">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8a24e-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="8a24e-121">Requirement</span></span> | <span data-ttu-id="8a24e-122">Valor</span><span class="sxs-lookup"><span data-stu-id="8a24e-122">Value</span></span> |
+| <span data-ttu-id="d8baa-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="d8baa-121">Requirement</span></span> | <span data-ttu-id="d8baa-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d8baa-122">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="8a24e-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8a24e-123">Minimum supported client</span></span><br/> | <span data-ttu-id="8a24e-124">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="8a24e-124">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="8a24e-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="8a24e-125">Minimum supported server</span></span><br/> | <span data-ttu-id="8a24e-126">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="8a24e-126">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="8a24e-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="8a24e-127">Namespace</span></span><br/>                | <span data-ttu-id="8a24e-128">\\TerminalServices da CIMv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="8a24e-128">Root\\CIMv2\\TerminalServices</span></span><br/>                                                |
-| <span data-ttu-id="8a24e-129">MOF</span><span class="sxs-lookup"><span data-stu-id="8a24e-129">MOF</span></span><br/>                      | <dl> <span data-ttu-id="8a24e-130"><dt>TSCfgWmi. mof</dt></span><span class="sxs-lookup"><span data-stu-id="8a24e-130"><dt>TSCfgWmi.mof</dt></span></span> </dl> |
-| <span data-ttu-id="8a24e-131">DLL</span><span class="sxs-lookup"><span data-stu-id="8a24e-131">DLL</span></span><br/>                      | <dl> <span data-ttu-id="8a24e-132"><dt>TSCfgWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="8a24e-132"><dt>TSCfgWmi.dll</dt></span></span> </dl> |
+| <span data-ttu-id="d8baa-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d8baa-123">Minimum supported client</span></span><br/> | <span data-ttu-id="d8baa-124">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="d8baa-124">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="d8baa-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="d8baa-125">Minimum supported server</span></span><br/> | <span data-ttu-id="d8baa-126">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="d8baa-126">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="d8baa-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="d8baa-127">Namespace</span></span><br/>                | <span data-ttu-id="d8baa-128">\\TerminalServices da CIMv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="d8baa-128">Root\\CIMv2\\TerminalServices</span></span><br/>                                                |
+| <span data-ttu-id="d8baa-129">MOF</span><span class="sxs-lookup"><span data-stu-id="d8baa-129">MOF</span></span><br/>                      | <dl> <span data-ttu-id="d8baa-130"><dt>TSCfgWmi. mof</dt></span><span class="sxs-lookup"><span data-stu-id="d8baa-130"><dt>TSCfgWmi.mof</dt></span></span> </dl> |
+| <span data-ttu-id="d8baa-131">DLL</span><span class="sxs-lookup"><span data-stu-id="d8baa-131">DLL</span></span><br/>                      | <dl> <span data-ttu-id="d8baa-132"><dt>TSCfgWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="d8baa-132"><dt>TSCfgWmi.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8a24e-133">Consulte também</span><span class="sxs-lookup"><span data-stu-id="8a24e-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d8baa-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="d8baa-133">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8a24e-134">**\_TerminalServiceSetting Win32**</span><span class="sxs-lookup"><span data-stu-id="8a24e-134">**Win32\_TerminalServiceSetting**</span></span>](win32-terminalservicesetting.md)
+[<span data-ttu-id="d8baa-134">**\_TerminalServiceSetting Win32**</span><span class="sxs-lookup"><span data-stu-id="d8baa-134">**Win32\_TerminalServiceSetting**</span></span>](win32-terminalservicesetting.md)
 </dt> </dl>
 
  
