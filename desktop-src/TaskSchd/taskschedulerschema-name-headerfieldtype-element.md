@@ -36,7 +36,7 @@ O elemento **Name** é definido pelo tipo complexo [**headerFieldType**](tasksch
 
 
 
-| Elemento                                                                         | Derivado de                                                               | Description                                                    |
+| Elemento                                                                         | Derivado de                                                               | Descrição                                                    |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------|
 | [**Cabeçalho**](taskschedulerschema-headerfield-headerfieldstype-element.md) | [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) | Contém um campo para um cabeçalho em uma mensagem de email. <br/> |
 

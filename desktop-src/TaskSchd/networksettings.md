@@ -38,10 +38,10 @@ O objeto **NetworkSettings** tem essas propriedades.
 
 
 
-| Propriedade                                        | Tipo de acesso           | Description                                                                                    |
+| Propriedade                                        | Tipo de acesso           | Descrição                                                                                    |
 |:------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------|
 | [**Sessão**](networksettings-id.md)<br/>     | Leitura/gravação<br/> | Obtém ou define um valor de GUID que identifica um perfil de rede.<br/>                        |
-| [**Nomes**](networksettings-name.md)<br/> | Leitura/gravação<br/> | Obtém ou define o nome de um perfil de rede. O nome é usado para fins de exibição. <br/> |
+| [**Nome**](networksettings-name.md)<br/> | Leitura/gravação<br/> | Obtém ou define o nome de um perfil de rede. O nome é usado para fins de exibição. <br/> |
 
 
 
@@ -64,7 +64,7 @@ Ao ler ou gravar seu próprio XML para uma tarefa, as configurações de rede s�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

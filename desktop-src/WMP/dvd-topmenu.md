@@ -63,7 +63,7 @@ Cada DVD é criado de maneira diferente. O DVD deve conter um menu para que esse
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

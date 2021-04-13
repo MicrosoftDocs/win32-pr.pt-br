@@ -63,7 +63,7 @@ O identificador de idioma consiste em um identificador de subidioma e um identif
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

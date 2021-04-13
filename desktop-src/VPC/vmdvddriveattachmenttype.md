@@ -27,7 +27,7 @@ ms.locfileid: "104455372"
 
 Especifica o que está anexado a uma unidade de DVD.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -79,7 +79,7 @@ Há uma unidade de CD ou DVD de host anexada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

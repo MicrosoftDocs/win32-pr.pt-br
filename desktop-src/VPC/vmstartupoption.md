@@ -27,7 +27,7 @@ ms.locfileid: "104455087"
 
 Especifica a opção de inicialização.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -71,7 +71,7 @@ Corrija a incompatibilidade de carimbo de data/hora pai.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

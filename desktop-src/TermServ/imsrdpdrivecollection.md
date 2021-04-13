@@ -54,7 +54,7 @@ A interface **IMsRdpDriveCollection** tem essas propriedades.
 
 
 
-| Propriedade                                                              | Tipo de acesso          | Description                                                  |
+| Propriedade                                                              | Tipo de acesso          | Descrição                                                  |
 |:----------------------------------------------------------------------|:---------------------|:-------------------------------------------------------------|
 | [**DriveByIndex**](imsrdpdrivecollection-drivebyindex.md)<br/> | Somente leitura<br/> | Recupera a unidade no índice especificado.<br/>       |
 | [**DriveCount**](imsrdpdrivecollection-drivecount.md)<br/>     | Somente leitura<br/> | Recupera a contagem de objetos na coleção.<br/> |
@@ -77,7 +77,7 @@ A interface **IMsRdpDriveCollection** tem essas propriedades.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

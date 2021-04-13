@@ -30,7 +30,7 @@ Obtém ou define o [*URI do recurso*](windows-remote-management-glossary.md) em 
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -74,7 +74,7 @@ O caminho a seguir não funciona porque ele contém uma chave para uma instânci
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

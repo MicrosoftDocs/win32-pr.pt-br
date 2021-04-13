@@ -59,7 +59,7 @@ O valor de retorno é o número de linha com base em zero da linha que contém o
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

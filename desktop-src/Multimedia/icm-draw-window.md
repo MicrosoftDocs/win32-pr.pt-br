@@ -67,7 +67,7 @@ Os drivers de sobreposição de vídeo usam essa mensagem para desenhar quando a
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

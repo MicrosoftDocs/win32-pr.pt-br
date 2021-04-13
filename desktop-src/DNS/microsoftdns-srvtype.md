@@ -139,7 +139,7 @@ Peso do host de destino. Isso é útil ao selecionar entre os hosts que têm a m
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
