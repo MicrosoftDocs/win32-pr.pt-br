@@ -1,0 +1,124 @@
+---
+description: Filtro de invólucro de DMO
+ms.assetid: ffa6234d-9040-4838-8f51-0cf87df40a5c
+title: Filtro de invólucro de DMO
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c8b01ee006203e2e1fd328bacc13c01de4a3b25f
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104456803"
+---
+# <a name="dmo-wrapper-filter"></a><span data-ttu-id="5a981-103">Filtro de invólucro de DMO</span><span class="sxs-lookup"><span data-stu-id="5a981-103">DMO Wrapper Filter</span></span>
+
+<span data-ttu-id="5a981-104">O filtro de invólucro do DMO permite que um aplicativo do DirectShow use um [objeto de mídia do DirectX](directx-media-objects.md) (DMO) em um grafo de filtro.</span><span class="sxs-lookup"><span data-stu-id="5a981-104">The DMO Wrapper filter enables a DirectShow application to use a [DirectX Media Object](directx-media-objects.md) (DMO) within a filter graph.</span></span> <span data-ttu-id="5a981-105">O filtro encapsula o DMO e manipula todos os detalhes do uso do DMO, como a passagem de dados de e para o DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-105">The filter wraps the DMO and handles all the details of using the DMO, such as passing data to and from the DMO.</span></span> <span data-ttu-id="5a981-106">Além disso, o filtro agrega o DMO, portanto, o aplicativo pode consultar o filtro para todas as interfaces COM que o DMO expõe.</span><span class="sxs-lookup"><span data-stu-id="5a981-106">Also, the filter aggregates the DMO, so the application can query the filter for any COM interfaces that the DMO exposes.</span></span>
+
+
+
+|                                          |                                                                                                                                                                                                                                                    |
+|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="5a981-107">Filtrar interfaces</span><span class="sxs-lookup"><span data-stu-id="5a981-107">Filter Interfaces</span></span>                        | <span data-ttu-id="5a981-108">[**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IDMOWrapperFilter**](/previous-versions/windows/desktop/api/Dmodshow/nn-dmodshow-idmowrapperfilter), [**IPersistStream**](/windows/desktop/api/objidl/nn-objidl-ipersiststream)</span><span class="sxs-lookup"><span data-stu-id="5a981-108">[**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IDMOWrapperFilter**](/previous-versions/windows/desktop/api/Dmodshow/nn-dmodshow-idmowrapperfilter), [**IPersistStream**](/windows/desktop/api/objidl/nn-objidl-ipersiststream)</span></span>                                                                                                                       |
+| <span data-ttu-id="5a981-109">Tipos de mídia de pino de entrada</span><span class="sxs-lookup"><span data-stu-id="5a981-109">Input Pin Media Types</span></span>                    | <span data-ttu-id="5a981-110">Ver comentários</span><span class="sxs-lookup"><span data-stu-id="5a981-110">See Remarks</span></span>                                                                                                                                                                                                                                        |
+| <span data-ttu-id="5a981-111">Interfaces de pino de entrada</span><span class="sxs-lookup"><span data-stu-id="5a981-111">Input Pin Interfaces</span></span>                     | <span data-ttu-id="5a981-112">[**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)</span><span class="sxs-lookup"><span data-stu-id="5a981-112">[**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)</span></span>                                                                                                                                             |
+| <span data-ttu-id="5a981-113">Tipos de mídia do pino de saída</span><span class="sxs-lookup"><span data-stu-id="5a981-113">Output Pin Media Types</span></span>                   | <span data-ttu-id="5a981-114">Ver comentários</span><span class="sxs-lookup"><span data-stu-id="5a981-114">See Remarks</span></span>                                                                                                                                                                                                                                        |
+| <span data-ttu-id="5a981-115">Interfaces de pino de saída</span><span class="sxs-lookup"><span data-stu-id="5a981-115">Output Pin Interfaces</span></span>                    | <span data-ttu-id="5a981-116">[**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)</span><span class="sxs-lookup"><span data-stu-id="5a981-116">[**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)</span></span> |
+| <span data-ttu-id="5a981-117">CLSID do filtro</span><span class="sxs-lookup"><span data-stu-id="5a981-117">Filter CLSID</span></span>                             | <span data-ttu-id="5a981-118">\_DMOWRAPPERFILTER CLSID</span><span class="sxs-lookup"><span data-stu-id="5a981-118">CLSID\_DMOWrapperFilter</span></span>                                                                                                                                                                                                                            |
+| <span data-ttu-id="5a981-119">CLSID de página de propriedades</span><span class="sxs-lookup"><span data-stu-id="5a981-119">Property Page CLSID</span></span>                      | <span data-ttu-id="5a981-120">Nenhuma página de propriedades</span><span class="sxs-lookup"><span data-stu-id="5a981-120">No property page</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="5a981-121">Executável</span><span class="sxs-lookup"><span data-stu-id="5a981-121">Executable</span></span>                               | <span data-ttu-id="5a981-122">Qasf.dll</span><span class="sxs-lookup"><span data-stu-id="5a981-122">Qasf.dll</span></span>                                                                                                                                                                                                                                           |
+| [<span data-ttu-id="5a981-123">Núcleo</span><span class="sxs-lookup"><span data-stu-id="5a981-123">Merit</span></span>](merit.md)                       | <span data-ttu-id="5a981-124">Ver comentários</span><span class="sxs-lookup"><span data-stu-id="5a981-124">See Remarks</span></span>                                                                                                                                                                                                                                        |
+| [<span data-ttu-id="5a981-125">Categoria do filtro</span><span class="sxs-lookup"><span data-stu-id="5a981-125">Filter Category</span></span>](filter-categories.md) | <span data-ttu-id="5a981-126">Ver comentários</span><span class="sxs-lookup"><span data-stu-id="5a981-126">See Remarks</span></span>                                                                                                                                                                                                                                        |
+
+
+
+ 
+
+## <a name="remarks"></a><span data-ttu-id="5a981-127">Comentários</span><span class="sxs-lookup"><span data-stu-id="5a981-127">Remarks</span></span>
+
+### <a name="limitations"></a><span data-ttu-id="5a981-128">Limitações</span><span class="sxs-lookup"><span data-stu-id="5a981-128">Limitations</span></span>
+
+<span data-ttu-id="5a981-129">O invólucro de DMO tem as seguintes limitações:</span><span class="sxs-lookup"><span data-stu-id="5a981-129">The DMO Wrapper has the following limitations:</span></span>
+
+-   <span data-ttu-id="5a981-130">Ele não dá suporte a DMOs com zero entradas, várias entradas ou zero saídas.</span><span class="sxs-lookup"><span data-stu-id="5a981-130">It does not support DMOs with zero inputs, multiple inputs, or zero outputs.</span></span> <span data-ttu-id="5a981-131">(Ele dá suporte a DMOs com uma entrada e várias saídas.)</span><span class="sxs-lookup"><span data-stu-id="5a981-131">(It does support DMOs with one input and multiple outputs.)</span></span>
+-   <span data-ttu-id="5a981-132">Ele não dá suporte a transportes personalizados.</span><span class="sxs-lookup"><span data-stu-id="5a981-132">It does not support custom transports.</span></span> <span data-ttu-id="5a981-133">Todo o transporte de dados é feito por meio da interface [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) .</span><span class="sxs-lookup"><span data-stu-id="5a981-133">All data transport is done through the [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) interface.</span></span>
+-   <span data-ttu-id="5a981-134">Ele não usa a interface **IMediaObjectInPlace** ; todo o processamento é feito usando métodos [**IMediaObject**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediaobject) .</span><span class="sxs-lookup"><span data-stu-id="5a981-134">It does not use the **IMediaObjectInPlace** interface; all processing is done using [**IMediaObject**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediaobject) methods.</span></span>
+
+### <a name="pins"></a><span data-ttu-id="5a981-135">Pins</span><span class="sxs-lookup"><span data-stu-id="5a981-135">Pins</span></span>
+
+<span data-ttu-id="5a981-136">Para cada fluxo de entrada no DMO, o filtro cria um PIN de entrada correspondente.</span><span class="sxs-lookup"><span data-stu-id="5a981-136">For each input stream on the DMO, the filter creates a corresponding input pin.</span></span> <span data-ttu-id="5a981-137">Para cada fluxo de saída, ele cria um pino de saída correspondente.</span><span class="sxs-lookup"><span data-stu-id="5a981-137">For each output stream, it creates a corresponding output pin.</span></span> <span data-ttu-id="5a981-138">Os tipos de mídia aos quais cada PIN dá suporte depende do DMO</span><span class="sxs-lookup"><span data-stu-id="5a981-138">The media types that each pin supports depends on the DMO</span></span>
+
+### <a name="encoder-interfaces"></a><span data-ttu-id="5a981-139">Interfaces do codificador</span><span class="sxs-lookup"><span data-stu-id="5a981-139">Encoder Interfaces</span></span>
+
+<span data-ttu-id="5a981-140">Se o DMO for um codificador de vídeo ou um codificador de áudio, o pino de saída exporá a interface [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) .</span><span class="sxs-lookup"><span data-stu-id="5a981-140">If the DMO is a video encoder or an audio encoder, the output pin exposes the [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) interface.</span></span> <span data-ttu-id="5a981-141">Se o DMO for um codificador de vídeo, o PIN de saída também expõe a interface [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression) .</span><span class="sxs-lookup"><span data-stu-id="5a981-141">If the DMO is a video encoder, the output pin also exposes the [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression) interface.</span></span> <span data-ttu-id="5a981-142">Em ambos os casos, se o DMO der suporte à interface, o PIN delegará para o DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-142">In both cases, if the DMO supports the interface, the pin delegates to the DMO.</span></span> <span data-ttu-id="5a981-143">Caso contrário, o PIN fornecerá sua própria implementação.</span><span class="sxs-lookup"><span data-stu-id="5a981-143">Otherwise, the pin provides its own implementation.</span></span>
+
+### <a name="streaming"></a><span data-ttu-id="5a981-144">Streaming</span><span class="sxs-lookup"><span data-stu-id="5a981-144">Streaming</span></span>
+
+<span data-ttu-id="5a981-145">O filtro usa a interface [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) para lidar com todo o streaming.</span><span class="sxs-lookup"><span data-stu-id="5a981-145">The filter uses the [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) interface to handle all streaming.</span></span> <span data-ttu-id="5a981-146">Ele não dá suporte a conexões [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) .</span><span class="sxs-lookup"><span data-stu-id="5a981-146">It does not support [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) connections.</span></span> <span data-ttu-id="5a981-147">O filtro chama [**IMediaObject::P rocessoutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) no DMO somente quando recebe dados de upstream (incluindo notificações de fim de fluxo).</span><span class="sxs-lookup"><span data-stu-id="5a981-147">The filter calls [**IMediaObject::ProcessOutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) on the DMO only when it receives data from upstream (including end-of-stream notifications).</span></span> <span data-ttu-id="5a981-148">Portanto, ele não dá suporte a DMOs com fluxos de entrada zero.</span><span class="sxs-lookup"><span data-stu-id="5a981-148">Therefore, it does not support DMOs with zero input streams.</span></span>
+
+### <a name="seeking"></a><span data-ttu-id="5a981-149">Atingir</span><span class="sxs-lookup"><span data-stu-id="5a981-149">Seeking</span></span>
+
+<span data-ttu-id="5a981-150">Todas as solicitações de busca são passadas para o filtro upstream, por meio do primeiro PIN de entrada no wrapper DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-150">All seek requests are passed to the upstream filter, through the first input pin on the DMO Wrapper.</span></span> <span data-ttu-id="5a981-151">Para DMOs de várias saídas, isso significa que o filtro upstream pode receber várias solicitações de busca quando o aplicativo procura o grafo.</span><span class="sxs-lookup"><span data-stu-id="5a981-151">For multiple-output DMOs, this means that the upstream filter might receive multiple seek requests when the application seeks the graph.</span></span>
+
+### <a name="merit"></a><span data-ttu-id="5a981-152">Núcleo</span><span class="sxs-lookup"><span data-stu-id="5a981-152">Merit</span></span>
+
+<span data-ttu-id="5a981-153">O DirectShow atribui a todos os DMOs um valor de mérito padrão de **mérito \_ normal** + 0x800.</span><span class="sxs-lookup"><span data-stu-id="5a981-153">DirectShow assigns all DMOs a default merit value of **MERIT\_NORMAL** + 0x800.</span></span> <span data-ttu-id="5a981-154">Esse valor cai entre o **mérito \_ normal** e o **mérito \_ preferido**.</span><span class="sxs-lookup"><span data-stu-id="5a981-154">This value falls between **MERIT\_NORMAL** and **MERIT\_PREFERRED**.</span></span> <span data-ttu-id="5a981-155">Os filtros de decodificador geralmente têm um valor de mérito **\_ normal**.</span><span class="sxs-lookup"><span data-stu-id="5a981-155">Decoder filters generally have a merit value of **MERIT\_NORMAL**.</span></span> <span data-ttu-id="5a981-156">Portanto, o Gerenciador de gráfico de filtro geralmente selecionará um decodificador de DMO em um filtro de decodificador.</span><span class="sxs-lookup"><span data-stu-id="5a981-156">Therefore, the filter graph manager will usually select a DMO decoder over a decoder filter.</span></span> <span data-ttu-id="5a981-157">Para substituir o valor de mérito padrão, adicione uma entrada de registro à chave do registro do DMO em \_ classe HKEY \_ raiz \\ CLSID.</span><span class="sxs-lookup"><span data-stu-id="5a981-157">To override the default merit value, add a registry entry to the DMO's registry key in HKEY\_CLASSES\_ROOT\\CLSID.</span></span> <span data-ttu-id="5a981-158">Inclua um valor **DWORD** chamado "mérito" cujo valor especifique o mérito.</span><span class="sxs-lookup"><span data-stu-id="5a981-158">Include a **DWORD** value named "Merit" whose value specifies the merit.</span></span>
+
+### <a name="category"></a><span data-ttu-id="5a981-159">Category</span><span class="sxs-lookup"><span data-stu-id="5a981-159">Category</span></span>
+
+<span data-ttu-id="5a981-160">O filtro de invólucro do DMO não aparece sozinho em nenhuma categoria.</span><span class="sxs-lookup"><span data-stu-id="5a981-160">The DMO Wrapper filter does not appear by itself in any category.</span></span> <span data-ttu-id="5a981-161">Quando ele encapsula um DMO, ele aparece na categoria do DirectShow que corresponde à categoria do DMO, sob o nome do DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-161">When it wraps a DMO, it appears in the DirectShow category that corresponds to the DMO's category, under the name of the DMO.</span></span>
+
+### <a name="buffers"></a><span data-ttu-id="5a981-162">Buffers</span><span class="sxs-lookup"><span data-stu-id="5a981-162">Buffers</span></span>
+
+<span data-ttu-id="5a981-163">O filtro de invólucro do DMO passa os buffers de mídia para o DMO, que expõem a interface [**IMediaBuffer**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) .</span><span class="sxs-lookup"><span data-stu-id="5a981-163">The DMO Wrapper filter passes media buffers to the DMO which expose the [**IMediaBuffer**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) interface.</span></span>
+
+<span data-ttu-id="5a981-164">No Windows Vista ou posterior, os buffers de mídia também expõem a interface IServiceProvider.</span><span class="sxs-lookup"><span data-stu-id="5a981-164">In Windows Vista or later, the media buffers also expose the IServiceProvider interface.</span></span> <span data-ttu-id="5a981-165">O DMO pode usar essa interface para obter um ponteiro para o exemplo de mídia que está associado ao buffer.</span><span class="sxs-lookup"><span data-stu-id="5a981-165">The DMO can use this interface to get a pointer to the media sample that is associated with the buffer.</span></span> <span data-ttu-id="5a981-166">Use o IMediaSample de **IID \_** do identificador de serviço.</span><span class="sxs-lookup"><span data-stu-id="5a981-166">Use the service identifier **IID\_IMediaSample**.</span></span> <span data-ttu-id="5a981-167">Um vídeo DMO pode usar a interface [**IMediaSample2**](/windows/desktop/api/Strmif/nn-strmif-imediasample2) do exemplo de mídia para definir sinalizadores de entrelaçamento no exemplo.</span><span class="sxs-lookup"><span data-stu-id="5a981-167">A video DMO can use the media sample's [**IMediaSample2**](/windows/desktop/api/Strmif/nn-strmif-imediasample2) interface to set interlace flags on the sample.</span></span> <span data-ttu-id="5a981-168">O código a seguir mostra como obter o ponteiro para o exemplo de mídia:</span><span class="sxs-lookup"><span data-stu-id="5a981-168">The following code shows how to get the pointer to the media sample:</span></span>
+
+
+```C++
+IServiceProvider *pSp = NULL;
+IMediaSample2 *pSample2 = NULL;
+HRESULT hr = S_OK;
+
+hr = pBuffer->QueryInterface(IID_IServiceProvider, (void**)&pSp);
+if (SUCCEEDED(hr))
+{
+    hr = pSp->QueryService(
+        IID_IMediaSample,  // Service identifier.
+        IID_IMediaSample2, // Interface identifier.
+        (void**)&pSample2
+        );
+    if (SUCCEEDED(hr))
+    {
+        // Set flags (not shown).
+        pSample2->Release();
+    }
+    pSp->Release();
+}
+```
+
+
+
+<span data-ttu-id="5a981-169">Para obter mais informações sobre sinalizadores de entrelaçamento por amostra, consulte a [**\_ estrutura de \_ Propriedades da am SAMPLE2**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).</span><span class="sxs-lookup"><span data-stu-id="5a981-169">For more information about per-sample interlace flags, see [**AM\_SAMPLE2\_PROPERTIES Structure**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).</span></span>
+
+### <a name="quality-control"></a><span data-ttu-id="5a981-170">Controle de qualidade</span><span class="sxs-lookup"><span data-stu-id="5a981-170">Quality Control</span></span>
+
+<span data-ttu-id="5a981-171">Se o DMO expõe a interface [**IDMOQualityControl**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-idmoqualitycontrol) , o filtro converte [**IQualityControl:: notificar**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) chamadas em seu pino de saída em [**IDMOQualityControl:: SetNow**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-idmoqualitycontrol-setnow) chamadas no DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-171">If the DMO exposes the [**IDMOQualityControl**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-idmoqualitycontrol) interface, the filter translates [**IQualityControl::Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) calls on its output pin into [**IDMOQualityControl::SetNow**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-idmoqualitycontrol-setnow) calls on the DMO.</span></span> <span data-ttu-id="5a981-172">O parâmetro *rtNow* de **SetNow** é calculado como a soma do **carimbo de data/hora** e dos membros **atrasados** da estrutura de [**qualidade**](/windows/win32/api/strmif/ns-strmif-quality) .</span><span class="sxs-lookup"><span data-stu-id="5a981-172">The *rtNow* parameter of **SetNow** is calculated as the sum of the **TimeStamp** and **Late** members of the [**Quality**](/windows/win32/api/strmif/ns-strmif-quality) structure.</span></span>
+
+### <a name="using-the-fiter-in-graphedit"></a><span data-ttu-id="5a981-173">Usando o fiter no GraphEdit</span><span class="sxs-lookup"><span data-stu-id="5a981-173">Using the Fiter in GraphEdit</span></span>
+
+<span data-ttu-id="5a981-174">No GraphEdit, o filtro de invólucro do DMO não aparece com seu próprio nome.</span><span class="sxs-lookup"><span data-stu-id="5a981-174">In GraphEdit, the DMO Wrapper filter does not appear under its own name.</span></span> <span data-ttu-id="5a981-175">Em vez disso, cada DMO registrado é listado na categoria de filtro apropriada.</span><span class="sxs-lookup"><span data-stu-id="5a981-175">Instead, each registered DMO is listed under the appropriate filter category.</span></span> <span data-ttu-id="5a981-176">Quando você adiciona um DMO por meio da caixa de diálogo **Inserir filtros** , o GraphEdit cria o filtro de invólucro do DMO e o configura para usar esse DMO.</span><span class="sxs-lookup"><span data-stu-id="5a981-176">When you add a DMO through the **Insert Filters** dialog, GraphEdit creates the DMO Wrapper filter and configures it to use that DMO.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="5a981-177">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="5a981-177">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="5a981-178">Filtros do DirectShow</span><span class="sxs-lookup"><span data-stu-id="5a981-178">DirectShow Filters</span></span>](directshow-filters.md)
+</dt> <dt>
+
+[<span data-ttu-id="5a981-179">Objetos de mídia do DirectX</span><span class="sxs-lookup"><span data-stu-id="5a981-179">DirectX Media Objects</span></span>](directx-media-objects.md)
+</dt> </dl>
+
+ 
+
+ 
