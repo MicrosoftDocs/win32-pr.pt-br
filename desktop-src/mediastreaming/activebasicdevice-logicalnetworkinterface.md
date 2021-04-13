@@ -59,7 +59,7 @@ Um ponteiro para um **GUID** que especifica a ID da interface de rede lógica.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -63,7 +63,7 @@ Cada DVD é criado de maneira diferente. Alguns DVDs são criados para que o mé
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -126,7 +126,7 @@ O tipo de pacotes visto por um provedor pode ser alterado com a função [**PxeP
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
