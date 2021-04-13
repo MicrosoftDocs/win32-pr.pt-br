@@ -1,0 +1,109 @@
+---
+title: Método Modify da classe MicrosoftDNS_NSType
+description: O método Modify atualiza um registro de recurso de servidor de nomes (NS).
+ms.assetid: da625231-cf4e-4526-b713-737e6b9f5831
+keywords:
+- Modificar o método DNS
+- Modificar o método DNS, MicrosoftDNS_NSType classe
+- MicrosoftDNS_NSType classe de DNS, método Modify
+topic_type:
+- apiref
+api_name:
+- MicrosoftDNS_NSType.Modify
+api_location:
+- Root\MicrosoftDNS
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: a3dd26b7c0f1c31ef3ea742f20f70df8646a087b
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104456041"
+---
+# <a name="modify-method-of-the-microsoftdns_nstype-class"></a><span data-ttu-id="53a40-106">Método Modify da classe MicrosoftDNS \_ NSType</span><span class="sxs-lookup"><span data-stu-id="53a40-106">Modify method of the MicrosoftDNS\_NSType class</span></span>
+
+<span data-ttu-id="53a40-107">O método **Modify** atualiza um registro de recurso de servidor de nomes (ns).</span><span class="sxs-lookup"><span data-stu-id="53a40-107">The **Modify** method updates a Name Server (NS) Resource Record.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="53a40-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="53a40-108">Syntax</span></span>
+
+
+```mof
+void Modify(
+  [in, optional] uint32              TTL,
+  [in, optional] string              NSHost,
+  [out, ref]     MicrosoftDNS_NSType &RR
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="53a40-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="53a40-109">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="53a40-110">*TTL* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="53a40-110">*TTL* \[in, optional\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="53a40-111">Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.</span><span class="sxs-lookup"><span data-stu-id="53a40-111">Time, in seconds, that the RR can be cached by a DNS resolver.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="53a40-112">*NSHost* \[ em, opcional\]</span><span class="sxs-lookup"><span data-stu-id="53a40-112">*NSHost* \[in, optional\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="53a40-113">Host autoritativo para o domínio.</span><span class="sxs-lookup"><span data-stu-id="53a40-113">Authoritative host for the domain.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="53a40-114">*RR* \[ out, ref\]</span><span class="sxs-lookup"><span data-stu-id="53a40-114">*RR* \[out, ref\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="53a40-115">Referência ao objeto modificado.</span><span class="sxs-lookup"><span data-stu-id="53a40-115">Reference to the modified object.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="53a40-116">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="53a40-116">Return value</span></span>
+
+<span data-ttu-id="53a40-117">Esse método não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="53a40-117">This method does not return a value.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="53a40-118">Comentários</span><span class="sxs-lookup"><span data-stu-id="53a40-118">Remarks</span></span>
+
+<span data-ttu-id="53a40-119">Qualquer parâmetro não especificado permanece inalterado no registro modificado.</span><span class="sxs-lookup"><span data-stu-id="53a40-119">Any parameter not specified is left unchanged in the modified record.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="53a40-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="53a40-120">Requirements</span></span>
+
+
+
+| <span data-ttu-id="53a40-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="53a40-121">Requirement</span></span> | <span data-ttu-id="53a40-122">Valor</span><span class="sxs-lookup"><span data-stu-id="53a40-122">Value</span></span> |
+|-------------------------------------|----------------------------------------------------------------------------------------|
+| <span data-ttu-id="53a40-123">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="53a40-123">Minimum supported client</span></span><br/> | <span data-ttu-id="53a40-124">Nenhum compatível</span><span class="sxs-lookup"><span data-stu-id="53a40-124">None supported</span></span><br/>                                                              |
+| <span data-ttu-id="53a40-125">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="53a40-125">Minimum supported server</span></span><br/> | <span data-ttu-id="53a40-126">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="53a40-126">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                   |
+| <span data-ttu-id="53a40-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="53a40-127">Namespace</span></span><br/>                | <span data-ttu-id="53a40-128">\\MicrosoftDNS raiz</span><span class="sxs-lookup"><span data-stu-id="53a40-128">Root\\MicrosoftDNS</span></span><br/>                                                          |
+| <span data-ttu-id="53a40-129">MOF</span><span class="sxs-lookup"><span data-stu-id="53a40-129">MOF</span></span><br/>                      | <dl> <span data-ttu-id="53a40-130"><dt>Dnsprov. mof</dt></span><span class="sxs-lookup"><span data-stu-id="53a40-130"><dt>Dnsprov.mof</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="53a40-131">Confira também</span><span class="sxs-lookup"><span data-stu-id="53a40-131">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="53a40-132">**MicrosoftDNS \_ PTRType**</span><span class="sxs-lookup"><span data-stu-id="53a40-132">**MicrosoftDNS\_PTRType**</span></span>](microsoftdns-ptrtype.md)
+</dt> <dt>
+
+[<span data-ttu-id="53a40-133">**Método CreateInstanceFromPropertyData da \_ classe PTRType MicrosoftDNS**</span><span class="sxs-lookup"><span data-stu-id="53a40-133">**CreateInstanceFromPropertyData Method of the MicrosoftDNS\_PTRType Class**</span></span>](microsoftdns-ptrtype-createinstancefrompropertydata.md)
+</dt> <dt>
+
+[<span data-ttu-id="53a40-134">**MicrosoftDNS \_ ResourceRecord**</span><span class="sxs-lookup"><span data-stu-id="53a40-134">**MicrosoftDNS\_ResourceRecord**</span></span>](microsoftdns-resourcerecord.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
