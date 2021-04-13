@@ -34,7 +34,7 @@ Profundidade de filtros em um conjunto aninhado de parênteses.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

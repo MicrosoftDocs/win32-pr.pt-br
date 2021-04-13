@@ -65,7 +65,7 @@ Conectar um driver de captura a uma janela de captura desconecta automaticamente
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -25,7 +25,7 @@ O CLSID para esse efeito é CLSID \_ D2D1DistantSpecular.
 -   [Fonte de luz distante](#distant-light-source)
 -   [Propriedades do efeito](#effect-properties)
 -   [Modos de escala](#scale-modes)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagem de exemplo
