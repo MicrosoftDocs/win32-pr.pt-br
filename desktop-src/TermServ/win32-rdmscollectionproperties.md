@@ -232,7 +232,7 @@ Obtém e define um valor que indica se o RemoteFX está habilitado para a VM mes
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
