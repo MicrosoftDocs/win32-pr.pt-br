@@ -1,39 +1,39 @@
 ---
-title: Método SetComputerGroupNames da classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Define a propriedade ComputerGroupNames.
-ms.assetid: dd6747df-140f-4eeb-857b-d14f8713586c
+title: Método SetSmartcardAllowed da classe Win32_TSGatewayConnectionAuthorizationPolicy
+description: Define a propriedade SmartcardAllowed, que habilita ou desabilita o suporte para usar um cartão inteligente para se conectar ao servidor de gateway de área de trabalho de Área de Trabalho Remota (Gateway RD).
+ms.assetid: 9fe1c7a9-2bab-439f-8dc2-421ed876fcf7
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetComputerGroupNames
-- Método SetComputerGroupNames Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método SetComputerGroupNames
+- Serviços de Área de Trabalho Remota do método SetSmartcardAllowed
+- Método SetSmartcardAllowed Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
+- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método SetSmartcardAllowed
 topic_type:
 - apiref
 api_name:
-- Win32_TSGatewayConnectionAuthorizationPolicy.SetComputerGroupNames
+- Win32_TSGatewayConnectionAuthorizationPolicy.SetSmartcardAllowed
 api_location:
 - AagWmi.dll
 api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a99c29ce37aeb8bfad0ae77197c7364b0135fa99
+ms.openlocfilehash: 022b5461086ae05f198cbce4faaee0e9c36bf77e
 ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369569"
+ms.locfileid: "104369769"
 ---
-# <a name="setcomputergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetComputerGroupNames da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="setsmartcardallowed-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetSmartcardAllowed da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
 
-Define a propriedade **ComputerGroupNames** .
+Define a propriedade **SmartcardAllowed** , que habilita ou desabilita o suporte para usar um cartão inteligente para se conectar ao servidor de gateway de área de trabalho de área de trabalho remota (Gateway RD).
 
 ## <a name="syntax"></a>Sintaxe
 
 
 ```mof
-uint32 SetComputerGroupNames(
-  [in] string ComputerGroupNames
+uint32 SetSmartcardAllowed(
+  [in] boolean Allowed
 );
 ```
 
@@ -43,10 +43,10 @@ uint32 SetComputerGroupNames(
 
 <dl> <dt>
 
-*ComputerGroupNames* \[ no\]
+*Permitido* \[ no\]
 </dt> <dd>
 
-Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *domínio \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor de gateway de área de trabalho remota.
+Novo valor de **SmartcardAllowed** .
 
 </dd> </dl>
 
@@ -55,8 +55,6 @@ Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse va
 Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
-
-Se vários nomes de grupos de computadores estiverem no parâmetro *ComputerGroupNames* e um dos nomes não puder ser processado, nenhum dos nomes será processado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 

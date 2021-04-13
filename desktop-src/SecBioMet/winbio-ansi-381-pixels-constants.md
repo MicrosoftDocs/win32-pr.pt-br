@@ -39,7 +39,7 @@ As constantes a seguir podem ser usadas para especificar unidades de escala:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

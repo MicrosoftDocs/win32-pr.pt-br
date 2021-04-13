@@ -1,39 +1,39 @@
 ---
-title: Método SetComputerGroupNames da classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Define a propriedade ComputerGroupNames.
-ms.assetid: dd6747df-140f-4eeb-857b-d14f8713586c
+title: Método AddUserGroupNames da classe Win32_TSGatewayConnectionAuthorizationPolicy
+description: Adiciona os nomes de grupos de usuários especificados à propriedade usergroupnames.
+ms.assetid: 01bbccc3-c2e4-46ad-8649-1a30e001c949
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetComputerGroupNames
-- Método SetComputerGroupNames Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método SetComputerGroupNames
+- Serviços de Área de Trabalho Remota do método AddUserGroupNames
+- Método AddUserGroupNames Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
+- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método AddUserGroupNames
 topic_type:
 - apiref
 api_name:
-- Win32_TSGatewayConnectionAuthorizationPolicy.SetComputerGroupNames
+- Win32_TSGatewayConnectionAuthorizationPolicy.AddUserGroupNames
 api_location:
 - AagWmi.dll
 api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a99c29ce37aeb8bfad0ae77197c7364b0135fa99
+ms.openlocfilehash: 93a4fe26b27f954e5ea9a0c7ac666592f74337a3
 ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369569"
+ms.locfileid: "104369395"
 ---
-# <a name="setcomputergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetComputerGroupNames da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="addusergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método AddUserGroupNames da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
 
-Define a propriedade **ComputerGroupNames** .
+Adiciona os nomes de grupos de usuários especificados à propriedade **Usergroupnames** .
 
 ## <a name="syntax"></a>Sintaxe
 
 
 ```mof
-uint32 SetComputerGroupNames(
-  [in] string ComputerGroupNames
+uint32 AddUserGroupNames(
+  [in] string UserGroupNames
 );
 ```
 
@@ -43,10 +43,10 @@ uint32 SetComputerGroupNames(
 
 <dl> <dt>
 
-*ComputerGroupNames* \[ no\]
+*Usergroupnames* \[ no\]
 </dt> <dd>
 
-Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *domínio \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor de gateway de área de trabalho remota.
+Lista separada por ponto-e-vírgula de nomes de grupos de usuários a serem adicionados à propriedade **Usergroupnames** . Os nomes de grupos de usuários devem ter o formato *domínio \\ userGroupName*.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 ## <a name="remarks"></a>Comentários
 
-Se vários nomes de grupos de computadores estiverem no parâmetro *ComputerGroupNames* e um dos nomes não puder ser processado, nenhum dos nomes será processado.
+Se vários nomes de grupos de usuários estiverem no parâmetro *Usergroupnames* e um dos nomes não puder ser processado, nenhum dos nomes será processado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 

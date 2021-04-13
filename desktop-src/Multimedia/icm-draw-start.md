@@ -58,7 +58,7 @@ As mensagens de parada do **ICM \_ trace \_ Start** e [**ICM \_ draw \_**](icm-d
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

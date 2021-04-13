@@ -27,7 +27,7 @@ ms.locfileid: "104369601"
 
 Especifica os formatos de disquete.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -111,7 +111,7 @@ Um MSS (tamanho de setor múltiplo) de alta densidade, usado pelo XDF (formato d
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,39 +1,41 @@
 ---
-title: Método SetComputerGroupNames da classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Define a propriedade ComputerGroupNames.
-ms.assetid: dd6747df-140f-4eeb-857b-d14f8713586c
+title: Método Update da classe Win32_TSGatewayResourceGroup
+description: Atualiza o grupo de recursos.
+ms.assetid: b5927046-f461-41cd-861b-0fd77f2008e5
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetComputerGroupNames
-- Método SetComputerGroupNames Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método SetComputerGroupNames
+- Serviços de Área de Trabalho Remota do método de atualização
+- Método Update Serviços de Área de Trabalho Remota, classe Win32_TSGatewayResourceGroup
+- Serviços de Área de Trabalho Remota de classe Win32_TSGatewayResourceGroup, método Update
 topic_type:
 - apiref
 api_name:
-- Win32_TSGatewayConnectionAuthorizationPolicy.SetComputerGroupNames
+- Win32_TSGatewayResourceGroup.Update
 api_location:
 - AagWmi.dll
 api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a99c29ce37aeb8bfad0ae77197c7364b0135fa99
+ms.openlocfilehash: 1a7b1610fc14aa522fa4d8b7caf03fccd7b37375
 ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369569"
+ms.locfileid: "104369666"
 ---
-# <a name="setcomputergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetComputerGroupNames da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="update-method-of-the-win32_tsgatewayresourcegroup-class"></a>Método Update da classe Win32 \_ TSGatewayResourceGroup
 
-Define a propriedade **ComputerGroupNames** .
+Atualiza o grupo de recursos.
 
 ## <a name="syntax"></a>Sintaxe
 
 
 ```mof
-uint32 SetComputerGroupNames(
-  [in] string ComputerGroupNames
+uint32 Update(
+  [in] string Name,
+  [in] string Description,
+  [in] string Resources
 );
 ```
 
@@ -43,10 +45,24 @@ uint32 SetComputerGroupNames(
 
 <dl> <dt>
 
-*ComputerGroupNames* \[ no\]
+*Nome* \[ do no\]
 </dt> <dd>
 
-Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *domínio \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor de gateway de área de trabalho remota.
+Nome do grupo de recursos.
+
+</dd> <dt>
+
+*Descrição* \[ do no\]
+</dt> <dd>
+
+Descrição do grupo de recursos.
+
+</dd> <dt>
+
+*Recursos* \[ do no\]
+</dt> <dd>
+
+Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \* " significa todos os recursos.
 
 </dd> </dl>
 
@@ -56,7 +72,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 ## <a name="remarks"></a>Comentários
 
-Se vários nomes de grupos de computadores estiverem no parâmetro *ComputerGroupNames* e um dos nomes não puder ser processado, nenhum dos nomes será processado.
+Se vários recursos estiverem no parâmetro de *recursos* e um dos recursos não puder ser processado, nenhum dos recursos será processado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
@@ -80,7 +96,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
 </dt> </dl>
 
  
