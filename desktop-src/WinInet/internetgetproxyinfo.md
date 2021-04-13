@@ -132,7 +132,7 @@ Como todos os outros aspectos da API do WinINet, essa função não pode ser cha
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>JSProxy.dll</dt> </dl> |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [**InternetInitializeAutoProxyDll**](/windows/win32/api/winineti/nf-winineti-internetinitializeautoproxydll)
 

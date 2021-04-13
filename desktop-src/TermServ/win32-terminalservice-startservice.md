@@ -249,7 +249,7 @@ Se você iniciar um serviço interrompido que depende de outro serviço, ambos o
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

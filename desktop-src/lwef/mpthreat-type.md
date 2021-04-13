@@ -26,7 +26,7 @@ ms.locfileid: "104369490"
 
 Tipos de ameaça possíveis.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

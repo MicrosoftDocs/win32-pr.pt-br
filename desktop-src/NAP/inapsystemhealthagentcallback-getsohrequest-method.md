@@ -58,7 +58,7 @@ Um ponteiro COM para um objeto [**INapSystemHealthAgentRequest**](inapsystemheal
 
 
 
-| Código de retorno                                                                                                                      | Description                                                                                                                                        |
+| Código de retorno                                                                                                                      | Descrição                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                             | Indica êxito.<br/>                                                                                                                      |
 | <dl> <dt>**HRESULT \_ do \_ Win32 ( \_ servidor RPC \_ S \_ indisponível)**</dt> </dl> | Se esse código for retornado pela sua implementação, o NapAgent removerá o SHA da lista Bound-SHA e liberará sua entrada de cache.<br/> |
@@ -112,7 +112,7 @@ Para SHAs não associados que são registrados com o sistema, o sistema NAP cons
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

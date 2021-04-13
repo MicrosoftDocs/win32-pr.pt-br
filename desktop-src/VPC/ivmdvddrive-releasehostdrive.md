@@ -48,7 +48,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                         | Description                                                                   |
+| Código/valor de retorno                                                                                                                                                         | Descrição                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                               | A operação foi bem-sucedida.<br/>                                      |
 | <dl> <dt>**E \_ FALHA**</dt> <dt>0x80004005</dt> </dl>                    | Ocorreu um erro inesperado.<br/>                                  |
@@ -76,7 +76,7 @@ Esse método pode retornar um desses valores.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

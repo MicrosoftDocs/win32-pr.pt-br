@@ -69,7 +69,7 @@ Para salvar os contadores atuais no monitor do sistema em um arquivo HTML, chame
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

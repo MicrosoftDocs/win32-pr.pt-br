@@ -60,7 +60,7 @@ As instâncias duplicadas serão monitoradas apenas se você usar o caractere cu
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
