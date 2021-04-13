@@ -1,0 +1,91 @@
+---
+description: Os Estados de efeito são pares de nome-valor na forma de uma expressão.
+ms.assetid: 4612c6bd-bc1f-42ad-8465-c0d4b577d1db
+title: Grupos de estado de efeito (Direct3D 10)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: c132db3a5258cbe3573ddc5103df8b3cbcf2085d
+ms.sourcegitcommit: 628fda3e63fd1d513ce9a5f55be8bbc4af4b2a4b
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "104297997"
+---
+# <a name="effect-state-groups-direct3d-10"></a>Grupos de estado de efeito (Direct3D 10)
+
+Os Estados de efeito são pares de nome-valor na forma de uma expressão.
+
+## <a name="blend-state"></a>Estado do Blend
+
+| | |
+|-|-|
+| **ALPHATOCOVERAGEENABLE**, **BLENDENABLE**, **SRCBLEND**, **DESTBLEND**, **BLENDOP**, **SRCBLENDALPHA**, **DESTBLENDALPHA**, **BLENDOPALPHA**, **RENDERTARGETWRITEMASK** | Membros de [ **d3d10 \_ Blend \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_blend_desc) |
+
+## <a name="depth-and-stencil-state"></a>Profundidade e estado do estêncil
+
+| | |
+|-|-|
+| **DEPTHENABLE**, **DEPTHWRITEMASK**, **DEPTHFUNC**, **STENCILENABLE**, **STENCILREADMASK**, **STENCILWRITEMASK** | Membros do [ **\_ estêncil de profundidade d3d10 \_ \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencil_desc) |
+| FRONTFACESTENCILFAIL * *, **FRONTFACESTENCILZFAIL**, **FRONTFACESTENCILPASS**, **FRONTFACESTENCILFUNC**, **BACKFACESTENCILFAIL**, **BACKFACESTENCILZFAIL**, **BACKFACESTENCILPASS**, **BACKFACESTENCILFUNC** | Membro de [ **d3d10 \_ profundidade \_ STENCILOP \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencilop_desc) |
+
+## <a name="rasterizer-state"></a>Estado do rasterizador
+
+| | |
+|-|-|
+| FILLMODE | [**\_Modo de preenchimento d3d10 \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_fill_mode) |
+| De seleção | [**\_Modo de seleção de d3d10 \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_cull_mode) |
+| **FRONTCOUNTERCLOCKWISE**, **DEPTHBIAS**, **DEPTHBIASCLAMP**, **SLOPESCALEDDEPTHBIAS**, **ZCLIPENABLE**, **SCISSORENABLE**, **MULTISAMPLEENABLE**, **ANTIALIASEDLINEENABLE** | Membros do [ **\_ rasterizador d3d10 \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc) |
+
+## <a name="sampler-state"></a>Estado de amostra
+
+| | |
+|-|-|
+| **Filtro**, **endereçou**, **AddressV**, **AddressW**, **MipLODBias**, **MaxAnisotropy**, **ComparisonFunc**, **BorderColor**, **MinLOD**, **MaxLOD** | Membros de [ **amostra de d3d10 \_ \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_sampler_desc) |
+
+Consulte [tipo de amostra (DirectX HLSL)](../direct3dhlsl/dx-graphics-hlsl-sampler.md) para obter exemplos.
+
+## <a name="effect-object-state"></a>Estado do objeto de efeito
+
+| Este objeto de efeito | É mapeada para |
+|-|-|
+| RASTERIZERSTATE | Um objeto de estado de [estado do rasterizador](#rasterizer-state) . |
+| DEPTHSTENCILSTATE | Um objeto de estado de [estado de profundidade e de estêncil](#depth-and-stencil-state) . |
+| BLENDstate | Um objeto de estado de [estado de mistura](#blend-state) . |
+| VERTEXSHADER | Um objeto de sombreador de vértice compilado. |
+| PIXELSHADER | Um objeto de sombreador de pixel compilado. |
+| GEOMETRYSHADER | Um objeto de sombreador Geometry compilado. |
+| DS \_ STENCILREF AB \_ BLENDFACTOR AB \_ SAMPLEMASK | Membros de [**d3d10 \_ Pass \_ desc**](/windows/desktop/api/d3d10effect/ns-d3d10effect-d3d10_pass_desc). |
+
+## <a name="defining-and-using-state-objects"></a>Definindo e usando objetos de estado
+
+Os objetos de estado são declarados em arquivos FX no formato a seguir. *StateObjectType* é um dos Estados listados acima e *MemberName* é o nome de qualquer membro que terá um valor não padrão.
+
+```
+StateObjectType ObjectName {
+ MemberName = value;
+ ...
+ MemberName = value;
+};
+```
+
+Por exemplo, para configurar um objeto de estado de mistura com AlphaToCoverageEnable e BlendEnable \[ 0 \] definido como **false**, o código a seguir seria usado.
+
+```
+BlendState NoBlend {
+ AlphaToCoverageEnable = FALSE;
+ BlendEnable[0] = FALSE;
+};
+```
+
+O objeto de estado é aplicado a uma passagem de técnica usando uma das funções de FileState, descritas na [sintaxe de técnica de efeito (Direct3D 10)](d3d10-effect-technique-syntax.md). Por exemplo, para aplicar o objeto Blendstate descrito acima, o código a seguir seria usado.
+
+```
+SetBlendState( NoBlend, float4( 0.0f, 0.0f, 0.0f, 0.0f ), 0xFFFFFFFF );
+```
+
+Para obter um tutorial que descreve o uso de Estados, consulte [Gerenciamento de estado](https://msdn.microsoft.com/library/Ee416550(v=VS.85).aspx).
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+* [Sintaxe da técnica de efeito](d3d10-effect-technique-syntax.md)
+* [Formato de efeito (Direct3D 10)](d3d10-effect-format.md)
