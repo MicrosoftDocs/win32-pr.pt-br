@@ -1,0 +1,99 @@
+---
+title: 'Função Texture2DMSArray:: Load (int, int, int, uint)'
+description: 'Lê os dados de textura e retorna o status da operação. | Função Texture2DMSArray:: Load (int, int, int, uint)'
+ms.assetid: F5EA2FFF-7E43-4A34-9358-EA54382641DC
+keywords:
+- Carregar função HLSL
+topic_type:
+- apiref
+api_name:
+- Load
+api_type:
+- NA
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: 0065ee5e420c67876b87c67be1f5e5c8ff10e65b
+ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "104989150"
+---
+# <a name="texture2dmsarrayloadintintintuint-function"></a><span data-ttu-id="ca3ac-105">Função Texture2DMSArray:: Load (int, int, int, uint)</span><span class="sxs-lookup"><span data-stu-id="ca3ac-105">Texture2DMSArray::Load(int,int,int,uint) function</span></span>
+
+<span data-ttu-id="ca3ac-106">Lê os dados de textura e retorna o status da operação.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-106">Reads texture data and returns status of the operation.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="ca3ac-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="ca3ac-107">Syntax</span></span>
+
+
+``` syntax
+ Load(
+  in  int  Location,
+  in  int  sampleindex,
+  in  int  Offset,
+  out uint Status
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="ca3ac-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ca3ac-108">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="ca3ac-109">*Local* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="ca3ac-109">*Location* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="ca3ac-110">Tipo: **int**</span><span class="sxs-lookup"><span data-stu-id="ca3ac-110">Type: **int**</span></span>
+
+<span data-ttu-id="ca3ac-111">As coordenadas de textura.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-111">The texture coordinates.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="ca3ac-112">*sampleindex* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="ca3ac-112">*sampleindex* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="ca3ac-113">Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**</span><span class="sxs-lookup"><span data-stu-id="ca3ac-113">Type: **[**int**](/windows/desktop/WinProg/windows-data-types)**</span></span>
+
+<span data-ttu-id="ca3ac-114">O índice de exemplo.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-114">The sample index.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="ca3ac-115">*Deslocamento* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="ca3ac-115">*Offset* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="ca3ac-116">Tipo: **int**</span><span class="sxs-lookup"><span data-stu-id="ca3ac-116">Type: **int**</span></span>
+
+<span data-ttu-id="ca3ac-117">Um deslocamento aplicado às coordenadas de textura antes da amostragem.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-117">An offset applied to the texture coordinates before sampling.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="ca3ac-118">*Status* \[ do fora\]</span><span class="sxs-lookup"><span data-stu-id="ca3ac-118">*Status* \[out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="ca3ac-119">Tipo: **uint**</span><span class="sxs-lookup"><span data-stu-id="ca3ac-119">Type: **uint**</span></span>
+
+<span data-ttu-id="ca3ac-120">O status da operação.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-120">The status of the operation.</span></span> <span data-ttu-id="ca3ac-121">Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) .</span><span class="sxs-lookup"><span data-stu-id="ca3ac-121">You can't access the status directly; instead, pass the status to the [**CheckAccessFullyMapped**](checkaccessfullymapped.md) intrinsic function.</span></span> <span data-ttu-id="ca3ac-122">**CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features).</span><span class="sxs-lookup"><span data-stu-id="ca3ac-122">**CheckAccessFullyMapped** returns **TRUE** if all values from the corresponding **Sample**, **Gather**, or **Load** operation accessed mapped tiles in a [tiled resource](/windows/desktop/direct3d11/direct3d-11-2-features).</span></span> <span data-ttu-id="ca3ac-123">Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.</span><span class="sxs-lookup"><span data-stu-id="ca3ac-123">If any values were taken from an unmapped tile, **CheckAccessFullyMapped** returns **FALSE**.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="ca3ac-124">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="ca3ac-124">Return value</span></span>
+
+<span data-ttu-id="ca3ac-125">Tipo:</span><span class="sxs-lookup"><span data-stu-id="ca3ac-125">Type:</span></span>
+
+<span data-ttu-id="ca3ac-126">O tipo de retorno corresponde ao tipo na declaração para o objeto [**Texture2DMSArray**](sm5-object-texture2dmsarray.md) .</span><span class="sxs-lookup"><span data-stu-id="ca3ac-126">The return type matches the type in the declaration for the [**Texture2DMSArray**](sm5-object-texture2dmsarray.md) object.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="ca3ac-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="ca3ac-127">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ca3ac-128">Métodos de carregamento</span><span class="sxs-lookup"><span data-stu-id="ca3ac-128">Load methods</span></span>](texture2dmsarray-load.md)
+</dt> <dt>
+
+[<span data-ttu-id="ca3ac-129">**Texture2DMSArray**</span><span class="sxs-lookup"><span data-stu-id="ca3ac-129">**Texture2DMSArray**</span></span>](sm5-object-texture2dmsarray.md)
+</dt> </dl>
+
+ 
+
+ 
