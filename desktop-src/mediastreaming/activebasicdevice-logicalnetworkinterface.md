@@ -24,13 +24,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104369541"
 ---
-# <a name="activebasicdevicelogicalnetworkinterface-property"></a><span data-ttu-id="3bfe6-106">Propriedade ActiveBasicDevice:: LogicalNetworkInterface</span><span class="sxs-lookup"><span data-stu-id="3bfe6-106">ActiveBasicDevice::LogicalNetworkInterface property</span></span>
+# <a name="activebasicdevicelogicalnetworkinterface-property"></a><span data-ttu-id="baea6-106">Propriedade ActiveBasicDevice:: LogicalNetworkInterface</span><span class="sxs-lookup"><span data-stu-id="baea6-106">ActiveBasicDevice::LogicalNetworkInterface property</span></span>
 
-<span data-ttu-id="3bfe6-107">Obtém a ID da interface de rede lógica.</span><span class="sxs-lookup"><span data-stu-id="3bfe6-107">Gets the id of the logical network interface.</span></span>
+<span data-ttu-id="baea6-107">Obtém a ID da interface de rede lógica.</span><span class="sxs-lookup"><span data-stu-id="baea6-107">Gets the id of the logical network interface.</span></span>
 
-<span data-ttu-id="3bfe6-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="3bfe6-108">This property is read-only.</span></span>
+<span data-ttu-id="baea6-108">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="baea6-108">This property is read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3bfe6-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="3bfe6-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="baea6-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="baea6-109">Syntax</span></span>
 
 
 ```C++
@@ -41,29 +41,29 @@ HRESULT get_LogicalNetworkInterface(
 
 
 
-## <a name="property-value"></a><span data-ttu-id="3bfe6-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="3bfe6-110">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="baea6-110">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="baea6-110">Property value</span></span>
 
-<span data-ttu-id="3bfe6-111">Um ponteiro para um **GUID** que especifica a ID da interface de rede lógica.</span><span class="sxs-lookup"><span data-stu-id="3bfe6-111">A pointer to a **GUID** that specifies the id of the logical network interface.</span></span>
+<span data-ttu-id="baea6-111">Um ponteiro para um **GUID** que especifica a ID da interface de rede lógica.</span><span class="sxs-lookup"><span data-stu-id="baea6-111">A pointer to a **GUID** that specifies the id of the logical network interface.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="3bfe6-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3bfe6-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="baea6-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="baea6-112">Requirements</span></span>
 
 
 
-| <span data-ttu-id="3bfe6-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="3bfe6-113">Requirement</span></span> | <span data-ttu-id="3bfe6-114">Valor</span><span class="sxs-lookup"><span data-stu-id="3bfe6-114">Value</span></span> |
+| <span data-ttu-id="baea6-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="baea6-113">Requirement</span></span> | <span data-ttu-id="baea6-114">Valor</span><span class="sxs-lookup"><span data-stu-id="baea6-114">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3bfe6-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3bfe6-115">Minimum supported client</span></span><br/> | <span data-ttu-id="3bfe6-116">Windows 8.1 \[ apenas aplicativos de área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="3bfe6-116">Windows 8.1 \[desktop apps only\]</span></span><br/>                                                |
-| <span data-ttu-id="3bfe6-117">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3bfe6-117">Minimum supported server</span></span><br/> | <span data-ttu-id="3bfe6-118">\[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]</span><span class="sxs-lookup"><span data-stu-id="3bfe6-118">Windows Server 2012 R2 \[desktop apps only\]</span></span><br/>                                     |
-| <span data-ttu-id="3bfe6-119">parâmetro</span><span class="sxs-lookup"><span data-stu-id="3bfe6-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="3bfe6-120"><dt>PlayToDevice. h</dt></span><span class="sxs-lookup"><span data-stu-id="3bfe6-120"><dt>PlayToDevice.h</dt></span></span> </dl>   |
-| <span data-ttu-id="3bfe6-121">INSERI</span><span class="sxs-lookup"><span data-stu-id="3bfe6-121">IDL</span></span><br/>                      | <dl> <span data-ttu-id="3bfe6-122"><dt>PlayToDevice. idl</dt></span><span class="sxs-lookup"><span data-stu-id="3bfe6-122"><dt>PlayToDevice.idl</dt></span></span> </dl> |
-| <span data-ttu-id="3bfe6-123">DLL</span><span class="sxs-lookup"><span data-stu-id="3bfe6-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="3bfe6-124"><dt>Playtodevice.dll</dt></span><span class="sxs-lookup"><span data-stu-id="3bfe6-124"><dt>Playtodevice.dll</dt></span></span> </dl> |
+| <span data-ttu-id="baea6-115">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="baea6-115">Minimum supported client</span></span><br/> | <span data-ttu-id="baea6-116">Windows 8.1 \[ apenas aplicativos de área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="baea6-116">Windows 8.1 \[desktop apps only\]</span></span><br/>                                                |
+| <span data-ttu-id="baea6-117">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="baea6-117">Minimum supported server</span></span><br/> | <span data-ttu-id="baea6-118">\[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]</span><span class="sxs-lookup"><span data-stu-id="baea6-118">Windows Server 2012 R2 \[desktop apps only\]</span></span><br/>                                     |
+| <span data-ttu-id="baea6-119">parâmetro</span><span class="sxs-lookup"><span data-stu-id="baea6-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="baea6-120"><dt>PlayToDevice. h</dt></span><span class="sxs-lookup"><span data-stu-id="baea6-120"><dt>PlayToDevice.h</dt></span></span> </dl>   |
+| <span data-ttu-id="baea6-121">INSERI</span><span class="sxs-lookup"><span data-stu-id="baea6-121">IDL</span></span><br/>                      | <dl> <span data-ttu-id="baea6-122"><dt>PlayToDevice. idl</dt></span><span class="sxs-lookup"><span data-stu-id="baea6-122"><dt>PlayToDevice.idl</dt></span></span> </dl> |
+| <span data-ttu-id="baea6-123">DLL</span><span class="sxs-lookup"><span data-stu-id="baea6-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="baea6-124"><dt>Playtodevice.dll</dt></span><span class="sxs-lookup"><span data-stu-id="baea6-124"><dt>Playtodevice.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="3bfe6-125">Consulte também</span><span class="sxs-lookup"><span data-stu-id="3bfe6-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="baea6-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="baea6-125">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="3bfe6-126">[**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="3bfe6-126">[**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85))</span></span>
+<span data-ttu-id="baea6-126">[**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="baea6-126">[**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85))</span></span>
 </dt> </dl>
 
  
