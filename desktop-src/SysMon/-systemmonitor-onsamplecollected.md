@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "104455317"
 ---
-# <a name="systemmonitoronsamplecollected-event"></a><span data-ttu-id="91e1e-106">Evento SystemMonitor. OnSampleCollected</span><span class="sxs-lookup"><span data-stu-id="91e1e-106">SystemMonitor.OnSampleCollected event</span></span>
+# <a name="systemmonitoronsamplecollected-event"></a><span data-ttu-id="c369e-106">Evento SystemMonitor. OnSampleCollected</span><span class="sxs-lookup"><span data-stu-id="c369e-106">SystemMonitor.OnSampleCollected event</span></span>
 
-<span data-ttu-id="91e1e-107">Notifica você quando os valores de exemplo para os contadores foram coletados.</span><span class="sxs-lookup"><span data-stu-id="91e1e-107">Notifies you when sample values for the counters have been collected.</span></span>
+<span data-ttu-id="c369e-107">Notifica você quando os valores de exemplo para os contadores foram coletados.</span><span class="sxs-lookup"><span data-stu-id="c369e-107">Notifies you when sample values for the counters have been collected.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="91e1e-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="91e1e-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c369e-108">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c369e-108">Syntax</span></span>
 
 
 ```VB
@@ -36,37 +36,37 @@ SystemMonitor.OnSampleCollected()
 
 
 
-## <a name="parameters"></a><span data-ttu-id="91e1e-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="91e1e-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c369e-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c369e-109">Parameters</span></span>
 
-<span data-ttu-id="91e1e-110">Este evento não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="91e1e-110">This event has no parameters.</span></span>
+<span data-ttu-id="c369e-110">Este evento não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="c369e-110">This event has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="91e1e-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="91e1e-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c369e-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c369e-111">Return value</span></span>
 
-<span data-ttu-id="91e1e-112">Esse evento não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="91e1e-112">This event does not return a value.</span></span>
+<span data-ttu-id="c369e-112">Esse evento não retorna um valor.</span><span class="sxs-lookup"><span data-stu-id="c369e-112">This event does not return a value.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="91e1e-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="91e1e-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="c369e-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c369e-113">Requirements</span></span>
 
 
 
-| <span data-ttu-id="91e1e-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="91e1e-114">Requirement</span></span> | <span data-ttu-id="91e1e-115">Valor</span><span class="sxs-lookup"><span data-stu-id="91e1e-115">Value</span></span> |
+| <span data-ttu-id="c369e-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="c369e-114">Requirement</span></span> | <span data-ttu-id="c369e-115">Valor</span><span class="sxs-lookup"><span data-stu-id="c369e-115">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="91e1e-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="91e1e-116">Minimum supported client</span></span><br/> | <span data-ttu-id="91e1e-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="91e1e-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
-| <span data-ttu-id="91e1e-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="91e1e-118">Minimum supported server</span></span><br/> | <span data-ttu-id="91e1e-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="91e1e-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="91e1e-120">DLL</span><span class="sxs-lookup"><span data-stu-id="91e1e-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="91e1e-121"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="91e1e-121"><dt>Sysmon.ocx</dt></span></span> </dl> |
+| <span data-ttu-id="c369e-116">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c369e-116">Minimum supported client</span></span><br/> | <span data-ttu-id="c369e-117">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="c369e-117">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                            |
+| <span data-ttu-id="c369e-118">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="c369e-118">Minimum supported server</span></span><br/> | <span data-ttu-id="c369e-119">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="c369e-119">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="c369e-120">DLL</span><span class="sxs-lookup"><span data-stu-id="c369e-120">DLL</span></span><br/>                      | <dl> <span data-ttu-id="c369e-121"><dt>Sysmon. ocx</dt></span><span class="sxs-lookup"><span data-stu-id="c369e-121"><dt>Sysmon.ocx</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="91e1e-122">Consulte também</span><span class="sxs-lookup"><span data-stu-id="91e1e-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c369e-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="c369e-122">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="91e1e-123">**SystemMonitor.CollectSample**</span><span class="sxs-lookup"><span data-stu-id="91e1e-123">**SystemMonitor.CollectSample**</span></span>](systemmonitor-collectsample.md)
+[<span data-ttu-id="c369e-123">**SystemMonitor.CollectSample**</span><span class="sxs-lookup"><span data-stu-id="c369e-123">**SystemMonitor.CollectSample**</span></span>](systemmonitor-collectsample.md)
 </dt> <dt>
 
-[<span data-ttu-id="91e1e-124">**SystemMonitor.ManualUpdate**</span><span class="sxs-lookup"><span data-stu-id="91e1e-124">**SystemMonitor.ManualUpdate**</span></span>](systemmonitor-manualupdate.md)
+[<span data-ttu-id="c369e-124">**SystemMonitor.ManualUpdate**</span><span class="sxs-lookup"><span data-stu-id="c369e-124">**SystemMonitor.ManualUpdate**</span></span>](systemmonitor-manualupdate.md)
 </dt> <dt>
 
-[<span data-ttu-id="91e1e-125">**SystemMonitor.UpdateGraph**</span><span class="sxs-lookup"><span data-stu-id="91e1e-125">**SystemMonitor.UpdateGraph**</span></span>](systemmonitor-updategraph.md)
+[<span data-ttu-id="c369e-125">**SystemMonitor.UpdateGraph**</span><span class="sxs-lookup"><span data-stu-id="c369e-125">**SystemMonitor.UpdateGraph**</span></span>](systemmonitor-updategraph.md)
 </dt> </dl>
 
  
