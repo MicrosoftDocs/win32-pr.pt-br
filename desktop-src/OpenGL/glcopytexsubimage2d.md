@@ -113,7 +113,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                                                                                                                                                                     |
+| Nome                                                                                                  | Significado                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *destino* não era um valor aceito.<br/>                                                                                                                                                                                                                                                                              |
 | <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | o *nível* era menor que zero ou maior que o *log* 2 (*Max*), em que *Max* é o valor retornado do \_ tamanho de textura Max GL \_ \_ .<br/>                                                                                                                                                                                          |
@@ -163,7 +163,7 @@ As funções a seguir recuperam informações relacionadas ao **glCopyTexSubImag
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

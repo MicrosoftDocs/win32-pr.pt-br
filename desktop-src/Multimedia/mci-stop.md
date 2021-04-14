@@ -86,7 +86,7 @@ Para o dispositivo de áudio de CD, \_ o MCI Stop redefine a posição da faixa 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

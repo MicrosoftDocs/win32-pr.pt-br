@@ -89,7 +89,7 @@ Os aplicativos devem passar *wParam* para [**TranslateMessage**](/windows/deskto
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

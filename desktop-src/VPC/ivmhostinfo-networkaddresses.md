@@ -1,34 +1,34 @@
 ---
-title: Propriedade IVMHostInfo DVDDrives (VPCCOMInterfaces. h)
-description: Recupera as letras da unidade associadas aos dispositivos de CD e DVD do host.
-ms.assetid: 17f01d00-2c02-48f0-bfe9-0326a40fdf55
+title: Propriedade IVMHostInfo NetworkAddresses (VPCCOMInterfaces. h)
+description: Recupera uma coleção enumerável de endereços TCP/IP no computador host.
+ms.assetid: 94716b82-8f35-4702-873d-64507d879dc3
 keywords:
-- Propriedade DVDDrives Virtual PC
-- Propriedade DVDDrives Virtual PC, interface IVMHostInfo
-- IVMHostInfo interface virtual PC, Propriedade DVDDrives
+- Propriedade NetworkAddresses Virtual PC
+- Propriedade NetworkAddresses Virtual PC, interface IVMHostInfo
+- IVMHostInfo interface virtual PC, Propriedade NetworkAddresses
 topic_type:
 - apiref
 api_name:
-- IVMHostInfo.DVDDrives
-- IVMHostInfo.get_DVDDrives
+- IVMHostInfo.NetworkAddresses
+- IVMHostInfo.get_NetworkAddresses
 api_location:
 - VPCCOMInterfaces.h
 api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bb9380773934b63ae637d32ec5acfef5112f2d0
+ms.openlocfilehash: 824bedf8433c1025e1f4afc1e624c27606b8d0d0
 ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369603"
+ms.locfileid: "104369196"
 ---
-# <a name="ivmhostinfodvddrives-property"></a>IVMHostInfo: Propriedade VDDrives de:D
+# <a name="ivmhostinfonetworkaddresses-property"></a>Propriedade IVMHostInfo:: NetworkAddresses
 
 \[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera as letras da unidade associadas aos dispositivos de CD e DVD do host.
+Recupera uma coleção enumerável de endereços TCP/IP no computador host.
 
 Esta propriedade é somente para leitura.
 
@@ -36,8 +36,8 @@ Esta propriedade é somente para leitura.
 
 
 ```C++
-HRESULT get_DVDDrives(
-  [out, retval] VARIANT *DVDDrives
+HRESULT get_NetworkAddresses(
+  [out, retval] VARIANT *hostAddresses
 );
 ```
 
@@ -45,7 +45,7 @@ HRESULT get_DVDDrives(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma matriz de letras de unidade.
+Uma matriz de endereços TCP/IP, em notação decimal pontilhada.
 
 ## <a name="error-codes"></a>Códigos do Erro
 

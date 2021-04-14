@@ -71,7 +71,7 @@ O uso de deslocamentos em vez de ponteiros permite uma fácil serialização do 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
