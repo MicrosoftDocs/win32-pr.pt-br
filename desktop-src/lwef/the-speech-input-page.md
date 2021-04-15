@@ -1,0 +1,28 @@
+---
+title: A página de entrada de fala
+description: A página de entrada de fala
+ms.assetid: 9ff59e5b-d5c1-4f92-bd5a-8c525482624a
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 94503be636b2aa8182d1b14092bf9aa8b8c04a8a
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104569513"
+---
+# <a name="the-speech-input-page"></a>A página de entrada de fala
+
+\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+
+Um usuário pode ajustar as opções de entrada de fala nesta página de propriedades. O usuário pode desabilitar a entrada de fala, definir a chave de entrada de escuta, escolher se deseja exibir a janela da dica de escuta e optar por reproduzir um tom de MIDI para indicar quando a entrada de fala está disponível.
+
+![caixa de diálogo Opções avançadas de caractere](images/f6sipp.gif)
+
+ 
+
+ 
+
+
+
+
