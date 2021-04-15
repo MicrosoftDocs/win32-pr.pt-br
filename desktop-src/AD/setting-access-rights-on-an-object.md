@@ -1,0 +1,52 @@
+---
+title: Configurando direitos de acesso em um objeto
+description: Este tópico descreve como criar uma ACE para um direito de acesso e definir essa ACE na DACL de um objeto.
+ms.assetid: c0b45709-4652-46c7-8d52-44076802d109
+ms.tgt_platform: multiple
+keywords:
+- Configurando direitos de acesso em um anúncio de objeto
+- AD de objetos, configurando direitos de acesso em um objeto
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2bcf54de381dab2af1dab4ea44654fb0a5682f06
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "104453902"
+---
+# <a name="setting-access-rights-on-an-object"></a>Configurando direitos de acesso em um objeto
+
+Ao usar os objetos COM ADSI [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) (descritor de segurança), [**IADsAccessControlList**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrollist) (DACLs e SACLs) e [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) (ACE) para adicionar uma ACE a uma ACL, você está fazendo alterações na propriedade **nTSecurityDescriptor** do objeto especificado no cache de propriedades. Isso significa colocar métodos nos objetos que contêm a nova ACE e o método [**IADs. setinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) deve ser chamado para gravar o descritor de segurança atualizado no diretório do cache de propriedades.
+
+Para obter mais informações e um exemplo de código que define uma ACE em um objeto em Active Directory Domain Services, consulte [código de exemplo para definir uma ACE em um objeto de diretório](example-code-for-setting-an-ace-on-a-directory-object.md).
+
+Use o seguinte processo geral para criar uma ACE para um direito de acesso e definir essa ACE na DACL de um objeto.
+
+1.  Obtenha um ponteiro de interface [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para o objeto.
+2.  Use o método [**IADs. Get**](/windows/desktop/api/iads/nf-iads-iads-get) para obter o descritor de segurança do objeto. O nome da propriedade que contém o descritor de segurança é **nTSecurityDescriptor**. A propriedade será retornada como uma [**variante**](/windows/win32/api/oaidl/ns-oaidl-variant) que contém um ponteiro [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) (o membro **VT** é **\_ despacho VT**). Chame **QueryInterface** nesse ponteiro **IDispatch** para obter uma interface [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para usar os métodos nessa interface para acessar a ACL do descritor de segurança.
+3.  Use a propriedade [**IADsSecurityDescriptor. DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) para obter a DACL. O método retorna um ponteiro [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . Chame **QueryInterface** nesse ponteiro **IDispatch** para obter uma interface [**IADsAccessControlList**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrollist) para usar os métodos nessa interface para acessar as ACEs individuais na ACL.
+4.  Use [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para criar o objeto com ADSI para a nova Ace e obter um ponteiro de interface [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) para esse objeto. Lembre-se de que a ID de classe é CLSID \_ AccessControlEntry.
+5.  Defina as propriedades da ACE usando os métodos [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) :
+
+    1.  Use [**IADsAccessControlEntry::p UT \_ Trustee**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para definir o Trustee ao qual essa Ace se aplica. O objeto de confiança é um usuário, grupo ou outra entidade de segurança. Seu aplicativo deve usar o valor da propriedade apropriada do objeto de usuário ou grupo de objetos de confiança aos quais você deseja aplicar a ACE. O Trustee é especificado como um **BSTR** e pode assumir os seguintes formatos:
+        -   Conta de domínio (o nome de logon usado em uma versão anterior do Windows NT) no formato " <domain> \\ <user account> ", em que " &lt; domínio &gt; " é o nome do domínio do Windows NT que contém o usuário e " &lt; conta de usuário &gt; " é a propriedade **sAMAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
+        -   Entidade de segurança bem conhecida que representa identidades especiais definidas pelo sistema de segurança do Windows NT, como todos, sistema local, principal usuário autenticado, proprietário criador e assim por diante. Os objetos que representam as entidades de segurança conhecidas são armazenados no contêiner de entidades de segurança bem conhecidas sob o contêiner de configuração. Por exemplo, logon anônimo.
+        -   Grupo interno que representa os grupos de usuários internos definidos pelo sistema de segurança do Windows NT. Ele tem o formato "BUILTIN \\ <group name> " onde " &lt; nome &gt; do grupo" é o nome do grupo de usuários interno. Os objetos que representam os grupos internos são armazenados no contêiner interno abaixo do contêiner de domínio. Por exemplo, " \\ Administradores internos".
+        -   SID (formato de cadeia de caracteres) do usuário especificado, que é a propriedade **ObjectID** do usuário especificado. Você pode converter para formulário de cadeia de caracteres usando a função [**ConvertSidToStringSid**](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida) na API de segurança do Win32. Por exemplo: "S-1-5-32-548".
+    2.  Use a propriedade [**IADsAccessControlEntry. AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para definir a máscara que especifica o direito de acesso. A enumeração de [**\_ \_ enumeração de direitos de ADS**](/windows/win32/api/iads/ne-iads-ads_rights_enum) especifica os direitos de acesso que podem ser definidos em um objeto de diretório.
+    3.  Use a propriedade [**IADsAccessControlEntry. AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para especificar se deseja permitir ou negar os direitos de acesso definidos por **AccessMask**. Para direitos padrão, pode ser **ADS \_ ACETYPE \_ acesso \_ permitido** ou **anúncios \_ ACETYPE \_ acesso \_ negado**. Para direitos específicos do objeto (direitos que se aplicam a uma parte específica de um objeto ou a um tipo específico de objeto), use o **\_ \_ \_ \_ objeto permitido pelo ADS ACETYPE Access** ou o **\_ \_ \_ \_ objeto acesso negado do ADS ACETYPE**. A enumeração de [**\_ \_ Enumeração ADS ACETYPE**](/windows/win32/api/iads/ne-iads-ads_acetype_enum) especifica os tipos de acesso que você pode definir em uma ACE.
+    4.  Use a propriedade [**IADsAccessControlEntry. AceFlags**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para especificar se outros contêineres ou objetos abaixo do objeto especificado podem herdar a Ace. A enumeração de [**\_ \_ Enumeração ADS ACEFLAG**](/windows/win32/api/iads/ne-iads-ads_aceflag_enum) especifica os sinalizadores de herança que podem ser definidos em uma ACE.
+    5.  Use a propriedade [**IADsAccessControlEntry. Flags**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para especificar se o direito se aplica a uma parte específica do objeto, um tipo de objeto herdado ou ambos.
+    6.  Se **sinalizadores** estiverem definidos para **o \_ tipo de objeto sinalizador ADS \_ \_ \_ presente**, defina a propriedade [**IADsAccessControlEntry. ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) o especificar uma cadeia de caracteres que contém o GUID da classe de objeto (para **anúncios, direito de \_ \_ criação de DS \_ \_** ou **AD de \_ \_ \_ exclusão \_ filho**), propriedade, conjunto de propriedades, gravação validada ou direito estendido ao qual a Ace se aplica. O GUID deve ser especificado como uma cadeia de caracteres do formulário produzido pela função [**StringFromGUID2**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2) na biblioteca com.
+    7.  Se **flags** estiver definido como **ADS \_ sinalizar \_ tipo de objeto herdado \_ \_ \_ presente**, defina a propriedade [**IADsAccessControlEntry. InheritedObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para especificar uma cadeia de caracteres que contenha o GUID da classe de objeto herdada à qual a Ace se aplica. O GUID deve ser especificado como uma cadeia de caracteres do formulário produzido pela função [**StringFromGUID2**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2) na biblioteca com.
+
+6.  Use o método **QueryInterface** no objeto [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) para obter um ponteiro [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . O método [**IADsAccessControlList. AddAce**](/windows/desktop/api/iads/nf-iads-iadsaccesscontrollist-addace) requer um ponteiro de interface **IDISPATCH** para a Ace.
+7.  Use [**IADsAccessControlList. AddAce**](/windows/desktop/api/iads/nf-iads-iadsaccesscontrollist-addace) para adicionar a nova Ace à DACL. Lembre-se de que a ordem das ACEs dentro da ACL pode afetar a avaliação do acesso ao objeto. O acesso correto ao objeto pode exigir que você crie uma nova ACL, adicione as ACEs da ACL existente na ordem correta à nova ACL e, em seguida, substitua a ACL existente no descritor de segurança pela nova ACL. Para obter mais informações, consulte [ordem das ACEs em uma DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
+8.  Use a propriedade [**IADsSecurityDescriptor. DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) para gravar a DACL que contém a nova Ace para o descritor de segurança. Para obter mais informações sobre DACLs, consulte [DACLs nulas e DACLs vazias](null-dacls-and-empty-dacls.md).
+9.  Use o método [**IADs. put**](/windows/desktop/api/iads/nf-iads-iads-put) para gravar o descritor de segurança na propriedade **nTSecurityDescriptor** do objeto no cache de propriedades.
+10. Use o método [**IADs. setinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) para atualizar a propriedade no objeto no diretório.
+
+ 
+
+ 
