@@ -1,0 +1,52 @@
+---
+description: XMUSHORTN2 descreve um vetor 2D para armazenar valores normalizados não assinados como inteiros de 16 bits não assinados, (digite Int16 \_ t).
+ms.assetid: b13018c2-cb31-45d6-ba42-f94945a0b63b
+title: Extensões XMUSHORTN2
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 6a7035cf34697e83e861b4c734d1e62db88b23af
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104502327"
+---
+# <a name="xmushortn2-extensions"></a>Extensões XMUSHORTN2
+
+[**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) descreve um vetor 2D para armazenar valores normalizados não assinados como inteiros de 16 bits não assinados, (tipo `int16_t` ).
+
+> [!Note]  
+> Os recursos listados aqui só estão disponíveis ao desenvolver com C++.
+
+ 
+
+## <a name="in-this-section"></a>Nesta seção
+
+
+
+| Tópico                                                           | Descrição                                      |
+|-----------------------------------------------------------------|--------------------------------------------------|
+| [**Construtores XMUSHORTN2**](xmushortn2-ctor.md)<br/>   | Construtores expostos por `XMUSHORTN2` .<br/> |
+| [Operadores XMUSHORTN2](ovw-xmushortn2-operators.md)<br/> | Operadores expostos por `XMUSHORTN2` .<br/>    |
+
+
+
+ 
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+**Referência**
+</dt> <dt>
+
+[**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
