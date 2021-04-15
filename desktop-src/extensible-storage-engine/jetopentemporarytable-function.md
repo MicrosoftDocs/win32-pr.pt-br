@@ -1,0 +1,362 @@
+---
+description: 'Saiba mais sobre: função JetOpenTemporaryTable'
+title: Função JetOpenTemporaryTable
+TOCTitle: JetOpenTemporaryTable Function
+ms:assetid: feacd0b8-2298-4ec6-aa59-0fede08474bc
+ms:mtpsurl: https://msdn.microsoft.com/library/Gg294144(v=EXCHG.10)
+ms:contentKeyID: 32765758
+ms.date: 04/11/2016
+ms.topic: reference
+api_name:
+- JetOpenTemporaryTable
+topic_type:
+- apiref
+- kbArticle
+api_type:
+- COM
+- DLLExport
+api_location:
+- ESENT.DLL
+ROBOTS: INDEX,FOLLOW
+ms.openlocfilehash: 2335f6d6426b321d5db55b4ed005c6220484d509
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105761004"
+---
+# <a name="jetopentemporarytable-function"></a>Função JetOpenTemporaryTable
+
+
+_**Aplica-se a:** Windows | Windows Server_
+
+## <a name="jetopentemporarytable-function"></a>Função JetOpenTemporaryTable
+
+A função **JetOpenTemporaryTable** cria uma tabela volátil com um único índice que pode ser usado para armazenar e recuperar registros, assim como uma tabela comum que é criada por meio de [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md).
+
+**Windows Vista:** o **JetOpenTemporaryTable** é introduzido no Windows Vista.  
+
+As tabelas temporárias são mais rápidas do que as tabelas comuns devido à sua natureza volátil. Eles podem classificar e executar rapidamente a remoção duplicada em conjuntos de registros quando são acessados de forma puramente sequencial.
+
+```cpp
+    JET_ERR JET_API JetOpenTemporaryTable(
+      __in          JET_SESID sesid,
+      __in          JET_OPENTEMPORARYTABLE* popentemporarytable
+    );
+```
+
+### <a name="parameters"></a>Parâmetros
+
+*sesid*
+
+A sessão que será usada para esta chamada.
+
+*popentemporarytable*
+
+Um ponteiro para uma estrutura de [JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-structure.md) que contém a descrição da tabela temporária a ser criada na entrada. Após uma chamada bem-sucedida, a estrutura contém o identificador para a tabela temporária e as identificações de coluna.
+
+### <a name="return-value"></a>Valor Retornado
+
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Código de retorno</p></th>
+<th><p>Descrição</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>JET_errSuccess</p></td>
+<td><p>A operação foi concluída com sucesso.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errOutOfMemory</p></td>
+<td><p>A operação falhou porque não foi possível alocar memória suficiente para concluí-la.</p>
+<p><strong>JetOpenTemporaryTable</strong> pode retornar JET_errOutOfMemory se o espaço de endereço do processo do host se tornar muito fragmentado. O Gerenciador de tabelas temporárias alocará um bloco de 1 MB de espaço de endereço para cada tabela temporária criada, independentemente da quantidade de dados armazenada.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errInvalidParameter</p></td>
+<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou a combinação de vários valores de parâmetro resultou em um resultado inesperado.</p>
+<p>Esse erro é retornado por <strong>JetOpenTemporaryTable</strong> sob as seguintes condições:</p>
+<ul>
+<li><p>O membro <strong>cbStruct</strong> da estrutura de <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> não corresponde a uma versão dessa estrutura que é suportada por essa versão do mecanismo de banco de dados</p></li>
+<li><p>O membro <strong>cbKeyMost</strong> da estrutura de <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é menor que JET_cbKeyMostMin.</p></li>
+<li><p>O membro <strong>cbKeyMost</strong> da estrutura de <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é maior do que o maior valor com suporte para o tamanho da página do banco de dados da instância (JET_paramDatabasePageSize). Consulte o parâmetro JET_paramKeyMost na lista de <a href="gg269241(v=exchg.10).md">parâmetros informativos</a> para obter mais informações.</p></li>
+<li><p>O membro cbVarSegMac da estrutura de <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é maior do que o membro <strong>cbKeyMost</strong> .</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>JET_errNotInitialized</p></td>
+<td><p>A operação não pode ser concluída porque a instância que estava associada à sessão ainda não foi inicializada.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errClientRequestToStopJetService</p></td>
+<td><p>A operação não pode ser concluída porque toda a atividade da instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errInstanceUnavailable</p></td>
+<td><p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que requer que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
+<p><strong>Windows XP:</strong>  Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errTermInProgress</p></td>
+<td><p>A operação não pode ser concluída porque a instância associada à sessão está sendo desligada.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errRestoreInProgress</p></td>
+<td><p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errSessionSharingViolation</p></td>
+<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p>
+<p><strong>Windows XP:</strong>  Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errInvalidSesid</p></td>
+<td><p>O identificador de sessão é inválido ou se refere a uma sessão fechada.</p>
+<p><strong>Observação</strong>  Esse erro não é retornado em todas as circunstâncias. Os identificadores são validados apenas com base no melhor esforço.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errOutOfCursors</p></td>
+<td><p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para abrir um novo cursor. Os recursos de cursor são configurados usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269201(v=exchg.10).md">JET_paramMaxCursors</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errTooManySorts</p></td>
+<td><p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para criar uma tabela temporária. Os recursos de tabela temporária são configurados usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg294140(v=exchg.10).md">JET_paramMaxTemporaryTables</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errCannotMaterializeForwardOnlySort</p></td>
+<td><p><strong>JetOpenTemporaryTable</strong> falhou porque JET_bitTTForwardOnly foi especificado e a tabela temporária especificada não pôde ser criada usando a otimização somente de encaminhamento.</p>
+<p><strong>Windows Server 2003:</strong>  Esse erro só será retornado pelo Windows Server 2003 e por versões posteriores.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errTooManyColumns</p></td>
+<td><p>Foi feita uma tentativa de adicionar muitas colunas à tabela. Uma tabela não pode ter mais de JET_ccolFixedMost colunas fixas, não mais do que JET_ccolVarMost colunas de comprimento variável e não mais do que JET_ccolTaggedMost colunas marcadas.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errTooManyOpenTables</p></td>
+<td><p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para armazenar em cache o esquema da tabela. Para configurar o número de tabelas que têm esquemas que podem ser armazenados em cache, use <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269201(v=exchg.10).md">JET_paramMaxOpenTables</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errInvalidCodePage</p></td>
+<td><p>O membro <strong>CP</strong> da estrutura de <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como uma página de código válida. Os únicos valores válidos para colunas de texto são Inglês (1252) e Unicode (1200). Um valor de 0 significa que o padrão será usado (Inglês, 1252).</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errInvalidColumnType</p></td>
+<td><p>O membro <strong>coltyp</strong> da <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como um tipo de coluna válido.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errInvalidLanguageId</p></td>
+<td><p>Não foi possível criar o índice porque foi feita uma tentativa de usar uma identificação de localidade inválida. A ID de localidade pode ser completamente inválida ou o pacote de idiomas associado pode não estar instalado.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errInvalidLCMapStringFlags</p></td>
+<td><p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização.</p>
+<p><strong>Windows XP:</strong>  Esse erro só será retornado pelo Windows XP e por versões posteriores.</p>
+<p><strong>Windows 2000:</strong>  No Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef.</p></td>
+</tr>
+<tr class="even">
+<td><p>JET_errIndexInvalidDef</p></td>
+<td><p>Não foi possível criar o índice porque uma definição de índice inválida foi especificada. <strong>JetOpenTemporaryTable</strong> retornará esse erro nas seguintes condições:</p>
+<ul>
+<li><p>A localidade neutra do idioma é especificada.</p></li>
+<li><p>Um conjunto inválido de sinalizadores de normalização foi especificado.</p></li>
+</ul>
+<p><strong>Windows 2000:</strong>  Esse erro só será retornado pelo Windows 2000.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_errTooManyOpenIndexes</p></td>
+<td><p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para armazenar em cache os índices da tabela. Para configurar o número de índices que têm esquemas que podem ser armazenados em cache, use <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269201(v=exchg.10).md">JET_paramMaxOpenTables</a>.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+Em caso de sucesso, será retornado um cursor aberto na tabela temporária recém-criada. O estado do banco de dados temporário será preparado para conter a nova tabela temporária. O estado de qualquer banco de dados comum em uso pelo mecanismo de banco de dados permanecerá inalterado.
+
+Em caso de falha, a tabela temporária não será criada e um cursor não será retornado. O estado do banco de dados temporário pode ser alterado. O estado de qualquer banco de dados comum em uso pelo mecanismo de banco de dados permanecerá inalterado.
+
+#### <a name="remarks"></a>Comentários
+
+As tabelas temporárias não dão suporte ao complemento completo de opções de definição de coluna que normalmente são compatíveis com o mecanismo de banco de dados. Na verdade, somente JET_bitColumnFixed e JET_bitColumnTagged têm suporte. Isso significa que não é possível criar um incremento automático, uma versão ou uma coluna de valores múltiplos em uma tabela temporária. Finalmente, não há suporte para colunas de atualização de caução porque elas só podem ser usadas por uma sessão por vez. Se qualquer uma dessas opções for solicitada, elas serão ignoradas.
+
+As tabelas temporárias não dão suporte a valores padrão. Se for fornecida uma definição de coluna que contenha uma especificação de valor padrão, essa especificação será ignorada.
+
+As tabelas temporárias são retornadas ao chamador como resultado de muitas funções diferentes do ESE. Por exemplo, [JetGetIndexInfo](./jetgetindexinfo-function.md) com a opção JET_IdxInfo definida retornará uma tabela temporária contendo uma lista de todas as colunas de chave em um determinado índice. As tabelas temporárias seguem as mesmas regras de ciclo de vida que as tabelas temporárias comuns, conforme descrito aqui.
+
+As tabelas temporárias também são usadas internamente pelo mecanismo de banco de dados para muitas tarefas. A mais importante dessas tarefas é a criação de um índice em uma tabela existente. Uma tabela temporária será usada para classificar as chaves de índice que são usadas para construir esse índice.
+
+Todas as tabelas temporárias são armazenadas no banco de dados temporário. O banco de dados temporário é um arquivo de banco de dados especial que é mantido durante o tempo de vida de uma instância do ESE e é excluído quando essa instância é desligada ou reiniciada. O local do banco de dados temporário pode ser configurado usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) com [JET_paramTempPath](./temporary-database-parameters.md). O posicionamento do banco de dados temporário em disco em relação aos arquivos de log de transações e arquivos de banco de dados poderá ser importante se seu aplicativo fizer uso intensivo de tabelas temporárias ou criar índices com frequência.
+
+O ciclo de vida de uma tabela temporária é vinculado aos cursores que fazem referência a ela. Se todos os cursores que fazem referência a uma tabela temporária forem fechados, implicitamente ou explicitamente, a tabela temporária será excluída. Se uma tabela temporária for criada dentro de uma transação e essa transação for revertida posteriormente, a tabela temporária será excluída porque todos os cursores que fazem referência a ela neste momento serão fechados implicitamente. Novos cursores podem fazer referência a uma tabela temporária somente por meio do uso de [JetDupCursor](./jetdupcursor-function.md). Nesse caso, os novos cursores serão posicionados na primeira entrada de índice da tabela temporária. [JetDupCursor](./jetdupcursor-function.md) só funcionará durante determinadas fases de uso para a tabela temporária. Consulte os comentários sobre os recursos de cursor de tabela temporária para obter mais informações. Não é possível fazer referência a uma tabela temporária de mais de uma sessão por vez.
+
+**Cuidado**  Há um problema importante no [JetDupCursor](./jetdupcursor-function.md) que afeta as tabelas temporárias. Se for feita uma tentativa de duplicar uma tabela temporária que está no modo somente de encaminhamento, o cursor resultante não será criado corretamente e não terá funcionamento adequado. Ainda é seguro duplicar um cursor em uma tabela temporária materializada.
+
+O Gerenciador de tabelas temporárias pode implementar uma tabela temporária de três maneiras. O primeiro método é manter uma tabela na memória. Essa estratégia é a mais rápida, mas só pode ser usada para tabelas pequenas, simples e temporárias. O segundo método é criar uma classificação baseada em disco que possa ser controlada usando um iterador somente de encaminhamento. Essa estratégia só pode ser usada em determinadas circunstâncias e é a maneira mais rápida de classificar e remover duplicatas de um conjunto de dados muito grande. O terceiro método é criar uma árvore B + no banco de dados temporário para manter a tabela temporária. Essa estratégia é a mais lenta, mas a mais versátil e é conhecida como uma tabela temporária materializada. Essas estratégias podem ser usadas em combinação para atingir por fim a funcionalidade solicitada pela tabela temporária.
+
+Quando a tabela temporária não está materializada, ela é usada principalmente em duas fases principais. A primeira fase é a fase de inserção em que a tabela é populada com seu conjunto de dados inicial. Durante essa fase, apenas a inserção de dados é permitida. Essa fase termina quando é feita uma tentativa de mover o cursor usando [JetMove](./jetmove-function.md) ou [JetSeek](./jetseek-function.md). A segunda fase é a fase de extração de dados. Durante essa fase, os dados armazenados na tabela temporária podem ser extraídos de acordo com os recursos que foram solicitados quando a tabela temporária foi criada.
+
+**Recursos de cursor de tabela temporária**
+
+Quando a tabela temporária é materializada, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções que são solicitadas:
+
+  - [JetCloseTable](./jetclosetable-function.md)
+
+  - [JetDelete](./jetdelete-function.md)
+
+  - [JetDupCursor](./jetdupcursor-function.md)
+
+  - [JetEnumerateColumns](./jetenumeratecolumns-function.md)
+
+  - [JetEscrowUpdate](./jetescrowupdate-function.md)
+
+  - [JetGetBookmark](./jetgetbookmark-function.md)
+
+  - [JetGetCursorInfo](./jetgetcursorinfo-function.md)
+
+  - [JetGetLS](./jetgetls-function.md)
+
+  - [JetGetRecordSize](./jetgetrecordsize-function.md)
+
+  - [JetGetTableInfo](./jetgettableinfo-function.md)
+
+  - [JetGotoBookmark](./jetgotobookmark-function.md)
+
+  - [JetMakeKey](./jetmakekey-function.md)
+
+  - [JetMove](./jetmove-function.md)
+
+  - [JetPrepareUpdate](./jetprepareupdate-function.md)
+
+  - [JetRetrieveColumn](./jetretrievecolumn-function.md)
+
+  - [JetRetrieveColumns](./jetretrievecolumns-function.md)
+
+  - [JetRetrieveKey](./jetretrievekey-function.md)
+
+  - [JetSeek](./jetseek-function.md)
+
+  - [JetSetColumn](./jetsetcolumn-function.md)
+
+  - [JetSetColumns](./jetsetcolumns-function.md)
+
+  - [JetSetIndexRange](./jetsetindexrange-function.md)
+
+  - [JetSetLS](./jetsetls-function.md)
+
+  - [JetUpdate](./jetupdate-function.md)
+
+Quando a tabela temporária não está materializada e está na fase de inserção, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções que são solicitadas:
+
+  - [JetCloseTable](./jetclosetable-function.md)
+
+  - [JetEscrowUpdate](./jetescrowupdate-function.md)
+
+  - [JetMakeKey](./jetmakekey-function.md)
+
+  - [JetMove](./jetmove-function.md)
+    
+    **Observação**  Faz a transição para a fase de extração.
+
+  - [JetPrepareUpdate](./jetprepareupdate-function.md)
+
+  - [JetRetrieveKey](./jetretrievekey-function.md)
+
+  - [JetSeek](./jetseek-function.md)
+    
+    **Observação**  Faz a transição para a fase de extração.
+
+  - [JetSetColumn](./jetsetcolumn-function.md)
+
+  - [JetSetColumns](./jetsetcolumns-function.md)
+
+  - [JetUpdate](./jetupdate-function.md)
+
+Quando a tabela temporária não está materializada e está na fase de extração, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções que são solicitadas:
+
+  - [JetCloseTable](./jetclosetable-function.md)
+
+  - [JetDupCursor](./jetdupcursor-function.md)
+    
+    **Observação**  Se for feita uma tentativa de duplicar uma tabela temporária que está no modo somente de encaminhamento, o cursor resultante não será criado corretamente e não terá funcionamento adequado. Ainda é seguro duplicar um cursor em uma tabela temporária materializada.
+
+  - [JetEnumerateColumns](./jetenumeratecolumns-function.md)
+
+  - [JetGetBookmark](./jetgetbookmark-function.md)
+
+  - [JetGetLS](./jetgetls-function.md)
+
+  - [JetGetRecordSize](./jetgetrecordsize-function.md)
+
+  - [JetGetTableInfo](./jetgettableinfo-function.md)
+
+  - [JetGotoBookmark](./jetgotobookmark-function.md)
+
+  - [JetMakeKey](./jetmakekey-function.md)
+
+  - [JetMove](./jetmove-function.md)
+
+  - [JetRetrieveColumn](./jetretrievecolumn-function.md)
+
+  - [JetRetrieveColumns](./jetretrievecolumns-function.md)
+
+  - [JetRetrieveKey](./jetretrievekey-function.md)
+
+  - [JetSeek](./jetseek-function.md)
+
+  - [JetSetIndexRange](./jetsetindexrange-function.md)
+
+  - [JetSetLS](./jetsetls-function.md)
+
+#### <a name="requirements"></a>Requisitos
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Cliente</strong></p></td>
+<td><p>Requer o Windows Vista.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Servidor</strong></p></td>
+<td><p>Requer o Windows Server 2008.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Cabeçalho</strong></p></td>
+<td><p>Declarado em ESENT. h.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Biblioteca</strong></p></td>
+<td><p>Use ESENT. lib.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>DLL</strong></p></td>
+<td><p>Requer ESENT.dll.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+#### <a name="see-also"></a>Consulte Também
+
+[JET_ERR](./jet-err.md)  
+[JET_SESID](./jet-sesid.md)  
+[JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-structure.md)  
+[JetCloseTable](./jetclosetable-function.md)  
+[JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md)  
+[JetDupCursor](./jetdupcursor-function.md)  
+[JetMove](./jetmove-function.md)  
+[JetRollback](./jetrollback-function.md)  
+[JetSeek](./jetseek-function.md)  
+[JetSetSystemParameter](./jetsetsystemparameter-function.md)  
+[Parâmetros informativos](./informational-parameters.md)  
+[Parâmetros de banco de dados temporários](./temporary-database-parameters.md)
