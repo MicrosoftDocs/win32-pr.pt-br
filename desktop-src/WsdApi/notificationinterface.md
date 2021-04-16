@@ -1,0 +1,61 @@
+---
+description: Especifica o nome da interface de notificação usada com assinaturas de evento.
+ms.assetid: 79c46e8f-f7e6-42ff-b3e8-d69c822acf74
+title: elemento notificationInterface
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 438548173ef2d104e85b644f12e699ab3599b0a6
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105765285"
+---
+# <a name="notificationinterface-element"></a>elemento notificationInterface
+
+Especifica o nome da interface de notificação usada com assinaturas de evento.
+
+## <a name="usage"></a>Uso
+
+``` syntax
+<notificationInterface/>
+```
+
+## <a name="attributes"></a>Atributos
+
+Não há atributos.
+
+## <a name="child-elements"></a>Elementos filho
+
+Não há elementos filho.
+
+## <a name="parent-elements"></a>Elementos pai
+
+
+
+| Elemento                                                                                                 | Descrição                                                                                                                                   |
+|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| [**subscriptionFunctionDeclarations**](subscriptionfunctiondeclarations.md)<br/>                 | Gera declarações de implementação para funções de proxy de assinatura/cancelamento de assinatura para operações de notificação de tipo de porta.<br/> <br/> |
+| [**subscriptionIdlFunctionDeclarations**](subscriptionidlfunctiondeclarations.md)<br/>           | Gera declarações IDL para funções de proxy de assinatura/cancelamento de assinatura para operações de notificação de tipo de porta.<br/> <br/>            |
+| [**subscriptionProxyFunctionImplementations**](subscriptionproxyfunctionimplementations.md)<br/> | Gera implementações para funções de proxy de assinatura/cancelamento de assinatura para operações de notificação de tipo de porta.<br/> <br/>             |
+
+
+
+## <a name="element-information"></a>Informações do elemento
+
+
+
+|                                     |               |
+|-------------------------------------|---------------|
+| Sistema mínimo com suporte<br/> | Windows Vista |
+| Pode estar vazio                        | Sim           |
+
+
+
+ 
+
+ 
+
+
+
+
