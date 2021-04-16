@@ -1,0 +1,40 @@
+---
+description: Os tópicos contidos nesta seção fornecem as especificações de referência para enumerações de manipulação direta.
+ms.assetid: D116798F-E381-46D4-8271-8BD8CADC9D27
+title: Enumerações de manipulação direta
+ms.topic: article
+ms.date: 02/03/2020
+ms.openlocfilehash: c697f5d8467afb58537475453b08dacfa8867fb0
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104500412"
+---
+# <a name="direct-manipulation-enumerations"></a>Enumerações de manipulação direta
+
+Os tópicos contidos nesta seção fornecem as especificações de referência para enumerações de [manipulação direta](direct-manipulation-portal.md) .
+
+## <a name="in-this-section"></a>Nesta seção
+
+| Tópico                                                                                                           | Descrição                                                                                                                                                                                                                                            |
+|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**configuração do DIRECTMANIPULATION \_ AUTOSCROLL \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_autoscroll_configuration)<br/> | Determina o tipo e a direção da animação de rolagem automática a ser aplicada. <br/>                                                                                                                                                               |
+| [**configuração do DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_configuration)<br/>                        | Define os Estados de configuração de interação disponíveis na [manipulação direta](direct-manipulation-portal.md).<br/>                                                                                                                            |
+| [**DIRECTMANIPULATION \_ arrastar e \_ soltar \_ configuração**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_drag_drop_configuration)<br/>  | Define comportamentos para a interação de arrastar e soltar.<br/>                                                                                                                                                                                            |
+| [**DIRECTMANIPULATION \_ arrastar e \_ soltar \_ status**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_drag_drop_status)<br/>                | Define os Estados de interação do tipo "arrastar e soltar" para o visor.<br/>                                                                                                                                                                              |
+| [**\_configuração do gesto DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_gesture_configuration)<br/>       | Define os gestos que podem ser passados para [**SetManualGesture**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setmanualgesture).<br/>                                                                                                                        |
+| [**\_tipo DIRECTMANIPULATION HITTEST \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_hittest_type)<br/>                         | Define como o teste de clique é tratado pela [manipulação direta](direct-manipulation-portal.md) ao usar um thread de teste de colisão dedicado registrado por meio de [**RegisterHitTestTarget**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-registerhittesttarget).<br/>    |
+| [**DIRECTMANIPULATION \_ HORIZONTALALIGNMENT**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_horizontalalignment)<br/>            | Define as opções de alinhamento horizontal para o conteúdo em um visor.<br/>                                                                                                                                                                     |
+| [**\_modo de entrada DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_input_mode)<br/>                             | Define o comportamento de threading para [**Setinputmode**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setinputmode) ou [**setupdatemode**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setupdatemode). O significado exato de cada constante depende do método chamado.<br/> |
+| [**\_tipo de interação DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_interaction_type)<br/>                 | Define gestos reconhecidos pela [manipulação direta](direct-manipulation-portal.md).<br/>                                                                                                                                                       |
+| [**\_tipos de movimento DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_motion_types)<br/>                         | Define o tipo de movimento de [manipulação direta](direct-manipulation-portal.md) .<br/>                                                                                                                                                              |
+| [**\_ \_ coordenada DIRECTMANIPULATION SNAPPOINT**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_snappoint_coordinate)<br/>         | Define o sistema de coordenadas para uma coleção de pontos de ajuste.<br/>                                                                                                                                                                              |
+| [**\_tipo de SNAPPOINT DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_snappoint_type)<br/>                     | Modifica como a posição final inércia final é calculada.<br/>                                                                                                                                                                                  |
+| [**STATUS do DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_status)<br/>                                      | Define os possíveis estados de [manipulação direta](direct-manipulation-portal.md).<br/>                                                                                                                                                       |
+| [**DIRECTMANIPULATION \_ VERTICALALIGNMENT**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_verticalalignment)<br/>                | Define as configurações de alinhamento vertical para o conteúdo dentro do visor.<br/>                                                                                                                                                                    |
+| [**\_Opções do visor DIRECTMANIPULATION \_**](/windows/win32/api/directmanipulation/ne-directmanipulation-directmanipulation_viewport_options)<br/>                 | Define as opções de comportamento de entrada para o visor.<br/>                                                                                                                                                                                        |
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+[Referência de manipulação direta](direct-manipulation-reference.md)
