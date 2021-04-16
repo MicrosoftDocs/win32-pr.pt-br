@@ -1,0 +1,79 @@
+---
+description: A interface ITSdp fornece métodos para a manipulação de um protocolo de descritor de sessão (SDP, consulte o componente de blob de conferência RFC 2327).
+ms.assetid: 77c1e302-6290-4eeb-b7c9-462a13b29dcd
+title: Interface ITSdp (Sdpblb. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 401dbe2548375227be2ca024ee75de3054fa6f6f
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105779460"
+---
+# <a name="itsdp-interface"></a><span data-ttu-id="89d0b-103">Interface ITSdp</span><span class="sxs-lookup"><span data-stu-id="89d0b-103">ITSdp interface</span></span>
+
+<span data-ttu-id="89d0b-104">\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional.</span><span class="sxs-lookup"><span data-stu-id="89d0b-104">\[ Rendezvous IP Telephony Conferencing controls and interfaces are not available for use in Windows Vista, Windows Server 2008, and subsequent versions of the operating system.</span></span> <span data-ttu-id="89d0b-105">A API do cliente RTC fornece funcionalidade semelhante.\]</span><span class="sxs-lookup"><span data-stu-id="89d0b-105">The RTC Client API provides similar functionality.\]</span></span>
+
+<span data-ttu-id="89d0b-106">A interface **ITSdp** fornece métodos para a manipulação de um protocolo de descritor de sessão (SDP, consulte o componente de blob de conferência RFC 2327).</span><span class="sxs-lookup"><span data-stu-id="89d0b-106">The **ITSdp** interface provides methods for the manipulation of a Session Descriptor Protocol (SDP, see RFC 2327) conference blob component.</span></span> <span data-ttu-id="89d0b-107">Ele fornece as seguintes funcionalidades:</span><span class="sxs-lookup"><span data-stu-id="89d0b-107">It provides the following functionality:</span></span>
+
+-   <span data-ttu-id="89d0b-108">Fornece acesso a algumas das propriedades que são comuns a toda a mídia.</span><span class="sxs-lookup"><span data-stu-id="89d0b-108">Provides access to some of the properties that are common to all the media.</span></span> <span data-ttu-id="89d0b-109">Eles incluem atributos referentes às informações pessoais do criador, à descrição da sessão e à informação do tipo de endereço.</span><span class="sxs-lookup"><span data-stu-id="89d0b-109">These include attributes pertaining to the creator's personal information, session description, and address type information.</span></span>
+-   <span data-ttu-id="89d0b-110">Fornece o ponto de partida para acessar as coleções de tempo e mídia por meio de propriedades.</span><span class="sxs-lookup"><span data-stu-id="89d0b-110">Provides the starting point for accessing the time and media collections through properties.</span></span>
+
+<span data-ttu-id="89d0b-111">A interface **ITSdp** é criada chamando **QueryInterface** no [**ITConferenceBlob**](itconferenceblob.md).</span><span class="sxs-lookup"><span data-stu-id="89d0b-111">The **ITSdp** interface is created by calling **QueryInterface** on [**ITConferenceBlob**](itconferenceblob.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="89d0b-112">Membros</span><span class="sxs-lookup"><span data-stu-id="89d0b-112">Members</span></span>
+
+<span data-ttu-id="89d0b-113">A interface **ITSdp** herda da interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) .</span><span class="sxs-lookup"><span data-stu-id="89d0b-113">The **ITSdp** interface inherits from the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface.</span></span> <span data-ttu-id="89d0b-114">**ITSdp** também tem estes tipos de membros:</span><span class="sxs-lookup"><span data-stu-id="89d0b-114">**ITSdp** also has these types of members:</span></span>
+
+-   [<span data-ttu-id="89d0b-115">Métodos</span><span class="sxs-lookup"><span data-stu-id="89d0b-115">Methods</span></span>](#methods)
+
+### <a name="methods"></a><span data-ttu-id="89d0b-116">Métodos</span><span class="sxs-lookup"><span data-stu-id="89d0b-116">Methods</span></span>
+
+<span data-ttu-id="89d0b-117">A interface **ITSdp** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="89d0b-117">The **ITSdp** interface has these methods.</span></span>
+
+
+
+| <span data-ttu-id="89d0b-118">Método</span><span class="sxs-lookup"><span data-stu-id="89d0b-118">Method</span></span>                                                    | <span data-ttu-id="89d0b-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="89d0b-119">Description</span></span>                                                                                         |
+|:----------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="89d0b-120">**obter \_ Descrição**</span><span class="sxs-lookup"><span data-stu-id="89d0b-120">**get\_Description**</span></span>](itsdp-get-description.md)         | <span data-ttu-id="89d0b-121">Obtém a descrição da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-121">Gets the session description.</span></span><br/>                                                            |
+| [<span data-ttu-id="89d0b-122">**obter \_ IsValid**</span><span class="sxs-lookup"><span data-stu-id="89d0b-122">**get\_IsValid**</span></span>](itsdp-get-isvalid.md)                 | <span data-ttu-id="89d0b-123">Valida o blob SDP para valores de estrutura e de campo.</span><span class="sxs-lookup"><span data-stu-id="89d0b-123">Validates the SDP blob for structure and field values.</span></span><br/>                                   |
+| [<span data-ttu-id="89d0b-124">**obter \_ MachineAddress**</span><span class="sxs-lookup"><span data-stu-id="89d0b-124">**get\_MachineAddress**</span></span>](itsdp-get-machineaddress.md)   | <span data-ttu-id="89d0b-125">Obtém o endereço do computador do host de origem.</span><span class="sxs-lookup"><span data-stu-id="89d0b-125">Gets the machine address of the originating host.</span></span><br/>                                        |
+| [<span data-ttu-id="89d0b-126">**obter \_ mediacollection**</span><span class="sxs-lookup"><span data-stu-id="89d0b-126">**get\_MediaCollection**</span></span>](itsdp-get-mediacollection.md) | <span data-ttu-id="89d0b-127">Obtém o ponteiro para a interface [**ITMediaCollection**](itmediacollection.md) da conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-127">Gets pointer to [**ITMediaCollection**](itmediacollection.md) interface for conference.</span></span><br/> |
+| [<span data-ttu-id="89d0b-128">**obter \_ nome**</span><span class="sxs-lookup"><span data-stu-id="89d0b-128">**get\_Name**</span></span>](itsdp-get-name.md)                       | <span data-ttu-id="89d0b-129">Obtém o nome da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-129">Gets the session name.</span></span><br/>                                                                   |
+| [<span data-ttu-id="89d0b-130">**obter \_ originador**</span><span class="sxs-lookup"><span data-stu-id="89d0b-130">**get\_Originator**</span></span>](itsdp-get-originator.md)           | <span data-ttu-id="89d0b-131">Obtém o originador da conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-131">Gets conference originator.</span></span><br/>                                                              |
+| [<span data-ttu-id="89d0b-132">**obter \_ ProtocolVersion**</span><span class="sxs-lookup"><span data-stu-id="89d0b-132">**get\_ProtocolVersion**</span></span>](itsdp-get-protocolversion.md) | <span data-ttu-id="89d0b-133">Obtém a versão do protocolo SDP.</span><span class="sxs-lookup"><span data-stu-id="89d0b-133">Gets the SDP protocol version.</span></span><br/>                                                           |
+| [<span data-ttu-id="89d0b-134">**obter \_ SessionID**</span><span class="sxs-lookup"><span data-stu-id="89d0b-134">**get\_SessionId**</span></span>](itsdp-get-sessionid.md)             | <span data-ttu-id="89d0b-135">Obtém o valor de NTP (protocolo NTP) de 32 bits que serve como o identificador de sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-135">Gets the 32-bit NTP (Network Time Protocol) value that serves as the session identifier.</span></span><br/> |
+| [<span data-ttu-id="89d0b-136">**obter \_ SessionVersion**</span><span class="sxs-lookup"><span data-stu-id="89d0b-136">**get\_SessionVersion**</span></span>](itsdp-get-sessionversion.md)   | <span data-ttu-id="89d0b-137">Obtém o valor de 32 bits (idealmente NTP) que serve como a versão da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-137">Gets the 32-bit (ideally NTP) value that serves as the session version.</span></span><br/>                  |
+| [<span data-ttu-id="89d0b-138">**obter \_ timecollection**</span><span class="sxs-lookup"><span data-stu-id="89d0b-138">**get\_TimeCollection**</span></span>](itsdp-get-timecollection.md)   | <span data-ttu-id="89d0b-139">Obtém o ponteiro para a interface [**ITTimeCollection**](ittimecollection.md) da conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-139">Gets pointer to [**ITTimeCollection**](ittimecollection.md) interface for conference.</span></span><br/>   |
+| [<span data-ttu-id="89d0b-140">**obter \_ URL**</span><span class="sxs-lookup"><span data-stu-id="89d0b-140">**get\_Url**</span></span>](itsdp-get-url.md)                         | <span data-ttu-id="89d0b-141">Obtém a URL.</span><span class="sxs-lookup"><span data-stu-id="89d0b-141">Gets the URL.</span></span><br/>                                                                            |
+| [<span data-ttu-id="89d0b-142">**Getemailnames**</span><span class="sxs-lookup"><span data-stu-id="89d0b-142">**GetEmailNames**</span></span>](itsdp-getemailnames.md)              | <span data-ttu-id="89d0b-143">Obtém a matriz de nomes de email e endereços associados ao blob de conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-143">Gets array of e-mail names and addresses associated with conference blob.</span></span><br/>                |
+| [<span data-ttu-id="89d0b-144">**GetPhoneNumbers**</span><span class="sxs-lookup"><span data-stu-id="89d0b-144">**GetPhoneNumbers**</span></span>](itsdp-getphonenumbers.md)          | <span data-ttu-id="89d0b-145">Obtém os números de telefone.</span><span class="sxs-lookup"><span data-stu-id="89d0b-145">Gets the phone numbers.</span></span><br/>                                                                  |
+| [<span data-ttu-id="89d0b-146">**inserir \_ Descrição**</span><span class="sxs-lookup"><span data-stu-id="89d0b-146">**put\_Description**</span></span>](itsdp-put-description.md)         | <span data-ttu-id="89d0b-147">Define a descrição da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-147">Sets the session description.</span></span><br/>                                                            |
+| [<span data-ttu-id="89d0b-148">**colocar \_ MachineAddress**</span><span class="sxs-lookup"><span data-stu-id="89d0b-148">**put\_MachineAddress**</span></span>](itsdp-put-machineaddress.md)   | <span data-ttu-id="89d0b-149">Define o endereço do computador do host de origem.</span><span class="sxs-lookup"><span data-stu-id="89d0b-149">Sets the machine address of the originating host.</span></span><br/>                                        |
+| [<span data-ttu-id="89d0b-150">**colocar \_ nome**</span><span class="sxs-lookup"><span data-stu-id="89d0b-150">**put\_Name**</span></span>](itsdp-put-name.md)                       | <span data-ttu-id="89d0b-151">Define o nome da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-151">Sets the session name.</span></span><br/>                                                                   |
+| [<span data-ttu-id="89d0b-152">**inserir \_ originador**</span><span class="sxs-lookup"><span data-stu-id="89d0b-152">**put\_Originator**</span></span>](itsdp-put-originator.md)           | <span data-ttu-id="89d0b-153">Obtém o originador da conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-153">Gets conference originator.</span></span><br/>                                                              |
+| [<span data-ttu-id="89d0b-154">**colocar \_ SessionVersion**</span><span class="sxs-lookup"><span data-stu-id="89d0b-154">**put\_SessionVersion**</span></span>](itsdp-put-sessionversion.md)   | <span data-ttu-id="89d0b-155">Define a versão da sessão.</span><span class="sxs-lookup"><span data-stu-id="89d0b-155">Sets session version.</span></span><br/>                                                                    |
+| [<span data-ttu-id="89d0b-156">**colocar \_ URL**</span><span class="sxs-lookup"><span data-stu-id="89d0b-156">**put\_Url**</span></span>](itsdp-put-url.md)                         | <span data-ttu-id="89d0b-157">Define a URL.</span><span class="sxs-lookup"><span data-stu-id="89d0b-157">Sets the URL.</span></span><br/>                                                                            |
+| [<span data-ttu-id="89d0b-158">**Setemailnames**</span><span class="sxs-lookup"><span data-stu-id="89d0b-158">**SetEmailNames**</span></span>](itsdp-setemailnames.md)              | <span data-ttu-id="89d0b-159">Define a matriz de nomes e endereços de email associados ao blob de conferência.</span><span class="sxs-lookup"><span data-stu-id="89d0b-159">Sets array of email names and addresses associated with conference blob.</span></span><br/>                 |
+| [<span data-ttu-id="89d0b-160">**SetPhoneNumbers**</span><span class="sxs-lookup"><span data-stu-id="89d0b-160">**SetPhoneNumbers**</span></span>](itsdp-setphonenumbers.md)          | <span data-ttu-id="89d0b-161">Define os números de telefone.</span><span class="sxs-lookup"><span data-stu-id="89d0b-161">Sets the phone numbers.</span></span><br/>                                                                  |
+
+
+
+ 
+
+## <a name="requirements"></a><span data-ttu-id="89d0b-162">Requisitos</span><span class="sxs-lookup"><span data-stu-id="89d0b-162">Requirements</span></span>
+
+
+
+| <span data-ttu-id="89d0b-163">Requisito</span><span class="sxs-lookup"><span data-stu-id="89d0b-163">Requirement</span></span> | <span data-ttu-id="89d0b-164">Valor</span><span class="sxs-lookup"><span data-stu-id="89d0b-164">Value</span></span> |
+|-------------------------|---------------------------------------------------------------------------------------|
+| <span data-ttu-id="89d0b-165">Versão da TAPI</span><span class="sxs-lookup"><span data-stu-id="89d0b-165">TAPI version</span></span><br/> | <span data-ttu-id="89d0b-166">Requer TAPI 3,0 ou posterior</span><span class="sxs-lookup"><span data-stu-id="89d0b-166">Requires TAPI 3.0 or later</span></span><br/>                                                 |
+| <span data-ttu-id="89d0b-167">parâmetro</span><span class="sxs-lookup"><span data-stu-id="89d0b-167">Header</span></span><br/>       | <dl> <span data-ttu-id="89d0b-168"><dt>Sdpblb. h</dt></span><span class="sxs-lookup"><span data-stu-id="89d0b-168"><dt>Sdpblb.h</dt></span></span> </dl>   |
+| <span data-ttu-id="89d0b-169">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="89d0b-169">Library</span></span><br/>      | <dl> <span data-ttu-id="89d0b-170"><dt>UUID. lib</dt></span><span class="sxs-lookup"><span data-stu-id="89d0b-170"><dt>Uuid.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="89d0b-171">DLL</span><span class="sxs-lookup"><span data-stu-id="89d0b-171">DLL</span></span><br/>          | <dl> <span data-ttu-id="89d0b-172"><dt>Sdpblb.dll</dt></span><span class="sxs-lookup"><span data-stu-id="89d0b-172"><dt>Sdpblb.dll</dt></span></span> </dl> |
+
+
+
+ 
+
