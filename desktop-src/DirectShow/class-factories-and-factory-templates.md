@@ -1,0 +1,45 @@
+---
+description: Este tópico descreve como implementar uma DLL para um filtro do DirectShow, usando as classes base do DirectShow.
+ms.assetid: d47980d1-6d0c-4b0d-a875-7b072562944a
+title: Fábricas de classes e modelos de fábrica
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e02699a8ff0740ddcf1d86b8514fd45dac9e32ed
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104565212"
+---
+# <a name="class-factories-and-factory-templates"></a><span data-ttu-id="0c12b-103">Fábricas de classes e modelos de fábrica</span><span class="sxs-lookup"><span data-stu-id="0c12b-103">Class Factories and Factory Templates</span></span>
+
+<span data-ttu-id="0c12b-104">Este tópico descreve como implementar uma DLL para um filtro do DirectShow, usando as [classes base do DirectShow](directshow-base-classes.md).</span><span class="sxs-lookup"><span data-stu-id="0c12b-104">This topic describes how to implement a DLL for a DirectShow filter, using the [DirectShow Base Classes](directshow-base-classes.md).</span></span>
+
+<span data-ttu-id="0c12b-105">Antes que um cliente crie uma instância de um objeto COM, ele cria uma instância da fábrica de classes do objeto, usando uma chamada para a função [**CoGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetclassobject) .</span><span class="sxs-lookup"><span data-stu-id="0c12b-105">Before a client creates an instance of a COM object, it creates an instance of the object's class factory, using a call to the [**CoGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetclassobject) function.</span></span> <span data-ttu-id="0c12b-106">Em seguida, o cliente chama o método **IClassFactory:: CreateInstance** da fábrica de classes.</span><span class="sxs-lookup"><span data-stu-id="0c12b-106">The client then calls the class factory's **IClassFactory::CreateInstance** method.</span></span> <span data-ttu-id="0c12b-107">É a fábrica de classes que cria o componente de fato e retorna um ponteiro para a interface solicitada.</span><span class="sxs-lookup"><span data-stu-id="0c12b-107">It is the class factory that actually creates the component and returns a pointer to the requested interface.</span></span> <span data-ttu-id="0c12b-108">(A função [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) combina essas etapas, dentro da chamada de função.)</span><span class="sxs-lookup"><span data-stu-id="0c12b-108">(The [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) function combines these steps, inside the function call.)</span></span>
+
+<span data-ttu-id="0c12b-109">A ilustração a seguir mostra a sequência de chamadas de método.</span><span class="sxs-lookup"><span data-stu-id="0c12b-109">The following illustration shows the sequence of method calls.</span></span>
+
+![chamadas de método para criar uma fábrica de classes](images/classfactory.png)
+
+<span data-ttu-id="0c12b-111">[**CoGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetclassobject) chama a função [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) , que é definida na dll.</span><span class="sxs-lookup"><span data-stu-id="0c12b-111">[**CoGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetclassobject) calls the [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) function, which is defined in the DLL.</span></span> <span data-ttu-id="0c12b-112">Essa função cria a fábrica de classes e retorna um ponteiro para uma interface na fábrica de classes.</span><span class="sxs-lookup"><span data-stu-id="0c12b-112">This function creates the class factory and returns a pointer to an interface on the class factory.</span></span> <span data-ttu-id="0c12b-113">O DirectShow implementa **DllGetClassObject** para você, mas a função depende do seu código de uma maneira específica.</span><span class="sxs-lookup"><span data-stu-id="0c12b-113">DirectShow implements **DllGetClassObject** for you, but the function relies on your code in a specific way.</span></span> <span data-ttu-id="0c12b-114">Para entender como ele funciona, você deve entender como o DirectShow implementa fábricas de classes.</span><span class="sxs-lookup"><span data-stu-id="0c12b-114">To understand how it works, you must understand how DirectShow implements class factories.</span></span>
+
+<span data-ttu-id="0c12b-115">Uma fábrica de classes é um objeto COM dedicado à criação de outro objeto COM.</span><span class="sxs-lookup"><span data-stu-id="0c12b-115">A class factory is a COM object dedicated to creating another COM object.</span></span> <span data-ttu-id="0c12b-116">Cada fábrica de classes tem um tipo de objeto que ele cria.</span><span class="sxs-lookup"><span data-stu-id="0c12b-116">Each class factory has one type of object that it creates.</span></span> <span data-ttu-id="0c12b-117">No DirectShow, cada fábrica de classes é uma instância da mesma classe C++, **CClassFactory**.</span><span class="sxs-lookup"><span data-stu-id="0c12b-117">In DirectShow, every class factory is an instance of the same C++ class, **CClassFactory**.</span></span> <span data-ttu-id="0c12b-118">As fábricas de classe são especializadas por meio de outra classe, [**CFactoryTemplate**](cfactorytemplate.md), também chamada de *modelo de fábrica*.</span><span class="sxs-lookup"><span data-stu-id="0c12b-118">Class factories are specialized by means of another class, [**CFactoryTemplate**](cfactorytemplate.md), also called the *factory template*.</span></span> <span data-ttu-id="0c12b-119">Cada fábrica de classe mantém um ponteiro para um modelo de fábrica.</span><span class="sxs-lookup"><span data-stu-id="0c12b-119">Each class factory holds a pointer to a factory template.</span></span> <span data-ttu-id="0c12b-120">O modelo de fábrica contém informações sobre um componente específico, como o CLSID (identificador de classe) do componente e um ponteiro para uma função que cria o componente.</span><span class="sxs-lookup"><span data-stu-id="0c12b-120">The factory template contains information about a specific component, such as the component's class identifier (CLSID), and a pointer to a function that creates the component.</span></span>
+
+<span data-ttu-id="0c12b-121">A DLL declara uma matriz global de modelos de fábrica, uma para cada componente na DLL.</span><span class="sxs-lookup"><span data-stu-id="0c12b-121">The DLL declares a global array of factory templates, one for each component in the DLL.</span></span> <span data-ttu-id="0c12b-122">Quando o [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) cria uma nova fábrica de classes, ele pesquisa a matriz em busca de um modelo com um CLSID correspondente.</span><span class="sxs-lookup"><span data-stu-id="0c12b-122">When [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) makes a new class factory, it searches the array for a template with a matching CLSID.</span></span> <span data-ttu-id="0c12b-123">Supondo que ele encontre um, ele cria uma fábrica de classes que mantém um ponteiro para o modelo correspondente.</span><span class="sxs-lookup"><span data-stu-id="0c12b-123">Assuming it finds one, it creates a class factory that holds a pointer to the matching template.</span></span> <span data-ttu-id="0c12b-124">Quando o cliente chama **IClassFactory:: CreateInstance**, a fábrica de classes chama a função de instanciação definida no modelo.</span><span class="sxs-lookup"><span data-stu-id="0c12b-124">When the client calls **IClassFactory::CreateInstance**, the class factory calls the instantiation function defined in the template.</span></span>
+
+<span data-ttu-id="0c12b-125">A ilustração a seguir mostra a sequência de chamadas de método.</span><span class="sxs-lookup"><span data-stu-id="0c12b-125">The following illustration shows the sequence of method calls.</span></span>
+
+![modelos de fábrica de classes em uma dll](images/classfactory2.png)
+
+<span data-ttu-id="0c12b-127">O benefício dessa arquitetura é que você pode definir apenas algumas coisas específicas para seu componente, como a função de instanciação, sem implementar toda a fábrica de classes.</span><span class="sxs-lookup"><span data-stu-id="0c12b-127">The benefit of this architecture is that you can define just a few things that are specific to your component, such as the instantiation function, without implementing the entire class factory.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="0c12b-128">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0c12b-128">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="0c12b-129">Como criar uma DLL de filtro do DirectShow</span><span class="sxs-lookup"><span data-stu-id="0c12b-129">How to Create a DirectShow Filter DLL</span></span>](how-to-create-a-dll.md)
+</dt> </dl>
+
+ 
+
+ 
