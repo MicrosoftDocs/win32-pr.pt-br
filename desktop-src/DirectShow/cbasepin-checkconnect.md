@@ -1,0 +1,99 @@
+---
+description: O método CheckConnect determina se uma conexão de PIN é adequada.
+ms.assetid: 511a1594-f3f8-4725-afcd-f14f3a4ebf20
+title: Método CBasePin. CheckConnect (Amfilter. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CBasePin.CheckConnect
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: 24d5c221da417fd1fc2b3f9f140536f825b2f9d9
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105757442"
+---
+# <a name="cbasepincheckconnect-method"></a><span data-ttu-id="bed96-103">Método CBasePin. CheckConnect</span><span class="sxs-lookup"><span data-stu-id="bed96-103">CBasePin.CheckConnect method</span></span>
+
+<span data-ttu-id="bed96-104">O `CheckConnect` método determina se uma conexão de PIN é adequada.</span><span class="sxs-lookup"><span data-stu-id="bed96-104">The `CheckConnect` method determines whether a pin connection is suitable.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="bed96-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="bed96-105">Syntax</span></span>
+
+
+```C++
+virtual HRESULT CheckConnect(
+   IPin *pPin
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="bed96-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="bed96-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="bed96-107">*pPin*</span><span class="sxs-lookup"><span data-stu-id="bed96-107">*pPin*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="bed96-108">Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do outro PIN.</span><span class="sxs-lookup"><span data-stu-id="bed96-108">Pointer to the other pin's [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) interface.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="bed96-109">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="bed96-109">Return value</span></span>
+
+<span data-ttu-id="bed96-110">Retorna um dos valores **HRESULT** mostrados na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="bed96-110">Returns one of the **HRESULT** values shown in the following table.</span></span>
+
+
+
+| <span data-ttu-id="bed96-111">Código de retorno</span><span class="sxs-lookup"><span data-stu-id="bed96-111">Return code</span></span>                                                                                               | <span data-ttu-id="bed96-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="bed96-112">Description</span></span>                                   |
+|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| <dl> <span data-ttu-id="bed96-113"><dt>**S \_ OK**</dt></span><span class="sxs-lookup"><span data-stu-id="bed96-113"><dt>**S\_OK**</dt></span></span> </dl>                      | <span data-ttu-id="bed96-114">Êxito.</span><span class="sxs-lookup"><span data-stu-id="bed96-114">Success.</span></span><br/>                           |
+| <dl> <span data-ttu-id="bed96-115"><dt>**VFW \_ E \_ direção inválida \_**</dt></span><span class="sxs-lookup"><span data-stu-id="bed96-115"><dt>**VFW\_E\_INVALID\_DIRECTION**</dt></span></span> </dl> | <span data-ttu-id="bed96-116">As direções do PIN não são compatíveis.</span><span class="sxs-lookup"><span data-stu-id="bed96-116">Pin directions are not compatible.</span></span><br/> |
+
+
+
+ 
+
+## <a name="remarks"></a><span data-ttu-id="bed96-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="bed96-117">Remarks</span></span>
+
+<span data-ttu-id="bed96-118">Esse método é chamado em ambos os Pins no início do processo de conexão.</span><span class="sxs-lookup"><span data-stu-id="bed96-118">This method is called on both pins at the start of the connection process.</span></span> <span data-ttu-id="bed96-119">O PIN de conexão o chama de dentro do método [**CBasePin:: Connect**](cbasepin-connect.md) e o PIN de recebimento o chama de dentro do método [**CBasePin:: ReceiveConnection**](cbasepin-receiveconnection.md) .</span><span class="sxs-lookup"><span data-stu-id="bed96-119">The connecting pin calls it from within the [**CBasePin::Connect**](cbasepin-connect.md) method, and the receiving pin calls it from within the [**CBasePin::ReceiveConnection**](cbasepin-receiveconnection.md) method.</span></span>
+
+<span data-ttu-id="bed96-120">Use esse método para determinar se o PIN especificado pelo parâmetro *pPin* é adequado para uma conexão.</span><span class="sxs-lookup"><span data-stu-id="bed96-120">Use this method to determine whether the pin specified by the *pPin* parameter is suitable for a connection.</span></span> <span data-ttu-id="bed96-121">A classe base retornará um erro se ambos os Pins tiverem a mesma direção (entrada ou ambas as saídas).</span><span class="sxs-lookup"><span data-stu-id="bed96-121">The base class returns an error if both pins have the same direction (both input, or both output).</span></span> <span data-ttu-id="bed96-122">Classes derivadas podem substituir esse método para verificar outros recursos no PIN.</span><span class="sxs-lookup"><span data-stu-id="bed96-122">Derived classes can override this method to verify other features in the pin.</span></span> <span data-ttu-id="bed96-123">Por exemplo, a classe [**CBaseOutputPin**](cbaseoutputpin.md) consulta o pino de entrada para sua interface [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) .</span><span class="sxs-lookup"><span data-stu-id="bed96-123">For example, the [**CBaseOutputPin**](cbaseoutputpin.md) class queries the input pin for its [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) interface.</span></span>
+
+<span data-ttu-id="bed96-124">Se esse método falhar, a conexão falhará e o PIN chamará o método [**CBasePin:: BreakConnect**](cbasepin-breakconnect.md) .</span><span class="sxs-lookup"><span data-stu-id="bed96-124">If this method fails, the connection fails and the pin calls the [**CBasePin::BreakConnect**](cbasepin-breakconnect.md) method.</span></span> <span data-ttu-id="bed96-125">Use **BreakConnect** para liberar todos os recursos obtidos no `CheckConnect` .</span><span class="sxs-lookup"><span data-stu-id="bed96-125">Use **BreakConnect** to free any resources obtained in `CheckConnect`.</span></span> <span data-ttu-id="bed96-126">Por exemplo, se `CheckConnect` o chamar o método **QueryInterface** , **BreakConnect** deverá liberar a interface.</span><span class="sxs-lookup"><span data-stu-id="bed96-126">For example, if `CheckConnect` calls the **QueryInterface** method, **BreakConnect** must release the interface.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="bed96-127">Requisitos</span><span class="sxs-lookup"><span data-stu-id="bed96-127">Requirements</span></span>
+
+
+
+| <span data-ttu-id="bed96-128">Requisito</span><span class="sxs-lookup"><span data-stu-id="bed96-128">Requirement</span></span> | <span data-ttu-id="bed96-129">Valor</span><span class="sxs-lookup"><span data-stu-id="bed96-129">Value</span></span> |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="bed96-130">parâmetro</span><span class="sxs-lookup"><span data-stu-id="bed96-130">Header</span></span><br/>  | <dl> <span data-ttu-id="bed96-131"><dt>Amfilter. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="bed96-131"><dt>Amfilter.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
+| <span data-ttu-id="bed96-132">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="bed96-132">Library</span></span><br/> | <dl> <span data-ttu-id="bed96-133"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="bed96-133"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="bed96-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="bed96-134">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="bed96-135">**Classe CBasePin**</span><span class="sxs-lookup"><span data-stu-id="bed96-135">**CBasePin Class**</span></span>](cbasepin.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
