@@ -1,0 +1,31 @@
+---
+description: Um campo Database do tipo de dados FormattedSDDLText contém uma cadeia de caracteres de texto que descreve um descritor de segurança que usa SDDL (linguagem de definição de descritor de segurança) válida. Esse tipo de dados é usado pelo campo SDDLText da tabela MsiLockPermissionsEx para proteger um objeto selecionado. Observe que o campo SDDLText da tabela MsiLockPermissionsEx não oferece suporte a propriedades privadas ou públicas.
+ms.assetid: a36e257d-ef3c-45db-a50e-94d7fd4e09e2
+title: FormattedSDDLText
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 06ddfeac55f05ebea5f1603def6adcbac32aa9d8
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105757516"
+---
+# <a name="formattedsddltext"></a><span data-ttu-id="81b4f-104">FormattedSDDLText</span><span class="sxs-lookup"><span data-stu-id="81b4f-104">FormattedSDDLText</span></span>
+
+<span data-ttu-id="81b4f-105">Um campo Database do tipo de dados **FormattedSDDLText** contém uma cadeia de caracteres de texto que descreve um descritor de segurança que usa SDDL ( [linguagem de definição de descritor de segurança](../secauthz/security-descriptor-definition-language.md) ) válida. Esse tipo de dados é usado pelo campo SDDLText da [tabela MsiLockPermissionsEx](msilockpermissionsex-table.md) para proteger um objeto selecionado.</span><span class="sxs-lookup"><span data-stu-id="81b4f-105">A database field of the **FormattedSDDLText** data type holds a text string that describes a security descriptor using valid [security descriptor definition language](../secauthz/security-descriptor-definition-language.md) (SDDL.) This data type is used by the SDDLText field of the [MsiLockPermissionsEx Table](msilockpermissionsex-table.md) to secure a selected object.</span></span> <span data-ttu-id="81b4f-106">Observe que o campo SDDLText da tabela MsiLockPermissionsEx não oferece suporte a propriedades privadas ou públicas.</span><span class="sxs-lookup"><span data-stu-id="81b4f-106">Note that the SDDLText field of the MsiLockPermissionsEx Table does not support private or public properties.</span></span>
+
+<span data-ttu-id="81b4f-107">**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="81b4f-107">**[Windows Installer 4.5 or earlier](not-supported-in-windows-installer-4-5.md):** Not supported.</span></span> <span data-ttu-id="81b4f-108">Esse tipo de dados está disponível a partir do Windows Installer 5,0.</span><span class="sxs-lookup"><span data-stu-id="81b4f-108">This data type is available beginning with Windows Installer 5.0.</span></span>
+
+<span data-ttu-id="81b4f-109">O tipo de dados **FormattedSDDLText** pode conter uma cadeia de caracteres SDDL escrita em [formato de cadeia de caracteres de descritor de segurança](../secauthz/security-descriptor-string-format.md)válido.</span><span class="sxs-lookup"><span data-stu-id="81b4f-109">The **FormattedSDDLText** data type can hold a SDDL string written in valid [Security Descriptor String Format](../secauthz/security-descriptor-string-format.md).</span></span> <span data-ttu-id="81b4f-110">Para obter mais informações sobre o SDDL, consulte a seção [controle de acesso](../secauthz/access-control.md) do [SDK (Software Development Kit) do Microsoft Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).</span><span class="sxs-lookup"><span data-stu-id="81b4f-110">For more information about SDDL, see the [Access Control](../secauthz/access-control.md) section of the [Microsoft Windows Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).</span></span> <span data-ttu-id="81b4f-111">Além disso, uma cadeia de texto **FormattedSDDLText** pode usar colchetes angulares (<>) para conter o domínio e o nome de usuário do usuário cujo Sid de conta deve ser determinado.</span><span class="sxs-lookup"><span data-stu-id="81b4f-111">In addition, a **FormattedSDDLText** text string can use angle brackets (<>) to contain the domain and user name of the user whose account SID is to be determined.</span></span>
+
+<span data-ttu-id="81b4f-112">Se o usuário que tem o nome de usuário *SampleUser* pertencer a um domínio chamado *SampleDomain*, o valor de **FormattedSDDLText** poderá identificar o proprietário usando a cadeia de caracteres de Sid, o nome de usuário e o nome de domínio ou as variáveis de ambiente do Windows.</span><span class="sxs-lookup"><span data-stu-id="81b4f-112">If the user having user name *SampleUser* belongs to a domain named *SampleDomain*, then the **FormattedSDDLText** value can identify the owner using the SID string, the user name and domain name, or the Windows environment variables.</span></span> <span data-ttu-id="81b4f-113">Por exemplo, as cadeias de caracteres a seguir seriam possíveis.</span><span class="sxs-lookup"><span data-stu-id="81b4f-113">For example, the following strings would be possible.</span></span>
+
+<dl> <span data-ttu-id="81b4f-114">O:*proprietário \_ SID \_ String* G:Bad: (D; OICI; GA;;; BG) (A; OICI; GRGWGX;;; *\_ cadeia de \_ caracteres de SID do proprietário*) (A; OICI; GA;;; BA) S:ARAI (AU; SAFA; FA;;; WD</span><span class="sxs-lookup"><span data-stu-id="81b4f-114">O:*owner\_sid\_string* G:BAD:(D;OICI;GA;;;BG)(A;OICI;GRGWGX;;;*owner\_sid\_string*)(A;OICI;GA;;;BA)S:ARAI(AU;SAFA;FA;;;WD)</span></span>  
+<span data-ttu-id="81b4f-115">O: <*SampleDomain \\ SAMPLEUSER*>G:Bad: (D; OICI; GA;;; BG) (A; OICI; GRGWGX;;; <*SampleDomain \\ SampleUser*>) (A; OICI; GA;;; BA) S:ARAI (AU; SAFA; FA;;; WD</span><span class="sxs-lookup"><span data-stu-id="81b4f-115">O:<*SampleDomain\\SampleUser*>G:BAD:(D;OICI;GA;;;BG)(A;OICI;GRGWGX;;;<*SampleDomain\\SampleUser*>)(A;OICI;GA;;;BA)S:ARAI(AU;SAFA;FA;;;WD)</span></span>  
+<span data-ttu-id="81b4f-116">O: <\[ % UserDomain \] \\ \[ % username \]>G:Bad: (D; OICI; GA;;; BG) (A; OICI; GRGWGX;;; <\[ % UserDomain \] \\ \[ % username \]>) (A; OICI; GA;;; BA) S:ARAI (AU; SAFA; FA;;; WD</span><span class="sxs-lookup"><span data-stu-id="81b4f-116">O:<\[%USERDOMAIN\]\\\[%USERNAME\]>G:BAD:(D;OICI;GA;;;BG)(A;OICI;GRGWGX;;;<\[%USERDOMAIN\]\\\[%USERNAME\]>)(A;OICI;GA;;;BA)S:ARAI(AU;SAFA;FA;;;WD)</span></span>
+</dl>
+
+ 
+
+ 
