@@ -1,0 +1,63 @@
+---
+description: A propriedade HelpLocation retorna o valor da coluna HelpLocation da Tabela ModuleConfiguration.
+ms.assetid: fe011188-c831-4fbd-b2dd-1ad4c08451ed
+title: Propriedade ConfigurableItem. HelpLocation (Mergemod. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ConfigurableItem.HelpLocation
+- IMsmConfigurableItem.get_HelpLocation
+api_type:
+- COM
+api_location:
+- Mergemod.dll
+ms.openlocfilehash: 90e43b0d8bcae05273fa7093e3df570b10b124cb
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105752461"
+---
+# <a name="configurableitemhelplocation-property"></a><span data-ttu-id="46c76-103">Propriedade ConfigurableItem. HelpLocation</span><span class="sxs-lookup"><span data-stu-id="46c76-103">ConfigurableItem.HelpLocation property</span></span>
+
+<span data-ttu-id="46c76-104">A propriedade **HelpLocation** retorna o valor da coluna HelpLocation da [Tabela ModuleConfiguration](moduleconfiguration-table.md).</span><span class="sxs-lookup"><span data-stu-id="46c76-104">The **HelpLocation** property returns the value from the HelpLocation column of the [ModuleConfiguration table](moduleconfiguration-table.md).</span></span>
+
+<span data-ttu-id="46c76-105">Esta propriedade é somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="46c76-105">This property is read-only.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="46c76-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="46c76-106">Syntax</span></span>
+
+
+```JScript
+propVal = ConfigurableItem.HelpLocation
+```
+
+
+
+## <a name="property-value"></a><span data-ttu-id="46c76-107">Valor da propriedade</span><span class="sxs-lookup"><span data-stu-id="46c76-107">Property value</span></span>
+
+## <a name="c"></a><span data-ttu-id="46c76-108">C++</span><span class="sxs-lookup"><span data-stu-id="46c76-108">C++</span></span>
+
+<span data-ttu-id="46c76-109">Consulte [**obter \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helplocation) a função HelpLocation.</span><span class="sxs-lookup"><span data-stu-id="46c76-109">See [**get\_HelpLocation**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helplocation) function.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="46c76-110">Requisitos</span><span class="sxs-lookup"><span data-stu-id="46c76-110">Requirements</span></span>
+
+
+
+| <span data-ttu-id="46c76-111">Requisito</span><span class="sxs-lookup"><span data-stu-id="46c76-111">Requirement</span></span> | <span data-ttu-id="46c76-112">Valor</span><span class="sxs-lookup"><span data-stu-id="46c76-112">Value</span></span> |
+|--------------------|-----------------------------------------------------------------------------------------|
+| <span data-ttu-id="46c76-113">Versão</span><span class="sxs-lookup"><span data-stu-id="46c76-113">Version</span></span><br/> | <span data-ttu-id="46c76-114">Mergemod.dll 2,0 ou posterior</span><span class="sxs-lookup"><span data-stu-id="46c76-114">Mergemod.dll 2.0 or later</span></span><br/>                                                    |
+| <span data-ttu-id="46c76-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="46c76-115">Header</span></span><br/>  | <dl> <span data-ttu-id="46c76-116"><dt>Mergemod. h</dt></span><span class="sxs-lookup"><span data-stu-id="46c76-116"><dt>Mergemod.h</dt></span></span> </dl>   |
+| <span data-ttu-id="46c76-117">DLL</span><span class="sxs-lookup"><span data-stu-id="46c76-117">DLL</span></span><br/>     | <dl> <span data-ttu-id="46c76-118"><dt>Mergemod.dll</dt></span><span class="sxs-lookup"><span data-stu-id="46c76-118"><dt>Mergemod.dll</dt></span></span> </dl> |
+
+
+
+ 
+
+ 
+
+
+
+
