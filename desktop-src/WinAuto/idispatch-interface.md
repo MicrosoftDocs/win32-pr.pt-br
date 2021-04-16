@@ -1,0 +1,27 @@
+---
+title: Interface e acessibilidade do IDispatch
+description: A interface IDispatch foi inicialmente projetada para dar suporte à automação.
+ms.assetid: 5a95f002-4fd5-43d3-9b50-7b3f7790300a
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4641ca3e4cc18b96441aefbbc46231e3f7753a94
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "105750412"
+---
+# <a name="idispatch-interface-and-accessibility"></a><span data-ttu-id="82bb0-103">Interface e acessibilidade do IDispatch</span><span class="sxs-lookup"><span data-stu-id="82bb0-103">IDispatch Interface and Accessibility</span></span>
+
+<span data-ttu-id="82bb0-104">A interface [**IDispatch**](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) foi inicialmente projetada para dar suporte à automação.</span><span class="sxs-lookup"><span data-stu-id="82bb0-104">The [**IDispatch**](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interface was initially designed to support Automation.</span></span> <span data-ttu-id="82bb0-105">Ele fornece um mecanismo de ligação tardia para acessar e recuperar informações sobre métodos e propriedades de um objeto.</span><span class="sxs-lookup"><span data-stu-id="82bb0-105">It provides a late-binding mechanism to access and retrieve information about an object's methods and properties.</span></span> <span data-ttu-id="82bb0-106">Anteriormente, os desenvolvedores de servidor tinham que implementar as interfaces **IDispatch** e [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para seus objetos acessíveis; ou seja, eles tinham que fornecer uma [interface dupla](dual-interfaces--iaccessible-and-idispatch.md).</span><span class="sxs-lookup"><span data-stu-id="82bb0-106">Previously, server developers had to implement both the **IDispatch** and [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) interfaces for their accessible objects; that is, they had to provide a [dual interface](dual-interfaces--iaccessible-and-idispatch.md).</span></span> <span data-ttu-id="82bb0-107">Com o Microsoft Acessibilidade Ativa 2,0, os servidores podem retornar **e \_ NOTIMPL** de métodos **IDispatch** e o Microsoft acessibilidade ativa implementará a interface **IAccessible** para eles.</span><span class="sxs-lookup"><span data-stu-id="82bb0-107">With Microsoft Active Accessibility 2.0, servers can return **E\_NOTIMPL** from **IDispatch** methods and Microsoft Active Accessibility will implement the **IAccessible** interface for them.</span></span>
+
+<span data-ttu-id="82bb0-108">Além dos métodos herdados de [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown), os desenvolvedores de servidor devem implementar os seguintes métodos dentro da definição de classe de cada objeto exposto:</span><span class="sxs-lookup"><span data-stu-id="82bb0-108">In addition to the methods inherited from [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown), server developers must implement the following methods within the class definition of each object that is exposed:</span></span>
+
+-   <span data-ttu-id="82bb0-109">[**GetTypeInfoCount**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) retorna o número de descrições de tipo para o objeto.</span><span class="sxs-lookup"><span data-stu-id="82bb0-109">[**GetTypeInfoCount**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) returns the number of type descriptions for the object.</span></span> <span data-ttu-id="82bb0-110">Para objetos que dão suporte a [**IDispatch**](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch), a contagem de informações de tipo é sempre uma.</span><span class="sxs-lookup"><span data-stu-id="82bb0-110">For objects that support [**IDispatch**](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch), the type information count is always one.</span></span>
+-   <span data-ttu-id="82bb0-111">[**GetTypeInfo**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) recupera uma descrição da interface programável do objeto.</span><span class="sxs-lookup"><span data-stu-id="82bb0-111">[**GetTypeInfo**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) retrieves a description of the object's programmable interface.</span></span>
+-   <span data-ttu-id="82bb0-112">[**GetIDsOfNames**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) mapeia o nome de um método ou propriedade para um **DISPID**, que é usado posteriormente para invocar o método ou a propriedade.</span><span class="sxs-lookup"><span data-stu-id="82bb0-112">[**GetIDsOfNames**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) maps the name of a method or property to a **DISPID**, which is later used to invoke the method or property.</span></span>
+-   <span data-ttu-id="82bb0-113">[**Invoke**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) chama um dos métodos do objeto ou Obtém ou define uma de suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="82bb0-113">[**Invoke**](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) calls one of the object's methods, or gets or sets one of its properties.</span></span>
+
+ 
+
+ 
