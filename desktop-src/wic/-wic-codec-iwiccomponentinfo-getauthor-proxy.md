@@ -1,0 +1,110 @@
+---
+description: Função de proxy para o método getauthor.
+ms.assetid: fb76009e-cc01-4dec-9403-04bf6b53db80
+title: Função IWICComponentInfo_GetAuthor_Proxy
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IWICComponentInfo_GetAuthor_Proxy
+api_type:
+- DllExport
+api_location:
+- Windowscodecs.dll
+- Wincodec.lib
+ms.openlocfilehash: f181a567ae4089870d324c7a7e0d67a34b965b5a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105773036"
+---
+# <a name="iwiccomponentinfo_getauthor_proxy-function"></a>\_Função de proxy IWICComponentInfo Getauthor \_
+
+Função de proxy para o método [**getauthor**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor) .
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT IWICComponentInfo_GetAuthor_Proxy(
+  _In_    IWICComponentInfo *THIS_PTR,
+  _In_    UINT              cchAuthor,
+  _Inout_ WCHAR             *wzAuthor,
+  _Out_   UINT              *pcchActual
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*Isso \_ PTR* \[\]
+</dt> <dd>
+
+Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+
+Ponteiro para este objeto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+
+</dd> <dt>
+
+*cchAuthor* \[ no\]
+</dt> <dd>
+
+Tipo: **uint**
+
+O tamanho do buffer *wzAuthor* .
+
+</dd> <dt>
+
+*wzAuthor* \[ entrada, saída\]
+</dt> <dd>
+
+Tipo: **WCHAR \** _
+
+Um ponteiro que recebe o nome do autor do componente.
+
+A cadeia de caracteres retornada é específica da localidade, 1033 por padrão.
+
+</dd> <dt>
+
+_pcchActual * \[ out\]
+</dt> <dd>
+
+Tipo: **uint \** _
+
+Um ponteiro que recebe o comprimento real do nome de autores do componente.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Tipo: _ *HRESULT**
+
+Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+
+## <a name="remarks"></a>Comentários
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+
+
+
+ 
+
+ 
+
+
+
+

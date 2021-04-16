@@ -1,0 +1,150 @@
+---
+description: Observação em vez de usar essa função herdada, recomendamos que você use a API D3DDisassemble. Essa função – que desmonta um sombreador compilado em uma cadeia de texto que contém instruções de assembly e registros de atribuições--não existe mais.
+ms.assetid: f94264f8-121a-4bb7-bf1f-cc5d2cac6cd2
+title: Função D3DX10DisassembleShader (D3DX10Core. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DX10DisassembleShader
+api_type:
+- HeaderDef
+api_location:
+- D3DX10Core.h
+ms.openlocfilehash: 13716fd5d25e2e8602379ea3864c516fa5388475
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "105786958"
+---
+# <a name="d3dx10disassembleshader-function"></a>Função D3DX10DisassembleShader
+
+> [!Note]  
+> Em vez de usar essa função herdada, recomendamos que você use a API [**D3DDisassemble**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble) .
+
+ 
+
+Essa função – que desmonta um sombreador compilado em uma cadeia de texto que contém instruções de assembly e registros de atribuições--não existe mais. Em vez disso, use [**D3DDisassemble10Effect**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble10effect).
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT D3DX10DisassembleShader(
+  _In_  const void       *pShader,
+  _In_        SIZE_T     BytecodeLength,
+  _In_        BOOL       EnableColorCode,
+  _In_        LPCSTR     pComments,
+  _Out_       ID3D10Blob **ppDisassembly
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*pShader* \[ no\]
+</dt> <dd>
+
+Tipo: **const void \***
+
+Um ponteiro para o [**sombreador compilado**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout).
+
+</dd> <dt>
+
+*BytecodeLength* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **tamanho \_ T**](../winprog/windows-data-types.md)**
+
+O tamanho de pShader.
+
+</dd> <dt>
+
+*EnableColorCode* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+
+Inclua marcas HTML na saída para codificar por cor o resultado.
+
+</dd> <dt>
+
+*pComments* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
+
+A cadeia de caracteres de comentário na parte superior do sombreador que identifica as constantes e variáveis do sombreador.
+
+</dd> <dt>
+
+*ppDisassembly* \[ fora\]
+</dt> <dd>
+
+Tipo: **[ **ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
+
+Endereço de um buffer (consulte a [**interface ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)) que contém o sombreador desmontado.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
+
+Retorna um dos seguintes [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+
+## <a name="remarks"></a>Comentários
+
+Esse texto retornado inclui um cabeçalho com a versão do compilador HLSL usado para gerar esse objeto, comentários que descrevem o layout de memória dos buffers de constantes usados pelo sombreador, assinaturas de entrada e saída e pontos de associação de recursos.
+
+Aqui está um exemplo de desmontagem de um sombreador compilado. O exemplo pressupõe que você comece com um sombreador compilado (mostrado como *pVSBuf* , que pode ser visto no [exemplo HLSLWithoutFX10](https://msdn.microsoft.com/library/Ee416414(v=VS.85).aspx)).
+
+
+```
+LPCSTR commentString = NULL;
+ID3D10Blob* pIDisassembly = NULL;
+char* pDisassembly = NULL;
+if( pVSBuf )
+{
+    D3D10DisassembleShader( (UINT*) pVSBuf->GetBufferPointer(), 
+        pVSBuf->GetBufferSize(), TRUE, commentString, &pIDisassembly );
+    if( pIDisassembly )
+    {
+        FILE* pFile = fopen( "shader.htm", "w" );
+        if( pFile)
+        {
+            fputs( (char*)pIDisassembly->GetBufferPointer(), pFile );
+            fclose( pFile );
+        }
+    }
+}
+```
+
+
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------|-----------------------------------------------------------------------------------------|
+| parâmetro<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[Funções de Uso Geral](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+</dt> </dl>
+
+ 
+
+ 

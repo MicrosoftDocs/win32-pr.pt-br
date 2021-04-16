@@ -1,7 +1,7 @@
 ---
-description: Contém dados para o relatório de pressão de memória.
+description: Esta estrutura contém dados para relatórios de pressão de memória.
 ms.assetid: 42cf0922-53cc-48b9-8359-b88583ef5f1c
-title: Estrutura D3DMEMORYPRESSURE (D3d9types. h)
+title: Estrutura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 6d92cad29bda795a9589dbe0c94863bd743505bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7400c4822b61a84ab288f0424cfa84e825e69dc9
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089754"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188027"
 ---
-# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Estrutura D3DMEMORYPRESSURE (D3d9types. h)
+# <a name="d3dmemorypressure-structure-d3d9typesh-for-microsoft-media-foundation"></a>Estrutura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
 
 Contém dados para o relatório de pressão de memória.
 
@@ -68,9 +68,9 @@ A eficiência geral das alocações de memória que foram colocadas na memória 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h (incluir D3d9. h)</dt> </dl> |
+| Cliente mínimo com suporte | \[Somente aplicativos de área de trabalho do Windows 7\]                                                              |
+| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]                                                 |
+| parâmetro                  | D3d9types. h (incluir D3d9. h) |
 
 
 

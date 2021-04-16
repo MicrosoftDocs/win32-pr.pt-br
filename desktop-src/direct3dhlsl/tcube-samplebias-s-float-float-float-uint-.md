@@ -1,6 +1,6 @@
 ---
-title: 'Função SampleBias:: SampleBias (S, float, float, float, uint)'
-description: 'Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para. Retorna o status sobre a operação. | Função SampleBias:: SampleBias (S, float, float, float, uint)'
+title: 'Função SampleBias:: SampleBias (S, float, float, float, uint) para TextureCube'
+description: 'A função SampleBias:: SampleBias (S, float, float, float, uint) para o TextureCube amostras de uma textura depois de aplicar o valor de tendência ao nível de mipmap.'
 ms.assetid: A2F10B9B-5DF2-4389-83A9-F6A29781BF0A
 keywords:
 - HLSL da função SampleBias
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2f3a994d7b0f0c2d55ae3203db9f3205932c1a25
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 116749acdc23bb8ac2fd057139bf8ef7c8f5ddcc
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172781"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187683"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloatuint-function"></a>Função SampleBias:: SampleBias (S, float, float, float, uint)
+# <a name="samplebiassamplebiassfloatfloatfloatuint-function-for-texturecube"></a>Função SampleBias:: SampleBias (S, float, float, float, uint) para TextureCube
 
 Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para. Retorna o status sobre a operação.
 

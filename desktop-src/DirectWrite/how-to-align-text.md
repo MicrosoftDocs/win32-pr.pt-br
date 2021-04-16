@@ -4,12 +4,12 @@ description: Você pode alinhar o texto DirectWrite usando o método SetTextAlig
 ms.assetid: 7f79dcff-11f6-4e74-b5bd-98bfebe6e393
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cfd7a025769dea34444236805ebb8e5530ea06c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cb765860f2fbaac94409aa9ec20c2269beb45cbb
+ms.sourcegitcommit: 3b9424e1dcd951b2a73e47de3c7f4d734de4263b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641446"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106103867"
 ---
 # <a name="how-to-align-text"></a>Como alinhar texto
 
@@ -17,9 +17,11 @@ Você pode alinhar o texto [DirectWrite](direct-write-portal.md) usando o métod
 
 
 ```C++
-if (SUCCEEDED(hr))
+HRESULT hr = pTextFormat_->SetTextAlignment(DWRITE_TEXT_ALIGNMENT_CENTER);
+
+if (FAILED(hr))
 {
-    hr = pTextFormat_->SetTextAlignment(DWRITE_TEXT_ALIGNMENT_CENTER);
+    // Report the error
 }
 ```
 
@@ -32,10 +34,10 @@ O texto pode ser alinhado à borda esquerda ou à direita da caixa de layout ou 
 > [!Note]  
 > O alinhamento é dependente da direção de leitura, o acima é para a direção de leitura da esquerda para a direita. Para a direção de leitura da direita para a esquerda, seria o oposto.
 
- 
+ 
 
 Um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usará o alinhamento que foi designado para o [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) fornecido por você ao criar o layout. Para alterar o alinhamento do texto, use [**IDWriteTextLayout:: SetTextAlign**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-settextalignment).
 
- 
+ 
 
- 
+ 

@@ -9,16 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c613a3f0068537733961b58a8a4c2b4528d21f25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 04f3729bbeda5b0677da9d52e595e621523ff2d1
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291957"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187903"
 ---
 # <a name="unpacking-and-packing-dxgi_format-for-in-place-image-editing"></a>Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place
 
 O \_ arquivo D3DX DXGIFormatConvert. inl contém funções de conversão de formato embutido que você pode usar no sombreador de computação ou sombreador de pixel no hardware do Direct3D 11. Você pode usar essas funções em seu aplicativo para, simultaneamente, ler e gravar em uma textura. Ou seja, você pode executar a edição de imagem in-loco. Para usar essas funções de conversão de formato embutido, inclua o \_ arquivo D3DX DXGIFormatConvert. inl em seu aplicativo.
+
+> O \_ cabeçalho D3DX DXGIFormatConvert. inl é fornecido no SDK do DirectX herdado. Ele também está incluído no pacote NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) .
 
 O UAV (modo de exibição de acesso não ordenado) do Direct3D 11 de um recurso Texture1D, Texture2D ou Texture3D dá suporte a leituras de acesso aleatório e gravações na memória de um sombreador de computação ou sombreador de pixel. No entanto, o Direct3D 11 dá suporte a leitura e gravação simultâneas somente no \_ formato de textura R32 do formato dxgi \_ \_ . Por exemplo, o Direct3D 11 não oferece suporte simultaneamente à leitura e gravação em outros formatos mais úteis, como o formato DXGI \_ \_ R8G8B8A8 \_ UNORM. Você pode usar apenas um UAV para a gravação de acesso aleatório em outros formatos, ou você pode usar apenas um Modo de Exibição de Recursos de sombreador (SRV) para acesso aleatório a leitura de outros formatos. O hardware de conversão de formato não está disponível para ler simultaneamente e gravar em outros formatos.
 
@@ -63,7 +65,7 @@ Por exemplo, o formato \_ dxgi \_ R10G10B10A2 \_ UNORM é um descendente do form
 > [!Note]  
 > Se o sombreador precisar gravar somente em um UAV, ou ler como um SRV, nenhum desses trabalhos de conversão será necessário porque você pode usar o UAVs totalmente tipado ou o SRVs. As funções de conversão de formato fornecidas em D3DX \_ DXGIFormatConvert. inl são potencialmente úteis apenas se você deseja executar a leitura simultânea e gravação em um UAV de uma textura.
 
- 
+ 
 
 A seguir está a lista de funções de conversão de formato que estão incluídas no \_ arquivo D3DX DXGIFormatConvert. inl. Essas funções são categorizadas pelo formato DXGI \_ que são descompactadas e empacotadas. Cada um dos formatos com suporte descende de um dos formatos sem tipo listados no cenário anterior e dá suporte à conversão para \_ o formato dxgi \_ R32 \_ uint como um UAV.
 
@@ -123,7 +125,7 @@ UINT     D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB(hlsl_precise XMFLOAT4 unpackedInput)
 > [!Note]  
 > A \_ função inexata tipo usa as instruções do sombreador que não têm precisão alta o suficiente para fornecer a resposta exata. A função alternativa usa uma tabela de pesquisa armazenada no sombreador para fornecer uma conversão exata de >flutuante de SRGB.
 
- 
+ 
 
 </dd> <dt>
 
@@ -194,7 +196,7 @@ UINT     D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB(hlsl_precise XMFLOAT4 unpackedInput)
 > [!Note]  
 > A \_ função inexata tipo usa as instruções do sombreador que não têm precisão alta o suficiente para fornecer a resposta exata. A função alternativa usa uma tabela de pesquisa armazenada no sombreador para fornecer uma conversão exata de >flutuante de SRGB.
 
- 
+ 
 
 </dd> <dt>
 
@@ -226,7 +228,7 @@ UINT     D3DX_FLOAT3_to_B8G8R8X8_UNORM_SRGB(hlsl_precise XMFLOAT3 unpackedInput)
 > [!Note]  
 > A \_ função inexata tipo usa as instruções do sombreador que não têm precisão alta o suficiente para fornecer a resposta exata. A função alternativa usa uma tabela de pesquisa armazenada no sombreador para fornecer uma conversão exata de >flutuante de SRGB.
 
- 
+ 
 
 </dd> <dt>
 
@@ -307,9 +309,9 @@ UINT   D3DX_INT2_to_R16G16_SINT(XMINT2 unpackedInput)
 [Guia de programação para HLSL](dx-graphics-hlsl-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

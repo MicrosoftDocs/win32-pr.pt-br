@@ -1,0 +1,43 @@
+---
+description: Formatos de extensão MTP
+ms.assetid: 318b7267-f4ba-43ad-aa24-8cfacf056558
+title: Formatos de extensão MTP
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: ff86265e47071fce9fe523cfbb64f2e355ed541e
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105808359"
+---
+# <a name="mtp-extension-formats"></a>Formatos de extensão MTP
+
+O formato de um arquivo em um dispositivo pode ser descrito por um valor de GUID. Esse valor é especificado pela propriedade de \_ formato de objeto WPD \_ .
+
+## <a name="vendor-extended-formats"></a>Fornecedor-formatos estendidos
+
+Quando um fabricante de dispositivo dá suporte a um formato estendido de fornecedor, seu driver combina o código de formato do fornecedor (UINT16) com os 16 bits mais altos do **\_ formato de objeto WPD \_ \_ não especificado** GUID.
+
+Por exemplo, se o código estendido pelo fornecedor for 0xB001, o GUID resultante será como mostrado no exemplo a seguir:
+
+
+```C++
+{B0010000-AE6C-4804-98BA-C57B46965FE7}
+```
+
+
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Suporte a extensões de MTP](supporting-mtp-extensions.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
