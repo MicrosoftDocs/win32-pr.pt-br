@@ -1,0 +1,31 @@
+---
+description: Considerações para mover e substituir arquivos usando as funções CopyFileEx, CreateFile, ReplaceFile e MoveFileEx.
+ms.assetid: 4872af0d-42e8-4576-9aa9-4b8671375f2e
+title: Movendo e substituindo arquivos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7d7f08d2bd8d07645076620e839d7d12f5969502
+ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "105782375"
+---
+# <a name="moving-and-replacing-files"></a><span data-ttu-id="b0058-103">Movendo e substituindo arquivos</span><span class="sxs-lookup"><span data-stu-id="b0058-103">Moving and Replacing Files</span></span>
+
+<span data-ttu-id="b0058-104">Antes que uma operação de cópia possa ser executada, o arquivo de origem deve ser fechado ou aberto somente para leitura.</span><span class="sxs-lookup"><span data-stu-id="b0058-104">Before a copy operation can be performed, the source file must be closed or opened only for reading.</span></span> <span data-ttu-id="b0058-105">Nenhum thread pode ter o arquivo de origem aberto para gravação.</span><span class="sxs-lookup"><span data-stu-id="b0058-105">No thread can have the the source file opened for writing.</span></span> <span data-ttu-id="b0058-106">Para copiar um arquivo existente para um novo, use a função [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) ou [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) .</span><span class="sxs-lookup"><span data-stu-id="b0058-106">To copy an existing file to a new one, use the [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) or [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) function.</span></span> <span data-ttu-id="b0058-107">Os aplicativos poderão especificar se **CopyFile** e **CopyFileEx** falharão se o arquivo de destino já existir.</span><span class="sxs-lookup"><span data-stu-id="b0058-107">Applications can specify whether **CopyFile** and **CopyFileEx** fail if the destination file already exists.</span></span> <span data-ttu-id="b0058-108">Se o arquivo de destino existir e estiver aberto, ele deverá ter sido aberto com as permissões de compartilhamento aplicáveis.</span><span class="sxs-lookup"><span data-stu-id="b0058-108">If the destination file does exist and is open, it must have been opened with applicable sharing permissions.</span></span> <span data-ttu-id="b0058-109">Para obter mais informações, consulte [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).</span><span class="sxs-lookup"><span data-stu-id="b0058-109">For more information, see [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).</span></span>
+
+<span data-ttu-id="b0058-110">A função [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) também permite que um aplicativo especifique o endereço de uma função de retorno de chamada (consulte [**CopyProgressRoutine**](/windows/desktop/api/WinBase/nc-winbase-lpprogress_routine)) que é chamado cada vez que outra parte do arquivo é copiada.</span><span class="sxs-lookup"><span data-stu-id="b0058-110">The [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) function also allows an application to specify the address of a callback function (see [**CopyProgressRoutine**](/windows/desktop/api/WinBase/nc-winbase-lpprogress_routine)) that is called each time another portion of the file has been copied.</span></span> <span data-ttu-id="b0058-111">O aplicativo pode usar essas informações para exibir um indicador que mostra o número total de bytes copiados como uma porcentagem do tamanho total do arquivo.</span><span class="sxs-lookup"><span data-stu-id="b0058-111">The application can use this information to display an indicator that shows the total number of bytes copied as a percent of the total file size.</span></span>
+
+<span data-ttu-id="b0058-112">A função [**ReplaceFile**](/windows/desktop/api/WinBase/nf-winbase-replacefilea) substitui um arquivo por outro arquivo, com a opção de criar uma cópia de backup do arquivo original.</span><span class="sxs-lookup"><span data-stu-id="b0058-112">The [**ReplaceFile**](/windows/desktop/api/WinBase/nf-winbase-replacefilea) function replaces one file with another file, with the option of creating a backup copy of the original file.</span></span> <span data-ttu-id="b0058-113">A função preserva os atributos do arquivo original, como seu tempo de criação, ACLs e atributo de criptografia.</span><span class="sxs-lookup"><span data-stu-id="b0058-113">The function preserves attributes of the original file, such as its creation time, ACLs, and encryption attribute.</span></span>
+
+<span data-ttu-id="b0058-114">Um arquivo também deve ser fechado antes que um aplicativo possa movê-lo.</span><span class="sxs-lookup"><span data-stu-id="b0058-114">A file must also be closed before an application can move it.</span></span> <span data-ttu-id="b0058-115">As funções [**MoveFile**](/windows/desktop/api/WinBase/nf-winbase-movefile) e [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) copiam um arquivo existente para um novo local e exclui o original.</span><span class="sxs-lookup"><span data-stu-id="b0058-115">The [**MoveFile**](/windows/desktop/api/WinBase/nf-winbase-movefile) and [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) functions copy an existing file to a new location and deletes the original.</span></span>
+
+<span data-ttu-id="b0058-116">A função [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) também permite que um aplicativo especifique como mover o arquivo.</span><span class="sxs-lookup"><span data-stu-id="b0058-116">The [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) function also allows an application to specify how to move the file.</span></span> <span data-ttu-id="b0058-117">A função pode substituir um arquivo existente, mover um arquivo entre volumes e atrasar a movimentação do arquivo até que o sistema operacional seja reiniciado.</span><span class="sxs-lookup"><span data-stu-id="b0058-117">The function can replace an existing file, move a file across volumes, and delay moving the file until the operating system is restarted.</span></span>
+
+ 
+
+ 
+
+
+
