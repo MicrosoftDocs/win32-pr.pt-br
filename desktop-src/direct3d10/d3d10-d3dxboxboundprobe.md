@@ -1,5 +1,5 @@
 ---
-description: Determina se um raio intersecciona o volume da caixa delimitadora de uma caixa.
+description: A função D3DXBoxBoundProbe (D3DX10math. h) determina se um raio intersecciona o volume da caixa delimitadora de uma caixa.
 ms.assetid: d3cdcf89-461b-44b0-b5d0-ca2e3869a5ad
 title: Função D3DXBoxBoundProbe (D3DX10math. h)
 ms.topic: reference
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 545036d9564ec20d59c983ffe2d5447659442ba1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1a8d1a7b879814cff43e31b060cc2af53167818
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105787777"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187815"
 ---
-# <a name="d3dxboxboundprobe-function"></a>Função D3DXBoxBoundProbe
+# <a name="d3dxboxboundprobe-function-d3dx10mathh"></a>Função D3DXBoxBoundProbe (D3DX10math. h)
 
 Determina se um raio intersecciona o volume da caixa delimitadora de uma caixa.
 
@@ -127,8 +127,8 @@ A profundidade da caixa delimitadora na direção z é Zmax-zmin, na direção y
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro  | D3DX10math. h |
+| Biblioteca | D3DX10. lib  |
 
 
 

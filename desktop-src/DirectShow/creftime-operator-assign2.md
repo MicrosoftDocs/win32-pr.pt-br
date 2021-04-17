@@ -1,7 +1,7 @@
 ---
-description: O operador = atribui um novo tempo de referência.
+description: O operador = atribui um novo tempo de referência. Esse método usa o parâmetro *ll* .
 ms.assetid: 556c2e8a-4726-42ab-949d-9a028ebb1b95
-title: CReftime. Operator = método (REFTIME. h)
+title: CReftime. Operator = método (REFTIME. h)-o parâmetro ll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8d93a57211c3bc7d787e68f70f36be868ff64449
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d09cb957e06d8b075cff3d831a7f68fbbdf662a8
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758530"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187839"
 ---
-# <a name="creftimeoperator-method-reftimeh"></a>CReftime. Operator = método (REFTIME. h)
+# <a name="creftimeoperator-method-reftimeh---ll-parameter"></a>CReftime. Operator = método (REFTIME. h)-o parâmetro ll
 
 O operador = atribui um novo tempo de referência.
 
@@ -59,8 +59,8 @@ Retorna uma referência ao objeto.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>REFTIME. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro  | REFTIME. h (incluir fluxos. h)                                                                                   |
+| Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 
 
