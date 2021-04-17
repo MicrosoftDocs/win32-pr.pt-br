@@ -1,0 +1,124 @@
+---
+title: Mensagem de WM_CONTEXTMENU (WinUser. h)
+description: Notifica uma janela de que o usuário clicou com o botão direito do mouse (clicado com o botão direito) na janela.
+ms.assetid: e607a61a-0f9b-4d11-b8c0-b01a2e7fb35b
+keywords:
+- WM_CONTEXTMENU menus de mensagens e outros recursos
+topic_type:
+- apiref
+api_name:
+- WM_CONTEXTMENU
+api_location:
+- Winuser.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: ff7764926709bfc8ab6aa95be330a9d45d38bc48
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "105761671"
+---
+# <a name="wm_contextmenu-message"></a>Mensagem de CONTEXTMENU do WM \_
+
+Notifica uma janela que o usuário deseja que um menu de contexto apareça.  O usuário pode ter clicado com o botão direito do mouse (clicado com o botão direito) na janela, pressionado Shift + F10 ou pressionou a chave de aplicativos (chave de menu de contexto) disponível em alguns teclados.
+
+
+```C++
+#define WM_CONTEXTMENU                  0x007B
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*wParam* 
+</dt> <dd>
+
+Um identificador para a janela na qual o usuário clicou com o botão direito do mouse. Essa pode ser uma janela filho da janela que recebe a mensagem. Para obter mais informações sobre como processar essa mensagem, consulte a seção comentários.
+
+</dd> <dt>
+
+*lParam* 
+</dt> <dd>
+
+A palavra de ordem inferior Especifica a posição horizontal do cursor, em coordenadas de tela, no momento do clique do mouse.
+
+A palavra de ordem superior especifica a posição vertical do cursor, em coordenadas da tela, no momento do clique do mouse.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Sem valor de retorno.
+
+## <a name="remarks"></a>Comentários
+
+Uma janela pode processar essa mensagem exibindo um menu de atalho usando as funções [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) ou [**TrackPopupMenuEx**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex) . Para obter as posições horizontal e vertical, use o código a seguir.
+
+
+```
+xPos = GET_X_LPARAM(lParam); 
+yPos = GET_Y_LPARAM(lParam); 
+```
+
+
+
+Se uma janela não exibir um menu de atalho, ela deverá passar essa mensagem para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) . Se uma janela for uma janela filho, o **DefWindowProc** enviará a mensagem para o pai. Caso contrário, o **DefWindowProc** exibirá um menu de atalho padrão se a posição especificada estiver na legenda da janela.
+
+[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) gera a mensagem de **\_ CONTEXTMENU do WM** quando processa a mensagem do [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup) ou [**WM \_ NCRBUTTONUP**](/windows/desktop/inputdev/wm-ncrbuttonup) ou quando o usuário digita Shift + F10. A mensagem de **\_ CONTEXTMENU do WM** também é gerada quando o usuário pressiona e libera a chave de [**\_ aplicativos VK**](/windows/desktop/inputdev/virtual-key-codes) .
+
+Se o menu de contexto for gerado do teclado, por exemplo, se o usuário digitar SHIFT + F10, as coordenadas x e y serão-1 e o aplicativo deverá exibir o menu de contexto no local da seleção atual em vez de em (xPos, yPos).
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+**Referência**
+</dt> <dt>
+
+[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+</dt> <dt>
+
+[**OBTER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+</dt> <dt>
+
+[**OBTER \_ \_ lParam Y**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+</dt> <dt>
+
+[**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu)
+</dt> <dt>
+
+[**TrackPopupMenuEx**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex)
+</dt> <dt>
+
+[**NCRBUTTONUP do WM \_**](/windows/desktop/inputdev/wm-ncrbuttonup)
+</dt> <dt>
+
+[**RBUTTONUP do WM \_**](/windows/desktop/inputdev/wm-rbuttonup)
+</dt> <dt>
+
+**Conceitua**
+</dt> <dt>
+
+[Menus](menus.md)
+</dt> </dl>
+
+ 
+

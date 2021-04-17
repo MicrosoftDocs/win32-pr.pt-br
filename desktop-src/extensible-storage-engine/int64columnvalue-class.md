@@ -1,0 +1,72 @@
+---
+description: 'Saiba mais sobre: classe Int64ColumnValue'
+title: Classe Int64ColumnValue
+TOCTitle: Int64ColumnValue class
+ms:assetid: T:Microsoft.Isam.Esent.Interop.Int64ColumnValue
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int64columnvalue(v=EXCHG.10)
+ms:contentKeyID: 55103363
+ms.date: 07/30/2014
+ms.topic: reference
+f1_keywords:
+- Microsoft.Isam.Esent.Interop.Int64ColumnValue
+dev_langs:
+- CSharp
+- JScript
+- VB
+- other
+api_name:
+- Microsoft.Isam.Esent.Interop.Int64ColumnValue
+topic_type:
+- kbSyntax
+- apiref
+api_type:
+- Managed
+api_location:
+- Microsoft.Isam.Esent.Interop.dll
+ROBOTS: INDEX,FOLLOW
+ms.openlocfilehash: fe1c08845097ae612881a8002ddc896f4a792f96
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105761538"
+---
+# <a name="int64columnvalue-class"></a>Classe Int64ColumnValue
+
+Um valor de coluna [Int64](/dotnet/api/system.int64) .
+
+## <a name="inheritance-hierarchy"></a>Hierarquia de herança
+
+[System.Object](/dotnet/api/system.object)  
+  [Microsoft. ISAM. ESENT. Interop. Columnvalue](./columnvalue-class.md)  
+    [Microsoft. ISAM. ESENT. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
+      Microsoft. ISAM. ESENT. Interop. Int64ColumnValue  
+
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+
+## <a name="syntax"></a>Syntax
+
+``` vb
+'Declaration
+Public Class Int64ColumnValue _
+    Inherits ColumnValueOfStruct(Of Long)
+'Usage
+Dim instance As Int64ColumnValue
+```
+
+``` csharp
+public class Int64ColumnValue : ColumnValueOfStruct<long>
+```
+
+## <a name="thread-safety"></a>Acesso thread-safe
+
+Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro para threads. Não há garantia de que qualquer membro de instância seja seguro para threads.
+
+## <a name="see-also"></a>Confira também
+
+#### <a name="reference"></a>Referência
+
+[Membros do Int64ColumnValue](./int64columnvalue-members.md)
+
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
