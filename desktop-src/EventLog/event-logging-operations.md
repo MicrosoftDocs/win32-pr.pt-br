@@ -1,0 +1,48 @@
+---
+description: As funções OpenEventLog, OpenBackupEventLog, RegisterEventSource, DeregisterEventSource e CloseEventLog abrem e fecham identificadores de log de eventos.
+ms.assetid: e42a66c2-2f1e-46f8-99c7-4701075c8ec3
+title: Operações de log de eventos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 065acd268788de8c9674baa1fe47a3b89a719d4c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105759892"
+---
+# <a name="event-logging-operations"></a><span data-ttu-id="71dbf-103">Operações de log de eventos</span><span class="sxs-lookup"><span data-stu-id="71dbf-103">Event Logging Operations</span></span>
+
+<span data-ttu-id="71dbf-104">As funções [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga), [**OpenBackupEventLog**](/windows/desktop/api/Winbase/nf-winbase-openbackupeventloga), [**RegisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-registereventsourcea), [**DeregisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-deregistereventsource)e [**CloseEventLog**](/windows/desktop/api/Winbase/nf-winbase-closeeventlog) abrem e fecham identificadores de log de eventos.</span><span class="sxs-lookup"><span data-stu-id="71dbf-104">The [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga), [**OpenBackupEventLog**](/windows/desktop/api/Winbase/nf-winbase-openbackupeventloga), [**RegisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-registereventsourcea), [**DeregisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-deregistereventsource), and [**CloseEventLog**](/windows/desktop/api/Winbase/nf-winbase-closeeventlog) functions open and close event log handles.</span></span>
+
+<span data-ttu-id="71dbf-105">A tabela a seguir mostra as operações que podem ser executadas em um log de eventos aberto e a função correspondente para cada operação.</span><span class="sxs-lookup"><span data-stu-id="71dbf-105">The following table shows the operations that can be performed on an open event log, and the corresponding function for each operation.</span></span>
+
+
+
+| <span data-ttu-id="71dbf-106">Operação</span><span class="sxs-lookup"><span data-stu-id="71dbf-106">Operation</span></span> | <span data-ttu-id="71dbf-107">Função</span><span class="sxs-lookup"><span data-stu-id="71dbf-107">Function</span></span>                                                                                                                     |
+|-----------|------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="71dbf-108">Backup</span><span class="sxs-lookup"><span data-stu-id="71dbf-108">Backup</span></span>    | [<span data-ttu-id="71dbf-109">**BackupEventLog**</span><span class="sxs-lookup"><span data-stu-id="71dbf-109">**BackupEventLog**</span></span>](/windows/desktop/api/Winbase/nf-winbase-backupeventloga)                                                                                     |
+| <span data-ttu-id="71dbf-110">Limpar</span><span class="sxs-lookup"><span data-stu-id="71dbf-110">Clear</span></span>     | [<span data-ttu-id="71dbf-111">**ClearEventLog**</span><span class="sxs-lookup"><span data-stu-id="71dbf-111">**ClearEventLog**</span></span>](/windows/desktop/api/Winbase/nf-winbase-cleareventloga)                                                                                       |
+| <span data-ttu-id="71dbf-112">Monitoramento</span><span class="sxs-lookup"><span data-stu-id="71dbf-112">Monitor</span></span>   | [<span data-ttu-id="71dbf-113">**NotifyChangeEventLog**</span><span class="sxs-lookup"><span data-stu-id="71dbf-113">**NotifyChangeEventLog**</span></span>](/windows/desktop/api/Winbase/nf-winbase-notifychangeeventlog)                                                                         |
+| <span data-ttu-id="71dbf-114">Consulta</span><span class="sxs-lookup"><span data-stu-id="71dbf-114">Query</span></span>     | <span data-ttu-id="71dbf-115">[**GetOldestEventLogRecord**](/windows/desktop/api/Winbase/nf-winbase-getoldesteventlogrecord), [ **GetNumberOfEventLogRecords**](/windows/desktop/api/Winbase/nf-winbase-getnumberofeventlogrecords)</span><span class="sxs-lookup"><span data-stu-id="71dbf-115">[**GetOldestEventLogRecord**](/windows/desktop/api/Winbase/nf-winbase-getoldesteventlogrecord), [**GetNumberOfEventLogRecords**](/windows/desktop/api/Winbase/nf-winbase-getnumberofeventlogrecords)</span></span> |
+| <span data-ttu-id="71dbf-116">Ler</span><span class="sxs-lookup"><span data-stu-id="71dbf-116">Read</span></span>      | [<span data-ttu-id="71dbf-117">**ReadEventLog**</span><span class="sxs-lookup"><span data-stu-id="71dbf-117">**ReadEventLog**</span></span>](/windows/desktop/api/Winbase/nf-winbase-readeventloga)                                                                                         |
+| <span data-ttu-id="71dbf-118">Gravar</span><span class="sxs-lookup"><span data-stu-id="71dbf-118">Write</span></span>     | [<span data-ttu-id="71dbf-119">**ReportEvent**</span><span class="sxs-lookup"><span data-stu-id="71dbf-119">**ReportEvent**</span></span>](/windows/desktop/api/Winbase/nf-winbase-reporteventa)                                                                                           |
+
+
+
+ 
+
+<span data-ttu-id="71dbf-120">As funções [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga) e [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) usam um nome de servidor opcional como um parâmetro para que as operações possam ser executadas no servidor remoto.</span><span class="sxs-lookup"><span data-stu-id="71dbf-120">The [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga) and [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) functions take an optional server name as a parameter so the operations can be performed on the remote server.</span></span> <span data-ttu-id="71dbf-121">Use [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga) para ler ou executar operações administrativas (fazer backup, limpar, monitorar e consultar) no log e usar [**RegisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-registereventsourcea) para gravar no log.</span><span class="sxs-lookup"><span data-stu-id="71dbf-121">Use [**OpenEventLog**](/windows/desktop/api/Winbase/nf-winbase-openeventloga) for reading or performing administrative operations (backup, clear, monitor, and query) on the log, and use [**RegisterEventSource**](/windows/desktop/api/Winbase/nf-winbase-registereventsourcea) for writing to the log.</span></span>
+
+<span data-ttu-id="71dbf-122">Cada chamada para uma função de log de eventos é uma operação atômica.</span><span class="sxs-lookup"><span data-stu-id="71dbf-122">Each call to an event logging function is an atomic operation.</span></span> <span data-ttu-id="71dbf-123">Quando você lê do log de eventos, somente os registros de eventos inteiros são retornados.</span><span class="sxs-lookup"><span data-stu-id="71dbf-123">When you read from the event log, only whole event records are returned.</span></span> <span data-ttu-id="71dbf-124">Quando você grava no log de eventos, é garantido que cada registro de evento seja escrito em sequência como um registro completo no log.</span><span class="sxs-lookup"><span data-stu-id="71dbf-124">When you write to the event log, each event record is guaranteed to be written sequentially as a complete record in the log.</span></span> <span data-ttu-id="71dbf-125">A lista a seguir descreve como o serviço de log de eventos trata as condições especiais:</span><span class="sxs-lookup"><span data-stu-id="71dbf-125">The following list describes how the event-logging service handles special conditions:</span></span>
+
+-   <span data-ttu-id="71dbf-126">O serviço de log de eventos recebe uma operação de leitura e uma operação de gravação ao mesmo tempo: se a posição de leitura estiver no final do arquivo, a operação de leitura falhará com um status de "fim de arquivo" (se a operação de gravação não tiver sido concluída) ou retornará o novo registro (se a operação de gravação tiver sido concluída).</span><span class="sxs-lookup"><span data-stu-id="71dbf-126">The event-logging service receives a read operation and a write operation at the same time: If the read position is at the end of the file, either the read operation fails with an "end-of-file" status (if the write operation has not been completed), or it returns the new record (if the write operation has been completed).</span></span>
+-   <span data-ttu-id="71dbf-127">O serviço de log de eventos conclui uma operação de limpeza antes de receber uma operação de leitura: a operação de leitura falha com o status "fim do arquivo".</span><span class="sxs-lookup"><span data-stu-id="71dbf-127">The event-logging service completes a clear operation before receiving a read operation: The read operation fails with "end-of-file" status.</span></span>
+-   <span data-ttu-id="71dbf-128">O serviço de log de eventos conclui uma operação de limpeza antes de receber uma operação de gravação: a operação de limpeza trunca o log e, em seguida, a operação de gravação adiciona o novo registro no início do log.</span><span class="sxs-lookup"><span data-stu-id="71dbf-128">The event-logging service completes a clear operation before receiving a write operation: The clear operation truncates the log, then the write operation adds the new record at the beginning of the log.</span></span>
+
+ 
+
+ 
+
+
+
