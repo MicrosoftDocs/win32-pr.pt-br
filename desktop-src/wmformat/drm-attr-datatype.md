@@ -1,0 +1,123 @@
+---
+title: Enumeração de DRM_ATTR_DATATYPE (wmdrmsdk. h)
+description: A \_ enumeração de DataType attr do DRM \_ define os tipos de dados usados para atributos e propriedades DRM.
+ms.assetid: ccad16e2-475d-4cc7-b773-f17038d2754a
+keywords:
+- Formato de mídia do Windows de enumeração de DRM_ATTR_DATATYPE
+- Formato de mídia do Windows de enumeração
+topic_type:
+- apiref
+api_name:
+- DRM_ATTR_DATATYPE
+api_location:
+- Wmdrmsdk.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: e684ba1c09a86c65a13adbd189bb185f65598b77
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105813746"
+---
+# <a name="drm_attr_datatype-enumeration"></a><span data-ttu-id="d0475-105">\_Enumeração de \_ tipo de dados attr DRM</span><span class="sxs-lookup"><span data-stu-id="d0475-105">DRM\_ATTR\_DATATYPE enumeration</span></span>
+
+<span data-ttu-id="d0475-106">A enumeração de **\_ \_ DataType attr do DRM** define os tipos de dados usados para atributos e propriedades DRM.</span><span class="sxs-lookup"><span data-stu-id="d0475-106">The **DRM\_ATTR\_DATATYPE** enumeration defines the data types used for DRM attributes and properties.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="d0475-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="d0475-107">Syntax</span></span>
+
+
+```C++
+typedef enum DRM_ATTR_DATATYPE { 
+  DRM_TYPE_DWORD   = 0,
+  DRM_TYPE_STRING  = 1,
+  DRM_TYPE_BINARY  = 2,
+  DRM_TYPE_BOOL    = 3,
+  DRM_TYPE_QWORD   = 4,
+  DRM_TYPE_WORD    = 5,
+  DRM_TYPE_GUID    = 6
+} ;
+```
+
+
+
+## <a name="constants"></a><span data-ttu-id="d0475-108">Constantes</span><span class="sxs-lookup"><span data-stu-id="d0475-108">Constants</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="d0475-109"><span id="DRM_TYPE_DWORD"></span><span id="drm_type_dword"></span>**tipo de DRM \_ \_ DWORD**</span><span class="sxs-lookup"><span data-stu-id="d0475-109"><span id="DRM_TYPE_DWORD"></span><span id="drm_type_dword"></span>**DRM\_TYPE\_DWORD**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-110">A propriedade é um valor **DWORD** de 4 bytes.</span><span class="sxs-lookup"><span data-stu-id="d0475-110">The property is a 4-byte **DWORD** value.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-111"><span id="DRM_TYPE_STRING"></span><span id="drm_type_string"></span>**Cadeia de caracteres do \_ tipo DRM \_**</span><span class="sxs-lookup"><span data-stu-id="d0475-111"><span id="DRM_TYPE_STRING"></span><span id="drm_type_string"></span>**DRM\_TYPE\_STRING**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-112">A propriedade é uma cadeia de caracteres Unicode terminada em nulo.</span><span class="sxs-lookup"><span data-stu-id="d0475-112">The property is a null-terminated Unicode string.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-113"><span id="DRM_TYPE_BINARY"></span><span id="drm_type_binary"></span>**tipo de DRM \_ \_ binário**</span><span class="sxs-lookup"><span data-stu-id="d0475-113"><span id="DRM_TYPE_BINARY"></span><span id="drm_type_binary"></span>**DRM\_TYPE\_BINARY**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-114">A propriedade é uma matriz de bytes.</span><span class="sxs-lookup"><span data-stu-id="d0475-114">The property is an array of bytes.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-115"><span id="DRM_TYPE_BOOL"></span><span id="drm_type_bool"></span>**tipo de DRM \_ \_ bool**</span><span class="sxs-lookup"><span data-stu-id="d0475-115"><span id="DRM_TYPE_BOOL"></span><span id="drm_type_bool"></span>**DRM\_TYPE\_BOOL**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-116">A propriedade é um valor booliano de 4 bytes.</span><span class="sxs-lookup"><span data-stu-id="d0475-116">The property is a 4-byte Boolean value.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-117"><span id="DRM_TYPE_QWORD"></span><span id="drm_type_qword"></span>**tipo de DRM \_ \_ QWORD**</span><span class="sxs-lookup"><span data-stu-id="d0475-117"><span id="DRM_TYPE_QWORD"></span><span id="drm_type_qword"></span>**DRM\_TYPE\_QWORD**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-118">A propriedade é um valor **QWORD** de 8 bytes.</span><span class="sxs-lookup"><span data-stu-id="d0475-118">The property is an 8-byte **QWORD** value.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-119"><span id="DRM_TYPE_WORD"></span><span id="drm_type_word"></span>**\_palavra do tipo DRM \_**</span><span class="sxs-lookup"><span data-stu-id="d0475-119"><span id="DRM_TYPE_WORD"></span><span id="drm_type_word"></span>**DRM\_TYPE\_WORD**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-120">A propriedade é um valor de **palavra** de 2 bytes.</span><span class="sxs-lookup"><span data-stu-id="d0475-120">The property is a 2-byte **WORD** value.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="d0475-121"><span id="DRM_TYPE_GUID"></span><span id="drm_type_guid"></span>**\_GUID do tipo DRM \_**</span><span class="sxs-lookup"><span data-stu-id="d0475-121"><span id="DRM_TYPE_GUID"></span><span id="drm_type_guid"></span>**DRM\_TYPE\_GUID**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="d0475-122">A propriedade é um valor de GUID de 128 bits (6 bytes).</span><span class="sxs-lookup"><span data-stu-id="d0475-122">The property is a 128-bit (6-byte) GUID value.</span></span>
+
+</dd> </dl>
+
+## <a name="requirements"></a><span data-ttu-id="d0475-123">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d0475-123">Requirements</span></span>
+
+
+
+| <span data-ttu-id="d0475-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="d0475-124">Requirement</span></span> | <span data-ttu-id="d0475-125">Valor</span><span class="sxs-lookup"><span data-stu-id="d0475-125">Value</span></span> |
+|-------------------|---------------------------------------------------------------------------------------|
+| <span data-ttu-id="d0475-126">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d0475-126">Header</span></span><br/> | <dl> <span data-ttu-id="d0475-127"><dt>Wmdrmsdk. h</dt></span><span class="sxs-lookup"><span data-stu-id="d0475-127"><dt>Wmdrmsdk.h</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="d0475-128">Confira também</span><span class="sxs-lookup"><span data-stu-id="d0475-128">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="d0475-129">**Tipos de enumeração**</span><span class="sxs-lookup"><span data-stu-id="d0475-129">**Enumeration Types**</span></span>](drm-enumeration-types.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
