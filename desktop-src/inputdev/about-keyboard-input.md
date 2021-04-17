@@ -1,0 +1,241 @@
+---
+title: Sobre a entrada do teclado
+description: Este tópico discute a entrada do teclado.
+ms.assetid: de34727e-e8c7-481d-982d-0e42a02704db
+keywords:
+- entrada do usuário, entrada de teclado
+- capturando entrada do usuário, entrada de teclado
+- entrada do teclado
+- foco do teclado
+- mensagens de pressionamento de tecla
+- mensagens de caracteres
+- pressionamentos de tecla do sistema
+- pressionamentos de tecla não do sistema
+- mensagens de caracteres não do sistema
+- chaves inativas
+- mensagens de caracteres inativos
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 65ad481bad6756bb374b98a5510bdc26f1cded6a
+ms.sourcegitcommit: ac62be2f60f757f61ea647a95c168c9841ffabac
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "104558501"
+---
+# <a name="about-keyboard-input"></a>Sobre a entrada do teclado
+
+Os aplicativos devem aceitar a entrada do usuário do teclado, bem como do mouse. Um aplicativo recebe entrada de teclado na forma de mensagens postadas em suas janelas.
+
+Esta seção contém os seguintes tópicos:
+
+-   [Modelo de entrada do teclado](#keyboard-input-model)
+-   [Foco e ativação do teclado](#keyboard-focus-and-activation)
+-   [Mensagens de pressionamento de tecla](#keystroke-messages)
+    -   [Pressionamentos de tecla do sistema e não do sistema](#system-and-nonsystem-keystrokes)
+    -   [Códigos de chave virtual descritos](#virtual-key-codes-described)
+    -   [Sinalizadores de mensagem de pressionamento de tecla](#keystroke-message-flags)
+-   [Mensagens de caracteres](#character-messages)
+    -   [Mensagens de caracteres não do sistema](#nonsystem-character-messages)
+    -   [Mensagens de caracteres inativos](#dead-character-messages)
+-   [Status da chave](#key-status)
+-   [Conversões de teclas e de caracteres](#keystroke-and-character-translations)
+-   [Suporte a teclas de atalho](#hot-key-support)
+-   [Teclas de teclado para navegação e outras funções](#keyboard-keys-for-browsing-and-other-functions)
+-   [Simulando entrada](#simulating-input)
+-   [Idiomas, localidades e layouts de teclado](#languages-locales-and-keyboard-layouts)
+
+## <a name="keyboard-input-model"></a>Modelo de entrada do teclado
+
+O sistema fornece suporte de teclado independente de dispositivo para aplicativos instalando um driver de dispositivo de teclado apropriado para o teclado atual. O sistema fornece suporte de teclado independente de idioma usando o layout de teclado específico do idioma selecionado no momento pelo usuário ou pelo aplicativo. O driver de dispositivo de teclado recebe códigos de verificação do teclado, que são enviados para o layout de teclado onde eles são convertidos em mensagens e postados para as janelas apropriadas em seu aplicativo.
+
+Atribuído a cada chave em um teclado é um valor exclusivo chamado de *código de verificação*, um identificador dependente de dispositivo para a chave no teclado. Um teclado gera dois códigos de verificação quando o usuário digita uma chave — uma quando o usuário pressiona a tecla e outra quando o usuário libera a chave.
+
+O driver de dispositivo de teclado interpreta um código de verificação e traduz (mapeia)-o para um *código de chave virtual*, um valor independente de dispositivo definido pelo sistema que identifica a finalidade de uma chave. Depois de converter um código de verificação, o layout do teclado cria uma mensagem que inclui o código de verificação, o código de chave virtual e outras informações sobre a tecla e, em seguida, coloca a mensagem na fila de mensagens do sistema. O sistema remove a mensagem da fila de mensagens do sistema e a posta na fila de mensagens do thread apropriado. Eventualmente, o loop de mensagem do thread remove a mensagem e a passa para o procedimento de janela apropriado para processamento. A figura a seguir ilustra o modelo de entrada do teclado.
+
+![modelo de processamento de entrada de teclado](images/csinp-01.png)
+
+## <a name="keyboard-focus-and-activation"></a>Foco e ativação do teclado
+
+O sistema posta mensagens de teclado na fila de mensagens do thread em primeiro plano que criou a janela com o foco do teclado. O *foco do teclado* é uma propriedade temporária de uma janela. O sistema compartilha o teclado entre todas as janelas na exibição alternando o foco do teclado, na direção do usuário, de uma janela para outra. A janela que tem o foco do teclado recebe (da fila de mensagens do thread que a criou) todas as mensagens de teclado até que o foco seja alterado para uma janela diferente.
+
+Um thread pode chamar a função [**GetFocus**](/windows/win32/api/winuser/nf-winuser-getfocus) para determinar qual das suas janelas (se houver) atualmente tem o foco do teclado. Um thread pode dar o foco do teclado a uma de suas janelas chamando a função [**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus) . Quando o foco do teclado muda de uma janela para outra, o sistema envia uma mensagem do [**WM \_ KILLFOCUS**](wm-killfocus.md) para a janela que perdeu o foco e, em seguida, envia uma mensagem do [**WM \_ SETFOCUS**](wm-setfocus.md) para a janela que ganhou o foco.
+
+O conceito de foco do teclado está relacionado ao da janela ativa. A *janela ativa* é a janela de nível superior com a qual o usuário está trabalhando no momento. A janela com o foco do teclado é a janela ativa ou uma janela filho da janela ativa. Para ajudar o usuário a identificar a janela ativa, o sistema a coloca na parte superior da ordem Z e realça sua barra de título (se tiver uma) e uma borda.
+
+O usuário pode ativar uma janela de nível superior clicando nela, selecionando-a usando a combinação de teclas ALT + TAB ou ALT + ESC ou selecionando-a na Lista de Tarefas. Um thread pode ativar uma janela de nível superior usando a função [**SetActiveWindow**](/windows/win32/api/winuser/nf-winuser-setactivewindow) . Ele pode determinar se uma janela de nível superior criada por ele está ativa usando a função [**GetActiveWindow**](/windows/win32/api/winuser/nf-winuser-getactivewindow) .
+
+Quando uma janela é desativada e outra ativada, o sistema envia a mensagem de [**\_ ativação do WM**](wm-activate.md) . A palavra de ordem inferior do parâmetro *wParam* será zero se a janela estiver sendo desativada e diferente de zero se estiver sendo ativada. Quando o procedimento de janela padrão recebe a mensagem de **\_ ativação do WM** , ele define o foco do teclado para a janela ativa.
+
+Para bloquear a entrada de eventos de teclado e de mouse para aplicativos, use [**BlockInput**](/windows/win32/api/winuser/nf-winuser-blockinput). Observe que a função **BlockInput** não interferirá na tabela de estado de entrada do teclado assíncrono. Isso significa que chamar a função [**SendInput**](/windows/win32/api/winuser/nf-winuser-sendinput) enquanto a entrada está bloqueada alterará a tabela de estado de entrada do teclado assíncrono.
+
+## <a name="keystroke-messages"></a>Mensagens de pressionamento de tecla
+
+Pressionar uma chave faz com que uma mensagem do [**WM \_ KEYDOWN**](wm-keydown.md) ou [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) seja colocada na fila de mensagens do thread anexada à janela que tem o foco do teclado. A liberação de uma chave faz com que uma mensagem do [**WM \_ KEYUP**](wm-keyup.md) ou do [**WM \_ SYSKEYUP**](wm-syskeyup.md) seja colocada na fila.
+
+As mensagens de chave e de baixo normalmente ocorrem em pares, mas se o usuário mantiver uma chave longa o suficiente para iniciar o recurso de repetição automático do teclado, o sistema gerará várias mensagens do [**WM \_ KEYDOWN**](wm-keydown.md) ou do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) em uma linha. Em seguida, ele gera uma única mensagem do [**WM \_ KEYUP**](wm-keyup.md) ou do [**WM \_ SYSKEYUP**](wm-syskeyup.md) quando o usuário libera a chave.
+
+Esta seção contém os seguintes tópicos:
+
+-   [Pressionamentos de tecla do sistema e não do sistema](#system-and-nonsystem-keystrokes)
+-   [Códigos de chave virtual descritos](#virtual-key-codes-described)
+-   [Sinalizadores de mensagem de pressionamento de tecla](#keystroke-message-flags)
+
+### <a name="system-and-nonsystem-keystrokes"></a>Pressionamentos de tecla do sistema e não do sistema
+
+O sistema faz uma distinção entre pressionamentos de tecla do sistema e pressionamentos de tecla não do sistema. As teclas do sistema produzem mensagens de pressionamento de tecla do sistema, o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) e o [**WM \_ SYSKEYUP**](wm-syskeyup.md). As teclas não do sistema produzem mensagens de pressionamento de tecla que não são do sistema, o [**WM \_ KEYDOWN**](wm-keydown.md) e o [**WM \_ KEYUP**](wm-keyup.md).
+
+Se o procedimento de janela precisar processar uma mensagem de pressionamento de tecla do sistema, verifique se depois de processar a mensagem o procedimento a transmite para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) . Caso contrário, todas as operações do sistema que envolvem a tecla ALT serão desabilitadas sempre que a janela tiver o foco do teclado. Ou seja, o usuário não poderá acessar os menus ou o menu do sistema da janela ou usar a combinação de teclas ALT + ESC ou ALT + TAB para ativar uma janela diferente.
+
+As mensagens de pressionamento de tecla do sistema são usadas principalmente pelo sistema em vez de por um aplicativo. O sistema as usa para fornecer sua interface de teclado interna para menus e permitir que o usuário controle qual janela está ativa. As mensagens de pressionamento de tecla do sistema são geradas quando o usuário digita uma chave em combinação com a tecla ALT, ou quando o usuário digita e nenhuma janela tem o foco do teclado (por exemplo, quando o aplicativo ativo é minimizado). Nesse caso, as mensagens são postadas na fila de mensagens anexada à janela ativa.
+
+As mensagens de pressionamento de tecla não do sistema são para uso pelas janelas do aplicativo; a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) não faz nada com eles. Um procedimento de janela pode descartar qualquer mensagem de pressionamento de tecla não do sistema que não seja necessária.
+
+### <a name="virtual-key-codes-described"></a>Códigos de Virtual-Key descritos
+
+O parâmetro **wParam** de uma mensagem de pressionamento de tecla contém o código de chave virtual da chave que foi pressionada ou liberada. Um procedimento de janela processa ou ignora uma mensagem de pressionamento de tecla, dependendo do valor do código de chave virtual.
+
+Um procedimento de janela típico processa apenas um pequeno subconjunto das mensagens de pressionamento de tecla que recebe e ignora o restante. Por exemplo, um procedimento de janela pode processar apenas mensagens de pressionamentos de tecla [**\_ KEYDOWN do WM**](wm-keydown.md) e apenas aquelas que contêm códigos de chave virtual para as chaves de movimento do cursor, teclas Shift (também chamadas de chaves de controle) e teclas de função. Um procedimento de janela típico não processa mensagens de pressionamento de teclas de chaves de caractere. Em vez disso, ele usa a função [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) para converter a mensagem em mensagens de caracteres. Para obter mais informações sobre **TranslateMessage** e mensagens de caracteres, consulte [mensagens de caracteres](#character-messages).
+
+### <a name="keystroke-message-flags"></a>Sinalizadores de mensagem de pressionamento de tecla
+
+O parâmetro **lParam** de uma mensagem de pressionamento de tecla contém informações adicionais sobre a tecla que gerou a mensagem. Essas informações incluem a contagem de repetição, o código de verificação, o sinalizador de chave estendida, o código de contexto, o sinalizador de estado de chave anterior e o sinalizador de estado de transição. A ilustração a seguir mostra os locais desses sinalizadores e valores no parâmetro **lParam** .
+
+![os locais dos sinalizadores e valores no parâmetro lParam de uma mensagem de pressionamento de tecla](images/csinp-02.png)
+
+Um aplicativo pode usar os valores a seguir para manipular os sinalizadores de pressionamento de tecla.
+
+
+
+| Valor            | Descrição                                                                       |
+|------------------|-----------------------------------------------------------------------------------|
+| **KF \_ ALTDOWN**  | Manipula o sinalizador de tecla ALT, que indica se a tecla ALT é pressionada.     |
+| **KF \_ DLGMODE**  | Manipula o sinalizador de modo de caixa de diálogo, que indica se uma caixa de diálogo está ativa. |
+| **KF \_ estendido** | Manipula o sinalizador de chave estendida.                                                |
+| **menu de KFmode \_** | Manipula o sinalizador de modo de menu, que indica se um menu está ativo.         |
+| **KF \_ repetir**   | Manipula o sinalizador de estado de chave anterior.                                          |
+| **KF \_ up**       | Manipula o sinalizador de estado de transição.                                            |
+
+
+
+ 
+
+### <a name="repeat-count"></a>Contagem repetida
+
+Você pode verificar a contagem de repetição para determinar se uma mensagem de pressionamento de tecla representa mais de uma tecla. O sistema incrementa a contagem quando o teclado gera mensagens do [**WM \_ KEYDOWN**](wm-keydown.md) ou do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) mais rápido do que um aplicativo pode processá-las. Isso geralmente ocorre quando o usuário mantém uma chave longa o suficiente para iniciar o recurso de repetição automática do teclado. Em vez de preencher a fila de mensagens do sistema com as mensagens de chave suspensa resultantes, o sistema combina as mensagens em uma mensagem de chave única e incrementa a contagem de repetição. A liberação de uma chave não pode iniciar o recurso de repetição automática, portanto, a contagem de repetição para as mensagens do [**WM \_ KEYUP**](wm-keyup.md) e do [**WM \_ SYSKEYUP**](wm-syskeyup.md) é sempre definida como 1.
+
+### <a name="scan-code"></a>Código de verificação
+
+O código de verificação é o valor que o hardware do teclado gera quando o usuário pressiona uma tecla. É um valor dependente do dispositivo que identifica a chave pressionada, ao contrário do caractere representado pela chave. Um aplicativo normalmente ignora códigos de verificação. Em vez disso, ele usa os códigos de chave virtual independentes de dispositivo para interpretar mensagens de pressionamento de tecla.
+
+### <a name="extended-key-flag"></a>Sinalizador de Extended-Key
+
+O sinalizador de chave estendida indica se a mensagem de pressionamento de tecla foi originada de uma das chaves adicionais no teclado avançado. As chaves estendidas consistem nas teclas ALT e CTRL no lado direito do teclado; as teclas INS, DEL, HOME, END, PAGE UP, PAGE DOWN e Arrow nos clusters à esquerda do teclado numérico; a tecla NUM LOCK; a tecla BREAK (CTRL + PAUSE); a chave de SCRN de impressão; e a divisão (/) e inserir chaves no teclado numérico. O sinalizador de chave estendida será definido se a chave for uma chave estendida.
+
+### <a name="context-code"></a>Código de contexto
+
+O código de contexto indica se a tecla ALT estava inoperante quando a mensagem de pressionamento de tecla foi gerada. O código será 1 se a tecla ALT estava inoperante e 0 se ela estava ativa.
+
+### <a name="previous-key-state-flag"></a>Sinalizador de Key-State anterior
+
+O sinalizador de estado de chave anterior indica se a chave que gerou a mensagem de pressionamento de tecla foi anteriormente ativada ou inativa. Será 1 se a chave tiver sido desativada e 0 se a chave já tiver sido ativada. Você pode usar esse sinalizador para identificar as mensagens de pressionamento de tecla geradas pelo recurso de repetição automática do teclado. Esse sinalizador é definido como 1 para mensagens de pressionamento de tecla do [**WM \_ KEYDOWN**](wm-keydown.md) e do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) geradas pelo recurso de repetição automática. Ele é sempre definido como 1 para mensagens do [**WM \_ KEYUP**](wm-keyup.md) e do [**WM \_ SYSKEYUP**](wm-syskeyup.md) .
+
+### <a name="transition-state-flag"></a>Sinalizador de Transition-State
+
+O sinalizador de estado de transição indica se pressionar uma tecla ou liberar uma chave gerou a mensagem de pressionamento de tecla. Esse sinalizador é sempre definido como 0 para mensagens do [**WM \_ KEYDOWN**](wm-keydown.md) e do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) ; ele é sempre definido como 1 para mensagens do WM [**\_ KEYUP**](wm-keyup.md) e do [**WM \_ SYSKEYUP**](wm-syskeyup.md) .
+
+## <a name="character-messages"></a>Mensagens de caracteres
+
+As mensagens de pressionamento de tecla fornecem muitas informações sobre pressionamentos de teclas, mas não fornecem códigos de caracteres para pressionamentos de teclas de caractere. Para recuperar códigos de caracteres, um aplicativo deve incluir a função [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) em seu loop de mensagem de thread. **TranslateMessage** passa uma mensagem do [**WM \_ KEYDOWN**](wm-keydown.md) ou do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) para o layout do teclado. O layout examina o código de chave virtual da mensagem e, se ele corresponder a uma chave de caractere, fornecerá o código de caractere equivalente (levando em conta o estado das teclas SHIFT e CAPS LOCK). Em seguida, ele gera uma mensagem de caractere que inclui o código de caractere e coloca a mensagem na parte superior da fila de mensagens. A próxima iteração do loop de mensagem remove a mensagem de caractere da fila e envia a mensagem para o procedimento de janela apropriado.
+
+Esta seção contém os seguintes tópicos:
+
+-   [Mensagens de caracteres não do sistema](#nonsystem-character-messages)
+-   [Mensagens de caracteres inativos](#dead-character-messages)
+
+### <a name="nonsystem-character-messages"></a>Mensagens de caracteres não do sistema
+
+Um procedimento de janela pode receber as seguintes mensagens de caractere: [**WM \_ Char**](wm-char.md), [**WM \_ DEADCHAR**](wm-deadchar.md), [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar), [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md)e [**WM \_ UNICHAR**](wm-unichar.md). A função [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) gera uma mensagem do **WM \_ Char** ou do **WM \_ DEADCHAR** quando processa uma mensagem do [**WM \_ KEYDOWN**](wm-keydown.md) . Da mesma forma, ele gera uma mensagem do **WM \_ SYSCHAR** ou do **WM \_ SYSDEADCHAR** quando processa uma mensagem do [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) .
+
+Um aplicativo que processa a entrada de teclado normalmente ignora todas as mensagens do [**WM \_ Char**](wm-char.md) e do [**WM \_ UNICHAR**](wm-unichar.md) , passando quaisquer outras mensagens para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) . Observe que o **WM \_ Char** usa o formato de transformação Unicode de 16 bits (UTF), enquanto o **WM \_ UNICHAR** usa UTF-32. O sistema usa as mensagens do [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar) e do [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) para implementar mnemônicos do menu.
+
+O parâmetro **wParam** de todas as mensagens de caractere contém o código de caractere da tecla de caractere que foi pressionada. O valor do código de caractere depende da classe de janela da janela que recebe a mensagem. Se a versão Unicode da função [**registerClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa) foi usada para registrar a classe de janela, o sistema fornecerá caracteres Unicode para todas as janelas dessa classe. Caso contrário, o sistema fornece códigos de caracteres ASCII. Para obter mais informações, consulte [Unicode e conjuntos de caracteres](/windows/desktop/Intl/unicode-and-character-sets).
+
+O conteúdo do parâmetro **lParam** de uma mensagem de caractere é idêntico ao conteúdo do parâmetro **lParam** da mensagem de chave que foi convertida para produzir a mensagem de caractere. Para obter informações, consulte [sinalizadores de mensagem de pressionamento de tecla](#keystroke-message-flags).
+
+### <a name="dead-character-messages"></a>Dead-Character mensagens
+
+Alguns teclados que não são do inglês contêm chaves de caracteres que não devem produzir caracteres por conta própria. Em vez disso, eles são usados para adicionar um diacrítico ao caractere produzido pelo pressionamento de tecla subsequente. Essas chaves são chamadas de *chaves inativas*. A chave de circunflexo em um teclado alemão é um exemplo de uma chave inoperante. Para inserir o caractere que consiste em um "o" com um acento circunflexo, um usuário em alemão digitaria a tecla circunflexo seguida da chave "o". A janela com o foco do teclado receberia a seguinte sequência de mensagens:
+
+1.  [**o WM \_ KEYDOWN**](wm-keydown.md)
+2.  [**DEADCHAR do WM \_**](wm-deadchar.md)
+3.  [**o WM \_ KEYUP**](wm-keyup.md)
+4.  [**o WM \_ KEYDOWN**](wm-keydown.md)
+5.  [**caractere do WM \_**](wm-char.md)
+6.  [**o WM \_ KEYUP**](wm-keyup.md)
+
+O [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) gera a mensagem do [**WM \_ DEADCHAR**](wm-deadchar.md) quando processa a mensagem do [**WM \_ KEYDOWN**](wm-keydown.md) de uma chave inativa. Embora o parâmetro *wParam* da mensagem **\_ DEADCHAR do WM** contenha o código de caractere do diacríticos para a chave inativa, um aplicativo normalmente ignora a mensagem. Em vez disso, ele processa a mensagem do [**WM \_ Char**](wm-char.md) gerada pelo pressionamento de tecla subsequente. O parâmetro *wParam* da mensagem do **WM \_ Char** contém o código de caractere da letra com o diacrítico. Se a tecla subsequente gerar um caractere que não pode ser combinado com um diacrítico, o sistema gerará duas mensagens do **WM \_ Char** . O parâmetro *wParam* da primeira contém o código de caractere do diacrítico; o parâmetro *wParam* do segundo contém o código de caractere da chave de caractere subsequente.
+
+A função [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) gera a mensagem do [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) ao processar a [**mensagem \_ SYSKEYDOWN do WM**](wm-syskeydown.md) de uma chave inativa do sistema (uma chave inativa que é pressionada em combinação com a tecla Alt). Um aplicativo normalmente ignora a mensagem **\_ SYSDEADCHAR do WM** .
+
+## <a name="key-status"></a>Status da chave
+
+Ao processar uma mensagem de teclado, um aplicativo pode precisar determinar o status de outra chave além da que gerou a mensagem atual. Por exemplo, um aplicativo de processamento de texto que permite ao usuário pressionar SHIFT + END para selecionar um bloco de texto deve verificar o status da tecla SHIFT sempre que receber uma mensagem de pressionamento de tecla da chave final. O aplicativo pode usar a função [**GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) para determinar o status de uma chave virtual no momento em que a mensagem atual foi gerada; Ele pode usar a função [**GetAsyncKeyState**](/windows/win32/api/winuser/nf-winuser-getasynckeystate) para recuperar o status atual de uma chave virtual.
+
+O layout do teclado mantém uma lista de nomes. O nome de uma chave que produz um único caractere é o mesmo que o caractere produzido pela chave. O nome de uma chave não caractere, como TAB e ENTER, é armazenado como uma cadeia de caracteres. Um aplicativo pode recuperar o nome de qualquer chave do driver de dispositivo chamando a função [**GetKeyNameText**](/windows/win32/api/winuser/nf-winuser-getkeynametexta) .
+
+## <a name="keystroke-and-character-translations"></a>Conversões de teclas e de caracteres
+
+O sistema inclui várias funções de finalidade especial que convertem códigos de verificação, códigos de caracteres e códigos de chave virtuais fornecidos por várias mensagens de tecla. Essas funções incluem [**MapVirtualKey**](/windows/win32/api/winuser/nf-winuser-mapvirtualkeya), [**toascii**](/windows/win32/api/winuser/nf-winuser-toascii), [**tounicode**](/windows/win32/api/winuser/nf-winuser-tounicode)e [**VkKeyScan**](/windows/win32/api/winuser/nf-winuser-vkkeyscana).
+
+Além disso, o Microsoft Rich Edit 3,0 dá suporte ao [IME HexToUnicode](/windows/desktop/Intl/hextounicode-ime), que permite que um usuário converta entre caracteres hexadecimais e Unicode usando teclas de acesso. Isso significa que, quando o Microsoft Rich Edit 3,0 é incorporado a um aplicativo, o aplicativo herdará os recursos do IME HexToUnicode.
+
+## <a name="hot-key-support"></a>Suporte a Hot-Key
+
+Uma *tecla de atalho* é uma combinação de teclas que gera uma mensagem de [**\_ tecla**](wm-hotkey.md) de acesso do WM, uma mensagem que o sistema coloca na parte superior da fila de mensagens de um thread, ignorando todas as mensagens existentes na fila. Os aplicativos usam teclas de acesso para obter a entrada de teclado de alta prioridade do usuário. Por exemplo, ao definir uma tecla de atalho que consiste na combinação de teclas CTRL + C, um aplicativo pode permitir que o usuário cancele uma operação demorada.
+
+Para definir uma tecla de acesso, um aplicativo chama a função [**RegisterHotKey**](/windows/win32/api/winuser/nf-winuser-registerhotkey) , especificando a combinação de chaves que gera a mensagem de [**tecla de \_ atalho do WM**](wm-hotkey.md) , o identificador para a janela a fim de receber a mensagem e o identificador da tecla de acesso. Quando o usuário pressiona a tecla de atalho, uma mensagem de **\_ tecla** de acesso do WM é colocada na fila de mensagens do thread que criou a janela. O parâmetro *wParam* da mensagem contém o identificador da tecla de acesso. O aplicativo pode definir várias teclas de acesso para um thread, mas cada tecla de acesso no thread deve ter um identificador exclusivo. Antes de o aplicativo ser encerrado, ele deve usar a função [**UnregisterHotKey**](/windows/win32/api/winuser/nf-winuser-unregisterhotkey) para destruir a tecla de acesso.
+
+Os aplicativos podem usar um controle de tecla de atalho para facilitar o usuário a escolher uma tecla de atalho. Os controles de teclas de acesso normalmente são usados para definir uma tecla de atalho que ativa uma janela; Eles não usam as funções [**RegisterHotKey**](/windows/win32/api/winuser/nf-winuser-registerhotkey) e [**UnregisterHotKey**](/windows/win32/api/winuser/nf-winuser-unregisterhotkey) . Em vez disso, um aplicativo que usa um controle de tecla de atalho normalmente envia a mensagem de [**\_ settecla do WM**](wm-sethotkey.md) para definir a tecla de atalho. Sempre que o usuário pressionar a tecla de atalho, o sistema enviará uma mensagem do [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) especificando a tecla de acesso SC \_ . Para obter mais informações sobre os controles de tecla de atalho, consulte "usando controles de tecla quente" em [controles de tecla de atalho](../controls/hot-key-controls.md).
+
+## <a name="keyboard-keys-for-browsing-and-other-functions"></a>Teclas de teclado para navegação e outras funções
+
+O Windows oferece suporte a teclados com chaves especiais para funções de navegador, funções de mídia, inicialização de aplicativos e gerenciamento de energia. O [**\_ APPCOMMAND do WM**](wm-appcommand.md) dá suporte às teclas de teclado adicionais. Além disso, a função [**ShellProc**](/previous-versions/windows/desktop/legacy/ms644991(v=vs.85)) é modificada para dar suporte às teclas de teclado adicionais.
+
+É improvável que uma janela filho em um aplicativo de componente seja capaz de implementar diretamente os comandos para essas teclas de teclado adicionais. Assim, quando uma dessas chaves for pressionada, o [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) enviará uma mensagem do [**WM \_ APPCOMMAND**](wm-appcommand.md) para uma janela. **DefWindowProc** também produzirá a mensagem do **WM \_ APPCOMMAND** em sua janela pai. Isso é semelhante à maneira como os menus de contexto são invocados com o botão direito do mouse, que é o **DefWindowProc** envia uma mensagem de [**\_ CONTEXTMENU do WM**](/windows/desktop/menurc/wm-contextmenu) em um clique com o botão direito e o Bubble para seu pai. Além disso, se o **DefWindowProc** receber uma mensagem do **WM \_ APPCOMMAND** para uma janela de nível superior, ele chamará um gancho de shell com o código **HSHELL \_ APPCOMMAND**.
+
+O Windows também dá suporte ao Microsoft IntelliMouse Explorer, que é um mouse com cinco botões. Os dois botões extras dão suporte à navegação do navegador para frente e para trás. Para obter mais informações, consulte [XBUTTONs](about-mouse-input.md).
+
+## <a name="simulating-input"></a>Simulando entrada
+
+Para simular uma série ininterrupta de eventos de entrada do usuário, use a função [**SendInput**](/windows/win32/api/winuser/nf-winuser-sendinput) . A função aceita três parâmetros. O primeiro parâmetro, *cInputs*, indica o número de eventos de entrada que serão simulados. O segundo parâmetro, *rgInputs*, é uma matriz de estruturas de [**entrada**](/windows/win32/api/winuser/ns-winuser-input) , cada uma descrevendo um tipo de evento de entrada e informações adicionais sobre esse evento. O último parâmetro, *cbSize*, aceita o tamanho da estrutura de **entrada** , em bytes.
+
+A função [**SendInput**](/windows/win32/api/winuser/nf-winuser-sendinput) funciona injetando uma série de eventos de entrada simulados no fluxo de entrada de um dispositivo. O efeito é semelhante a chamar o [**\_ evento KEYBD**](/windows/win32/api/winuser/nf-winuser-keybd_event) ou a função de [**\_ evento mouse**](/windows/win32/api/winuser/nf-winuser-mouse_event) repetidamente, exceto que o sistema garante que nenhum outro evento de entrada seja intermisturado com os eventos simulados. Quando a chamada é concluída, o valor de retorno indica o número de eventos de entrada que foram reproduzidos com êxito. Se esse valor for zero, a entrada foi bloqueada.
+
+A função [**SendInput**](/windows/win32/api/winuser/nf-winuser-sendinput) não redefine o estado atual do teclado. Portanto, se o usuário tiver alguma tecla pressionada quando você chamar essa função, poderá interferir nos eventos que essa função gera. Se você estiver preocupado com a possibilidade de interferência, verifique o estado do teclado com a função [**GetAsyncKeyState**](/windows/win32/api/winuser/nf-winuser-getasynckeystate) e corrija conforme necessário.
+
+## <a name="languages-locales-and-keyboard-layouts"></a>Idiomas, localidades e layouts de teclado
+
+Uma *linguagem* é uma linguagem natural, como Inglês, francês e japonês. Um *subidioma* é uma variante de um idioma natural que é falado em uma região geográfica específica, como os subidiomas em inglês falados no Reino Unido e o Estados Unidos. Os aplicativos usam valores, chamados de [identificadores de idioma](/windows/desktop/Intl/language-identifiers), para identificar exclusivamente idiomas e subidiomas.
+
+Normalmente, os aplicativos usam *localidades* para definir o idioma no qual a entrada e a saída são processadas. Definir a localidade para o teclado, por exemplo, afeta os valores de caracteres gerados pelo teclado. Definir a localidade para a exibição ou impressora afeta os glifos exibidos ou impressos. Os aplicativos definem a localidade de um teclado carregando e usando layouts de teclado. Eles definem a localidade para uma exibição ou impressora selecionando uma fonte que ofereça suporte à localidade especificada.
+
+Um layout de teclado não apenas especifica a posição física das chaves no teclado, mas também determina os valores de caracteres gerados pressionando essas chaves. Cada layout identifica a linguagem de entrada atual e determina quais valores de caracteres são gerados por quais chaves e combinações de teclas.
+
+Cada layout de teclado tem um identificador correspondente que identifica o layout e o idioma. A palavra inferior do identificador é um identificador de idioma. A palavra alta é um identificador de dispositivo, especificando o layout físico ou é zero, indicando um layout físico padrão. O usuário pode associar qualquer idioma de entrada a um layout físico. Por exemplo, um usuário de fala em inglês que ocasionalmente trabalha em francês pode definir o idioma de entrada do teclado para francês sem alterar o layout físico do teclado. Isso significa que o usuário pode inserir texto em francês usando o layout familiar em inglês.
+
+Os aplicativos geralmente não são esperados para manipular idiomas de entrada diretamente. Em vez disso, o usuário configura combinações de idioma e layout e, em seguida, alterna entre elas. Quando o usuário clica no texto marcado com um idioma diferente, o aplicativo chama a função [**ActivateKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-activatekeyboardlayout) para ativar o layout padrão do usuário para esse idioma. Se o usuário editar o texto em um idioma que não está na lista ativa, o aplicativo poderá chamar a função [**LoadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta) com o idioma para obter um layout baseado nesse idioma.
+
+A função [**ActivateKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-activatekeyboardlayout) define o idioma de entrada para a tarefa atual. O parâmetro *HKL* pode ser o identificador para o layout do teclado ou um identificador de idioma com extensão zero. As alças de layout do teclado podem ser obtidas na função [**LoadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta) ou [**GetKeyboardLayoutList**](/windows/win32/api/winuser/nf-winuser-getkeyboardlayoutlist) . Os valores de **HKL \_ Next** e **HKL \_** Previous também podem ser usados para selecionar o teclado seguinte ou anterior.
+
+A função [**GetKeyboardLayoutName**](/windows/win32/api/winuser/nf-winuser-getkeyboardlayoutnamea) recupera o nome do layout de teclado ativo para o thread de chamada. Se um aplicativo criar o layout ativo usando a função [**LoadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta) , **GetKeyboardLayoutName** recuperará a mesma cadeia de caracteres usada para criar o layout. Caso contrário, a cadeia de caracteres é o identificador de idioma primário correspondente à localidade do layout ativo. Isso significa que a função pode não necessariamente diferenciar entre layouts diferentes com o mesmo idioma principal, portanto, não é possível retornar informações específicas sobre o idioma de entrada. No entanto, a função [**GetKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-getkeyboardlayout) pode ser usada para determinar o idioma de entrada.
+
+A função [**LoadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta) carrega um layout de teclado e torna o layout disponível para o usuário. Os aplicativos podem tornar o layout imediatamente ativo para o thread atual usando o valor de **\_ ativação KLF** . Um aplicativo pode usar o valor de **\_ reordenação KLF** para reordenar os layouts sem especificar também o valor de **\_ ativação KLF** . Os aplicativos sempre devem usar o valor **\_ \_ OK KLF substituto** ao carregar layouts de teclado para garantir que a preferência do usuário, se houver, esteja selecionada.
+
+Para suporte multilíngue, a função [**LoadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta) fornece os sinalizadores **KLF \_ REPLACELANG** e **KLF \_ NOTELLSHELL** . O sinalizador **KLF \_ REPLACELANG** direciona a função para substituir um layout de teclado existente sem alterar o idioma. A tentativa de substituir um layout existente usando o mesmo identificador de idioma, mas sem especificar **KLF \_ REPLACELANG** , é um erro. O sinalizador **KLF \_ NOTELLSHELL** impede que a função notifique o shell quando um layout de teclado é adicionado ou substituído. Isso é útil para aplicativos que adicionam vários layouts em uma série de chamadas consecutivas. Esse sinalizador deve ser usado em todos, exceto na última chamada.
+
+A função [**UnloadKeyboardLayout**](/windows/win32/api/winuser/nf-winuser-unloadkeyboardlayout) é restrita, pois não pode descarregar o idioma de entrada padrão do sistema. Isso garante que o usuário sempre tenha um layout disponível para inserir texto usando o mesmo conjunto de caracteres usado pelo shell e pelo sistema de arquivos.
+
+ 
+
+ 
