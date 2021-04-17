@@ -4,12 +4,12 @@ description: Os mapas de sombra em cascata (CSMs) são a melhor maneira de comba
 ms.assetid: d3570d0a-74e0-5b9c-6586-c933f630c4ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce6297e46f53bafbbe6abbba1629904f90f78d5e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae70433f97f33c3cc28af8e282b14ea1f513cf4d
+ms.sourcegitcommit: 54db9e6a00a5c8f68e7c1a16b8c6d4943374498c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917488"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106165529"
 ---
 # <a name="cascaded-shadow-maps"></a>Mapas de sombra em cascata
 
@@ -81,7 +81,7 @@ A Figura 4 mostra algumas câmeras diferentes e suas respectivas partições. Qu
 
 **Figura 4. Configurações diferentes exigem divisões de frustum diferentes**
 
-![configurações diferentes exigem divisões de frustum diferentes](images/different-configurations-require different-frustum-splits.png)
+![configurações diferentes exigem divisões de frustum diferentes](images/different-configurations-require-different-frustum-splits.png)
 
 Mantida Quando Geometry tem um intervalo dinâmico alto em Z, muitas cascatas são necessárias. Centraliza Quando a geometria tem um intervalo dinâmico baixo em Z, não há muito benefício de vários frustums. Adequada Somente três partições são necessárias quando o intervalo dinâmico é médio.
 
@@ -466,12 +466,12 @@ O CSMs oferece uma solução para o problema de alias de perspectiva. Há vária
 
 ## <a name="references"></a>Referências
 
-Donnelly, W. e Lauritzen, os [mapas de sombra. variância](https://portal.acm.org/citation.cfm?doid=1111411.1111440). No SI3D ' 06: procedimentos do Symposium 2006 em jogos e gráficos 3D interativos. 2066h PP. 161 – 165. Nova York, NY, EUA: ACM Press.
+Donnelly, W. e Lauritzen, os [mapas de sombra. variância](https://portal.acm.org/citation.cfm?doid=1111411.1111440). No SI3D ' 06: procedimentos do Symposium 2006 em jogos e gráficos 3D interativos. 2006. PP. 161 – 165. Nova York, NY, EUA: ACM Press.
 
 Lauritzen, Andrew e McCool, Michael. [Mapas de sombra de variância em camadas](https://portal.acm.org/citation.cfm?id=1375714.1375739&coll=GUIDE&dl=GUIDE&CFID=45360327&CFTOKEN=34578992). Procedimentos de interface gráfica 2008, 28 de maio, 2008, Windsor, Ontário, Canadá.
 
-Engel, Woflgang F. section 4. Mapas de sombra em cascata. ShaderX5, técnicas de renderização avançadas, Wolfgang F. Engel, Ed. Charles River Media, Boston, Massachusetts. 2066h PP. 197 – 206.
+Engel, Woflgang F. section 4. Mapas de sombra em cascata. ShaderX5, técnicas de renderização avançadas, Wolfgang F. Engel, Ed. Charles River Media, Boston, Massachusetts. 2006. PP. 197 – 206.
 
- 
+ 
 
- 
+ 

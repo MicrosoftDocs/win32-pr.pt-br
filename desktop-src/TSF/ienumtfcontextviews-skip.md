@@ -1,6 +1,6 @@
 ---
-title: Método IEnumTfContextViews
-description: Método IEnumTfContextViews | Método IEnumTfContextViews
+title: Método IEnumTfContextViews (API IEnumTfContextViews. Skip)
+description: Método IEnumTfContextViews | API IEnumTfContextViews. Skip
 ms.assetid: 6cdfa1da-db6c-4a6c-8218-11070d9b60c4
 keywords:
 - Estrutura de serviços de texto de método
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42b17dad959b57b66117d03cf75699beeb7c83d4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 484430887ce5e6326f5f5fb31e652182db5f0feb
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172708"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187983"
 ---
-# <a name="ienumtfcontextviews-method"></a>Método IEnumTfContextViews
+# <a name="ienumtfcontextviews-method-ienumtfcontextviewsskip-api"></a>Método IEnumTfContextViews (API IEnumTfContextViews. Skip)
 
 ## <a name="syntax"></a>Sintaxe
 
