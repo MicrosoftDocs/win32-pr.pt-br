@@ -1,0 +1,65 @@
+---
+title: Adicionando um botão
+description: Adicionando um botão
+ms.assetid: 07a4a347-b3da-4dcb-b3e4-bee0d002b2e2
+keywords:
+- Criando capas, elemento de botão
+- Capas do Windows Media Player, elemento de botão
+- capas, elemento de botão
+- arquivos de definição de capa, elemento de botão
+- Elemento de botão
+- elementos, um botão
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 90659a2e867a65d2751532701b71810a532c8ce6
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104291959"
+---
+# <a name="adding-buttongroup"></a>Adicionando um botão
+
+Este exemplo usa o elemento de grupo de **botões** para a codificação no arquivo de definição de capa. O tipo de **botão** cria uma maneira fácil de processar eventos de mouse sem a necessidade de calcular os locais exatos na tela e usa a cor em vez das coordenadas x e y.
+
+Primeiro, você deve adicionar as marcas de grupo de **botões** ao arquivo de definição de capa que você criou. Coloque-os após os atributos de marca de **tema** .
+
+
+```C++
+        <BUTTONGROUP
+            mappingImage = "map.bmp"
+            hoverImage = "hover.bmp">
+
+
+        </BUTTONGROUP>
+
+```
+
+
+
+Deixe algumas linhas em branco acima da marca do **botão** de fechamento para os botões que serão adicionados a seguir.
+
+Os seguintes atributos são usados para definir o **botão**:
+
+**mappingImage**
+
+Esse é o nome de arquivo do arquivo de arte de mapeamento criado anteriormente, aquele com os círculos vermelho e verde. Esse atributo é necessário para qualquer um dos **botões**.
+
+**hoverImage**
+
+Esse é o nome do arquivo Art que você criou anteriormente, aquele com os dois botões amarelos que lêem "Play" e "Close". Isso não é necessário, mas uma imagem em foco ajuda a fornecer comentários para o usuário.
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[**Criando o arquivo de definição de capa**](creating-the-skin-definition-file.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
