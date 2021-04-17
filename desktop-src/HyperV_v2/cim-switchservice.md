@@ -1,0 +1,209 @@
+---
+description: Representa um serviço de comutador.
+ms.assetid: cf6319fa-7d69-4820-b0e0-775aad8b190c
+title: Classe CIM_SwitchService
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CIM_SwitchService
+- CIM_SwitchService.BridgeAddress
+- CIM_SwitchService.NumPorts
+- CIM_SwitchService.BridgeType
+- CIM_SwitchService.BridgeAddressType
+api_type:
+- DllExport
+api_location:
+- vmms.exe
+ms.openlocfilehash: 9abe6869c5b8ac61630091315e476ae232630717
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105769347"
+---
+# <a name="cim_switchservice-class"></a>\_Classe CIM SwitchService
+
+Representa um serviço de comutador.
+
+## <a name="syntax"></a>Sintaxe
+
+``` syntax
+[Abstract, Version("2.7.0"), UMLPackagePath("CIM::Network::SwitchingBridging")]
+class CIM_SwitchService : CIM_ForwardingService
+{
+  string BridgeAddress;
+  uint16 NumPorts;
+  uint8  BridgeType;
+  uint16 BridgeAddressType;
+};
+```
+
+## <a name="members"></a>Membros
+
+A classe **CIM \_ SwitchService** tem estes tipos de membros:
+
+-   [Propriedades](#properties)
+
+### <a name="properties"></a>Propriedades
+
+A classe **CIM \_ SwitchService** tem essas propriedades.
+
+<dl> <dt>
+
+**BridgeAddress**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **cadeia de caracteres**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseBridgeAddress "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
+</dt> </dl>
+
+O endereço do serviço de comutador, que é uma parte do identificador exclusivo do serviço.
+
+</dd> <dt>
+
+**BridgeAddressType**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt16**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddress**")
+</dt> </dl>
+
+O formato de endereçamento usado para a ponte e a propriedade **BridgeAddress** .
+
+<dt>
+
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>
+
+**Outro** (1)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="IPv4"></span><span id="ipv4"></span><span id="IPV4"></span>
+
+**IPv4** (2)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="IPv6"></span><span id="ipv6"></span><span id="IPV6"></span>
+
+**IPv6** (3)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="MAC"></span><span id="mac"></span>
+
+**Mac** (4)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="MAC___Spanning_Tree_Priority"></span><span id="mac___spanning_tree_priority"></span><span id="MAC___SPANNING_TREE_PRIORITY"></span>
+
+**Prioridade de árvore de abrangência de Mac +** (5)
+
+
+</dt> <dd></dd> </dl>
+
+</dd> <dt>
+
+**Bridgetype**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **uint8**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseType ")
+</dt> </dl>
+
+O tipo de serviço de alternância a ser executado.
+
+<dt>
+
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
+
+**Desconhecido** (1)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="Transparent-only"></span><span id="transparent-only"></span><span id="TRANSPARENT-ONLY"></span>
+
+**Somente transparente** (2)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="SourceRoute-only"></span><span id="sourceroute-only"></span><span id="SOURCEROUTE-ONLY"></span>
+
+**Somente SourceRoute** (3)
+
+
+</dt> <dd></dd> <dt>
+
+<span id="SRT"></span><span id="srt"></span>
+
+**Srt** (4)
+
+
+</dt> <dd></dd> </dl>
+
+</dd> <dt>
+
+**NumPorts**
+</dt> <dd> <dl> <dt>
+
+Tipo de dados: **UInt16**
+</dt> <dt>
+
+Tipo de acesso: Somente leitura
+</dt> <dt>
+
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseNumPorts ")
+</dt> </dl>
+
+O número de portas de comutador controladas por esse serviço de comutação.
+
+</dd> </dl>
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**\_FORWARDINGSERVICE CIM**](cim-forwardingservice.md)
+</dt> </dl>
+
+ 
+
