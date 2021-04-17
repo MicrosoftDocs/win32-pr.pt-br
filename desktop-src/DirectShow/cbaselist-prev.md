@@ -1,0 +1,84 @@
+---
+description: O método anterior recupera a posição anterior na lista.
+ms.assetid: 537c3019-373a-4974-a42e-72150da72767
+title: Método CBaseList. anterior (Wxlist. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CBaseList.Prev
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: 03c35a89754b27aa67a5bba33ee694433d74c0fd
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105749846"
+---
+# <a name="cbaselistprev-method"></a>Método CBaseList. anterior
+
+O `Prev` método recupera a posição anterior na lista.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+POSITION Prev(
+   POSITION pos
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*pos* 
+</dt> <dd>
+
+Valor da posição.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Retorna o indicador de posição anterior à posição especificada no *PDV*.
+
+## <a name="remarks"></a>Comentários
+
+Se *pos* for a primeira posição na lista, o método retornará **NULL**. Se o *PDV* for **nulo**, o método retornará a última posição na lista.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Classe CBaseList**](cbaselist.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
