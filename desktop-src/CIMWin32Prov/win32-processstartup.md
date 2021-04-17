@@ -28,12 +28,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8def1e7ff8e3011d5ca6c2df303818bea36eca65
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b0be949b106c1fa88b37e0c7764dbddb0546ded7
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088968"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187915"
 ---
 # <a name="win32_processstartup-class"></a>\_Classe Win32 ProcessStartup
 
@@ -456,141 +456,7 @@ Tipo de acesso: leitura/gravação
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| wShowWindow")
 </dt> </dl>
 
-Como a janela é exibida para o usuário.
-
-<dt>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>**SW \_ Ocultar** (0)
-
-
-</dt> <dd>
-
-Oculta a janela e ativa outra janela.
-
-</dd> <dt>
-
-<span id="SW_NORMAL"></span><span id="sw_normal"></span>
-
-<span id="SW_NORMAL"></span><span id="sw_normal"></span>**SW \_ NORMAL** (1)
-
-
-</dt> <dd>
-
-Ativa e exibe uma janela. Se a janela for minimizada ou maximizada, o sistema a restaurará para o tamanho e a posição originais. Um aplicativo especifica esse sinalizador ao exibir a janela pela primeira vez.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>**SW \_ Não MINIMIZAdo** (2)
-
-
-</dt> <dd>
-
-Ativa a janela e a exibe como uma janela minimizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>**SW \_ Não MAXIMIZAdo** (3)
-
-
-</dt> <dd>
-
-Ativa a janela e a exibe como uma janela maximizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>**SW \_ SHOWNOACTIVATE** (4)
-
-
-</dt> <dd>
-
-Exibe uma janela em seu tamanho e posição mais recentes. Esse valor é semelhante ao **SW \_ normal**, exceto que a janela não está ativada.
-
-</dd> <dt>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>**SW \_ Mostrar** (5)
-
-
-</dt> <dd>
-
-Ativa a janela e a exibe no tamanho e posição atuais.
-
-</dd> <dt>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>**SW \_ MINIMIZAR** (6)
-
-
-</dt> <dd>
-
-Minimiza a janela especificada e ativa a próxima janela de nível superior na ordem Z.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>**SW \_ SHOWMINNOACTIVE** (7)
-
-
-</dt> <dd>
-
-Exibe a janela como uma janela minimizada. Esse valor é semelhante ao **SW \_ SHOWMINIMZED**, exceto pelo fato de que a janela não está ativada.
-
-</dd> <dt>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>**SW \_ MOSTRADO** (8)
-
-
-</dt> <dd>
-
-Exibe a janela no tamanho e posição atuais. Esse valor é semelhante ao **\_ mostrado pelo SW**, exceto que a janela não está ativada.
-
-</dd> <dt>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>**SW \_ RESTAURAÇÃO** (9)
-
-
-</dt> <dd>
-
-Ativa e exibe a janela. Se a janela for minimizada ou maximizada, o sistema a restaurará para o tamanho e a posição originais. Um aplicativo especifica esse sinalizador ao restaurar uma janela minimizada.
-
-</dd> <dt>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>**SW \_ PADRÃO** (10)
-
-
-</dt> <dd>
-
-Define o estado de exibição com base no valor **SW \_ \** _ que é especificado na estrutura [_ *STARTUPINFO* *](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) passada para a função [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) pelo programa que inicia o aplicativo.
-
-</dd> <dt>
-
-<span id="SW_FORCEMINIMIZE"></span><span id="sw_forceminimize"></span>
-
-<span id="SW_FORCEMINIMIZE"></span><span id="sw_forceminimize"></span>**SW \_ FORCEMINIMIZE** (11)
-
-
-</dt> <dd>
-
-Minimiza uma janela, mesmo quando o thread que possui a janela para de responder. Use esse sinalizador somente ao minimizar o Windows de um thread diferente.
-
-</dd> </dl>
+Como a janela é exibida para o usuário. Pode ser qualquer um dos valores que podem ser especificados no parâmetro *nCmdShow* para a função de [janela](/windows/desktop/api/winuser/nf-winuser-showwindow) .
 
 </dd> <dt>
 

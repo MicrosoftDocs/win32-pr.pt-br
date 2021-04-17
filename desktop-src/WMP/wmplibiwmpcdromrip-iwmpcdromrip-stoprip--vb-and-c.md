@@ -1,0 +1,88 @@
+---
+title: Método IWMPCdromRip stopRip
+description: O método stopRip interrompe o processo de cópia de CD.
+ms.assetid: c2565d0d-1203-4bd3-9d43-58e971e6ec88
+keywords:
+- método stopRip Windows Media Player
+- método stopRip Windows Media Player, interface IWMPCdromRip
+- Interface IWMPCdromRip Windows Media Player, método stopRip
+topic_type:
+- apiref
+api_name:
+- IWMPCdromRip.stopRip
+api_location:
+- Interop.WMPLib.dll
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: ff8c45eacf497faac4f89fc37334a17d881db085
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105748067"
+---
+# <a name="iwmpcdromripstoprip-method"></a>Método IWMPCdromRip:: stopRip
+
+O método **stopRip** interrompe o processo de cópia de CD.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```CSharp
+public void stopRip();
+```
+
+
+```VB
+
+Public Sub stopRip()
+Implements IWMPCdromRip.stopRip
+```
+
+
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+Esse método não tem parâmetros.
+
+## <a name="return-value"></a>Retornar valor
+
+Esse método não retorna um valor.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|----------------------|------------------------------------------------------------------------------------------------------------------------|
+| Versão<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Namespace<br/> | **WMPLib**<br/>                                                                                                  |
+| Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Interface IWMPCdromRip (VB e C#)**](iwmpcdromrip--vb-and-c.md)
+</dt> <dt>
+
+[**IWMPCdromRip.startRip**](wmplibiwmpcdromrip-iwmpcdromrip-startrip--vb-and-c.md)
+</dt> <dt>
+
+[**Copiando um CD**](ripping-a-cd.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+

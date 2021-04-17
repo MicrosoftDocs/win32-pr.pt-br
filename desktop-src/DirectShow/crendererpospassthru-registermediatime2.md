@@ -1,7 +1,7 @@
 ---
-description: O método RegisterMediaTime armazena em cache os carimbos de data/hora do exemplo atual.
+description: O método RegisterMediaTime armazena em cache os carimbos de data/hora do exemplo atual. Esse método usa os parâmetros *StartTime* e *EndTime* .
 ms.assetid: 65755906-cf54-46d6-8149-5ad982be55f3
-title: Método CRendererPosPassThru. RegisterMediaTime (Ctlutil. h)
+title: Método CRendererPosPassThru. RegisterMediaTime (Ctlutil. h)-parâmetros StartTime e EndTime
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff741e58f74770c8a97c13252302d4ef86868af1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e7d9fca04be9381fc739467647fedfa064040a0
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751098"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187827"
 ---
-# <a name="crendererpospassthruregistermediatime-method-ctlutilh"></a>Método CRendererPosPassThru. RegisterMediaTime (Ctlutil. h)
+# <a name="crendererpospassthruregistermediatime-method-ctlutilh---starttime-and-endtime-parameters"></a>Método CRendererPosPassThru. RegisterMediaTime (Ctlutil. h)-parâmetros StartTime e EndTime
 
 O método [**RegisterMediaTime**](crendererpospassthru-registermediatime.md) armazena em cache os carimbos de data/hora do exemplo atual.
 
@@ -83,8 +83,8 @@ O filtro deve chamar esse método para cada amostra que receber. O método é so
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro  | Ctlutil. h (incluir fluxos. h)                                                                                   |
+| Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 
 
