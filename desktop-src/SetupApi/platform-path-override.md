@@ -1,0 +1,27 @@
+---
+description: Substituição de caminho de plataforma
+ms.assetid: f430fd9a-f865-4cdb-b0ea-4e6d79913308
+title: Substituição de caminho de plataforma
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 0a9a6ae6795b444c44db91d90ecd93efd19ea9dc
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105755785"
+---
+# <a name="platform-path-override"></a><span data-ttu-id="2b2cb-103">Substituição de caminho de plataforma</span><span class="sxs-lookup"><span data-stu-id="2b2cb-103">Platform Path Override</span></span>
+
+<span data-ttu-id="2b2cb-104">A função [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea) é usada para definir uma substituição de caminho de plataforma para um computador de destino ao trabalhar com arquivos INF de um computador diferente.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-104">The [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea) function is used to set a platform path override for a target machine when working with INF files from a different machine.</span></span> <span data-ttu-id="2b2cb-105">Como tal, ele pode se referir a uma plataforma diferente daquela em que está sendo executada.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-105">As such, it can refer to a different platform than the one it is currently running on.</span></span> <span data-ttu-id="2b2cb-106">Para lidar com fontes de mídia, ele pode se referir a plataformas que não têm mais suporte, como alfa, MIPS e PPC.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-106">For dealing with media sources, it can refer to platforms that are no longer supported, such as Alpha, MIPS, and PPC.</span></span> <span data-ttu-id="2b2cb-107">Ele removerá a substituição do caminho da plataforma se nenhum for especificado.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-107">It removes the platform path override if none is specified.</span></span>
+
+<span data-ttu-id="2b2cb-108">Depois que uma substituição de caminho de plataforma é definida por uma chamada para [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea), qualquer função de instalação que enfileira as operações de cópia de arquivo examinará o componente final do caminho de origem.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-108">After a platform path override is set by a call to [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea), any setup function that queues file copy operations will examine the final component of the source path.</span></span> <span data-ttu-id="2b2cb-109">Se o componente final corresponder ao nome da plataforma do usuário, a função de instalação o substituirá pela cadeia de caracteres de substituição definida por **SetupSetPlatformPathOverride**.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-109">If the final component matches the name of the user's platform, the setup function will replace it with the override string set by **SetupSetPlatformPathOverride**.</span></span>
+
+<span data-ttu-id="2b2cb-110">Por exemplo, ao instalar drivers de impressora em um servidor MIPS, talvez você queira instalar drivers para todas as plataformas com suporte.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-110">For example, when installing printer drivers onto a MIPS server, you might want to install drivers for all supported platforms.</span></span> <span data-ttu-id="2b2cb-111">Enfileirar os arquivos normalmente instalaria os arquivos especificados nas seções dependentes de MIPS do arquivo INF, com caminhos de origem, como \\ \\ \\ MIPS de origem raiz \\ .</span><span class="sxs-lookup"><span data-stu-id="2b2cb-111">Queuing the files normally would install the files specified in the MIPS-dependent sections of the INF file, with source paths such as \\\\root\\source\\mips.</span></span> <span data-ttu-id="2b2cb-112">Para instalar os arquivos de uma segunda plataforma, você deve chamar [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea) com *override* indicando a plataforma de substituição.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-112">To install the files for a second platform, you must call [**SetupSetPlatformPathOverride**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetplatformpathoverridea) with *Override* indicating the replacement platform.</span></span> <span data-ttu-id="2b2cb-113">Se o local indicado pela *substituição* contiver o valor de cadeia de caracteres "Alpha", as operações de cópia de arquivo enviadas para a fila com um caminho de origem de \\ \\ \\ MIPS de origem raiz \\ teriam seu caminho de origem alterado para a \\ \\ \\ origem raiz \\ alfa.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-113">If the location indicated by *Override* contains the string value "alpha", file copy operations sent to the queue with a source path of \\\\root\\source\\mips would have their source path changed to \\\\root\\source\\alpha.</span></span> <span data-ttu-id="2b2cb-114">Você repetiria esse processo para cada plataforma de interesse.</span><span class="sxs-lookup"><span data-stu-id="2b2cb-114">You would repeat this process for each platform of interest.</span></span>
+
+ 
+
+ 
+
+
+
