@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b71990e230290403bca2a5af11eeca11b093402f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47f47a937123ce252189aac57e922b10c2a015fc
+ms.sourcegitcommit: 8737f32d64e5f01c1d38aab92736e4088d6c446e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499077"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098477"
 ---
 # <a name="texld---ps_2_0-and-up"></a>texld-PS \_ 2 \_ 0 e superior
 
 Exemplo de uma textura em uma amostra específica, usando coordenadas de textura fornecidas. Essa instrução é diferente da instrução [texld-PS \_ 1 \_ 4](texld---ps-1-4.md) usada no sombreador de pixel versão 1 \_ 4.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
@@ -29,7 +29,7 @@ Exemplo de uma textura em uma amostra específica, usando coordenadas de textura
 
 
 
- 
+ 
 
 Em que:
 
@@ -54,7 +54,7 @@ Uma instrução de textura dependente de segunda ordem é definida como uma inst
 
 ### <a name="ps_3_0"></a>PS \_ 3 \_ 0
 
-src1 deve ser uma [amostra (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) (s \# ), sem nenhum modificador. Swizzle é permitido em src0 ou src1. O swizzle é aplicado ao coordintates de textura antes da pesquisa de textura.
+src1 deve ser uma [amostra (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) (s \# ), sem nenhum modificador. Swizzle é permitido em src0 ou src1. O swizzle é aplicado às coordenadas de textura antes da pesquisa de textura.
 
 ## <a name="remarks"></a>Comentários
 
@@ -68,7 +68,7 @@ Essa instrução tem suporte nas seguintes versões:
 
 
 
- 
+ 
 
 O número de coordenadas necessárias para src0 executar o exemplo de textura depende de como src1 foi declarado, além do componente. w. Os tipos de amostra são declarados com o tipo de [ \_ amostra DCL (SM2, SM3-PS ASM)](dcl-samplertype---ps.md). Se src1 for declarado como uma amostra 2D, então src0 deverá conter as coordenadas. XY; se src1 for declarado como uma amostra de cubo ou uma amostra de volume, então src0 deverá conter coordenadas. xyz. É permitida a amostragem de uma textura com menos dimensões do que as presentes na coordenada de textura, pois os componentes da coordenada de textura extra são ignorados.
 
@@ -86,7 +86,7 @@ Se a textura de origem contiver menos de quatro componentes, os padrões serão 
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -95,6 +95,6 @@ Se a textura de origem contiver menos de quatro componentes, os padrões serão 
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-title: Constantes
+title: Constantes de configuração de comentários de entrada
 description: Esta seção fornece as especificações de referência para as constantes de configuração de comentários de entrada.
 ms.assetid: 1B0EA599-6618-4DF2-B8C7-91A534BD85C0
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: abe19bfda614446f473246578567ec0996dc6c5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99c2271363ff9f4b421f20a3ac6376661d0c50cb
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086099"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187927"
 ---
-# <a name="constants"></a>Constantes
+# <a name="input-feedback-configuration-constants"></a>Constantes de configuração de comentários de entrada
 
 Esta seção fornece as especificações de referência para as constantes de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .
 

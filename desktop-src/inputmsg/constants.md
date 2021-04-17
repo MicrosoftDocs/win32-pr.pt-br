@@ -1,17 +1,17 @@
 ---
-title: Constantes
+title: Constantes de mensagens e notificações de entrada de ponteiro
 description: Os tópicos nesta seção fornecem as especificações de referência para as mensagens de entrada do ponteiro e as constantes de notificações.
 ms.assetid: 2224DCD0-DAE1-4AC2-AB36-23D114803138
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 26fbcc479a339cee67e578803c6feed228736a90
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6db54614e10c02cea5dfd4df9b7cf637abb3977c
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007456"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188031"
 ---
-# <a name="constants"></a>Constantes
+# <a name="pointer-input-messages-and-notifications-constants"></a>Constantes de mensagens e notificações de entrada de ponteiro
 
 Os tópicos nesta seção fornecem as especificações de referência para [as mensagens de entrada do ponteiro e as](messages-and-notifications-portal.md) constantes de notificações.
 
