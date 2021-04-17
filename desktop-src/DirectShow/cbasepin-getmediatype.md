@@ -1,0 +1,107 @@
+---
+description: O método GetMediaType recupera um tipo de mídia preferencial, por valor de índice.
+ms.assetid: 96f102b0-e2d1-49a1-84af-aa4622cae2a9
+title: Método CBasePin. GetMediaType (Amfilter. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CBasePin.GetMediaType
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: 9c54c5cd769a8efa0c720c7050cca45b00b8209e
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105754563"
+---
+# <a name="cbasepingetmediatype-method"></a>Método CBasePin. GetMediaType
+
+O `GetMediaType` método recupera um tipo de mídia preferencial, por valor de índice.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+virtual HRESULT GetMediaType(
+   int        iPosition,
+   CMediaType *pMediaType
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*iPosition* 
+</dt> <dd>
+
+Valor de índice baseado em zero.
+
+</dd> <dt>
+
+*pMediaType* 
+</dt> <dd>
+
+Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mídia.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
+
+
+
+| Código de retorno                                                                                            | Descrição                      |
+|--------------------------------------------------------------------------------------------------------|----------------------------------|
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>              |
+| <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo.<br/>   |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que zero.<br/> |
+| <dl> <dt>**E \_ inesperado**</dt> </dl>           | Erro inesperado.<br/>     |
+
+
+
+ 
+
+## <a name="remarks"></a>Comentários
+
+A partir da lista de tipos de mídia preferenciais do PIN, esse método retorna o tipo com um valor de índice de *iPosition*. A classe [**CEnumMediaTypes**](cenummediatypes.md) chama esse método para enumerar os tipos de mídia preferenciais.
+
+A classe base retorna E \_ inesperada. Substitua esse método em sua classe derivada.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Classe CBasePin**](cbasepin.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
