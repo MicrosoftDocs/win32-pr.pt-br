@@ -1,5 +1,5 @@
 ---
-title: Constantes
+title: Constantes de injeção de toque
 description: Esta seção fornece as especificações de referência para constantes de injeção de toque.
 ms.assetid: 52941DF1-88AF-452B-BF3E-838ADBDBC9B2
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: a12b50e4e8286312199ebc88597c7f9d885e2917
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76a763a7153bbb9aa67254ffeb5e994a55426e43
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455673"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187735"
 ---
-# <a name="constants"></a>Constantes
+# <a name="touch-injection-constants"></a>Constantes de injeção de toque
 
 Esta seção fornece as especificações de referência para constantes de [injeção de toque](touch-injection-portal.md) .
 
@@ -37,9 +37,9 @@ Esta seção fornece as especificações de referência para constantes de [inje
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h |
+| Cliente mínimo com suporte | \[Somente aplicativos de área de trabalho do Windows 8\]                                           |
+| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2012\]                                 |
+| parâmetro                   | WinUser. h |
 
 ## <a name="see-also"></a>Confira também
 

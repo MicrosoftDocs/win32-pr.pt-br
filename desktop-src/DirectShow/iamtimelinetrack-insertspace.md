@@ -1,0 +1,119 @@
+---
+description: O método InsertSpace divide todos os objetos que existem no tempo especificado e insere um espaço entre eles.
+ms.assetid: f9e48f58-1867-405c-b208-1ab781912aa1
+title: 'Método IAMTimelineTrack:: InsertSpace (QEdit. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IAMTimelineTrack.InsertSpace
+api_type:
+- COM
+api_location:
+- strmiids.lib
+- strmiids.dll
+ms.openlocfilehash: 84d8076f6f89ee5e890db0047d47ade283b1e333
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105760880"
+---
+# <a name="iamtimelinetrackinsertspace-method"></a>Método IAMTimelineTrack:: InsertSpace
+
+> [!Note]  
+> \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
+
+ 
+
+O `InsertSpace` método divide todos os objetos existentes na hora especificada e insere o espaço entre eles.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT InsertSpace(
+   REFERENCE_TIME rtStart,
+   REFERENCE_TIME rtEnd
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*rtStart* 
+</dt> <dd>
+
+Hora na qual criar a divisão e o ponto inicial do espaço inserido, em unidades de 100 nanossegundos.
+
+</dd> <dt>
+
+*rtEnd* 
+</dt> <dd>
+
+Ponto de extremidade do espaço inserido, em unidades de 100 nanossegundos.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Retorna um valor **HRESULT** . Os possíveis valores de retorno incluem o seguinte:
+
+
+
+| Código de retorno                                                                                   | Descrição                                            |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| <dl> <dt>**\_falso**</dt> </dl>       | Não há objetos no horário especificado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argumento inválido.<br/>                           |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente.<br/>                        |
+
+
+
+ 
+
+## <a name="remarks"></a>Comentários
+
+> [!Note]  
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+
+ 
+
+> [!Note]  
+> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|-----------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Interface IAMTimelineTrack**](iamtimelinetrack.md)
+</dt> <dt>
+
+[Códigos de erro e êxito](error-and-success-codes.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
