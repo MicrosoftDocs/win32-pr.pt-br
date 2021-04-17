@@ -1,0 +1,456 @@
+---
+description: Códigos de erro do Windows Sockets (Winsock) retornados pela função WSAGetLastError.
+ms.assetid: 50b924f3-2c88-443b-8a90-4293fe5c3048
+title: Códigos de erro do Windows Sockets (Winsock2. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 81c251d63872c05623a6d1c9e3820edd2d8f670e
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105763119"
+---
+# <a name="windows-sockets-error-codes"></a>Códigos de erro do Windows Sockets
+
+A maioria das funções do Windows Sockets 2 não retorna a causa específica de um erro quando a função retorna. Para obter informações, consulte o tópico [Manipulando erros do Winsock](handling-winsock-errors.md) .
+
+A função [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) retorna o último erro que ocorreu para o thread de chamada. Quando uma determinada função do Windows Sockets indica que ocorreu um erro, essa função deve ser chamada imediatamente para recuperar o código de erro estendido para a chamada de função com falha. Esses códigos de erro e uma breve descrição de texto associada a um código de erro são definidos no arquivo de cabeçalho *Winerror. h* . A função [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) pode ser usada para obter a cadeia de caracteres da mensagem para o erro retornado.
+
+Para obter informações sobre como lidar com códigos de erro ao portar aplicativos de soquete para Winsock, consulte [códigos de erro-errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md).
+
+A lista a seguir descreve os códigos de erro possíveis retornados pela função [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) . Os erros são listados em ordem numérica com o nome da macro de erro. Alguns códigos de erro definidos no arquivo de cabeçalho *Winsock2. h* não são retornados de nenhuma função.
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Código/valor de retorno</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span id="WSA_INVALID_HANDLE"></span><span id="wsa_invalid_handle"></span><dl> <dt><strong>WSA_INVALID_HANDLE</strong></dt> <dt>6</dt> </dl></td>
+<td><dl> <dt><span id="Specified_event_object_handle_is_invalid."></span><span id="specified_event_object_handle_is_invalid."></span><span id="SPECIFIED_EVENT_OBJECT_HANDLE_IS_INVALID."></span>O identificador do objeto de evento especificado é inválido.</dt> <dd> Um aplicativo tenta usar um objeto de evento, mas o identificador especificado não é válido.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_NOT_ENOUGH_MEMORY"></span><span id="wsa_not_enough_memory"></span><dl> <dt><strong>WSA_NOT_ENOUGH_MEMORY</strong></dt> <dt>8</dt> </dl></td>
+<td><dl> <dt><span id="Insufficient_memory_available."></span><span id="insufficient_memory_available."></span><span id="INSUFFICIENT_MEMORY_AVAILABLE."></span>Memória insuficiente disponível.</dt> <dd> Um aplicativo usou uma função do Windows Sockets que mapeia diretamente para uma função do Windows. A função do Windows está indicando a falta de recursos de memória necessários.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_INVALID_PARAMETER"></span><span id="wsa_invalid_parameter"></span><dl> <dt><strong>WSA_INVALID_PARAMETER</strong></dt> <dt>87</dt> </dl></td>
+<td><dl> <dt><span id="One_or_more_parameters_are_invalid."></span><span id="one_or_more_parameters_are_invalid."></span><span id="ONE_OR_MORE_PARAMETERS_ARE_INVALID."></span>Um ou mais parâmetros são inválidos.</dt> <dd> Um aplicativo usou uma função do Windows Sockets que mapeia diretamente para uma função do Windows. A função do Windows está indicando um problema com um ou mais parâmetros.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_OPERATION_ABORTED"></span><span id="wsa_operation_aborted"></span><dl> <dt><strong>WSA_OPERATION_ABORTED</strong></dt> <dt>995</dt> </dl></td>
+<td><dl> <dt><span id="Overlapped_operation_aborted."></span><span id="overlapped_operation_aborted."></span><span id="OVERLAPPED_OPERATION_ABORTED."></span>Operação sobreposta anulada.</dt> <dd> Uma operação sobreposta foi cancelada devido ao fechamento do soquete ou à execução do comando SIO_FLUSH em <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl"><strong>WSAIoctl</strong></a>.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_IO_INCOMPLETE"></span><span id="wsa_io_incomplete"></span><dl> <dt><strong>WSA_IO_INCOMPLETE</strong></dt> <dt>996</dt> </dl></td>
+<td><dl> <dt><span id="Overlapped_I_O_event_object_not_in_signaled_state."></span><span id="overlapped_i_o_event_object_not_in_signaled_state."></span><span id="OVERLAPPED_I_O_EVENT_OBJECT_NOT_IN_SIGNALED_STATE."></span>O objeto de evento de e/s sobreposto não está no estado sinalizado.</dt> <dd> O aplicativo tentou determinar o status de uma operação sobreposta que ainda não foi concluída. Aplicativos que usam <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsagetoverlappedresult"><strong>WSAGetOverlappedResult</strong></a> (com o sinalizador <em>FWait</em> definido como <strong>false</strong>) em um modo de sondagem para determinar quando uma operação sobreposta foi concluída, obtenha esse código de erro até que a operação seja concluída.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_IO_PENDING"></span><span id="wsa_io_pending"></span><dl> <dt><strong>WSA_IO_PENDING</strong></dt> <dt>997</dt> </dl></td>
+<td>As operações sobrepostas serão concluídas mais tarde. <br/> <dl> <dt><span></span></dt> <dd> O aplicativo iniciou uma operação sobreposta que não pode ser concluída imediatamente. Uma indicação de conclusão será fornecida posteriormente quando a operação for concluída.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEINTR"></span><span id="wsaeintr"></span><dl> <dt><strong>WSAEINTR</strong></dt> <dt>10004</dt> </dl></td>
+<td><dl> <dt><span id="Interrupted_function_call."></span><span id="interrupted_function_call."></span><span id="INTERRUPTED_FUNCTION_CALL."></span>Chamada de função interrompida.</dt> <dd> Uma operação de bloqueio foi interrompida por uma chamada para <a href="/windows/desktop/api/winsock2/nf-winsock2-wsacancelblockingcall">WSACancelBlockingCall</a>.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEBADF"></span><span id="wsaebadf"></span><dl> <dt><strong>WSAEBADF</strong></dt> <dt>10009</dt> </dl></td>
+<td><dl> <dt><span id="File_handle_is_not_valid."></span><span id="file_handle_is_not_valid."></span><span id="FILE_HANDLE_IS_NOT_VALID."></span>O identificador do arquivo não é válido.</dt> <dd> O identificador de arquivo fornecido não é válido. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEACCES"></span><span id="wsaeacces"></span><dl> <dt><strong>WSAEACCES</strong></dt> <dt>10013</dt> </dl></td>
+<td><dl> <dt><span id="Permission_denied."></span><span id="permission_denied."></span><span id="PERMISSION_DENIED."></span>Permissão negada.</dt> <dd> Foi feita uma tentativa de acessar um soquete de uma maneira proibida por suas permissões de acesso. Um exemplo é usar um endereço de difusão para <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a> sem que a permissão de difusão seja definida usando <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a>(SO_BROADCAST). <br/> Outro motivo possível para o erro WSAEACCES é que quando a função <a href="/windows/desktop/api/winsock/nf-winsock-bind"><strong>BIND</strong></a> é chamada (no Windows NT 4,0 com SP4 e posterior), outro aplicativo, serviço ou driver de modo kernel está associado ao mesmo endereço com acesso exclusivo. Esse acesso exclusivo é um novo recurso do Windows NT 4,0 com o SP4 e posterior e é implementado usando a opção <a href="/windows/desktop/winsock/so-exclusiveaddruse">SO_EXCLUSIVEADDRUSE</a> .<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEFAULT"></span><span id="wsaefault"></span><dl> <dt><strong>WSAEFAULT</strong></dt> <dt>10014</dt> </dl></td>
+<td><dl> <dt><span id="Bad_address."></span><span id="bad_address."></span><span id="BAD_ADDRESS."></span>Endereço inadequado.</dt> <dd> O sistema detectou um endereço de ponteiro inválido ao tentar usar um argumento de ponteiro de uma chamada. Esse erro ocorrerá se um aplicativo passar um valor de ponteiro inválido ou se o comprimento do buffer for muito pequeno. Por exemplo, se o comprimento de um argumento, que é uma estrutura <a href="/windows/desktop/winsock/sockaddr-2"><strong>SOCKADDR</strong></a> , é menor do que o sizeof (SOCKADDR).<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEINVAL"></span><span id="wsaeinval"></span><dl> <dt><strong>WSAEINVAL</strong></dt> <dt>10022</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_argument."></span><span id="invalid_argument."></span><span id="INVALID_ARGUMENT."></span>Argumento inválido.</dt> <dd> Um argumento inválido foi fornecido (por exemplo, especificando um nível inválido para a função <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> ). Em alguns casos, ele também se refere ao estado atual do soquete — por exemplo, chamar <a href="/windows/desktop/api/Winsock2/nf-winsock2-accept"><strong>Accept</strong></a> em um soquete que não está escutando.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEMFILE"></span><span id="wsaemfile"></span><dl> <dt><strong>WSAEMFILE</strong></dt> <dt>10024</dt> </dl></td>
+<td><dl> <dt><span id="Too_many_open_files."></span><span id="too_many_open_files."></span><span id="TOO_MANY_OPEN_FILES."></span>Muitos arquivos abertos.</dt> <dd> Muitos soquetes abertos. Cada implementação pode ter um número máximo de identificadores de soquete disponíveis, seja globalmente, por processo ou por thread.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEWOULDBLOCK"></span><span id="wsaewouldblock"></span><dl> <dt><strong>WSAEWOULDBLOCK</strong></dt> <dt>10035</dt> </dl></td>
+<td><dl> <dt><span id="Resource_temporarily_unavailable."></span><span id="resource_temporarily_unavailable."></span><span id="RESOURCE_TEMPORARILY_UNAVAILABLE."></span>Recurso temporariamente indisponível.</dt> <dd> Esse erro é retornado de operações em soquetes de não bloqueio que não podem ser concluídos imediatamente, por exemplo, <a href="/windows/desktop/api/winsock/nf-winsock-recv"><strong>receber</strong></a> quando nenhum dado é enfileirado para ser lido do soquete. É um erro não fatal e a operação deve ser repetida mais tarde. É normal que WSAEWOULDBLOCK seja relatado como resultado da chamada <a href="/windows/desktop/api/Winsock2/nf-winsock2-connect"><strong>Connect</strong></a> em um soquete de SOCK_STREAM de bloqueio, já que algum tempo deve decorrer para que a conexão seja estabelecida.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEINPROGRESS"></span><span id="wsaeinprogress"></span><dl> <dt><strong>WSAEINPROGRESS</strong></dt> <dt>10036</dt> </dl></td>
+<td><dl> <dt><span id="Operation_now_in_progress."></span><span id="operation_now_in_progress."></span><span id="OPERATION_NOW_IN_PROGRESS."></span>Operação agora em andamento.</dt> <dd> Uma operação de bloqueio está atualmente em execução. O Windows Sockets permite apenas uma única operação de bloqueio — por tarefa ou thread — para ser notável e, se qualquer outra chamada de função for feita (quer ele referencie ou não ou qualquer outro soquete), a função falhará com o erro WSAEINPROGRESS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEALREADY"></span><span id="wsaealready"></span><dl> <dt><strong>WSAEALREADY</strong></dt> <dt>10037</dt> </dl></td>
+<td><dl> <dt><span id="Operation_already_in_progress."></span><span id="operation_already_in_progress."></span><span id="OPERATION_ALREADY_IN_PROGRESS."></span>A operação já está em andamento.</dt> <dd> Uma operação foi tentada em um soquete sem bloqueio com uma operação já em andamento — ou seja, chamar <a href="/windows/desktop/api/Winsock2/nf-winsock2-connect"><strong>Connect</strong></a> uma segunda vez em um soquete sem bloqueio que já está se conectando ou cancelando uma solicitação assíncrona (<strong>WSAAsyncGetXbyY</strong>) que já foi cancelada ou concluída.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENOTSOCK"></span><span id="wsaenotsock"></span><dl> <dt><strong>WSAENOTSOCK</strong></dt> <dt>10038</dt> </dl></td>
+<td><dl> <dt><span id="Socket_operation_on_nonsocket."></span><span id="socket_operation_on_nonsocket."></span><span id="SOCKET_OPERATION_ON_NONSOCKET."></span>Operação de soquete em não soquete.</dt> <dd> Uma operação foi tentada em algo que não é um soquete. O parâmetro de identificador de soquete não fez referência a um soquete válido ou, para <a href="/windows/desktop/api/Winsock2/nf-winsock2-select"><strong>Select</strong></a>, um membro de um <strong>fd_set</strong> não era válido.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEDESTADDRREQ"></span><span id="wsaedestaddrreq"></span><dl> <dt><strong>WSAEDESTADDRREQ</strong></dt> <dt>10039</dt> </dl></td>
+<td><dl> <dt><span id="Destination_address_required."></span><span id="destination_address_required."></span><span id="DESTINATION_ADDRESS_REQUIRED."></span>Endereço de destino necessário.</dt> <dd> Um endereço necessário foi omitido de uma operação em um soquete. Por exemplo, esse erro será retornado se <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a> for chamado com o endereço remoto de ADDR_ANY.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEMSGSIZE"></span><span id="wsaemsgsize"></span><dl> <dt><strong>WSAEMSGSIZE</strong></dt> <dt>10040</dt> </dl></td>
+<td><dl> <dt><span id="Message_too_long."></span><span id="message_too_long."></span><span id="MESSAGE_TOO_LONG."></span>Mensagem muito longa.</dt> <dd> Uma mensagem enviada em um soquete de datagrama era maior do que o buffer de mensagens interno ou algum outro limite de rede, ou o buffer usado para receber um datagrama era menor do que o próprio datagrama.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEPROTOTYPE"></span><span id="wsaeprototype"></span><dl> <dt><strong>WSAEPROTOTYPE</strong></dt> <dt>10041</dt> </dl></td>
+<td><dl> <dt><span id="Protocol_wrong_type_for_socket."></span><span id="protocol_wrong_type_for_socket."></span><span id="PROTOCOL_WRONG_TYPE_FOR_SOCKET."></span>Tipo de protocolo incorreto para soquete.</dt> <dd> Um protocolo foi especificado na chamada de função de <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>soquete</strong></a> que não oferece suporte à semântica do tipo de soquete solicitado. Por exemplo, o protocolo de UDP de Internet ARPA não pode ser especificado com um tipo de soquete de SOCK_STREAM.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENOPROTOOPT"></span><span id="wsaenoprotoopt"></span><dl> <dt><strong>WSAENOPROTOOPT</strong></dt> <dt>10042</dt> </dl></td>
+<td><dl> <dt><span id="Bad_protocol_option."></span><span id="bad_protocol_option."></span><span id="BAD_PROTOCOL_OPTION."></span>Opção de protocolo inválido.</dt> <dd> Uma opção ou um nível desconhecido, inválido ou sem suporte foi especificado em uma chamada de <a href="/windows/desktop/api/winsock/nf-winsock-getsockopt"><strong>getsockopt</strong></a> ou <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> .<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEPROTONOSUPPORT"></span><span id="wsaeprotonosupport"></span><dl> <dt><strong>WSAEPROTONOSUPPORT</strong></dt> <dt>10043</dt> </dl></td>
+<td><dl> <dt><span id="Protocol_not_supported."></span><span id="protocol_not_supported."></span><span id="PROTOCOL_NOT_SUPPORTED."></span>Protocolo sem suporte.</dt> <dd> O protocolo solicitado não foi configurado no sistema ou não existe nenhuma implementação para ele. Por exemplo, uma chamada de <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>soquete</strong></a> solicita um soquete de SOCK_DGRAM, mas especifica um protocolo de fluxo.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAESOCKTNOSUPPORT"></span><span id="wsaesocktnosupport"></span><dl> <dt><strong>WSAESOCKTNOSUPPORT</strong></dt> <dt>10044</dt> </dl></td>
+<td><dl> <dt><span id="Socket_type_not_supported."></span><span id="socket_type_not_supported."></span><span id="SOCKET_TYPE_NOT_SUPPORTED."></span>Tipo de soquete sem suporte.</dt> <dd> O suporte para o tipo de soquete especificado não existe nessa família de endereços. Por exemplo, o tipo opcional SOCK_RAW pode ser selecionado em uma chamada de <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>soquete</strong></a> e a implementação não oferece suporte a soquetes de SOCK_RAW.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEOPNOTSUPP"></span><span id="wsaeopnotsupp"></span><dl> <dt><strong>WSAEOPNOTSUPP</strong></dt> <dt>10045</dt> </dl></td>
+<td><dl> <dt><span id="Operation_not_supported."></span><span id="operation_not_supported."></span><span id="OPERATION_NOT_SUPPORTED."></span>Operação sem suporte.</dt> <dd> Não há suporte para a operação tentada para o tipo de objeto referenciado. Geralmente isso ocorre quando um descritor de soquete para um soquete que não dá suporte a essa operação está tentando aceitar uma conexão em um soquete de datagrama.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEPFNOSUPPORT"></span><span id="wsaepfnosupport"></span><dl> <dt><strong>WSAEPFNOSUPPORT</strong></dt> <dt>10046</dt> </dl></td>
+<td><dl> <dt><span id="Protocol_family_not_supported."></span><span id="protocol_family_not_supported."></span><span id="PROTOCOL_FAMILY_NOT_SUPPORTED."></span>Família de protocolos sem suporte.</dt> <dd> A família de protocolos não foi configurada no sistema ou não existe nenhuma implementação para ela. Essa mensagem tem um significado um pouco diferente de WSAEAFNOSUPPORT. No entanto, ele é intercambiável na maioria dos casos, e todas as funções do Windows Sockets que retornam uma dessas mensagens também especificam WSAEAFNOSUPPORT.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEAFNOSUPPORT"></span><span id="wsaeafnosupport"></span><dl> <dt><strong>WSAEAFNOSUPPORT</strong></dt> <dt>10047</dt> </dl></td>
+<td><dl> <dt><span id="Address_family_not_supported_by_protocol_family."></span><span id="address_family_not_supported_by_protocol_family."></span><span id="ADDRESS_FAMILY_NOT_SUPPORTED_BY_PROTOCOL_FAMILY."></span>Família de endereços sem suporte pela família de protocolos.</dt> <dd> Foi usado um endereço incompatível com o protocolo solicitado. Todos os soquetes são criados com uma família de endereços associada (ou seja, AF_INET para protocolos de Internet) e um tipo de protocolo genérico (ou seja, SOCK_STREAM). Esse erro será retornado se um protocolo incorreto for solicitado explicitamente na chamada de <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>soquete</strong></a> ou se um endereço da família errada for usado para um soquete, por exemplo, em <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a>.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEADDRINUSE"></span><span id="wsaeaddrinuse"></span><dl> <dt><strong>WSAEADDRINUSE</strong></dt> <dt>10048</dt> </dl></td>
+<td><dl> <dt><span id="Address_already_in_use."></span><span id="address_already_in_use."></span><span id="ADDRESS_ALREADY_IN_USE."></span>O endereço já está em uso.</dt> <dd> Normalmente, apenas um uso de cada endereço de soquete (protocolo/endereço IP/porta) é permitido. Esse erro ocorrerá se um aplicativo tentar <a href="/windows/desktop/api/winsock/nf-winsock-bind"><strong>associar</strong></a> um soquete a um endereço IP/porta que já foi usado para um soquete existente ou um soquete que não foi fechado corretamente ou que ainda está no processo de fechamento. Para aplicativos de servidor que precisam <strong>associar</strong> vários soquetes ao mesmo número de porta, considere usar <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> (SO_REUSEADDR). Normalmente, os aplicativos cliente não precisam chamar a <strong>ligação</strong> . o<a href="/windows/desktop/api/Winsock2/nf-winsock2-connect"><strong>Connect</strong></a> escolhe uma porta não usada automaticamente. Quando o <strong>BIND</strong> é chamado com um endereço curinga (envolvendo ADDR_ANY), um erro WSAEADDRINUSE pode ser atrasado até que o endereço específico seja confirmado. Isso pode acontecer com uma chamada para outra função posteriormente, incluindo <strong>Connect</strong>, <a href="/windows/desktop/api/Winsock2/nf-winsock2-listen"><strong>Listen</strong></a>, <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect"><strong>WSAConnect</strong></a>ou <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf"><strong>WSAJoinLeaf</strong></a>.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEADDRNOTAVAIL"></span><span id="wsaeaddrnotavail"></span><dl> <dt><strong>WSAEADDRNOTAVAIL</strong></dt> <dt>10049</dt> </dl></td>
+<td><dl> <dt><span id="Cannot_assign_requested_address."></span><span id="cannot_assign_requested_address."></span><span id="CANNOT_ASSIGN_REQUESTED_ADDRESS."></span>Não é possível atribuir o endereço solicitado.</dt> <dd> O endereço solicitado não é válido em seu contexto. Normalmente, isso resulta de uma tentativa de <a href="/windows/desktop/api/winsock/nf-winsock-bind"><strong>ligação</strong></a> a um endereço que não é válido para o computador local. Isso também pode resultar de <a href="/windows/desktop/api/Winsock2/nf-winsock2-connect"><strong>Connect</strong></a>, <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a>, <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect"><strong>WSAConnect</strong></a>, <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf"><strong>WSAJoinLeaf</strong></a>ou <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsasendto"><strong>WSASendTo</strong></a> quando a porta ou o endereço remoto não for válido para um computador remoto (por exemplo, endereço ou porta 0).<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENETDOWN"></span><span id="wsaenetdown"></span><dl> <dt><strong>WSAENETDOWN</strong></dt> <dt>10050</dt> </dl></td>
+<td><dl> <dt><span id="Network_is_down."></span><span id="network_is_down."></span><span id="NETWORK_IS_DOWN."></span>A rede está inoperante.</dt> <dd> Uma operação de soquete encontrou uma rede inoperante. Isso pode indicar um erro grave do sistema de rede (ou seja, a pilha de protocolos sobre a qual é executado o Windows Sockets.DLL), a interface de rede ou a própria rede local. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAENETUNREACH"></span><span id="wsaenetunreach"></span><dl> <dt><strong>WSAENETUNREACH</strong></dt> <dt>10051</dt> </dl></td>
+<td><dl> <dt><span id="Network_is_unreachable."></span><span id="network_is_unreachable."></span><span id="NETWORK_IS_UNREACHABLE."></span>A rede está inacessível.</dt> <dd> Uma operação de soquete foi tentada em uma rede inacessível. Isso geralmente significa que o software local não sabe nenhuma rota para alcançar o host remoto.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENETRESET"></span><span id="wsaenetreset"></span><dl> <dt><strong>WSAENETRESET</strong></dt> <dt>10052</dt> </dl></td>
+<td><dl> <dt><span id="Network_dropped_connection_on_reset."></span><span id="network_dropped_connection_on_reset."></span><span id="NETWORK_DROPPED_CONNECTION_ON_RESET."></span>A conexão da rede foi interrompida ao redefinir.</dt> <dd> A conexão foi interrompida devido à atividade Keep Alive que detecta uma falha enquanto a operação estava em andamento. Ele também pode ser retornado por <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> se for feita uma tentativa de definir <a href="/windows/desktop/winsock/so-keepalive"><strong>SO_KEEPALIVE</strong></a> em uma conexão que já falhou.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAECONNABORTED"></span><span id="wsaeconnaborted"></span><dl> <dt><strong>WSAECONNABORTED</strong></dt> <dt>10053</dt> </dl></td>
+<td><dl> <dt><span id="Software_caused_connection_abort."></span><span id="software_caused_connection_abort."></span><span id="SOFTWARE_CAUSED_CONNECTION_ABORT."></span>O software causou a anulação da conexão.</dt> <dd> Uma conexão estabelecida foi anulada pelo software no computador host, possivelmente devido a um erro de tempo limite de transmissão de dados ou de protocolo.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAECONNRESET"></span><span id="wsaeconnreset"></span><dl> <dt><strong>WSAECONNRESET</strong></dt> <dt>10054</dt> </dl></td>
+<td><dl> <dt><span id="Connection_reset_by_peer."></span><span id="connection_reset_by_peer."></span><span id="CONNECTION_RESET_BY_PEER."></span>Conexão redefinida pelo par.</dt> <dd> uma conexão existente foi fechada forçadamente pelo host remoto. Isso normalmente ocorre quando o aplicativo par no host remoto é interrompido de repente, o host é reinicializado, o host ou a interface de rede remota está desabilitada ou o host remoto usa um fechamento rígido (consulte <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> para obter mais informações sobre a opção SO_LINGER no soquete remoto). Esse erro também pode ocorrer se uma conexão tiver sido interrompida devido a atividade Keep-Alive detectando uma falha enquanto uma ou mais operações estão em andamento. As operações que estavam em andamento falham com WSAENETRESET. As operações subsequentes falham com WSAECONNRESET.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAENOBUFS"></span><span id="wsaenobufs"></span><dl> <dt><strong>WSAENOBUFS</strong></dt> <dt>10055</dt> </dl></td>
+<td><dl> <dt><span id="No_buffer_space_available."></span><span id="no_buffer_space_available."></span><span id="NO_BUFFER_SPACE_AVAILABLE."></span>Não há espaço disponível no buffer.</dt> <dd> Uma operação em um soquete não pôde ser executada porque o sistema não tem espaço suficiente no buffer ou porque uma fila estava cheia.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEISCONN"></span><span id="wsaeisconn"></span><dl> <dt><strong>WSAEISCONN</strong></dt> <dt>10056</dt> </dl></td>
+<td><dl> <dt><span id="Socket_is_already_connected."></span><span id="socket_is_already_connected."></span><span id="SOCKET_IS_ALREADY_CONNECTED."></span>O soquete já está conectado.</dt> <dd> Uma solicitação de conexão foi feita em um soquete já conectado. Algumas implementações também retornam esse erro se o <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a> for chamado em um soquete de SOCK_DGRAM conectado (para SOCK_STREAM soquetes, o parâmetro <em>to</em> no <strong>SendTo</strong> será ignorado), embora outras implementações tratem isso como uma ocorrência legal.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAENOTCONN"></span><span id="wsaenotconn"></span><dl> <dt><strong>WSAENOTCONN</strong></dt> <dt>10057</dt> </dl></td>
+<td><dl> <dt><span id="Socket_is_not_connected."></span><span id="socket_is_not_connected."></span><span id="SOCKET_IS_NOT_CONNECTED."></span>O soquete não está conectado.</dt> <dd> Uma solicitação para enviar ou receber dados não foi permitida porque o soquete não está conectado e (ao enviar em um soquete de datagrama usando <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>SendTo</strong></a>) nenhum endereço foi fornecido. Qualquer outro tipo de operação também pode retornar esse erro — por exemplo, configuração de <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> <a href="/windows/desktop/winsock/so-keepalive"><strong>SO_KEEPALIVE</strong></a> se a conexão tiver sido redefinida.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAESHUTDOWN"></span><span id="wsaeshutdown"></span><dl> <dt><strong>WSAESHUTDOWN</strong></dt> <dt>10058</dt> </dl></td>
+<td><dl> <dt><span id="Cannot_send_after_socket_shutdown."></span><span id="cannot_send_after_socket_shutdown."></span><span id="CANNOT_SEND_AFTER_SOCKET_SHUTDOWN."></span>Não é possível enviar após o desligamento do soquete.</dt> <dd> Uma solicitação para enviar ou receber dados não foi permitida porque o soquete já havia sido desligado nessa direção com uma chamada de <a href="/windows/desktop/api/winsock/nf-winsock-shutdown"><strong>desligamento</strong></a> anterior. Ao chamar <strong>Shutdown</strong> , um fechamento parcial de um soquete é solicitado, que é um sinal que envia ou recebe ou que ambos foram descontinuados.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAETOOMANYREFS"></span><span id="wsaetoomanyrefs"></span><dl> <dt><strong>WSAETOOMANYREFS</strong></dt> <dt>10059</dt> </dl></td>
+<td><dl> <dt><span id="Too_many_references."></span><span id="too_many_references."></span><span id="TOO_MANY_REFERENCES."></span>Muitas referências.</dt> <dd> Muitas referências a algum objeto de kernel.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAETIMEDOUT"></span><span id="wsaetimedout"></span><dl> <dt><strong>WSAETIMEDOUT</strong></dt> <dt>10060</dt> </dl></td>
+<td><dl> <dt><span id="Connection_timed_out."></span><span id="connection_timed_out."></span><span id="CONNECTION_TIMED_OUT."></span>O tempo limite da conexão foi atingido.</dt> <dd> Uma tentativa de conexão falhou porque a parte conectada não respondeu corretamente após um período de tempo ou a conexão estabelecida falhou porque o host conectado falhou ao responder.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAECONNREFUSED"></span><span id="wsaeconnrefused"></span><dl> <dt><strong>WSAECONNREFUSED</strong></dt> <dt>10061</dt> </dl></td>
+<td><dl> <dt><span id="Connection_refused."></span><span id="connection_refused."></span><span id="CONNECTION_REFUSED."></span>Conexão recusada.</dt> <dd> Nenhuma conexão pode ser feita porque o computador de destino a recusou ativamente. Isso geralmente resulta da tentativa de conexão com um serviço que está inativo no host estrangeiro, ou seja, um sem aplicativo de servidor em execução.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAELOOP"></span><span id="wsaeloop"></span><dl> <dt><strong>WSAELOOP</strong></dt> <dt>10062</dt> </dl></td>
+<td><dl> <dt><span id="Cannot_translate_name."></span><span id="cannot_translate_name."></span><span id="CANNOT_TRANSLATE_NAME."></span>Não é possível converter o nome.</dt> <dd> Não é possível converter um nome.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAENAMETOOLONG"></span><span id="wsaenametoolong"></span><dl> <dt><strong>WSAENAMETOOLONG</strong></dt> <dt>10063</dt> </dl></td>
+<td><dl> <dt><span id="Name_too_long."></span><span id="name_too_long."></span><span id="NAME_TOO_LONG."></span>Nome muito longo.</dt> <dd> Um componente de nome ou um nome era muito longo.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEHOSTDOWN"></span><span id="wsaehostdown"></span><dl> <dt><strong>WSAEHOSTDOWN</strong></dt> <dt>10064</dt> </dl></td>
+<td><dl> <dt><span id="Host_is_down."></span><span id="host_is_down."></span><span id="HOST_IS_DOWN."></span>O host está inoperante.</dt> <dd> Uma operação de soquete falhou porque o host de destino está inoperante. Uma operação de soquete encontrou um host inoperante. A atividade de rede no host local não foi iniciada. Essas condições são mais prováveis de serem indicadas pelo erro WSAETIMEDOUT.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEHOSTUNREACH"></span><span id="wsaehostunreach"></span><dl> <dt><strong>WSAEHOSTUNREACH</strong></dt> <dt>10065</dt> </dl></td>
+<td><dl> <dt><span id="No_route_to_host."></span><span id="no_route_to_host."></span><span id="NO_ROUTE_TO_HOST."></span>Nenhuma rota para o host.</dt> <dd> Uma operação de soquete foi tentada em um host inacessível. Consulte WSAENETUNREACH.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENOTEMPTY"></span><span id="wsaenotempty"></span><dl> <dt><strong>WSAENOTEMPTY</strong></dt> <dt>10066</dt> </dl></td>
+<td><dl> <dt><span id="Directory_not_empty."></span><span id="directory_not_empty."></span><span id="DIRECTORY_NOT_EMPTY."></span>O diretório não está vazio.</dt> <dd> Não é possível remover um diretório que não esteja vazio.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEPROCLIM"></span><span id="wsaeproclim"></span><dl> <dt><strong>WSAEPROCLIM</strong></dt> <dt>10067</dt> </dl></td>
+<td><dl> <dt><span id="Too_many_processes."></span><span id="too_many_processes."></span><span id="TOO_MANY_PROCESSES."></span>Muitos processos.</dt> <dd> Uma implementação do Windows Sockets pode ter um limite no número de aplicativos que podem usá-lo simultaneamente. <a href="/windows/desktop/api/winsock/nf-winsock-wsastartup"><strong>WSAStartup</strong></a> pode falhar com esse erro se o limite tiver sido atingido.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEUSERS"></span><span id="wsaeusers"></span><dl> <dt><strong>WSAEUSERS</strong></dt> <dt>10068</dt> </dl></td>
+<td><dl> <dt><span id="User_quota_exceeded."></span><span id="user_quota_exceeded."></span><span id="USER_QUOTA_EXCEEDED."></span>Cota de usuário excedida.</dt> <dd> Cota de usuário insuficiente. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEDQUOT"></span><span id="wsaedquot"></span><dl> <dt><strong>WSAEDQUOT</strong></dt> <dt>10069</dt> </dl></td>
+<td><dl> <dt><span id="Disk_quota_exceeded."></span><span id="disk_quota_exceeded."></span><span id="DISK_QUOTA_EXCEEDED."></span>Cota de disco excedida.</dt> <dd> Cota de disco esgotada. <br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAESTALE"></span><span id="wsaestale"></span><dl> <dt><strong>WSAESTALE</strong></dt> <dt>10070</dt> </dl></td>
+<td><dl> <dt><span id="Stale_file_handle_reference."></span><span id="stale_file_handle_reference."></span><span id="STALE_FILE_HANDLE_REFERENCE."></span>Referência de identificador de arquivo obsoleto.</dt> <dd> A referência de identificador de arquivo não está mais disponível. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEREMOTE"></span><span id="wsaeremote"></span><dl> <dt><strong>WSAEREMOTE</strong></dt> <dt>10071</dt> </dl></td>
+<td><dl> <dt><span id="Item_is_remote."></span><span id="item_is_remote."></span><span id="ITEM_IS_REMOTE."></span>O item é remoto.</dt> <dd> O item não está disponível localmente. <br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSASYSNOTREADY"></span><span id="wsasysnotready"></span><dl> <dt><strong>WSASYSNOTREADY</strong></dt> <dt>10091</dt> </dl></td>
+<td><dl> <dt><span id="Network_subsystem_is_unavailable."></span><span id="network_subsystem_is_unavailable."></span><span id="NETWORK_SUBSYSTEM_IS_UNAVAILABLE."></span>O subsistema de rede está indisponível.</dt> <dd> Esse erro será retornado por <a href="/windows/desktop/api/winsock/nf-winsock-wsastartup"><strong>WSAStartup</strong></a> se a implementação do Windows Sockets não puder funcionar neste momento porque o sistema subjacente usado para fornecer serviços de rede não está disponível no momento. Os usuários devem verificar:<br/> </dd> </dl>
+<ul>
+<li>Se o arquivo DLL apropriado do Windows Sockets está no caminho atual.</li>
+<li>Que eles não estejam tentando usar mais de uma implementação do Windows Sockets simultaneamente. Se houver mais de uma DLL do Winsock em seu sistema, verifique se a primeira no caminho é apropriada para o subsistema de rede carregado no momento.</li>
+<li>A documentação de implementação do Windows Sockets para garantir que todos os componentes necessários estejam atualmente instalados e configurados corretamente.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAVERNOTSUPPORTED"></span><span id="wsavernotsupported"></span><dl> <dt><strong>WSAVERNOTSUPPORTED</strong></dt> <dt>10092</dt> </dl></td>
+<td><dl> <dt><span id="Winsock.dll_version_out_of_range."></span><span id="winsock.dll_version_out_of_range."></span><span id="WINSOCK.DLL_VERSION_OUT_OF_RANGE."></span>Winsock.dll versão fora do intervalo.</dt> <dd> A implementação atual do Windows Sockets não oferece suporte à versão de especificação do Windows Sockets solicitada pelo aplicativo. Verifique se nenhum arquivo DLL antigo do Windows Sockets está sendo acessado.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSANOTINITIALISED"></span><span id="wsanotinitialised"></span><dl> <dt><strong>WSANOTINITIALISED</strong></dt> <dt>10093</dt> </dl></td>
+<td><dl> <dt><span id="Successful_WSAStartup_not_yet_performed."></span><span id="successful_wsastartup_not_yet_performed."></span><span id="SUCCESSFUL_WSASTARTUP_NOT_YET_PERFORMED."></span>WSAStartup com êxito ainda não foi realizado.</dt> <dd> O aplicativo não chamou <a href="/windows/desktop/api/winsock/nf-winsock-wsastartup"><strong>WSAStartup</strong></a> ou <strong>WSAStartup</strong> falhou. O aplicativo pode estar acessando um soquete que a tarefa ativa atual não possui (ou seja, tentando compartilhar um soquete entre tarefas) ou <a href="/windows/desktop/api/winsock/nf-winsock-wsacleanup"><strong>WSACleanup</strong></a> foi chamado muitas vezes.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEDISCON"></span><span id="wsaediscon"></span><dl> <dt><strong>WSAEDISCON</strong></dt> <dt>10101</dt> </dl></td>
+<td><dl> <dt><span id="Graceful_shutdown_in_progress."></span><span id="graceful_shutdown_in_progress."></span><span id="GRACEFUL_SHUTDOWN_IN_PROGRESS."></span>Desligamento normal em andamento.</dt> <dd> Retornado por <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsarecv"><strong>WSARecv</strong></a> e <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsarecvfrom"><strong>WSARecvFrom</strong></a> para indicar que a parte remota iniciou uma sequência de desligamento normal.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAENOMORE"></span><span id="wsaenomore"></span><dl> <dt><strong>WSAENOMORE</strong></dt> <dt>10102</dt> </dl></td>
+<td><dl> <dt><span id="No_more_results."></span><span id="no_more_results."></span><span id="NO_MORE_RESULTS."></span>Não há mais resultados.</dt> <dd> Não é possível retornar mais resultados pela função <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta"><strong>WSALookupServiceNext</strong></a> .<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAECANCELLED"></span><span id="wsaecancelled"></span><dl> <dt><strong>WSAECANCELLED</strong></dt> <dt>10103</dt> </dl></td>
+<td><dl> <dt><span id="Call_has_been_canceled."></span><span id="call_has_been_canceled."></span><span id="CALL_HAS_BEEN_CANCELED."></span>A chamada foi cancelada.</dt> <dd> Uma chamada para a função <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend"><strong>WSALookupServiceEnd</strong></a> foi feita enquanto essa chamada ainda estava sendo processada. A chamada foi cancelada.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEINVALIDPROCTABLE"></span><span id="wsaeinvalidproctable"></span><dl> <dt><strong>WSAEINVALIDPROCTABLE</strong></dt> <dt>10104</dt> </dl></td>
+<td><dl> <dt><span id="Procedure_call_table_is_invalid."></span><span id="procedure_call_table_is_invalid."></span><span id="PROCEDURE_CALL_TABLE_IS_INVALID."></span>Tabela de chamada de procedimento inválida.</dt> <dd> A tabela de chamadas de procedimento do provedor de serviço é inválida. Um provedor de serviços retornou uma tabela de procedimentos falsos para Ws2_32.dll. Isso geralmente é causado por um ou mais ponteiros de função sendo <strong>nulos</strong>.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAEINVALIDPROVIDER"></span><span id="wsaeinvalidprovider"></span><dl> <dt><strong>WSAEINVALIDPROVIDER</strong></dt> <dt>10105</dt> </dl></td>
+<td><dl> <dt><span id="Service_provider_is_invalid."></span><span id="service_provider_is_invalid."></span><span id="SERVICE_PROVIDER_IS_INVALID."></span>O provedor de serviços é inválido.</dt> <dd> O provedor de serviços solicitado é inválido. Esse erro será retornado pelas funções <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo"><strong>WSCGetProviderInfo</strong></a> e <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32"><strong>WSCGetProviderInfo32</strong></a> se a entrada de protocolo especificada não puder ser encontrada. Esse erro também será retornado se o provedor de serviços retornou um número de versão diferente de 2,0.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEPROVIDERFAILEDINIT"></span><span id="wsaeproviderfailedinit"></span><dl> <dt><strong>WSAEPROVIDERFAILEDINIT</strong></dt> <dt>10106</dt> </dl></td>
+<td><dl> <dt><span id="Service_provider_failed_to_initialize."></span><span id="service_provider_failed_to_initialize."></span><span id="SERVICE_PROVIDER_FAILED_TO_INITIALIZE."></span>Falha ao inicializar o provedor de serviços.</dt> <dd> O provedor de serviços solicitado não pôde ser carregado ou inicializado. Esse erro será retornado se a DLL de um provedor de serviços não puder ser carregada (falha em<a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya"><strong>LoadLibrary</strong></a> ) ou se a função <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wspstartup"><strong>WSPStartup</strong></a> ou <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-nspstartup"><strong>NSPStartup</strong></a> do provedor falhar.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSASYSCALLFAILURE"></span><span id="wsasyscallfailure"></span><dl> <dt><strong>WSASYSCALLFAILURE</strong></dt> <dt>10107</dt> </dl></td>
+<td><dl> <dt><span id="System_call_failure."></span><span id="system_call_failure."></span><span id="SYSTEM_CALL_FAILURE."></span>Falha na chamada do sistema.</dt> <dd> Uma chamada do sistema que nunca deve falhar falhou. Este é um código de erro genérico, retornado sob várias condições. <br/> Retornado quando uma chamada do sistema que nunca deveria falhar falha. Por exemplo, se uma chamada para <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsawaitformultipleevents"><strong>WaitForMultipleEvents</strong></a> falhar ou uma das funções de registro falhar ao tentar manipular os catálogos de protocolo/namespace.<br/> Retornado quando um provedor não retorna êxito e não fornece um código de erro estendido. Pode indicar um erro de implementação do provedor de serviços.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSASERVICE_NOT_FOUND"></span><span id="wsaservice_not_found"></span><dl> <dt><strong>WSASERVICE_NOT_FOUND</strong></dt> <dt>10108</dt> </dl></td>
+<td><dl> <dt><span id="Service_not_found."></span><span id="service_not_found."></span><span id="SERVICE_NOT_FOUND."></span>Serviço não encontrado.</dt> <dd> Esse serviço não é conhecido. O serviço não pode ser encontrado no espaço de nome especificado.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSATYPE_NOT_FOUND"></span><span id="wsatype_not_found"></span><dl> <dt><strong>WSATYPE_NOT_FOUND</strong></dt> <dt>10109</dt> </dl></td>
+<td><dl> <dt><span id="Class_type_not_found."></span><span id="class_type_not_found."></span><span id="CLASS_TYPE_NOT_FOUND."></span>Tipo de classe não encontrado.</dt> <dd> A classe especificada não foi encontrada.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_E_NO_MORE"></span><span id="wsa_e_no_more"></span><dl> <dt><strong>WSA_E_NO_MORE</strong></dt> <dt>10110</dt> </dl></td>
+<td><dl> <dt><span id="No_more_results."></span><span id="no_more_results."></span><span id="NO_MORE_RESULTS."></span>Não há mais resultados.</dt> <dd> Não é possível retornar mais resultados pela função <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta"><strong>WSALookupServiceNext</strong></a> .<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_E_CANCELLED"></span><span id="wsa_e_cancelled"></span><dl> <dt><strong>WSA_E_CANCELLED</strong></dt> <dt>10111</dt> </dl></td>
+<td><dl> <dt><span id="Call_was_canceled."></span><span id="call_was_canceled."></span><span id="CALL_WAS_CANCELED."></span>A chamada foi cancelada.</dt> <dd> Uma chamada para a função <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend"><strong>WSALookupServiceEnd</strong></a> foi feita enquanto essa chamada ainda estava sendo processada. A chamada foi cancelada.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSAEREFUSED"></span><span id="wsaerefused"></span><dl> <dt><strong>WSAEREFUSED</strong></dt> <dt>10112</dt> </dl></td>
+<td><dl> <dt><span id="Database_query_was_refused."></span><span id="database_query_was_refused."></span><span id="DATABASE_QUERY_WAS_REFUSED."></span>A consulta do banco de dados foi recusada.</dt> <dd> Uma consulta de banco de dados falhou porque foi ativamente recusada.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSAHOST_NOT_FOUND"></span><span id="wsahost_not_found"></span><dl> <dt><strong>WSAHOST_NOT_FOUND</strong></dt> <dt>11001</dt> </dl></td>
+<td><dl> <dt><span id="Host_not_found."></span><span id="host_not_found."></span><span id="HOST_NOT_FOUND."></span>Host não encontrado.</dt> <dd> Esse host não é conhecido. O nome não é um nome de host ou alias oficial ou não pode ser encontrado nos bancos de dados que estão sendo consultados. Esse erro também pode ser retornado para consultas de protocolo e serviço e significa que o nome especificado não pôde ser encontrado no banco de dados relevante.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSATRY_AGAIN"></span><span id="wsatry_again"></span><dl> <dt><strong>WSATRY_AGAIN</strong></dt> <dt>11002</dt> </dl></td>
+<td><dl> <dt><span id="Nonauthoritative_host_not_found."></span><span id="nonauthoritative_host_not_found."></span><span id="NONAUTHORITATIVE_HOST_NOT_FOUND."></span>Host não autoritativo não encontrado.</dt> <dd> Isso geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autoritativo. Uma repetição posterior pode ser bem-sucedida.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSANO_RECOVERY"></span><span id="wsano_recovery"></span><dl> <dt><strong>WSANO_RECOVERY</strong></dt> <dt>11003</dt> </dl></td>
+<td><dl> <dt><span id="This_is_a_nonrecoverable_error."></span><span id="this_is_a_nonrecoverable_error."></span><span id="THIS_IS_A_NONRECOVERABLE_ERROR."></span>Este é um erro não recuperável.</dt> <dd> Isso indica que ocorreu algum tipo de erro não recuperável durante uma pesquisa de banco de dados. Isso pode ocorrer porque os arquivos de banco de dados (por exemplo, arquivos de HOSTs, serviços ou protocolos compatíveis com BSD) não foram encontrados ou uma solicitação DNS foi retornada pelo servidor com um erro grave.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSANO_DATA"></span><span id="wsano_data"></span><dl> <dt><strong>WSANO_DATA</strong></dt> <dt>11004</dt> </dl></td>
+<td><dl> <dt><span id="Valid_name__no_data_record_of_requested_type."></span><span id="valid_name__no_data_record_of_requested_type."></span><span id="VALID_NAME__NO_DATA_RECORD_OF_REQUESTED_TYPE."></span>Nome válido, nenhum registro de dados do tipo solicitado.</dt> <dd> O nome solicitado é válido e foi encontrado no banco de dados, mas ele não tem o dado associado correto sendo resolvido para. O exemplo comum para isso é uma tentativa de conversão de nome de host para endereço (usando <a href="/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname"><strong>gethostbyname</strong></a> ou <a href="/windows/desktop/api/wsipv6ok/nf-wsipv6ok-wsaasyncgethostbyname"><strong>WSAAsyncGetHostByName</strong></a>) que usa o DNS (servidor de nomes de domínio). Um registro MX é retornado, mas nenhum registro, indicando que o próprio host existe, mas não é acessível diretamente.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_RECEIVERS"></span><span id="wsa_qos_receivers"></span><dl> <dt><strong>WSA_QOS_RECEIVERS</strong></dt> <dt>11005</dt> </dl></td>
+<td><dl> <dt><span id="QoS_receivers."></span><span id="qos_receivers."></span><span id="QOS_RECEIVERS."></span>Receptores de QoS.</dt> <dd> Pelo menos uma reserva de QoS chegou.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_SENDERS"></span><span id="wsa_qos_senders"></span><dl> <dt><strong>WSA_QOS_SENDERS</strong></dt> <dt>11006</dt> </dl></td>
+<td><dl> <dt><span id="QoS_senders."></span><span id="qos_senders."></span><span id="QOS_SENDERS."></span>Remetentes de QoS.</dt> <dd> Pelo menos um caminho de envio de QoS chegou.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_NO_SENDERS"></span><span id="wsa_qos_no_senders"></span><dl> <dt><strong>WSA_QOS_NO_SENDERS</strong></dt> <dt>11007</dt> </dl></td>
+<td><dl> <dt><span id="No_QoS_senders."></span><span id="no_qos_senders."></span><span id="NO_QOS_SENDERS."></span>Nenhum remetente de QoS.</dt> <dd> Não há remetentes de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_NO_RECEIVERS"></span><span id="wsa_qos_no_receivers"></span><dl> <dt><strong>WSA_QOS_NO_RECEIVERS</strong></dt> <dt>11008</dt> </dl></td>
+<td><dl> <dt><span id="QoS_no_receivers."></span><span id="qos_no_receivers."></span><span id="QOS_NO_RECEIVERS."></span>QoS sem receptores.</dt> <dd> Não há receptores de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_REQUEST_CONFIRMED"></span><span id="wsa_qos_request_confirmed"></span><dl> <dt><strong>WSA_QOS_REQUEST_CONFIRMED</strong></dt> <dt>11009</dt> </dl></td>
+<td><dl> <dt><span id="QoS_request_confirmed."></span><span id="qos_request_confirmed."></span><span id="QOS_REQUEST_CONFIRMED."></span>Solicitação de QoS confirmada.</dt> <dd> A solicitação de reserva de QoS foi confirmada.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_ADMISSION_FAILURE"></span><span id="wsa_qos_admission_failure"></span><dl> <dt><strong>WSA_QOS_ADMISSION_FAILURE</strong></dt> <dt>11010</dt> </dl></td>
+<td><dl> <dt><span id="QoS_admission_error."></span><span id="qos_admission_error."></span><span id="QOS_ADMISSION_ERROR."></span>Erro de admissão de QoS.</dt> <dd> Ocorreu um erro de QoS devido à falta de recursos.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_POLICY_FAILURE"></span><span id="wsa_qos_policy_failure"></span><dl> <dt><strong>WSA_QOS_POLICY_FAILURE</strong></dt> <dt>11011</dt> </dl></td>
+<td><dl> <dt><span id="QoS_policy_failure."></span><span id="qos_policy_failure."></span><span id="QOS_POLICY_FAILURE."></span>Falha na política de QoS.</dt> <dd> A solicitação de QoS foi rejeitada porque o sistema de política não pôde alocar o recurso solicitado na política existente. <br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_BAD_STYLE"></span><span id="wsa_qos_bad_style"></span><dl> <dt><strong>WSA_QOS_BAD_STYLE</strong></dt> <dt>11012</dt> </dl></td>
+<td><dl> <dt><span id="QoS_bad_style."></span><span id="qos_bad_style."></span><span id="QOS_BAD_STYLE."></span>Estilo inadequado de QoS.</dt> <dd> Um estilo de QoS desconhecido ou conflitante foi encontrado.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_BAD_OBJECT"></span><span id="wsa_qos_bad_object"></span><dl> <dt><strong>WSA_QOS_BAD_OBJECT</strong></dt> <dt>11013</dt> </dl></td>
+<td><dl> <dt><span id="QoS_bad_object."></span><span id="qos_bad_object."></span><span id="QOS_BAD_OBJECT."></span>Objeto de QoS insatisfatório.</dt> <dd> Foi encontrado um problema com alguma parte do filterspec ou do buffer específico do provedor em geral.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_TRAFFIC_CTRL_ERROR"></span><span id="wsa_qos_traffic_ctrl_error"></span><dl> <dt><strong>WSA_QOS_TRAFFIC_CTRL_ERROR</strong></dt> <dt>11014</dt> </dl></td>
+<td><dl> <dt><span id="QoS_traffic_control_error."></span><span id="qos_traffic_control_error."></span><span id="QOS_TRAFFIC_CONTROL_ERROR."></span>Erro de controle de tráfego de QoS.</dt> <dd> Um erro com a API de TC (controle de tráfego subjacente) como a solicitação de QoS genérica foi convertido para a imposição local pela API de TC. Isso pode ser devido a um erro de falta de memória ou a um erro do provedor de QoS interno. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_GENERIC_ERROR"></span><span id="wsa_qos_generic_error"></span><dl> <dt><strong>WSA_QOS_GENERIC_ERROR</strong></dt> <dt>11015</dt> </dl></td>
+<td><dl> <dt><span id="QoS_generic_error."></span><span id="qos_generic_error."></span><span id="QOS_GENERIC_ERROR."></span>Erro genérico de QoS.</dt> <dd> Um erro de QoS geral.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_ESERVICETYPE"></span><span id="wsa_qos_eservicetype"></span><dl> <dt><strong>WSA_QOS_ESERVICETYPE</strong></dt> <dt>11016</dt> </dl></td>
+<td><dl> <dt><span id="QoS_service_type_error."></span><span id="qos_service_type_error."></span><span id="QOS_SERVICE_TYPE_ERROR."></span>Erro de tipo de serviço QoS.</dt> <dd> Um tipo de serviço inválido ou não reconhecido foi encontrado no FLOWSPEC de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EFLOWSPEC"></span><span id="wsa_qos_eflowspec"></span><dl> <dt><strong>WSA_QOS_EFLOWSPEC</strong></dt> <dt>11017</dt> </dl></td>
+<td><dl> <dt><span id="QoS_flowspec_error."></span><span id="qos_flowspec_error."></span><span id="QOS_FLOWSPEC_ERROR."></span>Erro de FLOWSPEC de QoS.</dt> <dd> Um FLOWSPEC inválido ou inconsistente foi encontrado na estrutura de <a href="/windows/win32/api/winsock2/ns-winsock2-qos"><strong>QoS</strong></a> .<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EPROVSPECBUF"></span><span id="wsa_qos_eprovspecbuf"></span><dl> <dt><strong>WSA_QOS_EPROVSPECBUF</strong></dt> <dt>11018</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_provider_buffer."></span><span id="invalid_qos_provider_buffer."></span><span id="INVALID_QOS_PROVIDER_BUFFER."></span>Buffer do provedor de QoS inválido.</dt> <dd> Um buffer específico do provedor de QoS inválido.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EFILTERSTYLE"></span><span id="wsa_qos_efilterstyle"></span><dl> <dt><strong>WSA_QOS_EFILTERSTYLE</strong></dt> <dt>11019</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_filter_style."></span><span id="invalid_qos_filter_style."></span><span id="INVALID_QOS_FILTER_STYLE."></span>Estilo de filtro QoS inválido.</dt> <dd> Um estilo de filtro QoS inválido foi usado.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EFILTERTYPE"></span><span id="wsa_qos_efiltertype"></span><dl> <dt><strong>WSA_QOS_EFILTERTYPE</strong></dt> <dt>11020</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_filter_type."></span><span id="invalid_qos_filter_type."></span><span id="INVALID_QOS_FILTER_TYPE."></span>Tipo de filtro QoS inválido.</dt> <dd> Foi usado um tipo de filtro QoS inválido.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EFILTERCOUNT"></span><span id="wsa_qos_efiltercount"></span><dl> <dt><strong>WSA_QOS_EFILTERCOUNT</strong></dt> <dt>11021</dt> </dl></td>
+<td><dl> <dt><span id="Incorrect_QoS_filter_count."></span><span id="incorrect_qos_filter_count."></span><span id="INCORRECT_QOS_FILTER_COUNT."></span>Contagem incorreta de filtro de QoS.</dt> <dd> Um número incorreto de FILTERSPECs de QoS foi especificado no FLOWDESCRIPTOR.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EOBJLENGTH"></span><span id="wsa_qos_eobjlength"></span><dl> <dt><strong>WSA_QOS_EOBJLENGTH</strong></dt> <dt>11022</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_object_length."></span><span id="invalid_qos_object_length."></span><span id="INVALID_QOS_OBJECT_LENGTH."></span>Comprimento de objeto QoS inválido.</dt> <dd> Um objeto com um campo ObjectLength inválido foi especificado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EFLOWCOUNT"></span><span id="wsa_qos_eflowcount"></span><dl> <dt><strong>WSA_QOS_EFLOWCOUNT</strong></dt> <dt>11023</dt> </dl></td>
+<td><dl> <dt><span id="Incorrect_QoS_flow_count."></span><span id="incorrect_qos_flow_count."></span><span id="INCORRECT_QOS_FLOW_COUNT."></span>Contagem de fluxo de QoS incorreta.</dt> <dd> Um número incorreto de descritores de fluxo foi especificado na estrutura de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EUNKOWNPSOBJ"></span><span id="wsa_qos_eunkownpsobj"></span><dl> <dt><strong>WSA_QOS_EUNKOWNPSOBJ</strong></dt> <dt>11024</dt> </dl></td>
+<td><dl> <dt><span id="Unrecognized_QoS_object."></span><span id="unrecognized_qos_object."></span><span id="UNRECOGNIZED_QOS_OBJECT."></span>Objeto QoS não reconhecido.</dt> <dd> Um objeto não reconhecido foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EPOLICYOBJ"></span><span id="wsa_qos_epolicyobj"></span><dl> <dt><strong>WSA_QOS_EPOLICYOBJ</strong></dt> <dt>11025</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_policy_object."></span><span id="invalid_qos_policy_object."></span><span id="INVALID_QOS_POLICY_OBJECT."></span>Objeto de política de QoS inválido.</dt> <dd> Um objeto de política inválido foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EFLOWDESC"></span><span id="wsa_qos_eflowdesc"></span><dl> <dt><strong>WSA_QOS_EFLOWDESC</strong></dt> <dt>11026</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_flow_descriptor."></span><span id="invalid_qos_flow_descriptor."></span><span id="INVALID_QOS_FLOW_DESCRIPTOR."></span>Descritor de fluxo de QoS inválido.</dt> <dd> Foi encontrado um descritor de fluxo QoS inválido na lista de descritores de fluxo.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_EPSFLOWSPEC"></span><span id="wsa_qos_epsflowspec"></span><dl> <dt><strong>WSA_QOS_EPSFLOWSPEC</strong></dt> <dt>11027</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_provider-specific_flowspec."></span><span id="invalid_qos_provider-specific_flowspec."></span><span id="INVALID_QOS_PROVIDER-SPECIFIC_FLOWSPEC."></span>FLOWSPEC específico do provedor de QoS inválido.</dt> <dd> Um FLOWSPEC inválido ou inconsistente foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_EPSFILTERSPEC"></span><span id="wsa_qos_epsfilterspec"></span><dl> <dt><strong>WSA_QOS_EPSFILTERSPEC</strong></dt> <dt>11028</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_provider-specific_filterspec."></span><span id="invalid_qos_provider-specific_filterspec."></span><span id="INVALID_QOS_PROVIDER-SPECIFIC_FILTERSPEC."></span>Filterspec específico do provedor de QoS inválido.</dt> <dd> Um FILTERSPEC inválido foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_ESDMODEOBJ"></span><span id="wsa_qos_esdmodeobj"></span><dl> <dt><strong>WSA_QOS_ESDMODEOBJ</strong></dt> <dt>11029</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_shape_discard_mode_object."></span><span id="invalid_qos_shape_discard_mode_object."></span><span id="INVALID_QOS_SHAPE_DISCARD_MODE_OBJECT."></span>Objeto de modo de descarte de forma QoS inválido.</dt> <dd> Um objeto de modo de descarte de forma inválido foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><span id="WSA_QOS_ESHAPERATEOBJ"></span><span id="wsa_qos_eshaperateobj"></span><dl> <dt><strong>WSA_QOS_ESHAPERATEOBJ</strong></dt> <dt>11030</dt> </dl></td>
+<td><dl> <dt><span id="Invalid_QoS_shaping_rate_object."></span><span id="invalid_qos_shaping_rate_object."></span><span id="INVALID_QOS_SHAPING_RATE_OBJECT."></span>Objeto de taxa de modelagem QoS inválido.</dt> <dd> Um objeto de taxa de formatação inválido foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><span id="WSA_QOS_RESERVED_PETYPE"></span><span id="wsa_qos_reserved_petype"></span><dl> <dt><strong>WSA_QOS_RESERVED_PETYPE</strong></dt> <dt>11031</dt> </dl></td>
+<td><dl> <dt><span id="Reserved_policy_QoS_element_type."></span><span id="reserved_policy_qos_element_type."></span><span id="RESERVED_POLICY_QOS_ELEMENT_TYPE."></span>Tipo de elemento de QoS de política reservada.</dt> <dd> Um elemento de política reservado foi encontrado no buffer específico do provedor de QoS.<br/> </dd> </dl></td>
+</tr>
+</tbody>
+</table>
+
+
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| parâmetro<br/> | <dl> <dt>Winsock2. h; </dt> <dt>Winerror. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[Códigos de erro-errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
+</dt> <dt>
+
+[Manipulando erros do Winsock](handling-winsock-errors.md)
+</dt> <dt>
+
+[**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage)
+</dt> <dt>
+
+[**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror)
+</dt> </dl>
+
+ 
+
+ 
