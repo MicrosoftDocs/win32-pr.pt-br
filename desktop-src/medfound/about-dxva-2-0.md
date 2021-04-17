@@ -1,0 +1,74 @@
+---
+description: Visão geral do DXVA 2 e sua relação com o DXVA 1.
+ms.assetid: 190ed399-a8a8-4087-8d18-b1a715690e4c
+title: Sobre o DXVA 2,0
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 149f622c863f433be44bbce6460024ffb06bb1b2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105751604"
+---
+# <a name="about-dxva-20"></a><span data-ttu-id="ac823-103">Sobre o DXVA 2,0</span><span class="sxs-lookup"><span data-stu-id="ac823-103">About DXVA 2.0</span></span>
+
+<span data-ttu-id="ac823-104">A DXVA (aceleração de vídeo do DirectX) é uma API e uma DDI correspondente para usar a aceleração de hardware para acelerar o processamento de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ac823-104">DirectX Video Acceleration (DXVA) is an API and a corresponding DDI for using hardware acceleration to speed up video processing.</span></span> <span data-ttu-id="ac823-105">Os codecs de software e os processadores de vídeo de software podem usar o DXVA para descarregar determinadas operações com uso intensivo de CPU para a GPU.</span><span class="sxs-lookup"><span data-stu-id="ac823-105">Software codecs and software video processors can use DXVA to offload certain CPU-intensive operations to the GPU.</span></span> <span data-ttu-id="ac823-106">Por exemplo, um decodificador de software pode descarregar a transformação de cosseno discreto inverso (iDCT) para a GPU.</span><span class="sxs-lookup"><span data-stu-id="ac823-106">For example, a software decoder can offload the inverse discrete cosine transform (iDCT) to the GPU.</span></span>
+
+<span data-ttu-id="ac823-107">No DXVA, algumas operações de decodificação são implementadas pelo driver de hardware de gráficos.</span><span class="sxs-lookup"><span data-stu-id="ac823-107">In DXVA, some decoding operations are implemented by the graphics hardware driver.</span></span> <span data-ttu-id="ac823-108">Esse conjunto de funcionalidades é chamado de *acelerador*.</span><span class="sxs-lookup"><span data-stu-id="ac823-108">This set of functionality is termed the *accelerator*.</span></span> <span data-ttu-id="ac823-109">Outras operações de decodificação são implementadas pelo software de aplicativo no modo de usuário, chamado de *decodificador de host* ou *decodificador de software*.</span><span class="sxs-lookup"><span data-stu-id="ac823-109">Other decoding operations are implemented by user-mode application software, called the *host decoder* or *software decoder*.</span></span> <span data-ttu-id="ac823-110">(Os termos decodificador de *host* e *decodificador de software* são equivalentes.) O processamento executado pelo acelerador é chamado de *processamento fora do host*.</span><span class="sxs-lookup"><span data-stu-id="ac823-110">(The terms *host decoder* and *software decoder* are equivalent.) Processing performed by the accelerator is called *off-host processing*.</span></span> <span data-ttu-id="ac823-111">Normalmente, o acelerador usa a GPU para acelerar algumas operações.</span><span class="sxs-lookup"><span data-stu-id="ac823-111">Typically the accelerator uses the GPU to speed up some operations.</span></span> <span data-ttu-id="ac823-112">Sempre que o acelerador executa uma operação de decodificação, o decodificador do host deve transmitir para os buffers do acelerador que contêm as informações necessárias para executar a operação</span><span class="sxs-lookup"><span data-stu-id="ac823-112">Whenever the accelerator performs a decoding operation, the host decoder must convey to the accelerator buffers containing the information needed to perform the operation</span></span>
+
+<span data-ttu-id="ac823-113">A API DXVA 2 requer o Windows Vista ou posterior.</span><span class="sxs-lookup"><span data-stu-id="ac823-113">The DXVA 2 API requires Windows Vista or later.</span></span> <span data-ttu-id="ac823-114">A API DXVA 1 ainda tem suporte no Windows Vista para compatibilidade com versões anteriores.</span><span class="sxs-lookup"><span data-stu-id="ac823-114">The DXVA 1 API is still supported in Windows Vista for backward compatibility.</span></span> <span data-ttu-id="ac823-115">Uma camada de emulação é fornecida que converte entre qualquer versão da API e a versão oposta da DDI:</span><span class="sxs-lookup"><span data-stu-id="ac823-115">An emulation layer is provided that converts between either version of the API and the opposite version of the DDI:</span></span>
+
+-   <span data-ttu-id="ac823-116">Se o driver de gráficos estiver em conformidade com o WDDM (Windows Display Driver Model), as chamadas de API de DXVA 1 serão convertidas em chamadas de DDI de DXVA 2.</span><span class="sxs-lookup"><span data-stu-id="ac823-116">If the graphics driver conforms to the Windows Display Driver Model (WDDM), DXVA 1 API calls are converted to DXVA 2 DDI calls.</span></span>
+-   <span data-ttu-id="ac823-117">Se os drivers gráficos usarem o modelo de driver de vídeo do Windows XP mais antigo (XPDM), as chamadas à API de DXVA 2 serão convertidas em chamadas de DDI de DXVA 1.</span><span class="sxs-lookup"><span data-stu-id="ac823-117">If the graphics drivers uses the older Windows XP Display Driver Model (XPDM), DXVA 2 API calls are converted to DXVA 1 DDI calls.</span></span>
+
+<span data-ttu-id="ac823-118">A tabela a seguir mostra os requisitos do sistema operacional e os processadores de vídeo com suporte para cada versão da API de DXVA.</span><span class="sxs-lookup"><span data-stu-id="ac823-118">The following table shows the operating system requirements and the supported video renderers for each version of the DXVA API.</span></span>
+
+
+
+| <span data-ttu-id="ac823-119">Versão da API</span><span class="sxs-lookup"><span data-stu-id="ac823-119">API Version</span></span> | <span data-ttu-id="ac823-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="ac823-120">Requirements</span></span>          | <span data-ttu-id="ac823-121">Suporte ao processador de vídeo</span><span class="sxs-lookup"><span data-stu-id="ac823-121">Video Renderer Support</span></span>                        |
+|-------------|-----------------------|-----------------------------------------------|
+| <span data-ttu-id="ac823-122">DXVA 1</span><span class="sxs-lookup"><span data-stu-id="ac823-122">DXVA 1</span></span>      | <span data-ttu-id="ac823-123">Windows 2000 ou posterior</span><span class="sxs-lookup"><span data-stu-id="ac823-123">Windows 2000 or later</span></span> | <span data-ttu-id="ac823-124">Mixer de sobreposição, VMR-7, VMR-9 (somente DirectShow)</span><span class="sxs-lookup"><span data-stu-id="ac823-124">Overlay Mixer, VMR-7, VMR-9 (DirectShow only)</span></span> |
+| <span data-ttu-id="ac823-125">DXVA 2</span><span class="sxs-lookup"><span data-stu-id="ac823-125">DXVA 2</span></span>      | <span data-ttu-id="ac823-126">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="ac823-126">Windows Vista</span></span>         | <span data-ttu-id="ac823-127">EVR (DirectShow e Media Foundation)</span><span class="sxs-lookup"><span data-stu-id="ac823-127">EVR (DirectShow and Media Foundation)</span></span>         |
+
+
+
+ 
+
+<span data-ttu-id="ac823-128">No DXVA 1, o decodificador de software deve acessar a API por meio do processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ac823-128">In DXVA 1, the software decoder must access the API through the video renderer.</span></span> <span data-ttu-id="ac823-129">Não é possível usar a API DXVA 1 sem chamar o processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ac823-129">There is no way to use the DXVA 1 API without calling into the video renderer.</span></span> <span data-ttu-id="ac823-130">Essa limitação foi removida com o DXVA 2.</span><span class="sxs-lookup"><span data-stu-id="ac823-130">This limitation has been removed with DXVA 2.</span></span> <span data-ttu-id="ac823-131">Usando o DXVA 2, o decodificador de host (ou qualquer aplicativo) pode acessar a API diretamente, por meio da interface [**IDirectXVideoDecoderService**](/windows/win32/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) .</span><span class="sxs-lookup"><span data-stu-id="ac823-131">Using DXVA 2, the host decoder (or any application) can access the API directly, through the [**IDirectXVideoDecoderService**](/windows/win32/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) interface.</span></span>
+
+<span data-ttu-id="ac823-132">A documentação do DXVA 1 descreve as estruturas de decodificação usadas para os seguintes padrões de vídeo:</span><span class="sxs-lookup"><span data-stu-id="ac823-132">The DXVA 1 documentation describes the decoding structures used for the following video standards:</span></span>
+
+-   <span data-ttu-id="ac823-133">ITU-T Rec. H. 261</span><span class="sxs-lookup"><span data-stu-id="ac823-133">ITU-T Rec. H.261</span></span>
+-   <span data-ttu-id="ac823-134">ITU-T Rec. H. 263</span><span class="sxs-lookup"><span data-stu-id="ac823-134">ITU-T Rec. H.263</span></span>
+-   <span data-ttu-id="ac823-135">Vídeo MPEG-1</span><span class="sxs-lookup"><span data-stu-id="ac823-135">MPEG-1 video</span></span>
+-   <span data-ttu-id="ac823-136">Vídeo de perfil principal MPEG-2</span><span class="sxs-lookup"><span data-stu-id="ac823-136">MPEG-2 Main Profile video</span></span>
+
+<span data-ttu-id="ac823-137">As especificações a seguir definem as extensões de DXVA para outros padrões de vídeo:</span><span class="sxs-lookup"><span data-stu-id="ac823-137">The following specifications define DXVA extensions for other video standards:</span></span>
+
+-   [<span data-ttu-id="ac823-138">Especificação de DXVA para decodificação H. 264/AVC</span><span class="sxs-lookup"><span data-stu-id="ac823-138">DXVA Specification for H.264/AVC Decoding</span></span>](https://www.microsoft.com/downloads/details.aspx?FamilyID=3d1c290b-310b-4ea2-bf76-714063a6d7a6&displaylang=en)
+-   [<span data-ttu-id="ac823-139">Especificação de DXVA para o MVC (código de vídeo MultiView) de H. 264/MPEG-4 AVC, incluindo o perfil alto estéreo</span><span class="sxs-lookup"><span data-stu-id="ac823-139">DXVA Specification for H.264/MPEG-4 AVC Multiview Video Coding (MVC), Including the Stereo High Profile</span></span>](https://www.microsoft.com/download/details.aspx?id=25200)
+-   <span data-ttu-id="ac823-140">[Especificação de DXVA para MPEG-1 VLD e decodificação de vídeo combinado MPEG-1/MPEG-2 VLD](https://www.microsoft.com/download/details.aspx?id=9374).</span><span class="sxs-lookup"><span data-stu-id="ac823-140">[DXVA Specification for MPEG-1 VLD and Combined MPEG-1/MPEG-2 VLD Video Decoding](https://www.microsoft.com/download/details.aspx?id=9374).</span></span>
+-   [<span data-ttu-id="ac823-141">Especificação de DXVA para o modo de Off-Host VLD para a decodificação de vídeo MPEG-4 parte 2</span><span class="sxs-lookup"><span data-stu-id="ac823-141">DXVA Specification for Off-Host VLD Mode for MPEG-4 Part 2 Video Decoding</span></span>](https://www.microsoft.com/download/details.aspx?id=21100)
+-   [<span data-ttu-id="ac823-142">Especificação de DXVA para vídeo do Windows Media® V8, V9 e vA decodificação (incluindo SMPTE 421M "VC-1")</span><span class="sxs-lookup"><span data-stu-id="ac823-142">DXVA Specification for Windows Media Video® v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")</span></span>](https://www.microsoft.com/downloads/details.aspx?FamilyID=8792dfdb-8459-4cb7-adb4-fef30b609b31&displaylang=en)
+-   [<span data-ttu-id="ac823-143">Especificação de DXVA (DirectX Video Acceleration) para H. 264/MPEG-4 Scalable Video CODIFICATION (SVC) Off-Host decodificação do modo VLD</span><span class="sxs-lookup"><span data-stu-id="ac823-143">DirectX Video Acceleration (DXVA) Specification for H.264/MPEG-4 Scalable Video Coding (SVC) Off-Host VLD Mode Decoding</span></span>](https://www.microsoft.com/downloads/details.aspx?FamilyID=a38538b6-f52c-470b-94be-0cf7c28d46cc&displaylang=en)
+-   [<span data-ttu-id="ac823-144">Especificação de aceleração de vídeo DirectX para codificação de vídeo VP8 e VP9</span><span class="sxs-lookup"><span data-stu-id="ac823-144">DirectX Video Acceleration Specification for VP8 and VP9 Video Coding</span></span>](https://www.microsoft.com/download/details.aspx?id=49188)
+
+<span data-ttu-id="ac823-145">O DXVA 1 e o DXVA 2 usam as mesmas estruturas de dados para decodificação.</span><span class="sxs-lookup"><span data-stu-id="ac823-145">DXVA 1 and DXVA 2 use the same data structures for decoding.</span></span> <span data-ttu-id="ac823-146">No entanto, o procedimento para configurar a sessão de decodificação foi alterado.</span><span class="sxs-lookup"><span data-stu-id="ac823-146">However, the procedure for configuring the decoding session has changed.</span></span> <span data-ttu-id="ac823-147">O DXVA 1 usa um mecanismo de "investigação e bloqueio", no qual o decodificador de host pode testar várias configurações antes de definir a configuração desejada no acelerador.</span><span class="sxs-lookup"><span data-stu-id="ac823-147">DXVA 1 uses a "probe and lock" mechanism, wherein the host decoder can test various configurations before setting the desired configuration on the accelerator.</span></span> <span data-ttu-id="ac823-148">No DXVA 2, o acelerador retorna uma lista de configurações com suporte e o decodificador de host seleciona um na lista.</span><span class="sxs-lookup"><span data-stu-id="ac823-148">In DXVA 2, the accelerator returns a list of supported configurations and the host decoder selects one from the list.</span></span> <span data-ttu-id="ac823-149">Os detalhes são fornecidos nas seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="ac823-149">Details are given in the following sections:</span></span>
+
+-   [<span data-ttu-id="ac823-150">Suporte a DXVA 2,0 no DirectShow</span><span class="sxs-lookup"><span data-stu-id="ac823-150">Supporting DXVA 2.0 in DirectShow</span></span>](supporting-dxva-2-0-in-directshow.md)
+-   [<span data-ttu-id="ac823-151">Suporte a DXVA 2,0 no Media Foundation</span><span class="sxs-lookup"><span data-stu-id="ac823-151">Supporting DXVA 2.0 in Media Foundation</span></span>](supporting-dxva-2-0-in-media-foundation.md)
+
+## <a name="related-topics"></a><span data-ttu-id="ac823-152">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ac823-152">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="ac823-153">Aceleração de vídeo do DirectX 2,0</span><span class="sxs-lookup"><span data-stu-id="ac823-153">DirectX Video Acceleration 2.0</span></span>](directx-video-acceleration-2-0.md)
+</dt> <dt>
+
+[<span data-ttu-id="ac823-154">Especificação de DXVA 1,0</span><span class="sxs-lookup"><span data-stu-id="ac823-154">DXVA 1.0 specification</span></span>](/windows-hardware/drivers/display/directx-video-acceleration)
+</dt> </dl>
+
+ 
+
+ 
