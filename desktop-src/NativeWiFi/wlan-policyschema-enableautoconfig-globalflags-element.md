@@ -1,7 +1,7 @@
 ---
 description: Especifica se os computadores usam o serviço interno de configuração automática (autoconfiguração) para gerenciar conexões sem fio.
 ms.assetid: c255e0a0-65ae-44a8-95cb-1a000394109d
-title: Elemento enableAutoConfig (globalFlags) (LAN_policy)
+title: Elemento enableAutoConfig (globalFlags) (LAN_policy) para WLAN
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c03e4c2afa9e8e98c07e1bc0cdec4099d3260aab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5105b8e634aa5affa8648b763a82bbd60cbaec17
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501558"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106188039"
 ---
-# <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy)
+# <a name="enableautoconfig-globalflags-element-lan_policy-for-wlan"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy) para WLAN 
 
 O elemento **enableAutoConfig** (globalFlags) especifica se os computadores usam o serviço interno de configuração automática (AutoConfig) para gerenciar conexões sem fio. Quando **enableAutoConfig** tem um valor de false, os computadores não devem usar o autoConfig para gerenciar conexões sem fio e o serviço de configuração automática responde apenas a solicitações para habilitar o serviço. Quando **enableAutoConfig** tem um valor de true, os computadores podem usar o serviço de configuração automática.
 
