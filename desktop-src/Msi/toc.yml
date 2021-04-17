@@ -128,7 +128,7 @@
                   href: enforceupgradecomponentrules.md
                 - name: LimitSystemRestoreCheckpointing
                   href: limitsystemrestorecheckpointing.md
-                - name: Registro em log
+                - name: Log
                   href: logging.md
                 - name: MaxPatchCacheSize
                   href: maxpatchcachesize.md
@@ -1517,7 +1517,7 @@
                   href: windowsvolume.md
             - name: Valores de Propriedade do sistema operacional
               href: operating-system-property-values.md
-            - name: Desinstalar chave do registro
+            - name: Propriedades da chave de registro de desinstalação
               href: uninstall-registry-key.md
         - name: Fluxo de informações de resumo
           href: summary-information-stream.md
@@ -3397,7 +3397,7 @@
                           href: uppercase.md
                         - name: LowerCase
                           href: lowercase.md
-                        - name: Inteiro
+                        - name: Integer
                           href: integer.md
                         - name: DoubleInteger
                           href: doubleinteger.md

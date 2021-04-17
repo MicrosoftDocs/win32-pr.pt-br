@@ -1,0 +1,81 @@
+---
+description: 'Você cria um objeto de buffer de vértice chamando o método IDirect3DDevice9:: CreateVertexBuffer, que aceita cinco parâmetros.'
+ms.assetid: 95116ef5-af88-47e7-abf7-1ade9735e2a7
+title: Criando um buffer de vértice (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4ffc831ab508f14d61b8e42861f75422ff6a04bf
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105780666"
+---
+# <a name="creating-a-vertex-buffer-direct3d-9"></a>Criando um buffer de vértice (Direct3D 9)
+
+Você cria um objeto de buffer de vértice chamando o método [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) , que aceita cinco parâmetros. O primeiro parâmetro especifica o tamanho do buffer de vértice, em bytes. Use o operador sizeof para determinar o tamanho de um formato de vértice, em bytes. Considere o seguinte formato de vértice personalizado.
+
+
+```
+struct CUSTOMVERTEX {
+        FLOAT x, y, z;
+        FLOAT rhw;
+        DWORD color;
+        FLOAT tu, tv;   // Texture coordinates
+};
+
+// Custom flexible vertex format (FVF) describing the custom vertex structure
+#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1)
+```
+
+
+
+Para criar um buffer de vértice para conter quatro estruturas CUSTOMVERTEX, especifique \[ 4 \* sizeof (CustomVertex) \] para o parâmetro *Length* .
+
+O segundo parâmetro é um conjunto de controles de uso. Entre outras coisas, seu valor determina se o buffer de vértice é capaz de conter informações de recorte-na forma de sinalizadores de clipes – para vértices que existem fora da área de exibição. Para criar um buffer de vértice que não pode conter sinalizadores de clipe, inclua o \_ sinalizador D3DUSAGE DONOTCLIP para o parâmetro *Usage* . O \_ sinalizador D3DUSAGE DONOTCLIP é aplicado somente se você também indicar que o buffer de vértice conterá vértices transformados – o \_ sinalizador D3DFVF XYZRHW está incluído no parâmetro *FVF* . O método [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) ignora o sinalizador D3DUSAGE \_ DONOTCLIP se você indicar que o buffer conterá vértices não transformados (o \_ sinalizador D3DFVF XYZ). Os sinalizadores de recorte ocupam memória adicional, tornando um buffer de vértice com capacidade de recorte ligeiramente maior do que um buffer de vértice incapaz de conter sinalizadores de recorte. Como esses recursos são alocados quando o buffer de vértice é criado, você deve solicitar um buffer de vértice com capacidade de recorte antes do tempo.
+
+O terceiro parâmetro, *FVF*, é uma combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice do buffer de vértice. Se você especificar 0 para esse parâmetro, o buffer de vértice será um buffer de vértice não FVF. Para obter mais informações, consulte [buffers de vértices do FVF (Direct3D 9)](fvf-vertex-buffers.md). O quarto parâmetro descreve a classe de memória na qual posicionar o buffer de vértice.
+
+O parâmetro final que [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) aceita é o endereço de uma variável que será preenchida com um ponteiro para a nova interface [**IDirect3DVertexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) do objeto de buffer de vértice, se a chamada for realizada com sucesso.
+
+Você não pode produzir sinalizadores de clipe para um buffer de vértice que foi criado sem suporte para eles.
+
+O exemplo de código C++ a seguir mostra como a criação de um buffer de vértice pode ser semelhante ao código.
+
+
+```
+   
+// d3dDevice contains the address of an IDirect3DDevice9 interface
+// g_pVB is a variable of type LPDIRECT3DVERTEXBUFFER9 
+
+// The custom vertex type
+struct CUSTOMVERTEX {
+    FLOAT x, y, z;
+    FLOAT rhw;
+    DWORD color;
+    FLOAT tu, tv;   // The texture coordinates
+};
+
+#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1)
+
+// Create a clipping-capable vertex buffer. Allocate enough memory 
+// in the default memory pool to hold three CUSTOMVERTEX 
+// structures
+
+    if( FAILED( d3dDevice->CreateVertexBuffer( 3*sizeof(CUSTOMVERTEX),
+            0 /*Usage*/, D3DFVF_CUSTOMVERTEX, D3DPOOL_DEFAULT, &g_pVB, NULL ) ) )
+        return E_FAIL;
+```
+
+
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Buffers de vértice](vertex-buffers.md)
+</dt> </dl>
+
+ 
+
+ 
