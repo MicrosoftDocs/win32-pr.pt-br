@@ -1,6 +1,6 @@
 ---
-title: 'Função SampleBias:: SampleBias (S, float, float, float)'
-description: 'Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para. | Função SampleBias:: SampleBias (S, float, float, float)'
+title: 'Função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray'
+description: 'A função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap.'
 ms.assetid: 6683F115-4F81-4C24-B735-67DB4B52455B
 keywords:
 - HLSL da função SampleBias
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d95a1b0341e61853a20d313a04d1cde64dde66d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0c57eec224ca92b2584ba7262488530ea7080939
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104091911"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187807"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloat-function"></a><span data-ttu-id="2045c-105">Função SampleBias:: SampleBias (S, float, float, float)</span><span class="sxs-lookup"><span data-stu-id="2045c-105">SampleBias::SampleBias(S,float,float,float) function</span></span>
+# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecubearray"></a><span data-ttu-id="c6e7b-104">Função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray</span><span class="sxs-lookup"><span data-stu-id="c6e7b-104">SampleBias::SampleBias(S,float,float,float) function for TextureCubeArray</span></span>
 
-<span data-ttu-id="2045c-106">Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para.</span><span class="sxs-lookup"><span data-stu-id="2045c-106">Samples a texture, after applying the bias value to the mipmap level, with an optional value to clamp sample level-of-detail (LOD) values to.</span></span>
+<span data-ttu-id="c6e7b-105">Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-105">Samples a texture, after applying the bias value to the mipmap level, with an optional value to clamp sample level-of-detail (LOD) values to.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2045c-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="2045c-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c6e7b-106">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c6e7b-106">Syntax</span></span>
 
 
 ``` syntax
@@ -38,34 +38,34 @@ DXGI_FORMAT SampleBias(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="2045c-108">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="2045c-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c6e7b-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c6e7b-107">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="2045c-109">*S* \[ em\]</span><span class="sxs-lookup"><span data-stu-id="2045c-109">*S* \[in\]</span></span>
+<span data-ttu-id="c6e7b-108">*S* \[ em\]</span><span class="sxs-lookup"><span data-stu-id="c6e7b-108">*S* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2045c-110">Tipo: **samplestate**</span><span class="sxs-lookup"><span data-stu-id="2045c-110">Type: **SamplerState**</span></span>
+<span data-ttu-id="c6e7b-109">Tipo: **samplestate**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-109">Type: **SamplerState**</span></span>
 
-<span data-ttu-id="2045c-111">Um [estado de amostra](dx-graphics-hlsl-sampler.md).</span><span class="sxs-lookup"><span data-stu-id="2045c-111">A [Sampler state](dx-graphics-hlsl-sampler.md).</span></span> <span data-ttu-id="2045c-112">Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.</span><span class="sxs-lookup"><span data-stu-id="2045c-112">This is an object declared in an effect file that contains state assignments.</span></span>
+<span data-ttu-id="c6e7b-110">Um [estado de amostra](dx-graphics-hlsl-sampler.md).</span><span class="sxs-lookup"><span data-stu-id="c6e7b-110">A [Sampler state](dx-graphics-hlsl-sampler.md).</span></span> <span data-ttu-id="c6e7b-111">Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-111">This is an object declared in an effect file that contains state assignments.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2045c-113">*Local* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="2045c-113">*Location* \[in\]</span></span>
+<span data-ttu-id="c6e7b-112">*Local* \[ do no\]</span><span class="sxs-lookup"><span data-stu-id="c6e7b-112">*Location* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2045c-114">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="2045c-114">Type: **float**</span></span>
+<span data-ttu-id="c6e7b-113">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-113">Type: **float**</span></span>
 
-<span data-ttu-id="2045c-115">As coordenadas de textura.</span><span class="sxs-lookup"><span data-stu-id="2045c-115">The texture coordinates.</span></span> <span data-ttu-id="2045c-116">O tipo de argumento é dependente do tipo de objeto Texture.</span><span class="sxs-lookup"><span data-stu-id="2045c-116">The argument type is dependent on the texture-object type.</span></span>
+<span data-ttu-id="c6e7b-114">As coordenadas de textura.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-114">The texture coordinates.</span></span> <span data-ttu-id="c6e7b-115">O tipo de argumento é dependente do tipo de objeto Texture.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-115">The argument type is dependent on the texture-object type.</span></span>
 
 
 
-| <span data-ttu-id="2045c-117">Tipo de Texture-Object</span><span class="sxs-lookup"><span data-stu-id="2045c-117">Texture-Object Type</span></span>                    | <span data-ttu-id="2045c-118">Tipo de parâmetro</span><span class="sxs-lookup"><span data-stu-id="2045c-118">Parameter Type</span></span> |
+| <span data-ttu-id="c6e7b-116">Tipo de Texture-Object</span><span class="sxs-lookup"><span data-stu-id="c6e7b-116">Texture-Object Type</span></span>                    | <span data-ttu-id="c6e7b-117">Tipo de parâmetro</span><span class="sxs-lookup"><span data-stu-id="c6e7b-117">Parameter Type</span></span> |
 |----------------------------------------|----------------|
-| <span data-ttu-id="2045c-119">Texture1D</span><span class="sxs-lookup"><span data-stu-id="2045c-119">Texture1D</span></span>                              | <span data-ttu-id="2045c-120">FLOAT</span><span class="sxs-lookup"><span data-stu-id="2045c-120">float</span></span>          |
-| <span data-ttu-id="2045c-121">Texture1DArray, Texture2D</span><span class="sxs-lookup"><span data-stu-id="2045c-121">Texture1DArray, Texture2D</span></span>              | <span data-ttu-id="2045c-122">float2</span><span class="sxs-lookup"><span data-stu-id="2045c-122">float2</span></span>         |
-| <span data-ttu-id="2045c-123">Texture2DArray, Texture3D, TextureCube</span><span class="sxs-lookup"><span data-stu-id="2045c-123">Texture2DArray, Texture3D, TextureCube</span></span> | <span data-ttu-id="2045c-124">float3</span><span class="sxs-lookup"><span data-stu-id="2045c-124">float3</span></span>         |
-| <span data-ttu-id="2045c-125">TextureCubeArray</span><span class="sxs-lookup"><span data-stu-id="2045c-125">TextureCubeArray</span></span>                       | <span data-ttu-id="2045c-126">float4</span><span class="sxs-lookup"><span data-stu-id="2045c-126">float4</span></span>         |
+| <span data-ttu-id="c6e7b-118">Texture1D</span><span class="sxs-lookup"><span data-stu-id="c6e7b-118">Texture1D</span></span>                              | <span data-ttu-id="c6e7b-119">FLOAT</span><span class="sxs-lookup"><span data-stu-id="c6e7b-119">float</span></span>          |
+| <span data-ttu-id="c6e7b-120">Texture1DArray, Texture2D</span><span class="sxs-lookup"><span data-stu-id="c6e7b-120">Texture1DArray, Texture2D</span></span>              | <span data-ttu-id="c6e7b-121">float2</span><span class="sxs-lookup"><span data-stu-id="c6e7b-121">float2</span></span>         |
+| <span data-ttu-id="c6e7b-122">Texture2DArray, Texture3D, TextureCube</span><span class="sxs-lookup"><span data-stu-id="c6e7b-122">Texture2DArray, Texture3D, TextureCube</span></span> | <span data-ttu-id="c6e7b-123">float3</span><span class="sxs-lookup"><span data-stu-id="c6e7b-123">float3</span></span>         |
+| <span data-ttu-id="c6e7b-124">TextureCubeArray</span><span class="sxs-lookup"><span data-stu-id="c6e7b-124">TextureCubeArray</span></span>                       | <span data-ttu-id="c6e7b-125">float4</span><span class="sxs-lookup"><span data-stu-id="c6e7b-125">float4</span></span>         |
 
 
 
@@ -73,38 +73,38 @@ DXGI_FORMAT SampleBias(
 
 </dd> <dt>
 
-<span data-ttu-id="2045c-127">*Tendência* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2045c-127">*Bias* \[in\]</span></span>
+<span data-ttu-id="c6e7b-126">*Tendência* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="c6e7b-126">*Bias* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2045c-128">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="2045c-128">Type: **float**</span></span>
+<span data-ttu-id="c6e7b-127">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-127">Type: **float**</span></span>
 
-<span data-ttu-id="2045c-129">O valor de tendência, que é um número de ponto flutuante entre 0,0 e 1,0, inclusive, é aplicado a um nível de MIP antes da amostragem.</span><span class="sxs-lookup"><span data-stu-id="2045c-129">The bias value, which is a floating-point number between 0.0 and 1.0 inclusive, is applied to a mip level before sampling.</span></span>
+<span data-ttu-id="c6e7b-128">O valor de tendência, que é um número de ponto flutuante entre 0,0 e 1,0, inclusive, é aplicado a um nível de MIP antes da amostragem.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-128">The bias value, which is a floating-point number between 0.0 and 1.0 inclusive, is applied to a mip level before sampling.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="2045c-130">*Fixe* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="2045c-130">*Clamp* \[in\]</span></span>
+<span data-ttu-id="c6e7b-129">*Fixe* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="c6e7b-129">*Clamp* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="2045c-131">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="2045c-131">Type: **float**</span></span>
+<span data-ttu-id="c6e7b-130">Tipo: **float**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-130">Type: **float**</span></span>
 
-<span data-ttu-id="2045c-132">Um valor opcional para fixe os valores de LOD de exemplo para.</span><span class="sxs-lookup"><span data-stu-id="2045c-132">An optional value to clamp sample LOD values to.</span></span> <span data-ttu-id="2045c-133">Por exemplo, se você passar 2.0 f para o valor fixe, certifique-se de que nenhum exemplo individual acessa um nível de MIP menor que 2,0 f.</span><span class="sxs-lookup"><span data-stu-id="2045c-133">For example, if you pass 2.0f for the clamp value, you ensure that no individual sample accesses a mip level less than 2.0f.</span></span>
+<span data-ttu-id="c6e7b-131">Um valor opcional para fixe os valores de LOD de exemplo para.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-131">An optional value to clamp sample LOD values to.</span></span> <span data-ttu-id="c6e7b-132">Por exemplo, se você passar 2.0 f para o valor fixe, certifique-se de que nenhum exemplo individual acessa um nível de MIP menor que 2,0 f.</span><span class="sxs-lookup"><span data-stu-id="c6e7b-132">For example, if you pass 2.0f for the clamp value, you ensure that no individual sample accesses a mip level less than 2.0f.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="2045c-134">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="2045c-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c6e7b-133">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="c6e7b-133">Return value</span></span>
 
-<span data-ttu-id="2045c-135">Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**</span><span class="sxs-lookup"><span data-stu-id="2045c-135">Type: **[**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**</span></span>
+<span data-ttu-id="c6e7b-134">Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-134">Type: **[**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**</span></span>
 
-<span data-ttu-id="2045c-136">O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).</span><span class="sxs-lookup"><span data-stu-id="2045c-136">The texture format, which is one of the typed values listed in [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).</span></span>
+<span data-ttu-id="c6e7b-135">O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).</span><span class="sxs-lookup"><span data-stu-id="c6e7b-135">The texture format, which is one of the typed values listed in [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2045c-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="2045c-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c6e7b-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="c6e7b-136">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="2045c-138">Métodos SampleBias</span><span class="sxs-lookup"><span data-stu-id="2045c-138">SampleBias methods</span></span>](texturecubearray-samplebias.md)
+[<span data-ttu-id="c6e7b-137">Métodos SampleBias</span><span class="sxs-lookup"><span data-stu-id="c6e7b-137">SampleBias methods</span></span>](texturecubearray-samplebias.md)
 </dt> <dt>
 
-[<span data-ttu-id="2045c-139">**TextureCubeArray**</span><span class="sxs-lookup"><span data-stu-id="2045c-139">**TextureCubeArray**</span></span>](texturecubearray.md)
+[<span data-ttu-id="c6e7b-138">**TextureCubeArray**</span><span class="sxs-lookup"><span data-stu-id="c6e7b-138">**TextureCubeArray**</span></span>](texturecubearray.md)
 </dt> </dl>
 
  
