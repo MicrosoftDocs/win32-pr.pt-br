@@ -1,0 +1,90 @@
+---
+description: Explica as cadeias de caracteres usadas por SDDLs.
+ms.assetid: a531532f-afba-46a1-8576-90d4ff881b94
+title: Cadeias de caracteres de SID
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 8dad653f221f884fb5d96a402109d0b415d64222
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105756565"
+---
+# <a name="sid-strings"></a>Cadeias de caracteres de SID
+
+Na linguagem SDDL ( [Security Descriptor Definition Language](security-descriptor-definition-language.md) ), a [cadeia de caracteres do descritor de segurança](security-descriptor-string-format.md) usa cadeias de caracteres de Sid para os seguintes componentes de um [*descritor de segurança*](/windows/desktop/SecGloss/s-gly):
+
+-   Proprietário
+-   Grupo primário
+-   O [confiável](trustees.md) em uma ACE
+
+Uma cadeia de caracteres de Sid em uma cadeia de caracteres de descritor de segurança pode usar a representação de cadeia de caracteres padrão de um SID (s-*R* - *I* - *s* - *s* ) ou uma das constantes de cadeia de caracteres definidas em SDDL. h. Para obter mais informações sobre a notação de cadeia de caracteres SID padrão, consulte [componentes de Sid](sid-components.md).
+
+As seguintes constantes de cadeia de caracteres SID para SIDs conhecidas são definidas em SDDL. h. Para obter informações sobre as [*IDs relativas*](/windows/desktop/SecGloss/r-gly) correspondentes (RIDs), consulte [SIDs conhecidos](well-known-sids.md).
+
+
+
+| Cadeia de caracteres de SID SDDL | Constante em SDDL. h                               | Alias de conta e RID correspondente                                                                                                                                                                                                                        |
+|-----------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| UM<br/> | SDDL \_ anônimo<br/>                       | Logon anônimo. O RID correspondente é um \_ RID de logon anônimo de segurança \_ \_ .<br/>                                                                                                                                                                      |
+| AO<br/> | \_operadores de conta SDDL \_<br/>              | Operadores de conta. O RID correspondente é Ops de conta de RID de alias de domínio \_ \_ \_ \_ .<br/>                                                                                                                                                                   |
+| AU<br/> | \_usuários autenticados \_ SDDL<br/>            | Usuários autenticados. O RID correspondente é o \_ usuário autenticado de segurança \_ \_ RID.<br/>                                                                                                                                                               |
+| BA<br/> | \_Administradores internos de SDDL \_<br/>         | Administradores internos. O RID correspondente é \_ Admins RID do alias de domínio \_ \_ .<br/>                                                                                                                                                                   |
+| BG<br/> | \_convidados internos de SDDL \_<br/>                 | Convidados internos. O RID correspondente é um domínio RID de convidados do alias de domínios \_ \_ \_ .<br/>                                                                                                                                                                           |
+| Bo<br/> | \_operadores de backup SDDL \_<br/>               | Operadores de backup. O RID correspondente é o \_ backup do RID do alias de domínio \_ \_ \_ Ops.<br/>                                                                                                                                                                     |
+| UNIDADES<br/> | \_usuários internos de SDDL \_<br/>                  | Usuários internos. O RID correspondente é \_ usuário RID do alias de domínio \_ \_ .<br/>                                                                                                                                                                             |
+| AC<br/> | \_Administradores do \_ serv \_ CERT do SDDL<br/>      | Publicadores de certificado. O RID correspondente é \_ Administradores de \_ certificado RID do grupo de domínio \_ \_ .<br/>                                                                                                                                                              |
+| CD<br/> | \_ \_ acesso DCOM de CERTSVC de SDDL \_<br/>           | Usuários que podem se conectar a autoridades de certificação usando o Distributed Component Object Model (DCOM). O RID correspondente é o \_ \_ grupo de \_ \_ \_ acesso \_ do RID de domínio<br/>                                                                  |
+| CG<br/> | \_Grupo criador de SDDL \_<br/>                  | Grupo criador. O RID correspondente é o \_ grupo de criadores de segurança \_ \_ RID.<br/>                                                                                                                                                                          |
+| COLABORA<br/> | \_proprietário do criador de SDDL \_<br/>                  | Proprietário do criador. O RID correspondente é RID do proprietário do criador de segurança \_ \_ \_ .<br/>                                                                                                                                                                          |
+| AUDITORIA<br/> | \_Administradores de domínio SDDL \_<br/>          | Administradores de domínio. O RID correspondente é administradores de RID do grupo de domínio \_ \_ \_ .<br/>                                                                                                                                                                     |
+| ORIGEM<br/> | \_computadores de domínio SDDL \_<br/>               | Computadores de domínio. O RID correspondente é o grupo de domínio de \_ \_ \_ computadores RID.<br/>                                                                                                                                                                       |
+| YYYY<br/> | \_controladores de \_ domínio de domínio SDDL \_<br/>     | Controladores de domínio. O RID correspondente é \_ controladores RID do grupo de domínio \_ \_ .<br/>                                                                                                                                                                   |
+| DG<br/> | \_convidados do domínio SDDL \_<br/>                  | Convidados do domínio. O RID correspondente é o \_ grupo de domínio \_ convidados de RID \_ .<br/>                                                                                                                                                                             |
+| DU<br/> | \_usuários de domínio SDDL \_<br/>                   | Usuários de domínio. O RID correspondente é o \_ grupo de domínio \_ \_ usuários RID.<br/>                                                                                                                                                                               |
+| EUM<br/> | \_administradores corporativos SDDL \_<br/>              | Administradores corporativos. O RID correspondente é DOMAIN \_ Group \_ RID \_ Enterprise \_ Admins.<br/>                                                                                                                                                     |
+| COMANDOS<br/> | \_controladores de \_ domínio da empresa SDDL \_<br/> | Controladores de domínio corporativos. O RID correspondente é o \_ RID de logon do servidor de segurança \_ \_ .<br/>                                                                                                                                                           |
+| SIGNIFICATIVAS<br/> | ML de SDDL \_ \_ alto<br/>                        | Nível de alta integridade. O RID correspondente é um \_ alto RID obrigatório de segurança \_ \_ .<br/>                                                                                                                                                                  |
+| IU<br/> | SDDL \_ interativo<br/>                     | Usuário conectado interativamente. Esse é um identificador de grupo adicionado ao token de um processo quando ele foi conectado interativamente. O tipo de logon correspondente é LOGON32 \_ logon \_ interativo. O RID correspondente é \_ RID interativo de segurança \_ .<br/> |
+| LA<br/> | \_administrador local de SDDL \_<br/>                    | Administrador local. O RID correspondente é administrador de RID do usuário do domínio \_ \_ \_ .<br/>                                                                                                                                                                         |
+| LG<br/> | \_convidado local de SDDL \_<br/>                    | Convidado local. O RID correspondente é convidado de usuário de domínio \_ \_ RID \_ .<br/>                                                                                                                                                                                 |
+| LS<br/> | \_serviço local \_ SDDL<br/>                  | Conta de serviço local. O RID correspondente é o \_ serviço local de segurança \_ \_ RID.<br/>                                                                                                                                                                  |
+| "LW"<br/> | o ml de SDDL é \_ \_ baixo<br/>                         | Nível de baixa integridade. O RID correspondente é um \_ Low RID obrigatório de segurança \_ \_ .<br/>                                                                                                                                                                    |
+| Vou<br/> | \_MLMEDIUM SDDL<br/>                        | Nível de integridade médio. O RID correspondente é um \_ RID médio obrigatório de segurança \_ \_ .<br/>                                                                                                                                                              |
+| "MU"<br/> | \_usuários de Perfmon do SDDL \_<br/>                  | Usuários do monitor de desempenho.<br/>                                                                                                                                                                                                                      |
+| FOI<br/> | \_operações de \_ configuração de rede SDDL \_<br/>     | Operadores de configuração de rede. O RID correspondente é as \_ operações de configuração de rede de RID de alias de domínio \_ \_ \_ \_ .<br/>                                                                                                                                      |
+| NS<br/> | \_serviço de rede SDDL \_<br/>                | Conta de serviço de rede. O RID correspondente é o \_ serviço de rede de segurança \_ \_ RID.<br/>                                                                                                                                                              |
+| NÚ<br/> | \_rede SDDL<br/>                         | Usuário de logon de rede. Esse é um identificador de grupo adicionado ao token de um processo quando ele foi conectado em uma rede. O tipo de logon correspondente é \_ rede de logon do LOGON32 \_ . O RID correspondente é RID de rede de segurança \_ \_ .<br/>                |
+| PA<br/> | \_Administradores de \_ diretiva de grupo SDDL \_<br/>           | Política de Grupo administradores. O RID correspondente é administradores de política de RID do grupo de domínio \_ \_ \_ \_ .<br/>                                                                                                                                                       |
+| PC<br/> | \_operadores de impressora SDDL \_<br/>              | Operadores de impressora. O RID correspondente é de \_ impressão RID de alias de domínio \_ \_ \_ .<br/>                                                                                                                                                                     |
+| PROFISSIONAIS<br/> | SDDL \_ pessoal \_ próprio<br/>                  | Próprio principal. O RID correspondente é o \_ próprio RID de entidade de segurança \_ \_ .<br/>                                                                                                                                                                        |
+| EX<br/> | \_usuários avançados de SDDL \_<br/>                    | Usuários avançados. O RID correspondente é usuário de RID do alias de domínio \_ \_ \_ \_ .<br/>                                                                                                                                                                         |
+| RC<br/> | \_código restrito de SDDL \_<br/>                | Código restrito. Esse é um token restrito criado usando a função [**CreateRestrictedToken**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) . O RID correspondente é \_ RID de código restrito de segurança \_ \_ .<br/>                                                        |
+| ÁREA<br/> | \_área de \_ trabalho remota SDDL<br/>                 | Usuários do Terminal Server. O RID correspondente é o \_ alias de domínio \_ RID \_ \_ usuários da área de trabalho remota \_ .<br/>                                                                                                                                                     |
+| OUTRA<br/> | \_replicador SDDL<br/>                      | Replicador. O RID correspondente é o \_ replicador RID do alias de domínio \_ \_ .<br/>                                                                                                                                                                            |
+| Lin<br/> | SDDL \_ Enterprise \_ ro \_ DCS<br/>             | Controladores de domínio somente leitura corporativos. O RID correspondente é o \_ grupo de domínio \_ RID \_ Enterprise \_ ReadOnly \_ Domain controladores de domínio \_ .<br/>                                                                                                                |
+| RS<br/> | \_Servidores RAS \_ SDDL<br/>                    | Grupo de servidores RAS. O RID correspondente é \_ Servidores RAS de domínio RID de alias \_ \_ \_ .<br/>                                                                                                                                                                   |
+| EXECUTA<br/> | \_PREW2KCOMPACC de alias SDDL \_<br/>            | Alias para conceder permissões a contas que usam aplicativos compatíveis com sistemas operacionais anteriores ao Windows 2000. O RID correspondente é o \_ alias de domínio \_ RID \_ PREW2KCOMPACCESS.<br/>                                                         |
+| ADMINISTRADOR<br/> | \_Administradores de esquema SDDL \_<br/>          | Administradores de esquema. O RID correspondente é \_ Administradores de \_ esquema RID do grupo de domínio \_ \_ .<br/>                                                                                                                                                             |
+| SL<br/> | \_sistema de ml SDDL \_<br/>                      | Nível de integridade do sistema. O RID correspondente é um \_ RID do sistema obrigatório de segurança \_ \_ .<br/>                                                                                                                                                              |
+| OUTROS<br/> | \_operadores de servidor SDDL \_<br/>               | Operadores de servidor. O RID correspondente é o \_ sistema RID do alias de domínio \_ \_ \_ Ops.<br/>                                                                                                                                                                     |
+| Su<br/> | \_serviço SDDL<br/>                         | Usuário de logon de serviço. Esse é um identificador de grupo adicionado ao token de um processo quando ele foi registrado como um serviço. O tipo de logon correspondente é \_ serviço de logon do LOGON32 \_ . O RID correspondente é RID do serviço de segurança \_ \_ .<br/>                       |
+| Sy<br/> | \_sistema local \_ SDDL<br/>                   | Sistema local. O RID correspondente é o \_ sistema local de segurança \_ \_ RID.<br/>                                                                                                                                                                            |
+| WD<br/> | SDDL \_ Everyone<br/>                        | Todo mundo. O RID correspondente é o \_ World \_ RID de segurança.<br/>                                                                                                                                                                                        |
+
+
+
+ 
+
+As funções [**ConvertSidToStringSid**](/windows/desktop/api/Sddl/nf-sddl-convertsidtostringsida) e [**ConvertStringSidToSid**](/windows/desktop/api/Sddl/nf-sddl-convertstringsidtosida) sempre usam a notação de cadeia de caracteres Sid padrão e não dão suporte a constantes de cadeia de caracteres SID SDDL.
+
+Para obter mais informações sobre SIDs conhecidos, consulte [SIDs conhecidos](well-known-sids.md).
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[\[MS-DTYP \] : linguagem de descrição do descritor de segurança](/openspecs/windows_protocols/ms-dtyp/4f4251cc-23b6-44b6-93ba-69688422cb06)
+</dt> </dl>
+
