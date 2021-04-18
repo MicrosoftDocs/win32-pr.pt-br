@@ -1,0 +1,58 @@
+---
+description: O funcionamento adequado dos componentes TAPI requer a configuração do ambiente de comunicação em um computador.
+ms.assetid: 3df3d974-629e-4d78-b97d-b8121b185309
+title: Inicialização TAPI
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 973d67931fb9f33751fedc638ab77021d3d3d34c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105788044"
+---
+# <a name="tapi-initialization"></a><span data-ttu-id="c1b2f-103">Inicialização TAPI</span><span class="sxs-lookup"><span data-stu-id="c1b2f-103">TAPI Initialization</span></span>
+
+<span data-ttu-id="c1b2f-104">O funcionamento adequado dos componentes TAPI requer a configuração do ambiente de comunicações em um computador da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="c1b2f-104">Proper functioning of TAPI components requires setting up the communications environment on a computer as follows:</span></span>
+
+-   <span data-ttu-id="c1b2f-105">A [instalação](installation.md) é executada quando o software ou hardware é adicionado pela primeira vez ao computador.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-105">[Installation](installation.md) is performed when software or hardware is first added to the computer.</span></span> <span data-ttu-id="c1b2f-106">Os procedimentos detalhados dependem do sistema operacional e do próprio software.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-106">Detailed procedures depend on the operating system and the software itself.</span></span>
+-   <span data-ttu-id="c1b2f-107">A [inicialização primária](primary-initialization.md) cria os objetos e os caminhos de comunicação.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-107">[Primary initialization](primary-initialization.md) creates the objects and communication paths.</span></span>
+-   <span data-ttu-id="c1b2f-108">A [negociação de versão](version-negotiation.md) garante que os componentes TAPI poderão trocar dados.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-108">[Version negotiation](version-negotiation.md) ensures that TAPI components will be able to exchange data.</span></span>
+-   <span data-ttu-id="c1b2f-109">O [inventário de recursos](resource-inventory.md) recupera informações relacionadas a dispositivos disponíveis para uso por um aplicativo TAPI.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-109">[Resource inventory](resource-inventory.md) retrieves information concerning devices available for use by a TAPI application.</span></span>
+-   <span data-ttu-id="c1b2f-110">A [notificação de eventos](event-notification.md) especifica como a TAPI e os provedores de serviço passam resultados de operação assíncrona e informações de alteração de estado para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-110">[Event notification](event-notification.md) specifies how TAPI and the service providers pass asynchronous operation results and state change information to the application.</span></span>
+
+## <a name="summary-of-related-reference-pages"></a><span data-ttu-id="c1b2f-111">Resumo das páginas de referência relacionadas</span><span class="sxs-lookup"><span data-stu-id="c1b2f-111">Summary of Related Reference Pages</span></span>
+
+
+
+| <span data-ttu-id="c1b2f-112">Funções TAPI 2. x</span><span class="sxs-lookup"><span data-stu-id="c1b2f-112">TAPI 2.x functions</span></span>                                        | <span data-ttu-id="c1b2f-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="c1b2f-113">Description</span></span>                                                                                                                       |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="c1b2f-114">**lineInitializeEx**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-114">**lineInitializeEx**</span></span>](/windows/win32/api/tapi/nf-tapi-lineinitializeexa)     | <span data-ttu-id="c1b2f-115">Configura o ambiente de telefonia, retorna o identificador do aplicativo e a contagem de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-115">Sets up the telephony environment, returns application handle and device count.</span></span>                                                   |
+| [<span data-ttu-id="c1b2f-116">**lineGetDevCaps**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-116">**lineGetDevCaps**</span></span>](/windows/win32/api/tapi/nf-tapi-linegetdevcaps)         | <span data-ttu-id="c1b2f-117">Obtém recursos do dispositivo, como a versão TAPI ou os tipos de mídia com suporte.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-117">Gets device capabilities, such as TAPI version or media types supported.</span></span>                                                          |
+| [<span data-ttu-id="c1b2f-118">**lineGetAddressCaps**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-118">**lineGetAddressCaps**</span></span>](/windows/win32/api/tapi/nf-tapi-linegetaddresscaps) | <span data-ttu-id="c1b2f-119">Obtém os recursos de endereço, como se há suporte para o parque de chamadas.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-119">Gets address capabilities, such as whether call park is supported.</span></span>                                                                |
+| [<span data-ttu-id="c1b2f-120">**lineOpen**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-120">**lineOpen**</span></span>](/windows/win32/api/tapi/nf-tapi-lineopen)                     | <span data-ttu-id="c1b2f-121">Notifica a TAPI que o aplicativo usará a linha e de que maneira.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-121">Notifies TAPI that the application will be using the line, and in what way.</span></span>                                                       |
+| [<span data-ttu-id="c1b2f-122">**lineGetMessage**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-122">**lineGetMessage**</span></span>](/windows/win32/api/tapi/nf-tapi-linegetmessage)         | <span data-ttu-id="c1b2f-123">Retorna a próxima mensagem TAPI que é enfileirada para entrega a um aplicativo que está usando o mecanismo de notificação do manipulador de eventos</span><span class="sxs-lookup"><span data-stu-id="c1b2f-123">Returns the next TAPI message that is queued for delivery to an application that is using the Event Handle notification mechanism</span></span> |
+
+
+
+ 
+
+
+
+| <span data-ttu-id="c1b2f-124">Interfaces ou métodos TAPI 3. x</span><span class="sxs-lookup"><span data-stu-id="c1b2f-124">TAPI 3.x interfaces or methods</span></span>                                                | <span data-ttu-id="c1b2f-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="c1b2f-125">Description</span></span>                                                                                                                                |
+|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="c1b2f-126">**ITTAPI:: Initialize**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-126">**ITTAPI::Initialize**</span></span>](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-initialize)                               | <span data-ttu-id="c1b2f-127">Configura o ambiente de telefonia.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-127">Sets up telephony environment.</span></span>                                                                                                             |
+| [<span data-ttu-id="c1b2f-128">**ITTAPI::EnumerateAddresses**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-128">**ITTAPI::EnumerateAddresses**</span></span>](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-enumerateaddresses)               | <span data-ttu-id="c1b2f-129">Enumera os endereços disponíveis no momento.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-129">Enumerates addresses currently available.</span></span>                                                                                                  |
+| [<span data-ttu-id="c1b2f-130">**ITTAPI:: obter \_ endereços**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-130">**ITTAPI::get\_Addresses**</span></span>](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-get_addresses)                        | <span data-ttu-id="c1b2f-131">Cria uma coleção de endereços disponíveis no momento.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-131">Creates a collection of addresses currently available.</span></span> <span data-ttu-id="c1b2f-132">Fornecido para aplicativos cliente de automação, como aqueles escritos em Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-132">Provided for Automation client applications, such as those written in Visual Basic.</span></span> |
+| [<span data-ttu-id="c1b2f-133">**Evento ITTAPIEventNotification::**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-133">**ITTAPIEventNotification::Event**</span></span>](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)       | <span data-ttu-id="c1b2f-134">Determina a resposta a uma notificação de evento assíncrono.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-134">Determines response to an asynchronous event notification.</span></span> <span data-ttu-id="c1b2f-135">Implementado pelo aplicativo, invocado pela TAPI.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-135">Implemented by the application, invoked by TAPI.</span></span>                                |
+| [<span data-ttu-id="c1b2f-136">**ITTAPI::p UT \_ EventFilter**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-136">**ITTAPI::put\_EventFilter**</span></span>](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)                    | <span data-ttu-id="c1b2f-137">Define a máscara de filtro de eventos, que notifica a TAPI quais eventos o aplicativo requer.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-137">Sets the event filter mask, which notifies TAPI which events the application requires.</span></span>                                                     |
+| [<span data-ttu-id="c1b2f-138">**ITTAPI::RegisterCallNotifications**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-138">**ITTAPI::RegisterCallNotifications**</span></span>](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registercallnotifications) | <span data-ttu-id="c1b2f-139">Instrui a TAPI a passar as sessões de entrada do aplicativo para um endereço especificado e um conjunto de tipos de mídia.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-139">Instructs TAPI to pass the application incoming sessions for a specified address and set of media types.</span></span>                                   |
+| [<span data-ttu-id="c1b2f-140">**ITMediaSupport**</span><span class="sxs-lookup"><span data-stu-id="c1b2f-140">**ITMediaSupport**</span></span>](/windows/desktop/api/tapi3if/nn-tapi3if-itmediasupport)                                      | <span data-ttu-id="c1b2f-141">Permite que um aplicativo Descubra os recursos de suporte de mídia para um endereço.</span><span class="sxs-lookup"><span data-stu-id="c1b2f-141">Allows an application to discover the media support capabilities for an address.</span></span>                                                           |
+
+
+
+ 
+
+ 
+
+ 
