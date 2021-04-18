@@ -1,0 +1,166 @@
+---
+description: Cria uma matriz de projeção ortográfica personalizada de mão esquerda.
+ms.assetid: 84175c08-5a0b-4183-afe2-8aecafd73897
+title: Função D3DXMatrixOrthoOffCenterLH (D3DX10Math. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DXMatrixOrthoOffCenterLH
+api_type:
+- LibDef
+api_location:
+- D3DX10.lib
+- D3DX10.dll
+ms.openlocfilehash: 4292f2996b4a19b71531094e5bf39bf7c213b972
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "105793995"
+---
+# <a name="d3dxmatrixorthooffcenterlh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoOffCenterLH (D3DX10Math. h)
+
+Cria uma matriz de projeção ortográfica personalizada de mão esquerda.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+D3DXMATRIX* D3DXMatrixOrthoOffCenterLH(
+  _Inout_ D3DXMATRIX *pOut,
+  _In_    FLOAT      l,
+  _In_    FLOAT      r,
+  _In_    FLOAT      b,
+  _In_    FLOAT      t,
+  _In_    FLOAT      zn,
+  _In_    FLOAT      zf
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*pout* \[ entrada, saída\]
+</dt> <dd>
+
+Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
+
+Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+
+</dd> <dt>
+
+*l* \[ em\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor x mínimo do volume de exibição.
+
+</dd> <dt>
+
+*r* \[ em\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor x máximo do volume de exibição.
+
+</dd> <dt>
+
+*b* \[ em\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor y mínimo do volume de exibição.
+
+</dd> <dt>
+
+*t* \[ em\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor y máximo do volume de exibição.
+
+</dd> <dt>
+
+*Zn* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor z mínimo do volume de exibição.
+
+</dd> <dt>
+
+*ZF* \[ no\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valor z máximo do volume de exibição.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
+
+Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+
+## <a name="remarks"></a>Comentários
+
+O [**D3DXMatrixOrthoLH**](d3d10-d3dxmatrixortholh.md) é um caso especial da função D3DXMatrixOrthoOffCenterLH. Para criar a mesma projeção usando D3DXMatrixOrthoOffCenterLH, use os seguintes valores:
+
+l =-w/2,
+
+r = w/2,
+
+b =-h/2 e
+
+t = h/2.
+
+Todos os parâmetros da função D3DXMatrixOrthoOffCenterLH são distâncias no espaço da câmera. Os parâmetros descrevem as dimensões do volume de exibição.
+
+O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixOrthoOffCenterLH pode ser usada como um parâmetro para outra função.
+
+Essa função usa a fórmula a seguir para calcular a matriz retornada.
+
+
+```
+2/(r-l)      0            0           0
+0            2/(t-b)      0           0
+0            0            1/(zf-zn)   0
+(l+r)/(l-r)  (t+b)/(b-t)  zn/(zn-zf)  1
+```
+
+
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|-----------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[Funções matemáticas](d3d10-graphics-reference-d3dx10-functions-math.md)
+</dt> </dl>
+
+ 
+
+ 
