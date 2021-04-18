@@ -1,0 +1,141 @@
+---
+description: Este tópico não é atual. Para obter informações atuais, consulte a especificação do esquema de impressão.
+ms.assetid: f1c73aed-fca4-47f6-bb98-bab40a6a9b2e
+title: Elementos ParameterDef e ParameterInit
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 64e71ed86d627072ee4b5b0ca0acb4e068ae62b6
+ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "105760517"
+---
+# <a name="parameterdef-and-parameterinit-elements"></a><span data-ttu-id="87369-104">Elementos ParameterDef e ParameterInit</span><span class="sxs-lookup"><span data-stu-id="87369-104">ParameterDef and ParameterInit Elements</span></span>
+
+<span data-ttu-id="87369-105">Este tópico não é atual.</span><span class="sxs-lookup"><span data-stu-id="87369-105">This topic is not current.</span></span> <span data-ttu-id="87369-106">Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="87369-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+
+<span data-ttu-id="87369-107">Um elemento ParameterDef é diferente de um elemento ParameterInit, pois descreve o valor que um elemento ParameterInit pode conter, enquanto um elemento ParameterInit atribui um valor ao parâmetro.</span><span class="sxs-lookup"><span data-stu-id="87369-107">A ParameterDef element differs from a ParameterInit element in that it describes the value that a ParameterInit element can contain, while a ParameterInit element assigns a value to the parameter.</span></span> <span data-ttu-id="87369-108">Um elemento ParameterDef consiste em um conjunto específico de elementos Property, que são filhos do elemento ParameterDef, que especificam o tipo de dados, o máximo, o mínimo, os valores padrão para os dados e outras informações.</span><span class="sxs-lookup"><span data-stu-id="87369-108">A ParameterDef element consists of a specific set of Property elements, which are children of the ParameterDef element, that specify the type of data, maximum, minimum, and default values for the data, and other information.</span></span> <span data-ttu-id="87369-109">Esses elementos de propriedade são discutidos posteriormente neste tópico.</span><span class="sxs-lookup"><span data-stu-id="87369-109">These Property elements are discussed later in this topic.</span></span>
+
+<span data-ttu-id="87369-110">Elementos ParameterDef podem aparecer apenas em seu contexto permitido.</span><span class="sxs-lookup"><span data-stu-id="87369-110">ParameterDef elements can appear only in their allowed context.</span></span> <span data-ttu-id="87369-111">Para a versão inicial do esquema de impressão, eles podem estar localizados no nível raiz do documento PrintCapabilities.</span><span class="sxs-lookup"><span data-stu-id="87369-111">For the initial version of the Print Schema they may be located at the root level of the PrintCapabilities document.</span></span> <span data-ttu-id="87369-112">O atributo Name do elemento ParameterDef define o nome do parâmetro.</span><span class="sxs-lookup"><span data-stu-id="87369-112">The name attribute of the ParameterDef element defines the parameter name.</span></span> <span data-ttu-id="87369-113">Cada elemento ParameterDef no documento PrintCapabilities deve ser atribuído a um atributo de nome exclusivo.</span><span class="sxs-lookup"><span data-stu-id="87369-113">Each ParameterDef element in the PrintCapabilities document must be assigned a unique name attribute.</span></span>
+
+> [!Note]
+> <span data-ttu-id="87369-114">para recursos de impressão provedores de documentos:</span><span class="sxs-lookup"><span data-stu-id="87369-114">to Print Capabilities Document Providers:</span></span>
+> 
+> <span data-ttu-id="87369-115">O significado de um nome de parâmetro é universal; ou seja, se um elemento ParameterDef em um documento PrintCapabilities tiver o mesmo atributo Name (a cadeia de caracteres formada do namespace e o nome descritivo do elemento ParameterDef) como um elemento ParameterDef em outro documento PrintCapabilities, supõe-se que esses dois elementos representam o mesmo conceito e devem ser interpretados da mesma maneira.</span><span class="sxs-lookup"><span data-stu-id="87369-115">The meaning of a parameter name is universal; that is, if a ParameterDef element in one PrintCapabilities document has the same name attribute (the string formed from the namespace and the descriptive name of the ParameterDef element) as a ParameterDef element in another PrintCapabilities document, it is assumed that both of these elements represent the same concept and should be interpreted in the same manner.</span></span> <span data-ttu-id="87369-116">Portanto, um elemento ParameterDef definido em um PrintTicket para um documento PrintCapabilities pode ser usado para inicializar o elemento ParameterInit do mesmo nome definido em um documento de PrintCapabilities diferente.</span><span class="sxs-lookup"><span data-stu-id="87369-116">Thus a ParameterDef element defined in a PrintTicket for one PrintCapabilities document can be used to initialize the ParameterInit element of the same name defined in a different PrintCapabilities document.</span></span>
+
+ 
+
+## <a name="relationship-to-xml-attributes"></a><span data-ttu-id="87369-117">Relação com atributos XML</span><span class="sxs-lookup"><span data-stu-id="87369-117">Relationship to XML Attributes</span></span>
+
+<span data-ttu-id="87369-118">Assim como acontece com todos os atributos Name, o nome do parâmetro está na forma de um QName XML.</span><span class="sxs-lookup"><span data-stu-id="87369-118">As is true of all name attributes, the parameter name is in the form of an XML QName.</span></span> <span data-ttu-id="87369-119">Uma construção de parâmetro definida pelo esquema tem um nome que é qualificado pelo namespace público, formando o atributo Name, enquanto o atributo Name de uma construção de parâmetro definida de forma privada é qualificado por um namespace privado exclusivo para o criador.</span><span class="sxs-lookup"><span data-stu-id="87369-119">A Schema-defined parameter construct has a name that is qualified by the public namespace, forming the name attribute, while the name attribute of a privately-defined parameter construct is qualified by a private namespace that is unique to the creator.</span></span>
+
+## <a name="relationship-between-parameterdef-and-property-element-types"></a><span data-ttu-id="87369-120">Relação entre ParameterDef e tipos de elemento de propriedade</span><span class="sxs-lookup"><span data-stu-id="87369-120">Relationship between ParameterDef and Property Element Types</span></span>
+
+<span data-ttu-id="87369-121">Os elementos ParameterDef definidos nas palavras-chave do esquema de impressão devem ser totalmente definidos em um documento PrintCapabilities.</span><span class="sxs-lookup"><span data-stu-id="87369-121">ParameterDef elements that are defined in the Print Schema Keywords must be fully defined in a PrintCapabilities document.</span></span> <span data-ttu-id="87369-122">O documento imprimir palavras-chave do esquema fornece valores nominais para alguns elementos de propriedade de um elemento ParameterDef (como DefaultValue e outros), mas o autor de um documento PrintCapabilities é responsável por definir os elementos de propriedade restantes.</span><span class="sxs-lookup"><span data-stu-id="87369-122">The Print Schema Keywords document provides nominal values for some Property elements of a ParameterDef element (such as DefaultValue and others), but the author of a PrintCapabilities document is responsible for defining the remaining Property elements.</span></span> <span data-ttu-id="87369-123">Em qualquer caso, todos os elementos de propriedade devem ser explicitamente definidos em um elemento ParameterDef, incluindo aqueles que são definidos nas palavras-chave do esquema de impressão.</span><span class="sxs-lookup"><span data-stu-id="87369-123">In any case, all Property elements must be explicitly defined in a ParameterDef element, including those that are defined in the Print Schema Keywords.</span></span>
+
+<span data-ttu-id="87369-124">Determinados elementos de propriedade de cada elemento ParameterDef que aparece nas palavras-chave do esquema de impressão são designados como *imutáveis*.</span><span class="sxs-lookup"><span data-stu-id="87369-124">Certain Property elements of each ParameterDef element appearing in the Print Schema Keywords are designated as *immutable*.</span></span> <span data-ttu-id="87369-125">Isso significa que todas as definições de documentos de PrintCapabilities das palavras-chave do esquema de impressão – elementos ParameterDef definidos devem preservar esses elementos de propriedade sem modificação.</span><span class="sxs-lookup"><span data-stu-id="87369-125">This means that all PrintCapabilities document definitions of Print Schema Keywords-defined ParameterDef elements must preserve these Property elements without modification.</span></span> <span data-ttu-id="87369-126">Esses elementos de propriedade imutáveis permitem que os constructos de parâmetro sejam portáteis e não ambíguos em todos os documentos de PrintCapabilities.</span><span class="sxs-lookup"><span data-stu-id="87369-126">These immutable Property elements allow the parameter constructs to be portable and unambiguous across all PrintCapabilities documents.</span></span> <span data-ttu-id="87369-127">Um exemplo primo é as unidades usadas em um elemento ParameterDef.</span><span class="sxs-lookup"><span data-stu-id="87369-127">A prime example is the units used in a ParameterDef element.</span></span> <span data-ttu-id="87369-128">Essas unidades devem ser imutáveis para promover uma compreensão consistente de seu significado.</span><span class="sxs-lookup"><span data-stu-id="87369-128">These units should be immutable, to promote a consistent understanding of their meaning.</span></span> <span data-ttu-id="87369-129">Os elementos de propriedade de um ParameterDef designados como não imutáveis podem ser redefinidos em um documento de PrintCapabilities.</span><span class="sxs-lookup"><span data-stu-id="87369-129">Property elements of a ParameterDef that are designated as not immutable may be redefined within a PrintCapabilities document.</span></span>
+
+<span data-ttu-id="87369-130">Um elemento ParameterDef é composto pelos elementos de propriedade a seguir.</span><span class="sxs-lookup"><span data-stu-id="87369-130">A ParameterDef element is composed of the following Property elements.</span></span> <span data-ttu-id="87369-131">Todos devem estar presentes, salvo indicação em contrário.</span><span class="sxs-lookup"><span data-stu-id="87369-131">All must be present unless otherwise noted.</span></span>
+
+
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="87369-132">Nome da Propriedade</span><span class="sxs-lookup"><span data-stu-id="87369-132">Property Name</span></span></th>
+<th><span data-ttu-id="87369-133">Valores</span><span class="sxs-lookup"><span data-stu-id="87369-133">Values</span></span></th>
+<th><span data-ttu-id="87369-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="87369-134">Description</span></span></th>
+<th><span data-ttu-id="87369-135">Imutável?</span><span class="sxs-lookup"><span data-stu-id="87369-135">Immutable?</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="87369-136">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="87369-136">DataType</span></span> <br/></td>
+<td><span data-ttu-id="87369-137">Número inteiro</span><span class="sxs-lookup"><span data-stu-id="87369-137">integer</span></span> <br/> <span data-ttu-id="87369-138">decimal</span><span class="sxs-lookup"><span data-stu-id="87369-138">decimal</span></span><br/> <span data-ttu-id="87369-139">string</span><span class="sxs-lookup"><span data-stu-id="87369-139">string</span></span><br/> <span data-ttu-id="87369-140">Sem valor padrão.</span><span class="sxs-lookup"><span data-stu-id="87369-140">No default value.</span></span><br/></td>
+<td><span data-ttu-id="87369-141">Especifica se o valor do parâmetro é um número inteiro, ou de ponto flutuante, ou uma cadeia de texto.</span><span class="sxs-lookup"><span data-stu-id="87369-141">Specifies whether the parameter value is an integer, or floating point number, or a text string.</span></span> <span data-ttu-id="87369-142">O valor de um parâmetro é expresso no mesmo formato que o tipo de dados XSD básico correspondente; ou seja, como um inteiro, um decimal ou uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="87369-142">The value of a parameter is expressed in the same format as the corresponding XSD basic data type; that is, as an integer, decimal, or string.</span></span> <br/></td>
+<td><span data-ttu-id="87369-143">Yes</span><span class="sxs-lookup"><span data-stu-id="87369-143">Yes</span></span><br/></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="87369-144">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="87369-144">DefaultValue</span></span> <br/></td>
+<td><span data-ttu-id="87369-145">O tipo especificado pela propriedade DataType.</span><span class="sxs-lookup"><span data-stu-id="87369-145">The type specified by the DataType Property.</span></span><br/> <span data-ttu-id="87369-146">Sem valor padrão.</span><span class="sxs-lookup"><span data-stu-id="87369-146">No default value.</span></span><br/></td>
+<td><span data-ttu-id="87369-147">Especifica o valor com o qual inicializar um controle de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="87369-147">Specifies the value with which to initialize a user interface (UI) control.</span></span><br/>
+<ul>
+<li><span data-ttu-id="87369-148">ou</span><span class="sxs-lookup"><span data-stu-id="87369-148">or</span></span> <br/></li>
+</ul>
+<span data-ttu-id="87369-149">Especifica o valor a ser usado se o elemento de parâmetro relevante estiver ausente do PrintTicket.</span><span class="sxs-lookup"><span data-stu-id="87369-149">Specifies the value to use if the relevant parameter element is missing from the PrintTicket.</span></span><br/></td>
+<td><span data-ttu-id="87369-150">No</span><span class="sxs-lookup"><span data-stu-id="87369-150">No</span></span><br/></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="87369-151">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="87369-151">Mandatory</span></span> <br/></td>
+<td><span data-ttu-id="87369-152">Incondicional: o elemento ParameterInit sempre deve ser fornecido.</span><span class="sxs-lookup"><span data-stu-id="87369-152">Unconditional: the ParameterInit element must always be supplied.</span></span> <br/> <span data-ttu-id="87369-153">Conditional: o elemento ParameterInit será necessário somente se o parâmetro for referenciado dentro de um elemento Option em um PrintTicket.</span><span class="sxs-lookup"><span data-stu-id="87369-153">Conditional: the ParameterInit element is required only if the parameter is referenced within an Option element in a PrintTicket.</span></span><br/> <span data-ttu-id="87369-154">DefaultValue: condicional.</span><span class="sxs-lookup"><span data-stu-id="87369-154">DefaultValue: Conditional.</span></span><br/></td>
+<td><span data-ttu-id="87369-155">Indica quando um elemento ParameterInit deve aparecer explicitamente.</span><span class="sxs-lookup"><span data-stu-id="87369-155">Indicates when a ParameterInit element must appear explicitly.</span></span> <span data-ttu-id="87369-156">Se for condicional, o ParameterInit deverá ser inicializado se o PrintTicket contiver uma opção que referencie o parâmetro.</span><span class="sxs-lookup"><span data-stu-id="87369-156">If Conditional, the ParameterInit must be initialized if the PrintTicket contains an Option that references the parameter.</span></span><br/> <span data-ttu-id="87369-157">Usado por clientes de interface de usuário e PrintCapabilities ou provedores PrintTicket.</span><span class="sxs-lookup"><span data-stu-id="87369-157">Used by UI Clients and PrintCapabilities or PrintTicket providers.</span></span> <span data-ttu-id="87369-158">Observe que em qualquer restrição, a propriedade obrigatória do elemento ParameterDef deve ser definida como incondicional.</span><span class="sxs-lookup"><span data-stu-id="87369-158">Note that in any constraint, the Mandatory Property of the ParameterDef element must be set to Unconditional.</span></span> <span data-ttu-id="87369-159">O ParameterDef deve ter um valor definido, caso contrário, o valor dependente ou a restrição não pode ser avaliado.</span><span class="sxs-lookup"><span data-stu-id="87369-159">The ParameterDef must have a defined Value, otherwise the dependent Value or constraint could not be evaluated.</span></span><br/></td>
+<td><span data-ttu-id="87369-160">No</span><span class="sxs-lookup"><span data-stu-id="87369-160">No</span></span><br/></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="87369-161">MaxLength</span><span class="sxs-lookup"><span data-stu-id="87369-161">MaxLength</span></span> <br/></td>
+<td><span data-ttu-id="87369-162">inteiro se a propriedade DataType especificar a cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="87369-162">integer if DataType Property specifies string.</span></span><br/> <span data-ttu-id="87369-163">DefaultValue: nenhum valor máximo é imposto.</span><span class="sxs-lookup"><span data-stu-id="87369-163">DefaultValue: No maximum value is enforced.</span></span><br/></td>
+<td><span data-ttu-id="87369-164">Para parâmetros com valor de cadeia de caracteres, especifica a cadeia de caracteres mais longa permitida.</span><span class="sxs-lookup"><span data-stu-id="87369-164">For string-valued parameters, specifies the longest allowed string.</span></span> <span data-ttu-id="87369-165">Interface do usuário e PrintCapabilities ou provedores de PrintTicket usam essa propriedade para validar o elemento ParameterDef.</span><span class="sxs-lookup"><span data-stu-id="87369-165">UI and PrintCapabilities or PrintTicket providers use this Property to validate the ParameterDef element.</span></span><br/></td>
+<td><span data-ttu-id="87369-166">No</span><span class="sxs-lookup"><span data-stu-id="87369-166">No</span></span><br/></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="87369-167">MaxValue</span><span class="sxs-lookup"><span data-stu-id="87369-167">MaxValue</span></span> <br/></td>
+<td><span data-ttu-id="87369-168">inteiro se a propriedade DataType especificar Integer.</span><span class="sxs-lookup"><span data-stu-id="87369-168">integer if DataType Property specifies integer.</span></span><br/> <span data-ttu-id="87369-169">decimal se a propriedade DataType especificar decimal.</span><span class="sxs-lookup"><span data-stu-id="87369-169">decimal if DataType Property specifies decimal.</span></span><br/> <span data-ttu-id="87369-170">DefaultValue: nenhum valor máximo é imposto.</span><span class="sxs-lookup"><span data-stu-id="87369-170">DefaultValue: No maximum value is enforced.</span></span><br/></td>
+<td><span data-ttu-id="87369-171">Para elementos ParameterDef com valor inteiro ou Decimal, define o maior valor permitido.</span><span class="sxs-lookup"><span data-stu-id="87369-171">For integer-or decimal-valued ParameterDef elements, defines the largest allowed value.</span></span><br/></td>
+<td><span data-ttu-id="87369-172">No</span><span class="sxs-lookup"><span data-stu-id="87369-172">No</span></span><br/></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="87369-173">MinLength</span><span class="sxs-lookup"><span data-stu-id="87369-173">MinLength</span></span> <br/></td>
+<td><span data-ttu-id="87369-174">inteiro se a propriedade DataType especificar a cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="87369-174">integer if DataType Property specifies string.</span></span> <br/> <span data-ttu-id="87369-175">DefaultValue: nenhum valor mínimo é imposto.</span><span class="sxs-lookup"><span data-stu-id="87369-175">DefaultValue: No minimum value is enforced.</span></span><br/></td>
+<td><span data-ttu-id="87369-176">Para valores de cadeia de caracteres, define a cadeia de caracteres mais curta permitida.</span><span class="sxs-lookup"><span data-stu-id="87369-176">For string values, defines the shortest allowed string.</span></span> <span data-ttu-id="87369-177">Interface do usuário e PrintCapabilities ou provedores de PrintTicket usam essa propriedade para validar o elemento ParameterDef.</span><span class="sxs-lookup"><span data-stu-id="87369-177">UI and PrintCapabilities or PrintTicket providers use this Property to validate the ParameterDef element.</span></span><br/></td>
+<td><span data-ttu-id="87369-178">No</span><span class="sxs-lookup"><span data-stu-id="87369-178">No</span></span><br/></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="87369-179">MinValue</span><span class="sxs-lookup"><span data-stu-id="87369-179">MinValue</span></span> <br/></td>
+<td><span data-ttu-id="87369-180">inteiro se a propriedade DataType especificar Integer.</span><span class="sxs-lookup"><span data-stu-id="87369-180">integer if DataType Property specifies integer.</span></span><br/> <span data-ttu-id="87369-181">decimal se a propriedade DataType especificar decimal.</span><span class="sxs-lookup"><span data-stu-id="87369-181">decimal if DataType Property specifies decimal.</span></span><br/> <span data-ttu-id="87369-182">DefaultValue: nenhum valor mínimo é imposto.</span><span class="sxs-lookup"><span data-stu-id="87369-182">DefaultValue: No minimum value is enforced.</span></span><br/></td>
+<td><span data-ttu-id="87369-183">Para parâmetros com valor inteiro ou Decimal, define o menor valor permitido.</span><span class="sxs-lookup"><span data-stu-id="87369-183">For integer- or decimal-valued parameters, defines the smallest allowed value.</span></span> <br/></td>
+<td><span data-ttu-id="87369-184">Não</span><span class="sxs-lookup"><span data-stu-id="87369-184">No</span></span><br/></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="87369-185">Vários</span><span class="sxs-lookup"><span data-stu-id="87369-185">Multiple</span></span> <br/></td>
+<td><span data-ttu-id="87369-186">inteiro se a propriedade DataType especificar Integer.</span><span class="sxs-lookup"><span data-stu-id="87369-186">integer if DataType Property specifies integer.</span></span><br/> <span data-ttu-id="87369-187">decimal se a propriedade DataType especificar decimal.</span><span class="sxs-lookup"><span data-stu-id="87369-187">decimal if DataType Property specifies decimal.</span></span><br/> <span data-ttu-id="87369-188">Valor de DefaultValue: 1</span><span class="sxs-lookup"><span data-stu-id="87369-188">DefaultValue: 1</span></span><br/></td>
+<td><span data-ttu-id="87369-189">Para parâmetros com valor inteiro ou Decimal, o valor do parâmetro deve ser um múltiplo desse número.</span><span class="sxs-lookup"><span data-stu-id="87369-189">For integer- or decimal-valued parameters, the value of the parameter should be a multiple of this number.</span></span> <span data-ttu-id="87369-190">Para obter mais informações, consulte <a href="#notes-on-multiple">observações sobre vários</a> seguindo esta tabela.</span><span class="sxs-lookup"><span data-stu-id="87369-190">For more information, see <a href="#notes-on-multiple">Notes on Multiple</a> following this table.</span></span><br/></td>
+<td><span data-ttu-id="87369-191">No</span><span class="sxs-lookup"><span data-stu-id="87369-191">No</span></span><br/></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="87369-192">UnitType</span><span class="sxs-lookup"><span data-stu-id="87369-192">UnitType</span></span> <br/></td>
+<td><span data-ttu-id="87369-193">valor da cadeia de caracteres que indica as unidades usadas para o parâmetro.</span><span class="sxs-lookup"><span data-stu-id="87369-193">string value indicating the units used for the parameter.</span></span><br/> <span data-ttu-id="87369-194">Sem valor padrão.</span><span class="sxs-lookup"><span data-stu-id="87369-194">No default value.</span></span><br/></td>
+<td><span data-ttu-id="87369-195">Indica as unidades nas quais o parâmetro é expresso.</span><span class="sxs-lookup"><span data-stu-id="87369-195">Indicates the units in which the parameter is expressed.</span></span> <span data-ttu-id="87369-196">Por exemplo, ângulos em décimos de graus, comprimentos em mícrons e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="87369-196">For example, angles in tenths of degrees, lengths in microns, and so on.</span></span><br/></td>
+<td><span data-ttu-id="87369-197">Yes</span><span class="sxs-lookup"><span data-stu-id="87369-197">Yes</span></span><br/></td>
+</tr>
+</tbody>
+</table>
+
+
+
+ 
+
+## <a name="notes-on-multiple"></a><span data-ttu-id="87369-198">Observações sobre vários</span><span class="sxs-lookup"><span data-stu-id="87369-198">Notes on Multiple</span></span>
+
+<span data-ttu-id="87369-199">Para elementos ParameterInit com valores inteiros ou decimais, o valor de ParameterInit deve ser um múltiplo desse número.</span><span class="sxs-lookup"><span data-stu-id="87369-199">For ParameterInit elements with integer or decimal values, the value of the ParameterInit should be a multiple of this number.</span></span> <span data-ttu-id="87369-200">Por exemplo, elementos ParameterInit com valor decimal podem ser limitados a décimos definindo essa propriedade como 0,1.</span><span class="sxs-lookup"><span data-stu-id="87369-200">For example, decimal-valued ParameterInit elements can be limited to tenths by setting this property to 0.1.</span></span> <span data-ttu-id="87369-201">Os elementos da interface do usuário usam essa propriedade quando constroem caixas de diálogo e controles de interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="87369-201">UI elements use this Property when they construct dialogs and UI controls.</span></span> <span data-ttu-id="87369-202">Além disso, o código de validação PrintTicket pode usar essa propriedade para arredondar o valor de um ParameterInit para o valor mais próximo indicado por Multiple.</span><span class="sxs-lookup"><span data-stu-id="87369-202">In addition, PrintTicket validation code can use this Property to round the value of a ParameterInit to the nearest value indicated by Multiple.</span></span> <span data-ttu-id="87369-203">Observação: os drivers de dispositivo e os provedores de PrintCapabilities não devem supor que os valores de ParameterInit sejam múltiplos desse valor de propriedade.</span><span class="sxs-lookup"><span data-stu-id="87369-203">Note: Device drivers and PrintCapabilities providers should not assume that ParameterInit values are multiples of this Property value.</span></span> <span data-ttu-id="87369-204">Cada provedor deve ser capaz de arredondar valores arbitrários para o valor utilizável mais próximo devido à possibilidade de que provedores diferentes possam especificar valores diferentes e conflitantes para essa propriedade.</span><span class="sxs-lookup"><span data-stu-id="87369-204">Each provider must be able to round arbitrary values to the nearest useable value due to the possibility that different providers might specify different and conflicting values for this property.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="87369-205">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="87369-205">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="87369-206">Especificação de esquema de impressão</span><span class="sxs-lookup"><span data-stu-id="87369-206">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

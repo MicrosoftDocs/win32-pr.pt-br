@@ -1,0 +1,57 @@
+---
+description: Os serviços de certificados, um serviço em execução em um sistema operacional Windows Server, recebem solicitações para novos certificados digitais em transportes como RPC ou HTTP.
+ms.assetid: 4c0098be-6b1b-4ce0-b3a0-942c1290b5b4
+title: Serviços de Certificados
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d1a3f25972f98a79a208719eb2bcb08de07d7894
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105760018"
+---
+# <a name="certificate-services"></a><span data-ttu-id="cedfb-103">Serviços de Certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-103">Certificate Services</span></span>
+
+<span data-ttu-id="cedfb-104">Os [*serviços de certificados*](../secgloss/c-gly.md), um serviço em execução em um sistema operacional Windows Server, recebem solicitações para novos certificados digitais em transportes como RPC ou http.</span><span class="sxs-lookup"><span data-stu-id="cedfb-104">[*Certificate Services*](../secgloss/c-gly.md), a service running on a Windows server operating system, receives requests for new digital certificates over transports such as RPC or HTTP.</span></span> <span data-ttu-id="cedfb-105">Ele verifica cada solicitação em políticas personalizadas ou específicas do site, define propriedades opcionais para um certificado a ser emitido e emite o certificado.</span><span class="sxs-lookup"><span data-stu-id="cedfb-105">It checks each request against custom or site-specific policies, sets optional properties for a certificate to be issued, and issues the certificate.</span></span> <span data-ttu-id="cedfb-106">Os serviços de certificados permitem que os administradores adicionem elementos a uma CRL ( [*lista de certificados revogados*](../secgloss/c-gly.md) ) e publiquem CRLs assinadas regularmente.</span><span class="sxs-lookup"><span data-stu-id="cedfb-106">Certificate Services allows administrators to add elements to a [*certificate revocation list*](../secgloss/c-gly.md) (CRL), and to publish signed CRLs on a regular basis.</span></span>
+
+<span data-ttu-id="cedfb-107">Os serviços de certificados incluem interfaces programáveis para a criação de suporte para transportes adicionais, políticas e propriedades e formatos de certificado.</span><span class="sxs-lookup"><span data-stu-id="cedfb-107">Certificate services include programmable interfaces for creating support for additional transports, policies, and certificate properties and formats.</span></span>
+
+<span data-ttu-id="cedfb-108">No Windows Server 2003, os serviços de certificados 2,0 podem ser instalados no **painel de controle** clicando em **Adicionar ou remover programas** e, em seguida, clicando em **Adicionar/remover componentes do Windows** para instalar ou desinstalar os serviços de certificados.</span><span class="sxs-lookup"><span data-stu-id="cedfb-108">In Windows Server 2003, Certificate Services 2.0 can be installed from **Control Panel** by clicking **Add or Remove Programs** and then clicking **Add/Remove Windows Components** to install or uninstall Certificate Services.</span></span>
+
+<span data-ttu-id="cedfb-109">Os conceitos dos serviços de certificados são detalhados nas seções a seguir.</span><span class="sxs-lookup"><span data-stu-id="cedfb-109">Certificate Services concepts are detailed in the following sections.</span></span> <span data-ttu-id="cedfb-110">O conteúdo destina-se a ajudá-lo a desenvolver aplicativos que irão interagir com os serviços de certificados.</span><span class="sxs-lookup"><span data-stu-id="cedfb-110">The content is intended to help you develop applications that will interact with Certificate Services.</span></span>
+
+
+
+| <span data-ttu-id="cedfb-111">Conteúdo</span><span class="sxs-lookup"><span data-stu-id="cedfb-111">Content</span></span>                                                                                                                                                           | <span data-ttu-id="cedfb-112">Seção</span><span class="sxs-lookup"><span data-stu-id="cedfb-112">Section</span></span>                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| <span data-ttu-id="cedfb-113">Descrição dos recursos dos serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-113">Description of the features of Certificate Services</span></span>                                                                                                               | [<span data-ttu-id="cedfb-114">Recursos dos serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-114">Certificate Services Features</span></span>](certificate-services-features.md)         |
+| <span data-ttu-id="cedfb-115">Visão geral da arquitetura dos serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-115">Overview of Certificate Services architecture</span></span>                                                                                                                     | [<span data-ttu-id="cedfb-116">Arquitetura de serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-116">Certificate Services Architecture</span></span>](certificate-services-architecture.md) |
+| <span data-ttu-id="cedfb-117">Relação entre um certificado, o assunto do certificado e a [ *chave pública* da entidade](../secgloss/p-gly.md)</span><span class="sxs-lookup"><span data-stu-id="cedfb-117">Relationship between a certificate, the certificate's subject, and the subject's [*public key*](../secgloss/p-gly.md)</span></span> | [<span data-ttu-id="cedfb-118">Certificados e chaves públicas</span><span class="sxs-lookup"><span data-stu-id="cedfb-118">Certificates and Public Keys</span></span>](certificates-and-public-keys.md)           |
+| <span data-ttu-id="cedfb-119">Informações sobre as propriedades de solicitação de certificado</span><span class="sxs-lookup"><span data-stu-id="cedfb-119">Information about the Certificate Request properties</span></span>                                                                                                              | [<span data-ttu-id="cedfb-120">Diretrizes de solicitação de certificado</span><span class="sxs-lookup"><span data-stu-id="cedfb-120">Certificate Request Guidelines</span></span>](certificate-request-guidelines.md)       |
+| <span data-ttu-id="cedfb-121">Detalhes de como um certificado é processado pelos serviços de certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-121">Details of how a certificate is processed by Certificate Services</span></span>                                                                                                 | [<span data-ttu-id="cedfb-122">Sobre certificados</span><span class="sxs-lookup"><span data-stu-id="cedfb-122">About Certificates</span></span>](about-certificates.md)                               |
+| <span data-ttu-id="cedfb-123">Descrição do processo de renovação da [*autoridade de certificação*](../secgloss/c-gly.md)</span><span class="sxs-lookup"><span data-stu-id="cedfb-123">Description of the [*certification authority*](../secgloss/c-gly.md) renewal process</span></span>        | [<span data-ttu-id="cedfb-124">Renovação da autoridade de certificação</span><span class="sxs-lookup"><span data-stu-id="cedfb-124">Certification Authority Renewal</span></span>](certification-authority-renewal.md)     |
+
+
+
+ 
+
+<span data-ttu-id="cedfb-125">Os tópicos úteis adicionais a seguir também estão incluídos.</span><span class="sxs-lookup"><span data-stu-id="cedfb-125">The following additional useful topics are also included.</span></span>
+
+
+
+| <span data-ttu-id="cedfb-126">Conteúdo</span><span class="sxs-lookup"><span data-stu-id="cedfb-126">Content</span></span>                                                                                                                                             | <span data-ttu-id="cedfb-127">Seção</span><span class="sxs-lookup"><span data-stu-id="cedfb-127">Section</span></span>                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| <span data-ttu-id="cedfb-128">Documentação sobre o controle de registro de certificado, que fornece serviços para a criação de solicitações de certificado, incluindo solicitações para usuários de cartão inteligente.</span><span class="sxs-lookup"><span data-stu-id="cedfb-128">Documentation on Certificate Enrollment Control, which provides services for creating certificate requests including requests for smart card users.</span></span> | [<span data-ttu-id="cedfb-129">Controle de registro de certificado</span><span class="sxs-lookup"><span data-stu-id="cedfb-129">Certificate Enrollment Control</span></span>](certificate-enrollment-control.md) |
+| <span data-ttu-id="cedfb-130">Documentação sobre a interface de programação de aplicativo de criptografia da Microsoft, que fornece serviços de segurança baseados em criptografia.</span><span class="sxs-lookup"><span data-stu-id="cedfb-130">Documentation on the Microsoft Cryptographic Application Programming Interface, which provides cryptography-based security services.</span></span>                | [<span data-ttu-id="cedfb-131">Noções básicas de criptografia</span><span class="sxs-lookup"><span data-stu-id="cedfb-131">Cryptography Essentials</span></span>](cryptography-essentials.md)               |
+| <span data-ttu-id="cedfb-132">Documentação no cartão inteligente, que fornece serviços para o desenvolvimento e o uso de sistemas de cartão inteligente.</span><span class="sxs-lookup"><span data-stu-id="cedfb-132">Documentation on Smart Card, which provides services for developing and using smart card systems.</span></span>                                                   | [<span data-ttu-id="cedfb-133">Cartão inteligente</span><span class="sxs-lookup"><span data-stu-id="cedfb-133">Smart Card</span></span>](../secauthn/smart-card-authentication.md)                     |
+| <span data-ttu-id="cedfb-134">Nomear Propriedades de certificados e solicitações de certificado.</span><span class="sxs-lookup"><span data-stu-id="cedfb-134">Name properties of certificates and certificate requests.</span></span>                                                                                           | [<span data-ttu-id="cedfb-135">Propriedades do nome</span><span class="sxs-lookup"><span data-stu-id="cedfb-135">Name Properties</span></span>](name-properties.md)                               |
+| <span data-ttu-id="cedfb-136">Lista e descrições das propriedades do certificado [*X. 509*](../secgloss/x-gly.md) .</span><span class="sxs-lookup"><span data-stu-id="cedfb-136">List and descriptions of [*X.509*](../secgloss/x-gly.md) certificate properties.</span></span>                                  | [<span data-ttu-id="cedfb-137">Propriedades do certificado</span><span class="sxs-lookup"><span data-stu-id="cedfb-137">Certificate Properties</span></span>](certificate-properties.md)                 |
+
+
+
+ 
+
+ 
+
+ 
