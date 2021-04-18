@@ -1,0 +1,132 @@
+---
+description: O método FindMediaFile procura um arquivo e, se for bem-sucedido, recupera o caminho para o arquivo.
+ms.assetid: ddfa2c75-e51f-4aad-afe6-8a60c46e8d35
+title: 'Método IMediaLocator:: FindMediaFile (QEdit. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IMediaLocator.FindMediaFile
+api_type:
+- COM
+api_location:
+- strmiids.lib
+- strmiids.dll
+ms.openlocfilehash: 3561b77873c90b2d4bd0202bed8e2da822a0362f
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105810174"
+---
+# <a name="imedialocatorfindmediafile-method"></a>Método IMediaLocator:: FindMediaFile
+
+> [!Note]  
+> \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
+
+ 
+
+O `FindMediaFile` método procura um arquivo e, se for bem-sucedido, recupera o caminho para o arquivo.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+HRESULT FindMediaFile(
+   BSTR Input,
+   BSTR FilterString,
+   BSTR *pOutput,
+   long Flags
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*Entrada* 
+</dt> <dd>
+
+Nome do arquivo, incluindo o caminho, onde o arquivo foi conhecido pela última vez. Para objetos de origem na linha do tempo, use o nome da mídia atual.
+
+</dd> <dt>
+
+*FilterString* 
+</dt> <dd>
+
+Um **BSTR** contendo pares de cadeias de caracteres de filtro, formatados conforme exigido pelo membro **LpstrFilter** da estrutura [**da OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) . O localizador de mídia usará esse filtro se ele exibir uma caixa de diálogo de abertura de arquivo. O valor pode ser **nulo** se o parâmetro *flags* não incluir o sinalizador de \_ \_ pop-up SFN VALIDATEF.
+
+</dd> <dt>
+
+*pOutput* 
+</dt> <dd>
+
+Ponteiro para uma variável que recebe o caminho real para o arquivo, se for diferente do valor contido na *entrada* e se o método localizar o arquivo com êxito.
+
+</dd> <dt>
+
+*Sinalizadores* 
+</dt> <dd>
+
+Combinação de bits bit a zero ou mais sinalizadores. Para obter uma lista de possíveis sinalizadores, consulte [**sinalizadores de validação de nome de arquivo**](file-name-validation-flags.md).
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+
+## <a name="remarks"></a>Comentários
+
+A cadeia de caracteres de filtro para a caixa de diálogo de abertura de arquivo, que é especificada pelo parâmetro *FilterString* , contém caracteres nulos internos. Por exemplo, \\ o vídeo 0 \* . avi \\ 0 \\ 0 é uma cadeia de caracteres de filtro válida. Você não pode usar a função **SysAllocStr** para alocar o BSTR, pois essa função espera uma cadeia de caracteres terminada em nulo e truncará a cadeia de caracteres no primeiro caractere nulo. Portanto, use uma função como **SysAllocStringLen**, que inclui um parâmetro explícito para o comprimento:
+
+
+```C++
+BSTR filter = SysAllocStringLen(L"Video\0*.avi\0", 12);
+// Note: SysAllocStringLen appends an additional '\0' to the string.
+```
+
+
+
+Se o usuário cancelar a caixa de diálogo de abertura de arquivo, o método retornará E \_ falhará.
+
+O método aloca memória para o **BSTR** em *pOutput*. O aplicativo deve chamar **SysFreeString** para liberar a memória.
+
+> [!Note]  
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+
+ 
+
+> [!Note]  
+> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+
+ 
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|-----------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Interface IMediaLocator**](imedialocator.md)
+</dt> <dt>
+
+[Códigos de erro e êxito](error-and-success-codes.md)
+</dt> </dl>
+
+ 
+
+ 
