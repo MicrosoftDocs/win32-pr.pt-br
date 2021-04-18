@@ -1,0 +1,71 @@
+---
+description: Além das partições, que contêm um ou mais aplicativos, o COM+ também inclui conjuntos de partições, que contêm uma ou mais partições.
+ms.assetid: 0b1a6daa-55e1-4a74-be01-e39473e3c0cc
+title: Partições e Active Directory
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b08e7b70c4b474e7b7bd949f530fb73973d39c6a
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105778799"
+---
+# <a name="partitions-and-active-directory"></a><span data-ttu-id="be8c2-103">Partições e Active Directory</span><span class="sxs-lookup"><span data-stu-id="be8c2-103">Partitions and Active Directory</span></span>
+
+<span data-ttu-id="be8c2-104">Além das partições, que contêm um ou mais aplicativos, o COM+ também inclui *conjuntos* de partições, que contêm uma ou mais partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-104">In addition to partitions, which contain one or more applications, COM+ also includes *partition sets*, which contain one or more partitions.</span></span> <span data-ttu-id="be8c2-105">Criado em Active Directory, os conjuntos de partições permitem que os usuários em um domínio acessem aplicativos COM+ em todo o domínio.</span><span class="sxs-lookup"><span data-stu-id="be8c2-105">Created in Active Directory, partition sets allow users in a domain to access COM+ applications throughout the domain.</span></span> <span data-ttu-id="be8c2-106">Durante a criação, cada usuário específico ou unidade organizacional (UO) é atribuído ou mapeado para um conjunto de partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-106">During creation, each specific user or organizational unit (OU) is assigned, or mapped, to a partition set.</span></span>
+
+<span data-ttu-id="be8c2-107">Um único usuário ou UO pode acessar várias partições e seus aplicativos porque há uma correlação um-para-um entre uma identidade de usuário ou uma unidade organizacional e um conjunto de partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-107">A single user or OU can access multiple partitions and their applications because there is a one-to-one correlation between a user identity or OU and a partition set.</span></span> <span data-ttu-id="be8c2-108">Sem um conjunto de partições, um usuário ou UO precisaria de várias identidades de usuário para acessar aplicativos em partições diferentes.</span><span class="sxs-lookup"><span data-stu-id="be8c2-108">Without a partition set, a user or OU would need multiple user identities to access applications in different partitions.</span></span>
+
+<span data-ttu-id="be8c2-109">Para disponibilizar aplicativos COM+ para usuários de domínio, um administrador deve executar tarefas no controlador de domínio onde Active Directory reside e no servidor em que o aplicativo COM+ está instalado.</span><span class="sxs-lookup"><span data-stu-id="be8c2-109">To make COM+ applications available to domain users, an administrator must perform tasks both on the domain controller where Active Directory resides and on the server where the COM+ application is installed.</span></span>
+
+## <a name="on-the-domain-controller"></a><span data-ttu-id="be8c2-110">No controlador de domínio</span><span class="sxs-lookup"><span data-stu-id="be8c2-110">On the Domain Controller</span></span>
+
+<span data-ttu-id="be8c2-111">O administrador primeiro cria uma partição dentro de Active Directory.</span><span class="sxs-lookup"><span data-stu-id="be8c2-111">The administrator first creates a partition within Active Directory.</span></span> <span data-ttu-id="be8c2-112">A criação de uma partição COM+ é feita por meio do uso da ferramenta administrativa usuários e computadores Active Directory ou programaticamente usando a interface do Active Directory Services (ADSI).</span><span class="sxs-lookup"><span data-stu-id="be8c2-112">Creating a COM+ partition is done either through the use of the Active Directory Users and Computers administrative tool or programmatically by using the Active Directory Services Interface (ADSI).</span></span>
+
+<span data-ttu-id="be8c2-113">Depois que a partição tiver sido criada dentro do Active Directory, o administrador criará um conjunto de partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-113">After the partition has been created within Active Directory, the administrator then creates a partition set.</span></span> <span data-ttu-id="be8c2-114">Ao criar um conjunto de partições, o administrador define as partições incluídas nesse conjunto.</span><span class="sxs-lookup"><span data-stu-id="be8c2-114">In creating a partition set, the administrator defines the partitions that are included in that set.</span></span> <span data-ttu-id="be8c2-115">A criação de um conjunto de partições COM+ é feita por meio do uso da ferramenta administrativa usuários e computadores do Active Directory ou programaticamente usando a interface do Active Directory Services (ADSI).</span><span class="sxs-lookup"><span data-stu-id="be8c2-115">Creating a COM+ partition set is done either through the use of the Active Directory Users and Computers administrative tool or programmatically by using the Active Directory Services Interface (ADSI).</span></span>
+
+<span data-ttu-id="be8c2-116">Por fim, o administrador mapeia usuários de domínio ou UOs (unidades organizacionais) para o conjunto de partições recém-criado.</span><span class="sxs-lookup"><span data-stu-id="be8c2-116">Finally, the administrator maps domain users or organizational units (OUs) to the newly created partition set.</span></span> <span data-ttu-id="be8c2-117">Isso é feito exibindo a página de **Propriedades** de um usuário, acessando a guia **conjuntos de partições com+** e selecionando um conjunto de partições na caixa de listagem.</span><span class="sxs-lookup"><span data-stu-id="be8c2-117">This is done by displaying a user's **Properties** page, accessing the **COM+ Partition Sets** tab, and selecting a partition set from the list box.</span></span>
+
+## <a name="on-the-com-application-server"></a><span data-ttu-id="be8c2-118">No servidor de aplicativos COM+</span><span class="sxs-lookup"><span data-stu-id="be8c2-118">On the COM+ Application Server</span></span>
+
+<span data-ttu-id="be8c2-119">O administrador cria uma nova partição, especificando o mesmo nome de partição e a ID de partição (GUID) que a partição que foi criada dentro de Active Directory no controlador de domínio.</span><span class="sxs-lookup"><span data-stu-id="be8c2-119">The administrator creates a new partition, specifying the same partition name and partition ID (GUID) as that of the partition that was created within Active Directory on the domain controller.</span></span> <span data-ttu-id="be8c2-120">Isso é feito usando a pasta **partições com+** na ferramenta administrativa serviços de componentes.</span><span class="sxs-lookup"><span data-stu-id="be8c2-120">This is done using the **COM+ Partitions** folder within the Component Services administrative tool.</span></span> <span data-ttu-id="be8c2-121">Para simplificar essa tarefa, a ferramenta serviços de componentes permite que o administrador procure Active Directory selecione a partição desejada e seu GUID.</span><span class="sxs-lookup"><span data-stu-id="be8c2-121">To simplify this task, the Component Services tool allows the administrator to browse Active Directory to select the desired partition and its GUID.</span></span>
+
+<span data-ttu-id="be8c2-122">Quando a partição de domínio tiver sido criada no servidor de aplicativos, a partição padrão de um usuário se tornará a partição padrão do conjunto de partições no Active Directory.</span><span class="sxs-lookup"><span data-stu-id="be8c2-122">When the domain partition has been created on the application server, a user's default partition becomes the default partition of the partition set in the Active Directory.</span></span> <span data-ttu-id="be8c2-123">Por fim, o administrador pode instalar o aplicativo COM+ na partição recém-criada no servidor de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="be8c2-123">Finally, the administrator can install the COM+ application into the newly created partition on the application server.</span></span>
+
+<span data-ttu-id="be8c2-124">Para obter mais informações sobre como administrar partições para acesso por usuários do domínio, consulte a ajuda associada à ferramenta administrativa usuários e computadores do Active Directory.</span><span class="sxs-lookup"><span data-stu-id="be8c2-124">For more information about administering partitions for access by domain users, see the help associated with the Active Directory Users and Computers administrative tool.</span></span>
+
+## <a name="mapping-user-identities-and-ous-to-partition-sets"></a><span data-ttu-id="be8c2-125">Mapeando identidades de usuário e UOs para conjuntos de partições</span><span class="sxs-lookup"><span data-stu-id="be8c2-125">Mapping User Identities and OUs to Partition Sets</span></span>
+
+<span data-ttu-id="be8c2-126">Os usuários e as UOs podem ser mapeados para conjuntos de partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-126">Users and OUs can be mapped to a partition sets.</span></span> <span data-ttu-id="be8c2-127">Mapeando UOs para conjuntos de partições, um administrador pode associar vários usuários a uma partição definida ao mesmo tempo em vez de ter que mapear várias identidades de usuário.</span><span class="sxs-lookup"><span data-stu-id="be8c2-127">By mapping OUs to partition sets, an administrator can associate multiple users with a partition set at one time instead of having to map multiple user identities.</span></span> <span data-ttu-id="be8c2-128">Uma única identidade de usuário ou UO só pode ser mapeada para um conjunto de partições.</span><span class="sxs-lookup"><span data-stu-id="be8c2-128">A single user identity or OU can be mapped to one partition set only.</span></span> <span data-ttu-id="be8c2-129">Em geral, o mapeamento de identidades de usuário ou UOs para conjuntos de partições faz o seguinte:</span><span class="sxs-lookup"><span data-stu-id="be8c2-129">In general, mapping user identities or OUs to partition sets does the following:</span></span>
+
+-   <span data-ttu-id="be8c2-130">Garante que os aplicativos estejam disponíveis para os usuários apropriados no domínio</span><span class="sxs-lookup"><span data-stu-id="be8c2-130">Ensures that applications are available to the appropriate users in the domain</span></span>
+-   <span data-ttu-id="be8c2-131">Ajuda COM+ a determinar a partição na qual um aplicativo está localizado</span><span class="sxs-lookup"><span data-stu-id="be8c2-131">Helps COM+ in determining the partition in which an application is located</span></span>
+-   <span data-ttu-id="be8c2-132">Estabelece um direito do usuário para acessar um aplicativo específico</span><span class="sxs-lookup"><span data-stu-id="be8c2-132">Establishes a user's right to access a particular application</span></span>
+
+<span data-ttu-id="be8c2-133">Para associar partições a conjuntos de partições no Active Directory e mapear usuários e UOs para esses conjuntos de partições, os administradores usam o Active Directory usuários e computadores e ferramentas administrativas de serviços de componentes.</span><span class="sxs-lookup"><span data-stu-id="be8c2-133">To associate partitions with partition sets within Active Directory and to map users and OUs to those partition sets, administrators use the Active Directory Users and Computers and Component Services administrative tools.</span></span> <span data-ttu-id="be8c2-134">Quando uma partição é criada dentro do Active Directory, um administrador precisa configurar localmente essa partição no computador em que o aplicativo COM+ relevante deve ser instalado.</span><span class="sxs-lookup"><span data-stu-id="be8c2-134">When a partition is created within Active Directory, an administrator needs to locally configure that partition on the computer where the relevant COM+ application is to be installed.</span></span> <span data-ttu-id="be8c2-135">Essa configuração local de partições criadas dentro de Active Directory é feita por meio da ferramenta administrativa serviços de componentes.</span><span class="sxs-lookup"><span data-stu-id="be8c2-135">This local configuration of partitions created within Active Directory is done through the Component Services administrative tool.</span></span>
+
+<span data-ttu-id="be8c2-136">Se uma identidade de usuário de domínio não estiver mapeada para um conjunto de partições, o usuário receberá acesso pela UO do usuário, que é mapeada para a partição.</span><span class="sxs-lookup"><span data-stu-id="be8c2-136">If a domain user identity is not mapped to a partition set, the user is granted access by the user's OU, which is mapped to the partition.</span></span> <span data-ttu-id="be8c2-137">Se a UO do usuário não estiver mapeada para um conjunto de partições, mas a próxima OU mais alta na hierarquia for mapeada para esse conjunto de partições, o usuário poderá acessar a partição.</span><span class="sxs-lookup"><span data-stu-id="be8c2-137">If the user's OU is not mapped to a partition set but the next highest OU in the hierarchy is mapped to that partition set, the user can access the partition.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="be8c2-138">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="be8c2-138">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="be8c2-139">Partições padrão</span><span class="sxs-lookup"><span data-stu-id="be8c2-139">Default Partitions</span></span>](default-partitions.md)
+</dt> <dt>
+
+[<span data-ttu-id="be8c2-140">Partições locais</span><span class="sxs-lookup"><span data-stu-id="be8c2-140">Local Partitions</span></span>](local-partitions.md)
+</dt> <dt>
+
+[<span data-ttu-id="be8c2-141">Propriedades da partição</span><span class="sxs-lookup"><span data-stu-id="be8c2-141">Partition Properties</span></span>](partition-properties.md)
+</dt> <dt>
+
+[<span data-ttu-id="be8c2-142">A partição global</span><span class="sxs-lookup"><span data-stu-id="be8c2-142">The Global Partition</span></span>](the-global-partition.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
