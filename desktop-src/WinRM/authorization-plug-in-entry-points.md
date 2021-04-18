@@ -1,0 +1,46 @@
+---
+title: Pontos de entrada de plug-in de autorização
+description: Pontos de entrada de plug-in de autorização
+ms.assetid: 6cbfa79a-b57b-44b8-a421-d5e79c1b3757
+ms.tgt_platform: multiple
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5ee0db76457860106e51bd6c29cead3d0f8227d7
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "105785197"
+---
+# <a name="authorization-plug-in-entry-points"></a><span data-ttu-id="2d407-103">Pontos de entrada de plug-in de autorização</span><span class="sxs-lookup"><span data-stu-id="2d407-103">Authorization Plug-in Entry Points</span></span>
+
+<span data-ttu-id="2d407-104">Os plug-ins de autorização são configurados apenas para um processo de host Serviços de Informações da Internet (IIS).</span><span class="sxs-lookup"><span data-stu-id="2d407-104">Authorization plug-ins are configured only for an Internet Information Services (IIS) host process.</span></span> <span data-ttu-id="2d407-105">Somente um plug-in de autorização pode ser configurado por diretório virtual.</span><span class="sxs-lookup"><span data-stu-id="2d407-105">Only one authorization plug-in can be configured per virtual directory.</span></span>
+
+<span data-ttu-id="2d407-106">Todos os plug-ins de autorização devem dar suporte aos seguintes pontos de entrada:</span><span class="sxs-lookup"><span data-stu-id="2d407-106">All authorization plug-ins must support the following entry points:</span></span>
+
+-   [<span data-ttu-id="2d407-107">**WSManPluginStartup**</span><span class="sxs-lookup"><span data-stu-id="2d407-107">**WSManPluginStartup**</span></span>](/windows/desktop/api/Wsman/nc-wsman-wsman_plugin_startup)
+-   [<span data-ttu-id="2d407-108">**WSManPluginShutdown**</span><span class="sxs-lookup"><span data-stu-id="2d407-108">**WSManPluginShutdown**</span></span>](/windows/desktop/api/Wsman/nc-wsman-wsman_plugin_shutdown)
+-   [<span data-ttu-id="2d407-109">**WSManPluginAuthzUser**</span><span class="sxs-lookup"><span data-stu-id="2d407-109">**WSManPluginAuthzUser**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user)
+-   [<span data-ttu-id="2d407-110">**WSManPluginAuthzOperation**</span><span class="sxs-lookup"><span data-stu-id="2d407-110">**WSManPluginAuthzOperation**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)
+
+<span data-ttu-id="2d407-111">O seguinte ponto de entrada é opcional:</span><span class="sxs-lookup"><span data-stu-id="2d407-111">The following entry point is optional:</span></span>
+
+-   [<span data-ttu-id="2d407-112">**WSManPluginAuthzQueryQuota**</span><span class="sxs-lookup"><span data-stu-id="2d407-112">**WSManPluginAuthzQueryQuota**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota)
+
+<span data-ttu-id="2d407-113">A tabela a seguir fornece uma visão geral dos pontos de entrada de plug-in de autorização na API de plug-in do Gerenciamento Remoto do Windows (WinRM).</span><span class="sxs-lookup"><span data-stu-id="2d407-113">The following table provides an overview of the authorization plug-in entry points in the Windows Remote Management (WinRM) Plug-in API.</span></span>
+
+
+
+| <span data-ttu-id="2d407-114">Função</span><span class="sxs-lookup"><span data-stu-id="2d407-114">Function</span></span>                                                                                      | <span data-ttu-id="2d407-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d407-115">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                                    |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="2d407-116">**\_operação de autorização de plug-in WSMan \_ \_**</span><span class="sxs-lookup"><span data-stu-id="2d407-116">**WSMAN\_PLUGIN\_ AUTHORIZE\_OPERATION**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)              | <span data-ttu-id="2d407-117">Chamado para autorizar uma operação específica.</span><span class="sxs-lookup"><span data-stu-id="2d407-117">Called to authorize a specific operation.</span></span> <br/> <span data-ttu-id="2d407-118">O nome do ponto de entrada da DLL para esse método deve ser [**WSManPluginAuthzOperation**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation).</span><span class="sxs-lookup"><span data-stu-id="2d407-118">The DLL entry point name for this method must be [**WSManPluginAuthzOperation**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation).</span></span><br/>                                                                                                                                                                                                       |
+| [<span data-ttu-id="2d407-119">**\_cota de \_ consulta de autorização de plug-in WSMan \_ \_**</span><span class="sxs-lookup"><span data-stu-id="2d407-119">**WSMAN\_PLUGIN\_ AUTHORIZE\_QUERY\_QUOTA**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)           | <span data-ttu-id="2d407-120">Chamado depois que uma conexão foi autorizada para recuperar informações de cota para o usuário.</span><span class="sxs-lookup"><span data-stu-id="2d407-120">Called after a connection has been authorized to retrieve quota information for the user.</span></span> <br/> <span data-ttu-id="2d407-121">O nome do ponto de entrada da DLL para esse método deve ser [**WSManPluginAuthzQueryQuota**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota).</span><span class="sxs-lookup"><span data-stu-id="2d407-121">The DLL entry point name for this method must be [**WSManPluginAuthzQueryQuota**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota).</span></span><br/>                                                                                                                                                    |
+| [<span data-ttu-id="2d407-122">**\_contexto de \_ liberação de autorizar plug-in do \_ WSMan \_**</span><span class="sxs-lookup"><span data-stu-id="2d407-122">**WSMAN\_PLUGIN\_ AUTHORIZE\_RELEASE\_CONTEXT**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context) | <span data-ttu-id="2d407-123">Chamado para liberar o contexto que um plug-in relata dos métodos [**WSManPluginAuthzUserComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzusercomplete) ou [**WSManPluginAuthzOperationComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzoperationcomplete) .</span><span class="sxs-lookup"><span data-stu-id="2d407-123">Called to release the context that a plug-in reports from either the [**WSManPluginAuthzUserComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzusercomplete) or [**WSManPluginAuthzOperationComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzoperationcomplete) methods.</span></span> <br/> <span data-ttu-id="2d407-124">O nome do ponto de entrada da DLL para esse método deve ser [**WSManPluginAuthzReleaseContext**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context).</span><span class="sxs-lookup"><span data-stu-id="2d407-124">The DLL entry point name for this method must be [**WSManPluginAuthzReleaseContext**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context).</span></span><br/> |
+| [<span data-ttu-id="2d407-125">**\_plug-in do WSMan \_ autorizar \_ usuário**</span><span class="sxs-lookup"><span data-stu-id="2d407-125">**WSMAN\_PLUGIN\_AUTHORIZE\_USER**</span></span>](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user)                         | <span data-ttu-id="2d407-126">Chamado para determinar se o usuário tem permissão para realizar uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d407-126">Called to determine whether the user is allowed to carry out a request.</span></span> <br/> <span data-ttu-id="2d407-127">O nome do ponto de entrada da biblioteca de vínculo dinâmico (DLL) para esse método deve ser [**WSManPluginAuthzUser**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user).</span><span class="sxs-lookup"><span data-stu-id="2d407-127">The dynamic-link library (DLL) entry point name for this method must be [**WSManPluginAuthzUser**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user).</span></span><br/>                                                                                                                                                            |
+
+
+
+ 
+
+ 
+
