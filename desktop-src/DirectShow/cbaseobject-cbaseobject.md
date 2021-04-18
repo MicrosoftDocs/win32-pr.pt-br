@@ -1,0 +1,96 @@
+---
+description: Método de construtor.
+ms.assetid: 20c3c4af-b22f-4b74-a6b6-5ee309de4eef
+title: Construtor CBaseObject. CBaseObject (combase. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CBaseObject.CBaseObject
+api_type:
+- COM
+api_location:
+- Strmbase.lib
+- Strmbase.dll
+- Strmbasd.lib
+- Strmbasd.dll
+ms.openlocfilehash: 4b13fe906af1900dbf067e8aa9273d811b3c1ef3
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105756643"
+---
+# <a name="cbaseobjectcbaseobject-constructor"></a>Construtor CBaseObject. CBaseObject
+
+Método de construtor.
+
+## <a name="syntax"></a>Sintaxe
+
+
+```C++
+CBaseObject(
+   const TCHAR *pName
+);
+```
+
+
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+*pName* 
+</dt> <dd>
+
+Cadeia de caracteres que contém o nome do objeto, para fins de depuração.
+
+</dd> </dl>
+
+## <a name="remarks"></a>Comentários
+
+Esse método incrementa a contagem de objetos ativos. (Consulte [**CBaseObject:: ObjectsActive**](cbaseobject-objectsactive.md).)
+
+Aloque o parâmetro *pname* na memória estática:
+
+
+```C++
+// Correct.
+CBaseObject *pObject = new CBaseObject(NAME("My Object"));
+
+// Incorrect.
+TCHAR ObjectName[] = TEXT("My Object");
+CBaseObject *pObject = new CObject(ObjectName);
+```
+
+
+
+A macro de [**nome**](name.md) compila como **NULL** em compilações de varejo, para que as cadeias de caracteres estáticas apareçam somente em compilações de depuração. Para obter mais informações, consulte [**DbgDumpObjectRegister**](dbgdumpobjectregister.md).
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Classe CBaseObject**](cbaseobject.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
