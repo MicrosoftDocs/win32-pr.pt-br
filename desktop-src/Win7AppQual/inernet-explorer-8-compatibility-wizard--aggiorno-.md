@@ -1,0 +1,27 @@
+---
+description: .
+ms.assetid: E8287262-16CB-43F4-AFFC-BEE37EF881E8
+title: Assistente de compatibilidade do IE 8
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 723eb19ee82de87d5710a0d9f6371fe325c0787c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105764148"
+---
+# <a name="internet-explorer-8-compatibility-wizard-aggiorno"></a><span data-ttu-id="1ee3f-103">Assistente de compatibilidade do Internet Explorer 8 (aggiorno)</span><span class="sxs-lookup"><span data-stu-id="1ee3f-103">Internet Explorer 8 Compatibility Wizard (Aggiorno)</span></span>
+
+<span data-ttu-id="1ee3f-104">O assistente de compatibilidade do Windows Internet Explorer 8 atualiza automaticamente os sites para renderização correta no Internet Explorer 8, sem interromper a compatibilidade em navegadores mais antigos.</span><span class="sxs-lookup"><span data-stu-id="1ee3f-104">The Compatibility Wizard in Windows Internet Explorer 8 automatically upgrades websites to render correctly in Internet Explorer 8 without breaking their compatibility in older browsers.</span></span> <span data-ttu-id="1ee3f-105">O assistente automatiza a tarefa de direcionamento da versão do navegador, mantendo a aparência e a funcionalidade das páginas.</span><span class="sxs-lookup"><span data-stu-id="1ee3f-105">The wizard automates the browser version targeting task, maintaining the look and functionality of the pages.</span></span> <span data-ttu-id="1ee3f-106">Para obter mais informações sobre esse assistente, consulte o [Assistente de compatibilidade do Internet Explorer 8 início rápido](https://www.mobilize.net/).</span><span class="sxs-lookup"><span data-stu-id="1ee3f-106">For more information about this wizard, see [Internet Explorer 8 Compatibility Wizard Quick Start](https://www.mobilize.net/).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="1ee3f-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="1ee3f-107">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="1ee3f-108">Ferramentas para depuração de aplicativos Web e Complementos</span><span class="sxs-lookup"><span data-stu-id="1ee3f-108">Tools for Debugging Web Applications and Add-Ons</span></span>](tools-for-debugging-web-applications-and-add-ons.md)
+</dt> </dl>
+
+ 
+
+ 
