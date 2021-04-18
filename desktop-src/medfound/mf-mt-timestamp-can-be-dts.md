@@ -1,0 +1,47 @@
+---
+description: Especifica se um decodificador pode usar os carimbos de data/hora (DTS) ao definir carimbos de data/hora.
+ms.assetid: 38E6AA56-EE38-48D5-92F1-F29ABB2C7A72
+title: Atributo MF_MT_TIMESTAMP_CAN_BE_DTS (Mfapi. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: a94cffdcea37c3fe7814a24db219f3d0cd971723
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105751740"
+---
+# <a name="mf_mt_timestamp_can_be_dts-attribute"></a>O \_ \_ carimbo de data/hora do MF MT \_ pode ser um \_ \_ atributo Dts
+
+Especifica se um decodificador pode usar os carimbos de data/hora (DTS) ao definir carimbos de data/hora.
+
+## <a name="data-type"></a>Tipo de dados
+
+**Bool** armazenado como **UINT32**
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------------------------|------------------------------------------------------------------------------------|
+| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
+| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

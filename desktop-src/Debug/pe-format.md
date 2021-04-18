@@ -3,14 +3,14 @@ description: Esta especificação descreve a estrutura de arquivos executáveis 
 ms.assetid: 3dbfbf7f-6662-45a4-99f1-e0e24c370dee
 title: Formato PE
 ms.topic: article
-ms.date: 08/11/2020
+ms.date: 03/31/2021
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 257185019f329e0d4431ca61d1d88e2c0347f133
-ms.sourcegitcommit: f374b50b37160b683da16b59ac9340282a8f50a5
+ms.openlocfilehash: 3cc6fd777bca831ca4424baaa81c5525a24556ec
+ms.sourcegitcommit: 3b9424e1dcd951b2a73e47de3c7f4d734de4263b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "103919672"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106103863"
 ---
 # <a name="pe-format"></a>Formato PE
 
@@ -1517,7 +1517,7 @@ Uma visão geral da estrutura geral da seção exportar é descrita abaixo. As t
 
 
 
-| Nome da tabela                         | Description                                                                                                                                                                                                                                                                                                                                                |
+| Nome da tabela                         | Descrição                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exportar tabela de diretórios <br/> | Uma tabela com apenas uma linha (ao contrário do diretório de depuração). Esta tabela indica os locais e tamanhos das outras tabelas de exportação. <br/>                                                                                                                                                                                                               |
 | Exportar tabela de endereços <br/>   | Uma matriz de RVAs de símbolos exportados. Esses são os endereços reais das funções e dos dados exportados no código executável e nas seções de dados. Outros arquivos de imagem podem importar um símbolo usando um índice para esta tabela (um ordinal) ou, opcionalmente, usando o nome público que corresponde ao ordinal se um nome público for definido. <br/> |
@@ -1666,7 +1666,7 @@ Uma tabela de pesquisa de importação é uma matriz de números de 32 bits para
 
 
 
-| Bit (s)            | Tamanho           | Campo de bits                       | Description                                                                                                                                                               |
+| Bit (s)            | Tamanho           | Campo de bits                       | Descrição                                                                                                                                                               |
 |-------------------|----------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 31/63 <br/> | 1 <br/>  | Sinalizador de ordinal/nome <br/>   | Se esse bit for definido, importe por ordinal. Caso contrário, importe por nome. O bit é mascarado como 0x80000000 para PE32, 0x8000000000000000 para PE32 +. <br/>                         |
 | 15-0 <br/>  | 16 <br/> | Número ordinal <br/>      | Um número ordinal de 16 bits. Esse campo só será usado se o campo de bit do sinalizador ordinal/nome for 1 (importar por ordinal). O bits 30-15 ou 62-15 deve ser 0. <br/>                  |
@@ -2114,7 +2114,7 @@ Os primeiros 8 bytes de um arquivo consistem na assinatura do arquivo. O restant
 
 -   O primeiro e o segundo Membros são "membros do vinculador". Cada um desses membros tem seu próprio formato, conforme descrito em seção [tipo de nome de importação](#import-name-type). Normalmente, um vinculador coloca informações nesses membros de arquivamento. Os membros do vinculador contêm o diretório do arquivo morto.
 
--   O terceiro membro é o membro "longnames". Esse membro consiste em uma série de cadeias de caracteres ASCII com terminação nula, nas quais cada cadeia de caracteres é o nome de outro membro de arquivo.
+-   O terceiro membro é o membro "longnames". Esse membro opcional consiste em uma série de cadeias de caracteres ASCII com terminação nula em que cada cadeia de caracteres é o nome de outro membro de arquivo.
 
 -   O restante do arquivo consiste em membros padrão (arquivo de objeto). Cada um desses membros contém o conteúdo de um arquivo de objeto em sua totalidade.
 
@@ -2180,11 +2180,11 @@ O campo nome tem um dos formatos mostrados na tabela a seguir. Como mencionado a
 
 
 
-| Conteúdo do campo nome | Description                                                                                                                                                                                                                                                                                          |
+| Conteúdo do campo nome | Descrição                                                                                                                                                                                                                                                                                          |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | nomes <br/>      | O nome do membro de arquivo morto. <br/>                                                                                                                                                                                                                                                          |
 | / <br/>          | O membro de arquivo morto é um dos dois membros do vinculador. Ambos os membros do vinculador têm esse nome. <br/>                                                                                                                                                                                          |
-| // <br/>         | O membro de arquivo é o membro longnames, que consiste em uma série de cadeias de caracteres ASCII com terminação nula. O membro longnames é o terceiro membro de arquivo morto e deve estar sempre presente mesmo se o conteúdo estiver vazio. <br/>                                                                     |
+| // <br/>         | O membro de arquivo é o membro longnames, que consiste em uma série de cadeias de caracteres ASCII com terminação nula. O membro longnames é o terceiro membro de arquivo e é opcional. <br/>                                                                     |
 | /n <br/>         | O nome do membro de arquivo está localizado no deslocamento n dentro do membro longnames. O número n é a representação decimal do deslocamento. Por exemplo: "/26" indica que o nome do membro de arquivo está localizado 26 bytes além do início do conteúdo do membro de longnames. <br/> |
 
 
