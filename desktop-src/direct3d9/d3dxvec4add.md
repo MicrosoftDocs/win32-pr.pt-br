@@ -1,0 +1,112 @@
+---
+description: Adiciona dois vetores 4D.
+ms.assetid: da807dc0-6a31-4315-a32d-a42062c22199
+title: Função D3DXVec4Add (D3dx9math. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DXVec4Add
+api_type:
+- LibDef
+api_location:
+- d3dx9.lib
+- d3dx9.dll
+ms.openlocfilehash: 62747cec15c4a9916dfb42572006cbb9fc908b3e
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "105752161"
+---
+# <a name="d3dxvec4add-function"></a><span data-ttu-id="67977-103">Função D3DXVec4Add</span><span class="sxs-lookup"><span data-stu-id="67977-103">D3DXVec4Add function</span></span>
+
+<span data-ttu-id="67977-104">Adiciona dois vetores 4D.</span><span class="sxs-lookup"><span data-stu-id="67977-104">Adds two 4D vectors.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="67977-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="67977-105">Syntax</span></span>
+
+
+```C++
+D3DXVECTOR4* D3DXVec4Add(
+  _Inout_       D3DXVECTOR4 *pOut,
+  _In_    const D3DXVECTOR4 *pV1,
+  _In_    const D3DXVECTOR4 *pV2
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="67977-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="67977-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="67977-107">*pout* \[ entrada, saída\]</span><span class="sxs-lookup"><span data-stu-id="67977-107">*pOut* \[in, out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="67977-108">Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***</span><span class="sxs-lookup"><span data-stu-id="67977-108">Type: **[**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="67977-109">Ponteiro para a estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é o resultado da operação.</span><span class="sxs-lookup"><span data-stu-id="67977-109">Pointer to the [**D3DXVECTOR4**](d3dxvector4.md) structure that is the result of the operation.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="67977-110">*pV1* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="67977-110">*pV1* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="67977-111">Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***</span><span class="sxs-lookup"><span data-stu-id="67977-111">Type: **const [**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="67977-112">Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem.</span><span class="sxs-lookup"><span data-stu-id="67977-112">Pointer to a source [**D3DXVECTOR4**](d3dxvector4.md) structure.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="67977-113">*pV2* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="67977-113">*pV2* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="67977-114">Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***</span><span class="sxs-lookup"><span data-stu-id="67977-114">Type: **const [**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="67977-115">Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem.</span><span class="sxs-lookup"><span data-stu-id="67977-115">Pointer to a source [**D3DXVECTOR4**](d3dxvector4.md) structure.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="67977-116">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="67977-116">Return value</span></span>
+
+<span data-ttu-id="67977-117">Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***</span><span class="sxs-lookup"><span data-stu-id="67977-117">Type: **[**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="67977-118">Ponteiro para uma estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é a soma dos dois vetores.</span><span class="sxs-lookup"><span data-stu-id="67977-118">Pointer to a [**D3DXVECTOR4**](d3dxvector4.md) structure that is the sum of the two vectors.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="67977-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="67977-119">Remarks</span></span>
+
+<span data-ttu-id="67977-120">O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* .</span><span class="sxs-lookup"><span data-stu-id="67977-120">The return value for this function is the same value returned in the *pOut* parameter.</span></span> <span data-ttu-id="67977-121">Dessa forma, a função **D3DXVec4Add** pode ser usada como um parâmetro para outra função.</span><span class="sxs-lookup"><span data-stu-id="67977-121">In this way, the **D3DXVec4Add** function can be used as a parameter for another function.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="67977-122">Requisitos</span><span class="sxs-lookup"><span data-stu-id="67977-122">Requirements</span></span>
+
+
+
+| <span data-ttu-id="67977-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="67977-123">Requirement</span></span> | <span data-ttu-id="67977-124">Valor</span><span class="sxs-lookup"><span data-stu-id="67977-124">Value</span></span> |
+|--------------------|----------------------------------------------------------------------------------------|
+| <span data-ttu-id="67977-125">parâmetro</span><span class="sxs-lookup"><span data-stu-id="67977-125">Header</span></span><br/>  | <dl> <span data-ttu-id="67977-126"><dt>D3dx9math. h</dt></span><span class="sxs-lookup"><span data-stu-id="67977-126"><dt>D3dx9math.h</dt></span></span> </dl> |
+| <span data-ttu-id="67977-127">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="67977-127">Library</span></span><br/> | <dl> <span data-ttu-id="67977-128"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="67977-128"><dt>D3dx9.lib</dt></span></span> </dl>   |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="67977-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="67977-129">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="67977-130">Funções matemáticas</span><span class="sxs-lookup"><span data-stu-id="67977-130">Math Functions</span></span>](dx9-graphics-reference-d3dx-functions-math.md)
+</dt> <dt>
+
+[<span data-ttu-id="67977-131">**D3DXVec4Subtract**</span><span class="sxs-lookup"><span data-stu-id="67977-131">**D3DXVec4Subtract**</span></span>](d3dxvec4subtract.md)
+</dt> <dt>
+
+[<span data-ttu-id="67977-132">**D3DXVec4Scale**</span><span class="sxs-lookup"><span data-stu-id="67977-132">**D3DXVec4Scale**</span></span>](d3dxvec4scale.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
