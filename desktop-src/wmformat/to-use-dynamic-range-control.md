@@ -1,0 +1,78 @@
+---
+title: Para usar o controle de intervalo dinâmico
+description: Para usar o controle de intervalo dinâmico
+ms.assetid: 719658c1-952f-4e8f-a3ea-bdf89a0a7268
+keywords:
+- SDK do Windows Media Format, controle de intervalo dinâmico
+- SDK do Windows Media Format, codec do Windows Media Audio 9 Professional
+- SDK do Windows Media Format, codec de áudio do Windows Media 9 sem perdas
+- ASF (Advanced Systems Format), codec do Windows Media Audio 9 Professional
+- ASF (formato de sistemas avançados), codec do Windows Media Audio 9 Professional
+- ASF (Advanced Systems Format), codec de áudio do Windows Media 9 Lossless
+- ASF (formato de sistemas avançados), codec de áudio do Windows Media 9 Lossless
+- ASF (Advanced Systems Format), controle de intervalo dinâmico
+- ASF (formato de sistemas avançados), controle de intervalo dinâmico
+- controle de intervalo dinâmico
+- codecs, codec de áudio do Windows Media 9 sem perdas
+- codecs, codec do Windows Media Audio 9 Professional
+- Codec sem perdas do Windows Media Audio 9, controle de intervalo dinâmico
+- Codec do Windows Media Audio 9 Professional, controle de intervalo dinâmico
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 077ebc0052d0154aec395f371a5c2dc3ffd46c67
+ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "105810737"
+---
+# <a name="to-use-dynamic-range-control"></a><span data-ttu-id="34bad-117">Para usar o controle de intervalo dinâmico</span><span class="sxs-lookup"><span data-stu-id="34bad-117">To Use Dynamic Range Control</span></span>
+
+<span data-ttu-id="34bad-118">O intervalo dinâmico de uma parte do conteúdo de áudio é basicamente a diferença entre o volume mais baixo e o volume máximo.</span><span class="sxs-lookup"><span data-stu-id="34bad-118">The dynamic range of a piece of audio content is basically the difference between the lowest volume and the maximum volume.</span></span> <span data-ttu-id="34bad-119">Se o intervalo dinâmico do conteúdo for muito alto, os usuários poderão se encontrar ajustando o volume repetidamente durante a reprodução.</span><span class="sxs-lookup"><span data-stu-id="34bad-119">If the dynamic range of the content is too high, users may find themselves adjusting the volume repeatedly during playback.</span></span> <span data-ttu-id="34bad-120">Por exemplo, os filmes com frequência têm um intervalo dinâmico alto.</span><span class="sxs-lookup"><span data-stu-id="34bad-120">For example, movies frequently have a high dynamic range.</span></span> <span data-ttu-id="34bad-121">Geralmente, quando o volume é ajustado para que a caixa de diálogo possa ser compreendida durante os bastidores silenciosos, outras partes do filme com efeitos musicais ou sonoros são mais altos do que o desejado.</span><span class="sxs-lookup"><span data-stu-id="34bad-121">Often, when the volume is adjusted so that dialog can be understood during quiet scenes, other parts of the movie with music or sound effects are louder than desired.</span></span>
+
+<span data-ttu-id="34bad-122">Os codecs do Windows Media Audio 9 Professional e Windows Media Audio 9 Lossless dão suporte a um recurso chamado controle de intervalo dinâmico.</span><span class="sxs-lookup"><span data-stu-id="34bad-122">The Windows Media Audio 9 Professional and Windows Media Audio 9 Lossless codecs support a feature called dynamic range control.</span></span> <span data-ttu-id="34bad-123">No momento da codificação, o codec calcula os valores de amplitude de pico e média no conteúdo, e o objeto gravador armazena esses valores nos metadados para o fluxo quando a codificação é concluída.</span><span class="sxs-lookup"><span data-stu-id="34bad-123">At encode time, the codec calculates the peak and average amplitude values in the content, and the writer object stores these values in the metadata for the stream when encoding is finished.</span></span> <span data-ttu-id="34bad-124">Opcionalmente, um aplicativo também pode gravar valores de "destino" como metadados que os aplicativos do Player e o decodificador podem usar como dicas ao reproduzir o arquivo.</span><span class="sxs-lookup"><span data-stu-id="34bad-124">Optionally, an application can also write "target" values as metadata that player applications and the decoder can use as hints when playing back the file.</span></span> <span data-ttu-id="34bad-125">No tempo de reprodução, um aplicativo pode especificar o nível de controle de intervalo dinâmico a ser aplicado ao fluxo de áudio.</span><span class="sxs-lookup"><span data-stu-id="34bad-125">At playback time, an application can specify the level of dynamic range control to apply to the audio stream.</span></span>
+
+<span data-ttu-id="34bad-126">O Windows Media Player implementa o controle de intervalo dinâmico como o recurso de modo silencioso.</span><span class="sxs-lookup"><span data-stu-id="34bad-126">Windows Media Player implements dynamic range control as the Quiet Mode feature.</span></span>
+
+## <a name="when-to-use-dynamic-range-control"></a><span data-ttu-id="34bad-127">Quando usar o controle de intervalo dinâmico</span><span class="sxs-lookup"><span data-stu-id="34bad-127">When to Use Dynamic Range Control</span></span>
+
+<span data-ttu-id="34bad-128">O controle de intervalo dinâmico pode alterar o som do conteúdo.</span><span class="sxs-lookup"><span data-stu-id="34bad-128">Dynamic range control can alter the sound of the content.</span></span> <span data-ttu-id="34bad-129">Por esse motivo, você não deve configurar seu aplicativo para usar o controle de intervalo dinâmico automaticamente.</span><span class="sxs-lookup"><span data-stu-id="34bad-129">For that reason, you should not configure your application to use dynamic range control automatically.</span></span> <span data-ttu-id="34bad-130">Em vez disso, forneça aos usuários a capacidade de ativar ou desativar o controle de intervalo dinâmico, conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="34bad-130">Instead, provide users with the ability to turn dynamic range control on or off as needed.</span></span>
+
+## <a name="using-dynamic-range-control"></a><span data-ttu-id="34bad-131">Usando o controle de intervalo dinâmico</span><span class="sxs-lookup"><span data-stu-id="34bad-131">Using Dynamic Range Control</span></span>
+
+<span data-ttu-id="34bad-132">No tempo de reprodução, o controle de intervalo dinâmico é ativado usando a configuração de saída g \_ wszDynamicRangeControl.</span><span class="sxs-lookup"><span data-stu-id="34bad-132">At playback time, dynamic range control is activated using the output setting g\_wszDynamicRangeControl.</span></span> <span data-ttu-id="34bad-133">Use [**IWMReaderAdvanced2:: SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setoutputsetting) para definir a configuração.</span><span class="sxs-lookup"><span data-stu-id="34bad-133">Use [**IWMReaderAdvanced2::SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setoutputsetting) to configure the setting.</span></span> <span data-ttu-id="34bad-134">Um valor de zero (o padrão) indica que o intervalo dinâmico não deve ser alterado.</span><span class="sxs-lookup"><span data-stu-id="34bad-134">A value of zero (the default) indicates that the dynamic range should not be altered.</span></span> <span data-ttu-id="34bad-135">Um valor de 1 ou 2 sinaliza o codec para executar o controle de intervalo dinâmico, em que 1 é um nível moderado de compactação de intervalo dinâmico e 2 é um alto nível de compactação de intervalo dinâmico.</span><span class="sxs-lookup"><span data-stu-id="34bad-135">A value of 1 or 2 signals the codec to perform dynamic range control, where 1 is a moderate level of dynamic range compression, and 2 is a high level of dynamic range compression.</span></span>
+
+<span data-ttu-id="34bad-136">No momento da codificação ou no tempo de reprodução, você pode dar ao codec o destino valores de PCM para os níveis de pico e médio definindo os atributos [**WM/WMADRCPeakTarget**](wm-wmadrcpeaktarget.md) e [**WM/WMADRCAverageTarget**](wm-wmadrcaveragetarget.md) , respectivamente.</span><span class="sxs-lookup"><span data-stu-id="34bad-136">At encoding time or playback time, you can give the codec target PCM values for the peak and average levels by setting the [**WM/WMADRCPeakTarget**](wm-wmadrcpeaktarget.md) and [**WM/WMADRCAverageTarget**](wm-wmadrcaveragetarget.md) attributes, respectively.</span></span> <span data-ttu-id="34bad-137">Esses valores são armazenados como atributos de metadados e devem ser acessados usando os métodos da interface [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) .</span><span class="sxs-lookup"><span data-stu-id="34bad-137">These values are stored as metadata attributes and should be accessed using the methods of the [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) interface.</span></span> <span data-ttu-id="34bad-138">Quando você codifica um fluxo de áudio usando o codec Professional ou Lossless, os atributos [**WM/WMADRCPeakReference**](wm-wmadrcpeakreference.md) e [**WM/WMADRCAverageReference**](wm-wmadrcaveragereference.md) são definidos automaticamente para os níveis de pico e médio do conteúdo original.</span><span class="sxs-lookup"><span data-stu-id="34bad-138">When you encode an audio stream using the professional or lossless codec, the [**WM/WMADRCPeakReference**](wm-wmadrcpeakreference.md) and [**WM/WMADRCAverageReference**](wm-wmadrcaveragereference.md) attributes are set automatically to the peak and average levels of the original content.</span></span> <span data-ttu-id="34bad-139">Os valores de destino são definidos como os mesmos valores das referências por padrão.</span><span class="sxs-lookup"><span data-stu-id="34bad-139">The target values are set to the same values as the references by default.</span></span>
+
+<span data-ttu-id="34bad-140">O decodificador no tempo de reprodução calcula o intervalo dinâmico com base no nível selecionado do controle de intervalo dinâmico e os valores de destino (se houver algum especificado).</span><span class="sxs-lookup"><span data-stu-id="34bad-140">The decoder at playback time calculates the dynamic range based on the selected level of dynamic range control and the target values (if any are specified).</span></span> <span data-ttu-id="34bad-141">Os intervalos possíveis são mostrados na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="34bad-141">The possible ranges are shown in the following table.</span></span>
+
+
+
+| <span data-ttu-id="34bad-142">Settings</span><span class="sxs-lookup"><span data-stu-id="34bad-142">Settings</span></span>                                                                | <span data-ttu-id="34bad-143">Intervalo de áudio entregue</span><span class="sxs-lookup"><span data-stu-id="34bad-143">Range of delivered audio</span></span>                                                                                                     |
+|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="34bad-144">g \_ wszDynamicRangeControl = 0 (quaisquer valores de destino)</span><span class="sxs-lookup"><span data-stu-id="34bad-144">g\_wszDynamicRangeControl = 0 (Any target values)</span></span>                       | <span data-ttu-id="34bad-145">Mesmo intervalo do conteúdo original.</span><span class="sxs-lookup"><span data-stu-id="34bad-145">Same range as the original content.</span></span>                                                                                          |
+| <span data-ttu-id="34bad-146">g \_ wszDynamicRangeControl = 1 (valores de destino iguais aos valores de referência)</span><span class="sxs-lookup"><span data-stu-id="34bad-146">g\_wszDynamicRangeControl = 1 (Target values equal to reference values)</span></span> | <span data-ttu-id="34bad-147">O nível médio é mantido e os picos são confinados para a média de + 12 dB.</span><span class="sxs-lookup"><span data-stu-id="34bad-147">Average level is maintained and peaks are confined to the average +12 dB.</span></span>                                                    |
+| <span data-ttu-id="34bad-148">g \_ wszDynamicRangeControl = 2 (valores de destino iguais aos valores de referência)</span><span class="sxs-lookup"><span data-stu-id="34bad-148">g\_wszDynamicRangeControl = 2 (Target values equal to reference values)</span></span> | <span data-ttu-id="34bad-149">O nível médio é mantido e os picos são confinados no banco de e médio + 6 dB.</span><span class="sxs-lookup"><span data-stu-id="34bad-149">Average level is maintained and peaks are confined to the average +6 dB.</span></span>                                                     |
+| <span data-ttu-id="34bad-150">g \_ wszDynamicRangeControl = 1 (valores de destino especificados)</span><span class="sxs-lookup"><span data-stu-id="34bad-150">g\_wszDynamicRangeControl = 1 (Target values specified)</span></span>                 | <span data-ttu-id="34bad-151">Nível médio definido como o valor médio de destino e o pico confinados para o valor de pico de destino.</span><span class="sxs-lookup"><span data-stu-id="34bad-151">Average level set to the target average value and peaks confined to the target peak value.</span></span>                                   |
+| <span data-ttu-id="34bad-152">g \_ wszDynamicRangeControl = 2 (valores de destino especificados)</span><span class="sxs-lookup"><span data-stu-id="34bad-152">g\_wszDynamicRangeControl = 2 (Target values specified)</span></span>                 | <span data-ttu-id="34bad-153">Nível médio definido como o valor médio de destino e picos refinados à mediana dos valores de pico de destino e média de destino.</span><span class="sxs-lookup"><span data-stu-id="34bad-153">Average level set to the target average value and peaks confined to the median of the target average and target peak values.</span></span> |
+
+
+
+ 
+
+<span data-ttu-id="34bad-154">Observe que o controle de intervalo dinâmico é um recurso de decodificação apenas e existe somente como metadados no próprio arquivo.</span><span class="sxs-lookup"><span data-stu-id="34bad-154">Note that dynamic range control is a feature of decoding only and exists only as metadata in the file itself.</span></span> <span data-ttu-id="34bad-155">Essas configurações não têm efeito sobre o conteúdo armazenado no arquivo, a menos que você instrua especificamente o decodificador para usá-los.</span><span class="sxs-lookup"><span data-stu-id="34bad-155">These settings have no effect on the content stored in the file unless you specifically instruct the decoder to use them.</span></span> <span data-ttu-id="34bad-156">O Windows Media Format SDK não fornece métodos para modificar o intervalo dinâmico dos dados de áudio no momento da codificação.</span><span class="sxs-lookup"><span data-stu-id="34bad-156">The Windows Media Format SDK provides no methods for modifying the dynamic range of the audio data at encoding time.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="34bad-157">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="34bad-157">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="34bad-158">**Tópicos avançados**</span><span class="sxs-lookup"><span data-stu-id="34bad-158">**Advanced Topics**</span></span>](advanced-topics.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
