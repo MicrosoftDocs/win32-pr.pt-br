@@ -1,6 +1,6 @@
 ---
-title: 'Função SampleBias:: SampleBias (S, float, float, float)'
-description: 'Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para. | Função SampleBias:: SampleBias (S, float, float, float)'
+title: 'Função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray'
+description: 'A função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap.'
 ms.assetid: 6683F115-4F81-4C24-B735-67DB4B52455B
 keywords:
 - HLSL da função SampleBias
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d95a1b0341e61853a20d313a04d1cde64dde66d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0c57eec224ca92b2584ba7262488530ea7080939
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104091911"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106187807"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloat-function"></a>Função SampleBias:: SampleBias (S, float, float, float)
+# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecubearray"></a>Função SampleBias:: SampleBias (S, float, float, float) para TextureCubeArray
 
 Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap, com um valor opcional para fixe de exemplo de valores de LOD (nível de detalhe) para.
 
