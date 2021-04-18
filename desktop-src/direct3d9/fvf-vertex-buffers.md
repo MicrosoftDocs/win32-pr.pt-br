@@ -1,0 +1,35 @@
+---
+description: 'Definir o parâmetro FVF do método IDirect3DDevice9:: CreateVertexBuffer como um valor diferente de zero, que deve ser um código FVF válido, indica que o conteúdo do buffer será caracterizado por um código FVF.'
+ms.assetid: 7cab559f-3e9d-46bd-b00f-439e0922aeeb
+title: Buffers de vértice FVF (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a86201c3ddc1cab6d492539caccc61c1430b3a2c
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "105786318"
+---
+# <a name="fvf-vertex-buffers-direct3d-9"></a><span data-ttu-id="c0fa1-103">Buffers de vértice FVF (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="c0fa1-103">FVF Vertex Buffers (Direct3D 9)</span></span>
+
+<span data-ttu-id="c0fa1-104">Definir o parâmetro FVF do método [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/desktop/api) como um valor diferente de zero, que deve ser um código FVF válido, indica que o conteúdo do buffer será caracterizado por um código FVF.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-104">Setting the FVF parameter of the [**IDirect3DDevice9::CreateVertexBuffer**](/windows/desktop/api) method to a nonzero value, which must be a valid FVF code, indicates that the buffer content is to be characterized by an FVF code.</span></span> <span data-ttu-id="c0fa1-105">Um buffer de vértice que é criado com um código FVF é chamado de buffer de vértice FVF.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-105">A vertex buffer that is created with an FVF code is referred to as an FVF vertex buffer.</span></span> <span data-ttu-id="c0fa1-106">Alguns métodos ou usos de [**IDirect3DDevice9**](/windows/desktop/api) exigem buffers de vértices FVF e outros exigem buffers de vértices não FVF.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-106">Some methods or uses of [**IDirect3DDevice9**](/windows/desktop/api) require FVF vertex buffers, and others require non-FVF vertex buffers.</span></span> <span data-ttu-id="c0fa1-107">Os buffers de vértice FVF são necessários como o argumento de buffer de vértice de destino para [**IDirect3DDevice9::P rocessvertices**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices).</span><span class="sxs-lookup"><span data-stu-id="c0fa1-107">FVF vertex buffers are required as the destination vertex buffer argument for [**IDirect3DDevice9::ProcessVertices**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices).</span></span>
+
+<span data-ttu-id="c0fa1-108">Os buffers de vértice FVF podem ser associados a um fluxo de dados de origem para qualquer número de fluxo.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-108">FVF vertex buffers can be bound to a source data stream for any stream number.</span></span>
+
+<span data-ttu-id="c0fa1-109">A presença do componente D3DFVF \_ XYZRHW em buffers de vértices FVF indica que os vértices nesse buffer foram processados.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-109">The presence of the D3DFVF\_XYZRHW component on FVF vertex buffers indicates that the vertices in that buffer have been processed.</span></span> <span data-ttu-id="c0fa1-110">Buffers de vértices usados para [**IDirect3DDevice9:P:**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices) os buffers de vértice de destino rocessvertices devem ser pós-processamento.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-110">Vertex buffers used for [**IDirect3DDevice9::ProcessVertices**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices) destination vertex buffers must be post-processed.</span></span> <span data-ttu-id="c0fa1-111">Os buffers de vértice usados para entradas de sombreador de função fixa podem ser pré-processados ou pré-processados.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-111">Vertex buffers used for fixed function shader inputs can be either preprocessed or postprocessed.</span></span> <span data-ttu-id="c0fa1-112">Se o buffer de vértice for pós-processamento, o sombreador será efetivamente ignorado e os dados serão passados diretamente para o módulo de recorte e configuração primitivos.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-112">If the vertex buffer is post-processed, then the shader is effectively bypassed and the data is passed directly to the primitive clipping and setup module.</span></span>
+
+<span data-ttu-id="c0fa1-113">Os buffers de vértice FVF podem ser usados com sombreadores de vértice.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-113">FVF vertex buffers can be used with vertex shaders.</span></span> <span data-ttu-id="c0fa1-114">Além disso, os fluxos de vértice podem representar os mesmos formatos de vértice que os buffers de vértice não FVF.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-114">Also, vertex streams can represent the same vertex formats that non-FVF vertex buffers can.</span></span> <span data-ttu-id="c0fa1-115">Eles não precisam ser usados para inserir dados de buffers de vértices separados.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-115">They do not have to be used to input data from separate vertex buffers.</span></span> <span data-ttu-id="c0fa1-116">A flexibilidade adicional dos novos fluxos de vértice permite que os aplicativos que precisam manter seus dados separados funcionem melhor, mas não são necessários.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-116">The additional flexibility of the new vertex streams enables applications that need to keep their data separate to work better, but it is not required.</span></span> <span data-ttu-id="c0fa1-117">Se o aplicativo puder manter dados intercalados antecipadamente, isso será um aumento de desempenho.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-117">If the application can maintain interleaved data in advance, then that is a performance boost.</span></span> <span data-ttu-id="c0fa1-118">Se o aplicativo apenas intercalar os dados antes de cada chamada de renderização, ele deve habilitar a API ou o hardware para fazer isso com vários fluxos.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-118">If the application will only interleave the data before every rendering call, then it should enable the API or hardware to do this with multiple streams.</span></span>
+
+<span data-ttu-id="c0fa1-119">As coisas mais importantes com o desempenho do vértice é usar um vértice de 32 bytes e manter uma boa ordem de cache.</span><span class="sxs-lookup"><span data-stu-id="c0fa1-119">The most important things with vertex performance is to use a 32-byte vertex, and to maintain good cache ordering.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="c0fa1-120">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c0fa1-120">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="c0fa1-121">Buffers de vértice</span><span class="sxs-lookup"><span data-stu-id="c0fa1-121">Vertex Buffers</span></span>](vertex-buffers.md)
+</dt> </dl>
+
+ 
+
+ 
