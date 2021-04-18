@@ -1,0 +1,40 @@
+---
+description: Um patch que não deve mais ser usado pode ser eliminado da sequência de aplicação de patch.
+ms.assetid: b1d499d9-4fd3-4996-84a1-c32acefbb98f
+title: Eliminando patches
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a705ce5919ffd36e6fc860403e11db56c6df1592
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "105748987"
+---
+# <a name="eliminating-patches"></a><span data-ttu-id="421f3-103">Eliminando patches</span><span class="sxs-lookup"><span data-stu-id="421f3-103">Eliminating Patches</span></span>
+
+<span data-ttu-id="421f3-104">Um patch que não deve mais ser usado pode ser eliminado da sequência de aplicação de patch.</span><span class="sxs-lookup"><span data-stu-id="421f3-104">A patch that should no longer be used can be eliminated from the patching sequence.</span></span> <span data-ttu-id="421f3-105">Isso impede que o patch seja aplicado quando o aplicativo de destino é corrigido.</span><span class="sxs-lookup"><span data-stu-id="421f3-105">This prevents the patch from being applied when the target application is patched.</span></span> <span data-ttu-id="421f3-106">Isso é diferente de remover um patch que já está aplicado a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="421f3-106">This is different than removing a patch that is already applied to an application.</span></span> <span data-ttu-id="421f3-107">Para obter informações sobre como remover patches aplicados, consulte [removendo patches](removing-patches.md).</span><span class="sxs-lookup"><span data-stu-id="421f3-107">For information about removing applied patches, see [Removing Patches](removing-patches.md).</span></span>
+
+<span data-ttu-id="421f3-108">\* \* Windows Installer 3,0 e posterior: \* \*</span><span class="sxs-lookup"><span data-stu-id="421f3-108">\*\*Windows Installer 3.0 and later:  \*\*</span></span>
+
+<span data-ttu-id="421f3-109">Os patches que têm a tabela [MsiPatchSequence](msipatchsequence-table.md) podem usar essa tabela para eliminar patches da sequência de aplicação de patch.</span><span class="sxs-lookup"><span data-stu-id="421f3-109">Patches that have the [MsiPatchSequence](msipatchsequence-table.md) table can use this table to eliminate patches from the patching sequence.</span></span> <span data-ttu-id="421f3-110">Um patch pode eliminar os patches que estão antes dele na sequência de aplicação de patch e substituir as informações desses patches por suas próprias informações.</span><span class="sxs-lookup"><span data-stu-id="421f3-110">A patch can eliminate patches that come before it in the patching sequence, and replace the information from those patches with its own information.</span></span> <span data-ttu-id="421f3-111">O patch que especifica quais patches devem ser eliminados e os patches que estão sendo eliminados deve ter uma tabela MsiPatchSequence que contém informações.</span><span class="sxs-lookup"><span data-stu-id="421f3-111">Both the patch that specifies which patches to eliminate and the patches being eliminated must have a MsiPatchSequence table that contains information.</span></span>
+
+<span data-ttu-id="421f3-112">Se os patches eliminados e o patch de substituição não tiverem tabelas [MsiPatchSequence](msipatchsequence-table.md) , o pacote de patch poderá especificar uma lista de patches a serem eliminados da sequência de aplicação de patch em sua propriedade [**Summary de número de revisão**](revision-number-summary.md) .</span><span class="sxs-lookup"><span data-stu-id="421f3-112">If the eliminated patches and replacement patch do not have [MsiPatchSequence](msipatchsequence-table.md) tables, the patch package can specify a list of patches to be eliminated from the patching sequence in its [**Revision Number Summary**](revision-number-summary.md) property.</span></span> <span data-ttu-id="421f3-113">Windows Installer 3,0 ignora essa lista se os patches eliminados ou de substituição tiverem uma tabela MsiPatchSequence.</span><span class="sxs-lookup"><span data-stu-id="421f3-113">Windows Installer 3.0 ignores this list if either the eliminated or replacement patches have a MsiPatchSequence table.</span></span>
+
+<span data-ttu-id="421f3-114">Quando o pacote de patch contém patches com informações de sequência na tabela [MsiPatchSequence](msipatchsequence-table.md) e alguns patches sem essas informações, o Windows Installer 3,0 sequencia os patches na ordem descrita na seção a seguir: [patches de sequenciamento](sequencing-patches.md).</span><span class="sxs-lookup"><span data-stu-id="421f3-114">When the patch package contains patches with sequence information in the [MsiPatchSequence](msipatchsequence-table.md) table and some patches without this information, Windows installer 3.0 sequences the patches in the order described in the following section: [Sequencing Patches](sequencing-patches.md).</span></span>
+
+<span data-ttu-id="421f3-115">Por exemplo, Patch1, Patch2 e Patch3 podem ser três patches que não têm a tabela [MsiPatchSequence](msipatchsequence-table.md) .</span><span class="sxs-lookup"><span data-stu-id="421f3-115">For example, Patch1, Patch2, and Patch3 can be three patches that do not have the [MsiPatchSequence](msipatchsequence-table.md) table.</span></span> <span data-ttu-id="421f3-116">Patch2 pode ser um patch aplicável somente se o Patch1 já tiver sido aplicado ao aplicativo.</span><span class="sxs-lookup"><span data-stu-id="421f3-116">Patch2 can be a patch that is only applicable if Patch1 has already been applied to the application.</span></span> <span data-ttu-id="421f3-117">Patch3 pode ser um patch posterior que tem todas as informações em Patch1 e também elimina Patch1 da sequência de patches.</span><span class="sxs-lookup"><span data-stu-id="421f3-117">Patch3 can be a later patch that has all the information in Patch1 and also eliminates Patch1 from the patching sequence.</span></span> <span data-ttu-id="421f3-118">Isso significa que, quando Patch3 é aplicado, o patch 2 também se torna inaplicável, pois requer Patch1.</span><span class="sxs-lookup"><span data-stu-id="421f3-118">This means that when Patch3 is applied, Patch 2 also becomes inapplicable, because it requires Patch1.</span></span> <span data-ttu-id="421f3-119">Todas as informações no Patch2 sozinho não são entregues ao aplicativo.</span><span class="sxs-lookup"><span data-stu-id="421f3-119">Any information in Patch2 alone does not get delivered to the application.</span></span>
+
+<span data-ttu-id="421f3-120">**Windows Installer 2,0:** Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="421f3-120">**Windows Installer 2.0:** Not supported.</span></span> <span data-ttu-id="421f3-121">O único método disponível é especificar a lista de patches a serem eliminados da sequência de aplicação de patch na propriedade [**Summary do número de revisão**](revision-number-summary.md) .</span><span class="sxs-lookup"><span data-stu-id="421f3-121">The only method available is to specify the list of patches to be eliminated from the patching sequence in the [**Revision Number Summary**](revision-number-summary.md) property.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="421f3-122">Os autores de patch devem usar as funções [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) e [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) para determinar a sequência de patches que realmente são aplicados ao produto, pois a eliminação de alguns patches pode renderizar outros patches inaplicável.</span><span class="sxs-lookup"><span data-stu-id="421f3-122">Patch authors should use the [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) and [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) functions to determine the sequence of patches that actually get applied to the product because the elimination of some patches can render other patches inapplicable.</span></span>
+
+ 
+
+ 
+
+ 
+
+
+
