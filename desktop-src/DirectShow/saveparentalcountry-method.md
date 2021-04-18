@@ -1,0 +1,86 @@
+---
+description: O método DVDAdm. SaveParentalCountry salva o novo país/região pai do aplicativo no registro.
+ms.assetid: 2185ad7d-c7c1-4d8b-82e7-5ed5fffaff26
+title: Método SaveParentalCountry (Segment. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: c9ca47a6ca10f25298b4eb10fdcf532c8d764b96
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105767669"
+---
+# <a name="saveparentalcountry-method"></a>Método SaveParentalCountry
+
+> [!Note]  
+> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+
+ 
+
+O `DVDAdm.SaveParentalCountry` método salva o novo país/região pai do aplicativo no registro.
+
+``` syntax
+DVD.DVDAdm.SaveParentalCountry(iCountry, sUserName, sPassword)
+```
+
+## <a name="parameters"></a>Parâmetros
+
+<dl> <dt>
+
+<span id="iCountry"></span><span id="icountry"></span><span id="ICOUNTRY"></span>*iCountry*
+</dt> <dd>
+
+Especifica o país/região pai como um inteiro.
+
+</dd> <dt>
+
+<span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
+</dt> <dd>
+
+Especifica o nome de usuário como uma cadeia de caracteres. (Ignorado no momento.)
+
+</dd> <dt>
+
+<span id="sPassword"></span><span id="spassword"></span><span id="SPASSWORD"></span>*sPassword*
+</dt> <dd>
+
+Especifica a senha como uma cadeia de caracteres.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Retornar valor
+
+Sem valor de retorno.
+
+## <a name="remarks"></a>Comentários
+
+Esse método permite que um usuário que conhece a senha atual salve uma nova configuração de país/região pai no registro. Assim como acontece com todos os métodos de **MSDVDAdm**, esse método não afeta o nível atual no Player; Ele altera apenas a configuração do registro, de modo que, na próxima vez que o objeto MSWebDVD for criado, ele será aberto com o novo país/região. Para alterar o país/região pai no Player, chame [**SelectParentalCountry**](selectparentalcountry-method.md), que não altera a configuração do registro.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|-------------------|--------------------------------------------------------------------------------------|
+| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**SaveParentalLevel**](saveparentallevel-method.md)
+</dt> <dt>
+
+[Objeto MSDVDAdm](msdvdadm-object.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
