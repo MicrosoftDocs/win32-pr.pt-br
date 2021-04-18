@@ -1,0 +1,45 @@
+---
+title: Estruturas de acessibilidade
+description: Esta seção descreve as estruturas usadas para implementar os recursos de acessibilidade do Windows. Recursos de acessibilidade do Microsoft Win32.
+ms.assetid: 0ff480ae-18e3-413d-b208-a67fbae28c25
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a01a5596c6c56e92d17b09386f0da3cbd58a5b2a
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "105765748"
+---
+# <a name="accessibility-structures"></a>Estruturas de acessibilidade
+
+Esta seção descreve as estruturas usadas para implementar os recursos de acessibilidade do Windows.
+
+## <a name="in-this-section"></a>Nesta seção
+
+
+
+| Estrutura                                         | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**ACCESSTIMEOUT**](/windows/win32/api/winuser/ns-winuser-accesstimeout)<br/> | Contém informações sobre o período de tempo limite associado aos recursos de acessibilidade do Microsoft Win32. <br/> O tempo limite de acessibilidade é o período de tempo que deve passar sem entrada de teclado e mouse antes que o sistema operacional desative automaticamente os recursos de acessibilidade. O tempo limite de acessibilidade é projetado para computadores compartilhados por vários usuários, de modo que as opções selecionadas por um usuário não inconveniênciam um usuário subsequente.<br/> Os recursos de acessibilidade afetados pelo tempo limite são os recursos de teclas de filtragem (SlowKeys, BounceKeys e RepeatKeys), teclas para mouse, alternâncias e teclas de aderência. O tempo limite de acessibilidade também afeta a configuração do modo de alto contraste.<br/> |
+| [**ATIVAR**](/windows/win32/api/winuser/ns-winuser-filterkeys)<br/>       | Contém informações sobre o recurso de acessibilidade de teclas de filtragem, que permite que um usuário com deficiências defina a taxa de repetição de teclado (RepeatKeys), o atraso de aceitação (SlowKeys) e a taxa de retorno (BounceKeys). <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**HIGHCONTRAST**](/windows/win32/api/winuser/ns-winuser-highcontrasta)<br/>   | Contém informações sobre o recurso de acessibilidade de alto contraste.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [**LAS**](/windows/win32/api/winuser/ns-winuser-mousekeys)<br/>         | Contém informações sobre o recurso de acessibilidade de teclas de acesso. Quando o recurso de teclas para mouse estiver ativo, o usuário poderá usar o teclado numérico para controlar o ponteiro do mouse e clicar em, clicar duas vezes, arrastar e soltar. Ao pressionar NUMLOCK, o usuário pode alternar o teclado numérico entre o modo de controle do mouse e a operação normal. <br/>                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**SERIA**](/windows/win32/api/winuser/ns-winuser-serialkeysa)<br/>       | Contém informações sobre o recurso de acessibilidade de dispositivos seriais, que interpreta os dados de um auxílio de comunicação anexado a uma porta serial como comandos que fazem com que o sistema simule a entrada do teclado e do mouse. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [**SOM**](/windows/win32/api/winuser/ns-winuser-soundsentrya)<br/>     | Contém informações sobre o recurso de acessibilidade do sinalizador de som. Quando o recurso de sinalizador de som estiver ativado, o computador exibirá uma indicação visual somente quando um som for gerado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [**ADERÊNCIA**](/windows/win32/api/winuser/ns-winuser-stickykeys)<br/>       | Contém informações sobre o recurso de acessibilidade de teclas de aderência. Quando o recurso de teclas de aderência está ativado, o usuário pode pressionar uma tecla modificadora (SHIFT, CTRL ou ALT) e, em seguida, outra chave em sequência, em vez de ao mesmo tempo, para inserir caracteres deslocados (modificados) e outras combinações de teclas.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [**ATIVAR**](/windows/win32/api/winuser/ns-winuser-togglekeys)<br/>       | Contém informações sobre o recurso de acessibilidade de alternâncias. Quando o recurso de teclas de alternância está ativado, o computador emite um tom de alta densidade sempre que o usuário ativa o CAPS LOCK, NUM LOCK ou a tecla SCROLL LOCK, e um tom com baixa densidade sempre que o usuário desativa uma dessas chaves. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+
+
+ 
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+<dl> <dt>
+
+[Recursos de acessibilidade do Windows](../accessibility/accessibility.md)
+</dt> </dl>
+
+ 
+
