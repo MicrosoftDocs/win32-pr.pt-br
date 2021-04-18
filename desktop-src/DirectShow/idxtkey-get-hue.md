@@ -1,0 +1,98 @@
+---
+description: O \_ método Get matiz recupera o valor de matiz para o qual fazer a chave. Essa propriedade só se aplica quando o tipo de chave é DXTKEY \_ matiz.
+ms.assetid: d37fedd6-f29f-4f16-821b-c5f8520c4e12
+title: 'Método IDxtKey:: get_Hue (QEdit. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IDxtKey.get_Hue
+api_type:
+- COM
+api_location:
+- strmiids.lib
+- strmiids.dll
+ms.openlocfilehash: 72058076e87f1a8738f3153ee8095eefb4ebce8f
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105758513"
+---
+# <a name="idxtkeyget_hue-method"></a><span data-ttu-id="16470-104">Método IDxtKey:: get \_ matiz</span><span class="sxs-lookup"><span data-stu-id="16470-104">IDxtKey::get\_Hue method</span></span>
+
+> [!Note]  
+> <span data-ttu-id="16470-105">\[Preterido.</span><span class="sxs-lookup"><span data-stu-id="16470-105">\[Deprecated.</span></span> <span data-ttu-id="16470-106">Essa API pode ser removida de versões futuras do Windows.\]</span><span class="sxs-lookup"><span data-stu-id="16470-106">This API may be removed from future releases of Windows.\]</span></span>
+
+ 
+
+<span data-ttu-id="16470-107">O `get_Hue` método recupera o valor de matiz para o qual fazer a chave.</span><span class="sxs-lookup"><span data-stu-id="16470-107">The `get_Hue` method retrieves the hue value on which to key.</span></span> <span data-ttu-id="16470-108">Essa propriedade só se aplica quando o tipo de chave é DXTKEY \_ matiz.</span><span class="sxs-lookup"><span data-stu-id="16470-108">This property applies only when the key type is DXTKEY\_HUE.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="16470-109">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="16470-109">Syntax</span></span>
+
+
+```C++
+HRESULT get_Hue(
+  [out, retval] int *pVal
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="16470-110">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="16470-110">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="16470-111">*PVal* \[ out, retval\]</span><span class="sxs-lookup"><span data-stu-id="16470-111">*pVal* \[out, retval\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="16470-112">Recebe o valor de matiz para o qual fazer a chave.</span><span class="sxs-lookup"><span data-stu-id="16470-112">Receives the hue value on which to key.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="16470-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="16470-113">Return value</span></span>
+
+<span data-ttu-id="16470-114">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="16470-114">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="16470-115">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="16470-115">Otherwise, it returns an **HRESULT** error code.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="16470-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="16470-116">Remarks</span></span>
+
+> [!Note]  
+> <span data-ttu-id="16470-117">O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.</span><span class="sxs-lookup"><span data-stu-id="16470-117">The header file Qedit.h is not compatible with Direct3D headers later than version 7.</span></span>
+
+ 
+
+> [!Note]  
+> <span data-ttu-id="16470-118">Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx).</span><span class="sxs-lookup"><span data-stu-id="16470-118">To obtain Qedit.h, download the [Microsoft Windows SDK Update for Windows Vista and .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx).</span></span> <span data-ttu-id="16470-119">O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.</span><span class="sxs-lookup"><span data-stu-id="16470-119">Qedit.h is not available in the Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 Service Pack 1.</span></span>
+
+ 
+
+## <a name="requirements"></a><span data-ttu-id="16470-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="16470-120">Requirements</span></span>
+
+
+
+| <span data-ttu-id="16470-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="16470-121">Requirement</span></span> | <span data-ttu-id="16470-122">Valor</span><span class="sxs-lookup"><span data-stu-id="16470-122">Value</span></span> |
+|--------------------|-----------------------------------------------------------------------------------------|
+| <span data-ttu-id="16470-123">parâmetro</span><span class="sxs-lookup"><span data-stu-id="16470-123">Header</span></span><br/>  | <dl> <span data-ttu-id="16470-124"><dt>QEdit. h</dt></span><span class="sxs-lookup"><span data-stu-id="16470-124"><dt>Qedit.h</dt></span></span> </dl>      |
+| <span data-ttu-id="16470-125">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="16470-125">Library</span></span><br/> | <dl> <span data-ttu-id="16470-126"><dt>Strmiids. lib</dt></span><span class="sxs-lookup"><span data-stu-id="16470-126"><dt>Strmiids.lib</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="16470-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="16470-127">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="16470-128">**Interface IDxtKey**</span><span class="sxs-lookup"><span data-stu-id="16470-128">**IDxtKey Interface**</span></span>](idxtkey.md)
+</dt> <dt>
+
+[<span data-ttu-id="16470-129">**IDxtKey:: obter \_ KeyType**</span><span class="sxs-lookup"><span data-stu-id="16470-129">**IDxtKey::get\_KeyType**</span></span>](idxtkey-get-keytype.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
