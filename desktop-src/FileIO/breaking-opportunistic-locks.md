@@ -1,0 +1,26 @@
+---
+description: Interromper um bloqueio oportunista é o processo de degradação do bloqueio que um cliente tem em um arquivo para que outro cliente possa abrir o arquivo, com ou sem um bloqueio oportunista.
+ms.assetid: 0356c167-2973-4820-85a9-bc14abcbf163
+title: Interrompendo bloqueios oportunistas
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1a29b6bd36d8c000b5288ea2408897415547c802
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "105756943"
+---
+# <a name="breaking-opportunistic-locks"></a><span data-ttu-id="e36fa-103">Interrompendo bloqueios oportunistas</span><span class="sxs-lookup"><span data-stu-id="e36fa-103">Breaking Opportunistic Locks</span></span>
+
+<span data-ttu-id="e36fa-104">Interromper um bloqueio oportunista é o processo de degradação do bloqueio que um cliente tem em um arquivo para que outro cliente possa abrir o arquivo, com ou sem um bloqueio oportunista.</span><span class="sxs-lookup"><span data-stu-id="e36fa-104">Breaking an opportunistic lock is the process of degrading the lock that one client has on a file so that another client can open the file, with or without an opportunistic lock.</span></span> <span data-ttu-id="e36fa-105">Quando o outro cliente solicita a operação de abertura, o servidor atrasa a operação de abertura e notifica o cliente que detém o bloqueio oportunista.</span><span class="sxs-lookup"><span data-stu-id="e36fa-105">When the other client requests the open operation, the server delays the open operation and notifies the client holding the opportunistic lock.</span></span>
+
+<span data-ttu-id="e36fa-106">O cliente que mantém o bloqueio executa ações apropriadas para o tipo de bloqueio, por exemplo, abandonar buffers de leitura, fechar o arquivo e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="e36fa-106">The client holding the lock then takes actions appropriate to the type of lock, for example abandoning read buffers, closing the file, and so on.</span></span> <span data-ttu-id="e36fa-107">Somente quando o cliente que contém o bloqueio oportunista notifica o servidor de que ele está pronto, o servidor abre o arquivo para o cliente que está solicitando a operação aberta.</span><span class="sxs-lookup"><span data-stu-id="e36fa-107">Only when the client holding the opportunistic lock notifies the server that it is done does the server open the file for the client requesting the open operation.</span></span> <span data-ttu-id="e36fa-108">No entanto, quando um bloqueio de nível 2 é interrompido, o servidor relata ao cliente que ele foi interrompido, mas não aguarda nenhuma confirmação, pois não há dados armazenados em cache a serem liberados para o servidor.</span><span class="sxs-lookup"><span data-stu-id="e36fa-108">However, when a level 2 lock is broken, the server reports to the client that it has been broken but does not wait for any acknowledgment, as there is no cached data to be flushed to the server.</span></span>
+
+<span data-ttu-id="e36fa-109">Ao confirmar uma interrupção de qualquer bloqueio exclusivo (filtro, nível 1 ou lote), o detentor de um bloqueio interrompido não pode solicitar outro bloqueio exclusivo.</span><span class="sxs-lookup"><span data-stu-id="e36fa-109">In acknowledging a break of any exclusive lock (filter, level 1, or batch), the holder of a broken lock cannot request another exclusive lock.</span></span> <span data-ttu-id="e36fa-110">Ele pode degradar um bloqueio exclusivo para um bloqueio de nível 2 ou nenhum bloqueio.</span><span class="sxs-lookup"><span data-stu-id="e36fa-110">It can degrade an exclusive lock to a level 2 lock or no lock at all.</span></span> <span data-ttu-id="e36fa-111">O detentor normalmente libera o bloqueio e fecha o arquivo quando está prestes a fechar o arquivo mesmo assim.</span><span class="sxs-lookup"><span data-stu-id="e36fa-111">The holder typically releases the lock and closes the file when it is about to close the file anyway.</span></span>
+
+<span data-ttu-id="e36fa-112">Os aplicativos são notificados de que um bloqueio oportunista é interrompido usando o membro **hEvent** da estrutura [**sobreposta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) associada ao arquivo no qual o bloqueio é rompido.</span><span class="sxs-lookup"><span data-stu-id="e36fa-112">Applications are notified that an opportunistic lock is broken by using the **hEvent** member of the [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) structure associated with the file on which the lock is broken.</span></span> <span data-ttu-id="e36fa-113">Os aplicativos também podem usar funções como [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) e [**HasOverlappedIoCompleted**](/windows/desktop/api/winbase/nf-winbase-hasoverlappediocompleted).</span><span class="sxs-lookup"><span data-stu-id="e36fa-113">Applications may also use functions such as [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) and [**HasOverlappedIoCompleted**](/windows/desktop/api/winbase/nf-winbase-hasoverlappediocompleted).</span></span>
+
+ 
+
+ 
