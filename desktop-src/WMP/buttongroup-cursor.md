@@ -1,0 +1,85 @@
+---
+title: BOTÃO. cursor
+description: O atributo cursor especifica ou recupera o tipo de cursor que aparece quando o mouse está sobre um botão no botão.
+ms.assetid: c1b7e3e1-862b-48c1-bd2d-d9abd9ada14c
+keywords:
+- BOTÃO. cursor Windows Media Player
+topic_type:
+- apiref
+api_name:
+- BUTTONGROUP.cursor
+api_type:
+- NA
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: f7b3de12950aed383f48dcde5d8978724037f86e
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "105760462"
+---
+# <a name="buttongroupcursor"></a>BOTÃO. cursor
+
+O atributo **cursor** especifica ou recupera o tipo de cursor que aparece quando o mouse está sobre um botão no **botão**.
+
+``` syntax
+        elementID.cursor
+```
+
+## <a name="possible-values"></a>Valores possíveis
+
+Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém um dos valores a seguir.
+
+
+
+| Valor            | Descrição                                                                                 |
+|------------------|---------------------------------------------------------------------------------------------|
+| sistema           | Padrão. Cursor dependente de plataforma (geralmente uma seta).                                      |
+| existentes             | Existentes.                                                                                       |
+| ajuda             | Seta com um ponto de interrogação indicando que a ajuda está disponível.                                      |
+| sizeall          | Seta de quatro pontas apontando para norte, Sul, leste e oeste.                                   |
+| sizenesw         | Seta de duas pontas apontando para nordeste e sudoeste.                                      |
+| sizens           | Seta de duas pontas apontando para norte e Sul.                                              |
+| sizenwse         | Seta de duas pontas apontando para noroeste e sudeste.                                      |
+| sizewe           | Seta de duas pontas apontando para o oeste e o leste.                                                |
+| upseta          | Seta vertical apontando para cima.                                                             |
+| \*. ani ou \* . cur | Qualquer arquivo. ani ou. cur (deve estar no mesmo diretório que o arquivo. WMS ou no arquivo. wmz). |
+
+
+
+ 
+
+## <a name="remarks"></a>Comentários
+
+O cursor especificado se aplica a todos os botões do **botão**.
+
+Se você especificar um valor de cursor inválido, ele permanecerá no valor definido anteriormente.
+
+Os caminhos de nome de arquivo de cursor são ignorados, portanto, o arquivo de cursor deve residir no diretório padrão.
+
+## <a name="requirements"></a>Requisitos
+
+
+
+| Requisito | Valor |
+|--------------------|------------------------------------------------------|
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+
+
+
+## <a name="see-also"></a>Confira também
+
+<dl> <dt>
+
+[**Elemento de botão**](buttongroup-element.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
