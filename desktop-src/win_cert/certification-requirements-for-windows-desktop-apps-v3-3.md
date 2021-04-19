@@ -1,5 +1,5 @@
 ---
-title: Requisitos de certificação da área de trabalho
+title: Requisitos de certificação de desktop (v3)
 description: Documento versão 3.3 data do documento 18 de março, o documento do 2014This contém os requisitos técnicos e as qualificações de qualificação que um aplicativo de desktop deve atender para participar do programa de certificação de aplicativo de área de trabalho Windows 8.1.
 ms.assetid: BD4765EA-C8A1-4A9F-9C50-479A3612DB85
 ms.topic: article
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 71a9470605abf266efed516e473a31a497c74b10
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a6674b2f1d0d5acc30c12d4bd68a2d0a21724de
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294396"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388888"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps-v33"></a>Requisitos de certificação para aplicativos da área de trabalho do Windows v 3.3
 
@@ -206,7 +206,7 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 | Data         | Versão | Descrição da revisão                   | Link para o documento                                                             |
 | 20 de dezembro de 2011 | 1.0     | Rascunho inicial do documento para visualização. |                                                                              |
 | 26 de janeiro de 2012 | 1,1     | Atualize para a seção \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md) |
-| 31 de maio de 2012 | 1.2     | Resultados de teste de resumo adicionados             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md) |
+| 31 de maio de 2012 | 1.2     | Resultados de teste de resumo adicionados             | [1,2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md) |
 | 29 de junho de 2012 | 3.0     | Documento final do Windows 8               | [3.0](archive--certification-requirements-for-windows-desktop-apps-v3-0.md) |
 | 18 de junho de 2013 | 3.1     | Windows 8.1 documento                   | [3.1](archive--certification-requirements-for-windows-desktop-apps-v3-1.md) |
 | 20 de fevereiro de 2014 | 3.2     | Atualização interna                        |                                                                              |

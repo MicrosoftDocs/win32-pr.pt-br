@@ -1,7 +1,7 @@
 ---
 description: Método de construtor.
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
-title: Construtor CMediaType. CMediaType (mtype. h)
+title: Construtor CMediaType. CMediaType (mtype. h)-parâmetros cmtype e PHR
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 776d59550d09396cc248937be611f2b4ec3699df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a40929bb6f53df7ce721e20eefba3019eb71cb0e
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759451"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389063"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh"></a>Construtor CMediaType. CMediaType (mtype. h)
 

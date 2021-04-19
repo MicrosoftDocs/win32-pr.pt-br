@@ -11,12 +11,12 @@ keywords:
 - Interface IDWriteTextLayout
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30fcf884c15015af2645c32e217d3b4a6b433554
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e9e5790742a3d3caf7f962a6b5e2b3111c626f28
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162385"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380750"
 ---
 # <a name="text-formatting-and-layout"></a>Layout e formatação de texto
 
@@ -43,7 +43,7 @@ Para criar um objeto [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite
 
 Depois que uma interface [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) é criada, alguns valores não podem ser alterados: a família de fontes, a coleção, o peso e o tamanho, bem como o nome da localidade. Para alterar esses valores, um novo objeto **IDWriteTextFormat** deve ser criado.
 
-O [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) permite que você altere as propriedades acima sem recriar a ação. O [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) permite que você faça alterações de formato que se apliquem ao texto inteiro, como alinhamento de texto. Se você quiser aplicar formatação a intervalos de caracteres específicos, faça isso usando um **IDWriteTextLayout**.
+O [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) permite que você altere as propriedades acima sem recriar nada. O [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) permite que você faça alterações de formato que se apliquem ao texto inteiro, como alinhamento de texto. Se você quiser aplicar formatação a intervalos de caracteres específicos, faça isso usando um **IDWriteTextLayout**.
 
 [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) fornece métodos para definir o alinhamento de texto, direção de fluxo, parada de tabulação incremental, espaçamento de linha, alinhamento de parágrafo, corte e quebra automática de texto. Essas propriedades podem ser alteradas a qualquer momento após a criação do objeto **IDWriteTextFormat** .
 
@@ -107,6 +107,6 @@ A cadeia de caracteres descrita por um objeto [**IDWriteTextLayout**](/windows/w
 2.  [Renderizar usando um processador de texto personalizado](how-to-implement-a-custom-text-renderer.md).
 3.  [Renderizar para uma superfície GDI](render-to-a-gdi-surface.md).
 
- 
+ 
 
- 
+ 

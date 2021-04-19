@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 13256f0bbe2d5adad61c46ea091e8207f1a9351b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 897e683fd56ce3e7496dd945ee068a9e6f0c0f77
+ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750611"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107492265"
 ---
 # <a name="installeropendatabase-method"></a>Método Installer. OpenDatabase
 
@@ -72,7 +72,7 @@ Um parâmetro da lista a seguir ou uma cadeia de caracteres que contém o nome d
 
 ## <a name="return-value"></a>Retornar valor
 
-Esse método não retorna um valor.
+Um objeto de [**banco de dados**](database-object.md) que representa o banco de dados do instalador novo ou existente que foi aberto.
 
 ## <a name="remarks"></a>Comentários
 
