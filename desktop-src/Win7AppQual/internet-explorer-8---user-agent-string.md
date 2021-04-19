@@ -4,19 +4,19 @@ ms.assetid: 1cb0456d-501a-4272-b89d-35e79d29d13a
 title: Internet Explorer 8-cadeia de caracteres do agente do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be481cf409468d9d182d37ae7636b167bc71d8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3aea44572f32e252a4e1d4dc2209e411834c12d4
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828815"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314789"
 ---
 # <a name="internet-explorer-8---user-agent-string"></a>Internet Explorer 8-cadeia de caracteres do agente do usuário
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
- **Clientes** -Windows XP Windows \| Vista Windows \| 7  
-**Servidores** -windows Server 2003 \| Windows Server 2008 \| Windows Server 2008 R2  
+ **Clientes** -Windows XP, Windows Vista, Windows 7  
+**Servidores** -windows Server 2003, windows Server 2008, windows Server 2008 R2  
 
 
 

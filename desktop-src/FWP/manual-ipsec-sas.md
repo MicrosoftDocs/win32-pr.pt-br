@@ -4,12 +4,12 @@ description: O cenário de diretiva IPsec SA (Associação de segurança manual)
 ms.assetid: 2bcc0b40-ca43-43c6-b1e4-b64426ef7ff4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7161447ff5cfd98878ab4ee0f4b18cbcc3a53643
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: beeef4486e3a07dea2e83d924c2354a3dabca241
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917208"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314569"
 ---
 # <a name="manual-sa"></a>SA manual
 
@@ -29,6 +29,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 **Na \_ camada FWPM \_ transporte de \_ entrada \_ V {4 \| 6} configurar regras de filtragem de entrada por pacote**  
 
 1.  Adicione um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro                                                   | Valor                                                         |
     |-------------------------------------------------------------------|---------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type) |
@@ -39,6 +40,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 
         
 2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
@@ -51,6 +53,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 **Em FWPM \_ camada de \_ saída do \_ transporte \_ V {4 \| 6} configurar regras de filtragem por pacote de saída**  
 
 1.  Adicione um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro                                                   | Valor                                                  |
     |-------------------------------------------------------------------|--------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                            |
@@ -61,6 +64,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 
         
 2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
