@@ -4,12 +4,12 @@ description: Um sombreador de computação é um estágio de sombreador program�
 ms.assetid: 02c1f98e-fdd6-49b0-b8b2-efbd472ab599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67c890e63b468a993e0d08f678d2276d6ce2adad
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 485e83ab965f14342d235a07810f210e18aadc53
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103642963"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222864"
 ---
 # <a name="compute-shader-overview"></a>Visão geral do sombreador de computação
 
@@ -30,7 +30,7 @@ Se você usar a API do Direct3D 11 e os drivers atualizados, o hardware do Direc
 -   Somente uma exibição de acesso não ordenado pode ser associada ao sombreador (D3D11 \_ cs \_ 4 \_ X \_ UAV \_ Register \_ Count é 1).
 -   Somente [RWStructuredBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwstructuredbuffer)s e [RWByteAddressBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwbyteaddressbuffer)s estão disponíveis como modos de exibição de acesso não ordenado.
 -   Um thread só pode acessar sua própria região na memória groupshared para gravação, embora possa ser lido em qualquer local.
--   [VA \_ GroupIndex](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) ou [ \_ DispatchThreadID VA](/windows/desktop/direct3dhlsl/sv-dispatchthreadid) deve ser usado ao acessar a memória **groupshared** para gravação.
+-   [VA \_ GroupIndex](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) ou [ \_ GroupThreadID VA](/windows/desktop/direct3dhlsl/sv-groupthreadid) deve ser usado ao acessar a memória **groupshared** para gravação.
 -   A memória **Groupshared** é limitada a 16 KB por grupo.
 -   Um único thread é limitado a uma região de 256 bytes de memória **groupshared** para gravação.
 -   Não há instruções atômicas disponíveis.
