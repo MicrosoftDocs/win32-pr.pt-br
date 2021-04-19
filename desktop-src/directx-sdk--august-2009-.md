@@ -4,12 +4,12 @@ ms.assetid: d8765da9-e7cf-47e8-8bc3-4b29162da41b
 title: Onde está o SDK do DirectX?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd863bf29858f2313641aca161c73754b789015c
-ms.sourcegitcommit: b4beb606419fea6a256b8332a9ea930607e60612
+ms.openlocfilehash: c070313c5c7f6105afaf7b629ff1ca2618a469fb
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103930264"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314619"
 ---
 # <a name="where-is-the-directx-sdk"></a>Onde está o SDK do DirectX?
 
@@ -101,7 +101,7 @@ O XInput 9.1.0 herdado também está disponível como parte do Windows 7 ou post
 
  
 
-O SDK do DirectX herdado está disponível para download no [centro de download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=226640) , se necessário, mas o uso para novos projetos não é recomendado.
+O SDK do DirectX herdado está disponível para download no [centro de download da Microsoft](https://go.microsoft.com/fwlink/?LinkId=226640) , se necessário, mas o uso para novos projetos não é recomendado.
 
 > [!Note]  
 > O SDK do DirectX não será instalado se você tiver uma determinada versão do pacote redistribuível do Visual C++ 2010 já instalado. Para obter mais informações sobre o e uma solução para corrigir esse problema, consulte [o erro "S1023" ao instalar o SDK do DirectX (junho de 2010)](https://support.microsoft.com/kb/2728613).
