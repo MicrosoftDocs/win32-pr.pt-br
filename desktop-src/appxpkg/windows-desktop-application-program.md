@@ -4,12 +4,12 @@ description: Você pode obter dados de telemetria e relatórios de análise deta
 ms.assetid: F1ED72A5-E1CD-4924-A81B-ED6FAF5E2AA3
 ms.topic: article
 ms.date: 11/02/2018
-ms.openlocfilehash: 2dc255c9c8696bd57198f50fc2c570f59c4ae603
-ms.sourcegitcommit: 0bfbb2324081644171495734f0609335173745ef
+ms.openlocfilehash: 63fd252f7d98c6b7a401f6626f30dcdcd6751def
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105763316"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314839"
 ---
 # <a name="windows-desktop-application-program"></a>Programa de aplicativo da área de trabalho do Windows
 
@@ -110,7 +110,7 @@ Você pode filtrar os dados de várias maneiras, permitindo:
 -   Compare o desempenho de seus aplicativos de desktop em versões do Windows ou em uma versão específica, como a versão mais recente do Windows 10
 -   Exibir informações de integridade para um arquivo executável específico incluído em seu aplicativo
 
-Selecione **carregar símbolos** na parte superior da tabela **falhas** para carregar um arquivo. zip que contém os arquivos de [símbolo](http:/docs.microsoft.com/windows-hardware/drivers/debugger/symbols-and-symbol-files)do aplicativo. Esses arquivos de símbolos serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de símbolo dentro de. zip devem ser. pdb,. dll ou. exe. Depois de carregar com êxito o arquivo. zip, você verá menos **! Valores desconhecidos** para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
+Selecione **carregar símbolos** na parte superior da tabela **falhas** para carregar um arquivo. zip que contém os arquivos de [símbolo](/windows-hardware/drivers/debugger/symbols-and-symbol-files)do aplicativo. Esses arquivos de símbolos serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de símbolo dentro de. zip devem ser. pdb,. dll ou. exe. Depois de carregar com êxito o arquivo. zip, você verá menos **! Valores desconhecidos** para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
 
 ### <a name="installs-report"></a>Relatório de instalações
 
@@ -130,7 +130,7 @@ O relatório **blocos de aplicativos** permite que você veja informações sobr
 Os tipos de blocos de atualização incluídos são os seguintes: 
 
 <table>
-<tr><th>Category</th><th>Problema</th><th>Descrição</th><th>Diretrizes fornecidas aos usuários</th></tr>
+<tr><th>Categoria</th><th>Problema</th><th>Descrição</th><th>Diretrizes fornecidas aos usuários</th></tr>
 <tr><td>Potencial SEDIMENT</td><td>Bloqueará a atualização</td><td>O aplicativo não funcionará na nova versão de lançamento do sistema operacional. A ação do usuário é necessária durante a instalação para prosseguir com a atualização.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor uma versão compatível do aplicativo.</td></tr>
 <tr><td>SEDIMENT temporário</td><td>Pode bloquear a atualização. É necessário testar o aplicativo.</td><td>A Microsoft está investigando problemas de atualização relacionados a este aplicativo. A atualização não será distribuída para os usuários que podem ser afetados.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor uma versão compatível do aplicativo.</td></tr>
 <tr><td>Notificação de tempo de execução</td><td>Pode não funcionar corretamente na nova versão de lançamento do sistema operacional, mas não bloqueará a atualização</td><td>O aplicativo não impedirá a atualização, mas foram detectados problemas que podem impedi-lo de funcionar corretamente na nova versão de lançamento do sistema operacional.</td><td>Nenhuma ação é necessária para que a atualização Continue, mas certifique-se de testar o aplicativo na nova versão de lançamento do sistema operacional e verifique com o desenvolvedor uma versão compatível, se necessário.</td></tr>
