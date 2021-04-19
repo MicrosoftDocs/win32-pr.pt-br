@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_Context
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Contexto
+title: Contexto (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8f463f14-95b3-4364-b1b1-549a32291959
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9d89bee5847885068a3a7d072f820c6794a3dbc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 133f48d9c9a1c9dd9f0e04f59d5e35478caa9227
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461094"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388846"
 ---
 # <a name="span-idwwan_profile_v4element_1_contextspanmodemdmconfigprofilecontext-v4"></a><span id="WWAN_profile_v4.element_1_Context"></span>\/Contexto de ModemDMConfigProfile (v4)
 
@@ -35,7 +35,7 @@ Especifica os parâmetros necessários para estabelecer uma conexão de dados.
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<Context\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <Context>

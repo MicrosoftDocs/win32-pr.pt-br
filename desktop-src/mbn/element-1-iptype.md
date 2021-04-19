@@ -4,15 +4,15 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_IPType
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IPType
+title: IPType (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ced0048e4793a1b26f2beac1e4c08ab92cbcc1b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ec57fbe0bbcb4c633ddb8485f048ce4230e0ca5
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748090"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388804"
 ---
 # <a name="span-idwwan_profile_v4element_1_iptypespanmodemdmconfigprofileiptype-v4"></a><span id="WWAN_profile_v4.element_1_IPType"></span>ModemDMConfigProfile \/ ... \/ IPType (v4)
 
@@ -40,7 +40,7 @@ Esse elemento é novo no v4 do esquema. O elemento pode ter um dos valores a seg
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<IPType\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <IPType>

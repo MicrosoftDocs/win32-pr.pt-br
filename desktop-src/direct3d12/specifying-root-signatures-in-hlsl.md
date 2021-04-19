@@ -1,24 +1,24 @@
 ---
-title: Especificando assinaturas raiz em HLSL
+title: Como especificar assinaturas raiz no HLSL
 description: A especificação de assinaturas raiz no modelo do sombreador HLSL 5,1 é uma alternativa para especificá-los no código C++.
 ms.assetid: 399F5E91-B017-4F5E-9037-DC055407D96F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 236876e22c3e1e0bb849ec1e1bc7d45692c900d6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2dad0da9f84d68fc1acbf53332d1cae4075f0faa
+ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548209"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107492277"
 ---
-# <a name="specifying-root-signatures-in-hlsl"></a>Especificando assinaturas raiz em HLSL
+# <a name="specifying-root-signatures-in-hlsl"></a>Como especificar assinaturas raiz no HLSL
 
 A especificação de assinaturas raiz no modelo do sombreador HLSL 5,1 é uma alternativa para especificá-los no código C++.
 
 -   [Um exemplo de assinatura raiz HLSL](#an-example-hlsl-root-signature)
     -   [Assinatura de raiz versão 1,0](#root-signature-version-10)
-    -   [Assinatura de raiz versão 1,1](#root-signature-version-11)
+    -   [Assinatura raiz versão 1.1](#root-signature-version-11)
 -   [RootFlags](#rootflags)
 -   [Constantes raiz](#root-constants)
 -   [Visibilidade](#visibility)
@@ -59,7 +59,16 @@ Uma assinatura raiz pode ser especificada em HLSL como uma cadeia de caracteres.
                              "filter = FILTER_MIN_MAG_MIP_LINEAR )"
 ```
 
-### <a name="root-signature-version-11"></a>Assinatura de raiz versão 1,1
+Essa definição daria a seguinte assinatura de raiz, observando:
+
+-   O uso de parâmetros padrão.
+-   B0 e (B0, espaço = 1) não entram em conflito
+-   U0 só é visível para o sombreador Geometry
+-   U4 e U5 são alias para o mesmo descritor em um heap
+
+![uma assinatura raiz especificada usando o idioma do sombreador de alto nível](images/hlsl-root-signature.png)
+
+### <a name="root-signature-version-11"></a>Assinatura raiz versão 1.1
 
 A [assinatura de raiz versão 1,1](root-signature-version-1-1.md) permite otimizações de driver em dados e descritores de assinatura raiz.
 
@@ -81,15 +90,6 @@ A [assinatura de raiz versão 1,1](root-signature-version-1-1.md) permite otimiz
                              "addressU = TEXTURE_ADDRESS_CLAMP, " \
                              "filter = FILTER_MIN_MAG_MIP_LINEAR )"
 ```
-
-Essa definição daria a seguinte assinatura de raiz, observando:
-
--   O uso de parâmetros padrão.
--   B0 e (B0, espaço = 1) não entram em conflito
--   U0 só é visível para o sombreador Geometry
--   U4 e U5 são alias para o mesmo descritor em um heap
-
-![uma assinatura raiz especificada usando o idioma do sombreador de alto nível](images/hlsl-root-signature.png)
 
 A linguagem de assinatura raiz HLSL corresponde de forma mais próxima às APIs de assinatura raiz do C++ e tem uma potência expressiva equivalente. A assinatura raiz é especificada como uma sequência de cláusulas, separadas por vírgula. A ordem das cláusulas é importante, pois a ordem de análise determina a posição do slot na assinatura raiz. Cada cláusula usa um ou mais parâmetros nomeados. No entanto, a ordem dos parâmetros não é importante.
 
@@ -287,7 +287,7 @@ Para gerenciar assinaturas raiz criadas pelo HLSL, a tabela a seguir fornece alg
 
 
 
-| Linha | Linha de comando                                                                 | Descrição                                                                                                                                                                                                                              |
+| Linha | Linha de Comando                                                                 | Descrição                                                                                                                                                                                                                              |
 |------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1    | `fxc /T ps_5_1 shaderWithRootSig.hlsl /Fo rs1.fxo`                           | Compila um sombreador para o destino do pixel shader 5,1, a origem do sombreador está no arquivo shaderWithRootSig. HLSL, que inclui uma assinatura raiz. O sombreador e a assinatura raiz são compilados como BLOBs separados no arquivo binário RS1. FXO.    |
 | 2    | `fxc /dumpbin rs1.fxo /extractrootsignature /Fo rs1.rs.fxo`                  | Extrai a assinatura raiz do arquivo criado pela linha 1, portanto, o arquivo RS1. RS. FXO contém apenas uma assinatura raiz.                                                                                                                      |
@@ -297,21 +297,21 @@ Para gerenciar assinaturas raiz criadas pelo HLSL, a tabela a seguir fornece alg
 
 
 
- 
+ 
 
-A funcionalidade disponível por meio do FXC também está disponível programaticamente usando a função [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) . Essa chamada compila um sombreador com uma assinatura raiz ou uma assinatura raiz autônoma (definindo o \_ destino rootsig 1 \_ 0). [**D3DGetBlobPart**](/windows/desktop/direct3dhlsl/d3dgetblobpart) e [**D3DSetBlobPart**](/windows/desktop/direct3dhlsl/d3dsetblobpart) podem extrair e anexar assinaturas raiz a um blob existente.\_ \_ A assinatura raiz do blob do D3D \_ é usada para especificar o tipo de parte do blob de assinatura raiz. [**D3DStripShader**](/windows/desktop/direct3dhlsl/d3dstripshader) remove a assinatura raiz (usando o \_ sinalizador de \_ assinatura raiz da faixa D3DCOMPILER \_ ) do blob.
+A funcionalidade disponível por meio do FXC também está disponível programaticamente usando a função [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) . Essa chamada compila um sombreador com uma assinatura raiz ou uma assinatura raiz autônoma (definindo o \_ destino rootsig 1 \_ 0). [**D3DGetBlobPart**](/windows/desktop/direct3dhlsl/d3dgetblobpart) e [**D3DSetBlobPart**](/windows/desktop/direct3dhlsl/d3dsetblobpart) podem extrair e anexar assinaturas raiz a um blob existente.  \_ \_ A assinatura raiz do blob do D3D \_ é usada para especificar o tipo de parte do blob de assinatura raiz. [**D3DStripShader**](/windows/desktop/direct3dhlsl/d3dstripshader) remove a assinatura raiz (usando o \_ sinalizador de \_ assinatura raiz da faixa D3DCOMPILER \_ ) do blob.
 
-## <a name="notes"></a>Observações
+## <a name="notes"></a>Anotações
 
 > [!Note]  
 > Enquanto a compilação offline de sombreadores é altamente recomendável, se os sombreadores precisarem ser compilados em tempo de execução, consulte os comentários para [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2).
 
- 
+ 
 
 > [!Note]  
 > Os ativos HLSL existentes não precisam ser alterados para lidar com as assinaturas raiz a serem usadas com eles.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -326,7 +326,7 @@ A funcionalidade disponível por meio do FXC também está disponível programat
 [Associação de recursos](resource-binding.md)
 </dt> <dt>
 
-[Associação de recursos em HLSL](resource-binding-in-hlsl.md)
+[Associação de recursos no HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
 [Assinaturas raiz](root-signatures.md)
@@ -335,12 +335,12 @@ A funcionalidade disponível por meio do FXC também está disponível programat
 [Modelo do sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> <dt>
 
-[Valor de referência de estêncil especificado do sombreador](shader-specified-stencil-reference-value.md)
+[Valor de referência de estêncil especificado pelo sombreador](shader-specified-stencil-reference-value.md)
 </dt> <dt>
 
 [Cargas de exibição de acesso não ordenado digitado](typed-unordered-access-view-loads.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

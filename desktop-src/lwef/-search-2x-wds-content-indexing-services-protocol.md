@@ -4,12 +4,12 @@ description: Este documento é uma especificação do protocolo de serviço de i
 ms.assetid: b91c8038-5ace-441d-8523-60f849ff1458
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04c22bbda912333368e50d3e4a8ace2cd98856ea
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 5265d9d8c802b278b4349ef4b8248b068dc7edc4
+ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "103640330"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107492288"
 ---
 # <a name="content-indexing-services-protocol"></a>Protocolo de serviços de indexação de conteúdo
 
@@ -4248,7 +4248,7 @@ Veja abaixo um diagrama que mostra o formato de cabeçalho da mensagem do protoc
 
 \_MSG
 
-\_Estado
+\_status
 
 \_ulChecksum
 
@@ -5473,7 +5473,7 @@ A mensagem CPMGetQueryStatusOut responde a uma mensagem CPMGetQueryStatusIn com 
 
 1
 
-\_Status
+\_Estado
 
 
 
@@ -5664,7 +5664,7 @@ A mensagem CPMGetQueryStatusExOut responde a uma mensagem CPMGetQueryStatusExIn 
 
 1
 
-\_Status
+\_Estado
 
 \_cFilteredDocuments
 
@@ -6324,7 +6324,7 @@ PropSpec (variável)
 
  
 
-**\_ wid**: um inteiro sem sinal de 32 bits que representa a ID do documento que identifica o documento para o qual uma propriedade deve ser buscada.
+**\_ wid**: um inteiro sem sinal de 32 bits contendo informações sobre a ID do documento que identifica o documento para o qual uma propriedade deve ser buscada.
 
 **\_ cbSoFar**: um inteiro sem sinal de 32 bits contendo o número de bytes transferidos anteriormente para essa propriedade. DEVE ser definido como 0x00000000 na primeira mensagem.
 
