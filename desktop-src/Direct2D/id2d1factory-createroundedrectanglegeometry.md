@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0ea6761796dd45a504564b71c79a25a91a2a3697
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcb32b47b59c50bb9ba5f8d6747eed0dc54409ec
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787006"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380812"
 ---
 # <a name="id2d1factorycreateroundedrectanglegeometry-methods"></a>Métodos ID2D1Factory:: CreateRoundedRectangleGeometry
 
@@ -29,8 +29,8 @@ Cria um [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/l
 
 | Método                                                                                                                                                                                                     | Descrição                                                                                    |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**CreateRoundedRectangleGeometry (D2D1 \_ arredondado \_ retangular&, ID2D1RoundedRectangleGeometry \* \* )**](id2d1factory-createroundedrectanglegeometry-ref-d2d1-rounded-rect-ptr-ptr-https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx)  | Cria um [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
-| [**CreateRoundedRectangleGeometry ( \_ retângulo arredondado d2d1 \_ \* , ID2D1RoundedRectangleGeometry \* \* )**](id2d1factory-createroundedrectanglegeometry-ptr-d2d1-rounded-rect-ptr-ptr-https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx) | Cria um [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
+| [**CreateRoundedRectangleGeometry (D2D1 \_ arredondado \_ retangular&, ID2D1RoundedRectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx)  | Cria um [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
+| [**CreateRoundedRectangleGeometry ( \_ retângulo arredondado d2d1 \_ \* , ID2D1RoundedRectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx) | Cria um [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
 
 
 

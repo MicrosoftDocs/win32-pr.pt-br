@@ -4,16 +4,16 @@ ms.assetid: 8e31526a-639f-481b-91f1-fcd376818cbf
 title: elemento nameSpace
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a8747a25988b880d5287d959273fa0f4d144045
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2414919f699bb60c2cf1e48bc52030c36cf67a0
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505703"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380810"
 ---
 # <a name="namespace-element"></a>elemento nameSpace
 
-Descreve um namespace. Esse namespace pode ser usado para geração de código ou para manipular <as diretivas WSDL: Import>.
+Descreve um namespace. Esse namespace pode ser usado para geração de código ou para manipular \<wsdl:import> diretivas.
 
 ## <a name="usage"></a>Uso
 
@@ -30,7 +30,7 @@ Descreve um namespace. Esse namespace pode ser usado para geração de código o
 
 | Atributo          | Type                         | Obrigatório       | Descrição                                             |
 |--------------------|------------------------------|----------------|---------------------------------------------------------|
-| **uri**<br/> | Cadeia de caracteres \_<br/> | Yes<br/> | O URI exclusivo do namespace.<br/> <br/> |
+| **uri**<br/> | Cadeia de caracteres \_<br/> | Sim<br/> | O URI exclusivo do namespace.<br/> <br/> |
 
 
 

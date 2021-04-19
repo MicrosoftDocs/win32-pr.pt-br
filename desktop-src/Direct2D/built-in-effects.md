@@ -4,12 +4,12 @@ description: Efeitos Direct2Ds fornecem esse conjunto de efeitos internos.
 ms.assetid: A76F6AB8-16E9-45C9-A768-5E4AA072D534
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94937d64c97506ebba56fde2334d09374228bac1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6001dda5985a1fa221a472ca1f1d9cca042f5041
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369537"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380860"
 ---
 # <a name="built-in-effects"></a>Efeitos internos
 
@@ -90,7 +90,7 @@ ms.locfileid: "104369537"
 ## <a name="transform"></a>Transformar
 
 -   [efeito de transformação afim 2D](2d-affine-transform.md) -CLSID \_ D2D12DAffineTransform
--   [efeito de transformação 3D](3d-perspective-transform.md) -CLSID \_ D2D13DTransform
+-   [efeito de transformação 3D](3d-transform.md) -CLSID \_ D2D13DTransform
 -   [efeito de transformação de perspectiva 3D](3d-perspective-transform.md) -CLSID \_ D2D13DPerspectiveTransform
 -   [Efeito de borda](border.md) -CLSID \_ D2D1Border
 -   [Efeito de corte](crop.md) -CLSID \_ D2D1Crop
