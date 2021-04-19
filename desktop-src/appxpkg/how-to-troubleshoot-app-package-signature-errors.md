@@ -4,12 +4,12 @@ description: Uma falha de implantação de aplicativo pode ser causada por uma f
 ms.assetid: CE868296-87F6-4BD5-8AC5-914E429EDEBC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e0afe77ebfd478be5c652604ea575fc90b5d3ef
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0b6f50dc5ff428e74f4928fc20775b13de7c3be9
+ms.sourcegitcommit: 784b5954a1646e2406cd4ee27a9e4f50e28ee9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104365825"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106374830"
 ---
 # <a name="how-to-troubleshoot-app-package-signature-errors"></a>Como solucionar problemas de erros de assinatura do pacote de aplicativo
 
@@ -57,7 +57,7 @@ Se o erro 465 não ocorreu, consulte geral [solução de problemas de empacotame
 
 
 
- 
+ 
 
 ### <a name="step-2-determine-the-certificate-chain-used-to-sign-the-app-package"></a>Etapa 2: determinar a cadeia de certificados usada para assinar o pacote do aplicativo
 
@@ -150,7 +150,7 @@ Ao adicionar um certificado em [repositórios de certificados do computador loca
 **Amostras**
 </dt> <dt>
 
-[Criar amostra de pacote de aplicativo]https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
+[Criar exemplo de pacote de aplicativo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
 </dt> <dt>
 
 **Conceitos**
@@ -162,6 +162,6 @@ Ao adicionar um certificado em [repositórios de certificados do computador loca
 [Tarefas de certutil para gerenciar certificados](/previous-versions/orphan-topics/ws.10/cc772898(v=ws.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 
