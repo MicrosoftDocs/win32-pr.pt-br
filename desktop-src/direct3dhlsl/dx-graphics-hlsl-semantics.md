@@ -62,12 +62,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 510f718608363c547c8333279826cc8bac141358
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e8979b4e4842a4c84317b456802ed8f1beefea35
+ms.sourcegitcommit: 1d3c59a7066a75facc0565027251cad1ca1dd9c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104172543"
+ms.lasthandoff: 04/18/2021
+ms.locfileid: "107594161"
 ---
 # <a name="semantics"></a>Semântica
 
@@ -98,7 +98,9 @@ Essas semânticas têm significado quando anexadas a um parâmetro Vertex-Shader
 | PSIZE \[ n\] | Tamanho do ponto | FLOAT |
 | TANGENTE \[ n\] | Tangente | float4 |
 | TEXCOORD \[ n\] | Coordenadas de textura | float4 |
+
 | Saída | Descrição | Type |
+|-|-|-|
 | COR \[ n\] | Cor difusa ou especular | float4 |
 | NEBLINA | Neblina de vértice | FLOAT |
 | POSIÇÃO \[ n\] | Posição de um vértice no espaço homogêneo. Posição de computação no espaço da tela dividindo (x, y, z) por w. Todo sombreador de vértice deve gravar um parâmetro com essa semântica. | float4 |
@@ -150,22 +152,22 @@ Essa semântica está disponível no <a href="dx-graphics-hlsl-sm3.md">modelo de
 <td>O local do pixel (x, y) no espaço da tela. Para converter um sombreador do Direct3D 9 (que usa essa semântica) em um sombreador do Direct3D 10 e posterior, consulte o <a href="#direct3d-9-vpos-and-direct3d-10-sv_position">Direct3D 9 VPOS e o Direct3D 10 SV_Position</a>)</td>
 <td>float2</td>
 </tr>
-<tr class="odd">
-<td>Saída</td>
-<td>Descrição</td>
-<td>Type</td>
+</tbody>
+</table>
+
+<table>
+<th>Saída</th>
+<th>Descrição</th>
+<th>Type</th>
 </tr>
-<tr class="even">
 <td>COR [n]</td>
 <td>Cor de saída</td>
 <td>float4</td>
 </tr>
-<tr class="odd">
 <td>PROFUNDIDADE [n]</td>
 <td>Profundidade de saída</td>
 <td>FLOAT</td>
 </tr>
-</tbody>
 </table>
 
 `n` é um inteiro opcional entre 0 e o número de recursos com suporte. Por exemplo, PSIZE0, COLOR1, etc.
