@@ -1,0 +1,42 @@
+---
+title: Functions (WCS)
+description: Nos tópicos a seguir, as funções WCS são organizadas por categoria. Isso permite que você procure funções que têm usos relacionados em um único tópico. As páginas de referência de função são organizadas em ordem alfabética.
+ms.assetid: aba45dbd-6fc2-4788-87f0-043579fa53f9
+keywords:
+- WCS (sistema de cores do Windows), funções
+- WCS (sistema de cores do Windows), funções
+- gerenciamento de cores de imagem, funções
+- gerenciamento de cores, funções
+- cores, funções
+- Referência do WCS, funções
+- referência para WCS, funções
+ms.localizationpriority: high
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: faec94aa33471bf56922a865b657e558a63d8457
+ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105814615"
+---
+# <a name="wcs-functions"></a>Funções WCS
+
+Nos tópicos a seguir, as funções WCS são organizadas por categoria. Isso permite que você procure funções que têm usos relacionados em um único tópico. As páginas de referência de função são organizadas em ordem alfabética.
+
+As funções são agrupadas da seguinte maneira:
+
+-   [Funções básicas para uso em um contexto de dispositivo](basic-functions-for-use-within-a-device-context.md)
+-   [Funções avançadas para uso fora de um contexto de dispositivo](advanced-functions-for-use-outside-of-a-device-context.md)
+-   [Funções de calibragem e caracterização de dispositivo](device-calibration-and-characterization-functions.md)
+-   [Funções de gerenciamento de perfil](profile-management-functions.md)
+-   [Funções de ICM2 para CMMs (módulos de gerenciamento de cores) para implementar](wcs-functions-for-color-management-modules--cmms--to-implement.md)
+-   [Lista alfabética de todas as funções do WCS](alphabetical-list-of-all-wcs-functions.md)
+
+ 
+
+ 
+
+
+
+
