@@ -19,12 +19,12 @@ keywords:
 - caixa de diálogo Fonte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 984b5ff5bb89c27cb78cf87007dde74bfba6ae73
-ms.sourcegitcommit: 56f8e4d5119e5018363fa2dc3472cdff203c6913
+ms.openlocfilehash: 7f29c54388cf9c98d3db650b5ca7f955bf9ac5c0
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "104294668"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590943"
 ---
 # <a name="common-dialog-box-library"></a>Biblioteca de caixa de diálogo comum
 
@@ -33,7 +33,7 @@ A biblioteca de caixa de diálogo comum contém um conjunto de caixas de diálog
 Esta seção descreve as caixas de diálogo comuns que incluem as caixas de diálogo **abrir** e **salvar como** arquivo; as caixas de diálogo **Localizar** e **substituir** edição; as caixas de diálogo **Imprimir**, **Configurar impressão**, **Imprimir folha de propriedades** e **Configurar impressão da página** ; e as caixas de diálogo **cor** e **fonte** .
 
 > [!Note]  
-> A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.
+> A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.
 
  
 
