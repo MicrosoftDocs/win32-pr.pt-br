@@ -7,12 +7,12 @@ keywords:
 - caixas de diálogo comuns, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a973fee7c8f7cd88abad3097edfc0349cc9118c1
-ms.sourcegitcommit: 56f8e4d5119e5018363fa2dc3472cdff203c6913
+ms.openlocfilehash: 773382a34b048e812a3fb093da0492b0c628fb14
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "105781605"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590653"
 ---
 # <a name="using-common-dialog-boxes"></a>Usando caixas de diálogo comuns
 
@@ -105,7 +105,7 @@ if (ChooseFont(&cf)==TRUE)
 ## <a name="opening-a-file"></a>Abrindo um arquivo
 
 > [!Note]  
-> A partir do Windows Vista, a caixa de diálogo Common File foi substituída pela caixa de diálogo de item comum quando usada para abrir um arquivo. Recomendamos que você use a API de caixa de diálogo de item comum em vez da API de caixa de diálogo de arquivo comum. Para obter mais informações, consulte [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)).
+> A partir do Windows Vista, a caixa de diálogo Common File foi substituída pela caixa de diálogo de item comum quando usada para abrir um arquivo. Recomendamos que você use a API de caixa de diálogo de item comum em vez da API de caixa de diálogo de arquivo comum. Para obter mais informações, consulte [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog).
 
  
 
