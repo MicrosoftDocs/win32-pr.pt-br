@@ -4,12 +4,12 @@ description: O Direct2D fornece a interface ID2D1PathGeometry para descrever for
 ms.assetid: d7aad487-04e0-448d-bedf-b8dfadc7bbe9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df463265b48a67a6d844d36b7de009200465256
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68a163e85d76a65f6b807ad1e4a9c9f740a32bf1
+ms.sourcegitcommit: 4859402a45b9928c3e1354ded06b1d6a682a0be9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641521"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937671"
 ---
 # <a name="how-to-draw-and-fill-a-complex-shape"></a>Como desenhar e preencher uma forma complexa
 
@@ -123,14 +123,15 @@ O exemplo final usa os métodos [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2
 ```C++
 void DemoApp::RenderGeometryExample()
 {
-   // Translate subsequent drawings by 20 device-independent pixels.
+    // Translate subsequent drawings by 20 device-independent pixels.
     m_pRenderTarget->SetTransform(
         D2D1::Matrix3x2F::Translation(20.f, 20.f)
         );
 
     // Draw the hour glass geometry at the upper left corner of the client area.
     m_pRenderTarget->DrawGeometry(m_pPathGeometry, m_pBlackBrush, 10.f);
-    m_pRenderTarget->FillGeometry(m_pPathGeometry, m_pLGBrush);</code></pre></td>
+    m_pRenderTarget->FillGeometry(m_pPathGeometry, m_pLGBrush);
+}
 ```
 
 O código foi omitido neste exemplo. Para obter mais informações sobre geometrias, consulte a [visão geral de geometrias](direct2d-geometries-overview.md).
