@@ -5,12 +5,12 @@ ms.assetid: 45281b42-5cb2-42f9-9c7c-f3e3174b0f9d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e6d0303ee933b81f0c8553b6b0adae64db7f48d
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 7e1099028bc85dc6492eade0315b7308b4c6aaa9
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103823577"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314609"
 ---
 # <a name="joining-heterogeneous-data"></a>Unindo dados heterogêneos
 
@@ -69,7 +69,7 @@ Com o, SQL Server 7,0, ADSI e o provedor de OLE DB, é possível unir dados de A
 
     No exemplo anterior, a consulta LDAP tem quatro partes:
 
-    -   " <LDAP://DC=Fabrikam,DC=COM> " é o nome distinto do servidor de diretório a ser pesquisado.
+    -   " \<LDAP://DC=Fabrikam,DC=COM> " é o nome distinto do servidor de diretório a ser pesquisado.
     -   "(& (objectCategory = Person) (objectClass = user))" é o filtro de pesquisa LDAP (consulte a [sintaxe do filtro de pesquisa](search-filter-syntax.md)).
     -   "Name, ADsPath" são os nomes (usando o formato de nome de exibição LDAP) dos atributos a serem recuperados.
     -   "Subtree" indica o [escopo](scope-of-query.md) da pesquisa.
@@ -81,9 +81,9 @@ Com o, SQL Server 7,0, ADSI e o provedor de OLE DB, é possível unir dados de A
 [Criando e executando uma exibição](creating-and-executing-a-view.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
