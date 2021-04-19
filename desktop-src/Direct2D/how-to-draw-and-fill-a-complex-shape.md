@@ -4,20 +4,20 @@ description: O Direct2D fornece a interface ID2D1PathGeometry para descrever for
 ms.assetid: d7aad487-04e0-448d-bedf-b8dfadc7bbe9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df463265b48a67a6d844d36b7de009200465256
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68a163e85d76a65f6b807ad1e4a9c9f740a32bf1
+ms.sourcegitcommit: 4859402a45b9928c3e1354ded06b1d6a682a0be9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641521"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937671"
 ---
-# <a name="how-to-draw-and-fill-a-complex-shape"></a><span data-ttu-id="f10e6-104">Como desenhar e preencher uma forma complexa</span><span class="sxs-lookup"><span data-stu-id="f10e6-104">How to Draw and Fill a Complex Shape</span></span>
+# <a name="how-to-draw-and-fill-a-complex-shape"></a><span data-ttu-id="a2cbe-104">Como desenhar e preencher uma forma complexa</span><span class="sxs-lookup"><span data-stu-id="a2cbe-104">How to Draw and Fill a Complex Shape</span></span>
 
-<span data-ttu-id="f10e6-105">O Direct2D fornece a interface [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para descrever formas complexas que podem conter curvas, arcos e linhas.</span><span class="sxs-lookup"><span data-stu-id="f10e6-105">Direct2D provides the [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) interface for describing complex shapes that can contain curves, arcs, and lines.</span></span> <span data-ttu-id="f10e6-106">Este tópico descreve como definir e renderizar uma geometria de caminho.</span><span class="sxs-lookup"><span data-stu-id="f10e6-106">This topic describes how to define and render a path geometry.</span></span>
+<span data-ttu-id="a2cbe-105">O Direct2D fornece a interface [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para descrever formas complexas que podem conter curvas, arcos e linhas.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-105">Direct2D provides the [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) interface for describing complex shapes that can contain curves, arcs, and lines.</span></span> <span data-ttu-id="a2cbe-106">Este tópico descreve como definir e renderizar uma geometria de caminho.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-106">This topic describes how to define and render a path geometry.</span></span>
 
-<span data-ttu-id="f10e6-107">Para definir uma geometria de caminho, primeiro use o método [**ID2D1Factory:: createpathgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para criar a geometria do caminho e, em seguida, use o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) de geometry do caminho para recuperar um [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink).</span><span class="sxs-lookup"><span data-stu-id="f10e6-107">To define a path geometry, first use the [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) method to create the path geometry, then use the path geometry's [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) method to retrieve an [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink).</span></span> <span data-ttu-id="f10e6-108">Em seguida, você pode adicionar linhas, curvas e arcos chamando os vários métodos Add do coletor.</span><span class="sxs-lookup"><span data-stu-id="f10e6-108">You can then add lines, curves, and arcs by calling the sink's various Add methods.</span></span>
+<span data-ttu-id="a2cbe-107">Para definir uma geometria de caminho, primeiro use o método [**ID2D1Factory:: createpathgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para criar a geometria do caminho e, em seguida, use o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) de geometry do caminho para recuperar um [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink).</span><span class="sxs-lookup"><span data-stu-id="a2cbe-107">To define a path geometry, first use the [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) method to create the path geometry, then use the path geometry's [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) method to retrieve an [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink).</span></span> <span data-ttu-id="a2cbe-108">Em seguida, você pode adicionar linhas, curvas e arcos chamando os vários métodos Add do coletor.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-108">You can then add lines, curves, and arcs by calling the sink's various Add methods.</span></span>
 
-<span data-ttu-id="f10e6-109">O exemplo a seguir cria um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), recupera um coletor e o usa para definir uma forma de ampulheta.</span><span class="sxs-lookup"><span data-stu-id="f10e6-109">The following example creates an [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), retrieves a sink, and uses it to define an hourglass shape.</span></span>
+<span data-ttu-id="a2cbe-109">O exemplo a seguir cria um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), recupera um coletor e o usa para definir uma forma de ampulheta.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-109">The following example creates an [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), retrieves a sink, and uses it to define an hourglass shape.</span></span>
 
 
 ```C++
@@ -67,9 +67,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
-<span data-ttu-id="f10e6-110">Observe que um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) é um recurso independente de dispositivo e pode, portanto, ser criado uma vez e mantido durante a vida útil do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f10e6-110">Note that an [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) is a device-independent resource and can, therefore, be created once and retained for the life of the application.</span></span> <span data-ttu-id="f10e6-111">(Para obter mais informações sobre diferentes tipos de recursos, consulte a [visão geral de recursos](resources-and-resource-domains.md).)</span><span class="sxs-lookup"><span data-stu-id="f10e6-111">(For more information about different types of resources, see the [Resources Overview](resources-and-resource-domains.md).)</span></span>
+<span data-ttu-id="a2cbe-110">Observe que um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) é um recurso independente de dispositivo e pode, portanto, ser criado uma vez e mantido durante a vida útil do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-110">Note that an [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) is a device-independent resource and can, therefore, be created once and retained for the life of the application.</span></span> <span data-ttu-id="a2cbe-111">(Para obter mais informações sobre diferentes tipos de recursos, consulte a [visão geral de recursos](resources-and-resource-domains.md).)</span><span class="sxs-lookup"><span data-stu-id="a2cbe-111">(For more information about different types of resources, see the [Resources Overview](resources-and-resource-domains.md).)</span></span>
 
-<span data-ttu-id="f10e6-112">O exemplo a seguir cria dois pincéis que serão usados para pintar a estrutura de tópicos e o preenchimento da geometria de caminho.</span><span class="sxs-lookup"><span data-stu-id="f10e6-112">The next example creates two brushes that will be used to paint the path geometry's outline and fill.</span></span>
+<span data-ttu-id="a2cbe-112">O exemplo a seguir cria dois pincéis que serão usados para pintar a estrutura de tópicos e o preenchimento da geometria de caminho.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-112">The next example creates two brushes that will be used to paint the path geometry's outline and fill.</span></span>
 
 
 ```C++
@@ -115,7 +115,7 @@ if (SUCCEEDED(hr))
 
 
 
-<span data-ttu-id="f10e6-113">O exemplo final usa os métodos [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) para pintar a estrutura de tópicos e o interior da geometria.</span><span class="sxs-lookup"><span data-stu-id="f10e6-113">The final example uses the [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) and [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) methods to paint the geometry's outline and interior.</span></span> <span data-ttu-id="f10e6-114">Este exemplo produz a saída mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="f10e6-114">This example produces the output shown in the following illustration.</span></span>
+<span data-ttu-id="a2cbe-113">O exemplo final usa os métodos [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) para pintar a estrutura de tópicos e o interior da geometria.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-113">The final example uses the [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) and [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) methods to paint the geometry's outline and interior.</span></span> <span data-ttu-id="a2cbe-114">Este exemplo produz a saída mostrada na ilustração a seguir.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-114">This example produces the output shown in the following illustration.</span></span>
 
 ![ilustração de uma geometria em forma de ampulheta](images/transformgeometryexample-1.png)
 
@@ -123,14 +123,15 @@ if (SUCCEEDED(hr))
 ```C++
 void DemoApp::RenderGeometryExample()
 {
-   // Translate subsequent drawings by 20 device-independent pixels.
+    // Translate subsequent drawings by 20 device-independent pixels.
     m_pRenderTarget->SetTransform(
         D2D1::Matrix3x2F::Translation(20.f, 20.f)
         );
 
     // Draw the hour glass geometry at the upper left corner of the client area.
     m_pRenderTarget->DrawGeometry(m_pPathGeometry, m_pBlackBrush, 10.f);
-    m_pRenderTarget->FillGeometry(m_pPathGeometry, m_pLGBrush);</code></pre></td>
+    m_pRenderTarget->FillGeometry(m_pPathGeometry, m_pLGBrush);
+}
 ```
 
-<span data-ttu-id="f10e6-116">O código foi omitido neste exemplo.</span><span class="sxs-lookup"><span data-stu-id="f10e6-116">Code has been omitted from this example.</span></span> <span data-ttu-id="f10e6-117">Para obter mais informações sobre geometrias, consulte a [visão geral de geometrias](direct2d-geometries-overview.md).</span><span class="sxs-lookup"><span data-stu-id="f10e6-117">For more information about geometries, see the [Geometries Overview](direct2d-geometries-overview.md).</span></span>
+<span data-ttu-id="a2cbe-116">O código foi omitido neste exemplo.</span><span class="sxs-lookup"><span data-stu-id="a2cbe-116">Code has been omitted from this example.</span></span> <span data-ttu-id="a2cbe-117">Para obter mais informações sobre geometrias, consulte a [visão geral de geometrias](direct2d-geometries-overview.md).</span><span class="sxs-lookup"><span data-stu-id="a2cbe-117">For more information about geometries, see the [Geometries Overview](direct2d-geometries-overview.md).</span></span>
