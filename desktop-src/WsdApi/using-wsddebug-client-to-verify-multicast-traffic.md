@@ -4,12 +4,12 @@ ms.assetid: 1b0943fb-076e-4feb-9a4f-36a06bdd19ae
 title: Usando o cliente de depuração WSD para verificar o tráfego multicast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55f03e06baefc40bad843a5193b2cec604383251
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a814ac97512ef4b0691c22d3238d151372023a7
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790236"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380660"
 ---
 # <a name="using-wsd-debug-client-to-verify-multicast-traffic"></a>Usando o cliente de depuração WSD para verificar o tráfego multicast
 
@@ -36,7 +36,7 @@ Sempre verifique se as mensagens de [investigação](probe-message.md) estão se
 
 As mensagens devem ser disparadas para serem enviadas conforme descrito na etapa 3 acima. O cliente de depuração WSD exibe a mensagem SOAP bruta como saída. Como todas as mensagens impressas pelo cliente de depuração WSD no modo multicast são recebidas por um soquete de multicast, o endereço de destino da mensagem não é exibido.
 
-O exemplo de saída de cliente de depuração WSD a seguir mostra uma mensagem de investigação. O elemento <WSA: Action> identifica a mensagem como uma mensagem de investigação. Inspecione o campo <WSA: Action> para verificar se a mensagem recebida era uma mensagem de investigação.
+O exemplo de saída de cliente de depuração WSD a seguir mostra uma mensagem de investigação. O \<wsa:Action> elemento identifica a mensagem como uma mensagem de investigação. Inspecione o \<wsa:Action> campo para verificar se a mensagem recebida era uma mensagem de investigação.
 
 ``` syntax
 UDP message at 05/08/07 10:06:55 from soap.udp://[127.0.0.1:49334]
@@ -51,7 +51,7 @@ ap:Header><soap:Body><wsd:Probe><wsd:Types>wsdp:Device</wsd:Types></wsd:Probe></
 soap:Body></soap:Envelope>
 ```
 
-A saída de cliente de depuração WSD de exemplo a seguir mostra uma mensagem de saudação. O elemento <WSA: Action> identifica a mensagem como uma mensagem de saudação.
+A saída de cliente de depuração WSD de exemplo a seguir mostra uma mensagem de saudação. O \<wsa:Action> elemento identifica a mensagem como uma mensagem de saudação.
 
 ``` syntax
 UDP message at 05/08/07 10:10:49 from soap.udp://[[::1]:49343]
