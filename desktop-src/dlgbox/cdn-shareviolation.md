@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acfa3a91e9c84f15984285f99d071fcde24a4d66
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e79d9c48d3e80d14d83de07c03f7db119ea8e78
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105780715"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590693"
 ---
 # <a name="cdn_shareviolation-notification-code"></a>Código de notificação da CDN \_ SHAREVIOLATION
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário clica no botão **OK** e ocorre uma violação de compartilhamento de rede para o arquivo selecionado.
 
