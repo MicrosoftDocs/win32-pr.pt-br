@@ -1,0 +1,38 @@
+---
+title: Monikers assíncronos
+description: Monikers assíncronos
+ms.assetid: 24c50f7b-f085-4086-aa44-81e5cab011cb
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e19323af3a972a2b83a290176a4b26fb79382da0
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "105814560"
+---
+# <a name="asynchronous-monikers"></a><span data-ttu-id="e37cf-103">Monikers assíncronos</span><span class="sxs-lookup"><span data-stu-id="e37cf-103">Asynchronous Monikers</span></span>
+
+<span data-ttu-id="e37cf-104">A arquitetura de moniker do OLE fornece um modelo de programação consistente e extensível para trabalhar com objetos da Internet, fornecendo métodos para analisar nomes, representando URLs (localizadores de recursos universal) como nomes imprimíveis e localizar e associar aos objetos representados por cadeias de caracteres de URL.</span><span class="sxs-lookup"><span data-stu-id="e37cf-104">The OLE moniker architecture provides a consistent, extensible programming model for working with Internet objects, providing methods for parsing names, representing Universal Resource Locators (URLs) as printable names, and locating and binding to the objects represented by URL strings.</span></span> <span data-ttu-id="e37cf-105">(Consulte também [moniker de URL](url-monikers.md).) No entanto, os monikers OLE padrão (notadamente, item, File e Pointer moniker), no entanto, são inadequados para a Internet porque são síncronos, retornando um ponteiro para um objeto ou seu armazenamento somente no momento em que todos os dados estão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="e37cf-105">(Also see [URL Monikers](url-monikers.md).) Standard OLE monikers (notably, item, file, and pointer monikers), however, are inappropriate for the Internet because they are synchronous, returning a pointer to an object or its storage only at such time as all data is available.</span></span> <span data-ttu-id="e37cf-106">Dependendo da quantidade de dados a serem baixados, a associação síncrona pode vincular a interface do usuário do cliente por períodos prolongados.</span><span class="sxs-lookup"><span data-stu-id="e37cf-106">Depending on the amount of data to be downloaded, binding synchronously can tie up the client's user interface for prolonged periods.</span></span>
+
+<span data-ttu-id="e37cf-107">A Internet requer novas abordagens para o design do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e37cf-107">The Internet requires new approaches to application design.</span></span> <span data-ttu-id="e37cf-108">Os aplicativos devem ser capazes de executar todas as operações de rede caras de forma assíncrona para evitar a paralisação da interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="e37cf-108">Applications should be able to perform all expensive network operations asynchronously to avoid stalling the user interface.</span></span> <span data-ttu-id="e37cf-109">Um aplicativo deve ser capaz de disparar uma operação e receber uma notificação em conclusão completa ou parcial.</span><span class="sxs-lookup"><span data-stu-id="e37cf-109">An application should be able to trigger an operation and receive notification on full or partial completion.</span></span> <span data-ttu-id="e37cf-110">Nesse ponto, o aplicativo deve ter a opção de prosseguir com a próxima etapa da operação ou fornecer informações adicionais, conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="e37cf-110">At that point, the application should have the choice either of proceeding with the next step of the operation or providing additional information as needed.</span></span> <span data-ttu-id="e37cf-111">Como o download prossegue, um aplicativo também deve ser capaz de fornecer aos usuários informações de progresso e a oportunidade de cancelar a operação a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="e37cf-111">As a download proceeds, an application should also be able to provide users with progress information and the opportunity to cancel the operation at any time.</span></span>
+
+<span data-ttu-id="e37cf-112">Os monikers assíncronos fornecem esses recursos, bem como vários níveis de comportamento de vinculação assíncrona, enquanto fornecem compatibilidade com versões anteriores para aplicativos que não sabem ou não exigem comportamento assíncrono.</span><span class="sxs-lookup"><span data-stu-id="e37cf-112">Asynchronous monikers provide these capabilities, as well as various levels of asynchronous binding behavior, while providing backward compatibility for applications that are either unaware of or do not require asynchronous behavior.</span></span> <span data-ttu-id="e37cf-113">Outra tecnologia OLE, armazenamento assíncrono, funciona com monikers assíncronos para fornecer download assíncrono do estado persistente de um objeto de Internet.</span><span class="sxs-lookup"><span data-stu-id="e37cf-113">Another OLE technology, asynchronous storage, works with asynchronous monikers to provide asynchronous downloading of an Internet object's persistent state.</span></span> <span data-ttu-id="e37cf-114">O moniker assíncrono dispara a operação de ligação e configura os componentes necessários, incluindo objetos de armazenamento e fluxo, objetos de matriz de bytes e coletores de notificação.</span><span class="sxs-lookup"><span data-stu-id="e37cf-114">The asynchronous moniker triggers the bind operation and sets up the necessary components, including storage and stream objects, byte-array objects, and notification sinks.</span></span> <span data-ttu-id="e37cf-115">Depois que os componentes estiverem conectados, o moniker ficará fora do caminho e o restante da ligação será executado principalmente entre os componentes que implementam os componentes de armazenamento assíncronos e o objeto.</span><span class="sxs-lookup"><span data-stu-id="e37cf-115">Once the components are connected, the moniker gets out of the way and the rest of the bind is executed mainly between the components implementing the asynchronous storage components and the object.</span></span>
+
+<span data-ttu-id="e37cf-116">Para mais informações, consulte os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="e37cf-116">For more information, see the following topics:</span></span>
+
+-   [<span data-ttu-id="e37cf-117">Monikers assíncronos e síncronos</span><span class="sxs-lookup"><span data-stu-id="e37cf-117">Asynchronous and Synchronous Monikers</span></span>](./asynchronous-vs.-synchronous-monikers.md)
+-   [<span data-ttu-id="e37cf-118">Associação assíncrona e síncrona</span><span class="sxs-lookup"><span data-stu-id="e37cf-118">Asynchronous and Synchronous Binding</span></span>](./asynchronous-vs.-synchronous-binding.md)
+-   [<span data-ttu-id="e37cf-119">Armazenamento assíncrono e síncrono</span><span class="sxs-lookup"><span data-stu-id="e37cf-119">Asynchronous and Synchronous Storage</span></span>](./asynchronous-vs.-synchronous-storage.md)
+-   [<span data-ttu-id="e37cf-120">Modelo de pull de dados e modelo de Data-Push</span><span class="sxs-lookup"><span data-stu-id="e37cf-120">Data-Pull Model and Data-Push Model</span></span>](./data-pull-model-vs.-data-push-model.md)
+
+## <a name="related-topics"></a><span data-ttu-id="e37cf-121">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e37cf-121">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="e37cf-122">Identificadores de URL</span><span class="sxs-lookup"><span data-stu-id="e37cf-122">URL Monikers</span></span>](url-monikers.md)
+</dt> </dl>
+
+ 
+
+ 
