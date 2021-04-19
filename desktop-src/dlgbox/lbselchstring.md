@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14538c429bf943e4557974166bd7da747176bd93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 137429b8fa7eb29fb96ec579e0240c4c282d0766
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105813512"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590763"
 ---
 # <a name="lbselchstring-message"></a>Mensagem LBSELCHSTRING
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Uma caixa de diálogo **abrir** ou **salvar como** envia a mensagem registrada **LBSELCHSTRING** para o procedimento de gancho quando a seleção é alterada em qualquer uma das caixas de listagem ou caixas de combinação da caixa de diálogo.
 
