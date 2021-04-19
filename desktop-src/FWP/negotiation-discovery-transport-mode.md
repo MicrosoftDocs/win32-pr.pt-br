@@ -4,12 +4,12 @@ description: O cenário de política IPsec do modo de transporte da descoberta d
 ms.assetid: c08d9d03-7d77-43c2-8468-964b498b45f8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df9477d18f2fe478f5c885c071f47d0bf2baaad8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 216fec869eca28dc0661a37d44cce3a1fd05b80a
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823684"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314809"
 ---
 # <a name="negotiation-discovery-transport-mode"></a>Modo de transporte de descoberta de negociação
 
@@ -37,6 +37,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
      
 
 2.  Para cada um dos contextos adicionados na etapa 1, adicione um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro        | Valor                                            |
     |------------------------|--------------------------------------------------|
     | Condições de filtragem   | Vazio. Todo o tráfego corresponderá ao filtro.        |
@@ -56,6 +57,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
      
 
 2.  Para cada um dos contextos adicionados na etapa 1, adicione um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro        | Valor                                            |
     |------------------------|--------------------------------------------------|
     | Condições de filtragem   | Vazio. Todo o tráfego corresponderá ao filtro.        |
@@ -66,6 +68,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 **No \_ transporte de entrada da camada FWPM \_ \_ \_ V {4 \| 6} configurar regras de filtragem de entrada por pacote**  
 
 1.  Adicione um filtro com as propriedades a seguir. 
+
     | Propriedade de filtro                                                   | Valor                                                                                              |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
@@ -75,6 +78,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 
         
 2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir.
+
     | Propriedade de filtro                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
@@ -87,6 +91,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 **No transporte de saída da camada do FWPM \_ \_ \_ \_ V {4 \| 6} configurar regras de filtragem por pacote de saída**  
 
 1.  Adicione um filtro com as propriedades a seguir.
+
     | Propriedade de filtro                                                   | Valor                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                               |
@@ -96,6 +101,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 
         
 2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir.
+
     | Propriedade de filtro                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
@@ -108,6 +114,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 **Na camada FWPM de \_ \_ autenticação Ale, \_ \_ \_ aceite \_ V {4 \| 6} configurar regras de filtragem de entrada por conexão**  
 
 1.  Adicione um filtro com as propriedades a seguir. Esse filtro só permitirá tentativas de conexão de entrada se elas forem protegidas pelo IPsec. 
+
     | Propriedade de filtro                                                   | Valor                                                        |
     |-------------------------------------------------------------------|--------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                  |
@@ -116,6 +123,7 @@ Para implementar este exemplo programaticamente, use a seguinte configuração d
 
         
 2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir.
+
     | Propriedade de filtro                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |

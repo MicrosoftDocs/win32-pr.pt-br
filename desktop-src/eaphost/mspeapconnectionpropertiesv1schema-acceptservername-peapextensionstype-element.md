@@ -1,5 +1,5 @@
 ---
-title: Elemento AcceptServerName (PeapExtensionsType)
+title: Elemento AcceptServerName (PeapExtensionsType) (EAPHost)
 description: Indica se o nome do servidor é validado em relação à cadeia de caracteres de nome especificada no elemento Servernames (ServerValidationParameters). | Elemento AcceptServerName (PeapExtensionsType)
 ms.assetid: 95173b57-8100-44e4-98f0-4f2a3deabce7
 keywords:
@@ -14,14 +14,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c877819fd559cb26cd93c5d5456631a93a49545
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ba4874b7c8761f35fa93387b23eaf5463a31bcf4
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104012018"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314599"
 ---
-# <a name="acceptservername-peapextensionstype-element"></a>Elemento AcceptServerName (PeapExtensionsType)
+# <a name="acceptservername-peapextensionstype-element-eaphost"></a>Elemento AcceptServerName (PeapExtensionsType) (EAPHost)
 
 O elemento **AcceptServerName (PeapExtensionsType)** indica se o nome do servidor é validado em relação à cadeia de caracteres de nome especificada no elemento [**servernames (ServerValidationParameters)**](mspeapconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md) .
 
