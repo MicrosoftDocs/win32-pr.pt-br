@@ -4,19 +4,19 @@ ms.assetid: e4392907-a84f-40ea-aa88-2ad0510bca3c
 title: Exemplo de associação de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f4104c9bc241fed4bc698bd150b03d32a70e054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23b92922bb907c4dd90b3e2bdc3d16c8e8b52e6a
+ms.sourcegitcommit: b0d03febac36ff77cba034615b94ea103311398d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089730"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107715784"
 ---
 # <a name="file-association-example"></a>Exemplo de associação de arquivo
 
 No exemplo a seguir, uma empresa de desenvolvimento de software hipotética chamada Litware, Inc. cria um novo player de áudio chamado LitwarePlayer. O Litware quer criar uma associação de arquivo entre LitwarePlayer e seu tipo de arquivo primário, que usa um formato de áudio desenvolvido recentemente que permite que um CD de áudio inteiro seja armazenado em menos de 10 kilobytes de memória sem perda de qualidade.
 
 > [!IMPORTANT]
-> Este tópico não se aplica ao Windows 10. A maneira como as associações de arquivo padrão funcionam alteradas no Windows 10. Para obter mais informações, consulte a seção sobre **alterações de como o Windows 10 trata os aplicativos padrão** nesta [postagem](https://blogs.windows.com/bloggingwindows/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tópico não se aplica ao Windows 10. A maneira como as associações de arquivo padrão funcionam alteradas no Windows 10. Para obter mais informações, consulte a seção sobre **alterações de como o Windows 10 trata os aplicativos padrão** nesta [postagem](https://blogs.windows.com/windows-insider/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
 
  
 
