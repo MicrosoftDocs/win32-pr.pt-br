@@ -4,18 +4,18 @@ ms.assetid: c26dac1d-9a75-440a-a0ef-a2029f138f3b
 title: Sinalizadores de informações de consulta (WinHTTP. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9ffc8f4ba4a947fe6fb277617c99460c43ffb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32ba15c258a37627cdbdd79f13859761fd671385
+ms.sourcegitcommit: df0933ad2b42f07031f4340330712c11cf712ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011239"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107385884"
 ---
 # <a name="query-info-flags-winhttph"></a>Sinalizadores de informações de consulta (WinHTTP. h)
 
-Esses atributos e modificadores são usados pelo [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders).
+Esses atributos e modificadores são usados pelo [**WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders).
 
-Os sinalizadores de atributo são usados pelo [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) para indicar quais informações recuperar. A maioria dos sinalizadores de atributo mapeia diretamente para um cabeçalho HTTP específico. Também há alguns sinalizadores especiais, como \_ \_ cabeçalhos brutos de consulta WinHTTP \_ , que não estão relacionados a um cabeçalho específico.
+Os sinalizadores de atributo são usados pelo [**WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) para indicar quais informações recuperar. A maioria dos sinalizadores de atributo mapeia diretamente para um cabeçalho HTTP específico. Também há alguns sinalizadores especiais, como \_ \_ cabeçalhos brutos de consulta WinHTTP \_ , que não estão relacionados a um cabeçalho específico.
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Recupera o campo de cabeçalho resposta etária, que contém a estimativa do rem
 
 
 
-Recebe o [*verbo http*](glossary.md)s com suporte do servidor.
+Recebe os [**verbos HTTP**](glossary.md) com suporte do servidor.
 
 
 </dt> </dl> </dd> <dt>
@@ -274,7 +274,7 @@ Não há suporte.
 
 
 
-Faz com que o [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) procure o nome do cabeçalho especificado no parâmetro *pwszName* e armazene as informações do cabeçalho em *lpBuffer*. Um aplicativo pode usar **o \_ \_ \_ \_ tempo limite de resposta de recebimento da opção WinHTTP** para limitar o tempo máximo que essa consulta aguarda para que todos os cabeçalhos sejam recebidos.
+Faz com que o [**WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) procure o nome do cabeçalho especificado no parâmetro *pwszName* e armazene as informações do cabeçalho em *lpBuffer*. Um aplicativo pode usar **o \_ \_ \_ \_ tempo limite de resposta de recebimento da opção WinHTTP** para limitar o tempo máximo que essa consulta aguarda para que todos os cabeçalhos sejam recebidos.
 
 
 </dt> </dl> </dd> <dt>
@@ -769,7 +769,7 @@ Recupera o esquema de autenticação e o realm retornado pelo servidor.
 
 </dt> </dl> </dd> </dl>
 
-Os sinalizadores modificadores são usados em conjunto com um sinalizador de atributo para modificar a solicitação. Os sinalizadores de modificador modificam o formato dos dados retornados ou indicam onde a função [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) deve pesquisar as informações.
+Os sinalizadores modificadores são usados em conjunto com um sinalizador de atributo para modificar a solicitação. Os sinalizadores de modificador modificam o formato dos dados retornados ou indicam onde a função [**WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) deve pesquisar as informações.
 
 <dl> <dt>
 
@@ -798,29 +798,19 @@ Consulta somente cabeçalhos de solicitação.
 
 
 
-Retorna o valor do cabeçalho como uma estrutura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) , que não exige que o aplicativo analise os dados. Use para cabeçalhos cujo valor é uma cadeia de caracteres de data/hora, como "hora da última modificação".
+Retorna o valor do cabeçalho como uma estrutura [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) , que não exige que o aplicativo analise os dados. Use para cabeçalhos cujo valor é uma cadeia de caracteres de data/hora, como "hora da última modificação".
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
-
-
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>      |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>   |
-| parâmetro<br/>                   | <dl> <dt>WinHTTP. h</dt> </dl> |
-
-
+| Cliente mínimo com suporte | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]      |
+| Servidor mínimo com suporte | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]   |
+| parâmetro                   | <dl> <dt>WinHTTP. h</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 
-<dl> <dt>
-
-[Versões do WinHTTP](winhttp-versions.md)
-</dt> </dl>
-
- 
-
+* [Versões do WinHTTP](winhttp-versions.md)

@@ -4,12 +4,12 @@ description: Alguns proxies e servidores exigem autenticação antes de conceder
 ms.assetid: f3752031-30d3-4e35-8eae-1d4971b66bc2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36a8eaa38f61f0d97f1f543e0623313aa196aab7
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: e82d8cd93f1010c71560d856793ad06d8bc5d9d5
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104008530"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380850"
 ---
 # <a name="handling-authentication"></a>Manipulando a autenticação
 
@@ -21,7 +21,7 @@ Se a autenticação for necessária, o aplicativo cliente receberá um código d
 
 Cada cabeçalho de resposta de autenticação contém um esquema de autenticação disponível e um realm. Se houver suporte para vários esquemas de autenticação, o servidor retornará vários cabeçalhos de resposta de autenticações. O valor do Realm diferenciam maiúsculas de minúsculas e definem um espaço de proteção no proxy ou servidor. Por exemplo, o cabeçalho "WWW-Authenticate: Basic real =" example "" seria um exemplo de um cabeçalho retornado quando a autenticação do servidor for necessária.
 
-O aplicativo cliente que enviou a solicitação pode se autenticar, incluindo um campo de cabeçalho de autorização com a solicitação. O cabeçalho Authorization conterá o esquema de autenticação e a resposta apropriada exigida por esse esquema. Por exemplo, o cabeçalho "Authorization: Basic <nome de usuário: Password>" seria adicionado à solicitação e reenviado para o servidor se o cliente recebeu o cabeçalho de resposta de autenticação "WWW-Authenticate: Basic real =" example "".
+O aplicativo cliente que enviou a solicitação pode se autenticar, incluindo um campo de cabeçalho de autorização com a solicitação. O cabeçalho Authorization conterá o esquema de autenticação e a resposta apropriada exigida por esse esquema. Por exemplo, o cabeçalho "Authorization: Basic \<username:password> " seria adicionado à solicitação e enviado novamente ao servidor se o cliente recebeu o cabeçalho de resposta de autenticação "www-Authenticate: Basic Realm =" example "".
 
 Há dois tipos gerais de esquemas de autenticação:
 
@@ -36,7 +36,7 @@ A tabela a seguir lista os esquemas de autenticação, o tipo de autenticação,
 
 
 
-| Esquema                                    | Tipo               | DLL                  | Descrição                                                                                                                                                                                                                                                                                                                                        |
+| Esquema                                    | Type               | DLL                  | Descrição                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------|--------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Básico (texto não criptografado)                         | básico              | Wininet.dll          | Usa uma cadeia de caracteres codificada em base64 que contém o nome de usuário e a senha.                                                                                                                                                                                                                                                                             |
 | Digest                                    | desafio-resposta | Digest.dll           | Um esquema de desafio/resposta que desafia o uso de um valor nonce (uma cadeia de caracteres de dados especificada pelo servidor). Uma resposta válida contém uma soma de verificação do nome de usuário, a senha, o valor de nonce fornecido, o método HTTP e o Uniform Resource Identifier (URI) solicitado. O suporte à autenticação Digest foi introduzido no Microsoft Internet Explorer 5. |
@@ -47,7 +47,7 @@ A tabela a seguir lista os esquemas de autenticação, o tipo de autenticação,
 
 
 
- 
+ 
 
 Para qualquer coisa que não seja a autenticação básica, as chaves do registro devem ser configuradas, além da instalação da DLL apropriada.
 
@@ -244,8 +244,8 @@ switch (dwStatus)
 > [!Note]  
 > O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 
