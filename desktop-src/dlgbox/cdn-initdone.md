@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e6d51f1c34a0a399775e1786356aae4fc6526fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b07c25183eced86c3a430621091bed74c53f90d
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369611"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590793"
 ---
 # <a name="cdn_initdone-notification-code"></a>Código de notificação da CDN \_ INITDONE
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o sistema tiver terminado de organizar os controles na caixa de diálogo. O sistema move os controles padrão para liberar espaço para os controles da caixa de diálogo filho.
 

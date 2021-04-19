@@ -4,12 +4,12 @@ ms.assetid: ''
 title: Guia do desenvolvedor para a versão redistribuível do XAudio 2.9
 ms.topic: article
 ms.date: 10/17/2019
-ms.openlocfilehash: a87c2dc44179f2c189270dfa91d2cf2696ea98a7
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2b83f2811ada9a41591b4b556a34aa585002c83e
+ms.sourcegitcommit: b61ef7cdd575b086e96db4d4cf37b9fbeb388a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103930248"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107583823"
 ---
 # <a name="developer-guide-for-redistributable-version-of-xaudio-29"></a>Guia do desenvolvedor para a versão redistribuível do XAudio 2.9
 
@@ -32,6 +32,8 @@ A maneira mais fácil de instalar o pacote NuGet é usar o [Gerenciador de pacot
 A biblioteca XAPOBASEREDIST. A LIB só é necessária se você pretende impement um XAPO (objeto de processamento de XAudio) personalizado e pode removê-lo do *Microsoft. XAudio2. Redist. targets* se ele não for usado.
 
 Você também pode usar outras ferramentas para extrair o conteúdo do pacote NuGet, ou até mesmo renomear a extensão de arquivo para. zip e extrair os arquivos com qualquer ferramenta de extrator de ZIP.
+
+> Também há uma ``xaudio2redist`` porta disponível para o [Gerenciador de pacotes do vc + +](https://github.com/microsoft/vcpkg).
 
 ## <a name="compiling-your-app"></a>Compilando seu aplicativo
 
@@ -57,7 +59,7 @@ Ao contrário do XAudio 2,7 mais antigo, não é possível usar CoCreateInstance
 
 O \_ binário XAUDIO29REDIST.DLL é assinado pela Microsoft usando uma assinatura SHA-2. Qualquer código que tente validar a assinatura, por exemplo, os módulos antienganar para jogos,, portanto, precisa dar suporte ao SHA-2. Observe que o Windows 7 SP1 originalmente não dava suporte ao SHA-2 e requer uma atualização para adicionar essa funcionalidade. A atualização está disponível como [KB4474419](https://support.microsoft.com/help/4474419/sha-2-code-signing-support-update).
 
-## <a name="testing"></a>Teste
+## <a name="testing"></a>Testando
 
 ### <a name="spatial-sound-in-newer-versions-of-windows-10"></a>Som espacial nas versões mais recentes do Windows 10
 

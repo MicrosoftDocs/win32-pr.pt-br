@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e2f0f5a7860c7d729340a84bd80bc4e5713c733
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5a5c7aed47d02fb7c7fcf2232b144e7a99e7c46
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455133"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590749"
 ---
 # <a name="cdn_selchange-notification-code"></a>Código de notificação da CDN \_ SELCHANGE
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando a seleção é alterada na caixa de listagem que exibe o conteúdo da pasta ou do diretório aberto no momento.
 
