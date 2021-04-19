@@ -4,12 +4,12 @@ ms.assetid: 386ecdb9-dde5-470e-9ae8-d2e0acc065b1
 title: Lista alfabética de atributos de Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da1fad31eef65843fcb6eb95600d2cd0454818f1
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f4e33338ca60258551f59a7a52615fa56f10c639
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105761902"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222914"
 ---
 # <a name="alphabetical-list-of-media-foundation-attributes"></a>Lista alfabética de atributos de Media Foundation
 
@@ -309,6 +309,7 @@ Esta seção contém uma lista alfabética de atributos de Microsoft Media Found
 | [áudio de classe do MF \_ ReadWrite \_ MMCSS \_ \_](mf-readwrite-mmcss-class-audio.md)<br/>                                                                         | Especifica uma classe de [serviço do Agendador de classes de multimídia](/windows/desktop/ProcThread/multimedia-class-scheduler-service) (MMCSS) para threads de processamento de áudio no leitor de origem ou no gravador de coletor.<br/>                                                                                                                                                                                                                      |
 | [prioridade do MF \_ ReadWrite \_ MMCSS \_](mf-readwrite-mmcss-priority.md)<br/>                                                                                | Define a prioridade de thread base para o leitor de origem ou o gravador de coletor.<br/>                                                                                                                                                                                                                                                                                                                            |
 | [\_áudio de prioridade MF ReadWrite \_ MMCSS \_ \_](mf-readwrite-mmcss-priority-audio.md)<br/>                                                                   | Define a prioridade base para threads de processamento de áudio criados pelo leitor de origem ou gravador de coletor.<br/>                                                                                                                                                                                                                                                                                               |
+| [MF \_ SA \_ D3D \_ alocar \_ recursos de exibição \_](mf-sa-d3d11-allocate-displayable-resources.md)<br/>                                                                                     | Especifica se o alocador de exemplo (SA) da MFT deve alocar a textura do Direct3D subjacente usando o sinalizador D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.<br/>                                                                                                                                                                                                                                                                                                          |
 | [\_buffers de SA de MF \_ \_ por \_ amostra](mf-sa-buffers-per-sample.md)<br/>                                                                                     | Especifica quantos buffers o alocador de vídeo do exemplo cria para cada amostra de vídeo. <br/>                                                                                                                                                                                                                                                                                                          |
 | [\_Reconhecimento de \_ D3D \_ SA do MF](mf-sa-d3d-aware-attribute.md)<br/>                                                                                              | Especifica se uma Media Foundation transformação (MFT) dá suporte a DXVA (aceleração de vídeo do DirectX). Esse atributo se aplica somente a MFTs de vídeo. <br/>                                                                                                                                                                                                                                                   |
 | [D3D11 do MF \_ SA \_ \_](mf-sa-d3d11-aware.md)<br/>                                                                                                    | Especifica se uma Media Foundation de transformação (MFT) dá suporte ao Microsoft Direct3D 11.<br/>                                                                                                                                                                                                                                                                                                           |

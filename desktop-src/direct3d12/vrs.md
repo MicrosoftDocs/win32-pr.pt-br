@@ -1,17 +1,17 @@
 ---
-title: Sombreamento de taxa variável (VRS)
+title: VRS (sombreamento de taxa variável)
 description: Sombreamento de taxa variável &mdash; ou sombreamento de pixel grosso &mdash; é um mecanismo que permite alocar desempenho de renderização/energia em taxas que variam em sua imagem renderizada.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 04/08/2019
-ms.openlocfilehash: be2367ceb72d2e693d86b6f279b627f3bffa9e1c
-ms.sourcegitcommit: 628fda3e63fd1d513ce9a5f55be8bbc4af4b2a4b
+ms.openlocfilehash: 2f207cddee978915788291fc0ffe55160e6a93c6
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104548327"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380760"
 ---
-# <a name="variable-rate-shading-vrs"></a>Sombreamento de taxa variável (VRS)
+# <a name="variable-rate-shading-vrs"></a>VRS (sombreamento de taxa variável)
 
 ## <a name="the-motivation-for-vrs"></a>A motivação para VRS
 Devido a restrições de desempenho, um renderizador de elementos gráficos nem sempre é capaz de fornecer o mesmo nível de qualidade a cada parte de sua imagem de saída. Sombreamento de taxa variável &mdash; ou sombreamento de pixel grosso &mdash; é um mecanismo que permite alocar desempenho de renderização/energia em taxas que variam em sua imagem renderizada.
@@ -34,14 +34,14 @@ Uma API de alto sombreamento permite que seu aplicativo especifique o número de
 
 Aqui está uma tabela que descreve qual nível de MSAA tem suporte com qual tamanho de pixel grosso. Alguns não têm suporte em nenhuma plataforma; enquanto outros estão condicionalmente habilitados com base em um recurso (*AdditionalShadingRatesSupported*), indicado por "Cap".
 
-![coarsePixelSizeSupport](images/CoarsePixelSizeSupport.PNG "Tamanhos de pixels grossos")
+![A tabela mostra o tamanho de pixel grosso para M S um nível A.](images/CoarsePixelSizeSupport.PNG "Tamanhos de pixels grossos")
 
 Para as camadas de recurso abordadas na próxima seção, não há nenhuma combinação de tamanho máximo de pixel-e-amostra, em que o hardware precisa controlar mais de 16 amostras por invocação de sombreador de pixel. Essas combinações são de meio-tom sombreado na tabela acima.
 
 ## <a name="feature-tiers"></a>Camadas de recurso
 Há duas camadas para a implementação de VRS e dois recursos que você pode consultar. Cada camada é descrita mais detalhadamente após a tabela.
 
-![camadas](images/Tiers.PNG "Camadas VRS")
+![A tabela mostra os recursos disponíveis na camada 1 e camada 2.](images/Tiers.PNG "Camadas VRS")
 
 ### <a name="tier-1"></a>Camada 1
 - A taxa de sombreamento só pode ser especificada em uma base por empate; Não é mais granular do que isso.
@@ -131,7 +131,7 @@ A maneira esperada na qual os dados de imagem de espaço da tela são preenchido
 
 Ao criar a imagem de espaço na tela, esses sinalizadores são permitidos.
 
-- NONE
+- Nenhuma
 - ALLOW_UNORDERED_ACCESS
 - DENY_SHADER_RESOURCE
 
@@ -175,7 +175,7 @@ Se um conjunto de VS ou GS `SV_ShadingRate` , mas VRS não estiver habilitado, a
 ### <a name="combining-shading-rate-factors"></a>Combinando fatores de taxa de sombreamento
 As várias fontes de taxa de sombreamento são aplicadas em sequência usando este diagrama.
 
-![combinadores](images/Combiners.PNG "Combinadores de sombreamento")
+![O diagrama mostra um estado de pipeline, rotulado como, com a taxa de sombreamento de vértice provocativa, rotulada como B, aplicada a um combinador, a taxa de sombreamento baseada em imagem, rotulada B, aplicada a um combinador.](images/Combiners.PNG "Combinadores de sombreamento")
 
 Cada par de A e B é combinado usando um combinador.
 
@@ -224,7 +224,7 @@ Se nenhum atributo por primitivo for especificado, uma taxa de sombreamento de 1
 ## <a name="querying-shading-rate-by-using-sv_shadingrate"></a>Consultando a taxa de sombreamento usando SV_ShadingRate
 É útil saber qual taxa de sombreamento foi selecionada pelo hardware em qualquer invocação de sombreador de pixel fornecida. Isso pode permitir uma variedade de otimizações em seu código do PS. Uma variável de sistema somente PS, `SV_ShadingRate` , fornece informações sobre a taxa de sombreamento.
 
-### <a name="type"></a>Tipo
+### <a name="type"></a>Type
 O tipo dessa semântica é uint.
 
 ### <a name="data-interpretation"></a>Interpretação de dados
@@ -352,7 +352,7 @@ Para valores de cinco bits.
 |        00101 |0,3125    |5 / 16      |
 |        00110 |0,375     |6 / 16      |
 |        00111 |0,4375    |7 / 16      |
-|        01000 |0.5       |8 / 16      |
+|        01000 |0,5       |8 / 16      |
 |        01001 |0,5625    |9 / 16      |
 |        01010 |0,625     |10 / 16     |
 |        01011 |0,6875    |11 / 16     |
@@ -405,7 +405,7 @@ Para valores de seis bits.
 |       000101 |0,3125    |5 / 16      |
 |       000110 |0,375     |6 / 16      |
 |       000111 |0,4375    |7 / 16      |
-|       001000 |0.5       |8 / 16      |
+|       001000 |0,5       |8 / 16      |
 |       001001 |0,5625    |9 / 16      |
 |       001010 |0,625     |10 / 16     |
 |       001011 |0,6875    |11 / 16     |
@@ -447,7 +447,7 @@ Dada a compatibilidade de sombreamento de pixel grosso com MSAA, o número de bi
 ### <a name="number-of-coverage-bits-needed"></a>Número de bits de cobertura necessários
 A tabela a seguir indica quantos bits de cobertura são necessários para cada combinação de tamanho de pixel grosso e nível de MSAA.
 
-![NumberOfCoverageBits](images/NumberOfCoverageBits.PNG "Bits de cobertura")
+![A tabela mostra o tamanho de pixel grosso, o número de pixels finos e M A um nível A.](images/NumberOfCoverageBits.PNG "Bits de cobertura")
 
 Conforme indicado na tabela, não é possível usar pixels grossos para gravar mais de 16 amostras por vez usando o recurso de sombreamento de taxa variável exposto por meio do Direct3D 12. Essa restrição ocorre devido a restrições do Direct3D 12 sobre quais níveis de MSAA são permitidos com o tamanho de pixel grosso (consulte a tabela na seção [with VRS (sombreamento de taxa variável)](#with-variable-rate-shading-vrs) neste tópico).
 
@@ -456,17 +456,17 @@ Os bits da máscara de cobertura aderem a uma ordem bem definida. A máscara con
 
 A tabela a seguir mostra o formato de máscara de cobertura para combinações com suporte de tamanho de pixels e nível de MSAA.
 
-![Coverage1x](images/Coverage1x.PNG "Cobertura em 1x")
+![A tabela mostra um tamanho de pixel grosso, um diagrama de pixel grande e 1 x M S um bits de cobertura.](images/Coverage1x.PNG "Cobertura em 1x")
 
 A tabela a seguir retrata 2x pixels de MSAA, em que cada pixel tem dois exemplos de índices 0 e 1.
 
 O posicionamento dos rótulos de exemplos nos pixels é para fins ilustrativos e não transmite necessariamente os locais de exemplos {X, Y} de amostras nesse pixel; especialmente, Considerando que as posições de exemplo podem ser alteradas de forma programática. Os exemplos são referenciados por seu índice baseado em 0.
 
-![Coverage2x](images/Coverage2x.PNG "Cobertura em 2x")
+![A tabela mostra um tamanho de pixel grosso, um diagrama de pixel grande e 2 x M um bits de cobertura.](images/Coverage2x.PNG "Cobertura em 2x")
 
 A tabela a seguir mostra 4x pixels de MSAA, em que cada pixel tem quatro amostras de índices 0, 1, 2 e 3.
 
-![Coverage4x](images/Coverage4x.PNG "Cobertura em 4x")
+![A tabela mostra um tamanho de pixel grosso, um diagrama de pixel grande e 4 x M S um bits de cobertura.](images/Coverage4x.PNG "Cobertura em 4x")
 
 ## <a name="discard"></a>Descartar
 Quando a semântica HLSL `discard` é usada com sombreamento de pixel grosso, os pixels grossos são descartados.
