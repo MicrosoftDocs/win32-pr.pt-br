@@ -1,5 +1,5 @@
 ---
-title: Elemento IdentityPrivacy (PeapExtensionsType)
+title: Elemento IdentityPrivacy (PeapExtensionsType) (v1)
 description: Indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada. | Elemento IdentityPrivacy (PeapExtensionsType)
 ms.assetid: 1ae5b6e8-b1f8-45a7-ad22-fdb57cc756a2
 keywords:
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed566e9be0b9e194d24106f1c82d9a9d6d1a199d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 748cf3ae8d5a4da4f8885332a72326bced45b398
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105759278"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389070"
 ---
 # <a name="identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
