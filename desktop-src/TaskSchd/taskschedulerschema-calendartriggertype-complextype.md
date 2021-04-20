@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f45434fa68b6300157a29318ba257f43bac5992
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a891f60d46f8826faed1cc4b95e4c55f6efa4f7f
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105766200"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734161"
 ---
 # <a name="calendartriggertype-complex-type"></a>Tipo complexo calendarTriggerType
 
@@ -62,7 +62,7 @@ Define os elementos filho e as informações de sequenciamento para elementos de
 
 | Elemento                                                                                                      | Type                                                                                                 | Descrição                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**RandomDelay**](taskschedulerschema-randomdelay-calendartriggertype-element.md)                           | duration                                                                                             | Contém o tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho. O formato para essa cadeia de caracteres é P <days> dt <hours> H <minutes> M <seconds> S (por exemplo, P2DT5S é um atraso de 2 dias, 5 segundos).<br/> |
+| [**RandomDelay**](taskschedulerschema-randomdelay-calendartriggertype-element.md)                           | duration                                                                                             | Contém o tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho. O formato dessa cadeia de caracteres é `P<days>DT<hours>H<minutes>M<seconds>S` (por exemplo, P2DT5S é um atraso de 2 dias, 5 segundos).<br/> |
 | [**ScheduleByDay**](taskschedulerschema-schedulebyday-calendartriggertype-element.md)                       | [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md)                       | Especifica um agendamento diário. Por exemplo, a tarefa é iniciada todos os dias, a cada dia, a cada terceiro dia e assim por diante.<br/>                                                                                                               |
 | [**ScheduleByMonth**](taskschedulerschema-schedulebymonth-calendartriggertype-element.md)                   | [**monthlyScheduleType**](taskschedulerschema-monthlyscheduletype-complextype.md)                   | Especifica um agendamento mensal. Por exemplo, a tarefa começa às 8:00 em dias específicos do mês em meses específicos. <br/>                                                                                                       |
 | [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica um gatilho que inicia um trabalho em uma agenda mensal de dia da semana. Por exemplo, a tarefa é iniciada em dias da semana específicos, semanas do mês e meses do ano. <br/>                                               |
@@ -85,7 +85,7 @@ Além do elemento filho definido aqui, o elemento [**CalendarTrigger**](tasksche
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

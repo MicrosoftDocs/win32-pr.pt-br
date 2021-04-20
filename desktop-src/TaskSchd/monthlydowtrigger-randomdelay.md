@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6fbdcab3b3f20d32e67b5b4e3e27b890b6bc902
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e781941e927547a4ea25935fb21299777c34b3ea
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930454"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734121"
 ---
 # <a name="monthlydowtriggerrandomdelay-property"></a>Propriedade MonthlyDOWTrigger. RandomDelay
 
 Para scripts, Obtém ou define um tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -38,7 +38,7 @@ MonthlyDOWTrigger.RandomDelay As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho. O formato para essa cadeia de caracteres é P <days> dt <hours> H <minutes> M <seconds> S (por exemplo, P2DT5S é um atraso de 2 dias, 5 segundos).
+O tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho. O formato dessa cadeia de caracteres é `P<days>DT<hours>H<minutes>M<seconds>S` (por exemplo, P2DT5S é um atraso de 2 dias, 5 segundos).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ O tempo de atraso que é adicionado aleatoriamente à hora de início do gatilho
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

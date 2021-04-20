@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d62bb821f4c5e61d344e21fafa4ba1265c73470
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1e81920fffe5c9fd58dd36a028b924f54ebe6dd
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499520"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734171"
 ---
 # <a name="repetitionpatterninterval-property"></a>Propriedade RepetitionPattern. Interval
 
 Para scripts, Obtém ou define o período de tempo entre cada reinicialização da tarefa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -38,7 +38,7 @@ RepetitionPattern.Interval As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-A quantidade de tempo entre cada reinicialização da tarefa. O formato para essa cadeia de caracteres é P <days> dt <hours> H <minutes> M <seconds> S (por exemplo, "PT5M" é de 5 minutos, "PT1H" é de 1 hora e "PT20M" é de 20 minutos). O tempo máximo permitido é de 31 dias e o tempo mínimo permitido é de 1 minuto.
+A quantidade de tempo entre cada reinicialização da tarefa. O formato dessa cadeia de caracteres é `P<days>DT<hours>H<minutes>M<seconds>S` (por exemplo, "PT5M" é de 5 minutos, "PT1H" é de 1 hora e "PT20M" é de 20 minutos). O tempo máximo permitido é de 31 dias e o tempo mínimo permitido é de 1 minuto.
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,7 +59,7 @@ Ao ler ou gravar XML para uma tarefa, o intervalo de repetição é especificado
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
