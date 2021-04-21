@@ -1,17 +1,17 @@
 ---
-title: Usando operadores com fusível para melhorar o desempenho
+title: Como usar operadores fundidos para aprimorar o desempenho
 description: Alguns operadores DirectML dão suporte a um conceito conhecido como *Fusion*. O operador Fusion é uma maneira de melhorar o desempenho mesclando um operador (normalmente, uma função de ativação) em um operador diferente para que eles sejam executados juntos sem a necessidade de uma viagem de ida e volta à memória.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: b692727d52e252bb3752573e692bcf5beda794e2
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: bba4a9d0ef5c69976a5a344432bf82d31b00c0c7
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548336"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803990"
 ---
-# <a name="using-fused-operators-to-improve-performance"></a>Usando operadores com fusível para melhorar o desempenho
+# <a name="using-fused-operators-to-improve-performance"></a>Como usar operadores fundidos para aprimorar o desempenho
 
 Alguns operadores DirectML dão suporte a um conceito conhecido como *Fusion*. O operador Fusion é uma maneira de melhorar o desempenho mesclando um operador (normalmente, uma função de ativação) em um operador diferente para que eles sejam executados juntos sem a necessidade de uma viagem de ida e volta à memória.
 
@@ -102,5 +102,5 @@ Quaisquer operadores que não estejam nessa lista não têm suporte para a ativa
 
 ## <a name="see-also"></a>Confira também
 
-[Exemplo de DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples)    
-[DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)
+* [Exemplo de DirectMLSuperResolution](https://github.com/microsoft/DirectML/tree/master/Samples)    
+* [DML_CONVOLUTION_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_convolution_operator_desc)

@@ -35,12 +35,12 @@ f1_keywords:
 - directml/DML_ELEMENT_WISE_IS_INFINITY_OPERATOR_DESC
 dev_langs:
 - c++
-ms.openlocfilehash: b4f3f07fcbe303e86b422206a8f07eb75fb09d70
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 41be7751b542436b481da784c60ae79ad554cd12
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105816055"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803095"
 ---
 # <a name="dml_element_wise_is_infinity_operator_desc-structure-directmlh"></a>Estrutura de DML_ELEMENT_WISE_IS_INFINITY_OPERATOR_DESC (directml. h)
 
@@ -54,7 +54,7 @@ f(x) = isinf(x) && (
 ```
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

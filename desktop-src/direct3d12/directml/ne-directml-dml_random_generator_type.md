@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RANDOM_GENERATOR_TYPE
-ms.openlocfilehash: bcb79fe7737e8b9ddb461c8da8a901960a4b23f8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: c08b5cdc07280a2851636a555415ecce515fa79b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105790661"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803760"
 ---
 # <a name="dml_random_generator_type-enumeration-directmlh"></a>Enumeração de DML_RANDOM_GENERATOR_TYPE (directml. h)
 
 Define constantes que especificam tipos de gerador aleatório de número aleatório.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 ```cpp
 enum DML_RANDOM_GENERATOR_TYPE
 {

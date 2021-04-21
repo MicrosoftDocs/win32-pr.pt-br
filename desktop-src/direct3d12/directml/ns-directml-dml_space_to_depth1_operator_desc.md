@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SPACE_TO_DEPTH1_OPERATOR_DESC
-ms.openlocfilehash: 9c5033440e65dacdcb815edd08994b79a5fae41a
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 35e64d83fa6b8df42428869f72249e9846e50596
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105772763"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802867"
 ---
 # <a name="dml_space_to_depth1_operator_desc-structure-directmlh"></a>Estrutura de DML_SPACE_TO_DEPTH1_OPERATOR_DESC (directml. h)
 Reorganiza blocos de dados espaciais em profundidade. O operador gera uma cópia do tensor de entrada, onde os valores das dimensões de altura e largura são movidos para a dimensão de profundidade.
@@ -57,7 +57,7 @@ Reorganiza blocos de dados espaciais em profundidade. O operador gera uma cópia
 Esta é a transformação inversa de [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md).
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

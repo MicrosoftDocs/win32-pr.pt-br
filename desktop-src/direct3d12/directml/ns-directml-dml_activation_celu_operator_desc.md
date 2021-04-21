@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ACTIVATION_CELU_OPERATOR_DESC
-ms.openlocfilehash: d474bd44c8a830117bb62927f4bda954a753b612
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b6497e995601d7e9e01696f39920672674be07c4
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105793764"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803732"
 ---
 # <a name="dml_activation_celu_operator_desc-structure-directmlh"></a>Estrutura de DML_ACTIVATION_CELU_OPERATOR_DESC (directml. h)
 
@@ -68,7 +68,7 @@ Em que:
 Esse operador dá suporte à execução in-loco, o que significa que a saída tensor é permitida para o alias *InputTensor* durante a associação.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -96,7 +96,7 @@ A saída tensor para gravar os resultados.
 
 `Alpha`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">float</a></b>
 
 O coeficiente alfa. Um padrão típico para esse valor é 1,0.
 

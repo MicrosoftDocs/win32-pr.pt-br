@@ -44,18 +44,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC
-ms.openlocfilehash: 5baf16c5acd1ce5c5f44e68420e93aabaa276ea7
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3deddea3d60db1a8689ceabfac92ff17393b7606
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105766582"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803994"
 ---
 # <a name="dml_reverse_subsequences_operator_desc-structure-directmlh"></a>Estrutura de DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC (directml. h)
 Inverte os elementos de uma ou mais *subsequências* de um tensor. O conjunto de subsequências a serem revertidas é escolhido com base no eixo fornecido e nos comprimentos de sequência.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

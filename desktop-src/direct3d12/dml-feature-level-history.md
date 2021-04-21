@@ -1,19 +1,46 @@
 ---
-title: Histórico de nível de recurso do DirectML
+title: Histórico do nível de recurso do DirectML
 description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 92f5a004b73d608a3958ae0edfa8c6d6b6a523d6
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 68633f531c627eed8b02c7f65a248213743ca8bc
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104548338"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803784"
 ---
-# <a name="directml-feature-level-history"></a>Histórico de nível de recurso do DirectML
+# <a name="directml-feature-level-history"></a>Histórico do nível de recurso do DirectML
 
 Para obter o histórico de versões gerais do DirectML, consulte [histórico de versão do DirectML](./dml-version-history.md).
+
+## <a name="dml_feature_level_3_1"></a>DML_FEATURE_LEVEL_3_1
+
+Introduzido na versão 1.5.0 do DirectML.
+
+Adicionado suporte para os seguintes operadores.
+
+* [DML_OPERATOR_ELEMENT_WISE_ATAN_YX](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
+* **DML_OPERATOR_ELEMENT_WISE_DIFFERENCE_SQUARE**
+* **DML_OPERATOR_LOCAL_RESPONSE_NORMALIZATION_GRAD**
+* **DML_OPERATOR_CUMULATIVE_PRODUCT**
+* **DML_OPERATOR_BATCH_NORMALIZATION_GRAD**
+
+O número máximo de dimensões com suporte para os seguintes operadores aumentou de 4 para 8.
+
+* **DML_OPERATOR_BATCH_NORMALIZATION**
+* **DML_OPERATOR_CAST**
+* **DML_OPERATOR_JOIN**
+* **DML_OPERATOR_LP_NORMALIZATION**
+* **DML_OPERATOR_MEAN_VARIANCE_NORMALIZATION1**
+* **DML_OPERATOR_PADDING**
+* **DML_OPERATOR_ACTIVATION_RELU_GRAD**
+* **DML_OPERATOR_SLICE_GRAD**
+* **DML_OPERATOR_TILE**
+* **DML_OPERATOR_TOP_K**
+* **DML_OPERATOR_TOP_K1**
 
 ## <a name="dml_feature_level_3_0"></a>DML_FEATURE_LEVEL_3_0
 
@@ -184,7 +211,7 @@ O nível de recurso no qual o DirectML foi introduzido.
 
 ## <a name="see-also"></a>Confira também
 
-Histórico de versão do [DirectML](./dml-version-history.md) 
- [Enumeração](/windows/win32/api/directml/ne-directml-dml_feature_level) 
- de DML_FEATURE_LEVEL [Função DMLCreateDevice1](./directml/nf-directml-dmlcreatedevice1.md) 
- [Estrutura de DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels)
+* [Histórico de versão do DirectML](./dml-version-history.md)
+* [Enumeração de DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level)
+* [Função DMLCreateDevice1](./directml/nf-directml-dmlcreatedevice1.md)
+* [Estrutura de DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels)

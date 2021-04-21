@@ -4,12 +4,12 @@ description: DirectMLX é uma biblioteca auxiliar somente de cabeçalho do C++ p
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 8388edd51b6ad3ca30fe1c65947167cee7dac5e6
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 2ddd6d9063002b76449224ebafdb6dd021b27fa0
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104548335"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803361"
 ---
 # <a name="directmlx"></a>DirectMLX
 
@@ -31,7 +31,7 @@ DirectMLX. h requer um compilador com capacidade de C + +11, incluindo (mas não
 * Visual Studio 2019
 * Clang 10
 
-Observe que um compilador C++ 17 (ou mais recente) é uma opção que recomendamos. A compilação para C++ 11 é possível, mas requer o uso de bibliotecas de terceiros (como [GSL](https://github.com/microsoft/GSL) e [Abseil](https://github.com/abseil/abseil-cpp)) para substituir a funcionalidade de biblioteca padrão ausente.
+Observe que um compilador C++ 17 (ou mais recente) é a opção que recomendamos. A compilação para C++ 11 é possível, mas requer o uso de bibliotecas de terceiros (como [GSL](https://github.com/microsoft/GSL) e [Abseil](https://github.com/abseil/abseil-cpp)) para substituir a funcionalidade de biblioteca padrão ausente.
 
 Se você tiver uma configuração que não pode ser compilada `DirectMLX.h` , registre [um problema em nosso GitHub](https://github.com/microsoft/DirectML/issues).
 
@@ -45,10 +45,10 @@ IDMLDevice* device;
 
 /* ... */
 
-dml::Scope scope(device);
+dml::Graph graph(device);
 
 // Input tensor of type FLOAT32 and sizes { 1, 2, 3, 4 }
-auto x = dml::InputTensor(scope, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, {1, 2, 3, 4}));
+auto x = dml::InputTensor(graph, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, {1, 2, 3, 4}));
 
 // Create an operator to compute the square root of x
 auto y = dml::Sqrt(x);
@@ -56,7 +56,7 @@ auto y = dml::Sqrt(x);
 // Compile a DirectML operator from the graph. When executed, this compiled operator will compute
 // the square root of its input.
 DML_EXECUTION_FLAGS flags = DML_EXECUTION_FLAG_NONE;
-ComPtr<IDMLCompiledOperator> op = scope.Compile(flags, { y });
+ComPtr<IDMLCompiledOperator> op = graph.Compile(flags, { y });
 
 // Now initialize and dispatch the DML operator as usual
 ```
@@ -88,19 +88,19 @@ std::pair<dml::Expression, dml::Expression>
 
 /* ... */
 
-dml::Scope scope(device);
+dml::Graph graph(device);
 
 dml::TensorDimensions inputSizes = {1, 2, 3, 4};
-auto a = dml::InputTensor(scope, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
-auto b = dml::InputTensor(scope, 1, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
-auto c = dml::InputTensor(scope, 2, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto a = dml::InputTensor(graph, 0, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto b = dml::InputTensor(graph, 1, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
+auto c = dml::InputTensor(graph, 2, dml::TensorDesc(DML_TENSOR_DATA_TYPE_FLOAT32, inputSizes));
 
 auto [x1, x2] = QuadraticFormula(a, b, c);
 
 // When executed with input tensors a, b, and c, this compiled operator computes the two outputs
 // of the quadratic formula, and returns them as two output tensors x1 and x2
 DML_EXECUTION_FLAGS flags = DML_EXECUTION_FLAG_NONE;
-ComPtr<IDMLCompiledOperator> op = scope.Compile(flags, { x1, x2 });
+ComPtr<IDMLCompiledOperator> op = graph.Compile(flags, { x1, x2 });
 
 // Now initialize and dispatch the DML operator as usual
 ```
@@ -109,7 +109,7 @@ ComPtr<IDMLCompiledOperator> op = scope.Compile(flags, { x1, x2 });
 
 Exemplos completos usando DirectMLX podem ser encontrados no [repositório GitHub do DirectML](https://github.com/microsoft/DirectML/tree/master/Samples).
 
-## <a name="compile-time-options"></a>Opções de Compile-Time
+## <a name="compile-time-options"></a>Opções de tempo de compilação
 
 O DirectMLX dá suporte a #define de tempo de compilação para personalizar várias partes do cabeçalho.
 
@@ -128,7 +128,7 @@ No entanto, as outras propriedades de uma saída tensor incluem os *passos*, *To
 
 O DirectMLX dá suporte à capacidade de personalizar essas propriedades tensor de saída, usando objetos conhecidos como *políticas de tensor*. Um **TensorPolicy** é um retorno de chamada personalizável que é invocado pelo DirectMLX e retorna as propriedades tensor de saída, dado o tipo de dados, os sinalizadores e os tamanhos computados de tensor.
 
-As políticas de tensor podem ser definidas no objeto **DML:: Scope** e serão usadas para todos os operadores subsequentes nesse grafo. As políticas de tensor também podem ser definidas diretamente ao construir um **TensorDesc**.
+As políticas de tensor podem ser definidas no objeto **DML:: Graph** e serão usadas para todos os operadores subsequentes nesse grafo. As políticas de tensor também podem ser definidas diretamente ao construir um **TensorDesc**.
 
 O layout dos tempos de vida produzidos por DirectMLX pode, portanto, ser controlado definindo um **TensorPolicy** que define os progressos adequados em seus tempos.
 
@@ -151,9 +151,9 @@ dml::TensorProperties MyCustomPolicy(
     return props;
 };
 
-// Set the policy on the dml::Scope
-dml::Scope scope(/* ... */);
-scope.SetTensorPolicy(dml::TensorPolicy(&MyCustomPolicy));
+// Set the policy on the dml::Graph
+dml::Graph graph(/* ... */);
+graph.SetTensorPolicy(dml::TensorPolicy(&MyCustomPolicy));
 ```
 
 ### <a name="example-2"></a>Exemplo 2
@@ -161,9 +161,9 @@ scope.SetTensorPolicy(dml::TensorPolicy(&MyCustomPolicy));
 O DirectMLX também fornece algumas políticas de tensor alternativas internas. A política de **InterleavedChannel** , por exemplo, é fornecida como uma conveniência e pode ser usada para produzir muitos tempos com sobretensão, de forma que sejam escritas em ordem NHWC.
 
 ```cpp
-// Set the InterleavedChannel policy on the dml::Scope
-dml::Scope scope(/* ... */);
-scope.SetTensorPolicy(dml::TensorPolicy::InterleavedChannel());
+// Set the InterleavedChannel policy on the dml::Graph
+dml::Graph graph(/* ... */);
+graph.SetTensorPolicy(dml::TensorPolicy::InterleavedChannel());
 
 // When executed, the tensor `result` will be in NHWC layout (rather than the default NCHW)
 auto result = dml::Convolution(/* ... */);

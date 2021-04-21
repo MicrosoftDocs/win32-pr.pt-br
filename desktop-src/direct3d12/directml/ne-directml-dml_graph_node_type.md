@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GRAPH_NODE_TYPE
-ms.openlocfilehash: 1788dfcce20ce2a9e490bf7ed6e8ef84e306d659
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0bb0712370da35c4b8c9278ad7721d2ffc7d875d
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105814610"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803691"
 ---
 # <a name="dml_graph_node_type-enumeration-directmlh"></a>Enumeração de DML_GRAPH_NODE_TYPE (directml. h)
 
 Define constantes que especificam um tipo de nó de gráfico. Consulte [DML_GRAPH_NODE_DESC](./ns-directml-dml_graph_node_desc.md) para o uso dessa enumeração.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 ```cpp
 typedef enum DML_GRAPH_NODE_TYPE {
   DML_GRAPH_NODE_TYPE_INVALID,

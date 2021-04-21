@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMAX_OPERATOR_DESC
-ms.openlocfilehash: 17ccadc1228ea833ea1f1b3235e97430ac000514
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0c466975ad3b88973f50bc06676f2197267c56a7
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105816051"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803553"
 ---
 # <a name="dml_argmax_operator_desc-structure-directmlh"></a>Estrutura de DML_ARGMAX_OPERATOR_DESC (directml. h)
 
@@ -59,7 +59,7 @@ Gera os índices dos elementos com valor máximo em uma ou mais dimensões do te
 Cada elemento de saída é o resultado da aplicação de uma redução de *ARGMAX* em um subconjunto do tensor de entrada. A função *ARGMAX* gera o índice do elemento com valor máximo em um conjunto de elementos de entrada. Os elementos de entrada envolvidos em cada redução são determinados pelos eixos de entrada fornecidos. Da mesma forma, cada índice de saída é relativo aos eixos de entrada fornecidos. Se todos os eixos de entrada forem especificados, o operador aplicará uma única redução de *ARGMAX* e produzirá um único elemento de saída.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -92,13 +92,13 @@ O tensor para gravar os resultados. Cada elemento de saída é o resultado de um
 
 `AxisCount`
 
-Tipo: **[uint](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[uint](/windows/win32/winprog/windows-data-types)**
 
 O número de eixos a serem reduzidos. Este campo determina o tamanho da matriz de *eixos* .
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
 
 Os eixos ao longo do qual reduzir. Os valores devem estar no intervalo `[0, InputTensor.DimensionCount - 1]` .
 

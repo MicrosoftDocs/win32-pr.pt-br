@@ -4,12 +4,12 @@ description: O DirectML é distribuído como um componente de sistema do Windows
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 04cb7a2c906d7674c793a9a99e21609ea874dbc1
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: f5e0a478b2d4c6728a1cd53388ba09af8e5bbc0e
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104548333"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803936"
 ---
 # <a name="directml-version-history"></a>Histórico de versão do DirectML
 
@@ -23,7 +23,8 @@ DirectML segue as convenções de [controle de versão semânticos](https://semv
 
 |Versão do DirectML|Nível de recurso com suporte (consulte o [histórico de nível de recurso DirectML](./dml-feature-level-history.md))|DML_TARGET_VERSION|Primeiro disponível em|Primeiro disponível em (redistribuível)|
 |-|-|-|-|-|-|
-|1.4.0<sup>1</sup>|DML_FEATURE_LEVEL_3_0|`0x3000`|N/D|[DirectML-1.4.0](https://www.nuget.org/packages/Microsoft.AI.DirectML/)|
+|1.5.0|DML_FEATURE_LEVEL_3_1|`0x3100`|N/D|[DirectML-1.5.0](https://www.nuget.org/packages/Microsoft.AI.DirectML/1.5.0)|
+|1.4.0<sup>1</sup>|DML_FEATURE_LEVEL_3_0|`0x3000`|N/D|[DirectML-1.4.0](https://www.nuget.org/packages/Microsoft.AI.DirectML/1.4.0)|
 |1.1.0|DML_FEATURE_LEVEL_2_0|`0x2000`|Windows 10, versão 2004 (10,0; Build 19041) (Windows 10 pode 2020 atualização). Também conhecido como "20H1".|N/D|
 |1.0.0|DML_FEATURE_LEVEL_1_0|`0x1000`|Windows 10, versão 1903 (10,0; Build 18362) (Windows 10 pode 2019 atualização). Também conhecido como "19H1".|N/D|
 
@@ -70,6 +71,6 @@ Por exemplo, um aplicativo com base em um SDK mais recente, mas em execução em
 
 ## <a name="see-also"></a>Confira também
 
-Histórico de nível de [recurso do DirectML](./dml-feature-level-history.md) 
- [Enumeração](/windows/win32/api/directml/ne-directml-dml_feature_level) 
- de DML_FEATURE_LEVEL [Pacote redistribuível Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/)
+* [Histórico do nível de recurso do DirectML](./dml-feature-level-history.md)
+* [Enumeração de DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level)
+* [Pacote redistribuível Microsoft. AI. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/)

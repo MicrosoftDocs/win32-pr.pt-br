@@ -39,12 +39,12 @@ api_name:
 f1_keywords:
 - DML_SCATTER_ND_OPERATOR_DESC
 - directml/DML_SCATTER_ND_OPERATOR_DESC
-ms.openlocfilehash: ae9a3022a7070bbf0253e71550f2ca1ceced6768
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 6c987e01862d849c6215a2d25fe957ef0a22e7af
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105773939"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803982"
 ---
 # <a name="dml_scatter_nd_operator_desc-structure-directmlh"></a>Estrutura de DML_SCATTER_ND_OPERATOR_DESC (directml. h)
 Copia todo o tensor de entrada para a saída e, em seguida, substitui índices selecionados por valores correspondentes das atualizações tensor. Esse operador executa o pseudocódigo a seguir, onde "..." representa uma série de coordenadas, com o comportamento exato determinado pelo eixo e pelo tamanho dos índices.
@@ -57,7 +57,7 @@ output[indices[...]] = updates[...]
 Se dois índices de elementos de saída se sobrepõem (que é inválido), não há garantia de qual última gravação vence.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -108,7 +108,7 @@ UpdatesTensor.Sizes = [
 
 As dimensões são alinhadas à direita, com os 1 valores iniciais precedidos, se necessário, para atender a *UpdatesTensor. DimensionCount*.
 
-Aqui está um exemplo.
+Veja um exemplo.
 
 ```
 InputTensor.Sizes = [3,4,5,6,7]

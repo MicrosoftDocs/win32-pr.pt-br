@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ADAM_OPTIMIZER_OPERATOR_DESC
-ms.openlocfilehash: a4acd26f5174bf6c6ae53f5edfdc28cc6c9b1a3d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 9943f70bd3d62faf57f4eca83f9f09ce0119881a
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105766001"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803527"
 ---
 # <a name="dml_adam_optimizer_operator_desc-structure-directmlh"></a>Estrutura de DML_ADAM_OPTIMIZER_OPERATOR_DESC (directml. h)
 
@@ -82,7 +82,7 @@ OutputSecondMomentTensor = V
 Além de computar os parâmetros de peso atualizados (retornados em *OutputParametersTensor*), esse operador também retorna as estimativas atualizadas do primeiro e do segundo momento em *OutputFirstMomentTensor* e *OutputSecondMomentTensor*, respectivamente. Normalmente, você deve armazenar essas estimativas de primeiro e segundo momento e fornecê-las como entradas durante a etapa de treinamento subsequente.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

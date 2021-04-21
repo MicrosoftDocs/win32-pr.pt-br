@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RANDOM_GENERATOR_OPERATOR_DESC
-ms.openlocfilehash: 19e01ec8dc47e65ace996deef5954c35e21bf5bb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 6807c3a1ac91716739075f51196a75ae76ca479b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105793771"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804071"
 ---
 # <a name="dml_random_generator_operator_desc-structure-directmlh"></a>Estrutura de DML_RANDOM_GENERATOR_OPERATOR_DESC (directml. h)
 
@@ -61,7 +61,7 @@ Esse operador é determinístico e se comporta como se fosse uma função pura &
 Os geradores implementados por esse operador não são criptograficamente seguros; Portanto, esse operador não deve ser usado para criptografia, geração de chave ou outros aplicativos que exijam a geração de números aleatórios criptograficamente seguros.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 

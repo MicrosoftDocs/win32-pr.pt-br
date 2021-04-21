@@ -44,18 +44,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_OUTPUT_GRAPH_EDGE_DESC
-ms.openlocfilehash: d1d48de0fa3bf2665269ebf2226de4e9911a1670
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 55d234fcf487e7ad92b39b60d43eb992b46d0d2c
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105793765"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803929"
 ---
 # <a name="dml_output_graph_edge_desc-structure-directmlh"></a>Estrutura de DML_OUTPUT_GRAPH_EDGE_DESC (directml. h)
 Descreve uma conexão em um grafo de operadores DirectML definidos por [DML_GRAPH_DESC](/windows/desktop/direct3d12/directml/ns-directml-dml_graph_desc) e passado para [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph). Essa estrutura é usada para definir uma conexão de uma saída de um nó interno para uma saída de grafo.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

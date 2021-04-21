@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SLICE1_OPERATOR_DESC
-ms.openlocfilehash: 06721a7484426eb293494156a2ec23db6fbf0a6b
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: f34525865be9541da879e66e88c29d4a2ab74f00
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105808402"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803949"
 ---
 # <a name="dml_slice1_operator_desc-structure-directmlh"></a>Estrutura de DML_SLICE1_OPERATOR_DESC (directml. h)
 Extrai uma única subregião (uma "fatia") de um tensor de entrada.
@@ -83,7 +83,7 @@ MaxCopiedElements[i] = 1 + (InputWindowSize[i] - 1) / InputWindowStrides[i]
 O tensor de saída não é necessário para copiar todos os elementos acessíveis dentro da janela. A fatia é válida desde que `1 <= OutputSizes[i] <= MaxCopiedElements[i]` .
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

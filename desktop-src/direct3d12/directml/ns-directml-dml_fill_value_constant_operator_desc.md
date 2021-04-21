@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_FILL_VALUE_CONSTANT_OPERATOR_DESC
-ms.openlocfilehash: d2b69f1f6b1c9768c24cab9a58bba3c3cadb04bb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 4fe9f766fc48a4b1ca0d32082dcd8a5f67591195
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105795506"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803027"
 ---
 # <a name="dml_fill_value_constant_operator_desc-structure-directmlh"></a>Estrutura de DML_FILL_VALUE_CONSTANT_OPERATOR_DESC (directml. h)
 
@@ -62,7 +62,7 @@ endfor
 ```
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

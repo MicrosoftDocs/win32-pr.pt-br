@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_TOP_K1_OPERATOR_DESC
-ms.openlocfilehash: 8c5b9bf58a8582588d19878c7e06c602584777fa
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 599541032e0f1711c0e747a4ca5906391849a932
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105802168"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803818"
 ---
 # <a name="dml_top_k1_operator_desc-structure-directmlh"></a>Estrutura de DML_TOP_K1_OPERATOR_DESC (directml. h)
 Seleciona os maiores ou menores elementos *K* de cada sequência ao longo de um eixo de *InputTensor* e retorna os valores e índices desses elementos em *OutputValueTensor* e *OutputIndexTensor*, respectivamente. Uma *sequência* refere-se a um dos conjuntos de elementos que existem ao longo da dimensão de *eixo* do *InputTensor*.
@@ -57,7 +57,7 @@ Seleciona os maiores ou menores elementos *K* de cada sequência ao longo de um 
 A escolha de se deseja selecionar os maiores elementos K ou os menores K podem ser controlados usando *AxisDirection*.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -71,8 +71,6 @@ struct DML_TOP_K1_OPERATOR_DESC {
 };
 ```
 
-
-
 ## <a name="members"></a>Membros
 
 `InputTensor`
@@ -81,7 +79,6 @@ Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tens
 
 O tensor de entrada que contém os elementos a serem selecionados.
 
-
 `OutputValueTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
@@ -89,7 +86,6 @@ Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tens
 O tensor de saída para gravar os valores dos primeiros *K* elementos em. Os primeiros elementos *K* são selecionados com base no fato de serem os maiores ou menores, dependendo do valor de *AxisDirection*. Esse tensor deve ter tamanhos iguais a *InputTensor*, *exceto* para a dimensão especificada pelo parâmetro *Axis* , que deve ter um tamanho igual a *K*.
 
 Os valores *K* selecionados de cada sequência de entrada têm a garantia de serem classificados como decrescentes (maior do que o menor) se *AxisDirection* for [DML_AXIS_DIRECTION_DECREASING](./ne-directml-dml_axis_direction.md). Caso contrário, o oposto é verdadeiro e os valores selecionados têm a garantia de serem classificados em ordem crescente (menor para o maior).
-
 
 `OutputIndexTensor`
 
@@ -101,20 +97,17 @@ Os índices retornados neste tensor são medidos em relação ao início de sua 
 
 Nos casos em que dois ou mais elementos de Top-K têm o mesmo valor (ou seja, quando há um empate), os índices de ambos os elementos são incluídos e têm a garantia de serem ordenados por índice de elemento crescente. Observe que isso é verdadeiro independentemente do valor de *AxisDirection*.
 
-
 `Axis`
 
 Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
 
 O índice da dimensão na qual selecionar elementos. Esse valor deve ser menor que o *DimensionCount* do *InputTensor*.
 
-
 `K`
 
 Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
 
 O número de elementos a serem selecionados. *K* deve ser maior que 0, mas menor que o número de elementos no *InputTensor* ao longo da dimensão especificada por *Axis*.
-
 
 `AxisDirection`
 
@@ -222,16 +215,27 @@ Quando *AxisDirection* é definido como [DML_AXIS_DIRECTION_DECREASING](./ne-dir
 Esse operador foi introduzido no `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Restrições de tensor
+
+* *InputTensor*, *OutputIndexTensor* e *OutputValueTensor* devem ter o mesmo *DimensionCount*.
 * *InputTensor* e *OutputValueTensor* devem ter o mesmo *tipo de dados*.
-* *OutputIndexTensor* e *OutputValueTensor* devem ter os mesmos *tamanhos*.
 
 ## <a name="tensor-support"></a>Suporte do tensor
-| Tensor | Tipo | Dimensões | Contagens de dimensão com suporte | Tipos de dados com suporte |
-| ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputTensor | Entrada | { In0, In1, In2, In3 } | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputValueTensor | Saída | { Out0, Out1, Out2, Out3 } | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputIndexTensor | Saída | { Out0, Out1, Out2, Out3 } | 4 | UINT32 |
 
+### <a name="dml_feature_level_3_1-and-above"></a>DML_FEATURE_LEVEL_3_1 e acima
+
+| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+| ------ | ---- | -------------------------- | -------------------- |
+| InputTensor | Entrada | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputValueTensor | Saída | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputIndexTensor | Saída | 1 a 8 | UINT32 |
+
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e acima
+
+| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+| ------ | ---- | -------------------------- | -------------------- |
+| InputTensor | Entrada | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputValueTensor | Saída | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputIndexTensor | Saída | 4 | UINT32 |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |

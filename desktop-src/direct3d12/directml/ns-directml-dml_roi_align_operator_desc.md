@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ROI_ALIGN_OPERATOR_DESC
-ms.openlocfilehash: 987aef7d7002892b8af3167fb8da2b74dc80a12e
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b9004a77d3b325dd3394d1a3a6b596e94997e9fd
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105793770"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804011"
 ---
 # <a name="dml_roi_align_operator_desc-structure-directmlh"></a>Estrutura de DML_ROI_ALIGN_OPERATOR_DESC (directml. h)
 
 Executa uma operação de alinhamento de ROI, conforme descrito no [papel de máscara R-CNN](https://arxiv.org/abs/1703.06870). Em suma, a operação extrai aparas da imagem de entrada tensor e as redimensiona para um tamanho de saída comum especificado pelas duas últimas dimensões de *OutputTensor* usando o *interpolamode* especificado.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -121,31 +121,31 @@ O modo de interpolação a ser usado ao redimensionar as regiões.
 
 `SpatialScaleX`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">float</a></b>
 
 O componente X (ou largura) do fator de dimensionamento para multiplicar as coordenadas *ROITensor* por a fim de torná-las proporcionais a *InputHeight* e *InputWidth*. Por exemplo, se *ROITensor* contiver coordenadas normalizadas (valores no intervalo [0.. 1]), *SpatialScaleX* normalmente teria o mesmo valor que *InputWidth*.
 
 `SpatialScaleY`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">float</a></b>
 
 O componente Y (ou Height) do fator de dimensionamento para multiplicar as coordenadas *ROITensor* por a fim de torná-las proporcionais a *InputHeight* e *InputWidth*. Por exemplo, se *ROITensor* contiver coordenadas normalizadas (valores no intervalo [0.. 1]), *SpatialScaleY* normalmente teria o mesmo valor que *InputHeight*.
 
 `OutOfBoundsInputValue`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">float</a></b>
 
 O valor a ser lido de *InputTensor* quando Rois estão fora dos limites de *InputTensor*. Isso pode acontecer quando os valores obtidos após o dimensionamento de *ROITensor* por *SpatialScaleX* e *SpatialScaleY* são maiores que *InputWidth* e *InputHeight*.
 
 `MinimumSamplesPerOutput`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">uint</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">uint</a></b>
 
 O número mínimo de amostras de entrada a serem usadas para cada elemento de saída. O operador calculará o número de exemplos de entrada fazendo `ScaledCropSize / OutputSize` e, em seguida, fixe-o para *MinimumSamplesPerOutput* e *MaximumSamplesPerOutput*.
 
 `MaximumSamplesPerOutput`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">uint</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">uint</a></b>
 
 O número máximo de amostras de entrada a serem usadas para cada elemento de saída. O operador calculará o número de exemplos de entrada fazendo `ScaledCropSize / OutputSize` e, em seguida, fixe-o para *MinimumSamplesPerOutput* e *MaximumSamplesPerOutput*.
 

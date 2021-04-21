@@ -46,12 +46,12 @@ api_location:
 - DirectML.h
 api_name:
 - IDMLDevice1
-ms.openlocfilehash: a23d6ec4299a2aa3ca7e9f6873167412d094af8d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 7a10cf2c9fe683775d163c7b5cb0e30fe07de08f
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105773937"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803743"
 ---
 # <a name="idmldevice1-interface-directmlh"></a>Interface IDMLDevice1 (directml. h)
 
@@ -62,7 +62,7 @@ Um dispositivo DirectML sempre está associado a exatamente um dispositivo Direc
 Esse objeto é thread-safe.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="availability"></a>Disponibilidade
 Essa API foi introduzida na versão DirectML `1.1.0` .

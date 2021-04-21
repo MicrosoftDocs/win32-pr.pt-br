@@ -46,12 +46,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_MATRIX_MULTIPLY_INTEGER_OPERATOR_DESC
-ms.openlocfilehash: f6ecccf49b0d7123e6f41321c7ba1bf8e8d4ad87
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: f498e84208da451b5d25ffef90219c0037ce86fb
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105793766"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802842"
 ---
 # <a name="dml_matrix_multiply_integer_operator_desc-structure-directmlh"></a>Estrutura de DML_MATRIX_MULTIPLY_INTEGER_OPERATOR_DESC (directml. h)
 Executa uma função de multiplicação de matriz em dados inteiros.
@@ -61,7 +61,7 @@ Esse operador requer que a matriz multiplique os tempos de entrada para ser 4D, 
 Por exemplo, se *ATensor* tiver *tamanhos* de `{ BatchCount, ChannelCount, M, K }` e *BTensor* tiver tamanhos  de `{ BatchCount, ChannelCount, K, N }` e *OutputTensor* tiver *tamanhos* de `{ BatchCount, ChannelCount, M, N }` , o operador de multiplicação de matriz executará BatchCount * ChannelCount multiplicações de matriz independentes de dimensões {M, K} x {K, n} = {m, n}.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp

@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GATHER_ND1_OPERATOR_DESC
-ms.openlocfilehash: dc7f33f50fa6a0c1cd2850b8e02aad30d75afeb1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b92c8aece88d8466357bb8e48fd3ce5a3b73d2e3
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105812432"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802854"
 ---
 # <a name="dml_gather_nd1_operator_desc-structure-directmlh"></a>Estrutura de DML_GATHER_ND1_OPERATOR_DESC (directml. h)
 
@@ -61,7 +61,7 @@ output[batch, ...] = input[batch, indices[batch, ...], ...]
 ```
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -110,7 +110,7 @@ OutputTensor.Sizes = {
 
 As dimensões são alinhadas à direita, com os 1 valores iniciais precedidos, se necessário, para atender a *OutputTensor. DimensionCount*.
 
-Aqui está um exemplo.
+Veja um exemplo.
 
 ```
 InputTensor.Sizes = {3,4,5,6,7}

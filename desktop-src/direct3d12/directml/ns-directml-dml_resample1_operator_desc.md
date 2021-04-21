@@ -39,12 +39,12 @@ api_name:
 f1_keywords:
 - DML_RESAMPLE1_OPERATOR_DESC
 - directml/DML_RESAMPLE1_OPERATOR_DESC
-ms.openlocfilehash: 669e828c4d8376e081ef6638aba4a13d517afd88
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: ac98813e15ab3dac71a9f8395333160ce37778b0
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105794641"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804059"
 ---
 # <a name="dml_resample1_operator_desc-structure-directmlh"></a>Estrutura de DML_RESAMPLE1_OPERATOR_DESC (directml. h)
 Reamostrar elementos da origem para o tensor de destino, usando os fatores de escala para calcular o tamanho do tensor de destino. Você pode usar um modo de interpolação de vizinho mais próximo ou linear. O operador dá suporte à interpolação em várias dimensões, não apenas em 2D. Portanto, você pode manter o mesmo tamanho espacial, mas interpolar entre canais ou em lotes. A relação entre as coordenadas de entrada e saída é a seguinte.
@@ -52,7 +52,7 @@ Reamostrar elementos da origem para o tensor de destino, usando os fatores de es
 `OutputTensorX = (InputTensorX + InputPixelOffset) * Scale + OutputPixelOffset`
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -105,21 +105,21 @@ O número de valores nas matrizes que *dimensionam*, *InputPixelOffsets* e *Outp
 
 `Scales`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
 
 As escalas a serem aplicadas ao reamostrar a entrada, em que dimensiona > 1 escalar verticalmente a imagem e escalas < 1 reduzir verticalmente a imagem para essa dimensão. Observe que as escalas não precisam ser exatamente `OutputSize / InputSize` . Se a entrada após o dimensionamento for maior que o limite de saída, então, vamos cortá-lo para o tamanho de saída. Por outro lado, se a entrada após o dimensionamento for menor do que a saída associada, as bordas de saída serão clamped.
 
 
 `InputPixelOffsets`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
 
 Os deslocamentos a serem aplicados aos pixels de entrada antes da reamostragem. Quando esse valor é `0` , o canto superior esquerdo do pixel é usado em vez de seu centro, o que normalmente não dará o resultado esperado. Para reamostrar a imagem usando o centro dos pixels e para obter o mesmo comportamento que [DML_RESAMPLE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample_operator_desc), esse valor deve ser `0.5` .
 
 
 `OutputPixelOffsets`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
 
 Os deslocamentos a serem aplicados aos pixels de saída após a reamostragem. Quando esse valor é `0` , o canto superior esquerdo do pixel é usado em vez de seu centro, o que normalmente não dará o resultado esperado. Para reamostrar a imagem usando o centro dos pixels e para obter o mesmo comportamento que [DML_RESAMPLE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample_operator_desc), esse valor deve ser `-0.5` .
 
