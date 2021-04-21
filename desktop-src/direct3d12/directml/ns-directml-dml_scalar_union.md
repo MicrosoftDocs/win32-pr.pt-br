@@ -45,20 +45,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SCALAR_UNION
-ms.openlocfilehash: 0abef8cd5a694fa82e0e54e334834773f1f75e20
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: d53ec7025d3da5a07a648849e366d436755ad3f1
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105766581"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803955"
 ---
-# <a name="dml_scalar_union-union-directmlh"></a><span data-ttu-id="820a6-103">União de DML_SCALAR_UNION (directml. h)</span><span class="sxs-lookup"><span data-stu-id="820a6-103">DML_SCALAR_UNION union (directml.h)</span></span>
-<span data-ttu-id="820a6-104">Uma União de tipos escalares.</span><span class="sxs-lookup"><span data-stu-id="820a6-104">A union of scalar types.</span></span>
+# <a name="dml_scalar_union-union-directmlh"></a><span data-ttu-id="00e69-103">União de DML_SCALAR_UNION (directml. h)</span><span class="sxs-lookup"><span data-stu-id="00e69-103">DML_SCALAR_UNION union (directml.h)</span></span>
+<span data-ttu-id="00e69-104">Uma União de tipos escalares.</span><span class="sxs-lookup"><span data-stu-id="00e69-104">A union of scalar types.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="820a6-105">Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span><span class="sxs-lookup"><span data-stu-id="820a6-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span></span> <span data-ttu-id="820a6-106">Consulte também o [histórico de versão do DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="820a6-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="00e69-105">Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior.</span><span class="sxs-lookup"><span data-stu-id="00e69-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.4 and later.</span></span> <span data-ttu-id="00e69-106">Consulte também o [histórico de versão do DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="00e69-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="820a6-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="820a6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="00e69-107">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="00e69-107">Syntax</span></span>
 ```cpp
 union DML_SCALAR_UNION {
   BYTE   Bytes[8];
@@ -77,65 +77,65 @@ union DML_SCALAR_UNION {
 
 
 
-## <a name="members"></a><span data-ttu-id="820a6-108">Membros</span><span class="sxs-lookup"><span data-stu-id="820a6-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="00e69-108">Membros</span><span class="sxs-lookup"><span data-stu-id="00e69-108">Members</span></span>
 
 `Bytes`
 
-<span data-ttu-id="820a6-109">Uma matriz de 8 bytes.</span><span class="sxs-lookup"><span data-stu-id="820a6-109">An 8-byte array.</span></span>
+<span data-ttu-id="00e69-109">Uma matriz de 8 bytes.</span><span class="sxs-lookup"><span data-stu-id="00e69-109">An 8-byte array.</span></span>
 
 
 `Int8`
 
-<span data-ttu-id="820a6-110">Um inteiro com sinal de 8 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-110">An 8-bit signed integer.</span></span>
+<span data-ttu-id="00e69-110">Um inteiro com sinal de 8 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-110">An 8-bit signed integer.</span></span>
 
 
 `UInt8`
 
-<span data-ttu-id="820a6-111">Um inteiro de 8 bits sem sinal.</span><span class="sxs-lookup"><span data-stu-id="820a6-111">An 8-bit unsigned integer.</span></span>
+<span data-ttu-id="00e69-111">Um inteiro de 8 bits sem sinal.</span><span class="sxs-lookup"><span data-stu-id="00e69-111">An 8-bit unsigned integer.</span></span>
 
 
 `Int16`
 
-<span data-ttu-id="820a6-112">Um inteiro de 16 bits com sinal.</span><span class="sxs-lookup"><span data-stu-id="820a6-112">A 16-bit signed integer.</span></span>
+<span data-ttu-id="00e69-112">Um inteiro de 16 bits com sinal.</span><span class="sxs-lookup"><span data-stu-id="00e69-112">A 16-bit signed integer.</span></span>
 
 
 `UInt16`
 
-<span data-ttu-id="820a6-113">Um inteiro sem sinal de 16 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-113">A 16-bit unsigned integer.</span></span>
+<span data-ttu-id="00e69-113">Um inteiro sem sinal de 16 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-113">A 16-bit unsigned integer.</span></span>
 
 
 `Int32`
 
-<span data-ttu-id="820a6-114">Um inteiro com sinal de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-114">A 32-bit signed integer.</span></span>
+<span data-ttu-id="00e69-114">Um inteiro com sinal de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-114">A 32-bit signed integer.</span></span>
 
 
 `UInt32`
 
-<span data-ttu-id="820a6-115">Um inteiro sem sinal de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-115">A 32-bit unsigned integer.</span></span>
+<span data-ttu-id="00e69-115">Um inteiro sem sinal de 32 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-115">A 32-bit unsigned integer.</span></span>
 
 
 `Int64`
 
-<span data-ttu-id="820a6-116">Um inteiro com sinal de 64 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-116">A 64-bit signed integer.</span></span>
+<span data-ttu-id="00e69-116">Um inteiro com sinal de 64 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-116">A 64-bit signed integer.</span></span>
 
 
 `UInt64`
 
-<span data-ttu-id="820a6-117">Um inteiro sem sinal de 64 bits.</span><span class="sxs-lookup"><span data-stu-id="820a6-117">A 64-bit unsigned integer.</span></span>
+<span data-ttu-id="00e69-117">Um inteiro sem sinal de 64 bits.</span><span class="sxs-lookup"><span data-stu-id="00e69-117">A 64-bit unsigned integer.</span></span>
 
 
 `Float32`
 
-<span data-ttu-id="820a6-118">Um número de ponto flutuante de precisão simples.</span><span class="sxs-lookup"><span data-stu-id="820a6-118">A single precision floating-point number.</span></span>
+<span data-ttu-id="00e69-118">Um número de ponto flutuante de precisão simples.</span><span class="sxs-lookup"><span data-stu-id="00e69-118">A single precision floating-point number.</span></span>
 
 
 `Float64`
 
-<span data-ttu-id="820a6-119">Um número de ponto flutuante de precisão dupla.</span><span class="sxs-lookup"><span data-stu-id="820a6-119">A double precision floating-point number.</span></span>
+<span data-ttu-id="00e69-119">Um número de ponto flutuante de precisão dupla.</span><span class="sxs-lookup"><span data-stu-id="00e69-119">A double precision floating-point number.</span></span>
 
 
 
-## <a name="requirements"></a><span data-ttu-id="820a6-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="820a6-120">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="00e69-120">Requisitos</span><span class="sxs-lookup"><span data-stu-id="00e69-120">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="820a6-121">**Cabeçalho**</span><span class="sxs-lookup"><span data-stu-id="820a6-121">**Header**</span></span> | <span data-ttu-id="820a6-122">directml. h</span><span class="sxs-lookup"><span data-stu-id="820a6-122">directml.h</span></span> |
+| <span data-ttu-id="00e69-121">**Cabeçalho**</span><span class="sxs-lookup"><span data-stu-id="00e69-121">**Header**</span></span> | <span data-ttu-id="00e69-122">directml. h</span><span class="sxs-lookup"><span data-stu-id="00e69-122">directml.h</span></span> |
