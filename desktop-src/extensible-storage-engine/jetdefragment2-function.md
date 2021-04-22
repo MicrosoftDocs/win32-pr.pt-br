@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8064ae996831f61869d74ff1fd7c0f2222257b85
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 4bcde8d55032d2e07466668b5a4d96b9a447d843
+ms.sourcegitcommit: 35baf9ba19918a38c4ca8714f88c004af0c6f518
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105816038"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107838800"
 ---
 # <a name="jetdefragment2-function"></a>Função JetDefragment2
 
@@ -70,7 +70,15 @@ O banco de dados a ser desfragmentado.
 
 *szTableName*
 
-Parâmetro não utilizado. A desfragmentação é executada para todo o banco de dados descrito pela ID de banco de dados fornecida.
+Às vezes, *szTableName* é necessário e, às vezes, é proibido:
+
+| *grbit* | *szTableName* |
+| --- | --- |
+| `JET_bitDefragmentBTreeBatch` | Deve ser `NULL`. |
+| `JET_bitDefragmentBTree` | Especifica o nome da tabela/árvore b a ser desfragmentada. |
+| *outros* | Deve ser `NULL`. |
+ 
+A desfragmentação é executada para todo o banco de dados descrito pela ID de banco de dados fornecida.
 
 *pcPasses*
 
@@ -87,6 +95,13 @@ Quando esse parâmetro é definido como nulo ou se *pcSeconds* aponta para um va
 *retorno de chamada*
 
 Função de retorno de chamada que a desfragmentação chama regularmente para relatar o progresso.
+
+| *grbit* | *szTableName* |
+| --- | --- |
+| `JET_bitDefragmentBTreeBatch` | Deve ser `NULL`. |
+| `JET_bitDefragmentBTree` | Deve ser `NULL`. |
+| *outros* | Opcional.
+
 
 *grbit*
 
@@ -118,7 +133,11 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 </tr>
 <tr class="even">
 <td><p>JET_bitDefragmentBTree</p></td>
-<td><p>Essa opção é usada para desfragmentar uma árvore B.</p></td>
+<td><p>Essa opção é usada para desfragmentar uma árvore B, especificada por szTableName.</p></td>
+</tr>
+<tr class="odd">
+<td><p>JET_bitDefragmentBTreeBatch</p></td>
+<td><p>Essa opção é usada para chamar OLD2 em todo o banco de dados.</p></td>
 </tr>
 </tbody>
 </table>
@@ -136,7 +155,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <thead>
 <tr class="header">
 <th><p>Código de retorno</p></th>
-<th><p>Description</p></th>
+<th><p>Descrição</p></th>
 </tr>
 </thead>
 <tbody>
