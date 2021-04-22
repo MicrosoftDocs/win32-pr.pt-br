@@ -39,12 +39,12 @@ api_location:
 - dwrite_3.h
 api_name:
 - DWRITE_BITMAP_DATA_BGRA32
-ms.openlocfilehash: ea60bbd4933cd890321e0caeb095778922699a46
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3d5b2168e5154f2e55b6f5acb83897f68d4a029c
+ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105798329"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107881825"
 ---
 # <a name="dwrite_bitmap_data_bgra32-structure-dwrite_3h"></a>Estrutura de DWRITE_BITMAP_DATA_BGRA32 (dwrite_3. h)
 
@@ -94,5 +94,5 @@ Consulte o tópico [visão geral do DWriteCore](/windows/win32/DirectWrite/dwrit
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Windows 10, versão 0,1 de pré-lançamento do projeto [aplicativos Win32] |
+| **Cliente mínimo com suporte** | Windows 10, reunião do projeto [aplicativos Win32] |
 | **Cabeçalho** | dwrite_3. h (incluir dwrite_core. h) |

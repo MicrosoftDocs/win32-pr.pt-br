@@ -5,17 +5,17 @@ keywords:
 - DirectWrite Core
 - DWriteCore
 ms.topic: article
-ms.date: 12/09/2020
-ms.openlocfilehash: 605cab8d0cd0511b5ca3b0b14d517cdc3f290573
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.date: 04/21/2021
+ms.openlocfilehash: 27a34656ce28a65267bd098974b4df9003a80e17
+ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104297856"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107881835"
 ---
 # <a name="dwritecore-overview"></a>Visão geral do DWriteCore
 
-DWriteCore é a implementação de [reunião do projeto](/windows/apps/project-reunion/) de [DirectWrite](./direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma.
+DWriteCore é a implementação de [reunião do projeto](/windows/apps/project-reunion/) de [DirectWrite](./direct-write-portal.md) (DirectWrite é a API do DirectX para renderização de texto de alta qualidade, fontes de estrutura de tópicos independentes de resolução e suporte completo a texto Unicode e layout). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma.
 
 Este tópico introdutório descreve o que é o DWriteCore e mostra como instalá-lo em seu ambiente de desenvolvimento e programar com ele.
 
@@ -35,9 +35,31 @@ O DWriteCore é demonstrado por meio do aplicativo de exemplo [DWriteCoreGallery
 
 ## <a name="get-started-with-dwritecore"></a>Introdução ao DWriteCore
 
-Para o projeto de pré-lançamento da reunião 0,1, atualmente não damos suporte à instalação do pacote NuGet da reunião do projeto em seus próprios projetos. Em vez disso, a opção com suporte no momento para sua própria programação com DWriteCore é começar com o projeto de aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) e basear seu desenvolvimento nesse projeto.
+DWriteCore faz parte do [projeto reunião 0,5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0). Esta seção descreve como configurar seu ambiente de desenvolvimento para a programação com o DWriteCore.
 
-Você pode, então, ficar à vontade para remover qualquer código-fonte (ou arquivos) existente desse projeto de exemplo e adicionar qualquer código-fonte (ou arquivos) novo ao projeto. Para obter mais informações sobre programação com o DWriteCore, consulte a seção [programação com DWriteCore](#programming-with-dwritecore) mais adiante neste tópico.
+### <a name="install-the-project-reunion-05-vsix"></a>Instalar o VSIX do projeto reunião 0,5
+
+No Visual Studio, clique em **extensões**  >  **gerenciar extensões**, pesquise por *reunião do projeto* e baixe a extensão de reunião do projeto. Feche e reabra o Visual Studio e siga os prompts para instalar a extensão.
+
+Para obter mais informações, consulte [reunião do projeto 0,5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0)e [criar aplicativos do Windows para desktop com a reunião do projeto 0,5](/windows/apps/project-reunion/#set-up-your-development-environment).
+
+### <a name="create-a-new-project"></a>Criar um novo projeto
+
+No Visual Studio, crie um novo projeto do modelo de projeto **aplicativo em branco, empacotado (WinUI 3 no desktop)** . Você pode encontrar esse modelo de projeto escolhendo linguagem: *C++*; plataforma: *reunião do projeto*; tipo de projeto: *área de trabalho*.
+
+Para obter mais informações, consulte [modelos de projeto para WinUI 3](/windows/apps/winui/winui3/winui-project-templates-in-visual-studio#project-templates-for-winui-3).
+
+### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Instalar o pacote NuGet Microsoft. ProjectReunion. DWrite
+
+No Visual Studio, clique em **projeto** \> **gerenciar pacotes NuGet...** \> **procure**, digite ou cole **Microsoft. ProjectReunion. DWrite** na caixa de pesquisa, selecione o item nos resultados da pesquisa e clique em **instalar** para instalar o pacote para esse projeto.
+
+### <a name="alternatively-begin-with-the-dwritecoregallery-sample-app"></a>Como alternativa, comece com o aplicativo de exemplo DWriteCoreGallery
+
+Como alternativa, você pode programar com DWriteCore começando com o projeto de aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) e basear seu desenvolvimento nesse projeto. Você pode, então, ficar à vontade para remover qualquer código-fonte (ou arquivos) existente desse projeto de exemplo e adicionar qualquer código-fonte (ou arquivos) novo ao projeto.
+
+### <a name="use-dwritecore-in-your-project"></a>Usar o DWriteCore em seu projeto
+
+Para obter mais informações sobre programação com o DWriteCore, consulte a seção [programação com DWriteCore](#programming-with-dwritecore) mais adiante neste tópico.
 
 ## <a name="the-release-phases-of-dwritecore"></a>As fases de lançamento do DWriteCore
 
@@ -69,17 +91,18 @@ DWriteCore, juntamente com outros componentes de reunião do projeto, serão des
 
 ## <a name="programming-with-dwritecore"></a>Programando com DWriteCore
 
-Como já mencionado, para o projeto de pré-lançamento da reunião 0,1, a opção com suporte no momento para sua própria programação com DWriteCore é começar com o projeto de aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
-
 Assim como com o [DirectWrite](./direct-write-portal.md), você programa com DWriteCore por meio de sua API com-Light, por meio da interface [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) .
 
-**DWriteCoreGallery** já inclui o `dwrite_core.h` arquivo de cabeçalho. Esse cabeçalho define primeiro o token *DWRITE_CORE* e, em seguida, inclui `dwrite_3.h` . O token *DWRITE_CORE* é importante, pois ele direciona quaisquer cabeçalhos incluídos subsequentemente para disponibilizar todas as APIs DirectWrite para você. Depois que um projeto é incluído `dwrite_core.h` , você pode continuar e escrever código, criar e executar.
+Para usar o DWriteCore, é necessário incluir o `dwrite_core.h` arquivo de cabeçalho.
 
 ```cppwinrt
 // pch.h
 ...
+// DWriteCore header file.
 #include <dwrite_core.h>
 ```
+
+O `dwrite_core.h` arquivo de cabeçalho primeiro define o token *DWRITE_CORE* e, em seguida, inclui `dwrite_3.h` . O token *DWRITE_CORE* é importante, pois ele direciona quaisquer cabeçalhos incluídos subsequentemente para disponibilizar todas as APIs DirectWrite para você. Depois que o projeto tiver sido incluído `dwrite_core.h` , você poderá continuar e escrever código, criar e executar.
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>APIs que são novas ou diferentes para DWriteCore
 
@@ -87,22 +110,22 @@ A superfície da API do DWriteCore é basicamente a mesma que se trata de [Direc
 
 #### <a name="create-a-restricted-factory-object"></a>Criar um objeto de fábrica restrito
 
-A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_RESTRICTED**. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_RESTRICTED** para criar um objeto de fábrica restrito ao chamar a função gratuita [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) .
+A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, indicando uma fábrica restrita. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_ISOLATED2** para criar um objeto de fábrica restrito ao chamar a função gratuita [**DWriteCoreCreateFactory**](/windows/win32/api/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) .
 
 ```cppwinrt
 // Create a factory that doesn't interact with any cross-process nor
 // persistent cache state.
 winrt::com_ptr<::IDWriteFactory7> spFactory;
 winrt::check_hresult(
-  ::DWriteCreateFactory(
-    DWRITE_FACTORY_TYPE_RESTRICTED,
+  ::DWriteCoreCreateFactory(
+    DWRITE_FACTORY_TYPE_ISOLATED2,
     __uuidof(spFactory),
     reinterpret_cast<IUnknown**>(spFactory.put())
   )
 );
 ```
 
-Se você passar **DWRITE_FACTORY_TYPE_RESTRICTED** para uma versão mais antiga do DirectWrite que não ofereça suporte a ela, **DWriteCreateFactory** retornará **E_INVALIDARG**.
+Se você passar **DWRITE_FACTORY_TYPE_ISOLATED2** para uma versão mais antiga do DirectWrite que não ofereça suporte a ela, **DWriteCreateFactory** retornará **E_INVALIDARG**.
 
 #### <a name="drawing-glyphs-to-a-system-memory-bitmap"></a>Glifos de desenho para um bitmap de memória do sistema
 

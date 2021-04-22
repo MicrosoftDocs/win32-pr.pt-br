@@ -1,12 +1,12 @@
 ---
-UID: NF:dwrite_3.IDWriteBitmapRenderTarget2.GetBitmapData
-title: IDWriteBitmapRenderTarget2::GetBitmapData (dwrite_3.h)
-description: Recupera os dados de pixel de um destino de renderização de bitmap.
+UID: NE:dwrite_core.DWriteCoreCreateFactory
+title: DWriteCoreCreateFactory (dwrite_core. h)
+description: Cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
 tech.root: DirectWrite
-ms.date: 11/11/2020
+ms.date: 04/21/2021
 ms.topic: reference
-req.header: dwrite_3.h
-req.include-header: dwrite_core.h
+req.header: dwrite_core.h
+req.include-header: ''
 req.target-type: Windows
 req.target-min-winverclnt: ''
 req.target-min-winversvr: ''
@@ -19,55 +19,68 @@ req.max-support: ''
 req.namespace: ''
 req.assembly: ''
 req.type-library: ''
-req.lib: Dwrite.lib
-req.dll: Dwrite.dll
+req.lib: ''
+req.dll: ''
 req.irql: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
 f1_keywords:
-- IDWriteBitmapRenderTarget2::GetBitmapData
-- dwrite_3/IDWriteBitmapRenderTarget2::GetBitmapData
+- DWriteCoreCreateFactory
+- dwrite_core/DWriteCoreCreateFactory
 dev_langs:
 - c++
 topic_type:
 - APIRef
 - kbSyntax
 api_type:
-- COM
+- HeaderDef
 api_location:
-- dwrite.dll
+- dwrite_core.h
 api_name:
-- IDWriteBitmapRenderTarget2.GetBitmapData
-ms.openlocfilehash: 3dbc87697750ee07939602dc694468aa68f5c66d
+- DWriteCoreCreateFactory
+ms.openlocfilehash: 6606ad884fd65195e9922d348cc4fe565b95f2ee
 ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881845"
+ms.locfileid: "107882130"
 ---
-# <a name="idwritebitmaprendertarget2getbitmapdata-method-dwrite_3h"></a>Método IDWriteBitmapRenderTarget2:: getbitmapdata (dwrite_3. h)
+# <a name="dwritecorecreatefactory-function-dwrite_coreh"></a>Função DWriteCoreCreateFactory (dwrite_core. h)
 
-Recupera os dados de pixel de um destino de renderização de bitmap.
+Cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
 
 > [!IMPORTANT]
 > Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview).
 
 ## <a name="syntax"></a>Sintaxe
-
 ```cpp
-HRESULT GetBitmapData(
-  _Out_ DWRITE_BITMAP_DATA_BGRA32* bitmapData
+HRESULT DWRITE_EXPORT DWriteCoreCreateFactory(
+    _In_ DWRITE_FACTORY_TYPE factoryType,
+    _In_ REFIID iid,
+    _COM_Outptr_ IUnknown** factory
 );
 ```
 
 ## <a name="parameters"></a>Parâmetros
 
-`bitmapData`
+`factoryType`
 
-Tipo: \_ out \_ **[DWRITE_BITMAP_DATA_BGRA32](./ns-dwrite_3-dwrite_bitmap_data_bgra32.md)\***
+Tipo: <b> <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_factory_type">DWRITE_FACTORY_TYPE</a></b>
 
-Um ponteiro para os dados de pixel.
+Um valor que especifica se o objeto de fábrica será compartilhado, isolado ou restrito.
+
+`iid`
+
+Tipo: <b>REFIID</b>
+
+Um valor de GUID que identifica a interface de fábrica DirectWrite, como __uuidof (<a href="/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>).
+
+`factory`
+
+Tipo: <b>IUnknown * *</b>
+
+Um endereço de um ponteiro para o objeto da fábrica DirectWrite recém-criado.
 
 ## <a name="return-value"></a>Retornar valor
 
@@ -79,14 +92,12 @@ Se esse método tiver sucesso, ele retornará <b xmlns:loc="http://microsoft.com
 
 Consulte o tópico [visão geral do DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
 
+## <a name="remarks"></a>Comentários
+
+Isso é funcionalmente o mesmo que a função [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada pela versão do sistema do DirectWrite. A função DWriteCore tem um nome diferente para evitar ambigüidade.
+
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Cliente mínimo com suporte** | Windows 10, reunião do projeto [aplicativos Win32] |
-| **Cabeçalho** | dwrite_3. h (incluir dwrite_core. h) |
-| **Biblioteca** | Dwrite. lib |
-| **DLL** | Dwrite.dll |
-
-## <a name="see-also"></a>Consulte também
-
-[IDWriteBitmapRenderTarget2](/windows/win32/api/dwrite_1/nn-dwrite_3-idwritebitmaprendertarget2)
+| **Cabeçalho** | dwrite. h (incluir dwrite_core. h) |
