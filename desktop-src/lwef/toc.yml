@@ -1362,7 +1362,7 @@
                   href: '-search-2x-isearchresult-putvalue.md'
                 - name: Miniaturastate
                   href: '-search-2x-isearchresult-thumbnailstate.md'
-                - name: Type
+                - name: Tipo
                   href: '-search-2x-isearchresult-type.md'
                 - name: VerbCount
                   href: '-search-2x-isearchresult-verbcount.md'
@@ -1579,7 +1579,7 @@
               href: endpointdlp-dlpnotifyclosedocumentfile.md
             - name: DlpNotifyEnterDropTarget
               href: endpointdlp-dlpnotifyenterdroptarget.md
-            - name: DlpInitializeEnforcementMode
+            - name: DlpGetEnforcementApiVersion
               href: endpointdlp-dlpgetenforcementapiversion.md
             - name: DlpInitializeEnforcementMode
               href: endpointdlp-dlpinitializeenforcementmode.md
