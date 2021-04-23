@@ -5,13 +5,13 @@ keywords:
 - DirectWrite Core
 - DWriteCore
 ms.topic: article
-ms.date: 04/21/2021
-ms.openlocfilehash: 27a34656ce28a65267bd098974b4df9003a80e17
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.date: 04/22/2021
+ms.openlocfilehash: 1ebb85ae2628a2c9abce86e0ce146c0d24828267
+ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881835"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107925669"
 ---
 # <a name="dwritecore-overview"></a>Visão geral do DWriteCore
 
@@ -21,7 +21,7 @@ Este tópico introdutório descreve o que é o DWriteCore e mostra como instalá
 
 ## <a name="the-value-proposition-of-dwritecore"></a>A proposta de valor de DWriteCore
 
-O [DirectWrite](./direct-write-portal.md) em si dá suporte a uma ampla gama de recursos que o torna a ferramenta de renderização de fontes de escolha no Windows para a maioria dos aplicativos &mdash; , seja por meio de chamadas diretas ou por meio de [Direct2D](../direct2d/direct2d-portal.md). O DirectWrite inclui um sistema de layout de texto independente de dispositivo, renderização de texto de alta qualidade de subpixel [do Microsoft ClearType](/typography/cleartype/) , texto acelerado por hardware, texto de vários formatos, recursos de tipografia de [® de OpenType](/typography/opentype/) avançados, suporte a todo o idioma e renderização e processamento compatíveis com [GDI](../gdi/windows-gdi.md). O DirectWrite está disponível desde o Windows Vista SP2 e evoluiu ao longo dos anos para incluir recursos mais avançados, como fontes variáveis, que permitem aos desenvolvedores aplicar estilos, pesos e outros atributos a uma fonte com apenas um recurso de fonte.
+O [DirectWrite](./direct-write-portal.md) em si dá suporte a uma ampla gama de recursos que o torna a ferramenta de renderização de fontes de escolha no Windows para a maioria dos aplicativos &mdash; , seja por meio de chamadas diretas ou por meio de [Direct2D](../direct2d/direct2d-portal.md). O DirectWrite inclui um sistema de layout de texto independente de dispositivo, renderização de texto de alta qualidade de subpixel [do Microsoft ClearType](/typography/cleartype/) , texto acelerado por hardware, texto de vários formatos, recursos de tipografia de [® de OpenType](/typography/opentype/) avançados, suporte a todo o idioma e renderização e processamento compatíveis com [GDI](../gdi/windows-gdi.md). O DirectWrite está disponível desde o Windows Vista SP2 e evoluiu ao longo dos anos para incluir recursos mais avançados, como fontes variáveis, que permitem aplicar estilos, pesos e outros atributos a uma fonte com apenas um recurso de fonte.
 
 No entanto, devido à longa vida útil do DirectWrite, os avanços no desenvolvimento têm o tendiam de deixar versões anteriores do Windows atrás. Além disso, o status do DirectWrite como a tecnologia de renderização de texto Premier é limitado apenas ao Windows, deixando aplicativos de plataforma cruzada para gravar sua própria pilha de renderização de texto ou para se basear em soluções de terceiros.
 
@@ -67,7 +67,7 @@ Portar DirectWrite para DWriteCore é um projeto suficientemente grande para abr
 
 ### <a name="features-in-the-current-release-of-dwritecore"></a>Recursos na versão atual do DWriteCore
 
-A versão do DWriteCore atualmente disponível contém as ferramentas básicas que você, como desenvolvedor, precisa consumir o DWriteCore, incluindo os recursos a seguir.
+A versão do DWriteCore atualmente disponível faz parte do [projeto reunião 0,5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0). Ele contém as ferramentas básicas que você, como desenvolvedor, precisam consumir o DWriteCore, incluindo os recursos a seguir.
 
 - Enumeração de fontes.
 - API de fonte.
@@ -79,11 +79,11 @@ A versão do DWriteCore atualmente disponível contém as ferramentas básicas q
 - Fontes de cores.
 - Otimizações diversas (limpeza do cache de fontes, carregador de fonte em memória e assim por diante).
 
-O recurso de faixa neste estágio é fontes de cores. As fontes de cores permitem que você processe suas fontes com funcionalidade de cores mais sofisticada além das simples cores únicas. Por exemplo, fontes de cor é o que capacita a capacidade de renderizar Emoji e fontes de ícone da barra de ferramentas (o último usado pelo Office, por exemplo). As fontes de cores foram introduzidas pela primeira vez no Windows 8.1, mas o recurso estava muito expandido no Windows 10, versão 1607 (atualização de aniversário).
+Um recurso de faixa é fontes de cores. As fontes de cores permitem que você processe suas fontes com funcionalidade de cores mais sofisticada além das simples cores únicas. Por exemplo, fontes de cor é o que capacita a capacidade de renderizar Emoji e fontes de ícone da barra de ferramentas (o último usado pelo Office, por exemplo). As fontes de cores foram introduzidas pela primeira vez no Windows 8.1, mas o recurso estava muito expandido no Windows 10, versão 1607 (atualização de aniversário).
 
 O trabalho na limpeza do cache de fontes e no carregador de fontes na memória, permite o carregamento mais rápido de fontes e melhorias na memória.
 
-Com esses recursos, você pode começar imediatamente a aproveitar algumas das principais funcionalidades do DirectWrite &mdash; , como fontes variáveis de &mdash; nível inferior para o Windows 8. Essa iteração da biblioteca também pode ser consumida no [Android](https://www.android.com/)e no **Linux**. Fontes de variáveis são um dos recursos mais importantes para clientes do DirectWrite; Eles foram introduzidos no Windows 10, versão 1709 (atualização para criadores de outono), portanto, acessá-los em versões anteriores é um grande benefício para você como desenvolvedor.
+Com esses recursos, você pode começar imediatamente a aproveitar algumas das principais funcionalidades do DirectWrite &mdash; , como fontes variáveis de &mdash; nível inferior para o Windows 8. Fontes de variáveis são um dos recursos mais importantes para clientes do DirectWrite; Eles foram introduzidos no Windows 10, versão 1709 (atualização para criadores de outono), portanto, acessá-los em versões anteriores é um benefício significativo para você como desenvolvedor.
 
 ## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>Nosso convite para você como desenvolvedor DirectWrite
 
@@ -102,15 +102,21 @@ Para usar o DWriteCore, é necessário incluir o `dwrite_core.h` arquivo de cabe
 #include <dwrite_core.h>
 ```
 
-O `dwrite_core.h` arquivo de cabeçalho primeiro define o token *DWRITE_CORE* e, em seguida, inclui `dwrite_3.h` . O token *DWRITE_CORE* é importante, pois ele direciona quaisquer cabeçalhos incluídos subsequentemente para disponibilizar todas as APIs DirectWrite para você. Depois que o projeto tiver sido incluído `dwrite_core.h` , você poderá continuar e escrever código, criar e executar.
+O `dwrite_core.h` arquivo de cabeçalho primeiro define o token *DWRITE_CORE* e, em seguida, inclui o `dwrite_3.h` arquivo de cabeçalho. O token *DWRITE_CORE* é importante, pois ele direciona quaisquer cabeçalhos incluídos subsequentemente para disponibilizar todas as APIs DirectWrite para você. Depois que o projeto tiver sido incluído `dwrite_core.h` , você poderá continuar e escrever código, criar e executar.
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>APIs que são novas ou diferentes para DWriteCore
 
 A superfície da API do DWriteCore é basicamente a mesma que se trata de [DirectWrite](/windows/win32/api/_directwrite/). Mas há um pequeno número de novas APIs que só estão em DWriteCore no presente.
 
+#### <a name="create-a-factory-object"></a>Criar um objeto de fábrica
+
+A função Free [**DWriteCoreCreateFactory**](/windows/win32/api/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
+
+**DWriteCoreCreateFactory** é funcionalmente o mesmo que a função [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada pela versão do sistema do DirectWrite. A função DWriteCore tem um nome diferente para evitar ambigüidade.
+
 #### <a name="create-a-restricted-factory-object"></a>Criar um objeto de fábrica restrito
 
-A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, indicando uma fábrica restrita. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_ISOLATED2** para criar um objeto de fábrica restrito ao chamar a função gratuita [**DWriteCoreCreateFactory**](/windows/win32/api/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) .
+A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, indicando uma fábrica restrita. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_ISOLATED2** para criar um objeto de fábrica restrito ao chamar a função gratuita **DWriteCoreCreateFactory** .
 
 ```cppwinrt
 // Create a factory that doesn't interact with any cross-process nor

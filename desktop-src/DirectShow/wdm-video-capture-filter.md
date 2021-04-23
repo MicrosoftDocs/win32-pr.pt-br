@@ -4,12 +4,12 @@ ms.assetid: 97432b99-e89b-4d69-963d-a959f887e580
 title: Filtro de captura de vídeo WDM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4cce63f3883d8688a8f930d68bfe87a52133441
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b17afb9b4ee534146ef7b8e8c34d9594f6b9e45e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780993"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908634"
 ---
 # <a name="wdm-video-capture-filter"></a>Filtro de captura de vídeo WDM
 
@@ -21,7 +21,7 @@ Nem todos os dispositivos expostos por meio do filtro de captura de vídeo WDM i
 
 
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Label | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | O driver WDM para o dispositivo pode oferecer suporte a um ou mais dos seguintes: [**IAMAnalogVideoDecoder**](/windows/desktop/api/Strmif/nn-strmif-iamanalogvideodecoder), [**IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol), [**IAMDeviceRemoval**](/windows/desktop/api/Strmif/nn-strmif-iamdeviceremoval), [**IAMDroppedFrames**](/windows/desktop/api/Strmif/nn-strmif-iamdroppedframes), [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice), [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport), [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags), [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IAMVideoControl**](/windows/desktop/api/Strmif/nn-strmif-iamvideocontrol), [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IKsPropertySet**](ikspropertyset.md), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), **ISpecifyPropertyPages**. |
 | Tipos de mídia de pino de entrada                    | Dependente de driver.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

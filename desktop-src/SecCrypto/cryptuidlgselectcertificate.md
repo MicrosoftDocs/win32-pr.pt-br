@@ -4,12 +4,12 @@ ms.assetid: 242c19a7-179b-4fc0-a050-a1b598566a6b
 title: Função CryptUIDlgSelectCertificate
 ms.topic: reference
 ms.date: 05/29/2020
-ms.openlocfilehash: 65d9993cd1e035473e731056d33b7a391ef47b5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f015796671990491407d91cbd51761816c5434b
+ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171675"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107925683"
 ---
 # <a name="cryptuidlgselectcertificate-function"></a>Função CryptUIDlgSelectCertificate
 
@@ -19,6 +19,8 @@ A função **CryptUIDlgSelectCertificate** exibe uma caixa de diálogo que permi
 
 
 ```C++
+PCCERT_CONTEXT WINAPI CryptUIDlgSelectCertificate(
+  _In_  PCCRYPTUI_SELECTCERTIFICATE_STRUCT pcsc
 );
 ```
 
@@ -69,9 +71,7 @@ Se o membro **dwFlags** da estrutura [**de \_ \_ struct CRYPTUI SELECTCERTIFICAT
 [**CRYPTUI \_ SELECTCERTIFICATE \_ struct**](cryptui-selectcertificate-struct.md)
 </dt> </dl>
 
-�
 
-�
 
 
 
