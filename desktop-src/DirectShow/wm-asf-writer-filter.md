@@ -4,12 +4,12 @@ ms.assetid: 1b12f65f-8d77-4d38-aad9-92bb15cc0426
 title: Filtro de gravador ASF do WM (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 672996124c88632228fff3a84525c9d47f2276b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bf09a99673b07e88198fd57b95a766ce821eb02
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091025"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909274"
 ---
 # <a name="wm-asf-writer-filter-directshow"></a>Filtro de gravador ASF do WM (DirectShow)
 
@@ -19,7 +19,7 @@ Para obter mais informações, consulte [criando arquivos ASF no DirectShow](cre
 
 
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Label | Valor |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter), [**IConfigAsfWriter2**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iconfigasfwriter2), [**IFileSinkFilter2**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter2), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), **IPersistStream**, **IServiceProvider**, **ISpecifyPropertyPages** além disso, o filtro expõe as seguintes interfaces SDK do Windows Media Format: **IWMIndexer2**, **IWMHeaderInfo**, **IWMWriterAdvanced2**<br/> |
 | Tipos de mídia de pino de entrada                    | Depende do perfil do ASF. Normalmente, os tipos de áudio e vídeo não compactados, embora o filtro aceite tipos compactados se corresponderem ao perfil do ASF.                                                                                                                                                                                                                                                                                                                                             |

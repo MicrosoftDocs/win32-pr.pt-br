@@ -17,12 +17,12 @@ keywords:
 - polígonos, portando do íris GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c95d654b101c5eeb86cfcc4ea342e8196b8749e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7900b44051cab9590be11198c8b01af0b7c10244
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636569"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908454"
 ---
 # <a name="porting-polygons-and-quadrilaterals"></a>Como portar polígonos e Quadrilaterals
 
@@ -67,7 +67,7 @@ onde a face é uma de:
 
 
 
-|                      |                                                            |
+|Valor de GLenum                      |  Significado                                                          |
 |----------------------|------------------------------------------------------------|
 | frente do GL \_            | modo que se aplica a polígonos front-face                |
 | GL \_ regressivo             | modo que se aplica a polígonos traseiros                 |

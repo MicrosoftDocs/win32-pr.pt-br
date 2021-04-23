@@ -4,12 +4,12 @@ ms.assetid: d0ff2011-4ee3-4f5e-8bd0-af9f4c6346e8
 title: Tipos de mídia de divisor MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb10310bd126346c8e1558801200682792836d92
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e878acaea8bc87bee2bf5c46a6f7e66c7aa0a485
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105810489"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909415"
 ---
 # <a name="mpeg-2-splitter-media-types"></a>Tipos de mídia de divisor MPEG-2
 
@@ -21,7 +21,7 @@ Para vídeo MPEG-2, os tipos de mídia são os seguintes.
 
 
 
-|                  |                                          |                                |
+| Label | Valor |
 |------------------|------------------------------------------|--------------------------------|
 |                  | Saída de PES                               | Saída da carga                 |
 | Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**                | **Vídeo de MEDIATYPE \_**           |
@@ -39,7 +39,7 @@ Para áudio AC-3, os tipos de mídia são os seguintes.
 
 
 
-|                  |                                      |                              |
+| Label | Valor |
 |------------------|--------------------------------------|------------------------------|
 |                  | Saída de PES                           | Saída da carga               |
 | Tipo principal       | MEDIATYPE \_ MPEG2 \_ PES                | **Áudio de MEDIATYPE \_**         |
@@ -59,7 +59,7 @@ Para áudio MPEG-2, os tipos de mídia são os seguintes.
 
 
 
-|                  |                               |                                |
+| Label | Valor |
 |------------------|-------------------------------|--------------------------------|
 |                  | Saída de PES                    | Saída da carga                 |
 | Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**     | **Áudio de MEDIATYPE \_**           |
@@ -81,7 +81,7 @@ Para áudio LPCM, os tipos de mídia são os seguintes.
 
 
 
-|                  |                                    |                                    |
+| Label | Valor |
 |------------------|------------------------------------|------------------------------------|
 |                  | Saída de PES                         | Saída da carga                     |
 | Tipo principal       | **MEDIATYPE \_ MPEG2 \_ PES**          | **Áudio de MEDIATYPE \_**               |

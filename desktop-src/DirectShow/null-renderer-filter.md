@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 7ff6c728276ca3fd69c14e304780b1d70c563265
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64647cbcbcc836c400890fb173a29c76f8723029
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761981"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908804"
 ---
 # <a name="null-renderer-filter"></a>Filtro de renderizador nulo
 
@@ -31,7 +31,7 @@ O filtro de renderizador nulo é um renderizador que descarta todas as amostras 
 
 
 
-|                                          |                                                                                                                      |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) |
 | Tipos de mídia de pino de entrada                    | Qualquer tipo de mídia                                                                                                       |

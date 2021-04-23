@@ -4,12 +4,12 @@ ms.assetid: 01abe1fe-fc2f-44cb-9546-45a8d682a179
 title: Conjunto de propriedades de revisão do quadro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f503a38a2f548e0df0a6e88b3ae7afaebdd8cd3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e0ccd79feda0e5e2e537390fe5598822fb3787f6
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645934"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908444"
 ---
 # <a name="frame-stepping-property-set"></a>Conjunto de propriedades de revisão do quadro
 
@@ -17,7 +17,7 @@ Os decodificadores que implementam a busca precisa do quadro no Microsoft Direct
 
 
 
-|                   |                            |
+| Label | Valor |
 |-------------------|----------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ FrameStep |
 

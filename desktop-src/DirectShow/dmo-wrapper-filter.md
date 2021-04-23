@@ -4,12 +4,12 @@ ms.assetid: ffa6234d-9040-4838-8f51-0cf87df40a5c
 title: Filtro de invólucro de DMO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b01ee006203e2e1fd328bacc13c01de4a3b25f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d29c5b86bdff4a215ec2ef5854d09a1f842dbf0e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456803"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908624"
 ---
 # <a name="dmo-wrapper-filter"></a>Filtro de invólucro de DMO
 
@@ -17,7 +17,7 @@ O filtro de invólucro do DMO permite que um aplicativo do DirectShow use um [ob
 
 
 
-|                                          |                                                                                                                                                                                                                                                    |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IDMOWrapperFilter**](/previous-versions/windows/desktop/api/Dmodshow/nn-dmodshow-idmowrapperfilter), [**IPersistStream**](/windows/desktop/api/objidl/nn-objidl-ipersiststream)                                                                                                                       |
 | Tipos de mídia de pino de entrada                    | Ver comentários                                                                                                                                                                                                                                        |
@@ -64,7 +64,7 @@ Todas as solicitações de busca são passadas para o filtro upstream, por meio 
 
 O DirectShow atribui a todos os DMOs um valor de mérito padrão de **mérito \_ normal** + 0x800. Esse valor cai entre o **mérito \_ normal** e o **mérito \_ preferido**. Os filtros de decodificador geralmente têm um valor de mérito **\_ normal**. Portanto, o Gerenciador de gráfico de filtro geralmente selecionará um decodificador de DMO em um filtro de decodificador. Para substituir o valor de mérito padrão, adicione uma entrada de registro à chave do registro do DMO em \_ classe HKEY \_ raiz \\ CLSID. Inclua um valor **DWORD** chamado "mérito" cujo valor especifique o mérito.
 
-### <a name="category"></a>Category
+### <a name="category"></a>Categoria
 
 O filtro de invólucro do DMO não aparece sozinho em nenhuma categoria. Quando ele encapsula um DMO, ele aparece na categoria do DirectShow que corresponde à categoria do DMO, sob o nome do DMO.
 

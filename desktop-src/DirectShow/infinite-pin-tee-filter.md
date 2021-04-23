@@ -4,12 +4,12 @@ ms.assetid: 5f3e06ec-adee-4bc7-8ea8-cce3030d3baa
 title: Filtro de t de PIN infinito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90e9a80baf047cdd5559fadaa0f13ea1352d4ed0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3433a0c2f5fe55fa59c42ed6e02d34f6e2cf0e6d
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370260"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909224"
 ---
 # <a name="infinite-pin-tee-filter"></a>Filtro de t de PIN infinito
 
@@ -19,7 +19,7 @@ Uma versão desse filtro também é fornecida como um exemplo de SDK. Consulte [
 
 
 
-|                                          |                                                                                                                                                    |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                                                                                 |
 | Tipos de mídia de pino de entrada                    | Qualquer tipo de mídia                                                                                                                                     |

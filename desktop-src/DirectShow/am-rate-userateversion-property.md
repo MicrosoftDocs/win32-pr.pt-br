@@ -4,12 +4,12 @@ ms.assetid: 49d1bfda-749b-4614-9a75-1f76fa8b320d
 title: Propriedade AM_RATE_UseRateVersion (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab609d2d38dc28257d13994e6cd464094b714be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4dd33ef96c50ecc3da0711f08f0c7ffbf0a20825
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771677"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910214"
 ---
 # <a name="am_rate_userateversion-property"></a>Propriedade de UseRateVersion da \_ taxa de am \_
 
@@ -19,7 +19,7 @@ Se o decodificador não oferecer suporte à versão especificada, ele deverá fa
 
 
 
-|                   |                               |
+| Label | Valor |
 |-------------------|-------------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange |
 | ID da propriedade       | \_UseRateVersion de taxa de am \_      |

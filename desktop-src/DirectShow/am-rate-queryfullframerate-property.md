@@ -4,12 +4,12 @@ ms.assetid: 98808ed4-6d34-437b-9729-9cc805bc81f0
 title: Propriedade AM_RATE_QueryFullFrameRate (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab2c99564caa09253198b101a3e2467ec88c7e34
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70bc096e5b68737ca877a037571223d673284dab
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785507"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910274"
 ---
 # <a name="am_rate_queryfullframerate-property"></a>Propriedade de QueryFullFrameRate da \_ taxa de am \_
 
@@ -19,7 +19,7 @@ Esta propriedade é definida para a versão 1,1 deste conjunto de propriedades; 
 
 
 
-|                   |                                       |
+| Label | Valor |
 |-------------------|---------------------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange         |
 | ID da propriedade       | Propriedade de QueryFullFrameRate da \_ taxa de am \_ |

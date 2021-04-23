@@ -4,12 +4,12 @@ ms.assetid: fb907263-e7f3-42d6-80f9-a9f16fc21033
 title: Criando filtros do DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5553c4358f97809214ebbdea23c129aa7c214e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7090eed702b1abe8ee863d5fa3ac9c1fd413690e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646042"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908614"
 ---
 # <a name="building-directshow-filters"></a>Criando filtros do DirectShow
 
@@ -34,7 +34,7 @@ As classes base do DirectShow são recomendadas para a implementação de filtro
 
 -   Link para os seguintes arquivos lib.
 
-    |              |                                      |
+| Label | Valor |
     |--------------|--------------------------------------|
     | Depurar compilação  | Strmbasd. lib, MSVCRTD. lib, winmm. lib |
     | Build de varejo | Strmbase. lib, msvcrt. lib, winmm. lib  |

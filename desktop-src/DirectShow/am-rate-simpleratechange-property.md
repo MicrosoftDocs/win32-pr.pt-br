@@ -4,12 +4,12 @@ ms.assetid: d6ade463-82c7-46be-8d9a-e372ddbd7a4b
 title: Propriedade AM_RATE_SimpleRateChange (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ccaa1f3ea6b244b466b2881b82b3be4ac1b0bab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 928dc477f5f8c6492d407ddc8b56f49170dec4f4
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755801"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910224"
 ---
 # <a name="am_rate_simpleratechange-property"></a>Propriedade de SimpleRateChange da \_ taxa de am \_
 
@@ -17,7 +17,7 @@ Essa propriedade é usada para enviar alterações de taxa ao decodificador. O t
 
 
 
-|                   |                                                     |
+| Label | Valor |
 |-------------------|-----------------------------------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange                       |
 | ID da propriedade       | \_SimpleRateChange de taxa de am \_                          |

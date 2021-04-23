@@ -4,12 +4,12 @@ ms.assetid: 405fd6ea-aa17-4d11-8f07-067468cb090b
 title: Filtro de origem do arquivo (URL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caea04b74a6880452210f1a43d5dfb29f8753dd3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a0ddfa7282adbf5117bd2c52465c6eb30efbd69e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087801"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909234"
 ---
 # <a name="file-source-url-filter"></a>Filtro de origem do arquivo (URL)
 
@@ -17,7 +17,7 @@ O filtro de origem do arquivo de URL é um filtro de origem assíncrono genéric
 
 
 
-|                                          |                                                                                                                                      |
+| Label | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMOpenProgress**](/windows/desktop/api/Strmif/nn-strmif-iamopenprogress), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter)       |
 | Tipos de mídia de pino de entrada                    | Não aplicável                                                                                                                       |

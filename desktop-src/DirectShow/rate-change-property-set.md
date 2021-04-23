@@ -4,12 +4,12 @@ ms.assetid: f88c64ce-af76-49fe-8ebd-029928506243
 title: Conjunto de propriedades de alteração de taxa (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e56b679b0ce9b0127b15c69cd02b016a4990b6f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5eb222f8a2fe388d8ea582448d2ba5aa6c9d7e80
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758050"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909604"
 ---
 # <a name="rate-change-property-set"></a>Conjunto de propriedades de alteração de taxa
 
@@ -17,7 +17,7 @@ O conjunto de propriedades de alteração de taxa permite que os filtros de orig
 
 
 
-|                   |                               |
+| Label | Valor |
 |-------------------|-------------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange |
 

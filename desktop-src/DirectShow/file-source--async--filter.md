@@ -4,12 +4,12 @@ ms.assetid: 0cf6e7ab-b1fe-42f9-b682-c5484ef48c71
 title: Filtro de origem do arquivo (Async)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 403564b751e53f160ab140ac89bfda4fd9576f00
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1ddeea7398ce332a8b1db444b6b74fe3841f9053
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456606"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909694"
 ---
 # <a name="file-source-async-filter"></a>Filtro de origem do arquivo (Async)
 
@@ -19,7 +19,7 @@ Para baixar arquivos de mídia da Web por meio de HTTP, use o filtro de [origem 
 
 
 
-|                                          |                                                                                                                                      |
+| Label | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter)                                                   |
 | Tipos de mídia de pino de entrada                    | Não aplicável                                                                                                                       |

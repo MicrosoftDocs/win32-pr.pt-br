@@ -4,12 +4,12 @@ ms.assetid: 668f6a8b-a4ed-4e4a-956c-a87f165225fa
 title: Filtro Crossbar de vídeo analógico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2eb086b85859a3e1e895cd322c68c56916ac19a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d17d8700131dbc658a5233d56f339c39eac7a3a0
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919870"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909594"
 ---
 # <a name="analog-video-crossbar-filter"></a>Filtro Crossbar de vídeo analógico
 
@@ -23,7 +23,7 @@ Para obter mais informações sobre filtros de wrapper e dispositivos de streami
 
 
 
-|                                          |                                                                                                |
+| Label | Valor |
 |------------------------------------------|------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMCrossbar**](/windows/desktop/api/Strmif/nn-strmif-iamcrossbar), ISpecifyPropertyPages, IPersistPropertyBag, IPersistStream |
 | Tipos de mídia de pino de entrada                    | MEDIATYPE \_ AnalogAudio, MediaType \_ AnalogVideo                                                 |

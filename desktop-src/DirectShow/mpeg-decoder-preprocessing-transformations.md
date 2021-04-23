@@ -4,12 +4,12 @@ ms.assetid: c7ae0137-0d02-46da-9532-738d805e327d
 title: Transformações de pré-processamento do decodificador MPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b70df51b26ec3fa25d67a03a4e494869a2f25760
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 82d7bcf8eeda8062606ce0046a55e34d3c2d90fe
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646038"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908894"
 ---
 # <a name="mpeg-decoder-preprocessing-transformations"></a>Transformações de pré-processamento do decodificador MPEG
 
@@ -31,7 +31,7 @@ O membro **dwControlFlags** agora conterá os novos bits.
 
 
 
-|                          |            |
+| Label | Valor |
 |--------------------------|------------|
 | AMCONTROL \_ usado          | 0x00000001 |
 | AMCONTROL \_ pad \_ para \_ 4x3  | 0x00000002 |

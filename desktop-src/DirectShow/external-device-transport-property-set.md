@@ -4,12 +4,12 @@ ms.assetid: 9c80cf59-054f-49b6-9456-ed5e091cbfaf
 title: Conjunto de propriedades de transporte de dispositivo externo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e77942157b7cf5f75b883e6953f3a115d1fa9f6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 85e38217af21ea1839d7c9207a4922bcff00d63a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104088805"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909214"
 ---
 # <a name="external-device-transport-property-set"></a>Conjunto de propriedades de transporte de dispositivo externo
 
@@ -19,7 +19,7 @@ A tabela a seguir lista as propriedades que são relevantes para aplicativos de 
 
 
 
-|                   |                           |
+| Label | Valor |
 |-------------------|---------------------------|
 | GUID do Conjunto de Propriedades | transporte de extensão propsetid \_ \_ |
 

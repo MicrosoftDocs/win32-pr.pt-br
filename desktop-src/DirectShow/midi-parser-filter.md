@@ -4,12 +4,12 @@ ms.assetid: a56576ad-f949-48fa-85e0-3e9898d2970d
 title: Filtro de analisador de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b741b2c82eda224a24ffee8a56f8977cbb510f3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 60ce659559852497b8ec55709e77f9510a1deaf2
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919714"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908424"
 ---
 # <a name="midi-parser-filter"></a>Filtro de analisador de MIDI
 
@@ -17,7 +17,7 @@ O filtro analisador de MIDI lê dados MIDI encontrados no. MID e. Arquivos RMI. 
 
 
 
-|                                          |                                                                                                          |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMMediaContent**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent), [ **IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                           |
 | Tipos de mídia de pino de entrada                    | \_Fluxo de MediaType, \_ MIDI MEDIASUBTYPE                                                                    |

@@ -4,12 +4,12 @@ ms.assetid: c17b3b58-65ab-4e83-91f2-54a995f22ddf
 title: Cadeias de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d46e374aca71b024773e4177d09e67c7ee6034ac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d22ee33f7bc24495bc5099d0abeca7b8c70bc6d4
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825921"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909054"
 ---
 # <a name="filter-chains"></a>Cadeias de filtro
 
@@ -26,7 +26,7 @@ A interface [**IFilterChain**](/windows/desktop/api/Strmif/nn-strmif-ifilterchai
 
 
 
-|                                                               |                                 |
+| Label | Valor |
 |---------------------------------------------------------------|---------------------------------|
 | [**IFilterChain:: StartChain**](/windows/desktop/api/Strmif/nf-strmif-ifilterchain-startchain)   | Inicia uma cadeia.                 |
 | [**IFilterChain::StopChain**](/windows/desktop/api/Strmif/nf-strmif-ifilterchain-stopchain)     | Para uma cadeia.                  |

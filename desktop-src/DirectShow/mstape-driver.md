@@ -4,12 +4,12 @@ ms.assetid: aa59f322-09b1-4b0a-be6f-d865c20f76e5
 title: Driver MSTape
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14f37e22c26866fca9519219d358e9733fb56151
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 951084f8827f925bba43028c0792736883d5ff0f
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825499"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909394"
 ---
 # <a name="mstape-driver"></a>Driver MSTape
 
@@ -27,7 +27,7 @@ O PIN de entrada dá suporte a um tipo de mídia.
 
 
 
-|              |                                                            |
+| Label | Valor |
 |--------------|------------------------------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                                          |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_                     |
@@ -42,7 +42,7 @@ O pino de saída dá suporte a dois tipos de mídia.
 
 
 
-|              |                                        |
+| Label | Valor |
 |--------------|----------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                      |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_ |
@@ -55,7 +55,7 @@ O pino de saída dá suporte a dois tipos de mídia.
 
 
 
-|              |                                        |
+| Label | Valor |
 |--------------|----------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                      |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_ |
@@ -84,7 +84,7 @@ O driver lê dinamicamente as informações da ROM de configuração do disposit
 | DeviceOPcr0Payload  | carga de oPCR (controle de plugue de saída). Exemplo: 146 quadlets.                                                                                                                          | **longo**            |
 | DeviceOPcr0DataRate | taxa de dados de oPCR. Exemplos: 0 (S100), 1 (S200) ou 2 (s400).                                                                                                                          | **longo**            |
 | DeviceClassGUID     | GUID que identifica o driver de dispositivo. Para MSTape, esse valor é `{8C0F6AF2-0EDB-44C1-8AEB-59040BD830ED}` . Esse GUID é definido como MSTapeDeviceGUID no arquivo de cabeçalho Xprtdefs. h. | **BSTR**            |
-| Description         | Uma descrição do dispositivo, extraída do arquivo INF. Essa cadeia de caracteres geralmente contém o nome da marca do dispositivo.                                                                    | **BSTR**            |
+| Descrição         | Uma descrição do dispositivo, extraída do arquivo INF. Essa cadeia de caracteres geralmente contém o nome da marca do dispositivo.                                                                    | **BSTR**            |
 
 
 

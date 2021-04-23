@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 615e7cde4a8f82c3f4a9a95791912c5dc3f77ff3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916762"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909254"
 ---
 # <a name="evaluator-state-variables"></a>Variáveis de estado do avaliador
 
 <dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordem GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | ordem de mapa de 1-D                  |
 | Grupo de atributos: |                                |
@@ -32,11 +32,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordem GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | pedidos de mapa 2-D                 |
 | Grupo de atributos: |                                |
@@ -45,11 +45,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_COEFF GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | pontos de controle de 1-D             |
 | Grupo de atributos: |                                |
@@ -58,11 +58,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_COEFF GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | pontos de controle 2D             |
 | Grupo de atributos: |                                |
@@ -71,11 +71,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_domínio GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | pontos de extremidade de domínio 1-D           |
 | Grupo de atributos: |                                |
@@ -84,11 +84,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_domínio GL</dt> <dd> 
 
-|                  |                                |
+| Propriedade | Valor |
 |------------------|--------------------------------|
 | Descrição:     | pontos de extremidade de domínio 2D           |
 | Grupo de atributos: |                                |
@@ -97,11 +97,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL \_ MAP1 \_ x</dt> <dd> 
 
-|                  |                                    |
+| Propriedade | Valor |
 |------------------|------------------------------------|
 | Descrição:     | o mapa 1-D habilita: *x* é o tipo de mapa   |
 | Grupo de atributos: | eval/habilitação                        |
@@ -110,11 +110,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ map2 \_ x</dt> <dd> 
 
-|                  |                                    |
+| Propriedade | Valor |
 |------------------|------------------------------------|
 | Descrição:     | o mapa 2-D habilita: *x* é o tipo de mapa   |
 | Grupo de atributos: | eval/habilitação                        |
@@ -123,11 +123,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>Domínio de grade do GL \_ MAP1 \_ \_</dt> <dd> 
 
-|                  |                                                                                |
+| Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
 | Descrição:     | pontos de extremidade de grade 1-D                                                             |
 | Grupo de atributos: | eval                                                                           |
@@ -136,11 +136,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>Domínio de grade do GL \_ map2 \_ \_</dt> <dd> 
 
-|                  |                                                                                |
+| Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
 | Descrição:     | pontos de extremidade de grade 2D                                                             |
 | Grupo de atributos: | eval                                                                           |
@@ -149,11 +149,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_Segmentos de \_ grade GL MAP1 \_</dt> <dd> 
 
-|                  |                                    |
+| Propriedade | Valor |
 |------------------|------------------------------------|
 | Descrição:     | divisões de grade 1-D                 |
 | Grupo de atributos: | eval                               |
@@ -162,11 +162,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_Segmentos de \_ grade GL MAP1 \_</dt> <dd> 
 
-|                  |                                                                                |
+| Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
 | Descrição:     | segmentos de grade 2D                                                              |
 | Grupo de atributos: | eval                                                                           |
@@ -175,11 +175,11 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL \_ automático \_ normal</dt> <dd> 
 
-|                  |                                             |
+| Propriedade | Valor |
 |------------------|---------------------------------------------|
 | Descrição:     | True se a geração normal automática estiver habilitada |
 | Grupo de atributos: | eval                                        |
@@ -188,13 +188,13 @@ ms.locfileid: "103916762"
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

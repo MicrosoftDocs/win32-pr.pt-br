@@ -4,12 +4,12 @@ ms.assetid: d70558a5-9820-432a-b4f3-ccf7bb2a34d5
 title: Gerenciador de portas de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7ca884ff009584ef2904387d872733ddf8d53dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db4f030e6be9035432207dc608a775a0e1d30b09
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829048"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909194"
 ---
 # <a name="video-port-manager"></a>Gerenciador de portas de vídeo
 
@@ -22,7 +22,7 @@ O filtro do Gerenciador de portas de vídeo (VPM) permite que o filtro de proces
 
 
 
-|                                          |                                                                                                                                                                                                                      |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMVideoDecimationProperties**](/windows/desktop/api/Strmif/nn-strmif-iamvideodecimationproperties), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IKsPropertySet**](ikspropertyset.md), [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop), [**IVPManager**](/windows/desktop/api/Strmif/nn-strmif-ivpmanager) |
 | Tipos de mídia de pino de entrada                    | \_Vídeo de MediaType, MEDIASUBTYPE \_ VPVIDEO ou MEDIASUBTYPE \_ VPVBI, Format \_ None                                                                                                                                         |

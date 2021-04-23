@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d57d023dff803caf5da7e61dea266670ec8bde5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db88c5818d31d65f361ae1a805bd50c285d4a5c2
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747418"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909804"
 ---
 # <a name="cbasecontrolwindowdosetwindowstyle-method"></a>Método CBaseControlWindow. DoSetWindowStyle
 
@@ -57,7 +57,7 @@ Valor que especifica quais estilos definir. Deve ser uma destas opções:
 
 
 
-|              |                                      |
+| Label | Valor |
 |--------------|--------------------------------------|
 | estilo de GWL \_   | Recupere os estilos de janela.          |
 | GWL \_ FILEstyle | Recupere os estilos de janela estendida. |

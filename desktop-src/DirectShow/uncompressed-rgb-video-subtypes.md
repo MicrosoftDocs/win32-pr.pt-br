@@ -4,12 +4,12 @@ ms.assetid: 49c91c8c-6889-48c6-8fa5-84929c03d951
 title: Subtipos de vídeo RGB não compactados (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e04237a61fa91f4fe648dcb7743c893604adbe7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 894034c01b42f58cbc6a1e5a5c7fe6d77f50befd
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769362"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909524"
 ---
 # <a name="uncompressed-rgb-video-subtypes"></a>Subtipos de vídeo RGB não compactados
 
@@ -67,7 +67,7 @@ Para formatos palettized, a cor de cada pixel é especificada como um índice em
 
 -   Para o RGB 24, cada pixel é um [**RGBTRIPLE**](/windows/win32/api/wingdi/ns-wingdi-rgbtriple). Cada cor é de um byte, com um valor de 0 a 255, inclusive. O layout de memória é: 
 
-    |       |      |       |     |
+| Label | Valor |
     |-------|------|-------|-----|
     | Byte  | 0    | 1     | 2   |
     | Valor | Azul | Verde | Vermelho |
@@ -78,7 +78,7 @@ Para formatos palettized, a cor de cada pixel é especificada como um índice em
 
 -   Para o RGB 32, cada pixel é um **RGBQUAD**. Cada cor é de um byte, com um valor de 0 a 255, inclusive. O layout de memória é: 
 
-    |       |      |       |     |                     |
+| Label | Valor |
     |-------|------|-------|-----|---------------------|
     | Byte  | 0    | 1     | 2   | 3                   |
     | Valor | Azul | Verde | Vermelho | Alfa ou não se preocupe |
@@ -87,11 +87,11 @@ Para formatos palettized, a cor de cada pixel é especificada como um índice em
 
      
 
-    Se o subtipo for MEDIASUBTYPE \_ ARGB32, byte 3 conterá um valor para o canal alfa. Se o subtipo for MEDIASUBTYPE \_ RGB32, byte 3 deverá ser ignorado.
+    If the subtype is MEDIASUBTYPE\_ARGB32, byte 3 contains a value for the alpha channel. If the subtype is MEDIASUBTYPE\_RGB32, byte 3 should be ignored.
 
 -   A2R10G10B10 usa o seguinte layout: 
 
-    |       |       |         |         |         |
+| Label | Valor |
     |-------|-------|---------|---------|---------|
     | bit   | 0 – 9 | 10 – 19 | 20 - 29 | 30 - 31 |
     | Valor | Azul  | Verde   | Vermelho     | Alpha   |
@@ -102,7 +102,7 @@ Para formatos palettized, a cor de cada pixel é especificada como um índice em
 
 -   A2B10G10R10 usa o seguinte layout: 
 
-    |       |       |         |         |         |
+| Label | Valor |
     |-------|-------|---------|---------|---------|
     | bit   | 0 – 9 | 10 – 19 | 20 - 29 | 30 - 31 |
     | Valor | Vermelho   | Verde   | Azul    | Alpha   |

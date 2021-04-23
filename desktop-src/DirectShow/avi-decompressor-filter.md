@@ -4,12 +4,12 @@ ms.assetid: 6a9914db-483a-429c-9b26-9451578951c9
 title: Filtro de descompactação AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9b6fcff61dd867c598e793fb5aa8fbff67dc6cd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 214ccfeee18a01fa9c8d52ffbf4593b9de5664bb
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646005"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910094"
 ---
 # <a name="avi-decompressor-filter"></a>Filtro de descompactação AVI
 
@@ -26,7 +26,7 @@ Em seu PIN de upstream, o descompactador AVI normalmente se conecta ao [divisor 
 
 
 
-|                                          |                                                                                                                                                                                                                    |
+| Label | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                                                                                                                                                 |
 | Tipos de mídia de pino de entrada                    | Tipo principal: MEDIATYPE \_ VideoSubtype: deve corresponder ao código FOURCC para o tipo de compactação. Para obter mais informações, consulte [Códigos FOURCC](fourcc-codes.md).<br/> Tipo de formato: formato \_ VIDEOINFO<br/> |

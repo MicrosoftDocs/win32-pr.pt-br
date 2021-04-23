@@ -4,12 +4,12 @@ title: Limitação do comprimento máximo do caminho
 ms.topic: article
 ms.custom: contperf-fy21q1
 ms.date: 09/15/2020
-ms.openlocfilehash: 3d71d87f69aeb224cde256ce78bd29fd0bf5c291
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 4bf5050f24827a2033c1e56fd9413c04f4e59500
+ms.sourcegitcommit: ece80b9b7082415b2f894b0696b6b3f0c8544d72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314799"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107899735"
 ---
 # <a name="maximum-path-length-limitation"></a>Limitação do comprimento máximo do caminho
 
@@ -42,7 +42,9 @@ Para habilitar o novo comportamento de caminho longo, ambas as condições a seg
 
 * A chave do registro `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled (Type: REG_DWORD)` deve existir e ser definida como 1. O valor da chave será armazenado em cache pelo sistema (por processo) após a primeira chamada para uma função de diretório ou arquivo Win32 afetado (veja abaixo a lista de funções). A chave do registro não será recarregada durante o tempo de vida do processo. Para que todos os aplicativos no sistema reconheçam o valor da chave, uma reinicialização pode ser necessária porque alguns processos podem ter começado antes da definição da chave.
 
-Você também pode copiar esse código para um `.reg` arquivo que pode definir isso para você:
+Você também pode copiar esse código para um `.reg` arquivo que pode definir isso para você ou usar o comando do PowerShell de uma janela de terminal com privilégios elevados:
+# <a name="cmd"></a>[cmd](#tab/cmd)
+
 ```cmd
 Windows Registry Editor Version 5.00
 
@@ -50,6 +52,16 @@ Windows Registry Editor Version 5.00
 "LongPathsEnabled"=dword:00000001
 
 ```
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+
+```powershell
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
+-Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
+```
+
+---
 
 > [!NOTE]  
 > Essa chave do registro também pode ser controlada por meio de Política de Grupo em `Computer Configuration > Administrative Templates > System > Filesystem > Enable Win32 long paths` .

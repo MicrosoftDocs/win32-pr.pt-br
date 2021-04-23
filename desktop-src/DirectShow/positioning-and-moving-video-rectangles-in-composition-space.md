@@ -4,12 +4,12 @@ description: Posicionando e movendo os retângulos de vídeo no espaço de compo
 ms.assetid: 97e7bb24-79f6-4638-a9c4-ac09dbd29be9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef766d1ae739e46a2c56bfab81b4243c9dcf6f10
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 96955fc2107036299ab6f530eeda76374a0a0315
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105766988"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909624"
 ---
 # <a name="position-and-move-video-rectangles-in-composition-space"></a>Posicionar e mover os retângulos de vídeo no espaço de composição
 
@@ -21,7 +21,7 @@ Por exemplo, suponha que o fluxo 0 (que corresponde ao pino 0) contenha o fluxo 
 
 
 
-|        |                             |
+| Label | Valor |
 |--------|-----------------------------|
 | Hora   | Retângulo                   |
 | t + 0  | {-1,0 f, 0,0 f, 0,0 f, 1,0 f} |

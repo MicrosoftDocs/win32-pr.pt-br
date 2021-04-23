@@ -4,12 +4,12 @@ ms.assetid: 4ea1cb84-0558-4c4a-9483-1b0f2a8f76f8
 title: Tipos de mídia MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35d1ff7c121c52db39d574f9bbae3650b04312e9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 0e44db1f4423365efb7814d61b35c1985142aa14
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105784115"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910024"
 ---
 # <a name="mpeg-1-media-types"></a>Tipos de mídia MPEG-1
 
@@ -19,7 +19,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                                 |
+| Label | Valor |
 |-----------------------|-------------------------------------------------|
 | Tipo principal            | Fluxo de MEDIATYPE \_                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1System                       |
@@ -35,7 +35,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                            |
+| Label | Valor |
 |-----------------------|----------------------------|
 | Tipo principal            | Fluxo de MEDIATYPE \_          |
 | Subtype               | MEDIASUBTYPE \_ MPEG1VideoCD |
@@ -51,7 +51,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                                |
+| Label | Valor |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Áudio de MEDIATYPE \_                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
@@ -67,7 +67,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                            |
+| Label | Valor |
 |-----------------------|--------------------------------------------|
 | Tipo principal            | Áudio de MEDIATYPE \_                           |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload                 |
@@ -83,7 +83,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                                |
+| Label | Valor |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Vídeo de MEDIATYPE \_                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
@@ -99,7 +99,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                          |
+| Label | Valor |
 |-----------------------|------------------------------------------|
 | Tipo principal            | Vídeo de MEDIATYPE \_                         |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload               |
@@ -115,7 +115,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                                |
+| Label | Valor |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Fluxo de MEDIATYPE \_                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Video                      |
@@ -131,7 +131,7 @@ Esta seção lista os tipos de mídia usados para dados MPEG-1.
 
 
 
-|                       |                                                |
+| Label | Valor |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Fluxo de MEDIATYPE \_                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Audio                      |

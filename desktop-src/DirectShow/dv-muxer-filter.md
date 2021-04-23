@@ -4,12 +4,12 @@ ms.assetid: 4dd57202-f4de-40d9-b720-efaba8a60a7c
 title: Filtro DV Muxer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2154dd1fc1617ff3f717b1ace6e52c9c507a38e8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 013251f2f9c1946aaa0f7b3c95edfd2de81c4d78
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646124"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908594"
 ---
 # <a name="dv-muxer-filter"></a>Filtro DV Muxer
 
@@ -17,7 +17,7 @@ Esse filtro combina um vídeo digital (DV) – fluxo de vídeo codificado com um
 
 
 
-|                                          |                                                                                                                                        |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)                                                             |
 | Tipos de mídia de pino de entrada                    | **Vídeo**: \_ vídeo de MediaType, MEDIASUBTYPE \_ Dvsd, Format \_ VIDEOINFO **Audio**: MediaType \_ áudio, MEDIASUBTYPE \_ PCM, Format \_ WaveFormatEx |

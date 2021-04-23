@@ -4,12 +4,12 @@ ms.assetid: 59332096-bdfe-4208-b99a-1f434652f287
 title: Filtro de processador de tela inteira
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d580442887896f271b0f5b7fea5f7a33553f53f6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c175907ef0f60c3b1fe183eb0941b5118d24c9f2
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759554"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908604"
 ---
 # <a name="full-screen-renderer-filter"></a>Filtro de processador de tela inteira
 
@@ -19,7 +19,7 @@ Não adicione esse filtro manualmente ao gráfico de filtro. Se um aplicativo ch
 
 
 
-|                                          |                                                                                                                                                                                                                                                    |
+| Label | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFullScreenVideoEx**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-ifullscreenvideoex), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol), [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop) |
 | Tipos de mídia de pino de entrada                    | \_Vídeo de MediaType, MEDIASUBTYPE \_ nulo                                                                                                                                                                                                               |
@@ -42,9 +42,9 @@ O processador de tela inteira dá suporte a um conjunto estático de modos de ex
 
 
 
-|      |       |        |           |
+| Label | Valor |
 |------|-------|--------|-----------|
-| Mode | Largura | Altura | Profundidade de bits |
+| Modo | Largura | Altura | Profundidade de bits |
 | 0    | 320   | 200    | 16        |
 | 1    | 320   | 200    | 8         |
 | 2    | 320   | 240    | 16        |

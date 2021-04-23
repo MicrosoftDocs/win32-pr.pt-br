@@ -4,12 +4,12 @@ ms.assetid: 2d33ae3f-565d-4e69-8fb0-117ff582a4d0
 title: Filtro de decodificador de WST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01f2d20873ff9a5e7c009c4a84f7a23c273d6590
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7eb6804f82e5d15aa324feb163261544969e3c45
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827521"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908474"
 ---
 # <a name="wst-decoder-filter"></a>Filtro de decodificador de WST
 
@@ -26,7 +26,7 @@ Esse filtro pode ser adicionado ao grafo automaticamente chamando [**ICaptureGra
 
 
 
-|                                          |                                                               |
+| Label | Valor |
 |------------------------------------------|---------------------------------------------------------------|
 | Filtrar interfaces                        | ISpecifyPropertyPages, [ **IAMWstDecoder**](/previous-versions/windows/desktop/api/Iwstdec/nn-iwstdec-iamwstdecoder) |
 | Tipos de mídia de pino de entrada                    | MEDIATYPE \_ VBI, \_ TELEtext MEDIASUBTYPE                        |

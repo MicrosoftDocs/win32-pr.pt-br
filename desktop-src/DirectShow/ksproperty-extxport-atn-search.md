@@ -4,12 +4,12 @@ ms.assetid: 209e0aa3-d7a3-4b5c-ae5a-5063a3804a9d
 title: KSPROPERTY_EXTXPORT_ATN_SEARCH
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc8ff454386c444ed6b55bfbeede60196a75127c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f4115c7ff1c4bc878b4ee80e284f11821c37909a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105767673"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909443"
 ---
 # <a name="ksproperty_extxport_atn_search"></a>KSPROPERTY \_ EXTXPORT \_ ATN \_ Search
 
@@ -17,7 +17,7 @@ Essa propriedade envia um comando para o dispositivo para pesquisar um número d
 
 
 
-|                   |                                       |
+| Label | Valor |
 |-------------------|---------------------------------------|
 | GUID do Conjunto de Propriedades | transporte de extensão propsetid \_ \_             |
 | ID da propriedade       | KSPROPERTY \_ EXTXPORT \_ ATN \_ Search     |

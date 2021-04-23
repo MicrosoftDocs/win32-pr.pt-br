@@ -4,12 +4,12 @@ ms.assetid: 82b9f849-b9dc-439b-8ca7-9dcd992338ab
 title: Filtro de leitor ASF do WM (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3df563667ed614a238e8fb31e08a2d71c721c2b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a35cea4b6dbf8c720f3059e0317484fd2f34d10
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169878"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908864"
 ---
 # <a name="wm-asf-reader-filter-directshow"></a>Filtro de leitor ASF do WM (DirectShow)
 
@@ -17,7 +17,7 @@ O leitor ASF do WM é um filtro de wrapper para o objeto leitor fornecido com o 
 
 
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Label | Valor |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter), [**IAMExtendedSeeking**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamextendedseeking), **IServiceProvider** além disso, o filtro expõe as seguintes interfaces SDK do Windows Media Format: [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo), IWMReaderAdvanced [**, IWMReaderAdvanced2,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader) (por meio de **IServiceProvider**) [](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced)<br/> |
 | Tipos de mídia de pino de entrada                    | Não aplicável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |

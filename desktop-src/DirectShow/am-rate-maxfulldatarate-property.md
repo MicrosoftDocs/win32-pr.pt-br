@@ -4,12 +4,12 @@ ms.assetid: 66e6885b-7ad7-4912-85e4-ea36855bfde6
 title: Propriedade AM_RATE_MaxFullDataRate (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 692d3a9acf3ab175d01cea63e970c8fcdad4b0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4e3b1ba4d15268ffb8a32c0e808393b85efe55b
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749862"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910284"
 ---
 # <a name="am_rate_maxfulldatarate-property"></a>Propriedade de MaxFullDataRate da \_ taxa de am \_
 
@@ -21,7 +21,7 @@ Esta propriedade é somente para leitura.
 
 
 
-|                   |                                    |
+| Label | Valor |
 |-------------------|------------------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange      |
 | ID da propriedade       | \_MaxFullDataRate de taxa de am \_          |
