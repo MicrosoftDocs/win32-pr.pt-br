@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: 1ebb85ae2628a2c9abce86e0ce146c0d24828267
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: e80da37bb65cddaffabd67ae9e5b40e2433e64da
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925669"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955009"
 ---
 # <a name="dwritecore-overview"></a>Visão geral do DWriteCore
 
@@ -110,13 +110,13 @@ A superfície da API do DWriteCore é basicamente a mesma que se trata de [Direc
 
 #### <a name="create-a-factory-object"></a>Criar um objeto de fábrica
 
-A função Free [**DWriteCoreCreateFactory**](/windows/win32/api/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
+A função Free [**DWriteCoreCreateFactory**](/windows/win32/directwrite/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
 
 **DWriteCoreCreateFactory** é funcionalmente o mesmo que a função [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) exportada pela versão do sistema do DirectWrite. A função DWriteCore tem um nome diferente para evitar ambigüidade.
 
 #### <a name="create-a-restricted-factory-object"></a>Criar um objeto de fábrica restrito
 
-A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, indicando uma fábrica restrita. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_ISOLATED2** para criar um objeto de fábrica restrito ao chamar a função gratuita **DWriteCoreCreateFactory** .
+A enumeração de [**DWRITE_FACTORY_TYPE**](./dwrite/ne-dwrite-dwrite_factory_type.md) tem uma nova constante &mdash; **DWRITE_FACTORY_TYPE_ISOLATED2**, indicando uma fábrica restrita. Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Veja como você pode usar **DWRITE_FACTORY_TYPE_ISOLATED2** para criar um objeto de fábrica restrito ao chamar a função gratuita [**DWriteCoreCreateFactory**](/windows/win32/directwrite/dwrite_core/nf-dwrite_core-dwritecorecreatefactory) .
 
 ```cppwinrt
 // Create a factory that doesn't interact with any cross-process nor

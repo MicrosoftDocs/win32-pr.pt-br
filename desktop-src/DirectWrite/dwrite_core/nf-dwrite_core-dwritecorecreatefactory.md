@@ -39,19 +39,19 @@ api_location:
 - dwrite_core.h
 api_name:
 - DWriteCoreCreateFactory
-ms.openlocfilehash: 6606ad884fd65195e9922d348cc4fe565b95f2ee
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 43e43e00385e10f0da0ba459cdc16e84562b72ec
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107882130"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955019"
 ---
 # <a name="dwritecorecreatefactory-function-dwrite_coreh"></a>Função DWriteCoreCreateFactory (dwrite_core. h)
 
 Cria um objeto de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview).
+> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview).
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -90,7 +90,7 @@ Se esse método tiver sucesso, ele retornará <b xmlns:loc="http://microsoft.com
 
 ## <a name="examples"></a>Exemplos
 
-Consulte o tópico [visão geral do DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
+Consulte o tópico [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
 
 ## <a name="remarks"></a>Comentários
 
