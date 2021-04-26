@@ -4,12 +4,12 @@ ms.assetid: f27c5e65-87b0-47a4-a5dc-27b52082f097
 title: JobPrimaryCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa3dfc50d060093c1c2ee1baf494305ae6afd6ce
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 18f45b4125ce7d899597631abf4e01211724bee8
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105753687"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993952"
 ---
 # <a name="jobprimarycoverfrontsource"></a>JobPrimaryCoverFrontSource
 
@@ -24,7 +24,7 @@ Especifica a origem de uma folha primária de capa de front-end personalizada pa
 
 
 
-| Nome                       |                                            |
+| Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefixo de escopo <br/> | Trabalho<br/>                             |

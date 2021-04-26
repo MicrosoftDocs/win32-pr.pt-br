@@ -4,12 +4,12 @@ ms.assetid: 752cccf7-1f95-4597-b0e2-a96fd22ffeef
 title: DocumentCollate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b022d9c8067f330e14697932382c4c8f058a8f3
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 959613299c53996ce7d66171d2da1518f28b9298
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105785953"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993993"
 ---
 # <a name="documentcollate"></a>DocumentCollate
 
@@ -45,7 +45,7 @@ DESATIVADO: para todas as cópias (JobCopiesAllDocuments x DocumentCopiesAllPage
 
 
 
-| Nome                       |                     |
+| Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Recurso<br/>  |
 | Prefixo de escopo <br/> | Documento<br/> |

@@ -4,12 +4,12 @@ ms.assetid: 7b57d5c6-589b-4e03-bfcf-1faa671ebd77
 title: elemento Async
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea04eaa66fbdadfc784650c1a451cebf171f6372
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6cbc68d0a5dea30f4b4d179a54539ac3f9516a4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011619"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994953"
 ---
 # <a name="async-element"></a>elemento Async
 
@@ -51,7 +51,7 @@ Um proxy pode ter versões assíncronas e síncronas das mesmas operações.
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

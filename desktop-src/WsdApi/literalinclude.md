@@ -4,12 +4,12 @@ ms.assetid: 7a7ffd54-09e9-412d-a637-5dc27597b46e
 title: elemento literalInclude
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2701b2b21d14b629d5d9b61dcbc73e11371f54e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e1f43f1b8d3d95e2ad8a378dd1c8cbada7758ad
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772975"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995123"
 ---
 # <a name="literalinclude-element"></a>elemento literalInclude
 
@@ -46,14 +46,14 @@ Coloca uma instrução de inclusão C ou IDL no código gerado.
 <tr class="odd">
 <td><strong>Idioma</strong><br/></td>
 <td>Cadeia de caracteres de idioma<br/></td>
-<td>No<br/></td>
+<td>Não<br/></td>
 <td>O tipo de arquivo de cabeçalho a ser incluído. <br/> <br/>
 <dt><strong>&</strong></dt> <dd> Incluir um arquivo de cabeçalho C.<br/> </dd> <dt><strong>INSERI</strong></dt> <dd> Incluir um arquivo IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Local</strong><br/></td>
 <td>Boolean<br/></td>
-<td>No<br/></td>
+<td>Não<br/></td>
 <td>Esse atributo só é usado quando o <strong>idioma</strong> é definido como &quot; C &quot; .<br/> <br/>
 <dt><strong>True</strong></dt> <dd> Pesquisa o diretório atual para o cabeçalho nomeado antes de Pesquisar os diretórios do sistema.<br/> </dd> <dt><strong>For</strong></dt> <dd> Pesquise somente os diretórios do sistema para o cabeçalho nomeado.<br/> </dd> </dl></td>
 </tr>
@@ -126,7 +126,7 @@ import wsdclient.idl;
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c3517266ace77b9235604770d9b42d10cd80e2d5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c277723628d5337e41e5fbf83baa9fda8af16adf
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366197"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993863"
 ---
 # <a name="shader-model-3-hlsl-reference"></a>Modelo de sombreador 3 (referência de HLSL)
 
@@ -210,9 +210,8 @@ O PS \_ 3 \_ 0 e o PS \_ 2 \_ x oferecem suporte para dois níveis de precisão:
 
 
 
-|          |          |                   |                      |
-|----------|----------|-------------------|----------------------|
 | PS \_ 3 \_ 0 | PS \_ 2 \_ 0 | Precisão         | Valor                |
+|----------|----------|-------------------|----------------------|
 | x        |          | Completo              | FP32 ou superior       |
 | x        |          | Precisão parcial | FP16 = s10e5           |
 | x        | x        | Completo              | fp24 = s16e7 ou superior |
@@ -220,7 +219,7 @@ O PS \_ 3 \_ 0 e o PS \_ 2 \_ x oferecem suporte para dois níveis de precisão:
 
 
 
- 
+ 
 
 \_o PS 3 \_ 0 dá suporte a mais precisão do que \_ o PS 2 \_ 0. Por padrão, todas as operações ocorrem no nível de precisão total.
 
@@ -263,7 +262,7 @@ Implementações de software (tempo de execução e referência para sombreadore
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -272,6 +271,6 @@ Implementações de software (tempo de execução e referência para sombreadore
 [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

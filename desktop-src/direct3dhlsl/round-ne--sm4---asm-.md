@@ -4,12 +4,12 @@ description: Ponto flutuante redondo para integral float. | round_ne (sm4-ASM)
 ms.assetid: 2D1A0786-F7DB-4D69-9F56-82ECD1EE7ABA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c6f5e332453318dc0ad1a7806c3506343ff3b6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 7f0efb2ff10b75e50ec05847dd25aa8448c760c7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968425"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993923"
 ---
 # <a name="round_ne-sm4---asm"></a>Round \_ ne (sm4-ASM)
 
@@ -45,9 +45,8 @@ F significa número real finito.
 
 
 
-|          |          |        |             |        |        |             |        |          |         |
-|----------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
 | **src**  | **-INF** | **-F** | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F** | **+ INF** | **NaN** |
+|----------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
 | **dest** | -inf     | -F     | -0          | -0     | +0     | +0          | + F     | +inf     | NaN     |
 
 
@@ -72,7 +71,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

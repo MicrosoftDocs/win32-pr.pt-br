@@ -4,12 +4,12 @@ ms.assetid: e55a140c-3b2b-4f90-99e3-f62c892a8bae
 title: elemento typeTableDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: babb4078033a02dbd03aad671d6a4d728936d1d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c983d1850c84295ff4128b20a655faa65c36995f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921187"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995713"
 ---
 # <a name="typetabledeclarations-element"></a>elemento typeTableDeclarations
 
@@ -47,7 +47,7 @@ As tabelas de esquema XML são referenciadas por grande parte do código gerado.
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

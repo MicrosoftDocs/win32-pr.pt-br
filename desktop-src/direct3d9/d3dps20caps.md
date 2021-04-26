@@ -4,12 +4,12 @@ ms.assetid: 41a8939f-eba5-47ca-8628-94b606b6f43d
 title: D3DD3DPSHADERCAPS2_0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8a6da0dfc3fd09ce54e52b633066c6da09660c5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fa2326b8f5066d34087fb543c7771a0cd547b98f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089563"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995263"
 ---
 # <a name="d3dd3dpshadercaps2_0"></a>D3DD3DPSHADERCAPS2 \_ 0
 
@@ -17,9 +17,8 @@ Sinalizadores de capacidade do sombreador de pixel.
 
 
 
-|                                              |                |                                                                                                                                                                                                                   |
-|----------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                                     | Valor          | Descrição                                                                                                                                                                                                       |
+|----------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DD3DPSHADERCAPS2 \_ 0 \_ ARBITRARYSWIZZLE      | (1 << 0) | Há suporte para swizzling arbitrários.                                                                                                                                                                                 |
 | D3DD3DPSHADERCAPS2 \_ 0 \_ GRADIENTINSTRUCTIONS  | (1 << 1) | Há suporte para instruções de gradiente.                                                                                                                                                                              |
 | D3DD3DPSHADERCAPS2 \_ 0 \_ predicação           | (1 << 2) | Há suporte para predicação de instrução. Consulte [setp \_ comp-PS](../direct3dhlsl/setp-comp---ps.md).                                                                                                                         |

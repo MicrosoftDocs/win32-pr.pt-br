@@ -4,12 +4,12 @@ ms.assetid: 0664dcc6-1e71-46cf-9084-1adc84861b52
 title: elemento Path (serviços Web em dispositivos)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 763ad1479c20553fb7e62ab29e504d56bfa6d950
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d48df5a156149f00b8b153ccc0d46d6d2d34a1ce
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761296"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994303"
 ---
 # <a name="path-element"></a>elemento Path
 
@@ -51,7 +51,7 @@ O XML a seguir mostra um elemento **path** válido.
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

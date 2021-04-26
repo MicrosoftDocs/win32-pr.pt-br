@@ -4,12 +4,12 @@ ms.assetid: df11ee89-fe62-4fe5-a1d6-0f925360ca39
 title: PageICMRenderingIntent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 014213bdd2e11cc2587cef580a0b48fe03172ef0
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: d17eea84ba45ea7c121080f7649b03492c6f3409
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104172579"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995553"
 ---
 # <a name="pageicmrenderingintent"></a>PageICMRenderingIntent
 
@@ -25,7 +25,7 @@ Descreve a tentativa de renderização conforme definido pela especificação IC
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |

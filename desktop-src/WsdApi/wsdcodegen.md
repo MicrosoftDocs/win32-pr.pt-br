@@ -4,12 +4,12 @@ ms.assetid: 3d40172b-6ba1-4e42-9a1a-519c8e88c2b1
 title: elemento wsdCodeGen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 656f2273926dc3420ec84d6b9f24759f8e3587e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9861617854e0e75575f2993717f5b2a86515fb0f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812327"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994673"
 ---
 # <a name="wsdcodegen-element"></a>elemento wsdCodeGen
 
@@ -30,7 +30,7 @@ ms.locfileid: "105812327"
 
 | Atributo                        | Type                             | Obrigatório       | Descrição                                                                                  |
 |----------------------------------|----------------------------------|----------------|----------------------------------------------------------------------------------------------|
-| **ConfigFileVersion**<br/> | Qualquer cadeia de caracteres.<br/> | Yes<br/> | A versão do arquivo de configuração. O único valor válido é "1,0".<br/> <br/> |
+| **ConfigFileVersion**<br/> | Qualquer cadeia de caracteres.<br/> | Sim<br/> | A versão do arquivo de configuração. O único valor válido é "1,0".<br/> <br/> |
 
 
 
@@ -84,7 +84,7 @@ Em geral, os elementos de [**arquivo**](file.md) devem ocorrer por último porqu
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

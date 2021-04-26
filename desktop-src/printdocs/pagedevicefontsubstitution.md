@@ -4,12 +4,12 @@ ms.assetid: 741aa729-35c3-43c2-93d8-e25ed508cfa6
 title: PageDeviceFontSubstitution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08d076d9175f078efed9dbd8d5ae0b59cf296142
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f40b86d6d81603e2ff9929275571ff6be72d839b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104506373"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995583"
 ---
 # <a name="pagedevicefontsubstitution"></a>PageDeviceFontSubstitution
 
@@ -25,7 +25,7 @@ Descreve o estado habilitado/desabilitado da substituição de fonte do disposit
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |

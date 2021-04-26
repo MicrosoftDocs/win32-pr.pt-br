@@ -4,12 +4,12 @@ ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07566926c2115855ea7321af90e7d1caebcd0a82
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 29918bfe48d1547a3c61b8d79425b36368f6d249
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105764715"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993873"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
@@ -24,7 +24,7 @@ Especifica a soma máxima permitida da cobertura de quatro tinta em qualquer lug
 
 
 
-| Nome                       |                                                            |
+| Nome | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefixo de escopo <br/> | ?<br/>                                            |

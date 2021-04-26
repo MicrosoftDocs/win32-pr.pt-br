@@ -4,12 +4,12 @@ ms.assetid: aa26a3f1-df1e-4caa-9ada-6f4a6627b6b8
 title: elemento subscriptionProxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb57fa21910f9b39440257bc72918519b35c6a57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9a3cba202c05d3f8b43b31c292dad8d601dc4e4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090346"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995313"
 ---
 # <a name="subscriptionproxyfunctionimplementations-element"></a>elemento subscriptionProxyFunctionImplementations
 
@@ -30,7 +30,7 @@ Gera implementações para funções de proxy de assinatura/cancelamento de assi
 
 | Atributo                 | Type               | Obrigatório      | Descrição                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **ampliá**<br/> | booleano<br/> | No<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
+| **ampliá**<br/> | booleano<br/> | Não<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
 
 
 
@@ -72,7 +72,7 @@ Gera implementações para funções de proxy de assinatura/cancelamento de assi
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

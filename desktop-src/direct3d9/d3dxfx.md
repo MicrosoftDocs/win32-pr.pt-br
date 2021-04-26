@@ -4,12 +4,12 @@ ms.assetid: df24a132-665e-4eb7-992b-d7a6144257f5
 title: D3DXFX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfe1e5e57b5fac94c1fb24d35cf1826057b75c45
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ad9077c8c7e3da479dd8963484bc289b84093ac0
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087228"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995073"
 ---
 # <a name="d3dxfx"></a>D3DXFX
 
@@ -27,7 +27,7 @@ As constantes na tabela a seguir são definidas em d3dx9effect. h.
 <tbody>
 <tr class="odd">
 <td>Sinalizadores de salvamento e restauração de estado do efeito</td>
-<td>Description</td>
+<td>Descrição</td>
 </tr>
 <tr class="even">
 <td>D3DXFX_DONOTSAVESTATE</td>
@@ -43,7 +43,7 @@ As constantes na tabela a seguir são definidas em d3dx9effect. h.
 </tr>
 <tr class="odd">
 <td>Sinalizadores de criação de efeito</td>
-<td>Description</td>
+<td>Descrição</td>
 </tr>
 <tr class="even">
 <td>D3DXFX_NOT_CLONEABLE</td>
@@ -76,11 +76,10 @@ As constantes na tabela a seguir não são definidas por padrão e devem ser def
 
 
 
-|                                |                                                                                                                                                                                                                                      |
+| Vigorar \# definição do pré-processador | Descrição                                                                                                                                                                                                                          |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vigorar \# definição do pré-processador | Description                                                                                                                                                                                                                          |
 | D3DXFX \_ LARGEADDRESS \_ Handle   | Defina esse valor antes de incluir d3dx9. h para que seu aplicativo não seja compilado ao tentar passar cadeias de caracteres para parâmetros D3DXHANDLE. Isso ajudará a garantir que as informações válidas sejam passadas para o tempo de execução. |
-| Sinalizadores do vinculador de efeito            | Description                                                                                                                                                                                                                          |
+| Sinalizadores do vinculador de efeito            | Descrição                                                                                                                                                                                                                          |
 | \_reconhecimento de endereço grande \_          | Definir o sinalizador do vinculador com \_ reconhecimento de endereço grande \_ = 1 permitirá que o aplicativo aloque recursos após o limite de endereços de 2GB, quando necessário.                                                                                      |
 
 

@@ -4,12 +4,12 @@ ms.assetid: ca7bc5ea-8ab2-4233-86d2-5b793021b8ee
 title: elemento hostMetadata
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: becd6bc3eab6b1aa1d95414c6348288e0d29dbd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9cf6fa139a2723ed90dfe281fc7b054016386fa
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749394"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994793"
 ---
 # <a name="hostmetadata-element"></a>elemento hostMetadata
 
@@ -67,7 +67,7 @@ O elemento [**relationshipMetadataDefinition**](relationshipmetadatadefinition.m
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Não            |

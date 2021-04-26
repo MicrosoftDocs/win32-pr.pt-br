@@ -4,12 +4,12 @@ description: Descreve os intrínsecores de operação de onda adicionados ao mod
 ms.assetid: BF968CD3-AC67-48DB-B93F-EF54B680106F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a2d082fc131c7cd08db9eb1861c4af39d600f40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c7e55661e3f91125597c8c7842a1be16129cefe0
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967189"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995463"
 ---
 # <a name="hlsl-shader-model-60"></a>Modelo de sombreador HLSL 6,0
 
@@ -50,9 +50,8 @@ Algumas operações (tais como os operadores bit a bit) dão suporte apenas a ti
 
 ## <a name="terminology"></a>Terminologia
 
-| | |
-|-|-|
 | **Termo** | **Definição** |
+|-|-|
 | Estreita | Um único thread de execução. Os modelos de sombreador antes da versão 6,0 expõem apenas um deles no nível de linguagem, deixando a expansão para o processamento paralelo de SIMD inteiramente na implementação. |
 | Wave | Um conjunto de pistas (threads) executado simultaneamente no processador. Não são necessárias barreiras explícitas para garantir que elas sejam executadas em paralelo. Conceitos semelhantes incluem "Warp" e "Wavefront". |
 | Raia inativa | Uma pista que não está sendo executada, por exemplo, devido ao fluxo de controle ou trabalho insuficiente para preencher o tamanho mínimo da onda. |
@@ -68,9 +67,8 @@ Todas as operações desse modelo de sombreador foram adicionadas em uma varieda
 
 Os intrínsecos para consultar uma única onda.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**WaveGetLaneCount**](wavegetlanecount.md) | Retorna o número de pistas na onda atual. | \* | \* |
 | [**WaveGetLaneIndex**](wavegetlaneindex.md) | Retorna o índice da pista atual dentro da onda atual. | \* | \* |
 | [**WaveIsFirstLane**](waveisfirstlane.md) | Retorna true somente para a pista ativa na onda atual com o menor índice | \* | \* |
@@ -79,9 +77,8 @@ Os intrínsecos para consultar uma única onda.
 
 Esse conjunto de intrínsecos compara valores entre threads atualmente ativos da onda atual.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**WaveActiveAnyTrue**](waveanytrue.md) | Retornará true se a expressão for verdadeira em qualquer rota ativa na onda atual. | \* | \* |
 | [**WaveActiveAllTrue**](wavealltrue.md) | Retornará true se a expressão for verdadeira em todas as pistas ativas na onda atual. | \* | \* |
 | [**WaveActiveBallot**](waveballot.md) | Retorna um bitmask de inteiro sem sinal de 64 bits da avaliação da expressão booliana para todas as pistas ativas na onda especificada. | \* | \* |
@@ -90,9 +87,8 @@ Esse conjunto de intrínsecos compara valores entre threads atualmente ativos da
 
 Esses intrínsecos permitem que todas as pistas ativas na onda atual recebam o valor da pista especificada, transmitindo-a efetivamente. O valor de retorno de uma pista inválida é indefinido.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**WaveReadLaneAt**](wavereadlaneat.md) | Retorna o valor da expressão para o índice de raia fornecido dentro da onda especificada. | \* | \* |
 | [**WaveReadLaneFirst**](wavereadfirstlane.md) | Retorna o valor da expressão para a pista ativa da onda atual com o menor índice. | \* | \* |
 
@@ -100,9 +96,8 @@ Esses intrínsecos permitem que todas as pistas ativas na onda atual recebam o v
 
 Esses intrínsecos computam a operação especificada em todas as pistas ativas na onda e transmitem o resultado final para todas as pistas ativas. Portanto, a saída final é garantida uniforme em toda a onda.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**WaveActiveAllEqual**](waveactiveallequal.md) | Retornará true se a expressão for a mesma para cada pista ativa na onda atual (e, portanto, uniforme em toda a ti). | \* | \* |
 | [**WaveActiveBitAnd**](waveallbitand.md) | Retorna o bit e de todos os valores da expressão em todas as pistas ativas na onda atual e replica o resultado para todas as pistas na onda. | \* | \* |
 | [**WaveActiveBitOr**](waveallbitor.md) | Retorna o valor de bit e de todos os valores da expressão em todas as pistas ativas na onda atual e replica o resultado para todas as pistas na onda. | \* | \* |
@@ -117,9 +112,8 @@ Esses intrínsecos computam a operação especificada em todas as pistas ativas 
 
 Esses intrínsecos aplicam a operação a cada raia e deixam cada resultado parcial da computação na pista correspondente.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**WavePrefixCountBits**](waveprefixcountbytes.md) | Retorna a soma de todas as variáveis boolianas especificadas definidas como true em todas as pistas ativas com índices menores que a raia atual. | \* | \* |
 | [**WavePrefixSum**](waveprefixsum.md) | Retorna a soma de todos os valores nas pistas ativas com índices menores do que este. | \* | \* |
 | [**WavePrefixProduct**](waveprefixproduct.md) | Retorna o produto de todos os valores nas pistas antes desta de uma onda especificada. | \* | \* |
@@ -141,9 +135,8 @@ S
 
 Essas rotinas funcionam em sombreadores de computação ou sombreadores de pixel. Em sombreadores de computação eles operam em quatro processadores definidos como grupos de 4 divididos uniformemente em uma onda de SIMD. Em sombreadores de pixel eles devem ser usados em ondas capturadas por WaveQuadLanes, caso contrário os resultados são indefinidos.
 
-| | | | |
-|-|-|-|-|
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
+|-|-|-|-|
 | [**QuadReadLaneAt**](quadreadlaneat.md) | Retorna o valor de origem especificado lido da pista do quádruplo atual identificado por quadLaneID \[ 0.. 3, \] que deve ser uniforme em todo o quad. | \* | |
 | [**QuadReadAcrossDiagonal**](quadreadacrossdiagonal.md) | Retorna o valor local especificado que é lido da pista na diagonal oposta neste Quad. | \* | |
 | [**QuadReadAcrossX**](quadswapx.md) | Retorna o valor de origem especificado lido da outra pista neste Quad na direção X. | \* | |

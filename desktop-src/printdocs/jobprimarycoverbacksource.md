@@ -4,12 +4,12 @@ ms.assetid: b5c8e79c-cdae-4c53-b594-915726423b4f
 title: JobPrimaryCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8c15d5f5b8545b70f19bf181a00d05a8379212
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2145bae0843323928d8a7d016fc61f10c0e388ac
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104011968"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993973"
 ---
 # <a name="jobprimarycoverbacksource"></a>JobPrimaryCoverBackSource
 
@@ -24,7 +24,7 @@ Especifica a origem de uma folha primária de capa de fundo personalizada para o
 
 
 
-| Nome                       |                                           |
+| Nome | Valor |
 |----------------------------|-------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                   |
 | Prefixo de escopo <br/> | Trabalho<br/>                            |

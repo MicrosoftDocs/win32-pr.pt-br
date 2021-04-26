@@ -4,12 +4,12 @@ ms.assetid: b93ad6e6-ab27-4fab-b488-6f402b6ee857
 title: PageMediaSizePSWidthOffset
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91cb8440af2b35bbe8f3f4a82a567beee43d1d44
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: ca8051fc265e107bff0be53c409eb103df2a8326
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105781651"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995504"
 ---
 # <a name="pagemediasizepswidthoffset"></a>PageMediaSizePSWidthOffset
 
@@ -24,7 +24,7 @@ Especifica o deslocamento perpendicular à direção da orientação do feed (re
 
 
 
-| Nome                       |                                                             |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
 | Prefixo de escopo <br/> | ?<br/>                                             |

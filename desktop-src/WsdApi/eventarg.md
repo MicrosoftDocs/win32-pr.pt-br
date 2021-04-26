@@ -4,12 +4,12 @@ ms.assetid: 60be4680-c434-4fdb-8449-c040969d2f59
 title: elemento eventArg
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 175d0a8b00386b7e1456750488d5975711a405aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 820c4223e8e4a880343faf2e9df686d9746b1b29
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763252"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994893"
 ---
 # <a name="eventarg-element"></a>elemento eventArg
 
@@ -48,7 +48,7 @@ Os valores possíveis são 1 (argumentos de evento incluídos) e 0 (padrão, arg
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

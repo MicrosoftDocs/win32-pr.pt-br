@@ -4,12 +4,12 @@ ms.assetid: d2030002-bd44-443f-8235-978919ebbda6
 title: D3DUSAGE_QUERY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4f5dda7f84dfa36e4f3b7ece1b359a4841bbbf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0eac450ed722da26fe4885d41707483adf401f89
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089235"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994103"
 ---
 # <a name="d3dusage_query"></a>\_Consulta D3DUSAGE
 
@@ -17,9 +17,8 @@ Essas opções identificam os tipos de recursos de consulta.
 
 
 
-|                                            |                                                                                                                                                                                                                                                                                                                                                     |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                                   | Descrição                                                                                                                                                                                                                                                                                                                                         |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_Filtro de consulta do D3DUSAGE \_                    | Consulte o formato de recurso para ver se ele dá suporte a tipos de filtro de textura diferentes do \_ ponto D3DTEXF (que tem sempre suporte).                                                                                                                                                                                                                         |
 | D3DUSAGE \_ consulta \_ LEGACYBUMPMAP             | Consulte o recurso sobre um mapa de relevo herdado.                                                                                                                                                                                                                                                                                                         |
 | D3DUSAGE \_ consulta \_ POSTPIXELSHADER \_ Blending | Consulte o recurso para verificar o suporte para o suporte de mesclagem de sombreador de pixel de lançamento. Se [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) falhar com a \_ \_ \_ mesclagem POSTPIXELSHADER de consulta D3DUSAGE, não haverá suporte para operações de mesclagem de pixels post. Isso inclui teste alfa, sombra de pixel, mesclagem de destino de renderização, habilitação de gravação de cor e pontilhamento. |

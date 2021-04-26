@@ -4,12 +4,12 @@ description: Mínimo de float de componente.
 ms.assetid: 8EDD5503-76D5-4078-BFBA-1DA9260C6E68
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e584aee077735b717bf76d148d4d0db4357a7d95
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8791589b77edc66eeab4b48f10f4a9b16b5cb2d9
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104084275"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993893"
 ---
 # <a name="min-sm4---asm"></a>min (sm4-ASM)
 
@@ -48,9 +48,8 @@ A tabela a seguir mostra os resultados obtidos ao executar a instrução com vá
 
 
 
-|                    |          |              |          |         |
-|--------------------|----------|--------------|----------|---------|
 | **src0 src1->** | **-INF** | **F**        | **+ INF** | **NaN** |
+|--------------------|----------|--------------|----------|---------|
 | **-INF**           | -inf     | -inf         | -inf     | -inf    |
 | **F**              | -inf     | src0 ou src1 | src0     | src0    |
 | **-INF**           | -inf     | src1         | +inf     | +inf    |
@@ -78,7 +77,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

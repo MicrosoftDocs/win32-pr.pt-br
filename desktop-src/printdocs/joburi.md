@@ -4,12 +4,12 @@ ms.assetid: c7abb657-6c9d-435a-a700-2eb0f14707c0
 title: JobURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bb06148438b0fd6715370c56ff9efe54d512219
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: f3c80611a4e7dbd10f4841fae098578f0a8fdc96
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105810637"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993883"
 ---
 # <a name="joburi"></a>JobURI
 
@@ -25,7 +25,7 @@ Especifica um URI (Uniform Resource Identifier) para o documento.
 
 
 
-| Nome                       |                     |
+| Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propriedade<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>      |

@@ -4,12 +4,12 @@ ms.assetid: f901a88f-7e01-4e7f-a0f2-59f2a01b03cd
 title: elemento hospedado
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4d46549898f0a95de362467c759c3d95eb806a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3d281b5e058f8716c12c655ebcdb9a17bdfa4fb
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771480"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994883"
 ---
 # <a name="hosted-element"></a>elemento hospedado
 
@@ -73,7 +73,7 @@ Se um elemento [**PnPXDeviceCategory**](pnpxdevicecategory.md) estiver presente,
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Não            |

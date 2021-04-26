@@ -4,12 +4,12 @@ ms.assetid: ab26850e-554a-4a1b-9250-edb0b4e17fe2
 title: PageDeviceColorSpaceProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4536251150851ad02abf41ca26ffaa36699281db
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 20a1b4cf607ddf880311659e562647ba583a2951
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105786195"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995673"
 ---
 # <a name="pagedevicecolorspaceprofileuri"></a>PageDeviceColorSpaceProfileURI
 
@@ -24,7 +24,7 @@ Especifica um URI relativo para a raiz do pacote para um perfil ICC contido em u
 
 
 
-| Nome                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Prefixo de escopo <br/> | ?<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |

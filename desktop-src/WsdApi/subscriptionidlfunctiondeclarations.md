@@ -4,12 +4,12 @@ ms.assetid: 240ef2b3-ed72-45bb-b653-441c4e5540b5
 title: elemento subscriptionIdlFunctionDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e1eba60e327778efb1589436a09e62d043d2960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f4d738dd06ccbf034702cbb7d6494a28a229d07
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829631"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995363"
 ---
 # <a name="subscriptionidlfunctiondeclarations-element"></a>elemento subscriptionIdlFunctionDeclarations
 
@@ -30,7 +30,7 @@ Gera declarações IDL para funções de proxy de assinatura/cancelamento de ass
 
 | Atributo                 | Type               | Obrigatório      | Descrição                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **ampliá**<br/> | booleano<br/> | No<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
+| **ampliá**<br/> | booleano<br/> | Não<br/> | A capacidade de adicionar pontos de extensibilidade a funções e interfaces. Esse valor é sempre definido como true.<br/> <br/> |
 
 
 
@@ -70,7 +70,7 @@ Gera declarações IDL para funções de proxy de assinatura/cancelamento de ass
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

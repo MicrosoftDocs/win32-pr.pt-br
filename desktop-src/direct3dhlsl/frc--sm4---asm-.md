@@ -4,12 +4,12 @@ description: Componente-Wise, extraia o componente fracionário.
 ms.assetid: 17C88BCE-7F2F-446C-9BB4-860098B5E42A
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4abcfd56e7d6051e9c476097b3e5eef4d97563e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0f59b747f38fb970b92b5e48610873efe781d63d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967120"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993913"
 ---
 # <a name="frc-sm4---asm"></a>FRC (sm4-ASM)
 
@@ -41,9 +41,8 @@ A tabela a seguir mostra os resultados obtidos ao executar a instrução com vá
 
 
 
-|          |          |            |             |        |        |             |            |          |         |
-|----------|----------|------------|-------------|--------|--------|-------------|------------|----------|---------|
 | **src**  | **-INF** | **-F**     | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F**     | **+ INF** | **NaN** |
+|----------|----------|------------|-------------|--------|--------|-------------|------------|----------|---------|
 | **dest** | NaN      | \[+ 0 a 1) | +0          | +0     | +0     | +0          | \[+ 0 a 1) | NaN      | NaN     |
 
 
@@ -70,7 +69,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

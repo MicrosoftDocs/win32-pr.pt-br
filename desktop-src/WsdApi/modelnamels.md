@@ -4,12 +4,12 @@ ms.assetid: 67ebbca0-bdb2-4a6e-98d8-3d8d1029884f
 title: elemento modelNameLS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e71be6ee3a2e1104858c0f51a4ff68a5cf8cb89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e47d2f83d1b636efc30e98dff8c46600bcee555d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807322"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995493"
 ---
 # <a name="modelnamels-element"></a>elemento modelNameLS
 
@@ -29,8 +29,8 @@ Especifica uma versão localizada do nome do dispositivo.
 
 | Atributo               | Type                                   | Obrigatório       | Descrição                                                      |
 |-------------------------|----------------------------------------|----------------|------------------------------------------------------------------|
-| **Dados**<br/>     | Cadeia de caracteres de nome de modelo localizado<br/> | Yes<br/> | O nome do modelo localizado.<br/> <br/>                 |
-| **Idioma**<br/> | Cadeia de caracteres do identificador de idioma<br/>  | Yes<br/> | O idioma do nome do modelo localizado.<br/> <br/> |
+| **Dados**<br/>     | Cadeia de caracteres de nome de modelo localizado<br/> | Sim<br/> | O nome do modelo localizado.<br/> <br/>                 |
+| **Linguagem**<br/> | Cadeia de caracteres do identificador de idioma<br/>  | Sim<br/> | O idioma do nome do modelo localizado.<br/> <br/> |
 
 
 
@@ -52,7 +52,7 @@ Não há elementos filho.
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

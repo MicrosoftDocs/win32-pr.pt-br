@@ -4,12 +4,12 @@ ms.assetid: bf5cc1e2-b08e-45b6-8e07-5c69865b695b
 title: elemento macro
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8759d4afb61883b8bf41472f276882643cfa552
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f794566b0fd789c463d404289644976c8301a2e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169798"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994323"
 ---
 # <a name="macro-element"></a>elemento macro
 
@@ -28,7 +28,7 @@ Define o texto ou CDATA a ser reutilizado pelo elemento [**include**](include.md
 
 | Atributo           | Type                         | Obrigatório       | Descrição                                   |
 |---------------------|------------------------------|----------------|-----------------------------------------------|
-| **name**<br/> | Cadeia de caracteres \_<br/> | Yes<br/> | O nome da macro.<br/> <br/> |
+| **name**<br/> | Cadeia de caracteres \_<br/> | Sim<br/> | O nome da macro.<br/> <br/> |
 
 
 
@@ -60,7 +60,7 @@ O XML a seguir mostra como incluir a macro **DoNotModify** . Esse XML pode ser a
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

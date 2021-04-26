@@ -4,12 +4,12 @@ ms.assetid: c15f77a2-060b-4bc3-8759-d921ea57e5b5
 title: elemento relationshipMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f74e4cff6712fb087c4783239d263d38516ed64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3549be26d0443b7aeba776346b7cddb2d6bdeed3
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165302"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993653"
 ---
 # <a name="relationshipmetadatadefinition-element"></a>elemento relationshipMetadataDefinition
 
@@ -47,7 +47,7 @@ Esse elemento é geralmente usado em arquivos de origem C para fornecer os metad
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |
