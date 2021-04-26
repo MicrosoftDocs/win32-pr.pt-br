@@ -4,12 +4,12 @@ ms.assetid: 86e3f44d-192e-412a-abb1-118e8592d90b
 title: PageBlendColorSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adf68660929839fad79be26daebf32b9bc0f7ea5
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: e12002b25265a66a0aa3a5168f29e1e8e542ce31
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105782439"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998073"
 ---
 # <a name="pageblendcolorspace"></a>PageBlendColorSpace
 
@@ -25,7 +25,7 @@ Descreve o espaço de cores que deve ser usado para operações de mesclagem.
 
 
 
-| Nome                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefixo de escopo <br/> | Trabalho<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |

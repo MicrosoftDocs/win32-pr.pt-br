@@ -4,12 +4,12 @@ ms.assetid: 857caf51-ccf6-415c-aab3-1fed50fa7b34
 title: PageMediaSizePSHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cb576ce7d623f4d036db1332b0339e6cef518d3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 96c6ddd593d95ae740a5e03d37e3d79c73e1638b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105815443"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993693"
 ---
 # <a name="pagemediasizepsheight"></a>PageMediaSizePSHeight
 
@@ -24,7 +24,7 @@ Especifica a altura da página, paralela à direção da orientação do feed (r
 
 
 
-| Nome                       |                                                             |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
 | Prefixo de escopo <br/> | ?<br/>                                             |

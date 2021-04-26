@@ -4,12 +4,12 @@ ms.assetid: f9a00828-52df-449e-914b-4c6cd7c29f3a
 title: PagePhotoPrintingIntent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3985d6f21d0d7731d1c08d080d64a4948b58196d
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 01d56a0b46c73bb3afdcefe96dc2131c861d5419
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104506377"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997973"
 ---
 # <a name="pagephotoprintingintent"></a>PagePhotoPrintingIntent
 
@@ -27,7 +27,7 @@ Indica uma intenção de alto nível para o driver para população de configura
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |

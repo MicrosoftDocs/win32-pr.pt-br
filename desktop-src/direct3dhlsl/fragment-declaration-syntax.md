@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 98e609820e67cc3ede6c3e280f63513850fed364
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9c9090caec35bfc5e46d7024bf6de44d865d4ad6
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007740"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998303"
 ---
 # <a name="fragment-declaration-syntax-direct3d-9-hlsl"></a>Sintaxe de declaração de fragmento (Direct3D 9 HLSL)
 
 Cada função de HLSL (linguagem de sombreamento de alto nível) da Microsoft pode ser convertida em um fragmento de sombreador com a adição de uma declaração de fragmento.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -43,7 +43,7 @@ em que:
 
 
 
- 
+ 
 
 Os parâmetros de fragmento compartilhados são marcados pela adição de um prefixo ' r \_ ' à sua semântica.
 
@@ -70,7 +70,7 @@ Neste exemplo, a semântica do r \_ PosWorld e do NormalWorld do r \_ identifica
 > [!Note]  
 > O fragmento linker foi uma tecnologia Microsoft Direct3D 9 no D3DX 9. O vinculador de fragmento era uma ferramenta (Flink.exe), uma API do D3DX 9 e um aprimoramento de HLSL. O fragmento linker foi descartado a partir da versão do SDK do DirectX de agosto de 2009. O vinculador de fragmento nunca se aplica ao Microsoft Direct3D 10, Microsoft Direct3D 10,1 ou Microsoft Direct3D 11.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -79,6 +79,6 @@ Neste exemplo, a semântica do r \_ PosWorld e do NormalWorld do r \_ identifica
 [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

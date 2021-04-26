@@ -4,12 +4,12 @@ ms.assetid: e82394d1-f765-4679-b1de-ea17825d6478
 title: PageScalingOffsetWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a9cd5532bf4d109b94c579ef2ad21d242aca9a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9b82c2b0c0f2c86a792706ec7e00819ccda1038c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105813589"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997953"
 ---
 # <a name="pagescalingoffsetwidth"></a>PageScalingOffsetWidth
 
@@ -24,7 +24,7 @@ Especifica o deslocamento de escala na direção do ImageableSizeWidth para o di
 
 
 
-| Nome                       |                                                         |
+| Nome | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefixo de escopo <br/> | ?<br/>                                         |

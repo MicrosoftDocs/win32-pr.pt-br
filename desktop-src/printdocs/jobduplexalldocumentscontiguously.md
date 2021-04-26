@@ -4,12 +4,12 @@ ms.assetid: dd24166c-d5e2-420e-8a8c-e1a25728ab2f
 title: JobDuplexAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c14e9c536d0ab24fafe308a8b11fa769842aab
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 6e5ae88213af15b53f71e406b4caf791b80f286f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105790561"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998213"
 ---
 # <a name="jobduplexalldocumentscontiguously"></a>JobDuplexAllDocumentsContiguously
 
@@ -25,7 +25,7 @@ Descreve as características de duplex da saída. O recurso duplex permite a imp
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |

@@ -4,12 +4,12 @@ ms.assetid: 751d7b92-b187-40e5-882c-6fdb80e1ff5f
 title: D3DDTCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49131fed9961782a6ade3d3ec5f541bb0fe63a50
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 094ca568554722f4da2606233f4ad2c1e59e892f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763514"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999443"
 ---
 # <a name="d3ddtcaps"></a>D3DDTCAPS
 
@@ -17,9 +17,8 @@ Constantes que descrevem os tipos de dados de vértice com suporte de um disposi
 
 
 
-|                       |             |                                                                                                                               |
-|-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
 | \#definir              | Valor       | Descrição                                                                                                                   |
+|-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
 | D3DDTCAPS \_ UBYTE4     | 0x00000001L | byte de 4D não assinado.                                                                                                             |
 | D3DDTCAPS \_ UBYTE4N    | 0x00000002L | Byte normalizado, 4D não assinado. Cada um dos quatro bytes é normalizado dividindo para 255,0.                                      |
 | D3DDTCAPS \_ SHORT2N    | 0x00000004L | Normalizado, 2D assinado por curto, expandido para (primeiro byte/32767.0, segundo byte/32767.0, 0, 1).                                     |

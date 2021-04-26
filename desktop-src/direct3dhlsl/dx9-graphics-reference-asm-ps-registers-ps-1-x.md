@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4525b6d3be2e9287f53edc1da0cd2fb188184a69
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 291f78b8bf74a20dfecf4a74ed65173a895bcc1b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454141"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998633"
 ---
 # <a name="ps_1_1__ps_1_2__ps_1_3__ps_1_4-registers"></a>PS \_ 1 \_ 1 \_ \_ PS \_ 1 \_ 2 PS 1 \_ \_ \_ \_ 3 \_ \_ PS \_ 1 \_ 4 registros
 
@@ -35,7 +35,7 @@ Registra os dados de retenção para uso pelo sombreador de pixel. Os registros 
 
 |      |                    | Versões |      |      |              |
 |------|--------------------|----------|------|------|--------------|
-| Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
+| Nome | Type               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
 | c\#  | Registro constante  | 8        | 8    | 8    | 8            |
 | d\#  | Registro temporário | 2        | 2    | 2    | 6            |
 | t\#  | Registro de textura   | 4        | 4    | 4    | 6            |
@@ -43,7 +43,7 @@ Registra os dados de retenção para uso pelo sombreador de pixel. Os registros 
 
 
 
- 
+ 
 
 -   Os registros constantes contêm dados constantes. Os dados podem ser carregados em um registro constante usando [**SetPixelShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf) ou podem ser definidos usando [def-PS](def---ps.md). Os registros constantes não podem ser usados por instruções de endereço de textura. A única exceção é a instrução [texm3x3spec-PS](texm3x3spec---ps.md) , que usa um registro constante para fornecer um vetor de raio de olho.
 -   Os registros temporários são usados para armazenar resultados intermediários. R0 adicionalmente serve como a saída do sombreador de pixel. O valor em R0 no final do sombreador é a cor de pixel do sombreador.
@@ -76,7 +76,7 @@ O limite da porta de leitura especifica o número de registros diferentes de cad
 
 |      |                    | Versões |      |      |              |
 |------|--------------------|----------|------|------|--------------|
-| Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
+| Nome | Type               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
 | c\#  | Registro constante  | 2        | 2    | 2    | 2            |
 | d\#  | Registro temporário | 2        | 2    | 2    | 3            |
 | t\#  | Registro de textura   | 2        | 3    | 3    | 1            |
@@ -84,7 +84,7 @@ O limite da porta de leitura especifica o número de registros diferentes de cad
 
 
 
- 
+ 
 
 Por exemplo, a cor registrada para quase todas as versões tem um limite de porta de leitura de dois. Isso significa que uma única instrução pode usar um máximo de dois registros de cores diferentes (V0 e V1, por exemplo) como registros de origem. Este exemplo mostra dois registros de cor que estão sendo usados na mesma instrução:
 
@@ -103,7 +103,7 @@ Os tipos de registro são identificados de acordo com a capacidade somente leitu
 
 |      |                    | Versões |      |      |                    |
 |------|--------------------|----------|------|------|--------------------|
-| Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4               |
+| Nome | Type               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4               |
 | c\#  | Registro constante  | RO       | RO   | RO   | RO                 |
 | d\#  | Registro temporário | RW       | RW   | RW   | RW                 |
 | t\#  | Registro de textura   | RW       | RW   | RW   | Consulte a observação a seguir |
@@ -111,7 +111,7 @@ Os tipos de registro são identificados de acordo com a capacidade somente leitu
 
 
 
- 
+ 
 
 Os registros que têm capacidade de RW podem ser usados para armazenar resultados intermediários. Isso inclui os registros temporários e os registros de textura para algumas das versões do sombreador.
 
@@ -119,7 +119,7 @@ Os registros que têm capacidade de RW podem ser usados para armazenar resultado
 >
 > -   Para o sombreador de pixel versão 1 \_ 4, os registros de textura são ro para instruções de endereçamento de textura e os registros de textura não podem ser lidos nem gravados por instruções aritméticas. Além disso, como os registros de textura se tornaram registros de coordenadas de textura, ter acesso à RO não é uma regressão da funcionalidade anterior.
 
- 
+ 
 
 ## <a name="range"></a>Intervalo
 
@@ -127,7 +127,7 @@ O intervalo é o valor de dados de registro máximo e mínimo. Os intervalos var
 
 
 
-| Nome | Tipo               | Intervalo                                               | Versões     |
+| Nome | Type               | Intervalo                                               | Versões     |
 |------|--------------------|-----------------------------------------------------|--------------|
 | c\#  | Registro constante  | -1 a + 1                                            | Todas as versões |
 | d\#  | Registro temporário | \- PixelShader1xMaxValue a + PixelShader1xMaxValue | Todas as versões |
@@ -136,7 +136,7 @@ O intervalo é o valor de dados de registro máximo e mínimo. Os intervalos var
 
 
 
- 
+ 
 
 O hardware do sombreador de pixel inicial representa dados em registros usando um número de ponto fixo. Isso limita a precisão a um máximo de aproximadamente oito bits para a parte fracionária de um número. Tenha isso em mente ao criar um sombreador.
 
@@ -151,6 +151,6 @@ Consulte [**D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) para
 [Register](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

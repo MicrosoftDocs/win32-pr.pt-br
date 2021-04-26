@@ -4,12 +4,12 @@ ms.assetid: ad30df59-0051-4471-8c0e-3207bcc7bfbe
 title: JobErrorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef9d613bf3b3af980b5cb8e916eac115cd1a0cb
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: ca6724e72a9351efc1d3cc5912b9806fb8d65a85
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103837714"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998143"
 ---
 # <a name="joberrorsheet"></a>JobErrorSheet
 
@@ -25,7 +25,7 @@ Descreve a saída da planilha de erro. Todo o trabalho terá uma única folha de
 
 
 
-| Nome                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefixo de escopo <br/> | Trabalho<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |

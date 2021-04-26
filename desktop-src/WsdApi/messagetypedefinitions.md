@@ -4,12 +4,12 @@ ms.assetid: 0b322acb-3326-42a2-a852-07251585b314
 title: elemento messageTypeDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3f86043cc28b527778c91772ad731d3a271921f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54f1b6563254a93122960b4a990fe0bd18ab1453
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165304"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998703"
 ---
 # <a name="messagetypedefinitions-element"></a>elemento messageTypeDefinitions
 
@@ -65,7 +65,7 @@ Esse elemento é geralmente usado em arquivos de origem C para fornecer as tabel
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

@@ -4,12 +4,12 @@ description: Recíproco de componente.
 ms.assetid: 499A14D6-36DB-4860-94D1-887D931E60D4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abbaa2ffc29a4c3373009d9dec1b895710186e67
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: aa37499a981bae86333b071c2e96a37ccb8ac1a6
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104498952"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998243"
 ---
 # <a name="rcp-sm5---asm"></a>RCP (SM5-ASM)
 
@@ -45,9 +45,8 @@ A tabela a seguir mostra os resultados obtidos ao executar a instrução com vá
 
 
 
-|        |          |        |             |        |        |             |        |          |         |
-|--------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
 | *src*  | **-INF** | **-F** | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F** | **+ INF** | **NaN** |
+|--------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
 | *dest* | -0       | -F     | -inf        | -inf   | +inf   | +inf        | + F     | +0       | NaN     |
 
 
@@ -58,7 +57,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -72,7 +71,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |

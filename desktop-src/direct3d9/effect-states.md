@@ -4,12 +4,12 @@ ms.assetid: b62a6ccc-a1ea-455c-9659-544d4bcaf6a2
 title: Estados de efeito (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e208c0c7c14564a9967562ff2fd04a400cb7901
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 1fe92661fda82bd7dfa47ead0061ef8606e422a2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314759"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998863"
 ---
 # <a name="effect-states-direct3d-9"></a>Estados de efeito (Direct3D 9)
 
@@ -53,9 +53,8 @@ Para habilitar o melhor desempenho para a aplicação de um efeito, todos os com
 
 
 
-|                        |        |                                                                                                                     |
-|------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
 | Estado claro            | Type   | Valores                                                                                                              |
+|------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
 | LightAmbient \[ n\]      | float4 | Consulte o membro de ambiente de [**D3DLIGHT9**](d3dlight9.md).                                                           |
 | LightAttenuation0 \[ n\] | FLOAT  | Consulte o membro Attenuation0 de [**D3DLIGHT9**](d3dlight9.md).                                                      |
 | LightAttenuation1 \[ n\] | FLOAT  | Consulte o membro Attenuation1 de [**D3DLIGHT9**](d3dlight9.md).                                                      |
@@ -95,9 +94,8 @@ Declara que você não deve declarar está definido como um valor padrão porque
 
 
 
-|                  |        |                                                |
-|------------------|--------|------------------------------------------------|
 | Estado do material   | Type   | Valores                                         |
+|------------------|--------|------------------------------------------------|
 | MaterialAmbient  | float4 | Mesmo valor que o [ **ambiente**](d3dmaterial9.md)  |
 | MaterialDiffuse  | float4 | Mesmo valor que [ **difusa**](d3dmaterial9.md)  |
 | MaterialEmissive | float4 | Mesmo valor que [ **emissiva**](d3dmaterial9.md) |
@@ -319,9 +317,8 @@ Os Estados de renderização do arquivo de efeito têm nomes semelhantes aos Est
 
 
 
-|                          |        |                                                                                                                                               |
-|--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Estado de renderização             | Type   | Valores                                                                                                                                        |
+|--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Ambiente                  | float4 | Mesmos valores que D3DRS \_ ambiente.                                                                                                                |
 | AmbientMaterialSource    | DWORD  | Mesmos valores que [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) sem o \_ prefixo D3DMCS. Consulte D3DRS \_ AMBIENTMATERIALSOURCE.  |
 | Recortando                 | bool   | Verdadeiro ou falso. Mesmos valores que o \_ recorte de D3DRS.                                                                                                |
@@ -381,9 +378,8 @@ Um estado de amostra representa um objeto de amostra.
 
 
 
-|         |         |                                     |
-|---------|---------|-------------------------------------|
 | Estado   | Type    | Valores                              |
+|---------|---------|-------------------------------------|
 | Exemplo | cores | **NULL** ou um bloco de estado de amostra. |
 
 
@@ -396,9 +392,8 @@ Os Estados de estágio de amostra são usados para amostras de texturas. O estad
 
 
 
-|                     |                              |                                                                                                                                   |
-|---------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Estado do classificador       | Type                         | Valores                                                                                                                            |
+|---------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Endereço de \[ 16\]      | DWORD                        | Mesmos valores que [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md) sem o \_ prefixo D3DTADDRESS. Consulte D3DSAMP \_ AddressU.      |
 | AddressV \[ 16\]      | DWORD                        | Mesmos valores que [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md) sem o \_ prefixo D3DTADDRESS. Consulte D3DSAMP \_ ADDRESSV.      |
 | AddressW \[ 16\]      | DWORD                        | Mesmos valores que [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md) sem o \_ prefixo D3DTADDRESS. Consulte D3DSAMP \_ ADDRESSW.      |
@@ -434,9 +429,8 @@ Há apenas dois Estados de sombreador de efeito: um associado a um objeto de som
 
 
 
-|              |              |                                                                             |
-|--------------|--------------|-----------------------------------------------------------------------------|
 | Estado do sombreador | Type         | Valores                                                                      |
+|--------------|--------------|-----------------------------------------------------------------------------|
 | PixelShader  | PixelShader  | **NULL**, um bloco de assembly, um destino de compilação ou um parâmetro de sombreador de pixel. |
 | VertexShader | vertexshader | **NULL**, um bloco de assembly, um destino de compilação ou um parâmetro de sombreador de pixel. |
 
@@ -462,9 +456,8 @@ Os Estados de constante do sombreador são usados para acessar parâmetros de co
 
 
 
-|                       |                 |                                              |
-|-----------------------|-----------------|----------------------------------------------|
 | Estado de constante do sombreador | Type            | Valores                                       |
+|-----------------------|-----------------|----------------------------------------------|
 | PixelShaderConstant   | float \[ m \[ n\]\] | matriz m x n de floats; m e n são opcionais. |
 | PixelShaderConstant1  | float4          | Um 4D flutuante.                                |
 | PixelShaderConstant2  | float4x2        | Dois 4D flutuantes.                               |
@@ -492,9 +485,8 @@ Os Estados de textura inicializam texturas usadas pelo misturador multitextura.
 
 
 
-|               |         |                                   |
-|---------------|---------|-----------------------------------|
 | Estado de textura | Type    | Valores                            |
+|---------------|---------|-----------------------------------|
 | Textura \[ 8\]  | textura | **NULL** ou um parâmetro de textura. |
 
 
@@ -507,9 +499,8 @@ Estados de estágio de textura configuram texturas e os estágios de textura no 
 
 
 
-|                            |       |                                                                                                                                                           |
-|----------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Estado do estágio de textura        | Type  | Valores                                                                                                                                                    |
+|----------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AlphaOp \[ 8\]               | DWORD | O mesmo que [**D3DTEXTUREOP**](./d3dtextureop.md) sem o \_ prefixo D3DTOP. Consulte D3DTSS \_ ALPHAOP.                                                      |
 | AlphaArg0 \[ 8\]             | DWORD | O mesmo que [D3DTA](d3dta.md) sem o \_ prefixo D3DTA. Consulte D3DTSS \_ ALPHAARG0.                                                                             |
 | AlphaArg1 \[ 8\]             | DWORD | O mesmo que [D3DTA](d3dta.md) sem o \_ prefixo D3DTA. Consulte D3DTSS \_ ALPHAARG1.                                                                             |
@@ -538,9 +529,8 @@ Defina Estados de transformação para inicializar matrizes de transformação. 
 
 
 
-|                       |          |                                                                                                                                 |
-|-----------------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
 | Estado de transformação       | Type     | Valores                                                                                                                          |
+|-----------------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
 | ProjectionTransform   | float4x4 | Uma matriz 4x4 de floats. Mesmos valores que D3DTS \_ projeção sem o \_ prefixo D3DTS.                                            |
 | TextureTransform \[ 8\] | float4x4 | Uma matriz 4x4 de floats. Mesmos valores que [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) sem o \_ prefixo D3DTS. |
 | ViewTransform         | float4x4 | Uma matriz 4x4 de floats. Mesmos valores que D3DTS \_ exibição sem o \_ prefixo D3DTS.                                                  |

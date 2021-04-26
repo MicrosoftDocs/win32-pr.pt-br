@@ -4,12 +4,12 @@ ms.assetid: 3e314f73-2653-481a-ac7d-1ce7db0591e2
 title: Outras constantes do Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 990dc0a2ef06850fb9fc0839fd7a0be361832d65
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eb289cb080519fab661d7a43f59bca3d8a9db3a0
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105793880"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998603"
 ---
 # <a name="other-direct3d-constants"></a>Outras constantes do Direct3D
 
@@ -35,9 +35,8 @@ A tabela a seguir lista as constantes que são usadas internamente:
 
 
 
-|                                       |                                                   |                                                                    |
-|---------------------------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | \#definir                              | Valor                                             | Descrição                                                        |
+|---------------------------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | \_ \_ RENDERTARGETS simultâneo máximo do D3D \_ | 4                                                 | O número máximo de rendertargets.                               |
 | D3DDMAPSAMPLER                        | 256                                               | O número máximo de amostras de mapa de deslocamento.                    |
 | D3DDP \_ MAXTEXCOORD                    | 8                                                 | O número máximo de coordenadas de textura.                         |

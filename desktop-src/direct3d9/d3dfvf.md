@@ -4,12 +4,12 @@ ms.assetid: 85d9f5b2-8e4a-4f92-a587-eae5b293778c
 title: D3DFVF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d4bfc1dcabdb6991b49af967bb596fd4c1e3bdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 25a12b4f6008023a388bd204440a0b544db85c19
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796407"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999433"
 ---
 # <a name="d3dfvf"></a>D3DFVF
 
@@ -21,9 +21,8 @@ Os sinalizadores a seguir descrevem um formato de vértice. Para obter informaç
 
 
 
-|                                     |                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                           |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | \#definir                            | Descrição                                                                                                                                                                                                                                                                                                                                                             | Tipo e ordem de dados                                                                                       |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | D3DFVF \_ difuso                     | O formato de vértice inclui um componente de cor difusa.                                                                                                                                                                                                                                                                                                                       | DWORD na ordem ARGB. Consulte [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
 | D3DFVF \_ normal                      | O formato de vértice inclui um vetor normal de vértice. Esse sinalizador não pode ser usado com o \_ sinalizador D3DFVF XYZRHW.                                                                                                                                                                                                                                                                   | float, float, float                                                                                       |
 | D3DFVF \_ PSIZE                       | Formato de vértice especificado em tamanho de ponto. Esse tamanho é expresso em unidades de espaço da câmera para vértices que não são transformados e iluminados e em unidades de espaço do dispositivo para vértices transformados e acesos.                                                                                                                                                                          | FLOAT                                                                                                     |
@@ -43,9 +42,8 @@ Os sinalizadores a seguir descrevem os sinalizadores de textura usados pelo pipe
 
 
 
-|                                   |                                                                                                                                                                                                                                                                                    |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                          | Descrição                                                                                                                                                                                                                                                                        |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DFVF \_ TEX0-D3DFVF \_ TEX8       | Número de conjuntos de coordenadas de textura para este vértice. Os valores reais para esses sinalizadores não são sequenciais.                                                                                                                                                                           |
 | D3DFVF \_ TEXCOORDSIZEN (coordIndex) | Defina um conjunto de dados de coordenadas de textura. n indica a dimensão das coordenadas de textura. coordIndex indica o número de índice da coordenada de textura. Consulte [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) e [coordenadas de textura e estágios de textura](texture-coordinates.md). |
 
@@ -59,9 +57,8 @@ Os sinalizadores a seguir descrevem os sinalizadores de máscara usados pelo pip
 
 
 
-|                                      |                                                       |
-|--------------------------------------|-------------------------------------------------------|
 | \#definir                             | Descrição                                           |
+|--------------------------------------|-------------------------------------------------------|
 | \_Máscara de posição de D3DFVF \_               | Máscara para bits de posição.                               |
 | D3DFVF \_ RESERVED0, D3DFVF \_ RESERVED2 | Mascarar valores para bits reservados no FVF. Não use. |
 | \_Máscara de TEXCOUNT D3DFVF \_               | Valor de máscara para bits de sinalizador de textura.                     |

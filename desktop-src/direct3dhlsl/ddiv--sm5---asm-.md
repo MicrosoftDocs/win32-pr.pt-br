@@ -4,12 +4,12 @@ description: Computa uma divisão de precisão dupla de um componente.
 ms.assetid: 0A67FC35-7F2F-4258-83CE-1CA398E57952
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56f5c3aae9d416d24f41de8d8308c5a69be9d016
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 81fc039b222b28a5fb1217d23c78470aff1739f7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988567"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999153"
 ---
 # <a name="ddiv-sm5---asm"></a>DDIV (SM5-ASM)
 
@@ -52,9 +52,8 @@ Nesta tabela, F significa um número real finito.
 
 
 
-|                     |          |        |          |        |        |          |        |          |         |
-|---------------------|----------|--------|----------|--------|--------|----------|--------|----------|---------|
 | **src0 src1->** | **-INF** | **-F** | **-1,0** | **-0** | **+0** | **+ 1,0** | **+ F** | **+ INF** | **NaN** |
+|---------------------|----------|--------|----------|--------|--------|----------|--------|----------|---------|
 | **-INF**            | NaN      | +inf   | +inf     | +inf   | -inf   | -inf     | -inf   | NaN      | NaN     |
 | **-F**              | +0       | + F     | -src0    | +inf   | -inf   | src0     | -F     | -0       | NaN     |
 | **-0**              | +0       | +0     | +0       | NaN    | NaN    | -0       | -0     | -0       | NaN     |
@@ -71,7 +70,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -85,7 +84,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |

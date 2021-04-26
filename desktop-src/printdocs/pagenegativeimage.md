@@ -4,12 +4,12 @@ ms.assetid: 4f6ff85c-8cad-4b9b-8a1d-ce41ed7dfbed
 title: PageNegativeImage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ec60b0250469bc7035a4add19e0de382e3121bd
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: d8882c1a5aa026d06b43055a6a74a58c266ea009
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104298053"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994484"
 ---
 # <a name="pagenegativeimage"></a>PageNegativeImage
 
@@ -25,7 +25,7 @@ Descreve a configuração negativa da saída.
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |

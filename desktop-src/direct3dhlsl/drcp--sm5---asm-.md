@@ -4,12 +4,12 @@ description: Computa um recíproco de precisão dupla por componente.
 ms.assetid: 499A14D6-36DB-4860-94D1-887D931E60D4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b678f4e8b3464817215de9132298fdde1f6feec
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 770159f5007b08f5482ba8b58634b44e7f3e6ef0
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293577"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998333"
 ---
 # <a name="drcp-sm5---asm"></a>drcp (SM5-ASM)
 
@@ -51,9 +51,8 @@ Nesta tabela, F significa um número real finito.
 
 
 
-|               |          |        |        |        |        |          |         |
-|---------------|----------|--------|--------|--------|--------|----------|---------|
 | **orig**->  | **-INF** | **-F** | **-0** | **+0** | **+ F** | **+ INF** | **NaN** |
+|---------------|----------|--------|--------|--------|--------|----------|---------|
 | **dest**-> | -0       | -F     | -inf   | +inf   | + F     | +0       | NaN     |
 
 
@@ -64,7 +63,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -78,7 +77,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |

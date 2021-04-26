@@ -4,12 +4,12 @@ ms.assetid: 6d0b2450-7d90-4a24-b710-faed26969876
 title: Anotação da interface do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e873c83a01c5c2214cb49a93e75167e58a3389
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eef6af352b7dea25df34ce8a5712ad30143d6426
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456864"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998583"
 ---
 # <a name="ui-annotation"></a>Anotação da interface do usuário
 
@@ -37,9 +37,8 @@ ControlType
 
 
 
-|             |                                                                                                                                                                                 |                                                                                                    |                                                                                                              |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | ControlType | Descrição                                                                                                                                                                     | Tipo de dados interno                                                                                 | Anotações de propriedade de controle                                                                                 |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Nenhum        | Nenhum controle deve ser mostrado. Observe que um controle ficará visível se [SasUiVisible](#sasuivisible) for true e o tipo de controle for qualquer tipo diferente de None.                           | N/D                                                                                                | N/D                                                                                                          |
 | Qualquer         | Isso implica que nenhum controle especial é solicitado. O controle apresentado é o resultado do comportamento definido pelo aplicativo.                                                         | N/D                                                                                                | N/D                                                                                                          |
 | ColorPicker | Representa um valor de cor como uma amostra de cor. O valor é empacotado nos componentes XYZ do vetor associado. O componente W do vetor associado sempre é definido como um. | float *n* , em que *n* é de 1 a 4, inclusive.                                                            | [SasUiEnum](#sasuienum)                                                                                      |

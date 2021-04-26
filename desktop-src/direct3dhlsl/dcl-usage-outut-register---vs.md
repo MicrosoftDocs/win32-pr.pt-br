@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c653c5af43bd3392f97e30571ac56ded66cbfc04
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 314c9c9a9a9e62915e9224b3cf165bc54d09a516
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988694"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999163"
 ---
 # <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>\_saída de uso de DCL (SM1, SM2, SM3-vs ASM)
 
@@ -24,7 +24,7 @@ Os registros de saída exigem declarações que incluem semânticas. Por exemplo
 
 Dos doze registros de saída, quaisquer dez (não necessariamente o0 a O9) têm quatro componentes (xyzw), outro deve ser declarado como posição (e também deve incluir todos os quatro componentes) e, opcionalmente, mais um pode ser um tamanho de ponto escalar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 A sintaxe para declarar registros de saída é semelhante às declarações para o registro de entrada:
 
@@ -36,7 +36,7 @@ A sintaxe para declarar registros de saída é semelhante às declarações para
 
 
 
- 
+ 
 
 Em que:
 
@@ -54,7 +54,7 @@ Em que:
 
 
 
- 
+ 
 
 Todas as instruções de [ \_ uso de DCL](dcl-usage-input-register---vs.md) devem aparecer antes da primeira instrução executável.
 
@@ -90,6 +90,6 @@ dcl_psize      o6      // Pointsize cannot have a mask
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

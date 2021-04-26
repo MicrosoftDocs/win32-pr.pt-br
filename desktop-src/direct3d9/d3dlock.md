@@ -4,12 +4,12 @@ ms.assetid: 46a611bd-a1ec-4967-b68d-72661d1b5cad
 title: D3DLOCK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ea3a60318aad8ae0fadcf02d5dea76f6aa62548
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: adaeddbc1aff0812d3e0f67df90c2cf9b1118347
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646457"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999423"
 ---
 # <a name="d3dlock"></a>D3DLOCK
 
@@ -17,9 +17,8 @@ Uma combinação de zero ou mais opções de bloqueio que descrevem o tipo de bl
 
 
 
-|                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                   | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_Descartar D3DLOCK           | O aplicativo descarta toda a memória na região bloqueada. Para os buffers de vértice e de índice, todo o buffer será Descartado. Essa opção só é válida quando o recurso é criado com uso dinâmico (consulte [D3DUSAGE](d3dusage.md)).                                                                                                                                                                                                                                                                                                                                                           |
 | D3DLOCK \_ DONOTWAIT         | Permite que um aplicativo receba ciclos de CPU se o driver não puder bloquear a superfície imediatamente. Se esse sinalizador estiver definido e o driver não puder bloquear a superfície imediatamente, a chamada de bloqueio retornará D3DERR \_ WASSTILLDRAWING. Esse sinalizador só pode ser usado durante o bloqueio de uma superfície criada usando [**CreateOffscreenPlainSurface**](/windows/desktop/api), [**CreateRenderTarget**](/windows/desktop/api)ou [**CreateDepthStencilSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createdepthstencilsurface). Esse sinalizador também pode ser usado com um buffer de fundo.            |
 | D3DLOCK \_ nenhuma \_ \_ atualização suja | Por padrão, um bloqueio em um recurso adiciona uma região suja a esse recurso. Essa opção impede qualquer alteração no estado sujo do recurso. Os aplicativos devem usar essa opção quando tiverem informações adicionais sobre o conjunto de regiões alteradas durante a operação de bloqueio.                                                                                                                                                                                                                                                                                                                    |
@@ -54,7 +53,7 @@ Uma combinação de zero ou mais opções de bloqueio que descrevem o tipo de bl
 [**LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-lockrect)
 </dt> <dt>
 
-[**Bloquear**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock)
+[**Bloqueio**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock)
 </dt> <dt>
 
 [**LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-lockrect)
@@ -63,7 +62,7 @@ Uma combinação de zero ou mais opções de bloqueio que descrevem o tipo de bl
 [**LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-lockrect)
 </dt> <dt>
 
-[**Bloquear**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock)
+[**Bloqueio**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock)
 </dt> <dt>
 
 [**Mínima**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-lockbox)

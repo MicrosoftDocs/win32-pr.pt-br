@@ -4,12 +4,12 @@ ms.assetid: 2d3e548f-8559-4a36-b814-6d598bead1d0
 title: D3DVTXPCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2ffff3d1dcc1f68912847b9ce1677c2031189c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 55ee7e5d423169e561df28b5d69017c77a71e183
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370494"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998653"
 ---
 # <a name="d3dvtxpcaps"></a>D3DVTXPCAPS
 
@@ -17,9 +17,8 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 
 
 
-|                                         |                                                                                                                                                                                                    |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                                | Descrição                                                                                                                                                                                        |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | O dispositivo pode realizar luzes direcionais.                                                                                                                                                                  |
 | D3DVTXPCAPS \_ LOCALVIEWER                | O dispositivo pode fazer o visualizador local.                                                                                                                                                                        |
 | D3DVTXPCAPS \_ MATERIALSOURCE7            | Quando esse limite é definido, o dispositivo dá suporte aos Estados de material de cor: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DiffuseMaterialSource, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |

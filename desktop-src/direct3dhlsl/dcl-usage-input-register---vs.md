@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 38113846fe62c37247bb2d3ca522a34dc9282441
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 44bd976d05c0734ca2e498b5de405564f689e20d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454169"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998383"
 ---
 # <a name="dcl_usage-input-sm1-sm2-sm3---vs-asm"></a>\_entrada de uso de DCL (SM1, SM2, SM3-vs ASM)
 
 Declare a associação entre um uso de elemento de vértice e um índice de uso para um registro de entrada de sombreador de vértice.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
@@ -30,7 +30,7 @@ Declare a associação entre um uso de elemento de vértice e um índice de uso 
 
 
 
- 
+ 
 
 Em que:
 
@@ -48,7 +48,7 @@ Em que:
 
 
 
- 
+ 
 
 Todas as \_ instruções de uso de DCL devem aparecer antes da primeira instrução executável.
 
@@ -59,6 +59,6 @@ Todas as \_ instruções de uso de DCL devem aparecer antes da primeira instruç
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

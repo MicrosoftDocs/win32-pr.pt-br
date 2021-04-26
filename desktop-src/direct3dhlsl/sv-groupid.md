@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a2588474a4c6f2cfc6d616cdb70940277389fd1f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf96e1db7dbb93c88ec741e309413dea3df2b01d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084617"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996993"
 ---
 # <a name="sv_groupid"></a>\_GroupId da VA
 
@@ -26,18 +26,18 @@ ms.locfileid: "104084617"
 
 Define o deslocamento do grupo dentro de uma chamada de [**expedição**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) , por dimensão da chamada de expedição.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |       |
 |-------|
-| Tipo  |
+| Digite  |
 | uint3 |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -51,14 +51,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -70,6 +69,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

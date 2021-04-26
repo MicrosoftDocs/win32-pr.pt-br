@@ -4,12 +4,12 @@ ms.assetid: 584a71cd-fc32-485e-a627-27be95c377a9
 title: JobCopiesAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f8be33f98b540cab56b88df49cfb1e3c067988
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3e8e606095462dc3a2eee1391121bf663de3655c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103663838"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998363"
 ---
 # <a name="jobcopiesalldocuments"></a>JobCopiesAllDocuments
 
@@ -24,7 +24,7 @@ Especifica o número de cópias de um trabalho.
 
 
 
-| Nome                       |                         |
+| Nome | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>          |
