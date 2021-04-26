@@ -4,12 +4,12 @@ ms.assetid: d198197e-d146-4f1b-99df-944822e83357
 title: elemento Operation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bdd8324553e046000f467c103afd6ac0464cbc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c0e4562241f5f437554d0af28dc8bca482512ea
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010810"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994312"
 ---
 # <a name="operation-element"></a>elemento Operation
 
@@ -81,7 +81,7 @@ Isso gera declarações de função IDL para todos os métodos associados às du
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

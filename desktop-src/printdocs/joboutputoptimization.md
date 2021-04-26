@@ -4,12 +4,12 @@ ms.assetid: 40925dfe-494c-49b5-ae57-de369723ba76
 title: JobOutputOptimization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d07bb98ea639753acc1b99b53d3785480a283a5
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: b76364aca1a9b6c8019a709c1cd0b7b1ad03020c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105802125"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997743"
 ---
 # <a name="joboutputoptimization"></a>JobOutputOptimization
 
@@ -25,7 +25,7 @@ Descreve o processamento de trabalho, destinado a otimizar a saída para cenári
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |

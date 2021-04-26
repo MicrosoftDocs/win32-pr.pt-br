@@ -4,12 +4,12 @@ ms.assetid: f0b2192d-4bb7-4ba2-8dd0-35a20183ea31
 title: DocumentSeparatorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8722e5db4f1a3bfebe8895c8a0777a849a88f11e
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: cb6bd0d58c5b361b167d22c672b7e080e4498d3e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104298046"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997053"
 ---
 # <a name="documentseparatorsheet"></a>DocumentSeparatorSheet
 
@@ -25,7 +25,7 @@ Descreve o uso da folha separadora de um documento. As folhas separadoras devem 
 
 
 
-| Nome                       |                     |
+| Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Recurso<br/>  |
 | Prefixo de escopo <br/> | Documento<br/> |

@@ -4,12 +4,12 @@ ms.assetid: ec41d0c8-ea77-44ac-a02b-6a48237b324f
 title: DocumentCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f67ab3f3dc3515a494dad2ab72f1413de88cd00
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 15b558a044716c5c13ae012665193f958f8ce6aa
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104172557"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997893"
 ---
 # <a name="documentcoverfrontsource"></a>DocumentCoverFrontSource
 
@@ -24,7 +24,7 @@ Especifica a origem de uma folha de capa personalizada.
 
 
 
-| Nome                       |                                                 |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                         |
 | Prefixo de escopo <br/> | Documento<br/>                             |

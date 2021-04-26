@@ -4,12 +4,12 @@ ms.assetid: ccc2ad1c-b0c2-4c45-bc95-7c15426c2534
 title: PageScalingScaleHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f3f91f6b188dadbd86a18152be5228b62d21ab4
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 92d718d80f6b3cc369ddcb5c088a1299d639634b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105764123"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997473"
 ---
 # <a name="pagescalingscaleheight"></a>PageScalingScaleHeight
 
@@ -24,7 +24,7 @@ Especifica o fator de dimensionamento na direção do ImageableSizeHeight para o
 
 
 
-| Nome                       |                                                         |
+| Nome | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefixo de escopo <br/> | ?<br/>                                         |

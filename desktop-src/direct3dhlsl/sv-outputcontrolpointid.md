@@ -13,29 +13,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e828d8c9e4060888c914b9e6951a5baa06e33023
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: aa6ac503eb99b24bee8e869676812c473ab42bf5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638708"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996903"
 ---
 # <a name="sv_outputcontrolpointid"></a>\_OUTPUTCONTROLPOINTID VA
 
 Define o índice da ID do ponto de controle que está sendo operado por uma invocação do ponto de entrada principal do sombreador envoltória.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |      |
 |------|
-| Tipo |
+| Digite |
 | uint |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -45,14 +45,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -64,9 +63,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 22e4a6e9-4d18-4fff-873c-27ba59a79222
 title: PageMediaSizeMediaSizeWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1f72e667f3de3bce86beb1c65c5fde4ebc8669
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 50df088fd25a69ee566e1406d3f1b833aa6131f5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104298006"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997563"
 ---
 # <a name="pagemediasizemediasizewidth"></a>PageMediaSizeMediaSizeWidth
 
@@ -24,7 +24,7 @@ Especifica a direção da dimensão MediaSizeWidth para a opção MediaSize pers
 
 
 
-| Nome                       |                                                           |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                   |
 | Prefixo de escopo <br/> | ?<br/>                                           |

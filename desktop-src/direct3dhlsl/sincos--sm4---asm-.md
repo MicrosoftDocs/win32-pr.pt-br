@@ -4,12 +4,12 @@ description: Meio do componente (teta) e cos (teta) para teta em radianos.
 ms.assetid: 81FDEC8F-2C1C-4C60-A6DA-699C798F8316
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2dd8fc3b011758f071cdcd273e34eb8a7f6421f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8c03118ff9a1fc2d958eaa6eb1a550a6dbf672a2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988561"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997013"
 ---
 # <a name="sincos-sm4---asm"></a>Sincos (sm4-ASM)
 
@@ -50,9 +50,8 @@ F significa número real finito.
 
 
 
-|             |          |              |             |        |        |             |              |          |         |
-|-------------|----------|--------------|-------------|--------|--------|-------------|--------------|----------|---------|
 | **src**     | **-INF** | **-F**       | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F**       | **+ INF** | **NaN** |
+|-------------|----------|--------------|-------------|--------|--------|-------------|--------------|----------|---------|
 | **destSIN** | NaN      | \[-1 a + 1\] | -0          | -0     | +0     | +0          | \[-1 a + 1\] | NaN      | NaN     |
 | **destCOS** | NaN      | \[-1 a + 1\] | +1          | +1     | +1     | +1          | \[-1 a + 1\] | NaN      | NaN     |
 
@@ -78,7 +77,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Com suporte |
+| Modelo de Sombreador                                              | Suportado |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

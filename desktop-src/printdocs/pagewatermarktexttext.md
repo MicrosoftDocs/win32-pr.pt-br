@@ -4,12 +4,12 @@ ms.assetid: 3b01f05c-fe2e-4467-b2a7-5431a41200cd
 title: PageWatermarkTextText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef2310efaa91532493f7add14de8c2510e24e9b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: eb19f5965347e79732aa116e5be51f90e4ef6943
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105759096"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996073"
 ---
 # <a name="pagewatermarktexttext"></a>PageWatermarkTextText
 
@@ -24,7 +24,7 @@ Especifica o texto da marca d' água.
 
 
 
-| Nome                       |                                            |
+| Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefixo de escopo <br/> | ?<br/>                            |

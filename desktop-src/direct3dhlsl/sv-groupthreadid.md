@@ -13,29 +13,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3d4d35766bdbdc2d69c98983a85f336ab784d24d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2d36e5639b017dfa94e0f3c9f84d6725f6b6a283
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294437"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996983"
 ---
 # <a name="sv_groupthreadid"></a>\_GROUPTHREADID VA
 
 Índices para os quais um thread individual em um grupo de threads em que um sombreador de computação está sendo executado. A \_ GroupThreadID de VA varia entre o intervalo especificado para o sombreador de computação no atributo [numthreads](sm5-attributes-numthreads.md) . Por exemplo, se numthreads (3, 2, 1) tiver sido especificado, os valores possíveis para o \_ valor de entrada GroupThreadID de VA terão esse intervalo de valores (0-2, 0-1, 0).
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |       |
 |-------|
-| Tipo  |
+| Digite  |
 | uint3 |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -49,14 +49,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -68,6 +67,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

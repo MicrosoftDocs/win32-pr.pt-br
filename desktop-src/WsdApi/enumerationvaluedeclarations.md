@@ -4,12 +4,12 @@ ms.assetid: 2808edf6-662d-41ee-8e76-f0ee13fe720b
 title: elemento enumerationValueDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00dc712baa958551bcf87adc019fda0f87bf85e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96c8571c0fbcfbea8964fb5197deca145ba494d8
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763532"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996703"
 ---
 # <a name="enumerationvaluedeclarations-element"></a>elemento enumerationValueDeclarations
 
@@ -43,7 +43,7 @@ Não há elementos filho.
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

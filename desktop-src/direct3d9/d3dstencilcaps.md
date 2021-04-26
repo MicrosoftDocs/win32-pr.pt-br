@@ -4,12 +4,12 @@ ms.assetid: 187c758c-5e7f-48ee-97cb-b1f30b709723
 title: D3DSTENCILCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2e76c42acfcf8b6515e84679ea2fb540178608
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6716748d77fe4c3620413f43ae4a4ae48076c09f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370376"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997373"
 ---
 # <a name="d3dstencilcaps"></a>D3DSTENCILCAPS
 
@@ -17,9 +17,8 @@ Sinalizadores de recurso de estêncil de driver.
 
 
 
-|                          |             |                                                                                                       |
-|--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
 | \#definir                 | Valor       | Descrição                                                                                           |
+|--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
 | D3DSTENCILCAPS \_ manter     | 0x00000001L | Não atualize a entrada no buffer do estêncil. Esse é o valor padrão.                             |
 | D3DSTENCILCAPS \_ zero     | 0x00000002L | Defina a entrada de buffer de estêncil como 0.                                                                    |
 | D3DSTENCILCAPS \_ substituir  | 0x00000004L | Substitua a entrada de buffer de estêncil pelo valor de referência.                                                |

@@ -90,12 +90,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2d313608b11caf7c0606923fd242ea6ca856f610
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 83b5bd4af52c116e4a5f47bc62d0dda0e5c488d8
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641758"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997153"
 ---
 # <a name="keywords"></a>Palavras-chave
 
@@ -128,7 +128,7 @@ A linguagem de sombreamento de alto nível da Microsoft (HLSL) reconhece as pala
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -181,7 +181,7 @@ O compilador ignora a palavra-chave **Export** para compilação sem biblioteca.
 > [!Note]  
 > A palavra-chave **Export** requer o \_47.dll D3dcompiler ou uma versão posterior da dll.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -190,6 +190,6 @@ O compilador ignora a palavra-chave **Export** para compilação sem biblioteca.
 [Apêndice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

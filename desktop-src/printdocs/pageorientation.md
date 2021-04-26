@@ -4,12 +4,12 @@ ms.assetid: 52f02fc1-56fb-404d-8939-df3a4b21570d
 title: PageOrientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7f004329c217d4aab6ddc3c1d166037e7c7b5a
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 01a94fb97ad1e64c7f55fd9520ed8a648a74f550
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104370842"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997533"
 ---
 # <a name="pageorientation"></a>PageOrientation
 
@@ -38,7 +38,7 @@ Descreve a orientação da folha de mídia física.
 
 
 
-| Nome                       |                                                                                                                                                                                                         |
+| Nome | Valor |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                      |
 | Prefixo de escopo <br/> | ?<br/>                                                                                                                                                                                         |

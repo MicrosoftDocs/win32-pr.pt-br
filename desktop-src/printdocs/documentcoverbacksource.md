@@ -4,12 +4,12 @@ ms.assetid: 43a0c881-75cc-4fbc-a0c3-b3eab9dfe4df
 title: DocumentCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a605bd22424de61eebfaf48b18acf8e57eab523
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 6547ac2dc2c3f91ea4d0ebeea87622c790ae7d4d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105815409"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996273"
 ---
 # <a name="documentcoverbacksource"></a>DocumentCoverBackSource
 
@@ -24,7 +24,7 @@ Especifica a origem de uma folha de rosto de fundo personalizada.
 
 
 
-| Nome                       |                                                |
+| Nome | Valor |
 |----------------------------|------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                        |
 | Prefixo de escopo <br/> | Documento<br/>                            |

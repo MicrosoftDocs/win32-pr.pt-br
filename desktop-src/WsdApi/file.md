@@ -4,12 +4,12 @@ ms.assetid: d2ee6886-995f-453d-8121-f849b2d910ec
 title: elemento de arquivo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bc20f7d6853ccd52b231e19c99d60fe4b71d15b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41970da9cc6e389f4e45c5e55901ce8eb2e7797f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793640"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995863"
 ---
 # <a name="file-element"></a>elemento de arquivo
 
@@ -30,7 +30,7 @@ Direciona o gerador de código para gerar um arquivo e especifica o nome do arqu
 
 | Atributo           | Type                       | Obrigatório       | Descrição                                                                                                                         |
 |---------------------|----------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| **name**<br/> | Cadeia de nome do caminho<br/> | Yes<br/> | O nome de arquivo de saída do conteúdo gerado. A cadeia de caracteres do nome do arquivo deve incluir informações completas do caminho.<br/> <br/> |
+| **name**<br/> | Cadeia de nome do caminho<br/> | Sim<br/> | O nome de arquivo de saída do conteúdo gerado. A cadeia de caracteres do nome do arquivo deve incluir informações completas do caminho.<br/> <br/> |
 
 
 
@@ -140,7 +140,7 @@ O nome do arquivo é determinado pelo valor do atributo Name ou do elemento filh
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Não            |

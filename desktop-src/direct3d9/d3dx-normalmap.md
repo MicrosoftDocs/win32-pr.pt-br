@@ -4,12 +4,12 @@ ms.assetid: edf4c3e4-1af4-43b4-80c7-6fab02575f7b
 title: D3DX_NORMALMAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37985456e81b20af9b3e4396d10045d5e58c9b7c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 90f76b6afe6eb68e8ddbc3ca28085861a518effc
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105765123"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996323"
 ---
 # <a name="d3dx_normalmap"></a>D3DX \_ NormalMap
 
@@ -17,9 +17,8 @@ Constantes de geração de mapas normais.
 
 
 
-|                                     |                                                                                                                                                                                                    |
-|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                            | Descrição                                                                                                                                                                                        |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DX \_ NormalMap \_ Mirror \_ U          | Indica que os pixels da borda da textura no eixo u devem ser espelhados, não encapsulados.                                                                                                   |
 | D3DX \_ NormalMap \_ Mirror \_ V          | Indica que os pixels da borda da textura no eixo v devem ser espelhados, não encapsulados.                                                                                                   |
 | D3DX \_ NormalMap \_ Mirror             | O mesmo que especificar D3DX \_ NormalMap \_ espelho \_ U \| D3DX \_ NormalMap \_ Mirror \_ V.                                                                                                                       |

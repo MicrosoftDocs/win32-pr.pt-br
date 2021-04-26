@@ -4,12 +4,12 @@ ms.assetid: c5e75f57-7426-41fa-88f4-789153fcd0c5
 title: PageBorderless
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd73e2808380bf73a7df7156c10c40cfa339765
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: b20eb3379c76bfef3cd7ce6bb75dcf71479f0449
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105780290"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997683"
 ---
 # <a name="pageborderless"></a>PageBorderless
 
@@ -25,7 +25,7 @@ Descreve quando o conteúdo da imagem deve ser impresso nas bordas físicas da m
 
 
 
-| Nome                       |                    |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 23827dffc396a40be134be4db3996d2e9f498288
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ca305b16db0f390354962a3e959f08b6e956f2ef
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988599"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996863"
 ---
 # <a name="texld---ps_1_4"></a>texld-PS \_ 1 \_ 4
 
@@ -27,22 +27,21 @@ Carrega o registro de destino com dados de cores (RGBA) amostrados usando o cont
 
 
 
- 
+ 
 
 ## <a name="registers"></a>Registros
 
 
 
-| Argumento | Descrição          | Registros |     |     |     | Versão      |
-|----------|----------------------|-----------|-----|-----|-----|--------------|
 |          |                      | vn        | Hong  | TN  | RN  |              |
+|----------|----------------------|-----------|-----|-----|-----|--------------|
 | DST      | Registro de destino |           |     |     | x   | 1\_4         |
 | src      | Registro de origem      |           |     | x   |     | 1 \_ 4 fase 1 |
 |          |                      |           |     | x   | x   | \_fase 1 4   |
 
 
 
- 
+ 
 
 Ao usar r (n) como um registro de origem, os três primeiros componentes (XYZ) devem ter sido inicializados na fase anterior do sombreador.
 
@@ -68,7 +67,7 @@ Regras para usar texld:
 
 
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -149,9 +148,9 @@ texld  r(n), r(n)_dz
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

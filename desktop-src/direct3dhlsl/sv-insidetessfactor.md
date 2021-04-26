@@ -13,31 +13,31 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4a05cabbb9410136d2bd82ee272ad92ff1b1f430
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4d047f7961868de020ac50ffce22b6ce02d078a5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104967065"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996913"
 ---
 # <a name="sv_insidetessfactor"></a>\_INSIDETESSFACTOR VA
 
 Define o valor de mosaico dentro de uma superfície de patch.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |            |                |
 |------------|----------------|
-| Tipo       | Topologia de entrada |
+| Digite       | Topologia de entrada |
 | float \[ 2\] | patch quádruplo     |
 | FLOAT      | Tri patch      |
 | unused     | isoline        |
 
 
 
- 
+ 
 
 Fatores de mosaico devem ser declarados como matriz; Eles não podem ser empacotados em um único vetor.
 
@@ -51,14 +51,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
 |        | x    | x      |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -70,9 +69,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

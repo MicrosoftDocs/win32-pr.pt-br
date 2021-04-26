@@ -13,29 +13,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b326bcd55778ff0e99f03554616fb4e2c72ff849
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a4d7900c843ed0cb3815f1c9b72f0c52a31486db
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916816"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997673"
 ---
 # <a name="sv_gsinstanceid"></a>\_GSINSTANCEID VA
 
 Define a [instância](sm5-attributes-instance.md) do sombreador de geometria.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |      |
 |------|
-| Tipo |
+| Digite |
 | uint |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -45,14 +45,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-|        |      |        |          |       |         |
+| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
 |        |      |        | x        |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -64,9 +63,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

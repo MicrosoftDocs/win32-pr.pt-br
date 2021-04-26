@@ -4,12 +4,12 @@ ms.assetid: 8a2fd7b2-e37b-465a-ba83-a68877a2e0c3
 title: elemento eventStubFunction
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fe353f43d02eec68f29f3075cc445c1314c9762
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80777a53d37e7651559a09b8e8445d4314aaca63
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813542"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995883"
 ---
 # <a name="eventstubfunction-element"></a>elemento eventStubFunction
 
@@ -49,7 +49,7 @@ Os valores válidos para esse elemento são 1 (referências de função TRUE/stu
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

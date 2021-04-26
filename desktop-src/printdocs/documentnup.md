@@ -4,12 +4,12 @@ ms.assetid: 941515a8-ba3f-47b9-9f3f-08a48122661a
 title: DocumentNUp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08fdf22fa557ce1da4fde20ad1d8ea14625a1b77
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: ab531a2095e83aa35f3dff450270c2a5b4520d62
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104172595"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996282"
 ---
 # <a name="documentnup"></a>DocumentNUp
 
@@ -29,7 +29,7 @@ O diagrama a seguir ilustra um exemplo com o documento 1 contendo 3 páginas e o
 
 
 
-| Nome                       |                                                                                                                                                 |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                              |
 | Prefixo de escopo <br/> | Documento<br/>                                                                                                                             |

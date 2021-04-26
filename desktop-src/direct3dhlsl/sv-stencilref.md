@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953cc90e8958bd6f9828bcb2e94e38829292cb13
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 565a554508277ab9ce49b377b5a7e121db45b20c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988677"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996493"
 ---
 # <a name="sv_stencilref"></a>\_STENCILREF VA
 
 \_STENCILREF VA representa o valor de referência do estêncil do sombreador de pixel atual.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
 
 
 |      |
 |------|
-| Tipo |
+| Digite |
 | uint |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -53,6 +53,6 @@ A especificação do valor de referência do sombreador no sombreador de pixel e
 [Valores de sistema do modelo do sombreador 5,1](shader-model-5-1-system-values.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

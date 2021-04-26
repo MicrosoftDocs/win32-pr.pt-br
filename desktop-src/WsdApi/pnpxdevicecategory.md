@@ -4,12 +4,12 @@ ms.assetid: 1ca46000-4700-4326-8f49-1b9a22d45bfa
 title: Elemento PnPXDeviceCategory
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 731dd78fbe366fc9c7923686d3d9ac90b772c23d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a08084d780c26d2f7fab902156939fd14a3e60c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781577"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996583"
 ---
 # <a name="pnpxdevicecategory-element"></a>Elemento PnPXDeviceCategory
 
@@ -51,7 +51,7 @@ Se um elemento **PnPXDeviceCategory** estiver presente, pelo menos um elemento [
 
 
 
-|                                     |               |
+| Label | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

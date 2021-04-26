@@ -4,12 +4,12 @@ ms.assetid: 46fd5e22-a2f3-424d-8c2f-2d5ac089a230
 title: DocumentHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d42783248213f1ccffd0c0fb7f3a416ee6ae801d
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 825120996d0d488af347ed871386a12d7f8014a7
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103930261"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997883"
 ---
 # <a name="documentholepunch"></a>DocumentHolePunch
 
@@ -25,7 +25,7 @@ Descreve as características de perfuração da saída. Cada documento é perfur
 
 
 
-| Nome                       |                                                                                |
+| Nome | Valor |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                             |
 | Prefixo de escopo <br/> | Documento<br/>                                                            |

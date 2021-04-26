@@ -4,12 +4,12 @@ ms.assetid: 195ee969-30e8-4828-a0be-f0d2a82e247c
 title: D3DXSPRITE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c394d2606584ec5f56aa28661a2da286f000a66d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fe4dbf3e80e7cf6f7884d778860f9de61f5193f5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500132"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997313"
 ---
 # <a name="d3dxsprite"></a>D3DXSPRITE
 
@@ -17,9 +17,8 @@ Os sinalizadores a seguir são usados para especificar as opções de renderiza�
 
 
 
-|                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#definir                             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DXSPRITE \_ DONOTSAVESTATE           | O estado do dispositivo não deve ser salvo ou restaurado quando [**begin**](id3dxsprite--begin.md) ou [**end**](id3dxsprite--end.md) é chamado.                                                                                                                                                                                                                                                                                            |
 | D3DXSPRITE \_ DONOTMODIFY \_ renderingstate | O estado de processamento do dispositivo não deve ser alterado quando [**begin**](id3dxsprite--begin.md) é chamado. Supõe-se que o dispositivo esteja em um estado válido para desenhar vértices contendo UsageIndex = 0 na \_ posição D3DDECLUSAGE, D3DDECLUSAGE \_ TEXCOORD e D3DDECLUSAGE \_ dados de cor.                                                                                                                                                     |
 | D3DXSPRITE \_ OBJECTspace              | As transformações do mundo, da exibição e da projeção não são modificadas. As transformações atualmente definidas para o dispositivo são usadas para transformar os sprites quando os sprites em lote são desenhados (quando [**flush**](id3dxsprite--flush.md) ou [**end**](id3dxsprite--end.md) é chamado). Se esse sinalizador não for especificado, as transformações do mundo, da exibição e da projeção serão modificadas para que os sprites sejam desenhados em coordenadas de espaço na tela.              |
