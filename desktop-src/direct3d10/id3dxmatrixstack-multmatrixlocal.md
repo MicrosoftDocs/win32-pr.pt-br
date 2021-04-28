@@ -1,5 +1,5 @@
 ---
-description: Determina o produto da matriz e da matriz atual.
+description: 'Método ID3DXMATRIXStack:: MultMatrixLocal (D3DX10. h) – determina o produto da matriz e da matriz atual.'
 ms.assetid: 4d374a7b-99e0-4313-970d-b0e7cf3e97ce
 title: 'Método ID3DXMATRIXStack:: MultMatrixLocal (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 095882c98169159beaca0ef6c98d13fe03b9aed2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b777bd729810b6fd63bd71def9858203b2ac559
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173193"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107944"
 ---
 # <a name="id3dxmatrixstackmultmatrixlocal-method-d3dx10h"></a>Método ID3DXMATRIXStack:: MultMatrixLocal (D3DX10. h)
 
@@ -49,7 +49,7 @@ Ponteiro para a estrutura D3DXMATRIX a ser multiplicado com a matriz atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -79,7 +79,7 @@ Esse método não adiciona um item à pilha, ele substitui a matriz atual pelo p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

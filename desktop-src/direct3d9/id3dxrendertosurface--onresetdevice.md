@@ -1,5 +1,5 @@
 ---
-description: Use este método para readquirir recursos e salvar o estado inicial.
+description: 'Método ID3DXRenderToSurface:: OnResetDevice – Use este método para adquirir novamente os recursos e salvar o estado inicial.'
 ms.assetid: a326a465-ee90-466d-8e46-22e082e9533c
 title: 'Método ID3DXRenderToSurface:: OnResetDevice (D3dx9core. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 09d8e3d2c7b628d36fee12525e9423059a7bd63a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 17af145a236d2b3a51d271c6687d78d81a387363
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298587"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107184"
 ---
 # <a name="id3dxrendertosurfaceonresetdevice-method"></a>Método ID3DXRenderToSurface:: OnResetDevice
 
@@ -38,7 +38,7 @@ HRESULT OnResetDevice();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ ID3DXRenderToSurface:: OnResetDevice deve ser chamado cada vez que o dispositivo
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

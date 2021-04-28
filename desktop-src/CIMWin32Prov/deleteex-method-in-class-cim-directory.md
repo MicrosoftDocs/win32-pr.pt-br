@@ -1,5 +1,5 @@
 ---
-description: O método DeleteEx exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Delete e é herdado de CIM \_ LogicalFile.
+description: Método DeleteEx da classe CIM_Directory – o método DeleteEx exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Delete e é herdado de CIM \_ LogicalFile.
 ms.assetid: 5f924327-248c-47e2-b42e-50c83defce17
 ms.tgt_platform: multiple
 title: Método DeleteEx da classe CIM_Directory
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aa6427adcc2cf87923b2b76b298cc47373231b56
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4a3704507405ebb2d310ed7341cd1db174e00588
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920298"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097094"
 ---
 # <a name="deleteex-method-of-the-cim_directory-class"></a>Método DeleteEx da classe de \_ diretório CIM
 
@@ -62,7 +62,7 @@ Cadeia de caracteres que representa o arquivo filho (ou diretório) a ser usado 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -205,7 +205,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

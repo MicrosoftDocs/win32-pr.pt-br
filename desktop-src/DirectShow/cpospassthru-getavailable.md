@@ -1,5 +1,5 @@
 ---
-description: 'O método GetAvailable recupera o intervalo de vezes em que a busca é eficiente. Esse método implementa o método IMediaSeeking:: GetAvailable.'
+description: 'Método CPosPassThru. GetAvailable – o método GetAvailable recupera o intervalo de vezes em que a busca é eficiente. Esse método implementa o método IMediaSeeking:: GetAvailable.'
 ms.assetid: 5f4af41a-eb7b-4caa-97e0-aaed78467723
 title: Método CPosPassThru. GetAvailable (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32dbba173caf933185602523dadcf71ce7ca3ef7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d56827a68f4c287e5808f0d8f64b8142c31b1f4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760756"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095284"
 ---
 # <a name="cpospassthrugetavailable-method"></a>Método CPosPassThru. GetAvailable
 
@@ -57,7 +57,7 @@ Ponteiro para uma variável que recebe a hora mais recente para busca eficiente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **HRESULT** do PIN conectado.
 
@@ -72,7 +72,7 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

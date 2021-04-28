@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_VirtualSystemReferencePointExportJob-solicita uma alteração de estado.
 ms.assetid: 53c24e17-2b59-4439-a6d1-e971c189d223
 title: Método RequestStateChange da classe Msvm_VirtualSystemReferencePointExportJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5612371738915b5e38657eca0773a88e31e3b0d2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bd12d7cd5b79e38260e671bf1408304390985dac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105748429"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109304"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método RequestStateChange da classe Msvm \_ VirtualSystemReferencePointExportJob
 
@@ -123,7 +123,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
@@ -179,7 +179,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

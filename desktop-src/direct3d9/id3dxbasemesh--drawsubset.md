@@ -1,5 +1,5 @@
 ---
-description: Desenha um subconjunto de uma malha.
+description: 'ID3DXBaseMesh: método rawSubset:D-desenha um subconjunto de uma malha.'
 ms.assetid: 99eaa185-b681-47f2-aed8-5ca1697ff73c
 title: 'ID3DXBaseMesh: método rawSubset de:D (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d0da6e9fc57e0fc5e7b4b263ba3d97185333881c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 252c9b9921c7eafd8f0c2a54cfa14a85e91b8f7d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763108"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115464"
 ---
 # <a name="id3dxbasemeshdrawsubset-method"></a>ID3DXBaseMesh: método rawSubset de:D
 
@@ -49,7 +49,7 @@ DWORD que especifica qual subconjunto da malha deve ser desenhada. Esse valor é
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -72,7 +72,7 @@ Uma tabela de atributos é usada para identificar áreas da malha que precisam s
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

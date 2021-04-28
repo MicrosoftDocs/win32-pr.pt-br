@@ -1,5 +1,5 @@
 ---
-description: Transforma um vetor 3D por uma determinada matriz, projetando o resultado de volta em w = 1.
+description: Função D3DXVec3TransformCoord (D3DX10Math. h) – transforma um vetor 3D por uma determinada matriz, projetando o resultado de volta em w = 1.
 ms.assetid: e138fdc0-6999-45ab-8bcf-54f53bd9b1bf
 title: Função D3DXVec3TransformCoord (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: a8fc7c7a00133e036921eabaa145dca01a12f042
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5b3e763d87503f9ca71911ad40ccf3c6ae9ca722
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298643"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108094"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx10mathh"></a>Função D3DXVec3TransformCoord (D3DX10Math. h)
 
@@ -68,7 +68,7 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
@@ -90,7 +90,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

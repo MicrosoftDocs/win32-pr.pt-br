@@ -1,5 +1,5 @@
 ---
-description: 'O método EndFlush termina uma operação de liberação. Esse método implementa o método IPin:: EndFlush.'
+description: 'Método CTransformInputPin. EndFlush – o método EndFlush termina uma operação de liberação. Esse método implementa o método IPin:: EndFlush.'
 ms.assetid: ebc70df3-e99d-4292-990b-99b79ff06461
 title: Método CTransformInputPin. EndFlush (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0fe6afeaa0ca3d47b278987af494221e8f50340
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5e080b4531d05160bebd42a68145842c4783bea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750036"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095054"
 ---
 # <a name="ctransforminputpinendflush-method"></a>Método CTransformInputPin. EndFlush
 
@@ -40,7 +40,7 @@ HRESULT EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                           | Descrição                             |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>                     |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O pino de saída não está conectado.<br/> |
 
 

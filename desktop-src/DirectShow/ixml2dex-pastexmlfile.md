@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'IXml2Dex: método asteXMLFile de:P-não implementado.'
 ms.assetid: 25300ba5-3578-4eb3-99e2-d547dbb2b9ee
 title: 'IXml2Dex: método asteXMLFile de:P'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 1e6df8679dde95e7483fe74eb0d8b1b462d51730
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 415e71d87d8e8d9c7834df0a16fce754651d6a03
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456524"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088954"
 ---
 # <a name="ixml2dexpastexmlfile-method"></a>IXml2Dex: método asteXMLFile de:P
 
@@ -66,7 +66,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -82,7 +82,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'Método IXml2Dex:: CopyXML-não implementado.'
 ms.assetid: be412d17-6210-4b50-a2b9-9b51c722cb7c
 title: 'Método IXml2Dex:: CopyXML'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d5840b89c4f58539eb559be3b5d438694c83ea84
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 61e46cb86f32ede3906a22566f455f1a8c55ecb5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500600"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088974"
 ---
 # <a name="ixml2dexcopyxml-method"></a>Método IXml2Dex:: CopyXML
 
@@ -66,7 +66,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -82,7 +82,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

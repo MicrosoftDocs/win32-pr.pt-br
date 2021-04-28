@@ -1,5 +1,5 @@
 ---
-description: O método ativo notifica o PIN de que o filtro está ativo agora.
+description: Método CBaseOutputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora.
 ms.assetid: 35df4305-0e2c-4ee1-bc63-db5aec864c46
 title: Método CBaseOutputPin. Active (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 249cddac4027fa434996b1118cc692937b686a83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f282f45bb895a941c44cb70cf5d9d3d373bf8649
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748225"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096204"
 ---
 # <a name="cbaseoutputpinactive-method"></a>Método CBaseOutputPin. active
 
@@ -40,7 +40,7 @@ HRESULT Active();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                          | Descrição                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                 | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Sucesso.<br/>                   |
 | <dl> <dt>**VFW \_ E \_ nenhum \_ alocador**</dt> </dl> | Nenhum alocador disponível.<br/> |
 
 
@@ -72,7 +72,7 @@ Se você substituir esse método, chame o método de classe base do seu método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

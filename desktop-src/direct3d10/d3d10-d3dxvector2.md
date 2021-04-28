@@ -1,5 +1,5 @@
 ---
-description: Descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo.
+description: Estrutura D3DXVECTOR2 (D3DX10Math. h) – descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo.
 ms.assetid: 5b7b4847-b994-48c6-ae3c-e48ee1716ddd
 title: Estrutura D3DXVECTOR2 (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 860c7ddaba61adcd93a38469117b2a95779240a2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 972238650fa23e8b7aa435cd91b36f2caf8a4d9b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173106"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102845"
 ---
 # <a name="d3dxvector2-structure-d3dx10mathh"></a>Estrutura D3DXVECTOR2 (D3DX10Math. h)
 
@@ -124,7 +124,7 @@ public:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

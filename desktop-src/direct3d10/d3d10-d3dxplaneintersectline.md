@@ -1,5 +1,5 @@
 ---
-description: Localiza a interseção entre um plano e uma linha.
+description: Função D3DXPlaneIntersectLine (D3DX10Math. h) – localiza a interseção entre um plano e uma linha.
 ms.assetid: aea1c4e1-f8c0-46df-bb33-2b517396d69e
 title: Função D3DXPlaneIntersectLine (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 00d25fcba9e5884cec10da96964ad0f5daa9ed14
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1d32bb312c97b793f492f7a29bebe11529b79cf9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105802123"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108804"
 ---
 # <a name="d3dxplaneintersectline-function-d3dx10mathh"></a>Função D3DXPlaneIntersectLine (D3DX10Math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para uma estrutura de D3DXVECTOR3 de origem, definindo um ponto de extr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
@@ -102,7 +102,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

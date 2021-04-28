@@ -1,21 +1,21 @@
 ---
-description: .
+description: image
 ms.assetid: 89893C4E-4F4E-4d85-9623-08607B4383E5
 title: Elemento Image (esquema de descrição da propriedade)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7bb519d5f8104d114734e1f12676f213312e32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c24ecb1b88b8b724ce299a81281f926972180743
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750882"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104984"
 ---
 # <a name="image"></a>image
 
 Deve haver apenas um elemento [Image]() para cada elemento pai.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```

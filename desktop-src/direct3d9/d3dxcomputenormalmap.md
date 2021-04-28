@@ -1,5 +1,5 @@
 ---
-description: Converte um mapa de altura em um mapa normal. Os componentes (x, y, z) de cada normal são mapeados para os canais (r, g, b) da textura de saída.
+description: Função D3DXComputeNormalMap – converte um mapa de altura em um mapa normal. Os componentes (x, y, z) de cada normal são mapeados para os canais (r, g, b) da textura de saída.
 ms.assetid: ed9053c0-b1df-4f74-bdee-627c0f60d942
 title: Função D3DXComputeNormalMap (D3dx9tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e22418f5a023dbe70fee8ea0fba8a449abbcc8d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814444"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105224"
 ---
 # <a name="d3dxcomputenormalmap-function"></a>Função D3DXComputeNormalMap
 
@@ -99,7 +99,7 @@ Multiplicador de valor constante que aumenta (ou diminui) os valores no mapa nor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -120,7 +120,7 @@ Esse método computa o normal usando a diferença central com um tamanho de kern
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

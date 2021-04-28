@@ -1,15 +1,15 @@
 ---
-description: .
+description: Somente 64 bits
 ms.assetid: 5d0188a5-ef5f-409e-9d2d-7639d99edc1d
 title: Somente 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d3178a15ec0a138a73789233dd2d787964a96b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2d896fcaf4b8c4ebeadf7cfd5a5c22e511cb659
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171984"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088804"
 ---
 # <a name="64-bit-only"></a>Somente 64 bits
 

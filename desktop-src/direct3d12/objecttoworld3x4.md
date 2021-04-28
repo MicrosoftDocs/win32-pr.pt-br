@@ -1,5 +1,5 @@
 ---
-description: Uma matriz para transformar de espaço de objeto em espaço mundial.
+description: ObjectToWorld3x4 – uma matriz para transformar de espaço de objeto em espaço mundial.
 ms.assetid: ''
 title: ObjectToWorld3x4
 ms.localizationpriority: low
@@ -12,12 +12,12 @@ api_name:
 - ObjectToWorld3x4
 api_type:
 - NA
-ms.openlocfilehash: 04f80dde64984010c6e015f6e885565396d3b9c9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 947676c25bd5cac50749c737afd7e4ff75426c0a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782572"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107734"
 ---
 # <a name="objecttoworld3x4"></a>ObjectToWorld3x4
 
@@ -47,7 +47,7 @@ Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: System.Document. MultimediaClipCount
 ms.assetid: bc9af024-19b0-4bd2-827a-a4ac9c05dc05
 title: System.Document. MultimediaClipCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 134e5097b0be116fb5548576fd804127ea7e81f4
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b6b32cd31d9a85df140809cb246070df29b3e29e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172505"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108101074"
 ---
 # <a name="systemdocumentmultimediaclipcount"></a>System.Document. MultimediaClipCount
 

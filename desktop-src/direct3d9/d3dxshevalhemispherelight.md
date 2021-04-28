@@ -1,5 +1,5 @@
 ---
-description: Avalia uma luz que é uma interpolação linear entre duas cores na esfera.
+description: Função D3DXSHEvalHemisphereLight (D3dx9math. h) – avalia uma luz que é uma interpolação linear entre duas cores na esfera.
 ms.assetid: c5815f12-f706-40f6-bf5e-78a211cfbbea
 title: Função D3DXSHEvalHemisphereLight (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bdb94fc10ddadc7048f7bb911df089d6f84b0829
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7bc06dcf866c21cc5dcb96b23dea5a4640293fef
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104565837"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093955"
 ---
 # <a name="d3dxshevalhemispherelight-function-d3dx9mathh"></a>Função D3DXSHEvalHemisphereLight (D3dx9math. h)
 
@@ -109,7 +109,7 @@ Ponteiro para o vetor SH de saída para o componente azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -138,7 +138,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de transformação afim 3D. Argumentos nulos são tratados como transformações de identidade.
+description: Função D3DXMatrixAffineTransformation (D3dx9math. h) – compila uma matriz de transformação afim 3D. Argumentos nulos são tratados como transformações de identidade.
 ms.assetid: 54eac78f-57be-4a24-8dfb-0b519e97d6ca
 title: Função D3DXMatrixAffineTransformation (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 025485f0015e6f2d85851c8f0919f5462b2bdc3e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7329ffbffe5ffd89ed64e5386246f39699618960
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298737"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094164"
 ---
 # <a name="d3dxmatrixaffinetransformation-function-d3dx9mathh"></a>Função D3DXMatrixAffineTransformation (D3dx9math. h)
 
@@ -89,7 +89,7 @@ Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) que representa a t
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -101,7 +101,7 @@ Essa função calcula a matriz de transformação afim com a seguinte fórmula, 
 
 M<sub>out</sub> = MS \* (M<sub>RC</sub>) ⁻ ¹ \* m<sub>r</sub> \* m<sub>RC</sub> \* MT
 
-onde:
+em que:
 
 M <sub>out</sub> = matriz de saída (*pout*)
 
@@ -128,7 +128,7 @@ Para transformações de afinidade 2D, use [**D3DXMatrixAffineTransformation2D**
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

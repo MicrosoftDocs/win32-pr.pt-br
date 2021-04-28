@@ -1,5 +1,5 @@
 ---
-description: Solicita que o serviço referenciado atualize seu estado para o Service Manager.
+description: Método InterrogateService da classe Win32_Service (provedores WMI CIMWin32)-solicita que o serviço referenciado atualize seu estado para o Service Manager.
 ms.assetid: a4ea8753-1859-4d97-b9ca-47598c7e7654
 ms.tgt_platform: multiple
 title: Método InterrogateService da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7ad1f56afcbe42ced19da823c454291a7b5282d7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9702bc3fbd0a9969db20a8f1326c31b9ea7d925d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089097"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096974"
 ---
 # <a name="interrogateservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método InterrogateService da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -40,7 +40,7 @@ uint32 InterrogateService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -235,7 +235,7 @@ O serviço está pausado atualmente no sistema.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

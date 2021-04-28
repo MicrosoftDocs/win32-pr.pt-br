@@ -1,5 +1,5 @@
 ---
-description: Cria e retorna um objeto ShellWindows. Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.
+description: Método Shell. Windows – cria e retorna um objeto ShellWindows. Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.
 title: Método Shell. Windows (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ffa6311c-8bbe-45c4-9b06-069779d2306d
-ms.openlocfilehash: a865109f926253215e5ad39227cfe3d480e9ccc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d46e27781dc569b473615926509f51ed9d089af3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922567"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104064"
 ---
 # <a name="shellwindows-method"></a>Método Shell. Windows
 
@@ -45,7 +45,7 @@ Shell.Windows() As IDispatch
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: Interface do usuário – atualizações da caixa de diálogo controle de conta de usuário
 ms.assetid: f2d4b82d-a84a-4fc1-b7ad-cdc92a24f889
 title: Interface do usuário – atualizações da caixa de diálogo controle de conta de usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5711f8bbed029102bea81e0f4cfcbd4649b5a3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5cd6cc6709283c7bd9cba3e26bd2df29bb02ec2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785260"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094414"
 ---
 # <a name="user-interface---user-account-control-dialog-updates"></a>Interface do usuário – atualizações da caixa de diálogo controle de conta de usuário
 

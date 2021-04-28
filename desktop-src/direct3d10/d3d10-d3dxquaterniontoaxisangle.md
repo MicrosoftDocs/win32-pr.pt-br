@@ -1,5 +1,5 @@
 ---
-description: Computa o eixo de um Quaternion e o ângulo de rotação.
+description: Função D3DXQuaternionToAxisAngle (D3DX10Math. h) – computa o eixo de um Quaternion e o ângulo de rotação.
 ms.assetid: 1e81b88b-071d-46f1-b640-c70d063a14d1
 title: Função D3DXQuaternionToAxisAngle (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0fabba670bbfe83a3032e5a6fa78f5db16c89b3c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 51f704aa839ff210b3c2de57767cb32ec609232f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762369"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108694"
 ---
 # <a name="d3dxquaterniontoaxisangle-function-d3dx10mathh"></a>Função D3DXQuaternionToAxisAngle (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Essa função retorna um ponteiro para um valor FLOAT que identifica o ângulo d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -88,7 +88,7 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

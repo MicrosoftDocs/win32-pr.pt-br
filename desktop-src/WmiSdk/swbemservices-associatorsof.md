@@ -1,5 +1,5 @@
 ---
-description: Retorna uma coleção de objetos (classes ou instâncias) chamadas de pontos de extremidade que estão associados a um objeto especificado.
+description: Método SWbemServices. AssociatorsOf – retorna uma coleção de objetos (classes ou instâncias) chamadas de pontos de extremidade que estão associados a um objeto especificado.
 ms.assetid: a78e6701-6779-4a02-b811-23b2da4f4167
 ms.tgt_platform: multiple
 title: Método SWbemServices. AssociatorsOf (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 0208ef23158d71a5174fcb6759acba1d64bd09a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95dc8e16939c345b6f885980dd2f1194f180ac5e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103684"
 ---
 # <a name="swbemservicesassociatorsof-method"></a>Método SWbemServices. AssociatorsOf
 
@@ -188,7 +188,7 @@ Normalmente, isso é indefinido. Caso contrário, esse é um objeto [**SWbemName
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a chamada for bem-sucedida, um objeto [**SWbemObjectSet**](swbemobjectset.md) será retornado.
 
@@ -260,7 +260,7 @@ Para obter mais informações sobre os ASSOCIAdores de consulta WQL, instâncias
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

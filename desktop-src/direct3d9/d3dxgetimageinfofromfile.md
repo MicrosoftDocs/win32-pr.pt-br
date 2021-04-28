@@ -1,5 +1,5 @@
 ---
-description: Recupera informações sobre um determinado arquivo de imagem.
+description: Função D3DXGetImageInfoFromFile – recupera informações sobre um determinado arquivo de imagem.
 ms.assetid: 2e9d7073-4136-4fb7-8749-810aee000433
 title: Função D3DXGetImageInfoFromFile (D3dx9tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ff5d540871482b2628fd48deb382121591a9594f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb03b6482d140a3b78e43d8b99c60499ae6c8b16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798165"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114484"
 ---
 # <a name="d3dxgetimageinfofromfile-function"></a>Função D3DXGetImageInfoFromFile
 
@@ -59,7 +59,7 @@ Ponteiro para uma estrutura de [**\_ informações de D3DXIMAGE**](d3dximage-inf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -80,7 +80,7 @@ Essa função dá suporte a cadeias de caracteres Unicode e ANSI.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

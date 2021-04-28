@@ -1,5 +1,5 @@
 ---
-description: Define o estado atual do botão de dispositivo especificado.
+description: Método setbuttonstate da classe Msvm_SyntheticMouse – define o estado atual do botão do dispositivo especificado.
 ms.assetid: 942DB31C-09A2-43B6-A666-267AF6A84E0E
 title: Método setbuttonstate da classe Msvm_SyntheticMouse
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c99915fa8ede9cbb405f4483ac10ca9ff8efaf71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 161520ac1b7e9dba1a084a8fb3c623155aa135fe
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169412"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109204"
 ---
 # <a name="setbuttonstate-method-of-the-msvm_syntheticmouse-class"></a>Método setbuttonstate da classe Msvm \_ SyntheticMouse
 
@@ -58,7 +58,7 @@ O novo estado para baixo do botão. Um valor **verdadeiro** significa que o bot�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -123,7 +123,7 @@ O acesso à classe [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

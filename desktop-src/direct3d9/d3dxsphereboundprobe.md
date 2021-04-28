@@ -1,5 +1,5 @@
 ---
-description: Determina se um raio intersecciona o volume da caixa delimitadora de uma esfera.
+description: Função D3DXSphereBoundProbe (D3DX9Mesh. h) – determina se um raio intersecciona o volume da caixa delimitadora de uma esfera.
 ms.assetid: fa2e9ecf-7905-4a62-ba48-774bd522525a
 title: Função D3DXSphereBoundProbe (D3DX9Mesh. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bbab8a49165a87f73037ae25230d67b02222fc15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e2d3ea263d7ad8bc50b936fd1010c352c0c01783
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105789928"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093844"
 ---
 # <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Função D3DXSphereBoundProbe (D3DX9Mesh. h)
 
@@ -79,7 +79,7 @@ Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 
@@ -100,7 +100,7 @@ Retornará **true** se Ray Interseccionar o volume da caixa delimitadora da esfe
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

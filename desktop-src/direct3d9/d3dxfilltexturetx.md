@@ -1,5 +1,5 @@
 ---
-description: Usa uma função HLSL (linguagem de sombreamento de alto nível) compilada para preencher cada Texel de cada nível de mipmap de uma textura.
+description: Função D3DXFillTextureTX – usa uma função de HLSL (linguagem de sombreamento de alto nível) compilada para preencher cada Texel de cada nível de mipmap de uma textura.
 ms.assetid: 013660ce-865e-4acf-a1ea-670e70377ff5
 title: Função D3DXFillTextureTX (D3dx9tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3605011f7967edec68d13405b4cabbd9c90d4c59
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 419dc0e7b4266a2fe32557c52ed4323b51a25843
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012094"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107634"
 ---
 # <a name="d3dxfilltexturetx-function"></a>Função D3DXFillTextureTX
 
@@ -59,7 +59,7 @@ Ponteiro para um objeto sombreador de textura [**ID3DXTextureShader**](id3dxtext
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -114,7 +114,7 @@ Observe que os parâmetros de entrada podem estar em qualquer ordem, mas a semâ
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
