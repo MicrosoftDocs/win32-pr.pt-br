@@ -1,15 +1,15 @@
 ---
-description: Especifica se o fluxo de entrada está entrelaçado.
+description: Propriedade MFPKEY_RESIZE_INTERLACE-especifica se o fluxo de entrada está entrelaçado.
 ms.assetid: 01ee0766-06ed-4255-9057-2fe033a772cd
 title: Propriedade MFPKEY_RESIZE_INTERLACE (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a27504bd6da92bc48fee04afc999568a514fdef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45d0efe93901a08322a05dbed2515f76b04a214b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754914"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092874"
 ---
 # <a name="mfpkey_resize_interlace-property"></a>MFPKEY \_ redimensionar \_ Propriedade entrelaçar
 
@@ -56,7 +56,7 @@ Se essa propriedade não for definida, o DSP usará o tipo de mídia de entrada 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
+description: Método CTransInPlaceFilter. GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
 ms.assetid: 1bc6c06d-f399-4b8a-81f2-7fffe4630236
 title: Método CTransInPlaceFilter. GetMediaType (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d2347e0466a7df848e0f0b2bccec325eedfefc8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8678f9b18e40f529da282909015a7c75695770ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775566"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094804"
 ---
 # <a name="ctransinplacefiltergetmediatype-method"></a>Método CTransInPlaceFilter. GetMediaType
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna E \_ inesperado.
 
@@ -76,7 +76,7 @@ Esse método substitui o método [**CTransformFilter:: GetMediaType**](ctransfor
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
+description: Método SetPowerState da classe CIM_NonVolatileStorage-o método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
 ms.assetid: fdc7dbcb-e2ef-44aa-9a4c-dcae618c5630
 ms.tgt_platform: multiple
 title: Método SetPowerState da classe CIM_NonVolatileStorage
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2a27d34920ba4332c149a8de7f195879e8fe6288
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: af733cf695ac7ac0bcccf7270929ae3b1bc08b8a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164045"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100094"
 ---
 # <a name="setpowerstate-method-of-the-cim_nonvolatilestorage-class"></a>Método SetPowerState da classe CIM \_ NonVolatileStorage
 
@@ -102,7 +102,7 @@ Especifica quando o estado de energia deve ser definido, seja como um valor de d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 
@@ -126,7 +126,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o objeto InkCollector ou InkOverlay é clicado duas vezes.
+description: Evento InkOverlay. DoubleClick – ocorre quando o objeto InkCollector ou InkOverlay é clicado duas vezes.
 ms.assetid: 76ea40d4-82cf-420a-a9eb-66cb0492b43b
 title: Evento InkOverlay. DoubleClick (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4baddc89e309b7d64ba2294827b58956b3e6c47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c358a6c44ccda9be9dc4d0dd1d3e81e4a983ce9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171168"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086824"
 ---
 # <a name="inkoverlaydoubleclick-event"></a>Evento InkOverlay. DoubleClick
 
@@ -37,7 +37,7 @@ Se o evento deve ser cancelado para o controle pai.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -58,7 +58,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Remove a matriz atual da parte superior da pilha.
+description: 'ID3DXMATRIXStack: método op de:P (D3DX10. h) – remove a matriz atual da parte superior da pilha.'
 ms.assetid: f4e4ff5d-a7a1-4f87-9b7e-53b9d044ba51
 title: 'ID3DXMATRIXStack: método op de:P (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a9a7b88cc749ef61c8b04395497fcc00ea9b36ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 19c87cbd5fd81100682225aa16256573c7f95be0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785136"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107924"
 ---
 # <a name="id3dxmatrixstackpop-method-d3dx10h"></a>ID3DXMATRIXStack: método op de:P (D3DX10. h)
 
@@ -38,7 +38,7 @@ HRESULT Pop();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ Observe que esse método diminui a contagem de itens na pilha em 1, removendo ef
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

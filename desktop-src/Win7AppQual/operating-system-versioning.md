@@ -1,15 +1,15 @@
 ---
-description: .
+description: Controle de versão do sistema operacional
 ms.assetid: 974650d9-504a-4f19-bc71-90fbc92672d9
 title: Controle de versão do sistema operacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44e71cb671e19463ca6137c9b0ce7af04c2793e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43b2b8c60994eaee7a3becfa9acc03fe2c61fb12
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757278"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088034"
 ---
 # <a name="operating-system-versioning"></a>Controle de versão do sistema operacional
 

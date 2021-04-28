@@ -1,15 +1,15 @@
 ---
-description: .
+description: Internet Explorer 8-cadeia de caracteres do agente do usuário
 ms.assetid: 1cb0456d-501a-4272-b89d-35e79d29d13a
 title: Internet Explorer 8-cadeia de caracteres do agente do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aea44572f32e252a4e1d4dc2209e411834c12d4
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: d94d60930466b7243ad6ecc2b2d8d9c799e0e3da
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088234"
 ---
 # <a name="internet-explorer-8---user-agent-string"></a>Internet Explorer 8-cadeia de caracteres do agente do usuário
 

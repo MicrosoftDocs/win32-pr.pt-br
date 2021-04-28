@@ -1,15 +1,15 @@
 ---
-description: .
+description: Alterações de classificação NLS
 ms.assetid: 24617b5f-14f1-4f1b-a288-7d20a8166da0
 title: Alterações de classificação NLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa4935a6874e28270e73904eb352cd6332e650b7
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: e57cfaf2a9891c2d952637429786729670fc103c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314949"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088054"
 ---
 # <a name="nls-sorting-changes"></a>Alterações de classificação NLS
 

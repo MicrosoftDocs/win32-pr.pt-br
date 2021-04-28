@@ -1,5 +1,5 @@
 ---
-description: O método QueryStatus recupera o status do NPP.
+description: 'Método IStats:: QueryStatus – o método QueryStatus recupera o status do NPP.'
 ms.assetid: 86b1c1ee-3a35-4603-9e93-fe09f886c32f
 title: 'Método IStats:: QueryStatus (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 02e013d87734b61ad26b6563c402db1b8d4cb4f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7587c2fff56d305c0298948bdf8690fd801f3f3b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663601"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113474"
 ---
 # <a name="istatsquerystatus-method"></a>Método IStats:: QueryStatus
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [NETWORKSTATUS](networkstatus.md) retornada que indi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -80,7 +80,7 @@ Esse método pode ser chamado a qualquer momento depois que o método [CreateNPP
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

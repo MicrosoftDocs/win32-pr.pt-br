@@ -1,15 +1,15 @@
 ---
 title: Referência de DPI alto
-description: .
+description: Referência de DPI alto
 ms.assetid: 07A2D45E-721C-4DA8-82A5-38B2FB94BC6D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93ec59f34aa5ed036d7f4376cb3d170b5d7849f4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9c10bcf5c5297b0adcfceef6853f2292c3fc8b98
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365861"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087794"
 ---
 # <a name="high-dpi-reference"></a>Referência de DPI alto
 
@@ -51,7 +51,7 @@ ms.locfileid: "104365861"
 
 
 
- 
+ 
 
 ## <a name="types"></a>Tipos
 
@@ -70,7 +70,7 @@ ms.locfileid: "104365861"
 
 
 
- 
+ 
 
 ## <a name="messages"></a>Mensagens
 
@@ -86,8 +86,8 @@ ms.locfileid: "104365861"
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

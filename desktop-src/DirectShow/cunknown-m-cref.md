@@ -1,5 +1,5 @@
 ---
-description: Contagem de referência.
+description: 'CUnknown:: m_cRef contagem de referência de membro.'
 ms.assetid: be619a85-ca73-4cee-9df7-20e7be21853b
 title: 'Membro CUnknown:: m_cRef (combase. h)'
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94ff5d88ca48feeb46a8b0411a55d6261aefcf6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3f6be7d09149f651bce8d1042b7f3e3a5dc9307
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752480"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084574"
 ---
 # <a name="cunknownm_cref-member"></a>Membro cRef CUnknown:: m \_
 

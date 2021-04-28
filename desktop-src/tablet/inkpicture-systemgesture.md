@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um gesto do sistema é reconhecido.
+description: InkPicture.Sysevento temGesture – ocorre quando um gesto do sistema é reconhecido.
 ms.assetid: 36e2ac5a-dc91-47c2-a8e5-e555437c0a5d
 title: InkPicture.Sysevento temGesture (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 918198e4d18a854bb4238ce9d878dc70ab1f2f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cde11b73b6b0d3861a79538a7f9ee19487b6384
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812038"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113684"
 ---
 # <a name="inkpicturesystemgesture-event"></a>InkPicture.Sysevento temGesture
 
@@ -85,7 +85,7 @@ Um valor que indica se o objeto [**IInkCursor**](/windows/desktop/api/msinkaut/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -114,7 +114,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o ponteiro do mouse está sobre o objeto InkCollector ou InkOverlay e um botão do mouse é pressionado.
+description: Evento InkOverlay. MouseDown-ocorre quando o ponteiro do mouse está sobre o objeto InkCollector ou InkOverlay e um botão do mouse é pressionado.
 ms.assetid: 95c3b1ae-0e77-4ca2-ab73-a0e97ab115b5
 title: Evento InkOverlay. MouseDown (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c011de55543bee08aeda1a8a986b597523ad805d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ff1e4bff715a6585ee607de766c809579f527aa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813610"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086814"
 ---
 # <a name="inkoverlaymousedown-event"></a>Evento InkOverlay. MouseDown
 
@@ -69,7 +69,7 @@ A coordenada Y, em pixels, de um clique do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -102,7 +102,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

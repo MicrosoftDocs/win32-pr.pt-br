@@ -1,5 +1,5 @@
 ---
-description: Define um vetor.
+description: Estrutura D3DVECTOR (D3D9Types. h) – define um vetor.
 ms.assetid: 7091617b-935b-466e-8270-90240a1adaee
 title: Estrutura D3DVECTOR (D3D9Types. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 255270e82b967944ae70e593710550163b8bb788
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8fc8d78490f192f5cbf222251d763ac73e862e78
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173076"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107704"
 ---
 # <a name="d3dvector-structure-d3d9typesh"></a>Estrutura D3DVECTOR (D3D9Types. h)
 
@@ -84,7 +84,7 @@ Valor de ponto flutuante que descreve o vetor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

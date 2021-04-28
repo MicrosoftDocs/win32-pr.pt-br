@@ -1,5 +1,5 @@
 ---
-description: O método GetIDsOfNames mapeia um conjunto de nomes para um conjunto correspondente de DISPIDs.
+description: Método CBaseDispatch. GetIDsOfNames – o método GetIDsOfNames mapeia um conjunto de nomes para um conjunto correspondente de DISPIDs.
 ms.assetid: 0c0a2726-e89a-4eaf-aab0-e7e9e82e3c34
 title: Método CBaseDispatch. GetIDsOfNames (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cf11e4aa298f924b69c299c2f411dde88e28e5b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f3b718c95d588ffdc7fa63902e6b26ffbf11fd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747615"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099914"
 ---
 # <a name="cbasedispatchgetidsofnames-method"></a>Método CBaseDispatch. GetIDsOfNames
 
@@ -81,7 +81,7 @@ Ponteiro para uma matriz que recebe os DISPIDs. Cada elemento de recebe um ident
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -89,7 +89,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                         | Descrição                                         |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                | Êxito.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Sucesso.<br/>                                 |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Memória insuficiente.<br/>                     |
 | <dl> <dt>**Não receber \_ E não \_ conhecido**</dt> </dl> | Um ou mais dos nomes não eram conhecidos.<br/> |
 
@@ -114,7 +114,7 @@ Se o método retornar \_ e não \_ conhecido, os DISPIDs retornados contêm DISP
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

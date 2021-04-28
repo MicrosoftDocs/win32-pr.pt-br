@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um pacote no ar é visto.
+description: Evento InkOverlay. NewInAirPackets – ocorre quando um pacote no ar é visto.
 ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
 title: Evento InkOverlay. NewInAirPackets (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ac030a2e32ecf662d811a3c91ccdc2dd3c5fd03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f39e568941b1af0727ad9c8464913325409b4604
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171166"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086704"
 ---
 # <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay. NewInAirPackets
 
@@ -55,7 +55,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -87,7 +87,7 @@ Para definir quais propriedades estão contidas nessa matriz, use a propriedade 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

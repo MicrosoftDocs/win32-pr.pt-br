@@ -1,5 +1,5 @@
 ---
-description: O método CompleteConnect conclui uma conexão de PIN.
+description: Método CTransInPlaceFilter. CompleteConnect – o método CompleteConnect conclui uma conexão de PIN.
 ms.assetid: 0c02c455-dbd0-4606-b1b1-f965c2a5805b
 title: Método CTransInPlaceFilter. CompleteConnect (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4fdc9d1d5567cda2e4b0fd4a351136405493ef61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9cc0bc839a4e35c4ce896acdf50da10f0c2bb0c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747582"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084784"
 ---
 # <a name="ctransinplacefiltercompleteconnect-method"></a>Método CTransInPlaceFilter. CompleteConnect
 
@@ -57,7 +57,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um **HRESULT**. Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um **HRESULT**. Os valores possíveis incluem os mostrados na tabela a s
 
 | Código de retorno                                                                                           | Descrição                                     |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>                             |
 | <dl> <dt>**VFW \_ E \_ não \_ no \_ grafo**</dt> </dl> | O filtro não está em um grafo de filtro.<br/> |
 
 
@@ -94,7 +94,7 @@ O filtro executa todas as reconexões de PIN chamando o método [**CBaseFilter::
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

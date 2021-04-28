@@ -1,15 +1,15 @@
 ---
-description: Não há suporte. Usado internamente pelo DirectX.
+description: PMVSplitRecord-sem suporte. Usado internamente pelo DirectX.
 ms.assetid: 9a79500c-8015-4431-807f-c54ba136e700
 title: PMVSplitRecord
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85aeee2cd04fe5869615714233b07b7ba17d2e2d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e32475a5ffd9775a48cb98314ae1ebd4d64d3faf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456685"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087944"
 ---
 # <a name="pmvsplitrecord"></a>PMVSplitRecord
 
@@ -25,7 +25,7 @@ template PMVSplitRecord
 } 
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CBaseInputPin. CBaseInputPin-método de construtor.
 ms.assetid: a853813d-cdf6-4cb4-8288-62685a883b56
 title: Construtor CBaseInputPin. CBaseInputPin (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 554c768f2cb99fda77aa87cfc916580b948da0ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95a6dca29a9bdcaf978a54587035b34959d81719
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749035"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120044"
 ---
 # <a name="cbaseinputpincbaseinputpin-constructor"></a>Construtor CBaseInputPin. CBaseInputPin
 
@@ -96,7 +96,7 @@ Todos os parâmetros são passados diretamente para o construtor [**CBasePin**](
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

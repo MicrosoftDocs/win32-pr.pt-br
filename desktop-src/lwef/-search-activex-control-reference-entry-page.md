@@ -1,15 +1,15 @@
 ---
 title: Interfaces de controle ActiveX do WDS 2. x
-description: .
+description: Interfaces de controle ActiveX do WDS 2. x
 ms.assetid: dec40a14-46eb-4370-adc8-c1d8aec7bfee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0d88e92a85c7010a51d47aec47534e29ceaea1c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 7bf3f0426325fac2be0e3c576485dff7bd6f389b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103642996"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087624"
 ---
 # <a name="wds-2x-activex-control-interfaces"></a>Interfaces de controle ActiveX do WDS 2. x
 

@@ -1,5 +1,5 @@
 ---
-description: Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.
+description: 'Método ID3DXMATRIXStack:: RotateAxisLocal (D3dx9math. h) – gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.'
 ms.assetid: c7ef11e9-f4c4-4801-8f25-190066baeb52
 title: 'Método ID3DXMATRIXStack:: RotateAxisLocal (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8488f6314eb926495baa2e42df9ea01616131507
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0bfcfd7301f90dcf49b03e7bbb3fd7e3b0de6c3e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105790270"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093464"
 ---
 # <a name="id3dxmatrixstackrotateaxislocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: RotateAxisLocal (D3dx9math. h)
 
@@ -59,7 +59,7 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -91,7 +91,7 @@ Como a rotação é multiplicada à esquerda na pilha de matriz, a rotação é 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

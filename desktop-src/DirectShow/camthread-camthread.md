@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CAMThread. CAMThread-método de construtor.
 ms.assetid: 0057adfe-e397-476b-90f9-7edbf7377b65
 title: Construtor CAMThread. CAMThread (Wxutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: abaac0c3b0330cd41db7ecd21f894733de10a1b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c4b9c5f80e131ce089b6a2da924e9cca41a84f6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756001"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096404"
 ---
 # <a name="camthreadcamthread-constructor"></a>Construtor CAMThread. CAMThread
 
@@ -66,7 +66,7 @@ O método de construtor não cria o thread. Para criar o thread, chame o método
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

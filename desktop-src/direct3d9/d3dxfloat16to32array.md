@@ -1,5 +1,5 @@
 ---
-description: Converte uma matriz de floats de 16 bits em floats de 32 bits.
+description: Função D3DXFloat16To32Array (D3dx9math. h) – converte uma matriz de floats de 16 bits em floats de 32 bits.
 ms.assetid: cabb2888-76e4-403b-99ab-f7d62478bf43
 title: Função D3DXFloat16To32Array (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6760ce36341883c26030df91d3d46b5b21fdb012
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 171b148b112cf2064d0d9a3f89451ab0fc8c2d75
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791066"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107594"
 ---
 # <a name="d3dxfloat16to32array-function-d3dx9mathh"></a>Função D3DXFloat16To32Array (D3dx9math. h)
 
@@ -69,7 +69,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -86,7 +86,7 @@ Ponteiro para uma matriz de flutuações de 32 bits.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

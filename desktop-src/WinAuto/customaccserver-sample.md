@@ -1,15 +1,15 @@
 ---
 title: Exemplo de CustomAccServer
-description: .
+description: Exemplo de CustomAccServer
 ms.assetid: 8c3636ef-0993-4ded-a3c0-05cf2de777bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c047bde41bdf4a486e14ce6f293113a41ae9e285
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 9f7f8ee7d82361177af07aa7ad53a6137c39bc38
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104365663"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088004"
 ---
 # <a name="customaccserver-sample"></a>Exemplo de CustomAccServer
 
@@ -22,7 +22,7 @@ Este tópico inclui as seções a seguir.
 -   [Executando o exemplo](#running-the-sample)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Este exemplo mostra como implementar um Microsoft Acessibilidade Ativa Server para um controle personalizado simples. O objeto acessível para o controle consiste no elemento raiz (uma caixa de listagem) e seus filhos (os itens de lista).
 
@@ -38,7 +38,7 @@ O exemplo CustomAccServer é instalado como parte do [SDK (Software Development 
 
 
 
- 
+ 
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -52,7 +52,7 @@ O exemplo CustomAccServer é instalado como parte do [SDK (Software Development 
 
 
 
- 
+ 
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
@@ -81,9 +81,9 @@ Para executar a partir do Visual Studio, pressione F5 ou clique em **Iniciar Dep
 [Amostras](samples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: O método de alocação aloca memória para os buffers.
+description: Método CBaseAllocator. Alloc – o método Alloc aloca memória para os buffers.
 ms.assetid: a22c97ef-6a8d-4cad-b5a5-3e6b225f5c81
 title: Método CBaseAllocator. Alloc (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b7510a108e69eb218a894b67dd5b62d94bfdbe6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b53dc461a520b4e8c890a36fca6d73c2c836499f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756652"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096356"
 ---
 # <a name="cbaseallocatoralloc-method"></a>Método CBaseAllocator. Alloc
 
@@ -40,7 +40,7 @@ virtual HRESULT Alloc();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 
@@ -82,7 +82,7 @@ Para obter um exemplo, consulte [**CMemAllocator:: Alloc**](cmemallocator-alloc.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

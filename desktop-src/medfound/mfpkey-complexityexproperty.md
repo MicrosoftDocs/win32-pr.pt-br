@@ -1,15 +1,15 @@
 ---
-description: Especifica a complexidade do algoritmo do codificador.
+description: Propriedade MFPKEY_COMPLEXITYEX-especifica a complexidade do algoritmo do codificador.
 ms.assetid: abfc84d5-954f-4524-b3cb-5c5b9cfc7fa0
 title: Propriedade MFPKEY_COMPLEXITYEX (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b935f41ce14a77a135d0bbc8ad6dec2933b570
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20579bcf7a06dc11f47cbef6a53629f3a36b48dc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165405"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087603"
 ---
 # <a name="mfpkey_complexityex-property"></a>\_Propriedade MFPKEY COMPLEXITYEX
 
@@ -71,7 +71,7 @@ Qualquer valor atribuído a essa propriedade será ignorado se a propriedade [MF
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

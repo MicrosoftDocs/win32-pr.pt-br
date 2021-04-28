@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de carregamento de imagem. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Image_V0-essa classe é a classe pai para eventos de carregamento de imagem. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: d35b14c7-ab76-4fed-a1cc-6215a13e8451
 title: Classe Image_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f92e04d2557d0805e4616d8ad71aacbacc9b3300
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e13cb3969fe09639bab7f9e39c46030d6ccd3576
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164297"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106506"
 ---
 # <a name="image_v0-class"></a>\_Classe V0 de imagem
 
@@ -49,7 +49,7 @@ A **classe \_ V0 de imagem** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

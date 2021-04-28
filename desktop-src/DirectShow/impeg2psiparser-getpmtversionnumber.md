@@ -1,5 +1,5 @@
 ---
-description: A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+description: 'Método IMpeg2PsiParser:: GetPmtVersionNumber – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
 ms.assetid: 50113d6b-4e10-4dc9-aaef-f67c6918a2de
 title: 'Método IMpeg2PsiParser:: GetPmtVersionNumber'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3af4b20067af52216181848f4cc63ac5a7784ba9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6f4fd8d0eba88ba1df54a1cc058bc0a2951b9a19
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105779522"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084554"
 ---
 # <a name="impeg2psiparsergetpmtversionnumber-method"></a>Método IMpeg2PsiParser:: GetPmtVersionNumber
 
@@ -55,7 +55,7 @@ Ponteiro para uma variável que recebe o campo de número de versão \_ .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
@@ -63,7 +63,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
 
 
 
@@ -73,7 +73,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 Use o método **GetRecordProgramNumber** para obter o número do programa.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

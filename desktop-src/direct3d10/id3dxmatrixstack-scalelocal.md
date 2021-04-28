@@ -1,5 +1,5 @@
 ---
-description: Dimensione a matriz atual sobre a origem do objeto.
+description: 'Método ID3DXMATRIXStack:: ScaleLocal (D3DX10. h) – dimensione a matriz atual sobre a origem do objeto.'
 ms.assetid: 748fce3a-a33c-4975-bbf0-dd3167a036f1
 title: 'Método ID3DXMATRIXStack:: ScaleLocal (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 868aae418ebedbc54cb8f15ba4fa4e11d47c7f50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3961db0794703e3974dbd92d8eae8293173c2354
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837976"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107774"
 ---
 # <a name="id3dxmatrixstackscalelocal-method-d3dx10h"></a>Método ID3DXMATRIXStack:: ScaleLocal (D3DX10. h)
 
@@ -69,7 +69,7 @@ O componente de dimensionamento na direção z.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

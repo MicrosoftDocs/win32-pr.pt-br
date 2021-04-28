@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Contact. BusinessAddress2PostalCode
 ms.assetid: bda42595-fcdd-416b-a2f0-3c5072f27dbb
 title: System. Contact. BusinessAddress2PostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f9facacea6750f4742986f4166d449a91c99d8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f76fdf1b973f857438e5e72f80b986248f2d9e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791351"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087194"
 ---
 # <a name="systemcontactbusinessaddress2postalcode"></a>System. Contact. BusinessAddress2PostalCode
 

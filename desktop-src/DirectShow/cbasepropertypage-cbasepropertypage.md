@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CBasePropertyPage. CBasePropertyPage-método de construtor.
 ms.assetid: 5d9863e7-fdd9-4df2-a603-34a240a2286c
 title: Construtor CBasePropertyPage. CBasePropertyPage (cProp. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 915bc42cfb7f152cc061dab76caede6c998edf8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95821062b6b1199ea98a5329934d76e2197901d4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783202"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119944"
 ---
 # <a name="cbasepropertypagecbasepropertypage-constructor"></a>Construtor CBasePropertyPage. CBasePropertyPage
 
@@ -94,7 +94,7 @@ CMyProp::CMyProp(IUnknown *pUnk) :
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
