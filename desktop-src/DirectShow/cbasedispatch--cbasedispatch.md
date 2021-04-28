@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CBaseDispatch. ~ CBaseDispatch destruidor-método Destruitor.
 ms.assetid: b3256b3f-20c5-4611-abbe-d0c5ee470922
 title: CBaseDispatch. ~ CBaseDispatch Destruitor (Ctlutil. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 68ca35245e207be09a236d69d7f507f3bbd946f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0984a4a7e1bf69c4d650963b8e50431fdd0b3107
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752304"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099904"
 ---
-# <a name="cbasedispatchcbasedispatch-destructor"></a><span data-ttu-id="df814-103">Destruidor CBaseDispatch. ~ CBaseDispatch</span><span class="sxs-lookup"><span data-stu-id="df814-103">CBaseDispatch.~CBaseDispatch destructor</span></span>
+# <a name="cbasedispatchcbasedispatch-destructor"></a><span data-ttu-id="473c1-103">Destruidor CBaseDispatch. ~ CBaseDispatch</span><span class="sxs-lookup"><span data-stu-id="473c1-103">CBaseDispatch.~CBaseDispatch destructor</span></span>
 
-<span data-ttu-id="df814-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="df814-104">Destructor method.</span></span>
+<span data-ttu-id="473c1-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="473c1-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="df814-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="df814-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="473c1-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="473c1-105">Syntax</span></span>
 
 
 ```C++
@@ -36,22 +36,22 @@ ms.locfileid: "105752304"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="df814-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="df814-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="473c1-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="473c1-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="df814-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="df814-107">Requirement</span></span> | <span data-ttu-id="df814-108">Valor</span><span class="sxs-lookup"><span data-stu-id="df814-108">Value</span></span> |
+| <span data-ttu-id="473c1-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="473c1-107">Requirement</span></span> | <span data-ttu-id="473c1-108">Valor</span><span class="sxs-lookup"><span data-stu-id="473c1-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="df814-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="df814-109">Header</span></span><br/>  | <dl> <span data-ttu-id="df814-110"><dt>Ctlutil. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="df814-110"><dt>Ctlutil.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
-| <span data-ttu-id="df814-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="df814-111">Library</span></span><br/> | <dl> <span data-ttu-id="df814-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="df814-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="473c1-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="473c1-109">Header</span></span><br/>  | <dl> <span data-ttu-id="473c1-110"><dt>Ctlutil. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="473c1-110"><dt>Ctlutil.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
+| <span data-ttu-id="473c1-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="473c1-111">Library</span></span><br/> | <dl> <span data-ttu-id="473c1-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="473c1-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="df814-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="df814-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="473c1-113">Consulte também</span><span class="sxs-lookup"><span data-stu-id="473c1-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="df814-114">**Classe CBaseDispatch**</span><span class="sxs-lookup"><span data-stu-id="df814-114">**CBaseDispatch Class**</span></span>](cbasedispatch.md)
+[<span data-ttu-id="473c1-114">**Classe CBaseDispatch**</span><span class="sxs-lookup"><span data-stu-id="473c1-114">**CBaseDispatch Class**</span></span>](cbasedispatch.md)
 </dt> </dl>
 
  

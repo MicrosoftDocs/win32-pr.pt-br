@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CBaseStreamControl. ~ CBaseStreamControl destruidor-método Destruitor.
 ms.assetid: 292b4e33-02e2-4325-9784-bd41893e1ff4
 title: CBaseStreamControl. ~ CBaseStreamControl Destruitor (Strmctl. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f52ed08f197e9649347ebdb7235be5c997bc5a26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab25629d546dbbee656e5420fe0d94ca38fa227c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752094"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119844"
 ---
-# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a><span data-ttu-id="4da76-103">Destruidor CBaseStreamControl. ~ CBaseStreamControl</span><span class="sxs-lookup"><span data-stu-id="4da76-103">CBaseStreamControl.~CBaseStreamControl destructor</span></span>
+# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a><span data-ttu-id="af375-103">Destruidor CBaseStreamControl. ~ CBaseStreamControl</span><span class="sxs-lookup"><span data-stu-id="af375-103">CBaseStreamControl.~CBaseStreamControl destructor</span></span>
 
-<span data-ttu-id="4da76-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="4da76-104">Destructor method.</span></span>
+<span data-ttu-id="af375-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="af375-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4da76-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="4da76-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="af375-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="af375-105">Syntax</span></span>
 
 
 ```C++
@@ -36,22 +36,22 @@ ms.locfileid: "105752094"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="4da76-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4da76-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="af375-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="af375-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4da76-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="4da76-107">Requirement</span></span> | <span data-ttu-id="4da76-108">Valor</span><span class="sxs-lookup"><span data-stu-id="4da76-108">Value</span></span> |
+| <span data-ttu-id="af375-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="af375-107">Requirement</span></span> | <span data-ttu-id="af375-108">Valor</span><span class="sxs-lookup"><span data-stu-id="af375-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4da76-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4da76-109">Header</span></span><br/>  | <dl> <span data-ttu-id="4da76-110"><dt>Strmctl. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="4da76-110"><dt>Strmctl.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
-| <span data-ttu-id="4da76-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="4da76-111">Library</span></span><br/> | <dl> <span data-ttu-id="4da76-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="4da76-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="af375-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="af375-109">Header</span></span><br/>  | <dl> <span data-ttu-id="af375-110"><dt>Strmctl. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="af375-110"><dt>Strmctl.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
+| <span data-ttu-id="af375-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="af375-111">Library</span></span><br/> | <dl> <span data-ttu-id="af375-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="af375-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4da76-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="4da76-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af375-113">Consulte também</span><span class="sxs-lookup"><span data-stu-id="af375-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4da76-114">**Classe CBaseStreamControl**</span><span class="sxs-lookup"><span data-stu-id="4da76-114">**CBaseStreamControl Class**</span></span>](cbasestreamcontrol.md)
+[<span data-ttu-id="af375-114">**Classe CBaseStreamControl**</span><span class="sxs-lookup"><span data-stu-id="af375-114">**CBaseStreamControl Class**</span></span>](cbasestreamcontrol.md)
 </dt> </dl>
 
  
