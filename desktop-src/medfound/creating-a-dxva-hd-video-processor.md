@@ -1,24 +1,24 @@
 ---
-description: .
+description: Criando um processador de vídeo de DXVA-HD
 ms.assetid: 43a97dc8-19b3-412c-a015-339099bf4f6c
 title: Criando um processador de vídeo de DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee524681cad43a8e140421e8e6eff30d44cabcc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e89c5a361335f83296eec538a5a6a710b9e19604
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764980"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102594"
 ---
-# <a name="creating-a-dxva-hd-video-processor"></a><span data-ttu-id="ae9aa-103">Criando um processador de vídeo de DXVA-HD</span><span class="sxs-lookup"><span data-stu-id="ae9aa-103">Creating a DXVA-HD Video Processor</span></span>
+# <a name="creating-a-dxva-hd-video-processor"></a><span data-ttu-id="6bcb6-103">Criando um processador de vídeo de DXVA-HD</span><span class="sxs-lookup"><span data-stu-id="6bcb6-103">Creating a DXVA-HD Video Processor</span></span>
 
-<span data-ttu-id="ae9aa-104">A alta definição da aceleração de vídeo do Microsoft DirectX (DXVA-HD) usa duas interfaces primárias:</span><span class="sxs-lookup"><span data-stu-id="ae9aa-104">Microsoft DirectX Video Acceleration High Definition (DXVA-HD) uses two primary interfaces:</span></span>
+<span data-ttu-id="6bcb6-104">A alta definição da aceleração de vídeo do Microsoft DirectX (DXVA-HD) usa duas interfaces primárias:</span><span class="sxs-lookup"><span data-stu-id="6bcb6-104">Microsoft DirectX Video Acceleration High Definition (DXVA-HD) uses two primary interfaces:</span></span>
 
--   <span data-ttu-id="ae9aa-105">[**IDXVAHD \_ Dispositivo**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device).</span><span class="sxs-lookup"><span data-stu-id="ae9aa-105">[**IDXVAHD\_Device**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device).</span></span> <span data-ttu-id="ae9aa-106">Representa o dispositivo DXVA-HD.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-106">Represents the DXVA-HD device.</span></span> <span data-ttu-id="ae9aa-107">Use essa interface para consultar os recursos do dispositivo e criar o processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-107">Use this interface to query the device capabilities and create the video processor.</span></span>
--   <span data-ttu-id="ae9aa-108">[**IDXVAHD \_ VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor).</span><span class="sxs-lookup"><span data-stu-id="ae9aa-108">[**IDXVAHD\_VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor).</span></span> <span data-ttu-id="ae9aa-109">Representa um conjunto de recursos de processamento de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-109">Represents a set of video processing capabilities.</span></span> <span data-ttu-id="ae9aa-110">Use esta interface para executar o blit de processamento de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-110">Use this interface to perform the video processing blit.</span></span>
+-   <span data-ttu-id="6bcb6-105">[**IDXVAHD \_ Dispositivo**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device).</span><span class="sxs-lookup"><span data-stu-id="6bcb6-105">[**IDXVAHD\_Device**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device).</span></span> <span data-ttu-id="6bcb6-106">Representa o dispositivo DXVA-HD.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-106">Represents the DXVA-HD device.</span></span> <span data-ttu-id="6bcb6-107">Use essa interface para consultar os recursos do dispositivo e criar o processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-107">Use this interface to query the device capabilities and create the video processor.</span></span>
+-   <span data-ttu-id="6bcb6-108">[**IDXVAHD \_ VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor).</span><span class="sxs-lookup"><span data-stu-id="6bcb6-108">[**IDXVAHD\_VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor).</span></span> <span data-ttu-id="6bcb6-109">Representa um conjunto de recursos de processamento de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-109">Represents a set of video processing capabilities.</span></span> <span data-ttu-id="6bcb6-110">Use esta interface para executar o blit de processamento de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-110">Use this interface to perform the video processing blit.</span></span>
 
-<span data-ttu-id="ae9aa-111">No código a seguir, as seguintes variáveis globais são presumidas:</span><span class="sxs-lookup"><span data-stu-id="ae9aa-111">In the code that follows, the following global variables are assumed:</span></span>
+<span data-ttu-id="6bcb6-111">No código a seguir, as seguintes variáveis globais são presumidas:</span><span class="sxs-lookup"><span data-stu-id="6bcb6-111">In the code that follows, the following global variables are assumed:</span></span>
 
 
 ```C++
@@ -37,9 +37,9 @@ const UINT          VIDEO_HEIGHT         = 480;
 
 
 
-<span data-ttu-id="ae9aa-112">Para criar um processador de vídeo DXVA-HD:</span><span class="sxs-lookup"><span data-stu-id="ae9aa-112">To create a DXVA-HD video processor:</span></span>
+<span data-ttu-id="6bcb6-112">Para criar um processador de vídeo DXVA-HD:</span><span class="sxs-lookup"><span data-stu-id="6bcb6-112">To create a DXVA-HD video processor:</span></span>
 
-1.  <span data-ttu-id="ae9aa-113">Preencha uma estrutura [**\_ \_ desc de conteúdo do DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) com uma descrição do conteúdo do vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-113">Fill in a [**DXVAHD\_CONTENT\_DESC**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) structure with a description of the video content.</span></span> <span data-ttu-id="ae9aa-114">O driver usa essas informações como uma dica para otimizar os recursos do processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-114">The driver uses this information as a hint to optimize the capabilities of the video processor.</span></span> <span data-ttu-id="ae9aa-115">A estrutura não contém uma descrição completa do formato.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-115">The structure does not contain a complete format description.</span></span>
+1.  <span data-ttu-id="6bcb6-113">Preencha uma estrutura [**\_ \_ desc de conteúdo do DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) com uma descrição do conteúdo do vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-113">Fill in a [**DXVAHD\_CONTENT\_DESC**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) structure with a description of the video content.</span></span> <span data-ttu-id="6bcb6-114">O driver usa essas informações como uma dica para otimizar os recursos do processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-114">The driver uses this information as a hint to optimize the capabilities of the video processor.</span></span> <span data-ttu-id="6bcb6-115">A estrutura não contém uma descrição completa do formato.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-115">The structure does not contain a complete format description.</span></span>
     ```C++
         DXVAHD_RATIONAL fps = { VIDEO_FPS, 1 }; 
 
@@ -56,7 +56,7 @@ const UINT          VIDEO_HEIGHT         = 480;
 
     
 
-2.  <span data-ttu-id="ae9aa-116">Chame [**DXVAHD \_ CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) para criar o dispositivo DXVA-HD.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-116">Call [**DXVAHD\_CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) to create the DXVA-HD device.</span></span> <span data-ttu-id="ae9aa-117">Essa função retorna um ponteiro para a interface do [**\_ dispositivo IDXVAHD**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device) .</span><span class="sxs-lookup"><span data-stu-id="ae9aa-117">This function returns a pointer to the [**IDXVAHD\_Device**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device) interface.</span></span>
+2.  <span data-ttu-id="6bcb6-116">Chame [**DXVAHD \_ CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) para criar o dispositivo DXVA-HD.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-116">Call [**DXVAHD\_CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) to create the DXVA-HD device.</span></span> <span data-ttu-id="6bcb6-117">Essa função retorna um ponteiro para a interface do [**\_ dispositivo IDXVAHD**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device) .</span><span class="sxs-lookup"><span data-stu-id="6bcb6-117">This function returns a pointer to the [**IDXVAHD\_Device**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device) interface.</span></span>
     ```C++
         hr = DXVAHD_CreateDevice(g_pD3DDevice, &desc, DXVAHD_DEVICE_USAGE_PLAYBACK_NORMAL,
             NULL, &pDXVAHD);
@@ -64,7 +64,7 @@ const UINT          VIDEO_HEIGHT         = 480;
 
     
 
-3.  <span data-ttu-id="ae9aa-118">Chame [**o \_ dispositivo IDXVAHD:: GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps).</span><span class="sxs-lookup"><span data-stu-id="ae9aa-118">Call [**IDXVAHD\_Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps).</span></span> <span data-ttu-id="ae9aa-119">Esse método preenche uma estrutura [**DXVAHD \_ VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) com os recursos do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-119">This method fills in a [**DXVAHD\_VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) structure with the device capabilities.</span></span> <span data-ttu-id="ae9aa-120">Se você precisar de recursos de processamento de vídeo específicos, como Luma de criação de imagem ou filtragem de imagens, verifique a disponibilidade usando essa estrutura.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-120">If you require specific video processing features, such as luma keying or image filtering, check their availability by using this structure.</span></span>
+3.  <span data-ttu-id="6bcb6-118">Chame [**o \_ dispositivo IDXVAHD:: GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps).</span><span class="sxs-lookup"><span data-stu-id="6bcb6-118">Call [**IDXVAHD\_Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps).</span></span> <span data-ttu-id="6bcb6-119">Esse método preenche uma estrutura [**DXVAHD \_ VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) com os recursos do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-119">This method fills in a [**DXVAHD\_VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) structure with the device capabilities.</span></span> <span data-ttu-id="6bcb6-120">Se você precisar de recursos de processamento de vídeo específicos, como Luma de criação de imagem ou filtragem de imagens, verifique a disponibilidade usando essa estrutura.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-120">If you require specific video processing features, such as luma keying or image filtering, check their availability by using this structure.</span></span>
     ```C++
         DXVAHD_VPDEVCAPS caps;
 
@@ -73,9 +73,9 @@ const UINT          VIDEO_HEIGHT         = 480;
 
     
 
-4.  <span data-ttu-id="ae9aa-121">Verifique se o dispositivo DXVA-HD dá suporte aos formatos de vídeo de entrada que você precisa.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-121">Check whether the DXVA-HD device supports the input video formats that you require.</span></span> <span data-ttu-id="ae9aa-122">O tópico [verificando os formatos de DXVA-HD com suporte](checking-supported-dxva-hd-formats.md) descreve essa etapa mais detalhadamente.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-122">The topic [Checking Supported DXVA-HD Formats](checking-supported-dxva-hd-formats.md) describes this step in more detail.</span></span>
-5.  <span data-ttu-id="ae9aa-123">Verifique se o dispositivo DXVA-HD dá suporte ao formato de saída que você precisa.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-123">Check whether the DXVA-HD device supports the output format that you require.</span></span> <span data-ttu-id="ae9aa-124">A seção [verificando os formatos de DXVA-HD com suporte](checking-supported-dxva-hd-formats.md) descreve essa etapa mais detalhadamente.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-124">The section [Checking Supported DXVA-HD Formats](checking-supported-dxva-hd-formats.md) describes this step in more detail.</span></span>
-6.  <span data-ttu-id="ae9aa-125">Aloque uma matriz de estruturas [**DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) .</span><span class="sxs-lookup"><span data-stu-id="ae9aa-125">Allocate an array of [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structures.</span></span> <span data-ttu-id="ae9aa-126">O número de elementos da matriz que devem ser alocados é fornecido pelo membro **VideoProcessorCount** da estrutura [**DXVAHD \_ VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) , obtida na etapa 3.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-126">The number of array elements that must be allocated is given by the **VideoProcessorCount** member of the [**DXVAHD\_VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) structure, obtained in step 3.</span></span>
+4.  <span data-ttu-id="6bcb6-121">Verifique se o dispositivo DXVA-HD dá suporte aos formatos de vídeo de entrada que você precisa.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-121">Check whether the DXVA-HD device supports the input video formats that you require.</span></span> <span data-ttu-id="6bcb6-122">O tópico [verificando os formatos de DXVA-HD com suporte](checking-supported-dxva-hd-formats.md) descreve essa etapa mais detalhadamente.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-122">The topic [Checking Supported DXVA-HD Formats](checking-supported-dxva-hd-formats.md) describes this step in more detail.</span></span>
+5.  <span data-ttu-id="6bcb6-123">Verifique se o dispositivo DXVA-HD dá suporte ao formato de saída que você precisa.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-123">Check whether the DXVA-HD device supports the output format that you require.</span></span> <span data-ttu-id="6bcb6-124">A seção [verificando os formatos de DXVA-HD com suporte](checking-supported-dxva-hd-formats.md) descreve essa etapa mais detalhadamente.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-124">The section [Checking Supported DXVA-HD Formats](checking-supported-dxva-hd-formats.md) describes this step in more detail.</span></span>
+6.  <span data-ttu-id="6bcb6-125">Aloque uma matriz de estruturas [**DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) .</span><span class="sxs-lookup"><span data-stu-id="6bcb6-125">Allocate an array of [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structures.</span></span> <span data-ttu-id="6bcb6-126">O número de elementos da matriz que devem ser alocados é fornecido pelo membro **VideoProcessorCount** da estrutura [**DXVAHD \_ VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) , obtida na etapa 3.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-126">The number of array elements that must be allocated is given by the **VideoProcessorCount** member of the [**DXVAHD\_VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) structure, obtained in step 3.</span></span>
     ```C++
         // Create the array of video processor caps. 
         
@@ -90,8 +90,8 @@ const UINT          VIDEO_HEIGHT         = 480;
 
     
 
-7.  <span data-ttu-id="ae9aa-127">Cada estrutura [**DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) representa um processador de vídeo distinto.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-127">Each [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structure represents a distinct video processor.</span></span> <span data-ttu-id="ae9aa-128">Você pode executar um loop nessa matriz para descobrir os recursos de cada processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-128">You can loop through this array to discover the capabilities of each video processor.</span></span> <span data-ttu-id="ae9aa-129">A estrutura inclui informações sobre os recursos de desentrelaçamento, telecineon e conversão de taxa de quadros do processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-129">The structure includes information about the deinterlacing, telecine, and frame-rate conversion capabilities of the video processor.</span></span>
-8.  <span data-ttu-id="ae9aa-130">Selecione um processador de vídeo para criar.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-130">Select a video processor to create.</span></span> <span data-ttu-id="ae9aa-131">O membro **VPGuid** da estrutura [**\_ VPCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) contém um GUID que identifica exclusivamente o processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-131">The **VPGuid** member of the [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structure contains a GUID that uniquely identifies the video processor.</span></span> <span data-ttu-id="ae9aa-132">Passe este GUID para o método [**IDXVAHD \_ Device:: CreateVideoProcessor**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) .</span><span class="sxs-lookup"><span data-stu-id="ae9aa-132">Pass this GUID to the [**IDXVAHD\_Device::CreateVideoProcessor**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) method.</span></span> <span data-ttu-id="ae9aa-133">O método retorna um ponteiro [**IDXVAHD \_ VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor) .</span><span class="sxs-lookup"><span data-stu-id="ae9aa-133">The method returns an [**IDXVAHD\_VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor) pointer.</span></span>
+7.  <span data-ttu-id="6bcb6-127">Cada estrutura [**DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) representa um processador de vídeo distinto.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-127">Each [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structure represents a distinct video processor.</span></span> <span data-ttu-id="6bcb6-128">Você pode executar um loop nessa matriz para descobrir os recursos de cada processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-128">You can loop through this array to discover the capabilities of each video processor.</span></span> <span data-ttu-id="6bcb6-129">A estrutura inclui informações sobre os recursos de desentrelaçamento, telecineon e conversão de taxa de quadros do processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-129">The structure includes information about the deinterlacing, telecine, and frame-rate conversion capabilities of the video processor.</span></span>
+8.  <span data-ttu-id="6bcb6-130">Selecione um processador de vídeo para criar.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-130">Select a video processor to create.</span></span> <span data-ttu-id="6bcb6-131">O membro **VPGuid** da estrutura [**\_ VPCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) contém um GUID que identifica exclusivamente o processador de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-131">The **VPGuid** member of the [**DXVAHD\_VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) structure contains a GUID that uniquely identifies the video processor.</span></span> <span data-ttu-id="6bcb6-132">Passe este GUID para o método [**IDXVAHD \_ Device:: CreateVideoProcessor**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) .</span><span class="sxs-lookup"><span data-stu-id="6bcb6-132">Pass this GUID to the [**IDXVAHD\_Device::CreateVideoProcessor**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) method.</span></span> <span data-ttu-id="6bcb6-133">O método retorna um ponteiro [**IDXVAHD \_ VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor) .</span><span class="sxs-lookup"><span data-stu-id="6bcb6-133">The method returns an [**IDXVAHD\_VideoProcessor**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor) pointer.</span></span>
     ```C++
         HRESULT hr = pDXVAHD->GetVideoProcessorCaps(
             caps.VideoProcessorCount, pVPCaps);
@@ -99,9 +99,9 @@ const UINT          VIDEO_HEIGHT         = 480;
 
     
 
-9.  <span data-ttu-id="ae9aa-134">Opcionalmente, chame [**IDXVAHD \_ Device:: CreateVideoSurface**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideosurface) para criar uma matriz de superfícies de vídeo de entrada.</span><span class="sxs-lookup"><span data-stu-id="ae9aa-134">Optionally, call [**IDXVAHD\_Device::CreateVideoSurface**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideosurface) to create an array of input video surfaces.</span></span>
+9.  <span data-ttu-id="6bcb6-134">Opcionalmente, chame [**IDXVAHD \_ Device:: CreateVideoSurface**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideosurface) para criar uma matriz de superfícies de vídeo de entrada.</span><span class="sxs-lookup"><span data-stu-id="6bcb6-134">Optionally, call [**IDXVAHD\_Device::CreateVideoSurface**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideosurface) to create an array of input video surfaces.</span></span>
 
-<span data-ttu-id="ae9aa-135">O exemplo de código a seguir mostra a sequência completa de etapas:</span><span class="sxs-lookup"><span data-stu-id="ae9aa-135">The following code example shows the complete sequence of steps:</span></span>
+<span data-ttu-id="6bcb6-135">O exemplo de código a seguir mostra a sequência completa de etapas:</span><span class="sxs-lookup"><span data-stu-id="6bcb6-135">The following code example shows the complete sequence of steps:</span></span>
 
 
 ```C++
@@ -222,7 +222,7 @@ done:
 
 
 
-<span data-ttu-id="ae9aa-136">A função CreateVPDevice mostrada neste exemplo cria o processador de vídeo (etapas 5 a 7):</span><span class="sxs-lookup"><span data-stu-id="ae9aa-136">The CreateVPDevice function show in this example creates the video processor (steps 5–7):</span></span>
+<span data-ttu-id="6bcb6-136">A função CreateVPDevice mostrada neste exemplo cria o processador de vídeo (etapas 5 a 7):</span><span class="sxs-lookup"><span data-stu-id="6bcb6-136">The CreateVPDevice function show in this example creates the video processor (steps 5–7):</span></span>
 
 
 ```C++
@@ -266,11 +266,11 @@ HRESULT CreateVPDevice(
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="ae9aa-137">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="ae9aa-137">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6bcb6-137">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6bcb6-137">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ae9aa-138">DXVA-HD</span><span class="sxs-lookup"><span data-stu-id="ae9aa-138">DXVA-HD</span></span>](dxva-hd.md)
+[<span data-ttu-id="6bcb6-138">DXVA-HD</span><span class="sxs-lookup"><span data-stu-id="6bcb6-138">DXVA-HD</span></span>](dxva-hd.md)
 </dt> </dl>
 
  
