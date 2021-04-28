@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Initialize.
+description: Função IWICBitmapClipper_Initialize_Proxy function-proxy para o método Initialize.
 ms.assetid: 60925f5c-aca4-4f49-96d2-9b58d8310e3c
 title: Função IWICBitmapClipper_Initialize_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 83c41b8802546b36ad309306ecc83a34c5d3a0c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce3c745d27928765fdfdf664c423f7e2146cbd5f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090280"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086384"
 ---
 # <a name="iwicbitmapclipper_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICBitmapClipper \_
 
@@ -45,33 +45,33 @@ HRESULT IWICBitmapClipper_Initialize_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) \** _
+Tipo: **[ **IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper)\***
 
-Ponteiro para este objeto [_ *IWICBitmapClipper* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) .
+Ponteiro para este objeto [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) .
 
 </dd> <dt>
 
 *pISource* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 A origem do bitmap de entrada.
 
 </dd> <dt>
 
-_prc * \[ in\]
+*prc* \[ no\]
 </dt> <dd>
 
-Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \** _
+Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \***
 
 O retângulo da origem do bitmap a ser recortado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

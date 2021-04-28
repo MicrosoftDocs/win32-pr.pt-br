@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Classe UdpIp_V0-essa classe é a classe pai para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 2c7ac6b2-7dd7-4da7-ae0b-ac0ffffeb74b
 title: Classe UdpIp_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b37bd31ea5ec2678e933b9f42efd13282b85d23a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 845466d630a671416ac465d0b73d99976d4521e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967464"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105414"
 ---
 # <a name="udpip_v0-class"></a>\_Classe UdpIp V0
 
@@ -49,7 +49,7 @@ A classe **UdpIp \_ V0** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

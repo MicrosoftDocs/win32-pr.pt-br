@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o tamanho da seleção atual está prestes a ser alterado, como por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
+description: Evento InkPicture. SelectionResizing – ocorre quando o tamanho da seleção atual está prestes a ser alterado, como por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
 ms.assetid: da708712-2773-45f5-9d9b-49fabe7fdb5a
 title: Evento InkPicture. SelectionResizing (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa1b7923810777c6ebe0af3364121cbcee67b18d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8f70b0b502fe426cfd94ce9002e8bbfc5260a88
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922650"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086414"
 ---
 # <a name="inkpictureselectionresizing-event"></a>Evento InkPicture. SelectionResizing
 
@@ -42,7 +42,7 @@ O retângulo delimitador da seleção após o evento **SelectionResizing** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -63,7 +63,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

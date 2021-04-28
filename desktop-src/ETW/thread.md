@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Classe de thread-essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 0bf14240-3b8d-4eb5-b751-7b2e23b55762
 title: Classe Thread
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c4af87462607b675e46b3459a811925fbefe3ed5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 121a8d4aa04017011648d80329ee02396582987a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172349"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105524"
 ---
 # <a name="thread-class"></a>Classe Thread
 
@@ -70,7 +70,7 @@ Eventos de início de processo e thread podem ser registrados no contexto do pro
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

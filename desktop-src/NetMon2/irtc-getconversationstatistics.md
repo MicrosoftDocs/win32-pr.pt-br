@@ -1,5 +1,5 @@
 ---
-description: O método GetConversationStatistics recupera informações de sessão e de estação sobre a captura atual.
+description: 'Método IRTC:: GetConversationStatistics – o método GetConversationStatistics recupera informações de sessão e de estação sobre a captura atual.'
 ms.assetid: 27f364cd-fee9-4262-b181-c5f15fb12e51
 title: 'Método IRTC:: GetConversationStatistics (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 758488cb3c3f65922bbf6aac4f39774a5430fc92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d2476f4eb33d7e74d0de8363fa88d5e688a2e73
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827865"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110694"
 ---
 # <a name="irtcgetconversationstatistics-method"></a>Método IRTC:: GetConversationStatistics
 
@@ -79,7 +79,7 @@ Sinalizador usado para informar Monitor de Rede para limpar o armazenamento inte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -117,7 +117,7 @@ Para recuperar outros tipos de estatísticas, chame o método [IRTC:: GetTotalSt
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

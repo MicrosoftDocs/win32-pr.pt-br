@@ -1,25 +1,13 @@
 ---
-description: 'Exibe a caixa de diálogo resultados da pesquisa: computadores. A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.'
-ms.assetid: 0304b955-afde-4de4-824a-9ec9c9530360
-title: Método Shell. FindComputer (shldisp. h)
-ms.topic: reference
-ms.date: 05/31/2018
-topic_type:
+Descrição: método Shell. FindComputer-' exibe a caixa de diálogo resultados da pesquisa: computadores. A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.
+MS. AssetID: 0304b955-AFde-4de4-824a-9ec9c9530360 título: Shell. FindComputer método (shldisp. h) MS. Topic: referência MS. Date: 05/31/2018 topic_type: 
 - APIRef
-- kbSyntax
-api_name:
-- Shell.FindComputer
-api_type:
-- COM
-api_location:
+- api_name kbSyntax: 
+- Api_type do Shell. FindComputer: 
+- Api_location COM: 
 - Shell32.dll
-ms.openlocfilehash: 3824eeb98bfac11e007d1bf7dd9f89153a7b73ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968173"
 ---
+
 # <a name="shellfindcomputer-method"></a>Método Shell. FindComputer
 
 Exibe a caixa de diálogo **resultados da pesquisa: computadores** . A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.
@@ -45,7 +33,7 @@ Shell.FindComputer()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -119,15 +107,15 @@ End Sub
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o ponteiro do mouse está sobre o objeto InkCollector ou InkOverlay e um botão do mouse é liberado.
+description: Evento InkCollector. MouseUp – ocorre quando o ponteiro do mouse está sobre o objeto InkCollector ou InkOverlay e um botão do mouse é liberado.
 ms.assetid: 6dcc6c68-89f7-4020-b378-56df9d46974b
 title: Evento InkCollector. MouseUp (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f217cf6f5eeff930c1746d1a5ceac180686942
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc4fde64603a00ecb8a47d3869f2eb90352fcc4f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104460972"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110144"
 ---
 # <a name="inkcollectormouseup-event"></a>Evento InkCollector. MouseUp
 
@@ -69,7 +69,7 @@ A coordenada y, em pixels, de um clique do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -102,7 +102,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

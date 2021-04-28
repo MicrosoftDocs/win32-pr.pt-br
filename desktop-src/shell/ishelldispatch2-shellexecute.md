@@ -1,5 +1,5 @@
 ---
-description: Executa uma operação especificada em um arquivo especificado.
+description: Método IShellDispatch2. ShellExecute-executa uma operação especificada em um arquivo especificado.
 ms.assetid: a55e804c-ed7c-4b22-b86f-8e5653976654
 title: Método IShellDispatch2. ShellExecute (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ed5a8a2732f8ca358a0582d1da23aa7ffa7a98df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c058275948d5d96805ae24a76389321d7c69b8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967518"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117014"
 ---
 # <a name="ishelldispatch2shellexecute-method"></a>Método IShellDispatch2. ShellExecute
 
@@ -104,11 +104,11 @@ Uma recomendação sobre como a janela do aplicativo deve ser exibida inicialmen
 
 | Valor                                                                                                                               | Significado                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt></dt> <dt>0</dt> </dl>  | Abra o aplicativo com uma janela oculta.<br/>                                                                                                    |
+| <dl> <dt></dt><dt>0</dt> </dl>  | Abra o aplicativo com uma janela oculta.<br/>                                                                                                    |
 | <dl> <dt></dt> <dt>1</dt> </dl>  | Abra o aplicativo com uma janela normal. Se a janela for minimizada ou maximizada, o sistema a restaurará para seu tamanho e posição originais.<br/> |
 | <dl> <dt></dt> <dt>2</dt> </dl>  | Abra o aplicativo com uma janela minimizada.<br/>                                                                                                 |
 | <dl> <dt></dt> <dt>3</dt> </dl>  | Abra o aplicativo com uma janela maximizada.<br/>                                                                                                 |
-| <dl> <dt></dt> <dt>4</dt> </dl>  | Abra o aplicativo com sua janela em seu tamanho e posição mais recentes. A janela ativa permanece ativa.<br/>                                  |
+| <dl> <dt></dt><dt>4</dt> </dl>  | Abra o aplicativo com sua janela em seu tamanho e posição mais recentes. A janela ativa permanece ativa.<br/>                                  |
 | <dl> <dt></dt><dt>5</dt> </dl>  | Abra o aplicativo com sua janela em seu tamanho e posição atuais.<br/>                                                                        |
 | <dl> <dt></dt><dt>7</dt> </dl>  | Abra o aplicativo com uma janela minimizada. A janela ativa permanece ativa.<br/>                                                               |
 | <dl> <dt></dt><dt>10</dt> </dl> | Abra o aplicativo com sua janela no estado padrão especificado pelo aplicativo.<br/>                                                       |

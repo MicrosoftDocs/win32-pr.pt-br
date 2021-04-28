@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando a posição da seleção atual está prestes a ser alterada, como por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
+description: Evento InkOverlay. SelectionMoving – ocorre quando a posição da seleção atual está prestes a ser alterada, como por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a propriedade Selection.
 ms.assetid: 7cd7a5b1-4ae6-4038-afd0-6ef9d0700938
 title: Evento InkOverlay. SelectionMoving (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9afc77198a6a7228e44b3f2bad8015c25a939812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee4784e6b4c475c30d9b2a3ab30fe166ea3d67d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782679"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086694"
 ---
 # <a name="inkoverlayselectionmoving-event"></a>Evento InkOverlay. SelectionMoving
 
@@ -42,7 +42,7 @@ O retângulo para o qual a seleção é movida após o evento **SelectionMoving*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -63,7 +63,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

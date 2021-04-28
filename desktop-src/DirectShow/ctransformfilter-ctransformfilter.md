@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CTransformFilter. CTransformFilter-método de construtor.
 ms.assetid: a64c3e29-91f2-455f-aac1-1e4ecce6958d
 title: Construtor CTransformFilter. CTransformFilter (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39569dff69c2ab1ebb635cb69a4c71602a7400d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fce67bbe22361bdbae0cd3e51768e0cf0743d97d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752485"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098714"
 ---
 # <a name="ctransformfilterctransformfilter-constructor"></a>Construtor CTransformFilter. CTransformFilter
 
@@ -80,7 +80,7 @@ O construtor não cria os Pins do filtro. Isso ocorre durante a primeira chamada
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

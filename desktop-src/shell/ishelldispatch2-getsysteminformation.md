@@ -1,5 +1,5 @@
 ---
-description: Recupera informações do sistema.
+description: Método IShellDispatch2. GetSystemInformation – recupera informações do sistema.
 ms.assetid: 57c066e3-080f-4ecc-b56e-877f0569e901
 title: Método IShellDispatch2. GetSystemInformation (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 624c7383d458f20a13f0e2249ec302181fc4a7ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a81ac091dc1905c1cbcd2c41575c907ce957e60c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827399"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117104"
 ---
 # <a name="ishelldispatch2getsysteminformation-method"></a>Método IShellDispatch2. GetSystemInformation
 
@@ -58,7 +58,7 @@ Uma **cadeia de caracteres** que especifica as informações do sistema que est�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

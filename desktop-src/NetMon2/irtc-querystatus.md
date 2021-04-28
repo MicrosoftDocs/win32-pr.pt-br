@@ -1,5 +1,5 @@
 ---
-description: O método QueryStatus recupera o status do NPP.
+description: 'Método IRTC:: QueryStatus – o método QueryStatus recupera o status do NPP.'
 ms.assetid: 4517eb34-087a-491c-97b5-cbe9190fa7a2
 title: 'Método IRTC:: QueryStatus (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: e05120353cd39db661cf1b4309353034c184cd66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd8c18d19df7d577ad219742520630f00122a41
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750582"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110604"
 ---
 # <a name="irtcquerystatus-method"></a>Método IRTC:: QueryStatus
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [NETWORKSTATUS](networkstatus.md) retornada que indi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -80,7 +80,7 @@ Esse método pode ser chamado a qualquer momento depois que o método [CreateNPP
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do Tablet.
+description: Evento InkPicture. CursorInRange – ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do Tablet.
 ms.assetid: e921e175-a2cf-45e6-bb81-dc82e384d3b1
 title: Evento InkPicture. CursorInRange (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab0dead1fa5bd89452af15a19f36a132c6843d67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d05d703022e8d97df0d8d74a73e20af3d91b8531
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811467"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086574"
 ---
 # <a name="inkpicturecursorinrange-event"></a>Evento InkPicture. CursorInRange
 
@@ -55,7 +55,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -78,7 +78,7 @@ O evento **CursorInRange** é disparado mesmo quando estiver no modo de seleçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

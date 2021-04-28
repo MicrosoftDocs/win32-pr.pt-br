@@ -1,5 +1,5 @@
 ---
-description: Anexa uma superfície a outra superfície.
+description: Função NtGdiDdAddAttachedSurface – anexa uma superfície a outra superfície.
 ms.assetid: c4ef9e96-c498-4175-a2cd-22e0f88fd86e
 title: Função NtGdiDdAddAttachedSurface (Ntgdi. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: d6e87d3a077c1381eeaa306e594daec0f5b855d1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dacaa07a586a88c808d8da07b8233002e8ae5055
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826235"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085784"
 ---
 # <a name="ntgdiddaddattachedsurface-function"></a>Função NtGdiDdAddAttachedSurface
 
@@ -67,7 +67,7 @@ Ponteiro para uma [**estrutura \_ ADDATTACHEDSURFACEDATA do DD**](/windows/win32
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdAddAttachedSurface** retorna um dos seguintes códigos de retorno de chamada.
 
@@ -94,7 +94,7 @@ Ponteiro para uma [**estrutura \_ ADDATTACHEDSURFACEDATA do DD**](/windows/win32
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

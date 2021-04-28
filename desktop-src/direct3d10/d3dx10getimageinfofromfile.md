@@ -1,5 +1,5 @@
 ---
-description: Recupera informações sobre um determinado arquivo de imagem.
+description: Função D3DX10GetImageInfoFromFile – recupera informações sobre um determinado arquivo de imagem.
 ms.assetid: 59bdce45-82d9-42da-b847-a29ca71919b5
 title: Função D3DX10GetImageInfoFromFile (D3DX10Tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 836d2e18b5c1c48bbe64d0026e97f8ebc5a066ba
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e11c4cb52176b0a144e164501f8c70d1e3678c1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764556"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098324"
 ---
 # <a name="d3dx10getimageinfofromfile-function"></a>Função D3DX10GetImageInfoFromFile
 
@@ -79,7 +79,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -100,7 +100,7 @@ Essa função dá suporte a cadeias de caracteres Unicode e ANSI.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

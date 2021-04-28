@@ -1,5 +1,5 @@
 ---
-description: 'O método ativo notifica o PIN de que o filtro está ativo agora. Esse método substitui o método CBasePin:: active.'
+description: 'Método CRenderedInputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora. Esse método substitui o método CBasePin:: active.'
 ms.assetid: e98ca947-df2f-41a7-9785-b35bd1dde1e6
 title: Método CRenderedInputPin. Active (Amextra. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ae56439f5e19aa5c039ac81bdd8a7aafe0f2174
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8c9b06f41454d2cb9a7ac35dd7e8f8b335632f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771841"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098924"
 ---
 # <a name="crenderedinputpinactive-method"></a>Método CRenderedInputPin. active
 
@@ -40,7 +40,7 @@ HRESULT Active();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se for bem-sucedido ou um código de erro do contrário.
 
@@ -55,7 +55,7 @@ Retorna S \_ OK se for bem-sucedido ou um código de erro do contrário.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

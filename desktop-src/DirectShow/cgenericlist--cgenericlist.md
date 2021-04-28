@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CGenericList. ~ CGenericList destruidor-método Destruitor.
 ms.assetid: a5594dd2-b29b-49d6-b4de-5074ba3d0ce3
 title: CGenericList. ~ CGenericList Destruitor (Wxlist. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a1acdb5a414c73c452614fb82134f9063fc93be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3045ea4ebe89656f1ffd76e231e8fc22e95c0b93
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748446"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099184"
 ---
 # <a name="cgenericlistcgenericlist-destructor"></a>Destruidor CGenericList. ~ CGenericList
 
 Método destruidor.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ Método destruidor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

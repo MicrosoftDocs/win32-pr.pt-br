@@ -1,5 +1,5 @@
 ---
-description: Anexa uma superfície a outra superfície.
+description: Função NtGdiDdCreateSurface – anexa uma superfície a outra superfície.
 ms.assetid: 4fd757c7-9e32-4737-b666-3226f6cf29fa
 title: Função NtGdiDdCreateSurface (Ntgdi. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 663d29be32dc544d44a47061e1a6ff7f81e60862
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bf8e13cff80ddea4e102c045c174565e7e835274
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088920"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085774"
 ---
 # <a name="ntgdiddcreatesurface-function"></a>Função NtGdiDdCreateSurface
 
@@ -107,7 +107,7 @@ Ponteiro para uma [**estrutura \_ CREATESURFACEDATA do DD**](/windows/win32/api/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdCreateSurface** retorna um dos seguintes códigos de retorno de chamada.
 
@@ -142,7 +142,7 @@ Ao criar uma cadeia de superfícies anexadas, como uma cadeia de permuta ou cade
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

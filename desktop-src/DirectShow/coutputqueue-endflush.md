@@ -1,5 +1,5 @@
 ---
-description: O método EndFlush termina uma operação de liberação.
+description: Método COutputQueue. EndFlush – o método EndFlush termina uma operação de liberação.
 ms.assetid: 9171a62a-9072-49a3-8e83-f66d7e1483da
 title: Método COutputQueue. EndFlush (Outputq. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e18afec866176147c5c75a57fca522c4ebc5fcf6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37701526de66c8cd679f6849703c4eb2a1feb3ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754980"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099004"
 ---
 # <a name="coutputqueueendflush-method"></a>Método COutputQueue. EndFlush
 
@@ -40,7 +40,7 @@ void EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -59,7 +59,7 @@ Se o objeto estiver usando um thread, esse método aguardará o evento [**COutpu
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

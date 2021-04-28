@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o InkCollector detecta um botão de cursor que está ativo.
+description: Evento InkCollector. CursorButtonUp – ocorre quando o InkCollector detecta um botão de cursor que está ativo.
 ms.assetid: f07daad7-e0d1-45cf-a708-5486a5dfda8b
 title: Evento InkCollector. CursorButtonUp (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 932d768c13da953d1926b28fb651c63dc26be572
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 936b050c64d07a6957039278f0455bc71d77dbdf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105797655"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110304"
 ---
 # <a name="inkcollectorcursorbuttonup-event"></a>Evento InkCollector. CursorButtonUp
 
@@ -45,7 +45,7 @@ O botão que foi lançado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -70,7 +70,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

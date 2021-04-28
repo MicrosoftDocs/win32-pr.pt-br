@@ -1,5 +1,5 @@
 ---
-description: O método Stop interrompe a captura atual.
+description: 'Método IDelaydC:: Stop – o método Stop interrompe a captura atual.'
 ms.assetid: 1b627137-e72d-4425-98d9-e296fb07e509
 title: 'Método IDelaydC:: Stop (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 42c9cc1c4b6da7b5f934dd96f26aa9348c43ac0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38be5b6ba4c3f6edcd716f4d0235150e96dd692a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104460956"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110774"
 ---
 # <a name="idelaydcstop-method"></a>Método IDelaydC:: Stop
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura de [estatísticas](statistics.md) que contém estat�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -84,7 +84,7 @@ Quando você parar e iniciar a captura, certifique-se de chamar o método [IDela
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

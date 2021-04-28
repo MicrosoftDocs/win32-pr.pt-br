@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: GetTimelineNoRef-sem suporte.'
 ms.assetid: be7721e4-ba43-47c1-b955-e97afc5caac4
 title: 'Método IAMTimelineObj:: GetTimelineNoRef (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e51071f261a3b9a22665a1024d992a6fd97dfd4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f36918f7e2bc52fb8cb2898930ff1971ad33b74b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787140"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098524"
 ---
 # <a name="iamtimelineobjgettimelinenoref-method"></a>Método IAMTimelineObj:: GetTimelineNoRef
 
@@ -52,7 +52,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -79,7 +79,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

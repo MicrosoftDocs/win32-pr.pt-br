@@ -1,5 +1,5 @@
 ---
-description: 'O método SetTimeFormat define o formato de hora. Esse método implementa o método IMediaSeeking:: SetTimeFormat.'
+description: 'Método CSourceSeeking. SetTimeFormat – o método SetTimeFormat define o formato de hora. Esse método implementa o método IMediaSeeking:: SetTimeFormat.'
 ms.assetid: dbc7c950-8cc2-4f8e-adfa-8f5cdc1b56c7
 title: Método CSourceSeeking. SetTimeFormat (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 61ab0cdf7c954e0fa5f370127f00529bb9ef7b16
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdb3889ecfa5bdcd49b4054822a2b2d09df58fa6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085194"
 ---
 # <a name="csourceseekingsettimeformat-method"></a>Método CSourceSeeking. SetTimeFormat
 
@@ -49,7 +49,7 @@ Ponteiro para um GUID de formato de hora. Consulte [**GUIDs de formato de hora**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
 | Código de retorno                                                                                  | Descrição                                   |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>                           |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Sucesso.<br/>                           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Não há suporte para o formato especificado.<br/> |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>    | Argumento de ponteiro **nulo** .<br/>         |
 
@@ -80,7 +80,7 @@ O único formato de tempo com suporte da classe base é \_ o \_ tempo de mídia 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

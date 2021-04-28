@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o cursor sai do intervalo de detecção física (proximidade) do contexto do Tablet.
+description: Evento InkOverlay. CursorOutOfRange – ocorre quando o cursor sai do intervalo de detecção física (proximidade) do contexto do Tablet.
 ms.assetid: c696b2a9-dc47-4b73-a556-9bb222f5bf59
 title: Evento InkOverlay. CursorOutOfRange (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1510013d24bf092a08ba7d57b54c0f94bf7c2dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2a30bfde1e96edfa286e9afeac147dc141c4942
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764140"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116954"
 ---
 # <a name="inkoverlaycursoroutofrange-event"></a>Evento InkOverlay. CursorOutOfRange
 
@@ -37,7 +37,7 @@ O objeto da [**interface IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -60,7 +60,7 @@ O evento [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) é disparado m
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

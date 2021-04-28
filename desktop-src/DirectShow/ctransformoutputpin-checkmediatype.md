@@ -1,5 +1,5 @@
 ---
-description: O método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
+description: Método CTransformOutputPin. CheckMediaType – o método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
 ms.assetid: 9e31480b-129c-4741-846a-854c70c65606
 title: Método CTransformOutputPin. CheckMediaType (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c3c2bc617a5ff56a8b82184700af85e2634960ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7dc0edc642687518979eab1d47c69af039bc3173
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752683"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084904"
 ---
 # <a name="ctransformoutputpincheckmediatype-method"></a>Método CTransformOutputPin. CheckMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de m�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                  | Descrição                                         |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Sucesso.<br/>                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O pino de entrada do filtro não está conectado.<br/> |
 
 

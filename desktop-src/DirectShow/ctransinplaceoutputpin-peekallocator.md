@@ -1,5 +1,5 @@
 ---
-description: O método PeekAllocator retorna um ponteiro para o alocador do PIN. O método não incrementa a contagem de referência na interface.
+description: Método CTransInPlaceOutputPin. PeekAllocator – o método PeekAllocator retorna um ponteiro para o alocador do PIN. O método não incrementa a contagem de referência na interface.
 ms.assetid: 3653d472-059c-426c-8e81-4f7cbd1a8ec3
 title: Método CTransInPlaceOutputPin. PeekAllocator (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 805de37e2df2bf5a198107eea69d9107e799598c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cba87df1c4b9a3391d60e9458387e7b2bd4afd49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759083"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084594"
 ---
 # <a name="ctransinplaceoutputpinpeekallocator-method"></a>Método CTransInPlaceOutputPin. PeekAllocator
 
@@ -40,7 +40,7 @@ IMemAllocator* PeekAllocator();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a variável de membro [**CBaseOutputPin:: m \_ pAllocator**](cbaseoutputpin-m-pallocator.md) .
 
@@ -55,7 +55,7 @@ Retorna a variável de membro [**CBaseOutputPin:: m \_ pAllocator**](cbaseoutput
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

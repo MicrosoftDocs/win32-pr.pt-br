@@ -1,5 +1,5 @@
 ---
-description: Obtém o valor de uma política especificada do Windows Internet Explorer.
+description: Método IShellDispatch4. ExplorerPolicy – Obtém o valor de uma política especificada do Windows Internet Explorer.
 ms.assetid: 490c3e18-b606-456a-9016-dc4f7bad2bc3
 title: Método IShellDispatch4. ExplorerPolicy (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 57247ad328c647cf9cdde32ac1a2951dd8e364ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a03d61905bdb1f2b16de11cc604625d8e71a7ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827397"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116824"
 ---
 # <a name="ishelldispatch4explorerpolicy-method"></a>Método IShellDispatch4. ExplorerPolicy
 
@@ -58,17 +58,17 @@ Uma **cadeia de caracteres** que especifica o nome da política.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
 O valor associado ao nome de política especificado.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*variante \**_
+Tipo: **variante \***
 
 O valor associado ao nome de política especificado.
 
@@ -76,7 +76,7 @@ O valor associado ao nome de política especificado.
 
 Os administradores de rede podem controlar e gerenciar o ambiente computacional de seus usuários definindo políticas.
 
-O nome do valor especificado deve estar na subchave _ *HKEY \_ \_ **\\** software do usuário atual **\\** Microsoft **\\** Windows **\\** CurrentVersion **\\** Policies **\\** Explorer**. Se o nome do valor não existir, o método retornará **NULL**.
+O nome do valor especificado deve estar dentro da subchave do **HKEY \_ Current \_ User** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer** . Se o nome do valor não existir, o método retornará **NULL**.
 
 ## <a name="examples"></a>Exemplos
 

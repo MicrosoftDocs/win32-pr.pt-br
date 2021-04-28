@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Music. PartOfSet
 ms.assetid: 29696a6f-cd2c-40c4-a7a6-ca32ac80beae
 title: System. Music. PartOfSet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3abf69220da260937cab017fcb8f9fa3f410f6c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4481f4870c3f539d4d1a1463b169d4d6e03efd1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117364"
 ---
 # <a name="systemmusicpartofset"></a>System. Music. PartOfSet
 

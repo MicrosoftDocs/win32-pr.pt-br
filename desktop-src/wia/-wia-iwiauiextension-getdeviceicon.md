@@ -1,5 +1,5 @@
 ---
-description: Obtém um ícone de dispositivo personalizado.
+description: 'Método IWiaUIExtension:: GetDeviceIcon – Obtém um ícone de dispositivo personalizado.'
 ms.assetid: 27763f39-80d8-4862-b045-e49c6e824c28
 title: 'Método IWiaUIExtension:: GetDeviceIcon (Wiadevd. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 36b61a25de1acb9b84ce68dc897514e0d4612a1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bfa8e87736412822c1a70f75b129aeec30af20e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090500"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116654"
 ---
 # <a name="iwiauiextensiongetdeviceicon-method"></a>Método IWiaUIExtension:: GetDeviceIcon
 
@@ -53,13 +53,13 @@ Especifica a ID do dispositivo WIA para o qual o ícone deve ser obtido.
 *phIcon* \[ fora\]
 </dt> <dd>
 
-Tipo: **HICON \** _
+Tipo: **HICON \***
 
 Aponta para um local de memória que receberá um identificador para o ícone do dispositivo.
 
 </dd> <dt>
 
-_nSize * \[ in\]
+*nSize* \[ no\]
 </dt> <dd>
 
 Tipo: **ULONG**
@@ -68,7 +68,7 @@ Especifica o tamanho do ícone desejado, em pixels. O ícone é considerado quad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

@@ -1,5 +1,5 @@
 ---
-description: Inicia um serviço nomeado.
+description: Método Shell. instart – inicia um serviço nomeado.
 ms.assetid: 72214E80-38A2-4a57-B555-942902BAFC3D
 title: Método Shell. OnStart (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8cd3b910306fc995d15e9731823614717450ef55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c88b1980d215ad088a4a24362f17147b5d6e432
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828460"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083744"
 ---
 # <a name="shellservicestart-method"></a>Método Shell. OnStart
 
@@ -69,19 +69,19 @@ Defina como **true** para que o serviço seja iniciado automaticamente pelo Gere
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 

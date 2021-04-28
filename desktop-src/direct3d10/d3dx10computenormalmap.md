@@ -1,5 +1,5 @@
 ---
-description: Converte um mapa de altura em um mapa normal. Os componentes (x, y, z) de cada normal são mapeados para os canais (r, g, b) da textura de saída.
+description: Função D3DX10ComputeNormalMap – converte um mapa de altura em um mapa normal. Os componentes (x, y, z) de cada normal são mapeados para os canais (r, g, b) da textura de saída.
 ms.assetid: 535033dd-f078-4d56-8e5d-cdda80ef5992
 title: Função D3DX10ComputeNormalMap (D3DX10Tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1d7318e6d00d921ba0d573eb6fb696eed6c6a58d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 173a8e0c1b3130a399152187eb52288a0306051c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814529"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105314"
 ---
 # <a name="d3dx10computenormalmap-function"></a>Função D3DX10ComputeNormalMap
 
@@ -89,7 +89,7 @@ Ponteiro para uma interface ID3D10Texture2D, representando a textura de destino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -110,7 +110,7 @@ Esse método computa o normal usando a diferença central com um tamanho de kern
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

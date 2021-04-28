@@ -1,5 +1,5 @@
 ---
-description: Cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de pasta da pasta selecionada.
+description: Método IShellDispatch. BrowseForFolder – cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de pasta da pasta selecionada.
 ms.assetid: 578C51C1-F59B-4604-A09B-62BA61225ABB
 title: Método IShellDispatch. BrowseForFolder (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 4e603bb08b4b98ba4008aa4ea162c9b59e5d42da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee6202c7029e2c27684e15d96dd6c38680cb0678
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090847"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086684"
 ---
 # <a name="ishelldispatchbrowseforfolder-method"></a>Método IShellDispatch. BrowseForFolder
 
@@ -91,7 +91,7 @@ A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

@@ -1,5 +1,5 @@
 ---
-description: Descreve uma interseção do Ray-triângulo.
+description: Estrutura D3DXINTERSECTINFO-descreve uma interseção de Ray-triângulo.
 ms.assetid: b6f50fc0-2c8a-4efa-a144-bd0851f8b0ca
 title: Estrutura D3DXINTERSECTINFO (D3dx9mesh. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 31a98e9a7095e81e962b2996dedb9bdf5871533d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4a63c7f4a479bfbe9dcb49f485ce0acb8db6486
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782626"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098284"
 ---
 # <a name="d3dxintersectinfo-structure"></a>Estrutura D3DXINTERSECTINFO
 
@@ -100,7 +100,7 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
