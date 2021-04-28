@@ -1,5 +1,5 @@
 ---
-description: Ponteiro para o alocador de memória.
+description: 'CBaseOutputPin:: m_pAllocator ponteiro de membro para o alocador de memória.'
 ms.assetid: b5e37ce0-7c02-4395-bfdf-0ee8c11da09a
 title: 'Membro CBaseOutputPin:: m_pAllocator (Amfilter. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9f46c786cb0cec5c5082b5cda003a8f4b345f518
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d5b512f2b40d27e13fa78904481fcc749d0bde4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752098"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096094"
 ---
-# <a name="cbaseoutputpinm_pallocator-member"></a><span data-ttu-id="f34c3-103">Membro de CBaseOutputPin:: m \_ pAllocator</span><span class="sxs-lookup"><span data-stu-id="f34c3-103">CBaseOutputPin::m\_pAllocator member</span></span>
+# <a name="cbaseoutputpinm_pallocator-member"></a><span data-ttu-id="4bdc2-103">Membro de CBaseOutputPin:: m \_ pAllocator</span><span class="sxs-lookup"><span data-stu-id="4bdc2-103">CBaseOutputPin::m\_pAllocator member</span></span>
 
-<span data-ttu-id="f34c3-104">Ponteiro para o alocador de memória.</span><span class="sxs-lookup"><span data-stu-id="f34c3-104">Pointer to the memory allocator.</span></span>
+<span data-ttu-id="4bdc2-104">Ponteiro para o alocador de memória.</span><span class="sxs-lookup"><span data-stu-id="4bdc2-104">Pointer to the memory allocator.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f34c3-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f34c3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4bdc2-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="4bdc2-105">Syntax</span></span>
 
 
 ```C++
@@ -36,22 +36,22 @@ IMemAllocator *m_pAllocator;
 
 
 
-## <a name="requirements"></a><span data-ttu-id="f34c3-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="f34c3-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4bdc2-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="4bdc2-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="f34c3-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="f34c3-107">Requirement</span></span> | <span data-ttu-id="f34c3-108">Valor</span><span class="sxs-lookup"><span data-stu-id="f34c3-108">Value</span></span> |
+| <span data-ttu-id="4bdc2-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="4bdc2-107">Requirement</span></span> | <span data-ttu-id="4bdc2-108">Valor</span><span class="sxs-lookup"><span data-stu-id="4bdc2-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f34c3-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="f34c3-109">Header</span></span><br/>  | <dl> <span data-ttu-id="f34c3-110"><dt>Amfilter. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="f34c3-110"><dt>Amfilter.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
-| <span data-ttu-id="f34c3-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="f34c3-111">Library</span></span><br/> | <dl> <span data-ttu-id="f34c3-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="f34c3-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="4bdc2-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4bdc2-109">Header</span></span><br/>  | <dl> <span data-ttu-id="4bdc2-110"><dt>Amfilter. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="4bdc2-110"><dt>Amfilter.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
+| <span data-ttu-id="4bdc2-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="4bdc2-111">Library</span></span><br/> | <dl> <span data-ttu-id="4bdc2-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="4bdc2-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f34c3-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="f34c3-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4bdc2-113">Consulte também</span><span class="sxs-lookup"><span data-stu-id="4bdc2-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f34c3-114">**Classe CBaseOutputPin**</span><span class="sxs-lookup"><span data-stu-id="f34c3-114">**CBaseOutputPin Class**</span></span>](cbaseoutputpin.md)
+[<span data-ttu-id="4bdc2-114">**Classe CBaseOutputPin**</span><span class="sxs-lookup"><span data-stu-id="4bdc2-114">**CBaseOutputPin Class**</span></span>](cbaseoutputpin.md)
 </dt> </dl>
 
  

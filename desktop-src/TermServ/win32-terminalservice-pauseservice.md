@@ -1,6 +1,6 @@
 ---
 title: Método PauseService da classe Win32_Service (Serviços de Área de Trabalho Remota)
-description: Tenta colocar o serviço no estado de pausado.
+description: Método PauseService da classe Win32_Service (Serviços de Área de Trabalho Remota) – tenta colocar o serviço no estado pausado.
 ms.assetid: 101987F6-FBAB-4E79-B1FA-346B1EF58DE1
 ms.tgt_platform: multiple
 keywords:
@@ -17,20 +17,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69951a77530b3aff89148b08e19f3a7c4da8f5b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d7c9847f363d9bc6d1743da6189d2c4290c00dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753320"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090594"
 ---
-# <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a><span data-ttu-id="b95db-106">Método PauseService da classe Win32_Service (Serviços de Área de Trabalho Remota)</span><span class="sxs-lookup"><span data-stu-id="b95db-106">PauseService method of the Win32_Service class (Remote Desktop Services)</span></span>
+# <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a><span data-ttu-id="49d01-106">Método PauseService da classe Win32_Service (Serviços de Área de Trabalho Remota)</span><span class="sxs-lookup"><span data-stu-id="49d01-106">PauseService method of the Win32_Service class (Remote Desktop Services)</span></span>
 
-<span data-ttu-id="b95db-107">O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta colocar o serviço no estado pausado.</span><span class="sxs-lookup"><span data-stu-id="b95db-107">The **PauseService** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) method attempts to place the service in the paused state.</span></span>
+<span data-ttu-id="49d01-107">O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta colocar o serviço no estado pausado.</span><span class="sxs-lookup"><span data-stu-id="49d01-107">The **PauseService** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) method attempts to place the service in the paused state.</span></span>
 
-<span data-ttu-id="b95db-108">Este tópico usa a sintaxe formato MOF (MOF).</span><span class="sxs-lookup"><span data-stu-id="b95db-108">This topic uses Managed Object Format (MOF) syntax.</span></span> <span data-ttu-id="b95db-109">Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).</span><span class="sxs-lookup"><span data-stu-id="b95db-109">For more information about using this method, see [Calling a Method](/windows/desktop/WmiSdk/calling-a-method).</span></span>
+<span data-ttu-id="49d01-108">Este tópico usa a sintaxe formato MOF (MOF).</span><span class="sxs-lookup"><span data-stu-id="49d01-108">This topic uses Managed Object Format (MOF) syntax.</span></span> <span data-ttu-id="49d01-109">Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).</span><span class="sxs-lookup"><span data-stu-id="49d01-109">For more information about using this method, see [Calling a Method](/windows/desktop/WmiSdk/calling-a-method).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b95db-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="b95db-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="49d01-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="49d01-110">Syntax</span></span>
 
 
 ```mof
@@ -39,236 +39,236 @@ uint32 PauseService();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="b95db-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="b95db-111">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="49d01-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="49d01-111">Parameters</span></span>
 
-<span data-ttu-id="b95db-112">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="b95db-112">This method has no parameters.</span></span>
+<span data-ttu-id="49d01-112">Esse método não tem parâmetros.</span><span class="sxs-lookup"><span data-stu-id="49d01-112">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="b95db-113">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="b95db-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="49d01-113">Valor retornado</span><span class="sxs-lookup"><span data-stu-id="49d01-113">Return value</span></span>
 
-<span data-ttu-id="b95db-114">Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro.</span><span class="sxs-lookup"><span data-stu-id="b95db-114">Returns one of the values listed in the following list, or any other value to indicate an error.</span></span> <span data-ttu-id="b95db-115">Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).</span><span class="sxs-lookup"><span data-stu-id="b95db-115">For additional error codes, see [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).</span></span> <span data-ttu-id="b95db-116">Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).</span><span class="sxs-lookup"><span data-stu-id="b95db-116">For general **HRESULT** values, see [System Error Codes](/windows/desktop/Debug/system-error-codes).</span></span>
+<span data-ttu-id="49d01-114">Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro.</span><span class="sxs-lookup"><span data-stu-id="49d01-114">Returns one of the values listed in the following list, or any other value to indicate an error.</span></span> <span data-ttu-id="49d01-115">Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).</span><span class="sxs-lookup"><span data-stu-id="49d01-115">For additional error codes, see [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).</span></span> <span data-ttu-id="49d01-116">Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).</span><span class="sxs-lookup"><span data-stu-id="49d01-116">For general **HRESULT** values, see [System Error Codes](/windows/desktop/Debug/system-error-codes).</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="b95db-117">**0**</span><span class="sxs-lookup"><span data-stu-id="b95db-117">**0**</span></span>
+<span data-ttu-id="49d01-117">**0**</span><span class="sxs-lookup"><span data-stu-id="49d01-117">**0**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-118">A solicitação foi aceita.</span><span class="sxs-lookup"><span data-stu-id="b95db-118">The request was accepted.</span></span>
+<span data-ttu-id="49d01-118">A solicitação foi aceita.</span><span class="sxs-lookup"><span data-stu-id="49d01-118">The request was accepted.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-119">**1**</span><span class="sxs-lookup"><span data-stu-id="b95db-119">**1**</span></span>
+<span data-ttu-id="49d01-119">**1**</span><span class="sxs-lookup"><span data-stu-id="49d01-119">**1**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-120">A solicitação não terá suporte.</span><span class="sxs-lookup"><span data-stu-id="b95db-120">The request is not supported.</span></span>
+<span data-ttu-id="49d01-120">A solicitação não terá suporte.</span><span class="sxs-lookup"><span data-stu-id="49d01-120">The request is not supported.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-121">**2**</span><span class="sxs-lookup"><span data-stu-id="b95db-121">**2**</span></span>
+<span data-ttu-id="49d01-121">**2**</span><span class="sxs-lookup"><span data-stu-id="49d01-121">**2**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-122">O usuário não tinha o acesso necessário.</span><span class="sxs-lookup"><span data-stu-id="b95db-122">The user did not have the necessary access.</span></span>
+<span data-ttu-id="49d01-122">O usuário não tinha o acesso necessário.</span><span class="sxs-lookup"><span data-stu-id="49d01-122">The user did not have the necessary access.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-123">**3**</span><span class="sxs-lookup"><span data-stu-id="b95db-123">**3**</span></span>
+<span data-ttu-id="49d01-123">**3**</span><span class="sxs-lookup"><span data-stu-id="49d01-123">**3**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-124">O serviço não pode ser interrompido, porque outros serviços em execução dependem dele.</span><span class="sxs-lookup"><span data-stu-id="b95db-124">The service cannot be stopped because other services that are running are dependent on it.</span></span>
+<span data-ttu-id="49d01-124">O serviço não pode ser interrompido, porque outros serviços em execução dependem dele.</span><span class="sxs-lookup"><span data-stu-id="49d01-124">The service cannot be stopped because other services that are running are dependent on it.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-125">**4**</span><span class="sxs-lookup"><span data-stu-id="b95db-125">**4**</span></span>
+<span data-ttu-id="49d01-125">**4**</span><span class="sxs-lookup"><span data-stu-id="49d01-125">**4**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-126">O código de controle pedido não é válido ou é inaceitável para o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-126">The requested control code is not valid, or it is unacceptable to the service.</span></span>
+<span data-ttu-id="49d01-126">O código de controle pedido não é válido ou é inaceitável para o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-126">The requested control code is not valid, or it is unacceptable to the service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-127">**5**</span><span class="sxs-lookup"><span data-stu-id="b95db-127">**5**</span></span>
+<span data-ttu-id="49d01-127">**5**</span><span class="sxs-lookup"><span data-stu-id="49d01-127">**5**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-128">O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).\*\*\*\* A propriedade State) é igual a 0, 1 ou 2.</span><span class="sxs-lookup"><span data-stu-id="b95db-128">The requested control code cannot be sent to the service because the state of the service ([**Win32\_BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** property) is equal to 0, 1, or 2.</span></span>
+<span data-ttu-id="49d01-128">O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).\*\*\*\* A propriedade State) é igual a 0, 1 ou 2.</span><span class="sxs-lookup"><span data-stu-id="49d01-128">The requested control code cannot be sent to the service because the state of the service ([**Win32\_BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** property) is equal to 0, 1, or 2.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-129">**6**</span><span class="sxs-lookup"><span data-stu-id="b95db-129">**6**</span></span>
+<span data-ttu-id="49d01-129">**6**</span><span class="sxs-lookup"><span data-stu-id="49d01-129">**6**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-130">O serviço não foi iniciado.</span><span class="sxs-lookup"><span data-stu-id="b95db-130">The service has not been started.</span></span>
+<span data-ttu-id="49d01-130">O serviço não foi iniciado.</span><span class="sxs-lookup"><span data-stu-id="49d01-130">The service has not been started.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-131">**7**</span><span class="sxs-lookup"><span data-stu-id="b95db-131">**7**</span></span>
+<span data-ttu-id="49d01-131">**7**</span><span class="sxs-lookup"><span data-stu-id="49d01-131">**7**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-132">O serviço não respondeu à solicitação de início em um tempo oportuno.</span><span class="sxs-lookup"><span data-stu-id="b95db-132">The service did not respond to the start request in a timely fashion.</span></span>
+<span data-ttu-id="49d01-132">O serviço não respondeu à solicitação de início em um tempo oportuno.</span><span class="sxs-lookup"><span data-stu-id="49d01-132">The service did not respond to the start request in a timely fashion.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-133">**8**</span><span class="sxs-lookup"><span data-stu-id="b95db-133">**8**</span></span>
+<span data-ttu-id="49d01-133">**8**</span><span class="sxs-lookup"><span data-stu-id="49d01-133">**8**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-134">Falha desconhecida ao iniciar o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-134">Unknown failure when starting the service.</span></span>
+<span data-ttu-id="49d01-134">Falha desconhecida ao iniciar o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-134">Unknown failure when starting the service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-135">**9**</span><span class="sxs-lookup"><span data-stu-id="b95db-135">**9**</span></span>
+<span data-ttu-id="49d01-135">**9**</span><span class="sxs-lookup"><span data-stu-id="49d01-135">**9**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-136">O caminho do diretório para o arquivo executável do serviço não foi encontrado.</span><span class="sxs-lookup"><span data-stu-id="b95db-136">The directory path to the service executable file was not found.</span></span>
+<span data-ttu-id="49d01-136">O caminho do diretório para o arquivo executável do serviço não foi encontrado.</span><span class="sxs-lookup"><span data-stu-id="49d01-136">The directory path to the service executable file was not found.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-137">**10**</span><span class="sxs-lookup"><span data-stu-id="b95db-137">**10**</span></span>
+<span data-ttu-id="49d01-137">**10**</span><span class="sxs-lookup"><span data-stu-id="49d01-137">**10**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-138">O serviço já está em execução.</span><span class="sxs-lookup"><span data-stu-id="b95db-138">The service is already running.</span></span>
+<span data-ttu-id="49d01-138">O serviço já está em execução.</span><span class="sxs-lookup"><span data-stu-id="49d01-138">The service is already running.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-139">**11**</span><span class="sxs-lookup"><span data-stu-id="b95db-139">**11**</span></span>
+<span data-ttu-id="49d01-139">**11**</span><span class="sxs-lookup"><span data-stu-id="49d01-139">**11**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-140">O banco de dados para adicionar um serviço novo está bloqueado.</span><span class="sxs-lookup"><span data-stu-id="b95db-140">The database to add a new service is locked.</span></span>
+<span data-ttu-id="49d01-140">O banco de dados para adicionar um serviço novo está bloqueado.</span><span class="sxs-lookup"><span data-stu-id="49d01-140">The database to add a new service is locked.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-141">**12**</span><span class="sxs-lookup"><span data-stu-id="b95db-141">**12**</span></span>
+<span data-ttu-id="49d01-141">**12**</span><span class="sxs-lookup"><span data-stu-id="49d01-141">**12**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-142">Uma dependência da qual esse serviço depende foi removida do sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-142">A dependency this service relies on has been removed from the system.</span></span>
+<span data-ttu-id="49d01-142">Uma dependência da qual esse serviço depende foi removida do sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-142">A dependency this service relies on has been removed from the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-143">**13**</span><span class="sxs-lookup"><span data-stu-id="b95db-143">**13**</span></span>
+<span data-ttu-id="49d01-143">**13**</span><span class="sxs-lookup"><span data-stu-id="49d01-143">**13**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-144">O serviço não localizou o serviço necessário em um serviço dependente.</span><span class="sxs-lookup"><span data-stu-id="b95db-144">The service failed to find the service needed from a dependent service.</span></span>
+<span data-ttu-id="49d01-144">O serviço não localizou o serviço necessário em um serviço dependente.</span><span class="sxs-lookup"><span data-stu-id="49d01-144">The service failed to find the service needed from a dependent service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-145">**14**</span><span class="sxs-lookup"><span data-stu-id="b95db-145">**14**</span></span>
+<span data-ttu-id="49d01-145">**14**</span><span class="sxs-lookup"><span data-stu-id="49d01-145">**14**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-146">O serviço foi desabilitado do sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-146">The service has been disabled from the system.</span></span>
+<span data-ttu-id="49d01-146">O serviço foi desabilitado do sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-146">The service has been disabled from the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-147">**15**</span><span class="sxs-lookup"><span data-stu-id="b95db-147">**15**</span></span>
+<span data-ttu-id="49d01-147">**15**</span><span class="sxs-lookup"><span data-stu-id="49d01-147">**15**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-148">O serviço não tem a autenticação correta para ser executado no sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-148">The service does not have the correct authentication to run on the system.</span></span>
+<span data-ttu-id="49d01-148">O serviço não tem a autenticação correta para ser executado no sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-148">The service does not have the correct authentication to run on the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-149">**16**</span><span class="sxs-lookup"><span data-stu-id="b95db-149">**16**</span></span>
+<span data-ttu-id="49d01-149">**16**</span><span class="sxs-lookup"><span data-stu-id="49d01-149">**16**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-150">Este serviço está sendo removido do sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-150">This service is being removed from the system.</span></span>
+<span data-ttu-id="49d01-150">Este serviço está sendo removido do sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-150">This service is being removed from the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-151">**17**</span><span class="sxs-lookup"><span data-stu-id="b95db-151">**17**</span></span>
+<span data-ttu-id="49d01-151">**17**</span><span class="sxs-lookup"><span data-stu-id="49d01-151">**17**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-152">O serviço não tem nenhum thread de execução.</span><span class="sxs-lookup"><span data-stu-id="b95db-152">The service has no execution thread.</span></span>
+<span data-ttu-id="49d01-152">O serviço não tem nenhum thread de execução.</span><span class="sxs-lookup"><span data-stu-id="49d01-152">The service has no execution thread.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-153">**anos**</span><span class="sxs-lookup"><span data-stu-id="b95db-153">**18**</span></span>
+<span data-ttu-id="49d01-153">**anos**</span><span class="sxs-lookup"><span data-stu-id="49d01-153">**18**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-154">O serviço tem dependências circulares quando é iniciado.</span><span class="sxs-lookup"><span data-stu-id="b95db-154">The service has circular dependencies when it starts.</span></span>
+<span data-ttu-id="49d01-154">O serviço tem dependências circulares quando é iniciado.</span><span class="sxs-lookup"><span data-stu-id="49d01-154">The service has circular dependencies when it starts.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-155">**aprimora**</span><span class="sxs-lookup"><span data-stu-id="b95db-155">**19**</span></span>
+<span data-ttu-id="49d01-155">**aprimora**</span><span class="sxs-lookup"><span data-stu-id="49d01-155">**19**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-156">Um serviço está sendo executado com o mesmo nome.</span><span class="sxs-lookup"><span data-stu-id="b95db-156">A service is running under the same name.</span></span>
+<span data-ttu-id="49d01-156">Um serviço está sendo executado com o mesmo nome.</span><span class="sxs-lookup"><span data-stu-id="49d01-156">A service is running under the same name.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-157">**20**</span><span class="sxs-lookup"><span data-stu-id="b95db-157">**20**</span></span>
+<span data-ttu-id="49d01-157">**20**</span><span class="sxs-lookup"><span data-stu-id="49d01-157">**20**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-158">O nome do serviço tem caracteres inválidos.</span><span class="sxs-lookup"><span data-stu-id="b95db-158">The service name has invalid characters.</span></span>
+<span data-ttu-id="49d01-158">O nome do serviço tem caracteres inválidos.</span><span class="sxs-lookup"><span data-stu-id="49d01-158">The service name has invalid characters.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-159">**Abril**</span><span class="sxs-lookup"><span data-stu-id="b95db-159">**21**</span></span>
+<span data-ttu-id="49d01-159">**Abril**</span><span class="sxs-lookup"><span data-stu-id="49d01-159">**21**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-160">Parâmetros inválidos foram passados para o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-160">Invalid parameters have been passed to the service.</span></span>
+<span data-ttu-id="49d01-160">Parâmetros inválidos foram passados para o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-160">Invalid parameters have been passed to the service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-161">**22**</span><span class="sxs-lookup"><span data-stu-id="b95db-161">**22**</span></span>
+<span data-ttu-id="49d01-161">**22**</span><span class="sxs-lookup"><span data-stu-id="49d01-161">**22**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-162">A conta sob a qual este serviço é executado é inválida ou não tem as permissões para executar o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-162">The account under which this service runs is either invalid or lacks the permissions to run the service.</span></span>
+<span data-ttu-id="49d01-162">A conta sob a qual este serviço é executado é inválida ou não tem as permissões para executar o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-162">The account under which this service runs is either invalid or lacks the permissions to run the service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-163">**23**</span><span class="sxs-lookup"><span data-stu-id="b95db-163">**23**</span></span>
+<span data-ttu-id="49d01-163">**23**</span><span class="sxs-lookup"><span data-stu-id="49d01-163">**23**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-164">O serviço existe no banco de dados de serviços disponível no sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-164">The service exists in the database of services available from the system.</span></span>
+<span data-ttu-id="49d01-164">O serviço existe no banco de dados de serviços disponível no sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-164">The service exists in the database of services available from the system.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="b95db-165">**24**</span><span class="sxs-lookup"><span data-stu-id="b95db-165">**24**</span></span>
+<span data-ttu-id="49d01-165">**24**</span><span class="sxs-lookup"><span data-stu-id="49d01-165">**24**</span></span>
 </dt> <dd>
 
-<span data-ttu-id="b95db-166">O serviço está pausado atualmente no sistema.</span><span class="sxs-lookup"><span data-stu-id="b95db-166">The service is currently paused in the system.</span></span>
+<span data-ttu-id="49d01-166">O serviço está pausado atualmente no sistema.</span><span class="sxs-lookup"><span data-stu-id="49d01-166">The service is currently paused in the system.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="b95db-167">Comentários</span><span class="sxs-lookup"><span data-stu-id="b95db-167">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49d01-167">Comentários</span><span class="sxs-lookup"><span data-stu-id="49d01-167">Remarks</span></span>
 
-<span data-ttu-id="b95db-168">Depois de determinar quais serviços podem ser interrompidos ou pausados, você pode usar os métodos [**StopService**](win32-terminalservice-stopservice.md) e **PauseService** para parar e pausar serviços.</span><span class="sxs-lookup"><span data-stu-id="b95db-168">After you have determined which services can be stopped or paused, you can use the [**StopService**](win32-terminalservice-stopservice.md) and **PauseService** methods to stop and pause services.</span></span> <span data-ttu-id="b95db-169">A decisão de interromper um serviço em vez de pausá-lo, ou vice-versa, depende de vários fatores, incluindo o seguinte:</span><span class="sxs-lookup"><span data-stu-id="b95db-169">The decision to stop a service rather than pause it, or vice versa, depends on several factors, including the following:</span></span>
+<span data-ttu-id="49d01-168">Depois de determinar quais serviços podem ser interrompidos ou pausados, você pode usar os métodos [**StopService**](win32-terminalservice-stopservice.md) e **PauseService** para parar e pausar serviços.</span><span class="sxs-lookup"><span data-stu-id="49d01-168">After you have determined which services can be stopped or paused, you can use the [**StopService**](win32-terminalservice-stopservice.md) and **PauseService** methods to stop and pause services.</span></span> <span data-ttu-id="49d01-169">A decisão de interromper um serviço em vez de pausá-lo, ou vice-versa, depende de vários fatores, incluindo o seguinte:</span><span class="sxs-lookup"><span data-stu-id="49d01-169">The decision to stop a service rather than pause it, or vice versa, depends on several factors, including the following:</span></span>
 
--   <span data-ttu-id="b95db-170">O serviço é capaz de ser pausado?</span><span class="sxs-lookup"><span data-stu-id="b95db-170">Is the service capable of being paused?</span></span> <span data-ttu-id="b95db-171">Caso contrário, sua única opção é parar o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-171">If not, your only option is the stop the service.</span></span>
--   <span data-ttu-id="b95db-172">Você precisa continuar tratando as solicitações do cliente para qualquer pessoa já conectada ao serviço?</span><span class="sxs-lookup"><span data-stu-id="b95db-172">Do you need to continue handling client requests for anyone already connected to the service?</span></span> <span data-ttu-id="b95db-173">Nesse caso, pausar um serviço geralmente permite que ele manipule clientes existentes enquanto nega acesso a novos clientes.</span><span class="sxs-lookup"><span data-stu-id="b95db-173">If so, pausing a service typically allows it to handle existing clients while denying access to new clients.</span></span> <span data-ttu-id="b95db-174">Por outro lado, quando você interrompe um serviço, todos os clientes são imediatamente desconectados.</span><span class="sxs-lookup"><span data-stu-id="b95db-174">By contrast, when you stop a service, all clients are immediately disconnected.</span></span>
--   <span data-ttu-id="b95db-175">Você precisa reconfigurar um serviço e fazer com que as alterações entrem em vigor imediatamente?</span><span class="sxs-lookup"><span data-stu-id="b95db-175">Do you need to reconfigure a service and have the changes take effect immediately?</span></span> <span data-ttu-id="b95db-176">Embora as propriedades do serviço possam ser alteradas enquanto um serviço é pausado, a maioria delas não tem efeito até que o serviço seja realmente interrompido e reiniciado.</span><span class="sxs-lookup"><span data-stu-id="b95db-176">Although service properties can be changed while a service is paused, most of them do not take effect until the service is actually stopped and restarted.</span></span>
+-   <span data-ttu-id="49d01-170">O serviço é capaz de ser pausado?</span><span class="sxs-lookup"><span data-stu-id="49d01-170">Is the service capable of being paused?</span></span> <span data-ttu-id="49d01-171">Caso contrário, sua única opção é parar o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-171">If not, your only option is the stop the service.</span></span>
+-   <span data-ttu-id="49d01-172">Você precisa continuar tratando as solicitações do cliente para qualquer pessoa já conectada ao serviço?</span><span class="sxs-lookup"><span data-stu-id="49d01-172">Do you need to continue handling client requests for anyone already connected to the service?</span></span> <span data-ttu-id="49d01-173">Nesse caso, pausar um serviço geralmente permite que ele manipule clientes existentes enquanto nega acesso a novos clientes.</span><span class="sxs-lookup"><span data-stu-id="49d01-173">If so, pausing a service typically allows it to handle existing clients while denying access to new clients.</span></span> <span data-ttu-id="49d01-174">Por outro lado, quando você interrompe um serviço, todos os clientes são imediatamente desconectados.</span><span class="sxs-lookup"><span data-stu-id="49d01-174">By contrast, when you stop a service, all clients are immediately disconnected.</span></span>
+-   <span data-ttu-id="49d01-175">Você precisa reconfigurar um serviço e fazer com que as alterações entrem em vigor imediatamente?</span><span class="sxs-lookup"><span data-stu-id="49d01-175">Do you need to reconfigure a service and have the changes take effect immediately?</span></span> <span data-ttu-id="49d01-176">Embora as propriedades do serviço possam ser alteradas enquanto um serviço é pausado, a maioria delas não tem efeito até que o serviço seja realmente interrompido e reiniciado.</span><span class="sxs-lookup"><span data-stu-id="49d01-176">Although service properties can be changed while a service is paused, most of them do not take effect until the service is actually stopped and restarted.</span></span>
 
-<span data-ttu-id="b95db-177">O código de script necessário para interromper um serviço é quase idêntico ao código necessário para pausar o serviço.</span><span class="sxs-lookup"><span data-stu-id="b95db-177">The scripting code required to stop a service is almost identical to the code required to pause the service.</span></span>
+<span data-ttu-id="49d01-177">O código de script necessário para interromper um serviço é quase idêntico ao código necessário para pausar o serviço.</span><span class="sxs-lookup"><span data-stu-id="49d01-177">The scripting code required to stop a service is almost identical to the code required to pause the service.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b95db-178">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b95db-178">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="49d01-178">Exemplos</span><span class="sxs-lookup"><span data-stu-id="49d01-178">Examples</span></span>
 
-<span data-ttu-id="b95db-179">Os [serviços de pausa em execução em uma conta específica de](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) exemplo do VBScript pausa todos os serviços em execução na conta de serviço hipotética netsvc.</span><span class="sxs-lookup"><span data-stu-id="b95db-179">The [Pause Services Running Under a Specific Account](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) VBScript sample Pauses all services running under the hypothetical service account Netsvc.</span></span>
+<span data-ttu-id="49d01-179">Os [serviços de pausa em execução em uma conta específica de](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) exemplo do VBScript pausa todos os serviços em execução na conta de serviço hipotética netsvc.</span><span class="sxs-lookup"><span data-stu-id="49d01-179">The [Pause Services Running Under a Specific Account](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) VBScript sample Pauses all services running under the hypothetical service account Netsvc.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b95db-180">Requisitos</span><span class="sxs-lookup"><span data-stu-id="b95db-180">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="49d01-180">Requisitos</span><span class="sxs-lookup"><span data-stu-id="49d01-180">Requirements</span></span>
 
 
 
-| <span data-ttu-id="b95db-181">Requisito</span><span class="sxs-lookup"><span data-stu-id="b95db-181">Requirement</span></span> | <span data-ttu-id="b95db-182">Valor</span><span class="sxs-lookup"><span data-stu-id="b95db-182">Value</span></span> |
+| <span data-ttu-id="49d01-181">Requisito</span><span class="sxs-lookup"><span data-stu-id="49d01-181">Requirement</span></span> | <span data-ttu-id="49d01-182">Valor</span><span class="sxs-lookup"><span data-stu-id="49d01-182">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="b95db-183">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b95db-183">Minimum supported client</span></span><br/> | <span data-ttu-id="b95db-184">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="b95db-184">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="b95db-185">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="b95db-185">Minimum supported server</span></span><br/> | <span data-ttu-id="b95db-186">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="b95db-186">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="b95db-187">Namespace</span><span class="sxs-lookup"><span data-stu-id="b95db-187">Namespace</span></span><br/>                | <span data-ttu-id="b95db-188">\\TerminalServices da CIMv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="b95db-188">Root\\CIMv2\\TerminalServices</span></span><br/>                                                |
-| <span data-ttu-id="b95db-189">MOF</span><span class="sxs-lookup"><span data-stu-id="b95db-189">MOF</span></span><br/>                      | <dl> <span data-ttu-id="b95db-190"><dt>TSCfgWmi. mof</dt></span><span class="sxs-lookup"><span data-stu-id="b95db-190"><dt>TSCfgWmi.mof</dt></span></span> </dl> |
-| <span data-ttu-id="b95db-191">DLL</span><span class="sxs-lookup"><span data-stu-id="b95db-191">DLL</span></span><br/>                      | <dl> <span data-ttu-id="b95db-192"><dt>TSCfgWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="b95db-192"><dt>TSCfgWmi.dll</dt></span></span> </dl> |
+| <span data-ttu-id="49d01-183">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49d01-183">Minimum supported client</span></span><br/> | <span data-ttu-id="49d01-184">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="49d01-184">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="49d01-185">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="49d01-185">Minimum supported server</span></span><br/> | <span data-ttu-id="49d01-186">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="49d01-186">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="49d01-187">Namespace</span><span class="sxs-lookup"><span data-stu-id="49d01-187">Namespace</span></span><br/>                | <span data-ttu-id="49d01-188">\\TerminalServices da CIMv2 raiz \\</span><span class="sxs-lookup"><span data-stu-id="49d01-188">Root\\CIMv2\\TerminalServices</span></span><br/>                                                |
+| <span data-ttu-id="49d01-189">MOF</span><span class="sxs-lookup"><span data-stu-id="49d01-189">MOF</span></span><br/>                      | <dl> <span data-ttu-id="49d01-190"><dt>TSCfgWmi. mof</dt></span><span class="sxs-lookup"><span data-stu-id="49d01-190"><dt>TSCfgWmi.mof</dt></span></span> </dl> |
+| <span data-ttu-id="49d01-191">DLL</span><span class="sxs-lookup"><span data-stu-id="49d01-191">DLL</span></span><br/>                      | <dl> <span data-ttu-id="49d01-192"><dt>TSCfgWmi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="49d01-192"><dt>TSCfgWmi.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b95db-193">Confira também</span><span class="sxs-lookup"><span data-stu-id="b95db-193">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49d01-193">Consulte também</span><span class="sxs-lookup"><span data-stu-id="49d01-193">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b95db-194">**\_Serviço Win32**</span><span class="sxs-lookup"><span data-stu-id="b95db-194">**Win32\_Service**</span></span>](/windows/desktop/CIMWin32Prov/win32-service)
+[<span data-ttu-id="49d01-194">**\_Serviço Win32**</span><span class="sxs-lookup"><span data-stu-id="49d01-194">**Win32\_Service**</span></span>](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
-[<span data-ttu-id="b95db-195">Classes do sistema operacional</span><span class="sxs-lookup"><span data-stu-id="b95db-195">Operating System Classes</span></span>](/windows/desktop/CIMWin32Prov/operating-system-classes)
+[<span data-ttu-id="49d01-195">Classes do sistema operacional</span><span class="sxs-lookup"><span data-stu-id="49d01-195">Operating System Classes</span></span>](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[<span data-ttu-id="b95db-196">**\_TerminalService Win32**</span><span class="sxs-lookup"><span data-stu-id="b95db-196">**Win32\_TerminalService**</span></span>](win32-terminalservice.md)
+[<span data-ttu-id="49d01-196">**\_TerminalService Win32**</span><span class="sxs-lookup"><span data-stu-id="49d01-196">**Win32\_TerminalService**</span></span>](win32-terminalservice.md)
 </dt> <dt>
 
-[<span data-ttu-id="b95db-197">Tarefas do WMI: serviços</span><span class="sxs-lookup"><span data-stu-id="b95db-197">WMI Tasks: Services</span></span>](/windows/desktop/WmiSdk/wmi-tasks--services)
+[<span data-ttu-id="49d01-197">Tarefas do WMI: serviços</span><span class="sxs-lookup"><span data-stu-id="49d01-197">WMI Tasks: Services</span></span>](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> <dt>
 
-[<span data-ttu-id="b95db-198">**StopService**</span><span class="sxs-lookup"><span data-stu-id="b95db-198">**StopService**</span></span>](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service)
+[<span data-ttu-id="49d01-198">**StopService**</span><span class="sxs-lookup"><span data-stu-id="49d01-198">**StopService**</span></span>](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service)
 </dt> </dl>
 
  

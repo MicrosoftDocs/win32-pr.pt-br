@@ -1,5 +1,5 @@
 ---
-description: Carrega a primeira hierarquia de quadros de um arquivo. x.
+description: Função D3DXLoadMeshHierarchyFromX – carrega a primeira hierarquia de quadro de um arquivo. x.
 ms.assetid: 1d446b23-9028-4187-b97c-a61edfe68e39
 title: Função D3DXLoadMeshHierarchyFromX (D3dx9anim. h)
 ms.topic: reference
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 308ebf127708849bec8ee8a4f2601f029562634a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b6f6f08e10155509df800cca3cb3788d6b27e520
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930545"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114354"
 ---
-# <a name="d3dxloadmeshhierarchyfromx-function"></a><span data-ttu-id="62497-103">Função D3DXLoadMeshHierarchyFromX</span><span class="sxs-lookup"><span data-stu-id="62497-103">D3DXLoadMeshHierarchyFromX function</span></span>
+# <a name="d3dxloadmeshhierarchyfromx-function"></a><span data-ttu-id="aafdb-103">Função D3DXLoadMeshHierarchyFromX</span><span class="sxs-lookup"><span data-stu-id="aafdb-103">D3DXLoadMeshHierarchyFromX function</span></span>
 
-<span data-ttu-id="62497-104">Carrega a primeira hierarquia de quadros de um arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="62497-104">Loads the first frame hierarchy from a .x file.</span></span>
+<span data-ttu-id="aafdb-104">Carrega a primeira hierarquia de quadros de um arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="aafdb-104">Loads the first frame hierarchy from a .x file.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="62497-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="62497-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aafdb-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="aafdb-105">Syntax</span></span>
 
 
 ```C++
@@ -42,112 +42,112 @@ HRESULT D3DXLoadMeshHierarchyFromX(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="62497-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="62497-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="aafdb-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="aafdb-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="62497-107">*Nome do arquivo* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="62497-107">*Filename* \[in\]</span></span>
+<span data-ttu-id="aafdb-107">*Nome do arquivo* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-107">*Filename* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-108">Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="62497-108">Type: **[**LPCTSTR**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="aafdb-108">Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-108">Type: **[**LPCTSTR**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="62497-109">Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo.</span><span class="sxs-lookup"><span data-stu-id="62497-109">Pointer to a string that specifies the filename.</span></span> <span data-ttu-id="62497-110">Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR.</span><span class="sxs-lookup"><span data-stu-id="62497-110">If the compiler settings require Unicode, the data type LPCTSTR resolves to LPCWSTR.</span></span> <span data-ttu-id="62497-111">Caso contrário, o tipo de dados String será resolvido para LPCSTR.</span><span class="sxs-lookup"><span data-stu-id="62497-111">Otherwise, the string data type resolves to LPCSTR.</span></span> <span data-ttu-id="62497-112">Consulte Observações.</span><span class="sxs-lookup"><span data-stu-id="62497-112">See Remarks.</span></span>
+<span data-ttu-id="aafdb-109">Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo.</span><span class="sxs-lookup"><span data-stu-id="aafdb-109">Pointer to a string that specifies the filename.</span></span> <span data-ttu-id="aafdb-110">Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR.</span><span class="sxs-lookup"><span data-stu-id="aafdb-110">If the compiler settings require Unicode, the data type LPCTSTR resolves to LPCWSTR.</span></span> <span data-ttu-id="aafdb-111">Caso contrário, o tipo de dados String será resolvido para LPCSTR.</span><span class="sxs-lookup"><span data-stu-id="aafdb-111">Otherwise, the string data type resolves to LPCSTR.</span></span> <span data-ttu-id="aafdb-112">Consulte Observações.</span><span class="sxs-lookup"><span data-stu-id="aafdb-112">See Remarks.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-113">*Malhas* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="62497-113">*MeshOptions* \[in\]</span></span>
+<span data-ttu-id="aafdb-113">*Malhas* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-113">*MeshOptions* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-114">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="62497-114">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
+<span data-ttu-id="aafdb-114">Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-114">Type: **[**DWORD**](../winprog/windows-data-types.md)**</span></span>
 
-<span data-ttu-id="62497-115">Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH**](./d3dxmesh.md) que especificam as opções de criação para a malha.</span><span class="sxs-lookup"><span data-stu-id="62497-115">Combination of one or more flags from the [**D3DXMESH**](./d3dxmesh.md) enumeration that specify creation options for the mesh.</span></span>
+<span data-ttu-id="aafdb-115">Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH**](./d3dxmesh.md) que especificam as opções de criação para a malha.</span><span class="sxs-lookup"><span data-stu-id="aafdb-115">Combination of one or more flags from the [**D3DXMESH**](./d3dxmesh.md) enumeration that specify creation options for the mesh.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-116">*pDevice* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="62497-116">*pDevice* \[in\]</span></span>
+<span data-ttu-id="aafdb-116">*pDevice* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-116">*pDevice* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-117">Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**</span><span class="sxs-lookup"><span data-stu-id="62497-117">Type: **[**LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**</span></span>
+<span data-ttu-id="aafdb-117">Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-117">Type: **[**LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**</span></span>
 
-<span data-ttu-id="62497-118">Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , o objeto de dispositivo associado à malha.</span><span class="sxs-lookup"><span data-stu-id="62497-118">Pointer to an [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) interface, the device object associated with the mesh.</span></span>
+<span data-ttu-id="aafdb-118">Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , o objeto de dispositivo associado à malha.</span><span class="sxs-lookup"><span data-stu-id="aafdb-118">Pointer to an [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) interface, the device object associated with the mesh.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-119">*pAlloc* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="62497-119">*pAlloc* \[in\]</span></span>
+<span data-ttu-id="aafdb-119">*pAlloc* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-119">*pAlloc* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-120">Tipo: **[ **LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**</span><span class="sxs-lookup"><span data-stu-id="62497-120">Type: **[**LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**</span></span>
+<span data-ttu-id="aafdb-120">Tipo: **[ **LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-120">Type: **[**LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**</span></span>
 
-<span data-ttu-id="62497-121">Ponteiro para uma interface [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) .</span><span class="sxs-lookup"><span data-stu-id="62497-121">Pointer to an [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) interface.</span></span>
+<span data-ttu-id="aafdb-121">Ponteiro para uma interface [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) .</span><span class="sxs-lookup"><span data-stu-id="aafdb-121">Pointer to an [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) interface.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-122">*pUserDataLoader* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="62497-122">*pUserDataLoader* \[in\]</span></span>
+<span data-ttu-id="aafdb-122">*pUserDataLoader* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-122">*pUserDataLoader* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-123">Tipo: **[ **LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**</span><span class="sxs-lookup"><span data-stu-id="62497-123">Type: **[**LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**</span></span>
+<span data-ttu-id="aafdb-123">Tipo: **[ **LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-123">Type: **[**LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**</span></span>
 
-<span data-ttu-id="62497-124">Interface fornecida pelo aplicativo que permite o carregamento de dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="62497-124">Application provided interface that allows loading of user data.</span></span> <span data-ttu-id="62497-125">Consulte [**ID3DXLoadUserData**](id3dxloaduserdata.md).</span><span class="sxs-lookup"><span data-stu-id="62497-125">See [**ID3DXLoadUserData**](id3dxloaduserdata.md).</span></span>
+<span data-ttu-id="aafdb-124">Interface fornecida pelo aplicativo que permite o carregamento de dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="aafdb-124">Application provided interface that allows loading of user data.</span></span> <span data-ttu-id="aafdb-125">Consulte [**ID3DXLoadUserData**](id3dxloaduserdata.md).</span><span class="sxs-lookup"><span data-stu-id="aafdb-125">See [**ID3DXLoadUserData**](id3dxloaduserdata.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-126">*ppFrameHierarchy* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="62497-126">*ppFrameHierarchy* \[out\]</span></span>
+<span data-ttu-id="aafdb-126">*ppFrameHierarchy* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-126">*ppFrameHierarchy* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-127">Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***</span><span class="sxs-lookup"><span data-stu-id="62497-127">Type: **[**LPD3DXFRAME**](d3dxframe.md)\***</span></span>
+<span data-ttu-id="aafdb-127">Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***</span><span class="sxs-lookup"><span data-stu-id="aafdb-127">Type: **[**LPD3DXFRAME**](d3dxframe.md)\***</span></span>
 
-<span data-ttu-id="62497-128">Retorna um ponteiro para a hierarquia de quadro carregada.</span><span class="sxs-lookup"><span data-stu-id="62497-128">Returns a pointer to the loaded frame hierarchy.</span></span> <span data-ttu-id="62497-129">Consulte [**D3DXFRAME**](d3dxframe.md).</span><span class="sxs-lookup"><span data-stu-id="62497-129">See [**D3DXFRAME**](d3dxframe.md).</span></span>
+<span data-ttu-id="aafdb-128">Retorna um ponteiro para a hierarquia de quadro carregada.</span><span class="sxs-lookup"><span data-stu-id="aafdb-128">Returns a pointer to the loaded frame hierarchy.</span></span> <span data-ttu-id="aafdb-129">Consulte [**D3DXFRAME**](d3dxframe.md).</span><span class="sxs-lookup"><span data-stu-id="aafdb-129">See [**D3DXFRAME**](d3dxframe.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="62497-130">*ppAnimController* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="62497-130">*ppAnimController* \[out\]</span></span>
+<span data-ttu-id="aafdb-130">*ppAnimController* \[ fora\]</span><span class="sxs-lookup"><span data-stu-id="aafdb-130">*ppAnimController* \[out\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="62497-131">Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***</span><span class="sxs-lookup"><span data-stu-id="62497-131">Type: **[**LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***</span></span>
+<span data-ttu-id="aafdb-131">Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***</span><span class="sxs-lookup"><span data-stu-id="aafdb-131">Type: **[**LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***</span></span>
 
-<span data-ttu-id="62497-132">Retorna um ponteiro para o controlador de animação correspondente à animação no arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="62497-132">Returns a pointer to the animation controller corresponding to animation in the .x file.</span></span> <span data-ttu-id="62497-133">Isso é criado com rastreamentos e eventos padrão.</span><span class="sxs-lookup"><span data-stu-id="62497-133">This is created with default tracks and events.</span></span> <span data-ttu-id="62497-134">Consulte [**ID3DXAnimationController**](id3dxanimationcontroller.md).</span><span class="sxs-lookup"><span data-stu-id="62497-134">See [**ID3DXAnimationController**](id3dxanimationcontroller.md).</span></span>
+<span data-ttu-id="aafdb-132">Retorna um ponteiro para o controlador de animação correspondente à animação no arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="aafdb-132">Returns a pointer to the animation controller corresponding to animation in the .x file.</span></span> <span data-ttu-id="aafdb-133">Isso é criado com rastreamentos e eventos padrão.</span><span class="sxs-lookup"><span data-stu-id="aafdb-133">This is created with default tracks and events.</span></span> <span data-ttu-id="aafdb-134">Consulte [**ID3DXAnimationController**](id3dxanimationcontroller.md).</span><span class="sxs-lookup"><span data-stu-id="aafdb-134">See [**ID3DXAnimationController**](id3dxanimationcontroller.md).</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="62497-135">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="62497-135">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="aafdb-135">Valor retornado</span><span class="sxs-lookup"><span data-stu-id="aafdb-135">Return value</span></span>
 
-<span data-ttu-id="62497-136">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="62497-136">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+<span data-ttu-id="aafdb-136">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="aafdb-136">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
 
-<span data-ttu-id="62497-137">Se a função for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="62497-137">If the function succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="62497-138">Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.</span><span class="sxs-lookup"><span data-stu-id="62497-138">If the function fails, the return value can be one of the following values: D3DERR\_INVALIDCALL, E\_OUTOFMEMORY.</span></span>
+<span data-ttu-id="aafdb-137">Se a função for bem sucedido, o valor de retorno será D3D \_ OK.</span><span class="sxs-lookup"><span data-stu-id="aafdb-137">If the function succeeds, the return value is D3D\_OK.</span></span> <span data-ttu-id="aafdb-138">Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.</span><span class="sxs-lookup"><span data-stu-id="aafdb-138">If the function fails, the return value can be one of the following values: D3DERR\_INVALIDCALL, E\_OUTOFMEMORY.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="62497-139">Comentários</span><span class="sxs-lookup"><span data-stu-id="62497-139">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aafdb-139">Comentários</span><span class="sxs-lookup"><span data-stu-id="aafdb-139">Remarks</span></span>
 
-<span data-ttu-id="62497-140">A configuração do compilador também determina a versão da função.</span><span class="sxs-lookup"><span data-stu-id="62497-140">The compiler setting also determines the function version.</span></span> <span data-ttu-id="62497-141">Se o Unicode for definido, a chamada de função será resolvida como D3DXLoadMeshHierarchyFromXW.</span><span class="sxs-lookup"><span data-stu-id="62497-141">If Unicode is defined, the function call resolves to D3DXLoadMeshHierarchyFromXW.</span></span> <span data-ttu-id="62497-142">Caso contrário, a chamada de função será resolvida como D3DXLoadMeshHierarchyFromXA.</span><span class="sxs-lookup"><span data-stu-id="62497-142">Otherwise, the function call resolves to D3DXLoadMeshHierarchyFromXA.</span></span>
+<span data-ttu-id="aafdb-140">A configuração do compilador também determina a versão da função.</span><span class="sxs-lookup"><span data-stu-id="aafdb-140">The compiler setting also determines the function version.</span></span> <span data-ttu-id="aafdb-141">Se o Unicode for definido, a chamada de função será resolvida como D3DXLoadMeshHierarchyFromXW.</span><span class="sxs-lookup"><span data-stu-id="aafdb-141">If Unicode is defined, the function call resolves to D3DXLoadMeshHierarchyFromXW.</span></span> <span data-ttu-id="aafdb-142">Caso contrário, a chamada de função será resolvida como D3DXLoadMeshHierarchyFromXA.</span><span class="sxs-lookup"><span data-stu-id="aafdb-142">Otherwise, the function call resolves to D3DXLoadMeshHierarchyFromXA.</span></span>
 
-<span data-ttu-id="62497-143">Todas as malhas no arquivo serão recolhidas em uma malha de saída.</span><span class="sxs-lookup"><span data-stu-id="62497-143">All the meshes in the file will be collapsed into one output mesh.</span></span> <span data-ttu-id="62497-144">Se o arquivo contiver uma hierarquia de quadros, todas as transformações serão aplicadas à malha.</span><span class="sxs-lookup"><span data-stu-id="62497-144">If the file contains a frame hierarchy, all the transformations will be applied to the mesh.</span></span>
+<span data-ttu-id="aafdb-143">Todas as malhas no arquivo serão recolhidas em uma malha de saída.</span><span class="sxs-lookup"><span data-stu-id="aafdb-143">All the meshes in the file will be collapsed into one output mesh.</span></span> <span data-ttu-id="aafdb-144">Se o arquivo contiver uma hierarquia de quadros, todas as transformações serão aplicadas à malha.</span><span class="sxs-lookup"><span data-stu-id="aafdb-144">If the file contains a frame hierarchy, all the transformations will be applied to the mesh.</span></span>
 
-<span data-ttu-id="62497-145">**D3DXLoadMeshHierarchyFromX** carrega os dados de animação e a hierarquia de quadros de um arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="62497-145">**D3DXLoadMeshHierarchyFromX** loads the animation data and frame hierarchy from a .x file.</span></span> <span data-ttu-id="62497-146">Ele examina o arquivo. x e cria uma hierarquia de quadros e um controlador de animação de acordo com o objeto derivado de [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)passado para ele por meio de pAlloc.</span><span class="sxs-lookup"><span data-stu-id="62497-146">It scans the .x file and builds a frame hierarchy and animation controller according to the [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)-derived object passed to it through pAlloc.</span></span> <span data-ttu-id="62497-147">O carregamento dos dados requer várias etapas da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="62497-147">Loading the data requires several steps as follows:</span></span>
+<span data-ttu-id="aafdb-145">**D3DXLoadMeshHierarchyFromX** carrega os dados de animação e a hierarquia de quadros de um arquivo. x.</span><span class="sxs-lookup"><span data-stu-id="aafdb-145">**D3DXLoadMeshHierarchyFromX** loads the animation data and frame hierarchy from a .x file.</span></span> <span data-ttu-id="aafdb-146">Ele examina o arquivo. x e cria uma hierarquia de quadros e um controlador de animação de acordo com o objeto derivado de [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)passado para ele por meio de pAlloc.</span><span class="sxs-lookup"><span data-stu-id="aafdb-146">It scans the .x file and builds a frame hierarchy and animation controller according to the [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)-derived object passed to it through pAlloc.</span></span> <span data-ttu-id="aafdb-147">O carregamento dos dados requer várias etapas da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="aafdb-147">Loading the data requires several steps as follows:</span></span>
 
-1.  <span data-ttu-id="62497-148">Derive [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementando cada método.</span><span class="sxs-lookup"><span data-stu-id="62497-148">Derive [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementing each method.</span></span> <span data-ttu-id="62497-149">Isso controla como os quadros e as malhas são alocados e liberados.</span><span class="sxs-lookup"><span data-stu-id="62497-149">This controls how frames and meshes are allocated and freed.</span></span>
-2.  <span data-ttu-id="62497-150">Derive [**ID3DXLoadUserData**](id3dxloaduserdata.md), implementando cada método.</span><span class="sxs-lookup"><span data-stu-id="62497-150">Derive [**ID3DXLoadUserData**](id3dxloaduserdata.md), implementing each method.</span></span> <span data-ttu-id="62497-151">Se o arquivo. x não tiver dados inseridos definidos pelo usuário ou se você não precisar dele, poderá ignorar essa parte.</span><span class="sxs-lookup"><span data-stu-id="62497-151">If your .x file has no embedded user-defined data, or if you do not need it, you can skip this part.</span></span>
-3.  <span data-ttu-id="62497-152">Crie um objeto da classe [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e, opcionalmente, da classe loaduserdata.</span><span class="sxs-lookup"><span data-stu-id="62497-152">Create an object of your [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) class, and optionally of your LoadUserData class.</span></span> <span data-ttu-id="62497-153">Você não precisa chamar nenhum método desses objetos por conta própria.</span><span class="sxs-lookup"><span data-stu-id="62497-153">You do not need to call any methods of these objects yourself.</span></span>
-4.  <span data-ttu-id="62497-154">Chame **D3DXLoadMeshHierarchyFromX**, passando o objeto [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e o objeto [**ID3DXLoadUserData**](id3dxloaduserdata.md) (ou **NULL**) para criar a hierarquia de quadros e o controlador de animação.</span><span class="sxs-lookup"><span data-stu-id="62497-154">Call **D3DXLoadMeshHierarchyFromX**, passing in your [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) object and your [**ID3DXLoadUserData**](id3dxloaduserdata.md) object (or **NULL**) to create the frame hierarchy and animation controller.</span></span> <span data-ttu-id="62497-155">Todos os conjuntos de animação e quadros são automaticamente registrados no controlador de animação.</span><span class="sxs-lookup"><span data-stu-id="62497-155">All the animation sets and frames are automatically registered to the animation controller.</span></span>
+1.  <span data-ttu-id="aafdb-148">Derive [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementando cada método.</span><span class="sxs-lookup"><span data-stu-id="aafdb-148">Derive [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementing each method.</span></span> <span data-ttu-id="aafdb-149">Isso controla como os quadros e as malhas são alocados e liberados.</span><span class="sxs-lookup"><span data-stu-id="aafdb-149">This controls how frames and meshes are allocated and freed.</span></span>
+2.  <span data-ttu-id="aafdb-150">Derive [**ID3DXLoadUserData**](id3dxloaduserdata.md), implementando cada método.</span><span class="sxs-lookup"><span data-stu-id="aafdb-150">Derive [**ID3DXLoadUserData**](id3dxloaduserdata.md), implementing each method.</span></span> <span data-ttu-id="aafdb-151">Se o arquivo. x não tiver dados inseridos definidos pelo usuário ou se você não precisar dele, poderá ignorar essa parte.</span><span class="sxs-lookup"><span data-stu-id="aafdb-151">If your .x file has no embedded user-defined data, or if you do not need it, you can skip this part.</span></span>
+3.  <span data-ttu-id="aafdb-152">Crie um objeto da classe [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e, opcionalmente, da classe loaduserdata.</span><span class="sxs-lookup"><span data-stu-id="aafdb-152">Create an object of your [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) class, and optionally of your LoadUserData class.</span></span> <span data-ttu-id="aafdb-153">Você não precisa chamar nenhum método desses objetos por conta própria.</span><span class="sxs-lookup"><span data-stu-id="aafdb-153">You do not need to call any methods of these objects yourself.</span></span>
+4.  <span data-ttu-id="aafdb-154">Chame **D3DXLoadMeshHierarchyFromX**, passando o objeto [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e o objeto [**ID3DXLoadUserData**](id3dxloaduserdata.md) (ou **NULL**) para criar a hierarquia de quadros e o controlador de animação.</span><span class="sxs-lookup"><span data-stu-id="aafdb-154">Call **D3DXLoadMeshHierarchyFromX**, passing in your [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) object and your [**ID3DXLoadUserData**](id3dxloaduserdata.md) object (or **NULL**) to create the frame hierarchy and animation controller.</span></span> <span data-ttu-id="aafdb-155">Todos os conjuntos de animação e quadros são automaticamente registrados no controlador de animação.</span><span class="sxs-lookup"><span data-stu-id="aafdb-155">All the animation sets and frames are automatically registered to the animation controller.</span></span>
 
-<span data-ttu-id="62497-156">Durante a carga, [**CreateFrame**](id3dxallocatehierarchy--createframe.md) e [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) são chamados de volta em cada quadro para controlar o carregamento e a alocação do quadro.</span><span class="sxs-lookup"><span data-stu-id="62497-156">During the load, [**CreateFrame**](id3dxallocatehierarchy--createframe.md) and [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) are called back on each frame to control loading and allocation of the frame.</span></span> <span data-ttu-id="62497-157">O aplicativo define esses métodos para controlar como os quadros são armazenados.</span><span class="sxs-lookup"><span data-stu-id="62497-157">The application defines these methods to control how frames are stored.</span></span> <span data-ttu-id="62497-158">[**CreateMeshContainer**](id3dxallocatehierarchy--createmeshcontainer.md) e [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md) são chamados de volta em cada objeto de malha para controlar o carregamento e a alocação de objetos de malha.</span><span class="sxs-lookup"><span data-stu-id="62497-158">[**CreateMeshContainer**](id3dxallocatehierarchy--createmeshcontainer.md) and [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md) are called back on each mesh object to control loading and allocation of mesh objects.</span></span> <span data-ttu-id="62497-159">[**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md) é chamado de volta para cada objeto de nível superior que não é carregado por outros métodos.</span><span class="sxs-lookup"><span data-stu-id="62497-159">[**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md) is called back for each top level object that doesn't get loaded by the other methods.</span></span>
+<span data-ttu-id="aafdb-156">Durante a carga, [**CreateFrame**](id3dxallocatehierarchy--createframe.md) e [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) são chamados de volta em cada quadro para controlar o carregamento e a alocação do quadro.</span><span class="sxs-lookup"><span data-stu-id="aafdb-156">During the load, [**CreateFrame**](id3dxallocatehierarchy--createframe.md) and [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) are called back on each frame to control loading and allocation of the frame.</span></span> <span data-ttu-id="aafdb-157">O aplicativo define esses métodos para controlar como os quadros são armazenados.</span><span class="sxs-lookup"><span data-stu-id="aafdb-157">The application defines these methods to control how frames are stored.</span></span> <span data-ttu-id="aafdb-158">[**CreateMeshContainer**](id3dxallocatehierarchy--createmeshcontainer.md) e [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md) são chamados de volta em cada objeto de malha para controlar o carregamento e a alocação de objetos de malha.</span><span class="sxs-lookup"><span data-stu-id="aafdb-158">[**CreateMeshContainer**](id3dxallocatehierarchy--createmeshcontainer.md) and [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md) are called back on each mesh object to control loading and allocation of mesh objects.</span></span> <span data-ttu-id="aafdb-159">[**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md) é chamado de volta para cada objeto de nível superior que não é carregado por outros métodos.</span><span class="sxs-lookup"><span data-stu-id="aafdb-159">[**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md) is called back for each top level object that doesn't get loaded by the other methods.</span></span>
 
-<span data-ttu-id="62497-160">Para liberar esses dados, chame ID3DXAnimationController:: Release para liberar os conjuntos de animação e [**D3DXFRAMEDestroy**](d3dxframedestroy.md), passando o nó raiz da hierarquia de quadros e um objeto de sua classe [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) derivada.</span><span class="sxs-lookup"><span data-stu-id="62497-160">To free this data, call ID3DXAnimationController::Release to free the animation sets, and [**D3DXFRAMEDestroy**](d3dxframedestroy.md), passing in the root node of the frame hierarchy and an object of your derived [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) class.</span></span> <span data-ttu-id="62497-161">[**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) e [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) serão chamados para cada objeto de quadro e malha na hierarquia de quadros.</span><span class="sxs-lookup"><span data-stu-id="62497-161">[**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) and [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) will each be called for every frame and mesh object in the frame hierarchy.</span></span> <span data-ttu-id="62497-162">Sua implementação do **DestroyFrame** deve liberar tudo alocado pelo [**CreateFrame**](id3dxallocatehierarchy--createframe.md)e, da mesma forma, para os métodos de contêiner de malha.</span><span class="sxs-lookup"><span data-stu-id="62497-162">Your implementation of **DestroyFrame** should release everything allocated by [**CreateFrame**](id3dxallocatehierarchy--createframe.md), and likewise for the mesh container methods.</span></span>
+<span data-ttu-id="aafdb-160">Para liberar esses dados, chame ID3DXAnimationController:: Release para liberar os conjuntos de animação e [**D3DXFRAMEDestroy**](d3dxframedestroy.md), passando o nó raiz da hierarquia de quadros e um objeto de sua classe [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) derivada.</span><span class="sxs-lookup"><span data-stu-id="aafdb-160">To free this data, call ID3DXAnimationController::Release to free the animation sets, and [**D3DXFRAMEDestroy**](d3dxframedestroy.md), passing in the root node of the frame hierarchy and an object of your derived [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) class.</span></span> <span data-ttu-id="aafdb-161">[**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) e [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) serão chamados para cada objeto de quadro e malha na hierarquia de quadros.</span><span class="sxs-lookup"><span data-stu-id="aafdb-161">[**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) and [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) will each be called for every frame and mesh object in the frame hierarchy.</span></span> <span data-ttu-id="aafdb-162">Sua implementação do **DestroyFrame** deve liberar tudo alocado pelo [**CreateFrame**](id3dxallocatehierarchy--createframe.md)e, da mesma forma, para os métodos de contêiner de malha.</span><span class="sxs-lookup"><span data-stu-id="aafdb-162">Your implementation of **DestroyFrame** should release everything allocated by [**CreateFrame**](id3dxallocatehierarchy--createframe.md), and likewise for the mesh container methods.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="62497-163">Requisitos</span><span class="sxs-lookup"><span data-stu-id="62497-163">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="aafdb-163">Requisitos</span><span class="sxs-lookup"><span data-stu-id="aafdb-163">Requirements</span></span>
 
 
 
-| <span data-ttu-id="62497-164">Requisito</span><span class="sxs-lookup"><span data-stu-id="62497-164">Requirement</span></span> | <span data-ttu-id="62497-165">Valor</span><span class="sxs-lookup"><span data-stu-id="62497-165">Value</span></span> |
+| <span data-ttu-id="aafdb-164">Requisito</span><span class="sxs-lookup"><span data-stu-id="aafdb-164">Requirement</span></span> | <span data-ttu-id="aafdb-165">Valor</span><span class="sxs-lookup"><span data-stu-id="aafdb-165">Value</span></span> |
 |--------------------|----------------------------------------------------------------------------------------|
-| <span data-ttu-id="62497-166">parâmetro</span><span class="sxs-lookup"><span data-stu-id="62497-166">Header</span></span><br/>  | <dl> <span data-ttu-id="62497-167"><dt>D3dx9anim. h</dt></span><span class="sxs-lookup"><span data-stu-id="62497-167"><dt>D3dx9anim.h</dt></span></span> </dl> |
-| <span data-ttu-id="62497-168">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="62497-168">Library</span></span><br/> | <dl> <span data-ttu-id="62497-169"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="62497-169"><dt>D3dx9.lib</dt></span></span> </dl>   |
+| <span data-ttu-id="aafdb-166">parâmetro</span><span class="sxs-lookup"><span data-stu-id="aafdb-166">Header</span></span><br/>  | <dl> <span data-ttu-id="aafdb-167"><dt>D3dx9anim. h</dt></span><span class="sxs-lookup"><span data-stu-id="aafdb-167"><dt>D3dx9anim.h</dt></span></span> </dl> |
+| <span data-ttu-id="aafdb-168">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="aafdb-168">Library</span></span><br/> | <dl> <span data-ttu-id="aafdb-169"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="aafdb-169"><dt>D3dx9.lib</dt></span></span> </dl>   |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="62497-170">Confira também</span><span class="sxs-lookup"><span data-stu-id="62497-170">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aafdb-170">Consulte também</span><span class="sxs-lookup"><span data-stu-id="aafdb-170">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="62497-171">Funções de animação</span><span class="sxs-lookup"><span data-stu-id="62497-171">Animation Functions</span></span>](dx9-graphics-reference-d3dx-functions-animation.md)
+[<span data-ttu-id="aafdb-171">Funções de animação</span><span class="sxs-lookup"><span data-stu-id="aafdb-171">Animation Functions</span></span>](dx9-graphics-reference-d3dx-functions-animation.md)
 </dt> </dl>
 
  
