@@ -1,24 +1,24 @@
 ---
 title: Visões gerais de controle de Up-Down
-description: .
+description: Visões gerais de controle de Up-Down
 ms.assetid: 4FEFAC0C-EF16-411B-828B-9944167BF68D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbec142bc590d9f2b3b83affffa2184c258893c3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3705473aca9d3ce5e646f4026592c7fad6b97ff4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916182"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120134"
 ---
-# <a name="up-down-control-overviews"></a><span data-ttu-id="ba535-103">Visões gerais de controle de Up-Down</span><span class="sxs-lookup"><span data-stu-id="ba535-103">Up-Down Control Overviews</span></span>
+# <a name="up-down-control-overviews"></a><span data-ttu-id="526b3-103">Visões gerais de controle de Up-Down</span><span class="sxs-lookup"><span data-stu-id="526b3-103">Up-Down Control Overviews</span></span>
 
--   [<span data-ttu-id="ba535-104">Sobre controles de Up-Down</span><span class="sxs-lookup"><span data-stu-id="ba535-104">About Up-Down Controls</span></span>](up-down-controls.md)
--   [<span data-ttu-id="ba535-105">Usando controles de Up-Down</span><span class="sxs-lookup"><span data-stu-id="ba535-105">Using Up-Down Controls</span></span>](using-up-down-controls.md)
+-   [<span data-ttu-id="526b3-104">Sobre controles de Up-Down</span><span class="sxs-lookup"><span data-stu-id="526b3-104">About Up-Down Controls</span></span>](up-down-controls.md)
+-   [<span data-ttu-id="526b3-105">Usando controles de Up-Down</span><span class="sxs-lookup"><span data-stu-id="526b3-105">Using Up-Down Controls</span></span>](using-up-down-controls.md)
 
- 
+ 
 
- 
+ 
 
 
 
