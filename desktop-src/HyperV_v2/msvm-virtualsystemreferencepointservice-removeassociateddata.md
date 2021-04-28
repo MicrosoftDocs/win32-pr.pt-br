@@ -1,5 +1,5 @@
 ---
-description: Remove o log de dados associado ao ponto de referência.
+description: Método RemoveAssociatedData da classe Msvm_VirtualSystemReferencePointService – remove o log de dados associado ao ponto de referência.
 ms.assetid: b6206bda-c195-4c6f-9b80-508c20b53ce5
 title: Método RemoveAssociatedData da classe Msvm_VirtualSystemReferencePointService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c0d67502d349f0b0dac7cbf9a1998dcd6db0fb4a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b5291e4e018edc89909ccde36ce0e420698af8e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105753470"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118614"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método RemoveAssociatedData da \_ classe VirtualSystemReferencePointService Msvm
 
@@ -54,7 +54,7 @@ Um parâmetro opcional para monitorar o progresso da operação, que é usado se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna um 0 (completo sem erro) ou 4096 (trabalho iniciado); caso contrário, retorne um erro.
 
@@ -113,7 +113,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

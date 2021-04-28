@@ -1,5 +1,5 @@
 ---
-description: O código do componente em questão.
+description: Propriedade Component. ComponentCode-o código do componente em questão.
 ms.assetid: 0370660f-b809-4b18-b52d-857605e59e12
 title: Propriedade Component. ComponentCode
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: e40e7502c70f6cc3b4024e62492cddc05ae9d9ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f72f9fbbeece6fff2bb3fad77a4d06bb773ffd27
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787506"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118504"
 ---
 # <a name="componentcomponentcode-property"></a>Propriedade Component. ComponentCode
 
@@ -26,7 +26,7 @@ O código do componente em questão. Essa propriedade chama a função [**MsiEnu
 
 **[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Essa propriedade está disponível a partir do Windows Installer 5,0.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ## <a name="property-value"></a>Valor da propriedade
 

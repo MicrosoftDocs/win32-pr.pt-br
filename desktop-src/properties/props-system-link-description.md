@@ -1,15 +1,15 @@
 ---
-description: .
+description: Sistema. link. Descrição
 ms.assetid: a28c687a-7c5c-4c93-a597-5584c5222b19
 title: Sistema. link. Descrição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd5f030f0cc937a792939c18c79d3de50513e6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eda8ef9870e6897634ed2b1c7289255695182a40
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791566"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092484"
 ---
 # <a name="systemlinkdescription"></a>Sistema. link. Descrição
 

@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CUnknown. CUnknown-método de construtor.
 ms.assetid: dafe0d5c-b4c8-4efb-8c47-a8c5db6e8aed
 title: Construtor CUnknown. CUnknown (combase. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b500e7f12a2242b6c05367bc061f50680d2d608b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32859871f8ef69ce357fe204f0741356314fbb06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748186"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084604"
 ---
 # <a name="cunknowncunknown-constructor"></a>Construtor CUnknown. CUnknown
 

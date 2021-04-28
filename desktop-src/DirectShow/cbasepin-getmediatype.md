@@ -1,5 +1,5 @@
 ---
-description: O método GetMediaType recupera um tipo de mídia preferencial, por valor de índice.
+description: Método CBasePin. GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial, por valor de índice.
 ms.assetid: 96f102b0-e2d1-49a1-84af-aa4622cae2a9
 title: Método CBasePin. GetMediaType (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9c54c5cd769a8efa0c720c7050cca45b00b8209e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 186f2eddbedf4eb0565a4ca66ff4ed7e5b080090
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754563"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099364"
 ---
 # <a name="cbasepingetmediatype-method"></a>Método CBasePin. GetMediaType
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 | Código de retorno                                                                                            | Descrição                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Sucesso.<br/>              |
 | <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo.<br/>   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que zero.<br/> |
 | <dl> <dt>**E \_ inesperado**</dt> </dl>           | Erro inesperado.<br/>     |
@@ -91,7 +91,7 @@ A classe base retorna E \_ inesperada. Substitua esse método em sua classe deri
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

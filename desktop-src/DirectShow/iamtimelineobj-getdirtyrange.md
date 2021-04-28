@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: GetDirtyRange-sem suporte.'
 ms.assetid: 7f97b1c4-0508-45a5-a6fd-5dae17f0fa60
 title: 'Método IAMTimelineObj:: GetDirtyRange (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d4f82b34c70cafd49bf21d662cf8b397b8d6316d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 828bb5a88d3bcefcf10f0a6e4f07070a4b60322d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787142"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098564"
 ---
 # <a name="iamtimelineobjgetdirtyrange-method"></a>Método IAMTimelineObj:: GetDirtyRange
 
@@ -60,7 +60,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -87,7 +87,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

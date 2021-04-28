@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. AverageLevel
 ms.assetid: e5500ae2-f250-4b27-8eaa-bff8c2f7c797
 title: System. Media. AverageLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43779cf80e398078993dbb9d95f2bb21b32395eb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eaccb62bbe71ac06f821123b971643f92fcbbba3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105779328"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092314"
 ---
 # <a name="systemmediaaveragelevel"></a>System. Media. AverageLevel
 

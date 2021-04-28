@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o coletor de tinta recebe um pacote.
+description: Evento InkPicture. NewPackets – ocorre quando o coletor de tinta recebe um pacote.
 ms.assetid: 7d120198-c016-4452-b8a8-22c4ad87d526
 title: Evento InkPicture. NewPackets (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d0b3e1df0df2ba051150550daa60772e2a068df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 194fb9bffae07cca561fbfc11ff8a185d63bb9e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798534"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086474"
 ---
 # <a name="inkpicturenewpackets-event"></a>Evento InkPicture. NewPackets
 
@@ -63,7 +63,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -95,7 +95,7 @@ Para definir quais propriedades estão contidas nessa matriz, use a propriedade 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

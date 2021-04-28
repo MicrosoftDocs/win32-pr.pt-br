@@ -1,5 +1,5 @@
 ---
-description: O método DeliverBeginFlush solicita o pino de entrada conectado para iniciar uma operação de liberação.
+description: Método CBaseOutputPin. DeliverBeginFlush – o método DeliverBeginFlush solicita o pino de entrada conectado para iniciar uma operação de liberação.
 ms.assetid: 0d7c7bd7-2a7a-42a4-a0de-60205b62e49c
 title: Método CBaseOutputPin. DeliverBeginFlush (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dad764ceaa6cc57c8c5b7ee288859926b6c63f02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 22dbd2bccf33d9f203d1505106184500b8cae3ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749032"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099514"
 ---
 # <a name="cbaseoutputpindeliverbeginflush-method"></a>Método CBaseOutputPin. DeliverBeginFlush
 
@@ -40,7 +40,7 @@ virtual HRESULT DeliverBeginFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                           | Descrição                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>              |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O PIN não está conectado.<br/> |
 
 
@@ -70,7 +70,7 @@ Esse método chama o método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

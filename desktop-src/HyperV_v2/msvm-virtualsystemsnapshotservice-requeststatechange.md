@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_VirtualSystemSnapshotService-solicita uma alteração de estado.
 ms.assetid: e37240f2-3c54-479e-bdf5-e094e4b5094f
 title: Método RequestStateChange da classe Msvm_VirtualSystemSnapshotService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aa330ad5efdfbdecb55b6acf8a4c1e8a677af6e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcdf88c8bb8b4b4a42ee88a6041e1b151e855c63
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780534"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118574"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método RequestStateChange da classe Msvm \_ VirtualSystemSnapshotService
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

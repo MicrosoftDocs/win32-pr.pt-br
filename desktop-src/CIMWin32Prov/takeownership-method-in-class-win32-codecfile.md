@@ -1,5 +1,5 @@
 ---
-description: O método de classe WMI TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe Win32_CodecFile-o método de classe WMI TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: c8fa0706-1f7e-4e68-aea6-694ba24c16c3
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip da classe Win32_CodecFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1de05f444e99be9a1ebcb5d32fa0ba754cf34254
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e52e5dafe5f0453861ddcddadf9f7115d17ee404
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088940"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086034"
 ---
 # <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip da classe de um codec do Win32 \_
 
@@ -40,7 +40,7 @@ uint32 TakeOwnerShip();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores inteiros a seguir.
 
@@ -151,7 +151,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

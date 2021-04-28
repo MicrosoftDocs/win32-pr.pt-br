@@ -1,5 +1,5 @@
 ---
-description: Define o estado atual do botão de dispositivo especificado.
+description: Método setbuttonstate da classe Msvm_Ps2Mouse – define o estado atual do botão do dispositivo especificado.
 ms.assetid: 312A2B8B-D518-4797-9B50-F12493598CD6
 title: Método setbuttonstate da classe Msvm_Ps2Mouse
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 34475edfa27d08cbe9de488502686a84e4391eb8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea6a984b84c7ee17436a7fb4738433edce6d68d8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757402"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118524"
 ---
 # <a name="setbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método setbuttonstate da classe Msvm \_ Ps2Mouse
 
@@ -58,7 +58,7 @@ O novo estado para baixo do botão. Um valor **verdadeiro** significa que o bot�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -123,7 +123,7 @@ O acesso à classe [**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) pode ser restringido
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

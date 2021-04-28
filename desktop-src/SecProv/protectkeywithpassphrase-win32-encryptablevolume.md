@@ -1,5 +1,5 @@
 ---
-description: Usa a frase secreta para obter a chave derivada.
+description: Método ProtectKeyWithPassphrase da classe Win32_EncryptableVolume – usa a frase secreta para obter a chave derivada.
 ms.assetid: 62b070ec-4788-47cc-bfa4-6811a712ddbd
 title: Método ProtectKeyWithPassphrase da classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: f97806652d86b104a0f333d40d299cfa9502cf3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a7772b1b65890fedbdbb8dcced1ad851f3845b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762904"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098344"
 ---
 # <a name="protectkeywithpassphrase-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithPassphrase da classe Win32 \_ EncryptableVolume
 
@@ -70,7 +70,7 @@ Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -109,7 +109,7 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

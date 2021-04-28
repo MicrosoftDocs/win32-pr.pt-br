@@ -1,6 +1,6 @@
 ---
 title: Mensagem de TDM_UPDATE_ELEMENT_TEXT (commctrl. h)
-description: Atualiza um elemento de texto em uma caixa de diálogo de tarefa.
+description: Mensagem de TDM_UPDATE_ELEMENT_TEXT-atualiza um elemento de texto em uma caixa de diálogo de tarefa.
 ms.assetid: 2df446c8-db87-42b5-b5bd-40fadbf9d45b
 keywords:
 - Controles de TDM_UPDATE_ELEMENT_TEXT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6dac6787c68d0cbe619bbf28fa1a6383606e99f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c155b426b92645c0b9cdbabe00c44ffa722b89f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086411"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085804"
 ---
 # <a name="tdm_update_element_text-message"></a>\_Mensagem de \_ texto do elemento de atualização TDM \_
 
@@ -56,7 +56,7 @@ Ponteiro para uma cadeia de caracteres Unicode que contém o novo texto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -80,7 +80,7 @@ O acima também se aplica ao rodapé rodapé e TDE \_ .
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

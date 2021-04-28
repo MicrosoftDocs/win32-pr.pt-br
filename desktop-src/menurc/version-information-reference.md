@@ -1,15 +1,15 @@
 ---
 title: Referência de informações de versão
-description: .
+description: Referência de informações de versão
 ms.assetid: 8a56573d-5b05-40e7-a95f-bfa249eab4bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c661344faacdbe5f0bdbda47edff342799bd209
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a1601c38bcc353566d9d61c0f468d420d3da4c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292537"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092544"
 ---
 # <a name="version-information-reference"></a>Referência de informações de versão
 
@@ -18,9 +18,9 @@ ms.locfileid: "104292537"
 -   [Funções de informações de versão](version-information-functions.md)
 -   [Estruturas de informações de versão](version-information-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

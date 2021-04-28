@@ -1,5 +1,5 @@
 ---
-description: 'O método Receive recebe o exemplo de próxima mídia no fluxo. Esse método implementa o método IMemInputPin:: Receive.'
+description: 'Método CBaseInputPin. Receive – o método Receive recebe o próximo exemplo de mídia no fluxo. Esse método implementa o método IMemInputPin:: Receive.'
 ms.assetid: 30fefc7b-7c9c-44cd-b58b-2b275dfa2520
 title: Método CBaseInputPin. Receive (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10306d5568ae1754105a4367952cef82f931be99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fe88913ad374923c11cf058a3dc0aa70580411e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747611"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099684"
 ---
 # <a name="cbaseinputpinreceive-method"></a>Método CBaseInputPin. Receive
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                             | Descrição                                                |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                    | Êxito.<br/>                                        |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Sucesso.<br/>                                        |
 | <dl> <dt>**\_falso**</dt> </dl>                 | O PIN está sendo liberado no momento; o exemplo foi rejeitado.<br/> |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>               | Argumento de ponteiro **nulo** .<br/>                      |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo de mídia inválido.<br/>                             |
@@ -106,7 +106,7 @@ Na classe base, esse método não processa o exemplo. A classe derivada deve sub
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

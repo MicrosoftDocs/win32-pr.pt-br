@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_VssComponent – solicita uma redefinição.
 ms.assetid: cafc6841-4814-4bf9-947b-c6afd4747367
 title: Método Reset da classe Msvm_VssComponent
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8528d769f4175bb8b42f1ff243b5d0c389c62617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce1799206bdd27b1ddb0530a3e8b92a7c5704576
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010374"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118544"
 ---
 # <a name="reset-method-of-the-msvm_vsscomponent-class"></a>Método Reset da classe Msvm \_ VssComponent
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

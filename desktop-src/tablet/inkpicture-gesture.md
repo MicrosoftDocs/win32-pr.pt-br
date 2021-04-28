@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um gesto específico do aplicativo é reconhecido.
+description: Evento InkPicture. Gesture-ocorre quando um gesto específico do aplicativo é reconhecido.
 ms.assetid: a20f2d78-6cfe-4755-968e-91369021db1b
 title: Evento InkPicture. Gesture (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94581369554b4aef16530c9ddc8b3fd1a31ad861
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 915557f304d722ed2819af75dd40284db119abfb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761249"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086584"
 ---
 # <a name="inkpicturegesture-event"></a>Evento InkPicture. Gesture
 
@@ -63,7 +63,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -107,7 +107,7 @@ Para obter uma lista de gestos de aplicativo específicos, consulte o tipo de en
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
