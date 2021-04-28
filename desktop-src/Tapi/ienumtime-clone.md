@@ -1,15 +1,15 @@
 ---
-description: O método clone cria outro enumerador que contém o mesmo estado de enumeração que o atual.
+description: 'Método IEnumTime:: clone – o método clone cria outro enumerador que contém o mesmo estado de enumeração que o atual.'
 ms.assetid: 0e9973de-d179-4a2d-a9bd-6d5f2523da52
 title: 'Método IEnumTime:: clone (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a030fcd90006047e35d9f661f2878dfbc42c112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 406dac1fad611ee5d3cb6c8b6ef32dfdb62cc963
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778408"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090734"
 ---
 # <a name="ienumtimeclone-method"></a>Método IEnumTime:: clone
 
@@ -39,7 +39,7 @@ Ponteiro para o novo objeto [**IEnumTime**](ienumtime.md) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -73,7 +73,7 @@ A TAPI chama o método **AddRef** na interface [**IEnumTime**](ienumtime.md) ret
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

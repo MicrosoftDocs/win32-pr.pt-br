@@ -1,5 +1,5 @@
 ---
-description: Sinalizadores usados para especificar as opções de criação para uma malha.
+description: Enumeração D3DXMESH – sinalizadores usados para especificar as opções de criação para uma malha.
 ms.assetid: c94e19ab-8024-4a28-9d1a-6d57707c3a52
 title: Enumeração D3DXMESH (D3dx9mesh. h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 602eb38f2113b54ee02477faf3bdd15a6a924abc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a312c2618960691184182039afe38acc8947eb6a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298486"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098094"
 ---
 # <a name="d3dxmesh-enumeration"></a>Enumeração D3DXMESH
 
 Sinalizadores usados para especificar as opções de criação para uma malha.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -228,7 +228,7 @@ Uma malha de 32 bits (D3DXMESH \_ 32bit) pode teoricamente dar suporte a (2 ^ 32
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

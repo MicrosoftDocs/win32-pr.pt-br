@@ -1,5 +1,5 @@
 ---
-description: O método BreakConnect libera o PIN de uma conexão.
+description: Método CBasePin. BreakConnect – o método BreakConnect libera o PIN de uma conexão.
 ms.assetid: a1f299e1-30bf-4d55-84cf-73acccf38151
 title: Método CBasePin. BreakConnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8964ea76e48e4753f42923663ab45962cd672e6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9a099b1001c2b8c30398ca350e05d15562a8bc2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770297"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099434"
 ---
 # <a name="cbasepinbreakconnect-method"></a>Método CBasePin. BreakConnect
 
@@ -40,7 +40,7 @@ virtual HRESULT BreakConnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -63,7 +63,7 @@ Observe que `BreakConnect` pode ser chamado sem uma chamada correspondente para 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

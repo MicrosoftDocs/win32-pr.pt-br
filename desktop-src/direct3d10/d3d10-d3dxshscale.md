@@ -1,5 +1,5 @@
 ---
-description: Dimensiona um vetor harmônica (SH) esférico; em outras palavras, pOut \[ i \] = PA \[ \] \* escala.
+description: Função D3DXSHScale (D3DX10. h) – dimensiona um vetor harmônica (SH) esférico; em outras palavras, pOut \[ i \] = PA \[ \] \* escala.
 ms.assetid: e323d238-f635-4780-982d-8798ba178f31
 title: Função D3DXSHScale (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7aa7ee66b29c7d9816708a8625bb568426a62b57
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0fab96575e5542eaaed725a88f9ba52c3289a4ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763861"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108494"
 ---
 # <a name="d3dxshscale-function-d3dx10h"></a>Função D3DXSHScale (D3DX10. h)
 
@@ -79,7 +79,7 @@ Ponteiro para o valor de escala.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -103,7 +103,7 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Executa uma interpolação de Catmull-Rom, usando os vetores de 4D especificados.
+description: Função D3DXVec4CatmullRom (D3DX10Math. h) – executa uma interpolação Catmull-Rom, usando os vetores de 4D especificados.
 ms.assetid: e3a10989-e25e-46fa-b72e-bade936cacf1
 title: Função D3DXVec4CatmullRom (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 8e027272a038f17a77dbeda861d6be909afa2f7f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e3665709564f578046273facbd3311253d8c2b9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930567"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102954"
 ---
 # <a name="d3dxvec4catmullrom-function-d3dx10mathh"></a>Função D3DXVec4CatmullRom (D3DX10Math. h)
 
@@ -98,7 +98,7 @@ Fator de ponderação. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
@@ -130,7 +130,7 @@ t2 = (p4 - p2) / 2
 
 
 
-onde:
+em que:
 
 v1 é o conteúdo de pV0.
 
@@ -177,7 +177,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método EndFlush termina uma operação de liberação.
+description: Método CBaseRenderer. EndFlush – o método EndFlush termina uma operação de liberação.
 ms.assetid: 4c30abbf-7351-4eee-af9a-9330f6d1aa08
 title: Método CBaseRenderer. EndFlush (Renbase. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bd565bfa21edb9945b901d8e315f3e1d1cd054f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87e29f405430ca87943773d19793ffc1941ec42c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757434"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095904"
 ---
 # <a name="cbaserendererendflush-method"></a>Método CBaseRenderer. EndFlush
 
@@ -40,7 +40,7 @@ virtual HRESULT EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -59,7 +59,7 @@ O pino de entrada do filtro chama esse método quando recebe uma chamada para o 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

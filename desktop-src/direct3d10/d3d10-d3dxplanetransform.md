@@ -1,5 +1,5 @@
 ---
-description: Transforma um plano por uma matriz. A matriz de entrada é a transpoção inversa da transformação real.
+description: Função D3DXPlaneTransform (D3DX10Math. h) – transforma um plano por uma matriz. A matriz de entrada é a transpoção inversa da transformação real.
 ms.assetid: ded06eac-4086-47e8-bc55-c37959afc22d
 title: Função D3DXPlaneTransform (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1b3c3390d84cd0d9c876afac6243ab90ca515e11
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b1d16ba2a29d42614c388a6207503ad32dd5e0f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298768"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108784"
 ---
 # <a name="d3dxplanetransform-function-d3dx10mathh"></a>Função D3DXPlaneTransform (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para a estrutura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem, que c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
@@ -111,7 +111,7 @@ O parâmetro pM contém a transpoção inversa da matriz de transformação. A T
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

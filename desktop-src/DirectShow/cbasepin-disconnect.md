@@ -1,5 +1,5 @@
 ---
-description: O método Disconnect quebra a conexão do PIN atual. Esse método implementa o método IPin::D isconnect.
+description: Método CBasePin. Disconnect – o método Disconnect quebra a conexão do PIN atual. Esse método implementa o método IPin::D isconnect.
 ms.assetid: 04e07978-fca5-419f-8807-fd7a6846eff9
 title: Método CBasePin. Disconnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98cbf894767eeb89042134344df218f2c18bc1be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bda01d02db2a93a90c63f206b723a55df2373418
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750699"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096004"
 ---
 # <a name="cbasepindisconnect-method"></a>Método CBasePin. Disconnect
 
@@ -40,7 +40,7 @@ HRESULT Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
 
@@ -49,7 +49,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 | Código de retorno                                                                                         | Descrição                                                                        |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**\_falso**</dt> </dl>             | O PIN não foi conectado.<br/>                                              |
-| <dl> <dt>**S \_ OK**</dt> </dl>                | Êxito.<br/>                                                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Sucesso.<br/>                                                                |
 | <dl> <dt>**VFW \_ E \_ não \_ parado**</dt> </dl> | O filtro está ativo e o PIN não dá suporte à reconexão dinâmica.<br/> |
 
 
@@ -71,7 +71,7 @@ A classe base delega a maior parte do trabalho para o método [**CBasePin::D isc
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

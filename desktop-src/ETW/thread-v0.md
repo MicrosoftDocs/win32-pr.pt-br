@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Thread_V0-essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 7ae2556b-49d4-4c70-9f29-49a3ca96f5bf
 title: Classe Thread_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c708640ea6851f67183841b124279ca0739a168c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 652f5b8ad796fedd45e5ac627fc855796def3646
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967378"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105694"
 ---
 # <a name="thread_v0-class"></a>\_Classe V0 de thread
 
@@ -49,14 +49,14 @@ A classe **thread \_ V0** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
 [**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**Processo**](thread.md)
+[**Thread**](thread.md)
 </dt> <dt>
 
 [**Thread \_ V0 \_ TypeGroup1**](thread-v0-typegroup1.md)

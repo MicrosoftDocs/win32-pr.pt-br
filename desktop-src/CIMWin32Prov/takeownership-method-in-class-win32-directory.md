@@ -1,5 +1,5 @@
 ---
-description: O método de classe WMI TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe Win32_Directory-o método de classe WMI TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: 1112823b-0bb6-4dc0-a5c4-8d3839a47a3a
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip da classe Win32_Directory
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c06441b7728ed8b9178e889cbd60c047f0f3a497
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 178f1bf523d939883a7fc18b5bdbd7142cc4f824
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500790"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086024"
 ---
 # <a name="takeownership-method-of-the-win32_directory-class"></a>Método TakeOwnerShip da classe do \_ diretório Win32
 
@@ -40,7 +40,7 @@ uint32 TakeOwnerShip();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -176,7 +176,7 @@ wscript.echo objOutParams.ReturnValue
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

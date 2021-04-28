@@ -1,5 +1,5 @@
 ---
-description: Tenta posicionar o serviço referenciado no estado retomado.
+description: Método ResumeService da classe Win32_Service (provedores WMI CIMWin32) – tenta posicionar o serviço referenciado no estado retomado.
 ms.assetid: 3b4228bf-9ff5-44ab-bfe2-f7dd8fb62007
 ms.tgt_platform: multiple
 title: Método ResumeService da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ed4141b02d6e08bd4b106d2c1f72ce3fe0620fc7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 73c21f282577207b63bcfa2d624c59ddfa3c9bcb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826665"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090974"
 ---
 # <a name="resumeservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método ResumeService da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -40,7 +40,7 @@ uint32 ResumeService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -334,7 +334,7 @@ else
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

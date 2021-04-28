@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método InitializeFromMemory.
+description: Função de proxy de função IWICColorContext_InitializeFromMemory_Proxy para o método InitializeFromMemory.
 ms.assetid: d98fe40c-c3f1-4c46-a558-1910e3dee51b
 title: Função IWICColorContext_InitializeFromMemory_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 32c3c24902b6c3157b9776d84c5a8eea47cce43e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e77bbcf1e430891b031b2e77bc168c33f781eacf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763306"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097214"
 ---
 # <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>\_Função de \_ proxy IWICColorContext InitializeFromMemory
 
@@ -45,16 +45,16 @@ HRESULT IWICColorContext_InitializeFromMemory_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) \** _
+Tipo: **[ **IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)\***
 
 </dd> <dt>
 
-_pbBuffer * \[ in\]
+*pbBuffer* \[ no\]
 </dt> <dd>
 
-Tipo: **const byte \** _
+Tipo: **byte \* const**
 
-O buffer usado para inicializar o [_ *IWICColorContext* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext).
+O buffer usado para inicializar o [**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext).
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ O tamanho do buffer *pbBuffer* .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

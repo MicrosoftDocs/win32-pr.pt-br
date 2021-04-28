@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CTransInPlaceInputPin. CTransInPlaceInputPin-método de construtor.
 ms.assetid: db0a3f78-ddb9-43b5-aab5-da2faaebb527
 title: Construtor CTransInPlaceInputPin. CTransInPlaceInputPin (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a801b2c4286f903ef450cac2fd76252f451f9add
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f97c89142e43691c91b2a4c0d04721d9112ed49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780641"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084754"
 ---
 # <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Construtor CTransInPlaceInputPin. CTransInPlaceInputPin
 
@@ -88,7 +88,7 @@ O parâmetro *pname* especifica o nome do PIN, que é retornado pelo método [**
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

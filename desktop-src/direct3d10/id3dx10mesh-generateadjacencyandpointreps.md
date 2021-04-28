@@ -1,5 +1,5 @@
 ---
-description: Gere uma lista de bordas de malha, bem como uma lista de faces que compartilham cada borda.
+description: 'Método ID3DX10Mesh:: GenerateAdjacencyAndPointReps – gera uma lista de bordas de malha, bem como uma lista de faces que compartilham cada borda.'
 ms.assetid: 3932e2b1-031d-4962-ad90-6e9da8cf2e0e
 title: 'Método ID3DX10Mesh:: GenerateAdjacencyAndPointReps (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c46cf83931c95116132798ca971f9d4e61da2af8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e496f96f36805d411c71e9aba1e2560b0dcbe3c6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506507"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083974"
 ---
 # <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>Método ID3DX10Mesh:: GenerateAdjacencyAndPointReps
 
@@ -49,7 +49,7 @@ Especifica que os vértices que diferem na posição por menos de Épsilon devem
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -72,7 +72,7 @@ A ordem das entradas no buffer de adjacência é determinada pela ordem dos índ
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

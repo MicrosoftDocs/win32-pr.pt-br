@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IRenderEngine:: SetInterestRange2-sem suporte.'
 ms.assetid: c5572927-905e-4420-9038-3f9573c5d0b0
 title: 'Método IRenderEngine:: SetInterestRange2'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: eb0fb115a819a3eb82b7c6a37bf51c985c6f6970
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2be9d8d2f69d2606de855cf5f08eb3deb41de634
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825729"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089024"
 ---
 # <a name="irenderenginesetinterestrange2-method"></a>Método IRenderEngine:: SetInterestRange2
 
@@ -58,7 +58,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -74,7 +74,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

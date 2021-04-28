@@ -1,5 +1,5 @@
 ---
-description: O método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado.
+description: Método SetPowerState da classe CIM_AggregatePExtent-o método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado.
 ms.assetid: 1a1a8d5e-d685-4b7e-99fb-61fa2e7bdafa
 ms.tgt_platform: multiple
 title: Método SetPowerState da classe CIM_AggregatePExtent
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 47c97f30da1c8b6f2fe9a6032ef9be9ae87a7d6c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5ed988e5f58464479aa29d709eb628feb13f0d1c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920411"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089534"
 ---
 # <a name="setpowerstate-method-of-the-cim_aggregatepextent-class"></a>Método SetPowerState da classe CIM \_ AggregatePExtent
 
@@ -104,7 +104,7 @@ Quando o estado de energia deve ser definido, seja como um valor de data/hora re
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 
@@ -128,7 +128,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Fornece métodos de enumeração de padrão COM para a interface IPStore.
+description: Interface IEnumPStoreProviders – fornece métodos de enumeração de padrão COM para a interface IPStore.
 ms.assetid: d4c0482c-a751-4d41-bcd1-326878fdcf16
 title: Interface IEnumPStoreProviders (Pstore. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: e01bd28722fdb4d5a0ff7e3db4f715ddc1df2315
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf203e0e6de08b6faff3d3b4a040018ec1122975
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752322"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089344"
 ---
 # <a name="ienumpstoreproviders-interface"></a>Interface IEnumPStoreProviders
 
@@ -40,7 +40,7 @@ A interface **IEnumPStoreProviders** tem esses métodos.
 
 | Método                                      | Descrição                                                                                        |
 |:--------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**8i**](ienumpstoreproviders-clone.md) | Cria outro enumerador que contém o mesmo estado de enumeração do atual.<br/> |
+| [**Clone**](ienumpstoreproviders-clone.md) | Cria outro enumerador que contém o mesmo estado de enumeração do atual.<br/> |
 | [**Avançar**](ienumpstoreproviders-next.md)   | Obtém o próximo provedor especificado na sequência de enumeração.<br/>                           |
 | [**Redefinir**](ienumpstoreproviders-reset.md) | Redefine para o início da sequência de enumeração.<br/>                                    |
 | [**Ignorar**](ienumpstoreproviders-skip.md)   | Ignora o provedor especificado na sequência de enumeração.<br/>                               |

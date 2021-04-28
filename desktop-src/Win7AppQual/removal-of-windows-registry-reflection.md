@@ -1,15 +1,15 @@
 ---
-description: .
+description: Remoção da reflexão do registro do Windows
 ms.assetid: 4b42d44d-cde8-4d96-96c5-24b7ab7e4cec
 title: Remoção da reflexão do registro do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c610cb0b6ce446e3105fd61cb940028f478892ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeab0109cbbac988c89d6add91fa899cea9169ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105797950"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116254"
 ---
 # <a name="removal-of-windows-registry-reflection"></a>Remoção da reflexão do registro do Windows
 

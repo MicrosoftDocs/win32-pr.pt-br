@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IRenderEngine:: UseInSmartRecompressionGraph-sem suporte.'
 ms.assetid: 77c51c19-c67b-472d-87d7-9adc274b20ca
 title: 'Método IRenderEngine:: UseInSmartRecompressionGraph'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: f3f31f5d73a9cfd3a9c19116017bd79aa90de7e2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3fd854b3686b254cac5f24fe1f581e2c3416640c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105780632"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088994"
 ---
 # <a name="irenderengineuseinsmartrecompressiongraph-method"></a>Método IRenderEngine:: UseInSmartRecompressionGraph
 
@@ -41,7 +41,7 @@ HRESULT UseInSmartRecompressionGraph();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -57,7 +57,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Carrega a identidade na matriz atual.
+description: 'Método ID3DXMATRIXStack:: loadidentity (D3DX10. h) – carrega a identidade na matriz atual.'
 ms.assetid: 324b49c2-3aca-4bbb-90f3-62f3ffb2fa45
 title: 'Método ID3DXMATRIXStack:: loadidentity (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 85a58529be3bfcb4d52ba096bb6134fe08994d77
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f056a911b19c0ea18f5f728a6ce8c4403dd14587
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105768223"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107984"
 ---
 # <a name="id3dxmatrixstackloadidentity-method-d3dx10h"></a>Método ID3DXMATRIXStack:: loadidentity (D3DX10. h)
 
@@ -38,7 +38,7 @@ HRESULT LoadIdentity();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ A matriz de identidade é uma matriz na qual todos os coeficientes são 0,0, exc
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

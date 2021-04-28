@@ -1,5 +1,5 @@
 ---
-description: Remove as configurações de recursos virtuais de uma configuração de sistema virtual.
+description: Método RemoveBootSourceSettings da classe Msvm_VirtualSystemManagementService-remove as configurações de recurso virtual de uma configuração de sistema virtual.
 ms.assetid: 0deb7719-e605-4ba5-9bb2-037d0cafee24
 title: Método RemoveBootSourceSettings da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2693be33d291ea5a975119a5478af580ef2bb3f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5407e56b761dd545d20b89e0a28742f9c542b15a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789797"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109394"
 ---
 # <a name="removebootsourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveBootSourceSettings da \_ classe VirtualSystemManagementService Msvm
 
@@ -56,7 +56,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -106,7 +106,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

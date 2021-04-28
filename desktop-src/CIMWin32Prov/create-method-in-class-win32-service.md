@@ -1,5 +1,5 @@
 ---
-description: Cria um novo serviço do sistema.
+description: Método Create da classe Win32_Service (provedores WMI CIMWin32) – cria um novo serviço do sistema.
 ms.assetid: 164e9065-bb0d-4c93-a9fe-c86db1ea7cb7
 ms.tgt_platform: multiple
 title: Método Create da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6f23bc2a5c49a85a20765172d4c5d361a8d18316
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 71bc0f4edb879fc4a51a012bc53db67031056f47
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646534"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089685"
 ---
 # <a name="create-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método Create da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -257,7 +257,7 @@ Matriz que contém nomes de serviços que devem ser iniciados antes do início d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -481,7 +481,7 @@ errReturn = objService.Create ("DbService", "Personnel Database", _
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

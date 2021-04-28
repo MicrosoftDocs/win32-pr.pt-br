@@ -1,5 +1,5 @@
 ---
-description: Use este método para readquirir recursos e salvar o estado inicial.
+description: 'Método ID3DXLine:: OnResetDevice – Use este método para adquirir novamente os recursos e salvar o estado inicial.'
 ms.assetid: beca7a51-e799-4e03-81a3-218552231428
 title: 'Método ID3DXLine:: OnResetDevice (D3dx9core. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c85a93084e3a4f3d8308e5111338d0c5127e22c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f7e1275e7a7ec894601dc67503e25e1fa82545f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105810622"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093654"
 ---
 # <a name="id3dxlineonresetdevice-method"></a>Método ID3DXLine:: OnResetDevice
 
@@ -38,7 +38,7 @@ HRESULT OnResetDevice();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

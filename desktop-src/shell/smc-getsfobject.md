@@ -1,5 +1,5 @@
 ---
-description: Solicita um ponteiro para um objeto especificado.
+description: Mensagem de SMC_GETSFOBJECT-solicita um ponteiro para um objeto especificado.
 title: Mensagem de SMC_GETSFOBJECT (shobjidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c7fb57ea8e3f02ce4e773e187310530c14d65515
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 612b43c193cd1919db4a5cf9dba3a8fdba1c81c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086604"
 ---
 # <a name="smc_getsfobject-message"></a>Mensagem do SMC \_ GETSFOBJECT
 
@@ -52,7 +52,7 @@ Um ponteiro void que recebe um ponteiro para a interface solicitada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

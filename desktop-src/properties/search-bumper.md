@@ -1,15 +1,15 @@
 ---
-description: .
+description: Search
 ms.assetid: 8a025bee-65e1-40a7-a269-72a93aca827b
 title: Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c459f59c2a4e9112c35a402eb1fd9f83883cd594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93436c921599795943308e08b7a2443331c768c4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370624"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113824"
 ---
 # <a name="search"></a>Search
 

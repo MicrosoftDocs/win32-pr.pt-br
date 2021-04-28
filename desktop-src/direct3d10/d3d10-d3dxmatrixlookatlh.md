@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de visão à esquerda.
+description: Função D3DXMatrixLookAtLH (D3DX10Math. h) – compila uma matriz de aparência da esquerda.
 ms.assetid: 06888a97-66ef-447f-be8b-ea458ce16b4b
 title: Função D3DXMatrixLookAtLH (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a5a7ffa8750fb08174f45b1069f103bfe08be1f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3590d2cbdeead9e1b9b2547b2344163b81f05d11
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506523"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109164"
 ---
 # <a name="d3dxmatrixlookatlh-function-d3dx10mathh"></a>Função D3DXMatrixLookAtLH (D3DX10Math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para a estrutura D3DXVECTOR3 que define o mundo atual, geralmente \[ 0,
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -116,7 +116,7 @@ yaxis = cross(zaxis, xaxis)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

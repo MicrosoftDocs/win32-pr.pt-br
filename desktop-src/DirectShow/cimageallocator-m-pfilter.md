@@ -1,5 +1,5 @@
 ---
-description: A \_ variável de membro m pFilter é um ponteiro para o filtro proprietário.
+description: 'Membro CImageAllocator:: m_pFilter-a \_ variável de membro pFilter m é um ponteiro para o filtro proprietário.'
 ms.assetid: 57ba31bb-e047-4046-a58d-6ca39d6093f8
 title: 'Membro CImageAllocator:: m_pFilter (Winutil. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 325450d44a649008a4a4f16297ad52404c242c52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f62a7e9ce7a9449072cfdd318330f5bfae0bbb16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750044"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085654"
 ---
 # <a name="cimageallocatorm_pfilter-member"></a>Membro de CImageAllocator:: m \_ pFilter
 
 A `m_pFilter` variável de membro é um ponteiro para o filtro proprietário.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ CBaseFilter *m_pFilter;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

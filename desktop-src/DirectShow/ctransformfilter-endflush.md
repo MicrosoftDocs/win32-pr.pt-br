@@ -1,5 +1,5 @@
 ---
-description: O método EndFlush termina uma operação de liberação.
+description: Método CTransformFilter. EndFlush – o método EndFlush termina uma operação de liberação.
 ms.assetid: ebb6beec-84e2-49a7-9771-bbd191faada7
 title: Método CTransformFilter. EndFlush (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 348675f1369ec9b0deb5415ad14a864a8befef73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a4f38a6897443763f676951f193fab5606ad2a8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751677"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085055"
 ---
 # <a name="ctransformfilterendflush-method"></a>Método CTransformFilter. EndFlush
 
@@ -40,7 +40,7 @@ virtual HRESULT EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou outro valor **HRESULT** .
 
@@ -61,7 +61,7 @@ Se a classe derivada usar um thread de trabalho para fornecer amostras, ela deve
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz que reflete o sistema de coordenadas sobre um plano.
+description: Função D3DXMatrixReflect (D3DX10Math. h) – compila uma matriz que reflete o sistema de coordenadas sobre um plano.
 ms.assetid: bd2c5905-780e-4fac-a848-d7dbcfc390c6
 title: Função D3DXMatrixReflect (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d8c8f0fc8529730a46c403432ec0b5b5a86c8afa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f96224c881dcd5db2cc1c356003ab96e8a626900
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105788790"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103404"
 ---
 # <a name="d3dxmatrixreflect-function-d3dx10mathh"></a>Função D3DXMatrixReflect (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para o [**D3DXPLANE**](d3d10-d3dxplane.md)de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -96,7 +96,7 @@ P = normalize(Plane);
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

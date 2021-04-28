@@ -1,5 +1,5 @@
 ---
-description: 'O método getalocador recupera o alocador de memória proposto por esse PIN. Esse método implementa o método IMemInputPin:: getalocator.'
+description: 'Método CTransInPlaceInputPin. getalocador – o método getalocador recupera o alocador de memória proposto por esse PIN. Esse método implementa o método IMemInputPin:: getalocator.'
 ms.assetid: e9db4aa0-4f53-4ca4-babb-5e0215c7c284
 title: Método CTransInPlaceInputPin. getalocador (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7798640297539a8fa8f6349c799e61e7e22a453d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2472630d69119f33653d831386af615718274d99
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780642"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084654"
 ---
 # <a name="ctransinplaceinputpingetallocator-method"></a>Método CTransInPlaceInputPin. getalocador
 
@@ -49,7 +49,7 @@ Recebe um ponteiro para a interface [**IMemAllocator**](/windows/desktop/api/Str
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                          | Descrição                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                 | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Sucesso.<br/>                   |
 | <dl> <dt>**VFW \_ E \_ nenhum \_ alocador**</dt> </dl> | Nenhum alocador disponível.<br/> |
 
 
@@ -81,7 +81,7 @@ Se o pino de saída do filtro não estiver conectado, esse método criará um al
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

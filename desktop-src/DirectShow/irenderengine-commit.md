@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'Método IRenderEngine:: Commit-não implementado.'
 ms.assetid: 4d52d11c-9629-4080-9c3e-7c11cf3842ed
 title: 'Método IRenderEngine:: Commit'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7d9cc3b7349eabeecee839ad1672df3c824750d5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e397860da4328247af64d39da7302b67f9a0842b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456481"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089124"
 ---
 # <a name="irenderenginecommit-method"></a>Método IRenderEngine:: Commit
 
@@ -41,7 +41,7 @@ HRESULT Commit();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -57,7 +57,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

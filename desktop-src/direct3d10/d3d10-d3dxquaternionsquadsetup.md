@@ -1,5 +1,5 @@
 ---
-description: Configura pontos de controle para a interpolação de Quadrangle esférica.
+description: Função D3DXQuaternionSquadSetup (D3DX10Math. h) – configura pontos de controle para a interpolação de Quadrangle esférica.
 ms.assetid: c66227bd-8cc1-4173-9dc2-5aab9d57301e
 title: Função D3DXQuaternionSquadSetup (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4a0683bce3642b0300e68be348d8aed39b3c333d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d8a778473c0b07ef984facce9c42f947755a74a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764453"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108714"
 ---
 # <a name="d3dxquaternionsquadsetup-function-d3dx10mathh"></a>Função D3DXQuaternionSquadSetup (D3DX10Math. h)
 
@@ -109,7 +109,7 @@ Ponteiro para o ponto de controle de entrada, Q3.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Nenhum.
 
@@ -191,7 +191,7 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

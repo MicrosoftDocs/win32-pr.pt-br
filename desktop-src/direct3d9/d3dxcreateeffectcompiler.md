@@ -1,5 +1,5 @@
 ---
-description: Cria um compilador de efeito a partir de uma descrição de efeito ASCII.
+description: Função D3DXCreateEffectCompiler – cria um compilador de efeito a partir de uma descrição de efeito ASCII.
 ms.assetid: 96e883f4-4055-4b8b-940a-164bbf893af4
 title: Função D3DXCreateEffectCompiler (D3DX9Effect. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 513b11ba12abe05126c122f8bc9bfcfa978df3fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 38ab58ed15609d468d25f4406353448e4fd6adb4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664083"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115764"
 ---
 # <a name="d3dxcreateeffectcompiler-function"></a>Função D3DXCreateEffectCompiler
 
@@ -109,7 +109,7 @@ Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -126,7 +126,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

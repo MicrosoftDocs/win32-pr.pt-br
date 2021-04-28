@@ -1,5 +1,5 @@
 ---
-description: O método GetTypeInfoCount recupera o número de interfaces de informações de tipo que o objeto fornece.
+description: Método CMediaPosition. GetTypeInfoCount – o método GetTypeInfoCount recupera o número de interfaces de informações de tipo que o objeto fornece.
 ms.assetid: c98368f2-ae0c-4301-be30-7332b19f53ee
 title: Método CMediaPosition. GetTypeInfoCount (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7cac543c49b7f2f6b9dc3357bbb1c691477d9b62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8cfc54f414a6722f7f69a0330fad2d1a0cfab425
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775636"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095474"
 ---
 # <a name="cmediapositiongettypeinfocount-method"></a>Método CMediaPosition. GetTypeInfoCount
 
@@ -49,7 +49,7 @@ Ponteiro para uma variável que recebe o número de interfaces de informações 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                               | Descrição                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Sucesso.<br/>                   |
 | <dl> <dt>**\_ponteiro E**</dt> </dl> | Argumento de ponteiro **nulo** .<br/> |
 
 
@@ -75,7 +75,7 @@ Retorna um dos valores a seguir.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

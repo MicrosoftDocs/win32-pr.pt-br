@@ -1,5 +1,5 @@
 ---
-description: Avalia uma luz que é um cone de intensidade constante e retorna dados Spectral esféricos harmônicas (SH).
+description: Função D3DXSHEvalConeLight (D3DX10. h) – avalia uma luz que é um cone de intensidade constante e retorna Spectral dados harmônicas esféricas (SH).
 ms.assetid: ad2b9c86-cf1a-426e-88e6-4c543519e002
 title: Função D3DXSHEvalConeLight (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 97bd700d1c38441db6c5e68554cf038d9081efaa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fc11e7bab4cbbd6c8a685b289d4bde476cd465ca
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173138"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108604"
 ---
 # <a name="d3dxshevalconelight-function-d3dx10h"></a>Função D3DXSHEvalConeLight (D3DX10. h)
 
@@ -129,7 +129,7 @@ Ponteiro para o vetor SH de saída para o componente azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -158,7 +158,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

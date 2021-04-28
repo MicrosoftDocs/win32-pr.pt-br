@@ -1,5 +1,5 @@
 ---
-description: Recupera o número de faces na malha.
+description: 'Método ID3DXBaseMesh:: GetNumFaces – recupera o número de faces na malha.'
 ms.assetid: 3f7cffd4-97ae-4f1c-9f91-931b85f07734
 title: 'Método ID3DXBaseMesh:: GetNumFaces (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4647e432e79dc3065cc8e6d1f0617e6364049ff
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9adc36e4d34909481c61d1c62e4233a1f6f92a87
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785121"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115414"
 ---
 # <a name="id3dxbasemeshgetnumfaces-method"></a>Método ID3DXBaseMesh:: GetNumFaces
 
@@ -38,7 +38,7 @@ DWORD GetNumFaces();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna o número de faces na malha.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

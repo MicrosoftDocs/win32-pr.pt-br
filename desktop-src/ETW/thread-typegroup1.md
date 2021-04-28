@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de início e término de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Thread_TypeGroup1-essa classe é a classe de tipo de evento para eventos de início e término de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: d9e3e33a-0e59-4753-a8d8-5320cbae9d95
 title: Classe Thread_TypeGroup1
 ms.topic: reference
@@ -26,12 +26,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 75352efbe044f5fee837c496c394fe28e2dbbbfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9693bef4449cc076710a74dd9cef88ae608754b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091149"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105704"
 ---
 # <a name="thread_typegroup1-class"></a>\_Classe TypeGroup1 de thread
 
@@ -313,11 +313,11 @@ Os tipos de evento DCStart e DCEnd enumeram os threads que estão sendo executad
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
-[**Processo**](thread.md)
+[**Thread**](thread.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: A exclusão&\# 8194; O método de classe WMI exclui um serviço existente.
+description: Método Delete da classe Win32_SystemDriver-a exclusão&\# 8194; O método de classe WMI exclui um serviço existente.
 ms.assetid: 5e437d36-3582-448c-b568-45f7fb13b096
 ms.tgt_platform: multiple
 title: Método Delete da classe Win32_SystemDriver
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 807fa6090fe2e088fb3900feb7f2068751ad2df6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e1b7435a1bca561b19e7d85299413f88f1ae76c3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826442"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097084"
 ---
 # <a name="delete-method-of-the-win32_systemdriver-class"></a>Método Delete da \_ classe systemdrive do Win32
 
@@ -40,7 +40,7 @@ uint32 Delete();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o serviço tiver sido excluído com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
@@ -58,7 +58,7 @@ Retorna um valor de 0 (zero) se o serviço tiver sido excluído com êxito, 1 (u
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+description: 'Método IMpeg2PsiParser:: GetPatVersionNumber – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
 ms.assetid: 2f5ad9bf-3d70-491a-ab45-15cd922a02d4
 title: 'Método IMpeg2PsiParser:: GetPatVersionNumber'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6117060cf0c8d3c56d03e5838376485244fde8d9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 978da4c7076bcf8ffe91bc2b9a4b2077d9d3d48a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370115"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089144"
 ---
 # <a name="impeg2psiparsergetpatversionnumber-method"></a>Método IMpeg2PsiParser:: GetPatVersionNumber
 
@@ -47,7 +47,7 @@ Ponteiro para uma variável que recebe o campo de número de versão \_ .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
@@ -55,13 +55,13 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
