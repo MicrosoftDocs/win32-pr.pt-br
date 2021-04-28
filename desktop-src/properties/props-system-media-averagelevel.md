@@ -1,19 +1,19 @@
 ---
-description: .
+description: System. Media. AverageLevel
 ms.assetid: e5500ae2-f250-4b27-8eaa-bff8c2f7c797
 title: System. Media. AverageLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43779cf80e398078993dbb9d95f2bb21b32395eb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eaccb62bbe71ac06f821123b971643f92fcbbba3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105779328"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092314"
 ---
-# <a name="systemmediaaveragelevel"></a><span data-ttu-id="7430f-103">System. Media. AverageLevel</span><span class="sxs-lookup"><span data-stu-id="7430f-103">System.Media.AverageLevel</span></span>
+# <a name="systemmediaaveragelevel"></a><span data-ttu-id="342df-103">System. Media. AverageLevel</span><span class="sxs-lookup"><span data-stu-id="342df-103">System.Media.AverageLevel</span></span>
 
-## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a><span data-ttu-id="7430f-104">Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span><span class="sxs-lookup"><span data-stu-id="7430f-104">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span></span>
+## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a><span data-ttu-id="342df-104">Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span><span class="sxs-lookup"><span data-stu-id="342df-104">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span></span>
 
 ```
 propertyDescription
@@ -29,54 +29,54 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a><span data-ttu-id="7430f-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="7430f-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="342df-105">Comentários</span><span class="sxs-lookup"><span data-stu-id="342df-105">Remarks</span></span>
 
-<span data-ttu-id="7430f-106">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="7430f-106">PKEY values are defined in Propkey.h.</span></span>
+<span data-ttu-id="342df-106">Os valores de PKEY são definidos em Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="342df-106">PKEY values are defined in Propkey.h.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="7430f-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="7430f-107">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="342df-107">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="342df-107">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7430f-108">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="7430f-108">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
+[<span data-ttu-id="342df-108">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="342df-108">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-109">searchInfo</span><span class="sxs-lookup"><span data-stu-id="7430f-109">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
+[<span data-ttu-id="342df-109">searchInfo</span><span class="sxs-lookup"><span data-stu-id="342df-109">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-110">labelInfo</span><span class="sxs-lookup"><span data-stu-id="7430f-110">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
+[<span data-ttu-id="342df-110">labelInfo</span><span class="sxs-lookup"><span data-stu-id="342df-110">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-111">typeInfo</span><span class="sxs-lookup"><span data-stu-id="7430f-111">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
+[<span data-ttu-id="342df-111">typeInfo</span><span class="sxs-lookup"><span data-stu-id="342df-111">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-112">displayInfo</span><span class="sxs-lookup"><span data-stu-id="7430f-112">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
+[<span data-ttu-id="342df-112">displayInfo</span><span class="sxs-lookup"><span data-stu-id="342df-112">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-113">stringFormat</span><span class="sxs-lookup"><span data-stu-id="7430f-113">stringFormat</span></span>](./propdesc-schema-stringformat.md)
+[<span data-ttu-id="342df-113">stringFormat</span><span class="sxs-lookup"><span data-stu-id="342df-113">stringFormat</span></span>](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-114">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="7430f-114">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
+[<span data-ttu-id="342df-114">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="342df-114">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-115">numberFormat</span><span class="sxs-lookup"><span data-stu-id="7430f-115">numberFormat</span></span>](./propdesc-schema-numberformat.md)
+[<span data-ttu-id="342df-115">numberFormat</span><span class="sxs-lookup"><span data-stu-id="342df-115">numberFormat</span></span>](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-116">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="7430f-116">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
+[<span data-ttu-id="342df-116">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="342df-116">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-117">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="7430f-117">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
+[<span data-ttu-id="342df-117">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="342df-117">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-118">drawControl</span><span class="sxs-lookup"><span data-stu-id="7430f-118">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
+[<span data-ttu-id="342df-118">drawControl</span><span class="sxs-lookup"><span data-stu-id="342df-118">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-119">editControl</span><span class="sxs-lookup"><span data-stu-id="7430f-119">editControl</span></span>](./propdesc-schema-editcontrol.md)
+[<span data-ttu-id="342df-119">editControl</span><span class="sxs-lookup"><span data-stu-id="342df-119">editControl</span></span>](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-120">filterControl</span><span class="sxs-lookup"><span data-stu-id="7430f-120">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
+[<span data-ttu-id="342df-120">filterControl</span><span class="sxs-lookup"><span data-stu-id="342df-120">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="7430f-121">queryControl</span><span class="sxs-lookup"><span data-stu-id="7430f-121">queryControl</span></span>](./propdesc-schema-querycontrol.md)
+[<span data-ttu-id="342df-121">queryControl</span><span class="sxs-lookup"><span data-stu-id="342df-121">queryControl</span></span>](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  
