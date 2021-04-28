@@ -1,5 +1,5 @@
 ---
-description: 'O método GetCapabilities recupera todos os recursos de busca do fluxo. Esse método implementa o método IMediaSeeking:: GetCapabilities.'
+description: 'Método CSourceSeeking. GetCapabilities – o método GetCapabilities recupera todos os recursos de busca do fluxo. Esse método implementa o método IMediaSeeking:: GetCapabilities.'
 ms.assetid: a2ff7ea2-09bd-49a7-8e1b-d6360939036e
 title: Método CSourceSeeking. GetCapabilities (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eda23944fd039576bb5de74fbb7c32e375415670
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1f354381c4c99cf880c75cbbc4b13355e386030
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752283"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098774"
 ---
 # <a name="csourceseekinggetcapabilities-method"></a>Método CSourceSeeking. GetCapabilities
 
@@ -49,7 +49,7 @@ O ponteiro para uma variável que recebe uma combinação de bits bit a procurar
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
 | Código de retorno                                                                               | Descrição                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Sucesso<br/>                |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito<br/>                |
 | <dl> <dt>**\_ponteiro E**</dt> </dl> | Valor de ponteiro **nulo**<br/> |
 
 
@@ -79,7 +79,7 @@ Os recursos de busca são especificados pela variável de membro [**CSourceSeeki
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,16 +1,7 @@
 ---
-description: .
-ms.assetid: BDF7CF8D-26B0-4B4D-AF7D-9DC64B4667F0
-title: 'Apêndice 2: cenários de script de teste'
-ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: 46c7e75cc74f4c7b365cd7be35263ce3720139af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813471"
+Descrição: Apêndice 2: cenários de script de teste MS. AssetID: BDF7CF8D-26B0-4B4D-AF7D-9DC64B4667F0 título: ' apêndice 2: cenários de script de teste ' MS. Topic: artigo MS. Date: 05/31/2018
 ---
+
 # <a name="appendix-2-test-script-scenarios"></a>Apêndice 2: cenários de script de teste
 
 
@@ -18,7 +9,7 @@ ms.locfileid: "105813471"
 | Cenário                 | Descrição                                                                                                                                                                                                                                                    | Etapas do caso de teste                                                                    | Aprovado                                                                                                                                                                                 | Falha                                                                                                                 | Sites de exemplo                                                                                                                                                                    |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Navegar                 | Navegação padrão. Qualquer tipo de evento que o leva de um lugar para outro.                                                                                                                                                                               | Clique em links. Redirecionamentos de site.                                                    | Clicar em um link leva você até o local desejado.                                                                                                                                   | O link não funciona. Causa possível: o link não está codificado ou decodificado corretamente.                                | Todas as páginas da Web                                                                                                                                                                    |
-| Pesquisar                   | Use um mecanismo de pesquisa para localizar informações.                                                                                                                                                                                                                     | Procure um tópico.                                                                | Você retorna com uma lista relevante de sites com base nos seus critérios de pesquisa.                                                                                                        | Os resultados da pesquisa não estão corretos. Caracteres especiais (como aspas duplas "") não são tratados corretamente.                 | [www.google.com](https://www.google.com), [www.msn.com](https://www.msn.com), [www.yahoo.com](https://www.yahoo.com)                                                                |
+| Search                   | Use um mecanismo de pesquisa para localizar informações.                                                                                                                                                                                                                     | Procure um tópico.                                                                | Você retorna com uma lista relevante de sites com base nos seus critérios de pesquisa.                                                                                                        | Os resultados da pesquisa não estão corretos. Caracteres especiais (como aspas duplas "") não são tratados corretamente.                 | [www.google.com](https://www.google.com), [www.msn.com](https://www.msn.com), [www.yahoo.com](https://www.yahoo.com)                                                                |
 | Lendo                  | Texto que aparece em uma página da Web.                                                                                                                                                                                                                                | Leia o texto na página da Web.                                                      | O texto deve ser legível.                                                                                                                                                             | Fontes não processadas corretamente. O layout parece ruim.                                                                    | Todas as páginas da Web                                                                                                                                                                    |
 | WebMail                  | Use aplicativos de email baseados na Web, incluindo todas as funções de email, como edição, verificação ortográfica, envio e recebimento de email. Esse teste também pode incluir calendários e gerenciar listas de contatos.                                                                  | Compor e enviar um email para você mesmo.                                             | Os dados inseridos são recebidos da mesma maneira que são enviados. Muitos aplicativos de email da Web usam controles extensivamente, e eles precisam continuar a funcionar.                            | O email retornado é mal formado e os links, botões e controles não funcionam.                                 | <https://mail.microsoft.com>, [www.Outlook.com](https://www.outlook.com), [www.mail.yahoo.com](https://www.mail.yahoo.com)                                                         |
 | RSS                      | Informações XML para as quais a função de descoberta de RSS feed foi projetada para se vincular.                                                                                                                                                                                  | Certifique-se de que a descoberta de RSS feed seja ativada.                                       | A descoberta de feeds funciona e os dados XML se relacionam ao tópico em que você clica.                                                                                                           | Falha na descoberta de feeds.                                                                                                | [www.CNN.com](https://www.cnn.com), [www.ESPN.com](https://www.espn.com)                                                                                                           |
@@ -33,7 +24,7 @@ ms.locfileid: "105813471"
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,9 +33,9 @@ ms.locfileid: "105813471"
 [Abordando a compatibilidade de aplicativos ao migrar para o Internet Explorer 8](addressing-application-compatibility-when-migrating-to-internet-explorer-8.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

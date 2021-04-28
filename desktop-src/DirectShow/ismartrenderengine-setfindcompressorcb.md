@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'Método ISmartRenderEngine:: SetFindCompressorCB-não implementado.'
 ms.assetid: ed0aecfa-348c-4cf9-87c2-b701a552eec8
 title: 'Método ISmartRenderEngine:: SetFindCompressorCB'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 537632715c0734c38394a1dae10535b6613e9b04
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aba7de54e02433762c63bc7bc8addea5b94b48e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919717"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088984"
 ---
 # <a name="ismartrenderenginesetfindcompressorcb-method"></a>Método ISmartRenderEngine:: SetFindCompressorCB
 
@@ -50,7 +50,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -66,7 +66,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

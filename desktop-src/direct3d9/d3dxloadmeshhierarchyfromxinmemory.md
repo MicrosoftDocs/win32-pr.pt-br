@@ -1,5 +1,5 @@
 ---
-description: Carrega a primeira hierarquia de quadros de um arquivo. x.
+description: Função D3DXLoadMeshHierarchyFromXInMemory – carrega a primeira hierarquia de quadro de um arquivo. x.
 ms.assetid: 428e5cfb-d6a5-4a7f-b082-2d8898e65490
 title: Função D3DXLoadMeshHierarchyFromXInMemory (D3dx9anim. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91cf119fc8907701f87ebb5bda1bb0bf45294aba
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 551810c839e619985d9a380197553f5fe4fc9be8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791558"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098204"
 ---
 # <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>Função D3DXLoadMeshHierarchyFromXInMemory
 
@@ -119,7 +119,7 @@ Retorna um ponteiro para o controlador de animação correspondente à animaçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -140,7 +140,7 @@ Todas as malhas no arquivo serão recolhidas em uma malha de saída. Se o arquiv
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Commit.
+description: Função IWICFastMetadataEncoder_Commit_Proxy function-proxy para o método Commit.
 ms.assetid: 5b3b90ad-9d67-4fbd-b01e-c7478df8dd45
 title: Função IWICFastMetadataEncoder_Commit_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 487fd99c68752b1547ba53c553025fc8ecfd5ccf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 848ed74ec9c9bb490065935bd94cae7a35d02db2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170310"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097184"
 ---
 # <a name="iwicfastmetadataencoder_commit_proxy-function"></a>Função de proxy de \_ confirmação IWICFastMetadataEncoder \_
 
@@ -43,13 +43,13 @@ HRESULT IWICFastMetadataEncoder_Commit_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) \** _
+Tipo: **[ **IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder)\***
 
-Ponteiro para este objeto [_ *IWICFastMetadataEncoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) .
+Ponteiro para este objeto [**IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

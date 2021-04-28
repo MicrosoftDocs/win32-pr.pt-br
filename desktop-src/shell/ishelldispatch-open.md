@@ -1,5 +1,5 @@
 ---
-description: Abre a pasta especificada.
+description: Método IShellDispatch. Open – abre a pasta especificada.
 ms.assetid: 30FE669A-4AFD-4dfa-9F62-E62E744469C7
 title: Método IShellDispatch. Open (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d794020313ad776c1d538dc2acb909d562d32f15
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b5301e030926b9bcfdc18949b6a04706c22bb71
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647546"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086624"
 ---
 # <a name="ishelldispatchopen-method"></a>Método IShellDispatch. Open
 
@@ -60,7 +60,7 @@ Se o *vDir* estiver definido como um dos [**ShellSpecialFolderConstants**](/wind
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -143,7 +143,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

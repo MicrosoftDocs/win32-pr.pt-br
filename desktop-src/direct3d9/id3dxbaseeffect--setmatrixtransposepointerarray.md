@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de ponteiros para matrizes transpostas.
+description: 'Método ID3DXBaseEffect:: SetMatrixTransposePointerArray – define uma matriz de ponteiros para matrizes transpostas.'
 ms.assetid: 11a21077-eeee-4d52-ac16-41444e3eca4f
 title: 'Método ID3DXBaseEffect:: SetMatrixTransposePointerArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1152deccdcadebe9f421fac6d7d5ce53c8d3e5f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f35afad1120a26a60f670d12410584b2f9db7f1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105802128"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107384"
 ---
 # <a name="id3dxbaseeffectsetmatrixtransposepointerarray-method"></a>Método ID3DXBaseEffect:: SetMatrixTransposePointerArray
 
@@ -69,7 +69,7 @@ Número de matrizes na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -92,7 +92,7 @@ Se as matrizes de destino forem menores do que as matrizes de origem, os compone
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

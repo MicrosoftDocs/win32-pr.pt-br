@@ -1,5 +1,5 @@
 ---
-description: Carrega a matriz determinada na matriz atual.
+description: 'Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h) – carrega a matriz determinada na matriz atual.'
 ms.assetid: c4c5ac50-238f-4b41-8ea9-7e48ffd03fc5
 title: 'Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 292b4e147dfa99023f0b4d560a4ed41e6b41b3fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2ee7e5cae4d28b81b805faa4f113d0819f1eae9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506463"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093534"
 ---
 # <a name="id3dxmatrixstackloadmatrix-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h)
 
@@ -49,7 +49,7 @@ Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) carregada na matriz at
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -70,7 +70,7 @@ Observe que esse método não adiciona um item à pilha; em vez disso, ele subst
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

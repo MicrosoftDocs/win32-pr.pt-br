@@ -1,5 +1,5 @@
 ---
-description: Tenta colocar o serviço no estado de pausado.
+description: Método PauseService da classe Win32_Service (provedores WMI CIMWin32) – tenta colocar o serviço no estado pausado.
 ms.assetid: 5382457e-7f9c-48a5-9262-b815a1a4a605
 ms.tgt_platform: multiple
 title: Método PauseService da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1b1dfa0b956442f74c17dd6a8c054c229a92466a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7654feea410564137e98861c4c0b5de2b5e7192e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756249"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096944"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método PauseService da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -40,7 +40,7 @@ uint32 PauseService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -332,7 +332,7 @@ else
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

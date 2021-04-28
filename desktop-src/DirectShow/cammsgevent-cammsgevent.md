@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CAMMsgEvent. CAMMsgEvent-método de construtor.
 ms.assetid: 7871a624-70c0-4f21-b62a-2c4c2eaa762b
 title: Construtor CAMMsgEvent. CAMMsgEvent (Wxutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d207afae53a715728d8307656b0c2427ce9574c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dac72ecb97a1ea1fd2594af9c11b8a03078cf2cb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754571"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096525"
 ---
 # <a name="cammsgeventcammsgevent-constructor"></a>Construtor CAMMsgEvent. CAMMsgEvent
 
@@ -62,7 +62,7 @@ Para compatibilidade com versões anteriores do Strmbase. lib, esse parâmetro a
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

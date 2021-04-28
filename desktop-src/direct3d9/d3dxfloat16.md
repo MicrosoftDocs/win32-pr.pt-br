@@ -1,5 +1,5 @@
 ---
-description: Descreve um vetor de ponto flutuante de 16 bits.
+description: Estrutura D3DXFLOAT16 (D3dx9math. h) – descreve um vetor de ponto flutuante de 16 bits.
 ms.assetid: f823a327-f07a-44e9-b58a-7865e11e80eb
 title: Estrutura D3DXFLOAT16 (D3dx9math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 4b469c770b811ed11ec21b21d2b449df1fd75b1c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc878575de4338a2a399f329362d79ff2e7654f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814577"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094264"
 ---
 # <a name="d3dxfloat16-structure-d3dx9mathh"></a>Estrutura D3DXFLOAT16 (D3dx9math. h)
 
@@ -64,7 +64,7 @@ Os programadores de C++ podem aproveitar a sobrecarga de operador e a conversão
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

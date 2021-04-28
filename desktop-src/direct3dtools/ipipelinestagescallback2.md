@@ -1,5 +1,5 @@
 ---
-description: Não usado. Anteriormente, um retorno de chamada para dados de estágios de pipeline.
+description: <span id="vspixengine.ipipelinestagescallback2"></span>Interface IPipeLineStagesCallback2 – não usada. Anteriormente, um retorno de chamada para dados de estágios de pipeline.
 MS-HAID: vspixengine.IPipeLineStagesCallback2
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9d14e080d4381405f32c6def51d8c64d78aaa422
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 941a056a5c2af00cfa1bb53f038cbeb923a777bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919813"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097384"
 ---
 # <a name="span-idvspixengineipipelinestagescallback2spanipipelinestagescallback2-interface"></a><span id="vspixengine.ipipelinestagescallback2"></span>Interface IPipeLineStagesCallback2
 
@@ -34,7 +34,7 @@ A interface **IPipeLineStagesCallback2** herda da interface [**IUnknown**](/wind
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
 A interface **IPipeLineStagesCallback2** tem esses métodos.
 

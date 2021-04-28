@@ -1,5 +1,5 @@
 ---
-description: Retorna o nome do perfil de HLSL (linguagem de sombreamento de alto nível) com suporte de um determinado dispositivo.
+description: Função D3DXGetPixelShaderProfile – retorna o nome do perfil de HLSL (linguagem de sombreamento de alto nível) com suporte de um determinado dispositivo.
 ms.assetid: a6c1be4e-f6f5-4f08-b6a7-b9c621e5f19b
 title: Função D3DXGetPixelShaderProfile (D3DX9Shader. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ad1f430a95b1ff2173dceb1e0561dccf3d0ee88d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7d24e19d49a8a96f91847892f519ef6c06d25ef5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930592"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114427"
 ---
 # <a name="d3dxgetpixelshaderprofile-function"></a>Função D3DXGetPixelShaderProfile
 
@@ -49,7 +49,7 @@ Ponteiro para o dispositivo. Consulte [**IDirect3DDevice9**](/windows/win32/api/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
@@ -139,7 +139,7 @@ Para obter mais informações sobre as diferenças entre versões de sombreador,
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

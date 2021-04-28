@@ -1,5 +1,5 @@
 ---
-description: O método pause pausa o filtro. Esse método implementa o método IMediaFilter::P ause.
+description: Método CTransformFilter. Pause – o método pause pausa o filtro. Esse método implementa o método IMediaFilter::P ause.
 ms.assetid: 3e3afd14-1c92-4f2b-a367-e10caaeb3b63
 title: Método CTransformFilter. PAUSE (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5408b9a39f92fd68eacb83474a18da0acda6b961
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 903522b63754ff7972e4cdcf5221946442497896
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789909"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095094"
 ---
 # <a name="ctransformfilterpause-method"></a>Método CTransformFilter. Pause
 
@@ -40,7 +40,7 @@ HRESULT Pause();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou outro valor **HRESULT** .
 
@@ -59,7 +59,7 @@ Esse método chama o método [**StartStreaming**](ctransformfilter-startstreamin
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

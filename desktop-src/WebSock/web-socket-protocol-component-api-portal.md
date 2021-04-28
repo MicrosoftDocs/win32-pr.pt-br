@@ -1,15 +1,15 @@
 ---
 title: API de componente de protocolo WebSocket
-description: .
+description: API de componente de protocolo WebSocket
 ms.assetid: ae73fd5e-9715-448c-b7ca-898f2705e228
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24edd74fe87185db498e6309a7fda5fa091c7d60
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c16290a7af5b5fea406e5f47c0db718d775e4d17
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084704"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088814"
 ---
 # <a name="websocket-protocol-component-api"></a>API de componente de protocolo WebSocket
 

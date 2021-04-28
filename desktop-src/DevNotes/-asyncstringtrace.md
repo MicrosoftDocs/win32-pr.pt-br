@@ -1,5 +1,5 @@
 ---
-description: Conclui a configuração de um buffer de rastreamento com campos opcionais para rastreamentos de estilo sprintf.
+description: Função AsyncStringTrace – conclui a configuração de um buffer de rastreamento com campos opcionais para rastreamentos de estilo sprintf.
 ms.assetid: a5f3ecbe-d335-4fd0-99aa-4d5a748ca4e1
 title: Função AsyncStringTrace
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: 15bfff82f5ef0ae3f921a3a4c83b4d35fb83d95f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 342670dc406cb84588984d0a9ab10fae280c5483
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751355"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085794"
 ---
 # <a name="asyncstringtrace-function"></a>Função AsyncStringTrace
 
@@ -62,7 +62,7 @@ Um marcador para as funções **vsprintf** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna o comprimento da instrução Trace, em bytes.
 

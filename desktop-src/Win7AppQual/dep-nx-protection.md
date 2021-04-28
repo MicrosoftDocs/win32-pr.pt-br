@@ -1,15 +1,15 @@
 ---
-description: .
+description: Proteção de DEP/NX
 ms.assetid: 92F628E4-6106-42F7-B868-A3101C7A3F0A
 title: Proteção de DEP/NX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c4a4cedead32504b6b78ba34bb72ee6b2ef400
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3565460cbfd2e6b13c3c5ba6b1f0693a3d5b25ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837257"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088564"
 ---
 # <a name="depnx-protection"></a>Proteção de DEP/NX
 

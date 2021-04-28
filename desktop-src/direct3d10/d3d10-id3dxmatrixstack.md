@@ -1,5 +1,5 @@
 ---
-description: Os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matriz.
+description: Interface ID3DXMatrixStack – os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matriz.
 ms.assetid: 6c76f9e0-5f59-4cf3-b34a-2475536af6c7
 title: Interface ID3DXMatrixStack (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3d6956a6764683378c732c4ed859bfa13e537422
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 65e9a5cd041431e1939346fec79dcf94fccd4ae9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298777"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094404"
 ---
 # <a name="id3dxmatrixstack-interface"></a>Interface ID3DXMatrixStack
 
@@ -50,7 +50,7 @@ A interface **ID3DXMatrixStack** tem esses métodos.
 | [**RotateAxisLocal**](id3dxmatrixstack-rotateaxislocal.md)                 | Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.<br/>                                             |
 | [**RotateYawPitchRoll**](id3dxmatrixstack-rotateyawpitchroll.md)           | Gira (em relação ao espaço de coordenadas mundiais) em um eixo arbitrário.<br/>                                                          |
 | [**RotateYawPitchRollLocal**](id3dxmatrixstack-rotateyawpitchrolllocal.md) | Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.<br/>                                             |
-| [**Escalonáve**](id3dxmatrixstack-scale.md)                                     | Dimensione a matriz atual sobre a origem da coordenada mundial.<br/>                                                                     |
+| [**Escala**](id3dxmatrixstack-scale.md)                                     | Dimensione a matriz atual sobre a origem da coordenada mundial.<br/>                                                                     |
 | [**ScaleLocal**](id3dxmatrixstack-scalelocal.md)                           | Dimensione a matriz atual sobre a origem do objeto.<br/>                                                                               |
 | [**Traduzir**](id3dxmatrixstack-translate.md)                             | Determina o produto da matriz atual e a matriz de conversão computada determinada pelos fatores especificados (x, y e z).<br/> |
 | [**TranslateLocal**](id3dxmatrixstack-translatelocal.md)                   | Determina o produto da matriz de conversão computada determinada pelos fatores especificados (x, y e z) e a matriz atual.<br/> |
@@ -84,7 +84,7 @@ typedef interface ID3DXMatrixStack *LPD3DXMATRIXSTACK;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera uma tabela de atributos para uma malha ou o número de entradas armazenadas em uma tabela de atributos para uma malha.
+description: 'Método ID3DXBaseMesh:: getattributetable – recupera uma tabela de atributos para uma malha ou o número de entradas armazenadas em uma tabela de atributos para uma malha.'
 ms.assetid: 15b24137-0ff9-4299-971b-90fa4ef2686d
 title: 'Método ID3DXBaseMesh:: getattributetable (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 70c93c8f477655200418793f53706731b42a47ac
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f5d27de884f72b46db900487e26f1099bf30949
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798448"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115444"
 ---
 # <a name="id3dxbasemeshgetattributetable-method"></a>Método ID3DXBaseMesh:: getattributetable
 
@@ -59,7 +59,7 @@ Ponteiro para o número de entradas armazenadas em pAttribTable ou um valor a se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -82,7 +82,7 @@ Uma tabela de atributos é usada para identificar áreas da malha que precisam s
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

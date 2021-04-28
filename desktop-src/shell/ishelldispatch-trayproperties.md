@@ -1,5 +1,5 @@
 ---
-description: Exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
+description: Método IShellDispatch. Trayproperties – exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
 ms.assetid: 8E0AC08E-1132-4312-9B75-E7686B91AB02
 title: Método IShellDispatch. Trayproperties (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5f5e22dd48b77035aab3754a4c8e3d2c414ec606
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 424d25d7555090e4244d5cd22084171ca2a4fea9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921109"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086614"
 ---
 # <a name="ishelldispatchtrayproperties-method"></a>Método IShellDispatch. Trayproperties
 
@@ -45,7 +45,7 @@ IShellDispatch.TrayProperties()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

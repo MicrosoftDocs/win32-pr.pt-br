@@ -1,5 +1,5 @@
 ---
-description: O método TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe CIM_DeviceFile – o método TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: ef7d5ce7-99fb-464f-9739-ec9189148f94
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip da classe CIM_DeviceFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d700940f3ee00cd4d65b8307c48ac7cc3ed28a2c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e7c745df18e1725199c4027d22882a00f6143a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456916"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086044"
 ---
 # <a name="takeownership-method-of-the-cim_devicefile-class"></a>Método TakeOwnerShip da classe CIM \_ devicefile
 
@@ -45,7 +45,7 @@ uint32 TakeOwnerShip();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -54,7 +54,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Êxito.
+Sucesso.
 
 </dd> <dt>
 
@@ -162,7 +162,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

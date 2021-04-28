@@ -1,15 +1,15 @@
 ---
-description: .
+description: Remoção do driver de WPDUSB.SYS para dispositivos portáteis do Windows
 ms.assetid: 3ad0c892-8b19-465d-af2f-9207f98e27b7
 title: Remoção do driver de WPDUSB.SYS para dispositivos portáteis do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1d602c8277a5c256332b3eaec6a383997d5c63d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5931b63c5abb4534b2c8dd6619b4a3ead8b339be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791528"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116244"
 ---
 # <a name="removal-of-wpdusbsys-driver-for-windows-portable-devices"></a>Remoção do driver de WPDUSB.SYS para dispositivos portáteis do Windows
 

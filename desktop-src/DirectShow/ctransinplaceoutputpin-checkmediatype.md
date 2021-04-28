@@ -1,5 +1,5 @@
 ---
-description: O método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
+description: Método CTransInPlaceOutputPin. CheckMediaType – o método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
 ms.assetid: be720021-ef7b-4281-a9f4-93abbdafc75d
 title: Método CTransInPlaceOutputPin. CheckMediaType (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b0a422851bc7e09075076decc39d57b85d1052ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66cd29758e0b2d63db88db8b998cc79ec12efdd9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757632"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094714"
 ---
 # <a name="ctransinplaceoutputpincheckmediatype-method"></a>Método CTransInPlaceOutputPin. CheckMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de m�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                                | Descrição                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                       | Êxito.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Sucesso.<br/>                 |
 | <dl> <dt>**\_tipo E \_ VFW \_ não \_ aceito**</dt> </dl> | Tipo de mídia não aceito.<br/> |
 
 
@@ -81,7 +81,7 @@ Se o filtro já estiver sendo transmitido e estiver usando dois alocadores, esse
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

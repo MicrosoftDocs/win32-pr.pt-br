@@ -1,15 +1,15 @@
 ---
-description: .
+description: System.Document. RevisionNumber
 ms.assetid: 837633aa-3c90-435b-ae6b-947b894ef24a
 title: System.Document. RevisionNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eda17203bfa70709a18039577b7ad0343e6f17a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d13430a175ea4c708364eed35c7f628720624ffb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297034"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114714"
 ---
 # <a name="systemdocumentrevisionnumber"></a>System.Document. RevisionNumber
 

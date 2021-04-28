@@ -1,5 +1,5 @@
 ---
-description: O método GetAt recupera um item da coleção por um índice baseado em zero.
+description: 'Método IPortableDevicePropVariantCollection:: GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.'
 ms.assetid: c7119ba6-e6fc-4cb6-a8ab-3bf7b6bfe850
 title: 'Método IPortableDevicePropVariantCollection:: GetAt (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 0833c69b537fa230320ef69707a6f4302a8ca1ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764305"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106794"
 ---
 # <a name="iportabledevicepropvariantcollectiongetat-method"></a>Método IPortableDevicePropVariantCollection:: GetAt
 
@@ -55,7 +55,7 @@ Ponteiro para uma estrutura **PROPVARIANT** . O chamador é responsável por lib
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -86,7 +86,7 @@ Para obter um exemplo de como usar esse método, consulte [recuperando as catego
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

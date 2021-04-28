@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CAMEvent. CAMEvent-método de construtor.
 ms.assetid: 35c9ac07-8756-42b1-beeb-5f0e79466742
 title: Construtor CAMEvent. CAMEvent (Wxutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a01d9d1f592675f58d19e81b800c966dddaca1c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cdd37ba72d9467c16d46b2aec3ec40c206466eaf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756212"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096524"
 ---
 # <a name="cameventcamevent-constructor"></a>Construtor CAMEvent. CAMEvent
 
@@ -76,7 +76,7 @@ Com um evento de redefinição automática, o método [**CAMEvent:: Wait**](came
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

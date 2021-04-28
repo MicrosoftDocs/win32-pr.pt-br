@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Initialize.
+description: Função IWICBitmapFrameEncode_Initialize_Proxy function-proxy para o método Initialize.
 ms.assetid: af9e204c-7072-47b8-84eb-47a754968d5b
 title: Função IWICBitmapFrameEncode_Initialize_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: da9192409636de96dbd9d35d9614df2c926c9032
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8c8a7526343e6dfcda9859fd06259700019a9bf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647079"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100544"
 ---
 # <a name="iwicbitmapframeencode_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICBitmapFrameEncode \_
 
@@ -44,22 +44,22 @@ HRESULT IWICBitmapFrameEncode_Initialize_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Ponteiro para este objeto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Ponteiro para este objeto [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
 
 </dd> <dt>
 
 *pIEncoderOptions* \[ no\]
 </dt> <dd>
 
-Tipo: **[IPropertyBag2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) \** _
+Tipo: **[IPropertyBag2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85))\***
 
-O conjunto de propriedades a ser usado para a inicialização [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+O conjunto de propriedades a ser usado para a inicialização de [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

@@ -1,5 +1,5 @@
 ---
-description: O valor de precisão desejado atual.
+description: Propriedade LocationDisp. LatLongReportFactory. DesiredAccuracy-o valor de precisão desejado atual.
 ms.assetid: dfad833b-bb0c-4c66-9942-da10abee5381
 title: Propriedade LocationDisp. LatLongReportFactory. DesiredAccuracy
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e17e415d9503660d873ae4df67d2469c646dd80e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afc5ec235df6c9e07a665410cb09e00f24305304
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810160"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088964"
 ---
 # <a name="locationdisplatlongreportfactorydesiredaccuracy-property"></a>Propriedade LocationDisp. LatLongReportFactory. DesiredAccuracy
 
@@ -27,7 +27,7 @@ O valor de precisão desejado atual.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```JScript

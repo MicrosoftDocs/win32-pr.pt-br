@@ -1,6 +1,6 @@
 ---
 title: Código de notificação BN_DBLCLK (WinUser. h)
-description: Enviado quando o usuário clica duas vezes em um botão.
+description: BN_DBLCLK código de notificação-enviado quando o usuário clica duas vezes em um botão.
 ms.assetid: 60cc033f-8b84-4aa5-b625-fdee9deb4757
 keywords:
 - BN_DBLCLK de código de notificação controles do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f04c6bf52e213056d85d3a6d038bedb83754a27e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdb403f37b8fee9ea36023a7cd2511bbaaa2af81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009133"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096844"
 ---
 # <a name="bn_dblclk-notification-code"></a>Código de notificação do bilhão \_ DBLCLK
 
@@ -71,7 +71,7 @@ BILHÃO \_ DBLCLK é o mesmo que o código de notificação do [bilhão \_ doubl
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

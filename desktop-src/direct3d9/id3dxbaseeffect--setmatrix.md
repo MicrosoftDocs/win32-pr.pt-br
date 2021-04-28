@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz não transposeda.
+description: 'Método ID3DXBaseEffect:: setmatrix – define uma matriz não transposeda.'
 ms.assetid: 90329460-756e-4b3e-9ff3-be9dc556eb9f
 title: 'Método ID3DXBaseEffect:: setmatrix (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 39a5aed1d6321cf0599d212222fd967ee512e20e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7af7dc0daa3dcd29e7b15c4fe435b9626ea41746
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506459"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097494"
 ---
 # <a name="id3dxbaseeffectsetmatrix-method"></a>Método ID3DXBaseEffect:: setmatrix
 
@@ -59,7 +59,7 @@ Ponteiro para uma matriz nontransposed. Consulte [**D3DXMATRIX**](d3dxmatrix.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -82,7 +82,7 @@ Se a matriz de destino for menor do que a matriz de origem, os componentes adici
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

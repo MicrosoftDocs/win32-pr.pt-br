@@ -1,15 +1,15 @@
 ---
 title: Efeito de temperatura e tonalidade
-description: .
+description: Efeito de temperatura e tonalidade
 ms.assetid: 8df72105-26ea-2dea-a4de-ef06902b7e0b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a8a483b926b26c115002b2bb352d8e3120e7479
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc2c3628e1fdcb1c72a84a9e08736e4215d55514
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824416"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096634"
 ---
 # <a name="temperature-and-tint-effect"></a>Efeito de temperatura e tonalidade
 

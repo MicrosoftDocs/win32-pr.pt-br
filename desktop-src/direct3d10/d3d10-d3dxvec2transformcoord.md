@@ -1,5 +1,5 @@
 ---
-description: Transforma um vetor 2D por uma determinada matriz, projetando o resultado de volta em w = 1.
+description: Função D3DXVec2TransformCoord (D3DX10Math. h) – transforma um vetor 2D por uma determinada matriz, projetando o resultado de volta em w = 1.
 ms.assetid: bb24204f-0c8e-4dc5-bcae-12e3033d1a39
 title: Função D3DXVec2TransformCoord (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0d7e93c2b3a78160f2f1f1ad3342575b4369a057
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95321d377ad5af29075764e2c2d9386abf5b1441
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105772932"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108334"
 ---
 # <a name="d3dxvec2transformcoord-function-d3dx10mathh"></a>Função D3DXVec2TransformCoord (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
@@ -92,7 +92,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

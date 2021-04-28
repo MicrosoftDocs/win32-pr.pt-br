@@ -1,5 +1,5 @@
 ---
-description: 'O método IsFormatSupported determina se há suporte para um formato de hora especificado. Esse método implementa o método IMediaSeeking:: IsFormatSupported.'
+description: 'Método CSourceSeeking. IsFormatSupported – o método IsFormatSupported determina se há suporte para um formato de hora especificado. Esse método implementa o método IMediaSeeking:: IsFormatSupported.'
 ms.assetid: 79b6dfd4-7f03-479b-b855-8f389bf6cbc7
 title: Método CSourceSeeking. IsFormatSupported (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7d027a2ee6e94e4ccf4944c27e77f02d1d1c5edb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c58e8edd908c101c3045e221cc86420cbb5cb94
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098744"
 ---
 # <a name="csourceseekingisformatsupported-method"></a>Método CSourceSeeking. IsFormatSupported
 
@@ -49,7 +49,7 @@ Ponteiro para um GUID de formato de hora. Consulte [**GUIDs de formato de hora**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
@@ -80,7 +80,7 @@ O único formato de tempo com suporte da classe base é \_ o \_ tempo de mídia 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

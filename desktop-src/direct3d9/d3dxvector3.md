@@ -1,5 +1,5 @@
 ---
-description: Descreve um vetor de três componentes, incluindo sobrecargas de operador e conversões de tipo.
+description: Estrutura D3DXVECTOR3 (D3dx9math. h) – descreve um vetor de três componentes, incluindo sobrecargas de operador e conversões de tipo.
 ms.assetid: 4d73de4b-82fe-452a-8a1e-17208f172a03
 title: Estrutura D3DXVECTOR3 (D3dx9math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 2c49902677999c78737e7dec094c839cd8941f08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 29d6743f0c0c365911ebbbba66cb4d44f10792e7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012188"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097574"
 ---
 # <a name="d3dxvector3-structure-d3dx9mathh"></a>Estrutura D3DXVECTOR3 (D3dx9math. h)
 
@@ -161,7 +161,7 @@ public:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

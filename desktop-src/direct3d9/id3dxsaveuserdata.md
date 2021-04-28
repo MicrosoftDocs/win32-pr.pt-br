@@ -1,5 +1,5 @@
 ---
-description: Essa interface é implementada pelo aplicativo para salvar os dados de usuário adicionais inseridos nos arquivos. x.
+description: Interface ID3DXSaveUserData – essa interface é implementada pelo aplicativo para salvar os dados de usuário adicionais inseridos nos arquivos. x.
 ms.assetid: 6294f942-9c14-4eed-92a8-af2821fd7e13
 title: Interface ID3DXSaveUserData (D3dx9anim. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 77529a5a7b260dd27dc4af1752c88f55117bc974
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5dbdc71239455772809e44f535634a0d06cc0653
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105754917"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107174"
 ---
 # <a name="id3dxsaveuserdata-interface"></a>Interface ID3DXSaveUserData
 
@@ -73,7 +73,7 @@ typedef interface ID3DXSaveUserData *LPD3DXSAVEUSERDATA;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
