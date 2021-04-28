@@ -1,5 +1,5 @@
 ---
-description: Avalia uma luz esférica e retorna dados Spectral esféricos (SH).
+description: Função D3DXSHEvalSphericalLight (D3dx9math. h) – avalia uma luz esférica e retorna os dados de Spectral esférico harmônica (SH).
 ms.assetid: aa46c162-9c2d-49c0-925c-d0c06456f918
 title: Função D3DXSHEvalSphericalLight (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8581b4284e270b6df587be1a71fcf11f29c843d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db671d58806d999e07b1aac1e8e4da2fb38acc6f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298573"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117884"
 ---
 # <a name="d3dxshevalsphericallight-function-d3dx9mathh"></a>Função D3DXSHEvalSphericalLight (D3dx9math. h)
 
@@ -129,7 +129,7 @@ Ponteiro para o vetor SH de saída para o componente azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -158,7 +158,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

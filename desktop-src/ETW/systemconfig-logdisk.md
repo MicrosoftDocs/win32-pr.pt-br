@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de disco lógico.
+description: Classe SystemConfig_LogDisk-essa classe é a classe de tipo de evento para eventos de configuração de disco lógico.
 ms.assetid: a11a8245-8ace-4061-b6c7-938002d8b9fc
 title: Classe SystemConfig_LogDisk
 ms.topic: reference
@@ -28,12 +28,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3bff1cf526dfb7bf1ddd36fcb887e8a4b837be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d7ca8dc3f632e88c250715292a27e18ff36e3af
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967409"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106104"
 ---
 # <a name="systemconfig_logdisk-class"></a>\_Classe SystemConfig LogDisk
 
@@ -144,7 +144,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 | Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partição<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volume<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partição estendida em vários discos<br/> |
 
@@ -357,7 +357,7 @@ Reservado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

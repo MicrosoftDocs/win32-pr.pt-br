@@ -1,5 +1,5 @@
 ---
-description: Fornece uma pesquisa difusa, sem diferenciação de maiúsculas e minúsculas, para os traços de escrita analisado e os traços de desenho analisados que têm tipos reconhecidos.
+description: 'Método IInkAnalyzer:: SearchWithLanguageId-fornece uma pesquisa difusa, sem diferenciação de maiúsculas e minúsculas para a criação de traços de escrita analisados e traços de desenho analisados que têm tipos reconhecidos.'
 ms.assetid: dfd481f9-38fd-433f-b1fc-697c735c13da
 title: 'Método IInkAnalyzer:: SearchWithLanguageId (IACom. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 829878a6fd326abb8a685b644cfc222ba6921385
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 201469933da10b0d68a4d3a50e63c42f8d01d2dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647223"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083654"
 ---
 # <a name="iinkanalyzersearchwithlanguageid-method"></a>Método IInkAnalyzer:: SearchWithLanguageId
 
@@ -86,7 +86,7 @@ Ponteiro para uma matriz de IDs de traço que representa um conjunto de conjunto
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
 
@@ -117,7 +117,7 @@ A pesquisa não gera eventos PopulateContextNode. Somente os traços que já for
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

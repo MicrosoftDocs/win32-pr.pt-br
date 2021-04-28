@@ -1,5 +1,5 @@
 ---
-description: Altera as permissões de segurança para o arquivo de entrada de diretório lógico especificado no caminho do objeto.
+description: Método ChangeSecurityPermissions da classe Win32_Directory – altera as permissões de segurança para o arquivo de entrada de diretório lógico especificado no caminho do objeto.
 ms.assetid: de2b3269-61e0-484c-8bea-00578422491f
 ms.tgt_platform: multiple
 title: Método ChangeSecurityPermissions da classe Win32_Directory
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d5f7b82f37fcbf7aeab541351752f8f6a75816f3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 98c6026497496ab758c71a8a0403557ad2cacc7f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456892"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091054"
 ---
 # <a name="changesecuritypermissions-method-of-the-win32_directory-class"></a>Método ChangeSecurityPermissions da classe do \_ diretório Win32
 
@@ -57,7 +57,7 @@ Privilégio de segurança a ser modificado. Por exemplo, para alterar a seguran�
 
 `Option = 1 + 4`
 
-– ou –
+-ou-
 
 `Option = CHANGE_OWNER_SECURITY_INFORMATION | CHANGE_DACL_SECURITY_INFORMATION`
 
@@ -107,7 +107,7 @@ Altere a lista de controle de acesso do sistema (SACL) do arquivo lógico.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se as permissões forem alteradas e um número diferente para indicar um erro.
 
@@ -127,7 +127,7 @@ A solicitação foi bem-sucedida.
 
 2
 
-O acesso foi negado.
+Acesso negado.
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

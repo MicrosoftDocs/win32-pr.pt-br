@@ -1,5 +1,5 @@
 ---
-description: Especifica o tipo de otimização de malha a ser executada.
+description: Enumeração de D3DX10_MESHOPT-especifica o tipo de otimização de malha a ser executada.
 ms.assetid: 20d1da8c-8c3d-4045-9a37-d534a8682716
 title: Enumeração de D3DX10_MESHOPT (D3DX10Mesh. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: c8ccb13da1549b7e2eeeb67ebf7899c2187be363
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7b3085cf9970f2c1f6fe3748cc4db8f4fb2b2a78
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298761"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105444"
 ---
 # <a name="d3dx10_meshopt-enumeration"></a>\_Enumeração D3DX10 MESHOPT
 
@@ -110,7 +110,7 @@ O \_ sinalizador D3DXMESHOPT SHAREVB foi removido desta enumeração. \_ \_ Em v
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

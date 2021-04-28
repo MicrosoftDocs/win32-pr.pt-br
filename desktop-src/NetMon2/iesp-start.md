@@ -1,5 +1,5 @@
 ---
-description: O método Start inicia uma captura.
+description: 'Método IESP:: Start – o método Start inicia uma captura.'
 ms.assetid: 8bf8c0c7-20be-4404-8ea5-b28b4c658523
 title: 'Método IESP:: Start (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 2d9fc3a75fc82964f6fc5a5660ef77414ae065d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd0d1159132e594b6d48ea6799da5846eeb626e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811078"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103794"
 ---
 # <a name="iespstart-method"></a>Método IESP:: Start
 
@@ -47,7 +47,7 @@ Ponteiro para o nome do [*arquivo de captura*](c.md) usado para armazenar os dad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -90,7 +90,7 @@ Ao reiniciar a captura usando os métodos IESP:: Start e [IESP:: Stop](iesp-stop
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

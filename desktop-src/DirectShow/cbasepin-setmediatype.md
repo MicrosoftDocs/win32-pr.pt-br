@@ -1,5 +1,5 @@
 ---
-description: O método SetMediaType define o tipo de mídia para a conexão.
+description: Método CBasePin. SetMediaType – o método SetMediaType define o tipo de mídia para a conexão.
 ms.assetid: db32b33b-df71-4f46-b53f-d7e647f5f559
 title: Método CBasePin. SetMediaType (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 07ac736558cea12a16c695cf109c3d6283ce4a13
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b61b6179aa6364ebddd940b8853e22d628463e56
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752096"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095975"
 ---
 # <a name="cbasepinsetmediatype-method"></a>Método CBasePin. SetMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que especifica o tipo de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -70,7 +70,7 @@ Na classe base, esse método define a variável de membro [**CBasePin:: m \_ MT*
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

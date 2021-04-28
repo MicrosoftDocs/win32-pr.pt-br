@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. CreatorApplication
 ms.assetid: ba60825d-1b0d-4b0c-a5ed-5dfa486eac68
 title: System. Media. CreatorApplication
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fef09a7091de28cc9bf947ea383fc0e868a8ff38
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 07f8be91c1eb74f5106e36abd4989cdf1a99e67a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104011923"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092134"
 ---
 # <a name="systemmediacreatorapplication"></a>System. Media. CreatorApplication
 

@@ -1,5 +1,5 @@
 ---
-description: O método Stop interrompe a captura atual.
+description: 'Método IESP:: Stop – o método Stop interrompe a captura atual.'
 ms.assetid: d2d4e51a-c6a4-4aec-a805-929af621ffb3
 title: 'Método IESP:: Stop (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 50dfb274e1355af93c473609f95607e6b3faf1fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac262d8da5ab218db7300ea38da59d5c738421c0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789514"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103764"
 ---
 # <a name="iespstop-method"></a>Método IESP:: Stop
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura de [estatísticas](statistics.md) que contém estat�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -84,7 +84,7 @@ Quando você parar e reiniciar a captura, certifique-se de chamar o método [IES
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Interrompe um serviço nomeado.
+description: Método IShellDispatch2. instop – interrompe um serviço nomeado.
 ms.assetid: f4cd0e2c-4ecc-4e9f-a0b5-d2a8a739f0e2
 title: Método IShellDispatch2. OnStop (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a4a76c1f53309c14875eeaf6f3f4c0839a511bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 651138eb687cfd83406bc6e1a7fcf520ff001171
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967517"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117024"
 ---
 # <a name="ishelldispatch2servicestop-method"></a>Método IShellDispatch2. OnStop
 
@@ -69,19 +69,19 @@ Defina como **true** para que o serviço seja iniciado pelo Gerenciador de contr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 

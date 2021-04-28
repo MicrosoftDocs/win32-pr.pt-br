@@ -1,5 +1,5 @@
 ---
-description: Exibe a caixa de diálogo desligar o Windows. Isso é o mesmo que clicar no menu iniciar e selecionar desligar.
+description: Método Shell. ShutdownWindows – exibe a caixa de diálogo desligar o Windows. Isso é o mesmo que clicar no menu iniciar e selecionar desligar.
 ms.assetid: 6fa8e2e0-a58f-4837-89f5-898cece2d80a
 title: Método Shell. ShutdownWindows (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 804a1e211e191206d20f83d85dee2202492bfd27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a3c0746caccb360f6f7f0156b72a57ed0a2d2b8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170086"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083664"
 ---
 # <a name="shellshutdownwindows-method"></a>Método Shell. ShutdownWindows
 

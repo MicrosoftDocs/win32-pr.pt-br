@@ -1,6 +1,6 @@
 ---
 title: Mensagem de RB_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere Unicode para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
+description: RB_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
 ms.assetid: 769b74e0-c1f0-4068-80c4-075f1db2058a
 keywords:
 - Controles de RB_SETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfc9d0ce256af0de740c487fd6514848db79c2e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce9c168ee298d28d59010491031f7d94ebcaa650
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644904"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090964"
 ---
 # <a name="rb_setunicodeformat-message"></a>\_Mensagem SETUNICODEFORMAT RB
 
@@ -39,7 +39,7 @@ Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode anterior para o controle.
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método add adiciona um item à coleção.
+description: 'Método IPortableDeviceValuesCollection:: Add – o método add adiciona um item à coleção.'
 ms.assetid: 3b06abc4-f0ab-4b02-b3a7-360615f86a2a
 title: 'Método IPortableDeviceValuesCollection:: Add (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 1f423ac7243c8d16fa75978ae5c9bcf04136bb05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 765100e1272fc6766e9f305f37f3b699bd96beb8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105807140"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083234"
 ---
 # <a name="iportabledevicevaluescollectionadd-method"></a>Método IPortableDeviceValuesCollection:: Add
 
@@ -47,7 +47,7 @@ Ponteiro para uma interface **IPortableDeviceValues** para adicionar à coleçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -73,7 +73,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

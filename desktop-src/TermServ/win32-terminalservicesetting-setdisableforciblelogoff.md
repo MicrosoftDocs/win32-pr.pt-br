@@ -1,6 +1,6 @@
 ---
 title: Método SetDisableForcibleLogoff da classe Win32_TerminalServiceSetting
-description: Não há suporte para o método.
+description: Método SetDisableForcibleLogoff da classe Win32_TerminalServiceSetting – não há suporte para esse método.
 ms.assetid: 1b7ac0f2-c242-4ca8-bc4d-8111e63851eb
 ms.tgt_platform: multiple
 keywords:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4ae62db188d0e3aa31ffd8e3993e793e9bb2bf3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a4be6ace10853ec282f5ab17b1f5f5921ef2c0d6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455042"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103704"
 ---
 # <a name="setdisableforciblelogoff-method-of-the-win32_terminalservicesetting-class"></a>Método SetDisableForcibleLogoff da classe Win32 \_ TerminalServiceSetting
 
@@ -74,7 +74,7 @@ Habilite a propriedade. Não é possível efetuar logoff forçado do administrad
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna êxito em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
 
@@ -94,7 +94,7 @@ Retorna êxito em caso de êxito; caso contrário, retorna um código de erro WM
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

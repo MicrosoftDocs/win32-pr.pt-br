@@ -1,5 +1,5 @@
 ---
-description: Contém um objeto para cada usuário na função ao qual a coleção está relacionada.
+description: Coleção UsersInPartitionRole – contém um objeto para cada usuário na função ao qual a coleção está relacionada.
 ms.assetid: c6aebf7a-04d1-4c7c-a015-bc6fb4841c4a
 title: Coleção UsersInPartitionRole
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: fce1577636a7b2e678bdade9c32f706c7ccbf158
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2a4c134ebead08ef576337528a8ef75d8b8be21a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089300"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105544"
 ---
 # <a name="usersinpartitionrole-collection"></a>Coleção UsersInPartitionRole
 
@@ -63,7 +63,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

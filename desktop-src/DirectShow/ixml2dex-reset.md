@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'Método IXml2Dex:: Reset-não implementado.'
 ms.assetid: f51972fe-e095-4ce2-93b6-841ed24c6ce7
 title: 'Método IXml2Dex:: Reset'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0daaa859d9eaaf3bac2b495549c8dccaea2a835c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 59545c66bdc2cf3cce6bd343b975431446b76342
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456760"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084364"
 ---
 # <a name="ixml2dexreset-method"></a>Método IXml2Dex:: Reset
 
@@ -41,7 +41,7 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -57,7 +57,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

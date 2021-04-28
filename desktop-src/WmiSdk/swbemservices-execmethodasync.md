@@ -1,5 +1,5 @@
 ---
-description: Executa um método que é exportado por um provedor de método.
+description: SWbemServices.Exemétodo cMethodAsync – executa um método que é exportado por um provedor de método.
 ms.assetid: 933a4c64-7538-474e-9f6f-f94da6066b46
 ms.tgt_platform: multiple
 title: SWbemServices.Exemétodo cMethodAsync (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 898912efae276fc0404576e162468e06e1b95a68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcdcd70b567a737cb8686ac841dc1ce0b55d3996
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798004"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105584"
 ---
 # <a name="swbemservicesexecmethodasync-method"></a>SWbemServices.Exemétodo cMethodAsync
 
@@ -123,7 +123,7 @@ Um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao coletor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor. Se a chamada for bem-sucedida, um objeto [**Parameters**](swbemmethod-outparameters.md) , que também é um [**SWbemObject**](swbemobject.md) , é fornecido para o coletor especificado em *objWbemSink*. O objeto **Parameters** retornado contém os parâmetros de saída e o valor de retorno para o método que está sendo executado. Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
@@ -271,7 +271,7 @@ end sub
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

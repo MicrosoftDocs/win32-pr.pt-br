@@ -1,5 +1,5 @@
 ---
-description: Recupera informações adicionais sobre um erro.
+description: Método GetErrorEx da classe Msvm_VirtualSystemReferencePointExportJob – recupera informações adicionais sobre um erro.
 ms.assetid: 63ce4762-e5ce-405f-b5fc-74e505b0eaf1
 title: Método GetErrorEx da classe Msvm_VirtualSystemReferencePointExportJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4c6c392adb2b638c2d638b758696252adcb54d7e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 80e0850018b20497dbc42bbdbb802ffe4317489b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105750463"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118604"
 ---
 # <a name="geterrorex-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método GetErrorEx da \_ classe VirtualSystemReferencePointExportJob Msvm
 
@@ -46,7 +46,7 @@ Se o status operacional do trabalho não for "OK", esse parâmetro retornará um
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0; caso contrário, retornará um erro.
 
@@ -102,7 +102,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera uma configuração de shell global.
+description: Método Shell. Configuration – recupera uma configuração de shell global.
 ms.assetid: 3E8C7C6A-5696-4756-B4BF-902FA2420AE9
 title: Método Shell. Configuration (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: df87c0c99129a8ececa3c25321a192e25c71c07e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc8fe6277208808ad5f5b182f3eee416daf4a5d0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828463"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083734"
 ---
 # <a name="shellgetsetting-method"></a>Método Shell. Configuration
 
@@ -344,19 +344,19 @@ O estado da opção de **estilo clássico** . A partir do Windows Vista, essa op
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \_ bool \** _
+Tipo: **\_ booliano \* de variante**
 
-Defina como _ *true** se a configuração existir; caso contrário, **false**.
+Definir como **true** se a configuração existir; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \_ bool \** _
+Tipo: **\_ booliano \* de variante**
 
-Defina como _ *true** se a configuração existir; caso contrário, **false**.
+Definir como **true** se a configuração existir; caso contrário, **false**.
 
 ## <a name="examples"></a>Exemplos
 

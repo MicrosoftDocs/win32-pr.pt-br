@@ -1,5 +1,5 @@
 ---
-description: Determina o produto cruzado em quatro dimensões.
+description: Função D3DXVec4Cross (D3DX10Math. h) – determina o produto cruzado em quatro dimensões.
 ms.assetid: 4f728fbd-cf5a-4d2e-ba4f-487616d83f6d
 title: Função D3DXVec4Cross (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 8e3e2a612740a207ea4dc44243ce24ebbab7fc08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e52cc1adb1e48f65599b1bf7179f7953823f1e1c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105794569"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102944"
 ---
 # <a name="d3dxvec4cross-function-d3dx10mathh"></a>Função D3DXVec4Cross (D3DX10Math. h)
 
@@ -78,7 +78,7 @@ Ponteiro para uma estrutura de D3DXVECTOR4 de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
@@ -98,7 +98,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

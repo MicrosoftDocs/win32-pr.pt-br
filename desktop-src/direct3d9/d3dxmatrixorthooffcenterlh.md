@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção ortográfica personalizada de mão esquerda.
+description: Função D3DXMatrixOrthoOffCenterLH (D3dx9math. h) – compila uma matriz de projeção ortográfica personalizada, da mão esquerda.
 ms.assetid: e4f087e5-63d9-49ca-9d8e-3a25070e1a51
 title: Função D3DXMatrixOrthoOffCenterLH (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1e286197233b2abb2b19138b8fc9d154df355a6a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 704bdab1d486399b28117cd078f556beb1347f7b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930686"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107484"
 ---
 # <a name="d3dxmatrixorthooffcenterlh-function-d3dx9mathh"></a>Função D3DXMatrixOrthoOffCenterLH (D3dx9math. h)
 
@@ -109,7 +109,7 @@ Valor z máximo do volume de exibição.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -146,7 +146,7 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

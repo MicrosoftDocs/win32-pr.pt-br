@@ -1,5 +1,5 @@
 ---
-description: Altera as permissões de segurança para o arquivo de entrada de diretório lógico especificado no caminho do objeto.
+description: Método ChangeSecurityPermissions da classe CIM_Directory – altera as permissões de segurança para o arquivo de entrada de diretório lógico especificado no caminho do objeto.
 ms.assetid: d3caeec1-fecc-4463-9349-d82869c11927
 ms.tgt_platform: multiple
 title: Método ChangeSecurityPermissions da classe CIM_Directory
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2bf767dc45907a90354b2c00fb30c6b31ce6d09a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 389ed5b7b0a43981c5eeb3d66a73bd19cbd99d88
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646431"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091064"
 ---
 # <a name="changesecuritypermissions-method-of-the-cim_directory-class"></a>Método ChangeSecurityPermissions da classe de \_ diretório CIM
 
@@ -117,7 +117,7 @@ Altere a ACL do sistema do arquivo lógico.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -260,7 +260,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

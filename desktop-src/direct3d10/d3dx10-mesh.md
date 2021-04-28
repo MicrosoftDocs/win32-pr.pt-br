@@ -1,5 +1,5 @@
 ---
-description: Sinalizadores usados para especificar as opções de criação para uma malha.
+description: D3DX10_MESH Enumeração-flags usados para especificar as opções de criação para uma malha.
 ms.assetid: 1a5a6b3f-34f4-4338-9ffe-8f95f6f0c385
 title: Enumeração de D3DX10_MESH (D3DX10Mesh. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: c2387024512a42c0a9e06ac1818b0282121cd0eb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2659783b0443396508465f9498eec86950f825bc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105786959"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105434"
 ---
 # <a name="d3dx10_mesh-enumeration"></a>\_Enumeração de malha D3DX10
 
@@ -68,7 +68,7 @@ Uma malha de 32 bits (D3DXMESH \_ 32bit) pode teoricamente dar suporte a (2 ³ �
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

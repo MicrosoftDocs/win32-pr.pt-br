@@ -1,5 +1,5 @@
 ---
-description: O código do componente em questão.
+description: Propriedade ComponentInfo. ComponentCode-o código do componente em questão.
 ms.assetid: 3ee4dcc0-1207-4d01-853a-d46c2638e7fd
 title: Propriedade ComponentInfo. ComponentCode
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 277a6403312a5f07a6cc622259e4b9899dab5e7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0a73602e30da1e2aebdf09bc18eaa1515be1470
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749592"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084384"
 ---
 # <a name="componentinfocomponentcode-property"></a>Propriedade ComponentInfo. ComponentCode
 
@@ -26,7 +26,7 @@ O código do componente em questão. Essa propriedade chama a função [**MsiGet
 
 **[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Essa propriedade está disponível a partir do Windows Installer 5,0.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ## <a name="property-value"></a>Valor da propriedade
 

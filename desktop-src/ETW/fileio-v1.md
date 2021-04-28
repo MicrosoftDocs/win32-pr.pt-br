@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe FileIo_V1-essa classe é a classe pai para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: da64a02d-4bde-4ee9-81fa-8a67d53cd62e
 title: Classe FileIo_V1
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 05ca1cc6d8e0f03116d1f9484a0392c837cd2b32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c40568425212231a547352ffdafb7baef46e412a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968186"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106534"
 ---
 # <a name="fileio_v1-class"></a>\_Classe FileIo v1
 
@@ -49,7 +49,7 @@ A classe **FileIo \_ v1** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

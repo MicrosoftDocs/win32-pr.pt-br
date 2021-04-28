@@ -1,5 +1,5 @@
 ---
-description: Contém o objeto de aplicativo do objeto.
+description: Propriedade ShellFolderView. Application – contém o objeto Application do objeto.
 ms.assetid: 305766b1-a19f-4743-a9e3-6837b3f8ffe0
 title: Propriedade ShellFolderView. Application (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ba57c407183179f580b5b616ad039c22e6fea66c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95ef542f91235b3b068e1b1b54768b4dd453d9b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968120"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083464"
 ---
 # <a name="shellfolderviewapplication-property"></a>Propriedade ShellFolderView. Application
 

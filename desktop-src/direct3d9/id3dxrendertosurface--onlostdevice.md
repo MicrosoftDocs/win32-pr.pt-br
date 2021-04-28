@@ -1,5 +1,5 @@
 ---
-description: Use este método para liberar todas as referências a recursos de memória de vídeo e excluir todos os stateblocks. Esse método deve ser chamado sempre que um dispositivo for perdido ou antes de redefinir um dispositivo.
+description: 'Método ID3DXRenderToSurface:: OnLostDevice – Use este método para liberar todas as referências a recursos de memória de vídeo e excluir todos os stateblocks. Esse método deve ser chamado sempre que um dispositivo for perdido ou antes de redefinir um dispositivo.'
 ms.assetid: 8962236d-4801-46a3-9944-a7c4ad762882
 title: 'Método ID3DXRenderToSurface:: OnLostDevice (D3dx9core. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 18e759fb12cd13c30cf3318b7208f87f824ab9cf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 772b678dc4260954c2e03c13d7259565cd896bdc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298815"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093104"
 ---
 # <a name="id3dxrendertosurfaceonlostdevice-method"></a>Método ID3DXRenderToSurface:: OnLostDevice
 
@@ -38,7 +38,7 @@ HRESULT OnLostDevice();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ Esse método deve ser chamado sempre que o dispositivo for perdido ou antes que 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

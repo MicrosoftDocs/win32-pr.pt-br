@@ -1,5 +1,5 @@
 ---
-description: 'O método EnumMediaTypes enumera os tipos de mídia preferenciais do PIN. Esse método implementa o método IPin:: EnumMediaTypes.'
+description: 'Método CTransInPlaceInputPin. EnumMediaTypes – o método EnumMediaTypes enumera os tipos de mídia preferenciais do PIN. Esse método implementa o método IPin:: EnumMediaTypes.'
 ms.assetid: 0c28b4b0-a45f-400f-a6d7-7668458f9642
 title: Método CTransInPlaceInputPin. EnumMediaTypes (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ffa634fa695eb0007b49fc1c36c730c7fbde361b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f9e05d0e9db50cabc700da7b3803c1606efab78
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752481"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094754"
 ---
 # <a name="ctransinplaceinputpinenummediatypes-method"></a>Método CTransInPlaceInputPin. EnumMediaTypes
 
@@ -49,7 +49,7 @@ Recebe um ponteiro para a interface [**IEnumMediaTypes**](/windows/desktop/api/S
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                           | Descrição                                 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>                         |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Memória insuficiente.<br/>             |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>             | Ponteiro **nulo** .<br/>                |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O pino de saída não está conectado.<br/> |
@@ -81,7 +81,7 @@ Esse método retorna a interface **IEnumMediaTypes** do pino de entrada downstre
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

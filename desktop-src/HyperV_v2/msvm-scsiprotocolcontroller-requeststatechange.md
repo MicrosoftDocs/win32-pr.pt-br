@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_SCSIProtocolController-solicita uma alteração de estado.
 ms.assetid: 464f3c85-55c7-4a43-ab78-bfe140a21fc4
 title: Método RequestStateChange da classe Msvm_SCSIProtocolController
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fdf1b4226568d0c61532e8a8b4e8a768e447cb55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd8f5be7b8c3e61f18763061a81eb36164b34633
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172347"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118744"
 ---
 # <a name="requeststatechange-method-of-the-msvm_scsiprotocolcontroller-class"></a>Método RequestStateChange da classe Msvm \_ SCSIProtocolController
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

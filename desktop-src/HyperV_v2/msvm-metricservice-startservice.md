@@ -1,5 +1,5 @@
 ---
-description: Inicia o serviço.
+description: Método StartService da classe Msvm_MetricService – inicia o serviço.
 ms.assetid: 8ac863bc-d8a0-40dc-a4b6-1067045887d8
 title: Método StartService da classe Msvm_MetricService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5dd42faa0fb4ae5e7c7536dd5baa2522b094f70f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2eed809d164b916b518e848ab889a7fe00b62b7f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297458"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118834"
 ---
 # <a name="startservice-method-of-the-msvm_metricservice-class"></a>Método StartService da classe Msvm \_ MetricService
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

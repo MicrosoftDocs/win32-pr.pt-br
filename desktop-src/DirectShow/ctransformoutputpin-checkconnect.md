@@ -1,5 +1,5 @@
 ---
-description: O método CheckConnect determina se uma conexão de PIN é adequada.
+description: Método CTransformOutputPin. CheckConnect – o método CheckConnect determina se uma conexão de PIN é adequada.
 ms.assetid: 3dae5c6d-720e-4445-b601-3bdfe32f4c21
 title: Método CTransformOutputPin. CheckConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b9a20eb8d3e20679cb8805d3a1cd8e167ef0bfd5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 190acd2fbab5206b114b57719d350e3ad5eac0c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757637"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094944"
 ---
 # <a name="ctransformoutputpincheckconnect-method"></a>Método CTransformOutputPin. CheckConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                  | Descrição                                         |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Sucesso.<br/>                                 |
 | <dl> <dt>**E \_ inesperado**</dt> </dl> | O pino de entrada do filtro não está conectado.<br/> |
 
 

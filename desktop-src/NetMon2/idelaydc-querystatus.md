@@ -1,5 +1,5 @@
 ---
-description: O método QueryStatus recupera o status do NPP.
+description: 'Método IDelaydC:: QueryStatus – o método QueryStatus recupera o status do NPP.'
 ms.assetid: b035d495-a078-4436-9501-0a30fbfa7268
 title: 'Método IDelaydC:: QueryStatus (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: cff92dfec95555076f9edba5a1b591f0ef905c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13d1e34b57302d263b81ed64df0b136dc01177b2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780201"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118454"
 ---
 # <a name="idelaydcquerystatus-method"></a>Método IDelaydC:: QueryStatus
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [NETWORKSTATUS](networkstatus.md) retornada que indi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -82,7 +82,7 @@ Antes de chamar esse método, você deve alocar a memória necessária para a es
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

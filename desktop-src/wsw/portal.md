@@ -1,15 +1,15 @@
 ---
 title: API de serviços Web do Windows
-description: .
+description: API de serviços Web do Windows
 ms.assetid: 9357786c-1992-4e28-ac75-c2dfda1df7f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5021218d06ee26a4473aa5631f2ec53280bcc7d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dbbe7d82f94a0468efcb8164551aa994febc83e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159275"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083154"
 ---
 # <a name="windows-web-services-api"></a>API de serviços Web do Windows
 

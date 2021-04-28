@@ -1,5 +1,5 @@
 ---
-description: Normaliza os coeficientes de plano para que o plano normal tenha comprimento de unidade.
+description: Função D3DXPlaneNormalize (D3DX10Math. h)-normaliza os coeficientes de plano para que o plano normal tenha comprimento de unidade.
 ms.assetid: 52ae36a7-e37b-457a-9832-e62900a85bde
 title: Função D3DXPlaneNormalize (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 44d5e9d810653b2cdae233dec803383c74563d08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8b3499297a008b0d8f5dc705080bbd1d5bbe3af4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791068"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103304"
 ---
 # <a name="d3dxplanenormalize-function-d3dx10mathh"></a>Função D3DXPlaneNormalize (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de D3DXPLANE de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
@@ -82,7 +82,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

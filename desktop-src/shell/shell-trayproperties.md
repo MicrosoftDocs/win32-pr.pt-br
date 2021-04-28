@@ -1,5 +1,5 @@
 ---
-description: Exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
+description: Método Shell. Trayproperties – exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
 ms.assetid: 0d82d847-9e6f-461e-b938-fe8fd49a636f
 title: Método Shell. Trayproperties (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: da3fbfdb2b6aa2517b275041856920c6b2cd1bb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e09f6833fbf07c99fdbce9c02b020bcbb5361408
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968163"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104094"
 ---
 # <a name="shelltrayproperties-method"></a>Método Shell. Trayproperties
 

@@ -1,5 +1,5 @@
 ---
-description: Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu iniciar e selecionar Ejetar PC se o seu computador oferecer suporte a esse comando.
+description: Método Shell. EjectPC – ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu iniciar e selecionar Ejetar PC se o seu computador oferecer suporte a esse comando.
 ms.assetid: eaba3dce-8fea-453f-90c2-4a9b5cb05ecc
 title: Método Shell. EjectPC (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 355d75b2ffaca9c9f90e66fbc535333a84bfa45d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ec08aaa82d2f752fa06537434adede86b9d5a3a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967989"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104344"
 ---
 # <a name="shellejectpc-method"></a>Método Shell. EjectPC
 
@@ -45,7 +45,7 @@ Shell.EjectPC()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

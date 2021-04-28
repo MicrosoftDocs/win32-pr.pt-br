@@ -1,5 +1,5 @@
 ---
-description: A direção de espaço mundial para o raio atual.
+description: WorldRayDirection-a direção de espaço mundial para o raio atual.
 ms.assetid: ''
 title: WorldRayDirection
 ms.localizationpriority: low
@@ -12,12 +12,12 @@ api_name:
 - WorldRayDirection
 api_type:
 - NA
-ms.openlocfilehash: 508e24d73c0336f7615c9eca3d1da35cfcce9514
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9d38ab75d0f0708f70624284483a0222eadf9591
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757344"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105284"
 ---
 # <a name="worldraydirection"></a>WorldRayDirection
 
@@ -45,7 +45,7 @@ Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

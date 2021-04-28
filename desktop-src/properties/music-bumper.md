@@ -1,15 +1,15 @@
 ---
-description: .
+description: Música
 ms.assetid: affb4d7a-b8ef-432c-bcf4-18d90424f9b8
 title: Música
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93156aa787ff0f3f9c933704fd6046b10f35be57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf318d63ca2c741d5e5e75edf72b7d022e06cdfc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751359"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105004"
 ---
 # <a name="music"></a>Música
 

@@ -1,15 +1,15 @@
 ---
 title: Funções de informações de versão
-description: .
+description: Funções de informações de versão
 ms.assetid: 6f902f76-2faf-4a22-86ca-8661eaae88d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e0a5a000d4da5c6a5bf3d83d2c641ade3e276fc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5360d2d6edcf38987f2b5878c2c024b1c07fe2be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636766"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092534"
 ---
 # <a name="version-information-functions"></a>Funções de informações de versão
 
@@ -24,9 +24,9 @@ ms.locfileid: "103636766"
 -   [**VerLanguageName**](/windows/desktop/api/Winver/nf-winver-verlanguagenamea)
 -   [**VerQueryValue**](/windows/desktop/api/Winver/nf-winver-verqueryvaluea)
 
- 
+ 
 
- 
+ 
 
 
 

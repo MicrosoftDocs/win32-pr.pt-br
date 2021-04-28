@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de vídeo.
+description: Classe SystemConfig_V0_Video-essa classe é a classe de tipo de evento para eventos de configuração de vídeo.
 ms.assetid: 06aab3a3-a55e-4eb8-897a-2ad8349e5900
 title: Classe SystemConfig_V0_Video
 ms.topic: reference
@@ -23,12 +23,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b840e3c06e74f8acbd1e43550559385e78c9a638
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94fb9e50344cfbdde4be67815b80e4074ab1a878
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967731"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105914"
 ---
 # <a name="systemconfig_v0_video-class"></a>\_Classe de \_ vídeo SystemConfig V0
 
@@ -148,7 +148,7 @@ Nome do chip do conversor digital para analógico (DAC) do adaptador.
 
 </dd> <dt>
 
-**DeviceId**
+**deviceId**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: matriz **char16**
@@ -270,7 +270,7 @@ Número atual de pixels verticais.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Classe TcpIp_V1-essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: f43ef400-e4e5-4cf3-b7a9-437f9a88e6ca
 title: Classe TcpIp_V1
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7bbebdbe80de38c2636d7010e057269901a55637
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3f10683708f190b9888ea0b1eadc116d32bdada
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967570"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105734"
 ---
 # <a name="tcpip_v1-class"></a>\_Classe tcpip v1
 
@@ -49,7 +49,7 @@ A classe **tcpip \_ v1** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

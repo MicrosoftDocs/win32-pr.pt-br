@@ -1,5 +1,5 @@
 ---
-description: 'O método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
+description: 'Método CBaseInputPin. Notify – o método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
 ms.assetid: 76124321-0d2d-4fee-a08a-4db23078e8df
 title: Método CBaseInputPin. Notify (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5ae7ca47c5adc11c87a739e8736ba327dc0b65f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 610888193762618d427a0329a27d3019bd625e69
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764583"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119994"
 ---
 # <a name="cbaseinputpinnotify-method"></a>Método CBaseInputPin. Notify
 
@@ -57,7 +57,7 @@ Estrutura de [**qualidade**](/windows/win32/api/strmif/ns-strmif-quality) que co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -76,7 +76,7 @@ Os filtros normalmente passam mensagens de controle de qualidade para um pino de
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

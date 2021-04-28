@@ -1,5 +1,5 @@
 ---
-description: Habilita e desabilita a coleção de métricas.
+description: Método ControlMetrics da classe CIM_MetricService – habilita e desabilita a coleção de métricas.
 ms.assetid: afb90863-e70a-46e5-b1b7-d959dcacc306
 title: Método ControlMetrics da classe CIM_MetricService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 60a7d0b34227594cf7146a988aa7e0d232f2d6cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19e732e50f8c367463e7f528a520a736117999b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169737"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090864"
 ---
 # <a name="controlmetrics-method-of-the-cim_metricservice-class"></a>Método ControlMetrics da \_ classe METRICSERVICE CIM
 
@@ -97,7 +97,7 @@ Indica a operação desejada a ser executada nas métricas.
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
@@ -132,7 +132,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

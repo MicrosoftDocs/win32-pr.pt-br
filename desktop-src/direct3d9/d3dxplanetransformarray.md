@@ -1,5 +1,5 @@
 ---
-description: Transforma uma matriz de planos por uma matriz. Os vetores que descrevem cada plano devem ser normalizados.
+description: Função D3DXPlaneTransformArray (D3dx9math. h) – transforma uma matriz de planos por uma matriz. Os vetores que descrevem cada plano devem ser normalizados.
 ms.assetid: e82e830b-efbb-4bdc-b370-7bfa4326a669
 title: Função D3DXPlaneTransformArray (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a9a213b17aca9999ef0028fdceb4bb4321d47660
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bdbc845eda69d22f6e7097131f71b074a9b53985
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105750890"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094124"
 ---
 # <a name="d3dxplanetransformarray-function-d3dx9mathh"></a>Função D3DXPlaneTransformArray (D3dx9math. h)
 
@@ -99,7 +99,7 @@ O número de planos para transformar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
@@ -146,7 +146,7 @@ O parâmetro *PM* contém a transpoção inversa da matriz de transformação. A
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

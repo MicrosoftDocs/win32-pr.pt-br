@@ -1,5 +1,5 @@
 ---
-description: O método GetTypeInfo recupera as informações de tipo para o objeto, que pode ser usado para obter as informações de tipo de uma interface.
+description: Método CBaseDispatch. GetTypeInfo – o método GetTypeInfo recupera as informações de tipo para o objeto, que pode ser usado para obter as informações de tipo de uma interface.
 ms.assetid: aa06b97c-541b-44fc-bdef-97fd1f014e85
 title: Método CBaseDispatch. GetTypeInfo (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1f63d79327d2f2bf2a60f06e0290aa34891e78ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9b1e21133b4fa561c743fefc6282c777b444e6f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750683"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120114"
 ---
 # <a name="cbasedispatchgettypeinfo-method"></a>Método CBaseDispatch. GetTypeInfo
 
@@ -73,7 +73,7 @@ Endereço de uma variável que recebe um ponteiro **ITypeInfo** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -81,7 +81,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                             | Descrição                                    |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                    | Êxito.<br/>                            |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Sucesso.<br/>                            |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>               | Argumento de ponteiro **nulo** .<br/>          |
 | <dl> <dt>**Digite \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | O parâmetro *itinfo* não é zero.<br/> |
 
@@ -104,7 +104,7 @@ Esse método se comporta como o método **IDispatch:: GetTypeInfo** . No entanto
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

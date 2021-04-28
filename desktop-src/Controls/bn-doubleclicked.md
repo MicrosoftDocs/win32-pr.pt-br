@@ -1,6 +1,6 @@
 ---
 title: Código de notificação BN_DOUBLECLICKED (WinUser. h)
-description: Enviado quando o usuário clica duas vezes em um botão.
+description: BN_DOUBLECLICKED código de notificação-enviado quando o usuário clica duas vezes em um botão.
 ms.assetid: 2fd7363a-5a02-453c-bfab-df5cbf8e42a5
 keywords:
 - BN_DOUBLECLICKED de código de notificação controles do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 018df4387b026d68e3f4e9a6c259fb19efd4a0f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64a11a4dec91a7a2f1d200c4c86c6989d846604a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824272"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104184"
 ---
 # <a name="bn_doubleclicked-notification-code"></a>Código de notificação do bilhão \_ doubleclickd
 

@@ -1,5 +1,5 @@
 ---
-description: Calcula o produto transpodo de duas matrizes.
+description: Função D3DXMatrixMultiplyTranspose (D3DX10Math. h) – calcula o produto transpodo de duas matrizes.
 ms.assetid: 3db4138c-407c-47b5-b8b9-04af8771e98e
 title: Função D3DXMatrixMultiplyTranspose (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 187912a4117ab502ea7b0b1b3fc1ea105ecbc3e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fcf3d5578aa6e2ad13bd3f91dfd2206d6eaf0b13
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765166"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103413"
 ---
 # <a name="d3dxmatrixmultiplytranspose-function-d3dx10mathh"></a>Função D3DXMatrixMultiplyTranspose (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para uma estrutura de D3DXMATRIX de origem (lado direito).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -94,7 +94,7 @@ Essa função é útil para definir matrizes como constantes para sombreadores d
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

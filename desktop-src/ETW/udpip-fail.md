@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de falha de TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Classe UdpIp_Fail-essa classe é a classe de tipo de evento para eventos de falha de TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 552e63ef-70e4-4bc4-be33-bd77bd5acd61
 title: Classe UdpIp_Fail
 ms.topic: reference
@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: aef0194d296395501500022bf4cae8b9c8a8f188
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f923f26e1371d11e27bfd58bcb69c053bfb5f1a3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968238"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105504"
 ---
 # <a name="udpip_fail-class"></a>\_Classe UdpIp Fail
 
@@ -118,7 +118,7 @@ Identifica o protocolo. Pode ser um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera o objeto de erro para o trabalho, se houver um.
+description: 'Método Msvm_CopyFileToGuestJob:: GetError – recupera o objeto de erro para o trabalho, se existir um.'
 ms.assetid: 478E9170-A523-4CE1-BD97-57D713FAF71B
 title: 'Método Msvm_CopyFileToGuestJob:: GetError'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a0a89feab4e78ba3703e117972598c4de5f70310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7cecaf7254788ae064ca42f2ae0c26e8ad83d7e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787111"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119364"
 ---
 # <a name="msvm_copyfiletoguestjobgeterror-method"></a>\_Método Msvm CopyFileToGuestJob:: GetError
 
@@ -46,7 +46,7 @@ Se o status operacional do trabalho não for 2 (OK), esse método retornará uma
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -102,7 +102,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

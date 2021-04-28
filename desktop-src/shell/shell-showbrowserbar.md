@@ -1,5 +1,5 @@
 ---
-description: Exibe uma barra de navegador.
+description: Método Shell. ShowBrowserBar – exibe uma barra de navegador.
 ms.assetid: 203636D2-54D3-4163-B9AC-39213D6F4203
 title: Método Shell. ShowBrowserBar (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d112399e62825714b4c060aeddcb8618ff73d478
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d19cd5b98ce39470860cc481ab05e4bb41adc9a4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967952"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083720"
 ---
 # <a name="shellshowbrowserbar-method"></a>Método Shell. ShowBrowserBar
 
@@ -69,19 +69,19 @@ Defina como **true** para mostrar a barra de navegador ou **false** para ocultá
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 
@@ -94,7 +94,7 @@ Você pode exibir uma das barras padrão do Explorer definindo o parâmetro *sCL
 | Favoritos    | {EFA24E61-B078-11d0-89E4-00C04FC9E26E} |
 | Pastas      | {EFA24E64-B078-11d0-89E4-00C04FC9E26E} |
 | Histórico      | {EFA24E62-B078-11d0-89E4-00C04FC9E26E} |
-| Pesquisar       | {30D02401-6A81-11d0-8274-00C04FD5AE38} |
+| Search       | {30D02401-6A81-11d0-8274-00C04FD5AE38} |
 
 
 

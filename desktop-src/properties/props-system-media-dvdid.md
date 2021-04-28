@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. DVDID
 ms.assetid: 2de30c3a-f982-4a65-bb25-a76b99d9ee13
 title: System. Media. DVDID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 337d7017815edc9be4a036d477b9ad112a9890ae
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2fe034244326c12c9fb4f9f6f926c5647487a751
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297910"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092124"
 ---
 # <a name="systemmediadvdid"></a>System. Media. DVDID
 

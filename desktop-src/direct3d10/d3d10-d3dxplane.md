@@ -1,5 +1,5 @@
 ---
-description: Descreve um plano.
+description: Estrutura D3DXPLANE (D3DX10Math. h) – descreve um plano.
 ms.assetid: c6da7343-a4f3-4cac-855b-14bd70c0d3c2
 title: Estrutura D3DXPLANE (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 9949aec16e90a53e01e536255c20f442052bb98b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 440246fb47a851f9f5339c72a484a2cb59e8f662
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298780"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103324"
 ---
 # <a name="d3dxplane-structure-d3dx10mathh"></a>Estrutura D3DXPLANE (D3DX10Math. h)
 
@@ -100,7 +100,7 @@ Os membros da estrutura **D3DXPLANE** assumem a forma da equação de plano gera
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

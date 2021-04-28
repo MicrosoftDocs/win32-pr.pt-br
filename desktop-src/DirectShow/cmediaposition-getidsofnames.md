@@ -1,5 +1,5 @@
 ---
-description: O método GetIDsOfNames mapeia um conjunto de nomes para um conjunto correspondente de DISPIDs.
+description: Método CMediaPosition. GetIDsOfNames – o método GetIDsOfNames mapeia um conjunto de nomes para um conjunto correspondente de DISPIDs.
 ms.assetid: 4d3780ff-905f-4166-86d4-32395090b5cb
 title: Método CMediaPosition. GetIDsOfNames (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc2c7eee4304bb32ac1af2759bc2f094aca1d592
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26a348e58fa84aa4134ce9f2ea756874b9ce2724
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789974"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095524"
 ---
 # <a name="cmediapositiongetidsofnames-method"></a>Método CMediaPosition. GetIDsOfNames
 
@@ -81,7 +81,7 @@ Ponteiro para uma matriz que recebe os DISPIDs. Cada elemento de recebe um ident
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -89,7 +89,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                         | Descrição                                         |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                | Êxito.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Sucesso.<br/>                                 |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Memória insuficiente.<br/>                     |
 | <dl> <dt>**Não receber \_ E não \_ conhecido**</dt> </dl> | Um ou mais dos nomes não eram conhecidos.<br/> |
 
@@ -108,7 +108,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

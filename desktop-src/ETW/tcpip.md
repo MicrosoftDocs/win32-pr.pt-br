@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Classe TcpIp-essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: f9d6ea8f-c777-4747-89f4-f389c6eeac35
 title: Classe TcpIp
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6488ece2fd8df0670455ceea25560835c352b83e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abcd805b417451adf2122e7baf3310be101a35ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967569"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105724"
 ---
 # <a name="tcpip-class"></a>Classe TcpIp
 
@@ -83,7 +83,7 @@ Você pode rastrear eventos de rede para um processo de origem e de destino usan
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

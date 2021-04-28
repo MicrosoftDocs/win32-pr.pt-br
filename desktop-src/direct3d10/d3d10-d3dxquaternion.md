@@ -1,5 +1,5 @@
 ---
-description: Descreve um Quaternion.
+description: Estrutura D3DXQUATERNION (D3DX10Math. h) – descreve um Quaternion.
 ms.assetid: e6cb45b2-3132-4315-b02d-a3dfc444f8cc
 title: Estrutura D3DXQUATERNION (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 405e48c99d7298708af193016930a8defdf9d600
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dac880607cf482b409c407b43992747af4aa39a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298715"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103244"
 ---
 # <a name="d3dxquaternion-structure-d3dx10mathh"></a>Estrutura D3DXQUATERNION (D3DX10Math. h)
 
@@ -110,7 +110,7 @@ q.w = cos(theta/2)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

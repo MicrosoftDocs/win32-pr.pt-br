@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Registry_V1-essa classe é a classe pai para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 7ad92377-3fd7-47e0-b96e-bab530ea9d99
 title: Classe Registry_V1
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 320a2bce9213228be4ff5c1880d884ee9622b68c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ef88f5bd46af116b0c04e24a3c6edd39afbcdc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967465"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106144"
 ---
 # <a name="registry_v1-class"></a>Classe do registro \_ v1
 
@@ -77,7 +77,7 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

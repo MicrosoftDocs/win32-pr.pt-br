@@ -1,5 +1,5 @@
 ---
-description: O método reset solicita uma redefinição do dispositivo lógico. Esse método é herdado do \_ LOGICALDEVICE CIM.
+description: Método Reset da classe CIM_DiskPartition – o método reset solicita uma redefinição do dispositivo lógico. Esse método é herdado do \_ LOGICALDEVICE CIM.
 ms.assetid: 874f8eb4-784a-41ab-9c58-9e48486a7f71
 ms.tgt_platform: multiple
 title: Método Reset da classe CIM_DiskPartition
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 236a8c018b584fbc2d5ef1d13b0429d946b868fe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cce77ce076eb17132be6ed6908a49d1fcfc77f21
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163934"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091004"
 ---
 # <a name="reset-method-of-the-cim_diskpartition-class"></a>Método Reset da classe CIM \_ DiskPartition
 
@@ -43,7 +43,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 
@@ -67,7 +67,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

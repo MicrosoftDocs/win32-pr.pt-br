@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de energia. A sintaxe a seguir é simplificada do código MOF.
+description: Classe SystemConfig_V0_Power-essa classe é a classe de tipo de evento para eventos de configuração de energia. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: b3391435-dac0-4c48-b788-eb4d4a7aa635
 title: Classe SystemConfig_V0_Power
 ms.topic: reference
@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e42af68ad12857d65d776b7a73794d2d13b2b48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967379"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105934"
 ---
 # <a name="systemconfig_v0_power-class"></a>\_Classe de \_ energia SystemConfig V0
 
@@ -201,7 +201,7 @@ Verdadeiro indica que o sistema dá suporte ao estado de suspensão s5.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

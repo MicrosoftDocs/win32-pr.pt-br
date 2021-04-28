@@ -1,5 +1,5 @@
 ---
-description: Determina o produto da matriz atual e a matriz de conversão computada determinada pelos fatores especificados (x, y e z).
+description: 'Método ID3DXMATRIXStack:: translate (D3dx9math. h) – determina o produto da matriz atual e a matriz de conversão computada determinada pelos fatores especificados (x, y e z).'
 ms.assetid: e0ac72a2-9970-433e-9026-aa79edc8261c
 title: 'Método ID3DXMATRIXStack:: translate (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 228b4302a512e96d5c009edcb3f0b673ee61e047
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7fadad95e8e72691a0e030ed89eedc745de2be43
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105811635"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093334"
 ---
 # <a name="id3dxmatrixstacktranslate-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: translate (D3dx9math. h)
 
@@ -69,7 +69,7 @@ O fator de conversão na direção z.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

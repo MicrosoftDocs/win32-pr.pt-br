@@ -1,5 +1,5 @@
 ---
-description: Calcula o exponencial.
+description: Função D3DXQuaternionExp (D3DX10Math. h) – calcula o exponencial.
 ms.assetid: bd70c432-ac61-4c38-b10b-3b103e49ead8
 title: Função D3DXQuaternionExp (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d00292cc073679e3e90c2470630ba1851d0d3cd8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7c022b9df4302683a184b4fc8329561b22d341d5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664047"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103214"
 ---
 # <a name="d3dxquaternionexp-function-d3dx10mathh"></a>Função D3DXQuaternionExp (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de D3DXQUATERNION de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
@@ -99,7 +99,7 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

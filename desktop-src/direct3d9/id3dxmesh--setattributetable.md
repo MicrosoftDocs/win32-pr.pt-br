@@ -1,5 +1,5 @@
 ---
-description: Define a tabela de atributos para uma malha e o número de entradas armazenadas na tabela.
+description: 'Método ID3DXMesh:: SetAttributeTable – define a tabela de atributos para uma malha e o número de entradas armazenadas na tabela.'
 ms.assetid: 22d46708-cffd-48da-bdad-8a43f9076356
 title: 'Método ID3DXMesh:: SetAttributeTable (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 17ae3458bffd05114415a92538a8ce8ef2cc847e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4cdb503e934ca00b41482601b59266eee750365
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105789377"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093344"
 ---
 # <a name="id3dxmeshsetattributetable-method"></a>Método ID3DXMesh:: SetAttributeTable
 
@@ -59,7 +59,7 @@ Número de atributos na tabela de atributos de malha.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -80,7 +80,7 @@ Se um aplicativo acompanhar as informações em uma tabela de atributos e reorga
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

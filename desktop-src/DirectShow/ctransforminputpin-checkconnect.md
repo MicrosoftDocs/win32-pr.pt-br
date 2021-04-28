@@ -1,5 +1,5 @@
 ---
-description: O método CheckConnect determina se uma conexão de PIN é adequada.
+description: Método CTransformInputPin. CheckConnect – o método CheckConnect determina se uma conexão de PIN é adequada.
 ms.assetid: b8ace40d-31f5-49b0-a4cd-6ece0f883d96
 title: Método CTransformInputPin. CheckConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e10c174a4e295576cfa9ce902faeac889f5a6a9b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3e981254677c2e0a361a0a21f125f734ff1403db
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751675"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095084"
 ---
 # <a name="ctransforminputpincheckconnect-method"></a>Método CTransformInputPin. CheckConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                               | Descrição                    |
 |-----------------------------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                      | Sucesso<br/>             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                      | Êxito<br/>             |
 | <dl> <dt>**VFW \_ E \_ direção inválida \_**</dt> </dl> | Direção do PIN incorreta<br/> |
 
 
