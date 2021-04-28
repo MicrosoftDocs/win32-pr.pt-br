@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CAMSchedule. ~ CAMSchedule destruidor-método Destruitor.
 ms.assetid: e92c040a-54af-4c6d-b7f0-0700fa44cbd8
 title: CAMSchedule. ~ CAMSchedule Destruitor (Dsschedule. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0099d4bf040b30f1963562a0141ce96d92c8096
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f262c8538763dc4d0de3784bdf6523d905a2eac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758885"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096514"
 ---
 # <a name="camschedulecamschedule-destructor"></a>Destruidor CAMSchedule. ~ CAMSchedule
 
 Método destruidor.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ Método destruidor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

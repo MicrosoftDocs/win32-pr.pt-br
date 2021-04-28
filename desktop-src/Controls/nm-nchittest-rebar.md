@@ -1,6 +1,6 @@
 ---
 title: Código de notificação do NM_NCHITTEST (rebar) (commctrl. h)
-description: Enviado por um controle rebar quando o controle recebe uma mensagem de NCHITTEST do WM \_ . Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+description: Código de notificação de NM_NCHITTEST (rebar) – enviado por um controle rebar quando o controle recebe uma mensagem de NCHITTEST do WM \_ . Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: b345d83e-682d-4067-a783-689d64f9b7bc
 keywords:
 - Controles do Windows de código de notificação de NM_NCHITTEST (rebar)
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fb4568cad87017d9fff94deb60583ac0b4c1d0e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7935f1b3e990db55518c9d22537e8fb6db97962
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086028"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112324"
 ---
 # <a name="nm_nchittest-rebar-notification-code"></a>\_Código de notificação do NCHITTEST nm (rebar)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorne zero para permitir que o rebar execute o processamento padrão da mensagem de teste de clique ou retorne um dos valores de HT \* documentados em [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) para substituir o processamento de teste de clique padrão.
 

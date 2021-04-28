@@ -1,5 +1,5 @@
 ---
-description: Descreve os valores de cor.
+description: Estrutura D3DXCOLOR (D3DX10Math. h) – descreve os valores de cor.
 ms.assetid: bb5e36c8-4f24-41b5-84e7-3034e497721d
 title: Estrutura D3DXCOLOR (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 436a20fa8ed6f57062f268be2b71f7e350cb2854
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e919f86cebba1526908020881b73c01e02b7df3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105749707"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103554"
 ---
 # <a name="d3dxcolor-structure-d3dx10mathh"></a>Estrutura D3DXCOLOR (D3DX10Math. h)
 
@@ -96,7 +96,7 @@ Componente alfa da cor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

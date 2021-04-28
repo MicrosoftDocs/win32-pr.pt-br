@@ -1,5 +1,5 @@
 ---
-description: Exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
+description: Método DeleteEx da classe Win32_PageFile – exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
 ms.assetid: ea31f92a-94b9-4d4d-abd9-6c304ac5caee
 ms.tgt_platform: multiple
 title: Método DeleteEx da classe Win32_PageFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2f62875313f6be432ab191fc91bbac381627de3c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 34e27e80c3cfaea352ee97ad29aed0b7ca358546
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089113"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097044"
 ---
 # <a name="deleteex-method-of-the-win32_pagefile-class"></a>Método DeleteEx da classe de \_ arquivo de paginação Win32
 
@@ -57,7 +57,7 @@ Nomeia o arquivo ou diretório filho a ser usado como ponto de partida para **De
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o arquivo foi excluído com êxito e qualquer outro número para indicar um erro.
 
@@ -168,7 +168,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

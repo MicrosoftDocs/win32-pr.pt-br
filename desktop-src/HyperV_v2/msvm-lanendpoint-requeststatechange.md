@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_LANEndpoint-solicita uma alteração de estado.
 ms.assetid: 0ddc9e22-b73c-4ed5-a2e1-aa38f03c9ff2
 title: Método RequestStateChange da classe Msvm_LANEndpoint
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1d2617bdbc6e3a3aa2a3c9beda387aa26f6a90a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcb85d04c84ade9c65aea77e43eb669e95bdc117
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769342"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111684"
 ---
 # <a name="requeststatechange-method-of-the-msvm_lanendpoint-class"></a>Método RequestStateChange da classe Msvm \_ LANEndpoint
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

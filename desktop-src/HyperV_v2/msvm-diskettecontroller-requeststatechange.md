@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_DisketteController-solicita uma alteração de estado.
 ms.assetid: 389bf388-818c-4c04-a28e-50221d3965a6
 title: Método RequestStateChange da classe Msvm_DisketteController
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4c1d45d2170ddf32819f0625a3947e38341e5ae2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 015a823e0864f4a1d06dc01898157f46e25e327a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785456"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119184"
 ---
 # <a name="requeststatechange-method-of-the-msvm_diskettecontroller-class"></a>Método RequestStateChange da classe Msvm \_ DisketteController
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

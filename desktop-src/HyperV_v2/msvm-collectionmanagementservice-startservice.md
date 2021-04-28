@@ -1,5 +1,5 @@
 ---
-description: Interrompe o serviço.
+description: Método StartService da classe Msvm_CollectionManagementService – interrompe o serviço.
 ms.assetid: 0f9a015d-b895-496a-a4c6-2737c0742746
 title: Método StartService da classe Msvm_CollectionManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f76fa9e5069c2a9e19b83a8ab83136879c6657e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18f58ae22cee06c439b6238df4c2a147405f7aca
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778592"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112134"
 ---
 # <a name="startservice-method-of-the-msvm_collectionmanagementservice-class"></a>Método StartService da classe Msvm \_ CollectionManagementService
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 se for bem-sucedido; caso contrário, retornará um erro.
 
@@ -63,7 +63,7 @@ Retornará 0 se for bem-sucedido; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Modifica os dados de configuração para o serviço.
+description: Método ModifyServiceSettings da classe Msvm_TerminalService – modifica os dados de configuração para o serviço.
 ms.assetid: 76669180-fa95-4d6e-b89a-53e45da664c4
 title: Método ModifyServiceSettings da classe Msvm_TerminalService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c2d6550d8b15264bf9cef126239228494996d080
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 930b29c5c07c755b493a0aabad88ae776c0803e0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829360"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119324"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Método ModifyServiceSettings da \_ classe TerminalService Msvm
 
@@ -54,7 +54,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -113,7 +113,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

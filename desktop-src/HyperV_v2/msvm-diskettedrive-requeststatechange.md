@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_DisketteDrive-solicita uma alteração de estado.
 ms.assetid: 349081c0-65d8-470d-8d84-7c616c0f81b6
 title: Método RequestStateChange da classe Msvm_DisketteDrive
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 071da8decd4dc770c38439f336279f6fe4350a4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06d61557ca765721660937592f59667f5e6b3fc9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757813"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119164"
 ---
 # <a name="requeststatechange-method-of-the-msvm_diskettedrive-class"></a>Método RequestStateChange da classe Msvm \_ DisketteDrive
 
@@ -141,7 +141,7 @@ Se essa propriedade não contiver 0 ou NULL e a implementação não oferecer su
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -167,7 +167,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método GetPinCount recupera o número de Pins.
+description: Método CBaseFilter. GetPinCount – o método GetPinCount recupera o número de Pins.
 ms.assetid: 6cbeb123-d899-4f13-8b40-5666adec610f
 title: Método CBaseFilter. GetPinCount (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8da1cbc22a49b149bdccc36c3b854b44101b9bbc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0081b4cec45ed4cac5b4f0883032631983824cec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750682"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099784"
 ---
 # <a name="cbasefiltergetpincount-method"></a>Método CBaseFilter. GetPinCount
 
@@ -40,7 +40,7 @@ virtual int GetPinCount() = 0;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de Pins.
 
@@ -59,7 +59,7 @@ A classe derivada deve implementar esse método virtual puro. Retornar o número
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Remove as configurações de recursos virtuais de uma configuração de sistema virtual.
+description: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService-remove as configurações de recurso virtual de uma configuração de sistema virtual.
 ms.assetid: 7934a5e4-f54c-43fd-9ec3-d1fc1aad0acd
 title: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1f5b3ac1cc53f23d0d899a4c6b5d17408bca3b9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5c7daabcdcd732c3a5693664e1768ebf66668d6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661866"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112254"
 ---
 # <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM
 
@@ -56,7 +56,7 @@ Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
@@ -106,7 +106,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

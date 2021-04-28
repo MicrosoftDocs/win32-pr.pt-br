@@ -1,5 +1,5 @@
 ---
-description: A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+description: 'Método IMpeg2PsiParser:: GetCountOfPrograms – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
 ms.assetid: 282dd779-9aca-46e3-a791-cb9ea86f637d
 title: 'Método IMpeg2PsiParser:: GetCountOfPrograms'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e4f01b2a360465b9670b52547cff1ff4c312a705
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d6bfe698a45ea1cfe0a4bac6e65b839292bc1996
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825872"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119424"
 ---
 # <a name="impeg2psiparsergetcountofprograms-method"></a>Método IMpeg2PsiParser:: GetCountOfPrograms
 
@@ -47,7 +47,7 @@ Ponteiro para uma variável que recebe o número de programas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um valor HRESULT. Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
@@ -55,13 +55,13 @@ O método retorna um valor HRESULT. Os valores possíveis incluem, mas não se l
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

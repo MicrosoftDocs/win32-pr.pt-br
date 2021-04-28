@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Initialize.
+description: Função IWICFormatConverter_Initialize_Proxy function-proxy para o método Initialize.
 ms.assetid: 26112d52-95e2-4c67-83fc-cf5e28712730
 title: Função IWICFormatConverter_Initialize_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 6450c1a508507db73e44ef8b88b4f94970ac6004
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d70d852adc8f810438ce46dc30345e68fa27e0fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171154"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097154"
 ---
 # <a name="iwicformatconverter_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICFormatConverter \_
 
@@ -49,22 +49,22 @@ HRESULT IWICFormatConverter_Initialize_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) \** _
+Tipo: **[ **IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)\***
 
-Ponteiro para este objeto [_ *IWICFormatConverter* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) .
+Ponteiro para este objeto [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) .
 
 </dd> <dt>
 
 *pISource* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 O bitmap de entrada a ser convertido
 
 </dd> <dt>
 
-_dstFormat * \[ in\]
+*dstFormat* \[ no\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -85,13 +85,13 @@ O [**WICBitmapDitherType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapd
 *pIPalette* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
 A paleta a ser usada para conversão.
 
 </dd> <dt>
 
-_alphaThresholdPercent * \[ in\]
+*alphaThresholdPercent* \[ no\]
 </dt> <dd>
 
 Tipo: **duplo**
@@ -109,7 +109,7 @@ O tipo de tradução da paleta a ser usado para conversão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

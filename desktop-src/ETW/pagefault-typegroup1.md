@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de falha de página. A sintaxe a seguir é simplificada do código MOF.
+description: Classe PageFault_TypeGroup1-essa classe é a classe de tipo de evento para eventos de falha de página. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 59cb1091-af21-4fe6-87b8-17a262cc4467
 title: Classe PageFault_TypeGroup1
 ms.topic: reference
@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4bf1f49c909833d75af844c8f2f943a01b6a5d6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a69e74a086ecd594d83c932beea4fd7d62724db
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170261"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106404"
 ---
 # <a name="pagefault_typegroup1-class"></a>\_Classe falhadepágina TypeGroup1
 
@@ -97,7 +97,7 @@ Uma falha de página ocorre quando uma página procurada no cache de memória n�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

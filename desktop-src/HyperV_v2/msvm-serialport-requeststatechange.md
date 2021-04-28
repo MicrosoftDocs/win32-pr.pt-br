@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_SerialPort-solicita uma alteração de estado.
 ms.assetid: 8047c12d-f420-4406-885a-25342789dbb9
 title: Método RequestStateChange da classe Msvm_SerialPort
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 99b1b9bcda26b8137a294ece222508b198a09881
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc2636c26d3be7d1585354973e514d847f599e2a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759235"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118714"
 ---
 # <a name="requeststatechange-method-of-the-msvm_serialport-class"></a>Método RequestStateChange da \_ classe SerialPort Msvm
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

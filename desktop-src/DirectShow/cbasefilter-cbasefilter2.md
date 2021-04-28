@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Método de construtor de Construtor CBaseFilter. CBaseFilter (const TCHAR \* , LPUNKNOWN, CCritSec \* , REFCLSID).
 ms.assetid: b6433ec9-6710-4c2f-968f-00e0d9f8c7a5
 title: Construtor CBaseFilter. CBaseFilter (const TCHAR *, LPUNKNOWN, CCritSec*, REFCLSID) (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40ac48a1fd28b9b50a8f1fa9c698ea5db49d97b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b621bdb3f6a15ae950959a65eba8841bde399b81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748832"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099824"
 ---
 # <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-constructor"></a>Construtor CBaseFilter. CBaseFilter (const TCHAR \* , LPUNKNOWN, CCritSec \* , REFCLSID)
 
@@ -91,7 +91,7 @@ Para o objeto seção crítica, você normalmente faria um dos seguintes:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

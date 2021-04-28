@@ -1,5 +1,5 @@
 ---
-description: Remove o log de dados associado ao ponto de referência.
+description: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService – remove o log de dados associado ao ponto de referência.
 ms.assetid: 42242b76-9123-41a7-b8b1-82d2e827ea53
 title: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aec1ac249616c08c6abf1f156ad5a3416c8afaff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66a5cf068545f31f9919a9da60a1b09b32f78e4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811873"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119224"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Método RemoveAssociatedData da \_ classe CollectionReferencePointService Msvm
 
@@ -54,7 +54,7 @@ Se a operação for de longa execução, opcionalmente, um trabalho poderá ser 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso contrário, retorne um erro.
 
@@ -107,7 +107,7 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

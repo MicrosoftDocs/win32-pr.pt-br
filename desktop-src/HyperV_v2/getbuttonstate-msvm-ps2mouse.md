@@ -1,5 +1,5 @@
 ---
-description: Recupera o estado atual do botão de dispositivo especificado.
+description: Método getbuttonstate da classe Msvm_Ps2Mouse – recupera o estado atual do botão do dispositivo especificado.
 ms.assetid: 7772A3AC-1677-44A7-9E5E-D31E90988705
 title: Método getbuttonstate da classe Msvm_Ps2Mouse
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8bb0df6ad49f0d260d95c6f65e0f0f481b393dc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 160134a2ae48bb23dc525eeded70b483484e0b71
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758984"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112194"
 ---
 # <a name="getbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método getbuttonstate da classe Msvm \_ Ps2Mouse
 
@@ -58,7 +58,7 @@ O estado de inatividade atual do botão. Um valor **verdadeiro** significa que o
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -123,7 +123,7 @@ O acesso à classe [**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) pode ser restringido
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
