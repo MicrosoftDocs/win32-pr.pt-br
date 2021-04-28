@@ -1,5 +1,5 @@
 ---
-description: Obtém informações sobre um retorno de chamada específico no conjunto de animações.
+description: 'Método ID3DXKeyframedAnimationSet:: GetCallbackKey – Obtém informações sobre um retorno de chamada específico no conjunto de animações.'
 ms.assetid: a1d3ca96-2852-420a-aa5c-a434970e5523
 title: 'Método ID3DXKeyframedAnimationSet:: GetCallbackKey (D3dx9anim. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 95a3f5a97b84862a66d18b60a3776e183df36444
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f3ebbf93bd482a2259ffdaaf272c65b5e86d5270
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814062"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090314"
 ---
 # <a name="id3dxkeyframedanimationsetgetcallbackkey-method"></a>Método ID3DXKeyframedAnimationSet:: GetCallbackKey
 
@@ -59,7 +59,7 @@ Ponteiro para a [**função de retorno de chamada**](d3dxkey-callback.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -76,7 +76,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

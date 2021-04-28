@@ -1,6 +1,6 @@
 ---
 title: Método WebViewFolderContents. SelectItem (shldisp. h)
-description: Define o estado de seleção de um item na exibição.
+description: Método WebViewFolderContents. SelectItem – define o estado de seleção de um item na exibição.
 ms.assetid: c0e163ee-1951-476c-807a-781e26766d99
 keywords:
 - Recursos do ambiente Windows herdado do método SelectItem
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e491fb27db2d6e1e9b449be4aa2924684021539a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66e2d05c010199f05826df7ed4591e8c7c1723e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105765362"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102605"
 ---
 # <a name="webviewfoldercontentsselectitem-method"></a>Método WebViewFolderContents. SelectItem
 
@@ -46,9 +46,9 @@ WebViewFolderContents.SelectItem(
 *vItem* \[ no\]
 </dt> <dd>
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-O objeto [_ *FolderItem* *](../shell/folderitem.md) para o qual o estado de seleção será definido.
+O objeto [**FolderItem**](../shell/folderitem.md) para o qual o estado de seleção será definido.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Dê o foco ao item.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

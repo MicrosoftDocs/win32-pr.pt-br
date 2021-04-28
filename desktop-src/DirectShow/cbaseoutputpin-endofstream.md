@@ -1,5 +1,5 @@
 ---
-description: 'O método EndOfStream notifica o PIN de que nenhum dado adicional é esperado. Esse método implementa o método IPin:: EndOfStream.'
+description: 'Método CBaseOutputPin. EndOfStream – o método EndOfStream notifica o PIN de que nenhum dado adicional é esperado. Esse método implementa o método IPin:: EndOfStream.'
 ms.assetid: 5c3b5f90-4194-4d65-9f1a-55edf327e3b3
 title: Método CBaseOutputPin. EndOfStream (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e1cd903e811dbcd000ba202fc86c0fcb41bf221b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5f293b8026456618ad1196c491bce58cf481f07
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755365"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096144"
 ---
 # <a name="cbaseoutputpinendofstream-method"></a>Método CBaseOutputPin. EndOfStream
 
@@ -40,7 +40,7 @@ HRESULT EndOfStream();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna E \_ inesperado.
 
@@ -59,7 +59,7 @@ Esse método só deve ser chamado em Pins de entrada, portanto a implementação
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

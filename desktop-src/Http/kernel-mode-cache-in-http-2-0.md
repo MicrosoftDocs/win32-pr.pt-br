@@ -1,15 +1,15 @@
 ---
 title: Cache de modo kernel
-description: .
+description: Cache de modo kernel
 ms.assetid: f9a46ff4-779b-4b3a-b8f5-1ae10a3c0a61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9264535a58c033d66fd3fcc39988a292afc2a27f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83c409b00da03c0550899f5d26c4e6a0fa215118
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006058"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090884"
 ---
 # <a name="kernel-mode-cache"></a>Cache de modo kernel
 
@@ -33,12 +33,12 @@ Além das restrições na solicitação, a resposta também deve atender às seg
 
     ```
     HKEY_LOCAL_MACHINE
-       System
-          CurrentControlSet
-             Services
-                HTTP
-                   Parameters
-                      UriMaxUriBytes
+       System
+          CurrentControlSet
+             Services
+                HTTP
+                   Parameters
+                      UriMaxUriBytes
     ```
 
 -   A resposta inteira deve ser fornecida em uma única chamada para [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse).
@@ -48,9 +48,9 @@ Além das restrições na solicitação, a resposta também deve atender às seg
 
 Por padrão, o cache de resposta do modo kernel está habilitado. Se qualquer uma das condições para a solicitação ou resposta listada acima não for atendida, a resposta será enviada, mas não será armazenada em cache. Na API do servidor HTTP versão 2,0, [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse) inclui um parâmetro *pCachePolicy* opcional para passar a estrutura de [**\_ \_ política de cache http**](/windows/desktop/api/Http/ns-http-http_cache_policy) . Os aplicativos usam a estrutura de política de cache para configurar o cache.
 
- 
+ 
 
- 
+ 
 
 
 

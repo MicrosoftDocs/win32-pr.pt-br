@@ -1,5 +1,5 @@
 ---
-description: O método Copy copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
+description: Método Copy da classe CIM_DeviceFile – o método Copy copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
 ms.assetid: 6c1c6172-80a2-4779-903a-935f8c7091a5
 ms.tgt_platform: multiple
 title: Método Copy da classe CIM_DeviceFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc8bb7878f4967dbc58adf6163c92c0d2bd67713
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 09c6d0f9400a04cc6e5a8ed4bd49ec7075b3c190
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826444"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089794"
 ---
 # <a name="copy-method-of-the-cim_devicefile-class"></a>Método Copy da classe CIM \_ devicefile
 
@@ -56,7 +56,7 @@ Exemplo: "c: \\ temp \\ newdirectory"
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -65,7 +65,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Êxito.
+Sucesso.
 
 </dd> <dt>
 
@@ -173,7 +173,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

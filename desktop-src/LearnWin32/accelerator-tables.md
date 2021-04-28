@@ -1,15 +1,15 @@
 ---
 title: Tabelas do acelerador
-description: .
+description: Tabelas do acelerador
 ms.assetid: 4F2CFD7C-90D3-4C3F-9A42-05B915914EF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9929445809bee71f273b6bd2334e182de59edbfa
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2951ee99a31a977e0909de5639fa3110cea10e0b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007558"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090814"
 ---
 # <a name="accelerator-tables"></a>Tabelas do acelerador
 
@@ -48,7 +48,7 @@ A própria tabela do acelerador tem um identificador numérico, que identifica a
 
 
 
- 
+ 
 
 Primeiro, defina identificadores numéricos para a tabela e para os comandos do aplicativo. Esses valores são arbitrários. Você pode atribuir constantes simbólicas para os identificadores definindo-os em um arquivo de cabeçalho. Por exemplo:
 
@@ -161,6 +161,6 @@ Esse código pressupõe que `SetMode` é uma função definida pelo aplicativo p
 
 [Definindo a imagem do cursor](setting-the-cursor-image.md)
 
- 
+ 
 
- 
+ 

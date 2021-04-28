@@ -1,6 +1,6 @@
 ---
 title: Método GetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota)
-description: Retorna o descritor de segurança que controla o acesso ao serviço.
+description: Método GetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota) – retorna o descritor de segurança que controla o acesso ao serviço.
 ms.assetid: 9898091A-5BE2-42A0-BF81-13AB74696ACB
 ms.tgt_platform: multiple
 keywords:
@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf8dc271d5498163352af10bcb0b9c55e2e81fb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea5b8a9b945048f947aa273e1ccc1f4514469681
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918307"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090644"
 ---
 # <a name="getsecuritydescriptor-method-of-the-win32_service-class-remote-desktop-services"></a>Método GetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -52,7 +52,7 @@ O descritor de segurança associado ao serviço.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -275,7 +275,7 @@ Scope.Options.EnablePrivileges = True
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

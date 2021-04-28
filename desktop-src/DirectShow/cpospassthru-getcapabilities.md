@@ -1,5 +1,5 @@
 ---
-description: 'O método GetCapabilities recupera todos os recursos de busca do fluxo. Esse método implementa o método IMediaSeeking:: GetCapabilities.'
+description: 'Método CPosPassThru. GetCapabilities – o método GetCapabilities recupera todos os recursos de busca do fluxo. Esse método implementa o método IMediaSeeking:: GetCapabilities.'
 ms.assetid: c60c4f47-48de-47d0-9b87-589b84df842c
 title: Método CPosPassThru. GetCapabilities (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f896adbc1015cb34e6f9063cb5ebf73e5cdb441c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c21838d3df72d52255d0a2e35dd0b7d34ef55411
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751242"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085564"
 ---
 # <a name="cpospassthrugetcapabilities-method"></a>Método CPosPassThru. GetCapabilities
 
@@ -49,7 +49,7 @@ O ponteiro para uma variável que recebe uma combinação de bits bit a procurar
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **HRESULT** do PIN conectado.
 
@@ -64,7 +64,7 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

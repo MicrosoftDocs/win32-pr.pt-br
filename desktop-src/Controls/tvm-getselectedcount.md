@@ -1,25 +1,25 @@
 ---
 title: TVM_GETSELECTEDCOUNT mensagem
-description: Não implementado.
+description: Mensagem de TVM_GETSELECTEDCOUNT-não implementada.
 ms.assetid: 2920f473-522b-4750-82c0-05e9c3307063
 keywords:
 - Controles de TVM_GETSELECTEDCOUNT de mensagens do Windows
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cee41646a610a28ff4a1b7ea06046659fde51465
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c69aeec687b49e893110b89516ff3c884241496b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916711"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116554"
 ---
 # <a name="tvm_getselectedcount-message"></a>\_Mensagem TVM GETSELECTEDCOUNT
 
 Esta mensagem não está implementada.
 
- 
+ 
 
- 
+ 
 
 
 

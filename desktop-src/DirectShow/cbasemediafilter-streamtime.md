@@ -1,5 +1,5 @@
 ---
-description: O método streamtime recupera a hora atual do fluxo.
+description: Método CBaseMediaFilter. streamtime – o método streamtime recupera a hora atual do fluxo.
 ms.assetid: 2e1ff6f1-9815-4ee6-97e8-a5ab5f472b27
 title: Método CBaseMediaFilter. streamtime (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27ccc9c721c97742c09d043af4cca5d287747597
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a90bb7d97825c14f11c75dd42d696fa302f8e3d4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747833"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096244"
 ---
 # <a name="cbasemediafilterstreamtime-method"></a>Método CBaseMediaFilter. streamtime
 
@@ -49,7 +49,7 @@ Referência a um objeto [**CRefTime**](creftime.md) que recebe a hora atual do f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                      | Descrição                                 |
 |--------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>             | Êxito.<br/>                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>             | Sucesso.<br/>                         |
 | <dl> <dt>**VFW \_ E \_ sem \_ relógio**</dt> </dl> | Nenhum relógio de referência está disponível.<br/> |
 
 
@@ -79,7 +79,7 @@ O tempo de transmissão é definido como o tempo de referência atual (conforme 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

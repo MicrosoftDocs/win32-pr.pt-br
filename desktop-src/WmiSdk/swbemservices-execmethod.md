@@ -1,5 +1,5 @@
 ---
-description: Executa um método que é exportado por um provedor de método.
+description: SWbemServices.Exemétodo cMethod – executa um método que é exportado por um provedor de método.
 ms.assetid: 2637efdc-fde5-4a44-a41f-67e0fb0df19d
 ms.tgt_platform: multiple
 title: SWbemServices.Exemétodo cMethod (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: c95bc3b0fa85d7c682f9ffd2436439da9a05763f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 452c42c37e8dcb9f2b37b660b1f8899e587b5579
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011124"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103634"
 ---
 # <a name="swbemservicesexecmethod-method"></a>SWbemServices.Exemétodo cMethod
 
@@ -85,7 +85,7 @@ Normalmente, isso é indefinido. Caso contrário, esse é um objeto [**SWbemName
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, um objeto [**SWbemObject**](swbemobject.md) será retornado. O objeto retornado contém os parâmetros de saída e o valor de retorno para o método que está sendo executado.
 
@@ -229,7 +229,7 @@ End If
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: Alterações de layout e renderização
 ms.assetid: 58C76F70-DE7F-4AD8-8C8D-0333F781F764
 title: Alterações de layout e renderização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1f7ef4aff5d518815fca2d4b74bd9ffcb81a3e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c29f551efb1c2ad87d89a436188d8db4e65831b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772566"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116234"
 ---
 # <a name="rendering-and-layout-changes"></a>Alterações de layout e renderização
 

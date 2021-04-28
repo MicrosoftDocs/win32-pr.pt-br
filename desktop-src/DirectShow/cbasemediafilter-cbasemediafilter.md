@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CBaseMediaFilter. CBaseMediaFilter-método de construtor.
 ms.assetid: 91290f58-a77b-447f-aa2a-bbee067f5a98
 title: Construtor CBaseMediaFilter. CBaseMediaFilter (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8498e9da88804291fc5cdb900ff1dbda212e8b0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f123c7af29c6420de6004132180eba8dbf33fa72
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753362"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096314"
 ---
 # <a name="cbasemediafiltercbasemediafilter-constructor"></a>Construtor CBaseMediaFilter. CBaseMediaFilter
 
@@ -93,7 +93,7 @@ Caso contrário, você pode:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Representa uma coleção de objetos de extensão.
+description: Objeto NoticeNumbers – representa uma coleção de objetos de extensão.
 ms.assetid: b0d69df9-12c4-4872-b883-b029c4350502
 title: Objeto NoticeNumbers
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 58d954fdeef66d6d0e5eadb3086cb549b59e5669
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2bd6e653eabe9b25588fd29517ac94e0c878fdb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779356"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090754"
 ---
 # <a name="noticenumbers-object"></a>Objeto NoticeNumbers
 
@@ -49,7 +49,7 @@ O objeto **NoticeNumbers** tem essas propriedades.
 | Propriedade                                              | Tipo de acesso          | Descrição                                                                                                                                                                                                                     |
 |:------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](noticenumbers-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](noticenumbers-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos de [**extensão**](extension.md) na coleção.<br/>                                                                                                                                    |
+| [**Contagem**](noticenumbers-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos de [**extensão**](extension.md) na coleção.<br/>                                                                                                                                    |
 | [**Item**](noticenumbers-item.md)<br/>         | Somente leitura<br/> | Recupera o objeto de [**extensão**](extension.md) que representa o número de aviso indexado da coleção.<br/> Essa é a propriedade padrão.<br/>                                                            |
 
 

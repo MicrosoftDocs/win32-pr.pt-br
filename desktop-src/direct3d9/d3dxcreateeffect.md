@@ -1,5 +1,5 @@
 ---
-description: Crie um efeito a partir de uma descrição de efeito ASCII ou binário.
+description: Função D3DXCreateEffect – crie um efeito de uma descrição de efeito ASCII ou binário.
 ms.assetid: 1cbd91f2-3cda-4770-a3c5-b1e6702628d1
 title: Função D3DXCreateEffect (D3DX9Effect. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3d5ac013617368ba4d702815d79aa411ea2988b3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6821375dfc672d4937c335cf85dab12ba31b726c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762206"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115774"
 ---
 # <a name="d3dxcreateeffect-function"></a>Função D3DXCreateEffect
 
@@ -129,7 +129,7 @@ Retorna um buffer que contém uma lista de erros de compilação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -146,7 +146,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

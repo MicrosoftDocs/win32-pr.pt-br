@@ -1,15 +1,15 @@
 ---
-description: Aplica-se ao Windows Vista e posterior.
+description: Propriedade AM_RATE_ResetOnTimeDisc – aplica-se ao Windows Vista e posterior.
 ms.assetid: 3e342219-341e-49a2-9f8f-4188dd7bf719
 title: Propriedade AM_RATE_ResetOnTimeDisc (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d465329c2c8de1a66f04a830d183b8cba88c0728
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: e867bff1f344e80ffd06c9c40276515f2cd4920c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910244"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096604"
 ---
 # <a name="am_rate_resetontimedisc-property"></a>Propriedade de ResetOnTimeDisc da \_ taxa de am \_
 
@@ -49,7 +49,7 @@ Para obter mais informações, consulte [aprimoramentos de reprodução de DVD n
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

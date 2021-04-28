@@ -1,15 +1,15 @@
 ---
 title: O que é uma janela
-description: .
+description: O que é uma janela?
 ms.assetid: eef5e139-91f9-4d8b-9153-e178d7416d7e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fcbba817e3e4c9059340d0a67c7170f4583270c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8494738e3985f78930549f313cb2868b79b34f3b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365903"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103844"
 ---
 # <a name="what-is-a-window"></a>O que é uma janela?
 
@@ -77,6 +77,6 @@ Dependendo da sua tarefa, você pode medir as coordenadas em relação à tela, 
 
 [WinMain: o ponto de entrada do aplicativo](winmain--the-application-entry-point.md)
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CAMThread. ~ CAMThread destruidor-método Destruitor.
 ms.assetid: eed6c566-8a03-4a97-9d99-8e500ce2954c
 title: CAMThread. ~ CAMThread Destruitor (Wxutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b0b0a4dde858811a75347105b9fccd2f499c4faa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 84a40205fc93677f20256676ad09a18357d46acb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749273"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096434"
 ---
 # <a name="camthreadcamthread-destructor"></a>Destruidor CAMThread. ~ CAMThread
 
@@ -51,7 +51,7 @@ O destruidor chama o método [**CAMThread:: Close**](camthread-close.md) , que a
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

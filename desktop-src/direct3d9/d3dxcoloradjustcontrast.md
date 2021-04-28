@@ -1,5 +1,5 @@
 ---
-description: Ajusta o valor de contraste de uma cor.
+description: Função D3DXColorAdjustContrast (D3dx9math. h) – ajusta o valor de contraste de uma cor.
 ms.assetid: be49c9c7-b625-4cbc-bd63-1d5766ae2dbb
 title: Função D3DXColorAdjustContrast (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c6765f442b6a2550ba262073f61c876e3b3ae1fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9dc9bb79d1ebbe536661347d76d13846dead6aa8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105766344"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115874"
 ---
 # <a name="d3dxcoloradjustcontrast-function-d3dx9mathh"></a>Função D3DXColorAdjustContrast (D3dx9math. h)
 
@@ -69,7 +69,7 @@ Valor de contraste. Esse parâmetro interpola linearmente entre 50% de cinza e a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
@@ -103,7 +103,7 @@ Se c for maior que 0 e menor que 1, o contraste será diminuído. Se c for maior
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

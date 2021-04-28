@@ -1,5 +1,5 @@
 ---
-description: Recupera o erro.
+description: Método GetError da classe Msvm_StorageJob – recupera o erro.
 ms.assetid: 785b83c4-06f4-46b5-81f7-35c6fce16c92
 title: Método GetError da classe Msvm_StorageJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a7d8ff9c2c01bb21343b4859e2db2dbed7ad643e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00434ef529b7f26755f52833ff6f37310c7dc210
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829028"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109594"
 ---
 # <a name="geterror-method-of-the-msvm_storagejob-class"></a>Método GetError da \_ classe Msvm StorageJob
 
@@ -46,7 +46,7 @@ O erro recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -102,7 +102,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de rotação de um Quaternion.
+description: Função D3DXMatrixRotationQuaternion (D3DX10Math. h) – compila uma matriz de rotação de um Quaternion.
 ms.assetid: dcbf8696-b959-4475-a250-6094dd5fe358
 title: Função D3DXMatrixRotationQuaternion (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 44cd4a5982b322c2d207263fb490c898ed9fa76e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7d95d28b7f7106df9ddfb43a9175f5c19292d52c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105802131"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103424"
 ---
 # <a name="d3dxmatrixrotationquaternion-function-d3dx10mathh"></a>Função D3DXMatrixRotationQuaternion (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de D3DXQUATERNION de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -82,7 +82,7 @@ Para obter informações sobre como calcular valores de Quaternion de um vetor d
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

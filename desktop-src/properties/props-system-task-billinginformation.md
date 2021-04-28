@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Task. BillingInformation
 ms.assetid: 6ede2f67-d4ae-44d8-b299-9eca63f6cbf3
 title: System. Task. BillingInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bacabe58fc4c795b8b9838231f63de635a393db7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4841bffb3957a2a1ec9eee36fd3fc42b51f83a4a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105797660"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091314"
 ---
 # <a name="systemtaskbillinginformation"></a>System. Task. BillingInformation
 

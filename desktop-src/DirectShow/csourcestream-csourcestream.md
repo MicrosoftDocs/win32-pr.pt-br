@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CSourceStream. CSourceStream-método de construtor.
 ms.assetid: 9078b2f5-b11e-4780-8143-6738e9df4f4b
 title: Construtor CSourceStream. CSourceStream (Source. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a8671e939364d1c0cd22796b1518313002b5eb33
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 75d94bb89ca109c2a7974c294153d46235f92f23
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750281"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085184"
 ---
 # <a name="csourcestreamcsourcestream-constructor"></a>Construtor CSourceStream. CSourceStream
 
@@ -92,7 +92,7 @@ O construtor adiciona automaticamente o PIN ao filtro proprietário, chamando [*
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CBaseList. CBaseList-método de construtor.
 ms.assetid: 2982f53a-c222-4a9d-812a-42897ca4cb5c
 title: Construtor CBaseList. CBaseList (Wxlist. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3afc0a4acf54e186e122f676ac14e9e80aaeafdb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66aad24fe2d5176c684d4d78be27833e3be2f909
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747410"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096323"
 ---
 # <a name="cbaselistcbaselist-constructor"></a>Construtor CBaseList. CBaseList
 
@@ -64,7 +64,7 @@ Para eficiência, a `CBaseList` classe mantém um cache de nós de lista. Esta v
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

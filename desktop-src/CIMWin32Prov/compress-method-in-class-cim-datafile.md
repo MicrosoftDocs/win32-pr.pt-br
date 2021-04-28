@@ -1,5 +1,5 @@
 ---
-description: Usa a compactação NTFS para compactar o arquivo lógico (ou diretório) que é especificado no caminho do objeto. Esse método é herdado do \_ LogicalFile CIM.
+description: Método compress da classe CIM_DataFile – usa a compactação NTFS para compactar o arquivo lógico (ou diretório) que é especificado no caminho do objeto. Esse método é herdado do \_ LogicalFile CIM.
 ms.assetid: fce57569-8290-420e-a938-10ab08ac67c3
 ms.tgt_platform: multiple
 title: Método compress da classe CIM_DataFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 99d9a0a346d8a9394edd9f30ff23490549f6de76
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3cc63ed3cafd676a0d865953c52a14e6247d4b70
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811162"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089774"
 ---
 # <a name="compress-method-of-the-cim_datafile-class"></a>Método compress da \_ classe datafilefiles CIM
 
@@ -45,7 +45,7 @@ uint32 Compress();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -54,7 +54,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Êxito.
+Sucesso.
 
 </dd> <dt>
 
@@ -162,7 +162,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

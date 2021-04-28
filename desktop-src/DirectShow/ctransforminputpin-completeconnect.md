@@ -1,5 +1,5 @@
 ---
-description: O método CompleteConnect conclui uma conexão com outro PIN.
+description: Método CTransformInputPin. CompleteConnect – o método CompleteConnect conclui uma conexão com outro PIN.
 ms.assetid: 568cee55-b9ea-4fc2-ac9d-0080b7de9790
 title: Método CTransformInputPin. CompleteConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 455517968481b9333fbeba590aca644b34b2f5be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 20f378479209b2614116ba25f51950923358f1b2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768612"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085004"
 ---
 # <a name="ctransforminputpincompleteconnect-method"></a>Método CTransformInputPin. CompleteConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou outro valor **HRESULT** .
 

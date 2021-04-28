@@ -1,5 +1,5 @@
 ---
-description: Retorna um bitmap UInt32 com os direitos de acesso ao compartilhamento mantido pelo usuário ou grupo em cujo nome a instância é retornada.
+description: Método GetAccessMask da classe Win32_ClusterShare – retorna um bitmap UInt32 com os direitos de acesso ao compartilhamento mantido pelo usuário ou grupo em cujo nome a instância é retornada.
 ms.assetid: 1f656c63-f5ee-4b14-845a-0eb34a0e7a64
 ms.tgt_platform: multiple
 title: Método GetAccessMask da classe Win32_ClusterShare
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db27998c362e3df350dd12b6b91f3966cfc152ae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aae44918b51331363c6750e269019b5c4d6d6883
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089109"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089554"
 ---
 # <a name="getaccessmask-method-of-the-win32_clustershare-class"></a>Método GetAccessMask da classe Win32 \_ ClusterShare
 
@@ -38,7 +38,7 @@ uint32 GetAccessMask();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Direitos de acesso ao compartilhamento mantido pelo usuário ou grupo.
 
@@ -56,7 +56,7 @@ Direitos de acesso ao compartilhamento mantido pelo usuário ou grupo.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

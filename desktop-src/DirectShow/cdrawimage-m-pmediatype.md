@@ -1,5 +1,5 @@
 ---
-description: A \_ variável de membro m pMediaType é um ponteiro para o tipo de mídia atual.
+description: 'Membro CDrawImage:: m_pMediaType-a \_ variável de membro pMediaType m é um ponteiro para o tipo de mídia atual.'
 ms.assetid: 51a33fc4-1496-43ed-9b68-842f4c2cf0a1
 title: 'Membro CDrawImage:: m_pMediaType (Winutil. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 47e1841b9b6cff95a122ba03c76b41030fd41eba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 127801850ed008d65015d277ad3e1dbdfdb5c1bf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785368"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095764"
 ---
 # <a name="cdrawimagem_pmediatype-member"></a>Membro de CDrawImage:: m \_ pMediaType
 
 A variável de membro **m \_ pMediaType** é um ponteiro para o tipo de mídia atual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ CMediaType *m_pMediaType;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

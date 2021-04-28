@@ -1,5 +1,5 @@
 ---
-description: O método Copy copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
+description: Método Copy da classe CIM_LogicalFile – o método Copy copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
 ms.assetid: 643946e4-5d32-4839-ae1f-80ec7cede429
 ms.tgt_platform: multiple
 title: Método Copy da classe CIM_LogicalFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4a69107bd173be0aa853c1541a1e1365148c2e59
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 10ba9c28bde9d909d947e5a73241ce1aa8f1e956
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010208"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089724"
 ---
 # <a name="copy-method-of-the-cim_logicalfile-class"></a>Método Copy da \_ classe LogicalFile do CIM
 
@@ -56,7 +56,7 @@ Exemplo: "c: \\ temp \\ newdirectory"
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -199,7 +199,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

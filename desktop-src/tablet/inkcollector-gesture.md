@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um gesto específico do aplicativo é reconhecido.
+description: Evento InkCollector. Gesture-ocorre quando um gesto específico do aplicativo é reconhecido.
 ms.assetid: 5830f7f8-2870-4194-ab3e-b63b71e97063
 title: Evento InkCollector. Gesture (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb68add1a3fbba5781624f1df98c3a637745b95a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bfc2fea09060dbb206cd7681bcecfbedbc7a6b4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784595"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110184"
 ---
 # <a name="inkcollectorgesture-event"></a>Evento InkCollector. Gesture
 
@@ -63,7 +63,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -107,7 +107,7 @@ Para obter uma lista de gestos de aplicativo específicos, consulte o tipo de en
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

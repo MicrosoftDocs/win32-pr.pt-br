@@ -1,15 +1,15 @@
 ---
-description: .
+description: Processo de notificações no Windows Search
 ms.assetid: 378e346b-2067-484f-85e9-76673a35550b
 title: Processo de notificações no Windows Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c7dd37979eab7ef32a5a8917ba6a3589e976105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b37747d1ec13c3a4a865e16721c64d4a0186dbc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090089"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089814"
 ---
 # <a name="notifications-process-in-windows-search"></a>Processo de notificações no Windows Search
 

@@ -1,5 +1,5 @@
 ---
-description: Exibe uma caixa de diálogo que permite ao usuário selecionar um dispositivo de hardware para aquisição de imagem.
+description: 'Método IWiaDevMgr2:: SelectDeviceDlg – exibe uma caixa de diálogo que permite ao usuário selecionar um dispositivo de hardware para aquisição de imagem.'
 ms.assetid: cd020dc6-fddf-4d7f-aa57-eae94953ef4e
 title: 'Método IWiaDevMgr2:: SelectDeviceDlg (WIA. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: cb41ec8e94782ee4d7408c53e2d4e098d986fe83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60ec24f264b8fe0424f17fc32deaf803e55c3346
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812104"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091254"
 ---
 # <a name="iwiadevmgr2selectdevicedlg-method"></a>Método IWiaDevMgr2:: SelectDeviceDlg
 
@@ -46,7 +46,7 @@ HRESULT SelectDeviceDlg(
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Especifica a janela pai da caixa de diálogo **selecionar dispositivo** .
 
@@ -95,9 +95,9 @@ Exibir a caixa de diálogo mesmo que haja apenas um dispositivo correspondente.
 *pbstrDeviceID* \[ entrada, saída\]
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
-Na saída, recebe uma cadeia de caracteres que contém a cadeia de caracteres do identificador do dispositivo. Na entrada, passe o endereço de um ponteiro se essas informações forem necessárias ou _ *NULL** se não for necessário.
+Na saída, recebe uma cadeia de caracteres que contém a cadeia de caracteres do identificador do dispositivo. Na entrada, passe o endereço de um ponteiro se essas informações forem necessárias, ou **NULL** se não for necessário.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Recebe o endereço de um ponteiro para a interface [**IWiaItem2**](-wia-iwiaitem
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

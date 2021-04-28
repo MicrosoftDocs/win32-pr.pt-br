@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CPosPassThru. CPosPassThru-método de construtor.
 ms.assetid: b258401c-158b-4eb8-8736-1e1ad9a8403a
 title: Construtor CPosPassThru. CPosPassThru
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ba49bd1e2f65cf0d2a8a398ecab167e74dc35ad4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2a6c49b305b3c6638aeaaee1480d0b561fd8c99a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105766319"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085594"
 ---
 # <a name="cpospassthrucpospassthru-constructor"></a>Construtor CPosPassThru. CPosPassThru
 

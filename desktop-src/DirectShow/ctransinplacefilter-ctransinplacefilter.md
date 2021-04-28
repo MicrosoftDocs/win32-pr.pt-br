@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CTransInPlaceFilter. CTransInPlaceFilter-método de construtor.
 ms.assetid: f0d30125-5d16-470c-a5fb-a7df96814dad
 title: Construtor CTransInPlaceFilter. CTransInPlaceFilter (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 091ea6e6a52d4cc9221ddb29db34b4823111a395
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6b14af4b0d1f33933db8ca2fd1835e9711edad9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750033"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084774"
 ---
 # <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Construtor CTransInPlaceFilter. CTransInPlaceFilter
 
@@ -92,7 +92,7 @@ Valor booliano que especifica se o filtro modifica os dados de entrada. Se **for
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

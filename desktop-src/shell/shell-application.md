@@ -1,5 +1,5 @@
 ---
-description: Contém o objeto de aplicativo do objeto.
+description: Propriedade Shell. Application – contém o objeto Application do objeto.
 ms.assetid: 5335f4dd-ca80-49c8-8953-e32a6e6308e0
 title: Propriedade Shell. Application (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a9f9bd7fa28d2b277adfd8038c10c97efe16f51a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a90b3953ed54b8a3652d6c9c26533d433ffb600
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837224"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083854"
 ---
 # <a name="shellapplication-property"></a>Propriedade Shell. Application
 

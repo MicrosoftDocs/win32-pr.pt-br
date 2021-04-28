@@ -1,6 +1,6 @@
 ---
 title: Método WebViewFolderContents. PopupItemMenu (shldisp. h)
-description: Cria um menu de atalho para o item especificado e retorna a cadeia de caracteres de comando selecionada.
+description: Método WebViewFolderContents. PopupItemMenu – cria um menu de atalho para o item especificado e retorna a cadeia de caracteres de comando selecionada.
 ms.assetid: 3c07500c-2fe9-4976-a1a8-b128e75f9325
 keywords:
 - Recursos do ambiente Windows herdado do método PopupItemMenu
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41753814f103998185acc798a37447f22356d2aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c879e10097b334f0c2d4f98b1b76289d20ee4a93
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644306"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102634"
 ---
 # <a name="webviewfoldercontentspopupitemmenu-method"></a>Método WebViewFolderContents. PopupItemMenu
 
@@ -71,15 +71,15 @@ A posição vertical do menu, em coordenadas da tela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[BSTR](/previous-versions/windows/desktop/automat/bstr) \** _
+Tipo: **[BSTR](/previous-versions/windows/desktop/automat/bstr)\***
 
 Quando esse método retorna, contém a cadeia de caracteres de comando.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado de _ *PopupItemMenu** para JScript Embedded em HTML.
+O exemplo a seguir mostra o uso apropriado de **PopupItemMenu** para JScript Embedded em HTML.
 
 
 ```HTML

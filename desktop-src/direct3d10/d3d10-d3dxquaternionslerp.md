@@ -1,5 +1,5 @@
 ---
-description: Interpola entre dois quatérnios usando interpolação linear esférica.
+description: Função D3DXQuaternionSlerp (D3DX10Math. h) – interpola entre dois quaternions, usando interpolação linear esférica.
 ms.assetid: 487e1df1-bf20-49cb-ad14-61fcf1300904
 title: Função D3DXQuaternionSlerp (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 07f673d33b8f105e808fbae380a06942e2a69be4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 04cd3d82e4ca4e3f3357ab0114b57602f7e8a543
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012132"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103114"
 ---
 # <a name="d3dxquaternionslerp-function-d3dx10mathh"></a>Função D3DXQuaternionSlerp (D3DX10Math. h)
 
@@ -79,7 +79,7 @@ Parâmetro que indica a interpolarização entre os quaternions.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

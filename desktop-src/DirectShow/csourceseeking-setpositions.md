@@ -1,5 +1,5 @@
 ---
-description: 'O método setpositiones define a posição atual e a posição de parada. Esse método implementa o método IMediaSeeking:: setposicionations.'
+description: 'Método CSourceSeeking. setpositiones – o método SetPositions define a posição atual e a posição de parada. Esse método implementa o método IMediaSeeking:: setposicionations.'
 ms.assetid: 4359fe1f-f922-4a4d-beaa-8e13c72f407c
 title: Método CSourceSeeking. setpositiones (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 342ca7d85fe9358b914709b7887216b62e03521d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b09dd92b97166b8d973328ec95e466abbda116bd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751887"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085164"
 ---
 # <a name="csourceseekingsetpositions-method"></a>Método CSourceSeeking. setpositiones
 
@@ -73,7 +73,7 @@ Combinação bit-a-de de sinalizadores. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -81,7 +81,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                  | Descrição                          |
 |----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Sinalizadores inválidos<br/>             |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>    | Argumento de ponteiro **nulo**<br/> |
 
@@ -113,7 +113,7 @@ Esse método atualiza os valores das variáveis de membro [**CSourceSeeking:: m 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

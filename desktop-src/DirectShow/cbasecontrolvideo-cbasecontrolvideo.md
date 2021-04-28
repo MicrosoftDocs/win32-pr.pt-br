@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CBaseControlVideo. CBaseControlVideo-método de construtor.
 ms.assetid: 925c6c45-0990-4044-aca1-34f343f438b5
 title: Construtor CBaseControlVideo. CBaseControlVideo (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dea0548079f8eb703f0c17557cab6a5e634cf242
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 389c05b5254326d2966799b857107e79792610e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760099"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096344"
 ---
 # <a name="cbasecontrolvideocbasecontrolvideo-constructor"></a>Construtor CBaseControlVideo. CBaseControlVideo
 
@@ -98,7 +98,7 @@ Todos os métodos de interface de [**IBasicVideo**](/windows/desktop/api/Control
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

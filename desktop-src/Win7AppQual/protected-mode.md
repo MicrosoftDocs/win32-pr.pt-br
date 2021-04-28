@@ -1,15 +1,15 @@
 ---
-description: .
+description: Modo protegido
 ms.assetid: 88810916-A85E-4EC7-A6AE-1CA2A2205DBC
 title: Modo protegido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ace82e27bbec3bb97a9ffbd3b64c9c6cee9e11e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbc1b8b1e6931ed83ec59ccfe4c3c63d8e5b5eed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828813"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116444"
 ---
 # <a name="protected-mode"></a>Modo protegido
 

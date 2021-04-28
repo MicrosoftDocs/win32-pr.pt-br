@@ -1,6 +1,6 @@
 ---
 title: Mensagem de TBM_SETPOS (commctrl. h)
-description: Define a posição lógica atual do controle deslizante em um TrackBar.
+description: TBM_SETPOS mensagem – define a posição lógica atual do controle deslizante em um TrackBar.
 ms.assetid: df6c4e5d-2847-419d-82b5-334d53bb6ba1
 keywords:
 - Controles de TBM_SETPOS de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8e8da6e8e231a26b216ca8f9314d59474384857
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f10e05a677119f18489d0eb9eebc4528d3ad115
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919196"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085864"
 ---
 # <a name="tbm_setpos-message"></a>\_Mensagem tbm SETPOS
 
@@ -43,7 +43,7 @@ Nova posição lógica do controle deslizante. As posições lógicas válidas s
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 

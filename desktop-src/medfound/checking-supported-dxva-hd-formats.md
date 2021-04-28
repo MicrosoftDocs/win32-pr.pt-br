@@ -1,15 +1,15 @@
 ---
-description: .
+description: Verificando os formatos de DXVA-HD com suporte
 ms.assetid: 43ae9f70-34a1-48ca-be61-e974e2daebd7
 title: Verificando os formatos de DXVA-HD com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7560d574cee5fca21ab8de78b01b87af1de5a64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d07d47043ed200d256e2bef8fa2c9ab6717f3b82
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457225"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090004"
 ---
 # <a name="checking-supported-dxva-hd-formats"></a>Verificando os formatos de DXVA-HD com suporte
 
@@ -22,7 +22,7 @@ Para obter uma lista dos formatos de entrada para os quais o dispositivo de alta
 3.  Aloque uma matriz de valores **D3DFORMAT** , de tamanho **InputFormatCount**.
 4.  Passe essa matriz para o método [**IDXVAHD \_ Device:: GetVideoProcessorInputFormats**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessorinputformats) . Os métodos preenchem a matriz com uma lista de formatos de entrada.
 
-O código a seguir mostra estas etapas:
+O código a seguir mostra essas etapas:
 
 
 ```C++
@@ -80,7 +80,7 @@ Para obter uma lista dos formatos de saída aos quais o dispositivo DXVA-HD dá 
 3.  Aloque uma matriz de valores **D3DFORMAT** , de tamanho **OutputFormatCount**.
 4.  Passe essa matriz para o método [**IDXVAHD \_ Device:: GetVideoProcessorOutputFormats**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessoroutputformats) . Os métodos preenchem a matriz com uma lista de formatos de saída.
 
-O código a seguir mostra estas etapas:
+O código a seguir mostra essas etapas:
 
 
 ```C++

@@ -1,5 +1,5 @@
 ---
-description: Cria um objeto de malha de capa vazio usando um Declarador.
+description: Função D3DX10CreateSkinInfo – cria um objeto de malha de capa vazio usando um Declarador.
 ms.assetid: 5356cfe5-de90-462d-9722-72f3618decfb
 title: Função D3DX10CreateSkinInfo (D3DX10Mesh. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a68da20c2e2e15e3b73d55ee1df70518bba46200
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 17d6ec99d3f43c41d56deebef81a021c81ec1d69
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105761791"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103594"
 ---
 # <a name="d3dx10createskininfo-function"></a>Função D3DX10CreateSkinInfo
 
@@ -49,7 +49,7 @@ Endereço de um ponteiro para uma [**interface ID3DX10SkinInfo**](id3dx10skininf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -70,7 +70,7 @@ Use o [**ID3DX10SkinInfo:: SetBoneInfluence**](id3dx10skininfo-setboneinfluence.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

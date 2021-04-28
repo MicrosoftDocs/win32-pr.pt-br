@@ -1,5 +1,5 @@
 ---
-description: Compilar um arquivo de sombreador.
+description: Função D3DXCompileShader – compilar um arquivo de sombreador.
 ms.assetid: 9b19ab67-d5d5-482d-b3fe-ce20b64d7ad8
 title: Função D3DXCompileShader (D3DX9Shader. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 65dd9f74280abe7ee2fe427a4772b14b88742e97
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b1f5e5f0f30714ed001438235e124341b8ce4d35
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298595"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115854"
 ---
 # <a name="d3dxcompileshader-function"></a>Função D3DXCompileShader
 
@@ -144,7 +144,7 @@ Retorna uma interface [**ID3DXConstantTable**](id3dxconstanttable.md) , que pode
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -161,7 +161,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

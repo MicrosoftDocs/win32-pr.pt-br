@@ -1,6 +1,6 @@
 ---
 title: Mensagem de EM_FINDTEXTEXW (RichEdit. h)
-description: Localiza o texto Unicode dentro de um controle de edição rico.
+description: Mensagem de EM_FINDTEXTEXW-localiza o texto Unicode dentro de um controle de edição rico.
 ms.assetid: 7b90ef06-0395-430e-8b5d-b392481a5f70
 keywords:
 - Controles de EM_FINDTEXTEXW de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf0857e47c6e98f4be6867ca66baef3472766a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5278726ca4d3e4748e96d8095a411bcebd5637ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918987"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109804"
 ---
 # <a name="em_findtextexw-message"></a>\_Mensagem em FINDTEXTEXW
 
@@ -58,7 +58,7 @@ Uma estrutura [**FINDTEXTEXW**](/windows/desktop/api/Richedit/ns-richedit-findte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a cadeia de caracteres de destino for encontrada, o valor de retorno será a posição baseada em zero do primeiro caractere da correspondência. Se o destino não for encontrado, o valor de retorno será-1.
 
@@ -84,7 +84,7 @@ Se a operação de pesquisa encontrar uma correspondência, o membro **chrgText*
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

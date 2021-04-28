@@ -1,5 +1,5 @@
 ---
-description: Recupera um objeto filho neste objeto de dados de arquivo.
+description: 'Método ID3DXFileData:: GetChild – recupera um objeto filho neste objeto de dados de arquivo.'
 ms.assetid: 0c4f1efa-f096-443d-a482-a3c5a9138c3d
 title: 'Método ID3DXFileData:: GetChild (D3DX9Xof. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 37982ca1e4801b7d70bec503ff9510fc66772651
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7fe6c0393e5cfb9ed8aeaf5808d33175e7f9bfe5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930654"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090374"
 ---
 # <a name="id3dxfiledatagetchild-method"></a>Método ID3DXFileData:: GetChild
 
@@ -59,7 +59,7 @@ Endereço de um ponteiro para receber o ponteiro de interface do objeto filho.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -76,7 +76,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

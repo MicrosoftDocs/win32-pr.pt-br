@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de números de ponto flutuante.
+description: 'Método ID3DXTextureShader:: SetFloatArray – define uma matriz de números de ponto flutuante.'
 ms.assetid: 8e64b569-a6bf-4925-9d21-4df0b6661ee2
 title: 'Método ID3DXTextureShader:: SetFloatArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5dbd39e8a4acfa004fb623d578e5922d477884fc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bd42455e16cbfc203f76de868a82935e0e25401f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173027"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090244"
 ---
 # <a name="id3dxtextureshadersetfloatarray-method"></a>Método ID3DXTextureShader:: SetFloatArray
 
@@ -69,7 +69,7 @@ Número de valores de ponto flutuante na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -86,7 +86,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

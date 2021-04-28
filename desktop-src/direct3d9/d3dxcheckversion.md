@@ -1,5 +1,5 @@
 ---
-description: Verifique se a versão do D3DX que você compilou com o é a versão que você está executando.
+description: Função D3DXCheckVersion – Verifique se a versão do D3DX que você compilou com o é a versão que você está executando.
 ms.assetid: a4e745dd-d573-4e8f-9516-f6a7475f5cc5
 title: Função D3DXCheckVersion (D3dx9core. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7b392d706e54780924115471906096f6b63d1a80
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 077d64a67a46080a0f7ac9194c684f6fe8470453
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752367"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115974"
 ---
 # <a name="d3dxcheckversion-function"></a>Função D3DXCheckVersion
 
@@ -59,7 +59,7 @@ Use a \_ versão do SDK do D3DX \_ . Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 
@@ -98,7 +98,7 @@ Use [**Direct3DCreate9**](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9) para 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
