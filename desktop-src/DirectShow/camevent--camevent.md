@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CAMEvent. ~ CAMEvent destruidor-método Destruitor.
 ms.assetid: 3be76b8f-1141-439e-8837-9edba02707b0
 title: CAMEvent. ~ CAMEvent Destruitor (Wxutil. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: df14e32df85d10210530cd4c59c3bbe542af6f03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70db4419e6e9ca1c077fb60e7adc671e16cceca6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753187"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096544"
 ---
-# <a name="cameventcamevent-destructor"></a><span data-ttu-id="7dc94-103">Destruidor CAMEvent. ~ CAMEvent</span><span class="sxs-lookup"><span data-stu-id="7dc94-103">CAMEvent.~CAMEvent destructor</span></span>
+# <a name="cameventcamevent-destructor"></a><span data-ttu-id="d76a8-103">Destruidor CAMEvent. ~ CAMEvent</span><span class="sxs-lookup"><span data-stu-id="d76a8-103">CAMEvent.~CAMEvent destructor</span></span>
 
-<span data-ttu-id="7dc94-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="7dc94-104">Destructor method.</span></span>
+<span data-ttu-id="d76a8-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="d76a8-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7dc94-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="7dc94-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d76a8-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="d76a8-105">Syntax</span></span>
 
 
 ```C++
@@ -36,22 +36,22 @@ ms.locfileid: "105753187"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="7dc94-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="7dc94-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d76a8-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="d76a8-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="7dc94-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="7dc94-107">Requirement</span></span> | <span data-ttu-id="7dc94-108">Valor</span><span class="sxs-lookup"><span data-stu-id="7dc94-108">Value</span></span> |
+| <span data-ttu-id="d76a8-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="d76a8-107">Requirement</span></span> | <span data-ttu-id="d76a8-108">Valor</span><span class="sxs-lookup"><span data-stu-id="d76a8-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7dc94-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="7dc94-109">Header</span></span><br/>  | <dl> <span data-ttu-id="7dc94-110"><dt>Wxutil. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="7dc94-110"><dt>Wxutil.h (include Streams.h)</dt></span></span> </dl>                                                                                    |
-| <span data-ttu-id="7dc94-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="7dc94-111">Library</span></span><br/> | <dl> <span data-ttu-id="7dc94-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="7dc94-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="d76a8-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="d76a8-109">Header</span></span><br/>  | <dl> <span data-ttu-id="d76a8-110"><dt>Wxutil. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="d76a8-110"><dt>Wxutil.h (include Streams.h)</dt></span></span> </dl>                                                                                    |
+| <span data-ttu-id="d76a8-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="d76a8-111">Library</span></span><br/> | <dl> <span data-ttu-id="d76a8-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="d76a8-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7dc94-113">Confira também</span><span class="sxs-lookup"><span data-stu-id="7dc94-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d76a8-113">Consulte também</span><span class="sxs-lookup"><span data-stu-id="d76a8-113">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7dc94-114">**Classe CAMEvent**</span><span class="sxs-lookup"><span data-stu-id="7dc94-114">**CAMEvent Class**</span></span>](camevent.md)
+[<span data-ttu-id="d76a8-114">**Classe CAMEvent**</span><span class="sxs-lookup"><span data-stu-id="d76a8-114">**CAMEvent Class**</span></span>](camevent.md)
 </dt> </dl>
 
  
