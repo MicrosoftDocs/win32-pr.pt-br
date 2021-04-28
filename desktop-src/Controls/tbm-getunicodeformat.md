@@ -1,6 +1,6 @@
 ---
 title: Mensagem de TBM_GETUNICODEFORMAT (commctrl. h)
-description: Recupera o sinalizador de formato de caractere Unicode para o controle.
+description: Mensagem de TBM_GETUNICODEFORMAT-recupera o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: cecd7e55-f482-4381-bde8-a60b8c5173eb
 keywords:
 - Controles de TBM_GETUNICODEFORMAT de mensagens do Windows
@@ -14,52 +14,52 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a9fafad2504e51a65b879e58298c5cd06f1f345
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82e7424a4e561ee8f8be79135309089fe4bb0bf9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824423"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104084"
 ---
-# <a name="tbm_getunicodeformat-message"></a><span data-ttu-id="9a686-104">\_Mensagem tbm GETUNICODEFORMAT</span><span class="sxs-lookup"><span data-stu-id="9a686-104">TBM\_GETUNICODEFORMAT message</span></span>
+# <a name="tbm_getunicodeformat-message"></a><span data-ttu-id="6c95c-104">\_Mensagem tbm GETUNICODEFORMAT</span><span class="sxs-lookup"><span data-stu-id="6c95c-104">TBM\_GETUNICODEFORMAT message</span></span>
 
-<span data-ttu-id="9a686-105">Recupera o sinalizador de formato de caractere Unicode para o controle.</span><span class="sxs-lookup"><span data-stu-id="9a686-105">Retrieves the Unicode character format flag for the control.</span></span>
+<span data-ttu-id="6c95c-105">Recupera o sinalizador de formato de caractere Unicode para o controle.</span><span class="sxs-lookup"><span data-stu-id="6c95c-105">Retrieves the Unicode character format flag for the control.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="9a686-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="9a686-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6c95c-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="6c95c-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="9a686-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="9a686-107">*wParam*</span></span> 
-</dt> <dd><span data-ttu-id="9a686-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="9a686-108">Must be zero.</span></span></dd> <dt>
+<span data-ttu-id="6c95c-107">*wParam*</span><span class="sxs-lookup"><span data-stu-id="6c95c-107">*wParam*</span></span> 
+</dt> <dd><span data-ttu-id="6c95c-108">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="6c95c-108">Must be zero.</span></span></dd> <dt>
 
-<span data-ttu-id="9a686-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="9a686-109">*lParam*</span></span> 
-</dt> <dd><span data-ttu-id="9a686-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="9a686-110">Must be zero.</span></span></dd> </dl>
+<span data-ttu-id="6c95c-109">*lParam*</span><span class="sxs-lookup"><span data-stu-id="6c95c-109">*lParam*</span></span> 
+</dt> <dd><span data-ttu-id="6c95c-110">Deve ser zero.</span><span class="sxs-lookup"><span data-stu-id="6c95c-110">Must be zero.</span></span></dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="9a686-111">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="9a686-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6c95c-111">Valor retornado</span><span class="sxs-lookup"><span data-stu-id="6c95c-111">Return value</span></span>
 
-<span data-ttu-id="9a686-112">Retorna o sinalizador de formato Unicode para o controle.</span><span class="sxs-lookup"><span data-stu-id="9a686-112">Returns the Unicode format flag for the control.</span></span> <span data-ttu-id="9a686-113">Se esse valor for diferente de zero, o controle estará usando caracteres Unicode.</span><span class="sxs-lookup"><span data-stu-id="9a686-113">If this value is nonzero, the control is using Unicode characters.</span></span> <span data-ttu-id="9a686-114">Se esse valor for zero, o controle estará usando caracteres ANSI.</span><span class="sxs-lookup"><span data-stu-id="9a686-114">If this value is zero, the control is using ANSI characters.</span></span>
+<span data-ttu-id="6c95c-112">Retorna o sinalizador de formato Unicode para o controle.</span><span class="sxs-lookup"><span data-stu-id="6c95c-112">Returns the Unicode format flag for the control.</span></span> <span data-ttu-id="6c95c-113">Se esse valor for diferente de zero, o controle estará usando caracteres Unicode.</span><span class="sxs-lookup"><span data-stu-id="6c95c-113">If this value is nonzero, the control is using Unicode characters.</span></span> <span data-ttu-id="6c95c-114">Se esse valor for zero, o controle estará usando caracteres ANSI.</span><span class="sxs-lookup"><span data-stu-id="6c95c-114">If this value is zero, the control is using ANSI characters.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9a686-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="9a686-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6c95c-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="6c95c-115">Remarks</span></span>
 
-<span data-ttu-id="9a686-116">Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre esta mensagem.</span><span class="sxs-lookup"><span data-stu-id="9a686-116">See the remarks for [**CCM\_GETUNICODEFORMAT**](ccm-getunicodeformat.md) for a discussion of this message.</span></span>
+<span data-ttu-id="6c95c-116">Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre esta mensagem.</span><span class="sxs-lookup"><span data-stu-id="6c95c-116">See the remarks for [**CCM\_GETUNICODEFORMAT**](ccm-getunicodeformat.md) for a discussion of this message.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="9a686-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="9a686-117">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="6c95c-117">Requisitos</span><span class="sxs-lookup"><span data-stu-id="6c95c-117">Requirements</span></span>
 
 
 
-| <span data-ttu-id="9a686-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="9a686-118">Requirement</span></span> | <span data-ttu-id="9a686-119">Valor</span><span class="sxs-lookup"><span data-stu-id="9a686-119">Value</span></span> |
+| <span data-ttu-id="6c95c-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="6c95c-118">Requirement</span></span> | <span data-ttu-id="6c95c-119">Valor</span><span class="sxs-lookup"><span data-stu-id="6c95c-119">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="9a686-120">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9a686-120">Minimum supported client</span></span><br/> | <span data-ttu-id="9a686-121">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="9a686-121">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="9a686-122">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9a686-122">Minimum supported server</span></span><br/> | <span data-ttu-id="9a686-123">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="9a686-123">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
-| <span data-ttu-id="9a686-124">parâmetro</span><span class="sxs-lookup"><span data-stu-id="9a686-124">Header</span></span><br/>                   | <dl> <span data-ttu-id="9a686-125"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="9a686-125"><dt>Commctrl.h</dt></span></span> </dl> |
+| <span data-ttu-id="6c95c-120">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6c95c-120">Minimum supported client</span></span><br/> | <span data-ttu-id="6c95c-121">\[Somente aplicativos da área de trabalho do Windows Vista\]</span><span class="sxs-lookup"><span data-stu-id="6c95c-121">Windows Vista \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="6c95c-122">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="6c95c-122">Minimum supported server</span></span><br/> | <span data-ttu-id="6c95c-123">\[Somente aplicativos da área de trabalho do Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="6c95c-123">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                  |
+| <span data-ttu-id="6c95c-124">parâmetro</span><span class="sxs-lookup"><span data-stu-id="6c95c-124">Header</span></span><br/>                   | <dl> <span data-ttu-id="6c95c-125"><dt>Commctrl. h</dt></span><span class="sxs-lookup"><span data-stu-id="6c95c-125"><dt>Commctrl.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="9a686-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="9a686-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6c95c-126">Consulte também</span><span class="sxs-lookup"><span data-stu-id="6c95c-126">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9a686-127">**TBM \_ SETUNICODEFORMAT**</span><span class="sxs-lookup"><span data-stu-id="9a686-127">**TBM\_SETUNICODEFORMAT**</span></span>](tbm-setunicodeformat.md)
+[<span data-ttu-id="6c95c-127">**TBM \_ SETUNICODEFORMAT**</span><span class="sxs-lookup"><span data-stu-id="6c95c-127">**TBM\_SETUNICODEFORMAT**</span></span>](tbm-setunicodeformat.md)
 </dt> </dl>
 
  
