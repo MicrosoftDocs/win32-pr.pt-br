@@ -1,5 +1,5 @@
 ---
-description: Enviado para a função CPlApplet de um aplicativo do painel de controle para solicitar informações sobre uma caixa de diálogo à qual o aplicativo dá suporte.
+description: CPL_INQUIRE mensagem enviada à função CPlApplet de um aplicativo do painel de controle para solicitar informações sobre uma caixa de diálogo à qual o aplicativo dá suporte.
 title: Mensagem de CPL_INQUIRE (CPL. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8f4c75a2610dab9e94a97eb7920c9de43cf44efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9962ff94e8bf80041d7b61ecf97220d573131fb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090028"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104464"
 ---
 # <a name="cpl_inquire-message"></a>CPL \_ mensagem de consulta
 
@@ -42,7 +42,7 @@ O endereço de uma estrutura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) processar essa mensagem com êxito, ela deverá retornar zero.
 

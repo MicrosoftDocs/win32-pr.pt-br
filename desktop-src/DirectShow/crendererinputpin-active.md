@@ -1,5 +1,5 @@
 ---
-description: 'O método ativo notifica o PIN de que o filtro está ativo agora. Esse método substitui o método CBasePin:: active.'
+description: 'Método CRendererInputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora. Esse método substitui o método CBasePin:: active.'
 ms.assetid: 2e0c773a-1165-4da2-8acc-fe553663408d
 title: Método CRendererInputPin. Active (Renbase. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10df7a68fef8cde3d33a654554509ce26145f8e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdca1b9342e6e79b2975da38efa00f03c5ea8107
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752489"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098894"
 ---
 # <a name="crendererinputpinactive-method"></a>Método CRendererInputPin. active
 
@@ -40,7 +40,7 @@ HRESULT Active();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** .
 
@@ -55,7 +55,7 @@ Retorna um valor **HRESULT** .
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

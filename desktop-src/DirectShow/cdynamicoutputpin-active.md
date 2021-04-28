@@ -1,5 +1,5 @@
 ---
-description: O método ativo notifica o PIN de que o filtro está ativo agora.
+description: Método CDynamicOutputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora.
 ms.assetid: c2b8eb54-1bae-4f52-8324-dc70e3cac577
 title: Método CDynamicOutputPin. Active (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8f1765d0aa524c0dafd03a3fe4133af71e32fa70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d9544c0fd125146b10f008565fcfbe330d18de1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778626"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099324"
 ---
 # <a name="cdynamicoutputpinactive-method"></a>Método CDynamicOutputPin. active
 
@@ -40,7 +40,7 @@ HRESULT Active();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                            | Descrição                                                                                                     |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                                                                                             |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Sucesso.<br/>                                                                                             |
 | <dl> <dt>**E \_ falha**</dt> </dl> | Falha. [**CDynamicOutputPin:: SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) não foi chamado.<br/> |
 
 
@@ -70,7 +70,7 @@ Esse método substitui o método [**CBaseOutputPin:: active**](cbaseoutputpin-ac
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

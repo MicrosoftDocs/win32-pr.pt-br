@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção de perspectiva à esquerda com base em um campo de visão.
+description: Função D3DXMatrixPerspectiveFovLH (D3dx9math. h) – cria uma matriz de projeção de perspectiva do lado esquerdo com base em um campo de exibição.
 ms.assetid: 90328798-f124-4b61-90a9-971946066b02
 title: Função D3DXMatrixPerspectiveFovLH (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91b25a2e319236485c2c290b55acb94954a4791d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: eec478fec30567fbf301054ddfa60f1689bfee8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173123"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118344"
 ---
 # <a name="d3dxmatrixperspectivefovlh-function-d3dx9mathh"></a>Função D3DXMatrixPerspectiveFovLH (D3dx9math. h)
 
@@ -89,7 +89,7 @@ Z-valor do plano de exibição distante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -128,7 +128,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

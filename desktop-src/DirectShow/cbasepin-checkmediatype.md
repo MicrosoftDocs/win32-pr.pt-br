@@ -1,5 +1,5 @@
 ---
-description: O método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
+description: Método CBasePin. CheckMediaType – o método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
 ms.assetid: 6a138679-02b7-4ccc-8881-a0d496f84f93
 title: Método CBasePin. CheckMediaType (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e203851a44a5468567e75ee8c0cc955f8ad0278a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe39f3a7aac155f3cc87fa6d58f402043861d1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750676"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099393"
 ---
 # <a name="cbasepincheckmediatype-method"></a>Método CBasePin. CheckMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de m�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se o tipo de mídia proposto for aceitável. Caso contrário, retorna S \_ false ou um código de erro.
 
@@ -68,7 +68,7 @@ A classe derivada deve substituir esse método virtual puro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

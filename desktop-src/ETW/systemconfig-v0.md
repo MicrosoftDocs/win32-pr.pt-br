@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de configuração de hardware. A sintaxe a seguir é simplificada do código MOF.
+description: Classe SystemConfig_V0-essa classe é a classe pai para eventos de configuração de hardware. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 9da1a7ec-89b5-462b-a336-544e4b7adf96
 title: Classe SystemConfig_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 92d77d1ad3effdd2bf22a7df8112187b27666238
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827955"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105904"
 ---
 # <a name="systemconfig_v0-class"></a>\_Classe SystemConfig V0
 
@@ -53,7 +53,7 @@ Para eventos de configuração de hardware no Windows XP, consulte a classe [**H
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

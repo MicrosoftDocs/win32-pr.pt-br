@@ -1,5 +1,5 @@
 ---
-description: O método Disconnect quebra a conexão do PIN atual. Esse método implementa o método IPin::D isconnect.
+description: Método CDynamicOutputPin. Disconnect – o método Disconnect quebra a conexão do PIN atual. Esse método implementa o método IPin::D isconnect.
 ms.assetid: 8d92a504-98ad-4f8f-89a4-f0c80763db44
 title: Método CDynamicOutputPin. Disconnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 65c61ecc825d703976aa3163be5922da1ac4471a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a775146973b353413fa2e74584a6c763b721e7b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754989"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099294"
 ---
 # <a name="cdynamicoutputpindisconnect-method"></a>Método CDynamicOutputPin. Disconnect
 
@@ -40,7 +40,7 @@ HRESULT Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -49,7 +49,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 | Código de retorno                                                                             | Descrição                           |
 |-----------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**\_falso**</dt> </dl> | O PIN não foi conectado.<br/> |
-| <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Sucesso.<br/>                   |
 
 
 
@@ -70,7 +70,7 @@ Esse método substitui o método [**CBasePin::D isconnect**](cbasepin-disconnect
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

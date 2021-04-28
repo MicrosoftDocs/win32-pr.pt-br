@@ -1,5 +1,5 @@
 ---
-description: O método Start inicia uma captura.
+description: 'Método IDelaydC:: Start – o método Start inicia uma captura.'
 ms.assetid: 92b25afc-d5d8-47e4-a155-4ed2a3571038
 title: 'Método IDelaydC:: Start (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: a912af44dddb8a25d3279a5cdd7f021646c26e5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25bf778d9cccce20c736c5f8b83e6af9754ac933
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784173"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118434"
 ---
 # <a name="idelaydcstart-method"></a>Método IDelaydC:: Start
 
@@ -47,7 +47,7 @@ Ponteiro para o nome do [*arquivo de captura*](c.md) usado para armazenar os dad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -90,7 +90,7 @@ Para reiniciar a captura usando **IDelaydC:: Start** e [**IDelaydC:: Stop**](ide
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

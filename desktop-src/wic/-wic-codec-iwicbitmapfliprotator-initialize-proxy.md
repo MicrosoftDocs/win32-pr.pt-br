@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Initialize.
+description: Função IWICBitmapFlipRotator_Initialize_Proxy function-proxy para o método Initialize.
 ms.assetid: 860e8092-054d-489e-8ca1-fec43a039eca
 title: Função IWICBitmapFlipRotator_Initialize_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 82a1aa5648edd47d0b635a407adc001c25183b50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a260d6e60c0ffdeb05aa064ae8abbb38818ac8c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771598"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091154"
 ---
 # <a name="iwicbitmapfliprotator_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICBitmapFlipRotator \_
 
@@ -45,22 +45,22 @@ HRESULT IWICBitmapFlipRotator_Initialize_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) \** _
+Tipo: **[ **IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)\***
 
-Ponteiro para este objeto [_ *IWICBitmapFlipRotator* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) .
+Ponteiro para este objeto [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) .
 
 </dd> <dt>
 
 *pISource* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 A origem do bitmap de entrada.
 
 </dd> <dt>
 
-_options * \[ in\]
+*Opções* \[ do no\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions)**
@@ -69,7 +69,7 @@ O [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicb
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

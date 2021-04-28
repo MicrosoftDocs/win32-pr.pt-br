@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de serviço.
+description: Classe SystemConfig_V0_Services-essa classe é a classe de tipo de evento para eventos de configuração de serviço.
 ms.assetid: 1e6c2061-f1a2-4253-a0c4-4b45b2feceda
 title: Classe SystemConfig_V0_Services
 ms.topic: reference
@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6c061c6a0c4cbb3e807bcb3418155b1194fcfa28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b69ca7cf4ee4e16a5fbcb6a5f10c659f713ab458
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297513"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105924"
 ---
 # <a name="systemconfig_v0_services-class"></a>\_Classe de \_ Serviços SystemConfig V0
 
@@ -129,7 +129,7 @@ Identificador exclusivo do serviço. O identificador fornece uma indicação da 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

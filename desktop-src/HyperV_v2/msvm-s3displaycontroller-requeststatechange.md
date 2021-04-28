@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_S3DisplayController-solicita uma alteração de estado.
 ms.assetid: 49b8ea85-ae2e-49cc-9a7d-962681391991
 title: Método RequestStateChange da classe Msvm_S3DisplayController
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: eab1afc5a54e8479790f42fe3f52850480727ad0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d8583407c617413f9015516dff13498473b11de
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011376"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111494"
 ---
 # <a name="requeststatechange-method-of-the-msvm_s3displaycontroller-class"></a>Método RequestStateChange da classe Msvm \_ S3DisplayController
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

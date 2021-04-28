@@ -1,5 +1,5 @@
 ---
-description: Gira um Quaternion sobre um eixo arbitrário.
+description: Função D3DXQuaternionRotationAxis (D3dx9math. h) – gira um Quaternion sobre um eixo arbitrário.
 ms.assetid: 9ff0fe2c-54d6-482c-84e1-f38e3c57d8dd
 title: Função D3DXQuaternionRotationAxis (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7974a1199c468ac762042ae41af59f5a3b66bafd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a5cbbdc3603b5e2eb7a03f592d44fa88f07ef015
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105771476"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118014"
 ---
 # <a name="d3dxquaternionrotationaxis-function-d3dx9mathh"></a>Função D3DXQuaternionRotationAxis (D3dx9math. h)
 
@@ -69,7 +69,7 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
@@ -92,7 +92,7 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

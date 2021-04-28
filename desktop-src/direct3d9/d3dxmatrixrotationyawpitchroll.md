@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz com uma guinada, pitch e roll especificados.
+description: Função D3DXMatrixRotationYawPitchRoll (D3dx9math. h) – compila uma matriz com uma guinada, uma densidade e um rolo especificados.
 ms.assetid: efaab508-34ed-4373-a8d0-3bc459d75f39
 title: Função D3DXMatrixRotationYawPitchRoll (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2a8d6a531592ce49342dae0d0ecd6b3ace995bf5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 789812b6e94efd40ff71209348f0c9727088c253
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172927"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118144"
 ---
 # <a name="d3dxmatrixrotationyawpitchroll-function-d3dx9mathh"></a>Função D3DXMatrixRotationYawPitchRoll (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Sobreponha-se ao eixo z, em radianos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -104,7 +104,7 @@ A ordem das transformações é revertida primeiro, depois de pitch e depois da 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

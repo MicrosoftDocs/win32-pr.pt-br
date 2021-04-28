@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_SyntheticDisplayController-solicita uma alteração de estado.
 ms.assetid: eb7f8acb-1e2d-472c-b50d-92f533c460d0
 title: Método RequestStateChange da classe Msvm_SyntheticDisplayController
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1a9deaededd877e8a98af0e15b6f1cfb4ac1b443
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8ac33705dbb57a28b6b6a02c45f27e7cd986fa3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757808"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111334"
 ---
 # <a name="requeststatechange-method-of-the-msvm_syntheticdisplaycontroller-class"></a>Método RequestStateChange da classe Msvm \_ SyntheticDisplayController
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

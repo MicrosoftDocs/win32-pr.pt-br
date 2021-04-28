@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_SerialController-solicita uma alteração de estado.
 ms.assetid: 0c7123fb-3ddc-4fd8-96a9-aea77fa987cb
 title: Método RequestStateChange da classe Msvm_SerialController
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 38c1608c1f48e28cf3105e36584ccf94bb1dd6c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 378eb086d891ee14088c89e761214866561a4608
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169727"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111384"
 ---
 # <a name="requeststatechange-method-of-the-msvm_serialcontroller-class"></a>Método RequestStateChange da classe Msvm \_ SerialController
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

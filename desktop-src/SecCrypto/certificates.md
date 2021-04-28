@@ -1,5 +1,5 @@
 ---
-description: Representa uma coleção de objetos de certificado.
+description: Objeto Certificates-representa uma coleção de objetos de certificado.
 ms.assetid: 82011c49-38fb-4261-8fb3-b76859da8a9e
 title: Objeto de certificados
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2e8c12c16820342c5687720a35ce81aa7b94f180
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8efb9221f39b8544eabe8f6c00d21f6cfdf20c14
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751073"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098384"
 ---
 # <a name="certificates-object"></a>Objeto de certificados
 
@@ -58,7 +58,7 @@ O objeto **Certificates** tem esses métodos.
 | Método                                | Descrição                                                                                                                                                           |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Agrega**](certificates-add.md)       | Adiciona um objeto de [**certificado**](certificate.md) à coleção.<br/> (Herdado de **CertificatesICertificates2**)                                        |
-| [**Formatação**](certificates-clear.md)   | Remove todos os objetos de [**certificado**](certificate.md) da coleção.<br/> (Herdado de **CertificatesICertificates2**)                                |
+| [**Limpar**](certificates-clear.md)   | Remove todos os objetos de [**certificado**](certificate.md) da coleção.<br/> (Herdado de **CertificatesICertificates2**)                                |
 | [**Localizar**](certificates-find.md)     | Retorna um objeto **Certificates** que contém todos os certificados que correspondem aos critérios de pesquisa especificados.<br/> (Herdado de **CertificatesICertificates2**) |
 | [**Remover**](certificates-remove.md) | Remove um único objeto de [**certificado**](certificate.md) da coleção.<br/> (Herdado de **CertificatesICertificates2**)                            |
 | [**Salvar**](certificates-save.md)     | Salva os certificados em um arquivo especificado.<br/> (Herdado de **CertificatesICertificates2**)                                                                |
@@ -77,7 +77,7 @@ O objeto **Certificates** tem essas propriedades.
 | Propriedade                                             | Tipo de acesso          | Descrição                                                                                                                                                                                                                     |
 |:-----------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](certificates-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](certificates-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos de [**certificado**](certificate.md) na coleção.<br/>                                                                                                                                |
+| [**Contagem**](certificates-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos de [**certificado**](certificate.md) na coleção.<br/>                                                                                                                                |
 | [**Item**](certificates-item.md)<br/>         | Somente leitura<br/> | Recupera um objeto de [**certificado**](certificate.md) que representa o certificado indexado da coleção. Essa é a propriedade padrão.<br/> (Herdado de **CertificatesICertificates2ICertificates**)          |
 
 
@@ -103,7 +103,7 @@ O objeto **Certificates** pode ser criado e é seguro para scripts. O ProgID do 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

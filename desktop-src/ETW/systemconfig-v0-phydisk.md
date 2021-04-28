@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de disco físico.
+description: Classe SystemConfig_V0_PhyDisk-essa classe é a classe de tipo de evento para eventos de configuração de disco físico.
 ms.assetid: 90ca3089-de5c-4e15-8abf-eaab9aafff06
 title: Classe SystemConfig_V0_PhyDisk
 ms.topic: reference
@@ -25,12 +25,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2f7eab1cec90630e25ee5968e5740f787acb8662
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdb12fac8b2b902f21258fd4c7cfe9846d0456eb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968148"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105954"
 ---
 # <a name="systemconfig_v0_phydisk-class"></a>\_Classe SystemConfig V0 \_ PhyDisk
 
@@ -291,7 +291,7 @@ True se o cache de gravação estiver habilitado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

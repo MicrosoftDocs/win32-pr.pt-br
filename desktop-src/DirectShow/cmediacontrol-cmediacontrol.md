@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CMediaControl. CMediaControl-método de construtor.
 ms.assetid: 00549dfe-5dd4-445e-bad3-eb6bcfea8f5f
 title: Construtor CMediaControl. CMediaControl (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63b965ff2484d4db7f7de41d8d524bc74c31ac73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96775678a8d182a3dc88f25fc19b194367c57d92
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770095"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099204"
 ---
 # <a name="cmediacontrolcmediacontrol-constructor"></a>Construtor CMediaControl. CMediaControl
 
@@ -72,7 +72,7 @@ Aloque o parâmetro *pname* na memória estática. Esse nome aparece no terminal
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

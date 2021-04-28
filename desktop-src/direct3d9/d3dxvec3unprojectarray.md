@@ -1,5 +1,5 @@
 ---
-description: Projeta uma matriz (x, y, z, 0) do espaço da tela no espaço do objeto.
+description: Função D3DXVec3UnprojectArray (D3dx9math. h)-projeta uma matriz (x, y, z, 0) do espaço da tela no espaço do objeto.
 ms.assetid: fef2a76c-c2fe-48c5-a1bb-6669bcc76b9b
 title: Função D3DXVec3UnprojectArray (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3af4cc05b5f8ee30c624f904df7e2ae5cd4b844a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 67e42b30a8f8d44bb9b21668a515a202436b7631
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930714"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097714"
 ---
 # <a name="d3dxvec3unprojectarray-function-d3dx9mathh"></a>Função D3DXVec3UnprojectArray (D3dx9math. h)
 
@@ -129,7 +129,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
@@ -150,7 +150,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

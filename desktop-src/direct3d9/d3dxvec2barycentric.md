@@ -1,5 +1,5 @@
 ---
-description: Retorna um ponto em coordenadas barycentric, usando os vetores 2D especificados.
+description: Função D3DXVec2BaryCentric (D3dx9math. h) – retorna um ponto em coordenadas barycentric, usando os vetores 2D especificados.
 ms.assetid: afbffe6d-d786-4d65-b737-ae201613d1ac
 title: Função D3DXVec2BaryCentric (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8feb2f999ccc3628419c986ec0263d0e7e167d67
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c3210624087a3d1d5a612ba1eb628e7d85ba4fea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091957"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117784"
 ---
 # <a name="d3dxvec2barycentric-function-d3dx9mathh"></a>Função D3DXVec2BaryCentric (D3dx9math. h)
 
@@ -99,7 +99,7 @@ Fator de ponderação. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
@@ -135,7 +135,7 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz que é dimensionada ao longo do eixo x, do eixo y e do eixo z.
+description: Função D3DXMatrixScaling (D3dx9math. h) – compila uma matriz que é dimensionada ao longo do eixo x, do eixo y e do eixo z.
 ms.assetid: f51baa4e-0aec-4de8-b746-24cb52f318d6
 title: Função D3DXMatrixScaling (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7cfc14fc1d514f68f2881d26c4729440d709af93
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97ccd4cc6207bb211259833d163793c3499b51a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105788693"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118064"
 ---
 # <a name="d3dxmatrixscaling-function-d3dx9mathh"></a>Função D3DXMatrixScaling (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Fator de dimensionamento aplicado ao longo do eixo z.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -100,7 +100,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

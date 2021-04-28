@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CMediaType. ~ CMediaType destruidor-método Destruitor.
 ms.assetid: 92375e95-adfb-414b-abbb-e827db2186ac
 title: CMediaType. ~ CMediaType destrutor (mtype. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 26efde8fe7d3c3efd0f29c77945011cef5834829
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c7a00d4a91f4fe871565b25f165e81df0f533ac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750475"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099084"
 ---
 # <a name="cmediatypecmediatype-destructor"></a>Destruidor CMediaType. ~ CMediaType
 
@@ -51,7 +51,7 @@ O destruidor chama a função [**FreeMediaType**](freemediatype.md) sozinha.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

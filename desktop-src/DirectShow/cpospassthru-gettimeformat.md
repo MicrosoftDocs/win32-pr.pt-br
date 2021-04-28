@@ -1,5 +1,5 @@
 ---
-description: 'O método GetTimeFormat recupera o formato de hora atual. Esse método implementa o método IMediaSeeking:: GetTimeFormat.'
+description: 'Método CPosPassThru. GetTimeFormat – o método GetTimeFormat recupera o formato de hora atual. Esse método implementa o método IMediaSeeking:: GetTimeFormat.'
 ms.assetid: 445c1873-da6f-42be-a4cf-0c475c5f0723
 title: Método CPosPassThru. GetTimeFormat (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f7db1b46cfe2ac06dc43b52009043ae32676f154
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 903d1c6163d4cad5c5b9ca22213b02542bb3da49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747818"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085584"
 ---
 # <a name="cpospassthrugettimeformat-method"></a>Método CPosPassThru. GetTimeFormat
 
@@ -49,7 +49,7 @@ Ponteiro para uma variável que recebe um GUID de formato de hora.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **HRESULT** do PIN conectado.
 
@@ -64,7 +64,7 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método DeliverBeginFlush solicita o pino de entrada conectado para iniciar uma operação de liberação.
+description: Método CDynamicOutputPin. DeliverBeginFlush – o método DeliverBeginFlush solicita o pino de entrada conectado para iniciar uma operação de liberação.
 ms.assetid: eafc3835-7696-480b-abc8-154938e19b15
 title: Método CDynamicOutputPin. DeliverBeginFlush (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 242394a327b63fcc901b08f572096bf2f42238b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4158a3d6191325e8b647e4551133952d623f795
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754540"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099314"
 ---
 # <a name="cdynamicoutputpindeliverbeginflush-method"></a>Método CDynamicOutputPin. DeliverBeginFlush
 
@@ -40,7 +40,7 @@ HRESULT DeliverBeginFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se bem-sucedido ou um valor **HRESULT** que indica a causa da falha.
 
@@ -59,7 +59,7 @@ Esse método substitui o método [**CBaseOutputPin::D eliverbeginflush**](cbaseo
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

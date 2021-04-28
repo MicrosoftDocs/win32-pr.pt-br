@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção de perspectiva personalizada para o lado direito.
+description: Função D3DXMatrixPerspectiveOffCenterRH (D3dx9math. h) – compila uma matriz de projeção de perspectiva personalizada e com o lado direito.
 ms.assetid: e6826e46-fc80-41fa-b0d8-45b6797df76f
 title: Função D3DXMatrixPerspectiveOffCenterRH (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8c4f211c6f57f60f8399fb5639edd07c3fc02377
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3d051894a6706cf8d58b81a85003666513f2a956
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173122"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118274"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx9mathh"></a>Função D3DXMatrixPerspectiveOffCenterRH (D3dx9math. h)
 
@@ -109,7 +109,7 @@ Valor z máximo do volume de exibição.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -144,7 +144,7 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

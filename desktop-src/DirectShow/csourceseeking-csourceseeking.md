@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CSourceSeeking. CSourceSeeking-método de construtor.
 ms.assetid: a51d90c9-4046-42dc-b7cf-51b904c5f57a
 title: Construtor CSourceSeeking. CSourceSeeking (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 309e926ddf001cf9933b19334992f5210fc7f17b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fcca70408e76466a88c620e3907271d49930973
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752693"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098814"
 ---
 # <a name="csourceseekingcsourceseeking-constructor"></a>Construtor CSourceSeeking. CSourceSeeking
 
@@ -84,7 +84,7 @@ Ponteiro para um objeto [**CCritSec**](ccritsec.md) . Na classe derivada, declar
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

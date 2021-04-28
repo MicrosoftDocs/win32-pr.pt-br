@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de configuração de CPU.
+description: Classe SystemConfig_V0_CPU-essa classe é a classe de tipo de evento para eventos de configuração de CPU.
 ms.assetid: 9ca77676-ff0e-4c47-ae4e-f8192376d3ca
 title: Classe SystemConfig_V0_CPU
 ms.topic: reference
@@ -19,12 +19,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6963201f76afa40e9b1741dc2936fa2ab4433a74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de3b63def40cb6ead40f6f4c95625603cfc581ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922557"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105984"
 ---
 # <a name="systemconfig_v0_cpu-class"></a>\_Classe de \_ CPU SystemConfig V0
 
@@ -183,7 +183,7 @@ Tamanho de uma página de permuta, em bytes.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
