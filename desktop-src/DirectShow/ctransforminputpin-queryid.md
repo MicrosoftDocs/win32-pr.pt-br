@@ -1,5 +1,5 @@
 ---
-description: 'O método QueryId recupera um identificador para o PIN. Esse método implementa o método IPin:: QueryId.'
+description: 'Método CTransformInputPin. QueryId – o método QueryId recupera um identificador para o PIN. Esse método implementa o método IPin:: QueryId.'
 ms.assetid: 91fde383-0288-4307-9ca8-e117b6111769
 title: Método CTransformInputPin. QueryId (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: daae425e82bbc89cfbc863baea1924e36e63f122
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8407e649814fcb12f699c2362f0f89137e941d19
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759260"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095003"
 ---
 # <a name="ctransforminputpinqueryid-method"></a>Método CTransformInputPin. QueryId
 
@@ -49,7 +49,7 @@ Recebe uma cadeia de caracteres que contém o identificador do PIN.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 | Código de retorno                                                                                   | Descrição                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente<br/>       |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo**<br/> |
 

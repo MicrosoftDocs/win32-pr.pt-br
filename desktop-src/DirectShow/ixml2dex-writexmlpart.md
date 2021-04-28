@@ -1,5 +1,5 @@
 ---
-description: Não implementado.
+description: 'Método IXml2Dex:: WriteXMLPart-não implementado.'
 ms.assetid: d0fc571f-79f5-448a-8082-6e5f7f48118f
 title: 'Método IXml2Dex:: WriteXMLPart'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8f194fe409d8ea94f786fe3802b2c758a1a00520
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 957fa74f09a79f94e2e0feb35c418a711c91c1b0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105810168"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084354"
 ---
 # <a name="ixml2dexwritexmlpart-method"></a>Método IXml2Dex:: WriteXMLPart
 
@@ -74,7 +74,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -90,7 +90,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

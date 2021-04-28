@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Commit.
+description: Função IWICBitmapFrameEncode_Commit_Proxy function-proxy para o método Commit.
 ms.assetid: 605801e5-00f8-4e4f-87d3-ad34d3568ee5
 title: Função IWICBitmapFrameEncode_Commit_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0da0cb95a13148082d8263f622bb4089a7c9bd30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f8ab87860c77cf58f73491a1fb5fc1b658ed67f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296290"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091114"
 ---
 # <a name="iwicbitmapframeencode_commit_proxy-function"></a>Função de proxy de \_ confirmação de IWICBitmapFrameEncode \_
 
@@ -43,13 +43,13 @@ HRESULT IWICBitmapFrameEncode_Commit_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Ponteiro para este objeto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Ponteiro para este objeto [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

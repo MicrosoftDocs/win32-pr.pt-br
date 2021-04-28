@@ -1,5 +1,5 @@
 ---
-description: Recupera o número de faces na malha.
+description: 'Método ID3DX10Mesh:: GetFaceCount – recupera o número de faces na malha.'
 ms.assetid: a36b758b-4805-4b01-98ce-a8ee7bc1f3b5
 title: 'Método ID3DX10Mesh:: GetFaceCount (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cf8a5a207703c48b4138c63e429bd57a9d8fb17d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 13efa3ccdd5c9ae3b5f255ae08a456187e7ed4cf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298705"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083993"
 ---
 # <a name="id3dx10meshgetfacecount-method"></a>Método ID3DX10Mesh:: GetFaceCount
 
@@ -38,7 +38,7 @@ UINT GetFaceCount();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna o número de faces na malha.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

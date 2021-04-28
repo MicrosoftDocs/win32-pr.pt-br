@@ -1,5 +1,5 @@
 ---
-description: Retorna uma coleção de objetos (classes ou instâncias) chamadas de pontos de extremidade que estão associados a um objeto especificado.
+description: Método SWbemServices. AssociatorsOfAsync – retorna uma coleção de objetos (classes ou instâncias) chamadas de pontos de extremidade que estão associados a um objeto especificado.
 ms.assetid: 3969d90f-d39c-40f1-9328-fc1afbaa53b1
 ms.tgt_platform: multiple
 title: Método SWbemServices. AssociatorsOfAsync (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d83f2eb33b7cd2d6ce6345d9b40a2367539dfec7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b16eed97c891b4b4f5bd283496868d99f9e0fbc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798265"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103664"
 ---
 # <a name="swbemservicesassociatorsofasync-method"></a>Método SWbemServices. AssociatorsOfAsync
 
@@ -184,7 +184,7 @@ Um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao coletor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor. Se for bem-sucedido, o coletor receberá um evento [**OnObjectReady**](swbemsink-onobjectready.md) por instância. Após a última instância, o coletor de objeto recebe um evento [**OnCompleted**](swbemsink-oncompleted.md) .
 
@@ -253,7 +253,7 @@ Use o parâmetro *objWbemAsyncContext* em scripts para verificar a origem de uma
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

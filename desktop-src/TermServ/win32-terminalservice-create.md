@@ -1,6 +1,6 @@
 ---
 title: Método Create da classe Win32_Service (Serviços de Área de Trabalho Remota)
-description: Cria um novo serviço do sistema.
+description: Método Create da classe Win32_Service (Serviços de Área de Trabalho Remota) – cria um novo serviço do sistema.
 ms.assetid: 805754AA-B62A-4324-B289-503C42BEFA49
 ms.tgt_platform: multiple
 keywords:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be44d6c67e0d5bd6333f57c44cc44c25dc64e04a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9daf877f56bb7e9bfcc349e4efb38635a9286a48
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455477"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090684"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Método Create da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -260,7 +260,7 @@ Matriz que contém nomes de serviços que devem ser iniciados antes do início d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -465,7 +465,7 @@ O parâmetro *Loadordener* representa um agrupamento de serviços do sistema que
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

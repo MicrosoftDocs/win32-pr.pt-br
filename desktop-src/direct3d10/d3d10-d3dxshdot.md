@@ -1,5 +1,5 @@
 ---
-description: Computa o produto de ponto de dois vetores de harmônica esférica (SH).
+description: Função D3DXSHDot (D3DX10. h) – computa o produto dot de dois vetores de harmônica esférica (SH).
 ms.assetid: 30f0e858-4c31-4b25-9979-754d996a7d48
 title: Função D3DXSHDot (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 20f0896168dae0e2a779625c683777938c8e2df2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ea3e839ff7a5fc038cf40a6402db4a358da8b39
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782667"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108624"
 ---
 # <a name="d3dxshdot-function-d3dx10h"></a>Função D3DXSHDot (D3DX10. h)
 
@@ -69,7 +69,7 @@ Aponta para o segundo vetor SH.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
@@ -93,7 +93,7 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Projeta um vetor 3D do espaço do objeto no espaço da tela.
+description: Função D3DXVec3Project (D3DX10Math. h)-projeta um vetor 3D do espaço do objeto no espaço da tela.
 ms.assetid: 6fc59788-c3f7-4f47-a345-9108105e820e
 title: Função D3DXVec3Project (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: c8d86949f754afb7639a0c28ff6d8b14c0e40ff0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4a2cffa77b2a66267daf0a67a59698ae3e3b8eb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298644"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108164"
 ---
 # <a name="d3dxvec3project-function-d3dx10mathh"></a>Função D3DXVec3Project (D3DX10Math. h)
 
@@ -98,7 +98,7 @@ Ponteiro para uma estrutura D3DXMATRIX, representando a matriz mundial.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
@@ -118,7 +118,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

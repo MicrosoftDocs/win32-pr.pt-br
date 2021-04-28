@@ -1,15 +1,15 @@
 ---
-description: Esse modelo é instanciado em uma base por malha, mantendo informações sobre quais vértices na malha são duplicados uns dos outros.
+description: VertexDuplicationIndices-este modelo é instanciado por malha, mantendo informações sobre quais vértices na malha são duplicados uns dos outros.
 ms.assetid: 43417389-69c1-4af6-92c2-75b621f9c165
 title: VertexDuplicationIndices
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42d62278c206032c9a2dfed6ce9b2cd36c5e7456
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b33a8c5fca4f479eec6e9864d4528d4e3e4a1e32
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105764088"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090173"
 ---
 # <a name="vertexduplicationindices"></a>VertexDuplicationIndices
 
@@ -31,7 +31,7 @@ Em que:
 -   nOriginalVertices-número de vértices na malha antes de qualquer duplicação ocorrer.
 -   Os índices de valor \[ n \] contêm o índice de vértices que o vértice \[ n \] na matriz de vértices para a malha teria tido se nenhuma duplicação tivesse ocorrido. Os índices nessa matriz são os mesmos, portanto, indicam vértices duplicados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_VssComponent-solicita uma alteração de estado.
 ms.assetid: 27a8ab6e-afbd-4d87-afd6-8da0cc5e3fba
 title: Método RequestStateChange da classe Msvm_VssComponent
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7aa40cb65caf41d731085c10aedf21932992e1dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f75d0e2eed242155f27a7355182bf616d14de7e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758976"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109264"
 ---
 # <a name="requeststatechange-method-of-the-msvm_vsscomponent-class"></a>Método RequestStateChange da classe Msvm \_ VssComponent
 
@@ -141,7 +141,7 @@ Se essa propriedade não contiver 0 ou NULL e a implementação não oferecer su
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -167,7 +167,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

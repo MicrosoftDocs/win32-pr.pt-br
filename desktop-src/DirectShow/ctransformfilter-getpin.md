@@ -1,5 +1,5 @@
 ---
-description: O método GetPin recupera um PIN.
+description: Método CTransformFilter. GetPin – o método GetPin recupera um PIN.
 ms.assetid: 5d278ef0-e5ce-439e-93b1-fec988c55854
 title: Método CTransformFilter. GetPin (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 30567db84eefd5471dbbe1fbd2d2e5ed64514ba2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e76cafce2ca5a9881b87d9248c144dc584971c0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759089"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085074"
 ---
 # <a name="ctransformfiltergetpin-method"></a>Método CTransformFilter. GetPin
 
@@ -49,7 +49,7 @@ Número do PIN especificado, indexado de zero. Nesse filtro, o pino 0 é o pino 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um ponteiro para o objeto [**CBasePin**](cbasepin.md) que implementa o PIN ou **NULL** se o método falhar.
 
@@ -72,7 +72,7 @@ Se o filtro usar os Pins [**CTransformInputPin**](ctransforminputpin.md) e [**CT
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

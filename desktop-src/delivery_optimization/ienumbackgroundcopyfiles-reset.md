@@ -1,6 +1,6 @@
 ---
 title: Método de redefinição de IEnumBackgroundCopyFiles (Deliveryoptimization. h)
-description: Redefine a sequência de enumeração para o início.
+description: 'Método IEnumBackgroundCopyFiles:: Reset – redefine a sequência de enumeração para o início.'
 ms.assetid: 6A303069-105C-4053-A8C5-2ECF60E789DE
 keywords:
 - Método Reset
@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 314c7cae44ae48402642c202a624b9a60590e55b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6800095d0a6f20ef8b632830a224d4da27356bf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105484"
 ---
 # <a name="ienumbackgroundcopyfilesreset-method"></a>Método IEnumBackgroundCopyFiles:: Reset
 
@@ -41,7 +41,7 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **HRESULT** em erro.
 
@@ -61,7 +61,7 @@ Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

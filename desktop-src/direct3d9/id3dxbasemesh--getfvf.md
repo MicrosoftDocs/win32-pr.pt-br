@@ -1,5 +1,5 @@
 ---
-description: Obtém o valor de vértice da função fixa.
+description: 'Método ID3DXBaseMesh:: GetFVF – Obtém o valor de vértice da função fixa.'
 ms.assetid: ed56ff2d-0366-426c-9f9a-7d1a7c5d1a7c
 title: 'Método ID3DXBaseMesh:: GetFVF (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7ee76292c30b3dfb0a2e38b060f50ef643ae07ae
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e37db51238137d67ba6e060ecfafb7d1361727e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930634"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115434"
 ---
 # <a name="id3dxbasemeshgetfvf-method"></a>Método ID3DXBaseMesh:: GetFVF
 
@@ -38,7 +38,7 @@ DWORD GetFVF();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
@@ -59,7 +59,7 @@ Esse método pode retornar 0 se o formato de vértice não puder ser mapeado dir
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

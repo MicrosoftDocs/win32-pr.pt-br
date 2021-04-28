@@ -1,5 +1,5 @@
 ---
-description: Ocorre quando o estado de seleção de qualquer item ou itens na exibição é alterado.
+description: Evento ShellFolderView. SelectionChanged – ocorre quando o estado de seleção de qualquer item ou itens na exibição é alterado.
 title: Evento ShellFolderView. SelectionChanged (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: e91b72fd-fd26-4e38-8e80-41febec3ca03
-ms.openlocfilehash: 864cd4c7bb0b414e4237c698412ad10899c8cbb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31a32865a979bf6b5fa115912bdc32a9680e5064
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011608"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103994"
 ---
 # <a name="shellfolderviewselectionchanged-event"></a>Evento ShellFolderView. SelectionChanged
 

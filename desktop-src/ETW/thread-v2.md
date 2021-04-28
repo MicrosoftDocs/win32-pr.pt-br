@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Thread_V2-essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 63e52cba-42a5-44f0-8eb6-e1bac8414a83
 title: Classe Thread_V2
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f28b68a2aac5f2d5293f94ed2bab366d238ae662
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b00067af61a55e61f70b0c799a1512edf284f11c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828892"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105614"
 ---
 # <a name="thread_v2-class"></a>Classe de thread \_ v2
 
@@ -75,7 +75,7 @@ Eventos de início de processo e thread podem ser registrados no contexto do pro
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
@@ -85,7 +85,7 @@ Eventos de início de processo e thread podem ser registrados no contexto do pro
 [**CSwitch**](cswitch.md)
 </dt> <dt>
 
-[**Processo**](thread.md)
+[**Thread**](thread.md)
 </dt> <dt>
 
 [**Thread \_ TypeGroup1**](thread-typegroup1.md)

@@ -1,5 +1,5 @@
 ---
-description: Contagem de referência.
+description: 'CMediaSample:: m_cRef contagem de referência de membro.'
 ms.assetid: 57b8498d-2aa4-414f-9e0a-3ddcb748fb38
 title: 'Membro CMediaSample:: m_cRef (Amfilter. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5affe285a165d8736f7a2173b76d6309f3cb4725
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab1c34d6e62a3d66a2d7a412a03c94705615e3f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778621"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095444"
 ---
 # <a name="cmediasamplem_cref-member"></a>Membro cRef CMediaSample:: m \_
 
 Contagem de referência.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ LONG m_cRef;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

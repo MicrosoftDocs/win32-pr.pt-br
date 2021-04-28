@@ -1,5 +1,5 @@
 ---
-description: Verifique se a versão do D3DX que você compilou com o é a versão que você está executando.
+description: Função D3DX10CheckVersion – Verifique se a versão do D3DX que você compilou com o é a versão que você está executando.
 ms.assetid: 57085b07-f77b-425e-a889-22c3071d7143
 title: Função D3DX10CheckVersion (D3DX10Core. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3b41996f16cb97d91dc59f8d368f13b905992388
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4fc8befa88fb706965a30224843745b033ea205b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105790423"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105344"
 ---
 # <a name="d3dx10checkversion-function"></a>Função D3DX10CheckVersion
 
@@ -59,7 +59,7 @@ Use a \_ versão do SDK do D3DX10 \_ . Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -90,7 +90,7 @@ if( FAILED( D3DX10CheckVersion(D3D10_SDK_VERSION, D3DX10_SDK_VERSION) ) )
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

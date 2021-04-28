@@ -1,5 +1,5 @@
 ---
-description: O método GetMediaTime recupera os carimbos de data/hora no exemplo atual.
+description: Método CRendererPosPassThru. GetMediaTime – o método GetMediaTime recupera os carimbos de data/hora no exemplo atual.
 ms.assetid: 13710373-04fd-4c1d-ba97-78be5cf27e7d
 title: Método CRendererPosPassThru. GetMediaTime (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 628c0f0c65dad4e00dd259edbeee97fd8f6f13ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 588c92faec6b68cfa51392d4df00567c4e881460
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755341"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085364"
 ---
 # <a name="crendererpospassthrugetmediatime-method"></a>Método CRendererPosPassThru. GetMediaTime
 
@@ -57,7 +57,7 @@ Ponteiro para uma variável que recebe a hora de término, em unidades do format
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                  | Descrição                                            |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Sucesso.<br/>                                    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Não há suporte para a conversão para esse formato.<br/> |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>    | Argumento de ponteiro **nulo** .<br/>                  |
 

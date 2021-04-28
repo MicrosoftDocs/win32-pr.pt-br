@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Classe TcpIp_V1_TypeGroup1-essa classe é a classe de tipo de evento para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 1cde7e37-52da-4108-90ce-7647a5653f65
 title: Classe TcpIp_V1_TypeGroup1
 ms.topic: reference
@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fcd5f19eafa5308ef369a211559c6c464427b168
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 831dfdc228e2c8e128f328784046e833b0b45a39
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967571"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105754"
 ---
 # <a name="tcpip_v1_typegroup1-class"></a>\_ \_ Classe TypeGroup1 tcpip v1
 
@@ -165,7 +165,7 @@ Número da porta de origem.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

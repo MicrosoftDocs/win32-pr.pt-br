@@ -1,5 +1,5 @@
 ---
-description: TakeOwnerShip&\# 8194; O método de classe WMI Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe Win32_ShortcutFile-o TakeOwnerShip&\# 8194; O método de classe WMI Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: 1a8ff156-50b2-4550-abcc-7a6ae0e4630f
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip da classe Win32_ShortcutFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5da7a237ae1943e65bc1cc757d5c4a16c6df8900
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 36364a55276842518480c3d3d37c57c3ae0a06ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920186"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085994"
 ---
 # <a name="takeownership-method-of-the-win32_shortcutfile-class"></a>Método TakeOwnerShip da \_ classe shortcutfile do Win32
 
@@ -40,7 +40,7 @@ uint32 TakeOwnerShip();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores inteiros a seguir.
 
@@ -151,7 +151,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

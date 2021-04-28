@@ -1,5 +1,5 @@
 ---
-description: Retorna um Quaternion nas coordenadas de barycentric.
+description: Função D3DXQuaternionBaryCentric (D3DX10Math. h) – retorna um Quaternion em coordenadas barycentric.
 ms.assetid: 0a8d8d5a-f486-4457-86e9-27e76eaf1bc4
 title: Função D3DXQuaternionBaryCentric (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f7cdfcf5b8e7052fcbea72f12123a0ea44422853
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00d8e41a0173b7b26083f38beb82417365ef7067
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812808"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108774"
 ---
 # <a name="d3dxquaternionbarycentric-function-d3dx10mathh"></a>Função D3DXQuaternionBaryCentric (D3DX10Math. h)
 
@@ -99,7 +99,7 @@ Fator de ponderação. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
@@ -133,7 +133,7 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

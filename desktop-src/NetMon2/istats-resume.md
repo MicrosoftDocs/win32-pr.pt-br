@@ -1,5 +1,5 @@
 ---
-description: O método retomar reinicia uma captura pausada.
+description: 'Método IStats:: resume-o método retomar reinicia uma captura pausada.'
 ms.assetid: 128e38c4-7459-4376-a3d7-2c6944fcf535
 title: 'Método IStats:: resume (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: db84f51d2a2a2c2d15e3b4164fe1fac09e72bf20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7818da3d8a02e41488d473d3cf26607d3b84ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829340"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114614"
 ---
 # <a name="istatsresume-method"></a>Método IStats:: resume
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Resume();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -46,7 +46,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 
 
-| Código de retorno                                                                                                | Description                                                                                                                                  |
+| Código de retorno                                                                                                | Descrição                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>       | O NPP não está conectado à rede.<br/>                                                                                          |
 | <dl> <dt>**captura de NMERR \_ \_ não \_ pausada**</dt> </dl> | A captura não está em pausa. Chame o método [IStats::P ause](istats-pause.md) para interromper temporariamente a captura.<br/>                     |
@@ -78,7 +78,7 @@ Para interromper a captura, chame [IStats:: Stop](istats-stop.md).
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

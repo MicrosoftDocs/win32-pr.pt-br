@@ -1,5 +1,5 @@
 ---
-description: Propriedades de informações do dispositivo são propriedades que descrevem a instalação e a instalação do dispositivo.
+description: Constantes da propriedade de informações do dispositivo – Propriedades de informações do dispositivo são propriedades que descrevem a instalação e a instalação do dispositivo.
 ms.assetid: ff6771ac-491e-4765-8cfe-11c7efc1c971
 title: Constantes da propriedade de informações do dispositivo (Wiadef. h)
 ms.topic: reference
@@ -28,12 +28,12 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: 18c44bb310c2dcee5bb227e0885a71b58f5b362e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aec37ae84eed6b15bc10a4e979a5d95d21be3423
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793854"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097234"
 ---
 # <a name="device-information-property-constants"></a>Constantes da propriedade de informações do dispositivo
 

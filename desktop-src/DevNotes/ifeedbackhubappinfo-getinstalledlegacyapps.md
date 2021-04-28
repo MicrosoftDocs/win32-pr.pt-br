@@ -1,5 +1,5 @@
 ---
-description: Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+description: 'Método IFeedbackHubAppInfo:: GetInstalledLegacyApps-essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.'
 ms.assetid: 84135D6F-8232-4CE5-AD38-D18823F0E174
 title: 'Método IFeedbackHubAppInfo:: GetInstalledLegacyApps'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 112dd6c1acd74fdaa7e99e48b0e4c14486749438
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 167be3846322a1b3aacdf752374b9b0089220963
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104298035"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096694"
 ---
 # <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>Método IFeedbackHubAppInfo:: GetInstalledLegacyApps
 
@@ -45,7 +45,7 @@ Esta API não está disponível para todos os aplicativos. A menos que seu aplic
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -60,7 +60,7 @@ Esse método não retorna um valor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

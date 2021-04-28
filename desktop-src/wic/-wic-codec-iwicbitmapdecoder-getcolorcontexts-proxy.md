@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método GetColorContexts.
+description: Função de proxy de função IWICBitmapDecoder_GetColorContexts_Proxy para o método GetColorContexts.
 ms.assetid: 2a6db3bd-d3e1-4e87-a04d-0d1c3ea858fb
 title: Função IWICBitmapDecoder_GetColorContexts_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 737ad4b8bbb0014a04129d3a264cecaed4b5fe8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e550ca4ebd863e58a4bd285c48a2a01aad059b03
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765275"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086254"
 ---
 # <a name="iwicbitmapdecoder_getcolorcontexts_proxy-function"></a>\_Função de \_ proxy IWICBitmapDecoder GetColorContexts
 
@@ -46,9 +46,9 @@ HRESULT IWICBitmapDecoder_GetColorContexts_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-Ponteiro para este objeto [_ *IWICBitmapDecoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
+Ponteiro para este objeto [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
 
 </dd> <dt>
 
@@ -75,15 +75,15 @@ Um ponteiro que recebe um ponteiro para o [**IWICColorContext**](/windows/deskto
 *pcActualCount* \[ fora\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **uint \***
 
 Um ponteiro que recebe o número de contextos de cor contidos na imagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

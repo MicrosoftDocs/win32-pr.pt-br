@@ -1,5 +1,5 @@
 ---
-description: O método Clear exclui todos os itens da coleção.
+description: 'Método IPortableDeviceKeyCollection:: Clear – o método Clear exclui todos os itens da coleção.'
 ms.assetid: d5477ded-d0bd-4909-abb1-6ff282cf7925
 title: 'Método IPortableDeviceKeyCollection:: Clear (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: e72f20d93ddbdf521bcd83c1fe07d75f74abd463
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e5efb8b3784b9ddc04a9e28a83c39ef75d723b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789305"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106804"
 ---
 # <a name="iportabledevicekeycollectionclear-method"></a>Método IPortableDeviceKeyCollection:: Clear
 
@@ -38,7 +38,7 @@ HRESULT Clear();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -63,7 +63,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
