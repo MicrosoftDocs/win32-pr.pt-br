@@ -1,5 +1,5 @@
 ---
-description: O status atual do relatório.
+description: Propriedade LocationDisp. LatLongReportFactory. status-o status atual do relatório.
 ms.assetid: bcdf76b5-88c4-481a-89ac-2b9558cecfc0
 title: Propriedade LocationDisp. LatLongReportFactory. status
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c32f1e58c5c519bdbdf797f81f11a449bfb3dc1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37e66c3f289f5376b31ffe516f45d79f2fef51e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296855"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088894"
 ---
 # <a name="locationdisplatlongreportfactorystatus-property"></a>Propriedade LocationDisp. LatLongReportFactory. status
 
@@ -47,7 +47,7 @@ Esta propriedade é um **número** somente leitura (sem sinal).
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Relatório sem suporte.<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Erro.<br/>                |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Acesso negado.<br/>        |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Inicializando.<br/>         |
+| <span id="3"></span><dl> <dt>**Beta**</dt> </dl> | Inicializando.<br/>         |
 | <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Running.<br/>              |
 
 

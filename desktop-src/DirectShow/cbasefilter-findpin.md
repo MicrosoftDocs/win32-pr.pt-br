@@ -1,5 +1,5 @@
 ---
-description: 'O método FindPin recupera o PIN com o identificador especificado. Esse método implementa o método IBaseFilter:: FindPin.'
+description: 'Método CBaseFilter. FindPin – o método FindPin recupera o PIN com o identificador especificado. Esse método implementa o método IBaseFilter:: FindPin.'
 ms.assetid: 152e4ff3-2809-4c57-b9c8-f51fc50b3703
 title: Método CBaseFilter. FindPin (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98b49c547ec59a74185f7f719da660220de8480f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2bbef9b051a42597b2585a432f544eead4e2e0a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748831"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099814"
 ---
 # <a name="cbasefilterfindpin-method"></a>Método CBaseFilter. FindPin
 
@@ -57,7 +57,7 @@ Endereço de uma variável que recebe um ponteiro para a interface [**IPin**](/w
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 
@@ -65,7 +65,7 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 | Código de retorno                                                                                       | Descrição                               |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>              | Êxito.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Sucesso.<br/>                       |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>         | Argumento de ponteiro **nulo** .<br/>     |
 | <dl> <dt>**VFW \_ E \_ não \_ encontrado**</dt> </dl> | Não foi possível localizar um PIN correspondente.<br/> |
 
@@ -90,7 +90,7 @@ Se o método tiver sucesso, a interface **IPin** terá uma contagem de referênc
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

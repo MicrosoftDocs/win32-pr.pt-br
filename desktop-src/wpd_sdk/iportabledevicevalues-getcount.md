@@ -1,5 +1,5 @@
 ---
-description: O método GetCount recupera o número de itens na coleção.
+description: 'Método IPortableDeviceValues:: GetCount – o método GetCount recupera o número de itens na coleção.'
 ms.assetid: 89266483-4211-43d2-a306-68c70f1e7026
 title: 'Método IPortableDeviceValues:: GetCount (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 710348b2f2626d39efcbdf68373d1e556ecc335c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7a2f1f71f81296f56be779a4c6eea746ebd0963
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751333"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086234"
 ---
 # <a name="iportabledevicevaluesgetcount-method"></a>Método IPortableDeviceValues:: GetCount
 
@@ -47,7 +47,7 @@ Ponteiro para um **DWORD** que contém o número de itens na coleção.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -72,7 +72,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

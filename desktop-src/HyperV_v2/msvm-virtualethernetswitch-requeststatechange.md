@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_VirtualEthernetSwitch-solicita uma alteração de estado.
 ms.assetid: 17b4ad3f-c00a-4649-a92e-3049d1df2dba
 title: Método RequestStateChange da classe Msvm_VirtualEthernetSwitch
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 48445dec3206a93a2ea8ab081af0a487b9894d7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53acbcfceb0e90c817aab27c62d674f94c150585
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011307"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111084"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualethernetswitch-class"></a>Método RequestStateChange da classe Msvm \_ VirtualEthernetSwitch
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

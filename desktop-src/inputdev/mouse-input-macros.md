@@ -1,15 +1,15 @@
 ---
 title: Macros de entrada do mouse
-description: .
+description: Macros de entrada do mouse
 ms.assetid: 0c90dea6-18a9-4d6a-80a4-847d5c4e815b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac9b8c2ad32ff48b3914af8584b686375efe335f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 54055b0626a28000f9f52f3129e16c29722b090d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365878"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112844"
 ---
 # <a name="mouse-input-macros"></a>Macros de entrada do mouse
 
@@ -25,6 +25,6 @@ ms.locfileid: "104365878"
 -   [**OBTER \_ \_ wParam Delta do volante \_**](/windows/win32/api/winuser/nf-winuser-get_wheel_delta_wparam)
 -   [**OBTER \_ \_ wParam XBUTTON**](/windows/win32/api/winuser/nf-winuser-get_xbutton_wparam)
 
- 
+ 
 
- 
+ 

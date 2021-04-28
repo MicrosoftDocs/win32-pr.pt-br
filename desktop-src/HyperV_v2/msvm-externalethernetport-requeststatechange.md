@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_ExternalEthernetPort-solicita uma alteração de estado.
 ms.assetid: 57d863bd-7fa2-4291-99bf-42ac4f813d59
 title: Método RequestStateChange da classe Msvm_ExternalEthernetPort
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 41060e671802a218f31530cf02577fcf5540123a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a9f135e65527b252fbe1c3da0345655b5c14c72
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782354"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111885"
 ---
 # <a name="requeststatechange-method-of-the-msvm_externalethernetport-class"></a>Método RequestStateChange da classe Msvm \_ ExternalEthernetPort
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

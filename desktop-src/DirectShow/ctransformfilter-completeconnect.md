@@ -1,5 +1,5 @@
 ---
-description: O método CompleteConnect conclui uma conexão de PIN.
+description: Método CTransformFilter. CompleteConnect – o método CompleteConnect conclui uma conexão de PIN.
 ms.assetid: b687d2ee-4aee-4fae-bc2f-23ee037d0e6d
 title: Método CTransformFilter. CompleteConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 630950cf9b05c08412394bf9270f2369b3f3b94b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2251ba45c7a39ec9bf205fdd6643e02392e40e5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751239"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095164"
 ---
 # <a name="ctransformfiltercompleteconnect-method"></a>Método CTransformFilter. CompleteConnect
 
@@ -57,7 +57,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -76,7 +76,7 @@ Os métodos [**CTransformInputPin:: CompleteConnect**](ctransforminputpin-comple
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

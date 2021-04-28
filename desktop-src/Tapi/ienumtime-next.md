@@ -1,15 +1,15 @@
 ---
-description: O próximo método obtém o próximo número especificado de elementos na sequência de enumeração.
+description: 'Método IEnumTime:: Next – o próximo método obtém o próximo número especificado de elementos na sequência de enumeração.'
 ms.assetid: e8ca77b8-0322-43b4-9996-26f584cf878a
 title: 'Método IEnumTime:: Next (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fce3d88bc88e808c35ec64f827fd5925ddfe57f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1487136b0e3e41ba11a23ba92500d2aa0758df79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780605"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118384"
 ---
 # <a name="ienumtimenext-method"></a>Método IEnumTime:: Next
 
@@ -55,7 +55,7 @@ Aponta para o número de elementos realmente fornecidos. Poderá ser **NULL** se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -88,7 +88,7 @@ A TAPI chama o método **AddRef** na interface [**ITTime**](ittime.md) retornada
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

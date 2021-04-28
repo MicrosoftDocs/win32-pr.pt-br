@@ -1,5 +1,5 @@
 ---
-description: 'O método NotifyAllocator especifica um alocador para a conexão. Esse método implementa o método IMemInputPin:: NotifyAllocator.'
+description: 'Método CBaseInputPin. NotifyAllocator – o método NotifyAllocator especifica um alocador para a conexão. Esse método implementa o método IMemInputPin:: NotifyAllocator.'
 ms.assetid: 16167bd5-2d33-4329-87ec-6a6c578e0060
 title: Método CBaseInputPin. NotifyAllocator (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce5bc3cfe165b1adb6b5b970ca43d31c8ace98f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c63e448d0cf2d287a441a4983f6a2e06bd9b8151
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753363"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099706"
 ---
 # <a name="cbaseinputpinnotifyallocator-method"></a>Método CBaseInputPin. NotifyAllocator
 
@@ -57,7 +57,7 @@ Sinalizador que especifica se os exemplos deste alocador são somente leitura. S
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -76,7 +76,7 @@ Durante a conexão do PIN, o pino de saída escolhe um alocador e chama esse mé
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

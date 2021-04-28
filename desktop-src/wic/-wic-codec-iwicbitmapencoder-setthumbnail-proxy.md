@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método SetThumbnail.
+description: Função IWICBitmapEncoder_SetThumbnail_Proxy function-proxy para o método SetThumbnail.
 ms.assetid: 6c062eaf-27a4-4d48-8315-be9bf168f999
 title: Função IWICBitmapEncoder_SetThumbnail_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: d2670dae0d8ba9eeda7ca1d6dce5d3957dc59b7f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7666fffbac7813db8021daf38ebae9c4e68c57a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461070"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100594"
 ---
 # <a name="iwicbitmapencoder_setthumbnail_proxy-function"></a>\_Função de proxy IWICBitmapEncoder SetThumbnail \_
 
@@ -44,22 +44,22 @@ HRESULT IWICBitmapEncoder_SetThumbnail_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) \** _
+Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\***
 
-Ponteiro para este objeto [_ *IWICBitmapEncoder* *](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
+Ponteiro para este objeto [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
 
 </dd> <dt>
 
 *pIThumbnail* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-O [_ *IWICBitmapSource* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) a ser definido como a miniatura global.
+O [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) a ser definido como a miniatura global.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

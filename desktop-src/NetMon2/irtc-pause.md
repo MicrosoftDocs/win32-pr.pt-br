@@ -1,5 +1,5 @@
 ---
-description: O método pause pausa a captura atual.
+description: IRTC::P método ause-o método pause pausa a captura atual.
 ms.assetid: 8c7b310e-de04-4bd8-9c96-3c5948e610be
 title: 'IRTC: método ause de:P (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d2593c380d0fea52d030586da2f473a3f3fa9446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d42af1912365a4237889e4e46d0fb3343377c772
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165348"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110674"
 ---
 # <a name="irtcpause-method"></a>IRTC: método ause de:P
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Pause();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -78,7 +78,7 @@ Para reiniciar a chamada de captura [IRTC:: resume](irtc-resume.md). Para interr
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

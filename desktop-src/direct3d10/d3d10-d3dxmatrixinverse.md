@@ -1,5 +1,5 @@
 ---
-description: Calcula o inverso de uma matriz.
+description: Função D3DXMatrixInverse (D3DX10Math. h) – calcula o inverso de uma matriz.
 ms.assetid: 928a201b-814d-41cc-bfab-d2f8a12addeb
 title: Função D3DXMatrixInverse (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc075609ea118e12b46846f649d689f6fbc2caf7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b42cf0ae3f9ee1154d385600b00a2dcb10c4fd9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506524"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113194"
 ---
 # <a name="d3dxmatrixinverse-function-d3dx10mathh"></a>Função D3DXMatrixInverse (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para a estrutura de D3DXMATRIX de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -88,7 +88,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

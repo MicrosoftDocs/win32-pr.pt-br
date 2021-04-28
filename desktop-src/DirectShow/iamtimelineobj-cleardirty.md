@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: ClearDirty-sem suporte.'
 ms.assetid: 2d6efa65-79ae-4c31-bd98-ad69baea4da2
 title: 'Método IAMTimelineObj:: ClearDirty (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d743c062f4c565aabb8f5852e3397ec8f92193a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 92c1beb385b917ec03cbd34feea1bb1aca8d9792
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779536"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119544"
 ---
 # <a name="iamtimelineobjcleardirty-method"></a>Método IAMTimelineObj:: ClearDirty
 
@@ -43,7 +43,7 @@ HRESULT ClearDirty();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -70,7 +70,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método GetTotalStatistics recupera o total de estatísticas para a captura atual.
+description: 'Método IRTC:: GetTotalStatistics – o método GetTotalStatistics recupera o total de estatísticas para a captura atual.'
 ms.assetid: e5098984-c69e-4cd5-9143-d85dfcbd7b92
 title: 'Método IRTC:: GetTotalStatistics (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 27128048b4326aae14ae6a2e2e6c0540b1105538
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ed659efe388f4eb9c9ac8afd6aa2c74fd0af7d3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770144"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110684"
 ---
 # <a name="irtcgettotalstatistics-method"></a>Método IRTC:: GetTotalStatistics
 
@@ -55,7 +55,7 @@ Sinalizador usado para informar Monitor de Rede como lidar com o armazenamento i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -92,7 +92,7 @@ Monitor de Rede também armazena [*Estatísticas de conversa*](c.md). Para recup
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

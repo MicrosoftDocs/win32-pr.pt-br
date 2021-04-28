@@ -1,5 +1,5 @@
 ---
-description: O método RemoveAt remove o elemento armazenado no local especificado pelo índice fornecido.
+description: 'Método IPortableDeviceKeyCollection:: RemoveAt – o método RemoveAt remove o elemento armazenado no local especificado pelo índice fornecido.'
 ms.assetid: 70f220be-d70b-4a25-8e16-82ed42adf2c4
 title: 'Método IPortableDeviceKeyCollection:: RemoveAt (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f4e126ef5fcad74b7cee5f748322f15e75481e0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ec2b1137e7959a646c2943ab1aa7a5c3428d3c0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797917"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109934"
 ---
 # <a name="iportabledevicekeycollectionremoveat-method"></a>Método IPortableDeviceKeyCollection:: RemoveAt
 
@@ -47,7 +47,7 @@ Especifica o índice do elemento a ser removido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -77,7 +77,7 @@ Você deve especificar um índice com base em zero.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

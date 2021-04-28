@@ -1,5 +1,5 @@
 ---
-description: O método Disconnect desconecta o NPP da rede.
+description: 'IRTC: método isconnect:D-o método Disconnect desconecta o NPP da rede.'
 ms.assetid: 47a0cce0-a50d-4bad-9787-672cc3d13d07
 title: 'IRTC: método:D isconnect (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: df58d6ac0e61ecc370510474c3bc067726d9824b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43acb88e2c7b6108a162c4715de02375121021f8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165349"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110714"
 ---
 # <a name="irtcdisconnect-method"></a>Método IRTC::D isconnect
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -73,7 +73,7 @@ Este método não pode ser chamado quando o NPP está capturando dados. Você de
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

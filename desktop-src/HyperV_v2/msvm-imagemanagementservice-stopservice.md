@@ -1,5 +1,5 @@
 ---
-description: Interrompe o serviço.
+description: Método StopService da classe Msvm_ImageManagementService-para o serviço.
 ms.assetid: 96f49c9c-7f1c-497e-9630-5fd9b355b75d
 title: Método StopService da classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d61f95af2cc0efe371a91454c74adc96949e00e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9dde7af6f6d62395f27cbd3ec44daf45d7375f8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754668"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118925"
 ---
 # <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StopService da classe Msvm \_ imagens
 
@@ -37,7 +37,7 @@ uint32 StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

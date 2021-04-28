@@ -1,15 +1,15 @@
 ---
-description: .
+description: Práticas recomendadas para minimizar serviços sem resposta
 ms.assetid: 51df3fb9-416d-46b8-b3a7-0281401fb390
 title: Práticas recomendadas para minimizar serviços sem resposta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51e1fbad7fe60c4165ebb97847c303482314f68e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90416e8256383e16fd78c436dfaa8d6a2186c540
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837177"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087994"
 ---
 # <a name="best-practices-for-minimizing-unresponsive-services"></a>Práticas recomendadas para minimizar serviços sem resposta
 

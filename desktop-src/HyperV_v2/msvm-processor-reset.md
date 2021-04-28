@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_Processor – solicita uma redefinição.
 ms.assetid: c69b5c65-8f00-48ed-8602-7e0c5a76653d
 title: Método Reset da classe Msvm_Processor
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aaa0c74ac71e4c3d1be4b9580353c15f5ed94dca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eecd8f240f2d5c7dc1c2c1b98c0503f54a5c8050
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105775727"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111564"
 ---
 # <a name="reset-method-of-the-msvm_processor-class"></a>Método Reset da classe de \_ processador Msvm
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

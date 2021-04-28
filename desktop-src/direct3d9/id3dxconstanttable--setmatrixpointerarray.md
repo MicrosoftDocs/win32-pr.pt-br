@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de ponteiros para matrizes nontransposed.
+description: 'Método ID3DXConstantTable:: SetMatrixPointerArray – define uma matriz de ponteiros para matrizes nontransposed.'
 ms.assetid: 1b985e03-b5cb-48e5-969f-115ca165acdc
 title: 'Método ID3DXConstantTable:: SetMatrixPointerArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4b29d4298d8ca52d2826cc780fb90d769c3337f7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bd9505f82674efc822d4921d7116c8eab17198c1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105784559"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115064"
 ---
 # <a name="id3dxconstanttablesetmatrixpointerarray-method"></a>Método ID3DXConstantTable:: SetMatrixPointerArray
 
@@ -79,7 +79,7 @@ Número de matrizes na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -100,7 +100,7 @@ Uma matriz nontransposed contém dados de linha principal; ou seja, cada vetor e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

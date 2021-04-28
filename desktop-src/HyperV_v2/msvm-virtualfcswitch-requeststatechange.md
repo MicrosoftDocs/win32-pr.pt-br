@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_VirtualFcSwitch-solicita uma alteração de estado.
 ms.assetid: acbc06cd-7f6c-4555-8816-de3f021126aa
 title: Método RequestStateChange da classe Msvm_VirtualFcSwitch
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31c68f2fa703aa33fd6f11cabc8aaf535de98228
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30a12ba60b19f16fb778fa64335734644fbfd1f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920724"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110984"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualfcswitch-class"></a>Método RequestStateChange da classe Msvm \_ VirtualFcSwitch
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

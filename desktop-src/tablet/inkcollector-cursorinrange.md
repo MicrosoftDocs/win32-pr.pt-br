@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do Tablet.
+description: Evento InkCollector. CursorInRange – ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do Tablet.
 ms.assetid: d05b240c-ba64-4008-b25d-e06c052eb5b0
 title: Evento InkCollector. CursorInRange (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3c1d59927f9ed0a932fe28a2c5243f328a223c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9b7cd6204b2dbb29f9a46e48ecb12569e1301f4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501396"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110284"
 ---
 # <a name="inkcollectorcursorinrange-event"></a>Evento InkCollector. CursorInRange
 
@@ -55,7 +55,7 @@ Para obter mais informações sobre a estrutura de VARIAntes, consulte [usando a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -78,7 +78,7 @@ O evento **CursorInRange** é disparado mesmo quando estiver no modo de seleçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

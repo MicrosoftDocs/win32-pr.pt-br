@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_Ps2Mouse – solicita uma redefinição.
 ms.assetid: e72e4ecc-70a8-4eb6-877c-670857ea9b6d
 title: Método Reset da classe Msvm_Ps2Mouse
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0ef83ad5b327d53b1c8781cc67269c00a6662377
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f875d5b5fe7e5be0f5cac31e87ac2a0007a7a256
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010779"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111534"
 ---
 # <a name="reset-method-of-the-msvm_ps2mouse-class"></a>Método Reset da classe Msvm \_ Ps2Mouse
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

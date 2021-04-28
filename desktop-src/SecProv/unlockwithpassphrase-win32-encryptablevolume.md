@@ -1,5 +1,5 @@
 ---
-description: Usa a frase secreta para obter a chave derivada.
+description: Método UnlockWithPassphrase da classe Win32_EncryptableVolume – usa a frase secreta para obter a chave derivada.
 ms.assetid: 09b4ae7f-7084-42bd-8bbe-da686d6280e9
 title: Método UnlockWithPassphrase da classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 75c5522a0781b1cd229bf97d2549433a426fbfc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0206bf7884ffa204bc768ddfcf5a4a590bf25b60
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756375"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116454"
 ---
 # <a name="unlockwithpassphrase-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithPassphrase da classe Win32 \_ EncryptableVolume
 
@@ -53,7 +53,7 @@ Uma cadeia de caracteres que especifica a frase secreta.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -88,7 +88,7 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

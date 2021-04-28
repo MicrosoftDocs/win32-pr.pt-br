@@ -1,5 +1,5 @@
 ---
-description: O método Disconnect desconecta o NPP da rede.
+description: 'IDelaydC: método isconnect:D-o método Disconnect desconecta o NPP da rede.'
 ms.assetid: 476bbce4-2e3c-448f-b85e-6adac424fb0d
 title: 'IDelaydC: método:D isconnect (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d192aa80f543706eea4bc197bc3dc8d57dd64aee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 967bd9674cb28363804b8c8af12c541bcb8675ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089964"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110804"
 ---
 # <a name="idelaydcdisconnect-method"></a>Método IDelaydC::D isconnect
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -73,7 +73,7 @@ Este método não pode ser chamado quando o NPP está capturando dados. Você de
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

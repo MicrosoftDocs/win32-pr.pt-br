@@ -1,6 +1,6 @@
 ---
 title: Mensagem de MCM_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere Unicode para o controle.
+description: MCM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: 250789b5-694b-4502-9cc0-3bc260ea06e7
 keywords:
 - Controles de MCM_SETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0aee3318479f4e94b4d85f15fe7c58e4417a1bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa922b0dde8702f447690f9626938364174cbff6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455229"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112365"
 ---
 # <a name="mcm_setunicodeformat-message"></a>\_Mensagem MCM SETUNICODEFORMAT
 
@@ -39,7 +39,7 @@ Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode anterior para o controle.
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

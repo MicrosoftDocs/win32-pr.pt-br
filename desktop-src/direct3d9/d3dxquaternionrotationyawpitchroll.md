@@ -1,5 +1,5 @@
 ---
-description: Cria um Quaternion com uma determinada guinada, pitch e roll.
+description: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h) – compila um Quaternion com a guinada, a densidade e o rolo fornecidos.
 ms.assetid: be4a3bd5-114b-4652-8e0a-e51338317c16
 title: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4d0df60149643db0d9243afe57e394320f81d08c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 541e181425782662c6d40affc22c829b4ba343ab
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782428"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117994"
 ---
 # <a name="d3dxquaternionrotationyawpitchroll-function-d3dx9mathh"></a>Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Sobreponha-se ao eixo z, em radianos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Registry_V0-essa classe é a classe pai para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 879ac606-f451-4d5d-bf78-3e7fd3093189
 title: Classe Registry_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7a58427dbb01519b9850461b21fb7dd75a1daf20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee3aa8d5e4f7b7cb557af5eeb4a02c9a10dafbbf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827266"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106174"
 ---
 # <a name="registry_v0-class"></a>\_Classe V0 do registro
 
@@ -49,7 +49,7 @@ A **classe \_ V0 do registro** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
