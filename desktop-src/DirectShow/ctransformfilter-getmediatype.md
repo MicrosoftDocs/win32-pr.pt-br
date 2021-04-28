@@ -1,5 +1,5 @@
 ---
-description: O método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
+description: Método CTransformFilter. GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
 ms.assetid: 9a1b123b-aa8a-4bf0-a926-466ded24e506
 title: Método CTransformFilter. GetMediaType (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba751e291a1ffa8e030be7e77cfd456956718baa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6415b8e3d8ae4e292b7e2592b123120927081ea8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752688"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095114"
 ---
 # <a name="ctransformfiltergetmediatype-method"></a>Método CTransformFilter. GetMediaType
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                            | Descrição                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Sucesso.<br/>              |
 | <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo.<br/>   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que zero.<br/> |
 
@@ -88,7 +88,7 @@ O método [**CTransformOutputPin:: GetMediaType**](ctransformoutputpin-getmediat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

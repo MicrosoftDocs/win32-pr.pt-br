@@ -1,5 +1,5 @@
 ---
-description: Enviado quando um menu suspenso ou submenu está prestes a ficar ativo. Isso permite que um aplicativo modifique o menu antes que ele seja exibido, sem alterar o menu inteiro.
+description: DFM_WM_INITMENUPOPUP mensagem enviada quando um menu suspenso ou submenu está prestes a ficar ativo. Isso permite que um aplicativo modifique o menu antes que ele seja exibido, sem alterar o menu inteiro.
 title: Mensagem de DFM_WM_INITMENUPOPUP (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1c89731bdffc0e7d902e6c83b9a4f208134b7cfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9df2700403dcdc0ce00b6d90d9c3a87d373b0a34
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090022"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096994"
 ---
 # <a name="dfm_wm_initmenupopup-message"></a>Mensagem do DFM do \_ WM \_ INITMENUPOPUP
 
@@ -57,7 +57,7 @@ A palavra de ordem superior indica se o menu suspenso é o menu janela. Se o men
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 

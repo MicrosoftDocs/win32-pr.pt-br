@@ -1,6 +1,6 @@
 ---
 title: Método WebViewFolderContents.SelectedItems (Shldisp.h)
-description: Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
+description: Método WebViewFolderContents. SelectedItems – Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
 ms.assetid: 683acac4-f157-4a75-a3f8-c693887c1ea5
 keywords:
 - Método SelectedItems recursos de ambiente herdado do Windows
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cee4b7f34cdcabec637671af79775fc1fa546790
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 25a242991f6f9472610dffa20593f9cab5d8c310
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009677"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102644"
 ---
 # <a name="webviewfoldercontentsselecteditems-method"></a>Método WebViewFolderContents. SelectedItems
 
@@ -40,7 +40,7 @@ retVal = WebViewFolderContents.SelectedItems()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **FolderItems**](../shell/folderitems.md)\*\***
 

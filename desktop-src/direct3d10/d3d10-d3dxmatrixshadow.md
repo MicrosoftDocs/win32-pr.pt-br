@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz que achata a geometria em um plano.
+description: Função D3DXMatrixShadow (D3DX10Math. h) – compila uma matriz que achata a geometria em um plano.
 ms.assetid: 83c9e7d6-fc6c-48e7-bbf2-6aa10868351d
 title: Função D3DXMatrixShadow (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a2edaee98f5a56cf5dffec262ecc3d546f0116f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d3a5bff99552a4c5d65267c390c25a2892d3d32f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298782"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103344"
 ---
 # <a name="d3dxmatrixshadow-function-d3dx10mathh"></a>Função D3DXMatrixShadow (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para o [**D3DXPLANE**](d3d10-d3dxplane.md)de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -110,7 +110,7 @@ Se o componente w da luz for 0, o raio da origem para a luz representará uma lu
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Associa o Msvm \_ VirtualSystemCollection aos \_ objetos Msvm ComputerSystem contidos.
+description: Msvm_CollectedVirtualSystems classe – associa os \_ VirtualSystemCollection Msvm aos \_ objetos Msvm ComputerSystem contidos.
 ms.assetid: ad783188-b60a-4271-aa2d-8050c36e70eb
 title: Classe Msvm_CollectedVirtualSystems
 ms.topic: reference
@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0803eda14ffbaf21ee2bf4491bd835123b7191e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6775f41a6e2ae7e45bac642fcd32b8deaec3fda
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767641"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119274"
 ---
 # <a name="msvm_collectedvirtualsystems-class"></a>\_Classe Msvm CollectedVirtualSystems
 
@@ -97,7 +97,7 @@ Um objeto de [**\_ ComputerSystem Msvm**](msvm-computersystem.md) que contém os
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

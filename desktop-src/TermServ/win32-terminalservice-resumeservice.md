@@ -1,6 +1,6 @@
 ---
 title: Método ResumeService da classe Win32_Service (Serviços de Área de Trabalho Remota)
-description: Tenta posicionar o serviço referenciado no estado retomado.
+description: Método ResumeService da classe Win32_Service (Serviços de Área de Trabalho Remota) – tenta posicionar o serviço referenciado no estado retomado.
 ms.assetid: AA020A0A-E69C-44AB-B259-A73460728770
 ms.tgt_platform: multiple
 keywords:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7b446dea84e4320e9aa8972a88dc4fdd5a6eea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94f8e7dcfc9b9bd5b408e36d8a909aa10c84519c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499722"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090584"
 ---
 # <a name="resumeservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método ResumeService da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -43,7 +43,7 @@ uint32 ResumeService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -251,7 +251,7 @@ O exemplo de [retomar os serviços AutoStart que estão em pausa](https://Galler
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

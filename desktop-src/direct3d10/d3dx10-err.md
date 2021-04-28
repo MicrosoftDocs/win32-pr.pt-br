@@ -1,5 +1,5 @@
 ---
-description: Os erros são representados por valores negativos e não podem ser combinados.
+description: D3DX10_ERR Enumeração-os erros são representados por valores negativos e não podem ser combinados.
 ms.assetid: 4149ce6d-e87a-4003-b123-5555c6b3b086
 title: Enumeração de D3DX10_ERR (D3DX10. h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 098c15999f20a65614d642029b1d1f6e0b600db6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172956"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094345"
 ---
 # <a name="d3dx10_err-enumeration"></a>\_Enumeração de erro D3DX10
 
 Os erros são representados por valores negativos e não podem ser combinados. Veja a seguir uma lista de valores que podem ser retornados por métodos incluídos na biblioteca do utilitário D3DX. Consulte as descrições do método individual para obter listas dos valores que cada um pode retornar. Essas listas não são necessariamente abrangentes.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -137,7 +137,7 @@ enum _D3DXERR {
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

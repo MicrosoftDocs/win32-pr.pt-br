@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_SyntheticKeyboard-solicita uma alteração de estado.
 ms.assetid: 984e8a68-bc95-4a8b-99d6-ac248e96c45e
 title: Método RequestStateChange da classe Msvm_SyntheticKeyboard
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9d3527f380bec783bd6305f2ec4fa57c15684dc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb8714dfc652cd1ba1a581b99cf5a4066159fb1e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748790"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109536"
 ---
 # <a name="requeststatechange-method-of-the-msvm_synthetickeyboard-class"></a>Método RequestStateChange da classe Msvm \_ SyntheticKeyboard
 
@@ -141,7 +141,7 @@ Se essa propriedade não contiver 0 ou NULL e a implementação não oferecer su
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0; caso contrário, retornará um erro.
 
@@ -167,7 +167,7 @@ Em caso de sucesso, retorna 0; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

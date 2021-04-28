@@ -1,6 +1,6 @@
 ---
 title: Método SetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota)
-description: Grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
+description: Método SetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota) – grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
 ms.assetid: 4F03B798-0912-4A0D-B31E-419662D5849B
 ms.tgt_platform: multiple
 keywords:
@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a21f9730b4c1c0ab7b3ccf662ddb2d95da2ee2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eb2dd7e43041c05b1c294181f8bd01548ed76d87
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645146"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114485"
 ---
 # <a name="setsecuritydescriptor-method-of-the-win32_service-class-remote-desktop-services"></a>Método SetSecurityDescriptor da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -52,7 +52,7 @@ O descritor de segurança associado ao serviço.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -269,7 +269,7 @@ Quando uma nova SACL é **nula** em uma chamada desse método, a SACL do descrit
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

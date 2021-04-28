@@ -1,5 +1,5 @@
 ---
-description: O método CompleteConnect conclui uma conexão com outro PIN.
+description: Método CBasePin. CompleteConnect – o método CompleteConnect conclui uma conexão com outro PIN.
 ms.assetid: 10cbf29c-2e1a-419c-b0c0-c99f9a285810
 title: Método CBasePin. CompleteConnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9068bf63d3168a8c6d9e1bca2ef709f63e80a3c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee207d7a17f12cc81036fbd4f82ec49a99f4a31
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811758"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096034"
 ---
 # <a name="cbasepincompleteconnect-method"></a>Método CBasePin. CompleteConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -72,7 +72,7 @@ Se esse método falhar, a tentativa de conexão geral também falhará e o PIN d
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

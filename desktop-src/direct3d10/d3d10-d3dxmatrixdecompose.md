@@ -1,5 +1,5 @@
 ---
-description: Divide uma matriz de transformação 3D geral em seus componentes escalares, de rotação e de tradução.
+description: Função D3DXMatrixDecompose (D3DX10Math. h) – divide uma matriz de transformação 3D geral em seus componentes escalares, de rotação e de tradução.
 ms.assetid: 3694769f-56e7-4983-924e-021c129462a2
 title: Função D3DXMatrixDecompose (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 507c8f177db0f71b3d333a8343e4166e649f424a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc87de99d72283c20f25b15ea8d0e5864e2550d9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173153"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113204"
 ---
 # <a name="d3dxmatrixdecompose-function-d3dx10mathh"></a>Função D3DXMatrixDecompose (D3DX10Math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para uma matriz [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de entrada para d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -96,7 +96,7 @@ Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Obtém a tabela de sombreador-constante inserida dentro de um sombreador.
+description: Função D3DXGetShaderConstantTableEx – Obtém a tabela de constante de sombreador inserida dentro de um sombreador.
 ms.assetid: f7e846e4-9cb4-4634-95e3-4b2a752978a8
 title: Função D3DXGetShaderConstantTableEx (D3DX9Shader. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2107e7f30733c8f8a19e39e220c4c1d6cb174424
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2cac525f6f6fc4f4e3b6e5900aa9b655e7c7f60d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172999"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114424"
 ---
 # <a name="d3dxgetshaderconstanttableex-function"></a>Função D3DXGetShaderConstantTableEx
 
@@ -69,7 +69,7 @@ Retorna a interface da tabela de constantes (consulte [**ID3DXConstantTable**](i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -90,7 +90,7 @@ Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

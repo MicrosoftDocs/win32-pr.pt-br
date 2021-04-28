@@ -1,5 +1,5 @@
 ---
-description: O método CheckConnect determina se uma conexão de PIN é adequada.
+description: Método CBaseOutputPin. CheckConnect – o método CheckConnect determina se uma conexão de PIN é adequada.
 ms.assetid: 50ab59ad-8ff7-4d7b-add3-b59203d93307
 title: Método CBaseOutputPin. CheckConnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f3274e47e9a77d86f350c17aaca04ec0cdb95ef3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ea5ad32de18046f3d23145d82e971391c3e304c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751708"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096184"
 ---
 # <a name="cbaseoutputpincheckconnect-method"></a>Método CBaseOutputPin. CheckConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 | Código de retorno                                                                                               | Descrição                                                                 |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                      | Êxito.<br/>                                                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>                      | Sucesso.<br/>                                                         |
 | <dl> <dt>**E \_ NOinterface**</dt> </dl>             | O PIN de entrada não dá suporte a [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin).<br/> |
 | <dl> <dt>**VFW \_ E \_ direção inválida \_**</dt> </dl> | As direções do PIN não são compatíveis.<br/>                               |
 
@@ -80,7 +80,7 @@ Esse método chama o método [**CBasePin:: CheckConnect**](cbasepin-checkconnect
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

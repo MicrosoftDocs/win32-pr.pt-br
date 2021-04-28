@@ -1,5 +1,5 @@
 ---
-description: Descrição
+description: Descrição (banda larga móvel)-Descrição
 MS-HAID: WWAN\_profile\_v4.element\_Description
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f8a4cbb21b12176771d3ab9091aef0540d8a7c09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e72b2fca1df6ba76d933d289b5d73b717cb6af6a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461090"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107014"
 ---
 # <a name="description-mobile-broadband"></a>Descrição (banda larga móvel)
 
@@ -32,7 +32,7 @@ Uma descrição do perfil.
 [<MBNProfileExt>](element-mbnprofileext.md)  
 **<Description>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <Description>

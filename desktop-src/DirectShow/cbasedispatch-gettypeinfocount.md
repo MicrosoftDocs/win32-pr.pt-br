@@ -1,5 +1,5 @@
 ---
-description: O método GetTypeInfoCount recupera o número de interfaces de informações de tipo que o objeto fornece.
+description: Método CBaseDispatch. GetTypeInfoCount – o método GetTypeInfoCount recupera o número de interfaces de informações de tipo que o objeto fornece.
 ms.assetid: e09e6f6c-6ac8-4ce1-8ce1-ee5374d54183
 title: Método CBaseDispatch. GetTypeInfoCount (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39c5b78181f5f26fb5f57831345bb6345a26da85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81e68c94420b3d7715845f8d6bd14e26b770b44f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747415"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099884"
 ---
 # <a name="cbasedispatchgettypeinfocount-method"></a>Método CBaseDispatch. GetTypeInfoCount
 
@@ -49,7 +49,7 @@ Ponteiro para uma variável que recebe o número de interfaces de informações 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                               | Descrição                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Sucesso.<br/>                   |
 | <dl> <dt>**\_ponteiro E**</dt> </dl> | Argumento de ponteiro **nulo** .<br/> |
 
 
@@ -75,7 +75,7 @@ Retorna um dos valores a seguir.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

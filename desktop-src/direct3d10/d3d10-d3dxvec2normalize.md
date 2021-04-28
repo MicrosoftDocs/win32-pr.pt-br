@@ -1,5 +1,5 @@
 ---
-description: Retorna a versão normalizada de um vetor 2D.
+description: Função D3DXVec2Normalize (D3DX10Math. h) – retorna a versão normalizada de um vetor 2D.
 ms.assetid: fac4f269-2778-4500-af9e-23a0112543b0
 title: Função D3DXVec2Normalize (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e2894a86c0aa0c2ef6b45a41664b2d0cca1427c1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aaa7bde759b9023b69204d6cb39259f0905b9928
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837963"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108384"
 ---
 # <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Função D3DXVec2Normalize (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de D3DXVECTOR2 de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

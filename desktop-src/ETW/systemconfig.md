@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de configuração de hardware. A sintaxe a seguir é simplificada do código MOF.
+description: Classe SystemConfig – essa classe é a classe pai para eventos de configuração de hardware. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 720c2366-bd68-4895-bfaf-74aa9b64ba4a
 title: Classe SystemConfig
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3332d396005deb2fb811d101a99827544ebc6df0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 232214aa2c33485d909525d54965f59fdc891a29
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837524"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105864"
 ---
 # <a name="systemconfig-class"></a>Classe SystemConfig
 
@@ -77,7 +77,7 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

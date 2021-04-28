@@ -1,5 +1,5 @@
 ---
-description: Obtém uma constante procurando seu índice.
+description: 'Método ID3DXConstantTable:: getconstant – Obtém uma constante pesquisando seu índice.'
 ms.assetid: 7db25171-9bda-4db8-b6a8-8a4d60a842f7
 title: 'Método ID3DXConstantTable:: getconstant (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f4ab7318dc4a05f586db77817653e7df59ef6083
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 664a1b1a214b49eb731a3a0766a255e5f5acadd9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105761247"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115264"
 ---
 # <a name="id3dxconstanttablegetconstant-method"></a>Método ID3DXConstantTable:: getconstant
 
@@ -59,7 +59,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
@@ -80,7 +80,7 @@ Para obter uma constante de uma matriz de constantes, use [**ID3DXConstantTable:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

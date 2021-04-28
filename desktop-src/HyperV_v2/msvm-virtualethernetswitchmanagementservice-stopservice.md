@@ -1,5 +1,5 @@
 ---
-description: Interrompe o serviço.
+description: Método StopService da classe Msvm_VirtualEthernetSwitchManagementService-para o serviço.
 ms.assetid: 4f88b099-3a89-4d05-920e-265fc94599b1
 title: Método StopService da classe Msvm_VirtualEthernetSwitchManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6303327b66ce66c9cda6fe29e7d0a63184ea5929
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fbc91a4134fb0a024e66dfc1a46806aa531893f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751868"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111004"
 ---
 # <a name="stopservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método StopService da classe Msvm \_ VirtualEthernetSwitchManagementService
 
@@ -37,7 +37,7 @@ uint32 StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

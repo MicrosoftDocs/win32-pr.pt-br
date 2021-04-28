@@ -1,5 +1,5 @@
 ---
-description: Tenta enviar um código de controle definido pelo usuário para o serviço referenciado.
+description: Método UserControlService da classe Win32_Service (provedores WMI CIMWin32) – tenta enviar um código de controle definido pelo usuário para o serviço referenciado.
 ms.assetid: a7132c9b-6faf-4182-a5b8-3f2334c1a74b
 ms.tgt_platform: multiple
 title: Método UserControlService da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8c523617826bd5d608b8c6b1ee242863f7591a61
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 455128b35c2645c6aa6ea10f64d12dff392fecca
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920531"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099995"
 ---
 # <a name="usercontrolservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método UserControlService da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -49,7 +49,7 @@ Especifica os valores definidos (de 128 a 255) que fornecem comandos de controle
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -244,7 +244,7 @@ O serviço está pausado atualmente no sistema.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

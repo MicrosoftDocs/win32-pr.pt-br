@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CDeferredCommand. CDeferredCommand-método de construtor.
 ms.assetid: 0b372fa2-78a9-4e38-813c-f18123716c6d
 title: Construtor CDeferredCommand. CDeferredCommand (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4e92a2ffc5129ee38fc5061b28ea7ffef49da0f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a10d8bba48902ed2d6fd66da8483cea1ba9aacc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754268"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119784"
 ---
 # <a name="cdeferredcommandcdeferredcommand-constructor"></a>Construtor CDeferredCommand. CDeferredCommand
 
@@ -156,7 +156,7 @@ Valor que indica se o tempo de comando adiado está em tempo de fluxo (**true**)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

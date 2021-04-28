@@ -1,5 +1,5 @@
 ---
-description: Inicia um serviço nomeado.
+description: Método IShellDispatch2. FileStart – inicia um serviço nomeado.
 ms.assetid: 3af57cdc-f449-433d-a9e1-119038045e4c
 title: Método IShellDispatch2. OnStart (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 508b4f1c05625acdaed2b5a235ee697cceb544c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0f4fa218c4def993025ff18bffd0cc54def9818
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967519"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117044"
 ---
 # <a name="ishelldispatch2servicestart-method"></a>Método IShellDispatch2. OnStart
 
@@ -69,19 +69,19 @@ Defina como **true** para que o serviço seja iniciado automaticamente pelo Gere
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 

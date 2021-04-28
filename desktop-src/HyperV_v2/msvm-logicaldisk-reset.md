@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_LogicalDisk – solicita uma redefinição.
 ms.assetid: 544bd327-572d-4f0e-bc73-a68113222af0
 title: Método Reset da classe Msvm_LogicalDisk
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d1a7668d74a9fb7a2cc17a96dca18e7627a4f648
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32a4c2897e63da323a7c698509512bfd1d9a6eec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758333"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111664"
 ---
 # <a name="reset-method-of-the-msvm_logicaldisk-class"></a>Método Reset da classe Msvm \_ LogicalDisk
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

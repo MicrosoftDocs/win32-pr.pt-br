@@ -1,5 +1,5 @@
 ---
-description: Use este método para readquirir recursos e salvar o estado inicial.
+description: 'Método ID3DXFont:: OnResetDevice – Use este método para adquirir novamente os recursos e salvar o estado inicial.'
 ms.assetid: a63efb49-7864-4675-b367-4ae53995caea
 title: 'Método ID3DXFont:: OnResetDevice (D3dx9core. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d6e65001f484ed7d7a984ed1f9463b996056e8da
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d976c29d370887362e46899c7fb2a654d6e2cc7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370977"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093734"
 ---
 # <a name="id3dxfontonresetdevice-method"></a>Método ID3DXFont:: OnResetDevice
 
@@ -38,7 +38,7 @@ HRESULT OnResetDevice();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -59,7 +59,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

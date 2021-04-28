@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_ShutdownComponent – solicita uma redefinição.
 ms.assetid: cdd14090-4ea1-4547-b8a5-fd40f7e494f5
 title: Método Reset da classe Msvm_ShutdownComponent
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 75502c8602adf3a357e04a9aef51dc6d0ea47be5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77c651ce429764edba069be21b246a8623cd0e76
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170250"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111364"
 ---
 # <a name="reset-method-of-the-msvm_shutdowncomponent-class"></a>Método Reset da classe Msvm \_ ShutdownComponent
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

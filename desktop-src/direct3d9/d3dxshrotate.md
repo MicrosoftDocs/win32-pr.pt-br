@@ -1,5 +1,5 @@
 ---
-description: Gira o vetor harmônica (SH) esférico pela matriz especificada.
+description: Função D3DXSHRotate (D3dx9math. h) – gira o vetor harmônica (SH) esférico pela matriz especificada.
 ms.assetid: 9e319725-6cbb-441e-b996-ec2c6f66e5df
 title: Função D3DXSHRotate (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 606ef1909237fd9c0277c5d7112284f6b7018e0e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f888186fb6d7563a5904d4e6e3f1eabe626afd1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105747864"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093864"
 ---
 # <a name="d3dxshrotate-function-d3dx9mathh"></a>Função D3DXSHRotate (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para de doeficientes de forma girada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -103,7 +103,7 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

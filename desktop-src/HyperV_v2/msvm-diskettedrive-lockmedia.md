@@ -1,5 +1,5 @@
 ---
-description: Bloqueia ou libera a mídia.
+description: Método LockMedia da classe Msvm_DisketteDrive-bloqueia ou libera a mídia.
 ms.assetid: 90f7e06c-92d0-4742-a74d-68ae6bfc00bf
 title: Método LockMedia da classe Msvm_DisketteDrive
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4f9bce4e9e46d76c3426271af16c28026c242fa9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5f5f87354aa7c39534e8b32c8985c5d18b55caa9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837646"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111966"
 ---
 # <a name="lockmedia-method-of-the-msvm_diskettedrive-class"></a>Método LockMedia da \_ classe DisketteDrive Msvm
 
@@ -46,7 +46,7 @@ uint32 LockMedia(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retorna um dos seguintes valores:
 
@@ -72,7 +72,7 @@ Retorna um 0 em caso de êxito; caso contrário, retorna um dos seguintes valore
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

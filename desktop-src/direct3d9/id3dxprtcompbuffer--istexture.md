@@ -1,5 +1,5 @@
 ---
-description: Indica se o buffer contém uma textura.
+description: 'Método ID3DXPRTCompBuffer:: istexture-indica se o buffer contém uma textura.'
 ms.assetid: d86425ff-febe-4966-95aa-df4ce95397c0
 title: 'Método ID3DXPRTCompBuffer:: istexture (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8a4e58b2b41aa154da7c1b02bf99cfcca25e00cd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e58512ee538c2dc74251d9db6c0b86e6f185ed31
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105769650"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107214"
 ---
 # <a name="id3dxprtcompbufferistexture-method"></a>Método ID3DXPRTCompBuffer:: istexture
 
@@ -38,7 +38,7 @@ BOOL IsTexture();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retornará **true** se o buffer contiver uma textura; retorna **false** caso con
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

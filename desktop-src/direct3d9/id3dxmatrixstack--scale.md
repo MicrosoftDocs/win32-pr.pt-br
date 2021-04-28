@@ -1,5 +1,5 @@
 ---
-description: Dimensione a matriz atual sobre a origem da coordenada mundial.
+description: 'Método ID3DXMATRIXStack:: Scale (D3dx9math. h) – dimensione a matriz atual sobre a origem da coordenada mundial.'
 ms.assetid: 6c4ef625-736e-41a0-8a79-4d71e8685754
 title: 'Método ID3DXMATRIXStack:: Scale (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5ed926a55c0dba6f74e819cd89a7fa75f6d087c4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d877fccf5bfebfdc1f9cf3943c4334e5b8c7fff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091945"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093364"
 ---
 # <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: Scale (D3dx9math. h)
 
@@ -69,7 +69,7 @@ O componente de dimensionamento na direção z.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

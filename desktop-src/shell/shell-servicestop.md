@@ -1,5 +1,5 @@
 ---
-description: Interrompe um serviço nomeado.
+description: Método Shell. OnStop – interrompe um serviço nomeado.
 ms.assetid: AC22C91E-BBC6-4a2e-8D39-F9D7C0AC0947
 title: Método Shell. OnStop (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 31388078fe1c0e15c2e54efc86f0ff76bcfb7ed2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5307fabe79ab9e634ca1e2815c0b90d59b13b1f6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170088"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104154"
 ---
 # <a name="shellservicestop-method"></a>Método Shell. OnStop
 
@@ -69,19 +69,19 @@ Defina como **true** para que o serviço seja iniciado pelo Gerenciador de contr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 

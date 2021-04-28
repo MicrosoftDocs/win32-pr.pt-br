@@ -1,5 +1,5 @@
 ---
-description: Recupera a configuração de restrição de um grupo do registro.
+description: Método IShellDispatch2. IsRestricted-recupera a configuração de restrição de um grupo do registro.
 ms.assetid: 04275c5f-c3ed-4962-882f-2cce0258a9f4
 title: Método IShellDispatch2. IsRestricted (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f666a9ed3407d12eb9cf2c28ae062a9886d7a2cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4f482407fadd16d7ecfe9deeafd91b032a9a24f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967529"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117094"
 ---
 # <a name="ishelldispatch2isrestricted-method"></a>Método IShellDispatch2. IsRestricted
 
@@ -69,23 +69,23 @@ Uma **cadeia de caracteres** que contém a restrição cujo valor deve ser recup
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **inteiro \** _
+Tipo: **inteiro \***
 
 O valor da restrição. Se a restrição especificada não for encontrada, o valor de retorno será 0.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*inteiro \**_
+Tipo: **inteiro \***
 
 O valor da restrição. Se a restrição especificada não for encontrada, o valor de retorno será 0.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [_ *shell. IsRestricted* *](./shell-isrestricted.md) .
+Esse método é implementado e acessado por meio do método [**shell. IsRestricted**](./shell-isrestricted.md) .
 
 **IsRestricted** primeiro procura por um nome de subchave que corresponda a *sGroup* sob a chave a seguir.
 

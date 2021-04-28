@@ -1,5 +1,5 @@
 ---
-description: O método Connect conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.
+description: 'Método IRTC:: Connect – o método Connect conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.'
 ms.assetid: d017c2a3-a832-4084-b21b-0cca428c5360
 title: 'Método IRTC:: Connect (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: a14e34aeb0be30165aa18ddc7da18028d715be01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba62f3341b18ddfdbf09af4eec701322d901ab79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757755"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110737"
 ---
 # <a name="irtcconnect-method"></a>Método IRTC:: Connect
 
@@ -79,7 +79,7 @@ Identificador para um BLOB de erro que contém informações adicionais sobre o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -87,7 +87,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 
 
-| Código de retorno                                                                                                         | Description                                                                                                                                                                                                                                                                                  |
+| Código de retorno                                                                                                         | Descrição                                                                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ já \_ conectado**</dt> </dl>            | Esta instância do objeto COM NPP já está conectada à rede.<br/>                                                                                                                                                                                                          |
 | <dl> <dt>**\_erro de \_ conversão de blob NMERR \_**</dt> </dl>       | O BLOB de configuração está corrompido. Esse erro é gerado pela chamada **IRTC:: Configure** .<br/>                                                                                                                                                                                       |
@@ -139,7 +139,7 @@ O BLOB de erro retornado em *hErrorBlob* contém informações de erro que o des
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

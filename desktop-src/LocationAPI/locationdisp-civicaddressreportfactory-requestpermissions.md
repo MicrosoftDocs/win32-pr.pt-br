@@ -1,5 +1,5 @@
 ---
-description: Abre uma caixa de diálogo do sistema para solicitar permissão de usuário para dispositivos habilitados para localização.
+description: Método LocationDisp. CivicAddressReportFactory. RequestPermissions – abre uma caixa de diálogo do sistema para solicitar permissão de usuário para dispositivos habilitados para localização.
 ms.assetid: b213591a-2830-4979-b532-e71cdef1b994
 title: Método LocationDisp. CivicAddressReportFactory. RequestPermissions
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6d027687302c544974d13b1ba50194e8d6003a94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cab163585fa23839eb894f7ad83f29ed7975e589
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297604"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110904"
 ---
 # <a name="locationdispcivicaddressreportfactoryrequestpermissions-method"></a>Método LocationDisp. CivicAddressReportFactory. RequestPermissions
 
@@ -47,7 +47,7 @@ Esse parâmetro não é usado e deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

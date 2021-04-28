@@ -1,5 +1,5 @@
 ---
-description: Interrompe o serviço.
+description: Método StopService da classe Msvm_SecurityService-para o serviço.
 ms.assetid: cf100cea-b0e1-42e9-831e-6422aded47c5
 title: Método StopService da classe Msvm_SecurityService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 68e88e2c88d4f75f4d7671c389bab0cd81d0deb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9a16fef951fdee5ed7fc580da61f43d848a8dec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170257"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118704"
 ---
 # <a name="stopservice-method-of-the-msvm_securityservice-class"></a>Método StopService da classe Msvm \_ SecurityService
 
@@ -37,7 +37,7 @@ uint32 StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna um 0; caso contrário, retornará um erro.
 
@@ -63,7 +63,7 @@ Em caso de sucesso, retorna um 0; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

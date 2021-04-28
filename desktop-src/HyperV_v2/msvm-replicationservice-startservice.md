@@ -1,5 +1,5 @@
 ---
-description: Inicia o serviço.
+description: Método StartService da classe Msvm_ReplicationService – inicia o serviço.
 ms.assetid: 3f0d7ee7-4083-43d6-ac5f-8e7dc5188683
 title: Método StartService da classe Msvm_ReplicationService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca4d5dac81411475099041a10459161b781f16ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee39eb4943ed80bae976050d3fdad7477043dce
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091668"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118794"
 ---
 # <a name="startservice-method-of-the-msvm_replicationservice-class"></a>Método StartService da classe Msvm \_ ReplicationService
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método getcontrolstate recupera o estado da captura, o que indica se a captura está em execução ou em pausa.
+description: 'Método IESP:: getcontrolstate – o método getcontrolstate recupera o estado da captura, o que indica se a captura está em execução ou em pausa.'
 ms.assetid: 19cc3095-3aa3-4482-95f5-959b19f76cea
 title: 'Método IESP:: getcontrolstate (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: c791d5dc1f5d5321268fef2fb5cf91e04d9ecff3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b007eb6824ee3e65cdf8195914bbff3a50c39b2c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779973"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114674"
 ---
 # <a name="iespgetcontrolstate-method"></a>Método IESP:: getcontrolstate
 
@@ -55,7 +55,7 @@ Indicador de que a captura atual está em pausa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -89,7 +89,7 @@ Esse método pode ser chamado sempre que o NPP estiver conectado à rede. Você 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
