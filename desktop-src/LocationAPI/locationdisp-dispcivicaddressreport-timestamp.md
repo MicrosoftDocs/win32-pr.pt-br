@@ -1,5 +1,5 @@
 ---
-description: A data e a hora em que o relatório foi gerado.
+description: Propriedade LocationDisp. DispCivicAddressReport. Timestamp-a data e a hora em que o relatório foi gerado.
 ms.assetid: b9435384-72e0-42c4-a948-df52621a5ec2
 title: Propriedade LocationDisp. DispCivicAddressReport. Timestamp
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7b805454a6c2d62a58ba5a2a3de8f5b5095e1db8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2ed39956bb542aa4e150bf9afa3e59a472a4d91
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761828"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110874"
 ---
 # <a name="locationdispdispcivicaddressreporttimestamp-property"></a>Propriedade LocationDisp. DispCivicAddressReport. Timestamp
 

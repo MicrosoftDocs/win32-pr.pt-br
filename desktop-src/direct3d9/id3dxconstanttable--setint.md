@@ -1,5 +1,5 @@
 ---
-description: Define um valor inteiro.
+description: 'Método ID3DXConstantTable:: SetInt – define um valor inteiro.'
 ms.assetid: b57d30b5-c2b5-469e-a267-24e6e712d645
 title: 'Método ID3DXConstantTable:: SetInt (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a0aa0a213f9f4704a5d557db66aaf360f8baa727
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f218a0cd1a0e1858f24ec8cbccb4848c37121086
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798557"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115124"
 ---
 # <a name="id3dxconstanttablesetint-method"></a>Método ID3DXConstantTable:: SetInt
 
@@ -69,7 +69,7 @@ Inteiro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -86,7 +86,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

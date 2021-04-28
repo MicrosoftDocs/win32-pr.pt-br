@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. PromotionUrl
 ms.assetid: a0e464a0-ff43-43a8-87f7-2fef17ca15eb
 title: System. Media. PromotionUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dbb040f236c251a7544c8453744b7ec32895598
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 17e2649c9eb567e5afe5889856ef5161ea195f79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105763846"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091984"
 ---
 # <a name="systemmediapromotionurl"></a>System. Media. PromotionUrl
 

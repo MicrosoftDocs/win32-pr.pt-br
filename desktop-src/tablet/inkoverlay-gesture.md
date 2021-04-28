@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um gesto específico do aplicativo é reconhecido.
+description: Evento InkOverlay. Gesture-ocorre quando um gesto específico do aplicativo é reconhecido.
 ms.assetid: 11b48fbc-0c93-4c3c-b218-258028822544
 title: Evento InkOverlay. Gesture (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb3db800db2d1fca9ee1b00620c698a592ac2121
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b414aa1d0feaa19c5caee049eea29c59e90b58d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814010"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116944"
 ---
 # <a name="inkoverlaygesture-event"></a>Evento InkOverlay. Gesture
 
@@ -63,7 +63,7 @@ Se a coleção desse gesto deve ser cancelada, como não apagar a tinta e dispar
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -107,7 +107,7 @@ Para obter uma lista de gestos de aplicativo específicos, consulte o tipo de en
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

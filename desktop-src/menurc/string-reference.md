@@ -1,15 +1,15 @@
 ---
 title: Referência de cadeia de caracteres
-description: .
+description: Referência de cadeia de caracteres
 ms.assetid: 26f6837a-7fd0-420e-bf15-93477fbf2db3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da07d245c4563350b8d83e4da55e70f932ae878
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e455054b95ab7f23aabec927129ae2eb85cbeef9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498770"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092594"
 ---
 # <a name="string-reference"></a>Referência de cadeia de caracteres
 
@@ -18,9 +18,9 @@ ms.locfileid: "104498770"
 -   [Funções de cadeia de caracteres](string-functions.md)
 -   [Funções strsafe](string-overviews.md)
 
- 
+ 
 
- 
+ 
 
 
 

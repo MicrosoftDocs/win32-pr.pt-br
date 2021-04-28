@@ -1,5 +1,5 @@
 ---
-description: Um 4x4, matriz alinhada em 16 bytes que contém métodos e sobrecargas de operador.
+description: Estrutura D3DXMATRIXA16 (D3dx9math. h) – um 4x4, matriz alinhada com 16 bytes que contém métodos e sobrecargas de operador.
 ms.assetid: c7082fe5-f98b-4ab7-b8c2-7cdbab4848ad
 title: Estrutura D3DXMATRIXA16 (D3dx9math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 57d2e5e796b929c87d4724d298758f26088918c4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7bb14f23d041ec2634b9710d5620382d8b93da2b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663991"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094204"
 ---
 # <a name="d3dxmatrixa16-structure-d3dx9mathh"></a>Estrutura D3DXMATRIXA16 (D3dx9math. h)
 
@@ -107,7 +107,7 @@ typedef D3DX_ALIGN16 _D3DXMATRIXA16 D3DXMATRIXA16, *LPD3DXMATRIXA16;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de ponteiros para matrizes transpostas.
+description: 'Método ID3DXConstantTable:: SetMatrixTransposePointerArray – define uma matriz de ponteiros para matrizes transpostas.'
 ms.assetid: f2db10cb-a146-412d-8de8-f093253470fd
 title: 'Método ID3DXConstantTable:: SetMatrixTransposePointerArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6c78c051ff2d2ab52c9a741fa117a89f66ff450d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6fefb5a0b62174499a4631f2fe8020c25a3a8efa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798079"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115034"
 ---
 # <a name="id3dxconstanttablesetmatrixtransposepointerarray-method"></a>Método ID3DXConstantTable:: SetMatrixTransposePointerArray
 
@@ -79,7 +79,7 @@ Número de matrizes na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -100,7 +100,7 @@ Uma matriz transpoda contém dados de coluna principal; ou seja, cada vetor est�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

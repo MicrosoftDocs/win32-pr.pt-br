@@ -1,6 +1,6 @@
 ---
 title: Mensagem de RB_GETUNICODEFORMAT (commctrl. h)
-description: Recupera o sinalizador de formato de caractere Unicode para o controle.
+description: Mensagem de RB_GETUNICODEFORMAT-recupera o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: 48a4472b-dda4-41a2-b5bc-6f74b1cdc70b
 keywords:
 - Controles de RB_GETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6ef31c409ddc0570b03a3bcd8bb0dd81e9c722
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45e1a4546c9c33e87943d305c85939ab280fa122
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454692"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085974"
 ---
 # <a name="rb_getunicodeformat-message"></a>\_Mensagem GETUNICODEFORMAT RB
 
@@ -35,7 +35,7 @@ Recupera o sinalizador de formato de caractere Unicode para o controle.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode para o controle. Se esse valor for diferente de zero, o controle estará usando caracteres Unicode. Se esse valor for zero, o controle estará usando caracteres ANSI.
 
@@ -55,7 +55,7 @@ Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Calcule o termo Fresnel.
+description: Função D3DXFresnelTerm (D3dx9math. h) – calcular o termo de Fresnel.
 ms.assetid: d3d281db-91a1-4100-8a82-028554b5a91d
 title: Função D3DXFresnelTerm (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed6c6dd19dd6b7b70c5eeb08051f9799756b0782
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5472f9839928fd3b4c1830bc309c7f610d487864
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298618"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114474"
 ---
 # <a name="d3dxfresnelterm-function-d3dx9mathh"></a>Função D3DXFresnelTerm (D3dx9math. h)
 
@@ -59,7 +59,7 @@ O índice de refração de um material. O valor deve ser maior que 1.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
@@ -103,7 +103,7 @@ F = 0.5 * (g + c)2 / (g - c)2 * ([c(g + c) - 1]2 / [c(g - c) + 1]2 + 1)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

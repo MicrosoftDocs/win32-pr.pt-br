@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Contact. PrimaryAddressPostOfficeBox
 ms.assetid: b63eaeff-1460-4b13-b742-f3535d05a2e4
 title: System. Contact. PrimaryAddressPostOfficeBox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a69a8750e5dc8b4aebb06e1d20b5fcae859e148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13286625830e8d56b1623de8817f95fa73ccceec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760296"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108101264"
 ---
 # <a name="systemcontactprimaryaddresspostofficebox"></a>System. Contact. PrimaryAddressPostOfficeBox
 

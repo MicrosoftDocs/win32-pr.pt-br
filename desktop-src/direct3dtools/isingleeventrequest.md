@@ -1,5 +1,5 @@
 ---
-description: Não usado.
+description: <span id="vspixengine.isingleeventrequest"></span>Interface ISingleEventRequest – não usada.
 MS-HAID: vspixengine.ISingleEventRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 72856bfa6904ad3074d48a584f71d41e663a3075
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0c1d9f822194403073e3f3932575e2516db084a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645883"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107024"
 ---
 # <a name="span-idvspixengineisingleeventrequestspanisingleeventrequest-interface"></a><span id="vspixengine.isingleeventrequest"></span>Interface ISingleEventRequest
 
@@ -34,7 +34,7 @@ A interface **ISingleEventRequest** herda da interface [**IUnknown**](/windows/d
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
 A interface **ISingleEventRequest** tem esses métodos.
 

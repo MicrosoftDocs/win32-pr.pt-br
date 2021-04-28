@@ -1,5 +1,5 @@
 ---
-description: O valor de precisão desejado atual.
+description: Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy-o valor de precisão desejado atual.
 ms.assetid: 296164cf-a8ed-4277-bb4c-83ac09e63291
 title: Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: eb05aeb6a69bfe978682d418cf1e71aed2184bc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a18a363c2f24e9b17e16064b7375a4f075a1a8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753461"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110914"
 ---
 # <a name="locationdispcivicaddressreportfactorydesiredaccuracy-property"></a>Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy
 

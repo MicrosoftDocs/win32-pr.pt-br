@@ -1,5 +1,5 @@
 ---
-description: .
+description: <span id="vspixengine.experimenttriggertype"></span>Enumeração EXPERIMENTTRIGGERTYPE
 MS-HAID: vspixengine.EXPERIMENTTRIGGERTYPE
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 34b53e0e0842bd37f680019aa1184058ef5394ca
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 583c387a553f54a4b4a0b20f3958bb71b279edba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103826056"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097424"
 ---
 # <a name="span-idvspixengineexperimenttriggertypespanexperimenttriggertype-enumeration"></a><span id="vspixengine.experimenttriggertype"></span>Enumeração EXPERIMENTTRIGGERTYPE
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

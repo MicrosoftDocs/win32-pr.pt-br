@@ -1,5 +1,5 @@
 ---
-description: Valida o OID (identificador de objeto) de uso avançado de chave (EKU) do certificado fornecido.
+description: Método ProtectKeyWithCertificateThumbprint da classe Win32_EncryptableVolume – valida o OID (identificador de objeto) de uso avançado de chave (EKU) do certificado fornecido.
 ms.assetid: 7096cead-c44a-404c-b1e1-3e0ab27070f8
 title: Método ProtectKeyWithCertificateThumbprint da classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: e0b47aabccaacfb3ab81968b8a93037aad304f8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c71684bf66d8d14df60c9ff09083f507b114024
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779340"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110574"
 ---
 # <a name="protectkeywithcertificatethumbprint-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithCertificateThumbprint da classe Win32 \_ EncryptableVolume
 
@@ -70,7 +70,7 @@ Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -108,7 +108,7 @@ Se o OID não corresponder ao que está associado ao controlador de serviço no 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

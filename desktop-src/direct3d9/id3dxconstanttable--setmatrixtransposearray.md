@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de matrizes transpostas.
+description: 'Método ID3DXConstantTable:: SetMatrixTransposeArray – define uma matriz de matrizes transpostas.'
 ms.assetid: a67afc21-f43d-4dc5-b145-f3d66dd86dbb
 title: 'Método ID3DXConstantTable:: SetMatrixTransposeArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 69755ed973a8c412373287f128642b78ea2ad346
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0118c888adc52671a943b7b159bae80deca26a1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506491"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115044"
 ---
 # <a name="id3dxconstanttablesetmatrixtransposearray-method"></a>Método ID3DXConstantTable:: SetMatrixTransposeArray
 
@@ -79,7 +79,7 @@ Número de matrizes na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -96,7 +96,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

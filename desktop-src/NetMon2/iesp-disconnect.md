@@ -1,5 +1,5 @@
 ---
-description: O método Disconnect desconecta o NPP da rede.
+description: 'IESP: método isconnect:D-o método Disconnect desconecta o NPP da rede.'
 ms.assetid: 962e033d-a51c-47a2-83dc-cee1e7150ab8
 title: 'IESP: método:D isconnect (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b0dac1843083d77121883b2609c32addffbae290
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0a07748781a567c889e879e2e99462d8cfb876a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089960"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110754"
 ---
 # <a name="iespdisconnect-method"></a>Método IESP::D isconnect
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -73,7 +73,7 @@ Este método não pode ser chamado quando o NPP está capturando dados. Você de
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

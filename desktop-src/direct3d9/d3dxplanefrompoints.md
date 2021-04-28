@@ -1,5 +1,5 @@
 ---
-description: Constrói um plano a partir de três pontos.
+description: Função D3DXPlaneFromPoints (D3dx9math. h) – constrói um plano a partir de três pontos.
 ms.assetid: 13d5ce6b-0046-441b-b826-f34f4fe16979
 title: Função D3DXPlaneFromPoints (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c537915c56cdbbfb33228b0c5a5ea3f2acc2baff
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0d945dff9c124f4c66cea4f9d61c490c6eaf7a66
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798527"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094154"
 ---
 # <a name="d3dxplanefrompoints-function-d3dx9mathh"></a>Função D3DXPlaneFromPoints (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , definindo um dos
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
@@ -100,7 +100,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

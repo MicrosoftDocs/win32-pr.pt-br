@@ -1,5 +1,5 @@
 ---
-description: Gere uma lista de bordas de malha, bem como uma lista de faces que compartilham cada borda.
+description: 'Método ID3DXBaseMesh:: GenerateAdjacency – gera uma lista de bordas de malha, bem como uma lista de faces que compartilham cada borda.'
 ms.assetid: 9d52290f-1c9e-43a7-b239-35cd54e36466
 title: 'Método ID3DXBaseMesh:: GenerateAdjacency (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b5b1d304878a4977bb14d6ef98ad7256b6c3181f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 783ed7ad61337e606793b9b467e4b17fddd7ecd2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370988"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115454"
 ---
 # <a name="id3dxbasemeshgenerateadjacency-method"></a>Método ID3DXBaseMesh:: GenerateAdjacency
 
@@ -59,7 +59,7 @@ Ponteiro para uma matriz de três DWORDs por face a ser preenchida com os índic
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -82,7 +82,7 @@ A ordem das entradas no buffer de adjacência é determinada pela ordem dos índ
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

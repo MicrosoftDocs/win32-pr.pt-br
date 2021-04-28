@@ -1,5 +1,5 @@
 ---
-description: O método Stop interrompe a captura atual.
+description: 'Método IStats:: Stop – o método Stop interrompe a captura atual.'
 ms.assetid: 3aeeb29e-e174-46a2-82bb-44c466b8db98
 title: 'Método IStats:: Stop (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 7b7b58527e7bde0c3bbdec4fc162b705dd178c10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef51aff870a3193963b3802332112c51f1024826
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751410"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114604"
 ---
 # <a name="istatsstop-method"></a>Método IStats:: Stop
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Stop();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -73,7 +73,7 @@ Ao reiniciar a captura após **IStats:: Stop** ter sido chamado, certifique-se d
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

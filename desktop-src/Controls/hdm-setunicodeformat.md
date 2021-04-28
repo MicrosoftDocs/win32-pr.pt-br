@@ -1,6 +1,6 @@
 ---
 title: Mensagem de HDM_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere UNICODE para o controle.
+description: HDM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere UNICODE para o controle.
 ms.assetid: 18161fe5-c779-4be0-9e7a-1b5948e42b80
 keywords:
 - Controles de HDM_SETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3fe3497413b265510426fab4ef2e71666f46312
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d32ffa5f7f90ab266c52c67899dbff3be0d51123
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455231"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085954"
 ---
 # <a name="hdm_setunicodeformat-message"></a>\_Mensagem HDM SETUNICODEFORMAT
 
@@ -39,7 +39,7 @@ O conjunto de caracteres que é usado pelo controle. Se esse valor for diferente
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode anterior para o controle.
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera o número de canais de cores usados na memória para armazenar amostras.
+description: 'Método ID3DXPRTBuffer:: GetNumChannels – recupera o número de canais de cores usados na memória para armazenar amostras.'
 ms.assetid: dd1e3590-78e1-41a2-9f15-79389d9a210a
 title: 'Método ID3DXPRTBuffer:: GetNumChannels (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 99456c6386a822489eca6beef41f639008007778
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5dab8491128a242116c48a58e8edba1be9eb51b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764089"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107334"
 ---
 # <a name="id3dxprtbuffergetnumchannels-method"></a>Método ID3DXPRTBuffer:: GetNumChannels
 
@@ -38,7 +38,7 @@ UINT GetNumChannels();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna o número de canais de cores usados na memória para armazenar amostras.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método getcontrolstate recupera o estado da captura, o que indica se a captura está em execução ou em pausa.
+description: 'Método IDelaydC:: getcontrolstate – o método getcontrolstate recupera o estado da captura, o que indica se a captura está em execução ou em pausa.'
 ms.assetid: 21b7faaa-591f-4e15-b4e9-453ea690ab4a
 title: 'Método IDelaydC:: getcontrolstate (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 8f5c3f084db788844f061ba2005d9c3ca38acef0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 825112ec9a33ef176d5a69765837214249e33102
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920686"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110764"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>Método IDelaydC:: getcontrolstate
 
@@ -55,7 +55,7 @@ Indicador de que a captura atual está em pausa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -91,7 +91,7 @@ Os métodos usados para iniciar, pausar e parar a captura são listados na lista
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
