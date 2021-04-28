@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CMediaEvent. CMediaEvent-método de construtor.
 ms.assetid: 7f7a0a9f-e531-4e22-8601-b84ab088e9e7
 title: Construtor CMediaEvent. CMediaEvent (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 77b87fa589728592874b0dea96f7b6efca501471
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36cd82b086241012542701001c4de1fe16ac2d8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771854"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095554"
 ---
 # <a name="cmediaeventcmediaevent-constructor"></a>Construtor CMediaEvent. CMediaEvent
 
@@ -72,7 +72,7 @@ Aloque o parâmetro *pname* na memória estática. Esse nome aparece no terminal
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

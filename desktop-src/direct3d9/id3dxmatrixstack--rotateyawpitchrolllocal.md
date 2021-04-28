@@ -1,5 +1,5 @@
 ---
-description: Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.
+description: 'Método ID3DXMATRIXStack:: RotateYawPitchRollLocal (D3dx9math. h) – gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.'
 ms.assetid: c69f5ea7-5d14-4187-9405-1ceff8230185
 title: 'Método ID3DXMATRIXStack:: RotateYawPitchRollLocal (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cffacf4129a711dece35fd581f6cfc9bc12c2f99
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298515"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093444"
 ---
 # <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: RotateYawPitchRollLocal (D3dx9math. h)
 
@@ -69,7 +69,7 @@ O rolo em volta do eixo z em radianos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -101,7 +101,7 @@ Como a rotação é multiplicada à esquerda na pilha de matriz, a rotação é 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

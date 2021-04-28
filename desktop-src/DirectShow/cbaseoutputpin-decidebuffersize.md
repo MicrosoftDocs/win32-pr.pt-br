@@ -1,5 +1,5 @@
 ---
-description: O método DecideBufferSize define os requisitos de buffer.
+description: Método CBaseOutputPin. DecideBufferSize – o método DecideBufferSize define os requisitos de buffer.
 ms.assetid: 1f7a3424-18ba-4a10-b09f-947ee8585ffa
 title: Método CBaseOutputPin. DecideBufferSize (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5dcb3328b56a7e203575a3abbaab64cda6a9b87f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a76f058e2f9c07a344453db87046704e26280a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747407"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099524"
 ---
 # <a name="cbaseoutputpindecidebuffersize-method"></a>Método CBaseOutputPin. DecideBufferSize
 
@@ -57,7 +57,7 @@ Ponteiro para uma estrutura de [**\_ Propriedades de alocador**](/windows/win32/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se bem-sucedido ou um valor **HRESULT** que indica a causa do erro.
 
@@ -76,7 +76,7 @@ Substitua esse método em sua classe derivada. Chame o método [**IMemAllocator:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. link. TargetUrlPath
 ms.assetid: d5b3eb74-bd6a-4e05-90f9-fe713f931106
 title: System. link. TargetUrlPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8381b148aeccd71fca8d678c142eb3c891ad6057
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4098d29c192e13eb9ddd50a49c16549600d8ddc3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296695"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092344"
 ---
 # <a name="systemlinktargeturlpath"></a>System. link. TargetUrlPath
 

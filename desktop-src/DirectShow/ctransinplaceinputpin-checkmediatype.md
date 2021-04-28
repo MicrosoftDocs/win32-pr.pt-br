@@ -1,5 +1,5 @@
 ---
-description: O método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
+description: Método CTransInPlaceInputPin. CheckMediaType – o método CheckMediaType determina se o PIN aceita um tipo de mídia específico.
 ms.assetid: 2d5f784a-8970-487d-94ef-d96d04f8eb2e
 title: Método CTransInPlaceInputPin. CheckMediaType (TRANSip. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22f271759bc0ade6b820aed2039bbc16a2cf4a31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5de3cec87d740db42824b0d7abf1ee4bfc6aeecb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748798"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094794"
 ---
 # <a name="ctransinplaceinputpincheckmediatype-method"></a>Método CTransInPlaceInputPin. CheckMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de m�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se o tipo de mídia proposto for aceitável. Caso contrário, retorna S \_ false ou um código de erro.
 
@@ -68,7 +68,7 @@ Esse método substitui o método [**CTransformInputPin:: CheckMediaType**](ctran
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

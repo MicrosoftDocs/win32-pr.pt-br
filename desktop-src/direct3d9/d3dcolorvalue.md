@@ -1,5 +1,5 @@
 ---
-description: Descreve os valores de cor.
+description: Estrutura D3DCOLORVALUE (D3D9Types. h) – descreve os valores de cor.
 ms.assetid: 6af8c2ec-bc79-4dc6-b56d-7a7676a50b39
 title: Estrutura D3DCOLORVALUE (D3D9Types. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 1fe2f187921749207bbbf51d7fcfd75357a70858
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c9b55fbf718382e9dca7e3999cce0cabe895a261
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298531"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116054"
 ---
 # <a name="d3dcolorvalue-structure-d3d9typesh"></a>Estrutura D3DCOLORVALUE (D3D9Types. h)
 
@@ -100,7 +100,7 @@ Você pode definir os membros dessa estrutura com valores fora do intervalo de 0
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

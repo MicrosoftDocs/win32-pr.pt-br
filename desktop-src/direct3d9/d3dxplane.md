@@ -1,5 +1,5 @@
 ---
-description: Descreve um plano.
+description: Estrutura D3DXPLANE (D3dx9math. h) – descreve um plano.
 ms.assetid: ffca4650-9788-4559-8f6b-a4e5db29ce55
 title: Estrutura D3DXPLANE (D3dx9math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 260f9555313aea3443f0728f2b50189228429803
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3df0c94dbd49cf38d9230a2c5392df8497c64761
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812076"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115714"
 ---
 # <a name="d3dxplane-structure-d3dx9mathh"></a>Estrutura D3DXPLANE (D3dx9math. h)
 
@@ -102,7 +102,7 @@ Os programadores de C++ podem aproveitar a sobrecarga de operador e a conversão
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

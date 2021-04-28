@@ -1,15 +1,15 @@
 ---
 title: Tratamento de erros no COM (introdução ao Win32 e ao C++)
-description: .
+description: Tratamento de erros no COM (introdução ao Win32 e ao C++)
 ms.assetid: 022ca652-59d2-4513-9d73-1c6d8688c478
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 505f8cfe6867db07da77616e6a94fdc257e32f3e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b69cf89170087469fa6ef8587fb5377e6374f6a8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105796341"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103914"
 ---
 # <a name="error-handling-in-com-get-started-with-win32-and-c"></a>Tratamento de erros no COM (introdução ao Win32 e ao C++)
 
@@ -25,8 +25,8 @@ COM usa valores **HRESULT** para indicar o êxito ou a falha de um método ou um
 | **E \_ OUTOFMEMORY**  | 0x8007000E    | Sem memória.                                       |
 | **\_ponteiro E**      | 0x80004003    | **NULL** foi passado incorretamente para um valor de ponteiro. |
 | **E \_ inesperado**   | 0x8000FFFF    | Condição inesperada.                                |
-| **S \_ OK**           | 0x0           | Êxito.                                             |
-| **\_falso**        | 0x1           | Êxito.                                             |
+| **S \_ OK**           | 0x0           | Sucesso.                                             |
+| **\_falso**        | 0x1           | Sucesso.                                             |
 
 
 

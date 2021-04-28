@@ -1,5 +1,5 @@
 ---
-description: Enviado quando o navegador de DVD analisa um pacote PCI.
+description: EC_DVD_VOBU_Timestamp-enviado quando o navegador de DVD analisa um pacote PCI.
 ms.assetid: 25548c23-22f0-47cb-9062-273ad39d3007
 title: EC_DVD_VOBU_Timestamp (Dvdevcode. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 762a900a83154ce38ee00fcf4173ebc32b41cf30
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bd06eb99cae60960db64a6f32df5e4c932b362f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757629"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094614"
 ---
 # <a name="ec_dvd_vobu_timestamp"></a>\_Carimbo de \_ \_ data/hora VOBU do EC DVD
 
@@ -69,7 +69,7 @@ li.HighPart = DWORD( lParam2 );
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

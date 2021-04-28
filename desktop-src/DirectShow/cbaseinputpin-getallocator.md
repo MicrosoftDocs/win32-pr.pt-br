@@ -1,5 +1,5 @@
 ---
-description: 'O método getalocador recupera o alocador de memória proposto por esse PIN. Esse método implementa o método IMemInputPin:: getalocator.'
+description: 'Método CBaseInputPin. getalocador – o método getalocador recupera o alocador de memória proposto por esse PIN. Esse método implementa o método IMemInputPin:: getalocator.'
 ms.assetid: 07bc77f8-a877-4403-b424-20bda715a818
 title: Método CBaseInputPin. getalocador (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 098738fc63ba1834b1eefb4b2518e3309db35c43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72aaf6bb4c1ff8bf108086a8a42a618267c4bc06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747612"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099704"
 ---
 # <a name="cbaseinputpingetallocator-method"></a>Método CBaseInputPin. getalocador
 
@@ -49,7 +49,7 @@ Endereço de uma variável que recebe um ponteiro para a interface [**IMemAlloca
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se for bem-sucedido ou um código de erro da função **CoCreateInstance** .
 
@@ -70,7 +70,7 @@ Se o método tiver sucesso, a interface **IMemAllocator** terá uma contagem de 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

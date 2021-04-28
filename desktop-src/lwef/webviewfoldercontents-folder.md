@@ -1,6 +1,6 @@
 ---
 title: Propriedade WebViewFolderContents.Folder (Shldisp.h)
-description: Obtém um objeto Folder que representa a exibição.
+description: Propriedade WebViewFolderContents. Folder – Obtém um objeto Folder que representa a exibição.
 ms.assetid: 1d81c27a-1e48-4c0a-b74d-c63af43a909d
 keywords:
 - Propriedade da pasta recursos do ambiente herdado do Windows
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c0640d4e29b903b32a6c9ed1e0b1de9f458b132
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e88fd7a54971fa088bdddbc78d3d8df4af610875
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454715"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102694"
 ---
 # <a name="webviewfoldercontentsfolder-property"></a>Propriedade WebViewFolderContents. Folder
 

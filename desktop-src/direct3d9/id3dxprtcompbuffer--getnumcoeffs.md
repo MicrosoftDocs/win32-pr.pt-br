@@ -1,5 +1,5 @@
 ---
-description: Recupera o número de escalares por canal de cor usado na memória para armazenar amostras.
+description: 'Método ID3DXPRTCompBuffer:: GetNumCoeffs – recupera o número de escalares por canal de cor usado na memória para armazenar amostras.'
 ms.assetid: 82af1ff0-a7d1-48a2-9d74-10e7a2c28568
 title: 'Método ID3DXPRTCompBuffer:: GetNumCoeffs (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 676be3aba75ab8626b186275349fb6f9482401ab
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ec98f2d3db89418e0d9ec4c494d13b6e3d5dbba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091989"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093105"
 ---
 # <a name="id3dxprtcompbuffergetnumcoeffs-method"></a>Método ID3DXPRTCompBuffer:: GetNumCoeffs
 
@@ -38,7 +38,7 @@ UINT GetNumCoeffs();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna o número de escalares por canal de cor usado na memória para armazenar
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

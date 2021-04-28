@@ -1,5 +1,5 @@
 ---
-description: Exibe uma caixa de diálogo que permite ao usuário selecionar um dispositivo de hardware para aquisição de imagem.
+description: 'Método IWiaDevMgr2:: SelectDeviceDlgID – exibe uma caixa de diálogo que permite ao usuário selecionar um dispositivo de hardware para aquisição de imagem.'
 ms.assetid: 6baca959-0f97-4a39-88d0-ed34b813c80a
 title: 'Método IWiaDevMgr2:: SelectDeviceDlgID (WIA. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: bad749eb48e72b362070ea4951d4e9eac380e737
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4279bef86d761ed0eb7d90ad3b8dee46e0f17f4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810832"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106814"
 ---
 # <a name="iwiadevmgr2selectdevicedlgid-method"></a>Método IWiaDevMgr2:: SelectDeviceDlgID
 
@@ -45,7 +45,7 @@ HRESULT SelectDeviceDlgID(
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Especifica a janela pai da caixa de diálogo **selecionar dispositivo** .
 
@@ -94,15 +94,15 @@ Exibir a caixa de diálogo mesmo que haja apenas um dispositivo correspondente.
 *pbstrDeviceID* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
 Ponteiro para uma cadeia de caracteres que recebe a cadeia de caracteres do identificador do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Esse método pode retornar um desses valores.
 

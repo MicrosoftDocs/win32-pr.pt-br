@@ -1,5 +1,5 @@
 ---
-description: Recupera a largura da textura, em pixels.
+description: 'Método ID3DXTextureGutterHelper:: GetWidth – recupera a largura da textura, em pixels.'
 ms.assetid: 497195fc-3cfc-457c-b195-8a5fc5ca7d06
 title: 'Método ID3DXTextureGutterHelper:: GetWidth (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f4952a6db415aba3855ae2be0383ee0b9fc614fb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d113107867cb418b17761c5bc5c72a600df73140
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371004"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117704"
 ---
 # <a name="id3dxtexturegutterhelpergetwidth-method"></a>Método ID3DXTextureGutterHelper:: GetWidth
 
@@ -38,7 +38,7 @@ UINT GetWidth();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna a largura da textura, em pixels.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

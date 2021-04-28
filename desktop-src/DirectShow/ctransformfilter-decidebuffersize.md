@@ -1,5 +1,5 @@
 ---
-description: O método DecideBufferSize define os requisitos de buffer do pino de saída.
+description: Método CTransformFilter. DecideBufferSize – o método DecideBufferSize define os requisitos de buffer do pino de saída.
 ms.assetid: 33e41668-b4f6-4142-b22e-2ddfb96332df
 title: Método CTransformFilter. DecideBufferSize (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71a506a9c9cd16a014418b24ad3fbd1186d6f48f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3276170f1256bba41aa075b0e5f06fb7becbcd2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752689"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095144"
 ---
 # <a name="ctransformfilterdecidebuffersize-method"></a>Método CTransformFilter. DecideBufferSize
 
@@ -57,7 +57,7 @@ Ponteiro para uma estrutura de [**\_ Propriedades de alocador**](/windows/win32/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou outro valor **HRESULT** .
 
@@ -76,7 +76,7 @@ O método [**CTransformOutputPin::D ecidebuffersize**](ctransformoutputpin-decid
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

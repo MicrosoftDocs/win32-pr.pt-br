@@ -1,5 +1,5 @@
 ---
-description: Transforma uma matriz (x, y, 0, 1) por uma determinada matriz.
+description: Função D3DXVec4TransformArray (D3dx9math. h) – transforma uma matriz (x, y, 0, 1) por uma determinada matriz.
 ms.assetid: 11d69f65-2aef-46f4-b274-e173a11382a8
 title: Função D3DXVec4TransformArray (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3102d1766ba43525829e045503c1838a19d4b0e6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f5435b7e88a5424db9457fac077495fcfd8828a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812051"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097624"
 ---
 # <a name="d3dxvec4transformarray-function-d3dx9mathh"></a>Função D3DXVec4TransformArray (D3dx9math. h)
 
@@ -99,7 +99,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
@@ -122,7 +122,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

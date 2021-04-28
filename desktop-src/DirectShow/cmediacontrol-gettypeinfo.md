@@ -1,5 +1,5 @@
 ---
-description: Recupera um objeto Type-informations, que pode recuperar as informações de tipo de uma interface.
+description: Método CMediaControl. GetTypeInfo – recupera um objeto Type-Information, que pode recuperar as informações de tipo de uma interface.
 ms.assetid: 2014485f-d937-415d-a2fc-0c69269b5237
 title: Método CMediaControl. GetTypeInfo (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe393922206744c23b534bf8d701d6292736c65a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 857dbdeee9a2add9ab77cae0ff97d69699d2dd2e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759317"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099124"
 ---
 # <a name="cmediacontrolgettypeinfo-method"></a>Método CMediaControl. GetTypeInfo
 
@@ -65,7 +65,7 @@ Endereço de um ponteiro para o objeto Type-informations solicitado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um \_ ponteiro E se *ppTInfo* for inválido. Retorna o tipo \_ E \_ ELEMENTNOTFOUND se *itinfo* não for zero. Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um **HRESULT** de uma das chamadas para recuperar o tipo.
 
@@ -80,7 +80,7 @@ Retorna um \_ ponteiro E se *ppTInfo* for inválido. Retorna o tipo \_ E \_ ELEM
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

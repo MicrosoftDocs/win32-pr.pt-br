@@ -1,5 +1,5 @@
 ---
-description: A \_ variável de membro m pFilter é um ponteiro para o filtro proprietário.
+description: 'Membro CImagePalette:: m_pFilter-a \_ variável de membro pFilter m é um ponteiro para o filtro proprietário.'
 ms.assetid: f1a75a75-5f5c-420d-a7ab-5f0f03c6afb1
 title: 'Membro CImagePalette:: m_pFilter (Winutil. h)'
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 80609ec003580ac54ef7685edaa6ea6520a17f5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 883fa5bc1aeac57bfa861385cb2d10c563341d52
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759318"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099194"
 ---
 # <a name="cimagepalettem_pfilter-member"></a>Membro de CImagePalette:: m \_ pFilter
 
@@ -47,7 +47,7 @@ CBaseFilter *m_pFilter;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

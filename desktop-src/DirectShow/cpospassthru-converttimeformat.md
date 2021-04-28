@@ -1,5 +1,5 @@
 ---
-description: 'O método ConvertTimeFormat converte de um formato de tempo para outro. Esse método implementa o método IMediaSeeking:: ConvertTimeFormat.'
+description: 'Método CPosPassThru. ConvertTimeFormat-o método ConvertTimeFormat converte de um formato de tempo para outro. Esse método implementa o método IMediaSeeking:: ConvertTimeFormat.'
 ms.assetid: e766d112-ee41-4c64-a735-b6317093518a
 title: Método CPosPassThru. ConvertTimeFormat (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bcce3e24c46e3e59c6bad6b4fbd60b139806de73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc463cb6dc891e677266289971a1dac8b335a8c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754257"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098954"
 ---
 # <a name="cpospassthruconverttimeformat-method"></a>Método CPosPassThru. ConvertTimeFormat
 
@@ -73,7 +73,7 @@ Ponteiro para o GUID de formato de hora do formato a ser convertido. Se for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **HRESULT** do PIN conectado.
 
@@ -88,7 +88,7 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

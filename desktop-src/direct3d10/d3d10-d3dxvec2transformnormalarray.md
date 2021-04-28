@@ -1,5 +1,5 @@
 ---
-description: Transforma uma matriz (x, y, 0, 0) por uma determinada matriz.
+description: Função D3DXVec2TransformNormalArray (D3DX10Math. h) – transforma uma matriz (x, y, 0, 0) por uma determinada matriz.
 ms.assetid: a53f998a-f2a5-4e4b-bc1c-c1f46284d78b
 title: Função D3DXVec2TransformNormalArray (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4850961560ae810b9a21f58fbefa9b6b07227c77
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b4e18fc2bb8c62bb86947b9eab35daae9d0242ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105781099"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108274"
 ---
 # <a name="d3dxvec2transformnormalarray-function-d3dx10mathh"></a>Função D3DXVec2TransformNormalArray (D3DX10Math. h)
 
@@ -99,7 +99,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
@@ -124,7 +124,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

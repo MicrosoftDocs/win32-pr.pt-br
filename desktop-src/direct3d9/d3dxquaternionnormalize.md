@@ -1,5 +1,5 @@
 ---
-description: Computa um Quaternion de comprimento de unidade.
+description: Função D3DXQuaternionNormalize (D3dx9math. h) – computa um Quaternion de comprimento de unidade.
 ms.assetid: 31f56c2b-96b0-4110-a5b9-ce09983779b6
 title: Função D3DXQuaternionNormalize (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d052d4dfc88feb2a00237392071f63d724070b3d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a5d4a7938b96d3d8693fd2091fcbd4f664f465c5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506473"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094034"
 ---
 # <a name="d3dxquaternionnormalize-function-d3dx9mathh"></a>Função D3DXQuaternionNormalize (D3dx9math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de [**D3DXQUATERNION**](d3dxquaternion.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

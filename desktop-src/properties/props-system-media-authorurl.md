@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. AuthorUrl
 ms.assetid: b8891bae-31da-48f6-b4e6-18799a199c9a
 title: System. Media. AuthorUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b048946b0a4ab3672a9aa3b4b73ba809850e5de
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1c7e94e13db057a9b71c5a1735f896d71c32cf5b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105814071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092324"
 ---
 # <a name="systemmediaauthorurl"></a>System. Media. AuthorUrl
 

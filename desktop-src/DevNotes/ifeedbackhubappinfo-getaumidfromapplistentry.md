@@ -1,5 +1,5 @@
 ---
-description: Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+description: 'Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry-essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.'
 ms.assetid: F205911F-7AA3-464F-A408-3BF549E1112A
 title: 'Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6e58fcacde643ad7e87ea3d418f21cf4faf57b16
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 2da6b428db156ddf18483951701216942aebbeaf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104298036"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089294"
 ---
 # <a name="ifeedbackhubappinfogetaumidfromapplistentry-method"></a>Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry
 
@@ -53,7 +53,7 @@ Esta API não está disponível para todos os aplicativos. A menos que seu aplic
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -68,7 +68,7 @@ Esse método não retorna um valor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

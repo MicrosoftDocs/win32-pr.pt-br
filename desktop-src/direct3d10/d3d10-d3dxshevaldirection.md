@@ -1,5 +1,5 @@
 ---
-description: Avalia as funções de base esférica harmônica (SH) de um vetor de direção de entrada.
+description: Função D3DXSHEvalDirection (D3DX10. h) – avalia as funções de base esférica harmônica (SH) de um vetor de direção de entrada.
 ms.assetid: c86973cc-c5b0-4358-b7eb-5c31f38b5b5a
 title: Função D3DXSHEvalDirection (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 698873f3278b37970120b03c25918096762ead34
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7fa1f94d65ca8096a0398d71ca2f562b643d47a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104557391"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108584"
 ---
 # <a name="d3dxshevaldirection-function-d3dx10h"></a>Função D3DXSHEvalDirection (D3DX10. h)
 
@@ -69,7 +69,7 @@ Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -101,7 +101,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

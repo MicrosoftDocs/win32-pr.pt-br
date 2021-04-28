@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz que gira em volta do eixo z.
+description: Função D3DXMatrixRotationZ (D3dx9math. h) – compila uma matriz que gira em volta do eixo z.
 ms.assetid: 73db43e6-3831-4867-8eda-80127b61e169
 title: Função D3DXMatrixRotationZ (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 61d94df676016c0e22e7c0842eebe9af05b9ff71
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b109f71052657a5d9c32d9af5cb38b2cbcf1f0e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105794590"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118104"
 ---
 # <a name="d3dxmatrixrotationz-function-d3dx9mathh"></a>Função D3DXMatrixRotationZ (D3dx9math. h)
 
@@ -59,7 +59,7 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

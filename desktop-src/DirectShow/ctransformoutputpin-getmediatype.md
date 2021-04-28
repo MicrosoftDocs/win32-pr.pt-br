@@ -1,5 +1,5 @@
 ---
-description: O método GetMediaType recupera um tipo de mídia preferencial, por valor de índice.
+description: Método CTransformOutputPin. GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial, por valor de índice.
 ms.assetid: d106e6d1-66ff-4460-9ea2-c93f16116cf4
 title: Método CTransformOutputPin. GetMediaType (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e52a5bc3b6a2b931a8592372e2ef636863c50ef6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1dd0bf38f2fa3be0e077f2509001680bbfc84e15
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758651"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094894"
 ---
 # <a name="ctransformoutputpingetmediatype-method"></a>Método CTransformOutputPin. GetMediaType
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                            | Descrição                   |
 |--------------------------------------------------------------------------------------------------------|-------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                   | Sucesso<br/>            |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito<br/>            |
 | <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo<br/> |
 
 

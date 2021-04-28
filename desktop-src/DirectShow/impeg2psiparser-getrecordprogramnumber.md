@@ -1,5 +1,5 @@
 ---
-description: A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+description: 'Método IMpeg2PsiParser:: GetRecordProgramNumber – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
 ms.assetid: 3800a0b1-a581-40ed-81ab-3d5f77f442df
 title: 'Método IMpeg2PsiParser:: GetRecordProgramNumber'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2bedc5922ce90fa2fda612f30571f884e75841d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0fd99178edaa23f2cdf32672a746f79c368b4265
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105768598"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089134"
 ---
 # <a name="impeg2psiparsergetrecordprogramnumber-method"></a>Método IMpeg2PsiParser:: GetRecordProgramNumber
 
@@ -55,7 +55,7 @@ Ponteiro para uma variável que recebe o \_ campo de número do programa do Pat.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
@@ -63,13 +63,13 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

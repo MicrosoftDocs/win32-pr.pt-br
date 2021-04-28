@@ -1,5 +1,5 @@
 ---
-description: Contém uma lista de perfis a serem aplicados no nível de domínio ou computador.
+description: Elemento ProfileList (LANPolicy) – contém uma lista de perfis a serem aplicados no nível do domínio ou da máquina.
 ms.assetid: 4f010449-0c6b-4a01-8253-4f82cd628f0a
 title: Elemento ProfileList (LANPolicy)
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: b85c284262c070f7a9349933f99ad858cf047913
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d18ebc99f48bf72599afe750863d684b8158608
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757109"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090774"
 ---
 # <a name="profilelist-lanpolicy-element"></a>Elemento ProfileList (LANPolicy)
 
@@ -56,7 +56,7 @@ Esse elemento deve conter exatamente um perfil de rede. Se mais de um perfil for
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

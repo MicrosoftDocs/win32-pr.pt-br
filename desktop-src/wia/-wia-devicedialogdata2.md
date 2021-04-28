@@ -1,5 +1,5 @@
 ---
-description: Define os dados necessários para chamar uma caixa de diálogo de dispositivo.
+description: Estrutura DEVICEDIALOGDATA2 – define os dados necessários para chamar uma caixa de diálogo de dispositivo.
 ms.assetid: 544238de-310f-4fc3-b519-bb4e6b309272
 title: Estrutura DEVICEDIALOGDATA2 (Wiadefd. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: f4ab56114054b4f69a21fd9f4c05a1e119bab5da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82ca6cba81101e577eed882ad45272ab81546fed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011043"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089795"
 ---
 # <a name="devicedialogdata2-structure"></a>Estrutura DEVICEDIALOGDATA2
 
@@ -61,11 +61,11 @@ Especifica o tamanho dessa estrutura em bytes.
 **pIWiaItemRoot**
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 </dd> <dd>
 
-Aponta para uma interface [_ *IWiaItem2* *](-wia-iwiaitem2.md) que representa o item raiz válido na árvore de itens de aplicativo.
+Aponta para uma interface [**IWiaItem2**](-wia-iwiaitem2.md) que representa o item raiz válido na árvore de itens de aplicativo.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Especifica um conjunto de sinalizadores que controlam a operação da caixa de d
 **hwndParent**
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 </dd> <dd>
 
@@ -139,7 +139,7 @@ Recebe o número de cadeias de caracteres gravadas na matriz **pbstrFilePaths** 
 **pbstrFilePaths**
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
 </dd> <dd>
 
@@ -147,14 +147,14 @@ Ponteiro para uma matriz de ponteiros BSTR. Cada elemento de matriz aponta para 
 
 </dd> <dt>
 
-_ *ppWiaItem**
+**ppWiaItem**
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 </dd> <dd>
 
-Ponteiro para a interface [_ *IWiaItem2* *](-wia-iwiaitem2.md) do item WIA que transfere dados para o arquivo ou arquivos nomeados na matriz **pbstrFilePaths** .
+Ponteiro para a interface [**IWiaItem2**](-wia-iwiaitem2.md) do item WIA que transfere dados para o arquivo ou arquivos nomeados na matriz **pbstrFilePaths** .
 
 </dd> </dl>
 

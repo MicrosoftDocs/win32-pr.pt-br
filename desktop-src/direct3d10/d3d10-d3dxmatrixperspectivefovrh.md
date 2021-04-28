@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção de perspectiva à direita com base em um campo de visão.
+description: Função D3DXMatrixPerspectiveFovRH (D3DX10Math. h) – cria uma matriz de projeção de perspectiva à direita com base em um campo de exibição.
 ms.assetid: a75e6666-e6c0-4a54-bc88-835fa012542f
 title: Função D3DXMatrixPerspectiveFovRH (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: baad02b5840af8e244cd562def4aeb8f9ac2988a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 38d48789bab9b968b6bcf657459c408abdba774b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930672"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109104"
 ---
 # <a name="d3dxmatrixperspectivefovrh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveFovRH (D3DX10Math. h)
 
@@ -89,7 +89,7 @@ Z-valor do plano de exibição distante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -126,7 +126,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

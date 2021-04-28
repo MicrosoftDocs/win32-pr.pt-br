@@ -1,5 +1,5 @@
 ---
-description: O método GetPinCount recupera o número de Pins.
+description: Método CBaseRenderer. GetPinCount – o método GetPinCount recupera o número de Pins.
 ms.assetid: 518de15d-2ecf-425e-b4cd-14aaaf938417
 title: Método CBaseRenderer. GetPinCount (Renbase. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71b3703389019e2217a595884ac983e90835cdac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 569a8dd4352edb0c4660fecd3e77fdfaec0ec4c4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756636"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095884"
 ---
 # <a name="cbaserenderergetpincount-method"></a>Método CBaseRenderer. GetPinCount
 
@@ -40,7 +40,7 @@ virtual int GetPinCount();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 1.
 
@@ -59,7 +59,7 @@ Esse método implementa o método [**CBaseFilter:: GetPinCount**](cbasefilter-ge
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
