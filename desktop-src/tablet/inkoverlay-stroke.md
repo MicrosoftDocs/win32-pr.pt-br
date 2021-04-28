@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o usuário desenha um novo traço em qualquer mesa digitalizadora.
+description: Evento InkOverlay. Stroke – ocorre quando o usuário desenha um novo traço em qualquer Tablet.
 ms.assetid: 315155ec-0de1-4052-ae7c-51bc3127fbbf
 title: Evento InkOverlay. Stroke (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6db3bdbe996830596a8e25cebf6f05b94638894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 408c44cf47ecfbf3ea0cfd0f8306be61efb0f8e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663165"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116844"
 ---
 # <a name="inkoverlaystroke-event"></a>Evento InkOverlay. Stroke
 
@@ -53,7 +53,7 @@ Especifica se o evento deve ser cancelado. Se **for true**, a coleção do traç
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -81,7 +81,7 @@ O evento [**Stroke**](inkcollector-stroke.md) é acionado no modo de seleção o
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

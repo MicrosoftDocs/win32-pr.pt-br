@@ -1,6 +1,6 @@
 ---
 title: Mensagem de LVM_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere UNICODE para o controle.
+description: LVM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere UNICODE para o controle.
 ms.assetid: e332ae88-821f-4341-a98d-59d8a01a126f
 keywords:
 - Controles de LVM_SETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18b1e29d933892a24d7bc2ab472c7d591375362a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb0f700cd057bc77eddc699404f37b19a6cc9c39
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754376"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120144"
 ---
 # <a name="lvm_setunicodeformat-message"></a>\_Mensagem SETUNICODEFORMAT LVM
 
@@ -39,7 +39,7 @@ Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode anterior para o controle.
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método Initialize.
+description: Função IWICBitmapScaler_Initialize_Proxy function-proxy para o método Initialize.
 ms.assetid: 47a717d2-9aac-4230-bdb3-093212eb5448
 title: Função IWICBitmapScaler_Initialize_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cc317adc831b0cf0759580d5c6924fb3f0997524
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76b7c754273f4d55fbf3de9d8ba592806e590aac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798402"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100534"
 ---
 # <a name="iwicbitmapscaler_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICBitmapScaler \_
 
@@ -47,22 +47,22 @@ HRESULT IWICBitmapScaler_Initialize_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) \** _
+Tipo: **[ **IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler)\***
 
-Ponteiro para este objeto [_ *IWICBitmapScaler* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) .
+Ponteiro para este objeto [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) .
 
 </dd> <dt>
 
 *pISource* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 A origem do bitmap de entrada.
 
 </dd> <dt>
 
-_uiWidth * \[ in\]
+*uiWidth* \[ no\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -89,7 +89,7 @@ O modo de interpolação a ser usado ao Dimensionar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

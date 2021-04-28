@@ -1,5 +1,5 @@
 ---
-description: Recupera o estado atual do botão de dispositivo especificado.
+description: Método getbuttonstate da classe Msvm_SyntheticMouse – recupera o estado atual do botão do dispositivo especificado.
 ms.assetid: 66363AF1-E360-478D-8E62-513DE66EF130
 title: Método getbuttonstate da classe Msvm_SyntheticMouse
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3812d3e019a303656305471fc097fb1479fa1ada
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26839292cf2fb3099e740629b28c7de0fbe3f60f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768757"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119384"
 ---
 # <a name="getbuttonstate-method-of-the-msvm_syntheticmouse-class"></a>Método getbuttonstate da classe Msvm \_ SyntheticMouse
 
@@ -58,7 +58,7 @@ O estado de inatividade atual do botão. Um valor **verdadeiro** significa que o
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -123,7 +123,7 @@ O acesso à classe [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

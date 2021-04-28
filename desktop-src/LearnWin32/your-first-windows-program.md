@@ -1,15 +1,15 @@
 ---
 title: Módulo 1. Seu primeiro programa do Windows
-description: .
+description: Módulo 1. Seu primeiro programa do Windows
 ms.assetid: 73848144-bf02-4382-a476-7f5a35447727
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27749cddabaefb4fd83b836887fbb2dac017d238
-ms.sourcegitcommit: 35bb565804eaeed7ac5503595753f59d120076dd
+ms.openlocfilehash: 6515b012f968707379ebf24023c3d282c50d6fd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "104563579"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110944"
 ---
 # <a name="module-1-your-first-windows-program"></a>Módulo 1. Seu primeiro programa do Windows
 

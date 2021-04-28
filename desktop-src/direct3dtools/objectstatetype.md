@@ -1,5 +1,5 @@
 ---
-description: Interno.
+description: <span id="vspixengine.objectstatetype"></span>Enumeração de objectstatetype – interna.
 MS-HAID: vspixengine.OBJECTSTATETYPE
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1a1d37411cd72671223022c91f5c784b9b523f46
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 03b232a9cba3cf5fe8f756b9804b03d03f9c5047
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087662"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113054"
 ---
 # <a name="span-idvspixengineobjectstatetypespanobjectstatetype-enumeration"></a><span id="vspixengine.objectstatetype"></span>Enumeração de objectstatetype
 
 Interna
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

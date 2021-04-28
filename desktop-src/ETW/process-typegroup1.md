@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Process_TypeGroup1-essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 4f06e1af-3f9a-4346-aa50-50f3ee82cd98
 title: Classe Process_TypeGroup1
 ms.topic: reference
@@ -21,12 +21,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4ad2ebcd9a3e1563f6e2f4c82d90dd4d2c80112f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd67059f5257dad9b66e1c21f642fef04f03719e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827358"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106374"
 ---
 # <a name="process_typegroup1-class"></a>\_Classe Process TypeGroup1
 
@@ -223,7 +223,7 @@ Os tipos de evento DCStart e DCEnd enumeram o processo que está em execução n
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

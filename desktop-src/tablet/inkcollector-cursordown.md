@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando a dica de cursor entra na superfície do Tablet de digitalização.
+description: Evento InkCollector. CursorDown – ocorre quando a dica de cursor entra em contato com a superfície do Tablet de digitalização.
 ms.assetid: bf914849-ef33-4746-b2e1-c768cd1d87aa
 title: Evento InkCollector. CursorDown (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fd009c5f42e6a26cdaf493e97532be7716381c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da0cdb729f36706202fad2c6c03ab8031e90c845
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811594"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110294"
 ---
 # <a name="inkcollectorcursordown-event"></a>Evento InkCollector. CursorDown
 
@@ -45,7 +45,7 @@ O objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstro
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -68,7 +68,7 @@ Use esse evento com cuidado porque ele pode ter um efeito adverso no desempenho 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

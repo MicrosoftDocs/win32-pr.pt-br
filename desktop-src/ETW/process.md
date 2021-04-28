@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Process-essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: a505c693-2169-499b-bd32-42fa9bd69d2f
 title: Classe Process
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b014262044db9e227bec5af2b351d1392c243c23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8085bae0d00ebe830efff420744f6b7e9b4bf23c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968110"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106264"
 ---
 # <a name="process-class"></a>Classe Process
 
@@ -72,7 +72,7 @@ Eventos de início de processo e thread podem ser registrados no contexto do pro
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

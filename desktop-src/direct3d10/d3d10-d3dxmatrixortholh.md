@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção ortográfica de mão esquerda.
+description: Função D3DXMatrixOrthoLH (D3DX10Math. h) – compila uma matriz de projeção ortográfica de mão esquerda.
 ms.assetid: 67bec4a3-2126-4f5a-9301-97faa6dc6e84
 title: Função D3DXMatrixOrthoLH (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b49e6008b52f7060075688730c72f5f5d3f725a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 73cd5d9b809a0eb442db57e91c3788d2548a8c33
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173151"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113094"
 ---
 # <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoLH (D3DX10Math. h)
 
@@ -89,7 +89,7 @@ Valor z máximo do volume de exibição que é referido como z-far.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -124,7 +124,7 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

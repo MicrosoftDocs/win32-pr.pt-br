@@ -1,5 +1,5 @@
 ---
-description: Computa uma esfera delimitadora para a malha.
+description: Função D3DXComputeBoundingSphere (D3DX10math. h) – computa uma esfera delimitadora para a malha.
 ms.assetid: 54f486d2-45e9-4fc1-90a3-97488ed4d900
 title: Função D3DXComputeBoundingSphere (D3DX10math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c8e59b4d39652d02ce19f4c1bf6b0617fee7772
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0041d775b21d1af37bc51d6ec2f432e616b2abd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173126"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113294"
 ---
 # <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Função D3DXComputeBoundingSphere (D3DX10math. h)
 
@@ -89,7 +89,7 @@ Raio da esfera delimitadora retornada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -106,7 +106,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
