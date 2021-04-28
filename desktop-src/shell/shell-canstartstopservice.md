@@ -1,5 +1,5 @@
 ---
-description: Determina se o usuário atual pode iniciar e parar o serviço nomeado.
+description: Método Shell. CanStartStopService – determina se o usuário atual pode iniciar e parar o serviço nomeado.
 ms.assetid: 1428F529-61F6-4113-A553-2C0D617FD859
 title: Método Shell. CanStartStopService (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1d92fa076141bdebc8a2f24059a65e842e5a3d6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29561519b95329093ef1f7bfc64023fd1ac4533d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921975"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083684"
 ---
 # <a name="shellcanstartstopservice-method"></a>Método Shell. CanStartStopService
 
@@ -58,19 +58,19 @@ Uma **cadeia de caracteres** que contém o nome do serviço.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
+Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
-Retorna _ *true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
+Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 

@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de transformação 2D que representa as transformações no plano XY. Argumentos nulos são tratados como transformações de identidade.
+description: Função D3DXMatrixTransformation2D (D3DX10Math. h) – compila uma matriz de transformação 2D que representa as transformações no plano XY. Argumentos nulos são tratados como transformações de identidade.
 ms.assetid: 5b894c3b-a532-458a-bcbc-48fcd5c73c34
 title: Função D3DXMatrixTransformation2D (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b41d8234dcd9dda1b3735c83460a20c7109e63d7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4ef112c346fd222f5e25935740e47ab62273628f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664080"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103354"
 ---
 # <a name="d3dxmatrixtransformation2d-function-d3dx10mathh"></a>Função D3DXMatrixTransformation2D (D3DX10Math. h)
 
@@ -109,7 +109,7 @@ Ponteiro para uma estrutura D3DXVECTOR2, identificando a tradução. Se esse arg
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -121,7 +121,7 @@ Essa função calcula a matriz de transformação com a seguinte fórmula, com c
 
 M<sub>out</sub> = (m<sub>SC</sub>) ⁻ ¹ \* (m<sub>Sr</sub>) ⁻ ¹ \* MS \* m<sub>Sr</sub> \* m<sub>SC</sub> \* (m<sub>RC</sub>) ⁻ ¹ \* m<sub>r</sub> \* m<sub>RC</sub> \* MT
 
-onde:
+em que:
 
 M<sub>out</sub> = matriz de saída (pout)
 
@@ -152,7 +152,7 @@ Para transformações 3D, use [**D3DXMatrixTransformation**](d3d10-d3dxmatrixtra
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

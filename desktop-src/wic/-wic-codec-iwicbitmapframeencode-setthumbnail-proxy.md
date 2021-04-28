@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método SetThumbnail.
+description: Função IWICBitmapFrameEncode_SetThumbnail_Proxy function-proxy para o método SetThumbnail.
 ms.assetid: 3ad473ec-9218-4ed1-961d-a2aa0d542119
 title: Função IWICBitmapFrameEncode_SetThumbnail_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 052e73911178ef0db957c5dd8edcf6e9d6892ace
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9af9dd2d4f8fe71a6dc94420db17383a5da6da28
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829214"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116594"
 ---
 # <a name="iwicbitmapframeencode_setthumbnail_proxy-function"></a>Função de proxy de IWICBitmapFrameEncode \_ SetThumbnail \_
 
@@ -44,24 +44,24 @@ HRESULT IWICBitmapFrameEncode_SetThumbnail_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Ponteiro para este objeto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Ponteiro para este objeto [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
 
 </dd> <dt>
 
 *pIThumbnail* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 A origem do bitmap a ser usada como miniatura.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

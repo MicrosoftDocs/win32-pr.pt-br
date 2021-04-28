@@ -1,5 +1,5 @@
 ---
-description: O método retomar reinicia uma captura pausada.
+description: 'Método IESP:: resume-o método retomar reinicia uma captura pausada.'
 ms.assetid: 047ea5f8-de3d-40db-ada3-fc0ef4deccef
 title: 'Método IESP:: resume (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 01bbb748fc91bcc5a78b281ec9ebdd2a6d479888
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 498beda4f2f6c61af918d542542c4ed7b789ba1a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759671"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084244"
 ---
 # <a name="iespresume-method"></a>Método IESP:: resume
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Resume();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -77,7 +77,7 @@ Para interromper a captura, chame [**IESP:: Stop**](iesp-stop.md).
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: A \_ variável de membro m pMediaType é um ponteiro para o tipo de mídia atual.
+description: 'Membro CImageAllocator:: m_pMediaType-a \_ variável de membro pMediaType m é um ponteiro para o tipo de mídia atual.'
 ms.assetid: a41e938f-5f01-4fd0-99d7-65d3a93822a5
 title: 'Membro CImageAllocator:: m_pMediaType (Winutil. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21e947048e1bbd552cd8fcaf451c5e8479fd478a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7056b6bf4ea2b36f60ddc586e3ba528ca190a3e7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752492"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095614"
 ---
 # <a name="cimageallocatorm_pmediatype-member"></a>Membro de CImageAllocator:: m \_ pMediaType
 
 A `m_pMediaType` variável de membro é um ponteiro para o tipo de mídia atual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ CMediaType *m_pMediaType;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

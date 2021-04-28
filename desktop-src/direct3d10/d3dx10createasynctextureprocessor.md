@@ -1,5 +1,5 @@
 ---
-description: Crie um processador de dados para ser usado com uma bomba de thread.
+description: Função D3DX10CreateAsyncTextureProcessor – crie um processador de dados para ser usado com uma bomba de thread.
 ms.assetid: c96b0ebb-7b9c-47d0-ad4f-fa62ddb74fa1
 title: Função D3DX10CreateAsyncTextureProcessor (D3DX10Tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d1d9c61729e72cc4ae5432361e9c1d968551b9c2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e75ab6b796f23399b453a6c7eebfe0d40e3b7b49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012150"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102784"
 ---
 # <a name="d3dx10createasynctextureprocessor-function"></a>Função D3DX10CreateAsyncTextureProcessor
 
@@ -69,7 +69,7 @@ Endereço de um ponteiro para um buffer que contém o processador de dados criad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -90,7 +90,7 @@ Essa API cria uma interface de processador de dados e carrega a textura; [**D3DX
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

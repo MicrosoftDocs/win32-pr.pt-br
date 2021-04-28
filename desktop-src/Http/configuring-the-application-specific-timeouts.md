@@ -1,17 +1,17 @@
 ---
 title: Configurando os tempos limite específicos do aplicativo
-description: .
+description: Configurando os tempos limite específicos do aplicativo
 ms.assetid: 24526320-4174-4fc7-b45a-c1ec605e1666
 keywords:
 - Configurando o tempo limite de HTTP específico do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35827b797ad6c9f19b728064f6fe65b0d89b2a3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aca1cbcdb0b0796820282673c41507f6bfcc0ebd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005457"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109734"
 ---
 # <a name="configuring-the-application-specific-timeouts"></a>Configurando os tempos limite específicos do aplicativo
 
@@ -23,9 +23,9 @@ A API do servidor HTTP só pode configurar o **HeaderWait** específico do aplic
 
 Para obter mais informações sobre como configurar temporizadores, consulte os tópicos [Configurando o grupo de URLs](configuring-the-url-group.md) e [Configurando a sessão de servidor](configuring-the-server-session.md) .
 
- 
+ 
 
- 
+ 
 
 
 

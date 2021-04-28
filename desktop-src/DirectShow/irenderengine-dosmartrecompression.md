@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'IRenderEngine: método oSmartRecompression de:D – sem suporte.'
 ms.assetid: 4629b626-c511-4a1e-a647-06554869891a
 title: 'IRenderEngine: método oSmartRecompression de:D'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d0242bc8eb92e75852ceae706f5971caf4229eba
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a3e13a51564b39ba2e954da38a5453e63c4036d2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084464"
 ---
 # <a name="irenderenginedosmartrecompression-method"></a>IRenderEngine: método oSmartRecompression de:D
 
@@ -41,7 +41,7 @@ HRESULT DoSmartRecompression();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -57,7 +57,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

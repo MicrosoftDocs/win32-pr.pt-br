@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de aparência à direita.
+description: Função D3DXMatrixLookAtRH (D3DX10Math. h) – compila uma matriz de aparência à direita.
 ms.assetid: 98c8932f-f179-42ed-a361-a89065b71876
 title: Função D3DXMatrixLookAtRH (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 28c2ad0cc7eb8a3ba98aacadc764bc277a1fdad0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0380207124e4a446b6303dbb377d116b8ae058ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012136"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103444"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx10mathh"></a>Função D3DXMatrixLookAtRH (D3DX10Math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para a estrutura D3DXVECTOR3 que define o mundo atual, geralmente \[ 0,
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -116,7 +116,7 @@ dot(xaxis, eye)  -dot(yaxis, eye)  -dot(zaxis, eye)  1
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

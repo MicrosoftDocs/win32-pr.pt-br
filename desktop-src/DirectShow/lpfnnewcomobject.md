@@ -1,5 +1,5 @@
 ---
-description: Ponteiro para uma função que cria uma instância do objeto.
+description: Ponteiro de função LPFNNewCOMObject-ponteiro para uma função que cria uma instância do objeto.
 ms.assetid: 8c9dab82-a080-4733-8c62-d090b28306e0
 title: Ponteiro de função LPFNNewCOMObject (combase. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: 07c0f8ab961c872c9dc0f92d2fff519b94cd049e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3ea5bc172bc22f7aa9dce1f348bba552520565f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759434"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116524"
 ---
 # <a name="lpfnnewcomobject-function-pointer"></a>Ponteiro de função LPFNNewCOMObject
 
@@ -54,7 +54,7 @@ Ponteiro para um valor **HRESULT** . Se o Construtor falhar, esse parâmetro rec
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um ponteiro para uma nova instância do objeto.
 
@@ -68,7 +68,7 @@ Retorna um ponteiro para uma nova instância do objeto.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

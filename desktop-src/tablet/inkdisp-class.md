@@ -1,5 +1,5 @@
 ---
-description: Representa os traços de tinta coletados em um espaço de tinta.
+description: Classe InkDisp – representa os traços de tinta coletados em um espaço de tinta.
 ms.assetid: f942d6a3-f303-49df-a128-de9760b508ef
 title: Classe InkDisp (Msinkaut. h)
 ms.topic: reference
@@ -15,12 +15,12 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 429cbf85bdc92753cda1e58a0e89086b4b5b8b53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4214d6b03e5823bd5012017e418066763c8132c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646827"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109984"
 ---
 # <a name="inkdisp-class"></a>Classe InkDisp
 
@@ -76,7 +76,7 @@ A classe **InkDisp** tem esses métodos.
 | [**ClipboardCopy**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clipboardcopy)                           | Copia a coleção [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) para a área de transferência.<br/>                                                                                                           |
 | [**ClipboardCopyWithRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clipboardcopywithrectangle) | Copia os objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) contidos no retângulo conhecido para a área de transferência.<br/>                                                               |
 | [**ClipboardPaste**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clipboardpaste)                         | Copia o [**IDataObject**](/windows/desktop/api/objidl/nn-objidl-idataobject) da área de transferência para o objeto **InkDisp** .<br/>                                                                                               |
-| [**8i**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clone)                                           | Cria um objeto **InkDisp** duplicado.<br/>                                                                                                                                                   |
+| [**Clone**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clone)                                           | Cria um objeto **InkDisp** duplicado.<br/>                                                                                                                                                   |
 | [**CreateStroke**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-createstroke)                             | Cria um traço a partir de pontos ou dados de pacote.<br/>                                                                                                                                              |
 | [**Hipertraços**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-createstrokes)                           | Cria uma coleção [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) para este objeto **InkDisp** .<br/>                                                                                                |
 | [**DeleteStroke**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-deletestroke)                             | Exclui um traço do objeto **InkDisp** .<br/>                                                                                                                                             |
@@ -87,7 +87,7 @@ A classe **InkDisp** tem esses métodos.
 | [**HitTestCircle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-hittestcircle)                   | Recupera a coleção [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) que está completamente dentro ou interseccionada por um círculo conhecido.<br/>                                                  |
 | [**HitTestWithLasso**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-hittestwithlasso)              | Recupera os traços dentro de uma área de seleção de polilinha.<br/>                                                                                                                                   |
 | [**HitTestWithRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-hittestwithrectangle)        | Recupera os traços contidos em um retângulo especificado.<br/>                                                                                                                    |
-| [**Carregar**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load)                                             | Popula um novo objeto **InkDisp** com dados binários conhecidos.<br/>                                                                                                                                |
+| [**Carregamento**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load)                                             | Popula um novo objeto **InkDisp** com dados binários conhecidos.<br/>                                                                                                                                |
 | [**NearestPoint**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-nearestpoint)                             | Recupera o [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) dentro do objeto **InkDisp** que é mais próximo de um ponto conhecido, fornecendo, opcionalmente, informações adicionais.<br/>                       |
 | [**Salvar**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-save)                                             | Converte a tinta em um formato especificado e retorna os dados binários.<br/>                                                                                                                       |
 
@@ -142,7 +142,7 @@ O objeto [**InkRenderer**](inkrenderer-class.md) gerencia os mapeamentos entre a
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

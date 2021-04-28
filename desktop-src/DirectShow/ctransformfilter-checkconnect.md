@@ -1,5 +1,5 @@
 ---
-description: O método CheckConnect determina se uma conexão de PIN é adequada.
+description: Método CTransformFilter. CheckConnect – o método CheckConnect determina se uma conexão de PIN é adequada.
 ms.assetid: 4bec4b19-3f7c-43d8-9a45-2eb2cc15a0d4
 title: Método CTransformFilter. CheckConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d41c50323bae7cb4eaca52a87d8c1b936237ccd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5927aac2fa58322c93a23489a22dc96a1e2a67f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751482"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085094"
 ---
 # <a name="ctransformfiltercheckconnect-method"></a>Método CTransformFilter. CheckConnect
 
@@ -57,7 +57,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -76,7 +76,7 @@ Os métodos [**CTransformInputPin:: CheckConnect**](ctransforminputpin-checkconn
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

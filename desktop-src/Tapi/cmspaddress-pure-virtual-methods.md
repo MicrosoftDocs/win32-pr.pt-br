@@ -1,15 +1,15 @@
 ---
-description: Esses métodos devem ser substituídos por classes derivadas.
+description: Métodos virtuais puros CMSPAddress-esses métodos devem ser substituídos por classes derivadas.
 ms.assetid: 68402cff-effd-4a2b-b9f9-f13f233b1555
 title: Métodos virtuais puros CMSPAddress
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a93c9b2a995554dd2f7412c8fa5bf153ea8871e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9d9b9494e4ee42972d97433927fd587034af81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084204"
 ---
 # <a name="cmspaddress-pure-virtual-methods"></a>Métodos virtuais puros CMSPAddress
 

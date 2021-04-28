@@ -1,6 +1,6 @@
 ---
 title: Mensagem de EM_FINDTEXT (RichEdit. h)
-description: Localiza texto em um controle de edição rico.
+description: Mensagem de EM_FINDTEXT-localiza o texto em um controle de edição rico.
 ms.assetid: f19e19a0-d8dd-4d31-b76d-f1f09577dd2d
 keywords:
 - Controles de EM_FINDTEXT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e50034337f05d2df17af777986136881c503d05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 452d4e2534fb05cbbbf4c02ac4146f2f8914c9bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918625"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109844"
 ---
 # <a name="em_findtext-message"></a>\_Mensagem em LocalizarTexto
 
@@ -58,7 +58,7 @@ Uma estrutura [**LocalizarTexto**](/windows/win32/api/richedit/ns-richedit-findt
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a cadeia de caracteres de destino for encontrada, o valor de retorno será a posição baseada em zero do primeiro caractere da correspondência. Se o destino não for encontrado, o valor de retorno será-1.
 
@@ -78,7 +78,7 @@ O membro **cpMin** de **LocalizarTexto. chrg** sempre especifica o ponto de part
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

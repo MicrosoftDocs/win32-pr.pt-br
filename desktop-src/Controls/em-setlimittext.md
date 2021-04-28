@@ -1,6 +1,6 @@
 ---
 title: Mensagem de EM_SETLIMITTEXT (WinUser. h)
-description: Define o limite de texto de um controle de edição.
+description: EM_SETLIMITTEXT mensagem – define o limite de texto de um controle de edição.
 ms.assetid: e2be7814-435b-495f-982a-32247fbc0165
 keywords:
 - Controles de EM_SETLIMITTEXT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c138e6d7fed75fa8da2e7a6b93308632c250e7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b66d4e03b5c1824ab501226482fcf51fb9121cba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644776"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109744"
 ---
 # <a name="em_setlimittext-message"></a>\_Mensagem em SETLIMITTEXT
 
@@ -51,7 +51,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -77,7 +77,7 @@ Para controles de edição de linha única, o limite de texto é 0x7FFFFFFE byte
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

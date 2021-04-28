@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IRenderEngine:: SetSourceConnectCallback-sem suporte.'
 ms.assetid: 7da88bab-abba-417c-9e33-c4fc4950536f
 title: 'Método IRenderEngine:: SetSourceConnectCallback'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e58755ef936b6dd0822dbbc8a4159291cf2e0454
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e8fc7dca58f2c1406f575f99d8119edd9bd750d9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105778430"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084424"
 ---
 # <a name="irenderenginesetsourceconnectcallback-method"></a>Método IRenderEngine:: SetSourceConnectCallback
 
@@ -50,7 +50,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -66,7 +66,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

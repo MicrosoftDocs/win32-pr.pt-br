@@ -1,5 +1,5 @@
 ---
-description: 'O método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
+description: 'Método CBasePin. Notify – o método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
 ms.assetid: 5e9394d9-8d3c-4091-b45f-345a3f7270db
 title: Método CBasePin. Notify (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f34ea630a461226c32b9d827b2b91dcd0874cac7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35e751fb583010402df53e1a85eca11f751eda24
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756639"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096014"
 ---
 # <a name="cbasepinnotify-method"></a>Método CBasePin. Notify
 
@@ -57,7 +57,7 @@ Especifica uma estrutura de [**qualidade**](/windows/win32/api/strmif/ns-strmif-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A classe base retorna E \_ NOTIMPL.
 
@@ -78,7 +78,7 @@ Se um Gerenciador de qualidade externo foi instalado (consulte [**CBasePin:: Set
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

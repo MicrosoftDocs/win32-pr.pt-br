@@ -1,5 +1,5 @@
 ---
-description: Retorna o determinante de uma matriz.
+description: Função D3DXMatrixDeterminant (D3DX10Math. h) – retorna o determinante de uma matriz.
 ms.assetid: b0155c91-1554-42ef-b219-c6cdd2a905b5
 title: Função D3DXMatrixDeterminant (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 11b1092427b12c33d8c34c9f1bbd5e09cf1ccf2d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 894db23a3079c1344c97cab00642cbbc0953450d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798449"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103454"
 ---
 # <a name="d3dxmatrixdeterminant-function-d3dx10mathh"></a>Função D3DXMatrixDeterminant (D3DX10Math. h)
 
@@ -49,7 +49,7 @@ Ponteiro para a estrutura de D3DXMATRIX de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
@@ -66,7 +66,7 @@ Retorna o determinante da matriz.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

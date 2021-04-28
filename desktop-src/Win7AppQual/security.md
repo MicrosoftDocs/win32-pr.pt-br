@@ -1,15 +1,15 @@
 ---
-description: .
+description: Segurança (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.assetid: 87331C1D-F468-4CA4-92BD-D4E5D4E930BC
 title: Segurança (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bbaaa6b34463e04f5870082e5c693462f4e19fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f320f4cb561079380e19a969eba95f3f6b321fb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116224"
 ---
 # <a name="security-windows-7-and-windows-server-2008-r2-application-quality-cookbook"></a>Segurança (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 

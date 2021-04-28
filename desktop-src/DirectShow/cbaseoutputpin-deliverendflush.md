@@ -1,5 +1,5 @@
 ---
-description: O método DeliverEndFlush solicita o pino de entrada conectado para finalizar uma operação de liberação.
+description: Método CBaseOutputPin. DeliverEndFlush – o método DeliverEndFlush solicita o pino de entrada conectado para finalizar uma operação de liberação.
 ms.assetid: 9f1fd76c-dba7-41c5-b098-9735e4f2571b
 title: Método CBaseOutputPin. DeliverEndFlush (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb9b92947f2452b8755109c4b83cb21afa119461
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f3fd5c1bc686ee5c0b4ff0cd1285a5114b93049
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758869"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096174"
 ---
 # <a name="cbaseoutputpindeliverendflush-method"></a>Método CBaseOutputPin. DeliverEndFlush
 
@@ -40,7 +40,7 @@ virtual HRESULT DeliverEndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                           | Descrição                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>              |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O PIN não está conectado.<br/> |
 
 
@@ -70,7 +70,7 @@ Esse método chama o método [**IPin:: EndFlush**](/windows/desktop/api/Strmif/n
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

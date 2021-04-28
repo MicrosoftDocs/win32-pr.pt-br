@@ -1,5 +1,5 @@
 ---
-description: Exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
+description: Método Delete da classe Win32_PageFile – exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
 ms.assetid: cc36d621-597e-4343-8bf6-bfca7fa29276
 ms.tgt_platform: multiple
 title: Método Delete da classe Win32_PageFile
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e61155a321e4414c66f98843a79d935f38870bd5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8b35751633387f3db1d7dccbf13694f56717a1d3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750955"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089584"
 ---
 # <a name="delete-method-of-the-win32_pagefile-class"></a>Método Delete da classe de \_ arquivo de paginação Win32
 
@@ -40,7 +40,7 @@ uint32 Delete();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o arquivo foi excluído com êxito e qualquer outro número para indicar um erro.
 
@@ -151,7 +151,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

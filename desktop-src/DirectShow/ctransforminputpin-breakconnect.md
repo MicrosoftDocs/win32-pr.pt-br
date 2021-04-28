@@ -1,5 +1,5 @@
 ---
-description: O método BreakConnect libera o PIN de uma conexão.
+description: Método CTransformInputPin. BreakConnect – o método BreakConnect libera o PIN de uma conexão.
 ms.assetid: 9874717d-f4d8-426d-a717-9f5d83b4683c
 title: Método CTransformInputPin. BreakConnect (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2274b71b67a54ecacb291d77d2eef4ad8a110fa2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe425ba617909dcfb1d66dbb4777b579139d436b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751238"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085014"
 ---
 # <a name="ctransforminputpinbreakconnect-method"></a>Método CTransformInputPin. BreakConnect
 
@@ -40,7 +40,7 @@ HRESULT BreakConnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou outro valor **HRESULT** .
 

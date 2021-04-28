@@ -1,5 +1,5 @@
 ---
-description: Ponteiro para uma função que cria uma instância do objeto.
+description: 'CFactoryTemplate:: m_lpfnNew ponteiro de membro para uma função que cria uma instância do objeto.'
 ms.assetid: 86859bf9-e16a-4494-bf1b-1d8ddbc1c805
 title: 'Membro CFactoryTemplate:: m_lpfnNew (combase. h)'
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2299f7a87f348ac8a5fa6c6d83b6a17fbf97ca28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee4ec8e1503d3b260e025d154624b2d7c09bb49b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748447"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095644"
 ---
 # <a name="cfactorytemplatem_lpfnnew-member"></a>Membro de CFactoryTemplate:: m \_ lpfnNew
 
@@ -72,7 +72,7 @@ CUnknown * WINAPI CMyComponent::CreateInstance(LPUNKNOWN pUnk, HRESULT *pHr)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

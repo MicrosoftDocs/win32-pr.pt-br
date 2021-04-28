@@ -1,15 +1,15 @@
 ---
-description: .
+description: Compatibilidade com DEP/NX
 ms.assetid: 18F74BA7-2729-4EB3-8E6F-4E5A8C17C317
 title: Compatibilidade com DEP/NX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beb542331d218ed4c493efde091be3e5efae6aee
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: cb8b46c9143ee96b8599c10d4c70276d36e20a08
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105761580"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116424"
 ---
 # <a name="depnx-compatibility"></a>Compatibilidade com DEP/NX
 

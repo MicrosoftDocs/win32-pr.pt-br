@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o ponteiro do mouse é movido sobre o objeto InkCollector ou InkOverlay.
+description: Evento InkCollector. MouseMove – ocorre quando o ponteiro do mouse é movido sobre o objeto InkCollector ou InkOverlay.
 ms.assetid: 688ac7ef-dcee-44a4-8947-117966365061
 title: Evento InkCollector. MouseMove (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27ad88c35871ed73125be73b66329ede464f0c00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3392f2022af39600cb24461b26d37e5d624f4cb4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807812"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110154"
 ---
 # <a name="inkcollectormousemove-event"></a>Evento InkCollector. MouseMove
 
@@ -69,7 +69,7 @@ A coordenada y, em pixels, de um clique do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -100,7 +100,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o usuário desenha um novo traço em qualquer mesa digitalizadora.
+description: Evento InkCollector. Stroke – ocorre quando o usuário desenha um novo traço em qualquer mesa digitalizadora.
 ms.assetid: eaa89dfe-6141-4205-845b-634321130e26
 title: Evento InkCollector. Stroke (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e75ee7f3e8129fdab52e62178fe4b8a322807fc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49cb90b02ab3fca60a8fa17089b6a76f959a60e0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105794602"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110045"
 ---
 # <a name="inkcollectorstroke-event"></a>Evento InkCollector. Stroke
 
@@ -53,7 +53,7 @@ O objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstro
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -81,7 +81,7 @@ O evento **Stroke** é acionado no modo de seleção ou apagamento, não apenas 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

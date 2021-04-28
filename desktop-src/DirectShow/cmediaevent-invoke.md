@@ -1,5 +1,5 @@
 ---
-description: Fornece acesso a propriedades e métodos expostos por um objeto.
+description: Método CMediaEvent. Invoke – fornece acesso a propriedades e métodos expostos por um objeto.
 ms.assetid: 2b091b57-0855-489a-9a33-cfc75f63ad07
 title: Método CMediaEvent. Invoke (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22482cffe11f62d50361bc950409858a2436d8a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea812d0c7629b98d90f3f7e535d229c707452b23
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754155"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095534"
 ---
 # <a name="cmediaeventinvoke-method"></a>Método CMediaEvent. Invoke
 
@@ -105,7 +105,7 @@ Ponteiro para o índice do primeiro argumento, dentro da matriz **rgvarg** da es
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o DISP \_ E \_ UNKNOWNINTERFACE se *riid* não for \_ nulo como IID. Retorna um dos códigos de erro de [**CMediaEvent:: GetTypeInfo**](cmediaevent-gettypeinfo.md) se a chamada falhar. Caso contrário, retorna o **HRESULT** da chamada para **IDispatch:: Invoke**.
 
@@ -120,7 +120,7 @@ Retorna o DISP \_ E \_ UNKNOWNINTERFACE se *riid* não for \_ nulo como IID. Ret
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

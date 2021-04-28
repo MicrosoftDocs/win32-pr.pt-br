@@ -1,5 +1,5 @@
 ---
-description: Monte um sombreador.
+description: Função D3DXAssembleShaderFromFile – montar um sombreador.
 ms.assetid: 2977b64a-b8cc-454b-8e28-291f6f2c6fc1
 title: Função D3DXAssembleShaderFromFile (D3DX9Shader. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a6e355f6ce51158f72757f771114346899557c59
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 91aaf2924638b1db5b0e8ec0782b90fa964a9543
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762980"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116024"
 ---
 # <a name="d3dxassembleshaderfromfile-function"></a>Função D3DXAssembleShaderFromFile
 
@@ -99,7 +99,7 @@ Retorna um buffer que contém uma lista de erros e avisos que foram encontrados 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -120,7 +120,7 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

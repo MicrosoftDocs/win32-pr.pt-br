@@ -1,5 +1,5 @@
 ---
-description: O método CheckConnect determina se uma conexão de PIN é adequada.
+description: Método CBasePin. CheckConnect – o método CheckConnect determina se uma conexão de PIN é adequada.
 ms.assetid: 511a1594-f3f8-4725-afcd-f14f3a4ebf20
 title: Método CBasePin. CheckConnect (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 24d5c221da417fd1fc2b3f9f140536f825b2f9d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 314d3e1ce0e73e60ea07bb4f7270fa04f69750c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757442"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096044"
 ---
 # <a name="cbasepincheckconnect-method"></a>Método CBasePin. CheckConnect
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 | Código de retorno                                                                                               | Descrição                                   |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                      | Êxito.<br/>                           |
+| <dl> <dt>**S \_ OK**</dt> </dl>                      | Sucesso.<br/>                           |
 | <dl> <dt>**VFW \_ E \_ direção inválida \_**</dt> </dl> | As direções do PIN não são compatíveis.<br/> |
 
 
@@ -83,7 +83,7 @@ Se esse método falhar, a conexão falhará e o PIN chamará o método [**CBaseP
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

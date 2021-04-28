@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CMediaSample. CMediaSample-método de construtor.
 ms.assetid: 3ee67cfd-a968-4b7c-9c7b-1c28ddb9c343
 title: Construtor CMediaSample. CMediaSample (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e4513af3b01d39f311fd1b8ecc1cea8f086d89c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fd2601b9f53e8f79d9231dd34054932bec4e671
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775635"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095434"
 ---
 # <a name="cmediasamplecmediasample-constructor"></a>Construtor CMediaSample. CMediaSample
 
@@ -96,7 +96,7 @@ A classe base não modifica o valor **HRESULT** passado no parâmetro *PHR* .
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Ajusta o valor de saturação de uma cor.
+description: Função D3DXColorAdjustSaturation (D3DX10Math. h) – ajusta o valor de saturação de uma cor.
 ms.assetid: a7ca64b4-2198-4116-8e9f-79d6c922fd09
 title: Função D3DXColorAdjustSaturation (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e6cfa4dd2af6e4a4ac3772af80ba11b8189405f2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e9ae91f5c898dae8ff922616bc02846732c760a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930696"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103534"
 ---
 # <a name="d3dxcoloradjustsaturation-function-d3dx10mathh"></a>Função D3DXColorAdjustSaturation (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Valor de saturação. Esse parâmetro interpola linearmente entre a cor converti
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)\***
 
@@ -116,7 +116,7 @@ r = g = b = 0.2125*r + 0.7154*g + 0.0721*b;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

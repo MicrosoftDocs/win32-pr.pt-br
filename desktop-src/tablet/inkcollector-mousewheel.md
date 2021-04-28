@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando a roda do mouse se move enquanto o objeto InkCollector ou InkOverlay tem foco.
+description: Evento InkCollector. MouseWheel – ocorre quando a roda do mouse se move enquanto o objeto InkCollector ou InkOverlay tem foco.
 ms.assetid: 418cf67c-0ec0-49e3-a17f-9eaeb40bb602
 title: Evento InkCollector. MouseWheel (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 401e6a6728bfcbe058ff5eab56499f6c8e885351
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 851a017af4bb71917c88e2194db86eec64218771
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765699"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110134"
 ---
 # <a name="inkcollectormousewheel-event"></a>Evento InkCollector. MouseWheel
 
@@ -77,7 +77,7 @@ A coordenada y, em pixels, de um clique do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -103,7 +103,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

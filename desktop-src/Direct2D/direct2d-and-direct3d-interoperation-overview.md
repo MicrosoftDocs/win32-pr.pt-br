@@ -1,6 +1,6 @@
 ---
 title: Visão geral de interoperabilidade entre Direct2D e Direct3D
-description: .
+description: Visão geral de interoperabilidade entre Direct2D e Direct3D
 ms.assetid: 27680714-dc68-44eb-ab16-2cae3529b352
 keywords:
 - Interoperação Direct2D, Direct3D
@@ -14,12 +14,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 6854481ec2a8d869467aa912252e3649e17f2501
-ms.sourcegitcommit: 4e4f9e7c90d25af0774deec1d44bd49fa9b6daa9
+ms.openlocfilehash: cf7cfa41c3decc964492258dad9c6a3a497f504b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "104084979"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089184"
 ---
 # <a name="direct2d-and-direct3d-interoperability-overview"></a>Visão geral de interoperabilidade entre Direct2D e Direct3D
 
@@ -395,6 +395,6 @@ Para acomodar essa abordagem, o método Resize deve testar para ver se o disposi
 [Elementos gráficos do Windows DirectX](../graphics-and-multimedia.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

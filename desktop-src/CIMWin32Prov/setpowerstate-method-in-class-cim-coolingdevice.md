@@ -1,5 +1,5 @@
 ---
-description: O método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
+description: Método SetPowerState da classe CIM_CoolingDevice-o método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
 ms.assetid: 39b51ef7-1bd6-456b-a4d2-59d4769cc9a0
 ms.tgt_platform: multiple
 title: Método SetPowerState da classe CIM_CoolingDevice
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 28f466f3d687471f946c20539731c5b07572133c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 97c73bb0c066bd42dd99dcd45604cd71a63fa024
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826248"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089424"
 ---
 # <a name="setpowerstate-method-of-the-cim_coolingdevice-class"></a>Método SetPowerState da classe CIM \_ CoolingDevice
 
@@ -102,7 +102,7 @@ Especifica quando o estado de energia deve ser definido, seja como um valor de d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 
@@ -126,7 +126,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

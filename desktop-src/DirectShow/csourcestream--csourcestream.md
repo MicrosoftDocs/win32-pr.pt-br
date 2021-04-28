@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CSourceStream. ~ CSourceStream destruidor-método Destruitor.
 ms.assetid: 678085c2-5999-4e62-8749-99b783787cc6
 title: Destruidor CSourceStream. ~ CSourceStream (Source. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fa27d50a9c1acbc9c8a27407cb97673d60158e4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bbf53184dadc42145758ab387d15e8b0a1bfe09d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748193"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085204"
 ---
 # <a name="csourcestreamcsourcestream-destructor"></a>Destruidor CSourceStream. ~ CSourceStream
 
@@ -51,7 +51,7 @@ O destruidor remove automaticamente o PIN do filtro proprietário, chamando [**C
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

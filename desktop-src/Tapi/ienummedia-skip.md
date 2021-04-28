@@ -1,15 +1,15 @@
 ---
-description: O método Skip ignora o próximo número especificado de elementos na sequência de enumeração.
+description: 'Método IEnumMedia:: Skip – o método Skip ignora o próximo número especificado de elementos na sequência de enumeração.'
 ms.assetid: 825972c9-5303-4c5a-9475-dc67c185af91
 title: 'Método IEnumMedia:: Skip (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd950fd61ad6f6b2030b03d0d269854f86e3a02d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d8c600a201d6800fcb04dba5f208fd5cb810078
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769420"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084184"
 ---
 # <a name="ienummediaskip-method"></a>Método IEnumMedia:: Skip
 
@@ -39,7 +39,7 @@ Número de elementos a serem ignorados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -67,7 +67,7 @@ Esse método pode retornar um desses valores.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

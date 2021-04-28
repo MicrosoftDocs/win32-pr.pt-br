@@ -1,5 +1,5 @@
 ---
-description: A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+description: 'Método IMpeg2PsiParser:: GetCountOfElementaryStreams – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
 ms.assetid: 19ef96a8-3d5b-4da1-8cff-d6a271ad4915
 title: 'Método IMpeg2PsiParser:: GetCountOfElementaryStreams'
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6593b699592c913940b14c2c26aea42057acfa40
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fc81c0a66751751a73a3895fd31fe8651aee8caf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105754761"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089154"
 ---
 # <a name="impeg2psiparsergetcountofelementarystreams-method"></a>Método IMpeg2PsiParser:: GetCountOfElementaryStreams
 
@@ -55,7 +55,7 @@ Ponteiro para uma variável que recebe o número de fluxos elementares no progra
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
@@ -63,7 +63,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
 
 
 
@@ -73,7 +73,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 Use o método **GetRecordProgramNumber** para obter o número do programa.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

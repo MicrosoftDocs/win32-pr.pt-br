@@ -1,5 +1,5 @@
 ---
-description: 'O método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
+description: 'Método CTransformOutputPin. Notify – o método Notify notifica o PIN de que uma alteração de qualidade é solicitada. Esse método implementa o método IQualityControl:: Notify.'
 ms.assetid: cdb93eef-90d5-4111-a3d4-175903f44a13
 title: Método CTransformOutputPin. Notify (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6ace7e25f1413f6e17a4d19ef937732ea8c689a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a55e493c737b5a5864ec0a8dd38eee3abbfa586
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748616"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084804"
 ---
 # <a name="ctransformoutputpinnotify-method"></a>Método CTransformOutputPin. Notify
 
@@ -57,7 +57,7 @@ Estrutura de [**qualidade**](/windows/win32/api/strmif/ns-strmif-quality) que co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                       | Descrição                                                |
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>              | Êxito.<br/>                                        |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Sucesso.<br/>                                        |
 | <dl> <dt>**VFW \_ E \_ não \_ encontrado**</dt> </dl> | Não foi possível encontrar um objeto para aceitar a mensagem.<br/> |
 
 

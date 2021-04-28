@@ -1,5 +1,5 @@
 ---
-description: O método pause pausa a captura atual.
+description: IESP::P método ause-o método pause pausa a captura atual.
 ms.assetid: efbc8947-b9fe-4dbd-8097-375b5f99845e
 title: 'IESP: método ause de:P (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0558c5dfe36f26e3aad9f31101364d2e8e5c4967
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 486c7aedc7092e0dd0f9f68cc1ea2ccad08d9438
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501344"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084234"
 ---
 # <a name="iesppause-method"></a>IESP: método ause de:P
 
@@ -47,7 +47,7 @@ Obsoleto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -87,7 +87,7 @@ Para reiniciar a captura, chame [IESP:: resume](iesp-resume.md). Para interrompe
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

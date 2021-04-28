@@ -1,5 +1,5 @@
 ---
-description: Cria e retorna um objeto de pasta para a pasta especificada.
+description: Método Shell. NameSpace – cria e retorna um objeto de pasta para a pasta especificada.
 ms.assetid: c0d61bc6-6851-4b47-a62d-4c24d2958b98
 title: Método Shell. NameSpace (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 856a86efb4aca6ae7c1d4c8a3a81b5bc722a3963
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fab501912c55aaaf6cab832bf76763672e830d33
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169553"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083704"
 ---
 # <a name="shellnamespace-method"></a>Método Shell. NameSpace
 
@@ -58,7 +58,7 @@ A pasta para a qual criar o objeto de [**pasta**](folder.md) . Pode ser uma cade
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

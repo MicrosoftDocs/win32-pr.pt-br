@@ -1,5 +1,5 @@
 ---
-description: O método DecideBufferSize define os requisitos de buffer.
+description: Método CTransformOutputPin. DecideBufferSize – o método DecideBufferSize define os requisitos de buffer.
 ms.assetid: cdf9e384-623e-46a6-b123-d881fe21fb09
 title: Método CTransformOutputPin. DecideBufferSize (Transfrm. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc17314887094b7f62a43f38dd406d0ac9039de3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1bc84eaf5e95a19436de5429ce018352cdaa286e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750649"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084834"
 ---
 # <a name="ctransformoutputpindecidebuffersize-method"></a>Método CTransformOutputPin. DecideBufferSize
 
@@ -57,7 +57,7 @@ Ponteiro de uma estrutura de [**\_ Propriedades de alocador**](/windows/win32/ap
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** .
 

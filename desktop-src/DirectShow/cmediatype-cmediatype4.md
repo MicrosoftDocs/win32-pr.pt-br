@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor CMediaType. CMediaType (mtype. h)-método de construtor.
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
 title: Construtor CMediaType. CMediaType (mtype. h)-parâmetros cmtype e PHR
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a40929bb6f53df7ce721e20eefba3019eb71cb0e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: dd91252920c74d45e4218be3c3d03249a116bfcf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389063"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095414"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh"></a>Construtor CMediaType. CMediaType (mtype. h)
 
@@ -72,7 +72,7 @@ O construtor chama o método [**CMediaType:: InitMediaType**](cmediatype-initmed
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

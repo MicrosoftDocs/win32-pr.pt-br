@@ -1,5 +1,5 @@
 ---
-description: O método inativo notifica o PIN de que o filtro não está mais ativo.
+description: Método CBaseOutputPin. Inactive-o método inativo notifica o PIN de que o filtro não está mais ativo.
 ms.assetid: 14a020de-2102-4d49-8a34-d59abe6698d1
 title: Método CBaseOutputPin. Inactive (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: afec15e295e5c14cfb3d9efa6e733d1dc288b319
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc4901bba7f1e34d49ff5bafb7b291544157bd9c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750700"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096134"
 ---
 # <a name="cbaseoutputpininactive-method"></a>Método CBaseOutputPin. Inactive
 
@@ -40,7 +40,7 @@ HRESULT Inactive();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                          | Descrição                                  |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                 | Êxito.<br/>                          |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Sucesso.<br/>                          |
 | <dl> <dt>**VFW \_ E \_ nenhum \_ alocador**</dt> </dl> | Não há alocador de memória disponível.<br/> |
 
 
@@ -72,7 +72,7 @@ Se você substituir esse método, chame o método de classe base do seu método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

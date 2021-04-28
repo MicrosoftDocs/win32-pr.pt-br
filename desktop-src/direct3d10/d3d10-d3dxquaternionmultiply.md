@@ -1,5 +1,5 @@
 ---
-description: Multiplica dois quaternions.
+description: Função D3DXQuaternionMultiply (D3DX10Math. h) – Multiplica dois quaternions.
 ms.assetid: f549e383-9c39-47a9-84e4-82365bdf1155
 title: Função D3DXQuaternionMultiply (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 74e10117bf27d922480418e5aa0b8ea60a13528c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4f84ecac1eb910f4b3c97aba6ed42691c70b5b1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105778460"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103154"
 ---
 # <a name="d3dxquaternionmultiply-function-d3dx10mathh"></a>Função D3DXQuaternionMultiply (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para uma estrutura de [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
@@ -106,7 +106,7 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

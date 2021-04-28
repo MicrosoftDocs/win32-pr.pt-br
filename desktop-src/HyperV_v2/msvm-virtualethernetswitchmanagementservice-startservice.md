@@ -1,5 +1,5 @@
 ---
-description: Inicia o serviço.
+description: Método StartService da classe Msvm_VirtualEthernetSwitchManagementService – inicia o serviço.
 ms.assetid: 8b232523-3311-47a9-949a-3bbb9944d80f
 title: Método StartService da classe Msvm_VirtualEthernetSwitchManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0334800f09fa3dc281f9eae000a23ba3eeac17f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d58ec579d13edd87b0a952d8b9e26ad387622d3b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828883"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109404"
 ---
 # <a name="startservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método StartService da classe Msvm \_ VirtualEthernetSwitchManagementService
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
