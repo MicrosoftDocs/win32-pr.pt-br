@@ -1,5 +1,5 @@
 ---
-description: O método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
+description: Método SetPowerState da classe CIM_ParallelController-o método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.
 ms.assetid: 1bb89be1-f5bb-40a3-9e78-fbb069d38a17
 ms.tgt_platform: multiple
 title: Método SetPowerState da classe CIM_ParallelController
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fcb51992aeb90e9d3b2ecf745cfa59434751a122
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cd029e47799483dfbc8ac398d44a6f7a79521b2e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089251"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100084"
 ---
-# <a name="setpowerstate-method-of-the-cim_parallelcontroller-class"></a><span data-ttu-id="27fa1-103">Método SetPowerState da classe CIM \_ ParallelController</span><span class="sxs-lookup"><span data-stu-id="27fa1-103">SetPowerState method of the CIM\_ParallelController class</span></span>
+# <a name="setpowerstate-method-of-the-cim_parallelcontroller-class"></a><span data-ttu-id="a3c7c-103">Método SetPowerState da classe CIM \_ ParallelController</span><span class="sxs-lookup"><span data-stu-id="a3c7c-103">SetPowerState method of the CIM\_ParallelController class</span></span>
 
-<span data-ttu-id="27fa1-104">O método **SetPowerState** define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.</span><span class="sxs-lookup"><span data-stu-id="27fa1-104">The **SetPowerState** method sets the desired power state for a logical device and when a device should be put into that state.</span></span> <span data-ttu-id="27fa1-105">Em uma subclasse, o conjunto de códigos de retorno possíveis deve ser especificado usando um qualificador **ValueMap** no método.</span><span class="sxs-lookup"><span data-stu-id="27fa1-105">In a subclass, the set of possible return codes should be specified by using a **ValueMap** qualifier on the method.</span></span> <span data-ttu-id="27fa1-106">As cadeias de caracteres nas quais o conteúdo de **ValueMap** são traduzidos também devem ser especificadas na subclasse como um qualificador de matriz de **valores** .</span><span class="sxs-lookup"><span data-stu-id="27fa1-106">The strings to which the **ValueMap** contents are translated should also be specified in the subclass as a **Values** array qualifier.</span></span> <span data-ttu-id="27fa1-107">Esse método é herdado [**do \_ LogicalDevice CIM**](cim-logicaldevice.md).</span><span class="sxs-lookup"><span data-stu-id="27fa1-107">This method is inherited from [**CIM\_LogicalDevice**](cim-logicaldevice.md).</span></span>
+<span data-ttu-id="a3c7c-104">O método **SetPowerState** define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-104">The **SetPowerState** method sets the desired power state for a logical device and when a device should be put into that state.</span></span> <span data-ttu-id="a3c7c-105">Em uma subclasse, o conjunto de códigos de retorno possíveis deve ser especificado usando um qualificador **ValueMap** no método.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-105">In a subclass, the set of possible return codes should be specified by using a **ValueMap** qualifier on the method.</span></span> <span data-ttu-id="a3c7c-106">As cadeias de caracteres nas quais o conteúdo de **ValueMap** são traduzidos também devem ser especificadas na subclasse como um qualificador de matriz de **valores** .</span><span class="sxs-lookup"><span data-stu-id="a3c7c-106">The strings to which the **ValueMap** contents are translated should also be specified in the subclass as a **Values** array qualifier.</span></span> <span data-ttu-id="a3c7c-107">Esse método é herdado [**do \_ LogicalDevice CIM**](cim-logicaldevice.md).</span><span class="sxs-lookup"><span data-stu-id="a3c7c-107">This method is inherited from [**CIM\_LogicalDevice**](cim-logicaldevice.md).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="27fa1-108">As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas.</span><span class="sxs-lookup"><span data-stu-id="27fa1-108">The DMTF (Distributed Management Task Force) CIM (Common Information Model) classes are the parent classes upon which WMI classes are built.</span></span> <span data-ttu-id="27fa1-109">Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).</span><span class="sxs-lookup"><span data-stu-id="27fa1-109">WMI currently supports only the [CIM 2.x version schemas](https://dmtf.org/standards/cim/schemas).</span></span>
+> <span data-ttu-id="a3c7c-108">As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-108">The DMTF (Distributed Management Task Force) CIM (Common Information Model) classes are the parent classes upon which WMI classes are built.</span></span> <span data-ttu-id="a3c7c-109">Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).</span><span class="sxs-lookup"><span data-stu-id="a3c7c-109">WMI currently supports only the [CIM 2.x version schemas](https://dmtf.org/standards/cim/schemas).</span></span>
 
  
 
-## <a name="syntax"></a><span data-ttu-id="27fa1-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="27fa1-110">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a3c7c-110">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="a3c7c-110">Syntax</span></span>
 
 
 ```mof
@@ -42,98 +42,98 @@ uint32 SetPowerState(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="27fa1-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="27fa1-111">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a3c7c-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a3c7c-111">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="27fa1-112">*PowerState* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="27fa1-112">*PowerState* \[in\]</span></span>
+<span data-ttu-id="a3c7c-112">*PowerState* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a3c7c-112">*PowerState* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-113">Um valor de **ValueMap** que especifica o estado de energia desejado para esse dispositivo lógico.</span><span class="sxs-lookup"><span data-stu-id="27fa1-113">A **ValueMap** value that specifies the desired power state for this logical device.</span></span>
+<span data-ttu-id="a3c7c-113">Um valor de **ValueMap** que especifica o estado de energia desejado para esse dispositivo lógico.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-113">A **ValueMap** value that specifies the desired power state for this logical device.</span></span>
 
 <dt>
 
-<span data-ttu-id="27fa1-114">1</span><span class="sxs-lookup"><span data-stu-id="27fa1-114">1</span></span>
+<span data-ttu-id="a3c7c-114">1</span><span class="sxs-lookup"><span data-stu-id="a3c7c-114">1</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-115">Potência total.</span><span class="sxs-lookup"><span data-stu-id="27fa1-115">Full power.</span></span>
+<span data-ttu-id="a3c7c-115">Potência total.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-115">Full power.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27fa1-116">2</span><span class="sxs-lookup"><span data-stu-id="27fa1-116">2</span></span>
+<span data-ttu-id="a3c7c-116">2</span><span class="sxs-lookup"><span data-stu-id="a3c7c-116">2</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-117">Economia de energia no modo de baixa energia.</span><span class="sxs-lookup"><span data-stu-id="27fa1-117">Power save   low-power mode.</span></span>
+<span data-ttu-id="a3c7c-117">Economia de energia no modo de baixa energia.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-117">Power save   low-power mode.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27fa1-118">3</span><span class="sxs-lookup"><span data-stu-id="27fa1-118">3</span></span>
+<span data-ttu-id="a3c7c-118">3</span><span class="sxs-lookup"><span data-stu-id="a3c7c-118">3</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-119">Power Save em espera.</span><span class="sxs-lookup"><span data-stu-id="27fa1-119">Power save   standby.</span></span>
+<span data-ttu-id="a3c7c-119">Power Save em espera.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-119">Power save   standby.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27fa1-120">4</span><span class="sxs-lookup"><span data-stu-id="27fa1-120">4</span></span>
+<span data-ttu-id="a3c7c-120">4</span><span class="sxs-lookup"><span data-stu-id="a3c7c-120">4</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-121">Economia de energia diferente.</span><span class="sxs-lookup"><span data-stu-id="27fa1-121">Power save   other.</span></span>
+<span data-ttu-id="a3c7c-121">Economia de energia diferente.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-121">Power save   other.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27fa1-122">5</span><span class="sxs-lookup"><span data-stu-id="27fa1-122">5</span></span>
+<span data-ttu-id="a3c7c-122">5</span><span class="sxs-lookup"><span data-stu-id="a3c7c-122">5</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-123">Ciclo de energia.</span><span class="sxs-lookup"><span data-stu-id="27fa1-123">Power cycle.</span></span>
+<span data-ttu-id="a3c7c-123">Ciclo de energia.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-123">Power cycle.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27fa1-124">6</span><span class="sxs-lookup"><span data-stu-id="27fa1-124">6</span></span>
+<span data-ttu-id="a3c7c-124">6</span><span class="sxs-lookup"><span data-stu-id="a3c7c-124">6</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-125">Desligar.</span><span class="sxs-lookup"><span data-stu-id="27fa1-125">Power off.</span></span>
+<span data-ttu-id="a3c7c-125">Desligar.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-125">Power off.</span></span>
 
 </dd> </dl> </dd> <dt>
 
-<span data-ttu-id="27fa1-126">*Tempo* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="27fa1-126">*Time* \[in\]</span></span>
+<span data-ttu-id="a3c7c-126">*Tempo* \[ no\]</span><span class="sxs-lookup"><span data-stu-id="a3c7c-126">*Time* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27fa1-127">Especifica quando o estado de energia deve ser definido, seja como um valor de data/hora regular ou como um valor de intervalo (em que o intervalo começa quando a invocação do método é recebida).</span><span class="sxs-lookup"><span data-stu-id="27fa1-127">Specifies when the power state should be set, either as a regular date-time value or as an interval value (where the interval begins when the method invocation is received).</span></span> <span data-ttu-id="27fa1-128">Quando o parâmetro *PowerState* é igual a 5 ("ciclo de energia"), o parâmetro *time* indica quando o dispositivo deve ligar novamente.</span><span class="sxs-lookup"><span data-stu-id="27fa1-128">When the *PowerState* parameter is equal to 5 ("Power Cycle"), the *Time* parameter indicates when the device should power on again.</span></span> <span data-ttu-id="27fa1-129">A desligamento é imediata.</span><span class="sxs-lookup"><span data-stu-id="27fa1-129">Power-off is immediate.</span></span>
+<span data-ttu-id="a3c7c-127">Especifica quando o estado de energia deve ser definido, seja como um valor de data/hora regular ou como um valor de intervalo (em que o intervalo começa quando a invocação do método é recebida).</span><span class="sxs-lookup"><span data-stu-id="a3c7c-127">Specifies when the power state should be set, either as a regular date-time value or as an interval value (where the interval begins when the method invocation is received).</span></span> <span data-ttu-id="a3c7c-128">Quando o parâmetro *PowerState* é igual a 5 ("ciclo de energia"), o parâmetro *time* indica quando o dispositivo deve ligar novamente.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-128">When the *PowerState* parameter is equal to 5 ("Power Cycle"), the *Time* parameter indicates when the device should power on again.</span></span> <span data-ttu-id="a3c7c-129">A desligamento é imediata.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-129">Power-off is immediate.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="27fa1-130">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="27fa1-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a3c7c-130">Valor retornado</span><span class="sxs-lookup"><span data-stu-id="a3c7c-130">Return value</span></span>
 
-<span data-ttu-id="27fa1-131">Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.</span><span class="sxs-lookup"><span data-stu-id="27fa1-131">Returns 0 (zero) if successful, 1 (one) if the specified *PowerState* and *Time* request is not supported, and another value if any other error occurred.</span></span>
+<span data-ttu-id="a3c7c-131">Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-131">Returns 0 (zero) if successful, 1 (one) if the specified *PowerState* and *Time* request is not supported, and another value if any other error occurred.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="27fa1-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="27fa1-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a3c7c-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="a3c7c-132">Remarks</span></span>
 
-<span data-ttu-id="27fa1-133">Este método não está implementado no momento pelo WMI.</span><span class="sxs-lookup"><span data-stu-id="27fa1-133">This method is currently not implemented by WMI.</span></span> <span data-ttu-id="27fa1-134">Para usar esse método, você deve implementá-lo em seu próprio provedor.</span><span class="sxs-lookup"><span data-stu-id="27fa1-134">To use this method, you must implement it in your own provider.</span></span>
+<span data-ttu-id="a3c7c-133">Este método não está implementado no momento pelo WMI.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-133">This method is currently not implemented by WMI.</span></span> <span data-ttu-id="a3c7c-134">Para usar esse método, você deve implementá-lo em seu próprio provedor.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-134">To use this method, you must implement it in your own provider.</span></span>
 
-<span data-ttu-id="27fa1-135">Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF.</span><span class="sxs-lookup"><span data-stu-id="27fa1-135">This documentation is derived from the CIM class descriptions published by the DMTF.</span></span> <span data-ttu-id="27fa1-136">A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.</span><span class="sxs-lookup"><span data-stu-id="27fa1-136">Microsoft may have made changes to correct minor errors, conform to Microsoft SDK documentation standards, or provide more information.</span></span>
+<span data-ttu-id="a3c7c-135">Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-135">This documentation is derived from the CIM class descriptions published by the DMTF.</span></span> <span data-ttu-id="a3c7c-136">A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.</span><span class="sxs-lookup"><span data-stu-id="a3c7c-136">Microsoft may have made changes to correct minor errors, conform to Microsoft SDK documentation standards, or provide more information.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="27fa1-137">Requisitos</span><span class="sxs-lookup"><span data-stu-id="27fa1-137">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a3c7c-137">Requisitos</span><span class="sxs-lookup"><span data-stu-id="a3c7c-137">Requirements</span></span>
 
 
 
-| <span data-ttu-id="27fa1-138">Requisito</span><span class="sxs-lookup"><span data-stu-id="27fa1-138">Requirement</span></span> | <span data-ttu-id="27fa1-139">Valor</span><span class="sxs-lookup"><span data-stu-id="27fa1-139">Value</span></span> |
+| <span data-ttu-id="a3c7c-138">Requisito</span><span class="sxs-lookup"><span data-stu-id="a3c7c-138">Requirement</span></span> | <span data-ttu-id="a3c7c-139">Valor</span><span class="sxs-lookup"><span data-stu-id="a3c7c-139">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="27fa1-140">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="27fa1-140">Minimum supported client</span></span><br/> | <span data-ttu-id="27fa1-141">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="27fa1-141">Windows Vista</span></span><br/>                                                                |
-| <span data-ttu-id="27fa1-142">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="27fa1-142">Minimum supported server</span></span><br/> | <span data-ttu-id="27fa1-143">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="27fa1-143">Windows Server 2008</span></span><br/>                                                          |
-| <span data-ttu-id="27fa1-144">Namespace</span><span class="sxs-lookup"><span data-stu-id="27fa1-144">Namespace</span></span><br/>                | <span data-ttu-id="27fa1-145">Raiz \\ cimv2</span><span class="sxs-lookup"><span data-stu-id="27fa1-145">Root\\CIMV2</span></span><br/>                                                                  |
-| <span data-ttu-id="27fa1-146">MOF</span><span class="sxs-lookup"><span data-stu-id="27fa1-146">MOF</span></span><br/>                      | <dl> <span data-ttu-id="27fa1-147"><dt>CIMWin32. mof</dt></span><span class="sxs-lookup"><span data-stu-id="27fa1-147"><dt>CIMWin32.mof</dt></span></span> </dl> |
-| <span data-ttu-id="27fa1-148">DLL</span><span class="sxs-lookup"><span data-stu-id="27fa1-148">DLL</span></span><br/>                      | <dl> <span data-ttu-id="27fa1-149"><dt>CIMWin32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="27fa1-149"><dt>CIMWin32.dll</dt></span></span> </dl> |
+| <span data-ttu-id="a3c7c-140">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a3c7c-140">Minimum supported client</span></span><br/> | <span data-ttu-id="a3c7c-141">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="a3c7c-141">Windows Vista</span></span><br/>                                                                |
+| <span data-ttu-id="a3c7c-142">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="a3c7c-142">Minimum supported server</span></span><br/> | <span data-ttu-id="a3c7c-143">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="a3c7c-143">Windows Server 2008</span></span><br/>                                                          |
+| <span data-ttu-id="a3c7c-144">Namespace</span><span class="sxs-lookup"><span data-stu-id="a3c7c-144">Namespace</span></span><br/>                | <span data-ttu-id="a3c7c-145">Raiz \\ cimv2</span><span class="sxs-lookup"><span data-stu-id="a3c7c-145">Root\\CIMV2</span></span><br/>                                                                  |
+| <span data-ttu-id="a3c7c-146">MOF</span><span class="sxs-lookup"><span data-stu-id="a3c7c-146">MOF</span></span><br/>                      | <dl> <span data-ttu-id="a3c7c-147"><dt>CIMWin32. mof</dt></span><span class="sxs-lookup"><span data-stu-id="a3c7c-147"><dt>CIMWin32.mof</dt></span></span> </dl> |
+| <span data-ttu-id="a3c7c-148">DLL</span><span class="sxs-lookup"><span data-stu-id="a3c7c-148">DLL</span></span><br/>                      | <dl> <span data-ttu-id="a3c7c-149"><dt>CIMWin32.dll</dt></span><span class="sxs-lookup"><span data-stu-id="a3c7c-149"><dt>CIMWin32.dll</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="27fa1-150">Confira também</span><span class="sxs-lookup"><span data-stu-id="27fa1-150">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a3c7c-150">Consulte também</span><span class="sxs-lookup"><span data-stu-id="a3c7c-150">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="27fa1-151">\_PARALLELCONTROLLER CIM</span><span class="sxs-lookup"><span data-stu-id="27fa1-151">CIM\_ParallelController</span></span>](setpowerstate-method-in-class-cim-parallelcontroller.md)
+[<span data-ttu-id="a3c7c-151">\_PARALLELCONTROLLER CIM</span><span class="sxs-lookup"><span data-stu-id="a3c7c-151">CIM\_ParallelController</span></span>](setpowerstate-method-in-class-cim-parallelcontroller.md)
 </dt> <dt>
 
-[<span data-ttu-id="27fa1-152">**\_PARALLELCONTROLLER CIM**</span><span class="sxs-lookup"><span data-stu-id="27fa1-152">**CIM\_ParallelController**</span></span>](cim-parallelcontroller.md)
+[<span data-ttu-id="a3c7c-152">**\_PARALLELCONTROLLER CIM**</span><span class="sxs-lookup"><span data-stu-id="a3c7c-152">**CIM\_ParallelController**</span></span>](cim-parallelcontroller.md)
 </dt> </dl>
 
  
