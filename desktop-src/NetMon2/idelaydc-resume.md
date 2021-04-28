@@ -1,5 +1,5 @@
 ---
-description: O método retomar reinicia uma captura pausada.
+description: 'Método IDelaydC:: resume-o método retomar reinicia uma captura pausada.'
 ms.assetid: 4fa47220-d323-407b-9dae-704969f66bdd
 title: 'Método IDelaydC:: resume (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ba0deef666c2e9829cb5a71d91e73da9c1b7d780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c8c3b505e0e9fb306a444111cce22c8c580d015
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109184"
 ---
 # <a name="idelaydcresume-method"></a>Método IDelaydC:: resume
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Resume();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -77,7 +77,7 @@ Para interromper a captura, chame [**IDelaydC:: Stop**](idelaydc-stop.md).
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

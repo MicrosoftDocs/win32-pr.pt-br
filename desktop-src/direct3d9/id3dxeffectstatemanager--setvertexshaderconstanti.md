@@ -1,5 +1,5 @@
 ---
-description: Uma função de retorno de chamada que deve ser implementada por um usuário para definir uma matriz de constantes de inteiro de sombreador de vértice.
+description: 'Método ID3DXEffectStateManager:: SetVertexShaderConstantI – uma função de retorno de chamada que deve ser implementada por um usuário para definir uma matriz de constantes de inteiro de sombreador de vértice.'
 ms.assetid: 0035c97a-1b17-4665-9032-7b3b9a9d2cff
 title: 'Método ID3DXEffectStateManager:: SetVertexShaderConstantI (D3DX9Effect. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: be95d678ee6b0c44dc49e180df4d3332a84d5fe7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c129e3e01fe6fbae6ba7ede1b9ea8c4bee5338a4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814564"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090394"
 ---
 # <a name="id3dxeffectstatemanagersetvertexshaderconstanti-method"></a>Método ID3DXEffectStateManager:: SetVertexShaderConstantI
 
@@ -69,7 +69,7 @@ O número de registros em pConstantData.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -89,7 +89,7 @@ O método implementado pelo usuário deve retornar S \_ OK. Se o retorno de cham
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

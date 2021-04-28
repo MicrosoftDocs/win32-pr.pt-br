@@ -1,15 +1,15 @@
 ---
-description: Especifica se o áudio de 2 canais é codificado como estéreo ou mono duplo.
+description: Propriedade AVDecAudioDualMono – especifica se o áudio de 2 canais está codificado como estéreo ou duplo mono.
 ms.assetid: 96cb9e17-588c-4a1a-a7ba-7f8439d5b79a
 title: Propriedade AVDecAudioDualMono (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 107adb00eb68cbb9ec19331b0c0f3f9db916a306
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: adc84e19d41840b358e3e79576152dbc8527e2bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825935"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096564"
 ---
 # <a name="avdecaudiodualmono-property"></a>Propriedade AVDecAudioDualMono
 
@@ -45,7 +45,7 @@ Essa propriedade só se aplica quando o fluxo de bits de entrada do decodificado
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

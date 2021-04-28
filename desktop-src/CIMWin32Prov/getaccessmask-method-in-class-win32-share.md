@@ -1,5 +1,5 @@
 ---
-description: Retorna um bitmap UInt32 com os direitos de acesso ao compartilhamento mantido pelo usuário ou grupo em cujo nome a instância é retornada.
+description: Método GetAccessMask da classe Win32_Share – retorna um bitmap UInt32 com os direitos de acesso ao compartilhamento mantido pelo usuário ou grupo em cujo nome a instância é retornada.
 ms.assetid: 234f44a4-ffff-431d-a973-98f2bd313c7d
 ms.tgt_platform: multiple
 title: Método GetAccessMask da classe Win32_Share
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 745ce6d607adf84827c14a588640572b5d92be00
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fcd6396f6421060a67108e7c428c99bcd7ca9651
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920293"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097014"
 ---
 # <a name="getaccessmask-method-of-the-win32_share-class"></a>Método GetAccessMask da classe de \_ compartilhamento do Win32
 
@@ -40,7 +40,7 @@ uint32 GetAccessMask();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Direitos de acesso ao compartilhamento mantido pelo usuário ou grupo.
 
@@ -216,7 +216,7 @@ WScript.Echo Return
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

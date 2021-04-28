@@ -1,5 +1,5 @@
 ---
-description: 'O método EnumMediaTypes enumera os tipos de mídia preferenciais do PIN. Esse método implementa o método IPin:: EnumMediaTypes.'
+description: 'Método CBasePin. EnumMediaTypes – o método EnumMediaTypes enumera os tipos de mídia preferenciais do PIN. Esse método implementa o método IPin:: EnumMediaTypes.'
 ms.assetid: 0360f9fc-6876-4a54-8de1-bf289e0e10ae
 title: Método CBasePin. EnumMediaTypes (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 54aaddbbcde26791b6c55665bfbbb7ff62048238
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c68fe1ab83724149dcd2fb58a60e9c6950d887ca
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752713"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099384"
 ---
 # <a name="cbasepinenummediatypes-method"></a>Método CBasePin. EnumMediaTypes
 
@@ -49,7 +49,7 @@ Endereço de uma variável que recebe um ponteiro para a interface [**IEnumMedia
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 | Código de retorno                                                                                   | Descrição                           |
 |-----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso.<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente.<br/>       |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo** .<br/> |
 
@@ -84,7 +84,7 @@ A classe base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaT
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método GetTypeInfo recupera as informações de tipo para o objeto, que pode ser usado para obter as informações de tipo de uma interface.
+description: Método CMediaPosition. GetTypeInfo – o método GetTypeInfo recupera as informações de tipo para o objeto, que pode ser usado para obter as informações de tipo de uma interface.
 ms.assetid: 0a04c43d-8b4b-4780-b02f-04053c405c77
 title: Método CMediaPosition. GetTypeInfo (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6fa776ca71daff67185bf9fd2c1727f9535f8ac4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7827a3599f05061b5760084bed46cd2554b45f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780867"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099134"
 ---
 # <a name="cmediapositiongettypeinfo-method"></a>Método CMediaPosition. GetTypeInfo
 
@@ -65,7 +65,7 @@ Endereço de uma variável que recebe um ponteiro **ITypeInfo** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -73,7 +73,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                             | Descrição                                    |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                    | Êxito.<br/>                            |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Sucesso.<br/>                            |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>               | Argumento de ponteiro **nulo** .<br/>          |
 | <dl> <dt>**Digite \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | O parâmetro *itinfo* não é zero.<br/> |
 
@@ -92,7 +92,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

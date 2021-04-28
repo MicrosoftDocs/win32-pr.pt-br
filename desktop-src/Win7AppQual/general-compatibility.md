@@ -1,15 +1,15 @@
 ---
-description: .
+description: Compatibilidade geral
 ms.assetid: 2072bd3f-a6cf-43d5-bc55-9b86d819aea1
 title: Compatibilidade geral
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 892064859f0770e1c67d377176d39ad12d3e0563
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b55bd44947dede014669c433c19915234d026a2f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169661"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088354"
 ---
 # <a name="general-compatibility"></a>Compatibilidade geral
 

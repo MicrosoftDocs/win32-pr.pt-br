@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz não transposeda.
+description: 'Método ID3DXTextureShader:: setmatrix – define uma matriz não transposeda.'
 ms.assetid: 891441ea-09d5-43b6-a080-578d7f8e4586
 title: 'Método ID3DXTextureShader:: setmatrix (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c52fa8d363200222197ac40563fb0dd66e71f7a7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 15ba6b289ad106a8fad4a932b9c5d01e0a52dc18
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091953"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090214"
 ---
 # <a name="id3dxtextureshadersetmatrix-method"></a>Método ID3DXTextureShader:: setmatrix
 
@@ -59,7 +59,7 @@ Ponteiro para uma matriz não transposeda. Consulte [**D3DXMATRIX**](d3dxmatrix.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -80,7 +80,7 @@ Uma matriz não transposed contém dados de linha principal; ou seja, cada vetor
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

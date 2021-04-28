@@ -1,15 +1,15 @@
 ---
-description: Ao usar a diretiva RegisterDlls INF para Autoregistro de DLLs, os chamadores de SetupInstallFromInfSection podem receber notificações em cada arquivo conforme ele é registrado ou cancelado.
+description: SPFILENOTIFY_ENDREGISTRATION mensagem-ao usar a diretiva RegisterDlls INF para autoregistrar DLLs, os chamadores de SetupInstallFromInfSection podem receber notificações em cada arquivo, já que são registrados ou cancelados.
 ms.assetid: 6304f406-c9f8-41cc-a7b7-5ef606f62efb
 title: Mensagem de SPFILENOTIFY_ENDREGISTRATION (Setupapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8992d318d605110d74521efdb8a9c911aeeb9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec341c26f9f88390ff1b807e6e932b3b381cd57
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756362"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094504"
 ---
 # <a name="spfilenotify_endregistration-message"></a>\_Mensagem de ENDregistro do SPFILENOTIFY
 
@@ -45,7 +45,7 @@ Se o arquivo estiver sendo registrado, *param2* deverá ser definido como um pon
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Depois de receber a notificação, a função de retorno de chamada pode retornar um dos valores a seguir.
 
@@ -73,7 +73,7 @@ Depois de receber a notificação, a função de retorno de chamada pode retorna
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

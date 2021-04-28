@@ -1,5 +1,5 @@
 ---
-description: 'O método EndFlush termina uma operação de liberação. Esse método implementa o método IPin:: EndFlush.'
+description: 'Método CBaseOutputPin. EndFlush – o método EndFlush termina uma operação de liberação. Esse método implementa o método IPin:: EndFlush.'
 ms.assetid: c5c76cf8-1ca1-4fef-8776-7f4dcca32939
 title: Método CBaseOutputPin. EndFlush (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b40bc7db4e8d290ae0cd7e26a9d751e44b0daa4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53153c6dbd941390c7ef616ee36c56e01214c341
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751506"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099504"
 ---
 # <a name="cbaseoutputpinendflush-method"></a>Método CBaseOutputPin. EndFlush
 
@@ -40,7 +40,7 @@ HRESULT EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna E \_ inesperado.
 
@@ -59,7 +59,7 @@ Esse método só deve ser chamado em Pins de entrada, portanto a implementação
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

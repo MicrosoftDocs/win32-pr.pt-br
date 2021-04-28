@@ -1,5 +1,5 @@
 ---
-description: Especifica os atributos de peso de malha.
+description: Estrutura D3DXATTRIBUTEWEIGHTS-especifica os atributos de peso de malha.
 ms.assetid: 8901a0fe-e38a-4045-8e8d-584be2620cc3
 title: Estrutura D3DXATTRIBUTEWEIGHTS (D3dx9mesh. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 49725e410fb700c7ecb93fd56a8db367d7f982a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7a833d2a58db0f434f836126926e461cd2ee3ea0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793980"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115964"
 ---
 # <a name="d3dxattributeweights-structure"></a>Estrutura D3DXATTRIBUTEWEIGHTS
 
@@ -158,7 +158,7 @@ O tipo LPD3DXATTRIBUTEWEIGHTS é definido como um ponteiro para a estrutura **D3
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

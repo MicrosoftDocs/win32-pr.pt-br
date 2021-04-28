@@ -1,15 +1,15 @@
 ---
-description: .
+description: Administrador de compatibilidade
 ms.assetid: 72a77e83-ab18-438c-af11-fa6d55bf0180
 title: Administrador de compatibilidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abde760ca7324aec18f0576a7f04e3a4c5db2d22
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 5d941c9db85c8302d8d7d8808f24b95d1f3b08be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314979"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088524"
 ---
 # <a name="compatibility-administrator"></a>Administrador de compatibilidade
 

@@ -1,5 +1,5 @@
 ---
-description: Ignora o próximo número especificado de itens na sequência de enumeração.
+description: 'Método IEnumPStoreProviders:: Skip – ignora o próximo número especificado de itens na sequência de enumeração.'
 ms.assetid: bf9ea700-3f44-48a7-8ea0-ee66dea61836
 title: 'Método IEnumPStoreProviders:: Skip (Pstore. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 75ec981e76d387f6ada82869bba40fa4946ce7b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f74c44de172d9235d9768b8f484405b5e8fb7fe
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753553"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096744"
 ---
 # <a name="ienumpstoreprovidersskip-method"></a>Método IEnumPStoreProviders:: Skip
 
@@ -48,7 +48,7 @@ O número de tipos de provedor a serem ignorados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um valor **HRESULT** .
 
@@ -63,7 +63,7 @@ O valor de retorno é um valor **HRESULT** .
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

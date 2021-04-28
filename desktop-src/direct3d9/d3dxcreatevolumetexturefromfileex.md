@@ -1,5 +1,5 @@
 ---
-description: Cria uma textura de volume a partir de um arquivo.
+description: Função D3DXCreateVolumeTextureFromFileEx – cria uma textura de volume a partir de um arquivo.
 ms.assetid: fa11706a-83cc-4795-957d-6d0e1faf2a8f
 title: Função D3DXCreateVolumeTextureFromFileEx (D3dx9tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4d63377394dc123defac565cd11a0d40324a28a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 11be9da24be7fc9a03bab8e761e55a601715bd75
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298629"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102744"
 ---
 # <a name="d3dxcreatevolumetexturefromfileex-function"></a>Função D3DXCreateVolumeTextureFromFileEx
 
@@ -189,7 +189,7 @@ Endereço de um ponteiro para uma interface [**IDirect3DVolumeTexture9**](/windo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -216,7 +216,7 @@ Ao ignorar os níveis de mipmap ao carregar um arquivo. DDS, use a \_ \_ macro D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

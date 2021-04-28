@@ -1,5 +1,5 @@
 ---
-description: 'O método FindPin recupera o PIN com o identificador especificado. Esse método implementa o método IBaseFilter:: FindPin.'
+description: 'Método CSource. FindPin – o método FindPin recupera o PIN com o identificador especificado. Esse método implementa o método IBaseFilter:: FindPin.'
 ms.assetid: ad593dbf-ca56-4409-ac6e-1b88908c8cee
 title: Método CSource. FindPin (Source. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9fac8df1e53e4a129b42d1284a19392bc7b58aa2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: daa1e2404e7c6fbf1d879d71374298103bdc621f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749241"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098854"
 ---
 # <a name="csourcefindpin-method"></a>Método CSource. FindPin
 
@@ -57,7 +57,7 @@ Recebe um ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-st
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -65,7 +65,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 | Código de retorno                                                                                       | Descrição                                           |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>              | Êxito.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Sucesso.<br/>                                   |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>         | Argumento de ponteiro **nulo** .<br/>                 |
 | <dl> <dt>**VFW \_ E \_ não \_ encontrado**</dt> </dl> | Não foi possível encontrar um PIN com este identificador.<br/> |
 
@@ -88,7 +88,7 @@ O primeiro PIN é sempre denominado "1"; o segundo PIN é denominado "2"; e assi
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

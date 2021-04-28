@@ -1,5 +1,5 @@
 ---
-description: Abre uma caixa de diálogo do sistema para solicitar permissão de usuário para dispositivos habilitados para localização.
+description: Método LocationDisp. LatLongReportFactory. RequestPermissions – abre uma caixa de diálogo do sistema para solicitar permissão de usuário para dispositivos habilitados para localização.
 ms.assetid: 25b4368d-ff9d-4806-a22e-4ae0760d6f0f
 title: Método LocationDisp. LatLongReportFactory. RequestPermissions
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ed789aca4b6c9d0db50a3e7b6cae33d55d22920c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b2d21a032a2e4c08c6f80e4f0ae79349a49ce21
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760695"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088924"
 ---
 # <a name="locationdisplatlongreportfactoryrequestpermissions-method"></a>Método LocationDisp. LatLongReportFactory. RequestPermissions
 
@@ -47,7 +47,7 @@ Esse parâmetro não é usado e deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

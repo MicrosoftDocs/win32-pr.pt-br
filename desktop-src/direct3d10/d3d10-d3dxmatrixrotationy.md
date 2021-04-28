@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz que gira em volta do eixo y.
+description: Função D3DXMatrixRotationY (D3DX10Math. h) – compila uma matriz que gira em volta do eixo y.
 ms.assetid: b58def9b-29dc-4c7d-89a3-188ef9b9f94f
 title: Função D3DXMatrixRotationY (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1ae6c0be4e9e53b62a0504997bfd4687fa3fcab5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 570179fadc9008c5f919acf657541e53ab399ac8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506521"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108964"
 ---
 # <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Função D3DXMatrixRotationY (D3DX10Math. h)
 
@@ -59,7 +59,7 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

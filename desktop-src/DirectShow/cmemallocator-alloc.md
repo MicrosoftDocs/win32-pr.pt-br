@@ -1,5 +1,5 @@
 ---
-description: O método de alocação aloca memória para os buffers.
+description: Método CMemAllocator. Alloc – o método Alloc aloca memória para os buffers.
 ms.assetid: 81886163-2f7d-4d4f-be90-4491f76b8514
 title: Método CMemAllocator. Alloc (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a142f6c0cea6cdb9b18507becabb909ce67b0fb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d7de755aa3b8007a122e43529d16f5e39ca0cb8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748439"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099034"
 ---
 # <a name="cmemallocatoralloc-method"></a>Método CMemAllocator. Alloc
 
@@ -40,7 +40,7 @@ HRESULT Alloc();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -48,7 +48,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 | Código de retorno                                                                                       | Descrição                                  |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>              | Êxito.<br/>                          |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Sucesso.<br/>                          |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>     | Memória insuficiente.<br/>              |
 | <dl> <dt>**VFW \_ E \_ SIZENOTSET**</dt> </dl> | Os requisitos de buffer não foram definidos.<br/> |
 
@@ -71,7 +71,7 @@ Esse método é chamado pelo método [**CBaseAllocator:: Commit**](cbaseallocato
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

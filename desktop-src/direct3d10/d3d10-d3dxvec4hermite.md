@@ -1,5 +1,5 @@
 ---
-description: Executa uma interpolação de spline Hermite, usando os vetores de 4D especificados.
+description: Função D3DXVec4Hermite (D3DX10Math. h) – executa uma interpolação de spline Hermite, usando os vetores de 4D especificados.
 ms.assetid: 8fddcd47-8c8a-4e14-86db-07dd44ec5767
 title: Função D3DXVec4Hermite (D3DX10Math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 49a8f1ea09f055085e9d4befc248203276b85eb5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 15bd9bd6c59980c8c54088358fbe1bdd0490bdaa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752818"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102934"
 ---
 # <a name="d3dxvec4hermite-function-d3dx10mathh"></a>Função D3DXVec4Hermite (D3DX10Math. h)
 
@@ -98,7 +98,7 @@ Fator de ponderação. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
@@ -164,7 +164,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

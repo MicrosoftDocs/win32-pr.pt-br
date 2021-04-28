@@ -1,5 +1,5 @@
 ---
-description: 'O método IsFormatSupported determina se há suporte para um formato de hora especificado. Esse método implementa o método IMediaSeeking:: IsFormatSupported.'
+description: 'Método CPosPassThru. IsFormatSupported – o método IsFormatSupported determina se há suporte para um formato de hora especificado. Esse método implementa o método IMediaSeeking:: IsFormatSupported.'
 ms.assetid: dd8751d6-8439-4155-bdaf-b152a7c6cad4
 title: Método CPosPassThru. IsFormatSupported (Ctlutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85bdbef2315bd2c9e2bc92f639a7d328f1f17ce0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bd4b90bbe86e7ba05aa48fb7888c946babd8ed9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758536"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095244"
 ---
 # <a name="cpospassthruisformatsupported-method"></a>Método CPosPassThru. IsFormatSupported
 
@@ -49,7 +49,7 @@ Ponteiro para um GUID de formato de hora.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **HRESULT** do PIN conectado.
 
@@ -64,7 +64,7 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Adiciona dois vetores de harmônica esférica (SH); em outras palavras, pOut \[ i \] = PA \[ i \] + PB \[ i \] .
+description: Função D3DXSHAdd (D3DX10. h) – adiciona dois vetores de harmônica esférica (SH); em outras palavras, pOut \[ i \] = PA \[ i \] + PB \[ i \] .
 ms.assetid: dbfea12b-c110-42a7-84b6-0dff3d958032
 title: Função D3DXSHAdd (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1750b473764daf030160adc42d258a1f911f5f16
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d39940fef4ad611ea530d95efea29c74266d22a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173139"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108654"
 ---
 # <a name="d3dxshadd-function-d3dx10h"></a>Função D3DXSHAdd (D3DX10. h)
 
@@ -79,7 +79,7 @@ Aponta para o segundo vetor SH.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -103,7 +103,7 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

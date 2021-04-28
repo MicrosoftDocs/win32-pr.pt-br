@@ -1,5 +1,5 @@
 ---
-description: Recupera informações sobre uma determinada imagem em um recurso.
+description: Função D3DXGetImageInfoFromResource – recupera informações sobre uma determinada imagem em um recurso.
 ms.assetid: 1f811b1e-f0bd-4f64-a4c9-caf899470940
 title: Função D3DXGetImageInfoFromResource (D3dx9tex. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6875719123fe0b4dca4405570703b2587492975b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ea324ef94ab765bad25f7d07eef07972ab94cff6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664003"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114444"
 ---
 # <a name="d3dxgetimageinfofromresource-function"></a>Função D3DXGetImageInfoFromResource
 
@@ -69,7 +69,7 @@ Ponteiro para uma estrutura de [**\_ informações de D3DXIMAGE**](d3dximage-inf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -90,7 +90,7 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

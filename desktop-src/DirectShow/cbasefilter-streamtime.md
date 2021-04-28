@@ -1,5 +1,5 @@
 ---
-description: O método streamtime recupera a hora atual do fluxo.
+description: Método CBaseFilter. streamtime – o método streamtime recupera a hora atual do fluxo.
 ms.assetid: 88a2939d-fb51-49fd-af71-21c99511de43
 title: Método CBaseFilter. streamtime (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f4370758eb4ab15a9e53a5157550ee2129783c7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3334ac273a733c3f0591b76af7e76460997a199
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748649"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120064"
 ---
 # <a name="cbasefilterstreamtime-method"></a>Método CBaseFilter. streamtime
 
@@ -49,7 +49,7 @@ Referência a um objeto [**CRefTime**](creftime.md) que recebe a hora atual do f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                      | Descrição                                 |
 |--------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>             | Êxito.<br/>                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>             | Sucesso.<br/>                         |
 | <dl> <dt>**VFW \_ E \_ sem \_ relógio**</dt> </dl> | Nenhum relógio de referência está disponível.<br/> |
 
 
@@ -81,7 +81,7 @@ Esse método obtém o tempo de transmissão chamando [**IReferenceClock:: getTim
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

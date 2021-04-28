@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: GetEmbedDepth-sem suporte.'
 ms.assetid: 1b9d0c78-ced9-496b-89c3-fc205b37d894
 title: 'Método IAMTimelineObj:: GetEmbedDepth (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: de7414efd1ce9c8cde2ce3c91cb4e4906ba6af6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5a618f2868dead889142eabbc6869b6e73c9268
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780059"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098574"
 ---
 # <a name="iamtimelineobjgetembeddepth-method"></a>Método IAMTimelineObj:: GetEmbedDepth
 
@@ -52,7 +52,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -79,7 +79,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

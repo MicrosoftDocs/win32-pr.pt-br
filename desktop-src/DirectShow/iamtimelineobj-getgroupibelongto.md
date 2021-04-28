@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: GetGroupIBelongTo-sem suporte.'
 ms.assetid: a6242c1d-cf9a-4c96-9cfd-d32199ae74b8
 title: 'Método IAMTimelineObj:: GetGroupIBelongTo (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cefd3bb5923e056497556b15b6308160a2066c02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7aac3e043d068588e6a9330c193c1b5fb7828688
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760882"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098554"
 ---
 # <a name="iamtimelineobjgetgroupibelongto-method"></a>Método IAMTimelineObj:: GetGroupIBelongTo
 
@@ -52,7 +52,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -79,7 +79,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

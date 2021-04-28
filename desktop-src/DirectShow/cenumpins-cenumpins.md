@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CEnumPins. CEnumPins-método de construtor.
 ms.assetid: f696e433-b051-4de0-80e5-f9cd31fd0f23
 title: Construtor CEnumPins. CEnumPins (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 536782de6992acfc1613d5866f13af658fba6e71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: caa27dfe0190df15be1e41b7128c06249f1ae2b8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750482"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099224"
 ---
 # <a name="cenumpinscenumpins-constructor"></a>Construtor CEnumPins. CEnumPins
 
@@ -72,7 +72,7 @@ Se *pEnumPins* for **NULL**, esse método inicializará o enumerador para o iní
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

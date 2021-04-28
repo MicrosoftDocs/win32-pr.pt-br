@@ -1,5 +1,5 @@
 ---
-description: Transforma um vetor 4D por uma determinada matriz.
+description: Função D3DXVec4Transform (D3dx9math. h) – transforma um vetor 4D por uma determinada matriz.
 ms.assetid: de93f138-7cf8-43cc-8255-c053c799aea8
 title: Função D3DXVec4Transform (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 20192cf51a6096bbbce1f009d91d96551aec12d8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2e5a9fdd92a2d978c746543fbbbeec6503d07404
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814063"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115504"
 ---
 # <a name="d3dxvec4transform-function-d3dx9mathh"></a>Função D3DXVec4Transform (D3dx9math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
@@ -90,7 +90,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

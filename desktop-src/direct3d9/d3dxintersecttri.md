@@ -1,5 +1,5 @@
 ---
-description: Computa a interseção de um raio e um triângulo.
+description: Função D3DXIntersectTri (D3DX9Mesh. h) – computa a interseção de um raio e um triângulo.
 ms.assetid: f335a71d-7203-4ea1-a6bf-407b28c712e6
 title: Função D3DXIntersectTri (D3DX9Mesh. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 41c7012cea0a533dc447db0575def6b418d0e59e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 33d45beda51a7a2c80debafbab864c2accb33653
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105756339"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098264"
 ---
 # <a name="d3dxintersecttri-function-d3dx9meshh"></a>Função D3DXIntersectTri (D3DX9Mesh. h)
 
@@ -119,7 +119,7 @@ Distância do parâmetro Ray-interseção.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 
@@ -146,7 +146,7 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

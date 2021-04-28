@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor CReftime. CReftime (REFTIME. h)-método de construtor.
 ms.assetid: c1282676-6f2b-438a-850e-17bb6d7a2c68
 title: Construtor CReftime. CReftime (REFTIME. h)-parâmetro RT
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d97175a07565c12033c5e1ea8f20c157657d9501
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 3d5f20fcca6e05810320af8fad7ea79035fd1591
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389189"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098934"
 ---
 # <a name="creftimecreftime-constructor-reftimeh"></a>Construtor CReftime. CReftime (REFTIME. h)
 

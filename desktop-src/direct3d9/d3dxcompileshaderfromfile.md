@@ -1,5 +1,5 @@
 ---
-description: Compilar um arquivo de sombreador.
+description: Função D3DXCompileShaderFromFile – compilar um arquivo de sombreador.
 ms.assetid: 2ad6042f-3601-4f4a-9624-6319a3372355
 title: Função D3DXCompileShaderFromFile (D3DX9Shader. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 865241142fa13ec9d34826bfe334c30b38ca78d5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4392a3c36b31deb4071c215ad9b41e7f40c21ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105761572"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115844"
 ---
 # <a name="d3dxcompileshaderfromfile-function"></a>Função D3DXCompileShaderFromFile
 
@@ -134,7 +134,7 @@ Retorna uma interface [**ID3DXConstantTable**](id3dxconstanttable.md) , que pode
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -153,7 +153,7 @@ E \_ NOTIMPL será retornado se você estiver usando sombreadores 1,1 (vs \_ 1 \
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

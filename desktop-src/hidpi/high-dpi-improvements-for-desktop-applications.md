@@ -1,15 +1,15 @@
 ---
 title: Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DPI
-description: .
+description: Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DPI
 ms.assetid: 44AC0B29-3283-4801-90F5-3E78CCD87B9F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb9f8a8f72b199aaba195002134855155925b30d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2244ea79d489ae1e20260f72336c15bc64b97de0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917171"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090094"
 ---
 # <a name="mixed-mode-dpi-scaling-and-dpi-aware-apis"></a>Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DPI
 
@@ -75,7 +75,7 @@ Observe que as áreas que não são do cliente de uma janela filho, como barras 
 
 </dd> <dd><b><a href="/windows/desktop/api/Winuser/nf-winuser-getdpiforwindow">GetDpiForWindow</a></b><dl> <dt><b>GetDpiForWindow</b> retornará o dpi associado ao HWND fornecido. A resposta dependerá do modo de reconhecimento de DPI do HWND:
 
-| Modo de reconhecimento de DPI de HWND | Retornar valor                                                                                                                                                                                                  |
+| Modo de reconhecimento de DPI de HWND | Valor retornado                                                                                                                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Conhecida                    | 96                                                                                                                                                                                                            |
 | Sistema                     | O DPI do sistema                                                                                                                                                                                                |

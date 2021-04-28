@@ -1,5 +1,5 @@
 ---
-description: O método BeginFlush inicia uma operação de liberação.
+description: Método COutputQueue. BeginFlush-o método BeginFlush inicia uma operação de liberação.
 ms.assetid: d37b611e-742f-4bdf-bd72-a91cd1c473b3
 title: Método COutputQueue. BeginFlush (Outputq. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 462c3027e38bd94f061eb927c0d52576e29c997b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e7c6168daf766ec11e18e86673d9d25542b50462
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753166"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099024"
 ---
 # <a name="coutputqueuebeginflush-method"></a>Método COutputQueue. BeginFlush
 
@@ -40,7 +40,7 @@ void BeginFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -61,7 +61,7 @@ O objeto passa o downstream de notificação de liberação chamando o método [
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

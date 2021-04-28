@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Media. UserWebUrl
 ms.assetid: f4609eb7-6bad-44cb-8b87-daf350931cab
 title: System. Media. UserWebUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e52b2f889a89fb3f2403a5d3990101e4b6ff53ab
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d2c304aff0bd0cdaa69b7e1e9ae10360b2c8ca22
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104011919"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114104"
 ---
 # <a name="systemmediauserweburl"></a>System. Media. UserWebUrl
 
