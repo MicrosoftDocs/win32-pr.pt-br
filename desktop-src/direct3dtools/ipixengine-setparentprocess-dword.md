@@ -1,5 +1,5 @@
 ---
-description: Não usado.
+description: '<span id="vspixengine.ipixengine_setparentprocess_dword"></span>Método IPixEngine:: SetParentProcess-não usado.'
 MS-HAID: vspixengine.IPixEngine\_SetParentProcess\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5933d4b2946081dd7b9c5942186fe86045a84436
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e89348afabe001e6bcd2c1cfac02a3f2053163b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646173"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107054"
 ---
-# <a name="span-idvspixengineipixengine_setparentprocess_dwordspanipixenginesetparentprocess-method"></a><span data-ttu-id="3be95-103"><span id="vspixengine.ipixengine_setparentprocess_dword"></span>Método IPixEngine:: SetParentProcess</span><span class="sxs-lookup"><span data-stu-id="3be95-103"><span id="vspixengine.ipixengine_setparentprocess_dword"></span>IPixEngine::SetParentProcess method</span></span>
+# <a name="span-idvspixengineipixengine_setparentprocess_dwordspanipixenginesetparentprocess-method"></a><span data-ttu-id="8f8aa-103"><span id="vspixengine.ipixengine_setparentprocess_dword"></span>Método IPixEngine:: SetParentProcess</span><span class="sxs-lookup"><span data-stu-id="8f8aa-103"><span id="vspixengine.ipixengine_setparentprocess_dword"></span>IPixEngine::SetParentProcess method</span></span>
 
-<span data-ttu-id="3be95-104">Não usado.</span><span class="sxs-lookup"><span data-stu-id="3be95-104">Not used.</span></span>
+<span data-ttu-id="8f8aa-104">Não usado.</span><span class="sxs-lookup"><span data-stu-id="8f8aa-104">Not used.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3be95-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="3be95-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8f8aa-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="8f8aa-105">Syntax</span></span>
 
 
 ```C++
@@ -37,22 +37,22 @@ HRESULT SetParentProcess(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="3be95-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="3be95-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8f8aa-106">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="8f8aa-106">Parameters</span></span>
 
-<span data-ttu-id="3be95-107">*PESSOAL* </span><span class="sxs-lookup"><span data-stu-id="3be95-107">*PID* </span></span>  
-<span data-ttu-id="3be95-108">Não usado.</span><span class="sxs-lookup"><span data-stu-id="3be95-108">Not used.</span></span>
+<span data-ttu-id="8f8aa-107">*PESSOAL* </span><span class="sxs-lookup"><span data-stu-id="8f8aa-107">*PID* </span></span>  
+<span data-ttu-id="8f8aa-108">Não usado.</span><span class="sxs-lookup"><span data-stu-id="8f8aa-108">Not used.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="3be95-109">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="3be95-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8f8aa-109">Valor retornado</span><span class="sxs-lookup"><span data-stu-id="8f8aa-109">Return value</span></span>
 
-<span data-ttu-id="3be95-110">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="3be95-110">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="3be95-111">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="3be95-111">Otherwise, it returns an **HRESULT** error code.</span></span>
+<span data-ttu-id="8f8aa-110">Se esse método for bem sucedido, ele retornará **S \_ OK**.</span><span class="sxs-lookup"><span data-stu-id="8f8aa-110">If this method succeeds, it returns **S\_OK**.</span></span> <span data-ttu-id="8f8aa-111">Caso contrário, ele retorna um código de erro **HRESULT** .</span><span class="sxs-lookup"><span data-stu-id="8f8aa-111">Otherwise, it returns an **HRESULT** error code.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="3be95-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3be95-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="8f8aa-112">Requisitos</span><span class="sxs-lookup"><span data-stu-id="8f8aa-112">Requirements</span></span>
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="3be95-113">parâmetro</span><span class="sxs-lookup"><span data-stu-id="3be95-113">Header</span></span></p></td><td><span data-ttu-id="3be95-114">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="3be95-114">Vspixengine.h</span></span></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p><span data-ttu-id="8f8aa-113">parâmetro</span><span class="sxs-lookup"><span data-stu-id="8f8aa-113">Header</span></span></p></td><td><span data-ttu-id="8f8aa-114">Vspixengine. h</span><span class="sxs-lookup"><span data-stu-id="8f8aa-114">Vspixengine.h</span></span></td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="3be95-115"><span id="see_also"></span>Consulte também</span><span class="sxs-lookup"><span data-stu-id="3be95-115"><span id="see_also"></span>See also</span></span>
+## <a name="span-idsee_alsospansee-also"></a><span data-ttu-id="8f8aa-115"><span id="see_also"></span>Consulte também</span><span class="sxs-lookup"><span data-stu-id="8f8aa-115"><span id="see_also"></span>See also</span></span>
 
-[<span data-ttu-id="3be95-116">**IPixEngine**</span><span class="sxs-lookup"><span data-stu-id="3be95-116">**IPixEngine**</span></span>](/windows/desktop/direct3dtools/ipixengine)
+[<span data-ttu-id="8f8aa-116">**IPixEngine**</span><span class="sxs-lookup"><span data-stu-id="8f8aa-116">**IPixEngine**</span></span>](/windows/desktop/direct3dtools/ipixengine)
 
  
 

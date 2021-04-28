@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CUnknown. ~ CUnknown destruidor-método Destruitor.
 ms.assetid: 5d4ea970-2145-4119-b3dc-77fba1c2207a
 title: CUnknown. ~ CUnknown destruidor (combase. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9621371935e2641221eb156052f1e5cf514fa0fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e17a15415e063f00067011a9dd1402f7eef6ec89
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768605"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094664"
 ---
-# <a name="cunknowncunknown-destructor"></a><span data-ttu-id="6f99c-103">Destruidor CUnknown. ~ CUnknown</span><span class="sxs-lookup"><span data-stu-id="6f99c-103">CUnknown.~CUnknown destructor</span></span>
+# <a name="cunknowncunknown-destructor"></a><span data-ttu-id="c455f-103">Destruidor CUnknown. ~ CUnknown</span><span class="sxs-lookup"><span data-stu-id="c455f-103">CUnknown.~CUnknown destructor</span></span>
 
-<span data-ttu-id="6f99c-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="6f99c-104">Destructor method.</span></span>
+<span data-ttu-id="c455f-104">Método destruidor.</span><span class="sxs-lookup"><span data-stu-id="c455f-104">Destructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6f99c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6f99c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c455f-105">Sintaxe</span><span class="sxs-lookup"><span data-stu-id="c455f-105">Syntax</span></span>
 
 
 ```C++
@@ -36,14 +36,14 @@ ms.locfileid: "105768605"
 
 
 
-## <a name="requirements"></a><span data-ttu-id="6f99c-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="6f99c-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="c455f-106">Requisitos</span><span class="sxs-lookup"><span data-stu-id="c455f-106">Requirements</span></span>
 
 
 
-| <span data-ttu-id="6f99c-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="6f99c-107">Requirement</span></span> | <span data-ttu-id="6f99c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="6f99c-108">Value</span></span> |
+| <span data-ttu-id="c455f-107">Requisito</span><span class="sxs-lookup"><span data-stu-id="c455f-107">Requirement</span></span> | <span data-ttu-id="c455f-108">Valor</span><span class="sxs-lookup"><span data-stu-id="c455f-108">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="6f99c-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="6f99c-109">Header</span></span><br/>  | <dl> <span data-ttu-id="6f99c-110"><dt>Combase. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="6f99c-110"><dt>Combase.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
-| <span data-ttu-id="6f99c-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="6f99c-111">Library</span></span><br/> | <dl> <span data-ttu-id="6f99c-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="6f99c-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="c455f-109">parâmetro</span><span class="sxs-lookup"><span data-stu-id="c455f-109">Header</span></span><br/>  | <dl> <span data-ttu-id="c455f-110"><dt>Combase. h (incluir fluxos. h)</dt></span><span class="sxs-lookup"><span data-stu-id="c455f-110"><dt>Combase.h (include Streams.h)</dt></span></span> </dl>                                                                                   |
+| <span data-ttu-id="c455f-111">Biblioteca</span><span class="sxs-lookup"><span data-stu-id="c455f-111">Library</span></span><br/> | <dl> <span data-ttu-id="c455f-112"><dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt></span><span class="sxs-lookup"><span data-stu-id="c455f-112"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
