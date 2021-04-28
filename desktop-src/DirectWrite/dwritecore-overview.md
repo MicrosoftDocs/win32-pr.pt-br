@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: e80da37bb65cddaffabd67ae9e5b40e2433e64da
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 4ab8970172032f47b6e97da6d097d7c1bf33e976
+ms.sourcegitcommit: 133954d5dbcd5b2b3b50c8efd16cd101278fc1db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955009"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108172498"
 ---
 # <a name="dwritecore-overview"></a>Visão geral do DWriteCore
 
@@ -41,13 +41,13 @@ DWriteCore faz parte do [projeto reunião 0,5](https://github.com/microsoft/Proj
 
 No Visual Studio, clique em **extensões**  >  **gerenciar extensões**, pesquise por *reunião do projeto* e baixe a extensão de reunião do projeto. Feche e reabra o Visual Studio e siga os prompts para instalar a extensão.
 
-Para obter mais informações, consulte [reunião do projeto 0,5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0)e [criar aplicativos do Windows para desktop com a reunião do projeto 0,5](/windows/apps/project-reunion/#set-up-your-development-environment).
+Para obter mais informações, consulte [reunião do projeto 0,5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0)e [configurar seu ambiente de desenvolvimento (para a reunião do projeto)](/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment).
 
 ### <a name="create-a-new-project"></a>Criar um novo projeto
 
 No Visual Studio, crie um novo projeto do modelo de projeto **aplicativo em branco, empacotado (WinUI 3 no desktop)** . Você pode encontrar esse modelo de projeto escolhendo linguagem: *C++*; plataforma: *reunião do projeto*; tipo de projeto: *área de trabalho*.
 
-Para obter mais informações, consulte [modelos de projeto para WinUI 3](/windows/apps/winui/winui3/winui-project-templates-in-visual-studio#project-templates-for-winui-3).
+Para obter mais informações, consulte Introdução [ao WinUI 3 para aplicativos da área de trabalho](/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
 ### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Instalar o pacote NuGet Microsoft. ProjectReunion. DWrite
 
