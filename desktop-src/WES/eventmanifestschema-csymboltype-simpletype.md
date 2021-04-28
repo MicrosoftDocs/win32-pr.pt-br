@@ -1,6 +1,6 @@
 ---
 title: Tipo simples de CSymbolType (log de eventos do Windows)
-description: Define um nome de símbolo do C/C++ válido.
+description: Tipo simples de CSymbolType (log de eventos do Windows) – define um nome de símbolo C/C++ válido.
 ms.assetid: d19827b6-2b61-4d75-ac9d-56a384b0cc4b
 keywords:
 - Log de eventos de tipo simples CSymbolType
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 67b0ccb7c573aa4d71c038f9133cea7c95cdfbd3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0c8c17a9f4bb7e86b573d60187ffffd55c6cb96
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105813210"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090614"
 ---
 # <a name="csymboltype-simple-type-windows-event-log"></a>Tipo simples de CSymbolType (log de eventos do Windows)
 

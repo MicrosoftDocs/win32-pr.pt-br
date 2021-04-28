@@ -1,5 +1,5 @@
 ---
-description: Uma função de retorno de chamada que deve ser implementada por um usuário para definir uma matriz de constantes de ponto flutuante do sombreador de vértice.
+description: 'Método ID3DXEffectStateManager:: SetPixelShaderConstantF – uma função de retorno de chamada que deve ser implementada por um usuário para definir uma matriz de constantes de ponto flutuante de sombreador de vértice.'
 ms.assetid: db87ca8c-2539-4d80-854c-25b114a7e7e0
 title: 'Método ID3DXEffectStateManager:: SetPixelShaderConstantF (D3DX9Effect. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 19e8654fbc851460fea932a8c858240c5e4631de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f73963e98d4951eaf2905cc5da6eab3a6409f220
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762492"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090454"
 ---
 # <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>Método ID3DXEffectStateManager:: SetPixelShaderConstantF
 
@@ -69,7 +69,7 @@ O número de registros em pConstantData.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -89,7 +89,7 @@ O método implementado pelo usuário deve retornar S \_ OK. Se o retorno de cham
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de matrizes transpostas.
+description: 'Método ID3DXBaseEffect:: SetMatrixTransposeArray – define uma matriz de matrizes transpostas.'
 ms.assetid: 5dc65424-b0cd-490d-900e-60b9f7536ace
 title: 'Método ID3DXBaseEffect:: SetMatrixTransposeArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e646761435f75688fe652683281297ca2b8de99e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d7f145dc45f053e208f7890c8afdac6422ecde13
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105813774"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097504"
 ---
 # <a name="id3dxbaseeffectsetmatrixtransposearray-method"></a>Método ID3DXBaseEffect:: SetMatrixTransposeArray
 
@@ -69,7 +69,7 @@ Número de matrizes na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -92,7 +92,7 @@ Se as matrizes de destino forem menores do que as matrizes de origem, os compone
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

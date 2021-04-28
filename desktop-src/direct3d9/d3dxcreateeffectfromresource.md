@@ -1,5 +1,5 @@
 ---
-description: Crie um efeito a partir de uma descrição de efeito ASCII ou binário.
+description: Função D3DXCreateEffectFromResource – crie um efeito de uma descrição de efeito ASCII ou binário.
 ms.assetid: 8385512c-e93d-4c07-b353-87717eb58bcd
 title: Função D3DXCreateEffectFromResource (D3DX9Effect. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 36db2c82debc542301ba44d4baa74ecaaf01245e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2a84d2da1f3ca88a117c0150e7b27485838c300
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105813603"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107684"
 ---
 # <a name="d3dxcreateeffectfromresource-function"></a>Função D3DXCreateEffectFromResource
 
@@ -129,7 +129,7 @@ Retorna um buffer que contém uma lista de erros de compilação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -154,7 +154,7 @@ D3DXCreateEffectFromResource carrega dados de um recurso do tipo RT \_ RCDATA. C
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

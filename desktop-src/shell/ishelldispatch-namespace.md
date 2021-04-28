@@ -1,5 +1,5 @@
 ---
-description: Cria e retorna um objeto de pasta para a pasta especificada.
+description: Método IShellDispatch. NameSpace – cria e retorna um objeto de pasta para a pasta especificada.
 ms.assetid: CEA73705-1C27-4138-86C4-1715016E2ED8
 title: Método IShellDispatch. NameSpace (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 069752a5e81949889dce5539e3f23960a12c9736
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1db0a3969350b4be4bc32e027bf2000036e099f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502086"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100514"
 ---
 # <a name="ishelldispatchnamespace-method"></a>Método IShellDispatch. NameSpace
 
@@ -58,7 +58,7 @@ A pasta para a qual criar o objeto de [**pasta**](folder.md) . Pode ser uma cade
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

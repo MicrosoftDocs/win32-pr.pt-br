@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz transposeda.
+description: 'Método ID3DXBaseEffect:: SetMatrixTranspose – define uma matriz transposeda.'
 ms.assetid: d340b058-6ba5-43ec-b398-111064965730
 title: 'Método ID3DXBaseEffect:: SetMatrixTranspose (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f62847f7b15899389cbd5f207ce810b0ed0dd119
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 384d4a7ed5e1b769218b9290ed6cc0f7f060bd66
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793731"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107394"
 ---
 # <a name="id3dxbaseeffectsetmatrixtranspose-method"></a>Método ID3DXBaseEffect:: SetMatrixTranspose
 
@@ -59,7 +59,7 @@ Ponteiro para uma matriz transpoda. Consulte [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -82,7 +82,7 @@ Se a matriz de destino for menor do que a matriz de origem, os componentes adici
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

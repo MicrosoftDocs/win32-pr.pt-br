@@ -1,6 +1,6 @@
 ---
 title: Mensagem de EM_SETRECTNP (WinUser. h)
-description: Define o retângulo de formatação de um controle de edição de várias linhas.
+description: EM_SETRECTNP mensagem – define o retângulo de formatação de um controle de edição de várias linhas.
 ms.assetid: 1ab497ca-023f-4c26-b92d-b441a0d7b90c
 keywords:
 - Controles de EM_SETRECTNP de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e017bd4737c843c2452382918d71ef63345917cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9a8c85d4f7abd58ed3adb33ede66254c190a7bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918982"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085984"
 ---
 # <a name="em_setrectnp-message"></a>\_Mensagem em SETRECTNP
 
@@ -49,7 +49,7 @@ Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -69,7 +69,7 @@ Essa mensagem não retorna um valor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

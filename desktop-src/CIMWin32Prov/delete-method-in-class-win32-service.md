@@ -1,5 +1,5 @@
 ---
-description: A exclusão&\# 8194; O método de classe WMI exclui um serviço existente.
+description: Método Delete da classe Win32_Service (provedores WMI CIMWin32)-a exclusão&\# 8194; O método de classe WMI exclui um serviço existente.
 ms.assetid: aa4e7630-3b19-47dd-acd1-4d1735acb819
 ms.tgt_platform: multiple
 title: Método Delete da classe Win32_Service (provedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d06301c3620e144d72c2d4c4f3d8bc90e642374a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4031184e23e99fc54237ed0b0b4196fe6c075c5b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164055"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089574"
 ---
 # <a name="delete-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método Delete da classe Win32_Service (provedores WMI CIMWin32)
 
@@ -40,7 +40,7 @@ uint32 Delete();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -307,7 +307,7 @@ else
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

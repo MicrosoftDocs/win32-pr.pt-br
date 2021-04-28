@@ -1,5 +1,5 @@
 ---
-description: O método GetConversationStatistics recupera informações de sessão e de estação sobre a captura atual.
+description: 'Método IDelaydC:: GetConversationStatistics – o método GetConversationStatistics recupera informações de sessão e de estação sobre a captura atual.'
 ms.assetid: 0164fa0e-90f2-4b97-be9d-55d172f8112d
 title: 'Método IDelaydC:: GetConversationStatistics (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: aaba5ccfbab48639f53395519f001f5f8e85e483
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4d4c1bb1ad7ecb45b640c16322e297f9f640ef1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760225"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103804"
 ---
 # <a name="idelaydcgetconversationstatistics-method"></a>Método IDelaydC:: GetConversationStatistics
 
@@ -79,7 +79,7 @@ Sinalizador usado para informar Monitor de Rede para limpar o armazenamento inte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -117,7 +117,7 @@ Para recuperar outros tipos de estatísticas, chame [IDelaydC:: GetTotalStatisti
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

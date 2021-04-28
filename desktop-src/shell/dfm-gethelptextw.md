@@ -1,5 +1,5 @@
 ---
-description: Permite que o objeto de retorno de chamada especifique uma cadeia de texto de ajuda.
+description: Mensagem de DFM_GETHELPTEXTW-permite que o objeto de retorno de chamada especifique uma cadeia de texto de ajuda.
 title: Mensagem de DFM_GETHELPTEXTW (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,12 +14,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7ac1e41046b2d757df96e9acf5722710ae832bf4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6271b150bead5be4715259c68711ee67417f6395
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967336"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097034"
 ---
 # <a name="dfm_gethelptextw-message"></a>\_Mensagem DFM GETHELPTEXTW
 

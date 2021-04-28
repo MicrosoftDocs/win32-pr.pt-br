@@ -1,5 +1,5 @@
 ---
-description: Redefine para o início da sequência de enumeração.
+description: 'Método IEnumPStoreTypes:: Reset – redefine para o início da sequência de enumeração.'
 ms.assetid: 35f14aa5-92cb-4ad8-b80c-2550dedb7a7f
 title: 'Método IEnumPStoreTypes:: Reset (Pstore. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 60aeb1f68bcbf18e903472fa736b5714076dfbfa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55953a67d19ac94f792769974d860bae9b57f1ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750133"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089314"
 ---
 # <a name="ienumpstoretypesreset-method"></a>Método IEnumPStoreTypes:: Reset
 
@@ -39,7 +39,7 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um valor **HRESULT** .
 
@@ -54,7 +54,7 @@ O valor de retorno é um valor **HRESULT** .
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

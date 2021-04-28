@@ -1,5 +1,5 @@
 ---
-description: O método SourceListAddMediaDisk adiciona um disco ao conjunto de discos registrados. Aceita DiskId, VolumeLabel e DiskPrompt como parâmetros. Esse método chama em MsiSourceListAddMediaDisk.
+description: Método patch. SourceListAddMediaDisk – o método SourceListAddMediaDisk adiciona um disco ao conjunto de discos registrados. Aceita DiskId, VolumeLabel e DiskPrompt como parâmetros. Esse método chama em MsiSourceListAddMediaDisk.
 ms.assetid: 6feaf2d3-7e39-4e22-9e74-9a2f98369eac
 title: Método patch. SourceListAddMediaDisk
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a7c74ccdfb90a0cb365e6110defc9b60dac1f471
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 052831befb95976358b53d989db36d5b2fa43efe
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751190"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084363"
 ---
 # <a name="patchsourcelistaddmediadisk-method"></a>Método patch. SourceListAddMediaDisk
 
@@ -62,7 +62,7 @@ Esse parâmetro fornece o prompt de disco do disco que está sendo adicionado ou
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -78,11 +78,11 @@ Esse método não retorna um valor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
-[**Patch**](patch-object.md)
+[**Distribuído**](patch-object.md)
 </dt> <dt>
 
 [**MsiSourceListAddMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska)

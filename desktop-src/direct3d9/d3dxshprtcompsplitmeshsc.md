@@ -1,5 +1,5 @@
 ---
-description: Usado com resultados compactados da versão de vértice do simulador de transferência radiante (PRT) de computação.
+description: Função D3DXSHPRTCompSplitMeshSC – usada com resultados compactados da versão de vértice do simulador de transferência radiante (PRT) precomputado.
 ms.assetid: 10d81920-2a1b-42fa-aabe-7d6b504f4d36
 title: Função D3DXSHPRTCompSplitMeshSC (D3DX9Mesh. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 18742d12b6e1ae106dcf832baccccb2416465880
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e51a86ec9b12992d49364d3a7c614751dacafac3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370940"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093894"
 ---
 # <a name="d3dxshprtcompsplitmeshsc-function"></a>Função D3DXSHPRTCompSplitMeshSC
 
@@ -199,7 +199,7 @@ Estrutura por supercluster. Contém índices em *ppIBData*, *pSCClusterList* e *
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -216,7 +216,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

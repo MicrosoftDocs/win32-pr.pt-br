@@ -1,15 +1,15 @@
 ---
-description: .
+description: Dispositivos (Sistema de propriedades do Windows)
 ms.assetid: 9e744e0c-a59d-47db-a785-026698d54ee0
 title: Dispositivos (Sistema de propriedades do Windows)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5c840680703b2abedbf57ca3b71ec2da81863d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8ae1ca8af6a5c72c9427497f8ea5ebeef56543c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170354"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087444"
 ---
 # <a name="devices-windows-property-system"></a>Dispositivos (Sistema de propriedades do Windows)
 

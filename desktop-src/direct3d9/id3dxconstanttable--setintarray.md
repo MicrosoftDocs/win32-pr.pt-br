@@ -1,5 +1,5 @@
 ---
-description: Define uma matriz de inteiros.
+description: 'Método ID3DXConstantTable:: SetIntArray – define uma matriz de inteiros.'
 ms.assetid: 15add9df-966d-45aa-b29c-d4bed2a125f4
 title: 'Método ID3DXConstantTable:: SetIntArray (D3DX9Shader. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9f89de7d784ce355570d369606bfa67ddd6f5acf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f674bc730398c386856314a7e7305f33f3e7fa1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798080"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115104"
 ---
 # <a name="id3dxconstanttablesetintarray-method"></a>Método ID3DXConstantTable:: SetIntArray
 
@@ -79,7 +79,7 @@ Número de inteiros na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -96,7 +96,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

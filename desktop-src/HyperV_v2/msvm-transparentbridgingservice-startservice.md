@@ -1,5 +1,5 @@
 ---
-description: Inicia o serviço.
+description: Método StartService da classe Msvm_TransparentBridgingService – inicia o serviço.
 ms.assetid: f31f66ee-c4da-4dc2-94f2-eca0f780b053
 title: Método StartService da classe Msvm_TransparentBridgingService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6ec06a83085a2ce0eb10440f6c158efbe3dde301
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef88168836d1e4a5f81efae81533036dc2b29045
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751223"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109464"
 ---
 # <a name="startservice-method-of-the-msvm_transparentbridgingservice-class"></a>Método StartService da classe Msvm \_ TransparentBridgingService
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Gera uma nova malha com faces e vértices reordenados para otimizar o desempenho do desenho.
+description: 'Método ID3DXMesh:: Optimize – gera uma nova malha com faces e vértices reordenados para otimizar o desempenho do desenho.'
 ms.assetid: 6a9bf7b9-2cb9-4b42-92d9-2a121ff79284
 title: 'Método ID3DXMesh:: Optimize (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7752e08236094d7038a5e77ac1a679f787305022
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: debec1c0ee54e612ab0de832dbc5c2481dcefad8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930762"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093304"
 ---
 # <a name="id3dxmeshoptimize-method"></a>Método ID3DXMesh:: Optimize
 
@@ -99,7 +99,7 @@ Endereço de um ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , que 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -122,7 +122,7 @@ Esse método é muito semelhante ao método [**ID3DXBaseMesh:: CloneMesh**](id3d
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

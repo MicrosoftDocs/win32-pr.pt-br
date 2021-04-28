@@ -1,5 +1,5 @@
 ---
-description: Especifica os valores de tolerância para cada componente de vértice ao comparar vértices para determinar se eles são semelhantes o suficiente para serem soldados juntos.
+description: Estrutura de D3DX10_WELD_EPSILONS-especifica valores de tolerância para cada componente de vértice ao comparar vértices para determinar se eles são semelhantes o suficiente para serem soldados juntos.
 ms.assetid: b28a17bd-5d5b-41b3-86d9-327f5497fc94
 title: Estrutura de D3DX10_WELD_EPSILONS (D3DX10. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: c72f63e3ecef1fdb193fcaec9220f9768204d099
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 720a10dbe4b22b69910d88d3c03cea9ded768f1b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798018"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105424"
 ---
 # <a name="d3dx10_weld_epsilons-structure"></a>Estrutura de 13 de \_ solda de D3DX10 \_
 
@@ -179,7 +179,7 @@ typedef D3DX_WELD_EPSILONS *LPD3DX_WELD_EPSILONS;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

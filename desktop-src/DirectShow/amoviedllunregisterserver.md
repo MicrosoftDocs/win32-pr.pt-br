@@ -1,5 +1,5 @@
 ---
-description: Obsoleto. Use AMovieDllRegisterServer2 em vez disso.
+description: Função AMovieDllUnregisterServer – obsoleta. Use AMovieDllRegisterServer2 em vez disso.
 ms.assetid: 80f52109-6239-4e3d-a395-eb69f5278cd2
 title: Função AMovieDllUnregisterServer (Dllsetup. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4cab526a69f14cdd4c4f48767ca34722f61002eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df7fb34246249298efc143b7ccc8e6332540867c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760101"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099924"
 ---
 # <a name="amoviedllunregisterserver-function"></a>Função AMovieDllUnregisterServer
 
@@ -55,7 +55,7 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Executa uma interpolação de spline Hermite, usando os vetores 2D especificados.
+description: Função D3DXVec2Hermite (D3dx9math. h) – executa uma interpolação de spline Hermite, usando os vetores 2D especificados.
 ms.assetid: 30eb9490-bc01-4449-adfb-1c552e8ad3e7
 title: Função D3DXVec2Hermite (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d55b5453067f83544da5084f3e79ce70275362c5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 88073e23826362e1f9a753f411ac89ac1e272fc6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793321"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097984"
 ---
 # <a name="d3dxvec2hermite-function-d3dx9mathh"></a>Função D3DXVec2Hermite (D3dx9math. h)
 
@@ -99,7 +99,7 @@ Fator de ponderação. Consulte Observações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
@@ -160,7 +160,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

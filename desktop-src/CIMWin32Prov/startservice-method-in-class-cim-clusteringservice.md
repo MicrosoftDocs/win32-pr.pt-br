@@ -1,5 +1,5 @@
 ---
-description: O método StartService coloca o serviço em um estado iniciado.
+description: Método StartService da classe CIM_ClusteringService-o método StartService coloca o serviço em um estado iniciado.
 ms.assetid: 2efd2a06-a03c-4f4c-b2fa-889f84faac0f
 ms.tgt_platform: multiple
 title: Método StartService da classe CIM_ClusteringService
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b8abdeffa234461952f99013524042dcbba6e682
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dcd18af37da9302256776cfee844fd83f989c9b7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164043"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086184"
 ---
 # <a name="startservice-method-of-the-cim_clusteringservice-class"></a>Método StartService da \_ classe ClusteringService do CIM
 
@@ -45,7 +45,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o serviço foi iniciado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
@@ -69,7 +69,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

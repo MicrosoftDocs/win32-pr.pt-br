@@ -1,5 +1,5 @@
 ---
-description: Define os dados necessários para chamar uma caixa de diálogo de dispositivo.
+description: Estrutura DEVICEDIALOGDATA – define os dados necessários para chamar uma caixa de diálogo de dispositivo.
 ms.assetid: 424defa6-1452-4a8b-bacc-738209c236c3
 title: Estrutura DEVICEDIALOGDATA (Wiadefd. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: 621cab4f56b39ac900048018463935b55f0eddec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad7b08f5396a7a6e9b1f74df3dd409303b2d548d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505895"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104264"
 ---
 # <a name="devicedialogdata-structure"></a>Estrutura DEVICEDIALOGDATA
 
@@ -59,7 +59,7 @@ Especifica o tamanho dessa estrutura em bytes.
 **hwndParent**
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 </dd> <dd>
 
@@ -70,11 +70,11 @@ Especifica o identificador para a janela pai da caixa de diálogo.
 **pIWiaItemRoot**
 </dt> <dd>
 
-Tipo: **[**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) \** _
+Tipo: **[ **IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)\***
 
 </dd> <dd>
 
-Aponta para uma interface [_ *IWiaItem* *](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) que representa o item raiz válido na árvore de itens de aplicativo.
+Aponta para uma interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) que representa o item raiz válido na árvore de itens de aplicativo.
 
 </dd> <dt>
 

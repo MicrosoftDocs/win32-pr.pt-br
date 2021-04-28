@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método SetPalette.
+description: Função IWICBitmapEncoder_SetPalette_Proxy function-proxy para o método SetPalette.
 ms.assetid: d8e2c36e-6886-4959-b2a2-469bebfe1cdc
 title: Função IWICBitmapEncoder_SetPalette_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 128953cd56c3bea17ec9761a2acf2b8bc89cacfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8503698a1e91b86698ba288e56cc65e4447c906e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501614"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091174"
 ---
 # <a name="iwicbitmapencoder_setpalette_proxy-function"></a>Função de proxy de IWICBitmapEncoder \_ Onpalette \_
 
@@ -44,22 +44,22 @@ HRESULT IWICBitmapEncoder_SetPalette_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) \** _
+Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\***
 
-Ponteiro para este objeto [_ *IWICBitmapEncoder* *](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
+Ponteiro para este objeto [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
 
 </dd> <dt>
 
 *pIPalette* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-O [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) a ser usado como a paleta global.
+O [**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) a ser usado como a paleta global.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

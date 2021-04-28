@@ -1,5 +1,5 @@
 ---
-description: Não há suporte.
+description: 'Método IAMTimelineObj:: SetSubObject-sem suporte.'
 ms.assetid: a74db99b-d7ee-49df-84f1-a84e7a2f7d92
 title: 'Método IAMTimelineObj:: SetSubObject (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3299c5286fba4597b01a9d09c31e098a1438de76
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4b93d95f2381f4f894cbda1edbff5d9262b7be93
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810943"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098504"
 ---
 # <a name="iamtimelineobjsetsubobject-method"></a>Método IAMTimelineObj:: SetSubObject
 
@@ -52,7 +52,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -79,7 +79,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

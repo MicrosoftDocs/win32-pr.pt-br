@@ -1,5 +1,5 @@
 ---
-description: Armazena uma entrada de tabela de atributo.
+description: Estrutura de D3DX10_ATTRIBUTE_RANGE – armazena uma entrada de tabela de atributo.
 ms.assetid: 81c77dc9-e078-46a1-a435-4b241e36ec13
 title: Estrutura de D3DX10_ATTRIBUTE_RANGE (D3DX10. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: ddf7f10882e08232467130b3abbc6fb723a843ed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e2954483da53c77ebef57f9cf2de104734caba2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105771351"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094364"
 ---
 # <a name="d3dx10_attribute_range-structure"></a>Estrutura do intervalo de \_ atributos D3DX10 \_
 
@@ -121,7 +121,7 @@ typedef D3DX_ATTRIBUTE_RANGE* LPD3DX_ATTRIBUTE_RANGE;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

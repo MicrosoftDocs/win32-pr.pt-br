@@ -1,5 +1,5 @@
 ---
-description: Fornece uma interface do usuário personalizada que substitui a interface do usuário do sistema padrão.
+description: IWiaUIExtension::D método eviceDialog – fornece uma interface do usuário personalizada que substitui a interface do usuário do sistema padrão.
 ms.assetid: 5dbcacde-5bbe-459d-804f-5ce7eb1cd8d8
 title: 'IWiaUIExtension: método eviceDialog de:D (Wiadevd. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 7d42d0c7f8cca510a9c8f78de7bf589f8e1d2d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d467769308707032b8e92b4ac7877488991356dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501787"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116704"
 ---
 # <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension: método eviceDialog de:D
 
@@ -42,13 +42,13 @@ HRESULT DeviceDialog(
 *pDeviceDialogData* \[ no\]
 </dt> <dd>
 
-Tipo: **PDEVICEDIALOGDATA \** _
+Tipo: **PDEVICEDIALOGDATA \***
 
-Aponta para uma estrutura [_ *DEVICEDIALOGDATA* *](-wia-devicedialogdata.md) que contém todos os dados necessários para implementar a caixa de diálogo do dispositivo.
+Aponta para uma estrutura [**DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que contém todos os dados necessários para implementar a caixa de diálogo do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

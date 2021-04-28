@@ -1,5 +1,5 @@
 ---
-description: Executa uma consulta para recuperar objetos.
+description: SWbemServices.Exemétodo cQuery – executa uma consulta para recuperar objetos.
 ms.assetid: 06b9d4c9-cd72-49b2-92b0-d18d94dfbd9f
 ms.tgt_platform: multiple
 title: SWbemServices.Exemétodo cQuery (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2f3a894681bafc71de34ae7722b985494ef80b4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3009d2dc88e9987a3559da91eed1aa5aa1b248f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786310"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098325"
 ---
 # <a name="swbemservicesexecquery-method"></a>SWbemServices.Exemétodo cQuery
 
@@ -143,7 +143,7 @@ Normalmente, isso é indefinido. Caso contrário, esse é um objeto [**SWbemName
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se nenhum erro ocorrer, esse método retornará um objeto [**SWbemObjectSet**](swbemobjectset.md) . Esta é uma coleção de objetos que contém o conjunto de resultados da consulta. O chamador pode examinar a coleção usando a implementação de coleções para a linguagem de programação que você está usando. Para obter mais informações, consulte [acessando uma coleção](accessing-a-collection.md).
 
@@ -287,7 +287,7 @@ Next
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

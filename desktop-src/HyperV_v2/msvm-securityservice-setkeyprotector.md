@@ -1,5 +1,5 @@
 ---
-description: Define o protetor de chave para um sistema virtual.
+description: Método SetKeyProtector da classe Msvm_SecurityService – define o protetor de chave para um sistema virtual.
 ms.assetid: 84c114cb-a3a0-44f2-b862-38b05b96bd46
 title: Método SetKeyProtector da classe Msvm_SecurityService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 404baf0a529a6e96869fbcd355a81308f5d1e966
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b5eca7ddcc506d158175782e3e13796e56de267
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753471"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111404"
 ---
 # <a name="setkeyprotector-method-of-the-msvm_securityservice-class"></a>Método SetKeyProtector da \_ classe SecurityService Msvm
 
@@ -62,7 +62,7 @@ Um parâmetro opcional para monitorar o progresso da operação, que é usado se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 
@@ -121,7 +121,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

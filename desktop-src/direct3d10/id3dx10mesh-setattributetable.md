@@ -1,5 +1,5 @@
 ---
-description: Define a tabela de atributos para uma malha e o número de entradas armazenadas na tabela.
+description: 'Método ID3DX10Mesh:: SetAttributeTable – define a tabela de atributos para uma malha e o número de entradas armazenadas na tabela.'
 ms.assetid: 629fd31b-d88a-4650-82ed-ab7c40690986
 title: 'Método ID3DX10Mesh:: SetAttributeTable (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 808349b3f7456ebf3f8e1c3a7f9fdf2236db4beb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e06b181bb512e16e9caaa0d233ebbd3472bfcf8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173097"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084004"
 ---
 # <a name="id3dx10meshsetattributetable-method"></a>Método ID3DX10Mesh:: SetAttributeTable
 
@@ -59,7 +59,7 @@ Número de atributos na tabela de atributos de malha.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -80,7 +80,7 @@ Se um aplicativo acompanhar as informações em uma tabela de atributos e reorga
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

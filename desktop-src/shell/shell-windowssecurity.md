@@ -1,5 +1,5 @@
 ---
-description: Exibe a caixa de diálogo Segurança do Windows.
+description: Método Shell. WindowsSecurity – exibe a caixa de diálogo Segurança do Windows.
 title: Método Shell. WindowsSecurity (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 94916E29-5960-4010-B2C6-0FAA1E4BF72D
-ms.openlocfilehash: bbefa4c772adde64b8142b7e3563315fe4833b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e04cc6d3a1a25f459da9f533fc562b1fc9d0b06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505980"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083594"
 ---
 # <a name="shellwindowssecurity-method"></a>Método Shell. WindowsSecurity
 
@@ -45,7 +45,7 @@ Shell.WindowsSecurity()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

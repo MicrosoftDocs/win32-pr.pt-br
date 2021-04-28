@@ -1,5 +1,5 @@
 ---
-description: Recupera o buffer de vértice associado à malha.
+description: 'Método ID3DX10Mesh:: GetVertexBuffer – recupera o buffer de vértice associado à malha.'
 ms.assetid: c69a712b-8964-4a5b-a136-3f24060b7fd8
 title: 'Método ID3DX10Mesh:: GetVertexBuffer (D3DX10. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b78db368f2467c25b4bb4218a314a22027d5d3f1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8a63b08cf978a65e1fa9999c79b8033436b41fa2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105789333"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108074"
 ---
 # <a name="id3dx10meshgetvertexbuffer-method"></a>Método ID3DX10Mesh:: GetVertexBuffer
 
@@ -59,7 +59,7 @@ O buffer de vértice. Consulte [ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -76,7 +76,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

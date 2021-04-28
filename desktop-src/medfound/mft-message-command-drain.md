@@ -1,15 +1,15 @@
 ---
-description: Solicita uma Media Foundation transformação (MFT) para liberar todos os dados armazenados.
+description: MFT_MESSAGE_COMMAND_DRAIN-solicita uma Media Foundation transformação (MFT) para liberar todos os dados armazenados.
 ms.assetid: c48f3a88-a007-4f30-ac60-9e5a8c24e1ee
 title: MFT_MESSAGE_COMMAND_DRAIN (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa533cfddfda53fd8eb0ee512b0535aaf9ad8f88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 907bfbd888b1eccbe7336c0d8f386d3266fd8e9b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753064"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092744"
 ---
 # <a name="mft_message_command_drain"></a>\_ \_ drenagem de comando de mensagem MFT \_
 
@@ -68,7 +68,7 @@ Caso contrário, um MFT síncrono deve implementar essa mensagem.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

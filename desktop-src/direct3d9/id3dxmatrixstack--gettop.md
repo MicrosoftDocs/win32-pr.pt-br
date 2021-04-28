@@ -1,5 +1,5 @@
 ---
-description: Recupera a matriz atual na parte superior da pilha.
+description: 'Método ID3DXMATRIXStack:: GetTop (D3dx9math. h) – recupera a matriz atual na parte superior da pilha.'
 ms.assetid: 0e20af0a-a332-4cb5-bf87-2ec75aa170ab
 title: 'Método ID3DXMATRIXStack:: GetTop (D3dx9math. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5e635f2a825bf73234322066910c15af636ec9d7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7e596551682805d13704e9ea85f82784a57b333e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762520"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093574"
 ---
 # <a name="id3dxmatrixstackgettop-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: GetTop (D3dx9math. h)
 
@@ -38,7 +38,7 @@ D3DXMATRIX* GetTop();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -61,7 +61,7 @@ Observe que esse método não remove a matriz atual da parte superior da pilha; 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

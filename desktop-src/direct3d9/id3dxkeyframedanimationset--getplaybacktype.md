@@ -1,5 +1,5 @@
 ---
-description: Obtém o tipo do loop de reprodução do conjunto de animação.
+description: 'Método ID3DXKeyframedAnimationSet:: getreproduzirtype – Obtém o tipo do loop de reprodução do conjunto de animação.'
 ms.assetid: f3c3a553-fa6e-4518-8b0f-e1b8a9931e07
 title: 'Método ID3DXKeyframedAnimationSet:: getreproduzirtype (D3dx9anim. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d4f9b8c413151d118a9cb7685ece22c5d6f700b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 22984874d7f835eea6c2e1be309aa57c81caaee6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371008"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093704"
 ---
 # <a name="id3dxkeyframedanimationsetgetplaybacktype-method"></a>Método ID3DXKeyframedAnimationSet:: getreproduzirtype
 
@@ -38,7 +38,7 @@ D3DXPLAYBACK_TYPE GetPlaybackType();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ tipo de D3DXPLAYBACK**](./d3dxplayback-type.md)**
 
@@ -55,7 +55,7 @@ Tipo do loop de reprodução do conjunto de animações. Consulte [**\_ tipo de 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

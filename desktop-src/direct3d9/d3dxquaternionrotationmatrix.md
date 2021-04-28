@@ -1,5 +1,5 @@
 ---
-description: Cria um Quaternion a partir de uma matriz de rotação.
+description: Função D3DXQuaternionRotationMatrix (D3dx9math. h) – compila um Quaternion a partir de uma matriz de rotação.
 ms.assetid: 4fafb1aa-5d6f-46e6-84b1-e0bac22952d2
 title: Função D3DXQuaternionRotationMatrix (D3dx9math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0a9513c9aededdd06080db97aac78278986244b9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b0ff8529f32d398ac208cff3214fccfdb2ade81
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298577"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094004"
 ---
 # <a name="d3dxquaternionrotationmatrix-function-d3dx9mathh"></a>Função D3DXQuaternionRotationMatrix (D3dx9math. h)
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
@@ -82,7 +82,7 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

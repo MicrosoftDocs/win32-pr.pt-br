@@ -1,5 +1,5 @@
 ---
-description: Transforma uma matriz (x, y, 0, 1) por uma determinada matriz e projeta o resultado de volta em w = 1.
+description: Função D3DXVec2TransformCoordArray (D3DX10Math. h) – transforma uma matriz (x, y, 0, 1) por uma determinada matriz e projeta o resultado de volta em w = 1.
 ms.assetid: dba68678-2ab4-4f64-9975-5e9f2a20f66a
 title: Função D3DXVec2TransformCoordArray (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: aa57d96b0497fea572e580cfe6d1af2a0184f09d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f36b5fb5a5263f83c42ac66cc5f606fa1c4b75ab
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105811395"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108324"
 ---
 # <a name="d3dxvec2transformcoordarray-function-d3dx10mathh"></a>Função D3DXVec2TransformCoordArray (D3DX10Math. h)
 
@@ -99,7 +99,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
@@ -122,7 +122,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

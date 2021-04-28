@@ -1,5 +1,5 @@
 ---
-description: Executa uma consulta para recuperar objetos.
+description: SWbemServices.Exemétodo cQueryAsync – executa uma consulta para recuperar objetos.
 ms.assetid: 50c7f62b-dd83-4117-b10e-acee1690ce8c
 ms.tgt_platform: multiple
 title: SWbemServices.Exemétodo cQueryAsync (Wbemdisp. h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 5564e53ef3ea185235e93bbbeb8e2a5fa001d67b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cd3fe778ca7338df6b2674a4930458ef9113a1d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296589"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118374"
 ---
 # <a name="swbemservicesexecqueryasync-method"></a>SWbemServices.Exemétodo cQueryAsync
 
@@ -137,7 +137,7 @@ Um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao coletor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Este método não tem valores de retorno. Se for bem-sucedido, o coletor receberá um evento [**OnObjectReady**](swbemsink-onobjectready.md) por instância. Após a última instância, o coletor de objeto recebe um evento [**OnCompleted**](swbemsink-oncompleted.md) .
 
@@ -215,7 +215,7 @@ Há limites para o número de palavras-chave **and** e **or** que podem ser usad
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

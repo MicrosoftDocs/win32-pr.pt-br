@@ -1,5 +1,5 @@
 ---
-description: Cria uma matriz de projeção de perspectiva do lado esquerdo
+description: Função D3DXMatrixPerspectiveLH (D3DX10Math. h) – compila uma matriz de projeção de perspectiva do lado esquerdo
 ms.assetid: 5fd8da67-ff12-42fa-b915-b50fa2680b32
 title: Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 400967b5e4a25244c50dbd6093fa2079700ba4eb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a0f6c976f64fe64d3ca583351ae5c7c32aa958fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785962"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109094"
 ---
 # <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
 
@@ -89,7 +89,7 @@ Z-valor do plano de exibição distante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -124,7 +124,7 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
