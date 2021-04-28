@@ -1,15 +1,15 @@
 ---
-description: .
+description: Novos binários Low-Level
 ms.assetid: 8c883462-29d8-46c4-b1c6-3ae8b8d3b397
 title: Novos binários Low-Level
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6b6e197f22df9fb3d6e12aeeff3c5f4a2a0e41c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b4640d31b115dc85ecde9f9423997468ddc8456
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170900"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088064"
 ---
 # <a name="new-low-level-binaries"></a>Novos binários Low-Level
 

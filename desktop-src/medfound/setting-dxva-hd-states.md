@@ -1,15 +1,15 @@
 ---
-description: .
+description: Definindo Estados de DXVA-HD
 ms.assetid: 7f339ee8-01e6-4bbb-8563-020ff0e02499
 title: Definindo Estados de DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e539796aa5d3997b35739e75c80b438a7b5da50b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91766e3eb10399d908ab361e13db4b94fe07b653
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788686"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092694"
 ---
 # <a name="setting-dxva-hd-states"></a>Definindo Estados de DXVA-HD
 

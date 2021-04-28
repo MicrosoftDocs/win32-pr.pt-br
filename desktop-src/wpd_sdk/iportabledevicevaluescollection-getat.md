@@ -1,5 +1,5 @@
 ---
-description: O método GetAt recupera um item da coleção por um índice baseado em zero.
+description: 'Método IPortableDeviceValuesCollection:: GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.'
 ms.assetid: b219b052-a74b-466a-a2ee-d2e9c466f393
 title: 'Método IPortableDeviceValuesCollection:: GetAt (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: ffbc65f39aab63189aa451005008f585c46bd8d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ad10a7b9cc3c252a0cee4cb71df05cb108e0a18
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793279"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083236"
 ---
 # <a name="iportabledevicevaluescollectiongetat-method"></a>Método IPortableDeviceValuesCollection:: GetAt
 
@@ -55,7 +55,7 @@ Endereço de uma variável que recebe um ponteiro para uma interface [**IPortabl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -87,7 +87,7 @@ Quaisquer alterações feitas aos valores na interface recuperada serão feitas 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

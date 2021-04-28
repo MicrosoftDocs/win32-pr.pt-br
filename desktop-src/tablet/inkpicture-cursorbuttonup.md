@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o InkCollector detecta um botão de cursor que está ativo.
+description: Evento InkPicture. CursorButtonUp – ocorre quando o InkCollector detecta um botão de cursor que está ativo.
 ms.assetid: bb10b032-a88d-4b52-9062-c0b63dfe98e9
 title: Evento InkPicture. CursorButtonUp (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6dbee586b3179f35593c95c2d62109a379c3216
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 639d0cbd89e2ca44d8855b6508c5284f59a7c654
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829693"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086654"
 ---
 # <a name="inkpicturecursorbuttonup-event"></a>Evento InkPicture. CursorButtonUp
 
@@ -45,7 +45,7 @@ O botão que foi lançado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -70,7 +70,7 @@ Esse método de evento é definido nos dispinterfaces **\_ IInkCollectorEvents**
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

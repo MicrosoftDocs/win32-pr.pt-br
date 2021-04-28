@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. Image. Imageid
 ms.assetid: d664906d-534c-4fbe-9c73-f9153fd60efd
 title: System. Image. Imageid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c9add1fe175bd50bc2691edb1df057fe0b3fd6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d478fd363c22c6ef6893eedf1b7a02af0f8e7268
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662097"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087015"
 ---
 # <a name="systemimageimageid"></a>System. Image. Imageid
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: O que é o modo de exibição de compatibilidade?
 ms.assetid: 1EAC5799-7943-40AB-A67E-F6D6888C4B7D
 title: O que é o modo de exibição de compatibilidade?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eac72fc5afa0e2946a4f904cbcea3c7b0af723c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2be51f94d560d206c579d74d9407d53541205201
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663583"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113394"
 ---
 # <a name="what-is-compatibility-view"></a>O que é o modo de exibição de compatibilidade?
 

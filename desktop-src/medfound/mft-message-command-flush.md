@@ -1,15 +1,15 @@
 ---
-description: Solicita uma Media Foundation transformação (MFT) para liberar todos os dados armazenados.
+description: MFT_MESSAGE_COMMAND_FLUSH-solicita uma Media Foundation transformação (MFT) para liberar todos os dados armazenados.
 ms.assetid: c799a962-da79-46df-a37f-4016c8c1701e
 title: MFT_MESSAGE_COMMAND_FLUSH (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd68f5e52cda9cca3470fb1dd903b5083a0cbc4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f34959303a2835e67202256341b0f5998b63d16b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661494"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092734"
 ---
 # <a name="mft_message_command_flush"></a>\_liberação de \_ comando de mensagem MFT \_
 
@@ -43,7 +43,7 @@ Todos os MFTs devem implementar essa mensagem. Quando ele recebe essa mensagem, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

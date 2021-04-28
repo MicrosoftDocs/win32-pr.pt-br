@@ -1,15 +1,15 @@
 ---
-description: Aplica-se ao Windows Vista e posterior.
+description: Propriedade AM_RATE_ReverseMaxFullDataRate – aplica-se ao Windows Vista e posterior.
 ms.assetid: 4f170736-516d-4420-a215-e0e414f036cd
 title: Propriedade AM_RATE_ReverseMaxFullDataRate (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31e376c6e95160c6a6c3c6637a765d868e282d33
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a6e70a330433c8ea6e8116db944d8fb3d2ffff4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910234"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099964"
 ---
 # <a name="am_rate_reversemaxfulldatarate-property"></a>Propriedade de ReverseMaxFullDataRate da \_ taxa de am \_
 
@@ -47,7 +47,7 @@ Os decodificadores que dão suporte à reprodução reversa suave devem expor es
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Não usado.
+description: '<span id="vspixengine.isingleeventrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>Método ISingleEventRequest:: RequestSupportedColumnsAsync-não usado.'
 MS-HAID: vspixengine.ISingleEventRequest\_RequestSupportedColumnsAsync\_IFrameEventsCallback\_ptr\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1eaada43dee6f6e3947e23c35262cb86190ec327
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bcb6a20d797c3430ed6b354f47168bc5540396c6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370166"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087884"
 ---
 # <a name="span-idvspixengineisingleeventrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dwordspanisingleeventrequestrequestsupportedcolumnsasync-method"></a><span id="vspixengine.isingleeventrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>Método ISingleEventRequest:: RequestSupportedColumnsAsync
 
@@ -46,7 +46,7 @@ Não usado.
 *progressIntervalMsecs*   
 Não usado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -54,7 +54,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
 
 [**ISingleEventRequest**](/windows/desktop/direct3dtools/isingleeventrequest)
 

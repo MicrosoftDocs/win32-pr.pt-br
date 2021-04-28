@@ -1,15 +1,15 @@
 ---
-description: Não há suporte.
+description: Propriedade MFPKEY_WMA_ELEMENTARY_STREAM-sem suporte.
 ms.assetid: 230ce52a-c8cc-4df9-8835-feac1bbcf10c
 title: Propriedade MFPKEY_WMA_ELEMENTARY_STREAM (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 631fccf999f3c208f5c6b275cae0acacb032d160
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3c35088457eb9e3c21691cef1a16241d72a4b268
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748499"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092794"
 ---
 # <a name="mfpkey_wma_elementary_stream-property"></a>\_Propriedade de \_ fluxo ELEMENTar MFPKEY de WMA \_
 
@@ -25,7 +25,7 @@ Não há suporte.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

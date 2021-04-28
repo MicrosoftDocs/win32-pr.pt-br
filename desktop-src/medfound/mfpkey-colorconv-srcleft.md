@@ -1,15 +1,15 @@
 ---
-description: Especifica a borda esquerda do retângulo de origem, em pixels.
+description: Propriedade MFPKEY_COLORCONV_SRCLEFT-especifica a borda esquerda do retângulo de origem, em pixels.
 ms.assetid: d5450ff9-085f-4345-87af-bf6c87931755
 title: Propriedade MFPKEY_COLORCONV_SRCLEFT (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddbc6bed8a3c41ebeff2f9c4f6dbb2bbb351e74f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c3168125390cef6472ebc6ae6bf71ea426976c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165407"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092964"
 ---
 # <a name="mfpkey_colorconv_srcleft-property"></a>\_Propriedade MFPKEY COLORCONV \_ SRCLEFT
 
@@ -39,7 +39,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

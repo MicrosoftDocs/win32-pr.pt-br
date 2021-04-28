@@ -1,5 +1,5 @@
 ---
-description: Não usado.
+description: <span id="vspixengine.istatuscallback"></span>Interface IStatusCallback – não usada.
 MS-HAID: vspixengine.IStatusCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8a053873694890bd96b6b24857995622ff511b03
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d58c1f1e9b33d664c49fda6a52bf16d90ca3e2a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105768347"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087844"
 ---
 # <a name="span-idvspixengineistatuscallbackspanistatuscallback-interface"></a><span id="vspixengine.istatuscallback"></span>Interface IStatusCallback
 
@@ -38,7 +38,7 @@ A interface **IStatusCallback** herda da interface [**IUnknown**](/windows/deskt
 
 A interface **IStatusCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Status</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host do progresso do mecanismo. Isso também serve como uma maneira para o host determinar que o mecanismo ainda está em execução.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Estado</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host do progresso do mecanismo. Isso também serve como uma maneira para o host determinar que o mecanismo ainda está em execução.</p></td></tr></tbody></table>
 
  
 

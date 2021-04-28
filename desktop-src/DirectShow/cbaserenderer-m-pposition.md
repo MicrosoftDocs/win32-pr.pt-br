@@ -1,5 +1,5 @@
 ---
-description: Objeto auxiliar para passar comandos de busca upstream.
+description: 'CBaseRenderer:: m_pPosition objeto de auxiliar de membro para passar comandos de busca upstream.'
 ms.assetid: 10fe022d-8707-4059-90b8-5740c3861071
 title: 'Membro CBaseRenderer:: m_pPosition (Renbase. h)'
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2324703280cdf8c19fe9093f21cb02400ba52f32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d7ceeac91266a2799d7ef248857de9b7d4d38ee2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751703"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119854"
 ---
 # <a name="cbaserendererm_pposition-member"></a>Membro de CBaseRenderer:: m \_ pPosition
 
 Objeto auxiliar para passar comandos de busca upstream.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ CRendererPosPassThru *m_pPosition;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

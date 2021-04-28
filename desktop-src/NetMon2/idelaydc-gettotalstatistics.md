@@ -1,5 +1,5 @@
 ---
-description: O método GetTotalStatistics recupera o total de estatísticas para a captura atual.
+description: 'Método IDelaydC:: GetTotalStatistics – o método GetTotalStatistics recupera o total de estatísticas para a captura atual.'
 ms.assetid: 904c7496-5603-41b9-8481-06fa31f6f112
 title: 'Método IDelaydC:: GetTotalStatistics (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0d194426933532fcf7a1965ed59b099489eefcb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3a0ce4f230236e276fede528a5e778ecafd51fb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370596"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113524"
 ---
 # <a name="idelaydcgettotalstatistics-method"></a>Método IDelaydC:: GetTotalStatistics
 
@@ -55,7 +55,7 @@ Sinalizador usado para informar Monitor de Rede como lidar com o armazenamento i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -92,7 +92,7 @@ Monitor de Rede também armazena [*Estatísticas de conversa*](c.md), que podem 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

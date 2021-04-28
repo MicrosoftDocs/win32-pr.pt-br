@@ -1,15 +1,15 @@
 ---
 title: Visão geral da camada de depuração Direct2D
-description: .
+description: Visão geral da camada de depuração Direct2D
 ms.assetid: 7c28e00b-ebb9-4b79-939c-64eade1351ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df560595ea0ae6c7a56c3fa568f2f94ae56652ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 833174e0d18b11e2384d838930d5508601cfceaf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105748845"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099984"
 ---
 # <a name="direct2d-debug-layer-overview"></a>Visão geral da camada de depuração Direct2D
 
@@ -38,7 +38,7 @@ Para habilitar a camada de depuração em seu aplicativo, especifique um valor d
 > [!Note]  
 > Se a camada de depuração Direct2D estiver habilitada, o efeito de gerenciamento de cores Direct2D (CLSID \_ D2D1ColorManagement) poderá causar uma violação de acesso ao definir um contexto de cor. A solução alternativa é desabilitar a camada de depuração ao usar o efeito de gerenciamento de cores
 
- 
+ 
 
 Habilitar a camada de depuração para uma fábrica também permite a depuração de informações para qualquer objeto criado por essa fábrica.
 
@@ -70,7 +70,7 @@ O exemplo a seguir habilita a camada de depuração para uma fábrica quando o a
 > [!Note]  
 > Se nenhuma opção de fábrica for especificada ou um nível de depuração de "None" for especificado, a camada de depuração não será invocada. A camada de depuração nunca deve estar ativa na versão de lançamento de um aplicativo.
 
- 
+ 
 
 A próxima seção descreve os diferentes níveis de depuração definidos pela enumeração de [**\_ \_ nível de depuração d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level) .
 
@@ -93,9 +93,9 @@ O valor D2D1 \_ nível de depuração \_ \_ None (None) indica que o Direct2D n�
 [Mensagens de depuração](direct2ddebuglayer-debugmessages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

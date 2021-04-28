@@ -1,15 +1,15 @@
 ---
-description: Especifica a borda esquerda do retângulo de destino, em pixels.
+description: Propriedade MFPKEY_RESIZE_DST_LEFT-especifica a borda esquerda do retângulo de destino, em pixels.
 ms.assetid: faefe634-c517-43a0-9741-cb79824f840d
 title: Propriedade MFPKEY_RESIZE_DST_LEFT (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd8bb50fa53fbc175336ce7c6145d38f3f3a93a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1271abefa9e63a783db43584890a736eb272ed02
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813576"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092904"
 ---
 # <a name="mfpkey_resize_dst_left-property"></a>MFPKEY \_ redimensionar a \_ \_ Propriedade Left do DST
 
@@ -39,7 +39,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

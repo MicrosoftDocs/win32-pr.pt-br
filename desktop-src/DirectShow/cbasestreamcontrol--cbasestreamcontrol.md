@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CBaseStreamControl. ~ CBaseStreamControl destruidor-método Destruitor.
 ms.assetid: 292b4e33-02e2-4325-9784-bd41893e1ff4
 title: CBaseStreamControl. ~ CBaseStreamControl Destruitor (Strmctl. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f52ed08f197e9649347ebdb7235be5c997bc5a26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab25629d546dbbee656e5420fe0d94ca38fa227c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752094"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119844"
 ---
 # <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>Destruidor CBaseStreamControl. ~ CBaseStreamControl
 
 Método destruidor.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -47,7 +47,7 @@ Método destruidor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

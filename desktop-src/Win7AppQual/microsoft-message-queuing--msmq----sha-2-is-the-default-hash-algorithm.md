@@ -1,15 +1,15 @@
 ---
-description: .
+description: MSMQ (enfileiramento de mensagens da Microsoft)-o SHA 2 é o algoritmo de hash padrão
 ms.assetid: 43cca5bc-6675-4f29-925e-19d3fb19ef0f
 title: MSMQ (enfileiramento de mensagens da Microsoft)-o SHA 2 é o algoritmo de hash padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb62f55f07565e76cefb5463a095d11ae789f379
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 0e2b73e347f5d5a768780afc5d2153909c6f5a9a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314959"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088094"
 ---
 # <a name="microsoft-message-queuing-msmq---sha-2-is-the-default-hash-algorithm"></a>MSMQ (enfileiramento de mensagens da Microsoft)-o SHA 2 é o algoritmo de hash padrão
 

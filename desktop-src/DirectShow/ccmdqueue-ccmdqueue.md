@@ -1,5 +1,5 @@
 ---
-description: Método de construtor.
+description: Construtor de CCmdQueue. CCmdQueue-método de construtor.
 ms.assetid: 9961a8fe-db72-4be6-8f72-68b74f82e4d4
 title: Construtor CCmdQueue. CCmdQueue (Winutil. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9469aa4ff9311efa096a66ee637512a2a812b54e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f4dd94e7ef2ac3970fe652f4b7a3ad7117f047e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752705"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119824"
 ---
 # <a name="ccmdqueueccmdqueue-constructor"></a>Construtor CCmdQueue. CCmdQueue
 
@@ -51,7 +51,7 @@ Este construtor não tem parâmetros.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

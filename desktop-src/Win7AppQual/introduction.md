@@ -1,15 +1,15 @@
 ---
-description: .
+description: Introdução (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.assetid: 6BB5AABC-6281-4575-8189-477C57DF4F4F
 title: Introdução (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d491802735ddf1ef75a7a183cd49afea2cc657b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4125c2bd122d239c155f089f06bef2f455ee121b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750152"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088194"
 ---
 # <a name="introduction-windows-7-and-windows-server-2008-r2-application-quality-cookbook"></a>Introdução (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 

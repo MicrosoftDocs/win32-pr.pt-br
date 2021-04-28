@@ -1,15 +1,15 @@
 ---
-description: .
+description: Estruturas de janela
 ms.assetid: 8254174d-d19f-4177-91b0-dc87aa1e40e0
 title: Estruturas de janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6df5fcd90bdccec27addb9f2399b80a866fe1580
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9845b70afaec92d116dd709ddee4f533b69900aa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790587"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100114"
 ---
 # <a name="window-structures"></a>Estruturas de janela
 

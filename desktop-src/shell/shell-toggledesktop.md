@@ -1,5 +1,5 @@
 ---
-description: Exibe ou oculta a área de trabalho.
+description: Método Shell. ToggleDesktop – exibe ou oculta a área de trabalho.
 title: Método Shell. ToggleDesktop (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: BD07F7F2-A588-4189-95F4-3A8E2905E8F5
-ms.openlocfilehash: 888723aeba8bd54c6ada659022286e4825e4067d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0d6c1e03db960c6abc8abc28ba8e79755fce639
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662440"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083674"
 ---
 # <a name="shelltoggledesktop-method"></a>Método Shell. ToggleDesktop
 
@@ -45,7 +45,7 @@ Shell.ToggleDesktop()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

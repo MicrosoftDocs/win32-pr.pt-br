@@ -1,15 +1,15 @@
 ---
-description: Tipo de função usado pelas funções de preenchimento de textura.
+description: LPD3DXFILL2D-tipo de função usado pelas funções de preenchimento de textura.
 ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c8c9d9ef610ee10faa069841a05f43c17b0885c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8046c324511f2b308243d62fec1b6508a1d483ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163735"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087964"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 

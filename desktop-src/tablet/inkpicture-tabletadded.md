@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um IInkTablet é adicionado ao sistema.
+description: Evento InkPicture. TabletAdded – ocorre quando um IInkTablet é adicionado ao sistema.
 ms.assetid: 5df10efd-7055-43fa-881f-67eb5fd6adcf
 title: Evento InkPicture. TabletAdded (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d75cb3a67b00c5a26c0c3494fc752595954a23da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81c5121b668f27034a04230311ee88ebb7564802
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171864"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113653"
 ---
 # <a name="inkpicturetabletadded-event"></a>Evento InkPicture. TabletAdded
 
@@ -37,7 +37,7 @@ O objeto [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -58,7 +58,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

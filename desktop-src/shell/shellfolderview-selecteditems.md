@@ -1,5 +1,5 @@
 ---
-description: Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
+description: Método ShellFolderView. SelectedItems – Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
 title: Método ShellFolderView. SelectedItems (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: c6ade3a6e25d5de6bfa1661207473dac72ace2bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54cf67f1b75ae9d6423b02d0cacdde032ad2e018
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989063"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083374"
 ---
 # <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView. SelectedItems
 
@@ -37,7 +37,7 @@ retVal = ShellFolderView.SelectedItems()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **FolderItems**](folderitems.md)\*\***
 

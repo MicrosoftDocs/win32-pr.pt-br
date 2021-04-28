@@ -1,5 +1,5 @@
 ---
-description: Método destruidor.
+description: CBaseFilter. ~ CBaseFilter destruidor-método Destruitor.
 ms.assetid: 786fb4d0-a482-4887-91ed-ed156c008272
 title: CBaseFilter. ~ CBaseFilter Destruitor (Amfilter. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 61e56e64ea3bb58a3bff8c3ab9438f1392952971
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89ecaa9abf1ff79b1eb6b0e0c27895af95114452
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752110"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099834"
 ---
 # <a name="cbasefiltercbasefilter-destructor"></a>Destruidor CBaseFilter. ~ CBaseFilter
 
@@ -51,7 +51,7 @@ Sempre pare o filtro antes de destruí-lo.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: O método Stop interrompe a captura atual.
+description: 'Método IRTC:: Stop – o método Stop interrompe a captura atual.'
 ms.assetid: 64a80ff1-5a48-4be8-835d-a3d304ebb324
 title: 'Método IRTC:: Stop (Netmon. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: f25bf9d56a6f41acefad9a552dd2f591158bc74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10bf0886032c93288435ade05fec46077d53753c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789745"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113514"
 ---
 # <a name="irtcstop-method"></a>Método IRTC:: Stop
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Stop();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -73,7 +73,7 @@ Ao reiniciar a captura depois de chamar o método **IRTC:: Stop** , chame [IRTC:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

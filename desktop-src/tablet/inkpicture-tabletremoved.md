@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando um IInkTablet é removido do sistema.
+description: Evento InkPicture. TabletRemoved – ocorre quando um IInkTablet é removido do sistema.
 ms.assetid: 9a4640a7-cbd9-4304-88c6-86036423628d
 title: Evento InkPicture. TabletRemoved (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05b097b4dcf15c618e3316066be962b52803e27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 929458c6b972143852b5921a8c8364a54a4b6f41
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171863"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113644"
 ---
 # <a name="inkpicturetabletremoved-event"></a>Evento InkPicture. TabletRemoved
 
@@ -37,7 +37,7 @@ O valor longo que foi usado como a ID do objeto [**IInkTablet**](/windows/deskto
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -58,7 +58,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

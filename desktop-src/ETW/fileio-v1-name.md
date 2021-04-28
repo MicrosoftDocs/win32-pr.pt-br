@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe FileIo_V1_Name-essa classe é a classe de tipo de evento para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: a4ee38df-af75-4aec-89ec-5a1c39302c82
 title: Classe FileIo_V1_Name
 ms.topic: reference
@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 617e0abeed095099996079211107d0720017514a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62069f8a462499dfbfd9cfa368b9f5985d4775e0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011313"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106544"
 ---
 # <a name="fileio_v1_name-class"></a>\_Classe de \_ nome FileIo v1
 
@@ -97,7 +97,7 @@ Corresponda o valor desse ponteiro ao valor do ponteiro **FileObject** em um eve
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

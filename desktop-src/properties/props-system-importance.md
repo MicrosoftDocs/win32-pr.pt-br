@@ -1,15 +1,15 @@
 ---
-description: .
+description: System. importância
 ms.assetid: 2a159e29-c501-4721-9478-aa201454a415
 title: System. importância
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9de088f264da1e74d9a4fb497499cce24134ecb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 211685b7fcc928565d2243afcc013f6e585c09f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782700"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087004"
 ---
 # <a name="systemimportance"></a>System. importância
 
