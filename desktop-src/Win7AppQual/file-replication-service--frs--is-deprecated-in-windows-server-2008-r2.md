@@ -1,15 +1,15 @@
 ---
-description: .
+description: O FRS (serviço de replicação de arquivo) foi preterido no Windows Server 2008 R2
 ms.assetid: 18a03469-737a-4905-9851-f7961c46b867
 title: O FRS (serviço de replicação de arquivo) foi preterido no Windows Server 2008 R2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af3acf7eb6310f2c296abfd5eb1db0f30c4b48dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d3c34e43daf8346888a32ef76d55f93ac5a563e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764226"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088364"
 ---
 # <a name="file-replication-service-frs-is-deprecated-in-windows-server-2008-r2"></a>O FRS (serviço de replicação de arquivo) foi preterido no Windows Server 2008 R2
 

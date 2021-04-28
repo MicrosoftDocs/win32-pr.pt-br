@@ -1,5 +1,5 @@
 ---
-description: Adiciona um arquivo à lista MRU (usada mais recentemente).
+description: Método Shell. AddToRecent – adiciona um arquivo à lista MRU (usada mais recentemente).
 ms.assetid: 26D2AE5A-FC7E-4c7c-9F10-8D3D7AA236E7
 title: Método Shell. AddToRecent (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c4372cc6cfac25f94e607f14734a9f544cd4fcbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 92ea7432c318939a01f86405ae33d8ac90b88c80
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968214"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083864"
 ---
 # <a name="shelladdtorecent-method"></a>Método Shell. AddToRecent
 
@@ -71,7 +71,7 @@ Uma **cadeia de caracteres** que contém o nome da categoria na qual o arquivo s
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 

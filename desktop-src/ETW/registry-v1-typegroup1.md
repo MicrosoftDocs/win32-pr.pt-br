@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Registry_V1_TypeGroup1-essa classe é a classe de tipo de evento para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 59c455a0-af7e-4fd5-9af4-07ff72ee0545
 title: Classe Registry_V1_TypeGroup1
 ms.topic: reference
@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2cd77ad0c12769c657b4e7c23c1fe1993a248481
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab0326f92d1b084f471f3dc1b57322f69aa645fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827265"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106154"
 ---
 # <a name="registry_v1_typegroup1-class"></a>\_ \_ Classe TypeGroup1 do registro v1
 
@@ -147,7 +147,7 @@ Valor de NTSTATUS da operação de registro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

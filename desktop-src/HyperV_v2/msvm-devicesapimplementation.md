@@ -1,5 +1,5 @@
 ---
-description: Uma associação entre um ponto de acesso de serviço (SAP) e como ele é implementado.
+description: Classe de Msvm_DeviceSAPImplementation – uma associação entre um ponto de acesso de serviço (SAP) e como ele é implementado.
 ms.assetid: 36108521-A699-4498-A962-DC0801D9EE81
 title: Classe Msvm_DeviceSAPImplementation
 ms.topic: reference
@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9551d4409edfdfca18b66e3a3b86d6adcb28b19c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fbe3c9b85e0a8c9f0c6a07d1db03784c4ac15e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757147"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112094"
 ---
 # <a name="msvm_devicesapimplementation-class"></a>\_Classe Msvm DeviceSAPImplementation
 
@@ -99,7 +99,7 @@ Consulte [consultando objetos de rede](querying-networking-objects.md).
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

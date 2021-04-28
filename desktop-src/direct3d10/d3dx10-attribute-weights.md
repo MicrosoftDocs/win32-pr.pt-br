@@ -1,5 +1,5 @@
 ---
-description: Especifica os atributos de peso de malha.
+description: Estrutura de D3DX10_ATTRIBUTE_WEIGHTS-especifica os atributos de peso de malha.
 ms.assetid: 554bb8f2-9e92-4e9e-b500-c3cc47d57830
 title: Estrutura de D3DX10_ATTRIBUTE_WEIGHTS (D3DX10. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 4f137c1ecc29c184c4dec3995fb0202741ce9f09
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ab163149493ad73f892a251a691ad82544d7f382
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298671"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094344"
 ---
 # <a name="d3dx10_attribute_weights-structure"></a>Estrutura de pesos de \_ atributo D3DX10 \_
 
@@ -157,7 +157,7 @@ O \_ tipo de pesos do atributo LPD3DX \_ é definido como um ponteiro para a \_ 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

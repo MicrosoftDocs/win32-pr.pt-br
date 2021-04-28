@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe Process_V0-essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 29ecf04c-4be1-451e-b140-4ffed337cfed
 title: Classe Process_V0
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e43f09dffd49b3cdc372b77e48bae0e73b39687e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e284840a078b2dac782aecaacae5490f4a06b27
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967734"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106344"
 ---
 # <a name="process_v0-class"></a>\_Classe Process V0
 
@@ -49,7 +49,7 @@ A classe **process \_ V0** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

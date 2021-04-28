@@ -1,5 +1,5 @@
 ---
-description: Função de proxy para o método GetThumbnail.
+description: Função IWICBitmapDecoder_GetThumbnail_Proxy function-proxy para o método GetThumbnail.
 ms.assetid: 37a6ba78-0d1b-47f6-9b12-8ad123c8ee86
 title: Função IWICBitmapDecoder_GetThumbnail_Proxy
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 7412999b1a685c0188e0f277e073791d753a245b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fb4d6ae050772bb6392e1d94c88ef5bfc23d2ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763812"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100604"
 ---
 # <a name="iwicbitmapdecoder_getthumbnail_proxy-function"></a>\_Função de proxy de SetThumbnail de IWICBitmapDecoder \_
 
@@ -44,9 +44,9 @@ HRESULT IWICBitmapDecoder_GetThumbnail_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-Ponteiro para este objeto [_ *IWICBitmapDecoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
+Ponteiro para este objeto [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Um ponteiro que recebe um ponteiro para o [**IWICBitmapSource**](/windows/deskto
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

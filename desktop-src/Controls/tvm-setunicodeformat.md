@@ -1,6 +1,6 @@
 ---
 title: Mensagem de TVM_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere Unicode para o controle.
+description: TVM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: e4b58ae5-6217-4a2e-80e5-3ba9e578859a
 keywords:
 - Controles de TVM_SETUNICODEFORMAT de mensagens do Windows
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25082347710a40f592cfd4087b19916b56cf0d11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b49fcdd22cff0ac91885ef8f54d49922f9c677e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919194"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116544"
 ---
 # <a name="tvm_setunicodeformat-message"></a>\_Mensagem TVM SETUNICODEFORMAT
 
@@ -39,7 +39,7 @@ Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador de formato Unicode anterior para o controle.
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

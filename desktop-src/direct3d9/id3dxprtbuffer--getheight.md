@@ -1,5 +1,5 @@
 ---
-description: Recupera a altura da textura, em pixels.
+description: 'Método ID3DXPRTBuffer:: GetHeight – recupera a altura da textura, em pixels.'
 ms.assetid: 811d0c74-89fc-42b2-951c-8791d6677353
 title: 'Método ID3DXPRTBuffer:: GetHeight (D3DX9Mesh. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 071e7bdea0df3f2e9871efa13e1b3490a6e76ce7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5138d979f73b67609bbacac3c3aa10e8f9fe8c9a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764425"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093284"
 ---
 # <a name="id3dxprtbuffergetheight-method"></a>Método ID3DXPRTBuffer:: GetHeight
 
@@ -38,7 +38,7 @@ UINT GetHeight();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna a altura da textura, em pixels.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Avalia uma luz direcional e retorna dados Spectral esféricos (SH).
+description: Função D3DXSHEvalDirectionalLight (D3DX10. h) – avalia uma luz direcional e retorna dados de Spectral esférica harmônica (SH).
 ms.assetid: b5c657f5-d291-4e53-908c-670b29a1888a
 title: Função D3DXSHEvalDirectionalLight (D3DX10. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9c6b5c9590132d9fe3d0fc07ae419d442144079a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 551dad8081af2b0138be4758682d5a660f621141
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104567126"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108594"
 ---
 # <a name="d3dxshevaldirectionallight-function-d3dx10h"></a>Função D3DXSHEvalDirectionalLight (D3DX10. h)
 
@@ -119,7 +119,7 @@ Ponteiro opcional para o vetor de saída SH para o componente azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -148,7 +148,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

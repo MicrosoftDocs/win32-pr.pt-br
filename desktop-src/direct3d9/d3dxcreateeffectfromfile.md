@@ -1,5 +1,5 @@
 ---
-description: Crie um efeito a partir de uma descrição de efeito ASCII ou binário.
+description: Função D3DXCreateEffectFromFile – crie um efeito de uma descrição de efeito ASCII ou binário.
 ms.assetid: b5868ba3-0869-46f7-804f-3103358a3ef5
 title: Função D3DXCreateEffectFromFile (D3DX9Effect. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f34d0cdb3ae19772f21d8307fffb395c4d1ac9ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d8b2afdd1e8008bc8e03efa670e5a4b37b6dc9f8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664082"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094314"
 ---
 # <a name="d3dxcreateeffectfromfile-function"></a>Função D3DXCreateEffectFromFile
 
@@ -119,7 +119,7 @@ Retorna um ponteiro para um buffer que contém uma lista de erros de compilaçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -142,7 +142,7 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

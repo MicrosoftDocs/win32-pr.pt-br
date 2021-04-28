@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe pai para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
+description: Classe FileIo-essa classe é a classe pai para eventos de e/s de arquivo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 8e006a63-a061-4b62-8f90-b8c8823bb047
 title: Classe FileIo
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2f7c032cb7af325efa1d2ea76702068fc7b3be62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 716528902a115e23eae5b49ef572b87a71d11e25
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967725"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106524"
 ---
 # <a name="fileio-class"></a>Classe FileIo
 
@@ -87,7 +87,7 @@ Os eventos de e/s de arquivo são registrados no início da operação.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
 title: Referência do acelerador de teclado
-description: .
+description: Referência do acelerador de teclado
 ms.assetid: cc7c6271-6aac-4463-aaf4-c3b209982046
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8937be2f575bcf849f7fe3b9f7f8f225562516b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4bcdb400d7a0ebda3e6ea5a44d02b6f8eb74e393
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636074"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112534"
 ---
 # <a name="keyboard-accelerator-reference"></a>Referência do acelerador de teclado
 
@@ -20,9 +20,9 @@ ms.locfileid: "103636074"
 -   [Notificações do acelerador de teclado](keyboard-accelerator-notifications.md)
 -   [Estruturas do acelerador de teclado](keyboard-accelerator-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

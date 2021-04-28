@@ -1,5 +1,5 @@
 ---
-description: O método GetPin recupera um PIN.
+description: Método CBaseRenderer. GetPin – o método GetPin recupera um PIN.
 ms.assetid: 665e1aaf-4491-4241-94c6-6ea356d7a665
 title: Método CBaseRenderer. GetPin (Renbase. h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b67b926e0af604e0a25ea7c09b417baf3647fde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7c30767b7cba68931bc1ddde4905c9b7bc2bc29
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748638"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119884"
 ---
 # <a name="cbaserenderergetpin-method"></a>Método CBaseRenderer. GetPin
 
@@ -49,7 +49,7 @@ Número do PIN especificado. Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o ponteiro [**\_ pInputPin CBaseRenderer:: m**](cbaserenderer-m-pinputpin.md) .
 
@@ -68,7 +68,7 @@ Esse método implementa o método [**CBaseFilter:: GetPin**](cbasefilter-getpin.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

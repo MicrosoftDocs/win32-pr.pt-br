@@ -1,5 +1,5 @@
 ---
-description: Uma matriz 4x4 que contém métodos e sobrecargas de operador.
+description: Estrutura D3DXMATRIX (D3dx9math. h) – uma matriz 4x4 que contém métodos e sobrecargas de operador.
 ms.assetid: 0911088b-50cf-4c4a-996e-351386fc359b
 title: Estrutura D3DXMATRIX (D3dx9math. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 2b09691ff27307e041a79b57e9d32c7e74e5eef1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fad44c13f7b856270fe6475f9e099f6e1714e064
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765720"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094214"
 ---
 # <a name="d3dxmatrix-structure-d3dx9mathh"></a>Estrutura D3DXMATRIX (D3dx9math. h)
 
@@ -126,7 +126,7 @@ typedef struct _D3DMATRIX D3DXMATRIX, *LPD3DXMATRIX;
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

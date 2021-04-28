@@ -1,15 +1,15 @@
 ---
-description: Ocorre quando o tamanho da seleção atual é alterado, por exemplo, por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
+description: Evento InkOverlay. SelectionResized – ocorre quando o tamanho da seleção atual é alterado, por exemplo, por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a propriedade Selection.
 ms.assetid: 606d4bdf-b02e-459f-a4cf-050daac6c309
 title: Evento InkOverlay. SelectionResized (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf9cbb01821756d830b7c0a24adc55dad11b403
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f3dd3cf1bdda004733dde99bb66150710044310
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171535"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116874"
 ---
 # <a name="inkoverlayselectionresized-event"></a>Evento InkOverlay. SelectionResized
 
@@ -42,7 +42,7 @@ O retângulo delimitador da coleção [InkStrokes](/previous-versions/windows/de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -63,7 +63,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Inicia o serviço.
+description: Método StartService da classe Msvm_ImageManagementService – inicia o serviço.
 ms.assetid: d1e11947-4f48-404f-a359-627a3b7716fd
 title: Método StartService da classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fd13a4eb39477d9d22fc687b095a8f6fbbc68c5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fb895687960348bf030efe5f668f7a914157ff5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105775729"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111744"
 ---
 # <a name="startservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StartService da classe Msvm \_ imagens
 
@@ -37,7 +37,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

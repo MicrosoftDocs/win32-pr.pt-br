@@ -1,5 +1,5 @@
 ---
-description: Recupera o objeto de erro para o trabalho, se houver um.
+description: Método GetError da classe Msvm_ConcreteJob – recupera o objeto de erro para o trabalho, se existir um.
 ms.assetid: 7E810CBE-F18F-4EFA-B52E-631CD071D136
 title: Método GetError da classe Msvm_ConcreteJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 63279d8bc08f0b9f1955f694470a3744defd8054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c222a7091550b5ee831330f100292549e31ce5ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756765"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112184"
 ---
 # <a name="geterror-method-of-the-msvm_concretejob-class"></a>Método GetError da \_ classe Msvm ConcreteJob
 
@@ -48,7 +48,7 @@ Se o status operacional do trabalho não for 2 (OK), esse método retornará uma
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -110,7 +110,7 @@ O acesso à classe [**Msvm \_ ConcreteJob**](msvm-concretejob.md) pode ser restr
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Modifica os dados de configuração para o serviço.
+description: Método ModifyServiceSettings da classe Msvm_MetricService – modifica os dados de configuração para o serviço.
 ms.assetid: E6133DA7-A137-42FA-A523-5B93E9C6DB79
 title: Método ModifyServiceSettings da classe Msvm_MetricService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b680f5f46d99d46f99094e05db653083fd7ae952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 088aec001dd63de7344256fd9e114b6ff73e4425
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647330"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112174"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_metricservice-class"></a>Método ModifyServiceSettings da \_ classe MetricService Msvm
 
@@ -54,7 +54,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -62,7 +62,7 @@ Esse método retorna um dos valores a seguir.
 
 | Código/valor de retorno                                                                                                                                                                | Descrição                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | Êxito.<br/>                                |
+| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | Sucesso.<br/>                                |
 | <dl> <dt>**Parâmetros de método verificados-trabalho iniciado**</dt> <dt>4096</dt> </dl> | Parâmetros de método marcados, trabalho iniciado.<br/> |
 | <dl> <dt>32768</dt> <dt>**com falha**</dt> </dl>                                 | Falhou.<br/>                                 |
 | <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                          | Acesso negado.<br/>                          |
@@ -94,7 +94,7 @@ Esse método retorna um dos valores a seguir.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

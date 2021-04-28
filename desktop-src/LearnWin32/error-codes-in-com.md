@@ -1,15 +1,15 @@
 ---
 title: Códigos de erro em COM
-description: .
+description: Códigos de erro em COM
 ms.assetid: ed430863-f416-4611-81b4-0c31d819944a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f082afbabf367179b02c0fb3b0fc979dcda664a4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 733cbe0799a22b0f0c01ee9cb226ad7e0b8660da
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640621"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103954"
 ---
 # <a name="error-codes-in-com"></a>Códigos de erro em COM
 
@@ -66,6 +66,6 @@ Mais adiante neste módulo, veremos alguns conselhos práticos sobre como estrut
 
 [Criando um objeto em COM](creating-an-object-in-com.md)
 
- 
+ 
 
- 
+ 

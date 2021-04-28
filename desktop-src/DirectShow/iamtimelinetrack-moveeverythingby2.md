@@ -1,5 +1,5 @@
 ---
-description: Não há suporte para o método.
+description: 'Método IAMTimelineTrack:: MoveEverythingBy2 – não há suporte para esse método.'
 ms.assetid: 082922fc-dda9-4970-979c-301178152502
 title: 'Método IAMTimelineTrack:: MoveEverythingBy2 (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 752a55eb34b1178ddce389462c6797d85c137396
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b0334f207dcf70e790afddc8a8ec68648a24a93
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759909"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119454"
 ---
 # <a name="iamtimelinetrackmoveeverythingby2-method"></a>Método IAMTimelineTrack:: MoveEverythingBy2
 
@@ -55,7 +55,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -82,7 +82,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

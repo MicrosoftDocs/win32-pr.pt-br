@@ -1,5 +1,5 @@
 ---
-description: O método SourceListAddMediaDisk adiciona um disco ao conjunto de discos registrados. Aceita DiskId, VolumeLabel e DiskPrompt como parâmetros. Esse método chama em MsiSourceListAddMediaDisk.
+description: Método Product. SourceListAddMediaDisk – o método SourceListAddMediaDisk adiciona um disco ao conjunto de discos registrados. Aceita DiskId, VolumeLabel e DiskPrompt como parâmetros. Esse método chama em MsiSourceListAddMediaDisk.
 ms.assetid: 19cb6884-2191-4da3-a6d2-8874564be67d
 title: Método Product. SourceListAddMediaDisk
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d2f81b21570d708f361e45be7f6f42a93fd0d335
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cf5fac906b048930b47a07acb2c04c7243d5bbf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747325"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113574"
 ---
 # <a name="productsourcelistaddmediadisk-method"></a>Método Product. SourceListAddMediaDisk
 
@@ -62,7 +62,7 @@ Esse parâmetro fornece o prompt de disco do disco que está sendo adicionado ou
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -78,7 +78,7 @@ Esse método não retorna um valor.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

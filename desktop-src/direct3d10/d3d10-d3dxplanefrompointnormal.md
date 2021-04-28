@@ -1,5 +1,5 @@
 ---
-description: Constrói um plano de um ponto e um normal.
+description: Função D3DXPlaneFromPointNormal (D3DX10Math. h) – constrói um plano de um ponto e um normal.
 ms.assetid: 93c644d2-ab8c-47a1-9a3b-8b9c6a13178b
 title: Função D3DXPlaneFromPointNormal (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9900a9f6838e253bd195374d00f90ee31fae07a7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 519ce82a8d5a8c6adaf22b69047a8d365bd777ac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105772719"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108834"
 ---
 # <a name="d3dxplanefrompointnormal-function-d3dx10mathh"></a>Função D3DXPlaneFromPointNormal (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para uma estrutura D3DXVECTOR3, definindo o normal usado para construir
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
@@ -90,7 +90,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

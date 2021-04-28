@@ -1,5 +1,5 @@
 ---
-description: Solicita uma redefinição.
+description: Método Reset da classe Msvm_DVDDrive – solicita uma redefinição.
 ms.assetid: 5d178eee-36fa-4315-915a-778f559f08f0
 title: Método Reset da classe Msvm_DVDDrive
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec90f48164c60cc37147a0521170291e3ac91491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81123a7a7bb4a7b76129af57b1ea7216b543c5ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759872"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119134"
 ---
 # <a name="reset-method-of-the-msvm_dvddrive-class"></a>Método Reset da classe Msvm \_ DVDDrive
 
@@ -37,7 +37,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

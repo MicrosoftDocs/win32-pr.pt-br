@@ -1,15 +1,15 @@
 ---
-description: Número de amostras de áudio por segundo em um tipo de mídia de áudio.
+description: Atributo MF_MT_AUDIO_SAMPLES_PER_SECOND-número de amostras de áudio por segundo em um tipo de mídia de áudio.
 ms.assetid: f640016d-595e-4b20-8ce8-23a029c2b064
 title: Atributo MF_MT_AUDIO_SAMPLES_PER_SECOND (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5080f6df87bafe8d4ee86e7b25332a12214ff3cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93a91b44ba4c55bf2512eefddfe3bc7a18d2eddd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827623"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093094"
 ---
 # <a name="mf_mt_audio_samples_per_second-attribute"></a>\_Atributo de amostras de áudio MF MT \_ \_ \_ por \_ segundo
 
@@ -37,7 +37,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

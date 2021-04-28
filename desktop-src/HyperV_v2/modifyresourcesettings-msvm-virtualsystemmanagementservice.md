@@ -1,5 +1,5 @@
 ---
-description: Modifica as configurações de recursos virtuais.
+description: Método ModifyResourceSettings da classe Msvm_VirtualSystemManagementService-modifica as configurações de recurso virtual.
 ms.assetid: 3fb2a65f-9f40-4eb9-99e8-8fe1451427d9
 title: Método ModifyResourceSettings da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 872e81926f717671b741a89c9bf954e452803b36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ca0bb9fea02b6acc5599d9f907b1e60fdbd9ec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829361"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119334"
 ---
 # <a name="modifyresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyResourceSettings da \_ classe VirtualSystemManagementService Msvm
 
@@ -62,7 +62,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -115,7 +115,7 @@ Esse método retorna um dos valores a seguir.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

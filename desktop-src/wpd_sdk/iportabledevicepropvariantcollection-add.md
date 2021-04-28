@@ -1,5 +1,5 @@
 ---
-description: O método add adiciona um item à coleção.
+description: 'Método IPortableDevicePropVariantCollection:: Add – o método add adiciona um item à coleção.'
 ms.assetid: e9e8975f-f9b8-4940-b967-020cf3812582
 title: 'Método IPortableDevicePropVariantCollection:: Add (PortableDeviceTypes. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: d9d5b4ee664d2fbbcc78550b1af5a48874d153d6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7aed732cb92ea7e0f2fb3c2ebdd615f643bc3107
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810894"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112454"
 ---
 # <a name="iportabledevicepropvariantcollectionadd-method"></a>Método IPortableDevicePropVariantCollection:: Add
 
@@ -47,7 +47,7 @@ Ponteiro para um novo objeto **PROPVARIANT** para adicionar à coleção. Esse m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -82,7 +82,7 @@ Para obter um exemplo de como usar esse método, consulte [recuperando um identi
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

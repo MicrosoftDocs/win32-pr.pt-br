@@ -1,5 +1,5 @@
 ---
-description: Transforma o vetor 2D normal pela matriz especificada.
+description: Função D3DXVec2TransformNormal (D3DX10Math. h) – transforma o vetor 2D normal pela matriz especificada.
 ms.assetid: fc238bb1-155f-4018-9c92-16352726920d
 title: Função D3DXVec2TransformNormal (D3DX10Math. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c4043a8f5a57f14be3e8506dc257690ef581835d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 403562ab779ebf532e1c1ebcec4ce21a2beadd7a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930610"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108294"
 ---
 # <a name="d3dxvec2transformnormal-function-d3dx10mathh"></a>Função D3DXVec2TransformNormal (D3DX10Math. h)
 
@@ -69,7 +69,7 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
@@ -94,7 +94,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Solicita uma alteração de estado.
+description: O método RequestStateChange da classe Msvm_ImageManagementService-solicita uma alteração de estado.
 ms.assetid: 005b34c7-51ed-4ef3-934c-a6a57a878b3b
 title: Método RequestStateChange da classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2118114cd353a25956566873fa78b1c44e0850b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf059fa5f45db97f5f63abb12e68a443b8988c02
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296430"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111764"
 ---
 # <a name="requeststatechange-method-of-the-msvm_imagemanagementservice-class"></a>Método RequestStateChange da classe Msvm \_ imagens
 
@@ -139,7 +139,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
