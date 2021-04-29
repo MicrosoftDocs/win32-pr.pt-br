@@ -60,7 +60,7 @@
           href: windowsribbon-controls-dropdowngallery.md
         - name: Controle de fonte
           href: windowsribbon-controls-fontcontrol.md
-        - name: Agrupar
+        - name: Grupo
           href: windowsribbon-controls-group.md
         - name: Botão ajuda
           href: windowsribbon-controls-helpbutton.md
@@ -110,7 +110,7 @@
                       href: windowsribbon-element-command-largehighcontrastimages.md
                     - name: LargeImages
                       href: windowsribbon-element-command-largeimages.md
-                    - name: Name
+                    - name: Nome
                       href: windowsribbon-element-command-name.md
                     - name: SmallHighContrastImages
                       href: windowsribbon-element-command-smallhighcontrastimages.md
@@ -194,7 +194,7 @@
                       href: windowsribbon-element-dropdowngallery-menulayout.md
                 - name: FontControl
                   href: windowsribbon-element-fontcontrol.md
-                - name: Agrupar
+                - name: Grupo
                   href: windowsribbon-element-group.md
                 - name: HelpButton
                   href: windowsribbon-element-helpbutton.md
@@ -261,8 +261,6 @@
                   href: windowsribbon-element-controlnamemap.md
                 - name: ControlSizeDefinition
                   href: windowsribbon-element-controlsizedefinition.md
-                - name: DynamicUI
-                  href: windowsribbon-element-dynamicui.md
                 - name: FlowMenuLayout
                   href: windowsribbon-element-flowmenulayout.md
                 - name: GroupSizeDefinition
