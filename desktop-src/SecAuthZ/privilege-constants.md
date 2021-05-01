@@ -5,12 +5,12 @@ title: Constantes de privilégio (WinNT. h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 801eccb2f42ccf27b45bc5628a32cee3de994bfe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cd33cf947f6425d717b4d41524fe7cf0fed14cef
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749964"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327151"
 ---
 # <a name="privilege-constants-authorization"></a>Constantes de privilégio (autorização)
 
@@ -153,7 +153,7 @@ Direito de usuário: fazer backup de arquivos e diretórios.<br/>Se o arquivo es
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="SE_RESTORE_NAME"></span><span id="se_restore_name"></span><dl> <dt><strong></strong></dt> <dt>Texto de SE_RESTORE_NAME ( &quot; SeRestorePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessário para executar operações de restauração. Esse privilégio faz com que o sistema conceda todo o controle de acesso de gravação a qualquer arquivo, independentemente da ACL especificada para o arquivo. Qualquer solicitação de acesso diferente da gravação ainda é avaliada com a ACL. Além disso, esse privilégio permite que você defina qualquer SID de grupo ou usuário válido como o proprietário de um arquivo. Esse privilégio é exigido pela função <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeya"><strong>RegLoadKey</strong></a> . Os direitos de acesso a seguir serão concedidos se esse privilégio for mantido:<br/>
+<td style="text-align: left;">Necessário para executar operações de restauração. Esse privilégio faz com que o sistema conceda todo o controle de acesso de gravação a qualquer arquivo, independentemente da ACL especificada para o arquivo. Qualquer solicitação de acesso diferente da gravação ainda é avaliada com a ACL. Além disso, esse privilégio permite que você defina qualquer SID de grupo ou usuário válido como o proprietário de um arquivo. Esse privilégio é exigido pela função <a href="/windows/desktop/api/winreg/nf-winreg-regloadkeya"><strong>RegLoadKey</strong></a> . Os direitos de acesso a seguir serão concedidos se esse privilégio for mantido:<br/>
 <ul>
 <li>WRITE_DAC</li>
 <li>WRITE_OWNER</li>

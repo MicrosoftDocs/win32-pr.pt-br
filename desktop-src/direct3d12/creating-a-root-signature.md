@@ -1,18 +1,18 @@
 ---
-title: Criando uma assinatura raiz
+title: Como criar uma assinatura raiz
 description: As assinaturas raiz são uma estrutura de dados complexa que contém estruturas aninhadas.
 ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9660f35c349342d147a61a6b4ce9c02a4a1abab
-ms.sourcegitcommit: 65af948af39d1a31885a1b688f5dbfe955d7eba1
+ms.openlocfilehash: 3705f4e1a0a88841560d67d5904e0f1b5dabd3f8
+ms.sourcegitcommit: a0cb986d5694b69d4a65b7d42a22694d02a6e83a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "104548226"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108296331"
 ---
-# <a name="creating-a-root-signature"></a>Criando uma assinatura raiz
+# <a name="creating-a-root-signature"></a>Como criar uma assinatura raiz
 
 As assinaturas raiz são uma estrutura de dados complexa que contém estruturas aninhadas. Eles podem ser definidos programaticamente usando a definição de estrutura de dados abaixo (que inclui métodos para ajudar a inicializar Membros). Como alternativa, eles podem ser criados na HLSL (linguagem de sombreamento de alto nível), dando a vantagem de que o compilador será validado antes que o layout seja compatível com o sombreador.
 
@@ -85,17 +85,15 @@ O membro de [**D3D12 \_ de \_ visibilidade do sombreador**](/windows/desktop/api
 
 Um uso da visibilidade do sombreador é ajudar com os sombreadores que são criados esperando associações diferentes por estágio do sombreador usando um namespace sobreposto. Por exemplo, um sombreador de vértice pode declarar:
 
- 
-
-Texture2D foo: Register (T0); "
-
- 
+```hlsl
+Texture2D foo : register(t0);
+```
 
 e o sombreador de pixel também pode declarar:
 
- 
-
-Barra de Texture2D: registro (T0);
+```hlsl
+Texture2D bar : register(t0);
+```
 
 Se o aplicativo fizer uma associação de assinatura raiz para a visibilidade T0 \_ , ambos os sombreadores verão a mesma textura. Se o sombreador definir realmente deseja que cada sombreador Veja texturas diferentes, ele poderá definir 2 slots de assinatura raiz com \_ vértice de visibilidade e \_ pixel. Não importa qual a visibilidade está em um slot de assinatura raiz, ela sempre tem o mesmo custo (custo somente dependendo do tipo de Slottype) em relação a um tamanho de assinatura de raiz máximo fixo.
 
@@ -243,10 +241,10 @@ for(UINT i = 0; i < numObjects; i++)
 [Assinaturas raiz](root-signatures.md)
 </dt> <dt>
 
-[Especificando assinaturas raiz em HLSL](specifying-root-signatures-in-hlsl.md)
+[Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)
 </dt> <dt>
 
-[Usando uma assinatura de raiz](using-a-root-signature.md)
+[Como usar uma assinatura raiz](using-a-root-signature.md)
 </dt> </dl>
 
  

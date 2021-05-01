@@ -4,17 +4,17 @@ ms.assetid: a28e77dd-72c9-42a3-a72d-1b3eaf59d9cf
 title: MakeCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 980ba379688f2dc61c44b06d66ed5255e5b2e988
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 461c15db364066d9edadb6a0c4d2c24dceab5cc9
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811054"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327140"
 ---
 # <a name="makecert"></a>MakeCert
 
 > [!Note]  
-> O MakeCert foi preterido. Para criar certificados autoassinados, use o cmdlet do PowerShell [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).
+> O MakeCert foi preterido. Para criar certificados autoassinados, use o cmdlet do PowerShell [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate).
 
  
 
@@ -48,7 +48,7 @@ As opções fornecidas nas tabelas a seguir podem ser usadas somente com o Inter
 <thead>
 <tr class="header">
 <th>Opção básica</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -178,7 +178,7 @@ As opções a seguir são apenas para arquivos SPC ( [*certificado do fornecedor
 <thead>
 <tr class="header">
 <th>Opção SPC e chave privada</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -228,7 +228,7 @@ As opções a seguir são apenas para a tecnologia de [*repositório de certific
 
 
 
-| Opção de repositório de certificados          | Description                                                                                                                                                                                                                                                                                                                              |
+| Opção de repositório de certificados          | Descrição                                                                                                                                                                                                                                                                                                                              |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-IC** *IssuerCertFile*          | Arquivo que contém o certificado do emissor. O MakeCert pesquisará no repositório de certificados para um certificado com uma correspondência exata.                                                                                                                                                                                                        |
 | **-em** *IssuerNameString*        | Nome comum do certificado do emissor. O MakeCert pesquisará no repositório de certificados para um certificado cujo nome comum inclua *IssuerNameString*.                                                                                                                                                                                  |

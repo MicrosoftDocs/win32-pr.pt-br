@@ -1,19 +1,19 @@
 ---
-description: O carimbo de data/hora de Authenticode baseia-se nas \# contraassinaturas PKCS 9 padrão. As ferramentas de assinatura da Microsoft permitem que os desenvolvedores afixam carimbos de data/hora ao mesmo tempo que fixam as assinaturas Authenticode.
+description: O carimbo de data/hora de Authenticode baseia-se nas \# contraassinaturas PKCS 7 padrão. As ferramentas de assinatura da Microsoft permitem que os desenvolvedores afixam carimbos de data/hora ao mesmo tempo que fixam as assinaturas Authenticode.
 ms.assetid: d0bd3e2f-1eee-4f71-9467-974994f720d5
 title: Carimbo de data/hora das assinaturas Authenticode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3631d402da56d4078cecce65075c92dff0ec7e1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0232853441d2c11d331c175ac7e8dfd120b341ff
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169686"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327181"
 ---
 # <a name="time-stamping-authenticode-signatures"></a>Carimbo de data/hora das assinaturas Authenticode
 
-As assinaturas do Authenticode da Microsoft fornecem garantias de autorização e criação para dados binários. O carimbo de data/hora de Authenticode baseia-se nas \# contraassinaturas PKCS 9 padrão. As ferramentas de assinatura da Microsoft permitem que os desenvolvedores afixam carimbos de data/hora ao mesmo tempo que fixam as assinaturas Authenticode. O carimbo de data/hora permite que as assinaturas Authenticode sejam verificadas mesmo depois que os certificados usados para a assinatura expirarem.
+As assinaturas do Authenticode da Microsoft fornecem garantias de autorização e criação para dados binários. O carimbo de data/hora de Authenticode baseia-se nas \# contraassinaturas PKCS 7 padrão. As ferramentas de assinatura da Microsoft permitem que os desenvolvedores afixam carimbos de data/hora ao mesmo tempo que fixam as assinaturas Authenticode. O carimbo de data/hora permite que as assinaturas Authenticode sejam verificadas mesmo depois que os certificados usados para a assinatura expirarem.
 
 ## <a name="a-brief-introduction-to-authenticode"></a>Uma breve introdução ao Authenticode
 

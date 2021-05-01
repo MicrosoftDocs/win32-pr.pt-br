@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad1679f9740539507a57c4cba93319569add0af3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a67f23a145838aa3562c81e78fb82c3ea66320df
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455171"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327131"
 ---
 # <a name="ttm_enumtools-message"></a>\_Mensagem TTM ENUMTOOLS
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commct
 
 ## <a name="return-value"></a>Retornar valor
 
-Retornará **true** se qualquer ferramenta for enumerada ou **false** caso contrário.
+Retorna **false** se uma ferramenta foi enumerada ou não.
 
 ## <a name="remarks"></a>Comentários
 

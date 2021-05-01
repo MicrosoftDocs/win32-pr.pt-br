@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f70c56a5f13fffa8dfedebd13f9830c62ef941cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f99d85c7dddb95bdfb168443d6f977c22273a87
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499872"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327171"
 ---
 # <a name="cb_findstringexact-message"></a>\_Mensagem de FINDSTRINGEXACT CB
 
@@ -32,7 +32,7 @@ Localiza a primeira cadeia de caracteres da caixa de listagem em uma caixa de co
 *wParam* 
 </dt> <dd>
 
-O índice de base zero do item que antecede o primeiro item a ser pesquisado. Quando a pesquisa atingir a parte inferior da caixa de listagem, ela continuará na parte superior da caixa de listagem de volta para o item especificado pelo parâmetro *wParam* . Se *wParam* for 1, a caixa de listagem inteira será pesquisada desde o início.
+O índice de base zero do item que antecede o primeiro item a ser pesquisado. Quando a pesquisa atingir a parte inferior da caixa de listagem, ela continuará na parte superior da caixa de listagem de volta para o item especificado pelo parâmetro *wParam* . Se *wParam* for-1, a caixa de listagem inteira será pesquisada desde o início.
 
 </dd> <dt>
 

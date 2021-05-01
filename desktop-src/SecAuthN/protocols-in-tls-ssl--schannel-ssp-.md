@@ -5,12 +5,12 @@ title: Protocolos em TLS/SSL (SSP Schannel)
 ms.topic: article
 ms.date: 01/20/2021
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: 844d75230119b747f77697f67ddecec5f64ce7cf
-ms.sourcegitcommit: 07b756a2f350efa5cfd5024a723ef392274ac3d9
+ms.openlocfilehash: 4717a128602d2ae52f90e6e201c6f6ff6aeb1de2
+ms.sourcegitcommit: 40dddb65cba5c5470631f1f4c78218edf7e515de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "103930082"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108332411"
 ---
 # <a name="protocols-in-tlsssl-schannel-ssp"></a>Protocolos em TLS/SSL (SSP Schannel)
 
@@ -35,7 +35,7 @@ A tabela a seguir exibe o suporte ao provedor Microsoft Schannel de versões do 
 | Windows 10, versão 1703                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
 | Windows 10, versão 1709                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
 | Windows 10, versão 1803                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
-| Windows 10, versão 1809                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
+| Windows 10, versão 1809//Windows Server 2019                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
 | Windows 10, versão 1903                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |
 | Windows 10, versão 1909                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  | 
 | Windows 10, versão 2004                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | Sem suporte  | Sem suporte  |

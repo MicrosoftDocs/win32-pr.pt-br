@@ -4,12 +4,12 @@ ms.assetid: 12a6fe6d-5b37-4fcf-bd04-0a22d84ba323
 title: Instalando e registrando uma DLL de filtro de senha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cd911c1a527384e48a2ae4567f6d85862e184cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cb2e9f93630dc6bdaa5dbcc7e665a6b1cebff0e
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828552"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327161"
 ---
 # <a name="installing-and-registering-a-password-filter-dll"></a>Instalando e registrando uma DLL de filtro de senha
 
@@ -30,11 +30,11 @@ Execute as etapas a seguir para instalar o filtro de senha. Você pode executar 
                 Lsa
     ```
 
-    Se a subchave **pacotes de notificação** existir, adicione o nome da sua dll aos dados do valor existente. Não substitua os valores existentes e não inclua a extensão. dll.
+    Se o valor dos **pacotes de notificação** do tipo *REG_MULTI_SZ* existir, adicione o nome da sua dll aos dados do valor existente. Não substitua os valores existentes e não inclua a extensão. dll.
 
-    Se a subchave **pacotes de notificação** não existir, adicione-a e, em seguida, especifique o nome da dll para os dados do valor. Não inclua a extensão. dll.
+    Se o valor dos **pacotes de notificação** não existir, crie-o, dê a ele o tipo de *REG_MULTI_SZ* e, em seguida, ESPECIFIQUE o nome da dll para os dados do valor. Não inclua a extensão. dll.
 
-    A subchave **pacotes de notificação** pode adicionar vários pacotes.
+    O valor dos **pacotes de notificação** pode adicionar vários pacotes.
 
 3.  Localize a configuração de complexidade da senha.
 

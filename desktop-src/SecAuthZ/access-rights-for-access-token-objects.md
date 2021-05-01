@@ -4,12 +4,12 @@ ms.assetid: 5f710fd8-33de-47c0-a8b2-baf3008c4ed7
 title: Direitos de acesso para objetos de Access-Token
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb6a62a8c1518dca30f2abbc4481fa5e11cf081
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 469081d2caa4e5ff7c9b7c55b4c09c31cff1acac
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296679"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327191"
 ---
 # <a name="access-rights-for-access-token-objects"></a>Direitos de acesso para objetos de Access-Token
 
@@ -33,7 +33,7 @@ Estes são os direitos de acesso válidos para objetos Access-token:
     | ID do TOKEN de \_ ajuste \_  | Necessário para ajustar a ID de sessão de um token de acesso. O \_ privilégio de nome TCB de se \_ é necessário.                                                                                                                                                                                    |
     | \_atribuição \_ primária de token    | Necessário para anexar um [*token primário*](/windows/desktop/SecGloss/p-gly) a um [*processo*](/windows/desktop/SecGloss/p-gly). O \_ privilégio de \_ nome ASSIGNPRIMARYTOKEN se também é necessário para realizar essa tarefa. |
     | TOKEN \_ duplicado          | Necessário para duplicar um token de acesso.                                                                                                                                                                                                                                            |
-    | execução do TOKEN \_            | Combina a \_ \_ execução de direitos padrão e a representação de token \_ .                                                                                                                                                                                                                        |
+    | execução do TOKEN \_            | O mesmo que os direitos padrão são \_ \_ executados.                                                                                                                                                                                                                                                |
     | representação de TOKEN \_        | Necessário para anexar um token de acesso de representação a um processo.                                                                                                                                                                                                                    |
     | consulta de TOKEN \_              | Necessário para consultar um token de acesso.                                                                                                                                                                                                                                                |
     | \_origem da consulta de token \_      | Necessário para consultar a origem de um token de acesso.                                                                                                                                                                                                                                  |
