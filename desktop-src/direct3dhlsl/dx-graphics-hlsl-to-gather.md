@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16c568afc3cfdc0d26472d50599abdf3dbd08301
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: f333c204b77d6e0c64119e16f31e170fec1d0f6c
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104967244"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644098"
 ---
 # <a name="gather-directx-hlsl-texture-object"></a>Coletar (objeto de textura DirectX HLSL)
 
@@ -84,7 +84,7 @@ Obtém as quatro amostras (somente componente vermelho) que seriam usadas para i
 </tr>
 <tr class="even">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Desvio</em></p></td>
-<td><p>no Um deslocamento de coordenadas de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. Os deslocamentos de textura precisam ser estáticos. O tipo de argumento é dependente do tipo de objeto Texture. Para obter mais informações, consulte <a href="dx-graphics-hlsl-to-sample.md">aplicando deslocamentos de coordenadas de textura</a>.</p>
+<td><p>no Um deslocamento de coordenadas de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. O tipo de argumento é dependente do tipo de objeto Texture. Para sombreadores que visam o modelo de sombreador 5,0 e acima, os 6 bits menos significativos de cada valor de deslocamento são respeitados como um valor assinado, produzindo [-32.. 31] intervalo. Para os sombreadores do modelo do sombreador anterior, os deslocamentos precisam ser inteiros imediatos entre-8 e 7.</p>
 
 <table>
 <thead>
@@ -114,7 +114,7 @@ Obtém as quatro amostras (somente componente vermelho) que seriam usadas para i
 
  
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 
 Um vetor de quatro componentes, com quatro componentes de dados vermelhos, cujo tipo é o mesmo que o tipo de modelo da textura.
 

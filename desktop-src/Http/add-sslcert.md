@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a43569edd400b824876dff991f95e79cbfd6a96
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 309050be35748f39eefc8b40b8e590f8f6889fde
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104365087"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644188"
 ---
 # <a name="add-sslcert"></a>add sslcert
 
@@ -45,28 +45,28 @@ add sslcert [ipport=]IP Address:port
 
 <dl> <dt>
 
-<span id="_ipport__IP_Address_port"></span><span id="_ipport__ip_address_port"></span><span id="_IPPORT__IP_ADDRESS_PORT"></span>**\[ipport = \] * * * endereço IP: porta*
+<span id="_ipport__IP_Address_port"></span><span id="_ipport__ip_address_port"></span><span id="_IPPORT__IP_ADDRESS_PORT"></span>**\[ipport = endereço IP: porta\]**
 </dt> <dd>
 
 Especifica o endereço IP e a porta para a associação.
 
 </dd> <dt>
 
-<span id="_certhash__string"></span><span id="_CERTHASH__STRING"></span>**\[CERTHASH = \] * * * cadeia de caracteres*
+<span id="_certhash__string"></span><span id="_CERTHASH__STRING"></span>**\[certhash = cadeia de caracteres\]**
 </dt> <dd>
 
 Especifica o hash de SHA do certificado. Esse hash tem 20 bytes de comprimento e é especificado como uma cadeia de caracteres hexadecimal.
 
 </dd> <dt>
 
-<span id="_appid__GUID"></span><span id="_appid__guid"></span><span id="_APPID__GUID"></span>**\[AppID = \] * * * GUID*
+<span id="_appid__GUID"></span><span id="_appid__guid"></span><span id="_APPID__GUID"></span>**\[AppID = GUID\]**
 </dt> <dd>
 
 Especifica o GUID para identificar o aplicativo proprietário.
 
 </dd> <dt>
 
-<span id="_certstorename__string"></span><span id="_CERTSTORENAME__STRING"></span>**\[certstorename = \] * * * cadeia de caracteres*
+<span id="_certstorename__string"></span><span id="_CERTSTORENAME__STRING"></span>**\[certstorename = cadeia de caracteres\]**
 </dt> <dd>
 
 Especifica o nome do repositório para o certificado. O padrão é MY. O certificado deve ser armazenado no contexto do computador local.
@@ -94,28 +94,28 @@ Ativa ou desativa a verificação de uso. O padrão é habilitada.
 
 </dd> <dt>
 
-<span id="_revocationfreshnesstime__u-int"></span><span id="_REVOCATIONFRESHNESSTIME__U-INT"></span>**\[RevocationFreshnessTime = \] * * * u-int*
+<span id="_revocationfreshnesstime__u-int"></span><span id="_REVOCATIONFRESHNESSTIME__U-INT"></span>**\[RevocationFreshnessTime = u-int\]**
 </dt> <dd>
 
 Especifica o intervalo de tempo para verificar se há uma CRL (lista de certificados revogados) atualizada. Se esse valor for 0, a nova CRL será atualizada somente se a anterior expirar (em segundos).
 
 </dd> <dt>
 
-<span id="_urlretrievaltimeout__u-int"></span><span id="_URLRETRIEVALTIMEOUT__U-INT"></span>**\[UrlRetrievalTimeout = \] * * * u-int*
+<span id="_urlretrievaltimeout__u-int"></span><span id="_URLRETRIEVALTIMEOUT__U-INT"></span>**\[UrlRetrievalTimeout = u-int\]**
 </dt> <dd>
 
 Especifica o intervalo de tempo limite em tentativas de recuperar a lista de certificados revogados para a URL remota (em milissegundos).
 
 </dd> <dt>
 
-<span id="_sslctlidentifier__string"></span><span id="_SSLCTLIDENTIFIER__STRING"></span>**\[SslCtlIdentifier = \] * * * cadeia de caracteres*
+<span id="_sslctlidentifier__string"></span><span id="_SSLCTLIDENTIFIER__STRING"></span>**\[SslCtlIdentifier = cadeia de caracteres\]**
 </dt> <dd>
 
 Lista os emissores de certificado que podem ser confiáveis. Essa lista pode ser um subconjunto dos emissores de certificado que são confiáveis para o computador.
 
 </dd> <dt>
 
-<span id="_sslctlstorename__string"></span><span id="_SSLCTLSTORENAME__STRING"></span>**\[sslctlstorename = \] * * * cadeia de caracteres*
+<span id="_sslctlstorename__string"></span><span id="_SSLCTLSTORENAME__STRING"></span>**\[sslctlstorename = cadeia de caracteres\]**
 </dt> <dd>
 
 Especifica o nome do repositório no \_ computador local em que SslCtlIdentifier está armazenado.
@@ -144,9 +144,9 @@ Ativa ou desativa a negociação do certificado. O padrão é desabilitado.
 
 **AppID = {00112233-4455-6677-8899-AABBCCDDEEFF}**
 
- 
+ 
 
- 
+ 
 
 
 

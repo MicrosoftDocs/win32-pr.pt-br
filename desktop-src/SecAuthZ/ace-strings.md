@@ -4,12 +4,12 @@ ms.assetid: 82c99170-784b-4724-a25b-2f2e8a2e0225
 title: Cadeias de caracteres ACE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a35bde18a1ca3ac416faa42e3b693e26305beb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed8f9aad8696bd3d3c251170f2ff79ea493ce57
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662053"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644178"
 ---
 # <a name="ace-strings"></a>Cadeias de caracteres ACE
 
@@ -47,16 +47,15 @@ Uma cadeia de caracteres que indica o valor do membro **AceType** da estrutura d
 | "AL"            | \_alarme SDDL                             | \_tipo de \_ Ace do alarme do sistema \_                                                                                                                                           |
 | CN            | \_auditoria de objeto SDDL \_                     | \_ \_ tipo ACE do objeto Audit \_ do \_ sistema                                                                                                                                   |
 | OL            | \_alarme do objeto SDDL \_                     | \_ \_ tipo ACE do objeto Alarm \_ do \_ sistema                                                                                                                                   |
-| ML            | \_rótulo obrigatório de SDDL \_                  | \_tipo de \_ ACE de rótulo obrigatório \_ do sistema \_                                                                                                                                |
-| XA            | \_acesso de retorno de chamada SDDL \_ \_ permitido         | ACESSO \_ permitido \_ retorno \_ de chamada Ace \_ tipo **windows vista e Windows Server 2003:** não disponível.<br/>                                                           |
-| XD            | \_acesso de retorno de chamada SDDL \_ \_ negado          | ACESSO \_ negado ao \_ retorno \_ de chamada Ace \_ tipo **windows vista e Windows Server 2003:** não disponível.<br/>                                                            |
+| ML            | \_rótulo obrigatório de SDDL \_                  | \_Rótulo obrigatório do sistema \_ \_ \_ tipo ACE **do Windows Server 2003:** não disponível.                                                                                        |
+| XA            | \_acesso de retorno de chamada SDDL \_ \_ permitido         | ACESSO \_ permitido \_ retorno \_ de chamada Ace \_ tipo **Windows Server 2008, windows vista e Windows Server 2003:** não disponível.                                                |
+| XD            | \_acesso de retorno de chamada SDDL \_ \_ negado          | ACESSO \_ negado \_ chamada \_ Ace \_ tipo **Windows Server 2008, windows vista e Windows Server 2003:** não disponível.                                                 |
 | ARQUITETURA            | \_atributo de recurso SDDL \_               | \_Tipo de Ace do atributo de recurso do sistema \_ \_ \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/> |
 | SP3            | ID da política com \_ escopo SDDL \_ \_                | ID da política com escopo do sistema \_ \_ \_ \_ ACE \_ tipo **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível.<br/>  |
 | "XU"            | \_auditoria de retorno de chamada SDDL \_                   | \_Tipo de \_ retorno de chamada \_ de auditoria do sistema \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/>     |
 | ZA            | \_acesso de objeto de retorno de chamada SDDL \_ \_ \_ permitido | ACESSO \_ permitido \_ retorno de chamada \_ Ace \_ tipo **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/>   |
-
-
-
+| TL            | \_rótulo de \_ confiança do processo SDDL \_             | Rótulo de confiança do processo do sistema \_ \_ \_ \_ \_ tipo ACE **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| Flórida            | \_filtro de acesso SDDL \_                    | \_Tipo de \_ ACE de filtro \_ de acesso do sistema \_ **Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, windows Server 2012 R2, Windows 8.1, Windows Server 2012, windows 8, Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível. |
  
 
 > [!Note]  
@@ -82,9 +81,8 @@ Uma cadeia de caracteres que indica o valor do membro **AceFlags** da estrutura 
 | “ID”             | SDDL \_ herdada          | Ace HERDAdo \_                |
 | ADMINISTRADOR             | \_êxito na auditoria de SDDL \_     | \_sinalizador de \_ ACE de acesso bem-sucedido \_ |
 | ATIVO             | \_falha de auditoria de SDDL \_     | \_sinalizador de \_ ACE de acesso com falha \_     |
-
-
-
+| TP             | \_filtro de confiança \_ protegida \_ SDDL | \_Sinalizador de \_ ACE de filtro protegido de confiança \_ \_ **Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, windows Server 2012 R2, Windows 8.1, Windows Server 2012, windows 8, Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível. |
+| CD             | SDDL \_ crítico           | \_Sinalizador de Ace crítico \_ **Windows Server versão 1803, windows 10 versão 1803, windows Server versão 1709, windows 10 versão 1709, windows 10 versão 1703, Windows Server 2016, windows 10 versão 1607, windows 10 versão 1511, windows 10 versão 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
  
 
 </dd> <dt>
@@ -152,9 +150,9 @@ Uma cadeia de caracteres que indica os [direitos de acesso](access-rights-and-ac
 
 | Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| NR                 | SDDL \_ não \_ lido \_ | \_rótulo obrigatório do sistema \_ \_ sem \_ leitura \_ |
-| NW                 | SDDL \_ sem \_ gravação \_ | \_rótulo obrigatório do sistema \_ \_ sem \_ gravação \_ |
-| NX                 | SDDL \_ não \_ executar \_ | \_rótulo obrigatório do sistema \_ \_ não \_ executar \_ |
+| NR                 | SDDL \_ não \_ lido \_ | \_Rótulo obrigatório \_ do sistema \_ não ler o \_ \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| NW                 | SDDL \_ sem \_ gravação \_ | \_Rótulo obrigatório \_ \_ do sistema sem \_ gravação no \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| NX                 | SDDL \_ não \_ executar \_ | \_Rótulo obrigatório do sistema \_ \_ não \_ executar \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
 </dd> <dt>
 
 <span id="object_guid"></span><span id="OBJECT_GUID"></span>**GUID do objeto \_**

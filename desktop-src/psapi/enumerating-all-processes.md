@@ -4,19 +4,19 @@ description: O código de exemplo a seguir usa a função EnumProcesses para enu
 ms.assetid: 0ed81548-4936-40e9-bfc8-baa71492310e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e64e127014910974b881a7ae21e807be9ac19452
-ms.sourcegitcommit: d581811a577e00821667dad731710909979dc72d
+ms.openlocfilehash: bf03fd9ad06bfb15924f3f5ec92d8f8858fbff60
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "104506315"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644108"
 ---
 # <a name="enumerating-all-processes"></a>Enumerando todos os processos
 
 O código de exemplo a seguir usa a função [**EnumProcesses**](/windows/win32/api/Psapi/nf-psapi-enumprocesses) para recuperar o identificador de processo para cada objeto de processo no sistema. Em seguida, [EnumProcessModules](/windows/win32/api/psapi/nf-psapi-enumprocessmodules) é chamado para obter cada nome de processo e imprimi-lo.
 
 >[!NOTE]
-> Para proceses de 64 bits, use a função [EnumProcessModulesEx](/windows/win32/api/psapi/nf-psapi-enumprocessmodulesex) .
+> Para processos de 64 bits, use a função [EnumProcessModulesEx](/windows/win32/api/psapi/nf-psapi-enumprocessmodulesex) .
 
 ```C++
 #include <windows.h>

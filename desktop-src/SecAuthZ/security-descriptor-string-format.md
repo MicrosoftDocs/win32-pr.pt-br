@@ -4,12 +4,12 @@ ms.assetid: 0a226629-084c-40c5-bdd4-ad7355c807cf
 title: Formato de cadeia de caracteres descritor de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42780c408908faf0a226584be7315ab6bf9e78e5
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 2d7fd6e9e2387deee63b5046086ed167a29fa54b
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925671"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644198"
 ---
 # <a name="security-descriptor-string-format"></a>Formato de cadeia de caracteres descritor de segurança
 
@@ -60,7 +60,7 @@ Sinalizadores de controle do descritor de segurança que se aplicam à DACL. Par
 | DTI                   | SDDL \_ protegido          | O sinalizador de SE \_ \_ protegido por DACL está definido.          |
 | MULTI-hop                  | \_req de \_ herança \_ automática de SDDL | O \_ sinalizador de \_ reherança automática da DACL do se \_ \_ está definido. |
 | AVANÇADA                  | SDDL \_ auto \_ herdada    | O \_ \_ sinalizador herdado automático do se da DACL \_ está definido.    |
-| "sem \_ controle de acesso \_ " | \_ACL NULL \_ SDDL          | A ACL é nula.                              |
+| "sem \_ controle de acesso \_ " | \_ACL NULL \_ SDDL          | A ACL é nula. **Windows server 2008, Windows Vista e Windows server 2003:** Não disponível. |
 
 
 
