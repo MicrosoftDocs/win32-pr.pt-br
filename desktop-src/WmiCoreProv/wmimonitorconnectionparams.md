@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 64212c523459696ced37e42689f6a4be0edb056b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a88b80773ec60b161df51fc759cc932d5c53c931
+ms.sourcegitcommit: cfcac5a083b72fd7f2a5188166d470cc0e95d02d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170393"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "109626688"
 ---
 # <a name="wmimonitorconnectionparams-class"></a>Classe WmiMonitorConnectionParams
 
@@ -90,7 +90,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de conexão de tecnologia de saída de vídeo. Os valores válidos são documentados na enumeração de [ \_ tecnologia de \_ saída \_ de vídeo D3DKMDT](https://msdn.microsoft.com/library/ms794498.aspx) .
+Tipo de conexão de tecnologia de saída de vídeo. Os valores válidos são documentados na enumeração de [ \_ tecnologia de \_ saída \_ de vídeo D3DKMDT](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology) .
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Tipo de conexão de tecnologia de saída de vídeo. Os valores válidos são doc
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
