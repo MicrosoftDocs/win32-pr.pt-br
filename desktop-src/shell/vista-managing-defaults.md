@@ -1,29 +1,29 @@
 ---
-description: Este tópico fornece ISVs (fornecedores de software independentes) com um guia rápido para as etapas necessárias para registrar e gerenciar os padrões de aplicativo no Windows Vista e versões posteriores. São fornecidos links para artigos mais detalhados sobre o tópico de cada seção.
+description: Este tópico fornece ISVs (fornecedores independentes de software) com um guia rápido para as etapas necessárias para registrar e gerenciar padrões de aplicativo no Windows Vista e posterior. Links são fornecidos para artigos mais aprofundados sobre o tópico de cada seção.
 ms.assetid: 649eb20d-07d3-4209-abff-45fc50f05631
 title: Gerenciando aplicativos padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de40d6c80aae4005fc015c08ef7bf2907289e795
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc146858d197b96229edda49ac2e7249db51bf4c
+ms.sourcegitcommit: 4d639170c06864e47ef66b2cfe6ca3d07cce0b02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828277"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109812821"
 ---
 # <a name="managing-default-applications"></a>Gerenciando aplicativos padrão
 
-O recurso **Definir acesso do programa e padrões do computador** (SPAD) foi adicionado ao Windows XP e versões posteriores do Windows para gerenciar padrões por computador. Além do SPAD, o Windows Vista introduziu o conceito de aplicativos padrão por usuário e o item **programas padrão** no painel de controle.
+O **recurso Definir Acesso ao** Programa e Padrões do Computador (SPAD) foi adicionado ao Windows XP e versões posteriores do Windows para gerenciar padrões por computador. Além do SPAD, o Windows Vista introduziu o conceito de aplicativos padrão por usuário e o **item** Programas Padrão no Painel de Controle.
 
 > [!IMPORTANT]
-> Este tópico não se aplica ao Windows 10. A maneira como as associações de arquivo padrão funcionam alteradas no Windows 10. Para obter mais informações, consulte a seção sobre **alterações de como o Windows 10 trata os aplicativos padrão** nesta [postagem](https://blogs.windows.com/bloggingwindows/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tópico não se aplica a Windows 10. A maneira como as associações de arquivos padrão funcionam mudou Windows 10. Para obter mais informações, consulte a seção sobre **Alterações em como Windows 10 lida com aplicativos padrão** nesta [postagem.](https://blogs.windows.com/windows-insider/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/)
 
  
 
-As configurações padrão por usuário são específicas para uma conta de usuário individual no sistema. Se as configurações padrão por usuário estiverem presentes, elas terão precedência sobre os padrões correspondentes por computador para essa conta. A partir do Windows 8, o sistema de extensibilidade para o tipo de arquivo e padrões de protocolo é estritamente por usuário e os padrões por computador são ignorados. SPAD também mudou no Windows 8 para definir padrões por usuário.
+As configurações padrão por usuário são específicas para uma conta de usuário individual no sistema. Se as configurações padrão por usuário estão presentes, elas têm precedência sobre os padrões por computador correspondentes para essa conta. A partir Windows 8, o sistema de extensibilidade para o tipo de arquivo e os padrões de protocolo são estritamente por usuário e os padrões por computador são ignorados. O SPAD também foi alterado Windows 8 para definir padrões por usuário.
 
--   Em sistemas que executam versões do Windows anteriores ao Windows 8, uma conta de usuário criada recentemente recebe padrões por computador até que os padrões por usuário sejam estabelecidos. No Windows Vista e posterior, os usuários podem usar o item **programas padrão** no painel de controle para definir ou alterar seus padrões por usuário. Além disso, quando um aplicativo é executado pela primeira vez, os padrões por usuário podem ser definidos usando as diretrizes a seguir na seção [execução e padrões da primeira aplicação](#application-first-run-and-defaults) .
--   Em sistemas que executam o Windows 8, uma conta de usuário recém-criada depende de padrões por usuário desde o início e a configuração desses padrões na primeira execução, conforme explicado na primeira [execução do aplicativo e os padrões](#application-first-run-and-defaults) não são mais suportados.
+-   Em sistemas que executam versões do Windows anteriores ao Windows 8, uma conta de usuário recém-criada recebe padrões por computador até que os padrões por usuário sejam estabelecidos. No Windows Vista e posterior, os usuários podem usar o **item** Programas Padrão no Painel de Controle para definir ou alterar seus padrões por usuário. Além disso, quando um aplicativo é executado pela primeira vez, os padrões por usuário podem ser definidos usando as diretrizes a seguir na seção Application [First Run and Defaults](#application-first-run-and-defaults) .
+-   Em sistemas que executam o Windows 8, uma conta de usuário recém-criada depende dos padrões por usuário desde o início e não há mais suporte para a configuração desses padrões na primeira execução, conforme explicado na seção Application [First Run and Defaults.](#application-first-run-and-defaults)
 
 Um aplicativo deve ser registrado com o SPAD e o recurso de programas padrão para ser oferecido como o programa padrão no Windows Vista e posterior.
 
@@ -49,31 +49,31 @@ Este tópico fornece ISVs (fornecedores de software independentes) com um guia r
 
 ## <a name="default-programs-item-in-control-panel"></a>Item programas padrão no painel de controle
 
-O **programas padrão** é um recurso introduzido no Windows Vista, acessível diretamente do menu **Iniciar** , bem como do painel de controle. Ele fornece uma nova infraestrutura que funciona com o privilégio de usuário padrão (não elevado) e foi projetado para permitir que usuários e aplicativos gerenciem padrões por usuário. Para os usuários, os programas padrão fornecem uma maneira unificada e facilmente acessível para gerenciar padrões, associações de arquivos e configurações de reprodução automática em todos os aplicativos no sistema. Para aplicativos, o uso do escopo por usuário fornecido pelas APIs de programas padrão oferece as seguintes vantagens:
+O **programas padrão** é um recurso introduzido no Windows Vista, acessível diretamente do menu **Iniciar** , bem como do painel de controle. Ele fornece uma nova infraestrutura que funciona com privilégio de usuário padrão (não elevado) e foi projetada para permitir que usuários e aplicativos gerenciem padrões por usuário. Para usuários, os Programas Padrão fornece uma maneira unificada e facilmente acessível de gerenciar padrões, associações de arquivos e configurações de reprodução automática em todos os aplicativos no sistema. Para aplicativos, o uso do escopo por usuário fornecido pelas APIs de Programas Padrão oferece as seguintes vantagens:
 
--   **Sem elevação**
+-   **Nenhuma elevação**
 
-    Um aplicativo não precisa elevar seus privilégios para declarar padrões.
+    Um aplicativo não precisa elevar seus privilégios para reivindicar padrões.
 
--   **Boa cidadania**
+-   **Boa Cidadãos**
 
     Em um computador com vários usuários, cada usuário pode selecionar diferentes aplicativos padrão.
 
--   **Gerenciamento padrão**
+-   **Gerenciamento Padrão**
 
-    As APIs de programas padrão oferecem um mecanismo confiável e consistente para verificar automaticamente o status padrão e recuperar as configurações perdidas sem recorrer à gravação diretamente no registro. No entanto, a partir do Windows 8, não recomendamos que os aplicativos consultem o status padrão, pois um aplicativo não pode mais alterar as configurações padrão — essas alterações podem ser feitas somente pelo usuário.
+    As APIs de Programas Padrão oferecem um mecanismo confiável e consistente para verificar o status padrão e recuperar as configurações perdidas sem recorrer à escrita diretamente no Registro. No entanto, desde Windows 8, não recomendamos que os aplicativos consultem o status padrão porque um aplicativo não pode mais alterar as configurações padrão– essas alterações podem ser feitas somente pelo usuário.
 
-Para permitir que seu aplicativo gerencie os padrões com eficiência, você deve registrar seu aplicativo como um programa padrão potencial. Para obter detalhes sobre como registrar e usar as APIs de programas padrão, consulte [programas padrão](default-programs.md).
+Para permitir que seu aplicativo gerencie padrões com eficiência, você deve registrar seu aplicativo como um programa padrão potencial. Para obter detalhes sobre como registrar e usar as APIs de Programas Padrão, consulte [Programas Padrão](default-programs.md).
 
-Os programas padrão também fornecem estes dois recursos:
+Os Programas Padrão também fornece estes dois recursos:
 
--   **IU de padrões reutilizáveis**
+-   **Interface do usuário de padrões reutilizáveis**
 
-    A interface do usuário de ambos os padrões do programa (**definir seus programas padrão**) e as associações de arquivo (**associar um tipo de arquivo ou protocolo a um programa**) podem ser reutilizadas e chamadas de dentro de um aplicativo. Isso permite que os aplicativos forneçam uma experiência de usuário padrão para o gerenciamento de padrões e evita que os ISVs precisem desenvolver uma interface do usuário personalizada ou equivalente.
+    A interface do usuário dos padrões do programa **(** Definir seus programas padrão ) e associações de arquivo ( Associar um tipo de arquivo ou protocolo **a um** programa ) pode ser reutilizada e chamada de dentro de um aplicativo. Isso permite que os aplicativos forneçam uma experiência de usuário padrão para gerenciar padrões e salva isVs de ter que desenvolver uma interface do usuário personalizada ou equivalente.
 
--   **Inclusão de informações de URL e marketing**
+-   **Inclusão de URL e informações de marketing**
 
-    Como parte da página **definir programas padrão** do item **programas padrão** no painel de controle, um aplicativo pode fornecer informações de marketing e um link para o site do fornecedor. Essa URL é derivada do certificado Authenticode com o qual o aplicativo foi assinado. Isso impede o uso indevido e a substituição não autorizada desse link. Se um aplicativo tiver um certificado Authenticode que inclui uma URL inserida, a interface do usuário do Windows exibirá essa URL inserida. Os ISVs devem aproveitar esse recurso para direcionar os usuários ao site para atualizações e outros downloads.
+    Como parte da página Definir **seus** programas padrão do **item** Programas Padrão no Painel de Controle, um aplicativo pode fornecer informações de marketing e um link para o site do fornecedor. Essa URL é derivada do certificado Authenticode com o qual o aplicativo foi assinado. Isso impede o uso indevido e a substituição não autorizada desse link. Se um aplicativo tiver um certificado Authenticode que inclui uma URL inserida, a interface do usuário do Windows exibirá essa URL inserida. Os ISVs devem aproveitar esse recurso para direcionar os usuários ao site para atualizações e outros downloads.
 
 ## <a name="set-program-access-and-computer-defaults"></a>Definir o acesso do programa e padrões do computador
 
@@ -90,36 +90,36 @@ Padrões por usuário substituem padrões por computador.
 
 Quando um aplicativo anterior ao Windows 8 implementa **definido como padrão** no SPAD, essas diretrizes devem ser seguidas:
 
--   Os aplicativos devem reivindicar apenas os padrões no nível do computador por meio de SPAD.
--   Os aplicativos *não* devem reivindicar padrões por usuário por meio de SPAD.
+-   Os aplicativos devem reivindicar apenas padrões de nível de computador por meio do SPAD.
+-   Os *aplicativos não devem* reivindicar padrões por usuário por SPAD.
 
-Quando um aplicativo do Windows 8 implementa **definido como padrão** no SPAD, ele deve registrar seus tipos de arquivo e protocolos em [programas padrão](default-programs.md), usando o mesmo nome de aplicativo usado em SPAD. Isso permite que uma alteração no SPAD reflita como uma alteração na entrada de programas padrão correspondente para o usuário atual.
+Quando um Windows 8 implementa  Definir como Padrão no SPAD, ele deve registrar seus tipos de arquivo e protocolos em Programas Padrão [,](default-programs.md)usando o mesmo nome de aplicativo usado no SPAD. Isso permite que uma alteração no SPAD reflita como uma alteração na entrada Programas Padrão correspondente para o usuário atual.
 
 ### <a name="hide-access-in-spad"></a>Ocultar o acesso no SPAD
 
 A opção ocultar acesso para cada padrão possível no SPAD é acessada de uma das duas maneiras:
 
--   Escolha a categoria de padrões **que não são da Microsoft** , que remove o acesso a todos os padrões da Microsoft.
--   Escolha a categoria **personalizado** e desmarque a caixa de seleção **habilitar o acesso a este programa** .
+-   Escolha a **categoria não Microsoft** de padrões, que remove o acesso a todos os padrões da Microsoft.
+-   Escolha a **categoria Personalizado** e des marque a caixa de **seleção Habilitar acesso a este** programa.
 
-Anteriormente, executar qualquer uma dessas ações removeu todos os pontos de entrada para os aplicativos apropriados no sistema. Diretrizes específicas para essa situação dizem como remover atalhos e ícones dos seguintes locais:
+Anteriormente, a tomada de qualquer uma dessas ações removeu todos os pontos de entrada para os aplicativos apropriados no sistema. Diretrizes específicas para essa situação dizem para remover atalhos e ícones dos seguintes locais:
 
--   Área de trabalho
+-   Desktop
 -   Menu Iniciar
--   Barra de início rápido (somente Windows Vista e anterior)
+-   Início Rápido barra (somente Windows Vista e anteriores)
 -   Área de notificação
 -   Menus de atalho
--   Faixa de tarefas da pasta
+-   Faixa de tarefas de pasta
 
-Os fornecedores são incentivados a implementar essas diretrizes na função de retorno de chamada ocultar acesso do aplicativo.
+Os fornecedores são incentivados a implementar essas diretrizes na função de retorno de chamada Ocultar Acesso do aplicativo.
 
-### <a name="alternate-hide-access-method-in-spad"></a>Alternar método de acesso de ocultar no SPAD
+### <a name="alternate-hide-access-method-in-spad"></a>Método alternativo ocultar acesso no SPAD
 
-Para alguns aplicativos herdados, uma implementação completa do acesso de ocultar pode não ser prática. Um método alternativo que alcança o mesmo efeito, mas não é facilmente reversível pelo usuário, é desinstalar o aplicativo. O exemplo a seguir mostra o comportamento de amostra e código para implementar isso.
+Para alguns aplicativos herdado, uma implementação completa de Ocultar Acesso pode não ser prática. Um método alternativo que atinge o mesmo efeito, mas não é facilmente reversível pelo usuário, é desinstalar o aplicativo. O exemplo a seguir mostra o comportamento de exemplo e o código de exemplo para implementar isso.
 
 A experiência do usuário recomendada para essa alternativa é a seguinte:
 
--   Quando o usuário limpa a caixa **habilitar o acesso a este programa** no SPAD, a interface do usuário a seguir é apresentada.
+-   Quando o usuário limpa a caixa **Habilitar acesso** a esse programa no SPAD, a interface do usuário a seguir é apresentada.
 
     ![caixa de diálogo vista sobre como ocultar o acesso ao programa](images/hideaccessvista.png)
 
@@ -207,7 +207,7 @@ int _tmain(int argc, WCHAR* argv[])
 
 Um aplicativo pode ter muitos pontos de entrada no sistema operacional. Estes são os locais recomendados para pontos de entrada:
 
--   Área de trabalho
+-   Desktop
 -   Menu Iniciar
 -   Barra de início rápido (somente Windows Vista e anterior)
 -   Área de notificação
@@ -221,31 +221,31 @@ Esta seção enfoca estas áreas específicas:
 
 ### <a name="open-with"></a>Abrir com
 
-O menu de atalho **abrir com** permite que o usuário selecione um aplicativo que possa manipular um tipo de arquivo específico. Embora **Open with** possa ser usado para abrir um arquivo com um aplicativo uma vez, ele também pode ser usado para definir o padrão para essa extensão de nome de arquivo. Portanto, um aplicativo sempre deve se registrar para **abrir com** para que os usuários sejam apresentados com esse aplicativo como uma opção. Os aplicativos podem registrar os tipos de arquivo e os protocolos para **abrir com**. Os aplicativos que registram protocolos na estrutura de programas padrão são adicionados automaticamente às opções **abrir com** para protocolos.
+O menu de atalho **abrir com** permite que o usuário selecione um aplicativo que possa manipular um tipo de arquivo específico. Embora **Open with** possa ser usado para abrir um arquivo com um aplicativo uma vez, ele também pode ser usado para definir o padrão para essa extensão de nome de arquivo. Portanto, um aplicativo sempre deve se registrar para **abrir com** para que os usuários sejam apresentados com esse aplicativo como uma opção. Os aplicativos podem registrar tipos de arquivo e protocolos **para Abrir com**. Aplicativos que registram protocolos na estrutura Programas Padrão são adicionados automaticamente às **opções Abrir com** para protocolos.
 
-Para obter informações sobre o registro para **Open with**, consulte [Introduction to file Associations](fa-intro.md).
+Para obter informações sobre como **registrar-se no Open With**, consulte [Introdução às associações de arquivos](fa-intro.md).
 
-### <a name="start-menu-and-quick-launch-bar"></a>Menu iniciar e barra de início rápido
+### <a name="start-menu-and-quick-launch-bar"></a>Menu Iniciar e Início Rápido Barra
 
-Para se tornar mais detectável para o usuário, os aplicativos podem adicionar atalhos a vários locais no Windows. O local mais comum para adicionar um atalho é o menu **Iniciar** . No Windows Vista e posterior, um aplicativo cria um atalho na pasta oculta% ProgramData% \\ do \\ \\ menu Iniciar do Microsoft Windows \\ para aparecer na lista de programas do menu **Iniciar** para todos os usuários. Normalmente, um aplicativo adiciona uma subpasta que contém o atalho.
+Para se tornar mais descobrivel para o usuário, os aplicativos podem adicionar atalhos a vários locais no Windows. O local mais comum para adicionar um atalho é **o** menu Iniciar. No Windows Vista e posterior, um aplicativo cria um atalho na pasta oculta %ProgramData% Programas de Menu Iniciar do Microsoft Windows para aparecer na lista de programas do menu Iniciar para todos \\ \\ os \\ \\ usuários.  Normalmente, um aplicativo adiciona uma subpasta que contém o atalho.
 
-Para programas de navegador e email, o menu **Iniciar** do Windows Vista também apresenta dois links dedicados fora da lista de programas, intitulada na **Internet** e no **email**. Depois que um aplicativo é registrado para essas categorias, a estrutura de programas padrão pode gerenciar o que é iniciado por meio desses links.
+Para programas de navegador e email, o **menu** Iniciar do Windows Vista também apresenta dois links dedicados fora da lista de programas, intitulados canonicamente **internet** **e email**. Depois que um aplicativo se registra nessas categorias, a estrutura Programas Padrão pode gerenciar o que é lançado por meio desses links.
 
 > [!Note]  
-> Os links do menu **Iniciar** da **Internet** e do **email** dedicado não estão mais presentes no Windows 7.
+> Os links **do** **menu** **Iniciar** dedicado de Internet e email não estão mais presentes no Windows 7.
 
  
 
-Para aumentar ainda mais a capacidade de descoberta, os aplicativos também podem adicionar atalhos à área de trabalho e à barra de início rápido. Os aplicativos devem pedir permissão ao usuário (geralmente durante a instalação ou na primeira execução) antes de adicionar um ícone ao menu **Iniciar** , à área de trabalho ou à barra de início rápido.
+Para aumentar ainda mais a capacidade de descoberta, os aplicativos também podem adicionar atalhos à área de trabalho e à Início Rápido barra. Os aplicativos devem solicitar permissão ao usuário (geralmente durante a instalação ou na primeira vez) antes de adicionar um ícone ao **menu** Iniciar, área de trabalho ou Início Rápido barra.
 
 > [!Note]  
-> A barra de início rápido não está mais disponível a partir do Windows 7. A alternativa do Windows 7 é fazer com que o aplicativo seja fixado na barra de tarefas, mas a fixação não pode ser realizada programaticamente, pois é estritamente uma opção de usuário.
+> A Início Rápido de dados não está mais disponível a partir do Windows 7. A alternativa do Windows 7 é ter o aplicativo fixado na barra de tarefas, mas a fixar não pode ser feita programaticamente, pois é estritamente uma escolha do usuário.
 
  
 
 Para saber mais, consulte esses tópicos:
 
--   [Como registrar um navegador da Internet ou cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
+-   [Como registrar um navegador da Internet ou um cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
 -   [Registrando programas com tipos de cliente](reg-middleware-apps.md)
 
 ## <a name="application-installation-and-defaults"></a>Instalação e padrões do aplicativo
@@ -270,31 +270,31 @@ Muitos aplicativos têm a capacidade de atualizar a si mesmos ao longo do tempo.
 
  
 
-Com a introdução de padrões por usuário no Windows Vista, é importante que os aplicativos que contratam extensões de nome de arquivo populares forneçam uma experiência de usuário comum para reivindicar essas extensões. Como esses padrões agora estão definidos no contexto do usuário, eles devem se apresentar como uma possibilidade padrão somente quando o usuário executa o programa após a instalação.
+Com a introdução de padrões por usuário no Windows Vista, é importante que os aplicativos que disputam extensões de nome de arquivo populares forneçam uma experiência de usuário comum para reivindicar essas extensões. Como esses padrões agora estão definidos no contexto do usuário, eles devem se apresentar como uma possibilidade padrão somente quando o usuário executa o programa após a instalação.
 
-A diretriz para estabelecer padrões por usuário é: quando um aplicativo é executado pela primeira vez para um usuário específico, esse aplicativo deve solicitar as preferências do usuário para os padrões e as associações de arquivo para si mesmo.
+A diretriz para estabelecer padrões por usuário é esta: quando um aplicativo é executado pela primeira vez para um usuário específico, esse aplicativo deve solicitar preferências do usuário para padrões e associações de arquivo para si mesmo.
 
-A interface de usuário recomendada deve fornecer duas opções claras para o usuário:
+A interface do usuário recomendada deve fornecer duas opções claras para o usuário:
 
-1.  Aceite todos os padrões que o aplicativo gostaria de reivindicar. Essa opção também pode definir outras propriedades padrão do aplicativo, como privacidade ou configurações de atualização automática. Essa opção permite que o aplicativo solicite todos os seus padrões registrados.
-2.  Personalize aceitando ou não aceitando seleções padrão e configurações de programa individualmente. Essa opção apresenta uma interface de usuário adicional que permite que o usuário faça escolhas granulares para suas opções padrão.
+1.  Aceite todos os padrões que o aplicativo gostaria de reivindicar. Essa opção também pode definir outras propriedades padrão do aplicativo, como privacidade ou configurações de atualização automática. Essa opção permite que o aplicativo reclame todos os seus padrões registrados.
+2.  Personalize aceitando ou não seleções padrão e configurações de programa individualmente. Essa opção apresenta mais interface do usuário que permite que o usuário faça escolhas granulares para suas opções padrão.
 
-Para obter mais informações, consulte [programas padrão](default-programs.md).
+Para obter mais informações, consulte [Programas padrão](default-programs.md).
 
-## <a name="verifying-defaults-and-asking-for-user-consent"></a>Verificando padrões e solicitando o consentimento do usuário
+## <a name="verifying-defaults-and-asking-for-user-consent"></a>Verificando padrões e solicitando consentimento do usuário
 
 > [!Note]  
-> Não há suporte para isso a partir do Windows 8.
+> Não há suporte para isso desde Windows 8.
 
  
 
-Depois que um aplicativo é registrado com programas padrão no Windows Vista e posterior, determinadas APIs ficam disponíveis para o aplicativo. Por exemplo, um aplicativo pode precisar verificar se ele é o programa padrão. A interface [**IApplicationAssociationRegistration**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iapplicationassociationregistration) fornece métodos para fazer isso.
+Depois que um aplicativo é registrado com Programas Padrão no Windows Vista e posterior, determinadas APIs ficam disponíveis para o aplicativo. Por exemplo, um aplicativo pode precisar verificar se ele é o programa padrão. A interface [**IApplicationAssociationRegistration**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iapplicationassociationregistration) fornece métodos para fazer isso.
 
-Qualquer aplicativo que queira declarar padrões deve primeiro perguntar ao usuário e nunca reivindicar os padrões sem permissão. O usuário deve ser perguntado se deseja tornar o aplicativo o padrão ou deixar o padrão atual no local. Também deve haver uma opção para não ser feita essa pergunta novamente depois que o usuário tiver feito sua escolha.
+Qualquer aplicativo que deseja reivindicar padrões deve primeiro perguntar ao usuário e nunca reivindicar padrões sem permissão. O usuário deve ser perguntado se deseja tornar o aplicativo o padrão ou deixar o padrão atual em prática. Também deve haver uma opção para não fazer essa pergunta novamente depois que o usuário tiver feito sua escolha.
 
-Para obter mais informações, consulte [programas padrão](default-programs.md).
+Para obter mais informações, consulte [Programas padrão](default-programs.md).
 
-## <a name="application-compatibility-tips"></a>Dicas de compatibilidade de aplicativos
+## <a name="application-compatibility-tips"></a>Dicas de compatibilidade do aplicativo
 
 Esta seção fornece algumas dicas de compatibilidade de aplicativos relacionadas à experiência de programas padrão no Windows.
 
@@ -308,23 +308,23 @@ O PCA (Assistente de compatibilidade de programa) é fornecido no Windows Vista 
 
 ### <a name="support-for-previous-windows-operating-system-versions"></a>Suporte para versões anteriores do sistema operacional Windows
 
-A infraestrutura de programas padrão não está disponível em nenhum sistema operacional Windows antes do Windows Vista. Portanto, quando os aplicativos se movem para a nova infraestrutura de programas padrão, eles devem reter o código de padrão de aplicativo mais antigo para manter a compatibilidade com versões mais antigas do Windows. Um aplicativo deve executar uma verificação de versão do sistema operacional como parte de sua instalação para determinar qual o código de padrões de aplicativo a ser executado.
+A infraestrutura de programas padrão não está disponível em nenhum sistema operacional Windows antes do Windows Vista. Portanto, quando os aplicativos se movem para a nova infraestrutura de Programas Padrão, eles devem manter seu código padrão de aplicativo mais antigo para manter a compatibilidade com versões mais antigas do Windows. Um aplicativo deve executar uma verificação de versão do sistema operacional como parte de sua instalação para determinar qual código padrão do aplicativo deve ser executado.
 
-Para dar suporte a uma atualização do Windows XP para o Windows Vista ou posterior, os aplicativos devem adicionar todas as entradas de Registro necessárias para programas padrão mesmo quando eles estão sendo instalados em um computador que executa o Windows XP. O registro não terá nenhum efeito em um computador que esteja executando o Windows XP, mas se o computador for atualizado posteriormente, o aplicativo já estará registrado e poderá aproveitar a estrutura.
+Para dar suporte a uma atualização do Windows XP para o Windows Vista ou posterior, os aplicativos devem adicionar todas as entradas do Registro necessárias para Programas Padrão, mesmo quando eles estão sendo instalados em um computador que executa o Windows XP. O registro não terá efeito em um computador que executa o Windows XP, mas se o computador for atualizado posteriormente, o aplicativo já estará registrado e poderá aproveitar a estrutura.
 
-Para obter mais informações, consulte [**OSVersionInfo**](/windows/win32/api/winnt/ns-winnt-osversioninfoa).
+Para obter mais informações, consulte [**OSVERSIONINFO**](/windows/win32/api/winnt/ns-winnt-osversioninfoa).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
--   [Introdução às associações de arquivo](fa-intro.md)
--   [Como registrar um navegador da Internet ou cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
+-   [Introdução às associações de arquivos](fa-intro.md)
+-   [Como registrar um navegador da Internet ou um cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
 -   [Registrando um aplicativo em um esquema de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Práticas recomendadas para associações de arquivo](fa-best-practices.md)
+[Práticas recomendadas para associações de arquivos](fa-best-practices.md)
 </dt> <dt>
 
 [Cenário de exemplo de associação de arquivo](fa-sample-scenarios.md)
@@ -333,7 +333,7 @@ Para obter mais informações, consulte [**OSVersionInfo**](/windows/win32/api/w
 [Programas padrão](default-programs.md)
 </dt> <dt>
 
-[Trabalhando com definir acesso a programas e padrões do computador (SPAD)](cpl-setprogramaccess.md)
+[Trabalhando com definir o acesso ao programa e padrões de computador (SPAD)](cpl-setprogramaccess.md)
 </dt> </dl>
 
  
