@@ -1,6 +1,6 @@
 ---
-description: Método ShellFolderView. SelectItem – define o estado de seleção de um item na exibição.
-title: Método ShellFolderView. SelectItem (shldisp. h)
+description: Método ShellFolderView.SelectItem – define o estado de seleção de um item na exibição.
+title: Método ShellFolderView.SelectItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 91c39d4c-56c3-4c2b-93e8-9f782ca0aa93
-ms.openlocfilehash: c8cbff0da4da55d9621bfeb01f26c5ed62fe230a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ab0f65094f638c56df6a10434f9a404072278c55
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116744"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842547"
 ---
-# <a name="shellfolderviewselectitem-method"></a>Método ShellFolderView. SelectItem
+# <a name="shellfolderviewselectitem-method"></a>Método ShellFolderView.SelectItem
 
 Define o estado de seleção de um item na exibição.
 
@@ -40,19 +40,19 @@ ShellFolderView.SelectItem(
 
 <dl> <dt>
 
-*vItem* \[ no\]
+*vItem* \[ Em\]
 </dt> <dd>
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-O objeto [**FolderItem**](folderitem.md) para o qual o estado de seleção será definido.
+O [**objeto FolderItem**](folderitem.md) para o qual o estado de seleção será definido.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
 Um conjunto de sinalizadores que indicam o novo estado de seleção. Pode ser um ou mais dos valores a seguir.
 
@@ -98,7 +98,7 @@ Coloque o item no modo de edição.
 
 </dt> <dd>
 
-Anular seleção de todos, exceto o item especificado.
+Desmarque todos, menos o item especificado.
 
 </dd> <dt>
 
@@ -120,21 +120,21 @@ Verifique se o item é exibido na exibição.
 
 </dt> <dd>
 
-Dê o foco ao item.
+Dê ao item o foco.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-[**FocusedItem**](shellfolderview-focuseditem.md) só pode ser chamado no sistema local. Ele não funcionará quando for executado em uma página da Web por HTTP ou UNC.
+[**FocusedItem**](shellfolderview-focuseditem.md) só pode ser chamado no sistema local. Ele não funcionará quando executado em uma página da Web por HTTP ou UNC.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método no JScript inserido em HTML.
+O exemplo a seguir mostra o uso adequado desse método em JScript inserido em HTML.
 
 
 ```JScript

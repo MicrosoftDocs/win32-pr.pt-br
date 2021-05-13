@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3412a01b-d5ea-44e1-819c-f10f81fac391
-ms.openlocfilehash: aac648861f3bf9dc5ae8fdcc7173792e427b234f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf1a3b03eed2a15e82e1313875a4ab8584243190
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988768"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842777"
 ---
 # <a name="ishellfoldersearchablecallback-interface"></a>Interface IShellFolderSearchableCallback
 
@@ -26,7 +26,7 @@ Expõe rotinas de retorno de chamada para monitorar o processo de pesquisa.
 
 ## <a name="members"></a>Membros
 
-A interface **IShellFolderSearchableCallback** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IShellFolderSearchableCallback** também tem estes tipos de membros:
+A interface **IShellFolderSearchableCallback** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderSearchableCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -47,7 +47,7 @@ A interface **IShellFolderSearchableCallback** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Essa interface não está definida em nenhum arquivo de cabeçalho público. Se você optar por implementar essa interface, poderá usar o código C/C++ a seguir para declarar seus métodos.
+Essa interface não está definida em nenhum arquivo de header público. Se você optar por implementar essa interface, poderá usar o código C/C++ a seguir para declarar seus métodos.
 
 
 ```
@@ -55,12 +55,12 @@ Essa interface não está definida em nenhum arquivo de cabeçalho público. Se 
 #define INTERFACE IShellFolderSearchableCallback
 DECLARE_INTERFACE_IID_(IShellFolderSearchableCallback, IUnknown, "F98D8294-2BBC-11d2-8DBD-0000F87A556C")
 {
-    // **_ IUnknown methods _*_
-    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void _*ppv) PURE;
+    // *** IUnknown methods ***
+    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void **ppv) PURE;
     STDMETHOD_(ULONG,AddRef)  (THIS) PURE;
     STDMETHOD_(ULONG,Release) (THIS) PURE;
 
-    // **_ IShellFolderSearchableCallback Methods _**
+    // *** IShellFolderSearchableCallback Methods ***
 
     STDMETHOD(RunBegin)(THIS_ DWORD dwReserved) PURE;
     STDMETHOD(RunEnd)(THIS_ DWORD dwReserved) PURE;

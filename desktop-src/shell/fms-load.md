@@ -1,6 +1,6 @@
 ---
-description: Contém informações que o Gerenciador de arquivos usa para adicionar um menu personalizado fornecido por uma DLL de extensão do Gerenciador de arquivos. A estrutura também fornece um valor delta que a DLL de extensão pode usar para manipular o menu personalizado depois que o Gerenciador de arquivos tiver carregado o menu.
-title: Estrutura de FMS_LOAD (Wfext. h)
+description: Contém informações que o Gerenciador de Arquivos usa para adicionar um menu personalizado fornecido por uma DLL de extensão do Gerenciador de Arquivos. A estrutura também fornece um valor delta que a DLL de extensão pode usar para manipular o menu personalizado depois que o Gerenciador de Arquivos carregar o menu.
+title: FMS_LOAD estrutura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0e76bcc5-76c2-4ec0-8ddb-4042cb5ffa7d
-ms.openlocfilehash: 1745c4e34ac124e9990602350db6479ce287be8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efd1777704c775db84c7dabf54b9e06c81535fb4
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967284"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842187"
 ---
-# <a name="fms_load-structure"></a>Estrutura de carregamento do FMS \_
+# <a name="fms_load-structure"></a>Estrutura FMS \_ LOAD
 
-Contém informações que o Gerenciador de arquivos usa para adicionar um menu personalizado fornecido por uma DLL de extensão do Gerenciador de arquivos. A estrutura também fornece um valor delta que a DLL de extensão pode usar para manipular o menu personalizado depois que o Gerenciador de arquivos tiver carregado o menu.
+Contém informações que o Gerenciador de Arquivos usa para adicionar um menu personalizado fornecido por uma DLL de extensão do Gerenciador de Arquivos. A estrutura também fornece um valor delta que a DLL de extensão pode usar para manipular o menu personalizado depois que o Gerenciador de Arquivos carregar o menu.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ typedef struct _FMS_LOAD {
 
 <dl> <dt>
 
-**dwSize**
+**Dwsize**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -56,33 +56,33 @@ O comprimento, em bytes, da estrutura.
 **szMenuName**
 </dt> <dd>
 
-Tipo: **o \[ texto do menu TCHAR é \_ \_ Len \]**
+Tipo: **LEN DE TEXTO DO \[ MENU \_ \_ \] TCHAR**
 
 </dd> <dd>
 
-Um nome finalizado por nulo para um item de menu que aparece na barra de menus no Gerenciador de arquivos.
+Um nome terminado em nulo para um item de menu que aparece na barra de menus no Gerenciador de Arquivos.
 
 </dd> <dt>
 
-**hMenu**
+**Hmenu**
 </dt> <dd>
 
 Tipo: **HMENU**
 
 </dd> <dd>
 
-O identificador do menu pop-up adicionado à barra de menus no Gerenciador de arquivos.
+O identificador do menu pop-up adicionado à barra de menus no Gerenciador de Arquivos.
 
 </dd> <dt>
 
 **wMenuDelta**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-O valor delta do item de menu. Para evitar conflitos com seus próprios itens de menu, o Gerenciador de arquivos renumera os identificadores de item de menu no menu pop-up identificado pelo membro **HMENU** adicionando esse valor delta a cada identificador. Uma DLL de extensão que deve modificar um item de menu deve identificar o item adicionando o valor delta ao identificador do item de menu. O valor desse membro pode variar de uma sessão para uma sessão.
+O valor delta do item de menu. Para evitar conflitos com seus próprios itens de menu, o Gerenciador de Arquivos renumera os identificadores de item de menu no menu pop-up identificado pelo membro **hMenu** adicionando esse valor delta a cada identificador. Uma DLL de extensão que deve modificar um item de menu deve identificar o item adicionando o valor delta ao identificador do item de menu. O valor desse membro pode variar de uma sessão para uma sessão.
 
 </dd> </dl>
 

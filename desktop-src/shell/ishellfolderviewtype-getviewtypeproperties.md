@@ -1,6 +1,6 @@
 ---
 description: Obtém as propriedades da exibição.
-title: 'Método IShellFolderViewType:: GetViewTypeProperties'
+title: Método IShellFolderViewType::GetViewTypeProperties
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 82be6bd5-a46c-48b3-a1f0-a92b9454c35e
-ms.openlocfilehash: f4368edf6eae3e6892a3d81147401e061548f6e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5c7c6b75c89711a69ac578b3d04a72362b1eac9
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967494"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842697"
 ---
-# <a name="ishellfolderviewtypegetviewtypeproperties-method"></a>Método IShellFolderViewType:: GetViewTypeProperties
+# <a name="ishellfolderviewtypegetviewtypeproperties-method"></a>Método IShellFolderViewType::GetViewTypeProperties
 
 Obtém as propriedades da exibição.
 
@@ -40,43 +40,43 @@ HRESULT GetViewTypeProperties(
 
 <dl> <dt>
 
-*PIDL* \[ no\]
+*pidl* \[ Em\]
 </dt> <dd>
 
-Tipo: **PCUITEMID \_ filho**
+Tipo: **PCUITEMID \_ CHILD**
 
-UM PIDL.
+Um PIDL.
 
 </dd> <dt>
 
-*pdwFlags* \[ fora\]
+*pdwFlags* \[ out\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Um ponteiro para uma variável de inteiro sem sinal que recebe as propriedades da exibição, que indicam o que fazer quando a exibição é selecionada. Os sinalizadores podem ser qualquer combinação dos valores a seguir.
+Um ponteiro para uma variável de inteiro sem sinal que recebe as propriedades de exibição, que indicam o que fazer quando a exibição é selecionada. Os sinalizadores podem ser qualquer combinação dos valores a seguir.
 
 <dt>
 
 <span id="SFVTFLAG_NOTIFY_CREATE"></span><span id="sfvtflag_notify_create"></span>
 
-<span id="SFVTFLAG_NOTIFY_CREATE"></span><span id="sfvtflag_notify_create"></span>_ *SFVTFLAG \_ notificar \_ Create** (0x00000001)
+<span id="SFVTFLAG_NOTIFY_CREATE"></span><span id="sfvtflag_notify_create"></span>**SFVTFLAG \_ NOTIFY \_ CREATE** (0x00000001)
 
 
 </dt> <dd>
 
-Crie um item de exibição se não existir.
+Crie o item de exibição se não estiver lá.
 
 </dd> <dt>
 
 <span id="SFVTFLAG_NOTIFY_RESORT"></span><span id="sfvtflag_notify_resort"></span>
 
-<span id="SFVTFLAG_NOTIFY_RESORT"></span><span id="sfvtflag_notify_resort"></span>**SFVTFLAG \_ NOTIFICAr \_ Resort** (0x00000002)
+<span id="SFVTFLAG_NOTIFY_RESORT"></span><span id="sfvtflag_notify_resort"></span>**SFVTFLAG \_ NOTIFY \_ RESORT** (0x00000002)
 
 
 </dt> <dd>
 
-Reinsira PIDL e reclassifique.
+Reinserir o PIDL e classificar novamente.
 
 </dd> </dl> </dd> </dl>
 
@@ -84,7 +84,7 @@ Reinsira PIDL e reclassifique.
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

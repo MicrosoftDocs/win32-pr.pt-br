@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: ba4ace13-7096-4f05-bcb0-ab37f1632406
-ms.openlocfilehash: cc177316a850bbf5059cabf48362ab8d5cbe2466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be773ee68c214f6a2fab8da89f1f48b867e71239
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989113"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841937"
 ---
 # <a name="imultimonitordockingsitesetmonitor-method"></a>Método IMultiMonitorDockingSite:: setmonitor
 
@@ -43,9 +43,9 @@ HRESULT SetMonitor(
 *punkSrc* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Um ponteiro para o objeto que implementa a interface [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) para a qual o monitor está sendo alterado.
+Um ponteiro para o objeto que implementa a interface [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) para a qual o monitor está sendo alterado.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Um identificador para o monitor que substitui o monitor padrão existente.
 *phMonOld* \[ fora\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
 Quando essa função retorna, contém um ponteiro para a alça do monitor padrão anterior.
 
@@ -69,7 +69,7 @@ Quando essa função retorna, contém um ponteiro para a alça do monitor padrã
 
 ## <a name="return-value"></a>Retornar valor
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

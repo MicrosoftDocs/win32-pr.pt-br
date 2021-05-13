@@ -1,5 +1,5 @@
 ---
-description: Expõe métodos que permitem que uma pasta do Shell dê suporte a exibições diferentes em seu conteúdo (layouts hierárquicos diferentes de seus dados).
+description: Expõe métodos que habilitam uma pasta shell para dar suporte a diferentes exibições em seu conteúdo (layouts hierárquicos diferentes de seus dados).
 title: Interface IShellFolderViewType
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,20 +13,20 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9b597f6b-ef27-4fa1-ad00-e131dbd979e7
-ms.openlocfilehash: 1440b6d14950ad70d2c76168b28bb1077b19b5a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3ccb4073d59e0ebe9b840bd6f8f592f463e1e46
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011002"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842687"
 ---
 # <a name="ishellfolderviewtype-interface"></a>Interface IShellFolderViewType
 
-Expõe métodos que permitem que uma pasta do Shell dê suporte a exibições diferentes em seu conteúdo (layouts hierárquicos diferentes de seus dados).
+Expõe métodos que habilitam uma pasta shell para dar suporte a diferentes exibições em seu conteúdo (layouts hierárquicos diferentes de seus dados).
 
 ## <a name="members"></a>Membros
 
-A interface **IShellFolderViewType** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IShellFolderViewType** também tem estes tipos de membros:
+A interface **IShellFolderViewType** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderViewType** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -39,9 +39,9 @@ A interface **IShellFolderViewType** tem esses métodos.
 | Método                                                                      | Descrição                                                                                                                                                          |
 |:----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnumViews**](ishellfolderviewtype-enumviews.md)                         | Recupera um enumerador que retornará um PIDL para cada exibição estendida.<br/>                                                                                |
-| [**Getmodopadrãoname**](ishellfolderviewtype-getdefaultviewname.md)       | Obtém o nome da exibição padrão. Chame [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar os nomes das outras exibições.<br/> |
+| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtém o nome da exibição padrão. Chame [**IShellFolder::GetDisplayNameOf para**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) recuperar os nomes das outras exibições.<br/> |
 | [**GetViewTypeProperties**](ishellfolderviewtype-getviewtypeproperties.md) | Obtém as propriedades da exibição.<br/>                                                                                                                          |
-| [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstrói um PIDL de uma representação hierárquica da pasta do Shell em uma representação diferente.<br/>                                             |
+| [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstrói um PIDL de uma representação hierárquica da pasta Shell em uma representação diferente.<br/>                                             |
 
 
 
@@ -49,9 +49,9 @@ A interface **IShellFolderViewType** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse enumerador retorna PIDLs que são pastas ocultas especiais no nível superior da pasta do Shell, que não são enumeradas de outra forma. A exibição padrão é a que a pasta Shell exibe normalmente.
+Esse enumerador retorna PIDLs que são pastas ocultas especiais no nível superior da pasta Shell, que não são enumeradas de outra forma. A exibição padrão é aquela que a pasta Shell exibe normalmente.
 
-Essa interface não está definida em nenhum arquivo de cabeçalho público. Se você optar por implementar essa interface, poderá usar o código C/C++ a seguir para declarar seus métodos.
+Essa interface não está definida em nenhum arquivo de header público. Se você optar por implementar essa interface, poderá usar o código C/C++ a seguir para declarar seus métodos.
 
 
 ```
@@ -59,16 +59,16 @@ Essa interface não está definida em nenhum arquivo de cabeçalho público. Se 
 #define INTERFACE   IShellFolderViewType
 DECLARE_INTERFACE_IID_(IShellFolderViewType, IUnknown, "49422C1E-1C03-11d2-8DAB-0000F87A556C")
 {
-    // **_ IUnknown methods _*_
-    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void _*ppv) PURE;
+    // *** IUnknown methods ***
+    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void **ppv) PURE;
     STDMETHOD_(ULONG,AddRef)  (THIS) PURE;
     STDMETHOD_(ULONG,Release) (THIS) PURE;
 
-    // **_ IShellFolderViewType Methods _*_
+    // *** IShellFolderViewType Methods ***
 
     // EnumViews:
     //   Returns an enumerator which will give out one pidl for every extended view.
-    STDMETHOD(EnumViews)(THIS_ ULONG grfFlags, __out IEnumIDList _*ppenum) PURE;
+    STDMETHOD(EnumViews)(THIS_ ULONG grfFlags, __out IEnumIDList **ppenum) PURE;
 
     // GetDefaultViewName:
     //   Returns the name of the default view.  The names of the other views

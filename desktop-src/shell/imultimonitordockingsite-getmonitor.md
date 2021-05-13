@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 0bae75eb-ebd5-4de4-9249-0e9bb489f61f
-ms.openlocfilehash: 1260da5ee4404a7ec4597a57e7e3836d6f133426
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cd437fd6c0e842eb314db6c57420af6b54b05ff
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989049"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840637"
 ---
 # <a name="imultimonitordockingsitegetmonitor-method"></a>Método IMultiMonitorDockingSite:: getmonitor
 
@@ -42,16 +42,16 @@ HRESULT GetMonitor(
 *punkSrc* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Um ponteiro para o objeto que implementa a interface [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) para a qual o monitor está sendo solicitado.
+Um ponteiro para o objeto que implementa a interface [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) para a qual o monitor está sendo solicitado.
 
 </dd> <dt>
 
 *phMon* \[ fora\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
 Quando a função retorna, contém um ponteiro para a alça do monitor padrão.
 
@@ -59,7 +59,7 @@ Quando a função retorna, contém um ponteiro para a alça do monitor padrão.
 
 ## <a name="return-value"></a>Retornar valor
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

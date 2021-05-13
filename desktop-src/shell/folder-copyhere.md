@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 22bf1b4c-f242-4c52-b094-c5339bb35d02
-ms.openlocfilehash: ac616aa88cfb0ad6742c6037ec28e8b93ff1a4d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1466e5d01715c0c820cbc7cd9809c51e4963ec56
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988997"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842137"
 ---
 # <a name="foldercopyhere-method"></a>Método Folder. CopyHere
 
@@ -125,7 +125,7 @@ Execute a operação em arquivos somente se um nome de arquivo curinga ( \* . \*
 
 </dt> <dd>
 
-Exibir uma caixa de diálogo de progresso, mas não mostrar os nomes dos arquivos.
+Exibir uma caixa de diálogo de progresso, mas não mostrar os nomes de arquivo.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Exibir uma caixa de diálogo de progresso, mas não mostrar os nomes dos arquivo
 
 </dt> <dd>
 
-Não confirme a criação de um novo diretório se a operação exigir a criação de um.
+Não confirme a criação de um novo diretório se a operação exigir que um seja criado.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Não exibir uma interface do usuário se ocorrer um erro.
 
 </dt> <dd>
 
-[Versão 4,71.](versions.md) Não copie os atributos de segurança do arquivo.
+[Versão 4.71.](versions.md) Não copie os atributos de segurança do arquivo.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Não exibir uma interface do usuário se ocorrer um erro.
 
 </dt> <dd>
 
-Operar somente no diretório local. Não opere recursivamente em subdiretórios.
+Operar somente no diretório local. Não opere recursivamente em subdireários.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Operar somente no diretório local. Não opere recursivamente em subdiretórios.
 
 </dt> <dd>
 
-[Versão 5,0.](versions.md) Não copie os arquivos conectados como um grupo. Somente Copie os arquivos especificados.
+[Versão 5.0.](versions.md) Não copie arquivos conectados como um grupo. Copie apenas os arquivos especificados.
 
 </dd> </dl> </dd> </dl>
 

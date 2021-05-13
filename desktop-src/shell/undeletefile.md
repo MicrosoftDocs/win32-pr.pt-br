@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 456b053e-e83d-43af-9691-57e1d4fd3f8f
-ms.openlocfilehash: 3bed8995954cdfe05bcc8eea82dc47415033e205
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7549b521c241429f1c5c7edb7f83eadf25f5d37
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171545"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842417"
 ---
 # <a name="fm_undelete_proc-function-pointer"></a>\_ \_ Ponteiro da função proc de exclusão de FM
 
@@ -43,7 +43,7 @@ typedef DWORD ( APIENTRY *FM_UNDELETE_PROC)(
 *hwndOwner* 
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 O identificador de janela para o Gerenciador de arquivos. Uma DLL de exclusão deve usar esse identificador para especificar a janela do proprietário de qualquer caixa de diálogo ou caixa de mensagem que a DLL possa exibir.
 
@@ -66,7 +66,7 @@ Retorna um dos valores a seguir.
 
 
 
-| Código de retorno                                                                             | Description                                                        |
+| Código de retorno                                                                             | Descrição                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**-1**</dt> </dl>       | Ocorreu um erro.<br/>                                      |
 | <dl> <dt>**IDOK**</dt> </dl>     | Um arquivo não foi excluído. O Gerenciador de arquivos redesenha sua janela.<br/> |

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5b52b141-ced3-4d38-8584-7dfcfe12ab56
-ms.openlocfilehash: 8db899fc52cc3511d1af82013fc6c4c87544f1cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2c630ef36f6e4b2b58f3902c3d5728a31ad1f0d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967931"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842057"
 ---
 # <a name="folder2-object"></a>Objeto Pasta2
 
@@ -52,7 +52,7 @@ O objeto **Pasta2** tem essas propriedades.
 
 
 
-| Propriedade                                                                            | Tipo de acesso          | Description                                                               |
+| Propriedade                                                                            | Tipo de acesso          | Descrição                                                               |
 |:------------------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------|
 | [**HaveToShowWebViewBarricade**](folder2-havetoshowwebviewbarricade.md)<br/> | Somente leitura<br/> | Não há suporte no momento.<br/>                                       |
 | [**OfflineStatus**](folder2-offlinestatus.md)<br/>                           | Somente leitura<br/> | Contém o status offline da pasta.<br/>                     |
@@ -71,8 +71,8 @@ O objeto **Pasta2** tem essas propriedades.
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| INSERI<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

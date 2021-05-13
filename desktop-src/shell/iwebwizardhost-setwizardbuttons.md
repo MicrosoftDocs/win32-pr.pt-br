@@ -1,6 +1,6 @@
 ---
-description: Atualiza os botões voltar, avançar e concluir no quadro do assistente do cliente.
-title: Método WebWizardHost. SetWizardButtons (shldisp. h)
+description: Atualiza os botões Voltar, Próximo e Concluir no quadro do assistente do cliente.
+title: Método WebWizardHost.SetWizardButtons (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 863aa667-454c-40cd-8091-9bb456047b6c
-ms.openlocfilehash: 18af31eac1042e84a41e5651c517279869f03697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b2a79c7ea323c36371e08d3519e71e4c537935
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968075"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842617"
 ---
-# <a name="webwizardhostsetwizardbuttons-method"></a>Método WebWizardHost. SetWizardButtons
+# <a name="webwizardhostsetwizardbuttons-method"></a>Método WebWizardHost.SetWizardButtons
 
-Atualiza os botões **voltar**, **Avançar** e **concluir** no quadro do assistente do cliente.
+Atualiza os **botões Voltar,** **Próximo** **e** Concluir no quadro do assistente do cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,36 +41,36 @@ iRetVal = WebWizardHost.SetWizardButtons(
 
 <dl> <dt>
 
-*vbEnableBack* \[ no\]
+*vbEnableBack* \[ Em\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
-Habilita o botão **voltar** .
+Habilita o **botão** Voltar.
 
 </dd> <dt>
 
-*vbEnableNext* \[ no\]
+*vbEnableNext* \[ Em\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
 Habilita botão **Avançar**.
 
 </dd> <dt>
 
-*vbLastPage* \[ no\]
+*vbLastPage* \[ Em\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
-Habilita o botão **concluir** . Declara que esta é a última página do lado do servidor.
+Habilita o **botão** Concluir. Declara que esta é a última página do lado do servidor.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Certifique-se de implementar funções de manipulador em cada página do lado do servidor para onback () e OnNext (), correspondente aos botões do assistente de **volta** e **próximo**. As funções onback () e OnNext () respondem a **SetWizardButtons**. No momento apropriado, a função OnNext () chama **SetWizardButtons** com *vbLastPage* = **true**, que pode habilitar um botão **concluir** . OnNext () também chama [**FinalNext**](iwebwizardhost-finalnext.md) quando um usuário clica no botão **concluir** .
+Certifique-se de implementar funções de manipulador em cada página do lado do servidor para OnBack() e OnNext(), correspondentes aos botões do assistente **Voltar** e **Próximo.** As funções OnBack() e OnNext() respondem a **SetWizardButtons.** No momento apropriado, a função OnNext() chama **SetWizardButtons** com *vbLastPage* = **true,** que pode habilitar um **botão** Concluir. OnNext() também chama [**FinalNext**](iwebwizardhost-finalnext.md) quando um usuário clica no **botão** Concluir.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,9 +78,9 @@ Certifique-se de implementar funções de manipulador em cada página do lado do
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Somente \[ aplicativos da área de trabalho do Windows XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                   |
+| parâmetro<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
 
 

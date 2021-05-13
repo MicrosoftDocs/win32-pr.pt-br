@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 22f52e3f-875e-4dde-8875-3228639bc7f1
-ms.openlocfilehash: d7039f05a3c22aa3e3195bd1c3bd786d9fd4c164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 167fe7b48d68622b108aeb0caf0302c0cabce9f6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169439"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840627"
 ---
 # <a name="folderitemverb-object"></a>Objeto FolderItemVerb
 
@@ -51,10 +51,10 @@ O objeto **FolderItemVerb** tem essas propriedades.
 
 
 
-| Propriedade                                                     | Tipo de acesso          | Description                          |
+| Propriedade                                                     | Tipo de acesso          | Descrição                          |
 |:-------------------------------------------------------------|:---------------------|:-------------------------------------|
 | [**Aplicativo**](folderitemverb-application.md)<br/> | Somente leitura<br/> | Não implementado.<br/>          |
-| [**Name**](folderitemverb-name.md)<br/>               | Somente leitura<br/> | Contém o nome do verbo.<br/> |
+| [**Nome**](folderitemverb-name.md)<br/>               | Somente leitura<br/> | Contém o nome do verbo.<br/> |
 | [**Pai**](folderitemverb-parent.md)<br/>           | Somente leitura<br/> | Não implementado.<br/>          |
 
 

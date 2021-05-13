@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Winshfhc.dll
 ms.assetid: 33a5589a-201b-4d94-afbf-5965a39e2748
-ms.openlocfilehash: 96798e0bc64b39ae7f18d58b97fafafc9dc2508b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2def6cb5bc2ed59a98e9e513aba1b5b578cd8681
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968134"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841427"
 ---
 # <a name="estimatefilerisklevel-function"></a>Função EstimateFileRiskLevel
 
@@ -74,31 +74,31 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o caminh
 *pfrlEstimate* \[ fora\]
 </dt> <dd>
 
-Tipo: **\_ \_ nível \* de risco do arquivo* _
+Tipo: **FILE \_ RISK \_ LEVEL \***
 
-Quando essa função retorna com êxito, contém um ponteiro para um dos valores a seguir que estado o risco estimado.
+Quando essa função retorna com êxito, contém um ponteiro para um dos valores a seguir que afirmam o risco estimado.
 
 <dt>
 
 <span id="FRL_NO_OPINION"></span><span id="frl_no_opinion"></span>
 
-<span id="FRL_NO_OPINION"></span><span id="frl_no_opinion"></span>_ *FRL \_ nenhuma \_ opinião** (0)
+<span id="FRL_NO_OPINION"></span><span id="frl_no_opinion"></span>**FRL \_ NENHUMA \_ OPINIÃO** (0)
 
 
 </dt> <dd>
 
-O formato do arquivo não é identificado ou o manipulador não foi identificado. Informações insuficientes disponíveis para uma resposta significativa.
+O formato do arquivo não é identificado ou o manipulador não é identificado. Informações insuficientes disponíveis para uma resposta significativa.
 
 </dd> <dt>
 
 <span id="FRL_LOW"></span><span id="frl_low"></span>
 
-<span id="FRL_LOW"></span><span id="frl_low"></span>**FRL \_ BAIXO** (1)
+<span id="FRL_LOW"></span><span id="frl_low"></span>**FRL \_ LOW** (1)
 
 
 </dt> <dd>
 
-O formato do arquivo é completamente compreendido, o manipulador é conhecido e há alta confiança de que nenhum código estranho será executado.
+O formato do arquivo é completamente compreendido, o manipulador é conhecido e há alta confiança de que nenhum código não será executado.
 
 </dd> <dt>
 
@@ -109,29 +109,29 @@ O formato do arquivo é completamente compreendido, o manipulador é conhecido e
 
 </dt> <dd>
 
-O formato do arquivo é identificado, mas não é suficientemente compreendido para o rótulo como um risco alto ou baixo.
+O formato do arquivo é identificado, mas não é suficientemente compreendido para rotular como um risco alto ou baixo.
 
 </dd> <dt>
 
 <span id="FRL_HIGH"></span><span id="frl_high"></span>
 
-<span id="FRL_HIGH"></span><span id="frl_high"></span>**FRL \_ ALTA** (3)
+<span id="FRL_HIGH"></span><span id="frl_high"></span>**FRL \_ ALTO** (3)
 
 
 </dt> <dd>
 
-O formato de arquivo é compreendido e os fatores de risco elevado foram identificados.
+O formato do arquivo é compreendido e fatores de risco elevados foram identificados.
 
 </dd> <dt>
 
 <span id="FRL_BLOCK"></span><span id="frl_block"></span>
 
-<span id="FRL_BLOCK"></span><span id="frl_block"></span>**FRL \_ BLOCO** (4)
+<span id="FRL_BLOCK"></span><span id="frl_block"></span>**FRL \_ BLOCK** (4)
 
 
 </dt> <dd>
 
-O formato de arquivo é especificamente bloqueado para este manipulador.
+O formato de arquivo é bloqueado especificamente para esse manipulador.
 
 </dd> </dl> </dd> </dl>
 
@@ -139,11 +139,11 @@ O formato de arquivo é especificamente bloqueado para este manipulador.
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função não é declarada em um cabeçalho público ou está incluída em um arquivo de biblioteca. Para usá-lo, você deve carregá-lo diretamente do Winshfhc.dll pelo ordinal 101.
+Essa função não é declarada em um header público nem incluída em um arquivo de biblioteca. Para usá-lo, você deve carregá-lo diretamente Winshfhc.dll pelo ordinal 101.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -151,8 +151,8 @@ Essa função não é declarada em um cabeçalho público ou está incluída em 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                           |
+| Cliente mínimo com suporte<br/> | Windows XP somente com aplicativos da \[ área de trabalho SP2\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                           |
 | DLL<br/>                      | <dl> <dt>Winshfhc.dll (versão 5,1 ou posterior)</dt> </dl> |
 
 

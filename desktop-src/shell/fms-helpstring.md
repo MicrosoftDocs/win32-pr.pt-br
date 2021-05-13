@@ -1,6 +1,6 @@
 ---
-description: Contém informações que o Gerenciador de arquivos usa para adicionar uma cadeia de caracteres de ajuda para um menu ou item de comando de barra de ferramentas.
-title: Estrutura de FMS_HELPSTRING (Wfext. h)
+description: Contém informações que o Gerenciador de Arquivos usa para adicionar uma cadeia de caracteres de Ajuda para um menu ou item de comando da barra de ferramentas.
+title: FMS_HELPSTRING (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: b3ae7f86-5d58-47fa-87bd-e4e6a3541a93
-ms.openlocfilehash: c934409712ae740797eb3b5af0b55c50ff125342
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e9521df91619d108c7a03b6574926147fc2b04a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988998"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842207"
 ---
-# <a name="fms_helpstring-structure"></a>\_Estrutura HelpString do FMS
+# <a name="fms_helpstring-structure"></a>Estrutura HELPSTRING do FMS \_
 
-Contém informações que o Gerenciador de arquivos usa para adicionar uma cadeia de caracteres de ajuda para um menu ou item de comando de barra de ferramentas.
+Contém informações que o Gerenciador de Arquivos usa para adicionar uma cadeia de caracteres de Ajuda para um menu ou item de comando da barra de ferramentas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ typedef struct _FMS_HELPSTRING {
 **idCommand**
 </dt> <dd>
 
-Tipo: **int**
+Tipo: **INT**
 
 </dd> <dd>
 
@@ -52,7 +52,7 @@ O identificador do item de comando.
 
 </dd> <dt>
 
-**hMenu**
+**Hmenu**
 </dt> <dd>
 
 Tipo: **HMENU**
@@ -66,11 +66,11 @@ O identificador da barra de menus.
 **szHelp**
 </dt> <dd>
 
-Tipo: **\_ \_ WCHAR \_ t \[ 128 \]**
+Tipo: **\_ \_ wchar \_ t \[ 128 \]**
 
 </dd> <dd>
 
-A cadeia de caracteres terminada em nulo que recebe o texto de ajuda.
+A cadeia de caracteres terminada em nulo que recebe o texto da Ajuda.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ A cadeia de caracteres terminada em nulo que recebe o texto de ajuda.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

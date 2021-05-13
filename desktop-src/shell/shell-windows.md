@@ -1,6 +1,6 @@
 ---
-description: Método Shell. Windows – cria e retorna um objeto ShellWindows. Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.
-title: Método Shell. Windows (shldisp. h)
+description: Método Shell.Windows – cria e retorna um objeto ShellWindows. Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao Shell.
+title: Método Shell.Windows (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ffa6311c-8bbe-45c4-9b06-069779d2306d
-ms.openlocfilehash: d46e27781dc569b473615926509f51ed9d089af3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bbe8ed55865322fc7436959fd80b478baa3c0b40
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104064"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842607"
 ---
-# <a name="shellwindows-method"></a>Método Shell. Windows
+# <a name="shellwindows-method"></a>Método Shell.Windows
 
-Cria e retorna um objeto [**ShellWindows**](shellwindows.md) . Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.
+Cria e retorna um [**objeto ShellWindows.**](shellwindows.md) Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao Shell.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,25 +45,25 @@ Shell.Windows() As IDispatch
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 ### <a name="jscript"></a>JScript
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Uma referência de objeto para o objeto [**ShellWindows**](shellwindows.md) .
+Uma referência de objeto ao [**objeto ShellWindows.**](shellwindows.md)
 
 ### <a name="vb"></a>VB
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Uma referência de objeto para o objeto [**ShellWindows**](shellwindows.md) .
+Uma referência de objeto ao [**objeto ShellWindows.**](shellwindows.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o **Windows** para recuperar o objeto [**ShellWindows**](shellwindows.md) e exibir uma contagem do número de itens que ele contém. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa o Windows** para recuperar o objeto [**ShellWindows**](shellwindows.md) e exibir uma contagem do número de itens que ele contém. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -86,7 +86,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -138,11 +138,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

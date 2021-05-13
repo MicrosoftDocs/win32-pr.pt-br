@@ -1,6 +1,6 @@
 ---
-description: Define ou Obtém o limite de cota atual do usuário.
-title: Propriedade DIDiskQuotaUser. QuotaLimit
+description: Define ou obtém o limite de cota atual do usuário.
+title: Propriedade DIDiskQuotaUser.QuotaLimit
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 7eee1be7-8ad5-4796-910c-987fe3fd6338
-ms.openlocfilehash: 6c13c0d38c3c5f4387b7ee90165057edb111124a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1971871bdeb18e3c7dd4c7978152bbec276fa8b
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967318"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841627"
 ---
-# <a name="didiskquotauserquotalimit-property"></a>Propriedade DIDiskQuotaUser. QuotaLimit
+# <a name="didiskquotauserquotalimit-property"></a>Propriedade DIDiskQuotaUser.QuotaLimit
 
-Define ou Obtém o [**limite de cota**](diskquotacontrol-object.md)atual do usuário.
+Define ou obtém o limite de cota [**atual do usuário.**](diskquotacontrol-object.md)
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ DIDiskQuotaUser.QuotaLimit = iQuotaLimit
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor **inteiro** que especifica ou recebe o limite de cota atual do usuário, em bytes.
+Um **valor** inteiro que especifica ou recebe o limite de cota atual do usuário, em bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ Um valor **inteiro** que especifica ou recebe o limite de cota atual do usuário
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

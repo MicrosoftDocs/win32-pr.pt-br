@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9B429C03-7F80-45db-B8CD-58D19FAD2E61
-ms.openlocfilehash: 20c6cc9f0b3a2e2fde8f56311564d63bc1cc9c0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02fbead4b2d40a91ec6dab70f536d1ea3241ee84
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967531"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840887"
 ---
 # <a name="ishelldispatch-object"></a>Objeto IShellDispatch
 
@@ -74,38 +74,38 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="ishelldispatch-ejectpc.md"><strong>EjectPC</strong></a></td>
-<td style="text-align: left;">Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ejetar PC</strong>se o seu computador oferecer suporte a esse comando.<br/></td>
+<td style="text-align: left;">Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>ejetar PC</strong>se o computador dá suporte a esse comando.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="ishelldispatch-explore.md"><strong>Explorar</strong></a></td>
-<td style="text-align: left;">Abre uma pasta especificada em uma janela do Windows Explorer.<br/></td>
+<td style="text-align: left;">Abre uma pasta especificada em uma Windows Explorer de dados.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="ishelldispatch-filerun.md"><strong>FileRun</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>executar</strong> para o usuário.<br/></td>
+<td style="text-align: left;">Exibe a <strong>caixa de diálogo</strong> Executar para o usuário.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="ishelldispatch-findcomputer.md"><strong>FindComputer</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>resultados da pesquisa: computadores</strong> . A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Resultados da Pesquisa:</strong> Computadores. A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="ishelldispatch-findfiles.md"><strong>FindFiles</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>localizar: todos os arquivos</strong> . Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Pesquisar</strong>.<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Encontrar: Todos os</strong> Arquivos. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e, em seguida, selecionar <strong>Pesquisar</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="ishelldispatch-help.md"><strong>Ajuda</strong></a></td>
-<td style="text-align: left;">Exibe a janela de ajuda e suporte do Windows. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>ajuda e suporte</strong>.<br/></td>
+<td style="text-align: left;">Exibe a janela Ajuda e Suporte do Windows. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ajuda e Suporte.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="ishelldispatch-minimizeall.md"><strong>MinimizeAll</strong></a></td>
-<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>minimizar todas as janelas</strong> em sistemas mais antigos ou clicar no ícone <strong>Mostrar área de trabalho</strong> na barra de tarefas.<br/></td>
+<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do <strong></strong> mouse na barra de tarefas e selecionar Minimizar Todas as <strong>Janelas</strong> em sistemas mais antigos ou clicar no ícone Mostrar Área de Trabalho na barra de tarefas.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="ishelldispatch-namespace.md"><strong>NameSpace</strong></a></td>
-<td style="text-align: left;">Cria e retorna um objeto de <a href="folder.md"><strong>pasta</strong></a> para a pasta especificada.<br/></td>
+<td style="text-align: left;"><a href="ishelldispatch-namespace.md"><strong>Namespace</strong></a></td>
+<td style="text-align: left;">Cria e retorna um <a href="folder.md"><strong>objeto Folder</strong></a> para a pasta especificada.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="ishelldispatch-open.md"><strong>Abrir</strong></a></td>
+<td style="text-align: left;"><a href="ishelldispatch-open.md"><strong>Aberto</strong></a></td>
 <td style="text-align: left;">Abre a pasta especificada.<br/></td>
 </tr>
 <tr class="odd">
@@ -138,11 +138,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="ishelldispatch-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
-<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o estado em que estavam antes do último comando <a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a> . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>desfazer minimizar todas as janelas</strong> (em sistemas mais antigos) ou um segundo clique no ícone <strong>Mostrar área de trabalho</strong> na barra de tarefas.<br/></td>
+<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o estado em que estavam antes do último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra <strong></strong> de tarefas e selecionar Desfazer Minimizar Todas as <strong>Janelas</strong> (em sistemas mais antigos) ou um segundo clique do ícone Mostrar Área de Trabalho na barra de tarefas.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="ishelldispatch-windows.md"><strong>Windows</strong></a></td>
-<td style="text-align: left;">Cria e retorna um objeto <a href="shellwindows.md"><strong>ShellWindows</strong></a> . Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.<br/></td>
+<td style="text-align: left;">Cria e retorna um <a href="shellwindows.md"><strong>objeto ShellWindows.</strong></a> Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao Shell.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -153,11 +153,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **IShellDispatch** tem essas propriedades.
+O **objeto IShellDispatch** tem essas propriedades.
 
 
 
-| Propriedade                                                     | Tipo de acesso          | Description                                                                      |
+| Propriedade                                                     | Tipo de acesso          | Descrição                                                                      |
 |:-------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------|
 | [**Aplicativo**](ishelldispatch-application.md)<br/> | Somente leitura<br/> | Contém um objeto que representa um aplicativo.<br/>                    |
 | [**Pai**](ishelldispatch-parent.md)<br/>           | Somente leitura<br/> | Recupera um objeto que representa o pai do objeto atual.<br/> |
@@ -172,11 +172,11 @@ O objeto **IShellDispatch** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

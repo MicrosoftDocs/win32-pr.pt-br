@@ -1,5 +1,5 @@
 ---
-description: Libera o identificador associado à lista MRU (usados mais recentemente) e grava os dados armazenados em cache no registro.
+description: Libera o handle associado à lista de MRU (usados mais recentemente) e grava dados armazenados em cache no Registro.
 title: Função FreeMRUList
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: 51db9352-7188-4fb7-9c92-1d9579cd7250
-ms.openlocfilehash: 8140586d5f428a66f27a71ea665ae6761380e3a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d31d261629853c3b82b9d1564c5e8755e047570
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967925"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840617"
 ---
 # <a name="freemrulist-function"></a>Função FreeMRUList
 
-Libera o identificador associado à lista MRU (usados mais recentemente) e grava os dados armazenados em cache no registro.
+Libera o handle associado à lista de MRU (usados mais recentemente) e grava dados armazenados em cache no Registro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int FreeMRUList(
 
 <dl> <dt>
 
-*hMRU* \[ no\]
+*hMRU* \[ Em\]
 </dt> <dd>
 
-Tipo: **identificador**
+Tipo: **HANDLE**
 
-O identificador da lista MRU como livre.
+O alça da lista mru para liberar.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ O identificador da lista MRU como livre.
 
 Tipo: **int**
 
-Retorna um valor não negativo se for bem-sucedido,-1 caso contrário.
+Retornará um valor não negativo se for bem-sucedido; caso contrário, -1.
 
 ## <a name="remarks"></a>Comentários
 
-Se a lista MRU tiver sido criada usando o sinalizador **\_ CACHEWRITE MRU** , chamar **FreeMRUList** fará com que todas as alterações ainda não gravadas na versão da lista MRU armazenada no registro sejam gravadas neste momento.
+Se a lista mru foi criada usando o sinalizador **\_ MRU CACHEWRITE,** chamar **FreeMRUList** faz com que todas as alterações ainda não gravadas na versão da lista mru armazenada no registro sejam gravadas no momento.
 
-Essa função não está incluída em um cabeçalho ou biblioteca pública. Ele deve ser extraído de comctl32.dll pelo ordinal 152.
+Essa função não está incluída em um header ou biblioteca público. Ele deve ser extraído da comctl32.dll pelo ordinal 152.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Essa função não está incluída em um cabeçalho ou biblioteca pública. Ele 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: Coordenadas de textura geradas automaticamente (Direct3D 9)
-description: O sistema pode usar a posição de espaço da câmera transformada ou a normal de um vértice como coordenadas de textura, ou pode computar os três vetores de elemento usados para resolver um mapa de ambiente cúbico.
+description: O sistema pode usar a posição de espaço da câmera transformada ou o normal de um vértice como coordenadas de textura ou pode calcular os três vetores de elemento usados para abordar um mapa de ambiente cúbica.
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de8a6328df66296c0948c53be68109a9f5afbbb6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b01addbe354fb910ef68e1fc693e7dfffb1ceacf
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796234"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843287"
 ---
 # <a name="auto-generated-texture-coordinates-direct3d-9"></a>Coordenadas de textura geradas automaticamente (Direct3D 9)
 
-O sistema pode usar a posição de espaço da câmera transformada ou a normal de um vértice como coordenadas de textura, ou pode computar os três vetores de elemento usados para resolver um mapa de ambiente cúbico. Como as coordenadas de textura que você especifica explicitamente em um vértice, você pode usar coordenadas de textura geradas automaticamente como entrada para transformações de coordenadas de textura.
+O sistema pode usar a posição de espaço da câmera transformada ou o normal de um vértice como coordenadas de textura ou pode calcular os três vetores de elemento usados para abordar um mapa de ambiente cúbica. Assim como as coordenadas de textura especificadas explicitamente em um vértice, você pode usar coordenadas de textura geradas automaticamente como entrada para transformações de coordenadas de textura.
 
-As coordenadas de textura geradas automaticamente podem reduzir significativamente a largura de banda necessária para dados de geometria, eliminando a necessidade de coordenadas de textura explícitas no formato de vértice. Em muitos casos, as coordenadas de textura que o sistema gera podem ser usadas com transformações para produzir efeitos especiais. É claro que esse é um recurso de finalidade especial, e você usará coordenadas de textura explícitas para muitas ocasiões.
+As coordenadas de textura geradas automaticamente podem reduzir significativamente a largura de banda necessária para dados de geometria eliminando a necessidade de coordenadas de textura explícitas no formato de vértice. Em muitos casos, as coordenadas de textura que o sistema gera podem ser usadas com transformações para produzir efeitos especiais. É claro que esse é um recurso de finalidade especial e você usará coordenadas de textura explícitas para muitas ocasiões.
 
 ## <a name="configuring-automatically-generated-texture-coordinates"></a>Configurando coordenadas de textura geradas automaticamente
 
-Em C++, o estado de D3DTSS \_ TEXCOORDINDEX Texture-Stage (do tipo [**D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md) enumerated) controla como o sistema gera coordenadas de textura.
+No C++, o estado de estágio de textura DE TEXCOORDINDEX D3DTSS (do tipo \_ enumerado [**D3DTEXTURESTAGESTATETYPE)**](./d3dtexturestagestatetype.md) controla como o sistema gera coordenadas de textura.
 
-Normalmente, esse estado instrui o sistema a usar um determinado conjunto de coordenadas de textura codificadas no formato de vértice. Quando você inclui os \_ sinalizadores D3DTSS TCI \_ CAMERASPACENORMAL, D3DTSS \_ TCI \_ CAMERASPACEPOSITION ou D3DTSS TCI CAMERASPACEREFLECTIONVECTOR \_ \_ no valor que você atribui a esse Estado, o comportamento do sistema é bastante diferente. Se qualquer um desses sinalizadores estiver presente, o estágio de textura ignorará as coordenadas de textura dentro do formato de vértice em favor das coordenadas que o sistema gera. Os significados para cada sinalizador são mostrados na lista a seguir.
+Normalmente, esse estado instrui o sistema a usar um conjunto específico de coordenadas de textura codificadas no formato de vértice. Quando você inclui os sinalizadores \_ \_ CAMERASPACENORMAL, D3DTSS \_ TCI \_ CAMERASPACEPOSITION ou D3DTSS \_ \_ TCI CAMERASPACEREFLECTIONVECTOR no valor que você atribui a esse estado, o comportamento do sistema é bastante diferente. Se qualquer um desses sinalizadores estiver presente, o estágio de textura ignorará as coordenadas de textura dentro do formato de vértice em favor das coordenadas que o sistema gera. Os significados de cada sinalizador são mostrados na lista a seguir.
 
 -   D3DTSS \_ TCI \_ CAMERASPACENORMAL
 

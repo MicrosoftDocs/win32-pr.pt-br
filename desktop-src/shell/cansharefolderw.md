@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ntshrui.dll
 ms.assetid: 5fd28a14-53e7-4016-9c49-9bb14ce7808b
-ms.openlocfilehash: cf7d0feb31666f3a918c0307a0b0983bff246fea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46df03208ecc468aac366fb0b4cfb33e1a68157e
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501439"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841677"
 ---
 # <a name="cansharefolderw-function"></a>Função CanShareFolderW
 
@@ -59,7 +59,7 @@ Os valores de retorno incluem o seguinte.
 
 
 
-| Código/valor de retorno                                                                        | Description                                                                           |
+| Código/valor de retorno                                                                        | Descrição                                                                           |
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>     | O caminho apontado por *pszPath* especifica uma pasta que pode ser compartilhada.<br/>    |
 | <dl> <dt>**\_falso**</dt> </dl>  | O caminho apontado por *pszPath* especifica uma pasta que não pode ser compartilhada.<br/> |
@@ -80,7 +80,7 @@ Esta função não tem nenhum arquivo. lib associado. Você deve usar [**LoadLib
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Ntshrui.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CanShareFolderW** (Unicode)<br/>                                               |
 

@@ -1,6 +1,6 @@
 ---
-description: Método Shell. BrowseForFolder – cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de pasta da pasta selecionada.
-title: Método Shell. BrowseForFolder (shldisp. h)
+description: Método Shell.BrowseForFolder – cria uma caixa de diálogo que permite que o usuário selecione uma pasta e, em seguida, retorne o objeto Pasta da pasta selecionada.
+title: Método Shell.BrowseForFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4cc44e5a-3578-448b-9b19-1b71e1ae2cb9
-ms.openlocfilehash: e5ec05ab09c7592e976085c230a2b359091fb819
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26677173cce2b72d1a0ba6bdc941cd2407908712
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104364"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841807"
 ---
-# <a name="shellbrowseforfolder-method"></a>Método Shell. BrowseForFolder
+# <a name="shellbrowseforfolder-method"></a>Método Shell.BrowseForFolder
 
-Cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de [**pasta**](folder.md) da pasta selecionada.
+Cria uma caixa de diálogo que permite que o usuário selecione uma pasta e, em seguida, retorne o objeto [**Pasta da**](folder.md) pasta selecionada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,43 +55,43 @@ Shell.BrowseForFolder( _
 
 <dl> <dt>
 
-*HWND* \[ no\]
+*Hwnd* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
-O identificador para a janela pai da caixa de diálogo. Esse valor pode ser zero.
+O alça para a janela pai da caixa de diálogo. Esse valor pode ser zero.
 
 </dd> <dt>
 
-*sTitle* \[ no\]
+*sTitle* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que representa o título exibido dentro da caixa de diálogo de **procura** .
+Um **valor string** que representa o título exibido dentro da caixa de **diálogo** Procurar.
 
 </dd> <dt>
 
-*iOptions* \[ no\]
+*iOptions* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
-Um valor **inteiro** que contém as opções para o método. Isso pode ser zero ou uma combinação dos valores listados no membro **ulFlags** da estrutura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) .
+Um **valor** Inteiro que contém as opções para o método . Isso pode ser zero ou uma combinação dos valores listados sob o **membro ulFlags** da [**estrutura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
-*vRootFolder* \[ em, opcional\]
+*vRootFolder* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais para cima na árvore do que essa pasta. Se esse valor não for especificado, a pasta raiz usada na caixa de diálogo será a área de trabalho. Esse valor pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Observe que os nomes de constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis em Visual Basic, mas não em VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
+A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais alto na árvore do que essa pasta. Se esse valor não for especificado, a pasta raiz usada na caixa de diálogo será a área de trabalho. Esse valor pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos [**valores ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Observe que os nomes de constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis em Visual Basic, mas não em VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 ### <a name="jscript"></a>JScript
 

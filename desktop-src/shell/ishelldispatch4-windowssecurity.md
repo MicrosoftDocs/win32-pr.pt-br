@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 2d7e8cfbd1e7a2a2392b78487c6a58b62de6df6a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6eadb580c73e5e56592c94e997bdc22c2cf894b4
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116804"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843017"
 ---
 # <a name="ishelldispatch4windowssecurity-method"></a>Método IShellDispatch4. WindowsSecurity
 
@@ -45,7 +45,7 @@ IShellDispatch4.WindowsSecurity()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 ### <a name="jscript"></a>JScript
 

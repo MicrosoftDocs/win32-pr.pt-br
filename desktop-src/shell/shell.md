@@ -1,5 +1,5 @@
 ---
-description: Representa os objetos no Shell. Os métodos são fornecidos para controlar o Shell e executar comandos no Shell. Também há métodos para obter outros objetos relacionados ao shell.
+description: Representa os objetos no Shell. Métodos são fornecidos para controlar o Shell e para executar comandos dentro do Shell. Também há métodos para obter outros objetos relacionados ao Shell.
 title: 'Objeto shell (Shldisp.h) '
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,27 +13,27 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 75fc151e-5b9e-476b-b4e5-b848917357a8
-ms.openlocfilehash: 3e891278d98ca2eb51fca11054cba01947e03c09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55f8062b71e553ec5ceefa413b45f439874744b8
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829702"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841757"
 ---
-# <a name="shell-object"></a>Objeto Shell
+# <a name="shell-object"></a>Objeto shell
 
-Representa os objetos no Shell. Os métodos são fornecidos para controlar o Shell e executar comandos no Shell. Também há métodos para obter outros objetos relacionados ao shell.
+Representa os objetos no Shell. Métodos são fornecidos para controlar o Shell e para executar comandos dentro do Shell. Também há métodos para obter outros objetos relacionados ao Shell.
 
 ## <a name="members"></a>Membros
 
-O objeto **shell** tem estes tipos de membros:
+O **objeto Shell** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **shell** tem esses métodos.
+O **objeto** Shell tem esses métodos.
 
 
 
@@ -51,11 +51,11 @@ O objeto **shell** tem esses métodos.
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-addtorecent"><strong>AddToRecent</strong></a></td>
-<td style="text-align: left;">Adiciona um arquivo à lista MRU (usada mais recentemente).<br/></td>
+<td style="text-align: left;">Adiciona um arquivo à lista de MRU (usados mais recentemente).<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-browseforfolder.md"><strong>BrowseForFolder</strong></a></td>
-<td style="text-align: left;">Cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de <a href="folder.md"><strong>pasta</strong></a> da pasta selecionada.<br/></td>
+<td style="text-align: left;">Cria uma caixa de diálogo que permite que o usuário selecione uma pasta e, em seguida, retorne o objeto <a href="folder.md"><strong>Pasta da</strong></a> pasta selecionada.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-canstartstopservice"><strong>CanStartStopService</strong></a></td>
@@ -63,11 +63,11 @@ O objeto **shell** tem esses métodos.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-cascadewindows.md"><strong>CascadeWindows</strong></a></td>
-<td style="text-align: left;">Propaga todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>janelas em cascata</strong>.<br/></td>
+<td style="text-align: left;">Em cascata todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Cascata do Windows.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-controlpanelitem.md"><strong>ControlPanelItem</strong></a></td>
-<td style="text-align: left;">Executa o aplicativo do painel de controle (*. cpl) especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução. <br/>
+<td style="text-align: left;">Executa o aplicativo Painel de Controle (*.cpl) especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução. <br/>
 <blockquote>
 <p>[!Note]<br />
 A partir do Windows Vista, a maioria dos aplicativos do painel de controle são itens do Shell e não pode ser aberta com essa função. Para abrir esses aplicativos do painel de controle, passe o nome canônico para control.exe. Por exemplo:</p>
@@ -80,7 +80,7 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 <td style="text-align: left;">Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ejetar PC</strong>se o seu computador oferecer suporte a esse comando.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-explore.md"><strong>Explorar</strong></a></td>
+<td style="text-align: left;"><a href="shell-explore.md"><strong>Apresenta</strong></a></td>
 <td style="text-align: left;">Abre uma pasta especificada em uma janela do Windows Explorer.<br/></td>
 </tr>
 <tr class="even">
@@ -101,11 +101,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-findprinter"><strong>FindPrinter</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>Localizar impressora</strong> .<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo</strong> Encontrar Impressora.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/shell/shell-getsetting"><strong>GetDefinition</strong></a></td>
-<td style="text-align: left;">Recupera uma configuração de shell global.<br/></td>
+<td style="text-align: left;"><a href="/windows/desktop/shell/shell-getsetting"><strong>Getsetting</strong></a></td>
+<td style="text-align: left;">Recupera uma configuração de Shell global.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-getsysteminformation"><strong>GetSystemInformation</strong></a></td>
@@ -113,11 +113,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-help.md"><strong>Ajuda</strong></a></td>
-<td style="text-align: left;">Exibe o centro de ajuda e suporte do Windows. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>ajuda e suporte</strong>.<br/></td>
+<td style="text-align: left;">Exibe o windows Centro de Ajuda e Suporte. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ajuda e Suporte.</strong><br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/shell/shell-isrestricted"><strong>IsRestricted</strong></a></td>
-<td style="text-align: left;">Recupera a configuração de restrição de um grupo do registro.<br/></td>
+<td style="text-align: left;"><a href="/windows/desktop/shell/shell-isrestricted"><strong>Isrestricted</strong></a></td>
+<td style="text-align: left;">Recupera a configuração de restrição de um grupo do Registro.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-isservicerunning"><strong>IsServiceRunning</strong></a></td>
@@ -125,19 +125,19 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a></td>
-<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>minimizar todas as janelas</strong> em sistemas mais antigos ou clicar no ícone <strong>Mostrar área de trabalho</strong> na área início rápido da barra de tarefas no Windows 2000 ou no Windows XP.<br/></td>
+<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do <strong></strong> mouse na barra de tarefas e selecionar Minimizar Todas as <strong>Janelas</strong> em sistemas mais antigos ou clicar no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou no Windows XP.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-namespace.md"><strong>NameSpace</strong></a></td>
-<td style="text-align: left;">Cria e retorna um objeto de <a href="folder.md"><strong>pasta</strong></a> para a pasta especificada.<br/></td>
+<td style="text-align: left;"><a href="shell-namespace.md"><strong>Namespace</strong></a></td>
+<td style="text-align: left;">Cria e retorna um <a href="folder.md"><strong>objeto Folder</strong></a> para a pasta especificada.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="shell-open.md"><strong>Abrir</strong></a></td>
+<td style="text-align: left;"><a href="shell-open.md"><strong>Aberto</strong></a></td>
 <td style="text-align: left;">Abre a pasta especificada.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-refreshmenu.md"><strong>RefreshMenu</strong></a></td>
-<td style="text-align: left;">Atualiza o conteúdo do menu <strong>Iniciar</strong> . Usado apenas com sistemas anteriores ao Windows XP.<br/></td>
+<td style="text-align: left;">Atualiza o conteúdo <strong>do</strong> menu Iniciar. Usado apenas com sistemas anteriores ao Windows XP.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-searchcommand.md"><strong>SearchCommand</strong></a></td>
@@ -177,31 +177,31 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-tilevertically.md"><strong>TileVertically</strong></a></td>
-<td style="text-align: left;">Organiza todas as janelas na área de trabalho verticalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>janelas de peças verticalmente</strong>.<br/></td>
+<td style="text-align: left;">Lado a lado todas as janelas na área de trabalho verticalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Janelas lado a lado verticalmente.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-toggledesktop.md"><strong>ToggleDesktop</strong></a></td>
 <td style="text-align: left;">Exibe ou oculta a área de trabalho.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-trayproperties.md"><strong>Bandejaproperties</strong></a></td>
-<td style="text-align: left;">Exibe a <strong>barra de tarefas e a caixa de diálogo Propriedades do menu iniciar</strong> . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Propriedades</strong>.<br/></td>
+<td style="text-align: left;"><a href="shell-trayproperties.md"><strong>TrayProperties</strong></a></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Propriedades da Barra de Tarefas e Iniciar Menu.</strong> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Propriedades</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
-<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último comando <a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a> . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>desfazer minimizar todas as janelas</strong> em sistemas mais antigos ou um segundo clique no ícone <strong>Mostrar área de trabalho</strong> na área início rápido da barra de tarefas no Windows 2000 ou no Windows XP.<br/></td>
+<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na <strong></strong> barra de tarefas e selecionar Desfazer Minimizar Todas as <strong>Janelas</strong> em sistemas mais antigos ou um segundo clique no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou No Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-windows.md"><strong>Windows</strong></a></td>
-<td style="text-align: left;">Cria e retorna um objeto <a href="shellwindows.md"><strong>ShellWindows</strong></a> . Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao shell.<br/></td>
+<td style="text-align: left;">Cria e retorna um <a href="shellwindows.md"><strong>objeto ShellWindows.</strong></a> Esse objeto representa uma coleção de todas as janelas abertas que pertencem ao Shell.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-windowssecurity.md"><strong>WindowsSecurity</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>segurança do Windows</strong> .<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>Segurança do Windows</strong> caixa de diálogo.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-windowswitcher.md"><strong>WindowSwitcher</strong></a></td>
-<td style="text-align: left;">Exibe as janelas abertas em uma pilha 3D que você pode percorrer.<br/></td>
+<td style="text-align: left;"><a href="shell-windowswitcher.md"><strong>WindowScher</strong></a></td>
+<td style="text-align: left;">Exibe as janelas abertas em uma pilha 3D que você pode inverter.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -212,13 +212,13 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **shell** tem essas propriedades.
+O **objeto Shell** tem essas propriedades.
 
 
 
-| Propriedade                                            | Tipo de acesso          | Description                                                                 |
+| Propriedade                                            | Tipo de acesso          | Descrição                                                                 |
 |:----------------------------------------------------|:---------------------|:----------------------------------------------------------------------------|
-| [**Aplicativo**](shell-application.md)<br/> | Somente leitura<br/> | Contém o objeto de aplicativo do objeto.<br/>                        |
+| [**Aplicativo**](shell-application.md)<br/> | Somente leitura<br/> | Contém o objeto Application do objeto .<br/>                        |
 | [**Pai**](shell-parent.md)<br/>           | Somente leitura<br/> | Obtém um objeto que representa o pai do objeto atual.<br/> |
 
 

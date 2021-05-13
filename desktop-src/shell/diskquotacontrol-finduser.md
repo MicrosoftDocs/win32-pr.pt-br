@@ -1,6 +1,6 @@
 ---
 description: Localiza a entrada de um usuário, por nome, no arquivo de cota do volume.
-title: Método DiskQuotaControl. FindUser
+title: Método DiskQuotaControl.FindUser
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: e5767d28-4c0a-49bc-a1d3-ba809411456d
-ms.openlocfilehash: af1bc9c0398d37f04e47515a2b85cb4520795b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eab539a5ec5a360ae28fc87d5ffbb9dd4f9f1cc8
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967309"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841517"
 ---
-# <a name="diskquotacontrolfinduser-method"></a>Método DiskQuotaControl. FindUser
+# <a name="diskquotacontrolfinduser-method"></a>Método DiskQuotaControl.FindUser
 
 Localiza a entrada de um usuário, por nome, no arquivo de cota do volume.
 
@@ -42,7 +42,7 @@ DiskQuotaControl.FindUser(
 *sLogonName* 
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: Cadeia **de caracteres**
 
 Um valor de cadeia de caracteres que contém o nome de logon do usuário.
 
@@ -50,13 +50,13 @@ Um valor de cadeia de caracteres que contém o nome de logon do usuário.
 
 ## <a name="return-value"></a>Retornar valor
 
-Retorna uma expressão de objeto que é avaliada como o objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) do usuário.
+Retorna uma expressão de objeto que é avaliada para o objeto [**DIDiskQuotaUser do**](didiskquotauser-object.md) usuário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método retorna um objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) , mesmo se não houver nenhuma entrada para o usuário no arquivo de cota. O objeto de usuário retornado tem limite de aviso e limites de cota rígido definidos para os valores padrão do volume.
+Esse método retorna um [**objeto DIDiskQuotaUser**](didiskquotauser-object.md) mesmo que não haja nenhuma entrada para o usuário no arquivo de cota. O objeto de usuário retornado tem limite de aviso e limites de cota rígido definidos para os valores padrão do volume.
 
-A cadeia de caracteres retornada de [**TranslateLogonNameToSID**](diskquotacontrol-translatelogonnametosid.md) pode ser passada no lugar do parâmetro *sLogonName* . Quando o **FindUser** recebe uma cadeia de caracteres Sid, ele usa o Sid correspondente para a pesquisa direta do registro de cota do usuário no volume. Isso ignora o cache de nome SID. Nos casos em que **FindUser** falha devido a uma incompatibilidade no formato (por exemplo, compatível com Sam e UPN) do nome de logon fornecido e o nome de logon armazenado em cache, o nome de logon pode ser convertido em uma cadeia de caracteres de Sid usando **TranslateLogonNameToSID** , então passado novamente para **FindUser**. O código VBScript a seguir ilustra essa técnica.
+A cadeia de [**caracteres retornada de TranslateLogonNameToSID**](diskquotacontrol-translatelogonnametosid.md) pode ser passada no lugar do *parâmetro sLogonName.* Quando **FindUser recebe** uma cadeia de caracteres SID, ele usa o SID correspondente para a busca direta do registro de cota do usuário no volume. Isso ignora o cache de nome SID. Nos casos em que **FindUser** falha devido a uma incompatibilidade no formato (por exemplo, compatível com SAM e UPN) do nome de logon fornecido e o nome de logon armazenado em cache, o nome de logon pode ser convertido em uma cadeia de caracteres SID usando **TranslateLogonNameToSID** e passado novamente para **FindUser**. O código VBScript a seguir ilustra essa técnica.
 
 
 ```
@@ -82,7 +82,7 @@ End Function
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

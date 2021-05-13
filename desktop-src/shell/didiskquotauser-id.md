@@ -1,6 +1,6 @@
 ---
 description: Obtém uma ID que identifica exclusivamente o usuário.
-title: Propriedade DIDiskQuotaUser.ID
+title: DIDiskQuotaUser.ID propriedade
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5cf2610e-fbd2-4e87-a323-f024283db546
-ms.openlocfilehash: 8e699eeab552e8020f2875799fe3280036957733
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 389c07325f4e504424c43b0983eaa643ea608008
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967323"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841608"
 ---
-# <a name="didiskquotauserid-property"></a>Propriedade DIDiskQuotaUser.ID
+# <a name="didiskquotauserid-property"></a>DIDiskQuotaUser.ID propriedade
 
 Obtém uma ID que identifica exclusivamente o usuário.
 
@@ -37,11 +37,11 @@ iID = DIDiskQuotaUser.ID
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor **inteiro** que identifica exclusivamente o objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) do usuário dentro de um processo [**DiskQuotaControl**](diskquotacontrol-object.md) específico.
+Um **valor** inteiro que identifica exclusivamente o objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) do usuário dentro de um processo [**DiskQuotaControl**](diskquotacontrol-object.md) específico.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade destina-se a uso por idiomas como o Microsoft Visual Basic que não dão suporte a ponteiros.
+Essa propriedade destina-se ao uso por linguagens como Microsoft Visual Basic que não têm suporte para ponteiros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Essa propriedade destina-se a uso por idiomas como o Microsoft Visual Basic que 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 
