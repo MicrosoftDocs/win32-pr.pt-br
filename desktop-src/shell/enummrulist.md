@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: 630e5f27-96bf-4e88-b01a-127b301cc051
-ms.openlocfilehash: 6b6e9588588e44a2c3b40f6ac012b11f21c875e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e6e4bd0820d35fec2a108a81eb1030567493e6a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829704"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843157"
 ---
 # <a name="enummrulistw-function"></a>Função EnumMRUListW
 
@@ -66,18 +66,18 @@ O item a ser retornado. Se esse valor for menor que 0, a função retornará o n
 *lpData* \[ fora\]
 </dt> <dd>
 
-Tipo: **void \** _
+Tipo: **void \***
 
-Um ponteiro para um buffer que recebe o item solicitado em _nItem *. Se *nItem* for menor que 0, o conteúdo desse buffer não será alterado.
+Um ponteiro para um buffer que recebe o item solicitado em *nItem*. Se *nItem* for menor que 0, o conteúdo desse buffer não será alterado.
 
 </dd> <dt>
 
 *uLen* \[ no\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O tamanho do buffer, incluindo o caractere nulo de terminação. Se a lista MRU foi criada com o **sinalizador \_ binário MRU** , esse é o tamanho em bytes. Caso contrário, é o tamanho em caracteres.
+O tamanho do buffer, incluindo o caractere nulo de terminação. Se a lista MRU tiver sido criada com o sinalizador **\_ BINARY do MRU,** esse será o tamanho em bytes. Caso contrário, será o tamanho em caracteres.
 
 </dd> </dl>
 
@@ -88,12 +88,12 @@ Tipo: **int**
 Retorna um dos valores a seguir.
 
 -   Retorna o número de itens na enumeração, se *nItem* for menor que 0.
--   Retornará-1 se ocorrer um erro.
--   Caso contrário, retorna o tamanho da cadeia de caracteres retornada em *lpData*, incluindo o caractere nulo de terminação. Se a lista MRU foi criada com o **sinalizador \_ binário MRU** , esse é o tamanho em bytes. Caso contrário, é o tamanho em caracteres.
+-   Retornará -1 se ocorrer um erro.
+-   Caso contrário, retornará o tamanho da cadeia de caracteres retornada em *lpData*, incluindo o caractere nulo de terminação. Se a lista MRU tiver sido criada com o sinalizador **\_ BINARY do MRU,** esse será o tamanho em bytes. Caso contrário, será o tamanho em caracteres.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função não está incluída em um cabeçalho ou biblioteca pública. Ele pode ser acessado por meio de [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) ou extraído de comctl32.dll por seu ordinal, que é 403 para **EnumMRUListW**.
+Essa função não está incluída em um header ou biblioteca público. Ele pode ser acessado por [**meio de GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) ou extraído do comctl32.dll por seu ordinal, que é 403 para **EnumMRUListW**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,7 +103,7 @@ Essa função não está incluída em um cabeçalho ou biblioteca pública. Ele 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 5.0 ou posterior)</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **EnumMRUListW** (Unicode)<br/>                                                                          |
 
 

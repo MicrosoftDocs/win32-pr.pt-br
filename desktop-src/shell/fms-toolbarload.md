@@ -1,6 +1,6 @@
 ---
-description: Contém informações sobre os botões personalizados a serem adicionados à barra de ferramentas do Gerenciador de arquivos. Os botões são fornecidos por uma DLL de extensão do Gerenciador de arquivos.
-title: Estrutura de FMS_TOOLBARLOAD (Wfext. h)
+description: Contém informações sobre botões personalizados a serem adicionados à barra de ferramentas do Gerenciador de Arquivos. Os botões são fornecidos por uma DLL de extensão do Gerenciador de Arquivos.
+title: FMS_TOOLBARLOAD (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 7185f9e5-10c6-43cc-b85b-cd077378338f
-ms.openlocfilehash: 8e123c759a827adddf5fd00eaf33193ebca0dbf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a993312b9e365561018459c43dab87afbd3c2b2
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967936"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842157"
 ---
-# <a name="fms_toolbarload-structure"></a>\_Estrutura TOOLBARLOAD do FMS
+# <a name="fms_toolbarload-structure"></a>Estrutura FMS \_ TOOLBARLOAD
 
-Contém informações sobre os botões personalizados a serem adicionados à barra de ferramentas do Gerenciador de arquivos. Os botões são fornecidos por uma DLL de extensão do Gerenciador de arquivos.
+Contém informações sobre botões personalizados a serem adicionados à barra de ferramentas do Gerenciador de Arquivos. Os botões são fornecidos por uma DLL de extensão do Gerenciador de Arquivos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,47 +44,47 @@ typedef struct _FMS_TOOLBARLOAD {
 
 <dl> <dt>
 
-**dwSize**
+**Dwsize**
 </dt> <dd>
 
 Tipo: **DWORD**
 
 </dd> <dd>
 
-O tamanho, em bytes, da estrutura. O Gerenciador de arquivos define o tamanho antes de chamar a extensão e verifica o tamanho após o retorno do procedimento de extensão.
+O tamanho, em bytes, da estrutura. O Gerenciador de Arquivos define o tamanho antes de chamar a extensão e verifica o tamanho após o retorno do procedimento de extensão.
 
 </dd> <dt>
 
 **lpButtons**
 </dt> <dd>
 
-Tipo: **\_ botão LPEXT**
+Tipo: **LPEXT \_ BUTTON**
 
 </dd> <dd>
 
-O endereço de uma matriz de estruturas de [**\_ botão de ext**](ext-button.md) .
+O endereço de uma matriz de [**estruturas EXT \_ BUTTON.**](ext-button.md)
 
 </dd> <dt>
 
 **cButtons**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O número de estruturas de [**\_ botão de ext**](ext-button.md) na matriz apontadas pelo membro **lpButtons** . Esse número é igual ao número de botões e separadores a serem adicionados à barra de ferramentas.
+O número de [**estruturas EXT \_ BUTTON**](ext-button.md) na matriz apontada pelo **membro lpButtons.** Esse número é igual ao número de botões e separadores a adicionar à barra de ferramentas.
 
 </dd> <dt>
 
 **cBitmaps**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O número de botões representados pelo bitmap fornecido.
+O número de botões representados pelo bitmap determinado.
 
 </dd> <dt>
 

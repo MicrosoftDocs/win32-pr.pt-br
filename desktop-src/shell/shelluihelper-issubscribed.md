@@ -1,6 +1,6 @@
 ---
-description: Indica se uma URL especificada é assinada.
-title: Método ShellUIHelper. issubscribeed (exdisp. h)
+description: Indica se uma URL especificada está inscreveda.
+title: Método ShellUIHelper.IsSubscribed (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: fcf23352-6603-4b17-9c3b-b353cca1c003
-ms.openlocfilehash: 2085f38e5f91f13a2f67ff4f22b003b533249386
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca68d2e46ce74593b66aac6f995b88ddcb79796b
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011179"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842487"
 ---
-# <a name="shelluihelperissubscribed-method"></a>Método ShellUIHelper. issubscribeed
+# <a name="shelluihelperissubscribed-method"></a>Método ShellUIHelper.IsSubscribed
 
-Indica se uma URL especificada é assinada.
+Indica se uma URL especificada está inscreveda.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,26 +39,26 @@ bRetVal = ShellUIHelper.IsSubscribed(
 
 <dl> <dt>
 
-*sUrl* \[ no\]
+*sURL* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que especifica a URL.
+Um **valor string** que especifica a URL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Retornar valor
 
-Tipo: **booliano \**
+Tipo: **booliana \***
 
-_ *true** se a URL for assinada; caso contrário, **false**.
+**true** se a URL for inscreveda; caso contrário, **false.**
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso correto desse método para JScript Embedded em HTML e Visual Basic.
+O exemplo a seguir mostra o uso adequado desse método para JScript inserido em HTML e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -114,10 +114,10 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>O textdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

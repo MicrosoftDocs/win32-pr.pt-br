@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6e02d655-f7d8-460a-97d2-5b369493e941
-ms.openlocfilehash: 40e18dfe64c6d2b24b982cdf891cbb63b091a7ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e7b1f0142ea77967af15087131d3036aaec505e
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988735"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842237"
 ---
 # <a name="fmextensionproc-callback-function"></a>Função de retorno de chamada FMExtensionProc
 
@@ -45,7 +45,7 @@ LONG CALLBACK FMExtensionProc(
 *HWND* 
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Um identificador de janela para o Gerenciador de arquivos. Uma extensão usa esse identificador para especificar a janela pai de qualquer caixa de diálogo ou caixa de mensagem que deve ser exibida e para enviar mensagens de consulta ao Gerenciador de arquivos.
 
@@ -106,12 +106,12 @@ O usuário selecionou o menu da extensão. A extensão deve inicializar itens no
 
 <span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>
 
-<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**FMEVENT \_ carga**
+<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**FMEVENT \_ LOAD**
 
 
 </dt> <dd>
 
-O Gerenciador de arquivos está carregando a DLL de extensão e solicita ao DLL informações sobre o menu que a DLL fornece.
+O Gerenciador de Arquivos está carregando a DLL de extensão e solicita à DLL informações sobre o menu que a DLL fornece.
 
 </dd> <dt>
 
@@ -122,47 +122,47 @@ O Gerenciador de arquivos está carregando a DLL de extensão e solicita ao DLL 
 
 </dt> <dd>
 
-A seleção na janela de diretório do **Gerenciador de arquivos** ou na janela **resultados da pesquisa** foi alterada.
+A seleção na janela **de diretório do Gerenciador** de Arquivos ou na janela Resultados **da** Pesquisa foi alterada.
 
 </dd> <dt>
 
 <span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>
 
-<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**FMEVENT \_ TOOLBARLOAD**
+<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**BARRA DE FERRAMENTAS \_ FMEVENTLOAD**
 
 
 </dt> <dd>
 
-O Gerenciador de arquivos está criando a barra de ferramentas e solicita a DLL de extensão para obter informações sobre os botões que a DLL adiciona à barra de ferramentas.
+O Gerenciador de Arquivos está criando a barra de ferramentas e solicita à DLL de extensão informações sobre os botões que a DLL adiciona à barra de ferramentas.
 
 </dd> <dt>
 
 <span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>
 
-<span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>**descarregamento de FMEVENT \_**
+<span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>**FMEVENT \_ UNLOAD**
 
 
 </dt> <dd>
 
-O Gerenciador de arquivos está descarregando a DLL de extensão.
+O Gerenciador de Arquivos está descarregando a DLL de extensão.
 
 </dd> <dt>
 
 <span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>
 
-<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**\_atualização do usuário do FMEVENT \_**
+<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**ATUALIZAÇÃO DO USUÁRIO \_ \_ FMEVENT**
 
 
 </dt> <dd>
 
-O usuário selecionou o comando **Atualizar** no menu **janela** . A extensão deve atualizar itens no menu, se necessário.
+O usuário **selecionou o** comando Atualizar no menu **Janela.** A extensão deve atualizar itens no menu, se necessário.
 
 </dd> </dl> </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
 Valor específico da mensagem.
 
@@ -170,9 +170,9 @@ Valor específico da mensagem.
 
 ## <a name="return-value"></a>Retornar valor
 
-Tipo: **longo**
+Tipo: **LONG**
 
-Retorna um valor dependente da mensagem de parâmetro *wMsg* .
+Retorna um valor dependente da mensagem *de parâmetro wMsg.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -182,7 +182,7 @@ Retorna um valor dependente da mensagem de parâmetro *wMsg* .
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **FMExtensionProcW** (Unicode)<br/>                                          |
 
 

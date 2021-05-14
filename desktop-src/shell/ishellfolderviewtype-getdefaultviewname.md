@@ -1,6 +1,6 @@
 ---
 description: Obtém o nome da exibição padrão. Chame GetDisplayNameOf para recuperar os nomes das outras exibições.
-title: 'Método IShellFolderViewType:: getmodopadrãoname'
+title: Método IShellFolderViewType::GetDefaultViewName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 99229d13-40dc-4750-81a7-48a2f608b778
-ms.openlocfilehash: 239fcd80bcfc0b29287f8e16aeef3efb8ae032c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 808f68093512e2da602d5e73775b47943b140a46
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967497"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842757"
 ---
-# <a name="ishellfolderviewtypegetdefaultviewname-method"></a>Método IShellFolderViewType:: getmodopadrãoname
+# <a name="ishellfolderviewtypegetdefaultviewname-method"></a>Método IShellFolderViewType::GetDefaultViewName
 
 Obtém o nome da exibição padrão. Chame [**GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar os nomes das outras exibições.
 
@@ -40,7 +40,7 @@ HRESULT GetDefaultViewName(
 
 <dl> <dt>
 
-*uFlags* \[ no\]
+*uFlags* \[ Em\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -49,12 +49,12 @@ Sinalizadores opcionais; deve ser definido como 0.
 
 </dd> <dt>
 
-*ppwszName* \[ fora\]
+*ppwszName* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibição padrão. A memória da cadeia de caracteres é alocada com [_ *SHStrDup* *](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa).
+O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibição padrão. A memória da cadeia de caracteres é alocada com [**SHStrDup.**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa)
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibiç�
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

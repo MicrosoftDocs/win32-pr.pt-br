@@ -1,5 +1,5 @@
 ---
-description: 'Usa uma estrutura STRRET retornada por IShellFolder:: GetDisplayNameOf, converte-a em uma cadeia de caracteres e coloca o resultado em um buffer.'
+description: Pega uma estrutura STRRET retornada por IShellFolder::GetDisplayNameOf, converte-a em uma cadeia de caracteres e coloca o resultado em um buffer.
 title: Função StrRetToStrN
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: a816fb5f-8320-4b63-a85d-dd4c59596ead
-ms.openlocfilehash: 89a8d991e22e8615456bd8d4690c046ec0d325d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50295d712e539c94f10a708674cea595a47ae4e0
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989106"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841027"
 ---
 # <a name="strrettostrn-function"></a>Função StrRetToStrN
 
-Usa uma estrutura [**Strret**](/windows/desktop/api/Shtypes/ns-shtypes-strret) retornada por [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof), converte-a em uma cadeia de caracteres e coloca o resultado em um buffer.
+Aceita uma [**estrutura STRRET**](/windows/desktop/api/Shtypes/ns-shtypes-strret) retornada por [**IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof), converte-a em uma cadeia de caracteres e coloca o resultado em um buffer.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,39 +42,39 @@ BOOL StrRetToStrN(
 
 <dl> <dt>
 
-*pszOut* \[ fora\]
+*pszOut* \[ out\]
 </dt> <dd>
 
 Tipo: **LPTSTR**
 
-Buffer para armazenar o nome de exibição. Ele será retornado como uma cadeia de caracteres terminada em nulo. Se *cchOut* for muito pequeno, o nome será truncado para se ajustar.
+Buffer para manter o nome de exibição. Ele será retornado como uma cadeia de caracteres terminada em nulo. Se *cchOut* for muito pequeno, o nome será truncado para caber.
 
 </dd> <dt>
 
-*cchOut* \[ no\]
+*cchOut* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Tamanho de *pszOut*, em caracteres. Se *cchOut* for muito pequeno, a cadeia de caracteres será truncada para caber.
 
 </dd> <dt>
 
-*pStrRet* \[ entrada, saída\]
+*pStrRet* \[ in, out\]
 </dt> <dd>
 
 Tipo: **LPSTRRET**
 
-Ponteiro para uma estrutura [**Strret**](/windows/desktop/api/Shtypes/ns-shtypes-strret) . Quando a função retornar, esse ponteiro não será mais válido.
+Ponteiro para uma [**estrutura STRRET.**](/windows/desktop/api/Shtypes/ns-shtypes-strret) Quando a função retornar, esse ponteiro não será mais válido.
 
 </dd> <dt>
 
-*PIDL* \[ no\]
+*pidl* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Ponteiro para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) do item.
+Ponteiro para a estrutura [**ITEMIDLIST do**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) item.
 
 </dd> </dl>
 

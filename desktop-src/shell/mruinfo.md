@@ -1,5 +1,5 @@
 ---
-description: Contém informações que definem uma nova lista MRU (usada mais recentemente). Usado por CreateMRUListW.
+description: Contém informações que definem uma nova lista de MRU (usados mais recentemente). Usado por CreateMRUListW.
 title: Estrutura MRUINFO
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - NA
 api_location: ''
 ms.assetid: 31d5831d-9a19-4bd9-8439-ce844966c414
-ms.openlocfilehash: 91c0b1a2c10f4ac77afa5f8af2380b3d14ced8f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 652168e6a4e61ac754aac3202e0681ec6b7d9e66
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988760"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840757"
 ---
 # <a name="mruinfo-structure"></a>Estrutura MRUINFO
 
-Contém informações que definem uma nova lista MRU (usada mais recentemente). Usado por [**CreateMRUListW**](createmrulist.md).
+Contém informações que definem uma nova lista de MRU (usados mais recentemente). Usado por [**CreateMRUListW.**](createmrulist.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,21 +56,21 @@ O tamanho da estrutura.
 
 </dd> <dt>
 
-**Scanner**
+**Umax**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-O número máximo de entradas na lista MRU.
+O número máximo de entradas na lista mru.
 
 </dd> <dt>
 
 **fFlags**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -85,7 +85,7 @@ Um ou mais dos sinalizadores a seguir.
 
 </dt> <dd>
 
-Os dados são armazenados no registro como dados binários em vez de dados de cadeia de caracteres.
+Os dados são armazenados no Registro como dados binários em vez de dados de cadeia de caracteres.
 
 </dd> <dt>
 
@@ -96,11 +96,11 @@ Os dados são armazenados no registro como dados binários em vez de dados de ca
 
 </dt> <dd>
 
-Grave alterações na versão do MRU armazenada no registro somente quando um novo item for adicionado ou os recursos da lista MRU forem liberados da memória. Observe que a versão ativa do MRU na memória é atualizada imediatamente em resposta a qualquer alteração no conteúdo ou na ordenação.
+Gravar alterações na versão do MRU armazenada no Registro somente quando um novo item for adicionado ou os recursos da lista mru são liberados da memória. Observe que a versão ativa do MRU na memória é atualizada imediatamente em resposta a qualquer alteração no conteúdo ou na ordenação.
 
 </dd> </dl> </dd> <dt>
 
-**hKey**
+**Hkey**
 </dt> <dd>
 
 Tipo: **HKEY**

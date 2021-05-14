@@ -1,6 +1,6 @@
 ---
-description: Método IShellDispatch4. ToggleDesktop – exibe ou oculta a área de trabalho.
-title: Método IShellDispatch4. ToggleDesktop (shldisp. h)
+description: Método IShellDispatch4.ToggleDesktop – exibe ou oculta a área de trabalho.
+title: Método IShellDispatch4.ToggleDesktop (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 60199e18-b8da-48a6-b316-e7f07ff44b78
-ms.openlocfilehash: b635408ed8a44b8bb0d27e52c167470f80f61b18
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e78c14e2aa7f918ff27b21bdab0ce71bed08a84a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116814"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840927"
 ---
-# <a name="ishelldispatch4toggledesktop-method"></a>Método IShellDispatch4. ToggleDesktop
+# <a name="ishelldispatch4toggledesktop-method"></a>Método IShellDispatch4.ToggleDesktop
 
 Exibe ou oculta a área de trabalho.
 
@@ -45,7 +45,7 @@ IShellDispatch4.ToggleDesktop()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 ### <a name="jscript"></a>JScript
 
@@ -57,13 +57,13 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método tem o mesmo efeito que o botão **Mostrar área de trabalho** na barra de tarefas. Ele oculta todas as janelas abertas para mostrar a área de trabalho ou oculta a área de trabalho mostrando todas as janelas abertas. O método **ToggleDesktop** não exibe uma interface do usuário, apenas invoca a ação de alternância.
+Esse método tem o mesmo efeito que o **botão Mostrar Área** de Trabalho na barra de tarefas. Ele oculta todas as janelas abertas para mostrar a área de trabalho ou oculta a área de trabalho mostrando todas as janelas abertas. O **método ToggleDesktop** não exibe uma interface do usuário, apenas invoca a ação de alternância.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso apropriado de **ToggleDesktop** para JScript, VBScript e Visual Basic.
+Os exemplos a seguir mostram o uso adequado de **ToggleDesktop** para JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,11 +117,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Somente \[ aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
 
 
 

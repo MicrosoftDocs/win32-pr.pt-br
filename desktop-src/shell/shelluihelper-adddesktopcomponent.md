@@ -1,6 +1,6 @@
 ---
 description: Adiciona um item ao Microsoft Active Desktop.
-title: Método ShellUIHelper. AddDesktopComponent (exdisp. h)
+title: Método ShellUIHelper.AddDesktopComponent (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: d5234a0b43ea25c8ac931dc14ec90f7a6696ddfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968160"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842457"
 ---
-# <a name="shelluihelperadddesktopcomponent-method"></a>Método ShellUIHelper. AddDesktopComponent
+# <a name="shelluihelperadddesktopcomponent-method"></a>Método ShellUIHelper.AddDesktopComponent
 
 Adiciona um item ao Microsoft Active Desktop.
 
@@ -44,27 +44,27 @@ iRetVal = ShellUIHelper.AddDesktopComponent(
 
 <dl> <dt>
 
-*sUrl* \[ no\]
+*sURL* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que especifica a URL do novo item favorito.
+Um **valor string** que especifica a URL do novo item favorito.
 
 </dd> <dt>
 
-*stype* \[ no\]
+*sType* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que especifica o tipo de item que está sendo adicionado. Isso pode ser um dos valores a seguir.
+Um **valor string** que especifica o tipo de item que está sendo adicionado. Esse pode ser um dos valores a seguir.
 
 <dt>
 
 
 
- imagem
+ (imagem)
 
 
 </dt> <dd>
@@ -75,7 +75,7 @@ O componente é uma imagem.
 
 
 
- site
+ (site)
 
 
 </dt> <dd>
@@ -84,19 +84,19 @@ O componente é um site.
 
 </dd> </dl> </dd> <dt>
 
-*À esquerda* \[ em, opcional\]
+*Esquerda* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A posição da borda esquerda do componente, em coordenadas da tela.
+A posição da borda esquerda do componente, em coordenadas de tela.
 
 </dd> <dt>
 
-*Superior* \[ em, opcional\]
+*Superior* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
 A posição da borda superior do componente, em coordenadas da tela.
 
