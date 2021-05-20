@@ -1,30 +1,30 @@
 ---
-description: O decodificador de áudio Dolby é uma Media Foundation transformação (MFT) que codifica áudio mono ou estéreo em Dolby Digital, também chamada Dolby AC-3.
+description: O codificador de áudio Dolby é uma transformação Media Foundation (MFT) que codifica áudio mono ou estéreo para Dolby Digital, também chamado de Dolby AC-3.
 ms.assetid: CBC31132-046C-4CD7-9DBA-20A9C666FB43
-title: Codificador de áudio digital Dolby
+title: Codificador de Áudio Digital Dolby
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d6c5b59bc09cd8c0fd56f22703ef8afdfe3921
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f901587b816bc17d62f4095e093b661ce55f0009
+ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771267"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110153559"
 ---
-# <a name="dolby-digital-audio-encoder"></a>Codificador de áudio digital Dolby
+# <a name="dolby-digital-audio-encoder"></a>Codificador de Áudio Digital Dolby
 
-O decodificador de áudio Dolby é uma [Media Foundation transformação](media-foundation-transforms.md) (MFT) que codifica áudio mono ou estéreo em Dolby Digital, também chamada Dolby AC-3. O codificador não oferece suporte à entrada de vários canais, como a configuração do canal 5,1.
+O codificador de áudio Dolby é uma [transformação Media Foundation](media-foundation-transforms.md) (MFT) que codifica áudio mono ou estéreo para Dolby Digital, também chamado de Dolby AC-3. O codificador não dá suporte à entrada de vários canais, como a configuração de canal 5.1.
 
 > [!IMPORTANT]
-> Para versões do Windows anteriores ao Windows 8, a implementação da Microsoft da tecnologia Dolby Digital é restrita em termos do programa Dolby Digital Licensing para uso pelos aplicativos da Microsoft.
+> Para versões do Windows anteriores Windows 8, a implementação da Microsoft da tecnologia Dolby Digital é restrita em termos do programa de licenciamento do Dolby Digital a ser usado pelos aplicativos da Microsoft.
 
  
 
-Para obter mais informações sobre áudio Dolby Digital, consulte documento de compactação de áudio digital (ATSC) (Comitê de sistemas de televisão avançada) *padrão (AC-3, E-AC-3) revisão B*.
+Para obter mais informações sobre o áudio do Dolby Digital, consulte o documento ATSC (Advanced Tv Systems *Committee) (AC-3, E-AC-3) Revision B*.
 
-## <a name="class-identifier"></a>Identificador de classe
+## <a name="class-identifier"></a>Identificador de Classe
 
-O CLSID (identificador de classe) do decodificador de áudio Dolby é **CLSID \_ CMSDolbyDigitalEncMFT**, definido no arquivo de cabeçalho wmcodecdsp. h.
+O CLSID (identificador de classe) do codificador de áudio Dolby é **\_ CLSID CMSDolbyDigitalEncMFT**, definido no arquivo de header wmcodecdsp.h.
 
 ## <a name="output-types"></a>Tipos de saída
 
@@ -123,7 +123,7 @@ A tabela a seguir lista os atributos obrigatórios e opcionais para o tipo de m�
 <tr class="odd">
 <td><a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a></td>
 <td>Número de bits por amostra de áudio.</td>
-<td>Obrigatórios. O valor deve ser 16 se o subtipo for <strong>MFAudioFormat_PCM</strong>ou 32 se o subtipo for <strong>MFAudioFormat_Float</strong>.</td>
+<td>Obrigatórios. O valor deverá ser 16 se o subtipo for <strong>MFAudioFormat_PCM</strong>ou 32 se o subtipo for <strong>MFAudioFormat_Float</strong>.</td>
 </tr>
 <tr class="even">
 <td><a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a></td>
@@ -138,21 +138,21 @@ A tabela a seguir lista os atributos obrigatórios e opcionais para o tipo de m�
 <tr class="even">
 <td><a href="mf-mt-audio-block-alignment-attribute.md">MF_MT_AUDIO_BLOCK_ALIGNMENT</a></td>
 <td>Alinhamento de bloco, em bytes.</td>
-<td>Obrigatórios. Calcule o valor da seguinte maneira:
+<td>Obrigatórios. Calcule o valor da seguinte forma:
 <ul>
-<li><strong>MFAudioFormat_PCM</strong>: número de canais × 2.</li>
-<li><strong>MFAudioFormat_Float</strong>: número de canais × 4.</li>
+<li><strong>MFAudioFormat_PCM:</strong>número de canais × 2.</li>
+<li><strong>MFAudioFormat_Float:</strong>número de canais × 4.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a></td>
 <td>Taxa de bits do fluxo AC3 codificado, em bytes por segundo.</td>
-<td>Obrigatórios. Deve ser igual ao alinhamento de bloco × amostras por segundo.</td>
+<td>Obrigatórios. Deve ser igual ao alinhamento de × amostras por segundo.</td>
 </tr>
 <tr class="even">
 <td><a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a></td>
-<td>Especifica a atribuição de canais de áudio a posições do orador.</td>
-<td>Opcional. Se definido, o valor deve corresponder ao tipo de saída.</td>
+<td>Especifica a atribuição de canais de áudio para posições do locutor.</td>
+<td>Opcional. Se definido, o valor deverá corresponder ao tipo de saída.</td>
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-audio-valid-bits-per-sample-attribute.md">MF_MT_AUDIO_VALID_BITS_PER_SAMPLE</a></td>
@@ -197,18 +197,18 @@ Para especificar a taxa de bits de codificação, defina o atributo [ \_ \_ víd
 
  
 
-A taxa de bits de codificação padrão é definida em 256 kbps para estéreo e 192 kbps para mono. As configurações padrão são refletidas nos tipos de mídia retornados pelo método [**IMFTransform:: GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) do codificador.
+A taxa de bits de codificação padrão é definida em 256 kbps para estéreo e 192 kbps para mono. As configurações padrão são refletidas nos tipos de mídia retornados pelo método [**IMFTransform::GetOutputAvailableType do**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) codificador.
 
-### <a name="example-media-types"></a>Exemplos de tipos de mídia
+### <a name="example-media-types"></a>Tipos de mídia de exemplo
 
-Aqui está um exemplo dos tipos de mídia que são necessários para codificar o PCM de inteiros de 16 bits, áudio estéreo de 48 kHz na taxa de bits padrão de 256 kbps.
+Aqui está um exemplo dos tipos de mídia necessários para codificar o PCM inteiro de 16 bits, áudio estéreo de 48 kHz na taxa de bits padrão de 256 kbps.
 
 Tipo de mídia de saída:
 
 | Atributo                                                                           | Valor                         |
 |-------------------------------------------------------------------------------------|-------------------------------|
-| [\_ \_ tipo principal MF \_ MT](mf-mt-major-type-attribute.md)                               | **\_Áudio MFMediaType**        |
-| [subtipo MF \_ MT \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ Dolby \_ AC3** |
+| [MF \_ MT \_ MAJOR \_ TYPE](mf-mt-major-type-attribute.md)                               | **Áudio MFMediaType \_**        |
+| [SUBTIPO \_ MF MT \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ Dolby \_ AC3** |
 | [\_amostras de áudio MF MT \_ \_ \_ por \_ segundo](mf-mt-audio-samples-per-second-attribute.md) | 48000                         |
 | [\_canais de \_ número de áudio MF MT \_ \_](mf-mt-audio-num-channels-attribute.md)              | 2                             |
 

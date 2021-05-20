@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a36b321f312a074a5dd78340968f1c9b2b844c6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bf07fea583c5ae46680d888f6bf6c0a9c5aa9a0
+ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369204"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110153549"
 ---
 # <a name="gluortho2d-function"></a>função gluOrtho2D
 
@@ -77,7 +77,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função **gluOrtho2D** configura uma região de exibição ortográfica bidimensional. Isso é equivalente a chamar [**glOrtho**](glortho.md) com near = 1 e far = 1.
+A função **gluOrtho2D** configura uma região de exibição ortográfica bidimensional. Isso é equivalente a chamar [**glOrtho**](glortho.md) com zNear =-1 e zFar = 1.
 
 ## <a name="requirements"></a>Requisitos
 
