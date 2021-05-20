@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: 9e0bc6cf6433f65fa1bc28ec2654492057842b94
-ms.sourcegitcommit: 5a39ee31075cd81ab865c81c39e128b8312da21b
+ms.openlocfilehash: 49681f434fa4eef99e9775b2c3800f48f15915a2
+ms.sourcegitcommit: 8a31a21726d4a8ebfddfa71f02f1bfffea459277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/20/2021
-ms.locfileid: "110207378"
+ms.locfileid: "110208707"
 ---
 # <a name="dwritecore-overview"></a>Visão geral do DWriteCore
 
@@ -83,7 +83,7 @@ Um recurso de faixa são fontes de cores. As fontes de cores permitem que você 
 
 O trabalho na limpeza do cache de fontes e no carregador de fontes na memória, permite o carregamento mais rápido de fontes e melhorias na memória.
 
-Com esses recursos, você pode começar imediatamente a aproveitar algumas das principais funcionalidades do DirectWrite &mdash; , como fontes variáveis. Fontes de variáveis são um dos recursos mais importantes para clientes do DirectWrite; Eles foram introduzidos no Windows 10, versão 1709 (atualização para criadores de outono), portanto, acessá-los em versões anteriores é um benefício significativo para você como desenvolvedor.
+Com esses recursos, você pode começar imediatamente a aproveitar algumas das principais funcionalidades do DirectWrite &mdash; , como fontes variáveis. Fontes de variáveis são um dos recursos mais importantes para clientes do DirectWrite.
 
 ## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>Nosso convite para você como desenvolvedor DirectWrite
 
@@ -106,7 +106,7 @@ O `dwrite_core.h` arquivo de cabeçalho primeiro define o token *DWRITE_CORE* e,
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>APIs que são novas ou diferentes para DWriteCore
 
-A superfície da API do DWriteCore é basicamente a mesma que se trata de [DirectWrite](/windows/win32/api/_directwrite/). Mas há um pequeno número de novas APIs que estão apenas em DWriteCore no momento.
+A superfície da API do DWriteCore é basicamente a mesma que se trata de [DirectWrite](/windows/win32/api/_directwrite/). Mas há um pequeno número de novas APIs que só estão em DWriteCore no presente.
 
 #### <a name="create-a-factory-object"></a>Criar um objeto de fábrica
 
@@ -139,7 +139,7 @@ DirectWrite tem uma interface de destino de renderização de bitmap que dá sup
 
 Portanto, dWriteCore introduz a interface [**IDWriteBitmapRenderTarget2**](./dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2.md) e seu método [**IDWriteBitmapRenderTarget2::GetBitmapData**](./dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md). Esse método recebe um parâmetro do tipo (ponteiro para) [**DWRITE_BITMAP_DATA_BGRA32**](./dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32.md), que é um novo struct.
 
-Seu aplicativo cria um destino de renderização de bitmap chamando [IDWriteGdiInterop:: CreateBitmapRenderTarget](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget). No Windows, um destino de renderização de bitmap encapsula um controlador de domínio de memória GDI com um bitmap independente de dispositivo (DIB) do GDI selecionado. [IDWriteBitmapRenderTarget::D rawglyphrun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) processa glifos para o DIB. DirectWrite renderiza os glifos em si sem passar pela GDI. Em seguida, seu aplicativo pode obter o **HDC** do destino de renderização de bitmap e usar [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) para copiar os pixels para uma janela **HDC**.
+Seu aplicativo cria um destino de renderização de bitmap chamando [IDWriteGdiInterop::CreateBitmapRenderTarget](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget). No Windows, um destino de renderização de bitmap encapsula um controlador de domínio de memória GDI com um bitmap independente de dispositivo (DIB) do GDI selecionado. [IDWriteBitmapRenderTarget::D rawglyphrun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) processa glifos para o DIB. DirectWrite renderiza os glifos em si sem passar pela GDI. Em seguida, seu aplicativo pode obter o **HDC** do destino de renderização de bitmap e usar [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) para copiar os pixels para uma janela **HDC**.
 
 Em plataformas não Windows, seu aplicativo ainda pode criar um destino de renderização de bitmap, mas simplesmente encapsula uma matriz de memória do sistema sem **HDC** e sem DIB. Sem um **HDC**, precisa haver outra maneira de seu aplicativo obter os pixels de bitmap para que ele possa copiá-los ou usá-los de outra forma. Mesmo no Windows, às vezes é útil obter os dados reais do pixel, e mostramos a maneira atual de fazer isso no exemplo de código abaixo.
 
