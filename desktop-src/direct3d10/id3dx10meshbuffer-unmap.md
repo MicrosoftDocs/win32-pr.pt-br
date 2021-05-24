@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c3b382e0cfd01a51d89ddacb51ad390446315a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 11b15f8bc1e4103503b183672ebd31e92b4daea7
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105813517"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335370"
 ---
 # <a name="id3dx10meshbufferunmap-method"></a>Método ID3DX10MeshBuffer:: remapeamento
 
@@ -48,9 +48,9 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 
 
-|                                                                                                                                               |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> O desmapeamento () no Direct3D 10 é análogo ao desbloqueio de recurso () no Direct3D 9.<br/> |
+Diferenças entre o Direct3D 9 e o Direct3D 10:
+
+- O desmapeamento () no Direct3D 10 é análogo ao desbloqueio de recurso () no Direct3D 9.
 
 
 

@@ -4,12 +4,12 @@ description: Os valores gerados pelo sistema são gerados pelo estágio IA (com 
 ms.assetid: eed1e377-4b0e-4958-b6d4-945b2a952ad8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d484a42992206cb04aaef8fdd8ebaef6e08d7f4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ccdc723d335fd78277051099ec05b43ed954174d
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007819"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335200"
 ---
 # <a name="using-system-generated-values"></a>Usando valores de System-Generated
 
@@ -35,21 +35,21 @@ Para todos os tipos primitivos, os vértices têm uma ID de vértice associada a
 
 Uma ID primitiva é usada por cada estágio do sombreador para identificar cada primitiva. É um inteiro sem sinal de 32 bits, cujo valor padrão é 0. Ele é atribuído a um primitivo quando o primitivo é processado pelo estágio IA. Para informar ao estágio IA para gerar uma ID primitiva, anexe a semântica de ID primitiva à declaração de entrada do sombreador.
 
-O estágio IA adicionará uma ID primitiva a cada primitiva para uso pelo sombreador geometry ou pelo estágio pixel shader (o que for o primeiro estágio ativo após o estágio IA). Para cada chamada de desenho indexada, a ID primitiva é incrementada em 1, no entanto, a ID primitiva é redefinida como 0 sempre que uma nova instância é iniciada. Todas as outras chamadas de desenho não alteram o valor da ID da instância. Se a ID de instância estourar (exceder 2 ³ ² – 1), ela será encapsulada em 0.
+O estágio IA adicionará uma ID primitiva a cada primitiva para uso pelo sombreador geometry ou pelo estágio pixel shader (o que for o primeiro estágio ativo após o estágio IA). Para cada chamada de desenho indexada, a ID primitiva é incrementada em 1, no entanto, a ID primitiva é redefinida para 0 sempre que uma nova instância é iniciada. Todas as outras chamadas de desenho não alteram o valor da ID da instância. Se a ID da instância estouro (excede 2 Vezes– 1), ela é envolvada para 0.
 
 O estágio do sombreador de pixel não tem uma entrada separada para uma ID primitiva; no entanto, qualquer entrada de sombreador de pixel que especifica uma ID primitiva usa um modo de interpolação constante.
 
-Não há suporte para gerar automaticamente uma ID primitiva para primitivas adjacentes. Para tipos primitivos com adjacências, como uma faixa de triângulo com adjacência, uma ID primitiva é mantida apenas para os primitivos interiores (os primitivos não adjacentes), assim como o conjunto de primitivos em uma faixa de triângulo sem adjacências.
+Não há suporte para gerar automaticamente uma ID primitiva para primitivos adjacentes. Para tipos primitivos com adjacency, como uma faixa de triângulo com adjacency, uma ID primitiva só é mantida para os primitivos interiores (os primitivos não adjacentes), assim como o conjunto de primitivos em uma faixa de triângulo sem adjacency.
 
 ## <a name="instanceid"></a>InstanceID
 
 Uma ID de instância é usada por cada estágio do sombreador para identificar a instância da geometria que está sendo processada no momento. É um inteiro sem sinal de 32 bits, cujo valor padrão é 0.
 
-O estágio IA adicionará uma ID de instância a cada vértice se a declaração de entrada do sombreador de vértice incluir a semântica de ID de instância. Para cada chamada de desenho indexada, a ID da instância é incrementada em 1. Todas as outras chamadas de desenho não alteram o valor da ID da instância. Se o ID de instância estourar (exceder 2 ³ ² – 1), ele será encapsulado em 0.
+O estágio IA adicionará uma ID de instância a cada vértice se a declaração de entrada do sombreador de vértice incluir a semântica de ID da instância. Para cada chamada de desenho indexada, a ID da instância é incrementada em 1. Todas as outras chamadas de desenho não alteram o valor da ID da instância. Se a ID da instância estouro (excede 2 Vezes– 1), ela é envolvada para 0.
 
 ## <a name="example"></a>Exemplo
 
-A ilustração a seguir mostra como os valores do sistema são anexados a uma faixa de triângulo em instância no estágio IA.
+A ilustração a seguir mostra como os valores do sistema são anexados a uma faixa de triângulo de instância no estágio ia.
 
 ![Ilustração de valores do sistema para uma faixa de triângulos instanciada](images/d3d10-ia-example.png)
 
@@ -66,18 +66,18 @@ As tabelas a seguir mostram os valores gerados pelo sistema para a instância U.
 
 
 
- 
+ 
 
 
 
-|                 |     |     |     |
+|                 | Valor    | Valor    | Valor    |
 |-----------------|-----|-----|-----|
-| **Primitivaid** | 0   | 1   | 2   |
+| **PrimitiveID** | 0   | 1   | 2   |
 | **InstanceID**  | 0   | 0   | 0   |
 
 
 
- 
+ 
 
 As tabelas a seguir mostram os valores gerados pelo sistema para a instância V.
 
@@ -90,28 +90,28 @@ As tabelas a seguir mostram os valores gerados pelo sistema para a instância V.
 
 
 
- 
+ 
 
 
 
-|                 |     |     |     |
+|                 |Valor     | Valor    |  Valor   |
 |-----------------|-----|-----|-----|
-| **Primitivaid** | 0   | 1   | 2   |
+| **PrimitiveID** | 0   | 1   | 2   |
 | **InstanceID**  | 1   | 1   | 1   |
 
 
 
- 
+ 
 
-O Assembler de entrada gera as IDs (Vertex, primitiva e instância); Observe também que cada instância recebe uma ID de instância exclusiva. Os dados terminam com a faixa recortada, o que separa cada instância da faixa de triângulo.
+O assembler de entrada gera as IDs (vértice, primitivo e instância); observe também que cada instância recebe uma ID de instância exclusiva. Os dados terminam com o corte de faixa, que separa cada instância da faixa de triângulo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Estágio de Assembler de entrada](d3d10-graphics-programming-guide-input-assembler-stage.md)
+[Estágio do Assembler de Entrada](d3d10-graphics-programming-guide-input-assembler-stage.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

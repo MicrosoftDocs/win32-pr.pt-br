@@ -4,12 +4,12 @@ description: Elementos gráficos do Direct3D 11
 ms.assetid: 11413056-5033-4b4f-b80c-fccccb4057bc
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f154ddfc97dff17f061be41c818b4f56151b135
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90b038ecc2b1c55d1e0a2edab9dcb52065b51810
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294271"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335336"
 ---
 # <a name="direct3d-11-graphics"></a>Elementos gráficos do Direct3D 11
 
@@ -21,12 +21,12 @@ Para obter mais informações, consulte [recursos do Direct3D 11](direct3d-11-fe
 
 
 
-|                                   |                                                                                                   |
+|                                   | Com suporte                                                                                                  |
 |-----------------------------------|---------------------------------------------------------------------------------------------------|
-| Ambientes de tempo de execução com suporte    | <dl> <dt>Windows/C++</dt> </dl>            |
-| Linguagens de programação recomendadas | C/C++                                                                                             |
-| Mínimo de cliente com suporte          | <dl> <dt>Windows 7</dt> </dl>              |
-| Mínimo de servidor com suporte          | <dl> <dt>Windows Server 2008 R2</dt> </dl> |
+| **Ambientes de tempo de execução com suporte**    | Windows/C++            |
+| **Linguagens de programação recomendadas** | C/C++                                                                                             |
+| **Cliente mínimo com suporte**          | Windows 7             |
+| **Servidor mínimo com suporte**          | Windows Server 2008 R2 |
 
  
 

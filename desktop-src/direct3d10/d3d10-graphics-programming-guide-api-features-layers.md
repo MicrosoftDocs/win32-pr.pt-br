@@ -4,12 +4,12 @@ ms.assetid: 19c81383-6ac7-49ea-98a3-bf761a32ab40
 title: Camadas de API (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4427083bdcaf389c4b01b590a1bc3fef7eb878b4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8b07b33dfd8280af13ea3df74e5e6d0fd040bb2c
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370388"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335410"
 ---
 # <a name="api-layers-direct3d-10"></a>Camadas de API (Direct3D 10)
 
@@ -58,13 +58,14 @@ Praticamente todos os aplicativos em tempo real usam a implementação de HAL do
 
 Essa camada foi projetada para permitir que aplicativos multi-threaded acessem o dispositivo de vários threads.
 
-Um aplicativo do Direct3D 10 pode controlar uma sincronização de dispositivo usando funções de dispositivo. Isso permite que um aplicativo habilite/desabilite seções críticas (habilitando/Desabilitando temporariamente a proteção multithreading) e execute/Libere um bloqueio de seção crítica em vários pontos de entrada da API do Direct3D 10. A camada thread-safe é habilitada por padrão. Para aplicativos de thread único, a camada thread-safe não tem impacto sobre o desempenho.
+Um aplicativo do Direct3D 10 pode controlar uma sincronização de dispositivo usando funções de dispositivo. Isso permite que um aplicativo habilita/desabilite seções críticas (habilitando/desabilitando temporariamente a proteção multithreading) e fazer/liberar um bloqueio de seção crítica em vários pontos de entrada da API do Direct3D 10. A camada thread-safe está habilitada por padrão. Para aplicativos de thread único, a camada thread-safe não tem impacto sobre o desempenho.
 
 
 
-|                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Ao contrário do Direct3D 9, o padrão da API do Direct3D 10 é totalmente seguro para thread.<br/> |
+
+Diferenças entre o Direct3D 9 e o Direct3D 10:
+
+- Ao contrário do Direct3D 9, a API do Direct3D 10 assume como padrão totalmente thread-safe.
 
 
 
@@ -74,7 +75,7 @@ Um aplicativo do Direct3D 10 pode controlar uma sincronização de dispositivo u
 
 <dl> <dt>
 
-[Recursos de API (Direct3D 10)](d3d10-graphics-programming-guide-api-features.md)
+[Recursos da API (Direct3D 10)](d3d10-graphics-programming-guide-api-features.md)
 </dt> </dl>
 
  

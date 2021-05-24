@@ -1,44 +1,44 @@
 ---
-description: Os Estados de efeito são pares de nome-valor na forma de uma expressão.
+description: Estados de efeito são pares nome-valor na forma de uma expressão.
 ms.assetid: 4612c6bd-bc1f-42ad-8465-c0d4b577d1db
 title: Grupos de estado de efeito (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c132db3a5258cbe3573ddc5103df8b3cbcf2085d
-ms.sourcegitcommit: 628fda3e63fd1d513ce9a5f55be8bbc4af4b2a4b
+ms.openlocfilehash: 4617f786b984c96b271600e05b3ea8da9b5701fd
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104297997"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335560"
 ---
 # <a name="effect-state-groups-direct3d-10"></a>Grupos de estado de efeito (Direct3D 10)
 
-Os Estados de efeito são pares de nome-valor na forma de uma expressão.
+Estados de efeito são pares nome-valor na forma de uma expressão.
 
 ## <a name="blend-state"></a>Estado do Blend
 
-| | |
+| Estado do efeito | Grupo |
 |-|-|
-| **ALPHATOCOVERAGEENABLE**, **BLENDENABLE**, **SRCBLEND**, **DESTBLEND**, **BLENDOP**, **SRCBLENDALPHA**, **DESTBLENDALPHA**, **BLENDOPALPHA**, **RENDERTARGETWRITEMASK** | Membros de [ **d3d10 \_ Blend \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_blend_desc) |
+| **ALPHATOCOVERAGEENABLE,** **BLENDENABLE,** **SRCBLEND,** **DESTBLEND,** **BLENDOP,** **SRCBLENDALPHA,** **DESTBLENDALPHA,** **BLENDOPALPHA,** **RENDERTARGETWRITEMASK** | Membros do [ **D3D10 \_ BLEND \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_blend_desc) |
 
-## <a name="depth-and-stencil-state"></a>Profundidade e estado do estêncil
+## <a name="depth-and-stencil-state"></a>Profundidade e estado de estêncil
 
-| | |
+| Estado do efeito| Grupo |
 |-|-|
-| **DEPTHENABLE**, **DEPTHWRITEMASK**, **DEPTHFUNC**, **STENCILENABLE**, **STENCILREADMASK**, **STENCILWRITEMASK** | Membros do [ **\_ estêncil de profundidade d3d10 \_ \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencil_desc) |
-| FRONTFACESTENCILFAIL * *, **FRONTFACESTENCILZFAIL**, **FRONTFACESTENCILPASS**, **FRONTFACESTENCILFUNC**, **BACKFACESTENCILFAIL**, **BACKFACESTENCILZFAIL**, **BACKFACESTENCILPASS**, **BACKFACESTENCILFUNC** | Membro de [ **d3d10 \_ profundidade \_ STENCILOP \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencilop_desc) |
+| **DEPTHENABLE,** **DEPTHWRITEMASK,** **DEPTHFUNC,NCILENABLE,** **STENCILREADMASK,** **STENCILWRITEMASK**  | Membros do [ **D3D10 \_ DEPTH \_ STENCIL \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencil_desc) |
+| **FRONTFACESTENCILFAIL**, **FRONTFACESTENCILZFAIL,** **FRONTFACESTENCILPASS**, **FRONTFACESTENCILFUNC**, **BACKFACESTENCILFAIL**, **BACKFACESTENCILZFAIL**, **BACKFACESTENCILPASS**, **BACKFACESTENCILFUNC** | Membro do [ **D3D10 \_ DEPTH \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencilop_desc) |
 
 ## <a name="rasterizer-state"></a>Estado do rasterizador
 
-| | |
+| Estado do efeito| Grupo |
 |-|-|
-| FILLMODE | [**\_Modo de preenchimento d3d10 \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_fill_mode) |
-| De seleção | [**\_Modo de seleção de d3d10 \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_cull_mode) |
-| **FRONTCOUNTERCLOCKWISE**, **DEPTHBIAS**, **DEPTHBIASCLAMP**, **SLOPESCALEDDEPTHBIAS**, **ZCLIPENABLE**, **SCISSORENABLE**, **MULTISAMPLEENABLE**, **ANTIALIASEDLINEENABLE** | Membros do [ **\_ rasterizador d3d10 \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc) |
+| Fillmode | [**MODO DE PREENCHIMENTO D3D10 \_ \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_fill_mode) |
+| MODELO DE RESLÚSCULO | [**MODO DE \_ RESSUÇÃO D3D10 \_**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_cull_mode) |
+| **FRONTCOUNTERCLOCKWISE**, **DEPTHBIAS**, **DEPTHBIASCLAMP,** **SLOPESCALEDDEPTHBIAS,** **ZCLIPENABLE,** **SCISSORENABLE,** **MULTISAMPLEENABLE,** **ANTIALIASEDLINEENABLE** | Membros do [ **D3D10 \_ RASTERIZER \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc) |
 
 ## <a name="sampler-state"></a>Estado de amostra
 
-| | |
+| Estado do efeito | Grupo |
 |-|-|
 | **Filtro**, **endereçou**, **AddressV**, **AddressW**, **MipLODBias**, **MaxAnisotropy**, **ComparisonFunc**, **BorderColor**, **MinLOD**, **MaxLOD** | Membros de [ **amostra de d3d10 \_ \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_sampler_desc) |
 

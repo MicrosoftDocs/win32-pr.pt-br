@@ -4,12 +4,12 @@ ms.assetid: ccfe6273-0dcf-4b42-9d74-665a0b4cd14a
 title: Exibições de textura (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f06cd98a00782b826713e68304ad7cc132e4e0fe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 83dd83b1a3896637ce73505de00027ea9dfadac4
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920443"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335580"
 ---
 # <a name="texture-views-direct3d-10"></a>Exibições de textura (Direct3D 10)
 
@@ -29,9 +29,9 @@ Crie um objeto de exibição para um destino de renderização chamando CreateRe
 
 
 
-|                                                                                                                                                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10: no Direct3D 10, você não associa mais um recurso diretamente ao pipeline, cria uma exibição de um recurso e, em seguida, define o modo de exibição para o pipeline. Isso permite que a validação e o mapeamento no tempo de execução e o driver ocorram na criação da exibição, minimizando a verificação de tipo no momento da associação.<br/> |
+Diferenças entre o Direct3D 9 e o Direct3D 10:
+
+- No Direct3D 10, você não associa mais um recurso diretamente ao pipeline, cria uma exibição de um recurso e, em seguida, define a exibição para o pipeline. Isso permite que a validação e o mapeamento no tempo de execução e o driver ocorram na criação da exibição, minimizando a verificação de tipo no momento da associação.
 
 
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 504a1d9ff5a2aa2b37227f0016cdc97d28d967fe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 64a64d08518cb987850c87da3fb19c264519a7f7
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007936"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335380"
 ---
 # <a name="writing-hlsl-shaders-in-direct3d-9"></a>Escrevendo sombreadores HLSL no Direct3D 9
 
@@ -64,8 +64,8 @@ Para as versões PS \_ 2 \_ 0 e superior do pixel shader, a cor de saída é emi
 
 -   [Declarando variáveis de sombreador](#declaring-shader-variables)
 -   [Entradas de sombreador uniforme](#uniform-shader-inputs)
--   [Variantes de entradas e semânticas de sombreador](#varying-shader-inputs-and-semantics)
--   [Exemplos e objetos de textura](#samplers-and-texture-objects)
+-   [Entradas e semânticas de sombreador variados](#varying-shader-inputs-and-semantics)
+-   [Amostras e objetos de textura](#samplers-and-texture-objects)
 
 ### <a name="declaring-shader-variables"></a>Declarando variáveis de sombreador
 
@@ -96,7 +96,7 @@ int iVar[3];
 
 
 
-ou declarados e inicializados na mesma instrução.
+ou declarado e inicializado na mesma instrução.
 
 
 ```
@@ -105,7 +105,7 @@ int iVar[3] = {1,2,3};
 
 
 
-Aqui estão algumas declarações que demonstram muitas das características das variáveis de HLSL (linguagem de sombreamento de alto nível):
+Aqui estão algumas declarações que demonstram muitas das características das variáveis de HLSL (linguagem de sombreador de alto nível) :
 
 
 ```
@@ -149,7 +149,7 @@ void function2()
 
 
 
-As variáveis de nível superior são declaradas fora de todas as funções. Argumentos de nível superior são parâmetros para uma função de nível superior. Uma função de nível superior é qualquer função chamada pelo aplicativo (em oposição a uma função que é chamada por outra função).
+As variáveis de nível superior são declaradas fora de todas as funções. Argumentos de nível superior são parâmetros para uma função de nível superior. Uma função de nível superior é qualquer função chamada pelo aplicativo (em vez de uma função chamada por outra função).
 
 ### <a name="uniform-shader-inputs"></a>Entradas de sombreador uniforme
 
@@ -165,18 +165,18 @@ A tabela constante contém os locais de registro constante de todas as variávei
 
 Os parâmetros de entrada variados (de uma função de sombreamento de nível superior) devem ser marcados com uma palavra-chave semântica ou uniforme indicando que o valor é constante para a execução do sombreador. Se uma entrada de sombreador de nível superior não estiver marcada com uma palavra-chave semântica ou uniforme, o sombreador não será compilado.
 
-A semântica de entrada é um nome usado para vincular a entrada fornecida a uma saída da parte anterior do pipeline de gráficos. Por exemplo, a semântica de entrada POSITION0 é usada pelos sombreadores de vértice para especificar onde os dados de posição do buffer de vértice devem ser vinculados.
+A semântica de entrada é um nome usado para vincular a entrada determinada a uma saída da parte anterior do pipeline de gráficos. Por exemplo, a semântica POSITION0 de entrada é usada pelos sombreadores de vértice para especificar onde os dados de posição do buffer de vértice devem ser vinculados.
 
-Os sombreadores de pixel e vértice têm conjuntos diferentes de semântica de entrada devido às diferentes partes do pipeline de gráficos que são alimentadas em cada unidade de sombreador. A semântica de entrada do sombreador de vértice descreve as informações por vértice (por exemplo: posição, normal, coordenadas de textura, cor, tangente, binormal, etc.) a serem carregadas de um buffer de vértice em um formulário que pode ser consumido pelo sombreador de vértice. A semântica de entrada é mapeada diretamente para o uso da declaração de vértice e o índice de uso.
+Sombreadores de pixel e vértice têm conjuntos diferentes de semântica de entrada devido às diferentes partes do pipeline de gráficos que se alimentam em cada unidade de sombreador. A semântica de entrada do sombreador de vértice descreve as informações por vértice (por exemplo: posição, normal, coordenadas de textura, cor, tangente, binormal etc.) a serem carregadas de um buffer de vértice em um formulário que pode ser consumido pelo sombreador de vértice. A semântica de entrada mapeia diretamente para o uso da declaração de vértice e o índice de uso.
 
-A semântica de entrada do sombreador de pixel descreve as informações fornecidas por pixel pela unidade de rasterização. Os dados são gerados por interpolação entre saídas do sombreador de vértice para cada vértice do primitivo atual. A semântica de entrada do sombreador de pixel básico vincula a cor de saída e as informações de coordenadas de textura a parâmetros de entrada.
+A semântica de entrada do sombreador de pixel descreve as informações fornecidas por pixel pela unidade de rasterização. Os dados são gerados interpolando entre saídas do sombreador de vértice para cada vértice do primitivo atual. A semântica de entrada do sombreador de pixel básico vincula as informações de cor de saída e coordenada de textura aos parâmetros de entrada.
 
-A semântica de entrada pode ser atribuída à entrada de sombreador por dois métodos:
+A semântica de entrada pode ser atribuída à entrada do sombreador por dois métodos:
 
--   Acrescentar dois-pontos e o nome semântico à declaração de parâmetro.
--   Definição de uma estrutura de entrada com semântica de entrada atribuída a cada membro da estrutura.
+-   A adendo dois-pontos e o nome semântico à declaração de parâmetro.
+-   Definir uma estrutura de entrada com semântica de entrada atribuída a cada membro da estrutura.
 
-Os sombreadores de vértice e pixel fornecem dados de saída para o estágio de pipeline de gráficos subsequente. A semântica de saída é usada para especificar como os dados gerados pelo sombreador devem ser vinculados às entradas do próximo estágio. Por exemplo, a semântica de saída para um sombreador de vértice é usada para vincular as saídas dos interpoladores no rasterizador para gerar os dados de entrada para o sombreador de pixel. As saídas do sombreador de pixel são os valores fornecidos para a unidade de mesclagem alfa para cada um dos destinos de renderização ou o valor de profundidade gravado no buffer de profundidade.
+Sombreadores de vértice e pixel fornecem dados de saída para o estágio de pipeline de gráficos subsequente. A semântica de saída é usada para especificar como os dados gerados pelo sombreador devem ser vinculados às entradas do próximo estágio. Por exemplo, a semântica de saída para um sombreador de vértice é usada para vincular as saídas dos interpoladores no rasterizador para gerar os dados de entrada para o sombreador de pixel. As saídas do sombreador de pixel são os valores fornecidos para a unidade de mesclagem alfa para cada um dos destinos de renderização ou o valor de profundidade gravado no buffer de profundidade.
 
 A semântica de saída do sombreador de vértice é usada para vincular o sombreador ao sombreador de pixel e ao estágio do rasterizador. Um sombreador de vértice que é consumido pelo rasterizador e não exposto ao sombreador de pixel deve gerar dados de posição como um mínimo. Os sombreadores de vértice que geram coordenadas de textura e dados de cor fornecem esses dados para um sombreador de pixel após a conclusão da interpolação.
 
@@ -247,17 +247,17 @@ VS_OUTPUT VS_Skinning_Example(const VS_INPUT v, uniform float len=100)
 
 
 
-A estrutura de entrada identifica os dados do buffer de vértice que fornecerá as entradas do sombreador. Esse sombreador mapeia os dados dos elementos position, normal e blendweight do buffer de vértice em registros de sombreador de vértice. O tipo de dados de entrada não precisa corresponder exatamente ao tipo de dados de declaração de vértice. Se não corresponder exatamente, os dados do vértice serão automaticamente convertidos no tipo de dados do HLSL quando forem gravados nos registros do sombreador. Por exemplo, se os dados normais foram definidos para serem do tipo UINT pelo aplicativo, ele seria convertido em um float3 quando lido pelo sombreador.
+A estrutura de entrada identifica os dados do buffer de vértice que fornecerá as entradas do sombreador. Esse sombreador mapeia os dados dos elementos position, normal e blendweight do buffer de vértice em registros de sombreador de vértice. O tipo de dados de entrada não precisa corresponder exatamente ao tipo de dados de declaração de vértice. Se não corresponder exatamente, os dados do vértice serão automaticamente convertidos no tipo de dados do HLSL quando forem gravados nos registros do sombreador. Por exemplo, se os dados normais fossem definidos como do tipo UINT pelo aplicativo, eles seriam convertidos em um float3 quando lidos pelo sombreador.
 
-Se os dados no fluxo de vértice contiverem menos componentes do que o tipo de dados do sombreador correspondente, os componentes ausentes serão inicializados como 0 (exceto para w, que é inicializado como 1).
+Se os dados no fluxo de vértice contiver menos componentes do que o tipo de dados do sombreador correspondente, os componentes ausentes serão inicializados como 0 (exceto para w, que é inicializado como 1).
 
-A semântica de entrada é semelhante aos valores no [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage).
+A semântica de entrada é semelhante aos valores [**em D3DDECLUSAGE.**](/windows/desktop/direct3d9/d3ddeclusage)
 
-A estrutura de saída identifica os parâmetros de saída do sombreador de vértice de posição e cor. Essas saídas serão usadas pelo pipeline para a rasterização de triângulo (no processamento primitivo). A saída marcada como dados de posição denota a posição de um vértice no espaço homogêneo. Como um mínimo, um sombreador de vértice deve gerar dados de posição. A posição do espaço da tela é calculada após a conclusão do sombreador de vértice, dividindo a coordenada (x, y, z) por w. No espaço da tela,-1 e 1 são os valores x e y mínimo e máximo dos limites do visor, enquanto z é usado para teste de buffer z.
+A estrutura de saída identifica os parâmetros de saída do sombreador de vértice de posição e cor. Essas saídas serão usadas pelo pipeline para rasterização de triângulo (no processamento primitivo). A saída marcada como dados de posição indica a posição de um vértice no espaço homogêneo. No mínimo, um sombreador de vértice deve gerar dados de posição. A posição do espaço da tela é calculada após a conclusão do sombreador de vértice dividindo a coordenada (x, y, z) por w. No espaço da tela, -1 e 1 são os valores mínimo e máximo x e y dos limites do viewport, enquanto z é usado para testes de buffer z.
 
-A semântica de saída também é semelhante aos valores em [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage). Em geral, uma estrutura de saída para um sombreador de vértice também pode ser usada como a estrutura de entrada para um sombreador de pixel, desde que o sombreador de pixel não leia nenhuma variável marcada com a posição, o tamanho do ponto ou a semântica de neblina. Essas semânticas estão associadas a valores escalares por vértice que não são usados por um sombreador de pixel. Se esses valores forem necessários para o sombreador de pixel, eles poderão ser copiados em outra variável de saída que usa uma semântica de sombreador de pixel.
+A semântica de saída também é semelhante aos valores [**em D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage). Em geral, uma estrutura de saída para um sombreador de vértice também pode ser usada como a estrutura de entrada para um sombreador de pixel, desde que o sombreador de pixel não leia de nenhuma variável marcada com a posição, o tamanho do ponto ou a semântica de cinza. Essas semânticas são associadas a valores escalares por vértice que não são usados por um sombreador de pixel. Se esses valores são necessários para o sombreador de pixel, eles podem ser copiados para outra variável de saída que usa uma semântica de sombreador de pixel.
 
-Variáveis globais são atribuídas a registros automaticamente pelo compilador. As variáveis globais também são chamadas de parâmetros uniformes porque o conteúdo da variável é o mesmo para todos os pixels processados cada vez que o sombreador é chamado. Os registros estão contidos na tabela de constantes, que pode ser lida usando a interface [**ID3DXConstantTable**](/windows/desktop/direct3d9/id3dxconstanttable) .
+As variáveis globais são atribuídas a registros automaticamente pelo compilador. As variáveis globais também são chamadas de parâmetros uniformes porque o conteúdo da variável é o mesmo para todos os pixels processados sempre que o sombreador é chamado. Os registros estão contidos na tabela constante, que pode ser lida usando a interface [**ID3DXConstantTable.**](/windows/desktop/direct3d9/id3dxconstanttable)
 
 A semântica de entrada para sombreadores de pixel mapeia valores em registros de hardware específicos para transporte entre sombreadores de vértice e sombreadores de pixel. Cada tipo de registro tem propriedades específicas. Como atualmente há apenas duas semânticas para coordenadas de cor e textura, é comum que a maioria dos dados seja marcada como uma coordenada de textura mesmo quando não estiver.
 
@@ -333,10 +333,10 @@ As cores de saída do sombreador de pixel devem ser do tipo FLOAT4. Ao escrever 
 
 ### <a name="samplers-and-texture-objects"></a>Exemplos e objetos de textura
 
-Um classificador contém o estado de amostra. O estado de amostra especifica a textura a ser amostrada e controla a filtragem feita durante a amostragem. Três coisas são necessárias para fazer amostras de uma textura:
+Um classificador contém o estado de amostra. O estado de amostra especifica a textura a ser amostrada e controla a filtragem feita durante a amostragem. Três coisas são necessárias para amostrar uma textura:
 
 -   Uma textura
--   Uma amostra (com o estado de amostra)
+-   Um exemplo (com estado de amostra)
 -   Uma instrução de amostragem
 
 Os exemplos podem ser inicializados com texturas e estado de amostra, conforme mostrado aqui:
@@ -352,7 +352,7 @@ sampler s = sampler_state
 
 
 
-Aqui está um exemplo do código para exemplo de uma textura 2D:
+Aqui está um exemplo do código para amostrar uma textura 2D:
 
 
 ```
@@ -369,9 +369,9 @@ float2 sample_2D(float2 tex : TEXCOORD0) : COLOR
 
 A textura é declarada com uma variável de textura tex0.
 
-Neste exemplo, uma variável de amostra chamada s \_ 2D é declarada. O classificador contém o estado de amostra dentro de chaves. Isso inclui a textura que será amostrada e, opcionalmente, o estado do filtro (ou seja, modos de encapsulamento, modos de filtro, etc.). Se o estado de amostra for omitido, um estado de amostra padrão será aplicado especificando a filtragem linear e um modo de encapsulamento para as coordenadas de textura. A função de amostra usa uma coordenada de textura de ponto flutuante de dois componentes e retorna uma cor de dois componentes. Isso é representado com o tipo de retorno float2 e representa dados nos componentes vermelho e verde.
+Neste exemplo, uma variável de amostra chamada s \_ 2D é declarada. O sampler contém o estado de amostra dentro de chaves. Isso inclui a textura que será amostrada e, opcionalmente, o estado do filtro (ou seja, modos de wrap, modos de filtro etc.). Se o estado do amostrador for omitido, um estado de amostra padrão será aplicado especificando a filtragem linear e um modo de wrap para as coordenadas de textura. A função sampler assume uma coordenada de textura de ponto flutuante de dois componentes e retorna uma cor de dois componentes. Isso é representado com o tipo de retorno float2 e representa dados nos componentes vermelho e verde.
 
-Quatro tipos de amostra são definidos (consulte as [palavras-chave](dx-graphics-hlsl-appendix.md)) e as pesquisas de textura são executadas pelas funções intrínsecas [**: tex1D (s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex1d.md), [**tex2D (s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex2d.md), [**Tex3D (s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex3d.md), [**texCUBE (s, t) (DirectX HLSL)**](dx-graphics-hlsl-texcube.md). Aqui está um exemplo de amostragem 3D:
+Quatro tipos de amostras são [definidos](dx-graphics-hlsl-appendix.md)(consulte Palavras-chave ) e as pesquisas de textura são executadas pelas funções intrínsecas: [**tex1D(s, t) (DirectX HLSL),**](dx-graphics-hlsl-tex1d.md) [**tex2D(s, t) (DirectX HLSL),**](dx-graphics-hlsl-tex2d.md) [**tex3D(s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex3d.md), [**texCUBE(s, t) (DirectX HLSL).**](dx-graphics-hlsl-texcube.md) Aqui está um exemplo de amostragem 3D:
 
 
 ```
@@ -403,7 +403,7 @@ float3 sample_CUBE(float3 tex : TEXCOORD0) : COLOR
 
 
 
-E, finalmente, aqui está o exemplo de amostragem 1D:
+E, por fim, aqui está o exemplo de amostragem 1D:
 
 
 ```
@@ -418,7 +418,7 @@ float sample_1D(float tex : TEXCOORD0) : COLOR
 
 
 
-Como o tempo de execução não dá suporte a texturas 1D, o compilador usará uma textura 2D com o conhecimento de que a coordenada y não é importante. Como [**tex1D (s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex1d.md) é implementado como uma pesquisa de textura 2D, o compilador é livre para escolher o componente y de maneira eficiente. Em alguns cenários raros, o compilador não pode escolher um componente y eficiente; nesse caso, ele emitirá um aviso.
+Como o runtime não dá suporte a texturas 1D, o compilador usará uma textura 2D com o conhecimento de que a coordenada y não é importante. Como [**tex1D (s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex1d.md) é implementado como uma pesquisa de textura 2D, o compilador é livre para escolher o componente y de maneira eficiente. Em alguns cenários raros, o compilador não pode escolher um componente y eficiente; nesse caso, ele emitirá um aviso.
 
 
 ```
@@ -493,17 +493,17 @@ float4 main(float4 tex[4] : TEXCOORD) : COLOR
 >
 > O uso do Microsoft Direct3D Debug Runtime pode ajudá-lo a detectar incompatibilidades entre o número de componentes em uma textura e uma amostra.
 
- 
+ 
 
 ## <a name="writing-functions"></a>Gravando funções
 
 As funções dividem tarefas grandes em partes menores. Tarefas pequenas são mais fáceis de depurar e podem ser reutilizadas, uma vez comprovadas. As funções podem ser usadas para ocultar detalhes de outras funções, o que torna um programa composto por funções mais fácil de seguir.
 
-As funções HLSL são semelhantes às funções C de várias maneiras: elas contêm uma definição e um corpo de função e ambas declaram tipos de retorno e listas de argumentos. Como as funções do C, a validação de HLSL faz a verificação de tipo nos argumentos, nos tipos de argumento e no valor de retorno durante a compilação do sombreador.
+As funções HLSL são semelhantes às funções C de várias maneiras: ambas contêm uma definição e um corpo de função e ambas declaram tipos de retorno e listas de argumentos. Assim como as funções C, a validação de HLSL faz a verificação de tipo nos argumentos, nos tipos de argumento e no valor de retorno durante a compilação do sombreador.
 
-Ao contrário das funções de C, as funções de ponto de entrada HLSL usam a semântica para associar argumentos de função a entradas e saídas de sombreador (funções HLSL chamadas de semântica de ignorar internamente). Isso facilita a vinculação de dados de buffer a um sombreador e a vinculação de saídas de sombreador a entradas de sombreador.
+Ao contrário das funções C, as funções de ponto de entrada HLSL usam semântica para vincular argumentos de função a entradas e saídas do sombreador (funções HLSL chamadas ignoram internamente a semântica). Isso facilita a vinculação de dados de buffer a um sombreador e a vinculação de saídas de sombreador a entradas do sombreador.
 
-Uma função contém uma declaração e um corpo, e a declaração deve preceder o corpo.
+Uma função contém uma declaração e um corpo e a declaração deve preceder o corpo.
 
 
 ```
@@ -532,7 +532,7 @@ Uma declaração de função contém:
 -   Uma semântica de saída (opcional)
 -   Uma anotação (opcional)
 
-O tipo de retorno pode ser qualquer um dos tipos de dados básicos do HLSL, como um FLOAT4:
+O tipo de retorno pode ser qualquer um dos tipos de dados básicos HLSL, como um float4:
 
 
 ```
@@ -583,7 +583,7 @@ float4 VertexShader_Tutorial_1(float4 inPos : POSITION ) : POSITION
 
 
 
-Uma lista de argumentos declara os argumentos de entrada para uma função. Ele também pode declarar valores que serão retornados. Alguns argumentos são argumentos de entrada e saída. Aqui está um exemplo de um sombreador que usa quatro argumentos de entrada.
+Uma lista de argumentos declara os argumentos de entrada para uma função. Ele também pode declarar valores que serão retornados. Alguns argumentos são argumentos de entrada e saída. Aqui está um exemplo de um sombreador que aceita quatro argumentos de entrada.
 
 
 ```
@@ -632,13 +632,13 @@ float4 VertexShader_Tutorial_1(float4 inPos : POSITION ) : POSITION
 
 O corpo consiste em instruções que estão entre chaves. O corpo da função implementa toda a funcionalidade usando variáveis, literais, expressões e instruções.
 
-O corpo do sombreador faz duas coisas: ele executa uma multiplicação de matriz e retorna um resultado de FLOAT4. A multiplicação de matriz é realizada com a função [**Mul (DirectX HLSL)**](dx-graphics-hlsl-mul.md) , que executa uma multiplicação de matriz 4x4. **Mul (DirectX HLSL)** é chamado de função intrínseca porque já está embutido na biblioteca HLSL de funções. As funções intrínsecas serão abordadas com mais detalhes na próxima seção.
+O corpo do sombreador faz duas coisas: ele executa uma multiplicação de matriz e retorna um resultado de FLOAT4. A multiplicação de matriz é realizada com a função [**Mul (DirectX HLSL)**](dx-graphics-hlsl-mul.md) , que executa uma multiplicação de matriz 4x4. **Mul (DirectX HLSL)** é chamado de função intrínseca porque já está embutido na biblioteca HLSL de funções. As funções intrínsecas serão abordadas mais detalhadamente na próxima seção.
 
-A matriz multiplique combina um PDV de vetor de entrada e uma WorldViewProj de matriz composta. O resultado é a posição dos dados transformados no espaço da tela. Esse é o processamento mínimo de sombreador de vértice que podemos fazer. Se estivesse usando o pipeline de função fixa em vez de um sombreador de vértice, os dados de vértice poderiam ser desenhados depois de fazer essa transformação.
+A multiplicação de matriz combina um pos de vetor de entrada e uma matriz composta WorldViewProj. O resultado são os dados de posição transformados no espaço da tela. Esse é o processamento mínimo do sombreador de vértice que podemos fazer. Se estávamos usando o pipeline de funções fixas em vez de um sombreador de vértice, os dados de vértice poderiam ser desenhados depois de fazer essa transformação.
 
-A última instrução em um corpo de função é uma instrução return. Assim como C, essa instrução retorna o controle da função para a instrução que chamou a função.
+A última instrução em um corpo de função é uma instrução de retorno. Assim como C, essa instrução retorna o controle da função para a instrução que chamou a função.
 
-Os tipos de retorno de função podem ser qualquer um dos tipos de dados simples definidos em HLSL, incluindo bool, Half int, float e Double. Os tipos de retorno podem ser um dos tipos de dados complexos, como vetores e matrizes. Os tipos HLSL que se referem a objetos não podem ser usados como tipos de retorno. Isso inclui PixelShader, vertexshader, Texture e Sample.
+Os tipos de retorno de função podem ser qualquer um dos tipos de dados simples definidos em HLSL, incluindo bool, int half, float e double. Os tipos de retorno podem ser um dos tipos de dados complexos, como vetores e matrizes. Tipos HLSL que se referem a objetos não podem ser usados como tipos de retorno. Isso inclui pixelshader, vértice, textura e amostra.
 
 Aqui está um exemplo de uma função que usa uma estrutura para um tipo de retorno.
 
@@ -663,9 +663,9 @@ VS_OUTPUT VS_HLL_Example(float4 inPos : POSITION )
 
 
 
-O tipo de retorno FLOAT4 foi substituído pela estrutura VS \_ output, que agora contém um único membro FLOAT4.
+O tipo de retorno float4 foi substituído pela estrutura VS \_ OUTPUT, que agora contém um único membro float4.
 
-Uma instrução return sinaliza o final de uma função. Essa é a instrução de retorno mais simples. Ele retorna o controle da função para o programa de chamada. Ele não retorna nenhum valor.
+Uma instrução de retorno sinaliza o fim de uma função. Essa é a instrução de retorno mais simples. Ele retorna o controle da função para o programa de chamada. Ele não retorna nenhum valor.
 
 
 ```
@@ -677,7 +677,7 @@ void main()
 
 
 
-Uma instrução return pode retornar um ou mais valores. Este exemplo retorna um valor literal:
+Uma instrução de retorno pode retornar um ou mais valores. Este exemplo retorna um valor literal:
 
 
 ```
@@ -693,7 +693,7 @@ Este exemplo retorna o resultado escalar de uma expressão:
 
 
 ```
-return  light.enabled = true ;
+return  light.enabled;
 ```
 
 
@@ -781,9 +781,9 @@ O HLSL agora inclui suporte para cada um desses tipos de controle de fluxo:
 -   ramificação dinâmica
 -   loop dinâmico
 
-A ramificação estática permite que blocos de código de sombreador sejam ativados ou desativados com base em uma constante de sombreador booliano. Esse é um método conveniente para habilitar ou desabilitar caminhos de código com base no tipo de objeto que está sendo processado no momento. Entre chamadas de desenho, você pode decidir quais recursos deseja dar suporte com o sombreador atual e, em seguida, definir os sinalizadores boolianos necessários para obter esse comportamento. Todas as instruções que são desabilitadas por uma constante booliana são ignoradas durante a execução do sombreador.
+A ramificação estática permite que blocos de código de sombreador sejam ativados ou desativados com base em uma constante de sombreador booliano. Esse é um método conveniente para habilitar ou desabilitar caminhos de código com base no tipo de objeto que está sendo processado no momento. Entre chamadas de desenho, você pode decidir quais recursos deseja dar suporte com o sombreador atual e, em seguida, definir os sinalizadores boolianos necessários para obter esse comportamento. Todas as instruções desabilitadas por uma constante booliana são ignoradas durante a execução do sombreador.
 
-O suporte de ramificação mais familiar é a ramificação dinâmica. Com a ramificação dinâmica, a condição de comparação reside em uma variável, o que significa que a comparação é feita para cada vértice ou cada pixel em tempo de execução (ao contrário da comparação que ocorre no momento da compilação ou entre duas chamadas de desenho). O impacto no desempenho é o custo da ramificação mais o custo das instruções no lado da ramificação obtidas. A ramificação dinâmica é implementada no sombreador modelo 3 ou superior. Otimizar os sombreadores que funcionam com esses modelos é semelhante a otimizar o código executado em uma CPU.
+O suporte de ramificação mais familiar é a ramificação dinâmica. Com a ramificação dinâmica, a condição de comparação reside em uma variável, o que significa que a comparação é feita para cada vértice ou cada pixel em tempo de operação (em vez da comparação que ocorre no tempo de compilação ou entre duas chamadas de desenho). A redução de desempenho é o custo do branch mais o custo das instruções no lado do branch feito. A ramificação dinâmica é implementada no modelo de sombreador 3 ou superior. Otimizar sombreadores que funcionam com esses modelos é semelhante à otimização de código executado em uma CPU.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -792,6 +792,6 @@ O suporte de ramificação mais familiar é a ramificação dinâmica. Com a ram
 [Guia de programação para HLSL](dx-graphics-hlsl-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

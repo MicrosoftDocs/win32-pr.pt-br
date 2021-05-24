@@ -5,37 +5,37 @@ ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3705f4e1a0a88841560d67d5904e0f1b5dabd3f8
-ms.sourcegitcommit: a0cb986d5694b69d4a65b7d42a22694d02a6e83a
+ms.openlocfilehash: ed993618e021656dbc9377882e2961f7f0d62263
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108296331"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335640"
 ---
 # <a name="creating-a-root-signature"></a>Como criar uma assinatura raiz
 
-As assinaturas raiz são uma estrutura de dados complexa que contém estruturas aninhadas. Eles podem ser definidos programaticamente usando a definição de estrutura de dados abaixo (que inclui métodos para ajudar a inicializar Membros). Como alternativa, eles podem ser criados na HLSL (linguagem de sombreamento de alto nível), dando a vantagem de que o compilador será validado antes que o layout seja compatível com o sombreador.
+As assinaturas raiz são uma estrutura de dados complexa que contém estruturas aninhadas. Eles podem ser definidos programaticamente usando a definição de estrutura de dados abaixo (que inclui métodos para ajudar a inicializar membros). Como alternativa, elas podem ser escritas em HLSL (Linguagem de Sombreamento de Alto Nível) – dando a vantagem de que o compilador validará no início que o layout é compatível com o sombreador.
 
-A API para criar uma assinatura raiz usa uma versão serializada (autocontida, ponteiro livre) da descrição do layout descrita abaixo. Um método é fornecido para gerar essa versão serializada da estrutura de dados do C++, mas outra maneira de obter uma definição de assinatura raiz serializada é recuperá-la de um sombreador que foi compilado com uma assinatura raiz.
+A API para criar uma assinatura raiz leva em uma versão serializada (autossunte, sem ponteiro) da descrição de layout descrita abaixo. Um método é fornecido para gerar essa versão serializada da estrutura de dados do C++, mas outra maneira de obter uma definição de assinatura raiz serializada é recuperá-la de um sombreador que foi compilado com uma assinatura raiz.
 
-Se você quiser tirar proveito das otimizações de driver para os dados e descritores de assinatura raiz, consulte a [assinatura raiz versão 1,1](root-signature-version-1-1.md)
+Se você quiser aproveitar as otimizações de driver para descritores de assinatura raiz e dados, consulte [Root Signature Versão 1.1](root-signature-version-1-1.md)
 
--   [Tipos de associação de tabela de descritores](#descriptor-table-bind-types)
--   [Intervalo de descritores](#descriptor-range)
--   [Layout da tabela de descritores](#descriptor-table-layout)
+-   [Tipos de vinculação de tabela do descritor](#descriptor-table-bind-types)
+-   [Intervalo do descritor](#descriptor-range)
+-   [Layout da tabela do descritor](#descriptor-table-layout)
 -   [Constantes raiz](#root-constants)
 -   [Descritor raiz](#root-descriptor)
 -   [Visibilidade do sombreador](#shader-visibility)
 -   [Definição de assinatura raiz](#root-signature-definition)
--   [Serialização/desserialização da estrutura de dados da assinatura raiz](/windows)
--   [API de criação de assinatura raiz](#root-signature-creation-api)
--   [Assinatura de raiz em objetos de estado do pipeline](#root-signature-in-pipeline-state-objects)
--   [Código para definir uma assinatura raiz da versão 1,1](#code-for-defining-a-version-11-root-signature)
+-   [Serialização/deserialização da estrutura de dados de assinatura raiz](/windows)
+-   [API de Criação de Assinatura Raiz](#root-signature-creation-api)
+-   [Assinatura raiz em objetos de estado do pipeline](#root-signature-in-pipeline-state-objects)
+-   [Código para definir uma assinatura raiz da versão 1.1](#code-for-defining-a-version-11-root-signature)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="descriptor-table-bind-types"></a>Tipos de associação de tabela de descritores
+## <a name="descriptor-table-bind-types"></a>Tipos de vinculação de tabela do descritor
 
-O [**tipo de \_ \_ intervalo do \_ descritor**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) de enumeração D3D12 define os tipos de descritores que podem ser referenciados como parte de uma definição de layout de tabela de descritor.
+A enum [**D3D12 \_ DESCRIPTOR \_ RANGE \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) define os tipos de descritores que podem ser referenciados como parte de uma definição de layout de tabela de descritor.
 
 É um intervalo para que, por exemplo, se parte de uma tabela de descritor tenha 100 SRVs, esse intervalo possa ser declarado em uma entrada em vez de 100. Portanto, uma definição de tabela de descritor é uma coleção de intervalos.
 
@@ -121,28 +121,27 @@ Se um aplicativo gerar um procedimento de uma estrutura de dados [**\_ \_ \_ des
 
 Se um aplicativo já tiver uma assinatura raiz serializada ou tiver um sombreador compilado que contenha uma assinatura raiz e desejar descobrir programaticamente a definição de layout (conhecida como "reflexão"), [**D3D12CreateRootSignatureDeserializer**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) poderá ser chamado. Isso gera uma interface [**ID3D12RootSignatureDeserializer**](/windows/desktop/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) , que contém um método para retornar a estrutura de dados [**\_ \_ \_ desc de assinatura raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) desserializada. A interface possui o tempo de vida da estrutura de dados desserializada.
 
-## <a name="root-signature-creation-api"></a>API de criação de assinatura raiz
+## <a name="root-signature-creation-api"></a>API de Criação de Assinatura Raiz
 
-A API [**ID3D12Device:: CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature) usa uma versão serializada de uma assinatura raiz.
+A API [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature) assume uma versão serializada de uma assinatura raiz.
 
-## <a name="root-signature-in-pipeline-state-objects"></a>Assinatura de raiz em objetos de estado do pipeline
+## <a name="root-signature-in-pipeline-state-objects"></a>Assinatura raiz em objetos de estado do pipeline
 
-Os métodos para criar o estado do pipeline ([**ID3D12Device:: CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device:: CreateComputePipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) ) usam uma interface opcional [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) como um parâmetro de entrada (armazenado em uma estrutura [**desc de estado de \_ pipeline de elementos gráficos \_ \_ \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) ). Isso substituirá qualquer assinatura raiz que já esteja nos sombreadores.
+Os métodos para criar o estado do pipeline ([**ID3D12Device::CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device::CreateComputePipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) ) levam uma interface [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) opcional como um parâmetro de entrada (armazenado em uma estrutura [**D3D12 \_ GRAPHICS \_ PIPELINE STATE \_ \_ DESC).**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) Isso substituirá qualquer assinatura raiz já nos sombreadores.
 
-Se uma assinatura de raiz for passada em um dos métodos de criação de estado de pipeline, essa assinatura raiz será validada em relação a todos os sombreadores no PSO para compatibilidade e dada ao driver a ser usado com todos os sombreadores. Se qualquer um dos sombreadores tiver uma assinatura de raiz diferente, ele será substituído pela assinatura raiz passada na API. Se uma assinatura raiz não for passada, todos os sombreadores passados deverão ter uma assinatura raiz e deverão corresponder – isso será fornecido ao driver. A definição de um PSO em uma lista de comandos ou pacote não altera a assinatura raiz. Isso é realizado pelos métodos [**SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) e [**SetComputeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature). No momento em que o empate (Graphics)/dispatch (computação) é invocado, o aplicativo deve garantir que o PSO atual corresponda à assinatura raiz atual; caso contrário, o comportamento será indefinido.
+Se uma assinatura raiz for passada para um dos métodos de estado do pipeline de criação, essa assinatura raiz será validada em relação a todos os sombreadores no PSO para compatibilidade e dada ao driver para usar com todos os sombreadores. Se algum dos sombreadores tiver uma assinatura raiz diferente, ele será substituído pela assinatura raiz passada na API. Se uma assinatura raiz não for passada, todos os sombreadores passados deverão ter uma assinatura raiz e devem corresponder – isso será dado ao driver. Definir um PSO em uma lista de comandos ou pacote não altera a assinatura raiz. Isso é feito pelos métodos [**SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) e [**SetComputeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature). No momento em que draw(graphics)/dispatch(compute) é invocado, o aplicativo deve garantir que o PSO atual corresponde à assinatura raiz atual; caso contrário, o comportamento será indefinido.
 
-## <a name="code-for-defining-a-version-11-root-signature"></a>Código para definir uma assinatura raiz da versão 1,1
+## <a name="code-for-defining-a-version-11-root-signature"></a>Código para definir uma assinatura raiz da versão 1.1
 
-O exemplo a seguir mostra como criar uma assinatura de raiz com o seguinte formato:
+O exemplo a seguir mostra como criar uma assinatura raiz com o seguinte formato:
 
 
 
-|                        |                                                |                                              |
-|------------------------|------------------------------------------------|----------------------------------------------|
-| **RootParameterIndex** | **Contents**                                   |                                              |
-| \[0\]                  | Constantes raiz: {B2}                         | (1 CBV)                                      |
-| \[1\]                  | Tabela de descritores: {T2-T7, U0-U3}             | (6 SRVs + 4 UAVs)                            |
-| \[2\]                  | CBV raiz: {B0}                               | (1 CBV, dados estáticos)                         |
+| RootParameterIndex                       | Sumário                                               | Valores                                             |
+|------------------------|------------------------------------------------|----------------------------------------------|                                              
+| \[0\]                  | Constantes raiz: { b2 }                         | (1 CBV)                                      |
+| \[1\]                  | Tabela do descritor: { t2-t7, u0-u3 }             | (6 SRVs + 4 UAVs)                            |
+| \[2\]                  | CBV raiz: { b0 }                               | (1 CBV, dados estáticos)                         |
 | \[3\]                  | Tabela de descritores: {S0-S1}                    | (2 amostras)                                 |
 | \[4\]                  | Tabela de descritores: {T8}           | (não limitado \# de SRVs, descritores voláteis) |
 | \[5\]                  | Tabela de descritores: {(T0, space1) – não associado} | (não limitado \# de SRVs, descritores voláteis) |

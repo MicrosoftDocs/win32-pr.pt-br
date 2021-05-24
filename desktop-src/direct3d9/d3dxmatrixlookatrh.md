@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c9c98c0e8e0722b0b79fa12d4742cb328195d133
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 44b3a738de31edf373deb65ea9991e1e1502f47c
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107574"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335600"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx9mathh"></a>Função D3DXMatrixLookAtRH (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que define o mundo a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
@@ -87,7 +87,7 @@ Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) que é uma matriz de
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXMatrixLookAtRH** pode ser usada como um parâmetro para outra função.
+O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a **função D3DXMatrixLookAtRH** pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -97,10 +97,10 @@ zaxis = normal(Eye - At)
 xaxis = normal(cross(Up, zaxis))
 yaxis = cross(zaxis, xaxis)
     
- xaxis.x           yaxis.x           zaxis.x          0
- xaxis.y           yaxis.y           zaxis.y          0
- xaxis.z           yaxis.z           zaxis.z          0
- dot(xaxis, eye)   dot(yaxis, eye)   dot(zaxis, eye)  1
+ xaxis.x            yaxis.x            zaxis.x           0
+ xaxis.y            yaxis.y            zaxis.y           0
+ xaxis.z            yaxis.z            zaxis.z           0
+ -dot(xaxis, eye)   -dot(yaxis, eye)   -dot(zaxis, eye)  1
 ```
 
 
@@ -111,12 +111,12 @@ yaxis = cross(zaxis, xaxis)
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

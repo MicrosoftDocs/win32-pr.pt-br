@@ -4,12 +4,12 @@ description: O estágio Geometry-Shader (GS) executa o código do sombreador esp
 ms.assetid: F3208862-980E-403F-9154-13B34A882787
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da66b1e3f9abf4e7db8010887f3e78676d02a874
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3099ed5ede8dd89dc607ed838ff6e3fabfb16a69
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641371"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335360"
 ---
 # <a name="geometry-shader-stage"></a>Estágio do sombreador Geometry
 
@@ -21,15 +21,15 @@ Ao contrário dos sombreadores de vértice, que operam em um único vértice, as
 
 ![ilustração de um triângulo e uma linha com vértices adjacentes](images/d3d10-gs.png)
 
-|     |                 |
+|     | Tipo                |
 |-----|-----------------|
-| TV  | Vértice do triângulo |
-| AV  | Vértice adjacentes |
-| LV  | Vértice de linha     |
+| **TV**  | Vértice do triângulo |
+| **AV**  | Vértice adjacentes |
+| **LV**  | Vértice de linha     |
 
 
 
- 
+ 
 
 O estágio Geometry-Shader pode consumir o \_ [valor gerado pelo sistema](d3d10-graphics-programming-guide-input-assembler-stage-using.md) da VA primitivaid que é gerado automaticamente pelo ia. Isso permite que os dados por primitivo sejam buscados ou calculados, se desejado.
 
@@ -67,6 +67,6 @@ Os algoritmos que podem ser implementados no sombreador de geometria incluem:
 [Estágios de pipeline (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,71 +1,70 @@
 ---
-title: Recursos de sublado do volume (gráficos do Direct3D 11)
-description: Texturas de volume (3D) podem ser usadas como recursos ao lado, observando que a resolução do bloco é tridimensional.
+title: Recursos lado a lado de volume (elementos gráficos direct3D 11)
+description: Saiba como as texturas de volume (3D) podem ser usadas como recursos lado a lado. Observe que a resolução deiles é tridimensional.
 ms.assetid: B6BF22A2-EDA3-4765-B545-BF825043D4C4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abb8b35e522ef3298abad1322d6fb7a2fe65bfcf
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: 2bf9b3ed8b1db89d9718fa904eefd23ce2e871db
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "103638829"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335430"
 ---
 # <a name="volume-tiled-resources"></a>Alocação dinâmica de volumes de recursos
 
-Texturas de volume (3D) podem ser usadas como recursos ao lado, observando que a resolução do bloco é tridimensional.
+Texturas de volume (3D) podem ser usadas como recursos lado a lado, notando que a resolução de blocos é tridimensional.
 
 -   [Visão geral](#overview)
--   [APIs de recurso de lado xadrez do D3D 11.3](#d3d113-tiled-resource-apis)
+-   [APIs de recurso lado a lado D3D11.3](#d3d113-tiled-resource-apis)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="overview"></a>Visão geral
 
-Os recursos ao lado do ladrilho desacoplam um objeto de recurso do D3D de sua memória de backup (os recursos no passado tinham uma relação 1:1 com a memória de backup). Isso permite uma variedade de cenários interessantes, como streaming em dados de textura e reutilização ou redução de uso de memória
+Os recursos lado a lado desacodam um objeto de recurso D3D de sua memória de apoio (os recursos no passado tinham uma relação 1:1 com a memória de apoio). Isso permite uma variedade de cenários interessantes, como streaming em dados de textura e reutilação ou redução do uso de memória
 
-os recursos do lado de textura 2D têm suporte no D3D 11.2. D3D12 e D3D 11.3 adicionam suporte para texturas de lado 3D.
+Há suporte para recursos lado a lado de textura 2D em D3D11.2. D3D12 e D3D11.3 adicionam suporte para texturas lado a lado 3D.
 
-As dimensões de recurso típicas usadas na disposição de blocos são 4 x 4 blocos para texturas 2D e 4 x 4 x 4 blocos para texturas 3D.
+As dimensões de recursos típicas usadas em peças são 4 x 4 blocos para texturas 2D e 4 x 4 x 4 blocos para texturas 3D.
 
 
 
-|                             |                                     |
+| Bits/pixel (1 exemplo/pixel)                            | Dimensões deile (pixels, w x h x d)                                    |
 |-----------------------------|-------------------------------------|
-| Bits/pixel (1 amostra/pixel) | Dimensões do bloco (pixels, w x h x d) |
 | 8                           | 64x32x32                            |
 | 16                          | 32x32x32                            |
 | 32                          | 32x32x16                            |
 | 64                          | 32x16x16                            |
 | 128                         | 16x16x16                            |
-| BC 1, 4                      | 128x64x16                           |
-| BC 2, 3, 5, 6, 7                | 64x64x16                            |
+| BC 1,4                      | 128x64x16                           |
+| BC 2,3,5,6,7                | 64x64x16                            |
 
 
 
- 
+ 
 
-Observe que não há suporte para os seguintes formatos com os recursos em ladrilho: formatos 96bpp, formatos de vídeo, R1 \_ UNORM, R8G8 \_ B8G8 \_ UNORM, R8R8 G8B8 \_ \_ UNORM.
+Observe que os seguintes formatos não têm suporte com recursos lado a lado: formatos 96bpp, formatos de vídeo, R1 \_ UNORM, R8G8 \_ B8G8 \_ UNORM, R8R8 \_ G8B8 \_ UNORM.
 
-Nos diagramas abaixo do cinza escuro, representam blocos nulos.
+Nos diagramas abaixo de cinza escuro, representa blocos NULL.
 
--   [Mapeamento padrão de recurso em ladrilho 3D de textura (MIP mais detalhado)](#texture-3d-tiled-resource-default-mapping-most-detailed-mip)
--   [Mapeamento padrão de recurso em ladrilho 3D de textura (segundo MIP mais detalhado)](#texture-3d-tiled-resource-default-mapping-second-most-detailed-mip)
--   [Recurso de xadrez 3D de textura (MIP mais detalhado)](#texture-3d-tiled-resource-most-detailed-mip)
--   [Recurso de xadrez 3D de textura (segundo MIP mais detalhado)](#texture-3d-tiled-resource-second-most-detailed-mip)
--   [Recurso de xadrez 3D de textura (bloco único)](#texture-3d-tiled-resource-single-tile)
--   [Recurso de xadrez 3D de textura (caixa uniforme)](#texture-3d-tiled-resource-uniform-box)
+-   [Mapeamento padrão de recurso lado a lado de textura 3D (mip mais detalhado)](#texture-3d-tiled-resource-default-mapping-most-detailed-mip)
+-   [Mapeamento padrão de recurso lado a lado de textura 3D (segundo mip mais detalhado)](#texture-3d-tiled-resource-default-mapping-second-most-detailed-mip)
+-   [Recurso lado a lado 3D de textura (mip mais detalhado)](#texture-3d-tiled-resource-most-detailed-mip)
+-   [Recurso lado a lado 3D de textura (segundo mip mais detalhado)](#texture-3d-tiled-resource-second-most-detailed-mip)
+-   [Recurso lado a lado 3D de textura (bloco único)](#texture-3d-tiled-resource-single-tile)
+-   [Recurso lado a lado 3D de textura (caixa uniforme)](#texture-3d-tiled-resource-uniform-box)
 
-### <a name="texture-3d-tiled-resource-default-mapping-most-detailed-mip"></a>Mapeamento padrão de recurso em ladrilho 3D de textura (MIP mais detalhado)
+### <a name="texture-3d-tiled-resource-default-mapping-most-detailed-mip"></a>Mapeamento padrão de recurso lado a lado de textura 3D (mip mais detalhado)
 
-![mapeamento padrão do MIP mais detalhado](images/vtr-tex3d-default-1.png)
+![mapeamento padrão do mip mais detalhado](images/vtr-tex3d-default-1.png)
 
-### <a name="texture-3d-tiled-resource-default-mapping-second-most-detailed-mip"></a>Mapeamento padrão de recurso em ladrilho 3D de textura (segundo MIP mais detalhado)
+### <a name="texture-3d-tiled-resource-default-mapping-second-most-detailed-mip"></a>Mapeamento padrão de recurso lado a lado de textura 3D (segundo mip mais detalhado)
 
-![mapeamento padrão do segundo MIP mais detalhado](images/vtr-tex3d-default-2.png)
+![mapeamento padrão do segundo mip mais detalhado](images/vtr-tex3d-default-2.png)
 
-### <a name="texture-3d-tiled-resource-most-detailed-mip"></a>Recurso de xadrez 3D de textura (MIP mais detalhado)
+### <a name="texture-3d-tiled-resource-most-detailed-mip"></a>Recurso lado a lado 3D de textura (mip mais detalhado)
 
-O código a seguir configura um recurso de lado 3D no MIP mais detalhado.
+O código a seguir configura um recurso em bloco 3D no mip mais detalhado.
 
 ``` syntax
 D3D11_TILED_RESOURCE_COORDINATE trCoord;
@@ -79,11 +78,11 @@ trSize.bUseBox = false;
 trSize.NumTiles = 63;
 ```
 
-![mapeamento mais detalhado de um recurso de lado 3D](images/vtr-tex3d-default-1b.png)
+![mapeamento mais detalhado de um recurso lado a lado 3d](images/vtr-tex3d-default-1b.png)
 
-### <a name="texture-3d-tiled-resource-second-most-detailed-mip"></a>Recurso de xadrez 3D de textura (segundo MIP mais detalhado)
+### <a name="texture-3d-tiled-resource-second-most-detailed-mip"></a>Recurso lado a lado 3D de textura (segundo mip mais detalhado)
 
-O código a seguir configura um recurso de lado 3D e o segundo MIP mais detalhado:
+O código a seguir configura um recurso em bloco 3D e o segundo mip mais detalhado:
 
 ``` syntax
 D3D11_TILED_RESOURCE_COORDINATE trCoord;
@@ -97,11 +96,11 @@ trSize.bUseBox = false;
 trSize.NumTiles = 6;
 ```
 
-![segundo mapeamento mais detalhado de um recurso de lado 3D](images/vtr-tex3d-default-2b.png)
+![segundo mapeamento mais detalhado de um recurso lado a lado 3d](images/vtr-tex3d-default-2b.png)
 
-### <a name="texture-3d-tiled-resource-single-tile"></a>Recurso de xadrez 3D de textura (bloco único)
+### <a name="texture-3d-tiled-resource-single-tile"></a>Recurso lado a lado 3D de textura (bloco único)
 
-O código a seguir configura um único recurso de bloco:
+O código a seguir configura um recurso de único conjunto:
 
 ``` syntax
 D3D11_TILED_RESOURCE_COORDINATE trCoord;
@@ -118,11 +117,11 @@ trSize.Height = 3;
 trSize.Depth = 3;
 ```
 
-![um único bloco](images/vtr-tex3d-single.png)
+![um único único só](images/vtr-tex3d-single.png)
 
-### <a name="texture-3d-tiled-resource-uniform-box"></a>Recurso de xadrez 3D de textura (caixa uniforme)
+### <a name="texture-3d-tiled-resource-uniform-box"></a>Recurso lado a lado 3D de textura (caixa uniforme)
 
-O código a seguir configura um recurso de caixa uniforme em ladrilhos (Observe a instrução `trSize.bUseBox = true;) :`
+O código a seguir configura um recurso lado a lado do Uniform Box (observe a instrução `trSize.bUseBox = true;) :`
 
 ``` syntax
 D3D11_TILED_RESOURCE_COORDINATE trCoord;
@@ -141,9 +140,9 @@ trSize.Depth = 3;
 
 ![uma caixa uniforme](images/vtr-tex3d-uniform.png)
 
-## <a name="d3d113-tiled-resource-apis"></a>APIs de recurso de lado xadrez do D3D 11.3
+## <a name="d3d113-tiled-resource-apis"></a>APIs de recurso lado a lado D3D11.3
 
-As mesmas chamadas à API são usadas para recursos de lado 2D e 3D:
+As mesmas chamadas à API são usadas para recursos lado a lado 2D e 3D:
 
 Enumerações
 
@@ -174,9 +173,9 @@ Métodos
 [Recursos do Direct3D 11,3](direct3d-11-3-features.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

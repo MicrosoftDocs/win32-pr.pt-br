@@ -1,7 +1,7 @@
 ---
-description: Obtenha um ponteiro para a memória do buffer de malha para modificar seu conteúdo.
+description: Obter um ponteiro para a memória do buffer de malha para modificar seu conteúdo.
 ms.assetid: d15ed47a-450e-404a-bcc2-a641abc2d02e
-title: 'Método ID3DX10MeshBuffer:: Map (D3DX10. h)'
+title: Método ID3DX10MeshBuffer::Map (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1b8cb03e128a6673963ce2d3cde993babb03da5c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c4a71aaaffe7ed11429efa67b6065f94ecd154d0
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298638"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335350"
 ---
-# <a name="id3dx10meshbuffermap-method"></a>Método ID3DX10MeshBuffer:: map
+# <a name="id3dx10meshbuffermap-method"></a>Método ID3DX10MeshBuffer::Map
 
-Obtenha um ponteiro para a memória do buffer de malha para modificar seu conteúdo.
+Obter um ponteiro para a memória do buffer de malha para modificar seu conteúdo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ HRESULT Map(
 
 <dl> <dt>
 
-*ppData* \[ fora\]
+*ppData* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
 Ponteiro para os dados do buffer.
 
 </dd> <dt>
 
-*psize* \[ fora\]
+*pSize* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](../winprog/windows-data-types.md)\***
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)\***
 
 O tamanho do buffer em bytes.
 
@@ -63,15 +63,15 @@ O tamanho do buffer em bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 
 
-|                                                                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> O MAP () no Direct3D 10 é análogo ao mapa de recursos () no Direct3D 9.<br/> |
+ Diferenças entre o Direct3D 9 e o Direct3D 10:
+
+- Map() no Direct3D 10 é análogo ao recurso Map() no Direct3D 9.
 
 
 
@@ -83,8 +83,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10MeshBuffer](id3dx10meshbuffer.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  
