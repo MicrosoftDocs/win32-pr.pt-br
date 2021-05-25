@@ -1,49 +1,49 @@
 ---
-description: Sinalizadores de capacidade do cursor do driver.
+description: Sinalizadores de funcionalidade do cursor do driver.
 ms.assetid: b763b994-6488-40c0-9c14-e00b19e818b0
 title: D3DCURSORCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5915c133b3f3c3df3b344a2a9b2a72626411d5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e3b0efcbd5626ce4236b08f3ecd008fcb3d4f7d2
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995733"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343211"
 ---
-# <a name="d3dcursorcaps"></a><span data-ttu-id="c7ec3-103">D3DCURSORCAPS</span><span class="sxs-lookup"><span data-stu-id="c7ec3-103">D3DCURSORCAPS</span></span>
+# <a name="d3dcursorcaps"></a><span data-ttu-id="4ef3a-103">D3DCURSORCAPS</span><span class="sxs-lookup"><span data-stu-id="4ef3a-103">D3DCURSORCAPS</span></span>
 
-<span data-ttu-id="c7ec3-104">Sinalizadores de capacidade do cursor do driver.</span><span class="sxs-lookup"><span data-stu-id="c7ec3-104">Driver cursor capability flags.</span></span>
+<span data-ttu-id="4ef3a-104">Sinalizadores de funcionalidade do cursor do driver.</span><span class="sxs-lookup"><span data-stu-id="4ef3a-104">Driver cursor capability flags.</span></span>
 
 
 
-| <span data-ttu-id="c7ec3-105">\#definir</span><span class="sxs-lookup"><span data-stu-id="c7ec3-105">\#define</span></span>              | <span data-ttu-id="c7ec3-106">Valor</span><span class="sxs-lookup"><span data-stu-id="c7ec3-106">Value</span></span>       | <span data-ttu-id="c7ec3-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7ec3-107">Description</span></span>                                                                                     |
+| <span data-ttu-id="4ef3a-105">\#Definir</span><span class="sxs-lookup"><span data-stu-id="4ef3a-105">\#define</span></span>              | <span data-ttu-id="4ef3a-106">Valor</span><span class="sxs-lookup"><span data-stu-id="4ef3a-106">Value</span></span>       | <span data-ttu-id="4ef3a-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="4ef3a-107">Description</span></span>                                                                                     |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c7ec3-108">\_Cor D3DCURSORCAPS</span><span class="sxs-lookup"><span data-stu-id="c7ec3-108">D3DCURSORCAPS\_COLOR</span></span>  | <span data-ttu-id="c7ec3-109">0x00000001L</span><span class="sxs-lookup"><span data-stu-id="c7ec3-109">0x00000001L</span></span> | <span data-ttu-id="c7ec3-110">O driver dá suporte ao cursor de cor de hardware em, pelo menos, os modos de resolução alta (Height >= 400).</span><span class="sxs-lookup"><span data-stu-id="c7ec3-110">The driver supports hardware color cursor in at least high resolution modes (height >= 400).</span></span> |
-| <span data-ttu-id="c7ec3-111">D3DCURSORCAPS \_ LOWRES</span><span class="sxs-lookup"><span data-stu-id="c7ec3-111">D3DCURSORCAPS\_LOWRES</span></span> | <span data-ttu-id="c7ec3-112">0x00000002L</span><span class="sxs-lookup"><span data-stu-id="c7ec3-112">0x00000002L</span></span> | <span data-ttu-id="c7ec3-113">O driver dá suporte a cursor de cor de hardware em modos de baixa resolução (altura < 400).</span><span class="sxs-lookup"><span data-stu-id="c7ec3-113">The driver supports hardware color cursor in low resolution modes (height < 400).</span></span>            |
+| <span data-ttu-id="4ef3a-108">COR D3DCURSORCAPS \_</span><span class="sxs-lookup"><span data-stu-id="4ef3a-108">D3DCURSORCAPS\_COLOR</span></span>  | <span data-ttu-id="4ef3a-109">0x00000001L</span><span class="sxs-lookup"><span data-stu-id="4ef3a-109">0x00000001L</span></span> | <span data-ttu-id="4ef3a-110">O driver dá suporte ao cursor de cor de hardware em pelo menos modos de alta resolução (altura >= 400).</span><span class="sxs-lookup"><span data-stu-id="4ef3a-110">The driver supports hardware color cursor in at least high resolution modes (height >= 400).</span></span> |
+| <span data-ttu-id="4ef3a-111">D3DCURSORCAPS \_ LOWRES</span><span class="sxs-lookup"><span data-stu-id="4ef3a-111">D3DCURSORCAPS\_LOWRES</span></span> | <span data-ttu-id="4ef3a-112">0x00000002L</span><span class="sxs-lookup"><span data-stu-id="4ef3a-112">0x00000002L</span></span> | <span data-ttu-id="4ef3a-113">O driver dá suporte ao cursor de cor de hardware em modos de baixa resolução (altura < 400).</span><span class="sxs-lookup"><span data-stu-id="4ef3a-113">The driver supports hardware color cursor in low resolution modes (height < 400).</span></span>            |
 
 
 
  
 
-## <a name="constant-information"></a><span data-ttu-id="c7ec3-114">Informações constantes</span><span class="sxs-lookup"><span data-stu-id="c7ec3-114">Constant Information</span></span>
+## <a name="constant-information"></a><span data-ttu-id="4ef3a-114">Informações constantes</span><span class="sxs-lookup"><span data-stu-id="4ef3a-114">Constant Information</span></span>
 
 
 
-|                          |            |
+| <span data-ttu-id="4ef3a-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="4ef3a-115">Requirement</span></span>                         | <span data-ttu-id="4ef3a-116">Valor</span><span class="sxs-lookup"><span data-stu-id="4ef3a-116">Value</span></span>           |
 |--------------------------|------------|
-| <span data-ttu-id="c7ec3-115">parâmetro</span><span class="sxs-lookup"><span data-stu-id="c7ec3-115">Header</span></span>                   | <span data-ttu-id="c7ec3-116">d3d9caps. h</span><span class="sxs-lookup"><span data-stu-id="c7ec3-116">d3d9caps.h</span></span> |
-| <span data-ttu-id="c7ec3-117">Sistema operacional mínimo</span><span class="sxs-lookup"><span data-stu-id="c7ec3-117">Minimum operating system</span></span> | <span data-ttu-id="c7ec3-118">Windows 98</span><span class="sxs-lookup"><span data-stu-id="c7ec3-118">Windows 98</span></span> |
+| <span data-ttu-id="4ef3a-117">parâmetro</span><span class="sxs-lookup"><span data-stu-id="4ef3a-117">Header</span></span>                   | <span data-ttu-id="4ef3a-118">d3d9caps.h</span><span class="sxs-lookup"><span data-stu-id="4ef3a-118">d3d9caps.h</span></span> |
+| <span data-ttu-id="4ef3a-119">Sistema operacional mínimo</span><span class="sxs-lookup"><span data-stu-id="4ef3a-119">Minimum operating system</span></span> | <span data-ttu-id="4ef3a-120">Windows 98</span><span class="sxs-lookup"><span data-stu-id="4ef3a-120">Windows 98</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="c7ec3-119">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c7ec3-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4ef3a-121">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="4ef3a-121">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="c7ec3-120">Constantes do Direct3D</span><span class="sxs-lookup"><span data-stu-id="c7ec3-120">Direct3D Constants</span></span>](dx9-graphics-reference-d3d-constants.md)
+[<span data-ttu-id="4ef3a-122">Constantes Direct3D</span><span class="sxs-lookup"><span data-stu-id="4ef3a-122">Direct3D Constants</span></span>](dx9-graphics-reference-d3d-constants.md)
 </dt> </dl>
 
  

@@ -1,40 +1,40 @@
 ---
-description: São constantes de sombreador e efeito.
+description: Essas são constantes de efeito e sombreador.
 ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
 title: Constantes de efeito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aaa3920bb9483526e264b7b16def448d6915feb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087439"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342751"
 ---
-# <a name="effect-constants"></a><span data-ttu-id="81654-103">Constantes de efeito</span><span class="sxs-lookup"><span data-stu-id="81654-103">Effect Constants</span></span>
+# <a name="effect-constants"></a><span data-ttu-id="0b0ee-103">Constantes de efeito</span><span class="sxs-lookup"><span data-stu-id="0b0ee-103">Effect Constants</span></span>
 
-<span data-ttu-id="81654-104">São constantes de sombreador e efeito.</span><span class="sxs-lookup"><span data-stu-id="81654-104">These are shader and effect constants.</span></span>
+<span data-ttu-id="0b0ee-104">Essas são constantes de efeito e sombreador.</span><span class="sxs-lookup"><span data-stu-id="0b0ee-104">These are shader and effect constants.</span></span>
 
--   [<span data-ttu-id="81654-105">**\_Parâmetro D3DX**</span><span class="sxs-lookup"><span data-stu-id="81654-105">**D3DX\_PARAMETER**</span></span>](d3dx-parameter.md)
--   [<span data-ttu-id="81654-106">D3DXFX</span><span class="sxs-lookup"><span data-stu-id="81654-106">D3DXFX</span></span>](d3dxfx.md)
+-   [<span data-ttu-id="0b0ee-105">**PARÂMETRO \_ D3DX**</span><span class="sxs-lookup"><span data-stu-id="0b0ee-105">**D3DX\_PARAMETER**</span></span>](d3dx-parameter.md)
+-   [<span data-ttu-id="0b0ee-106">D3DXFX</span><span class="sxs-lookup"><span data-stu-id="0b0ee-106">D3DXFX</span></span>](d3dxfx.md)
 
-<span data-ttu-id="81654-107">Os efeitos usam [identificadores (Direct3D 9)](handles.md) para fazer referência a técnicas, passagens, anotações e parâmetros.</span><span class="sxs-lookup"><span data-stu-id="81654-107">Effects use [Handles (Direct3D 9)](handles.md) to reference techniques, passes, annotations, and parameters.</span></span>
+<span data-ttu-id="0b0ee-107">Os efeitos [usam alças (Direct3D 9)](handles.md) para referenciar técnicas, passagens, anotações e parâmetros.</span><span class="sxs-lookup"><span data-stu-id="0b0ee-107">Effects use [Handles (Direct3D 9)](handles.md) to reference techniques, passes, annotations, and parameters.</span></span>
 
 
 
-|         |        |            |
+| <span data-ttu-id="0b0ee-108">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="0b0ee-108">Parameter</span></span>        | <span data-ttu-id="0b0ee-109">Efeito</span><span class="sxs-lookup"><span data-stu-id="0b0ee-109">Effect</span></span>       |  <span data-ttu-id="0b0ee-110">Handle</span><span class="sxs-lookup"><span data-stu-id="0b0ee-110">Handle</span></span>          |
 |---------|--------|------------|
-| <span data-ttu-id="81654-108">typedef</span><span class="sxs-lookup"><span data-stu-id="81654-108">typedef</span></span> | <span data-ttu-id="81654-109">LPCSTR</span><span class="sxs-lookup"><span data-stu-id="81654-109">LPCSTR</span></span> | <span data-ttu-id="81654-110">D3DXHANDLE</span><span class="sxs-lookup"><span data-stu-id="81654-110">D3DXHANDLE</span></span> |
+| <span data-ttu-id="0b0ee-111">typedef</span><span class="sxs-lookup"><span data-stu-id="0b0ee-111">typedef</span></span> | <span data-ttu-id="0b0ee-112">LPCSTR</span><span class="sxs-lookup"><span data-stu-id="0b0ee-112">LPCSTR</span></span> | <span data-ttu-id="0b0ee-113">D3DXHANDLE</span><span class="sxs-lookup"><span data-stu-id="0b0ee-113">D3DXHANDLE</span></span> |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="81654-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="81654-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="0b0ee-114">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="0b0ee-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="81654-112">Referência de efeito</span><span class="sxs-lookup"><span data-stu-id="81654-112">Effect Reference</span></span>](dx9-graphics-reference-effects.md)
+[<span data-ttu-id="0b0ee-115">Referência de efeito</span><span class="sxs-lookup"><span data-stu-id="0b0ee-115">Effect Reference</span></span>](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  
