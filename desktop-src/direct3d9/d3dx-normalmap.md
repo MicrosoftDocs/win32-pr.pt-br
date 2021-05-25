@@ -4,26 +4,26 @@ ms.assetid: edf4c3e4-1af4-43b4-80c7-6fab02575f7b
 title: D3DX_NORMALMAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90f76b6afe6eb68e8ddbc3ca28085861a518effc
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4263237cedf92a5e322f2fe139e9afe2297f6b9b
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996323"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342851"
 ---
-# <a name="d3dx_normalmap"></a>D3DX \_ NormalMap
+# <a name="d3dx_normalmap"></a>D3DX \_ NORMALMAP
 
 Constantes de geração de mapas normais.
 
 
 
-| \#definir                            | Descrição                                                                                                                                                                                        |
+| \#Definir                            | Descrição                                                                                                                                                                                        |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DX \_ NormalMap \_ Mirror \_ U          | Indica que os pixels da borda da textura no eixo u devem ser espelhados, não encapsulados.                                                                                                   |
-| D3DX \_ NormalMap \_ Mirror \_ V          | Indica que os pixels da borda da textura no eixo v devem ser espelhados, não encapsulados.                                                                                                   |
-| D3DX \_ NormalMap \_ Mirror             | O mesmo que especificar D3DX \_ NormalMap \_ espelho \_ U \| D3DX \_ NormalMap \_ Mirror \_ V.                                                                                                                       |
-| D3DX \_ NormalMap \_ INVERTSIGN         | Inverte a direção de cada normal.                                                                                                                                                              |
-| D3DX \_ NormalMap \_ \_ oclusão Compute | Computa o termo oclusão por pixel e o codifica no Alpha. Um alfa de 1 significa que o pixel não é obscurecido de nenhuma forma e um alfa de 0 significa que o pixel está completamente obscurecido. |
+| D3DX \_ NORMALMAP \_ MIRROR \_ U          | Indica que os pixels fora da borda da textura no eixo u devem ser espelhados, não empacotados.                                                                                                   |
+| D3DX \_ NORMALMAP \_ MIRROR \_ V          | Indica que os pixels fora da borda da textura no eixo v devem ser espelhados, não empacotados.                                                                                                   |
+| D3DX \_ NORMALMAP \_ MIRROR             | O mesmo que especificar D3DX \_ NORMALMAP \_ MIRROR U \_ \| D3DX \_ NORMALMAP MIRROR \_ \_ V.                                                                                                                       |
+| D3DX \_ NORMALMAP \_ INVERTSIGN         | Inverte a direção de cada normal.                                                                                                                                                              |
+| OCLUSÃO DE COMPUTAÇÃO DE NORMALMAP D3DX \_ \_ \_ | Calcula o termo de oclusão por pixel e o codifica no alfa. Um alfa de 1 significa que o pixel não é obscurecido de nenhuma maneira, e um alfa de 0 significa que o pixel está completamente obscurecido. |
 
 
 
@@ -33,9 +33,9 @@ Constantes de geração de mapas normais.
 
 
 
-|                          |            |
+| Requisito                         | Valor           |
 |--------------------------|------------|
-| parâmetro                   | d3dx9tex. h |
+| parâmetro                   | d3dx9tex.h |
 | Sistema operacional mínimo | Windows 98 |
 
 

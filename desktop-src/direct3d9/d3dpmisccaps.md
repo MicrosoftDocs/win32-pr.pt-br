@@ -1,19 +1,19 @@
 ---
-description: Sinalizadores de recurso primitivos de driver diversos.
+description: Sinalizadores de funcionalidade primitiva de driver diversos.
 ms.assetid: 7912c682-c179-453b-8a34-e87958217500
 title: D3DPMISCCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76af50a1e7f78f6441af9e985f55e42ee2298b46
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b4ace0b9070d158769e22e02a759545b1bf7785
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164115"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343131"
 ---
 # <a name="d3dpmisccaps"></a>D3DPMISCCAPS
 
-Sinalizadores de recurso primitivos de driver diversos.
+Sinalizadores de funcionalidade primitiva de driver diversos.
 
 
 
@@ -25,7 +25,7 @@ Sinalizadores de recurso primitivos de driver diversos.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>#definir</td>
+<td>#Definir</td>
 <td>Valor</td>
 <td>Descrição</td>
 </tr>
@@ -37,17 +37,17 @@ Sinalizadores de recurso primitivos de driver diversos.
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLNONE</td>
 <td>0x00000010L</td>
-<td>O driver não executa a remoção de triângulo. Isso corresponde ao membro de D3DCULL_NONE do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>O driver não executa a ressarção de triângulo. Isso corresponde ao membro D3DCULL_NONE do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CULLCW</td>
 <td>0x00000020L</td>
-<td>O driver dá suporte à seleção de triângulo no sentido horário por meio do estado de D3DRS_CULLMODE. (Isso se aplica somente a primitivas de triângulo.) Esse sinalizador corresponde ao membro de D3DCULL_CW do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>O driver dá suporte à ressarção de triângulo no sentido horário por meio do estado D3DRS_CULLMODE sistema. (Isso se aplica somente a primitivos de triângulo.) Esse sinalizador corresponde ao D3DCULL_CW do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLCCW</td>
 <td>0x00000040L</td>
-<td>O driver dá suporte à seleção no sentido anti-horário por meio do estado de D3DRS_CULLMODE. (Isso se aplica somente a primitivas de triângulo.) Esse sinalizador corresponde ao membro de D3DCULL_CCW do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>O driver dá suporte à respeção no sentido anti-horário por meio do estado D3DRS_CULLMODE trabalho. (Isso se aplica somente a primitivos de triângulo.) Esse sinalizador corresponde ao D3DCULL_CCW do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_COLORWRITEENABLE</td>
@@ -82,7 +82,7 @@ Sinalizadores de recurso primitivos de driver diversos.
 <tr class="even">
 <td>D3DPMISCCAPS_INDEPENDENTWRITEMASKS</td>
 <td>0x00004000L</td>
-<td>O dispositivo dá suporte a máscaras de gravação independentes para várias texturas de elementos ou vários destinos de renderização.</td>
+<td>O dispositivo dá suporte a máscaras de gravação independentes para várias texturas de elemento ou vários destinos de renderização.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_PERSTAGECONSTANT</td>
@@ -92,11 +92,11 @@ Sinalizadores de recurso primitivos de driver diversos.
 <tr class="even">
 <td>D3DPMISCCAPS_POSTBLENDSRGBCONVERT</td>
 <td>0x00200000L</td>
-<td>O dispositivo dá suporte à conversão para sRGB após a mesclagem. 
+<td>O dispositivo dá suporte à conversão em sRGB após a mesclagem. 
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/></td>
+<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -106,17 +106,17 @@ Sinalizadores de recurso primitivos de driver diversos.
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGANDSPECULARALPHA</td>
 <td>0x00010000L</td>
-<td>O dispositivo dá suporte a sombra separada e alfa especular Alpha. Muitos dispositivos usam o canal alfa especular para armazenar o fator de neblina.</td>
+<td>O dispositivo dá suporte a alfa especular e separado. Muitos dispositivos usam o canal alfa especular para armazenar o fator de cão.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_SEPARATEALPHABLEND</td>
 <td>0x00020000L</td>
-<td>O dispositivo dá suporte a configurações de mesclagem separadas para o canal alfa.</td>
+<td>O dispositivo dá suporte a configurações de combinação separadas para o canal alfa.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_MRTINDEPENDENTBITDEPTHS</td>
 <td>0x00040000L</td>
-<td>O dispositivo dá suporte a diferentes profundidades de bits para vários destinos de renderização.</td>
+<td>O dispositivo dá suporte a profundidades de bits diferentes para vários destinos de renderização.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_MRTPOSTPIXELSHADERBLENDING</td>
@@ -141,7 +141,7 @@ Essas constantes são usadas pelo membro PrimitiveMiscCaps de [**D3DCAPS9**](/wi
 
 
 
-|                          |            |
+| Requisito                         |  Valor          |
 |--------------------------|------------|
 | parâmetro                   | d3d9caps. h |
 | Sistema operacional mínimo | Windows 98 |

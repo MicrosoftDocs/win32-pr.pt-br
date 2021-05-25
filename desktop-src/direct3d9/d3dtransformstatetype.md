@@ -1,7 +1,7 @@
 ---
 description: Define constantes que descrevem valores de estado de transformação.
 ms.assetid: 53535d9f-246a-42cf-82a2-fb3cf6d4ebac
-title: Enumeração D3DTRANSFORMSTATETYPE (D3D9Types. h)
+title: Enumeração D3DTRANSFORMSTATETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: c618e0e19bf7dd01dec73d35436f23189f9e78a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 022aa20fab0739b32aa75eb5f4bc575c0a8ad853
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105789406"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342991"
 ---
 # <a name="d3dtransformstatetype-enumeration"></a>Enumeração D3DTRANSFORMSTATETYPE
 
@@ -49,49 +49,49 @@ typedef enum D3DTRANSFORMSTATETYPE {
 
 <dl> <dt>
 
-<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**Exibição de D3DTS \_**
+<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**EXIBIÇÃO D3DTS \_**
 </dt> <dd>
 
-Identifica a matriz de transformação que está sendo definida como a matriz de transformação View. O valor padrão é **NULL** (a matriz de identidade).
+Identifica a matriz de transformação que está sendo definida como a matriz de transformação de exibição. O valor padrão é **NULL** (a matriz de identidade).
 
 </dd> <dt>
 
-<span id="D3DTS_PROJECTION"></span><span id="d3dts_projection"></span>**\_Projeção D3DTS**
+<span id="D3DTS_PROJECTION"></span><span id="d3dts_projection"></span>**PROJEÇÃO DE D3DTS \_**
 </dt> <dd>
 
-Identifica a matriz de transformação que está sendo definida como a matriz de transformação projeção. O valor padrão é **NULL** (a matriz de identidade).
+Identifica a matriz de transformação que está sendo definida como a matriz de transformação de projeção. O valor padrão é **NULL** (a matriz de identidade).
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE0"></span><span id="d3dts_texture0"></span>**D3DTS \_ TEXTURE0**
-</dt> <dd>
-
-Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
-
-</dd> <dt>
-
-<span id="D3DTS_TEXTURE1"></span><span id="d3dts_texture1"></span>**D3DTS \_ TEXTURE1**
+<span id="D3DTS_TEXTURE0"></span><span id="d3dts_texture0"></span>**TEXTURA DE \_ D3DTS0**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE2"></span><span id="d3dts_texture2"></span>**D3DTS \_ TEXTURE2**
+<span id="D3DTS_TEXTURE1"></span><span id="d3dts_texture1"></span>**TEXTURA DE \_ D3DTS1**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE3"></span><span id="d3dts_texture3"></span>**D3DTS \_ TEXTURE3**
+<span id="D3DTS_TEXTURE2"></span><span id="d3dts_texture2"></span>**TEXTURA DE \_ D3DTS2**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE4"></span><span id="d3dts_texture4"></span>**D3DTS \_ TEXTURE4**
+<span id="D3DTS_TEXTURE3"></span><span id="d3dts_texture3"></span>**TEXTURA DE \_ D3DTS3**
+</dt> <dd>
+
+Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
+
+</dd> <dt>
+
+<span id="D3DTS_TEXTURE4"></span><span id="d3dts_texture4"></span>**TEXTURA DE \_ D3DTS4**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
@@ -132,7 +132,7 @@ Os Estados de transformação no intervalo de 256 a 511 são reservados para arm
 
 
 
-| Macros                                                  |                                                                                                                                                                       |
+| Macros                                                  | Descrição                                                                                                                                                                      |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**D3DTS \_ World**](d3dts-world.md)                     | Equivalente a D3DTS \_ WORLDMATRIX (0).                                                                                                                                  |
 | [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (índice) | Identifica a matriz de transformação a ser definida para a matriz mundial no índice. Várias matrizes mundiais são usadas apenas para mesclagem de vértice. Caso contrário, somente D3DTS \_ World será usado. |
@@ -164,13 +164,13 @@ Os Estados de transformação no intervalo de 256 a 511 são reservados para arm
 [**IDirect3DDevice9::MultiplyTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-multiplytransform)
 </dt> <dt>
 
-[**IDirect3DDevice9:: SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
+[**IDirect3DDevice9::SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
 </dt> <dt>
 
-[**D3DTS \_ World**](d3dts-world.md)
+[**D3DTS \_ WORLD**](d3dts-world.md)
 </dt> <dt>
 
-[**D3DTS \_ worldn**](d3dts-worldn.md)
+[**D3DTS \_ WORLDn**](d3dts-worldn.md)
 </dt> <dt>
 
 [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md)

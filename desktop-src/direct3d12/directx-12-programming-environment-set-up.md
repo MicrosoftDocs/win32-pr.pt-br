@@ -5,12 +5,12 @@ ms.assetid: B2288866-E95F-46B8-A7A1-19888F029C03
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48e6af0d0a93d55f700478ec839f3864ee0efbcd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7079207f91185cc14b37d9056a4fa813b251bce5
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548315"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342811"
 ---
 # <a name="direct3d-12-programming-environment-setup"></a>Configuração do ambiente programação do Direct3D 12
 
@@ -41,57 +41,56 @@ Os cabeçalhos e as bibliotecas a seguir estão disponíveis. O local das biblio
 | Nome do arquivo de cabeçalho ou biblioteca | Descrição                         | Local da instalação      |
 |-----------------------------|-------------------------------------|-----------------------|
 | D3d12. h                     | Cabeçalho de API do Direct3D 12              | % WindowsSdkDir \\ inclui \% WindowsSDKVersion% \\ \um |
-| D3d12. lib                   | Biblioteca de stub de API Direct3D 12 estática | % WindowsSdkDir \\ lib \% WindowsSDKVersion% \\ \um\arch |
-| D3d12.dll                   | Biblioteca de API Direct3D 12 dinâmica     | % WINDIR% \\ System32    |
-| D3d12SDKLayers. h            | Cabeçalho de depuração do Direct3D 12            | % WindowsSdkDir \\ inclui \% WindowsSDKVersion% \\ \um |
-| D3d12SDKLayers.dll          | Biblioteca de depuração dinâmica do Direct3D 12   | % WINDIR% \\ System32    |
+| D3d12. lib                   | Biblioteca de stub de API Direct3D 12 estática | %WindowsSdkDir \\ Lib \% WindowsSDKVersion% \\ \um\arch |
+| D3d12.dll                   | Biblioteca de API dinâmica do Direct3D 12     | %WINDIR% \\ System32    |
+| D3d12SDKLayers.h            | Header de depuração do Direct3D 12            | %WindowsSdkDir \\ Incluir \% WindowsSDKVersion% \\ \um |
+| D3d12SDKLayers.dll          | Biblioteca de depuração dinâmica do Direct3D 12   | %WINDIR% \\ System32    |
 
 
 
 ## <a name="supported-languages"></a>Idiomas com suporte
 
-O C++ é o único idioma com suporte para desenvolvimento do Direct3D 12, C# e outras linguagens .NET sem suporte.
+O C++ é a única linguagem com suporte para desenvolvimento do Direct3D 12, não há suporte para C# e outras linguagens .NET.
 
 ## <a name="helper-structures"></a>Estruturas auxiliares
 
-Há várias estruturas auxiliares que, em particular, facilitam a inicialização de um número de estruturas D3D12. Essas estruturas e algumas funções de utilitário estão no cabeçalho D3dx12. h. Esse cabeçalho é de software livre e pode ser modificado por um desenvolvedor conforme necessário – Baixe- [o na biblioteca auxiliar do D3D12](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12) e consulte as [estruturas e funções auxiliares para D3D12](helper-structures-and-functions-for-d3d12.md).
+Há várias estruturas auxiliares que, em particular, facilitam a inicialização de várias estruturas D3D12. Essas estruturas e algumas funções de utilitário estão no header D3dx12.h. Esse header é de software livre e pode ser modificado por um desenvolvedor conforme necessário – baixe-o na Biblioteca auxiliar [D3D12](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12) e consulte Estruturas auxiliares e funções para [D3D12](helper-structures-and-functions-for-d3d12.md).
 
-## <a name="memory-management-library"></a>Biblioteca de gerenciamento de memória
+## <a name="memory-management-library"></a>Biblioteca de Gerenciamento de Memória
 
-Uma biblioteca auxiliar de gerenciamento de memória está disponível para download que você pode integrar ao seu aplicativo para corresponder melhor ao comportamento de gerenciamento de memória D3D11. Como uma biblioteca de gerenciamento de estilo D3D11, ela é mais eficaz com aplicativos que ainda estão usando uma estratégia de alocação de estilo de *recurso confirmada* . Em particular, a biblioteca deve ser vista como uma pedra de etapa que lhe dará a maior parte do caminho de volta para o gerenciamento de memória de alto desempenho quando houver cenários restritos de memória (por exemplo, cartões de memória low-end, 4K, ultra configurações e assim por diante). As APIs D3D12 habilitam técnicas que permitem que você obtenha melhor eficiência de memória em relação a D3D11, embora essas técnicas possam ser desafiadoras e demoradas para implementar.
+Uma biblioteca auxiliar de gerenciamento de memória está disponível para download que você pode integrar ao seu aplicativo para corresponder mais de perto ao comportamento de gerenciamento de memória D3D11. Como uma biblioteca de gerenciamento de estilo D3D11, ela é mais eficaz com aplicativos que ainda estão usando uma estratégia *de* alocação de estilo de recurso confirmado. Em particular, a biblioteca deve ser vista como um passo a passo que fará com que você volte ao gerenciamento de memória de desempenho D3D11 quando estiver em cenários com restrição de memória (por exemplo, cartões de memória de baixa extremidade, 4k, configurações ultra e assim por diante). As APIs D3D12 permitem técnicas que permitem que você tenha uma eficiência de memória ainda melhor em relação a D3D11, embora essas técnicas possam ser desafiadoras e demoradas para implementar.
 
 Observe que essa biblioteca é um trabalho em andamento e pode mudar ao longo do tempo. Use os links abaixo para acessar a biblioteca e os exemplos.
 
--   [A biblioteca inicial de residências do D3D12](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries)
+-   [A biblioteca de início de residência D3D12](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries)
 
-## <a name="supported-tools-and-libraries"></a>Bibliotecas e ferramentas com suporte
+## <a name="supported-tools-and-libraries"></a>Ferramentas e bibliotecas com suporte
 
 Todas as bibliotecas a seguir podem ser usadas com o Direct3D 12.
 
 
 
-|                                                                                  |                                                                                                                                                                                                                                                                        |                                                                                                            |
+| Biblioteca                                                                                 |  Finalidade                                                                                                                                                                                                                                                                      | Documentação                                                                                                           |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| **Biblioteca**                                                                      | **Finalidade**                                                                                                                                                                                                                                                            | **Documentação**                                                                                          |
-| [Kit de ferramentas DirectX para DirectX 12](https://github.com/Microsoft/DirectXTK12) | Uma coleção substancial de classes auxiliares para escrever o código do Direct3D 12 C++ para aplicativos Plataforma Universal do Windows (UWP), aplicativos de área de trabalho do Win32 para Windows 10 e o Xbox um aplicativo exclusivo.                                                                         | [DirectX12TK wiki](https://github.com/Microsoft/DirectXTK12/wiki)                                          |
-| [DirectXTex](https://github.com/Microsoft/DirectXTex)                      | Use isso para ler e gravar arquivos DDS e executar várias operações de processamento de conteúdo de textura, incluindo redimensionamento, conversão de formato, geração de mapa MIP, compactação de bloco para recursos de textura de tempo de execução Direct3D e mapa de altura para conversão de mapa normal. | [DirectXTex wiki](https://github.com/Microsoft/DirectXTex/wiki)                                            |
-| [DirectXMesh](https://github.com/Microsoft/DirectXMesh)                   | Use isso para executar várias operações de processamento de conteúdo de geometria, incluindo a geração de normais e quadros tangentes, cálculos de adjacência de triângulo e otimização de cache de vértice.                                                                                | [DirectXMesh wiki](https://github.com/Microsoft/DirectXMesh/wiki)                                          |
-| [DirectXMath](https://github.com/Microsoft/DirectXMath)                     | Um grande número de classes auxiliares e métodos para dar suporte a vetores, escalares, matrizes, quaternions e muitas outras operações matemáticas.                                                                                                                               | [Documentação do DirectXMath no MSDN](/windows/desktop/dxmath/ovw-xnamath-progguide) |
-| [UVAtlas](https://github.com/Microsoft/UVAtlas)                         | Use isso para criar e empacotar um Atlas de textura isochart.                                                                                                                                                                                                           | [UVAtlas wiki](https://github.com/Microsoft/UVAtlas/wiki)                                                  |
+| [DirectX Tool Kit for DirectX 12](https://github.com/Microsoft/DirectXTK12) | Uma coleção substancial de classes auxiliares para escrever código do Direct3D 12 C++ para aplicativos UWP (Plataforma Universal do Windows), aplicativos da área de trabalho Win32 para Windows 10 e Xbox One exclusivos.                                                                         | [Wiki do DirectX12TK](https://github.com/Microsoft/DirectXTK12/wiki)                                          |
+| [DirectXTex](https://github.com/Microsoft/DirectXTex)                      | Use isso para ler e escrever arquivos DDS e executar várias operações de processamento de conteúdo de textura, incluindo reizing, conversão de formato, geração de mapa mip, compactação de bloco para recursos de textura de runtime direct3D e mapa de altura para conversão de mapa normal. | [Wiki do DirectXTex](https://github.com/Microsoft/DirectXTex/wiki)                                            |
+| [DirectXMesh](https://github.com/Microsoft/DirectXMesh)                   | Use isso para executar várias operações de processamento de conteúdo geometry, incluindo a geração de normais e quadros tangentes, cálculos de adjaciação de triângulo e otimização de cache de vértice.                                                                                | [Wiki do DirectXMesh](https://github.com/Microsoft/DirectXMesh/wiki)                                          |
+| [DirectXMath](https://github.com/Microsoft/DirectXMath)                     | Um grande número de classes auxiliares e métodos para dar suporte a vetores, escalares, matrizes, quatérions e muitas outras operações matemáticas.                                                                                                                               | [Documentação do DirectXMath no MSDN](/windows/desktop/dxmath/ovw-xnamath-progguide) |
+| [UVAtlas](https://github.com/Microsoft/UVAtlas)                         | Use isso para criar e empacotar um atlas de textura isochart.                                                                                                                                                                                                           | [Wiki UVAtlas](https://github.com/Microsoft/UVAtlas/wiki)                                                  |
 
 
 
- 
+ 
 
 ## <a name="samples"></a>Exemplos
 
-Para obter uma lista de exemplos de D3D12 de trabalho e como localizá-los e executá-los, consulte [exemplos de trabalho](working-samples.md).
+Para ver uma lista de exemplos D3D12 em funcionamento e como localizá-los e executar, consulte [Amostras de trabalho.](working-samples.md)
 
-Para obter orientações sobre como adicionar código para habilitar recursos específicos, consulte os [passo-a-passo do código D3D12](d3d12-code-walk-throughs.md).
+Para ver passo a passo sobre como adicionar código para habilitar recursos [específicos, consulte D3D12 Code Walk-Throughs](d3d12-code-walk-throughs.md).
 
 ## <a name="debug-layer"></a>Camada de depuração
 
-A camada de depuração fornece um parâmetro adicional e validação de consistência (como validação de vínculo de sombreador e vinculação de recursos, validação de consistência de parâmetro e descrições de erro de relatório).
+A camada de depuração fornece uma ampla validação de consistência e parâmetro adicional (como validar vinculação de sombreador e associação de recursos, validar a consistência do parâmetro e relatar descrições de erro).
 
 > [!Note]  
 > Para o Windows 10, para criar um dispositivo que dê suporte à camada de depuração, habilite o recurso opcional "ferramentas de gráficos". Vá para o painel configurações, em sistema, aplicativos & recursos, gerencie recursos opcionais, adicione um recurso e procure "ferramentas de gráficos".
@@ -124,9 +123,9 @@ Há vários vídeos relacionados ao Direct3D 12 e ao Windows 10 em [tutoriais de
 
 <dl> <dt>
 
-[Entendendo o Direct3D 12](directx-12-getting-started.md)
+[Introdução ao Direct3D 12](directx-12-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

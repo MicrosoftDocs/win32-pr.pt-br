@@ -4,12 +4,12 @@ description: Aqui estão os principais recursos para ajudá-lo a começar a usar
 ms.assetid: d7921f38-e384-4a83-b458-ee71f7044468
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eca95e1fe281253705620136afdced3cb705fe02
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: 11b285e850bd952a0a24638a2bd8c3c0b2d987d0
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "104008643"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343561"
 ---
 # <a name="roadmap-for-desktop-directx-apps"></a>Roteiro para aplicativos DirectX para Desktop
 
@@ -28,28 +28,28 @@ Aqui estão alguns tópicos importantes. Configurar seu projeto do DirectX, accl
 | [Guia de programação para Direct3D 11](/windows/desktop/direct3d11/dx-graphics-overviews) | O guia de programação contém informações sobre como usar o pipeline programável do Microsoft Direct3D 11 para criar gráficos 3D em tempo real para aplicativos de área de trabalho. |
 | [Ferramentas para elementos gráficos do DirectX](/windows/desktop/direct3dtools/dx-graphics-tools) | Documentação para ferramentas usadas para dar suporte ao desenvolvimento do DirectX. |
 | [O que há de novo no Direct3D 11](/windows/desktop/direct3d11/dx-graphics-overviews-introduction) | Uma análise de todos os recursos adicionados nas versões mais recentes do DirectX e do Direct3D (atualmente 11,2). |
-| [Baixar o Visual Studio 2013](https://msdn.microsoft.com/windows/apps/br229516.aspx) | Você deve ter Visual Studio Express 2013 para Windows Desktop para criar jogos da Windows Store. Para obter um tour pelo Visual Studio, consulte [desenvolver aplicativos da Windows Store usando o visual studio 2012](/previous-versions/windows/apps/br211384(v=win.10)). Para obter informações sobre os novos recursos do Visual Studio, consulte [destaques do produto para Visual Studio 2013](/previous-versions/visualstudio/visual-studio-2013/bb386063(v=vs.120)). |
-| [Onde está o SDK do DirectX?](../directx-sdk--august-2009-.md) | Contém diretrizes para desenvolvedores que desejam trazer seus projetos do DirectX para Microsoft Visual Studio. |
+| [Baixar o Visual Studio 2013](https://msdn.microsoft.com/windows/apps/br229516.aspx) | Você deve ter Visual Studio Express 2013 para Windows Desktop para criar jogos da Windows Store. Para obter um tour pelo Visual Studio, consulte [desenvolver aplicativos da Windows Store usando o visual studio 2012](/previous-versions/windows/apps/br211384(v=win.10)). Para obter informações sobre novos recursos no Visual Studio, consulte [Destaques do produto para Visual Studio 2013](/previous-versions/visualstudio/visual-studio-2013/bb386063(v=vs.120)). |
+| [Onde está o SDK do DirectX?](../directx-sdk--august-2009-.md) | Contém diretrizes para devs que querem colocar seus projetos DirectX em Microsoft Visual Studio. |
 
 ## <a name="sample-applications"></a>Aplicativos de exemplo
 
 | Tópico | Descrição |
 |-|-|
-| [Exemplo de Win32 do tutorial do Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample) | Exemplo de tutorial de Direct3D de desktop básico. |
-| [Exemplo de renderização de vídeo DirectX](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DirectX%20video%20rendering%20sample) | Um exemplo que demonstra a renderização de vídeo personalizada com o Direct3D. |
+| [Exemplo do Win32 do Tutorial do Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample) | Exemplo de tutorial básico do Direct3D da área de trabalho. |
+| [Exemplo de renderização de vídeo do DirectX](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DirectX%20video%20rendering%20sample) | Um exemplo que demonstra a renderização de vídeo personalizada com o Direct3D. |
 
-## <a name="review-key-direct3d-11-concepts"></a>Examinar os principais conceitos do Direct3D 11
+## <a name="review-key-direct3d-11-concepts"></a>Revisar os principais conceitos do Direct3D 11
 
 | Tópico | Descrição |
 |-|-|
-| [Pipeline de gráficos](/windows/desktop/direct3d11/overviews-direct3d-11-graphics-pipeline) | Cobre o pipeline básico do Direct3D 11 Graphics. |
-| [Renderização](/windows/desktop/direct3d11/overviews-direct3d-11-render) | Aborda os modelos de renderização Direct3D, componentes, sombreadores e fluxo de chamada de API. |
-| [Recursos](/windows/desktop/direct3d11/overviews-direct3d-11-resources) | Cobre "recursos" do Direct3D, como buffers e outros tipos de recursos de GPU. |
-| [Effect](/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects) | Aborda a instanciação e os efeitos do Direct3D multi-Shader.  |
-| [Como: criar uma cadeia de permuta](/windows/desktop/direct3d11/overviews-direct3d-11-devices-create-swap-chain) | Como criar a cadeia de permuta usada para desenhar pixels em uma região da tela. |
-| [Como: criar um dispositivo e um contexto imediato](/windows/desktop/direct3d11/overviews-direct3d-11-devices-initialize) | Como criar uma abstração de dispositivo Direct3D e um contexto imediato para desenho. |
+| [Pipeline de gráficos](/windows/desktop/direct3d11/overviews-direct3d-11-graphics-pipeline) | Aborda o pipeline de gráficos básico do Direct3D 11. |
+| [Renderização](/windows/desktop/direct3d11/overviews-direct3d-11-render) | Abrange os modelos de renderização direct3D, componentes, sombreadores e fluxo de chamada de API. |
+| [Recursos](/windows/desktop/direct3d11/overviews-direct3d-11-resources) | Abrange "recursos" do Direct3D, como buffers e outros tipos de recursos de GPU. |
+| [Efeitos](/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects) | Abrange a instanciamento e os efeitos do sombreador múltiplo Direct3D.  |
+| [Como criar uma cadeia de permuta](/windows/desktop/direct3d11/overviews-direct3d-11-devices-create-swap-chain) | Como criar a cadeia de permuta usada para desenhar pixels para uma região da tela. |
+| [Como criar um dispositivo e um contexto imediato](/windows/desktop/direct3d11/overviews-direct3d-11-devices-initialize) | Como criar uma abstração de dispositivo Direct3D e um contexto imediato para desenho. |
 | [Como criar um buffer de vértice](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-vertex-how-to) | Como criar uma lista simples de vértices de malha para processamento pela GPU. |
-| [Como: criar um buffer de índice](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to) | Como criar um buffer de índice que habilita o sombreador de vértice para percorrer a ordem dos vértices em uma malha. |
+| [Como criar um buffer de índice](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to) | Como criar um buffer de índice que habilita o sombreador de vértice para percorrer a ordem dos vértices em uma malha. |
 | [Como: criar um buffer de constantes](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to) | Como passar dados constantes (uniformes) entre a CPU e a GPU durante a renderização. |
 | [Como: criar uma textura](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-create) | Como criar uma textura ou outro recurso de buffer que pode ser amostrado pela GPU. |
 | [Como: inicializar uma textura a partir de um arquivo](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-how-to) | Como carregar uma textura de um arquivo e processá-lo para uso pelo pipeline do sombreador. |
@@ -65,27 +65,27 @@ Aqui estão alguns tópicos importantes. Configurar seu projeto do DirectX, accl
 | [Direct2D](/windows/desktop/Direct2D/direct2d-portal) | Documentação para as APIs do Direct2D, que dão suporte ao desenho de primitivos 2D. Normalmente, o Direct2D é usado para interfaces de usuário personalizadas, processamento de imagens e envio em lote e jogos simples. |
 | [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) | Documentação para as APIs do DirectWrite, que dão suporte à renderização e ao dimensionamento de fontes personalizadas. |
 | [Windows Imaging Component (WIC)](/windows/desktop/wic/-wic-api) | Documentação para as APIs do WIC, que são usadas para ler e gerenciar diferentes formatos de imagem de bitmap. |
-| [Superfícies do DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds) para texturas | Documentação para as APIs de DDS, que são usadas para compactação de textura 2D e descompactação em conjunto com as APIs do WIC. |
-| [DirectXMath](/windows/desktop/dxmath/directxmath-portal) | Documentação para as APIs do DirectXMath, que dão suporte ao Direct3D com um conjunto de tipos e funções adequadas para o desenvolvimento de gráficos em tempo real 3D. (Anteriormente XNAMath.) |
-| [DirectCompute](https://walbourn.github.io/) | Documentação para as APIs do DirectCompute, usadas para computação ou funcionalidade de sombreador de uso geral. |
+| [Superfícies do DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds) para texturas | Documentação das APIs DDS, que são usadas para compactação de textura 2D e descompactação em conjunto com as APIs do WIC. |
+| [DirectXMath](/windows/desktop/dxmath/directxmath-portal) | Documentação das APIs do DirectXMath, que suportam o Direct3D com um conjunto de tipos e funções adequados para o desenvolvimento de gráficos em tempo real 3D. (anteriormente XNAMath.) |
+| [Directcompute](https://walbourn.github.io/) | Documentação das APIs do DirectCompute, usadas para a funcionalidade de sombreador de computação ou uso geral. |
 
 ## <a name="audio-media-and-input-apis"></a>APIs de áudio, mídia e entrada
 
 | Tópico | Descrição |
 |-|-|
-| [Guia de Programação em XAudio2](/windows/desktop/xaudio2/programming-guide) | Nó de nível superior da documentação conceitual da API de áudio do XAudio2. |
-| [Referência de programação em XAudio2](/windows/desktop/xaudio2/programming-reference) | Nó de nível superior para a documentação de referência da API de áudio do XAudio2. |
-| [Guia de programação do XInput](/windows/desktop/xinput/programming-guide) | Nó de nível superior da documentação conceitual da API do controlador XInput. |
+| [Guia de Programação em XAudio2](/windows/desktop/xaudio2/programming-guide) | Nó de nível superior para a documentação conceitual da API de áudio XAudio2. |
+| [Referência de programação em XAudio2](/windows/desktop/xaudio2/programming-reference) | Nó de nível superior para a documentação de referência da API de áudio XAudio2. |
+| [Guia de Programação XInput](/windows/desktop/xinput/programming-guide) | Nó de nível superior para a documentação conceitual da API do controlador XInput. |
 | [Referência de programação XInput](/windows/desktop/xinput/programming-reference) | Nó de nível superior para a documentação de referência da API do controlador XInput. |
-| [Media Foundation](/windows/desktop/medfound/about-the-media-foundation-sdk) | Nó de nível superior para a documentação da API de reprodução de mídia (áudio/vídeo) do Media Foundation (MF). Normalmente, o MF é usado em jogos para reprodução de trilha sonora, enquanto XAudio2 é usado para áudio dinâmico. |
+| [Media Foundation](/windows/desktop/medfound/about-the-media-foundation-sdk) | Nó de nível superior para a documentação da API de reprodução de mídia Media Foundation (MF) (áudio/vídeo). Normalmente, o MF é usado em jogos para reprodução de conteúdo, enquanto XAudio2 é usado para áudio dinâmico. |
 
 ## <a name="port-to-directx-11"></a>Porta para DirectX 11
 
 | Tópico | Descrição |
 |-|-|
-| [Migrando para o Direct3D 11](/windows/desktop/direct3d11/d3d11-programming-guide-migrating) | Diretrizes básicas para mover a base de código DirectX 9 para DirectX 11. |
-| [Técnicas de codificação de uso duplo para jogos](https://walbourn.github.io/) | Postagem detalhada no blog sobre o desenvolvimento para os níveis de recurso DirectX 9 \_ \* e DirectX 11 \_ \* em um único aplicativo. |
-| [Implementando buffers de sombra para o nível de recurso do Direct3D 9](/previous-versions/windows/apps/jj262110(v=win.10)) | Diretrizes para implementar mapas de sombra no nível de recurso do DirectX 9 \_ \* . |
+| [Migrando para o Direct3D 11](/windows/desktop/direct3d11/d3d11-programming-guide-migrating) | Diretrizes básicas para mover sua base de código do DirectX 9 para o DirectX 11. |
+| [Técnicas de codificação de uso duplo para jogos](https://walbourn.github.io/) | Postagem de blog detalhada sobre como desenvolver para níveis de recursos do DirectX 9 e \_ \* directX 11 \_ \* em um único aplicativo. |
+| [Implementando buffers de sombra para o nível de recurso 9 do Direct3D](/previous-versions/windows/apps/jj262110(v=win.10)) | Diretrizes para implementar mapas de sombra no nível de recurso do DirectX 9 \_ \* . |
 
 ## <a name="work-with-c"></a>Trabalhar com C++
 
@@ -101,7 +101,7 @@ Se você for um velho lado com C++ em plataformas Windows, as coisas podem parec
 | [**Sistema de tipos (C++/CX)**](/cpp/cppcx/type-system-c-cx?view=vs-2019) | Conteúdo de referência para os tipos com suporte no C++/CX. |
 | [**Namespaces (C++/CX)**](/cpp/cppcx/namespaces-reference-c-cx?view=vs-2019) | Conteúdo de referência para os namespaces que contêm tipos específicos de C++ que podem ser usados em aplicativos da Windows Store. |
 
-| | |
+| Tópico | Descrição |
 |-|-|
 | [Programação assíncrona (DirectX e C++)](/previous-versions/windows/apps/hh994919(v=win.10)) | Saiba mais sobre programação assíncrona e multithread para aplicativos e jogos do DirectX. |
 | [Programação assíncrona em C++](/previous-versions/windows/apps/hh780559(v=win.10)) | Descreve as maneiras básicas de usar a classe Task para consumir Windows Runtime métodos assíncronos. |
@@ -110,18 +110,18 @@ Se você for um velho lado com C++ em plataformas Windows, as coisas podem parec
 
 ## <a name="additional-useful-libraries-for-windows-c-programming"></a>Bibliotecas úteis adicionais para programação do Windows C++
 
-| | |
+| Tópico | Descrição |
 |-|-|
-| [Biblioteca de modelos padrão do C++](https://msdn.microsoft.com/library/c191tb28(v=VS.71).aspx) | Windows Runtime tipos funcionam bem com os tipos de biblioteca de modelos padrão. A maioria dos aplicativos da Windows Store do C++ usa algoritmos e coleções de bibliotecas de modelos padrão, exceto no limite da ABI. |
-| [Biblioteca de Padrões Paralelos](/previous-versions/visualstudio/visual-studio-2010/dd492418(v=vs.100)) | A PPL fornece algoritmos e tipos que simplificam o paralelismo de tarefas e o paralelismo de dados na CPU.  |
-| [C++ Accelerated Massive Parallelism (C++ AMP)](/previous-versions/visualstudio/visual-studio-2012/hh265137(v=vs.110)) | C++ AMP fornece acesso à GPU para paralelismo de dados de uso geral em placas de vídeo que dão suporte ao DirectX 11. |
+| [Biblioteca de Modelos Padrão do C++](https://msdn.microsoft.com/library/c191tb28(v=VS.71).aspx) | Windows Runtime os tipos de biblioteca de modelos padrão se reproduzem bem. A maioria dos aplicativos da Windows Store em C++ usa coleções e algoritmos da Biblioteca de Modelos Padrão, exceto no limite da ABI. |
+| [Biblioteca de Padrões Paralelos](/previous-versions/visualstudio/visual-studio-2010/dd492418(v=vs.100)) | O PPL fornece algoritmos e tipos que simplificam o paralelismo de tarefas e o paralelismo de dados na CPU.  |
+| [C++ Accelerated Massive Parallelism (C++ AMP)](/previous-versions/visualstudio/visual-studio-2012/hh265137(v=vs.110)) | C++ AMP fornece acesso à GPU para paralelismo de dados de uso geral em placas de vídeo que suportam o DirectX 11. |
 
 ## <a name="blogs-and-other-resources"></a>Blogs e outros recursos
 
 | Tópico | Descrição |
 |-|-|
-| [Blog sobre jogos para Windows e DirectX](https://walbourn.github.io/) | Blog atualizado regularmente de um colaborador de desenvolvimento principal do DirectX e um excelente recurso para o DirectX desenvolvedores. |
-| [Blog de desenvolvedores do Windows DirectX](https://devblogs.microsoft.com/directx/) | O blog oficial do Windows DirectX. |
-| [Blog do DirectX de Shawn Hargreave](https://www.shawnhargreaves.com/blogindex.html)) | Blog de desenvolvimento de outro colaborador de desenvolvimento do Windows DirectX bem respeitado. |
-| [Kit de ferramentas do DirectX](https://directxtk.codeplex.com/) | Site do CodePlex para o kit de ferramentas do DirectX (DxTK), que contém uma série de APIs de suporte úteis para carregar malhas, reproduzir sons e outros comportamentos comuns. |
-| [Biblioteca de processamento de texturas DirectXTex](https://directxtex.codeplex.com/) | O site de plex de código para a DxTEX (biblioteca de processamento de textura do DirectX), que contém APIs de suporte para processamento de textura e compactação/descompactação. |
+| [Blog de Jogos para Windows e DirectX](https://walbourn.github.io/) | Blog atualizado regularmente de um colaborador dev principal do DirectX e um excelente recurso para devs do DirectX. |
+| [Blog do desenvolvedor do Windows DirectX](https://devblogs.microsoft.com/directx/) | O blog oficial do Windows DirectX. |
+| Blog do DirectX de [Leo Hargreave](https://www.shawnhargreaves.com/blogindex.html)) | Blog de dev de outro colaborador dev do Windows DirectX bem respeitado. |
+| [Kit de ferramentas do DirectX](https://directxtk.codeplex.com/) | Site do CodePlex para o DxTK (DirectX Tool Kit), que contém várias APIs de suporte úteis para carregar malhas, tocar sons e outros comportamentos comuns. |
+| [Biblioteca de processamento de texturas DirectXTex](https://directxtex.codeplex.com/) | Site do code plex para a DxTEX (Biblioteca de Processamento de Textura DirectX), que contém APIs de suporte para processamento de textura e compactação/descompactação. |

@@ -4,27 +4,27 @@ ms.assetid: 1347c3d6-67f6-4cea-9a93-9fc754755b47
 title: D3DVERTEXTEXTURESAMPLER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94ef68fd6228b615073c03fc578fc69591711f5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: c0f9526f38bac0f1f1af94b8714aa9b3c685a64c
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995083"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342961"
 ---
 # <a name="d3dvertextexturesampler"></a>D3DVERTEXTEXTURESAMPLER
 
 Constantes de amostra de textura de vértice.
 
-Essas constantes identificam os exemplos de textura usados por sombreadores de vértice.
+Essas constantes identificam os amostradores de textura usados por sombreadores de vértice.
 
 
 
-| \#definir                 | Descrição        |
+| \#Definir                 | Descrição        |
 |--------------------------|--------------------|
-| D3DVERTEXTEXTURESAMPLER0 | (D3DDMAPSAMPLER + 1) |
-| D3DVERTEXTEXTURESAMPLER1 | (D3DDMAPSAMPLER + 2) |
-| D3DVERTEXTEXTURESAMPLER2 | (D3DDMAPSAMPLER + 3) |
-| D3DVERTEXTEXTURESAMPLER3 | (D3DDMAPSAMPLER + 4) |
+| D3DVERTEXTEXTURESAMPLER0 | (D3DDMAPSAMPLER+1) |
+| D3DVERTEXTEXTURESAMPLER1 | (D3DDMAPSAMPLER+2) |
+| D3DVERTEXTEXTURESAMPLER2 | (D3DDMAPSAMPLER+3) |
+| D3DVERTEXTEXTURESAMPLER3 | (D3DDMAPSAMPLER+4) |
 
 
 
@@ -32,11 +32,11 @@ Essas constantes identificam os exemplos de textura usados por sombreadores de v
 
 ## <a name="d3ddmapsampler"></a>D3DDMAPSAMPLER
 
-Essa é uma constante interna usada pela amostra de textura no Tessellator.
+Essa é uma constante interna usada pelo amostrador de textura no mosaico.
 
 
 
-| \#definir       | Descrição                                           |
+| \#Definir       | Descrição                                           |
 |----------------|-------------------------------------------------------|
 | D3DDMAPSAMPLER | 256, que é o número máximo de amostras de textura. |
 
@@ -48,7 +48,7 @@ Essa é uma constante interna usada pela amostra de textura no Tessellator.
 
 
 
-|                          |             |
+| Requisito                         | Valor            |
 |--------------------------|-------------|
 | parâmetro                   | d3d9types. h |
 | Sistema operacional mínimo | Windows 98  |

@@ -4,12 +4,12 @@ description: A criação de um jogo do Microsoft DirectX para Windows é um desa
 ms.assetid: fd460c52-9854-4ffe-b89e-5219be2e11f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae09cd127a30401ae0493f5dd770fe1e67607b45
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4bac8ca2805fed9ec42faf9deda9ddd51da39685
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105796173"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343581"
 ---
 # <a name="get-started-with-directx-for-windows"></a>Introdução ao DirectX para Windows
 
@@ -33,22 +33,22 @@ Pronto para começar? Vamos examinar antes de nosso início. Você:
 
 -   Uma instalação atualizada e funcional do Windows 8.1.
 -   Uma instalação do [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
--   Um espírito intrépido e um desejo de saber mais sobre o desenvolvimento de jogos DirectX!
+-   Um cérebro intrípido e um desejo de saber mais sobre o desenvolvimento de jogos do DirectX!
 
 ## <a name="next-steps"></a>Próximas etapas
 
 
 
-|                                                                                                    |                                                                                                           |
+| Tópico                                                                                                   | Descrição                                                                                                           |
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Trabalhar com recursos do dispositivo DirectX](work-with-dxgi.md)                                           | Saiba como usar DXGI para criar um dispositivo gráfico virtualizado e criar e configurar uma cadeia de permuta.     |
-| [Entender o pipeline de renderização do Direct3D 11](understand-the-directx-11-2-graphics-pipeline.md) | Saiba como se conectar à classe de recursos do dispositivo DirectX e desenhar usando o pipeline de gráficos do Direct3D. |
-| [Trabalhar com sombreadores e recursos de sombreador](work-with-shaders-and-shader-resources.md)               | Saiba como escrever programas de sombreador HLSL para estágios de pipeline de gráficos do Direct3D.                            |
+| [Trabalhar com recursos do dispositivo DirectX](work-with-dxgi.md)                                           | Saiba como usar o DXGI para criar um dispositivo gráfico virtualizado e criar e configurar uma cadeia de permuta.     |
+| [Entender o pipeline de renderização do Direct3D 11](understand-the-directx-11-2-graphics-pipeline.md) | Saiba como conectar-se à classe de recursos do dispositivo DirectX e desenhar usando o pipeline de gráficos direct3D. |
+| [Trabalhar com sombreadores e recursos de sombreador](work-with-shaders-and-shader-resources.md)               | Saiba como escrever programas de sombreador HLSL para estágios de pipeline de gráficos direct3D.                            |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

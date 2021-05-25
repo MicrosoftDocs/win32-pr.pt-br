@@ -1,7 +1,7 @@
 ---
-description: Define o modo de mesclagem com suporte.
+description: Define o modo de combinação com suporte.
 ms.assetid: 60ff384c-15a0-4c6f-9e2c-59fdea76b7a1
-title: Enumeração D3DBLEND (D3D9Types. h)
+title: Enumeração D3DBLEND (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: d8d779ad714e396f9c9a82bbbc42ddd09b76e2ac
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 55edb432913720f58860d4f5cb87d8da9b9a8681
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930560"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343381"
 ---
 # <a name="d3dblend-enumeration"></a>Enumeração D3DBLEND
 
-Define o modo de mesclagem com suporte.
+Define o modo de combinação com suporte.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -56,59 +56,59 @@ typedef enum D3DBLEND {
 
 <dl> <dt>
 
-<span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND \_ zero**
+<span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND \_ ZERO**
 </dt> <dd>
 
-O fator de mistura é (0, 0, 0, 0).
+O fator blend é (0, 0, 0, 0).
 
 </dd> <dt>
 
-<span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND \_ um**
+<span id="D3DBLEND_ONE"></span><span id="d3dblend_one"></span>**D3DBLEND \_ ONE**
 </dt> <dd>
 
-O fator de mistura é (1, 1, 1, 1).
+O fator blend é (1, 1, 1, 1).
 
 </dd> <dt>
 
 <span id="D3DBLEND_SRCCOLOR"></span><span id="d3dblend_srccolor"></span>**D3DBLEND \_ SRCCOLOR**
 </dt> <dd>
 
-O fator de mistura é (RS, GS, BS, as).
+O fator blend é (Rs, Gs, Bs, As).
 
 </dd> <dt>
 
 <span id="D3DBLEND_INVSRCCOLOR"></span><span id="d3dblend_invsrccolor"></span>**D3DBLEND \_ INVSRCCOLOR**
 </dt> <dd>
 
-O fator de mistura é (1-RS, 1-GS, 1-BS, 1-as).
+O fator blend é (1 - Rs, 1 - Gs, 1 - Bs, 1 - As).
 
 </dd> <dt>
 
 <span id="D3DBLEND_SRCALPHA"></span><span id="d3dblend_srcalpha"></span>**D3DBLEND \_ SRCALPHA**
 </dt> <dd>
 
-O fator de mistura é (como, como, como).
+O fator blend é (As, As, As, As).
 
 </dd> <dt>
 
 <span id="D3DBLEND_INVSRCALPHA"></span><span id="d3dblend_invsrcalpha"></span>**D3DBLEND \_ INVSRCALPHA**
 </dt> <dd>
 
-O fator de mistura é (1-como, 1-como, 1-como, 1-como).
+O fator blend é ( 1 - As, 1 - As, 1 - As, 1 - As).
 
 </dd> <dt>
 
 <span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND \_ DESTALPHA**
 </dt> <dd>
 
-O<sub>fator de mistura</sub> é<sub>(a d a d</sub> <sub>a d</sub> <sub>).</sub>
+O fator blend é (A<sub>d</sub> A<sub>d</sub> A<sub>d</sub> A<sub>d</sub>).
 
 </dd> <dt>
 
 <span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND \_ INVDESTALPHA**
 </dt> <dd>
 
-O fator de mistura é (1-A<sub>d</sub> 1-a<sub>d</sub> 1-A<sub>d 1-a</sub> <sub>d</sub>).
+O fator blend é (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub>).
 
 </dd> <dt>
 
@@ -164,13 +164,11 @@ Fator de mistura de cor constante invertido usado pelo misturador de buffer de q
 <span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND \_ SRCCOLOR2**
 </dt> <dd>
 
-O fator de mistura é (PSOutColor \[ 1 \] <sub>r</sub>, PSOutColor \[ 1 \] <sub>g</sub>, PSOutColor \[ 1 \] <sub>b</sub>, não usado). Consulte [mesclagem de destino de renderização](#render-target-blending).
+O fator blend é (PSOutColor \[ 1 \] <sub>r,</sub>PSOutColor \[ 1 \] <sub>g,</sub>PSOutColor \[ 1 \] <sub>b</sub>, não usado). Consulte [Renderizar mesclagem de destino.](#render-target-blending)
 
+Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-
-|                                                                                                                     |
-|---------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/> |
+- Esse sinalizador está disponível apenas no Direct3D 9Ex.
 
 
 
@@ -181,13 +179,12 @@ O fator de mistura é (PSOutColor \[ 1 \] <sub>r</sub>, PSOutColor \[ 1 \] <sub>
 <span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND \_ INVSRCCOLOR2**
 </dt> <dd>
 
-O fator de mistura é (1-PSOutColor \[ 1 \] <sub>r</sub>, 1-PSOutColor \[ 1 \] <sub>g</sub>, 1-PSOutColor \[ 1 \] <sub>b</sub>, não usado)). Consulte [mesclagem de destino de renderização](#render-target-blending).
+O fator blend é (1 - PSOutColor \[ 1 \] <sub>r</sub>, 1 - PSOutColor \[ 1 \] <sub>g</sub>, 1 - PSOutColor \[ 1 \] <sub>b</sub>, não usado)). Consulte [Renderizar mesclagem de destino.](#render-target-blending)
 
 
+Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-|                                                                                                                     |
-|---------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/> |
+- Esse sinalizador está disponível apenas no Direct3D 9Ex.
 
 
 
@@ -195,18 +192,18 @@ O fator de mistura é (1-PSOutColor \[ 1 \] <sub>r</sub>, 1-PSOutColor \[ 1 \] <
 
 </dd> <dt>
 
-<span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND \_ forçar \_ DWORD**
+<span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Nas descrições de membro anteriores, os valores RGBA da origem e do destino são indicados pelos subscritos s e d.
+Nas descrições do membro anterior, os valores RGBA da origem e do destino são indicados pelos subscritos s e d.
 
-Os valores neste tipo enumerado são usados pelos seguintes Estados de renderização:
+Os valores nesse tipo enumerado são usados pelos seguintes estados de renderização:
 
 -   D3DRS \_ DESTBLEND
 -   D3DRS \_ SRCBLEND

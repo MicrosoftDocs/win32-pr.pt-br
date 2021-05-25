@@ -1,28 +1,28 @@
 ---
-description: São constantes de sombreador e efeito.
+description: Essas são constantes de efeito e sombreador.
 ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
 title: Constantes de efeito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aaa3920bb9483526e264b7b16def448d6915feb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087439"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342751"
 ---
 # <a name="effect-constants"></a>Constantes de efeito
 
-São constantes de sombreador e efeito.
+Essas são constantes de efeito e sombreador.
 
--   [**\_Parâmetro D3DX**](d3dx-parameter.md)
+-   [**PARÂMETRO \_ D3DX**](d3dx-parameter.md)
 -   [D3DXFX](d3dxfx.md)
 
-Os efeitos usam [identificadores (Direct3D 9)](handles.md) para fazer referência a técnicas, passagens, anotações e parâmetros.
+Os efeitos [usam alças (Direct3D 9)](handles.md) para referenciar técnicas, passagens, anotações e parâmetros.
 
 
 
-|         |        |            |
+| Parâmetro        | Efeito       |  Handle          |
 |---------|--------|------------|
 | typedef | LPCSTR | D3DXHANDLE |
 

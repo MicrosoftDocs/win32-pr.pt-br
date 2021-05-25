@@ -4,12 +4,12 @@ ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8046c324511f2b308243d62fec1b6508a1d483ed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8c341ccfcbcc566d65e7139813c676e2286e25cf
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087964"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342841"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 
@@ -49,7 +49,7 @@ Certifique-se de especificar a Convenção de chamada de [**tipos de dados do Wi
 
 
 
-|                          |            |
+| Requisito                         | Valor           |
 |--------------------------|------------|
 | parâmetro                   | d3dx9tex. h |
 | Bibliotecas de importação           | d3dx9. lib  |

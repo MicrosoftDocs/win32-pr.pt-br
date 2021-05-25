@@ -4,12 +4,12 @@ ms.assetid: 813a2b4b-6577-4cdf-a2e6-e06870638354
 title: D3DXF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 073887c6cc93754ead01ce379310a9be09edc88f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e230fc08ac4d7f8713959f2025f67262046ecea5
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105796115"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343641"
 ---
 # <a name="d3dxf"></a>D3DXF
 
@@ -41,23 +41,23 @@ A tabela a seguir especifica opções de carregamento de arquivo com arquivos. x
 |-------------------------------|-------|----------------------------|
 | D3DXF \_ fileload \_ defile     | 0     | Carregar dados de um arquivo.     |
 | D3DXF \_ fileload \_ FROMWFILE    | 1     | Carregar dados de um arquivo.     |
-| D3DXF \_ fileload \_ FROMRESOURCE | 2     | Carregar dados de um recurso. |
-| D3DXF \_ fileload \_ FROMMEMORY   | 3     | Carregar dados da memória.     |
+| D3DXF \_ FILELOAD \_ FROMRESOURCE | 2     | Carregar dados de um recurso. |
+| D3DXF \_ FILELOAD \_ FROMMEMORY   | 3     | Carregar dados da memória.     |
 
 
 
  
 
-## <a name="file-save-options"></a>Opções de salvamento de arquivo
+## <a name="file-save-options"></a>Opções de salvar arquivo
 
-A tabela a seguir especifica opções de gravação e de carregamento de arquivo com arquivos. x:
+A tabela a seguir especifica opções de salvar e carregar arquivos com arquivos .x:
 
 
 
-| \#definir                 | Valor | Descrição                    |
+| \#Definir                 | Valor | Descrição                    |
 |--------------------------|-------|--------------------------------|
-| D3DXF \_ FILEsalvar \_ ToFile  | 0     | Salvar em um arquivo.                |
-| D3DXF \_ FileSave \_ TOWFILE | 1     | Salve em um arquivo de caractere largo. |
+| ARQUIVOS D3DXFAVE \_ \_ TOFILE  | 0     | Salve em um arquivo.                |
+| ARQUIVOS D3DXFAVE \_ \_ TOWFILE | 1     | Salve em um arquivo de caractere largo. |
 
 
 
@@ -67,9 +67,9 @@ A tabela a seguir especifica opções de gravação e de carregamento de arquivo
 
 
 
-|                          |            |
+| Requisito                         | Valor           |
 |--------------------------|------------|
-| parâmetro                   | d3dx9xof. h |
+| parâmetro                   | d3dx9xof.h |
 | Sistema operacional mínimo | Windows 98 |
 
 

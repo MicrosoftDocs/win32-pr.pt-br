@@ -1,40 +1,40 @@
 ---
-title: Compartilhamento de superfície entre as APIs de gráficos do Windows
-description: Este tópico fornece uma visão geral técnica da interoperabilidade usando o compartilhamento de superfície entre as APIs de gráficos do Windows, incluindo Direct3D 11, Direct2D, DirectWrite, Direct3D 10 e Direct3D 9Ex.
+title: Compartilhamento de superfície entre APIs gráficas do Windows
+description: Este tópico fornece uma visão geral técnica da interoperabilidade usando o compartilhamento de superfície entre APIs gráficas do Windows, incluindo Direct3D 11, Direct2D, DirectWrite, Direct3D 10 e Direct3D 9Ex.
 ms.assetid: 65abf33e-3d15-42ff-99bd-674f24da773e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d889797902c964e603adefc51b25039afca7d46
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 1032cb1cf9b16280088f00e79e7e59bb7f1510b1
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "103641965"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343611"
 ---
-# <a name="surface-sharing-between-windows-graphics-apis"></a>Compartilhamento de superfície entre as APIs de gráficos do Windows
+# <a name="surface-sharing-between-windows-graphics-apis"></a>Compartilhamento de superfície entre APIs gráficas do Windows
 
-Este tópico fornece uma visão geral técnica da interoperabilidade usando o compartilhamento de superfície entre as APIs de gráficos do Windows, incluindo Direct3D 11, Direct2D, DirectWrite, Direct3D 10 e Direct3D 9Ex. Se você já tiver um conhecimento prático dessas APIs, este documento poderá ajudá-lo a usar várias APIs para renderizar a mesma superfície em um aplicativo projetado para os sistemas operacionais Windows 7 ou Windows Vista. Este tópico também fornece diretrizes de práticas recomendadas e ponteiros para recursos adicionais.
+Este tópico fornece uma visão geral técnica da interoperabilidade usando o compartilhamento de superfície entre APIs gráficas do Windows, incluindo Direct3D 11, Direct2D, DirectWrite, Direct3D 10 e Direct3D 9Ex. Se você já tiver um conhecimento prático dessas APIs, este documento poderá ajudá-lo a usar várias APIs para renderizar na mesma superfície em um aplicativo projetado para os sistemas operacionais Windows 7 ou Windows Vista. Este tópico também fornece diretrizes de melhores práticas e ponteiros para recursos adicionais.
 
 > [!Note]  
-> Para a interoperabilidade Direct2D e DirectWrite no tempo de execução do DirectX 11,1, você pode usar [dispositivos Direct2D e contextos de dispositivo](/windows/desktop/Direct2D/devices-and-device-contexts) para renderizar diretamente em dispositivos Direct3D 11.
+> Para interoperabilidade direct2D e DirectWrite no runtime do DirectX 11.1, você pode usar os contextos de dispositivo e dispositivos [direct2D](/windows/desktop/Direct2D/devices-and-device-contexts) para renderizar diretamente para dispositivos Direct3D 11.
 
- 
+ 
 
 Este tópico inclui as seções a seguir.
 
 -   [Introdução](#introduction)
 -   [Visão geral da interoperabilidade de API](#api-interoperability-overview)
 -   [Cenários de interoperabilidade](#interoperability-scenarios)
-    -   [Compartilhamento de dispositivo Direct3D 10,1 com Direct2D](#direct3d-101-device-sharing-with-direct2d)
-    -   [Superfícies compartilhadas sincronizadas do DXGI 1,1](#dxgi-11-synchronized-shared-surfaces)
-    -   [Interoperabilidade entre as APIs baseadas em Direct3D 9Ex e DXGI](#interoperability-between-direct3d-9ex-and-dxgi-based-apis)
+    -   [Compartilhamento de dispositivo do Direct3D 10.1 com Direct2D](#direct3d-101-device-sharing-with-direct2d)
+    -   [Superfícies compartilhadas sincronizadas do DXGI 1.1](#dxgi-11-synchronized-shared-surfaces)
+    -   [Interoperabilidade entre o Direct3D 9Ex e as APIs baseadas em DXGI](#interoperability-between-direct3d-9ex-and-dxgi-based-apis)
 -   [Conclusão](#conclusion)
 
 ## <a name="introduction"></a>Introdução
 
-Neste documento, a interoperabilidade da API gráfica do Windows refere-se ao compartilhamento da mesma superfície de renderização por APIs diferentes. Esse tipo de interoperabilidade permite que os aplicativos criem exibições atraentes aproveitando várias APIs de gráficos do Windows e facilitam a migração para novas tecnologias, mantendo a compatibilidade com as APIs existentes.
+Neste documento, a interoperabilidade da API de gráficos do Windows refere-se ao compartilhamento da mesma superfície de renderização por APIs diferentes. Esse tipo de interoperabilidade permite que os aplicativos criem exibições atraentes aproveitando várias APIs gráficas do Windows e facilitando a migração para novas tecnologias mantendo a compatibilidade com as APIs existentes.
 
-No Windows 7 (e no Windows Vista SP2 com o Windows 7 Interop Pack, vista 7IP), as APIs de renderização de gráficos são Direct3D 11, Direct2D, Direct3D 10,1, Direct3D 10,0, Direct3D 9Ex, Direct3D 9c e anteriores do Direct3D APIs, bem como GDI e GDI+. O Windows Imaging Component (WIC) e o DirectWrite são tecnologias relacionadas para processamento de imagens e o Direct2D executa a renderização de texto. A API de aceleração de vídeo do DirectX (DXVA), baseada no Direct3D 9c e no Direct3D 9Ex, é usada para processamento de vídeo.
+No Windows 7 (e Windows Vista SP2 com Windows 7 Interop Pack, Vista 7IP), as APIs de renderização de gráficos são Direct3D 11, Direct2D, Direct3D 10.1, Direct3D 10.0, Direct3D 9Ex, Direct3D 9c e APIs direct3D anteriores, bem como GDI e GDI+. Windows Imaging Component (WIC) e DirectWrite são tecnologias relacionadas para processamento de imagem e o Direct2D executa a renderização de texto. A DXVA (API de Aceleração de Vídeo) do DirectX, baseada em Direct3D 9c e Direct3D 9Ex, é usada para processamento de vídeo.
 
 À medida que as APIs de gráficos do Windows evoluem para serem baseadas em Direct3D, a Microsoft está investindo mais esforço na garantia de interoperabilidade entre as APIs. APIs do Direct3D e APIs de nível mais alto desenvolvidas com base em APIs do Direct3D também fornecem suporte quando necessário para a compatibilidade de ponte com APIs mais antigas. Para ilustrar, os aplicativos Direct2D podem usar o Direct3D 10,1 compartilhando um dispositivo Direct3D 10,1. Além disso, as APIs do Direct3D 11, Direct2D e Direct3D 10,1 podem aproveitar a (infraestrutura de gráficos do DirectX) 1,1, que permite superfícies compartilhadas sincronizadas que dão suporte total à interoperabilidade entre essas APIs. As APIs baseadas em DXGI 1,1 interoperam com GDI e com GDI+ por associação, obtendo o contexto do dispositivo GDI de uma superfície do DXGI 1,1. Para obter mais informações, consulte a documentação de interoperabilidade de DXGI e GDI disponível no MSDN.
 
@@ -46,23 +46,23 @@ Observe que os cenários de interoperabilidade neste documento referem-se a vár
 
 ## <a name="api-interoperability-overview"></a>Visão geral da interoperabilidade de API
 
-A interoperabilidade do compartilhamento de superfície de APIs de gráficos do Windows pode ser descrita em termos de cenários de API para API e a funcionalidade de interoperabilidade correspondente. A partir do Windows 7 e a partir do Windows Vista SP2 com 7IP, novas APIs e tempos de execução associados incluem Direct2D e tecnologias relacionadas: Direct3D 11 e DXGI 1,1. O desempenho do GDI também foi aprimorado no Windows 7. O Direct3D 10,1 foi introduzido no Windows Vista SP1. O diagrama a seguir mostra o suporte de interoperabilidade entre APIs.
+A interoperabilidade do compartilhamento de superfície de APIs de gráficos do Windows pode ser descrita em termos de cenários de API para API e a funcionalidade de interoperabilidade correspondente. A partir do Windows 7 e a partir do Windows Vista SP2 com 7IP, novas APIs e runtimes associados incluem Direct2D e tecnologias relacionadas: Direct3D 11 e DXGI 1.1. O desempenho da GDI também foi aprimorado no Windows 7. O Direct3D 10.1 foi introduzido no Windows Vista SP1. O diagrama a seguir mostra o suporte à interoperabilidade entre APIs.
 
-![diagrama de suporte de interoperabilidade entre APIs de gráficos do Windows](images/surface-sharing-interoperability.png)
+![diagrama de suporte de interoperabilidade entre apis gráficas do Windows](images/surface-sharing-interoperability.png)
 
-Neste diagrama, as setas mostram cenários de interoperabilidade nos quais a mesma superfície pode ser acessível pelas APIs conectadas. As setas azuis indicam mecanismos de interoperabilidade introduzidos no Windows Vista. As setas verdes indicam o suporte de interoperabilidade para novas APIs ou aprimoramentos que ajudam as APIs mais antigas a interoperar com as APIs mais recentes. Por exemplo, as setas verdes representam o compartilhamento de dispositivos, o suporte à superfície compartilhada sincronizada, o auxiliar de sincronização do Direct3D 9Ex/DXGI e a obtenção de um contexto de dispositivo GDI de uma superfície compatível.
+Neste diagrama, as setas mostram cenários de interoperabilidade nos quais a mesma superfície pode ser acessível pelas APIs conectadas. As setas azuis indicam mecanismos de interoperabilidade introduzidos no Windows Vista. As setas verdes indicam suporte à interoperabilidade para novas APIs ou melhorias que ajudam as APIs mais antigas a interoperar com APIs mais novas. Por exemplo, as setas verdes representam o compartilhamento de dispositivos, o suporte à superfície compartilhada sincronizada, o auxiliar de sincronização direct3D 9Ex/DXGI e a obtenção de um contexto de dispositivo GDI de uma superfície compatível.
 
 ## <a name="interoperability-scenarios"></a>Cenários de interoperabilidade
 
-A partir do Windows 7 e do Windows Vista 7IP, as ofertas principais das APIs de gráficos do Windows dão suporte à renderização de várias APIs na mesma superfície de DXGI 1,1.
+A partir do Windows 7 e do Windows Vista 7IP, as ofertas base das APIs gráficas do Windows oferecem suporte à renderização de várias APIs para a mesma superfície do DXGI 1.1.
 
-**Direct3D 11, Direct3D 10,1, Direct2D – interoperabilidade entre si**
+**Direct3D 11, Direct3D 10.1, Direct2D — Interoperabilidade entre si**
 
-As APIs do Direct3D 11, Direct3D 10,1 e Direct2D (e suas APIs relacionadas, como DirectWrite e WIC) podem interoperar entre si usando o compartilhamento de dispositivo Direct3D 10,1 ou superfícies compartilhadas sincronizadas.
+As APIs Direct3D 11, Direct3D 10.1 e Direct2D (e suas APIs relacionadas, como DirectWrite e WIC) podem interoperar entre si usando o compartilhamento de dispositivos Direct3D 10.1 ou superfícies compartilhadas sincronizadas.
 
-### <a name="direct3d-101-device-sharing-with-direct2d"></a>Compartilhamento de dispositivo Direct3D 10,1 com Direct2D
+### <a name="direct3d-101-device-sharing-with-direct2d"></a>Compartilhamento de dispositivo do Direct3D 10.1 com Direct2D
 
-O compartilhamento de dispositivos entre o Direct2D e o Direct3D 10,1 permite que um aplicativo use ambas as APIs para renderizar de forma direta e eficiente na mesma superfície do DXGI 1,1, usando o mesmo objeto de dispositivo Direct3D subjacente. O Direct2D fornece a capacidade de chamar APIs Direct2D usando um dispositivo Direct3D 10,1 existente, aproveitando o fato de que o Direct2D é criado sobre os tempos de execução do Direct3D 10,1 e DXGI 1,1. Os trechos de código a seguir ilustram como o Direct2D Obtém o destino de renderização de dispositivo Direct3D 10,1 de uma superfície DXGI 1,1 associada ao dispositivo. O destino de renderização do dispositivo Direct3D 10,1 pode executar chamadas de desenho Direct2D entre as APIs BeginDraw e EndDraw.
+O compartilhamento de dispositivos entre o Direct2D e o Direct3D 10.1 permite que um aplicativo use ambas as APIs para renderizar de forma direta e eficiente na mesma superfície do DXGI 1.1, usando o mesmo objeto de dispositivo Direct3D subjacente. O Direct2D fornece a capacidade de chamar APIs do Direct2D usando um dispositivo Direct3D 10.1 existente, aproveitando o fato de que o Direct2D é criado com base nos runtimes do Direct3D 10.1 e do DXGI 1.1. Os snippets de código a seguir ilustram como o Direct2D obtém o destino de renderização do dispositivo Direct3D 10.1 de uma superfície DXGI 1.1 associada ao dispositivo. O destino de renderização do dispositivo Direct3D 10,1 pode executar chamadas de desenho Direct2D entre as APIs BeginDraw e EndDraw.
 
 
 ```C++
@@ -129,16 +129,16 @@ O Direct2D pode usar o rasterizador de software WARP10 para compartilhar o dispo
 
 ### <a name="dxgi-11-synchronized-shared-surfaces"></a>Superfícies compartilhadas sincronizadas do DXGI 1,1
 
-As APIs do Direct3D 11, Direct3D 10,1 e Direct2D usam DXGI 1,1, que fornece a funcionalidade para sincronizar a leitura e gravação na mesma superfície de memória de vídeo (DXGISurface1) por dois ou mais dispositivos Direct3D. Os dispositivos de renderização que usam superfícies compartilhadas sincronizadas podem ser dispositivos Direct3D 10,1 ou Direct3D 11, cada um executando no mesmo processo ou processos cruzados.
+As APIs do Direct3D 11, Direct3D 10,1 e Direct2D usam DXGI 1,1, que fornece a funcionalidade para sincronizar a leitura e gravação na mesma superfície de memória de vídeo (DXGISurface1) por dois ou mais dispositivos Direct3D. Os dispositivos de renderização que usam superfícies compartilhadas sincronizadas podem ser dispositivos Direct3D 10.1 ou Direct3D 11, cada um em execução no mesmo processo ou processos cruzados.
 
-Os aplicativos podem usar superfícies compartilhadas sincronizadas para interoperar entre qualquer dispositivo baseado em DXGI 1,1, como o Direct3D 11 e o Direct3D 10,1, ou entre o Direct3D 11 e o Direct2D, obtendo o dispositivo Direct3D 10,1 do objeto de destino Direct2D render.
+Os aplicativos podem usar superfícies compartilhadas sincronizadas para interoperar entre qualquer dispositivo baseado em DXGI 1.1, como Direct3D 11 e Direct3D 10.1 ou entre Direct3D 11 e Direct2D, obtendo o dispositivo Direct3D 10.1 do objeto de destino de renderização direct2D.
 
-No Direct3D 10,1 e nas APIs posteriores, para usar DXGI 1,1, verifique se o dispositivo Direct3D foi criado usando um objeto de adaptador de 1,1 DXGI, que é enumerado a partir do objeto de fábrica do DXGI 1,1. Chame CreateDXGIFactory1 para criar o objeto IDXGIFactory1 e EnumAdapters1 para enumerar o objeto IDXGIAdapter1. O objeto IDXGIAdapter1 precisa ser passado como parte da chamada D3D10CreateDevice ou D3D10CreateDeviceAndSwapChain. Para obter mais informações sobre APIs de DXGI 1,1, consulte o [Guia de programação para dxgi](https://msdn.microsoft.com/library/ee418147(VS.85).aspx).
+No Direct3D 10.1 e em APIs posteriores, para usar o DXGI 1.1, verifique se o dispositivo Direct3D foi criado usando um objeto de adaptador DXGI 1.1, que é enumerado do objeto de fábrica DXGI 1.1. Chame CreateDXGIFactory1 para criar o objeto IDXGIFactory1 e EnumAdapters1 para enumerar o objeto IDXGIAdapter1. O objeto IDXGIAdapter1 precisa ser passado como parte da chamada D3D10CreateDevice ou D3D10CreateDeviceAndSwapChain. Para obter mais informações sobre AS APIs do DXGI 1.1, consulte o Guia de Programação [para DXGI.](https://msdn.microsoft.com/library/ee418147(VS.85).aspx)
 
 ### <a name="apis"></a>APIs
 
-**D3D10 \_ \_ \_ dishared \_ KEYEDMUTEX de recursos**  
-Ao criar o recurso compartilhado sincronizado, defina \_ d3d10 \_ do recurso variado \_ \_ KEYEDMUTEX no \_ sinalizador de recurso variado do d3d10 \_ \_ .  
+**D3D10 \_ RESOURCE \_ MISC \_ SHARED \_ KEYEDMUTEX**  
+Ao criar o recurso compartilhado sincronizado, de definido D3D10 \_ RESOURCE \_ MISC \_ SHARED KEYEDMUTEX no SINALIZADOR MISC de RECURSOS \_ D3D10. \_ \_ \_  
 
 
 ```C++
@@ -153,16 +153,16 @@ typedef enum D3D10_RESOURCE_MISC_FLAG {
 
 
 
-**D3D10 \_ \_ \_ dishared \_ KEYEDMUTEX de recursos**  
-Habilita o recurso criado para ser sincronizado usando as APIs IDXGIKeyedMutex:: AcquireSync e ReleaseSync. As seguintes APIs do Direct3D 10,1 de criação de recursos que usam um \_ parâmetro de sinalizador variado de recurso d3d10 foram \_ \_ estendidas para dar suporte ao novo sinalizador.  
+**D3D10 \_ RESOURCE \_ MISC \_ SHARED \_ KEYEDMUTEX**  
+Permite que o recurso criado seja sincronizado usando as APIs IDXGIKeyedMutex::AcquireSync e ReleaseSync. As APIs direct3D 10.1 de criação de recursos a seguir que levam um parâmetro D3D10 RESOURCE MISC FLAG foram estendidas para dar suporte ao \_ \_ novo \_ sinalizador.  
 
 -   ID3D10Device1::CreateTexture1D
 -   ID3D10Device1::CreateTexture2D
 -   ID3D10Device1::CreateTexture3D
--   ID3D10Device1:: CreateBuffer
+-   ID3D10Device1::CreateBuffer
 
   
-Se qualquer uma das funções listadas for chamada com o \_ \_ sinalizador de \_ KEYEDMUTEX d3d10 dishared do recurso \_ , a interface retornada poderá ser consultada para uma interface IDXGIKeyedMutex, que implementa APIs AcquireSync e ReleaseSync para sincronizar o acesso à superfície. O dispositivo que cria a superfície e qualquer outro dispositivo que abra a superfície (usando OpenSharedResource) é necessário para chamar IDXGIKeyedMutex:: AcquireSync antes de qualquer comando de renderização na superfície e IDXGIKeyedMutex:: ReleaseSync quando a renderização é concluída.  
+Se qualquer uma das funções listadas for chamada com o sinalizador D3D10 RESOURCE MISC SHARED KEYEDMUTEX definido, a interface retornada poderá ser consultada para uma \_ \_ interface \_ \_ IDXGIKeyedMutex, que implementa APIs AcquireSync e ReleaseSync para sincronizar o acesso à superfície. O dispositivo que cria a superfície e qualquer outro dispositivo que abra a superfície (usando OpenSharedResource) é necessário para chamar IDXGIKeyedMutex:: AcquireSync antes de qualquer comando de renderização na superfície e IDXGIKeyedMutex:: ReleaseSync quando a renderização é concluída.  
 Os dispositivos WARP e REF não dão suporte a recursos compartilhados. A tentativa de criar um recurso com esse sinalizador em um dispositivo WARP ou REF fará com que o método Create retorne um \_ código de erro E OUTOFMEMORY.  
 **INTERFACE IDXGIKEYEDMUTEX**  
 Uma nova interface no DXGI 1,1, IDXGIKeyedMutex, representa um mutex com chave, que permite o acesso exclusivo a um recurso compartilhado que é usado por vários dispositivos. Para obter a documentação de referência sobre essa interface e seus dois métodos, AcquireSync e ReleaseSync, consulte [IDXGIKeyedMutex](https://msdn.microsoft.com/library/ee421920(VS.85).aspx).  
@@ -291,25 +291,25 @@ result = g_pDXGIKeyedMutex_dev1->ReleaseSync(0);
 
 
 
-Observe que um aplicativo do mundo real sempre pode ser renderizado para uma superfície intermediária que é então copiada na superfície compartilhada para evitar que um dispositivo espere em outro dispositivo que compartilhe a superfície.
+Observe que um aplicativo do mundo real sempre pode renderizar para uma superfície intermediária que é copiada para a superfície compartilhada para impedir que qualquer dispositivo que aguarda em outro dispositivo que compartilhe a superfície.
 
 ### <a name="using-synchronized-shared-surfaces-with-direct2d-and-direct3d-11"></a>Usando superfícies compartilhadas sincronizadas com Direct2D e Direct3D 11
 
-Da mesma forma, para o compartilhamento entre as APIs do Direct3D 11 e do Direct3D 10,1, uma superfície compartilhada sincronizada pode ser criada a partir de um dispositivo de API e compartilhada com os outros dispositivos de API, dentro ou fora do processo.
+Da mesma forma, para compartilhar entre as APIs direct3D 11 e Direct3D 10.1, uma superfície compartilhada sincronizada pode ser criada a partir de um dispositivo de API e compartilhada com os outros dispositivos de API, dentro ou fora do processo.
 
-Os aplicativos que usam o Direct2D podem compartilhar um dispositivo Direct3D 10,1 e usar uma superfície compartilhada sincronizada para interoperar com o Direct3D 11 ou outros dispositivos do Direct3D 10,1, independentemente de eles pertencerem ao mesmo processo ou a processos diferentes. No entanto, para aplicativos de processo único, de thread único, o compartilhamento de dispositivo é o método mais alto de desempenho e eficiente de interoperabilidade entre o Direct2D e o Direct3D 10 ou o Direct3D 11.
+Os aplicativos que usam o Direct2D podem compartilhar um dispositivo Direct3D 10.1 e usar uma superfície compartilhada sincronizada para interoperar com o Direct3D 11 ou outros dispositivos Direct3D 10.1, independentemente de pertencerem ao mesmo processo ou processos diferentes. No entanto, para aplicativos de processo único e de thread único, o compartilhamento de dispositivos é o método de interoperabilidade mais eficiente e de alto desempenho entre o Direct2D e o Direct3D 10 ou Direct3D 11.
 
-### <a name="software-rasterizer"></a>Rasterizador de software
+### <a name="software-rasterizer"></a>Software Rasterizer
 
-As superfícies compartilhadas não têm suporte quando os aplicativos usam os rasterizadores de software Direct3D ou Direct2D, incluindo o rasterizador de referência e a detorção, em vez de usar a aceleração de hardware de gráficos.
+Não há suporte para superfícies compartilhadas sincronizadas quando os aplicativos usam os rasterizadores de software Direct3D ou Direct2D, incluindo o rasterizador de referência e o WARP, em vez de usar aceleração de hardware de gráficos.
 
-### <a name="interoperability-between-direct3d-9ex-and-dxgi-based-apis"></a>Interoperabilidade entre as APIs baseadas em Direct3D 9Ex e DXGI
+### <a name="interoperability-between-direct3d-9ex-and-dxgi-based-apis"></a>Interoperabilidade entre o Direct3D 9Ex e as APIs baseadas em DXGI
 
-As APIs do Direct3D 9Ex incluíam a noção de compartilhamento de superfície para permitir que outras APIs leiam da superfície compartilhada. Para compartilhar a leitura e a gravação em uma superfície compartilhada do Direct3D 9Ex, você deve adicionar a sincronização manual ao próprio aplicativo.
+As APIs do Direct3D 9Ex incluíam a noção de compartilhamento de superfície para permitir que outras APIs leiam da superfície compartilhada. Para compartilhar a leitura e a escrita em uma superfície compartilhada do Direct3D 9Ex, você deve adicionar a sincronização manual ao próprio aplicativo.
 
-### <a name="direct3d-9ex-shared-surfaces-plus-manual-synchronization-helper"></a>Superfícies compartilhadas do Direct3D 9Ex, além do auxiliar de sincronização manual
+### <a name="direct3d-9ex-shared-surfaces-plus-manual-synchronization-helper"></a>Direct3D 9Ex Shared Surfaces Plus Manual Synchronization Helper
 
-A tarefa mais fundamental no Direct3D 9Ex e no Direct3D 10 ou 11 interoperabilidade é passar uma única superfície do primeiro dispositivo (dispositivo A) para o segundo (dispositivo B), de modo que quando o dispositivo B adquire um identificador na superfície, a renderização do dispositivo A é garantida para ser concluída. Portanto, o dispositivo B pode usar essa superfície sem se preocupar. Isso é muito semelhante ao problema clássico de produtor-consumidor e essa discussão modela o problema dessa maneira. O primeiro dispositivo que usa a superfície e, em seguida, o abandona é o produtor (dispositivo A) e o dispositivo que está aguardando inicialmente é o consumidor (dispositivo B). Qualquer aplicativo do mundo real é mais sofisticado do que isso e encadeará vários blocos de construção de produtor-consumidor para criar a funcionalidade desejada.
+A tarefa mais fundamental na interoperabilidade direct3D 9Ex e Direct3D 10 ou 11 é passar uma única superfície do primeiro dispositivo (dispositivo A) para o segundo (dispositivo B), de forma que, quando o dispositivo B adquire um alça na superfície, a renderização do dispositivo A é garantida como concluída. Portanto, o dispositivo B pode usar essa superfície sem se preocupar. Isso é muito semelhante ao problema de produtor-consumidor clássico e essa discussão modela o problema dessa maneira. O primeiro dispositivo que usa a superfície e, em seguida, o abandona é o produtor (dispositivo A) e o dispositivo que está aguardando inicialmente é o consumidor (dispositivo B). Qualquer aplicativo do mundo real é mais sofisticado do que isso e encadeará vários blocos de construção de produtor-consumidor para criar a funcionalidade desejada.
 
 Os blocos de construção produtor-consumidor são implementados no auxiliar usando uma fila de superfícies. As superfícies são enfileiradas pelo produtor e removidas da fila pelo consumidor. O auxiliar apresenta três interfaces COM: ISurfaceQueue, ISurfaceProducer e ISurfaceConsumer.
 
@@ -326,13 +326,13 @@ Enqueue (): o produtor chama essa função para indicar que ela é feita com a s
 Remover da fila (): o dispositivo consumidor chama essa função para obter uma superfície compartilhada. A API garante que todas as superfícies removidas da fila estejam prontas para serem usadas.  
 **Metadados**  
 A API dá suporte à associação de metadados com as superfícies compartilhadas.  
-Enqueue () tem a opção de especificar metadados adicionais que serão passados para o dispositivo de consumo. Os metadados devem ser menos do que um máximo conhecido no momento da criação.  
-A remoção da fila () pode, opcionalmente, passar um buffer e um ponteiro para o tamanho do buffer. A fila preenche o buffer com os metadados da chamada de enfileiramento correspondente.  
+Enqueue() tem a opção de especificar metadados adicionais que serão passados para o dispositivo consumidor. Os metadados devem ser menores que um máximo conhecido no momento da criação.  
+Opcionalmente, Dequeue() pode passar um buffer e um ponteiro para o tamanho do buffer. A fila preenche o buffer com os metadados da chamada enfileirada correspondente.  
 **Clonar**  
-Cada objeto ISurfaceQueue resolve uma sincronização unidirecional. Supomos que a grande maioria dos aplicativos que usam essa API usará um sistema fechado. O sistema fechado mais simples com dois dispositivos que enviam superfícies de volta e para trás requer duas filas. O objeto ISurfaceQueue tem um método clone () para possibilitar a criação de várias filas que fazem parte do mesmo pipeline maior.  
-Clone cria um novo objeto ISurfaceQueue de um existente e compartilha todos os recursos abertos entre eles. O objeto resultante tem exatamente as mesmas superfícies que a fila de origem. As filas clonadas podem ter diferentes tamanhos de metadados uns dos outros.  
+Cada objeto ISurfaceQueue resolve uma sincronização única. Presumimos que a grande maioria dos aplicativos que usam essa API usará um sistema fechado. O sistema fechado mais simples com dois dispositivos enviando superfícies para frente e para trás requer duas filas. O objeto ISurfaceQueue tem um método Clone() para tornar possível criar várias filas que fazem parte do mesmo pipeline maior.  
+Clone cria um novo objeto ISurfaceQueue de um existente e compartilha todos os recursos abertos entre eles. O objeto resultante tem exatamente as mesmas superfícies que a fila de origem. As filas clonadas podem ter tamanhos de metadados diferentes entre si.  
 **Surfaces**  
-O ISurfaceQueue assume a responsabilidade pela criação e gerenciamento de suas superfícies. Não é válido enfileirar superfícies arbitrárias. Além disso, uma superfície deve ter apenas um "proprietário" ativo. Ele deve estar em uma fila específica ou ser usado por um dispositivo específico. Não é válido tê-lo em várias filas ou para que os dispositivos continuem usando a superfície depois que ele é enfileirado.  
+O ISurfaceQueue assume a responsabilidade de criar e gerenciar suas superfícies. Não é válido enquete superfícies arbitrárias. Além disso, uma superfície deve ter apenas um "proprietário" ativo. Ele deve estar em uma fila específica ou ser usado por um dispositivo específico. Não é válido ter em várias filas ou para que os dispositivos continuem usando a superfície depois que ela for enfilfilada.  
 </dl>
 
 ### <a name="api-details"></a>Detalhes da API
@@ -345,7 +345,7 @@ A fila expõe as seguintes APIs:
 
 
 
-|                             |                                                                                  |
+| API                            | Descrição                                                                                 |
 |-----------------------------|----------------------------------------------------------------------------------|
 | CreateSurfaceQueue          | Cria um objeto ISurfaceQueue (a fila "raiz").                              |
 | ISurfaceQueue::OpenConsumer | Retorna uma interface para o dispositivo consumidor a ser removido da fila.                        |
@@ -354,7 +354,7 @@ A fila expõe as seguintes APIs:
 
 
 
- 
+ 
 
 **CreateSurfaceQueue**  
 
@@ -378,7 +378,7 @@ typedef struct SURFACE_QUEUE_DESC {
 **Formato** O formato das superfícies compartilhadas. Todas as superfícies compartilhadas devem ter o mesmo formato. Os formatos válidos dependem dos dispositivos que serão usados, pois diferentes pares de dispositivos podem compartilhar tipos de formato diferentes.  
 **NumSurfaces**  O número de superfícies que fazem parte da fila. Este é um número fixo.  
  **MetaDataSize**  O tamanho máximo do buffer de metadados.  
-**Sinalizadores**  de  Sinalizadores para controlar o comportamento da fila. Consulte Observações.  
+**Sinalizadores**  Sinalizadores para controlar o comportamento da fila. Consulte Observações.  
 
 
 
@@ -394,22 +394,22 @@ HRESULT CreateSurfaceQueue(
 
 **Parâmetros**
 
- *pDesc* \[ na \]  Descrição da fila de superfície compartilhada a ser criada.  
+ *pDesc* \[ em \]  A descrição da fila de superfície compartilhada a ser criada.  
 
- *pDevice* \[ no \]  dispositivo que deve ser usado para criar as superfícies compartilhadas. Esse é um parâmetro explícito devido a um recurso do Windows Vista. Para superfícies compartilhadas entre o Direct3D 9 e o Direct3D 10, as superfícies devem ser criadas com o Direct3D 9.  
+ *pDevice* \[ em \]  O dispositivo que deve ser usado para criar as superfícies compartilhadas. Esse é um parâmetro explícito devido a um recurso no Windows Vista. Para superfícies compartilhadas entre o Direct3D 9 e o Direct3D 10, as superfícies devem ser criadas com o Direct3D 9.  
 
- *ppQueue* \[ out \]  no retorno, contém um ponteiro para o objeto ISurfaceQueue.  
+ *ppQueue* \[ out \]  No retorno, contém um ponteiro para o objeto ISurfaceQueue.  
 
 
 **Valores de retorno**
 
-Se *pDevice* não for capaz de compartilhar recursos, essa função retornará uma \_ chamada de erro dxgi \_ inválida \_ . Essa função cria os recursos. Se falhar, ele retornará um erro. Se for bem sucedido, retornará S \_ OK.
+Se *pDevice não for* capaz de compartilhar recursos, essa função retornará DXGI ERROR INVALID \_ \_ \_ CALL. Essa função cria os recursos. Se falhar, ele retornará um erro. Se for bem-sucedido, ele retornará S \_ OK.
 
 **Comentários**
 
-Criar o objeto de fila também cria todas as superfícies. Todas as superfícies são consideradas como destinos de renderização em 2D e serão criadas com os sinalizadores de D3D10 de \_ destino de processamento de ligação \_ \_ e d3d10 \_ BIND \_ Shader \_ (ou os sinalizadores equivalentes para diferentes tempos de execução).
+A criação do objeto de fila também cria todas as superfícies. Todas as superfícies são assumidas como destinos de renderização 2D e serão criadas com os sinalizadores D3D10 BIND RENDER RENDER TARGET e \_ \_ \_ D3D10 BIND SHADER RESOURCE definidos (ou os sinalizadores equivalentes para os \_ \_ diferentes \_ runtimes).
 
-O desenvolvedor pode especificar um sinalizador que indica se a fila será acessada por vários threads. Se nenhum sinalizador for definido (**flags** = = 0), a fila será usada por vários threads. O desenvolvedor pode especificar o acesso de thread único, que desativa o código de sincronização e fornece uma melhoria de desempenho para esses casos. Cada fila clonada tem seu próprio sinalizador, portanto, é possível que filas diferentes no sistema tenham controles de sincronização diferentes.
+O desenvolvedor pode especificar um sinalizador que indica se a fila será acessada por vários threads. Se nenhum sinalizador for definido (**Sinalizadores** == 0), a fila será usada por vários threads. O desenvolvedor pode especificar o acesso thread único, que desliga o código de sincronização e fornece uma melhoria de desempenho para esses casos. Cada fila clonada tem seu próprio sinalizador, portanto, é possível que filas diferentes no sistema tenham controles de sincronização diferentes.
 
  **Abrir um produtor**  
 
@@ -425,9 +425,9 @@ HRESULT OpenProducer(
 
 **Parâmetros**  
 
-*pDevice* \[ no\]  
+*pDevice* \[ Em\]  
 
-O dispositivo produtor que enfileira as superfícies na fila de superfície. 
+O dispositivo de produtor que enfiloca superfícies na fila da superfície. 
 
 *ppProducer* \[ out \] retorna um objeto para a interface do produtor.  
 
@@ -525,38 +525,38 @@ O REFIID de uma superfície 2D do dispositivo de consumo.
 
 -   Para um IDirect3DDevice9, o REFIID deve ser \_ \_ uuidof (IDirect3DTexture9).
 -   Para um ID3D10Device, o REFIID deve ser \_ \_ uuidof (ID3D10Texture2D).
--   Para um ID3D11Device, o REFIID deve ser \_ \_ uuidof (ID3D11Texture2D).
+-   Para um ID3D11Device, o REFIID deve ser \_ \_ uuidof(ID3D11Texture2D).
 
-*ppSurface* \[ out \] retorna um ponteiro para a superfície.  
-*pBuffer* \[ no, \] um parâmetro opcional e, se não for **nulo**, no retorno, contém os metadados que foram passados na chamada de enfileiramento correspondente.  
-*pBufferSize* \[ in, out \] o tamanho de *pBuffer*, em bytes. Retorna o número de bytes retornados em *pBuffer*. Se a chamada de enfileiramento não fornecer metadados, *pBuffer* será definido como 0.  
-*dwTimeout* \[ em \] especifica um valor de tempo limite. Consulte os comentários para obter mais detalhes.  
+*ppSurface* \[ out \] Retorna um ponteiro para a superfície.  
+*pBuffer* \[ in, out Um parâmetro opcional e, se não FOR NULL, no retorno, conterão os metadados que foram passados \] na chamada de enquete correspondente.   
+*pBufferSize* \[ in, out \] O tamanho de *pBuffer*, em bytes. Retorna o número de bytes retornados em *pBuffer.* Se a chamada de enquete não forneceu metadados, *pBuffer* será definido como 0.  
+*dwTimeout* \[ em \] Especifica um valor de tempoout. Confira os Comentários para obter mais detalhes.  
 </dl>
 
 **Valores de retorno**
 
-Essa função pode retornar \_ o tempo limite de espera se um valor de tempo limite for especificado e a função não retornar antes do valor de tempo limite. Consulte Observações. Se nenhuma superfície estiver disponível, a função retornará com *ppSurface* definido como **NULL**, *pBufferSize* definido como 0 e o valor de retorno será 0x80070120 (Win32 \_ para \_ HRESULT ( \_ tempo limite de espera)).  
+Essa função poderá retornar WAIT TIMEOUT se um valor de tempoout for especificado e a função não retornar \_ antes do valor de tempo-máximo. Consulte Observações. Se nenhuma superfície estiver disponível, a função retornará com *ppSurface* definido como **NULL,** *pBufferSize* definido como 0 e o valor de retorno será 0x80070120 (WIN32 \_ TO \_ HRESULT(WAIT \_ TIMEOUT)).  
 </dl>
 
 **Comentários**
 
-Essa API pode bloquear se a fila estiver vazia. O parâmetro *dwTimeout* funciona de forma idêntica às APIs de sincronização do Windows, como WaitForSingleObject. Para o comportamento de não bloqueio, use um tempo limite de 0.  
+Essa API poderá bloquear se a fila estiver vazia. O *parâmetro dwTimeout* funciona de forma idêntica às APIs de sincronização do Windows, como WaitForSingleObject. Para o comportamento sem bloqueio, use um tempoout de 0.  
 </dl>
 
 ### <a name="isurfaceproducer"></a>ISurfaceProducer
 
-Essa interface fornece dois métodos que permitem ao aplicativo enfileirar superfícies. Depois que uma superfície é enfileirada, o ponteiro de superfície não é mais válido e não é seguro de usar. A única ação que o aplicativo deve executar com o ponteiro é liberá-lo.
+Essa interface fornece dois métodos que permitem que o aplicativo enquete superfícies. Depois que uma superfície é ensuada, o ponteiro de superfície não é mais válido e não é seguro de usar. A única ação que o aplicativo deve executar com o ponteiro é liberá-lo.
 
 
 
-|                           |                                                                                                                                                       |
+| Método                          | Descrição                                                                                                                                                      |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ISurfaceProducer:: enqueue | Enfileira uma superfície ao objeto de fila. Após a conclusão dessa chamada, o produtor é feito com a superfície e a superfície está pronta para outro dispositivo. |
+| ISurfaceProducer::Enqueue | Enfilra uma superfície para o objeto de fila. Depois que essa chamada for concluída, o produtor será concluído com a superfície e a superfície estará pronta para outro dispositivo. |
 | ISurfaceProducer:: flush   | Usado se os aplicativos tiverem um comportamento não bloqueado. Consulte Comentários para obter detalhes.                                                                  |
 
 
 
- 
+ 
 
 **Enfileirar**  
 
@@ -603,35 +603,35 @@ HRESULT Flush(
 
 **Parâmetros**  
 *Flags* \[in\]  
-O único sinalizador é o \_ sinalizador da fila de superfície \_ \_ \_ não \_ aguardar. Consulte Observações. *nSurfaces* \[ out \] retorna o número de superfícies que ainda estão pendentes e não são liberadas.  
+O único sinalizador é SURFACE \_ QUEUE \_ FLAG NÃO \_ \_ \_ WAIT. Consulte Observações. *nSurfaces* \[ out \] Retorna o número de superfícies que ainda estão pendentes e não foram liberados.  
 </dl>
 
 **Valores de retorno**
 
-Essa função pode retornar \_ um erro \_ dxgi \_ ainda \_ está desenhando se o sinalizador da fila de superfície não \_ \_ \_ \_ \_ aguardar é usado. Essa função retornará S \_ OK se alguma superfície tiver sido liberada com êxito. Essa função retornará \_ um erro \_ dxgi \_ ainda estará \_ desenhando somente se nenhuma superfície fosse liberada. Juntos, o valor de retorno e *nSurfaces* indicam ao aplicativo qual trabalho foi feito e se algum trabalho é deixado para fazer.  
+Essa função poderá retornar ERRO DXGI AINDA ESTAVA DESENHANDO se o sinalizador \_ SURFACE QUEUE NÃO WAIT \_ for \_ \_ \_ \_ \_ \_ \_ usado. Essa função retornará S \_ OK se alguma superfície tiver sido liberado com êxito. Essa função retornará ERRO DXGI \_ \_ AINDA ESTAVA \_ \_ DESENHANDO somente se nenhuma superfície tiver sido liberado. Juntos, o valor de retorno *e nSurfaces* indicam ao aplicativo qual trabalho foi feito e se algum trabalho é deixado para fazer.  
 </dl>
 
 **Comentários**
 
-A liberação só será significativa se a chamada anterior para enfileirar usou o \_ \_ sinalizador não aguardar; caso contrário, será uma operação não operacional. Se a chamada para enqueue usou o \_ \_ sinalizador não aguardar, o enqueue retornará imediatamente e a sincronização de GPU-CPU não será garantida. A superfície ainda é considerada enfileirada, o dispositivo de produção não pode continuar a usá-la, mas não está disponível para remoção da fila. Para tentar confirmar a superfície da remoção da fila, a liberação deve ser chamada. Tentativas de liberação para confirmar todas as superfícies que estão enfileiradas no momento. Se nenhum sinalizador for passado para flush, ele bloqueará e limpará toda a fila, preparando todas as superfícies para remoção da fila. Se o \_ sinalizador não \_ aguardar for usado, a fila verificará as superfícies para ver se alguma delas está pronta; esta etapa é sem bloqueio. As superfícies que concluíram a sincronização de GPU-CPU estarão prontas para o dispositivo do consumidor. As superfícies que ainda estiverem pendentes não serão afetadas. A função retorna o número de superfícies que ainda precisam ser liberadas.
+A liberação só será significativa se a chamada anterior à enquete tiver usado o sinalizador NÃO WAIT; caso contrário, ela \_ \_ será não operada. Se a chamada à enquete tiver usado o sinalizador NÃO WAIT, a enquete retornará imediatamente e a \_ \_ sincronização gpu-CPU não será garantida. A superfície ainda é considerada enqueixada, o dispositivo de produção não pode continuar a usá-la, mas não está disponível para a desaquete. Para tentar fazer commit da superfície para o desembaixo, Flush deve ser chamado. A liberação tenta fazer commit de todas as superfícies que estão ensuadas no momento. Se nenhum sinalizador for passado para Liberação, ele bloqueará e limpará toda a fila, preparando todas as superfícies para a desfileiramento. Se o sinalizador NÃO AGUARDAR for usado, a fila verificará as superfícies para ver se alguma delas está pronta; essa etapa não \_ \_ está bloqueando. As superfícies que finalizaram a sincronização GPU-CPU estarão prontas para o dispositivo de consumidor. Superfícies que ainda estão pendentes não serão afetadas. A função retorna o número de superfícies que ainda precisam ser liberados.
 
 > [!Note]  
-> A liberação não interromperá a semântica da fila. A API garante que as superfícies enfileiradas primeiro serão confirmadas antes das superfícies enfileiradas posteriormente, independentemente de quando ocorrer a sincronização de GPU-CPU.
+> A liberação não quebrará a semântica da fila. A API garante que as superfícies ensuadas primeiro serão comprometidas antes que as superfícies sejam ensuadas posteriormente, independentemente de quando ocorrer a sincronização GPU-CPU.
 
- 
+ 
 
   
 </dl>
 
-### <a name="direct3d-9ex-and-dxgi-interop-helper-how-to-use"></a>Auxiliar de interoperabilidade do Direct3D 9Ex e DXGI: como usar
+### <a name="direct3d-9ex-and-dxgi-interop-helper-how-to-use"></a>Auxiliar de interop do Direct3D 9Ex e DXGI: Como usar
 
-Esperamos que a maioria dos casos de uso envolva dois dispositivos compartilhando várias superfícies. Como esse também é o cenário mais simples, este documento detalha como usar as APIs para atingir essa meta, discute uma variação sem bloqueio e termina com uma breve seção sobre a inicialização de três dispositivos.
+Esperamos que a maioria dos casos de uso envolva dois dispositivos que compartilham várias superfícies. Como esse também é o cenário mais simples, este documento detalha como usar as APIs para atingir essa meta, discute uma variação sem bloqueio e termina com uma breve seção sobre a inicialização de três dispositivos.
 
 ### <a name="two-devices"></a>Dois dispositivos
 
 O aplicativo de exemplo que usa esse auxiliar pode usar o Direct3D 9Ex e o Direct3D 11 juntos. O aplicativo pode processar o conteúdo com ambos os dispositivos e apresentar o conteúdo usando o Direct3D 9. O processamento pode significar a renderização de conteúdo, a decodificação de vídeo, a execução de sombreadores de computação e assim por diante. Para cada quadro, o aplicativo será processado primeiro com o Direct3D 11, depois o processo com o Direct3D 9 e, finalmente, presente com o Direct3D 9. Além disso, o processamento com o Direct3D 11 produzirá alguns metadados que o Direct3D 9 presente precisará consumir. Esta seção aborda o uso do auxiliar em três partes que correspondem a esta sequência: inicialização, loop principal e limpeza.
 
-**Initialization**  
+**Inicialização**  
 A inicialização envolve as seguintes etapas:  
 
 1.  Inicialize ambos os dispositivos.
@@ -639,7 +639,7 @@ A inicialização envolve as seguintes etapas:
 3.  Clone da fila raiz: m \_ 9to11Queue.
 4.  Chame OpenProducer/OpenConsumer em ambas as filas.
 
-Os nomes de fila usam os números 9 e 11 para indicar qual API é o produtor e qual é a fila consumidor: **m do \_ ***produtor*** para o ***consumidor*****. Da mesma forma, m \_ 11to9Queue indica uma fila para a qual o dispositivo Direct3D 11 produz superfícies que o dispositivo Direct3D 9 consome. Da mesma forma, m \_ 9to11Queue indica uma fila para a qual o Direct3D 9 produz superfícies que o Direct3D 11 consome.  
+Os nomes de fila usam os números 9 e 11 para indicar qual API é o produtor e qual é a *_fila_* consumidor: **m \_** do _produtor_*_para_* o _consumidor_. Da mesma forma, m \_ 11to9Queue indica uma fila para a qual o dispositivo Direct3D 11 produz superfícies que o dispositivo Direct3D 9 consome. Da mesma forma, m \_ 9to11Queue indica uma fila para a qual o Direct3D 9 produz superfícies que o Direct3D 11 consome.  
 A fila raiz está inicialmente cheia e todas as filas clonadas estão vazias inicialmente. Isso não deve ser um problema para o aplicativo, exceto para o primeiro ciclo de enfileiramentos e remoção de filas e a disponibilidade dos metadados. Se uma remoção da fila solicitar metadados, mas nenhum tiver sido definido (porque nada está lá inicialmente ou o enfileiramento não definiu nada), a remoção da fila verá que nenhum metadado foi recebido.  
 
 1.  **Inicialize ambos os dispositivos.**  
@@ -650,9 +650,9 @@ A fila raiz está inicialmente cheia e todas as filas clonadas estão vazias ini
 
     
 
-2.  **Crie a fila raiz.**  
-    Essa etapa também cria as superfícies. As restrições de tamanho e formato são idênticas à criação de qualquer recurso compartilhado. O tamanho do buffer de metadados é fixo no momento da criação e, nesse caso, vamos apenas passar um UINT.  
-    A fila deve ser criada com um número fixo de superfícies. O desempenho irá variar dependendo do cenário. Ter várias superfícies aumenta as chances de os dispositivos serem ocupados. Por exemplo, se houver apenas uma superfície, não haverá nenhuma paralelização entre os dois dispositivos. Por outro lado, aumentar o número de superfícies aumenta o volume de memória, o que pode prejudicar o desempenho. Este exemplo usa duas superfícies.  
+2.  **Crie a Fila Raiz.**  
+    Essa etapa também cria as superfícies. Restrições de tamanho e formato são idênticas à criação de qualquer recurso compartilhado. O tamanho do buffer de metadados é fixo no momento da criação e, nesse caso, passaremos apenas uma UINT.  
+    A fila deve ser criada com um número fixo de superfícies. O desempenho variará dependendo do cenário. Ter várias superfícies aumenta as chances de que os dispositivos estão ocupados. Por exemplo, se houver apenas uma superfície, não haverá paralelização entre os dois dispositivos. Por outro lado, aumentar o número de superfícies aumenta o espaço de memória, o que pode prejudicar o desempenho. Este exemplo usa duas superfícies.  
     ```C++
     SURFACE_QUEUE_DESC Desc;
     Desc.Width        = 640;
@@ -668,7 +668,7 @@ A fila raiz está inicialmente cheia e todas as filas clonadas estão vazias ini
     
 
 3.  **Clone a fila raiz.**  
-    Cada fila clonada deve usar as mesmas superfícies, mas pode ter diferentes tamanhos de buffer de metadados e diferentes sinalizadores. Nesse caso, não há metadados do Direct3D 9 para o Direct3D 11.  
+    Cada fila clonada deve usar as mesmas superfícies, mas pode ter diferentes tamanhos de buffer de metadados e sinalizadores diferentes. Nesse caso, não há metadados do Direct3D 9 para o Direct3D 11.  
     ```C++
     SURFACE_QUEUE_CLONE_DESC Desc;
     Desc.MetaDataSize = 0;
@@ -679,8 +679,8 @@ A fila raiz está inicialmente cheia e todas as filas clonadas estão vazias ini
 
     
 
-4.  **Abra os dispositivos produtor e consumidor.**  
-    O aplicativo deve executar essa etapa antes de chamar Enqueue e remover a fila. Abrir um produtor e consumidor retorna interfaces que contêm as APIs de enfileiramento/remoção da fila.  
+4.  **Abra os Dispositivos de Produtor e Consumidor.**  
+    O aplicativo deve executar essa etapa antes de chamar Enqueue e Dequeue. Abrir um produtor e consumidor retorna interfaces que contêm as APIs de enqueue/dequeue.  
     ```C++
     // Open for m_p9to11Queue.
     m_p9to11Queue->OpenProducer(m_pD3D9Device, &m_pD3D9Producer);
@@ -693,8 +693,8 @@ A fila raiz está inicialmente cheia e todas as filas clonadas estão vazias ini
 
     
 
-**Loop principal**  
-O uso da fila é modelado após o problema de produtor/consumidor clássico. Considere isso a partir de uma perspectiva por dispositivo. Cada dispositivo deve executar estas etapas: remover da fila para obter uma superfície de sua fila de consumo, processar na superfície e enfileirar em sua fila de produção. Para o dispositivo Direct3D 11, o uso do Direct3D 9 é quase idêntico.  
+**Loop Principal**  
+O uso da fila é modelado após o problema de produtor/consumidor clássico. Pense nisso de uma perspectiva por dispositivo. Cada dispositivo deve executar estas etapas: desfileirar para obter uma superfície de sua fila de consumo, processar na superfície e enfileirar em sua fila de produção. Para o dispositivo Direct3D 11, o uso do Direct3D 9 é quase idêntico.  
 
 
 ```C++
@@ -743,7 +743,7 @@ m_p11to9Queue->Release();
 
 O exemplo anterior faz sentido para um caso de uso multithread, no qual cada dispositivo tem seu próprio thread. O exemplo usa as versões de bloqueio das APIs: infinito para tempo limite e nenhum sinalizador para enfileirar. Se você quiser usar o auxiliar em uma forma sem bloqueio, precisará fazer apenas algumas alterações. Esta seção mostra o uso sem bloqueio com ambos os dispositivos em um thread.
 
-**Initialization**  
+**Inicialização**  
 A inicialização é idêntica, exceto pelos sinalizadores. Como o aplicativo é de thread único, use esse sinalizador para a criação. Isso desativa um pouco do código de sincronização, o que potencialmente melhora o desempenho.  
 
 
@@ -840,7 +840,7 @@ Uma solução mais complexa poderia verificar o valor de retorno de enfileirar e
 
 ### <a name="three-devices"></a>Três dispositivos
 
-A extensão dos exemplos anteriores para abranger vários dispositivos é simples. O código a seguir executa a inicialização. Depois que os objetos produtor/consumidor tiverem sido criados, o código para usá-los será o mesmo. Este exemplo tem três dispositivos e, portanto, três filas. As superfícies fluem do Direct3D 9 para o Direct3D 10 para o Direct3D 11.
+Estender os exemplos anteriores para abranger vários dispositivos é simples. O código a seguir executa a inicialização. Depois que os objetos Produtor/Consumidor foram criados, o código para usá-los é o mesmo. Este exemplo tem três dispositivos e, portanto, três filas. As superfícies fluem do Direct3D 9 para o Direct3D 10 para o Direct3D 11.
 
 
 ```C++
@@ -863,7 +863,7 @@ m_11to9Queue->Clone(&Desc, &m_10to11Queue);
 
 
 
-Como mencionado anteriormente, a clonagem funciona da mesma forma, não importa qual fila é clonada. Por exemplo, a segunda chamada de clonagem poderia ter sido desativada do \_ objeto m 9to10Queue.
+Conforme mencionado anteriormente, a clonagem funciona da mesma maneira, independentemente de qual fila seja clonada. Por exemplo, a segunda chamada clonar poderia ter sido fora do objeto m \_ 9to10Queue.
 
 
 ```C++
@@ -884,8 +884,8 @@ m_p11to9Queue->OpenConsumer(m_pD3D9Device, &m_pD3D9Consumer);
 
 ## <a name="conclusion"></a>Conclusão
 
-Você pode criar soluções que usam a interoperabilidade para empregar o poder de várias APIs do DirectX. A interoperabilidade da API de gráficos do Windows agora oferece um DXGI 1,1 de tempo de execução de gerenciamento de superfície comum Esse tempo de execução habilita o suporte a compartilhamento de superfície sincronizado em APIs recentemente desenvolvidas, como Direct3D 11, Direct3D 10,1 e Direct2D. As melhorias de interoperabilidade entre novas APIs e APIs existentes auxiliam na migração de aplicativos e na compatibilidade com versões anteriores. As APIs de consumidor do Direct3D 9Ex e DXGI 1,1 podem interoperar, conforme mostrado com o mecanismo de sincronização fornecido por meio do código auxiliar de exemplo na Galeria de códigos do MSDN.
+Você pode criar soluções que usam interoperabilidade para empregar o poder de várias APIs do DirectX. A interoperabilidade da API de gráficos do Windows agora oferece um DXGI 1.1 do Common Surface Management Runtime. Esse runtime permite o suporte ao compartilhamento de superfície sincronizado em APIs recém-desenvolvidas, como Direct3D 11, Direct3D 10.1 e Direct2D. Melhorias de interoperabilidade entre novas APIs e APIs existentes auxiliam na migração de aplicativos e na compatibilidade com compatibilidade com backward. As APIs de consumidor do Direct3D 9Ex e DXGI 1.1 podem interoperar, conforme mostrado com o mecanismo de sincronização fornecido por meio do código auxiliar de exemplo na Galeria de Códigos do MSDN.
 
- 
+ 
 
- 
+ 

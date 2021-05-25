@@ -1,7 +1,7 @@
 ---
 description: Descreve os parâmetros de apresentação.
 ms.assetid: d677aeb7-a188-4ddc-b8c9-48e13676e9c8
-title: Estrutura de D3DPRESENT_PARAMETERS (D3D9Types. h)
+title: D3DPRESENT_PARAMETERS estrutura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f83ab03773356a01c8c6ac490bb099c6e7508be2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f113b3df247765b958dfe47bb04fafb6c9a13bbe
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298661"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343101"
 ---
-# <a name="d3dpresent_parameters-structure"></a>\_Estrutura de parâmetros D3DPRESENT
+# <a name="d3dpresent_parameters-structure"></a>Estrutura D3DPRESENT \_ PARAMETERS
 
 Descreve os parâmetros de apresentação.
 
@@ -55,22 +55,22 @@ typedef struct D3DPRESENT_PARAMETERS {
 **BackBufferWidth**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Largura dos buffers de fundo da nova cadeia de permuta, em pixels. Se a **janela** for **false** (a apresentação é de tela inteira), esse valor deverá ser igual à largura de um dos modos de exibição enumerados encontrados por meio de [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Se a **janela** for **true** e **BackBufferWidth** ou **BackBufferHeight** for zero, a dimensão correspondente da área do cliente do **hDeviceWindow** (ou a janela de foco se **hDeviceWindow** for **NULL**) será executada.
+Largura dos buffers de fundo da nova cadeia de permuta, em pixels. Se **Windowed** for **FALSE** (a apresentação é de tela inteira), esse valor deverá ser igual à largura de um dos modos de exibição enumerados encontrados por [**meio de EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Se **Windowed** for **TRUE** e **BackBufferWidth** ou **BackBufferHeight** for zero, a dimensão correspondente da área de cliente **do hDeviceWindow** (ou a janela de foco, se **hDeviceWindow for** **NULL**) será tomada.
 
 </dd> <dt>
 
 **BackBufferHeight**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Altura dos buffers de fundo da nova cadeia de permuta, em pixels. Se a **janela** for **false** (a apresentação é de tela inteira), esse valor deverá ser igual à altura de um dos modos de exibição enumerados encontrados por meio de [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Se a **janela** for **true** e **BackBufferWidth** ou **BackBufferHeight** for zero, a dimensão correspondente da área do cliente do **hDeviceWindow** (ou a janela de foco se **hDeviceWindow** for **NULL**) será executada.
+Altura dos buffers de fundo da nova cadeia de permuta, em pixels. Se **Windowed** for **FALSE** (a apresentação é de tela inteira), esse valor deverá ser igual à altura de um dos modos de exibição enumerados encontrados por [**meio de EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Se **Windowed** for **TRUE** e **BackBufferWidth** ou **BackBufferHeight** for zero, a dimensão correspondente da área de cliente **do hDeviceWindow** (ou a janela de foco, se **hDeviceWindow for** **NULL**) será tomada.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-O formato de buffer de fundo. Para obter mais informações sobre formatos, consulte [D3DFORMAT](d3dformat.md). Esse valor deve ser um dos formatos de destino de renderização como validado por [**CheckDeviceType**](/windows/desktop/api). Você pode usar [**GetDisplayMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode) para obter o formato atual.
+O formato de buffer de fundo. Para obter mais informações sobre formatos, [consulte D3DFORMAT](d3dformat.md). Esse valor deve ser um dos formatos de destino de renderização, conforme validado por [**CheckDeviceType**](/windows/desktop/api). Você pode usar [**GetDisplayMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode) para obter o formato atual.
 
 Na verdade, D3DFMT \_ Unknown pode ser especificado para o **BackBufferFormat** enquanto estiver no modo de janela. Isso informa o tempo de execução para usar o formato atual do modo de exibição e elimina a necessidade de chamar [**GetDisplayMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode).
 
@@ -122,28 +122,26 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Nível de qualidade. O intervalo válido é entre zero e um menor que o nível retornado por pQualityLevels usado pelo [**CheckDeviceMultiSampleType**](/windows/desktop/api). Passar um valor maior retorna o erro D3DERR \_ INVALIDCALL. Valores emparelhados de destinos de renderização ou de superfícies de estêncil de profundidade e [**\_ tipo de D3DMULTISAMPLE**](./d3dmultisample-type.md) devem corresponder.
+Nível de qualidade. O intervalo válido está entre zero e um menor que o nível retornado por pQualityLevels usado por [**CheckDeviceMultiSampleType**](/windows/desktop/api). Passar um valor maior retorna o erro D3DERR \_ INVALIDCALL. Valores emparelhados de destinos de renderização ou de superfícies de estêncil de profundidade e [**D3DMULTISAMPLE \_ TYPE devem**](./d3dmultisample-type.md) corresponder.
 
 </dd> <dt>
 
-**SwapEffect**
+**Swapeffect**
 </dt> <dd>
 
 Tipo: **[ **D3DSWAPEFFECT**](./d3dswapeffect.md)**
 
 </dd> <dd>
 
-Membro do tipo enumerado [**D3DSWAPEFFECT**](./d3dswapeffect.md) . O tempo de execução garantirá a semântica implícita relacionada ao comportamento de permuta no buffer; Portanto, se a **janela** for **true** e **SwapEffect** for definido como D3DSWAPEFFECT \_ flip, o tempo de execução criará um buffer de fundo extra e copiará o que for o buffer frontal no momento da apresentação.
+Membro do tipo [**enumerado D3DSWAPEFFECT.**](./d3dswapeffect.md) O runtime garantirá a semântica implícita sobre o comportamento de troca de buffer; portanto, se **Windowed** for **TRUE** e **SwapEffect** estiver definido como D3DSWAPEFFECT FLIP, o runtime criará um buffer de back extra e copiará o que se tornar o buffer frontal no momento da \_ apresentação.
 
-D3DSWAPEFFECT \_ Copy requer que **BackBufferCount** seja definido como 1.
+D3DSWAPEFFECT \_ COPY requer que **BackBufferCount** seja definido como 1.
 
-\_O descarte de D3DSWAPEFFECT será imposto no tempo de execução de depuração preenchendo qualquer buffer com ruído depois que ele for apresentado.
+D3DSWAPEFFECT DISCARD será imposto no runtime de depuração preenchendo qualquer buffer com ruído \_ depois que ele for apresentado.
 
+Diferenças entre Direct3D9 e Direct3D9Ex:
 
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D9 e o Direct3D9Ex<br/> Em Direct3D9Ex, D3DSWAPEFFECT \_ FLIPEX é adicionado para designar quando um aplicativo está adotando o modo flip. Ou seja, Whan o quadro de um aplicativo é passado no modo da janela (em vez de copiado) para o Gerenciador de Janelas da Área de Trabalho (DWM) para composição. O modo Inverter fornece largura de banda de memória mais eficiente e permite que um aplicativo aproveite as estatísticas de tela inteira. Ele não altera o comportamento de tela inteira. O comportamento do modo flip está disponível a partir do Windows 7.<br/> |
+- No Direct3D9Ex, D3DSWAPEFFECT FLIPEX é adicionado para designar quando um \_ aplicativo está adotando o modo de in flip. Ou seja, o quadro de um aplicativo é passado no modo da janela (em vez de copiado) para o Gerenciador de Janelas da Área de Trabalho(DWM) para composição. O modo de invasão fornece largura de banda de memória mais eficiente e permite que um aplicativo aproveite as estatísticas de tela inteira presentes. Ele não altera o comportamento de tela inteira. O comportamento do modo de inversões está disponível a partir do Windows 7.
 
 
 
@@ -201,7 +199,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Membro do tipo enumerado [D3DFORMAT](d3dformat.md) . O formato da superfície de estêncil de profundidade automática que o dispositivo criará. Esse membro é ignorado, a menos que **EnableAutoDepthStencil** seja **true**.
+Membro do tipo [enumerado D3DFORMAT.](d3dformat.md) O formato da superfície de estêncil de profundidade automática que o dispositivo criará. Esse membro é ignorado, a menos **que EnableAutoDepthStencil** seja **TRUE.**
 
 </dd> <dt>
 
@@ -212,32 +210,32 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Uma das constantes [D3DPRESENTFLAG](d3dpresentflag.md) .
+Uma das constantes [D3DPRESENTFLAG.](d3dpresentflag.md)
 
 </dd> <dt>
 
-**Tela inteira \_ RefreshRateInHz**
+**RefreshRateInHz de FullScreen \_**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-A taxa na qual o adaptador de vídeo atualiza a tela. O valor depende do modo no qual o aplicativo está em execução:
+A taxa na qual o adaptador de exibição atualiza a tela. O valor depende do modo no qual o aplicativo está em execução:
 
--   Para o modo em janela, a taxa de atualização deve ser 0.
--   Para o modo de tela inteira, a taxa de atualização é uma das taxas de atualização retornadas por [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes).
+-   Para o modo em janelas, a taxa de atualização deve ser 0.
+-   Para o modo de tela inteira, a taxa de atualização é uma das taxas de atualização retornadas por [**EnumAdapterModes.**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes)
 
 </dd> <dt>
 
 **PresentationInterval**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-A taxa máxima na qual os buffers de fundo da cadeia de troca podem ser apresentados ao buffer frontal. Para obter uma explicação detalhada dos modos e dos intervalos com suporte, consulte [D3DPRESENT](d3dpresent.md).
+A taxa máxima na qual os buffers de fundo da cadeia de permuta podem ser apresentados ao buffer frontal. Para uma explicação detalhada dos modos e dos intervalos com suporte, consulte [D3DPRESENT](d3dpresent.md).
 
 </dd> </dl>
 
@@ -247,7 +245,7 @@ A taxa máxima na qual os buffers de fundo da cadeia de troca podem ser apresent
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -255,16 +253,16 @@ A taxa máxima na qual os buffers de fundo da cadeia de troca podem ser apresent
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
-[**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice)
+[**Createdevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice)
 </dt> <dt>
 
 [**CreateAdditionalSwapChain**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createadditionalswapchain)
 </dt> <dt>
 
-[**Existi**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)
+[**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)
 </dt> <dt>
 
 [**Redefinir**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)

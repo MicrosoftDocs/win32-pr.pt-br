@@ -4,12 +4,12 @@ ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Iluminação especular (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab378d4ca3f00ef81c5048e6ad6cc85eaeb18ad
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2b16d71bd8d814e104cf8a90d1d1fe9b15ba10f3
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104564926"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343671"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Iluminação especular (Direct3D 9)
 
@@ -19,13 +19,9 @@ O estado de iluminação padrão não calcula os realces especulares. Para habil
 
 ## <a name="specular-lighting-equation"></a>Equação de Iluminação Especular
 
-A iluminação especular é descrita pela seguinte equação.
+A iluminação especular é descrita pela seguinte equação:
 
-
-
-|                                                                             |
-|-----------------------------------------------------------------------------|
-| Iluminação especular = cs \* Sum \[ ls \* (N · H)<sup>P</sup> \* Atten \* especial\] |
+**Iluminação especular = cs \* Sum \[ ls \* (N · H)<sup>P</sup> \* Atten \* especial\]**
 
 
 
@@ -75,11 +71,7 @@ Componentes especulares são vinculados para estar entre 0 e 255, depois que tod
 
 O vetor de metade (H) existe situado entre dois vetores: o vetor de um vértice de objeto para a fonte de luz e o vetor de um vértice de objeto para a posição da câmera. O Direct3D fornece duas maneiras de calcular o vetor de metade. Quando D3DRS \_ LOCALVIEWER é definido como **true**, o sistema calcula o vetor intermediário usando a posição da câmera e a posição do vértice, juntamente com o vetor de direção da luz. A fórmula a seguir mostra isso.
 
-
-
-|                                           |
-|-------------------------------------------|
-| H = norm(norm(Cₚ - Vₚ) + L<sub>dir</sub>) |
+**H = normal (normal (CP-VP) + f <sub>dir</sub>)**
 
 
 
@@ -99,11 +91,7 @@ O vetor de metade (H) existe situado entre dois vetores: o vetor de um vértice 
 
 Determinar o vetor de metade dessa maneira pode ser computacionalmente intensa. Como alternativa, a definição de D3DRS \_ LOCALVIEWER = **false** instrui o sistema a agir como se o ponto de vista estivesse infinitamente distante no eixo z. Isso se reflete na seguinte fórmula.
 
-
-
-|                                     |
-|-------------------------------------|
-| H = norm((0,0,1) + L<sub>dir</sub>) |
+**H = normal ((0, 0, 1) + f <sub>dir</sub>)**
 
 
 

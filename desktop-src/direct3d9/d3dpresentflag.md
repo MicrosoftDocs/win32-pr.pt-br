@@ -1,19 +1,19 @@
 ---
-description: Constantes usadas por \_ parâmetros D3DPRESENT.
+description: Constantes usadas por \_ PARÂMETROS D3DPRESENT.
 ms.assetid: 1294171e-b3f6-4264-8411-b69427cefe7b
 title: D3DPRESENTFLAG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3b7fe950a6fe09425aa47a79ce8f803eb81298
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 578d41119980719e69b9eb0e502c025414018f73
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760535"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343091"
 ---
 # <a name="d3dpresentflag"></a>D3DPRESENTFLAG
 
-Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
+Constantes usadas por [**\_ PARÂMETROS D3DPRESENT.**](d3dpresent-parameters.md)
 
 
 
@@ -25,24 +25,24 @@ Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>#definir</td>
+<td>#Definir</td>
 <td>Valor</td>
 <td>Descrição</td>
 </tr>
 <tr class="even">
 <td>D3DPRESENTFLAG_DEVICECLIP</td>
 <td>0x00000004</td>
-<td>Cortar um blit <a href="/windows/desktop/api"><strong>presente</strong></a> em janelas na área do cliente do Windows, na área da tela monitor do adaptador de vídeo que criou o dispositivo Direct3D. D3DPRESENTFLAG_DEVICECLIP não é válido com D3DSWAPEFFECT_FLIPEX.</td>
+<td>Clip a windowed <a href="/windows/desktop/api"><strong>Present</strong></a> blit in the window client area, within the monitor screen area of the video adapter that created the Direct3D device. D3DPRESENTFLAG_DEVICECLIP não é válido com D3DSWAPEFFECT_FLIPEX.</td>
 </tr>
 <tr class="odd">
 <td>D3DPRESENTFLAG_DISCARD_DEPTHSTENCIL</td>
 <td>0x00000002</td>
-<td>Defina esse sinalizador quando o dispositivo ou a cadeia de troca for criada para habilitar a descartação do buffer z. Se esse sinalizador for definido, o conteúdo do buffer do estêncil de profundidade será inválido após a chamada de <a href="/windows/desktop/api"><strong>presente</strong></a>ou <a href="/windows/desktop/api"><strong>SetDepthStencilSurface</strong></a> com uma superfície de profundidade diferente. Descartar os dados do buffer z pode aumentar o desempenho e depende do driver. O tempo de execução de depuração impedirá a descartação desmarcando o z-buffer para algum valor constante depois de chamar <a href="/windows/desktop/api"><strong>Present</strong></a>ou <a href="/windows/desktop/api"><strong>SetDepthStencilSurface</strong></a> com uma superfície de profundidade diferente.<br/> Descartar dados do buffer z é ilegal para todos os formatos bloqueáveis, D3DFMT_D16_LOCKABLE e D3DFMT_D32F_LOCKABLE. Qualquer uso de <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> especificando um formato bloqueáveis e a descartação do buffer z falhará. Para obter mais informações sobre formatos, consulte <a href="d3dformat.md">D3DFORMAT</a>.<br/></td>
+<td>De definir esse sinalizador quando o dispositivo ou a cadeia de permutas for criado para habilitar o descarte de buffer z. Se esse sinalizador for definido, o conteúdo do buffer de estêncil de profundidade será inválido depois de chamar <a href="/windows/desktop/api"><strong>Present</strong></a>ou <a href="/windows/desktop/api"><strong>SetDepthStencilSurface</strong></a> com uma superfície de profundidade diferente. Descartar dados de buffer z pode aumentar o desempenho e é dependente do driver. O runtime de depuração imporá o descarte limpando o buffer z para algum valor constante depois de chamar <a href="/windows/desktop/api"><strong>Present</strong></a>ou <a href="/windows/desktop/api"><strong>SetDepthStencilSurface</strong></a> com uma superfície de profundidade diferente.<br/> Descartar dados de buffer z é ilegal para todos os formatos que podem ser D3DFMT_D16_LOCKABLE e D3DFMT_D32F_LOCKABLE. Qualquer uso de <a href="/windows/desktop/api"><strong>CreateDevice especificando</strong></a> um formato bloqueável e o descarte de buffer z falhará. Para obter mais informações sobre formatos, <a href="d3dformat.md">consulte D3DFORMAT</a>.<br/></td>
 </tr>
 <tr class="even">
 <td>D3DPRESENTFLAG_LOCKABLE_BACKBUFFER</td>
 <td>0x00000001</td>
-<td>Defina esse sinalizador se o aplicativo exigir a capacidade de bloquear o buffer de fundo diretamente. Observe que os buffers de fundo não são bloqueáveis, a menos que o aplicativo especifique D3DPRESENTFLAG_LOCKABLE_BACKBUFFER ao chamar <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> ou <a href="/windows/desktop/api"><strong>Reset</strong></a>. Os buffers de fundo do bloqueáveis incorrem em um custo de desempenho em algumas configurações de hardware de gráficos. Executar uma operação de bloqueio (ou usar <a href="/windows/desktop/api"><strong>UpdateSurface</strong></a> para gravar) no buffer de back bloqueáveis diminui o desempenho em muitos cartões. Nesse caso, considere o uso de triângulos texturizados para mover dados para o buffer de fundo.<br/> 
+<td>De definir esse sinalizador se o aplicativo exigir a capacidade de bloquear o buffer de fundo diretamente. Observe que os buffers de fundo não são bloqueiáveis, a menos que o aplicativo especifique D3DPRESENTFLAG_LOCKABLE_BACKBUFFER ao chamar <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> ou <a href="/windows/desktop/api"><strong>Redefinir</strong></a>. Buffers de fundo com bloqueio incorrem em um custo de desempenho em algumas configurações de hardware de gráficos. Executar uma operação de bloqueio (ou usar <a href="/windows/desktop/api"><strong>UpdateSurface</strong></a> para gravar) no buffer de back bloqueáveis diminui o desempenho em muitos cartões. Nesse caso, considere o uso de triângulos texturizados para mover dados para o buffer de fundo.<br/> 
 <table>
 <tbody>
 <tr class="odd">
@@ -76,7 +76,7 @@ Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/></td>
+<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -86,16 +86,16 @@ Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 <tr class="odd">
 <td>D3DPRESENTFLAG_VIDEO</td>
 <td>0x00000010</td>
-<td>Essa é uma dica para o driver que os buffers de fundo conterám dados de vídeo.</td>
+<td>Essa é uma dica para o driver de que os buffers de fundo conterão dados de vídeo.</td>
 </tr>
 <tr class="even">
 <td>D3DPRESENTFLAG_OVERLAY_LIMITEDRGB</td>
 <td>0x00000080</td>
-<td>Especifica se a sobreposição é RGB do intervalo completo ou RGB de intervalo limitado. A definição desse sinalizador indica um intervalo limitado de RGB. Em um intervalo de RGB limitado, o intervalo RGB é compactado de modo que 16:16:16 é preto e 235:235:235 é branco.
+<td>Especifica se a sobreposição é RGB de intervalo completo ou RGB de intervalo limitado. Definir esse sinalizador indica um intervalo limitado RGB. No intervalo limitado RGB, o intervalo RGB é compactado de forma que 16:16:16 seja preto e 235:235:235 seja branco.
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/></td>
+<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -105,11 +105,11 @@ Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 <tr class="odd">
 <td>D3DPRESENTFLAG_OVERLAY_YCbCr_BT709</td>
 <td>0x00000100</td>
-<td>Especifica se a sobreposição é BT. 601 ou BT. 709. A definição desse sinalizador indica BT. 709, para TV de alta definição (HDTV).
+<td>Especifica se a sobreposição é BT.601 ou BT.709. Definir esse sinalizador indica BT.709, para HDTV (TV de alta definição).
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/></td>
+<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -119,11 +119,11 @@ Constantes usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 <tr class="even">
 <td>D3DPRESENTFLAG_OVERLAY_YCbCr_xvYCC</td>
 <td>0x00000200</td>
-<td>Especifica se a sobreposição é convencional YCbCr ou YCbCr estendido (xvYCC). A definição desse sinalizador indica YCbCr estendido (xvYCC).
+<td>Especifica se a sobreposição é YCbCr convencional ou YCbCr estendido (sempreYCC). Definir esse sinalizador indica YCbCr estendido (cbycc).
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/></td>
+<td>Diferenças entre o Direct3D 9 e o Direct3D 9Ex:<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -171,7 +171,7 @@ Essas constantes são usadas por [**\_ parâmetros D3DPRESENT**](d3dpresent-para
 
 
 
-|                          |             |
+| Requisito                         | Valor            |
 |--------------------------|-------------|
 | parâmetro                   | d3d9types. h |
 | Sistema operacional mínimo | Windows 98  |

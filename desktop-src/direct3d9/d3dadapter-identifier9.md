@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 33aba75cafff5f9e69a74d5570f98455a9853289
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db4b25cb44b3b43b3b9754f241e2c505bdfedbc7
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765111"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343391"
 ---
 # <a name="d3dadapter_identifier9-structure"></a>\_Estrutura D3DADAPTER IDENTIFIER9
 
@@ -101,7 +101,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identifique a versão do driver do Direct3D. É legal fazer < e > comparações no valor inteiro assinado de 64 bits. No entanto, tome cuidado se você usar esse elemento para identificar drivers problemáticos. Em vez disso, você deve usar DeviceIdentifier. Consulte Observações.
+Identifique a versão do driver Direct3D. É legal fazer comparações < e > no valor inteiro com sinal de 64 bits. No entanto, tenha cuidado se você usar esse elemento para identificar drivers problemáticos. Em vez disso, você deve usar DeviceIdentifier. Consulte Observações.
 
 </dd> <dt>
 
@@ -112,18 +112,18 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identifique a versão do driver do Direct3D. É legal fazer < e > comparações no valor inteiro assinado de 64 bits. No entanto, tome cuidado se você usar esse elemento para identificar drivers problemáticos. Em vez disso, você deve usar DeviceIdentifier. Consulte Observações.
+Identifique a versão do driver Direct3D. É legal fazer comparações < e > no valor inteiro com sinal de 64 bits. No entanto, tenha cuidado se você usar esse elemento para identificar drivers problemáticos. Em vez disso, você deve usar DeviceIdentifier. Consulte Observações.
 
 </dd> <dt>
 
-**VendorId**
+**Vendorid**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Pode ser usado para ajudar a identificar um determinado conjunto de chips. Consulte este membro para identificar o fabricante. O valor pode ser zero se for desconhecido.
+Pode ser usado para ajudar a identificar um conjunto de chip específico. Consulte este membro para identificar o fabricante. O valor pode ser zero se for desconhecido.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Pode ser usado para ajudar a identificar um determinado conjunto de chips. Consulte este membro para identificar o tipo de conjunto de chips. O valor pode ser zero se for desconhecido.
+Pode ser usado para ajudar a identificar um conjunto de chip específico. Consulte este membro para identificar o tipo de conjunto de chip. O valor pode ser zero se for desconhecido.
 
 </dd> <dt>
 
@@ -178,13 +178,12 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Usado para determinar o nível de validação do WHQL (Windows Hardware Quality Labs) para este driver e par de dispositivos. O DWORD é uma estrutura de data empacotada que define a data da versão do teste WHQL mais recente passado pelo driver. É legal executar < e > operações nesse valor. O seguinte ilustra o formato de data.
+Usado para determinar o nível de validação do WHQL (Windows Hardware Quality Labs) para este driver e par de dispositivos. O DWORD é uma estrutura de data empacotada que define a data da versão do teste WHQL mais recente passado pelo driver. É legal executar < e > operações nesse valor. O exemplo a seguir ilustra o formato de data.
 
 
 
-|       |                                               |
+| Bits  |  Descrição                                             |
 |-------|-----------------------------------------------|
-| Bits  |                                               |
 | 31-16 | O ano, um número decimal de 1999 para cima. |
 | 15-8  | O mês, um número decimal de 1 a 12.     |
 | 7-0   | O dia, um número decimal de 1 a 31.       |
@@ -197,10 +196,10 @@ Os valores a seguir também são usados.
 
 
 
-|     |                                                       |
+| Valor    |  Descrição                                                     |
 |-----|-------------------------------------------------------|
 | 0   | Não certificado.                                        |
-| 1   | O WHQL foi validado, mas nenhuma informação de data está disponível. |
+| 1   | WHQL validado, mas nenhuma informação de data está disponível. |
 
 
 
@@ -208,7 +207,7 @@ Os valores a seguir também são usados.
 
 Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-Para o Direct3D9Ex em execução no Windows Vista, no Windows Server 2008, no Windows 7 e no Windows Server 2008 R2 (ou mais no sistema operacional atual), [**IDirect3D9:: GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) retorna 1 para o nível de WHQL sem verificar o status do driver.
+Para Direct3D9Ex em execução no Windows Vista, Windows Server 2008, Windows 7 e Windows Server 2008 R2 (ou sistema operacional mais atual), [**IDirect3D9::GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) retorna 1 para o nível WHQL sem verificar o status do driver.
 
 </dd> </dl>
 
@@ -226,9 +225,9 @@ Build = LOWORD(DriverVersion.LowPart)
 
 
 
-Consulte o SDK da plataforma para obter mais informações sobre a macro HIWORD, a macro LOWORD e a \_ estrutura de inteiro grande.
+Consulte o SDK da plataforma para obter mais informações sobre a macro HIWORD, a macro LOWORD e a estrutura \_ INTEGER GRANDE.
 
-\_ \_ A cadeia de caracteres máxima do identificador de dispositivo \_ é uma constante com a definição a seguir.
+MAX \_ DEVICE \_ IDENTIFIER STRING é uma constante com a \_ definição a seguir.
 
 
 ```
@@ -237,7 +236,7 @@ Consulte o SDK da plataforma para obter mais informações sobre a macro HIWORD,
 
 
 
-Os membros VendorID, DeviceID, SubSysId e Revision podem ser usados em conjunto para identificar conjuntos de chips específicos. No entanto, use esses membros com cuidado.
+Os membros VendorId, DeviceId, SubSysId e Revision podem ser usados em conjunto para identificar conjuntos de chip específicos. No entanto, use esses membros com cuidado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -245,7 +244,7 @@ Os membros VendorID, DeviceID, SubSysId e Revision podem ser usados em conjunto 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -253,7 +252,7 @@ Os membros VendorID, DeviceID, SubSysId e Revision podem ser usados em conjunto 
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> </dl>
 
  
