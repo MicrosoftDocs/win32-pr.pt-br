@@ -1,37 +1,36 @@
 ---
-description: Invocando métodos de serviço de forma assíncrona
+description: Invocar métodos de serviço de forma assíncrona
 ms.assetid: d3072e34-65f2-4eeb-bcfa-e2db2d34e680
-title: Invocando métodos de serviço de forma assíncrona
+title: Invocar métodos de serviço de forma assíncrona
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d312cc76cf8cb737136629c1e2c8135d1b7bd1e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ef4f0eb2e75b977b53300bed6eab4c909fa7796
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170444"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423846"
 ---
-# <a name="invoking-service-methods-asynchronously"></a>Invocando métodos de serviço de forma assíncrona
+# <a name="invoking-service-methods-asynchronously"></a>Invocar métodos de serviço de forma assíncrona
 
-O aplicativo WpdServiceApiSample inclui código que demonstra como um aplicativo pode invocar os métodos de serviço de forma assíncrona. Este exemplo usa as seguintes interfaces.
+O aplicativo WpdServiceApiSample inclui código que demonstra como um aplicativo pode invocar os métodos de serviço de forma assíncrona. Este exemplo usa as interfaces a seguir.
 
 
 
-|                                                                                         |                                                                                                                                                                         |
+| Interface    | Descrição          |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interface                                                                               | Descrição                                                                                                                                                             |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                                | Usado para recuperar a interface **IPortableDeviceServiceMethods** para invocar métodos em um determinado serviço.                                                                  |
 | [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethods)                  | Usado para invocar um método de serviço.                                                                                                                                        |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)                                  | Usado para manter os parâmetros do método de saída e os resultados do método de entrada. Isso poderá ser **nulo** se o método não exigir nenhum parâmetro ou retornar nenhum resultado. |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)                                  | Usado para manter os parâmetros de método de saída e os resultados do método de entrada. Isso poderá ser **NULL** se o método não exigir parâmetros ou retornar resultados. |
 | [**IPortableDeviceServiceMethodCallback**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceservicemethodcallback) | Implementado pelo aplicativo para receber os resultados do método quando um método for concluído.                                                                               |
 
 
 
  
 
-Quando o usuário escolhe a opção "10" na linha de comando, o aplicativo invoca o método **InvokeMethodsAsync** que é encontrado no módulo permethods. cpp. Observe que, antes de invocar os métodos, o aplicativo de exemplo abre um serviço de contatos em um dispositivo conectado.
+Quando o usuário escolhe a opção "10" na linha de comando, o aplicativo invoca o método **InvokeMethodsAsync** encontrado no módulo ServiceMethods.cpp. Observe que, antes de invocar os métodos, o aplicativo de exemplo abre um serviço Contatos em um dispositivo conectado.
 
-Os métodos de serviço encapsulam a funcionalidade que cada serviço define e implementa. Eles são exclusivos de cada tipo de serviço e são representados por um GUID. Por exemplo, o serviço de contatos define um método **BeginSync** que os aplicativos chamam para preparar o dispositivo para sincronizar objetos de contato e um método **endsync** para notificar o dispositivo de que a sincronização foi concluída. Os aplicativos executam um método de serviço de dispositivo portátil chamando [**IPortableDeviceServiceMethods:: Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
+Os métodos de serviço encapsulam a funcionalidade que cada serviço define e implementa. Eles são exclusivos para cada tipo de serviço e são representados por um GUID. Por exemplo, o serviço Contatos define um método **BeginSync** que os aplicativos chamam para preparar o dispositivo para sincronizar objetos contact e um **método EndSync** para notificar o dispositivo de que a sincronização foi concluída. Os aplicativos executam um método de serviço de dispositivo portátil chamando [**IPortableDeviceServiceMethods::Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
 
 Os métodos de serviço não devem ser confundidos com comandos WPD. Os comandos WPD fazem parte da DDI (interface de driver de dispositivo) Standard WPD e são o mecanismo de comunicação entre um aplicativo WPD e o driver. Os comandos são predefinidos, agrupados por categorias (por exemplo, a **categoria de WPD \_ \_ comum**) e são representados por uma estrutura de **PROPERTYKEY** . Um aplicativo envia comandos para o driver de dispositivo chamando [**IPortableDeviceService:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Para obter mais informações, consulte o tópico comandos.
 
@@ -99,7 +98,7 @@ A função auxiliar **InvokeMethodAsync** faz o seguinte para cada método que e
 -   Monitora o identificador de evento global para conclusão.
 -   Executa a limpeza.
 
-A classe **CMethodCallback** demonstra como um aplicativo pode implementar o [**IPortableDeviceServiceMethodCallback**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethodcallback). A implementação de **OnComplete** nessa classe sinaliza um evento para notificar o aplicativo de que o método de serviço foi concluído. Além do método **OnComplete** , essa classe implementa **AddRef**, **QueryInterface** e **Release**, que são usados para manter a contagem de referência do objeto e as interfaces que ele implementa.
+A classe **CMethodCallback** demonstra como um aplicativo pode implementar o [**IPortableDeviceServiceMethodCallback**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethodcallback). A implementação de **OnComplete** nessa classe sinaliza um evento para notificar o aplicativo de que o método de serviço foi concluído. Além do método **OnComplete,** essa classe implementa **AddRef,** **QueryInterface** e **Release**, que são usados para manter a contagem de referência do objeto e as interfaces que ele implementa.
 
 
 ```C++

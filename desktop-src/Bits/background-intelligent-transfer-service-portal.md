@@ -11,12 +11,12 @@ keywords:
 - carregando BITS de arquivos
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: a531821665490735b391ab2714f5b37146c6bc1e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9483e297e8b48ad6466846c7eceb8d53b57d3278
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917551"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424206"
 ---
 # <a name="background-intelligent-transfer-service"></a>BITS
 
@@ -44,7 +44,7 @@ O BITS é uma interface COM criada para desenvolvedores C e C++ que também pode
 
 ## <a name="bits-versions"></a>Versões do BITS
 
-Para obter o histórico de versão completo e informações sobre o sistema operacional anterior, consulte [novidades](what-s-new.md).
+Para obter o histórico completo de versões e informações sobre o sistema operacional anterior, consulte [Novidades.](what-s-new.md)
 
 
 ## <a name="in-this-section"></a>Nesta seção
@@ -53,10 +53,10 @@ Para obter o histórico de versão completo e informações sobre o sistema oper
 
 | Tópico                                                           | Descrição                                                                                                                                                                     |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Sobre BITS](about-bits.md)<br/>                         | Informações gerais sobre o BITS.<br/>                                                                                                                                      |
-| [Usando BITS](using-bits.md)<br/>                         | Guia de procedimentos para o desenvolvimento de clientes BITS que transferem arquivos entre um cliente e um servidor.<br/>                                                                        |
+| [Sobre BITS](about-bits.md)<br/>                         | Informações gerais sobre BITS.<br/>                                                                                                                                      |
+| [Usando BITS](using-bits.md)<br/>                         | Guia de procedimento para desenvolver clientes BITS que transferem arquivos entre um cliente e um servidor.<br/>                                                                        |
 | [Referência BITS](bits-reference.md)<br/>                 | Informações de referência para as interfaces de programação BITS. Também contém informações sobre exemplos, ferramentas, configurações de servidor para trabalhos de upload e o protocolo de upload.<br/> |
-| [Práticas recomendadas](best-practices-when-using-bits.md)<br/> | Informações a serem consideradas ao criar um aplicativo que usa BITS.<br/>                                                                                                |
+| [Práticas recomendadas](best-practices-when-using-bits.md)<br/> | Informações a considerar ao criar um aplicativo que usa BITS.<br/>                                                                                                |
 
 
 
@@ -64,13 +64,13 @@ Para obter o histórico de versão completo e informações sobre o sistema oper
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-A seguir estão os recursos adicionais.
+A seguir estão recursos adicionais.
 
 
-|             |                                                                                                                                                 |
+|    Recurso         |    Descrição                                                                                                                                     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| DLL de referência do .NET   | Para obter informações sobre como usar BITS do .NET usando DLLs de referência, consulte [chamando em bits do .NET usando DLLs de referência](/windows/desktop/Bits/bits-dot-net)      |
-| Wrapper do .NET   | Para outros wrappers .NET para BITS, você pode pesquisar [NuGet](https://www.nuget.org/packages?q=Tags%3A%22BITS%22) para projetos marcados com a marca bits.        |
+| DLL de referência do .NET   | Para obter informações sobre como usar o BITS do .NET usando DLLs de referência, consulte Chamando bits do [.NET usando DLLs de referência](/windows/desktop/Bits/bits-dot-net)      |
+| Wrapper do .NET   | Para outros wrappers do .NET para BITS, você pode pesquisar [projetos marcados](https://www.nuget.org/packages?q=Tags%3A%22BITS%22) no nuget com a marca BITS.        |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 4af4201c-d3f6-4630-91ec-6509c51871a5
 title: Enumerando o conteúdo do serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04adb949fdec9a0001583b1481ccd50ada1ef1df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2b701bdab867e96bc9658e2624ea18aa65dfc33
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164416"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424246"
 ---
 # <a name="enumerating-service-content"></a>Enumerando o conteúdo do serviço
 
@@ -17,9 +17,8 @@ Depois que o aplicativo abre um serviço, ele pode começar a executar operaçõ
 
 
 
-|                                                                      |                                                                                                  |
-|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Interface                                                            | Descrição                                                                                      |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Usado para recuperar a interface IPortableDeviceContent2 para acessar o conteúdo no serviço.         |
 | [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)           | Usado para recuperar a interface IEnumPortableDeviceObjectIDs para enumerar objetos no serviço. |
 | [**IEnumPortableDeviceObjectIDs**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-ienumportabledeviceobjectids) | Usado para enumerar objetos no serviço.                                                        |
@@ -71,7 +70,7 @@ void EnumerateAllContent(
 
 
 
-O código a seguir corresponde ao método **RecursiveEnumerate** . O método RecursiveEnumerate instancia uma interface **IEnumPortableDeviceObjectIDs** para o objeto pai fornecido e chama **IEnumPortableDeviceObjectIDs:: Next**, recuperando um lote de objetos filho imediatos. Para cada objeto filho, RecursiveEnumerate é chamado novamente para retornar seus objetos filho descendentes e assim por diante.
+O código a seguir corresponde ao **método RecursiveEnumerate.** O método RecursiveEnumerate instanciou uma interface **IEnumPortableDeviceObjectIDs** para o objeto pai fornecido e chama **IEnumPortableDeviceObjectIDs::Next**, recuperando um lote de objetos filho imediatos. Para cada objeto filho, RecursiveEnumerate é chamado novamente para retornar seus objetos filho descendentes e assim por diante.
 
 
 ```C++
@@ -131,10 +130,10 @@ void RecursiveEnumerate(
 [**IEnumPortableDeviceObjectIDs**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-ienumportabledeviceobjectids)
 </dt> <dt>
 
-[**Interface IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)
+[**IPortableDeviceContent2 Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)
 </dt> <dt>
 
-[**Interface IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
+[**IPortableDeviceService Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
 </dt> <dt>
 
 [Abrindo um serviço](opening-a-service.md)

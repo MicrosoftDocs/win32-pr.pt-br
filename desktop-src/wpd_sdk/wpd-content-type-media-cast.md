@@ -1,37 +1,36 @@
 ---
-description: '\_conversão de \_ mídia de tipo de conteúdo WPD \_ \_'
+description: CAST DE MÍDIA \_ DO \_ TIPO DE \_ CONTEÚDO \_ WPD
 ms.assetid: 368e7381-8978-421a-b450-59915f8e70e2
 title: WPD_CONTENT_TYPE_MEDIA_CAST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2daafb381aac802b9add130aa97e9750f30e7847
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6d45c9bc1e8e41bae526f02102d341ef00fad435
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104091897"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423456"
 ---
-# <a name="wpd_content_type_media_cast"></a>\_conversão de \_ mídia de tipo de conteúdo WPD \_ \_
+# <a name="wpd_content_type_media_cast"></a>CAST DE MÍDIA \_ DO \_ TIPO DE \_ CONTEÚDO \_ WPD
 
-Um objeto que descreve seu tipo de tipo de conteúdo WPD com \_ \_ \_ \_ conversão de mídia representa uma coleção de conteúdo relacionado.
+Um objeto que descreve seu tipo como WPD \_ CONTENT TYPE MEDIA CAST representa uma coleção de conteúdo \_ \_ \_ relacionado.
 
-Um objeto Mediacast pode ser considerado como um objeto de contêiner que agrupa conteúdo relacionado, assim como uma lista de reprodução de músicas. Geralmente, um objeto Mediacast é usado para agrupar o conteúdo de mídia que foi publicado online. Por exemplo, um canal RSS pode ser representado como um objeto Mediacast, cujas referências de objeto apontam para objetos de conteúdo que representam cada item no canal.
+Um objeto Mediacast pode ser pensado como um objeto de contêiner que grupos de conteúdo relacionado, assim como uma música de grupos de playlists. Geralmente, um objeto Mediacast é usado para agrupar o conteúdo de mídia que foi publicado online. Por exemplo, um canal RSS pode ser representado como um objeto Mediacast cujas referências de objeto apontam para objetos de conteúdo que representam cada item no canal.
 
 Esse tipo de objeto dá suporte às propriedades a seguir.
 
 
 
-|                                                                                                                       |                                                                       |
+| Nome da propriedade             |  Obrigatório ou Opcional         |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **Nome da propriedade**                                                                                                     | **Obrigatório ou opcional**                                              |
-| [\_ID de objeto WPD \_](object-properties.md)                                                                | Obrigatórios.                                                             |
-| [\_ \_ ID pai do objeto WPD \_](object-properties.md)                                                 | Obrigatórios.                                                             |
-| [\_nome do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                             |
-| [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md)                          | Obrigatórios.                                                             |
-| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obrigatórios.                                                             |
-| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                                           | Obrigatórios.                                                             |
-| [objeto WPD- \_ \_ oculto](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                     |
-| [IsSystem de \_ objetos WPD \_](object-properties.md)                                                    | Obrigatório se o objeto for um objeto do sistema (representa um arquivo do sistema). |
+| [ID DO \_ \_ OBJETO WPD](object-properties.md)                                                                | Obrigatórios.                                                             |
+| [ID PAI \_ \_ DO OBJETO \_ WPD](object-properties.md)                                                 | Obrigatórios.                                                             |
+| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                             |
+| [ID EXCLUSIVA \_ \_ PERSISTENTE DO OBJETO \_ \_ WPD](object-properties.md)                          | Obrigatórios.                                                             |
+| [FORMATO DE OBJETO WPD \_ \_](object-properties.md)                                                        | Obrigatórios.                                                             |
+| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                                           | Obrigatórios.                                                             |
+| [\_ \_ ISHIDDEN DE OBJETO WPD](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                     |
+| [ISSYSTEM \_ DO OBJETO WPD \_](object-properties.md)                                                    | Necessário se o objeto for um objeto do sistema (representa um arquivo do sistema). |
 | [\_tamanho do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto tiver pelo menos um recurso.                     |
 | [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)                              | Necessário se o objeto representar um arquivo.                             |
 | [\_objeto WPD \_ não \_ consumível](object-properties.md)                                       | Recomendado se o objeto não for destinada ao consumo pelo dispositivo. |
@@ -46,24 +45,24 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 | [\_ID de \_ \_ objeto funcional \_ do contêiner de objetos WPD \_](object-properties.md)     | Opcional.                                                             |
 | [o \_ objeto WPD \_ gera \_ miniaturas \_ do \_ recurso](object-properties.md) | Opcional.                                                             |
 | [o \_ objeto WPD \_ pode \_ excluir](object-properties.md)                                               | Necessário se o objeto puder ser excluído.                                |
-| [\_localidade do \_ idioma do objeto WPD \_](object-properties.md)                                                                | Obrigatório se o objeto não puder ser excluído.                             |
-| [\_ \_ direitos autorais de mídia WPD](media-properties.md)                                                     | Opcional.                                                             |
-| [\_classificação de \_ controle de nível de mídia WPD \_](media-properties.md)                                        | Opcional.                                                             |
-| [metagênero de \_ mídia WPD \_ \_](media-properties.md)                                                  | Opcional.                                                             |
-| [subtítulo de \_ mídia WPD \_ \_](media-properties.md)                                                    | Opcional.                                                             |
-| [\_data de \_ lançamento de mídia WPD \_](media-properties.md)                                              | Recomendável.                                                          |
-| [\_título de mídia WPD \_](media-properties.md)                                                             | Recomendável.                                                          |
-| [\_proprietário da mídia WPD \_](media-properties.md)                                                             | Recomendável.                                                          |
-| [\_Editor de \_ Gerenciamento de mídia WPD \_](media-properties.md)                                        | Recomendável.                                                          |
-| [\_webmaster de mídia WPD \_](media-properties.md)                                                     | Recomendável.                                                          |
-| [\_URL de \_ origem de mídia WPD \_](media-properties.md)                                                  | Recomendável.                                                          |
-| [\_URL de \_ destino de mídia WPD \_](media-properties.md)                                        | Recomendável.                                                          |
-| [\_Descrição da mídia WPD \_](media-properties.md)                                                 | Opcional.                                                             |
-| [\_gênero de mídia WPD \_](media-properties.md)                                                             | Opcional.                                                             |
-| [\_indicador de \_ objeto de mídia WPD \_](media-properties.md)                                        | Recomendadas                                                           |
-| [\_data da \_ última \_ compilação da mídia \_ WPD](media-properties.md)                                       | Recomendável.                                                          |
-| [\_vida útil \_ \_ de mídia \_ WPD](media-properties.md)                                             | Opcional.                                                             |
-| [subdescrição de \_ mídia WPD \_ \_](object-properties.md)                                                                 | Opcional.                                                             |
+| [LOCALIDADE DA \_ LINGUAGEM \_ DE OBJETO \_ WPD](object-properties.md)                                                                | Necessário se o objeto não puder ser excluído.                             |
+| [DIREITOS \_ AUTORAIS DA MÍDIA WPD \_](media-properties.md)                                                     | Opcional.                                                             |
+| [CLASSIFICAÇÃO DOS \_ \_ PAIS DE MÍDIA WPD \_](media-properties.md)                                        | Opcional.                                                             |
+| [META-GÊNERO DE MÍDIA WPD \_ \_ \_](media-properties.md)                                                  | Opcional.                                                             |
+| [SUB-TÍTULO \_ DE \_ MÍDIA \_ WPD](media-properties.md)                                                    | Opcional.                                                             |
+| [WPD \_ MEDIA \_ RELEASE \_ DATE](media-properties.md)                                              | Recomendável.                                                          |
+| [TÍTULO DA \_ MÍDIA \_ WPD](media-properties.md)                                                             | Recomendável.                                                          |
+| [PROPRIETÁRIO DA MÍDIA WPD \_ \_](media-properties.md)                                                             | Recomendável.                                                          |
+| [EDITOR DE GERENCIAMENTO DE MÍDIA WPD \_ \_ \_](media-properties.md)                                        | Recomendável.                                                          |
+| [WPD \_ MEDIA \_ WEBMASTER](media-properties.md)                                                     | Recomendável.                                                          |
+| [URL DE \_ ORIGEM \_ DA MÍDIA WPD \_](media-properties.md)                                                  | Recomendável.                                                          |
+| [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md)                                        | Recomendável.                                                          |
+| [DESCRIÇÃO DA MÍDIA WPD \_ \_](media-properties.md)                                                 | Opcional.                                                             |
+| [GÊNERO DE MÍDIA WPD \_ \_](media-properties.md)                                                             | Opcional.                                                             |
+| [INDICADOR DE \_ OBJETO \_ DE MÍDIA \_ WPD](media-properties.md)                                        | Recomendadas                                                           |
+| [DATA DO \_ ÚLTIMO BUILD DA \_ MÍDIA \_ \_ WPD](media-properties.md)                                       | Recomendável.                                                          |
+| [TEMPO DE \_ \_ VIDA DE MÍDIA \_ WPD \_](media-properties.md)                                             | Opcional.                                                             |
+| [SUB DESCRIÇÃO DA MÍDIA WPD \_ \_ \_](object-properties.md)                                                                 | Opcional.                                                             |
 
 
 
@@ -151,9 +150,8 @@ A tabela a seguir lista os elementos de canal em um RSS feed e as \_ Propriedade
 
 
 
-|                     |                          |                                                                                 |
+| Elemento Channel | Requisito de RSS feed | Propriedade Mediacast correspondente      |
 |---------------------|--------------------------|---------------------------------------------------------------------------------|
-| **Elemento Channel** | **Requisito de RSS feed** | **Propriedade Mediacast correspondente**                                            |
 | category            | Opcional.                | [\_gênero de mídia WPD \_](media-properties.md)                       |
 | nuvem               | Não aplicável.          | Não aplicável.                                                                 |
 | direitos autorais           | Opcional.                | [\_ \_ direitos autorais de mídia WPD](media-properties.md)               |
@@ -161,33 +159,32 @@ A tabela a seguir lista os elementos de canal em um RSS feed e as \_ Propriedade
 | docs                | Não aplicável.          | Não aplicável.                                                                 |
 | gerador           | Não aplicável.          | Não aplicável.                                                                 |
 | Linguagem            | Não aplicável.          | Não aplicável.                                                                 |
-| lastBuildDate       | Opcional.                | [\_data da \_ última \_ compilação da mídia \_ WPD](media-properties.md) |
-| link                | Obrigatórios.                | [\_URL de \_ destino de mídia WPD \_](media-properties.md)  |
-| managingEditor      | Opcional.                | [\_Editor de \_ Gerenciamento de mídia WPD \_](media-properties.md)  |
-| pubDate             | Opcional.                | [\_data de \_ lançamento de mídia WPD \_](media-properties.md)        |
+| lastBuildDate       | Opcional.                | [DATA DO \_ ÚLTIMO BUILD DA \_ MÍDIA \_ \_ WPD](media-properties.md) |
+| link                | Obrigatórios.                | [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md)  |
+| managingEditor      | Opcional.                | [EDITOR DE GERENCIAMENTO DE MÍDIA WPD \_ \_ \_](media-properties.md)  |
+| pubDate             | Opcional.                | [WPD \_ MEDIA \_ RELEASE \_ DATE](media-properties.md)        |
 | classificação              | Não aplicável.          | Não aplicável.                                                                 |
 | skipDays            | Não aplicável.          | Não aplicável.                                                                 |
 | skipHours           | Não aplicável.          | Não aplicável.                                                                 |
-| textInput           | Não aplicável.          | Não aplicável.                                                                 |
-| título               | Obrigatórios.                | [\_nome do objeto WPD \_](object-properties.md)                      |
-| ttl                 | Opcional.                | [\_vida útil \_ \_ de mídia \_ WPD](media-properties.md)       |
-| webMaster           | Opcional.                | [\_webmaster de mídia WPD \_](media-properties.md)               |
+| Textinput           | Não aplicável.          | Não aplicável.                                                                 |
+| title               | Obrigatórios.                | [NOME DO OBJETO WPD \_ \_](object-properties.md)                      |
+| ttl                 | Opcional.                | [TEMPO DE \_ \_ VIDA DE MÍDIA \_ WPD \_](media-properties.md)       |
+| Webmaster           | Opcional.                | [WPD \_ MEDIA \_ WEBMASTER](media-properties.md)               |
 
 
 
  
 
-A tabela a seguir lista os elementos de imagem em um RSS feed e as \_ Propriedades de conversão de mídia do tipo de conteúdo WPD correspondente \_ \_ \_ .
+A tabela a seguir lista os elementos de imagem em um RSS feed e as propriedades CORRESPONDENTES WPD \_ CONTENT \_ TYPE MEDIA \_ \_ CAST.
 
 
 
-|                   |                          |                                                                                |
+| Elemento de imagem | Requisito do RSS Feed | Propriedade Mediacast                     |
 |-------------------|--------------------------|--------------------------------------------------------------------------------|
-| **Elemento de imagem** | **Requisito de RSS feed** | **Propriedade Mediacast**                                                         |
-| descrição       | Opcional.                | [\_Descrição da mídia WPD \_](media-properties.md)          |
-| altura            | Opcional.                | [\_altura de mídia WPD \_](media-properties.md)                    |
-| link              | Opcional.                | [\_URL de \_ destino de mídia WPD \_](media-properties.md) |
-| título             | Opcional.                | [\_nome do objeto WPD \_](object-properties.md)                     |
+| descrição       | Opcional.                | [DESCRIÇÃO DA MÍDIA WPD \_ \_](media-properties.md)          |
+| altura            | Opcional.                | [ALTURA DA MÍDIA WPD \_ \_](media-properties.md)                    |
+| link              | Opcional.                | [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md) |
+| title             | Opcional.                | [NOME DO OBJETO WPD \_ \_](object-properties.md)                     |
 | url               | Opcional.                | [\_URL de \_ origem de mídia WPD \_](media-properties.md)           |
 | width             | Opcional.                | [\_largura de mídia WPD \_](media-properties.md)                      |
 
@@ -199,9 +196,8 @@ A tabela a seguir lista os elementos de item em um RSS feed e as \_ Propriedades
 
 
 
-|                  |               |                          |                                                                                |
+| Elemento Item | Atributo | Requisito de RSS feed | Propriedade Mediacast  |
 |------------------|---------------|--------------------------|--------------------------------------------------------------------------------|
-| **Elemento item** | **Atributo** | **Requisito de RSS feed** | **Propriedade Mediacast**                                                         |
 | autor           |               | Opcional.                | [\_artista de mídia WPD \_](media-properties.md)                    |
 | category         |               | Opcional.                | [\_gênero de mídia WPD \_](media-properties.md)                      |
 |                  | domínio        | Não aplicável.          | Não aplicável.                                                                |
@@ -215,7 +211,7 @@ A tabela a seguir lista os elementos de item em um RSS feed e as \_ Propriedades
 | link             |               | Opcional.                | [\_URL de \_ destino de mídia WPD \_](media-properties.md) |
 | pubDate          |               | Opcional.                | [\_data de \_ lançamento de mídia WPD \_](media-properties.md)       |
 | source           |               | Não aplicável.          | Não aplicável.                                                                |
-| título            |               | Opcional.                | [\_nome do objeto WPD \_](object-properties.md)                     |
+| title            |               | Opcional.                | [\_nome do objeto WPD \_](object-properties.md)                     |
 
 
 
@@ -274,25 +270,24 @@ O exemplo a seguir mostra um RSS feed completo para um podcast fictício forneci
 
 ## <a name="mapping-rss-channel-elements-to-wpd-property-values"></a>Mapeando elementos de canal RSS para valores de propriedade WPD
 
-A tabela a seguir descreve como os valores nos elementos do canal RSS no exemplo anterior são mapeados para determinadas propriedades WPD.
+A tabela a seguir descreve como os valores nos elementos do canal RSS no exemplo anterior são mapeados para propriedades WPD específicas.
 
 
 
-|                                                                                              |                                                                                               |
+| Propriedade WPD | Valor |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| **Propriedade WPD**                                                                             | **Valor**                                                                                     |
-| [\_ \_ direitos autorais de mídia WPD](media-properties.md)                            | 2006 Lucerne Publishing LP, LLLP. Todos os direitos reservados.                                        |
-| [\_Descrição da mídia WPD \_](media-properties.md)                        | A Lucerne Publishing CEO Peter Bankov analisa as tendências mais recentes em publicações online. |
-| [\_URL de \_ destino de mídia WPD \_](media-properties.md)               | https://www.lucernepublishing.com/services/podcasting                                          |
-| [\_gênero de mídia WPD \_](media-properties.md)                                    | Notícias                                                                                          |
-| [\_data da \_ última \_ compilação da mídia \_ WPD](media-properties.md)              | Sexta-feira, 9 de junho de 2006 14:00:28 EDT                                                                 |
-| [\_Editor de \_ Gerenciamento de mídia WPD \_](media-properties.md)               | someone@example.com                                                                           |
-| [\_data de \_ lançamento de mídia WPD \_](media-properties.md)                     | Sexta-feira, 9 de junho de 2006 14:00:28 EDT                                                                 |
-| [\_vida útil \_ \_ de mídia \_ WPD](media-properties.md)                    | 240                                                                                           |
-| [\_título de mídia WPD \_](media-properties.md)                                    | A publicação digital                                                                       |
-| [\_URL de \_ origem de mídia WPD \_](media-properties.md)                         | https://www.lucernepublishing/services/podcasting/digital.publication/rss.xml                  |
-| [\_webmaster de mídia WPD \_](media-properties.md)                            | someone@example.com                                                                           |
-| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                  | \_conversão de \_ mídia de tipo de conteúdo WPD \_ \_                                                               |
+| [DIREITOS \_ AUTORAIS DA MÍDIA WPD \_](media-properties.md)                            | 2006 Lucerne Publishing LP, LLLP. Todos os direitos reservados.                                        |
+| [DESCRIÇÃO DA MÍDIA WPD \_ \_](media-properties.md)                        | O CEO da Lucerne Publishing Peter Bankov dá uma olhada nas tendências mais recentes em publicações online. |
+| [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md)               | https://www.lucernepublishing.com/services/podcasting                                          |
+| [GÊNERO DE MÍDIA WPD \_ \_](media-properties.md)                                    | Notícias                                                                                          |
+| [DATA DO \_ ÚLTIMO BUILD DA \_ MÍDIA \_ \_ WPD](media-properties.md)              | Sexta-feira, 9 de junho de 2006, 14:00:28 EDT                                                                 |
+| [EDITOR DE GERENCIAMENTO DE MÍDIA WPD \_ \_ \_](media-properties.md)               | someone@example.com                                                                           |
+| [WPD \_ MEDIA \_ RELEASE \_ DATE](media-properties.md)                     | Sexta-feira, 9 de junho de 2006, 14:00:28 EDT                                                                 |
+| [TEMPO DE \_ \_ VIDA DE MÍDIA \_ WPD \_](media-properties.md)                    | 240                                                                                           |
+| [TÍTULO DA \_ MÍDIA \_ WPD](media-properties.md)                                    | A publicação digital                                                                       |
+| [URL DE \_ ORIGEM \_ DA MÍDIA WPD \_](media-properties.md)                         | https://www.lucernepublishing/services/podcasting/digital.publication/rss.xml                  |
+| [WPD \_ MEDIA \_ WEBMASTER](media-properties.md)                            | someone@example.com                                                                           |
+| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                  | CAST DE MÍDIA \_ DO \_ TIPO DE \_ CONTEÚDO \_ WPD                                                               |
 | [\_data do objeto WPD \_ \_ criado](object-properties.md)                | Sexta-feira, 9 de junho de 2006 14:00:28 EDT                                                                 |
 | [\_data do objeto WPD \_ \_ criado](object-properties.md)                  | Sexta-feira, 9 de junho de 2006 14:00:28 EDT                                                                 |
 | [\_data do objeto WPD \_ \_ modificado](object-properties.md)                | Sexta-feira, 9 de junho de 2006 14:00:28 EDT                                                                 |
@@ -302,8 +297,8 @@ A tabela a seguir descreve como os valores nos elementos do canal RSS no exemplo
 | [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)     | A publicação digital                                                                       |
 | [\_ \_ ID pai do objeto WPD \_](object-properties.md)                        | Mypodcasts (uma pasta de podcast fictícia no dispositivo). Suponha que "0A0" para este exemplo.        |
 | [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md) | Valor independente de sessão. (Suponha "0A1" para este exemplo.)                                   |
-| [\_referências de objetos WPD \_](object-properties.md)                       | 0A2 para N itens<br/>                                                                   |
-| [\_tamanho do objeto WPD \_](object-properties.md)                                   | 13.790                                                                                        |
+| [REFERÊNCIAS DE OBJETO WPD \_ \_](object-properties.md)                       | 0A2 para N itens<br/>                                                                   |
+| [TAMANHO DO OBJETO WPD \_ \_](object-properties.md)                                   | 13,790                                                                                        |
 
 
 
@@ -311,22 +306,21 @@ A tabela a seguir descreve como os valores nos elementos do canal RSS no exemplo
 
 ## <a name="mapping-rss-image-elements-to-wpd-property-values"></a>Mapeando elementos de imagem RSS para valores de propriedade WPD
 
-A tabela a seguir descreve como os valores nos elementos da imagem RSS no exemplo anterior são mapeados para determinadas propriedades WPD.
+A tabela a seguir descreve como os valores nos elementos da Imagem RSS no exemplo anterior são mapeados para propriedades WPD específicas.
 
 
 
-|                                                                                                                         |                                                     |
+| Propriedade WPD               |                         Valor                                           |
 |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Propriedade WPD**                                                                                                        | **Valor**                                           |
-| [\_Descrição da mídia WPD \_](media-properties.md)                                                   | Logotipo da Lucerne                                        |
-| [\_URL de \_ destino de mídia WPD \_](media-properties.md)                                          | https://www.lucernepublishing.com/community/podcasts |
-| [\_altura de mídia WPD \_](media-properties.md)                                                             | 300                                                 |
-| [\_URL de \_ origem de mídia WPD \_](media-properties.md)                                                    | https://www.lucernepublishing.com/images/logo.gif    |
-| [\_largura de mídia WPD \_](media-properties.md)                                                               | 300                                                 |
-| [\_nome do objeto WPD \_](object-properties.md)                                                              | Publicação na editora                                  |
-| [o \_ atributo de recurso WPD \_ \_ pode \_ excluir](attributes.md)                               | VARIANTE \_ true                                       |
-| [o \_ atributo de recurso WPD \_ \_ pode \_ ler](attributes.md)                                   | VARIANTE \_ true                                       |
-| [\_formato de \_ atributo de recurso WPD \_](resource-attribute-properties.md)                     | \_GIF de \_ formato de objeto WPD \_                            |
+| [DESCRIÇÃO DA MÍDIA WPD \_ \_](media-properties.md)                                                   | Logotipo lucerne                                        |
+| [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md)                                          | https://www.lucernepublishing.com/community/podcasts |
+| [ALTURA DA MÍDIA WPD \_ \_](media-properties.md)                                                             | 300                                                 |
+| [URL DE \_ ORIGEM \_ DA MÍDIA WPD \_](media-properties.md)                                                    | https://www.lucernepublishing.com/images/logo.gif    |
+| [LARGURA DE MÍDIA WPD \_ \_](media-properties.md)                                                               | 300                                                 |
+| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                                              | Lucerne Publishing                                  |
+| [O ATRIBUTO \_ DE RECURSO \_ WPD PODE \_ \_ EXCLUIR](attributes.md)                               | VARIANT \_ TRUE                                       |
+| [O ATRIBUTO DE RECURSO WPD \_ \_ PODE \_ \_ LER](attributes.md)                                   | VARIANT \_ TRUE                                       |
+| [FORMATO DE \_ ATRIBUTO DE \_ RECURSO WPD \_](resource-attribute-properties.md)                     | \_GIF de \_ formato de objeto WPD \_                            |
 | [\_atributo de recurso WPD \_ \_ ideal tamanho do \_ buffer de leitura \_ \_](attributes.md) | 1024                                                |
 | [\_ \_ Tamanho total do atributo de recurso WPD \_ \_](resource-attribute-properties.md)            | 512                                                 |
 
@@ -340,9 +334,8 @@ A tabela a seguir descreve como os valores nos elementos de item RSS no exemplo 
 
 
 
-|                                                                                              |                                                                                                                                  |
+| Propriedade WPD  | Valor                   |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **Propriedade WPD**<br/>                                                                  | **Valor**                                                                                                                        |
 | [\_título de mídia WPD \_](media-properties.md)                                    | A publicação digital                                                                                                          |
 | [\_duração da mídia WPD \_](media-properties.md)                              | 10329011                                                                                                                         |
 | [\_artista de mídia WPD \_](media-properties.md)                                  | Zulu                                                                                                                          |
@@ -351,16 +344,16 @@ A tabela a seguir descreve como os valores nos elementos de item RSS no exemplo 
 | [\_gênero de mídia WPD \_](media-properties.md)                                    | Notícias                                                                                                                             |
 | [\_GUID de mídia WPD \_](media-properties.md)                                      | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                |
 | [\_data de \_ lançamento de mídia WPD \_](media-properties.md)                     | Qui., 1 de junho de 2006 14:00:28 EDT                                                                                                   |
-| [\_URL de \_ origem de mídia WPD \_](media-properties.md)                         | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                |
-| [\_referências de \_ retorno de objeto WPD \_](object-properties.md)            | 0A1                                                                                                                              |
-| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                  | \_imagem de \_ mídia do tipo de conteúdo WPD \_ \_                                                                                                 |
-| [\_data do objeto WPD \_ \_ criado](object-properties.md)                | Qui., 1 de junho de 2006 14:00:28 EDT                                                                                                   |
-| [\_data do objeto WPD \_ \_ criado](object-properties.md)                  | Qui., 1 de junho de 2006 14:00:28 EDT                                                                                                   |
-| [\_data do objeto WPD \_ \_ modificado](object-properties.md)                | Qui., 1 de junho de 2006 14:00:28 EDT                                                                                                   |
-| [\_formato de objeto WPD \_](object-properties.md)                               | \_Formato de objeto WPD \_ \_ mp3                                                                                                         |
-| [\_ID de objeto WPD \_](object-properties.md)                                       | Dependente da sessão. (Suponha "0A2" para este exemplo.)                                                                              |
-| [\_nome do objeto WPD \_](object-properties.md)                                   | A publicação digital                                                                                                          |
-| [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)     | digital0601.mp3                                                                                                                  |
+| [URL DE \_ ORIGEM \_ DA MÍDIA WPD \_](media-properties.md)                         | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                |
+| [REFERÊNCIAS DE \_ RETORNO DE \_ \_ OBJETO WPD](object-properties.md)            | 0A1                                                                                                                              |
+| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                  | IMAGEM DE MÍDIA \_ DO \_ TIPO DE CONTEÚDO \_ WPD \_                                                                                                 |
+| [WPD \_ OBJECT \_ DATE \_ AUTHORED](object-properties.md)                | June, 1 de junho de 2006 14:00:28 EDT                                                                                                   |
+| [DATA DO OBJETO WPD \_ \_ \_ CRIADO](object-properties.md)                  | June, 1 de junho de 2006 14:00:28 EDT                                                                                                   |
+| [WPD \_ OBJECT \_ DATE \_ MODIFIED](object-properties.md)                | June, 1 de junho de 2006 14:00:28 EDT                                                                                                   |
+| [FORMATO DE OBJETO WPD \_ \_](object-properties.md)                               | FORMATO DE OBJETO WPD \_ \_ \_ MP3                                                                                                         |
+| [ID DO \_ \_ OBJETO WPD](object-properties.md)                                       | Dependente de sessão. (Suponha "0A2" para este exemplo.)                                                                              |
+| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                   | A publicação digital                                                                                                          |
+| [NOME DO ARQUIVO \_ \_ ORIGINAL DO OBJETO \_ WPD \_](object-properties.md)     | digital0601.mp3                                                                                                                  |
 | [\_ \_ ID pai do objeto WPD \_](object-properties.md)                        | 0A0                                                                                                                              |
 | [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md) | Independente de sessão.                                                                                                             |
 | [\_tamanho do objeto WPD \_](object-properties.md)                                   | 10329011                                                                                                                         |

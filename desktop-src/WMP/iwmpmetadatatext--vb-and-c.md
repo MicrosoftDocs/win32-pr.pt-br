@@ -1,10 +1,10 @@
 ---
-title: Interface IWMPMetadataText (VB e C) (WMP. h)
+title: Interface IWMPMetadataText (VB e C ) (Wmp.h)
 description: Fornece propriedades para obter informações sobre atributos de metadados textuais complexos.
 ms.assetid: c0f300d2-6ddb-470b-849d-771d3719bb97
 keywords:
-- IWMPMetadataText (VB e C) interface do Windows Media Player
-- IWMPMetadataText (VB e C) interface do Windows Media Player, descrito
+- Interface IWMPMetadataText (VB e C ) Windows Media Player
+- Interface IWMPMetadataText (VB e C ) Windows Media Player , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f735c96e2d4b57e829d10901c1e24058ec0c94c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 146afd709d0805043603cfb3b14b1c1fc1838075
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810544"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424296"
 ---
 # <a name="iwmpmetadatatext-vb-and-c-interface"></a>Interface IWMPMetadataText (VB e C#)
 
@@ -39,13 +39,12 @@ A interface **IWMPMetadataText** expõe as propriedades a seguir.
 
  
 
-Obtenha uma interface **IWMPMetadataText** passando um nome de atributo como **WM/UserWebURL** para o método a seguir e convertendo o objeto retornado.
+Obter uma interface **IWMPMetadataText** passando um nome de atributo como **WM/UserWebURL** para o método a seguir e lançando o objeto retornado.
 
 
 
-|                                        |                                                                                  |
-|----------------------------------------|----------------------------------------------------------------------------------|
 | Interface                              | Propriedade                                                                         |
+|----------------------------------------|----------------------------------------------------------------------------------|
 | [IWMPMedia3](iwmpmedia3--vb-and-c.md) | [getItemInfoByType](wmplibiwmpmedia3-iwmpmedia3-getiteminfobytype--vb-and-c.md) |
 
 
@@ -62,7 +61,7 @@ A interface **IWMPMetadataText (VB e C#)** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Recuperando propriedades do objeto
 ms.assetid: 7fbd6f65-366a-49ea-a680-be77ca0d64f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d3c6eba4435b23ef5c637feaca7c2d4ab6b160e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e2c206b6e3afe75144ce10de615657e788d6d1c
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011472"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424056"
 ---
 # <a name="retrieving-wpd-object-properties"></a>Recuperando as propriedades do objeto WPD
 
@@ -19,9 +19,8 @@ O aplicativo WpdServiceApiSample inclui código que demonstra como um aplicativo
 
 
 
-|                                                                      |                                                                                              |
+| Interface | Descrição    |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| Interface                                                            | Descrição                                                                                  |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Recupera a interface **IPortableDeviceContent2** para acessar os métodos de serviço com suporte. |
 | [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)           | Fornece acesso aos métodos específicos de conteúdo.                                             |
 | [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)       | Recupera os valores de Propriedade do objeto.                                                        |
@@ -38,20 +37,19 @@ Esse método recupera as quatro propriedades a seguir para o objeto de contato e
 
 
 
-|                              |                                                                                                                                                                                                                  |                                 |                                     |
+| Propriedade                     | Descrição                                                                                                                                                                                                      | PROPERTYKEY dos Serviços de Dispositivos     | WPD \_ PROPERTYKEY equivalente         |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|-------------------------------------|
-| Propriedade                     | Descrição                                                                                                                                                                                                      | PROPERTYKEY dos serviços de dispositivo     | PROPERTYKEY de WPD equivalente \_         |
-| Identificador de objeto pai     | Uma cadeia de caracteres que especifica o identificador para o pai do objeto fornecido.                                                                                                                                            | PKEY \_ GenericObj \_ parentID      | \_ \_ ID pai do objeto WPD \_             |
-| Nome do objeto                  | Uma cadeia de caracteres que especifica o nome do objeto fornecido                                                                                                                                                             | PKEY \_ \_ nome GenericObj          | \_nome do objeto WPD \_                   |
-| Identificador exclusivo persistente | Uma cadeia de caracteres que especifica um identificador exclusivo para o objeto fornecido. Esse identificador é persistente entre as sessões, ao contrário do identificador de objeto. Para serviços, isso precisa ser uma representação de cadeia de caracteres de um GUID. | PKEY \_ GenericObj \_ PersistentUID | \_ \_ \_ ID exclusiva persistente do objeto WPD \_ |
-| Formato do objeto                | Um GUID (identificador global exclusivo) que especifica o formato do arquivo correspondente a um determinado objeto                                                                                                        | PKEY \_ GenericObj \_ objectformat  | \_formato de objeto WPD \_                 |
+| Identificador de objeto pai     | Uma cadeia de caracteres que especifica o identificador do pai do objeto especificado.                                                                                                                                            | PKEY \_ GenericObj \_ ParentID      | ID PAI \_ \_ DO OBJETO \_ WPD             |
+| Nome do objeto                  | Uma cadeia de caracteres que especifica o nome do objeto especificado                                                                                                                                                             | Nome \_ GenericObj de PKEY \_          | NOME DO OBJETO WPD \_ \_                   |
+| Identificador exclusivo persistente | Uma cadeia de caracteres que especifica um identificador exclusivo para o objeto especificado. Esse identificador é persistente entre sessões, ao contrário do identificador de objeto. Para serviços, isso precisa ser uma representação de cadeia de caracteres de um GUID. | PKEY \_ GenericObj \_ PersistentUID | ID EXCLUSIVA \_ \_ PERSISTENTE DO OBJETO \_ \_ WPD |
+| Formato do objeto                | Um GUID (identificador global exclusivo) que especifica o formato do arquivo correspondente a um determinado objeto                                                                                                        | \_ObjectFormat de PKEY GenericObj \_  | FORMATO DE OBJETO WPD \_ \_                 |
 
 
 
  
 
--   ID do pai
--   Nome
+-   ID pai
+-   Name
 -   PersistentUID
 -   Formatar
 

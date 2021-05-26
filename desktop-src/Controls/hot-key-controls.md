@@ -1,29 +1,29 @@
 ---
-title: Sobre os controles de tecla de atalho
-description: Um controle de teclas de acesso é uma janela que permite ao usuário inserir uma combinação de pressionamentos de teclas a serem usados como uma tecla de atalho.
+title: Sobre controles de teclas de acesso
+description: Um controle de tecla ativa é uma janela que permite que o usuário insira uma combinação de teclas a serem usadas como uma tecla de acesso.
 ms.assetid: 5f011459-4c30-45d4-9668-19f575b041ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dec45d61df535025cff00fee6428f604aa670bf3
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 4d5e0c0f9a0ddec515c1732863333b7c1a878db5
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641895"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423876"
 ---
-# <a name="about-hot-key-controls"></a>Sobre os controles de tecla de atalho
+# <a name="about-hot-key-controls"></a>Sobre controles de teclas de acesso
 
-Um controle de teclas de acesso é uma janela que permite ao usuário inserir uma combinação de pressionamentos de teclas a serem usados como uma tecla de atalho. Uma tecla de acesso é uma combinação de teclas que o usuário pode pressionar para executar uma ação rapidamente. Por exemplo, um usuário pode criar uma tecla de atalho que ativa uma determinada janela e a leva para a parte superior da ordem z. O controle de teclas de acesso exibe as opções do usuário e garante que o usuário selecione uma combinação de teclas válida. A captura de tela a seguir mostra como um controle de teclas de atalho aparece em uma caixa de diálogo depois que o usuário pressiona a tecla Alt.
+Um controle de tecla ativa é uma janela que permite que o usuário insira uma combinação de teclas a serem usadas como uma tecla de acesso. Uma tecla de tecla quente é uma combinação de teclas que o usuário pode pressionar para executar uma ação rapidamente. Por exemplo, um usuário pode criar uma tecla quente que ativa uma determinada janela e a leva para a parte superior da ordem z. O controle de teclas de acesso exibe as escolhas do usuário e garante que o usuário selecione uma combinação de chaves válida. A captura de tela a seguir mostra como um controle de tecla quente aparece em uma caixa de diálogo depois que o usuário pressiona a tecla Alt.
 
-![captura de tela de uma caixa de diálogo que contém um controle de tecla de atalho](images/hotkey.png)
+![captura de tela de uma caixa de diálogo que contém um controle de tecla quente](images/hotkey.png)
 
-## <a name="using-hot-key-controls"></a>Usando controles de tecla quente
+## <a name="using-hot-key-controls"></a>Usando controles de teclas de acesso
 
-Quando o usuário insere uma combinação de teclas a ser usada como uma tecla de acesso, os nomes das chaves aparecem no controle de tecla de acesso. Uma combinação de teclas pode consistir em uma tecla modificadora (como CTRL, ALT ou SHIFT) e uma chave de acompanhamento (como uma chave de caractere, uma tecla de direção, uma tecla de função e assim por diante).
+Quando o usuário ins ins muita chave a ser usada como uma tecla de acesso, os nomes das chaves aparecem no controle de teclas ativas. Uma combinação de teclas pode consistir em uma tecla modificadora (como CTRL, ALT ou SHIFT) e uma tecla que o acompanha (como uma tecla de caractere, uma tecla de seta, uma tecla de função e assim por diante).
 
-Depois que o usuário tiver escolhido uma combinação de teclas, o aplicativo recuperará a combinação de teclas do controle de tecla de acesso e a usará para configurar uma tecla de acesso no sistema. As informações recuperadas do controle de tecla de acesso incluem um sinalizador que indica a chave de modificador e o código de chave virtual da chave que o acompanha.
+Depois que o usuário escolher uma combinação de chaves, o aplicativo recuperará a combinação de chaves do controle de teclas de acesso e a usará para configurar uma chave quente no sistema. As informações recuperadas do controle de teclas ativas incluem um sinalizador que indica a chave modificadora e o código da chave virtual da chave que o acompanha.
 
-O aplicativo pode usar as informações fornecidas por um controle de tecla quente para configurar uma tecla de acesso global ou uma tecla de acesso específica a um thread. Uma tecla de acesso global é associada a uma janela específica; Ele permite que o usuário ative a janela de qualquer parte do sistema. Um aplicativo define uma tecla de acesso global usando a [**mensagem \_ autotecla do WM**](/windows/desktop/inputdev/wm-sethotkey) . Sempre que o usuário pressiona uma tecla de acesso global, a janela especificada **no \_ WM** setpressionion recebe uma mensagem do [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) que especifica o valor de [**\_ tecla de atalho SC**](/windows/desktop/inputdev/wm-sethotkey) . Essa mensagem ativa a janela que a recebe. A tecla de acesso permanece válida até que o aplicativo que chamou o **WM \_ setteclaize** saia.
+O aplicativo pode usar as informações fornecidas por um controle de tecla quente para configurar uma tecla de acesso global ou uma tecla de acesso específica do thread. Uma tecla de hot global está associada a uma janela específica; ele permite que o usuário ative a janela de qualquer parte do sistema. Um aplicativo define uma chave de acesso global usando a [**mensagem WM \_ SETHOTKEY.**](/windows/desktop/inputdev/wm-sethotkey) Sempre que o usuário pressiona uma tecla de acesso global, a janela especificada em **WM \_ SETHOTKEY** recebe uma mensagem [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) que especifica o [**valor SC \_ HOTKEY.**](/windows/desktop/inputdev/wm-sethotkey) Essa mensagem ativa a janela que a recebe. A tecla de acesso permanece válida até que o aplicativo que chamou o **WM \_ setteclaize** saia.
 
 Uma tecla de acesso específica a um thread gera uma mensagem de [**\_ tecla de atalho do WM**](/windows/desktop/inputdev/wm-hotkey) que é postada no início de um thread específico para que ele seja removido pela próxima iteração do loop de mensagem. Um aplicativo define uma chave de acesso específica ao thread usando a função [**RegisterHotKey**](/windows/desktop/api/winuser/nf-winuser-registerhotkey) .
 
@@ -43,34 +43,23 @@ O controle de teclas de acesso não envia nenhum código de notificação por me
 
 ### <a name="default-hot-key-message-processing"></a>Processamento de mensagem de tecla de atalho padrão
 
-Esta seção descreve as mensagens de janela tratadas pelo procedimento de janela para a classe de janela de [**\_ classe de tecla de atalho**](common-control-window-classes.md) predefinida usada com os controles de tecla de atalho.
+Esta seção descreve as mensagens de janela manipuladas pelo procedimento de janela para a classe de janela [**HOTKEY \_ CLASS**](common-control-window-classes.md) pré-definida usada com controles de teclas de acesso.
 
-
-
-|                                                |                                                                                                                                                                                                                                                                                                                                               |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Message**                                    | **Processamento realizado**                                                                                                                                                                                                                                                                                                                      |
-| [**caractere do WM \_**](/windows/desktop/inputdev/wm-char)               | Recupera o código de chave virtual.                                                                                                                                                                                                                                                                                                               |
-| [**criação do WM \_**](/windows/desktop/winmsg/wm-create)             | Inicializa o controle de teclas de acesso, limpa as regras de teclas de atalho e usa a fonte do sistema.                                                                                                                                                                                                                                                          |
-| [**ERASEBKGND do WM \_**](/windows/desktop/winmsg/wm-erasebkgnd)     | Oculta o cursor, chama a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) e mostra o cursor novamente.                                                                                                                                                                                                                                     |
-| [**GETDLGCODE do WM \_**](/windows/desktop/dlgbox/wm-getdlgcode)     | Retorna uma combinação dos valores [**DLGC \_ WANTCHARS**](/windows/desktop/dlgbox/wm-getdlgcode) e [**DLGC \_ WANTARROWS**](/windows/desktop/dlgbox/wm-getdlgcode) .                                                                                                                                               |
-| [**WM \_ GETfont**](/windows/desktop/winmsg/wm-getfont)           | Recupera a fonte.                                                                                                                                                                                                                                                                                                                           |
-| [**o WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown)         | Chama a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) se a chave estiver inserida, Tab, barra de espaço, del, ESC ou Backspace. Se a chave for SHIFT, CTRL ou ALT, ela verificará se a combinação é válida e, se for, define a tecla de acesso usando a combinação. Todas as outras chaves são definidas como teclas de acesso sem que a validade seja verificada primeiro. |
-| [**o WM \_ KEYUP**](/windows/desktop/inputdev/wm-keyup)             | Recupera o código de chave virtual.                                                                                                                                                                                                                                                                                                               |
-| [**KILLFOCUS do WM \_**](/windows/desktop/inputdev/wm-killfocus)     | Destrói o cursor.                                                                                                                                                                                                                                                                                                                           |
-| [**LBUTTONDOWN do WM \_**](/windows/desktop/inputdev/wm-lbuttondown) | Define o foco para a janela.                                                                                                                                                                                                                                                                                                                 |
-| [**NCCREATE do WM \_**](/windows/desktop/winmsg/wm-nccreate)         | Define o estilo de janela [**WS \_ ex \_ CLIENTEDGE**](/windows/desktop/winmsg/extended-window-styles) .                                                                                                                                                                                                                              |
-| [**pintura do WM \_**](/windows/desktop/gdi/wm-paint)                  | Pinta o controle de tecla de atalho.                                                                                                                                                                                                                                                                                                                   |
-| [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus)       | Cria e mostra o cursor.                                                                                                                                                                                                                                                                                                                  |
-| [**WM \_ SETfont**](/windows/desktop/winmsg/wm-setfont)           | Define a fonte.                                                                                                                                                                                                                                                                                                                                |
-| [**SYSCHAR do WM \_**](/windows/desktop/menurc/wm-syschar)           | Recupera o código de chave virtual.                                                                                                                                                                                                                                                                                                               |
+|    Mensagem                                            |    Processamento executado                               |
+|------------------------------------------------|--------------------------------------------------------------|
+| [**WM \_ CHAR**](/windows/desktop/inputdev/wm-char)               | Recupera o código da chave virtual.             |
+| [**WM \_ CREATE**](/windows/desktop/winmsg/wm-create)             | Inicializa o controle de teclas de acesso, limpa as regras de teclas de acesso e usa a fonte do sistema.   |
+| [**WM \_ ERASEBKGND**](/windows/desktop/winmsg/wm-erasebkgnd)     | Oculta o aro, chama a [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) e mostra o aro novamente.   |
+| [**WM \_ GETDLGCODE**](/windows/desktop/dlgbox/wm-getdlgcode)     | Retorna uma combinação dos valores [**\_ WANTCHARS e DLGC**](/windows/desktop/dlgbox/wm-getdlgcode) [**\_ WANTARROWS do DLGC.**](/windows/desktop/dlgbox/wm-getdlgcode)   |
+| [**WM \_ GETFONT**](/windows/desktop/winmsg/wm-getfont)           | Recupera a fonte.                         |
+| [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown)         | Chamará [**a função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) se a chave for ENTER, TAB, BARRA DE ESPAÇOS, DEL, ESC ou BACKSPACE. Se a chave for SHIFT, CTRL ou ALT, ela verificará se a combinação é válida e, se for, definirá a tecla quente usando a combinação. Todas as outras chaves são definidas como teclas de acesso sem que sua validade seja verificada primeiro. |
+| [**WM \_ KEYUP**](/windows/desktop/inputdev/wm-keyup)             | Recupera o código da chave virtual.             |
+| [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus)     | Destrói o a careta.                         |
+| [**LBUTTONDOWN do WM \_**](/windows/desktop/inputdev/wm-lbuttondown) | Define o foco para a janela.               |
+| [**NCCREATE do WM \_**](/windows/desktop/winmsg/wm-nccreate)         | Define o estilo de janela [**WS \_ ex \_ CLIENTEDGE**](/windows/desktop/winmsg/extended-window-styles) .        |
+| [**pintura do WM \_**](/windows/desktop/gdi/wm-paint)                  | Pinta o controle de tecla de atalho.                 |
+| [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus)       | Cria e mostra o cursor.                |
+| [**WM \_ SETfont**](/windows/desktop/winmsg/wm-setfont)           | Define a fonte.                              |
+| [**SYSCHAR do WM \_**](/windows/desktop/menurc/wm-syschar)           | Recupera o código de chave virtual.             |
 | [**SYSKEYDOWN do WM \_**](/windows/desktop/inputdev/wm-syskeydown)   | Chama a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) se a chave estiver inserida, Tab, barra de espaço, del, ESC ou Backspace. Se a chave for SHIFT, CTRL ou ALT, ela verificará se a combinação é válida e, se for, define a tecla de acesso usando a combinação. Todas as outras chaves são definidas como teclas de acesso sem que a validade seja verificada primeiro. |
-| [**SYSKEYUP do WM \_**](/windows/desktop/inputdev/wm-syskeyup)       | Recupera o código de chave virtual.                                                                                                                                                                                                                                                                                                               |
-
-
-
- 
-
- 
-
- 
+| [**SYSKEYUP do WM \_**](/windows/desktop/inputdev/wm-syskeyup)       | Recupera o código de chave virtual.             |

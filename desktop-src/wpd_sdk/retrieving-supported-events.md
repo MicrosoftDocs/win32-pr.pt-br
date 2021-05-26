@@ -4,22 +4,21 @@ ms.assetid: 1bf3aa08-7ffc-417f-a67e-9eee042337b9
 title: Recuperando eventos de serviço com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f515b65b8ed062c346777224a64539f5229a704a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfdc1df4c8255a4dc2a1297ae99216437ac3b4c9
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772611"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423466"
 ---
 # <a name="retrieving-supported-service-events"></a>Recuperando eventos de serviço com suporte
 
-O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode recuperar os eventos com suporte de um determinado serviço Contacts chamando métodos nas interfaces a seguir.
+O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode recuperar os eventos com suporte por um determinado serviço Contacts chamando métodos nas interfaces a seguir.
 
 
 
-|                                                                                      |                                                                                                       |
+| Interface                | Descrição    |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Interface                                                                            | Descrição                                                                                           |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Usado para recuperar a interface **IPortableDeviceServiceCapabilities** para acessar os eventos com suporte. |
 | [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornece acesso aos eventos e atributos de evento com suporte.                                         |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contém a lista de eventos com suporte.                                                                |
@@ -29,13 +28,13 @@ O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativ
 
  
 
-Quando o usuário escolhe a opção "4" na linha de comando, o aplicativo invoca o método **ListSupportedEvents** encontrado no módulo percapabilities. cpp.
+Quando o usuário escolhe a opção "4" na linha de comando, o aplicativo invoca o **método ListSupportedEvents** encontrado no módulo ServiceCapabilities.cpp.
 
-Observe que, antes de recuperar a lista de eventos, o aplicativo de exemplo abre um serviço de contatos em um dispositivo conectado.
+Observe que, antes de recuperar a lista de eventos, o aplicativo de exemplo abre um serviço Contatos em um dispositivo conectado.
 
-Em WPD, um evento é descrito por seu nome, opções e parâmetros. O nome do evento é uma cadeia de caracteres amigável para scripts, por exemplo, "MyCustomEvent". As opções de evento indicam se um determinado evento é transmitido para todos os clientes e se esse evento dá suporte à reprodução automática. Os atributos de parâmetro de evento incluem o PROPERTYKEY e o VARTYPE de um determinado parâmetro.
+No WPD, um evento é descrito por seu nome, opções e parâmetros. O nome do evento é uma cadeia de caracteres amigável para script, por exemplo, "MyCustomEvent". As opções de evento indicam se um determinado evento é transmitido para todos os clientes e se esse evento dá suporte à reprodução automática. Os atributos de parâmetro de evento incluem PROPERTYKEY e VARTYPE de um determinado parâmetro.
 
-Quatro métodos no módulo percapabilities. cpp suportam a recuperação de eventos com suporte para o serviço de contatos fornecido: **ListSupportedEvents**, **DisplayEvent**, **DisplayEventOptions** e **DisplayEventParameters**. O método **ListSupportedEvents** recupera uma contagem de eventos com suporte e o identificador GUID para cada evento. O método **DisplayEvent** exibe o nome ou o GUID do evento e, em seguida, chama **DisplayEventOptions** e **DisplayEventParameters** para exibir os dados relacionados ao evento.
+Quatro métodos no módulo ServiceCapabilities.cpp são compatíveis com a recuperação de eventos com suporte para o serviço Contacts determinado: **ListSupportedEvents**, **DisplayEvent**, **DisplayEventOptions** e **DisplayEventParameters**. O **método ListSupportedEvents** recupera uma contagem de eventos com suporte e o identificador guid para cada evento. O método **DisplayEvent** exibe o nome ou o GUID do evento e, em seguida, chama **DisplayEventOptions** e **DisplayEventParameters** para exibir os dados relacionados ao evento.
 
 O método **ListSupportedEvents** invoca o método [**IPortableDeviceService:: Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar uma interface [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Usando essa interface, ele recupera os eventos com suporte chamando o método [**IPortableDeviceServiceCapabilities:: GetSupportedEvents**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedevents) . O método **GetSupportedEvents** recupera os GUIDs de cada evento com suporte pelo serviço e copia esses GUIDs em um objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
 
@@ -185,7 +184,7 @@ void DisplayEvent(
 
 
 
-A função auxiliar **DisplayEventOptions** recebe um objeto [**IPortableDeviceValues**](iportabledevicevalues.md) que contém os dados de opção do evento. Em seguida, ele chama o método [**IPortableDeviceValues:: Getboolvalue**](iportabledevicevalues-getboolvalue.md) para recuperar os dados de opções. Usando esses dados, ele renderiza uma cadeia de caracteres que indica se há suporte para as opções de difusão e reprodução automática.
+A **função auxiliar DisplayEventOptions** recebe um [**objeto IPortableDeviceValues**](iportabledevicevalues.md) que contém os dados de opção do evento. Em seguida, ele chama [**o método IPortableDeviceValues::GetBoolValue**](iportabledevicevalues-getboolvalue.md) para recuperar os dados de opções. Usando esses dados, ele renderiza uma cadeia de caracteres que indica se há suporte para as opções de transmissão e reprodução automática.
 
 
 ```C++

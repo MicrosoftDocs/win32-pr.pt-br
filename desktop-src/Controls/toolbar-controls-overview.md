@@ -4,12 +4,12 @@ description: Uma barra de ferramentas é um controle que contém um ou mais bot�
 ms.assetid: b5a00a81-8d23-4844-8b0a-776e7cceced8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 263d95b13ddee54561cf1b0bb9d003d5d34cdf8d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 6f615da972f14bb88c4915504c089dd6b40d9aca
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917702"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424146"
 ---
 # <a name="about-toolbar-controls"></a>Sobre os controles da barra de ferramentas
 
@@ -34,22 +34,22 @@ Os tópicos a seguir discutem os recursos a serem considerados ao planejar uma b
 -   [Definindo texto para botões](#defining-text-for-buttons)
 -   [Adicionando botões da barra de ferramentas](#adding-toolbar-buttons)
     -   [Estilos de botão da barra de ferramentas](#toolbar-button-styles)
-    -   [Estados de botão da barra de ferramentas](#toolbar-button-states)
+    -   [Estados do botão de barra de ferramentas](#toolbar-button-states)
     -   [Identificador de comando](#command-identifier)
     -   [Tamanho e posição do botão](#button-size-and-position)
 -   [Habilitando a personalização](#enabling-customization)
--   [Habilitando o controle de acesso](#enabling-hot-tracking)
+-   [Habilitando o acompanhamento a quente](#enabling-hot-tracking)
 
 ## <a name="specifying-toolbar-size-and-position"></a>Especificando o tamanho e a posição da barra de ferramentas
 
-Se você criar uma barra de ferramentas usando [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex), a função permitirá que você especifique, em pixels, a altura e a largura da barra de ferramentas.
+Se você criar uma barra de ferramentas usando [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex), a função permitirá que você especifique em pixels a altura e a largura da barra de ferramentas.
 
 > [!Note]  
-> O uso de [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) não é recomendado, pois não oferece suporte a novos recursos de barras de ferramentas, incluindo listas de imagens. Para obter mais informações sobre como criar barras de ferramentas, consulte [usando controles da barra de ferramentas](using-toolbar-controls.md).
+> Não [**é recomendável usar CreateToolbarEx,**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) pois ele não dá suporte a novos recursos de barras de ferramentas, incluindo listas de imagens. Para obter mais informações sobre como criar barras de ferramentas, consulte [Usando controles de barra de ferramentas](using-toolbar-controls.md).
 
- 
+ 
 
-A função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) não tem parâmetros para especificar o tamanho da barra de ferramentas. O procedimento da janela da barra de ferramentas define automaticamente o tamanho e a posição da janela da barra de ferramentas. A altura é baseada na altura dos botões na barra de ferramentas. A largura é igual à largura da área do cliente da janela pai. Para alterar as configurações de tamanho automático, envie uma mensagem de [**TB \_ SetButtons**](tb-setbuttonsize.md) . Os estilos de controle comum da [**ccs \_ Top**](common-control-styles.md) e [**ccs \_**](common-control-styles.md) determinam se a barra de ferramentas está posicionada ao longo da parte superior ou inferior da área do cliente. Por padrão, uma barra de ferramentas tem o estilo da **\_ parte superior da CCS** .
+A [**função CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) não tem parâmetros para especificar o tamanho da barra de ferramentas. O procedimento da janela da barra de ferramentas define automaticamente o tamanho e a posição da janela da barra de ferramentas. A altura é baseada na altura dos botões na barra de ferramentas. A largura é igual à largura da área de cliente da janela pai. Para alterar as configurações de tamanho automático, envie uma [**mensagem TB \_ SETBUTTONSIZE.**](tb-setbuttonsize.md) Os estilos de controle comuns [**CCS \_ TOP**](common-control-styles.md) e [**CCS \_ BOTTOM**](common-control-styles.md) determinam se a barra de ferramentas está posicionada ao longo da parte superior ou inferior da área do cliente. Por padrão, uma barra de ferramentas tem o **estilo CCS \_ TOP.**
 
 Além disso, o procedimento da janela barra de ferramentas ajusta automaticamente o tamanho da barra de ferramentas sempre que recebe um [**\_ tamanho do WM**](/windows/desktop/winmsg/wm-size) ou uma mensagem de dimensionamento de [**TB \_**](tb-autosize.md) . Um aplicativo deve enviar qualquer uma dessas mensagens sempre que o tamanho da janela pai for alterado ou depois de enviar uma mensagem que requer o ajuste do tamanho da barra de ferramentas — por exemplo, uma mensagem de [**TB \_ SetButtons**](tb-setbuttonsize.md) .
 
@@ -72,27 +72,27 @@ Para criar uma barra de ferramentas transparente, tudo o que você precisa fazer
 > [!Note]  
 > Ao usar estilos visuais, as barras de ferramentas podem ser simples por padrão.
 
- 
+ 
 
 ## <a name="list-style-toolbars"></a>Barras de ferramentas de estilo de lista
 
-Os botões da barra de ferramentas permitem que você exiba texto e bitmaps. Os botões em uma barra de ferramentas criada com o estilo de [**\_ lista TBSTYLE**](toolbar-control-and-button-styles.md) colocam o texto à direita do bitmap em vez de sob ele.
+Os botões da barra de ferramentas permitem exibir texto e bitmaps. Os botões em uma barra de ferramentas criados com o estilo [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) agem texto à direita do bitmap em vez de abaixo dele.
 
 A captura de tela a seguir mostra uma barra de ferramentas com o estilo de lista.
 
 ![captura de tela de uma barra de ferramentas com texto à direita de cada ícone](images/tb-liststyle.png)
 
-Você pode usar o estilo de barra de ferramentas da [**\_ lista TBSTYLE**](toolbar-control-and-button-styles.md) em combinação com o estilo [**\_ simples TBSTYLE**](toolbar-control-and-button-styles.md) para criar uma barra de ferramentas com botões simples.
+Você pode usar o estilo da barra de ferramentas [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) em combinação com o estilo [**\_ TBSTYLE FLAT**](toolbar-control-and-button-styles.md) para criar uma barra de ferramentas com botões simples.
 
 ## <a name="defining-button-images"></a>Definindo imagens de botão
 
-Há duas maneiras de especificar as imagens para botões, por bitmaps ou por listas de imagens. Um aplicativo deve escolher qual método usar. Ele não pode usar ambos os métodos com o mesmo controle ToolBar. Observe que a função [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) usa o método bitmap. Os aplicativos que desejam usar o método de lista de imagens devem usar a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar o controle ToolBar.
+Há duas maneiras de especificar as imagens para botões– por bitmaps ou por listas de imagens. Um aplicativo deve escolher qual método usar. Ele não pode usar ambos os métodos com o mesmo controle de barra de ferramentas. Observe que a [**função CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) usa o método bitmap. Os aplicativos que querem usar o método de lista de imagens devem usar a [**função CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar o controle de barra de ferramentas.
 
 ### <a name="defining-button-images-by-using-bitmaps"></a>Definindo imagens de botão usando bitmaps
 
-Cada botão em uma barra de ferramentas pode incluir uma imagem de bitmap. Uma barra de ferramentas usa uma lista interna para armazenar as informações necessárias para desenhar as imagens. Ao chamar a função [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) , você especifica um bitmap monocromático ou de cor que contém as imagens iniciais e a barra de ferramentas adiciona as informações à lista interna de imagens. Você pode adicionar imagens adicionais posteriormente usando a mensagem de [**TB \_ AddBitmap**](tb-addbitmap.md) .
+Cada botão em uma barra de ferramentas pode incluir uma imagem bit a bit. Uma barra de ferramentas usa uma lista interna para armazenar as informações necessárias para desenhar as imagens. Quando você chama a [**função CreateToolbarEx,**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) especifica um bitmap monocromático ou de cor que contém as imagens iniciais e a barra de ferramentas adiciona as informações à lista interna de imagens. Você pode adicionar imagens adicionais posteriormente usando a [**mensagem \_ ADDBITMAP de**](tb-addbitmap.md) TB.
 
-Cada imagem tem um índice de base zero. A primeira imagem adicionada à lista interna tem um índice de 0, a segunda imagem tem um índice de 1 e assim por diante. [**TB \_ AddBitmap**](tb-addbitmap.md) adiciona imagens ao final da lista e retorna o índice da primeira nova imagem que ela adicionou. Para associar a imagem a um botão, você deve enviar uma mensagem de um e mesmo [**\_ botões**](tb-addbuttons.md) e especificar o índice da imagem depois de adicionar bitmaps à lista de imagens interna.
+Cada imagem tem um índice baseado em zero. A primeira imagem adicionada à lista interna tem um índice de 0, a segunda imagem tem um índice de 1 e assim por diante. [**TB \_ ADDBITMAP**](tb-addbitmap.md) adiciona imagens ao final da lista e retorna o índice da primeira nova imagem adicionada. Para associar a imagem a um botão, é necessário enviar uma mensagem [**\_ ADDBUTTONS de TB**](tb-addbuttons.md) e especificar o índice da imagem depois de adicionar bitmaps à lista de imagens internas.
 
 O Windows pressupõe que todas as imagens de bitmap de uma barra de ferramentas têm o mesmo tamanho. Você especifica o tamanho ao criar a barra de ferramentas usando [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex). Se você usar a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar uma barra de ferramentas, o tamanho das imagens será definido como as dimensões padrão de 16 por 15 pixels. Você pode usar a mensagem [**TB \_ SETBITMAPSIZE**](tb-setbitmapsize.md) para alterar as dimensões das imagens de bitmap, mas deve fazê-lo antes de adicionar qualquer imagem à lista interna.
 
@@ -102,7 +102,7 @@ Você também pode armazenar imagens de botão em um conjunto de [listas de imag
 
 
 
-|          |                                                                                                                                                                                              |
+|  Estado        |  Descrição                                                                                                                                                                                            |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Normal   | Botões em seu estado padrão.                                                                                                                                                              |
 | Frequente      | Botões que estão sob o ponteiro ou pressionados. Itens ativos têm suporte apenas em controles de barra de ferramentas que têm o estilo [**\_ simples TBSTYLE**](toolbar-control-and-button-styles.md) . |
@@ -110,7 +110,7 @@ Você também pode armazenar imagens de botão em um conjunto de [listas de imag
 
 
 
- 
+ 
 
 Depois que a barra de ferramentas é destruída, os aplicativos devem liberar qualquer lista de imagens que tenham criado.
 
@@ -118,20 +118,20 @@ Depois que a barra de ferramentas é destruída, os aplicativos devem liberar qu
 
 Cada botão pode exibir uma cadeia de caracteres, além de, ou em vez de, uma imagem. Uma barra de ferramentas mantém uma lista interna que contém todas as cadeias de caracteres disponíveis para botões da barra de ferramentas. Você adiciona cadeias de caracteres à lista interna usando a mensagem [**TB \_ AddString**](tb-addstring.md) , especificando o endereço do buffer que contém as cadeias de caracteres a serem adicionadas. Cada cadeia de caracteres deve ser terminada em nulo e a última cadeia de caracteres deve ser terminada com dois caracteres nulos.
 
-Cada cadeia de caracteres tem um índice de base zero. A primeira cadeia de caracteres adicionada à lista interna de cadeias de caracteres tem um índice de 0, a segunda cadeia de caracteres tem um índice de 1 e assim por diante. [**TB \_ AddString**](tb-addstring.md) adiciona cadeias de caracteres ao final da lista e retorna o índice da primeira nova cadeia de caracteres. Você usa um índice da cadeia de caracteres para associar a cadeia de caracteres a um botão.
+Cada cadeia de caracteres tem um índice de base zero. A primeira cadeia de caracteres adicionada à lista interna de cadeias de caracteres tem um índice de 0, a segunda cadeia de caracteres tem um índice de 1 e assim por diante. [**TB \_ ADDSTRING**](tb-addstring.md) adiciona cadeias de caracteres ao final da lista e retorna o índice da primeira nova cadeia de caracteres. Você usa o índice de uma cadeia de caracteres para associar a cadeia de caracteres a um botão.
 
-O uso de [**TB \_ AddString**](tb-addstring.md) não é a única maneira de adicionar cadeias de caracteres a uma barra de ferramentas. Você pode exibir uma cadeia de caracteres em um botão passando um ponteiro de cadeia **de caracteres no membro** isseqüência da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que é passada para [**TB \_ AddButtons**](tb-addbuttons.md). Além disso, você pode usar [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md) para atribuir texto a um botão da barra de ferramentas.
+Usar [**TB \_ ADDSTRING**](tb-addstring.md) não é a única maneira de adicionar cadeias de caracteres a uma barra de ferramentas. Você pode exibir uma cadeia de caracteres em um botão passando um ponteiro de cadeia de caracteres no membro **iString** da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que é passada para [**\_ ADDBUTTONS de TB.**](tb-addbuttons.md) Além disso, você pode usar [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md) para atribuir texto a um botão de barra de ferramentas.
 
 ## <a name="adding-toolbar-buttons"></a>Adicionando botões da barra de ferramentas
 
-Se você usar a função [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) para criar uma barra de ferramentas, poderá adicionar botões à barra de ferramentas preenchendo uma matriz de estruturas [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) e especificando o endereço da matriz na chamada de função. No entanto, a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) não tem um parâmetro para passar uma estrutura **TBBUTTON** . O **CreateWindowEx** cria uma barra de ferramentas vazia que você preenche enviando uma mensagem de de [**TB com \_ botões**](tb-addbuttons.md) , especificando o endereço de uma estrutura **TBBUTTON** .
+Se você usar a função [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) para criar uma barra de ferramentas, poderá adicionar botões à barra de ferramentas preenchendo uma matriz de estruturas [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) e especificando o endereço da matriz na chamada de função. No entanto, [**a função CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) não tem um parâmetro para passar uma **estrutura TBBUTTON.** **CreateWindowEx** cria uma barra de ferramentas vazia que você preenche enviando uma mensagem [**\_ ADDBUTTONS de TB,**](tb-addbuttons.md) especificando o endereço de uma **estrutura TBBUTTON.**
 
-Depois que uma barra de ferramentas é criada, você pode adicionar botões enviando uma mensagem de [**\_ INSERTBUTTON de TB**](tb-insertbutton.md) ou [**TB \_**](tb-addbuttons.md) . Cada botão é descrito por uma estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) , que define os atributos do botão, incluindo os índices de sua cadeia de caracteres e bitmap, bem como seu estilo, estado, identificador de comando e o valor de 32 bits definido pelo aplicativo.
+Depois que uma barra de ferramentas é criada, você pode adicionar botões enviando uma [**mensagem TB \_ INSERTBUTTON**](tb-insertbutton.md) ou [**TB \_ ADDBUTTONS.**](tb-addbuttons.md) Cada botão é descrito por uma estrutura [**TBBUTTON,**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que define os atributos do botão, incluindo os índices de sua cadeia de caracteres e bitmap, bem como seu estilo, estado, identificador de comando e valor de 32 bits definido pelo aplicativo.
 
 > [!Note]  
-> Se você usar a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar uma barra de ferramentas, deverá enviar a mensagem [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) antes de adicionar qualquer botão. A mensagem passa o tamanho da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) para a barra de ferramentas.
+> Se você usar a [**função CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar uma barra de ferramentas, deverá enviar a mensagem [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) antes de adicionar qualquer botão. A mensagem passa o tamanho da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) para a barra de ferramentas.
 
- 
+ 
 
 ### <a name="toolbar-button-styles"></a>Estilos de botão da barra de ferramentas
 
@@ -149,7 +149,7 @@ Cada botão em uma barra de ferramentas tem um estado. A barra de ferramentas at
 
 ### <a name="command-identifier"></a>Identificador de comando
 
-Cada botão tem um identificador de comando definido pelo aplicativo associado a ele. Identificadores de botão geralmente são definidos em um arquivo de cabeçalho do aplicativo. Por exemplo, um botão de colagem pode ser definido como:
+Cada botão tem um identificador de comando definido pelo aplicativo associado a ele. Os identificadores de botão geralmente são definidos em um arquivo de header de aplicativo. Por exemplo, um botão Colar pode ser definido como:
 
 
 ```
@@ -158,15 +158,15 @@ Cada botão tem um identificador de comando definido pelo aplicativo associado a
 
 
 
-Quando o usuário seleciona um botão, a barra de ferramentas envia a janela pai um [**\_ comando do WM**](/windows/desktop/menurc/wm-command) ou uma mensagem de [**\_ notificação do WM**](wm-notify.md) que inclui o identificador de comando do botão. A janela pai examina o identificador de comando e executa o comando associado ao botão. Para obter informações sobre quando os controles enviam mensagens de **\_ comando do WM** e quando enviam a **\_ notificação do WM**, consulte a seção comentários da documentação do [**WM \_ Notify**](wm-notify.md) .
+Quando o usuário seleciona um botão, a barra de ferramentas envia à janela pai uma mensagem [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) ou [**WM \_ NOTIFY**](wm-notify.md) que inclui o identificador de comando do botão. A janela pai examina o identificador de comando e executa o comando associado ao botão. Para obter informações sobre quando os controles enviam mensagens **WM \_ COMMAND** e quando enviam **WM \_ NOTIFY,** consulte a seção Comentários da documentação [**do WM \_ NOTIFY.**](wm-notify.md)
 
 ### <a name="button-size-and-position"></a>Tamanho e posição do botão
 
-Uma barra de ferramentas controla seus botões atribuindo a cada botão um índice de posição. O índice é baseado em zero; ou seja, o botão mais à esquerda tem um índice de 0, o botão Avançar à direita tem um índice de 1 e assim por diante. Um aplicativo deve especificar o índice de um botão ao enviar mensagens para recuperar informações sobre o botão ou para definir os atributos do botão.
+Uma barra de ferramentas acompanha seus botões atribuindo a cada botão um índice de posição. O índice é baseado em zero; ou seja, o botão mais à esquerda tem um índice de 0, o próximo botão à direita tem um índice de 1 e assim por diante. Um aplicativo deve especificar o índice de um botão ao enviar mensagens para recuperar informações sobre o botão ou definir os atributos do botão.
 
-Uma barra de ferramentas atualiza os índices de posição conforme os botões são inseridos e removidos. Um aplicativo pode recuperar o índice de posição atual de um botão usando a mensagem [**TB \_ COMMANDTOINDEX**](tb-commandtoindex.md) . A mensagem Especifica o identificador de comando de um botão e a janela da barra de ferramentas usa o identificador para localizar o botão e retornar seu índice de posição.
+Uma barra de ferramentas atualiza os índices de posição à medida que os botões são inseridos e removidos. Um aplicativo pode recuperar o índice de posição atual de um botão usando a [**mensagem \_ TB COMMANDTOINDEX.**](tb-commandtoindex.md) A mensagem especifica o identificador de comando de um botão e a janela da barra de ferramentas usa o identificador para localizar o botão e retornar seu índice de posição.
 
-Todos os botões em uma barra de ferramentas têm o mesmo tamanho. A função [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) exige que você defina o tamanho inicial dos botões ao criar a barra de ferramentas. Quando você usa a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , o tamanho inicial é definido como as dimensões padrão de 24 por 22 pixels. Você pode usar a mensagem de [**TB \_ SetButtons**](tb-setbuttonsize.md) para alterar o tamanho do botão, mas você deve fazer isso antes de adicionar qualquer botão à barra de ferramentas. A mensagem [**TB \_ GETITEMRECT**](tb-getitemrect.md) recupera as dimensões atuais dos botões.
+Todos os botões em uma barra de ferramentas têm o mesmo tamanho. A [**função CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) exige que você de definir o tamanho inicial dos botões ao criar a barra de ferramentas. Quando você usa a [**função CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o tamanho inicial é definido para as dimensões padrão de 24 por 22 pixels. Você pode usar a [**mensagem TB \_ SETBUTTONSIZE**](tb-setbuttonsize.md) para alterar o tamanho do botão, mas você deve fazer isso antes de adicionar qualquer botão à barra de ferramentas. A [**mensagem \_ GETITEMRECT**](tb-getitemrect.md) de TB recupera as dimensões atuais dos botões.
 
 Quando você adiciona uma cadeia de caracteres que é maior do que qualquer cadeia de caracteres atualmente na barra de ferramentas, a barra de ferramentas redefine automaticamente a largura de seus botões. A largura é definida para acomodar a cadeia de caracteres mais longa na barra de ferramentas.
 
@@ -180,6 +180,6 @@ Como parte do processo de personalização, os aplicativos geralmente precisam s
 
 Acompanhamento dinâmico significa que, quando o ponteiro se move sobre um item, a aparência do botão é alterada. Quando os estilos visuais são habilitados, as barras de ferramentas dão suporte ao acompanhamento dinâmico por padrão. Caso contrário, somente os controles da barra de ferramentas criados com o estilo [**\_ plano de TBSTYLE**](toolbar-control-and-button-styles.md) dão suporte ao acompanhamento de quente. Você pode usar outros estilos de janela em combinação com **TBSTYLE \_ Flat** para produzir barras de ferramentas que habilitam o controle de acesso, mas têm uma aparência diferente de uma barra de ferramentas simples. Para obter mais informações, consulte [usando controles da barra de ferramentas](using-toolbar-controls.md).
 
- 
+ 
 
- 
+ 

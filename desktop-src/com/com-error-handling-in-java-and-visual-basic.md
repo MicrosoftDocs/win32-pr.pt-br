@@ -4,12 +4,12 @@ description: Tratamento de erro COM em Java e Visual Basic
 ms.assetid: 1130a038-3c18-4530-a6d7-9f538352297f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea12dc040218e14098ce2394fbb5cd2ebeff1704
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 11c55c1c2414c69ff9398845858baadebd58cbf9
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366763"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424006"
 ---
 # <a name="com-error-handling-in-java-and-visual-basic"></a>Tratamento de erro COM em Java e Visual Basic
 
@@ -19,7 +19,7 @@ As três interfaces que fornecem suporte para **HRESULT** s são listadas e desc
 
 
 
-|                                                                          |                                                                                                                      |
+|  Interface                                                                        |  Descrição                                                                                                                    |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [**ICreateErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-icreateerrorinfo)<br/>  | Define informações de erro.<br/>                                                                                   |
 | [**IErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)<br/>        | Retorna informações de um objeto de erro.<br/>                                                                 |
@@ -33,7 +33,7 @@ As três funções que fornecem suporte para **HRESULT** s são listadas e descr
 
 
 
-|                                                                        |                                                                                                                                                                      |
+|    Interface       |       Descrição       |
 |------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CreateErrorInfo**](/windows/win32/api/oleauto/nf-oleauto-createerrorinfo)<br/> | Cria uma instância de um objeto de erro genérico.<br/>                                                                                                            |
 | [**GetErrorInfo**](/windows/win32/api/oleauto/nf-oleauto-geterrorinfo)<br/>    | Obtém o ponteiro de informações de erro definido pela chamada anterior para [**SetErrorInfo**](/windows/win32/api/oleauto/nf-oleauto-seterrorinfo) no thread lógico atual.<br/> |

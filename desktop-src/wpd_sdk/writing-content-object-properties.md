@@ -4,12 +4,12 @@ ms.assetid: f762a571-83ea-4999-ad49-a51044bc790d
 title: Gravando Propriedades do objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cb061288cbfde93f2baea1860581c25c61a8a0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 726501c986e73033437de3bee0c11b3beb66150d
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752154"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423926"
 ---
 # <a name="writing-object-properties"></a>Gravando Propriedades do objeto
 
@@ -19,9 +19,8 @@ O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativ
 
 
 
-|                                                                |                                                                                                                                                                      |
-|----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interface                                                      | Descrição                                                                                                                                                          |
+|----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)       | Usado para recuperar a interface **IPortableDeviceContent2** para acessar os métodos de serviço com suporte.                                                                  |
 | [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)     | Fornece acesso aos métodos específicos de conteúdo.                                                                                                                     |
 | [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Usado para gravar os valores de propriedade de objeto e para determinar se uma determinada propriedade pode ser gravada                                                                    |
@@ -33,9 +32,9 @@ O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativ
 
 Quando o usuário escolhe a opção "8" na linha de comando, o aplicativo invoca o método **WriteContentProperties** encontrado no módulo contentproperties. cpp. Esse método solicita que o usuário insira um identificador de objeto para a propriedade a ser atualizada. O usuário identifica o objeto e o método solicita que o usuário especifique um novo nome. Depois que esse nome for especificado, o método atualizará a propriedade Name para o objeto fornecido.
 
-Observe que, antes de gravar as propriedades do objeto, o aplicativo de exemplo abre um serviço de contatos em um dispositivo conectado.
+Observe que, antes de escrever as propriedades do objeto, o aplicativo de exemplo abre um serviço Contatos em um dispositivo conectado.
 
-O código a seguir para o método **WriteContentProperties** demonstra como o aplicativo usa a interface [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar uma interface [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) . Ao passar o PROPERTYKEYS das propriedades solicitadas para o método [**IPortableDeviceProperties:: SetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) , o **WriteContentProperties** atualiza a propriedade Name.
+O código a seguir para o método **WriteContentProperties** demonstra como o aplicativo usa a interface [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar uma interface [**IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Ao passar PROPERTYKEYS das propriedades solicitadas para o método [**IPortableDeviceProperties::SetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **WriteContentProperties** atualiza a propriedade name.
 
 
 ```C++

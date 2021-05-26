@@ -1,35 +1,34 @@
 ---
-description: '\_programa de \_ tipo de conteúdo WPD \_'
+description: PROGRAMA DE TIPO \_ DE \_ CONTEÚDO \_ WPD
 ms.assetid: 81eaf8cf-0f4f-4587-911a-063630af1c8e
 title: WPD_CONTENT_TYPE_PROGRAM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0187d4e87f47e8210e94a676ca9ccd1e1364cf1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ddf3c5d406c16891c692e84fb37c4d21757f702
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662801"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423766"
 ---
-# <a name="wpd_content_type_program"></a>\_programa de \_ tipo de conteúdo WPD \_
+# <a name="wpd_content_type_program"></a>PROGRAMA DE TIPO \_ DE \_ CONTEÚDO \_ WPD
 
-Um objeto que descreve seu tipo de \_ programa de tipo de conteúdo WPD \_ \_ representa um programa executável.
+Um objeto que descreve seu tipo como WPD \_ CONTENT TYPE PROGRAM representa um programa \_ \_ executável.
 
 Esse tipo de objeto dá suporte às propriedades a seguir.
 
 
 
-|                                                                                                                       |                                                                                    |
+| Nome da propriedade     | Obrigatório ou Opcional      |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| **Nome da propriedade**                                                                                                     | **Obrigatório ou opcional**                                                           |
-| [\_ID de objeto WPD \_](object-properties.md)                                                                | Obrigatório, mas somente leitura. Um cliente não pode definir essa propriedade, mesmo no momento da criação. |
-| [\_ \_ ID pai do objeto WPD \_](object-properties.md)                                                 | Obrigatórios.                                                                          |
-| [\_nome do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                                          |
-| [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md)                          | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação.      |
-| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obrigatórios.                                                                          |
-| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                                           | Obrigatórios.                                                                          |
-| [objeto WPD- \_ \_ oculto](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                                  |
-| [IsSystem de \_ objetos WPD \_](object-properties.md)                                                    | Obrigatório se o objeto for um objeto do sistema (representa um arquivo do sistema).              |
+| [ID DO \_ \_ OBJETO WPD](object-properties.md)                                                                | Obrigatório, mas somente leitura. Um cliente não pode definir essa propriedade, mesmo no momento da criação. |
+| [ID PAI \_ \_ DO OBJETO \_ WPD](object-properties.md)                                                 | Obrigatórios.                                                                          |
+| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                                          |
+| [ID EXCLUSIVA \_ \_ PERSISTENTE DO OBJETO \_ \_ WPD](object-properties.md)                          | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação.      |
+| [FORMATO DE OBJETO WPD \_ \_](object-properties.md)                                                        | Obrigatórios.                                                                          |
+| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                                           | Obrigatórios.                                                                          |
+| [\_ \_ ISHIDDEN DE OBJETO WPD](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                                  |
+| [ISSYSTEM \_ DO OBJETO WPD \_](object-properties.md)                                                    | Obrigatório se o objeto for um objeto do sistema (representa um arquivo do sistema).              |
 | [\_tamanho do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto tiver pelo menos um recurso.                                  |
 | [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)                              | Necessário se o objeto representar um arquivo.                                          |
 | [\_objeto WPD \_ não \_ consumível](object-properties.md)                                       | Recomendado se o objeto não for destinada ao consumo pelo dispositivo.              |

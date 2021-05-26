@@ -1,32 +1,32 @@
 ---
 title: Rastreamento de eventos no ADSI
-description: O Windows Server 2008 e o Windows Vista apresentam o rastreamento de eventos em ADSI (Active Directory Service Interfaces).
+description: O Windows Server 2008 e o Windows Vista introduzem o Rastreamento de Eventos em ADSI (Interfaces de Serviço do Active Directory).
 ms.assetid: 743aeeba-5b48-47c7-aaf5-0e9b48e206db
 ms.tgt_platform: multiple
 keywords:
 - ADSI de rastreamento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f43c0d840cd1f3f70d293a0a4f5c299fd129efe
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 0b26aee00404f5cf97d228698f64fec804c28e62
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105755904"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423706"
 ---
 # <a name="event-tracing-in-adsi"></a>Rastreamento de eventos no ADSI
 
-O Windows Server 2008 e o Windows Vista apresentam o [rastreamento de eventos](/windows/desktop/ETW/event-tracing-portal) em ADSI ( [Active Directory Service Interfaces](active-directory-service-interfaces-adsi.md) ). Determinadas áreas do provedor de LDAP ADSI têm uma implementação subjacente que é complexa ou que envolve uma sequência de etapas que dificulta o diagnóstico de problemas. Para ajudar os desenvolvedores de aplicativos a solucionar problemas, o rastreamento de eventos foi adicionado às seguintes áreas:
+O Windows Server 2008 e o Windows Vista introduzem o Rastreamento [de](/windows/desktop/ETW/event-tracing-portal) Eventos em [ADSI (Interfaces](active-directory-service-interfaces-adsi.md) de Serviço do Active Directory). Determinadas áreas do Provedor LDAP ADSI têm uma implementação subjacente que é complexa ou que envolve uma sequência de etapas que dificulta o diagnóstico de problemas. Para ajudar os desenvolvedores de aplicativos a solucionar problemas, o Rastreamento de Eventos foi adicionado às seguintes áreas:
 
 ## <a name="schema-parsing-and-downloading"></a>Análise e download de esquema
 
-A interface IADs na ADSI requer que o esquema LDAP seja armazenado em cache no cliente para que os atributos possam ser empacotados corretamente (conforme descrito no [modelo de esquema ADSI](adsi-schema-model.md)). Para fazer isso, a ADSI carrega o esquema para cada processo (e para cada servidor/domínio LDAP) na memória a partir de um arquivo de esquema (. SCH) que é salvo no disco local ou baixando-o do servidor LDAP. Processos diferentes na mesma máquina cliente usam o esquema em cache em disco se ele estiver disponível e aplicável.
+A interface IADs no ADSI requer que o esquema LDAP seja armazenado em cache no cliente para que os atributos possam ser empacotados corretamente (conforme descrito no Modelo [de Esquema ADSI).](adsi-schema-model.md) Para fazer isso, a ADSI carrega o esquema de cada processo (e para cada servidor/domínio LDAP) na memória de um arquivo de esquema (.sch) salvo no disco local ou baixando-o do servidor LDAP. Processos diferentes no mesmo computador cliente usam o esquema armazenado em cache no disco, se ele estiver disponível e aplicável.
 
-Se o esquema não puder ser obtido do disco ou do servidor, a ADSI usará um esquema padrão codificado. Quando isso ocorre, os atributos que não fazem parte desse esquema padrão não podem ser empacotados e a ADSI retorna um erro ao recuperar esses atributos. Vários fatores podem fazer com que isso aconteça, incluindo problemas na análise do esquema e privilégios insuficientes para baixar o esquema. Geralmente, é difícil determinar por que um determinado esquema padrão está sendo usado. Usar o rastreamento de eventos nessa área ajudará a diagnosticar o problema mais rapidamente e corrigi-lo.
+Se o esquema não puder ser obtido do disco ou do servidor, a ADSI usará um esquema padrão em código. Quando isso ocorre, os atributos que não fazem parte desse esquema padrão não podem ser marshaling e a ADSI retorna um erro ao recuperar esses atributos. Vários fatores podem fazer com que isso aconteça, incluindo problemas na análise do esquema e privilégios insuficientes para baixar o esquema. Geralmente, é difícil determinar por que um determinado esquema padrão está sendo usado. Usar o Rastreamento de Eventos nessa área ajudará a diagnosticar o problema mais rapidamente e corrigi-lo.
 
 ## <a name="changing-and-setting-the-password"></a>Alterando e definindo a senha
 
-[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) empregam mais de um mecanismo para executar a operação solicitada com base na configuração disponível (conforme descrito em [definindo e alterando senhas de usuário com o provedor LDAP](setting-user-passwords-for-ldap-providers.md)). Quando **ChangePassword** e **SetPassword** falham, pode ser difícil determinar exatamente o porquê, e o rastreamento de eventos ajudará a solucionar problemas com esses métodos.
+[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) empregam mais de um mecanismo para executar a operação solicitada com base na configuração disponível (conforme descrito em Configurando e alterando senhas de usuário com o [provedor LDAP).](setting-user-passwords-for-ldap-providers.md) Quando **ChangePassword** e **SetPassword** falham, pode ser difícil determinar exatamente o porquê, e o rastreamento de eventos ajudará a solucionar problemas com esses métodos.
 
 ## <a name="adsi-bind-cache"></a>Cache de associação ADSI
 
@@ -36,30 +36,30 @@ O ADSI tenta, internamente, reutilizar conexões LDAP sempre que possível (cons
 
 Para ativar o rastreamento ADSI, crie a seguinte chave do registro:
 
-**HKEY \_ Sistema de \_ máquina local** \\  \\ **CurrentControlSet** \\ **Serviços** de \\  \\ **rastreamento** ADSI \\ ***ProcessName***
+**HKEY \_ Sistema de \_ máquina local** \\  \\ **CurrentControlSet** \\ **Serviços** de \\  \\ **rastreamento** ADSI \\ **_ProcessName_**
 
 *ProcessName* é o nome completo do processo que você deseja rastrear, incluindo sua extensão (por exemplo, "Svchost.exe"). Além disso, você pode inserir um valor opcional do tipo **DWORD** chamado PID nesta chave. É altamente recomendável que você defina esse valor e, portanto, rastreie apenas um processo específico. Caso contrário, todas as instâncias do aplicativo especificado por *ProcessName* serão rastreadas.
 
 Em seguida, execute o seguinte comando:
 
-**tracelog.exe-Start** *SessionName*  * *-GUID \# * * * \_ GUID do provedor* **-f** *filename* **-Flag** *sinalizadores* **de nível de**  arquivo
+**tracelog.exe-Start** *SessionName* **- \#** GUID do _provedor \__ **de GUID-f** *filename* **-Flag** *sinalizadores* **de nível de**  arquivo
 
-*SessionName* é simplesmente um identificador arbitrário que é usado para rotular a sessão de rastreamento (você precisará se referir a esse nome de sessão posteriormente ao parar a sessão de rastreamento). O GUID do provedor de controle ADSI é "7288c9f8-D63C-4932-a345-89d6b060174d". *filename* especifica o arquivo de log no qual os eventos serão gravados. *sinalizadores* deve ser um dos seguintes valores:
+*sessionname* é simplesmente um identificador arbitrário usado para rotular a sessão de rastreamento (você precisará consultar esse nome de sessão posteriormente quando interromper a sessão de rastreamento). O GUID do provedor de rastreamento ADSI é "7288c9f8-d63c-4932-a345-89d6b060174d". *filename* especifica o logfile no qual os eventos serão gravados. *traceFlags* deve ser um dos seguintes valores:
 
 
 
-|                                 |                       |
+|         Sinalizador                        |         Valor              |
 |---------------------------------|-----------------------|
-| **esquema de depuração \_**<br/>    | 0x00000001<br/> |
-| **Depurar \_ CHANGEPWD**<br/> | 0x00000002<br/> |
-| **Depurar \_ SETPWD**<br/>    | 0x00000004<br/> |
-| **Depurar \_ BINDCACHE**<br/> | 0x00000008<br/> |
+| **ESQUEMA DE \_ DEPURAÇÃO**<br/>    | 0x00000001<br/> |
+| **DEPURAR \_ CHANGEPWD**<br/> | 0x00000002<br/> |
+| **DEPURAR \_ SETPWD**<br/>    | 0x00000004<br/> |
+| **DEPURAR \_ BINDCACHE**<br/> | 0x00000008<br/> |
 
 
 
  
 
-Esses sinalizadores determinam quais métodos [ADSI](active-directory-service-interfaces-adsi.md) serão rastreados, de acordo com a tabela a seguir:
+Esses sinalizadores determinam quais [métodos ADSI](active-directory-service-interfaces-adsi.md) serão rastreados, de acordo com a tabela a seguir:
 
 
 
@@ -133,34 +133,34 @@ Esses sinalizadores determinam quais métodos [ADSI](active-directory-service-in
 
  
 
-Você pode combinar sinalizadores combinando os bits apropriados no argumento *sinalizadores* . Por exemplo, para especificar o **\_ esquema de depuração** e Depurar sinalizadores de **\_ BINDCACHE** , o valor de *sinalizadores* apropriado seria 0x00000009.
+Você pode combinar sinalizadores combinando os bits apropriados no *argumento traceFlags.* Por exemplo, para especificar os sinalizadores **DEBUG \_ SCHEMA** e **DEBUG \_ BINDCACHE,** o valor *de traceFlags* apropriado seria 0x00000009.
 
-Por fim, o sinalizador *traceLevel* deve ser um dos seguintes valores:
+Por fim, *o sinalizador traceLevel* deve ser um dos seguintes valores:
 
 
 
-|                                          |                       |
+|      Sinalizador                                    |       Valor                |
 |------------------------------------------|-----------------------|
-| **\_erro no nível de rastreamento \_**<br/>       | 0x00000002<br/> |
-| **\_informações de nível de rastreamento \_**<br/> | 0x00000004<br/> |
+| **ERRO DE \_ NÍVEL DE \_ RASTREAMENTO**<br/>       | 0x00000002<br/> |
+| **INFORMAÇÕES \_ DE NÍVEL DE \_ RASTREAMENTO**<br/> | 0x00000004<br/> |
 
 
 
  
 
-**Rastrear \_ \_As informações de nível** fazem com que o processo de rastreamento Registre todos os eventos, enquanto que o **\_ \_ erro no nível de rastreamento** faz com que o processo de rastreamento grave apenas eventos de erro.
+**RASTREAMENTO \_ LEVEL \_ INFORMATION** faz com que o processo de rastreamento grave todos os eventos, enquanto **TRACE LEVEL \_ \_ ERROR** faz com que o processo de rastreamento grave apenas eventos de erro.
 
 Para encerrar o rastreamento, execute o seguinte comando:
 
-**tracelog.exe-parar** *SessionName*
+**tracelog.exe -stop** *sessionname*
 
-No exemplo anterior, *SessionName* é o mesmo nome que aquele fornecido com o comando que iniciou a seção de rastreamento.
+No exemplo anterior, *sessionname* é o mesmo nome que o fornecido com o comando que iniciou a seção de rastreamento.
 
 ## <a name="remarks"></a>Comentários
 
-É mais eficaz rastrear apenas processos específicos especificando um PID específico do que rastrear todos os processos em um computador. Se você precisar rastrear vários aplicativos no mesmo computador, pode haver um impacto no desempenho; Há uma saída substancial de depuração nas seções orientadas a desempenho do código. Além disso, os administradores devem ter cuidado para definir corretamente as permissões dos arquivos de log ao rastrear vários processos; caso contrário, qualquer usuário poderá ler os logs de rastreamento, e outros usuários poderão rastrear os processos que contêm informações seguras.
+É mais eficaz rastrear apenas processos específicos especificando um PID específico do que rastrear todos os processos em um computador. Se você precisar rastrear vários aplicativos no mesmo computador, poderá haver um impacto no desempenho; há uma saída substancial de depuração nas seções orientadas ao desempenho do código. Além disso, os administradores devem ter cuidado para definir corretamente as permissões dos arquivos de log ao rastrear vários processos; caso contrário, qualquer usuário poderá ler os logs de rastreamento e outros usuários poderão rastrear processos que contêm informações seguras.
 
-Por exemplo, suponha que o administrador configure o rastreamento para um aplicativo "Test.exe" e não especifique um PID no registro para rastrear várias instâncias do processo. Agora, outro usuário deseja rastrear o aplicativo "Secure.exe". Se os arquivos de log de rastreamento não forem corretamente restritos, tudo o que o usuário precisará fazer é renomear "Secure.exe" como "Test.exe" e ele será rastreado. Em geral, é melhor rastrear apenas processos específicos durante a solução de problemas e remover a chave do registro de rastreamento assim que a solução de problemas é feita.
+Por exemplo, presume que o administrador configura o rastreamento para um aplicativo "Test.exe" e não especifica um PID no Registro para rastrear várias instâncias do processo. Agora, outro usuário deseja rastrear o aplicativo "Secure.exe". Se os arquivos de log de rastreamento não forem corretamente restritos, tudo o que o usuário precisará fazer é renomear "Secure.exe" como "Test.exe" e ele será rastreado. Em geral, é melhor rastrear apenas processos específicos durante a solução de problemas e remover a chave do registro de rastreamento assim que a solução de problemas é feita.
 
 Como habilitar o rastreamento de eventos produzirá arquivos de log adicionais, os administradores devem monitorar atentamente os tamanhos dos arquivos de log; a falta de espaço em disco no computador local pode causar uma negação de serviço.
 
@@ -192,23 +192,23 @@ Cenário 2: o administrador deseja rastrear a análise de esquema e as operaçõ
 
 1.  Criar a chave do registro
 
-    **HKEY \_ \_** w3wp.exede \\  \\  \\  \\  \\ **rastreamento** \\ **** ADSI dos serviços do sistema de computador local CurrentControlSet
+    **HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
 
-    e dentro dessa chave, crie um valor do tipo DWORD chamado PID e defina-o como a ID do processo da instância do w3wp.exe que está em execução no computador local.
+    e dentro dessa chave, crie um valor do tipo DWORD chamado PID e de definido como a ID de processo da instância do w3wp.exe que está sendo executado no computador local.
 
-2.  Em seguida, eles criam uma sessão de rastreamento, definindo *sinalizadores* como 0x1 (**\_ esquema de depuração**) e *traceLevel* para 0x4 (**\_ \_ informações de nível de rastreamento**):
+2.  Em seguida, eles criam uma sessão de rastreamento, definindo *traceFlags* como 0x1 (**DEBUG \_ SCHEMA**) e *traceLevel* como 0x4 (**TRACE LEVEL \_ \_ INFORMATION**):
 
-    **tracelog.exe-Start w3wptrace-GUID \# 7288c9f8-D63C-4932-a345-89d6b060174d-f. \\ w3wp. etl-flag 0x1-nível 0x4**
+    **tracelog.exe -start w3wptrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ w3wp.etl -flag 0x1 -level 0x4**
 
 3.  Reproduza a operação que precisa de solução de problemas.
 4.  Encerrar a sessão de rastreamento:
 
-    **tracelog.exe-parar w3wptrace**
+    **tracelog.exe -stop w3wptrace**
 
-5.  Exclua a chave do registro **HKEY \_ local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **ADSI** \\  \\ **w3wp.exe**.
+5.  Exclua a chave do Registro **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**.
 6.  Execute a ferramenta ETW tracerpt.exe para analisar as informações de rastreamento do log:
 
-    **tracerpt.exe. \\ w3wp. etl-o-relatório**
+    **tracerpt.exe . \\ w3wp.etl -o -report**
 
  
 

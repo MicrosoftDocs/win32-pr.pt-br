@@ -1,19 +1,19 @@
 ---
-title: Recuperando visão geral das propriedades do objeto
-description: Recuperando propriedades do objeto
+title: Visão geral das propriedades do objeto de recuperação
+description: Um aplicativo pode recuperar propriedades para um único objeto, para vários objetos identificados por identificadores de objeto ou para vários objetos do mesmo tipo.
 ms.assetid: 499644ee-9eef-4267-9c45-7c7ba9ef61af
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19d5389eadbce6c28f09e16888789e620c80bba1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55434e757caa78ddd4d6e0ed27483213dae3b22d
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662690"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424076"
 ---
-# <a name="retrieving-object-properties-overview"></a>Recuperando visão geral das propriedades do objeto
+# <a name="retrieving-object-properties-overview"></a>Visão geral das propriedades do objeto de recuperação
 
-Um aplicativo pode recuperar propriedades para um único objeto, para vários objetos identificados por identificadores de objeto ou para vários objetos do mesmo tipo. O tópico a seguir descreve a recuperação para um único objeto. Consulte a seção [tarefas avançadas](advanced-tasks.md) para obter uma descrição da recuperação de propriedade para vários objetos.
+Um aplicativo pode recuperar propriedades para um único objeto, para vários objetos identificados por identificadores de objeto ou para vários objetos do mesmo tipo. O tópico a seguir descreve a recuperação de um único objeto. Consulte a [seção Tarefas Avançadas](advanced-tasks.md) para ver uma descrição da recuperação de propriedade para vários objetos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

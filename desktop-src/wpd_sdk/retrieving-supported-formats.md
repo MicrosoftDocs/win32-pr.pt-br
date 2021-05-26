@@ -4,12 +4,12 @@ ms.assetid: b54dfeda-c2a3-42ec-895f-9abbbd4dd2ec
 title: Recuperando formatos de serviço com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ed8021d8feefaaad3da7905e17e8c658dfb19e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73618f3450255ad470545ac472ad9f71238621e3
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766491"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423807"
 ---
 # <a name="retrieving-supported-service-formats"></a>Recuperando formatos de serviço com suporte
 
@@ -17,9 +17,8 @@ O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativ
 
 
 
-|                                                                                      |                                                                                                       |
+| Interface | Descrição   |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Interface                                                                            | Descrição                                                                                           |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Usado para recuperar a interface **IPortableDeviceServiceCapabilities** para acessar os eventos com suporte. |
 | [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornece acesso aos eventos e atributos de evento com suporte.                                         |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contém a lista de formatos com suporte.                                                               |

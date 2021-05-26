@@ -4,12 +4,12 @@ description: Um controle de endereço IP (Internet Protocol) permite que o usuá
 ms.assetid: cf6a59fc-661c-420a-a67f-a42619946357
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb8cf39400c97d211d83b5496067fe6d4772e1e7
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 6859bd31250d30bcf26d0c5fde37afeca8cc81bd
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917709"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424226"
 ---
 # <a name="about-ip-address-controls"></a>Sobre controles de endereço IP
 
@@ -32,31 +32,30 @@ O intervalo padrão para cada campo é de 0 a 255, mas o aplicativo pode definir
 > [!Note]  
 > O controle de endereço IP é implementado na versão 4,71 e posterior do Comctl32.dll.
 
- 
+ 
 
 ## <a name="creating-an-ip-address-control"></a>Criando um controle de endereço IP
 
-Antes de criar um controle de endereço IP, chame [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) com o sinalizador de **\_ \_ classes de Internet ICC** definido no membro **dwICC** da estrutura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) .
+Antes de criar um controle de endereço IP, chame [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) com o sinalizador **ICC \_ INTERNET \_ CLASSES** definido no membro **dwICC** da estrutura [**INITCOMMONCONTROLSEX.**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex)
 
-Use a função [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar um controle de endereço IP. O nome da classe para o controle é [**WC \_ IPAddress**](common-control-window-classes.md), que é definido em commctrl. h. Não existe nenhum estilo específico de controle de endereço IP; no entanto, como esse é um controle filho, use o estilo [**\_ filho WS**](/windows/desktop/winmsg/window-styles) como um mínimo.
+Use a [**função CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para criar um controle de endereço IP. O nome da classe para o controle [**é WC \_ IPADDRESS,**](common-control-window-classes.md)que é definido em Commctrl.h. Não existem estilos específicos do controle de endereço IP; no entanto, como esse é um controle filho, use o [**estilo FILHO do WS \_**](/windows/desktop/winmsg/window-styles) como um mínimo.
 
 ## <a name="is-an-ip-address-control-an-edit-control"></a>Um controle de endereço IP é um controle de edição?
 
-Um controle de endereço IP não é um controle de edição e não responderá a \_ mensagens em. No entanto, ele enviará à janela do proprietário as notificações de controle de edição a seguir por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) . Observe que o controle de endereço IP também enviará notificações IPN particulares \_ por meio da mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Um controle de endereço IP não é um controle de edição e não responderá a mensagens \_ EM. No entanto, ele enviará à janela do proprietário as seguintes notificações de controle de edição por meio da mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) Observe que o controle de endereço IP também enviará notificações de IPN privado \_ por meio da mensagem WM [**\_ NOTIFY.**](wm-notify.md)
 
 
 
-|                                   |                                                                                                                                                                                                         |
+|     Notificação                              |     Motivo da notificação                                                                                                                                                                                                    |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Notificação**                  | **Motivo da notificação**                                                                                                                                                                             |
-| [EN \_ SETFOCUS](en-setfocus.md)   | Enviado quando o controle de endereço IP Obtém o foco do teclado.                                                                                                                                              |
-| [KILLFOCUS de EN \_](en-killfocus.md) | Enviado quando o controle de endereço IP perde o foco do teclado.                                                                                                                                              |
-| [alteração de EN \_](en-change.md)       | Enviado quando qualquer campo no controle de endereço IP é alterado. Assim como a notificação de [ \_ alteração en](en-change.md) de um controle de edição padrão, essa notificação é recebida depois que a tela é atualizada. |
+| [EN \_ SETFOCUS](en-setfocus.md)   | Enviado quando o controle de endereço IP obtém o foco do teclado.                                                                                                                                              |
+| [EN \_ KILLFOCUS](en-killfocus.md) | Enviado quando o controle de endereço IP perde o foco do teclado.                                                                                                                                              |
+| [EN \_ CHANGE](en-change.md)       | Enviado quando qualquer campo no controle de endereço IP muda. Como a [ \_ notificação EN CHANGE](en-change.md) de um controle de edição padrão, essa notificação é recebida após a atualização da tela. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-title: Como processar notificações de seletor de data e hora
-description: Esta seção demonstra como processar notificações de seletor de data e hora.
+title: Como processar notificações de selador de data e hora
+description: Esta seção demonstra como processar notificações do se picker de data e hora.
 ms.assetid: DBF624F0-89E0-435B-BE96-60B7A4CEDA61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b904c464677a81151b03e3ae89085847e4e8bdf
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ffa1214ebd671b4ae222990bde4b44586e6d7b11
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008631"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424176"
 ---
-# <a name="how-to-process-date-and-time-picker-notifications"></a>Como processar notificações de seletor de data e hora
+# <a name="how-to-process-date-and-time-picker-notifications"></a>Como processar notificações de selador de data e hora
 
-Esta seção demonstra como processar notificações de seletor de data e hora.
+Esta seção demonstra como processar notificações do se picker de data e hora.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
@@ -24,23 +24,23 @@ Esta seção demonstra como processar notificações de seletor de data e hora.
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Programação Interface do Usuário Windows
 
 ## <a name="instructions"></a>Instruções
 
 
-Um controle de data e hora (DTP) envia mensagens de notificação para a janela pai quando os eventos, geralmente disparados pela entrada do usuário, ocorrem no controle. Seu aplicativo deve incluir código para determinar o tipo de mensagem de notificação e responder adequadamente.
+Um controle DTP (selador de data e hora) envia mensagens de notificação para a janela pai quando eventos, geralmente disparados pela entrada do usuário, ocorrem no controle . Seu aplicativo deve incluir código para determinar o tipo de mensagem de notificação e responder adequadamente.
 
-Se você planeja usar campos de retorno de chamada com os controles DTP em seu aplicativo, deverá estar preparado para manipular os códigos de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md), [DTN \_ Format](dtn-format.md)e [DTN \_ WMKEYDOWN](dtn-wmkeydown.md) . Para obter informações adicionais sobre campos de retorno de chamada, consulte [campos de retorno de chamada](date-and-time-picker-controls.md).
+Se você planeja usar campos de retorno de chamada com os controles DTP em seu aplicativo, deve estar preparado para lidar com códigos de notificação [DTN \_ FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)e [DTN \_ WMKEYDOWN.](dtn-wmkeydown.md) Para obter informações adicionais sobre campos de retorno de chamada, consulte [Campos de retorno de chamada](date-and-time-picker-controls.md).
 
-O exemplo de código C++ a seguir identifica a mensagem de notificação enviada por um controle DTP e chama a função apropriada definida pelo aplicativo. Consulte os tópicos a seguir para obter exemplos de código que ilustram como processar as notificações que aparecem neste exemplo.
+O exemplo de código C++ a seguir identifica a mensagem de notificação enviada por um controle DTP e chama a função apropriada definida pelo aplicativo. Consulte os tópicos a seguir para ver exemplos de código que ilustram como processar as notificações que aparecem neste exemplo.
 
-|                                                                                                        |
+|   Tópicos                                                                                                     |
 |--------------------------------------------------------------------------------------------------------|
 | [Como processar a notificação DTN \_ DATETIMECHANGE](process-the-dtn-datetimechange-notification.md) |
 | [Como processar a notificação DTN \_ FORMATQUERY](process-the-dtn-formatquery-notification.md)       |
-| [Como processar a notificação de \_ formato DTN](process-the-dtn-format-notfication.md)                  |
-| [Como processar a notificação DTN \_ WMKEYDOWN](process-the-dtn-wmkeydown-notification.md)           |
+| [Como processar a notificação de formato \_ DTN](process-the-dtn-format-notfication.md)                  |
+| [Como processar a notificação wmkeydown de DTN \_](process-the-dtn-wmkeydown-notification.md)           |
 
 
 
@@ -101,16 +101,16 @@ BOOL WINAPI DoNotify(HWND hwnd, WPARAM wParam, LPARAM lParam)
 
 <dl> <dt>
 
-[Notificações do seletor de data e hora](bumper-date-and-time-picker-control-reference-notifications.md)
+[Notificações de selador de data e hora](bumper-date-and-time-picker-control-reference-notifications.md)
 </dt> <dt>
 
-[Referência de controle do seletor de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referência de controle do selador de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[Usando controles de seletor de data e hora](using-date-and-time-picker.md)
+[Usando controles de selador de data e hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Seletor de data e hora](date-and-time-picker-control-reference.md)
+[Selador de data e hora](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

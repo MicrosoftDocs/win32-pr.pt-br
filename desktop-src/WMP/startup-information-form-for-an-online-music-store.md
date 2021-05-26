@@ -6,12 +6,12 @@ keywords:
 - Lojas online do Windows Media Player
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c32ef8f3c5bdb5779a5c7fbd36ed2dd3efac7b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3ded923538d6be6c8a22fa0ba96ddcd0814348d
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005083"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424066"
 ---
 # <a name="startup-information-form-for-an-online-music-store"></a>Formulário de informações de inicialização para uma loja de música online
 
@@ -52,7 +52,7 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 | Item hospedado pela Microsoft em "procurar todas as lojas online"                             | Descrição |
 |------------------------------------------------------------------------------------|-------------|
 | Logotipo da loja (130W x 30h)<br/> (Anexe o arquivo PNG separadamente.)<br/>        |             |
-| Procurar todas as imagens (108w x 108h)<br/> (Anexe o arquivo PNG separadamente.)<br/> |             |
+| Procurar todas as imagens (108w x 108h)<br/> (Anexar o arquivo PNG separadamente.)<br/> |             |
 | Armazenar texto de descrição (limite de 110 caracteres)                                       |             |
 | Texto para hiperlink (limite de 45 caracteres)                                            |             |
 
@@ -60,7 +60,7 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
  
 
-## <a name="startup-information-for-production-store"></a>Informações de inicialização para armazenamento de produção
+## <a name="startup-information-for-production-store"></a>Informações de inicialização para o armazenamento de produção
 
 
 
@@ -69,9 +69,9 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 | URL XML de informações de serviço (limite de 2048 caracteres)                                                              |             |
 | Chave de serviço (ID exclusiva)                                                                                  |             |
 | Nome amigável (limite de 30 caracteres)                                                                       |             |
-| URL da imagem do menu (limite de 2048 caracteres)                                                                    |             |
-| Comprar a URL de música (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados)<br/>                |             |
-| URL de compra da interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados--opcional)<br/> |             |
+| URL da imagem de menu (limite de 2048 caracteres)                                                                    |             |
+| Comprar URL de Música (limite de 2048 caracteres)<br/> (Somente lojas de música integradas)<br/>                |             |
+| URL de compra de interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente lojas de música integradas – opcional)<br/> |             |
 
 
 
@@ -79,10 +79,10 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
 
 
-| Item hospedado pela Microsoft em "procurar todas as lojas online"                             | Descrição |
+| Item hospedado pela Microsoft em "Procurar todas as lojas online"                             | Descrição |
 |------------------------------------------------------------------------------------|-------------|
-| Logotipo da loja (130W x 30h)<br/> (Anexe o arquivo PNG separadamente.)<br/>        |             |
-| Procurar todas as imagens (108w x 108h)<br/> (Anexe o arquivo PNG separadamente.)<br/> |             |
+| Logotipo da Loja (130w x 30h)<br/> (Anexar o arquivo PNG separadamente.)<br/>        |             |
+| Imagem Browse-all (108w x 108h)<br/> (Anexar o arquivo PNG separadamente.)<br/> |             |
 | Armazenar texto de descrição (limite de 110 caracteres)                                       |             |
 | Texto para hiperlink (limite de 45 caracteres)                                            |             |
 
@@ -106,7 +106,7 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
 
 
-|                | Nome do Usuário | Senha |
+|  Conta       | Nome do Usuário | Senha |
 |----------------|-----------|----------|
 | Conta de teste 1 |           |          |
 | Conta de teste 2 |           |          |

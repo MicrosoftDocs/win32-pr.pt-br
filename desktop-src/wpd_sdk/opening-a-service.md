@@ -4,12 +4,12 @@ ms.assetid: 722d657d-332a-40df-ac30-bc2050deda74
 title: Abrindo um serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0bcccc6c3769173bfee72e73d7cbf68435b0ba1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8b273b8709a4d750085f14075d605f88ed0faa6
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506018"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423916"
 ---
 # <a name="opening-a-service"></a>Abrindo um serviço
 
@@ -17,9 +17,8 @@ Antes que seu aplicativo possa executar operações em um serviço, por exemplo,
 
 
 
-|                                                                        |                                                    |
-|------------------------------------------------------------------------|----------------------------------------------------|
 | Interface                                                              | Descrição                                        |
+|------------------------------------------------------------------------|----------------------------------------------------|
 | [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) | Usado para enumerar os serviços em um dispositivo.        |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Usado para abrir uma conexão com um serviço de dispositivo.     |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Usado para manter as informações do cliente do aplicativo. |
@@ -80,9 +79,9 @@ Depois que o aplicativo recupera o identificador PnP para o serviço, ele pode c
 
 No aplicativo de exemplo, esse método é chamado dentro de **ChooseDeviceService** no módulo do inenumeration. cpp.
 
-O [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dá suporte a dois CLSIDs para **CoCreateInstance**. **CLSID \_ do PortableDeviceService** retorna um ponteiro **IPortableDeviceService** que não agrega o marshaler de thread livre; **CLSID \_ do PortableDeviceServiceFTM** é um novo CLSID que retorna um ponteiro **IPortableDeviceService** que agrega o marshaler de thread livre. Os dois ponteiros também dão suporte à mesma funcionalidade.
+O [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dá suporte a dois CLSIDs para **CoCreateInstance**. **CLSID \_ PortableDeviceService** retorna um ponteiro **IPortableDeviceService** que não agrega o marshaler de thread livre; **CLSID \_ PortableDeviceServiceFTM** é um novo CLSID que retorna um ponteiro **IPortableDeviceService** que agrega o marshaler de thread livre. Caso contrário, ambos os ponteiros darão suporte à mesma funcionalidade.
 
-Aplicativos que residem em Apartments de thread único devem usar **CLSID \_ PortableDeviceServiceFTM** , pois isso elimina a sobrecarga do marshaling do ponteiro de interface. **CLSID \_ do O PortableDeviceService** ainda tem suporte para aplicativos herdados.
+Os aplicativos que agem em Single Threaded Apartments devem usar **CLSID \_ PortableDeviceServiceFTM,** pois isso elimina a sobrecarga do marshaling de ponteiro de interface. **CLSID \_ PortableDeviceService** ainda tem suporte para aplicativos herdados.
 
 
 ```C++
@@ -121,13 +120,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interface IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
+[**IPortableDeviceService Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
 </dt> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**Interface IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**IPortableDeviceServiceManager Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29f72d7af0f73d74393d980b2506a3b7f05e578
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6a61b8e1e09e749579f323d506371138b0d9b59
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105790591"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424086"
 ---
 # <a name="playerstringcollectionchange-event"></a>Evento Player. StringCollectionChange
 
@@ -58,10 +58,9 @@ Número (longo) indicando o tipo de alteração ocorrida na coleção de cadeias
 
 
 
-|        |                                    |
-|--------|------------------------------------|
 | Número | Descrição                        |
-| 0      | Desconhecido. (Não é um valor válido)       |
+|--------|------------------------------------|
+| 0      | Desconhecida. (Não é um valor válido)       |
 | 1      | Um item foi inserido.              |
 | 2      | A coleção de cadeia de caracteres foi alterada.     |
 | 3      | Um item foi excluído.               |
@@ -78,7 +77,7 @@ Número (longo) indicando o tipo de alteração ocorrida na coleção de cadeias
 *lCollectionIndex* 
 </dt> <dd>
 
-Número (longo) que contém o índice do item de coleção de cadeia de caracteres que foi alterado.
+Número (longo) que contém o índice do item de coleção de cadeias de caracteres que foi alterado.
 
 </dd> </dl>
 
@@ -105,7 +104,7 @@ Esse evento não retorna um valor.
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> <dt>
 
 [**Objeto StringCollection**](stringcollection-object.md)
