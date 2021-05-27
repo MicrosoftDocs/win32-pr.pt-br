@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 224fbacdb8816a6aed6a7779c5c8ff991736ee6c
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 3b993ca1c027119ae64157db2327a2836445bf43
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804412"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550201"
 ---
 # <a name="dml_element_wise_clip_grad_operator_desc-directmlh"></a>DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC (directml. h)
 
@@ -100,24 +100,24 @@ Um tensor de saída que contém os gradientes propagados. Normalmente, esse tens
 
 `Min`
 
-Tipo: **[float](/windows/win32/winprog/windows-data-types)**
+Tipo: **[float](../../winprog/windows-data-types.md)**
 
 O valor mínimo. Se x estiver neste valor ou abaixo dele, o resultado do gradiente será 0.
 
 `Max`
 
-Tipo: **[float](/windows/win32/winprog/windows-data-types)**
+Tipo: **[float](../../winprog/windows-data-types.md)**
 
 O valor máximo. Se x estiver no valor ou acima dele, o resultado do gradiente será 0.
 
 ## <a name="availability"></a>Disponibilidade
 Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_1` .
 
-## <a name="tensor-constraints"></a>Restrições de tensor
-*InputGradientTensor*, *InputTensor* e *OutputGradientTensor* devem ter o mesmo *tipo de dados*, *DimensionCount* e *tamanhos*.
+## <a name="tensor-constraints"></a>Restrições do Tensor
+*InputGradientTensor,* *InputTensor* e *OutputGradientTensor* devem ter o mesmo *DataType,* *DimensionCount* e *tamanhos*.
 
-## <a name="tensor-support"></a>Suporte do tensor
-| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+## <a name="tensor-support"></a>Suporte do Tensor
+| Tensor | Tipo | Contagens de dimensões com suporte | Tipos de dados com suporte |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 | InputGradientTensor | Entrada | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
@@ -126,4 +126,4 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_1` .
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cabeçalho** | directml. h |
+| **Cabeçalho** | directml.h |

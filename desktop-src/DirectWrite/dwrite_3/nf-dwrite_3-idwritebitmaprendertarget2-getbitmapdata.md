@@ -39,19 +39,19 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2.GetBitmapData
-ms.openlocfilehash: f84959338550722d9ce1d2d7097d652fcb140f1f
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 15a51fdea0d7e579e427ab52af3016e58a39831a
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955039"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550281"
 ---
 # <a name="idwritebitmaprendertarget2getbitmapdata-method-dwrite_3h"></a>Método IDWriteBitmapRenderTarget2:: getbitmapdata (dwrite_3. h)
 
 Recupera os dados de pixel de um destino de renderização de bitmap.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview).
+> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](../dwritecore-overview.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -77,7 +77,7 @@ Se esse método tiver sucesso, ele retornará <b xmlns:loc="http://microsoft.com
 
 ## <a name="examples"></a>Exemplos
 
-Consulte o tópico [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
+Consulte o tópico [visão geral do DWriteCore](../dwritecore-overview.md) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |

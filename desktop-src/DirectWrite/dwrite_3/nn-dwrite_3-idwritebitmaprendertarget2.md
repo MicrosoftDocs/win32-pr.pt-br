@@ -1,7 +1,7 @@
 ---
 UID: NN:dwrite_3.IDWriteBitmapRenderTarget2
 title: IDWriteBitmapRenderTarget2 (dwrite_3.h)
-description: Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos.
+description: Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos.
 tech.root: DirectWrite
 ms.date: 11/11/2020
 ms.topic: reference
@@ -39,19 +39,19 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2
-ms.openlocfilehash: 482aff4e2b9fbf03a89a15a7e38cc07d7542362b
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 346b2e9c7510010abb50f421489b67f7d327512f
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955029"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548941"
 ---
-# <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a>Interface IDWriteBitmapRenderTarget2 (dwrite_3. h)
+# <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a>Interface IDWriteBitmapRenderTarget2 (dwrite_3.h)
 
-Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos.
+Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview).
+> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [Visão geral de DWriteCore.](../dwritecore-overview.md)
 
 ## <a name="inheritance"></a>Herança
 
@@ -63,10 +63,10 @@ A interface **IDWriteBitmapRenderTarget2** tem esses métodos.
 
 | Método | Descrição |
 | ---- |:---- |
-| [IDWriteBitmapRenderTarget2:: getbitmapdata](./nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md) | Recupera os dados de pixel de um destino de renderização de bitmap. |
+| [IDWriteBitmapRenderTarget2::GetBitmapData](./nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md) | Recupera os dados de pixel de um destino de renderização de bitmap. |
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Windows 10, reunião do projeto [aplicativos Win32] |
-| **Cabeçalho** | dwrite_3. h (incluir dwrite_core. h) |
+| **Cliente mínimo com suporte** | Windows 10, Project Reunion [aplicativos Win32] |
+| **Cabeçalho** | dwrite_3.h (incluir dwrite_core.h) |
