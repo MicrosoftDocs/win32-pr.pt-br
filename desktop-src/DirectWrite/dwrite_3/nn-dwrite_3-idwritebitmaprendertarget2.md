@@ -1,7 +1,7 @@
 ---
 UID: NN:dwrite_3.IDWriteBitmapRenderTarget2
 title: IDWriteBitmapRenderTarget2 (dwrite_3.h)
-description: Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos.
+description: Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos.
 tech.root: DirectWrite
 ms.date: 11/11/2020
 ms.topic: reference
@@ -39,34 +39,34 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2
-ms.openlocfilehash: 482aff4e2b9fbf03a89a15a7e38cc07d7542362b
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 346b2e9c7510010abb50f421489b67f7d327512f
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955029"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548941"
 ---
-# <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a><span data-ttu-id="30402-103">Interface IDWriteBitmapRenderTarget2 (dwrite_3. h)</span><span class="sxs-lookup"><span data-stu-id="30402-103">IDWriteBitmapRenderTarget2 interface (dwrite_3.h)</span></span>
+# <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a><span data-ttu-id="116c7-103">Interface IDWriteBitmapRenderTarget2 (dwrite_3.h)</span><span class="sxs-lookup"><span data-stu-id="116c7-103">IDWriteBitmapRenderTarget2 interface (dwrite_3.h)</span></span>
 
-<span data-ttu-id="30402-104">Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos.</span><span class="sxs-lookup"><span data-stu-id="30402-104">Encapsulates a 32-bit device independent bitmap and device context, which can be used for rendering glyphs.</span></span>
+<span data-ttu-id="116c7-104">Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos.</span><span class="sxs-lookup"><span data-stu-id="116c7-104">Encapsulates a 32-bit device independent bitmap and device context, which can be used for rendering glyphs.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="30402-105">Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md).</span><span class="sxs-lookup"><span data-stu-id="30402-105">This API is available as part of the DWriteCore implementation of [DirectWrite](../direct-write-portal.md).</span></span> <span data-ttu-id="30402-106">O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma.</span><span class="sxs-lookup"><span data-stu-id="30402-106">DWriteCore is a form of DirectWrite that runs on versions of Windows down to Windows 8, and opens the door for you to use it cross-platform.</span></span> <span data-ttu-id="30402-107">Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview).</span><span class="sxs-lookup"><span data-stu-id="30402-107">For more info, and code examples, see [DWriteCore overview](/windows/win32/directwrite/dwritecore-overview).</span></span>
+> <span data-ttu-id="116c7-105">Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md).</span><span class="sxs-lookup"><span data-stu-id="116c7-105">This API is available as part of the DWriteCore implementation of [DirectWrite](../direct-write-portal.md).</span></span> <span data-ttu-id="116c7-106">O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma.</span><span class="sxs-lookup"><span data-stu-id="116c7-106">DWriteCore is a form of DirectWrite that runs on versions of Windows down to Windows 8, and opens the door for you to use it cross-platform.</span></span> <span data-ttu-id="116c7-107">Para obter mais informações e exemplos de código, consulte [Visão geral de DWriteCore.](../dwritecore-overview.md)</span><span class="sxs-lookup"><span data-stu-id="116c7-107">For more info, and code examples, see [DWriteCore overview](../dwritecore-overview.md).</span></span>
 
-## <a name="inheritance"></a><span data-ttu-id="30402-108">Herança</span><span class="sxs-lookup"><span data-stu-id="30402-108">Inheritance</span></span>
+## <a name="inheritance"></a><span data-ttu-id="116c7-108">Herança</span><span class="sxs-lookup"><span data-stu-id="116c7-108">Inheritance</span></span>
 
-<span data-ttu-id="30402-109">A interface **IDWriteBitmapRenderTarget2** herda de [IDWriteBitmapRenderTarget1](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1).</span><span class="sxs-lookup"><span data-stu-id="30402-109">The **IDWriteBitmapRenderTarget2** interface inherits from [IDWriteBitmapRenderTarget1](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1).</span></span>
+<span data-ttu-id="116c7-109">A interface **IDWriteBitmapRenderTarget2** herda de [IDWriteBitmapRenderTarget1](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1).</span><span class="sxs-lookup"><span data-stu-id="116c7-109">The **IDWriteBitmapRenderTarget2** interface inherits from [IDWriteBitmapRenderTarget1](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="30402-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="30402-110">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="116c7-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="116c7-110">Methods</span></span>
 
-<span data-ttu-id="30402-111">A interface **IDWriteBitmapRenderTarget2** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="30402-111">The **IDWriteBitmapRenderTarget2** interface has these methods.</span></span>
+<span data-ttu-id="116c7-111">A interface **IDWriteBitmapRenderTarget2** tem esses métodos.</span><span class="sxs-lookup"><span data-stu-id="116c7-111">The **IDWriteBitmapRenderTarget2** interface has these methods.</span></span>
 
-| <span data-ttu-id="30402-112">Método</span><span class="sxs-lookup"><span data-stu-id="30402-112">Method</span></span> | <span data-ttu-id="30402-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="30402-113">Description</span></span> |
+| <span data-ttu-id="116c7-112">Método</span><span class="sxs-lookup"><span data-stu-id="116c7-112">Method</span></span> | <span data-ttu-id="116c7-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="116c7-113">Description</span></span> |
 | ---- |:---- |
-| [<span data-ttu-id="30402-114">IDWriteBitmapRenderTarget2:: getbitmapdata</span><span class="sxs-lookup"><span data-stu-id="30402-114">IDWriteBitmapRenderTarget2::GetBitmapData</span></span>](./nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md) | <span data-ttu-id="30402-115">Recupera os dados de pixel de um destino de renderização de bitmap.</span><span class="sxs-lookup"><span data-stu-id="30402-115">Retrieves the pixel data from a bitmap render target.</span></span> |
+| [<span data-ttu-id="116c7-114">IDWriteBitmapRenderTarget2::GetBitmapData</span><span class="sxs-lookup"><span data-stu-id="116c7-114">IDWriteBitmapRenderTarget2::GetBitmapData</span></span>](./nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md) | <span data-ttu-id="116c7-115">Recupera os dados de pixel de um destino de renderização de bitmap.</span><span class="sxs-lookup"><span data-stu-id="116c7-115">Retrieves the pixel data from a bitmap render target.</span></span> |
 
-## <a name="requirements"></a><span data-ttu-id="30402-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="30402-116">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="116c7-116">Requisitos</span><span class="sxs-lookup"><span data-stu-id="116c7-116">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="30402-117">**Cliente mínimo com suporte**</span><span class="sxs-lookup"><span data-stu-id="30402-117">**Minimum supported client**</span></span> | <span data-ttu-id="30402-118">Windows 10, reunião do projeto [aplicativos Win32]</span><span class="sxs-lookup"><span data-stu-id="30402-118">Windows 10, Project Reunion [Win32 apps]</span></span> |
-| <span data-ttu-id="30402-119">**Cabeçalho**</span><span class="sxs-lookup"><span data-stu-id="30402-119">**Header**</span></span> | <span data-ttu-id="30402-120">dwrite_3. h (incluir dwrite_core. h)</span><span class="sxs-lookup"><span data-stu-id="30402-120">dwrite_3.h (include dwrite_core.h)</span></span> |
+| <span data-ttu-id="116c7-117">**Cliente mínimo com suporte**</span><span class="sxs-lookup"><span data-stu-id="116c7-117">**Minimum supported client**</span></span> | <span data-ttu-id="116c7-118">Windows 10, Project Reunion [aplicativos Win32]</span><span class="sxs-lookup"><span data-stu-id="116c7-118">Windows 10, Project Reunion [Win32 apps]</span></span> |
+| <span data-ttu-id="116c7-119">**Cabeçalho**</span><span class="sxs-lookup"><span data-stu-id="116c7-119">**Header**</span></span> | <span data-ttu-id="116c7-120">dwrite_3.h (incluir dwrite_core.h)</span><span class="sxs-lookup"><span data-stu-id="116c7-120">dwrite_3.h (include dwrite_core.h)</span></span> |
