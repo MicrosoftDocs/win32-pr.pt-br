@@ -4,12 +4,12 @@ ms.assetid: e1e3a9d9-209b-46a6-92da-5570476507cf
 title: Visão geral da codificação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be46aa73082071deb69fdd402f42866b18ef0aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f938e184dee7fd9b3e5348365550615ee28de70d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171526"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549481"
 ---
 # <a name="encoding-overview"></a>Visão geral da codificação
 
@@ -31,17 +31,17 @@ Este tópico inclui as seções a seguir.
 
 Como e quando a serialização ocorre é deixada para o desenvolvedor do codec. Cada bloco de dados individual no formato de arquivo de destino deve ser capaz de definir independentemente da ordem, mas novamente, essa é a decisão do desenvolvedor do codec. Quando o método [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit) é chamado no entanto, as alterações na imagem não devem ser permitidas e o fluxo deve ser fechado.
 
-## <a name="iwicbitmapframeencode"></a>IWICBitmapFrameEncode
+## <a name="iwicbitmapframeencode"></a>Iwicbitmapframeencode
 
-[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) é a interface para codificar os quadros individuais de uma imagem. Ele fornece métodos para definir componentes individuais de imagem de quadro, como miniaturas e quadros, bem como dimensões de imagem, DPI e formatos de pixel.
+[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) é a interface para codificar os quadros individuais de uma imagem. Ele fornece métodos para definir componentes individuais de geração de imagens de quadro, como miniaturas e quadros, bem como dimensões de imagem, DPI e formatos de pixel.
 
-Quadros individuais podem ser codificados com metadados específicos do quadro para que o [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) forneça acesso a um gravador de metadados por meio do método [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter) .
+Quadros individuais podem ser codificados com metadados específicos de quadro, de modo que [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) fornece acesso a um autor de metadados por meio do [**método GetMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter)
 
-O método [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit) do quadro confirma todas as alterações no quadro individual e indica que as alterações feitas nesse quadro não devem mais ser aceitas.
+O método [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit) do quadro confirma todas as alterações no quadro individual e indica que as alterações nesse quadro não devem mais ser aceitas.
 
 ## <a name="tiff-encoding-example"></a>Exemplo de codificação TIFF
 
-No exemplo a seguir, uma imagem TIFF (Tagged Image File Format) é codificada usando [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) e um [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode). A saída TIFF é personalizada usando o [**WICTiffCompressionOption**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption) e o quadro de bitmap é inicializado usando as opções fornecidas. Depois que a imagem tiver sido criada usando [**WritePixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writepixels), o quadro será confirmado por meio de [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit) e a imagem será salva usando [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit).
+No exemplo a seguir, uma imagem TIFF (Formato de Arquivo de Imagem Marcada) é codificada usando [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) e [**um IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) A saída TIFF é personalizada usando [**WICTiffCompressionOption**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption) e o quadro de bitmap é inicializado usando as opções fornecidas. Depois que a imagem tiver sido criada usando [**WritePixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writepixels), o quadro será confirmado por meio de [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit) e a imagem será salva usando [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit).
 
 
 ```C++
@@ -121,8 +121,8 @@ if (SUCCEEDED(hr))
 
 if (SUCCEEDED(hr))
 {
-    UINT cbStride = (uiWidth * 24 + 7)/8/***WICGetStride**_/;
-    UINT cbBufferSize = uiHeight _ cbStride;
+    UINT cbStride = (uiWidth * 24 + 7)/8/***WICGetStride***/;
+    UINT cbBufferSize = uiHeight * cbStride;
 
     BYTE *pbBuffer = new BYTE[cbBufferSize];
 
@@ -173,11 +173,11 @@ return hr;
 
 
 
-## <a name="encoder-options-usage"></a>Uso de opções de codificador
+## <a name="encoder-options-usage"></a>Uso de opções do codificador
 
-Codificadores diferentes para formatos diferentes precisam expor opções diferentes para a forma como uma imagem é codificado. O Windows Imaging Component (WIC) fornece um mecanismo consistente para expressar se as opções de codificação são necessárias e, ao mesmo tempo, permitir que os aplicativos funcionem com vários codificadores sem a necessidade de conhecimento de um formato específico. Isso é feito fornecendo um parâmetro [IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196(v=vs.85)) no método [**CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe) e o método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-initialize) .
+Codificadores diferentes para formatos diferentes precisam expor diferentes opções de como uma imagem é codificada. Windows Imaging Component (WIC) fornece um mecanismo consistente para expressar se as opções de codificação são necessárias enquanto ainda permitem que os aplicativos funcionem com vários codificadores sem exigir conhecimento de um formato específico. Isso é feito fornecendo um [parâmetro IPropertyBag](/windows/win32/api/oaidl/nn-oaidl-ipropertybag) no [**método CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe) e no [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-initialize)
 
-A fábrica de componentes fornece um ponto de criação fácil para a criação de um recipiente de propriedades de opções de codificador. Os codecs podem usar esse serviço se precisarem fornecer um conjunto simples, intuitivo e não conflitante de opções de codificador. O recipiente de propriedades de geração de imagens deve ser inicializado durante a criação com todas as opções de codificador relevantes para esse codec. Para as opções de codificador do conjunto canônico, o intervalo de valores será imposto na gravação. Para necessidades mais avançadas, os codecs devem gravar sua própria implementação do recipiente de propriedades.
+A fábrica de componentes fornece um ponto de criação fácil para criar um pacote de propriedades de opções do codificador. Os codecs podem usar esse serviço se eles precisam fornecer um conjunto simples, intuitivo e não conflitante de opções de codificador. O pacote de propriedades de geração de imagens deve ser inicializado durante a criação com todas as opções de codificador relevantes para esse codec. Para as opções de codificador do conjunto canônico, o intervalo de valores será imposto na gravação. Para necessidades mais avançadas, os codecs devem gravar sua própria implementação do recipiente de propriedades.
 
 Um aplicativo recebe o recipiente de opções do codificador durante a criação do quadro e deve configurar quaisquer valores antes de inicializar o quadro do codificador. Para um aplicativo controlado por interface do usuário, ele pode oferecer uma interface do usuário fixa para as opções canônicas de codificador e uma exibição avançada para as opções restantes. As alterações podem ser feitas uma de cada vez por meio do método Write e qualquer erro será relatado por meio de IErrorLog. O aplicativo de interface do usuário sempre deve ler novamente e exibir todas as opções depois de fazer uma alteração caso a alteração tenha causado um efeito em cascata. Um aplicativo deve estar preparado para manipular a inicialização de quadro com falha para codecs que fornecem apenas relatórios de erros mínimos por meio de seu recipiente de propriedades.
 
@@ -187,33 +187,33 @@ Um aplicativo pode esperar encontrar o seguinte conjunto de opções de codifica
 
 
 
-| Nome da Propriedade      | VARTYPE  | Valor                                                                     | Codecs aplicáveis |
+| Nome da propriedade      | VARTYPE  | Valor                                                                     | Codecs aplicáveis |
 |--------------------|----------|---------------------------------------------------------------------------|-------------------|
 | ImageQuality       | VT \_ R4   | 0-1,0                                                                     | JPEG, HDPhoto     |
 | CompressionQuality | VT \_ R4   | 0-1,0                                                                     | TIFF              |
 | Lossless           | BOOL do VT \_ | **verdadeiro**, **falso**                                                       | HDPhoto           |
-| BitmapTransform    | \_UI1 VT  | [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) | JPEG              |
+| BitmapTransform    | VT \_ UI1  | [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) | JPEG              |
 
 
 
  
 
-ImageQualty de 0,0 significa a menor rendição de fidelidade possível e 1,0 significa a maior fidelidade, que também pode significar sem perdas dependendo do codec.
+ImageQualty de 0,0 significa a menor rendição de fidelidade possível e 1,0 significa a fidelidade mais alta, o que também pode implicar sem perda, dependendo do codec.
 
-CompressionQuality de 0,0 significa o esquema de compactação menos eficiente disponível, normalmente resultando em uma codificação rápida, mas uma saída maior. Um valor de 1,0 significa o esquema mais eficiente disponível, normalmente demorando mais tempo para codificar, mas produzindo saída menor. Dependendo dos recursos do codec, esse intervalo pode ser mapeado para um conjunto discreto de métodos de compactação disponíveis.
+CompressionQuality de 0,0 significa o esquema de compactação menos eficiente disponível, normalmente resultando em uma codificação rápida, mas uma saída maior. Um valor de 1,0 significa o esquema mais eficiente disponível, normalmente levando mais tempo para codificar, mas produzindo uma saída menor. Dependendo das funcionalidades do codec, esse intervalo pode ser mapeado para um conjunto discreto de métodos de compactação disponíveis.
 
-Sem perdas significa que o codec codifica a imagem como sem perdas, sem perda de dados de imagem. Se o Lossless estiver habilitado, o ImageQuality será ignorado.
+Sem perda significa que o codec codifica a imagem como sem perda sem perda de dados de imagem. Se Lossless estiver habilitado, ImageQuality será ignorado.
 
-Além das opções de codificador genérico acima, os codecs fornecidos com o WIC dão suporte às seguintes opções. Se um codec tiver a necessidade de oferecer suporte a uma opção consistente com o uso nesses codecs fornecidos, é recomendável fazer isso.
+Além das opções de codificador genérico acima, os codecs fornecidos com o WIC suportam as opções a seguir. Se um codec precisar dar suporte a uma opção consistente com o uso nesses codecs fornecidos, é incentivado a fazer isso.
 
 
 
-| Nome da Propriedade           | VARTYPE           | Valor                                                                             | Codecs aplicáveis |
+| Nome da propriedade           | Vartype           | Valor                                                                             | Codecs aplicáveis |
 |-------------------------|-------------------|-----------------------------------------------------------------------------------|-------------------|
-| InterlaceOption         | BOOL do VT \_          | Ativar/desativar                                                                            | PNG               |
-| FilterOption            | \_UI1 VT           | [**WICPngFilterOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicpngfilteroption)                       | PNG               |
-| TiffCompressionMethod   | \_UI1 VT           | [**WICTiffCompressionOption**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption)           | TIFF              |
-| Luminância               | \_Matriz VT UI4/VT \_ | 64 entradas (DCT)                                                                  | JPEG              |
+| InterlaceOption         | BOOL da VT \_          | Ativar/desativar                                                                            | PNG               |
+| FilterOption            | VT \_ UI1           | [**WICPngFilterOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicpngfilteroption)                       | PNG               |
+| TiffCompressionMethod   | VT \_ UI1           | [**WICTiffCompressionOption**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption)           | TIFF              |
+| Luminância               | MATRIZ VT \_ UI4/VT \_ | 64 entradas (DCT)                                                                  | JPEG              |
 | Crominância             | \_Matriz VT UI4/VT \_ | 64 entradas (DCT)                                                                  | JPEG              |
 | JpegYCrCbSubsampling    | \_UI1 VT           | [**WICJpegYCrCbSubsamplingOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicjpegycrcbsubsamplingoption) | JPEG              |
 | SuppressApp0            | BOOL do VT \_          |                                                                                   | JPEG              |

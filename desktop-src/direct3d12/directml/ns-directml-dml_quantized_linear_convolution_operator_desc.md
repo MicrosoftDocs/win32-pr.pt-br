@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC
-ms.openlocfilehash: 4dd50d80dfe4ae60e3fe7e67124ef00bfbc7bf2b
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 5b98e1f57268cab70c2fb672991bce3d67419db8
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803874"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549774"
 ---
 # <a name="dml_quantized_linear_convolution_operator_desc-structure-directmlh"></a>Estrutura de DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC (directml. h)
 Executa uma convolução do *FilterTensor* com o *InputTensor*. Esse operador executa a convolução progressiva em dados quantificados. Esse operador é matematicamente equivalente a desquantificar as entradas, convolving e, em seguida, quantificar a saída. 
@@ -115,35 +115,35 @@ Um tensor que contém os dados de escala de entrada. As dimensões esperadas do 
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor opcional que contém os dados de ponto zero de entrada. As dimensões esperadas do *InputZeroPointTensor* são `{ 1, 1, 1, 1 }` . Esse valor de ponto zero é usado para desquantificar os valores de entrada.
+Um tensor opcional que contém os dados de ponto zero de entrada. As dimensões esperadas do *InputZeroPointTensor* são `{ 1, 1, 1, 1 }` . Esse valor de ponto zero é usado para rebaixar os valores de entrada.
 
 
 `FilterTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor que contém os dados de filtro. As dimensões esperadas do *FilterTensor* são `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
+Um tensor que contém os dados do filtro. As dimensões esperadas do *FilterTensor* são `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
 
 
 `FilterScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor que contém os dados de escala de filtro. As dimensões esperadas do `FilterScaleTensor` serão `{ 1, 1, 1, 1 }` se a quantização de tensor for necessária ou `{ 1, OutputChannelCount, 1, 1 }` se a quantificação por canal for necessária. Esse valor de escala é usado para desquantificar os valores de filtro.
+Um tensor que contém os dados de escala de filtro. As dimensões esperadas do são se a quantização por tensor for necessária ou se a `FilterScaleTensor` `{ 1, 1, 1, 1 }` `{ 1, OutputChannelCount, 1, 1 }` quantização por canal for necessária. Esse valor de escala é usado para rebaixar os valores de filtro.
 
 
 `FilterZeroPointTensor`
 
 Tipo: _Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor opcional que contém os dados de ponto zero de filtro. As dimensões esperadas de *FilterZeroPointTensor* são `{ 1, 1, 1, 1 }` se a quantificação por tensor for necessária ou `{ 1, OutputChannelCount, 1, 1 }` se a quantificação por canal for necessária. Esse valor de ponto zero é usado para desquantificar os valores de filtro.
+Um tensor opcional que contém os dados de ponto zero do filtro. As dimensões esperadas do *FilterZeroPointTensor* serão se a quantização por tensor for necessária ou se a quantização por `{ 1, 1, 1, 1 }` canal for `{ 1, OutputChannelCount, 1, 1 }` necessária. Esse valor de ponto zero é usado para rebaixar os valores de filtro.
 
 
 `BiasTensor`
 
 Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor que contém os dados de tendência. O tensor de tendência é um tensor que contém dados que são transmitidos pelo tensor de saída no final da convolução que é adicionada ao resultado. As dimensões esperadas do BiasTensor são `{ 1, OutputChannelCount, 1, 1 }` para 4D.
+Um tensor que contém os dados de desvio. O tensor de desvio é um tensor que contém dados que são transmitidos pelo tensor de saída no final da convolução, que é adicionado ao resultado. As dimensões esperadas do BiasTensor são `{ 1, OutputChannelCount, 1, 1 }` para 4D.
 
 
 `OutputScaleTensor`
@@ -176,48 +176,48 @@ O número de dimensões espaciais para a operação de convolução. Dimensões 
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [uint](../../winprog/windows-data-types.md) \***
 
 Os passos da operação de convolução. Esses passos são aplicados ao filtro de convolução. Eles são separados dos avanços do tensor incluídos no [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
 
 
 `Dilations`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [uint](../../winprog/windows-data-types.md) \***
 
-O Dilations da operação de convolução. Dilations são preparadas aplicadas aos elementos do kernel de filtro. Isso tem o efeito de simular um kernel de filtro maior preenchendo os elementos do kernel de filtro interno com zeros.
+O Dilations da operação de convolução. As estruturas são passadas aplicadas aos elementos do kernel de filtro. Isso tem o efeito de simular um kernel de filtro maior ao preenchimento dos elementos do kernel de filtro interno com zeros.
 
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Os valores de preenchimento a serem aplicados ao início de cada dimensão espacial do filtro e tensor de entrada da operação de convolução.
+Os valores de preenchimento a serem aplicados ao início de cada dimensão espacial do filtro e do tensor de entrada da operação de convolução.
 
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Os valores de preenchimento a serem aplicados ao final de cada dimensão espacial do filtro e tensor de entrada da operação de convolução.
+Os valores de preenchimento a serem aplicados ao final de cada dimensão espacial do filtro e do tensor de entrada da operação de convolução.
 
 
 `GroupCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-O número de grupos nos quais dividir a operação de convolução. *GroupCount* pode ser usado para obter convolução com profundidade, definindo o *GroupCount* igual à contagem de canais de entrada. Isso divide a convolução em uma convolução separada por canal de entrada. 
+O número de grupos nos quais dividir a operação de convolução. *GroupCount* pode ser usado para obter a convolução de profundidade definindo *GroupCount* igual à contagem de canais de entrada. Isso divide a convolução em uma convolução separada por canal de entrada. 
 
 ## <a name="availability"></a>Disponibilidade
 Esse operador foi introduzido no `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-constraints"></a>Restrições de tensor
-* *FilterTensor* e *FilterZeroPointTensor* devem ter o mesmo *tipo de dados*.
-* *InputTensor* e *InputZeroPointTensor* devem ter o mesmo *tipo de dados*.
-* *OutputTensor* e `OutputZeroPointTensor` deve ter o mesmo *tipo de dados*.
+## <a name="tensor-constraints"></a>Restrições do Tensor
+* *FilterTensor* e *FilterZeroPointTensor* devem ter o mesmo *DataType*.
+* *InputTensor* e *InputZeroPointTensor* devem ter o mesmo *DataType*.
+* *OutputTensor* `OutputZeroPointTensor` e devem ter o mesmo *DataType*.
 
-## <a name="tensor-support"></a>Suporte do tensor
-| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+## <a name="tensor-support"></a>Suporte do Tensor
+| Tensor | Tipo | Contagens de dimensões com suporte | Tipos de dados com suporte |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 4 | INT8, UINT8 |
 | InputScaleTensor | Entrada | 4 | FLOAT32 |
@@ -235,4 +235,4 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_2_1` .
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cabeçalho** | directml. h |
+| **Cabeçalho** | directml.h |

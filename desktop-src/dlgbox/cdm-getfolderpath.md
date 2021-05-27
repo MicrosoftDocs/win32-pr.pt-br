@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_GETFOLDERPATH (Commdlg. h)
-description: Recupera o caminho da pasta ou do diretório aberto no momento para uma caixa de diálogo abrir no estilo do Explorer ou salvar como.
+title: CDM_GETFOLDERPATH mensagem (Commdlg.h)
+description: Recupera o caminho da pasta ou diretório aberto no momento para uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
 ms.assetid: 7c3d4598-b45d-46c1-ad0d-cb0ecd20b3eb
 keywords:
-- Caixas de diálogo de CDM_GETFOLDERPATH mensagem
+- CDM_GETFOLDERPATH caixa de diálogo de mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd6a824892b1a3a31339e36e6a783bb00c08534
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: d96b8d25714dc3f8bdcf016ac1fd69b2af2414f0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590933"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550001"
 ---
-# <a name="cdm_getfolderpath-message"></a>\_Mensagem GETFOLDERPATH CDM
+# <a name="cdm_getfolderpath-message"></a>Mensagem \_ GETFOLDERPATH do CDM
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Recupera o caminho da pasta ou do diretório aberto no momento para uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** . A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
+Recupera o caminho da pasta ou diretório aberto no  momento para uma caixa de diálogo Abrir ou Salvar **como** no estilo Explorer. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -43,7 +43,7 @@ Recupera o caminho da pasta ou do diretório aberto no momento para uma caixa de
 *wParam* 
 </dt> <dd>
 
-O tamanho, em caracteres, do buffer de *lParam* .
+O tamanho, em caracteres, do buffer *lParam.*
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Um ponteiro para o buffer que recebe o caminho.
 
 ## <a name="return-value"></a>Retornar valor
 
-Se a mensagem tiver sucesso, o valor de retorno será o tamanho, em caracteres, da cadeia de caracteres do caminho, incluindo o caractere nulo de terminação. Esse é o número de bytes ou caracteres copiados para o buffer ou o tamanho de buffer necessário se o buffer for muito pequeno.
+Se a mensagem for bem-sucedida, o valor de retorno será o tamanho, em caracteres, da cadeia de caracteres de caminho, incluindo o caractere nulo de terminação. Esse é o número de bytes ou caracteres copiados para o buffer ou o tamanho do buffer necessário se o buffer for muito pequeno.
 
 Se ocorrer um erro, o valor de retorno será menor que zero.
 
@@ -76,7 +76,7 @@ int CommDlg_OpenSave_GetFolderPath(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
 
 
 
@@ -87,20 +87,18 @@ int CommDlg_OpenSave_GetFolderPath(hwnd, lparam, wparam);
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

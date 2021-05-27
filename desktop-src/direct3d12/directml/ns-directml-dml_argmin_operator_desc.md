@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ARGMIN_OPERATOR_DESC
 title: DML_ARGMIN_OPERATOR_DESC
-description: Gera os índices dos elementos com valor mínimo dentro de uma ou mais dimensões do tensor de entrada.
+description: Saída dos índices dos elementos com valor mínimo dentro de uma ou mais dimensões do tensor de entrada.
 helpviewer_keywords:
 - DML_ARGMIN_OPERATOR_DESC
 - DML_ARGMIN_OPERATOR_DESC structure
@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMIN_OPERATOR_DESC
-ms.openlocfilehash: 2e12a81593504a4eb7a0917e545bfa20c70647ff
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: da270ea5354e361067335ba1c789efe18310437a
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804081"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550471"
 ---
-# <a name="dml_argmin_operator_desc-structure-directmlh"></a>Estrutura de DML_ARGMIN_OPERATOR_DESC (directml. h)
+# <a name="dml_argmin_operator_desc-structure-directmlh"></a>DML_ARGMIN_OPERATOR_DESC estrutura (directml.h)
 
-Gera os índices dos elementos com valor mínimo dentro de uma ou mais dimensões do tensor de entrada.
+Saída dos índices dos elementos com valor mínimo dentro de uma ou mais dimensões do tensor de entrada.
 
-Cada elemento de saída é o resultado da aplicação de uma redução de *argmin* em um subconjunto do tensor de entrada. A função *argmin* gera o índice do elemento com valor mínimo dentro de um conjunto de elementos Input. Os elementos de entrada envolvidos em cada redução são determinados pelos eixos de entrada fornecidos. Da mesma forma, cada índice de saída é relativo aos eixos de entrada fornecidos. Se todos os eixos de entrada forem especificados, o operador aplicará uma única redução de *argmin* e produzirá um único elemento de saída.
+Cada elemento de saída é o resultado da aplicação de uma *redução de argmin* em um subconjunto do tensor de entrada. A *função argmin* saída o índice do elemento de valor mínimo dentro de um conjunto de elementos de entrada. Os elementos de entrada envolvidos em cada redução são determinados pelos eixos de entrada fornecidos. Da mesma forma, cada índice de saída é em relação aos eixos de entrada fornecidos. Se todos os eixos de entrada são especificados, o operador aplica uma única redução *de argmin* e produz um único elemento de saída.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível autônomo directML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1.4 e posterior). Consulte também [Histórico de versão do DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -79,26 +79,26 @@ struct DML_ARGMIN_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-O tensor do qual ler.
+O tensor do o que ler.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-O tensor para gravar os resultados. Cada elemento de saída é o resultado de uma redução de *argmin* em um subconjunto de elementos do *InputTensor*.
+O tensor no que gravar os resultados. Cada elemento de saída é o resultado de uma *redução de argmin* em um subconjunto de elementos do *InputTensor*.
 
-- *DimensionCount* deve corresponder a *InputTensor. DimensionCount* (a classificação da entrada tensor é preservada).
-- Os *tamanhos* devem corresponder a *InputTensor. Sizes*, exceto as dimensões incluídas nos *eixos* reduzidos, que devem ser de tamanho 1.
+- *DimensionCount* deve corresponder *a InputTensor.DimensionCount* (a classificação do tensor de entrada é preservada).
+- *Os* tamanhos *devem corresponder a InputTensor.Sizes,* exceto para dimensões incluídas nos *eixos reduzidos,* que devem ser de tamanho 1.
 
 `AxisCount`
 
-Tipo: **[uint](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
-O número de eixos a serem reduzidos. Este campo determina o tamanho da matriz de *eixos* .
+O número de eixos a reduzir. Esse campo determina o tamanho da matriz *Eixos.*
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [uint](../../winprog/windows-data-types.md) \***
 
 Os eixos ao longo do qual reduzir. Os valores devem estar no intervalo `[0, InputTensor.DimensionCount - 1]` .
 
@@ -171,7 +171,7 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_0` .
 *InputTensor* e *OutputTensor* devem ter o mesmo *DimensionCount*.
 
 ## <a name="tensor-support"></a>Suporte do tensor
-| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+| Tensor | Tipo | Contagens de dimensões com suporte | Tipos de dados com suporte |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 | OutputTensor | Saída | 1 a 8 | INT64, INT32, UINT64, UINT32 |
@@ -179,4 +179,4 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_0` .
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cabeçalho** | directml. h |
+| **Cabeçalho** | directml.h |

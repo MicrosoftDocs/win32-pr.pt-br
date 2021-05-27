@@ -6,12 +6,12 @@ keywords:
 - Direct2D, exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4219d5b10a6a46659fc0c13ac091a2f3ab01b2c
-ms.sourcegitcommit: 6f905c836d3fd04934fb3e5f1a56b4a421f7596f
+ms.openlocfilehash: 197a0e0197039abc0fe0f725ad367b25d146c2fe
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "103917055"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548691"
 ---
 # <a name="direct2d-samples"></a>Exemplos de Direct2D
 
@@ -27,7 +27,7 @@ Os exemplos a seguir demonstram a API Direct2D.
 
 ## <a name="windows-8-and-microsoft-visual-studio-2013-samples"></a>Exemplos do Windows 8 e Microsoft Visual Studio 2013
 
-| | |
+| Amostra | Descrição |
 |-|-|
 | [Exemplo de modos de efeito composto Direct2D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct2D%20basic%20image%20effects%20sample) | Este exemplo mostra a ampla variedade de modos compostos e de mistura disponíveis em Direct2D. |
 | [Exemplo de efeitos de imagem básica do Direct2D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct2D%20basic%20image%20effects%20sample) | Este exemplo mostra como carregar uma imagem, aplicar o efeito de desfoque gaussiano a ela e, em seguida, exibi-la em um Windows:: UI:: Core:: CoreWindow. |

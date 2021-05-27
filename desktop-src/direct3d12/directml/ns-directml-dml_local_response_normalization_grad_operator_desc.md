@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
 title: DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
-description: Computa gradientes de repropagação para a [normalização de resposta local](/windows/win32/api/directml/ns-directml-dml_local_response_normalization_operator_desc).
+description: Calcula gradientes de backpropagation para [normalização de resposta local.](/windows/win32/api/directml/ns-directml-dml_local_response_normalization_operator_desc)
 helpviewer_keywords:
 - DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
 - DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC structure
@@ -44,21 +44,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
-ms.openlocfilehash: eecf849a06ee8e99ac9c015ecd4568496120b2d9
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: e858b8ce20df4b1bf12ac9efe360941eb93c54d1
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804408"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550401"
 ---
-# <a name="dml_local_response_normalization_grad_operator_desc-directmlh"></a>DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC (directml. h)
+# <a name="dml_local_response_normalization_grad_operator_desc-directmlh"></a>DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC (directml.h)
 
-Computa gradientes de repropagação para a [normalização de resposta local](/windows/win32/api/directml/ns-directml-dml_local_response_normalization_operator_desc).
+Calcula gradientes de backpropagation para [normalização de resposta local.](/windows/win32/api/directml/ns-directml-dml_local_response_normalization_operator_desc)
 
-O tipo de dados e o tamanho de todos os dezenases devem ser iguais.
+O tipo de dados e o tamanho de todos os tensores devem ser os mesmos.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,5 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível autônomo directML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1.5 e posterior). Consulte também [Histórico de versão do DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -81,47 +81,47 @@ struct DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-O tensor que contém os dados de entrada. Os *tamanhos* deste tensor devem ser `{ BatchCount, ChannelCount, Height, Width }` .
+O tensor que contém os dados de entrada. Os tamanhos *desse* tensor devem ser `{ BatchCount, ChannelCount, Height, Width }` .
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-O gradiente de entrada tensor. Normalmente, isso é obtido a partir da saída de Propagation de uma camada anterior.
+O tensor de gradiente de entrada. Normalmente, isso é obtido da saída de backpropagation de uma camada anterior.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor de saída que contém os gradientes propagados.
+Um tensor de saída que contém os gradientes paxados.
 
 `CrossChannel`
 
-Tipo: **[bool](/windows/win32/winprog/windows-data-types)**
+Tipo: **[BOOL](../../winprog/windows-data-types.md)**
 
-**True** se a camada de LRN soma entre canais; **False** se a camada LRN soma entre dimensões espaciais.
+**TRUE** se a camada LRN for somado entre canais; **FALSE** se a camada LRN somar entre dimensões espaciais.
 
 `LocalSize`
 
-Tipo: **[uint](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
-O número máximo de elementos a serem somados por dimensão (a região local é recortada para que todos os elementos estejam dentro dos limites). Se *CrossChannel* for **true**, essa será a largura e a altura da região local. Se *CrossChannel* for **false**, esse será o número de elementos na região local. Esse valor deve ser pelo menos 1.
+O número máximo de elementos a somar por dimensão (a região local é recortada para que todos os elementos sejam dentro dos limites). Se *CrossChannel* for **TRUE,** essa será a largura e a altura da região local. Se *CrossChannel* for **FALSE,** esse será o número de elementos na região local. Esse valor deve ser pelo menos 1.
 
 `Alpha`
 
-Tipo: **[float](/windows/win32/winprog/windows-data-types)**
+Tipo: **[float](../../winprog/windows-data-types.md)**
 
 O valor do parâmetro de dimensionamento. É recomendável um valor de 0, 1 como padrão.
 
 `Beta`
 
-Tipo: **[float](/windows/win32/winprog/windows-data-types)**
+Tipo: **[float](../../winprog/windows-data-types.md)**
 
 O valor do expoente. É recomendável um valor de 0,75 como padrão.
 
 `Bias`
 
-Tipo: **[float](/windows/win32/winprog/windows-data-types)**
+Tipo: **[float](../../winprog/windows-data-types.md)**
 
 O valor de bias. Recomendamos um valor de 1 como padrão.
 
@@ -141,4 +141,4 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_1` .
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cabeçalho** | directml. h |
+| **Cabeçalho** | directml.h |

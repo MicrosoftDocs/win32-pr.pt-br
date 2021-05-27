@@ -1,33 +1,32 @@
 ---
-title: Estruturas auxiliares Direct2D
+title: Estruturas auxiliares do Direct2D
 description: O namespace D2D1 define as estruturas a seguir.
 ms.assetid: 98d06b6b-c662-4447-bce0-6ac3d30814e1
 keywords:
 - Namespace D2D1, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db8ba6fa1ce40dad3a7d0d604026000dfd798e60
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 02cf062e6e02252c51852837158705449eea4577
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105758655"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549631"
 ---
-# <a name="direct2d-helper-structures"></a>Estruturas auxiliares Direct2D
+# <a name="direct2d-helper-structures"></a>Estruturas auxiliares do Direct2D
 
 O namespace D2D1 define as estruturas a seguir.
 
 
 
-|                                                 |                                                                                                               |
+| Name                                            | Descrição                                                                                                   |
 |-------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Nome                                            | Descrição                                                                                                   |
-| [**TypeTraits<Type>**](/windows/win32/api/d2d1_1helper/ns-d2d1_1helper-typetraits) | Contém implementações de **Point**, **size** e **Rect** que armazenam seus dados usando o tipo especificado. |
+| [**TypeTraits<Type>**](/windows/win32/api/d2d1_1helper/ns-d2d1_1helper-typetraits) | Contém implementações de **Point,** **Size** e **Rect** que armazenam seus dados usando o tipo especificado. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMAX_OPERATOR_DESC
-ms.openlocfilehash: 0c466975ad3b88973f50bc06676f2197267c56a7
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 4c2852c3d301a12d318c5e3006b26830c6eaa6e1
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803553"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550491"
 ---
 # <a name="dml_argmax_operator_desc-structure-directmlh"></a>Estrutura de DML_ARGMAX_OPERATOR_DESC (directml. h)
 
@@ -92,21 +92,21 @@ O tensor para gravar os resultados. Cada elemento de saída é o resultado de um
 
 `AxisCount`
 
-Tipo: **[uint](/windows/win32/winprog/windows-data-types)**
+Tipo: **[uint](../../winprog/windows-data-types.md)**
 
 O número de eixos a serem reduzidos. Este campo determina o tamanho da matriz de *eixos* .
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [uint](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
-Os eixos ao longo do qual reduzir. Os valores devem estar no intervalo `[0, InputTensor.DimensionCount - 1]` .
+Os eixos ao longo dos quais reduzir. Os valores devem estar no intervalo `[0, InputTensor.DimensionCount - 1]` .
 
 `AxisDirection`
 
 Tipo: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**
 
-Determina qual índice deve ser selecionado quando vários elementos de entrada têm o mesmo valor.
+Determina qual índice selecionar quando vários elementos de entrada têm o mesmo valor.
 - **DML_AXIS_DIRECTION_INCREASING** retorna o índice do primeiro elemento com valor máximo (por exemplo, `argmax({3,2,1,2,3}) = 0` )
 - **DML_AXIS_DIRECTION_DECREASING** retorna o índice do último elemento com valor máximo (por exemplo, `argmax({3,2,1,2,3}) = 4` )
 
@@ -121,7 +121,7 @@ InputTensor: (Sizes:{3, 3}, DataType:FLOAT32)
  [2, 5, 2]]
 ```
 
-### <a name="example-1-applying-argmax-to-columns"></a>Exemplo 1. Aplicando *ARGMAX* a colunas
+### <a name="example-1-applying-argmax-to-columns"></a>Exemplo 1. Aplicando *argmax* a colunas
 
 ```
 AxisCount: 1
@@ -133,7 +133,7 @@ OutputTensor: (Sizes:{1, 3}, DataType:UINT32)
   1]] // argmax({3, 4, 2})
 ```
 
-### <a name="example-2-applying-argmax-to-rows"></a>Exemplo 2. Aplicando *ARGMAX* a linhas
+### <a name="example-2-applying-argmax-to-rows"></a>Exemplo 2. Aplicando *argmax* a linhas
 
 ```
 AxisCount: 1
@@ -145,7 +145,7 @@ OutputTensor: (Sizes:{3, 1}, DataType:UINT32)
  [1]] // argmax({2, 5, 2})
 ```
 
-### <a name="example-3-applying-argmax-to-all-axes-the-entire-tensor"></a>Exemplo 3. Aplicando *ARGMAX* a todos os eixos (toda a tensor)
+### <a name="example-3-applying-argmax-to-all-axes-the-entire-tensor"></a>Exemplo 3. Aplicando *argmax* a todos os eixos (o tensor inteiro)
 
 ```
 AxisCount: 2
@@ -156,20 +156,20 @@ OutputTensor: (Sizes:{1, 1}, DataType:UINT32)
 ```
 
 ## <a name="remarks"></a>Comentários
-Os tamanhos de tensor de saída devem ser iguais aos tamanhos de tensor de entrada, exceto para os eixos reduzidos, que devem ser 1.
+Os tamanhos do tensor de saída devem ser iguais aos tamanhos do tensor de entrada, exceto pelos eixos reduzidos, que devem ser 1.
 
-Quando *AxisDirection* é [DML_AXIS_DIRECTION_INCREASING](/windows/win32/api/directml/ne-directml-dml_axis_direction), essa API é equivalente a [DML_REDUCE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) com [DML_REDUCE_FUNCTION_ARGMAX](/windows/win32/api/directml/ne-directml-dml_reduce_function).
+Quando *AxisDirection é* [DML_AXIS_DIRECTION_INCREASING](/windows/win32/api/directml/ne-directml-dml_axis_direction), essa API é [equivalente a](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) DML_REDUCE_OPERATOR_DESC com [DML_REDUCE_FUNCTION_ARGMAX](/windows/win32/api/directml/ne-directml-dml_reduce_function).
 
-Um subconjunto dessa funcionalidade é exposto por meio do operador de [DML_REDUCE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) e tem suporte em níveis de recursos de DirectML anteriores.
+Um subconjunto dessa funcionalidade é exposto por meio [do operador DML_REDUCE_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) e tem suporte em níveis de recursos directML anteriores.
 
 ## <a name="availability"></a>Disponibilidade
 Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_0` .
 
-## <a name="tensor-constraints"></a>Restrições de tensor
+## <a name="tensor-constraints"></a>Restrições do Tensor
 *InputTensor* e *OutputTensor* devem ter o mesmo *DimensionCount*.
 
-## <a name="tensor-support"></a>Suporte do tensor
-| Tensor | Tipo | Contagens de dimensão com suporte | Tipos de dados com suporte |
+## <a name="tensor-support"></a>Suporte do Tensor
+| Tensor | Tipo | Contagens de dimensões com suporte | Tipos de dados com suporte |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Entrada | 1 a 8 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 | OutputTensor | Saída | 1 a 8 | INT64, INT32, UINT64, UINT32 |

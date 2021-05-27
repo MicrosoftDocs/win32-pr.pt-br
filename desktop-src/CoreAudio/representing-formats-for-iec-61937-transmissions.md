@@ -4,12 +4,12 @@ ms.assetid: 86f3396c-b32a-4d70-9f21-e38a745f78bf
 title: Representando formatos para transmissões IEC 61937
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0700329aafe7e7bc0e09b532c1ac29b9957ca905
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e0a607770a388a11978d0e4666b5046506b6698c
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755821"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549291"
 ---
 # <a name="representing-formats-for-iec-61937-transmissions"></a>Representando formatos para transmissões IEC 61937
 
@@ -23,17 +23,17 @@ Para representar um fluxo de áudio codificado a ser transmitido em uma interfac
 
 No Windows Vista e em sistemas operacionais Windows anteriores, um aplicativo pode inferir o nível de qualidade de um formato de áudio a partir do número de canais, do tamanho da amostra e da taxa de dados de um fluxo de áudio que usa o formato. Para um formato PCM, essas informações estão disponíveis nos membros **nChannels**, **nSamplesPerSec** e **nAvgBytesPerSec** da estrutura **WAVEFORMATEX** que especifica o formato. Para um formato não PCM, esses três membros foram commandeered para armazenar informações sobre os dados compactados no fluxo de áudio. Assim, a estrutura **WAVEFORMATEX** não tem informações sobre o número efetivo de canais, o tamanho da amostra e a taxa de dados do fluxo de áudio não PCM após o fluxo ser descompactado e reproduzido. Com base nas informações dessa estrutura, um usuário ou um aplicativo pode ter dificuldade em inferir o nível de qualidade do fluxo não PCM.
 
-O **WAVEFORMATEX** foi estendido para a estrutura **WAVEFORMATEXTENSIBLE** para fornecer as características do fluxo extra. No entanto, essa estrutura também não é adequada para descrever o fluxo de transmissões IEC 61937 porque ela pretendia representar um único conjunto de características e é usada para dados PCM não compactados de vários canais.
+O **WAVEFORMATEX** foi estendido para a estrutura **WAVEFORMATEXTENSIBLE** para fornecer as características do fluxo extra. No entanto, essa estrutura também não é adequada para descrever o fluxo para transmissões do IEC 61937, pois foi destinada a representar um único conjunto de características e usada para dados PCM de vários canais descompactados.
 
-No Windows 7, o sistema operacional resolve esse problema fornecendo suporte a uma nova estrutura, **WAVEFORMATEXTENSIBLE \_ IEC61937** , que estende a estrutura **WAVEFORMATEXTENSIBLE** para armazenar dois conjuntos de características de fluxo de áudio: o formato de áudio codificado antes da transmissão e das características do fluxo de áudio depois que ele é decodificado. A nova estrutura especifica explicitamente o número efetivo de canais, o tamanho da amostra e a taxa de dados de um formato não PCM. Com essas informações, um aplicativo pode inferir o nível de qualidade do fluxo não PCM depois de ser descompactado e reproduzido.
+No Windows 7, o sistema operacional resolve esse problema fornecendo suporte para uma nova estrutura, **WAVEFORMATEXTENSIBLE \_ IEC61937,** que estende a estrutura **WAVEFORMATEXTENSIBLE** para armazenar dois conjuntos de características de fluxo de áudio: o formato de áudio codificado antes da transmissão e as características do fluxo de áudio depois de decodificado. A nova estrutura especifica explicitamente o número efetivo de canais, o tamanho da amostra e a taxa de dados de um formato não PCM. Com essas informações, um aplicativo pode inferir o nível de qualidade do fluxo não PCM depois que ele é descompactado e tocado.
 
-A estrutura **WAVEFORMATEXTENSIBLE \_ IEC61937** é declarada no cabeçalho KsMedia. h incluído no SDK do Windows 7. O membro **FormatExt** é a estrutura **WAVEFORMATEXTENSIBLE** que armazena as características do fluxo a ser transmitido. O membro **Format** da estrutura **WAVEFORMATEXTENSIBLE** é a estrutura **WAVEFORMATEX** . O conteúdo desse **WAVEFORMATEX** e **WAVEFORMATEXTENSIBLE** indicam a um aplicativo se a estrutura pode ser interpretada como uma estrutura **WAVEFORMATEXTENSIBLE \_ IEC61937** . Para uma estrutura **WAVEFORMATEXTENSIBLE \_ IEC61937** :
+A **estrutura WAVEFORMATEXTENSIBLE \_ IEC61937** é declarada no header KsMedia.h incluído no SDK do Windows 7. O **membro FormatExt** é a **estrutura WAVEFORMATEXTENSIBLE** que armazena as características do fluxo a ser transmitido. O **membro** Format da estrutura **WAVEFORMATEXTENSIBLE** é a **estrutura WAVEFORMATEX.** O conteúdo desse **WAVEFORMATEX** e **WAVEFORMATEXTENSIBLE** indica a um aplicativo se a estrutura pode ser interpretada como uma estrutura **WAVEFORMATEXTENSIBLE \_ IEC61937.** Para uma **estrutura WAVEFORMATEXTENSIBLE \_ IEC61937:**
 
--   O membro **wFormatTag** de **WAVEFORMATEX** deve conter \_ formato Wave \_ extensível ( `FormatExt.Format.wFormatTag = WAVE_FORMAT_EXTENSIBLE` ).
+-   O **membro wFormatTag** de **WAVEFORMATEX** deve conter WAVE \_ FORMAT \_ EXTENSIBLE ( `FormatExt.Format.wFormatTag = WAVE_FORMAT_EXTENSIBLE` ).
 
--   O membro **Subformal** da estrutura **WAVEFORMATEXTENSIBLE** especifica o GUID do formato codificado a ser transmitido. Por exemplo, `FormatExt.SubFormat = KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_DIGITAL` indica o formato Dolby Digital Plus. Para obter os GUIDs com suporte, consulte GUIDs de subformato.
+-   O **membro SubFormat** da **estrutura WAVEFORMATEXTENSIBLE** especifica o GUID do formato codificado a ser transmitido. Por exemplo, `FormatExt.SubFormat = KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_DIGITAL` indica o formato Dolby Digital Plus. Para os GUIDs com suporte, consulte GUIDs de subformatação.
 
--   O tamanho indicado pelo membro **cbSize** de WAVEFORMATEX é de 34 bytes. (`FormatExt.Format.cbSize = 34`). O tamanho total de **WAVEFORMATEXTENSIBLE \_ IEC61937** é de 52 bytes.
+-   O tamanho indicado pelo **membro cbSize** do WAVEFORMATEX é de 34 bytes. (`FormatExt.Format.cbSize = 34`). O tamanho total de **WAVEFORMATEXTENSIBLE \_ IEC61937** é de 52 bytes.
 
 Os membros **dwEncodedSamplesPerSec**, **dwEncodedChannelCount** e **dwAverageBytesPerSec** de **WAVEFORMATEXTENSIBLE \_ IEC61937** descrevem a taxa de amostragem, o número de canais e a taxa de bits em bytes do fluxo do fluxo de áudio depois que ele é decodificado.
 
@@ -45,18 +45,21 @@ Os GUIDs para os formatos de áudio compactados que estão disponíveis como for
 
 
 
-| Tipo CEA 861 | GUID do subformato                                                                                                          | Descrição                                  |
+| Tipo CEA 861 | GUID do subformato                                                                                                          | Description                                  |
 |--------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | 0x00         |                                                                                                                         | Consulte o fluxo.                         |
 | 0x01         | 00000000-0000-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ WAVEFORMATEX<br/>                          | PCM IEC 60958                                |
 | 0x02         | 00000092-0000-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ digital<br/>              | AC-3                                         |
 | 0x03         | 00000003-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ MPEG1<br/>                       | MPEG-1 (camada 1 & 2)                         |
 | 0x04         | 00000004-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ MPEG3<br/>                       | MPEG-3 (camada 3)                             |
-| 0x05         | 00000005-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ MPEG2 <br/>                      | MPEG-2 (multicanal)                         |
-| 0x06         | 00000006-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ AAC<br/>                         | Codificação avançada de áudio (MPEG-2/4 AAC em ADTS) |
-| 0x07         | 00000008-0000-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dts<br/>                         | DTS                                          |
-| 0x0A         | 0000000a-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ digital \_ Plus<br/>        | Dolby Digital Plus                           |
-| 0x0A         | 0000010a-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ digital \_ Plus \_ Atmos<br/> | Dolby Atmos codificado com Dolby Digital Plus  |
+| 0x05         | 000000005-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ MPEG2 <br/>                      | MPEG-2(multicanal)                         |
+| 0x06         | 00000006-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ AAC<br/>                         | Codificação de áudio avançada (MPEG-2/4 AAC no ADTS) |
+| 0x07         | 00000008-0000-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DTS<br/>                         | DTS                                          |
+| 0x0a         | 0000000a-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ DOLBY \_ DIGITAL \_ PLUS<br/>        | Dolby Digital Plus                           |
+| 0x0a         | 0000010a-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ DOLBY \_ DIGITAL PLUS \_ \_ ATMOS<br/> | Dolby Atmos codificado com Dolby Digital Plus  |
+| 0x0b         | 0000000b-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DTS \_ HD<br/> | DTS HD  |
+| 0x0b         | 0000010b-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DTSX \_ E1<br/> | DTS:X E1  |
+| 0x0b         | 0000030b-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ dtsx \_ E2<br/> | DTS: X E2  |
 | 0x0f         |                                                                                                                         | Não usado reservado                              |
 
 
@@ -67,27 +70,27 @@ Os GUIDs dos formatos de áudio compactados que são transmitidos em pacotes de 
 
 
 
-| Tipo CEA 861 | GUID do subformato                                                                                           | Descrição                                                                                                                     |
+| Tipo CEA 861 | GUID do subformato                                                                                           | Description                                                                                                                     |
 |--------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | 0x0b         | 0000000b-0cea-0010-8000-00aa00389b71<br/> \_SUBTIPO KSDATAFORMAT \_ IEC61937 \_ DTS \_ HD<br/>      | DTS-HD (96Khz de 24 bits)                                                                                                          |
 | 0x0c         | 0000000c-0cea-0010-8000-00aa00389b71<br/> \_SUBTIPO KSDATAFORMAT \_ IEC61937 \_ Dolby \_ MLP<br/>   | Dolby-esteira 1,0:<br/> Dolby TrueHD (MLP – embalagem do meridiano sem perdas) – 192KHz de 24 bits/até 18 Mbps, 8 canais) <br/> |
 | 0x0c         | 0000010c-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ MAT20<br/> | Dolby-esteira 2,0: <br/> Dolby TrueHD – 192KHz de 24 bits/até 18 Mbps, 8 canais ou LPCM até 24 Mbps. <br/>           |
-| 0x0c         | 0000030c-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ MAT21<br/> | Dolby-esteira 2,1: <br/> Dolby TrueHD – 192KHz de 24 bits/até 18 Mbps, 8 canais ou LPCM até 24 Mbps. <br/>           |
-| 0x0e         | 00000164-0000-0010-8000-00aa00389b71<br/> \_SUBTIPO KSDATAFORMAT \_ IEC61937 \_ WMA \_ pro<br/>     | Windows Media Audio (WMA) pro                                                                                                   |
+| 0x0c         | 0000030c-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ DOLBY \_ MAT21<br/> | Dolby MAT 2.1: <br/> Dolby TrueHD – 192KHz de 24 bits/até 18 Mbps, 8 canais ou LPCM de até 24 Mbps. <br/>           |
+| 0x0e         | 00000164-0000-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ WMA \_ PRO<br/>     | WMA (Windows Media Audio) Pro                                                                                                   |
 
 
 
  
 
-O driver de classe de áudio HD fornecido pela Microsoft dá suporte aos formatos PCM, AC3, DTS, AAC, Dolby Digital Plus, WMA pro, com passe-partout (MLP). Os GUIDs dos formatos de áudio compactados que não têm suporte do driver de classe de HD Audio e podem ser implementados por soluções de terceiros são listados na tabela a seguir.
+O driver de classe HD Audio fornecido pela Microsoft dá suporte a formatos PCM, AC3, DTS, AAC, Dolby Digital Plus, WMA Pro, MAT(MLP). Os GUIDs para os formatos de áudio compactados que não são suportados pelo driver de classe de áudio HD e podem ser implementados por soluções de terceiros são listados na tabela a seguir.
 
 
 
-| Tipo CEA 861 | GUID do subformato                                                                                              | Descrição                                                                    |
+| Tipo CEA 861 | GUID de subformatação                                                                                              | Description                                                                    |
 |--------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| 0x08         | 00000008-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ ATRAC<br/>           | Codificação acústica de transformação adaptável (ATRAC)                                     |
-| 0x09         | 00000009-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ áudio de um \_ bit \_<br/> | One-Bit áudio                                                                  |
-| 0x0D         | 0000000d-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ subtipo \_ IEC61937 \_ DST<br/>             | DST (Direct Stream Transport) – DSD compactado sem perdas (Direct Stream digital). |
+| 0x08         | 00000008-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ ATRAC<br/>           | ATRAC (Codificação Acústico de Transformação Adaptável)                                     |
+| 0x09         | 00000009-0cea-0010-8000-00aa00389b71<br/> SUBTIPO KSDATAFORMAT \_ \_ IEC61937 \_ ÁUDIO DE UM \_ \_ BIT<br/> | One-Bit áudio                                                                  |
+| 0x0d         | 0000000d-0cea-0010-8000-00aa00389b71<br/> KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DST<br/>             | DST (Direct Stream Transport) – DSD compactado sem perdas (Direct Stream digital). |
 
 
 
@@ -206,11 +209,11 @@ O conteúdo de áudio do WMA pro pode ser codificado em um dos quatro perfis lis
 
 
 
-| Perfil | Propriedade-valor                                                                                                                                                                                                                                                      | Descrição                                                                                                                         |
+| Perfil | Propriedade-valor                                                                                                                                                                                                                                                      | Description                                                                                                                         |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| M0      | Taxa de bits máxima – 192000 bps <br/> Taxa de amostragem máxima – 48 KHz <br/> Contagem máxima de canais – 2 <br/> Tamanho máximo do buffer – 600 \* 1024 bits <br/> Máximo de amostras por quadro – 2048 <br/> Máximo de bits por quadro-655536<br/>   | Recomendado para música e streaming over-the-Air.<br/> A taxa máxima de bits em um quadro de áudio é de 1536000 bps.<br/>          |
-| M1      | Taxa de bits máxima – 385000 bps <br/> Taxa de amostragem máxima – 48 KHz <br/> Contagem máxima de canais – 6 <br/> Tamanho máximo do buffer – 600 \* 1024 bits <br/> Máximo de amostras por quadro – 4096 <br/> Máximo de bits por quadro-131072<br/>   | Recomendado para filmes de definição padrão Surround-Sound.<br/> A taxa máxima de bits em um quadro de áudio é de 1536000 bps.<br/> |
-| M2      | Taxa de bits máxima – 769000 bps <br/> Taxa de amostragem máxima – 96 KHz <br/> Contagem máxima de canais – 6 <br/> Tamanho máximo do buffer – 1200 \* 1024 bits <br/> Máximo de amostras por quadro – 4096 <br/> Máximo de bits por quadro-131072<br/>  | Recomendado para filmes de alta definição de som surround.<br/> A taxa máxima em um quadro de áudio é de 3072000 bps.<br/>         |
+| M0      | Taxa de bits máxima – 192000 bps <br/> Taxa de amostragem máxima – 48 KHz <br/> Contagem máxima de canais – 2 <br/> Tamanho máximo do buffer – 600 \* 1024 bits <br/> Máximo de amostras por quadro – 2048 <br/> Máximo de bits por quadro – 655536<br/>   | Recomendado para música e streaming over-the-air.<br/> A taxa máxima de bits em um quadro de áudio é de 1536000 bps.<br/>          |
+| M1      | Taxa de bits máxima – 385.000 bps <br/> Taxa máxima de amostragem – 48 KHz <br/> Contagem máxima de canais – 6 <br/> Tamanho máximo do buffer – 600 \* 1024 bits <br/> Máximo de amostras por quadro – 4096 <br/> Máximo de bits por quadro – 131072<br/>   | Recomendado para filmes de definição padrão de som ao redor.<br/> A taxa máxima de bits em um quadro de áudio é de 1536000 bps.<br/> |
+| M2      | Taxa de bits máxima – 769000 bps <br/> Taxa máxima de amostragem – 96 KHz <br/> Contagem máxima de canais – 6 <br/> Tamanho máximo do buffer – 1200 \* 1024 bits <br/> Máximo de amostras por quadro – 4096 <br/> Máximo de bits por quadro – 131072<br/>  | Recomendado para filmes de alta definição de som surround.<br/> A taxa máxima em um quadro de áudio é de 3072000 bps.<br/>         |
 | M3      | Taxa de bits máxima – 3 milhões bps <br/> Taxa de amostragem máxima – 96 KHz <br/> Contagem máxima de canais – 8 <br/> Tamanho máximo do buffer – 2400 \* 1024 bits <br/> Máximo de amostras por quadro – 4096 <br/> Máximo de bits por quadro-131072<br/> | Recomendado para o teatro digital.<br/> A taxa máxima em um quadro de áudio é de 3072000 bps.<br/>                               |
 
 

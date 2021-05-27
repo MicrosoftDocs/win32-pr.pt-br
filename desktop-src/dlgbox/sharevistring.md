@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79535b66cff62ad0f9d3fd298fdd76bfc9123a3d
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 043bed9edd08269e4e030482cbd44debea3a3695
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590663"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548761"
 ---
 # <a name="sharevistring-message"></a>Mensagem SHAREVISTRING
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Uma caixa de diálogo **abrir** ou **salvar como** envia a mensagem registrada **SHAREVISTRING** para o procedimento de gancho, [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc), se ocorrer uma violação de compartilhamento para o arquivo selecionado quando o usuário clicar no botão **OK** .
 
@@ -60,7 +60,7 @@ O procedimento de gancho deve retornar um dos valores a seguir para indicar como
 
 
 
-| Código/valor de retorno                                                                                                                                           | Descrição                                                                                                                |
+| Código/valor de retorno                                                                                                                                           | Description                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**OFN \_ SHAREFALLTHROUGH**</dt> <dt>2</dt> </dl> | Aceitar o nome do arquivo<br/>                                                                                            |
 | <dl> <dt>**OFN \_ SHARENOWARN**</dt> <dt>1</dt> </dl>      | Rejeite o nome do arquivo, mas não avise o usuário. O aplicativo é responsável por exibir uma mensagem de aviso.<br/> |
@@ -76,7 +76,7 @@ O procedimento de gancho deve especificar a constante **SHAREVISTRING** em uma c
 
 A caixa de diálogo enviará a mensagem registrada **SHAREVISTRING** somente se você não tiver especificado o sinalizador **OFN \_ SHAREAWARE** no membro **flags** da estrutura [**da OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) quando criou a caixa de diálogo.
 
-Se o procedimento de gancho retornar um valor indefinido, a caixa de diálogo responderá como se **OFN \_ SHAREWARN** fosse retornado.
+Se o procedimento de gancho retornar um valor indefinido, a caixa de diálogo responderá como se **OFN \_ SHAREWARN** tivesse sido retornado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Se o procedimento de gancho retornar um valor indefinido, a caixa de diálogo re
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **SHAREVISTRINGW** (Unicode) e **SHAREVISTRINGA** (ANSI)<br/>                                    |
 
 
@@ -98,20 +98,18 @@ Se o procedimento de gancho retornar um valor indefinido, a caixa de diálogo re
 **Referência**
 </dt> <dt>
 
-[**\_SHAREVIOLATION CDN**](cdn-shareviolation.md)
+[**COMPARTILHAMENTO \_ DE CDNVIOLATION**](cdn-shareviolation.md)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-[**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)
+[**Registerwindowmessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

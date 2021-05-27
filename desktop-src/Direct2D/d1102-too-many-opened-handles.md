@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: e3c12c2e2a7b47535e830c6ed65a828a16672bbf
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2d59e110aece56a31af71e75e9a8eca0bb008961
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638419"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548681"
 ---
 # <a name="d1102-too-many-opened-handles"></a>D1102: muitos identificadores abertos
 
@@ -35,21 +35,21 @@ O número de interfaces não lançadas alocadas por essa DLL.
 
 </dd> </dl> 
 
-|             |         |
+| &nbsp;      |  &nbsp; |
 |-------------|---------|
 | Nível de erro | Aviso |
 
 
 
- 
+ 
 
 ## <a name="possible-causes"></a>Possíveis causas
 
 Um grande número de recursos foi criado. Embora Direct2D não tenha limite superior no número de recursos disponíveis (exceto memória), a camada de depuração emite essa mensagem informativa quando encontra 1001 objetos dinâmicos, 2001 objetos dinâmicos ou 3001 objetos dinâmicos etc, porque isso pode indicar um vazamento no aplicativo.
 
- 
+ 
 
- 
+ 
 
 
 

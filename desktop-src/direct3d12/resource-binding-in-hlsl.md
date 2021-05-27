@@ -1,37 +1,37 @@
 ---
 title: Associação de recursos em HLSL
-description: Este tópico descreve alguns recursos específicos do usando o modelo de sombreador HLSL (sombreamento de alto nível) 5,1 com o Direct3D 12.
+description: Este tópico descreve alguns recursos específicos do uso do modelo de sombreador HLSL (High Level Shader Language) 5.1 com o Direct3D 12.
 ms.assetid: 3CD4BDAD-8AE3-4DE0-B3F8-9C9F9E83BBE9
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 08/27/2019
-ms.openlocfilehash: 01039550f07de57fb7b2f1e815bced02e549c741
-ms.sourcegitcommit: 60120d10c957815d79af566c72e5f4bcfaca4025
+ms.openlocfilehash: 711ccdee71ff916445be68d03b84b7621aa04cf3
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104837484"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550381"
 ---
 # <a name="resource-binding-in-hlsl"></a>Associação de recursos em HLSL
 
-Este tópico descreve alguns recursos específicos do usando o [modelo de sombreador](/windows/desktop/direct3dhlsl/shader-model-5-1) HLSL (sombreamento de alto nível) 5,1 com o Direct3D 12. Todo o hardware do Direct3D 12 dá suporte ao modelo de sombreador 5,1, portanto, o suporte para esse modelo não depende do nível de recurso de hardware.
+Este tópico descreve alguns recursos específicos do uso do modelo de sombreador HLSL (High Level Shader Language) [5.1](/windows/desktop/direct3dhlsl/shader-model-5-1) com o Direct3D 12. Todo o hardware do Direct3D 12 dá suporte ao Modelo de Sombreador 5.1, portanto, o suporte para esse modelo não depende de qual é o nível do recurso de hardware.
 
 ## <a name="resource-types-and-arrays"></a>Tipos de recursos e matrizes
 
-A sintaxe de recurso do Shader Model 5 (SM 5.0) usa a `register` palavra-chave para retransmitir informações importantes sobre o recurso para o compilador HLSL. Por exemplo, a instrução a seguir declara uma matriz de quatro texturas associadas a Slots T3, T4, T5 e T6. T3 é o único slot de registro que aparece na instrução, simplesmente sendo o primeiro na matriz de quatro.
+A sintaxe de recurso do Modelo de Sombreador 5 (SM5.0) usa a palavra-chave para retransmitir informações importantes sobre o recurso para o `register` compilador HLSL. Por exemplo, a instrução a seguir declara uma matriz de quatro texturas vinculadas aos slots t3, t4, t5 e t6. t3 é o único slot de registro que aparece na instrução , simplesmente sendo o primeiro na matriz de quatro.
 
 ``` syntax
 Texture2D<float4> tex1[4] : register(t3)
 ```
 
-A sintaxe de recurso do Shader Model 5,1 (SM 5.1) no HLSL é baseada na sintaxe de recurso de registro existente, para permitir portabilidade mais fácil. Os recursos do Direct3D 12 no HLSL estão associados a registros virtuais em espaços de registro lógico:
+A sintaxe de recurso do Modelo de Sombreador 5.1 (SM5.1) no HLSL é baseada na sintaxe de recurso de registro existente, para permitir a portação mais fácil. Os recursos do Direct3D 12 no HLSL estão vinculados a registros virtuais em espaços de registro lógicos:
 
--   t – para exibições de recurso do sombreador (SRV)
--   s – para exemplos
--   u – para exibições de acesso não ordenado (UAV)
--   b – para exibições de buffer de constantes (CBV)
+-   t – para SRV (exibições de recurso de sombreador)
+-   s – para amostras
+-   u – para exibições de acesso não organizado (UAV)
+-   b – para exibições de buffer constante (CBV)
 
-A assinatura raiz que faz referência ao sombreador deve ser compatível com os slots de registro declarados. Por exemplo, a seguinte parte de uma assinatura raiz seria compatível com o uso de Slots de textura T3 por meio de T6, pois descreve uma tabela de descritores com slots T0 a T98.
+A assinatura raiz que referencia o sombreador deve ser compatível com os slots de registro declarados. Por exemplo, a parte a seguir de uma assinatura raiz seria compatível com o uso de slots de textura t3 a t6, pois descreve uma tabela de descritor com slots t0 a t98.
 
 ``` syntax
 DescriptorTable( CBV(b1), SRV(t0,numDescriptors=99), CBV(b2) )
@@ -45,7 +45,7 @@ Texture2D<float4> tex2[4] : register(t10)
 Texture2D<float4> tex3[7][5][3] : register(t20, space1)
 ```
 
-O SM 5.1 usa os mesmos tipos de recursos e tipos de elementos que o SM 5.0 faz. Os limites de declaração SM 5.1 são mais flexíveis e restritos apenas pelos limites de tempo de execução/hardware. A `space` palavra-chave especifica a qual espaço de registro lógico a variável declarada está associada. Se a `space` palavra-chave for omitida, o índice de espaço padrão 0 será atribuído implicitamente ao intervalo (de modo que o `tex2` intervalo acima resida `space0` ). `register(t3,  space0)` Nunca entrará em conflito com `register(t3,  space1)` , nem com nenhuma matriz em outro espaço que possa incluir T3.
+O SM5.1 usa os mesmos tipos de recursos e tipos de elemento que o SM5.0. Os limites de declaração SM5.1 são mais flexíveis e restritos somente pelos limites de runtime/hardware. A `space` palavra-chave especifica a qual espaço de registro lógico a variável declarada está associada. Se a `space` palavra-chave for omitida, o índice de espaço padrão 0 será atribuído implicitamente ao intervalo (de modo que o `tex2` intervalo acima resida `space0` ). `register(t3,  space0)` Nunca entrará em conflito com `register(t3,  space1)` , nem com nenhuma matriz em outro espaço que possa incluir T3.
 
 Um recurso de matriz pode ter um tamanho não associado, que é declarado especificando a primeira dimensão como vazia ou 0:
 
@@ -90,7 +90,7 @@ Em alguns hardwares, o uso desse qualificador gera código adicional para impor 
 
 ## <a name="descriptor-arrays-and-texture-arrays"></a>Matrizes de descritores e matrizes de textura
 
-As matrizes de textura estão disponíveis desde o DirectX 10. As matrizes de textura exigem um descritor, no entanto, todas as fatias de matriz devem compartilhar o mesmo formato, largura, altura e contagem de MIP. Além disso, a matriz deve ocupar um intervalo contíguo no espaço de endereço virtual. O código a seguir mostra um exemplo de como acessar uma matriz de textura de um sombreador.
+As matrizes de textura estão disponíveis desde o DirectX 10. As matrizes de textura exigem um descritor, no entanto, todas as fatias de matriz devem compartilhar o mesmo formato, largura, altura e contagem de mip. Além disso, a matriz deve ocupar um intervalo contíguo no espaço de endereço virtual. O código a seguir mostra um exemplo de acesso a uma matriz de textura de um sombreador.
 
 ``` syntax
 Texture2DArray<float4> myTex2DArray : register(t0); // t0
@@ -108,15 +108,15 @@ float2 myCoord(1.0f, 1.4f);
 color = myArrayOfTex2D[2].Sample(mySampler,myCoord); // 2 is index
 ```
 
-Observe que o uso inadequado de um float para o índice de matriz é substituído por `myArrayOfTex2D[2]` . Além disso, as matrizes de descritores oferecem mais flexibilidade com as dimensões. O tipo, `Texture2D` é este exemplo, não pode variar, mas o formato, a largura, a altura e a contagem MIP podem variar com cada descritor.
+Observe que o uso estranho de um float para o índice de matriz é substituído por `myArrayOfTex2D[2]` . As matrizes de descritor também oferecem mais flexibilidade com as dimensões. O tipo , é este exemplo, não pode variar, mas o formato, a largura, a altura e a contagem de mip podem variar com `Texture2D` cada descritor.
 
-É legítimo ter uma matriz de descritores de matrizes de textura:
+É legítimo ter uma matriz de descritor de matrizes de textura:
 
 ``` syntax
 Texture2DArray<float4> myArrayOfTex2DArrays[2] : register(t0);
 ```
 
-Não é legítimo declarar uma matriz de estruturas, cada estrutura contendo descritores, por exemplo, o código a seguir não tem suporte.
+Não é legítimo declarar uma matriz de estruturas, cada estrutura que contém descritores, por exemplo, não há suporte para o código a seguir.
 
 ``` syntax
 struct myStruct {
@@ -127,7 +127,7 @@ struct myStruct {
 myStruct foo[10000] : register(....);
 ```
 
-Isso teria permitido o layout de memória **abcabcabc..**., mas é uma limitação de idioma e não tem suporte. Um método com suporte para fazer isso seria o seguinte, embora o layout de memória nesse caso seja **AAA... bbb... CCC...**
+Isso teria permitido o layout de memória **abcabcabc....**, mas é uma limitação de linguagem e não tem suporte. Um método com suporte para fazer isso seria o seguinte, embora o layout de memória nesse caso seja **aaa... Bbb... ccc...**.
 
 ``` syntax
 Texture2D                     a[10000] : register(t0);
@@ -135,11 +135,11 @@ Texture2D                     b[10000] : register(t10000);
 ConstantBuffer<myConstants>   c[10000] : register(b0);
 ```
 
-Para obter o layout **abcabcabc...** Memory, use uma tabela de descritor sem usar a `myStruct` estrutura.
+Para obter o layout **de memória abcabcabc....** , use uma tabela de descritor sem usar a `myStruct` estrutura .
 
 ## <a name="resource-aliasing"></a>Alias de recurso
 
-Os intervalos de recursos especificados nos sombreadores HLSL são intervalos lógicos. Eles são associados a intervalos concretos de heap em tempo de execução por meio do mecanismo de assinatura raiz. Normalmente, um intervalo lógico é mapeado para um intervalo de heap que não se sobrepõe a outros intervalos de heap. No entanto, o mecanismo de assinatura raiz torna possível o alias (sobreposição) de intervalos de heap de tipos compatíveis. Por exemplo, `tex2` e os `tex3` intervalos do exemplo acima podem ser mapeados para o mesmo intervalo de heap (ou sobreposição), que tem o efeito de texturas de alias no programa HLSL. Se tal alias for desejado, o sombreador deverá ser compilado com \_ \_ a opção de alias d3d10 Shader Resources \_ \_ , que é definida usando a opção */res de \_ \_ alias de maio* para a ferramenta de compilador de [efeito](/windows/win32/direct3dtools/fxc) (FXC). A opção faz com que o compilador produza o código correto impedindo determinadas otimizações de carga/armazenamento sob a suposição de que os recursos podem ser alias.
+Os intervalos de recursos especificados nos sombreadores HLSL são intervalos lógicos. Eles são vinculados a intervalos de heap concretos em runtime por meio do mecanismo de assinatura raiz. Normalmente, um intervalo lógico é mapeado para um intervalo de heap que não se sobrepõe a outros intervalos de heap. No entanto, o mecanismo de assinatura raiz possibilita o alias (sobreposição) de intervalos de heap de tipos compatíveis. Por exemplo, e os intervalos do exemplo acima podem ser mapeados para o mesmo intervalo de heap (ou sobreposição), que tem o efeito de suavizar texturas no programa `tex2` `tex3` HLSL. Se tal alias for desejado, o sombreador deverá ser compilado com \_ \_ a opção de alias d3d10 Shader Resources \_ \_ , que é definida usando a opção */res de \_ \_ alias de maio* para a ferramenta de compilador de [efeito](../direct3dtools/fxc.md) (FXC). A opção faz com que o compilador produza o código correto impedindo determinadas otimizações de carga/armazenamento sob a suposição de que os recursos podem ser alias.
 
 ## <a name="divergence-and-derivatives"></a>Divergência e derivações
 
@@ -173,7 +173,7 @@ myCB1[i][j].a.xyzw
 myCB2.b.yy
 ```
 
-Os campos ' a ' e ' b ' não se tornam variáveis globais, mas, em vez disso, devem ser tratados como campos. Para compatibilidade com versões anteriores, o SM 5.1 dá suporte ao conceito antigo de CBuffer para cbuffers escalar. A instrução a seguir faz com que ' a ' e ' b ' as variáveis globais somente leitura como no SM 5.0. No entanto, esse CBuffer de estilo antigo não pode ser indexável.
+Os campos ' a ' e ' b ' não se tornam variáveis globais, mas, em vez disso, devem ser tratados como campos. Para compatibilidade com versões anteriores, o SM 5.1 dá suporte ao conceito antigo de CBuffer para cbuffers escalar. A instrução a seguir torna 'a' e 'b' variáveis globais somente leitura, como no SM5.0. No entanto, um cbuffer de estilo antigo não pode ser indexável.
 
 ``` syntax
 cbuffer : register(b1)
@@ -183,13 +183,13 @@ cbuffer : register(b1)
 };
 ```
 
-Atualmente, o compilador do sombreador dá suporte `ConstantBuffer` apenas ao modelo para estruturas definidas pelo usuário.
+Atualmente, o compilador de sombreador dá suporte ao `ConstantBuffer` modelo apenas para estruturas definidas pelo usuário.
 
-Por motivos de compatibilidade, o compilador HLSL pode atribuir automaticamente registros de recursos para intervalos declarados em `space0` . Se ' Space ' for omitido na cláusula Register, o padrão `space0` será usado. O compilador usa a heurística do primeiro perfuração para atribuir os registros. A atribuição pode ser recuperada por meio da API de reflexão, que foi estendida para adicionar o campo *espaço* para espaço, enquanto o campo *BindPoint* indica o limite inferior do intervalo de registro de recursos.
+Por motivos de compatibilidade, o compilador HLSL pode atribuir automaticamente registros de recursos para intervalos declarados no `space0` . Se 'space' for omitido na cláusula register, o padrão `space0` será usado. O compilador usa a heurística first-hole-fits para atribuir os registros. A atribuição pode ser recuperada por meio da  API de reflexão, que foi estendida para adicionar o campo Espaço para espaço, enquanto o campo *BindPoint* indica o limite inferior do intervalo de registro de recursos.
 
-## <a name="bytecode-changes-in-sm51"></a>Alterações de código de bytes no SM 5.1
+## <a name="bytecode-changes-in-sm51"></a>Alterações de código de byte no SM5.1
 
-O SM 5.1 altera como os registros de recursos são declarados e referenciados em instruções. A sintaxe envolve a declaração de uma "variável" de registro, semelhante ao modo como é feito para os registros de memória compartilhada do Grupo:
+O SM5.1 altera como os registros de recursos são declarados e referenciados nas instruções. A sintaxe envolve declarar uma "variável" de registro, semelhante a como ela é feita para registros de memória compartilhada de grupo:
 
 ``` syntax
 Texture2D<float4> tex0          : register(t5,  space0);
@@ -207,7 +207,7 @@ float4 main(float4 coord : COORD) : SV_TARGET
 }
 ```
 
-Isso desmontará para:
+Isso será desmontado para:
 
 ``` syntax
 // Resource Bindings:
@@ -258,16 +258,16 @@ ret
 // Approximately 12 instruction slots are used.
 ```
 
-Cada intervalo de recursos do sombreador agora tem uma ID (um nome) que é exclusiva para o código de bytes do sombreador. Por exemplo, a matriz de textura tex1 (T10) se torna 1 "no código de bytes do sombreador. Atribuir IDs exclusivas a cada intervalo de recursos permite duas coisas:
+Cada intervalo de recursos do sombreador agora tem uma ID (um nome) que é exclusiva para o código de byte do sombreador. Por exemplo, a matriz de textura tex1 (t10) torna-se 'T1' no código de byte do sombreador. A aplicação de IDs exclusivas para cada intervalo de recursos permite duas coisas:
 
--   Identifique de forma não ambígua qual intervalo de recursos (consulte o \_ recurso DCL \_ Texture2D) está sendo indexado em uma instrução (consulte a instrução de exemplo).
--   Anexando um conjunto de atributos à declaração, por exemplo, tipo de elemento, tamanho de Stride, modo de operação de varredura, etc.
+-   Identifique sem ambígua qual intervalo de recursos (consulte dcl resource texture2d) está sendo indexado em uma instrução \_ \_ (consulte a instrução de exemplo).
+-   Anexar um conjunto de atributos à declaração, por exemplo, o tipo de elemento, o tamanho do stride, o modo de operação de raster etc.
 
-Observe que a ID do intervalo não está relacionada à declaração de limite inferior do HLSL.
+Observe que a ID do intervalo não está relacionada à declaração de limite inferior HLSL.
 
-A ordem das associações de recursos de reflexão (listagem na parte superior) e as instruções de declaração de sombreador (DCL \_ \* ) são as mesmas para auxiliar na identificação da correspondência entre as variáveis HLSL e as IDs de código de bytes.
+A ordem das vinculações de recursos de reflexão (listagem na parte superior) e instruções de declaração do sombreador (dcl ) é a mesma para ajudar a identificar a correspondência entre \_ variáveis HLSL e IDs de código de \* byte.
 
-Cada instrução de declaração no SM 5.1 usa um operando 3D para definir: ID de intervalo, limites inferiores e superiores. Um token adicional é emitido para especificar o espaço de registro. Outros tokens podem ser emitidos também para transmitir propriedades adicionais do intervalo, por exemplo, CBuffer ou instrução de declaração de buffer estruturado emite o tamanho do CBuffer ou da estrutura. Os detalhes exatos da codificação podem ser encontrados em d3d12TokenizedProgramFormat. h e **D3D10ShaderBinary:: CShaderCodeParser**.
+Cada instrução de declaração no SM5.1 usa um operand 3D para definir: ID de intervalo, limites inferiores e superiores. Um token adicional é emitido para especificar o espaço de registro. Outros tokens podem ser emitidos também para transmitir propriedades adicionais do intervalo, por exemplo, CBuffer ou instrução de declaração de buffer estruturado emite o tamanho do CBuffer ou da estrutura. Os detalhes exatos da codificação podem ser encontrados em d3d12TokenizedProgramFormat. h e **D3D10ShaderBinary:: CShaderCodeParser**.
 
 As instruções do SM 5.1 não emitirão informações adicionais do operando de recurso como parte da instrução (como no SM 5.0). Essas informações agora estão nas instruções da declaração. No SM 5.0, as instruções de indexação de recursos exigiam atributos de recurso a serem descritos em tokens de opcode estendidos, já que a indexação ofusca a associação à declaração. No SM 5.1, cada ID (como ' t 1 ') é associada sem ambigüidade a uma única declaração que descreve as informações de recursos necessárias. Portanto, os tokens de opcode estendidos usados em instruções para descrever as informações de recursos não são mais emitidos.
 
@@ -279,7 +279,7 @@ Um operando de recurso para CBVs é um operando 3D, contendo: ID literal do inte
 
 Os programas HLSL não precisam saber nada sobre assinaturas raiz. Eles podem atribuir associações ao espaço de associação virtual "Register", t \# para SRVs, u \# para UAVs, b \# para CBVs, s \# para amostragens ou dependem do compilador para selecionar atribuições (e consultar os mapeamentos resultantes usando a reflexão do sombreador posteriormente). As tabelas de descritores de mapeamentos de assinatura raiz e as constantes raiz para esse espaço de registro virtual.
 
-Veja a seguir algumas declarações de exemplo que um sombreador HLSL pode ter. Observe que não há referências a assinaturas raiz ou tabelas de descritores.
+A seguir estão alguns exemplos de declarações que um sombreador HLSL pode ter. Observe que não há referências a assinaturas raiz ou tabelas de descritor.
 
 ``` syntax
 Texture2D foo[5] : register(t2);
@@ -316,11 +316,11 @@ ConstantBuffer<Stuff> myStuff[][3][8]  : register(b2, space3)
 ## <a name="related-topics"></a>Tópicos relacionados
 
 * [Indexação dinâmica usando HLSL 5.1](dynamic-indexing-using-hlsl-5-1.md)
-* [Efeito-ferramenta do compilador](/windows/win32/direct3dtools/fxc)
-* [Recursos do HLSL Shader Model 5,1 para Direct3D 12](/windows/win32/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
-* [Exibições ordenadas do rasterizador](rasterizer-order-views.md)
+* [Ferramenta Effect-Compiler](../direct3dtools/fxc.md)
+* [Recursos do HLSL Shader Model 5.1 para Direct3D 12](../direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12.md)
+* [Modos de exibição ordenados do rasterizador](rasterizer-order-views.md)
 * [Associação de recursos](resource-binding.md)
 * [Assinaturas raiz](root-signatures.md)
-* [Modelo do sombreador 5,1](/windows/win32/direct3dhlsl/shader-model-5-1)
-* [Valor de referência de estêncil especificado do sombreador](shader-specified-stencil-reference-value.md)
-* [Especificando assinaturas raiz em HLSL](specifying-root-signatures-in-hlsl.md)
+* [Modelo de sombreador 5.1](../direct3dhlsl/shader-model-5-1.md)
+* [Valor de referência de estêncil especificado pelo sombreador](shader-specified-stencil-reference-value.md)
+* [Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)

@@ -4,12 +4,12 @@ description: O Direct2D usa uma otimização chamada vinculação de sombreador 
 ms.assetid: 431A5B39-6C84-442D-AC66-0F341E10DF2C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0a17691346649b2ddcde7ca4f3e343be6a35a90
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: 75b6bad2170f2b897a5cf8ac3086a74945efa8bf
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104297999"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549231"
 ---
 # <a name="effect-shader-linking"></a>Vinculação de Sombreador de Efeito
 
@@ -29,57 +29,37 @@ O Direct2D usa uma otimização chamada vinculação de sombreador de efeito que
 
 O efeito que as otimizações de vinculação do sombreador se baseia na vinculação do sombreador HLSL, um recurso do Direct3D 11,2 que permite que os sombreadores de pixel e vértice sejam gerados em tempo de execução por meio da vinculação de funções de sombreador pré-compilados. As figuras a seguir ilustram o conceito de vinculação de sombreador de efeito em um grafo de efeito. A primeira figura mostra um grafo típico de efeito de Direct2D com quatro transformações de renderização. Sem vinculação de sombreador, cada transformação consome uma passagem de renderização e requer uma superfície intermediária; no total, esse grafo requer 4 passagens e 3 intermediários.
 
-
-
-|                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------|
-| ![transformação de grafo sem vinculação de sombreador: 4 passagens e 3 intermediários.](images/shader-transform-graph.png) |
-
-
-
- 
+![transformação de grafo sem vinculação de sombreador: 4 passagens e 3 intermediários.](images/shader-transform-graph.png)
 
 A segunda figura mostra o mesmo grafo de efeito em que cada transformação de renderização foi substituída por uma versão de função vinculável. O Direct2D é capaz de vincular todo o grafo e executá-lo em uma passagem sem exigir nenhum intermediário. Isso pode proporcionar uma diminuição significativa no tempo de execução da GPU e na redução do consumo máximo de memória da GPU.
 
-
-
-|                                                                                                   |
-|---------------------------------------------------------------------------------------------------|
-| ![Grafo de transformação com vinculação de sombreador: 1 passagem, 0 intermediários.](images/shader-linking-graph.png) |
+![Grafo de transformação com vinculação de sombreador: 1 passagem, 0 intermediários.](images/shader-linking-graph.png)
 
 
 
  
 
-A vinculação do sombreador de efeito opera em transformações individuais dentro de um efeito; Isso significa que até mesmo um grafo com um único efeito pode se beneficiar da vinculação de sombreador se esse efeito tiver várias transformações válidas.
+A vinculação do sombreador de efeito opera em transformaçãos individuais dentro de um efeito; isso significa que até mesmo um grafo com um único efeito poderá se beneficiar da vinculação do sombreador se esse efeito tiver várias transformação válidas.
 
-## <a name="using-effect-shader-linking"></a>Usando vinculação de sombreador de efeito
+## <a name="using-effect-shader-linking"></a>Usando a vinculação do sombreador de efeito
 
-Se você estiver criando um aplicativo Direct2D que usa efeitos, não precisará fazer nada para tirar proveito da vinculação de sombreador de efeito. O Direct2D analisa automaticamente o grafo de efeito para determinar a maneira mais adequada de vincular cada transformação.
+Se você estiver criando um aplicativo Direct2D que usa efeitos, não será necessário fazer nada para aproveitar a vinculação do sombreador de efeito. O Direct2D analisa automaticamente o grafo de efeito para determinar a maneira mais ideal de vincular cada transformação.
 
-Os autores de efeito são responsáveis por implementar seu efeito de forma que dê suporte à vinculação de sombreador de efeito; para obter mais informações, consulte a seção [criando um efeito personalizado compatível com vinculação de sombreador](#authoring-a-shader-linking-compatible-custom-effect) abaixo. Todos os efeitos internos dão suporte à vinculação de sombreador.
+Os autores de efeito são responsáveis por implementar seu efeito de uma maneira que dá suporte à vinculação do sombreador de efeito; Para obter mais informações, consulte [a seção Authoring a shader linking-compatible custom effect](#authoring-a-shader-linking-compatible-custom-effect) abaixo. Todos os efeitos integrados são suportados pela vinculação do sombreador.
 
-Direct2D vinculará somente as transformações de renderização adjacentes em situações em que é benéfico. Leva em consideração vários fatores ao determinar se deve vincular duas transformações. Por exemplo, a vinculação de sombreador não é executada se uma das transformações usa um vértice ou sombreadores de computação, pois somente os sombreadores de pixel podem ser vinculados. Além disso, se um efeito não foi criado para ser compatível com a vinculação de sombreador, as transformações ao redor não serão vinculadas a ele.
+O Direct2D vincula apenas as transformações de renderização adjacentes em situações em que ela é benéfica. Ele leva em conta vários fatores ao determinar se é necessário vincular duas transformaçãos. Por exemplo, a vinculação do sombreador não será executada se uma das transformaçãos usar sombreadores de vértice ou de computação, pois somente sombreadores de pixel podem ser vinculados. Além disso, se um efeito não tiver sido autor para ser compatível com a vinculação do sombreador, as transformaçãos ao redor não serão vinculadas a ele.
 
-No caso de um risco de vinculação como esse existe, o Direct2D não vinculará nenhuma transformação adjacente ao risco, mas ainda tentará vincular o restante do grafo.
+Caso esse risco de vinculação exista, o Direct2D não vincula nenhuma transformação adjacente ao risco, mas ainda tentará vincular o restante do grafo.
 
+![transformar grafo com um risco de vinculação: 2 passagens, 1 intermediário.](images/shader-linking-graph-hazard.png)
 
+## <a name="authoring-a-shader-linking-compatible-custom-effect"></a>Como autor de um efeito personalizado compatível com vinculação de sombreador
 
-|                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------|
-| ![transformação de grafo com um risco de vinculação: 2 passagens, 1 intermediário.](images/shader-linking-graph-hazard.png) |
+Se você estiver com seu próprio efeito Direct2D personalizado, precisará garantir que suas transformaçãos sejam compatíveis com a vinculação do sombreador de efeito. Isso requer algumas pequenas alterações de como os efeitos personalizados anteriores foram implementados. Se uma transformação dentro de seu efeito personalizado não dá suporte à vinculação de sombreador, o Direct2D não a vincula a nenhuma transformação adjacente a ela no grafo de efeito.
 
+Como autor de efeito personalizado, você deve estar ciente de vários conceitos e requisitos principais:
 
-
- 
-
-## <a name="authoring-a-shader-linking-compatible-custom-effect"></a>Criando um efeito personalizado compatível com vinculação de sombreador
-
-Se você estiver criando seu próprio efeito de Direct2D personalizado, precisará garantir que suas transformações ofereçam suporte à vinculação de sombreador de efeito. Isso requer algumas pequenas alterações de como os efeitos personalizados anteriores foram implementados. Se uma transformação dentro de seu efeito personalizado não oferecer suporte à vinculação de sombreador, Direct2D não a vinculará a nenhuma transformação adjacente a ela no grafo de efeito.
-
-Como autor de um efeito personalizado, você deve estar ciente de vários conceitos e requisitos principais:
-
--   **Nenhuma alteração para afetar as implementações de interface**
+-   **Nenhuma alteração nas implementações de interface de efeito**
 
     Você não precisa modificar nenhum código que implemente as várias interfaces de efeito, como [ID2D1DrawTransform](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform).
 
@@ -107,41 +87,28 @@ Como autor de um efeito personalizado, você deve estar ciente de vários concei
 
 -   **Somente sombreadores de pixel**
 
-    Direct2D não dá suporte à vinculação de sombreadores de computação ou de vértice. No entanto, se o efeito usar um vértice e um sombreador de pixel, a saída do sombreador de pixel ainda poderá ser vinculada.
+    O Direct2D não dá suporte à vinculação de sombreadores de computação ou vértice. No entanto, se o efeito usar um vértice e um sombreador de pixel, a saída do sombreador de pixel ainda poderá ser vinculada.
 
 -   **Amostragem simples versus complexa**
 
-    A vinculação da função de sombreador funciona conectando a saída de um sombreador de pixel passado para a entrada de uma passagem de sombreador de pixel subsequente. Isso só é possível quando o sombreador de pixel de consumo requer apenas um único valor de entrada para executar sua computação; Esse valor normalmente seria proveniente da amostragem de uma textura de entrada na coordenada de textura emitida pelo sombreador de vértice. Esse sombreador de pixel é dito para executar uma amostragem simples.
+    A vinculação de função de sombreador funciona conectando a saída de uma passagem de sombreador de pixel à entrada de uma passagem de sombreador de pixel subsequente. Isso só é possível quando o sombreador de pixel de consumo requer apenas um único valor de entrada para executar seu cálculo; esse valor normalmente seria de amostragem de uma textura de entrada na coordenada de textura emitida pelo sombreador de vértice. Esse sombreador de pixel é dito para executar amostragem simples.
+
+    ![A conversão em escala de cinza é um exemplo de amostragem simples. O valor de um pixel de saída específico depende apenas do valor do pixel de entrada correspondente.](images/simple-sampling.png)
+
+    Alguns sombreadores de pixel, como um desfoque gaussiano, calculam sua saída de vários exemplos de entrada em vez de apenas um único exemplo. Esse sombreador de pixel é dito para executar amostragem complexa.
 
     
 
-    |                                                                                                                                                                                            |
-    |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | ![conversão em escala de cinza é um exemplo de amostragem simples. o valor de um pixel de saída específico depende apenas do valor do pixel de entrada correspondente.](images/simple-sampling.png) |
+    ![O desfoque gaussiano é um exemplo de amostragem complexa. O valor do pixel de saída central depende de vários pixels de entrada.](images/complex-sampling.png)
 
     
+    Somente funções de sombreador com entradas simples podem ter sua entrada fornecida por outra função de sombreador. As funções de sombreador com entradas complexas devem ser fornecidas com uma textura de entrada para amostra. Isso significa que o Direct2D não vincula um sombreador com entradas complexas ao seu antecessor.
 
-     
+    Ao usar os [auxiliares HLSL do Direct2D,](hlsl-helpers.md)você deve indicar no HLSL se um sombreador usa entradas complexas ou simples.
 
-    Alguns sombreadores de pixel, como um desfoque gaussiano, computam a saída de vários exemplos de entrada em vez de apenas um único exemplo. Esse sombreador de pixel é dito para executar uma amostragem complexa.
+## <a name="example-linking-compatible-effect-shader"></a>Sombreador de efeito compatível com vinculação de exemplo
 
-    
-
-    |                                                                                                                                                           |
-    |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | ![Desfoque Gaussiano é um exemplo de amostragem complexa. o valor do pixel de saída do centro depende de vários pixels de entrada.](images/complex-sampling.png) |
-
-    
-
-     
-
-    Somente as funções de sombreador com entradas simples podem ter sua entrada fornecida por outra função de sombreador. As funções de sombreador com entradas complexas devem ser fornecidas com uma textura de entrada para amostra. Isso significa que o Direct2D não vinculará um sombreador com entradas complexas ao seu antecessor.
-
-    Ao usar os [auxiliares do DIRECT2D HLSL](hlsl-helpers.md), você deve indicar no HLSL se um sombreador usa entradas complexas ou simples.
-
-## <a name="example-linking-compatible-effect-shader"></a>Sombreador de efeito de exemplo compatível com vinculação
-
-Usando os auxiliares do D2D, o seguinte trecho de código representa um sombreador simples de efeito compatível com vinculação:
+Usando os auxiliares D2D, o snippet de código a seguir representa um sombreador de efeito simples compatível com vinculação:
 
 ```syntax
 #define D2D_INPUT_COUNT 1
@@ -156,7 +123,7 @@ D2D_PS_ENTRY(LinkingCompatiblePixelShader)
 }          
 ```
 
-Neste exemplo curto, observe que nenhum parâmetro de função é declarado, que o número de entradas e o tipo de cada entrada é declarado antes da função de entrada, a entrada é recuperada chamando [D2DGetInput](d2dgetinput.md)e as diretivas de pré-processador devem ser definidas antes de o arquivo auxiliar ser incluído.
+Neste breve exemplo, observe que nenhum parâmetro de função é declarado, que o número de entradas e o tipo de cada entrada são declarados antes da função de entrada, a entrada é recuperada chamando [D2DGetInput](d2dgetinput.md)e que as diretivas de pré-processador devem ser definidas antes que o arquivo auxiliar seja incluído.
 
 Um sombreador compatível com vinculação deve fornecer um sombreador de pixel de passagem simples regular e uma função de sombreador de exportação. A macro de [ \_ \_ entrada do PS D2D](d2d-ps-entry.md) permite que cada um deles seja gerado a partir do mesmo código, quando usado em conjunto com o script de compilação do sombreador.
 
@@ -220,44 +187,34 @@ Para compilar a versão da função de exportação do sombreador, você deve pa
 
 
 
-|                                |                                                                                                                                                                                                                                                           |
+|    Sinalizador                            |    Descrição                       |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Sinalizador**                       | **Descrição**                                                                                                                                                                                                                                           |
 | /T <ShaderModel>         | Defina <ShaderModel> como o perfil do sombreador de pixel apropriado, conforme definido na [sintaxe FXC](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax). Deve ser um dos perfis listados em "vinculação de sombreador HLSL". |
 | <MyShaderFile>.hlsl      | Defina <MyShaderFile> como o nome do arquivo HLSL.                                                                                                                                                                                                    |
-| /D \_ função D2D               | Essa definição instrui o FXC a compilar a versão da função de exportação do sombreador.                                                                                                                                                                       |
-| /D \_ entrada D2D =<entry>    | Defina <entry> como o nome do ponto de entrada HLSL que você definiu dentro da macro de [ \_ \_ entrada do D2D PS](d2d-ps-entry.md) .                                                                                                                                    |
-| /FL <MyShaderFile> . fxlib | Defina <MyShaderfile> como onde você deseja armazenar a versão da função de exportação do sombreador. Observe que a extensão. fxlib é apenas para facilidade de identificação.                                                                                              |
+| /D D2D \_ FUNCTION               | Essa definição instrui o FXC a compilar a versão da função de exportação do sombreador.                                                                                                                                                                       |
+| /D D2D \_ ENTRY=<entry>    | Defina <entry> como o nome do ponto de entrada HLSL que você definiu dentro da macro [ \_ D2D PS \_ ENTRY.](d2d-ps-entry.md)                                                                                                                                    |
+| /Fl <MyShaderFile> .fxlib | De <MyShaderfile> acordo com o local em que você deseja armazenar a versão da função de exportação do sombreador. Observe que a extensão .fxlib é apenas para facilitar a identificação.                                                                                              |
 
-
-
- 
-
-### <a name="step-2-compile-the-full-shader-and-embed-the-export-function"></a>Etapa 2: compilar o sombreador completo e inserir a função de exportação
+### <a name="step-2-compile-the-full-shader-and-embed-the-export-function"></a>Etapa 2: Compilar o sombreador completo e inserir a função de exportação
 
 ```syntax
 fxc /T ps_<shadermodel> <MyShaderFile>.hlsl /D D2D_FULL_SHADER /D D2D_ENTRY=<entry> /E <entry> /setprivate <MyShaderFile>.fxlib /Fo <MyShader>.cso /Fh <MyShader>.h           
 ```
 
-Para compilar a versão completa do sombreador com a versão de exportação inserida, você deve passar os seguintes sinalizadores para FXC.
+Para compilar a versão completa do sombreador com a versão de exportação inserida, você deve passar os sinalizadores a seguir para o FXC.
 
 
 
-|                                        |                                                                                                                                                                                                                                                                                      |
+|    Sinalizador                                    |    Descrição                     |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Sinalizador**                               | **Descrição**                                                                                                                                                                                                                                                                      |
-| /T <ShaderModel>                 | Defina <ShaderModel> como o perfil do sombreador de pixel apropriado, conforme definido na [sintaxe FXC](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax). Este deve ser o perfil do sombreador de pixel correspondente ao perfil de vinculação especificado na etapa 1. |
+| /t <ShaderModel>                 | De <ShaderModel> acordo com o perfil de sombreador de pixel apropriado, conforme definido na Sintaxe [FXC](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax). Esse deve ser o perfil de sombreador de pixel correspondente ao perfil de vinculação especificado na Etapa 1. |
 | <MyShaderFile>.hlsl              | Defina <MyShaderFile> como o nome do arquivo HLSL.                                                                                                                                                                                                                               |
-| /D D2D \_ Full \_ Shader                   | Essa definição instrui o FXC a compilar a versão completa do sombreador.                                                                                                                                                                                                             |
-| /D \_ entrada D2D =<entry>            | Defina <entry> como o nome do ponto de entrada do HLSL que você definiu dentro da \_ \_ macro de entrada () do D2D PS.                                                                                                                                                                                 |
-| /E <entry>                       | Defina <entry> como o nome do ponto de entrada do HLSL que você definiu dentro da \_ \_ macro de entrada () do D2D PS.                                                                                                                                                                                 |
+| /D D2D \_ FULL \_ SHADER                   | Essa definição instrui o FXC a compilar a versão completa do sombreador.                                                                                                                                                                                                             |
+| /D D2D \_ ENTRY=<entry>            | Defina <entry> como o nome do ponto de entrada HLSL que você definiu dentro da macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
+| /e <entry>                       | Defina <entry> como o nome do ponto de entrada HLSL que você definiu dentro da macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
 | /SetPrivate <MyShaderFile> . fxlib | Esse argumento instrui o FXC a inserir o sombreador da função de exportação gerado na etapa 1 \_ na \_ área de dados particulares do blob do D3D \_ .                                                                                                                                                          |
 | /Fo <MyShader> . CSO               | Defina <MyShader> como onde você deseja armazenar o sombreador compilado final e combinado.                                                                                                                                                                                                 |
 | /FH <MyShader> . h                 | Defina <MyShader> como onde você deseja armazenar o cabeçalho final combinado.                                                                                                                                                                                                          |
-
-
-
- 
 
 ## <a name="export-function-specifications"></a>Exportar especificações de função
 
@@ -297,7 +254,7 @@ A semântica deve ser definida como acima, pois o D2D inspecionará a semântica
 
 <dl> <dt>
 
-[Auxiliares de HLSL](hlsl-helpers.md)
+[Auxiliares HLSL](hlsl-helpers.md)
 </dt> <dt>
 
 [Interface ID3D11Linker](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker)

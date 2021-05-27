@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 938536ea7cc72ebb950420ad3d5c9bd35c64db72
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 27eff7e9a14f39554fa6c1a69846bbaca7c39990
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590923"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548871"
 ---
 # <a name="cdm_getspec-message"></a>CDM \_ GETspec
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Recupera o nome do arquivo (não incluindo o caminho) do arquivo selecionado no momento em uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** . A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
 
@@ -101,6 +101,4 @@ int CommDlg_OpenSave_GetSpec(hwnd, lparam, wparam);
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

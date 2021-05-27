@@ -4,16 +4,21 @@ description: A seguir estão os tipos de enumeração de HTTP versão 2,0 HTTP \
 ms.assetid: 849b88a1-e60b-4a1d-a660-cc3fe429d39f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77eaf6fb9c97adfc7a23aad657bfadbdf5e30296
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 208c2f648208b04a1eb29634d883f2d41b08017d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005855"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549081"
 ---
 # <a name="http-server-api-version-20-enumeration-types"></a>Tipos de enumeração da API do servidor HTTP versão 2,0
 
-Estes são os tipos de enumeração de HTTP versão 2,0:
+A seguir estão os tipos de enumeração de HTTP versão 2,0.
+
+| Enumeração | Descrição |
+|-|-|
+| [**HTTP_DELEGATE_REQUEST_PROPERTY_ID**](/windows/win32/api/http/ne-http-http_delegate_request_property_id) | Define constantes que especificam um tipo de informação de propriedade para uma solicitação de delegado. |
+| [**HTTP_FEATURE_ID**](/windows/win32/api/http/ne-http-http_feature_id) | Define constantes que especificam um identificador para um recurso HTTP. |
 
 -   [**\_Detalhes da \_ resposta HTTP 503 \_**](/windows/desktop/api/Http/ne-http-http_503_response_verbosity)
 -   [**\_status de autenticação http \_**](/windows/desktop/api/Http/ne-http-http_auth_status)
@@ -28,11 +33,3 @@ Estes são os tipos de enumeração de HTTP versão 2,0:
 -   [**\_Propriedade do servidor http \_**](/windows/desktop/api/Http/ne-http-http_server_property)
 -   [**\_chave do \_ cache de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ne-http-http_service_config_cache_key)
 -   [**\_chave de \_ \_ tempo limite da configuração do serviço http \_**](/windows/desktop/api/Http/ne-http-http_service_config_timeout_key)
-
- 
-
- 
-
-
-
-

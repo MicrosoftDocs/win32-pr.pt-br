@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LBSELCHSTRING (Commdlg. h)
-description: Uma caixa de diálogo abrir ou salvar como envia a mensagem registrada LBSELCHSTRING para o procedimento de gancho quando a seleção é alterada em qualquer uma das caixas de listagem ou caixas de combinação da caixa de diálogo.
+title: Mensagem LBSELCHSTRING (Commdlg.h)
+description: Uma caixa de diálogo Abrir ou Salvar como envia a mensagem registrada LBSELCHSTRING ao procedimento de gancho quando a seleção muda em qualquer uma das caixas de listagem ou caixas de combinação da caixa de diálogo.
 ms.assetid: 3a8ebc63-b324-43ed-bb6f-34779f6043e7
 keywords:
-- Caixas de diálogo de mensagem LBSELCHSTRING
+- Caixas de diálogo da mensagem LBSELCHSTRING
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 137429b8fa7eb29fb96ec579e0240c4c282d0766
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 62d61f88bd7cb6a84a94a3d8a246e6045f88a305
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590763"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550041"
 ---
 # <a name="lbselchstring-message"></a>Mensagem LBSELCHSTRING
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Uma caixa de diálogo **abrir** ou **salvar como** envia a mensagem registrada **LBSELCHSTRING** para o procedimento de gancho quando a seleção é alterada em qualquer uma das caixas de listagem ou caixas de combinação da caixa de diálogo.
+Uma  caixa **de** diálogo Abrir ou Salvar como envia a mensagem registrada **LBSELCHSTRING** ao procedimento de gancho quando a seleção muda em qualquer uma das caixas de listagem ou caixas de combinação da caixa de diálogo.
 
 
 ```C++
@@ -43,14 +43,14 @@ Uma caixa de diálogo **abrir** ou **salvar como** envia a mensagem registrada *
 *wParam* 
 </dt> <dd>
 
-O identificador da caixa de listagem ou da caixa de combinação na qual a seleção foi alterada.
+O identificador da caixa de listagem ou caixa de combinação na qual a seleção foi alterada.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem inferior Especifica o número de item da cadeia de caracteres selecionada na caixa de listagem ou na caixa de combinação. A palavra de ordem superior especifica o tipo de alteração de seleção. Esse parâmetro pode usar um dos valores a seguir.
+A palavra de ordem baixa especifica o número do item da cadeia de caracteres selecionada na caixa de listagem ou caixa de combinação. A palavra de ordem alta especifica o tipo de alteração de seleção. Esse parâmetro pode usar um dos valores a seguir.
 
 
 
@@ -59,7 +59,7 @@ A palavra de ordem inferior Especifica o número de item da cadeia de caracteres
 | <span id="CD_LBSELCHANGE"></span><span id="cd_lbselchange"></span><dl> <dt>**CD \_ LBSELCHANGE**</dt> <dt>0</dt> </dl>     | O item é o único item selecionado em uma caixa de listagem de seleção única.<br/>      |
 | <span id="CD_LBSELADD"></span><span id="cd_lbseladd"></span><dl> <dt>**CD \_ LBSELADD**</dt> <dt>2</dt> </dl>              | O item é um dos itens selecionados em uma caixa de listagem de seleção múltipla.<br/> |
 | <span id="CD_LBSELSUB"></span><span id="cd_lbselsub"></span><dl> <dt>**CD \_ LBSELSUB**</dt> <dt>1</dt> </dl>              | O item não está mais selecionado em uma caixa de listagem de seleção múltipla.<br/>        |
-| <span id="CD_LBSELNOITEMS"></span><span id="cd_lbselnoitems"></span><dl> <dt>**CD \_ LBSELNOITEMS**</dt> <dt>-1</dt> </dl> | Não existem itens em uma caixa de listagem de seleção múltipla.<br/>                        |
+| <span id="CD_LBSELNOITEMS"></span><span id="cd_lbselnoitems"></span><dl> <dt>**CD \_ LBSELNOITEMS**</dt> <dt>-1</dt> </dl> | Nenhum item existe em uma caixa de listagem de seleção múltipla.<br/>                        |
 
 
 
@@ -69,11 +69,11 @@ A palavra de ordem inferior Especifica o número de item da cadeia de caracteres
 
 ## <a name="return-value"></a>Retornar valor
 
-Esta mensagem não tem nenhum valor de retorno.
+Essa mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O procedimento de gancho deve especificar a constante **LBSELCHSTRING** em uma chamada para a função [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obter o identificador para a mensagem enviada pela caixa de diálogo.
+O procedimento de gancho deve especificar a constante **LBSELCHSTRING** em uma chamada para a função [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obter o identificador da mensagem enviada pela caixa de diálogo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,6 +109,4 @@ O procedimento de gancho deve especificar a constante **LBSELCHSTRING** em uma c
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

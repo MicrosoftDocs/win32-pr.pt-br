@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e149727650223f40a290d1ada40abc69f9033440
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: f099c1c71015ca433299843d388085103571d31d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380630"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549411"
 ---
 # <a name="id2d1rendertargetcreategradientstopcollection-methods"></a>Métodos ID2D1RenderTarget:: CreateGradientStopCollection
 
@@ -29,8 +29,8 @@ Cria um [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1g
 
 | Método                                                                                                                                                                                                                                                               | Descrição                                                                                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateGradientStopCollection ( \_ parada de gradiente d2d1 \_ \* , D2D1 \_ gama, d2d1 \_ \_ modo de extensão, ID2D1GradientStopCollection \* \* )**](https://msdn.microsoft.com/library/Dd316783(v=VS.85).aspx) | Cria um [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir das interrupções de gradiente especificadas, da interpolação de cor gama e do modo de extensão. <br/>                                                              |
-| [**CreateGradientStopCollection ( \_ parada de gradiente d2d1 \_ \* , ID2D1GradientStopCollection \* \* )**](https://msdn.microsoft.com/library/Dd316783(v=VS.85).aspx)                                                            | Cria um [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir das interrupções de gradiente especificadas que usa o gama de interpolação de cor [**d2d1 \_ gama \_ 2 \_ 2**](/windows/win32/api/d2d1/ne-d2d1-d2d1_gamma) e o modo de extensão fixe.<br/> |
+| [**CreateGradientStopCollection ( \_ parada de gradiente d2d1 \_ \* , D2D1 \_ gama, d2d1 \_ \_ modo de extensão, ID2D1GradientStopCollection \* \* )**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) | Cria um [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir das interrupções de gradiente especificadas, da interpolação de cor gama e do modo de extensão. <br/>                                                              |
+| [**CreateGradientStopCollection ( \_ parada de gradiente d2d1 \_ \* , ID2D1GradientStopCollection \* \* )**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection)                                                            | Cria um [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir das interrupções de gradiente especificadas que usa o gama de interpolação de cor [**d2d1 \_ gama \_ 2 \_ 2**](/windows/win32/api/d2d1/ne-d2d1-d2d1_gamma) e o modo de extensão fixe.<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_HIDECONTROL (Commdlg. h)
-description: Oculta o controle especificado em uma caixa de diálogo abrir no estilo do Explorer ou salvar como.
+title: CDM_HIDECONTROL mensagem (Commdlg.h)
+description: Oculta o controle especificado em uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
 ms.assetid: 5bf7f861-d38c-491a-89f0-5b3dfce8abfc
 keywords:
-- Caixas de diálogo de CDM_HIDECONTROL mensagem
+- CDM_HIDECONTROL caixa de diálogo da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c0f2f41017373d9064da8f1024066f131063d9d
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 21f1a5a7a1830ceeb2c3671b0dfb538ad89e0a58
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590873"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548651"
 ---
-# <a name="cdm_hidecontrol-message"></a>\_Mensagem CDM HIDECONTROL
+# <a name="cdm_hidecontrol-message"></a>Mensagem \_ HIDECONTROL do CDM
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Oculta o controle especificado em uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** . A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
+Oculta o controle especificado em uma  caixa de diálogo Abrir ou Salvar **como** no estilo Explorer. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -43,7 +43,7 @@ Oculta o controle especificado em uma caixa de diálogo **abrir** no estilo do E
 *wParam* 
 </dt> <dd>
 
-O identificador do controle a ser ocultado.
+O identificador do controle a ser oculto.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Este parâmetro não é usado.
 
 ## <a name="return-value"></a>Retornar valor
 
-Esta mensagem não tem nenhum valor de retorno.
+Essa mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
@@ -74,7 +74,7 @@ void CommDlg_OpenSave_HideControl(hwnd, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
 
 
 
@@ -85,20 +85,18 @@ void CommDlg_OpenSave_HideControl(hwnd, wparam);
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

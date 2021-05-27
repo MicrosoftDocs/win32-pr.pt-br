@@ -1,9 +1,9 @@
 ---
-title: D1104 possível perda
+title: D1104 Possível Vazamento
 ms.assetid: 564de2e2-5004-43e8-8616-1ab11127738a
-description: A fábrica foi liberada, mas a interface criada a partir dela ainda está ativa. Embora seja válido liberar recursos depois de liberar a fábrica, essa condição pode indicar um vazamento de memória.
+description: A fábrica foi liberada, mas a interface criada a partir dela ainda está a vivo. Embora seja válido liberar recursos depois de liberar a fábrica, essa condição pode ser um indicativo de uma perda de memória.
 keywords:
-- D1104 possível Direct2D de vazamento
+- D1104 Possível Vazamento Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,50 +13,50 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 71ccbee152d60a73fbea5ebac2a1074534b69c3a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b6629a0da2b89e13feebc33fe5742e3459fc082b
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293078"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548671"
 ---
-# <a name="d1104-possible-leak"></a>D1104: possível vazamento
+# <a name="d1104-possible-leak"></a>D1104: Possível vazamento
 
-A fábrica de fábrica \[  \] foi liberada, mas a \[ *interface* \] de interface criada a partir dela ainda está ativa. Embora seja válido liberar recursos depois de liberar a fábrica, essa condição pode indicar um vazamento de memória.
+A fábrica \[ *de fábrica* \] foi lançada, mas a interface de \[ *interface* criada a partir dela \] ainda está a vivo. Embora seja válido liberar recursos depois de liberar a fábrica, essa condição pode ser um indicativo de uma perda de memória.
 
 ## <a name="placeholders"></a>Espaços reservados
 
 <dl> <dt>
 
-<span id="factory"></span><span id="FACTORY"></span>*padrões*
+<span id="factory"></span><span id="FACTORY"></span>*Fábrica*
 </dt> <dd>
 
-O endereço da fábrica que foi lançada.
+O endereço da fábrica que foi liberada.
 
 </dd> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interface*
+<span id="interface"></span><span id="INTERFACE"></span>*Interface*
 </dt> <dd>
 
-O endereço da interface que foi criada na *fábrica*.
+O endereço da interface que foi criada na *fábrica.*
 
 </dd> </dl> 
 
-|             |             |
+| &nbsp;      |    &nbsp;   |
 |-------------|-------------|
-| Nível de erro | Informações do |
+| Nível de erro | Informações |
 
 
 
- 
+ 
 
 ## <a name="possible-causes"></a>Possíveis causas
 
-A fábrica foi liberada, mas a interface criada a partir dela ainda está ativa.
+A fábrica foi liberada, mas a interface criada a partir dela ainda está a vivo.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,21 +39,21 @@ api_location:
 - dwrite.h
 api_name:
 - DWRITE_FACTORY_TYPE
-ms.openlocfilehash: 85f74d72dc8799a7a3c78603ec0dd5f9c118fdb1
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 51cfbb274d681bb35b806f49aef13cc4a220ee26
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107954999"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550301"
 ---
-# <a name="dwrite_factory_type-enumeration-dwriteh"></a>Enumeração de DWRITE_FACTORY_TYPE (DWRITE. h)
+# <a name="dwrite_factory_type-enumeration-dwriteh"></a>DWRITE_FACTORY_TYPE enumeração (dwrite.h)
 
 Especifica o tipo de objeto de fábrica DirectWrite.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview).
+> Essa API está disponível como parte da implementação DWriteCore do [DirectWrite](../direct-write-portal.md). O DWriteCore é um tipo de DirectWrite que é executado em versões do Windows até o Windows 8 e permite o uso em multiplataforma. Para obter mais informações e exemplos de código, consulte [Visão geral de DWriteCore.](../dwritecore-overview.md)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 ```cpp
 typedef enum DWRITE_FACTORY_TYPE {
   DWRITE_FACTORY_TYPE_SHARED,
@@ -64,19 +64,19 @@ typedef enum DWRITE_FACTORY_TYPE {
 
 ## <a name="constants"></a>Constantes
 
-| Nome | Descrição |
+| Name | Descrição |
 | ---- |:---- |
-| DWRITE_FACTORY_TYPE_SHARED | Indica que a fábrica DirectWrite é uma fábrica compartilhada e que permite a reutilização de dados de fontes armazenados em cache em vários componentes em processo. Essas fábricas também aproveitam os componentes de cache de fonte de processo cruzado para melhorar o desempenho. |
-| DWRITE_FACTORY_TYPE_ISOLATED | Indica que o objeto de fábrica DirectWrite está isolado. Os objetos criados a partir da fábrica isolada não interagem com o estado interno do DirectWrite de outros componentes. |
-| DWRITE_FACTORY_TYPE_ISOLATED2 | Indica que o objeto de fábrica DirectWrite é restrito. Os objetos criados a partir de uma fábrica restrita não usam nem modificam os dados de estado interno ou armazenados em cache usados por outras fábricas. Além disso, a coleção de fontes do sistema contém apenas fontes conhecidas.|
+| DWRITE_FACTORY_TYPE_SHARED | Indica que a fábrica DirectWrite é uma fábrica compartilhada e que permite a reutilização de dados de fonte armazenados em cache em vários componentes em processo. Essas fábricas também aproveitam os componentes de cache de fontes entre processos para melhorar o desempenho. |
+| DWRITE_FACTORY_TYPE_ISOLATED | Indica que o objeto de fábrica DirectWrite está isolado. Objetos criados a partir da fábrica isolada não interagem com o estado directWrite interno de outros componentes. |
+| DWRITE_FACTORY_TYPE_ISOLATED2 | Indica que o objeto de fábrica DirectWrite está restrito. Objetos criados de uma fábrica restrita não usam nem modificam o estado interno ou os dados armazenados em cache usados por outras fábricas. Além disso, a coleção de fontes do sistema contém apenas fontes conhecidas.|
 
 ## <a name="examples"></a>Exemplos
 
-Consulte o tópico [visão geral do DWriteCore](/windows/win32/directwrite/dwritecore-overview) e o aplicativo de exemplo [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
+Consulte o tópico de visão geral de [DWriteCore](../dwritecore-overview.md) e o aplicativo de exemplo [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="remarks"></a>Comentários
 
-Um objeto de fábrica DirectWrite contém informações sobre seu estado interno, como registro de carregador de fonte e dados de fonte em cache. Na maioria dos casos, você deve usar o objeto de fábrica compartilhado, pois ele permite que vários componentes usem o DirectWrite para compartilhar informações de estado DirectWrite internas, reduzindo assim o uso de memória. No entanto, há casos em que é desejável reduzir o impacto de um componente no restante do processo, como um plug-in de uma fonte não confiável, na área restrita e no isolamento do restante dos componentes do processo. Nesses casos, você deve usar uma fábrica isolada para o componente de área restrita.
+Um objeto de fábrica DirectWrite contém informações sobre seu estado interno, como registro do carregador de fonte e dados de fonte armazenados em cache. Na maioria dos casos, você deve usar o objeto de fábrica compartilhado, pois ele permite que vários componentes que usam DirectWrite compartilhem informações internas de estado do DirectWrite, reduzindo assim o uso de memória. No entanto, há casos em que é desejável reduzir o impacto de um componente no restante do processo, como um plug-in de uma fonte não confiável, por meio de áreas externas e isolando-o do restante dos componentes do processo. Nesses casos, você deve usar uma fábrica isolada para o componente em áreas sandbox.
 
 Uma fábrica restrita é mais bloqueada do que uma fábrica isolada. Ele não interage com um cache de fontes entre processos e persistentes de nenhuma forma. Além disso, a coleção de fontes do sistema retornada por essa fábrica inclui apenas fontes conhecidas. Se você passar **DWRITE_FACTORY_TYPE_ISOLATED2** para uma versão de DWRITE mais antiga que DWriteCore, [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) retornará **E_INVALIDARG**.
 

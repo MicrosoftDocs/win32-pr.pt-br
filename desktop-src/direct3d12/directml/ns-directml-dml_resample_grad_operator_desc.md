@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_RESAMPLE_GRAD_OPERATOR_DESC
 title: DML_RESAMPLE_GRAD_OPERATOR_DESC
-description: Computa gradientes de repropagação para reamostragem (consulte [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
+description: Calcula gradientes de backpropagation para Resample (consulte [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
 helpviewer_keywords:
 - DML_RESAMPLE_GRAD_OPERATOR_DESC
 - DML_RESAMPLE_GRAD_OPERATOR_DESC structure
@@ -45,20 +45,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RESAMPLE_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 0caba1a560b72a94ed04cacd824414964af82c35
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ff2660257fa619edb72f10efb419f3c15f43fbde
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804048"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549721"
 ---
-# <a name="dml_resample_grad_operator_desc-structure-directmlh"></a>Estrutura de DML_RESAMPLE_GRAD_OPERATOR_DESC (directml. h)
+# <a name="dml_resample_grad_operator_desc-structure-directmlh"></a>DML_RESAMPLE_GRAD_OPERATOR_DESC estrutura (directml.h)
 
-Computa gradientes de repropagação para reamostragem (consulte [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
+Calcula gradientes de backpropagation para Resample (consulte [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
 
-**DML_RESAMPLE1_OPERATOR_DESC** redimensiona as dimensões arbitrárias do tensor de entrada usando a amostra de vizinho mais próximo ou a interpolação bilinear. Dado um *InputGradientTensor* com os mesmos tamanhos da *saída* de um **DML_RESAMPLE1_OPERATOR_DESC** equivalente, esse operador produz um *OutputGradientTensor* com os mesmos tamanhos que a *entrada* do **DML_RESAMPLE1_OPERATOR_DESC**.
+**DML_RESAMPLE1_OPERATOR_DESC** dimensiona dimensões arbitrárias do tensor de entrada usando amostragem de vizinho mais próximo ou interpolação bilinear. Dado um *InputGradientTensor* com os  mesmos tamanhos que a saída de um **DML_RESAMPLE1_OPERATOR_DESC** equivalente, esse operador produz  um *OutputGradientTensor* com os mesmos tamanhos que a entrada do **DML_RESAMPLE1_OPERATOR_DESC**.
 
-Como exemplo, considere um **DML_RESAMPLE1_OPERATOR_DESC** que executa um dimensionamento de um vizinho mais próximo de 1,5 x na largura e 0,5 x na altura.
+Por exemplo, considere uma **DML_RESAMPLE1_OPERATOR_DESC** que executa um dimensionamento vizinho mais próximo de 1,5 x na largura e 0,5x na altura.
 
 ```
 InputTensor           OutputTensor
@@ -66,9 +66,9 @@ InputTensor           OutputTensor
  [3, 4]]      -->      
 ```
 
-Observe como o elemento 0º da tensor de entrada (com valor 1) contribui para dois elementos na saída, o primeiro elemento (com valor 2) contribui para um elemento na saída, e os 2ª e 3º elementos (com os valores 3 e 4) contribuem para não elementos da saída.
+Observe como o 0º elemento do tensor de entrada (com o valor 1) contribui para dois elementos na saída, o 1º elemento (com o valor 2) contribui para um elemento na saída e os 2º e 3º elementos (com os valores 3 e 4) contribuem para nenhum elemento da saída.
 
-O **DML_RESAMPLE_GRAD_OPERATOR_DESC** correspondente executaria o seguinte.
+O valor **DML_RESAMPLE_GRAD_OPERATOR_DESC** executaria o seguinte.
 
 ```
 InputGradientTensor           OutputGradientTensor
@@ -76,10 +76,10 @@ InputGradientTensor           OutputGradientTensor
                        -->          [0, 0]]
 ```
 
-Observe que os valores no *OutputGradientTensor* representam as contribuições ponderadas desse elemento para o *OutputTensor* durante o operador de **DML_RESAMPLE1_OPERATOR_DESC** original.
+Observe que os valores no *OutputGradientTensor* representam as contribuições ponderadas desse elemento para *o OutputTensor* durante o operador **DML_RESAMPLE1_OPERATOR_DESC** original.
 
 > [!IMPORTANT]
-> Essa API está disponível como parte do pacote redistribuível DirectML autônomo (consulte [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1,4 e posterior. Consulte também o [histórico de versão do DirectML](../dml-version-history.md).
+> Essa API está disponível como parte do pacote redistribuível autônomo directML (consulte [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versão 1.4 e posterior). Consulte também [Histórico de versão do DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -102,13 +102,13 @@ struct DML_RESAMPLE_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-O gradiente de entrada tensor. Normalmente, isso é obtido a partir da saída de Propagation de uma camada anterior. Normalmente, esse tensor teria os mesmos tamanhos da *saída* do [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) correspondente na passagem de encaminhamento.
+O tensor de gradiente de entrada. Normalmente, isso é obtido da saída de backpropagation de uma camada anterior. Normalmente, esse tensor teria os  mesmos tamanhos que a saída do DML_RESAMPLE1_OPERATOR_DESC [na](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) passagem de avanço.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Um tensor de saída que contém os gradientes propagados. Normalmente, esse tensor teria os mesmos tamanhos que a *entrada* do [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) correspondente na passagem de encaminhamento.
+Um tensor de saída que contém os gradientes paxados. Normalmente, esse tensor teria os mesmos tamanhos que a *entrada* do [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) correspondente na passagem de encaminhamento.
 
 `InterpolationMode`
 
@@ -124,19 +124,19 @@ O número de elementos nas matrizes *Redimensions*, *InputPixelOffsets* e *Outpu
 
 `Scales`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](../../winprog/windows-data-types.md) \***
 
 Consulte *escalas* em [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 
 `InputPixelOffsets`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](../../winprog/windows-data-types.md) \***
 
 Consulte *InputPixelOffsets* em [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 
 `OutputPixelOffsets`
 
-Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ \_ tamanho \_ do campo (DimensionCount) **const [float](../../winprog/windows-data-types.md) \***
 
 Consulte *OutputPixelOffsets* em [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).
 
@@ -155,4 +155,4 @@ Esse operador foi introduzido no `DML_FEATURE_LEVEL_3_0` .
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cabeçalho** | directml. h |
+| **Cabeçalho** | directml.h |

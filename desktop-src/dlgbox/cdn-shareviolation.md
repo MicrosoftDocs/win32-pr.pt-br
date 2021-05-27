@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e79d9c48d3e80d14d83de07c03f7db119ea8e78
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 77cd862fa1c3598a4e81a776004f26ef02290477
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590693"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548851"
 ---
 # <a name="cdn_shareviolation-notification-code"></a>Código de notificação da CDN \_ SHAREVIOLATION
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário clica no botão **OK** e ocorre uma violação de compartilhamento de rede para o arquivo selecionado.
 
@@ -65,7 +65,7 @@ Para evitar a exibição da mensagem de aviso padrão, retorne um valor diferent
 
 
 
-| Código/valor de retorno                                                                                                                                           | Descrição                                                                                                     |
+| Código/valor de retorno                                                                                                                                           | Description                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**OFN \_ SHAREFALLTHROUGH**</dt> <dt>2</dt> </dl> | Faz com que a caixa de diálogo retorne o nome do arquivo sem avisar o usuário sobre a violação de compartilhamento.<br/>  |
 | <dl> <dt>**OFN \_ SHARENOWARN**</dt> <dt>1</dt> </dl>      | Faz com que a caixa de diálogo rejeite o nome do arquivo sem avisar o usuário sobre a violação de compartilhamento. <br/> |
@@ -122,6 +122,4 @@ O sistema enviará essa notificação somente se o valor de **\_ SHAREAWARE OFN*
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

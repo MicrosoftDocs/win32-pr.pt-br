@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_SETDEFEXT (Commdlg. h)
-description: Define a extensão de nome de arquivo padrão para uma caixa de diálogo abrir ou salvar como no estilo do Explorer.
+title: CDM_SETDEFEXT mensagem (Commdlg.h)
+description: Define a extensão de nome de arquivo padrão para uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
 ms.assetid: bd4999f1-0a7e-4b7f-a0ba-a7c2a7f196c6
 keywords:
-- Caixas de diálogo de CDM_SETDEFEXT mensagem
+- CDM_SETDEFEXT caixa de diálogo de mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bd5706e0bccf0b61c0737ef54d6e227e5593bc9
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 0b0b1169a2777d5a5f82925366c6723af741706d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590853"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550111"
 ---
-# <a name="cdm_setdefext-message"></a>\_Mensagem CDM SETDEFEXT
+# <a name="cdm_setdefext-message"></a>Mensagem \_ SETDEFEXT do CDM
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Define a extensão de nome de arquivo padrão para uma caixa de diálogo **abrir** ou **salvar como** no estilo do Explorer. A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
+Define a extensão de nome de arquivo padrão para uma caixa de diálogo **Abrir** ou **Salvar como** no estilo Explorer. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -56,7 +56,7 @@ Um ponteiro para a nova extensão de nome de arquivo. Não deve incluir o ponto 
 
 ## <a name="return-value"></a>Retornar valor
 
-Esta mensagem não tem nenhum valor de retorno.
+Essa mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
@@ -74,7 +74,7 @@ void CommDlg_OpenSave_SetDefExt(hwnd, lparam)
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
 
 
 
@@ -85,20 +85,18 @@ void CommDlg_OpenSave_SetDefExt(hwnd, lparam)
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

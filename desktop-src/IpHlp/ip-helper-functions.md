@@ -1,15 +1,15 @@
 ---
-description: As funções a seguir recuperam e modificam as definições de configuração para o transporte TCP/IP no computador local.
-ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
 title: Funções auxiliares de IP
+description: As funções a seguir recuperam e modificam as definições de configuração para o transporte TCP/IP no computador local.
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c8bff21f41c04bb5aecf505b251fbbe2f8bc62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
+ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663481"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549501"
 ---
 # <a name="ip-helper-functions"></a>Funções auxiliares de IP
 
@@ -50,8 +50,8 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**ConvertInterfaceLuidToNameW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**Se \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
--   [**Se \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**se \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**se \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
 ## <a name="interface-management"></a>Gerenciamento de interface
 
@@ -80,7 +80,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**Icmp6ParseReplies**](/windows/win32/api/Icmpapi/nf-icmpapi-icmp6parsereplies)
 -   [**Icmp6SendEcho2**](/windows/win32/api/Icmpapi/nf-icmpapi-icmp6sendecho2)
 -   [**IcmpCloseHandle**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpclosehandle)
--   [**IcmpCreateFile**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpcreatefile)
+-   [**Icmpcreatefile**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpcreatefile)
 -   [**IcmpParseReplies**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpparsereplies)
 -   [**IcmpSendEcho**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpsendecho)
 -   [**IcmpSendEcho2**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpsendecho2)
@@ -89,7 +89,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 
 ## <a name="ip-address-management"></a>Gerenciamento de endereço IP
 
--   [**AddIPAddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-addipaddress)
+-   [**Addipaddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-addipaddress)
 -   [**CreateAnycastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-createanycastipaddressentry)
 -   [**CreateUnicastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-createunicastipaddressentry)
 -   [**DeleteIPAddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-deleteipaddress)
@@ -130,7 +130,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**ResolveNeighbor**](/windows/win32/api/Iphlpapi/nf-iphlpapi-resolveneighbor)
 -   [**SetIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-setipnetentry2)
 
-## <a name="ip-path-management"></a>Gerenciamento de caminho IP
+## <a name="ip-path-management"></a>Gerenciamento de caminho de IP
 
 -   [**FlushIpPathTable**](/windows/win32/api/Netioapi/nf-netioapi-flushippathtable)
 -   [**GetIpPathEntry**](/windows/win32/api/Netioapi/nf-netioapi-getippathentry)
@@ -138,13 +138,13 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 
 ## <a name="ip-route-management"></a>Gerenciamento de rotas de IP
 
--   [**CreateIpForwardEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createipforwardentry)
+-   [**Createipforwardentry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createipforwardentry)
 -   [**CreateIpForwardEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipforwardentry2)
 -   [**DeleteIpForwardEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-deleteipforwardentry)
 -   [**DeleteIpForwardEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipforwardentry2)
 -   [**EnableRouter**](/windows/win32/api/Iphlpapi/nf-iphlpapi-enablerouter)
--   [**GetBestInterface**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterface)
--   [**GetBestInterfaceEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterfaceex)
+-   [**GetFaceInterface**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterface)
+-   [**GetFaceInterfaceEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterfaceex)
 -   [**GetBestRoute**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getbestroute)
 -   [**GetBestRoute2**](/windows/win32/api/Netioapi/nf-netioapi-getbestroute2)
 -   [**GetIpForwardEntry2**](/windows/win32/api/Netioapi/nf-netioapi-getipforwardentry2)
@@ -182,6 +182,14 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**NotifyRouteChange2**](/windows/win32/api/Netioapi/nf-netioapi-notifyroutechange2)
 -   [**NotifyUnicastIpAddressChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyunicastipaddresschange)
 
+## <a name="packet-timestamping"></a>Data/hora do pacote
+
+-   [**CaptureInterfaceHardwareCrossTimestamp**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp)
+-   [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities)
+-   [**GetInterfaceSupportedTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
+-   [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange)
+-   [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/unregisterinterfacetimestampconfigchange)
+
 ## <a name="persistent-port-reservation"></a>Reserva de porta persistente
 
 -   [**CreatePersistentTcpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistenttcpportreservation)
@@ -201,7 +209,7 @@ Essas funções são definidas somente no Windows Server 2003.
 > [!Note]  
 > Essas funções não estão disponíveis no Windows Vista, nem no Windows Server 2008.
 
-## <a name="teredo-ipv6-client-management"></a>Gerenciamento de cliente IPv6 Teredo
+## <a name="teredo-ipv6-client-management"></a>Gerenciamento de cliente teredo IPv6
 
 -   [**GetTeredoPort**](/windows/win32/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
@@ -236,7 +244,7 @@ Essas funções são definidas somente no Windows Server 2003.
 ## <a name="deprecated-apis"></a>APIs obsoletas
 
 > [!Note]  
-> Essas funções foram preteridas e não têm suporte da Microsoft.
+> Essas funções foram preterida e não têm suporte da Microsoft.
 
 -   [**AllocateAndGetTcpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgettcpextablefromstack)
 -   [**AllocateAndGetUdpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgetudpextablefromstack)

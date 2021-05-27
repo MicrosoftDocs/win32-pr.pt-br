@@ -1,9 +1,9 @@
 ---
-title: CDN_SELCHANGE código de notificação (Commdlg. h)
-description: Enviado por uma caixa de diálogo abrir no estilo do Explorer ou salvar como quando a seleção é alterada na caixa de listagem que exibe o conteúdo da pasta ou do diretório aberto no momento.
+title: CDN_SELCHANGE de notificação (Commdlg.h)
+description: Enviado por uma caixa de diálogo Abrir ou Salvar como no estilo Explorer quando a seleção é mudada na caixa de listagem que exibe o conteúdo da pasta ou diretório aberto no momento.
 ms.assetid: e622babf-7024-45c5-a8db-f80896f69140
 keywords:
-- Caixas de diálogo CDN_SELCHANGE código de notificação
+- CDN_SELCHANGE caixa de diálogo de código de notificação
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5a5c7aed47d02fb7c7fcf2232b144e7a99e7c46
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 8c21aa9dda117c74707b3c890ad96e017b45bcc0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590749"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549221"
 ---
-# <a name="cdn_selchange-notification-code"></a>Código de notificação da CDN \_ SELCHANGE
+# <a name="cdn_selchange-notification-code"></a>Código de \_ notificação CDN SELCHANGE
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando a seleção é alterada na caixa de listagem que exibe o conteúdo da pasta ou do diretório aberto no momento.
+Enviado por uma  caixa de diálogo Abrir ou Salvar **como** no estilo Explorer quando a seleção é mudada na caixa de listagem que exibe o conteúdo da pasta ou diretório aberto no momento.
 
-Seu procedimento de gancho [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem de [**\_ notificação do WM**](../controls/wm-notify.md) .
+O [*procedimento de gancho OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . A estrutura **OFNOTIFY** contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ SELCHANGE** .
+Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) A **estrutura OFNOTIFY** contém uma [**estrutura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de código indica a mensagem de notificação **\_ CDN SELCHANGE.** 
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ O valor de retorno é ignorado.
 
 ## <a name="remarks"></a>Comentários
 
-O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o valor do **OFN \_ Explorer** .
+O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o **valor OFN \_ EXPLORER.**
 
-Para obter o nome do arquivo ou da pasta recentemente selecionada, o procedimento de gancho pode enviar a mensagem [**CDM \_ GetFilePath**](cdm-getfilepath.md) ou [**CDM \_ getspec**](cdm-getspec.md) para a caixa de diálogo.
+Para obter o nome do arquivo ou pasta recém-selecionado, o procedimento de gancho pode enviar a mensagem [**\_ GETFILEPATH**](cdm-getfilepath.md) do CDM ou [**\_ CDM GETSPEC**](cdm-getspec.md) para a caixa de diálogo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Para obter o nome do arquivo ou da pasta recentemente selecionada, o procediment
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
 
 
 
@@ -84,16 +84,16 @@ Para obter o nome do arquivo ou da pasta recentemente selecionada, o procediment
 **Referência**
 </dt> <dt>
 
-[**CDM \_ GETfilepath**](cdm-getfilepath.md)
+[**CDM \_ GETFILEPATH**](cdm-getfilepath.md)
 </dt> <dt>
 
-[**CDM \_ GETspec**](cdm-getspec.md)
+[**GETSPEC do CDM \_**](cdm-getspec.md)
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
@@ -107,6 +107,4 @@ Para obter o nome do arquivo ou da pasta recentemente selecionada, o procediment
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

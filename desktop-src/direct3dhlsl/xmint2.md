@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e93e26933ad6b3829848e7e826d8d9685e9f141
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: c5dfe4aab8a23dbf1b7921742272b0d2b0ab2382
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107222854"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549981"
 ---
 # <a name="xmint2-structure"></a>Estrutura XMINT2
 
@@ -59,7 +59,7 @@ componente y do vetor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é definida no ``D3DX\_DXGIFormatConvert.inl`` cabeçalho no SDK do DirectX (junho de 2010) para uso do C++. A versão mais recente desse cabeçalho no pacote NuGet [Microsoft. DXSDK. D3DX não o](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) define, e se baseia em [DirectX:: XMINT2](https://docs.microsoft.com/en-us/windows/win32/api/directxmath/ns-directxmath-xmint2) em DirectXMath em vez disso.
+Essa estrutura é definida no ``D3DX\_DXGIFormatConvert.inl`` cabeçalho no SDK do DirectX (junho de 2010) para uso do C++. A versão mais recente desse cabeçalho no pacote NuGet [Microsoft. DXSDK. D3DX não o](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) define, e se baseia em [DirectX:: XMINT2](/windows/win32/api/directxmath/ns-directxmath-xmint2) em DirectXMath em vez disso.
 
 
 
@@ -73,7 +73,7 @@ Essa estrutura é definida no ``D3DX\_DXGIFormatConvert.inl`` cabeçalho no SDK 
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

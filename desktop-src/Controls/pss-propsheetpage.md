@@ -1,5 +1,5 @@
 ---
-title: Estrutura PROPSHEETPAGE (Prsht. h)
+title: Estrutura PROPSHEETPAGE (Prsht.h)
 description: Define uma página em uma folha de propriedades.
 keywords:
 - Controles do Windows da estrutura PROPSHEETPAGE
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/23/2021
-ms.openlocfilehash: cdde3f27900c7599b33af706d8fac9f9e8127b6f
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 78e1d1e4e6b4b2067083443bdb5dc4db5df59558
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105802180"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550341"
 ---
 # <a name="propsheetpage-structure"></a>Estrutura PROPSHEETPAGE
 
@@ -57,7 +57,7 @@ typedef struct {
 
 ## <a name="members"></a>Membros
 
-*dwSize* 
+*Dwsize* 
 
 Tipo: [DWORD](../winprog/windows-data-types.md)
 
@@ -67,21 +67,21 @@ Tamanho, em bytes, dessa estrutura.
 
 Tipo: [DWORD](../winprog/windows-data-types.md)
 
-Sinalizadores que indicam quais opções usar ao criar a página da folha de propriedades. Esse membro pode ser uma combinação dos valores a seguir.
+Sinalizadores que indicam quais opções usar ao criar a página de folha de propriedades. Esse membro pode ser uma combinação dos valores a seguir.
 
 | Valor | Significado |
 |-------|---------|
 | PSP_DEFAULT | Usa o significado padrão para todos os membros da estrutura. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
-| PSP_DLGINDIRECT | Cria a página a partir do modelo da caixa de diálogo na memória apontada pelo membro de *origem* . A função [folha](/windows/win32/api/prsht/nf-prsht-propertysheeta) pressupõe que o modelo que está na memória não está protegido contra gravação. Um modelo somente leitura causará uma exceção em algumas versões do Windows. |
-| PSP_HASHELP | Habilita o botão de **ajuda** da folha de propriedades quando a página está ativa. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
+| PSP_DLGINDIRECT | Cria a página do modelo de caixa de diálogo na memória apontada pelo *membro pResource.* A [função PropertySheet](/windows/win32/api/prsht/nf-prsht-propertysheeta) presume que o modelo que está na memória não está protegido por gravação. Um modelo somente leitura causará uma exceção em algumas versões do Windows. |
+| PSP_HASHELP | Habilita o botão **Ajuda da folha** de propriedades quando a página está ativa. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
 | PSP_HIDEHEADER | [Versão 5,80](common-control-versions.md) e posterior. Faz com que a folha de propriedades do assistente oculte a área do cabeçalho quando a página é selecionada. Se uma marca d' água tiver sido fornecida, ela será pintada no lado esquerdo da página. Esse sinalizador deve ser definido para as páginas de boas-vindas e de conclusão e omitido para páginas interiores. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
 | PSP_PREMATURE | [Versão 4,71](common-control-versions.md) ou posterior. Faz com que a página seja criada quando a folha de propriedades é criada. Se esse sinalizador não for especificado, a página não será criada até que seja selecionada na primeira vez. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
 | PSP_RTLREADING | Inverte a direção na qual *pszTitle* é exibido. Janelas normais exibem todo o texto, incluindo *pszTitle*, da esquerda para a direita (EPD). Para idiomas como hebraico ou árabe que lêem da direita para a esquerda (RTL), uma janela pode ser espelhada e todo o texto será exibido em DPE. Se PSP_RTLREADING for definido, *pszTitle* lerá DPE em uma janela pai normal e EPD em uma janela pai espelhada. |
 | PSP_USECALLBACK | Chama a função especificada pelo membro *pfnCallback* ao criar ou destruir a página da folha de propriedades definida por essa estrutura. |
-| PSP_USEFUSIONCONTEXT | [Versão 6,0](common-control-versions.md) e posterior. Use um contexto de ativação. Para usar um contexto de ativação, você deve definir esse sinalizador e atribuir o identificador de contexto de ativação a *hActCtx*. Consulte os comentários. |
-| PSP_USEHEADERSUBTITLE | [Versão 5,80](common-control-versions.md) ou posterior. Exibe a cadeia de caracteres apontada pelo membro *pszHeaderSubTitle* como o subtítulo da área de cabeçalho de uma página Wizard97. Para usar esse sinalizador, você também deve definir o sinalizador PSH_WIZARD97 no membro *dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) associada. O sinalizador de PSP_USEHEADERSUBTITLE será ignorado se PSP_HIDEHEADER estiver definido. Nos assistentes de estilo Aero, o título é exibido próximo à parte superior da área cliente. |
-| PSP_USEHEADERTITLE | [Versão 5,80](common-control-versions.md) ou posterior. Exibe a cadeia de caracteres apontada pelo membro *pszHeaderTitle* como o título no cabeçalho de uma página interior Wizard97. Você também deve definir o sinalizador PSH_WIZARD97 no membro *dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) associada. O sinalizador de PSP_USEHEADERTITLE será ignorado se PSP_HIDEHEADER estiver definido. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
-| PSP_USEHICON | Usa *HICON* como o ícone pequeno na guia da página. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)).  |
+| PSP_USEFUSIONCONTEXT | [Versão 6,0](common-control-versions.md) e posterior. Use um contexto de ativação. Para usar um contexto de ativação, você deve definir esse sinalizador e atribuir o handle de contexto de ativação a *hActCtx.* Consulte os Comentários. |
+| PSP_USEHEADERSUBTITLE | [Versão 5.80](common-control-versions.md) ou posterior. Exibe a cadeia de caracteres apontada pelo membro *pszHeaderSubTitle* como o subtítulo da área de título de uma página do Assistente97. Para usar esse sinalizador, você também deve definir o sinalizador PSH_WIZARD97 no membro *dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) associada. O PSP_USEHEADERSUBTITLE sinalizador será ignorado se PSP_HIDEHEADER estiver definido. Em assistentes de estilo Aero, o título aparece próximo à parte superior da área do cliente. |
+| PSP_USEHEADERTITLE | [Versão 5.80](common-control-versions.md) ou posterior. Exibe a cadeia de caracteres apontada pelo membro *pszHeaderTitle* como o título no título de uma página interior do Assistente97. Você também deve definir o PSH_WIZARD97 no *membro dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) associada. O PSP_USEHEADERTITLE de dados será ignorado se PSP_HIDEHEADER estiver definido. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
+| PSP_USEHICON | Usa *hIcon* como o ícone pequeno na guia da página. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)).  |
 | PSP_USEICONID | Usa *pszIcon* como o nome do recurso de ícone para carregar e usar como o ícone pequeno na guia da página. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
 | PSP_USEREFPARENT | Mantém a contagem de referência especificada pelo membro *pcRefParent* para o tempo de vida da página da folha de propriedades criada a partir dessa estrutura. |
 | PSP_USETITLE | Usa o membro *pszTitle* como o título da caixa de diálogo da folha de propriedades em vez do título armazenado no modelo da caixa de diálogo. Não há suporte para esse sinalizador ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md)). |
@@ -102,25 +102,25 @@ Modelo de caixa de diálogo a ser usado para criar a página. Esse membro pode e
 
 Tipo: **LPCDLGTEMPLATE**
 
-Ponteiro para um modelo de caixa de diálogo na memória. A função [folha](/windows/win32/api/prsht/nf-prsht-propertysheeta) pressupõe que o modelo não está protegido contra gravação. Um modelo somente leitura causará uma exceção em algumas versões do Windows. Para usar esse membro, você deve definir o sinalizador PSP_DLGINDIRECT no membro *dwFlags* . Esse membro é declarado como uma União com *pszTemplate*.
+Ponteiro para um modelo de caixa de diálogo na memória. A função [folha](/windows/win32/api/prsht/nf-prsht-propertysheeta) pressupõe que o modelo não está protegido contra gravação. Um modelo somente leitura causará uma exceção em algumas versões do Windows. Para usar esse membro, você deve definir o sinalizador PSP_DLGINDIRECT no *membro dwFlags.* Esse membro é declarado como uma união com *pszTemplate*.
 
-*hIcon* 
+*Hicon* 
 
 Tipo: [HICON](../winprog/windows-data-types.md)
 
-Manipule o ícone a ser usado como o ícone na guia da página. Se o membro *dwFlags* não incluir PSP_USEHICON, esse membro será ignorado. Esse membro é declarado como uma União com *pszIcon*.
+Lidar com o ícone a ser usado como o ícone na guia da página. Se o *membro dwFlags* não incluir PSP_USEHICON, esse membro será ignorado. Esse membro é declarado como uma união com *pszIcon*.
 
 *pszIcon* 
 
 Tipo: [LPCSTR](../winprog/windows-data-types.md)
 
-Ícone recurso a ser usado como o ícone na guia da página. Esse membro pode especificar o identificador do recurso de ícone ou o endereço da cadeia de caracteres que especifica o nome do recurso de ícone. Para usar esse membro, você deve definir o sinalizador PSP_USEICONID no membro *dwFlags* . Esse membro é declarado como uma União com *HICON*.
+Recurso de ícone a ser usado como o ícone na guia da página. Esse membro pode especificar o identificador do recurso de ícone ou o endereço da cadeia de caracteres que especifica o nome do recurso de ícone. Para usar esse membro, você deve definir o sinalizador PSP_USEICONID no *membro dwFlags.* Esse membro é declarado como uma união com *hIcon*.
 
-*pszTitle* 
+*Psztitle* 
 
 Tipo: [LPCSTR](../winprog/windows-data-types.md)
 
-Título da caixa de diálogo da folha de propriedades. Esse título substitui o título especificado no modelo da caixa de diálogo. Esse membro pode especificar o identificador de um recurso de cadeia de caracteres ou o endereço de uma cadeia de caracteres que especifica o título. Para usar esse membro, você deve definir o sinalizador PSP_USETITLE no membro *dwFlags* .
+Título da caixa de diálogo folha de propriedades. Esse título substitui o título especificado no modelo de caixa de diálogo. Esse membro pode especificar o identificador de um recurso de cadeia de caracteres ou o endereço de uma cadeia de caracteres que especifica o título. Para usar esse membro, você deve definir o sinalizador PSP_USETITLE no *membro dwFlags.*
 
 *pfnDlgProc* 
 
@@ -132,7 +132,7 @@ Ponteiro para o procedimento da caixa de diálogo da página. Como as páginas s
 
 Tipo: [lParam](../winprog/windows-data-types.md)
 
-Quando a página é criada, uma cópia da estrutura **PROPSHEETPAGE** da página é passada para o procedimento da caixa de diálogo com uma mensagem [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) . O membro *lParam* é fornecido para permitir que você passe informações específicas do aplicativo para o procedimento da caixa de diálogo. Ele não tem nenhum efeito na própria página.
+Quando a página é criada, uma cópia da estrutura **PROPSHEETPAGE** da página é passada para o procedimento da caixa de diálogo com uma mensagem [WM_INITDIALOG](../dlgbox/wm-initdialog.md) . O membro *lParam* é fornecido para permitir que você passe informações específicas do aplicativo para o procedimento da caixa de diálogo. Ele não tem nenhum efeito na própria página.
 
 *pfnCallback* 
 
@@ -147,30 +147,30 @@ Tipo: [uint *](../winprog/windows-data-types.md)
 Aponta para o valor da contagem de referência. Para usar esse membro, você deve definir o sinalizador PSP_USEREFPARENT no membro *dwFlags* .
 
 > [!NOTE]
-> Quando uma página de folha de propriedades é criada, o valor apontado por *pcRefParent* é incrementado. Você cria uma página de folha de Propriedades implicitamente definindo o sinalizador PSH_PROPSHEETPAGE no membro *dwFlags* de [PROPSHEETHEADER](pss-propsheetheader.md) e chamando a função [folha](/windows/win32/api/prsht/nf-prsht-propertysheeta) . Você pode fazer isso explicitamente usando a função [CreatePropertySheetPage](/windows/win32/api/prsht/nf-prsht-createpropertysheetpagea) . Quando uma página de folha de propriedades é destruída, o valor apontado pelo membro *pcRefParent* é decrementado. Isso ocorre automaticamente quando a folha de propriedades é destruída. Você pode destruir explicitamente uma página de folha de propriedades usando a função [DestroyPropertySheetPage](/windows/win32/api/prsht/nf-prsht-destroypropertysheetpage) .
+> Quando uma página de folha de propriedades é criada, o valor apontado por *pcRefParent* é incrementado. Você cria uma página de folha de Propriedades implicitamente definindo o sinalizador PSH_PROPSHEETPAGE no membro *dwFlags* de [PROPSHEETHEADER](pss-propsheetheader.md) e chamando a função [folha](/windows/win32/api/prsht/nf-prsht-propertysheeta) . Você pode fazer isso explicitamente usando a função [CreatePropertySheetPage](/windows/win32/api/prsht/nf-prsht-createpropertysheetpagea) . Quando uma página de folha de propriedades é destruída, o valor apontado pelo membro *pcRefParent* é decrementado. Isso ocorre automaticamente quando a folha de propriedades é destruída. Você pode destruir explicitamente uma página de folha de propriedades usando a [função DestroyPropertySheetPage.](/windows/win32/api/prsht/nf-prsht-destroypropertysheetpage)
 
 *pszHeaderTitle* 
 
 Tipo: [LPCTSTR](../winprog/windows-data-types.md)
 
-[Versão 5,80](common-control-versions.md) ou posterior. Título da área de cabeçalho. Para usar esse membro no assistente de estilo de Wizard97, você também deve fazer o seguinte:
+[Versão 5.80](common-control-versions.md) ou posterior. Título da área de título. Para usar esse membro no assistente no estilo Wizard97, você também deve fazer o seguinte:
 
-* Defina o sinalizador PSP_USEHEADERTITLE no membro *dwFlags* .
-* Defina o sinalizador PSH_WIZARD97 no membro *dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) da página.
-* Certifique-se de que o sinalizador PSP_HIDEHEADER no membro *dwFlags* não esteja definido.
+* Defina PSP_USEHEADERTITLE sinalizador no *membro dwFlags.*
+* Defina PSH_WIZARD97 sinalizador no *membro dwFlags* da estrutura [PROPSHEETHEADER da](pss-propsheetheader.md) página.
+* Certifique-se de PSP_HIDEHEADER sinalizador no membro *dwFlags* não está definido.
 
 *pszHeaderSubTitle* 
 
 Tipo: [LPCTSTR](../winprog/windows-data-types.md)
 
-[Versão 5,80](common-control-versions.md) ou posterior. Subtítulo da área de cabeçalho. Para usar esse membro, você deve fazer o seguinte:
+[Versão 5.80](common-control-versions.md) ou posterior. Subtítulo da área de título. Para usar esse membro, você deve fazer o seguinte:
 
-* Defina o sinalizador PSP_USEHEADERSUBTITLE no membro *dwFlags* .
-* Defina o sinalizador PSH_WIZARD97 no membro *dwFlags* da estrutura [PROPSHEETHEADER](pss-propsheetheader.md) da página.
-* Certifique-se de que o sinalizador PSP_HIDEHEADER no membro *dwFlags* não esteja definido.
+* Defina PSP_USEHEADERSUBTITLE sinalizador no *membro dwFlags.*
+* Defina PSH_WIZARD97 sinalizador no *membro dwFlags* da estrutura [PROPSHEETHEADER da](pss-propsheetheader.md) página.
+* Certifique-se de PSP_HIDEHEADER sinalizador no membro *dwFlags* não está definido.
 
 > [!NOTE]
-> Este membro é ignorado ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md))
+> Esse membro é ignorado ao usar o assistente de estilo Aero ([PSH_AEROWIZARD](pss-propsheetheader.md))
 
 *hActCtx* 
 
@@ -200,5 +200,5 @@ Comctl32.dll versão 6 e posterior não são redistribuíveis. Para usar Comctl3
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Vista\]                                    |
 | Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\]                              |
-| parâmetro                   | Prsht. h |
+| Cabeçalho                   | Prsht. h |
 | Nomes Unicode e ANSI                   | **PROPSHEETHEADERW** (Unicode) e **PROPSHEETHEADERA** (ANSI) |

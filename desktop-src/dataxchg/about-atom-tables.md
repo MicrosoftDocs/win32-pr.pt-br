@@ -14,12 +14,12 @@ keywords:
 - átomos de cadeia de caracteres
 ms.topic: article
 ms.date: 08/25/2020
-ms.openlocfilehash: 27f7cdb4bb2dc2fd97b4dba6909022b297df1a1d
-ms.sourcegitcommit: e985e0532f0f895ae418e8c2658dac819cdae3b1
+ms.openlocfilehash: 92a8304e1e96c7385ddb11ba6391258acbe62a26
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "104366796"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549601"
 ---
 # <a name="about-atom-tables"></a>Sobre tabelas Atom
 
@@ -27,25 +27,25 @@ Uma *tabela Atom* é uma tabela definida pelo sistema que armazena cadeias de ca
 
 O sistema fornece várias tabelas Atom. Cada tabela Atom atende a uma finalidade diferente. Por exemplo, os aplicativos troca dinâmica de dados (DDE) usam a [tabela global Atom](#global-atom-table) para compartilhar cadeias de caracteres de nome de item e de tópico-nome com outros aplicativos. Em vez de passar cadeias de caracteres reais, um aplicativo DDE passa Atoms globais para seu aplicativo de parceiro. O parceiro usa os átomos para obter as cadeias de caracteres da tabela Atom.
 
-Os aplicativos podem usar tabelas Atom locais para armazenar suas próprias associações de nome de item.
+Os aplicativos podem usar tabelas atom locais para armazenar suas próprias associações de nome de item.
 
-O sistema usa tabelas Atom que não estão diretamente acessíveis aos aplicativos. No entanto, o aplicativo usa esses átomos ao chamar uma variedade de funções. Por exemplo, os formatos de área de transferência registrados são armazenados em uma tabela Atom interna usada pelo sistema. Um aplicativo adiciona Atoms a essa tabela Atom usando a função [**RegisterClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata) . Além disso, as classes registradas são armazenadas em uma tabela Atom interna usada pelo sistema. Um aplicativo adiciona Atoms a essa tabela Atom usando a função [**registerClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa) ou [**RegisterClassEx**](/windows/desktop/api/winuser/nf-winuser-registerclassexa) .
+O sistema usa tabelas atom que não são diretamente acessíveis a aplicativos. No entanto, o aplicativo usa esses átomos ao chamar uma variedade de funções. Por exemplo, os formatos de área de transferência registrados são armazenados em uma tabela atom interna usada pelo sistema. Um aplicativo adiciona átomos a essa tabela atom usando a [**função RegisterClipboardFormat.**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata) Além disso, as classes registradas são armazenadas em uma tabela atom interna usada pelo sistema. Um aplicativo adiciona átomos a essa tabela atom usando [**a função RegisterClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa) ou [**RegisterClassEx.**](/windows/desktop/api/winuser/nf-winuser-registerclassexa)
 
 Os tópicos a seguir são discutidos nesta seção.
 
--   [Tabela Atom global](#global-atom-table)
--   [Tabela Atom do usuário](#user-atom-table)
--   [Tabelas Atom locais](#local-atom-tables)
--   [Tipos Atom](#atom-types)
+-   [Tabela Atom Global](#global-atom-table)
+-   [Tabela Atom do Usuário](#user-atom-table)
+-   [Tabelas Atom Locais](#local-atom-tables)
+-   [Tipos atom](#atom-types)
     -   [Átomos de cadeia de caracteres](#string-atoms)
-    -   [Atoms inteiros](#integer-atoms)
--   [Criação de Atom e contagem de uso](#atom-creation-and-usage-count)
--   [Consultas de tabela Atom](#atom-table-queries)
--   [Formatos de cadeia de caracteres Atom](#atom-string-formats)
+    -   [Átomos inteiros](#integer-atoms)
+-   [Criação atom e contagem de uso](#atom-creation-and-usage-count)
+-   [Consultas atom-table](#atom-table-queries)
+-   [Formatos de cadeia de caracteres atom](#atom-string-formats)
 
-## <a name="global-atom-table"></a>Tabela Atom global
+## <a name="global-atom-table"></a>Tabela Atom Global
 
-A tabela global Atom está disponível para todos os aplicativos. Quando um aplicativo coloca uma cadeia de caracteres na tabela de átomo global, o sistema gera um átomo que é exclusivo em todo o sistema. Qualquer aplicativo que tenha o Atom pode obter a cadeia de caracteres identificada consultando a tabela Atom global.
+A tabela atom global está disponível para todos os aplicativos. Quando um aplicativo coloca uma cadeia de caracteres na tabela atom global, o sistema gera um atom exclusivo em todo o sistema. Qualquer aplicativo que tenha o Atom pode obter a cadeia de caracteres identificada consultando a tabela Atom global.
 
 Um aplicativo que define um formato de dados DDE privado para compartilhar dados com outros aplicativos deve posicionar o nome de formato na tabela Atom global. Essa técnica impede conflitos com os nomes de formatos definidos pelo sistema ou por outros aplicativos e torna os identificadores (Atoms) para as mensagens ou os formatos disponíveis para os outros aplicativos.
 
@@ -57,19 +57,19 @@ Além da tabela de Atom global, a tabela Atom do usuário é outra tabela Atom d
  
 Muitas APIs críticas, incluindo [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindowa), dependem de átomos de usuário. Portanto, o esgotamento de espaço na tabela Atom do usuário resultará em problemas sérios; por exemplo, todos os aplicativos podem falhar ao iniciar. Aqui estão algumas recomendações para garantir que seu aplicativo utilize tabelas Atom com eficiência e preserve a confiabilidade e o desempenho do aplicativo e do sistema:  
 
-1. Você deve limitar o uso do aplicativo da tabela Atom do usuário. Armazenar cadeias de caracteres exclusivas usando APIs como `RegisterClass` , `RegisterWindowMessage` ou `RegisterClipboardFormat` usa espaço na tabela Atom do usuário, que é usada globalmente por outros aplicativos para registrar classes de janela usando cadeias de caracteres. Se possível, você deve usar [addatom](/windows/desktop/api/Winbase/nf-winbase-addatomw) / [DeleteAtom](/windows/desktop/api/Winbase/nf-winbase-deleteatom) para armazenar cadeias de caracteres em uma tabela Atom local ou [GlobalAddAtom](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) / [GlobalDeleteAtom](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) se os átomos forem necessários em processo cruzado.
+1. Você deve limitar o uso do aplicativo da tabela Atom do usuário. Armazenar cadeias de caracteres exclusivas usando APIs como `RegisterClass` , `RegisterWindowMessage` ou `RegisterClipboardFormat` usa espaço na tabela Atom do usuário, que é usada globalmente por outros aplicativos para registrar classes de janela usando cadeias de caracteres. Se possível, você deverá usar [AddAtom](/windows/desktop/api/Winbase/nf-winbase-addatomw)DeleteAtom para armazenar cadeias de caracteres em uma tabela / [](/windows/desktop/api/Winbase/nf-winbase-deleteatom) atom local ou [GlobalAddAtom](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) / [GlobalDeleteAtom](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) se os átomos são necessários entre processos.
 
-1. Se houver preocupação com o aplicativo que está causando problemas de tabela Atom do usuário, você poderá investigar a causa raiz conectando o depurador de kernel e dividindo o processo em chamadas para `UserAddAtomEx` ( `bae1 win32kbase!UserAddAtomEx /p <eprocess> "kc10;g"` ). Procure `user32!` na pilha de chamadas para ver qual API está sendo chamada. A metodologia é semelhante à detecção de problemas de tabela Atom global explicada na [identificação de vazamentos de tabela de Atom global](/archive/blogs/ntdebugging/identifying-global-atom-table-leaks). Outra maneira de despejar o conteúdo da tabela Atom do usuário é chamando [GetClipboardFormatName](/windows/win32/api/winuser/nf-winuser-getclipboardformatnamea) sobre o intervalo de átomos possíveis de 0XC000 para 0xFFFF. Se a contagem total de Atoms subir constantemente enquanto o aplicativo estiver em execução ou não retornar à linha de base quando o aplicativo for fechado, haverá um problema.
+1. Se houver preocupação sobre o aplicativo que está causando problemas de tabela atom do usuário, você poderá investigar a causa raiz conectando o depurador de kernel e entrando no processo em chamadas para `UserAddAtomEx` ( `bae1 win32kbase!UserAddAtomEx /p <eprocess> "kc10;g"` ). Procure no `user32!` callstack para ver qual API está sendo chamada. A metodologia é semelhante à detecção de problemas de tabela atom global explicada em [Identificando vazamentos globais de tabela atom.](/archive/blogs/ntdebugging/identifying-global-atom-table-leaks) Outra maneira de despejar o conteúdo da tabela atom do usuário é chamando [GetClipboardFormatName](/windows/win32/api/winuser/nf-winuser-getclipboardformatnamea) pelo intervalo de átomos possíveis de 0xC000 a 0xFFFF. Se a contagem total de atoms aumentar constantemente enquanto o aplicativo estiver em execução ou não retornar à linha de base quando o aplicativo for fechado, haverá um problema.
 
-## <a name="local-atom-tables"></a>Tabelas Atom locais
+## <a name="local-atom-tables"></a>Tabelas Atom Locais
 
-Um aplicativo pode usar uma tabela Atom local para gerenciar com eficiência um grande número de cadeias de caracteres usadas somente dentro do aplicativo. Essas cadeias de caracteres e os átomos associados estão disponíveis somente para o aplicativo que criou a tabela.
+Um aplicativo pode usar uma tabela atom local para gerenciar com eficiência um grande número de cadeias de caracteres usadas somente dentro do aplicativo. Essas cadeias de caracteres e os átomos associados estão disponíveis apenas para o aplicativo que criou a tabela.
 
-Um aplicativo que requer a mesma cadeia de caracteres em várias estruturas pode reduzir o uso de memória usando uma tabela Atom local. Em vez de copiar a cadeia de caracteres em cada estrutura, o aplicativo pode posicionar a cadeia de caracteres na tabela Atom e incluir o átomo resultante nas estruturas. Dessa forma, uma cadeia de caracteres aparece apenas uma vez na memória, mas pode ser usada muitas vezes no aplicativo.
+Um aplicativo que exige a mesma cadeia de caracteres em várias estruturas pode reduzir o uso de memória usando uma tabela atom local. Em vez de copiar a cadeia de caracteres em cada estrutura, o aplicativo pode colocar a cadeia de caracteres na tabela atom e incluir o atom resultante nas estruturas. Dessa forma, uma cadeia de caracteres aparece apenas uma vez na memória, mas pode ser usada muitas vezes no aplicativo.
 
-Os aplicativos também podem usar tabelas Atom locais para economizar tempo ao pesquisar uma cadeia de caracteres específica. Para executar uma pesquisa, um aplicativo precisa apenas posicionar a cadeia de caracteres de pesquisa na tabela Atom e comparar o átomo resultante com os átomos nas estruturas relevantes. Comparar Atoms normalmente é mais rápido do que comparar cadeias de caracteres.
+Os aplicativos também podem usar tabelas atom locais para economizar tempo ao pesquisar uma cadeia de caracteres específica. Para executar uma pesquisa, um aplicativo só precisa colocar a cadeia de caracteres de pesquisa na tabela atom e comparar o atom resultante com os átomos nas estruturas relevantes. A comparação de átomos normalmente é mais rápida do que comparar cadeias de caracteres.
 
-As tabelas Atom são implementadas como tabelas de hash. Por padrão, uma tabela Atom local usa 37 buckets para sua tabela de hash. No entanto, você pode alterar o número de buckets usados chamando a função [**InitAtomTable**](/windows/desktop/api/Winbase/nf-winbase-initatomtable) . No entanto, se o aplicativo chamar **InitAtomTable**, ele deverá fazê-lo antes de chamar qualquer outra função de gerenciamento de Atom.
+As tabelas Atom são implementadas como tabelas de hash. Por padrão, uma tabela atom local usa 37 buckets para sua tabela de hash. No entanto, você pode alterar o número de buckets usados chamando a função [**InitAtomTable**](/windows/desktop/api/Winbase/nf-winbase-initatomtable) . No entanto, se o aplicativo chamar **InitAtomTable**, ele deverá fazê-lo antes de chamar qualquer outra função de gerenciamento de Atom.
 
 ## <a name="atom-types"></a>Tipos Atom
 
@@ -89,23 +89,23 @@ Quando os aplicativos passam cadeias de caracteres terminadas com nulos para as 
 -   Os valores dos átomos de cadeia de caracteres estão no intervalo 0xC000 (MAXINTATOM) por meio de 0xFFFF.
 -   O caso não é significativo em pesquisas de um nome Atom em uma tabela Atom. Além disso, a cadeia de caracteres inteira deve corresponder em uma operação de pesquisa; nenhuma correspondência de subcadeia de caracteres é executada.
 -   A cadeia de caracteres associada a um átomo de cadeia de caracteres não pode ter mais de 255 bytes de tamanho. Essa limitação se aplica a todas as funções Atom.
--   Uma *contagem de referência* é associada a cada nome de Atom. A contagem é incrementada sempre que o nome do Atom é adicionado à tabela e decrementado toda vez que o nome do Atom é excluído dela. Isso impede que usuários diferentes da mesma cadeia de caracteres Atom destruam os nomes de Atom uns dos outros. Quando a contagem de referência para um nome Atom é igual a zero, o sistema remove o Atom e o nome do Atom da tabela.
+-   Uma *contagem de referência* é associada a cada nome de Atom. A contagem é incrementada sempre que o nome do Atom é adicionado à tabela e decrementado toda vez que o nome do Atom é excluído dela. Isso impede que usuários diferentes do mesmo atom de cadeia de caracteres destrói os nomes atom uns dos outros. Quando a contagem de referência para um nome atom é igual a zero, o sistema remove o atom e o nome atom da tabela.
 
-### <a name="integer-atoms"></a>Atoms inteiros
+### <a name="integer-atoms"></a>Átomos inteiros
 
-Os Atoms inteiros diferem dos átomos de cadeia de caracteres das seguintes maneiras:
+Os átomos inteiros diferem dos átomos de cadeia de caracteres das seguintes maneiras:
 
--   Os valores de átomos de inteiros estão no intervalo de 0x0001 a 0xBFFF (**MAXINTATOM**– 1).
--   A representação de cadeia de caracteres de um inteiro Atom é \# *dddd*, em que os valores representados por *dddd* são dígitos decimais. Os zeros à esquerda são ignorados.
--   Não há nenhuma contagem de referência ou sobrecarga de armazenamento associada a um Atom inteiro.
+-   Os valores de átomos inteiros estão no intervalo 0x0001 a 0xBFFF (**MAXINTATOM**– 1).
+-   A representação de cadeia de caracteres de um atom inteiro é dddd , em que os valores representados por \#  *dddd são* dígitos decimais. Zeros à esquerda são ignorados.
+-   Não há nenhuma contagem de referência ou sobrecarga de armazenamento associada a um atom inteiro.
 
-## <a name="atom-creation-and-usage-count"></a>Criação de Atom e contagem de uso
+## <a name="atom-creation-and-usage-count"></a>Criação atom e contagem de uso
 
-Um aplicativo cria um Atom local chamando a função [**addatom**](/windows/desktop/api/Winbase/nf-winbase-addatomw) ; Ele cria um Atom global chamando a função [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) . Ambas as funções exigem um ponteiro para uma cadeia de caracteres. O sistema pesquisa a tabela de Atom apropriada para a cadeia de caracteres e retorna o átomo correspondente para o aplicativo. No caso de um átomo de cadeia de caracteres, se a cadeia de caracteres já residir na tabela Atom, o sistema incrementará a contagem de referência para a cadeia de caracteres durante esse processo.
+Um aplicativo cria um atom local chamando a [**função AddAtom;**](/windows/desktop/api/Winbase/nf-winbase-addatomw) ele cria um atom global chamando a [**função GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) Ambas as funções exigem um ponteiro para uma cadeia de caracteres. O sistema pesquisa a tabela atom apropriada para a cadeia de caracteres e retorna o atom correspondente ao aplicativo. No caso de um atom de cadeia de caracteres, se a cadeia de caracteres já residir na tabela atom, o sistema incrementa a contagem de referência para a cadeia de caracteres durante esse processo.
 
-Chamadas repetidas para adicionar o mesmo nome de Atom retornam o mesmo Atom. Se o nome do Atom não existir na tabela quando [**addatom**](/windows/desktop/api/Winbase/nf-winbase-addatomw) for chamado, o nome do Atom será adicionado à tabela e um novo Atom será retornado. Se for uma cadeia de caracteres Atom, sua contagem de referência também será definida como um.
+Chamadas repetidas para adicionar o mesmo nome atom retornam o mesmo atom. Se o nome atom não existir na tabela quando [**AddAtom**](/windows/desktop/api/Winbase/nf-winbase-addatomw) for chamado, o nome atom será adicionado à tabela e um novo atom será retornado. Se for um atom de cadeia de caracteres, sua contagem de referência também será definida como um.
 
-Um aplicativo deve chamar a função [**DeleteAtom**](/windows/desktop/api/Winbase/nf-winbase-deleteatom) quando ele não precisar mais usar um Atom local; Ele deve chamar a função [**GlobalDeleteAtom**](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) quando ele não precisar mais de um átomo global. No caso de um átomo de cadeia de caracteres, qualquer uma dessas funções reduz a contagem de referência do átomo correspondente por um. Quando a contagem de referência chega a zero, o sistema exclui o nome do Atom da tabela.
+Um aplicativo deve chamar a [**função DeleteAtom**](/windows/desktop/api/Winbase/nf-winbase-deleteatom) quando não precisar mais usar um atom local; ele deve chamar a [**função GlobalDeleteAtom**](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) quando não precisar mais de um atom global. No caso de um atom de cadeia de caracteres, qualquer uma dessas funções reduz a contagem de referência do atom correspondente em um. Quando a contagem de referência atinge zero, o sistema exclui o nome atom da tabela.
 
 O nome do Atom de uma cadeia de caracteres Atom permanece na tabela global Atom, desde que sua contagem de referência seja maior que zero, mesmo depois que o aplicativo que o colocou na tabela for encerrado. Uma tabela Atom local é destruída quando o aplicativo associado é encerrado, independentemente das contagens de referência dos átomos na tabela.
 
@@ -121,15 +121,15 @@ As funções [**addatom**](/windows/desktop/api/Winbase/nf-winbase-addatomw), [*
 
 
 
-|                    |                                                                                                    |
+|     Formato da cadeia de caracteres               |    Description                                                                                                |
 |--------------------|----------------------------------------------------------------------------------------------------|
 | \#*dia*           | Um inteiro especificado como uma cadeia de caracteres decimal. Usado para criar ou encontrar um Atom inteiro.                  |
 | *nome Atom da cadeia de caracteres* | Um nome Atom de cadeia de caracteres. Usado para adicionar um nome Atom de cadeia de caracteres a uma tabela Atom e receber um Atom em retorno. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

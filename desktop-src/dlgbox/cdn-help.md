@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c03fae474f6622e1ccec0c5b52b0dfb473ba438
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 0abd3519bdc877eca24304b1104a12d51b2dfe4f
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590843"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550061"
 ---
 # <a name="cdn_help-notification-code"></a>Código de notificação da ajuda da CDN \_
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário clica no botão **ajuda** .
 
@@ -102,6 +102,4 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 
