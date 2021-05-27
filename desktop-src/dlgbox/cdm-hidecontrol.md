@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_HIDECONTROL (Commdlg. h)
-description: Oculta o controle especificado em uma caixa de diálogo abrir no estilo do Explorer ou salvar como.
+title: CDM_HIDECONTROL mensagem (Commdlg.h)
+description: Oculta o controle especificado em uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
 ms.assetid: 5bf7f861-d38c-491a-89f0-5b3dfce8abfc
 keywords:
-- Caixas de diálogo de CDM_HIDECONTROL mensagem
+- CDM_HIDECONTROL caixa de diálogo da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c0f2f41017373d9064da8f1024066f131063d9d
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 21f1a5a7a1830ceeb2c3671b0dfb538ad89e0a58
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590873"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548651"
 ---
-# <a name="cdm_hidecontrol-message"></a><span data-ttu-id="3ac82-104">\_Mensagem CDM HIDECONTROL</span><span class="sxs-lookup"><span data-stu-id="3ac82-104">CDM\_HIDECONTROL message</span></span>
+# <a name="cdm_hidecontrol-message"></a><span data-ttu-id="28d01-104">Mensagem \_ HIDECONTROL do CDM</span><span class="sxs-lookup"><span data-stu-id="28d01-104">CDM\_HIDECONTROL message</span></span>
 
-<span data-ttu-id="3ac82-105">\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](/windows/win32/shell/common-file-dialog).</span><span class="sxs-lookup"><span data-stu-id="3ac82-105">\[Starting with Windows Vista, the **Open** and **Save As** common dialog boxes have been superseded by the [Common Item Dialog](/windows/win32/shell/common-file-dialog).</span></span> <span data-ttu-id="3ac82-106">Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]</span><span class="sxs-lookup"><span data-stu-id="3ac82-106">We recommended that you use the Common Item Dialog API instead of these dialog boxes from the Common Dialog Box Library.\]</span></span>
+<span data-ttu-id="28d01-105">\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md).</span><span class="sxs-lookup"><span data-stu-id="28d01-105">\[Starting with Windows Vista, the **Open** and **Save As** common dialog boxes have been superseded by the [Common Item Dialog](../shell/common-file-dialog.md).</span></span> <span data-ttu-id="28d01-106">Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]</span><span class="sxs-lookup"><span data-stu-id="28d01-106">We recommended that you use the Common Item Dialog API instead of these dialog boxes from the Common Dialog Box Library.\]</span></span>
 
-<span data-ttu-id="3ac82-107">Oculta o controle especificado em uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** .</span><span class="sxs-lookup"><span data-stu-id="3ac82-107">Hides the specified control in an Explorer-style **Open** or **Save As** dialog box.</span></span> <span data-ttu-id="3ac82-108">A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.</span><span class="sxs-lookup"><span data-stu-id="3ac82-108">The dialog box must have been created with the **OFN\_EXPLORER** flag; otherwise, the message fails.</span></span>
+<span data-ttu-id="28d01-107">Oculta o controle especificado em uma  caixa de diálogo Abrir ou Salvar **como** no estilo Explorer.</span><span class="sxs-lookup"><span data-stu-id="28d01-107">Hides the specified control in an Explorer-style **Open** or **Save As** dialog box.</span></span> <span data-ttu-id="28d01-108">A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.</span><span class="sxs-lookup"><span data-stu-id="28d01-108">The dialog box must have been created with the **OFN\_EXPLORER** flag; otherwise, the message fails.</span></span>
 
 
 ```C++
@@ -36,69 +36,67 @@ ms.locfileid: "107590873"
 
 
 
-## <a name="parameters"></a><span data-ttu-id="3ac82-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="3ac82-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="28d01-109">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="28d01-109">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="3ac82-110">*wParam*</span><span class="sxs-lookup"><span data-stu-id="3ac82-110">*wParam*</span></span> 
+<span data-ttu-id="28d01-110">*wParam*</span><span class="sxs-lookup"><span data-stu-id="28d01-110">*wParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="3ac82-111">O identificador do controle a ser ocultado.</span><span class="sxs-lookup"><span data-stu-id="3ac82-111">The identifier of the control to be hidden.</span></span>
+<span data-ttu-id="28d01-111">O identificador do controle a ser oculto.</span><span class="sxs-lookup"><span data-stu-id="28d01-111">The identifier of the control to be hidden.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="3ac82-112">*lParam*</span><span class="sxs-lookup"><span data-stu-id="3ac82-112">*lParam*</span></span> 
+<span data-ttu-id="28d01-112">*lParam*</span><span class="sxs-lookup"><span data-stu-id="28d01-112">*lParam*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="3ac82-113">Este parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="3ac82-113">This parameter is not used.</span></span>
+<span data-ttu-id="28d01-113">Este parâmetro não é usado.</span><span class="sxs-lookup"><span data-stu-id="28d01-113">This parameter is not used.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="3ac82-114">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="3ac82-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="28d01-114">Retornar valor</span><span class="sxs-lookup"><span data-stu-id="28d01-114">Return value</span></span>
 
-<span data-ttu-id="3ac82-115">Esta mensagem não tem nenhum valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="3ac82-115">This message has no return value.</span></span>
+<span data-ttu-id="28d01-115">Essa mensagem não tem nenhum valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="28d01-115">This message has no return value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="3ac82-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="3ac82-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="28d01-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="28d01-116">Remarks</span></span>
 
-<span data-ttu-id="3ac82-117">A macro correspondente é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="3ac82-117">The corresponding macro is as follows:</span></span>
+<span data-ttu-id="28d01-117">A macro correspondente é a seguinte:</span><span class="sxs-lookup"><span data-stu-id="28d01-117">The corresponding macro is as follows:</span></span>
 
 ``` syntax
 void CommDlg_OpenSave_HideControl(hwnd, wparam);
 ```
 
-## <a name="requirements"></a><span data-ttu-id="3ac82-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3ac82-118">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="28d01-118">Requisitos</span><span class="sxs-lookup"><span data-stu-id="28d01-118">Requirements</span></span>
 
 
 
-| <span data-ttu-id="3ac82-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="3ac82-119">Requirement</span></span> | <span data-ttu-id="3ac82-120">Valor</span><span class="sxs-lookup"><span data-stu-id="3ac82-120">Value</span></span> |
+| <span data-ttu-id="28d01-119">Requisito</span><span class="sxs-lookup"><span data-stu-id="28d01-119">Requirement</span></span> | <span data-ttu-id="28d01-120">Valor</span><span class="sxs-lookup"><span data-stu-id="28d01-120">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3ac82-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3ac82-121">Minimum supported client</span></span><br/> | <span data-ttu-id="3ac82-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="3ac82-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                               |
-| <span data-ttu-id="3ac82-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3ac82-123">Minimum supported server</span></span><br/> | <span data-ttu-id="3ac82-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="3ac82-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                     |
-| <span data-ttu-id="3ac82-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3ac82-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="3ac82-126"><dt>Commdlg. h (incluir Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="3ac82-126"><dt>Commdlg.h (include Windows.h)</dt></span></span> </dl> |
+| <span data-ttu-id="28d01-121">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="28d01-121">Minimum supported client</span></span><br/> | <span data-ttu-id="28d01-122">Windows 2000 Professional \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="28d01-122">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                               |
+| <span data-ttu-id="28d01-123">Servidor mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="28d01-123">Minimum supported server</span></span><br/> | <span data-ttu-id="28d01-124">Windows 2000 Server \[somente aplicativos da área de trabalho\]</span><span class="sxs-lookup"><span data-stu-id="28d01-124">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                     |
+| <span data-ttu-id="28d01-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="28d01-125">Header</span></span><br/>                   | <dl> <span data-ttu-id="28d01-126"><dt>Commdlg.h (inclua Windows.h)</dt></span><span class="sxs-lookup"><span data-stu-id="28d01-126"><dt>Commdlg.h (include Windows.h)</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="3ac82-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="3ac82-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="28d01-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="28d01-127">See also</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="3ac82-128">**Referência**</span><span class="sxs-lookup"><span data-stu-id="3ac82-128">**Reference**</span></span>
+<span data-ttu-id="28d01-128">**Referência**</span><span class="sxs-lookup"><span data-stu-id="28d01-128">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="3ac82-129">**GetOpenFileName**</span><span class="sxs-lookup"><span data-stu-id="3ac82-129">**GetOpenFileName**</span></span>](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[<span data-ttu-id="28d01-129">**Getopenfilename**</span><span class="sxs-lookup"><span data-stu-id="28d01-129">**GetOpenFileName**</span></span>](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[<span data-ttu-id="3ac82-130">**GetSaveFileName**</span><span class="sxs-lookup"><span data-stu-id="3ac82-130">**GetSaveFileName**</span></span>](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[<span data-ttu-id="28d01-130">**Getsavefilename**</span><span class="sxs-lookup"><span data-stu-id="28d01-130">**GetSaveFileName**</span></span>](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[<span data-ttu-id="3ac82-131">**DA OPENFILENAME**</span><span class="sxs-lookup"><span data-stu-id="3ac82-131">**OPENFILENAME**</span></span>](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[<span data-ttu-id="28d01-131">**Openfilename**</span><span class="sxs-lookup"><span data-stu-id="28d01-131">**OPENFILENAME**</span></span>](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-<span data-ttu-id="3ac82-132">**Conceitua**</span><span class="sxs-lookup"><span data-stu-id="3ac82-132">**Conceptual**</span></span>
+<span data-ttu-id="28d01-132">**Conceitual**</span><span class="sxs-lookup"><span data-stu-id="28d01-132">**Conceptual**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="3ac82-133">Biblioteca de caixa de diálogo comum</span><span class="sxs-lookup"><span data-stu-id="3ac82-133">Common Dialog Box Library</span></span>](common-dialog-box-library.md)
+[<span data-ttu-id="28d01-133">Biblioteca de caixas de diálogo comuns</span><span class="sxs-lookup"><span data-stu-id="28d01-133">Common Dialog Box Library</span></span>](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

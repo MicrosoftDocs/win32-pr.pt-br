@@ -1,35 +1,35 @@
 ---
-description: Especifica se o alocador de exemplo (SA) da MFT deve alocar a textura do Direct3D subjacente usando o sinalizador D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
-title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform. h)
+description: Especifica se o SA (Alocador de Exemplo) do MFT deve alocar a Textura Direct3D subjacente usando o sinalizador D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE dados.
+title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform.h)
 ms.topic: reference
 ms.date: 03/31/2018
-ms.openlocfilehash: ac70ee8c3015a2e08df2ee78b8051723707a1686
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: fedcfbe98344dd9b424c1a8ce90e847e98f1af51
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107224018"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548701"
 ---
-# <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a><span data-ttu-id="3d72b-103">\_Atributo MF SA \_ D3D \_ ALLOCATE \_ replayable \_ Resources</span><span class="sxs-lookup"><span data-stu-id="3d72b-103">MF\_SA\_D3D\_ALLOCATE\_DISPLAYABLE\_RESOURCES attribute</span></span>
+# <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a><span data-ttu-id="912db-103">Atributo MF \_ SA \_ D3D \_ ALLOCATE \_ \_ DISPLAYABLE RESOURCES</span><span class="sxs-lookup"><span data-stu-id="912db-103">MF\_SA\_D3D\_ALLOCATE\_DISPLAYABLE\_RESOURCES attribute</span></span>
 
-<span data-ttu-id="3d72b-104">Especifica se o alocador de exemplo (SA) da MFT deve alocar a textura do Direct3D subjacente usando o sinalizador [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) .</span><span class="sxs-lookup"><span data-stu-id="3d72b-104">Specifies if the MFT’s Sample Allocator (SA) should allocate the underlying Direct3D Texture using the [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) flag.</span></span> 
+<span data-ttu-id="912db-104">Especifica se o SA (Alocador de Exemplo) do MFT deve alocar a Textura Direct3D subjacente usando o sinalizador [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) dados.</span><span class="sxs-lookup"><span data-stu-id="912db-104">Specifies if the MFT’s Sample Allocator (SA) should allocate the underlying Direct3D Texture using the [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) flag.</span></span> 
 
-## <a name="data-type"></a><span data-ttu-id="3d72b-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="3d72b-105">Data type</span></span>
+## <a name="data-type"></a><span data-ttu-id="912db-105">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="912db-105">Data type</span></span>
 
-<span data-ttu-id="3d72b-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="3d72b-106">**UINT32**</span></span>
+<span data-ttu-id="912db-106">**UINT32**</span><span class="sxs-lookup"><span data-stu-id="912db-106">**UINT32**</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="3d72b-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="3d72b-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="912db-107">Comentários</span><span class="sxs-lookup"><span data-stu-id="912db-107">Remarks</span></span>
 
-<span data-ttu-id="3d72b-108">Esse atributo está disponível em estrela com o Build 14383 do Windows 10 Preview.</span><span class="sxs-lookup"><span data-stu-id="3d72b-108">This attribute is available staring with Windows 10 Preview build 14383.</span></span> 
+<span data-ttu-id="912db-108">Esse atributo está disponível com Windows 10 build 20348.</span><span class="sxs-lookup"><span data-stu-id="912db-108">This attribute is available staring with Windows 10 build 20348.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="3d72b-109">O campo membro **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** da enumeração [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) estará disponível em uma versão futura do SDK.</span><span class="sxs-lookup"><span data-stu-id="3d72b-109">The **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** member field of the [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) enumeration will be available in a future release of the SDK.</span></span>
+> <span data-ttu-id="912db-109">O **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** de membro da [enumeração D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) estará disponível em uma versão futura do SDK.</span><span class="sxs-lookup"><span data-stu-id="912db-109">The **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** member field of the [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) enumeration will be available in a future release of the SDK.</span></span>
 
-<span data-ttu-id="3d72b-110">A camada da plataforma Media Foundation define o atributo **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** ao renderizar o vídeo.</span><span class="sxs-lookup"><span data-stu-id="3d72b-110">The Media Foundation platform layer sets the **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** attribute when rendering video.</span></span> <span data-ttu-id="3d72b-111">Um aplicativo também pode optar por definir esse atributo se quiser implementar seu próprio processador de vídeo e usar recursos de D3D11 de exibição.</span><span class="sxs-lookup"><span data-stu-id="3d72b-111">An app could also opt to set this attribute if it wants to implement its own video renderer and make use of D3D11 Displayable Resources.</span></span> 
+<span data-ttu-id="912db-110">A camada Media Foundation plataforma define o **atributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** ao renderizar o vídeo.</span><span class="sxs-lookup"><span data-stu-id="912db-110">The Media Foundation platform layer sets the **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** attribute when rendering video.</span></span> <span data-ttu-id="912db-111">Um aplicativo também pode optar por definir esse atributo se quiser implementar seu próprio renderador de vídeo e usar recursos exibiáveis D3D11.</span><span class="sxs-lookup"><span data-stu-id="912db-111">An app could also opt to set this attribute if it wants to implement its own video renderer and make use of D3D11 Displayable Resources.</span></span> 
 
-## <a name="example"></a><span data-ttu-id="3d72b-112">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3d72b-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="912db-112">Exemplo</span><span class="sxs-lookup"><span data-stu-id="912db-112">Example</span></span>
 
-<span data-ttu-id="3d72b-113">O exemplo de código a seguir demonstra o uso do atributo **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** .</span><span class="sxs-lookup"><span data-stu-id="3d72b-113">The following code example demonstrates the usage of the **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** attribute.</span></span>
+<span data-ttu-id="912db-113">O exemplo de código a seguir demonstra o uso do **atributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES.**</span><span class="sxs-lookup"><span data-stu-id="912db-113">The following code example demonstrates the usage of the **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** attribute.</span></span>
 
 ```cpp
 class DecoderMFT : public IMFAttributes, public IMFTransform 
@@ -126,31 +126,31 @@ private:
 }; 
 ```
 
-## <a name="requirements"></a><span data-ttu-id="3d72b-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="3d72b-114">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="912db-114">Requisitos</span><span class="sxs-lookup"><span data-stu-id="912db-114">Requirements</span></span>
 
 
 
-| <span data-ttu-id="3d72b-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="3d72b-115">Requirement</span></span> | <span data-ttu-id="3d72b-116">Valor</span><span class="sxs-lookup"><span data-stu-id="3d72b-116">Value</span></span> |
+| <span data-ttu-id="912db-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="912db-115">Requirement</span></span> | <span data-ttu-id="912db-116">Valor</span><span class="sxs-lookup"><span data-stu-id="912db-116">Value</span></span> |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3d72b-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="3d72b-117">Minimum supported client</span></span><br/> | <span data-ttu-id="3d72b-118">Build 14383 do Windows 10 Preview</span><span class="sxs-lookup"><span data-stu-id="3d72b-118">Windows 10 Preview Build 14383</span></span><br/>                                    |
-| <span data-ttu-id="3d72b-119">parâmetro</span><span class="sxs-lookup"><span data-stu-id="3d72b-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="3d72b-120"><dt>Mftransform. h</dt></span><span class="sxs-lookup"><span data-stu-id="3d72b-120"><dt>Mftransform.h</dt></span></span> </dl> |
+| <span data-ttu-id="912db-117">Cliente mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="912db-117">Minimum supported client</span></span><br/> | <span data-ttu-id="912db-118">Windows 10 build 20348</span><span class="sxs-lookup"><span data-stu-id="912db-118">Windows 10 build 20348</span></span><br/>                                    |
+| <span data-ttu-id="912db-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="912db-119">Header</span></span><br/>                   | <dl> <span data-ttu-id="912db-120"><dt>Mftransform.h</dt></span><span class="sxs-lookup"><span data-stu-id="912db-120"><dt>Mftransform.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="3d72b-121">Veja também</span><span class="sxs-lookup"><span data-stu-id="3d72b-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="912db-121">Confira também</span><span class="sxs-lookup"><span data-stu-id="912db-121">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3d72b-122">Lista alfabética de atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="3d72b-122">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+[<span data-ttu-id="912db-122">Lista alfabética de Media Foundation atributos</span><span class="sxs-lookup"><span data-stu-id="912db-122">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[<span data-ttu-id="3d72b-123">**IMFAttributes:: GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="3d72b-123">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[<span data-ttu-id="912db-123">**IMFAttributes::GetUINT32**</span><span class="sxs-lookup"><span data-stu-id="912db-123">**IMFAttributes::GetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[<span data-ttu-id="3d72b-124">**IMFAttributes:: setuint32**</span><span class="sxs-lookup"><span data-stu-id="3d72b-124">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[<span data-ttu-id="912db-124">**IMFAttributes::SetUINT32**</span><span class="sxs-lookup"><span data-stu-id="912db-124">**IMFAttributes::SetUINT32**</span></span>](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[<span data-ttu-id="3d72b-125">Atributos de Media Foundation</span><span class="sxs-lookup"><span data-stu-id="3d72b-125">Media Foundation Attributes</span></span>](media-foundation-attributes.md)
+[<span data-ttu-id="912db-125">Media Foundation atributos</span><span class="sxs-lookup"><span data-stu-id="912db-125">Media Foundation Attributes</span></span>](media-foundation-attributes.md)
 </dt> </dl>
 
  
