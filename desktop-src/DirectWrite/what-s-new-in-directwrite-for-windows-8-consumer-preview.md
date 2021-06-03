@@ -4,12 +4,12 @@ description: Aqui estão algumas das novas adições ao DirectWrite.
 ms.assetid: 2512D222-C6EB-4C2D-80A6-7978FED56F7A
 ms.topic: article
 ms.date: 09/23/2019
-ms.openlocfilehash: bf1a62917e18dcda7e7c4e3f1b05731b60628967
-ms.sourcegitcommit: dd4a3716477b1363be58ecc0d439029f81467104
+ms.openlocfilehash: 6b54a7f671ab6472ee2e412c2797d80bf7de245e
+ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "103644196"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "111349955"
 ---
 # <a name="whats-new-in-directwrite"></a>O que há de novo no DirectWrite
 
@@ -132,65 +132,65 @@ A partir do Windows 10, as fontes incluídas com o Windows estão disponíveis e
 
 O suporte para os mecanismos de serviço de fonte DirectWrite foi implementado na estrutura XAML, o que significa que todos os aplicativos que usam XAML não exigem nenhuma alteração de código para aproveitar o serviço de fonte. O [exemplo de código de fontes baixáveis (XAML)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCloudFontIntegration) demonstra isso. Aplicativos que chamam APIs DirectWrite diretamente precisarão usar novas APIs para usar os mecanismos de serviço de fonte. Para mais informações, consulte os seguintes tópicos:
 
--   Método [**IDWriteFactory3:: GetSystemFontCollection**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-getsystemfontcollection)
+-   [**Método IDWriteFactory3::GetSystemFontCollection**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-getsystemfontcollection)
 -   Interface [**IDWriteTextLayout3**](idwritetextlayout3.md)
 -   Interface [**IDWriteFontDownloadQueue**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue)
 -   Interface [**IDWriteFontDownloadListener**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadlistener)
 
-O [exemplo de código de fontes baixáveis (DirectWrite)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteTextLayoutCloudFont) ilustra o uso de várias das novas APIs.
+O [exemplo de código Fontes baixáveis (DirectWrite)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteTextLayoutCloudFont) ilustra o uso de várias das novas APIs.
 
-### <a name="font-set-apis"></a>APIs de conjunto de fontes
+### <a name="font-set-apis"></a>APIs do conjunto de fontes
 
-As interfaces de coleção de fontes do DirectWrite fornecem uma exibição para uma coleção de fontes organizadas por famílias de fontes, usando peso, ampliação e estilo como atributos de subfamília. Internamente, o DirectWrite implementa a interface de coleção de fontes usando uma lista simples de fontes com vários atributos. Essa abordagem é mais flexível, pois o no pode dar suporte à enumeração de famílias de peso/alongamento/estilo, mas também pode oferecer suporte à consulta e filtragem usando outros atributos de fonte também.
+As interfaces de coleção de fontes do DirectWrite fornecem uma exibição para uma coleção de fontes organizadas por famílias de fontes, usando peso, alongamento e estilo como atributos de sub-família. Internamente, o DirectWrite implementa a interface de coleção de fontes usando uma lista simples de fontes com vários atributos. Essa abordagem é mais flexível, pois no pode dar suporte à enumeração de famílias de peso/alongamento/estilo, mas também pode dar suporte à consulta e filtragem usando outros atributos de fonte.
 
-No Windows 10, esse mecanismo mais flexível de manipulação de fontes é disponibilizado para aplicativos por meio do IDWriteFontSet e das APIs relacionadas. As APIs do conjunto de fontes podem ser usadas, por exemplo, para criar uma interface do usuário personalizada do seletor de fonte, aproveitando as propriedades de fonte personalizadas do aplicativo em um conjunto de fontes personalizado.
+No Windows 10, esse mecanismo de manipulação de fontes mais flexível é disponibilizado para aplicativos por meio do IDWriteFontSet e das APIs relacionadas. As APIs do conjunto de fontes podem ser usadas, por exemplo, para criar uma interface do usuário personalizada do selador de fontes, aproveitando as propriedades de fonte personalizadas do aplicativo em um conjunto de fontes personalizado.
 
 Para mais informações, consulte os seguintes tópicos:
 
 -   Interface [**IDWriteFontSet**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontset)
 -   Interface [**IDWriteFontSetBuilder**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontsetbuilder)
--   [**DWRITE \_ Enumeração \_ de \_ ID de propriedade de fonte**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_property_id)
--   Método [**IDWriteFontFactory3:: GetSystemFontSet**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-getsystemfontset)
+-   [**DWRITE \_ Enumeração \_ \_ de ID DA PROPRIEDADE**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_property_id) FONT
+-   [**Método IDWriteFontFactory3::GetSystemFontSet**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-getsystemfontset)
 
 ### <a name="new-text-layout-line-spacing-modes"></a>Novos modos de espaçamento de linha de layout de texto
 
-As interfaces de layout de texto e de formato de texto do DirectWrite dão suporte a novos modos de espaçamento de linha. Em versões anteriores, a implementação de layout de texto do DirectWrite é permitida para o espaçamento de linha no qual a altura de cada linha foi definida automaticamente com base no item mais alto dentro de uma linha (o modo "padrão") ou o espaçamento de linha com todas as linhas definidas como uma altura uniforme determinada pelo aplicativo (o modo "uniforme"). No Windows 10, há suporte para um modo adicional de espaçamento de linha "proporcional" que oferece aos aplicativos mais opções de comportamento de espaçamento de linha. Para mais informações, consulte os seguintes tópicos:
+As interfaces de layout de texto e formato de texto do DirectWrite são suportadas por novos modos de espaçamento de linha. Em versões anteriores, a implementação de layout de texto do DirectWrite permitia o espaçamento de linha no qual a altura de cada linha era definida automaticamente com base no item mais alto dentro de uma linha (o modo "padrão") ou no espaçamento de linha com todas as linhas definidas como uma altura uniforme determinada pelo aplicativo (o modo "uniforme"). No Windows 10, há suporte para um modo de espaçamento de linha "proporcional" adicional que fornece aos aplicativos mais opções para o comportamento de espaçamento de linha. Para mais informações, consulte os seguintes tópicos:
 
 -   Interface [**IDWriteTextLayout3**](idwritetextlayout3.md)
--   Método [**IDWriteTextLayout3:: SetLineSpacing**](idwritetextlayout3-setlinespacing.md)
--   [**DWRITE \_ Estrutura de \_ espaçamento de linha**](/windows/win32/api/Dwrite_3/ns-dwrite_3-dwrite_line_spacing)
--   [**DWRITE \_ Enumeração \_ do \_ método de espaçamento de linha**](/windows/win32/api/dwrite/ne-dwrite-dwrite_line_spacing_method)
--   [**DWRITE \_ Enumeração \_ de \_ \_ uso de lacuna de linha de fonte**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_line_gap_usage)
--   Método [**IDWriteTextLayout3:: GetLineMetrics**](idwritetextlayout3-getlinemetrics.md)
--   [**DWRITE \_ Estrutura de \_ METRICS1 de linha**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_metrics1)
+-   [**Método IDWriteTextLayout3::SetLineSpacing**](idwritetextlayout3-setlinespacing.md)
+-   [**DWRITE \_ Estrutura \_ LINE SPACING**](/windows/win32/api/Dwrite_3/ns-dwrite_3-dwrite_line_spacing)
+-   [**DWRITE \_ Enumeração \_ MÉTODO DE \_ ESPAÇAMENTO DE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_line_spacing_method) LINHA
+-   [**DWRITE \_ Enumeração FONT \_ LINE \_ GAP \_ USAGE**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_line_gap_usage)
+-   [**Método IDWriteTextLayout3::GetLineMetrics**](idwritetextlayout3-getlinemetrics.md)
+-   [**DWRITE \_ Estrutura LINE \_ METRICS1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_metrics1)
 
-O [exemplo de código de espaçamento de linha (DirectWrite)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteLineSpacingModes) ilustra o uso de várias das novas APIs e também fornece uma visualização de todos os diferentes modos de espaçamento de linha que tornam muito mais fácil entender as várias opções de espaçamento de linha disponíveis.
+O exemplo de código De espaçamento de linha [(DirectWrite)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteLineSpacingModes) ilustra o uso de várias das novas APIs e também fornece uma visualização de todos os diferentes modos de espaçamento de linha que facilitam muito o entendimento das várias opções de espaçamento de linha disponíveis.
 
-### <a name="gdi-interop"></a>Interoperabilidade GDI
+### <a name="gdi-interop"></a>Interop GDI
 
-Desde sua introdução no Windows 7, o DirectWrite forneceu um caminho de migração para aplicativos que foram originalmente implementados usando o modelo de fonte, o layout de texto e a renderização da GDI. Isso foi fornecido por meio da \[ \[ \] \] interface IDWriteGdiInterop. No Windows 10, as APIs adicionais fornecem recursos adicionais de interoperabilidade GDI. Para obter informações adicionais, consulte o seguinte tópico:
+Desde sua introdução no Windows 7, o DirectWrite forneceu um caminho de migração para aplicativos que foram originalmente implementados usando o modelo de fonte, o layout de texto e a renderização da GDI. Isso foi fornecido por meio da \[ \[ interface IDWriteGdiInterop. \] \] No Windows 10, as APIs adicionais fornecem recursos adicionais de interop GDI. Para obter informações adicionais, consulte o tópico a seguir:
 
 -   Interface [**IDWriteGdiInterop1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritegdiinterop1)
 
 ## <a name="windows-81"></a>Windows 8.1
 
-### <a name="rendering-color-fonts"></a>Renderizando fontes de cores
+### <a name="rendering-color-fonts"></a>Renderizar fontes de cores
 
-A partir do Windows Windows 8.1, o DirectWrite fornece suporte para fontes de cores. [Direct2D](../direct2d/direct2d-portal.md), que usa DirectWrite para a renderização de texto, adicionou o valor de enumeração d2d1 \_ \_ Opções de texto de desenho \_ \_ habilitar \_ \_ fonte de cor para habilitar esse recurso ao desenhar o texto. Para mais informações, consulte os seguintes tópicos:
+A partir do Windows Windows 8.1, o DirectWrite dá suporte a fontes de cores. [Direct2D](../direct2d/direct2d-portal.md), que usa DirectWrite para renderização de texto, adicionou o valor de enum D2D1 OPÇÕES DE \_ TEXTO DE DESENHO \_ \_ \_ HABILITAR FONTE \_ DE \_ COR para habilitar esse recurso ao desenhar texto. Para mais informações, consulte os seguintes tópicos:
 
--   [**D2d1 \_ Enumeração \_ de \_ Opções de texto de desenho**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options)
--   Método [**IDWriteFactory2:: TranslateColorGlyphRun**](/windows/win32/api/dwrite_2/nf-dwrite_2-idwritefactory2-translatecolorglyphrun)
+-   [**D2D1 \_ Enumeração DRAW \_ TEXT \_ OPTIONS**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options)
+-   [**Método IDWriteFactory2::TranslateColorGlyphRun**](/windows/win32/api/dwrite_2/nf-dwrite_2-idwritefactory2-translatecolorglyphrun)
 
 ## <a name="windows-8"></a>Windows 8
 
-Uma nova interface de fábrica, [**IDWriteFactory1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1), para a criação de interfaces adicionais que estão disponíveis.
+Uma nova interface de fábrica, [**IDWriteFactory1,**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1)para criar interfaces adicionais disponíveis.
 
-Propriedades de fonte adicionais, como: super/subscrito, inclinação do cursor, PANOse e intervalos Unicode.
+Propriedades de fonte adicionais, como: intervalos super/subscrito, inclinação do aro, PANOSE e Unicode.
 
 -   [**IDWriteFont1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefont1)
 -   [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1)
 
-Melhorias de espaçamento, como: espaçamento de caracteres de controle, pares de kerning herdados e justificação. Consulte o tópico [justificativa, kerning e espaçamento](justification--kerning--and-spacing.md) para obter mais informações.
+Aprimoramentos de espaçamento, como: controle de espaçamento de caracteres, pares de aulação herdados e justificativa. Consulte o [tópico Justification, Kerning e Espaçamento](justification--kerning--and-spacing.md) para obter mais informações.
 
 -   [**IDWriteTextLayout1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextlayout1)
 -   [**IDWriteTextAnalyzer1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextanalyzer1)
@@ -200,57 +200,57 @@ Parâmetros e destinos de renderização aprimorados.
 -   [**IDWriteBitmapRenderTarget1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1)
 -   [**IDWriteRenderingParams1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwriterenderingparams1)
 
-Melhorias na análise de complexidade de texto.
+Melhorias na análise de complexidade do texto.
 
 -   [**IDWriteTextAnalyzer1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextanalyzer1)
 
-Novas propriedades de script, novo suporte a scripts (Unicode 6), adições de fallback de fonte, parênteses emparelhados e aumento bidirecional.
+Novas propriedades de script, novo suporte a script (Unicode 6), adições de fallback de fonte, parênteses emparelhados e aumento bidi.
 
-Aprimoramentos de desempenho do cache de fontes. A partir do Windows 8, o cache de fontes é global e é iniciado quando o computador é inicializado.
+Aprimoramentos de desempenho do cache de fonte. Começando com Windows 8 cache de fonte é global e começa quando o computador é inicializado.
 
 Novos modos de renderização.
 
-A partir do Windows 8, o [DirectWrite](direct-write-portal.md) dá suporte a vários recursos que ajudam você a fazer aplicativos para o mercado mundial.
+Começando com Windows 8, [o DirectWrite](direct-write-portal.md) dá suporte a vários recursos que ajudam você a fazer aplicativos para o mercado mundial.
 
-Aqui estão várias áreas que ajudam você a implementar aplicativos de Rich Text que podem ser adaptados aos clientes em todo o mundo.
+Aqui estão várias áreas que ajudam você a implementar aplicativos de rich text que podem ser adaptados aos clientes em todo o mundo.
 
-### <a name="chinese-japanese-and-korean-extensions-c--d"></a>Extensões do chinês, japonês e coreano C & D
+### <a name="chinese-japanese-and-korean-extensions-c--d"></a>Extensões C e C em chinês, japonês e coreano & D
 
-A cada poucos anos, o consórcio Unicode lança uma lista padronizada de inclusões em chinês, japonês e coreano bloco de ideograma. Com a revisão de Unicode 6,0, eles lançaram os blocos de extensão C e D. Esses blocos de ideogramas podem ser encontrados na extensão de site Unicode [C](https://www.unicode.org/charts/PDF/U2A700.pdf) e na [extensão D](https://www.unicode.org/charts/PDF/U2B740.pdf).
+A cada alguns anos, o Unicode Consortium lança uma lista padronizada de adições ao bloco Ideograph unificado chinês, japonês e coreano. Com a revisão Unicode 6.0, eles lançaram os blocos de extensão C e D. Esses blocos de ideographs podem ser encontrados no site Unicode [Extensão C](https://www.unicode.org/charts/PDF/U2A700.pdf) e [Extensão D](https://www.unicode.org/charts/PDF/U2B740.pdf).
 
-A partir do Windows 8, o [DirectWrite](direct-write-portal.md) dá suporte ao íntegra Unicode para esses novos blocos de ideogramas CJK padronizadas, para que você possa usá-los em aplicativos DirectWrite.
+A partir do Windows 8, [o DirectWrite](direct-write-portal.md) dá suporte aos pontos de código Unicode para esses novos blocos de Ideographs CJK padronizados, para que você possa usá-los em aplicativos DirectWrite.
 
-### <a name="indian-rupee-symbol"></a>Símbolo de Rúpia Indiana
+### <a name="indian-rupee-symbol"></a>Símbolo de rúpia índia
 
-Em março de 2005, o governo Índico anunciou uma competição para escolher um símbolo para a moeda de Rúpia indiana. Após muita competição, no dia 15 de julho de 2010, o governo Índico escolheu o design criado por D. Udaya Kumar e o [DirectWrite](direct-write-portal.md) inclui suporte para o ponto Unicode vinculado ao símbolo. Assim, os aplicativos DirectWrite agora dão suporte a esse símbolo de moeda.
+Em março de 2005, o governo da Índia anunciou uma competição para escolher um símbolo para a moeda de moeda índia. Após muita competição, em 15 de julho de 2010, o governo da Índia escolheu o design criado por D. UdayaDir e [DirectWrite](direct-write-portal.md) inclui suporte para o ponto de código Unicode vinculado ao símbolo. Portanto, os aplicativos DirectWrite agora são suportados por esse símbolo de moeda.
 
 ### <a name="emoji"></a>Emoji
 
-O [DirectWrite](direct-write-portal.md) agora dá suporte ao uso de Emoji em aplicativos. Versões anteriores do DirectWrite, apresentadas com uma caixa de glifo ausente se você tentar renderizar um ideogram de Emoji. A partir do Windows 8, o DirectWrite dá suporte ao CodeBlock Unicode associado ao Emoji, portanto, se seu aplicativo usar o íntegra padrão Unicode para Emoji, ele exibirá os glifos apropriados.
+[O DirectWrite](direct-write-portal.md) agora dá suporte ao uso de emoji em aplicativos. As versões anteriores do DirectWrite apresentaram uma caixa de glifo ausente se você tentou renderizar um ideograph emoji. A partir do Windows 8, o DirectWrite dá suporte ao codeblock Unicode associado ao emoji, portanto, se seu aplicativo usar os pontos de código padrão Unicode para emoji, ele exibirá os glifos apropriados.
 
-### <a name="myanmar-tiffinagh-and-old-hangul-languages"></a>Idiomas birmanês, Tiffinagh e Hangul antigos
+### <a name="myanmar-tiffinagh-and-old-hangul-languages"></a>Idiomas de Myanmar, Tiffinagh e Hangul antigo
 
-A partir do Windows 8, o [DirectWrite](direct-write-portal.md) dá suporte ao bloco de íntegra Unicode que correspondem aos glifos em Myanmar, Tiffinagh e linguagens Hangul antigas, para que você possa criar aplicativos que incluam texto desses três idiomas. Além de dar suporte a esses caracteres, o DirectWrite dá suporte à maneira única com que o Hangul antigo lida com a quebra de linha.
+A partir do Windows 8, [o DirectWrite](direct-write-portal.md) dá suporte ao bloco de pontos de código Unicode que correspondem aos glifos nas linguagens Myanmar, Tiffinagh e Old Hangul, para que você possa criar aplicativos que incluem texto desses três idiomas. Além de dar suporte a esses caracteres, o DirectWrite dá suporte à maneira exclusiva que o Hangul Antigo lida com a quebra de linha.
 
 ### <a name="new-scripts"></a>Novos scripts
 
-A partir do Windows 8, o método [**Getscriptproperties**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritetextanalyzer1-getscriptproperties) retorna informações para vários novos scripts. Aqui está a lista de scripts que o [DirectWrite](direct-write-portal.md) dá suporte no Windows 8 e posterior.
+A partir Windows 8, o [**método GetScriptProperties**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritetextanalyzer1-getscriptproperties) retorna informações para vários novos scripts. Esta é a lista de scripts que [o DirectWrite](direct-write-portal.md) dá suporte Windows 8 e depois.
 
 -   Avestan
 -   Bamum
 -   Batak
 -   Brahmi
--   Egípcio hieroglyphics
--   Imperial Armi
--   Inscriptional Pahlavi
--   Inscriptional Parthian
+-   Hieróglifos intícone
+-   Av. Aramaic
+-   Pahlavi ítalo
+-   Parthian Desaloca
 -   Javanês
--   Kaithi
+-   Kaythi
 -   Lisu (Fraser)
--   Mandaica
+-   Oálico
 -   Meetei Mayek
--   Árabe antigo Sul
+-   Old South Arabian
 -   Turco antigo (Orkhon)
--   Samaritan
+-   Samaritano
 -   Tai Tham (Lanna)
 -   Tai Viet

@@ -4,12 +4,12 @@ ms.assetid: 4AEBE391-4121-44B2-B15B-0032645D7053
 title: ICU (Componentes Internacionais para Unicode)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e00a72885b37efebf8de0d5eb60a22fe01dfba4f
-ms.sourcegitcommit: 176ef0a00690f849282cb48464c97f6526a82113
+ms.openlocfilehash: 560a2f344a3024685e17df0f434f8ffa040b5c8b
+ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "103923000"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "111349985"
 ---
 # <a name="international-components-for-unicode-icu"></a>ICU (Componentes Internacionais para Unicode)
 
@@ -101,7 +101,7 @@ Em seguida, você pode chamar qualquer API do ICU C dessas bibliotecas que desej
 > [!Note]  
 >
 > - Esta é a configuração para "todas as plataformas".
-> - Para que os aplicativos Win32 usem o ICU, eles precisam chamar [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) primeiro.
+> - Para que os aplicativos Win32 usem o ICU, eles precisam chamar [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) primeiro. No Windows 10 versão 1903 e superior, em que a biblioteca ICU combinada (icu.dll/ICU.lib) está disponível, você pode omitir a chamada CoInitializeEx usando a biblioteca combinada.
 > - Nem todos os dados retornados por APIs do ICU serão alinhados com o sistema operacional Windows, pois esse trabalho de alinhamento ainda está em andamento. 
 
 ## <a name="icu-example-app"></a>Aplicativo de exemplo do ICU
