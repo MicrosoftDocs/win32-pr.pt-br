@@ -1,7 +1,7 @@
 - name: Rastreamento de eventos
   href: event-tracing-portal.md
   items:
-    - name: O que há de novo no rastreamento de eventos
+    - name: Novidades no rastreamento de eventos
       href: what-s-new-in-event-tracing.md
     - name: Sobre o rastreamento de eventos
       href: about-event-tracing.md
@@ -21,44 +21,46 @@
               items:
                 - name: Exemplo que cria uma sessão e habilita um provedor clássico ou baseado em manifesto
                   href: example-that-creates-a-session-and-enables-a-manifest-based-provider.md
-            - name: Configurando e iniciando uma sessão SystemTraceProvider
+            - name: Configurando e iniciando uma sessão systemTraceProvider
               href: configuring-and-starting-a-systemtraceprovider-session.md
               items:
-                - name: Configurando e iniciando a sessão do NT kernel logger
+                - name: Configurando e iniciando a sessão do NT Kernel Logger
                   href: configuring-and-starting-the-nt-kernel-logger-session.md
-            - name: Configurando e iniciando uma sessão do agente de log
+                - name: Provedores de sistema
+                  href: system-providers.md
+            - name: Configurando e iniciando uma sessão do AutoLogger
               href: configuring-and-starting-an-autologger-session.md
               items:
-                - name: Configurando e iniciando a sessão global de agente
+                - name: Configurando e iniciando a sessão do global logger
                   href: configuring-and-starting-the-global-logger-session.md
-            - name: Configurando e iniciando uma sessão de agente de log particular
+            - name: Configurando e iniciando uma sessão de logger privado
               href: configuring-and-starting-a-private-logger-session.md
             - name: Atualizando uma sessão de rastreamento de eventos
               href: updating-an-event-tracing-session.md
-            - name: Recuperando dados de rastreamento de eventos adicionais
+            - name: Recuperando dados adicionais de rastreamento de eventos
               href: retrieving-additional-event-tracing-data.md
         - name: Fornecendo eventos
           href: providing-events.md
           items:
-            - name: Gravando eventos
+            - name: Escrevendo eventos
               href: writing-events.md
               items:
                 - name: Escrevendo eventos baseados em manifesto
                   href: writing-manifest-based-events.md
-                - name: Gravando eventos MOF (clássicos)
+                - name: Escrevendo eventos MOF (clássico)
                   href: tracing-events.md
-                - name: Gravando eventos de WPP
+                - name: Escrevendo eventos WPP
                   href: windows-software-trace-preprocessor.md
                 - name: Obtendo um provedor e um GUID de classe
                   href: obtaining-a-provider-and-class-guid.md
                 - name: Características do provedor
                   href: provider-traits.md
-            - name: Gravando eventos relacionados em um cenário de ponta a ponta
+            - name: Escrevendo eventos relacionados em um cenário de ponta a ponta
               href: writing-related-events-in-an-end-to-end-scenario.md
               items:
-                - name: Gravando eventos relacionados em um provedor baseado em manifesto
+                - name: Escrevendo eventos relacionados em um provedor baseado em manifesto
                   href: writing-related-events-in-a-manifest-base-provider.md
-                - name: Gravando eventos relacionados em um provedor clássico
+                - name: Escrevendo eventos relacionados em um provedor clássico
                   href: tracing-event-instances.md
             - name: Publicando seu esquema de evento
               href: publishing-your-event-schema.md
@@ -73,7 +75,7 @@
             - name: Recuperando dados de evento
               href: retrieving-event-data.md
               items:
-                - name: Visão geral dos metadados do evento
+                - name: Visão geral dos metadados de evento
                   href: event-metadata-overview.md
                 - name: Recuperando dados de evento usando TDH
                   href: retrieving-event-data-using-tdh.md
@@ -86,7 +88,7 @@
                       href: enumerating-providers.md
                     - name: Recuperando metadados de evento
                       href: retrieving-event-metadata.md
-                - name: Recuperando dados de evento usando o MOF
+                - name: Recuperando dados de evento usando MOF
                   href: retrieving-event-data-using-mof.md
             - name: Usando eventos para calcular o uso da CPU
               href: using-events-to-calculate-cpu-usage.md
@@ -96,11 +98,11 @@
         - name: Constantes de rastreamento de eventos
           href: event-tracing-constants.md
           items:
-            - name: Constantes do NT kernel logger
+            - name: Constantes do NT Kernel Logger
               href: nt-kernel-logger-constants.md
-            - name: Constantes do modo de log
+            - name: Constantes de modo de registro em log
               href: logging-mode-constants.md
-        - name: Macros de rastreamento de eventos
+        - name: Macros de Rastreamento de Eventos
           href: event-tracing-macros.md
           items:
             - name: EventDataDescCreate
@@ -139,7 +141,7 @@
               href: /windows/desktop/api/Evntprov/nf-evntprov-eventdescsetversion
             - name: EventDescZero
               href: /windows/desktop/api/Evntprov/nf-evntprov-eventdesczero
-        - name: Classes MOF de rastreamento de eventos
+        - name: Classes MOF de Rastreamento de Eventos
           href: event-tracing-mof-classes.md
           items:
             - name: EventTrace
@@ -185,7 +187,7 @@
                       items:
                         - name: EventTrace_Header
                           href: eventtrace-header.md
-                    - name: FileIo
+                    - name: Fileio
                       href: fileio.md
                       items:
                         - name: FileIo_Create
@@ -369,7 +371,7 @@
                           href: systemconfig-v0-services.md
                         - name: SystemConfig_V0_Video
                           href: systemconfig-v0-video.md
-                    - name: IP
+                    - name: Tcpip
                       href: tcpip.md
                       items:
                         - name: TcpIp_Fail
@@ -443,7 +445,7 @@
                           href: udpip-v1-typegroup1.md
         - name: Qualificadores MOF de rastreamento de eventos
           href: event-tracing-mof-qualifiers.md
-        - name: Ferramentas de rastreamento de eventos
+        - name: Ferramentas de Rastreamento de Eventos
           href: event-tracing-tools.md
         - name: Exemplos de rastreamento de eventos
           href: event-tracing-samples.md
