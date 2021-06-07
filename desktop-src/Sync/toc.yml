@@ -134,7 +134,7 @@
             - name: DeleteSynchronizationBarrier
               href: /windows/desktop/api/SynchAPI/nf-synchapi-deletesynchronizationbarrier
             - name: DeleteTimerQueue
-              href: /windows/desktop/api/WinBase/nf-winbase-deletetimerqueue
+              href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue
             - name: DeleteTimerQueueEx
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueueex
             - name: DeleteTimerQueueTimer
@@ -245,7 +245,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683557(v=vs.85)
             - name: InterlockedCompare64ExchangeRelease128
               href: /previous-versions/windows/desktop/legacy/ms683558(v=vs.85)
-            - name: InterlockedCompareExchange
+            - name: Interlockedcompareexchange
               href: /previous-versions/windows/embedded/ms919110(v%3dmsdn.10)
             - name: InterlockedCompareExchangeAcquire
               href: /previous-versions/windows/desktop/legacy/ms683564(v=vs.85)
@@ -279,7 +279,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683571(v=vs.85)
             - name: InterlockedCompareExchangePointerNoFence
               href: /previous-versions/windows/desktop/legacy/hh972647(v=vs.85)
-            - name: InterlockedDecrement
+            - name: Interlockeddecrement
               href: /previous-versions/ms919120(v%3dmsdn.10)
             - name: InterlockedDecrementAcquire
               href: /previous-versions/windows/desktop/legacy/ms683583(v=vs.85)
@@ -331,7 +331,7 @@
               href: /previous-versions/windows/desktop/legacy/hh972661(v=vs.85)
             - name: InterlockedExchangeSubtract
               href: /windows/desktop/api/WinBase/nf-winbase-interlockedexchangesubtract
-            - name: InterlockedExchangeAdd
+            - name: Interlockedexchangeadd
               href: /previous-versions/aa910697(v%3dmsdn.10)
             - name: InterlockedExchangeAddAcquire
               href: /previous-versions/windows/desktop/legacy/ms683601(v=vs.85)
@@ -347,7 +347,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683607(v=vs.85)
             - name: InterlockedExchangeAddNoFence64
               href: /previous-versions/windows/desktop/legacy/hh972658(v=vs.85)
-            - name: InterlockedIncrement
+            - name: Interlockedincrement
               href: /previous-versions/windows/embedded/ms919140(v%3dmsdn.10)
             - name: InterlockedIncrementAcquire
               href: /previous-versions/windows/desktop/legacy/ms683618(v=vs.85)
@@ -371,7 +371,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683624(v=vs.85)
             - name: InterlockedIncrementNoFence64
               href: /previous-versions/windows/desktop/legacy/hh972668(v=vs.85)
-            - name: Interbloqueador
+            - name: InterlockedOr
               href: /windows/desktop/api/WinBase/nf-winbase-interlockedor
             - name: InterlockedOrAcquire
               href: /previous-versions/windows/desktop/legacy/ms683643(v=vs.85)

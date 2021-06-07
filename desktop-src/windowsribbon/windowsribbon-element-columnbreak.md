@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 00257783c0c8a7919251004a4b1996ab4d994c3c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b5bff1682cdf55b44092a176abd6dc7e935220a7
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105765602"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444837"
 ---
-# <a name="columnbreak-element"></a><span data-ttu-id="02035-104">Elemento ColumnBreak</span><span class="sxs-lookup"><span data-stu-id="02035-104">ColumnBreak element</span></span>
+# <a name="columnbreak-element"></a><span data-ttu-id="2994e-104">Elemento ColumnBreak</span><span class="sxs-lookup"><span data-stu-id="2994e-104">ColumnBreak element</span></span>
 
-<span data-ttu-id="02035-105">Representa um separador vertical (visível ou oculto) em modelos de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizados.</span><span class="sxs-lookup"><span data-stu-id="02035-105">Represents a vertical separator (visible or hidden) in custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout templates.</span></span>
+<span data-ttu-id="2994e-105">Representa um separador vertical (visível ou oculto) em modelos de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizados.</span><span class="sxs-lookup"><span data-stu-id="2994e-105">Represents a vertical separator (visible or hidden) in custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout templates.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="02035-106">Uso</span><span class="sxs-lookup"><span data-stu-id="02035-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="2994e-106">Uso</span><span class="sxs-lookup"><span data-stu-id="2994e-106">Usage</span></span>
 
 ``` syntax
 <ColumnBreak
   ShowSeparator = "Boolean"/>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="02035-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="02035-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="2994e-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="2994e-107">Attributes</span></span>
 
 
 
@@ -44,49 +44,49 @@ ms.locfileid: "105765602"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="02035-108">Atributo</span><span class="sxs-lookup"><span data-stu-id="02035-108">Attribute</span></span></th>
-<th><span data-ttu-id="02035-109">Type</span><span class="sxs-lookup"><span data-stu-id="02035-109">Type</span></span></th>
-<th><span data-ttu-id="02035-110">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="02035-110">Required</span></span></th>
-<th><span data-ttu-id="02035-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="02035-111">Description</span></span></th>
+<th><span data-ttu-id="2994e-108">Atributo</span><span class="sxs-lookup"><span data-stu-id="2994e-108">Attribute</span></span></th>
+<th><span data-ttu-id="2994e-109">Type</span><span class="sxs-lookup"><span data-stu-id="2994e-109">Type</span></span></th>
+<th><span data-ttu-id="2994e-110">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="2994e-110">Required</span></span></th>
+<th><span data-ttu-id="2994e-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="2994e-111">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="02035-112"><strong>Separador</strong></span><span class="sxs-lookup"><span data-stu-id="02035-112"><strong>ShowSeparator</strong></span></span><br/></td>
-<td><span data-ttu-id="02035-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="02035-113">Boolean</span></span><br/></td>
-<td><span data-ttu-id="02035-114">Não</span><span class="sxs-lookup"><span data-stu-id="02035-114">No</span></span><br/></td>
-<td><span data-ttu-id="02035-115">Restrito a um dos seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="02035-115">Restricted to one of the following values:</span></span><br/> <br/><span data-ttu-id="02035-116">
-<dt><span></span><span></span><strong></strong> true</span><span class="sxs-lookup"><span data-stu-id="02035-116">
-<dt><span></span><span></span><strong></strong> (true)</span></span><br/> </dt> <dd> <span data-ttu-id="02035-117">Padrão.</span><span class="sxs-lookup"><span data-stu-id="02035-117">Default.</span></span> <br/> </dd> <span data-ttu-id="02035-118"><dt><span></span><span></span><strong></strong> for</span><span class="sxs-lookup"><span data-stu-id="02035-118"><dt><span></span><span></span><strong></strong> (false)</span></span><br/> </dt> <dd></dd> </dl></td>
+<td><span data-ttu-id="2994e-112"><strong>Separador</strong></span><span class="sxs-lookup"><span data-stu-id="2994e-112"><strong>ShowSeparator</strong></span></span><br/></td>
+<td><span data-ttu-id="2994e-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="2994e-113">Boolean</span></span><br/></td>
+<td><span data-ttu-id="2994e-114">Não</span><span class="sxs-lookup"><span data-stu-id="2994e-114">No</span></span><br/></td>
+<td><span data-ttu-id="2994e-115">Restrito a um dos seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="2994e-115">Restricted to one of the following values:</span></span><br/> <br/><span data-ttu-id="2994e-116">
+<dt><span></span><span></span><strong></strong> true</span><span class="sxs-lookup"><span data-stu-id="2994e-116">
+<dt><span></span><span></span><strong></strong> (true)</span></span><br/> </dt> <dd> <span data-ttu-id="2994e-117">Padrão.</span><span class="sxs-lookup"><span data-stu-id="2994e-117">Default.</span></span> <br/> </dd> <span data-ttu-id="2994e-118"><dt><span></span><span></span><strong></strong> for</span><span class="sxs-lookup"><span data-stu-id="2994e-118"><dt><span></span><span></span><strong></strong> (false)</span></span><br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
 
 
 
-## <a name="child-elements"></a><span data-ttu-id="02035-119">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="02035-119">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="2994e-119">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="2994e-119">Child elements</span></span>
 
-<span data-ttu-id="02035-120">Não há elementos filho.</span><span class="sxs-lookup"><span data-stu-id="02035-120">There are no child elements.</span></span>
+<span data-ttu-id="2994e-120">Não há elementos filho.</span><span class="sxs-lookup"><span data-stu-id="2994e-120">There are no child elements.</span></span>
 
-## <a name="parent-elements"></a><span data-ttu-id="02035-121">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="02035-121">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="2994e-121">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="2994e-121">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="02035-122">Elemento</span><span class="sxs-lookup"><span data-stu-id="02035-122">Element</span></span>                                                                             |
+| <span data-ttu-id="2994e-122">Elemento</span><span class="sxs-lookup"><span data-stu-id="2994e-122">Element</span></span>                                                                             |
 |-------------------------------------------------------------------------------------|
-| [<span data-ttu-id="02035-123">**GroupSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="02035-123">**GroupSizeDefinition**</span></span>](windowsribbon-element-groupsizedefinition.md)<br/> |
+| [<span data-ttu-id="2994e-123">**GroupSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="2994e-123">**GroupSizeDefinition**</span></span>](windowsribbon-element-groupsizedefinition.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="02035-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="02035-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2994e-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="2994e-124">Remarks</span></span>
 
-<span data-ttu-id="02035-125">Opcional.</span><span class="sxs-lookup"><span data-stu-id="02035-125">Optional.</span></span>
+<span data-ttu-id="2994e-125">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2994e-125">Optional.</span></span>
 
-<span data-ttu-id="02035-126">Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="02035-126">May occur one or more times for each [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) element.</span></span>
+<span data-ttu-id="2994e-126">Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="2994e-126">May occur one or more times for each [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) element.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="02035-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="02035-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2994e-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2994e-127">Examples</span></span>
 
-<span data-ttu-id="02035-128">O exemplo a seguir demonstra a marcação básica para um elemento **ColumnBreak** em um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões.</span><span class="sxs-lookup"><span data-stu-id="02035-128">The following example demonstrates the basic markup for a **ColumnBreak** element in a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span> <span data-ttu-id="02035-129">O **ColumnBreak** só é especificado para o `Large` modelo.</span><span class="sxs-lookup"><span data-stu-id="02035-129">The **ColumnBreak** is only specified for the `Large` template.</span></span>
+<span data-ttu-id="2994e-128">O exemplo a seguir demonstra a marcação básica para um elemento **ColumnBreak** em um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões.</span><span class="sxs-lookup"><span data-stu-id="2994e-128">The following example demonstrates the basic markup for a **ColumnBreak** element in a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span> <span data-ttu-id="2994e-129">O **ColumnBreak** só é especificado para o `Large` modelo.</span><span class="sxs-lookup"><span data-stu-id="2994e-129">The **ColumnBreak** is only specified for the `Large` template.</span></span>
 
 
 ```XML
@@ -176,22 +176,18 @@ ms.locfileid: "105765602"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="02035-130">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="02035-130">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="2994e-130">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="2994e-130">Element information</span></span>
+
+* <span data-ttu-id="2994e-131">**Sistema mínimo com suporte**: Windows 7</span><span class="sxs-lookup"><span data-stu-id="2994e-131">**Minimum supported system**: Windows 7</span></span>
+* <span data-ttu-id="2994e-132">**Pode estar vazio**: Sim</span><span class="sxs-lookup"><span data-stu-id="2994e-132">**Can be empty**: Yes</span></span>
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| <span data-ttu-id="02035-131">Sistema mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="02035-131">Minimum supported system</span></span><br/> | <span data-ttu-id="02035-132">Windows 7</span><span class="sxs-lookup"><span data-stu-id="02035-132">Windows 7</span></span> |
-| <span data-ttu-id="02035-133">Pode estar vazio</span><span class="sxs-lookup"><span data-stu-id="02035-133">Can be empty</span></span>                        | <span data-ttu-id="02035-134">Sim</span><span class="sxs-lookup"><span data-stu-id="02035-134">Yes</span></span>       |
-
-
-
-## <a name="see-also"></a><span data-ttu-id="02035-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="02035-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2994e-133">Confira também</span><span class="sxs-lookup"><span data-stu-id="2994e-133">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="02035-136">Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento</span><span class="sxs-lookup"><span data-stu-id="02035-136">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
+[<span data-ttu-id="2994e-134">Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento</span><span class="sxs-lookup"><span data-stu-id="2994e-134">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
 </dt> </dl>
 
  

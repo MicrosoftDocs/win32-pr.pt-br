@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 83a0a5a9e7908cc1c8cff688b3fefc1e8910b6a4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105785224"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111445017"
 ---
-# <a name="row-element"></a><span data-ttu-id="527fb-104">Elemento Row</span><span class="sxs-lookup"><span data-stu-id="527fb-104">Row element</span></span>
+# <a name="row-element"></a><span data-ttu-id="1e4f1-104">Elemento Row</span><span class="sxs-lookup"><span data-stu-id="1e4f1-104">Row element</span></span>
 
-<span data-ttu-id="527fb-105">Representa uma linha de controles em um modelo de layout SizeDefinition personalizado.</span><span class="sxs-lookup"><span data-stu-id="527fb-105">Represents a row of controls in a custom SizeDefinition layout template.</span></span>
+<span data-ttu-id="1e4f1-105">Representa uma linha de controles em um modelo de layout SizeDefinition personalizado.</span><span class="sxs-lookup"><span data-stu-id="1e4f1-105">Represents a row of controls in a custom SizeDefinition layout template.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="527fb-106">Uso</span><span class="sxs-lookup"><span data-stu-id="527fb-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="1e4f1-106">Uso</span><span class="sxs-lookup"><span data-stu-id="1e4f1-106">Usage</span></span>
 
 ``` syntax
 <Row>
@@ -32,40 +32,40 @@ ms.locfileid: "105785224"
 </Row>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="527fb-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="527fb-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="1e4f1-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="1e4f1-107">Attributes</span></span>
 
-<span data-ttu-id="527fb-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="527fb-108">There are no attributes.</span></span>
+<span data-ttu-id="1e4f1-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="1e4f1-108">There are no attributes.</span></span>
 
-## <a name="child-elements"></a><span data-ttu-id="527fb-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="527fb-109">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="1e4f1-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="1e4f1-109">Child elements</span></span>
 
 
 
-| <span data-ttu-id="527fb-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="527fb-110">Element</span></span>                                                                                 | <span data-ttu-id="527fb-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="527fb-111">Description</span></span>                                        |
+| <span data-ttu-id="1e4f1-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="1e4f1-110">Element</span></span>                                                                                 | <span data-ttu-id="1e4f1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1e4f1-111">Description</span></span>                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [<span data-ttu-id="527fb-112">**Controlador de controle**</span><span class="sxs-lookup"><span data-stu-id="527fb-112">**ControlGroup**</span></span>](windowsribbon-element-controlgroup.md)<br/>                   | <span data-ttu-id="527fb-113">Pode ocorrer uma ou mais vezes</span><span class="sxs-lookup"><span data-stu-id="527fb-113">May occur one or more times</span></span><br/> <br/> |
-| [<span data-ttu-id="527fb-114">**ControlSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="527fb-114">**ControlSizeDefinition**</span></span>](windowsribbon-element-controlsizedefinition.md)<br/> | <span data-ttu-id="527fb-115">Pode ocorrer uma ou mais vezes</span><span class="sxs-lookup"><span data-stu-id="527fb-115">May occur one or more times</span></span><br/> <br/> |
+| [<span data-ttu-id="1e4f1-112">**Controlador de controle**</span><span class="sxs-lookup"><span data-stu-id="1e4f1-112">**ControlGroup**</span></span>](windowsribbon-element-controlgroup.md)<br/>                   | <span data-ttu-id="1e4f1-113">Pode ocorrer uma ou mais vezes</span><span class="sxs-lookup"><span data-stu-id="1e4f1-113">May occur one or more times</span></span><br/> <br/> |
+| [<span data-ttu-id="1e4f1-114">**ControlSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="1e4f1-114">**ControlSizeDefinition**</span></span>](windowsribbon-element-controlsizedefinition.md)<br/> | <span data-ttu-id="1e4f1-115">Pode ocorrer uma ou mais vezes</span><span class="sxs-lookup"><span data-stu-id="1e4f1-115">May occur one or more times</span></span><br/> <br/> |
 
 
 
-## <a name="parent-elements"></a><span data-ttu-id="527fb-116">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="527fb-116">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="1e4f1-116">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="1e4f1-116">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="527fb-117">Elemento</span><span class="sxs-lookup"><span data-stu-id="527fb-117">Element</span></span>                                                                             |
+| <span data-ttu-id="1e4f1-117">Elemento</span><span class="sxs-lookup"><span data-stu-id="1e4f1-117">Element</span></span>                                                                             |
 |-------------------------------------------------------------------------------------|
-| [<span data-ttu-id="527fb-118">**GroupSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="527fb-118">**GroupSizeDefinition**</span></span>](windowsribbon-element-groupsizedefinition.md)<br/> |
+| [<span data-ttu-id="1e4f1-118">**GroupSizeDefinition**</span><span class="sxs-lookup"><span data-stu-id="1e4f1-118">**GroupSizeDefinition**</span></span>](windowsribbon-element-groupsizedefinition.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="527fb-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="527fb-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1e4f1-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="1e4f1-119">Remarks</span></span>
 
-<span data-ttu-id="527fb-120">Opcional.</span><span class="sxs-lookup"><span data-stu-id="527fb-120">Optional.</span></span>
+<span data-ttu-id="1e4f1-120">Opcional.</span><span class="sxs-lookup"><span data-stu-id="1e4f1-120">Optional.</span></span>
 
-<span data-ttu-id="527fb-121">Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="527fb-121">May occur one or more times for each [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) element.</span></span>
+<span data-ttu-id="1e4f1-121">Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="1e4f1-121">May occur one or more times for each [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) element.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="527fb-122">Exemplos</span><span class="sxs-lookup"><span data-stu-id="527fb-122">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1e4f1-122">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1e4f1-122">Examples</span></span>
 
-<span data-ttu-id="527fb-123">O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com vários elementos de **linha** .</span><span class="sxs-lookup"><span data-stu-id="527fb-123">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with various **Row** elements.</span></span>
+<span data-ttu-id="1e4f1-123">O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com vários elementos de **linha** .</span><span class="sxs-lookup"><span data-stu-id="1e4f1-123">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with various **Row** elements.</span></span>
 
 
 ```XML
@@ -155,22 +155,21 @@ ms.locfileid: "105785224"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="527fb-124">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="527fb-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="1e4f1-124">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="1e4f1-124">Element information</span></span>
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| <span data-ttu-id="527fb-125">Sistema mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="527fb-125">Minimum supported system</span></span><br/> | <span data-ttu-id="527fb-126">Windows 7</span><span class="sxs-lookup"><span data-stu-id="527fb-126">Windows 7</span></span> |
-| <span data-ttu-id="527fb-127">Pode estar vazio</span><span class="sxs-lookup"><span data-stu-id="527fb-127">Can be empty</span></span>                        | <span data-ttu-id="527fb-128">Não</span><span class="sxs-lookup"><span data-stu-id="527fb-128">No</span></span>        |
+
+* <span data-ttu-id="1e4f1-125">**Sistema mínimo com suporte**: Windows 7</span><span class="sxs-lookup"><span data-stu-id="1e4f1-125">**Minimum supported system**: Windows 7</span></span>
+* <span data-ttu-id="1e4f1-126">**Pode estar vazio**: não</span><span class="sxs-lookup"><span data-stu-id="1e4f1-126">**Can be empty**: No</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="527fb-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="527fb-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1e4f1-127">Confira também</span><span class="sxs-lookup"><span data-stu-id="1e4f1-127">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="527fb-130">Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento</span><span class="sxs-lookup"><span data-stu-id="527fb-130">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
+[<span data-ttu-id="1e4f1-128">Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento</span><span class="sxs-lookup"><span data-stu-id="1e4f1-128">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
 </dt> </dl>
 
  
