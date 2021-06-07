@@ -44,7 +44,7 @@
                 - name: EnumResourceLanguagesEx
                   href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
                 - name: EnumResourceNames
-                  href: /windows/desktop/api/Winbase/nf-winbase-enumresourcenamesa
+                  href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesa
                 - name: EnumResourceNamesEx
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesexw
                 - name: EnumResourceTypes
@@ -228,7 +228,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex
                 - name: CreateIconIndirect
                   href: /windows/desktop/api/Winuser/nf-winuser-createiconindirect
-                - name: DestroyIcon
+                - name: Destroyicon
                   href: /windows/desktop/api/Winuser/nf-winuser-destroyicon
                 - name: DrawIcon
                   href: /windows/desktop/api/Winuser/nf-winuser-drawicon
@@ -246,7 +246,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-geticoninfo
                 - name: GetIconInfoEx
                   href: /windows/desktop/api/Winuser/nf-winuser-geticoninfoexa
-                - name: LoadIcon
+                - name: Loadicon
                   href: /windows/desktop/api/Winuser/nf-winuser-loadicona
                 - name: LookupIconIdFromDirectory
                   href: /windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectory
@@ -257,13 +257,13 @@
             - name: Estruturas de ícone
               href: icon-structures.md
               items:
-                - name: ICONINFO
+                - name: Iconinfo
                   href: /windows/win32/api/Winuser/ns-winuser-iconinfo
                 - name: ICONINFOEX
                   href: /windows/win32/api/Winuser/ns-winuser-iconinfoexa
                 - name: ICONMETRICS
                   href: /windows/win32/api/Winuser/ns-winuser-iconmetricsa
-    - name: Métricas de texto e fontes
+    - name: Fontes e métricas de texto
       href: fonts-and-font-metrics.md
     - name: Aceleradores de teclado
       href: keyboard-accelerators.md
@@ -275,7 +275,7 @@
         - name: Referência do acelerador de teclado
           href: keyboard-accelerator-reference.md
           items:
-            - name: Funções do acelerador de teclado
+            - name: Funções de acelerador de teclado
               href: keyboard-accelerator-functions.md
               items:
                 - name: CopyAcceleratorTable
@@ -286,12 +286,12 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable
                 - name: LoadAccelerators
                   href: /windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa
-                - name: TranslateAccelerator
+                - name: Translateaccelerator
                   href: /windows/desktop/api/Winuser/nf-winuser-translateacceleratora
-            - name: Mensagens do acelerador de teclado
+            - name: Mensagens de acelerador de teclado
               href: keyboard-accelerator-messages.md
               items:
-                - name: WM_CHANGEUISTATE
+                - name: Wm_changeuistate
                   href: wm-changeuistate.md
                 - name: WM_INITMENU
                   href: wm-initmenu.md
@@ -302,25 +302,25 @@
             - name: Notificações do acelerador de teclado
               href: keyboard-accelerator-notifications.md
               items:
-                - name: WM_INITMENUPOPUP
+                - name: Wm_initmenupopup
                   href: wm-initmenupopup.md
                 - name: WM_MENUCHAR
                   href: wm-menuchar.md
-                - name: WM_MENUSELECT
+                - name: Wm_menuselect
                   href: wm-menuselect.md
-                - name: WM_SYSCHAR
+                - name: Wm_syschar
                   href: wm-syschar.md
-                - name: WM_SYSCOMMAND
+                - name: Wm_syscommand
                   href: wm-syscommand.md
             - name: Estruturas do acelerador de teclado
               href: keyboard-accelerator-structures.md
               items:
-                - name: DA aceleração extra
+                - name: Accel
                   href: /windows/win32/api/Winuser/ns-winuser-accel
     - name: Menus
       href: menus.md
       items:
-        - name: Sobre os menus
+        - name: Sobre menus
           href: about-menus.md
         - name: Uso de Menus
           href: using-menus.md
@@ -330,29 +330,29 @@
             - name: Funções de menu
               href: menu-functions.md
               items:
-                - name: AppendMenu
+                - name: Appendmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-appendmenua
-                - name: CheckMenuItem
+                - name: Checkmenuitem
                   href: /windows/desktop/api/Winuser/nf-winuser-checkmenuitem
                 - name: CheckMenuRadioItem
                   href: /windows/desktop/api/Winuser/nf-winuser-checkmenuradioitem
-                - name: CreateMenu
+                - name: Createmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-createmenu
-                - name: CreatePopupMenu
+                - name: Createpopupmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-createpopupmenu
-                - name: DeleteMenu
+                - name: Deletemenu
                   href: /windows/desktop/api/Winuser/nf-winuser-deletemenu
-                - name: DestroyMenu
+                - name: Destroymenu
                   href: /windows/desktop/api/Winuser/nf-winuser-destroymenu
-                - name: DrawMenuBar
+                - name: Drawmenubar
                   href: /windows/desktop/api/Winuser/nf-winuser-drawmenubar
-                - name: EnableMenuItem
+                - name: Enablemenuitem
                   href: /windows/desktop/api/Winuser/nf-winuser-enablemenuitem
-                - name: Menu
+                - name: EndMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-endmenu
                 - name: GetMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenu
-                - name: GetMenuBarInfo
+                - name: Getmenubarinfo
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenubarinfo
                 - name: GetMenuCheckMarkDimensions
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenucheckmarkdimensions
@@ -362,27 +362,27 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenuinfo
                 - name: GetMenuItemCount
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenuitemcount
-                - name: Getmenuitemid
+                - name: GetMenuItemID
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenuitemid
-                - name: GetMenuItemInfo
+                - name: Getmenuiteminfo
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa
                 - name: GetMenuItemRect
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenuitemrect
                 - name: GetMenuState
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenustate
-                - name: Getmenustring
+                - name: GetMenuString
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenustringa
                 - name: GetSubMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-getsubmenu
-                - name: GetSystemMenu
+                - name: Getsystemmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-getsystemmenu
                 - name: HiliteMenuItem
                   href: /windows/desktop/api/Winuser/nf-winuser-hilitemenuitem
-                - name: InsertMenu
+                - name: Insertmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-insertmenua
                 - name: InsertMenuItem
                   href: /windows/desktop/api/Winuser/nf-winuser-insertmenuitema
-                - name: Ismenu
+                - name: IsMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-ismenu
                 - name: LoadMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-loadmenua
@@ -390,30 +390,30 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta
                 - name: MenuItemFromPoint
                   href: /windows/desktop/api/Winuser/nf-winuser-menuitemfrompoint
-                - name: ModifyMenu
+                - name: Modifymenu
                   href: /windows/desktop/api/Winuser/nf-winuser-modifymenua
                 - name: RemoveMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-removemenu
-                - name: SetMenu
+                - name: Setmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-setmenu
-                - name: SetMenuDefaultItem
+                - name: Setmenudefaultitem
                   href: /windows/desktop/api/Winuser/nf-winuser-setmenudefaultitem
                 - name: SetMenuInfo
                   href: /windows/desktop/api/Winuser/nf-winuser-setmenuinfo
                 - name: SetMenuItemBitmaps
                   href: /windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps
-                - name: SetMenuItemInfo
+                - name: Setmenuiteminfo
                   href: /windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa
-                - name: TrackPopupMenu
+                - name: Trackpopupmenu
                   href: /windows/desktop/api/Winuser/nf-winuser-trackpopupmenu
-                - name: TrackPopupMenuEx
+                - name: Trackpopupmenuex
                   href: /windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex
             - name: Notificações de menu
               href: menu-notifications.md
               items:
                 - name: WM_COMMAND
                   href: wm-command.md
-                - name: WM_CONTEXTMENU
+                - name: Wm_contextmenu
                   href: wm-contextmenu.md
                 - name: WM_ENTERMENULOOP
                   href: wm-entermenuloop.md
@@ -436,7 +436,7 @@
             - name: Estruturas de menu
               href: menu-structures.md
               items:
-                - name: MDINEXTMENU
+                - name: MARDXTMENU
                   href: /windows/win32/api/Winuser/ns-winuser-mdinextmenu
                 - name: MENUBARINFO
                   href: /windows/win32/api/Winuser/ns-winuser-menubarinfo
@@ -448,9 +448,9 @@
                   href: /windows/win32/api/Winuser/ns-winuser-menugetobjectinfo
                 - name: MENUINFO
                   href: /windows/win32/api/Winuser/ns-winuser-menuinfo
-                - name: MENUITEMINFO
+                - name: Menuiteminfo
                   href: /windows/win32/api/Winuser/ns-winuser-menuiteminfoa
-                - name: MENUITEMTEMPLATE
+                - name: Menuitemtemplate
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplate
                 - name: MENUITEMTEMPLATEHEADER
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplateheader
@@ -461,7 +461,7 @@
       items:
         - name: Sobre cadeias de caracteres
           href: about-strings.md
-        - name: Sobre o strsafe. h
+        - name: Sobre Strsafe.h
           href: strsafe-ovw.md
         - name: Referência de cadeia de caracteres
           href: string-reference.md
@@ -497,7 +497,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-ischarlowera
                 - name: IsCharUpper
                   href: /windows/desktop/api/Winuser/nf-winuser-ischaruppera
-                - name: Cadeia de caracteres LoadString
+                - name: Loadstring
                   href: /windows/desktop/api/Winuser/nf-winuser-loadstringa
                 - name: lstrcat
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcata
@@ -519,7 +519,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-wsprintfa
                 - name: wvsprintf
                   href: /windows/desktop/api/Winuser/nf-winuser-wvsprintfa
-            - name: Funções strsafe
+            - name: Funções Strsafe
               href: string-overviews.md
               items:
                 - name: StringCbCat
@@ -619,7 +619,7 @@
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoa
                 - name: GetFileVersionInfoEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoexa
-                - name: Falha em GetFileVersionInfoSize
+                - name: GetFileVersionInfoSize
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizea
                 - name: GetFileVersionInfoSizeEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizeexa

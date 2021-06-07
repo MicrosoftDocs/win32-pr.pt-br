@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextPopup
-description: Representa o controle Popup de contexto na exibição ContextPopup.
+description: Representa o controle Pop-up de contexto na exibição ContextPopup.
 ms.assetid: b955be16-803e-47b5-a72d-f993180fbf14
 keywords:
-- Faixa de ContextPopup do elemento do Windows
+- Elemento ContextPopup Da Faixa de Opções do Windows
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4feb7c4fbd2ca538fe4d0c2b2584163ee8c9fcea
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f779b0196d14fb42246c2a10d476352d835b6cf8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006590"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443457"
 ---
-# <a name="contextpopup-element"></a><span data-ttu-id="9b6f1-104">Elemento ContextPopup</span><span class="sxs-lookup"><span data-stu-id="9b6f1-104">ContextPopup element</span></span>
+# <a name="contextpopup-element"></a><span data-ttu-id="ad243-104">Elemento ContextPopup</span><span class="sxs-lookup"><span data-stu-id="ad243-104">ContextPopup element</span></span>
 
-<span data-ttu-id="9b6f1-105">Representa o controle [Popup de contexto](windowsribbon-controls-contextpopup.md) na exibição ContextPopup.</span><span class="sxs-lookup"><span data-stu-id="9b6f1-105">Represents the [Context Popup](windowsribbon-controls-contextpopup.md) control in the ContextPopup View.</span></span>
+<span data-ttu-id="ad243-105">Representa o [controle Pop-up de](windowsribbon-controls-contextpopup.md) contexto na exibição ContextPopup.</span><span class="sxs-lookup"><span data-stu-id="ad243-105">Represents the [Context Popup](windowsribbon-controls-contextpopup.md) control in the ContextPopup View.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="9b6f1-106">Uso</span><span class="sxs-lookup"><span data-stu-id="9b6f1-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="ad243-106">Uso</span><span class="sxs-lookup"><span data-stu-id="ad243-106">Usage</span></span>
 
 ``` syntax
 <ContextPopup>
@@ -32,41 +32,41 @@ ms.locfileid: "104006590"
 </ContextPopup>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="9b6f1-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="9b6f1-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="ad243-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="ad243-107">Attributes</span></span>
 
-<span data-ttu-id="9b6f1-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="9b6f1-108">There are no attributes.</span></span>
+<span data-ttu-id="ad243-108">Não há atributos.</span><span class="sxs-lookup"><span data-stu-id="ad243-108">There are no attributes.</span></span>
 
-## <a name="child-elements"></a><span data-ttu-id="9b6f1-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="9b6f1-109">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="ad243-109">Elementos filho</span><span class="sxs-lookup"><span data-stu-id="ad243-109">Child elements</span></span>
 
 
 
-| <span data-ttu-id="9b6f1-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="9b6f1-110">Element</span></span>                                                                                         | <span data-ttu-id="9b6f1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="9b6f1-111">Description</span></span>                                   |
+| <span data-ttu-id="ad243-110">Elemento</span><span class="sxs-lookup"><span data-stu-id="ad243-110">Element</span></span>                                                                                         | <span data-ttu-id="ad243-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad243-111">Description</span></span>                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [<span data-ttu-id="9b6f1-112">**ContextPopup.ContextMaps**</span><span class="sxs-lookup"><span data-stu-id="9b6f1-112">**ContextPopup.ContextMaps**</span></span>](windowsribbon-element-contextpopup-contextmaps.md)<br/>   | <span data-ttu-id="9b6f1-113">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="9b6f1-113">May occur at most once</span></span><br/> <br/> |
-| [<span data-ttu-id="9b6f1-114">**ContextPopup. ContextMenus**</span><span class="sxs-lookup"><span data-stu-id="9b6f1-114">**ContextPopup.ContextMenus**</span></span>](windowsribbon-element-contextpopup-contextmenus.md)<br/> | <span data-ttu-id="9b6f1-115">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="9b6f1-115">May occur at most once</span></span><br/> <br/> |
-| [<span data-ttu-id="9b6f1-116">**ContextPopup.MiniToolbars**</span><span class="sxs-lookup"><span data-stu-id="9b6f1-116">**ContextPopup.MiniToolbars**</span></span>](windowsribbon-element-contextpopup-minitoolbars.md)<br/> | <span data-ttu-id="9b6f1-117">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="9b6f1-117">May occur at most once</span></span><br/> <br/> |
+| [<span data-ttu-id="ad243-112">**ContextPopup.ContextMaps**</span><span class="sxs-lookup"><span data-stu-id="ad243-112">**ContextPopup.ContextMaps**</span></span>](windowsribbon-element-contextpopup-contextmaps.md)<br/>   | <span data-ttu-id="ad243-113">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="ad243-113">May occur at most once</span></span><br/> <br/> |
+| [<span data-ttu-id="ad243-114">**ContextPopup.ContextMenus**</span><span class="sxs-lookup"><span data-stu-id="ad243-114">**ContextPopup.ContextMenus**</span></span>](windowsribbon-element-contextpopup-contextmenus.md)<br/> | <span data-ttu-id="ad243-115">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="ad243-115">May occur at most once</span></span><br/> <br/> |
+| [<span data-ttu-id="ad243-116">**ContextPopup.MiniToolbars**</span><span class="sxs-lookup"><span data-stu-id="ad243-116">**ContextPopup.MiniToolbars**</span></span>](windowsribbon-element-contextpopup-minitoolbars.md)<br/> | <span data-ttu-id="ad243-117">Pode ocorrer no máximo uma vez</span><span class="sxs-lookup"><span data-stu-id="ad243-117">May occur at most once</span></span><br/> <br/> |
 
 
 
-## <a name="parent-elements"></a><span data-ttu-id="9b6f1-118">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="9b6f1-118">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="ad243-118">Elementos pai</span><span class="sxs-lookup"><span data-stu-id="ad243-118">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="9b6f1-119">Elemento</span><span class="sxs-lookup"><span data-stu-id="9b6f1-119">Element</span></span>                                                                         |
+| <span data-ttu-id="ad243-119">Elemento</span><span class="sxs-lookup"><span data-stu-id="ad243-119">Element</span></span>                                                                         |
 |---------------------------------------------------------------------------------|
-| [<span data-ttu-id="9b6f1-120">**Application. views**</span><span class="sxs-lookup"><span data-stu-id="9b6f1-120">**Application.Views**</span></span>](windowsribbon-element-application-views.md)<br/> |
+| [<span data-ttu-id="ad243-120">**Application.Views**</span><span class="sxs-lookup"><span data-stu-id="ad243-120">**Application.Views**</span></span>](windowsribbon-element-application-views.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="9b6f1-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="9b6f1-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad243-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="ad243-121">Remarks</span></span>
 
-<span data-ttu-id="9b6f1-122">Opcional.</span><span class="sxs-lookup"><span data-stu-id="9b6f1-122">Optional.</span></span>
+<span data-ttu-id="ad243-122">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ad243-122">Optional.</span></span>
 
-<span data-ttu-id="9b6f1-123">Pode ocorrer no máximo uma vez para cada [**Application. views**](windowsribbon-element-application-views.md).</span><span class="sxs-lookup"><span data-stu-id="9b6f1-123">May occur at most once for each [**Application.Views**](windowsribbon-element-application-views.md).</span></span>
+<span data-ttu-id="ad243-123">Pode ocorrer no máximo uma vez para cada [**Application.Views.**](windowsribbon-element-application-views.md)</span><span class="sxs-lookup"><span data-stu-id="ad243-123">May occur at most once for each [**Application.Views**](windowsribbon-element-application-views.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9b6f1-124">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9b6f1-124">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ad243-124">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ad243-124">Examples</span></span>
 
-<span data-ttu-id="9b6f1-125">O exemplo a seguir demonstra a marcação básica para uma exibição **ContextPopup** .</span><span class="sxs-lookup"><span data-stu-id="9b6f1-125">The following example demonstrates the basic markup for a **ContextPopup** View.</span></span>
+<span data-ttu-id="ad243-125">O exemplo a seguir demonstra a marcação básica para uma **Exibição contextpopup.**</span><span class="sxs-lookup"><span data-stu-id="ad243-125">The following example demonstrates the basic markup for a **ContextPopup** View.</span></span>
 
 
 ```XML
@@ -153,22 +153,18 @@ ms.locfileid: "104006590"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="9b6f1-126">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="9b6f1-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ad243-126">Informações do elemento</span><span class="sxs-lookup"><span data-stu-id="ad243-126">Element information</span></span>
+
+* <span data-ttu-id="ad243-127">**Sistema mínimo com suporte:** Windows 7</span><span class="sxs-lookup"><span data-stu-id="ad243-127">**Minimum supported system**: Windows 7</span></span>
+* <span data-ttu-id="ad243-128">**Pode estar vazio:** Não</span><span class="sxs-lookup"><span data-stu-id="ad243-128">**Can be empty**: No</span></span>
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| <span data-ttu-id="9b6f1-127">Sistema mínimo com suporte</span><span class="sxs-lookup"><span data-stu-id="9b6f1-127">Minimum supported system</span></span><br/> | <span data-ttu-id="9b6f1-128">Windows 7</span><span class="sxs-lookup"><span data-stu-id="9b6f1-128">Windows 7</span></span> |
-| <span data-ttu-id="9b6f1-129">Pode estar vazio</span><span class="sxs-lookup"><span data-stu-id="9b6f1-129">Can be empty</span></span>                        | <span data-ttu-id="9b6f1-130">Não</span><span class="sxs-lookup"><span data-stu-id="9b6f1-130">No</span></span>        |
-
-
-
-## <a name="see-also"></a><span data-ttu-id="9b6f1-131">Confira também</span><span class="sxs-lookup"><span data-stu-id="9b6f1-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad243-129">Confira também</span><span class="sxs-lookup"><span data-stu-id="ad243-129">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="9b6f1-132">Controle Popup de contexto</span><span class="sxs-lookup"><span data-stu-id="9b6f1-132">Context Popup control</span></span>](windowsribbon-controls-contextpopup.md)
+[<span data-ttu-id="ad243-130">Controle pop-up de contexto</span><span class="sxs-lookup"><span data-stu-id="ad243-130">Context Popup control</span></span>](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  
